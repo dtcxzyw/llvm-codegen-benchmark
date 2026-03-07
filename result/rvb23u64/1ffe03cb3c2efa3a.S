@@ -1,14 +1,12 @@
 func0000000000000009:
 	addi	a0, a0, 26
-	lui	a1, 194181
+	lui	a1, 303
 	zext.w	a2, a0
+	addi	a1, a1, 1669
+	slli	a1, a1, 12
 	addi	a1, a1, -1061
-	mul	a1, a1, a2
-	srli	a1, a1, 32
-	sub	a2, a0, a1
-	srliw	a2, a2, 1
-	add	a1, a1, a2
-	srli	a1, a1, 4
+	slli	a1, a1, 27
+	mulhu	a1, a2, a1
 	sh1add	a1, a1, a1
 	sh3add	a1, a1, a1
 	sub	a0, a0, a0

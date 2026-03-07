@@ -10,13 +10,9 @@ func000000000000001f:
 	retq
 
 func000000000000000f:
-	leal	-109(%rsi), %eax
-	imulq	$33818641, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$6, %eax
+	leal	-109(%rsi), %edx
+	movabsq	$145249953365622784, %rax
+	mulxq	%rax, %rax, %rax
 	movl	%eax, %ecx
 	shll	$7, %ecx
 	subl	%ecx, %eax
@@ -25,18 +21,13 @@ func000000000000000f:
 	retq
 
 func0000000000000004:
-	addl	$-28, %esi
-	movl	$2753184165, %eax
-	imulq	%rsi, %rax
-	shrq	$32, %rax
-	movl	%esi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$5, %ecx
-	imull	$39, %ecx, %eax
-	subl	%eax, %esi
-	imulq	$104, %rsi, %rax
+	movl	%esi, %edx
+	addl	$-28, %edx
+	movabsq	$472993437847650304, %rax
+	mulxq	%rax, %rax, %rax
+	imull	$39, %eax, %eax
+	subl	%eax, %edx
+	imulq	$104, %rdx, %rax
 	addq	%rdi, %rax
 	retq
 

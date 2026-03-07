@@ -40,15 +40,13 @@ func0000000000000014:
 
 func0000000000000018:
 	slli	a3, a2, 32
-	lui	a4, 149797
-	addi	a4, a4, -1755
-	slli	a4, a4, 32
-	mulhu	a3, a3, a4
+	lui	a4, 293
 	srli	a3, a3, 32
-	sub	a4, a2, a3
-	srliw	a4, a4, 1
-	add	a3, a3, a4
-	srli	a3, a3, 2
+	addi	a4, a4, -1755
+	slli	a4, a4, 12
+	addi	a4, a4, -1755
+	slli	a4, a4, 29
+	mulhu	a3, a3, a4
 	slli	a4, a3, 3
 	add	a2, a2, a3
 	subw	a2, a2, a4

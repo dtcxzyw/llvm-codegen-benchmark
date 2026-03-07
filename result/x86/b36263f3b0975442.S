@@ -9,12 +9,9 @@ func0000000000000000:
 func0000000000000018:
 	addl	%edx, %esi
 	subl	%esi, %edi
-	imulq	$1729753953, %rdi, %rax
-	shrq	$32, %rax
-	subl	%eax, %edi
-	shrl	%edi
-	addl	%edi, %eax
-	shrl	$8, %eax
+	movabsq	$50539024867131392, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
 	retq
 
 func0000000000000008:
@@ -36,11 +33,8 @@ func000000000000000a:
 func000000000000001a:
 	addl	%edx, %esi
 	subl	%esi, %edi
-	imulq	$1729753953, %rdi, %rax
-	shrq	$32, %rax
-	subl	%eax, %edi
-	shrl	%edi
-	addl	%edi, %eax
-	shrl	$8, %eax
+	movabsq	$50539024867131392, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
 	retq
 

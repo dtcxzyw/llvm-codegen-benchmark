@@ -11,14 +11,9 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	movl	%esi, %eax
-	imulq	$138547333, %rax, %rcx
-	shrq	$32, %rcx
-	movl	%esi, %eax
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$4, %eax
+	movl	%esi, %edx
+	movabsq	$595056260559142912, %rax
+	mulxq	%rax, %rax, %rax
 	movl	%eax, %ecx
 	shll	$5, %ecx
 	subl	%ecx, %eax

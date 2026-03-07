@@ -1,15 +1,13 @@
 func0000000000000000:
 	zext.w	a2, a1
-	lui	a3, 422303
+	lui	a3, 359
+	addi	a3, a3, 415
+	slli	a3, a3, 12
 	addi	a3, a3, 865
-	mul	a2, a2, a3
-	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
+	slli	a3, a3, 23
+	mulhu	a2, a2, a3
 	li	a3, 365
 	sub	a1, a1, a1
-	srli	a2, a2, 8
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	sub	a0, a0, a2

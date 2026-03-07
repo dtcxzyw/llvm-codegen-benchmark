@@ -26,19 +26,15 @@ func0000000000000014:
 	retq
 
 func0000000000000018:
+	movl	%edx, %eax
+	movl	%edx, %edx
+	movabsq	$2635249153617166336, %rcx
+	mulxq	%rcx, %rcx, %rcx
+	leal	(,%rcx,8), %edx
+	subl	%edx, %ecx
+	addl	%eax, %ecx
+	cmpl	$2, %ecx
+	cmovbl	%esi, %edi
 	movl	%edi, %eax
-	movl	%edx, %ecx
-	imulq	$613566757, %rcx, %rcx
-	shrq	$32, %rcx
-	movl	%edx, %edi
-	subl	%ecx, %edi
-	shrl	%edi
-	addl	%ecx, %edi
-	shrl	$2, %edi
-	leal	(,%rdi,8), %ecx
-	subl	%ecx, %edi
-	addl	%edx, %edi
-	cmpl	$2, %edi
-	cmovbl	%esi, %eax
 	retq
 

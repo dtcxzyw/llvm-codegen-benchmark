@@ -10,17 +10,13 @@ func0000000000000001:
 func0000000000000018:
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	imulq	$613566757, %rsi, %rax
-	shrq	$32, %rax
-	movl	%esi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$2, %ecx
-	leal	(,%rcx,8), %eax
-	subl	%eax, %ecx
-	addl	%esi, %ecx
-	cmpl	$2, %ecx
+	movabsq	$2635249153617166336, %rax
+	movq	%rsi, %rdx
+	mulxq	%rax, %rax, %rax
+	leal	(,%rax,8), %ecx
+	subl	%ecx, %eax
+	addl	%esi, %eax
+	cmpl	$2, %eax
 	setae	%al
 	retq
 

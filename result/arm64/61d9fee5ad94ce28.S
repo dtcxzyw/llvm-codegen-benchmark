@@ -1,14 +1,12 @@
 func0000000000000003:
-	mov	w8, #27595
+	mov	x8, #1476395008
+	mov	w9, w1
 	neg	w10, w1
+	movk	x8, #17246, lsl #32
 	tst	w0, #0x1
-	movk	w8, #44840, lsl #16
-	umull	x8, w1, w8
-	lsr	x8, x8, #32
-	sub	w9, w1, w8
-	add	w8, w8, w9, lsr #1
+	movk	x8, #3449, lsl #48
+	umulh	x8, x9, x8
 	mov	w9, #19
-	lsr	w8, w8, #4
 	madd	w8, w8, w9, w10
 	add	w8, w8, #19
 	csel	w0, wzr, w8, ne

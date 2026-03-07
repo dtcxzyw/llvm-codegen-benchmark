@@ -1,12 +1,9 @@
 func0000000000000006:
 	mul	w8, w0, w1
-	mov	w9, #16645
-	movk	w9, #1040, lsl #16
-	umull	x9, w8, w9
-	lsr	x9, x9, #32
-	sub	w8, w8, w9
-	add	w8, w9, w8, lsr #1
-	lsr	w0, w8, #5
+	mov	x9, #335544320
+	movk	x9, #16644, lsl #32
+	movk	x9, #1040, lsl #48
+	umulh	x0, x8, x9
 	ret
 
 func0000000000000000:

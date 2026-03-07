@@ -7,14 +7,12 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	mov	w8, #62305
+	mov	x8, #2961178624
 	sub	w9, w1, w2
-	movk	w8, #26393, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	sub	w9, w9, w8
-	add	w8, w8, w9, lsr #1
-	add	w0, w0, w8, lsr #8
+	movk	x8, #36089, lsl #32
+	movk	x8, #179, lsl #48
+	umulh	x8, x9, x8
+	add	w0, w8, w0
 	ret
 
 func0000000000000000:
@@ -34,24 +32,20 @@ func0000000000000010:
 	ret
 
 func0000000000000009:
-	mov	w8, #62305
+	mov	x8, #2961178624
 	sub	w9, w1, w2
-	movk	w8, #26393, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	sub	w9, w9, w8
-	add	w8, w8, w9, lsr #1
-	add	w0, w0, w8, lsr #8
+	movk	x8, #36089, lsl #32
+	movk	x8, #179, lsl #48
+	umulh	x8, x9, x8
+	add	w0, w8, w0
 	ret
 
 func000000000000000b:
-	mov	w8, #62305
+	mov	x8, #2961178624
 	sub	w9, w1, w2
-	movk	w8, #26393, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	sub	w9, w9, w8
-	add	w8, w8, w9, lsr #1
-	add	w0, w0, w8, lsr #8
+	movk	x8, #36089, lsl #32
+	movk	x8, #179, lsl #48
+	umulh	x8, x9, x8
+	add	w0, w8, w0
 	ret
 

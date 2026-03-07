@@ -1,15 +1,12 @@
 func0000000000000006:
 	andi	a1, a1, 63
-	lui	a2, 16644
 	mul	a0, a0, a1
-	zext.w	a1, a0
-	addi	a2, a2, 261
-	mul	a1, a1, a2
-	srli	a1, a1, 32
-	sub	a0, a0, a1
-	srliw	a0, a0, 1
-	add	a0, a0, a1
-	srli	a0, a0, 5
+	lui	a1, 266305
+	slli	a1, a1, 2
+	zext.w	a0, a0
+	addi	a1, a1, 261
+	slli	a1, a1, 26
+	mulhu	a0, a0, a1
 	ret
 
 func0000000000000000:

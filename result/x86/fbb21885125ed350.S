@@ -1,12 +1,8 @@
 	.att_syntax
 func0000000000000002:
-	leal	3(%rdi), %eax
-	imulq	$613566757, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
+	leal	3(%rdi), %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rax, %rax
 	leal	(,%rax,8), %ecx
 	subl	%ecx, %eax
 	leal	3(%rdi,%rax), %eax
@@ -61,13 +57,9 @@ func000000000000000d:
 	retq
 
 func0000000000000009:
-	leal	-1(%rdi), %eax
-	imulq	$613566757, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
+	leal	-1(%rdi), %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rax, %rax
 	leal	(,%rax,8), %ecx
 	subl	%ecx, %eax
 	leal	-1(%rdi,%rax), %eax

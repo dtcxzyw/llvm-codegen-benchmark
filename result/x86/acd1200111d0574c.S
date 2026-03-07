@@ -1,33 +1,23 @@
 	.att_syntax
 func000000000000000f:
-	movl	$-2, %ecx
-	subl	%edi, %ecx
-	imulq	$613566757, %rcx, %rax
-	shrq	$32, %rax
-	movl	%ecx, %edx
-	subl	%eax, %edx
-	shrl	%edx
-	addl	%eax, %edx
-	shrl	$2, %edx
-	leal	(,%rdx,8), %eax
-	subl	%edx, %eax
+	movl	$-2, %edx
+	subl	%edi, %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rcx, %rcx
+	leal	(,%rcx,8), %eax
 	subl	%ecx, %eax
+	subl	%edx, %eax
 	addl	$6, %eax
 	retq
 
 func0000000000000003:
-	movl	$3, %ecx
-	subl	%edi, %ecx
-	imulq	$613566757, %rcx, %rax
-	shrq	$32, %rax
-	movl	%ecx, %edx
-	subl	%eax, %edx
-	shrl	%edx
-	addl	%eax, %edx
-	shrl	$2, %edx
-	leal	(,%rdx,8), %eax
-	subl	%edx, %eax
+	movl	$3, %edx
+	subl	%edi, %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rcx, %rcx
+	leal	(,%rcx,8), %eax
 	subl	%ecx, %eax
+	subl	%edx, %eax
 	addl	$6, %eax
 	retq
 
@@ -42,15 +32,10 @@ func0000000000000007:
 	retq
 
 func0000000000000001:
-	movl	%edi, %eax
-	negl	%eax
-	movl	$3057113215, %ecx
-	imulq	%rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$21, %eax
+	movl	%edi, %edx
+	negl	%edx
+	movabsq	$7528530443264, %rax
+	mulxq	%rax, %rax, %rax
 	imull	$2450245, %eax, %eax
 	addl	%edi, %eax
 	retq

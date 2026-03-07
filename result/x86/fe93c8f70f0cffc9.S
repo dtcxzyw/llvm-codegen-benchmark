@@ -68,13 +68,9 @@ func0000000000000003:
 	retq
 
 func0000000000000008:
-	leal	-1260(%rdi), %eax
-	imulq	$613566757, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	andl	$-4, %eax
-	shll	$14, %eax
+	leal	-1260(%rdi), %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rax, %rax
+	shll	$16, %eax
 	retq
 

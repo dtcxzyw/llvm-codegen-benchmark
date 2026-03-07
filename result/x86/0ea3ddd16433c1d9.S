@@ -1,14 +1,10 @@
 	.att_syntax
 func0000000000000000:
 	subl	%edx, %esi
-	imulq	$1729753953, %rsi, %rax
-	shrq	$32, %rax
-	movl	%esi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$8, %ecx
-	imull	$365, %ecx, %ecx
+	movabsq	$50539024867131392, %rax
+	movq	%rsi, %rdx
+	mulxq	%rax, %rax, %rax
+	imull	$365, %eax, %ecx
 	movl	%esi, %eax
 	subl	%ecx, %eax
 	subl	%esi, %eax
@@ -42,14 +38,10 @@ func0000000000000025:
 
 func0000000000000020:
 	subl	%edx, %esi
-	imulq	$1729753953, %rsi, %rax
-	shrq	$32, %rax
-	movl	%esi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$8, %ecx
-	imull	$365, %ecx, %ecx
+	movabsq	$50539024867131392, %rax
+	movq	%rsi, %rdx
+	mulxq	%rax, %rax, %rax
+	imull	$365, %eax, %ecx
 	movl	%esi, %eax
 	subl	%ecx, %eax
 	subl	%esi, %eax

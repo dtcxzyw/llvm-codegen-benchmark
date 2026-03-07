@@ -8,12 +8,8 @@ func0000000000000006:
 
 func0000000000000002:
 	shrl	$7, %edi
-	leal	-109(%rdi), %eax
-	imulq	$33818641, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$6, %eax
+	leal	-109(%rdi), %edx
+	movabsq	$145249953365622784, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 

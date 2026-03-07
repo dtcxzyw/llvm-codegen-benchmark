@@ -13,15 +13,13 @@ func000000000000001f:
 
 func000000000000000f:
 	addi	a1, a1, -109
-	lui	a2, 8257
+	lui	a2, 258
 	zext.w	a3, a1
+	addi	a2, a2, 65
+	slli	a2, a2, 12
 	addi	a2, a2, -2031
-	mul	a2, a2, a3
-	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
-	srli	a2, a2, 6
+	slli	a2, a2, 25
+	mulhu	a2, a3, a2
 	slli	a3, a2, 7
 	add	a1, a1, a2
 	subw	a1, a1, a3
@@ -30,16 +28,12 @@ func000000000000000f:
 
 func0000000000000004:
 	addi	a1, a1, -28
-	lui	a2, 672164
+	lui	a2, 430185
+	zext.w	a3, a1
+	slli	a2, a2, 2
 	addi	a2, a2, 421
-	slli	a3, a1, 32
-	slli	a2, a2, 32
+	slli	a2, a2, 26
 	mulhu	a2, a3, a2
-	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
-	srliw	a2, a2, 5
 	li	a3, 39
 	mul	a2, a2, a3
 	subw	a1, a1, a2

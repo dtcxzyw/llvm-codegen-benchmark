@@ -4,14 +4,10 @@ func0000000000000009:
 	subl	$53, %edi
 	cmovbl	%eax, %edi
 	addl	$26, %edi
-	imulq	$795364315, %rdi, %rax
-	shrq	$32, %rax
-	movl	%edi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$4, %ecx
-	leal	(%rcx,%rcx,8), %eax
+	movabsq	$683212743594999808, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	leal	(%rax,%rax,8), %eax
 	leal	(%rax,%rax,2), %ecx
 	movl	%edi, %eax
 	subl	%ecx, %eax

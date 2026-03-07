@@ -2,13 +2,9 @@
 func0000000000000004:
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	imulq	$138547333, %rsi, %rcx
-	shrq	$32, %rcx
-	movl	%esi, %eax
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$4, %eax
+	movabsq	$595056260559142912, %rax
+	movq	%rsi, %rdx
+	mulxq	%rax, %rax, %rax
 	movl	%eax, %ecx
 	shll	$5, %ecx
 	subl	%ecx, %eax

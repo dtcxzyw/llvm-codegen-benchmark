@@ -9,14 +9,10 @@ func0000000000000000:
 	retq
 
 func0000000000000015:
-	movl	%edx, %eax
-	imulq	$1729753953, %rax, %rax
-	shrq	$32, %rax
-	subl	%eax, %edx
-	shrl	%edx
-	addl	%eax, %edx
-	shrl	$8, %edx
-	addl	%esi, %edx
-	leal	-1(%rdi,%rdx), %eax
+	movl	%edx, %edx
+	movabsq	$50539024867131392, %rax
+	mulxq	%rax, %rax, %rax
+	addl	%esi, %eax
+	leal	-1(%rdi,%rax), %eax
 	retq
 

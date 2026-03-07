@@ -1,13 +1,10 @@
 func0000000000000000:
-	zext.w	a1, a0
-	lui	a2, 364242
-	addi	a2, a2, 777
-	mul	a1, a1, a2
-	srli	a1, a1, 32
-	sub	a0, a0, a1
-	srliw	a0, a0, 1
-	add	a0, a0, a1
-	srli	a0, a0, 6
+	zext.w	a0, a0
+	lui	a1, 706409
+	slli.uw	a1, a1, 1
+	addi	a1, a1, 777
+	slli	a1, a1, 25
+	mulhu	a0, a0, a1
 	li	a1, 4
 	maxu	a0, a0, a1
 	ret

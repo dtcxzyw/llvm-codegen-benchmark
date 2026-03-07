@@ -1,16 +1,14 @@
 func0000000000000000:
 	andi	a0, a0, 1
-	zext.w	a2, a1
-	lui	a3, 149797
-	addi	a3, a3, -1755
-	mul	a2, a2, a3
-	lui	a3, 10486
-	srli	a2, a2, 32
-	sub	a1, a1, a2
-	srliw	a1, a1, 1
-	add	a1, a1, a2
-	srli	a1, a1, 2
-	addi	a2, a3, -983
+	zext.w	a1, a1
+	lui	a2, 293
+	addi	a2, a2, -1755
+	slli	a2, a2, 12
+	addi	a2, a2, -1755
+	slli	a2, a2, 29
+	mulhu	a1, a1, a2
+	lui	a2, 10486
+	addi	a2, a2, -983
 	mul	a2, a2, a1
 	srli	a2, a2, 32
 	sh2add	a2, a2, a2

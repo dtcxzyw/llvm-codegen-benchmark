@@ -3,13 +3,10 @@ func0000000000000061:
 	cmp	w0, #0
 	orr	w9, w8, #0x20
 	csel	w8, w8, w9, eq
-	mov	w9, #4229
-	movk	w9, #2114, lsl #16
-	umull	x9, w8, w9
-	lsr	x9, x9, #32
-	sub	w10, w8, w9
-	add	w9, w9, w10, lsr #1
-	lsr	w9, w9, #4
+	mov	x9, #671088640
+	movk	x9, #4228, lsl #32
+	movk	x9, #2114, lsl #48
+	umulh	x9, x8, x9
 	sub	w9, w9, w9, lsl #5
 	add	w0, w8, w9
 	ret

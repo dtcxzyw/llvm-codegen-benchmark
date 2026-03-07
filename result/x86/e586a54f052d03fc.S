@@ -1,14 +1,9 @@
 	.att_syntax
 func0000000000000005:
-	movl	%esi, %eax
-	imulq	$795364315, %rax, %rax
-	shrq	$32, %rax
-	movl	%esi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$4, %ecx
-	leal	(%rcx,%rcx,8), %eax
+	movl	%esi, %edx
+	movabsq	$683212743594999808, %rax
+	mulxq	%rax, %rax, %rax
+	leal	(%rax,%rax,8), %eax
 	leal	(%rax,%rax,2), %ecx
 	movl	%esi, %eax
 	subl	%ecx, %eax

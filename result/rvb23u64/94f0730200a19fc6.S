@@ -13,15 +13,11 @@ func00000000000000a1:
 func0000000000000021:
 	addi	a1, a1, 18
 	lui	a2, 717447
+	zext.w	a1, a1
 	addi	a2, a2, -1077
-	slli	a2, a2, 32
-	slli	a3, a1, 32
-	mulhu	a2, a3, a2
-	srli	a2, a2, 32
-	sub	a1, a1, a2
-	srliw	a1, a1, 1
-	add	a1, a1, a2
-	srliw	a1, a1, 4
+	slli	a2, a2, 31
+	srli	a2, a2, 4
+	mulhu	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

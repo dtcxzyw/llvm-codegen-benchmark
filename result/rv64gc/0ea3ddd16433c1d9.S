@@ -1,17 +1,15 @@
 func0000000000000000:
 	sub	a1, a1, a2
-	lui	a2, 422303
+	lui	a2, 359
 	slli	a3, a1, 32
+	addi	a2, a2, 415
+	srli	a3, a3, 32
+	slli	a2, a2, 12
 	addi	a2, a2, 865
-	slli	a2, a2, 32
+	slli	a2, a2, 23
 	mulhu	a2, a3, a2
-	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
 	li	a3, 365
 	sub	a1, a1, a1
-	srli	a2, a2, 8
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2
@@ -50,18 +48,16 @@ func0000000000000025:
 
 func0000000000000020:
 	sub	a1, a1, a2
-	lui	a2, 422303
+	lui	a2, 359
 	slli	a3, a1, 32
+	addi	a2, a2, 415
+	srli	a3, a3, 32
+	slli	a2, a2, 12
 	addi	a2, a2, 865
-	slli	a2, a2, 32
+	slli	a2, a2, 23
 	mulhu	a2, a3, a2
-	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
 	li	a3, 365
 	sub	a1, a1, a1
-	srli	a2, a2, 8
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2

@@ -9,13 +9,9 @@ func0000000000000003:
 	retq
 
 func000000000000000b:
-	leal	3(%rdi), %eax
-	imulq	$613566757, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
+	leal	3(%rdi), %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rax, %rax
 	leal	(,%rax,8), %ecx
 	subl	%ecx, %eax
 	leal	4(%rdi,%rax), %eax

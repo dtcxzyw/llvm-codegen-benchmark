@@ -15,16 +15,14 @@ func000000000000001f:
 
 func000000000000000f:
 	addi	a1, a1, -109
-	lui	a2, 8257
-	addi	a2, a2, -2031
+	lui	a2, 258
 	slli	a3, a1, 32
-	slli	a2, a2, 32
+	addi	a2, a2, 65
+	srli	a3, a3, 32
+	slli	a2, a2, 12
+	addi	a2, a2, -2031
+	slli	a2, a2, 25
 	mulhu	a2, a3, a2
-	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
-	srli	a2, a2, 6
 	slli	a3, a2, 7
 	add	a1, a1, a2
 	subw	a1, a1, a3
@@ -34,17 +32,14 @@ func000000000000000f:
 
 func0000000000000004:
 	addi	a1, a1, -28
-	lui	a2, 672164
-	addi	a2, a2, 421
+	lui	a2, 430185
 	slli	a3, a1, 32
-	slli	a2, a2, 32
+	slli	a2, a2, 2
+	srli	a3, a3, 32
+	addi	a2, a2, 421
+	slli	a2, a2, 26
 	mulhu	a2, a3, a2
-	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
 	li	a3, 39
-	srliw	a2, a2, 5
 	mul	a2, a2, a3
 	subw	a1, a1, a2
 	li	a2, 104

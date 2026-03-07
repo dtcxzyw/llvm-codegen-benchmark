@@ -1,12 +1,10 @@
 func0000000000000015:
-	mov	w8, #19419
-	movk	w8, #12136, lsl #16
-	umull	x8, w0, w8
-	lsr	x8, x8, #32
-	sub	w9, w0, w8
-	add	w8, w8, w9, lsr #1
+	mov	x8, #3623878656
+	mov	w9, w0
+	movk	x8, #16990, lsl #32
+	movk	x8, #2427, lsl #48
+	umulh	x8, x9, x8
 	mov	w9, #27
-	lsr	w8, w8, #4
 	msub	w8, w8, w9, w0
 	sub	w8, w8, w0
 	add	w8, w1, w8

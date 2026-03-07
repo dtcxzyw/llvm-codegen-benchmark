@@ -1,12 +1,8 @@
 	.att_syntax
 func0000000000000002:
-	leal	7(%rdi,%rsi), %eax
-	imulq	$613566757, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
+	leal	7(%rdi,%rsi), %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 
 func000000000000000e:

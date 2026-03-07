@@ -1,18 +1,16 @@
 func0000000000000005:
 	zext.w	a2, a1
-	lui	a3, 194181
+	lui	a3, 303
+	sub	a1, a1, a1
+	addi	a3, a3, 1669
+	slli	a3, a3, 12
 	addi	a3, a3, -1061
-	mul	a2, a2, a3
-	sub	a3, a1, a1
-	srli	a2, a2, 32
-	sub	a1, a1, a2
-	srliw	a1, a1, 1
-	add	a1, a1, a2
-	srli	a1, a1, 4
-	sh1add	a1, a1, a1
-	sh3add	a1, a1, a1
-	add	a0, a0, a3
-	subw	a0, a0, a1
+	slli	a3, a3, 27
+	mulhu	a2, a2, a3
+	sh1add	a2, a2, a2
+	sh3add	a2, a2, a2
+	add	a0, a0, a1
+	subw	a0, a0, a2
 	ret
 
 func0000000000000000:

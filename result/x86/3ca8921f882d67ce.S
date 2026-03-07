@@ -1,21 +1,17 @@
 	.att_syntax
 func0000000000000025:
+	movl	%esi, %edx
 	xorl	%eax, %eax
-	subl	$53, %esi
-	cmovbl	%eax, %esi
-	addl	$26, %esi
-	imulq	$795364315, %rsi, %rax
-	shrq	$32, %rax
-	movl	%esi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$4, %ecx
-	leal	(%rcx,%rcx,8), %eax
+	subl	$53, %edx
+	cmovbl	%eax, %edx
+	addl	$26, %edx
+	movabsq	$683212743594999808, %rax
+	mulxq	%rax, %rax, %rax
+	leal	(%rax,%rax,8), %eax
 	leal	(%rax,%rax,2), %ecx
-	movl	%esi, %eax
+	movl	%edx, %eax
 	subl	%ecx, %eax
-	subl	%esi, %eax
+	subl	%edx, %eax
 	addl	%edi, %eax
 	retq
 

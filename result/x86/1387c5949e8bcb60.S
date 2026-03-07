@@ -14,13 +14,9 @@ func0000000000000006:
 func000000000000000a:
 	cmpl	$-4, %esi
 	cmovll	%esi, %edi
-	imulq	$613566757, %rdi, %rcx
-	shrq	$32, %rcx
-	movl	%edi, %eax
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
+	movabsq	$2635249153617166336, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
 	leal	(,%rax,8), %ecx
 	subl	%ecx, %eax
 	addl	%edi, %eax

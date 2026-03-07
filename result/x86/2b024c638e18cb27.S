@@ -9,13 +9,10 @@ func0000000000000003:
 	retq
 
 func0000000000000000:
-	movl	%edi, %eax
-	imulq	$613566757, %rax, %rax
-	shrq	$32, %rax
-	subl	%eax, %edi
-	shrl	%edi
-	addl	%edi, %eax
-	shll	$14, %eax
+	movl	%edi, %edx
+	movabsq	$2635249153617166336, %rax
+	mulxq	%rax, %rax, %rax
+	shll	$16, %eax
 	andl	$2147418112, %eax
 	retq
 

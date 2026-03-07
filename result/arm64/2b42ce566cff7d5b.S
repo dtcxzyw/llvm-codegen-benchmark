@@ -1,25 +1,19 @@
 func0000000000000008:
-	mov	w8, #18725
+	mov	x8, #2684354560
 	sub	w9, w1, w0
-	movk	w8, #9362, lsl #16
+	movk	x8, #18724, lsl #32
 	add	w9, w9, #11
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	sub	w9, w9, w8
-	add	w8, w8, w9, lsr #1
-	lsr	w0, w8, #2
+	movk	x8, #9362, lsl #48
+	umulh	x0, x9, x8
 	ret
 
 func000000000000000a:
-	mov	w8, #24967
+	mov	x8, #939524096
 	sub	w9, w1, w0
-	movk	w8, #34328, lsl #16
+	movk	x8, #49932, lsl #32
 	sub	w9, w9, #18
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	sub	w9, w9, w8
-	add	w8, w8, w9, lsr #1
-	lsr	w0, w8, #4
+	movk	x8, #3120, lsl #48
+	umulh	x0, x9, x8
 	ret
 
 func0000000000000014:

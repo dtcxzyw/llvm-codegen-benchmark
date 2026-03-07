@@ -33,14 +33,11 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	mov	w8, #18725
+	mov	x8, #2684354560
 	add	w9, w0, w1
-	movk	w8, #9362, lsl #16
-	umull	x8, w9, w8
-	lsr	x8, x8, #32
-	sub	w10, w9, w8
-	add	w8, w8, w10, lsr #1
-	lsr	w8, w8, #2
+	movk	x8, #18724, lsl #32
+	movk	x8, #9362, lsl #48
+	umulh	x8, x9, x8
 	sub	w8, w8, w8, lsl #3
 	add	w8, w9, w8
 	cmp	w8, #4

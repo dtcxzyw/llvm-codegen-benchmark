@@ -1,16 +1,14 @@
 func0000000000000015:
 	slli	a2, a0, 32
-	lui	a3, 194181
-	addi	a3, a3, -1061
-	slli	a3, a3, 32
-	mulhu	a2, a2, a3
+	lui	a3, 303
 	srli	a2, a2, 32
-	sub	a3, a0, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
+	addi	a3, a3, 1669
+	slli	a3, a3, 12
+	addi	a3, a3, -1061
+	slli	a3, a3, 27
+	mulhu	a2, a2, a3
 	li	a3, 27
 	sub	a0, a0, a0
-	srli	a2, a2, 4
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	sub	a0, a0, a2

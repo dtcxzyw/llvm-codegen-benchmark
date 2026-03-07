@@ -7,13 +7,9 @@ func0000000000000012:
 	retq
 
 func000000000000001a:
-	leal	8191(%rdi), %eax
-	imulq	$262161, %rax, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$13, %eax
+	leal	8191(%rdi), %edx
+	movabsq	$1125968630775808, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 
 func000000000000001b:

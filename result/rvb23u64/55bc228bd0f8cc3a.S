@@ -39,14 +39,12 @@ func0000000000000014:
 
 func0000000000000018:
 	zext.w	a3, a2
-	lui	a4, 149797
+	lui	a4, 293
 	addi	a4, a4, -1755
-	mul	a3, a3, a4
-	srli	a3, a3, 32
-	sub	a4, a2, a3
-	srliw	a4, a4, 1
-	add	a3, a3, a4
-	srli	a3, a3, 2
+	slli	a4, a4, 12
+	addi	a4, a4, -1755
+	slli	a4, a4, 29
+	mulhu	a3, a3, a4
 	slli	a4, a3, 3
 	add	a2, a2, a3
 	subw	a2, a2, a4

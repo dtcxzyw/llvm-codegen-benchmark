@@ -2,15 +2,9 @@
 func0000000000000000:
 	movq	%rdi, %rax
 	shrq	$2, %rax
-	movl	%eax, %ecx
-	movl	$2738038969, %edx
-	imulq	%rcx, %rdx
-	shrq	$32, %rdx
-	movl	%eax, %ecx
-	subl	%edx, %ecx
-	shrl	%ecx
-	addl	%edx, %ecx
-	shrl	$14, %ecx
+	movl	%eax, %edx
+	movabsq	$921830197166080, %rcx
+	mulxq	%rcx, %rcx, %rcx
 	imull	$20011, %ecx, %ecx
 	subl	%ecx, %eax
 	retq

@@ -1,14 +1,10 @@
 	.att_syntax
 func0000000000000001:
 	movl	%edi, %eax
-	movl	%esi, %ecx
-	imulq	$68174085, %rcx, %rcx
-	shrq	$32, %rcx
-	subl	%ecx, %esi
-	shrl	%esi
-	addl	%ecx, %esi
-	shrl	$5, %esi
-	subl	%esi, %eax
+	movl	%esi, %edx
+	movabsq	$292805461550301184, %rcx
+	mulxq	%rcx, %rcx, %rcx
+	subl	%ecx, %eax
 	retq
 
 func0000000000000000:

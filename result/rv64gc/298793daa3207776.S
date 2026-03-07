@@ -16,15 +16,13 @@ func0000000000000001:
 
 func000000000000002c:
 	slli	a2, a1, 32
-	lui	a3, 33825
-	addi	a3, a3, 133
-	slli	a3, a3, 32
-	mulhu	a2, a2, a3
+	lui	a3, 264
 	srli	a2, a2, 32
-	sub	a3, a1, a2
-	srliw	a3, a3, 1
-	add	a2, a2, a3
-	srli	a2, a2, 4
+	addi	a3, a3, 1057
+	slli	a3, a3, 12
+	addi	a3, a3, 133
+	slli	a3, a3, 27
+	mulhu	a2, a2, a3
 	slli	a3, a2, 5
 	add	a1, a1, a2
 	sub	a1, a1, a3

@@ -24,17 +24,13 @@ func0000000000000021:
 
 func0000000000000034:
 	addl	%esi, %edi
-	imulq	$613566757, %rdi, %rax
-	shrq	$32, %rax
-	movl	%edi, %ecx
-	subl	%eax, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$2, %ecx
-	leal	(,%rcx,8), %eax
-	subl	%eax, %ecx
-	addl	%edi, %ecx
-	cmpl	$4, %ecx
+	movabsq	$2635249153617166336, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	leal	(,%rax,8), %ecx
+	subl	%ecx, %eax
+	addl	%edi, %eax
+	cmpl	$4, %eax
 	setb	%al
 	retq
 

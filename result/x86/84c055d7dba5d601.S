@@ -29,16 +29,11 @@ func0000000000000002:
 
 func0000000000000003:
 	movq	%rdi, %rax
-	movl	$2938661835, %ecx
-	imulq	%rdi, %rcx
-	shrq	$32, %rcx
-	movl	%eax, %edx
-	subl	%ecx, %edx
-	shrl	%edx
-	addl	%ecx, %edx
-	shrl	$4, %edx
-	leal	(%rdx,%rdx,8), %ecx
-	leal	(%rdx,%rcx,2), %ecx
+	movabsq	$970881267157434368, %rcx
+	movq	%rdi, %rdx
+	mulxq	%rcx, %rcx, %rcx
+	leal	(%rcx,%rcx,8), %edx
+	leal	(%rcx,%rdx,2), %ecx
 	subl	%ecx, %eax
 	retq
 
