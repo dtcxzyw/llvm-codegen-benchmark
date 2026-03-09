@@ -30,9 +30,9 @@ func0000000000000038:
 	retq
 
 func0000000000000181:
+	notl	%edi
 	shrl	$16, %esi
 	andl	$1, %esi
-	notl	%edi
 	testb	$-26, %dil
 	sete	%al
 	andb	%sil, %al

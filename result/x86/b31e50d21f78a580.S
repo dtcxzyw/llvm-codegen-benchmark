@@ -1,9 +1,9 @@
 	.att_syntax
 func000000000000008c:
 	cmpl	$448, %esi
+	notl	%esi
 	setb	%cl
 	andb	%dil, %cl
-	notl	%esi
 	testb	$7, %sil
 	setne	%al
 	andb	%cl, %al

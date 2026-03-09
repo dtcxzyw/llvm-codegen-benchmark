@@ -28,10 +28,10 @@ func000000000000018c:
 	retq
 
 func0000000000000101:
+	notl	%esi
 	cmpb	$7, %dl
 	setae	%cl
 	andb	%dil, %cl
-	notl	%esi
 	testb	$3, %sil
 	sete	%al
 	andb	%cl, %al

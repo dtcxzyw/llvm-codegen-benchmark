@@ -14,10 +14,10 @@ func000000000000018c:
 	retq
 
 func0000000000000681:
+	notl	%edi
 	orl	%edx, %esi
 	cmpl	$1114112, %esi
 	setb	%cl
-	notl	%edi
 	testl	$65534, %edi
 	sete	%al
 	andb	%cl, %al

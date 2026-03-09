@@ -24,10 +24,10 @@ func000000000000002c:
 	retq
 
 func000000000000018c:
+	notb	%dil
 	shrq	$32, %rsi
 	testw	%si, %si
 	setne	%cl
-	notb	%dil
 	testb	$96, %dil
 	setne	%al
 	andb	%cl, %al

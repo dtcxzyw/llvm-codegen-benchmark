@@ -12,11 +12,11 @@ func000000000000018c:
 
 func000000000000002c:
 	movl	%esi, %eax
-	shrl	$3, %eax
-	cmpl	%eax, %edi
+	notl	%eax
+	shrl	$3, %esi
+	cmpl	%esi, %edi
 	sete	%cl
-	notl	%esi
-	testb	$7, %sil
+	testb	$7, %al
 	setne	%al
 	andb	%cl, %al
 	retq

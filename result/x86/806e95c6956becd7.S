@@ -1,10 +1,11 @@
 	.att_syntax
 func0000000000000902:
-	leal	-11(%rdi), %eax
-	cmpl	$3, %eax
+	movl	%edi, %eax
+	notl	%eax
+	addl	$-11, %edi
+	cmpl	$3, %edi
 	setb	%cl
-	notl	%edi
-	testb	$7, %dil
+	testb	$7, %al
 	sete	%al
 	orb	%cl, %al
 	retq

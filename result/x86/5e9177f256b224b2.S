@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000c2c:
+	notl	%esi
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%cl
-	notl	%esi
 	testb	$85, %sil
 	setne	%al
 	orb	%cl, %al

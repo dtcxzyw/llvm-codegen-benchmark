@@ -8,11 +8,11 @@ func0000000000000041:
 	retq
 
 func0000000000000001:
-	movq	%rdi, %rcx
-	shrq	$3, %rcx
-	notl	%edi
+	movl	%edi, %ecx
+	notl	%ecx
+	shrq	$3, %rdi
 	xorl	%eax, %eax
-	testb	$3, %dil
-	cmovel	%ecx, %eax
+	testb	$3, %cl
+	cmovel	%edi, %eax
 	retq
 

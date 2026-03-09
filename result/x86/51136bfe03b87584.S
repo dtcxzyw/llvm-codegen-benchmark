@@ -20,10 +20,10 @@ func0000000000000302:
 	retq
 
 func0000000000000058:
+	notl	%esi
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%dil, %cl
-	notl	%esi
 	testl	$393216, %esi
 	setne	%al
 	orb	%cl, %al

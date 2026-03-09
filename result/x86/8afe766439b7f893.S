@@ -10,8 +10,8 @@ func0000000000000181:
 
 func000000000000018c:
 	cmpl	$-16777216, %edi
-	setb	%cl
 	notl	%edi
+	setb	%cl
 	testl	$16711680, %edi
 	setne	%al
 	andb	%cl, %al

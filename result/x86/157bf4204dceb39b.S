@@ -9,18 +9,18 @@ func0000000000000081:
 	retq
 
 func000000000000018c:
+	notl	%edi
 	cmpq	$1, %rsi
 	setne	%cl
-	notl	%edi
 	testb	$15, %dil
 	setne	%al
 	andb	%cl, %al
 	retq
 
 func000000000000058c:
+	notl	%edi
 	cmpq	$1, %rsi
 	setne	%cl
-	notl	%edi
 	testb	$15, %dil
 	setne	%al
 	andb	%cl, %al

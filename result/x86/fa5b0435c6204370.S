@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000181:
+	notl	%esi
 	testq	%rdx, %rdx
 	setne	%cl
 	andb	%dil, %cl
-	notl	%esi
 	testb	$24, %sil
 	sete	%al
 	andb	%cl, %al

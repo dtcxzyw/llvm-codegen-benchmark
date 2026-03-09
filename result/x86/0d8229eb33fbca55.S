@@ -1,22 +1,22 @@
 	.att_syntax
 func0000000000000061:
-	movl	%edi, %ecx
-	shrl	$5, %ecx
-	incl	%ecx
+	movl	%edi, %eax
+	notl	%eax
+	shrl	$5, %edi
+	leal	1(%rdi), %ecx
 	andl	$7, %ecx
-	notl	%edi
-	testb	$-32, %dil
+	testb	$-32, %al
 	movl	$8, %eax
 	cmovneq	%rcx, %rax
 	retq
 
 func0000000000000041:
-	movl	%edi, %ecx
-	shrl	%ecx
-	incl	%ecx
+	movl	%edi, %eax
+	notl	%eax
+	shrl	%edi
+	leal	1(%rdi), %ecx
 	andl	$3, %ecx
-	notl	%edi
-	testb	$6, %dil
+	testb	$6, %al
 	movl	$4, %eax
 	cmovneq	%rcx, %rax
 	retq

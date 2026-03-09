@@ -1,7 +1,7 @@
 	.att_syntax
 func0000000000000302:
 	notb	%dl
-	testb	%dl, %sil
+	testb	%sil, %dl
 	setne	%cl
 	testb	%dil, %dil
 	sete	%al

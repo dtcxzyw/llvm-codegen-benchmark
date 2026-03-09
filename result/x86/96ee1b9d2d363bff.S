@@ -22,9 +22,9 @@ func0000000000000084:
 
 func0000000000000202:
 	cmpl	$6144, %esi
+	notl	%esi
 	setb	%cl
 	orb	%dil, %cl
-	notl	%esi
 	testl	$61440, %esi
 	sete	%al
 	orb	%cl, %al

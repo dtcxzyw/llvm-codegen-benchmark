@@ -26,10 +26,10 @@ func000000000000054c:
 	retq
 
 func0000000000000d81:
+	notl	%esi
 	incl	%edx
 	cmpl	%edi, %edx
 	setne	%cl
-	notl	%esi
 	testb	$7, %sil
 	sete	%al
 	andb	%cl, %al

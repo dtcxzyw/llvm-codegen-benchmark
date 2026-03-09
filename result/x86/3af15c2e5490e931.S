@@ -1,19 +1,19 @@
 	.att_syntax
 func0000000000000042:
+	notl	%esi
 	testl	%edx, %edx
 	sete	%cl
 	andb	%dil, %cl
-	notl	%esi
 	testl	$2064, %esi
 	sete	%al
 	orb	%cl, %al
 	retq
 
 func0000000000000302:
+	notl	%esi
 	testl	%edx, %edx
 	setne	%cl
 	andb	%dil, %cl
-	notl	%esi
 	testl	$2064, %esi
 	sete	%al
 	orb	%cl, %al

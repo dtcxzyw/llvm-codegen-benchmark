@@ -9,20 +9,20 @@ func0000000000000041:
 	retq
 
 func000000000000004c:
+	notl	%esi
 	cmpq	$536870911, %rdx
 	sete	%cl
 	orb	%dil, %cl
-	notl	%esi
 	testl	$-1610612737, %esi
 	setne	%al
 	andb	%cl, %al
 	retq
 
 func000000000000030c:
+	notl	%esi
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%dil, %cl
-	notl	%esi
 	testl	$-1610612737, %esi
 	setne	%al
 	andb	%cl, %al

@@ -9,10 +9,10 @@ func0000000000000082:
 	retq
 
 func0000000000000202:
+	notl	%esi
 	cmpb	$16, %dl
 	setb	%cl
 	orb	%dil, %cl
-	notl	%esi
 	testb	$15, %sil
 	sete	%al
 	orb	%cl, %al

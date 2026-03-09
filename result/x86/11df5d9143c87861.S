@@ -17,9 +17,9 @@ func0000000000000302:
 	retq
 
 func0000000000000058:
+	notl	%edi
 	testb	$64, %sil
 	sete	%cl
-	notl	%edi
 	testl	$1792, %edi
 	setne	%al
 	orb	%cl, %al

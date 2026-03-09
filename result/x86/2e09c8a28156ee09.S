@@ -7,9 +7,9 @@ func0000000000000021:
 	retq
 
 func0000000000000061:
+	notl	%esi
 	andl	$1023, %edx
 	leal	1(%rdx), %eax
-	notl	%esi
 	testb	$31, %sil
 	cmovnel	%edi, %eax
 	retq
