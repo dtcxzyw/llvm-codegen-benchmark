@@ -1,18 +1,14 @@
 	.att_syntax
 func000000000000004c:
 	cmpq	$1, %rsi
-	movq	%rsi, %rax
-	adcq	$0, %rax
-	addq	%rsi, %rax
+	adcq	%rsi, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
 
 func0000000000000041:
 	cmpq	$1, %rsi
-	movq	%rsi, %rax
-	adcq	$0, %rax
-	addq	%rsi, %rax
+	adcq	%rsi, %rsi
 	sete	%al
 	notb	%dil
 	andb	%dil, %al
@@ -20,9 +16,7 @@ func0000000000000041:
 
 func0000000000000001:
 	cmpq	$1, %rsi
-	movq	%rsi, %rax
-	adcq	$0, %rax
-	addq	%rsi, %rax
+	adcq	%rsi, %rsi
 	sete	%al
 	notb	%dil
 	andb	%dil, %al
@@ -30,9 +24,7 @@ func0000000000000001:
 
 func000000000000000c:
 	cmpq	$1, %rsi
-	movq	%rsi, %rax
-	adcq	$0, %rax
-	addq	%rsi, %rax
+	adcq	%rsi, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq

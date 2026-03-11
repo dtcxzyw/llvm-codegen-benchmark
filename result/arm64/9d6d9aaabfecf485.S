@@ -18,8 +18,8 @@ func000000000000014b:
 	movk	x8, #42182, lsl #16
 	movk	x8, #36222, lsl #32
 	cmp	x1, x8
-	sbc	x8, x0, xzr
-	add	x0, x8, #2
+	mov	x8, #-2
+	sbc	x0, x0, x8
 	ret
 
 func000000000000001b:
@@ -34,8 +34,8 @@ func000000000000004b:
 	movk	x8, #8964, lsl #32
 	movk	x8, #35527, lsl #48
 	cmp	x1, x8
-	sbc	x8, x0, xzr
-	add	x0, x8, #2
+	mov	x8, #-2
+	sbc	x0, x0, x8
 	ret
 
 func00000000000000cb:

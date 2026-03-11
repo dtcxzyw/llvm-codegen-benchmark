@@ -24,15 +24,15 @@ func0000000000000015:
 
 func0000000000000045:
 	and	w8, w2, #0xff
+	neg	w9, w0
 	cmp	w8, #3
-	sbc	w8, w1, wzr
-	add	w0, w0, w8
+	sbc	w0, w1, w9
 	ret
 
 func0000000000000145:
 	and	w8, w2, #0xff
+	neg	w9, w0
 	cmp	w8, #3
-	sbc	w8, w1, wzr
-	add	w0, w0, w8
+	sbc	w0, w1, w9
 	ret
 

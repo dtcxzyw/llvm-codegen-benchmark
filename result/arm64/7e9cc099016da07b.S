@@ -13,15 +13,15 @@ func0000000000000015:
 	ret
 
 func0000000000000045:
+	neg	w8, w0
 	cmp	w2, #3
-	sbc	w8, w1, wzr
-	add	w0, w8, w0
+	sbc	w0, w1, w8
 	ret
 
 func0000000000000144:
+	neg	w8, w0
 	cmp	w2, #2
-	sbc	w8, w1, wzr
-	add	w0, w0, w8
+	sbc	w0, w1, w8
 	ret
 
 func00000000000000c0:

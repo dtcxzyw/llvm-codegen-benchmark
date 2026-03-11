@@ -15,10 +15,10 @@ func0000000000000015:
 	ret
 
 func0000000000000045:
-	and	w8, w1, #0xff
-	cmp	w8, #3
-	sbc	w8, w0, wzr
-	sub	w0, w8, #399
+	and	w9, w1, #0xff
+	mov	w8, #399
+	cmp	w9, #3
+	sbc	w0, w0, w8
 	ret
 
 func0000000000000011:
@@ -30,9 +30,9 @@ func0000000000000011:
 	ret
 
 func0000000000000145:
-	and	w8, w1, #0xff
-	cmp	w8, #3
-	sbc	w8, w0, wzr
-	sub	w0, w8, #399
+	and	w9, w1, #0xff
+	mov	w8, #399
+	cmp	w9, #3
+	sbc	w0, w0, w8
 	ret
 

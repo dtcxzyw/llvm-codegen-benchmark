@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000001:
 	btl	$14, %edx
-	adcl	$0, %esi
-	addl	%edi, %esi
+	adcl	%esi, %edi
 	sete	%al
 	retq
 

@@ -20,10 +20,9 @@ func0000000000000014:
 	ret
 
 func0000000000000040:
+	mov	w8, #-4800
 	cmp	w1, #3
-	mov	w8, #4800
-	sbc	w9, w0, wzr
-	add	w0, w9, w8
+	sbc	w0, w0, w8
 	ret
 
 func0000000000000010:

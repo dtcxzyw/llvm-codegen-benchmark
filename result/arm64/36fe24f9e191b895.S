@@ -1,8 +1,7 @@
 func0000000000000145:
+	mov	w8, #-4716
 	cmp	w1, #3
-	mov	w8, #4716
-	sbc	w9, w0, wzr
-	add	w0, w9, w8
+	sbc	w0, w0, w8
 	ret
 
 func0000000000000011:
@@ -34,9 +33,9 @@ func0000000000000185:
 	ret
 
 func0000000000000045:
+	mov	w8, #-1
 	cmp	w1, #3
-	sbc	w8, w0, wzr
-	add	w0, w8, #1
+	sbc	w0, w0, w8
 	ret
 
 func00000000000000c1:

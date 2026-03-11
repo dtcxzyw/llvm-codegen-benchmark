@@ -29,8 +29,7 @@ func000000000000042a:
 
 func00000000000000aa:
 	cmpq	$1, %rsi
-	adcl	$0, %edi
-	addl	$-4, %edi
+	adcl	$-4, %edi
 	setns	%al
 	retq
 
