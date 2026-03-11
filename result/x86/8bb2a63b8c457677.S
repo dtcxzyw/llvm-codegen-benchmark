@@ -10,9 +10,7 @@ func00000000000000ef:
 	movq	%rsi, %rdx
 	movl	$1000000000, %eax
 	mulxq	%rax, %rax, %rcx
-	shll	$12, %ecx
-	shrq	$52, %rax
-	orl	%ecx, %eax
+	shrdq	$52, %rcx, %rax
 	addl	%edi, %eax
 	retq
 

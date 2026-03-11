@@ -12,26 +12,24 @@ func0000000000000012:
 
 func000000000000001b:
 	imulq	%rdx, %r9
-	mulxq	%r8, %r10, %rax
-	addq	%r9, %rax
+	mulxq	%r8, %rax, %rdx
+	addq	%r9, %rdx
 	imulq	%r8, %rcx
-	addq	%rcx, %rax
-	movq	%rax, %rdx
+	addq	%rcx, %rdx
+	shrdq	$16, %rdx, %rax
 	shrq	$16, %rdx
-	shldq	$48, %r10, %rax
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
 	retq
 
 func0000000000000010:
 	imulq	%rdx, %r9
-	mulxq	%r8, %r10, %rax
-	addq	%r9, %rax
+	mulxq	%r8, %rax, %rdx
+	addq	%r9, %rdx
 	imulq	%r8, %rcx
-	addq	%rcx, %rax
-	movq	%rax, %rdx
+	addq	%rcx, %rdx
+	shrdq	$16, %rdx, %rax
 	shrq	$16, %rdx
-	shldq	$48, %r10, %rax
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
 	retq

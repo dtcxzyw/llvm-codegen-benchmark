@@ -31,13 +31,12 @@ func000000000000007a:
 	movq	%rdx, %r10
 	movq	$-1, %rax
 	movq	%r8, %rdx
-	mulxq	%rax, %r8, %rax
-	subq	%r9, %rax
-	addq	%r10, %r8
-	adcq	%rcx, %rax
-	movq	%rax, %rdx
+	mulxq	%rax, %rax, %rdx
+	subq	%r9, %rdx
+	addq	%r10, %rax
+	adcq	%rcx, %rdx
+	shrdq	$32, %rdx, %rax
 	shrq	$32, %rdx
-	shldq	$32, %r8, %rax
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
 	retq

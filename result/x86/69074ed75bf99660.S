@@ -32,8 +32,8 @@ func000000000000003e:
 func000000000000001e:
 	leaq	(%rdi,%rsi), %rdx
 	movl	$121666, %eax
-	mulxq	%rax, %rcx, %rax
-	shldq	$13, %rcx, %rax
+	mulxq	%rax, %rax, %rcx
+	shrdq	$51, %rcx, %rax
 	xorl	%edx, %edx
 	retq
 

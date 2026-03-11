@@ -1,13 +1,12 @@
 	.att_syntax
 func0000000000000036:
 	imulq	%rdx, %r9
-	mulxq	%r8, %r10, %rax
-	addq	%r9, %rax
+	mulxq	%r8, %rax, %rdx
+	addq	%r9, %rdx
 	imulq	%r8, %rcx
-	addq	%rcx, %rax
-	movq	%rax, %rdx
+	addq	%rcx, %rdx
+	shrdq	$16, %rdx, %rax
 	shrq	$16, %rdx
-	shldq	$48, %r10, %rax
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
 	shrdq	$16, %rdx, %rax
@@ -16,13 +15,12 @@ func0000000000000036:
 
 func0000000000000020:
 	imulq	%rdx, %r9
-	mulxq	%r8, %r10, %rax
-	addq	%r9, %rax
+	mulxq	%r8, %rax, %rdx
+	addq	%r9, %rdx
 	imulq	%r8, %rcx
-	addq	%rcx, %rax
-	movq	%rax, %rdx
+	addq	%rcx, %rdx
+	shrdq	$16, %rdx, %rax
 	shrq	$16, %rdx
-	shldq	$48, %r10, %rax
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
 	shrdq	$16, %rdx, %rax

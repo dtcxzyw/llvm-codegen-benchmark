@@ -15,13 +15,12 @@ func0000000000000053:
 func000000000000007a:
 	movl	%r8d, %r8d
 	movq	$-1, %rax
-	mulxq	%rax, %r9, %rax
+	mulxq	%rax, %rax, %rdx
 	negq	%rcx
-	addq	%r8, %r9
-	adcq	%rcx, %rax
-	movq	%rax, %rdx
+	addq	%r8, %rax
+	adcq	%rcx, %rdx
+	shrdq	$32, %rdx, %rax
 	shrq	$32, %rdx
-	shldq	$32, %r9, %rax
 	addq	%rdi, %rax
 	adcq	%rsi, %rdx
 	retq

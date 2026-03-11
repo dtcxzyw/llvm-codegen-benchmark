@@ -14,8 +14,9 @@ func000000000000001d:
 	retq
 
 func0000000000000007:
+	addq	%rdx, %rdx
+	shldq	$1, %rdi, %rsi
 	orq	%rsi, %rdx
-	shldq	$1, %rdi, %rdx
 	leaq	(%rdi,%rdi), %rax
 	retq
 

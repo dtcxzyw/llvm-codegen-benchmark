@@ -6,9 +6,7 @@ func00000000000000c0:
 	retq
 
 func0000000000000000:
-	shll	$22, %edx
-	shrq	$42, %rsi
-	orl	%edx, %esi
+	shrdq	$42, %rdx, %rsi
 	leal	(%rsi,%rsi,4), %eax
 	addl	%edi, %eax
 	retq

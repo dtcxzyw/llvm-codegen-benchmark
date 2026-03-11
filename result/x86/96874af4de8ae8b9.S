@@ -44,9 +44,7 @@ func0000000000000078:
 	retq
 
 func000000000000000c:
-	shrq	$32, %rdi
-	movl	%esi, %eax
-	orq	%rdi, %rax
+	shrdq	$32, %rsi, %rdi
 	setne	%al
 	retq
 
