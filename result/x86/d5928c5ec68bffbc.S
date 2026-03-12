@@ -1,10 +1,9 @@
 	.att_syntax
 func0000000000000056:
-	leal	(%rdi,%rsi), %ecx
-	leal	-1(%rdi,%rsi), %edx
-	movl	$1, %eax
-	subl	%ecx, %eax
-	cmovll	%edx, %eax
+	leal	-1(%rdi,%rsi), %ecx
+	movl	%ecx, %eax
+	negl	%eax
+	cmovsl	%ecx, %eax
 	imull	$205, %eax, %ecx
 	shrl	$10, %ecx
 	andl	$62, %ecx

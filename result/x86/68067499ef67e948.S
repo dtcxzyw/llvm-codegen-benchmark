@@ -8,16 +8,16 @@ func0000000000000000:
 
 func0000000000000005:
 	leal	308(%rdi), %ecx
-	movl	$-308, %eax
-	subl	%edi, %eax
-	cmovll	%ecx, %eax
+	movl	%ecx, %eax
+	negl	%eax
+	cmovsl	%ecx, %eax
 	retq
 
 func0000000000000004:
 	leal	-1(%rdi), %ecx
-	movl	$1, %eax
-	subl	%edi, %eax
-	cmovll	%ecx, %eax
+	movl	%ecx, %eax
+	negl	%eax
+	cmovsl	%ecx, %eax
 	retq
 
 func0000000000000001:
@@ -29,9 +29,9 @@ func0000000000000001:
 
 func0000000000000007:
 	leal	1(%rdi), %ecx
-	movl	$-1, %eax
-	subl	%edi, %eax
-	cmovll	%ecx, %eax
+	movl	%ecx, %eax
+	negl	%eax
+	cmovsl	%ecx, %eax
 	retq
 
 func0000000000000002:

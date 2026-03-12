@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000017:
-	leal	-1(%rdi), %ecx
-	movl	$1, %eax
-	subl	%edi, %eax
-	cmovll	%ecx, %eax
+	decl	%edi
+	movl	%edi, %eax
+	negl	%eax
+	cmovsl	%edi, %eax
 	imulq	$1374389535, %rax, %rcx
 	shrq	$37, %rcx
 	imull	$100, %ecx, %ecx
