@@ -16,24 +16,9 @@
 	.short	205
 	.short	205
 	.short	205
-.LCPI0_2:
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
 .LCPI0_1:
+	.zero	16,248
+.LCPI0_2:
 	.byte	0
 	.byte	0
 	.byte	0
@@ -51,6 +36,8 @@
 	.byte	16
 	.byte	8
 .LCPI0_3:
+	.zero	4,248
+.LCPI0_4:
 	.byte	0
 	.byte	0
 	.byte	0
@@ -64,10 +51,10 @@ func0000000000000004:
 	vpmullw	.LCPI0_0(%rip), %ymm2, %ymm2
 	vpsrlw	$8, %ymm2, %ymm2
 	vpmovwb	%ymm2, %xmm2
-	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm2, %xmm2
-	vpmovzxbw	%xmm2, %ymm2
-	vpmullw	.LCPI0_2(%rip), %ymm2, %ymm2
-	vpmovwb	%ymm2, %xmm2
+	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm3
+	vgf2p8affineqb	$0, .LCPI0_4(%rip){1to2}, %xmm2, %xmm2
+	vpaddb	%xmm2, %xmm2, %xmm2
+	vpaddb	%xmm2, %xmm3, %xmm2
 	vpsubb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

@@ -27,23 +27,6 @@ func0000000000000001:
 	.short	103
 	.short	103
 	.short	103
-.LCPI1_2:
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
 .LCPI1_1:
 	.byte	128
 	.byte	128
@@ -61,6 +44,23 @@ func0000000000000001:
 	.byte	16
 	.byte	8
 	.byte	4
+.LCPI1_2:
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI1_3:
 	.zero	16,5
 .LCPI1_4:
@@ -73,6 +73,15 @@ func0000000000000001:
 	.byte	8
 	.byte	4
 .LCPI1_5:
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+.LCPI1_6:
 	.byte	5
 func0000000000000006:
 	vpmovsxbw	%xmm0, %ymm1
@@ -83,11 +92,11 @@ func0000000000000006:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtb	%xmm1, %xmm2, %xmm2
 	vpsubb	%xmm2, %xmm1, %xmm1
-	vpmovzxbw	%xmm1, %ymm1
-	vpmullw	.LCPI1_2(%rip), %ymm1, %ymm1
-	vpmovwb	%ymm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm2
+	vgf2p8affineqb	$0, .LCPI1_5(%rip){1to2}, %xmm1, %xmm1
+	vpaddb	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
-	vpbroadcastb	.LCPI1_5(%rip), %xmm1
+	vpbroadcastb	.LCPI1_6(%rip), %xmm1
 	vpcmpgtb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

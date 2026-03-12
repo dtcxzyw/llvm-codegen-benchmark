@@ -88,6 +88,23 @@ func0000000000000001:
 	.byte	64
 	.byte	32
 	.byte	16
+.LCPI1_3:
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI1_4:
 	.zero	16,10
 .LCPI1_1:
@@ -107,23 +124,6 @@ func0000000000000001:
 	.short	133
 	.short	133
 	.short	133
-.LCPI1_3:
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
-	.short	62
 .LCPI1_5:
 	.byte	0
 	.byte	128
@@ -143,6 +143,15 @@ func0000000000000001:
 	.byte	32
 	.byte	16
 .LCPI1_7:
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+.LCPI1_8:
 	.byte	10
 func0000000000000014:
 	vgf2p8affineqb	$0, .LCPI1_5(%rip){1to2}, %xmm0, %xmm1
@@ -151,11 +160,11 @@ func0000000000000014:
 	vpsrlw	$8, %ymm1, %ymm1
 	vpmovwb	%ymm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI1_6(%rip){1to2}, %xmm1, %xmm1
-	vpmovzxbw	%xmm1, %ymm1
-	vpmullw	.LCPI1_3(%rip), %ymm1, %ymm1
-	vpmovwb	%ymm1, %xmm1
-	vpsubb	%xmm1, %xmm0, %xmm0
-	vpbroadcastb	.LCPI1_7(%rip), %xmm1
+	vgf2p8affineqb	$0, .LCPI1_7(%rip){1to2}, %xmm1, %xmm2
+	vpaddb	%xmm1, %xmm1, %xmm1
+	vpsubb	%xmm2, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm0, %xmm0
+	vpbroadcastb	.LCPI1_8(%rip), %xmm1
 	vpcmpgtb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
@@ -232,24 +241,9 @@ func000000000000000c:
 	.short	205
 	.short	205
 	.short	205
-.LCPI3_2:
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
 .LCPI3_1:
+	.zero	16,248
+.LCPI3_2:
 	.byte	0
 	.byte	0
 	.byte	0
@@ -269,6 +263,8 @@ func000000000000000c:
 .LCPI3_3:
 	.zero	16,1
 .LCPI3_4:
+	.zero	4,248
+.LCPI3_5:
 	.byte	0
 	.byte	0
 	.byte	0
@@ -282,10 +278,10 @@ func0000000000000018:
 	vpmullw	.LCPI3_0(%rip), %ymm1, %ymm1
 	vpsrlw	$8, %ymm1, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vgf2p8affineqb	$0, .LCPI3_4(%rip){1to2}, %xmm1, %xmm1
-	vpmovzxbw	%xmm1, %ymm1
-	vpmullw	.LCPI3_2(%rip), %ymm1, %ymm1
-	vpmovwb	%ymm1, %xmm1
+	vpandd	.LCPI3_4(%rip){1to4}, %xmm1, %xmm2
+	vgf2p8affineqb	$0, .LCPI3_5(%rip){1to2}, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm2, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpcmpgtb	.LCPI3_3(%rip), %xmm0, %xmm0
 	vzeroupper

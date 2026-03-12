@@ -69,14 +69,22 @@ func000000000000000f:
 	.byte	32
 	.byte	16
 .LCPI1_1:
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI1_2:
 	.byte	0
 	.byte	0
@@ -86,11 +94,20 @@ func000000000000000f:
 	.byte	64
 	.byte	32
 	.byte	16
+.LCPI1_3:
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
 func000000000000000c:
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm1, %xmm1
-	vpmovzxbw	%xmm1, %xmm1
-	vpmullw	.LCPI1_1(%rip), %xmm1, %xmm1
-	vpmovwb	%xmm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm2
+	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm1, %xmm1
+	vpaddb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
