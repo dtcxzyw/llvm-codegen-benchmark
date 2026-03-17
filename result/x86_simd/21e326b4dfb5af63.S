@@ -15,7 +15,7 @@ func0000000000000007:
 .LCPI2_0:
 	.long	0x3f800000
 func000000000000000c:
-	vmaxps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm1
-	vdivps	%zmm1, %zmm0, %zmm0
+	vcmpgeps	.LCPI2_0(%rip){1to16}, %zmm1, %k1
+	vdivps	%zmm1, %zmm0, %zmm0 {%k1}
 	retq
 

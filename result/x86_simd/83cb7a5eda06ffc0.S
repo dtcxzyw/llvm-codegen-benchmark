@@ -1,14 +1,14 @@
 	.att_syntax
 func0000000000000004:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vmaxps	%zmm2, %zmm1, %zmm1
-	vsubps	%zmm1, %zmm0, %zmm0
+	vcmpltps	%zmm1, %zmm2, %k1
+	vsubps	%zmm1, %zmm0, %zmm0 {%k1}
 	retq
 
 func0000000000000002:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vminps	%zmm2, %zmm1, %zmm1
-	vsubps	%zmm1, %zmm0, %zmm0
+	vcmpltps	%zmm2, %zmm1, %k1
+	vsubps	%zmm1, %zmm0, %zmm0 {%k1}
 	retq
 
 .LCPI2_0:

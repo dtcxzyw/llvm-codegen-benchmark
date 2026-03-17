@@ -18,8 +18,8 @@ func0000000000000047:
 	vaddss	.LCPI1_0(%rip), %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vmaxss	%xmm1, %xmm0, %xmm0
-	vucomiss	%xmm1, %xmm0
-	setne	%al
+	vcmpneqss	%xmm1, %xmm0, %k0
+	kmovd	%k0, %eax
 	retq
 
 .LCPI2_0:
@@ -30,8 +30,9 @@ func0000000000000022:
 	vaddss	.LCPI2_0(%rip), %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vminss	%xmm1, %xmm0, %xmm0
-	vucomiss	.LCPI2_1(%rip), %xmm0
-	setb	%al
+	vmovss	.LCPI2_1(%rip), %xmm1
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	retq
 
 .LCPI3_0:

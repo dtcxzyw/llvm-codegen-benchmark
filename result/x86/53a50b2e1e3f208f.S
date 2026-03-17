@@ -6,8 +6,9 @@ func0000000000000042:
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vxorpd	%xmm0, %xmm0, %xmm0
 	vmaxsd	%xmm0, %xmm1, %xmm0
-	vucomisd	.LCPI0_0(%rip), %xmm0
-	setb	%al
+	vmovsd	.LCPI0_0(%rip), %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
 	retq
 
 .LCPI1_0:

@@ -9,8 +9,7 @@ func0000000000000002:
 	.long	0x3f800000
 func000000000000000a:
 	vcvtsi2ss	%edi, %xmm15, %xmm0
-	vmovss	.LCPI1_0(%rip), %xmm1
-	vmaxss	%xmm0, %xmm1, %xmm0
+	vmaxss	.LCPI1_0(%rip), %xmm0, %xmm0
 	retq
 
 func0000000000000004:

@@ -8,8 +8,9 @@
 func0000000000000022:
 	vmulss	.LCPI0_0(%rip), %xmm0, %xmm0
 	vminss	.LCPI0_1(%rip), %xmm0, %xmm0
-	vucomiss	.LCPI0_2(%rip), %xmm0
-	setb	%al
+	vmovss	.LCPI0_2(%rip), %xmm1
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	retq
 
 .LCPI1_0:

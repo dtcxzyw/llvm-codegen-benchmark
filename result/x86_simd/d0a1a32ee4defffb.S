@@ -20,9 +20,11 @@ func0000000000000002:
 func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vminps	.LCPI1_0(%rip){1to16}, %zmm1, %zmm0
+	vcmpleps	.LCPI1_0(%rip){1to16}, %zmm1, %k1
+	vbroadcastss	.LCPI1_1(%rip), %zmm0
+	vmulps	%zmm0, %zmm1, %zmm0 {%k1}
 	knotw	%k0, %k1
-	vmulps	.LCPI1_1(%rip){1to16}, %zmm0, %zmm0 {%k1} {z}
+	vmovaps	%zmm0, %zmm0 {%k1} {z}
 	retq
 
 .LCPI2_0:

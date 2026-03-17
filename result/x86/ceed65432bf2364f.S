@@ -6,8 +6,9 @@
 func0000000000000022:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vminss	.LCPI0_0(%rip), %xmm0, %xmm0
-	vucomiss	.LCPI0_1(%rip), %xmm0
-	setb	%al
+	vmovss	.LCPI0_1(%rip), %xmm1
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	retq
 
 .LCPI1_0:
@@ -17,8 +18,9 @@ func0000000000000022:
 func00000000000000ca:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vmaxss	.LCPI1_0(%rip), %xmm0, %xmm0
-	vucomiss	.LCPI1_1(%rip), %xmm0
-	setbe	%al
+	vmovss	.LCPI1_1(%rip), %xmm1
+	vucomiss	%xmm0, %xmm1
+	setae	%al
 	retq
 
 .LCPI2_0:

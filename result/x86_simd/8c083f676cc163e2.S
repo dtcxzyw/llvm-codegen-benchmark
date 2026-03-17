@@ -92,8 +92,8 @@ func0000000000000045:
 	vmaxpd	%zmm2, %zmm1, %zmm1
 	vmaxpd	%zmm2, %zmm0, %zmm0
 	vbroadcastsd	.LCPI6_0(%rip), %zmm2
-	vcmpltpd	%zmm0, %zmm2, %k0
-	vcmpltpd	%zmm1, %zmm2, %k1
+	vcmpnlepd	%zmm2, %zmm0, %k0
+	vcmpnlepd	%zmm2, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -149,8 +149,8 @@ func0000000000000043:
 	vmaxpd	%zmm2, %zmm1, %zmm1
 	vmaxpd	%zmm2, %zmm0, %zmm0
 	vbroadcastsd	.LCPI10_0(%rip), %zmm2
-	vcmpltpd	%zmm2, %zmm0, %k0
-	vcmpltpd	%zmm2, %zmm1, %k1
+	vcmpnlepd	%zmm0, %zmm2, %k0
+	vcmpnlepd	%zmm1, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

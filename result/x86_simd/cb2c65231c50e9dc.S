@@ -5,7 +5,7 @@ func0000000000000023:
 	vaddps	%zmm1, %zmm0, %zmm0
 	vminps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpltps	%zmm1, %zmm0, %k0
+	vcmpnleps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -9,8 +9,7 @@ func0000000000000002:
 	.long	0x3f800000
 func000000000000000a:
 	vcvtdq2ps	%ymm0, %ymm0
-	vbroadcastss	.LCPI1_0(%rip), %ymm1
-	vmaxps	%ymm0, %ymm1, %ymm0
+	vmaxps	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 func0000000000000004:

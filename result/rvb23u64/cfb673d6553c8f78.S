@@ -10,21 +10,21 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	srli	a0, a0, 8
-	sext.b	a0, a0
+	slli	a0, a0, 48
+	srai	a0, a0, 56
 	slti	a0, a0, 26
 	ret
 
 func000000000000004a:
-	srli	a0, a0, 24
-	sext.b	a0, a0
+	slli	a0, a0, 32
+	srai	a0, a0, 56
 	slti	a0, a0, -59
 	xori	a0, a0, 1
 	ret
 
 func0000000000000046:
-	srli	a0, a0, 24
-	sext.b	a0, a0
+	slli	a0, a0, 32
+	srai	a0, a0, 56
 	slti	a0, a0, 60
 	ret
 

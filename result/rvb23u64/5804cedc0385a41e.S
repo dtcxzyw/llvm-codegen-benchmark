@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000046:
-	srli	a0, a0, 16
-	sext.h	a0, a0
+	slli	a0, a0, 32
+	srai	a0, a0, 48
 	slti	a0, a0, 1
 	ret
 

@@ -5,8 +5,9 @@ func0000000000000242:
 	vminsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vmaxsd	%xmm1, %xmm0, %xmm0
-	vucomisd	.LCPI0_0(%rip), %xmm0
-	setb	%al
+	vmovsd	.LCPI0_0(%rip), %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
 	retq
 
 .LCPI1_0:
@@ -26,7 +27,8 @@ func0000000000000424:
 func0000000000000442:
 	vmaxsd	%xmm1, %xmm0, %xmm0
 	vmaxsd	.LCPI2_0(%rip), %xmm0, %xmm0
-	vucomisd	.LCPI2_1(%rip), %xmm0
-	setb	%al
+	vmovsd	.LCPI2_1(%rip), %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
 	retq
 

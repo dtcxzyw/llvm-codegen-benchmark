@@ -2,8 +2,8 @@
 .LCPI0_0:
 	.long	0x3f800000
 func0000000000000002:
-	vminps	.LCPI0_0(%rip){1to16}, %zmm1, %zmm1
-	vmulps	%zmm1, %zmm0, %zmm0
+	vcmpltps	.LCPI0_0(%rip){1to16}, %zmm1, %k1
+	vmulps	%zmm1, %zmm0, %zmm0 {%k1}
 	retq
 
 func0000000000000004:

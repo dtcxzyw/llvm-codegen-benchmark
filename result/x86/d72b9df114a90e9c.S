@@ -25,15 +25,15 @@ func0000000000000422:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxss	%xmm2, %xmm1, %xmm1
 	vminss	.LCPI2_0(%rip), %xmm0, %xmm0
-	vucomiss	%xmm1, %xmm0
-	setb	%al
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	retq
 
 func0000000000000442:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxss	%xmm2, %xmm1, %xmm1
 	vmaxss	%xmm2, %xmm0, %xmm0
-	vucomiss	%xmm1, %xmm0
-	setb	%al
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	retq
 

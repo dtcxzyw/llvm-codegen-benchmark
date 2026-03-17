@@ -1,10 +1,10 @@
 func0000000000000009:
-	srli	a0, a0, 8
-	sext.b	a0, a0
+	slli	a0, a0, 48
+	srai	a0, a0, 56
 	ret
 
 func000000000000000d:
-	srli	a0, a0, 24
-	sext.b	a0, a0
+	slli	a0, a0, 32
+	srai	a0, a0, 56
 	ret
 

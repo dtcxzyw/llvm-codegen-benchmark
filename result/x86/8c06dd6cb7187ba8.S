@@ -3,8 +3,8 @@ func0000000000000048:
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vmaxsd	%xmm1, %xmm0, %xmm0
-	vucomisd	%xmm1, %xmm0
-	sete	%al
+	vcmpeqsd	%xmm1, %xmm0, %k0
+	kmovd	%k0, %eax
 	retq
 
 .LCPI1_0:

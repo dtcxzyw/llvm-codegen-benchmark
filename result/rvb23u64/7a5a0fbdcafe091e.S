@@ -12,14 +12,14 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	srli	a0, a0, 16
-	sext.b	a0, a0
+	slli	a0, a0, 40
+	srai	a0, a0, 56
 	slti	a0, a0, 123
 	ret
 
 func000000000000000a:
-	srli	a0, a0, 16
-	sext.b	a0, a0
+	slli	a0, a0, 40
+	srai	a0, a0, 56
 	slti	a0, a0, 123
 	xori	a0, a0, 1
 	ret
@@ -52,8 +52,8 @@ func0000000000000018:
 	ret
 
 func0000000000000086:
-	srli	a0, a0, 4
-	sext.b	a0, a0
+	slli	a0, a0, 52
+	srai	a0, a0, 56
 	slti	a0, a0, 1
 	ret
 
