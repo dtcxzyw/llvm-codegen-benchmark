@@ -20,14 +20,14 @@ func0000000000000001:
 	.short	43691
 	.short	43691
 	.short	43691
-	.short	43691
-	.short	43691
-	.short	43691
-	.short	43691
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000000b:
 	vpmovqw	%ymm0, %xmm0
-	vpmulhuw	.LCPI1_0(%rip), %xmm0, %xmm0
-	vpsrlw	$4, %xmm0, %xmm0
+	vpsrlw	$3, %xmm0, %xmm0
+	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
