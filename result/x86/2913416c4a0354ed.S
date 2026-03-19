@@ -2,9 +2,9 @@
 func0000000000000061:
 	andq	$-8, %rdx
 	leaq	4(%rdx), %rax
-	orq	$12, %rsi
+	leaq	12(%rsi), %rcx
 	testq	%rdi, %rdi
-	cmoveq	%rsi, %rax
+	cmoveq	%rcx, %rax
 	retq
 
 func0000000000000041:

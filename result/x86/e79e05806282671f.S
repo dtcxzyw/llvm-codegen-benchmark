@@ -2,9 +2,9 @@
 func000000000000000f:
 	shrl	$13, %edx
 	andl	$32, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	leal	(%rdi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
+	orl	%edx, %eax
+	addl	%eax, %eax
 	retq
 
 func0000000000000003:

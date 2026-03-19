@@ -8,11 +8,10 @@ func000000000000001f:
 	retq
 
 func000000000000001e:
-	movq	%rdi, %rax
 	andl	$127, %edx
 	shlq	$35, %rdx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	orq	%rdi, %rax
 	retq
 
 func000000000000001c:

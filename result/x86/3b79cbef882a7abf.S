@@ -10,10 +10,9 @@ func0000000000000001:
 
 func0000000000000061:
 	notl	%edx
-	leal	512(%rdi,%rsi), %eax
-	movl	%edi, %ecx
-	orl	%esi, %ecx
+	leal	(%rdi,%rsi), %ecx
 	testb	$6, %dl
+	leal	512(%rdi,%rsi), %eax
 	cmovnel	%ecx, %eax
 	retq
 

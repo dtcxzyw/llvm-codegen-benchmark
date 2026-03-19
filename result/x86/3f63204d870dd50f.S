@@ -9,11 +9,11 @@ func0000000000000000:
 
 func0000000000000002:
 	shrl	$10, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	shll	$9, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 

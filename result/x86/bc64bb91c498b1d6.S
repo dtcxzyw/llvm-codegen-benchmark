@@ -9,18 +9,18 @@ func0000000000000044:
 
 func00000000000000f6:
 	shll	$18, %edx
-	leal	-62914560(%rdx), %eax
+	leal	-62914560(%rdx), %ecx
 	shll	$6, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func00000000000000fa:
 	shll	$6, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	shll	$18, %esi
 	leal	-62914560(%rsi), %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000000:
@@ -40,9 +40,9 @@ func0000000000000034:
 
 func0000000000000002:
 	shll	$16, %edx
-	leal	65536(%rdx), %eax
+	leal	65536(%rdx), %ecx
 	shll	$7, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 

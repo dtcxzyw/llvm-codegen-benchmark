@@ -5,7 +5,7 @@ func000000000000001f:
 	retq
 
 func000000000000001b:
-	orq	$1, %rsi
+	incq	%rsi
 	leaq	(%rsi,%rsi,2), %rax
 	leaq	2(%rdi,%rax), %rax
 	retq

@@ -1,7 +1,6 @@
 	.att_syntax
 func0000000000000021:
-	movl	%edi, %eax
-	orl	$-2147483648, %eax
+	leal	-2147483648(%rdi), %eax
 	testq	%rsi, %rsi
 	cmovnel	%edi, %eax
 	retq

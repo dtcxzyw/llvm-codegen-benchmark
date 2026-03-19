@@ -3,7 +3,7 @@ func0000000000000001:
 	cmpq	$65, %rdi
 	movl	$64, %eax
 	cmovaeq	%rdi, %rax
-	orq	$1, %rax
+	incq	%rax
 	retq
 
 func0000000000000000:

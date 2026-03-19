@@ -1,38 +1,38 @@
 	.att_syntax
 func000000000000001f:
 	shlq	$61, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func000000000000001c:
 	shlq	$8, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000004:
 	shlq	$8, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000014:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func000000000000001d:
 	shlq	$16, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000016:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func000000000000000d:
@@ -58,8 +58,8 @@ func0000000000000007:
 
 func000000000000000c:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000000:
@@ -70,8 +70,8 @@ func0000000000000000:
 
 func000000000000001e:
 	shlq	$8, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000010:

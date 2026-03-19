@@ -6,14 +6,14 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	rorxl	$30, %edx, %eax
-	orl	%esi, %edi
-	xorl	%edi, %eax
+	rorxl	$30, %edx, %ecx
+	leal	(%rdi,%rsi), %eax
+	xorl	%ecx, %eax
 	retq
 
 func0000000000000002:
-	orl	%edx, %esi
+	leal	(%rsi,%rdx), %ecx
 	rorxl	$16, %edi, %eax
-	xorl	%esi, %eax
+	xorl	%ecx, %eax
 	retq
 

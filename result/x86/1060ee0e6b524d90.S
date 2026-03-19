@@ -2,14 +2,14 @@
 func0000000000000003:
 	subb	%dl, %sil
 	shlb	$4, %sil
-	orb	%dil, %sil
-	leal	-128(%rsi), %eax
+	leal	(%rsi,%rdi), %eax
+	addb	$-128, %al
 	retq
 
 func0000000000000001:
 	subb	%dl, %sil
 	shlb	$4, %sil
-	orb	%dil, %sil
-	leal	-128(%rsi), %eax
+	leal	(%rsi,%rdi), %eax
+	addb	$-128, %al
 	retq
 

@@ -1,7 +1,6 @@
 	.att_syntax
 func0000000000000090:
-	movq	%rdx, %rax
-	orq	$15, %rax
+	leaq	15(%rdx), %rax
 	addq	$30, %rdx
 	testq	%rax, %rax
 	cmovnsq	%rax, %rdx
@@ -12,8 +11,7 @@ func0000000000000090:
 	retq
 
 func000000000000009a:
-	movq	%rdx, %rax
-	orq	$15, %rax
+	leaq	15(%rdx), %rax
 	addq	$30, %rdx
 	testq	%rax, %rax
 	cmovnsq	%rax, %rdx

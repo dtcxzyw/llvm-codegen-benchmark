@@ -11,8 +11,7 @@ func0000000000000041:
 func0000000000000061:
 	cmpl	$49152, %edi
 	cmovnel	%edx, %esi
-	movl	%esi, %eax
-	orl	$2097152, %eax
+	leal	2097152(%rsi), %eax
 	cmpl	$4096, %edi
 	cmovnel	%esi, %eax
 	retq
@@ -29,8 +28,7 @@ func0000000000000058:
 func0000000000000078:
 	testl	%edi, %edi
 	cmovnel	%edx, %esi
-	movl	%esi, %eax
-	orl	$16, %eax
+	leal	16(%rsi), %eax
 	cmpl	$2, %edi
 	cmovbl	%esi, %eax
 	retq

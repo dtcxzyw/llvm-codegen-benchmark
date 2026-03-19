@@ -15,10 +15,9 @@ func0000000000000003:
 	retq
 
 func000000000000000f:
-	movq	%rdi, %rax
 	shldq	$32, %rdi, %rsi
-	shlq	$32, %rax
-	orq	%rdx, %rax
+	shlq	$32, %rdi
+	leaq	(%rdi,%rdx), %rax
 	movq	%rsi, %rdx
 	retq
 

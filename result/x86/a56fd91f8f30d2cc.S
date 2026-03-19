@@ -12,7 +12,7 @@ func0000000000000004:
 	retq
 
 func0000000000000007:
-	orl	$1, %esi
+	incl	%esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	retq

@@ -1,7 +1,6 @@
 	.att_syntax
 func000000000000002b:
-	movl	%edx, %eax
-	orl	$32, %eax
+	leal	32(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
 	cmpl	%edi, %eax
@@ -9,8 +8,7 @@ func000000000000002b:
 	retq
 
 func0000000000000027:
-	movl	%edx, %eax
-	orl	$32, %eax
+	leal	32(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
 	cmpl	%edi, %eax
@@ -18,8 +16,7 @@ func0000000000000027:
 	retq
 
 func0000000000000021:
-	movl	%edx, %eax
-	orl	$32, %eax
+	leal	32(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
 	cmpl	%edi, %eax

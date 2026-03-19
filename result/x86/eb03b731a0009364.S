@@ -22,17 +22,17 @@ func0000000000000010:
 
 func0000000000000038:
 	shlq	$32, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rcx
 	movabsq	$-4658895280553007687, %rax
-	imulq	%rsi, %rax
+	imulq	%rcx, %rax
 	shrq	$31, %rax
 	retq
 
 func0000000000000028:
 	shlq	$32, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rcx
 	movabsq	$-4658895280553007687, %rax
-	imulq	%rsi, %rax
+	imulq	%rcx, %rax
 	shrq	$31, %rax
 	retq
 

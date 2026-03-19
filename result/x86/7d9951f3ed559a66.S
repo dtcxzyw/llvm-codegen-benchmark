@@ -22,14 +22,14 @@ func0000000000000003:
 	retq
 
 func0000000000000007:
-	orq	$2, %rsi
+	leaq	2(%rsi), %rcx
 	leaq	63(%rdi), %rax
-	andq	%rsi, %rax
+	andq	%rcx, %rax
 	retq
 
 func0000000000000004:
-	orq	$1, %rsi
+	leaq	1(%rsi), %rcx
 	leaq	-16(%rdi), %rax
-	andq	%rsi, %rax
+	andq	%rcx, %rax
 	retq
 

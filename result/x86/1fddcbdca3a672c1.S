@@ -3,8 +3,8 @@ func0000000000000007:
 	cmpb	$1, %dl
 	sete	%al
 	shlb	$4, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000018:
@@ -28,24 +28,24 @@ func0000000000000006:
 	cmpb	$6, %dl
 	sete	%al
 	shlb	$2, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000013:
 	cmpb	$8, %dl
 	setae	%al
 	addb	%al, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000012:
 	cmpb	$8, %dl
 	setae	%al
 	shlb	$5, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000010:

@@ -12,7 +12,7 @@ func0000000000000006:
 	cmpb	$6, %dl
 	sete	%al
 	shlb	$2, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 

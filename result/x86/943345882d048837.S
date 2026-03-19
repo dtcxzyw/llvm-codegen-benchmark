@@ -1,7 +1,6 @@
 	.att_syntax
 func0000000000000021:
-	movq	%rdi, %rax
-	orq	$1048576, %rax
+	leaq	1048576(%rdi), %rax
 	cmpq	$1048576, %rsi
 	cmovneq	%rdi, %rax
 	retq
@@ -14,8 +13,7 @@ func000000000000000c:
 	retq
 
 func0000000000000024:
-	movq	%rdi, %rax
-	orq	$128, %rax
+	leaq	128(%rdi), %rax
 	cmpq	$80, %rsi
 	cmovaeq	%rdi, %rax
 	retq
@@ -28,8 +26,7 @@ func0000000000000001:
 	retq
 
 func0000000000000038:
-	movq	%rdi, %rax
-	orq	$8, %rax
+	leaq	8(%rdi), %rax
 	cmpq	$256, %rsi
 	cmovbq	%rdi, %rax
 	retq

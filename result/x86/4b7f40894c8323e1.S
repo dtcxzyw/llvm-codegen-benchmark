@@ -37,8 +37,8 @@ func0000000000000002:
 func000000000000000d:
 	movabsq	$4602678819172646912, %rcx
 	addq	%rsi, %rcx
+	orq	%rdi, %rcx
 	movabsq	$-9223372036854775808, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

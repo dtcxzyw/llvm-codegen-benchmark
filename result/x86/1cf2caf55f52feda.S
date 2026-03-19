@@ -16,8 +16,7 @@ func0000000000000084:
 	retq
 
 func0000000000000086:
-	movl	%edi, %eax
-	orl	$2, %eax
+	leal	2(%rdi), %eax
 	addl	$-2, %esi
 	testl	$-3, %esi
 	cmovnel	%edi, %eax

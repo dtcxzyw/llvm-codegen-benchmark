@@ -6,9 +6,9 @@ func0000000000000004:
 	retq
 
 func0000000000000003:
-	movzbl	%dl, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	movzbl	%dl, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000000:
@@ -18,20 +18,20 @@ func0000000000000000:
 	retq
 
 func0000000000000007:
-	movzbl	%dl, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	movzbl	%dl, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000002:
-	movzbl	%dl, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	movzbl	%dl, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000006:
-	movzbl	%dl, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	movzbl	%dl, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 

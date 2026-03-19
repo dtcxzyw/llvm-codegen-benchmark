@@ -1,6 +1,6 @@
 func0000000000000001:
-	bfi	w0, w1, #4, #28
-	mvn	w0, w0
+	and	w8, w0, #0xf
+	eon	w0, w8, w1, lsl #4
 	ret
 
 func0000000000000005:

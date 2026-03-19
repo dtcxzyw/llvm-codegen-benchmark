@@ -1,20 +1,18 @@
 	.att_syntax
 func00000000000000ff:
-	movl	%edi, %eax
 	shlb	$4, %dl
 	shlb	$5, %sil
-	orb	%dl, %sil
-	shlb	$6, %al
-	orb	%sil, %al
+	leal	(%rsi,%rdx), %eax
+	shlb	$6, %dil
+	orb	%dil, %al
 	retq
 
 func0000000000000003:
-	movl	%edi, %eax
 	shlb	$7, %dl
 	shlb	$6, %sil
-	orb	%dl, %sil
-	shlb	$5, %al
-	orb	%sil, %al
+	leal	(%rsi,%rdx), %eax
+	shlb	$5, %dil
+	orb	%dil, %al
 	retq
 
 func00000000000000f8:

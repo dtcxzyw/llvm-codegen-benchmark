@@ -28,12 +28,12 @@ func000000000000000f:
 	retq
 
 func0000000000000026:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$1501, %edx
-	setae	%al
-	shll	$5, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	setae	%cl
+	shll	$5, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	orl	$33783808, %eax
 	retq
 

@@ -1,7 +1,6 @@
 	.att_syntax
 func0000000000000021:
-	movl	%edi, %eax
-	orl	$4, %eax
+	leal	4(%rdi), %eax
 	testw	%si, %si
 	cmovel	%edi, %eax
 	retq
@@ -14,23 +13,20 @@ func0000000000000001:
 	retq
 
 func0000000000000028:
-	movl	%edi, %eax
-	orl	$3, %eax
+	leal	3(%rdi), %eax
 	cmpw	$12, %si
 	cmovael	%edi, %eax
 	retq
 
 func0000000000000024:
-	movl	%edi, %eax
-	orl	$6, %eax
+	leal	6(%rdi), %eax
 	movzwl	%si, %ecx
 	cmpl	$32769, %ecx
 	cmovbl	%edi, %eax
 	retq
 
 func0000000000000034:
-	movl	%edi, %eax
-	orl	$4, %eax
+	leal	4(%rdi), %eax
 	cmpw	$16, %si
 	cmovbl	%edi, %eax
 	retq

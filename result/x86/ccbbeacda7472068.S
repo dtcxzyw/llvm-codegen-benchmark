@@ -4,7 +4,7 @@ func000000000000000e:
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shll	$5, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

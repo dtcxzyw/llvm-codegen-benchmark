@@ -15,14 +15,13 @@ func0000000000000006:
 	retq
 
 func0000000000000007:
-	movq	%rdi, %rax
-	movabsq	$-3689348814741910323, %rcx
+	movabsq	$-3689348814741910323, %rax
 	movq	%rdi, %rdx
-	mulxq	%rcx, %rcx, %rcx
-	shrq	$3, %rcx
-	addl	%ecx, %ecx
-	leal	(%rcx,%rcx,4), %ecx
-	subl	%ecx, %eax
-	orl	$48, %eax
+	mulxq	%rax, %rax, %rax
+	shrq	$3, %rax
+	addl	%eax, %eax
+	leal	(%rax,%rax,4), %eax
+	subl	%eax, %edi
+	leal	48(%rdi), %eax
 	retq
 

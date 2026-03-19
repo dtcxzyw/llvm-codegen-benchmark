@@ -12,8 +12,8 @@ func0000000000000007:
 	retq
 
 func000000000000001f:
-	orl	%edx, %esi
-	shrl	$3, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	shrl	$3, %eax
+	addq	%rdi, %rax
 	retq
 

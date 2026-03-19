@@ -9,16 +9,16 @@ func000000000000001b:
 func000000000000003b:
 	movzbl	%dl, %eax
 	shll	$10, %eax
+	orl	%edi, %eax
 	shrl	$6, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func0000000000000019:
 	movzbl	%dl, %eax
 	shll	$8, %eax
+	orl	%edi, %eax
 	shrl	$4, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 

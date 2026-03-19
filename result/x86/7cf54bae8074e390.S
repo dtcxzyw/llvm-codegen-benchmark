@@ -2,7 +2,7 @@
 func0000000000000003:
 	leal	512(%rdx), %eax
 	andl	$7680, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -30,7 +30,7 @@ func0000000000000007:
 func0000000000000002:
 	leal	1(%rdx), %eax
 	andl	$4095, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -51,14 +51,14 @@ func0000000000000000:
 func000000000000000b:
 	leal	2147450880(%rdx), %eax
 	andl	$2147450880, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
 func000000000000000e:
 	leal	256(%rdx), %eax
 	andl	$16711680, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

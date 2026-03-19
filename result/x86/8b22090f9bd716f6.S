@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000019:
 	movzbl	%sil, %ecx
-	movl	%ecx, %eax
-	orl	$2, %eax
+	leal	2(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	orl	$4, %eax
@@ -10,8 +9,7 @@ func0000000000000019:
 
 func000000000000001d:
 	movzbl	%sil, %ecx
-	movl	%ecx, %eax
-	orl	$2, %eax
+	leal	2(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	orl	$4, %eax

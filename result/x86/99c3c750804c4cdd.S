@@ -99,8 +99,8 @@ func00000000000000e8:
 	retq
 
 func00000000000000a6:
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	shrl	$31, %eax
 	retq
 

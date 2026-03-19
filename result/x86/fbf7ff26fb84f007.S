@@ -19,10 +19,10 @@ func000000000000001d:
 func0000000000000019:
 	shldq	$3, %rdx, %rcx
 	shldq	$10, %rdi, %rsi
-	orq	%rcx, %rsi
+	addq	%rsi, %rcx
 	shlq	$10, %rdi
 	leaq	(%rdi,%rdx,8), %rax
-	movq	%rsi, %rdx
+	movq	%rcx, %rdx
 	retq
 
 func0000000000000007:

@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000003:
 	movzwl	%si, %ecx
-	movl	%ecx, %eax
-	orl	$4, %eax
+	leal	4(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

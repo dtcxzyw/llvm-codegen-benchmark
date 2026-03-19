@@ -1,7 +1,7 @@
 	.att_syntax
 func0000000000000001:
-	movzwl	%dx, %eax
-	orl	%esi, %edi
-	xorl	%edi, %eax
+	movzwl	%dx, %ecx
+	leal	(%rdi,%rsi), %eax
+	xorl	%ecx, %eax
 	retq
 

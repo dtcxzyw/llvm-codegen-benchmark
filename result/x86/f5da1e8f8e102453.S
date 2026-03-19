@@ -9,11 +9,11 @@ func0000000000000000:
 
 func0000000000000003:
 	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	shll	$20, %eax
-	orl	%esi, %edi
-	andl	$-63438849, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	andl	$1, %ecx
+	shll	$20, %ecx
+	leal	(%rdi,%rsi), %eax
+	andl	$-63438849, %eax
+	orl	%ecx, %eax
 	retq
 

@@ -38,6 +38,7 @@ func0000000000000366:
 	orl	%edi, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
+	testl	%eax, %eax
 	setle	%al
 	retq
 
@@ -46,6 +47,7 @@ func000000000000036a:
 	orl	%edi, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 

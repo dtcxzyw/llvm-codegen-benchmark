@@ -3,8 +3,7 @@ func0000000000000001:
 	testb	$1, %sil
 	movl	$2, %ecx
 	cmovel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$524288, %eax
+	leal	524288(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

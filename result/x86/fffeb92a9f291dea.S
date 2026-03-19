@@ -9,21 +9,21 @@ func0000000000000000:
 func000000000000000b:
 	shll	$24, %edx
 	movslq	%edx, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
 func0000000000000002:
 	shll	$6, %edx
 	movslq	%edx, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
 func0000000000000001:
 	shll	$8, %edx
 	movslq	%edx, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

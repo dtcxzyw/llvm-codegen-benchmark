@@ -7,8 +7,8 @@ func0000000000000005:
 	orq	%rdi, %rcx
 	movabsq	$-1100585369632, %rdx
 	andq	%rsi, %rdx
+	orq	%rcx, %rdx
 	movabsq	$1099511627780, %rax
 	orq	%rdx, %rax
-	orq	%rcx, %rax
 	retq
 

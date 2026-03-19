@@ -22,7 +22,7 @@ func0000000000000004:
 	movl	$48, %eax
 	cmovel	%edx, %eax
 	andb	$2, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 

@@ -8,11 +8,10 @@ func0000000000000002:
 	retq
 
 func0000000000000003:
-	movq	%rdi, %rax
 	testq	%rdx, %rdx
 	cmoveq	%rdx, %rsi
-	andq	$-32571360, %rax
-	orq	%rsi, %rax
+	andq	$-32571360, %rdi
+	leaq	(%rdi,%rsi), %rax
 	retq
 
 func0000000000000009:

@@ -1,18 +1,16 @@
 	.att_syntax
 func0000000000000001:
-	movq	%rsi, %rax
-	subq	%rdx, %rax
-	shrq	$27, %rax
-	andl	$33554400, %eax
-	orl	%edi, %eax
+	subq	%rdx, %rsi
+	shrq	$27, %rsi
+	andl	$33554400, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000019:
-	movq	%rsi, %rax
-	subq	%rdx, %rax
-	shrq	$2, %rax
-	andl	$2147483647, %eax
-	orl	%edi, %eax
+	subq	%rdx, %rsi
+	shrq	$2, %rsi
+	andl	$2147483647, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000010:

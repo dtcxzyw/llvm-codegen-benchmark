@@ -7,11 +7,11 @@ func0000000000000007:
 	retq
 
 func0000000000000003:
-	movl	%edx, %eax
-	movabsq	$9223090566173032447, %rcx
-	andq	%rsi, %rcx
-	orq	%rdi, %rax
+	movl	%edx, %ecx
+	movabsq	$9223090566173032447, %rax
+	andq	%rsi, %rax
 	orq	%rcx, %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000000:

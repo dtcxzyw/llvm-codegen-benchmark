@@ -13,7 +13,7 @@ func0000000000000007:
 	testl	$14680064, %edx
 	setne	%al
 	shll	$20, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -32,7 +32,7 @@ func0000000000000005:
 	movl	$1073741824, %ecx
 	movl	$2, %eax
 	cmovel	%ecx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -42,7 +42,7 @@ func0000000000000062:
 	cmpl	$144, %edx
 	movl	$32767, %eax
 	cmovbl	%ecx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

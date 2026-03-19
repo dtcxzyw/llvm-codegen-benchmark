@@ -48,6 +48,7 @@ func0000000000000228:
 func00000000000003a6:
 	shll	$6, %esi
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setle	%al
 	retq
 

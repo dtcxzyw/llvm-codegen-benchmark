@@ -6,34 +6,30 @@ func000000000000001f:
 	retq
 
 func000000000000001e:
-	movl	%edi, %eax
 	shll	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$-16777216, %eax
 	retq
 
 func000000000000001c:
-	movl	%edi, %eax
 	shll	$9, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$2, %eax
 	retq
 
 func0000000000000006:
-	movl	%edi, %eax
 	shll	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$-16777216, %eax
 	retq
 
 func0000000000000016:
-	movl	%edi, %eax
 	shll	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$-16777216, %eax
 	retq
 
@@ -60,18 +56,16 @@ func0000000000000007:
 	retq
 
 func000000000000001a:
-	movl	%edi, %eax
 	shll	$13, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	orl	%esi, %edx
+	leal	(%rdx,%rdi), %eax
 	orl	$1845756928, %eax
 	retq
 
 func000000000000001d:
-	movl	%edi, %eax
 	shll	$6, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$12, %eax
 	retq
 
@@ -82,18 +76,16 @@ func0000000000000017:
 	retq
 
 func0000000000000001:
-	movl	%edi, %eax
 	shll	$6, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
-	orl	$3, %eax
+	orl	%esi, %edi
+	orl	%edx, %edi
+	leal	3(%rdi), %eax
 	retq
 
 func0000000000000002:
-	movl	%edi, %eax
 	shll	$8, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	orl	%esi, %edx
+	leal	(%rdx,%rdi), %eax
 	orl	$-1342177280, %eax
 	retq
 
@@ -105,10 +97,9 @@ func0000000000000019:
 	retq
 
 func0000000000000014:
-	movl	%edi, %eax
 	shll	$24, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$4194304, %eax
 	retq
 
@@ -119,10 +110,9 @@ func0000000000000003:
 	retq
 
 func0000000000000005:
-	movl	%edi, %eax
 	shll	$24, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$57, %eax
 	retq
 
@@ -135,10 +125,9 @@ func0000000000000008:
 	retq
 
 func000000000000000e:
-	movl	%edi, %eax
 	shll	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	orl	$-16777216, %eax
 	retq
 

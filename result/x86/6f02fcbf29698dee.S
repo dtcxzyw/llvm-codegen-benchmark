@@ -18,7 +18,7 @@ func0000000000000033:
 func0000000000000001:
 	leal	(,%rsi,4), %eax
 	orl	%edi, %eax
-	orl	$1, %eax
+	incl	%eax
 	retq
 
 func0000000000000020:
@@ -33,9 +33,8 @@ func0000000000000023:
 	retq
 
 func0000000000000029:
-	movq	%rsi, %rax
-	shll	$13, %eax
-	orl	%edi, %eax
-	orl	$197, %eax
+	shll	$13, %esi
+	orl	%edi, %esi
+	leal	197(%rsi), %eax
 	retq
 

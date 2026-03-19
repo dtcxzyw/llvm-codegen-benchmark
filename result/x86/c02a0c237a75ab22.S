@@ -7,9 +7,9 @@ func0000000000000010:
 	retq
 
 func0000000000000040:
-	orl	%edx, %esi
-	shll	$4, %esi
-	subl	%edi, %esi
-	leal	-2(%rsi), %eax
+	leal	(%rsi,%rdx), %eax
+	shll	$4, %eax
+	subl	%edi, %eax
+	addl	$-2, %eax
 	retq
 

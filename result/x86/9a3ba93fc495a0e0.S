@@ -7,9 +7,9 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	testq	%rdi, %rdi
 	movl	$5121, %eax
-	cmovneq	%rsi, %rax
+	cmovneq	%rcx, %rax
 	retq
 

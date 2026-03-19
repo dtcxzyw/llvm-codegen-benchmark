@@ -2,9 +2,8 @@
 func0000000000000003:
 	andl	$1, %edx
 	shll	$11, %edx
+	leal	(%rsi,%rdx), %ecx
 	leal	512(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

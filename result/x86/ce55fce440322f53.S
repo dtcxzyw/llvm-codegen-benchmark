@@ -1,9 +1,8 @@
 	.att_syntax
 func00000000000000fa:
-	movq	%rdi, %rax
 	shlq	$19, %rsi
-	shlq	$39, %rax
-	orq	%rsi, %rax
+	shlq	$39, %rdi
+	leaq	(%rdi,%rsi), %rax
 	shrq	$24, %rax
 	retq
 
@@ -14,10 +13,9 @@ func000000000000003a:
 	retq
 
 func00000000000000ea:
-	movq	%rdi, %rax
 	shlq	$8, %rsi
-	shlq	$40, %rax
-	orq	%rsi, %rax
+	shlq	$40, %rdi
+	leaq	(%rdi,%rsi), %rax
 	shrq	$32, %rax
 	retq
 

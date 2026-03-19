@@ -3,7 +3,7 @@ func000000000000004c:
 	imull	$1741647, %edx, %eax
 	shrl	$19, %eax
 	addl	%esi, %eax
-	orl	$1, %edi
+	incl	%edi
 	shlxl	%eax, %edi, %eax
 	retq
 

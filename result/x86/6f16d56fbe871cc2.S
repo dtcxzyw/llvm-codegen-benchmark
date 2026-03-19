@@ -6,7 +6,7 @@ func000000000000001f:
 	retq
 
 func000000000000005f:
-	orq	$1, %rdi
+	incq	%rdi
 	bsrq	%rdi, %rax
 	leaq	73(%rax,%rax,8), %rax
 	retq

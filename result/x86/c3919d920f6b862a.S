@@ -3,8 +3,8 @@ func000000000000001f:
 	andl	$15, %edx
 	shll	$6, %edx
 	movzbl	%sil, %eax
-	orl	%edi, %eax
 	orl	%edx, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000003:

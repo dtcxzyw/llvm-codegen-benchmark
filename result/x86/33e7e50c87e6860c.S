@@ -1,53 +1,53 @@
 	.att_syntax
 func0000000000000006:
 	shll	$5, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	xorl	%eax, %eax
 	cmpb	$2, %sil
 	sete	%al
 	shll	$31, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001f:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpb	$2, %dl
-	sete	%al
-	shll	$31, %eax
+	sete	%cl
+	shll	$31, %ecx
 	shll	$21, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001a:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpb	$2, %dl
-	sete	%al
-	shll	$31, %eax
+	sete	%cl
+	shll	$31, %ecx
 	shll	$24, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001e:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpb	$3, %dl
-	sete	%al
-	shll	$28, %eax
+	sete	%cl
+	shll	$28, %ecx
 	shll	$19, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	orl	$1308886016, %eax
 	retq
 
 func0000000000000013:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpb	$1, %dl
-	sete	%al
-	shll	$15, %eax
+	sete	%cl
+	shll	$15, %ecx
 	shll	$20, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000011:

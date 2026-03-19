@@ -18,7 +18,7 @@ func000000000000000e:
 	retq
 
 func000000000000000f:
-	orb	$1, %dil
+	incb	%dil
 	movzbl	%dil, %eax
 	shll	$8, %eax
 	retq

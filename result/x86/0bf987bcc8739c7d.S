@@ -2,8 +2,8 @@
 func0000000000000003:
 	leal	(,%rdx,4), %eax
 	andb	$12, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000000:
@@ -16,14 +16,14 @@ func0000000000000000:
 func000000000000000f:
 	leal	(%rdx,%rdx), %eax
 	andb	$2, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000002:
 	leal	(%rdx,%rdx), %eax
 	andb	$16, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 

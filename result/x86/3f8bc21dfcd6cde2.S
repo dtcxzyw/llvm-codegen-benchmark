@@ -12,7 +12,7 @@ func000000000000000b:
 	xorl	%eax, %eax
 	testl	$32752, %edx
 	sete	%al
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -29,7 +29,7 @@ func000000000000000a:
 	xorl	%eax, %eax
 	cmpl	$16384, %edx
 	sete	%al
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -37,7 +37,7 @@ func0000000000000063:
 	xorl	%eax, %eax
 	testw	%dx, %dx
 	setne	%al
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

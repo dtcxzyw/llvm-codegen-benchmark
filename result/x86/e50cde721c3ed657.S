@@ -6,14 +6,12 @@ func0000000000000007:
 	retq
 
 func0000000000000008:
-	movl	%esi, %eax
-	orl	$1, %eax
+	leal	1(%rsi), %eax
 	imull	%edi, %eax
 	retq
 
 func000000000000000f:
-	movl	%esi, %eax
-	orl	$1, %eax
+	leal	1(%rsi), %eax
 	imull	%edi, %eax
 	retq
 

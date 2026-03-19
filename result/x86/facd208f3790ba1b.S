@@ -7,18 +7,17 @@ func0000000000000001:
 	retq
 
 func0000000000000056:
-	movq	%rdi, %rax
 	shll	$16, %edx
-	orl	%esi, %edx
-	shlq	$16, %rax
-	orq	%rdx, %rax
+	leal	(%rdx,%rsi), %eax
+	shlq	$16, %rdi
+	orq	%rdi, %rax
 	retq
 
 func0000000000000055:
 	shll	$8, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %eax
 	shlq	$32, %rdi
-	leaq	(%rdi,%rdx), %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000007:
@@ -42,16 +41,16 @@ func0000000000000015:
 
 func0000000000000017:
 	shll	$16, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %eax
 	shlq	$32, %rdi
-	leaq	(%rdi,%rdx), %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000011:
 	shll	$9, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %eax
 	shlq	$32, %rdi
-	leaq	(%rdi,%rdx), %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000025:
@@ -70,8 +69,8 @@ func0000000000000005:
 
 func0000000000000077:
 	shll	$7, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %eax
 	shlq	$32, %rdi
-	leaq	(%rdi,%rdx), %rax
+	orq	%rdi, %rax
 	retq
 

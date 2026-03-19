@@ -6,7 +6,7 @@ func000000000000002a:
 	retq
 
 func000000000000002c:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%esi, %edi
 	setne	%al
 	retq
@@ -42,13 +42,13 @@ func0000000000000001:
 	retq
 
 func0000000000000038:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
 
 func0000000000000028:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%esi, %edi
 	seta	%al
 	retq

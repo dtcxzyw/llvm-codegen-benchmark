@@ -25,10 +25,9 @@ func000000000000001f:
 	retq
 
 func0000000000000011:
-	movl	%esi, %eax
-	shlb	$4, %al
-	andb	$48, %al
-	orb	%dil, %al
+	shlb	$4, %sil
+	andb	$48, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func000000000000001c:

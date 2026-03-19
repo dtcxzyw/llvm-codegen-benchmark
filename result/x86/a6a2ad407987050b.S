@@ -2,18 +2,18 @@
 func000000000000001f:
 	movzbl	%dl, %ecx
 	shlq	$40, %rcx
-	orq	%rsi, %rdi
+	orq	%rsi, %rcx
+	orq	%rdi, %rcx
 	movabsq	$1099494850560, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 
 func000000000000003f:
 	movzbl	%dl, %ecx
 	shlq	$40, %rcx
-	orq	%rsi, %rdi
+	orq	%rsi, %rcx
+	orq	%rdi, %rcx
 	movabsq	$72057594054705409, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

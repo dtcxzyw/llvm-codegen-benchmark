@@ -1,29 +1,29 @@
 	.att_syntax
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testq	%rdx, %rdx
-	sete	%al
-	shll	$14, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	sete	%cl
+	shll	$14, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000006:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testq	%rdx, %rdx
-	setne	%al
-	shll	$12, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	setne	%cl
+	shll	$12, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000063:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	shrq	$53, %rdx
-	setne	%al
-	shlq	$52, %rax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	setne	%cl
+	shlq	$52, %rcx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000004:

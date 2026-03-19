@@ -8,10 +8,10 @@ func0000000000000007:
 
 func0000000000000005:
 	shll	$24, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	retq
 
 func0000000000000003:
@@ -23,9 +23,9 @@ func0000000000000003:
 
 func0000000000000001:
 	shll	$8, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	retq
 

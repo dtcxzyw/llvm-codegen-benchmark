@@ -1,7 +1,7 @@
 	.att_syntax
 func0000000000000007:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000000:
@@ -10,13 +10,13 @@ func0000000000000000:
 	retq
 
 func0000000000000004:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000005:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000001:
@@ -25,8 +25,8 @@ func0000000000000001:
 	retq
 
 func0000000000000006:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000003:

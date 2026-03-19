@@ -1,19 +1,19 @@
 	.att_syntax
 func000000000000000e:
-	orl	%esi, %edi
+	leal	(%rdi,%rsi), %ecx
 	movzbl	%dl, %eax
-	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000000f:
-	orl	%esi, %edi
+	leal	(%rdi,%rsi), %ecx
 	movzbl	%dl, %eax
-	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000000c:
-	orl	%esi, %edi
+	leal	(%rdi,%rsi), %ecx
 	movzbl	%dl, %eax
-	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 

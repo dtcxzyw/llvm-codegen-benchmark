@@ -43,7 +43,7 @@ func0000000000000038:
 	retq
 
 func0000000000000024:
-	orq	$1, %rdi
+	incq	%rdi
 	cmpq	$17, %rdi
 	setb	%al
 	retq

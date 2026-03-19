@@ -1,13 +1,13 @@
 	.att_syntax
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testq	%rdx, %rdx
-	sete	%al
-	shll	$14, %eax
+	sete	%cl
+	shll	$14, %ecx
 	andl	$1, %esi
 	shll	$13, %esi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000006:
@@ -24,13 +24,13 @@ func0000000000000006:
 	retq
 
 func0000000000000063:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	shrq	$53, %rdx
-	setne	%al
-	shlq	$52, %rax
+	setne	%cl
+	shlq	$52, %rcx
 	shlq	$63, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000004:

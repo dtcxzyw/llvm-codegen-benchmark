@@ -11,13 +11,12 @@ func0000000000000004:
 
 func0000000000000005:
 	movl	%esi, %eax
-	movl	%esi, %ecx
-	movl	$2147975281, %edx
-	imulq	%rcx, %rdx
-	shrq	$47, %rdx
-	imull	$65521, %edx, %ecx
-	subl	%ecx, %eax
-	shll	$16, %eax
-	orl	%edi, %eax
+	movl	$2147975281, %ecx
+	imulq	%rax, %rcx
+	shrq	$47, %rcx
+	imull	$65521, %ecx, %eax
+	subl	%eax, %esi
+	shll	$16, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 

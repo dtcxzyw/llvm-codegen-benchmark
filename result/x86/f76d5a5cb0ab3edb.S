@@ -24,7 +24,7 @@ func0000000000000001:
 	testb	$1, %sil
 	movl	$33, %eax
 	cmovel	%ecx, %eax
-	orl	%edi, %edx
 	orl	%edx, %eax
+	orl	%edi, %eax
 	retq
 

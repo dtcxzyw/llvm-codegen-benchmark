@@ -6,7 +6,7 @@ func0000000000000021:
 	retq
 
 func0000000000000024:
-	orq	$1, %rsi
+	incq	%rsi
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
@@ -18,7 +18,7 @@ func0000000000000001:
 	retq
 
 func0000000000000034:
-	orq	$1, %rsi
+	incq	%rsi
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
@@ -66,7 +66,7 @@ func0000000000000035:
 	retq
 
 func000000000000002c:
-	orq	$1, %rsi
+	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%al
 	retq
@@ -91,13 +91,13 @@ func0000000000000008:
 	retq
 
 func0000000000000039:
-	orq	$1, %rsi
+	incq	%rsi
 	cmpq	%rdi, %rsi
 	setae	%al
 	retq
 
 func000000000000002b:
-	orq	$1, %rsi
+	incq	%rsi
 	cmpq	%rdi, %rsi
 	setge	%al
 	retq

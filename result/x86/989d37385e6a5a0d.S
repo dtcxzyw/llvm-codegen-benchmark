@@ -13,21 +13,18 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
-	movl	%edx, %eax
-	orb	$4, %al
+	leal	4(%rdx), %eax
 	movzbl	%al, %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orb	$8, %al
+	leal	8(%rcx), %eax
 	movzbl	%al, %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
 
 func0000000000000002:
-	movl	%edx, %eax
-	orb	$8, %al
+	leal	8(%rdx), %eax
 	movzbl	%al, %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx

@@ -4,9 +4,9 @@ func0000000000000007:
 	testl	%edx, %edx
 	sete	%al
 	shlq	$32, %rax
+	orq	%rdi, %rax
 	andl	$1, %esi
 	shlq	$40, %rsi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 
@@ -52,9 +52,9 @@ func0000000000000006:
 	cmpl	$5, %edx
 	sete	%al
 	shll	$5, %eax
+	orq	%rdi, %rax
 	andl	$1, %esi
 	shll	$6, %esi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 

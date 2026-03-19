@@ -21,20 +21,17 @@ func0000000000000004:
 	retq
 
 func0000000000000001:
-	movl	%esi, %eax
-	shlb	$6, %al
-	orb	%dil, %al
+	shlb	$6, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000005:
-	movl	%esi, %eax
-	shlb	$7, %al
-	orb	%dil, %al
+	shlb	$7, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000003:
-	movl	%esi, %eax
-	shlb	$4, %al
-	orb	%dil, %al
+	shlb	$4, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 

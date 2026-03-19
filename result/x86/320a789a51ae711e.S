@@ -5,8 +5,8 @@ func0000000000000000:
 	retq
 
 func0000000000000010:
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func0000000000000008:
@@ -15,7 +15,7 @@ func0000000000000008:
 	retq
 
 func0000000000000018:
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 

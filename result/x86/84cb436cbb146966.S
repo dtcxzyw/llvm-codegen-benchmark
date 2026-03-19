@@ -9,9 +9,9 @@ func0000000000000073:
 
 func000000000000006f:
 	shlq	$16, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	shlq	$8, %rax
 	retq
 
@@ -25,17 +25,17 @@ func000000000000006e:
 
 func000000000000000c:
 	shlq	$16, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	shlq	$8, %rax
 	retq
 
 func000000000000006c:
 	shlq	$8, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	shlq	$8, %rax
 	retq
 

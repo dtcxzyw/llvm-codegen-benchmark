@@ -12,11 +12,11 @@ func0000000000000003:
 	retq
 
 func0000000000000007:
-	orl	%esi, %edi
-	andl	$50393103, %edi
-	movl	%edi, %eax
+	leal	(%rdi,%rsi), %ecx
+	andl	$50393103, %ecx
+	movl	%ecx, %eax
 	shll	$4, %eax
-	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000000:

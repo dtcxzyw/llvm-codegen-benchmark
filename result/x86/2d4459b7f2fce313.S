@@ -4,8 +4,7 @@ func00000000000000a4:
 	shll	$16, %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	cmpl	$16777216, %ecx
 	cmovael	%edi, %eax
 	retq

@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000021:
 	notl	%esi
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	testl	$1052672, %esi
 	cmovnel	%edi, %eax
 	andl	$-17, %eax

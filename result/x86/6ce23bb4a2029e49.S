@@ -1,7 +1,7 @@
 	.att_syntax
 func0000000000000034:
 	movzbl	%sil, %eax
-	orl	$1, %edi
+	incl	%edi
 	cmpl	%eax, %edi
 	setb	%al
 	retq

@@ -30,14 +30,13 @@ func0000000000000006:
 	retq
 
 func0000000000000007:
-	movq	%rsi, %rax
-	movabsq	$-6148914691236517205, %rcx
 	movq	%rsi, %rdx
-	mulxq	%rcx, %rcx, %rcx
-	shrq	%rcx
-	leal	(%rcx,%rcx,2), %ecx
-	subl	%ecx, %eax
-	shlq	$32, %rax
-	orq	%rdi, %rax
+	movabsq	$-6148914691236517205, %rax
+	mulxq	%rax, %rax, %rax
+	shrq	%rax
+	leal	(%rax,%rax,2), %eax
+	subl	%eax, %edx
+	shlq	$32, %rdx
+	leaq	(%rdx,%rdi), %rax
 	retq
 

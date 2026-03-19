@@ -9,8 +9,8 @@ func000000000000000f:
 func000000000000001f:
 	movzbl	%sil, %ecx
 	shlq	$40, %rcx
+	orq	%rdi, %rcx
 	movabsq	$8589934592, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

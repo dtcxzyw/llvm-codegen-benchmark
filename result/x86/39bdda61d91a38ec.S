@@ -6,20 +6,17 @@ func000000000000001b:
 	retq
 
 func000000000000001f:
-	movl	%edi, %eax
-	orl	$63, %eax
+	leal	63(%rdi), %eax
 	subl	%esi, %eax
 	retq
 
 func0000000000000005:
-	movl	%edi, %eax
-	orl	$1, %eax
+	leal	1(%rdi), %eax
 	subl	%esi, %eax
 	retq
 
 func0000000000000004:
-	movl	%edi, %eax
-	orl	$63, %eax
+	leal	63(%rdi), %eax
 	subl	%esi, %eax
 	retq
 

@@ -4,8 +4,8 @@ func000000000000001f:
 	cmpl	$1, %edx
 	sete	%al
 	shll	$18, %eax
+	orl	%edi, %eax
 	shll	$21, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -24,8 +24,8 @@ func000000000000001e:
 	testl	%edx, %edx
 	setne	%al
 	shll	$15, %eax
+	orl	%edi, %eax
 	shll	$13, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -34,8 +34,8 @@ func0000000000000012:
 	cmpl	$13, %edx
 	sete	%al
 	shll	$15, %eax
+	orl	%edi, %eax
 	shll	$16, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 

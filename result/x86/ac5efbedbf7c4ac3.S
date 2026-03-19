@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000014:
 	shlq	$32, %rdx
-	orq	%rdi, %rdx
 	movslq	%esi, %rax
 	addq	%rdx, %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000005:

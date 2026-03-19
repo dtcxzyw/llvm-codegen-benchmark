@@ -27,16 +27,16 @@ func0000000000000001:
 	retq
 
 func0000000000000007:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
-	andq	%rsi, %rax
+	andq	%rcx, %rax
 	retq
 
 func0000000000000005:
 	movl	$1, %eax
-	shlxq	%rdx, %rax, %rax
-	orq	%rsi, %rdi
-	andq	%rdi, %rax
+	shlxq	%rdx, %rax, %rcx
+	leaq	(%rdi,%rsi), %rax
+	andq	%rcx, %rax
 	retq
 

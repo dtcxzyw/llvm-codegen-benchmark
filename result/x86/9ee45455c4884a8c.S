@@ -2,12 +2,12 @@
 func000000000000000e:
 	andl	$8, %edx
 	shll	$11, %edx
-	orl	%edi, %edx
-	xorl	%ecx, %ecx
+	leal	(%rdx,%rdi), %ecx
+	xorl	%edx, %edx
 	testb	$1, %sil
 	movl	$524291, %eax
-	cmovel	%ecx, %eax
-	orl	%edx, %eax
+	cmovel	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000000f:

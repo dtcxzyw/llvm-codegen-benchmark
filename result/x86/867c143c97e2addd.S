@@ -29,9 +29,9 @@ func0000000000000000:
 
 func0000000000000005:
 	shlq	$16, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rcx
 	movabsq	$-4294967295, %rax
-	andq	%rsi, %rax
+	andq	%rcx, %rax
 	retq
 
 func0000000000000004:

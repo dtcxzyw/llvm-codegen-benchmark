@@ -8,12 +8,12 @@ func0000000000000001:
 	retq
 
 func0000000000000003:
-	orl	%edx, %esi
-	andl	$-67108865, %esi
+	leal	(%rsi,%rdx), %ecx
+	andl	$-67108865, %ecx
 	notb	%dil
 	movzbl	%dil, %eax
 	andl	$1, %eax
 	shll	$26, %eax
-	orl	%esi, %eax
+	orl	%ecx, %eax
 	retq
 

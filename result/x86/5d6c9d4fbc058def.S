@@ -4,7 +4,7 @@ func0000000000000023:
 	shrq	$32, %rdx
 	setne	%al
 	shll	$5, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -13,7 +13,7 @@ func0000000000000063:
 	cmpq	$65536, %rdx
 	setae	%al
 	shll	$4, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -40,7 +40,7 @@ func0000000000000013:
 	shrq	$32, %rdx
 	setne	%al
 	shll	$26, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

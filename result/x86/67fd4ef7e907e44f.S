@@ -9,10 +9,10 @@ func0000000000000194:
 
 func00000000000001ec:
 	shlq	$8, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
 	movl	$4294967295, %eax
-	cmpq	%rax, %rdi
+	cmpq	%rax, %rdx
 	setne	%al
 	retq
 
@@ -25,9 +25,9 @@ func00000000000001e1:
 
 func00000000000001f4:
 	shlq	$16, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
-	cmpq	$2, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
+	cmpq	$2, %rdx
 	setb	%al
 	retq
 
@@ -39,45 +39,45 @@ func000000000000004c:
 
 func00000000000001e4:
 	shlq	$8, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
 	movabsq	$-9223372036854775801, %rax
-	cmpq	%rax, %rdi
+	cmpq	%rax, %rdx
 	setb	%al
 	retq
 
 func0000000000000164:
 	shlq	$32, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
 	movabsq	$-9223372036854775801, %rax
-	cmpq	%rax, %rdi
+	cmpq	%rax, %rdx
 	setb	%al
 	retq
 
 func00000000000001e6:
 	shlq	$8, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
 	movabsq	$-9223372036854775801, %rax
-	cmpq	%rax, %rdi
+	cmpq	%rax, %rdx
 	setl	%al
 	retq
 
 func0000000000000166:
 	shlq	$16, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
 	movabsq	$-9223372036854775801, %rax
-	cmpq	%rax, %rdi
+	cmpq	%rax, %rdx
 	setl	%al
 	retq
 
 func00000000000001f8:
 	shlq	$16, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
-	cmpq	$8192, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
+	cmpq	$8192, %rdx
 	setae	%al
 	retq
 
@@ -97,16 +97,17 @@ func0000000000000181:
 
 func00000000000001ea:
 	shlq	$16, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
+	testq	%rdx, %rdx
 	setg	%al
 	retq
 
 func0000000000000061:
 	shlq	$32, %rdx
-	orq	%rsi, %rdi
-	orq	%rdx, %rdi
-	cmpq	$-1, %rdi
+	orq	%rsi, %rdx
+	orq	%rdi, %rdx
+	cmpq	$-1, %rdx
 	sete	%al
 	retq
 

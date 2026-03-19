@@ -1,12 +1,12 @@
 	.att_syntax
 func0000000000000009:
-	orl	%edx, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000000d:
-	orl	%edx, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000000:
@@ -20,18 +20,18 @@ func0000000000000007:
 	retq
 
 func000000000000000c:
-	orl	%edx, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000008:
-	orl	%edx, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000000f:
-	orl	%edx, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000003:
@@ -40,8 +40,8 @@ func0000000000000003:
 	retq
 
 func000000000000000b:
-	orl	%edx, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000001:
@@ -50,7 +50,7 @@ func0000000000000001:
 	retq
 
 func000000000000000e:
-	orl	%edx, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	addq	%rdi, %rax
 	retq
 

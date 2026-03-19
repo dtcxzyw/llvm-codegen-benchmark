@@ -1,9 +1,9 @@
 	.att_syntax
 func00000000000000f4:
 	shlxl	%edx, %esi, %ecx
-	orl	$1, %edi
+	leal	1(%rdi), %edx
 	xorl	%eax, %eax
 	testl	$256, %ecx
-	cmovel	%edi, %eax
+	cmovel	%edx, %eax
 	retq
 

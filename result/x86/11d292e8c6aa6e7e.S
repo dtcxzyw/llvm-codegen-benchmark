@@ -7,7 +7,7 @@ func000000000000000f:
 	retq
 
 func0000000000000017:
-	orq	$1, %rdi
+	incq	%rdi
 	lzcntq	%rdi, %rcx
 	movl	$64, %eax
 	subq	%rcx, %rax

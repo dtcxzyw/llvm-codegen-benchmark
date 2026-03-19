@@ -1,7 +1,6 @@
 	.att_syntax
 func00000000000000c6:
-	movl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rsi,%rdx), %eax
 	imull	%edi, %eax
 	shrl	$31, %eax
 	retq
@@ -15,8 +14,7 @@ func00000000000000cc:
 	retq
 
 func0000000000000086:
-	movl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rsi,%rdx), %eax
 	imull	%edi, %eax
 	shrl	$31, %eax
 	retq

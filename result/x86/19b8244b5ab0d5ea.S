@@ -24,8 +24,7 @@ func0000000000000061:
 	retq
 
 func000000000000006c:
-	movl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rsi,%rdx), %eax
 	andb	$1, %al
 	retq
 

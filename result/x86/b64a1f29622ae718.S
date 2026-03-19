@@ -41,7 +41,7 @@ func000000000000000e:
 	movl	$225, %ecx
 	movl	$105, %eax
 	cmovel	%ecx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	orl	$-2097152, %eax
 	retq

@@ -2,8 +2,8 @@
 func000000000000000f:
 	movzbl	%dl, %eax
 	shll	$8, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	movslq	%edi, %rax
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cltq
 	retq
 

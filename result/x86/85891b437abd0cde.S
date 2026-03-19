@@ -5,7 +5,7 @@ func0000000000000001:
 	retq
 
 func0000000000000005:
-	orl	$1, %edi
+	incl	%edi
 	bsrl	%edi, %eax
 	retq
 

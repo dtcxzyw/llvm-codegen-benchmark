@@ -5,8 +5,8 @@ func0000000000000003:
 	andl	$1, %eax
 	shll	$2, %eax
 	andl	$-9, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000002:

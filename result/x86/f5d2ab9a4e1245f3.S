@@ -6,8 +6,8 @@ func0000000000000010:
 	retq
 
 func000000000000001f:
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	leal	(%rax,%rax), %ecx
 	shll	$4, %eax
 	subl	%ecx, %eax

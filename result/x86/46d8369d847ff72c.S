@@ -1,11 +1,9 @@
 	.att_syntax
 func0000000000000061:
-	movl	%edx, %ecx
-	orl	$32, %ecx
+	leal	32(%rdx), %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$32768, %eax
+	leal	32768(%rcx), %eax
 	testb	%dil, %dil
 	cmovel	%ecx, %eax
 	retq
@@ -22,12 +20,10 @@ func0000000000000001:
 	retq
 
 func0000000000000064:
-	movl	%edx, %ecx
-	orl	$32, %ecx
+	leal	32(%rdx), %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$16, %eax
+	leal	16(%rcx), %eax
 	cmpb	$64, %dil
 	cmovbl	%ecx, %eax
 	retq
@@ -37,8 +33,7 @@ func0000000000000021:
 	orl	$1073741824, %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$268435456, %eax
+	leal	268435456(%rcx), %eax
 	testb	%dil, %dil
 	cmovel	%ecx, %eax
 	retq

@@ -32,7 +32,7 @@ func000000000000000e:
 	movzwl	%dx, %eax
 	shll	$8, %eax
 	andl	$-65536, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 

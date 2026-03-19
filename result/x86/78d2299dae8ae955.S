@@ -6,7 +6,7 @@ func000000000000002c:
 	retq
 
 func0000000000000028:
-	orq	$1, %rsi
+	incq	%rsi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq

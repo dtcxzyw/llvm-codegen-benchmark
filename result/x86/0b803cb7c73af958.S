@@ -1,8 +1,8 @@
 	.att_syntax
 func000000000000000a:
 	leal	8(%rdx), %eax
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	orb	$64, %al
 	retq
 
@@ -15,8 +15,8 @@ func0000000000000000:
 
 func0000000000000002:
 	leal	8(%rdx), %eax
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	orb	$64, %al
 	retq
 

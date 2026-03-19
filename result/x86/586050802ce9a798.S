@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000003:
-	movq	%rdi, %rax
 	andl	$1, %edx
-	orq	%rsi, %rax
+	leaq	(%rdi,%rsi), %rax
 	orq	%rdx, %rax
 	retq
 

@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000001:
-	movq	%rdi, %rax
-	subq	%rsi, %rax
-	orq	$8, %rax
+	subq	%rsi, %rdi
+	leaq	8(%rdi), %rax
 	retq
 
 func0000000000000000:

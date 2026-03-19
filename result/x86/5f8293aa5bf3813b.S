@@ -1,12 +1,12 @@
 	.att_syntax
 func000000000000001b:
-	orq	$1, %rsi
+	incq	%rsi
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	32(%rdi,%rax,8), %rax
 	retq
 
 func0000000000000018:
-	orq	$1, %rsi
+	incq	%rsi
 	imulq	$56, %rsi, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq

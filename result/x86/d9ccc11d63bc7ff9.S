@@ -4,8 +4,7 @@ func0000000000000005:
 	movl	%edx, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
-	movq	%rdx, %rax
-	shlq	$32, %rax
-	orq	%rdi, %rax
+	shlq	$32, %rdx
+	leaq	(%rdx,%rdi), %rax
 	retq
 

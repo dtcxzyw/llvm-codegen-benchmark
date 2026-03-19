@@ -3,7 +3,7 @@ func0000000000000003:
 	shll	$9, %edx
 	leal	512(%rdx), %eax
 	andl	$7680, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -11,7 +11,7 @@ func000000000000003f:
 	shll	$16, %edx
 	leal	16580608(%rdx), %eax
 	andl	$16711680, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -35,7 +35,7 @@ func0000000000000023:
 	shll	$5, %edx
 	leal	8160(%rdx), %eax
 	andl	$8160, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

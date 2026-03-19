@@ -1,9 +1,9 @@
 	.att_syntax
 func00000000000001f4:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$2, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$2, %edx
 	setb	%al
 	retq
 
@@ -16,39 +16,41 @@ func00000000000001e1:
 
 func00000000000001ec:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$536936448, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$536936448, %edx
 	setne	%al
 	retq
 
 func00000000000001e8:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$17, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$17, %edx
 	setae	%al
 	retq
 
 func00000000000001e4:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$16, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$16, %edx
 	setb	%al
 	retq
 
 func00000000000001e6:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	testl	%edx, %edx
 	setle	%al
 	retq
 
 func00000000000001ea:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	testl	%edx, %edx
 	setg	%al
 	retq
 
@@ -61,41 +63,41 @@ func00000000000001c1:
 
 func00000000000001f8:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$4, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$4, %edx
 	setae	%al
 	retq
 
 func0000000000000161:
 	shll	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$12, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$12, %edx
 	sete	%al
 	retq
 
 func000000000000016a:
 	shll	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$13, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$13, %edx
 	setge	%al
 	retq
 
 func0000000000000174:
 	shll	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$65, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$65, %edx
 	setb	%al
 	retq
 
 func00000000000001c4:
 	shll	$6, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$2048, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$2048, %edx
 	setb	%al
 	retq
 
@@ -145,17 +147,17 @@ func000000000000018c:
 
 func0000000000000168:
 	shll	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$4, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$4, %edx
 	setae	%al
 	retq
 
 func0000000000000164:
 	shll	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$22, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$22, %edx
 	setb	%al
 	retq
 

@@ -6,10 +6,9 @@ func0000000000000009:
 	retq
 
 func0000000000000001:
-	movl	%edi, %eax
 	shlb	$4, %sil
-	shrb	$2, %al
-	orb	%sil, %al
+	shrb	$2, %dil
+	leal	(%rdi,%rsi), %eax
 	retq
 
 func0000000000000000:

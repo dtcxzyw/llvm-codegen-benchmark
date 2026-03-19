@@ -1,29 +1,29 @@
 	.att_syntax
 func000000000000002a:
 	leaq	2(%rdx), %rax
-	orq	$1, %rdx
+	leaq	1(%rdx), %rcx
 	cmpw	%si, %di
-	cmovgq	%rdx, %rax
+	cmovgq	%rcx, %rax
 	retq
 
 func0000000000000024:
 	leaq	2(%rdx), %rax
-	orq	$1, %rdx
+	leaq	1(%rdx), %rcx
 	cmpw	%si, %di
-	cmovbq	%rdx, %rax
+	cmovbq	%rcx, %rax
 	retq
 
 func0000000000000026:
 	leaq	2(%rdx), %rax
-	orq	$1, %rdx
+	leaq	1(%rdx), %rcx
 	cmpw	%si, %di
-	cmovlq	%rdx, %rax
+	cmovlq	%rcx, %rax
 	retq
 
 func0000000000000028:
 	leaq	2(%rdx), %rax
-	orq	$1, %rdx
+	leaq	1(%rdx), %rcx
 	cmpw	%si, %di
-	cmovaq	%rdx, %rax
+	cmovaq	%rcx, %rax
 	retq
 

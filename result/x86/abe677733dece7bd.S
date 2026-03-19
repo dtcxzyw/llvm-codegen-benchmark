@@ -1,9 +1,8 @@
 	.att_syntax
 func0000000000000001:
-	movq	%rdi, %rax
 	testb	$1, %dl
-	cmoveq	%rsi, %rax
-	orq	$64, %rax
+	cmoveq	%rsi, %rdi
+	leaq	64(%rdi), %rax
 	retq
 
 func0000000000000000:
@@ -14,10 +13,9 @@ func0000000000000000:
 	retq
 
 func0000000000000005:
-	movq	%rdi, %rax
 	testb	$1, %dl
-	cmoveq	%rsi, %rax
-	orq	$4, %rax
+	cmoveq	%rsi, %rdi
+	leaq	4(%rdi), %rax
 	retq
 
 func0000000000000004:

@@ -1,9 +1,8 @@
 	.att_syntax
 func0000000000000003:
-	movl	%edi, %eax
 	testb	$8, %dl
-	cmovnel	%esi, %eax
-	orl	$3, %eax
+	cmovnel	%esi, %edi
+	leal	3(%rdi), %eax
 	retq
 
 func0000000000000002:

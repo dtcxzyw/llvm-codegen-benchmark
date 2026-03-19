@@ -13,8 +13,8 @@ func00000000000001fc:
 
 func00000000000001fe:
 	shlq	$8, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func00000000000001f0:

@@ -12,7 +12,7 @@ func0000000000000005:
 func0000000000000003:
 	movl	$-1, %eax
 	shlxl	%edi, %eax, %eax
-	orl	$1, %eax
+	incl	%eax
 	retq
 
 func0000000000000007:

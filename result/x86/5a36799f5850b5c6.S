@@ -38,10 +38,9 @@ func000000000000001e:
 	retq
 
 func0000000000000007:
-	movq	%rsi, %rax
-	andl	$-65536, %eax
-	shlq	$16, %rax
-	orq	%rdi, %rax
+	andl	$-65536, %esi
+	shlq	$16, %rsi
+	leaq	(%rsi,%rdi), %rax
 	shlq	$8, %rax
 	retq
 

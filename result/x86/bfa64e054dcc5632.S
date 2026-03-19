@@ -1,18 +1,18 @@
 	.att_syntax
 func0000000000000007:
 	shlq	$8, %rdx
-	orq	%rsi, %rdx
+	leaq	(%rdx,%rsi), %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovneq	%rdx, %rax
+	cmovneq	%rcx, %rax
 	retq
 
 func0000000000000005:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
+	leaq	(%rdx,%rsi), %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovneq	%rdx, %rax
+	cmovneq	%rcx, %rax
 	retq
 
 func0000000000000004:

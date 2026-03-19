@@ -3,9 +3,9 @@ func0000000000000007:
 	testl	%esi, %esi
 	setne	%al
 	andb	$-16, %dl
-	orb	%dil, %dl
+	leal	(%rdx,%rdi), %ecx
 	addb	%al, %al
-	orb	%dl, %al
+	orb	%cl, %al
 	retq
 
 func0000000000000005:

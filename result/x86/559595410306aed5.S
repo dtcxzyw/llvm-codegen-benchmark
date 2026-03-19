@@ -2,17 +2,17 @@
 func0000000000000033:
 	movzbl	%sil, %eax
 	shll	$18, %eax
+	orl	%edi, %eax
 	shll	$26, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func000000000000002f:
 	movzbl	%sil, %eax
 	shll	$24, %esi
-	orl	%edi, %esi
+	leal	(%rsi,%rdi), %ecx
 	shll	$8, %eax
-	orl	%esi, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000003f:
@@ -28,7 +28,7 @@ func000000000000003b:
 	movzbl	%sil, %eax
 	shll	$24, %esi
 	shll	$16, %eax
-	orl	%edi, %esi
+	orl	%edi, %eax
 	orl	%esi, %eax
 	retq
 

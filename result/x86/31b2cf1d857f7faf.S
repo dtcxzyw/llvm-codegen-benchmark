@@ -4,7 +4,7 @@ func0000000000000007:
 	testl	$1984, %edx
 	sete	%al
 	shll	$6, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
@@ -13,7 +13,7 @@ func0000000000000006:
 	testl	$1984, %edx
 	sete	%al
 	shll	$6, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

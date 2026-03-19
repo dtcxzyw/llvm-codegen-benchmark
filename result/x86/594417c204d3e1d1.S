@@ -13,8 +13,7 @@ func0000000000000001:
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$4, %eax
+	leal	4(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

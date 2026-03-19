@@ -14,8 +14,7 @@ func0000000000000021:
 	retq
 
 func0000000000000026:
-	movq	%rdi, %rax
-	orq	$64, %rax
+	leaq	64(%rdi), %rax
 	testb	%sil, %sil
 	cmovnsq	%rdi, %rax
 	retq

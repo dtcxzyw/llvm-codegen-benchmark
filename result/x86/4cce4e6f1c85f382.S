@@ -7,9 +7,9 @@ func0000000000000018:
 	retq
 
 func0000000000000010:
-	orl	%edx, %esi
+	leal	(%rsi,%rdx), %ecx
 	leal	768(%rdi), %eax
-	orl	%esi, %eax
+	orl	%ecx, %eax
 	orl	$196608, %eax
 	retq
 

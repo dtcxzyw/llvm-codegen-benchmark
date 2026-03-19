@@ -1,11 +1,11 @@
 	.att_syntax
 func0000000000000007:
 	testq	%rdx, %rdx
-	movl	$112, %eax
-	cmoveq	%rdx, %rax
+	movl	$112, %ecx
+	cmoveq	%rdx, %rcx
 	andl	$128, %esi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000063:
@@ -24,9 +24,9 @@ func0000000000000006:
 	testq	%rsi, %rsi
 	setne	%al
 	andq	$-134218240, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	shll	$31, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000005:

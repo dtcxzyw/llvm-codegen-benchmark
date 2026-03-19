@@ -15,14 +15,14 @@ func0000000000000021:
 	retq
 
 func0000000000000024:
-	orq	$1, %rdx
+	incq	%rdx
 	cmpq	%rsi, %rdx
 	setb	%al
 	andb	%dil, %al
 	retq
 
 func0000000000000034:
-	orq	$1, %rdx
+	incq	%rdx
 	cmpq	%rsi, %rdx
 	setb	%al
 	andb	%dil, %al

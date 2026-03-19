@@ -4,7 +4,7 @@ func0000000000000064:
 	subq	%rdx, %rax
 	cmpq	%rax, %rsi
 	cmovbq	%rsi, %rax
-	orq	$1, %rdi
+	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq

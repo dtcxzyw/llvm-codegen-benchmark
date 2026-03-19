@@ -14,7 +14,7 @@ func0000000000000006:
 
 func0000000000000004:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	shrl	$6, %eax
 	retq

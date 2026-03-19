@@ -1,11 +1,11 @@
 	.att_syntax
 func0000000000000003:
-	orl	$1, %edi
+	incl	%edi
 	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 
 func0000000000000002:
-	orl	$1, %edi
+	incl	%edi
 	vcvtusi2sd	%edi, %xmm15, %xmm0
 	retq
 

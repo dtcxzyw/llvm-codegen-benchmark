@@ -22,14 +22,14 @@ func0000000000000028:
 
 func0000000000000024:
 	movslq	%esi, %rax
-	orq	$1, %rdi
+	incq	%rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
 
 func000000000000002b:
 	movslq	%esi, %rax
-	orq	$1, %rdi
+	incq	%rdi
 	cmpq	%rax, %rdi
 	setge	%al
 	retq

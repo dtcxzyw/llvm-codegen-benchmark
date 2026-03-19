@@ -6,7 +6,7 @@ func0000000000000007:
 	retq
 
 func0000000000000017:
-	orl	$1, %edi
+	incl	%edi
 	bsrl	%edi, %eax
 	leal	(%rax,%rax,8), %eax
 	retq

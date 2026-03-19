@@ -1,19 +1,19 @@
 	.att_syntax
 func000000000000000b:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$136, %edx
-	sete	%al
+	sete	%cl
 	andl	$16519168, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000063:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	%edx, %edx
-	setne	%al
+	setne	%cl
 	andl	$10, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 

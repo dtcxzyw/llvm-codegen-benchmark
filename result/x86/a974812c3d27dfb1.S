@@ -8,8 +8,7 @@ func00000000000000c1:
 
 func0000000000000024:
 	addl	$-100, %esi
-	movl	%edi, %eax
-	orl	$32, %eax
+	leal	32(%rdi), %eax
 	cmpl	$100, %esi
 	cmovael	%edi, %eax
 	retq
@@ -24,8 +23,7 @@ func0000000000000044:
 
 func0000000000000064:
 	addl	$-7, %esi
-	movl	%edi, %eax
-	orl	$16384, %eax
+	leal	16384(%rdi), %eax
 	cmpl	$2, %esi
 	cmovael	%edi, %eax
 	retq

@@ -5,8 +5,7 @@ func0000000000000007:
 	retq
 
 func0000000000000004:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	orq	%rdi, %rax
 	orq	$16, %rax
 	retq
@@ -19,8 +18,7 @@ func0000000000000000:
 	retq
 
 func0000000000000005:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	orq	%rdi, %rax
 	orq	$2, %rax
 	retq
@@ -31,16 +29,14 @@ func0000000000000003:
 	retq
 
 func0000000000000006:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	orq	%rdi, %rax
 	orq	$1, %rax
 	retq
 
 func0000000000000001:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
-	orq	%rdi, %rax
-	orq	$31744, %rax
+	orq	%rdx, %rsi
+	orq	%rdi, %rsi
+	leaq	31744(%rsi), %rax
 	retq
 

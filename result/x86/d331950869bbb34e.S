@@ -42,8 +42,8 @@ func0000000000000013:
 	cmpb	$4, %dl
 	setb	%al
 	shlb	$2, %al
+	orb	%dil, %al
 	andb	$2, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
 	retq
 

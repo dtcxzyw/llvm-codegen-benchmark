@@ -2,10 +2,10 @@
 func0000000000000006:
 	shrq	%rdx
 	andq	$-2048, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movabsq	$-4294967296, %rax
 	andq	%rsi, %rax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000004:

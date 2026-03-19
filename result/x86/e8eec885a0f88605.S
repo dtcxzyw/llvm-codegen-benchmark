@@ -10,7 +10,7 @@ func0000000000000001:
 	andl	$-268431361, %edx
 	movabsq	$-17592454479872, %rax
 	andq	%rsi, %rax
-	orq	%rdi, %rdx
 	orq	%rdx, %rax
+	orq	%rdi, %rax
 	retq
 

@@ -15,22 +15,22 @@ func0000000000000000:
 
 func0000000000000004:
 	shll	$8, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %eax
 	notl	%esi
-	leal	(%rsi,%rdx), %eax
+	addl	%esi, %eax
 	retq
 
 func000000000000001d:
 	shll	$8, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %eax
 	notl	%esi
-	leal	(%rsi,%rdx), %eax
+	addl	%esi, %eax
 	retq
 
 func000000000000001c:
 	shll	$8, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %eax
 	notl	%esi
-	leal	(%rsi,%rdx), %eax
+	addl	%esi, %eax
 	retq
 

@@ -10,19 +10,19 @@ func0000000000000008:
 
 func000000000000000b:
 	andl	$248, %edx
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$136, %edx
-	sete	%al
-	orl	%esi, %edi
-	orl	%edi, %eax
+	sete	%cl
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000063:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	$516, %edx
-	setne	%al
-	orl	%esi, %edi
-	orl	%edi, %eax
+	setne	%cl
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000060:

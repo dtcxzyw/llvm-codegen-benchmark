@@ -1,6 +1,6 @@
 	.att_syntax
 func00000000000000e1:
-	orl	$1, %edi
+	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
@@ -24,13 +24,13 @@ func00000000000000e4:
 	retq
 
 func0000000000000021:
-	orl	$1, %edi
+	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
 
 func0000000000000026:
-	orl	$1, %edi
+	incl	%edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq

@@ -12,8 +12,8 @@ func0000000000000005:
 	andq	%rcx, %rdx
 	orq	$131068, %rcx
 	andq	%rsi, %rcx
+	orq	%rdx, %rcx
 	movl	%edi, %eax
-	orq	%rdx, %rax
 	orq	%rcx, %rax
 	retq
 

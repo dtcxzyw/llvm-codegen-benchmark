@@ -6,14 +6,14 @@ func0000000000000002:
 	retq
 
 func000000000000000a:
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	sarl	%eax
 	retq
 
 func0000000000000008:
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	sarl	%eax
 	retq
 

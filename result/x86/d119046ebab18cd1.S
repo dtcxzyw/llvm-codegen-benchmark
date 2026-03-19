@@ -14,9 +14,9 @@ func0000000000000009:
 
 func000000000000000d:
 	movl	$1, %eax
-	shlxq	%rdx, %rax, %rax
-	orq	%rsi, %rdi
-	andq	%rdi, %rax
+	shlxq	%rdx, %rax, %rcx
+	leaq	(%rdi,%rsi), %rax
+	andq	%rcx, %rax
 	retq
 
 func0000000000000008:

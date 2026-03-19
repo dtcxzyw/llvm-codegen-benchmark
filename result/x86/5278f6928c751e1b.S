@@ -9,8 +9,8 @@ func0000000000000013:
 func000000000000001b:
 	movzbl	%dl, %ecx
 	shll	$16, %ecx
+	orl	%edi, %ecx
 	movzwl	%si, %eax
-	orl	%edi, %eax
 	orl	%ecx, %eax
 	retq
 

@@ -4,9 +4,9 @@ func0000000000000063:
 	cmpl	$1114112, %edx
 	setae	%al
 	shll	$8, %eax
+	orl	%edi, %eax
 	andl	$1, %esi
 	shll	$7, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -58,9 +58,9 @@ func0000000000000023:
 	cmpl	$1114112, %edx
 	setae	%al
 	shll	$8, %eax
+	orl	%edi, %eax
 	andl	$1, %esi
 	shll	$7, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -104,8 +104,8 @@ func0000000000000005:
 	movl	$536870912, %ecx
 	movl	$6, %eax
 	cmovel	%ecx, %eax
+	orl	%edi, %eax
 	shll	$31, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 

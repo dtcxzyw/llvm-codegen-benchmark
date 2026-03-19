@@ -3,8 +3,7 @@ func0000000000000006:
 	testl	%edx, %edx
 	movl	$292, %ecx
 	cmovel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$146, %eax
+	leal	146(%rcx), %eax
 	testb	$1, %sil
 	cmovnel	%ecx, %eax
 	orl	%edi, %eax

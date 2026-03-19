@@ -13,8 +13,7 @@ func0000000000000001:
 func0000000000000021:
 	testb	$1, %dil
 	cmovel	%edx, %esi
-	movl	%esi, %eax
-	orl	$192, %eax
+	leal	192(%rsi), %eax
 	testl	$4092, %esi
 	cmovnel	%esi, %eax
 	retq

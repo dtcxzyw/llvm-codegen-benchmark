@@ -7,17 +7,15 @@ func0000000000000002:
 	retq
 
 func0000000000000003:
-	movl	%edx, %eax
 	cmpl	%edx, %esi
-	cmoval	%esi, %eax
-	orl	%edi, %eax
+	cmoval	%esi, %edx
+	leal	(%rdx,%rdi), %eax
 	retq
 
 func0000000000000001:
-	movl	%edx, %eax
 	cmpl	%edx, %esi
-	cmoval	%esi, %eax
-	orl	%edi, %eax
+	cmoval	%esi, %edx
+	leal	(%rdx,%rdi), %eax
 	retq
 
 func0000000000000000:

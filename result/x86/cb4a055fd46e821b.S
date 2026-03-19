@@ -2,12 +2,12 @@
 func0000000000000003:
 	shll	$4, %edx
 	andl	$63872, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	shll	$20, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000000f:
@@ -52,20 +52,19 @@ func000000000000000b:
 func0000000000000002:
 	shll	$18, %edx
 	andl	$134217728, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	shll	$26, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000007:
-	movl	%esi, %eax
 	shll	$16, %edx
 	andl	$536805376, %edx
-	shll	$31, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rdi), %eax
+	shll	$31, %esi
+	orl	%esi, %eax
 	retq
 

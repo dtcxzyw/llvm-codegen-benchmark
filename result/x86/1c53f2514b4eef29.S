@@ -7,22 +7,19 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	movq	%rdx, %rax
-	orq	$57, %rax
+	leaq	57(%rdx), %rax
 	cmpq	$2, %rsi
 	cmovneq	%rdi, %rax
 	retq
 
 func0000000000000026:
-	movq	%rdx, %rax
-	orq	$1, %rax
+	leaq	1(%rdx), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rdi, %rax
 	retq
 
 func0000000000000024:
-	movq	%rdx, %rax
-	orq	$54, %rax
+	leaq	54(%rdx), %rax
 	cmpq	$12, %rsi
 	cmovaeq	%rdi, %rax
 	retq

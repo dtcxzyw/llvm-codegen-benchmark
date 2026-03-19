@@ -8,15 +8,15 @@ func0000000000000000:
 
 func0000000000000001:
 	shrq	$3, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rcx
 	movabsq	$1085102592571150095, %rax
-	andq	%rsi, %rax
+	andq	%rcx, %rax
 	retq
 
 func0000000000000003:
 	shrq	%rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rcx
 	movabsq	$1085102592571150095, %rax
-	andq	%rsi, %rax
+	andq	%rcx, %rax
 	retq
 

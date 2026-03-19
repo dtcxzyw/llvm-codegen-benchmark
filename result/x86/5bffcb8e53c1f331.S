@@ -14,17 +14,16 @@ func0000000000000004:
 	retq
 
 func000000000000001f:
-	movzbl	%dl, %eax
-	shll	$16, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	movzbl	%dl, %ecx
+	shll	$16, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000003:
-	movq	%rdi, %rax
 	shll	$8, %edx
 	andl	$-16777216, %edx
-	orq	%rsi, %rax
+	leaq	(%rdi,%rsi), %rax
 	orq	%rdx, %rax
 	retq
 

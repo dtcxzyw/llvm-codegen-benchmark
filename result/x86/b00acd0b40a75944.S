@@ -12,19 +12,19 @@ func000000000000001c:
 	retq
 
 func000000000000003f:
-	orl	$1, %edx
-	imulq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leal	1(%rdx), %eax
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000034:
-	orl	$1, %edx
+	incl	%edx
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,4), %rax
 	retq
 
 func000000000000002f:
-	orl	$1, %edx
+	incl	%edx
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,4), %rax
 	retq

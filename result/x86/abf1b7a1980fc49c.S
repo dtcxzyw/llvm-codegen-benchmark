@@ -14,15 +14,13 @@ func000000000000000c:
 	retq
 
 func0000000000000024:
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	cmpl	$16777216, %esi
 	cmovael	%edi, %eax
 	retq
 
 func0000000000000021:
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	testl	%esi, %esi
 	cmovnel	%edi, %eax
 	retq
@@ -42,15 +40,13 @@ func0000000000000018:
 	retq
 
 func000000000000002a:
-	movl	%edi, %eax
-	orl	$4, %eax
+	leal	4(%rdi), %eax
 	cmpl	$5, %esi
 	cmovll	%edi, %eax
 	retq
 
 func000000000000002c:
-	movl	%edi, %eax
-	orl	$2, %eax
+	leal	2(%rdi), %eax
 	cmpl	$4, %esi
 	cmovel	%edi, %eax
 	retq
@@ -70,15 +66,13 @@ func0000000000000014:
 	retq
 
 func0000000000000038:
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	cmpl	$256, %esi
 	cmovbl	%edi, %eax
 	retq
 
 func0000000000000028:
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	cmpl	$256, %esi
 	cmovbl	%edi, %eax
 	retq
@@ -98,8 +92,7 @@ func0000000000000026:
 	retq
 
 func0000000000000034:
-	movl	%edi, %eax
-	orl	$8192, %eax
+	leal	8192(%rdi), %eax
 	cmpl	$3122, %esi
 	cmovael	%edi, %eax
 	retq

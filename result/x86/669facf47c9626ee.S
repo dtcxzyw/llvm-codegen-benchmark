@@ -8,11 +8,10 @@ func000000000000000a:
 	retq
 
 func0000000000000002:
-	movq	%rcx, %rax
-	shldq	$10, %rdx, %rax
+	shldq	$10, %rdx, %rcx
 	shlq	$10, %rdx
 	orq	%rdi, %rdx
-	orq	%rsi, %rax
+	leaq	(%rcx,%rsi), %rax
 	bswapq	%rax
 	bswapq	%rdx
 	retq

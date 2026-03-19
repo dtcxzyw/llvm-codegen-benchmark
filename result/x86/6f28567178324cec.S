@@ -235,6 +235,7 @@ func00000000000000aa:
 func00000000000000a6:
 	shll	$6, %esi
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setle	%al
 	retq
 

@@ -27,8 +27,8 @@ func000000000000007f:
 	movzwl	%dx, %eax
 	shll	$13, %eax
 	shll	$23, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000006f:

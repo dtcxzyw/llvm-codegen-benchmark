@@ -29,7 +29,7 @@ func000000000000007f:
 func000000000000007c:
 	movzbl	%dl, %eax
 	shll	$6, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

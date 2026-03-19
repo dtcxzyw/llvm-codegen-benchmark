@@ -3,8 +3,8 @@ func0000000000000007:
 	testl	%edx, %edx
 	setne	%al
 	addb	%al, %al
+	orb	%dil, %al
 	andb	$-4, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
 	retq
 
@@ -21,8 +21,8 @@ func0000000000000013:
 	cmpl	$3, %edx
 	setb	%al
 	shlb	$5, %al
+	orb	%dil, %al
 	andb	$7, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
 	retq
 
@@ -30,8 +30,8 @@ func0000000000000006:
 	testl	%edx, %edx
 	setne	%al
 	shlb	$6, %al
+	orb	%dil, %al
 	andb	$-128, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
 	retq
 

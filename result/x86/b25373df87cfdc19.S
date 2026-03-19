@@ -1,9 +1,8 @@
 	.att_syntax
 func000000000000000f:
 	shll	$5, %edx
+	leal	(%rsi,%rdx), %ecx
 	leal	1024(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
@@ -18,9 +17,8 @@ func000000000000000e:
 
 func000000000000000b:
 	shll	$26, %edx
+	leal	(%rdx,%rsi), %ecx
 	leal	512(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
@@ -28,8 +26,7 @@ func000000000000000b:
 func0000000000000001:
 	shll	$20, %edx
 	orl	%esi, %edx
-	movl	%edx, %eax
-	orl	$524288, %eax
+	leal	524288(%rdx), %eax
 	testb	$1, %dil
 	cmovel	%edx, %eax
 	retq

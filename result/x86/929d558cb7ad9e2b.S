@@ -20,9 +20,8 @@ func000000000000000f:
 func0000000000000003:
 	andl	$127, %edx
 	shll	$24, %edx
+	leal	(%rdx,%rsi), %ecx
 	leal	-2147483648(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

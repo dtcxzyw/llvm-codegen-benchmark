@@ -21,7 +21,7 @@ func0000000000000006:
 	cmpb	$45, %dl
 	sete	%al
 	shlq	$63, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
@@ -30,7 +30,7 @@ func000000000000002b:
 	testb	%dl, %dl
 	setg	%al
 	shll	$12, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

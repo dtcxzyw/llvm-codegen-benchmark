@@ -8,18 +8,18 @@ func0000000000000009:
 func000000000000000b:
 	leal	2(%rsi), %eax
 	imull	%edi, %eax
-	orl	$1, %eax
+	incl	%eax
 	retq
 
 func0000000000000001:
 	leal	2(%rsi), %eax
 	imull	%edi, %eax
-	orl	$1, %eax
+	incl	%eax
 	retq
 
 func0000000000000003:
 	leal	-6(%rsi), %eax
 	imull	%edi, %eax
-	orl	$1, %eax
+	incl	%eax
 	retq
 

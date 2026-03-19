@@ -2,26 +2,24 @@
 func000000000000000f:
 	shrl	$12, %edx
 	andl	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	leal	(%rdi,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
+	addl	%eax, %eax
 	retq
 
 func000000000000000a:
-	movl	%edi, %eax
 	shrl	$4, %edx
 	andl	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	shll	$8, %eax
 	retq
 
 func000000000000000e:
-	movl	%edi, %eax
 	shrl	$3, %edx
 	andl	$4, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	shll	$4, %eax
 	retq
 

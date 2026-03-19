@@ -31,15 +31,14 @@ func0000000000000000:
 	retq
 
 func000000000000000e:
-	movl	%edi, %eax
-	orl	%esi, %eax
+	leal	(%rdi,%rsi), %eax
 	btsl	%edx, %eax
 	retq
 
 func0000000000000002:
 	movl	$14, %eax
-	shlxl	%edx, %eax, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	shlxl	%edx, %eax, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 

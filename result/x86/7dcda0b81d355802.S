@@ -22,8 +22,8 @@ func0000000000000004:
 
 func000000000000002c:
 	shll	$16, %edx
-	orl	%esi, %edx
-	andl	$2147483647, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	andl	$2147483647, %eax
+	addq	%rdi, %rax
 	retq
 

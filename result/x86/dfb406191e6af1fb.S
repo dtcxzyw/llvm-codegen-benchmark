@@ -33,7 +33,7 @@ func0000000000000005:
 	testq	%rdx, %rdx
 	setne	%al
 	shlq	$61, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

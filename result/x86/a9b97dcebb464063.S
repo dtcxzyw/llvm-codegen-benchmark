@@ -11,17 +11,17 @@ func000000000000002f:
 func000000000000003f:
 	shlq	$32, %rdx
 	shlq	$8, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movzbl	%dil, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000003b:
 	shlq	$32, %rdx
 	shlq	$48, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rax
 	andl	$-65536, %edi
-	leaq	(%rdi,%rsi), %rax
+	orq	%rdi, %rax
 	retq
 
 func000000000000000c:

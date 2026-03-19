@@ -10,12 +10,12 @@ func0000000000000001:
 	retq
 
 func0000000000000005:
-	orq	$1, %rdi
+	incq	%rdi
 	lzcntq	%rdi, %rax
 	retq
 
 func0000000000000007:
-	orq	$1, %rdi
+	incq	%rdi
 	lzcntq	%rdi, %rax
 	retq
 

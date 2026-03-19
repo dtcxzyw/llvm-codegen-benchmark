@@ -9,16 +9,14 @@ func0000000000000041:
 
 func0000000000000074:
 	movl	%edi, %ecx
-	movq	%rcx, %rax
-	orq	$-2097152, %rax
+	leaq	-2097152(%rcx), %rax
 	testl	$1048576, %esi
 	cmoveq	%rcx, %rax
 	retq
 
 func0000000000000061:
 	movl	%edi, %ecx
-	movq	%rcx, %rax
-	orq	$-1024, %rax
+	leaq	-1024(%rcx), %rax
 	testl	$512, %esi
 	cmoveq	%rcx, %rax
 	retq

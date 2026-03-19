@@ -6,17 +6,15 @@ func0000000000000002:
 	retq
 
 func000000000000000a:
-	movq	%rdx, %rax
-	shlq	$32, %rax
-	orq	%rsi, %rax
+	shlq	$32, %rdx
+	leaq	(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	cmovbeq	%rdi, %rax
 	retq
 
 func000000000000000e:
-	movq	%rdx, %rax
-	shlq	$8, %rax
-	orq	%rsi, %rax
+	shlq	$8, %rdx
+	leaq	(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	cmovbeq	%rdi, %rax
 	retq

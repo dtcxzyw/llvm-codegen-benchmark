@@ -1,6 +1,6 @@
 	.att_syntax
 func000000000000001a:
-	orl	$1, %edx
+	incl	%edx
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
 	leaq	(%rdi,%rcx,4), %rcx
@@ -8,7 +8,7 @@ func000000000000001a:
 	retq
 
 func0000000000000018:
-	orl	$1, %edx
+	incl	%edx
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
 	leaq	(%rdi,%rcx,8), %rcx

@@ -16,8 +16,8 @@ func000000000000001d:
 func000000000000001f:
 	movl	%esi, %ecx
 	shlq	$16, %rcx
+	orq	%rdi, %rcx
 	movabsq	$549772591104, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 
@@ -99,8 +99,8 @@ func000000000000000a:
 func000000000000000e:
 	movl	%esi, %ecx
 	shlq	$29, %rcx
+	orq	%rdi, %rcx
 	movabsq	$9221120237041090560, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

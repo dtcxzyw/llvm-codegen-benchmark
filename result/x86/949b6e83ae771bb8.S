@@ -14,14 +14,14 @@ func000000000000000f:
 func000000000000003f:
 	movzbl	%dl, %eax
 	shlq	$48, %rax
-	orq	%rsi, %rdi
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 
 func000000000000001f:
 	movzbl	%dl, %eax
 	shlq	$42, %rax
-	orq	%rsi, %rdi
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 

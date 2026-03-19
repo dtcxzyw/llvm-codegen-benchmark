@@ -1,21 +1,21 @@
 	.att_syntax
 func000000000000000f:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	shll	$7, %eax
 	retq
 
 func000000000000000c:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	addl	%eax, %eax
 	retq
 
 func000000000000000e:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	shll	$8, %eax
 	retq

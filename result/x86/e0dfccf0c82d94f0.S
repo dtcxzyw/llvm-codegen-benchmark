@@ -6,23 +6,20 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
-	shll	$5, %eax
-	orl	%edi, %eax
+	shll	$5, %esi
+	leal	(%rsi,%rdi), %eax
 	sarl	$3, %eax
 	retq
 
 func000000000000000f:
-	movl	%esi, %eax
-	shll	$8, %eax
-	orl	%edi, %eax
+	shll	$8, %esi
+	leal	(%rsi,%rdi), %eax
 	sarl	$8, %eax
 	retq
 
 func000000000000000b:
-	movl	%esi, %eax
-	shll	$24, %eax
-	orl	%edi, %eax
+	shll	$24, %esi
+	leal	(%rsi,%rdi), %eax
 	sarl	$8, %eax
 	retq
 

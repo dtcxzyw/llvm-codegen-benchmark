@@ -3,7 +3,7 @@ func0000000000000062:
 	xorl	%eax, %eax
 	cmpb	$-102, %dl
 	setne	%al
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -27,7 +27,7 @@ func0000000000000063:
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	setne	%al
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

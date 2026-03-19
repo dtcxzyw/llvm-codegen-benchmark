@@ -30,8 +30,8 @@ func0000000000000007:
 func0000000000000017:
 	andl	$4095, %edx
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func000000000000001c:

@@ -13,7 +13,7 @@ func0000000000000003:
 
 func0000000000000007:
 	andl	$1, %esi
-	orq	%rdi, %rsi
-	leaq	(,%rsi,4), %rax
+	leaq	(%rsi,%rdi), %rax
+	shlq	$2, %rax
 	retq
 

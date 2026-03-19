@@ -5,12 +5,12 @@ func0000000000000001:
 	retq
 
 func0000000000000005:
-	orl	$1, %edi
+	incl	%edi
 	lzcntl	%edi, %eax
 	retq
 
 func0000000000000007:
-	orl	$1, %edi
+	incl	%edi
 	lzcntl	%edi, %eax
 	retq
 

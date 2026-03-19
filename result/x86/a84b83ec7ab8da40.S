@@ -14,24 +14,24 @@ func0000000000000014:
 	retq
 
 func0000000000000028:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	shrq	$51, %rdi
 	cmpl	$25, %edi
 	movabsq	$140737488355328, %rax
-	cmovaeq	%rsi, %rax
+	cmovaeq	%rcx, %rax
 	retq
 
 func0000000000000021:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	testq	%rdi, %rdi
 	movabsq	$-9223372036854775808, %rax
-	cmoveq	%rsi, %rax
+	cmoveq	%rcx, %rax
 	retq
 
 func0000000000000024:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	cmpq	$-7, %rdi
 	movq	$-1, %rax
-	cmovbq	%rsi, %rax
+	cmovbq	%rcx, %rax
 	retq
 

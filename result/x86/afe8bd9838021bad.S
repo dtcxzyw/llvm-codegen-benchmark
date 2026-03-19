@@ -4,8 +4,8 @@ func0000000000000007:
 	testb	$1, %dl
 	sete	%al
 	shll	$31, %eax
-	orl	%esi, %edi
 	addl	%edi, %eax
+	addl	%esi, %eax
 	retq
 
 func0000000000000000:

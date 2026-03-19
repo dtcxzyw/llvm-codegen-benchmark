@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000009:
-	movl	%esi, %eax
 	cmpb	$10, %dil
-	cmovbl	%edi, %eax
-	orb	$48, %al
+	cmovbl	%edi, %esi
+	leal	48(%rsi), %eax
 	retq
 

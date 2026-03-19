@@ -1,8 +1,8 @@
 	.att_syntax
 func0000000000000001:
-	leal	-1(%rdx), %eax
-	orl	%esi, %edi
-	andl	%edi, %eax
+	leal	-1(%rdx), %ecx
+	leal	(%rdi,%rsi), %eax
+	andl	%ecx, %eax
 	retq
 
 func0000000000000002:
@@ -18,8 +18,8 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
-	leal	-1(%rdx), %eax
-	orl	%esi, %edi
-	andl	%edi, %eax
+	leal	-1(%rdx), %ecx
+	leal	(%rdi,%rsi), %eax
+	andl	%ecx, %eax
 	retq
 

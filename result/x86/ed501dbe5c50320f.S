@@ -9,10 +9,10 @@ func000000000000000f:
 
 func0000000000000009:
 	andl	$2097151, %edx
-	orq	%rsi, %rdx
-	shlq	$22, %rdx
+	leaq	(%rdx,%rsi), %rax
+	shlq	$22, %rax
 	andl	$4194303, %edi
-	leaq	(%rdi,%rdx), %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000005:
@@ -41,9 +41,9 @@ func0000000000000007:
 
 func000000000000000e:
 	andl	$524286, %edx
-	orq	%rsi, %rdx
-	shlq	$5, %rdx
+	leaq	(%rdx,%rsi), %rax
+	shlq	$5, %rax
 	andl	$31, %edi
-	leaq	(%rdi,%rdx), %rax
+	orq	%rdi, %rax
 	retq
 

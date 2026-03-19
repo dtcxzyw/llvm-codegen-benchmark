@@ -8,22 +8,22 @@ func000000000000007f:
 func000000000000007c:
 	shll	$12, %edx
 	shll	$4, %esi
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func000000000000007d:
 	shll	$12, %edx
 	shll	$4, %esi
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func0000000000000017:
 	shll	$20, %edx
 	shll	$28, %esi
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func000000000000006c:
@@ -35,8 +35,8 @@ func000000000000006c:
 func0000000000000075:
 	shll	$8, %edx
 	shll	$24, %esi
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func000000000000001d:

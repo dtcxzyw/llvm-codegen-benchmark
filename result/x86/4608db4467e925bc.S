@@ -12,8 +12,8 @@ func0000000000000004:
 
 func000000000000001f:
 	shll	$16, %edx
-	orl	%esi, %edx
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addl	%edi, %eax
 	andl	$16711935, %eax
 	retq
 
@@ -31,8 +31,8 @@ func0000000000000000:
 
 func0000000000000014:
 	shll	$16, %edx
-	orl	%esi, %edx
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addl	%edi, %eax
 	andl	$-8, %eax
 	retq
 

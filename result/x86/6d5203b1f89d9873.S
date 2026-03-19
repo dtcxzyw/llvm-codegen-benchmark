@@ -1,15 +1,13 @@
 	.att_syntax
 func0000000000000024:
-	movl	%edi, %eax
-	orb	$32, %al
+	leal	32(%rdi), %eax
 	cmpb	$26, %sil
 	movzbl	%al, %eax
 	cmovael	%edi, %eax
 	retq
 
 func0000000000000021:
-	movl	%edi, %eax
-	orb	$2, %al
+	leal	2(%rdi), %eax
 	testb	%sil, %sil
 	movzbl	%al, %eax
 	cmovnel	%edi, %eax

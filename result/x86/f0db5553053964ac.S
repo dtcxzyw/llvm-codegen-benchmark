@@ -14,7 +14,7 @@ func0000000000000006:
 	cmpl	$1, %edx
 	sete	%al
 	shlb	$6, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 

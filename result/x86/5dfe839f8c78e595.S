@@ -12,12 +12,10 @@ func0000000000000000:
 	retq
 
 func0000000000000007:
-	movq	%rdx, %rcx
-	orq	$2, %rcx
+	leaq	2(%rdx), %rcx
 	testb	$1, %sil
 	cmovneq	%rdx, %rcx
-	movq	%rcx, %rax
-	orq	$4, %rax
+	leaq	4(%rcx), %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
 	orq	$8, %rax

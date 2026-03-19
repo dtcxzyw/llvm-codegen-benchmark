@@ -18,8 +18,8 @@ func0000000000000010:
 func0000000000000016:
 	movslq	%edx, %rax
 	shlq	$16, %rax
+	orq	%rdi, %rax
 	shlq	$20, %rsi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 

@@ -13,12 +13,10 @@ func0000000000000000:
 
 func0000000000000003:
 	andl	$-17, %edx
-	movl	%edx, %ecx
-	orl	$4096, %ecx
+	leal	4096(%rdx), %ecx
 	testb	$1, %sil
 	cmovel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$16384, %eax
+	leal	16384(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

@@ -4,10 +4,10 @@ func000000000000003f:
 	movl	$255, %eax
 	cmovael	%eax, %edx
 	shll	$8, %edx
+	leal	(%rdx,%rdi), %ecx
 	cmpl	$255, %esi
 	cmovbl	%esi, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001b:
@@ -15,9 +15,9 @@ func000000000000001b:
 	movl	$255, %eax
 	cmovael	%eax, %edx
 	shll	$8, %edx
+	leal	(%rdx,%rdi), %ecx
 	cmpl	$255, %esi
 	cmovbl	%esi, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 

@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000074:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$2, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$2, %eax
 	setb	%al
 	retq
 
@@ -17,33 +17,33 @@ func0000000000000014:
 
 func000000000000006c:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$536936448, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$536936448, %eax
 	setne	%al
 	retq
 
 func0000000000000061:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$536936448, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$536936448, %eax
 	sete	%al
 	retq
 
 func00000000000000e1:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$1114112, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$1114112, %eax
 	sete	%al
 	retq
 
 func0000000000000064:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$2, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$2, %eax
 	setb	%al
 	retq
 
@@ -56,9 +56,9 @@ func0000000000000001:
 
 func0000000000000068:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$65539, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$65539, %eax
 	setae	%al
 	retq
 
@@ -78,9 +78,9 @@ func0000000000000041:
 
 func00000000000000ec:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$1114113, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$1114113, %eax
 	setne	%al
 	retq
 
@@ -92,9 +92,9 @@ func00000000000000f4:
 
 func00000000000000f8:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	cmpl	$64976, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	cmpl	$64976, %eax
 	setae	%al
 	retq
 

@@ -2,16 +2,15 @@
 func0000000000000007:
 	movabsq	$-281470681755648, %rax
 	andq	%rdx, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	orq	$8192, %rax
 	retq
 
 func0000000000000006:
-	movq	%rdi, %rax
 	andl	$4194304, %edx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	orq	%rdi, %rax
 	orq	$2236418, %rax
 	retq
 

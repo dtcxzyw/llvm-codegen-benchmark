@@ -1,8 +1,8 @@
 	.att_syntax
 func000000000000000c:
 	movl	%edx, %eax
-	orq	%rsi, %rdi
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 
 func0000000000000000:
@@ -13,20 +13,20 @@ func0000000000000000:
 
 func0000000000000004:
 	movl	%edx, %eax
-	orq	%rsi, %rdi
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 
 func000000000000000f:
 	movl	%edx, %eax
-	orq	%rsi, %rdi
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 
 func0000000000000007:
 	movl	%edx, %eax
-	orq	%rsi, %rdi
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 
 func0000000000000008:

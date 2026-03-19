@@ -1,12 +1,12 @@
 	.att_syntax
 func0000000000000063:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	%edx, %edx
-	setne	%al
+	setne	%cl
 	notb	%sil
-	movzbl	%sil, %ecx
-	andl	$1, %ecx
-	shll	$6, %ecx
+	movzbl	%sil, %eax
+	andl	$1, %eax
+	shll	$6, %eax
 	orl	%edi, %eax
 	orl	%ecx, %eax
 	retq

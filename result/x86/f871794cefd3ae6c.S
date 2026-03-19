@@ -1,19 +1,19 @@
 	.att_syntax
 func000000000000001e:
 	shll	$8, %esi
-	orl	%edi, %esi
-	imull	$2115, %esi, %eax
+	leal	(%rsi,%rdi), %ecx
+	imull	$2115, %ecx, %eax
 	shrl	$16, %eax
-	movl	%esi, %ecx
-	subl	%eax, %ecx
-	movzwl	%cx, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	movzwl	%cx, %eax
+	movl	%ecx, %edx
+	subl	%eax, %edx
+	movzwl	%dx, %edx
+	shrl	%edx
+	addl	%eax, %edx
+	movzwl	%dx, %eax
 	shrl	$4, %eax
-	movl	%eax, %ecx
-	shll	$5, %ecx
-	subl	%ecx, %eax
-	addl	%esi, %eax
+	movl	%eax, %edx
+	shll	$5, %edx
+	subl	%edx, %eax
+	addl	%ecx, %eax
 	retq
 

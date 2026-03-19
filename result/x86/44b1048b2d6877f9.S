@@ -4,7 +4,7 @@ func0000000000000063:
 	cmpl	$1114112, %edx
 	setae	%al
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	xorl	$42, %eax
 	retq
@@ -23,7 +23,7 @@ func0000000000000023:
 	cmpl	$1114112, %edx
 	setae	%al
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	xorl	$42, %eax
 	retq

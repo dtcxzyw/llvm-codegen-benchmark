@@ -4,8 +4,8 @@ func0000000000000003:
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shlq	$60, %rax
+	orq	%rdi, %rax
 	shlq	$61, %rsi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 
@@ -47,19 +47,17 @@ func000000000000000f:
 	retq
 
 func000000000000000b:
-	movq	%rsi, %rax
 	andl	$1, %edx
 	shll	$16, %edx
-	shlq	$32, %rax
-	orq	%rdi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rdi), %rax
+	shlq	$32, %rsi
+	orq	%rsi, %rax
 	retq
 
 func000000000000000e:
-	movq	%rsi, %rax
 	shlq	$63, %rdx
-	orq	%rdi, %rdx
-	shlq	$52, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rdi), %rax
+	shlq	$52, %rsi
+	orq	%rsi, %rax
 	retq
 

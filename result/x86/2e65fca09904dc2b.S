@@ -1,18 +1,18 @@
 	.att_syntax
 func0000000000000002:
-	leal	(%rsi,%rsi), %eax
-	andb	$-32, %al
+	leal	(%rsi,%rsi), %ecx
+	andb	$-32, %cl
 	andb	$15, %sil
-	orb	%dil, %sil
-	orb	%sil, %al
+	leal	(%rsi,%rdi), %eax
+	orb	%cl, %al
 	retq
 
 func0000000000000003:
-	leal	(,%rsi,4), %eax
-	andb	$8, %al
+	leal	(,%rsi,4), %ecx
+	andb	$8, %cl
 	andb	$1, %sil
-	orb	%dil, %sil
-	orb	%sil, %al
+	leal	(%rsi,%rdi), %eax
+	orb	%cl, %al
 	retq
 
 func0000000000000001:

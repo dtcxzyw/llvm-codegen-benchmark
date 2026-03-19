@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000017:
 	andl	$-64, %edx
-	orl	%esi, %edx
-	shrl	$3, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	shrl	$3, %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000001f:

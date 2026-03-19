@@ -35,7 +35,7 @@ func0000000000000004:
 	retq
 
 func0000000000000021:
-	orb	$1, %dl
+	incb	%dl
 	testb	%sil, %sil
 	movzbl	%dl, %eax
 	cmovnel	%edi, %eax

@@ -1,32 +1,32 @@
 	.att_syntax
 func000000000000001e:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$11, %edx
-	sete	%al
-	shlq	$63, %rax
+	sete	%cl
+	shlq	$63, %rcx
 	shlq	$32, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000012:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$11, %edx
-	sete	%al
-	shlq	$63, %rax
+	sete	%cl
+	shlq	$63, %rcx
 	shlq	$60, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000001f:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$11, %edx
-	sete	%al
-	shlq	$48, %rax
+	sete	%cl
+	shlq	$48, %rcx
 	shlq	$32, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func00000000000000af:
@@ -35,9 +35,9 @@ func00000000000000af:
 	setns	%cl
 	shlq	$40, %rcx
 	shlq	$8, %rsi
-	orq	%rdi, %rsi
 	movabsq	$-1099511627776, %rax
 	addq	%rsi, %rax
+	addq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
 

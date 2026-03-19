@@ -4,7 +4,7 @@ func0000000000000007:
 	retq
 
 func0000000000000006:
-	orq	$1, %rsi
+	incq	%rsi
 	imulq	$152, %rsi, %rax
 	addq	%rdi, %rax
 	retq

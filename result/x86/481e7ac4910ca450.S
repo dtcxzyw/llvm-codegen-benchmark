@@ -9,20 +9,22 @@ func0000000000000000:
 	retq
 
 func000000000000007f:
+	movq	%rdi, %rcx
+	shlq	$32, %rcx
+	orq	%rsi, %rcx
 	movq	%rdi, %rax
 	shlq	$16, %rax
-	orq	%rdi, %rax
-	shlq	$32, %rdi
-	orq	%rsi, %rdi
+	orq	%rcx, %rax
 	orq	%rdi, %rax
 	retq
 
 func000000000000005f:
+	movq	%rdi, %rcx
+	shlq	$48, %rcx
+	orq	%rsi, %rcx
 	movq	%rdi, %rax
 	shlq	$16, %rax
-	orq	%rdi, %rax
-	shlq	$48, %rdi
-	orq	%rsi, %rdi
+	orq	%rcx, %rax
 	orq	%rdi, %rax
 	retq
 

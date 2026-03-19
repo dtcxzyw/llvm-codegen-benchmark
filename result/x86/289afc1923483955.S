@@ -8,19 +8,19 @@ func0000000000000008:
 	retq
 
 func000000000000000b:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$136, %edx
-	sete	%al
-	orl	%esi, %edi
-	orl	%edi, %eax
+	sete	%cl
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000063:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	%edx, %edx
-	setne	%al
-	orl	%esi, %edi
-	orl	%edi, %eax
+	setne	%cl
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000060:
@@ -32,10 +32,10 @@ func0000000000000060:
 	retq
 
 func0000000000000053:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$224, %edx
-	setge	%al
-	orl	%esi, %edi
-	orl	%edi, %eax
+	setge	%cl
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 

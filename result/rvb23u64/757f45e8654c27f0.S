@@ -1,10 +1,43 @@
+.LCPI0_0:
+	.quad	2951479051793528259
+.LCPI0_1:
+	.quad	2951479051793528258
+.LCPI0_2:
+	.quad	-8116567392432202711
 func0000000000000000:
-	addi	sp, sp, -16
-	sd	ra, 8(sp)
-	li	a2, 100
-	li	a3, 0
-	call	__udivti3
-	ld	ra, 8(sp)
-	addi	sp, sp, 16
+	slli	a2, a1, 2
+	li	a6, -241
+	slli	a4, a1, 62
+	srli	a5, a0, 2
+	srli	t1, a1, 58
+	or	a4, a4, a5
+	lui	a7, %hi(.LCPI0_0)
+	srli	a5, a6, 4
+	and	a2, a2, a5
+	srli	a5, a4, 60
+	or	a2, a2, a5
+	lui	a6, %hi(.LCPI0_1)
+	slli	a4, a4, 4
+	srli	a4, a4, 4
+	add	a2, a2, a4
+	lui	t0, %hi(.LCPI0_2)
+	ld	a5, %lo(.LCPI0_0)(a7)
+	ld	a4, %lo(.LCPI0_1)(a6)
+	ld	a3, %lo(.LCPI0_2)(t0)
+	add	a2, a2, t1
+	mulhu	a5, a2, a5
+	srli	a5, a5, 2
+	sh2add	a5, a5, a5
+	sh2add	a5, a5, a5
+	sub	a2, a2, a5
+	sub	a5, a0, a2
+	sltu	a0, a0, a2
+	mul	a4, a4, a5
+	mulhu	a2, a5, a3
+	sub	a1, a1, a0
+	add	a2, a2, a4
+	mul	a1, a1, a3
+	add	a1, a1, a2
+	mul	a0, a5, a3
 	ret
 

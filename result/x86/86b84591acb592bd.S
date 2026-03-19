@@ -9,9 +9,9 @@ func0000000000000009:
 
 func000000000000001d:
 	shll	$8, %esi
-	orl	%edi, %esi
-	shrl	$6, %esi
-	andl	$63, %esi
-	leal	128(%rsi), %eax
+	leal	(%rsi,%rdi), %eax
+	shrl	$6, %eax
+	andl	$63, %eax
+	orl	$128, %eax
 	retq
 

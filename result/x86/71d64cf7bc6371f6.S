@@ -3,7 +3,7 @@ func0000000000000007:
 	cmpl	$1, %edx
 	movl	$5, %eax
 	sbbq	$0, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
@@ -41,7 +41,7 @@ func0000000000000006:
 	cmpl	$5, %edx
 	sete	%al
 	shll	$5, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

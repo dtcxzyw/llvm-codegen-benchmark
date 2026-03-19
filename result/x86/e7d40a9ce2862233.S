@@ -9,18 +9,18 @@ func000000000000006f:
 
 func000000000000006c:
 	shlq	$8, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rax
 	movzbl	%sil, %ecx
-	orq	%rdx, %rcx
+	orq	%rax, %rcx
 	movabsq	$-7046029288634856825, %rax
 	imulq	%rcx, %rax
 	retq
 
 func000000000000006d:
 	shlq	$8, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	leaq	(,%rax,8), %rcx
 	subq	%rcx, %rax
 	retq

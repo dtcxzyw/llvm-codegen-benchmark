@@ -10,8 +10,8 @@ func000000000000000c:
 func000000000000000f:
 	movabsq	$-4294967296, %rax
 	andq	%rdx, %rax
+	orq	%rdi, %rax
 	shll	$16, %esi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 
@@ -19,7 +19,7 @@ func000000000000000b:
 	shlq	$48, %rdx
 	movb	$52, %al
 	bzhiq	%rax, %rsi, %rax
-	orq	%rdi, %rdx
+	orq	%rdi, %rax
 	orq	%rdx, %rax
 	retq
 

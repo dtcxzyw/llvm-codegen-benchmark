@@ -8,10 +8,9 @@ func0000000000000000:
 	retq
 
 func000000000000000a:
-	movl	%esi, %eax
 	shrl	$16, %edx
-	shrl	$10, %eax
-	orl	%edx, %eax
+	shrl	$10, %esi
+	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
 

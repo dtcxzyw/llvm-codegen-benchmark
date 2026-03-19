@@ -38,10 +38,10 @@ func00000000000000f8:
 
 func00000000000000a1:
 	shll	$16, %esi
-	orl	%edi, %esi
-	cmpl	$100, %esi
+	leal	(%rsi,%rdi), %ecx
+	cmpl	$100, %ecx
 	movl	$10, %eax
-	cmovel	%esi, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func0000000000000006:

@@ -1,24 +1,24 @@
 	.att_syntax
 func0000000000000063:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$1114112, %edx
-	setae	%al
-	shll	$8, %eax
+	setae	%cl
+	shll	$8, %ecx
 	andl	$1, %esi
 	shll	$6, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$55296, %edx
-	sete	%al
-	shll	$7, %eax
+	sete	%cl
+	shll	$7, %ecx
 	andl	$1, %esi
 	shll	$8, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000004:
@@ -33,14 +33,14 @@ func0000000000000004:
 	retq
 
 func0000000000000023:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$1114112, %edx
-	setae	%al
-	shll	$8, %eax
+	setae	%cl
+	shll	$8, %ecx
 	andl	$1, %esi
 	shll	$6, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000006:

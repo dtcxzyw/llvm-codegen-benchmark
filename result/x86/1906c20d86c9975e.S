@@ -14,9 +14,9 @@ func000000000000001f:
 func0000000000000010:
 	movabsq	$-4294967296, %rax
 	andq	%rax, %rdx
-	orq	%rsi, %rdx
 	addq	%rdi, %rax
 	addq	%rdx, %rax
+	addq	%rsi, %rax
 	retq
 
 func000000000000000d:

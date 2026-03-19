@@ -30,9 +30,9 @@ func0000000000000060:
 
 func000000000000004c:
 	shlq	$32, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rax
 	movzbl	%sil, %ecx
-	orq	%rdx, %rcx
+	orq	%rax, %rcx
 	movabsq	$9223372036854775798, %rax
 	addq	%rcx, %rax
 	retq

@@ -29,10 +29,10 @@ func0000000000000003:
 	retq
 
 func0000000000000001:
-	movl	%edx, %eax
-	movabsq	$1099494850560, %rcx
-	andq	%rsi, %rcx
-	orq	%rdi, %rax
+	movl	%edx, %ecx
+	movabsq	$1099494850560, %rax
+	andq	%rsi, %rax
 	orq	%rcx, %rax
+	orq	%rdi, %rax
 	retq
 

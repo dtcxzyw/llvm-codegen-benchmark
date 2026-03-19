@@ -1,8 +1,8 @@
 	.att_syntax
 func0000000000000005:
-	leal	(%rdx,%rdx), %eax
-	orl	$1, %esi
+	leal	(%rdx,%rdx), %ecx
+	leal	1(%rsi), %eax
 	testb	$1, %dil
-	cmovnel	%esi, %eax
+	cmovel	%ecx, %eax
 	retq
 

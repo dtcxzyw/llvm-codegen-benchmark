@@ -12,9 +12,9 @@ func0000000000000004:
 	retq
 
 func0000000000000017:
-	orl	%edx, %esi
-	andl	$-2, %esi
-	leaq	(%rsi,%rdi), %rax
+	leal	(%rsi,%rdx), %eax
+	andl	$-2, %eax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000014:

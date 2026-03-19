@@ -12,13 +12,12 @@ func0000000000000022:
 	retq
 
 func000000000000003a:
-	movq	%rsi, %rax
-	orl	%edi, %eax
+	leal	(%rsi,%rdi), %eax
 	shlq	$32, %rax
 	retq
 
 func000000000000003b:
-	orl	%edi, %esi
-	leaq	(,%rsi,8), %rax
+	leal	(%rsi,%rdi), %eax
+	shlq	$3, %rax
 	retq
 

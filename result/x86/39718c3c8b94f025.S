@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000024:
 	leal	-65(%rdi), %eax
-	movl	%edi, %ecx
-	orb	$32, %cl
+	leal	32(%rdi), %ecx
 	cmpb	$26, %al
 	movzbl	%cl, %eax
 	cmovael	%edi, %eax

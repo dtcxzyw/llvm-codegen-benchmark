@@ -10,40 +10,40 @@ func000000000000002f:
 func000000000000003f:
 	movzbl	%dl, %eax
 	shll	$16, %eax
+	orl	%edi, %eax
 	shll	$8, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func0000000000000032:
 	movzbl	%dl, %eax
 	shll	$8, %eax
+	orl	%edi, %eax
 	shll	$24, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func000000000000003b:
 	movzbl	%dl, %eax
 	shll	$16, %eax
+	orl	%edi, %eax
 	shll	$24, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func000000000000003d:
 	movzbl	%dl, %eax
 	shll	$16, %eax
+	orl	%esi, %eax
 	shll	$24, %edi
-	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
 
 func000000000000007f:
 	movzbl	%dl, %eax
 	shll	$12, %eax
+	orl	%esi, %eax
 	shll	$6, %edi
-	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
 
@@ -74,8 +74,8 @@ func000000000000003c:
 func0000000000000079:
 	movzbl	%dl, %eax
 	shll	$15, %eax
+	orl	%edi, %eax
 	shll	$16, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -106,24 +106,24 @@ func000000000000000c:
 func0000000000000037:
 	movzbl	%dl, %eax
 	shll	$8, %eax
+	orl	%edi, %eax
 	shll	$16, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func0000000000000073:
 	movzbl	%dl, %eax
 	shll	$5, %eax
+	orl	%edi, %eax
 	shll	$10, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func000000000000007a:
 	movzbl	%dl, %eax
 	shll	$16, %eax
+	orl	%edi, %eax
 	shll	$24, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -138,48 +138,48 @@ func0000000000000020:
 func0000000000000038:
 	movzbl	%dl, %eax
 	shll	$10, %eax
+	orl	%esi, %eax
 	shll	$12, %edi
-	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
 
 func000000000000003e:
 	movzbl	%dl, %eax
 	shll	$10, %eax
+	orl	%esi, %eax
 	shll	$16, %edi
-	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
 
 func000000000000007d:
 	movzbl	%dl, %eax
 	shll	$16, %eax
+	orl	%edi, %eax
 	shll	$21, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func0000000000000033:
 	movzbl	%dl, %eax
 	shll	$22, %eax
+	orl	%edi, %eax
 	shll	$30, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func000000000000007e:
 	movzbl	%dl, %eax
 	shll	$5, %eax
+	orl	%edi, %eax
 	shll	$16, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
 func0000000000000071:
 	movzbl	%dl, %eax
 	shll	$16, %eax
+	orl	%edi, %eax
 	shll	$21, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 

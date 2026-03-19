@@ -2,7 +2,7 @@
 func0000000000000004:
 	movq	%rdx, %r10
 	orq	%r8, %r10
-	orq	%r9, %rcx
+	addq	%r9, %rcx
 	imulq	%rdi, %rcx
 	movq	%rdi, %rdx
 	mulxq	%r10, %rax, %rdx
@@ -15,7 +15,7 @@ func0000000000000004:
 func0000000000000005:
 	movq	%rdx, %r10
 	orq	%r8, %r10
-	orq	%r9, %rcx
+	addq	%r9, %rcx
 	imulq	%rdi, %rcx
 	movq	%rdi, %rdx
 	mulxq	%r10, %rax, %rdx

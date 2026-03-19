@@ -7,15 +7,13 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	movl	%edx, %eax
-	orl	$1, %eax
+	leal	1(%rdx), %eax
 	cmpq	$-1, %rsi
 	cmovnel	%edi, %eax
 	retq
 
 func0000000000000034:
-	movl	%edx, %eax
-	orl	$48, %eax
+	leal	48(%rdx), %eax
 	cmpq	$10, %rsi
 	cmovael	%edi, %eax
 	retq

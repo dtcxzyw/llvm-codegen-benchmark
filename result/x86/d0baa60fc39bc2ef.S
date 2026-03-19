@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000021:
 	movabsq	$4503599627370496, %rax
-	movq	%rsi, %rcx
-	orq	%rax, %rcx
+	leaq	(%rsi,%rax), %rcx
 	testb	$1, %dil
 	cmovneq	%rsi, %rcx
 	cmpq	%rax, %rcx

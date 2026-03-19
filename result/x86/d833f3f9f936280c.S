@@ -10,8 +10,7 @@ func0000000000000000:
 	retq
 
 func0000000000000007:
-	movl	%esi, %eax
-	orl	$128, %eax
+	leal	128(%rsi), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	andl	$2048, %edx

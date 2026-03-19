@@ -3,24 +3,24 @@ func0000000000000039:
 	movzbl	%dl, %eax
 	shll	$16, %eax
 	shll	$8, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000003f:
 	movzbl	%dl, %eax
 	shll	$12, %eax
 	shll	$6, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000007f:
 	movzbl	%dl, %eax
 	shll	$12, %eax
 	shll	$6, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000003d:

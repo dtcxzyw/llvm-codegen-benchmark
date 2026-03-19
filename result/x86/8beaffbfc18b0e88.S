@@ -60,8 +60,8 @@ func0000000000000037:
 func000000000000003a:
 	movl	%edx, %ecx
 	shlq	$24, %rcx
+	orq	%rdi, %rcx
 	movl	%esi, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

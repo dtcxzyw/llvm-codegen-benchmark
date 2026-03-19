@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000022:
-	orl	$1, %esi
+	incl	%esi
 	shlxl	%edi, %esi, %eax
 	shlq	$32, %rax
 	retq

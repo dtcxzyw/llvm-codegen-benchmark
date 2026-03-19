@@ -6,8 +6,8 @@ func000000000000000c:
 
 func000000000000001c:
 	shlq	$4, %rdx
-	orq	%rsi, %rdi
-	leaq	(%rdi,%rdx), %rax
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
 	retq
 
 func0000000000000000:
@@ -28,8 +28,8 @@ func000000000000001f:
 
 func0000000000000007:
 	shlq	$32, %rdx
-	orq	%rsi, %rdi
-	leaq	(%rdi,%rdx), %rax
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
 	retq
 
 func000000000000001b:

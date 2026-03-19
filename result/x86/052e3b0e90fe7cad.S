@@ -4,8 +4,7 @@ func0000000000000034:
 	shrq	$32, %rcx
 	testb	$1, %sil
 	cmovneq	%rdx, %rcx
-	movl	%edi, %eax
-	orl	$16, %eax
+	leal	16(%rdi), %eax
 	cmpq	$65536, %rcx
 	cmovbl	%edi, %eax
 	retq
@@ -15,8 +14,7 @@ func0000000000000024:
 	shrq	$32, %rcx
 	testb	$1, %sil
 	cmovneq	%rdx, %rcx
-	movl	%edi, %eax
-	orl	$16, %eax
+	leal	16(%rdi), %eax
 	cmpq	$65536, %rcx
 	cmovbl	%edi, %eax
 	retq

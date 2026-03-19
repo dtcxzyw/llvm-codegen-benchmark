@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000481:
 	leal	-65(%rsi), %eax
-	movl	%esi, %ecx
-	orb	$32, %cl
+	leal	32(%rsi), %ecx
 	cmpb	$26, %al
 	movzbl	%cl, %eax
 	cmovael	%esi, %eax
@@ -12,8 +11,7 @@ func0000000000000481:
 
 func000000000000048a:
 	leal	-65(%rsi), %eax
-	movl	%esi, %ecx
-	orb	$32, %cl
+	leal	32(%rsi), %ecx
 	cmpb	$26, %al
 	movzbl	%cl, %eax
 	cmovael	%esi, %eax
@@ -23,8 +21,7 @@ func000000000000048a:
 
 func0000000000000484:
 	leal	-65(%rsi), %eax
-	movl	%esi, %ecx
-	orb	$32, %cl
+	leal	32(%rsi), %ecx
 	cmpb	$26, %al
 	movzbl	%cl, %eax
 	cmovael	%esi, %eax
@@ -45,8 +42,7 @@ func0000000000000081:
 
 func000000000000048c:
 	leal	-65(%rsi), %eax
-	movl	%esi, %ecx
-	orb	$32, %cl
+	leal	32(%rsi), %ecx
 	cmpb	$26, %al
 	movzbl	%cl, %eax
 	cmovael	%esi, %eax

@@ -26,10 +26,9 @@ func0000000000000007:
 	retq
 
 func0000000000000005:
-	movq	%rsi, %rax
-	notl	%eax
-	andl	$1, %eax
-	orq	%rdi, %rax
+	notl	%esi
+	andl	$1, %esi
+	leaq	(%rsi,%rdi), %rax
 	retq
 
 func0000000000000002:

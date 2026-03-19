@@ -8,7 +8,7 @@ func0000000000000121:
 
 func0000000000000126:
 	shrq	$3, %rsi
-	orl	$1, %edi
+	incl	%edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq

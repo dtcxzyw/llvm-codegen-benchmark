@@ -7,11 +7,10 @@ func0000000000000007:
 	retq
 
 func0000000000000004:
-	movq	%rsi, %rax
-	andq	$-256, %rax
+	andq	$-256, %rsi
 	testq	%rdi, %rdi
-	cmoveq	%rdi, %rax
-	orq	$192, %rax
+	cmoveq	%rdi, %rsi
+	leaq	192(%rsi), %rax
 	retq
 
 func0000000000000023:

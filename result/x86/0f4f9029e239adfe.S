@@ -3,8 +3,8 @@ func000000000000001f:
 	movabsq	$-281470682267641, %rcx
 	andq	%rdx, %rcx
 	shlq	$32, %rsi
+	orq	%rsi, %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
 	orq	%rcx, %rax
 	retq
 

@@ -3,8 +3,8 @@ func0000000000000061:
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
 	setne	%cl
+	orq	%rdi, %rcx
 	movabsq	$-9223372036854775808, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

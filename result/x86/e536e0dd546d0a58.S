@@ -14,8 +14,7 @@ func0000000000000074:
 	testl	%esi, %esi
 	movl	$292, %ecx
 	cmovel	%esi, %ecx
-	movl	%ecx, %eax
-	orl	$146, %eax
+	leal	146(%rcx), %eax
 	cmpl	$2, %edi
 	cmovbl	%ecx, %eax
 	retq

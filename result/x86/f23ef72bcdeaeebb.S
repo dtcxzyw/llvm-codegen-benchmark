@@ -2,15 +2,15 @@
 func0000000000000007:
 	shll	$5, %edx
 	shrl	$16, %esi
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func000000000000001f:
 	shrl	$4, %edx
 	shll	$4, %esi
-	orl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func000000000000003f:

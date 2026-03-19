@@ -9,9 +9,9 @@ func0000000000000031:
 func000000000000003f:
 	shlq	$16, %rsi
 	shlq	$32, %rdi
-	orq	%rsi, %rdi
+	leaq	(%rdi,%rsi), %rcx
 	movabsq	$549772591104, %rax
-	orq	%rdi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000001:
@@ -48,9 +48,9 @@ func0000000000000033:
 func000000000000003a:
 	shlq	$42, %rsi
 	shlq	$48, %rdi
-	orq	%rsi, %rdi
+	leaq	(%rdi,%rsi), %rcx
 	movabsq	$9221120237041090560, %rax
-	orq	%rdi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000021:

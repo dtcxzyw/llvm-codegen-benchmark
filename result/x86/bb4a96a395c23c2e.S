@@ -1,10 +1,9 @@
 	.att_syntax
 func0000000000000061:
 	andl	$1, %edx
-	movq	%rsi, %rax
-	subq	%rdx, %rax
-	orq	$1, %rsi
+	leaq	1(%rsi), %rax
+	subq	%rdx, %rsi
 	cmpb	$-1, %dil
-	cmoveq	%rsi, %rax
+	cmovneq	%rsi, %rax
 	retq
 

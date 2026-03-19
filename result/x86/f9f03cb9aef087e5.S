@@ -8,8 +8,7 @@ func0000000000000002:
 	retq
 
 func0000000000000043:
-	movl	%edi, %eax
-	orl	$4, %eax
+	leal	4(%rdi), %eax
 	cmpb	$4, %sil
 	cmovnel	%edi, %eax
 	orl	$8, %eax
@@ -29,16 +28,14 @@ func0000000000000008:
 	retq
 
 func0000000000000049:
-	movl	%edi, %eax
-	orl	$393216, %eax
+	leal	393216(%rdi), %eax
 	cmpb	$11, %sil
 	cmovael	%edi, %eax
 	orl	$8388736, %eax
 	retq
 
 func0000000000000042:
-	movl	%edi, %eax
-	orl	$16, %eax
+	leal	16(%rdi), %eax
 	cmpb	$3, %sil
 	cmovnel	%edi, %eax
 	orl	$65, %eax

@@ -9,17 +9,16 @@ func000000000000000f:
 func000000000000000e:
 	shll	$6, %edx
 	andl	$64, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzbl	%sil, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000003:
-	movl	%esi, %eax
 	shll	$15, %edx
 	andl	$-532709376, %edx
-	andl	$532709120, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rdi), %eax
+	andl	$532709120, %esi
+	orl	%esi, %eax
 	retq
 

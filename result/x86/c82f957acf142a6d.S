@@ -1,66 +1,65 @@
 	.att_syntax
 func000000000000003f:
-	movzbl	%dl, %eax
-	addl	%eax, %eax
+	movzbl	%dl, %ecx
+	addl	%ecx, %ecx
 	shlq	$9, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000001f:
-	movzbl	%dl, %eax
-	addl	%eax, %eax
+	movzbl	%dl, %ecx
+	addl	%ecx, %ecx
 	shlq	$17, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000003b:
-	movq	%rsi, %rax
 	shlq	$56, %rdx
-	shlq	$48, %rax
-	orq	%rdi, %rax
+	shlq	$48, %rsi
+	leaq	(%rsi,%rdi), %rax
 	orq	%rdx, %rax
 	retq
 
 func000000000000002f:
-	movzbl	%dl, %eax
-	shlq	$40, %rax
+	movzbl	%dl, %ecx
+	shlq	$40, %rcx
 	shlq	$56, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000003e:
-	movzbl	%dl, %eax
-	shll	$8, %eax
+	movzbl	%dl, %ecx
+	shll	$8, %ecx
 	shlq	$16, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000006f:
 	shlq	$24, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
 	shll	$8, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000004f:
 	shlq	$56, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
 	shlq	$40, %rax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000006e:
 	shlq	$16, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
 	shll	$8, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000038:
@@ -73,18 +72,18 @@ func0000000000000038:
 
 func000000000000007f:
 	shlq	$7, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
 	shll	$14, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000007e:
 	shlq	$35, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movzbl	%sil, %eax
 	shlq	$42, %rax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000076:
@@ -104,11 +103,10 @@ func0000000000000060:
 	retq
 
 func000000000000006d:
-	movl	%esi, %eax
 	shlq	$48, %rdx
-	orq	%rdi, %rdx
-	shlq	$56, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rdi), %rax
+	shlq	$56, %rsi
+	orq	%rsi, %rax
 	retq
 
 func000000000000003c:
@@ -136,11 +134,11 @@ func000000000000007c:
 	retq
 
 func000000000000004e:
-	movzbl	%dl, %eax
-	shlq	$32, %rax
+	movzbl	%dl, %ecx
+	shlq	$32, %rcx
 	shlq	$8, %rsi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000064:
@@ -160,10 +158,9 @@ func0000000000000066:
 	retq
 
 func000000000000000f:
-	movq	%rsi, %rax
 	shll	$24, %edx
-	shlq	$40, %rax
-	orq	%rdi, %rax
+	shlq	$40, %rsi
+	leaq	(%rsi,%rdi), %rax
 	orq	%rdx, %rax
 	retq
 

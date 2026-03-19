@@ -10,8 +10,8 @@ func000000000000003f:
 func000000000000003b:
 	movzbl	%dl, %eax
 	shlq	$48, %rax
+	orq	%rdi, %rax
 	shlq	$56, %rsi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 
@@ -50,8 +50,8 @@ func0000000000000038:
 func000000000000007e:
 	movzbl	%dl, %eax
 	shlq	$35, %rax
+	orq	%rsi, %rax
 	shlq	$42, %rdi
-	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
 
@@ -74,8 +74,8 @@ func0000000000000070:
 func000000000000003d:
 	movzbl	%dl, %eax
 	shlq	$48, %rax
+	orq	%rsi, %rax
 	shlq	$56, %rdi
-	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
 

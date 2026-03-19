@@ -12,7 +12,7 @@ func0000000000000043:
 	orq	%rdi, %rax
 	testq	%rsi, %rsi
 	cmoveq	%rdi, %rax
-	orq	$1, %rax
+	incq	%rax
 	retq
 
 func0000000000000002:

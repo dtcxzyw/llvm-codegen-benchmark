@@ -4,7 +4,7 @@ func0000000000000007:
 	cmpw	$2, %dx
 	sete	%al
 	shll	$14, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -13,7 +13,7 @@ func0000000000000022:
 	movl	$-2141192192, %ecx
 	movl	$-2147483648, %eax
 	cmovael	%ecx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -22,7 +22,7 @@ func0000000000000023:
 	cmpw	$5, %dx
 	movl	$15990784, %eax
 	cmovbl	%ecx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

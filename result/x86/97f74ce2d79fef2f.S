@@ -18,7 +18,7 @@ func0000000000000003:
 	shlb	$4, %dl
 	andb	$-128, %dl
 	movzbl	%dl, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

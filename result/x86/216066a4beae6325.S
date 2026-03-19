@@ -89,6 +89,7 @@ func0000000000000064:
 func0000000000000066:
 	orl	%edx, %esi
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setle	%al
 	retq
 
@@ -101,6 +102,7 @@ func000000000000000c:
 func000000000000006a:
 	orl	%edx, %esi
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setg	%al
 	retq
 

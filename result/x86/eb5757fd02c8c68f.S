@@ -21,21 +21,21 @@ func0000000000000008:
 	retq
 
 func0000000000000048:
-	orq	$1, %rdx
+	incq	%rdx
 	cmpq	%rsi, %rdx
 	setb	%al
 	orb	%dil, %al
 	retq
 
 func0000000000000072:
-	orq	$1, %rdx
+	incq	%rdx
 	cmpq	%rsi, %rdx
 	setae	%al
 	orb	%dil, %al
 	retq
 
 func0000000000000056:
-	orq	$1, %rdx
+	incq	%rdx
 	cmpq	%rsi, %rdx
 	setge	%al
 	orb	%dil, %al

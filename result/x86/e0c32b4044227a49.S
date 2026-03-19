@@ -10,7 +10,7 @@ func0000000000000007:
 	shlb	$4, %dl
 	andb	$16, %dl
 	movzbl	%dl, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

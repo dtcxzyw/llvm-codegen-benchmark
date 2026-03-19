@@ -6,19 +6,19 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
 
 func0000000000000026:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
 
 func0000000000000034:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%edi, %esi
 	setb	%al
 	retq
@@ -54,7 +54,7 @@ func0000000000000014:
 	retq
 
 func0000000000000024:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%edi, %esi
 	setb	%al
 	retq
@@ -72,7 +72,7 @@ func0000000000000004:
 	retq
 
 func000000000000002b:
-	orl	$1, %esi
+	incl	%esi
 	cmpl	%edi, %esi
 	setge	%al
 	retq

@@ -2,7 +2,7 @@
 func000000000000001f:
 	movzbl	%dl, %eax
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	bswapl	%eax
 	retq
@@ -18,7 +18,7 @@ func0000000000000018:
 func000000000000001e:
 	movzbl	%dl, %eax
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	bswapl	%eax
 	retq

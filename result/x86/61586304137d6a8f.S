@@ -120,6 +120,7 @@ func000000000000016a:
 	shll	$24, %edx
 	orl	%esi, %edi
 	orl	%edx, %edi
+	testl	%edi, %edi
 	setg	%al
 	retq
 

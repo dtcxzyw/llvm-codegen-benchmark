@@ -15,16 +15,16 @@ func000000000000001b:
 
 func0000000000000017:
 	movl	$1, %eax
-	shlxl	%edx, %eax, %eax
-	orl	%esi, %edi
-	andl	%edi, %eax
+	shlxl	%edx, %eax, %ecx
+	leal	(%rdi,%rsi), %eax
+	andl	%ecx, %eax
 	retq
 
 func000000000000001e:
 	movl	$1, %eax
-	shlxl	%edx, %eax, %eax
-	orl	%esi, %edi
-	andl	%edi, %eax
+	shlxl	%edx, %eax, %ecx
+	leal	(%rdi,%rsi), %eax
+	andl	%ecx, %eax
 	retq
 
 func0000000000000003:

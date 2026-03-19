@@ -10,8 +10,8 @@ func0000000000000001:
 	shll	$26, %edx
 	leal	-67108864(%rdx), %eax
 	andl	$-67108868, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000000:

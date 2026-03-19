@@ -1,19 +1,19 @@
 	.att_syntax
 func0000000000000008:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	shrq	$8, %rax
 	retq
 
 func000000000000000a:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	shrq	$16, %rax
 	retq
 
 func000000000000000e:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	shrq	$4, %rax
 	retq
 

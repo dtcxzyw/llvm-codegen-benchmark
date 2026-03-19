@@ -3,8 +3,8 @@ func0000000000000003:
 	notb	%dl
 	andb	$1, %dl
 	leal	(%rdx,%rdx), %eax
+	orb	%dil, %al
 	andb	$-4, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
 	retq
 
@@ -17,13 +17,12 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
 	notb	%dl
 	andb	$1, %dl
 	shlb	$6, %dl
-	andb	$-128, %al
-	orb	%dil, %al
-	orb	%dl, %al
+	leal	(%rdx,%rdi), %eax
+	andb	$-128, %sil
+	orb	%sil, %al
 	retq
 
 func0000000000000001:

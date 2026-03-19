@@ -8,7 +8,7 @@ func0000000000000002:
 func000000000000000f:
 	movzwl	%dx, %eax
 	shlq	$32, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
@@ -21,11 +21,10 @@ func000000000000000c:
 	retq
 
 func000000000000000e:
-	movq	%rdi, %rax
 	andl	$4194304, %edx
 	shlq	$39, %rdx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000008:

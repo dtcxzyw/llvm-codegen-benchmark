@@ -2,17 +2,17 @@
 func000000000000001b:
 	andl	$61440, %edx
 	shll	$6, %esi
-	orl	%edx, %esi
+	leal	(%rsi,%rdx), %ecx
 	movzbl	%dil, %eax
-	orl	%esi, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001f:
 	andl	$61440, %edx
 	shll	$6, %esi
-	orl	%edx, %esi
+	leal	(%rsi,%rdx), %ecx
 	movzbl	%dil, %eax
-	orl	%esi, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001c:

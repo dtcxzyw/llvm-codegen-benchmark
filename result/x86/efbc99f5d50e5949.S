@@ -1,13 +1,12 @@
 	.att_syntax
 func0000000000000063:
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	testl	%edx, %edx
-	setne	%cl
-	leal	2048(%rsi,%rcx), %eax
-	movl	%esi, %edx
-	orl	%ecx, %edx
+	setne	%al
+	leal	(%rsi,%rax), %ecx
+	leal	2048(%rsi,%rax), %eax
 	testb	$1, %dil
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	retq
 
 func0000000000000061:

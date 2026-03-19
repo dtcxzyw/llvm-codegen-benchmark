@@ -22,8 +22,8 @@ func000000000000007f:
 	shlq	$32, %rax
 	orq	%rsi, %rax
 	shlq	$16, %rdx
-	orq	%rdi, %rdx
 	orq	%rdx, %rax
+	orq	%rdi, %rax
 	retq
 
 func000000000000005f:
@@ -31,7 +31,7 @@ func000000000000005f:
 	shlq	$48, %rax
 	orq	%rsi, %rax
 	shlq	$16, %rdx
-	orq	%rdi, %rdx
 	orq	%rdx, %rax
+	orq	%rdi, %rax
 	retq
 

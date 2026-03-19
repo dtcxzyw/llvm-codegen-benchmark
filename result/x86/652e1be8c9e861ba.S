@@ -1,14 +1,14 @@
 	.att_syntax
 func0000000000000015:
-	orl	%esi, %edi
-	shll	$6, %edi
-	leal	-64(%rdi), %eax
+	leal	(%rdi,%rsi), %eax
+	shll	$6, %eax
+	addl	$-64, %eax
 	retq
 
 func0000000000000016:
-	orl	%esi, %edi
-	shll	$8, %edi
-	leal	-768(%rdi), %eax
+	leal	(%rdi,%rsi), %eax
+	shll	$8, %eax
+	addl	$-768, %eax
 	retq
 
 func000000000000000f:

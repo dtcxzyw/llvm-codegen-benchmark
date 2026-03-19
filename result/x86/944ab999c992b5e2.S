@@ -12,8 +12,7 @@ func0000000000000003:
 	cmpl	$78, %edx
 	movl	$68, %ecx
 	cmovnel	%esi, %ecx
-	movl	%ecx, %eax
-	orl	$1073741824, %eax
+	leal	1073741824(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

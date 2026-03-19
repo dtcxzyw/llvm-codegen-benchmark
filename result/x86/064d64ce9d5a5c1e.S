@@ -1,26 +1,26 @@
 	.att_syntax
 func000000000000001c:
 	shlq	$24, %rdx
-	orq	%rsi, %rdx
-	xorq	%rdi, %rdx
+	leaq	(%rdx,%rsi), %rcx
+	xorq	%rdi, %rcx
 	movabsq	$-7046029288634856825, %rax
-	imulq	%rdx, %rax
+	imulq	%rcx, %rax
 	retq
 
 func0000000000000004:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	xorq	%rdi, %rdx
+	leaq	(%rdx,%rsi), %rcx
+	xorq	%rdi, %rcx
 	movabsq	$1609587791953885689, %rax
-	imulq	%rdx, %rax
+	imulq	%rcx, %rax
 	retq
 
 func0000000000000014:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	xorq	%rdi, %rdx
+	leaq	(%rdx,%rsi), %rcx
+	xorq	%rdi, %rcx
 	movabsq	$5871781006564002453, %rax
-	imulq	%rdx, %rax
+	imulq	%rcx, %rax
 	retq
 
 func0000000000000000:

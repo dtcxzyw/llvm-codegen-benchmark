@@ -1,12 +1,10 @@
 	.att_syntax
 func0000000000000005:
-	movq	%rdi, %rax
-	orb	$-64, %al
+	leal	-64(%rdi), %eax
 	retq
 
 func0000000000000007:
-	movq	%rdi, %rax
-	orb	$-16, %al
+	leal	-16(%rdi), %eax
 	retq
 
 func0000000000000000:
@@ -15,8 +13,7 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	movq	%rdi, %rax
-	orb	$64, %al
+	leal	64(%rdi), %eax
 	retq
 
 func0000000000000004:
@@ -25,7 +22,6 @@ func0000000000000004:
 	retq
 
 func0000000000000003:
-	movq	%rdi, %rax
-	orb	$48, %al
+	leal	48(%rdi), %eax
 	retq
 

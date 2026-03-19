@@ -12,7 +12,7 @@ func0000000000000014:
 	retq
 
 func0000000000000024:
-	orl	$1, %edi
+	incl	%edi
 	cmpl	$-3, %edi
 	setb	%al
 	retq
@@ -24,7 +24,7 @@ func0000000000000004:
 	retq
 
 func0000000000000026:
-	orl	$1, %edi
+	incl	%edi
 	cmpl	$-2147483135, %edi
 	setl	%al
 	retq

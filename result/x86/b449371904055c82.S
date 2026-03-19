@@ -37,7 +37,7 @@ func000000000000001e:
 func000000000000001f:
 	movzwl	%dx, %eax
 	shll	$13, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -51,7 +51,7 @@ func000000000000001b:
 func000000000000000f:
 	movzwl	%dx, %eax
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -79,7 +79,7 @@ func000000000000001c:
 func000000000000001d:
 	movzwl	%dx, %eax
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -93,7 +93,7 @@ func000000000000001a:
 func000000000000000d:
 	movzwl	%dx, %eax
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -121,7 +121,7 @@ func0000000000000013:
 func000000000000000e:
 	movzwl	%dx, %eax
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

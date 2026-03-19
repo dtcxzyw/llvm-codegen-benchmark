@@ -16,10 +16,10 @@ func0000000000000041:
 	retq
 
 func0000000000000061:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	$4278190080, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	testq	%rdi, %rdi
-	cmoveq	%rsi, %rax
+	cmoveq	%rcx, %rax
 	retq
 

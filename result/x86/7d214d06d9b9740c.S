@@ -8,11 +8,11 @@ func0000000000000000:
 	retq
 
 func000000000000000f:
-	movzbl	%dl, %eax
-	shll	$16, %eax
+	movzbl	%dl, %ecx
+	shll	$16, %ecx
 	andl	$768, %esi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000001f:

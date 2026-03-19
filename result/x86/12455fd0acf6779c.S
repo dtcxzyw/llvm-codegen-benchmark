@@ -53,6 +53,7 @@ func000000000000052a:
 	testl	%esi, %esi
 	setg	%al
 	orl	%edi, %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 

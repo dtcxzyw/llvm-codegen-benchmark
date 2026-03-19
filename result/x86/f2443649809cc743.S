@@ -9,20 +9,18 @@ func0000000000000009:
 	retq
 
 func0000000000000031:
-	movl	%edx, %eax
-	andl	$1, %eax
-	shll	$5, %eax
+	andl	$1, %edx
+	shll	$5, %edx
 	cmpq	$65536, %rsi
-	cmovael	%edi, %eax
-	orl	$8, %eax
+	cmovael	%edi, %edx
+	leal	8(%rdx), %eax
 	retq
 
 func0000000000000003:
-	movl	%edx, %eax
-	andl	$1, %eax
-	shll	$5, %eax
+	andl	$1, %edx
+	shll	$5, %edx
 	testq	%rsi, %rsi
-	cmovel	%edi, %eax
-	orl	$8, %eax
+	cmovel	%edi, %edx
+	leal	8(%rdx), %eax
 	retq
 

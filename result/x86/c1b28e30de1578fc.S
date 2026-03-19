@@ -9,9 +9,9 @@ func0000000000000000:
 
 func0000000000000001:
 	andl	$64, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %ecx
 	testb	$1, %dil
 	movl	$64, %eax
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 

@@ -28,8 +28,7 @@ func00000000000000f4:
 	retq
 
 func0000000000000086:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	subq	%rdi, %rax
 	shrq	$63, %rax
 	retq

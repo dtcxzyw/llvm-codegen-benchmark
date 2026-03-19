@@ -29,15 +29,15 @@ func0000000000000004:
 
 func0000000000000077:
 	shll	$8, %edx
-	orl	%esi, %edx
-	andl	$-2, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	andl	$-2, %eax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000037:
 	shll	$6, %edx
-	orl	%esi, %edx
-	shrl	$3, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	shrl	$3, %eax
+	addq	%rdi, %rax
 	retq
 

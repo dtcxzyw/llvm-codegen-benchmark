@@ -1,31 +1,29 @@
 	.att_syntax
 func000000000000003f:
-	movl	%edi, %eax
 	shll	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	shll	$8, %eax
 	retq
 
 func000000000000002c:
 	shll	$24, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	leal	(%rdi,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
+	addl	%eax, %eax
 	retq
 
 func000000000000003c:
 	shll	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	leal	(%rdi,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
+	addl	%eax, %eax
 	retq
 
 func000000000000003e:
-	movl	%edi, %eax
 	shll	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	shll	$8, %eax
 	retq
 
@@ -53,16 +51,15 @@ func0000000000000019:
 
 func0000000000000009:
 	shll	$16, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	leal	(%rdi,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
+	addl	%eax, %eax
 	retq
 
 func000000000000000c:
-	movl	%edi, %eax
 	shll	$16, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	shll	$8, %eax
 	retq
 
@@ -75,10 +72,9 @@ func0000000000000000:
 	retq
 
 func000000000000003d:
-	movl	%edi, %eax
 	shll	$8, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
 	shll	$16, %eax
 	retq
 

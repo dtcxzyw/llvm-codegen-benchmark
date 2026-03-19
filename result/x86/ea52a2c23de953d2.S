@@ -7,8 +7,7 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	andq	$-245761, %rax
 	orq	%rdi, %rax
 	retq

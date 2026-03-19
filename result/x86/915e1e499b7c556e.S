@@ -11,6 +11,6 @@ func0000000000000005:
 	movslq	%esi, %rax
 	shlq	$2, %rax
 	orq	%rdi, %rax
-	orq	$1, %rax
+	incq	%rax
 	retq
 

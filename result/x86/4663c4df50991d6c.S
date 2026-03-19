@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000062:
-	orq	$1, %rdx
+	incq	%rdx
 	shlxq	%rcx, %rdx, %rax
 	imulq	%rax, %rsi
 	movq	%rdi, %rdx

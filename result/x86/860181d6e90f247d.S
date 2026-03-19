@@ -33,9 +33,9 @@ func0000000000000030:
 
 func0000000000000039:
 	shll	$6, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	leal	-1114112(%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
+	addl	$-1114112, %eax
 	retq
 
 func0000000000000011:

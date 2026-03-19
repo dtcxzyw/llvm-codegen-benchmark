@@ -31,8 +31,8 @@ func000000000000003f:
 func0000000000000039:
 	andl	$2, %edx
 	shll	$14, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	leal	(%rdi,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	orl	%edi, %eax
+	addl	%eax, %eax
 	retq
 

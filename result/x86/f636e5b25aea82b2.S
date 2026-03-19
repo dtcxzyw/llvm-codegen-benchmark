@@ -3,7 +3,7 @@ func0000000000000074:
 	andb	$15, %sil
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %ecx
-	orl	$1, %ecx
+	incl	%ecx
 	xorl	%eax, %eax
 	cmpl	$256, %edi
 	cmovbl	%ecx, %eax
@@ -13,7 +13,7 @@ func0000000000000066:
 	andb	$15, %sil
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
-	orl	$1, %eax
+	incl	%eax
 	sarl	$31, %edi
 	andl	%edi, %eax
 	retq

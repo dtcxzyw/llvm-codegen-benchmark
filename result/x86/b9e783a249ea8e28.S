@@ -9,7 +9,7 @@ func0000000000000004:
 func0000000000000006:
 	movslq	%edx, %rax
 	shlq	$16, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

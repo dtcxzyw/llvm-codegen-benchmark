@@ -22,10 +22,9 @@ func0000000000000006:
 	retq
 
 func0000000000000005:
-	movl	%esi, %eax
 	testl	%edx, %edx
-	cmovel	%edx, %eax
-	orl	%edi, %eax
-	orl	$16, %eax
+	cmovel	%edx, %esi
+	orl	%edi, %esi
+	leal	16(%rsi), %eax
 	retq
 

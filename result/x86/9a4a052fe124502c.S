@@ -4,8 +4,8 @@ func000000000000000f:
 	movabsq	$67555025218437360, %rax
 	andq	%rdx, %rax
 	shlq	$4, %rsi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
+	orq	%rdi, %rax
 	retq
 
 func000000000000001f:

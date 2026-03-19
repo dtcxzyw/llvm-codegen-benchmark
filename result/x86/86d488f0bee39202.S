@@ -7,11 +7,10 @@ func0000000000000002:
 	retq
 
 func0000000000000003:
-	movl	%edx, %eax
-	andl	$-2, %eax
-	cmpl	$2, %eax
-	cmovnel	%esi, %eax
-	orl	%edi, %eax
+	andl	$-2, %edx
+	cmpl	$2, %edx
+	cmovnel	%esi, %edx
+	leal	(%rdx,%rdi), %eax
 	retq
 
 func0000000000000031:

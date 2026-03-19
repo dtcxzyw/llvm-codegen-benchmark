@@ -30,9 +30,9 @@ func0000000000000033:
 	testq	%rdx, %rdx
 	setne	%al
 	shll	$22, %eax
+	orl	%edi, %eax
 	andl	$1, %esi
 	shll	$19, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -41,11 +41,11 @@ func0000000000000006:
 	testq	%rdx, %rdx
 	setne	%cl
 	shll	$9, %ecx
+	orl	%edi, %ecx
 	xorl	%edx, %edx
 	testb	$1, %sil
 	movl	$1025, %eax
 	cmovnel	%edx, %eax
-	orl	%edi, %eax
 	orl	%ecx, %eax
 	retq
 

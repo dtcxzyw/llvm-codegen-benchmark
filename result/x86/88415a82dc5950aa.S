@@ -14,18 +14,18 @@ func0000000000000009:
 	retq
 
 func000000000000000f:
-	orl	%edx, %esi
-	shll	$6, %esi
-	andl	$2097088, %esi
+	leal	(%rsi,%rdx), %eax
+	shll	$6, %eax
+	andl	$2097088, %eax
 	andl	$63, %edi
-	leal	(%rdi,%rsi), %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000000d:
-	orl	%edx, %esi
-	andl	$-64, %esi
-	shll	$24, %esi
+	leal	(%rsi,%rdx), %eax
+	andl	$-64, %eax
+	shll	$24, %eax
 	andl	$318767104, %edi
-	leal	(%rdi,%rsi), %eax
+	orl	%edi, %eax
 	retq
 

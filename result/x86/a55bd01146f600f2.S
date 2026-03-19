@@ -10,16 +10,16 @@ func000000000000001f:
 	shll	$13, %edx
 	andl	$67100672, %edx
 	movzwl	%si, %eax
-	orl	%edi, %eax
 	orl	%edx, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000007:
 	andl	$31, %edx
 	shll	$5, %edx
 	movzwl	%si, %eax
-	orl	%edi, %eax
 	orl	%edx, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000003:

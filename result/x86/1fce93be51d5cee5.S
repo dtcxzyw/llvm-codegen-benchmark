@@ -1,10 +1,10 @@
 	.att_syntax
 func0000000000000004:
-	movabsq	$-7286425919675154353, %rax
-	imulq	%rax, %rdx
+	movabsq	$-7286425919675154353, %rcx
+	imulq	%rcx, %rdx
 	shrq	$30, %rdx
-	orq	%rsi, %rdx
-	imulq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	imulq	%rcx, %rax
 	xorq	%rdi, %rax
 	retq
 

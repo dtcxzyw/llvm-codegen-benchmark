@@ -13,9 +13,9 @@ func0000000000000008:
 	retq
 
 func0000000000000007:
-	movl	%edx, %ecx
-	orq	%rsi, %rdi
-	orq	%rdi, %rcx
+	movl	%edx, %eax
+	leaq	(%rdi,%rsi), %rcx
+	orq	%rax, %rcx
 	movabsq	$94489280512, %rax
 	orq	%rcx, %rax
 	retq
@@ -29,9 +29,9 @@ func0000000000000000:
 	retq
 
 func0000000000000004:
-	movl	%edx, %ecx
-	orq	%rsi, %rdi
-	orq	%rdi, %rcx
+	movl	%edx, %eax
+	leaq	(%rdi,%rsi), %rcx
+	orq	%rax, %rcx
 	movabsq	$4611686018427387904, %rax
 	orq	%rcx, %rax
 	retq

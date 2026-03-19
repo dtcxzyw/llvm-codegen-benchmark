@@ -13,27 +13,27 @@ func0000000000000004:
 
 func000000000000001f:
 	shlq	$8, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func000000000000000f:
 	shlq	$4, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000016:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000006:
 	shlq	$4, %rsi
 	shlq	$5, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func000000000000000e:

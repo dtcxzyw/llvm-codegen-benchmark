@@ -2,9 +2,9 @@
 func0000000000000014:
 	andl	$1057029888, %esi
 	shlq	$32, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rcx
 	movabsq	$216180478695505931, %rax
-	imulq	%rsi, %rax
+	imulq	%rcx, %rax
 	retq
 
 func0000000000000005:

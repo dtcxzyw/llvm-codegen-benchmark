@@ -21,17 +21,17 @@ func0000000000000078:
 
 func0000000000000058:
 	andl	$4, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$129, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$129, %edx
 	setae	%al
 	retq
 
 func0000000000000074:
 	andl	$61440, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$2048, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$2048, %edx
 	setb	%al
 	retq
 
@@ -49,25 +49,25 @@ func0000000000000004:
 
 func000000000000006c:
 	andl	$3, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$10, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$10, %edx
 	setne	%al
 	retq
 
 func0000000000000041:
 	andl	$2048, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$-1, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$-1, %edx
 	sete	%al
 	retq
 
 func0000000000000054:
 	andl	$256, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$4, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$4, %edx
 	setb	%al
 	retq
 

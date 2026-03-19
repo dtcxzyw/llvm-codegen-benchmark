@@ -36,8 +36,8 @@ func0000000000000011:
 	setne	%al
 	shll	$30, %eax
 	shll	$8, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000019:

@@ -13,8 +13,8 @@ func000000000000008a:
 	retq
 
 func00000000000000c6:
-	orq	%rdx, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	addq	%rdi, %rax
 	shrq	$63, %rax
 	retq
 

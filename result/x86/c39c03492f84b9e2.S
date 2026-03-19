@@ -9,8 +9,7 @@ func0000000000000001:
 
 func0000000000000021:
 	andl	$-2, %esi
-	movq	%rdi, %rax
-	orq	$8, %rax
+	leaq	8(%rdi), %rax
 	cmpl	$2, %esi
 	cmovneq	%rdi, %rax
 	retq

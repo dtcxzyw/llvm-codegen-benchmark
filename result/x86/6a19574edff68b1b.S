@@ -8,6 +8,6 @@ func0000000000000001:
 func0000000000000003:
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
-	orq	$1, %rax
+	incq	%rax
 	retq
 

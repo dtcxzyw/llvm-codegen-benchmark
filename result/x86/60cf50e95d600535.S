@@ -18,8 +18,7 @@ func0000000000000000:
 	retq
 
 func0000000000000007:
-	movq	%rsi, %rax
-	shrq	$63, %rax
-	orb	%dil, %al
+	shrq	$63, %rsi
+	leal	(%rsi,%rdi), %eax
 	retq
 

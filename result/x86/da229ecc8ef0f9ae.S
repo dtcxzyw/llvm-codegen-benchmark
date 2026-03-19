@@ -25,8 +25,7 @@ func0000000000000006:
 	testl	%esi, %esi
 	movl	$-1073741760, %ecx
 	cmovel	%esi, %ecx
-	movl	%ecx, %eax
-	orl	$16, %eax
+	leal	16(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	orl	$1073742080, %eax

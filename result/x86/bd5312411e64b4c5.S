@@ -10,11 +10,11 @@ func0000000000000004:
 	retq
 
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testb	$27, %dl
-	setne	%al
-	shlq	$32, %rax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	setne	%cl
+	shlq	$32, %rcx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 

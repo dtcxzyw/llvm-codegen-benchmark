@@ -1,22 +1,22 @@
 	.att_syntax
 func000000000000000f:
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	shll	$8, %eax
 	retq
 
 func000000000000000e:
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	shll	$8, %eax
 	retq
 
 func000000000000000c:
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	shll	$2, %eax
 	retq
 
@@ -35,23 +35,23 @@ func0000000000000000:
 	retq
 
 func000000000000001e:
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	shll	$16, %eax
 	retq
 
 func000000000000001f:
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	shll	$6, %eax
 	retq
 
 func000000000000000d:
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	shll	$16, %eax
 	retq
 

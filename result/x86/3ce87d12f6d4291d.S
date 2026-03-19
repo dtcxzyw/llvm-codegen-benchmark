@@ -13,9 +13,8 @@ func0000000000000030:
 	retq
 
 func0000000000000031:
-	movl	%esi, %eax
-	shrb	$7, %al
-	orb	%dil, %al
+	shrb	$7, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000004:

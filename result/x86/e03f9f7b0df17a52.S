@@ -1,16 +1,16 @@
 	.att_syntax
 func0000000000000027:
 	shll	$16, %edx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movl	%esi, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000007:
 	shll	$24, %edx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movl	%esi, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000000:
@@ -22,15 +22,15 @@ func0000000000000000:
 
 func000000000000003f:
 	shll	$29, %edx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movl	%esi, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000002:
 	shll	$16, %edx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movl	%esi, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 

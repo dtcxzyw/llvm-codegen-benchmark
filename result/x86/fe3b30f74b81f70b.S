@@ -13,7 +13,7 @@ func000000000000000c:
 
 func000000000000000b:
 	andl	$1, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 

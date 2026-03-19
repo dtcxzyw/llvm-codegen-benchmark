@@ -8,18 +8,18 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	orl	$54536, %edx
+	leal	54536(%rdx), %ecx
 	testb	$1, %sil
 	movl	$54536, %eax
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq
 
 func0000000000000003:
-	orl	$-16777216, %edx
+	leal	-16777216(%rdx), %ecx
 	testb	$1, %sil
 	movl	$-16777216, %eax
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq
 

@@ -11,19 +11,16 @@ func0000000000000002:
 	retq
 
 func0000000000000043:
-	movl	%esi, %ecx
-	orl	$4, %ecx
+	leal	4(%rsi), %ecx
 	cmpb	$4, %dl
 	cmovnel	%esi, %ecx
-	movl	%ecx, %eax
-	orl	$8, %eax
+	leal	8(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
 
 func0000000000000048:
-	movl	%esi, %ecx
-	orl	$128, %ecx
+	leal	128(%rsi), %ecx
 	cmpb	$2, %dl
 	cmovael	%esi, %ecx
 	movl	%ecx, %eax

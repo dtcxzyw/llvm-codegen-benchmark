@@ -1,18 +1,18 @@
 	.att_syntax
 func0000000000000021:
 	andl	$3145728, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %ecx
 	xorl	%eax, %eax
 	testl	%edi, %edi
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func0000000000000024:
 	andl	$1, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %ecx
 	xorl	%eax, %eax
 	cmpl	$32, %edi
-	cmovbl	%edx, %eax
+	cmovbl	%ecx, %eax
 	retq
 
 func0000000000000001:

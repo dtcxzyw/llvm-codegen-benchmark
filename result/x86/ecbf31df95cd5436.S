@@ -10,7 +10,7 @@ func0000000000000007:
 func0000000000000004:
 	movzwl	%dx, %ecx
 	shlq	$32, %rcx
-	orq	%rsi, %rdi
+	orq	%rsi, %rcx
 	movabsq	$7381399789260242944, %rax
 	orq	%rdi, %rax
 	orq	%rcx, %rax
@@ -45,9 +45,9 @@ func0000000000000005:
 func0000000000000003:
 	movzwl	%dx, %ecx
 	shlq	$24, %rcx
-	orq	%rsi, %rdi
+	orq	%rsi, %rcx
+	orq	%rdi, %rcx
 	movabsq	$4611686018427387904, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

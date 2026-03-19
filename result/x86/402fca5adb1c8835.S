@@ -3,10 +3,9 @@ func0000000000000043:
 	xorl	%ecx, %ecx
 	cmpb	$-1, %dl
 	sete	%cl
-	movq	%rsi, %rax
-	subq	%rcx, %rax
-	orq	$1, %rsi
+	leaq	1(%rsi), %rax
+	subq	%rcx, %rsi
 	testb	$1, %dil
-	cmovneq	%rsi, %rax
+	cmoveq	%rsi, %rax
 	retq
 

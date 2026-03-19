@@ -10,9 +10,9 @@ func000000000000003d:
 
 func000000000000003f:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
+	leaq	(%rdx,%rsi), %rcx
 	movabsq	$140737488224256, %rax
-	andq	%rdx, %rax
+	andq	%rcx, %rax
 	shlq	$47, %rdi
 	orq	%rdi, %rax
 	retq

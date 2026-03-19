@@ -9,8 +9,7 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	xorl	%edx, %edx
 	divq	%rdi
 	testq	%rdx, %rdx
@@ -18,8 +17,7 @@ func0000000000000021:
 	retq
 
 func000000000000002c:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	xorl	%edx, %edx
 	divq	%rdi
 	testq	%rdx, %rdx

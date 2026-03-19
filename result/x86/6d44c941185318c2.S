@@ -84,6 +84,7 @@ func0000000000000078:
 func000000000000006a:
 	orq	%rdx, %rsi
 	orq	%rdi, %rsi
+	testq	%rsi, %rsi
 	setg	%al
 	retq
 

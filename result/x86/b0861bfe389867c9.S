@@ -92,6 +92,7 @@ func0000000000000041:
 func000000000000002a:
 	movzbl	%sil, %eax
 	orq	%rdi, %rax
+	testq	%rax, %rax
 	setg	%al
 	retq
 

@@ -33,9 +33,9 @@ func0000000000000001:
 	retq
 
 func0000000000000008:
-	orq	%rdx, %rsi
-	orq	%rdi, %rsi
-	leaq	65536(%rsi), %rax
+	leaq	(%rsi,%rdx), %rax
+	orq	%rdi, %rax
+	addq	$65536, %rax
 	retq
 
 func0000000000000003:
@@ -45,8 +45,8 @@ func0000000000000003:
 	retq
 
 func000000000000000b:
-	orq	%rdx, %rsi
-	orq	%rdi, %rsi
-	leaq	60(%rsi), %rax
+	leaq	(%rsi,%rdx), %rax
+	orq	%rdi, %rax
+	addq	$60, %rax
 	retq
 

@@ -6,20 +6,20 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	rorxq	$59, %rdi, %rax
-	xorq	%rsi, %rax
+	xorq	%rcx, %rax
 	retq
 
 func0000000000000001:
-	rorxq	$16, %rdx, %rax
-	orq	%rsi, %rdi
-	xorq	%rdi, %rax
+	rorxq	$16, %rdx, %rcx
+	leaq	(%rdi,%rsi), %rax
+	xorq	%rcx, %rax
 	retq
 
 func0000000000000003:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	rorxq	$43, %rdi, %rax
-	xorq	%rsi, %rax
+	xorq	%rcx, %rax
 	retq
 

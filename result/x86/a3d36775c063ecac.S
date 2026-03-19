@@ -11,10 +11,10 @@ func0000000000000004:
 
 func0000000000000007:
 	cmpb	$12, %dl
-	sete	%al
-	shlb	$3, %al
+	sete	%cl
+	shlb	$3, %cl
 	andb	$-13, %sil
-	orb	%dil, %sil
-	orb	%sil, %al
+	leal	(%rsi,%rdi), %eax
+	orb	%cl, %al
 	retq
 

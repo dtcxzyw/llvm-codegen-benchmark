@@ -1,23 +1,20 @@
 	.att_syntax
 func0000000000000005:
-	movl	%esi, %eax
 	testb	$1, %dil
-	cmovel	%edx, %eax
-	orb	$64, %al
+	cmovel	%edx, %esi
+	leal	64(%rsi), %eax
 	retq
 
 func0000000000000001:
-	movl	%esi, %eax
 	testb	$1, %dil
-	cmovel	%edx, %eax
-	orb	$48, %al
+	cmovel	%edx, %esi
+	leal	48(%rsi), %eax
 	retq
 
 func0000000000000007:
-	movl	%esi, %eax
 	testb	$1, %dil
-	cmovel	%edx, %eax
-	orb	$1, %al
+	cmovel	%edx, %esi
+	leal	1(%rsi), %eax
 	retq
 
 func0000000000000006:

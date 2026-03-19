@@ -13,7 +13,7 @@ func0000000000000007:
 	testl	%edx, %edx
 	setne	%al
 	shll	$20, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -22,7 +22,7 @@ func0000000000000033:
 	cmpl	$1, %edx
 	sete	%al
 	xorl	$5, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -31,7 +31,7 @@ func0000000000000063:
 	cmpl	$1114112, %edx
 	setae	%al
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -65,7 +65,7 @@ func0000000000000023:
 	cmpl	$1114112, %edx
 	setae	%al
 	shll	$8, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -92,7 +92,7 @@ func0000000000000062:
 	cmpl	$6, %edx
 	setae	%al
 	shll	$5, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -101,7 +101,7 @@ func0000000000000005:
 	movl	$536870912, %ecx
 	movl	$6, %eax
 	cmovel	%ecx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -127,7 +127,7 @@ func0000000000000052:
 	cmpl	$32, %edx
 	setb	%al
 	shll	$13, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

@@ -3,8 +3,8 @@ func0000000000000007:
 	movl	%edx, %eax
 	andl	$1, %esi
 	xorq	$5, %rsi
-	orq	%rdi, %rax
 	orq	%rsi, %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000003:

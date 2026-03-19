@@ -22,7 +22,7 @@ func0000000000000033:
 	retq
 
 func0000000000000023:
-	orl	$1, %esi
+	incl	%esi
 	leaq	(%rsi,%rsi,2), %rax
 	leaq	4(%rdi,%rax,8), %rax
 	retq

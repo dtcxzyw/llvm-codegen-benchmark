@@ -1,11 +1,11 @@
 	.att_syntax
 func000000000000000f:
-	orl	$1, %esi
+	incl	%esi
 	shlxq	%rdi, %rsi, %rax
 	retq
 
 func0000000000000008:
-	orl	$1, %esi
+	incl	%esi
 	shlxq	%rdi, %rsi, %rax
 	retq
 

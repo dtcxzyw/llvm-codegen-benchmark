@@ -80,6 +80,7 @@ func000000000000014a:
 
 func000000000000054a:
 	orl	%edx, %esi
+	testl	%esi, %esi
 	setg	%cl
 	testl	%edi, %edi
 	setg	%al

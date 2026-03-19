@@ -10,11 +10,12 @@ func000000000000000f:
 	retq
 
 func0000000000000007:
-	movq	%rdx, %rax
-	shrq	$32, %rdx
-	shlq	$32, %rax
-	orq	%rdi, %rax
-	orq	%rsi, %rdx
+	movq	%rdx, %rcx
+	shrq	$32, %rcx
+	shlq	$32, %rdx
+	leaq	(%rdx,%rdi), %rax
+	orq	%rsi, %rcx
+	movq	%rcx, %rdx
 	retq
 
 func0000000000000001:

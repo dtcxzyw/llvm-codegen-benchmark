@@ -1,11 +1,10 @@
 	.att_syntax
 func0000000000000019:
-	movq	%rdx, %rax
-	shrl	$13, %eax
-	andl	%esi, %eax
-	andl	$1, %eax
-	shll	$13, %eax
-	orq	%rdi, %rax
+	shrl	$13, %edx
+	andl	%esi, %edx
+	andl	$1, %edx
+	shll	$13, %edx
+	leaq	(%rdx,%rdi), %rax
 	retq
 
 func0000000000000003:

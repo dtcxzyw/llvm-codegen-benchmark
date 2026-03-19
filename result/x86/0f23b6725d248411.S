@@ -8,17 +8,17 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
+	leaq	(%rsi,%rdx), %rcx
 	leaq	2(%rsi,%rdx), %rax
-	orq	%rdx, %rsi
 	testb	$1, %dil
-	cmoveq	%rsi, %rax
+	cmoveq	%rcx, %rax
 	retq
 
 func0000000000000002:
-	orq	%rdx, %rsi
-	movq	%rsi, %rax
+	leaq	(%rsi,%rdx), %rcx
+	movq	%rcx, %rax
 	orq	$64, %rax
 	testb	$1, %dil
-	cmoveq	%rsi, %rax
+	cmoveq	%rcx, %rax
 	retq
 

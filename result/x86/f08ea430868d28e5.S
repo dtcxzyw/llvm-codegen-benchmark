@@ -1,8 +1,8 @@
 	.att_syntax
 func0000000000000002:
-	orl	$127, %edi
+	leal	127(%rdi), %ecx
 	movl	$2155905153, %eax
-	imulq	%rdi, %rax
+	imulq	%rcx, %rax
 	shrq	$39, %rax
 	retq
 

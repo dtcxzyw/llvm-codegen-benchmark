@@ -11,11 +11,10 @@ func0000000000000000:
 	retq
 
 func0000000000000004:
-	movq	%rdi, %rax
 	andl	$1, %edx
 	shll	$14, %edx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	orq	%rdi, %rax
 	orq	$262148, %rax
 	retq
 
@@ -24,19 +23,19 @@ func0000000000000006:
 	testb	$1, %dl
 	movl	$98304, %ecx
 	cmovneq	%rax, %rcx
-	orq	%rsi, %rdi
+	orq	%rsi, %rcx
+	orq	%rdi, %rcx
 	movabsq	$12884901952, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 
 func0000000000000007:
 	andl	$1, %edx
 	shlq	$48, %rdx
-	orq	%rsi, %rdi
+	leaq	(%rdx,%rsi), %rcx
+	orq	%rdi, %rcx
 	movabsq	$-9223372036854775808, %rax
-	orq	%rdi, %rax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000005:
@@ -44,9 +43,9 @@ func0000000000000005:
 	movl	$1744830464, %eax
 	movl	$1342177280, %ecx
 	cmovneq	%rax, %rcx
-	orq	%rsi, %rdi
+	orq	%rsi, %rcx
+	orq	%rdi, %rcx
 	movabsq	$1099511627780, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

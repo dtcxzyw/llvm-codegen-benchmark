@@ -2,9 +2,9 @@
 func0000000000000007:
 	shlb	$4, %dl
 	andb	$16, %dl
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001f:
@@ -32,8 +32,8 @@ func0000000000000004:
 func0000000000000003:
 	addb	%dl, %dl
 	andb	$-128, %dl
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 

@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000021:
 	andl	$3145728, %esi
-	movq	%rdi, %rax
-	orq	$1048576, %rax
+	leaq	1048576(%rdi), %rax
 	cmpl	$1048576, %esi
 	cmovneq	%rdi, %rax
 	retq

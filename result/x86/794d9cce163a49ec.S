@@ -12,8 +12,8 @@ func000000000000003f:
 	movabsq	$-4295236609, %rax
 	andq	%rdx, %rax
 	shlq	$32, %rsi
+	orq	%rsi, %rax
 	shlq	$18, %rdi
-	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
 

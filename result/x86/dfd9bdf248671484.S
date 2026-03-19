@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000003:
 	andb	$1, %dl
-	leal	(,%rdx,4), %eax
+	leal	(,%rdx,4), %ecx
 	andb	$1, %sil
-	orb	%dil, %sil
-	orb	%sil, %al
+	leal	(%rsi,%rdi), %eax
+	orb	%cl, %al
 	retq
 

@@ -49,6 +49,7 @@ func0000000000000066:
 	movzbl	%dl, %eax
 	orl	%esi, %edi
 	orl	%eax, %edi
+	testl	%edi, %edi
 	setle	%al
 	retq
 
@@ -63,6 +64,7 @@ func000000000000006a:
 	movzbl	%dl, %eax
 	orl	%esi, %edi
 	orl	%eax, %edi
+	testl	%edi, %edi
 	setg	%al
 	retq
 

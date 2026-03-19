@@ -11,8 +11,7 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
-	movl	%edx, %eax
-	orl	$4, %eax
+	leal	4(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
 	andl	$1, %edi
@@ -34,8 +33,7 @@ func0000000000000001:
 	retq
 
 func0000000000000002:
-	movl	%esi, %ecx
-	orl	$32, %ecx
+	leal	32(%rsi), %ecx
 	testb	$1, %dil
 	cmovel	%esi, %ecx
 	notb	%dl

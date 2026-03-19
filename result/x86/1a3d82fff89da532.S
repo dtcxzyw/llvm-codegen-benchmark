@@ -11,8 +11,8 @@ func000000000000003f:
 	movzbl	%dl, %ecx
 	shll	$6, %ecx
 	movzbl	%sil, %eax
-	orl	%edi, %eax
 	orl	%ecx, %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000002f:

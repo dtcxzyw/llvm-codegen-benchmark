@@ -9,8 +9,7 @@ func0000000000000018:
 	retq
 
 func0000000000000019:
-	movl	%edi, %eax
-	orl	$32, %eax
+	leal	32(%rdi), %eax
 	testb	$1, %sil
 	cmovel	%edi, %eax
 	testl	%edx, %edx
@@ -27,8 +26,7 @@ func0000000000000002:
 	retq
 
 func0000000000000003:
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	testb	$1, %sil
 	cmovel	%edi, %eax
 	testl	%edx, %edx

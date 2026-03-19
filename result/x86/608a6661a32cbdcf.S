@@ -9,10 +9,10 @@ func0000000000000007:
 func0000000000000001:
 	andl	$1, %esi
 	shlq	$62, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rcx
 	movabsq	$4611686018427387904, %rax
 	orq	$1073741824, %rax
-	xorq	%rsi, %rax
+	xorq	%rcx, %rax
 	retq
 
 func0000000000000000:

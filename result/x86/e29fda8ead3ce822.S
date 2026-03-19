@@ -1,27 +1,26 @@
 	.att_syntax
 func0000000000000003:
 	andl	$-65536, %edx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	addl	%esi, %esi
 	movzwl	%si, %eax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000000f:
-	leal	(,%rdx,8), %eax
-	andl	$64, %eax
+	leal	(,%rdx,8), %ecx
+	andl	$64, %ecx
 	andl	$16, %esi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000007:
-	movq	%rsi, %rax
 	andl	$16256, %edx
-	orq	%rdi, %rdx
-	andl	$127, %eax
-	shll	$14, %eax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rdi), %rax
+	andl	$127, %esi
+	shll	$14, %esi
+	orq	%rsi, %rax
 	retq
 
 func0000000000000006:
@@ -43,18 +42,18 @@ func0000000000000004:
 	retq
 
 func0000000000000002:
-	leal	(,%rdx,8), %eax
-	andl	$32, %eax
+	leal	(,%rdx,8), %ecx
+	andl	$32, %ecx
 	andl	$14, %esi
-	orq	%rdi, %rsi
-	orq	%rsi, %rax
+	leaq	(%rsi,%rdi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000000b:
 	shll	$24, %edx
 	movabsq	$1095216660480, %rax
 	andq	%rsi, %rax
-	orq	%rdi, %rdx
+	orq	%rdi, %rax
 	orq	%rdx, %rax
 	retq
 
@@ -76,11 +75,10 @@ func0000000000000001:
 	retq
 
 func000000000000000e:
-	movq	%rsi, %rax
 	andl	$15, %edx
 	shll	$7, %edx
-	andl	$2048, %eax
-	orq	%rdi, %rax
+	andl	$2048, %esi
+	leaq	(%rsi,%rdi), %rax
 	orq	%rdx, %rax
 	retq
 

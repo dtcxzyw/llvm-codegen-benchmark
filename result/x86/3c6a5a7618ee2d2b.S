@@ -2,8 +2,8 @@
 func000000000000000f:
 	shrl	$8, %edx
 	andl	$248, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000000c:
@@ -23,7 +23,7 @@ func0000000000000007:
 func000000000000000b:
 	shrl	$4, %edx
 	andl	$13, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 

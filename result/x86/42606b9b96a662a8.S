@@ -4,7 +4,7 @@ func0000000000000007:
 	testq	%rdx, %rdx
 	setne	%al
 	shlq	$60, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

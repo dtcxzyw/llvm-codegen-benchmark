@@ -17,10 +17,10 @@ func000000000000000b:
 
 func000000000000000f:
 	shll	$8, %edx
-	orl	%esi, %edx
-	andl	$269488144, %edx
+	leal	(%rdx,%rsi), %eax
+	andl	$269488144, %eax
 	andl	$-269488145, %edi
-	leal	(%rdi,%rdx), %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000000d:

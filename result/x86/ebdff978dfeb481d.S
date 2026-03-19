@@ -1,15 +1,15 @@
 	.att_syntax
 func000000000000000f:
 	andl	$61440, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzbl	%sil, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000007:
 	andl	$196608, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzbl	%sil, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 

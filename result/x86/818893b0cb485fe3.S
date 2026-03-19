@@ -20,21 +20,21 @@ func000000000000000c:
 	retq
 
 func0000000000000002:
-	leal	(%rdx,%rdx), %eax
-	andb	$-128, %al
+	leal	(%rdx,%rdx), %ecx
+	andb	$-128, %cl
 	notb	%sil
 	andb	$1, %sil
 	shlb	$6, %sil
-	orb	%dil, %al
-	orb	%sil, %al
+	leal	(%rsi,%rdi), %eax
+	orb	%cl, %al
 	retq
 
 func0000000000000003:
-	leal	(,%rdx,4), %eax
-	andb	$12, %al
+	leal	(,%rdx,4), %ecx
+	andb	$12, %cl
 	notb	%sil
 	andb	$1, %sil
-	leal	(%rsi,%rsi), %ecx
+	leal	(%rsi,%rsi), %eax
 	orb	%dil, %al
 	orb	%cl, %al
 	retq

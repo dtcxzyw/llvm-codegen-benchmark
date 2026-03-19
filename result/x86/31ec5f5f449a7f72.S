@@ -3,7 +3,7 @@ func000000000000000f:
 	vcvttss2si	%xmm0, %eax
 	movzbl	%al, %eax
 	shll	$16, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -18,7 +18,7 @@ func000000000000000e:
 	vcvttss2si	%xmm0, %eax
 	movzbl	%al, %eax
 	shll	$11, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

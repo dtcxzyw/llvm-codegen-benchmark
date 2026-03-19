@@ -24,9 +24,8 @@ func0000000000000001:
 	retq
 
 func0000000000000003:
-	movq	%rdi, %rax
-	orq	$127, %rsi
-	orq	$2097151, %rax
-	andq	%rsi, %rax
+	leaq	127(%rsi), %rcx
+	leaq	2097151(%rdi), %rax
+	andq	%rcx, %rax
 	retq
 

@@ -12,7 +12,7 @@ func0000000000000005:
 	shlq	$49, %rsi
 	orq	%rsi, %rax
 	orq	%rdi, %rax
-	orq	$1, %rax
+	incq	%rax
 	retq
 
 func000000000000000c:

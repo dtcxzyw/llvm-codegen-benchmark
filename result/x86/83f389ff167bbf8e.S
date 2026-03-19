@@ -2,33 +2,33 @@
 func000000000000007f:
 	shlq	$49, %rdx
 	shlq	$48, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000063:
 	shlq	$32, %rdx
 	shlq	$40, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000073:
 	shlq	$32, %rdx
 	shlq	$40, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000005b:
 	shlq	$40, %rdx
 	shlq	$32, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000018:
@@ -42,25 +42,25 @@ func0000000000000018:
 func000000000000007b:
 	shlq	$32, %rdx
 	shlq	$40, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000005f:
 	shlq	$48, %rdx
 	shlq	$32, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000077:
 	shlq	$32, %rdx
 	shlq	$48, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000070:
@@ -74,17 +74,17 @@ func0000000000000070:
 func0000000000000072:
 	shlq	$24, %rdx
 	shlq	$48, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000005a:
 	shlq	$48, %rdx
 	shlq	$24, %rsi
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movl	%edi, %eax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000058:

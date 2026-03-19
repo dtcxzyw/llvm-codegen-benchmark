@@ -2,22 +2,22 @@
 func000000000000001f:
 	andl	$2, %edx
 	shll	$7, %edx
-	orl	%esi, %edx
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addl	%edi, %eax
 	retq
 
 func0000000000000007:
 	shll	$10, %edx
 	andl	$1047552, %edx
-	orl	%esi, %edx
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addl	%edi, %eax
 	retq
 
 func0000000000000004:
 	shll	$16, %edx
 	andl	$-16777216, %edx
-	orl	%esi, %edx
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addl	%edi, %eax
 	retq
 
 func000000000000001d:
@@ -36,8 +36,8 @@ func000000000000001b:
 func000000000000001c:
 	andl	$63, %edx
 	shll	$8, %edx
-	orl	%esi, %edx
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addl	%edi, %eax
 	retq
 
 func0000000000000003:

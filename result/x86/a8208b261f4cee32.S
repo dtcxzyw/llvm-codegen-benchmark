@@ -10,9 +10,8 @@ func0000000000000000:
 
 func0000000000000003:
 	andl	$1, %edx
+	leal	(%rsi,%rdx), %ecx
 	leal	4(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq

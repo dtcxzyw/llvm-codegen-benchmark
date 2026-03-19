@@ -1,16 +1,18 @@
 	.att_syntax
 func000000000000001b:
-	movzbl	%sil, %eax
-	orl	%eax, %edi
+	movzbl	%sil, %ecx
+	movl	%ecx, %eax
 	shll	$16, %eax
 	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001f:
-	movzbl	%sil, %eax
-	orl	%eax, %edi
+	movzbl	%sil, %ecx
+	movl	%ecx, %eax
 	shll	$8, %eax
 	orl	%edi, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000018:

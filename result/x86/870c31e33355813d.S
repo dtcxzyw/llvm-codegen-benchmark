@@ -25,13 +25,12 @@ func0000000000000001:
 
 func0000000000000061:
 	notb	%dl
-	movzbl	%dl, %ecx
-	andl	$1, %ecx
-	shll	$4, %ecx
-	leal	32(%rsi,%rcx), %eax
-	movl	%esi, %edx
-	orl	%ecx, %edx
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	shll	$4, %eax
+	leal	(%rsi,%rax), %ecx
+	leal	32(%rsi,%rax), %eax
 	testl	%edi, %edi
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 

@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000001:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovneq	%rsi, %rax
+	cmovneq	%rcx, %rax
 	retq
 
 func0000000000000000:

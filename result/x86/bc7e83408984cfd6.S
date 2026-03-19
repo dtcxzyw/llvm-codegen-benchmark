@@ -14,7 +14,7 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	orl	$1, %edx
+	incl	%edx
 	cmpl	%edx, %esi
 	sete	%al
 	andb	%dil, %al

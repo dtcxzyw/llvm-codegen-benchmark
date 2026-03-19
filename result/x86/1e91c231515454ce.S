@@ -3,8 +3,8 @@ func000000000000000f:
 	andl	$1073741823, %edx
 	shlq	$4, %rdx
 	movl	%esi, %eax
-	orq	%rdi, %rax
 	orq	%rdx, %rax
+	orq	%rdi, %rax
 	retq
 
 func0000000000000007:
@@ -35,7 +35,7 @@ func0000000000000001:
 	movzwl	%dx, %ecx
 	shlq	$24, %rcx
 	movl	%esi, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
+	orq	%rdi, %rax
 	retq
 

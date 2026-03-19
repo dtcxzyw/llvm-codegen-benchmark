@@ -4,8 +4,8 @@ func000000000000007f:
 	movl	$255, %eax
 	cmovbl	%edx, %eax
 	shll	$16, %eax
+	orl	%edi, %eax
 	shll	$8, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -14,8 +14,8 @@ func000000000000006f:
 	movl	$255, %eax
 	cmovbl	%edx, %eax
 	shll	$24, %eax
+	orl	%edi, %eax
 	shll	$8, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -24,8 +24,8 @@ func000000000000002f:
 	movl	$255, %eax
 	cmovbl	%edx, %eax
 	shll	$24, %eax
+	orl	%edi, %eax
 	shll	$8, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -34,8 +34,8 @@ func000000000000003f:
 	movl	$255, %eax
 	cmovbl	%edx, %eax
 	shll	$16, %eax
+	orl	%edi, %eax
 	shll	$8, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 

@@ -34,7 +34,7 @@ func000000000000003c:
 func0000000000000038:
 	movzbl	%dl, %eax
 	shlq	$40, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	shlq	$8, %rax
 	retq

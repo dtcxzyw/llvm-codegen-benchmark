@@ -1,19 +1,19 @@
 	.att_syntax
 func0000000000000005:
-	movslq	%esi, %rax
-	orq	$1, %rdi
-	imulq	%rdi, %rax
+	movslq	%esi, %rcx
+	leaq	1(%rdi), %rax
+	imulq	%rcx, %rax
 	retq
 
 func0000000000000007:
-	movslq	%esi, %rax
-	orq	$7, %rdi
-	imulq	%rdi, %rax
+	movslq	%esi, %rcx
+	leaq	7(%rdi), %rax
+	imulq	%rcx, %rax
 	retq
 
 func0000000000000004:
-	movslq	%esi, %rax
-	orq	$1, %rdi
-	imulq	%rdi, %rax
+	movslq	%esi, %rcx
+	leaq	1(%rdi), %rax
+	imulq	%rcx, %rax
 	retq
 

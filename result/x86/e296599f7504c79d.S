@@ -4,8 +4,8 @@ func000000000000000f:
 	movl	$5, %ecx
 	sbbq	$0, %rcx
 	movl	%esi, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
+	orq	%rdi, %rax
 	retq
 
 func000000000000000b:

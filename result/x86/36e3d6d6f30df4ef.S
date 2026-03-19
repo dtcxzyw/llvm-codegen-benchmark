@@ -11,26 +11,23 @@ func000000000000000c:
 func0000000000000002:
 	leal	(,%rdx,4), %ecx
 	orl	%esi, %ecx
-	movl	%ecx, %eax
-	orl	$3, %eax
+	leal	3(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
 
 func000000000000000f:
 	shll	$16, %edx
+	leal	(%rdx,%rsi), %ecx
 	leal	-2147483648(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
 
 func0000000000000003:
 	shll	$24, %edx
+	leal	(%rsi,%rdx), %ecx
 	leal	262144(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

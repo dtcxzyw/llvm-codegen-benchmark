@@ -8,14 +8,14 @@ func0000000000000000:
 
 func0000000000000007:
 	andl	$32, %esi
-	orl	%edi, %esi
-	leal	(%rsi,%rsi), %eax
+	leal	(%rsi,%rdi), %eax
+	addl	%eax, %eax
 	retq
 
 func0000000000000006:
 	andl	$1, %esi
-	orl	%edi, %esi
-	leal	(%rsi,%rsi), %eax
+	leal	(%rsi,%rdi), %eax
+	addl	%eax, %eax
 	retq
 
 func0000000000000002:

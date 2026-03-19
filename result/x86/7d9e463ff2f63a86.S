@@ -13,7 +13,7 @@ func000000000000003f:
 
 func000000000000003c:
 	shll	$4, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 

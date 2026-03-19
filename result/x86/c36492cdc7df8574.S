@@ -1,15 +1,13 @@
 	.att_syntax
 func0000000000000001:
-	movl	%edx, %eax
 	cmpl	%edx, %esi
-	cmoval	%esi, %eax
-	orq	%rdi, %rax
+	cmoval	%esi, %edx
+	leaq	(%rdx,%rdi), %rax
 	retq
 
 func0000000000000005:
-	movl	%edx, %eax
 	cmpl	%edx, %esi
-	cmoval	%esi, %eax
-	orq	%rdi, %rax
+	cmoval	%esi, %edx
+	leaq	(%rdx,%rdi), %rax
 	retq
 

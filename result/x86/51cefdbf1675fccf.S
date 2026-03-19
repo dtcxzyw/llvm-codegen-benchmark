@@ -28,18 +28,16 @@ func0000000000000018:
 
 func000000000000006a:
 	andl	$1, %edx
+	leal	(%rsi,%rdx), %ecx
 	leal	2(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	testl	%edi, %edi
 	cmovlel	%ecx, %eax
 	retq
 
 func0000000000000061:
 	andl	$1, %edx
+	leal	(%rsi,%rdx), %ecx
 	leal	2(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	testl	%edi, %edi
 	cmovnel	%ecx, %eax
 	retq

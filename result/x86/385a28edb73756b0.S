@@ -8,8 +8,8 @@ func0000000000000004:
 
 func000000000000000f:
 	shlq	$16, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rcx
 	movslq	%esi, %rax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 

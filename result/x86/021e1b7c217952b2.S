@@ -1,15 +1,15 @@
 	.att_syntax
 func0000000000000020:
-	orl	%edx, %esi
-	subl	%edi, %esi
-	leal	-1640531527(%rsi), %eax
+	leal	(%rsi,%rdx), %eax
+	subl	%edi, %eax
+	addl	$-1640531527, %eax
 	shrl	$8, %eax
 	retq
 
 func000000000000002a:
-	orl	%edx, %esi
-	subl	%edi, %esi
-	leal	-16(%rsi), %eax
+	leal	(%rsi,%rdx), %eax
+	subl	%edi, %eax
+	addl	$-16, %eax
 	shrl	%eax
 	retq
 

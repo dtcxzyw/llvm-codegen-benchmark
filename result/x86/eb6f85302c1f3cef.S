@@ -1,7 +1,6 @@
 	.att_syntax
 func0000000000000021:
-	movq	%rsi, %rax
-	orq	$12, %rax
+	leaq	12(%rsi), %rax
 	testb	$16, %dl
 	cmovneq	%rdi, %rax
 	retq

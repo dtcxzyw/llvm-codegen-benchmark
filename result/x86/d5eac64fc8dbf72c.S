@@ -5,6 +5,6 @@ func0000000000000001:
 	andq	%rcx, %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
-	orq	$1, %rax
+	incq	%rax
 	retq
 

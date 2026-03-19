@@ -25,8 +25,8 @@ func000000000000001a:
 	cmpb	$2, %dl
 	sete	%al
 	shll	$31, %eax
+	orl	%edi, %eax
 	shll	$24, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -44,8 +44,8 @@ func0000000000000012:
 	testb	%dl, %dl
 	setne	%cl
 	shll	$5, %ecx
+	orl	%edi, %ecx
 	leal	(,%rsi,4), %eax
-	orl	%edi, %eax
 	orl	%ecx, %eax
 	retq
 

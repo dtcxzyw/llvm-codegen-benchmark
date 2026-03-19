@@ -13,9 +13,9 @@ func0000000000000000:
 func0000000000000003:
 	shrb	$6, %dl
 	andb	$1, %dl
-	orb	%dil, %dl
+	leal	(%rdx,%rdi), %ecx
 	andb	$1, %sil
 	leal	(,%rsi,4), %eax
-	orb	%dl, %al
+	orb	%cl, %al
 	retq
 

@@ -6,9 +6,9 @@ func0000000000000000:
 	retq
 
 func0000000000000004:
-	orq	%rsi, %rdi
 	movabsq	$-4294967296, %rax
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 
 func0000000000000007:

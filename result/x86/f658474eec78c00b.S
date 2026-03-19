@@ -19,17 +19,15 @@ func0000000000000002:
 
 func0000000000000043:
 	orl	%edx, %esi
-	movl	%esi, %eax
-	orl	$127, %eax
+	leal	127(%rsi), %eax
 	testl	%edi, %edi
 	cmovnel	%esi, %eax
 	orl	$1048448, %eax
 	retq
 
 func00000000000000d4:
+	leal	(%rsi,%rdx), %ecx
 	leal	201326592(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	cmpl	$25, %edi
 	cmovll	%ecx, %eax
 	orl	$512, %eax

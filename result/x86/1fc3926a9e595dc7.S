@@ -9,8 +9,7 @@ func0000000000000000:
 
 func0000000000000003:
 	movzbl	%sil, %ecx
-	movl	%ecx, %eax
-	orl	$10, %eax
+	leal	10(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

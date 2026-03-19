@@ -9,14 +9,13 @@ func0000000000000000:
 func0000000000000003:
 	movabsq	$-1099511627776, %rax
 	andq	%rdx, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
 func0000000000000002:
-	movq	%rdi, %rax
 	andq	$-256, %rdx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	orq	%rdi, %rax
 	retq
 

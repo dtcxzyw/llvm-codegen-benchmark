@@ -79,11 +79,13 @@ func0000000000000028:
 
 func0000000000000026:
 	orl	%esi, %edi
+	testl	%edi, %edi
 	setle	%al
 	retq
 
 func000000000000002a:
 	orl	%esi, %edi
+	testl	%edi, %edi
 	setg	%al
 	retq
 

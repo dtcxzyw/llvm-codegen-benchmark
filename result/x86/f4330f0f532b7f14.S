@@ -7,22 +7,19 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	movq	%rdi, %rax
-	orq	$8388608, %rax
+	leaq	8388608(%rdi), %rax
 	testl	%esi, %esi
 	cmoveq	%rdi, %rax
 	retq
 
 func0000000000000024:
-	movq	%rdi, %rax
-	orq	$8388608, %rax
+	leaq	8388608(%rdi), %rax
 	cmpl	$8388608, %esi
 	cmovbq	%rdi, %rax
 	retq
 
 func0000000000000034:
-	movq	%rdi, %rax
-	orq	$-128, %rax
+	leaq	-128(%rdi), %rax
 	cmpl	$64, %esi
 	cmovbq	%rdi, %rax
 	retq
@@ -42,8 +39,7 @@ func000000000000000a:
 	retq
 
 func0000000000000026:
-	movq	%rdi, %rax
-	orq	$2, %rax
+	leaq	2(%rdi), %rax
 	testl	%esi, %esi
 	cmovsq	%rdi, %rax
 	retq

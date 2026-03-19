@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000001:
-	orl	$1, %edi
+	incl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm0
 	retq
 

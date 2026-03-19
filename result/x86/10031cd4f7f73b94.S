@@ -1,22 +1,22 @@
 	.att_syntax
 func0000000000000004:
 	andl	$-16, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %eax
 	andl	$-4, %edi
-	leal	(%rdi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func0000000000000005:
 	andl	$-16, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %eax
 	andl	$-4, %edi
-	leal	(%rdi,%rdx), %eax
+	addl	%edi, %eax
 	retq
 
 func0000000000000007:
 	andl	$63488, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %eax
 	andl	$2016, %esi
-	leal	(%rsi,%rdx), %eax
+	addl	%esi, %eax
 	retq
 

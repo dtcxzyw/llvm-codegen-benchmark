@@ -43,7 +43,7 @@ func0000000000000006:
 func000000000000001d:
 	movzbl	%dl, %eax
 	shll	$16, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

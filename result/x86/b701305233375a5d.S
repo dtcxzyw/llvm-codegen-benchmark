@@ -1,8 +1,8 @@
 	.att_syntax
 func000000000000003f:
 	shll	$8, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000000b:
@@ -19,8 +19,8 @@ func000000000000000f:
 
 func000000000000002b:
 	shll	$24, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000002f:
@@ -42,14 +42,14 @@ func000000000000003b:
 
 func000000000000003c:
 	shll	$8, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000002c:
 	shll	$16, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000001f:

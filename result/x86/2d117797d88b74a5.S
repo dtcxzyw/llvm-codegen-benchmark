@@ -4,7 +4,7 @@ func000000000000001f:
 	retq
 
 func000000000000001e:
-	orq	$1, %rsi
+	incq	%rsi
 	imulq	$152, %rsi, %rax
 	leaq	808(%rdi,%rax), %rax
 	retq

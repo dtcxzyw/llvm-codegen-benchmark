@@ -32,7 +32,7 @@ func0000000000000001:
 	movl	$6, %eax
 	cmovel	%ecx, %eax
 	andb	$7, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 

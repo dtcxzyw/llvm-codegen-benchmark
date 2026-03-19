@@ -4,7 +4,7 @@ func0000000000000007:
 	setne	%al
 	addb	%al, %al
 	andb	$-5, %sil
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 

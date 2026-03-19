@@ -1,10 +1,10 @@
 	.att_syntax
 func0000000000000003:
 	andl	$61440, %esi
-	orl	$1048576, %edi
+	leal	1048576(%rdi), %ecx
 	cmpl	$40960, %esi
 	movl	$34603008, %eax
-	cmovnel	%edi, %eax
+	cmovnel	%ecx, %eax
 	retq
 
 func0000000000000002:

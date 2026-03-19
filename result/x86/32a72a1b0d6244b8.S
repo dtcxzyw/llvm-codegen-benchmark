@@ -1,10 +1,10 @@
 	.att_syntax
 func000000000000000e:
-	orl	%edx, %esi
-	orl	%edi, %esi
-	movl	%esi, %eax
+	leal	(%rsi,%rdx), %ecx
+	orl	%edi, %ecx
+	movl	%ecx, %eax
 	shll	$16, %eax
-	addl	%esi, %eax
+	addl	%ecx, %eax
 	retq
 
 func0000000000000000:

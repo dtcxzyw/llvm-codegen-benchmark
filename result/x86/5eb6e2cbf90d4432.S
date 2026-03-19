@@ -11,21 +11,21 @@ func0000000000000004:
 	retq
 
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$1, %edx
-	sete	%al
-	shlq	$62, %rax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	sete	%cl
+	shlq	$62, %rcx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000006:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$7, %edx
-	sete	%al
-	shll	$6, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	sete	%cl
+	shll	$6, %ecx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000002b:
@@ -33,9 +33,9 @@ func000000000000002b:
 	testl	%edx, %edx
 	setns	%cl
 	shlq	$40, %rcx
-	orq	%rsi, %rdi
 	movabsq	$-1099511627776, %rax
 	addq	%rdi, %rax
+	addq	%rsi, %rax
 	addq	%rcx, %rax
 	retq
 

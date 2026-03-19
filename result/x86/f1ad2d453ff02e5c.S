@@ -50,9 +50,9 @@ func0000000000000007:
 	testb	%dl, %dl
 	sete	%cl
 	addb	%cl, %cl
+	orb	%dil, %cl
 	andb	$1, %sil
 	leal	(,%rsi,4), %eax
-	orb	%dil, %al
 	orb	%cl, %al
 	retq
 

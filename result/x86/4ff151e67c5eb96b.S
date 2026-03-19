@@ -4,9 +4,9 @@ func0000000000000023:
 	shrq	$32, %rdx
 	setne	%al
 	shll	$5, %eax
+	orl	%edi, %eax
 	andl	$1, %esi
 	shll	$4, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 

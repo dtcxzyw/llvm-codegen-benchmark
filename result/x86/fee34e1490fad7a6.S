@@ -18,8 +18,7 @@ func0000000000000009:
 	retq
 
 func0000000000000043:
-	movl	%edi, %eax
-	orl	$128, %eax
+	leal	128(%rdi), %eax
 	testl	%edx, %edx
 	cmovel	%edi, %eax
 	andl	$512, %esi
@@ -36,8 +35,7 @@ func0000000000000003:
 	retq
 
 func0000000000000042:
-	movl	%edi, %eax
-	orl	$3072, %eax
+	leal	3072(%rdi), %eax
 	testl	%edx, %edx
 	cmovel	%edi, %eax
 	andl	$2048, %esi

@@ -3,10 +3,10 @@ func000000000000000f:
 	shll	$16, %edx
 	andl	$1, %esi
 	shll	$24, %esi
-	orl	%edx, %esi
+	leal	(%rsi,%rdx), %eax
 	andl	$1, %edi
 	shll	$8, %edi
-	leal	(%rdi,%rsi), %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000003:

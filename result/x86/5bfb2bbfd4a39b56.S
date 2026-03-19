@@ -3,8 +3,8 @@ func000000000000000f:
 	movzbl	%dl, %eax
 	shll	$6, %eax
 	andl	$61440, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func000000000000000b:
@@ -18,8 +18,8 @@ func000000000000001f:
 	movzbl	%dl, %eax
 	shll	$20, %eax
 	andl	$-32505857, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000003:

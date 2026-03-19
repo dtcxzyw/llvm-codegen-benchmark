@@ -15,9 +15,9 @@ func0000000000000001:
 
 func0000000000000078:
 	andb	$16, %dl
-	orb	%dil, %sil
-	orb	%dl, %sil
-	cmpb	$4, %sil
+	orb	%sil, %dl
+	orb	%dil, %dl
+	cmpb	$4, %dl
 	setae	%al
 	retq
 

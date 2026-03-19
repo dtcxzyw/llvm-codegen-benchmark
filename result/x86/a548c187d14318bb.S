@@ -27,20 +27,18 @@ func0000000000000006:
 	retq
 
 func0000000000000007:
-	movzbl	%dl, %ecx
-	leal	8(%rsi,%rcx), %eax
-	movl	%esi, %edx
-	orl	%ecx, %edx
+	movzbl	%dl, %eax
+	leal	(%rsi,%rax), %ecx
+	leal	8(%rsi,%rax), %eax
 	testb	$1, %dil
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func0000000000000003:
-	movzbl	%dl, %ecx
-	leal	-16777216(%rsi,%rcx), %eax
-	movl	%esi, %edx
-	orl	%ecx, %edx
+	movzbl	%dl, %eax
+	leal	(%rsi,%rax), %ecx
+	leal	-16777216(%rsi,%rax), %eax
 	testb	$1, %dil
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 

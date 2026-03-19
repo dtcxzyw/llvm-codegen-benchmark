@@ -1,14 +1,14 @@
 	.att_syntax
 func000000000000001e:
-	leal	(%rsi,%rdx), %eax
-	orl	$16711680, %edi
-	imull	%edi, %eax
+	leal	(%rsi,%rdx), %ecx
+	leal	16711680(%rdi), %eax
+	imull	%ecx, %eax
 	retq
 
 func0000000000000010:
-	orl	$8, %edx
+	leal	8(%rdx), %ecx
 	leal	(%rdi,%rsi), %eax
-	imull	%edx, %eax
+	imull	%ecx, %eax
 	retq
 
 func0000000000000000:

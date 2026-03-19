@@ -18,31 +18,31 @@ func0000000000000064:
 	retq
 
 func0000000000000068:
-	orl	$1, %esi
+	incl	%esi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
 
 func0000000000000046:
-	orl	$1, %esi
+	incl	%esi
 	cmpq	%rsi, %rdi
 	setl	%al
 	retq
 
 func000000000000006a:
-	orl	$1, %esi
+	incl	%esi
 	cmpq	%rsi, %rdi
 	setg	%al
 	retq
 
 func0000000000000054:
-	orl	$1, %esi
+	incl	%esi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
 
 func0000000000000048:
-	orl	$1, %esi
+	incl	%esi
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq

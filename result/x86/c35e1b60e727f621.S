@@ -42,8 +42,7 @@ func00000000000000f4:
 	retq
 
 func0000000000000086:
-	movl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rsi,%rdx), %eax
 	subl	%edi, %eax
 	shrl	$31, %eax
 	retq

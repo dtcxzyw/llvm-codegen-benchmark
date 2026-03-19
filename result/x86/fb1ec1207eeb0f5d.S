@@ -20,9 +20,9 @@ func0000000000000001:
 	retq
 
 func0000000000000004:
-	orl	$246439936, %esi
+	leal	246439936(%rsi), %ecx
 	movabsq	$-17592454479872, %rax
 	andq	%rdi, %rax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	retq
 

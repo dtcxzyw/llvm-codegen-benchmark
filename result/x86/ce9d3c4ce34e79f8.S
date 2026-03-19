@@ -7,7 +7,7 @@ func0000000000000007:
 
 func000000000000000c:
 	movl	%edx, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	orq	$16, %rax
 	retq
@@ -28,7 +28,7 @@ func0000000000000001:
 
 func0000000000000003:
 	movl	%edx, %ecx
-	orq	%rsi, %rdi
+	orq	%rsi, %rcx
 	orq	%rdi, %rcx
 	movabsq	$4611686018427387904, %rax
 	orq	%rcx, %rax
@@ -36,7 +36,7 @@ func0000000000000003:
 
 func0000000000000004:
 	movl	%edx, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	orq	$2, %rax
 	retq

@@ -15,7 +15,7 @@ func0000000000000024:
 	retq
 
 func0000000000000026:
-	orq	$1, %rdx
+	incq	%rdx
 	testb	$1, %dil
 	cmoveq	%rsi, %rdx
 	cmpq	$2, %rdx

@@ -1,11 +1,11 @@
 	.att_syntax
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpl	$55296, %edx
-	sete	%al
-	shll	$7, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	sete	%cl
+	shll	$7, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	xorl	$42, %eax
 	retq
 

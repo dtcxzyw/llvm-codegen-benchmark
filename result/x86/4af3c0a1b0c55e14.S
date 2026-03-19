@@ -11,14 +11,13 @@ func0000000000000008:
 	retq
 
 func000000000000000b:
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	testl	%edx, %edx
-	sete	%cl
-	leal	2(%rsi,%rcx), %eax
-	movl	%esi, %edx
-	orl	%ecx, %edx
+	sete	%al
+	leal	(%rsi,%rax), %ecx
+	leal	2(%rsi,%rax), %eax
 	testb	$1, %dil
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func0000000000000050:

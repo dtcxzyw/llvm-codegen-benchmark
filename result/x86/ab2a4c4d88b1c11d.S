@@ -10,9 +10,9 @@ func0000000000000001:
 
 func0000000000000021:
 	notl	%edx
-	orl	%esi, %edi
+	leal	(%rdi,%rsi), %ecx
 	xorl	%eax, %eax
 	testb	$3, %dl
-	cmovel	%edi, %eax
+	cmovel	%ecx, %eax
 	retq
 

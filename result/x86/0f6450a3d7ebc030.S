@@ -5,8 +5,7 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	movq	%rsi, %rax
-	orq	$8, %rax
+	leaq	8(%rsi), %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	andq	$-49, %rax

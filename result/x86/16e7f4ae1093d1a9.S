@@ -1,16 +1,14 @@
 	.att_syntax
 func0000000000000009:
-	movl	%edi, %eax
 	cmpl	$16777216, %edx
-	cmovael	%esi, %eax
-	orl	$4, %eax
+	cmovael	%esi, %edi
+	leal	4(%rdi), %eax
 	retq
 
 func0000000000000003:
-	movl	%edi, %eax
 	testl	%edx, %edx
-	cmovnel	%esi, %eax
-	orl	$4, %eax
+	cmovnel	%esi, %edi
+	leal	4(%rdi), %eax
 	retq
 
 func0000000000000002:
@@ -35,10 +33,9 @@ func0000000000000030:
 	retq
 
 func0000000000000019:
-	movl	%edi, %eax
 	cmpl	$-1, %edx
-	cmovel	%esi, %eax
-	orl	$32768, %eax
+	cmovel	%esi, %edi
+	leal	32768(%rdi), %eax
 	retq
 
 func0000000000000008:
@@ -49,10 +46,9 @@ func0000000000000008:
 	retq
 
 func0000000000000015:
-	movl	%edi, %eax
 	cmpl	$5, %edx
-	cmovll	%esi, %eax
-	orl	$8, %eax
+	cmovll	%esi, %edi
+	leal	8(%rdi), %eax
 	retq
 
 func000000000000000c:
@@ -63,30 +59,26 @@ func000000000000000c:
 	retq
 
 func0000000000000031:
-	movl	%edi, %eax
 	cmpl	$256, %edx
-	cmovbl	%esi, %eax
-	orl	$4, %eax
+	cmovbl	%esi, %edi
+	leal	4(%rdi), %eax
 	retq
 
 func0000000000000011:
-	movl	%edi, %eax
 	cmpl	$256, %edx
-	cmovbl	%esi, %eax
-	orl	$4, %eax
+	cmovbl	%esi, %edi
+	leal	4(%rdi), %eax
 	retq
 
 func0000000000000029:
-	movl	%edi, %eax
 	cmpl	$4194304, %edx
-	cmovael	%esi, %eax
-	orl	$4, %eax
+	cmovael	%esi, %edi
+	leal	4(%rdi), %eax
 	retq
 
 func000000000000000d:
-	movl	%edi, %eax
 	cmpl	$3, %edx
-	cmovgel	%esi, %eax
-	orl	$8, %eax
+	cmovgel	%esi, %edi
+	leal	8(%rdi), %eax
 	retq
 

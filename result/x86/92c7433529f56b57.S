@@ -7,14 +7,14 @@ func000000000000000b:
 
 func000000000000000e:
 	movzwl	%dx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	orl	$1, %eax
 	retq
 
 func000000000000000c:
 	movzwl	%dx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	orl	$1052672, %eax
 	retq
@@ -27,14 +27,14 @@ func0000000000000007:
 
 func0000000000000006:
 	movzwl	%dx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	orl	$-2080374784, %eax
 	retq
 
 func000000000000000d:
 	movzwl	%dx, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	orl	$3145776, %eax
 	retq

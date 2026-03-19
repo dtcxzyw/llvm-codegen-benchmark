@@ -72,6 +72,7 @@ func0000000000000034:
 
 func000000000000002a:
 	orl	%edx, %esi
+	testl	%esi, %esi
 	setg	%al
 	andb	%dil, %al
 	retq

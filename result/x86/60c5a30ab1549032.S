@@ -13,10 +13,9 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
-	movl	%esi, %eax
-	shrl	%eax
-	andl	$2046, %eax
-	orl	%edi, %eax
+	shrl	%esi
+	andl	$2046, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000002:

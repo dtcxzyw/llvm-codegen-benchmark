@@ -3,7 +3,7 @@ func0000000000000003:
 	leal	(%rsi,%rsi), %eax
 	andb	$-128, %al
 	orb	%dil, %al
-	orb	$1, %al
+	incb	%al
 	retq
 
 func0000000000000002:

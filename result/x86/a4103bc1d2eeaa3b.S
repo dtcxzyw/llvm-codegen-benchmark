@@ -18,8 +18,8 @@ func000000000000001d:
 	retq
 
 func0000000000000014:
-	orl	%edx, %esi
-	notl	%esi
-	leal	(%rsi,%rdi), %eax
+	leal	(%rsi,%rdx), %eax
+	notl	%eax
+	addl	%edi, %eax
 	retq
 

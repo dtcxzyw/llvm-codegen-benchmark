@@ -16,7 +16,7 @@ func0000000000000007:
 func000000000000000c:
 	shrl	$7, %edx
 	andl	$15, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 

@@ -23,8 +23,8 @@ func0000000000000033:
 func000000000000001b:
 	movzwl	%dx, %ecx
 	shll	$8, %ecx
+	orl	%edi, %ecx
 	movzbl	%sil, %eax
-	orl	%edi, %eax
 	orl	%ecx, %eax
 	retq
 

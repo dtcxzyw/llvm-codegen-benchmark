@@ -27,7 +27,7 @@ func000000000000001a:
 func0000000000000016:
 	shlq	$4, %rsi
 	shlq	$12, %rdx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 

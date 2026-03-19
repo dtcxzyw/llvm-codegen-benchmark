@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000021:
-	orl	$1, %edx
+	incl	%edx
 	testb	$1, %dil
 	cmovel	%esi, %edx
 	testl	$511, %edx

@@ -28,10 +28,9 @@ func0000000000000000:
 	retq
 
 func0000000000000007:
-	movl	%esi, %eax
-	andl	$7, %eax
-	shll	$7, %eax
-	orl	%edi, %eax
+	andl	$7, %esi
+	shll	$7, %esi
+	leal	(%rsi,%rdi), %eax
 	xorl	$16384, %eax
 	retq
 

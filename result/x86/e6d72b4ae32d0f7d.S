@@ -1,10 +1,10 @@
 	.att_syntax
 func000000000000000f:
 	shlq	$8, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rax
 	andl	$1, %esi
-	subq	%rsi, %rdx
-	leaq	4(%rdx), %rax
+	subq	%rsi, %rax
+	addq	$4, %rax
 	retq
 
 func000000000000000c:
@@ -26,12 +26,11 @@ func0000000000000000:
 	retq
 
 func000000000000000b:
-	movl	%esi, %eax
 	shlq	$48, %rdx
-	orq	%rdi, %rdx
-	andl	$1, %eax
-	shlq	$47, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rdi), %rax
+	andl	$1, %esi
+	shlq	$47, %rsi
+	orq	%rsi, %rax
 	retq
 
 func0000000000000003:
@@ -43,27 +42,24 @@ func0000000000000003:
 	retq
 
 func000000000000000e:
-	movl	%esi, %eax
 	shlq	$32, %rdx
-	orq	%rdi, %rdx
-	shlq	$63, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rdi), %rax
+	shlq	$63, %rsi
+	orq	%rsi, %rax
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
 	shlq	$60, %rdx
-	orq	%rdi, %rdx
-	shlq	$63, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rdi), %rax
+	shlq	$63, %rsi
+	orq	%rsi, %rax
 	retq
 
 func0000000000000001:
-	movl	%esi, %eax
 	shlq	$32, %rdx
 	orq	%rdi, %rdx
-	andl	$1, %eax
-	shll	$29, %eax
-	orq	%rdx, %rax
+	andl	$1, %esi
+	shll	$29, %esi
+	leaq	(%rsi,%rdx), %rax
 	retq
 

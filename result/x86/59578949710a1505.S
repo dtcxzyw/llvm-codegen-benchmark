@@ -5,6 +5,6 @@ func0000000000000003:
 	movabsq	$9218868437227405312, %rcx
 	testq	%rcx, %rdx
 	cmovneq	%rdi, %rax
-	orq	$1, %rax
+	incq	%rax
 	retq
 

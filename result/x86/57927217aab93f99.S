@@ -9,8 +9,7 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	movq	%rdi, %rax
-	orq	$16, %rax
+	leaq	16(%rdi), %rax
 	testb	$1, %dl
 	cmoveq	%rdi, %rax
 	testb	$1, %sil

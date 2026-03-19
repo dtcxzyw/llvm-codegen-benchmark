@@ -10,24 +10,24 @@ func000000000000003f:
 func000000000000001b:
 	movzbl	%dl, %ecx
 	shlq	$32, %rcx
+	orq	%rdi, %rcx
 	movl	%esi, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 
 func000000000000003b:
 	movzbl	%dl, %ecx
 	shlq	$32, %rcx
+	orq	%rdi, %rcx
 	movl	%esi, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 
 func000000000000001f:
 	movzbl	%dl, %ecx
 	shlq	$32, %rcx
+	orq	%rdi, %rcx
 	movl	%esi, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

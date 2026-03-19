@@ -8,11 +8,11 @@ func000000000000002f:
 
 func0000000000000037:
 	shlq	$40, %rdx
-	orq	%rdi, %rdx
+	leaq	(%rdx,%rdi), %rax
 	movl	%esi, %ecx
+	orq	%rax, %rcx
 	movabsq	$94489280512, %rax
 	orq	%rcx, %rax
-	orq	%rdx, %rax
 	retq
 
 func000000000000003f:
@@ -42,20 +42,20 @@ func0000000000000020:
 
 func0000000000000034:
 	shlq	$24, %rdx
-	orq	%rdi, %rdx
-	movl	%esi, %ecx
+	leaq	(%rdx,%rdi), %rcx
+	movl	%esi, %edx
 	movabsq	$4611686018427387904, %rax
-	orq	%rcx, %rax
 	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000024:
 	shlq	$48, %rdx
-	orq	%rdi, %rdx
-	movl	%esi, %ecx
+	leaq	(%rdx,%rdi), %rcx
+	movl	%esi, %edx
 	movabsq	$4611686018427387904, %rax
-	orq	%rcx, %rax
 	orq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func000000000000002b:

@@ -9,7 +9,7 @@ func0000000000000000:
 func0000000000000003:
 	shlb	$4, %dl
 	movzbl	%dl, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

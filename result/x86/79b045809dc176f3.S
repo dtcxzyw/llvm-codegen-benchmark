@@ -8,8 +8,8 @@ func0000000000000001:
 
 func000000000000000b:
 	shlb	$6, %dl
-	orb	%sil, %dl
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addb	%dil, %al
 	addb	$-48, %al
 	retq
 

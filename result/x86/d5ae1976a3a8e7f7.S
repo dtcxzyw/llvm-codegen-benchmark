@@ -10,7 +10,7 @@ func00000000000000e4:
 
 func0000000000000024:
 	leal	-29(%rdi), %eax
-	orb	$1, %dil
+	incb	%dil
 	testb	$-8, %sil
 	movzbl	%dil, %ecx
 	movzbl	%al, %eax

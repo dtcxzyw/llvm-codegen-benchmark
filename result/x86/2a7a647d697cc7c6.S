@@ -1,19 +1,19 @@
 	.att_syntax
 func0000000000000003:
 	movzbl	%dl, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
 func0000000000000007:
 	movzbl	%dl, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
 func0000000000000002:
 	movzbl	%dl, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
@@ -31,7 +31,7 @@ func0000000000000004:
 
 func0000000000000006:
 	movzbl	%dl, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

@@ -1,8 +1,8 @@
 	.att_syntax
 func000000000000000e:
-	leaq	65536(%rdx), %rax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	leaq	65536(%rdx), %rcx
+	leaq	(%rdi,%rsi), %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000007:

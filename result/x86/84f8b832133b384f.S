@@ -1,14 +1,14 @@
 	.att_syntax
 func0000000000000007:
 	andl	$64512, %edx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000005:
 	andl	$2031616, %edx
-	orq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
+	leaq	(%rdx,%rsi), %rax
+	addq	%rdi, %rax
 	retq
 
 func0000000000000004:

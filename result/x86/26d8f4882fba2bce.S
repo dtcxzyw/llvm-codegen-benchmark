@@ -9,10 +9,10 @@ func000000000000000c:
 	retq
 
 func0000000000000021:
-	orq	%rsi, %rdi
+	leaq	(%rdi,%rsi), %rcx
 	xorl	%eax, %eax
-	cmpq	$1022, %rdi
-	cmoveq	%rdi, %rax
+	cmpq	$1022, %rcx
+	cmoveq	%rcx, %rax
 	retq
 
 func0000000000000001:

@@ -6,14 +6,14 @@ func000000000000001c:
 
 func000000000000007c:
 	shll	$8, %edx
-	orl	%edi, %edx
-	leal	(%rsi,%rdx), %eax
+	leal	(%rdx,%rdi), %eax
+	addl	%esi, %eax
 	retq
 
 func0000000000000064:
 	shll	$8, %edx
-	orl	%edi, %edx
-	leal	(%rsi,%rdx), %eax
+	leal	(%rdx,%rdi), %eax
+	addl	%esi, %eax
 	retq
 
 func0000000000000074:
@@ -29,7 +29,7 @@ func0000000000000018:
 
 func0000000000000065:
 	shll	$8, %edx
-	orl	%edi, %edx
-	leal	(%rsi,%rdx), %eax
+	leal	(%rdx,%rdi), %eax
+	addl	%esi, %eax
 	retq
 

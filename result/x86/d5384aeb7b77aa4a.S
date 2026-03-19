@@ -1,9 +1,8 @@
 	.att_syntax
 func0000000000000001:
-	movl	%esi, %eax
-	shrb	%al
-	andb	$2, %al
-	orb	%dil, %al
+	shrb	%sil
+	andb	$2, %sil
+	leal	(%rsi,%rdi), %eax
 	xorb	$2, %al
 	retq
 

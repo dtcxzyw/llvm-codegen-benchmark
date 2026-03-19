@@ -10,10 +10,10 @@ func0000000000000007:
 func0000000000000003:
 	andl	$31, %edx
 	shll	$6, %edx
-	orl	%esi, %edx
+	leal	(%rdx,%rsi), %ecx
 	testb	$1, %dil
 	movl	$65533, %eax
-	cmovel	%edx, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func0000000000000001:

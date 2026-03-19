@@ -20,12 +20,14 @@ func00000000000000ca:
 func000000000000002a:
 	imull	%edx, %esi
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setg	%al
 	retq
 
 func000000000000006a:
 	imull	%edx, %esi
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setg	%al
 	retq
 

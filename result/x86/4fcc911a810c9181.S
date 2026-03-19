@@ -12,13 +12,13 @@ func0000000000000007:
 
 func0000000000000006:
 	testl	%edx, %edx
-	setne	%al
-	shlb	$6, %al
+	setne	%cl
+	shlb	$6, %cl
 	notb	%sil
 	andb	$1, %sil
 	shlb	$5, %sil
-	orb	%dil, %sil
-	orb	%sil, %al
+	leal	(%rsi,%rdi), %eax
+	orb	%cl, %al
 	retq
 
 func0000000000000004:

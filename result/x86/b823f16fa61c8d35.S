@@ -16,11 +16,11 @@ func0000000000000006:
 	retq
 
 func0000000000000061:
-	orq	%rdx, %rsi
+	leaq	(%rsi,%rdx), %rcx
 	movabsq	$8589934592, %rax
-	orq	%rsi, %rax
+	orq	%rcx, %rax
 	cmpl	$14, %edi
-	cmovneq	%rsi, %rax
+	cmovneq	%rcx, %rax
 	retq
 
 func0000000000000001:

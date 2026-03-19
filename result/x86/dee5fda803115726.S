@@ -6,7 +6,7 @@ func0000000000000005:
 	retq
 
 func0000000000000004:
-	orl	$1, %esi
+	incl	%esi
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	retq
@@ -18,7 +18,7 @@ func0000000000000001:
 	retq
 
 func0000000000000007:
-	orl	$1, %esi
+	incl	%esi
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	retq

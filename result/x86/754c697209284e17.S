@@ -28,9 +28,9 @@ func000000000000000c:
 
 func0000000000000041:
 	andl	$1, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	cmpl	$63, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	cmpl	$63, %edx
 	sete	%al
 	retq
 

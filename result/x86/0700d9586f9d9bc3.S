@@ -17,8 +17,8 @@ func0000000000000019:
 	movl	%edx, %ecx
 	shlq	$24, %rsi
 	orq	%rsi, %rcx
+	orq	%rdi, %rcx
 	movabsq	$-4611686018427387904, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

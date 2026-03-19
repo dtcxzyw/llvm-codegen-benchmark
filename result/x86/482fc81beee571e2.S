@@ -4,9 +4,9 @@ func0000000000000007:
 	cmpb	$2, %dl
 	sete	%al
 	shll	$9, %eax
+	orl	%edi, %eax
 	andl	$1, %esi
 	shll	$17, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 

@@ -26,14 +26,13 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
 	notb	%dl
 	andb	$1, %dl
 	shlb	$5, %dl
-	orb	%dil, %dl
-	notb	%al
-	andb	$1, %al
-	shlb	$6, %al
-	orb	%dl, %al
+	leal	(%rdx,%rdi), %eax
+	notb	%sil
+	andb	$1, %sil
+	shlb	$6, %sil
+	orb	%sil, %al
 	retq
 

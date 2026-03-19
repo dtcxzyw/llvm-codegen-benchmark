@@ -19,16 +19,16 @@ func0000000000000013:
 	cmpl	$3, %edx
 	setb	%al
 	shlb	$5, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000006:
 	testl	%edx, %edx
 	setne	%al
 	shlb	$6, %al
-	orb	%dil, %sil
 	orb	%sil, %al
+	orb	%dil, %al
 	retq
 
 func0000000000000004:

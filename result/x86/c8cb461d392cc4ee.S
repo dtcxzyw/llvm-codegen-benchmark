@@ -3,7 +3,7 @@ func0000000000000007:
 	shrb	%dl
 	andb	$2, %dl
 	movzbl	%dl, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

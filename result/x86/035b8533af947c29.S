@@ -10,8 +10,7 @@ func0000000000000001:
 
 func0000000000000021:
 	andl	$240, %esi
-	movl	%edi, %eax
-	orb	$2, %al
+	leal	2(%rdi), %eax
 	cmpl	$16, %esi
 	movzbl	%al, %eax
 	cmovnel	%edi, %eax

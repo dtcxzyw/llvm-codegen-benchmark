@@ -21,9 +21,9 @@ func0000000000000000:
 
 func0000000000000003:
 	andl	$8, %edx
+	leaq	(%rsi,%rdx), %rcx
 	leaq	262208(%rsi,%rdx), %rax
-	orq	%rdx, %rsi
 	testb	$1, %dil
-	cmovneq	%rsi, %rax
+	cmovneq	%rcx, %rax
 	retq
 

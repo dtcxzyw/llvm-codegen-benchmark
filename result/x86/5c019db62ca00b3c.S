@@ -2,12 +2,12 @@
 func0000000000000003:
 	shrl	$3, %edx
 	andl	$4, %edx
-	orl	%edi, %edx
-	xorl	%ecx, %ecx
+	leal	(%rdx,%rdi), %ecx
+	xorl	%edx, %edx
 	testb	$1, %sil
 	movl	$268435424, %eax
-	cmovnel	%ecx, %eax
-	orl	%edx, %eax
+	cmovnel	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000000:
@@ -24,11 +24,11 @@ func0000000000000000:
 func0000000000000002:
 	shrl	$15, %edx
 	andl	$16, %edx
-	orl	%edi, %edx
-	xorl	%ecx, %ecx
+	leal	(%rdx,%rdi), %ecx
+	xorl	%edx, %edx
 	testb	$1, %sil
 	movl	$23, %eax
-	cmovnel	%ecx, %eax
-	orl	%edx, %eax
+	cmovnel	%edx, %eax
+	orl	%ecx, %eax
 	retq
 

@@ -1,8 +1,8 @@
 	.att_syntax
 func000000000000000f:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	vcvtsi2sd	%edi, %xmm15, %xmm0
+	orl	%esi, %edx
+	orl	%edi, %edx
+	vcvtsi2sd	%edx, %xmm15, %xmm0
 	retq
 

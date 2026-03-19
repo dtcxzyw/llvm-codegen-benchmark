@@ -8,8 +8,9 @@ func0000000000000061:
 
 func000000000000006a:
 	movzwl	%dx, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
+	orl	%esi, %eax
+	orl	%edi, %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 

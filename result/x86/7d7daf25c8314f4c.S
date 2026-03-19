@@ -75,6 +75,7 @@ func000000000000076a:
 	orl	%edi, %edx
 	shll	$24, %esi
 	orl	%edx, %esi
+	testl	%esi, %esi
 	setg	%al
 	retq
 

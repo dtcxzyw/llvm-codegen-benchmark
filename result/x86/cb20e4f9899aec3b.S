@@ -4,9 +4,9 @@ func0000000000000007:
 	testq	%rdx, %rdx
 	sete	%al
 	shll	$6, %eax
+	orq	%rdi, %rax
 	andl	$1, %esi
 	shll	$14, %esi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 

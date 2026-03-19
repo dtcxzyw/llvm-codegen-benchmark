@@ -11,8 +11,8 @@ func000000000000007f:
 	movl	%esi, %ecx
 	shlq	$16, %rcx
 	shlq	$32, %rdi
+	orq	%rdi, %rcx
 	movabsq	$549772591104, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

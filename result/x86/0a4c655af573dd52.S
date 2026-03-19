@@ -15,9 +15,9 @@ func000000000000007f:
 
 func0000000000000075:
 	shlq	$32, %rdx
-	orq	%rsi, %rdx
 	imulq	$-100, %rdi, %rax
 	addq	%rdx, %rax
+	addq	%rsi, %rax
 	retq
 
 func0000000000000068:

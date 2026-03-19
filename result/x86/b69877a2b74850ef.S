@@ -2,7 +2,7 @@
 func0000000000000064:
 	cmpq	%rdx, %rsi
 	cmovbq	%rsi, %rdx
-	orq	$1, %rdi
+	incq	%rdi
 	cmpq	%rdx, %rdi
 	setb	%al
 	retq

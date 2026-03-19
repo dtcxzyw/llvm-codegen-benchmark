@@ -10,9 +10,8 @@ func0000000000000001:
 	retq
 
 func0000000000000021:
-	movq	%rdi, %rax
 	movl	%edx, %ecx
-	orq	%rsi, %rax
+	leaq	(%rdi,%rsi), %rax
 	xorl	%edx, %edx
 	divq	%rcx
 	testq	%rdx, %rdx

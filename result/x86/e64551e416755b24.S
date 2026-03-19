@@ -4,6 +4,6 @@ func0000000000000003:
 	andl	$16777214, %eax
 	testl	%esi, %esi
 	cmovnel	%edi, %eax
-	orl	$1, %eax
+	incl	%eax
 	retq
 

@@ -8,9 +8,9 @@ func0000000000000007:
 
 func0000000000000006:
 	shrl	$16, %edx
-	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	orl	$-16777216, %eax
 	retq
 

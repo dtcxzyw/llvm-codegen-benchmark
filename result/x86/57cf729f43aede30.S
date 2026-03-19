@@ -1,25 +1,22 @@
 	.att_syntax
 func0000000000000002:
-	movq	%rsi, %rax
-	orq	$1, %rdx
-	orq	$5, %rax
+	leaq	1(%rdx), %rax
+	orq	$5, %rsi
 	testb	$1, %dil
-	cmoveq	%rdx, %rax
+	cmovneq	%rsi, %rax
 	retq
 
 func0000000000000001:
-	movq	%rsi, %rax
 	orq	$134217728, %rdx
-	orq	$402653184, %rax
+	leaq	402653184(%rsi), %rax
 	testb	$1, %dil
 	cmoveq	%rdx, %rax
 	retq
 
 func0000000000000003:
-	movq	%rsi, %rax
-	orq	$4, %rdx
-	orq	$12, %rax
+	leaq	4(%rdx), %rax
+	leaq	12(%rsi), %rcx
 	testb	$1, %dil
-	cmoveq	%rdx, %rax
+	cmovneq	%rcx, %rax
 	retq
 

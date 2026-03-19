@@ -6,9 +6,9 @@ func0000000000000000:
 	retq
 
 func0000000000000004:
-	orq	%rdx, %rsi
-	andq	%rdi, %rsi
-	leaq	(%rsi,%rsi), %rax
+	leaq	(%rsi,%rdx), %rax
+	andq	%rdi, %rax
+	addq	%rax, %rax
 	retq
 
 func0000000000000002:

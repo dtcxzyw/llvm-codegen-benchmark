@@ -11,7 +11,7 @@ func0000000000000063:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
 	setne	%al
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

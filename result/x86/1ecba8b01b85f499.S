@@ -26,8 +26,8 @@ func0000000000000009:
 	retq
 
 func000000000000000d:
-	orl	%esi, %edi
-	shll	$8, %edi
-	leal	255(%rdi), %eax
+	leal	(%rdi,%rsi), %eax
+	shll	$8, %eax
+	orl	$255, %eax
 	retq
 

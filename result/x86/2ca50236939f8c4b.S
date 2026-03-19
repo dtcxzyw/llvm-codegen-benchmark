@@ -26,7 +26,7 @@ func0000000000000030:
 func000000000000000f:
 	movl	%edx, %eax
 	shlq	$16, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	shlq	$3, %rax
 	retq
@@ -48,20 +48,18 @@ func000000000000002f:
 	retq
 
 func000000000000000a:
-	movq	%rdi, %rax
 	andl	$16384, %edx
 	shlq	$42, %rdx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	orq	%rdi, %rax
 	shlq	$4, %rax
 	retq
 
 func000000000000000e:
-	movq	%rdi, %rax
 	andl	$16711680, %edx
 	shlq	$16, %rdx
-	orq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rdx,%rsi), %rax
+	orq	%rdi, %rax
 	shlq	$8, %rax
 	retq
 

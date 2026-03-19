@@ -9,8 +9,7 @@ func0000000000000002:
 	retq
 
 func0000000000000003:
-	movl	%edi, %eax
-	orl	$8, %eax
+	leal	8(%rdi), %eax
 	testb	$8, %dl
 	cmovel	%edi, %eax
 	testb	$1, %sil

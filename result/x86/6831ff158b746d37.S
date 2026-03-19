@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000361:
-	orq	$1, %rdx
+	incq	%rdx
 	leaq	(%rdx,%rdx,2), %rax
 	shlq	$4, %rax
 	leaq	24(%rsi,%rax), %rax

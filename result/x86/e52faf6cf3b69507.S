@@ -1,23 +1,23 @@
 	.att_syntax
 func0000000000000003:
 	andl	$16711680, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzwl	%si, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000007:
 	andl	$-2053, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzwl	%si, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000006:
 	andl	$2097152, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzwl	%si, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000000:

@@ -114,8 +114,8 @@ func000000000000003e:
 	movzbl	%dl, %eax
 	shlq	$48, %rax
 	shlq	$40, %rsi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
+	orq	%rdi, %rax
 	retq
 
 func000000000000007e:

@@ -5,15 +5,13 @@ func000000000000001f:
 	retq
 
 func0000000000000001:
-	movl	%esi, %eax
-	shlb	$4, %al
-	orb	%dil, %al
+	shlb	$4, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000015:
-	movl	%esi, %eax
-	shlb	$4, %al
-	orb	%dil, %al
+	shlb	$4, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func000000000000001d:
@@ -28,9 +26,8 @@ func0000000000000000:
 	retq
 
 func0000000000000017:
-	movl	%esi, %eax
-	shlb	$4, %al
-	orb	%dil, %al
+	shlb	$4, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000008:

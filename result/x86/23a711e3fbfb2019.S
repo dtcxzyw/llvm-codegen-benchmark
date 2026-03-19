@@ -2,8 +2,8 @@
 func0000000000000007:
 	shrl	$7, %esi
 	andl	$254, %edi
-	orl	%esi, %edi
-	leal	(%rdi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
+	addl	%eax, %eax
 	retq
 
 func0000000000000006:

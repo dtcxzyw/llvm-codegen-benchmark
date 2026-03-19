@@ -76,6 +76,7 @@ func0000000000000028:
 func0000000000000026:
 	movzbl	%sil, %eax
 	orl	%edi, %eax
+	testl	%eax, %eax
 	setle	%al
 	retq
 
@@ -88,6 +89,7 @@ func000000000000004c:
 func000000000000002a:
 	movzbl	%sil, %eax
 	orl	%edi, %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 

@@ -1,9 +1,9 @@
 	.att_syntax
 func000000000000000e:
 	movzbl	%dl, %eax
-	orl	%esi, %edi
-	orl	%eax, %edi
-	bswapl	%edi
-	rorxl	$19, %edi, %eax
+	orl	%esi, %eax
+	orl	%edi, %eax
+	bswapl	%eax
+	rorxl	$19, %eax, %eax
 	retq
 

@@ -9,16 +9,14 @@ func0000000000000000:
 	retq
 
 func0000000000000007:
-	movl	%edx, %eax
-	orl	$128, %eax
+	leal	128(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
 	leal	33554432(%rax,%rdi), %eax
 	retq
 
 func0000000000000004:
-	movl	%edx, %eax
-	orl	$536870912, %eax
+	leal	536870912(%rdx), %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
 	orl	%edi, %eax

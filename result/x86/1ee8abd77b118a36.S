@@ -4,8 +4,8 @@ func0000000000000007:
 	cmpb	$107, %dl
 	setne	%al
 	shll	$5, %eax
+	orq	%rsi, %rax
 	andl	$1015808, %edi
-	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
 

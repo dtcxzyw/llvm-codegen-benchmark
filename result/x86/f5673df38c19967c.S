@@ -4,19 +4,16 @@ func0000000000000001:
 	orl	$1940, %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$2, %eax
+	leal	2(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
 
 func0000000000000003:
-	movl	%edx, %ecx
-	orl	$64, %ecx
+	leal	64(%rdx), %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$128, %eax
+	leal	128(%rcx), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
@@ -33,8 +30,7 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	movl	%edx, %ecx
-	orl	$16, %ecx
+	leal	16(%rdx), %ecx
 	testb	$1, %sil
 	cmovnel	%edx, %ecx
 	movl	%ecx, %eax

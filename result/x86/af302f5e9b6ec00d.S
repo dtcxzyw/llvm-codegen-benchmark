@@ -1,7 +1,6 @@
 	.att_syntax
 func0000000000000007:
-	movq	%rdx, %rax
-	orl	$64, %eax
+	leal	64(%rdx), %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq

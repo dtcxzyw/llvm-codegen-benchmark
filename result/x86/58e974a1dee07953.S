@@ -7,8 +7,8 @@ func000000000000003f:
 
 func0000000000000034:
 	shll	$8, %edx
-	orl	%edi, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzbl	%sil, %eax
-	imull	%edx, %eax
+	imull	%ecx, %eax
 	retq
 

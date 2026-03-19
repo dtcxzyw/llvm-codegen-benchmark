@@ -4,8 +4,7 @@ func0000000000000001:
 	movl	%esi, %eax
 	xorl	%edx, %edx
 	divl	%ecx
-	movl	%edx, %eax
-	orq	%rdi, %rax
+	leaq	(%rdx,%rdi), %rax
 	retq
 
 func0000000000000003:
@@ -13,7 +12,6 @@ func0000000000000003:
 	movl	%esi, %eax
 	xorl	%edx, %edx
 	divl	%ecx
-	movl	%edx, %eax
-	orq	%rdi, %rax
+	leaq	(%rdx,%rdi), %rax
 	retq
 

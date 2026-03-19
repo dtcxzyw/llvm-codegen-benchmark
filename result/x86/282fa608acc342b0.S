@@ -10,9 +10,9 @@ func000000000000001b:
 func0000000000000003:
 	shll	$21, %edx
 	andl	$520093696, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzbl	%sil, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000001f:
@@ -26,9 +26,9 @@ func000000000000001f:
 func0000000000000007:
 	andl	$15, %edx
 	shll	$7, %edx
+	leal	(%rdx,%rdi), %ecx
 	movzbl	%sil, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000000b:

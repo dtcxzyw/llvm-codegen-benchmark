@@ -8,7 +8,7 @@ func0000000000000010:
 	retq
 
 func0000000000000015:
-	orl	$1, %edx
+	incl	%edx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovnel	%edx, %eax

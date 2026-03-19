@@ -14,8 +14,8 @@ func0000000000000003:
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shll	$20, %eax
+	orl	%edi, %eax
 	andl	$32, %esi
-	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
 
@@ -31,11 +31,10 @@ func0000000000000001:
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
 	andl	$1, %edx
 	shll	$5, %edx
-	andl	$-64, %eax
-	orl	%edi, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rdi), %eax
+	andl	$-64, %esi
+	orl	%esi, %eax
 	retq
 

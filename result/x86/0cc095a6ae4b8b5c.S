@@ -13,8 +13,7 @@ func0000000000000001:
 	testb	$1, %sil
 	movl	$68, %ecx
 	cmovel	%edx, %ecx
-	movl	%ecx, %eax
-	orl	$1073741824, %eax
+	leal	1073741824(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

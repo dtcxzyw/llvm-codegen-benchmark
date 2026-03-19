@@ -16,10 +16,10 @@ func00000000000007a4:
 
 func0000000000000724:
 	shll	$6, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	addl	$-1114112, %edi
-	cmpl	$-1048576, %edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	addl	$-1114112, %edx
+	cmpl	$-1048576, %edx
 	setb	%al
 	retq
 
@@ -57,9 +57,9 @@ func0000000000000788:
 
 func000000000000078a:
 	shll	$8, %edx
-	orl	%esi, %edi
-	orl	%edx, %edi
-	decl	%edi
+	orl	%esi, %edx
+	orl	%edi, %edx
+	decl	%edx
 	setns	%al
 	retq
 

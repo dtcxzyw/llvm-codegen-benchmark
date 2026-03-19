@@ -21,7 +21,7 @@ func0000000000000001:
 	shll	$26, %esi
 	leal	-67108864(%rsi), %eax
 	orl	%edi, %eax
-	orl	$1, %eax
+	incl	%eax
 	retq
 
 func0000000000000037:

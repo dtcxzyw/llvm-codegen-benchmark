@@ -61,6 +61,7 @@ func0000000000000008:
 
 func00000000000000e6:
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setle	%al
 	retq
 

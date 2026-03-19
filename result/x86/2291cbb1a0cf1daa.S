@@ -10,20 +10,19 @@ func0000000000000004:
 	retq
 
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	$14680064, %edx
-	setne	%al
-	shll	$20, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
+	setne	%cl
+	shll	$20, %ecx
+	leal	(%rdi,%rsi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000006:
-	movl	%edi, %eax
 	shll	$19, %edx
 	sarl	$31, %edx
 	andl	$2147482624, %edx
-	orl	%esi, %eax
+	leal	(%rdi,%rsi), %eax
 	orl	%edx, %eax
 	retq
 

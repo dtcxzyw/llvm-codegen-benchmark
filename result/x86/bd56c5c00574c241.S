@@ -12,6 +12,7 @@ func00000000000001ea:
 	shll	$16, %esi
 	orl	%eax, %esi
 	orl	%edi, %esi
+	testl	%esi, %esi
 	setg	%al
 	retq
 

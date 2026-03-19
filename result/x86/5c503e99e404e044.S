@@ -2,7 +2,7 @@
 func000000000000001f:
 	movl	%edx, %eax
 	shlq	$17, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
@@ -23,7 +23,7 @@ func000000000000001c:
 func000000000000000f:
 	movl	%edx, %eax
 	shlq	$5, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

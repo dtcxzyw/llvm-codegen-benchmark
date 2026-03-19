@@ -10,8 +10,8 @@ func000000000000001c:
 	retq
 
 func0000000000000012:
-	orq	%rdx, %rsi
-	shlq	$12, %rsi
-	leaq	(%rsi,%rdi), %rax
+	leaq	(%rsi,%rdx), %rax
+	shlq	$12, %rax
+	addq	%rdi, %rax
 	retq
 

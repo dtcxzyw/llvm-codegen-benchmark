@@ -15,8 +15,8 @@ func0000000000000008:
 
 func000000000000003e:
 	shll	$8, %edx
-	orl	%esi, %edx
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdx,%rsi), %eax
+	addl	%edi, %eax
 	shrl	$12, %eax
 	andl	$63, %eax
 	retq

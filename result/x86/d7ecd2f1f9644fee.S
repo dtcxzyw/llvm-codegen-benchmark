@@ -68,8 +68,8 @@ func0000000000000001:
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	shll	$30, %eax
-	orl	%edi, %edx
 	orl	%edx, %eax
+	orl	%edi, %eax
 	retq
 
 func0000000000000009:

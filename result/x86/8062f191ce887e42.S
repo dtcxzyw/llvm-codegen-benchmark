@@ -21,7 +21,7 @@ func0000000000000033:
 	testq	%rdx, %rdx
 	setne	%al
 	shll	$22, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 
@@ -30,7 +30,7 @@ func0000000000000032:
 	testq	%rdx, %rdx
 	setne	%al
 	shll	$22, %eax
-	orl	%esi, %edi
+	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
 

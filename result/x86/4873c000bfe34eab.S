@@ -38,8 +38,8 @@ func000000000000001f:
 func000000000000001a:
 	movzwl	%dx, %ecx
 	shlq	$27, %rcx
+	orq	%rdi, %rcx
 	movzwl	%si, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

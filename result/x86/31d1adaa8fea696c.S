@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000070:
 	shlq	$40, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdi), %rax
 	movabsq	$216180478695505931, %rcx
-	imulq	%rsi, %rcx
+	imulq	%rax, %rcx
 	movabsq	$3819052484010180608, %rax
 	addq	%rcx, %rax
 	retq

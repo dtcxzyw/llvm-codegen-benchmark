@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000345:
-	orl	$1, %edx
+	incl	%edx
 	xorl	%eax, %eax
 	cmpl	$256, %esi
 	cmovbl	%edx, %eax

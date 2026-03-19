@@ -16,14 +16,14 @@ func000000000000003f:
 func000000000000003c:
 	andl	$31, %edx
 	shll	$8, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 
 func000000000000002c:
 	shll	$16, %edx
 	andl	$2147418112, %edx
-	orl	%esi, %edx
-	leaq	(%rdx,%rdi), %rax
+	leal	(%rdx,%rsi), %eax
+	addq	%rdi, %rax
 	retq
 

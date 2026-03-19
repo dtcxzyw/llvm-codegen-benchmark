@@ -22,12 +22,12 @@ func0000000000000004:
 func0000000000000003:
 	shrq	$44, %rdx
 	andl	$8192, %edx
-	orq	%rdi, %rdx
-	xorl	%ecx, %ecx
+	leaq	(%rdx,%rdi), %rcx
+	xorl	%edx, %edx
 	testb	$1, %sil
 	movl	$5188, %eax
-	cmovneq	%rcx, %rax
-	orq	%rdx, %rax
+	cmovneq	%rdx, %rax
+	orq	%rcx, %rax
 	retq
 
 func0000000000000000:

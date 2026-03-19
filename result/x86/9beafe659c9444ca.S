@@ -1,7 +1,7 @@
 	.att_syntax
 func000000000000000c:
 	addl	%edx, %esi
-	orl	$1, %edi
+	incl	%edi
 	shlxl	%esi, %edi, %eax
 	retq
 

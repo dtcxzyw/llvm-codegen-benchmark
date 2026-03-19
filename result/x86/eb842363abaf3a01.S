@@ -4,8 +4,8 @@ func0000000000000003:
 	shlq	$8, %rax
 	movabsq	$1080863974993432320, %rcx
 	andq	%rax, %rcx
+	orq	%rdi, %rcx
 	movabsq	$3472339291344613424, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 
@@ -14,8 +14,8 @@ func000000000000003b:
 	shlq	$8, %rax
 	movabsq	$1080863974993432320, %rcx
 	andq	%rax, %rcx
+	orq	%rdi, %rcx
 	movabsq	$3472327196715986992, %rax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

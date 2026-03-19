@@ -1,15 +1,15 @@
 	.att_syntax
 func0000000000000026:
 	leaq	2(%rsi), %rax
-	orq	$1, %rsi
+	leaq	1(%rsi), %rcx
 	testl	%edi, %edi
-	cmovsq	%rsi, %rax
+	cmovsq	%rcx, %rax
 	retq
 
 func000000000000002a:
 	leaq	2(%rsi), %rax
-	orq	$1, %rsi
+	leaq	1(%rsi), %rcx
 	testl	%edi, %edi
-	cmovgq	%rsi, %rax
+	cmovgq	%rcx, %rax
 	retq
 

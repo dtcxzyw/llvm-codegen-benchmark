@@ -5,8 +5,7 @@ func0000000000000000:
 	retq
 
 func0000000000000003:
-	movl	%edi, %eax
-	orl	$4096, %eax
+	leal	4096(%rdi), %eax
 	testb	$1, %dl
 	cmovel	%edi, %eax
 	testb	$1, %sil

@@ -11,30 +11,25 @@ func0000000000000000:
 	retq
 
 func000000000000000d:
-	movq	%rsi, %rcx
-	orq	$2, %rcx
+	leaq	2(%rsi), %rcx
 	testb	$1, %dl
 	cmoveq	%rsi, %rcx
-	movq	%rcx, %rax
-	orq	$4, %rax
+	leaq	4(%rcx), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
 
 func0000000000000009:
-	movq	%rsi, %rcx
-	orq	$2, %rcx
+	leaq	2(%rsi), %rcx
 	testb	$1, %dl
 	cmoveq	%rsi, %rcx
-	movq	%rcx, %rax
-	orq	$4, %rax
+	leaq	4(%rcx), %rax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
 
 func0000000000000008:
-	movq	%rsi, %rcx
-	orq	$4, %rcx
+	leaq	4(%rsi), %rcx
 	testb	$1, %dl
 	cmoveq	%rsi, %rcx
 	movq	%rcx, %rax

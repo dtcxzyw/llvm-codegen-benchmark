@@ -13,13 +13,13 @@ func0000000000000004:
 	retq
 
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	cmpb	$2, %dl
-	sete	%al
-	shll	$17, %eax
+	sete	%cl
+	shll	$17, %ecx
 	andl	$1, %esi
 	shll	$9, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 

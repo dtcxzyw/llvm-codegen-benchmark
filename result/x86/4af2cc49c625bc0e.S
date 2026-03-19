@@ -1,17 +1,15 @@
 	.att_syntax
 func0000000000000007:
-	leal	32(%rsi,%rdx), %ecx
-	movl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rsi,%rdx), %eax
+	leal	32(%rsi,%rdx), %edx
 	testb	$1, %dil
-	cmovnel	%eax, %ecx
+	cmovnel	%eax, %edx
 	movabsq	$595056260559142912, %rax
-	movq	%rcx, %rdx
 	mulxq	%rax, %rax, %rax
-	movl	%eax, %edx
-	shll	$5, %edx
-	subl	%edx, %eax
-	addl	%ecx, %eax
-	orl	%ecx, %eax
+	movl	%eax, %ecx
+	shll	$5, %ecx
+	subl	%ecx, %eax
+	addl	%edx, %eax
+	orl	%edx, %eax
 	retq
 

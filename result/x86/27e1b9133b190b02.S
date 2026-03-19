@@ -6,30 +6,29 @@ func000000000000000f:
 	retq
 
 func000000000000000c:
-	orq	%rdx, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdx), %rcx
+	orq	%rdi, %rcx
 	movabsq	$216180478695505931, %rax
-	imulq	%rsi, %rax
+	imulq	%rcx, %rax
 	retq
 
 func0000000000000008:
-	orq	%rdx, %rsi
-	orq	%rdi, %rsi
+	leaq	(%rsi,%rdx), %rcx
+	orq	%rdi, %rcx
 	movabsq	$8503243848024064, %rax
-	imulq	%rsi, %rax
+	imulq	%rcx, %rax
 	retq
 
 func000000000000000e:
-	orq	%rdx, %rsi
-	orq	%rdi, %rsi
-	movq	%rsi, %rax
+	leaq	(%rsi,%rdx), %rcx
+	orq	%rdi, %rcx
+	movq	%rcx, %rax
 	shlq	$32, %rax
-	addq	%rsi, %rax
+	addq	%rcx, %rax
 	retq
 
 func000000000000000d:
-	movq	%rsi, %rax
-	orq	%rdx, %rax
+	leaq	(%rsi,%rdx), %rax
 	orq	%rdi, %rax
 	leaq	(,%rax,8), %rcx
 	subq	%rcx, %rax

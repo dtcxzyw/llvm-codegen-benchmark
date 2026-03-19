@@ -10,7 +10,7 @@ func000000000000001e:
 func000000000000001c:
 	movzbl	%dl, %eax
 	shlq	$48, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	shrq	$32, %rax
 	retq

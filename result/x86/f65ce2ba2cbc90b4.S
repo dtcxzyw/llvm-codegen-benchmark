@@ -1,6 +1,6 @@
 	.att_syntax
 func0000000000000088:
-	orq	$1, %rdx
+	incq	%rdx
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	seta	%al

@@ -19,11 +19,11 @@ func0000000000000000:
 
 func000000000000000f:
 	shlq	$52, %rdx
-	orq	%rsi, %rdx
+	leaq	(%rdx,%rsi), %rcx
 	movabsq	$-9223372036854775808, %rax
-	orq	%rdx, %rax
+	orq	%rcx, %rax
 	testb	$1, %dil
-	cmoveq	%rdx, %rax
+	cmoveq	%rcx, %rax
 	retq
 
 func000000000000000c:

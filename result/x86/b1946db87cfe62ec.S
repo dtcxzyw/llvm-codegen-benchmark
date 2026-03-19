@@ -9,9 +9,9 @@ func0000000000000000:
 	retq
 
 func0000000000000001:
-	orl	%edx, %esi
+	leal	(%rsi,%rdx), %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovnel	%esi, %eax
+	cmovnel	%ecx, %eax
 	retq
 

@@ -13,8 +13,7 @@ func0000000000000002:
 	leal	(%rdx,%rdx), %ecx
 	andl	$2, %ecx
 	orl	%esi, %ecx
-	movl	%ecx, %eax
-	orl	$-2147483648, %eax
+	leal	-2147483648(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
@@ -40,10 +39,10 @@ func000000000000000c:
 func0000000000000001:
 	andl	$1, %edx
 	shll	$16, %edx
-	orl	%esi, %edx
-	movl	%edx, %eax
+	leal	(%rdx,%rsi), %ecx
+	movl	%ecx, %eax
 	orl	$16384, %eax
 	testb	$1, %dil
-	cmovnel	%edx, %eax
+	cmovnel	%ecx, %eax
 	retq
 

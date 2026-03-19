@@ -9,7 +9,7 @@ func0000000000000000:
 
 func0000000000000001:
 	movl	%edi, %eax
-	orl	$1, %esi
+	incl	%esi
 	xorl	%edx, %edx
 	divl	%esi
 	movl	%edx, %eax

@@ -1,8 +1,8 @@
 	.att_syntax
 func0000000000000008:
 	bswapl	%edx
-	orl	%esi, %edi
-	leal	(%rdi,%rdx), %eax
+	leal	(%rdi,%rsi), %eax
+	addl	%edx, %eax
 	bswapl	%eax
 	retq
 

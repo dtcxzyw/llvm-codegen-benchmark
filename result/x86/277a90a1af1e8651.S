@@ -4,7 +4,7 @@ func0000000000000001:
 	leaq	1073741824(%rcx), %rax
 	testb	$1, %dl
 	cmoveq	%rcx, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 
@@ -13,7 +13,7 @@ func0000000000000003:
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	shlq	$60, %rax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

@@ -5,7 +5,7 @@ func0000000000000003:
 	retq
 
 func0000000000000002:
-	orb	$1, %dil
+	incb	%dil
 	movzbl	%dil, %eax
 	retq
 

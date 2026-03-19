@@ -1,12 +1,12 @@
 	.att_syntax
 func0000000000000007:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	%edx, %edx
-	setne	%al
-	shll	$20, %eax
+	setne	%cl
+	shll	$20, %ecx
 	andl	$63872, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000004:
@@ -20,21 +20,20 @@ func0000000000000004:
 	retq
 
 func000000000000001b:
-	movl	%esi, %eax
 	sarl	$31, %edx
 	andl	$2146959360, %edx
-	andl	$522240, %eax
-	orl	%edi, %eax
+	andl	$522240, %esi
+	leal	(%rsi,%rdi), %eax
 	orl	%edx, %eax
 	retq
 
 func0000000000000006:
 	testl	%edx, %edx
-	movl	$2147482624, %eax
-	cmovel	%edx, %eax
+	movl	$2147482624, %ecx
+	cmovel	%edx, %ecx
 	andl	$512, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func000000000000002b:
@@ -58,13 +57,13 @@ func0000000000000010:
 	retq
 
 func0000000000000033:
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	%edx, %edx
-	setne	%al
-	shll	$24, %eax
+	setne	%cl
+	shll	$24, %ecx
 	andl	$16776960, %esi
-	orl	%edi, %esi
-	orl	%esi, %eax
+	leal	(%rsi,%rdi), %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000005:

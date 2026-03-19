@@ -15,15 +15,13 @@ func0000000000000000:
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
-	orl	%edx, %eax
+	leal	(%rsi,%rdx), %eax
 	andl	$7, %eax
 	retq
 
 func0000000000000003:
+	leal	(%rsi,%rdx), %ecx
 	leal	8(%rsi,%rdx), %eax
-	movl	%esi, %ecx
-	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	andl	$-17, %eax

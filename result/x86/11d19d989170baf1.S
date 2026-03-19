@@ -16,9 +16,9 @@ func000000000000002b:
 	testb	%dl, %dl
 	setg	%al
 	shll	$12, %eax
+	orq	%rdi, %rax
 	andl	$1, %esi
 	shll	$13, %esi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 

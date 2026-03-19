@@ -4,8 +4,8 @@ func0000000000000003:
 	movl	$536870912, %ecx
 	movabsq	$2305843009213693952, %rax
 	cmovneq	%rcx, %rax
+	orq	%rdi, %rax
 	andl	$6291456, %esi
-	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
 

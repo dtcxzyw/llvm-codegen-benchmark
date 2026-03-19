@@ -9,8 +9,7 @@ func0000000000000021:
 	retq
 
 func0000000000000421:
-	movl	%edx, %eax
-	orl	$1048576, %eax
+	leal	1048576(%rdx), %eax
 	cmpl	$49152, %esi
 	cmovnel	%edx, %eax
 	cmpl	$4096, %esi

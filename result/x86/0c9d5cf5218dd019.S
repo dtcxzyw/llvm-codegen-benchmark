@@ -7,7 +7,7 @@ func0000000000000004:
 
 func0000000000000003:
 	movl	%edx, %eax
-	orq	%rsi, %rdi
+	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
 

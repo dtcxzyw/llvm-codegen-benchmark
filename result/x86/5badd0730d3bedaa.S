@@ -1,8 +1,7 @@
 	.att_syntax
 func000000000000001d:
-	movq	%rsi, %rax
-	shll	$24, %eax
-	orl	%edi, %eax
+	shll	$24, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func000000000000001f:
@@ -18,15 +17,13 @@ func0000000000000004:
 	retq
 
 func0000000000000007:
-	movq	%rsi, %rax
-	shll	$6, %eax
-	andl	$64, %eax
-	orl	%edi, %eax
+	shll	$6, %esi
+	andl	$64, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 
 func0000000000000005:
-	movq	%rsi, %rax
-	shll	$24, %eax
-	orl	%edi, %eax
+	shll	$24, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 

@@ -1,56 +1,52 @@
 	.att_syntax
 func0000000000000007:
-	movl	%esi, %eax
 	shll	$6, %edx
-	orl	%edi, %edx
-	andl	$1, %eax
-	shll	$5, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rdi), %eax
+	andl	$1, %esi
+	shll	$5, %esi
+	orl	%esi, %eax
 	retq
 
 func000000000000000f:
-	movl	%esi, %eax
 	shll	$16, %edx
-	orl	%edi, %edx
-	andl	$1, %eax
-	shll	$8, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rdi), %eax
+	andl	$1, %esi
+	shll	$8, %esi
+	orl	%esi, %eax
 	retq
 
 func000000000000000e:
 	shll	$11, %edx
-	orl	%edi, %edx
-	xorl	%ecx, %ecx
+	leal	(%rdx,%rdi), %ecx
+	xorl	%edx, %edx
 	testb	$1, %sil
 	movl	$524291, %eax
-	cmovel	%ecx, %eax
-	orl	%edx, %eax
+	cmovel	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000002:
-	movl	%esi, %eax
 	shll	$10, %edx
-	orl	%edi, %edx
-	shll	$31, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rdi), %eax
+	shll	$31, %esi
+	orl	%esi, %eax
 	retq
 
 func000000000000000a:
-	movl	%esi, %eax
 	shll	$24, %edx
-	orl	%edi, %edx
-	shll	$31, %eax
-	orl	%edx, %eax
+	leal	(%rdx,%rdi), %eax
+	shll	$31, %esi
+	orl	%esi, %eax
 	retq
 
 func000000000000000b:
 	shll	$24, %edx
-	orl	%edi, %edx
-	xorl	%ecx, %ecx
+	leal	(%rdx,%rdi), %ecx
+	xorl	%edx, %edx
 	testb	$1, %sil
 	movl	$255, %eax
-	cmovnel	%ecx, %eax
-	orl	%edx, %eax
+	cmovnel	%edx, %eax
+	orl	%ecx, %eax
 	retq
 
 func0000000000000003:
@@ -80,21 +76,19 @@ func000000000000000c:
 	retq
 
 func0000000000000009:
-	movl	%esi, %eax
 	shll	$16, %edx
 	orl	%edi, %edx
-	andl	$1, %eax
-	shll	$7, %eax
-	orl	%edx, %eax
+	andl	$1, %esi
+	shll	$7, %esi
+	leal	(%rsi,%rdx), %eax
 	retq
 
 func000000000000000d:
-	movl	%esi, %eax
 	shll	$8, %edx
 	orl	%edi, %edx
-	andl	$1, %eax
-	shll	$7, %eax
-	orl	%edx, %eax
+	andl	$1, %esi
+	shll	$7, %esi
+	leal	(%rsi,%rdx), %eax
 	retq
 
 func0000000000000001:

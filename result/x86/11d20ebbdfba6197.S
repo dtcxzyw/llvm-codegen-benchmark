@@ -1,7 +1,7 @@
 	.att_syntax
 func0000000000000021:
 	leaq	2(%rdx), %rax
-	orq	$1, %rdx
+	incq	%rdx
 	testb	$1, %sil
 	cmoveq	%rax, %rdx
 	cmpq	%rdx, %rdi

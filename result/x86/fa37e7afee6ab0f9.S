@@ -65,8 +65,8 @@ func000000000000003e:
 func000000000000003b:
 	movzbl	%dl, %ecx
 	shlq	$32, %rcx
+	orq	%rdi, %rcx
 	movzbl	%sil, %eax
-	orq	%rdi, %rax
 	orq	%rcx, %rax
 	retq
 

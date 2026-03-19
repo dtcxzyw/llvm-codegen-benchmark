@@ -8,26 +8,24 @@ func0000000000000001:
 	retq
 
 func0000000000000061:
-	leal	40960(%rdi,%rsi), %eax
-	movl	%edi, %ecx
-	orl	%esi, %ecx
+	leal	(%rdi,%rsi), %ecx
 	testl	$33554432, %edx
+	leal	40960(%rdi,%rsi), %eax
 	cmovel	%ecx, %eax
 	retq
 
 func0000000000000021:
-	orl	%esi, %edi
-	movl	%edi, %eax
+	leal	(%rdi,%rsi), %ecx
+	movl	%ecx, %eax
 	orl	$12, %eax
 	testb	$16, %dl
-	cmovel	%edi, %eax
+	cmovel	%ecx, %eax
 	retq
 
 func0000000000000074:
-	leal	64(%rdi,%rsi), %eax
-	movl	%edi, %ecx
-	orl	%esi, %ecx
+	leal	(%rdi,%rsi), %ecx
 	testl	$65528, %edx
+	leal	64(%rdi,%rsi), %eax
 	cmovel	%ecx, %eax
 	retq
 

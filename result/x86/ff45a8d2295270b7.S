@@ -6,9 +6,8 @@ func0000000000000000:
 	retq
 
 func000000000000000d:
-	movq	%rdi, %rax
-	shrl	%eax
-	orl	$-16777216, %eax
+	shrl	%edi
+	leal	-16777216(%rdi), %eax
 	retq
 
 func0000000000000001:
