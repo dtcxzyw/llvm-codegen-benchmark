@@ -1,33 +1,33 @@
 	.att_syntax
 func00000000000000aa:
+	xorl	%eax, %eax
+	subw	%dx, %si
+	sbbl	%eax, %eax
+	xorl	%eax, %esi
+	subl	%eax, %esi
 	movzwl	%si, %eax
-	subl	%edx, %esi
-	movzwl	%dx, %ecx
-	subl	%eax, %ecx
-	cmovbl	%esi, %ecx
-	movzwl	%cx, %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
 
 func00000000000000b8:
+	xorl	%eax, %eax
+	subw	%dx, %si
+	sbbl	%eax, %eax
+	xorl	%eax, %esi
+	subl	%eax, %esi
 	movzwl	%si, %eax
-	subl	%edx, %esi
-	movzwl	%dx, %ecx
-	subl	%eax, %ecx
-	cmovbl	%esi, %ecx
-	movzwl	%cx, %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq
 
 func00000000000000a7:
+	xorl	%eax, %eax
+	subw	%dx, %si
+	sbbl	%eax, %eax
+	xorl	%eax, %esi
+	subl	%eax, %esi
 	movzwl	%si, %eax
-	subl	%edx, %esi
-	movzwl	%dx, %ecx
-	subl	%eax, %ecx
-	cmovbl	%esi, %ecx
-	movzwl	%cx, %eax
 	cmpl	%edi, %eax
 	setle	%al
 	retq
