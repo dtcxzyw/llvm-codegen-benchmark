@@ -2,7 +2,6 @@ func0000000000000007:
 	zext.h	a0, a0
 	clz	a0, a0
 	addi	a0, a0, -40
-	zext.h	a0, a0
 	ret
 
 func000000000000000d:
