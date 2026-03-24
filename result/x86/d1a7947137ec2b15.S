@@ -2,12 +2,11 @@
 func000000000000000f:
 	movb	$60, %al
 	movq	%rdi, %rcx
-	shrdq	$2, %rsi, %rcx
+	shrdq	$62, %rsi, %rcx
 	bzhiq	%rax, %rcx, %rdx
-	movq	%rsi, %r8
-	shrq	$2, %r8
-	shldq	$4, %rcx, %r8
-	bzhiq	%rax, %r8, %rax
+	movl	$62, %eax
+	bzhiq	%rax, %rdi, %rax
+	shrq	$2, %rax
 	shrq	$58, %rsi
 	addq	%rsi, %rdx
 	addq	%rax, %rdx

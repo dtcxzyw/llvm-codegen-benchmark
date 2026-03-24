@@ -1,24 +1,21 @@
 .LCPI0_0:
 	.quad	2951479051793528259
 func0000000000000003:
-	slli	a2, a1, 62
-	srli	a3, a0, 2
+	slli	a2, a1, 2
+	srli	a3, a0, 62
 	li	a4, -1
-	slli	a5, a1, 2
-	srli	a1, a1, 58
 	or	a2, a2, a3
-	andi	a5, a5, -16
-	srli	a3, a2, 60
-	or	a3, a3, a5
-	lui	a5, %hi(.LCPI0_0)
+	slli	a3, a0, 2
+	srli	a1, a1, 58
 	srli	a4, a4, 4
-	ld	a5, %lo(.LCPI0_0)(a5)
 	and	a2, a2, a4
+	lui	a4, %hi(.LCPI0_0)
+	srli	a3, a3, 4
+	ld	a4, %lo(.LCPI0_0)(a4)
+	add	a1, a1, a3
 	add	a1, a1, a2
 	li	a2, 25
-	and	a3, a3, a4
-	add	a1, a1, a3
-	mulhu	a3, a1, a5
+	mulhu	a3, a1, a4
 	srli	a3, a3, 2
 	mul	a2, a3, a2
 	sub	a1, a1, a2

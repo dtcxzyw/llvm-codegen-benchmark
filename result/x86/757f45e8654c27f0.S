@@ -1,16 +1,14 @@
 	.att_syntax
 func0000000000000000:
-	movq	%rsi, %rdx
 	movb	$60, %al
+	movq	%rdi, %rcx
+	shrdq	$62, %rsi, %rcx
+	bzhiq	%rax, %rcx, %rcx
 	shrdq	$2, %rsi, %rdi
-	bzhiq	%rax, %rdi, %rsi
-	movq	%rdx, %rcx
-	shrq	$2, %rcx
-	movq	%rdi, %r8
-	shrdq	$60, %rcx, %r8
-	bzhiq	%rax, %r8, %rax
+	bzhiq	%rax, %rdi, %rax
+	addq	%rcx, %rax
+	movq	%rsi, %rdx
 	shrq	$58, %rdx
-	addq	%rsi, %rdx
 	addq	%rax, %rdx
 	movabsq	$2951479051793528259, %rax
 	mulxq	%rax, %rax, %rax
@@ -18,15 +16,16 @@ func0000000000000000:
 	leaq	(%rax,%rax,4), %rax
 	leaq	(%rax,%rax,4), %rax
 	subq	%rax, %rdx
+	shrq	$2, %rsi
 	subq	%rdx, %rdi
-	sbbq	$0, %rcx
-	movabsq	$2951479051793528258, %rsi
-	imulq	%rdi, %rsi
-	movabsq	$-8116567392432202711, %r8
+	sbbq	$0, %rsi
+	movabsq	$2951479051793528258, %r8
+	imulq	%rdi, %r8
+	movabsq	$-8116567392432202711, %rcx
 	movq	%rdi, %rdx
-	mulxq	%r8, %rax, %rdx
-	addq	%rsi, %rdx
-	imulq	%r8, %rcx
+	mulxq	%rcx, %rax, %rdx
+	addq	%r8, %rdx
+	imulq	%rsi, %rcx
 	addq	%rdx, %rcx
 	movq	%rcx, %rdx
 	retq
