@@ -80,9 +80,9 @@ func000000000000000a:
 	retq
 
 func000000000000000c:
+	movq	%rsi, %rax
 	cmpl	$1, %edi
-	sbbq	$0, %rsi
-	leaq	68(%rsi), %rax
+	sbbq	$-68, %rax
 	retq
 
 func0000000000000144:

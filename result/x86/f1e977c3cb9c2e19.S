@@ -1,10 +1,10 @@
 	.att_syntax
 func000000000000000b:
+	andl	$1, %edi
+	negq	%rdi
 	cmpl	$1, %esi
 	movl	$3, %eax
-	sbbq	$0, %rax
-	andl	$1, %edi
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 
 func0000000000000053:

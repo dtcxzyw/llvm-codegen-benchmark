@@ -6,9 +6,9 @@ func0000000000000291:
 	retq
 
 func0000000000000285:
+	movl	%esi, %eax
 	cmpb	$1, %dil
-	sbbl	$0, %esi
-	leal	-5(%rsi), %eax
+	sbbl	$5, %eax
 	retq
 
 func0000000000000004:

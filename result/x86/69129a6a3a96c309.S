@@ -1,10 +1,10 @@
 	.att_syntax
 func000000000000000b:
+	movzbl	%dil, %ecx
+	negq	%rcx
 	cmpb	$1, %sil
-	movq	$-257, %rcx
-	sbbq	$0, %rcx
-	movzbl	%dil, %eax
-	addq	%rcx, %rax
+	movq	$-257, %rax
+	sbbq	%rcx, %rax
 	retq
 
 func0000000000000025:

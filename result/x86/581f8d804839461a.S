@@ -16,9 +16,9 @@ func0000000000000013:
 	retq
 
 func0000000000000011:
+	movl	%edi, %eax
 	cmpw	$100, %si
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000005:

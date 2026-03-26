@@ -57,9 +57,9 @@ func0000000000000012:
 	retq
 
 func0000000000000005:
+	movq	%rdi, %rax
 	cmpq	$1, %rsi
-	sbbq	$0, %rdi
-	leaq	-16382(%rdi), %rax
+	sbbq	$16382, %rax
 	retq
 
 func000000000000001b:

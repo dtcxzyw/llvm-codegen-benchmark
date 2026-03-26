@@ -31,9 +31,9 @@ func0000000000000031:
 func0000000000000011:
 	addq	%rdx, %rsi
 	shrq	$62, %rsi
+	negq	%rdi
 	cmpq	$1, %rsi
 	movq	$-1023, %rax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 

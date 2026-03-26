@@ -18,8 +18,7 @@ func0000000000000037:
 
 func0000000000000083:
 	cmpl	$20, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
 

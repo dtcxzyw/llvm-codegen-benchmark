@@ -1,10 +1,10 @@
 	.att_syntax
 func0000000000003a34:
 	addq	%rdx, %rsi
+	negl	%edi
 	cmpq	$16777216, %rsi
 	movl	$127, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	cmpl	$255, %eax
 	setb	%al
 	retq

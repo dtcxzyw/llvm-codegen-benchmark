@@ -7,10 +7,10 @@ func000000000000000b:
 	retq
 
 func000000000000000f:
+	movl	%edi, %eax
 	andl	$256, %esi
-	shrl	$10, %edi
+	shrl	$10, %eax
 	cmpl	$1, %esi
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 

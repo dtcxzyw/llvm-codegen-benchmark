@@ -47,10 +47,11 @@ func0000000000000110:
 	retq
 
 func0000000000000030:
-	cmpl	$1, %edx
-	sbbq	$0, %rdi
 	movl	%esi, %eax
-	leaq	10(%rdi,%rax), %rax
+	negq	%rax
+	cmpl	$1, %edx
+	sbbq	%rax, %rdi
+	leaq	10(%rdi), %rax
 	retq
 
 func0000000000000100:

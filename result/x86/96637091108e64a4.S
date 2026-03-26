@@ -67,11 +67,11 @@ func0000000000000033:
 	retq
 
 func0000000000000005:
-	andl	$-67108868, %edx
-	orl	%edi, %edx
+	movl	%edx, %eax
+	andl	$-67108868, %eax
+	orl	%edi, %eax
 	cmpl	$1, %esi
-	sbbl	$0, %edx
-	leal	2(%rdx), %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000013:

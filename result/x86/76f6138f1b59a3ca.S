@@ -8,10 +8,10 @@ func00000000000000a1:
 	retq
 
 func00000000000000a8:
+	negq	%rdi
 	cmpl	$1, %esi
 	movl	$5, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	movabsq	$768614336404564650, %rcx
 	cmpq	%rcx, %rax
 	seta	%al

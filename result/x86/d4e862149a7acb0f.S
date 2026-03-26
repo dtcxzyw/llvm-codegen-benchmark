@@ -1,7 +1,7 @@
 	.att_syntax
 func0000000000000001:
+	movq	%rsi, %rax
 	cmpq	$1, %rdi
-	sbbq	$0, %rsi
-	leaq	10(%rsi), %rax
+	sbbq	$-10, %rax
 	retq
 

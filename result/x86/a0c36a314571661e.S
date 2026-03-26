@@ -24,14 +24,16 @@ func0000000000000015:
 	retq
 
 func0000000000000045:
+	movl	%esi, %eax
+	negl	%edi
 	cmpb	$3, %dl
-	sbbl	$0, %esi
-	leal	(%rsi,%rdi), %eax
+	sbbl	%edi, %eax
 	retq
 
 func0000000000000145:
+	movl	%esi, %eax
+	negl	%edi
 	cmpb	$3, %dl
-	sbbl	$0, %esi
-	leal	(%rsi,%rdi), %eax
+	sbbl	%edi, %eax
 	retq
 

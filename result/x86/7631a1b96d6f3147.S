@@ -23,9 +23,9 @@ func0000000000000004:
 
 func0000000000000006:
 	andl	%edx, %esi
+	negl	%edi
 	cmpl	$1, %esi
 	movl	$65537, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	retq
 

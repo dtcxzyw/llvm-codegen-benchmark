@@ -26,10 +26,11 @@ func0000000000000020:
 	retq
 
 func0000000000000004:
+	movq	%rdi, %rcx
+	negq	%rcx
 	cmpq	$1, %rdi
 	movl	$9, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rcx, %rax
 	retq
 
 func0000000000000019:
@@ -47,10 +48,11 @@ func0000000000000029:
 	retq
 
 func0000000000000005:
+	movq	%rdi, %rcx
+	negq	%rcx
 	cmpq	$1, %rdi
 	movl	$9, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rcx, %rax
 	retq
 
 func0000000000000018:

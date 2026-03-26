@@ -38,9 +38,9 @@ func0000000000000013:
 	retq
 
 func0000000000000011:
+	movq	%rdi, %rax
 	cmpq	%rdx, %rsi
-	sbbq	$0, %rdi
-	leaq	1022(%rdi), %rax
+	sbbq	$-1022, %rax
 	retq
 
 func0000000000000018:

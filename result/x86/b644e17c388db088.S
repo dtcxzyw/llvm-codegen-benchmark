@@ -20,16 +20,15 @@ func0000000000000261:
 
 func0000000000000228:
 	cmpq	%rdx, %rsi
-	sbbq	$0, %rdi
-	addq	$126, %rdi
+	sbbq	$-126, %rdi
 	cmpq	$253, %rdi
 	setae	%al
 	retq
 
 func0000000000000226:
+	movq	%rdi, %rax
 	cmpq	%rdx, %rsi
-	sbbq	$0, %rdi
-	leaq	126(%rdi), %rax
+	sbbq	$-126, %rax
 	shrq	$63, %rax
 	retq
 

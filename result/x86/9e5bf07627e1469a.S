@@ -38,11 +38,11 @@ func0000000000000015:
 	retq
 
 func000000000000001f:
+	negl	%esi
 	cmpw	$1, %dx
 	movl	$3, %eax
-	sbbl	$0, %eax
+	sbbl	%esi, %eax
 	addl	%edi, %eax
-	addl	%esi, %eax
 	retq
 
 func000000000000008c:

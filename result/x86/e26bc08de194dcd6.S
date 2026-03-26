@@ -18,11 +18,11 @@ func00000000000000a0:
 	retq
 
 func000000000000001f:
+	negq	%rsi
 	cmpl	$1, %edx
 	movl	$3, %eax
-	sbbq	$0, %rax
+	sbbq	%rsi, %rax
 	addq	%rdi, %rax
-	addq	%rsi, %rax
 	retq
 
 func0000000000000060:

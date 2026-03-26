@@ -29,10 +29,10 @@ func00000000000000a1:
 	retq
 
 func00000000000000ac:
+	negl	%esi
 	cmpl	$1, %edi
 	movl	$-1, %eax
-	sbbl	$0, %eax
-	addl	%esi, %eax
+	sbbl	%esi, %eax
 	retq
 
 func0000000000000008:
@@ -58,10 +58,10 @@ func000000000000000c:
 	retq
 
 func0000000000000004:
+	negl	%esi
 	cmpl	$2, %edi
 	movl	$-1, %eax
-	sbbl	$0, %eax
-	addl	%esi, %eax
+	sbbl	%esi, %eax
 	retq
 
 func00000000000001e1:

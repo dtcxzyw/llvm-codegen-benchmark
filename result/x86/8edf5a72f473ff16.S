@@ -64,8 +64,8 @@ func0000000000000019:
 	retq
 
 func0000000000000029:
+	movq	%rdi, %rax
 	cmpl	$23104, %esi
-	sbbq	$0, %rdi
-	leaq	2(%rdi), %rax
+	sbbq	$-2, %rax
 	retq
 

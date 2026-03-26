@@ -8,15 +8,15 @@ func0000000000000061:
 	retq
 
 func0000000000000018:
+	movq	%rdi, %rax
 	cmpl	$1, %esi
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000011:
+	movq	%rdi, %rax
 	cmpl	$1, %esi
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000010:
@@ -34,9 +34,9 @@ func0000000000000013:
 	retq
 
 func0000000000000041:
+	movq	%rdi, %rax
 	cmpl	$65536, %esi
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func000000000000001f:

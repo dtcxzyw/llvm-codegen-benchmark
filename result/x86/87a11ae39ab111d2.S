@@ -15,8 +15,7 @@ func000000000000022a:
 
 func00000000000000a6:
 	cmpb	$1, %dl
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
@@ -77,10 +76,10 @@ func0000000000000364:
 	retq
 
 func00000000000000f8:
+	negl	%esi
 	cmpb	$1, %dl
 	movl	$7, %eax
-	sbbl	$0, %eax
-	addl	%esi, %eax
+	sbbl	%esi, %eax
 	cmpl	%edi, %eax
 	seta	%al
 	retq

@@ -59,10 +59,11 @@ func00000000000000c0:
 	retq
 
 func0000000000000040:
+	negq	%rdi
 	cmpb	$100, %sil
 	movl	$3, %eax
-	sbbq	$0, %rax
-	leaq	-1(%rdi,%rax), %rax
+	sbbq	%rdi, %rax
+	decq	%rax
 	retq
 
 func00000000000000af:

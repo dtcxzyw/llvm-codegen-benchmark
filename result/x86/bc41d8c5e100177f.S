@@ -14,9 +14,9 @@ func00000000000000c2:
 	retq
 
 func000000000000000f:
+	movl	%edi, %eax
 	cmpl	$1, %esi
-	sbbl	$0, %edi
-	leal	6(%rdi), %eax
+	sbbl	$-6, %eax
 	retq
 
 func0000000000000067:
@@ -85,9 +85,9 @@ func00000000000000a7:
 	retq
 
 func00000000000000a0:
+	movl	%edi, %eax
 	cmpl	$65536, %esi
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func000000000000000a:

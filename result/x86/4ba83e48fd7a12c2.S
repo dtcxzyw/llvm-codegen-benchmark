@@ -16,10 +16,10 @@ func0000000000000030:
 
 func0000000000000021:
 	andl	$-256, %esi
+	negl	%edi
 	cmpq	$1, %rsi
 	movl	$3, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	retq
 
 func0000000000000004:

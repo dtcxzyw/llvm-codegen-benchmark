@@ -40,9 +40,9 @@ func0000000000000028:
 	retq
 
 func0000000000000007:
+	movl	%edi, %eax
 	cmpl	$1, %edi
-	sbbl	$0, %edi
-	leal	128(%rdi), %eax
+	sbbl	$-128, %eax
 	retq
 
 func0000000000000004:

@@ -4,9 +4,9 @@ func0000000000000001:
 	movzbl	%sil, %eax
 	andl	$1, %eax
 	leal	(%rax,%rax,4), %ecx
+	negl	%ecx
 	cmpl	$1, %edi
 	movl	$173, %eax
-	sbbl	$0, %eax
-	addl	%ecx, %eax
+	sbbl	%ecx, %eax
 	retq
 

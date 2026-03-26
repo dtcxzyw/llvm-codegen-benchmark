@@ -14,10 +14,10 @@ func0000000000000005:
 	retq
 
 func0000000000000030:
+	negq	%rdi
 	cmpq	$1, %rsi
 	movl	$3, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 
 func0000000000000007:
@@ -29,8 +29,8 @@ func0000000000000007:
 	retq
 
 func0000000000000033:
+	movq	%rdi, %rax
 	cmpq	$1, %rsi
-	sbbq	$0, %rdi
-	leaq	2(%rdi), %rax
+	sbbq	$-2, %rax
 	retq
 

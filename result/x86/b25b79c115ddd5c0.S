@@ -195,32 +195,28 @@ func0000000000000224:
 
 func0000000000000266:
 	cmpl	$65536, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
 
 func0000000000000226:
 	cmpl	$65536, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
 
 func0000000000000a2a:
 	cmpl	$65536, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	setg	%al
 	retq
 
 func0000000000000221:
 	cmpl	$65536, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
@@ -237,8 +233,7 @@ func0000000000000206:
 
 func000000000000022a:
 	cmpl	$65536, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	setg	%al
 	retq

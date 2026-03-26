@@ -30,9 +30,9 @@ func0000000000000015:
 	retq
 
 func0000000000000040:
+	movl	%edi, %eax
 	cmpl	$192, %esi
-	sbbl	$0, %edi
-	leal	3(%rdi), %eax
+	sbbl	$-3, %eax
 	retq
 
 func0000000000000045:

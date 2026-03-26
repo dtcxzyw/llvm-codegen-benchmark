@@ -15,10 +15,10 @@ func00000000000000a0:
 	retq
 
 func000000000000014b:
-	movabsq	$1000000000000000, %rax
-	cmpq	%rax, %rsi
-	sbbq	$0, %rdi
-	leaq	2(%rdi), %rax
+	movq	%rdi, %rax
+	movabsq	$1000000000000000, %rcx
+	cmpq	%rcx, %rsi
+	sbbq	$-2, %rax
 	retq
 
 func000000000000001b:
@@ -30,10 +30,10 @@ func000000000000001b:
 	retq
 
 func000000000000004b:
-	movabsq	$-8446744073709551616, %rax
-	cmpq	%rax, %rsi
-	sbbq	$0, %rdi
-	leaq	2(%rdi), %rax
+	movq	%rdi, %rax
+	movabsq	$-8446744073709551616, %rcx
+	cmpq	%rcx, %rsi
+	sbbq	$-2, %rax
 	retq
 
 func00000000000000cb:

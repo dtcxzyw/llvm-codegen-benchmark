@@ -30,9 +30,9 @@ func0000000000000104:
 func0000000000000006:
 	shrxl	%edx, %esi, %eax
 	andl	$2, %eax
+	negl	%edi
 	cmpl	$1, %eax
 	movl	$65537, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	retq
 

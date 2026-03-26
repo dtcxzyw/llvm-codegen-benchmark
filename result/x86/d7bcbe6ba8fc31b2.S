@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000004:
+	movq	%rdi, %rax
 	andl	$73184, %esi
 	cmpq	$1, %rsi
-	sbbq	$0, %rdi
-	leaq	2(%rdi), %rax
+	sbbq	$-2, %rax
 	retq
 
 func0000000000000007:

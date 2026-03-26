@@ -16,9 +16,10 @@ func000000000000001f:
 	retq
 
 func000000000000001c:
+	negl	%edi
 	cmpl	$1, %edx
-	sbbl	$0, %esi
-	leal	6(%rsi,%rdi), %eax
+	sbbl	%edi, %esi
+	leal	6(%rsi), %eax
 	retq
 
 func00000000000000a0:

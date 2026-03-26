@@ -9,9 +9,9 @@ func00000000000000a1:
 	retq
 
 func0000000000000001:
+	movl	%esi, %eax
 	cmpq	$1, %rdi
-	sbbl	$0, %esi
-	leal	2(%rsi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func00000000000000aa:

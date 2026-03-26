@@ -25,8 +25,9 @@ func000000000000001f:
 	retq
 
 func0000000000000015:
+	negq	%rdi
 	cmpq	$1, %rdx
-	sbbq	$0, %rsi
-	leaq	4(%rsi,%rdi), %rax
+	sbbq	%rdi, %rsi
+	leaq	4(%rsi), %rax
 	retq
 

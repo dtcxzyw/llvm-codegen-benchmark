@@ -4,8 +4,7 @@ func000000000000010b:
 	cmpl	$256, %esi
 	sete	%al
 	cmpl	$1, %edi
-	sbbl	$0, %eax
-	addl	$6, %eax
+	sbbl	$-6, %eax
 	retq
 
 func0000000000000c0b:
@@ -13,7 +12,6 @@ func0000000000000c0b:
 	testl	%esi, %esi
 	setne	%al
 	cmpl	$1, %edi
-	sbbl	$0, %eax
-	addl	$2, %eax
+	sbbl	$-2, %eax
 	retq
 

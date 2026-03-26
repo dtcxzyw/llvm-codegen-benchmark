@@ -9,9 +9,10 @@ func000000000000007f:
 	retq
 
 func0000000000000040:
+	negq	%rdi
 	cmpl	$1, %edx
-	sbbq	$0, %rsi
-	leaq	13(%rsi,%rdi), %rax
+	sbbq	%rdi, %rsi
+	leaq	13(%rsi), %rax
 	retq
 
 func000000000000004c:

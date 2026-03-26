@@ -55,9 +55,9 @@ func0000000000000004:
 	retq
 
 func0000000000000044:
+	movl	%esi, %eax
 	cmpb	$64, %dil
-	sbbl	$0, %esi
-	leal	2(%rsi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000081:

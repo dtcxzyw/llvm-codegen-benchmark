@@ -8,16 +8,16 @@ func0000000000000004:
 
 func0000000000000007:
 	andb	$63, %sil
+	negq	%rdi
 	cmpb	$1, %sil
 	movq	$-257, %rax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 
 func0000000000000005:
+	movq	%rdi, %rax
 	andb	$63, %sil
 	cmpb	$1, %sil
-	sbbq	$0, %rdi
-	leaq	-2(%rdi), %rax
+	sbbq	$2, %rax
 	retq
 

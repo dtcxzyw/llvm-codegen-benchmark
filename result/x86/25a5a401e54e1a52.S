@@ -29,9 +29,9 @@ func0000000000000005:
 	imull	$-1227133513, %esi, %eax
 	addl	$306783376, %eax
 	rorxl	$2, %eax, %eax
+	negl	%edi
 	cmpl	$153391689, %eax
 	movl	$3, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	retq
 

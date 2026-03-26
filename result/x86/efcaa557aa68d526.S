@@ -42,10 +42,10 @@ func0000000000000004:
 
 func0000000000000011:
 	shrq	$62, %rsi
+	negl	%edi
 	cmpq	$1, %rsi
 	movl	$64513, %eax
-	sbbl	$0, %eax
-	addl	%eax, %edi
-	movzwl	%di, %eax
+	sbbl	%edi, %eax
+	movzwl	%ax, %eax
 	retq
 

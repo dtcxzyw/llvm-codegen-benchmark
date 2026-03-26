@@ -2,8 +2,7 @@
 func000000000000000f:
 	movzbl	%dil, %eax
 	cmpb	$1, %sil
-	sbbl	$0, %eax
-	addl	$2, %eax
+	sbbl	$-2, %eax
 	retq
 
 func000000000000000b:

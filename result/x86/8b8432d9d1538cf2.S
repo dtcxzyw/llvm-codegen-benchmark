@@ -1,8 +1,8 @@
 	.att_syntax
 func0000000000000004:
+	movq	%rdi, %rax
 	cmpl	$1, %esi
-	sbbq	$0, %rdi
-	leaq	2(%rdi), %rax
+	sbbq	$-2, %rax
 	retq
 
 func0000000000000013:
@@ -13,10 +13,10 @@ func0000000000000013:
 	retq
 
 func0000000000000005:
+	negq	%rdi
 	cmpl	$1, %esi
 	movl	$5, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 
 func0000000000000007:

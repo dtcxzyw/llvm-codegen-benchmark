@@ -2,8 +2,7 @@
 func0000000000000081:
 	andl	$2144, %edx
 	cmpl	$1, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%esi, %edi
 	sete	%al
 	retq

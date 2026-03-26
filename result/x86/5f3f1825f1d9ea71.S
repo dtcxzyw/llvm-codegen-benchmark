@@ -18,10 +18,10 @@ func0000000000000081:
 	retq
 
 func0000000000000088:
+	negq	%rsi
 	cmpb	$1, %dl
 	movq	$-1, %rax
-	sbbq	$0, %rax
-	addq	%rsi, %rax
+	sbbq	%rsi, %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq

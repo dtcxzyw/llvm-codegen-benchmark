@@ -70,10 +70,10 @@ func000000000000001b:
 	retq
 
 func0000000000000013:
+	negl	%edi
 	cmpl	%edx, %esi
 	movl	$5, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	retq
 
 func0000000000000023:
@@ -83,9 +83,9 @@ func0000000000000023:
 	retq
 
 func0000000000000010:
+	movl	%edi, %eax
 	cmpl	%edx, %esi
-	sbbl	$0, %edi
-	leal	4(%rdi), %eax
+	sbbl	$-4, %eax
 	retq
 
 func000000000000002d:

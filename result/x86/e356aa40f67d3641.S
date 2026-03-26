@@ -1,9 +1,10 @@
 	.att_syntax
 func0000000000000010:
+	negq	%rdi
 	cmpq	$1, %rsi
 	movl	$3, %eax
-	sbbq	$0, %rax
-	leaq	1(%rdi,%rax), %rax
+	sbbq	%rdi, %rax
+	incq	%rax
 	retq
 
 func0000000000000015:

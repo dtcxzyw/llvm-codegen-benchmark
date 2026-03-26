@@ -1,10 +1,10 @@
 	.att_syntax
 func0000000000000013:
 	decl	%esi
+	negq	%rdi
 	cmpl	$3, %esi
 	movl	$111, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 
 func0000000000000093:

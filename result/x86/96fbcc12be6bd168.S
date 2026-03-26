@@ -9,11 +9,11 @@ func0000000000000010:
 	retq
 
 func000000000000001f:
+	addq	%rsi, %rdi
+	negq	%rdi
 	cmpl	$1, %edx
 	movl	$3, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
-	addq	%rsi, %rax
+	sbbq	%rdi, %rax
 	retq
 
 func00000000000000c5:

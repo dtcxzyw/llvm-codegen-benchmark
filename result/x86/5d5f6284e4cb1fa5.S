@@ -17,9 +17,10 @@ func0000000000000085:
 	retq
 
 func000000000000001c:
+	negl	%edi
 	cmpq	$1, %rdx
-	sbbl	$0, %esi
-	leal	6(%rsi,%rdi), %eax
+	sbbl	%edi, %esi
+	leal	6(%rsi), %eax
 	retq
 
 func00000000000000a0:
@@ -46,11 +47,11 @@ func000000000000001f:
 	retq
 
 func0000000000000145:
+	negl	%esi
 	movabsq	$10000000000000000, %rax
 	cmpq	%rax, %rdx
 	movl	$17, %eax
-	sbbl	$0, %eax
+	sbbl	%esi, %eax
 	addl	%edi, %eax
-	addl	%esi, %eax
 	retq
 

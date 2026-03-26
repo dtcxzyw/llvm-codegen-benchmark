@@ -38,20 +38,20 @@ func0000000000000608:
 
 func0000000000000228:
 	shrq	$62, %rsi
+	negq	%rdi
 	cmpq	$1, %rsi
 	movq	$-127, %rax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	cmpq	$253, %rax
 	setae	%al
 	retq
 
 func000000000000022c:
 	shrq	$62, %rsi
+	negq	%rdi
 	cmpq	$1, %rsi
 	movq	$-127, %rax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	cmpq	$253, %rax
 	setne	%al
 	retq

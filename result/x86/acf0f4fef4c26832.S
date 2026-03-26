@@ -1,11 +1,10 @@
 	.att_syntax
 func00000000000028b4:
+	subl	%edi, %esi
 	cmpq	$16777216, %rdx
 	movl	$127, %eax
-	sbbl	$0, %eax
-	subl	%esi, %edi
-	addl	%eax, %edi
-	cmpl	$255, %edi
+	sbbl	%esi, %eax
+	cmpl	$255, %eax
 	setb	%al
 	retq
 

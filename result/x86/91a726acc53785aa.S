@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000a34:
+	negl	%edi
 	cmpq	$16777216, %rsi
 	movl	$127, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	cmpl	$255, %eax
 	setb	%al
 	retq
@@ -35,8 +35,7 @@ func00000000000000aa:
 
 func0000000000000086:
 	cmpq	$1, %rsi
-	sbbl	$0, %edi
-	addl	$2, %edi
+	sbbl	$-2, %edi
 	cmpl	$4, %edi
 	setl	%al
 	retq

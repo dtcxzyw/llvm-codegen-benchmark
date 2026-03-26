@@ -17,17 +17,17 @@ func000000000000000b:
 	retq
 
 func0000000000000063:
-	shrl	$2, %edi
+	movl	%edi, %eax
+	shrl	$2, %eax
 	cmpl	$1, %esi
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func000000000000000f:
-	shrl	$10, %edi
+	movl	%edi, %eax
+	shrl	$10, %eax
 	cmpl	$1, %esi
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func00000000000000a3:

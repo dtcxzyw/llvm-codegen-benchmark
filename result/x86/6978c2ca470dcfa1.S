@@ -2,8 +2,7 @@
 func000000000000001f:
 	leal	(%rdi,%rsi), %eax
 	cmpl	$1, %edx
-	sbbl	$0, %eax
-	addl	$2, %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000015:
@@ -93,15 +92,13 @@ func0000000000000040:
 func000000000000004f:
 	leal	(%rdi,%rsi), %eax
 	cmpl	$65536, %edx
-	sbbl	$0, %eax
-	addl	$2, %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000045:
 	leal	(%rdi,%rsi), %eax
 	cmpl	$65536, %edx
-	sbbl	$0, %eax
-	addl	$2, %eax
+	sbbl	$-2, %eax
 	retq
 
 func00000000000000a0:

@@ -23,10 +23,10 @@ func0000000000000011:
 	retq
 
 func0000000000000051:
+	negl	%edi
 	cmpq	$16777216, %rsi
 	movl	$127, %eax
-	sbbl	$0, %eax
-	addl	%edi, %eax
+	sbbl	%edi, %eax
 	retq
 
 func0000000000000063:

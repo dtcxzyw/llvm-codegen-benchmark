@@ -8,9 +8,9 @@ func0000000000000006:
 	retq
 
 func0000000000000007:
+	negq	%rdi
 	cmpb	$1, %sil
 	movl	$3, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 

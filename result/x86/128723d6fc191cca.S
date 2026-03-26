@@ -29,8 +29,7 @@ func0000000000000088:
 
 func0000000000000084:
 	cmpl	$1, %edx
-	sbbq	$0, %rsi
-	addq	$2, %rsi
+	sbbq	$-2, %rsi
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq

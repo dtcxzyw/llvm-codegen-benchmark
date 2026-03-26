@@ -21,9 +21,9 @@ func0000000000000027:
 	retq
 
 func0000000000000024:
+	negq	%rdi
 	cmpb	$100, %sil
 	movl	$3, %eax
-	sbbq	$0, %rax
-	addq	%rdi, %rax
+	sbbq	%rdi, %rax
 	retq
 

@@ -20,9 +20,9 @@ func0000000000000060:
 	retq
 
 func000000000000000b:
+	movl	%edi, %eax
 	cmpb	$1, %sil
-	sbbl	$0, %edi
-	leal	2(%rdi), %eax
+	sbbl	$-2, %eax
 	retq
 
 func0000000000000008:

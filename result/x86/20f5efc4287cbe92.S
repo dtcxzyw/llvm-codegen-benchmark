@@ -13,9 +13,9 @@ func0000000000000006:
 	retq
 
 func0000000000000004:
+	movq	%rdi, %rax
 	andl	$16, %esi
 	cmpw	$1, %si
-	sbbq	$0, %rdi
-	leaq	10(%rdi), %rax
+	sbbq	$-10, %rax
 	retq
 

@@ -6,15 +6,17 @@ func00000000000000c0:
 	retq
 
 func0000000000000015:
+	movl	%esi, %eax
+	negl	%edi
 	cmpq	$1, %rdx
-	sbbl	$0, %esi
-	leal	(%rsi,%rdi), %eax
+	sbbl	%edi, %eax
 	retq
 
 func0000000000000010:
+	movl	%esi, %eax
+	negl	%edi
 	cmpq	$1, %rdx
-	sbbl	$0, %esi
-	leal	(%rsi,%rdi), %eax
+	sbbl	%edi, %eax
 	retq
 
 func00000000000000c5:

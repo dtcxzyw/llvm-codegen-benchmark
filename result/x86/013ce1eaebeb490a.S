@@ -20,9 +20,9 @@ func0000000000000006:
 	retq
 
 func0000000000000050:
+	movq	%rdi, %rax
 	cmpl	$10, %esi
-	sbbq	$0, %rdi
-	leaq	2(%rdi), %rax
+	sbbq	$-2, %rax
 	retq
 
 func0000000000000004:

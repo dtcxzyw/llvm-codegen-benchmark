@@ -10,8 +10,7 @@ func0000000000000088:
 
 func00000000000000a1:
 	cmpq	$1, %rdx
-	sbbq	$0, %rsi
-	addq	$-16382, %rsi
+	sbbq	$16382, %rsi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
@@ -19,8 +18,7 @@ func00000000000000a1:
 func0000000000000221:
 	shrq	$61, %rdx
 	cmpq	$1, %rdx
-	sbbq	$0, %rsi
-	addq	$-126, %rsi
+	sbbq	$126, %rsi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq

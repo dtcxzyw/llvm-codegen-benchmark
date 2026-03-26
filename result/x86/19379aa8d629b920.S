@@ -1,8 +1,7 @@
 	.att_syntax
 func0000000000000081:
 	cmpl	$1, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
@@ -139,8 +138,7 @@ func00000000000000a1:
 
 func0000000000000261:
 	cmpl	$65536, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%esi, %edi
 	sete	%al
 	retq

@@ -1,24 +1,25 @@
 	.att_syntax
 func0000000000000010:
+	negq	%rsi
 	cmpb	$1, %dl
 	movq	$-1, %rax
-	sbbq	$0, %rax
+	sbbq	%rsi, %rax
 	addq	%rdi, %rax
-	addq	%rsi, %rax
 	retq
 
 func000000000000001c:
+	negq	%rsi
 	cmpb	$1, %dl
 	movq	$-257, %rax
-	sbbq	$0, %rax
+	sbbq	%rsi, %rax
 	addq	%rdi, %rax
-	addq	%rsi, %rax
 	retq
 
 func0000000000000014:
+	negq	%rdi
 	cmpb	$1, %dl
-	sbbq	$0, %rsi
-	leaq	-2(%rsi,%rdi), %rax
+	sbbq	%rdi, %rsi
+	leaq	-2(%rsi), %rax
 	retq
 
 func000000000000001f:

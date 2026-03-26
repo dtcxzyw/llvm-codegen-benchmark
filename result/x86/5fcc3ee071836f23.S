@@ -41,8 +41,7 @@ func0000000000000088:
 func00000000000000a6:
 	andl	$3, %edx
 	cmpl	$1, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
@@ -58,8 +57,7 @@ func000000000000008a:
 func00000000000000aa:
 	andl	$16711680, %edx
 	cmpl	$1, %edx
-	sbbl	$0, %esi
-	addl	$2, %esi
+	sbbl	$-2, %esi
 	cmpl	%edi, %esi
 	setg	%al
 	retq

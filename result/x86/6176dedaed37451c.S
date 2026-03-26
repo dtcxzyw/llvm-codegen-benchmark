@@ -30,12 +30,12 @@ func0000000000000017:
 	retq
 
 func0000000000000045:
+	negq	%rsi
 	movabsq	$1553255926290448384, %rax
 	cmpq	%rax, %rdx
 	movq	$-1, %rax
-	sbbq	$0, %rax
+	sbbq	%rsi, %rax
 	addq	%rdi, %rax
-	addq	%rsi, %rax
 	retq
 
 func000000000000008c:
