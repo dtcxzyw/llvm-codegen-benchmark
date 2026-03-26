@@ -72,14 +72,14 @@ func0000000000000015:
 	.short	43
 	.short	43
 	.short	43
-	.short	43
-	.short	43
-	.short	43
-	.short	43
-	.short	43
-	.short	43
-	.short	43
-	.short	43
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_3:
 	.byte	32
 	.byte	16

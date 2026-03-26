@@ -4,10 +4,10 @@
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000006:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
@@ -39,9 +39,8 @@ func0000000000000006:
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0
-	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm0
-	vpsrlw	$1, %xmm0, %xmm0
+	vpsrlw	$3, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -50,10 +49,10 @@ func0000000000000006:
 	.short	25891
 	.short	25891
 	.short	25891
-	.short	25891
-	.short	25891
-	.short	25891
-	.short	25891
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000004:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx

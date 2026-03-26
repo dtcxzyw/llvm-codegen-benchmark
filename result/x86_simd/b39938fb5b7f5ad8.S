@@ -4,10 +4,10 @@
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000000d:
 	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
@@ -21,10 +21,10 @@ func000000000000000d:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000009:
 	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
@@ -38,10 +38,10 @@ func0000000000000009:
 	.short	8389
 	.short	8389
 	.short	8389
-	.short	8389
-	.short	8389
-	.short	8389
-	.short	8389
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000001:
 	vpmovdw	%xmm0, %xmm0
 	vpsrlw	$3, %xmm0, %xmm0

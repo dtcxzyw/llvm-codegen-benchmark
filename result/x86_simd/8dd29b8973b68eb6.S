@@ -42,14 +42,14 @@
 	.short	171
 	.short	171
 	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_3:
 	.zero	4,31
 .LCPI0_4:

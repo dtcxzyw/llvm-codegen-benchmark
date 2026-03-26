@@ -4,10 +4,10 @@
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000001:
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpsrlw	$10, %xmm0, %xmm0

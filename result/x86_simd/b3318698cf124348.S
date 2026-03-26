@@ -8,16 +8,31 @@
 	.short	205
 	.short	205
 	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
+	.short	0
 .LCPI0_1:
-	.zero	16,248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_2:
 	.byte	0
 	.byte	0

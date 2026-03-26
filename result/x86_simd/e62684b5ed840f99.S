@@ -8,14 +8,14 @@
 	.short	79
 	.short	79
 	.short	79
-	.short	79
-	.short	79
-	.short	79
-	.short	79
-	.short	79
-	.short	79
-	.short	79
-	.short	79
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_2:
 	.short	52
 	.short	0
@@ -78,14 +78,14 @@ func0000000000000007:
 	.short	205
 	.short	205
 	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_2:
 	.short	65526
 	.short	0

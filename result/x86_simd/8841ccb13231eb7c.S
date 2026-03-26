@@ -8,14 +8,14 @@
 	.short	103
 	.short	103
 	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.byte	128
 	.byte	128

@@ -59,18 +59,18 @@ func0000000000000000:
 	.short	103
 	.short	103
 	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
-	.short	103
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
 	.byte	128
 	.byte	128

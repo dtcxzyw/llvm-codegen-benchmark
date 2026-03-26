@@ -1,13 +1,13 @@
 	.att_syntax
 .LCPI0_0:
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
+	.short	2185
+	.short	2185
+	.short	2185
+	.short	2185
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000000d:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
@@ -48,7 +48,7 @@ func000000000000000d:
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm0
-	vpsrlw	$5, %xmm0, %xmm0
+	vpsrlw	$1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
@@ -57,10 +57,10 @@ func000000000000000d:
 	.short	25891
 	.short	25891
 	.short	25891
-	.short	25891
-	.short	25891
-	.short	25891
-	.short	25891
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000009:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx

@@ -8,14 +8,14 @@
 	.short	205
 	.short	205
 	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.byte	0
 	.byte	0
@@ -80,14 +80,14 @@ func0000000000000001:
 	.short	41
 	.short	41
 	.short	41
-	.short	41
-	.short	41
-	.short	41
-	.short	41
-	.short	41
-	.short	41
-	.short	41
-	.short	41
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
 	.byte	0
 	.byte	0

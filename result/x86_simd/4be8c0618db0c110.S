@@ -4,14 +4,14 @@
 .LCPI0_1:
 	.long	3600
 .LCPI0_2:
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
+	.short	2185
+	.short	2185
+	.short	2185
+	.short	2185
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000000e:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -25,7 +25,7 @@ func000000000000000e:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_2(%rip), %xmm0, %xmm0
-	vpsrlw	$5, %xmm0, %xmm0
+	vpsrlw	$1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -38,10 +38,10 @@ func000000000000000e:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000001e:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -54,9 +54,8 @@ func000000000000001e:
 	vpmulld	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpackusdw	%xmm0, %xmm0, %xmm0
-	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI1_2(%rip), %xmm0, %xmm0
-	vpsrlw	$1, %xmm0, %xmm0
+	vpsrlw	$3, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -69,10 +68,10 @@ func000000000000001e:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000006:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -85,9 +84,8 @@ func0000000000000006:
 	vpmulld	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpackusdw	%xmm0, %xmm0, %xmm0
-	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI2_2(%rip), %xmm0, %xmm0
-	vpsrlw	$1, %xmm0, %xmm0
+	vpsrlw	$3, %xmm0, %xmm0
 	vzeroupper
 	retq
 

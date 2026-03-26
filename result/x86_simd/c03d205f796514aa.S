@@ -4,10 +4,10 @@
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

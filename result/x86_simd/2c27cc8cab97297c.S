@@ -4,10 +4,10 @@
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000012:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0

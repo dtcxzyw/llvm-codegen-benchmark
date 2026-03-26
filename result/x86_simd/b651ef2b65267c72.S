@@ -8,14 +8,14 @@
 	.short	171
 	.short	171
 	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.byte	0
 	.byte	128
@@ -34,7 +34,22 @@
 	.byte	4
 	.byte	2
 .LCPI0_2:
-	.zero	16,254
+	.byte	254
+	.byte	254
+	.byte	254
+	.byte	254
+	.byte	254
+	.byte	254
+	.byte	254
+	.byte	254
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_3:
 	.byte	0
 	.byte	128

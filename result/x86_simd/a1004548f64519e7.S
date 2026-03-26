@@ -13,10 +13,10 @@
 	.short	12137
 	.short	12137
 	.short	12137
-	.short	12137
-	.short	12137
-	.short	12137
-	.short	12137
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_2:
 	.short	292
 func0000000000000005:

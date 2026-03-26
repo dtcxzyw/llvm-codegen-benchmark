@@ -4,48 +4,48 @@
 .LCPI0_1:
 	.long	60
 .LCPI0_2:
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.short	103
+	.short	103
+	.short	103
+	.short	103
+	.short	103
+	.short	103
+	.short	103
+	.short	103
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_3:
 	.byte	0
 	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	0
 	.byte	0
 	.byte	128
 	.byte	64
 	.byte	32
 	.byte	16
 	.byte	8
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	64
-	.byte	32
-	.byte	16
-	.byte	8
+	.byte	4
 .LCPI0_4:
 	.byte	0
 	.byte	0
-	.byte	0
 	.byte	128
 	.byte	64
 	.byte	32
 	.byte	16
 	.byte	8
+	.byte	4
 func000000000000001e:
 	vpmovzxwd	%xmm1, %ymm1
 	vpshufd	$245, %ymm0, %ymm2

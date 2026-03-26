@@ -4,19 +4,19 @@
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.short	40
 	.short	40
 	.short	40
 	.short	40
-	.short	40
-	.short	40
-	.short	40
-	.short	40
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000001:
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpsrlw	$5, %xmm1, %xmm1

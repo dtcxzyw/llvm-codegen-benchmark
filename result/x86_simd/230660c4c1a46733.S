@@ -8,14 +8,14 @@
 	.short	171
 	.short	171
 	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.byte	0
 	.byte	128
@@ -65,14 +65,14 @@ func00000000000000e7:
 	.short	171
 	.short	171
 	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
 	.byte	0
 	.byte	128
@@ -122,14 +122,14 @@ func00000000000000ea:
 	.short	171
 	.short	171
 	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
-	.short	171
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI2_1:
 	.byte	0
 	.byte	128

@@ -4,10 +4,10 @@
 	.short	11651
 	.short	11651
 	.short	11651
-	.short	11651
-	.short	11651
-	.short	11651
-	.short	11651
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000002:
 	vpackssdw	%xmm0, %xmm0, %xmm0
 	vpmulhw	.LCPI0_0(%rip), %xmm0, %xmm0

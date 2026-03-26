@@ -13,10 +13,10 @@
 	.short	8389
 	.short	8389
 	.short	8389
-	.short	8389
-	.short	8389
-	.short	8389
-	.short	8389
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000025:
 	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -40,10 +40,10 @@ func0000000000000025:
 	.short	16481
 	.short	16481
 	.short	16481
-	.short	16481
-	.short	16481
-	.short	16481
-	.short	16481
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000021:
 	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0

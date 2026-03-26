@@ -4,19 +4,19 @@
 	.short	43691
 	.short	43691
 	.short	43691
-	.short	43691
-	.short	43691
-	.short	43691
-	.short	43691
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.short	6
 	.short	6
 	.short	6
 	.short	6
-	.short	6
-	.short	6
-	.short	6
-	.short	6
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_2:
 	.short	14
 	.short	14

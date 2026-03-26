@@ -8,16 +8,31 @@
 	.short	205
 	.short	205
 	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
-	.zero	16,248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_2:
 	.byte	0
 	.byte	0
@@ -70,16 +85,31 @@ func000000000000000f:
 	.short	205
 	.short	205
 	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
-	.zero	16,248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI1_2:
 	.byte	0
 	.byte	0
@@ -132,16 +162,31 @@ func0000000000000004:
 	.short	205
 	.short	205
 	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI2_1:
-	.zero	16,248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI2_2:
 	.byte	0
 	.byte	0

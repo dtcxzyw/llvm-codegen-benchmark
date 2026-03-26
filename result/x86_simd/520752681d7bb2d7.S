@@ -127,14 +127,14 @@ func0000000000000005:
 	.short	65427
 	.short	65427
 	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_5:
 	.byte	128
 	.byte	128

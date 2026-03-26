@@ -4,10 +4,10 @@
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000000d:
 	vpmovqw	%ymm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
@@ -22,10 +22,10 @@ func000000000000000d:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000009:
 	vpmovqw	%ymm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm0
@@ -40,10 +40,10 @@ func0000000000000009:
 	.short	43691
 	.short	43691
 	.short	43691
-	.short	43691
-	.short	43691
-	.short	43691
-	.short	43691
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000001:
 	vpmovqw	%ymm0, %xmm0
 	vpmulhuw	.LCPI2_0(%rip), %xmm0, %xmm0

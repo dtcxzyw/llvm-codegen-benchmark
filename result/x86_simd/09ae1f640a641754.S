@@ -8,19 +8,19 @@
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_3:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000001f:
 	vpshufd	$245, %xmm0, %xmm1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
@@ -32,9 +32,8 @@ func000000000000001f:
 	vpmulld	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpackusdw	%xmm0, %xmm0, %xmm0
-	vpsrlw	$2, %xmm0, %xmm1
-	vpmulhuw	.LCPI0_2(%rip), %xmm1, %xmm1
-	vpsrlw	$1, %xmm1, %xmm1
+	vpmulhuw	.LCPI0_2(%rip), %xmm0, %xmm1
+	vpsrlw	$3, %xmm1, %xmm1
 	vpmullw	.LCPI0_3(%rip), %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpaddw	%xmm0, %xmm0, %xmm0

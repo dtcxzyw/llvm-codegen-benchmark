@@ -6,19 +6,19 @@
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_2:
 	.short	10
 	.short	10
 	.short	10
 	.short	10
-	.short	10
-	.short	10
-	.short	10
-	.short	10
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000003:
 	vpmovqd	%ymm0, %xmm0
 	vpsrld	$5, %xmm0, %xmm0
@@ -44,19 +44,19 @@ func0000000000000003:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_2:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000001b:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -82,19 +82,19 @@ func000000000000001b:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI2_2:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000001a:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -120,19 +120,19 @@ func000000000000001a:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI3_2:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000012:
 	vpmovqd	%ymm0, %xmm0
 	vpsrld	$5, %xmm0, %xmm0

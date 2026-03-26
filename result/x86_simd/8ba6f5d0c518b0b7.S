@@ -4,19 +4,19 @@
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000001f:
 	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1
@@ -33,19 +33,19 @@ func000000000000001f:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000017:
 	vpackusdw	%xmm0, %xmm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1

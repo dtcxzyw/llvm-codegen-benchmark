@@ -3,43 +3,18 @@
 	.long	2290649225
 .LCPI0_1:
 	.long	60
-.LCPI0_6:
+.LCPI0_4:
 	.zero	4,48
 .LCPI0_2:
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
 .LCPI0_3:
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	64
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	64
-	.byte	32
-	.byte	16
-	.byte	8
-.LCPI0_4:
 	.byte	48
 	.byte	48
 	.byte	48
@@ -56,15 +31,6 @@
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI0_5:
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	64
-	.byte	32
-	.byte	16
-	.byte	8
 func000000000000001b:
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
@@ -76,12 +42,11 @@ func000000000000001b:
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
-	vpmovzxbw	%xmm0, %ymm0
-	vpmullw	.LCPI0_2(%rip), %ymm0, %ymm0
-	vpsrlw	$8, %ymm0, %ymm0
-	vpmovwb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI0_5(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI0_6(%rip){1to4}, %xmm0, %xmm0
+	vpmovzxbw	%xmm0, %xmm0
+	vpmullw	.LCPI0_2(%rip), %xmm0, %xmm0
+	vpsrlw	$8, %xmm0, %xmm0
+	vpackuswb	%xmm0, %xmm0, %xmm0
+	vpord	.LCPI0_4(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
 	retq
 

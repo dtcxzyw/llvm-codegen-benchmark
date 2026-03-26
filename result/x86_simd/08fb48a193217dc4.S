@@ -35,18 +35,26 @@ func0000000000000001:
 	.short	21846
 	.short	21846
 	.short	21846
-	.short	21846
-	.short	21846
-	.short	21846
-	.short	21846
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+.LCPI1_1:
+	.short	3
+	.short	3
+	.short	3
+	.short	3
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000000:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpmulhw	.LCPI1_0(%rip), %xmm0, %xmm1
 	vpsrlw	$15, %xmm1, %xmm2
 	vpaddw	%xmm2, %xmm1, %xmm1
-	vpaddw	%xmm1, %xmm1, %xmm2
-	vpaddw	%xmm2, %xmm1, %xmm1
+	vpmullw	.LCPI1_1(%rip), %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpmovsxwq	%xmm0, %ymm0
 	retq

@@ -8,10 +8,10 @@
 	.short	11651
 	.short	11651
 	.short	11651
-	.short	11651
-	.short	11651
-	.short	11651
-	.short	11651
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000002:
 	vpshufd	$245, %xmm0, %xmm1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2

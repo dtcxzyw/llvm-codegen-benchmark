@@ -4,19 +4,19 @@
 	.short	8389
 	.short	8389
 	.short	8389
-	.short	8389
-	.short	8389
-	.short	8389
-	.short	8389
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.short	1000
 	.short	1000
 	.short	1000
 	.short	1000
-	.short	1000
-	.short	1000
-	.short	1000
-	.short	1000
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_2:
 	.short	50
 	.short	50
@@ -124,19 +124,19 @@ func0000000000000061:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI4_1:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI4_2:
 	.short	20
 	.short	20
@@ -163,19 +163,19 @@ func0000000000000074:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI5_1:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI5_2:
 	.short	60
 	.short	60

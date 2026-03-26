@@ -9,7 +9,22 @@
 	.short	5243
 	.short	5243
 .LCPI0_2:
-	.zero	16,248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.byte	248
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_3:
 	.byte	0
 	.byte	0
@@ -36,14 +51,14 @@
 	.short	205
 	.short	205
 	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_4:
 	.zero	4,248
 .LCPI0_5:

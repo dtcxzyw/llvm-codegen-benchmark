@@ -55,18 +55,18 @@
 	.short	37
 	.short	37
 	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_4:
 	.byte	0
 	.byte	128
@@ -104,18 +104,18 @@ func0000000000000000:
 	.short	37
 	.short	37
 	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
-	.short	37
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
 	.byte	0
 	.byte	128

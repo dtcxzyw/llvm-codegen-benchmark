@@ -4,10 +4,10 @@
 	.short	34953
 	.short	34953
 	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000002:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx

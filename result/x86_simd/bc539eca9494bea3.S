@@ -72,18 +72,18 @@
 	.short	65427
 	.short	65427
 	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
-	.short	65427
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_5:
 	.byte	128
 	.byte	128

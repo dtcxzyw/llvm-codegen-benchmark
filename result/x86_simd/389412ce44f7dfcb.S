@@ -13,10 +13,10 @@
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func000000000000000d:
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -38,10 +38,10 @@ func000000000000000d:
 	.short	9363
 	.short	9363
 	.short	9363
-	.short	9363
-	.short	9363
-	.short	9363
-	.short	9363
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000005:
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpsrlw	$3, %xmm0, %xmm0
@@ -63,10 +63,10 @@ func0000000000000005:
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000009:
 	vpaddw	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI2_1(%rip), %xmm0, %xmm0
@@ -88,10 +88,10 @@ func0000000000000009:
 	.short	34953
 	.short	34953
 	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
-	.short	34953
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000001:
 	vpaddw	.LCPI3_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI3_1(%rip), %xmm0, %xmm0

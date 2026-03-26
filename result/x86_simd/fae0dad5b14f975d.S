@@ -4,19 +4,19 @@
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
 	.short	40
 	.short	40
 	.short	40
 	.short	40
-	.short	40
-	.short	40
-	.short	40
-	.short	40
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000002:
 	vpmovqw	%ymm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm1
@@ -31,19 +31,19 @@ func0000000000000002:
 	.short	52429
 	.short	52429
 	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
-	.short	52429
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI1_1:
 	.short	40
 	.short	40
 	.short	40
 	.short	40
-	.short	40
-	.short	40
-	.short	40
-	.short	40
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000000:
 	vpmovqw	%ymm0, %xmm0
 	vpmulhuw	.LCPI1_0(%rip), %xmm0, %xmm1
@@ -58,19 +58,19 @@ func0000000000000000:
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI2_1:
 	.short	100
 	.short	100
 	.short	100
 	.short	100
-	.short	100
-	.short	100
-	.short	100
-	.short	100
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000003:
 	vpmovqw	%ymm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1

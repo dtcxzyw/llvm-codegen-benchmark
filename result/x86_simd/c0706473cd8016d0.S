@@ -6,48 +6,22 @@
 .LCPI0_2:
 	.long	60
 .LCPI0_3:
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-	.short	205
-.LCPI0_4:
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	64
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	64
-	.byte	32
-	.byte	16
-	.byte	8
-.LCPI0_5:
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	128
-	.byte	64
-	.byte	32
-	.byte	16
-	.byte	8
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.short	26
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 func0000000000000006:
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
@@ -70,7 +44,6 @@ func0000000000000006:
 	vpmullw	.LCPI0_3(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI0_5(%rip){1to2}, %xmm0, %xmm0
 	vzeroupper
 	retq
 

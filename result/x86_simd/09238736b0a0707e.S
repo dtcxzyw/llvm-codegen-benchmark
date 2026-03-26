@@ -4,10 +4,22 @@
 	.short	5243
 	.short	5243
 	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
-	.short	5243
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+.LCPI0_1:
+	.short	16382
+	.short	16382
+	.short	16382
+	.short	16382
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+.LCPI0_2:
+	.short	16382
+	.short	16382
 func0000000000000037:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
@@ -39,10 +51,9 @@ func0000000000000037:
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0
-	vpsrlw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm0
-	vpsrlw	$1, %xmm0, %xmm0
-	vpaddw	%xmm0, %xmm0, %xmm0
+	vpsrlw	$2, %xmm0, %xmm0
+	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 

@@ -4,11 +4,20 @@
 	.short	9363
 	.short	9363
 	.short	9363
-	.short	9363
-	.short	9363
-	.short	9363
-	.short	9363
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
 .LCPI0_1:
+	.short	7
+	.short	7
+	.short	7
+	.short	7
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+.LCPI0_2:
 	.short	6
 	.short	6
 	.short	6
@@ -23,10 +32,9 @@ func0000000000000029:
 	vpsrlw	$1, %xmm3, %xmm3
 	vpaddw	%xmm2, %xmm3, %xmm2
 	vpsrlw	$2, %xmm2, %xmm2
-	vpsllw	$3, %xmm2, %xmm3
-	vpsubw	%xmm3, %xmm2, %xmm2
-	vpaddw	%xmm2, %xmm1, %xmm1
-	vpcmpltw	.LCPI0_1(%rip), %xmm1, %k1
+	vpmullw	.LCPI0_1(%rip), %xmm2, %xmm2
+	vpsubw	%xmm2, %xmm1, %xmm1
+	vpcmpltw	.LCPI0_2(%rip), %xmm1, %k1
 	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
 	vpmovzxwq	%xmm0, %ymm0
 	retq
