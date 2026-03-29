@@ -150,21 +150,19 @@ func0000000000000013:
 func0000000000000019:
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	retq
 
 func0000000000000009:
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	retq
 
 .LCPI15_0:
@@ -191,11 +189,10 @@ func0000000000000007:
 func0000000000000006:
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	retq
 
 .LCPI18_0:

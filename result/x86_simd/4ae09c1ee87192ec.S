@@ -17,13 +17,14 @@ func0000000000000394:
 .LCPI1_0:
 	.long	0x7fffffff
 .LCPI1_1:
-	.long	2139095039
+	.long	4278190080
 .LCPI1_2:
 	.long	0x4f000000
 func0000000000000192:
-	vpandd	.LCPI1_0(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI1_1(%rip){1to16}, %zmm0, %k0
-	vcmpgeps	.LCPI1_2(%rip){1to16}, %zmm0, %k1
+	vpandd	.LCPI1_0(%rip){1to16}, %zmm0, %zmm1
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI1_1(%rip){1to16}, %zmm0, %k0
+	vcmpgeps	.LCPI1_2(%rip){1to16}, %zmm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

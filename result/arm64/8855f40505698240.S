@@ -1,11 +1,10 @@
 func000000000000009d:
 	fmov	w9, s1
-	mov	w10, #-1023541248
-	mov	w8, #2139095039
-	fmov	s1, w10
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	fccmp	s0, s1, #8, gt
+	mov	w8, #-1023541248
+	fmov	s1, w8
+	ubfx	w9, w9, #23, #8
+	cmp	w9, #254
+	fccmp	s0, s1, #8, hi
 	cset	w0, pl
 	ret
 
@@ -33,9 +32,9 @@ func0000000000000066:
 	fmov	w9, s1
 	mov	w8, #2139095040
 	fmov	s1, w8
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	fccmp	s0, s1, #4, lt
+	ubfx	w9, w9, #23, #8
+	cmp	w9, #255
+	fccmp	s0, s1, #4, lo
 	fccmp	s0, s1, #1, ne
 	cset	w0, vc
 	ret

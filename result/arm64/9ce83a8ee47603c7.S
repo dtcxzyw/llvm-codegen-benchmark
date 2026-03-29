@@ -28,11 +28,11 @@ func0000000000000248:
 func0000000000000124:
 	movi	v1.2s, #223, lsl #24
 	fmov	w8, s0
-	mov	w9, #2139095039
-	and	w8, w8, #0x7fffffff
+	mov	w9, #254
+	ubfx	w8, w8, #23, #8
 	fcmp	s0, s1
-	ccmp	w8, w9, #0, pl
-	cset	w0, gt
+	ccmp	w8, w9, #2, pl
+	cset	w0, hi
 	ret
 
 func0000000000000108:
@@ -48,12 +48,12 @@ func0000000000000108:
 
 func0000000000000134:
 	mov	w8, #-1023344640
-	mov	w9, #2139095039
+	mov	w9, #254
 	fmov	s1, w8
 	fmov	w8, s0
 	fcmp	s0, s1
-	and	w8, w8, #0x7fffffff
-	ccmp	w8, w9, #0, hi
-	cset	w0, gt
+	ubfx	w8, w8, #23, #8
+	ccmp	w8, w9, #2, hi
+	cset	w0, hi
 	ret
 

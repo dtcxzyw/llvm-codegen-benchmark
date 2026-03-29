@@ -1,21 +1,17 @@
 	.att_syntax
 .LCPI0_0:
-	.long	2147483647
-.LCPI0_1:
-	.long	2139095040
+	.long	4278190080
 func0000000000000019:
-	vpandd	.LCPI0_0(%rip){1to16}, %zmm0, %zmm1
-	vpcmpltd	.LCPI0_1(%rip){1to16}, %zmm1, %k1
+	vpaddd	%zmm0, %zmm0, %zmm1
+	vpcmpltud	.LCPI0_0(%rip){1to16}, %zmm1, %k1
 	vmovaps	%zmm0, %zmm0 {%k1} {z}
 	retq
 
 .LCPI1_0:
-	.long	2147483647
-.LCPI1_1:
-	.long	2139095040
+	.long	4278190080
 func0000000000000009:
-	vpandd	.LCPI1_0(%rip){1to16}, %zmm0, %zmm1
-	vpcmpltd	.LCPI1_1(%rip){1to16}, %zmm1, %k1
+	vpaddd	%zmm0, %zmm0, %zmm1
+	vpcmpltud	.LCPI1_0(%rip){1to16}, %zmm1, %k1
 	vmovaps	%zmm0, %zmm0 {%k1} {z}
 	retq
 

@@ -1,18 +1,18 @@
 	.att_syntax
 func0000000000000019:
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	kmovd	%eax, %k1
 	vmovss	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq
 
 func0000000000000009:
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	kmovd	%eax, %k1
 	vmovss	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq

@@ -1,12 +1,11 @@
 func000000000000006d:
 	fmov	w9, s0
-	mov	w10, #59135
-	mov	w8, #2139095040
-	movk	w10, #11995, lsl #16
-	fmov	s1, w10
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	fccmp	s0, s1, #8, lt
+	mov	w8, #59135
+	movk	w8, #11995, lsl #16
+	fmov	s1, w8
+	ubfx	w9, w9, #23, #8
+	cmp	w9, #255
+	fccmp	s0, s1, #8, lo
 	cset	w0, pl
 	ret
 
@@ -22,10 +21,9 @@ func00000000000000d2:
 func0000000000000065:
 	fmov	w8, s0
 	fmov	s1, #-1.00000000
-	mov	w9, #2139095040
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
-	fccmp	s0, s1, #0, lt
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	fccmp	s0, s1, #0, lo
 	cset	w0, hi
 	ret
 

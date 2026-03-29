@@ -34,9 +34,9 @@ func0000000000000009:
 	kmovd	%edi, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovd	%xmm1, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	retq
 
 .LCPI4_0:

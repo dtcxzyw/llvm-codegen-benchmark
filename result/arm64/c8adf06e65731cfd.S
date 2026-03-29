@@ -1,10 +1,9 @@
 func0000000000000024:
 	fmov	w8, s0
-	mov	w9, #2139095039
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
 	orr	w9, w0, w1
-	cset	w8, gt
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w8, hi
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

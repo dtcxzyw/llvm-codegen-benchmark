@@ -81,14 +81,14 @@ func0000000000000124:
 func0000000000000066:
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
-	movb	$63, %dl
-	bzhiq	%rdx, %rcx, %rcx
-	movabsq	$9218868437227405312, %rsi
-	cmpq	%rsi, %rcx
-	setl	%cl
-	bzhiq	%rdx, %rax, %rax
-	cmpq	%rsi, %rax
-	setl	%al
+	shrq	$52, %rcx
+	andl	$2047, %ecx
+	cmpl	$2047, %ecx
+	setb	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	andb	%cl, %al
 	retq
 

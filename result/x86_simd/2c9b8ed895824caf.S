@@ -63,21 +63,18 @@ func0000000000000005:
 	retq
 
 .LCPI3_0:
-	.quad	9223372036854775807
-.LCPI3_1:
-	.quad	9218868437227405311
+	.quad	-9007199254740992
 func0000000000000009:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm2, %zmm4 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
-	vbroadcastsd	.LCPI3_0(%rip), %zmm0
-	vandpd	%zmm0, %zmm3, %zmm1
-	vpbroadcastq	.LCPI3_1(%rip), %zmm2
-	vpcmpgtq	%zmm2, %zmm1, %k0
-	vandpd	%zmm0, %zmm4, %zmm0
-	vpcmpgtq	%zmm2, %zmm0, %k1
+	vpaddq	%zmm3, %zmm3, %zmm0
+	vpbroadcastq	.LCPI3_0(%rip), %zmm1
+	vpcmpnltuq	%zmm1, %zmm0, %k0
+	vpaddq	%zmm4, %zmm4, %zmm0
+	vpcmpnltuq	%zmm1, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -168,21 +165,18 @@ func000000000000001a:
 	retq
 
 .LCPI8_0:
-	.quad	9223372036854775807
-.LCPI8_1:
-	.quad	9218868437227405312
+	.quad	-9007199254740992
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm2, %zmm4 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
-	vbroadcastsd	.LCPI8_0(%rip), %zmm0
-	vandpd	%zmm0, %zmm3, %zmm1
-	vpbroadcastq	.LCPI8_1(%rip), %zmm2
-	vpcmpgtq	%zmm1, %zmm2, %k0
-	vandpd	%zmm0, %zmm4, %zmm0
-	vpcmpgtq	%zmm0, %zmm2, %k1
+	vpaddq	%zmm3, %zmm3, %zmm0
+	vpbroadcastq	.LCPI8_0(%rip), %zmm1
+	vpcmpltuq	%zmm1, %zmm0, %k0
+	vpaddq	%zmm4, %zmm4, %zmm0
+	vpcmpltuq	%zmm1, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

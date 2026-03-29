@@ -3,11 +3,10 @@
 	.quad	0xbff0000000000000
 func0000000000000064:
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vucomisd	.LCPI0_0(%rip), %xmm0
 	seta	%al
 	andb	%cl, %al
@@ -17,11 +16,10 @@ func0000000000000064:
 	.quad	0x43e0000000000000
 func000000000000006b:
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vucomisd	.LCPI1_0(%rip), %xmm0
 	setbe	%al
 	andb	%cl, %al
@@ -45,11 +43,10 @@ func00000000000000b7:
 	.quad	0xc1e0000000000000
 func000000000000006d:
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vmovsd	.LCPI3_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	setbe	%al
@@ -60,11 +57,10 @@ func000000000000006d:
 	.quad	0xbff0000000000000
 func0000000000000065:
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vmovsd	.LCPI4_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	setb	%al

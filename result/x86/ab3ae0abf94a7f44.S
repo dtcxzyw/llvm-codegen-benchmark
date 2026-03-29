@@ -1,9 +1,9 @@
 	.att_syntax
 func000000000000000c:
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	andb	%dil, %al
 	retq
 

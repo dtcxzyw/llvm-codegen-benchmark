@@ -10,12 +10,12 @@ func0000000000000082:
 	ret
 
 func0000000000000098:
-	fmov	x9, d0
+	fmov	x8, d0
 	fcmp	d0, d1
-	mov	x8, #9218868437227405311
-	and	x9, x9, #0x7fffffffffffffff
-	ccmp	x9, x8, #4, eq
-	cset	w0, gt
+	mov	w9, #2046
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #0, eq
+	cset	w0, hi
 	ret
 
 func0000000000000078:

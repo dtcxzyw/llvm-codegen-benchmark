@@ -24,11 +24,10 @@ func00000000000000d0:
 	setnp	%cl
 	sete	%dl
 	andb	%cl, %dl
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	orb	%dl, %al
 	retq
 
@@ -39,11 +38,10 @@ func00000000000000d0:
 func0000000000000092:
 	vmovq	%xmm0, %rax
 	vpandq	.LCPI2_0(%rip){1to2}, %xmm0, %xmm0
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%cl
 	vucomisd	.LCPI2_1(%rip), %xmm0
 	seta	%al
 	orb	%cl, %al

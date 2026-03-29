@@ -32,11 +32,10 @@ func0000000000000008:
 
 func0000000000000024:
 	fmov	x8, d0
-	mov	x9, #9218868437227405311
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
 	orr	w9, w0, w1
-	cset	w8, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w8, hi
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

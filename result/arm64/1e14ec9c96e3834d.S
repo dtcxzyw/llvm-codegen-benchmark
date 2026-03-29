@@ -10,18 +10,18 @@ func0000000000000024:
 func00000000000000a6:
 	fmov	x8, d2
 	fcmp	d0, d1
-	mov	x9, #9218868437227405312
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, ls
-	cset	w0, lt
+	mov	w9, #2047
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ls
+	cset	w0, lo
 	ret
 
 func000000000000006a:
 	fmov	x8, d2
 	fcmp	d0, d1
-	mov	x9, #9218868437227405312
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, ls
-	cset	w0, lt
+	mov	w9, #2047
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ls
+	cset	w0, lo
 	ret
 

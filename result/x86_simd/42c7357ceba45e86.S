@@ -22,22 +22,19 @@ func0000000000000044:
 	retq
 
 .LCPI1_0:
-	.quad	9223372036854775807
+	.quad	-9007199254740992
 .LCPI1_1:
-	.quad	9218868437227405311
-.LCPI1_2:
 	.quad	0x7ff0000000000000
 func0000000000000099:
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vsubpd	%zmm4, %zmm2, %zmm2
-	vbroadcastsd	.LCPI1_0(%rip), %zmm4
-	vandpd	%zmm4, %zmm2, %zmm2
-	vpbroadcastq	.LCPI1_1(%rip), %zmm5
-	vpcmpgtq	%zmm5, %zmm2, %k0
-	vandpd	%zmm4, %zmm3, %zmm2
-	vpcmpgtq	%zmm5, %zmm2, %k1
+	vpaddq	%zmm2, %zmm2, %zmm2
+	vpbroadcastq	.LCPI1_0(%rip), %zmm4
+	vpcmpnltuq	%zmm4, %zmm2, %k0
+	vpaddq	%zmm3, %zmm3, %zmm2
+	vpcmpnltuq	%zmm4, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k0
-	vbroadcastsd	.LCPI1_2(%rip), %zmm2
+	vbroadcastsd	.LCPI1_1(%rip), %zmm2
 	vcmpeq_uqpd	%zmm2, %zmm0, %k1
 	vcmpeq_uqpd	%zmm2, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1

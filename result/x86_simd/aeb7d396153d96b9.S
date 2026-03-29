@@ -120,20 +120,17 @@ func0000000000000002:
 	retq
 
 .LCPI6_0:
-	.quad	9223372036854775807
-.LCPI6_1:
-	.quad	9218868437227405311
+	.quad	-9007199254740992
 func0000000000000009:
 	vmulpd	%zmm4, %zmm2, %zmm2
 	vmulpd	%zmm5, %zmm3, %zmm3
 	vdivpd	%zmm3, %zmm1, %zmm1
 	vdivpd	%zmm2, %zmm0, %zmm0
-	vbroadcastsd	.LCPI6_0(%rip), %zmm2
-	vandpd	%zmm2, %zmm0, %zmm0
-	vpbroadcastq	.LCPI6_1(%rip), %zmm3
-	vpcmpgtq	%zmm3, %zmm0, %k0
-	vandpd	%zmm2, %zmm1, %zmm0
-	vpcmpgtq	%zmm3, %zmm0, %k1
+	vpaddq	%zmm0, %zmm0, %zmm0
+	vpbroadcastq	.LCPI6_0(%rip), %zmm2
+	vpcmpnltuq	%zmm2, %zmm0, %k0
+	vpaddq	%zmm1, %zmm1, %zmm0
+	vpcmpnltuq	%zmm2, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

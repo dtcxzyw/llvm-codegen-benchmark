@@ -44,12 +44,11 @@ func0000000000000018:
 
 func0000000000000019:
 	fmul	d1, d1, d2
-	mov	x9, #9218868437227405311
 	fsub	d0, d1, d0
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 .LCPI5_0:
@@ -65,12 +64,11 @@ func0000000000000012:
 
 func0000000000000009:
 	fmul	d1, d1, d2
-	mov	x9, #9218868437227405311
 	fsub	d0, d1, d0
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000004:
@@ -93,12 +91,11 @@ func0000000000000005:
 
 func0000000000000006:
 	fmul	d1, d1, d2
-	mov	x9, #9218868437227405312
 	fsub	d0, d1, d0
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 
 func0000000000000007:

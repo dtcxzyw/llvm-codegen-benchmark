@@ -12,11 +12,10 @@ func0000000000000002:
 
 func0000000000000006:
 	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
 	mov	w8, #2
-	cinc	w0, w8, lt
+	ubfx	x9, x9, #52, #11
+	cmp	x9, #2047
+	cinc	w0, w8, lo
 	ret
 
 .LCPI2_0:

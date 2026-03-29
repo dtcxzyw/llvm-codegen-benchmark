@@ -21,12 +21,12 @@ func0000000000000077:
 func0000000000000066:
 	fmov	x9, d0
 	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #0, lt
-	cset	w0, lt
+	mov	w8, #2047
+	ubfx	x9, x9, #52, #11
+	ubfx	x10, x10, #52, #11
+	cmp	x9, #2047
+	ccmp	x10, x8, #2, lo
+	cset	w0, lo
 	ret
 
 func0000000000000188:
@@ -56,11 +56,11 @@ func0000000000000022:
 func0000000000000098:
 	fabs	d0, d0
 	fmov	d2, #1.00000000
-	mov	x9, #9218868437227405311
+	mov	w9, #2046
 	fmov	x8, d1
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #4, eq
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #0, eq
+	cset	w0, hi
 	ret
 

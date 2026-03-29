@@ -34,13 +34,13 @@ func0000000000000044:
 
 func000000000000012a:
 	mov	x8, #-4503599627370497
-	mov	x9, #9218868437227405311
+	mov	w9, #2046
 	fmov	d2, x8
 	fmov	x8, d1
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, ls
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ls
+	cset	w0, hi
 	ret
 
 func00000000000001b6:
@@ -63,12 +63,13 @@ func0000000000000084:
 
 func0000000000000072:
 	mov	x8, #9218868437227405311
-	fmov	x9, d1
+	mov	w9, #2046
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
-	ccmp	x9, x8, #0, ge
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ge
+	cset	w0, hi
 	ret
 
 func00000000000000ee:
@@ -84,15 +85,14 @@ func00000000000000ee:
 
 func0000000000000132:
 	mov	x8, #9218868437227405312
-	mov	x10, #9218868437227405311
 	fmov	d2, x8
 	fmov	x8, d1
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
+	ubfx	x8, x8, #52, #11
 	cset	w9, eq
 	csinc	w9, w9, wzr, vc
-	cmp	x8, x10
-	csinc	w0, w9, wzr, le
+	cmp	x8, #2046
+	csinc	w0, w9, wzr, ls
 	ret
 
 func0000000000000110:

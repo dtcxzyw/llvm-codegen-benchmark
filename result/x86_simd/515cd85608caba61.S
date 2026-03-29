@@ -42,15 +42,13 @@ func0000000000000088:
 	retq
 
 .LCPI3_0:
-	.long	2147483647
+	.long	4278190080
 .LCPI3_1:
-	.long	2139095039
-.LCPI3_2:
 	.long	0x7f800000
 func0000000000000132:
-	vpandd	.LCPI3_0(%rip){1to16}, %zmm1, %zmm1
-	vpcmpgtd	.LCPI3_1(%rip){1to16}, %zmm1, %k0
-	vcmpeq_uqps	.LCPI3_2(%rip){1to16}, %zmm0, %k1
+	vpaddd	%zmm1, %zmm1, %zmm1
+	vpcmpnltud	.LCPI3_0(%rip){1to16}, %zmm1, %k0
+	vcmpeq_uqps	.LCPI3_1(%rip){1to16}, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

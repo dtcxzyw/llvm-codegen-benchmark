@@ -15,11 +15,10 @@ func0000000000000087:
 
 func0000000000000086:
 	vmovq	%xmm1, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vucomisd	%xmm1, %xmm0
 	setnp	%dl
 	sete	%al

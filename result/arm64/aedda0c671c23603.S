@@ -1,8 +1,7 @@
 func0000000000000009:
-	mov	x8, #9218868437227405311
-	and	x9, x0, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, gt
+	ubfx	x8, x0, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000008:
@@ -27,10 +26,9 @@ func000000000000000b:
 	ret
 
 func0000000000000006:
-	mov	x8, #9218868437227405312
-	and	x9, x0, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, lt
+	ubfx	x8, x0, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 
 func0000000000000005:

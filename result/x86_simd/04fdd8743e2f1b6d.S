@@ -156,13 +156,11 @@ func000000000000000d:
 	retq
 
 .LCPI13_0:
-	.long	2147483647
-.LCPI13_1:
-	.long	2139095039
+	.long	4278190080
 func0000000000000019:
 	vsubps	%zmm1, %zmm0, %zmm0
-	vandps	.LCPI13_0(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI13_1(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI13_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -204,13 +202,11 @@ func000000000000001a:
 	retq
 
 .LCPI17_0:
-	.long	2147483647
-.LCPI17_1:
-	.long	2139095039
+	.long	4278190080
 func0000000000000009:
 	vsubps	%zmm1, %zmm0, %zmm0
-	vandps	.LCPI17_0(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI17_1(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI17_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

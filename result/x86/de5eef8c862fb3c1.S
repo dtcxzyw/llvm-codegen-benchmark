@@ -13,14 +13,12 @@ func0000000000000002:
 	retq
 
 func0000000000000006:
-	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rcx
-	movabsq	$9218868437227405312, %rdx
+	vmovq	%xmm0, %rcx
+	shrq	$52, %rcx
+	andl	$2047, %ecx
 	xorl	%eax, %eax
-	cmpq	%rdx, %rcx
-	setl	%al
-	orl	$2, %eax
+	cmpl	$2047, %ecx
+	adcl	$2, %eax
 	retq
 
 .LCPI2_0:

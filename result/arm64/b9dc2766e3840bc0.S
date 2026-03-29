@@ -11,11 +11,10 @@ func0000000000000066:
 	ret
 
 func00000000000000c6:
-	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmn	w0, #1, #4, lt
+	fmov	x8, d0
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	ccmn	w0, #1, #4, lo
 	cset	w0, ne
 	ret
 

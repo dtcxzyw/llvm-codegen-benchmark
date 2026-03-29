@@ -48,20 +48,22 @@ func0000000000000035:
 .LCPI2_0:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
-	.quad	9218868437227405312
+	.quad	-9007199254740992
 .LCPI2_2:
 	.quad	0x47e0000000000000
 func0000000000000036:
 	vpbroadcastq	.LCPI2_0(%rip), %zmm2
-	vpandq	%zmm2, %zmm1, %zmm1
-	vpandq	%zmm2, %zmm0, %zmm0
-	vpbroadcastq	.LCPI2_1(%rip), %zmm2
-	vpcmpgtq	%zmm0, %zmm2, %k0
-	vpcmpgtq	%zmm1, %zmm2, %k1
+	vpandq	%zmm2, %zmm1, %zmm3
+	vpandq	%zmm2, %zmm0, %zmm2
+	vpaddq	%zmm0, %zmm0, %zmm0
+	vpbroadcastq	.LCPI2_1(%rip), %zmm4
+	vpcmpltuq	%zmm4, %zmm0, %k0
+	vpaddq	%zmm1, %zmm1, %zmm0
+	vpcmpltuq	%zmm4, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
-	vbroadcastsd	.LCPI2_2(%rip), %zmm2
-	vcmpnlepd	%zmm0, %zmm2, %k1
-	vcmpnlepd	%zmm1, %zmm2, %k2
+	vbroadcastsd	.LCPI2_2(%rip), %zmm0
+	vcmpnlepd	%zmm2, %zmm0, %k1
+	vcmpnlepd	%zmm3, %zmm0, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -96,18 +98,20 @@ func000000000000002c:
 .LCPI4_1:
 	.quad	0x3eb0c6f7a0b5ed8d
 .LCPI4_2:
-	.quad	9218868437227405312
+	.quad	-9007199254740992
 func00000000000000d6:
 	vbroadcastsd	.LCPI4_0(%rip), %zmm2
-	vandpd	%zmm2, %zmm1, %zmm1
-	vandpd	%zmm2, %zmm0, %zmm0
-	vbroadcastsd	.LCPI4_1(%rip), %zmm2
-	vcmpnltpd	%zmm2, %zmm0, %k0
-	vcmpnltpd	%zmm2, %zmm1, %k1
+	vandpd	%zmm2, %zmm1, %zmm3
+	vandpd	%zmm2, %zmm0, %zmm2
+	vbroadcastsd	.LCPI4_1(%rip), %zmm4
+	vcmpnltpd	%zmm4, %zmm2, %k0
+	vcmpnltpd	%zmm4, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
+	vpaddq	%zmm0, %zmm0, %zmm0
 	vpbroadcastq	.LCPI4_2(%rip), %zmm2
-	vpcmpgtq	%zmm0, %zmm2, %k1
-	vpcmpgtq	%zmm1, %zmm2, %k2
+	vpcmpltuq	%zmm2, %zmm0, %k1
+	vpaddq	%zmm1, %zmm1, %zmm0
+	vpcmpltuq	%zmm2, %zmm0, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0

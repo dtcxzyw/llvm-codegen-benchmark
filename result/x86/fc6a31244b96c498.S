@@ -15,17 +15,17 @@ func0000000000000006:
 	vaddss	%xmm2, %xmm1, %xmm1
 	vmulss	%xmm0, %xmm1, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	retq
 
 func0000000000000009:
 	vaddss	%xmm2, %xmm1, %xmm1
 	vmulss	%xmm0, %xmm1, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	retq
 

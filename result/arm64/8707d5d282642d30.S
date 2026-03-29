@@ -28,11 +28,10 @@ func0000000000000015:
 
 func0000000000000009:
 	fdiv	s1, s1, s2
-	mov	w9, #2139095039
 	fsub	s0, s0, s1
 	fmov	w8, s0
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
-	cset	w0, gt
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w0, hi
 	ret
 

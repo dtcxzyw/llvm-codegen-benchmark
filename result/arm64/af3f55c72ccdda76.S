@@ -48,19 +48,17 @@ func0000000000000014:
 	ret
 
 func0000000000000009:
-	fmov	w9, s0
-	mov	w8, #2139095039
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w0, gt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w0, hi
 	ret
 
 func0000000000000019:
-	fmov	w9, s0
-	mov	w8, #2139095039
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w0, gt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w0, hi
 	ret
 
 func000000000000001d:
@@ -80,19 +78,17 @@ func0000000000000003:
 	ret
 
 func0000000000000016:
-	fmov	w9, s0
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w0, lt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	cset	w0, lo
 	ret
 
 func0000000000000006:
-	fmov	w9, s0
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w0, lt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	cset	w0, lo
 	ret
 
 func000000000000000a:

@@ -113,20 +113,18 @@ func000000000000000d:
 
 func0000000000000019:
 	fsub	s0, s0, s1
-	mov	w8, #2139095039
-	fmov	w9, s0
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w0, gt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w0, hi
 	ret
 
 func0000000000000006:
 	fsub	s0, s0, s1
-	mov	w8, #2139095040
-	fmov	w9, s0
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w0, lt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	cset	w0, lo
 	ret
 
 func0000000000000007:
@@ -146,11 +144,10 @@ func000000000000001a:
 
 func0000000000000009:
 	fsub	s0, s0, s1
-	mov	w8, #2139095039
-	fmov	w9, s0
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w0, gt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w0, hi
 	ret
 
 func000000000000000a:

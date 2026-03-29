@@ -28,11 +28,10 @@ func000000000000001d:
 
 func0000000000000006:
 	fsub	s0, s0, s1
-	mov	w9, #2139095040
 	fmov	w8, s0
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
-	cset	w8, lt
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	cset	w8, lo
 	and	w0, w0, w8
 	ret
 

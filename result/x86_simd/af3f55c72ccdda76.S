@@ -66,23 +66,19 @@ func0000000000000014:
 	retq
 
 .LCPI6_0:
-	.long	2147483647
-.LCPI6_1:
-	.long	2139095039
+	.long	4278190080
 func0000000000000009:
-	vpandd	.LCPI6_0(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI6_1(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI6_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI7_0:
-	.long	2147483647
-.LCPI7_1:
-	.long	2139095039
+	.long	4278190080
 func0000000000000019:
-	vpandd	.LCPI7_0(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI7_1(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI7_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

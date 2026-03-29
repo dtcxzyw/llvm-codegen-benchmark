@@ -109,9 +109,9 @@ func0000000000000002:
 func0000000000000009:
 	vaddss	.LCPI8_0(%rip), %xmm0, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	retq
 
 .LCPI9_0:

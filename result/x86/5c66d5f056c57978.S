@@ -1,22 +1,20 @@
 	.att_syntax
 func000000000000000c:
-	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rcx
-	movabsq	$9218868437227405312, %rdx
+	vmovq	%xmm0, %rcx
+	shrq	$52, %rcx
+	andl	$2047, %ecx
 	xorl	%eax, %eax
-	cmpq	%rdx, %rcx
-	setl	%al
+	cmpl	$2047, %ecx
+	setb	%al
 	retq
 
 func0000000000000012:
-	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rcx
-	movabsq	$9218868437227405311, %rdx
+	vmovq	%xmm0, %rcx
+	shrq	$52, %rcx
+	andl	$2047, %ecx
 	xorl	%eax, %eax
-	cmpq	%rdx, %rcx
-	setg	%al
+	cmpl	$2047, %ecx
+	setae	%al
 	retq
 
 .LCPI2_0:

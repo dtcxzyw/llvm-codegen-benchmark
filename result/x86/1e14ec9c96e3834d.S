@@ -13,11 +13,10 @@ func0000000000000024:
 
 func00000000000000a6:
 	vmovq	%xmm2, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vucomisd	%xmm0, %xmm1
 	setae	%al
 	andb	%cl, %al
@@ -25,11 +24,10 @@ func00000000000000a6:
 
 func000000000000006a:
 	vmovq	%xmm2, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vucomisd	%xmm0, %xmm1
 	setae	%al
 	andb	%cl, %al

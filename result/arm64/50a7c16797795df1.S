@@ -25,12 +25,12 @@ func000000000000002c:
 func0000000000000036:
 	movi	v1.2s, #95, lsl #24
 	fabs	s2, s0
-	mov	w9, #2139095040
+	mov	w9, #255
 	fmov	w8, s0
 	fcmp	s2, s1
-	and	w8, w8, #0x7fffffff
-	ccmp	w8, w9, #0, lt
-	cset	w0, lt
+	ubfx	w8, w8, #23, #8
+	ccmp	w8, w9, #2, lt
+	cset	w0, lo
 	ret
 
 func0000000000000124:

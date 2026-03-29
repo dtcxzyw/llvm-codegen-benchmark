@@ -31,8 +31,8 @@ func0000000000000006:
 	vmulss	.LCPI2_0(%rip), %xmm1, %xmm1
 	vdivss	%xmm0, %xmm1, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	retq
 

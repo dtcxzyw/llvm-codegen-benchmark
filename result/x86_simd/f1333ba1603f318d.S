@@ -30,15 +30,12 @@ func0000000000000122:
 	retq
 
 .LCPI2_0:
-	.long	2147483647
-.LCPI2_1:
-	.long	2139095039
+	.long	4278190080
 func0000000000000099:
-	vpbroadcastd	.LCPI2_0(%rip), %zmm2
-	vpandd	%zmm2, %zmm1, %zmm1
-	vpandd	%zmm2, %zmm0, %zmm0
-	vpminsd	%zmm1, %zmm0, %zmm0
-	vpcmpgtd	.LCPI2_1(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm1, %zmm1, %zmm1
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpminud	%zmm1, %zmm0, %zmm0
+	vpcmpnltud	.LCPI2_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

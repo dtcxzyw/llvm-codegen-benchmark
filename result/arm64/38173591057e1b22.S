@@ -23,10 +23,9 @@ func0000000000000002:
 
 func0000000000000006:
 	fmov	w8, s2
-	mov	w9, #2139095040
-	and	w8, w8, #0x7fffffff
-	cmp	w8, w9
-	fcsel	s0, s0, s1, lt
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	fcsel	s0, s0, s1, lo
 	ret
 
 func0000000000000004:

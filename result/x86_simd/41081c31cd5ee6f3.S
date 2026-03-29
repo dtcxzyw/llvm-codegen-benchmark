@@ -23,27 +23,24 @@ func000000000000036c:
 	retq
 
 .LCPI1_0:
-	.quad	9223372036854775807
+	.quad	-9007199254740992
 .LCPI1_1:
-	.quad	9218868437227405311
-.LCPI1_2:
 	.quad	0x7ff0000000000000
 func0000000000000264:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vpbroadcastq	.LCPI1_0(%rip), %zmm0
-	vpandq	%zmm0, %zmm3, %zmm3
-	vpbroadcastq	.LCPI1_1(%rip), %zmm5
-	vpcmpgtq	%zmm5, %zmm3, %k1
-	vpandq	%zmm0, %zmm4, %zmm0
-	vpcmpgtq	%zmm5, %zmm0, %k2
+	vpaddq	%zmm3, %zmm3, %zmm0
+	vpbroadcastq	.LCPI1_0(%rip), %zmm3
+	vpcmpnltuq	%zmm3, %zmm0, %k1
+	vpaddq	%zmm4, %zmm4, %zmm0
+	vpcmpnltuq	%zmm3, %zmm0, %k2
 	kunpckbw	%k1, %k2, %k1
-	vbroadcastsd	.LCPI1_2(%rip), %zmm0
+	vbroadcastsd	.LCPI1_1(%rip), %zmm0
 	vcmpeq_uqpd	%zmm0, %zmm1, %k2
 	vcmpeq_uqpd	%zmm0, %zmm2, %k3
 	kunpckbw	%k2, %k3, %k2
-	korw	%k0, %k2, %k0
-	korw	%k1, %k0, %k0
+	korw	%k1, %k2, %k1
+	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

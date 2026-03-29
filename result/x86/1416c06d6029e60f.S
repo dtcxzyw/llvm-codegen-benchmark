@@ -51,11 +51,10 @@ func0000000000000008:
 	.quad	0x7ff8000000000000
 func0000000000000009:
 	vmovq	%xmm1, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	kmovd	%eax, %k1
 	vmovsd	.LCPI4_0(%rip), %xmm1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}

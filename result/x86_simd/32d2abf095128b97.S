@@ -42,16 +42,16 @@ func0000000000000014:
 .LCPI2_0:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
-	.quad	9218868437227405312
+	.quad	-9007199254740992
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpbroadcastq	.LCPI2_0(%rip), %zmm0
-	vpandq	%zmm0, %zmm1, %zmm3
+	vpaddq	%zmm1, %zmm1, %zmm3
 	vpbroadcastq	.LCPI2_1(%rip), %zmm4
-	vpcmpgtq	%zmm3, %zmm4, %k1
-	vpandq	%zmm0, %zmm2, %zmm3
-	vpcmpgtq	%zmm3, %zmm4, %k2
+	vpcmpltuq	%zmm4, %zmm3, %k1
+	vpaddq	%zmm2, %zmm2, %zmm3
+	vpcmpltuq	%zmm4, %zmm3, %k2
 	vpandq	%zmm0, %zmm2, %zmm2 {%k2} {z}
 	vpandq	%zmm0, %zmm1, %zmm0 {%k1} {z}
 	knotw	%k0, %k1

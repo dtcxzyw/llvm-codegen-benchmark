@@ -171,18 +171,15 @@ func000000000000000d:
 	retq
 
 .LCPI9_0:
-	.quad	9223372036854775807
-.LCPI9_1:
-	.quad	9218868437227405312
+	.quad	-9007199254740992
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpaddq	%zmm1, %zmm1, %zmm1
 	vpbroadcastq	.LCPI9_0(%rip), %zmm4
-	vpandq	%zmm4, %zmm1, %zmm1
-	vpbroadcastq	.LCPI9_1(%rip), %zmm5
-	vpcmpgtq	%zmm1, %zmm5, %k0
-	vpandq	%zmm4, %zmm2, %zmm1
-	vpcmpgtq	%zmm1, %zmm5, %k1
+	vpcmpltuq	%zmm4, %zmm1, %k0
+	vpaddq	%zmm2, %zmm2, %zmm1
+	vpcmpltuq	%zmm4, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

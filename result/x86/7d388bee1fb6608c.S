@@ -34,11 +34,10 @@ func0000000000000035:
 func0000000000000036:
 	vmovq	%xmm0, %rax
 	vpandq	.LCPI2_0(%rip){1to2}, %xmm0, %xmm0
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%cl
 	vucomisd	.LCPI2_1(%rip), %xmm0
 	setb	%al
 	andb	%cl, %al
@@ -68,11 +67,10 @@ func00000000000000d6:
 	vmovsd	.LCPI4_1(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	setbe	%cl
-	movb	$63, %dl
-	bzhiq	%rdx, %rax, %rax
-	movabsq	$9218868437227405312, %rdx
-	cmpq	%rdx, %rax
-	setl	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	andb	%cl, %al
 	retq
 

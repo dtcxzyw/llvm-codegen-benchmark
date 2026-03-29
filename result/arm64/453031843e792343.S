@@ -14,13 +14,12 @@ func000000000000000d:
 func0000000000000009:
 	fmul	d0, d0, d1
 	adrp	x8, .LCPI1_0
-	mov	x9, #9218868437227405311
 	ldr	d1, [x8, :lo12:.LCPI1_0]
 	fadd	d0, d0, d1
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 .LCPI2_0:

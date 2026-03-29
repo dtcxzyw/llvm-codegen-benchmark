@@ -1,9 +1,8 @@
 func0000000000000009:
-	fmov	x9, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	fcsel	d0, d1, d0, lt
+	fmov	x8, d1
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	fcsel	d0, d1, d0, lo
 	ret
 
 func0000000000000002:

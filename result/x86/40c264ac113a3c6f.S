@@ -32,8 +32,8 @@ func0000000000000048:
 	retq
 
 func0000000000000009:
-	andl	$2147483647, %edi
-	cmpl	$2139095040, %edi
-	setge	%al
+	addl	%edi, %edi
+	cmpl	$-16777216, %edi
+	setae	%al
 	retq
 

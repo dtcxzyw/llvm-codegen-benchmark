@@ -49,11 +49,10 @@ func0000000000000150:
 
 func000000000000012a:
 	vmovq	%xmm2, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%cl
 	vucomisd	%xmm0, %xmm1
 	setb	%al
 	orb	%cl, %al
@@ -61,11 +60,10 @@ func000000000000012a:
 
 func00000000000000b2:
 	vmovq	%xmm2, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%cl
 	vucomisd	%xmm0, %xmm1
 	setb	%al
 	orb	%cl, %al

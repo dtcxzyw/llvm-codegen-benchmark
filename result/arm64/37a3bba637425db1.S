@@ -43,14 +43,13 @@ func0000000000000014:
 
 func0000000000000009:
 	mov	x8, #145685290680320
-	mov	x9, #9218868437227405311
 	movk	x8, #16686, lsl #48
 	fmov	d1, x8
 	fmul	d0, d0, d1
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 .LCPI5_0:
@@ -139,13 +138,12 @@ func000000000000000a:
 
 func0000000000000006:
 	mov	x8, #6148914691236517205
-	mov	x9, #9218868437227405312
 	movk	x8, #16325, lsl #48
 	fmov	d1, x8
 	fmul	d0, d0, d1
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 

@@ -60,14 +60,14 @@ func0000000000000077:
 
 func0000000000000066:
 	mov	x8, #9218868437227405312
-	fmov	x9, d1
 	fmov	d2, x8
-	and	x9, x9, #0x7fffffffffffffff
+	fmov	x8, d1
 	fcmp	d0, d2
-	cset	w10, mi
-	csinc	w10, w10, wzr, le
-	cmp	x9, x8
-	csel	w0, wzr, w10, ge
+	ubfx	x8, x8, #52, #11
+	cset	w9, mi
+	csinc	w9, w9, wzr, le
+	cmp	x8, #2047
+	csel	w0, wzr, w9, hs
 	ret
 
 func0000000000000188:
@@ -96,31 +96,31 @@ func0000000000000122:
 func0000000000000098:
 	fmov	d2, #1.00000000
 	fmov	x8, d1
-	mov	x9, #9218868437227405311
+	mov	w9, #2046
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #4, eq
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #0, eq
+	cset	w0, hi
 	ret
 
 func000000000000006a:
 	fmov	d2, #1.00000000
 	fmov	x8, d1
-	mov	x9, #9218868437227405312
+	mov	w9, #2047
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, ls
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ls
+	cset	w0, lo
 	ret
 
 func000000000000006c:
 	fmov	d2, #1.00000000
 	fmov	x8, d1
-	mov	x9, #9218868437227405312
+	mov	w9, #2047
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, ge
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ge
+	cset	w0, lo
 	ret
 
 .LCPI11_0:
@@ -156,12 +156,12 @@ func0000000000000028:
 	ret
 
 func0000000000000086:
-	fmov	x9, d1
+	fmov	x8, d1
 	fcmp	d0, #0.0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	ccmp	x9, x8, #0, eq
-	cset	w0, lt
+	mov	w9, #2047
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, eq
+	cset	w0, lo
 	ret
 
 func0000000000000044:

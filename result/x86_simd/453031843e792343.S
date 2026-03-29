@@ -25,21 +25,18 @@ func000000000000000d:
 .LCPI1_0:
 	.quad	0x401921fb54442d18
 .LCPI1_1:
-	.quad	9223372036854775807
-.LCPI1_2:
-	.quad	9218868437227405311
+	.quad	-9007199254740992
 func0000000000000009:
 	vmulpd	%zmm2, %zmm0, %zmm0
 	vmulpd	%zmm3, %zmm1, %zmm1
 	vbroadcastsd	.LCPI1_0(%rip), %zmm2
 	vaddpd	%zmm2, %zmm1, %zmm1
 	vaddpd	%zmm2, %zmm0, %zmm0
-	vbroadcastsd	.LCPI1_1(%rip), %zmm2
-	vandpd	%zmm2, %zmm0, %zmm0
-	vpbroadcastq	.LCPI1_2(%rip), %zmm3
-	vpcmpgtq	%zmm3, %zmm0, %k0
-	vandpd	%zmm2, %zmm1, %zmm0
-	vpcmpgtq	%zmm3, %zmm0, %k1
+	vpaddq	%zmm0, %zmm0, %zmm0
+	vpbroadcastq	.LCPI1_1(%rip), %zmm2
+	vpcmpnltuq	%zmm2, %zmm0, %k0
+	vpaddq	%zmm1, %zmm1, %zmm0
+	vpcmpnltuq	%zmm2, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

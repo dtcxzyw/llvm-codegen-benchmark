@@ -17,14 +17,14 @@ func0000000000000084:
 func00000000000000d0:
 	mov	x8, #140737488355328
 	fabs	d1, d0
-	mov	x9, #9218868437227405312
+	mov	w9, #2047
 	movk	x8, #16486, lsl #48
 	fmov	d2, x8
 	fmov	x8, d0
 	fcmp	d1, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #8, ne
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #0, ne
+	cset	w0, lo
 	ret
 
 .LCPI2_0:
@@ -32,13 +32,13 @@ func00000000000000d0:
 func0000000000000092:
 	fabs	d1, d0
 	adrp	x8, .LCPI2_0
-	mov	x9, #9218868437227405311
+	mov	w9, #2046
 	ldr	d2, [x8, :lo12:.LCPI2_0]
 	fmov	x8, d0
 	fcmp	d1, d2
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, le
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, le
+	cset	w0, hi
 	ret
 
 func00000000000000a6:

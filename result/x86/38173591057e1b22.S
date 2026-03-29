@@ -34,9 +34,9 @@ func0000000000000002:
 
 func0000000000000006:
 	vmovd	%xmm2, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	kmovd	%eax, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovaps	%xmm1, %xmm0

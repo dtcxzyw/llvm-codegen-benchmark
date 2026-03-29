@@ -17,9 +17,9 @@ func0000000000000019:
 	vmovss	.LCPI1_0(%rip), %xmm1
 	vdivss	%xmm0, %xmm1, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	retq
 
 .LCPI2_0:
@@ -68,8 +68,8 @@ func0000000000000006:
 	vmovss	.LCPI5_0(%rip), %xmm1
 	vdivss	%xmm0, %xmm1, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	retq
 

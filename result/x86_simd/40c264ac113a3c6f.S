@@ -48,14 +48,12 @@ func0000000000000048:
 	retq
 
 .LCPI4_0:
-	.long	2147483647
-.LCPI4_1:
-	.long	2139095039
+	.long	4278190080
 func0000000000000009:
 	vpmovqd	%ymm0, %xmm0
-	vpandd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
-	vpbroadcastd	.LCPI4_1(%rip), %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm0, %xmm0, %xmm0
+	vpcmpnltud	.LCPI4_0(%rip){1to4}, %xmm0, %k0
+	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 

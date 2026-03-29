@@ -3,11 +3,10 @@
 	.quad	0xc3e0000000000000
 func0000000000000248:
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	vmovsd	.LCPI0_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%cl
@@ -19,11 +18,10 @@ func0000000000000248:
 	.quad	0xbff0000000000000
 func0000000000000268:
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	vmovsd	.LCPI1_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
 	setae	%cl

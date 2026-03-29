@@ -40,14 +40,13 @@ func0000000000000018:
 
 func0000000000000019:
 	mov	x8, #140737488355328
-	mov	x9, #9218868437227405311
 	movk	x8, #16470, lsl #48
 	fmov	d1, x8
 	fsub	d0, d1, d0
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000012:
@@ -61,14 +60,13 @@ func0000000000000012:
 
 func0000000000000009:
 	mov	x8, #140737488355328
-	mov	x9, #9218868437227405311
 	movk	x8, #16470, lsl #48
 	fmov	d1, x8
 	fsub	d0, d1, d0
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func000000000000000d:
@@ -82,12 +80,11 @@ func000000000000000d:
 
 func0000000000000006:
 	fmov	d1, #1.00000000
-	mov	x9, #9218868437227405312
 	fsub	d0, d1, d0
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 
 .LCPI9_0:

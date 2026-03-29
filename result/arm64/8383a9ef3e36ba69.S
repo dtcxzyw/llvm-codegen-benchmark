@@ -59,11 +59,10 @@ func000000000000002a:
 	ret
 
 func0000000000000012:
-	fmov	w9, s0
-	mov	w8, #2139095039
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w8, gt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w8, hi
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

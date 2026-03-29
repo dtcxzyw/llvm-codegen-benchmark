@@ -45,16 +45,13 @@ func0000000000000002:
 	retq
 
 .LCPI3_0:
-	.quad	9223372036854775807
-.LCPI3_1:
-	.quad	9218868437227405312
+	.quad	-9007199254740992
 func0000000000000006:
+	vpaddq	%zmm5, %zmm5, %zmm5
 	vpbroadcastq	.LCPI3_0(%rip), %zmm6
-	vpandq	%zmm6, %zmm5, %zmm5
-	vpbroadcastq	.LCPI3_1(%rip), %zmm7
-	vpcmpgtq	%zmm5, %zmm7, %k1
-	vpandq	%zmm6, %zmm4, %zmm4
-	vpcmpgtq	%zmm4, %zmm7, %k2
+	vpcmpltuq	%zmm6, %zmm5, %k1
+	vpaddq	%zmm4, %zmm4, %zmm4
+	vpcmpltuq	%zmm6, %zmm4, %k2
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq

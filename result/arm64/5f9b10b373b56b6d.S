@@ -33,11 +33,10 @@ func0000000000000004:
 
 func0000000000000006:
 	fmov	x9, d1
-	mov	x10, #-9223372036854775808
-	mov	x8, #9218868437227405312
-	fmov	d1, x10
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	fcsel	d0, d0, d1, lt
+	mov	x8, #-9223372036854775808
+	fmov	d1, x8
+	ubfx	x9, x9, #52, #11
+	cmp	x9, #2047
+	fcsel	d0, d0, d1, lo
 	ret
 

@@ -156,13 +156,11 @@ func0000000000000002:
 	retq
 
 .LCPI13_0:
-	.long	2147483647
-.LCPI13_1:
-	.long	2139095039
+	.long	4278190080
 func0000000000000009:
 	vfmadd213ps	%zmm2, %zmm1, %zmm0
-	vandps	.LCPI13_0(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI13_1(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI13_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

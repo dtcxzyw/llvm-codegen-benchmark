@@ -25,15 +25,14 @@ func0000000000000088:
 
 func0000000000000132:
 	mov	w8, #2139095040
-	mov	w10, #2139095039
 	fmov	s2, w8
 	fmov	w8, s1
 	fcmp	s0, s2
-	and	w8, w8, #0x7fffffff
+	ubfx	w8, w8, #23, #8
 	cset	w9, eq
 	csinc	w9, w9, wzr, vc
-	cmp	w8, w10
-	csinc	w0, w9, wzr, le
+	cmp	w8, #254
+	csinc	w0, w9, wzr, ls
 	ret
 
 func0000000000000242:

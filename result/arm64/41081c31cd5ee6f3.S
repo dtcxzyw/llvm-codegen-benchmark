@@ -11,15 +11,14 @@ func000000000000036c:
 
 func0000000000000264:
 	mov	x8, #9218868437227405312
-	mov	x10, #9218868437227405311
 	fmov	d2, x8
 	fmov	x8, d1
 	fcmp	d0, d2
-	and	x8, x8, #0x7fffffffffffffff
+	ubfx	x8, x8, #52, #11
 	cset	w9, eq
 	csinc	w9, w9, wzr, vc
-	cmp	x8, x10
-	csinc	w8, w9, wzr, le
+	cmp	x8, #2046
+	csinc	w8, w9, wzr, ls
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

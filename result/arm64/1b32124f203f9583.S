@@ -45,18 +45,18 @@ func0000000000000150:
 func000000000000012a:
 	fmov	x8, d2
 	fcmp	d0, d1
-	mov	x9, #9218868437227405311
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, ls
-	cset	w0, gt
+	mov	w9, #2046
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ls
+	cset	w0, hi
 	ret
 
 func00000000000000b2:
 	fmov	x8, d2
 	fcmp	d0, d1
-	mov	x9, #9218868437227405311
-	and	x8, x8, #0x7fffffffffffffff
-	ccmp	x8, x9, #0, ls
-	cset	w0, gt
+	mov	w9, #2046
+	ubfx	x8, x8, #52, #11
+	ccmp	x8, x9, #2, ls
+	cset	w0, hi
 	ret
 

@@ -1,10 +1,9 @@
 	.att_syntax
 func0000000000000009:
-	movb	$63, %al
-	bzhiq	%rax, %rdi, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%al
+	shrq	$52, %rdi
+	andl	$2047, %edi
+	cmpl	$2047, %edi
+	setae	%al
 	retq
 
 func0000000000000008:
@@ -34,11 +33,10 @@ func000000000000000b:
 	retq
 
 func0000000000000006:
-	movb	$63, %al
-	bzhiq	%rax, %rdi, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%al
+	shrq	$52, %rdi
+	andl	$2047, %edi
+	cmpl	$2047, %edi
+	setb	%al
 	retq
 
 .LCPI5_0:

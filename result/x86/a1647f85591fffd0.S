@@ -42,11 +42,10 @@ func0000000000000038:
 	.quad	0x7ff0000000000000
 func0000000000000099:
 	vmovq	%xmm1, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%cl
 	vucomisd	.LCPI3_0(%rip), %xmm0
 	sete	%al
 	orb	%cl, %al

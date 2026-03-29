@@ -20,9 +20,9 @@ func0000000000000394:
 func0000000000000192:
 	vmovd	%xmm0, %eax
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%cl
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%cl
 	vucomiss	.LCPI1_1(%rip), %xmm0
 	setae	%al
 	orb	%cl, %al

@@ -3,9 +3,9 @@
 	.long	0xc2fe0000
 func000000000000009d:
 	vmovd	%xmm1, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%cl
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%cl
 	vmovss	.LCPI0_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	setbe	%al
@@ -42,9 +42,9 @@ func00000000000000aa:
 	.long	0x7f800000
 func0000000000000066:
 	vmovd	%xmm1, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%cl
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%cl
 	vucomiss	.LCPI3_0(%rip), %xmm0
 	setne	%al
 	andb	%cl, %al

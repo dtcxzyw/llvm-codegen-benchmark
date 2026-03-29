@@ -10,9 +10,9 @@ func0000000000000018:
 func0000000000000019:
 	vdivss	%xmm1, %xmm0, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	retq
 
 func0000000000000008:
@@ -85,9 +85,9 @@ func0000000000000004:
 func0000000000000009:
 	vdivss	%xmm1, %xmm0, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	retq
 
 .LCPI9_0:
@@ -124,9 +124,9 @@ func0000000000000007:
 func0000000000000006:
 	vdivss	%xmm1, %xmm0, %xmm0
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	retq
 
 .LCPI13_0:

@@ -36,10 +36,10 @@ func0000000000000008:
 
 func000000000000000c:
 	vmovd	%xmm0, %ecx
-	andl	$2147483647, %ecx
+	addl	%ecx, %ecx
 	xorl	%eax, %eax
-	cmpl	$2139095040, %ecx
-	setl	%al
+	cmpl	$-16777216, %ecx
+	setb	%al
 	retq
 
 .LCPI4_0:

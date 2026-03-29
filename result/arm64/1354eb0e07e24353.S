@@ -47,11 +47,10 @@ func000000000000000b:
 
 func0000000000000009:
 	fmul	d0, d0, d1
-	mov	x8, #9218868437227405311
-	fmov	x9, d0
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, gt
+	fmov	x8, d0
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000003:
@@ -85,11 +84,10 @@ func000000000000000a:
 
 func0000000000000006:
 	fmul	d0, d0, d1
-	mov	x8, #9218868437227405312
-	fmov	x9, d0
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, lt
+	fmov	x8, d0
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 
 func0000000000000004:
@@ -104,11 +102,10 @@ func0000000000000004:
 
 func0000000000000019:
 	fmul	d0, d0, d1
-	mov	x8, #9218868437227405311
-	fmov	x9, d0
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, gt
+	fmov	x8, d0
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000007:

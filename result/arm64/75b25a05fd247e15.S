@@ -66,12 +66,12 @@ func0000000000000124:
 func0000000000000066:
 	fmov	x9, d0
 	fmov	x10, d1
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #0, lt
-	cset	w0, lt
+	mov	w8, #2047
+	ubfx	x9, x9, #52, #11
+	ubfx	x10, x10, #52, #11
+	cmp	x9, #2047
+	ccmp	x10, x8, #2, lo
+	cset	w0, lo
 	ret
 
 func0000000000000088:

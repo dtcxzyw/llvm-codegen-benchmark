@@ -33,19 +33,17 @@ func000000000000000e:
 	ret
 
 func0000000000000012:
-	fmov	x9, d0
-	mov	x8, #9218868437227405311
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, gt
+	fmov	x8, d0
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func000000000000000c:
-	fmov	x9, d0
-	mov	x8, #9218868437227405312
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, lt
+	fmov	x8, d0
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 
 .LCPI6_0:

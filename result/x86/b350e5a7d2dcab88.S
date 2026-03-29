@@ -14,11 +14,10 @@ func000000000000000a:
 func0000000000000009:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	kmovd	%eax, %k1
 	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq

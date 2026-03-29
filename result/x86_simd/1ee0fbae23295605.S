@@ -15,14 +15,12 @@ func0000000000000012:
 .LCPI1_0:
 	.long	0x3f800000
 .LCPI1_1:
-	.long	2147483647
-.LCPI1_2:
-	.long	2139095039
+	.long	4278190080
 func0000000000000019:
 	vbroadcastss	.LCPI1_0(%rip), %zmm1
 	vdivps	%zmm0, %zmm1, %zmm0
-	vandps	.LCPI1_1(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI1_2(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI1_1(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

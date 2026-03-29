@@ -14,12 +14,12 @@ func00000000000001bb:
 func0000000000000099:
 	fmov	x9, d0
 	fmov	x10, d1
-	mov	x8, #9218868437227405311
-	and	x9, x9, #0x7fffffffffffffff
-	and	x10, x10, #0x7fffffffffffffff
-	cmp	x9, x8
-	ccmp	x10, x8, #0, le
-	cset	w0, gt
+	mov	w8, #2046
+	ubfx	x9, x9, #52, #11
+	ubfx	x10, x10, #52, #11
+	cmp	x9, #2046
+	ccmp	x10, x8, #2, ls
+	cset	w0, hi
 	ret
 
 func0000000000000144:

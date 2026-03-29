@@ -14,10 +14,9 @@ func0000000000000014:
 	ret
 
 func0000000000000009:
-	fmov	w9, s1
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	fcsel	s0, s1, s0, lt
+	fmov	w8, s1
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	fcsel	s0, s1, s0, lo
 	ret
 

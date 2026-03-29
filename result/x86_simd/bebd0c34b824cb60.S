@@ -114,13 +114,11 @@ func0000000000000002:
 .LCPI8_0:
 	.long	0xc3340000
 .LCPI8_1:
-	.long	2147483647
-.LCPI8_2:
-	.long	2139095039
+	.long	4278190080
 func0000000000000009:
 	vaddps	.LCPI8_0(%rip){1to16}, %zmm0, %zmm0
-	vandps	.LCPI8_1(%rip){1to16}, %zmm0, %zmm0
-	vpcmpgtd	.LCPI8_2(%rip){1to16}, %zmm0, %k0
+	vpaddd	%zmm0, %zmm0, %zmm0
+	vpcmpnltud	.LCPI8_1(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

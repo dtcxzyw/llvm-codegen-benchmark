@@ -21,23 +21,23 @@ func0000000000000122:
 func0000000000000099:
 	fmov	w9, s0
 	fmov	w10, s1
-	mov	w8, #2139095039
-	and	w9, w9, #0x7fffffff
-	and	w10, w10, #0x7fffffff
-	cmp	w9, w8
-	ccmp	w10, w8, #4, gt
-	cset	w0, gt
+	mov	w8, #254
+	ubfx	w9, w9, #23, #8
+	ubfx	w10, w10, #23, #8
+	cmp	w9, #254
+	ccmp	w10, w8, #0, hi
+	cset	w0, hi
 	ret
 
 func0000000000000066:
 	fmov	w9, s0
 	fmov	w10, s1
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	and	w10, w10, #0x7fffffff
-	cmp	w9, w8
-	ccmp	w10, w8, #0, lt
-	cset	w0, lt
+	mov	w8, #255
+	ubfx	w9, w9, #23, #8
+	ubfx	w10, w10, #23, #8
+	cmp	w9, #255
+	ccmp	w10, w8, #2, lo
+	cset	w0, lo
 	ret
 
 func0000000000000022:

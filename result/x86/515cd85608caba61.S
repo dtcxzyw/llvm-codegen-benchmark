@@ -42,9 +42,9 @@ func0000000000000088:
 	.long	0x7f800000
 func0000000000000132:
 	vmovd	%xmm1, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%cl
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%cl
 	vucomiss	.LCPI3_0(%rip), %xmm0
 	sete	%al
 	orb	%cl, %al

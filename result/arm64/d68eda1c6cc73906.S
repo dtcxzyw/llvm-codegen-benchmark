@@ -32,11 +32,10 @@ func0000000000000002:
 
 func0000000000000029:
 	fmadd	d0, d0, d0, d1
-	mov	x8, #9218868437227405311
-	fmov	x9, d0
-	and	x9, x9, #0x7fffffffffffffff
-	cmp	x9, x8
-	cset	w0, gt
+	fmov	x8, d0
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000022:

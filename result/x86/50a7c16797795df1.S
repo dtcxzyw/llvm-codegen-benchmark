@@ -34,9 +34,9 @@ func000000000000002c:
 func0000000000000036:
 	vmovd	%xmm0, %eax
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%cl
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%cl
 	vucomiss	.LCPI2_1(%rip), %xmm0
 	setb	%al
 	andb	%cl, %al

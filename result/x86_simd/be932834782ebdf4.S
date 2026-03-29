@@ -79,15 +79,13 @@ func0000000000000024:
 	retq
 
 .LCPI6_0:
-	.long	2147483647
+	.long	4278190080
 .LCPI6_1:
-	.long	2139095039
-.LCPI6_2:
 	.long	0x7f800000
 func0000000000000099:
-	vpandd	.LCPI6_0(%rip){1to16}, %zmm1, %zmm1
-	vpcmpgtd	.LCPI6_1(%rip){1to16}, %zmm1, %k1
-	vcmpeq_uqps	.LCPI6_2(%rip){1to16}, %zmm0, %k0 {%k1}
+	vpaddd	%zmm1, %zmm1, %zmm1
+	vpcmpnltud	.LCPI6_0(%rip){1to16}, %zmm1, %k1
+	vcmpeq_uqps	.LCPI6_1(%rip){1to16}, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

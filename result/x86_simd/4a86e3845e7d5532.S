@@ -78,19 +78,16 @@ func0000000000000018:
 .LCPI4_0:
 	.quad	0x4056800000000000
 .LCPI4_1:
-	.quad	9223372036854775807
-.LCPI4_2:
-	.quad	9218868437227405311
+	.quad	-9007199254740992
 func0000000000000019:
 	vbroadcastsd	.LCPI4_0(%rip), %zmm2
 	vsubpd	%zmm1, %zmm2, %zmm1
 	vsubpd	%zmm0, %zmm2, %zmm0
-	vbroadcastsd	.LCPI4_1(%rip), %zmm2
-	vandpd	%zmm2, %zmm0, %zmm0
-	vpbroadcastq	.LCPI4_2(%rip), %zmm3
-	vpcmpgtq	%zmm3, %zmm0, %k0
-	vandpd	%zmm2, %zmm1, %zmm0
-	vpcmpgtq	%zmm3, %zmm0, %k1
+	vpaddq	%zmm0, %zmm0, %zmm0
+	vpbroadcastq	.LCPI4_1(%rip), %zmm2
+	vpcmpnltuq	%zmm2, %zmm0, %k0
+	vpaddq	%zmm1, %zmm1, %zmm0
+	vpcmpnltuq	%zmm2, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -117,19 +114,16 @@ func0000000000000012:
 .LCPI6_0:
 	.quad	0x4056800000000000
 .LCPI6_1:
-	.quad	9223372036854775807
-.LCPI6_2:
-	.quad	9218868437227405311
+	.quad	-9007199254740992
 func0000000000000009:
 	vbroadcastsd	.LCPI6_0(%rip), %zmm2
 	vsubpd	%zmm1, %zmm2, %zmm1
 	vsubpd	%zmm0, %zmm2, %zmm0
-	vbroadcastsd	.LCPI6_1(%rip), %zmm2
-	vandpd	%zmm2, %zmm0, %zmm0
-	vpbroadcastq	.LCPI6_2(%rip), %zmm3
-	vpcmpgtq	%zmm3, %zmm0, %k0
-	vandpd	%zmm2, %zmm1, %zmm0
-	vpcmpgtq	%zmm3, %zmm0, %k1
+	vpaddq	%zmm0, %zmm0, %zmm0
+	vpbroadcastq	.LCPI6_1(%rip), %zmm2
+	vpcmpnltuq	%zmm2, %zmm0, %k0
+	vpaddq	%zmm1, %zmm1, %zmm0
+	vpcmpnltuq	%zmm2, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -154,19 +148,16 @@ func000000000000000d:
 .LCPI8_0:
 	.quad	0x3ff0000000000000
 .LCPI8_1:
-	.quad	9223372036854775807
-.LCPI8_2:
-	.quad	9218868437227405312
+	.quad	-9007199254740992
 func0000000000000006:
 	vbroadcastsd	.LCPI8_0(%rip), %zmm2
 	vsubpd	%zmm1, %zmm2, %zmm1
 	vsubpd	%zmm0, %zmm2, %zmm0
-	vbroadcastsd	.LCPI8_1(%rip), %zmm2
-	vandpd	%zmm2, %zmm0, %zmm0
-	vpbroadcastq	.LCPI8_2(%rip), %zmm3
-	vpcmpgtq	%zmm0, %zmm3, %k0
-	vandpd	%zmm2, %zmm1, %zmm0
-	vpcmpgtq	%zmm0, %zmm3, %k1
+	vpaddq	%zmm0, %zmm0, %zmm0
+	vpbroadcastq	.LCPI8_1(%rip), %zmm2
+	vpcmpltuq	%zmm2, %zmm0, %k0
+	vpaddq	%zmm1, %zmm1, %zmm0
+	vpcmpltuq	%zmm2, %zmm0, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

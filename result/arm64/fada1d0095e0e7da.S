@@ -121,11 +121,10 @@ func0000000000000024:
 
 func0000000000000009:
 	fmadd	d0, d0, d1, d2
-	mov	x9, #9218868437227405311
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 .LCPI12_0:
@@ -141,20 +140,18 @@ func000000000000000a:
 
 func0000000000000029:
 	fmadd	d0, d0, d1, d2
-	mov	x9, #9218868437227405311
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000026:
 	fmadd	d0, d0, d1, d2
-	mov	x9, #9218868437227405312
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 
 func0000000000000008:

@@ -29,14 +29,14 @@ func00000000000001aa:
 
 func0000000000000066:
 	mov	w8, #2139095040
-	fmov	w9, s1
 	fmov	s2, w8
-	and	w9, w9, #0x7fffffff
+	fmov	w8, s1
 	fcmp	s0, s2
-	cset	w10, mi
-	csinc	w10, w10, wzr, le
-	cmp	w9, w8
-	csel	w0, wzr, w10, ge
+	ubfx	w8, w8, #23, #8
+	cset	w9, mi
+	csinc	w9, w9, wzr, le
+	cmp	w8, #255
+	csel	w0, wzr, w9, hs
 	ret
 
 func0000000000000024:

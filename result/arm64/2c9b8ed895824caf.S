@@ -32,12 +32,11 @@ func0000000000000005:
 
 func0000000000000009:
 	tst	w0, #0x1
-	mov	x9, #9218868437227405311
 	fcsel	d0, d0, d1, ne
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, gt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2046
+	cset	w0, hi
 	ret
 
 func0000000000000008:
@@ -81,11 +80,10 @@ func000000000000001a:
 
 func0000000000000006:
 	tst	w0, #0x1
-	mov	x9, #9218868437227405312
 	fcsel	d0, d0, d1, ne
 	fmov	x8, d0
-	and	x8, x8, #0x7fffffffffffffff
-	cmp	x8, x9
-	cset	w0, lt
+	ubfx	x8, x8, #52, #11
+	cmp	x8, #2047
+	cset	w0, lo
 	ret
 

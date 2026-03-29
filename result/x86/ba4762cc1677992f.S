@@ -58,14 +58,14 @@ func00000000000000ee:
 func0000000000000132:
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
-	movb	$63, %dl
-	bzhiq	%rdx, %rcx, %rcx
-	movabsq	$9218868437227405311, %rsi
-	cmpq	%rsi, %rcx
-	setg	%cl
-	bzhiq	%rdx, %rax, %rax
-	cmpq	%rsi, %rax
-	setg	%al
+	shrq	$52, %rcx
+	andl	$2047, %ecx
+	cmpl	$2047, %ecx
+	setae	%cl
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	orb	%cl, %al
 	retq
 
@@ -207,13 +207,13 @@ func00000000000000f2:
 	vmovq	%xmm1, %rcx
 	movb	$63, %dl
 	bzhiq	%rdx, %rcx, %rcx
-	movabsq	$9218868437227405312, %rsi
-	cmpq	%rsi, %rcx
+	movabsq	$9218868437227405312, %rdx
+	cmpq	%rdx, %rcx
 	setne	%cl
-	bzhiq	%rdx, %rax, %rax
-	movabsq	$9218868437227405311, %rdx
-	cmpq	%rdx, %rax
-	setg	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	orb	%cl, %al
 	retq
 

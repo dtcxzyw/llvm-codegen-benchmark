@@ -47,12 +47,12 @@ func0000000000000088:
 func0000000000000132:
 	vmovd	%xmm0, %eax
 	vmovd	%xmm1, %ecx
-	andl	$2147483647, %ecx
-	cmpl	$2139095040, %ecx
-	setge	%cl
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%ecx, %ecx
+	cmpl	$-16777216, %ecx
+	setae	%cl
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	orb	%cl, %al
 	retq
 

@@ -1,9 +1,9 @@
 	.att_syntax
 func0000000000000009:
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setge	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setae	%al
 	andb	%dil, %al
 	retq
 
@@ -33,9 +33,9 @@ func000000000000000a:
 
 func0000000000000006:
 	vmovd	%xmm0, %eax
-	andl	$2147483647, %eax
-	cmpl	$2139095040, %eax
-	setl	%al
+	addl	%eax, %eax
+	cmpl	$-16777216, %eax
+	setb	%al
 	andb	%dil, %al
 	retq
 

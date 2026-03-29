@@ -29,11 +29,10 @@ func0000000000000014:
 func0000000000000006:
 	vmovq	%xmm0, %rax
 	vpandq	.LCPI2_0(%rip){1to2}, %xmm0, %xmm0
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	kmovd	%eax, %k1
 	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	kmovd	%edi, %k1

@@ -127,11 +127,10 @@ func0000000000000024:
 func0000000000000009:
 	vfmadd213sd	%xmm2, %xmm1, %xmm0
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	retq
 
 .LCPI12_0:
@@ -149,21 +148,19 @@ func000000000000000a:
 func0000000000000029:
 	vfmadd213sd	%xmm2, %xmm1, %xmm0
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405311, %rcx
-	cmpq	%rcx, %rax
-	setg	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setae	%al
 	retq
 
 func0000000000000026:
 	vfmadd213sd	%xmm2, %xmm1, %xmm0
 	vmovq	%xmm0, %rax
-	movb	$63, %cl
-	bzhiq	%rcx, %rax, %rax
-	movabsq	$9218868437227405312, %rcx
-	cmpq	%rcx, %rax
-	setl	%al
+	shrq	$52, %rax
+	andl	$2047, %eax
+	cmpl	$2047, %eax
+	setb	%al
 	retq
 
 func0000000000000008:

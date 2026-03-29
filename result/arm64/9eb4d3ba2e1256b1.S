@@ -25,11 +25,10 @@ func000000000000001a:
 	ret
 
 func0000000000000006:
-	fmov	w9, s0
-	mov	w8, #2139095040
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w8, lt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #255
+	cset	w8, lo
 	and	w0, w0, w8
 	ret
 
@@ -78,11 +77,10 @@ func0000000000000012:
 	ret
 
 func0000000000000009:
-	fmov	w9, s0
-	mov	w8, #2139095039
-	and	w9, w9, #0x7fffffff
-	cmp	w9, w8
-	cset	w8, gt
+	fmov	w8, s0
+	ubfx	w8, w8, #23, #8
+	cmp	w8, #254
+	cset	w8, hi
 	and	w0, w0, w8
 	ret
 
