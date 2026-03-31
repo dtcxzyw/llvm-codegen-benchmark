@@ -23,14 +23,11 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	sext.w	a2, a0
-	sext.w	a3, a1
-	subw	a4, a0, a1
-	subw	a1, a1, a0
-	slt	a0, a3, a2
-	czero.nez	a2, a4, a0
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	sext.w	a1, a1
+	sext.w	a0, a0
+	max	a2, a0, a1
+	min	a0, a0, a1
+	subw	a0, a0, a2
 	ret
 
 func00000000000001f8:
@@ -66,13 +63,10 @@ func0000000000000168:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a1
-	sext.w	a3, a0
-	subw	a4, a1, a0
-	subw	a0, a0, a1
-	slt	a1, a3, a2
-	czero.nez	a2, a4, a1
-	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
+	sext.w	a1, a1
+	sext.w	a0, a0
+	max	a2, a0, a1
+	min	a0, a0, a1
+	subw	a0, a0, a2
 	ret
 

@@ -40,6 +40,6 @@ func0000000000000168:
 
 func0000000000000006:
 	subs	w8, w0, w1
-	cneg	w0, w8, ge
+	cneg	w0, w8, gt
 	ret
 

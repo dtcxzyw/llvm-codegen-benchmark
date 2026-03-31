@@ -6,8 +6,8 @@ func0000000000000520:
 
 func0000000000000028:
 	subs	w8, w1, w2
-	cneg	w8, w8, gt
-	add	w0, w0, w8
+	cneg	w8, w8, le
+	sub	w0, w0, w8
 	ret
 
 func00000000000005a0:
