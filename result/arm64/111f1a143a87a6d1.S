@@ -1,6 +1,6 @@
 func0000000000000001:
-	rev	w8, w1
-	lsr	w8, w8, #16
+	and	x8, x1, #0xffff
+	rev16	x8, x8
 	orr	x0, x0, x8
 	ret
 

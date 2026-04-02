@@ -1,7 +1,7 @@
 func000000000000000b:
-	rev	w8, w0
-	lsr	w8, w8, #16
-	ubfiz	x0, x8, #1, #32
+	and	x8, x0, #0xffff
+	rev16	x8, x8
+	lsl	x0, x8, #1
 	ret
 
 func000000000000000a:
@@ -15,8 +15,8 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	rev	w8, w0
-	lsr	w8, w8, #16
+	and	x8, x0, #0xffff
+	rev16	x8, x8
 	lsl	x0, x8, #32
 	ret
 

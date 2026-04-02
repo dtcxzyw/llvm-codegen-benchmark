@@ -1,35 +1,10 @@
 	.att_syntax
 .LCPI0_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI0_1:
 	.zero	16,8
-.LCPI0_2:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
 func000000000000000a:
-	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
-	vpaddb	.LCPI0_1(%rip), %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm1
+	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpor	%xmm1, %xmm0, %xmm0
 	retq
 

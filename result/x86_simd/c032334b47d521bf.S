@@ -159,36 +159,11 @@ func0000000000000002:
 	retq
 
 .LCPI5_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI5_1:
 	.zero	16,8
-.LCPI5_2:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
 func0000000000000004:
-	vgf2p8affineqb	$0, .LCPI5_2(%rip){1to2}, %xmm0, %xmm0
-	vpaddb	.LCPI5_1(%rip), %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpaddb	.LCPI5_0(%rip), %xmm0, %xmm0
 	retq
 
 .LCPI6_0:

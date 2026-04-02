@@ -1,5 +1,5 @@
 func0000000000000000:
-	rev	w8, w0
-	lsr	w0, w8, #16
+	and	x8, x0, #0xffff
+	rev16	x0, x8
 	ret
 

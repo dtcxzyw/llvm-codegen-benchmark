@@ -35,38 +35,13 @@ func0000000000000007:
 	retq
 
 .LCPI1_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI1_1:
 	.zero	16,1
-.LCPI1_2:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI1_3:
+.LCPI1_1:
 	.zero	4,1
 func0000000000000001:
-	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpord	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	retq
 
 .LCPI2_0:
@@ -140,38 +115,13 @@ func0000000000000005:
 	retq
 
 .LCPI4_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI4_1:
 	.zero	16,14
-.LCPI4_2:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI4_3:
+.LCPI4_1:
 	.zero	4,14
 func0000000000000004:
-	vgf2p8affineqb	$0, .LCPI4_2(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI4_3(%rip){1to4}, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpord	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
 	retq
 
 .LCPI5_0:

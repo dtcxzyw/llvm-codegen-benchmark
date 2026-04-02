@@ -1,19 +1,19 @@
 func000000000000000b:
-	rev	w8, w0
-	lsr	w8, w8, #16
+	and	x8, x0, #0xffff
+	rev16	x8, x8
 	add	x0, x8, #1
 	ret
 
 func0000000000000001:
-	rev	w8, w0
-	lsr	w8, w8, #16
+	and	x8, x0, #0xffff
+	rev16	x8, x8
 	sub	x0, x8, #2
 	ret
 
 func0000000000000003:
-	rev	w8, w0
-	mov	w9, #-1
-	lsr	w8, w8, #16
-	add	x0, x8, x9
+	and	x9, x0, #0xffff
+	mov	w8, #-1
+	rev16	x9, x9
+	add	x0, x9, x8
 	ret
 

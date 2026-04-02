@@ -40,43 +40,18 @@ func0000000000000002:
 	retq
 
 .LCPI1_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI1_1:
 	.zero	16,243
-.LCPI1_2:
+.LCPI1_1:
 	.zero	16,8
-.LCPI1_3:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI1_4:
+.LCPI1_2:
 	.zero	4,243
-.LCPI1_5:
+.LCPI1_3:
 	.zero	4,8
 func000000000000000e:
-	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm1, %xmm1
-	vpandd	.LCPI1_4(%rip){1to4}, %xmm0, %xmm0
-	vpternlogd	$254, .LCPI1_5(%rip){1to4}, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm1
+	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
+	vpternlogd	$254, .LCPI1_3(%rip){1to4}, %xmm1, %xmm0
 	retq
 
 .LCPI2_0:

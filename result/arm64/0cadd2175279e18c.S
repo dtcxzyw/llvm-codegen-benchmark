@@ -1,23 +1,23 @@
 func0000000000000044:
-	rev	w8, w2
+	and	x8, x2, #0xffff
 	sub	x9, x0, x1
-	lsr	w8, w8, #16
+	rev16	x8, x8
 	cmp	x9, x8
 	cset	w0, lo
 	ret
 
 func0000000000000004:
-	rev	w8, w2
+	and	x8, x2, #0xffff
 	sub	x9, x0, x1
-	lsr	w8, w8, #16
+	rev16	x8, x8
 	cmp	x9, x8
 	cset	w0, lo
 	ret
 
 func0000000000000104:
-	rev	w8, w2
+	and	x8, x2, #0xffff
 	sub	x9, x0, x1
-	lsr	w8, w8, #16
+	rev16	x8, x8
 	cmp	x9, x8
 	cset	w0, lo
 	ret

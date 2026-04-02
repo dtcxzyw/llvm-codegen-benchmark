@@ -1,13 +1,13 @@
 func000000000000000b:
-	rev	w8, w0
-	lsr	w8, w8, #15
-	and	w0, w8, #0x1fffe
+	and	w8, w0, #0xffff
+	rev16	w8, w8
+	lsl	w0, w8, #1
 	ret
 
 func0000000000000003:
-	rev	w8, w0
-	lsr	w8, w8, #13
-	and	w0, w8, #0x7fff8
+	and	w8, w0, #0xffff
+	rev16	w8, w8
+	lsl	w0, w8, #3
 	ret
 
 func000000000000000a:

@@ -104,54 +104,29 @@ func0000000000000017:
 	retq
 
 .LCPI2_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
 	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
 	.byte	1
-	.byte	0
-	.byte	0
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI2_1:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI2_2:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI2_3:
 	.zero	4,1
 func0000000000000001:
 	vpmovdb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI2_3(%rip){1to4}, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpord	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -312,54 +287,29 @@ func0000000000000015:
 	retq
 
 .LCPI6_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI6_1:
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI6_2:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI6_3:
 	.zero	4,14
 func0000000000000014:
 	vpmovdb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI6_2(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI6_3(%rip){1to4}, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpaddb	%xmm0, %xmm0, %xmm0
+	vpord	.LCPI6_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 

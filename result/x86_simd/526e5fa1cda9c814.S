@@ -156,55 +156,30 @@ func0000000000000009:
 	retq
 
 .LCPI3_0:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
+	.short	65523
 .LCPI3_1:
 	.short	65523
 	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-	.short	65523
-.LCPI3_2:
-	.byte	32
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-.LCPI3_3:
-	.short	65523
-	.short	65523
 func000000000000000e:
-	vgf2p8affineqb	$0, .LCPI3_2(%rip){1to2}, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm1
+	vpaddb	%xmm1, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1
-	vpternlogd	$236, .LCPI3_3(%rip){1to8}, %ymm1, %ymm0
+	vpternlogd	$236, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
 .LCPI4_0:

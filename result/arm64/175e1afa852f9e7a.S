@@ -1,15 +1,15 @@
 func000000000000000d:
 	mov	x8, #-65536
-	rev	w9, w0
+	and	x9, x0, #0xffff
 	movk	x8, #32769, lsl #16
-	and	w9, w9, #0xffff0000
-	add	x0, x9, x8
+	rev16	x9, x9
+	add	x0, x8, x9, lsl #16
 	ret
 
 func000000000000000f:
-	rev	w8, w0
-	lsr	w8, w8, #16
-	ubfiz	x8, x8, #2, #32
+	and	x8, x0, #0xffff
+	rev16	x8, x8
+	lsl	x8, x8, #2
 	add	x0, x8, #32
 	ret
 

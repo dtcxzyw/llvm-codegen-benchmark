@@ -1,20 +1,18 @@
 func000000000000000a:
-	rev	w8, w0
-	lsr	w0, w8, #16
+	rev16	x0, x0
 	ret
 
 func0000000000000008:
-	rev	w8, w0
-	lsr	w0, w8, #16
+	rev16	x0, x0
 	ret
 
 func0000000000000000:
-	rev	w8, w0
-	lsr	w0, w8, #16
+	and	x8, x0, #0xffff
+	rev16	x0, x8
 	ret
 
 func0000000000000002:
-	rev	w8, w0
-	lsr	w0, w8, #16
+	and	x8, x0, #0xffff
+	rev16	x0, x8
 	ret
 
