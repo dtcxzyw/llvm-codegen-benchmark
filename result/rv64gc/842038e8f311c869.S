@@ -8,6 +8,6 @@ func0000000000000010:
 	ret
 
 func0000000000000012:
-	mulhu	a0, a0, a2
+	mulhu	a0, a2, a0
 	ret
 

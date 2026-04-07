@@ -6,6 +6,6 @@ func0000000000000010:
 	ret
 
 func0000000000000012:
-	umulh	x0, x0, x2
+	umulh	x0, x2, x0
 	ret
 
