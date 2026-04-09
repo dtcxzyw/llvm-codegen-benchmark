@@ -1,14 +1,14 @@
 func000000000000001c:
-	mvn	w8, w1
+	mov	w8, #-2
 	add	w9, w2, w0
-	orr	w8, w8, #0xfffffffe
+	orn	w8, w8, w1
 	add	w0, w8, w9
 	ret
 
 func0000000000000014:
-	mvn	w8, w1
+	mov	w8, #-2
 	add	w9, w2, w0
-	orr	w8, w8, #0xfffffffe
+	orn	w8, w8, w1
 	add	w0, w8, w9
 	ret
 
@@ -21,9 +21,9 @@ func000000000000001d:
 	ret
 
 func0000000000000015:
-	mvn	w8, w1
+	mov	w8, #-2
 	add	w9, w2, w0
-	orr	w8, w8, #0xfffffffe
+	orn	w8, w8, w1
 	add	w0, w8, w9
 	ret
 

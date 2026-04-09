@@ -5,8 +5,8 @@ func000000000000001c:
 	ret
 
 func000000000000001d:
-	mvn	w8, w1
-	orr	w8, w8, #0xfffffff0
+	mov	w8, #-16
+	orn	w8, w8, w1
 	add	w0, w8, w0
 	ret
 

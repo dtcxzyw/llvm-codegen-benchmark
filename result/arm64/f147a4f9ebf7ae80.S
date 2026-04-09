@@ -34,8 +34,8 @@ func0000000000000003:
 	ret
 
 func0000000000000008:
-	mvn	w8, w0
-	orr	w8, w8, #0xfffffffe
+	mov	w8, #-2
+	orn	w8, w8, w0
 	add	w0, w8, w1
 	ret
 

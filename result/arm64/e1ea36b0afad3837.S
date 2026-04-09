@@ -1,14 +1,14 @@
 func0000000000000001:
 	fcvtzs	w8, d0
-	mvn	w9, w0
-	orr	w9, w9, #0xfffffffe
+	mov	w9, #-2
+	orn	w9, w9, w0
 	add	w0, w9, w8
 	ret
 
 func0000000000000005:
 	fcvtzs	w8, d0
-	mvn	w9, w0
-	orr	w9, w9, #0xfffffffe
+	mov	w9, #-2
+	orn	w9, w9, w0
 	add	w0, w9, w8
 	ret
 

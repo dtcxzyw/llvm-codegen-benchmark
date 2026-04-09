@@ -1,7 +1,7 @@
 func0000000000000000:
-	add	w8, w0, w1
-	mvn	w8, w8
-	orr	w0, w8, #0xfffffff
+	mov	w8, #268435455
+	add	w9, w0, w1
+	orn	w0, w8, w9
 	ret
 
 func0000000000000003:

@@ -18,8 +18,8 @@ func000000000000000d:
 	ret
 
 func0000000000000005:
-	mvn	w8, w1
-	orr	w8, w8, #0xe0000000
+	mov	w8, #-536870912
+	orn	w8, w8, w1
 	add	w0, w0, w8
 	ret
 

@@ -2,9 +2,9 @@
 	.xword	0x3fd34413509f79fb
 func0000000000000001:
 	adrp	x8, .LCPI0_0
-	mvn	w9, w0
+	mov	w9, #-2
 	ldr	d2, [x8, :lo12:.LCPI0_0]
-	orr	w9, w9, #0xfffffffe
+	orn	w9, w9, w0
 	fmadd	d0, d0, d2, d1
 	fcvtzs	w8, d0
 	add	w0, w9, w8
@@ -14,9 +14,9 @@ func0000000000000001:
 	.xword	0x3fd34413509f79fb
 func0000000000000005:
 	adrp	x8, .LCPI1_0
-	mvn	w9, w0
+	mov	w9, #-2
 	ldr	d2, [x8, :lo12:.LCPI1_0]
-	orr	w9, w9, #0xfffffffe
+	orn	w9, w9, w0
 	fmadd	d0, d0, d2, d1
 	fcvtzs	w8, d0
 	add	w0, w9, w8

@@ -9,8 +9,8 @@ func000000000000001d:
 	ret
 
 func000000000000000d:
-	mvn	w8, w1
-	orr	w8, w8, #0xffff0000
+	mov	w8, #-65536
+	orn	w8, w8, w1
 	add	w0, w0, w8
 	ret
 
