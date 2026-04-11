@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f866666
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vdivss	%xmm2, %xmm1, %xmm1
 	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1
@@ -8,6 +9,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vdivss	%xmm2, %xmm1, %xmm1
 	vaddss	%xmm1, %xmm1, %xmm1

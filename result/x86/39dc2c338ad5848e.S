@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0xc8c7ce60
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vucomiss	.LCPI0_0(%rip), %xmm0
 	setnp	%cl
@@ -10,6 +11,7 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -18,6 +20,7 @@ func0000000000000012:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0

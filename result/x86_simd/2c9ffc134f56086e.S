@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -50,6 +51,7 @@ func0000000000000026:
 	.long	48
 .LCPI1_2:
 	.long	49
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000078:
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -64,6 +66,7 @@ func0000000000000078:
 	.long	14
 .LCPI2_2:
 	.long	13
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -78,6 +81,7 @@ func0000000000000021:
 	.long	1
 .LCPI3_2:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -34,6 +35,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -67,6 +69,7 @@ func000000000000000a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax

@@ -39,6 +39,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm1, %k1

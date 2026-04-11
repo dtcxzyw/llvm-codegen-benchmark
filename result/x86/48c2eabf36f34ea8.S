@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c1:
 	orl	$8388608, %edi
 	movb	$126, %al
@@ -8,6 +9,7 @@ func00000000000001c1:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	orl	$8388608, %edi
 	movb	$113, %al

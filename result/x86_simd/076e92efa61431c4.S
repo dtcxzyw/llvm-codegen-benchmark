@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vbroadcastsd	.LCPI0_0(%rip), %zmm6
 	vxorpd	%xmm7, %xmm7, %xmm7
@@ -14,6 +15,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vbroadcastsd	.LCPI1_0(%rip), %zmm6
 	vxorpd	%xmm7, %xmm7, %xmm7
@@ -29,6 +31,7 @@ func0000000000000004:
 	.quad	0x8000000000000000
 .LCPI2_1:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vbroadcastsd	.LCPI2_0(%rip), %zmm6
 	vbroadcastsd	.LCPI2_1(%rip), %zmm7

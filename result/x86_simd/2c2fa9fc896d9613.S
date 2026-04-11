@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestmd	%xmm0, %xmm0, %k1
 	vmovdqa32	%xmm1, %xmm0 {%k1} {z}
@@ -9,6 +10,7 @@ func0000000000000001:
 	.long	4294967063
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpcmpeqd	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1}

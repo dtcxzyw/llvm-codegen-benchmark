@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0
@@ -24,6 +25,7 @@ func0000000000000000:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000033:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0
@@ -31,6 +33,7 @@ func0000000000000033:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqw	%ymm0, %xmm0

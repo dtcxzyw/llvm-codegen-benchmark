@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
@@ -63,6 +64,7 @@ func0000000000000061:
 	.zero	1
 .LCPI1_3:
 	.byte	49
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm0, %k1

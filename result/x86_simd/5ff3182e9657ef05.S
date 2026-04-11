@@ -10,6 +10,7 @@
 	.short	1024
 .LCPI0_1:
 	.short	1024
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastw	.LCPI0_1(%rip), %xmm2
@@ -29,6 +30,7 @@ func0000000000000003:
 	.short	1
 .LCPI1_1:
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastw	.LCPI1_1(%rip), %xmm2

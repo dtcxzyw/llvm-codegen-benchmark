@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f4:
 	movl	$1048576, %eax
 	xorl	%edx, %edx
@@ -8,6 +9,7 @@ func00000000000000f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e1:
 	movl	$8, %eax
 	xorl	%edx, %edx

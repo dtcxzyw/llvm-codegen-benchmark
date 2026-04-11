@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000421:
 	xorq	$2, %rsi
 	andl	$16, %edi
@@ -6,6 +7,7 @@ func0000000000000421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000481:
 	addq	$-32768, %rsi
 	cmpq	$1793, %rsi
@@ -15,6 +17,7 @@ func0000000000000481:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000058c:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -23,6 +26,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	cmpq	$1, %rsi
 	setne	%cl

@@ -3,6 +3,7 @@
 	.long	2048
 .LCPI0_1:
 	.long	4294963200
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -35,6 +36,7 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -45,6 +47,7 @@ func000000000000003f:
 
 .LCPI2_0:
 	.long	63
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -58,6 +61,7 @@ func0000000000000030:
 	.long	19
 .LCPI3_1:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

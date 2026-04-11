@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000118:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm1, %k0
@@ -8,6 +9,7 @@ func0000000000000118:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000308:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm0, %k0
@@ -17,6 +19,7 @@ func0000000000000308:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000052:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpnltuq	%ymm2, %ymm0, %k0
@@ -28,6 +31,7 @@ func0000000000000052:
 
 .LCPI3_0:
 	.quad	32
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpeqq	%ymm2, %ymm1, %k0
@@ -37,6 +41,7 @@ func0000000000000042:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000030e:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpleq	%ymm2, %ymm0, %k0
@@ -47,6 +52,7 @@ func000000000000030e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000050:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpnleuq	%ymm2, %ymm0, %k0
@@ -58,6 +64,7 @@ func0000000000000050:
 
 .LCPI6_0:
 	.quad	28
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000310:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpneqq	%ymm2, %ymm1, %k0
@@ -67,6 +74,7 @@ func0000000000000310:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001d8:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpleq	%ymm2, %ymm1, %k0
@@ -78,6 +86,7 @@ func00000000000001d8:
 
 .LCPI8_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000018e:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpleq	%ymm2, %ymm0, %k0
@@ -89,6 +98,7 @@ func000000000000018e:
 
 .LCPI9_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000002cc:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpnltq	%ymm2, %ymm1, %k0
@@ -98,6 +108,7 @@ func00000000000002cc:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000002c2:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpnltq	%ymm2, %ymm1, %k0
@@ -109,6 +120,7 @@ func00000000000002c2:
 
 .LCPI11_0:
 	.quad	-4
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000302:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpneqq	%ymm2, %ymm1, %k0

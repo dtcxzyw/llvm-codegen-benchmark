@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	131071
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpslld	$17, %ymm2, %ymm2
@@ -46,6 +47,7 @@ func0000000000000002:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpslld	$24, %ymm2, %ymm2

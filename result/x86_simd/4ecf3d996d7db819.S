@@ -3,6 +3,7 @@
 	.quad	10000
 .LCPI0_1:
 	.quad	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpminsq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0
@@ -13,6 +14,7 @@ func0000000000000000:
 	.quad	10000
 .LCPI1_1:
 	.quad	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpminsq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm0

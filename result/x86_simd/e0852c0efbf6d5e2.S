@@ -10,6 +10,7 @@
 	.short	10240
 .LCPI0_1:
 	.long	65536
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007f:
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -29,6 +30,7 @@ func000000000000007f:
 	.short	10240
 .LCPI1_1:
 	.long	65536
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	vpaddw	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

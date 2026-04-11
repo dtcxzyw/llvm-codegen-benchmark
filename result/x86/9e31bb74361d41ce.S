@@ -5,6 +5,7 @@
 	.quad	0xc1e0000000000000
 .LCPI0_2:
 	.quad	0x41dfffffffc00000
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006d3:
 	vcmpneq_oqsd	.LCPI0_0(%rip), %xmm1, %k0
 	vcmpnltsd	.LCPI0_1(%rip), %xmm0, %k1
@@ -21,6 +22,7 @@ func00000000000006d3:
 	.quad	0xbff0000000000000
 .LCPI1_2:
 	.quad	0x43f0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000653:
 	vcmpneq_oqsd	.LCPI1_0(%rip), %xmm1, %k0
 	vcmpnlesd	.LCPI1_1(%rip), %xmm0, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x322bcc77
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmovaps	%xmm0, %xmm2
 	vxorps	%xmm0, %xmm0, %xmm0
@@ -10,6 +11,7 @@ func0000000000000004:
 .LBB0_2:
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vmovaps	%xmm0, %xmm2
 	vxorps	%xmm0, %xmm0, %xmm0

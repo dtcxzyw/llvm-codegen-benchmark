@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm3, %k1
@@ -16,6 +17,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm3, %zmm4, %k1

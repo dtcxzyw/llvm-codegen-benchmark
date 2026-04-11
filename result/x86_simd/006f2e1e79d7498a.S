@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -8,6 +9,7 @@ func0000000000000048:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000045:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -17,6 +19,7 @@ func0000000000000045:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000044:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -26,6 +29,7 @@ func0000000000000044:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000041:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -35,6 +39,7 @@ func0000000000000041:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e1:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -44,6 +49,7 @@ func00000000000001e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000001f8:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -53,6 +59,7 @@ func00000000000001f8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001e9:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -62,6 +69,7 @@ func00000000000001e9:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001f4:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -71,6 +79,7 @@ func00000000000001f4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000061:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -80,6 +89,7 @@ func0000000000000061:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000074:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -89,6 +99,7 @@ func0000000000000074:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000068:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -98,6 +109,7 @@ func0000000000000068:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000064:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1
@@ -107,6 +119,7 @@ func0000000000000064:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000001e8:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmovzxdq	%xmm1, %ymm1

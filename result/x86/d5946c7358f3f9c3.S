@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004c6:
 	cmpl	%edx, %esi
 	setle	%cl
@@ -7,6 +8,7 @@ func00000000000004c6:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c8:
 	subl	%edx, %esi
 	cmpl	$2147483647, %esi
@@ -16,6 +18,7 @@ func00000000000000c8:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c6:
 	subl	%edx, %esi
 	testl	%esi, %esi
@@ -25,6 +28,7 @@ func00000000000000c6:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000014a:
 	subl	%edx, %esi
 	testl	%esi, %esi
@@ -34,6 +38,7 @@ func000000000000014a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000546:
 	subl	%edx, %esi
 	cmpl	$20, %esi
@@ -43,12 +48,14 @@ func0000000000000546:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000018c:
 	xorl	%edx, %esi
 	orl	%edi, %esi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000042a:
 	subl	%edx, %esi
 	cmpl	$127, %esi
@@ -58,6 +65,7 @@ func000000000000042a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000421:
 	cmpl	%edx, %esi
 	sete	%cl
@@ -66,6 +74,7 @@ func0000000000000421:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000084:
 	subl	%edx, %esi
 	cmpl	$2, %esi
@@ -75,6 +84,7 @@ func0000000000000084:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000054a:
 	cmpl	%edx, %esi
 	setge	%cl
@@ -83,6 +93,7 @@ func000000000000054a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000021:
 	subl	%edx, %esi
 	cmpl	$1, %esi
@@ -92,6 +103,7 @@ func0000000000000021:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002a:
 	cmpl	%edx, %esi
 	setns	%cl
@@ -100,6 +112,7 @@ func000000000000002a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000581:
 	cmpl	%edx, %esi
 	sete	%cl
@@ -108,6 +121,7 @@ func0000000000000581:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000024:
 	subl	%edx, %esi
 	cmpl	$100, %esi

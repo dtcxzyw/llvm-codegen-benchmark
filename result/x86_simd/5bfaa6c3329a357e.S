@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -13,6 +14,7 @@ func0000000000000002:
 	.long	64
 .LCPI1_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -25,6 +27,7 @@ func0000000000000010:
 	.long	1
 .LCPI2_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -37,6 +40,7 @@ func0000000000000018:
 	.long	95
 .LCPI3_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -49,6 +53,7 @@ func0000000000000008:
 	.long	4
 .LCPI4_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -59,6 +64,7 @@ func0000000000000014:
 
 .LCPI5_0:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2

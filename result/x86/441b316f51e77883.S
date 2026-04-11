@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000028c1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -9,6 +10,7 @@ func00000000000028c1:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001d66:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -19,6 +21,7 @@ func0000000000001d66:
 	cmovsl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000014e1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -29,6 +32,7 @@ func00000000000014e1:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000010c1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -39,6 +43,7 @@ func00000000000010c1:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000002cea:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -49,6 +54,7 @@ func0000000000002cea:
 	cmovgl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000002ce1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -59,6 +65,7 @@ func0000000000002ce1:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000001d61:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -69,6 +76,7 @@ func0000000000001d61:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000028ca:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx

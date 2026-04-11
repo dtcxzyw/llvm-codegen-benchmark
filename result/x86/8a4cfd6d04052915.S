@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000019:
 	cmpl	$2147483647, %edx
 	cmovbl	%esi, %edi

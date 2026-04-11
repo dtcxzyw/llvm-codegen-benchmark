@@ -20,6 +20,7 @@
 	.zero	16,48
 .LCPI0_2:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpsrlw	$2, %ymm0, %ymm0
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0
@@ -50,6 +51,7 @@ func0000000000000007:
 	.zero	16,48
 .LCPI1_2:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpsrlw	$2, %ymm0, %ymm0
 	vpmulhuw	.LCPI1_0(%rip), %ymm0, %ymm0
@@ -80,6 +82,7 @@ func0000000000000005:
 	.zero	16,64
 .LCPI2_2:
 	.zero	4,64
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmulhuw	.LCPI2_0(%rip), %ymm0, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0

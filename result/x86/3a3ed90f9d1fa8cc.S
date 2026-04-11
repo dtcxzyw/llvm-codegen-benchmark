@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x43f0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmovq	%rsi, %xmm0
 	vmovsd	.LCPI0_0(%rip), %xmm1
@@ -9,6 +10,7 @@ func0000000000000002:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	shlq	%rsi
 	testq	%rsi, %rsi
@@ -16,6 +18,7 @@ func0000000000000008:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vmovq	%rsi, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -24,6 +27,7 @@ func000000000000000d:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	vmovq	%rsi, %xmm0
 	vucomisd	%xmm0, %xmm0
@@ -31,6 +35,7 @@ func000000000000000e:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	vmovq	%rsi, %xmm0
 	vucomisd	%xmm0, %xmm0

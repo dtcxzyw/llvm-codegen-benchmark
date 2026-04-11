@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x40490fd8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	subl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1

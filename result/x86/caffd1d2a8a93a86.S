@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	subl	%esi, %edi
 	movslq	%edi, %rax
@@ -8,6 +9,7 @@ func0000000000000026:
 	cmovnsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	subl	%esi, %edi
 	movslq	%edi, %rax
@@ -18,6 +20,7 @@ func00000000000000a6:
 	cmovnsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e6:
 	subl	%esi, %edi
 	movslq	%edi, %rax

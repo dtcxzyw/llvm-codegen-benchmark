@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -23,6 +24,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -48,6 +50,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000006a:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -76,6 +79,7 @@ func000000000000006a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -104,6 +108,7 @@ func000000000000000a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -129,6 +134,7 @@ func000000000000000b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -154,6 +160,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -178,6 +185,7 @@ func0000000000000006:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000c:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -203,6 +211,7 @@ func000000000000000c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000068:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -228,6 +237,7 @@ func0000000000000068:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000007:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -253,6 +263,7 @@ func0000000000000007:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000064:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -282,6 +293,7 @@ func0000000000000064:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000066:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx

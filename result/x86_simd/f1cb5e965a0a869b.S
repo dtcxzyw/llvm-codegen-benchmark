@@ -50,6 +50,7 @@
 	.short	6
 	.short	6
 	.short	6
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000698:
 	vpcmpnleuw	.LCPI0_0(%rip), %ymm0, %k0
 	vpaddw	.LCPI0_1(%rip), %ymm0, %ymm0

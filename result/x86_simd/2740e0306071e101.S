@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -9,6 +10,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vcmpnltps	.LCPI1_0(%rip){1to16}, %zmm1, %k1
@@ -18,6 +20,7 @@ func000000000000000d:
 
 .LCPI2_0:
 	.long	0x42700000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vcmpgtps	.LCPI2_0(%rip){1to16}, %zmm1, %k1
@@ -27,6 +30,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vcmpgeps	.LCPI3_0(%rip){1to16}, %zmm1, %k1
@@ -34,6 +38,7 @@ func000000000000000c:
 	vmovaps	%zmm1, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2

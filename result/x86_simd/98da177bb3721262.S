@@ -7,6 +7,7 @@
 	.long	4294966211
 .LCPI0_3:
 	.long	53
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004a:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2

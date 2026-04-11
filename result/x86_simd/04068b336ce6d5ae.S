@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpextrq	$1, %xmm0, %rax
 	testq	%rax, %rax
@@ -28,6 +29,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpextrq	$1, %xmm0, %rax
 	testq	%rax, %rax

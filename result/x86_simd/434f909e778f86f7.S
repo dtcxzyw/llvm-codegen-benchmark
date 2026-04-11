@@ -5,6 +5,7 @@
 	.zero	16,8
 .LCPI0_2:
 	.byte	12
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -18,6 +19,7 @@ func0000000000000000:
 	.zero	16,128
 .LCPI1_1:
 	.zero	4,128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1

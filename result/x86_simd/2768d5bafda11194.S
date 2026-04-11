@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	vpmovzxdq	%xmm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -7,6 +8,7 @@ func000000000000002a:
 	vmovdqa	%ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestnmq	%ymm1, %ymm1, %k1
@@ -14,6 +16,7 @@ func0000000000000001:
 	vmovdqa	%ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestnmq	%ymm1, %ymm1, %k1
@@ -23,6 +26,7 @@ func0000000000000021:
 
 .LCPI3_0:
 	.quad	60
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm1, %k1

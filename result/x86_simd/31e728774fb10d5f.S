@@ -3,6 +3,7 @@
 	.quad	1
 .LCPI0_1:
 	.long	64
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	vpmovzxdq	%xmm1, %ymm2
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
@@ -11,6 +12,7 @@ func00000000000000ca:
 	vpand	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	vpmovzxdq	%xmm1, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3

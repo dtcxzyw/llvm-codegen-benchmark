@@ -29,6 +29,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000006f:
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2

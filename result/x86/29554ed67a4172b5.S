@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	andl	$1, %esi
 	xorq	$5, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	leaq	6(%rdi), %rax
 	leaq	28(%rdi), %rcx

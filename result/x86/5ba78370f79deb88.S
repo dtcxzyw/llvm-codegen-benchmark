@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001ed:
 	imulq	$100000, %rsi, %rax
 	addq	$2097152, %rax
@@ -6,6 +7,7 @@ func00000000000001ed:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	movabsq	$6364136223846793005, %rcx
 	imulq	%rsi, %rcx
@@ -15,6 +17,7 @@ func000000000000000f:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a0:
 	imulq	$83443, %rsi, %rax
 	addq	$32768, %rax
@@ -22,6 +25,7 @@ func00000000000000a0:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a1:
 	imulq	$14746, %rsi, %rax
 	addq	$32768, %rax
@@ -29,6 +33,7 @@ func00000000000000a1:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001ef:
 	imulq	$23726336, %rsi, %rax
 	addq	$32768, %rax

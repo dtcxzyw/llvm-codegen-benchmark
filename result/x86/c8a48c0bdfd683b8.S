@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	shlq	$4, %rsi
 	addq	%rdi, %rsi
@@ -7,6 +8,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	leaq	(%rdi,%rsi,2), %rax
 	cmpq	$2147483647, %rax

@@ -37,6 +37,7 @@
 	.byte	128
 .LCPI0_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm1
@@ -83,6 +84,7 @@ func0000000000000001:
 	.byte	128
 .LCPI1_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm1

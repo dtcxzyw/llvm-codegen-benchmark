@@ -2,6 +2,7 @@
 .LCPI0_0:
 	.long	0x7f800000
 	.long	0xff800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	cmpb	$45, %dil
@@ -12,6 +13,7 @@ func0000000000000001:
 .LCPI1_0:
 	.long	0x3dcccccd
 	.long	0x3e4ccccd
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	xorl	%eax, %eax
 	cmpb	$2, %dil
@@ -22,6 +24,7 @@ func0000000000000014:
 .LCPI2_0:
 	.long	0xbf800000
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	xorl	%eax, %eax
 	cmpb	$32, %dil

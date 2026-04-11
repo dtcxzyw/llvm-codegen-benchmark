@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c2a:
 	xorl	%eax, %eax
 	subl	%esi, %edi
@@ -7,6 +8,7 @@ func0000000000000c2a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000c21:
 	xorl	%eax, %eax
 	subl	%esi, %edx
@@ -15,6 +17,7 @@ func0000000000000c21:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000c0a:
 	xorl	%eax, %eax
 	subl	%edx, %esi
@@ -24,6 +27,7 @@ func0000000000000c0a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000801:
 	xorl	%eax, %eax
 	subl	%esi, %edx

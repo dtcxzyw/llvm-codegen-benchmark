@@ -3,6 +3,7 @@
 	.long	1374389535
 .LCPI0_1:
 	.long	100
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpsrad	$13, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1

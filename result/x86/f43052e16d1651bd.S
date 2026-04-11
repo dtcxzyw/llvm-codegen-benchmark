@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	cmpl	%esi, %edi
 	sete	%cl
@@ -10,6 +11,7 @@ func0000000000000012:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b4:
 	cmpl	%esi, %edi
 	setge	%cl
@@ -19,6 +21,7 @@ func00000000000000b4:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000064:
 	cmpl	%esi, %edi
 	setl	%cl
@@ -28,6 +31,7 @@ func0000000000000064:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a4:
 	cmpl	%esi, %edi
 	setg	%cl

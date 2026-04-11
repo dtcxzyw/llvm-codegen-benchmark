@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
@@ -40,6 +41,7 @@ func0000000000000010:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
@@ -64,6 +66,7 @@ func0000000000000000:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0

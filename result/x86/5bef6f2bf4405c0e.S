@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	movl	%esi, %eax
 	movl	$2863311531, %ecx
@@ -8,6 +9,7 @@ func000000000000001f:
 	leaq	8(%rdi,%rcx), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000d0:
 	movl	$2863311531, %eax
 	imulq	%rsi, %rax

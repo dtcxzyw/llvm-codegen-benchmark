@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000902:
 	movsbl	%dil, %eax
 	leal	-48(%rax), %ecx
@@ -9,6 +10,7 @@ func0000000000000902:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000910:
 	movsbl	%dil, %eax
 	leal	-58(%rax), %ecx
@@ -19,6 +21,7 @@ func0000000000000910:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000848:
 	movsbl	%dil, %eax
 	leal	-48(%rax), %ecx
@@ -29,6 +32,7 @@ func0000000000000848:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000090c:
 	movsbl	%dil, %eax
 	leal	-71(%rax), %ecx

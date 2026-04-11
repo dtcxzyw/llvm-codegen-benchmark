@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	movl	%edx, %ecx
 	decq	%rsi
@@ -7,6 +8,7 @@ func0000000000000028:
 	cmoval	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000078:
 	movl	%edx, %eax
 	addq	$1024, %rsi
@@ -15,6 +17,7 @@ func0000000000000078:
 	cmoval	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f4:
 	movl	%edx, %ecx
 	incq	%rsi
@@ -23,6 +26,7 @@ func00000000000000f4:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000e4:
 	movl	%edx, %ecx
 	incq	%rsi
@@ -31,6 +35,7 @@ func00000000000000e4:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ec:
 	movl	%edx, %ecx
 	incq	%rsi

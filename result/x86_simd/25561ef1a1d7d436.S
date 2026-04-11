@@ -29,6 +29,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpaddb	%xmm2, %xmm2, %xmm2
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
@@ -92,6 +93,7 @@ func0000000000000003:
 	.byte	0
 .LCPI1_4:
 	.zero	4,56
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm2, %xmm2
 	vpandd	.LCPI1_4(%rip){1to4}, %xmm2, %xmm2

@@ -20,6 +20,7 @@
 	.quad	10
 .LCPI0_2:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f4:
 	vpmovqb	%ymm1, %xmm2
 	vpord	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
@@ -49,6 +50,7 @@ func00000000000000f4:
 	.quad	10
 .LCPI1_2:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	vpmovqb	%ymm1, %xmm2
 	vpord	.LCPI1_2(%rip){1to4}, %xmm2, %xmm2
@@ -78,6 +80,7 @@ func0000000000000064:
 	.quad	10
 .LCPI2_2:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vpmovqb	%ymm1, %xmm2
 	vpord	.LCPI2_2(%rip){1to4}, %xmm2, %xmm2

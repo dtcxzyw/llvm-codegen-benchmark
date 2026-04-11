@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x80000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vxorps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -12,6 +13,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.long	0x80000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	vxorps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -21,6 +23,7 @@ func000000000000000d:
 
 .LCPI2_0:
 	.long	0x80000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vxorps	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -30,6 +33,7 @@ func000000000000000c:
 
 .LCPI3_0:
 	.long	0x80000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vxorps	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0

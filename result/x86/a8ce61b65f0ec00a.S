@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000126:
 	imulq	%rdx, %rsi
 	movq	%rsi, %rax
@@ -9,6 +10,7 @@ func0000000000000126:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000012a:
 	imulq	%rdx, %rsi
 	leaq	3(%rsi), %rax

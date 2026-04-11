@@ -10,6 +10,7 @@
 	.short	55296
 	.short	55296
 	.short	55296
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000063:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
@@ -29,6 +30,7 @@ func0000000000000063:
 	.short	55296
 	.short	55296
 	.short	55296
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
@@ -39,6 +41,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.long	262120
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$2, %ymm0, %ymm0
@@ -57,6 +60,7 @@ func0000000000000061:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000020:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

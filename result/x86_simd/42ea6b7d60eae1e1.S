@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestmd	%ymm1, %ymm1, %k1
 	vpsrld	$4, %ymm0, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpsrld	$3, %ymm0, %ymm0 {%k1}
@@ -11,11 +13,13 @@ func000000000000000c:
 
 .LCPI2_0:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpcmpnltud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vpsrld	$3, %ymm0, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpsrld	$16, %ymm0, %ymm0 {%k1}

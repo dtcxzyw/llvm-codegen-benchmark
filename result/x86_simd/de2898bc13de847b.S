@@ -3,6 +3,7 @@
 	.quad	-3689348814741910323
 .LCPI0_1:
 	.quad	230584300921369395
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$3, %ymm0, %ymm0
@@ -16,6 +17,7 @@ func0000000000000028:
 	.quad	7905747460161236407
 .LCPI1_1:
 	.quad	164703072086692426
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$3, %ymm0, %ymm0
@@ -29,6 +31,7 @@ func0000000000000024:
 	.quad	-6148914691236517205
 .LCPI2_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000038:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$3, %ymm0, %ymm0
@@ -42,6 +45,7 @@ func0000000000000038:
 	.quad	-6148914691236517205
 .LCPI3_1:
 	.quad	4
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$3, %ymm0, %ymm0
@@ -53,6 +57,7 @@ func0000000000000034:
 
 .LCPI4_0:
 	.quad	50
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -35,6 +36,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.quad	65540
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -58,6 +60,7 @@ func0000000000000000:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -94,6 +97,7 @@ func000000000000000c:
 
 .LCPI3_0:
 	.quad	-60
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -123,6 +127,7 @@ func0000000000000005:
 
 .LCPI4_0:
 	.quad	3294967296
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	vpextrq	$1, %xmm1, %rdx
 	shrq	$18, %rdx
@@ -152,6 +157,7 @@ func000000000000000f:
 
 .LCPI5_0:
 	.quad	4294967236
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -175,6 +181,7 @@ func000000000000000a:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx

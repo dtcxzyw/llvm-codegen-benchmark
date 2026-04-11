@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	imull	$-51, %edi, %eax
 	rorb	%al
@@ -6,6 +7,7 @@ func0000000000000001:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	movl	%edi, %eax
 	shrb	%al
@@ -20,6 +22,7 @@ func0000000000000014:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	imull	$-51, %edi, %eax
 	rorb	$2, %al
@@ -27,6 +30,7 @@ func000000000000000c:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	movzbl	%dil, %eax
 	imull	$205, %eax, %ecx

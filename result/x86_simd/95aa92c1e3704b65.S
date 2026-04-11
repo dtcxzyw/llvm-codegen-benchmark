@@ -33,6 +33,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000003284:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -79,6 +80,7 @@ func0000000000003284:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001144:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddb	.LCPI1_1(%rip), %xmm1, %xmm1
@@ -124,6 +126,7 @@ func0000000000001144:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003144:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddb	.LCPI2_1(%rip), %xmm1, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	movzwl	%si, %eax
 	imulq	%rdi, %rax
@@ -6,6 +7,7 @@ func000000000000000c:
 	leaq	(%rax,%rax,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movzwl	%si, %ecx
 	imulq	%rdi, %rcx
@@ -13,6 +15,7 @@ func0000000000000000:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	movzwl	%si, %eax
 	imulq	%rdi, %rax

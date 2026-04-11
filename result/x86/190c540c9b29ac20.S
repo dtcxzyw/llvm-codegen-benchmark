@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	shrq	$9, %rdx
 	cmpq	%rsi, %rdx
@@ -6,6 +7,7 @@ func0000000000000005:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000025:
 	shrq	$9, %rdx
 	cmpq	%rsi, %rdx
@@ -13,6 +15,7 @@ func0000000000000025:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	shrq	$8, %rdx
 	cmpq	%rsi, %rdx
@@ -20,6 +23,7 @@ func000000000000002c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	shrq	$4, %rdx
 	cmpq	%rsi, %rdx
@@ -27,6 +31,7 @@ func0000000000000001:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	shrq	$12, %rdx
 	cmpq	%rsi, %rdx
@@ -34,6 +39,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	shrq	$32, %rdx
 	cmpq	%rsi, %rdx
@@ -41,6 +47,7 @@ func0000000000000014:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000018:
 	shrq	$32, %rdx
 	cmpq	%rsi, %rdx
@@ -48,6 +55,7 @@ func0000000000000018:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000015:
 	shrq	$3, %rdx
 	cmpq	%rsi, %rdx
@@ -55,6 +63,7 @@ func0000000000000015:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000038:
 	shrq	%rdx
 	cmpq	%rsi, %rdx

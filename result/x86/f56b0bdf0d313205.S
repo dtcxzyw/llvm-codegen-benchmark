@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000902:
 	addl	$-65, %esi
 	cmpl	$26, %esi
@@ -8,6 +9,7 @@ func0000000000000902:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000108:
 	addl	$-33920, %esi
 	cmpl	$18, %esi
@@ -17,6 +19,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000102:
 	addl	$-130, %esi
 	cmpl	$-256, %esi
@@ -26,6 +29,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000110:
 	addl	$-256, %esi
 	cmpl	$-255, %esi
@@ -35,6 +39,7 @@ func0000000000000110:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000118:
 	addl	$-3, %esi
 	cmpl	$-2, %esi
@@ -44,6 +49,7 @@ func0000000000000118:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000050:
 	andl	$-2048, %esi
 	cmpl	$2048, %esi
@@ -53,6 +59,7 @@ func0000000000000050:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000908:
 	addl	$-1938, %esi
 	cmpl	$-3875, %esi
@@ -62,6 +69,7 @@ func0000000000000908:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000042:
 	cmpl	$-1, %esi
 	sete	%cl
@@ -70,6 +78,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000004c:
 	addl	$-4, %esi
 	cmpl	$2, %esi
@@ -79,6 +88,7 @@ func000000000000004c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000870:
 	andl	$-4, %esi
 	cmpl	$16, %esi
@@ -88,6 +98,7 @@ func0000000000000870:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000318:
 	xorl	$60, %esi
 	xorl	$44, %edi
@@ -95,6 +106,7 @@ func0000000000000318:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000848:
 	addl	$-8234, %esi
 	cmpl	$5, %esi
@@ -104,6 +116,7 @@ func0000000000000848:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000a10:
 	addl	$-8, %esi
 	cmpl	$-7, %esi
@@ -113,6 +126,7 @@ func0000000000000a10:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000b08:
 	decl	%esi
 	cmpl	$2, %esi
@@ -122,6 +136,7 @@ func0000000000000b08:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000188:
 	addl	$-5, %esi
 	cmpl	$-4, %esi
@@ -131,6 +146,7 @@ func0000000000000188:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000910:
 	addl	$-39467, %esi
 	cmpl	$149581, %esi
@@ -140,6 +156,7 @@ func0000000000000910:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000048:
 	addl	$-1114112, %esi
 	cmpl	$-1056768, %esi
@@ -149,6 +166,7 @@ func0000000000000048:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000068:
 	addl	$-9, %esi
 	cmpl	$5, %esi
@@ -158,6 +176,7 @@ func0000000000000068:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000308:
 	addl	$-1601, %esi
 	cmpl	$-1600, %esi
@@ -167,6 +186,7 @@ func0000000000000308:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000842:
 	cmpl	$1, %esi
 	sete	%cl
@@ -175,6 +195,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000302:
 	cmpl	$2, %esi
 	setne	%cl
@@ -183,6 +204,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func000000000000084c:
 	cmpl	$37, %esi
 	sete	%cl
@@ -191,6 +213,7 @@ func000000000000084c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000982:
 	cmpl	$37, %esi
 	sete	%cl
@@ -199,6 +222,7 @@ func0000000000000982:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000918:
 	addl	$-5, %esi
 	cmpl	$-2, %esi
@@ -208,6 +232,7 @@ func0000000000000918:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func0000000000000328:
 	decl	%esi
 	cmpl	$2, %esi
@@ -217,6 +242,7 @@ func0000000000000328:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func0000000000000914:
 	addl	$-48, %esi
 	cmpl	$10, %esi
@@ -226,6 +252,7 @@ func0000000000000914:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end26, nop
 func0000000000000288:
 	addl	$-6, %esi
 	cmpl	$-4, %esi
@@ -235,6 +262,7 @@ func0000000000000288:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end27, nop
 func0000000000000058:
 	cmpl	$1, %esi
 	sete	%cl
@@ -243,6 +271,7 @@ func0000000000000058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end28, nop
 func0000000000000114:
 	addl	$-1073741824, %esi
 	cmpl	$-1073741823, %esi
@@ -252,6 +281,7 @@ func0000000000000114:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end29, nop
 func0000000000000128:
 	addl	$-292, %esi
 	cmpl	$96, %esi
@@ -261,6 +291,7 @@ func0000000000000128:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end30, nop
 func0000000000000a08:
 	addl	$-38, %esi
 	cmpl	$3, %esi
@@ -270,6 +301,7 @@ func0000000000000a08:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end31, nop
 func0000000000000202:
 	cmpl	$17, %esi
 	sete	%cl
@@ -278,6 +310,7 @@ func0000000000000202:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end32, nop
 func0000000000000d28:
 	addl	$-57344, %esi
 	cmpl	$1056768, %esi
@@ -287,6 +320,7 @@ func0000000000000d28:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end33, nop
 func0000000000000d08:
 	addl	$-57344, %esi
 	cmpl	$1056768, %esi
@@ -296,6 +330,7 @@ func0000000000000d08:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end34, nop
 func0000000000000054:
 	cmpl	$2, %esi
 	sete	%cl
@@ -304,6 +339,7 @@ func0000000000000054:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end35, nop
 func000000000000010c:
 	incl	%esi
 	cmpl	$9, %esi
@@ -313,6 +349,7 @@ func000000000000010c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end36, nop
 func0000000000000518:
 	addl	$-24, %esi
 	cmpl	$24, %esi
@@ -322,6 +359,7 @@ func0000000000000518:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end37, nop
 func0000000000000854:
 	cmpl	$131066, %esi
 	sete	%cl
@@ -330,6 +368,7 @@ func0000000000000854:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end38, nop
 func0000000000000310:
 	addl	$-6, %esi
 	cmpl	$-3, %esi
@@ -339,6 +378,7 @@ func0000000000000310:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end39, nop
 func0000000000000208:
 	addl	$-6, %esi
 	cmpl	$-3, %esi
@@ -348,6 +388,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end40, nop
 func0000000000000210:
 	addl	$-16384, %esi
 	cmpl	$-16385, %esi
@@ -357,6 +398,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end41, nop
 func000000000000018c:
 	decl	%esi
 	testl	%esi, %esi
@@ -366,6 +408,7 @@ func000000000000018c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end42, nop
 func0000000000000a02:
 	cmpl	$1, %esi
 	sete	%cl
@@ -374,6 +417,7 @@ func0000000000000a02:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end43, nop
 func0000000000000b10:
 	addl	$-262205, %esi
 	cmpl	$-262145, %esi
@@ -383,6 +427,7 @@ func0000000000000b10:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end44, nop
 func0000000000000282:
 	decl	%esi
 	setns	%cl
@@ -391,6 +436,7 @@ func0000000000000282:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end45, nop
 func000000000000028c:
 	incl	%esi
 	cmpl	$100, %esi
@@ -400,6 +446,7 @@ func000000000000028c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end46, nop
 func000000000000030c:
 	addl	$8, %esi
 	testl	%esi, %esi
@@ -409,6 +456,7 @@ func000000000000030c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end47, nop
 func0000000000000130:
 	addl	$-65537, %esi
 	cmpl	$-65025, %esi
@@ -418,6 +466,7 @@ func0000000000000130:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end48, nop
 func0000000000000858:
 	cmpl	$1, %esi
 	setne	%cl
@@ -426,6 +475,7 @@ func0000000000000858:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end49, nop
 func0000000000000610:
 	addl	$-65, %esi
 	cmpl	$-69, %esi
@@ -435,6 +485,7 @@ func0000000000000610:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end50, nop
 func0000000000000928:
 	addl	$-3, %esi
 	cmpl	$-2, %esi

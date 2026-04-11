@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	shll	$6, %edx
 	movl	%esi, %eax
@@ -6,6 +7,7 @@ func000000000000000f:
 	addq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000df:
 	movl	%edx, %eax
 	movl	%esi, %ecx
@@ -13,6 +15,7 @@ func00000000000000df:
 	leaq	(%rcx,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ff:
 	shll	$6, %edx
 	movl	%esi, %eax
@@ -20,6 +23,7 @@ func00000000000000ff:
 	leaq	(%rax,%rdx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000fc:
 	addl	%edx, %edx
 	movl	%esi, %eax
@@ -27,6 +31,7 @@ func00000000000000fc:
 	leaq	(%rax,%rdx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000007f:
 	addl	%edx, %edx
 	movl	%esi, %eax
@@ -34,6 +39,7 @@ func000000000000007f:
 	leaq	(%rax,%rdx,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000073:
 	shll	$2, %edx
 	movl	%esi, %eax
@@ -41,6 +47,7 @@ func0000000000000073:
 	leaq	(%rax,%rdx,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000003f:
 	addl	%edx, %edx
 	movl	%esi, %eax
@@ -48,6 +55,7 @@ func000000000000003f:
 	leaq	(%rax,%rdx,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002f:
 	leal	(%rdx,%rdx), %ecx
 	movl	%esi, %eax
@@ -55,6 +63,7 @@ func000000000000002f:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000f3:
 	addl	%edx, %edx
 	movl	%esi, %eax

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	andl	$1, %edx
 	leaq	1(%rsi,%rdx,2), %rax
@@ -6,6 +7,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -15,6 +17,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	andl	$1, %edx
 	leaq	1(%rsi,%rdx,2), %rax
@@ -22,6 +25,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	andl	$1, %edx
 	negq	%rdx
@@ -31,6 +35,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	andl	$1, %edx
 	subq	%rdx, %rsi
@@ -39,6 +44,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000061:
 	andl	$1, %edx
 	subq	%rdx, %rsi
@@ -47,6 +53,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -57,6 +64,7 @@ func0000000000000005:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000064:
 	andl	$1, %edx
 	leaq	1(%rdx,%rsi), %rax
@@ -64,6 +72,7 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000068:
 	andl	$1, %edx
 	leaq	(%rsi,%rdx,4), %rax
@@ -71,6 +80,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002a:
 	andl	$1, %edx
 	subq	%rdx, %rsi
@@ -79,6 +89,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000074:
 	andl	$1, %edx
 	leaq	2(%rsi,%rdx), %rax
@@ -86,6 +97,7 @@ func0000000000000074:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000066:
 	andl	$1, %edx
 	subq	%rdx, %rsi
@@ -94,6 +106,7 @@ func0000000000000066:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000028:
 	andl	$1, %edx
 	leaq	16(%rsi,%rdx,8), %rax
@@ -101,6 +114,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000044:
 	andl	$1, %edx
 	subq	%rdx, %rsi

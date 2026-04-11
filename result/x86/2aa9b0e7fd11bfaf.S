@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vaddsd	%xmm1, %xmm0, %xmm0
@@ -9,6 +10,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x4197d783fc000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vaddsd	%xmm1, %xmm0, %xmm0

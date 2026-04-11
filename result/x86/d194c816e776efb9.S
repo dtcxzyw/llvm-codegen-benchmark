@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	leal	4(%rsi), %eax
 	shlq	$4, %rax
@@ -6,6 +7,7 @@ func000000000000000c:
 	andq	$-512, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	decl	%esi
 	leaq	(%rdi,%rsi,4), %rcx

@@ -3,6 +3,7 @@
 	.quad	0x3fd34413509f79ff
 .LCPI0_1:
 	.quad	0xbddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	subl	%esi, %edi
 	addl	$-16318, %edi

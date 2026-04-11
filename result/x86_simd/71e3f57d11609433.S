@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004ca:
 	vmovdqa	%ymm0, %ymm3
 	vpternlogq	$15, %ymm0, %ymm0, %ymm3
@@ -13,6 +14,7 @@ func00000000000004ca:
 
 .LCPI1_0:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000054a:
 	vmovdqa	%ymm0, %ymm3
 	vpternlogq	$15, %ymm0, %ymm0, %ymm3

@@ -50,6 +50,7 @@
 	.zero	4,30
 .LCPI0_6:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vgf2p8affineqb	$0, .LCPI0_4(%rip){1to2}, %xmm0, %xmm0
 	vpandd	.LCPI0_5(%rip){1to4}, %xmm0, %xmm0

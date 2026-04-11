@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	movl	%edx, %eax
 	cmpq	%rax, %rdi
@@ -8,6 +9,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000194:
 	andl	$2147483647, %edx
 	cmpq	%rdx, %rdi
@@ -17,6 +19,7 @@ func0000000000000194:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000105:
 	andq	$-16, %rdx
 	cmpq	%rdx, %rdi

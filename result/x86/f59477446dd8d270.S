@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000280:
 	movl	$2246822518, %edx
 	imulq	%rcx, %rdx

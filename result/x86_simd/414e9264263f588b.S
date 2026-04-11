@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001421:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %ymm2
@@ -52,6 +53,7 @@ func0000000000001421:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001401:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %ymm2
@@ -105,6 +107,7 @@ func0000000000001401:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000140a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
@@ -159,6 +162,7 @@ func000000000000140a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000142a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4
@@ -213,6 +217,7 @@ func000000000000142a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000001821:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
@@ -267,6 +272,7 @@ func0000000000001821:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000182a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vextracti128	$1, %ymm0, %xmm4

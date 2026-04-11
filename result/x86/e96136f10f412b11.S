@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	leal	2(%rsi), %eax
 	cmpl	$63, %edx

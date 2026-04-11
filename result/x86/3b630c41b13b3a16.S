@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	movq	%rdi, %rax
 	imull	%esi, %eax
@@ -6,6 +7,7 @@ func000000000000000b:
 	subq	$-2147483648, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	imull	%esi, %edi
 	leaq	7(%rdi), %rax

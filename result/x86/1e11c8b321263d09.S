@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000201:
 	movzbl	%dl, %eax
 	leal	(%rsi,%rsi,4), %ecx
@@ -7,6 +8,7 @@ func0000000000000201:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movzbl	%dl, %eax
 	movl	%esi, %ecx

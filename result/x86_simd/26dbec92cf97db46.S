@@ -18,6 +18,7 @@
 	.short	64
 .LCPI0_1:
 	.short	64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1

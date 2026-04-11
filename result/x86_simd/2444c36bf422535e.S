@@ -5,6 +5,7 @@
 	.long	10
 .LCPI0_2:
 	.long	11
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004d:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k1

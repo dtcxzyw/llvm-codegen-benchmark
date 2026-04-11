@@ -3,6 +3,7 @@
 	.long	99
 .LCPI0_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004ca:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4

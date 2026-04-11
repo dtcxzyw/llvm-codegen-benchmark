@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c1:
 	subl	%edx, %esi
 	andb	$31, %sil

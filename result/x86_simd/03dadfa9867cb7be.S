@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,8
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vptestnmb	.LCPI0_0(%rip), %xmm0, %k1
 	vptestmb	%xmm0, %xmm0, %k0 {%k1}
@@ -15,6 +16,7 @@ func000000000000002c:
 	.zero	16,248
 .LCPI1_3:
 	.zero	4,252
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm0, %xmm1
 	vpcmpltub	.LCPI1_1(%rip), %xmm0, %k1
@@ -28,6 +30,7 @@ func0000000000000024:
 	.zero	16,240
 .LCPI2_2:
 	.byte	15
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000184:
 	vpbroadcastb	.LCPI2_2(%rip), %xmm1
 	vpand	%xmm1, %xmm0, %xmm2
@@ -44,6 +47,7 @@ func0000000000000184:
 	.zero	16,33
 .LCPI3_3:
 	.zero	4,253
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	vpandd	.LCPI3_3(%rip){1to4}, %xmm0, %xmm1
 	vpcmpneqb	.LCPI3_1(%rip), %xmm0, %k1
@@ -59,6 +63,7 @@ func000000000000018c:
 	.zero	16,1
 .LCPI4_3:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	vpandd	.LCPI4_3(%rip){1to4}, %xmm0, %xmm1
 	vpcmpnleub	.LCPI4_1(%rip), %xmm0, %k1
@@ -74,6 +79,7 @@ func0000000000000028:
 	.zero	16,64
 .LCPI5_3:
 	.zero	4,224
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000188:
 	vpandd	.LCPI5_3(%rip){1to4}, %xmm0, %xmm1
 	vpcmpnleub	.LCPI5_1(%rip), %xmm0, %k1

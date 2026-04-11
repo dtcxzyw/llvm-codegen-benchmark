@@ -3,6 +3,7 @@
 	.long	63
 .LCPI0_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
@@ -16,6 +17,7 @@ func0000000000000026:
 	.long	63
 .LCPI1_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0
@@ -29,6 +31,7 @@ func0000000000000006:
 	.long	63
 .LCPI2_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002e:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm0, %xmm1, %xmm0

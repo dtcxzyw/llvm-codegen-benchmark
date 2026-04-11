@@ -32,6 +32,7 @@
 	.byte	28
 	.byte	29
 	.byte	30
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vcvttps2dq	%ymm1, %ymm2
 	vmovdqa	.LCPI0_0(%rip), %ymm1

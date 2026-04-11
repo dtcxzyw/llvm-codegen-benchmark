@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
 	vpmaxud	%ymm1, %ymm2, %ymm1
@@ -83,6 +84,7 @@ func0000000000000018:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm2, %ymm2
 	vpmaxud	%ymm1, %ymm2, %ymm1
@@ -91,6 +93,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendw	$170, %ymm3, %ymm2, %ymm2
@@ -138,6 +141,7 @@ func0000000000000014:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm2, %ymm2
 	vpmaxud	%ymm1, %ymm2, %ymm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	movabsq	$631360192512, %rax
 	imulq	%rdi, %rax
@@ -7,6 +8,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	movabsq	$631360192512, %rax
 	imulq	%rdi, %rax
@@ -14,6 +16,7 @@ func000000000000002a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	shlq	$32, %rdi
 	negq	%rdi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000f18:
 	addq	%rdx, %rsi
 	cmpq	$65521, %rsi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004c:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpltpd	%zmm3, %zmm1, %k0
@@ -10,6 +11,7 @@ func000000000000004c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpunordpd	%zmm3, %zmm1, %k0

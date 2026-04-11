@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	notq	%rdx
 	addq	%rsi, %rdx
@@ -7,6 +8,7 @@ func000000000000000a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	incq	%rdx
 	cmpq	%rdx, %rsi
@@ -14,6 +16,7 @@ func000000000000018c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000188:
 	notq	%rdx
 	addq	%rsi, %rdx
@@ -22,6 +25,7 @@ func0000000000000188:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018a:
 	subq	%rdx, %rsi
 	addq	$-24, %rsi
@@ -30,6 +34,7 @@ func000000000000018a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000106:
 	subq	%rdx, %rsi
 	incq	%rsi
@@ -38,6 +43,7 @@ func0000000000000106:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	notq	%rdx
 	addq	%rsi, %rdx
@@ -46,6 +52,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	notq	%rdx
 	addq	%rsi, %rdx

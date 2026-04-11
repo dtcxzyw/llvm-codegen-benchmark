@@ -37,6 +37,7 @@
 	.byte	11
 .LCPI0_3:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpbroadcastb	.LCPI0_2(%rip), %xmm1
 	vpternlogd	$120, .LCPI0_3(%rip){1to4}, %xmm0, %xmm1
@@ -62,6 +63,7 @@ func0000000000000007:
 	.zero	1
 .LCPI1_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1

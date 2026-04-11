@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000055:
 	movsbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
@@ -7,6 +8,7 @@ func0000000000000055:
 	addl	$-52800, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	movsbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx

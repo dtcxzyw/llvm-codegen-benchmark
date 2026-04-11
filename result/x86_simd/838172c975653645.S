@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsrlw	$4, %ymm0, %ymm0
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
@@ -57,6 +58,7 @@ func0000000000000002:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpsrlw	$4, %ymm0, %ymm0

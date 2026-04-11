@@ -3,6 +3,7 @@
 	.long	4294967293
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm0, %k0
@@ -12,6 +13,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -22,6 +24,7 @@ func0000000000000024:
 
 .LCPI2_0:
 	.long	4
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -30,6 +33,7 @@ func0000000000000061:
 
 .LCPI3_0:
 	.long	10
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -38,12 +42,14 @@ func0000000000000001:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -54,6 +60,7 @@ func000000000000000a:
 
 .LCPI6_0:
 	.long	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000041:
 	vpcmpeqd	.LCPI6_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -62,6 +69,7 @@ func0000000000000041:
 
 .LCPI7_0:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000006:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -74,6 +82,7 @@ func0000000000000006:
 	.long	4294967275
 .LCPI8_1:
 	.long	4294967290
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	.LCPI8_1(%rip){1to8}, %ymm0, %k0
@@ -85,6 +94,7 @@ func0000000000000008:
 	.long	4294967293
 .LCPI9_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000038:
 	vpaddd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	.LCPI9_1(%rip){1to8}, %ymm0, %k0
@@ -92,6 +102,7 @@ func0000000000000038:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000c:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpneqd	%ymm1, %ymm0, %k0
@@ -99,6 +110,7 @@ func000000000000000c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000046:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -111,6 +123,7 @@ func0000000000000046:
 	.long	4294967238
 .LCPI12_1:
 	.long	4294967286
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000028:
 	vpaddd	.LCPI12_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	.LCPI12_1(%rip){1to8}, %ymm0, %k0
@@ -120,6 +133,7 @@ func0000000000000028:
 
 .LCPI13_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000018:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -132,6 +146,7 @@ func0000000000000018:
 	.long	16777216
 .LCPI14_1:
 	.long	33554431
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000004a:
 	vpaddd	.LCPI14_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpgtd	.LCPI14_1(%rip){1to8}, %ymm0, %k0
@@ -141,6 +156,7 @@ func000000000000004a:
 
 .LCPI15_0:
 	.long	1
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000002c:
 	vpcmpneqd	.LCPI15_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -149,6 +165,7 @@ func000000000000002c:
 
 .LCPI16_0:
 	.long	2
+	.prefalign	4, .Lfunc_end16, nop
 func000000000000006c:
 	vpcmpneqd	.LCPI16_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -159,6 +176,7 @@ func000000000000006c:
 	.long	4294967288
 .LCPI17_1:
 	.long	16
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000034:
 	vpaddd	.LCPI17_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	.LCPI17_1(%rip){1to8}, %ymm0, %k0
@@ -170,6 +188,7 @@ func0000000000000034:
 	.long	4294967293
 .LCPI18_1:
 	.long	4
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000014:
 	vpaddd	.LCPI18_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltud	.LCPI18_1(%rip){1to8}, %ymm0, %k0
@@ -179,6 +198,7 @@ func0000000000000014:
 
 .LCPI19_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end19, nop
 func000000000000004c:
 	vpcmpneqd	.LCPI19_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -187,6 +207,7 @@ func000000000000004c:
 
 .LCPI20_0:
 	.long	1
+	.prefalign	4, .Lfunc_end20, nop
 func000000000000002a:
 	vpcmpgtd	.LCPI20_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

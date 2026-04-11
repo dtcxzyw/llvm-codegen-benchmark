@@ -3,6 +3,7 @@
 	.zero	16,123
 .LCPI0_1:
 	.zero	16,96
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -11,6 +12,7 @@ func0000000000000088:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpsllw	$7, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -24,6 +26,7 @@ func000000000000018c:
 	.zero	16,22
 .LCPI2_1:
 	.zero	16,20
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -33,6 +36,7 @@ func0000000000000021:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -45,6 +49,7 @@ func000000000000002c:
 	.zero	16,19
 .LCPI4_1:
 	.byte	19
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -58,6 +63,7 @@ func0000000000000181:
 	.zero	16,246
 .LCPI5_1:
 	.zero	16,230
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	vpsllw	$7, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -69,6 +75,7 @@ func0000000000000084:
 
 .LCPI6_0:
 	.zero	16,230
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000184:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -81,6 +88,7 @@ func0000000000000184:
 	.zero	16,192
 .LCPI7_1:
 	.byte	192
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000c6:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -94,6 +102,7 @@ func00000000000000c6:
 	.zero	16,192
 .LCPI8_1:
 	.zero	16,48
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000086:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -106,6 +115,7 @@ func0000000000000086:
 	.zero	16,230
 .LCPI9_1:
 	.zero	16,95
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000008c:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -116,6 +126,7 @@ func000000000000008c:
 
 .LCPI10_0:
 	.zero	16,28
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000108:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -126,6 +137,7 @@ func0000000000000108:
 
 .LCPI11_0:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -139,6 +151,7 @@ func000000000000002a:
 	.zero	16,15
 .LCPI12_1:
 	.zero	16,159
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000188:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -151,6 +164,7 @@ func0000000000000188:
 	.zero	16,239
 .LCPI13_1:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000028:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -163,6 +177,7 @@ func0000000000000028:
 	.zero	16,69
 .LCPI14_1:
 	.zero	16,10
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000024:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1

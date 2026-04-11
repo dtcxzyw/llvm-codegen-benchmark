@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpltud	%ymm1, %ymm0, %k1
 	vpsubd	%ymm3, %ymm2, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000046:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	vpsubd	%ymm3, %ymm2, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%ymm1, %ymm0, %k1
@@ -19,6 +22,7 @@ func0000000000000001:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
 	vpbroadcastd	.LCPI3_0(%rip), %ymm3
@@ -29,6 +33,7 @@ func0000000000000021:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtd	%ymm0, %ymm1, %k1
@@ -36,12 +41,14 @@ func0000000000000026:
 	vpaddd	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000061:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%ymm1, %ymm0, %k1
 	vpsubd	%ymm3, %ymm2, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000066:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtd	%ymm0, %ymm1, %k1

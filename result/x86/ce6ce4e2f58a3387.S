@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c7:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -8,6 +9,7 @@ func00000000000000c7:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -17,6 +19,7 @@ func0000000000000084:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000cc:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -28,6 +31,7 @@ func00000000000000cc:
 
 .LCPI3_0:
 	.quad	0xbff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000088:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -37,6 +41,7 @@ func0000000000000088:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000044:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2

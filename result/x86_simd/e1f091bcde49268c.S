@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	15728640
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1

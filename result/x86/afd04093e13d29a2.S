@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ea:
 	addl	$28, %edx
 	andl	$31, %edx
@@ -9,6 +10,7 @@ func00000000000000ea:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
 	addl	$28, %edx
 	andl	$31, %edx

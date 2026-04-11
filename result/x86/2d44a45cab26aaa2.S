@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	leal	8(%rsi), %ecx
 	cmpl	$5, %ecx
@@ -8,6 +9,7 @@ func0000000000000007:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	decl	%esi
 	movl	%esi, %eax
@@ -17,6 +19,7 @@ func000000000000000f:
 	leaq	(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000017:
 	cmpl	$3, %esi
 	movl	$2, %eax

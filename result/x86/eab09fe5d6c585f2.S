@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	subq	$1, %rsi
 	leaq	(%rsi,%rsi,8), %rax
@@ -6,6 +7,7 @@ func0000000000000041:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e1:
 	movq	%rsi, %rax
 	shlq	$6, %rax

@@ -16,6 +16,7 @@
 	.short	8192
 	.short	8192
 	.short	8192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000302:
 	vptestmw	.LCPI0_0(%rip), %ymm1, %k0
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -43,6 +44,7 @@ func0000000000000302:
 	.short	2048
 .LCPI1_1:
 	.zero	16,56
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vptestnmw	.LCPI1_0(%rip), %ymm1, %k0
 	vpcmpeqb	.LCPI1_1(%rip), %xmm0, %k1
@@ -70,6 +72,7 @@ func0000000000000042:
 	.short	8192
 .LCPI2_1:
 	.zero	16,4
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000048:
 	vptestnmw	.LCPI2_0(%rip), %ymm1, %k0
 	vpcmpltub	.LCPI2_1(%rip), %xmm0, %k1
@@ -97,6 +100,7 @@ func0000000000000048:
 	.short	8
 .LCPI3_1:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000308:
 	vptestmw	.LCPI3_0(%rip), %ymm1, %k0
 	vpcmpltub	.LCPI3_1(%rip), %xmm0, %k1
@@ -122,6 +126,7 @@ func0000000000000308:
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000004c:
 	vptestnmw	.LCPI4_0(%rip), %ymm1, %k0
 	vpmovb2m	%xmm0, %k1
@@ -149,6 +154,7 @@ func000000000000004c:
 	.short	8192
 .LCPI5_1:
 	.zero	16,4
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000102:
 	vptestnmw	.LCPI5_0(%rip), %ymm1, %k0
 	vpcmpltub	.LCPI5_1(%rip), %xmm0, %k1
@@ -176,6 +182,7 @@ func0000000000000102:
 	.short	2048
 .LCPI6_1:
 	.zero	16,54
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000050:
 	vptestnmw	.LCPI6_0(%rip), %ymm1, %k0
 	vpcmpnleub	.LCPI6_1(%rip), %xmm0, %k1
@@ -201,6 +208,7 @@ func0000000000000050:
 	.short	64
 	.short	64
 	.short	64
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000314:
 	vptestmw	.LCPI7_0(%rip), %ymm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -229,6 +237,7 @@ func0000000000000314:
 	.short	256
 .LCPI8_1:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000202:
 	vptestnmw	.LCPI8_0(%rip), %ymm1, %k0
 	vpcmpnleub	.LCPI8_1(%rip), %xmm0, %k1
@@ -292,6 +301,7 @@ func0000000000000202:
 	.byte	255
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000058:
 	vpandd	.LCPI9_2(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqw	.LCPI9_1(%rip), %ymm1, %k0

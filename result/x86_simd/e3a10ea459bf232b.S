@@ -30,6 +30,7 @@
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
@@ -57,6 +58,7 @@ func0000000000000007:
 .LCPI1_2:
 	.short	16383
 	.short	16383
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
@@ -75,6 +77,7 @@ func0000000000000001:
 .LCPI2_1:
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0

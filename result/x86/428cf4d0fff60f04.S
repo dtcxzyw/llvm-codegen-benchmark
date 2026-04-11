@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vmovq	%xmm0, %rax
 	testq	%rax, %rax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001e:
 	vmovq	%xmm0, %rax
 	leaq	-1(%rax), %rcx
@@ -26,6 +28,7 @@ func000000000000001e:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -37,6 +40,7 @@ func0000000000000042:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000066:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -53,6 +57,7 @@ func0000000000000066:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000099:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -65,6 +70,7 @@ func0000000000000099:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000399:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -79,6 +85,7 @@ func0000000000000399:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -98,6 +105,7 @@ func0000000000000006:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -116,12 +124,14 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI8_1:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c3:
 	vandpd	.LCPI8_0(%rip){1to2}, %xmm0, %xmm0
 	vucomisd	.LCPI8_1(%rip), %xmm0
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000078:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -145,6 +155,7 @@ func0000000000000078:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000003e1:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -171,6 +182,7 @@ func00000000000003e1:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000f9:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -198,6 +210,7 @@ func00000000000000f9:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000003f9:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -227,6 +240,7 @@ func00000000000003f9:
 	orb	%r8b, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000e1:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -251,6 +265,7 @@ func00000000000000e1:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000003db:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -261,6 +276,7 @@ func00000000000003db:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000499:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -273,6 +289,7 @@ func0000000000000499:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000442:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -284,6 +301,7 @@ func0000000000000442:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000019:
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx
@@ -295,6 +313,7 @@ func0000000000000019:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func000000000000000f:
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405313, %rcx
@@ -302,6 +321,7 @@ func000000000000000f:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000306:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -325,6 +345,7 @@ func0000000000000306:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func000000000000031e:
 	vmovq	%xmm0, %rax
 	leaq	-1(%rax), %rcx
@@ -350,6 +371,7 @@ func000000000000031e:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000310:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl
@@ -362,6 +384,7 @@ func0000000000000310:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func00000000000000e4:
 	vmovq	%xmm0, %rax
 	movabsq	$-4503599627370496, %rcx

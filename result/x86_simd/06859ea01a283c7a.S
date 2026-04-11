@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovzxbd	%xmm1, %ymm1
 	vpsrad	$31, %ymm0, %ymm0
 	vpand	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpmovzxbd	%xmm1, %ymm0 {%k1} {z}
@@ -14,12 +16,14 @@ func0000000000000021:
 	.long	72
 .LCPI2_1:
 	.long	7
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0
 	vpmovzxbd	%xmm1, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpmovzxbd	%xmm1, %ymm0 {%k1} {z}

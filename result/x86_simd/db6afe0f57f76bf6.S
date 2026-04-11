@@ -3,6 +3,7 @@
 	.long	6
 .LCPI0_1:
 	.quad	4097
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c4:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -16,6 +17,7 @@ func00000000000000c4:
 	.long	10
 .LCPI1_1:
 	.quad	48
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -28,6 +30,7 @@ func0000000000000021:
 
 .LCPI2_0:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -37,6 +40,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -49,6 +53,7 @@ func000000000000002a:
 
 .LCPI4_0:
 	.quad	1024
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000144:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -61,6 +66,7 @@ func0000000000000144:
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000018c:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -73,6 +79,7 @@ func000000000000018c:
 
 .LCPI6_0:
 	.quad	1022
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000146:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -87,6 +94,7 @@ func0000000000000146:
 	.long	7
 .LCPI7_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000181:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -98,6 +106,7 @@ func0000000000000181:
 
 .LCPI8_0:
 	.long	2097151
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000101:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -111,6 +120,7 @@ func0000000000000101:
 	.long	2
 .LCPI9_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000088:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -120,6 +130,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000018a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -130,6 +141,7 @@ func000000000000018a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovzxdq	%xmm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k1
@@ -40,6 +41,7 @@ func0000000000000001:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vpmovzxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm1, %ymm0, %k1
@@ -83,6 +85,7 @@ func000000000000002a:
 	.zero	1
 .LCPI2_2:
 	.byte	5
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpmovzxdq	%xmm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k1

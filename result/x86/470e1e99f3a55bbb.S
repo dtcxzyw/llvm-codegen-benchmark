@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018a:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -7,6 +8,7 @@ func000000000000018a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f8:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -15,6 +17,7 @@ func00000000000000f8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -23,6 +26,7 @@ func0000000000000181:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000184:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -31,6 +35,7 @@ func0000000000000184:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000188:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -39,6 +44,7 @@ func0000000000000188:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000001ac:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -46,6 +52,7 @@ func00000000000001ac:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	incb	%sil
 	movzbl	%sil, %eax
@@ -54,6 +61,7 @@ func0000000000000008:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000078:
 	addb	$32, %sil
 	movzbl	%sil, %eax
@@ -62,6 +70,7 @@ func0000000000000078:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001f8:
 	addb	$32, %sil
 	movzbl	%sil, %eax
@@ -70,6 +79,7 @@ func00000000000001f8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001e1:
 	addb	$32, %sil
 	movzbl	%sil, %eax
@@ -78,6 +88,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000001f4:
 	addb	$32, %sil
 	movzbl	%sil, %eax
@@ -86,6 +97,7 @@ func00000000000001f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000001e8:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -94,6 +106,7 @@ func00000000000001e8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000001aa:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -102,6 +115,7 @@ func00000000000001aa:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000001a6:
 	addb	$-48, %sil
 	movzbl	%sil, %eax
@@ -109,6 +123,7 @@ func00000000000001a6:
 	shrl	$31, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000018c:
 	addb	$-48, %sil
 	movzbl	%sil, %eax

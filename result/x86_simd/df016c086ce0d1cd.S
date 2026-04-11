@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000306:
 	vpsrad	$31, %xmm2, %xmm2
 	vpandn	%xmm0, %xmm2, %xmm0
@@ -7,6 +8,7 @@ func0000000000000306:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000aa:
 	vptestmd	%xmm2, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
@@ -19,6 +21,7 @@ func00000000000000aa:
 	.long	117440512
 .LCPI2_1:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000024a:
 	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %xmm0 {%k1}
@@ -31,6 +34,7 @@ func000000000000024a:
 	.long	7
 .LCPI3_1:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000034a:
 	vpcmpltd	.LCPI3_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %xmm0 {%k1}
@@ -43,6 +47,7 @@ func000000000000034a:
 	.long	7
 .LCPI4_1:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000361:
 	vpcmpltd	.LCPI4_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %xmm0 {%k1}
@@ -51,6 +56,7 @@ func0000000000000361:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000321:
 	vpsrad	$31, %xmm2, %xmm2
 	vpor	%xmm0, %xmm2, %xmm0
@@ -59,6 +65,7 @@ func0000000000000321:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000081:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -68,6 +75,7 @@ func0000000000000081:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000a1:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -79,6 +87,7 @@ func00000000000000a1:
 
 .LCPI8_0:
 	.long	20
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000506:
 	vpcmpltd	.LCPI8_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
@@ -89,6 +98,7 @@ func0000000000000506:
 
 .LCPI9_0:
 	.long	1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000086:
 	vpcmpneqd	.LCPI9_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
@@ -99,6 +109,7 @@ func0000000000000086:
 
 .LCPI10_0:
 	.long	1
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000c8:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI10_0(%rip), %xmm0 {%k1}
@@ -110,6 +121,7 @@ func00000000000000c8:
 
 .LCPI11_0:
 	.long	100
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000084:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI11_0(%rip), %xmm0 {%k1}
@@ -119,6 +131,7 @@ func0000000000000084:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000301:
 	vpsrad	$31, %xmm2, %xmm2
 	vpandn	%xmm0, %xmm2, %xmm0

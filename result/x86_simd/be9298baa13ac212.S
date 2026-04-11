@@ -27,6 +27,7 @@
 	.byte	0
 .LCPI0_2:
 	.short	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovqw	%ymm0, %xmm1
 	vpbroadcastw	.LCPI0_2(%rip), %xmm0
@@ -57,6 +58,7 @@ func0000000000000001:
 .LCPI1_3:
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpmovqw	%ymm0, %xmm1
 	vpbroadcastw	.LCPI1_2(%rip), %xmm0

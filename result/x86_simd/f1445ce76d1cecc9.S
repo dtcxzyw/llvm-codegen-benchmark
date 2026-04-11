@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vpminsd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -9,6 +10,7 @@ func00000000000000e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f4:
 	vpminsd	%xmm1, %xmm2, %xmm1
 	vpmovzxdq	%xmm1, %ymm1

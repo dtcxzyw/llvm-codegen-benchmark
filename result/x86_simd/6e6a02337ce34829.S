@@ -16,6 +16,7 @@
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmw	.LCPI0_0(%rip), %ymm1, %k0
 	vptestnmw	%ymm0, %ymm0, %k1
@@ -41,6 +42,7 @@ func0000000000000021:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vptestnmw	.LCPI1_0(%rip), %ymm1, %k0
 	vptestmw	%ymm0, %ymm0, %k1
@@ -83,6 +85,7 @@ func000000000000002c:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vptestnmw	.LCPI2_0(%rip), %ymm1, %k0
 	vpcmpltuw	.LCPI2_1(%rip), %ymm0, %k1
@@ -145,6 +148,7 @@ func0000000000000024:
 .LCPI3_3:
 	.short	3840
 	.short	3840
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000030c:
 	vpandd	.LCPI3_3(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtw	.LCPI3_1(%rip), %ymm1, %k0
@@ -174,6 +178,7 @@ func000000000000030c:
 .LCPI4_1:
 	.short	128
 	.short	128
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
 	vpternlogd	$248, .LCPI4_1(%rip){1to8}, %ymm1, %ymm0
 	vptestmw	%ymm0, %ymm0, %k0
@@ -236,6 +241,7 @@ func000000000000018c:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000301:
 	vpandd	.LCPI5_2(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtw	.LCPI5_1(%rip), %ymm1, %k0
@@ -279,6 +285,7 @@ func0000000000000301:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000281:
 	vptestnmw	.LCPI6_0(%rip), %ymm1, %k0
 	vpcmpeqw	.LCPI6_1(%rip), %ymm0, %k1
@@ -306,6 +313,7 @@ func0000000000000281:
 	.short	1
 .LCPI7_1:
 	.short	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000181:
 	vpbroadcastw	.LCPI7_1(%rip), %ymm2
 	vptestmw	%ymm2, %ymm1, %k0
@@ -349,6 +357,7 @@ func0000000000000181:
 	.short	4095
 	.short	4095
 	.short	4095
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000188:
 	vptestmw	.LCPI8_0(%rip), %ymm1, %k0
 	vpcmpnleuw	.LCPI8_1(%rip), %ymm0, %k1
@@ -391,6 +400,7 @@ func0000000000000188:
 	.short	12
 	.short	12
 	.short	12
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000184:
 	vptestmw	.LCPI9_0(%rip), %ymm1, %k0
 	vpcmpltuw	.LCPI9_1(%rip), %ymm0, %k1

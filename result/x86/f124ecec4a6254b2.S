@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	rolw	$8, %si
 	movzwl	%si, %ecx
@@ -7,6 +8,7 @@ func0000000000000007:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	rolw	$8, %si
 	movzwl	%si, %eax

@@ -3,6 +3,7 @@
 	.quad	0x3fc999999999999a
 .LCPI0_1:
 	.long	0x3e4ccccd
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vextractf64x4	$1, %zmm1, %ymm2
 	vcvtps2pd	%ymm2, %zmm2

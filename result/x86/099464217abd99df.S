@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vaddss	%xmm3, %xmm2, %xmm2
@@ -7,6 +8,7 @@ func000000000000000d:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vaddss	%xmm3, %xmm2, %xmm2
@@ -17,6 +19,7 @@ func000000000000000c:
 
 .LCPI2_0:
 	.long	0xc0a00000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vaddss	.LCPI2_0(%rip), %xmm2, %xmm2
 	vaddss	%xmm1, %xmm2, %xmm1
@@ -26,6 +29,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	0x40000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vaddss	.LCPI3_0(%rip), %xmm2, %xmm2
 	vaddss	%xmm2, %xmm1, %xmm1

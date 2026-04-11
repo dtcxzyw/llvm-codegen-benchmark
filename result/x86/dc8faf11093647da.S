@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000058c:
 	orq	%rdx, %rsi
 	movl	$4294967295, %eax
@@ -9,6 +10,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000188:
 	orq	%rdx, %rsi
 	setne	%cl
@@ -18,6 +20,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	orq	%rdx, %rsi
 	setne	%cl
@@ -27,6 +30,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	orq	%rdx, %rsi
 	sete	%cl
@@ -36,12 +40,14 @@ func0000000000000026:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000421:
 	orq	%rdx, %rsi
 	orq	%rdi, %rsi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	orq	%rdx, %rsi
 	sete	%cl

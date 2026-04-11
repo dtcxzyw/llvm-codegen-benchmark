@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,127
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
@@ -42,6 +43,7 @@ func0000000000000001:
 	.zero	1
 .LCPI1_1:
 	.zero	4,128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0

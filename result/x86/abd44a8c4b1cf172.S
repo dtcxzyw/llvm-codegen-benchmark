@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c8c:
 	incb	%dl
 	cmpb	%dil, %dl
@@ -8,6 +9,7 @@ func0000000000000c8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	incb	%dl
 	cmpb	%dil, %dl

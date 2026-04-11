@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1
@@ -7,6 +8,7 @@ func0000000000000000:
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpsllw	$7, %xmm4, %xmm4
 	vpmovb2m	%xmm4, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	cmpl	$57005, %edi
 	sete	%al
@@ -7,6 +8,7 @@ func0000000000000001:
 	vcvtss2sd	%xmm1, %xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	cmpl	$268435456, %edi
 	setb	%al
@@ -15,6 +17,7 @@ func0000000000000004:
 	vcvtss2sd	%xmm1, %xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	testl	%edi, %edi
 	sets	%al

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000484:
 	andl	$15, %esi
 	addl	$-6, %esi
@@ -9,6 +10,7 @@ func0000000000000484:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000048c:
 	andl	$15, %esi
 	addl	$-7, %esi
@@ -19,6 +21,7 @@ func000000000000048c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000481:
 	andl	$7, %esi
 	decl	%esi

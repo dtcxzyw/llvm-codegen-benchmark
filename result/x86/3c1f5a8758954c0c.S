@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rax, %rax
@@ -14,6 +15,7 @@ func00000000000000a4:
 	xorl	%edx, %edx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000094:
 	mulxq	%r8, %rax, %rax
 	imulq	%rcx, %r8
@@ -29,6 +31,7 @@ func0000000000000094:
 	xorl	%edx, %edx
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f6:
 	mulxq	%r8, %r10, %r10
 	imulq	%rcx, %r8

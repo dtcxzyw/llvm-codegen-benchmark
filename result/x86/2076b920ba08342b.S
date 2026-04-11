@@ -7,6 +7,7 @@
 	.long	0xbb7c6287
 .LCPI0_3:
 	.long	0x3bf19642
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovss	.LCPI0_0(%rip), %xmm1
 	vfmadd213ss	.LCPI0_1(%rip), %xmm0, %xmm1
@@ -22,6 +23,7 @@ func0000000000000000:
 	.long	0xbc9ded90
 .LCPI1_3:
 	.long	0xbf409397
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vmovss	.LCPI1_0(%rip), %xmm1
 	vfmadd213ss	.LCPI1_1(%rip), %xmm0, %xmm1

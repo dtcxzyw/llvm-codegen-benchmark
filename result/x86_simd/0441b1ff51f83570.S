@@ -16,6 +16,7 @@
 	.short	0
 	.short	3
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000064:
 	vpmovzxbd	%xmm1, %ymm1
 	vpmaddwd	.LCPI0_0(%rip), %ymm1, %ymm1

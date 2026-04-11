@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000146:
 	movl	%edi, %eax
 	subl	%esi, %eax
@@ -9,6 +10,7 @@ func0000000000000146:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000054a:
 	cmpl	%esi, %edi
 	setge	%cl
@@ -17,6 +19,7 @@ func000000000000054a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	movl	%edi, %eax
 	subl	%esi, %eax
@@ -27,6 +30,7 @@ func0000000000000084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000cc:
 	cmpl	%esi, %edi
 	sets	%cl
@@ -35,6 +39,7 @@ func00000000000000cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ca:
 	movl	%edi, %eax
 	subl	%esi, %eax
@@ -45,6 +50,7 @@ func00000000000000ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000004ca:
 	movl	%edi, %eax
 	subl	%esi, %eax

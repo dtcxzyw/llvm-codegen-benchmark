@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000070:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubb	%xmm3, %xmm2, %xmm2
@@ -7,6 +8,7 @@ func0000000000000070:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000007c:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubb	%xmm3, %xmm2, %xmm2
@@ -32,6 +34,7 @@ func000000000000007c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001c:
 	vpaddb	.LCPI2_0(%rip), %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2

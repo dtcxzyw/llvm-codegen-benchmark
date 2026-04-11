@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	orq	%rdx, %rsi
 	subq	%rsi, %rdi
@@ -8,6 +9,7 @@ func0000000000000008:
 	shrq	$17, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	orq	%rdx, %rsi
 	subq	%rsi, %rdi

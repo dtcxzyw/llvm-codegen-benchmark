@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -8,6 +9,7 @@ func0000000000000000:
 	vpsllq	$4, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003e:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -16,6 +18,7 @@ func000000000000003e:
 	vpsllq	$2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -26,6 +29,7 @@ func000000000000003f:
 
 .LCPI3_0:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003c:
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -35,6 +39,7 @@ func000000000000003c:
 
 .LCPI4_0:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -42,6 +47,7 @@ func0000000000000030:
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000034:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -50,6 +56,7 @@ func0000000000000034:
 	vpsllq	$2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000f:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
@@ -58,6 +65,7 @@ func000000000000000f:
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000006f:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
@@ -68,6 +76,7 @@ func000000000000006f:
 
 .LCPI8_0:
 	.long	2
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	vpaddd	.LCPI8_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -75,6 +84,7 @@ func0000000000000008:
 	vpaddq	%ymm0, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000c:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
@@ -85,6 +95,7 @@ func000000000000000c:
 
 .LCPI10_0:
 	.long	16
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000070:
 	vpaddd	.LCPI10_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1

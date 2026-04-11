@@ -3,6 +3,7 @@
 	.long	0x3f800000
 .LCPI0_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vfmadd213ps	%zmm2, %zmm1, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -15,6 +16,7 @@ func0000000000000012:
 	.long	0x3f800000
 .LCPI1_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vfmadd213ps	%zmm2, %zmm1, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1

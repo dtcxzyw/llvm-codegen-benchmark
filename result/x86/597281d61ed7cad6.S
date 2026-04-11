@@ -1,28 +1,33 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	leal	(%rsi,%rsi,4), %eax
 	leal	(%rdi,%rax,2), %eax
 	imull	$60, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	imull	$-862048943, %esi, %eax
 	addl	%edi, %eax
 	imull	$-862048943, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	leal	(%rsi,%rsi,4), %eax
 	addl	%edi, %eax
 	imull	$-862048943, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
 	imull	$1000, %esi, %eax
 	addl	%edi, %eax
 	imull	$1000, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000003e:
 	leal	(%rsi,%rsi,8), %eax
 	leal	(%rsi,%rax,4), %eax
@@ -31,24 +36,28 @@ func000000000000003e:
 	leal	(%rax,%rcx,4), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	imull	$-400, %esi, %eax
 	addl	%edi, %eax
 	imull	$365, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000003c:
 	imull	$15700, %esi, %eax
 	addl	%edi, %eax
 	imull	$1364, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	imull	$-12289, %esi, %eax
 	addl	%edi, %eax
 	imull	$2730, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000011:
 	shll	$2, %esi
 	leal	(%rsi,%rsi,2), %eax
@@ -56,24 +65,28 @@ func0000000000000011:
 	imull	$367, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000035:
 	imull	$60, %esi, %eax
 	addl	%edi, %eax
 	imull	$75, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000003d:
 	leal	(%rsi,%rsi,4), %eax
 	leal	(%rdi,%rax,2), %eax
 	imull	$-126, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000003:
 	leal	(%rsi,%rsi,4), %eax
 	leal	(%rdi,%rax,2), %eax
 	imull	$3600, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000010:
 	imull	$-1000, %esi, %eax
 	addl	%edi, %eax

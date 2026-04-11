@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovd	%xmm1, %ecx
 	addl	$-2147483648, %ecx

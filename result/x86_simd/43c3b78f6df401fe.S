@@ -54,6 +54,7 @@
 	.zero	16,1
 .LCPI0_4:
 	.short	500
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmb	%xmm0, %xmm0, %k1
 	vpbroadcastw	.LCPI0_4(%rip), %ymm1

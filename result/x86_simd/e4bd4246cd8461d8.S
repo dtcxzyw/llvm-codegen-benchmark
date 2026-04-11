@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000344:
 	vpsraq	$3, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -11,6 +12,7 @@ func0000000000000344:
 
 .LCPI1_0:
 	.quad	256
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003e4:
 	vpsraq	$3, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -20,6 +22,7 @@ func00000000000003e4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000244:
 	vpsraq	$3, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -30,6 +33,7 @@ func0000000000000244:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000002e4:
 	vpsraq	$1, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -40,6 +44,7 @@ func00000000000002e4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000003c4:
 	vpsraq	$6, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -50,6 +55,7 @@ func00000000000003c4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000002a1:
 	vpsraq	$2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -60,6 +66,7 @@ func00000000000002a1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000201:
 	vpsraq	$2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -70,6 +77,7 @@ func0000000000000201:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000002c4:
 	vpsraq	$3, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1

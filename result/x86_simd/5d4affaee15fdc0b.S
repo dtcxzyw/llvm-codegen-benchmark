@@ -3,6 +3,7 @@
 	.long	4294967294
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -57,6 +58,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm0, %k1
@@ -69,6 +71,7 @@ func0000000000000001:
 	.long	2
 .LCPI2_1:
 	.long	39
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -123,6 +126,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -178,6 +182,7 @@ func000000000000000c:
 	.long	4294967294
 .LCPI4_1:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -230,6 +235,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax

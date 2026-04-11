@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	notb	%sil
 	movzbl	%sil, %ecx
@@ -13,6 +14,7 @@ func0000000000000008:
 	cmovbeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	testb	$1, %sil
 	movq	$-2147483648, %rcx
@@ -24,6 +26,7 @@ func0000000000000001:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	testb	$1, %sil
 	movq	$-2147483648, %rcx

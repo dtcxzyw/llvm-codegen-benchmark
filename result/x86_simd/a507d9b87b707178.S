@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	vcmpnltpd	%zmm2, %zmm4, %k0
 	vcmpnltpd	%zmm3, %zmm5, %k1
@@ -12,6 +13,7 @@ func0000000000000048:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
 	vcmpnltpd	%zmm4, %zmm2, %k0
 	vcmpnltpd	%zmm5, %zmm3, %k1
@@ -27,6 +29,7 @@ func0000000000000023:
 
 .LCPI2_0:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	vcmpltpd	%zmm4, %zmm2, %k0
 	vcmpltpd	%zmm5, %zmm3, %k1

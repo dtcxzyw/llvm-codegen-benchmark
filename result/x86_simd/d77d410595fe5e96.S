@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -10,6 +11,7 @@ func0000000000000022:
 
 .LCPI1_0:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000032:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$4, %xmm0, %xmm0
@@ -19,6 +21,7 @@ func0000000000000032:
 
 .LCPI2_0:
 	.long	8
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$4, %xmm0, %xmm0
@@ -28,6 +31,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003f:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -37,6 +41,7 @@ func000000000000003f:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002f:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -46,6 +51,7 @@ func000000000000002f:
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -55,6 +61,7 @@ func000000000000000f:
 
 .LCPI6_0:
 	.long	3
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000027:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
@@ -64,6 +71,7 @@ func0000000000000027:
 
 .LCPI7_0:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000026:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -73,6 +81,7 @@ func0000000000000026:
 
 .LCPI8_0:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000001f:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0

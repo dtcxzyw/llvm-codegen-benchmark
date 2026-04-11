@@ -5,6 +5,7 @@
 	.long	4294967290
 .LCPI0_2:
 	.long	2454267027
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vptestmd	%ymm1, %ymm1, %k1

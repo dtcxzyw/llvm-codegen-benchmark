@@ -1,90 +1,107 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c0:
 	leaq	(%rdi,%rdx,4), %rax
 	leaq	4(%rax,%rsi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	addq	%rdx, %rdi
 	leaq	-8(%rdi,%rsi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f0:
 	addq	%rdx, %rdi
 	leaq	1096(%rdi,%rsi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000020:
 	addq	%rdx, %rdi
 	leaq	1(%rdi,%rsi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
 	addq	%rdx, %rdi
 	shlq	$4, %rsi
 	leaq	112(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000078:
 	addq	%rdx, %rdi
 	leaq	-4(%rdi,%rsi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000048:
 	addq	%rdx, %rdi
 	leaq	-4(%rdi,%rsi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ff:
 	leaq	(%rdi,%rdx,4), %rax
 	leaq	4(%rax,%rsi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000007b:
 	leaq	(%rdi,%rdx,8), %rax
 	leaq	-8(%rax,%rsi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000005a:
 	leaq	(%rdi,%rdx,8), %rax
 	shlq	$5, %rsi
 	leaq	-8(%rsi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000de:
 	leaq	(%rdi,%rdx,8), %rax
 	shlq	$5, %rsi
 	leaq	8(%rsi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000d2:
 	leaq	(%rdi,%rdx,8), %rax
 	shlq	$4, %rsi
 	leaq	8(%rsi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000005f:
 	leaq	(%rdi,%rdx,8), %rax
 	shlq	$5, %rsi
 	leaq	-8(%rsi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000001a:
 	leaq	(%rdi,%rdx,4), %rax
 	leaq	4(%rax,%rsi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000da:
 	leaq	(%rdi,%rdx,4), %rax
 	leaq	4(%rax,%rsi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000052:
 	leaq	(%rdi,%rdx,8), %rax
 	shlq	$4, %rsi
 	leaq	-8(%rsi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000040:
 	leaq	(%rdi,%rdx,8), %rax
 	shlq	$4, %rsi

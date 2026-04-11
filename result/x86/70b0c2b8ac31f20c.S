@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000030:
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
@@ -9,6 +10,7 @@ func0000000000000030:
 	leaq	16(%rcx,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
@@ -19,6 +21,7 @@ func000000000000003f:
 	leaq	16(%rcx,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002f:
 	xorl	%ecx, %ecx
 	cmpw	$13, %dx

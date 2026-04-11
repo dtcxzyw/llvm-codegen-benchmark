@@ -8,6 +8,7 @@
 	.short	1328
 	.short	1328
 	.short	1328
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -28,6 +29,7 @@ func000000000000002a:
 	.short	55296
 	.short	55296
 	.short	55296
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000042a:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	.LCPI1_0(%rip){1to8}, %ymm1, %k1

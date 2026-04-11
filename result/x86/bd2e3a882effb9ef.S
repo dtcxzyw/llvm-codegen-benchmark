@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	subq	%rdx, %rsi
 	movabsq	$9223372036854775792, %rax
@@ -8,6 +9,7 @@ func0000000000000028:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi

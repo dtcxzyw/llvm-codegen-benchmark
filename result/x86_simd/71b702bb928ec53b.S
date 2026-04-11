@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e9:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpcmpltuw	.LCPI0_0(%rip), %xmm0, %k1

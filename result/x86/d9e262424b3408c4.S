@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	addq	$-2, %rdx
 	shrq	%rdx
@@ -7,6 +8,7 @@ func0000000000000061:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	addq	$-2, %rdx
 	shrq	%rdx
@@ -15,6 +17,7 @@ func0000000000000041:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	addq	$-4, %rdx
 	shrq	$12, %rdx

@@ -3,6 +3,7 @@
 	.long	0x3f1645a2
 .LCPI0_1:
 	.long	0x3e991688
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movzbl	%sil, %eax
 	vcvtsi2ss	%eax, %xmm15, %xmm0

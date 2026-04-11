@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000055:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
@@ -8,6 +9,7 @@ func0000000000000055:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2
@@ -19,6 +21,7 @@ func0000000000000015:
 
 .LCPI2_0:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpbroadcastd	.LCPI2_0(%rip), %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2
@@ -32,6 +35,7 @@ func0000000000000001:
 	.long	3
 .LCPI3_1:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000045:
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	.LCPI3_1(%rip){1to4}, %xmm1, %xmm1
@@ -40,6 +44,7 @@ func0000000000000045:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2

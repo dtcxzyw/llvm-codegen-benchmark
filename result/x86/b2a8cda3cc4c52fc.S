@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	shll	$5, %edx
 	leal	(%rdx,%rdi), %eax
@@ -7,6 +8,7 @@ func000000000000000a:
 	shrl	$6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000aa:
 	shll	$8, %edx
 	leal	(%rdx,%rdi), %eax
@@ -15,6 +17,7 @@ func00000000000000aa:
 	shrl	$6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e0:
 	shll	$16, %edx
 	leal	(%rdx,%rdi), %eax
@@ -23,6 +26,7 @@ func00000000000001e0:
 	shrl	$24, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	shll	$4, %edx
 	leal	(%rdx,%rdi), %eax

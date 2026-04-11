@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	cmpl	$32767, %esi
 	movl	$32767, %eax
@@ -8,6 +9,7 @@ func0000000000000005:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	testl	%esi, %esi
 	movl	$1, %eax

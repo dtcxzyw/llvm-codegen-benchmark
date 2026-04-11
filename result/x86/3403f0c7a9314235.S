@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	andb	$1, %dil
 	subq	%rdx, %rsi
@@ -10,6 +11,7 @@ func0000000000000015:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	andb	$1, %dil
 	subq	%rdx, %rsi
@@ -21,6 +23,7 @@ func0000000000000017:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	andb	$1, %dil
 	subq	%rdx, %rsi
@@ -31,6 +34,7 @@ func0000000000000014:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000016:
 	andb	$1, %dil
 	subq	%rdx, %rsi

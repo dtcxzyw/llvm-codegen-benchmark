@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c3:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -29,6 +30,7 @@ func00000000000000c3:
 	.quad	-9223372036854775808
 .LCPI1_1:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c7:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpsrlq	$3, %ymm0, %ymm0
@@ -39,6 +41,7 @@ func00000000000000c7:
 
 .LCPI2_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000183:
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
 	vextracti128	$1, %ymm0, %xmm1
@@ -65,6 +68,7 @@ func0000000000000183:
 
 .LCPI3_0:
 	.quad	-1000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000143:
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k0
 	vextracti128	$1, %ymm0, %xmm1
@@ -97,6 +101,7 @@ func0000000000000143:
 	.quad	-9223372036854775807
 .LCPI4_1:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a7:
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2
 	vpsrlq	$3, %ymm0, %ymm0

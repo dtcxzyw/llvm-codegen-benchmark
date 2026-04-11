@@ -10,6 +10,7 @@
 	.short	32
 .LCPI0_1:
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vplzcntd	%ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

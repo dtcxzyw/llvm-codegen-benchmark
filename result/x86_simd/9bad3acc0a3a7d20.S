@@ -15,6 +15,7 @@
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovzxwd	%xmm1, %ymm1
 	vpsllw	$15, %xmm0, %xmm0

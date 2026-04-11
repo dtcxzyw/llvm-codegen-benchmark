@@ -3,6 +3,7 @@
 	.long	1
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vandps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vptestmq	%ymm0, %ymm0, %k1
@@ -17,6 +18,7 @@ func0000000000000041:
 	.long	4
 .LCPI1_1:
 	.quad	8589934592
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004c:
 	vandps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqq	.LCPI1_1(%rip){1to4}, %ymm0, %k1

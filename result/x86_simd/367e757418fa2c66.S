@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -54,6 +55,7 @@ func000000000000018a:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -107,6 +109,7 @@ func0000000000000021:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -122,6 +125,7 @@ func000000000000018c:
 	.long	65534
 .LCPI3_1:
 	.long	1056768
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000184:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -138,6 +142,7 @@ func0000000000000184:
 	.long	9
 .LCPI4_1:
 	.long	16384
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -188,6 +193,7 @@ func000000000000002c:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000181:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -205,6 +211,7 @@ func0000000000000181:
 	.long	4
 .LCPI6_2:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000008c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -220,6 +227,7 @@ func000000000000008c:
 	.long	517
 .LCPI7_1:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

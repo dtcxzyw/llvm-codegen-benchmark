@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000048c:
 	vpmaxuq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm2
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
@@ -13,6 +14,7 @@ func000000000000048c:
 
 .LCPI1_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000481:
 	vpmaxuq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm2
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
@@ -24,6 +26,7 @@ func0000000000000481:
 
 .LCPI2_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vpmaxuq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm2
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
@@ -35,6 +38,7 @@ func0000000000000081:
 
 .LCPI3_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000008c:
 	vpmaxuq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm2
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1

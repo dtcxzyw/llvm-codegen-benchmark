@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000068c:
 	decl	%esi
 	cmpq	%rsi, %rdi
@@ -8,6 +9,7 @@ func000000000000068c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000e8c:
 	decl	%esi
 	cmpq	%rsi, %rdi
@@ -17,6 +19,7 @@ func0000000000000e8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001f0a:
 	incl	%esi
 	cmpq	%rsi, %rdi

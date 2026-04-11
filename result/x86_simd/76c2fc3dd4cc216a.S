@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -23,6 +24,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -47,6 +49,7 @@ func0000000000000010:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -77,6 +80,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.long	3435973837
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$4, %ymm0, %ymm0
@@ -87,6 +91,7 @@ func0000000000000014:
 
 .LCPI4_0:
 	.long	2863311531
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0

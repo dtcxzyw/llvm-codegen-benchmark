@@ -7,6 +7,7 @@
 	.zero	16,160
 .LCPI0_3:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e4:
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm2
 	vpord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
@@ -23,6 +24,7 @@ func00000000000000e4:
 	.zero	16,8
 .LCPI1_3:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm2
 	vpord	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1

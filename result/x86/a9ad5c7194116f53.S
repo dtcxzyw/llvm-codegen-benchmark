@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	-204(%rsi), %ecx
 	movl	$3435973837, %eax
@@ -7,6 +8,7 @@ func0000000000000000:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001b:
 	leal	128(%rsi), %ecx
 	movl	$4278255361, %eax
@@ -15,6 +17,7 @@ func000000000000001b:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	leal	2(%rsi), %ecx
 	movl	$3593175255, %eax
@@ -23,6 +26,7 @@ func0000000000000001:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000009:
 	leal	2(%rsi), %ecx
 	movl	$3435973837, %eax
@@ -31,6 +35,7 @@ func0000000000000009:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000011:
 	addl	$8, %esi
 	imulq	$954437177, %rsi, %rax
@@ -38,6 +43,7 @@ func0000000000000011:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000019:
 	leal	2(%rsi), %ecx
 	movl	$3435973837, %eax
@@ -46,6 +52,7 @@ func0000000000000019:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000013:
 	leal	11(%rsi), %ecx
 	movl	$2863311531, %eax
@@ -54,6 +61,7 @@ func0000000000000013:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000003:
 	addl	$2, %esi
 	imulq	$718635051, %rsi, %rax
@@ -61,6 +69,7 @@ func0000000000000003:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000018:
 	leal	11(%rsi), %ecx
 	movl	$2863311531, %eax
@@ -69,6 +78,7 @@ func0000000000000018:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	addl	$-6, %esi
 	imulq	$954437177, %rsi, %rax
@@ -76,6 +86,7 @@ func0000000000000008:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000002:
 	addl	$47999, %esi
 	imulq	$91625969, %rsi, %rax
@@ -83,6 +94,7 @@ func0000000000000002:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000001a:
 	addl	$999, %esi
 	imulq	$274877907, %rsi, %rax
@@ -90,6 +102,7 @@ func000000000000001a:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000000b:
 	leal	-128(%rsi), %ecx
 	movl	$3435973837, %eax

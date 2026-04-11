@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3c91a62633145c07
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movswl	%di, %eax
 	vcvtsi2sd	%eax, %xmm15, %xmm0

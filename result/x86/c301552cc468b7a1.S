@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	shlq	$16, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -7,6 +8,7 @@ func000000000000003f:
 	xorq	$963444408, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003b:
 	shlq	$48, %rdx
 	leaq	(%rdx,%rdi), %rcx

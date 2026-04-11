@@ -18,6 +18,7 @@
 	.short	5
 .LCPI0_1:
 	.short	5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000068:
 	vpbroadcastw	.LCPI0_1(%rip), %ymm2
 	vpsubw	%ymm1, %ymm2, %ymm1
@@ -45,6 +46,7 @@ func0000000000000068:
 	.short	65534
 .LCPI1_1:
 	.short	65534
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpbroadcastw	.LCPI1_1(%rip), %ymm2
 	vpsubw	%ymm1, %ymm2, %ymm1

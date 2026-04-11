@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	31
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -12,6 +13,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	4294966784
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -24,6 +26,7 @@ func0000000000000005:
 
 .LCPI2_0:
 	.long	262143
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -36,6 +39,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.long	15
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -48,6 +52,7 @@ func0000000000000007:
 
 .LCPI4_0:
 	.long	15
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -59,6 +64,7 @@ func0000000000000006:
 
 .LCPI5_0:
 	.long	536870911
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000b:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -70,6 +76,7 @@ func000000000000000b:
 
 .LCPI6_0:
 	.long	1073741823
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000009:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -81,6 +88,7 @@ func0000000000000009:
 
 .LCPI7_0:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -93,6 +101,7 @@ func000000000000000c:
 
 .LCPI8_0:
 	.long	32767
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000018:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -105,6 +114,7 @@ func0000000000000018:
 
 .LCPI9_0:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000019:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -153,6 +163,7 @@ func0000000000000019:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000015:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -201,6 +212,7 @@ func0000000000000015:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000014:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -248,6 +260,7 @@ func0000000000000014:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000008:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	leal	-65(%rdx), %eax
 	cmpb	$26, %al

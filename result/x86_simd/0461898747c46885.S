@@ -19,6 +19,7 @@
 	.short	32
 .LCPI0_2:
 	.short	64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpcmpeqd	%ymm2, %ymm1, %k1
 	vpbroadcastw	.LCPI0_2(%rip), %xmm1
@@ -39,6 +40,7 @@ func0000000000000002:
 .LCPI1_1:
 	.short	128
 	.short	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpcmpeqd	%ymm2, %ymm1, %k1
 	vpord	.LCPI1_1(%rip){1to4}, %xmm0, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000281:
 	andl	$-64, %esi
 	cmpl	$448, %esi
@@ -8,6 +9,7 @@ func0000000000000281:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008c:
 	andl	$-4096, %esi
 	cmpl	$4096, %esi
@@ -17,6 +19,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000010c:
 	cmpl	$-1073741824, %esi
 	setb	%cl

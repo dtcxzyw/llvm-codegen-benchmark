@@ -3,6 +3,7 @@
 	.long	0xc0c00000
 .LCPI0_1:
 	.long	0x40800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmulss	%xmm1, %xmm1, %xmm1
 	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1

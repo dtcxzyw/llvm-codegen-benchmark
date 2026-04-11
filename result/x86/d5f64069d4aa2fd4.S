@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	$29, %esi
 	xorl	$1, %edi
@@ -6,6 +7,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000101:
 	cmpl	$131328, %esi
 	setae	%cl
@@ -14,6 +16,7 @@ func0000000000000101:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000010c:
 	testl	$-2, %esi
 	setne	%cl

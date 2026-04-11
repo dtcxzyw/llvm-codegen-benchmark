@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsrld	$16, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1

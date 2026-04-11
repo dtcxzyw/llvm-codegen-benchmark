@@ -1,14 +1,17 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	cmpq	%rdi, %rsi
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	cmpq	%rsi, %rdi
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	cmpq	%rdi, %rsi
 	cmovgeq	%rdi, %rsi
@@ -17,16 +20,19 @@ func0000000000000006:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	cmpq	%rdi, %rsi
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	cmpq	%rsi, %rdi
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000038:
 	cmpq	%rdi, %rsi
 	cmovgeq	%rdi, %rsi
@@ -35,6 +41,7 @@ func0000000000000038:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	cmpq	%rdi, %rsi
 	cmovgeq	%rdi, %rsi
@@ -43,6 +50,7 @@ func000000000000000a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	cmpq	%rdi, %rsi
 	cmovgeq	%rdi, %rsi

@@ -5,6 +5,7 @@
 	.quad	-16
 .LCPI0_2:
 	.quad	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1

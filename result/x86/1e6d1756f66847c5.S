@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000075:
 	movb	$8, %al
 	subb	%sil, %al
@@ -6,6 +7,7 @@ func0000000000000075:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	movb	$63, %al
 	subb	%sil, %al
@@ -13,6 +15,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	movb	$63, %al
 	subb	%sil, %al
@@ -20,6 +23,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000068:
 	movb	$63, %al
 	subb	%sil, %al
@@ -27,6 +31,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	movb	$63, %al
 	subb	%sil, %al
@@ -34,6 +39,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000078:
 	movb	$64, %al
 	subb	%sil, %al
@@ -41,6 +47,7 @@ func0000000000000078:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000029:
 	movb	$8, %al
 	subb	%sil, %al
@@ -48,6 +55,7 @@ func0000000000000029:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000069:
 	movb	$8, %al
 	subb	%sil, %al

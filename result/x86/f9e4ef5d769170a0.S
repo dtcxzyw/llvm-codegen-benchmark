@@ -1,14 +1,17 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	8(%rdi), %eax
 	sarb	$4, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	leal	2(%rdi), %eax
 	sarb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	leal	4(%rdi), %eax
 	sarb	$3, %al

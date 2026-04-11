@@ -33,6 +33,7 @@
 	.short	15360
 	.short	15360
 	.short	15360
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -77,6 +78,7 @@ func000000000000018c:
 	.short	896
 	.short	896
 	.short	896
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -141,6 +143,7 @@ func000000000000002c:
 .LCPI2_3:
 	.short	65532
 	.short	65532
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

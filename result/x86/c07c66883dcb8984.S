@@ -1,14 +1,17 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	leal	567(%rdi,%rdi), %eax
 	andl	$-8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	leal	55(,%rdi,8), %eax
 	andl	$-8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003c:
 	leal	11(,%rdi,4), %eax
 	andl	$-8, %eax

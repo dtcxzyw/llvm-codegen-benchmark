@@ -61,6 +61,7 @@
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000037:
 	vpmovdb	%xmm0, %xmm0
 	vpxord	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0

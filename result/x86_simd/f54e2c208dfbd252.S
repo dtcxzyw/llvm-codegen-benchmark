@@ -59,6 +59,7 @@
 .LCPI0_5:
 	.short	65439
 	.short	65439
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI0_4(%rip){1to8}, %ymm2, %ymm1

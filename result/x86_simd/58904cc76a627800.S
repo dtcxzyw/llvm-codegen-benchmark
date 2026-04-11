@@ -5,6 +5,7 @@
 	.long	1
 .LCPI0_2:
 	.quad	8388607
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a08:
 	vpcmpltd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm2

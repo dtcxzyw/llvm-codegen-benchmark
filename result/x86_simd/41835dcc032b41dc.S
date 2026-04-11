@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vminpd	%zmm3, %zmm1, %zmm4
 	vminpd	%zmm2, %zmm0, %zmm5
@@ -8,6 +9,7 @@ func0000000000000022:
 	vsubpd	%zmm5, %zmm0, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vminpd	%zmm3, %zmm1, %zmm4
 	vminpd	%zmm2, %zmm0, %zmm5

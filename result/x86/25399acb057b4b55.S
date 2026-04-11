@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -7,6 +8,7 @@ func000000000000000f:
 	leaq	120(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -14,6 +16,7 @@ func0000000000000000:
 	leaq	3(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000b:
 	notb	%sil
 	movzbl	%sil, %eax

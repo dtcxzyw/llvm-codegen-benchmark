@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	xorl	%eax, %eax
 	cmpl	$3, %edx
@@ -10,6 +11,7 @@ func000000000000000b:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
 	cmpl	$2, %edx
 	setb	%al
@@ -19,6 +21,7 @@ func0000000000000023:
 	leaq	(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000033:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -30,6 +33,7 @@ func0000000000000033:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000063:
 	testl	%edx, %edx
 	setne	%al
@@ -40,6 +44,7 @@ func0000000000000063:
 	leaq	136(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	cmpl	$1, %edx
 	movl	$108, %ecx
@@ -50,6 +55,7 @@ func0000000000000008:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	andl	$1, %esi
 	xorl	%eax, %eax
@@ -59,6 +65,7 @@ func000000000000000a:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000053:
 	xorl	%ecx, %ecx
 	cmpl	$500, %edx

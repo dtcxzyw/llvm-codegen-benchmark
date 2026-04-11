@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vminsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI0_0(%rip), %xmm1
@@ -11,6 +12,7 @@ func0000000000000022:
 
 .LCPI1_0:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vmaxsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI1_0(%rip), %xmm0
@@ -18,6 +20,7 @@ func0000000000000024:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000047:
 	vmaxsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -28,6 +31,7 @@ func0000000000000047:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000048:
 	vminsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -38,6 +42,7 @@ func0000000000000048:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000044:
 	vmaxsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -46,6 +51,7 @@ func0000000000000044:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000042:
 	vminsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -54,6 +60,7 @@ func0000000000000042:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000004c:
 	vmaxsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -62,6 +69,7 @@ func000000000000004c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000004a:
 	vminsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -70,6 +78,7 @@ func000000000000004a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000028:
 	vminsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -82,6 +91,7 @@ func0000000000000028:
 
 .LCPI9_0:
 	.quad	0x3f571547652b82fe
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000025:
 	vminsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI9_0(%rip), %xmm1
@@ -92,6 +102,7 @@ func0000000000000025:
 
 .LCPI10_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000ca:
 	vcmplesd	%xmm0, %xmm1, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
@@ -101,6 +112,7 @@ func00000000000000ca:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000c7:
 	vcmplesd	%xmm0, %xmm1, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
@@ -114,6 +126,7 @@ func00000000000000c7:
 
 .LCPI12_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000c2:
 	vcmplesd	%xmm0, %xmm1, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}

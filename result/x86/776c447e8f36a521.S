@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000046:
 	shrq	$3, %rsi
 	imull	$1736263375, %esi, %eax
@@ -7,6 +8,7 @@ func0000000000000046:
 	leaq	-376(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	shrq	$3, %rsi
 	imull	$-1431655765, %esi, %eax

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	retq
 
 .LCPI1_0:
 	.long	15
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vpmovsxbd	%xmm1, %ymm1
 	vpmovsxbd	%xmm0, %ymm0

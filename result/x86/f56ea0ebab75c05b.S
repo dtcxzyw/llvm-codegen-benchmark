@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vmulsd	.LCPI0_0(%rip), %xmm2, %xmm2
 	vmulsd	%xmm2, %xmm1, %xmm1
@@ -9,6 +10,7 @@ func0000000000000001:
 	setp	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vaddsd	%xmm2, %xmm2, %xmm2
 	vmulsd	%xmm2, %xmm1, %xmm1

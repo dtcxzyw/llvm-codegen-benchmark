@@ -3,6 +3,7 @@
 	.long	63
 .LCPI0_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -18,6 +19,7 @@ func000000000000000e:
 	.long	63
 .LCPI1_2:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
@@ -30,6 +32,7 @@ func0000000000000006:
 	.long	63
 .LCPI2_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001e:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -41,6 +44,7 @@ func000000000000001e:
 
 .LCPI3_0:
 	.long	63
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -74,6 +78,7 @@ func0000000000000005:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001d:
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vpandd	.LCPI4_2(%rip){1to4}, %xmm0, %xmm0
@@ -86,6 +91,7 @@ func000000000000001d:
 	.long	31
 .LCPI5_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -99,6 +105,7 @@ func000000000000000f:
 	.long	31
 .LCPI6_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -112,6 +119,7 @@ func0000000000000007:
 	.long	48
 .LCPI7_1:
 	.long	63
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000d:
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpandd	.LCPI7_1(%rip){1to4}, %xmm0, %xmm0
@@ -126,6 +134,7 @@ func000000000000000d:
 	.long	62
 .LCPI8_2:
 	.quad	1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000001f:
 	vpaddd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
 	vpandd	.LCPI8_1(%rip){1to4}, %xmm0, %xmm0
@@ -138,6 +147,7 @@ func000000000000001f:
 	.long	63
 .LCPI9_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000c:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -153,6 +163,7 @@ func000000000000000c:
 	.long	63
 .LCPI10_2:
 	.quad	2
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000001c:
 	vpaddd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
 	vpandd	.LCPI10_1(%rip){1to4}, %xmm0, %xmm0

@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004f:
 	vpaddw	%xmm2, %xmm2, %xmm2
 	vpord	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000650:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -56,6 +57,7 @@ func0000000000000650:
 
 .LCPI1_0:
 	.long	10
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000250:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
@@ -111,6 +113,7 @@ func0000000000000250:
 
 .LCPI2_0:
 	.long	2147483640
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000294:
 	vpmulld	%ymm1, %ymm0, %ymm2
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm2, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leaq	9(%rdi,%rdi,2), %rcx
 	leaq	12(%rdi,%rdi,2), %rax
@@ -7,6 +8,7 @@ func0000000000000000:
 	sarq	$2, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	imulq	$10000, %rdi, %rcx
 	leaq	14780(%rcx), %rax

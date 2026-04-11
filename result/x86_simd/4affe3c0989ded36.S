@@ -5,6 +5,7 @@
 	.zero	16,1
 .LCPI0_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -25,6 +26,7 @@ func0000000000000001:
 	.zero	16,208
 .LCPI1_4:
 	.byte	201
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1

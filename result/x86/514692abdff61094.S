@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000060c:
 	testq	%rdx, %rdx
 	cmoveq	%rsi, %rdi
@@ -6,6 +7,7 @@ func000000000000060c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	testq	%rdx, %rdx
 	cmovneq	%rsi, %rdi

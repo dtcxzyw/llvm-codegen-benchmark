@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestmd	%xmm1, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -11,6 +12,7 @@ func0000000000000021:
 	.long	63
 .LCPI1_1:
 	.quad	127
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c8:
 	vpcmpgtd	.LCPI1_0(%rip){1to4}, %xmm1, %k0
 	vpcmpnleuq	.LCPI1_1(%rip){1to4}, %ymm0, %k1
@@ -21,6 +23,7 @@ func00000000000000c8:
 
 .LCPI2_0:
 	.long	63
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c6:
 	vpcmpgtd	.LCPI2_0(%rip){1to4}, %xmm1, %k0
 	vpmovq2m	%ymm0, %k1
@@ -31,6 +34,7 @@ func00000000000000c6:
 
 .LCPI3_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
 	vptestnmd	%xmm1, %xmm1, %k0 {%k1}
@@ -40,6 +44,7 @@ func0000000000000028:
 
 .LCPI4_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002a:
 	vpcmpgtq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	vptestnmd	%xmm1, %xmm1, %k0 {%k1}
@@ -49,6 +54,7 @@ func000000000000002a:
 
 .LCPI5_0:
 	.long	1073741823
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000081:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqq	%ymm2, %ymm0, %k1
@@ -59,6 +65,7 @@ func0000000000000081:
 
 .LCPI6_0:
 	.quad	-119
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000024:
 	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm0, %k1
 	vptestnmd	%xmm1, %xmm1, %k0 {%k1}
@@ -66,6 +73,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000181:
 	vptestnmd	%xmm1, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -78,6 +86,7 @@ func0000000000000181:
 	.long	1
 .LCPI8_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000026:
 	vpcmpeqd	.LCPI8_0(%rip){1to4}, %xmm1, %k1
 	vpcmpltq	.LCPI8_1(%rip){1to4}, %ymm0, %k0 {%k1}
@@ -87,6 +96,7 @@ func0000000000000026:
 
 .LCPI9_0:
 	.long	2
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000141:
 	vpcmpltd	.LCPI9_0(%rip){1to4}, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -99,6 +109,7 @@ func0000000000000141:
 	.long	5
 .LCPI10_1:
 	.quad	3
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000084:
 	vpcmpnleud	.LCPI10_0(%rip){1to4}, %xmm1, %k0
 	vpcmpltuq	.LCPI10_1(%rip){1to4}, %ymm0, %k1

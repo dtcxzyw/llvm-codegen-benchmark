@@ -5,6 +5,7 @@
 	.quad	7378697629483820648
 .LCPI0_2:
 	.quad	461168601842738790
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
@@ -18,6 +19,7 @@ func0000000000000001:
 	.quad	-6148914691236517205
 .LCPI1_1:
 	.quad	1537228672809129301
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
@@ -34,6 +36,7 @@ func0000000000000041:
 	.quad	2380225041768974401
 .LCPI2_2:
 	.quad	595056260442243600
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
@@ -48,6 +51,7 @@ func0000000000000021:
 	.quad	6148914691236517205
 .LCPI3_2:
 	.quad	6148914691236517204
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
@@ -58,12 +62,14 @@ func0000000000000061:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vbroadcastss	.LCPI4_0(%rip), %xmm0
 	retq
 
 .LCPI5_0:
 	.quad	64
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000034:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -107,6 +113,7 @@ func0000000000000034:
 
 .LCPI6_0:
 	.quad	54
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000014:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0

@@ -3,6 +3,7 @@
 	.long	64
 .LCPI0_1:
 	.long	16
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000030c:
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpnleud	%ymm0, %ymm2, %k0
@@ -52,6 +53,7 @@ func000000000000030c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm2, %ymm2
 	vpcmpneqd	%ymm0, %ymm2, %k0
@@ -65,6 +67,7 @@ func000000000000018c:
 	.long	7
 .LCPI2_1:
 	.long	4088
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000028c:
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltud	%ymm0, %ymm2, %k0

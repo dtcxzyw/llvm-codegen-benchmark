@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpsllw	$3, %ymm0, %ymm1
 	vpsubw	%ymm0, %ymm1, %ymm0
@@ -22,11 +23,13 @@ func0000000000000006:
 	.short	2106
 	.short	2106
 	.short	2106
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpmullw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpaddw	%ymm0, %ymm0, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

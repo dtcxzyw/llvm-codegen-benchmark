@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vmovss	.LCPI0_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2
@@ -11,6 +12,7 @@ func0000000000000003:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vmovss	.LCPI1_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2
@@ -21,6 +23,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vmovss	.LCPI2_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2
@@ -31,6 +34,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vmovss	.LCPI3_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2
@@ -41,6 +45,7 @@ func000000000000000a:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vmovss	.LCPI4_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2
@@ -51,6 +56,7 @@ func000000000000000c:
 
 .LCPI5_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vmovss	.LCPI5_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2
@@ -61,6 +67,7 @@ func0000000000000008:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	vmovss	.LCPI6_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2
@@ -71,6 +78,7 @@ func0000000000000005:
 
 .LCPI7_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000d:
 	vmovss	.LCPI7_0(%rip), %xmm3
 	vdivss	%xmm2, %xmm3, %xmm2

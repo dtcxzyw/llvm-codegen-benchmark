@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	movl	%edi, %eax
 	andl	$1, %eax
 	xorl	$9, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	andl	$1, %edi
 	leal	3(,%rdi,4), %eax

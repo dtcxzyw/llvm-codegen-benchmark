@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	cmpl	$240, %edi
 	movl	$240, %eax
@@ -7,6 +8,7 @@ func0000000000000003:
 	leal	(%rax,%rax,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	cmpl	$255, %edi
 	movl	$255, %eax
@@ -14,6 +16,7 @@ func0000000000000002:
 	imull	$16842752, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	cmpl	$-261947, %edi
 	movl	$-261947, %eax
@@ -21,6 +24,7 @@ func0000000000000000:
 	imull	$-208, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	cmpl	$13, %edi
 	movl	$13, %eax

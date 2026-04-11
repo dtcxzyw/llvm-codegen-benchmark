@@ -32,6 +32,7 @@
 	.byte	28
 	.byte	29
 	.byte	30
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vmovdqa	.LCPI0_0(%rip), %ymm3
 	vpermi2b	%ymm1, %ymm2, %ymm3
@@ -73,6 +74,7 @@ func0000000000000028:
 	.byte	28
 	.byte	29
 	.byte	30
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vmovdqa	.LCPI1_0(%rip), %ymm3
 	vpermi2b	%ymm1, %ymm2, %ymm3
@@ -83,6 +85,7 @@ func0000000000000024:
 
 .LCPI2_0:
 	.quad	4294967287
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a4:
 	vpsllq	$32, %ymm1, %ymm1
 	vpternlogq	$248, .LCPI2_0(%rip){1to4}, %ymm2, %ymm1
@@ -109,6 +112,7 @@ func00000000000000a4:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000025:
 	vpmovsxbd	.LCPI3_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -135,6 +139,7 @@ func0000000000000025:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000029:
 	vpmovsxbd	.LCPI4_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -161,6 +166,7 @@ func0000000000000029:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
 	vpmovsxbd	.LCPI5_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -187,6 +193,7 @@ func000000000000002a:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000027:
 	vpmovsxbd	.LCPI6_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -213,6 +220,7 @@ func0000000000000027:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002b:
 	vpmovsxbd	.LCPI7_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -239,6 +247,7 @@ func000000000000002b:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000026:
 	vpmovsxbd	.LCPI8_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -265,6 +274,7 @@ func0000000000000026:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002c:
 	vpmovsxbd	.LCPI9_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -291,6 +301,7 @@ func000000000000002c:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000021:
 	vpmovsxbd	.LCPI10_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3

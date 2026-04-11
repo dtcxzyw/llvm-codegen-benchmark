@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpternlogd	$248, .LCPI0_1(%rip){1to4}, %xmm2, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

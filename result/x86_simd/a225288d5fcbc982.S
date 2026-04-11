@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000cb:
 	vpcmpltd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	715827883
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	vpshufd	$245, %ymm2, %ymm3
 	vpbroadcastd	.LCPI0_0(%rip), %ymm4
@@ -20,6 +21,7 @@ func00000000000000a6:
 
 .LCPI1_0:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -33,6 +35,7 @@ func0000000000000006:
 
 .LCPI2_0:
 	.long	1374389535
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000aa:
 	vpshufd	$245, %ymm2, %ymm3
 	vpbroadcastd	.LCPI2_0(%rip), %ymm4
@@ -51,6 +54,7 @@ func00000000000000aa:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000008a:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -63,6 +67,7 @@ func000000000000008a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000086:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2

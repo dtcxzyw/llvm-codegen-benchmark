@@ -3,12 +3,14 @@
 	.quad	20479
 .LCPI0_1:
 	.quad	40960
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1 {%k1}
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000030:
 	vptestnmq	%ymm2, %ymm2, %k1
 	vpmullq	%ymm1, %ymm0, %ymm0 {%k1}
@@ -16,6 +18,7 @@ func0000000000000030:
 
 .LCPI2_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vptestnmq	%ymm2, %ymm2, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1 {%k1}
@@ -26,6 +29,7 @@ func0000000000000004:
 	.quad	20479
 .LCPI3_1:
 	.quad	40960
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000063:
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm1 {%k1}
@@ -36,12 +40,14 @@ func0000000000000063:
 	.quad	23
 .LCPI4_1:
 	.quad	32
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI4_1(%rip), %ymm1 {%k1}
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpneqq	%ymm3, %ymm2, %k1
@@ -52,12 +58,14 @@ func0000000000000006:
 	.quad	1023
 .LCPI6_1:
 	.quad	2048
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	vpcmpgtq	.LCPI6_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI6_1(%rip), %ymm1 {%k1}
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000005:
 	vptestmq	%ymm2, %ymm2, %k1
 	vpmullq	%ymm1, %ymm0, %ymm0 {%k1}
@@ -65,6 +73,7 @@ func0000000000000005:
 
 .LCPI8_0:
 	.quad	1000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000022:
 	vpcmpleuq	.LCPI8_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa64	%ymm1, %ymm1 {%k1} {z}
@@ -73,6 +82,7 @@ func0000000000000022:
 
 .LCPI9_0:
 	.quad	2048
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000061:
 	vpbroadcastq	.LCPI9_0(%rip), %ymm3
 	vpcmpltuq	%ymm3, %ymm2, %k1
@@ -80,6 +90,7 @@ func0000000000000061:
 	vpmullq	%ymm0, %ymm3, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000018:
 	vpsraq	$63, %ymm2, %ymm2
 	vpandn	%ymm1, %ymm2, %ymm1

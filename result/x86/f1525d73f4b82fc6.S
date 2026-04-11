@@ -4,6 +4,7 @@
 	.quad	0x3fb54fdf3b645a1d
 .LCPI0_1:
 	.quad	0x3fd54fdf3b645a1d
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	cmpl	$-18, %edi

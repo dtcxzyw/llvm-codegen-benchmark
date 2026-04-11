@@ -8,6 +8,7 @@
 	.short	6
 	.short	6
 	.short	6
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -24,6 +25,7 @@ func0000000000000034:
 	.short	65488
 	.short	65488
 	.short	65488
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -40,6 +42,7 @@ func0000000000000000:
 	.short	16960
 	.short	16960
 	.short	16960
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -56,6 +59,7 @@ func0000000000000014:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000030:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -72,6 +76,7 @@ func0000000000000030:
 	.short	65185
 	.short	65185
 	.short	65185
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -79,6 +84,7 @@ func0000000000000010:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000020:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -96,6 +102,7 @@ func0000000000000020:
 	.short	65488
 	.short	65488
 	.short	65488
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000003c:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -112,6 +119,7 @@ func000000000000003c:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000003f:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -128,6 +136,7 @@ func000000000000003f:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000003e:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -144,6 +153,7 @@ func000000000000003e:
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000038:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -160,6 +170,7 @@ func0000000000000038:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000028:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -167,6 +178,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000004:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0

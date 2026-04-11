@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000821:
 	addq	%rsi, %rdx
 	testq	%rsi, %rsi
@@ -7,6 +8,7 @@ func0000000000000821:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000c24:
 	leaq	(%rsi,%rdx,2), %rax
 	testq	%rsi, %rsi
@@ -16,6 +18,7 @@ func0000000000000c24:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000824:
 	addq	%rsi, %rdx
 	testq	%rsi, %rsi
@@ -25,6 +28,7 @@ func0000000000000824:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c21:
 	shlq	$5, %rdx
 	addq	%rsi, %rdx

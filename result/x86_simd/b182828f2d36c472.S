@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	13
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1 {%k1}
@@ -26,6 +27,7 @@ func0000000000000024:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000281:
 	vpcmpnltub	.LCPI1_0(%rip), %xmm2, %k1
 	vmovdqa64	%ymm1, %ymm1 {%k1} {z}
@@ -51,6 +53,7 @@ func0000000000000281:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vpcmpnltub	.LCPI2_0(%rip), %xmm2, %k1
 	vmovdqa64	%ymm1, %ymm1 {%k1} {z}
@@ -78,6 +81,7 @@ func0000000000000081:
 	.zero	1
 .LCPI3_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	vpcmpeqb	.LCPI3_0(%rip), %xmm2, %k1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm1 {%k1}
@@ -105,6 +109,7 @@ func0000000000000021:
 	.zero	1
 .LCPI4_1:
 	.quad	4
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000301:
 	vpcmpnleub	.LCPI4_0(%rip), %xmm2, %k1
 	vpbroadcastq	.LCPI4_1(%rip), %ymm1 {%k1}
@@ -113,6 +118,7 @@ func0000000000000301:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000028:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpneqb	%xmm3, %xmm2, %k1
@@ -122,6 +128,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000026:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpneqb	%xmm3, %xmm2, %k1
@@ -150,6 +157,7 @@ func0000000000000026:
 	.zero	1
 .LCPI7_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000086:
 	vpcmpltub	.LCPI7_0(%rip), %xmm2, %k1
 	vpbroadcastq	.LCPI7_1(%rip), %ymm1 {%k1}
@@ -177,6 +185,7 @@ func0000000000000086:
 	.zero	1
 .LCPI8_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000008b:
 	vpcmpltub	.LCPI8_0(%rip), %xmm2, %k1
 	vpbroadcastq	.LCPI8_1(%rip), %ymm1 {%k1}
@@ -187,6 +196,7 @@ func000000000000008b:
 
 .LCPI9_0:
 	.quad	23
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000149:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpgtb	%xmm3, %xmm2, %k1
@@ -198,6 +208,7 @@ func0000000000000149:
 
 .LCPI10_0:
 	.quad	23
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000148:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpgtb	%xmm3, %xmm2, %k1

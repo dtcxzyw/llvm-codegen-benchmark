@@ -1,19 +1,23 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -21,12 +25,14 @@ func0000000000000004:
 
 .LCPI4_0:
 	.zero	16,224
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000015:
 	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
 	retq
 
 .LCPI5_0:
 	.zero	16,224
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000017:
 	vpaddb	.LCPI5_0(%rip), %xmm0, %xmm0
 	retq

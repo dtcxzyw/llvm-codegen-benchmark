@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddss	%xmm2, %xmm1, %xmm1
 	vbroadcastss	.LCPI0_0(%rip), %xmm2
@@ -12,6 +13,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000034:
 	vaddss	%xmm2, %xmm1, %xmm1
 	vbroadcastss	.LCPI1_0(%rip), %xmm2

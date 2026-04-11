@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rax, %rax
@@ -9,6 +10,7 @@ func0000000000000012:
 	bzhiq	%rax, %rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rax, %rax

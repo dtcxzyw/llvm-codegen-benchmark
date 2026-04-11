@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000017:
 	vplzcntd	%xmm0, %xmm0
 	vpsrld	$2, %xmm0, %xmm0

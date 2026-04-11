@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -10,6 +11,7 @@ func000000000000000f:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -29,6 +31,7 @@ func000000000000000c:
 	.short	65508
 .LCPI2_1:
 	.long	32
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002f:
 	vpaddw	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	orl	%edx, %esi
 	leal	1640531527(%rdi,%rsi), %eax
 	shrl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003e:
 	orl	%edx, %esi
 	leal	131074(%rdi,%rsi), %eax

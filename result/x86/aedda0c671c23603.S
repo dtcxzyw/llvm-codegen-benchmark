@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	shrq	$52, %rdi
 	andl	$2047, %edi
@@ -6,6 +7,7 @@ func0000000000000009:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax
@@ -14,6 +16,7 @@ func0000000000000008:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax
@@ -24,6 +27,7 @@ func0000000000000007:
 
 .LCPI3_0:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax
@@ -32,6 +36,7 @@ func000000000000000b:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	shrq	$52, %rdi
 	andl	$2047, %edi
@@ -41,6 +46,7 @@ func0000000000000006:
 
 .LCPI5_0:
 	.quad	0x43e0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax
@@ -52,6 +58,7 @@ func0000000000000005:
 
 .LCPI6_0:
 	.quad	0x401921fb54442d18
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax
@@ -62,6 +69,7 @@ func0000000000000004:
 
 .LCPI7_0:
 	.quad	0x3ddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax
@@ -73,6 +81,7 @@ func0000000000000002:
 
 .LCPI8_0:
 	.quad	0x3ff921fb54442d18
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000003:
 	movb	$63, %al
 	bzhiq	%rax, %rdi, %rax

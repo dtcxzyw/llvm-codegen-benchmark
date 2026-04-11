@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
 	movabsq	$-1548112371908608, %rax
 	xorl	%ecx, %ecx
@@ -8,6 +9,7 @@ func0000000000000031:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	xorl	%ecx, %ecx
 	cmpq	$-1, %rdi
@@ -16,6 +18,7 @@ func0000000000000005:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	cmpq	$8, %rdi
 	movabsq	$4294967296, %rax

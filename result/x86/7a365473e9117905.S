@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c8:
 	testl	%edx, %edx
 	cmovnsl	%edx, %esi
@@ -7,6 +8,7 @@ func00000000000000c8:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000cc:
 	testl	%edx, %edx
 	cmovnsl	%edx, %esi
@@ -15,6 +17,7 @@ func00000000000000cc:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	cmpl	$-233, %edx
 	cmovnel	%edx, %esi
@@ -23,6 +26,7 @@ func0000000000000026:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c6:
 	cmpl	$128, %edx
 	setl	%cl
@@ -32,6 +36,7 @@ func00000000000000c6:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ca:
 	testl	%edx, %edx
 	setns	%al

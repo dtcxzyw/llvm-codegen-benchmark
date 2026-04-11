@@ -3,6 +3,7 @@
 	.long	0xc0000000
 .LCPI0_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -14,6 +15,7 @@ func000000000000000a:
 
 .LCPI1_0:
 	.long	0xc0000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vmulss	.LCPI1_0(%rip), %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -25,6 +27,7 @@ func0000000000000006:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vaddss	%xmm1, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -33,6 +36,7 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vaddss	%xmm1, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0

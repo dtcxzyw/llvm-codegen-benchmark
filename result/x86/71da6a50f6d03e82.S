@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	vcvttss2si	%xmm1, %eax
 	incl	%eax
@@ -8,6 +9,7 @@ func0000000000000013:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vcvttss2si	%xmm1, %eax
 	incl	%eax

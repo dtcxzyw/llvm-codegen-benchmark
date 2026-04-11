@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpaddb	%xmm0, %xmm0, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -12,6 +13,7 @@ func000000000000000a:
 	.zero	16,120
 .LCPI1_2:
 	.byte	120
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	vpcmpltub	.LCPI1_0(%rip), %xmm0, %k1
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1

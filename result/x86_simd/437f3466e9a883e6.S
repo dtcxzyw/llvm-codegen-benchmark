@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -11,6 +12,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	58
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$15, %xmm1, %xmm1

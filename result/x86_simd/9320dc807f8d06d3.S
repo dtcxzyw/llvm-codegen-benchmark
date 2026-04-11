@@ -23,6 +23,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpxor	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1

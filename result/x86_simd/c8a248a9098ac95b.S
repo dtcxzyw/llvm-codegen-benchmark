@@ -70,6 +70,7 @@
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
@@ -80,6 +81,7 @@ func0000000000000003:
 	.long	3758358527
 .LCPI1_1:
 	.long	528482304
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpslld	$23, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm1, %ymm0
@@ -90,6 +92,7 @@ func0000000000000007:
 	.long	4294705663
 .LCPI2_1:
 	.long	253952
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000b:
 	vpslld	$13, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0
@@ -100,6 +103,7 @@ func000000000000000b:
 	.long	33554432
 .LCPI3_1:
 	.long	17825792
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpslld	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm1, %ymm0
@@ -110,6 +114,7 @@ func0000000000000000:
 	.long	32
 .LCPI4_1:
 	.long	64
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vpslld	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0
@@ -120,6 +125,7 @@ func0000000000000002:
 	.long	458752
 .LCPI5_1:
 	.long	63488
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	vpslld	$6, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0
@@ -197,6 +203,7 @@ func000000000000000f:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000e:
 	vpshufb	.LCPI6_0(%rip), %ymm2, %ymm2
 	vpandd	.LCPI6_2(%rip){1to8}, %ymm1, %ymm1
@@ -274,6 +281,7 @@ func000000000000000e:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000d:
 	vpshufb	.LCPI7_0(%rip), %ymm2, %ymm2
 	vpandd	.LCPI7_2(%rip){1to8}, %ymm1, %ymm1
@@ -284,6 +292,7 @@ func000000000000000d:
 	.long	65504
 .LCPI8_1:
 	.long	63488
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000c:
 	vpslld	$8, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI8_0(%rip){1to8}, %ymm1, %ymm0
@@ -292,6 +301,7 @@ func000000000000000c:
 
 .LCPI9_0:
 	.long	32752
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	vpslld	$3, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3

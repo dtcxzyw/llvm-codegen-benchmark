@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vcmpneqss	.LCPI0_0(%rip), %xmm0, %k0
 	kmovd	%k0, %eax
@@ -8,6 +9,7 @@ func0000000000000010:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vxorps	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
@@ -18,6 +20,7 @@ func0000000000000005:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	vcmpeqss	.LCPI2_0(%rip), %xmm0, %k0
 	kmovw	%k0, %eax
@@ -25,6 +28,7 @@ func0000000000000011:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqss	%xmm1, %xmm0, %k0
@@ -33,6 +37,7 @@ func000000000000000e:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000009:
 	vxorps	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax

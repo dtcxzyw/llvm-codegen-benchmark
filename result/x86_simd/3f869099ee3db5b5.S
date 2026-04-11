@@ -10,6 +10,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000006a:
 	vpmovqw	%ymm1, %xmm1
 	vpcmpgtq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
@@ -18,6 +19,7 @@ func000000000000006a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000046:
 	vpmovqw	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -26,6 +28,7 @@ func0000000000000046:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmovqw	%ymm1, %xmm1
 	vptestmq	%ymm0, %ymm0, %k1
@@ -33,6 +36,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000041:
 	vpmovqw	%ymm1, %xmm0
 	vzeroupper

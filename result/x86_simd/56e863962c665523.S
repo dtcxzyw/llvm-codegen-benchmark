@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000185:
 	vpmovzxwd	%xmm1, %ymm1
 	vptestmb	%xmm2, %xmm2, %k0
@@ -26,6 +27,7 @@ func0000000000000185:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpmovzxwd	%xmm1, %ymm1
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k0
@@ -53,6 +55,7 @@ func0000000000000021:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000025:
 	vpmovzxwd	%xmm1, %ymm1
 	vpcmpeqb	.LCPI2_0(%rip), %xmm2, %k0

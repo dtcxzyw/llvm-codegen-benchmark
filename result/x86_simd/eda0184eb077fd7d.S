@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -11,6 +12,7 @@ func000000000000000e:
 
 .LCPI1_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -36,6 +38,7 @@ func0000000000000006:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001d:
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
@@ -62,6 +65,7 @@ func000000000000001d:
 	.zero	1
 .LCPI3_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0

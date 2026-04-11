@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
@@ -10,6 +11,7 @@ func0000000000000021:
 
 .LCPI1_0:
 	.long	384
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vptestmd	%ymm1, %ymm1, %k1
@@ -17,6 +19,7 @@ func000000000000002c:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestnmd	%ymm1, %ymm1, %k1
@@ -27,6 +30,7 @@ func000000000000018c:
 	.long	124
 .LCPI3_1:
 	.long	31
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000108:
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm2, %k0
 	vpcmpnleud	.LCPI3_1(%rip){1to8}, %ymm1, %k1
@@ -37,6 +41,7 @@ func0000000000000108:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
@@ -45,6 +50,7 @@ func0000000000000026:
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
 	vptestnmd	%ymm2, %ymm2, %k0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

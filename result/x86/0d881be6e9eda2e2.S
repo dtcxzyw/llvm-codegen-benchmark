@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	andl	$31, %esi
 	imulq	%rdi, %rsi
 	leaq	31(%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	subq	$-2147483648, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	movq	%rsi, %rax
 	andq	$-131072, %rax
@@ -18,6 +21,7 @@ func0000000000000000:
 	subq	$-2147483648, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	movabsq	$35747867511423103, %rcx
 	andq	%rsi, %rcx
@@ -26,12 +30,14 @@ func000000000000000e:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	movzwl	%si, %eax
 	imulq	%rdi, %rax
 	addq	$32768, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	movl	%esi, %eax
 	imulq	%rdi, %rax

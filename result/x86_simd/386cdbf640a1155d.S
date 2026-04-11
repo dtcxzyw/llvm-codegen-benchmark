@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vpshufd	$245, %xmm1, %xmm2
 	vpshufd	$245, %xmm0, %xmm3
@@ -8,6 +9,7 @@ func0000000000000012:
 	vpblendd	$10, %xmm2, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000005a:
 	vpmovzxdq	%xmm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
@@ -17,6 +19,7 @@ func000000000000005a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000005b:
 	vpshufd	$245, %xmm1, %xmm2
 	vpshufd	$245, %xmm0, %xmm3
@@ -26,6 +29,7 @@ func000000000000005b:
 	vpblendd	$10, %xmm2, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpmovzxdq	%xmm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0

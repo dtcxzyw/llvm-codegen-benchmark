@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	leal	127(%rdx), %eax
 	cmpl	%eax, %esi
@@ -8,6 +9,7 @@ func0000000000000012:
 	cmovll	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	leal	7(%rdx), %eax
 	cmpl	%edi, %eax
@@ -17,6 +19,7 @@ func0000000000000010:
 	cmovgel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	leal	127(%rdx), %eax
 	cmpl	%eax, %esi

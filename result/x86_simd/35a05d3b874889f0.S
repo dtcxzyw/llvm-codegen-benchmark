@@ -10,6 +10,7 @@
 	.short	0
 	.short	10000
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx

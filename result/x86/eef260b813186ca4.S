@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b7:
 	imull	$217706, %esi, %eax
 	sarl	$16, %eax
@@ -6,6 +7,7 @@ func00000000000000b7:
 	addl	$-32618, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b5:
 	imull	$217706, %esi, %eax
 	sarl	$16, %eax

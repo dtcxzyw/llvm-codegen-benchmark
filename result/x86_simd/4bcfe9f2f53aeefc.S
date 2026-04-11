@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmb	.LCPI0_0(%rip), %xmm1, %k0
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -12,6 +13,7 @@ func0000000000000021:
 	.zero	16,32
 .LCPI1_1:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vptestnmb	.LCPI1_0(%rip), %xmm1, %k0
 	vpcmpltub	.LCPI1_1(%rip), %xmm0, %k1
@@ -23,6 +25,7 @@ func0000000000000024:
 	.zero	16,1
 .LCPI2_1:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	vptestnmb	.LCPI2_0(%rip), %xmm1, %k0
 	vpcmpneqb	.LCPI2_1(%rip), %xmm0, %k1
@@ -34,6 +37,7 @@ func000000000000002c:
 	.zero	16,127
 .LCPI3_1:
 	.zero	4,127
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpternlogd	$248, .LCPI3_1(%rip){1to4}, %xmm1, %xmm0
@@ -43,6 +47,7 @@ func000000000000018c:
 
 .LCPI4_0:
 	.zero	16,4
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	vptestmb	.LCPI4_0(%rip), %xmm1, %k0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -59,6 +64,7 @@ func0000000000000181:
 	.zero	16,5
 .LCPI5_3:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000304:
 	vpandd	.LCPI5_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpgtb	.LCPI5_1(%rip), %xmm1, %k0
@@ -75,6 +81,7 @@ func0000000000000304:
 	.zero	16,4
 .LCPI6_3:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000028c:
 	vpandd	.LCPI6_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltb	.LCPI6_1(%rip), %xmm1, %k0
@@ -91,6 +98,7 @@ func000000000000028c:
 	.zero	16,159
 .LCPI7_3:
 	.zero	4,14
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000308:
 	vpandd	.LCPI7_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpgtb	.LCPI7_1(%rip), %xmm1, %k0
@@ -101,6 +109,7 @@ func0000000000000308:
 
 .LCPI8_0:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
 	vptestnmb	.LCPI8_0(%rip), %xmm1, %k0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -113,6 +122,7 @@ func000000000000002a:
 	.zero	16,2
 .LCPI9_1:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000184:
 	vptestmb	.LCPI9_0(%rip), %xmm1, %k0
 	vpcmpltub	.LCPI9_1(%rip), %xmm0, %k1
@@ -124,6 +134,7 @@ func0000000000000184:
 	.zero	16,32
 .LCPI10_1:
 	.zero	4,32
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000030c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpternlogd	$248, .LCPI10_1(%rip){1to4}, %xmm1, %xmm0

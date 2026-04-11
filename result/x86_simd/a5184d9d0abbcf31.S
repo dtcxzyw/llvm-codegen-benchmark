@@ -5,6 +5,7 @@
 	.long	1
 .LCPI0_2:
 	.long	4294248133
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000026d:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
@@ -18,6 +19,7 @@ func000000000000026d:
 	.long	1
 .LCPI1_2:
 	.long	4294248133
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000026c:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltd	.LCPI1_1(%rip){1to8}, %ymm1, %k1

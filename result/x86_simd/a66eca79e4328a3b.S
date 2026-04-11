@@ -16,6 +16,7 @@
 	.short	1792
 	.short	1792
 	.short	1792
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000082:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -61,6 +62,7 @@ func0000000000000082:
 	.short	3048
 	.short	3048
 	.short	3048
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000410:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -72,6 +74,7 @@ func0000000000000410:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -100,6 +103,7 @@ func0000000000000084:
 	.short	768
 	.short	768
 	.short	768
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000618:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -128,6 +132,7 @@ func0000000000000618:
 	.short	2456
 	.short	2456
 	.short	2456
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000090:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -173,6 +178,7 @@ func0000000000000090:
 	.short	12288
 	.short	12288
 	.short	12288
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000302:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -201,6 +207,7 @@ func0000000000000302:
 	.short	4
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000602:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -246,6 +253,7 @@ func0000000000000602:
 	.short	95
 	.short	95
 	.short	95
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000202:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -291,6 +299,7 @@ func0000000000000202:
 	.short	24
 	.short	24
 	.short	24
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000630:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -336,6 +345,7 @@ func0000000000000630:
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000088:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -381,6 +391,7 @@ func0000000000000088:
 	.short	32
 	.short	32
 	.short	32
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000208:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -426,6 +437,7 @@ func0000000000000208:
 	.short	5
 	.short	5
 	.short	5
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000430:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -471,6 +483,7 @@ func0000000000000430:
 	.short	21
 	.short	21
 	.short	21
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000210:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -516,6 +529,7 @@ func0000000000000210:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000204:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -527,6 +541,7 @@ func0000000000000204:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000604:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -555,6 +570,7 @@ func0000000000000604:
 	.short	2112
 	.short	2112
 	.short	2112
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000610:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

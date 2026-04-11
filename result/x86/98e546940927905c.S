@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000010ca:
 	sarq	$3, %rsi
 	imull	$-858993459, %esi, %eax
@@ -9,6 +10,7 @@ func00000000000010ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000114a:
 	sarq	$3, %rsi
 	imull	$-1431655765, %esi, %eax

@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	7936
 	.short	7936
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpxord	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vptestmd	%ymm0, %ymm0, %k1
@@ -20,6 +21,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

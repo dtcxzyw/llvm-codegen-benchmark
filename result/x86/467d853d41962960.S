@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	movl	%edi, %eax
 	shrl	$31, %eax
@@ -6,6 +7,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	0x4e6e6b28
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vcvtsi2ss	%edi, %xmm15, %xmm0
 	vucomiss	.LCPI1_0(%rip), %xmm0
@@ -14,12 +16,14 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	0x4f3504f3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vcvtsi2ss	%edi, %xmm15, %xmm0
 	vucomiss	.LCPI2_0(%rip), %xmm0
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	cmpl	$2, %edi
 	setl	%al

@@ -36,6 +36,7 @@
 .LCPI0_2:
 	.short	252
 	.short	252
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpmovzxbw	%xmm1, %ymm1
 	vpternlogd	$168, .LCPI0_2(%rip){1to8}, %ymm0, %ymm1

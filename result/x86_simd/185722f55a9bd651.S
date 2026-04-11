@@ -86,6 +86,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	vpmovdw	%ymm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1

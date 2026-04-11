@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	testl	%esi, %esi
 	setne	%al
@@ -9,6 +10,7 @@ func000000000000018c:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000141:
 	testl	%esi, %esi
 	setg	%al
@@ -19,6 +21,7 @@ func0000000000000141:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	testl	%esi, %esi
 	sete	%al
@@ -29,6 +32,7 @@ func000000000000002c:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	testl	%esi, %esi
 	sete	%al

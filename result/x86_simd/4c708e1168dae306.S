@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
@@ -13,6 +14,7 @@ func0000000000000001:
 	.zero	16,7
 .LCPI1_1:
 	.byte	7
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpbroadcastb	.LCPI1_1(%rip), %xmm3
 	vpand	%xmm3, %xmm2, %xmm2

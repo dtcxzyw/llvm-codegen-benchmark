@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	4096
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003c:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$53, %ymm2, %ymm2
@@ -10,6 +11,7 @@ func000000000000003c:
 
 .LCPI1_0:
 	.quad	4294967296
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$40, %ymm2, %ymm2
@@ -19,6 +21,7 @@ func000000000000003f:
 
 .LCPI2_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$49, %ymm2, %ymm2
@@ -28,6 +31,7 @@ func0000000000000005:
 
 .LCPI3_0:
 	.quad	8589934592
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$43, %ymm2, %ymm2
@@ -37,6 +41,7 @@ func0000000000000038:
 
 .LCPI4_0:
 	.quad	65536
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000017:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$32, %ymm2, %ymm2
@@ -46,6 +51,7 @@ func0000000000000017:
 
 .LCPI5_0:
 	.quad	6949054225032675328
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$56, %ymm2, %ymm2
@@ -55,6 +61,7 @@ func0000000000000000:
 
 .LCPI6_0:
 	.quad	7381399789260242944
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$48, %ymm2, %ymm2
@@ -64,6 +71,7 @@ func0000000000000004:
 
 .LCPI7_0:
 	.quad	25
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000037:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$48, %ymm2, %ymm2
@@ -73,6 +81,7 @@ func0000000000000037:
 
 .LCPI8_0:
 	.quad	-4611686018427387904
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000018:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$24, %ymm2, %ymm2
@@ -82,6 +91,7 @@ func0000000000000018:
 
 .LCPI9_0:
 	.quad	-4611686018427387904
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000019:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$24, %ymm2, %ymm2
@@ -91,6 +101,7 @@ func0000000000000019:
 
 .LCPI10_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000015:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$32, %ymm2, %ymm2
@@ -100,6 +111,7 @@ func0000000000000015:
 
 .LCPI11_0:
 	.quad	128
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000013:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$32, %ymm2, %ymm2

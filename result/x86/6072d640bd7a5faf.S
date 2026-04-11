@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	sarq	$21, %rdx
 	imulq	$470296, %rdx, %rax
@@ -6,6 +7,7 @@ func0000000000000014:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	sarq	$21, %rdx
 	imulq	$654183, %rdx, %rax
@@ -13,6 +15,7 @@ func0000000000000010:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000044:
 	sarq	$32, %rdx
 	imulq	$-60000000, %rdx, %rax
@@ -20,6 +23,7 @@ func0000000000000044:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	sarq	$21, %rdx
 	imulq	$470296, %rdx, %rax
@@ -27,6 +31,7 @@ func0000000000000004:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000054:
 	sarq	$32, %rdx
 	imulq	$-86400, %rdx, %rax

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -8,6 +9,7 @@ func0000000000000013:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -16,6 +18,7 @@ func0000000000000015:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -26,6 +29,7 @@ func0000000000000014:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000012:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -34,6 +38,7 @@ func0000000000000012:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001c:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -42,6 +47,7 @@ func000000000000001c:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -52,6 +58,7 @@ func000000000000000c:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -62,6 +69,7 @@ func000000000000000a:
 
 .LCPI7_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vfmadd213ss	%xmm2, %xmm1, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0

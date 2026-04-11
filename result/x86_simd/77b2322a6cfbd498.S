@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$22, %xmm1, %xmm1
@@ -7,6 +8,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$6, %xmm1, %xmm1
@@ -15,6 +17,7 @@ func0000000000000006:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpmovqd	%ymm1, %xmm1
 	vpor	%xmm1, %xmm0, %xmm0
@@ -22,6 +25,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpmovqd	%ymm1, %xmm1
 	vpor	%xmm1, %xmm0, %xmm0
@@ -29,6 +33,7 @@ func000000000000002a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000060:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$17, %xmm1, %xmm1
@@ -37,6 +42,7 @@ func0000000000000060:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000019:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm1
@@ -45,6 +51,7 @@ func0000000000000019:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000059:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$24, %xmm1, %xmm1
@@ -53,6 +60,7 @@ func0000000000000059:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000007e:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$4, %xmm1, %xmm1
@@ -61,6 +69,7 @@ func000000000000007e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000007:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$11, %xmm1, %xmm1
@@ -69,6 +78,7 @@ func0000000000000007:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000067:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$6, %xmm1, %xmm1
@@ -77,6 +87,7 @@ func0000000000000067:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000010:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$2, %xmm1, %xmm1
@@ -85,6 +96,7 @@ func0000000000000010:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000050:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$13, %xmm1, %xmm1
@@ -93,6 +105,7 @@ func0000000000000050:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000078:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$5, %xmm1, %xmm1

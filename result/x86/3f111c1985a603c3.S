@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b4:
 	vcmpnltsd	%xmm1, %xmm2, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -7,6 +8,7 @@ func00000000000000b4:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003c:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -16,6 +18,7 @@ func000000000000003c:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000cc:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2

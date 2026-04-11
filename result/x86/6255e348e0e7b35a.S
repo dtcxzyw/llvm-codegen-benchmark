@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	movzbl	%sil, %eax
 	shll	$8, %eax
@@ -6,12 +7,14 @@ func000000000000000f:
 	leal	50331648(%rax,%rcx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	leal	1073741824(%rcx,%rax,8), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
 	movzbl	%sil, %eax
 	shll	$16, %eax
@@ -19,6 +22,7 @@ func000000000000003f:
 	leal	16777728(%rax,%rcx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003e:
 	movzbl	%sil, %ecx
 	shll	$6, %ecx
@@ -27,6 +31,7 @@ func000000000000003e:
 	orl	$56320, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001e:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -34,6 +39,7 @@ func000000000000001e:
 	orl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002f:
 	movzbl	%sil, %eax
 	shll	$8, %eax

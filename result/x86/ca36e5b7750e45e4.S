@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	andl	%edx, %esi
 	andl	$1, %edi
 	leal	(%rsi,%rdi,8), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	testb	$1, %dl
 	movl	$1048576, %ecx

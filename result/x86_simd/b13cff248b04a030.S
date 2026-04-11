@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vpsrld	$1, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -8,6 +9,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f8:
 	vpsrld	$2, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -17,6 +19,7 @@ func00000000000000f8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c4:
 	vpsrld	$16, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -26,6 +29,7 @@ func00000000000000c4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000f4:
 	vpsrld	$11, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2

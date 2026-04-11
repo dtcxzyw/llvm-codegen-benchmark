@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a8c:
 	addq	%rdx, %rsi
 	sets	%cl
@@ -7,6 +8,7 @@ func0000000000000a8c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004a:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -16,6 +18,7 @@ func000000000000004a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000acc:
 	addq	%rdx, %rsi
 	sets	%cl
@@ -24,6 +27,7 @@ func0000000000000acc:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000150:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -33,6 +37,7 @@ func0000000000000150:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000202:
 	addq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -42,6 +47,7 @@ func0000000000000202:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000050:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -51,6 +57,7 @@ func0000000000000050:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000188:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -60,6 +67,7 @@ func0000000000000188:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000848:
 	addq	%rdx, %rsi
 	cmpq	$128, %rsi
@@ -69,6 +77,7 @@ func0000000000000848:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000042:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -78,6 +87,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000208:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -88,6 +98,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000128c:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -97,6 +108,7 @@ func000000000000128c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000210:
 	addq	%rdx, %rsi
 	movabsq	$1099511627776, %rax
@@ -107,6 +119,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000302:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
@@ -116,6 +129,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000001c2:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi

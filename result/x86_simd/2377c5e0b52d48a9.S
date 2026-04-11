@@ -5,6 +5,7 @@
 	.zero	16,1
 .LCPI0_2:
 	.byte	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovzxbw	%xmm1, %ymm1
 	vpmovzxbw	%xmm0, %ymm0

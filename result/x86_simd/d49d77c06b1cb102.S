@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2
 	vptestmb	%xmm1, %xmm1, %k1

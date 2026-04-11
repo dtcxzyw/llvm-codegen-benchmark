@@ -22,6 +22,7 @@
 	.long	4294967293
 .LCPI0_3:
 	.long	153
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000085:
 	vpcmpnleub	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1
@@ -51,6 +52,7 @@ func0000000000000085:
 	.long	4294967232
 .LCPI1_2:
 	.long	188
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000185:
 	vpcmpnleub	.LCPI1_0(%rip), %xmm1, %k1
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}

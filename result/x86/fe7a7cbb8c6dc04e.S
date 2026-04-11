@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	btq	$52, %rsi
 	setae	%cl
@@ -7,6 +8,7 @@ func000000000000002c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	cmpl	$1, %esi
 	setne	%cl
@@ -15,6 +17,7 @@ func0000000000000181:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	movq	%rsi, %rax
 	andl	$4, %eax
@@ -22,6 +25,7 @@ func000000000000018c:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	btq	$40, %rsi
 	setae	%cl

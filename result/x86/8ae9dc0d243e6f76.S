@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	movzwl	%dx, %eax
 	cmpl	$291, %eax
@@ -7,6 +8,7 @@ func0000000000000002:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	testw	%dx, %dx
 	setne	%al
@@ -14,6 +16,7 @@ func0000000000000018:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	cmpw	$32, %dx
 	setb	%al
@@ -21,6 +24,7 @@ func0000000000000008:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	cmpw	$13, %dx
 	setae	%al

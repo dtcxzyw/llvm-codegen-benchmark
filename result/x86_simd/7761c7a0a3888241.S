@@ -3,6 +3,7 @@
 	.long	2
 .LCPI0_1:
 	.long	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -12,6 +13,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000014a:
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -23,6 +25,7 @@ func000000000000014a:
 
 .LCPI2_0:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000146:
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -34,6 +37,7 @@ func0000000000000146:
 
 .LCPI3_0:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000020c6:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2
@@ -43,6 +47,7 @@ func00000000000020c6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000214a:
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -56,6 +61,7 @@ func000000000000214a:
 	.long	3
 .LCPI5_1:
 	.long	5
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -69,6 +75,7 @@ func000000000000002c:
 	.long	5
 .LCPI6_1:
 	.long	3
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000181:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -82,6 +89,7 @@ func0000000000000181:
 	.long	256
 .LCPI7_1:
 	.quad	4294967264
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	.LCPI7_0(%rip){1to4}, %xmm1, %k1
@@ -92,6 +100,7 @@ func0000000000000024:
 
 .LCPI8_0:
 	.long	5
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000084:
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -105,6 +114,7 @@ func0000000000000084:
 	.long	24
 .LCPI9_1:
 	.quad	4294967292
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000104:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpltud	.LCPI9_0(%rip){1to4}, %xmm0, %k1
@@ -115,6 +125,7 @@ func0000000000000104:
 
 .LCPI10_0:
 	.long	31
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000014c:
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -125,6 +136,7 @@ func000000000000014c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000018c:
 	vpmovqd	%ymm1, %xmm1
 	vptestmd	%xmm1, %xmm1, %k1

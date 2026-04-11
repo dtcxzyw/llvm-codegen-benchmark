@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	subq	%rdx, %rsi
 	cmpq	$21, %rsi
@@ -6,6 +7,7 @@ func0000000000000018:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	subq	%rdx, %rsi
 	cmpq	$1024, %rsi
@@ -13,6 +15,7 @@ func000000000000000c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -20,6 +23,7 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	subq	%rdx, %rsi
 	cmpq	$-2, %rsi
@@ -27,6 +31,7 @@ func0000000000000014:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	subq	%rdx, %rsi
 	cmpq	$40, %rsi
@@ -34,6 +39,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000010:
 	subq	%rdx, %rsi
 	cmpq	$65, %rsi
@@ -41,6 +47,7 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000030:
 	subq	%rdx, %rsi
 	cmpq	$5000000, %rsi
@@ -48,6 +55,7 @@ func0000000000000030:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000028:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi

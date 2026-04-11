@@ -5,6 +5,7 @@
 	.quad	0x3e35798ee2308c3a
 .LCPI0_2:
 	.quad	0x3cc0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vbroadcastsd	.LCPI0_0(%rip), %zmm2
 	vandpd	%zmm2, %zmm1, %zmm1
@@ -21,6 +22,7 @@ func0000000000000000:
 	.quad	0x0010000000000001
 .LCPI1_2:
 	.quad	0x3990000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vbroadcastsd	.LCPI1_0(%rip), %zmm2
 	vandpd	%zmm2, %zmm1, %zmm1

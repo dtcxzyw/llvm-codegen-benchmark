@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
@@ -44,6 +45,7 @@ func0000000000000000:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0

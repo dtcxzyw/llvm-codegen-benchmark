@@ -39,6 +39,7 @@
 	.long	1
 .LCPI0_4:
 	.zero	4,192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1

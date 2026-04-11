@@ -3,6 +3,7 @@
 	.quad	-21474836480
 .LCPI0_1:
 	.quad	34359738368
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovzxdq	%xmm0, %ymm0
 	vpternlogq	$248, .LCPI0_0(%rip){1to4}, %ymm1, %ymm0
@@ -29,6 +30,7 @@ func0000000000000001:
 	.byte	13
 	.byte	3
 	.byte	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpmovsxbd	.LCPI1_2(%rip), %ymm2
 	vpermi2d	%ymm1, %ymm0, %ymm2

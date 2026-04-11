@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004a:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -9,6 +10,7 @@ func000000000000004a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vaddps	%zmm2, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2

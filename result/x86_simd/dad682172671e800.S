@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004ca:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm0, %k1
@@ -11,6 +12,7 @@ func00000000000004ca:
 	.long	59
 .LCPI1_1:
 	.long	60
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	vpsubd	%ymm1, %ymm0, %ymm1
 	vpcmpgtd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
@@ -21,6 +23,7 @@ func000000000000008a:
 
 .LCPI2_0:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c8:
 	vpsubd	%ymm1, %ymm0, %ymm1
 	vpmovd2m	%ymm1, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vmulsd	.LCPI0_0(%rip), %xmm2, %xmm2
 	vminsd	%xmm1, %xmm2, %xmm1
@@ -10,6 +11,7 @@ func0000000000000043:
 
 .LCPI1_0:
 	.quad	0x4024000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vmulsd	.LCPI1_0(%rip), %xmm2, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1

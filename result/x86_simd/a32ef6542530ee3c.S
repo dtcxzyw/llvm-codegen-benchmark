@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulps	%zmm1, %zmm2, %zmm2
 	vmulps	%zmm1, %zmm0, %zmm0
 	vminps	%zmm2, %zmm0, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vmulps	%zmm1, %zmm2, %zmm2
 	vmulps	%zmm1, %zmm0, %zmm0
 	vmaxps	%zmm2, %zmm0, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vmulps	%zmm2, %zmm1, %zmm2
 	vmulps	%zmm1, %zmm0, %zmm0
@@ -19,6 +22,7 @@ func000000000000000a:
 	vmovaps	%zmm2, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vmulps	%zmm2, %zmm1, %zmm2
 	vmulps	%zmm1, %zmm0, %zmm0

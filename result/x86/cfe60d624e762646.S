@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x4b18967f
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testl	%edi, %edi
 	sete	%al

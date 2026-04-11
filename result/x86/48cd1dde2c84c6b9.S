@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000073:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -8,6 +9,7 @@ func0000000000000073:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -19,6 +21,7 @@ func000000000000002c:
 
 .LCPI2_0:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vcmpltss	%xmm1, %xmm0, %k0
@@ -27,6 +30,7 @@ func0000000000000024:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003d:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2

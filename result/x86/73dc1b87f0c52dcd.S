@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000006042:
 	testq	%rsi, %rsi
 	setne	%al
@@ -10,6 +11,7 @@ func0000000000006042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000842:
 	testq	%rsi, %rsi
 	sete	%al
@@ -21,6 +23,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000604c:
 	testl	%edi, %edi
 	setne	%al
@@ -32,6 +35,7 @@ func000000000000604c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000504c:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -42,6 +46,7 @@ func000000000000504c:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000854:
 	testq	%rsi, %rsi
 	sete	%cl

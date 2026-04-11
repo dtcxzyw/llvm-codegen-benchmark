@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -6,6 +7,7 @@ func0000000000000007:
 	subq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -13,6 +15,7 @@ func0000000000000003:
 	subq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	movq	%rsi, %rax
 	cmpq	%rsi, %rdi
@@ -20,6 +23,7 @@ func0000000000000001:
 	negq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	movq	%rsi, %rax
 	cmpq	%rsi, %rdi
@@ -27,6 +31,7 @@ func0000000000000005:
 	negq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	movq	%rsi, %rax
 	cmpq	%rsi, %rdi
@@ -34,6 +39,7 @@ func0000000000000000:
 	negq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	movq	%rsi, %rax
 	cmpq	%rsi, %rdi
@@ -41,6 +47,7 @@ func0000000000000004:
 	negq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000002:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi

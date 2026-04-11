@@ -5,6 +5,7 @@
 	.quad	576460752303423487
 .LCPI0_2:
 	.quad	9223372036854775792
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -13,6 +14,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -23,6 +25,7 @@ func000000000000018c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -35,6 +38,7 @@ func000000000000002c:
 
 .LCPI3_0:
 	.long	5
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000e94:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -58,6 +62,7 @@ func0000000000000e94:
 .LCPI4_1:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000d8c:
 	vpandd	.LCPI4_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
@@ -68,6 +73,7 @@ func0000000000000d8c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000181:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -80,6 +86,7 @@ func0000000000000181:
 
 .LCPI6_0:
 	.long	3
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000d08:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -93,6 +100,7 @@ func0000000000000d08:
 
 .LCPI7_0:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000c21:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -116,6 +124,7 @@ func0000000000000c21:
 .LCPI8_1:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000c2c:
 	vpandd	.LCPI8_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
@@ -140,6 +149,7 @@ func0000000000000c2c:
 .LCPI9_2:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000f0c:
 	vpandd	.LCPI9_2(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
@@ -150,6 +160,7 @@ func0000000000000f0c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000421:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
@@ -162,6 +173,7 @@ func0000000000000421:
 
 .LCPI11_0:
 	.long	3
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000c38:
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2

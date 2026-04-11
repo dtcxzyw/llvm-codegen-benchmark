@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000514:
 	movl	%esi, %eax
 	shrl	$2, %eax
@@ -9,6 +10,7 @@ func0000000000000514:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000a52:
 	movl	%esi, %eax
 	shrl	%eax
@@ -19,6 +21,7 @@ func0000000000000a52:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000252:
 	movl	%esi, %eax
 	shrl	%eax

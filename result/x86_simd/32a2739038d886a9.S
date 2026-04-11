@@ -3,6 +3,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000501:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -19,6 +20,7 @@ func0000000000000501:
 	.zero	4,1
 .LCPI1_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000401:
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI1_2(%rip){1to4}, %xmm0, %xmm1

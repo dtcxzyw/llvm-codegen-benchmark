@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x33800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	orl	%esi, %edi
 	vmovss	.LCPI0_0(%rip), %xmm1
@@ -11,6 +12,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	orl	%esi, %edi
 	vucomiss	.LCPI1_0(%rip), %xmm0
@@ -22,6 +24,7 @@ func0000000000000010:
 
 .LCPI2_0:
 	.long	0x430c0000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	orl	%esi, %edi
 	vucomiss	.LCPI2_0(%rip), %xmm0
@@ -29,6 +32,7 @@ func0000000000000016:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -39,6 +43,7 @@ func0000000000000008:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001c:
 	vucomiss	.LCPI4_0(%rip), %xmm0
 	setp	%cl
@@ -48,6 +53,7 @@ func000000000000001c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	orl	%esi, %edi
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -58,6 +64,7 @@ func0000000000000006:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000e:
 	orl	%esi, %edi
 	vucomiss	.LCPI6_0(%rip), %xmm0
@@ -67,6 +74,7 @@ func000000000000000e:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000020:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -79,6 +87,7 @@ func0000000000000020:
 
 .LCPI8_0:
 	.long	0x3f800347
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	vmovss	.LCPI8_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -89,6 +98,7 @@ func0000000000000014:
 
 .LCPI9_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000024:
 	vucomiss	.LCPI9_0(%rip), %xmm0
 	sete	%al
@@ -98,6 +108,7 @@ func0000000000000024:
 
 .LCPI10_0:
 	.long	0x43000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000018:
 	orl	%esi, %edi
 	vucomiss	.LCPI10_0(%rip), %xmm0
@@ -107,6 +118,7 @@ func0000000000000018:
 
 .LCPI11_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000a:
 	orl	%esi, %edi
 	vmovss	.LCPI11_0(%rip), %xmm1

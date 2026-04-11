@@ -29,6 +29,7 @@
 	.byte	4
 .LCPI0_3:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
 	vpternlogd	$40, .LCPI0_3(%rip){1to4}, %xmm0, %xmm1
@@ -66,6 +67,7 @@ func0000000000000001:
 	.byte	16
 .LCPI1_3:
 	.byte	3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm1, %xmm1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm2
@@ -104,6 +106,7 @@ func0000000000000018:
 	.byte	8
 .LCPI2_3:
 	.byte	3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm1, %xmm1
 	vpbroadcastb	.LCPI2_3(%rip), %xmm2
@@ -143,6 +146,7 @@ func0000000000000015:
 	.byte	8
 .LCPI3_3:
 	.zero	4,3
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vgf2p8affineqb	$0, .LCPI3_2(%rip){1to2}, %xmm1, %xmm1
 	vpternlogd	$40, .LCPI3_3(%rip){1to4}, %xmm0, %xmm1
@@ -180,6 +184,7 @@ func000000000000000c:
 	.byte	2
 .LCPI4_3:
 	.byte	63
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	vgf2p8affineqb	$0, .LCPI4_2(%rip){1to2}, %xmm1, %xmm1
 	vpbroadcastb	.LCPI4_3(%rip), %xmm2

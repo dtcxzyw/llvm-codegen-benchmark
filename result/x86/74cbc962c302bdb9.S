@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	orl	%edx, %esi
 	orl	%edi, %esi
@@ -7,6 +8,7 @@ func0000000000000001:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	orl	%edx, %esi
 	orl	%edi, %esi
@@ -16,6 +18,7 @@ func0000000000000064:
 	leaq	36(,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	orl	%edx, %esi
 	orl	%edi, %esi

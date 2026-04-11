@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000444:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%zmm1, %zmm3, %k1
@@ -8,6 +9,7 @@ func0000000000000444:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000888:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqps	%zmm3, %zmm1, %k1
@@ -19,6 +21,7 @@ func0000000000000888:
 
 .LCPI2_0:
 	.long	0x7e7fffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000222:
 	vbroadcastss	.LCPI2_0(%rip), %zmm3
 	vcmpltps	%zmm3, %zmm1, %k1
@@ -28,6 +31,7 @@ func0000000000000222:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000ccc:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpleps	%zmm1, %zmm3, %k1
@@ -37,6 +41,7 @@ func0000000000000ccc:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000555:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpnleps	%zmm3, %zmm1, %k1
@@ -48,6 +53,7 @@ func0000000000000555:
 
 .LCPI5_0:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000aaa:
 	vbroadcastss	.LCPI5_0(%rip), %zmm3
 	vcmpleps	%zmm3, %zmm1, %k1
@@ -59,6 +65,7 @@ func0000000000000aaa:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000777:
 	vbroadcastss	.LCPI6_0(%rip), %zmm3
 	vcmpneqps	%zmm3, %zmm1, %k1
@@ -70,6 +77,7 @@ func0000000000000777:
 
 .LCPI7_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000666:
 	vbroadcastss	.LCPI7_0(%rip), %zmm3
 	vcmpneq_oqps	%zmm3, %zmm1, %k1
@@ -81,6 +89,7 @@ func0000000000000666:
 
 .LCPI8_0:
 	.long	0x43b40000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000bbb:
 	vbroadcastss	.LCPI8_0(%rip), %zmm3
 	vcmpnltps	%zmm1, %zmm3, %k1
@@ -90,6 +99,7 @@ func0000000000000bbb:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000044c:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%zmm1, %zmm3, %k1
@@ -99,6 +109,7 @@ func000000000000044c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000cca:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpleps	%zmm1, %zmm3, %k1
@@ -112,6 +123,7 @@ func0000000000000cca:
 	.long	0x3f666666
 .LCPI11_1:
 	.long	0x3dcccccd
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000242:
 	vbroadcastss	.LCPI11_0(%rip), %zmm3
 	vcmpltps	%zmm3, %zmm2, %k1
@@ -123,6 +135,7 @@ func0000000000000242:
 
 .LCPI12_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000077e:
 	vbroadcastss	.LCPI12_0(%rip), %zmm3
 	vcmpneqps	%zmm3, %zmm1, %k1
@@ -133,6 +146,7 @@ func000000000000077e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000eee:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpordps	%zmm3, %zmm1, %k1
@@ -144,6 +158,7 @@ func0000000000000eee:
 
 .LCPI14_0:
 	.long	0x42c80000
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000008b8:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqps	%zmm3, %zmm2, %k1

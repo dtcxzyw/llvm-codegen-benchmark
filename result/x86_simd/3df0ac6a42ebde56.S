@@ -54,6 +54,7 @@
 	.long	72
 .LCPI0_4:
 	.byte	11
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm0, %k1 {%k1}

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3727c5ac
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vminps	%zmm1, %zmm0, %zmm0
 	vcmpltps	.LCPI0_0(%rip){1to16}, %zmm0, %k0
@@ -8,6 +9,7 @@ func0000000000000042:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000027:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -18,6 +20,7 @@ func0000000000000027:
 
 .LCPI2_0:
 	.long	0x0a4fb11f
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vcmpltps	.LCPI2_0(%rip){1to16}, %zmm0, %k0
@@ -27,6 +30,7 @@ func0000000000000022:
 
 .LCPI3_0:
 	.long	0x41200000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000044:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vcmpgtps	.LCPI3_0(%rip){1to16}, %zmm0, %k0
@@ -34,6 +38,7 @@ func0000000000000044:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	vminps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -42,6 +47,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000028:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -50,6 +56,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002e:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -58,6 +65,7 @@ func000000000000002e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	vminps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -66,6 +74,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	vminps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -74,6 +83,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000025:
 	vminps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -84,6 +94,7 @@ func0000000000000025:
 
 .LCPI10_0:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000002d:
 	vminps	%zmm1, %zmm0, %zmm0
 	vcmpnltps	.LCPI10_0(%rip){1to16}, %zmm0, %k0
@@ -91,6 +102,7 @@ func000000000000002d:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000023:
 	vminps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -101,6 +113,7 @@ func0000000000000023:
 
 .LCPI12_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000002a:
 	vminps	%zmm1, %zmm0, %zmm0
 	vcmpleps	.LCPI12_0(%rip){1to16}, %zmm0, %k0
@@ -108,6 +121,7 @@ func000000000000002a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000048:
 	vminps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -116,6 +130,7 @@ func0000000000000048:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000002b:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -124,6 +139,7 @@ func000000000000002b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000047:
 	vminps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -134,6 +150,7 @@ func0000000000000047:
 
 .LCPI16_0:
 	.long	0x3ba3d70a
+	.prefalign	4, .Lfunc_end16, nop
 func000000000000004a:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vcmpleps	.LCPI16_0(%rip){1to16}, %zmm0, %k0

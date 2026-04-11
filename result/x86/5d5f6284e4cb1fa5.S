@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
@@ -7,6 +8,7 @@ func0000000000000015:
 	leal	1(%rdi,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000085:
 	movabsq	$999999999999999999, %rax
 	xorl	%ecx, %ecx
@@ -16,6 +18,7 @@ func0000000000000085:
 	leal	18(%rdi,%rcx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001c:
 	negl	%edi
 	cmpq	$1, %rdx
@@ -23,6 +26,7 @@ func000000000000001c:
 	leal	6(%rsi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a0:
 	xorl	%eax, %eax
 	cmpq	$65536, %rdx
@@ -31,6 +35,7 @@ func00000000000000a0:
 	leal	7(%rdi,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000014f:
 	leal	13(%rsi), %eax
 	cmpq	$4096, %rdx
@@ -38,6 +43,7 @@ func000000000000014f:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001f:
 	leal	408(%rsi), %ecx
 	leal	8(%rsi), %eax
@@ -46,6 +52,7 @@ func000000000000001f:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000145:
 	negl	%esi
 	movabsq	$10000000000000000, %rax

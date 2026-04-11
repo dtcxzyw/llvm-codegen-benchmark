@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	testq	%rdi, %rdi
 	sets	%al
@@ -10,6 +11,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	testq	%rdi, %rdi
 	sete	%al
@@ -19,6 +21,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	cmpq	$8, %rdi
 	setb	%al

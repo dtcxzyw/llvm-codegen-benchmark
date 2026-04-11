@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	shlq	$4, %rsi
 	subq	%rsi, %rdi
@@ -7,6 +8,7 @@ func0000000000000001:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	shlq	$4, %rsi
 	subq	%rsi, %rdi
@@ -15,6 +17,7 @@ func0000000000000000:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	shlq	$4, %rsi
 	subq	%rsi, %rdi
@@ -23,6 +26,7 @@ func0000000000000003:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001c:
 	shlq	$6, %rsi
 	subq	%rsi, %rdi
@@ -31,6 +35,7 @@ func000000000000001c:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001e:
 	shlq	$6, %rsi
 	subq	%rsi, %rdi
@@ -39,6 +44,7 @@ func000000000000001e:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001a:
 	shlq	$6, %rsi
 	subq	%rsi, %rdi

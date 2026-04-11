@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fc47ae147ae147b
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vcvtps2pd	%ymm0, %zmm1
 	vextractf64x4	$1, %zmm0, %ymm0

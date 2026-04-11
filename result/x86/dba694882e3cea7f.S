@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000188:
 	shlq	$4, %rdx
 	cmpq	%rsi, %rdx
@@ -8,6 +9,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	shlq	$4, %rdx
 	cmpq	%rdi, %rdx
@@ -17,6 +19,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000546:
 	shlq	$2, %rdx
 	cmpq	%rdi, %rdx
@@ -26,6 +29,7 @@ func0000000000000546:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000004cc:
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx
@@ -35,6 +39,7 @@ func00000000000004cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000004ca:
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx
@@ -44,6 +49,7 @@ func00000000000004ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000012c:
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx

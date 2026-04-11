@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000187:
 	leaq	304(%rdx), %rax
 	cmpl	$3, %esi
@@ -6,6 +7,7 @@ func0000000000000187:
 	addq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	leaq	5(%rdx), %rax
 	testl	%esi, %esi
@@ -13,6 +15,7 @@ func0000000000000004:
 	addq	$17, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001ab:
 	leaq	48(%rdx), %rax
 	cmpl	$3, %esi
@@ -20,6 +23,7 @@ func00000000000001ab:
 	addq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000019b:
 	leaq	32(%rdx), %rax
 	testl	%esi, %esi
@@ -27,6 +31,7 @@ func000000000000019b:
 	addq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000184:
 	leaq	80(%rdx), %rax
 	cmpl	$3, %esi
@@ -34,6 +39,7 @@ func0000000000000184:
 	addq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000193:
 	leaq	4(%rdx), %rax
 	cmpl	$13, %esi
@@ -41,6 +47,7 @@ func0000000000000193:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000113:
 	leaq	-20(%rdx), %rax
 	cmpl	$13, %esi
@@ -48,6 +55,7 @@ func0000000000000113:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001b:
 	leaq	16(%rdx), %rax
 	cmpl	$3, %esi
@@ -55,6 +63,7 @@ func000000000000001b:
 	addq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000190:
 	leaq	4(%rdx), %rax
 	cmpl	$13, %esi
@@ -62,6 +71,7 @@ func0000000000000190:
 	addq	$2, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000198:
 	leaq	8(%rdx), %rax
 	testl	%esi, %esi
@@ -69,6 +79,7 @@ func0000000000000198:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000001a3:
 	leaq	232(%rdx), %rax
 	cmpl	$256, %esi
@@ -76,6 +87,7 @@ func00000000000001a3:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000001b3:
 	leaq	968(%rdx), %rax
 	testl	%esi, %esi
@@ -83,6 +95,7 @@ func00000000000001b3:
 	addq	$40, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000007:
 	leaq	-80(%rdx), %rax
 	testl	%esi, %esi

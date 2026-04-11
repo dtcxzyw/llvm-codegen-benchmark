@@ -3,6 +3,7 @@
 	.quad	0x3ff0000000000000
 .LCPI0_1:
 	.quad	0x3ff199999999999a
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	kmovd	%edi, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
@@ -13,6 +14,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x43e158e460913d00
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	kmovd	%edi, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
@@ -22,6 +24,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.quad	0x41dfffffffc00000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	kmovd	%edi, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
@@ -31,6 +34,7 @@ func000000000000000c:
 
 .LCPI3_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	kmovd	%edi, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
@@ -42,6 +46,7 @@ func0000000000000008:
 
 .LCPI4_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	kmovd	%edi, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}

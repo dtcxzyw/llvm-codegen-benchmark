@@ -44,6 +44,7 @@
 	.byte	2
 .LCPI0_3:
 	.zero	4,31
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm0

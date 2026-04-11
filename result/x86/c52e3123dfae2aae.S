@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	movabsq	$-9223372036854775805, %rax
 	cmpq	%rax, %rsi
@@ -8,6 +9,7 @@ func0000000000000021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	cmpq	$87, %rsi
 	setae	%cl
@@ -16,6 +18,7 @@ func0000000000000081:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c1:
 	testq	%rsi, %rsi
 	setns	%cl

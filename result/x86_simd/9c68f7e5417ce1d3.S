@@ -32,6 +32,7 @@
 	.byte	10
 	.byte	9
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	retq
@@ -111,6 +112,7 @@ func0000000000000000:
 	.byte	255
 	.byte	255
 	.byte	207
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpandq	.LCPI1_2(%rip){1to4}, %ymm0, %ymm0

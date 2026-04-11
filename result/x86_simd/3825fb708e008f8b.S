@@ -20,6 +20,7 @@
 	.long	10
 .LCPI0_2:
 	.long	65535
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000060a:
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -51,6 +52,7 @@ func000000000000060a:
 	.long	10
 .LCPI1_2:
 	.long	255
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003f8:
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -82,6 +84,7 @@ func00000000000003f8:
 	.long	10
 .LCPI2_2:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000601:
 	vpaddb	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -113,6 +116,7 @@ func0000000000000601:
 	.long	10
 .LCPI3_2:
 	.long	32
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000604:
 	vpaddb	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -144,6 +148,7 @@ func0000000000000604:
 	.long	10
 .LCPI4_2:
 	.long	63
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000608:
 	vpaddb	.LCPI4_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -173,6 +178,7 @@ func0000000000000608:
 	.zero	1
 .LCPI5_1:
 	.long	10
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000006ac:
 	vpaddb	.LCPI5_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -205,6 +211,7 @@ func00000000000006ac:
 	.long	10
 .LCPI6_2:
 	.long	127
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	vpaddb	.LCPI6_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -236,6 +243,7 @@ func0000000000000008:
 	.long	10
 .LCPI7_2:
 	.long	65535
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000668:
 	vpaddb	.LCPI7_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -267,6 +275,7 @@ func0000000000000668:
 	.long	10
 .LCPI8_2:
 	.long	1000
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000006aa:
 	vpaddb	.LCPI8_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -296,6 +305,7 @@ func00000000000006aa:
 	.zero	1
 .LCPI9_1:
 	.long	10
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000006a6:
 	vpaddb	.LCPI9_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -325,6 +335,7 @@ func00000000000006a6:
 	.zero	1
 .LCPI10_1:
 	.long	10
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000060c:
 	vpaddb	.LCPI10_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1

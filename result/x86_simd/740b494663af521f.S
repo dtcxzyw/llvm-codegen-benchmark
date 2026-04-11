@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,128
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpxord	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxbd	%xmm2, %ymm2

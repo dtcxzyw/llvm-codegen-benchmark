@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000b02:
 	cmpb	$47, %dil
 	sete	%al
@@ -10,6 +11,7 @@ func0000000000000b02:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000002114:
 	cmpl	$10, %esi
 	setb	%al
@@ -21,6 +23,7 @@ func0000000000002114:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000842:
 	cmpb	$92, %dil
 	sete	%al
@@ -32,6 +35,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000a02:
 	cmpb	$92, %dil
 	sete	%al

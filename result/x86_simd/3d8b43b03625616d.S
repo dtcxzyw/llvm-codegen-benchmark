@@ -18,6 +18,7 @@
 	.byte	0
 .LCPI0_1:
 	.quad	19
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d3:
 	vpaddb	%xmm0, %xmm0, %xmm0
 	vpminub	.LCPI0_0(%rip), %xmm0, %xmm0

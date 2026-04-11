@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm2, %k1
@@ -52,6 +53,7 @@ func0000000000000001:
 	.long	6
 .LCPI1_1:
 	.long	512
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3
 	vpand	%ymm3, %ymm2, %ymm2

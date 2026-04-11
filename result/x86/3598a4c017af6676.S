@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000098a:
 	sarq	$4, %rdx
 	cmpq	%rdi, %rdx
@@ -8,6 +9,7 @@ func000000000000098a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000094c:
 	sarq	$3, %rdx
 	cmpq	%rsi, %rdx
@@ -17,6 +19,7 @@ func000000000000094c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000009cc:
 	sarq	$2, %rdx
 	cmpq	%rsi, %rdx
@@ -26,6 +29,7 @@ func00000000000009cc:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000842:
 	sarq	$2, %rdx
 	cmpq	%rsi, %rdx

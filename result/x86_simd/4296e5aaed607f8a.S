@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	vpmaxsd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -13,6 +14,7 @@ func0000000000000081:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpmaxsd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -25,6 +27,7 @@ func0000000000000061:
 
 .LCPI2_0:
 	.long	3
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e1:
 	vpmaxsd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -39,6 +42,7 @@ func00000000000000e1:
 	.long	2
 .LCPI3_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000006a:
 	vpmaxsd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	.LCPI3_1(%rip){1to4}, %xmm1, %xmm1
@@ -50,6 +54,7 @@ func000000000000006a:
 
 .LCPI4_0:
 	.long	6
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	vpmaxsd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -60,6 +65,7 @@ func0000000000000181:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm1
@@ -72,6 +78,7 @@ func0000000000000001:
 
 .LCPI6_0:
 	.long	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000064:
 	vpmaxsd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -86,6 +93,7 @@ func0000000000000064:
 	.long	65535
 .LCPI7_1:
 	.long	4294901761
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000066:
 	vpmaxsd	.LCPI7_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	.LCPI7_1(%rip){1to4}, %xmm1, %xmm1
@@ -95,6 +103,7 @@ func0000000000000066:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001e4:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm1
@@ -106,6 +115,7 @@ func00000000000001e4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001e8:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm1
@@ -117,6 +127,7 @@ func00000000000001e8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000001e1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm1
@@ -130,6 +141,7 @@ func00000000000001e1:
 
 .LCPI11_0:
 	.long	211
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000161:
 	vpmaxsd	.LCPI11_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -142,6 +154,7 @@ func0000000000000161:
 
 .LCPI12_0:
 	.long	1
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000068:
 	vpmaxsd	.LCPI12_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

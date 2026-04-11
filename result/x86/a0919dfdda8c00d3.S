@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vaddss	%xmm1, %xmm0, %xmm1
 	kmovd	%edi, %k1

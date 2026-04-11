@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovqb	%ymm1, %xmm1
 	vpcmpltub	.LCPI0_0(%rip), %xmm0, %k1

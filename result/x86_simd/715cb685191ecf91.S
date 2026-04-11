@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4096
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000721:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2
@@ -16,6 +17,7 @@ func0000000000000721:
 
 .LCPI1_0:
 	.long	4096
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000007e1:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2
@@ -29,6 +31,7 @@ func00000000000007e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000007ac:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2
@@ -43,6 +46,7 @@ func00000000000007ac:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000007a1:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2
@@ -56,6 +60,7 @@ func00000000000007a1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000072c:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm2

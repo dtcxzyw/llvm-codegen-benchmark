@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	(,%rdi,8), %eax
 	sarb	$7, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movl	%edi, %eax
 	shlb	$5, %al

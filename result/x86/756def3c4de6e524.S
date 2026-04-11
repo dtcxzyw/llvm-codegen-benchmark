@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	addb	$-33, %dil
 	cmpb	$94, %dil
@@ -7,6 +8,7 @@ func0000000000000004:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	decb	%dil
 	xorl	%ecx, %ecx
@@ -15,6 +17,7 @@ func0000000000000024:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
 	addb	$-113, %dil
 	xorl	%eax, %eax
@@ -23,6 +26,7 @@ func0000000000000034:
 	leaq	3(%rax,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	andb	$-8, %dil
 	movabsq	$922337203685477579, %rcx
@@ -31,6 +35,7 @@ func0000000000000038:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	addb	$-3, %dil
 	xorl	%eax, %eax

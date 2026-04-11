@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -7,6 +8,7 @@ func0000000000000081:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpsrlq	$12, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -19,6 +21,7 @@ func0000000000000001:
 	.long	333332
 .LCPI2_1:
 	.long	1000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008a:
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -29,6 +32,7 @@ func000000000000008a:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000004a:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1

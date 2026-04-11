@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x41200000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vmulss	.LCPI0_0(%rip), %xmm1, %xmm1
 	vmulss	%xmm1, %xmm1, %xmm1
@@ -8,6 +9,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vaddss	%xmm1, %xmm1, %xmm1
 	vmulss	%xmm1, %xmm1, %xmm1
@@ -17,6 +19,7 @@ func000000000000000a:
 
 .LCPI2_0:
 	.long	0x3e800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vmulss	.LCPI2_0(%rip), %xmm1, %xmm1
 	vmulss	%xmm1, %xmm1, %xmm1
@@ -26,6 +29,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.long	0x40100000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vmulss	.LCPI3_0(%rip), %xmm1, %xmm1
 	vmulss	%xmm1, %xmm1, %xmm1
@@ -33,6 +37,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vaddss	%xmm1, %xmm1, %xmm1
 	vmulss	%xmm1, %xmm1, %xmm1

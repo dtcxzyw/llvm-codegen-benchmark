@@ -42,6 +42,7 @@
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e7:
 	vpmovzxbw	%xmm1, %ymm1
 	vpmullw	.LCPI0_0(%rip), %ymm1, %ymm1
@@ -99,6 +100,7 @@ func00000000000000e7:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ea:
 	vpmovzxbw	%xmm1, %ymm1
 	vpmullw	.LCPI1_0(%rip), %ymm1, %ymm1
@@ -156,6 +158,7 @@ func00000000000000ea:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e1:
 	vpmovzxbw	%xmm1, %ymm1
 	vpmullw	.LCPI2_0(%rip), %ymm1, %ymm1

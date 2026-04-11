@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000ccc:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -8,6 +9,7 @@ func0000000000000ccc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000884:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -17,6 +19,7 @@ func0000000000000884:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000d8a:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -26,6 +29,7 @@ func0000000000000d8a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000e8c:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -35,6 +39,7 @@ func0000000000000e8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000004ca:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -44,6 +49,7 @@ func00000000000004ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000054a:
 	decl	%edx
 	cmpl	%esi, %edx
@@ -53,6 +59,7 @@ func000000000000054a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000f04:
 	addl	$48, %edx
 	cmpl	%esi, %edx
@@ -62,6 +69,7 @@ func0000000000000f04:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000cc1:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -71,6 +79,7 @@ func0000000000000cc1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000421:
 	incl	%edx
 	xorl	%esi, %edx
@@ -79,6 +88,7 @@ func0000000000000421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000004ea:
 	decl	%edx
 	cmpl	%esi, %edx
@@ -88,6 +98,7 @@ func00000000000004ea:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000004cc:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -97,6 +108,7 @@ func00000000000004cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000008c:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -106,6 +118,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000981:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -115,6 +128,7 @@ func0000000000000981:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000894:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -124,6 +138,7 @@ func0000000000000894:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000c2c:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -133,6 +148,7 @@ func0000000000000c2c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000d94:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -142,6 +158,7 @@ func0000000000000d94:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000004c1:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -151,6 +168,7 @@ func00000000000004c1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000e81:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -160,6 +178,7 @@ func0000000000000e81:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000141:
 	addl	$10, %edx
 	cmpl	%esi, %edx
@@ -169,6 +188,7 @@ func0000000000000141:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000e88:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -178,6 +198,7 @@ func0000000000000e88:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func00000000000000c1:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -187,6 +208,7 @@ func00000000000000c1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000581:
 	decl	%edx
 	cmpl	%esi, %edx
@@ -196,6 +218,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func000000000000054c:
 	decl	%edx
 	cmpl	%esi, %edx
@@ -205,6 +228,7 @@ func000000000000054c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000e8a:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -214,6 +238,7 @@ func0000000000000e8a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func000000000000088a:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -223,6 +248,7 @@ func000000000000088a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func000000000000042c:
 	decl	%edx
 	cmpl	%esi, %edx
@@ -232,6 +258,7 @@ func000000000000042c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end26, nop
 func0000000000000ca4:
 	addl	$4, %edx
 	cmpl	%esi, %edx
@@ -241,6 +268,7 @@ func0000000000000ca4:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end27, nop
 func0000000000000cea:
 	addl	$2, %edx
 	cmpl	%esi, %edx
@@ -250,6 +278,7 @@ func0000000000000cea:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end28, nop
 func0000000000000104:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -259,6 +288,7 @@ func0000000000000104:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end29, nop
 func0000000000000d81:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -268,6 +298,7 @@ func0000000000000d81:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end30, nop
 func0000000000000d8c:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -277,6 +308,7 @@ func0000000000000d8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end31, nop
 func00000000000000a1:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -286,6 +318,7 @@ func00000000000000a1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end32, nop
 func000000000000008a:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -295,6 +328,7 @@ func000000000000008a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end33, nop
 func000000000000098c:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -304,6 +338,7 @@ func000000000000098c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end34, nop
 func0000000000000021:
 	decl	%edx
 	xorl	%esi, %edx
@@ -311,6 +346,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end35, nop
 func0000000000000081:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -320,6 +356,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end36, nop
 func000000000000088c:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -329,6 +366,7 @@ func000000000000088c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end37, nop
 func00000000000004c4:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -338,6 +376,7 @@ func00000000000004c4:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end38, nop
 func0000000000000886:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -347,6 +386,7 @@ func0000000000000886:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end39, nop
 func0000000000000c21:
 	incl	%edx
 	xorl	%esi, %edx
@@ -355,6 +395,7 @@ func0000000000000c21:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end40, nop
 func0000000000000cca:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -364,6 +405,7 @@ func0000000000000cca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end41, nop
 func0000000000000881:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -373,6 +415,7 @@ func0000000000000881:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end42, nop
 func0000000000000cc6:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -382,6 +425,7 @@ func0000000000000cc6:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end43, nop
 func0000000000000d6c:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -391,6 +435,7 @@ func0000000000000d6c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end44, nop
 func0000000000000cc8:
 	incl	%edx
 	cmpl	%esi, %edx
@@ -400,6 +445,7 @@ func0000000000000cc8:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end45, nop
 func0000000000000d84:
 	incl	%edx
 	cmpl	%esi, %edx

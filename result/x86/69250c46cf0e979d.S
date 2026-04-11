@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000025:
 	leal	-261663(%rsi), %eax
 	sarl	$21, %eax

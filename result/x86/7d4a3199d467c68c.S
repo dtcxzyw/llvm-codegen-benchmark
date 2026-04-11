@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	movq	%rdi, %rcx
 	shrq	$32, %rcx
@@ -7,6 +8,7 @@ func0000000000000041:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movl	%edi, %ecx
 	notl	%ecx

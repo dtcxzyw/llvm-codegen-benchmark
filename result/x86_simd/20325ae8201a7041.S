@@ -39,6 +39,7 @@
 	.quad	134
 .LCPI0_4:
 	.quad	135
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k2

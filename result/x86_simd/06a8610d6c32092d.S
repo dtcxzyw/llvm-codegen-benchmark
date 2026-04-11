@@ -16,6 +16,7 @@
 	.short	65533
 	.short	65533
 	.short	65533
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpaddw	%ymm1, %ymm1, %ymm1
 	vpaddw	%ymm0, %ymm1, %ymm0
@@ -58,6 +59,7 @@ func0000000000000001:
 	.short	64512
 	.short	64512
 	.short	64512
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsllw	$4, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

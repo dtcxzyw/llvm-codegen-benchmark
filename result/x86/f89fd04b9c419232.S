@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vandps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vmaxss	%xmm1, %xmm0, %xmm0
@@ -8,6 +9,7 @@ func0000000000000012:
 
 .LCPI1_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vandps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vmaxss	%xmm1, %xmm0, %xmm0
@@ -15,6 +17,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vandps	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vminss	%xmm1, %xmm0, %xmm0
@@ -22,6 +25,7 @@ func0000000000000014:
 
 .LCPI3_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
 	vandps	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vcmpless	%xmm0, %xmm1, %k1

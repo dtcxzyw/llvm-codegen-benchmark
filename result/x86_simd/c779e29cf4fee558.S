@@ -37,6 +37,7 @@
 	.zero	4,4
 .LCPI0_3:
 	.zero	4,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000059:
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm2
 	vptestnmd	%ymm1, %ymm1, %k1
@@ -85,6 +86,7 @@ func0000000000000059:
 	.zero	4,64
 .LCPI1_4:
 	.zero	4,4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpord	.LCPI1_3(%rip){1to4}, %xmm0, %xmm2
 	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm1, %k1

@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	4294967296
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000187:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,47
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k1
 	vmovdqu8	%xmm1, %xmm1 {%k1} {z}
@@ -9,6 +10,7 @@ func0000000000000021:
 
 .LCPI1_0:
 	.zero	16,47
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpcmpneqb	.LCPI1_0(%rip), %xmm1, %k1
 	vmovdqu8	%xmm1, %xmm1 {%k1} {z}
@@ -18,6 +20,7 @@ func0000000000000024:
 
 .LCPI2_0:
 	.zero	16,47
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vpcmpneqb	.LCPI2_0(%rip), %xmm1, %k1
 	vmovdqu8	%xmm1, %xmm1 {%k1} {z}
@@ -26,6 +29,7 @@ func0000000000000026:
 
 .LCPI3_0:
 	.zero	16,47
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpcmpneqb	.LCPI3_0(%rip), %xmm1, %k1
 	vmovdqu8	%xmm1, %xmm1 {%k1} {z}

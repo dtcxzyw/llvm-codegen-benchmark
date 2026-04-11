@@ -10,6 +10,7 @@
 	.short	256
 .LCPI0_1:
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
 	vpmovdw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

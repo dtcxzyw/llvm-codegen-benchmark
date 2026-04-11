@@ -3,6 +3,7 @@
 	.long	7
 .LCPI0_1:
 	.long	131064
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpmovzxwd	%xmm0, %xmm0
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -22,6 +23,7 @@ func0000000000000007:
 .LCPI1_1:
 	.short	511
 	.short	511
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddw	%xmm1, %xmm0, %xmm0

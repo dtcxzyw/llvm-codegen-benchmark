@@ -20,6 +20,7 @@
 	.long	1
 .LCPI0_2:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vbroadcastss	.LCPI0_1(%rip), %ymm0

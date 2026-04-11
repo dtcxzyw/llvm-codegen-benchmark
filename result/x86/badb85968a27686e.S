@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	decl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm2
@@ -6,6 +7,7 @@ func0000000000000001:
 	vdivss	%xmm2, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	addl	$8, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm2

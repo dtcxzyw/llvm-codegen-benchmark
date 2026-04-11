@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
 	imull	%edx, %esi
 	testl	%esi, %esi
@@ -8,6 +9,7 @@ func000000000000014a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000581:
 	imull	%edx, %esi
 	cmpl	$1, %esi
@@ -17,6 +19,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000054a:
 	imull	%edx, %esi
 	testl	%esi, %esi
@@ -26,6 +29,7 @@ func000000000000054a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000014c:
 	imull	%edx, %esi
 	testl	%esi, %esi
@@ -35,6 +39,7 @@ func000000000000014c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000541:
 	imull	%edx, %esi
 	cmpl	$2, %esi
@@ -44,6 +49,7 @@ func0000000000000541:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000004c1:
 	imull	%edx, %esi
 	cmpl	$257, %esi
@@ -53,6 +59,7 @@ func00000000000004c1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000004c6:
 	movl	%esi, %eax
 	imull	%edx, %eax

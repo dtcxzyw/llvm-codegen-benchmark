@@ -5,6 +5,7 @@
 	.zero	16,191
 .LCPI0_2:
 	.zero	16,6
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000504:
 	vpcmpgtb	.LCPI0_0(%rip), %xmm1, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
@@ -17,6 +18,7 @@ func0000000000000504:
 	.zero	16,93
 .LCPI1_1:
 	.zero	16,31
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000401:
 	vpcmpnleub	.LCPI1_0(%rip), %xmm1, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
@@ -29,6 +31,7 @@ func0000000000000401:
 	.zero	16,167
 .LCPI2_2:
 	.zero	16,5
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000404:
 	vpcmpnleub	.LCPI2_0(%rip), %xmm1, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3
@@ -9,6 +10,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vcvtpd2ps	%zmm2, %ymm2
 	vcvtpd2ps	%zmm3, %ymm3

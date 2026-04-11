@@ -8,6 +8,7 @@
 	.short	2622
 	.short	2622
 	.short	2622
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vpmovdw	%ymm2, %xmm2
 	vpsrlw	$4, %xmm2, %xmm2
@@ -26,6 +27,7 @@ func0000000000000015:
 	.short	2622
 	.short	2622
 	.short	2622
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpmovdw	%ymm2, %xmm2
 	vpsrlw	$4, %xmm2, %xmm2
@@ -44,6 +46,7 @@ func0000000000000010:
 	.short	2622
 	.short	2622
 	.short	2622
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpmovdw	%ymm2, %xmm2
 	vpsrlw	$4, %xmm2, %xmm2

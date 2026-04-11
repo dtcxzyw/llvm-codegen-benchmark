@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpmovdb	%ymm1, %xmm1
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -24,6 +25,7 @@ func0000000000000061:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovdb	%ymm1, %xmm1
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -52,6 +54,7 @@ func0000000000000001:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000054:
 	vpmovdb	%ymm1, %xmm1
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
@@ -60,6 +63,7 @@ func0000000000000054:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000046:
 	vpmovdb	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -87,6 +91,7 @@ func0000000000000046:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000066:
 	vpmovdb	%ymm1, %xmm1
 	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
@@ -95,6 +100,7 @@ func0000000000000066:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpmovdb	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -120,6 +126,7 @@ func0000000000000006:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
 	vpmovdb	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -148,6 +155,7 @@ func000000000000002a:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	vpmovdb	%ymm1, %xmm1
 	vpcmpgtd	.LCPI7_0(%rip){1to8}, %ymm0, %k1
@@ -156,6 +164,7 @@ func000000000000000a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000041:
 	vpmovdb	%ymm1, %xmm1
 	vptestmd	%ymm0, %ymm0, %k1
@@ -165,6 +174,7 @@ func0000000000000041:
 
 .LCPI9_0:
 	.long	7
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	vpmovdb	%ymm1, %xmm1
 	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm0, %k1
@@ -176,6 +186,7 @@ func0000000000000008:
 
 .LCPI10_0:
 	.long	7
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000004a:
 	vpmovdb	%ymm1, %xmm1
 	vpcmpgtd	.LCPI10_0(%rip){1to8}, %ymm0, %k1
@@ -204,6 +215,7 @@ func000000000000004a:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000018:
 	vpmovdb	%ymm1, %xmm1
 	vpcmpnleud	.LCPI11_0(%rip){1to8}, %ymm0, %k1

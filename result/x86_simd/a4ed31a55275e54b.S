@@ -21,6 +21,7 @@
 	.long	28
 .LCPI0_3:
 	.long	29
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpshrdw	$4, %xmm0, %xmm0, %xmm0

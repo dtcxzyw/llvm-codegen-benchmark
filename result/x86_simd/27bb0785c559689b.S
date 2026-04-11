@@ -21,6 +21,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpmovzxwd	%xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -30,6 +31,7 @@ func0000000000000005:
 
 .LCPI1_0:
 	.long	63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpmovzxwd	%xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -59,6 +61,7 @@ func0000000000000007:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmovzxwd	%xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001ca:
 	movl	%edi, %ecx
 	shll	$24, %ecx

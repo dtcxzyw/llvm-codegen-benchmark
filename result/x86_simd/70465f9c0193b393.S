@@ -8,6 +8,7 @@
 	.short	18725
 	.short	18725
 	.short	18725
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -18,6 +19,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

@@ -16,6 +16,7 @@
 	.short	49
 	.short	49
 	.short	49
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -26,6 +27,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1

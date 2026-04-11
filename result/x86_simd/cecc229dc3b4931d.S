@@ -17,6 +17,7 @@
 	.short	2114
 	.short	2114
 	.short	2114
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003c1:
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0

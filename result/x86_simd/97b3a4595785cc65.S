@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpmovqb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -23,6 +24,7 @@ func0000000000000008:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm0
@@ -46,6 +48,7 @@ func0000000000000000:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
@@ -69,6 +72,7 @@ func0000000000000001:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
@@ -92,6 +96,7 @@ func000000000000000b:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
@@ -115,6 +120,7 @@ func000000000000000f:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000003:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI5_0(%rip), %xmm0, %xmm0
@@ -138,6 +144,7 @@ func0000000000000003:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI6_0(%rip), %xmm0, %xmm0
@@ -161,6 +168,7 @@ func000000000000000d:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000009:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI7_0(%rip), %xmm0, %xmm0
@@ -184,6 +192,7 @@ func0000000000000009:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000005:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI8_0(%rip), %xmm0, %xmm0
@@ -207,6 +216,7 @@ func0000000000000005:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000002:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI9_0(%rip), %xmm0, %xmm0
@@ -230,12 +240,14 @@ func0000000000000002:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000e:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI10_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000a:
 	vpmovqb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

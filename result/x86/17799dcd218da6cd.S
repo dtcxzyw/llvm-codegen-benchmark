@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
@@ -10,6 +11,7 @@ func00000000000000ca:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
@@ -21,6 +23,7 @@ func0000000000000022:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000bd:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
@@ -32,6 +35,7 @@ func00000000000000bd:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
@@ -43,6 +47,7 @@ func0000000000000042:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	xorl	%eax, %eax
 	vucomisd	%xmm0, %xmm1
@@ -54,6 +59,7 @@ func0000000000000024:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000004c:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -64,6 +70,7 @@ func000000000000004c:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -74,6 +81,7 @@ func000000000000002a:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000b3:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -84,6 +92,7 @@ func00000000000000b3:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000d5:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx

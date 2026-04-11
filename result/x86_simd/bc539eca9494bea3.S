@@ -85,6 +85,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpmovsxbw	%xmm0, %ymm1

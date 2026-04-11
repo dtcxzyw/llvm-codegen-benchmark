@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c7:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	xorl	%eax, %eax
@@ -9,6 +10,7 @@ func00000000000000c7:
 	cmovnpl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	xorl	%eax, %eax
@@ -18,6 +20,7 @@ func0000000000000044:
 	cmovbel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm1

@@ -63,6 +63,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000009b:
 	vpmovd2m	%ymm0, %k1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}

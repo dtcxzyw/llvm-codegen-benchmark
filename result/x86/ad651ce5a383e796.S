@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	shrq	$16, %rsi
 	cmpq	$20, %rsi
@@ -9,6 +10,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e1:
 	shrq	$3, %rsi
 	cmpq	$10, %rsi

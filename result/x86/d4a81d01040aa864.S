@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	orb	$8, %sil
 	testb	%dil, %dil
@@ -7,6 +8,7 @@ func0000000000000021:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	orb	$32, %sil
 	cmpb	$26, %dil
@@ -15,6 +17,7 @@ func0000000000000004:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	orb	$4, %sil
 	xorl	%ecx, %ecx
@@ -23,6 +26,7 @@ func000000000000002c:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	orb	$48, %sil
 	cmpb	$-96, %dil
@@ -31,6 +35,7 @@ func0000000000000024:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	orb	$8, %sil
 	cmpb	$9, %dil

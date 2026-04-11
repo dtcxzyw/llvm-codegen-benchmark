@@ -3,6 +3,7 @@
 	.quad	-2147483648
 .LCPI0_1:
 	.quad	-4294967296
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	vpmovzxdq	%xmm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
@@ -17,6 +18,7 @@ func00000000000000a4:
 	.quad	-1152921504606846977
 .LCPI1_1:
 	.quad	-1152921504606846976
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a8:
 	vpmovzxdq	%xmm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
@@ -27,6 +29,7 @@ func00000000000000a8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a1:
 	vpmovzxdq	%xmm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0

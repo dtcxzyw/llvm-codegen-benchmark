@@ -3,6 +3,7 @@
 	.quad	0x3d59fef311f12b36
 .LCPI0_1:
 	.quad	0x3fdbcb7b1526e50e
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1

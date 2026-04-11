@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpmovdb	%ymm1, %xmm1
@@ -44,6 +45,7 @@ func0000000000000006:
 	.zero	1
 .LCPI1_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpmovdb	%ymm1, %xmm1
@@ -70,6 +72,7 @@ func000000000000000f:
 	.zero	1
 .LCPI2_1:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpmovdb	%ymm1, %xmm1

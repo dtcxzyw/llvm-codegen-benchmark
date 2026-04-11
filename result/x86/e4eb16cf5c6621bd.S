@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000058a:
 	leal	3(%rdi), %eax
 	cmpq	%rdx, %rsi
@@ -7,6 +8,7 @@ func000000000000058a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000004ca:
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi

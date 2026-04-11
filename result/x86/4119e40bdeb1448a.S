@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f4:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -7,6 +8,7 @@ func00000000000000f4:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ec:
 	shlq	$24, %rdx
 	orq	%rsi, %rdx

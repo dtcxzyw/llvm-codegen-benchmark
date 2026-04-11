@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	addl	$65534, %edi
 	movl	$2147516417, %eax
@@ -8,6 +9,7 @@ func0000000000000003:
 	leal	(%rax,%rax,4), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	addl	$2, %edi
 	movl	$3593175255, %eax
@@ -16,6 +18,7 @@ func0000000000000002:
 	imull	$153, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	addl	$11, %edi
 	movl	$2863311531, %eax
@@ -28,6 +31,7 @@ func0000000000000011:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	addl	$2, %edi
 	imulq	$718635051, %rdi, %rax
@@ -35,6 +39,7 @@ func0000000000000000:
 	imull	$65524, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000019:
 	addl	$11, %edi
 	movl	$2863311531, %eax
@@ -47,6 +52,7 @@ func0000000000000019:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000009:
 	addl	$-146097, %edi
 	imulq	$963315389, %rdi, %rax
@@ -57,6 +63,7 @@ func0000000000000009:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000b:
 	addl	$-146097, %edi
 	imulq	$963315389, %rdi, %rax
@@ -64,6 +71,7 @@ func000000000000000b:
 	imull	$400, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001b:
 	addl	$99, %edi
 	imulq	$1374389535, %rdi, %rax
@@ -71,6 +79,7 @@ func000000000000001b:
 	imull	$100, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	addl	$-128, %edi
 	movl	$3435973837, %eax

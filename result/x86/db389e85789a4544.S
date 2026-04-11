@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -8,6 +9,7 @@ func0000000000000001:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -17,6 +19,7 @@ func0000000000000006:
 	cmovsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -26,6 +29,7 @@ func0000000000000008:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	cmpl	$1055, %esi
 	setae	%al
@@ -35,6 +39,7 @@ func0000000000000018:
 	shll	$4, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	cmpl	$2, %esi
 	setge	%al

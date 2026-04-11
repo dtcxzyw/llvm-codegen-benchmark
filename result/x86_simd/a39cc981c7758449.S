@@ -3,6 +3,7 @@
 	.long	4294967166
 .LCPI0_1:
 	.long	4294967040
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -14,6 +15,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	21
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -24,6 +26,7 @@ func0000000000000084:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000086:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -34,6 +37,7 @@ func0000000000000086:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000206:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -48,6 +52,7 @@ func0000000000000206:
 	.long	4294967288
 .LCPI4_1:
 	.long	16
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000404:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -59,6 +64,7 @@ func0000000000000404:
 
 .LCPI5_0:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000601:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -67,6 +73,7 @@ func0000000000000601:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -79,6 +86,7 @@ func0000000000000006:
 
 .LCPI7_0:
 	.long	3
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -93,6 +101,7 @@ func000000000000000a:
 	.long	4294966949
 .LCPI8_1:
 	.long	4294966783
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -102,6 +111,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -110,6 +120,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a1:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -122,6 +133,7 @@ func00000000000000a1:
 	.long	4294967032
 .LCPI11_1:
 	.long	4294967031
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000a8:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

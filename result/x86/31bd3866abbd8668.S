@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000030a:
 	leal	3(%rdi), %eax
 	testl	%edi, %edi
@@ -8,6 +9,7 @@ func000000000000030a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	leal	7(%rdi), %eax
 	testl	%edi, %edi

@@ -7,6 +7,7 @@
 	.quad	3
 .LCPI0_3:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -23,6 +24,7 @@ func0000000000000041:
 	.quad	-1220
 .LCPI1_3:
 	.quad	-1219
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpsrlvd	%xmm1, %xmm0, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	andl	$32, %esi
 	leal	(,%rsi,4), %ecx
@@ -8,6 +9,7 @@ func0000000000000003:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	movabsq	$281474976645120, %rcx
 	addq	$65536, %rcx

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	notq	%rdx
 	leaq	(%rdi,%rsi,8), %rax
 	leaq	(%rax,%rdx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	notq	%rdx
 	leaq	(%rsi,%rsi,4), %rcx
@@ -15,12 +17,14 @@ func000000000000000a:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	notq	%rdx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	xorq	$4, %rdx
 	leaq	(%rsi,%rsi,2), %rax
@@ -28,12 +32,14 @@ func000000000000000b:
 	addq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000e:
 	notq	%rdx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000003:
 	xorq	$3, %rdx
 	leaq	(%rdi,%rsi,8), %rax

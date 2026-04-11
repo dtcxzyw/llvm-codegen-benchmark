@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002f:
 	movzbl	%dl, %ecx
 	shll	$8, %ecx
@@ -7,6 +8,7 @@ func000000000000002f:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	movzbl	%dl, %ecx
 	shll	$8, %ecx
@@ -15,6 +17,7 @@ func000000000000003f:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003d:
 	movzbl	%dl, %eax
 	shll	$8, %eax
@@ -23,6 +26,7 @@ func000000000000003d:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	movzbl	%dl, %eax
 	shll	$8, %eax
@@ -31,6 +35,7 @@ func000000000000000d:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000003b:
 	shll	$24, %edx
 	shll	$16, %esi
@@ -38,6 +43,7 @@ func000000000000003b:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000006f:
 	shll	$8, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -46,6 +52,7 @@ func000000000000006f:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000006d:
 	shll	$16, %edx
 	leal	(%rdx,%rdi), %eax
@@ -53,6 +60,7 @@ func000000000000006d:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000007f:
 	shll	$18, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -61,6 +69,7 @@ func000000000000007f:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	movzbl	%dl, %eax
 	shll	$16, %eax
@@ -69,6 +78,7 @@ func000000000000002c:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000003c:
 	movzbl	%dl, %eax
 	shll	$8, %eax
@@ -77,6 +87,7 @@ func000000000000003c:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000022:
 	shll	$31, %edx
 	shll	$16, %esi
@@ -84,6 +95,7 @@ func0000000000000022:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002e:
 	movzbl	%dl, %ecx
 	shll	$12, %ecx
@@ -92,6 +104,7 @@ func000000000000002e:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000004f:
 	shll	$24, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -100,6 +113,7 @@ func000000000000004f:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000001f:
 	shll	$18, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -108,6 +122,7 @@ func000000000000001f:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000007c:
 	movzbl	%dl, %eax
 	shll	$6, %eax
@@ -116,6 +131,7 @@ func000000000000007c:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000000c:
 	movzbl	%dl, %eax
 	shll	$14, %eax
@@ -124,6 +140,7 @@ func000000000000000c:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func000000000000000a:
 	shll	$24, %edx
 	shll	$10, %esi
@@ -131,6 +148,7 @@ func000000000000000a:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000003a:
 	shll	$24, %edx
 	shll	$16, %esi
@@ -138,6 +156,7 @@ func000000000000003a:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func000000000000007e:
 	shll	$10, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -146,6 +165,7 @@ func000000000000007e:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000033:
 	shll	$30, %edx
 	shll	$22, %esi
@@ -153,6 +173,7 @@ func0000000000000033:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func000000000000003e:
 	movzbl	%dl, %ecx
 	shll	$13, %ecx
@@ -161,6 +182,7 @@ func000000000000003e:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func000000000000007d:
 	movzbl	%dl, %ecx
 	shll	$16, %ecx
@@ -169,6 +191,7 @@ func000000000000007d:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000038:
 	movl	%esi, %eax
 	shll	$24, %edx
@@ -177,6 +200,7 @@ func0000000000000038:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000048:
 	movl	%esi, %eax
 	shll	$31, %edx
@@ -185,6 +209,7 @@ func0000000000000048:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func0000000000000008:
 	movl	%esi, %eax
 	shll	$24, %edx
@@ -193,6 +218,7 @@ func0000000000000008:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func0000000000000078:
 	movl	%esi, %eax
 	shll	$25, %edx
@@ -201,6 +227,7 @@ func0000000000000078:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end26, nop
 func0000000000000060:
 	movl	%esi, %eax
 	shll	$16, %edx
@@ -209,6 +236,7 @@ func0000000000000060:
 	orl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end27, nop
 func000000000000000f:
 	shll	$24, %edx
 	leal	(%rdx,%rdi), %ecx
@@ -217,6 +245,7 @@ func000000000000000f:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end28, nop
 func000000000000006e:
 	shll	$16, %edx
 	leal	(%rdx,%rdi), %ecx

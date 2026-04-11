@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	andl	$16777216, %edx
 	testq	%rsi, %rsi
@@ -7,6 +8,7 @@ func0000000000000003:
 	leaq	(%rdi,%rdx), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	andq	$-16, %rdx
 	cmpq	$23, %rsi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000005e1:
 	xorl	%eax, %eax
 	cmpb	$45, %dl
@@ -8,6 +9,7 @@ func00000000000005e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000005e4:
 	xorl	%eax, %eax
 	cmpb	$10, %dl
@@ -17,6 +19,7 @@ func00000000000005e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000404:
 	xorl	%eax, %eax
 	cmpb	$108, %dl
@@ -26,6 +29,7 @@ func0000000000000404:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000005e8:
 	xorl	%eax, %eax
 	cmpb	$45, %dl

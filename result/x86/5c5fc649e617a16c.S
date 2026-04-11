@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	addl	$32, %esi
 	negl	%esi
@@ -8,6 +9,7 @@ func000000000000001f:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001d:
 	andb	$1, %dil
 	addl	$32, %esi
@@ -20,6 +22,7 @@ func000000000000001d:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	movb	$60, %al
 	subb	%sil, %al

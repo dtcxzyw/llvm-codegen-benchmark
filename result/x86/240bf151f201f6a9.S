@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	addq	$2, %rdx
 	cmpq	%rdi, %rdx
@@ -8,6 +9,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	addq	$4, %rdx
 	cmpq	%rdi, %rdx
@@ -17,6 +19,7 @@ func0000000000000021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000c24:
 	incq	%rdx
 	cmpq	%rdi, %rdx
@@ -26,6 +29,7 @@ func0000000000000c24:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c85:
 	incq	%rdx
 	cmpq	%rdi, %rdx
@@ -35,6 +39,7 @@ func0000000000000c85:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000d81:
 	addq	$48, %rdx
 	cmpq	%rdi, %rdx
@@ -44,6 +49,7 @@ func0000000000000d81:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000d84:
 	addq	$12, %rdx
 	cmpq	%rdi, %rdx
@@ -53,6 +59,7 @@ func0000000000000d84:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000c21:
 	incq	%rdx
 	cmpq	%rdi, %rdx

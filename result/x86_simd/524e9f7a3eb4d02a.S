@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
@@ -45,6 +46,7 @@ func0000000000000001:
 	.byte	11
 .LCPI1_3:
 	.zero	4,245
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1
 	vpternlogd	$120, .LCPI1_3(%rip){1to4}, %xmm0, %xmm1

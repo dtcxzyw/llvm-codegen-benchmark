@@ -3,6 +3,7 @@
 	.long	252
 .LCPI0_1:
 	.long	4294967076
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000035:
 	vpslld	$2, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
@@ -14,6 +15,7 @@ func0000000000000035:
 	.long	240
 .LCPI1_1:
 	.long	40
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpslld	$4, %ymm1, %ymm1
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
@@ -25,6 +27,7 @@ func000000000000003f:
 	.long	196608
 .LCPI2_1:
 	.long	4294901760
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
 	vpslld	$12, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
@@ -34,6 +37,7 @@ func0000000000000015:
 
 .LCPI3_0:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000025:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
@@ -77,6 +81,7 @@ func0000000000000025:
 	.byte	128
 .LCPI4_1:
 	.long	2654435769
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000020:
 	vpshufb	.LCPI4_0(%rip), %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -87,6 +92,7 @@ func0000000000000020:
 	.long	12
 .LCPI5_1:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
@@ -98,6 +104,7 @@ func0000000000000005:
 	.long	12
 .LCPI6_1:
 	.long	4294967290
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpandd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
@@ -109,6 +116,7 @@ func000000000000000d:
 	.long	120
 .LCPI7_1:
 	.long	8
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000030:
 	vpslld	$3, %ymm1, %ymm1
 	vpandd	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
@@ -118,6 +126,7 @@ func0000000000000030:
 
 .LCPI8_0:
 	.long	56
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000000:
 	vpslld	$3, %ymm1, %ymm1
 	vpandd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
@@ -130,6 +139,7 @@ func0000000000000000:
 	.long	2147418112
 .LCPI9_1:
 	.long	7
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002e:
 	vpslld	$16, %ymm1, %ymm1
 	vpandd	.LCPI9_0(%rip){1to8}, %ymm1, %ymm1
@@ -141,6 +151,7 @@ func000000000000002e:
 	.long	1835008
 .LCPI10_1:
 	.long	16777216
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000037:
 	vpslld	$18, %ymm1, %ymm1
 	vpandd	.LCPI10_0(%rip){1to8}, %ymm1, %ymm1

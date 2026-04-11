@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000301:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$4, %ymm1, %ymm1
@@ -13,6 +14,7 @@ func0000000000000301:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$7, %ymm1, %ymm1
@@ -24,6 +26,7 @@ func0000000000000061:
 
 .LCPI2_0:
 	.long	614244
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000321:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$20, %ymm1, %ymm1
@@ -38,6 +41,7 @@ func0000000000000321:
 	.long	73
 .LCPI3_1:
 	.long	128
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000304:
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$6, %ymm1, %ymm1
@@ -47,6 +51,7 @@ func0000000000000304:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000361:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
@@ -59,6 +64,7 @@ func0000000000000361:
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
@@ -73,6 +79,7 @@ func0000000000000021:
 	.long	4294967041
 .LCPI6_1:
 	.long	254
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000178:
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$8, %ymm1, %ymm1
@@ -82,6 +89,7 @@ func0000000000000178:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000041:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -96,6 +104,7 @@ func0000000000000041:
 	.long	73
 .LCPI8_1:
 	.long	127
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000308:
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$6, %ymm1, %ymm1
@@ -107,6 +116,7 @@ func0000000000000308:
 
 .LCPI9_0:
 	.long	7
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000064:
 	vpbroadcastd	.LCPI9_0(%rip), %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -119,6 +129,7 @@ func0000000000000064:
 
 .LCPI10_0:
 	.long	15
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000108:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1

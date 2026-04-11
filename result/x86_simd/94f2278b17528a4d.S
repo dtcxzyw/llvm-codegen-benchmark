@@ -71,6 +71,7 @@
 	.byte	255
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000058:
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqw	.LCPI0_1(%rip), %ymm1, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$15, %xmm1, %xmm1
@@ -12,6 +13,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$15, %xmm1, %xmm1

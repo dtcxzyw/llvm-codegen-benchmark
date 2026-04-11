@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpmovzxwq	%xmm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
@@ -6,6 +7,7 @@ func000000000000003f:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003e:
 	vpmovzxwq	%xmm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
@@ -13,6 +15,7 @@ func000000000000003e:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003c:
 	vpmovzxwq	%xmm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
@@ -20,6 +23,7 @@ func000000000000003c:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003d:
 	vpmovzxwq	%xmm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
@@ -27,6 +31,7 @@ func000000000000003d:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
 	vpmovzxwq	%xmm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1

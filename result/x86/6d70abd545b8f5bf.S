@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001d8:
 	shll	$8, %edx
 	orl	%esi, %edx
@@ -7,6 +8,7 @@ func00000000000001d8:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e8:
 	shll	$8, %edx
 	orl	%esi, %edx
@@ -15,6 +17,7 @@ func00000000000001e8:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001c2:
 	shll	$8, %edx
 	orl	%esi, %edx
@@ -22,6 +25,7 @@ func00000000000001c2:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000054:
 	shll	$6, %edx
 	orl	%esi, %edx
@@ -30,6 +34,7 @@ func0000000000000054:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	shll	$8, %edx
 	orl	%esi, %edx

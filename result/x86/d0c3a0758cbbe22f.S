@@ -4,6 +4,7 @@
 	.quad	0x3fb54fdf3b645a1d
 .LCPI0_1:
 	.quad	0x3fd54fdf3b645a1d
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	cmpl	$-18, %esi
@@ -17,6 +18,7 @@ func0000000000000001:
 	.quad	0x3fe0000000000000
 .LCPI1_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	cmpl	$3, %esi
 	setb	%al
@@ -31,6 +33,7 @@ func0000000000000004:
 	.quad	0x3fe0000000000000
 .LCPI2_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	shrl	$31, %esi
 	vmovsd	.LCPI2_0(,%rsi,8), %xmm0

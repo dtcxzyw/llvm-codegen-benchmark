@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000075:
 	movzwl	%si, %eax
 	imull	$12137, %eax, %eax

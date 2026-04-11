@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	leaq	(%rsi,%rdx,2), %rax
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	leaq	(%rsi,%rdx,2), %rax
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	leaq	(%rsi,%rdx,2), %rax
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000041:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
@@ -24,6 +28,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000044:
 	sarq	$63, %rdx
 	leaq	(%rdx,%rdx,2), %rax
@@ -32,6 +37,7 @@ func0000000000000044:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c4:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
@@ -39,6 +45,7 @@ func00000000000000c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000c8:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
@@ -46,6 +53,7 @@ func00000000000000c8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	sarq	$32, %rdx
 	shlq	$5, %rdx
@@ -54,6 +62,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000061:
 	sarq	$32, %rdx
 	leaq	(%rsi,%rdx,4), %rax
@@ -61,6 +70,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000084:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
@@ -68,6 +78,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000088:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
@@ -75,6 +86,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000c9:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
@@ -82,6 +94,7 @@ func00000000000000c9:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000c5:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx
@@ -89,6 +102,7 @@ func00000000000000c5:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000004c:
 	sarq	$32, %rdx
 	leaq	(%rsi,%rdx,2), %rax
@@ -96,6 +110,7 @@ func000000000000004c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000cc:
 	sarq	$32, %rdx
 	addq	%rsi, %rdx

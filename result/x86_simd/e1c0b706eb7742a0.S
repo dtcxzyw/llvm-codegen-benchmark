@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm2, %xmm1, %xmm1
@@ -11,6 +12,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001a6:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpsubd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
@@ -20,6 +22,7 @@ func00000000000001a6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a1:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -29,6 +32,7 @@ func00000000000000a1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -38,6 +42,7 @@ func0000000000000026:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a6:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -47,6 +52,7 @@ func00000000000000a6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000aa:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -56,6 +62,7 @@ func00000000000000aa:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001aa:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1

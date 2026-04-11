@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001284:
 	leaq	-1(%rdi), %rax
 	testq	%rax, %rdi
@@ -8,6 +9,7 @@ func0000000000001284:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000284:
 	blsrq	%rdi, %rax
 	sete	%cl

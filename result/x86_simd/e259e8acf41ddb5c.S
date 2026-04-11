@@ -19,6 +19,7 @@
 	.short	12137
 .LCPI0_2:
 	.short	292
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpmovdw	%ymm0, %xmm0
 	vpbroadcastw	.LCPI0_2(%rip), %xmm1
@@ -40,6 +41,7 @@ func000000000000000a:
 	.short	33157
 	.short	33157
 	.short	33157
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpmovdw	%ymm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1

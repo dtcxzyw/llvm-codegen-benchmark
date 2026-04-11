@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	imulq	%rsi, %rdi
 	movabsq	$4611686018427387904, %rax
@@ -6,12 +7,14 @@ func000000000000000a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000101:
 	imulq	%rsi, %rdi
 	cmpq	$1, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	imulq	%rsi, %rdi
 	movabsq	$-34359737856000, %rax
@@ -20,6 +23,7 @@ func0000000000000008:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a8:
 	imulq	%rsi, %rdi
 	movabsq	$-34359737856000, %rax
@@ -28,6 +32,7 @@ func00000000000000a8:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000104:
 	imulq	%rsi, %rdi
 	addq	$-400000001, %rdi
@@ -35,6 +40,7 @@ func0000000000000104:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	imulq	%rsi, %rdi
 	movslq	%edi, %rax
@@ -42,6 +48,7 @@ func0000000000000084:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000a4:
 	imulq	%rsi, %rdi
 	movslq	%edi, %rax
@@ -49,12 +56,14 @@ func00000000000000a4:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	imulq	%rsi, %rdi
 	cmpq	$-1, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	imulq	%rsi, %rdi
 	decq	%rdi
@@ -62,24 +71,28 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001a1:
 	imulq	%rsi, %rdi
 	cmpq	$1, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000c:
 	imulq	%rsi, %rdi
 	cmpq	$-16, %rdi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000021:
 	imulq	%rsi, %rdi
 	cmpq	$1, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000088:
 	imulq	%rsi, %rdi
 	movabsq	$-2305843009213693952, %rax
@@ -89,6 +102,7 @@ func0000000000000088:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000094:
 	imulq	%rsi, %rdi
 	addq	$2, %rdi
@@ -96,6 +110,7 @@ func0000000000000094:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000098:
 	imulq	%rsi, %rdi
 	addq	$-16383, %rdi
@@ -103,18 +118,21 @@ func0000000000000098:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000006:
 	imulq	%rsi, %rdi
 	leaq	511(%rdi), %rax
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000a1:
 	imulq	%rsi, %rdi
 	cmpq	$-1, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000028:
 	imulq	%rsi, %rdi
 	movabsq	$-1152921504606846976, %rax
@@ -124,6 +142,7 @@ func0000000000000028:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000024:
 	imulq	%rsi, %rdi
 	decq	%rdi

@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movl	%esi, %eax
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003c:
 	movl	%esi, %eax
 	leaq	1606(%rdi,%rax,2), %rax

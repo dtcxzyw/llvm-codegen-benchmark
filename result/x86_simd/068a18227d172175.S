@@ -25,6 +25,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
@@ -57,6 +58,7 @@ func000000000000000c:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vgf2p8affineqb	$0, .LCPI1_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
@@ -88,6 +90,7 @@ func0000000000000001:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vgf2p8affineqb	$0, .LCPI2_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpnleub	%xmm0, %xmm1, %k0
@@ -120,6 +123,7 @@ func0000000000000018:
 	.byte	64
 	.byte	32
 	.byte	16
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vgf2p8affineqb	$0, .LCPI3_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpltub	%xmm0, %xmm1, %k0
@@ -152,6 +156,7 @@ func0000000000000004:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	vgf2p8affineqb	$0, .LCPI4_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
@@ -183,6 +188,7 @@ func0000000000000021:
 	.byte	16
 	.byte	8
 	.byte	4
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	vgf2p8affineqb	$0, .LCPI5_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpeqb	%xmm0, %xmm1, %xmm0
@@ -215,6 +221,7 @@ func000000000000002c:
 	.byte	0
 	.byte	128
 	.byte	64
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000014:
 	vgf2p8affineqb	$0, .LCPI6_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpltub	%xmm0, %xmm1, %k0
@@ -247,6 +254,7 @@ func0000000000000014:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vgf2p8affineqb	$0, .LCPI7_1(%rip){1to2}, %xmm1, %xmm1
 	vpcmpnleub	%xmm0, %xmm1, %k0

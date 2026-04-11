@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -6,6 +7,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -13,6 +15,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -20,6 +23,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ec:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -27,6 +31,7 @@ func00000000000000ec:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000e1:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -34,6 +39,7 @@ func00000000000000e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000e4:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -41,6 +47,7 @@ func00000000000000e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000f4:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -48,6 +55,7 @@ func00000000000000f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000e8:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -55,6 +63,7 @@ func00000000000000e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000a6:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -62,6 +71,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000021:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -69,6 +79,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a1:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -76,6 +87,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000025:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -83,6 +95,7 @@ func0000000000000025:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000029:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -90,6 +103,7 @@ func0000000000000029:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000002a:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -97,6 +111,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000027:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -104,6 +119,7 @@ func0000000000000027:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000002b:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -111,6 +127,7 @@ func000000000000002b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000026:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -118,6 +135,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000002c:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -125,6 +143,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func00000000000000a4:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -132,6 +151,7 @@ func00000000000000a4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func00000000000000f8:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -139,6 +159,7 @@ func00000000000000f8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func00000000000000e6:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -146,6 +167,7 @@ func00000000000000e6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func00000000000000c1:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -153,6 +175,7 @@ func00000000000000c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func00000000000000a8:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -160,6 +183,7 @@ func00000000000000a8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000065:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -167,6 +191,7 @@ func0000000000000065:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func00000000000000c4:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -174,6 +199,7 @@ func00000000000000c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func0000000000000061:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -181,6 +207,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end26, nop
 func00000000000000a9:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -188,6 +215,7 @@ func00000000000000a9:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end27, nop
 func00000000000000aa:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -195,6 +223,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end28, nop
 func0000000000000086:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -202,6 +231,7 @@ func0000000000000086:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end29, nop
 func0000000000000008:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -209,6 +239,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end30, nop
 func0000000000000081:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -216,6 +247,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end31, nop
 func00000000000000ea:
 	shlq	$16, %rdx
 	orq	%rsi, %rdx
@@ -223,6 +255,7 @@ func00000000000000ea:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end32, nop
 func00000000000000f5:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -230,6 +263,7 @@ func00000000000000f5:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end33, nop
 func00000000000000d4:
 	shlq	$16, %rdx
 	orq	%rsi, %rdx
@@ -237,6 +271,7 @@ func00000000000000d4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end34, nop
 func00000000000000c8:
 	shlq	$30, %rdx
 	orq	%rsi, %rdx

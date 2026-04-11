@@ -37,6 +37,7 @@
 	.quad	7
 .LCPI0_3:
 	.quad	64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpcmpltub	.LCPI0_1(%rip), %xmm0, %k1
@@ -63,6 +64,7 @@ func0000000000000004:
 	.zero	1
 .LCPI1_1:
 	.quad	20
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -108,6 +110,7 @@ func0000000000000024:
 	.quad	5
 .LCPI2_3:
 	.quad	3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpcmpltub	.LCPI2_1(%rip), %xmm0, %k1
@@ -155,6 +158,7 @@ func0000000000000034:
 	.quad	922337203685477580
 .LCPI3_4:
 	.zero	4,248
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	vpandd	.LCPI3_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI3_1(%rip), %xmm0, %k1
@@ -200,6 +204,7 @@ func0000000000000038:
 	.quad	5
 .LCPI4_3:
 	.quad	9
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpcmpltub	.LCPI4_1(%rip), %xmm0, %k1

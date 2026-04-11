@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovsxwd	%ymm4, %zmm4
 	vextracti64x4	$1, %zmm4, %ymm5

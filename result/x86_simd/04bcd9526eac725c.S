@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000146:
 	vpsraq	$2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -11,6 +12,7 @@ func0000000000000146:
 
 .LCPI1_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000161:
 	vpsraq	$2, %ymm1, %ymm1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
@@ -22,6 +24,7 @@ func0000000000000161:
 
 .LCPI2_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000141:
 	vpsraq	$1, %ymm1, %ymm1
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
@@ -31,6 +34,7 @@ func0000000000000141:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000046:
 	vpsraq	$4, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -43,6 +47,7 @@ func0000000000000046:
 
 .LCPI4_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000041:
 	vpsraq	$4, %ymm1, %ymm1
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000388:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
@@ -14,6 +15,7 @@ func0000000000000388:
 
 .LCPI1_0:
 	.long	4294967242
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0

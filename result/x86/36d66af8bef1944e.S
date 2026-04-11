@@ -1,53 +1,63 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d3:
 	subq	%rsi, %rdx
 	shlq	$4, %rdx
 	leaq	20(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000db:
 	subq	%rsi, %rdx
 	shlq	$4, %rdx
 	leaq	20(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002b:
 	subq	%rsi, %rdx
 	shlq	$6, %rdx
 	leaq	104(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	subq	%rsi, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	subq	%rsi, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	subq	%rsi, %rdx
 	shlq	$5, %rdx
 	leaq	40(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	subq	%rsi, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000003:
 	subq	%rsi, %rdx
 	leaq	8(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000023:
 	subq	%rsi, %rdx
 	leaq	-16(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000f0:
 	subq	%rsi, %rdx
 	movl	$4294967293, %eax
@@ -55,6 +65,7 @@ func00000000000000f0:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000005b:
 	subq	%rsi, %rdx
 	leaq	(%rdx,%rdx,2), %rax

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000050:
 	addl	%edx, %esi
 	leal	524288(%rdi,%rsi), %eax

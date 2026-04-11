@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	cmpw	$5, %di
@@ -6,6 +7,7 @@ func0000000000000001:
 	leaq	2(%rax,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	cmpw	$2, %di
@@ -14,6 +16,7 @@ func0000000000000008:
 	orq	$1654, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	xorl	%eax, %eax
 	testw	%di, %di
@@ -21,6 +24,7 @@ func0000000000000006:
 	leaq	8(,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	movzwl	%di, %eax
 	cmpl	$2048, %eax
@@ -28,6 +32,7 @@ func0000000000000004:
 	sbbq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	xorl	%eax, %eax
 	testw	%di, %di
@@ -35,6 +40,7 @@ func000000000000000c:
 	leaq	5(,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	xorl	%eax, %eax
 	cmpw	$5, %di
@@ -42,6 +48,7 @@ func0000000000000014:
 	leaq	4(,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	xorl	%eax, %eax
 	testw	%di, %di
@@ -49,6 +56,7 @@ func000000000000000a:
 	orq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000018:
 	movzwl	%di, %ecx
 	movl	$3155673600, %edx

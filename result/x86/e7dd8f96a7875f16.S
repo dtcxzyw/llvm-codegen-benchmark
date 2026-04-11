@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	imull	$4433, %esi, %eax
 	imull	$6270, %edi, %ecx
@@ -6,6 +7,7 @@ func00000000000000aa:
 	sarl	$11, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	imull	$4433, %esi, %eax
 	imull	$6270, %edi, %ecx
@@ -13,6 +15,7 @@ func0000000000000000:
 	sarl	$15, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001aa:
 	imull	$298, %esi, %eax
 	imull	$409, %edi, %ecx
@@ -20,6 +23,7 @@ func00000000000001aa:
 	sarl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a0:
 	imull	$4433, %esi, %eax
 	imull	$6270, %edi, %ecx
@@ -27,6 +31,7 @@ func00000000000000a0:
 	sarl	$11, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a8:
 	imull	$6270, %esi, %eax
 	imull	$8867, %edi, %ecx

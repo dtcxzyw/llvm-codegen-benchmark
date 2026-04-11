@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vandps	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
 	vcvtdq2ps	%ymm2, %ymm2

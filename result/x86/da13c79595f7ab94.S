@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f2:
 	xorl	%eax, %eax
 	vucomiss	%xmm0, %xmm1
@@ -6,6 +7,7 @@ func00000000000000f2:
 	leaq	28(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f4:
 	xorl	%eax, %eax
 	vucomiss	%xmm1, %xmm0
@@ -14,6 +16,7 @@ func00000000000000f4:
 	leaq	8(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f5:
 	xorl	%eax, %eax
 	vucomiss	%xmm0, %xmm1
@@ -21,6 +24,7 @@ func00000000000000f5:
 	leaq	4(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000f8:
 	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovw	%k0, %eax

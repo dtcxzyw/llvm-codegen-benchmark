@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.quad	-36
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002a4:
 	vpmovzxbq	%xmm0, %ymm1
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -78,6 +79,7 @@ func00000000000002a4:
 	.zero	1
 .LCPI1_2:
 	.quad	-48
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000224:
 	vpmovzxbq	%xmm0, %ymm1
 	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm0

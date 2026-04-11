@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
@@ -12,6 +13,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
@@ -26,6 +28,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.long	4294967197
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000048:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
@@ -36,6 +39,7 @@ func0000000000000048:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000e1:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
@@ -51,6 +55,7 @@ func00000000000000e1:
 	.long	4294967248
 .LCPI4_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000061:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1

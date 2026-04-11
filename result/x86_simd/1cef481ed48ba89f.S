@@ -3,6 +3,7 @@
 	.quad	-8
 .LCPI0_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -11,6 +12,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.quad	9223372036854775806
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -20,6 +22,7 @@ func0000000000000007:
 
 .LCPI2_0:
 	.quad	-16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -31,6 +34,7 @@ func0000000000000004:
 	.quad	-8
 .LCPI3_1:
 	.quad	40
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -41,6 +45,7 @@ func000000000000000f:
 	.quad	-4
 .LCPI4_1:
 	.quad	4
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -91,6 +96,7 @@ func0000000000000005:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vpandq	.LCPI5_2(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -101,6 +107,7 @@ func000000000000000c:
 	.quad	-8
 .LCPI6_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -111,6 +118,7 @@ func0000000000000008:
 	.quad	-2097152
 .LCPI7_1:
 	.quad	2097152
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	vpandq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -119,6 +127,7 @@ func0000000000000001:
 
 .LCPI8_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000006:
 	vpandq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -130,6 +139,7 @@ func0000000000000006:
 	.quad	9223372036854775807
 .LCPI9_1:
 	.quad	140737488355327
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000a:
 	vpandq	.LCPI9_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -180,6 +190,7 @@ func000000000000000a:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000d:
 	vpandq	.LCPI10_2(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001ec:
 	shll	$24, %edx
 	orq	%rsi, %rdi
@@ -8,6 +9,7 @@ func00000000000001ec:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e1:
 	shll	$24, %edx
 	orq	%rsi, %rdi
@@ -15,6 +17,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f8:
 	shll	$24, %edx
 	orq	%rsi, %rdi
@@ -23,6 +26,7 @@ func00000000000001f8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001f4:
 	shll	$24, %edx
 	orq	%rsi, %rdi

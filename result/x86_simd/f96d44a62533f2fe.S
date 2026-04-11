@@ -33,6 +33,7 @@
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000842:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpcmpeqw	.LCPI0_0(%rip), %ymm0, %k0
@@ -76,6 +77,7 @@ func0000000000000842:
 	.short	65281
 	.short	65281
 	.short	65281
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000848:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpcmpltuw	.LCPI1_0(%rip), %ymm0, %k0

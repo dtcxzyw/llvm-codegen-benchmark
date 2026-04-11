@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000301:
 	addb	$-54, %sil
 	cmpb	$-6, %sil
@@ -9,6 +10,7 @@ func0000000000000301:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	addb	$-53, %sil
 	cmpb	$5, %sil
@@ -18,6 +20,7 @@ func0000000000000088:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	incb	%sil
 	cmpb	$2, %sil
@@ -27,6 +30,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000481:
 	addb	$-15, %sil
 	cmpb	$2, %sil
@@ -36,6 +40,7 @@ func0000000000000481:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000701:
 	andb	$-8, %sil
 	cmpb	$48, %sil

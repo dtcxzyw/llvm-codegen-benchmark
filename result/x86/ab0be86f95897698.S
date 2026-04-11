@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	movzbl	%sil, %ecx
 	movzbl	%dil, %eax
 	addl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	movzbl	%sil, %ecx
 	movzbl	%dil, %eax
 	addl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	andl	$-4, %esi
 	andl	$-8, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	andl	$2147483647, %esi
 	andl	$2147483647, %edi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	sarl	$6, %esi
 	movslq	%esi, %rax
@@ -7,6 +8,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	sarl	$5, %esi
 	movslq	%esi, %rax
@@ -15,6 +17,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	sarl	%esi
 	movslq	%esi, %rax
@@ -23,6 +26,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	sarl	$5, %esi
 	movslq	%esi, %rax
@@ -31,6 +35,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000e6:
 	sarl	%esi
 	movslq	%esi, %rax

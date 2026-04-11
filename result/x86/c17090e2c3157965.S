@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000064:
 	addq	%rdx, %rsi
 	sarq	$3, %rdi
@@ -8,6 +9,7 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004a:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -21,6 +23,7 @@ func000000000000004a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	addq	%rdx, %rsi
 	sarq	$5, %rdi
@@ -30,6 +33,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	addq	%rdx, %rsi
 	sarq	$2, %rdi
@@ -39,6 +43,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000068:
 	addq	%rdx, %rsi
 	sarq	$3, %rdi
@@ -48,6 +53,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000028:
 	addq	%rdx, %rsi
 	sarq	$3, %rdi
@@ -57,6 +63,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000a8:
 	addq	%rdx, %rsi
 	sarq	$3, %rdi
@@ -66,6 +73,7 @@ func00000000000000a8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000006:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -79,6 +87,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
 	addq	%rdx, %rsi
 	movq	%rdi, %rax
@@ -89,6 +98,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000046:
 	addq	%rdx, %rsi
 	leaq	3(%rdi), %rax
@@ -99,6 +109,7 @@ func0000000000000046:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000044:
 	addq	%rdx, %rsi
 	movq	%rdi, %rax

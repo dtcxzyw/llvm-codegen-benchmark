@@ -3,6 +3,7 @@
 	.quad	1
 .LCPI0_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpand	%xmm1, %xmm0, %xmm0

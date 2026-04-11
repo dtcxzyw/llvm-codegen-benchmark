@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,4), %rax
@@ -8,6 +9,7 @@ func0000000000000012:
 	leaq	-8(%rax,%rcx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	addl	$2, %edx
 	movslq	%edx, %rcx

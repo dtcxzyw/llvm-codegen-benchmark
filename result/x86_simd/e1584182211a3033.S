@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	vpaddq	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -33,6 +34,7 @@ func0000000000000020:
 
 .LCPI1_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpaddq	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

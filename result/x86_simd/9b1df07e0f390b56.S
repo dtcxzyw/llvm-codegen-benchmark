@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	31
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpslld	$8, %ymm0, %ymm0
@@ -40,6 +41,7 @@ func000000000000001f:
 
 .LCPI1_0:
 	.long	4227858432
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	vpslld	$2, %ymm1, %ymm1
 	vpslld	$15, %ymm0, %ymm0
@@ -48,6 +50,7 @@ func0000000000000017:
 
 .LCPI2_0:
 	.long	2147483392
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001e:
 	vpslld	$2, %ymm1, %ymm1
 	vpslld	$16, %ymm0, %ymm0
@@ -56,6 +59,7 @@ func000000000000001e:
 
 .LCPI3_0:
 	.long	4261412864
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpslld	$23, %ymm1, %ymm1
 	vpslld	$21, %ymm0, %ymm0

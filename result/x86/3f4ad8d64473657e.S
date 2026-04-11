@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003f8:
 	movzbl	%dl, %eax
 	shll	$8, %eax

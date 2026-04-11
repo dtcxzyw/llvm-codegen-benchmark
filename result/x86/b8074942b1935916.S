@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	addl	$-2100, %esi
 	movzwl	%si, %eax
@@ -9,6 +10,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000102:
 	addl	$-48, %esi
 	cmpw	$10, %si
@@ -18,6 +20,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000908:
 	addl	$-97, %esi
 	cmpw	$6, %si
@@ -27,6 +30,7 @@ func0000000000000908:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000902:
 	addl	$-21, %esi
 	cmpw	$-5, %si
@@ -36,6 +40,7 @@ func0000000000000902:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000048:
 	addl	$-7, %esi
 	cmpw	$-2, %si
@@ -45,6 +50,7 @@ func0000000000000048:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000848:
 	addl	$-242, %esi
 	cmpw	$-4, %si

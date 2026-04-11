@@ -3,6 +3,7 @@
 	.long	16384
 .LCPI0_1:
 	.long	32768
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2
@@ -11,6 +12,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -22,6 +24,7 @@ func000000000000008a:
 
 .LCPI2_0:
 	.long	16777215
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	leaq	4(%rdx), %rcx
 	testb	$1, %sil
@@ -9,6 +10,7 @@ func0000000000000003:
 	andq	$-49, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movq	%rdx, %rcx
 	orq	$528, %rcx

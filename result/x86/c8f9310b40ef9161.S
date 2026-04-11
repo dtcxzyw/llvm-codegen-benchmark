@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a63:
 	cmpq	$128, %rdi
 	movl	$3, %ecx
@@ -9,6 +10,7 @@ func0000000000000a63:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000210:
 	xorl	%eax, %eax
 	movq	%rdi, %rcx

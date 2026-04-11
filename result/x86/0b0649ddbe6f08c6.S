@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	testb	$1, %dl
 	movl	$64, %eax
@@ -9,6 +10,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	testb	$1, %dl
 	movabsq	$-9223372036854775808, %rax
@@ -19,6 +21,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	andl	$1, %edx
 	addq	$2147483647, %rdx
@@ -27,6 +30,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	andl	$1, %edx
 	orq	$2, %rdx
@@ -35,6 +39,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	andl	$1, %edx
 	decq	%rdx
@@ -45,6 +50,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	movabsq	$9223372036854775807, %rax
 	leaq	1(%rax), %rcx

@@ -17,6 +17,7 @@
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000085:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -44,6 +45,7 @@ func0000000000000085:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -71,6 +73,7 @@ func0000000000000005:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000055:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -98,6 +101,7 @@ func0000000000000055:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000045:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -125,6 +129,7 @@ func0000000000000045:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c5:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

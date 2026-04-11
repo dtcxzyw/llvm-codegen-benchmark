@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -29,6 +30,7 @@ func0000000000000003:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -38,6 +40,7 @@ func0000000000000007:
 
 .LCPI2_0:
 	.long	4293918720
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -47,6 +50,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	4294967288
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -56,6 +60,7 @@ func0000000000000000:
 
 .LCPI4_0:
 	.long	4294967264
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

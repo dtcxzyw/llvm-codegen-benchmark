@@ -3,6 +3,7 @@
 	.long	8
 .LCPI0_1:
 	.long	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1
@@ -31,6 +32,7 @@ func0000000000000007:
 	.long	4294967241
 .LCPI1_2:
 	.long	4294967248
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000051:
 	vpcmpltub	.LCPI1_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1
@@ -57,6 +59,7 @@ func0000000000000051:
 	.zero	1
 .LCPI2_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpcmpeqb	.LCPI2_0(%rip), %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -66,6 +69,7 @@ func0000000000000005:
 
 .LCPI3_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000030:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -95,6 +99,7 @@ func0000000000000030:
 	.long	1
 .LCPI4_2:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
 	vpcmpltub	.LCPI4_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm1
@@ -123,6 +128,7 @@ func0000000000000013:
 	.long	4294967167
 .LCPI5_2:
 	.long	4294967231
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000011:
 	vpcmpltub	.LCPI5_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm1
@@ -132,6 +138,7 @@ func0000000000000011:
 
 .LCPI6_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtb	%xmm2, %xmm1, %k1
@@ -145,6 +152,7 @@ func0000000000000028:
 	.long	2
 .LCPI7_1:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002b:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtb	%xmm2, %xmm1, %k1
@@ -174,6 +182,7 @@ func000000000000002b:
 	.long	2
 .LCPI8_2:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	vpcmpeqb	.LCPI8_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI8_1(%rip), %ymm1
@@ -202,6 +211,7 @@ func0000000000000004:
 	.long	4294967248
 .LCPI9_2:
 	.long	4294967241
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000021:
 	vpcmpnleub	.LCPI9_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI9_1(%rip), %ymm1
@@ -230,6 +240,7 @@ func0000000000000021:
 	.long	4294967231
 .LCPI10_2:
 	.long	4294967199
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000029:
 	vpcmpgtb	.LCPI10_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI10_1(%rip), %ymm1
@@ -258,6 +269,7 @@ func0000000000000029:
 	.long	1
 .LCPI11_2:
 	.long	2
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000023:
 	vpcmpnleub	.LCPI11_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI11_1(%rip), %ymm1
@@ -286,6 +298,7 @@ func0000000000000023:
 	.long	4294967209
 .LCPI12_2:
 	.long	4294967248
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000019:
 	vpcmpltb	.LCPI12_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI12_1(%rip), %ymm1
@@ -295,6 +308,7 @@ func0000000000000019:
 
 .LCPI13_0:
 	.long	1
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000018:
 	vpmovb2m	%xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -324,6 +338,7 @@ func0000000000000018:
 	.long	1
 .LCPI14_2:
 	.long	4
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000020:
 	vpcmpnleub	.LCPI14_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI14_1(%rip), %ymm1
@@ -352,6 +367,7 @@ func0000000000000020:
 	.long	2
 .LCPI15_2:
 	.long	3
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000010:
 	vpcmpltub	.LCPI15_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI15_1(%rip), %ymm1
@@ -363,6 +379,7 @@ func0000000000000010:
 	.long	1
 .LCPI16_1:
 	.long	9
+	.prefalign	4, .Lfunc_end16, nop
 func000000000000001b:
 	vpmovb2m	%xmm1, %k1
 	vpbroadcastd	.LCPI16_0(%rip), %ymm1
@@ -389,6 +406,7 @@ func000000000000001b:
 	.zero	1
 .LCPI17_1:
 	.long	4294967232
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000061:
 	vpcmpnleub	.LCPI17_0(%rip), %xmm1, %k1
 	vpaddd	.LCPI17_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -415,6 +433,7 @@ func0000000000000061:
 	.long	193
 .LCPI18_2:
 	.long	129
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000053:
 	vpcmpltub	.LCPI18_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI18_1(%rip), %ymm1
@@ -443,6 +462,7 @@ func0000000000000053:
 	.long	2
 .LCPI19_2:
 	.long	3
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000063:
 	vpcmpnleub	.LCPI19_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI19_1(%rip), %ymm1

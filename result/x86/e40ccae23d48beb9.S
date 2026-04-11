@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000881:
 	btl	%edx, %esi
 	setae	%cl
@@ -7,6 +8,7 @@ func0000000000000881:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000082c:
 	btl	%edx, %esi
 	setb	%cl
@@ -15,6 +17,7 @@ func000000000000082c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000098c:
 	btl	%edx, %esi
 	setb	%cl
@@ -23,6 +26,7 @@ func000000000000098c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000094c:
 	btl	%edx, %esi
 	setb	%cl
@@ -31,6 +35,7 @@ func000000000000094c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000c21:
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
@@ -39,6 +44,7 @@ func0000000000000c21:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000c2c:
 	btl	%edx, %esi
 	setb	%cl
@@ -47,6 +53,7 @@ func0000000000000c2c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000c8c:
 	btl	%edx, %esi
 	setb	%cl
@@ -55,6 +62,7 @@ func0000000000000c8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000d8c:
 	btl	%edx, %esi
 	setb	%cl
@@ -63,6 +71,7 @@ func0000000000000d8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000018c:
 	shrxl	%edx, %esi, %eax
 	testb	%al, %al

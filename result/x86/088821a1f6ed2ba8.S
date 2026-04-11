@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	andb	$1, %sil
 	orb	$2, %sil
@@ -6,6 +7,7 @@ func0000000000000005:
 	addq	$72, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	andb	$1, %sil
 	movb	$2, %al
@@ -14,6 +16,7 @@ func0000000000000000:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	andb	$1, %sil
 	xorb	$7, %sil
@@ -21,6 +24,7 @@ func000000000000000d:
 	decq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	andb	$1, %sil
 	movb	$4, %al

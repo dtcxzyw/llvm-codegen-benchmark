@@ -3,6 +3,7 @@
 	.quad	0x40f0000000000000
 .LCPI0_1:
 	.quad	0x3f10000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	kmovd	%edi, %k1
 	vmovsd	.LCPI0_0(%rip), %xmm1

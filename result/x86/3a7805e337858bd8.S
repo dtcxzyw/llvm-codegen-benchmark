@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	cmpl	$4, %edi
 	sete	%al
@@ -9,6 +10,7 @@ func0000000000000013:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001c:
 	cmpl	$4, %edi
 	sete	%al
@@ -21,6 +23,7 @@ func000000000000001c:
 
 .LCPI2_0:
 	.long	0x45908800
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000185:
 	cmpl	$12001, %edi
 	setae	%al
@@ -33,6 +36,7 @@ func0000000000000185:
 
 .LCPI3_0:
 	.long	0x45bf6800
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000183:
 	cmpl	$12001, %edi
 	setae	%al
@@ -44,6 +48,7 @@ func0000000000000183:
 
 .LCPI4_0:
 	.long	0x40a00000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000012:
 	cmpl	$2, %edi
 	sete	%al
@@ -56,6 +61,7 @@ func0000000000000012:
 
 .LCPI5_0:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	cmpl	$179, %edi
 	sete	%al
@@ -67,6 +73,7 @@ func0000000000000014:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000018:
 	testl	%edi, %edi
 	sete	%al

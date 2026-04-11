@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000785:
 	leaq	(%rsi,%rdx), %rcx
 	cmpq	$131042, %rcx

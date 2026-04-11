@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	3067833783
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008a:
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -14,6 +15,7 @@ func000000000000008a:
 	.quad	7905747460161236407
 .LCPI1_1:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000086:
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -24,6 +26,7 @@ func0000000000000086:
 
 .LCPI2_0:
 	.long	3435973837
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -37,6 +40,7 @@ func0000000000000081:
 	.long	3435973837
 .LCPI3_1:
 	.long	5
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000084:
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -48,6 +52,7 @@ func0000000000000084:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	vpsraq	$63, %ymm0, %ymm1
 	vpsrlq	$62, %ymm1, %ymm1
@@ -63,6 +68,7 @@ func0000000000000006:
 	.quad	-3689348814741910323
 .LCPI5_1:
 	.quad	4294967294
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000088:
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
@@ -71,6 +77,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
@@ -113,6 +120,7 @@ func000000000000000a:
 
 .LCPI7_0:
 	.long	2863311531
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000008c:
 	vpsrlq	$4, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -123,6 +131,7 @@ func000000000000008c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000001:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
@@ -165,6 +174,7 @@ func0000000000000001:
 
 .LCPI9_0:
 	.long	17
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000004:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
@@ -207,6 +217,7 @@ func0000000000000004:
 
 .LCPI10_0:
 	.long	86399
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000008:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax

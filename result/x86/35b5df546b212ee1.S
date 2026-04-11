@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	leal	(%rdi,%rdi), %eax
 	testb	%dil, %dil
@@ -7,6 +8,7 @@ func000000000000000a:
 	cmovnsl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	leal	(%rdi,%rdi), %eax
 	cmpb	$30, %dil

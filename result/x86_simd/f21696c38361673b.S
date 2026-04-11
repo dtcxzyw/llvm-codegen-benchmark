@@ -5,12 +5,14 @@
 	.quad	16
 .LCPI0_2:
 	.quad	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	vpaddq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000187:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vptestnmq	%ymm1, %ymm1, %k1

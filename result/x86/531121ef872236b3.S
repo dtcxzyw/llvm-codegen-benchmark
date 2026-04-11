@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -11,6 +12,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vmulsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
@@ -21,6 +23,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vmulsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -31,6 +34,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vmulsd	.LCPI3_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -41,6 +45,7 @@ func0000000000000007:
 
 .LCPI4_0:
 	.quad	0x3fd0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vmulsd	.LCPI4_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -49,6 +54,7 @@ func0000000000000003:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vaddsd	%xmm1, %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -59,6 +65,7 @@ func0000000000000005:
 
 .LCPI6_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000e:
 	vmulsd	.LCPI6_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm0, %xmm1, %xmm0
@@ -68,6 +75,7 @@ func000000000000000e:
 
 .LCPI7_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000c:
 	vmulsd	.LCPI7_0(%rip), %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0

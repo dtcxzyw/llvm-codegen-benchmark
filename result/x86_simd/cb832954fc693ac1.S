@@ -17,6 +17,7 @@
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm2
@@ -43,6 +44,7 @@ func000000000000001f:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm2

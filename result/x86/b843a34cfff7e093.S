@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	shlq	$2, %rdi
 	leaq	(%rdi,%rdi,4), %rax
@@ -6,6 +7,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000006c:
 	imulq	$1000000000, %rdi, %rax
 	negq	%rax

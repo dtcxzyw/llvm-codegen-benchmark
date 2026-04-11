@@ -3,6 +3,7 @@
 	.long	8
 .LCPI0_1:
 	.long	9
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

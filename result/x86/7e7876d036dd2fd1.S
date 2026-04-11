@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vmovq	%xmm1, %rax
 	vmovq	%xmm0, %rcx
@@ -6,6 +7,7 @@ func000000000000000a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vxorpd	%xmm1, %xmm0, %xmm0
 	vmovmskpd	%xmm0, %eax

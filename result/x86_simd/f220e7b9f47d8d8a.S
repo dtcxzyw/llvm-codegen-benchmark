@@ -7,6 +7,7 @@
 	.quad	9223372036854775800
 .LCPI0_3:
 	.quad	24
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002b:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -27,6 +28,7 @@ func000000000000002b:
 	.quad	9223372036854775800
 .LCPI1_3:
 	.quad	12
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

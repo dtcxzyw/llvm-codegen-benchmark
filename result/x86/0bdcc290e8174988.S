@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	cmpw	$16, %di
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	movzwl	%di, %eax
 	cmpl	$49152, %eax
@@ -19,6 +21,7 @@ func000000000000010c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000108:
 	cmpw	$-7, %si
 	setb	%cl
@@ -29,6 +32,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000048:
 	cmpw	$8, %di
 	sete	%al

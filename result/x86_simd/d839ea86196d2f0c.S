@@ -16,6 +16,7 @@
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsrld	$5, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -40,6 +41,7 @@ func0000000000000001:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -64,6 +66,7 @@ func0000000000000005:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -88,6 +91,7 @@ func0000000000000004:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpsrld	$3, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

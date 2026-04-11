@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -10,6 +11,7 @@ func0000000000000088:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000aa:
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -19,6 +21,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000022a:
 	xorl	%eax, %eax
 	cmpl	$65536, %esi

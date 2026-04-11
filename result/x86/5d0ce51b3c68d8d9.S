@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
@@ -7,6 +8,7 @@ func0000000000000011:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -15,6 +17,7 @@ func0000000000000019:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	testl	%edx, %edx
 	cmovel	%edx, %esi
@@ -22,6 +25,7 @@ func0000000000000004:
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	cmpl	$100, %edx
 	movl	$5, %eax
@@ -30,6 +34,7 @@ func0000000000000028:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000051:
 	cmpl	$67, %edx
 	movl	$-16, %eax
@@ -38,6 +43,7 @@ func0000000000000051:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	cmpl	$2, %edx
 	movl	$14, %eax
@@ -46,6 +52,7 @@ func0000000000000005:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000029:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -54,6 +61,7 @@ func0000000000000029:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001b:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
@@ -62,6 +70,7 @@ func000000000000001b:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000031:
 	testl	%edx, %edx
 	movl	$1, %eax

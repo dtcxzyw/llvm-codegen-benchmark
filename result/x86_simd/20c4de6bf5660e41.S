@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c8:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -8,6 +9,7 @@ func00000000000000c8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -17,6 +19,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -28,6 +31,7 @@ func0000000000000001:
 
 .LCPI3_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c1:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -38,6 +42,7 @@ func00000000000000c1:
 
 .LCPI4_0:
 	.quad	-16
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -48,6 +53,7 @@ func000000000000000a:
 
 .LCPI5_0:
 	.quad	-16
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -56,6 +62,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000054:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -65,6 +72,7 @@ func0000000000000054:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000046:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -76,6 +84,7 @@ func0000000000000046:
 
 .LCPI8_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000004a:
 	vpaddq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -86,6 +95,7 @@ func000000000000004a:
 
 .LCPI9_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000061:
 	vpaddq	.LCPI9_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -96,6 +106,7 @@ func0000000000000061:
 
 .LCPI10_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000041:
 	vpaddq	.LCPI10_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -106,6 +117,7 @@ func0000000000000041:
 
 .LCPI11_0:
 	.quad	4096
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000014:
 	vpaddq	.LCPI11_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
@@ -116,6 +128,7 @@ func0000000000000014:
 
 .LCPI12_0:
 	.quad	4096
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000019:
 	vpaddq	.LCPI12_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
@@ -126,6 +139,7 @@ func0000000000000019:
 
 .LCPI13_0:
 	.quad	2097151
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000d8:
 	vpaddq	.LCPI13_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$21, %ymm1, %ymm1
@@ -136,6 +150,7 @@ func00000000000000d8:
 
 .LCPI14_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000d4:
 	vpaddq	.LCPI14_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -146,6 +161,7 @@ func00000000000000d4:
 
 .LCPI15_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000094:
 	vpaddq	.LCPI15_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -156,6 +172,7 @@ func0000000000000094:
 
 .LCPI16_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000c4:
 	vpaddq	.LCPI16_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -166,6 +183,7 @@ func00000000000000c4:
 
 .LCPI17_0:
 	.quad	-4
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000000c:
 	vpaddq	.LCPI17_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
@@ -176,6 +194,7 @@ func000000000000000c:
 
 .LCPI18_0:
 	.quad	-16384
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000044:
 	vpaddq	.LCPI18_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -184,6 +203,7 @@ func0000000000000044:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000018:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -195,6 +215,7 @@ func0000000000000018:
 
 .LCPI20_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000058:
 	vpaddq	.LCPI20_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -205,6 +226,7 @@ func0000000000000058:
 
 .LCPI21_0:
 	.quad	1023
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000048:
 	vpaddq	.LCPI21_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$10, %ymm1, %ymm1
@@ -215,6 +237,7 @@ func0000000000000048:
 
 .LCPI22_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000015:
 	vpaddq	.LCPI22_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -225,6 +248,7 @@ func0000000000000015:
 
 .LCPI23_0:
 	.quad	-4
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000021:
 	vpaddq	.LCPI23_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
@@ -235,6 +259,7 @@ func0000000000000021:
 
 .LCPI24_0:
 	.quad	-96
+	.prefalign	4, .Lfunc_end24, nop
 func0000000000000034:
 	vpaddq	.LCPI24_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$4, %ymm1, %ymm1
@@ -243,6 +268,7 @@ func0000000000000034:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func0000000000000078:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -254,6 +280,7 @@ func0000000000000078:
 
 .LCPI26_0:
 	.quad	-24
+	.prefalign	4, .Lfunc_end26, nop
 func0000000000000074:
 	vpaddq	.LCPI26_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$5, %ymm1, %ymm1
@@ -264,6 +291,7 @@ func0000000000000074:
 
 .LCPI27_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end27, nop
 func0000000000000028:
 	vpaddq	.LCPI27_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -274,6 +302,7 @@ func0000000000000028:
 
 .LCPI28_0:
 	.quad	4095
+	.prefalign	4, .Lfunc_end28, nop
 func0000000000000005:
 	vpaddq	.LCPI28_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
@@ -282,6 +311,7 @@ func0000000000000005:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end29, nop
 func00000000000000c6:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -293,6 +323,7 @@ func00000000000000c6:
 
 .LCPI30_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end30, nop
 func0000000000000049:
 	vpaddq	.LCPI30_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
@@ -303,6 +334,7 @@ func0000000000000049:
 
 .LCPI31_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end31, nop
 func0000000000000047:
 	vpaddq	.LCPI31_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -313,6 +345,7 @@ func0000000000000047:
 
 .LCPI32_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end32, nop
 func0000000000000068:
 	vpaddq	.LCPI32_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1

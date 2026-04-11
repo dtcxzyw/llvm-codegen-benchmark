@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	leal	8(%rdx), %eax
 	orb	%dil, %al
@@ -7,6 +8,7 @@ func0000000000000022:
 	orb	$64, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	leal	8(%rdx), %eax
 	orb	%dil, %al

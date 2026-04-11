@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	testb	%dl, %dl
@@ -12,6 +13,7 @@ func0000000000000004:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	cmpb	$8, %dl
 	setae	%cl
@@ -23,6 +25,7 @@ func0000000000000013:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000012:
 	cmpb	$8, %dl
 	setae	%al
@@ -34,6 +37,7 @@ func0000000000000012:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	cmpb	$8, %dl
 	setae	%cl
@@ -46,6 +50,7 @@ func0000000000000010:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	testb	%dl, %dl
 	sete	%cl

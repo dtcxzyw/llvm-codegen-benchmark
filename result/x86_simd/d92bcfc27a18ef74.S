@@ -3,6 +3,7 @@
 	.long	0x40c90fdb
 .LCPI0_1:
 	.long	0x3e22f983
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpltps	%zmm1, %zmm0, %k1
@@ -16,6 +17,7 @@ func0000000000000002:
 	.long	0xbf800000
 .LCPI1_2:
 	.long	0x43b40000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcmpgtps	.LCPI1_0(%rip){1to16}, %zmm0, %k1
 	vaddps	.LCPI1_1(%rip){1to16}, %zmm0, %zmm0 {%k1}

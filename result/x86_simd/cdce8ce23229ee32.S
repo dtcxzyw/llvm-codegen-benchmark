@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4294966896
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
@@ -14,6 +15,7 @@ func0000000000000061:
 
 .LCPI1_0:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000046:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
@@ -24,6 +26,7 @@ func0000000000000046:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
@@ -37,6 +40,7 @@ func0000000000000001:
 
 .LCPI3_0:
 	.quad	4294967294
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
@@ -47,6 +51,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -58,6 +63,7 @@ func000000000000000c:
 
 .LCPI5_0:
 	.quad	4294967294
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000048:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -66,6 +72,7 @@ func0000000000000048:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -75,6 +82,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000041:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -86,6 +94,7 @@ func0000000000000041:
 
 .LCPI8_0:
 	.quad	4294967294
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -96,6 +105,7 @@ func0000000000000008:
 
 .LCPI9_0:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000066:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
@@ -106,6 +116,7 @@ func0000000000000066:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000004c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -117,6 +128,7 @@ func000000000000004c:
 
 .LCPI11_0:
 	.long	65535
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000004a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

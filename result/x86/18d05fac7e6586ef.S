@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	notl	%edx
 	testl	$2064, %edx
@@ -7,6 +8,7 @@ func0000000000000002:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	testl	$577, %edx
 	setne	%al
@@ -14,6 +16,7 @@ func0000000000000018:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	andl	$65532, %edx
 	cmpl	$36, %edx

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movq	%rsi, %rax
 	movabsq	$2361183241434822607, %rcx
@@ -10,18 +11,21 @@ func0000000000000000:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	shrq	$4, %rsi
 	imull	$-1227133513, %esi, %eax
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	shrq	$4, %rsi
 	imull	$-1431655765, %esi, %eax
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	movq	%rsi, %rax
 	movabsq	$1749024623285053783, %rcx
@@ -33,6 +37,7 @@ func0000000000000001:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	movq	%rsi, %rax
 	movabsq	$1749024623285053783, %rcx
@@ -44,6 +49,7 @@ func0000000000000005:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	movq	%rsi, %rax
 	movabsq	$3667970486771497111, %rcx

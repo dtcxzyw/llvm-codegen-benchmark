@@ -16,6 +16,7 @@
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007e:
 	vpaddw	%ymm1, %ymm1, %ymm2
 	vpaddw	%ymm0, %ymm1, %ymm0

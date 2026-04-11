@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f4:
 	andb	$15, %dil
 	leal	48(%rdi), %eax

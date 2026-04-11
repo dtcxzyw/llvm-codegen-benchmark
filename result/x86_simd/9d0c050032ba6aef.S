@@ -3,6 +3,7 @@
 	.long	4
 .LCPI0_1:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1
@@ -19,6 +20,7 @@ func00000000000000e1:
 	.long	8
 .LCPI1_2:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1
@@ -33,6 +35,7 @@ func00000000000000a1:
 	.long	4
 .LCPI2_1:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c1:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1

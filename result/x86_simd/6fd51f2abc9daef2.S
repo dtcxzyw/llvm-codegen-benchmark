@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpmovdw	%ymm0, %xmm0
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
@@ -50,6 +51,7 @@ func0000000000000007:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpmovdw	%ymm0, %xmm0
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
@@ -66,6 +68,7 @@ func0000000000000006:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI2_0(%rip), %xmm0, %xmm0
@@ -81,6 +84,7 @@ func000000000000000e:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI3_0(%rip), %xmm0, %xmm0
@@ -108,6 +112,7 @@ func000000000000000c:
 .LCPI4_2:
 	.short	65528
 	.short	65528
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpmovdw	%ymm0, %xmm0
 	vpandd	.LCPI4_2(%rip){1to4}, %xmm0, %xmm0
@@ -127,6 +132,7 @@ func0000000000000000:
 .LCPI5_1:
 	.short	511
 	.short	511
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	vpmovdw	%ymm0, %xmm0
 	vpandd	.LCPI5_1(%rip){1to4}, %xmm0, %xmm0
@@ -166,6 +172,7 @@ func000000000000000f:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	vpmovdw	%ymm0, %xmm0
 	vpandd	.LCPI6_2(%rip){1to4}, %xmm0, %xmm0

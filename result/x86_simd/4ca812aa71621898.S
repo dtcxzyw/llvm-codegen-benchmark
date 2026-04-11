@@ -55,6 +55,7 @@
 	.byte	170
 .LCPI0_5:
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -121,6 +122,7 @@ func0000000000000007:
 	.byte	170
 .LCPI1_5:
 	.byte	7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1

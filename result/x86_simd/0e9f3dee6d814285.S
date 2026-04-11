@@ -10,6 +10,7 @@
 	.short	47680
 .LCPI0_1:
 	.long	125
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpmovzxwd	%xmm0, %ymm0

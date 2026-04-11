@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	-8198552921648689607
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b5:
 	vpsraq	$3, %ymm2, %ymm2
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
@@ -15,6 +16,7 @@ func00000000000000b5:
 
 .LCPI1_0:
 	.quad	-8198552921648689607
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000090:
 	vpsraq	$3, %ymm2, %ymm2
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3

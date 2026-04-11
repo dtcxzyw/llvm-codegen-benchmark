@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	notb	%dil
 	cmpq	%rdx, %rsi
@@ -10,6 +11,7 @@ func0000000000000001:
 	orq	$9, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
@@ -21,6 +23,7 @@ func000000000000000c:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	notb	%dil
 	movzbl	%dil, %eax
@@ -31,6 +34,7 @@ func0000000000000004:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	cmpq	%rdx, %rsi
 	seta	%al
@@ -39,6 +43,7 @@ func0000000000000008:
 	orq	$2, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	cmpq	%rdx, %rsi
 	setbe	%al

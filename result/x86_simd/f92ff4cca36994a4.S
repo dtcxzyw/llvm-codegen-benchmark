@@ -3,6 +3,7 @@
 	.long	4294967243
 .LCPI0_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000308:
 	vpbroadcastd	.LCPI0_0(%rip), %xmm3
 	vpsubd	%xmm2, %xmm3, %xmm2

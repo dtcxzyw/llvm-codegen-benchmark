@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1052672
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vorps	%ymm2, %ymm1, %ymm1
 	vptestmw	%xmm0, %xmm0, %k1
@@ -19,6 +20,7 @@ func0000000000000001:
 	.short	11
 .LCPI1_1:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000068:
 	vorps	%ymm2, %ymm1, %ymm1
 	vpcmpleuw	.LCPI1_0(%rip), %xmm0, %k1
@@ -37,6 +39,7 @@ func0000000000000068:
 	.short	11
 .LCPI2_1:
 	.long	3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000048:
 	vorps	%ymm2, %ymm1, %ymm1
 	vpcmpleuw	.LCPI2_0(%rip), %xmm0, %k1
@@ -55,6 +58,7 @@ func0000000000000048:
 	.short	1
 .LCPI3_1:
 	.long	262144
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	vorps	%ymm2, %ymm1, %ymm1
 	vpcmpneqw	.LCPI3_0(%rip), %xmm0, %k1

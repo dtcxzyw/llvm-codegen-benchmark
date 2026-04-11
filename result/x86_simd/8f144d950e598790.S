@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1
@@ -9,6 +10,7 @@ func0000000000000018:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1
@@ -19,6 +21,7 @@ func0000000000000007:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1
@@ -31,6 +34,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.long	0x38d1b717
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000012:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1
@@ -42,6 +46,7 @@ func0000000000000012:
 
 .LCPI4_0:
 	.long	0x38d1b717
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1
@@ -51,6 +56,7 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1
@@ -63,6 +69,7 @@ func0000000000000004:
 
 .LCPI6_0:
 	.long	0x38d1b717
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000002:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1
@@ -74,6 +81,7 @@ func0000000000000002:
 
 .LCPI7_0:
 	.long	0x40000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000005:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm1, %zmm1

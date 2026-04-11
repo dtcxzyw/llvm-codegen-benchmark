@@ -3,6 +3,7 @@
 	.long	512
 .LCPI0_1:
 	.long	7680
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -15,6 +16,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	1046528
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -26,6 +28,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.long	1073479680
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -39,6 +42,7 @@ func0000000000000007:
 	.long	524288
 .LCPI3_1:
 	.long	4128768
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3

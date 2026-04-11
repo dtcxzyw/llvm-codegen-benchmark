@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	shrb	%dl
 	andb	$2, %dl
@@ -7,6 +8,7 @@ func0000000000000007:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	shrb	$2, %dl
 	andb	$1, %dl

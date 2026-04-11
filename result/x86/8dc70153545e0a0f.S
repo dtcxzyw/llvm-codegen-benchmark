@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000488:
 	bswapl	%esi
 	cmpl	$8, %esi
@@ -8,6 +9,7 @@ func0000000000000488:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000428:
 	bswapl	%esi
 	cmpl	$16385, %esi

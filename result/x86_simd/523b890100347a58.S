@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpsrld	$6, %xmm1, %xmm1
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -29,6 +30,7 @@ func0000000000000026:
 	.byte	128
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpshufb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -63,6 +65,7 @@ func0000000000000021:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	vpsrld	$23, %xmm1, %xmm1
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm1, %xmm1
@@ -92,6 +95,7 @@ func000000000000002a:
 	.byte	128
 .LCPI3_1:
 	.long	4294967169
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002b:
 	vpshufb	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpaddd	.LCPI3_1(%rip){1to4}, %xmm1, %xmm1
@@ -120,6 +124,7 @@ func000000000000002b:
 	.byte	128
 .LCPI4_1:
 	.long	4294967169
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000027:
 	vpshufb	.LCPI4_0(%rip), %xmm1, %xmm1
 	vpaddd	.LCPI4_1(%rip){1to4}, %xmm1, %xmm1

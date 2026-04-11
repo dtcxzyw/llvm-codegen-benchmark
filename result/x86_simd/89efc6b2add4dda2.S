@@ -3,6 +3,7 @@
 	.long	8
 .LCPI0_1:
 	.long	7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrld	$4, %xmm0, %xmm1
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -32,6 +33,7 @@ func0000000000000003:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpsrld	$12, %xmm0, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2

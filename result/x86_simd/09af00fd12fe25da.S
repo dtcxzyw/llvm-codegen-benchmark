@@ -7,6 +7,7 @@
 	.long	12
 .LCPI0_3:
 	.long	80
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000017:
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1
@@ -21,6 +22,7 @@ func0000000000000017:
 	.long	3
 .LCPI1_2:
 	.long	10
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1
@@ -35,6 +37,7 @@ func0000000000000010:
 	.long	3
 .LCPI2_2:
 	.long	6
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm1

@@ -5,6 +5,7 @@
 	.quad	230584300921369395
 .LCPI0_2:
 	.quad	-3689348814741910323
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a4:
 	vpsraq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1

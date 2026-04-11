@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsllq	$29, %ymm1, %ymm1
@@ -7,6 +8,7 @@ func000000000000000f:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsllq	$30, %ymm1, %ymm1

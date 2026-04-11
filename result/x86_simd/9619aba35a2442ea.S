@@ -3,6 +3,7 @@
 	.quad	4294967295
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000114:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -16,6 +17,7 @@ func0000000000000114:
 	.quad	12
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -28,6 +30,7 @@ func0000000000000021:
 
 .LCPI2_0:
 	.quad	-4096
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -37,6 +40,7 @@ func000000000000008c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	vpslld	$31, %xmm0, %xmm0
 	vptestmd	%xmm1, %xmm1, %k1
@@ -51,6 +55,7 @@ func000000000000018c:
 	.long	15
 .LCPI4_1:
 	.quad	20
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000010a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -64,6 +69,7 @@ func000000000000010a:
 	.quad	2
 .LCPI5_1:
 	.long	8
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000181:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -75,6 +81,7 @@ func0000000000000181:
 
 .LCPI6_0:
 	.long	114
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000141:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -90,6 +97,7 @@ func0000000000000141:
 	.long	6
 .LCPI7_1:
 	.quad	256
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -101,6 +109,7 @@ func000000000000002a:
 
 .LCPI8_0:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000014a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -113,6 +122,7 @@ func000000000000014a:
 
 .LCPI9_0:
 	.long	2
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000034:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -124,6 +134,7 @@ func0000000000000034:
 
 .LCPI10_0:
 	.long	3
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000154:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -135,6 +146,7 @@ func0000000000000154:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

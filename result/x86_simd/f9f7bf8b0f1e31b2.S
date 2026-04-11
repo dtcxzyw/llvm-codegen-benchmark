@@ -10,6 +10,7 @@
 	.short	256
 .LCPI0_1:
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000421:
 	vpbroadcastw	.LCPI0_1(%rip), %xmm3
 	vpcmpeqw	%xmm3, %xmm2, %k1
@@ -21,6 +22,7 @@ func0000000000000421:
 
 .LCPI1_0:
 	.long	2048
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000042a:
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vptestnmw	%xmm1, %xmm1, %k1 {%k1}

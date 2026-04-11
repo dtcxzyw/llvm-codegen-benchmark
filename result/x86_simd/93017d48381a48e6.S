@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000068c:
 	vpopcntq	%ymm1, %ymm1
 	vpcmpltq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
@@ -13,6 +14,7 @@ func000000000000068c:
 	.long	8
 .LCPI1_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000684:
 	vpopcntq	%ymm1, %ymm1
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k1
@@ -25,6 +27,7 @@ func0000000000000684:
 	.long	255
 .LCPI2_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000688:
 	vpopcntq	%ymm1, %ymm1
 	vpcmpnleud	.LCPI2_0(%rip){1to4}, %xmm0, %k1
@@ -37,6 +40,7 @@ func0000000000000688:
 	.long	2
 .LCPI3_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000428:
 	vpopcntq	%ymm1, %ymm1
 	vpcmpnleud	.LCPI3_0(%rip){1to4}, %xmm0, %k1
@@ -47,6 +51,7 @@ func0000000000000428:
 
 .LCPI4_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000028c:
 	vpopcntq	%ymm1, %ymm1
 	vpcmpltq	.LCPI4_0(%rip){1to4}, %ymm1, %k1

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	imulq	$365, %rsi, %rax
 	movslq	%edi, %rcx
 	leaq	-25550(%rax,%rcx), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	imulq	$2000000, %rsi, %rax
 	movslq	%edi, %rcx

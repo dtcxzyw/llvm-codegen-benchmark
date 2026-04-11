@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -10,6 +11,7 @@ func00000000000000aa:
 
 .LCPI1_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -18,6 +20,7 @@ func00000000000000a6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000101:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -27,6 +30,7 @@ func0000000000000101:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000081:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -38,6 +42,7 @@ func0000000000000081:
 
 .LCPI4_0:
 	.quad	-16
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c8:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -46,6 +51,7 @@ func00000000000000c8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c6:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -55,6 +61,7 @@ func00000000000000c6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000141:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -66,6 +73,7 @@ func0000000000000141:
 
 .LCPI7_0:
 	.quad	-7
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000104:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -76,6 +84,7 @@ func0000000000000104:
 
 .LCPI8_0:
 	.quad	-10
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000108:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -86,6 +95,7 @@ func0000000000000108:
 
 .LCPI9_0:
 	.quad	-3
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000148:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -96,6 +106,7 @@ func0000000000000148:
 
 .LCPI10_0:
 	.quad	-3
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000004:
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -106,6 +117,7 @@ func0000000000000004:
 
 .LCPI11_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000044:
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0

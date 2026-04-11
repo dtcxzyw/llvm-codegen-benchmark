@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	addq	$131, %rdx
 	shrq	$7, %rdx
@@ -7,6 +8,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	addq	$4095, %rdx
 	shrq	$12, %rdx

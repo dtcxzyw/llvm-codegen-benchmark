@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vptestmq	%ymm1, %ymm1, %k1
 	vpsrlq	$32, %ymm0, %ymm0
@@ -10,6 +11,7 @@ func000000000000000a:
 	.quad	23
 .LCPI1_1:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a7:
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vpsrlq	$3, %ymm0, %ymm0
@@ -20,6 +22,7 @@ func00000000000000a7:
 
 .LCPI2_0:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vpcmpleuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vpsrlq	$32, %ymm0, %ymm0
@@ -31,6 +34,7 @@ func0000000000000042:
 	.quad	-9223372036854775808
 .LCPI3_1:
 	.long	1073741824
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vpcmpeqq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vpsrlq	$32, %ymm0, %ymm0

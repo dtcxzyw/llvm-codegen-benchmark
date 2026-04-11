@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpmovqw	%ymm0, %xmm0
 	vpmulhw	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -17,6 +18,7 @@ func0000000000000002:
 	vpmovsxwq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqw	%ymm0, %xmm0
 	vpsraw	$15, %xmm0, %xmm1

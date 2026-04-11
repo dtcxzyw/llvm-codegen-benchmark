@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	31
 	.byte	30
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
@@ -75,6 +76,7 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm1, %ymm0
 	retq
@@ -117,6 +119,7 @@ func0000000000000009:
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpternlogd	$248, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0
 	retq
@@ -154,6 +157,7 @@ func0000000000000001:
 	.byte	31
 	.byte	30
 	.byte	29
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpshufb	.LCPI3_0(%rip), %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0

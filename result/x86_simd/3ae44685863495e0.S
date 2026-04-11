@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
@@ -45,6 +46,7 @@ func0000000000000001:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
@@ -70,6 +72,7 @@ func0000000000000021:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpmovdb	%ymm0, %xmm1
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -97,6 +100,7 @@ func0000000000000061:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
@@ -105,6 +109,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000048:
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
@@ -129,6 +134,7 @@ func0000000000000048:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000041:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpeqd	.LCPI5_0(%rip){1to8}, %ymm0, %k1
@@ -139,6 +145,7 @@ func0000000000000041:
 
 .LCPI6_0:
 	.long	10
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vpmovdb	%ymm0, %xmm1
 	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm0, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm1, %xmm1
@@ -29,6 +30,7 @@ func0000000000000184:
 	.short	7
 	.short	7
 	.short	7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000104:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm1, %xmm1
@@ -57,6 +59,7 @@ func0000000000000104:
 	.short	28
 	.short	28
 	.short	28
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm1, %xmm1

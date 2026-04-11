@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
@@ -7,6 +8,7 @@ func0000000000000086:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	subq	%rdx, %rsi
 	shrq	$4, %rsi
@@ -15,6 +17,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
@@ -23,6 +26,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000008a:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
@@ -31,6 +35,7 @@ func000000000000008a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000089:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
@@ -39,6 +44,7 @@ func0000000000000089:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000088:
 	subq	%rdx, %rsi
 	shrq	$4, %rsi
@@ -47,6 +53,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000008b:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
@@ -55,6 +62,7 @@ func000000000000008b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000094:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
@@ -63,6 +71,7 @@ func0000000000000094:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	movabsq	$-8608480567731124087, %rcx
@@ -77,6 +86,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000008c:
 	subq	%rdx, %rsi
 	shrq	$4, %rsi
@@ -85,6 +95,7 @@ func000000000000008c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000005:
 	subq	%rdx, %rsi
 	leaq	31(%rsi), %rax
@@ -95,6 +106,7 @@ func0000000000000005:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000001:
 	subq	%rdx, %rsi
 	leaq	33554431(%rsi), %rax
@@ -105,6 +117,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000087:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi
@@ -113,6 +126,7 @@ func0000000000000087:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000098:
 	subq	%rdx, %rsi
 	shrq	$3, %rsi

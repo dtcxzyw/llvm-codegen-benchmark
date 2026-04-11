@@ -11,6 +11,7 @@
 	.zero	4,1
 .LCPI0_5:
 	.zero	4,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpternlogd	$248, .LCPI0_4(%rip){1to4}, %xmm2, %xmm1
@@ -29,6 +30,7 @@ func0000000000000003:
 	.zero	4,240
 .LCPI1_5:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpternlogd	$248, .LCPI1_4(%rip){1to4}, %xmm2, %xmm1
@@ -43,6 +45,7 @@ func0000000000000001:
 	.zero	4,129
 .LCPI2_3:
 	.zero	4,127
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0

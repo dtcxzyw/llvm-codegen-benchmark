@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vptestmb	%xmm2, %xmm2, %k0
 	vpand	%xmm1, %xmm0, %xmm0
@@ -8,6 +9,7 @@ func000000000000000c:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vptestnmb	%xmm2, %xmm2, %k0
 	vpand	%xmm1, %xmm0, %xmm0

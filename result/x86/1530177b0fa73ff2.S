@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000600:
 	cmpl	$1, %edx
 	sbbq	$-1, %rsi
 	leaq	1(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000400:
 	xorl	%eax, %eax
 	cmpl	$127, %edx

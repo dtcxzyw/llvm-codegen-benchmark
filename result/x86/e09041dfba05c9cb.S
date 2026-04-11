@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	movl	%esi, %eax
 	andb	$4, %al
@@ -6,18 +7,21 @@ func000000000000000c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	testb	$15, %sil
 	sete	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	testb	$2, %sil
 	sete	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	movl	%esi, %eax
 	andb	$2, %al
@@ -25,6 +29,7 @@ func0000000000000018:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	testb	$-80, %sil
 	sete	%al

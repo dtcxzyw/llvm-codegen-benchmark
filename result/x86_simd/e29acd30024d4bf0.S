@@ -3,6 +3,7 @@
 	.long	1
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vbroadcastss	.LCPI0_0(%rip), %ymm1
@@ -50,6 +51,7 @@ func0000000000000003:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vandps	.LCPI1_2(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1

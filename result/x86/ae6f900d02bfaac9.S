@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000051:
 	movslq	%esi, %rcx
 	imulq	$274877907, %rcx, %rax
@@ -14,6 +15,7 @@ func0000000000000051:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	movslq	%esi, %rcx
 	imulq	$1431655766, %rcx, %rax
@@ -29,6 +31,7 @@ func0000000000000061:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000031:
 	movslq	%esi, %rcx
 	imulq	$715827883, %rcx, %rax

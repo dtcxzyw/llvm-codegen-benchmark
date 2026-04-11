@@ -3,6 +3,7 @@
 	.long	48
 .LCPI0_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestmd	%ymm1, %ymm1, %k1
 	vorps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
@@ -15,6 +16,7 @@ func0000000000000003:
 	.long	1020
 .LCPI1_2:
 	.long	98
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1

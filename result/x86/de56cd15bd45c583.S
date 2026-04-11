@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	addl	%edx, %edx
 	andl	$2, %edx
@@ -8,6 +9,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e8:
 	shll	$12, %edx
 	movzwl	%dx, %eax

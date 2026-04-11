@@ -37,6 +37,7 @@
 	.byte	64
 .LCPI0_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovdb	%ymm0, %xmm1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm0
@@ -82,6 +83,7 @@ func0000000000000006:
 	.byte	32
 .LCPI1_3:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpmovdb	%ymm0, %xmm1
 	vpbroadcastb	.LCPI1_2(%rip), %xmm0
@@ -127,6 +129,7 @@ func0000000000000007:
 	.byte	2
 .LCPI2_3:
 	.zero	4,240
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmovdb	%ymm0, %xmm1
 	vpbroadcastb	.LCPI2_2(%rip), %xmm0

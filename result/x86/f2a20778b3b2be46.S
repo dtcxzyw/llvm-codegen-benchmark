@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003d:
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -7,6 +8,7 @@ func000000000000003d:
 	leal	2(%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	andb	$1, %dil
 	xorl	%eax, %eax
@@ -17,6 +19,7 @@ func0000000000000000:
 	leal	-1640531527(%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -25,6 +28,7 @@ func0000000000000005:
 	leal	1(%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
 	xorl	%eax, %eax
 	testb	$1, %dil

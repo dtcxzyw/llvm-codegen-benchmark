@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -17,6 +19,7 @@ func0000000000000026:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000188:
 	cmpq	$3, %rdx
 	setne	%cl
@@ -26,6 +29,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018a:
 	movabsq	$4415226380290, %rax
 	cmpq	%rax, %rdx

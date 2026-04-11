@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x33800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -13,6 +14,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -25,6 +27,7 @@ func0000000000000010:
 
 .LCPI2_0:
 	.long	0x430c0000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -35,6 +38,7 @@ func0000000000000016:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%zmm3, %zmm2, %k0
@@ -48,6 +52,7 @@ func0000000000000008:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001c:
 	vcmpneqps	.LCPI4_0(%rip){1to16}, %zmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -58,6 +63,7 @@ func000000000000001c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -71,6 +77,7 @@ func0000000000000006:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000e:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -81,6 +88,7 @@ func000000000000000e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000020:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqps	%zmm3, %zmm2, %k0
@@ -94,6 +102,7 @@ func0000000000000020:
 
 .LCPI8_0:
 	.long	0x3f800347
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	vcmpnleps	.LCPI8_0(%rip){1to16}, %zmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -106,6 +115,7 @@ func0000000000000014:
 
 .LCPI9_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000024:
 	vcmpeq_uqps	.LCPI9_0(%rip){1to16}, %zmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -118,6 +128,7 @@ func0000000000000024:
 
 .LCPI10_0:
 	.long	0x43000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000018:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -130,6 +141,7 @@ func0000000000000018:
 
 .LCPI11_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000a:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1

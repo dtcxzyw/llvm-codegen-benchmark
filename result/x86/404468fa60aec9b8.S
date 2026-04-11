@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	movl	$33027, %eax
 	btq	%rdi, %rax
@@ -6,6 +7,7 @@ func0000000000000061:
 	sbbl	$-1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	movl	$23, %eax
 	xorl	%ecx, %ecx
@@ -14,6 +16,7 @@ func0000000000000041:
 	leal	(%rcx,%rcx,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	movq	$-2, %rax
 	shlxq	%rdi, %rax, %rax

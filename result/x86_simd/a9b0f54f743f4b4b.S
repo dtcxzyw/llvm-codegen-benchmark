@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	32
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpord	.LCPI0_1(%rip){1to8}, %ymm0, %ymm3
 	vpor	%xmm2, %xmm1, %xmm1

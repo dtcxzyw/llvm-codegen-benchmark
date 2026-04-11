@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm1, %xmm3
 	vcmpltsd	%xmm2, %xmm3, %k1
@@ -10,6 +11,7 @@ func0000000000000012:
 
 .LCPI1_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vandpd	.LCPI1_0(%rip){1to2}, %xmm1, %xmm3
 	vcmpltsd	%xmm3, %xmm2, %k1
@@ -19,6 +21,7 @@ func0000000000000014:
 
 .LCPI2_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm3
 	vcmpltsd	%xmm3, %xmm2, %k1
@@ -28,6 +31,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vandpd	.LCPI3_0(%rip){1to2}, %xmm1, %xmm3
 	vcmpltsd	%xmm2, %xmm3, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x460ca000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vdivps	.LCPI0_0(%rip){1to16}, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2

@@ -3,6 +3,7 @@
 	.quad	3
 .LCPI0_1:
 	.quad	1441151881
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000033:
 	vpcmpltq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
@@ -28,6 +29,7 @@ func0000000000000033:
 	.byte	2
 	.byte	3
 	.byte	3
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vptestnmq	%ymm2, %ymm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}

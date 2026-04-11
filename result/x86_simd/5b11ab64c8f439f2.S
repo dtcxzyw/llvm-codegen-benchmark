@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	-2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vptestnmb	.LCPI0_0(%rip), %xmm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

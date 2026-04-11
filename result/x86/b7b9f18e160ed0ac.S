@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	127(%rsi), %ecx
 	andl	$-128, %ecx
@@ -7,6 +8,7 @@ func0000000000000000:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	leal	4(%rsi), %ecx
 	andl	$2147483644, %ecx

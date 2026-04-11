@@ -74,6 +74,7 @@
 	.byte	66
 	.byte	57
 	.byte	185
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpxorq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0
@@ -112,6 +113,7 @@ func0000000000000001:
 	.byte	10
 	.byte	9
 	.byte	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0

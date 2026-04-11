@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	testl	%esi, %esi
 	setne	%cl
@@ -7,6 +8,7 @@ func000000000000018c:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000141:
 	testq	%rsi, %rsi
 	setns	%cl
@@ -15,6 +17,7 @@ func0000000000000141:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000186:
 	cmpl	$210, %esi
 	setne	%cl
@@ -23,6 +26,7 @@ func0000000000000186:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	movabsq	$4294967297, %rax
 	cmpq	%rax, %rsi
@@ -32,6 +36,7 @@ func0000000000000021:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	testl	%esi, %esi
 	setne	%cl
@@ -40,6 +45,7 @@ func0000000000000181:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -48,6 +54,7 @@ func0000000000000026:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000014c:
 	testq	%rsi, %rsi
 	setns	%cl
@@ -56,6 +63,7 @@ func000000000000014c:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002c:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -64,6 +72,7 @@ func000000000000002c:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000cc:
 	testl	%esi, %esi
 	setle	%cl
@@ -72,6 +81,7 @@ func00000000000000cc:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002a:
 	cmpl	$1, %esi
 	sete	%cl
@@ -80,6 +90,7 @@ func000000000000002a:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000184:
 	testl	%esi, %esi
 	setne	%cl

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e4:
 	movl	%edi, %eax
 	leaq	16(,%rax,8), %rcx
@@ -7,6 +8,7 @@ func00000000000001e4:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003ea:
 	movl	%edi, %eax
 	leaq	8(,%rax,4), %rcx

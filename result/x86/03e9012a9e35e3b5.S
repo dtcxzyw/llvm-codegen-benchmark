@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004a:
 	shrq	$3, %rsi
 	movabsq	$6148914691236517205, %rax
@@ -8,6 +9,7 @@ func000000000000004a:
 	leaq	48(,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004b:
 	shrq	$3, %rsi
 	movabsq	$6148914691236517205, %rax
@@ -17,6 +19,7 @@ func000000000000004b:
 	leaq	48(,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000007b:
 	shrq	$4, %rsi
 	movabsq	$-5675921253449092805, %rax

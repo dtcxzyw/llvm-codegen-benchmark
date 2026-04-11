@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
 	addq	%r8, %rdx
 	adcq	%r9, %rcx
@@ -8,6 +9,7 @@ func0000000000000141:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000144:
 	addq	%r8, %rdx
 	adcq	%r9, %rcx

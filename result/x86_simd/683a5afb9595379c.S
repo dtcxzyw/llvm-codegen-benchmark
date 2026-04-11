@@ -25,6 +25,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
@@ -57,6 +58,7 @@ func0000000000000004:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vgf2p8affineqb	$0, .LCPI1_1(%rip){1to2}, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
@@ -89,6 +91,7 @@ func0000000000000007:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vgf2p8affineqb	$0, .LCPI2_1(%rip){1to2}, %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0

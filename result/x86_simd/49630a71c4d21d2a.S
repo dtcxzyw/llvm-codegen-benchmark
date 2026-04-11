@@ -34,6 +34,7 @@
 	.byte	0
 .LCPI0_1:
 	.quad	255
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	vpandq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	vpcmpneqq	.LCPI0_1(%rip){1to4}, %ymm0, %k1
@@ -46,6 +47,7 @@ func000000000000018c:
 	.quad	15
 .LCPI1_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000198:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0

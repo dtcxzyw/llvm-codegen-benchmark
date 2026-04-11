@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpslld	$31, %xmm1, %xmm1
 	vpslld	$31, %xmm0, %xmm0
@@ -12,6 +13,7 @@ func0000000000000018:
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpslld	$31, %xmm1, %xmm1
 	vpslld	$31, %xmm0, %xmm0
@@ -25,6 +27,7 @@ func000000000000000c:
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpslld	$31, %xmm1, %xmm1
 	vpslld	$31, %xmm0, %xmm0

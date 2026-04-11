@@ -21,6 +21,7 @@
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxwd	%xmm0, %ymm0

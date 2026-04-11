@@ -5,6 +5,7 @@
 	.quad	0x3fb54fdf3b645a1d
 .LCPI0_2:
 	.quad	0x3fd54fdf3b645a1d
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	kmovd	%esi, %k1
 	vmovsd	.LCPI0_0(%rip), %xmm0

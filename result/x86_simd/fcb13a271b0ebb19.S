@@ -5,6 +5,7 @@
 	.quad	102631199
 .LCPI0_1:
 	.long	32768
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000d84:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
@@ -20,6 +21,7 @@ func0000000000000d84:
 	.quad	131024
 .LCPI1_1:
 	.long	6
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000984:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1

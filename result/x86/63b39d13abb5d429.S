@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	testb	$1, %sil
 	movl	$1, %eax
@@ -11,6 +12,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.quad	0xc1e0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	testb	$1, %sil
 	movl	$-2147483648, %eax

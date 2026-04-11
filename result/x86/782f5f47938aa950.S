@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	movq	%rdi, %rdx
 	shrq	$4, %rdx
@@ -13,6 +14,7 @@ func0000000000000005:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	movq	%rdi, %rdx
 	shrq	$18, %rdx
@@ -29,6 +31,7 @@ func000000000000000f:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	movq	%rdi, %rdx
 	movabsq	$4835703278458516699, %rax
@@ -43,6 +46,7 @@ func0000000000000000:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	movq	%rdi, %rdx
 	movabsq	$-7442832613395060283, %rax

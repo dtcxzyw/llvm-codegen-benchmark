@@ -5,6 +5,7 @@
 	.zero	16,36
 .LCPI0_2:
 	.zero	16,230
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000118c:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm0, %k1
 	vpcmpneqb	.LCPI0_1(%rip), %xmm0, %k1 {%k1}

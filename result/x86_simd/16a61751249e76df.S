@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -9,6 +10,7 @@ func0000000000000010:
 
 .LCPI1_0:
 	.long	1200080426
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -17,6 +19,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.long	28
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -25,12 +28,14 @@ func000000000000000c:
 
 .LCPI3_0:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001d:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -40,6 +45,7 @@ func000000000000001d:
 
 .LCPI5_0:
 	.long	8
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -48,12 +54,14 @@ func0000000000000005:
 
 .LCPI6_0:
 	.long	5
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000015:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000003f:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -63,6 +71,7 @@ func000000000000003f:
 
 .LCPI8_0:
 	.long	16
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -71,6 +80,7 @@ func0000000000000014:
 
 .LCPI9_0:
 	.long	16
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000030:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -79,6 +89,7 @@ func0000000000000030:
 
 .LCPI10_0:
 	.long	8
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000d:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -87,6 +98,7 @@ func000000000000000d:
 
 .LCPI11_0:
 	.long	4238353408
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000007:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -95,6 +107,7 @@ func0000000000000007:
 
 .LCPI12_0:
 	.long	146097
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000001c:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -103,6 +116,7 @@ func000000000000001c:
 
 .LCPI13_0:
 	.long	4238353408
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000017:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -111,6 +125,7 @@ func0000000000000017:
 
 .LCPI14_0:
 	.long	16842752
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000011:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -119,6 +134,7 @@ func0000000000000011:
 
 .LCPI15_0:
 	.long	4
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000035:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -127,6 +143,7 @@ func0000000000000035:
 
 .LCPI16_0:
 	.long	5
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000018:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -135,6 +152,7 @@ func0000000000000018:
 
 .LCPI17_0:
 	.long	2
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000020:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -143,6 +161,7 @@ func0000000000000020:
 
 .LCPI18_0:
 	.long	4
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000008:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -151,6 +170,7 @@ func0000000000000008:
 
 .LCPI19_0:
 	.long	4294967290
+	.prefalign	4, .Lfunc_end19, nop
 func000000000000001e:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -159,6 +179,7 @@ func000000000000001e:
 
 .LCPI20_0:
 	.long	4
+	.prefalign	4, .Lfunc_end20, nop
 func000000000000003c:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -167,6 +188,7 @@ func000000000000003c:
 
 .LCPI21_0:
 	.long	16
+	.prefalign	4, .Lfunc_end21, nop
 func000000000000003a:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -175,6 +197,7 @@ func000000000000003a:
 
 .LCPI22_0:
 	.long	2
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000001:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

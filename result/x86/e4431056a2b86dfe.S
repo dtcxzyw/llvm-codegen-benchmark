@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	movq	%rdi, %rax
 	addl	$6, %edx
@@ -6,6 +7,7 @@ func000000000000000c:
 	subq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001c:
 	movq	%rdi, %rax
 	decl	%edx
@@ -14,6 +16,7 @@ func000000000000001c:
 	subq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	movq	%rdi, %rax
 	addq	$-8, %rdx

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	subq	%rsi, %rdi
 	movq	%rdi, %rdx
@@ -12,6 +13,7 @@ func0000000000000009:
 	subq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	subq	%rsi, %rdi
 	movabsq	$4835703278458516699, %rax
@@ -21,6 +23,7 @@ func0000000000000002:
 	imulq	$125000, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
@@ -32,6 +35,7 @@ func0000000000000008:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	subq	%rsi, %rdi
 	movabsq	$-9187201950435737471, %rax
@@ -43,6 +47,7 @@ func0000000000000000:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	subq	%rsi, %rdi
 	movabsq	$5675921253449092805, %rax
@@ -52,6 +57,7 @@ func000000000000000a:
 	imulq	$52, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000003:
 	subq	%rsi, %rdi
 	movabsq	$4835703278458516699, %rax

@@ -25,6 +25,7 @@
 	.byte	0
 	.byte	0
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0

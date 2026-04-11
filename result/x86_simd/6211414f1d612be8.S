@@ -16,6 +16,7 @@
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpshufb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -39,6 +40,7 @@ func0000000000000001:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpshufb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

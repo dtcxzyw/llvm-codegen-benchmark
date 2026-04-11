@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	cmpq	$1, %rdx
 	sete	%cl
@@ -8,6 +9,7 @@ func000000000000002c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	testq	%rdx, %rdx
 	setne	%cl
@@ -17,6 +19,7 @@ func000000000000018c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	cmpl	$1, %edx
 	sete	%cl
@@ -26,6 +29,7 @@ func0000000000000021:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	cmpl	$1, %edx
 	sete	%al
@@ -35,6 +39,7 @@ func0000000000000028:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000114:
 	cmpq	$21, %rdx
 	setae	%cl
@@ -44,6 +49,7 @@ func0000000000000114:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000024:
 	testl	%edx, %edx
 	sete	%al
@@ -53,6 +59,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000181:
 	testl	%edx, %edx
 	setne	%cl
@@ -62,6 +69,7 @@ func0000000000000181:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002a:
 	testl	%edx, %edx
 	sete	%cl
@@ -71,6 +79,7 @@ func000000000000002a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000198:
 	testl	%edx, %edx
 	setne	%cl
@@ -80,6 +89,7 @@ func0000000000000198:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000008c:
 	cmpq	$65536, %rdx
 	setb	%cl
@@ -89,6 +99,7 @@ func000000000000008c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000184:
 	testq	%rdx, %rdx
 	setne	%cl
@@ -98,6 +109,7 @@ func0000000000000184:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000038:
 	testl	%edx, %edx
 	sete	%cl

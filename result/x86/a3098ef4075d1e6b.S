@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	lzcntq	%rdx, %rax
 	movl	$64, %ecx

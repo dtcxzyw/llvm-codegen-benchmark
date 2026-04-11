@@ -33,6 +33,7 @@
 	.short	50740
 	.short	50740
 	.short	50740
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

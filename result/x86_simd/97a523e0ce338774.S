@@ -3,6 +3,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vmovdqu16	%xmm1, %xmm0 {%k1}
@@ -22,6 +23,7 @@ func0000000000000018:
 .LCPI1_1:
 	.short	8192
 	.short	8192
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vmovdqu16	%xmm0, %xmm1 {%k1}
@@ -41,6 +43,7 @@ func0000000000000002:
 .LCPI2_1:
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vmovdqu16	%xmm0, %xmm1 {%k1}

@@ -10,6 +10,7 @@
 	.zero	2
 .LCPI0_1:
 	.short	40
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpsllw	$3, %xmm0, %xmm0
 	vpbroadcastw	.LCPI0_1(%rip), %xmm1

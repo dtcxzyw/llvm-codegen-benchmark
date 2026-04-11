@@ -20,6 +20,7 @@
 .LCPI0_2:
 	.short	31
 	.short	31
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpaddw	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -39,6 +40,7 @@ func000000000000001f:
 .LCPI1_1:
 	.short	32767
 	.short	32767
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -47,6 +49,7 @@ func000000000000000f:
 	vpslld	$2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001c:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0

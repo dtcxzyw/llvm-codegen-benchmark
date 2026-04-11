@@ -13,6 +13,7 @@
 	.short	2048
 	.short	2048
 	.short	2048
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1
@@ -36,6 +37,7 @@ func0000000000000001:
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI1_2(%rip){1to4}, %xmm0, %xmm1

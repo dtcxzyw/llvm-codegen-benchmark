@@ -20,6 +20,7 @@
 	.short	0
 	.short	1000
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$5, %ymm0, %ymm0
@@ -46,6 +47,7 @@ func0000000000000002:
 	.long	10000
 .LCPI1_2:
 	.long	429497
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1

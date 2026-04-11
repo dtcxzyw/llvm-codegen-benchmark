@@ -3,6 +3,7 @@
 	.quad	-7070675565921424023
 .LCPI0_1:
 	.quad	2654435769
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -14,6 +15,7 @@ func0000000000000000:
 	.quad	100
 .LCPI1_1:
 	.quad	-53328
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000055:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -25,6 +27,7 @@ func0000000000000055:
 	.quad	29
 .LCPI2_1:
 	.quad	128
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ff:
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -36,6 +39,7 @@ func00000000000000ff:
 	.quad	86400
 .LCPI3_1:
 	.quad	-41212800
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -45,6 +49,7 @@ func0000000000000005:
 
 .LCPI4_0:
 	.quad	544
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000fe:
 	vpbroadcastq	.LCPI4_0(%rip), %ymm3
 	vpmullq	%ymm3, %ymm2, %ymm2
@@ -57,6 +62,7 @@ func00000000000000fe:
 	.quad	100
 .LCPI5_1:
 	.quad	4294962396
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000f5:
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -64,6 +70,7 @@ func00000000000000f5:
 	vpaddq	.LCPI5_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000fc:
 	vpsllq	$4, %ymm2, %ymm3
 	vpaddq	%ymm1, %ymm2, %ymm1
@@ -77,6 +84,7 @@ func00000000000000fc:
 	.quad	100
 .LCPI7_1:
 	.quad	-6313183731941900
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000d5:
 	vpmullq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -88,6 +96,7 @@ func00000000000000d5:
 	.quad	86400
 .LCPI8_1:
 	.quad	-62135683200
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000057:
 	vpmullq	.LCPI8_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -99,6 +108,7 @@ func0000000000000057:
 	.quad	8168
 .LCPI9_1:
 	.quad	8152
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000f0:
 	vpmullq	.LCPI9_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0

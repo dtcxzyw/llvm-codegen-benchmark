@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000126:
 	vpaddd	%ymm2, %ymm0, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
@@ -9,6 +10,7 @@ func0000000000000126:
 	vpaddd	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	vpaddd	%ymm0, %ymm2, %ymm2
 	vpsrld	$31, %ymm2, %ymm3
@@ -19,6 +21,7 @@ func0000000000000026:
 	vpsubd	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000012a:
 	vpaddd	%ymm2, %ymm0, %ymm2
 	vpsrld	$31, %ymm2, %ymm3

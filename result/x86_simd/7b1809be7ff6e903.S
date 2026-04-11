@@ -20,6 +20,7 @@
 .LCPI0_2:
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpmovdw	%ymm0, %xmm0
 	vpsrlw	$7, %xmm0, %xmm0
@@ -59,6 +60,7 @@ func000000000000000f:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	vpsrld	$23, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

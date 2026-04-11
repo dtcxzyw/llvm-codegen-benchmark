@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	vmovd	%xmm0, %eax
 	andl	$2147483647, %eax

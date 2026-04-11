@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	imull	$31337, %esi, %eax
 	leal	1619(%rdi,%rax), %eax
 	andl	$2147483647, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	imull	$125, %esi, %eax
 	leal	22(%rdi,%rax), %eax
 	andl	$127, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001d:
 	imull	$64536, %edi, %eax
 	leal	16960(%rsi,%rax), %eax
 	andl	$65528, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	leal	(%rsi,%rsi,2), %eax
 	leal	65534(%rdi,%rax,4), %eax

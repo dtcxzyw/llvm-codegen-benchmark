@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004a4:
 	cmpq	$8, %rsi
 	cmovbq	%rsi, %rdx
@@ -9,6 +10,7 @@ func00000000000004a4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000004b4:
 	cmpq	$8, %rsi
 	cmovbq	%rsi, %rdx
@@ -19,6 +21,7 @@ func00000000000004b4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000004a8:
 	cmpq	$8, %rsi
 	cmovbq	%rsi, %rdx

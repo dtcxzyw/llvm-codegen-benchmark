@@ -16,6 +16,7 @@
 	.short	161
 	.short	161
 	.short	161
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovzxbw	%xmm1, %ymm1
 	vpmullw	.LCPI0_0(%rip), %ymm1, %ymm1
@@ -24,6 +25,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpaddb	%xmm1, %xmm1, %xmm2
 	vpaddb	%xmm2, %xmm2, %xmm2
@@ -57,6 +59,7 @@ func000000000000000c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpaddb	%xmm1, %xmm1, %xmm2
 	vgf2p8affineqb	$0, .LCPI2_1(%rip){1to2}, %xmm1, %xmm1
@@ -90,6 +93,7 @@ func0000000000000008:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpaddb	%xmm1, %xmm1, %xmm2
 	vgf2p8affineqb	$0, .LCPI3_1(%rip){1to2}, %xmm1, %xmm1
@@ -123,6 +127,7 @@ func000000000000000f:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpaddb	%xmm1, %xmm1, %xmm2
 	vgf2p8affineqb	$0, .LCPI4_1(%rip){1to2}, %xmm1, %xmm1
@@ -130,6 +135,7 @@ func000000000000000a:
 	vpaddb	%xmm0, %xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vpaddb	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm1, %xmm2

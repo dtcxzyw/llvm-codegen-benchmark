@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI0_1(%rip){1to4}, %ymm0, %k0
@@ -48,6 +49,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vpmovqd	%ymm1, %xmm1
 	vpsrld	$24, %xmm1, %xmm1
@@ -57,6 +59,7 @@ func0000000000000018:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpmovqd	%ymm1, %xmm1
 	vpsrld	$6, %xmm1, %xmm1
@@ -68,6 +71,7 @@ func0000000000000014:
 
 .LCPI3_0:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vptestmq	.LCPI3_0(%rip){1to4}, %ymm0, %k0

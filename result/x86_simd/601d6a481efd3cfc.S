@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -12,6 +13,7 @@ func0000000000000061:
 
 .LCPI1_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000078:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -23,6 +25,7 @@ func0000000000000078:
 
 .LCPI2_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f5:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -34,6 +37,7 @@ func00000000000001f5:
 
 .LCPI3_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000002f8:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -43,6 +47,7 @@ func00000000000002f8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000161:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -55,6 +60,7 @@ func0000000000000161:
 
 .LCPI5_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000068:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -66,6 +72,7 @@ func0000000000000068:
 
 .LCPI6_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000064:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -77,6 +84,7 @@ func0000000000000064:
 
 .LCPI7_0:
 	.quad	15
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000065:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -88,6 +96,7 @@ func0000000000000065:
 
 .LCPI8_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000278:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -99,6 +108,7 @@ func0000000000000278:
 
 .LCPI9_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000003f8:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -108,6 +118,7 @@ func00000000000003f8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000121:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -118,6 +129,7 @@ func0000000000000121:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000128:
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	leal	4(%rsi), %ecx
 	testl	%edx, %edx
@@ -8,6 +9,7 @@ func0000000000000043:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movl	%esi, %ecx
 	orl	$64, %ecx
@@ -19,6 +21,7 @@ func0000000000000002:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	leal	16(%rsi), %ecx
 	testl	%edx, %edx
@@ -29,6 +32,7 @@ func0000000000000042:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	movl	%esi, %ecx
 	orl	$2, %ecx

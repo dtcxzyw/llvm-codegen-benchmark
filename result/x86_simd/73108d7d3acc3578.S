@@ -3,6 +3,7 @@
 	.quad	-3689348814741910323
 .LCPI0_1:
 	.quad	461168601842738790
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vprorq	$3, %ymm0, %ymm0
@@ -15,6 +16,7 @@ func0000000000000001:
 	.quad	-6148914691236517205
 .LCPI1_1:
 	.quad	6148914691236517205
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI1_1(%rip){1to4}, %ymm0, %k0
@@ -24,6 +26,7 @@ func000000000000000c:
 
 .LCPI2_0:
 	.quad	99
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
@@ -69,6 +72,7 @@ func0000000000000018:
 
 .LCPI3_0:
 	.quad	350
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
@@ -104,12 +108,14 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vxorps	%xmm0, %xmm0, %xmm0
 	retq
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vbroadcastss	.LCPI5_0(%rip), %xmm0
 	retq

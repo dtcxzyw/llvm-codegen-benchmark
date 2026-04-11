@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm0, %k1

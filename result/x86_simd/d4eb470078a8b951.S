@@ -8,6 +8,7 @@
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpblendw	$170, %ymm1, %ymm0, %ymm0
@@ -26,6 +27,7 @@ func0000000000000001:
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpblendw	$170, %ymm1, %ymm0, %ymm0
@@ -44,6 +46,7 @@ func0000000000000000:
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vplzcntd	%ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

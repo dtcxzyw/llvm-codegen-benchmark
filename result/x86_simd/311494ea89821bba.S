@@ -16,6 +16,7 @@
 	.short	4
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

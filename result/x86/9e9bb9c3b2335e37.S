@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	shll	$13, %edx
 	andl	$268427264, %edx
@@ -7,6 +8,7 @@ func0000000000000018:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	shll	$13, %edx
 	andl	$268427264, %edx

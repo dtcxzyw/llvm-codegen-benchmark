@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
 	vmovd	%edi, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -8,6 +9,7 @@ func0000000000000011:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	testl	$2147483647, %edi
 	sete	%cl
@@ -19,6 +21,7 @@ func0000000000000088:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ee:
 	vmovd	%edi, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2

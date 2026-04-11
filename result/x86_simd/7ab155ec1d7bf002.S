@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	5871781006564002453
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vprolq	$5, %ymm0, %ymm3
 	vpxor	%ymm2, %ymm3, %ymm2

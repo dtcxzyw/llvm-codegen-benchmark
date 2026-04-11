@@ -3,6 +3,7 @@
 	.quad	32
 .LCPI0_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -12,6 +13,7 @@ func000000000000000c:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -20,6 +22,7 @@ func000000000000000a:
 	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -33,6 +36,7 @@ func0000000000000000:
 	.quad	446
 .LCPI3_1:
 	.quad	-66
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000321:
 	incl	%edx
 	cmpq	%rdx, %rsi
@@ -8,6 +9,7 @@ func0000000000000321:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	decl	%edx
 	cmpq	%rdx, %rdi
@@ -17,6 +19,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000e8c:
 	decl	%edx
 	cmpq	%rdx, %rsi
@@ -26,6 +29,7 @@ func0000000000000e8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000821:
 	decl	%edx
 	xorq	%rsi, %rdx
@@ -33,6 +37,7 @@ func0000000000000821:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000082c:
 	decl	%edx
 	cmpq	%rdx, %rsi
@@ -42,6 +47,7 @@ func000000000000082c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000141:
 	incl	%edx
 	cmpq	%rdx, %rdi

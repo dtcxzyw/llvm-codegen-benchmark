@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	movl	%esi, %ecx
 	shrl	$31, %ecx
@@ -11,6 +12,7 @@ func0000000000000001:
 	imull	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	leal	7(%rsi), %ecx
 	testl	%esi, %esi

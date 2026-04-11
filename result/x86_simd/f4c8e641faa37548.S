@@ -8,6 +8,7 @@
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$27, %ymm1, %ymm1
@@ -27,6 +28,7 @@ func0000000000000000:
 	.short	65533
 	.short	65533
 	.short	65533
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$28, %ymm1, %ymm1

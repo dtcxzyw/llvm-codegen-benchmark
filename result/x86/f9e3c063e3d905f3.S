@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	cmpl	$4, %edi
 	movl	$3, %ecx
@@ -9,6 +10,7 @@ func0000000000000002:
 	shrq	$33, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	cmpl	$17, %edi
 	movl	$16, %eax

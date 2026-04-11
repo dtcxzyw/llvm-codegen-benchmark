@@ -10,6 +10,7 @@
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b4:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1

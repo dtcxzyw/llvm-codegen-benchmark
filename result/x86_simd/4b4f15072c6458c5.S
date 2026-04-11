@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1048576
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3

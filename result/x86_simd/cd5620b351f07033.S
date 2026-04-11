@@ -37,6 +37,7 @@
 	.short	384
 .LCPI0_3:
 	.short	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpbroadcastw	.LCPI0_2(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
@@ -101,6 +102,7 @@ func0000000000000001:
 	.short	6
 .LCPI1_4:
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpbroadcastw	.LCPI1_3(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0

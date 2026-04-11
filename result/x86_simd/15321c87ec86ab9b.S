@@ -3,6 +3,7 @@
 	.long	0x3fc90fdb
 .LCPI0_1:
 	.long	0xbfc90fdb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000032:
 	vcmpngeps	.LCPI0_0(%rip){1to16}, %zmm0, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
@@ -13,6 +14,7 @@ func0000000000000032:
 
 .LCPI1_0:
 	.long	0x41102d33
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b8:
 	vcmpngtps	.LCPI1_0(%rip){1to16}, %zmm0, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
@@ -24,6 +26,7 @@ func00000000000000b8:
 
 .LCPI2_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000072:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%zmm2, %zmm0, %k1
@@ -33,6 +36,7 @@ func0000000000000072:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000078:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%zmm2, %zmm0, %k1
@@ -44,6 +48,7 @@ func0000000000000078:
 
 .LCPI4_0:
 	.long	0x438c0000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000004b:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%zmm0, %zmm2, %k1
@@ -55,6 +60,7 @@ func000000000000004b:
 
 .LCPI5_0:
 	.long	0x43340000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000044:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%zmm0, %zmm2, %k1
@@ -66,6 +72,7 @@ func0000000000000044:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000043:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%zmm0, %zmm2, %k1
@@ -75,6 +82,7 @@ func0000000000000043:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000054:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnleps	%zmm2, %zmm0, %k1
@@ -86,6 +94,7 @@ func0000000000000054:
 
 .LCPI8_0:
 	.long	0x40c90fdb
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c3:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpleps	%zmm0, %zmm2, %k1
@@ -97,6 +106,7 @@ func00000000000000c3:
 
 .LCPI9_0:
 	.long	0x3ba3d70a
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000042:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%zmm0, %zmm2, %k1
@@ -108,6 +118,7 @@ func0000000000000042:
 
 .LCPI10_0:
 	.long	0x3d0efa36
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000004a:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%zmm0, %zmm2, %k1
@@ -119,6 +130,7 @@ func000000000000004a:
 
 .LCPI11_0:
 	.long	0x3727c5ac
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000c2:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpleps	%zmm0, %zmm2, %k1

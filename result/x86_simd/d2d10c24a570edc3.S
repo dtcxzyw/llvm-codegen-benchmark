@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4294967282
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e4:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -10,6 +11,7 @@ func00000000000000e4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f4:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -20,6 +22,7 @@ func00000000000001f4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e6:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -32,6 +35,7 @@ func00000000000001e6:
 
 .LCPI3_0:
 	.long	4294967288
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a6:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -43,6 +47,7 @@ func00000000000000a6:
 
 .LCPI4_0:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000f8:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -54,6 +59,7 @@ func00000000000000f8:
 
 .LCPI5_0:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ea:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -65,6 +71,7 @@ func00000000000000ea:
 
 .LCPI6_0:
 	.long	5
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001e4:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -76,6 +83,7 @@ func00000000000001e4:
 
 .LCPI7_0:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000084:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -87,6 +95,7 @@ func0000000000000084:
 
 .LCPI8_0:
 	.long	4
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000018a:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -98,6 +107,7 @@ func000000000000018a:
 
 .LCPI9_0:
 	.long	20
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000003f4:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -109,6 +119,7 @@ func00000000000003f4:
 
 .LCPI10_0:
 	.long	16
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000003e6:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
@@ -120,6 +131,7 @@ func00000000000003e6:
 
 .LCPI11_0:
 	.long	4294967284
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000028a:
 	vpmovzxwd	%xmm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1

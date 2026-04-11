@@ -3,6 +3,7 @@
 	.quad	67107840
 .LCPI0_1:
 	.quad	32768
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1

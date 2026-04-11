@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpandn	%xmm0, %xmm2, %xmm0
 	vpmovzxwd	%xmm1, %xmm1

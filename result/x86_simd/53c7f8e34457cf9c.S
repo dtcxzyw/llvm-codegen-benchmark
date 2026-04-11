@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	65535
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -14,6 +15,7 @@ func000000000000000f:
 	.quad	-32
 .LCPI1_1:
 	.quad	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -26,6 +28,7 @@ func0000000000000010:
 	.quad	4503599627370464
 .LCPI2_1:
 	.quad	15
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -38,6 +41,7 @@ func0000000000000030:
 	.quad	-4
 .LCPI3_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -50,6 +54,7 @@ func000000000000000a:
 	.quad	-4
 .LCPI4_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1

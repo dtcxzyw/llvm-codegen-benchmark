@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000060f4:
 	addl	%esi, %edi
 	cmpq	$33554432, %rdx
@@ -7,6 +8,7 @@ func00000000000060f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000030aa:
 	addl	%esi, %edi
 	cmpq	$1, %rdx
@@ -15,6 +17,7 @@ func00000000000030aa:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000004aa:
 	movabsq	$9007199254740992, %rax
 	xorl	%ecx, %ecx
@@ -26,6 +29,7 @@ func00000000000004aa:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000300c:
 	xorl	%eax, %eax
 	negq	%rdx

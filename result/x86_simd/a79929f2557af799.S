@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vroundps	$11, %ymm2, %ymm2
 	vaddps	%ymm1, %ymm0, %ymm0
@@ -7,6 +8,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vroundps	$11, %ymm2, %ymm2
 	vaddps	%ymm1, %ymm0, %ymm0

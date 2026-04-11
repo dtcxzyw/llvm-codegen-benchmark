@@ -3,6 +3,7 @@
 	.quad	0x0010000000000000
 .LCPI0_1:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000094:
 	vmaxsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vandpd	.LCPI0_1(%rip){1to2}, %xmm0, %xmm0
@@ -14,6 +15,7 @@ func0000000000000094:
 	.quad	0x0010000000000000
 .LCPI1_1:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000092:
 	vmaxsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vandpd	.LCPI1_1(%rip){1to2}, %xmm0, %xmm0

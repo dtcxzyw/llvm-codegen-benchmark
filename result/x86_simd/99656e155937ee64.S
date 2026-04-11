@@ -5,6 +5,7 @@
 	.long	50000
 .LCPI0_2:
 	.long	25000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rax

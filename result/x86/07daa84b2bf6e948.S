@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	movb	$66, %al
 	subb	%dil, %al
@@ -7,6 +8,7 @@ func0000000000000006:
 	shrl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movb	$-126, %al
 	subb	%dil, %al
@@ -15,6 +17,7 @@ func0000000000000004:
 	shrl	$9, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	movb	$47, %al
 	subb	%dil, %al
@@ -23,6 +26,7 @@ func0000000000000002:
 	shrl	$11, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	movb	$8, %al
 	subb	%dil, %al

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a7:
 	vpcmpltud	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm1, %xmm1 {%k1} {z}

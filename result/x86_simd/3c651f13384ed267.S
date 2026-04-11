@@ -3,6 +3,7 @@
 	.long	0x42c80000
 .LCPI0_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vdivps	.LCPI0_0(%rip){1to16}, %zmm1, %zmm1
 	vaddps	.LCPI0_1(%rip){1to16}, %zmm1, %zmm1

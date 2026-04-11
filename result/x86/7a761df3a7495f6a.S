@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001f4:
 	incl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm2
@@ -7,6 +8,7 @@ func00000000000001f4:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f2:
 	incl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm2

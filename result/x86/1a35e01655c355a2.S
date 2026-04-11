@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000291:
 	xorl	%ecx, %ecx
 	testl	%edi, %edi

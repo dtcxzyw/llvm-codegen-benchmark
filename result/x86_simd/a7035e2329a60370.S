@@ -20,6 +20,7 @@
 	.long	10
 .LCPI0_2:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f4:
 	vpmovdb	%ymm1, %xmm2
 	vpord	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2

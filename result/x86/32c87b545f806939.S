@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0xbfe0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vaddsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	testl	%edi, %edi
@@ -11,6 +12,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.quad	0xbff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vaddsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	cmpl	$8, %edi

@@ -7,6 +7,7 @@
 	.zero	16,4
 .LCPI0_3:
 	.zero	4,253
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000841:
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1
@@ -20,6 +21,7 @@ func0000000000000841:
 	.zero	16,51
 .LCPI1_2:
 	.zero	16,110
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000842:
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k0
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
@@ -34,6 +36,7 @@ func0000000000000842:
 	.zero	16,15
 .LCPI2_2:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000850:
 	vpcmpeqb	.LCPI2_0(%rip), %xmm1, %k0
 	vpcmpeqb	.LCPI2_1(%rip), %xmm1, %k1

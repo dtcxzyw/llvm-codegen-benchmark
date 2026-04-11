@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$29, %ymm3, %ymm3
@@ -10,6 +11,7 @@ func0000000000000026:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$29, %ymm3, %ymm3
@@ -21,6 +23,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -33,6 +36,7 @@ func000000000000002a:
 
 .LCPI3_0:
 	.long	1431655766
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000027:
 	vpshufd	$245, %ymm2, %ymm3
 	vpbroadcastd	.LCPI3_0(%rip), %ymm4
@@ -50,6 +54,7 @@ func0000000000000027:
 
 .LCPI4_0:
 	.long	2576980377
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpshufd	$245, %ymm2, %ymm3
 	vpbroadcastd	.LCPI4_0(%rip), %ymm4
@@ -66,6 +71,7 @@ func000000000000000a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$30, %ymm3, %ymm3
@@ -77,6 +83,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -87,6 +94,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002b:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -97,6 +105,7 @@ func000000000000002b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -107,6 +116,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000c:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -119,6 +129,7 @@ func000000000000000c:
 
 .LCPI10_0:
 	.long	1717986919
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
 	vpshufd	$245, %ymm2, %ymm3
 	vpbroadcastd	.LCPI10_0(%rip), %ymm4
@@ -135,6 +146,7 @@ func0000000000000006:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000009:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$28, %ymm3, %ymm3
@@ -146,6 +158,7 @@ func0000000000000009:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000001:
 	vpsrad	$31, %ymm2, %ymm3
 	vpsrld	$29, %ymm3, %ymm3
@@ -157,6 +170,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000007:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2

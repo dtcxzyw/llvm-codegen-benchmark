@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0

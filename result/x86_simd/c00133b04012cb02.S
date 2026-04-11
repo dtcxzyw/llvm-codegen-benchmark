@@ -3,6 +3,7 @@
 	.long	512
 .LCPI0_1:
 	.long	768
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpneqd	%ymm1, %ymm0, %k1
 	vbroadcastss	.LCPI0_0(%rip), %ymm0
@@ -13,6 +14,7 @@ func0000000000000001:
 	.long	1
 .LCPI1_1:
 	.long	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpcmpnltd	%ymm1, %ymm0, %k1
 	vbroadcastss	.LCPI1_0(%rip), %ymm0

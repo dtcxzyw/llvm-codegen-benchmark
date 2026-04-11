@@ -16,12 +16,14 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovwb	%xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -46,12 +48,14 @@ func0000000000000000:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpmovwb	%xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -59,6 +63,7 @@ func0000000000000001:
 	vpmovzxbd	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000011:
 	vpackuswb	%xmm0, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

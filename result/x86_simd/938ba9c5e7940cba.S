@@ -25,6 +25,7 @@
 	.short	65472
 	.short	65472
 	.short	65472
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpshufb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpaddw	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -57,6 +58,7 @@ func0000000000000000:
 	.short	10240
 	.short	10240
 	.short	10240
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpshufb	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpaddw	.LCPI1_1(%rip), %xmm0, %xmm0
@@ -89,6 +91,7 @@ func0000000000000008:
 	.short	9216
 	.short	9216
 	.short	9216
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vpshufb	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpaddw	.LCPI2_1(%rip), %xmm0, %xmm0

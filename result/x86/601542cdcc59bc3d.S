@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
@@ -8,6 +9,7 @@ func00000000000000c1:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax

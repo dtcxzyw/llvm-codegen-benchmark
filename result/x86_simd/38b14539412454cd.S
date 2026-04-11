@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -56,6 +57,7 @@ func000000000000014a:
 	.long	31
 .LCPI1_1:
 	.long	6
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000148:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -110,6 +112,7 @@ func0000000000000148:
 
 .LCPI2_0:
 	.long	32
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax
@@ -166,6 +169,7 @@ func0000000000000081:
 	.long	65536
 .LCPI3_1:
 	.long	16
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000284:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrd	$1, %xmm3, %eax

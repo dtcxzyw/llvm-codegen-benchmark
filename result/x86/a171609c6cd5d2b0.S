@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	addl	$-256, %esi
 	shrl	$4, %esi
 	shlxl	%esi, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	addl	$-258, %esi
 	shrl	%esi

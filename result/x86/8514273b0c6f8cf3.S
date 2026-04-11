@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fd3333333333333
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	andl	$1, %edi
 	xorl	$3, %edi
@@ -10,6 +11,7 @@ func0000000000000002:
 	cmovbel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	andl	$1, %edi
 	leal	-1(%rdi), %ecx
@@ -23,6 +25,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.quad	0x3fe999999999999a
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	andl	$1, %edi
 	leal	1(%rdi), %ecx

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vucomisd	.LCPI0_0(%rip), %xmm0
 	movl	$-22, %eax
@@ -9,12 +10,14 @@ func0000000000000009:
 
 .LCPI1_0:
 	.quad	0x40d0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vucomisd	.LCPI1_0(%rip), %xmm0
 	movl	$2, %eax
 	cmovbel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -25,6 +28,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.quad	0x41dfffffffc00000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vucomisd	.LCPI3_0(%rip), %xmm0
 	movl	$2147483647, %eax
@@ -33,6 +37,7 @@ func000000000000000c:
 
 .LCPI4_0:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vmovsd	.LCPI4_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -40,6 +45,7 @@ func0000000000000002:
 	cmovbel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000003:
 	xorl	%eax, %eax
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -49,12 +55,14 @@ func0000000000000003:
 
 .LCPI6_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
 	xorl	%eax, %eax
 	vucomisd	.LCPI6_0(%rip), %xmm0
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000d:
 	xorl	%eax, %eax
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -62,6 +70,7 @@ func000000000000000d:
 	cmoval	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000b:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0

@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	32
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
@@ -48,6 +49,7 @@ func0000000000000007:
 .LCPI1_1:
 	.short	64512
 	.short	64512
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1

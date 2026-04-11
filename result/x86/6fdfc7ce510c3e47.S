@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leaq	(%rdx,%rdx), %rcx
 	testb	$1, %sil
@@ -7,6 +8,7 @@ func0000000000000000:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	leaq	(,%rdx,4), %rcx
 	testb	$1, %sil

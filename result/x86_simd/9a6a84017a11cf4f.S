@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000066:
 	vpsllw	$15, %xmm0, %xmm3
 	vpmovw2m	%xmm3, %k1
@@ -11,6 +12,7 @@ func0000000000000066:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000045:
 	vpsllw	$15, %xmm0, %xmm3
 	vpmovw2m	%xmm3, %k1
@@ -23,6 +25,7 @@ func0000000000000045:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000027:
 	vpsllw	$15, %xmm0, %xmm3
 	vpmovw2m	%xmm3, %k1

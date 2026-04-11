@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000188:
 	testl	%edi, %edi
 	setle	%cl
@@ -7,6 +8,7 @@ func0000000000000188:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	testl	%edi, %edi
 	sete	%cl
@@ -15,6 +17,7 @@ func0000000000000048:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000002a8:
 	cmpl	$3, %edi
 	setge	%cl
@@ -23,6 +26,7 @@ func00000000000002a8:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000310:
 	testl	%edi, %edi
 	setne	%cl
@@ -31,6 +35,7 @@ func0000000000000310:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000218:
 	testl	%edi, %edi
 	setne	%cl
@@ -39,6 +44,7 @@ func0000000000000218:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000068:
 	testl	%edi, %edi
 	sete	%cl

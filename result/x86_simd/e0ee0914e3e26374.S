@@ -3,6 +3,7 @@
 	.long	4294967294
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpminsd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -14,6 +15,7 @@ func000000000000000a:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000020a:
 	vpminsd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -24,6 +26,7 @@ func000000000000020a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000028a:
 	vpminsd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	32768
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a8:
 	vpslld	$8, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -12,6 +13,7 @@ func00000000000000a8:
 
 .LCPI1_0:
 	.long	128
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001fa:
 	vpslld	$6, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -23,6 +25,7 @@ func00000000000001fa:
 
 .LCPI2_0:
 	.long	10494976
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001ba:
 	vpslld	$10, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -34,6 +37,7 @@ func00000000000001ba:
 
 .LCPI3_0:
 	.long	9216
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001b8:
 	vpslld	$10, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0

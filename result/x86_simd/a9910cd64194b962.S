@@ -1,15 +1,18 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpord	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vorps	%ymm2, %ymm1, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vpsrad	$31, %ymm0, %ymm0
 	vpternlogd	$224, %ymm2, %ymm1, %ymm0
@@ -19,6 +22,7 @@ func0000000000000026:
 	.long	16369
 .LCPI3_1:
 	.long	1000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vbroadcastss	.LCPI3_1(%rip), %ymm0
@@ -29,6 +33,7 @@ func0000000000000024:
 	.long	56320
 .LCPI4_1:
 	.long	65533
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpcmpneqd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	vbroadcastss	.LCPI4_1(%rip), %ymm0

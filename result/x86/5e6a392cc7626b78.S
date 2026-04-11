@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000344:
 	movslq	%edx, %rax
 	leaq	-1(%rsi,%rax), %rax
@@ -6,6 +7,7 @@ func0000000000000344:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000204:
 	movslq	%edx, %rax
 	leaq	668(%rsi,%rax,4), %rax
@@ -13,6 +15,7 @@ func0000000000000204:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000361:
 	movslq	%edx, %rax
 	leaq	(%rax,%rax,2), %rax

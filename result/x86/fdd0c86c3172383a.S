@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -7,6 +8,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -17,6 +19,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	0x3f471c72
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -24,6 +27,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -34,6 +38,7 @@ func0000000000000003:
 
 .LCPI4_0:
 	.long	0x3f666666
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -44,6 +49,7 @@ func0000000000000005:
 
 .LCPI5_0:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0
@@ -51,6 +57,7 @@ func0000000000000007:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vdivss	%xmm1, %xmm0, %xmm0

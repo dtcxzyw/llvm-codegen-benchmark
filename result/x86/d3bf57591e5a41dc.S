@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	leal	2(%rsi,%rsi,4), %eax
 	movl	$3593175255, %ecx
@@ -9,6 +10,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000304:
 	imull	$-137, %esi, %eax
 	addl	$136, %eax
@@ -19,6 +21,7 @@ func0000000000000304:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000324:
 	imull	$-137, %esi, %eax
 	addl	$136, %eax

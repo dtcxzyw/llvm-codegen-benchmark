@@ -18,6 +18,7 @@
 	.zero	2
 .LCPI0_1:
 	.short	139
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000040:
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -49,6 +50,7 @@ func0000000000000040:
 	.zero	2
 .LCPI1_1:
 	.short	23
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -80,6 +82,7 @@ func0000000000000000:
 	.zero	2
 .LCPI2_1:
 	.short	149
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000048:
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

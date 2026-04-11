@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm2, %xmm2
 	vcmpgtsd	.LCPI0_1(%rip), %xmm2, %k1
@@ -14,6 +15,7 @@ func0000000000000014:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vandpd	.LCPI1_0(%rip){1to2}, %xmm2, %xmm2
 	vcmpltsd	.LCPI1_1(%rip), %xmm2, %k1
@@ -25,6 +27,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3e50000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm2, %xmm2
 	vcmpltsd	.LCPI2_1(%rip), %xmm2, %k1
@@ -32,6 +35,7 @@ func0000000000000002:
 	vmovapd	%xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vmovq	%xmm2, %rax
 	shrq	$52, %rax
@@ -47,6 +51,7 @@ func0000000000000006:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
 	vandpd	.LCPI4_0(%rip){1to2}, %xmm2, %xmm2
 	vcmpngesd	.LCPI4_1(%rip), %xmm2, %k1
@@ -58,6 +63,7 @@ func0000000000000013:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vandpd	.LCPI5_0(%rip){1to2}, %xmm2, %xmm2
 	vcmpnlesd	.LCPI5_1(%rip), %xmm2, %k1
@@ -69,6 +75,7 @@ func0000000000000005:
 	.quad	0x7fffffffffffffff
 .LCPI6_1:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	vandpd	.LCPI6_0(%rip){1to2}, %xmm2, %xmm2
 	vcmpgtsd	.LCPI6_1(%rip), %xmm2, %k1
@@ -76,6 +83,7 @@ func0000000000000004:
 	vmovapd	%xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000007:
 	vmovq	%xmm2, %rax
 	movb	$63, %cl

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -9,6 +10,7 @@ func0000000000000044:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -25,6 +27,7 @@ func0000000000000088:
 
 .LCPI2_0:
 	.long	0x7e7fffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
 	vmovss	.LCPI2_0(%rip), %xmm2
 	vucomiss	%xmm1, %xmm2
@@ -35,6 +38,7 @@ func0000000000000022:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000cc:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -45,6 +49,7 @@ func00000000000000cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000055:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm1, %xmm2
@@ -57,6 +62,7 @@ func0000000000000055:
 
 .LCPI5_0:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000aa:
 	vmovss	.LCPI5_0(%rip), %xmm2
 	vucomiss	%xmm1, %xmm2
@@ -69,6 +75,7 @@ func00000000000000aa:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000077:
 	vmovss	.LCPI6_0(%rip), %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -85,6 +92,7 @@ func0000000000000077:
 
 .LCPI7_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000066:
 	vmovss	.LCPI7_0(%rip), %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -97,6 +105,7 @@ func0000000000000066:
 
 .LCPI8_0:
 	.long	0x43b40000
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000bb:
 	vmovss	.LCPI8_0(%rip), %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -107,6 +116,7 @@ func00000000000000bb:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000004c:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -117,6 +127,7 @@ func000000000000004c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000ca:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
@@ -131,6 +142,7 @@ func00000000000000ca:
 	.long	0x3dcccccd
 .LCPI11_1:
 	.long	0x3f666666
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000042:
 	vucomiss	.LCPI11_0(%rip), %xmm1
 	seta	%cl
@@ -143,6 +155,7 @@ func0000000000000042:
 
 .LCPI12_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000007e:
 	vucomiss	.LCPI12_0(%rip), %xmm1
 	setb	%cl
@@ -152,6 +165,7 @@ func000000000000007e:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000ee:
 	vucomiss	%xmm1, %xmm1
 	setnp	%cl
@@ -163,6 +177,7 @@ func00000000000000ee:
 
 .LCPI14_0:
 	.long	0x42c80000
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000b8:
 	vucomiss	.LCPI14_0(%rip), %xmm1
 	setbe	%cl

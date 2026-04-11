@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3
@@ -9,6 +10,7 @@ func0000000000000005:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3
@@ -19,6 +21,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000040:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3
@@ -29,6 +32,7 @@ func0000000000000040:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3
@@ -39,6 +43,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000044:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3
@@ -49,6 +54,7 @@ func0000000000000044:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000045:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3
@@ -59,6 +65,7 @@ func0000000000000045:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000060:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3
@@ -69,6 +76,7 @@ func0000000000000060:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000020:
 	vpmovqd	%ymm2, %xmm2
 	vpsrld	$31, %xmm1, %xmm3

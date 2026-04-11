@@ -3,6 +3,7 @@
 	.quad	8589934590
 .LCPI0_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -15,6 +16,7 @@ func0000000000000003:
 	.quad	68719476720
 .LCPI1_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -27,6 +29,7 @@ func0000000000000013:
 	.quad	17179869180
 .LCPI2_1:
 	.quad	4
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000017:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -39,6 +42,7 @@ func0000000000000017:
 	.quad	-16
 .LCPI3_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -51,6 +55,7 @@ func0000000000000014:
 	.quad	-16
 .LCPI4_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -63,6 +68,7 @@ func0000000000000000:
 	.quad	-16
 .LCPI5_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000010:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -75,6 +81,7 @@ func0000000000000010:
 	.quad	9223372036854775792
 .LCPI6_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000001f:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0

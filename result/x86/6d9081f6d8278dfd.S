@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	movl	%esi, %ecx
 	cmpq	$5242885, %rdi
@@ -6,6 +7,7 @@ func0000000000000028:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movl	%esi, %ecx
 	xorl	%eax, %eax
@@ -13,6 +15,7 @@ func0000000000000001:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	movl	%esi, %ecx
 	xorl	%eax, %eax
@@ -20,6 +23,7 @@ func0000000000000021:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	movl	%esi, %ecx
 	cmpq	$20480, %rdi
@@ -27,6 +31,7 @@ func0000000000000008:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	movl	%esi, %ecx
 	cmpq	$20480, %rdi
@@ -34,6 +39,7 @@ func0000000000000018:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000034:
 	movl	%esi, %ecx
 	cmpq	$10487040, %rdi
@@ -41,6 +47,7 @@ func0000000000000034:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000024:
 	movl	%esi, %ecx
 	cmpq	$16384, %rdi

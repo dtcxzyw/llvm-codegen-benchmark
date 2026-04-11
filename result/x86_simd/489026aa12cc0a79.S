@@ -20,6 +20,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000074:
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm2, %k1
@@ -31,6 +32,7 @@ func0000000000000074:
 
 .LCPI1_0:
 	.long	67108864
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpslld	$24, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
@@ -7,6 +8,7 @@ func0000000000000001:
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000056:
 	vpslld	$16, %xmm2, %xmm2
 	vpor	%xmm1, %xmm2, %xmm1
@@ -33,6 +35,7 @@ func0000000000000056:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000055:
 	vpslld	$8, %xmm2, %xmm2
 	vpor	%xmm1, %xmm2, %xmm2
@@ -41,6 +44,7 @@ func0000000000000055:
 	vmovdqa	%ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpslld	$24, %xmm2, %xmm2
 	vpor	%xmm1, %xmm2, %xmm1
@@ -67,6 +71,7 @@ func0000000000000007:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
 	vpslld	$2, %xmm2, %xmm2
 	vpor	%xmm1, %xmm2, %xmm2
@@ -93,6 +98,7 @@ func0000000000000013:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000015:
 	vpaddd	%xmm2, %xmm2, %xmm2
 	vpor	%xmm1, %xmm2, %xmm2
@@ -119,6 +125,7 @@ func0000000000000015:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000017:
 	vpslld	$16, %xmm2, %xmm2
 	vpor	%xmm1, %xmm2, %xmm2
@@ -145,6 +152,7 @@ func0000000000000017:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000011:
 	vpslld	$9, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm2
@@ -171,6 +179,7 @@ func0000000000000011:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000025:
 	vpslld	$3, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm2
@@ -197,6 +206,7 @@ func0000000000000025:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000005:
 	vpslld	$6, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm2
@@ -223,6 +233,7 @@ func0000000000000005:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000077:
 	vpslld	$7, %xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm2

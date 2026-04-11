@@ -53,6 +53,7 @@
 .LCPI0_3:
 	.short	63
 	.short	63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm0, %ymm0
 	vpaddw	.LCPI0_1(%rip), %ymm0, %ymm0

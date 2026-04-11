@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	cmpq	$3105, %rdi
 	setne	%cl
@@ -7,6 +8,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000cc:
 	cmpq	$172801, %rdi
 	setl	%cl
@@ -15,6 +17,7 @@ func00000000000000cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000184:
 	cmpq	$1, %rdi
 	setne	%cl
@@ -23,6 +26,7 @@ func0000000000000184:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000186:
 	movabsq	$-9223372036854775807, %rax
 	cmpq	%rax, %rdi
@@ -33,6 +37,7 @@ func0000000000000186:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000198:
 	cmpq	$15, %rdi
 	setne	%cl
@@ -41,6 +46,7 @@ func0000000000000198:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000008c:
 	cmpq	$127, %rdi
 	setb	%cl
@@ -49,6 +55,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000188:
 	movabsq	$9223372036854775807, %rax
 	cmpq	%rax, %rdi
@@ -59,6 +66,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000194:
 	cmpq	$36, %rdi
 	setne	%cl

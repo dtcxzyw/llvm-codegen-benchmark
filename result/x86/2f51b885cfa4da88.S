@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000010a:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -9,6 +10,7 @@ func000000000000010a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -19,6 +21,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000064:
 	testl	%edi, %edi
 	sets	%cl
@@ -27,6 +30,7 @@ func0000000000000064:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	cmpl	$1, %edi
 	sete	%cl
@@ -37,6 +41,7 @@ func0000000000000018:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000086:
 	vucomisd	%xmm1, %xmm0
 	seta	%cl
@@ -45,6 +50,7 @@ func0000000000000086:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000008c:
 	vucomisd	%xmm1, %xmm0
 	seta	%cl
@@ -53,6 +59,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000012:
 	cmpl	$5, %edi
 	sete	%cl
@@ -61,6 +68,7 @@ func0000000000000012:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000104:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -71,6 +79,7 @@ func0000000000000104:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	testl	%edi, %edi
 	sete	%cl
@@ -79,6 +88,7 @@ func0000000000000014:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000c7:
 	testl	%edi, %edi
 	setne	%cl
@@ -89,6 +99,7 @@ func00000000000000c7:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000004c:
 	vucomisd	%xmm0, %xmm1
 	seta	%cl
@@ -97,6 +108,7 @@ func000000000000004c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000101:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -107,6 +119,7 @@ func0000000000000101:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000006a:
 	vucomisd	%xmm1, %xmm0
 	setb	%cl

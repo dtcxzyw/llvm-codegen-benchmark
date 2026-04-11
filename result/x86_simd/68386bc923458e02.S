@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000cec:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
@@ -10,6 +11,7 @@ func0000000000000cec:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000c8c:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpcmpltud	%xmm2, %xmm1, %k1

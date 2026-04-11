@@ -49,6 +49,7 @@
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vbroadcasti128	.LCPI0_1(%rip), %ymm3
 	vpshufb	%ymm3, %ymm2, %ymm2
@@ -108,6 +109,7 @@ func0000000000000000:
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vbroadcasti128	.LCPI1_1(%rip), %ymm3
 	vpshufb	%ymm3, %ymm2, %ymm2

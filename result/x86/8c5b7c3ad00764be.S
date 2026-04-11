@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3c23d70a
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004c:
 	vmovss	.LCPI0_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -10,6 +11,7 @@ func000000000000004c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c4:
 	testq	%rdi, %rdi
 	setne	%cl
@@ -21,6 +23,7 @@ func00000000000000c4:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008c:
 	vucomiss	.LCPI2_0(%rip), %xmm0
 	seta	%cl
@@ -31,6 +34,7 @@ func000000000000008c:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ac:
 	testq	%rdi, %rdi
 	setg	%cl
@@ -41,6 +45,7 @@ func00000000000000ac:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ec:
 	vucomiss	.LCPI4_0(%rip), %xmm0
 	setp	%al
@@ -51,6 +56,7 @@ func00000000000000ec:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000082:
 	cmpq	$11, %rdi
 	setae	%cl

@@ -36,6 +36,7 @@
 .LCPI0_2:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestmw	.LCPI0_0(%rip), %ymm1, %k1
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0

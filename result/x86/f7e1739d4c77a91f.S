@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	shrq	%rsi
 	leaq	(%rsi,%rdi), %rcx
@@ -7,6 +8,7 @@ func0000000000000005:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	shrq	$2, %rsi
 	leaq	(%rsi,%rdi), %rcx
@@ -15,6 +17,7 @@ func000000000000000e:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	shrq	$6, %rsi
 	leaq	(%rsi,%rdi), %rcx
@@ -23,6 +26,7 @@ func0000000000000006:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	shrq	%rsi
 	leaq	(%rsi,%rdi), %rcx

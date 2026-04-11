@@ -3,6 +3,7 @@
 	.quad	-24
 .LCPI0_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -46,6 +47,7 @@ func000000000000001f:
 	.quad	-24
 .LCPI1_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -89,6 +91,7 @@ func000000000000000a:
 	.quad	-24
 .LCPI2_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -132,6 +135,7 @@ func0000000000000008:
 	.quad	-24
 .LCPI3_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001d:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -175,6 +179,7 @@ func000000000000001d:
 	.quad	-12
 .LCPI4_1:
 	.quad	12
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -218,6 +223,7 @@ func0000000000000018:
 	.quad	-12
 .LCPI5_1:
 	.quad	12
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -261,6 +267,7 @@ func0000000000000000:
 	.quad	-24
 .LCPI6_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000015:
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -304,6 +311,7 @@ func0000000000000015:
 	.quad	-20
 .LCPI7_1:
 	.quad	20
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000b:
 	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1

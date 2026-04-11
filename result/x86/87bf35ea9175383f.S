@@ -1,52 +1,61 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	shrq	$32, %rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	shrq	$4, %rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	shrq	$8, %rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000019:
 	shrq	%rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	shrq	$32, %rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000d:
 	shrq	$63, %rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000000:
 	shrq	$11, %rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000c:
 	shrq	$63, %rsi
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000001:
 	shrq	$16, %rsi
 	addl	%edi, %esi

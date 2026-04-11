@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpmovsxwd	%xmm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpmovsxwd	%xmm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %ymm0
@@ -13,6 +15,7 @@ func0000000000000014:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	vpmovsxwd	%xmm1, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %ymm0

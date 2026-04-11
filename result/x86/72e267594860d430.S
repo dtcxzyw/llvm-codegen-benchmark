@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	rorxl	$12, %edx, %eax
 	addl	%edi, %eax
@@ -7,6 +8,7 @@ func0000000000000000:
 	rorxl	$8, %ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	rorxl	$20, %edx, %eax
 	addl	%edi, %eax
@@ -15,6 +17,7 @@ func0000000000000019:
 	rorxl	$24, %ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000013:
 	rorxl	$25, %edx, %eax
 	addl	%esi, %eax

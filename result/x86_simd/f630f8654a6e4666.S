@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestmq	%ymm0, %ymm0, %k1
 	vandps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm0 {%k1} {z}
@@ -11,6 +12,7 @@ func0000000000000001:
 	.quad	4294967296
 .LCPI1_1:
 	.long	8184
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpcmpnltuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vandps	.LCPI1_1(%rip){1to4}, %xmm1, %xmm0 {%k1} {z}
@@ -21,6 +23,7 @@ func0000000000000004:
 	.quad	4
 .LCPI2_1:
 	.long	15
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpcmpnltuq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
 	vandps	.LCPI2_1(%rip){1to4}, %xmm1, %xmm0 {%k1} {z}
@@ -31,6 +34,7 @@ func0000000000000014:
 	.quad	3
 .LCPI3_1:
 	.long	7
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpcmpleuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
 	vandps	.LCPI3_1(%rip){1to4}, %xmm1, %xmm0 {%k1} {z}
@@ -39,6 +43,7 @@ func0000000000000008:
 
 .LCPI4_0:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpleq	%ymm2, %ymm0, %k1
@@ -52,6 +57,7 @@ func000000000000000a:
 	.long	134217728
 .LCPI5_2:
 	.long	1056964608
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	vpcmpleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
 	vbroadcastss	.LCPI5_1(%rip), %xmm0

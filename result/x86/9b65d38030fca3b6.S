@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	leal	32770(%rsi), %ecx
 	shrl	$16, %ecx

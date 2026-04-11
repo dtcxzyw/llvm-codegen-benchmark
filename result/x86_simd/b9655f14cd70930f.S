@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000298:
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
 	vpcmpnleud	%ymm0, %ymm2, %k0
@@ -84,6 +85,7 @@ func0000000000000298:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	%ymm0, %ymm2, %k0
@@ -131,6 +133,7 @@ func00000000000000ca:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000315:
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm2, %ymm2
 	vpcmpleud	%ymm0, %ymm2, %k0

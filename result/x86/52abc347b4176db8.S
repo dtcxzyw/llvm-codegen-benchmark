@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x03800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm1
@@ -11,6 +12,7 @@ func0000000000000002:
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vmovd	%xmm0, %eax

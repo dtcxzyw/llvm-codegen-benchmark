@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	imulq	%r8, %rcx
 	mulxq	%r8, %rax, %rdx
@@ -7,6 +8,7 @@ func000000000000000f:
 	adcq	%rsi, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	movabsq	$-4294967296, %rax
 	andq	%r8, %rax
@@ -20,6 +22,7 @@ func000000000000000a:
 	adcq	%rsi, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	movb	$56, %al
 	bzhiq	%rax, %r8, %rax
@@ -30,6 +33,7 @@ func000000000000000e:
 	adcq	%rsi, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	movb	$56, %al
 	bzhiq	%rax, %r8, %rax

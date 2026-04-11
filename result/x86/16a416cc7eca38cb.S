@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007a:
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1
@@ -6,6 +7,7 @@ func000000000000007a:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000074:
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1
@@ -13,6 +15,7 @@ func0000000000000074:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000073:
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1
@@ -20,6 +23,7 @@ func0000000000000073:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	addl	%esi, %edi
 	vcvtusi2ss	%edi, %xmm15, %xmm1
@@ -27,6 +31,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000072:
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1
@@ -34,6 +39,7 @@ func0000000000000072:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000078:
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1
@@ -41,6 +47,7 @@ func0000000000000078:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000007b:
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1
@@ -48,6 +55,7 @@ func000000000000007b:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000075:
 	addl	%esi, %edi
 	vcvtsi2ss	%edi, %xmm15, %xmm1

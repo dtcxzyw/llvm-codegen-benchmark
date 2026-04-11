@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	31744
 	.short	31744
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001d:
 	vpmovdw	%ymm2, %xmm2
 	vpor	%xmm2, %xmm0, %xmm0

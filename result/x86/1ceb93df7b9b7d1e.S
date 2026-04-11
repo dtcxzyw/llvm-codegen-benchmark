@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	orl	$-4096, %esi
 	cmpl	$-8, %esi
@@ -6,6 +7,7 @@ func0000000000000014:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	orq	$16, %rsi
 	cmpq	$1025, %rsi
@@ -13,6 +15,7 @@ func0000000000000024:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
 	movl	$4294967288, %eax
 	orq	%rax, %rsi

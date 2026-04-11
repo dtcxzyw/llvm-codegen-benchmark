@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	27
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000774:
 	vpmovsxdq	%xmm1, %ymm1
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
@@ -12,6 +13,7 @@ func0000000000000774:
 
 .LCPI1_0:
 	.quad	6
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000778:
 	vpmovsxdq	%xmm1, %ymm1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
@@ -23,6 +25,7 @@ func0000000000000778:
 
 .LCPI2_0:
 	.quad	200900
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000007f8:
 	vpmovsxdq	%xmm1, %ymm1
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
@@ -34,6 +37,7 @@ func00000000000007f8:
 
 .LCPI3_0:
 	.long	4
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000007b4:
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k0
@@ -45,6 +49,7 @@ func00000000000007b4:
 	.long	4294967280
 .LCPI4_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000278:
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -57,6 +62,7 @@ func0000000000000278:
 
 .LCPI5_0:
 	.quad	16
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000578:
 	vpmovzxdq	%xmm1, %ymm1
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
@@ -68,6 +74,7 @@ func0000000000000578:
 
 .LCPI6_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000004f8:
 	vpmovzxdq	%xmm1, %ymm1
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
@@ -79,6 +86,7 @@ func00000000000004f8:
 
 .LCPI7_0:
 	.quad	5
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000005f8:
 	vpmovzxdq	%xmm1, %ymm1
 	vpaddq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
@@ -90,6 +98,7 @@ func00000000000005f8:
 
 .LCPI8_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000007f4:
 	vpmovsxdq	%xmm1, %ymm1
 	vpaddq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
@@ -103,6 +112,7 @@ func00000000000007f4:
 	.long	4
 .LCPI9_1:
 	.quad	8
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000078:
 	vpaddd	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -113,6 +123,7 @@ func0000000000000078:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000024:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1

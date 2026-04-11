@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	131072
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$15, %xmm0, %xmm0
@@ -14,6 +15,7 @@ func000000000000000c:
 	.long	16777471
 .LCPI1_1:
 	.long	16777216
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpand	%xmm1, %xmm0, %xmm0

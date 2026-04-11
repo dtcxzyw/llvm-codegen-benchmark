@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006c1:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -7,6 +8,7 @@ func00000000000006c1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -15,6 +17,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000006e1:
 	vpmaxuq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm2, %ymm1, %ymm1

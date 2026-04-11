@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000924:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
@@ -8,6 +9,7 @@ func0000000000000924:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000004cb:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
@@ -17,6 +19,7 @@ func00000000000004cb:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000054b:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
@@ -26,6 +29,7 @@ func000000000000054b:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000004ca:
 	subl	%edx, %esi
 	setns	%cl
@@ -34,6 +38,7 @@ func00000000000004ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000547:
 	subl	%edx, %esi
 	setns	%cl
@@ -42,6 +47,7 @@ func0000000000000547:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000004cc:
 	subl	%edx, %esi
 	cmpl	%edi, %esi
@@ -51,6 +57,7 @@ func00000000000004cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000084:
 	subl	%edx, %esi
 	cmpl	$1000, %esi
@@ -60,6 +67,7 @@ func0000000000000084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ca:
 	subl	%edx, %esi
 	setns	%cl
@@ -68,6 +76,7 @@ func00000000000000ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000016a:
 	subl	%edx, %esi
 	testl	%esi, %esi
@@ -77,6 +86,7 @@ func000000000000016a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000004ea:
 	subl	%edx, %esi
 	setns	%cl

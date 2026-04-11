@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vcmpeqpd	%zmm2, %zmm0, %k0
 	vcmpeqpd	%zmm3, %zmm1, %k1
@@ -10,6 +11,7 @@ func0000000000000010:
 	vcvtdq2pd	%ymm1, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	vcmpneqpd	%zmm2, %zmm0, %k0
 	vcmpneqpd	%zmm3, %zmm1, %k1
@@ -21,6 +23,7 @@ func000000000000000e:
 	vcvtdq2pd	%ymm1, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vcmplepd	%zmm0, %zmm2, %k0
 	vcmplepd	%zmm1, %zmm3, %k1
@@ -32,6 +35,7 @@ func0000000000000018:
 	vcvtdq2pd	%ymm1, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vcmplepd	%zmm2, %zmm0, %k0
 	vcmplepd	%zmm3, %zmm1, %k1
@@ -43,6 +47,7 @@ func0000000000000014:
 	vcvtdq2pd	%ymm1, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vcmpltpd	%zmm0, %zmm2, %k0
 	vcmpltpd	%zmm1, %zmm3, %k1
@@ -54,6 +59,7 @@ func0000000000000008:
 	vcvtdq2pd	%ymm1, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vcmpltpd	%zmm2, %zmm0, %k0
 	vcmpltpd	%zmm3, %zmm1, %k1

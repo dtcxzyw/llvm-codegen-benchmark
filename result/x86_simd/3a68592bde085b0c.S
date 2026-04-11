@@ -21,6 +21,7 @@
 	.short	0
 	.short	3600
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000030:
 	vpsrld	$12, %ymm2, %ymm2
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
@@ -50,6 +51,7 @@ func0000000000000030:
 	.short	0
 	.short	60
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpsrld	$23, %ymm2, %ymm2
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
@@ -61,6 +63,7 @@ func000000000000003f:
 	.long	32766
 .LCPI2_1:
 	.long	86400
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpsrld	$17, %ymm2, %ymm2
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
@@ -122,6 +125,7 @@ func0000000000000028:
 .LCPI3_2:
 	.short	1260
 	.short	0
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000035:
 	vpshufb	.LCPI3_0(%rip), %ymm2, %ymm2
 	vpdpwssd	.LCPI3_2(%rip){1to8}, %ymm2, %ymm1
@@ -150,6 +154,7 @@ func0000000000000035:
 	.short	0
 	.short	1260
 	.short	0
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000037:
 	vpsrld	$16, %ymm2, %ymm2
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
@@ -179,6 +184,7 @@ func0000000000000037:
 	.short	0
 	.short	46455
 	.short	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000017:
 	vpsrld	$6, %ymm2, %ymm2
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
@@ -208,6 +214,7 @@ func0000000000000017:
 	.short	0
 	.short	41420
 	.short	0
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000015:
 	vpsrld	$6, %ymm2, %ymm2
 	vpandd	.LCPI6_0(%rip){1to8}, %ymm2, %ymm2
@@ -250,6 +257,7 @@ func0000000000000015:
 	.byte	128
 .LCPI7_1:
 	.long	115200
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000003d:
 	vpshufb	.LCPI7_0(%rip), %ymm2, %ymm2
 	vpmulld	.LCPI7_1(%rip){1to8}, %ymm2, %ymm2

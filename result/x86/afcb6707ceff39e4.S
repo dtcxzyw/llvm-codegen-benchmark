@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000020e1:
 	leaq	-16(%rsi), %rax
 	testq	%rsi, %rsi
@@ -8,6 +9,7 @@ func00000000000020e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000030e1:
 	leaq	8(%rsi), %rax
 	testq	%rsi, %rsi
@@ -17,6 +19,7 @@ func00000000000030e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e1:
 	leaq	-104(%rsi), %rax
 	testq	%rsi, %rsi

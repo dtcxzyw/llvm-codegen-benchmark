@@ -41,6 +41,7 @@
 	.byte	255
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -50,6 +51,7 @@ func000000000000000f:
 
 .LCPI1_0:
 	.quad	-4294836225
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	vpmovzxdq	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -59,6 +61,7 @@ func000000000000000d:
 
 .LCPI2_0:
 	.quad	-2147483648
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vpmovzxdq	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1

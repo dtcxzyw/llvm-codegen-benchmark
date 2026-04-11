@@ -34,6 +34,7 @@
 	.byte	0
 .LCPI0_1:
 	.long	255
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm2

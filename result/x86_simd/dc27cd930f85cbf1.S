@@ -17,6 +17,7 @@
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vaddpd	%ymm1, %ymm1, %ymm1
 	vcvttpd2dq	%ymm1, %xmm2

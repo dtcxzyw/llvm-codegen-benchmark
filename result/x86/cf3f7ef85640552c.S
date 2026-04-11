@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	shll	$10, %edi
 	andl	$1047552, %edi
 	leal	65536(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	shll	$10, %edi
 	andl	$33488896, %edi

@@ -10,6 +10,7 @@
 	.short	1000
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
 	vpcmpnltuw	.LCPI0_0(%rip), %xmm1, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
@@ -6,6 +7,7 @@ func0000000000000061:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	leal	-1(%rdi), %ecx
 	testq	%rdi, %rdi
@@ -13,6 +15,7 @@ func0000000000000001:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
@@ -20,6 +23,7 @@ func0000000000000041:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000074:
 	leal	23(%rdi), %ecx
 	andl	$496, %ecx
@@ -28,6 +32,7 @@ func0000000000000074:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000044:
 	leaq	23(%rdi), %rcx
 	andq	$-16, %rcx
@@ -36,6 +41,7 @@ func0000000000000044:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	leaq	23(%rdi), %rcx
 	andq	$-16, %rcx
@@ -44,6 +50,7 @@ func0000000000000004:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000066:
 	leaq	32(%rdi), %rax
 	movabsq	$9223372036854775744, %rcx

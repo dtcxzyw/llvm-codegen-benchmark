@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	cmpq	$-1, %rsi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	decq	%rsi
 	cmpq	$32767, %rsi
@@ -11,6 +13,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	decq	%rsi
 	cmpq	$2, %rsi
@@ -19,6 +22,7 @@ func0000000000000024:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	cmpq	$2, %rsi
 	sete	%al

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx
@@ -9,6 +10,7 @@ func0000000000000026:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx
@@ -19,6 +21,7 @@ func000000000000002a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000038:
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx
@@ -29,6 +32,7 @@ func0000000000000038:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx

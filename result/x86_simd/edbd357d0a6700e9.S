@@ -25,6 +25,7 @@
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -58,6 +59,7 @@ func0000000000000000:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0
@@ -91,6 +93,7 @@ func0000000000000001:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI2_0(%rip), %xmm0, %xmm0
@@ -124,6 +127,7 @@ func0000000000000007:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI3_0(%rip), %xmm0, %xmm0

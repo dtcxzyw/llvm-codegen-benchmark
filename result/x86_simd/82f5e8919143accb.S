@@ -8,6 +8,7 @@
 	.short	307
 	.short	307
 	.short	307
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vpmovdw	%ymm0, %xmm0
 	vpsllw	$15, %xmm1, %xmm1
@@ -17,6 +18,7 @@ func0000000000000015:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpmovdw	%ymm0, %xmm0
 	vpsllw	$15, %xmm1, %xmm1

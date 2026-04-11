@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000318:
 	shrb	%sil
 	testq	%rdi, %rdi
@@ -7,6 +8,7 @@ func0000000000000318:
 	movzbl	%al, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000302:
 	testb	$16, %sil
 	sete	%al

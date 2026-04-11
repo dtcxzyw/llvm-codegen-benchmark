@@ -44,6 +44,7 @@
 	.byte	128
 	.byte	64
 	.byte	32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtb	%xmm0, %xmm1, %xmm1

@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001a:
 	leal	3(%rsi,%rsi,2), %eax
 	cltq
 	leaq	-8(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000058:
 	leal	-3(%rsi,%rsi,2), %eax
 	cltq
 	leaq	-8(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000050:
 	imull	$104, %esi, %eax
 	addl	$-104, %eax

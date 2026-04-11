@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000003181:
 	xorb	$11, %dl
 	xorb	$7, %sil

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpmaxsd	%ymm1, %ymm0, %ymm0
@@ -8,6 +9,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpmaxsd	%ymm1, %ymm0, %ymm0
@@ -20,6 +22,7 @@ func0000000000000003:
 	.long	1136623616
 .LCPI2_1:
 	.long	1136689151
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmaxsd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpminsd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0

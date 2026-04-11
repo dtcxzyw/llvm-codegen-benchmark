@@ -9,6 +9,7 @@
 	.quad	4
 .LCPI0_4:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000052b:
 	vpcmpgtd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2

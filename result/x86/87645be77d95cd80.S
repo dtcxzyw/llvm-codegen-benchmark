@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018a:
 	addl	%edx, %edx
 	notl	%edx
@@ -7,6 +8,7 @@ func000000000000018a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	addl	%edx, %edx
 	notl	%edx

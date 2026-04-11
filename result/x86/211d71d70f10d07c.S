@@ -1,64 +1,75 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	leal	36(%rdi), %eax
 	andl	$-16, %eax
 	addl	$21, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	leal	8(%rdi), %eax
 	andl	$248, %eax
 	addl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	leal	8(%rdi), %eax
 	andl	$248, %eax
 	addl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	addl	$64768, %edi
 	movzwl	%di, %eax
 	addl	$784, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	leal	7(%rdi), %eax
 	andl	$-8, %eax
 	addl	$16, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001c:
 	leal	4(%rdi), %eax
 	andl	$2147483640, %eax
 	addl	$32, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000b:
 	leal	63(%rdi), %eax
 	andl	$-16, %eax
 	addl	$-48, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	leal	3(%rdi), %eax
 	andl	$-4, %eax
 	addl	$-6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000000:
 	leal	7(%rdi), %eax
 	andl	$-8, %eax
 	addl	$-8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000a:
 	leal	8(%rdi), %eax
 	andl	$1073741823, %eax
 	addl	$-4, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000001b:
 	leal	3(%rdi), %eax
 	andl	$1020, %eax

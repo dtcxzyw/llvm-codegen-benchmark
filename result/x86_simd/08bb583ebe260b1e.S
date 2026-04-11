@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000054c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -9,6 +10,7 @@ func000000000000054c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000521:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -23,6 +25,7 @@ func0000000000000521:
 	.long	4294967292
 .LCPI2_1:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000546:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k0
@@ -32,6 +35,7 @@ func0000000000000546:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000042c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -42,6 +46,7 @@ func000000000000042c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000506:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -54,6 +59,7 @@ func0000000000000506:
 
 .LCPI5_0:
 	.long	3
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000086:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -68,6 +74,7 @@ func0000000000000086:
 	.long	4294967292
 .LCPI6_1:
 	.long	4
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000146:
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k0
@@ -77,6 +84,7 @@ func0000000000000146:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000cc:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -87,6 +95,7 @@ func00000000000000cc:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000181:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -101,6 +110,7 @@ func0000000000000181:
 	.long	4294967292
 .LCPI9_1:
 	.long	2
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000004cc:
 	vpaddd	.LCPI9_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	%ymm1, %ymm2, %k0
@@ -112,6 +122,7 @@ func00000000000004cc:
 
 .LCPI10_0:
 	.long	16
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000421:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -122,6 +133,7 @@ func0000000000000421:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000021:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000029:
 	xorl	%eax, %eax
 	cmpb	$97, %dil
@@ -8,6 +9,7 @@ func0000000000000029:
 	leal	-97(%rcx,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	movsbl	%dil, %ecx
 	leal	-87(%rcx), %edx

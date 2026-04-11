@@ -10,6 +10,7 @@
 	.short	1
 .LCPI0_1:
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpbroadcastw	.LCPI0_1(%rip), %xmm1
@@ -18,12 +19,14 @@ func0000000000000018:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vpmovdw	%ymm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vpcmpltud	%ymm2, %ymm1, %k1
 	vpmovdw	%ymm0, %xmm0 {%k1} {z}

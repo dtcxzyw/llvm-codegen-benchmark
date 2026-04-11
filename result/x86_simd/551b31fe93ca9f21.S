@@ -14,6 +14,7 @@
 	.quad	1
 .LCPI0_3:
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e9:
 	vpabsd	%xmm1, %xmm1
 	vpcmpltud	.LCPI0_0(%rip){1to4}, %xmm1, %k1

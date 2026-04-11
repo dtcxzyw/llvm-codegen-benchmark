@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	shlq	$53, %rsi
 	sete	%al
@@ -6,12 +7,14 @@ func0000000000000001:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	cmpq	$8, %rsi
 	setae	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	testl	%esi, %esi
 	setne	%al
@@ -19,6 +22,7 @@ func000000000000000c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	movabsq	$9223372036854775776, %rax
 	testq	%rax, %rsi
@@ -27,6 +31,7 @@ func0000000000000014:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	movabsq	$9223372036854775806, %rax
 	testq	%rax, %rsi

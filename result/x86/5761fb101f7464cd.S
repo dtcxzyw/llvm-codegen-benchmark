@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000042c:
 	xorl	$4, %edx
 	xorl	$8, %esi
@@ -9,6 +10,7 @@ func000000000000042c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000282c:
 	testl	%edx, %edx
 	setns	%al

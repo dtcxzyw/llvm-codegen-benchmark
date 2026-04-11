@@ -1,12 +1,14 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	100000
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpmaxsq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -14,6 +16,7 @@ func000000000000000b:
 	vpmaxsq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

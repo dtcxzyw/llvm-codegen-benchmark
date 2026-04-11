@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	andq	$-8, %rdx
 	leaq	8(%rsi,%rdx), %rax
@@ -6,6 +7,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000168:
 	addq	$7, %rdx
 	andq	$-8, %rdx
@@ -14,6 +16,7 @@ func0000000000000168:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000003e4:
 	addl	$10, %edx
 	andl	$-2, %edx
@@ -22,6 +25,7 @@ func00000000000003e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000604:
 	decl	%edx
 	leaq	1(%rsi,%rdx), %rax
@@ -29,6 +33,7 @@ func0000000000000604:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e8:
 	addl	$76, %edx
 	andl	$-2, %edx
@@ -37,6 +42,7 @@ func00000000000001e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000003e1:
 	decl	%edx
 	andl	$1023, %edx
@@ -46,6 +52,7 @@ func00000000000003e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000201:
 	decq	%rdx
 	andq	$-8, %rdx
@@ -54,6 +61,7 @@ func0000000000000201:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001e1:
 	addl	$-2, %edx
 	imulq	$56, %rdx, %rax

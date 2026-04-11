@@ -37,6 +37,7 @@
 	.byte	0
 .LCPI0_2:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpxord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vmovq	.LCPI0_3(%rip), %xmm1
@@ -81,6 +82,7 @@ func0000000000000002:
 	.byte	0
 .LCPI1_2:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpxord	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
 	vmovq	.LCPI1_3(%rip), %xmm1
@@ -125,6 +127,7 @@ func0000000000000001:
 	.byte	0
 .LCPI2_2:
 	.zero	4,6
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vpxord	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0
 	vmovq	.LCPI2_3(%rip), %xmm1

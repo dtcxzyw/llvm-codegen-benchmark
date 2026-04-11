@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm1
@@ -25,6 +26,7 @@ func0000000000000008:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm2
@@ -51,6 +53,7 @@ func000000000000000f:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm2

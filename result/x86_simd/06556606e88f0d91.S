@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	3435973837
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$4, %ymm0, %ymm0
@@ -13,6 +14,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	16383
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1

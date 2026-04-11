@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movq	%rsi, %rax
 	orq	$524288, %rax
@@ -6,6 +7,7 @@ func0000000000000000:
 	cmovneq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	leaq	8192(%rsi), %rax
 	testb	$1, %dil

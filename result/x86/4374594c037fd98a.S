@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000037:
 	imulq	$1374389535, %rdi, %rax
 	shrq	$37, %rax
 	imulq	$100, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000027:
 	imulq	$1374389535, %rdi, %rax
 	shrq	$37, %rax
 	imulq	$100, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000025:
 	movl	$2443359173, %eax
 	imulq	%rdi, %rax
@@ -18,6 +21,7 @@ func0000000000000025:
 	imulq	$-3600, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000017:
 	movl	%edi, %eax
 	movl	$2443359173, %ecx
@@ -27,6 +31,7 @@ func0000000000000017:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	movl	%edi, %eax
 	imulq	$274877907, %rax, %rax
@@ -34,6 +39,7 @@ func0000000000000005:
 	imulq	$-1000, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	movl	%edi, %eax
 	movl	$3518437209, %ecx

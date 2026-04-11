@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
 	addq	%rsi, %rsi
 	cmpq	$10000, %rsi

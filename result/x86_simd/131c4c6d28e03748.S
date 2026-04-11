@@ -39,6 +39,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpsrld	$23, %ymm2, %ymm2
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2
@@ -50,6 +51,7 @@ func0000000000000021:
 	.long	536870908
 .LCPI1_1:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpsrld	$3, %ymm2, %ymm2
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2

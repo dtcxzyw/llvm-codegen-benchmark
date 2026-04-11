@@ -51,6 +51,7 @@
 	.zero	1
 .LCPI0_2:
 	.zero	4,128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrld	$7, %ymm0, %ymm0
@@ -111,6 +112,7 @@ func0000000000000010:
 	.zero	1
 .LCPI1_2:
 	.zero	4,224
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0

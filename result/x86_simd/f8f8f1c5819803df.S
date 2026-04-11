@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpltuw	%ymm1, %ymm0, %k1
 	vpcmpnleuw	%ymm1, %ymm0, %k2
@@ -12,6 +13,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpcmpltuw	%ymm1, %ymm0, %k1
 	vpcmpnleuw	%ymm1, %ymm0, %k2

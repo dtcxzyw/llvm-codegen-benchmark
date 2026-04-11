@@ -3,6 +3,7 @@
 	.long	0x358637bd
 .LCPI0_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vbroadcastss	.LCPI0_0(%rip), %ymm1
 	vmaxps	%ymm0, %ymm1, %ymm0
@@ -13,6 +14,7 @@ func0000000000000002:
 	.long	0x7f7fffff
 .LCPI1_1:
 	.long	8388607
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vbroadcastss	.LCPI1_0(%rip), %ymm1
 	vminps	%ymm0, %ymm1, %ymm0

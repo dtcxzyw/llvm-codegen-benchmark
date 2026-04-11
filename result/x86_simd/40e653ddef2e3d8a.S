@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpslld	$2, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -9,6 +10,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.long	52591
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -18,6 +20,7 @@ func0000000000000020:
 
 .LCPI2_0:
 	.long	19672
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000007e:
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -25,6 +28,7 @@ func000000000000007e:
 	vpsrld	$8, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vpaddd	%ymm2, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -35,6 +39,7 @@ func0000000000000018:
 
 .LCPI4_0:
 	.long	4294966896
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002a:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
@@ -44,6 +49,7 @@ func000000000000002a:
 
 .LCPI5_0:
 	.long	85
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpmulld	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -53,6 +59,7 @@ func0000000000000008:
 
 .LCPI6_0:
 	.long	460324
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000060:
 	vpmulld	.LCPI6_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -62,6 +69,7 @@ func0000000000000060:
 
 .LCPI7_0:
 	.long	3596
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000074:
 	vpmulld	.LCPI7_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -71,6 +79,7 @@ func0000000000000074:
 
 .LCPI8_0:
 	.long	4193722
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000007c:
 	vpmulld	.LCPI8_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -80,6 +89,7 @@ func000000000000007c:
 
 .LCPI9_0:
 	.long	28800
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000006e:
 	vpmulld	.LCPI9_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -89,6 +99,7 @@ func000000000000006e:
 
 .LCPI10_0:
 	.long	4294870832
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000003a:
 	vpmulld	.LCPI10_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0

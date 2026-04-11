@@ -36,6 +36,7 @@
 .LCPI0_2:
 	.short	63
 	.short	63
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k0
@@ -80,6 +81,7 @@ func00000000000000a1:
 .LCPI1_2:
 	.short	62
 	.short	62
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	vpcmpneqw	.LCPI1_1(%rip), %ymm0, %k0
@@ -103,6 +105,7 @@ func00000000000000a4:
 .LCPI2_3:
 	.short	60
 	.short	60
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a8:
 	vpandd	.LCPI2_3(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxwd	%xmm0, %ymm0
@@ -149,6 +152,7 @@ func00000000000000a8:
 .LCPI3_2:
 	.short	60
 	.short	60
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ac:
 	vpandd	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0
 	vpcmpneqw	.LCPI3_1(%rip), %ymm0, %k0

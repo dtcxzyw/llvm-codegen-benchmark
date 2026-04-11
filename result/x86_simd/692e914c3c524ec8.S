@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vmaxps	%zmm2, %zmm3, %zmm2
@@ -6,6 +7,7 @@ func0000000000000002:
 	vaddps	%zmm1, %zmm0, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpneqps	%zmm3, %zmm2, %k1
@@ -16,6 +18,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	0x40a00000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vbroadcastss	.LCPI2_0(%rip), %zmm3
 	vminps	%zmm2, %zmm3, %zmm2

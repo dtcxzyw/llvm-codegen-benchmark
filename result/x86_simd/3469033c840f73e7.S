@@ -32,6 +32,7 @@
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000037:
 	vpslld	$8, %ymm2, %ymm2
 	vpmovzxbd	%xmm1, %ymm1
@@ -72,6 +73,7 @@ func0000000000000037:
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000030:
 	vpslld	$4, %ymm2, %ymm2
 	vpmovzxbd	%xmm1, %ymm1
@@ -112,6 +114,7 @@ func0000000000000030:
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000036:
 	vpslld	$8, %ymm2, %ymm2
 	vpmovzxbd	%xmm1, %ymm1

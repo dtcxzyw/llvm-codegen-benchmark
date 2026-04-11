@@ -83,6 +83,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsrlw	$2, %ymm0, %ymm0
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0
@@ -184,6 +185,7 @@ func0000000000000002:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpmulhuw	.LCPI1_0(%rip), %ymm0, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0

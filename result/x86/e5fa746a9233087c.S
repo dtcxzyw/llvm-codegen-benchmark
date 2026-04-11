@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	movzwl	%si, %eax
 	shll	$3, %eax
@@ -6,6 +7,7 @@ func000000000000001e:
 	leaq	8(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001a:
 	movzwl	%si, %eax
 	shll	$2, %eax
@@ -13,6 +15,7 @@ func000000000000001a:
 	leaq	-4(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
 	movzwl	%si, %eax
 	movl	$6, %ecx
@@ -21,6 +24,7 @@ func000000000000003f:
 	leaq	8(%rdi,%rcx), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001f:
 	movzwl	%si, %eax
 	movl	$5, %ecx
@@ -28,12 +32,14 @@ func000000000000001f:
 	leaq	8(%rdi,%rcx,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001c:
 	movzwl	%si, %eax
 	subq	%rax, %rdi
 	leaq	1040(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000010:
 	movzwl	%si, %eax
 	subq	%rax, %rdi

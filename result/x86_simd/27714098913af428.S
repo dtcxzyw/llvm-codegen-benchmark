@@ -23,6 +23,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007f:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2

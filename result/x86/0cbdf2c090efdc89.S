@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	shrq	$20, %rdi
 	cmpq	$1, %rdi
@@ -6,6 +7,7 @@ func0000000000000003:
 	leaq	(,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	shrq	$4, %rdi
 	cmpq	$1048577, %rdi
@@ -14,6 +16,7 @@ func0000000000000000:
 	shlq	$32, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	movq	%rdi, %rax
 	shrq	$7, %rax
@@ -22,6 +25,7 @@ func000000000000000a:
 	shlq	$7, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	shrq	%rdi
 	cmpq	$17, %rdi
@@ -30,6 +34,7 @@ func0000000000000002:
 	shlq	$3, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	shrq	$3, %rdi
 	cmpq	$1, %rdi
@@ -37,6 +42,7 @@ func000000000000000b:
 	leaq	(,%rdi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	shrq	%rdi
 	cmpq	$9, %rdi
@@ -45,6 +51,7 @@ func0000000000000007:
 	shlq	$2, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	shrq	%rdi
 	cmpq	$9, %rdi
@@ -53,6 +60,7 @@ func0000000000000004:
 	shlq	$2, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000f:
 	shrq	%rdi
 	cmpq	$9, %rdi

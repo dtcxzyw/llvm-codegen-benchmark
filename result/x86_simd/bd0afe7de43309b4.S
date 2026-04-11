@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vcvtpd2ps	%zmm3, %ymm3
 	vcvtpd2ps	%zmm4, %ymm4
@@ -13,6 +14,7 @@ func0000000000000003:
 
 .LCPI1_0:
 	.quad	0xc00921fb54442d18
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vcvtpd2ps	%zmm3, %ymm3
 	vcvtpd2ps	%zmm4, %ymm4
@@ -23,6 +25,7 @@ func0000000000000002:
 	vinsertf32x8	$1, %ymm4, %zmm3, %zmm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vcvtpd2ps	%zmm3, %ymm3
 	vcvtpd2ps	%zmm4, %ymm4
@@ -35,6 +38,7 @@ func0000000000000007:
 
 .LCPI3_0:
 	.quad	0x4024000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vcvtpd2ps	%zmm3, %ymm3
 	vcvtpd2ps	%zmm4, %ymm4

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000030:
 	testl	%esi, %esi
 	setne	%al
@@ -6,6 +7,7 @@ func0000000000000030:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000118:
 	testl	%esi, %esi
 	setle	%al
@@ -13,6 +15,7 @@ func0000000000000118:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	cmpl	$12, %esi
 	setb	%al
@@ -20,6 +23,7 @@ func0000000000000010:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	testl	%esi, %esi
 	sets	%al

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	cmpq	%rdx, %rsi
 	cmovlq	%rsi, %rdx
@@ -6,6 +7,7 @@ func0000000000000005:
 	leaq	(%rdi,%rdx), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	sarq	$5, %rdx
 	cmpq	%rsi, %rdi

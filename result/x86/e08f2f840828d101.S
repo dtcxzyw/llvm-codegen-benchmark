@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	imulq	%r8, %rcx
 	mulxq	%r8, %rax, %rdx

@@ -1,14 +1,17 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000095:
 	subl	%edx, %edi
 	leal	-53(%rdi,%rsi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000090:
 	subl	%edx, %edi
 	leal	-25(%rdi,%rsi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	subl	%edx, %edi
 	leal	601(%rdi,%rsi), %eax

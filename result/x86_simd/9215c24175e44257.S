@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001141:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -9,6 +10,7 @@ func0000000000001141:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000941:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -23,6 +25,7 @@ func0000000000000941:
 	.long	2
 .LCPI2_1:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001184:
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -34,6 +37,7 @@ func0000000000001184:
 
 .LCPI3_0:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000008c6:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -43,6 +47,7 @@ func00000000000008c6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000094a:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -54,6 +59,7 @@ func000000000000094a:
 
 .LCPI5_0:
 	.long	4
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000102c:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -65,6 +71,7 @@ func000000000000102c:
 
 .LCPI6_0:
 	.long	65792
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000108a:
 	vpsrlq	$5, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -75,6 +82,7 @@ func000000000000108a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000114a:
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -86,6 +94,7 @@ func000000000000114a:
 
 .LCPI8_0:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000001021:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -100,6 +109,7 @@ func0000000000001021:
 	.long	3
 .LCPI9_1:
 	.long	5
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002c:
 	vpsrlq	$9, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -113,6 +123,7 @@ func000000000000002c:
 	.long	6
 .LCPI10_1:
 	.long	1
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000021:
 	vpsrlq	$9, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -126,6 +137,7 @@ func0000000000000021:
 	.long	5
 .LCPI11_1:
 	.long	3
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000181:
 	vpsrlq	$9, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -135,6 +147,7 @@ func0000000000000181:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000014a:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -150,6 +163,7 @@ func000000000000014a:
 	.quad	-1152921504606846976
 .LCPI13_2:
 	.long	28
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000d8c:
 	vpandq	.LCPI13_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpneqq	.LCPI13_1(%rip){1to4}, %ymm1, %k1
@@ -160,6 +174,7 @@ func0000000000000d8c:
 
 .LCPI14_0:
 	.long	1
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000118a:
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -174,6 +189,7 @@ func000000000000118a:
 	.long	1
 .LCPI15_1:
 	.long	56320
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000102a:
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -185,6 +201,7 @@ func000000000000102a:
 
 .LCPI16_0:
 	.long	7
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000001181:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -194,6 +211,7 @@ func0000000000001181:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000118c:
 	vpsrlq	$5, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1

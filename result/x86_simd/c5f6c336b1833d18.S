@@ -19,6 +19,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovqd	%ymm0, %xmm0
 	vpsrld	$5, %xmm0, %xmm0
@@ -57,6 +58,7 @@ func0000000000000003:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001b:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -95,6 +97,7 @@ func000000000000001b:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001a:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -133,6 +136,7 @@ func000000000000001a:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000012:
 	vpmovqd	%ymm0, %xmm0
 	vpsrld	$5, %xmm0, %xmm0

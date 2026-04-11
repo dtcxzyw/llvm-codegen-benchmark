@@ -32,6 +32,7 @@
 	.byte	45
 	.byte	46
 	.byte	47
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000025:
 	vmovdqa	.LCPI0_0(%rip), %ymm2
 	vpermi2b	%ymm0, %ymm1, %ymm2
@@ -71,6 +72,7 @@ func0000000000000025:
 	.byte	45
 	.byte	46
 	.byte	47
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vmovdqa	.LCPI1_0(%rip), %ymm2
 	vpermi2b	%ymm0, %ymm1, %ymm2

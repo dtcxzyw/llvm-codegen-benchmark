@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000050:
 	decl	%esi
 	movslq	%esi, %rax
@@ -6,6 +7,7 @@ func0000000000000050:
 	leaq	64(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	incl	%esi
 	movslq	%esi, %rax
@@ -13,6 +15,7 @@ func0000000000000010:
 	leaq	56(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000053:
 	decl	%esi
 	movslq	%esi, %rax

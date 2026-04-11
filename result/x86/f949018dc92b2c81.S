@@ -1,14 +1,17 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	andl	$2, %esi
 	leal	(%rdi,%rsi,4), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	andl	$2, %esi
 	leal	(%rdi,%rsi,4), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	shll	$16, %esi
 	andl	$2147418112, %esi

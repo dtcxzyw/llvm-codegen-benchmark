@@ -17,6 +17,7 @@
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpmaxud	%xmm2, %xmm1, %xmm1
 	vpmovsxbd	.LCPI0_1(%rip), %ymm2

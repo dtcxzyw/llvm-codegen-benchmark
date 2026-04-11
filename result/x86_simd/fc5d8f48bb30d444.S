@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsrlq	$32, %ymm0, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -6,6 +7,7 @@ func0000000000000000:
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vshufps	$245, %ymm0, %ymm0, %ymm0
 	retq

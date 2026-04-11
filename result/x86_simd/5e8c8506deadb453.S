@@ -5,6 +5,7 @@
 	.long	4293853184
 .LCPI0_2:
 	.long	4293855232
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpxord	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
@@ -19,6 +20,7 @@ func0000000000000024:
 	.long	4293853184
 .LCPI1_2:
 	.long	4293855232
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpxord	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
@@ -29,6 +31,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.long	4294967232
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpcmpeqd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

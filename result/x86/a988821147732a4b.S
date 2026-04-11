@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000374:
 	movzwl	%dx, %eax
 	leal	4(%rax,%rdi), %eax
@@ -7,6 +8,7 @@ func0000000000000374:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000308:
 	movzwl	%dx, %eax
 	leal	4(%rax,%rdi), %eax
@@ -15,6 +17,7 @@ func0000000000000308:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000378:
 	movzwl	%dx, %eax
 	leal	2(%rax,%rdi), %eax

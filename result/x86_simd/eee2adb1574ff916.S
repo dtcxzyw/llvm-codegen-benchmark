@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %xmm1
@@ -10,6 +11,7 @@ func00000000000000c1:
 
 .LCPI1_0:
 	.zero	16,49
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpaddb	%xmm0, %xmm0, %xmm0
@@ -22,6 +24,7 @@ func0000000000000017:
 	.zero	16,1
 .LCPI2_2:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vpcmpnleub	.LCPI2_0(%rip), %xmm1, %k1
 	vpaddb	%xmm0, %xmm0, %xmm0

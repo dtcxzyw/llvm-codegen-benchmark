@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000058c:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpneqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
@@ -11,6 +12,7 @@ func000000000000058c:
 
 .LCPI1_0:
 	.quad	-281474976710657
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000188:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
@@ -21,6 +23,7 @@ func0000000000000188:
 
 .LCPI2_0:
 	.quad	9223090561878065152
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpeqq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
@@ -31,6 +34,7 @@ func0000000000000181:
 
 .LCPI3_0:
 	.quad	-9223372036854775806
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpltq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
@@ -39,6 +43,7 @@ func0000000000000026:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000421:
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0
@@ -46,6 +51,7 @@ func0000000000000421:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestnmq	%ymm1, %ymm1, %k1

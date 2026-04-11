@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000308:
 	vpmovqd	%ymm1, %xmm1
 	vpcmpltud	.LCPI0_0(%rip){1to4}, %xmm1, %k0
@@ -46,6 +47,7 @@ func0000000000000308:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000302:
 	vpmovqd	%ymm1, %xmm1
 	vpcmpneqd	.LCPI1_0(%rip){1to4}, %xmm1, %k0

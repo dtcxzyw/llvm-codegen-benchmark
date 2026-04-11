@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	subq	%rdx, %rsi
 	cmpq	$9, %rsi
@@ -6,6 +7,7 @@ func000000000000000a:
 	cmovll	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -13,6 +15,7 @@ func0000000000000004:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	subq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -20,6 +23,7 @@ func0000000000000001:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	subq	%rdx, %rsi
 	testq	%rsi, %rsi
@@ -27,6 +31,7 @@ func0000000000000006:
 	cmovgl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -34,6 +39,7 @@ func0000000000000028:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -41,6 +47,7 @@ func0000000000000008:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000026:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -48,6 +55,7 @@ func0000000000000026:
 	cmovgel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002a:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax

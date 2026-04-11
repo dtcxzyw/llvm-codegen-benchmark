@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001d3:
 	leal	87(%rsi), %eax
 	cmpl	$10, %esi
@@ -6,6 +7,7 @@ func00000000000001d3:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000150:
 	leal	87(%rsi), %eax
 	cmpl	$10, %esi

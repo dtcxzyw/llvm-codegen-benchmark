@@ -3,6 +3,7 @@
 	.long	2147483648
 .LCPI0_1:
 	.long	2281701376
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1
@@ -14,6 +15,7 @@ func0000000000000041:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vptestnmd	%ymm0, %ymm0, %k0 {%k1}

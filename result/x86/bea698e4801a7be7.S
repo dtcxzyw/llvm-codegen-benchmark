@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vcvtsi2ss	%esi, %xmm15, %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -6,6 +7,7 @@ func0000000000000015:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	vcvtsi2ss	%esi, %xmm15, %xmm1
 	vucomiss	%xmm1, %xmm0

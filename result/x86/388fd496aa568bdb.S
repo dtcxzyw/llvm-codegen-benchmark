@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
@@ -8,6 +9,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	movslq	%edx, %rax
 	movslq	%esi, %rcx
@@ -17,6 +19,7 @@ func000000000000008a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a6:
 	movslq	%edx, %rcx
 	movslq	%esi, %rax
@@ -25,6 +28,7 @@ func00000000000000a6:
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000088:
 	movslq	%edx, %rax
 	movslq	%esi, %rcx

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpsrld	$9, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -16,6 +17,7 @@ func000000000000000c:
 	.short	64490
 	.short	64490
 	.short	64490
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpsrld	$20, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -32,6 +34,7 @@ func0000000000000005:
 	.short	55232
 	.short	55232
 	.short	55232
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -39,6 +42,7 @@ func000000000000000e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpsrld	$3, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

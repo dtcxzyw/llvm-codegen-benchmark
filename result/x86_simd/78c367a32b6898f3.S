@@ -39,6 +39,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -51,6 +52,7 @@ func0000000000000003:
 	.long	153391689
 .LCPI1_1:
 	.long	613566756
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpslld	$2, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2

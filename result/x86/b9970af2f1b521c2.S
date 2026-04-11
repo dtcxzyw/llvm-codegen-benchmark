@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	imull	$23593, %edi, %eax
 	addl	$-22285, %eax
@@ -8,12 +9,14 @@ func0000000000000001:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	andl	$3, %edi
 	cmpw	$1, %di
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	movl	%edi, %eax
 	incl	%edi

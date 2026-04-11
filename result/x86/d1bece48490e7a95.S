@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	cmpl	$3, %esi
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000181:
 	shlb	$4, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	cmpl	$2, %esi
 	movl	$44, %ecx

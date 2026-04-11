@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	orl	%esi, %edi
@@ -6,6 +7,7 @@ func0000000000000021:
 	shll	$13, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	testl	%esi, %esi
 	movq	$-805306369, %rax
@@ -15,6 +17,7 @@ func0000000000000181:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	cmpl	$1, %esi
 	movl	$23, %eax
@@ -24,6 +27,7 @@ func0000000000000024:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	testl	%esi, %esi
 	sete	%al
@@ -35,6 +39,7 @@ func000000000000002c:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
 	testl	%esi, %esi
 	setne	%al

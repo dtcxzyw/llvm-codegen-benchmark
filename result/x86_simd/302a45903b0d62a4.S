@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestmq	%ymm1, %ymm1, %k1
 	vpsraq	$32, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vptestmq	%ymm1, %ymm1, %k1
 	vpsraq	$59, %ymm2, %ymm0 {%k1}
@@ -11,6 +13,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.quad	128
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpcmpnltuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vpsraq	$32, %ymm2, %ymm0 {%k1}
@@ -18,6 +21,7 @@ func0000000000000014:
 
 .LCPI3_0:
 	.quad	40
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
 	vpcmpnltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vpsraq	$32, %ymm2, %ymm0 {%k1}

@@ -37,6 +37,7 @@
 	.zero	4,1
 .LCPI0_3:
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovwb	%xmm1, %xmm1
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1

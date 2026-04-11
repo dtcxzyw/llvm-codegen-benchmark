@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014c:
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi
@@ -8,6 +9,7 @@ func000000000000014c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi
@@ -17,6 +19,7 @@ func0000000000000026:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi
@@ -26,6 +29,7 @@ func0000000000000024:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c1:
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi
@@ -35,6 +39,7 @@ func00000000000000c1:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000014b:
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi
@@ -44,6 +49,7 @@ func000000000000014b:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002b:
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi
@@ -53,6 +59,7 @@ func000000000000002b:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000187:
 	movslq	%edx, %rax
 	cmpq	%rax, %rdi

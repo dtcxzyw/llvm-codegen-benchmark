@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovqd	%ymm1, %xmm2
 	vpextrw	$2, %xmm0, %eax
@@ -27,6 +28,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	32767
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpmovqd	%ymm1, %xmm2
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0

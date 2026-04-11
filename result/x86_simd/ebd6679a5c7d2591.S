@@ -32,6 +32,7 @@
 	.byte	61
 	.byte	28
 	.byte	61
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vmovdqa	.LCPI0_0(%rip), %ymm2
 	vpermi2b	%ymm0, %ymm1, %ymm2
@@ -59,6 +60,7 @@ func0000000000000006:
 	.short	0
 	.short	63
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm1, %ymm0

@@ -5,6 +5,7 @@
 	.quad	19
 .LCPI0_2:
 	.quad	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2
@@ -17,6 +18,7 @@ func0000000000000010:
 	.quad	-4
 .LCPI1_1:
 	.quad	-8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
@@ -31,6 +33,7 @@ func0000000000000012:
 	.quad	4294967294
 .LCPI2_2:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000140:
 	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm2

@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a18:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1

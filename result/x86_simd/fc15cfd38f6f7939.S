@@ -5,6 +5,7 @@
 	.long	107520
 .LCPI0_2:
 	.long	41984
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm2

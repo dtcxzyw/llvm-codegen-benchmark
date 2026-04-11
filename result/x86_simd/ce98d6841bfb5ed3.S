@@ -3,6 +3,7 @@
 	.long	1899
 .LCPI0_1:
 	.long	2920577761
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpshufd	$245, %ymm2, %ymm3
@@ -18,6 +19,7 @@ func0000000000000000:
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2

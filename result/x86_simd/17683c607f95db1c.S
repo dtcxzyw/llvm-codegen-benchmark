@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpternlogd	$40, .LCPI0_1(%rip){1to8}, %ymm2, %ymm1
 	vpcmpnleud	%ymm0, %ymm1, %k0
@@ -46,6 +47,7 @@ func0000000000000018:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpternlogd	$40, .LCPI1_0(%rip){1to8}, %ymm2, %ymm1
 	vpcmpneqd	%ymm0, %ymm1, %k0
@@ -91,6 +93,7 @@ func000000000000000c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpternlogd	$40, .LCPI2_1(%rip){1to8}, %ymm2, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k0

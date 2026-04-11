@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018f:
 	andl	$7936, %edx
 	leaq	(%rdi,%rsi), %rax
@@ -6,6 +7,7 @@ func000000000000018f:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002f:
 	movq	%rdi, %rax
 	notl	%edx
@@ -14,6 +16,7 @@ func000000000000002f:
 	adcq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000180:
 	andl	$7, %edx
 	leaq	(%rdi,%rsi), %rax
@@ -21,6 +24,7 @@ func0000000000000180:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002b:
 	xorl	%eax, %eax
 	cmpb	$7, %dl

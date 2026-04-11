@@ -5,6 +5,7 @@
 	.zero	16,15
 .LCPI0_2:
 	.zero	4,143
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -83,6 +84,7 @@ func0000000000000001:
 	.byte	0
 .LCPI1_6:
 	.byte	5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpmovsxbw	%xmm0, %ymm1
 	vpmullw	.LCPI1_0(%rip), %ymm1, %ymm1

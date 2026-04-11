@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	andl	$1, %esi
 	leaq	1(%rdi,%rsi,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movl	%esi, %eax
 	andl	$1, %eax
@@ -12,6 +14,7 @@ func0000000000000000:
 	orq	$26212, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -20,6 +23,7 @@ func0000000000000002:
 	orq	$1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	notb	%sil
 	movzbl	%sil, %ecx

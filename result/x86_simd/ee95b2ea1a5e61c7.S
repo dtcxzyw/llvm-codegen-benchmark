@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpaddw	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -25,6 +26,7 @@ func0000000000000006:
 	.short	65534
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpaddw	%ymm2, %ymm1, %ymm1
 	vpaddw	.LCPI1_0(%rip), %ymm1, %ymm1

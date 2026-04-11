@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000304:
 	andl	$262143, %esi
 	cmpl	%edi, %esi
@@ -8,6 +9,7 @@ func0000000000000304:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	andl	$536870911, %esi
 	cmpl	%edi, %esi
@@ -17,6 +19,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	andl	$1792, %esi
 	setne	%cl
@@ -25,6 +28,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000030c:
 	movzwl	%si, %eax
 	cmpl	$65535, %eax

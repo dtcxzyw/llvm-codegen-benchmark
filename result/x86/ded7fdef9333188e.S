@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000630:
 	shrq	$39, %rdx
 	andl	$1, %edx
@@ -8,6 +9,7 @@ func0000000000000630:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b0:
 	testl	$1048576, %edx
 	sete	%cl

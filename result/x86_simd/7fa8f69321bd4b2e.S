@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpmovq2m	%ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
@@ -7,12 +8,14 @@ func0000000000000018:
 
 .LCPI1_0:
 	.quad	137438953471
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000019:
 	vpmovq2m	%ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
@@ -23,6 +26,7 @@ func0000000000000019:
 	.quad	2048
 .LCPI3_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %xmm2
@@ -33,12 +37,14 @@ func0000000000000010:
 
 .LCPI4_0:
 	.quad	20479
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000061:
 	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000029:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtq	%ymm3, %ymm2, %k1
@@ -46,6 +52,7 @@ func0000000000000029:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtq	%ymm3, %ymm2, %k1
@@ -55,18 +62,21 @@ func0000000000000028:
 
 .LCPI7_0:
 	.quad	31
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000060:
 	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000007:
 	vptestnmq	%ymm2, %ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000004:
 	vptestnmq	%ymm2, %ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
@@ -75,12 +85,14 @@ func0000000000000004:
 
 .LCPI10_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000005:
 	vpcmpeqq	.LCPI10_0(%rip){1to4}, %ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000031:
 	vptestmq	%ymm2, %ymm2, %k1
 	vpaddd	%xmm1, %xmm0, %xmm0 {%k1}

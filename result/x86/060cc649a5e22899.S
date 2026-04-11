@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	testq	%rdx, %rdx
 	cmovneq	%rsi, %rdi
@@ -7,6 +8,7 @@ func0000000000000002:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	testq	%rdx, %rdx
 	cmovneq	%rsi, %rdi
@@ -15,6 +17,7 @@ func0000000000000003:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	cmpq	$3201, %rdx
 	cmovaeq	%rsi, %rdi

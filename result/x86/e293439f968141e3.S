@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
 	movb	$8, %al
 	subb	%dil, %al
@@ -6,6 +7,7 @@ func000000000000001b:
 	shrxl	%eax, %ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001a:
 	movb	$8, %al
 	subb	%dil, %al
@@ -13,6 +15,7 @@ func000000000000001a:
 	shrxl	%eax, %ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	movb	$8, %al
 	subb	%dil, %al

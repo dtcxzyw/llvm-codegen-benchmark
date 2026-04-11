@@ -37,6 +37,7 @@
 	.long	214748364
 .LCPI0_3:
 	.zero	4,248
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000030c:
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqb	.LCPI0_1(%rip), %xmm1, %k0
@@ -82,6 +83,7 @@ func000000000000030c:
 	.zero	1
 .LCPI1_2:
 	.long	10
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k0

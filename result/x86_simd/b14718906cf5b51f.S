@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000016:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -16,6 +17,7 @@ func0000000000000016:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x3089705f
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -29,6 +31,7 @@ func0000000000000012:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x322bcc77
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000b:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -42,6 +45,7 @@ func000000000000000b:
 	.long	0x7fffffff
 .LCPI3_1:
 	.long	0x7e7fffff
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -55,6 +59,7 @@ func0000000000000002:
 	.long	0x7fffffff
 .LCPI4_1:
 	.long	0x43340000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -68,6 +73,7 @@ func000000000000001c:
 	.long	0x7fffffff
 .LCPI5_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -81,6 +87,7 @@ func000000000000001a:
 	.long	0x7fffffff
 .LCPI6_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -94,6 +101,7 @@ func0000000000000006:
 	.long	0x7fffffff
 .LCPI7_1:
 	.long	0x43340000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -107,6 +115,7 @@ func0000000000000004:
 	.long	0x7fffffff
 .LCPI8_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000015:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -120,6 +129,7 @@ func0000000000000015:
 	.long	2147483647
 .LCPI9_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000007:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -133,6 +143,7 @@ func0000000000000007:
 	.long	0x7fffffff
 .LCPI10_1:
 	.long	0x3f800054
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

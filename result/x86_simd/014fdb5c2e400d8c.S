@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3949f623d5a8a733
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1
@@ -16,6 +17,7 @@ func0000000000000042:
 
 .LCPI1_0:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1
@@ -31,6 +33,7 @@ func0000000000000044:
 
 .LCPI2_0:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vmaxps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1

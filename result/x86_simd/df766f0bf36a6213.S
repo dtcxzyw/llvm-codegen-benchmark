@@ -5,6 +5,7 @@
 	.zero	16,1
 .LCPI0_2:
 	.zero	4,16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpord	.LCPI0_2(%rip){1to4}, %xmm1, %xmm2
@@ -19,6 +20,7 @@ func0000000000000001:
 	.zero	16,37
 .LCPI1_2:
 	.zero	4,4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpord	.LCPI1_2(%rip){1to4}, %xmm1, %xmm2

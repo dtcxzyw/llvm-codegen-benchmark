@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	shrxl	%edi, %esi, %ecx
 	shlxl	%edx, %esi, %eax

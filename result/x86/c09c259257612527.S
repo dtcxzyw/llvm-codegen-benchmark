@@ -1,100 +1,117 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000037:
 	testl	%edx, %edx
 	cmovnsl	%esi, %edi
 	leal	1900(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a3:
 	cmpl	$1025, %edx
 	cmovael	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	cmpl	$-1, %edx
 	cmovnel	%esi, %edi
 	leal	51(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	cmpl	$-1, %edx
 	cmovnel	%esi, %edi
 	leal	51(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	cmpl	$1, %edx
 	cmovnel	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000022:
 	cmpl	$-10, %edx
 	cmovael	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000f:
 	cmpl	$2, %edx
 	cmovnel	%esi, %edi
 	leal	8(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000032:
 	testl	%edx, %edx
 	cmovgl	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000033:
 	testl	%edx, %edx
 	cmovnsl	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000034:
 	testl	%edx, %edx
 	cmovnsl	%esi, %edi
 	leal	1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000030:
 	testl	%edx, %edx
 	cmovnsl	%esi, %edi
 	leal	3(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000009:
 	cmpl	$255, %edx
 	cmovnel	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000000a:
 	testl	%edx, %edx
 	cmovnel	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000040:
 	cmpl	$33, %edx
 	cmovbl	%esi, %edi
 	leal	-32(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000050:
 	testl	%edx, %edx
 	cmovlel	%esi, %edi
 	leal	100(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000000c2:
 	cmpl	$3122, %edx
 	cmovbl	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000a1:
 	cmpl	$2, %edx
 	cmovael	%esi, %edi

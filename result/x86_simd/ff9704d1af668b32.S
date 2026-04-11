@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vaddpd	%zmm5, %zmm3, %zmm3
 	vaddpd	%zmm4, %zmm2, %zmm2
@@ -23,6 +24,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3d06849b86a12b9b
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vaddpd	%zmm5, %zmm3, %zmm3
 	vaddpd	%zmm4, %zmm2, %zmm2

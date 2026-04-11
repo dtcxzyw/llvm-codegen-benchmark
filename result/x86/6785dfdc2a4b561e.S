@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	addl	$-131028, %edx
 	testb	$1, %dil
@@ -6,6 +7,7 @@ func0000000000000000:
 	movl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	leaq	-1(%rdx), %rcx
 	testb	$1, %dil

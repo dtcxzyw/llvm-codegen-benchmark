@@ -17,6 +17,7 @@
 	.short	36
 	.short	36
 	.short	36
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e4:
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm2
 	vpmullw	.LCPI0_1(%rip), %xmm1, %xmm1

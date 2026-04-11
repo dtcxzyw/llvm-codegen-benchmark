@@ -3,6 +3,7 @@
 	.long	2
 .LCPI0_1:
 	.long	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpor	%ymm1, %ymm0, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -15,6 +16,7 @@ func0000000000000021:
 	.quad	1
 .LCPI1_1:
 	.long	4294967291
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vpcmpeqq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vptestmq	%ymm0, %ymm0, %k1 {%k1}

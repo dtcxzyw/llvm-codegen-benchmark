@@ -20,6 +20,7 @@
 .LCPI0_2:
 	.short	64512
 	.short	64512
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000e81:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -39,6 +40,7 @@ func0000000000000e81:
 	.short	8192
 	.short	8192
 	.short	8192
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000e8c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2

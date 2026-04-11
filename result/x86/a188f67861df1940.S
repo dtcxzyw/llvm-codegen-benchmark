@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000842:
 	shrxl	%edx, %esi, %eax
 	testl	%eax, %eax
@@ -8,6 +9,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001042:
 	btl	%edx, %esi
 	setae	%cl
@@ -16,6 +18,7 @@ func0000000000001042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001842:
 	btl	%edx, %esi
 	setae	%cl
@@ -24,6 +27,7 @@ func0000000000001842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000001848:
 	btl	%edx, %esi
 	setae	%cl
@@ -32,6 +36,7 @@ func0000000000001848:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000001b02:
 	btl	%edx, %esi
 	setb	%cl
@@ -40,6 +45,7 @@ func0000000000001b02:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000001198:
 	btl	%edx, %esi
 	setb	%cl
@@ -48,6 +54,7 @@ func0000000000001198:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000001998:
 	btl	%edx, %esi
 	setb	%cl
@@ -56,6 +63,7 @@ func0000000000001998:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000001858:
 	btl	%edx, %esi
 	setae	%cl

@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	85
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -45,6 +46,7 @@ func000000000000000f:
 .LCPI1_1:
 	.short	3600
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004f:
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -71,6 +73,7 @@ func000000000000004f:
 .LCPI2_1:
 	.short	100
 	.short	0
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000007f:
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1

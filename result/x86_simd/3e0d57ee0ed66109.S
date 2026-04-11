@@ -5,6 +5,7 @@
 	.long	0x7fffffff
 .LCPI0_2:
 	.quad	0x3ee4f8b588e368f1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vaddps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI0_1(%rip){1to16}, %zmm0, %zmm0
@@ -25,6 +26,7 @@ func0000000000000015:
 	.long	0x7fffffff
 .LCPI1_2:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vaddps	.LCPI1_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI1_1(%rip){1to16}, %zmm0, %zmm0
@@ -45,6 +47,7 @@ func0000000000000004:
 	.long	0x7fffffff
 .LCPI2_2:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vaddps	.LCPI2_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI2_1(%rip){1to16}, %zmm0, %zmm0
@@ -65,6 +68,7 @@ func0000000000000005:
 	.long	0x7fffffff
 .LCPI3_2:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vaddps	.LCPI3_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI3_1(%rip){1to16}, %zmm0, %zmm0
@@ -85,6 +89,7 @@ func0000000000000014:
 	.long	0x7fffffff
 .LCPI4_2:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000012:
 	vaddps	.LCPI4_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI4_1(%rip){1to16}, %zmm0, %zmm0

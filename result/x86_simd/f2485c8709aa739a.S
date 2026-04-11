@@ -36,6 +36,7 @@
 .LCPI0_2:
 	.short	252
 	.short	252
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k0

@@ -7,6 +7,7 @@
 	.zero	4,15
 .LCPI0_3:
 	.zero	4,224
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpaddb	%xmm1, %xmm1, %xmm2
 	vpternlogd	$248, .LCPI0_2(%rip){1to4}, %xmm1, %xmm0
@@ -47,6 +48,7 @@ func0000000000000002:
 	.zero	4,1
 .LCPI1_5:
 	.zero	4,8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm1, %xmm2
 	vpternlogd	$248, .LCPI1_4(%rip){1to4}, %xmm1, %xmm0
@@ -61,6 +63,7 @@ func0000000000000003:
 	.zero	4,7
 .LCPI2_3:
 	.zero	4,16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpaddb	%xmm1, %xmm1, %xmm2
 	vpternlogd	$248, .LCPI2_2(%rip){1to4}, %xmm1, %xmm0
@@ -75,6 +78,7 @@ func0000000000000001:
 	.zero	4,3
 .LCPI3_3:
 	.zero	4,16
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpaddb	%xmm1, %xmm1, %xmm2
 	vpternlogd	$248, .LCPI3_2(%rip){1to4}, %xmm1, %xmm0

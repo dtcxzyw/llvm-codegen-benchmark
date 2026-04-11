@@ -5,6 +5,7 @@
 	.quad	-4294967295
 .LCPI0_2:
 	.quad	137438958592
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vpcmpneqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vptestnmq	.LCPI0_1(%rip){1to4}, %ymm2, %k1 {%k1}

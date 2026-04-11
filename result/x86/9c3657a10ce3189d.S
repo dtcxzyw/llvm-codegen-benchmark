@@ -1,34 +1,40 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000023:
 	cmpb	$16, %sil
 	setb	%al
 	shlxl	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000060:
 	testb	%sil, %sil
 	setne	%al
 	shlxl	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	testb	%sil, %sil
 	sete	%al
 	shlxl	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000040:
 	cmpb	$2, %sil
 	setae	%al
 	shlxl	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000063:
 	testb	%sil, %sil
 	setne	%al
 	shlxl	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000b:
 	testb	%sil, %sil
 	sete	%al

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpsrlq	$28, %ymm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
@@ -10,6 +11,7 @@ func0000000000000007:
 
 .LCPI1_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0
@@ -35,6 +37,7 @@ func0000000000000005:
 	.byte	10
 	.byte	6
 	.byte	11
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
 	vpsrlq	$3, %ymm0, %ymm2
 	vpmovsxbd	.LCPI2_1(%rip), %ymm0
@@ -59,6 +62,7 @@ func000000000000001f:
 	.byte	10
 	.byte	6
 	.byte	11
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpsrlq	$5, %ymm0, %ymm2
 	vpmovsxbd	.LCPI3_1(%rip), %ymm0
@@ -83,6 +87,7 @@ func000000000000000d:
 	.byte	10
 	.byte	6
 	.byte	11
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000015:
 	vpsrlq	$2, %ymm1, %ymm2
 	vpmovsxbd	.LCPI4_1(%rip), %ymm1
@@ -92,6 +97,7 @@ func0000000000000015:
 
 .LCPI5_0:
 	.quad	4503599627370495
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	vpsrlq	$11, %ymm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0

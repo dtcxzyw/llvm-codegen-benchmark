@@ -3,6 +3,7 @@
 	.quad	4
 .LCPI0_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestmd	%xmm0, %xmm0, %k1
 	vbroadcastsd	.LCPI0_0(%rip), %ymm0
@@ -11,6 +12,7 @@ func0000000000000021:
 
 .LCPI1_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
@@ -20,6 +22,7 @@ func0000000000000026:
 
 .LCPI2_0:
 	.quad	-281474976710656
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vbroadcastsd	.LCPI2_0(%rip), %ymm2
 	vptestmd	%xmm0, %xmm0, %k1

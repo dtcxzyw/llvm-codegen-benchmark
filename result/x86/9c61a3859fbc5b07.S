@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	andb	$-2, %sil
 	leal	128(%rdi), %eax
@@ -6,12 +7,14 @@ func0000000000000061:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	leal	16(%rdi), %eax
 	testb	$8, %sil
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	andb	$-16, %sil
 	leal	2(%rdi), %eax

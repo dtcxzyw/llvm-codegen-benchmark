@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1048576
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -8,6 +9,7 @@ func000000000000007f:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -18,6 +20,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.quad	80
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -27,6 +30,7 @@ func000000000000003f:
 
 .LCPI3_0:
 	.quad	-32
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000055:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -36,6 +40,7 @@ func0000000000000055:
 
 .LCPI4_0:
 	.quad	1150
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000040:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -43,6 +48,7 @@ func0000000000000040:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000003a:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -51,6 +57,7 @@ func000000000000003a:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000020:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -59,6 +66,7 @@ func0000000000000020:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002a:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -69,6 +77,7 @@ func000000000000002a:
 
 .LCPI8_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000042:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -78,6 +87,7 @@ func0000000000000042:
 
 .LCPI9_0:
 	.quad	-4
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000045:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -87,6 +97,7 @@ func0000000000000045:
 
 .LCPI10_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000010:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -96,6 +107,7 @@ func0000000000000010:
 
 .LCPI11_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000006b:
 	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0

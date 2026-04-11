@@ -61,6 +61,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm1
@@ -137,6 +138,7 @@ func0000000000000001:
 	.byte	2
 .LCPI1_4:
 	.zero	4,254
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm1
@@ -212,6 +214,7 @@ func0000000000000007:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm1

@@ -19,6 +19,7 @@
 	.byte	10
 	.byte	6
 	.byte	11
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1

@@ -3,6 +3,7 @@
 	.long	10000
 .LCPI0_1:
 	.long	8192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -16,6 +17,7 @@ func0000000000000084:
 	.long	3
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -29,6 +31,7 @@ func0000000000000021:
 	.long	32
 .LCPI2_1:
 	.quad	4294967292
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000101:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	.LCPI2_0(%rip){1to4}, %xmm0, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	32
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000010c:
 	vptestmd	%ymm2, %ymm2, %k1
 	vpord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1 {%k1}

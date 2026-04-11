@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a6:
 	movl	%esi, %eax
 	imulq	$1374389535, %rax, %rax
@@ -10,6 +11,7 @@ func00000000000001a6:
 	cmovlel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e6:
 	movl	%esi, %eax
 	imulq	$1374389535, %rax, %rax

@@ -18,6 +18,7 @@
 	.zero	2
 .LCPI0_1:
 	.short	139
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
@@ -46,6 +47,7 @@ func0000000000000004:
 	.zero	2
 .LCPI1_1:
 	.short	223
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0
@@ -74,6 +76,7 @@ func0000000000000000:
 	.zero	2
 .LCPI2_1:
 	.short	209
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %ymm0

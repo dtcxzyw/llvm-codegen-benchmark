@@ -70,6 +70,7 @@
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0
@@ -80,6 +81,7 @@ func0000000000000003:
 	.long	8126464
 .LCPI1_1:
 	.long	528482304
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpslld	$18, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm2, %ymm0
@@ -90,6 +92,7 @@ func000000000000000f:
 	.long	32
 .LCPI2_1:
 	.long	64
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpslld	$2, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm2, %ymm0
@@ -100,6 +103,7 @@ func0000000000000002:
 	.long	64
 .LCPI3_1:
 	.long	524288
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpslld	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm2, %ymm0
@@ -110,6 +114,7 @@ func0000000000000000:
 	.long	56
 .LCPI4_1:
 	.long	448
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vpslld	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI4_0(%rip){1to8}, %ymm2, %ymm0
@@ -120,6 +125,7 @@ func0000000000000007:
 	.long	248
 .LCPI5_1:
 	.long	7
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000e:
 	vpslld	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI5_0(%rip){1to8}, %ymm2, %ymm0
@@ -197,6 +203,7 @@ func000000000000000e:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
 	vpshufb	.LCPI6_0(%rip), %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm0
@@ -236,6 +243,7 @@ func000000000000000d:
 	.byte	128
 	.byte	28
 	.byte	128
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000b:
 	vpshufb	.LCPI7_0(%rip), %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -247,6 +255,7 @@ func000000000000000b:
 	.long	65504
 .LCPI8_1:
 	.long	63488
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000c:
 	vpslld	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI8_0(%rip){1to8}, %ymm2, %ymm0
@@ -257,6 +266,7 @@ func000000000000000c:
 	.long	260096
 .LCPI9_1:
 	.long	8126464
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	vpslld	$11, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI9_0(%rip){1to8}, %ymm2, %ymm0

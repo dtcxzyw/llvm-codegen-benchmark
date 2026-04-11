@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvtps2pd	%ymm4, %zmm5
 	vextractf64x4	$1, %zmm4, %ymm4

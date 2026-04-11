@@ -33,6 +33,7 @@
 	.short	384
 	.short	384
 	.short	384
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm1
 	vptestnmw	%ymm0, %ymm0, %k1
@@ -40,12 +41,14 @@ func0000000000000021:
 	vmovdqa	%ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vptestmw	%ymm0, %ymm0, %k1
 	vpaddw	%ymm2, %ymm1, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vptestmw	%ymm0, %ymm0, %k1
@@ -86,6 +89,7 @@ func0000000000000061:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000064:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubw	%ymm2, %ymm1, %ymm1
@@ -128,6 +132,7 @@ func0000000000000064:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubw	%ymm2, %ymm1, %ymm1

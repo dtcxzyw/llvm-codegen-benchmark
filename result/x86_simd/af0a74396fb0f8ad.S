@@ -56,6 +56,7 @@
 	.zero	1
 .LCPI0_4:
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpmovdb	%ymm0, %xmm1

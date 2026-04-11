@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000212:
 	vpaddd	%ymm2, %ymm0, %ymm2
 	vpcmpnleud	%ymm1, %ymm2, %k0
@@ -8,6 +9,7 @@ func0000000000000212:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000210:
 	vpaddd	%ymm2, %ymm0, %ymm2
 	vpmaxud	%ymm2, %ymm0, %ymm0
@@ -16,6 +18,7 @@ func0000000000000210:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000110:
 	vpaddd	%ymm0, %ymm2, %ymm2
 	vpcmpltud	%ymm1, %ymm2, %k0

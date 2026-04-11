@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,19
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -8,6 +9,7 @@ func0000000000000005:
 
 .LCPI1_0:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpaddb	.LCPI1_0(%rip), %xmm0, %xmm0
@@ -15,11 +17,13 @@ func0000000000000000:
 
 .LCPI2_0:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0

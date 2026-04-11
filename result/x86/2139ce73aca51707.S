@@ -1,14 +1,17 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003e:
 	addq	%rsi, %rdi
 	leaq	92(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	leaq	(%rdi,%rsi,4), %rax
 	leaq	1281924(%rax,%rdx,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000007f:
 	addq	%rsi, %rdi
 	leaq	616(%rdx,%rdi), %rax

@@ -29,6 +29,7 @@
 	.byte	4
 .LCPI0_3:
 	.zero	4,24
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm2, %xmm2
 	vpor	%xmm1, %xmm0, %xmm0
@@ -65,6 +66,7 @@ func0000000000000003:
 	.byte	2
 .LCPI1_3:
 	.zero	4,3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm2, %xmm2
 	vpor	%xmm1, %xmm0, %xmm0

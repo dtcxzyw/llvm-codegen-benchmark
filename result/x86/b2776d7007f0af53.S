@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	shlq	$61, %rdx
 	leaq	(%rdi,%rsi), %rax
@@ -6,6 +7,7 @@ func000000000000000f:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	leaq	(%rsi,%rdx), %rax
 	shlq	$48, %rdi
@@ -13,6 +15,7 @@ func000000000000000c:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	shlq	$62, %rdx
 	orq	%rsi, %rdi
@@ -21,6 +24,7 @@ func0000000000000000:
 	bzhiq	%rax, %rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	shll	$16, %edx
 	leal	(%rdi,%rsi), %eax

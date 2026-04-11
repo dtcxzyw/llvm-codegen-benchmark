@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000118:
 	movsbq	%sil, %rax
 	cmpq	%rsi, %rax
@@ -8,6 +9,7 @@ func0000000000000118:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	movslq	%esi, %rax
 	cmpq	%rsi, %rax
@@ -17,6 +19,7 @@ func0000000000000048:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000302:
 	cmpq	$4, %rsi
 	sete	%cl
@@ -25,6 +28,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000102:
 	addq	$-16381, %rsi
 	cmpq	$-16385, %rsi
@@ -34,6 +38,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000058:
 	cmpq	$1, %rsi
 	sete	%cl
@@ -42,6 +47,7 @@ func0000000000000058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000308:
 	movslq	%esi, %rax
 	cmpq	%rsi, %rax
@@ -51,6 +57,7 @@ func0000000000000308:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000842:
 	cmpq	$37, %rsi
 	sete	%cl
@@ -59,6 +66,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000b02:
 	cmpq	$2, %rsi
 	setne	%cl
@@ -67,6 +75,7 @@ func0000000000000b02:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000918:
 	addq	$-2147483645, %rsi
 	cmpq	$-2147483644, %rsi
@@ -76,6 +85,7 @@ func0000000000000918:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000210:
 	addq	$-255, %rsi
 	cmpq	$-257, %rsi
@@ -85,6 +95,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000b10:
 	movabsq	$-4294967297, %rax
 	addq	%rax, %rsi
@@ -96,6 +107,7 @@ func0000000000000b10:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000042:
 	cmpq	$1, %rsi
 	sete	%cl
@@ -104,6 +116,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000010c:
 	movslq	%esi, %rax
 	cmpq	%rsi, %rax
@@ -113,6 +126,7 @@ func000000000000010c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000314:
 	decq	%rsi
 	testq	%rsi, %rsi

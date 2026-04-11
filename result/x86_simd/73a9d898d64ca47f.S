@@ -3,6 +3,7 @@
 	.quad	1013
 .LCPI0_1:
 	.quad	214
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
@@ -13,6 +14,7 @@ func0000000000000003:
 	.quad	214
 .LCPI1_1:
 	.quad	1013
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0

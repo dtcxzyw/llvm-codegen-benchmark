@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmb	.LCPI0_0(%rip), %xmm0, %k0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -15,6 +16,7 @@ func0000000000000021:
 	.zero	16,223
 .LCPI1_2:
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000308:
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1
 	vpand	%xmm1, %xmm0, %xmm2

@@ -19,6 +19,7 @@
 	.short	12137
 .LCPI0_2:
 	.short	292
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpbroadcastw	.LCPI0_2(%rip), %xmm1
 	vpsubw	%xmm0, %xmm1, %xmm0
@@ -50,6 +51,7 @@ func0000000000000005:
 	.short	52429
 .LCPI1_2:
 	.short	32768
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpbroadcastw	.LCPI1_2(%rip), %xmm1
 	vpsubw	%xmm0, %xmm1, %xmm0
@@ -78,6 +80,7 @@ func0000000000000009:
 	.short	3507
 .LCPI2_2:
 	.short	65472
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vpbroadcastw	.LCPI2_2(%rip), %xmm1
 	vpsubw	%xmm0, %xmm1, %xmm0

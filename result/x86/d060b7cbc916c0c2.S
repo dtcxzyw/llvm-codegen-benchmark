@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000057:
 	leal	(%rdi,%rsi), %ecx
 	leal	-1(%rdi,%rsi), %edx

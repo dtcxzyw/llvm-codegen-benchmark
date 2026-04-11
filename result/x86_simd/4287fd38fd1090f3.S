@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000318:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0
@@ -25,6 +26,7 @@ func0000000000000318:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000058:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0
@@ -34,6 +36,7 @@ func0000000000000058:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000b02:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0
@@ -43,6 +46,7 @@ func0000000000000b02:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000858:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestnmd	%ymm1, %ymm1, %k0
@@ -69,6 +73,7 @@ func0000000000000858:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestnmd	%ymm1, %ymm1, %k0
@@ -97,6 +102,7 @@ func0000000000000042:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000a18:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpneqd	.LCPI5_0(%rip){1to8}, %ymm1, %k0
@@ -106,6 +112,7 @@ func0000000000000a18:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000b18:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0

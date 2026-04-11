@@ -21,6 +21,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsrld	$3, %xmm0, %xmm1
 	vpternlogd	$40, .LCPI0_1(%rip){1to4}, %xmm0, %xmm1

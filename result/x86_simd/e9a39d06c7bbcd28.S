@@ -3,6 +3,7 @@
 	.long	256
 .LCPI0_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a4:
 	vpmovzxwd	%xmm0, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3

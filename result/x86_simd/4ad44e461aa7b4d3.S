@@ -7,6 +7,7 @@
 	.quad	-3145729
 .LCPI0_3:
 	.quad	2097152
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	.LCPI0_1(%rip){1to4}, %xmm1, %k1
@@ -62,6 +63,7 @@ func0000000000000003:
 	.byte	255
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	.LCPI1_1(%rip){1to4}, %xmm1, %k1

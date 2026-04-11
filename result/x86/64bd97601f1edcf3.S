@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	incq	%rdx
 	xorl	%eax, %eax
@@ -6,6 +7,7 @@ func0000000000000181:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	leaq	31(%rdx,%rsi), %rcx
 	shrq	$62, %rcx
@@ -15,6 +17,7 @@ func0000000000000008:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000101:
 	movq	$-2, %rax
 	subq	%rdx, %rax
@@ -23,6 +26,7 @@ func0000000000000101:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a8:
 	leaq	15(%rdx,%rsi), %rcx
 	shrq	$62, %rcx

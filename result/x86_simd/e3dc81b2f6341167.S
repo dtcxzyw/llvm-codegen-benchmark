@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	8191
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm2, %xmm1
@@ -10,6 +11,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.long	16376
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001d:
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm2, %xmm1
@@ -19,6 +21,7 @@ func000000000000001d:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm2, %xmm1
@@ -28,6 +31,7 @@ func0000000000000001:
 
 .LCPI3_0:
 	.long	8
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001f:
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -37,6 +41,7 @@ func000000000000001f:
 
 .LCPI4_0:
 	.long	8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -46,6 +51,7 @@ func0000000000000003:
 
 .LCPI5_0:
 	.long	33554431
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpandd	.LCPI5_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -55,6 +61,7 @@ func0000000000000008:
 
 .LCPI6_0:
 	.long	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	vpandd	.LCPI6_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -64,6 +71,7 @@ func0000000000000005:
 
 .LCPI7_0:
 	.long	1016
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001c:
 	vpandd	.LCPI7_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -73,6 +81,7 @@ func000000000000001c:
 
 .LCPI8_0:
 	.long	7
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	vpandd	.LCPI8_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm2, %xmm1
@@ -82,6 +91,7 @@ func0000000000000004:
 
 .LCPI9_0:
 	.long	67108863
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000009:
 	vpandd	.LCPI9_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm2, %xmm1
@@ -91,6 +101,7 @@ func0000000000000009:
 
 .LCPI10_0:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000d:
 	vpandd	.LCPI10_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm2, %xmm1

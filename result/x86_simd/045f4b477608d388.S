@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovzxbw	%xmm0, %ymm0
 	vpsllw	$15, %ymm0, %ymm0
@@ -23,6 +24,7 @@ func0000000000000000:
 	.short	32
 	.short	32
 	.short	32
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -47,6 +49,7 @@ func0000000000000003:
 	.short	65504
 	.short	65504
 	.short	65504
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

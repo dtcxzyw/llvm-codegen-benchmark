@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000764:
 	addq	%rsi, %rdi
 	leaq	(%rdx,%rdx,2), %rax
@@ -7,6 +8,7 @@ func0000000000000764:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000744:
 	addq	%rsi, %rdi
 	leaq	(%rdx,%rdx,2), %rax
@@ -15,6 +17,7 @@ func0000000000000744:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	addq	%rsi, %rdi
 	leaq	-4(%rdx,%rdi), %rax
@@ -22,6 +25,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000548:
 	leaq	(%rdi,%rsi,8), %rax
 	leaq	-8(%rax,%rdx,8), %rcx
@@ -29,6 +33,7 @@ func0000000000000548:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000044c:
 	addq	%rsi, %rdi
 	leaq	-32(%rdx,%rdi), %rax
@@ -36,6 +41,7 @@ func000000000000044c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000441:
 	addq	%rsi, %rdi
 	leaq	-32(%rdx,%rdi), %rax
@@ -43,6 +49,7 @@ func0000000000000441:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000054c:
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	(%rdi,%rax,8), %rax
@@ -51,6 +58,7 @@ func000000000000054c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000544:
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	(%rdi,%rax,8), %rax
@@ -59,6 +67,7 @@ func0000000000000544:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000704:
 	leaq	(%rdi,%rsi,8), %rax
 	leaq	-8(%rax,%rdx,8), %rcx
@@ -66,6 +75,7 @@ func0000000000000704:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000005c1:
 	leaq	(%rdi,%rsi,4), %rax
 	leaq	4(%rax,%rdx,4), %rcx
@@ -73,6 +83,7 @@ func00000000000005c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000065:
 	addq	%rsi, %rdi
 	leaq	-1(%rdx,%rdi), %rax
@@ -80,6 +91,7 @@ func0000000000000065:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000068:
 	addq	%rsi, %rdi
 	leaq	-1(%rdx,%rdi), %rax
@@ -87,6 +99,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000564:
 	leaq	(%rdi,%rsi,8), %rax
 	leaq	-8(%rax,%rdx,8), %rcx

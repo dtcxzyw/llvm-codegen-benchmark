@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000581:
 	xorl	$2, %edx
 	cmpb	$3, %sil
@@ -9,6 +10,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000003188:
 	cmpl	$-1, %edx
 	setne	%al
@@ -20,6 +22,7 @@ func0000000000003188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000421:
 	testl	%edx, %edx
 	sete	%al
@@ -31,6 +34,7 @@ func0000000000000421:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000586:
 	cmpl	$32, %edx
 	sete	%al
@@ -42,6 +46,7 @@ func0000000000000586:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000042a:
 	cmpl	$1, %edx
 	sete	%al
@@ -53,6 +58,7 @@ func000000000000042a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000182a:
 	testl	%edx, %edx
 	sets	%al
@@ -64,6 +70,7 @@ func000000000000182a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000003034:
 	testl	%edx, %edx
 	setne	%al
@@ -75,6 +82,7 @@ func0000000000003034:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000058c:
 	testl	%edx, %edx
 	sete	%cl
@@ -86,6 +94,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000426:
 	cmpl	$1, %edx
 	sete	%al
@@ -97,6 +106,7 @@ func0000000000000426:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000302c:
 	testl	%edx, %edx
 	setne	%cl
@@ -108,6 +118,7 @@ func000000000000302c:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000001886:
 	cmpl	$2, %edx
 	setl	%cl
@@ -119,6 +130,7 @@ func0000000000001886:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000003084:
 	testl	%edx, %edx
 	setne	%cl
@@ -130,6 +142,7 @@ func0000000000003084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000298a:
 	testl	%edx, %edx
 	setg	%cl
@@ -141,6 +154,7 @@ func000000000000298a:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000481:
 	cmpb	$126, %sil
 	setb	%cl

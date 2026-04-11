@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -30,6 +31,7 @@ func0000000000000000:
 .LCPI1_1:
 	.short	32767
 	.short	32767
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

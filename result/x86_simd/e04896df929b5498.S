@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000060:
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -9,6 +10,7 @@ func0000000000000060:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000007a:
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -21,6 +23,7 @@ func000000000000007a:
 
 .LCPI2_0:
 	.long	65386
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpmovzxbd	%xmm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0

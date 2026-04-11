@@ -33,6 +33,7 @@
 	.zero	4,2
 .LCPI0_5:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm0, %xmm1
 	vpandd	.LCPI0_4(%rip){1to4}, %xmm1, %xmm1
@@ -73,6 +74,7 @@ func0000000000000001:
 	.zero	4,31
 .LCPI1_5:
 	.zero	4,4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm0, %xmm1
 	vpandd	.LCPI1_4(%rip){1to4}, %xmm0, %xmm0

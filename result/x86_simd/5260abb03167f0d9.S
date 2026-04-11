@@ -16,6 +16,7 @@
 	.short	57344
 	.short	57344
 	.short	57344
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000006302:
 	vpcmpneqw	.LCPI0_0(%rip), %ymm2, %k1
 	vptestmw	%ymm1, %ymm1, %k0 {%k1}
@@ -25,6 +26,7 @@ func0000000000006302:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000006042:
 	vptestmw	%ymm2, %ymm2, %k1
 	vptestnmw	%ymm1, %ymm1, %k0 {%k1}
@@ -85,6 +87,7 @@ func0000000000006042:
 	.short	173
 	.short	173
 	.short	173
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000002108:
 	vpcmpltuw	.LCPI2_0(%rip), %ymm1, %k1
 	vpcmpltuw	.LCPI2_1(%rip), %ymm2, %k0 {%k1}
@@ -145,6 +148,7 @@ func0000000000002108:
 	.short	13
 	.short	13
 	.short	13
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000002102:
 	vpcmpltuw	.LCPI3_0(%rip), %ymm1, %k1
 	vpcmpltuw	.LCPI3_1(%rip), %ymm2, %k0 {%k1}

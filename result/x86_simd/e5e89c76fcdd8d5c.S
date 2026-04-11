@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	36
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vextracti128	$1, %ymm1, %xmm3

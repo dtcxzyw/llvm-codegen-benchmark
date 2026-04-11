@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004a:
 	vpminsq	%ymm0, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -11,6 +12,7 @@ func000000000000004a:
 
 .LCPI1_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000058:
 	vpminsq	%ymm0, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0

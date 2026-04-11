@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	vpcmpgtb	%xmm2, %xmm1, %k0
 	vpcmpgtb	%xmm1, %xmm0, %k1
@@ -6,6 +7,7 @@ func00000000000000ca:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpcmpeqb	%xmm1, %xmm2, %k0
 	vpcmpeqb	%xmm1, %xmm0, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000314a:
 	vpor	%ymm0, %ymm1, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
@@ -10,6 +11,7 @@ func000000000000314a:
 
 .LCPI1_0:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000318c:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpcmpneqd	%ymm2, %ymm1, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	decl	%edx
 	leaq	(%rdx,%rdx,2), %rax
@@ -8,6 +9,7 @@ func0000000000000000:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	leal	-3(%rdx), %ecx
 	addq	%rsi, %rcx
@@ -16,6 +18,7 @@ func000000000000000b:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	leal	-1(%rdx), %ecx
 	shlq	$4, %rcx
@@ -25,6 +28,7 @@ func0000000000000003:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	decl	%edx
 	imulq	$104, %rdx, %rcx

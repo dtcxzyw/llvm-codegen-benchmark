@@ -1,33 +1,39 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	cmpl	$-1073741823, %edi
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	xorl	$-1058816, %edi
 	cmpl	$-1112064, %edi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	xorl	$32, %edi
 	cmpl	$32, %edi
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	xorl	$536870912, %edi
 	cmpl	$268435456, %edi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	xorl	$63, %edi
 	cmpl	$616, %edi
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	xorl	$1, %edi
 	cmpl	$2, %edi

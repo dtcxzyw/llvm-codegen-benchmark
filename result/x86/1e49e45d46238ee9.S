@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f4:
 	shrq	$7, %rdx
 	andl	$2147483647, %edx
@@ -8,6 +9,7 @@ func00000000000000f4:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ec:
 	shrq	$3, %rdx
 	movl	%edx, %eax
@@ -17,6 +19,7 @@ func00000000000000ec:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000006c:
 	shrq	$2, %rdx
 	andl	$2147483647, %edx

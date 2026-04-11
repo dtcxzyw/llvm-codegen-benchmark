@@ -18,6 +18,7 @@
 	.short	4096
 .LCPI0_1:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vptestnmw	.LCPI0_0(%rip), %ymm1, %k1
 	vptestmb	.LCPI0_1(%rip), %xmm0, %k0 {%k1}
@@ -44,6 +45,7 @@ func000000000000002c:
 	.short	1024
 .LCPI1_1:
 	.zero	16,8
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vptestmw	.LCPI1_0(%rip), %ymm1, %k1
 	vptestmb	.LCPI1_1(%rip), %xmm0, %k0 {%k1}

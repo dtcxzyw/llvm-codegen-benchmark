@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovdb	%ymm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -26,6 +27,7 @@ func0000000000000003:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	vpmovdb	%ymm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -53,6 +55,7 @@ func0000000000000020:
 	.zero	1
 .LCPI2_1:
 	.byte	32
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	vpmovdb	%ymm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0

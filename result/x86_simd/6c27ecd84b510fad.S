@@ -20,6 +20,7 @@
 	.long	1
 .LCPI0_2:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vpmovzxwd	%xmm0, %ymm0
 	vpcmpnleub	.LCPI0_0(%rip), %xmm1, %k1
@@ -51,6 +52,7 @@ func0000000000000043:
 	.long	2
 .LCPI1_2:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c3:
 	vpmovzxwd	%xmm0, %ymm0
 	vpcmpnleub	.LCPI1_0(%rip), %xmm1, %k1

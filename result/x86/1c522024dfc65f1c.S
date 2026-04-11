@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000045:
 	cmpb	$127, %dl
 	adcl	%esi, %edi
 	leal	-65(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	cmpb	$1, %dl
 	leal	33(%rdi,%rsi), %ecx
@@ -12,6 +14,7 @@ func0000000000000010:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a0:
 	xorl	%ecx, %ecx
 	testb	%dl, %dl
@@ -21,6 +24,7 @@ func00000000000000a0:
 	addl	$2, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a5:
 	xorl	%eax, %eax
 	testb	%dl, %dl
@@ -30,6 +34,7 @@ func00000000000000a5:
 	addl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000085:
 	leal	(%rdi,%rsi), %ecx
 	cmpb	$127, %dl

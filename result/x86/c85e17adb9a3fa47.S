@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002a8:
 	sarq	$3, %rdi
 	movabsq	$6148914691236517206, %rax
@@ -10,11 +11,13 @@ func00000000000002a8:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002a1:
 	cmpq	$-96, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000201:
 	shrq	$3, %rdi
 	imull	$-858993459, %edi, %eax
@@ -22,6 +25,7 @@ func0000000000000201:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000088:
 	leaq	32767(%rdi), %rax
 	testq	%rdi, %rdi

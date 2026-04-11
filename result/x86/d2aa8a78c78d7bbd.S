@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	cmpb	$16, %dil
 	setae	%cl
@@ -8,6 +9,7 @@ func0000000000000108:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000101:
 	movl	%edi, %eax
 	subb	$100, %al
@@ -17,6 +19,7 @@ func0000000000000101:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000054c:
 	leal	-32(%rdi), %eax
 	cmpb	$97, %dil
@@ -26,6 +29,7 @@ func000000000000054c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000541:
 	leal	-32(%rdi), %eax
 	cmpb	$97, %dil

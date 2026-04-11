@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014c:
 	subl	%edx, %esi
 	incl	%edi
@@ -7,6 +8,7 @@ func000000000000014c:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	subl	%edx, %esi
 	incl	%edi

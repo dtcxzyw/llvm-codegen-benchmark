@@ -5,6 +5,7 @@
 	.quad	0x400921fb54442d18
 .LCPI0_2:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -31,6 +32,7 @@ func0000000000000024:
 	.quad	0x40862e42fefa39ef
 .LCPI1_2:
 	.quad	0x406573fae561f647
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -12,6 +13,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.quad	1023
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$10, %ymm1, %ymm1
@@ -22,6 +24,7 @@ func0000000000000006:
 
 .LCPI2_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000374:
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -33,6 +36,7 @@ func0000000000000374:
 
 .LCPI3_0:
 	.quad	4095
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
@@ -43,6 +47,7 @@ func0000000000000001:
 
 .LCPI4_0:
 	.quad	17179865088
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000108:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
@@ -54,6 +59,7 @@ func0000000000000108:
 
 .LCPI5_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000106:
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -64,6 +70,7 @@ func0000000000000106:
 
 .LCPI6_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000361:
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -74,6 +81,7 @@ func0000000000000361:
 
 .LCPI7_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000036c:
 	vpaddq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -85,6 +93,7 @@ func000000000000036c:
 
 .LCPI8_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000368:
 	vpaddq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -96,6 +105,7 @@ func0000000000000368:
 
 .LCPI9_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000378:
 	vpaddq	.LCPI9_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -107,6 +117,7 @@ func0000000000000378:
 
 .LCPI10_0:
 	.quad	17179869182
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000301:
 	vpaddq	.LCPI10_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
@@ -117,6 +128,7 @@ func0000000000000301:
 
 .LCPI11_0:
 	.quad	8589934584
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000304:
 	vpaddq	.LCPI11_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -128,6 +140,7 @@ func0000000000000304:
 
 .LCPI12_0:
 	.quad	8589934584
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000308:
 	vpaddq	.LCPI12_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
@@ -139,6 +152,7 @@ func0000000000000308:
 
 .LCPI13_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000101:
 	vpaddq	.LCPI13_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -149,6 +163,7 @@ func0000000000000101:
 
 .LCPI14_0:
 	.quad	17179869176
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000000b:
 	vpaddq	.LCPI14_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
@@ -160,6 +175,7 @@ func000000000000000b:
 
 .LCPI15_0:
 	.quad	2047
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000004:
 	vpaddq	.LCPI15_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$11, %ymm1, %ymm1
@@ -171,6 +187,7 @@ func0000000000000004:
 
 .LCPI16_0:
 	.quad	4095
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000104:
 	vpaddq	.LCPI16_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
@@ -182,6 +199,7 @@ func0000000000000104:
 
 .LCPI17_0:
 	.quad	2097152
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000036a:
 	vpaddq	.LCPI17_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$22, %ymm1, %ymm1
@@ -192,6 +210,7 @@ func000000000000036a:
 
 .LCPI18_0:
 	.quad	2097152
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000366:
 	vpaddq	.LCPI18_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$22, %ymm1, %ymm1
@@ -202,6 +221,7 @@ func0000000000000366:
 
 .LCPI19_0:
 	.quad	17592186040353
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000306:
 	vpaddq	.LCPI19_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
@@ -212,6 +232,7 @@ func0000000000000306:
 
 .LCPI20_0:
 	.quad	17592186040353
+	.prefalign	4, .Lfunc_end20, nop
 func000000000000030a:
 	vpaddq	.LCPI20_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1

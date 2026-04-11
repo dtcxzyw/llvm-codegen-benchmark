@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	cmpq	$8, %rsi
 	sete	%al
@@ -9,6 +10,7 @@ func0000000000000042:
 	orl	$514, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000058:
 	xorl	%eax, %eax
 	cmpq	$16777216, %rsi
@@ -19,6 +21,7 @@ func0000000000000058:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000118:
 	cmpq	$3, %rsi
 	setb	%al

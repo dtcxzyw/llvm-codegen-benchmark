@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	3067833783
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000266:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -16,6 +17,7 @@ func0000000000000266:
 	.long	2863311531
 .LCPI1_1:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000226:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -28,6 +30,7 @@ func0000000000000226:
 
 .LCPI2_0:
 	.long	954437177
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000204:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -42,6 +45,7 @@ func0000000000000204:
 
 .LCPI3_0:
 	.long	954437177
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000244:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
@@ -56,6 +60,7 @@ func0000000000000244:
 
 .LCPI4_0:
 	.long	2863311531
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000206:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$5, %ymm1, %ymm1
@@ -69,6 +74,7 @@ func0000000000000206:
 
 .LCPI5_0:
 	.long	2863311531
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000241:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
@@ -82,6 +88,7 @@ func0000000000000241:
 
 .LCPI6_0:
 	.long	2863311531
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000221:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$4, %ymm1, %ymm1
@@ -95,6 +102,7 @@ func0000000000000221:
 
 .LCPI7_0:
 	.long	1736263375
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000261:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -108,6 +116,7 @@ func0000000000000261:
 
 .LCPI8_0:
 	.long	3186588639
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000201:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
@@ -119,6 +128,7 @@ func0000000000000201:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000061:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$63, %ymm1, %ymm2
@@ -134,6 +144,7 @@ func0000000000000061:
 
 .LCPI10_0:
 	.long	2863311531
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000208:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -148,6 +159,7 @@ func0000000000000208:
 
 .LCPI11_0:
 	.long	2863311531
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000022a:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1

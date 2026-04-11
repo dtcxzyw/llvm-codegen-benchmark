@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	addl	$7, %esi
 	shrl	$3, %esi
@@ -8,6 +9,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	addl	$31, %esi
 	shrl	$3, %esi
@@ -17,6 +19,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000261:
 	addl	$253, %esi
 	shrl	%esi
@@ -26,6 +29,7 @@ func0000000000000261:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000361:
 	addl	$65522, %esi
 	shrl	%esi

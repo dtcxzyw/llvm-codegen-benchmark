@@ -3,6 +3,7 @@
 	.long	20
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vpminud	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpmaxud	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
@@ -16,6 +17,7 @@ func0000000000000028:
 	.long	20
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpminud	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpmaxud	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1

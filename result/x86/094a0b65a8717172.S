@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018a:
 	subl	%esi, %edi
 	addl	$8, %edi
@@ -6,12 +7,14 @@ func000000000000018a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	subl	%esi, %edi
 	cmpl	$504, %edi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	subl	%esi, %edi
 	addl	$64, %edi
@@ -19,12 +22,14 @@ func000000000000000a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001a1:
 	subl	%esi, %edi
 	cmpl	$504, %edi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000aa:
 	subl	%esi, %edi
 	addl	$348, %edi
@@ -32,6 +37,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000188:
 	subl	%esi, %edi
 	addl	$-2016, %edi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	addl	%edx, %edx
 	shrxl	%edx, %esi, %eax
@@ -7,6 +8,7 @@ func00000000000000c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c4:
 	addl	%edx, %edx
 	shrxl	%edx, %esi, %eax
@@ -15,6 +17,7 @@ func00000000000000c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000d4:
 	shll	$3, %edx
 	shrxl	%edx, %esi, %eax

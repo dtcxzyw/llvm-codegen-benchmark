@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f1:
 	shrl	$3, %esi
 	leal	1(%rsi), %ecx
@@ -7,6 +8,7 @@ func00000000000000f1:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c3:
 	shrl	$3, %esi
 	leal	3(%rsi), %ecx

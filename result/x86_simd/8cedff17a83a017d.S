@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovq	%xmm0, %rsi
 	movabsq	$-8608480567731124087, %r10
@@ -87,6 +88,7 @@ func0000000000000000:
 	.quad	-5650354040595718513
 .LCPI1_1:
 	.quad	-16
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpsraq	$3, %ymm0, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	testq	%rsi, %rsi
 	sete	%al
@@ -9,6 +10,7 @@ func000000000000002c:
 	incq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000014c:
 	movabsq	$9223372036854775807, %rax
 	leaq	1(%rax), %rcx
@@ -18,6 +20,7 @@ func000000000000014c:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c6:
 	movabsq	$9223372036854775807, %rcx
 	leaq	1(%rcx), %rax
@@ -25,6 +28,7 @@ func00000000000000c6:
 	cmovsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018a:
 	movabsq	$9223372036854775807, %rax
 	leaq	1(%rax), %rcx

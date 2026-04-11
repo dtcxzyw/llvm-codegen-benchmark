@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a88:
 	shrq	$3, %rdx
 	addq	%rsi, %rdx
@@ -8,6 +9,7 @@ func0000000000000a88:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000a8a:
 	shrq	$3, %rdx
 	addq	%rsi, %rdx
@@ -17,6 +19,7 @@ func0000000000000a8a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000a81:
 	shrq	$3, %rdx
 	addq	%rsi, %rdx

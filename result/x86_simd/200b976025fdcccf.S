@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -6,6 +7,7 @@ func000000000000001e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	vpslld	$3, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -13,6 +15,7 @@ func000000000000000e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vpslld	$3, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -20,6 +23,7 @@ func0000000000000018:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -27,6 +31,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001c:
 	vpslld	$3, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -34,6 +39,7 @@ func000000000000001c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vpslld	$3, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0

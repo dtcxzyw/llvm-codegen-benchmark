@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpxor	%ymm2, %ymm1, %ymm1
 	vpsllw	$8, %ymm1, %ymm1
@@ -38,6 +39,7 @@ func0000000000000001:
 	.byte	128
 	.byte	28
 	.byte	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpxor	%ymm2, %ymm1, %ymm1
 	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1

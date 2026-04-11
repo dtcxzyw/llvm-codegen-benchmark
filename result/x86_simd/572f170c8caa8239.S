@@ -3,6 +3,7 @@
 	.long	6
 .LCPI0_1:
 	.long	15
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnltd	%xmm1, %xmm0, %k1
@@ -17,6 +18,7 @@ func000000000000000d:
 	.long	23
 .LCPI1_2:
 	.long	31
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpcmpneqd	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1

@@ -13,6 +13,7 @@
 .LCPI0_2:
 	.short	7
 	.short	7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpsrlw	$4, %xmm0, %xmm0
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
@@ -35,6 +36,7 @@ func0000000000000007:
 .LCPI1_2:
 	.short	31
 	.short	31
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpsrlw	$4, %xmm0, %xmm0
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -6,6 +7,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -13,6 +15,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -20,6 +23,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001e8:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -27,6 +31,7 @@ func00000000000001e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -34,6 +39,7 @@ func0000000000000181:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000001e4:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -41,6 +47,7 @@ func00000000000001e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001e9:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -48,6 +55,7 @@ func00000000000001e9:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000188:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -55,6 +63,7 @@ func0000000000000188:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000088:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -62,6 +71,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	imull	%edx, %esi
 	addl	%esi, %esi
@@ -69,6 +79,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000010a:
 	imull	%edx, %esi
 	shll	$3, %esi
@@ -76,6 +87,7 @@ func000000000000010a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000027:
 	imull	%edx, %esi
 	shll	$3, %esi
@@ -83,6 +95,7 @@ func0000000000000027:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000002a:
 	imull	%edx, %esi
 	shll	$3, %esi
@@ -90,6 +103,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000001:
 	imull	%edx, %esi
 	addl	%esi, %esi

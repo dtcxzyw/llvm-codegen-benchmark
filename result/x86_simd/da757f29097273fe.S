@@ -39,6 +39,7 @@
 	.byte	255
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

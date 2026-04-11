@@ -54,6 +54,7 @@
 	.byte	255
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm1
 	vpcmpneqw	.LCPI0_1(%rip), %ymm1, %k0
@@ -81,6 +82,7 @@ func0000000000000018:
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vptestnmw	.LCPI1_0(%rip), %ymm0, %k0
 	vpsllw	$15, %ymm0, %ymm0

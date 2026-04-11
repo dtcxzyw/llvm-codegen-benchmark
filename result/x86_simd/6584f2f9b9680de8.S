@@ -36,6 +36,7 @@
 .LCPI0_2:
 	.short	65024
 	.short	65024
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsraw	$15, %ymm0, %ymm1
 	vpsrlw	$7, %ymm1, %ymm1

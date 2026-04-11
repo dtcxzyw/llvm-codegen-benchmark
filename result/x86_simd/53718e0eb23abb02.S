@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008a:
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm3
 	vpcmpltub	.LCPI0_1(%rip), %xmm3, %k1
@@ -80,6 +81,7 @@ func000000000000008a:
 	.zero	1
 .LCPI1_2:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vpaddb	.LCPI1_0(%rip), %xmm2, %xmm3
 	vpcmpltub	.LCPI1_1(%rip), %xmm3, %k1
@@ -126,6 +128,7 @@ func0000000000000084:
 	.zero	1
 .LCPI2_2:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000086:
 	vpaddb	.LCPI2_0(%rip), %xmm2, %xmm3
 	vpcmpltub	.LCPI2_1(%rip), %xmm3, %k1

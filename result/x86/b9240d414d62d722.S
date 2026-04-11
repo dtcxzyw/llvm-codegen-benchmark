@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -6,6 +7,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -15,6 +17,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.quad	0x47efffffe0000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI2_0(%rip), %xmm0
@@ -23,6 +26,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.quad	0x47efffffe0000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI3_0(%rip), %xmm1
@@ -30,6 +34,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -37,6 +42,7 @@ func0000000000000003:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -44,6 +50,7 @@ func0000000000000007:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -53,6 +60,7 @@ func000000000000000c:
 
 .LCPI7_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI7_0(%rip), %xmm1
@@ -60,6 +68,7 @@ func000000000000000a:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000e:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
@@ -68,6 +77,7 @@ func000000000000000e:
 
 .LCPI9_0:
 	.quad	0x3f60624dd2f1a9fc
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000d:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI9_0(%rip), %xmm1
@@ -77,18 +87,21 @@ func000000000000000d:
 
 .LCPI10_0:
 	.quad	0x4008000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000b:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI10_0(%rip), %xmm0
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000001:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setp	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000009:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1

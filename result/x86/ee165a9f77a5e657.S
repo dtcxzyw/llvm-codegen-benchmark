@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	%ecx, %ecx
 	cmpq	$63, %rsi
@@ -9,6 +10,7 @@ func0000000000000021:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000141:
 	movq	%rsi, %rax
 	sarq	$63, %rax

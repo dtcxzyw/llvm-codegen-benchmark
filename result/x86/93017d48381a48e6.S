@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000068c:
 	blsrq	%rsi, %rax
 	sete	%cl
@@ -7,6 +8,7 @@ func000000000000068c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000684:
 	blsrq	%rsi, %rax
 	sete	%cl
@@ -15,6 +17,7 @@ func0000000000000684:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000688:
 	blsrq	%rsi, %rax
 	sete	%cl
@@ -23,6 +26,7 @@ func0000000000000688:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000428:
 	blsrq	%rsi, %rax
 	sete	%cl
@@ -31,6 +35,7 @@ func0000000000000428:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000028c:
 	blsrq	%rsi, %rax
 	sete	%cl

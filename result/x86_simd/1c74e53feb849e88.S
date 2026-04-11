@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	63
 	.short	63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqw	%ymm0, %ymm1, %k0
@@ -46,6 +47,7 @@ func0000000000000001:
 .LCPI1_1:
 	.short	63
 	.short	63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltuw	%ymm0, %ymm1, %k0
@@ -73,6 +75,7 @@ func0000000000000014:
 .LCPI2_1:
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtw	%ymm1, %ymm0, %k0
@@ -100,6 +103,7 @@ func0000000000000006:
 .LCPI3_1:
 	.short	60
 	.short	60
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnleuw	%ymm0, %ymm1, %k0
@@ -127,6 +131,7 @@ func0000000000000008:
 .LCPI4_1:
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vpandd	.LCPI4_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpleuw	%ymm0, %ymm1, %k0
@@ -154,6 +159,7 @@ func0000000000000005:
 .LCPI5_1:
 	.short	63
 	.short	63
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	vpandd	.LCPI5_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnleuw	%ymm0, %ymm1, %k0
@@ -181,6 +187,7 @@ func0000000000000018:
 .LCPI6_1:
 	.short	63
 	.short	63
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	vpandd	.LCPI6_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqw	%ymm0, %ymm1, %k0
@@ -208,6 +215,7 @@ func000000000000000c:
 .LCPI7_1:
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vpandd	.LCPI7_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltuw	%ymm0, %ymm1, %k0
@@ -253,6 +261,7 @@ func0000000000000004:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000019:
 	vpandd	.LCPI8_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnltuw	%ymm0, %ymm1, %k0
@@ -280,6 +289,7 @@ func0000000000000019:
 .LCPI9_1:
 	.short	16383
 	.short	16383
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000009:
 	vpandd	.LCPI9_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnltuw	%ymm0, %ymm1, %k0

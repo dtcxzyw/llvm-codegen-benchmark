@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	imulq	%rdx, %rsi
 	cmpq	$33554433, %rsi
@@ -6,6 +7,7 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
@@ -13,6 +15,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	imulq	%rdx, %rsi
 	cmpq	$32, %rsi
@@ -20,6 +23,7 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -29,6 +33,7 @@ func0000000000000042:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000401:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%xmm3, %xmm2, %xmm2
@@ -11,6 +12,7 @@ func0000000000000401:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmaxsd	%xmm3, %xmm2, %xmm2

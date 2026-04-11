@@ -3,6 +3,7 @@
 	.long	0x80000000
 .LCPI0_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ac:
 	vxorps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vdivss	%xmm0, %xmm1, %xmm0
@@ -17,6 +18,7 @@ func00000000000000ac:
 	.long	0x80000000
 .LCPI1_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000bd:
 	vxorps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vdivss	%xmm0, %xmm1, %xmm0

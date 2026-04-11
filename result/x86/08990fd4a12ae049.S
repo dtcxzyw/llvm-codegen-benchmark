@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	xorl	%eax, %eax
 	cmpb	$1, %dl
@@ -10,6 +11,7 @@ func0000000000000007:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	xorl	%ecx, %ecx
 	cmpb	$6, %dl
@@ -22,6 +24,7 @@ func0000000000000011:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	xorl	%ecx, %ecx
 	cmpb	$6, %dl
@@ -34,6 +37,7 @@ func0000000000000010:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000029:
 	cmpb	$65, %dl
 	movl	$-55, %eax
@@ -45,6 +49,7 @@ func0000000000000029:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	xorl	%ecx, %ecx
 	cmpb	$1, %dl
@@ -56,6 +61,7 @@ func0000000000000004:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	cmpb	$1, %dl
 	movl	$20, %eax
@@ -67,6 +73,7 @@ func0000000000000005:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000020:
 	cmpb	$10, %dl
 	movl	$2, %ecx
@@ -77,6 +84,7 @@ func0000000000000020:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000021:
 	cmpb	$10, %dl
 	movl	$1, %ecx
@@ -87,6 +95,7 @@ func0000000000000021:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000023:
 	cmpb	$10, %dl
 	movl	$1, %ecx

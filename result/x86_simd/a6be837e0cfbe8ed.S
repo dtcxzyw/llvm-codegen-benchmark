@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$17, %ymm1, %ymm2, %ymm1
@@ -13,6 +14,7 @@ func0000000000000021:
 	.quad	15
 .LCPI1_1:
 	.long	134217728
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1

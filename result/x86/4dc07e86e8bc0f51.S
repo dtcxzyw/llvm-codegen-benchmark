@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	decq	%rdx
 	incq	%rsi
@@ -7,6 +8,7 @@ func0000000000000044:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	decq	%rdx
 	addq	$2, %rsi
@@ -15,6 +17,7 @@ func0000000000000084:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c4:
 	decq	%rdx
 	incq	%rsi
@@ -23,6 +26,7 @@ func00000000000000c4:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	decq	%rdx
 	decq	%rsi

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	-430675100(%rdi,%rdi,4), %eax
 	rorxl	$17, %eax, %eax
 	imull	$-862048943, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	imull	$-2048144777, %edi, %eax
 	addl	$606290985, %eax

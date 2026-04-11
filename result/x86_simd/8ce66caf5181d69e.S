@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1431655765
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpxord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$32, %ymm1, %ymm2, %ymm0

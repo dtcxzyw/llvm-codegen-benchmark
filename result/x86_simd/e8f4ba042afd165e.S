@@ -16,6 +16,7 @@
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000003181:
 	vpcmpneqw	.LCPI0_0(%rip), %ymm1, %k1
 	vptestmw	%ymm2, %ymm2, %k1 {%k1}
@@ -75,6 +76,7 @@ func0000000000003181:
 	.short	70
 	.short	70
 	.short	70
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000002084:
 	vpcmpltuw	.LCPI1_0(%rip), %ymm1, %k1
 	vpcmpltuw	.LCPI1_1(%rip), %ymm0, %k1 {%k1}
@@ -134,6 +136,7 @@ func0000000000002084:
 	.short	65528
 	.short	65528
 	.short	65528
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000002088:
 	vpcmpnleuw	.LCPI2_0(%rip), %ymm2, %k1
 	vpcmpnleuw	.LCPI2_1(%rip), %ymm0, %k1 {%k1}
@@ -193,6 +196,7 @@ func0000000000002088:
 	.short	65515
 	.short	65515
 	.short	65515
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000001084:
 	vpcmpltuw	.LCPI3_0(%rip), %ymm1, %k1
 	vpcmpltuw	.LCPI3_1(%rip), %ymm2, %k1 {%k1}
@@ -237,6 +241,7 @@ func0000000000001084:
 	.short	2
 .LCPI4_2:
 	.short	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000581:
 	vpbroadcastw	.LCPI4_2(%rip), %ymm3
 	vpcmpeqw	%ymm3, %ymm0, %k1
@@ -282,6 +287,7 @@ func0000000000000581:
 	.short	2
 .LCPI5_2:
 	.short	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000058c:
 	vpbroadcastw	.LCPI5_2(%rip), %ymm3
 	vpcmpneqw	%ymm3, %ymm1, %k1
@@ -327,6 +333,7 @@ func000000000000058c:
 	.short	2
 .LCPI6_2:
 	.short	1
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000318c:
 	vpbroadcastw	.LCPI6_2(%rip), %ymm3
 	vpcmpneqw	%ymm3, %ymm1, %k1
@@ -387,6 +394,7 @@ func000000000000318c:
 	.short	17
 	.short	17
 	.short	17
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000421:
 	vpcmpeqw	.LCPI7_0(%rip), %ymm1, %k1
 	vpcmpeqw	.LCPI7_1(%rip), %ymm2, %k1 {%k1}
@@ -429,6 +437,7 @@ func0000000000000421:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000050c:
 	vpcmpnleuw	.LCPI8_0(%rip), %ymm1, %k1
 	vpcmpeqw	.LCPI8_1(%rip), %ymm2, %k1 {%k1}
@@ -488,6 +497,7 @@ func000000000000050c:
 	.short	8204
 	.short	8204
 	.short	8204
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000001184:
 	vpcmpltuw	.LCPI9_0(%rip), %ymm2, %k1
 	vpcmpltuw	.LCPI9_1(%rip), %ymm0, %k1 {%k1}

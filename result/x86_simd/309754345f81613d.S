@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c2:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm2, %zmm6, %k1
@@ -12,6 +13,7 @@ func00000000000000c2:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000cc:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm2, %zmm6, %k1
@@ -25,6 +27,7 @@ func00000000000000cc:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c4:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm2, %zmm6, %k1
@@ -38,6 +41,7 @@ func00000000000000c4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c5:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm2, %zmm6, %k1
@@ -51,6 +55,7 @@ func00000000000000c5:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ca:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm2, %zmm6, %k1
@@ -64,6 +69,7 @@ func00000000000000ca:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c3:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm2, %zmm6, %k1
@@ -77,6 +83,7 @@ func00000000000000c3:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000cb:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm2, %zmm6, %k1

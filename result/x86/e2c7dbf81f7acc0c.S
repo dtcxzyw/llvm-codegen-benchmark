@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000481:
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -10,6 +11,7 @@ func0000000000000481:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001946:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx
@@ -20,6 +22,7 @@ func0000000000001946:
 	cmovsl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003101:
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -31,6 +34,7 @@ func0000000000003101:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000581:
 	xorl	%eax, %eax
 	cmpl	$1, %esi
@@ -42,6 +46,7 @@ func0000000000000581:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000194a:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
@@ -53,6 +58,7 @@ func000000000000194a:
 	cmovgl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000028c6:
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -64,6 +70,7 @@ func00000000000028c6:
 	cmovsl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000028c1:
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx

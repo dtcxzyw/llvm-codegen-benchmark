@@ -12,6 +12,7 @@
 	.long	12288
 .LCPI0_2:
 	.long	48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vptestnmw	.LCPI0_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0
@@ -43,6 +44,7 @@ func0000000000000014:
 .LCPI1_4:
 	.short	3072
 	.short	3072
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqw	.LCPI1_1(%rip), %xmm0, %k1

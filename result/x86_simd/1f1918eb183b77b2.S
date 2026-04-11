@@ -3,6 +3,7 @@
 	.zero	16,32
 .LCPI0_1:
 	.zero	16,30
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm2, %k1

@@ -32,6 +32,7 @@
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000029:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -75,6 +76,7 @@ func0000000000000029:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -117,6 +119,7 @@ func0000000000000021:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -160,6 +163,7 @@ func0000000000000024:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -202,6 +206,7 @@ func0000000000000005:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000009:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

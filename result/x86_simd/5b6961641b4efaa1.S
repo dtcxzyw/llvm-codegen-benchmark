@@ -3,6 +3,7 @@
 	.quad	-5
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000305:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpleuq	%ymm2, %ymm0, %k0
@@ -16,6 +17,7 @@ func0000000000000305:
 	.quad	8
 .LCPI1_1:
 	.long	11
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000f04:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm0, %k0
@@ -29,6 +31,7 @@ func0000000000000f04:
 	.quad	8
 .LCPI2_1:
 	.long	11
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000d04:
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm0, %k0

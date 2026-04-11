@@ -3,6 +3,7 @@
 	.long	9
 .LCPI0_1:
 	.long	19
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000003424:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -18,6 +19,7 @@ func0000000000003424:
 	.long	9
 .LCPI1_1:
 	.long	19
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000003024:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2

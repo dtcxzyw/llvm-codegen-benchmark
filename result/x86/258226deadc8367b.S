@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000158:
 	orb	%sil, %dl
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000142:
 	orb	%sil, %dl
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000148:
 	movzwl	%si, %eax
 	movzbl	%dl, %ecx
@@ -22,6 +25,7 @@ func0000000000000148:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000150:
 	movzwl	%si, %eax
 	movzbl	%dl, %ecx

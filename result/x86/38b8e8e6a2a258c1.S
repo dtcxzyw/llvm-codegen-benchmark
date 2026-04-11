@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000133:
 	incl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm2
@@ -8,6 +9,7 @@ func0000000000000133:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000155:
 	incl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm2

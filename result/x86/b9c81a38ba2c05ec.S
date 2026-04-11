@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c51:
 	leal	-2048(%rdi), %eax
 	cmpl	$57344, %edx
@@ -7,6 +8,7 @@ func0000000000000c51:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000099:
 	testl	%edx, %edx
 	sete	%al

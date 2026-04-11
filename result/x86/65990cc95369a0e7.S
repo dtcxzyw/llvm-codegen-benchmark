@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	orb	%sil, %dil
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000074:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -12,6 +14,7 @@ func0000000000000074:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000078:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -20,6 +23,7 @@ func0000000000000078:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000178:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -28,6 +32,7 @@ func0000000000000178:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001f8:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -36,6 +41,7 @@ func00000000000001f8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000001e1:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -44,6 +50,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001f4:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -52,6 +59,7 @@ func00000000000001f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000006c:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -60,6 +68,7 @@ func000000000000006c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000174:
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx

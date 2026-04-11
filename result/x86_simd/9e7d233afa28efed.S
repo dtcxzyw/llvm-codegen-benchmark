@@ -3,6 +3,7 @@
 	.long	255
 .LCPI0_1:
 	.long	254
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpternlogd	$120, .LCPI0_1(%rip){1to8}, %ymm2, %ymm3

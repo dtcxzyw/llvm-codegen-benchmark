@@ -5,6 +5,7 @@
 	.long	99
 .LCPI0_2:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004ca:
 	vpbroadcastd	.LCPI0_0(%rip), %xmm3
 	vpcmpgtd	%xmm2, %xmm3, %k1

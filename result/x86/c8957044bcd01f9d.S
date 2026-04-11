@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	imulq	%rdi, %rdi
 	cmpq	$99900000, %rdi

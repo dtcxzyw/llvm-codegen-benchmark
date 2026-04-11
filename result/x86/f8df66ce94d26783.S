@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	decq	%rsi
 	cmpq	$-2, %rsi
@@ -8,6 +9,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -16,6 +18,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000058c:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -24,6 +27,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000d81:
 	cmpq	$63, %rsi
 	setne	%cl
@@ -32,6 +36,7 @@ func0000000000000d81:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000010c:
 	addq	$-3, %rsi
 	cmpq	$-2, %rsi
@@ -41,6 +46,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000018a:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -49,6 +55,7 @@ func000000000000018a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000581:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -57,6 +64,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000181:
 	cmpq	$12, %rsi
 	setne	%cl
@@ -65,6 +73,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000008c:
 	movabsq	$-9223372036854775807, %rax
 	addq	%rsi, %rax
@@ -75,6 +84,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000048c:
 	movabsq	$-9007199254740992, %rax
 	addq	%rsi, %rax
@@ -86,6 +96,7 @@ func000000000000048c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000d8c:
 	cmpq	$6, %rsi
 	setne	%cl
@@ -94,6 +105,7 @@ func0000000000000d8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000d86:
 	cmpq	$5, %rsi
 	setne	%cl
@@ -102,6 +114,7 @@ func0000000000000d86:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000058a:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -110,6 +123,7 @@ func000000000000058a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000186:
 	cmpq	$1, %rsi
 	setne	%cl

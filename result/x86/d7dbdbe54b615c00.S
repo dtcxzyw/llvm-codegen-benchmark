@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	incl	%esi
 	sarq	$3, %rdi
@@ -8,6 +9,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	incl	%esi
 	movabsq	$-5614226457215950491, %rcx
@@ -22,6 +24,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	decl	%esi
 	sarq	$3, %rdi
@@ -31,6 +34,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001e4:
 	incl	%esi
 	sarq	$3, %rdi
@@ -40,6 +44,7 @@ func00000000000001e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	incl	%esi
 	sarq	$3, %rdi
@@ -49,6 +54,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000e4:
 	decl	%esi
 	sarq	$3, %rdi
@@ -58,6 +64,7 @@ func00000000000000e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000e8:
 	decl	%esi
 	sarq	$3, %rdi
@@ -67,6 +74,7 @@ func00000000000000e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000a8:
 	addl	$-64, %esi
 	sarq	$3, %rdi
@@ -76,6 +84,7 @@ func00000000000000a8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000034:
 	incl	%esi
 	sarq	$3, %rdi
@@ -85,6 +94,7 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000038:
 	incl	%esi
 	sarq	$3, %rdi
@@ -94,6 +104,7 @@ func0000000000000038:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000001e8:
 	incl	%esi
 	sarq	$3, %rdi
@@ -103,6 +114,7 @@ func00000000000001e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000068:
 	addl	$-5, %esi
 	sarq	$4, %rdi
@@ -112,6 +124,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000001e1:
 	incl	%esi
 	sarq	$3, %rdi
@@ -121,6 +134,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000025:
 	incl	%esi
 	sarq	$3, %rdi
@@ -130,6 +144,7 @@ func0000000000000025:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000014:
 	incl	%esi
 	leaq	7(%rdi), %rax
@@ -140,6 +155,7 @@ func0000000000000014:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000128:
 	incl	%esi
 	sarq	$5, %rdi

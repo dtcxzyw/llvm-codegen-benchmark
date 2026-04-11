@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	27
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -9,6 +10,7 @@ func0000000000000018:
 
 .LCPI1_0:
 	.quad	-4294967296
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpsllq	$29, %ymm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -23,6 +25,7 @@ func0000000000000008:
 	.quad	8589934584
 .LCPI2_1:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vpsllq	$2, %ymm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0

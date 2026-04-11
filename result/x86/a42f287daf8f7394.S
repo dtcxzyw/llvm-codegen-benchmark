@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ff:
 	leal	(%rdx,%rdx,4), %eax
 	leal	(%rdx,%rax,2), %eax
@@ -7,6 +8,7 @@ func00000000000000ff:
 	leaq	1(%rdi,%rsi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000005f:
 	leal	(%rdx,%rdx,4), %eax
 	addl	%eax, %esi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
@@ -9,6 +10,7 @@ func00000000000000aa:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b4:
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
@@ -19,6 +21,7 @@ func00000000000000b4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a6:
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
@@ -29,6 +32,7 @@ func00000000000000a6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000b8:
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
@@ -39,6 +43,7 @@ func00000000000000b8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ea:
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1
@@ -49,6 +54,7 @@ func00000000000000ea:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000b5:
 	vpminub	%xmm2, %xmm1, %xmm3
 	vpmaxub	%xmm2, %xmm1, %xmm1

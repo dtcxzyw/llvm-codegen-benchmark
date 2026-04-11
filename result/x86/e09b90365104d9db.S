@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	imull	$315652, %esi, %ecx
 	addl	$-339325900, %ecx
@@ -7,6 +8,7 @@ func0000000000000005:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	imull	$-732923, %esi, %ecx
 	addl	$789358071, %ecx
@@ -15,6 +17,7 @@ func0000000000000004:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	leal	3(%rsi,%rsi,2), %ecx
 	xorl	%eax, %eax
@@ -22,6 +25,7 @@ func0000000000000003:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	imull	$78913, %esi, %ecx
 	addl	$-11994776, %ecx

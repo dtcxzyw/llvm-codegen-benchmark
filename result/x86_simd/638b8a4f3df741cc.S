@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$32, %xmm0, %xmm2
@@ -30,6 +31,7 @@ func000000000000000c:
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$32, %xmm0, %xmm2
@@ -61,6 +63,7 @@ func0000000000000004:
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$9, %ymm0, %ymm0
@@ -91,6 +94,7 @@ func0000000000000000:
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$23, %ymm0, %ymm0
@@ -121,6 +125,7 @@ func0000000000000006:
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000e:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$30, %ymm0, %ymm0

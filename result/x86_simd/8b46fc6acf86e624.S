@@ -5,6 +5,7 @@
 	.long	16777216
 .LCPI0_2:
 	.long	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -18,6 +19,7 @@ func0000000000000009:
 	.long	16
 .LCPI1_1:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -33,6 +35,7 @@ func0000000000000003:
 	.long	255
 .LCPI2_2:
 	.long	4
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000031:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -50,6 +53,7 @@ func0000000000000031:
 	.long	4194304
 .LCPI3_3:
 	.long	4
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000029:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -64,6 +68,7 @@ func0000000000000029:
 	.long	32768
 .LCPI4_1:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vbroadcastss	.LCPI4_1(%rip), %ymm1

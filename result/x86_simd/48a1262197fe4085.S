@@ -16,6 +16,7 @@
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007e:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$8, %xmm1, %xmm1

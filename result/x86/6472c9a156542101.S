@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000146:
 	addq	%rdx, %rsi
 	cmpq	$129, %rsi
@@ -8,6 +9,7 @@ func0000000000000146:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000e94:
 	addq	%rdx, %rsi
 	cmpq	$16777216, %rsi
@@ -17,6 +19,7 @@ func0000000000000e94:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000504:
 	addq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -26,6 +29,7 @@ func0000000000000504:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000e8a:
 	addq	%rdx, %rsi
 	shrq	$31, %rsi
@@ -35,6 +39,7 @@ func0000000000000e8a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000010c:
 	addq	%rdx, %rsi
 	shrq	$32, %rsi
@@ -44,6 +49,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000114:
 	addq	%rdx, %rsi
 	cmpq	$65536, %rsi
@@ -53,6 +59,7 @@ func0000000000000114:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000101:
 	addq	%rdx, %rsi
 	cmpq	$256, %rsi
@@ -62,6 +69,7 @@ func0000000000000101:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000d8c:
 	addq	%rdx, %rsi
 	cmpq	$2147483647, %rsi
@@ -71,6 +79,7 @@ func0000000000000d8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000cc:
 	addq	%rdx, %rsi
 	sets	%cl
@@ -79,6 +88,7 @@ func00000000000000cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000181:
 	addq	%rdx, %rsi
 	setne	%cl
@@ -87,6 +97,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000e84:
 	addq	%rdx, %rsi
 	cmpq	$4097, %rsi
@@ -96,6 +107,7 @@ func0000000000000e84:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000501:
 	addq	%rdx, %rsi
 	cmpq	$10000, %rsi
@@ -105,6 +117,7 @@ func0000000000000501:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000010a:
 	addq	%rdx, %rsi
 	cmpq	$1069547521, %rsi
@@ -114,6 +127,7 @@ func000000000000010a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000054a:
 	addq	%rdx, %rsi
 	testq	%rsi, %rsi

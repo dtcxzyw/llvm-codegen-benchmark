@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	leaq	1(%rdi), %rcx
 	testq	%rsi, %rsi
@@ -6,6 +7,7 @@ func0000000000000004:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	leaq	1(%rdi), %rcx
 	testq	%rsi, %rsi
@@ -13,6 +15,7 @@ func0000000000000019:
 	cmovnsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	leaq	-5(%rdi), %rcx
 	testq	%rsi, %rsi
@@ -20,6 +23,7 @@ func0000000000000005:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	leaq	32(%rdi), %rcx
 	testq	%rsi, %rsi
@@ -27,6 +31,7 @@ func0000000000000007:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	leaq	24(%rdi), %rcx
 	cmpq	$23, %rsi
@@ -34,12 +39,14 @@ func0000000000000010:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	leaq	8(%rdi), %rax
 	cmpq	$8, %rsi
 	cmoveq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000011:
 	leaq	-1(%rdi), %rcx
 	cmpq	$20, %rsi
@@ -47,6 +54,7 @@ func0000000000000011:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000012:
 	leaq	1(%rdi), %rcx
 	cmpq	$2, %rsi
@@ -54,6 +62,7 @@ func0000000000000012:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000051:
 	leaq	-1(%rdi), %rcx
 	cmpq	$20, %rsi
@@ -61,6 +70,7 @@ func0000000000000051:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000023:
 	leaq	7(%rdi), %rcx
 	cmpq	$54400, %rsi

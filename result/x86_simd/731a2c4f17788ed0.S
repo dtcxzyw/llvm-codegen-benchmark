@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	56
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -10,6 +11,7 @@ func0000000000000003:
 
 .LCPI1_0:
 	.quad	40
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -19,6 +21,7 @@ func000000000000001f:
 
 .LCPI2_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -44,6 +47,7 @@ func000000000000000f:
 	.byte	2
 	.byte	3
 	.byte	3
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -55,6 +59,7 @@ func0000000000000002:
 	.long	4294967293
 .LCPI4_1:
 	.quad	88
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -63,6 +68,7 @@ func0000000000000007:
 
 .LCPI5_0:
 	.quad	12884901888
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -70,6 +76,7 @@ func000000000000000c:
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -83,6 +90,7 @@ func0000000000000001:
 	.long	2
 .LCPI7_1:
 	.quad	40
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000013:
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -93,6 +101,7 @@ func0000000000000013:
 	.long	2
 .LCPI8_1:
 	.quad	-4265267296055464877
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000000:
 	vpaddd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -101,6 +110,7 @@ func0000000000000000:
 
 .LCPI9_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000b:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -110,6 +120,7 @@ func000000000000000b:
 
 .LCPI10_0:
 	.quad	-48
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000005:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

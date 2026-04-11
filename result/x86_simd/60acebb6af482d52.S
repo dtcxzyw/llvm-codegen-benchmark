@@ -58,6 +58,7 @@
 	.byte	255
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpmovm2q	%k0, %ymm1

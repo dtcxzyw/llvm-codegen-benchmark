@@ -24,6 +24,7 @@
 .LCPI0_4:
 	.short	14336
 	.short	14336
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpandd	.LCPI0_4(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqw	.LCPI0_1(%rip), %xmm1, %k1
@@ -45,6 +46,7 @@ func0000000000000002:
 	.quad	9216
 .LCPI1_2:
 	.quad	8192
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vptestnmw	.LCPI1_0(%rip), %xmm1, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm1

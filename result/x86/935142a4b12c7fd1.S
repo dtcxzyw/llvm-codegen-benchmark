@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	movzbl	%sil, %eax
 	incq	%rax
@@ -6,6 +7,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	movzbl	%sil, %eax
 	subq	%rdi, %rax
@@ -13,6 +15,7 @@ func0000000000000044:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f4:
 	movzbl	%sil, %eax
 	subq	%rax, %rdi
@@ -21,6 +24,7 @@ func00000000000000f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000002f4:
 	movzbl	%sil, %eax
 	subq	%rax, %rdi
@@ -29,6 +33,7 @@ func00000000000002f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a1:
 	movzbl	%sil, %eax
 	subq	%rax, %rdi
@@ -36,6 +41,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000241:
 	notb	%sil
 	movsbq	%sil, %rax
@@ -43,6 +49,7 @@ func0000000000000241:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	movzbl	%sil, %eax
 	subq	%rdi, %rax
@@ -50,6 +57,7 @@ func0000000000000004:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000006:
 	movzbl	%sil, %eax
 	subq	%rax, %rdi

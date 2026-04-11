@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	andl	$524288, %esi
 	shlq	$22, %rsi
 	leaq	4(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001c:
 	movl	%esi, %eax
 	andl	$4194304, %eax
@@ -13,6 +15,7 @@ func000000000000001c:
 	orq	$32, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001e:
 	movzwl	%si, %eax
 	shlq	$32, %rax
@@ -20,6 +23,7 @@ func000000000000001e:
 	orq	$4095, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	movl	%esi, %eax
 	andl	$-16, %eax
@@ -28,6 +32,7 @@ func000000000000000b:
 	orq	$276037633, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001b:
 	movl	%esi, %eax
 	shlq	$48, %rax
@@ -35,6 +40,7 @@ func000000000000001b:
 	orq	$1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001a:
 	andl	$32768, %esi
 	shlq	$48, %rsi

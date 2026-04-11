@@ -8,6 +8,7 @@
 	.short	0
 	.short	3
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000068:
 	vpmovzxbd	%xmm1, %xmm1
 	vpmaddwd	.LCPI0_0(%rip), %xmm1, %xmm1
@@ -26,6 +27,7 @@ func0000000000000068:
 	.short	0
 	.short	12
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	vpmovzxbd	%xmm1, %xmm1
 	vpmaddwd	.LCPI1_0(%rip), %xmm1, %xmm1

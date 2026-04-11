@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4294967270
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$4, %ymm2, %ymm0 {%k1}
@@ -8,32 +9,38 @@ func0000000000000024:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vpmovd2m	%ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpslld	$3, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%ymm3, %ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpmovd2m	%ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm1, %k1
@@ -42,11 +49,13 @@ func000000000000000a:
 
 .LCPI7_0:
 	.long	32
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$2, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000066:
 	vpmovd2m	%ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
@@ -54,6 +63,7 @@ func0000000000000066:
 
 .LCPI9_0:
 	.long	17
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000004:
 	vpcmpltud	.LCPI9_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$3, %ymm2, %ymm0 {%k1}
@@ -61,6 +71,7 @@ func0000000000000004:
 
 .LCPI10_0:
 	.long	2
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000014:
 	vpcmpltud	.LCPI10_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
@@ -68,11 +79,13 @@ func0000000000000014:
 
 .LCPI11_0:
 	.long	1
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000038:
 	vpcmpnleud	.LCPI11_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000002a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%ymm3, %ymm1, %k1

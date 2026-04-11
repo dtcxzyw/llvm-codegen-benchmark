@@ -3,6 +3,7 @@
 	.long	2147483647
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004e:
 	vpxord	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0

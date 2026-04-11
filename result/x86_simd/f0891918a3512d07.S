@@ -3,6 +3,7 @@
 	.long	16128
 .LCPI0_1:
 	.long	4128768
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrld	$12, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm2, %ymm1
@@ -80,6 +81,7 @@ func0000000000000003:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vmovdqa	.LCPI1_0(%rip), %ymm3
 	vpermi2b	%ymm2, %ymm1, %ymm3
@@ -90,6 +92,7 @@ func0000000000000002:
 	.long	65504
 .LCPI2_1:
 	.long	63488
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpsrld	$3, %ymm2, %ymm2
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm1, %ymm2
@@ -100,6 +103,7 @@ func0000000000000000:
 	.long	16128
 .LCPI3_1:
 	.long	4128768
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpsrld	$18, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm2, %ymm1

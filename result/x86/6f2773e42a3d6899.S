@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
@@ -6,12 +7,14 @@ func0000000000000006:
 	andl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	cmpq	%rdx, %rsi
 	movl	$-2, %eax
 	cmovgel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -19,6 +22,7 @@ func0000000000000008:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	subq	%rdx, %rsi
 	cmpq	$65535, %rsi
@@ -26,6 +30,7 @@ func0000000000000004:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000044:
 	movl	%edi, %eax
 	retq

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	andl	$2052, %esi
 	cmpw	$4, %si
@@ -8,6 +9,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	testb	%sil, %sil
 	setns	%cl
@@ -16,6 +18,7 @@ func0000000000000021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	testl	$16384, %esi
 	sete	%cl
@@ -24,6 +27,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	shrl	$14, %esi
 	cmpl	$49, %edi
@@ -31,6 +35,7 @@ func000000000000018c:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000034:
 	testb	$14, %sil
 	sete	%cl
@@ -39,12 +44,14 @@ func0000000000000034:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000018a:
 	testl	%edi, %edi
 	setns	%al
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000038:
 	andl	$64512, %esi
 	cmpl	$56320, %esi
@@ -54,6 +61,7 @@ func0000000000000038:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002a:
 	andl	$64512, %esi
 	cmpl	$56320, %esi
@@ -63,6 +71,7 @@ func000000000000002a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000184:
 	andl	$65503, %esi
 	cmpw	$83, %si

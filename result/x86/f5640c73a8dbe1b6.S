@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000202a:
 	cmpl	%edx, %esi
 	seta	%cl
@@ -9,6 +10,7 @@ func000000000000202a:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000102a:
 	cmpl	%edx, %esi
 	setb	%cl
@@ -19,6 +21,7 @@ func000000000000102a:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001826:
 	cmpl	%edx, %esi
 	setl	%cl
@@ -29,6 +32,7 @@ func0000000000001826:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000001c26:
 	cmpl	%edx, %esi
 	setle	%cl
@@ -39,6 +43,7 @@ func0000000000001c26:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000282a:
 	cmpl	%edx, %esi
 	setg	%cl
@@ -49,6 +54,7 @@ func000000000000282a:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000002c2a:
 	cmpl	%edx, %esi
 	setge	%cl

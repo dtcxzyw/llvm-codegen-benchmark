@@ -16,6 +16,7 @@
 	.short	8192
 	.short	8192
 	.short	8192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmw	.LCPI0_0(%rip), %ymm1, %k0
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -43,6 +44,7 @@ func0000000000000021:
 	.short	9217
 .LCPI1_1:
 	.zero	16,15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	vptestnmw	.LCPI1_0(%rip), %ymm1, %k0
 	vpcmpnleub	.LCPI1_1(%rip), %xmm0, %k1
@@ -86,6 +88,7 @@ func0000000000000028:
 	.byte	0
 .LCPI2_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000188:
 	vptestmw	.LCPI2_0(%rip), %ymm1, %k0
 	vpcmpnleub	.LCPI2_1(%rip), %xmm0, %k1

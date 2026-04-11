@@ -37,6 +37,7 @@
 	.byte	128
 .LCPI0_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000029:
 	vpslld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -84,6 +85,7 @@ func0000000000000029:
 	.byte	128
 .LCPI1_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpslld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

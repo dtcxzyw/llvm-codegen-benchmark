@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000009b:
 	shlq	$32, %rdx
 	xorl	%eax, %eax
@@ -8,6 +9,7 @@ func000000000000009b:
 	cmovnsq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001a:
 	shlq	$32, %rdx
 	xorl	%eax, %eax

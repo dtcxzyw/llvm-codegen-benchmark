@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm1
@@ -16,6 +17,7 @@ func0000000000000004:
 	.long	4294901761
 .LCPI1_1:
 	.long	4294901760
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm1
@@ -26,6 +28,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm1

@@ -3,6 +3,7 @@
 	.quad	100
 .LCPI0_1:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
@@ -40,6 +41,7 @@ func0000000000000008:
 	.quad	1000
 .LCPI1_1:
 	.long	50
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000204:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
@@ -77,6 +79,7 @@ func0000000000000204:
 	.quad	1000000
 .LCPI2_1:
 	.long	100
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000104:
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
@@ -114,6 +117,7 @@ func0000000000000104:
 	.quad	1000
 .LCPI3_1:
 	.long	10
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2

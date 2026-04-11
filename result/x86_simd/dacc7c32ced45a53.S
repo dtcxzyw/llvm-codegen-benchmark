@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovdb	%ymm0, %xmm0
 	vptestnmb	%xmm0, %xmm0, %k1

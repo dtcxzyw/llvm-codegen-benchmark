@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000ea1:
 	movzwl	%si, %eax
 	leal	(%rax,%rax,8), %eax

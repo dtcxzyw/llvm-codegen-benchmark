@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000030:
 	decb	%dil
 	movl	$2, %eax
@@ -6,6 +7,7 @@ func0000000000000030:
 	decq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	decb	%dil
 	movl	$2, %eax
@@ -13,6 +15,7 @@ func0000000000000010:
 	decq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000038:
 	decb	%dil
 	movq	$-1, %rax
@@ -20,6 +23,7 @@ func0000000000000038:
 	notq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000032:
 	decb	%dil
 	movl	$8, %eax
@@ -27,6 +31,7 @@ func0000000000000032:
 	addq	$40, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
 	incb	%dil
 	movl	$16, %eax
@@ -34,6 +39,7 @@ func0000000000000013:
 	addq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	addb	$63, %dil
 	movq	$-1, %rax

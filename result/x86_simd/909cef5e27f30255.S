@@ -3,6 +3,7 @@
 	.quad	0x3fc999999999999a
 .LCPI0_1:
 	.long	93
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmulpd	.LCPI0_0(%rip){1to8}, %zmm0, %zmm0
 	vcvttpd2dq	%zmm0, %ymm0
@@ -17,6 +18,7 @@ func0000000000000000:
 	.long	1
 .LCPI1_2:
 	.long	30
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vmulpd	.LCPI1_0(%rip){1to8}, %zmm0, %zmm0
 	vcvttpd2dq	%zmm0, %ymm0

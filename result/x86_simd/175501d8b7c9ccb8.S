@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vcvtpd2ps	%zmm0, %ymm0
 	vpsrld	$23, %ymm0, %ymm0

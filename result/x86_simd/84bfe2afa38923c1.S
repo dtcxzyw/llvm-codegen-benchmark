@@ -13,6 +13,7 @@
 .LCPI0_2:
 	.short	1008
 	.short	1008
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -82,6 +83,7 @@ func0000000000000018:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

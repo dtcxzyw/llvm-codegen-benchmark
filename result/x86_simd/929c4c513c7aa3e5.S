@@ -3,6 +3,7 @@
 	.long	1
 .LCPI0_1:
 	.long	65536
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpmovzxwd	%xmm1, %ymm1
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
@@ -14,6 +15,7 @@ func0000000000000021:
 	.long	188
 .LCPI1_1:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000058:
 	vpmovzxwd	%xmm1, %ymm1
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm0, %k1

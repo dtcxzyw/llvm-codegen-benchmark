@@ -3,6 +3,7 @@
 	.long	4181721088
 .LCPI0_1:
 	.long	523264
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$7, %xmm0, %xmm1

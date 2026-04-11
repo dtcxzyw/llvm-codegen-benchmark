@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	32768
 	.short	32768
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

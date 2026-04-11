@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000410:
 	addq	$-1073741825, %rdx
 	cmpq	$-1073741824, %rdx
@@ -9,6 +10,7 @@ func0000000000000410:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000808:
 	cmpq	$32, %rdx
 	setb	%cl
@@ -19,6 +21,7 @@ func0000000000000808:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000208:
 	cmpq	$8144, %rdx
 	sete	%cl

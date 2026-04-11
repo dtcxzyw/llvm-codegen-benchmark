@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	xorl	$2147483647, %edx
 	cmpl	%edx, %esi
@@ -6,12 +7,14 @@ func000000000000002a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	addl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	negl	%edx
 	cmpl	%edx, %esi
@@ -19,6 +22,7 @@ func0000000000000028:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000078:
 	movl	$32, %eax
 	subl	%edx, %eax
@@ -27,6 +31,7 @@ func0000000000000078:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	negl	%edx
 	cmpl	%edx, %esi
@@ -34,6 +39,7 @@ func0000000000000026:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000006a:
 	movl	$100000, %eax
 	subl	%edx, %eax
@@ -42,6 +48,7 @@ func000000000000006a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000021:
 	movl	$1022, %eax
 	subl	%edx, %eax
@@ -50,6 +57,7 @@ func0000000000000021:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	negl	%edx
 	cmpl	%edx, %esi
@@ -57,12 +65,14 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	addl	%edx, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000a:
 	negl	%edx
 	cmpl	%edx, %esi
@@ -70,6 +80,7 @@ func000000000000000a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
 	negl	%edx
 	cmpl	%edx, %esi
@@ -77,6 +88,7 @@ func0000000000000006:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000034:
 	negl	%edx
 	cmpl	%edx, %esi
@@ -84,6 +96,7 @@ func0000000000000034:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000066:
 	movl	$-999999998, %eax
 	subl	%edx, %eax
@@ -92,6 +105,7 @@ func0000000000000066:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000024:
 	negl	%edx
 	cmpl	%edx, %esi

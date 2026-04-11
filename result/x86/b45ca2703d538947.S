@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpltsd	%xmm3, %xmm2, %k1
@@ -6,6 +7,7 @@ func0000000000000002:
 	vdivsd	%xmm2, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpnlesd	%xmm2, %xmm3, %k1

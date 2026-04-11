@@ -5,6 +5,7 @@
 	.long	0xbf800000
 .LCPI0_2:
 	.long	0xbf7fffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmovss	.LCPI0_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm0

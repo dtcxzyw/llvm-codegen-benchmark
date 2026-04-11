@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000208:
 	addb	$59, %dl
 	cmpb	$5, %dl
@@ -9,6 +10,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000202:
 	addb	$-65, %dl
 	cmpb	$26, %dl
@@ -19,6 +21,7 @@ func0000000000000202:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000210:
 	addb	$-48, %dl
 	cmpb	$10, %dl
@@ -29,6 +32,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000218:
 	addb	$-65, %dl
 	cmpb	$26, %dl

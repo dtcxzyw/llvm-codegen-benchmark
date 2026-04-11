@@ -16,6 +16,7 @@
 	.short	0
 	.short	85
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
@@ -39,6 +40,7 @@ func0000000000000003:
 	.short	0
 	.short	3600
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
@@ -62,6 +64,7 @@ func0000000000000013:
 	.short	0
 	.short	28
 	.short	0
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0

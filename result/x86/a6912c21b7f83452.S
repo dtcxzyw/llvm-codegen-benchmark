@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000002182:
 	shrq	$5, %rsi
 	cmpl	%esi, %edi
@@ -8,6 +9,7 @@ func0000000000002182:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000002102:
 	shrq	$5, %rsi
 	cmpl	%esi, %edi
@@ -17,6 +19,7 @@ func0000000000002102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000030c:
 	shrq	$3, %rsi
 	cmpl	%esi, %edi
@@ -26,6 +29,7 @@ func000000000000030c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000002282:
 	shrq	$4, %rsi
 	cmpl	%esi, %edi
@@ -35,6 +39,7 @@ func0000000000002282:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000022cc:
 	shrq	$3, %rsi
 	cmpl	%esi, %edi
@@ -44,6 +49,7 @@ func00000000000022cc:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000002042:
 	shrq	$3, %rsi
 	cmpl	%esi, %edi

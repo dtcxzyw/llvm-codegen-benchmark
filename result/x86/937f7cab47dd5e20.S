@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	movabsq	$8589934597, %rax
 	movq	%rdi, %rdx
@@ -14,6 +15,7 @@ func0000000000000006:
 	orl	$1073741824, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	movabsq	$-3689348814741910323, %rax
 	movq	%rdi, %rdx

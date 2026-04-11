@@ -39,6 +39,7 @@
 	.zero	1
 .LCPI0_4:
 	.byte	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm1, %k1
@@ -69,6 +70,7 @@ func0000000000000009:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI1_2(%rip){1to4}, %xmm0, %xmm1

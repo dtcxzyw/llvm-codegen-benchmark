@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -24,6 +25,7 @@ func0000000000000006:
 	.short	7
 	.short	7
 	.short	7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -49,6 +51,7 @@ func0000000000000018:
 	.short	999
 	.short	999
 	.short	999
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -57,6 +60,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000aa:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -83,6 +87,7 @@ func00000000000000aa:
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000074:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -108,6 +113,7 @@ func0000000000000074:
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000f4:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -133,6 +139,7 @@ func00000000000000f4:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000078:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -158,6 +165,7 @@ func0000000000000078:
 	.short	254
 	.short	254
 	.short	254
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -166,6 +174,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -192,6 +201,7 @@ func000000000000000a:
 	.short	33
 	.short	33
 	.short	33
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000014:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -217,6 +227,7 @@ func0000000000000014:
 	.short	1440
 	.short	1440
 	.short	1440
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000048:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -242,6 +253,7 @@ func0000000000000048:
 	.short	6553
 	.short	6553
 	.short	6553
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000f8:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

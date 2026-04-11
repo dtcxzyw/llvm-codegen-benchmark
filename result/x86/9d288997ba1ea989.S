@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006c4:
 	movb	$33, %al
 	subb	%sil, %al
@@ -10,6 +11,7 @@ func00000000000006c4:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000264:
 	movb	$10, %al
 	subb	%sil, %al

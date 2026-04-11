@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b0:
 	vpsrlq	$3, %ymm2, %ymm2
 	vpsllq	$6, %ymm1, %ymm1
@@ -7,6 +8,7 @@ func00000000000000b0:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000db:
 	vpsllq	$20, %ymm2, %ymm2
 	vpsrlq	$21, %ymm1, %ymm1

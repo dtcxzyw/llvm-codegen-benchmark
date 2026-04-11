@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3a83126f
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm0, %zmm0
@@ -11,6 +12,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	0x3dcb2ff4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vmulps	%zmm0, %zmm1, %zmm0

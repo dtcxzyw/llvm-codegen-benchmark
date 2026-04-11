@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vptestnmw	.LCPI0_0(%rip), %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
@@ -23,6 +24,7 @@ func0000000000000002:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vptestmw	.LCPI1_0(%rip), %xmm0, %k0
 	vpmovm2q	%k0, %ymm0

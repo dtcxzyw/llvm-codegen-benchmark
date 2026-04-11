@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c4:
 	negq	%rsi
 	addq	%rdi, %rdi
@@ -7,6 +8,7 @@ func00000000000000c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	negq	%rsi
 	imulq	$1000000, %rdi, %rax
@@ -14,6 +16,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000168:
 	movq	$-58, %rax
 	subq	%rsi, %rax
@@ -23,6 +26,7 @@ func0000000000000168:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000e8:
 	movq	$-58, %rax
 	subq	%rsi, %rax
@@ -32,6 +36,7 @@ func00000000000000e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c8:
 	movl	$47, %eax
 	subq	%rsi, %rax
@@ -41,6 +46,7 @@ func00000000000000c8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000012a:
 	movabsq	$-9223372036854775761, %rax
 	subq	%rsi, %rax
@@ -50,6 +56,7 @@ func000000000000012a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002c:
 	imulq	$-19, %rdi, %rax
 	addq	%rsi, %rax

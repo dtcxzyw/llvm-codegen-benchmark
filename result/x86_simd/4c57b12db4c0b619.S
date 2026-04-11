@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000060:
 	vpslld	$16, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2
@@ -10,6 +11,7 @@ func0000000000000060:
 
 .LCPI1_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000007f:
 	vpslld	$3, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
@@ -19,6 +21,7 @@ func000000000000007f:
 
 .LCPI2_0:
 	.long	16777216
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000066:
 	vpslld	$10, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2
@@ -28,6 +31,7 @@ func0000000000000066:
 
 .LCPI3_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000078:
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2
@@ -37,6 +41,7 @@ func0000000000000078:
 
 .LCPI4_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000007c:
 	vpslld	$16, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm2
@@ -46,6 +51,7 @@ func000000000000007c:
 
 .LCPI5_0:
 	.long	12
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000071:
 	vpslld	$6, %ymm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -55,6 +61,7 @@ func0000000000000071:
 
 .LCPI6_0:
 	.long	16777216
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000070:
 	vpslld	$21, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2
@@ -64,6 +71,7 @@ func0000000000000070:
 
 .LCPI7_0:
 	.long	255
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000005f:
 	vpslld	$28, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2
@@ -73,6 +81,7 @@ func000000000000005f:
 
 .LCPI8_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000000:
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm2
@@ -82,6 +91,7 @@ func0000000000000000:
 
 .LCPI9_0:
 	.long	3
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	vpslld	$6, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2
@@ -91,6 +101,7 @@ func0000000000000001:
 
 .LCPI10_0:
 	.long	8192
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000007e:
 	vpslld	$7, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm2
@@ -100,6 +111,7 @@ func000000000000007e:
 
 .LCPI11_0:
 	.long	4128768
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000079:
 	vpslld	$2, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm2
@@ -109,6 +121,7 @@ func0000000000000079:
 
 .LCPI12_0:
 	.long	2214592512
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000072:
 	vpslld	$16, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
@@ -118,6 +131,7 @@ func0000000000000072:
 
 .LCPI13_0:
 	.long	57
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000011:
 	vpslld	$24, %ymm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -127,6 +141,7 @@ func0000000000000011:
 
 .LCPI14_0:
 	.long	553648128
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000028:
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2
@@ -136,6 +151,7 @@ func0000000000000028:
 
 .LCPI15_0:
 	.long	4261412864
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000020:
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm2

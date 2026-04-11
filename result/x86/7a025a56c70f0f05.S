@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000046:
 	leal	(%rsi,%rsi,2), %eax
 	movl	%eax, %ecx
@@ -9,6 +10,7 @@ func0000000000000046:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	leal	(%rsi,%rsi,4), %eax
 	leal	7(%rsi,%rsi,4), %ecx

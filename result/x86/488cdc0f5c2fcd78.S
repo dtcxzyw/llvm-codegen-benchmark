@@ -1,29 +1,35 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	55296(%rdi), %eax
 	shrl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	leal	-1(%rdi), %eax
 	shrl	$10, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	leal	3(%rdi), %eax
 	shrl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	leal	1(%rdi), %eax
 	shrl	$24, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	leal	1(%rdi), %eax
 	shrl	$24, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000040:
 	leal	1(%rdi), %eax
 	shrl	$16, %eax

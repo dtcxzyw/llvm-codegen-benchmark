@@ -3,6 +3,7 @@
 	.long	256
 .LCPI0_1:
 	.long	2048
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
@@ -14,6 +15,7 @@ func0000000000000007:
 	.long	3840
 .LCPI1_1:
 	.long	240
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
@@ -65,6 +67,7 @@ func0000000000000001:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm2, %xmm2
 	vpandd	.LCPI2_3(%rip){1to4}, %xmm1, %xmm1

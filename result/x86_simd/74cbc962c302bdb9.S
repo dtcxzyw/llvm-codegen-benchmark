@@ -3,6 +3,7 @@
 	.quad	-27021597764235265
 .LCPI0_1:
 	.quad	-273940481
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpternlogd	$254, %xmm2, %xmm1, %xmm0
 	vptestnmd	%xmm0, %xmm0, %k1
@@ -16,6 +17,7 @@ func0000000000000001:
 	.quad	40
 .LCPI1_2:
 	.quad	36
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	vpternlogd	$254, %xmm2, %xmm1, %xmm0
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k1
@@ -25,6 +27,7 @@ func0000000000000064:
 
 .LCPI2_0:
 	.quad	4294967296
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpternlogd	$254, %xmm2, %xmm1, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

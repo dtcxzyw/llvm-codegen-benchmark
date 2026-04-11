@@ -80,6 +80,7 @@
 	.zero	4,30
 .LCPI0_6:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI0_4(%rip){1to2}, %xmm0, %xmm0

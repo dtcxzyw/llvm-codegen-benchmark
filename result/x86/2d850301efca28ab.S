@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a1:
 	sarq	$32, %rdi
 	testl	%esi, %esi
@@ -8,6 +9,7 @@ func00000000000001a1:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	movl	%esi, %eax
 	sarq	$2, %rdi
@@ -16,6 +18,7 @@ func0000000000000181:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	movl	%esi, %eax
 	sarq	$4, %rdi

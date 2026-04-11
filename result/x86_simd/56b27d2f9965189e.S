@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	29
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpshufb	.LCPI0_0(%rip), %ymm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm2, %ymm0
@@ -39,6 +40,7 @@ func0000000000000003:
 
 .LCPI1_0:
 	.long	8126464
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpslld	$18, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
@@ -47,6 +49,7 @@ func000000000000000f:
 
 .LCPI2_0:
 	.long	528482304
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vpslld	$23, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
@@ -55,6 +58,7 @@ func0000000000000007:
 
 .LCPI3_0:
 	.long	253952
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vpslld	$13, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
@@ -63,6 +67,7 @@ func000000000000000b:
 
 .LCPI4_0:
 	.long	17825792
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpslld	$3, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
@@ -71,6 +76,7 @@ func0000000000000000:
 
 .LCPI5_0:
 	.long	64
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000002:
 	vpslld	$3, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
@@ -110,6 +116,7 @@ func0000000000000002:
 	.byte	28
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000e:
 	vpshufb	.LCPI6_0(%rip), %ymm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm2, %ymm0
@@ -148,6 +155,7 @@ func000000000000000e:
 	.byte	128
 	.byte	28
 	.byte	128
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000d:
 	vpshufb	.LCPI7_0(%rip), %ymm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm2, %ymm0
@@ -155,6 +163,7 @@ func000000000000000d:
 
 .LCPI8_0:
 	.long	63488
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000c:
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
@@ -194,6 +203,7 @@ func000000000000000c:
 	.byte	28
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	vpshufb	.LCPI9_0(%rip), %ymm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm2, %ymm0

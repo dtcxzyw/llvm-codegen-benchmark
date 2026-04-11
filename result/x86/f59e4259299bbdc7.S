@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	xorl	$42, %edx
 	shrxl	%esi, %edx, %eax
@@ -9,6 +10,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	xorl	$42, %edx
 	shrxl	%esi, %edx, %eax
@@ -19,6 +21,7 @@ func0000000000000028:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	xorl	$42, %edx
 	shrxl	%esi, %edx, %eax

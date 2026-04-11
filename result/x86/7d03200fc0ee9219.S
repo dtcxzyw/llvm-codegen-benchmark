@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000060:
 	cmpl	$9, %esi
 	leaq	64(%rdi,%rdi), %rcx

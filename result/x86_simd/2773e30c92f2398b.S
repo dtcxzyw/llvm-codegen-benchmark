@@ -5,6 +5,7 @@
 	.long	0x437f0000
 .LCPI0_2:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vaddps	%ymm2, %ymm1, %ymm1
 	vaddps	%ymm1, %ymm0, %ymm0

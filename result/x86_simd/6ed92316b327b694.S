@@ -75,6 +75,7 @@
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI0_3(%rip){1to8}, %ymm1, %ymm0
@@ -156,6 +157,7 @@ func0000000000000009:
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI1_3(%rip){1to8}, %ymm1, %ymm0
@@ -196,6 +198,7 @@ func0000000000000001:
 	.byte	29
 .LCPI2_1:
 	.long	4026532095
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vpshufb	.LCPI2_0(%rip), %ymm1, %ymm1
 	vpternlogd	$236, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0

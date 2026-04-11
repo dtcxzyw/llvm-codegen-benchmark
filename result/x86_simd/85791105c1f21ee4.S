@@ -12,6 +12,7 @@
 	.short	3329
 	.short	3329
 	.short	3329
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
 	vpsrld	$3, %ymm0, %ymm1
 	vpshufd	$245, %ymm1, %ymm2
@@ -43,6 +44,7 @@ func000000000000001b:
 	.short	8389
 	.short	8389
 	.short	8389
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2

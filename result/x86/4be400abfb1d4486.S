@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000308:
 	shrq	$2, %rdx
 	cmpq	%rsi, %rdx
@@ -8,6 +9,7 @@ func0000000000000308:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000328:
 	shrq	$2, %rdx
 	cmpq	%rsi, %rdx

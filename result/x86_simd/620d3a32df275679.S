@@ -20,6 +20,7 @@
 	.long	1
 .LCPI0_2:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0
@@ -48,6 +49,7 @@ func0000000000000001:
 	.long	1
 .LCPI1_2:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000141:
 	vpcmpeqb	.LCPI1_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0
@@ -76,6 +78,7 @@ func0000000000000141:
 	.long	1
 .LCPI2_2:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000101:
 	vpcmpeqb	.LCPI2_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0
@@ -104,6 +107,7 @@ func0000000000000101:
 	.long	4294967292
 .LCPI3_2:
 	.long	4294967291
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a1:
 	vpcmpeqb	.LCPI3_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0
@@ -132,6 +136,7 @@ func00000000000000a1:
 	.long	6
 .LCPI4_2:
 	.long	7
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a4:
 	vpcmpltub	.LCPI4_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm0
@@ -143,6 +148,7 @@ func00000000000000a4:
 	.long	3
 .LCPI5_1:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000041:
 	vptestnmb	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm0
@@ -171,6 +177,7 @@ func0000000000000041:
 	.long	17
 .LCPI6_2:
 	.long	39
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001e1:
 	vpcmpeqb	.LCPI6_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI6_1(%rip), %ymm0
@@ -199,6 +206,7 @@ func00000000000001e1:
 	.long	12
 .LCPI7_2:
 	.long	13
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vpcmpltub	.LCPI7_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI7_1(%rip), %ymm0
@@ -227,6 +235,7 @@ func0000000000000004:
 	.long	2
 .LCPI8_2:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000044:
 	vpcmpltub	.LCPI8_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI8_1(%rip), %ymm0
@@ -255,6 +264,7 @@ func0000000000000044:
 	.long	1
 .LCPI9_2:
 	.long	2
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000081:
 	vpcmpeqb	.LCPI9_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI9_1(%rip), %ymm0

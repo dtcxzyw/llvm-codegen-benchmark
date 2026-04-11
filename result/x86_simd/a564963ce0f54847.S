@@ -11,12 +11,14 @@
 .LCPI0_1:
 	.short	1022
 	.short	1022
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrlw	$6, %xmm0, %xmm0
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxwd	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsrlw	$6, %xmm0, %xmm0
 	vpmovzxwd	%xmm0, %ymm0

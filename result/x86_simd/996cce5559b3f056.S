@@ -5,6 +5,7 @@
 	.quad	512
 .LCPI0_2:
 	.quad	562949953421312
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vptestmd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vorpd	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
@@ -17,6 +18,7 @@ func0000000000000043:
 	.quad	1095216660480
 .LCPI1_2:
 	.quad	4278190080
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vptestmd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
 	vorpd	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
@@ -29,6 +31,7 @@ func0000000000000042:
 	.quad	4278190080
 .LCPI2_2:
 	.quad	16711680
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vptestmd	.LCPI2_0(%rip){1to4}, %xmm1, %k1
 	vorpd	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0 {%k1}

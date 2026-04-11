@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000029:
 	vcvtdq2pd	%ymm0, %zmm2
 	vcmpnlepd	%zmm2, %zmm1, %k0
@@ -6,6 +7,7 @@ func0000000000000029:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vcvtdq2pd	%ymm0, %zmm2
 	vcmpltpd	%zmm1, %zmm2, %k0

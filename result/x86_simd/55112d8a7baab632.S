@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpsrad	$31, %xmm0, %xmm1
 	vpsrld	$29, %xmm1, %xmm1
@@ -15,6 +16,7 @@ func000000000000003f:
 
 .LCPI1_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002f:
 	vpsrad	$31, %xmm0, %xmm1
 	vpsrld	$29, %xmm1, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	%ecx, %ecx
 	cmpl	$40960, %edi
@@ -8,6 +9,7 @@ func0000000000000021:
 	cmovsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	shrl	$13, %esi
 	cmpl	$2, %edi
@@ -17,6 +19,7 @@ func000000000000010c:
 	shll	$13, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000101:
 	notl	%esi
 	testb	$6, %sil
@@ -28,6 +31,7 @@ func0000000000000101:
 	leaq	216(,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	testl	%edi, %edi
 	movl	$7, %eax

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovzxbq	%xmm0, %ymm0
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0
@@ -23,6 +24,7 @@ func0000000000000000:
 	.zero	1
 .LCPI1_1:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpxord	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0

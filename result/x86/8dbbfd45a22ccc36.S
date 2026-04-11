@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000294:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
@@ -10,6 +11,7 @@ func0000000000000294:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000298:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
@@ -21,6 +23,7 @@ func0000000000000298:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
@@ -32,6 +35,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000088:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi
@@ -43,6 +47,7 @@ func0000000000000088:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000094:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi

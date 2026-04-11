@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	addb	$-7, %dil
 	andb	$-5, %dil
@@ -7,6 +8,7 @@ func0000000000000042:
 	adcl	$1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	cmpb	$127, %dil
 	sete	%al
@@ -18,6 +20,7 @@ func0000000000000048:
 	orl	$1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000068:
 	cmpb	$127, %dil
 	sete	%al

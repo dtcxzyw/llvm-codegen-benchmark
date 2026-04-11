@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002a6:
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx

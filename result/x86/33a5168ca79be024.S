@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	movl	%edi, %eax
 	testq	%rdx, %rdx
@@ -6,6 +7,7 @@ func0000000000000001:
 	andl	$1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	movl	%edi, %eax
 	shrq	$52, %rdx
@@ -13,12 +15,14 @@ func0000000000000014:
 	andl	$7, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	testq	%rdx, %rdx
 	cmovel	%esi, %edi
 	movzwl	%di, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	movl	%edi, %eax
 	testq	%rdx, %rdx
@@ -26,6 +30,7 @@ func0000000000000006:
 	andl	$128, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	movl	%edi, %eax
 	cmpq	$4096, %rdx

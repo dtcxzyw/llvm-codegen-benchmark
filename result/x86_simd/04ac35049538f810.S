@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,254
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxbw	%xmm0, %ymm0

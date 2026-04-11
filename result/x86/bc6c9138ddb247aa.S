@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	cmpb	$44, %dl
@@ -8,6 +9,7 @@ func0000000000000021:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	xorl	%eax, %eax
 	cmpb	$86, %dl
@@ -17,6 +19,7 @@ func0000000000000024:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	xorl	%eax, %eax
 	cmpb	$16, %dl
@@ -26,6 +29,7 @@ func0000000000000081:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000094:
 	xorl	%eax, %eax
 	cmpb	$16, %dl

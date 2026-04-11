@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$170, %ymm2, %ymm1, %ymm1
@@ -8,6 +9,7 @@ func0000000000000014:
 
 .LCPI1_0:
 	.long	536870911
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm0
@@ -16,6 +18,7 @@ func000000000000000c:
 
 .LCPI2_0:
 	.long	1048575
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnleud	%ymm1, %ymm0, %k0

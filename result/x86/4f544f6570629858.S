@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	leaq	(%rdx,%rdi), %rcx
 	subq	%rsi, %rdx
@@ -8,6 +9,7 @@ func0000000000000020:
 	cmovaq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000120:
 	leaq	(%rdx,%rdi), %rcx
 	subq	%rsi, %rdx

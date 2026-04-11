@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000064:
 	addb	$-4, %dil
 	movzbl	%dil, %ecx
@@ -8,6 +9,7 @@ func0000000000000064:
 	cmovbq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e4:
 	addb	$-6, %dil
 	movzbl	%dil, %ecx
@@ -17,6 +19,7 @@ func00000000000000e4:
 	cmovbq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000264:
 	addb	$126, %dil
 	movzbl	%dil, %ecx

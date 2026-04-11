@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008a:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -11,6 +12,7 @@ func000000000000008a:
 
 .LCPI1_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
 	vucomiss	.LCPI1_0(%rip), %xmm0
 	setne	%cl

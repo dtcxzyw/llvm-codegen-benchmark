@@ -20,6 +20,7 @@
 	.quad	2
 .LCPI0_2:
 	.quad	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovdb	%xmm0, %xmm0
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1

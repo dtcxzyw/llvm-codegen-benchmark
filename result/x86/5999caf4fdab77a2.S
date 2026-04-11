@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	decb	%dil
 	movl	$1, %eax
@@ -7,6 +8,7 @@ func00000000000000ca:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	addb	$-6, %dil
 	movl	$2, %eax
@@ -15,6 +17,7 @@ func000000000000008a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	incb	%dil
 	movl	$2, %eax

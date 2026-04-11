@@ -5,6 +5,7 @@
 	.quad	0x40d86a0000000000
 .LCPI0_2:
 	.quad	0x40af400000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	kmovd	%edi, %k1
 	vmovsd	.LCPI0_0(%rip), %xmm0 {%k1}
@@ -21,6 +22,7 @@ func0000000000000042:
 	.quad	0x3fefffffffffffa6
 .LCPI1_2:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	kmovd	%edi, %k1
 	vmovsd	.LCPI1_0(%rip), %xmm0 {%k1}
@@ -32,6 +34,7 @@ func0000000000000044:
 
 .LCPI2_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000004e:
 	kmovd	%edi, %k1
 	vxorpd	%xmm1, %xmm1, %xmm1

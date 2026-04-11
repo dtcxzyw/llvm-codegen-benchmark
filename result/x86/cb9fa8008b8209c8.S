@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000421:
 	subl	%esi, %edx
 	xorl	$1, %edx
@@ -7,6 +8,7 @@ func0000000000000421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000481:
 	subl	%esi, %edx
 	cmpl	$12, %edx
@@ -16,6 +18,7 @@ func0000000000000481:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000048c:
 	subl	%esi, %edx
 	cmpl	$8, %edx
@@ -25,6 +28,7 @@ func000000000000048c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000042a:
 	subl	%esi, %edx
 	cmpl	$31, %edx
@@ -34,6 +38,7 @@ func000000000000042a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000541:
 	subl	%esi, %edx
 	cmpl	$15, %edx
@@ -43,6 +48,7 @@ func0000000000000541:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000004c1:
 	subl	%esi, %edx
 	cmpl	$3, %edx
@@ -52,6 +58,7 @@ func00000000000004c1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000426:
 	subl	%esi, %edx
 	cmpl	$8, %edx
@@ -61,6 +68,7 @@ func0000000000000426:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000058c:
 	subl	%esi, %edx
 	cmpl	$26, %edx
@@ -70,6 +78,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000546:
 	subl	%esi, %edx
 	cmpl	$8, %edx
@@ -79,6 +88,7 @@ func0000000000000546:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000424:
 	subl	%esi, %edx
 	cmpl	$31, %edx
@@ -88,6 +98,7 @@ func0000000000000424:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000004c6:
 	subl	%esi, %edx
 	cmpl	$3, %edx
@@ -97,6 +108,7 @@ func00000000000004c6:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000002421:
 	subl	%esi, %edx
 	xorl	$2, %edx
@@ -104,6 +116,7 @@ func0000000000002421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000021:
 	subl	%esi, %edx
 	xorl	$-3, %edx
@@ -111,6 +124,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000054a:
 	subl	%esi, %edx
 	cmpl	$2, %edx

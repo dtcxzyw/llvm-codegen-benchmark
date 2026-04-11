@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	andl	$8388607, %edx
 	xorl	%eax, %eax
@@ -7,6 +8,7 @@ func0000000000000013:
 	leaq	16(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001b:
 	andl	$268435455, %edx
 	leaq	16(%rdi), %rax

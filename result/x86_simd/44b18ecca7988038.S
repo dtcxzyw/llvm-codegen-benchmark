@@ -37,6 +37,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004cc:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1

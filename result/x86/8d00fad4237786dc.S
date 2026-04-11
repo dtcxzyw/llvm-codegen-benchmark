@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vmovss	.LCPI0_0(%rip), %xmm2
 	vminss	%xmm1, %xmm2, %xmm1
@@ -13,6 +14,7 @@ func0000000000000042:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vmovss	.LCPI1_0(%rip), %xmm2
 	vminss	%xmm1, %xmm2, %xmm1
@@ -25,6 +27,7 @@ func0000000000000044:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000045:
 	vmovss	.LCPI2_0(%rip), %xmm2
 	vminss	%xmm1, %xmm2, %xmm1

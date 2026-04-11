@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	leal	32(%rsi,%rdx), %eax
 	negl	%eax
@@ -7,6 +8,7 @@ func000000000000002c:
 	andq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002e:
 	addl	%edx, %esi
 	negb	%sil

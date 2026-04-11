@@ -59,6 +59,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -113,6 +114,7 @@ func000000000000001e:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001a:
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -185,6 +187,7 @@ func000000000000001a:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
@@ -256,6 +259,7 @@ func0000000000000016:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
@@ -327,6 +331,7 @@ func0000000000000010:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
@@ -398,6 +403,7 @@ func0000000000000000:
 	.byte	16
 	.byte	8
 	.byte	4
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000012:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI5_0(%rip), %xmm0, %xmm0

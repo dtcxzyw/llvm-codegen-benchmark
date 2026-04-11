@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	rorxl	$20, %edx, %eax
 	leal	(%rdi,%rsi), %ecx

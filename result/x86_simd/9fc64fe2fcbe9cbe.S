@@ -44,6 +44,7 @@
 	.byte	16
 	.byte	8
 	.byte	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpmovdb	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2

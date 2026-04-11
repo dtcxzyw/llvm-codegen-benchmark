@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	addq	$-5, %rdx
 	xorl	%eax, %eax
@@ -8,6 +9,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	incq	%rdx
 	xorl	%eax, %eax
@@ -17,6 +19,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	incq	%rdx
 	xorl	%eax, %eax
@@ -26,6 +29,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	incq	%rdx
 	testb	$1, %sil
@@ -35,6 +39,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	addq	$2147483647, %rdx
 	testb	$1, %sil
@@ -44,6 +49,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000064:
 	incq	%rdx
 	testb	$1, %sil
@@ -53,6 +59,7 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000061:
 	incq	%rdx
 	testb	$1, %sil
@@ -62,6 +69,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	incq	%rdx
 	xorl	%eax, %eax

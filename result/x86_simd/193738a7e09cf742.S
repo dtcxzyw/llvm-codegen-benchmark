@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovwb	%xmm2, %xmm2
 	vpternlogd	$236, .LCPI0_1(%rip){1to4}, %xmm1, %xmm2

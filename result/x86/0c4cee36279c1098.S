@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vcvtusi2sd	%esi, %xmm15, %xmm1
 	testl	%edi, %edi
@@ -8,6 +9,7 @@ func0000000000000001:
 	vmovapd	%xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vcvtsi2sd	%esi, %xmm15, %xmm1
 	testl	%edi, %edi

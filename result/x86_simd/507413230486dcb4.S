@@ -5,6 +5,7 @@
 	.zero	16,2
 .LCPI0_2:
 	.zero	4,254
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpaddb	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -15,6 +16,7 @@ func0000000000000001:
 	.zero	16,127
 .LCPI1_1:
 	.zero	4,127
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

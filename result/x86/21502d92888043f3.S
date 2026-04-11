@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000266:
 	shrq	$3, %rsi
 	imull	$-1227133513, %esi, %eax
@@ -7,6 +8,7 @@ func0000000000000266:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000226:
 	shrq	$3, %rsi
 	imull	$-1431655765, %esi, %eax
@@ -15,6 +17,7 @@ func0000000000000226:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000204:
 	shrq	$3, %rsi
 	imull	$954437177, %esi, %eax
@@ -23,6 +26,7 @@ func0000000000000204:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000244:
 	shrq	$2, %rsi
 	imull	$954437177, %esi, %eax
@@ -31,6 +35,7 @@ func0000000000000244:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000206:
 	shrq	$5, %rsi
 	imull	$-1431655765, %esi, %eax
@@ -39,6 +44,7 @@ func0000000000000206:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000061:
 	movq	%rsi, %rax
 	movabsq	$5675921253449092805, %rcx
@@ -52,6 +58,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000241:
 	shrq	$2, %rsi
 	imull	$-1431655765, %esi, %eax
@@ -60,6 +67,7 @@ func0000000000000241:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000221:
 	shrq	$4, %rsi
 	imull	$-1431655765, %esi, %eax
@@ -68,6 +76,7 @@ func0000000000000221:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000261:
 	shrq	$3, %rsi
 	imull	$1736263375, %esi, %eax
@@ -76,6 +85,7 @@ func0000000000000261:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000201:
 	shrq	$3, %rsi
 	imull	$-1108378657, %esi, %eax
@@ -84,6 +94,7 @@ func0000000000000201:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000066:
 	movabsq	$-5614226457215950491, %rcx
 	movq	%rsi, %rax
@@ -98,6 +109,7 @@ func0000000000000066:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000208:
 	shrq	$6, %rsi
 	imull	$-1431655765, %esi, %eax
@@ -106,6 +118,7 @@ func0000000000000208:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000022a:
 	shrq	$3, %rsi
 	imull	$-1431655765, %esi, %eax

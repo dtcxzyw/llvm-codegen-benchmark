@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000161:
 	imulq	$568, %rdx, %rax
 	leaq	360(%rsi,%rax), %rcx
@@ -7,6 +8,7 @@ func0000000000000161:
 	cmovnoq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000101:
 	shlq	$5, %rdx
 	leaq	-32(%rsi,%rdx), %rcx
@@ -15,6 +17,7 @@ func0000000000000101:
 	cmovnoq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	leaq	64(%rsi,%rdx), %rcx
 	xorl	%eax, %eax

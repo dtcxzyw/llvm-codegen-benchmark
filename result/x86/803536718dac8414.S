@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	movq	%rsi, %rax
 	negq	%rax
@@ -7,6 +8,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	movq	%rsi, %rax
 	negq	%rax
@@ -15,6 +17,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000029:
 	movq	%rsi, %rax
 	negq	%rax
@@ -23,6 +26,7 @@ func0000000000000029:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000039:
 	movq	%rsi, %rax
 	negq	%rax
@@ -31,6 +35,7 @@ func0000000000000039:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002b:
 	movq	%rsi, %rax
 	negq	%rax
@@ -39,6 +44,7 @@ func000000000000002b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000074:
 	movq	%rsi, %rax
 	negq	%rax
@@ -47,6 +53,7 @@ func0000000000000074:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000078:
 	movq	%rsi, %rax
 	negq	%rax
@@ -55,6 +62,7 @@ func0000000000000078:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000028:
 	movq	%rsi, %rax
 	negq	%rax
@@ -63,6 +71,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000024:
 	movq	%rsi, %rax
 	negq	%rax
@@ -71,6 +80,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000034:
 	movq	%rsi, %rax
 	negq	%rax
@@ -79,6 +89,7 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000066:
 	movq	%rsi, %rax
 	negq	%rax
@@ -87,6 +98,7 @@ func0000000000000066:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000065:
 	movq	%rsi, %rax
 	negq	%rax
@@ -95,6 +107,7 @@ func0000000000000065:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000026:
 	movq	%rsi, %rax
 	negq	%rax
@@ -103,6 +116,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000006:
 	movq	%rsi, %rax
 	negq	%rax
@@ -111,6 +125,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000038:
 	movq	%rsi, %rax
 	negq	%rax
@@ -119,6 +134,7 @@ func0000000000000038:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000002a:
 	movq	%rsi, %rax
 	negq	%rax
@@ -127,6 +143,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000021:
 	movq	%rsi, %rax
 	negq	%rax
@@ -135,6 +152,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000006a:
 	movq	%rsi, %rax
 	negq	%rax

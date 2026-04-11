@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000318c:
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0
 	vptestmw	%ymm0, %ymm0, %k0
@@ -25,6 +26,7 @@ func000000000000318c:
 	.short	32767
 .LCPI1_1:
 	.short	32767
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000421:
 	vpbroadcastw	.LCPI1_1(%rip), %ymm3
 	vpcmpeqw	%ymm3, %ymm2, %k0
@@ -87,6 +89,7 @@ func0000000000000421:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001084:
 	vpcmpltuw	.LCPI2_0(%rip), %ymm2, %k0
 	vpcmpltuw	.LCPI2_1(%rip), %ymm1, %k1
@@ -114,6 +117,7 @@ func0000000000001084:
 	.short	32
 	.short	32
 	.short	32
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000002108:
 	vpmaxuw	%ymm2, %ymm1, %ymm1
 	vpmaxuw	%ymm0, %ymm1, %ymm0
@@ -122,6 +126,7 @@ func0000000000002108:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000581:
 	vptestnmw	%ymm2, %ymm2, %k0
 	vptestmw	%ymm1, %ymm1, %k1

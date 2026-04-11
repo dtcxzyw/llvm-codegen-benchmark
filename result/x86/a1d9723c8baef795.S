@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vcvtusi2ss	%rsi, %xmm15, %xmm1
 	vcvtusi2ss	%rdi, %xmm15, %xmm2
@@ -7,6 +8,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vcvtusi2ss	%rsi, %xmm15, %xmm1
 	vcvtusi2ss	%rdi, %xmm15, %xmm2
@@ -15,6 +17,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vcvtusi2ss	%rsi, %xmm15, %xmm1
 	vcvtusi2ss	%rdi, %xmm15, %xmm2
@@ -23,6 +26,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vcvtusi2ss	%rsi, %xmm15, %xmm1
 	vcvtusi2ss	%rdi, %xmm15, %xmm2
@@ -31,6 +35,7 @@ func0000000000000003:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vcvtusi2ss	%rsi, %xmm15, %xmm1
 	vcvtusi2ss	%rdi, %xmm15, %xmm2
@@ -39,6 +44,7 @@ func000000000000000a:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	vcvtusi2ss	%rsi, %xmm15, %xmm1
 	vcvtusi2ss	%rdi, %xmm15, %xmm2

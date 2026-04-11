@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	xorb	$1, %dl
 	orb	%sil, %dl
@@ -7,6 +8,7 @@ func0000000000000006:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	xorb	$1, %dl
 	orb	%sil, %dl
@@ -15,6 +17,7 @@ func000000000000000a:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	notb	%dl
 	orb	%dil, %dl
@@ -23,6 +26,7 @@ func0000000000000002:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	xorb	$1, %dl
 	orb	%sil, %dl

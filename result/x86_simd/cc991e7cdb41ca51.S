@@ -38,6 +38,7 @@
 .LCPI0_3:
 	.short	65343
 	.short	65343
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpor	%ymm1, %ymm0, %ymm1
 	vpbroadcastw	.LCPI0_2(%rip), %ymm0
@@ -83,6 +84,7 @@ func0000000000000002:
 .LCPI1_3:
 	.short	65508
 	.short	65508
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpor	%ymm1, %ymm0, %ymm1
 	vpbroadcastw	.LCPI1_2(%rip), %ymm0

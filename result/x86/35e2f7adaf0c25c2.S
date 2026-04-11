@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	xorl	%eax, %eax
 	subq	$4, %rdi
@@ -6,6 +7,7 @@ func0000000000000000:
 	andl	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	cmpq	$1, %rdi
 	adcq	$-1, %rdi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
@@ -7,6 +8,7 @@ func0000000000000004:
 	vminpd	%zmm1, %zmm3, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
@@ -15,6 +17,7 @@ func0000000000000002:
 	vmaxpd	%zmm1, %zmm3, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2

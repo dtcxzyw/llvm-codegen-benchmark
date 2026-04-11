@@ -17,11 +17,13 @@
 	.byte	13
 	.byte	7
 	.byte	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovsxbd	.LCPI0_1(%rip), %ymm2
 	vpermt2d	%ymm1, %ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsrlq	$33, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2

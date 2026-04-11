@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpgtq	%ymm1, %ymm0, %ymm0
@@ -6,6 +7,7 @@ func000000000000000a:
 
 .LCPI1_0:
 	.quad	20
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %ymm0

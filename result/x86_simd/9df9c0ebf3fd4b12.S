@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000161:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vmovdqa32	%xmm1, %xmm2 {%k1}
@@ -10,6 +11,7 @@ func0000000000000161:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000a61:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%xmm3, %xmm2, %k1
@@ -24,6 +26,7 @@ func0000000000000a61:
 
 .LCPI2_0:
 	.long	4294967063
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e1:
 	vpcmpeqd	.LCPI2_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa32	%xmm1, %xmm2 {%k1}
@@ -35,6 +38,7 @@ func00000000000001e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000006e1:
 	vpmovd2m	%xmm2, %k1
 	vmovdqa32	%xmm1, %xmm2 {%k1}

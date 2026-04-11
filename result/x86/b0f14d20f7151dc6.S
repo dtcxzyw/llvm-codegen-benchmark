@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	orl	%edx, %esi
 	testq	%rdi, %rdi
@@ -6,6 +7,7 @@ func0000000000000001:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	testq	%rdx, %rdx
 	setne	%al
@@ -13,6 +15,7 @@ func0000000000000018:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	testq	%rdx, %rdx
 	sete	%al
@@ -20,6 +23,7 @@ func0000000000000002:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	testq	%rdx, %rdx
 	sets	%al
@@ -27,6 +31,7 @@ func000000000000000c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	orl	%edx, %esi
 	testq	%rdi, %rdi
@@ -34,6 +39,7 @@ func000000000000000a:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	orl	%edx, %esi
 	cmpq	$-5, %rdi
@@ -41,6 +47,7 @@ func0000000000000004:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	orl	%edx, %esi
 	testq	%rdi, %rdi
@@ -48,6 +55,7 @@ func0000000000000006:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	cmpq	$8, %rdx
 	setb	%al
@@ -55,6 +63,7 @@ func0000000000000008:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	testq	%rdx, %rdx
 	setns	%al
@@ -62,6 +71,7 @@ func0000000000000014:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000010:
 	cmpq	$2, %rdx
 	setae	%al

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	cmpb	$97, %dil
 	movl	$169, %ecx
@@ -7,6 +8,7 @@ func0000000000000028:
 	addb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000063:
 	cmpb	$10, %dil
 	movl	$55, %ecx
@@ -15,6 +17,7 @@ func0000000000000063:
 	addb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	cmpb	$-83, %dil
 	setne	%al
@@ -23,6 +26,7 @@ func0000000000000004:
 	incb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	cmpb	$10, %dil
 	movl	$48, %ecx
@@ -31,6 +35,7 @@ func0000000000000018:
 	addb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000053:
 	cmpb	$10, %dil
 	movl	$48, %ecx
@@ -39,6 +44,7 @@ func0000000000000053:
 	addb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000010:
 	cmpb	$-111, %dil
 	movl	$207, %ecx
@@ -47,6 +53,7 @@ func0000000000000010:
 	addb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000051:
 	cmpb	$-32, %dil
 	setb	%al

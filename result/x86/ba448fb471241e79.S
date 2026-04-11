@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000027:
 	imull	$43691, %edi, %eax
 	shrl	$17, %eax
 	leal	(%rax,%rax,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000037:
 	imull	$12137, %edi, %eax
 	shrl	$16, %eax
@@ -18,6 +20,7 @@ func0000000000000037:
 	leal	(%rax,%rax,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	movzwl	%di, %eax
 	imull	$43691, %eax, %eax

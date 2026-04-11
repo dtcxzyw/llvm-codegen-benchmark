@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	4611686018427387903
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	vpcmpleuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -10,6 +11,7 @@ func0000000000000048:
 
 .LCPI1_0:
 	.quad	2305843009213693951
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpcmpleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -19,6 +21,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.quad	8192
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vptestmq	%ymm0, %ymm0, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1

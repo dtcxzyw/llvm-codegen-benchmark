@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	subl	%edi, %esi
 	leal	11(%rsi), %edx
@@ -6,6 +7,7 @@ func0000000000000008:
 	mulxq	%rax, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	subl	%edi, %esi
 	leal	-18(%rsi), %edx
@@ -13,6 +15,7 @@ func000000000000000a:
 	mulxq	%rax, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	subl	%edi, %esi
 	leal	10(%rsi), %ecx
@@ -21,6 +24,7 @@ func0000000000000014:
 	shrq	$35, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	subl	%edi, %esi
 	leal	12(%rsi), %ecx
@@ -29,6 +33,7 @@ func0000000000000010:
 	shrq	$35, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	subl	%edi, %esi
 	leal	-265(%rsi), %ecx
@@ -37,6 +42,7 @@ func0000000000000000:
 	shrq	$39, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001a:
 	subl	%edi, %esi
 	leal	5(%rsi), %ecx

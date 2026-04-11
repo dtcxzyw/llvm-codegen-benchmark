@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsubw	%ymm0, %ymm1, %ymm0
@@ -23,6 +24,7 @@ func000000000000000c:
 	.short	255
 	.short	255
 	.short	255
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsubw	%ymm0, %ymm1, %ymm0

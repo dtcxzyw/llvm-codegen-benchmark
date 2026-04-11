@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000408:
 	leaq	-50(%rsi), %rax
 	cmpq	$51, %rsi
@@ -8,6 +9,7 @@ func0000000000000408:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001c68:
 	movq	%rsi, %rax
 	subq	$65521, %rax
@@ -17,6 +19,7 @@ func0000000000001c68:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000132a:
 	leaq	1000000(%rsi), %rax
 	testq	%rsi, %rsi
@@ -26,6 +29,7 @@ func000000000000132a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000001338:
 	leaq	146097(%rsi), %rax
 	testq	%rsi, %rsi

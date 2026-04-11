@@ -5,6 +5,7 @@
 	.long	0x3e22f983
 .LCPI0_2:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vmulps	.LCPI0_1(%rip){1to16}, %zmm0, %zmm0
@@ -18,6 +19,7 @@ func0000000000000004:
 	.long	0x3f000000
 .LCPI1_2:
 	.long	0x3c23d70a
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vaddps	.LCPI1_0(%rip){1to16}, %zmm0, %zmm0
 	vmulps	.LCPI1_1(%rip){1to16}, %zmm0, %zmm0

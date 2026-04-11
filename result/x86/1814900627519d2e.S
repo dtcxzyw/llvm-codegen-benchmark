@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x3a1b900000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm0
@@ -12,6 +13,7 @@ func0000000000000004:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
@@ -23,6 +25,7 @@ func000000000000000e:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
@@ -34,6 +37,7 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
@@ -44,6 +48,7 @@ func000000000000000c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000012:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax

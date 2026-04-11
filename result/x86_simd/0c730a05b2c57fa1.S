@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpmovzxbw	%xmm2, %ymm2
 	vpsllw	$2, %ymm2, %ymm2
@@ -6,6 +7,7 @@ func000000000000001f:
 	vpternlogq	$254, %ymm1, %ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpmovzxbw	%xmm2, %ymm2
 	vpsllw	$3, %ymm2, %ymm2
@@ -13,6 +15,7 @@ func000000000000000f:
 	vpternlogq	$254, %ymm1, %ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
 	vpmovzxbw	%xmm2, %ymm2
 	vpsllw	$11, %ymm2, %ymm2
@@ -20,6 +23,7 @@ func000000000000003f:
 	vpternlogq	$254, %ymm1, %ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003b:
 	vpmovzxbw	%xmm2, %ymm2
 	vpsllw	$15, %ymm2, %ymm2
@@ -60,12 +64,14 @@ func000000000000003b:
 	.byte	46
 	.byte	15
 	.byte	47
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vmovdqa	.LCPI4_0(%rip), %ymm3
 	vpermi2b	%ymm2, %ymm1, %ymm3
 	vpor	%ymm3, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002f:
 	vpmovzxbw	%xmm2, %ymm2
 	vpsllw	$12, %ymm2, %ymm2
@@ -106,12 +112,14 @@ func000000000000002f:
 	.byte	46
 	.byte	15
 	.byte	47
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002e:
 	vmovdqa	.LCPI6_0(%rip), %ymm3
 	vpermi2b	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	vpmovzxbw	%xmm2, %ymm2
 	vpsllw	$12, %ymm2, %ymm2
@@ -152,6 +160,7 @@ func0000000000000002:
 	.byte	46
 	.byte	15
 	.byte	47
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000b:
 	vmovdqa	.LCPI8_0(%rip), %ymm3
 	vpermi2b	%ymm2, %ymm1, %ymm3

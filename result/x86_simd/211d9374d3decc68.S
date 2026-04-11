@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$53, %ymm0, %ymm0
@@ -49,6 +50,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.quad	17179869183
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0

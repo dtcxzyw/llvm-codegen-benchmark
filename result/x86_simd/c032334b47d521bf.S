@@ -25,6 +25,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vgf2p8affineqb	$128, .LCPI0_1(%rip){1to2}, %xmm0, %xmm0
 	retq
@@ -57,6 +58,7 @@ func0000000000000007:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm0, %xmm0
 	vpaddb	.LCPI1_1(%rip), %xmm0, %xmm0
@@ -90,6 +92,7 @@ func000000000000000c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm0, %xmm0
 	vpaddb	.LCPI2_1(%rip), %xmm0, %xmm0
@@ -123,6 +126,7 @@ func0000000000000003:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vgf2p8affineqb	$0, .LCPI3_2(%rip){1to2}, %xmm0, %xmm0
 	vpaddb	.LCPI3_1(%rip), %xmm0, %xmm0
@@ -154,12 +158,14 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vgf2p8affineqb	$128, .LCPI4_1(%rip){1to2}, %xmm0, %xmm0
 	retq
 
 .LCPI5_0:
 	.zero	16,8
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vpaddb	%xmm0, %xmm0, %xmm0
 	vpaddb	%xmm0, %xmm0, %xmm0
@@ -194,6 +200,7 @@ func0000000000000004:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000f:
 	vgf2p8affineqb	$0, .LCPI6_2(%rip){1to2}, %xmm0, %xmm0
 	vpaddb	.LCPI6_1(%rip), %xmm0, %xmm0

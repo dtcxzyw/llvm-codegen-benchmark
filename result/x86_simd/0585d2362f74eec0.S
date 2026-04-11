@@ -5,6 +5,7 @@
 	.long	2
 .LCPI0_2:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1
@@ -17,6 +18,7 @@ func0000000000000002:
 	.quad	64
 .LCPI1_1:
 	.long	1040187392
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vptestmq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0 {%k1}

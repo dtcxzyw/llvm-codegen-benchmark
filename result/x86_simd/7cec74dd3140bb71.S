@@ -21,6 +21,7 @@
 .LCPI0_2:
 	.short	10
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000055:
 	vpmovsxbd	%xmm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -50,6 +51,7 @@ func0000000000000055:
 .LCPI1_2:
 	.short	10
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpmovsxbd	%xmm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0

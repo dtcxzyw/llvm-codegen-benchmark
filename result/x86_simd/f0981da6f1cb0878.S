@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x3ee4f8b588e368f1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -21,6 +22,7 @@ func0000000000000002:
 	.quad	9223372036854775807
 .LCPI1_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
@@ -39,6 +41,7 @@ func0000000000000008:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -57,6 +60,7 @@ func0000000000000005:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001b:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -75,6 +79,7 @@ func000000000000001b:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x3e7ad7f29abcaf48
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -93,6 +98,7 @@ func0000000000000014:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000b:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -111,6 +117,7 @@ func000000000000000b:
 	.quad	0x7fffffffffffffff
 .LCPI6_1:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -129,6 +136,7 @@ func0000000000000004:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x3ef0001000100010
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000d:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -147,6 +155,7 @@ func000000000000000d:
 	.quad	0x7fffffffffffffff
 .LCPI8_1:
 	.quad	0x3eb0c6f7a0000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000012:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -165,6 +174,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI9_1:
 	.quad	0x3ee4f8b588e368f1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000003:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -183,6 +193,7 @@ func0000000000000003:
 	.quad	0x7fffffffffffffff
 .LCPI10_1:
 	.quad	0x3c9cd2b297d889bc
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000015:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -201,6 +212,7 @@ func0000000000000015:
 	.quad	0x7fffffffffffffff
 .LCPI11_1:
 	.quad	0x3c9cd2b297d889bc
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000a:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -219,6 +231,7 @@ func000000000000000a:
 	.quad	0x7fffffffffffffff
 .LCPI12_1:
 	.quad	0x4076800000000000
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000013:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -235,6 +248,7 @@ func0000000000000013:
 
 .LCPI13_0:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000019:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
@@ -250,6 +264,7 @@ func0000000000000019:
 
 .LCPI14_0:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000009:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
@@ -267,6 +282,7 @@ func0000000000000009:
 	.quad	0x7fffffffffffffff
 .LCPI15_1:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000018:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -285,6 +301,7 @@ func0000000000000018:
 	.quad	9223372036854775807
 .LCPI16_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000007:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
@@ -301,6 +318,7 @@ func0000000000000007:
 
 .LCPI17_0:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000006:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
@@ -318,6 +336,7 @@ func0000000000000006:
 	.quad	0x7fffffffffffffff
 .LCPI18_1:
 	.quad	0x3ddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end18, nop
 func000000000000000c:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1

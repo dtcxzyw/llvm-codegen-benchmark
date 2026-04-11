@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	65520
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ea:
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
@@ -10,6 +11,7 @@ func00000000000000ea:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e8:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -18,6 +20,7 @@ func00000000000000e8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f8:
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
@@ -30,6 +33,7 @@ func00000000000000f8:
 
 .LCPI3_0:
 	.long	65536
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000fa:
 	vpslld	$10, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0

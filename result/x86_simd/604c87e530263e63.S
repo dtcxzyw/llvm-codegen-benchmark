@@ -12,6 +12,7 @@
 	.short	0
 	.short	9
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpmovqd	%ymm0, %xmm0
 	vpord	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -34,6 +35,7 @@ func0000000000000007:
 	.short	0
 	.short	9
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	vpmovqd	%ymm0, %xmm0
 	vpord	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
@@ -56,6 +58,7 @@ func0000000000000017:
 	.short	0
 	.short	9
 	.short	0
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpmovqd	%ymm0, %xmm0
 	vpord	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0

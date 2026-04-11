@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000284:
 	blsrl	%edi, %eax
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000284:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001284:
 	leal	-1(%rdi), %eax
 	testl	%eax, %edi

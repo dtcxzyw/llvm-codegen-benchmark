@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	(%rdi,%rsi,8), %eax
 	shrl	$6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001e:
 	shlq	$12, %rsi
 	leaq	(%rsi,%rdi), %rax
@@ -11,35 +13,41 @@ func000000000000001e:
 	andl	$2047, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	shrq	$22, %rdi
 	leal	(%rdi,%rsi), %eax
 	andl	$2047, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	shll	$7, %esi
 	leal	(%rdi,%rsi), %eax
 	shrl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	leal	(%rdi,%rsi,2), %eax
 	shrl	$12, %eax
 	movzbl	%al, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	leal	(%rdi,%rsi,4), %eax
 	shrl	$12, %eax
 	movzbl	%al, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000016:
 	leal	(%rdi,%rsi,2), %eax
 	shrl	$6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	shrq	$3, %rdi
 	leaq	(%rdi,%rsi), %rcx
@@ -47,6 +55,7 @@ func000000000000000a:
 	andq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000001c:
 	shll	$4, %esi
 	leal	(%rdi,%rsi), %eax

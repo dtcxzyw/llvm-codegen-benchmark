@@ -6,6 +6,7 @@
 	.byte	0
 .LCPI0_1:
 	.long	18
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001f8:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpand	%ymm3, %ymm2, %ymm2

@@ -42,6 +42,7 @@
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovsxbw	%xmm0, %ymm0
 	vpmullw	.LCPI0_0(%rip), %ymm0, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000048c:
 	andb	$1, %dil
 	xorl	%eax, %eax
@@ -13,6 +14,7 @@ func000000000000048c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008c:
 	xorl	%eax, %eax
 	testb	$1, %dil

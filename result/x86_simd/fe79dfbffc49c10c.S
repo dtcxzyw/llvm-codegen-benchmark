@@ -37,6 +37,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	49
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
@@ -83,6 +84,7 @@ func0000000000000061:
 	.zero	1
 .LCPI1_3:
 	.byte	49
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
@@ -129,6 +131,7 @@ func0000000000000041:
 	.zero	1
 .LCPI2_3:
 	.byte	49
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000004c:
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm0, %k1

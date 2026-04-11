@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006a4:
 	andl	$7, %esi
 	shll	$18, %esi

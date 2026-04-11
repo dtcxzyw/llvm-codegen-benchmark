@@ -10,6 +10,7 @@
 	.short	26215
 .LCPI0_1:
 	.long	4294966496
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpmulhw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpsrlw	$15, %xmm1, %xmm2

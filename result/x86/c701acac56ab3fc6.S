@@ -1,34 +1,40 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a8:
 	leal	1(%rdx,%rsi), %eax
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001b4:
 	leal	1(%rdx,%rsi), %eax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e8:
 	leal	1(%rdx,%rsi), %eax
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001f4:
 	leal	1(%rdx,%rsi), %eax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e4:
 	leal	1(%rdx,%rsi), %eax
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	leaq	262143(%rdx,%rsi), %rax
 	andq	$-262144, %rax
@@ -36,6 +42,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000181:
 	leaq	15(%rdx,%rsi), %rax
 	andq	$-16, %rax
@@ -43,6 +50,7 @@ func0000000000000181:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	leaq	-4096(%rdx,%rsi), %rax
 	andq	$-1073741824, %rax

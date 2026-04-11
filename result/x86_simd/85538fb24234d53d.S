@@ -44,6 +44,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000021e:
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
@@ -102,6 +103,7 @@ func000000000000021e:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000200:
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1

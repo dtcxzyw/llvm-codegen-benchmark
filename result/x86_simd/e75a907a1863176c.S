@@ -7,6 +7,7 @@
 	.zero	4,68
 .LCPI0_3:
 	.zero	4,51
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpternlogd	$248, .LCPI0_2(%rip){1to8}, %ymm1, %ymm0
 	vpsrlw	$2, %ymm0, %ymm0

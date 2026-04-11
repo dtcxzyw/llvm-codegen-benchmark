@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vsubss	%xmm1, %xmm2, %xmm2
 	vsubss	%xmm1, %xmm0, %xmm0
@@ -9,6 +10,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vsubss	%xmm1, %xmm2, %xmm2
 	vsubss	%xmm1, %xmm0, %xmm0

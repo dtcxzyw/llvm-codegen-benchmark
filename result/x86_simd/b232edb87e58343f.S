@@ -33,6 +33,7 @@
 	.short	40
 	.short	40
 	.short	40
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -76,6 +77,7 @@ func0000000000000003:
 	.short	40
 	.short	40
 	.short	40
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

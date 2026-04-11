@@ -61,6 +61,7 @@
 	.byte	8
 .LCPI0_4:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000059:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

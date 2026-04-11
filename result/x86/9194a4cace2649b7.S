@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e6:
 	leal	(%rsi,%rsi,2), %eax
 	cltq
@@ -7,6 +8,7 @@ func00000000000000e6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	leal	(%rsi,%rsi,2), %eax
 	cltq
@@ -15,6 +17,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	imull	$1000, %esi, %eax
 	cltq
@@ -23,6 +26,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a6:
 	addl	%esi, %esi
 	leal	(%rsi,%rsi,4), %eax

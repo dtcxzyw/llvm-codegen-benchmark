@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000006f:
 	movzwl	%dx, %eax
 	addl	%edi, %eax
@@ -6,6 +7,7 @@ func000000000000006f:
 	leal	46(%rcx,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000060:
 	movzwl	%dx, %eax
 	addl	%edi, %eax
@@ -13,6 +15,7 @@ func0000000000000060:
 	leal	40(%rcx,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000025:
 	movzwl	%dx, %eax
 	addl	%edi, %eax

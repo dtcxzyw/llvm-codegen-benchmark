@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	cmpw	$1, %dx
 	sete	%al
@@ -6,6 +7,7 @@ func0000000000000001:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	cmpw	$3, %dx
 	setb	%al

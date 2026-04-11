@@ -50,6 +50,7 @@
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000210:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -113,6 +114,7 @@ func0000000000000210:
 	.short	15104
 	.short	15104
 	.short	15104
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000204:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	shrq	$32, %rsi
 	xorl	%eax, %eax
@@ -6,6 +7,7 @@ func0000000000000002:
 	cmovnel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	shrq	$48, %rsi
 	xorl	%eax, %eax
@@ -13,6 +15,7 @@ func0000000000000003:
 	cmovnel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	shrq	$2, %rsi
 	testb	$1, %dil
@@ -20,6 +23,7 @@ func0000000000000000:
 	cmovnel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	andb	$1, %dil
 	shrq	$5, %rsi
@@ -29,6 +33,7 @@ func0000000000000004:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	movq	%rsi, %rax
 	shrq	$5, %rax

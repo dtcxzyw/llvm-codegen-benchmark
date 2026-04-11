@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	rolw	$8, %di
 	shll	$16, %edi
 	leaq	-2147418112(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	rolw	$8, %di
 	movzwl	%di, %eax

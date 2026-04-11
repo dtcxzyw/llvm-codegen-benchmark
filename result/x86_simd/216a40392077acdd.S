@@ -17,6 +17,7 @@
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpmovsxbd	.LCPI0_1(%rip), %ymm2
@@ -25,6 +26,7 @@ func000000000000000d:
 
 .LCPI1_0:
 	.quad	4095
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsllq	$12, %ymm1, %ymm1
@@ -33,6 +35,7 @@ func0000000000000005:
 
 .LCPI2_0:
 	.quad	524280
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsllq	$19, %ymm1, %ymm1
@@ -41,6 +44,7 @@ func000000000000000f:
 
 .LCPI3_0:
 	.quad	4194303
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000009:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsllq	$22, %ymm1, %ymm1
@@ -49,6 +53,7 @@ func0000000000000009:
 
 .LCPI4_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm1, %ymm1
@@ -57,6 +62,7 @@ func0000000000000007:
 
 .LCPI5_0:
 	.quad	31
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000e:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsllq	$5, %ymm1, %ymm1

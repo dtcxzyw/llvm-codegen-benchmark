@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	addq	$15, %rsi
 	andq	$-16, %rsi
@@ -8,6 +9,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	addq	$15, %rsi
 	andq	$-16, %rsi

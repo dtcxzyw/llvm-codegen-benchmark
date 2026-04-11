@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -7,6 +8,7 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -15,6 +17,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -23,6 +26,7 @@ func0000000000000026:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -31,6 +35,7 @@ func000000000000002a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -39,6 +44,7 @@ func0000000000000006:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -47,6 +53,7 @@ func000000000000000a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002b:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -55,6 +62,7 @@ func000000000000002b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	vcvttpd2dq	%zmm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1

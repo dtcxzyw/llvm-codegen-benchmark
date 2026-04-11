@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vpminuw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -27,6 +28,7 @@ func00000000000000e1:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vpminuw	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1

@@ -5,6 +5,7 @@
 	.long	2
 .LCPI0_2:
 	.long	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vandpd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpltpd	%zmm0, %zmm1, %k1
@@ -16,6 +17,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vandpd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm1
 	vcmplepd	%zmm0, %zmm1, %k1
@@ -28,6 +30,7 @@ func0000000000000015:
 	.long	3
 .LCPI2_2:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001a:
 	vandpd	.LCPI2_0(%rip){1to8}, %zmm1, %zmm1
 	vcmplepd	%zmm0, %zmm1, %k1
@@ -41,6 +44,7 @@ func000000000000001a:
 	.long	1
 .LCPI3_2:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001b:
 	vandpd	.LCPI3_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpnltpd	%zmm1, %zmm0, %k1
@@ -52,6 +56,7 @@ func000000000000001b:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vandpd	.LCPI4_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpltpd	%zmm1, %zmm0, %k1

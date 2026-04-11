@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestmq	%ymm1, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -6,6 +7,7 @@ func0000000000000001:
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpsraq	$63, %ymm1, %ymm1
 	vpandn	%ymm0, %ymm1, %ymm0
@@ -17,6 +19,7 @@ func0000000000000006:
 	.quad	2305843009213693951
 .LCPI2_1:
 	.quad	9223372036854775806
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpcmpleuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vbroadcastsd	.LCPI2_1(%rip), %ymm1
@@ -28,6 +31,7 @@ func0000000000000008:
 	.quad	1
 .LCPI3_1:
 	.quad	12
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vandpd	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}
@@ -37,6 +41,7 @@ func0000000000000014:
 	.quad	2048
 .LCPI4_1:
 	.quad	4088
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2
 	vpcmpltuq	%ymm2, %ymm1, %k1

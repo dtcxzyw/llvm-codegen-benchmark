@@ -39,6 +39,7 @@
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm2
 	vpcmpeqd	%ymm1, %ymm2, %k1

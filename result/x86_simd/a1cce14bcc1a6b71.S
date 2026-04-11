@@ -3,6 +3,7 @@
 	.quad	19
 .LCPI0_1:
 	.quad	504
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	vpaddb	%xmm0, %xmm0, %xmm0
 	vpaddb	%xmm0, %xmm0, %xmm0

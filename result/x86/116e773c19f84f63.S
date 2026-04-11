@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	addl	$1073741822, %edx
 	imull	%esi, %edx
@@ -7,6 +8,7 @@ func0000000000000002:
 	leaq	(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	incl	%edx
 	imull	%esi, %edx
@@ -15,6 +17,7 @@ func0000000000000006:
 	leaq	-16(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	decl	%edx
 	imull	%esi, %edx

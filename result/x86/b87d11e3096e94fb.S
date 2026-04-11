@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	movq	%rdx, %rax
 	movabsq	$2361183241434822607, %rcx
@@ -12,6 +13,7 @@ func0000000000000014:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000052:
 	sarq	$3, %rdx
 	movabsq	$7905747460161236407, %rax

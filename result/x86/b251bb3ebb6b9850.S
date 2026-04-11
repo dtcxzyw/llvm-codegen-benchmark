@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -7,11 +8,13 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	orq	%rsi, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -20,6 +23,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -28,6 +32,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000038:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -36,6 +41,7 @@ func0000000000000038:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000194:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -44,6 +50,7 @@ func0000000000000194:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000186:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -52,6 +59,7 @@ func0000000000000186:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000018a:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -60,6 +68,7 @@ func000000000000018a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -68,6 +77,7 @@ func000000000000002a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000024:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -76,6 +86,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000188:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -84,6 +95,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000184:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -92,6 +104,7 @@ func0000000000000184:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000028:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -100,6 +113,7 @@ func0000000000000028:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000034:
 	testq	%rsi, %rsi
 	sete	%cl

@@ -5,6 +5,7 @@
 	.quad	26
 .LCPI0_2:
 	.quad	30
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpminsq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vpmullq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
@@ -17,6 +18,7 @@ func0000000000000000:
 	.quad	26
 .LCPI1_2:
 	.quad	30
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpminsq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpmullq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0

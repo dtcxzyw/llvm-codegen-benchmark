@@ -5,6 +5,7 @@
 	.long	45
 .LCPI0_2:
 	.long	49
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000101:
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
@@ -20,6 +21,7 @@ func0000000000000101:
 	.long	127
 .LCPI1_2:
 	.long	19
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	vpcmpltud	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
@@ -33,6 +35,7 @@ func0000000000000081:
 	.long	2
 .LCPI2_1:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000281:
 	vpcmpnltud	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2 {%k1} {z}
@@ -45,6 +48,7 @@ func0000000000000281:
 	.long	2
 .LCPI3_1:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000301:
 	vpcmpleud	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2 {%k1} {z}

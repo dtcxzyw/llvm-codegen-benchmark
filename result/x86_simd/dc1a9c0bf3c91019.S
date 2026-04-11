@@ -5,6 +5,7 @@
 	.long	4096
 .LCPI0_2:
 	.long	8192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
@@ -16,6 +17,7 @@ func0000000000000043:
 	.long	33554432
 .LCPI1_1:
 	.long	75497472
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$21, %xmm1, %xmm1
@@ -30,6 +32,7 @@ func0000000000000002:
 	.long	136104
 .LCPI2_2:
 	.long	35924
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vptestmq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
@@ -43,6 +46,7 @@ func0000000000000042:
 	.long	160
 .LCPI3_2:
 	.long	67596
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vptestmq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI3_1(%rip){1to4}, %xmm0, %xmm0 {%k1}

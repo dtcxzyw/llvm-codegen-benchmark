@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	incb	%sil
 	movl	$8, %eax
@@ -7,6 +8,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	decb	%sil
 	movl	$1, %eax
@@ -15,6 +17,7 @@ func00000000000000c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c8:
 	incb	%sil
 	shrxq	%rsi, %rdi, %rax
@@ -22,6 +25,7 @@ func00000000000000c8:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ca:
 	decb	%sil
 	movl	$1, %eax

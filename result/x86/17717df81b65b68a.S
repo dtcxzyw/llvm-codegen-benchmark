@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000401:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
@@ -11,6 +12,7 @@ func0000000000000401:
 
 .LCPI1_0:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000461:
 	xorl	%eax, %eax
 	vucomisd	.LCPI1_0(%rip), %xmm0
@@ -19,6 +21,7 @@ func0000000000000461:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000761:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpneqsd	%xmm1, %xmm0, %k0
@@ -29,6 +32,7 @@ func0000000000000761:
 
 .LCPI3_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000042a:
 	xorl	%eax, %eax
 	vucomisd	.LCPI3_0(%rip), %xmm0
@@ -37,6 +41,7 @@ func000000000000042a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000661:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax

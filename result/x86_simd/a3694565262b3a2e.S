@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000688:
 	vbroadcastss	.LCPI0_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -19,6 +20,7 @@ func0000000000000688:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000006aa:
 	vbroadcastss	.LCPI1_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -35,6 +37,7 @@ func00000000000006aa:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	vbroadcastss	.LCPI2_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -49,6 +52,7 @@ func0000000000000088:
 
 .LCPI3_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000132:
 	vpaddd	%zmm1, %zmm1, %zmm1
 	vpaddd	%zmm0, %zmm0, %zmm0
@@ -62,6 +66,7 @@ func0000000000000132:
 	.long	2147483647
 .LCPI4_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000110:
 	vpbroadcastd	.LCPI4_0(%rip), %zmm2
 	vpandd	%zmm2, %zmm1, %zmm1
@@ -78,6 +83,7 @@ func0000000000000110:
 	.long	2147483647
 .LCPI5_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000f0:
 	vpbroadcastd	.LCPI5_0(%rip), %zmm2
 	vpandd	%zmm2, %zmm1, %zmm1
@@ -94,6 +100,7 @@ func00000000000000f0:
 	.long	0x7fffffff
 .LCPI6_1:
 	.long	0x36800000
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000aa:
 	vbroadcastss	.LCPI6_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -110,6 +117,7 @@ func00000000000000aa:
 	.long	2147483647
 .LCPI7_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000710:
 	vpbroadcastd	.LCPI7_0(%rip), %zmm2
 	vpandd	%zmm2, %zmm1, %zmm1
@@ -126,6 +134,7 @@ func0000000000000710:
 	.long	0x7fffffff
 .LCPI8_1:
 	.long	0x42c80000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000198:
 	vbroadcastss	.LCPI8_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1

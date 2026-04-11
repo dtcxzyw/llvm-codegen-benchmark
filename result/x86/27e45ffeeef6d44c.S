@@ -2,6 +2,7 @@
 .LCPI0_0:
 	.long	0xff800000
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	notl	%edi
 	shrl	$31, %edi

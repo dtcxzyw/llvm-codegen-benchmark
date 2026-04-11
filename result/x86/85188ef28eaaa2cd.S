@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000144:
 	leaq	30(%rdi), %rax
 	cmpq	$31, %rdx
@@ -7,6 +8,7 @@ func0000000000000144:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000d41:
 	cmpq	$13, %rdx
 	setl	%cl
@@ -15,6 +17,7 @@ func0000000000000d41:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000d04:
 	leaq	4096(%rdi), %rax
 	cmpq	$4097, %rdx
@@ -23,6 +26,7 @@ func0000000000000d04:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000d44:
 	leaq	19(%rdi), %rax
 	cmpq	$20, %rdx

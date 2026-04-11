@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000148:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -8,6 +9,7 @@ func0000000000000148:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001c2:
 	shlq	$16, %rdx
 	orq	%rsi, %rdx
@@ -17,6 +19,7 @@ func00000000000001c2:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx

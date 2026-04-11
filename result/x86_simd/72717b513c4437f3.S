@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -8,6 +9,7 @@ func0000000000000018:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -17,6 +19,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -26,6 +29,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000081:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -35,6 +39,7 @@ func0000000000000081:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddw	%xmm2, %xmm1, %xmm1
@@ -53,6 +58,7 @@ func0000000000000028:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vpaddw	.LCPI5_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -70,6 +76,7 @@ func0000000000000004:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	vpaddw	.LCPI6_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -78,6 +85,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000e1:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -87,6 +95,7 @@ func00000000000000e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000e4:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -96,6 +105,7 @@ func00000000000000e4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000e8:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -105,6 +115,7 @@ func00000000000000e8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000014:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddw	%xmm2, %xmm1, %xmm1
@@ -114,6 +125,7 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000019:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddw	%xmm2, %xmm1, %xmm1
@@ -132,6 +144,7 @@ func0000000000000019:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000064:
 	vpaddw	.LCPI12_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1

@@ -10,6 +10,7 @@
 	.short	65407
 .LCPI0_1:
 	.long	32767
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpcmpltuw	.LCPI0_0(%rip), %xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
@@ -27,6 +28,7 @@ func0000000000000004:
 	.short	1070
 .LCPI1_1:
 	.long	4294967290
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpcmpnleuw	.LCPI1_0(%rip), %xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
@@ -35,6 +37,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpmovw2m	%xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}

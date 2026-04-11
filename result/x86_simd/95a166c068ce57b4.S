@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000015f:
 	vpabsd	%ymm2, %ymm2
 	vpabsd	%ymm1, %ymm1

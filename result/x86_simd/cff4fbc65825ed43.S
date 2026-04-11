@@ -63,6 +63,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpsrld	$15, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

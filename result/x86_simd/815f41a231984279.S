@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	16383
 	.short	16383
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpxord	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

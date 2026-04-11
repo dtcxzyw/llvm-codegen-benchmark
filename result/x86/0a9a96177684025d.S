@@ -3,6 +3,7 @@
 	.long	0x40c90fdb
 .LCPI0_1:
 	.long	0xc0c90fdb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vaddss	.LCPI0_0(%rip), %xmm0, %xmm1
 	kmovd	%edi, %k1

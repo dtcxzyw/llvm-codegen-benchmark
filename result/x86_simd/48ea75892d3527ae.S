@@ -16,6 +16,7 @@
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -40,6 +41,7 @@ func000000000000000c:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -64,6 +66,7 @@ func0000000000000000:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -88,6 +91,7 @@ func000000000000000d:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -112,6 +116,7 @@ func000000000000000f:
 	.byte	12
 	.byte	15
 	.byte	14
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000009:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

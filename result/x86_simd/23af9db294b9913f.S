@@ -3,6 +3,7 @@
 	.long	1
 .LCPI0_1:
 	.long	1374389535
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

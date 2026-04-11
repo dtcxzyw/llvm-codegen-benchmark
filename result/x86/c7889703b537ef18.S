@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	cmpw	$5, %si
@@ -6,6 +7,7 @@ func0000000000000004:
 	leaq	2(%rdi,%rax,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	xorl	%eax, %eax
 	testw	%si, %si
@@ -13,6 +15,7 @@ func0000000000000007:
 	leaq	4176(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001b:
 	xorl	%eax, %eax
 	cmpw	$-1, %si
@@ -20,6 +23,7 @@ func000000000000001b:
 	leaq	16(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	xorl	%eax, %eax
 	cmpw	$12, %si
@@ -28,6 +32,7 @@ func0000000000000006:
 	leaq	-147936(%rax,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
 	xorl	%eax, %eax
 	cmpw	$5, %si
@@ -35,6 +40,7 @@ func0000000000000013:
 	leaq	144(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000023:
 	leaq	136(%rdi), %rax
 	leaq	320(%rdi), %rcx
@@ -42,6 +48,7 @@ func0000000000000023:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000012:
 	leaq	-48(%rdi), %rax
 	leaq	-72(%rdi), %rcx
@@ -49,6 +56,7 @@ func0000000000000012:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002b:
 	xorl	%eax, %eax
 	testw	%si, %si
@@ -56,12 +64,14 @@ func000000000000002b:
 	leaq	4(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000020:
 	leaq	-136(%rdi), %rax
 	cmpw	$5, %si
 	cmovaeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000010:
 	leaq	-8(%rdi), %rax
 	leaq	4(%rdi), %rcx
@@ -69,6 +79,7 @@ func0000000000000010:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000033:
 	xorl	%eax, %eax
 	cmpw	$18, %si
@@ -76,12 +87,14 @@ func0000000000000033:
 	leaq	408(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000028:
 	shrl	$12, %esi
 	andl	$8, %esi
 	leaq	8(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000022:
 	xorl	%eax, %eax
 	cmpw	$2, %si

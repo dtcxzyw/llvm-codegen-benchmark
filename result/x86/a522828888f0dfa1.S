@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000369:
 	cmpq	$5, %rsi
 	movl	$4, %eax
@@ -7,6 +8,7 @@ func0000000000000369:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000349:
 	cmpq	$5, %rsi
 	movl	$4, %eax
@@ -15,6 +17,7 @@ func0000000000000349:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000249:
 	cmpq	$5, %rsi
 	movl	$4, %eax
@@ -25,6 +28,7 @@ func0000000000000249:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000269:
 	cmpq	$5, %rsi
 	movl	$4, %eax
@@ -35,6 +39,7 @@ func0000000000000269:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000309:
 	cmpq	$5, %rsi
 	movl	$4, %eax
@@ -45,6 +50,7 @@ func0000000000000309:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000209:
 	cmpq	$5, %rsi
 	movl	$4, %eax
@@ -55,6 +61,7 @@ func0000000000000209:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000003f9:
 	cmpq	$5, %rsi
 	movl	$4, %eax

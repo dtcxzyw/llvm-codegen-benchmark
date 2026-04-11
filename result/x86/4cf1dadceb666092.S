@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	negq	%rdx
 	cmpq	%rdx, %rdi
@@ -6,6 +7,7 @@ func0000000000000008:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	negq	%rdx
 	xorl	%eax, %eax
@@ -15,6 +17,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000078:
 	movl	$5, %eax
 	movl	$5, %ecx
@@ -25,6 +28,7 @@ func0000000000000078:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	movl	$15, %eax
 	subq	%rdx, %rax
@@ -35,6 +39,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000068:
 	movl	$1000000, %eax
 	subq	%rdx, %rax
@@ -43,6 +48,7 @@ func0000000000000068:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000074:
 	movl	$1000000, %eax
 	subq	%rdx, %rax

@@ -33,6 +33,7 @@
 	.byte	16
 .LCPI0_5:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e4:
 	vgf2p8affineqb	$0, .LCPI0_4(%rip){1to2}, %xmm0, %xmm1
 	vpord	.LCPI0_5(%rip){1to4}, %xmm1, %xmm2

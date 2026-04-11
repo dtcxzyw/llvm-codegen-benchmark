@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -6,6 +7,7 @@ func0000000000000004:
 	leaq	18(%rsi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000787:
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -14,6 +16,7 @@ func0000000000000787:
 	leaq	52(%rsi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000793:
 	leaq	232(%rsi), %rax
 	leaq	208(%rsi), %rcx
@@ -22,6 +25,7 @@ func0000000000000793:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000007a3:
 	leaq	208(%rsi), %rax
 	leaq	232(%rsi), %rcx
@@ -30,6 +34,7 @@ func00000000000007a3:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000007b3:
 	leaq	968(%rsi), %rax
 	leaq	768(%rsi), %rcx
@@ -38,6 +43,7 @@ func00000000000007b3:
 	addq	$40, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -47,6 +53,7 @@ func0000000000000007:
 	leaq	8(%rsi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000784:
 	xorl	%eax, %eax
 	testl	%edi, %edi

@@ -8,6 +8,7 @@
 	.short	65508
 	.short	65508
 	.short	65508
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000080:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -25,6 +26,7 @@ func0000000000000080:
 	.short	24576
 	.short	24576
 	.short	24576
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c0:
 	vpslld	$6, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -33,6 +35,7 @@ func00000000000000c0:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -44,6 +47,7 @@ func0000000000000000:
 
 .LCPI3_0:
 	.zero	16,48
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000030:
 	vpslld	$8, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

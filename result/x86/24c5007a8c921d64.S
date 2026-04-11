@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c1:
 	leaq	272(%rdx), %rax
 	leaq	-352(%rsi), %rcx
@@ -6,6 +7,7 @@ func00000000000001c1:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	leaq	-72(%rdx), %rax
 	leaq	24(%rsi), %rcx
@@ -13,12 +15,14 @@ func0000000000000064:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	negq	%rdi
 	cmovnoq	%rdx, %rsi
 	leaq	8(%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001e1:
 	leaq	48(%rdx), %rax
 	leaq	40(%rsi), %rcx
@@ -26,6 +30,7 @@ func00000000000001e1:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e8:
 	leaq	12(%rdx), %rax
 	leaq	4(%rsi), %rcx
@@ -33,12 +38,14 @@ func00000000000001e8:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000001e6:
 	testq	%rdi, %rdi
 	cmovnsq	%rdx, %rsi
 	leaq	8(%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001c6:
 	leaq	40(%rdx), %rax
 	leaq	-40(%rsi), %rcx
@@ -46,6 +53,7 @@ func00000000000001c6:
 	cmovsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000061:
 	leaq	-4(%rdx), %rax
 	leaq	24(%rsi), %rcx
@@ -53,6 +61,7 @@ func0000000000000061:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001ec:
 	leaq	16(%rdx), %rcx
 	leaq	840(%rsi), %rax
@@ -60,24 +69,28 @@ func00000000000001ec:
 	cmovoq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000014a:
 	testq	%rdi, %rdi
 	cmovsq	%rdx, %rsi
 	leaq	-88(%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000146:
 	testq	%rdi, %rdi
 	cmovnsq	%rdx, %rsi
 	leaq	-64(%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000001ea:
 	testq	%rdi, %rdi
 	cmovsq	%rdx, %rsi
 	leaq	8(%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000001e4:
 	leaq	232(%rdx), %rax
 	leaq	8(%rsi), %rcx
@@ -85,6 +98,7 @@ func00000000000001e4:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000066:
 	leaq	-8(%rdx), %rax
 	leaq	1544(%rsi), %rcx

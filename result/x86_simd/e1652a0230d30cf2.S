@@ -19,6 +19,7 @@
 	.short	2114
 .LCPI0_2:
 	.long	2048
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpmullw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpcmpleuw	.LCPI0_1(%rip), %xmm1, %k1
@@ -47,6 +48,7 @@ func0000000000000021:
 	.short	2340
 .LCPI1_2:
 	.long	28
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	vpmullw	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpshrdw	$2, %xmm1, %xmm1, %xmm1

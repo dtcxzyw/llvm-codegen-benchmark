@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000202:
 	andl	$528, %edi
 	cmpl	$16, %edi
@@ -13,6 +14,7 @@ func0000000000000202:
 
 .LCPI1_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	andl	$496, %edi
 	cmpl	$256, %edi
@@ -25,6 +27,7 @@ func0000000000000024:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000082:
 	andl	$-3, %edi
 	cmpl	$1, %edi

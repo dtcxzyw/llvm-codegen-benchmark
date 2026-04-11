@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a9:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm1, %k1
@@ -9,6 +10,7 @@ func00000000000000a9:
 	.long	32
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e1:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3
 	vpbroadcastd	.LCPI1_1(%rip), %ymm4

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddps	%zmm3, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3
@@ -11,6 +12,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vaddps	%zmm3, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3

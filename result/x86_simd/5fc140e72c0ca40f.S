@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	vpmovzxbd	%xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
@@ -11,6 +12,7 @@ func00000000000001e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000161:
 	vpmovzxbd	%xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
@@ -22,6 +24,7 @@ func0000000000000161:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000141:
 	vpmovzxbd	%xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
@@ -35,6 +38,7 @@ func0000000000000141:
 
 .LCPI3_0:
 	.long	4
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001e4:
 	vpmovzxbd	%xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1
@@ -47,6 +51,7 @@ func00000000000001e4:
 
 .LCPI4_0:
 	.long	4
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000104:
 	vpmovzxbd	%xmm2, %xmm2
 	vpor	%xmm2, %xmm1, %xmm1

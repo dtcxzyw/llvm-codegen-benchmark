@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	cmpl	$-233, %edx
 	movl	$1, %eax
@@ -6,6 +7,7 @@ func0000000000000007:
 	imulq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002b:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -13,6 +15,7 @@ func000000000000002b:
 	imulq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
@@ -20,6 +23,7 @@ func0000000000000004:
 	imulq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	xorl	%eax, %eax
 	cmpl	$2, %edx

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	movb	$7, %al
 	subb	%sil, %al
 	bzhil	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	movl	%edi, %eax
 	movb	$7, %cl
@@ -12,12 +14,14 @@ func0000000000000007:
 	btrl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	movb	$7, %al
 	subb	%sil, %al
 	bzhil	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	movb	$28, %al
 	subb	%sil, %al
@@ -26,6 +30,7 @@ func000000000000000e:
 	andnl	%edi, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	movb	$12, %al
 	subb	%sil, %al
@@ -34,6 +39,7 @@ func000000000000000f:
 	andnl	%edi, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	movb	$6, %al
 	subb	%sil, %al

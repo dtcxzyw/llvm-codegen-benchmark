@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -13,6 +14,7 @@ func000000000000000e:
 	.long	64
 .LCPI1_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	vpbroadcastd	.LCPI1_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -23,6 +25,7 @@ func000000000000001f:
 
 .LCPI2_0:
 	.long	70
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpbroadcastd	.LCPI2_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -33,6 +36,7 @@ func0000000000000005:
 
 .LCPI3_0:
 	.long	32
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001d:
 	vpbroadcastd	.LCPI3_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -43,6 +47,7 @@ func000000000000001d:
 
 .LCPI4_0:
 	.long	32
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000d:
 	vpbroadcastd	.LCPI4_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -55,6 +60,7 @@ func000000000000000d:
 	.long	31
 .LCPI5_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpbroadcastd	.LCPI5_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -67,6 +73,7 @@ func0000000000000006:
 	.long	32
 .LCPI6_1:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	vpbroadcastd	.LCPI6_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -79,6 +86,7 @@ func000000000000000c:
 	.long	4294967242
 .LCPI7_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	vpbroadcastd	.LCPI7_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -91,6 +99,7 @@ func0000000000000002:
 	.long	8
 .LCPI8_1:
 	.quad	72624976668147840
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	vpbroadcastd	.LCPI8_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -103,6 +112,7 @@ func0000000000000004:
 	.long	4294966221
 .LCPI9_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000001e:
 	vpbroadcastd	.LCPI9_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
@@ -115,6 +125,7 @@ func000000000000001e:
 	.long	4294966221
 .LCPI10_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000001c:
 	vpbroadcastd	.LCPI10_0(%rip), %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0

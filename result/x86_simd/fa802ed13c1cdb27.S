@@ -70,6 +70,7 @@
 	.byte	0
 	.byte	216
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpord	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
@@ -146,6 +147,7 @@ func0000000000000001:
 	.byte	0
 	.byte	64
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpord	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
@@ -222,6 +224,7 @@ func0000000000000003:
 	.byte	0
 	.byte	216
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm0
 	vpord	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0
@@ -298,6 +301,7 @@ func0000000000000002:
 	.byte	0
 	.byte	4
 	.byte	0
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpshufb	.LCPI3_0(%rip), %ymm0, %ymm0
 	vpord	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0

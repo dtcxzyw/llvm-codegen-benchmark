@@ -50,6 +50,7 @@
 	.short	26215
 	.short	26215
 	.short	26215
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpmullw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpaddw	.LCPI0_1(%rip), %ymm0, %ymm0

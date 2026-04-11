@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
@@ -43,6 +44,7 @@ func0000000000000024:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
@@ -66,6 +68,7 @@ func0000000000000021:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI2_0(%rip), %xmm1, %k1
@@ -74,6 +77,7 @@ func0000000000000001:
 
 .LCPI3_0:
 	.quad	23
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpbroadcastq	.LCPI3_0(%rip), %ymm3
 	vpxor	%xmm4, %xmm4, %xmm4

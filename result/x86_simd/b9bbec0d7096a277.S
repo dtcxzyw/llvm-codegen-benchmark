@@ -34,6 +34,7 @@
 	.byte	128
 .LCPI0_1:
 	.long	0x437f0000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	vcvtdq2ps	%ymm0, %ymm0

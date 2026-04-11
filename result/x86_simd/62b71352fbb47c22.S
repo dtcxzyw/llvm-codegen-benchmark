@@ -33,6 +33,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008c:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
@@ -76,6 +77,7 @@ func000000000000008c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000184:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1

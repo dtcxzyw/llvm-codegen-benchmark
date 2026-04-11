@@ -1,28 +1,33 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovel	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovll	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovgl	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmoval	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi

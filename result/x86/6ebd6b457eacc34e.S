@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	leal	1048576(%rdx), %eax
 	testb	$1, %sil
@@ -7,6 +8,7 @@ func0000000000000021:
 	cmovel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movl	%edx, %eax
 	orl	$-1073741824, %eax

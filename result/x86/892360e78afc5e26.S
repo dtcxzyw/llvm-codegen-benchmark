@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -8,6 +9,7 @@ func0000000000000013:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -16,6 +18,7 @@ func0000000000000014:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001c:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -26,6 +29,7 @@ func000000000000001c:
 
 .LCPI3_0:
 	.long	0x43000000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -36,6 +40,7 @@ func000000000000001a:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vcvtusi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -43,6 +48,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000012:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -51,6 +57,7 @@ func0000000000000012:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000017:
 	vcvtsi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -59,6 +66,7 @@ func0000000000000017:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000007:
 	vcvtusi2ss	%edi, %xmm15, %xmm1
 	vmulss	%xmm1, %xmm0, %xmm0

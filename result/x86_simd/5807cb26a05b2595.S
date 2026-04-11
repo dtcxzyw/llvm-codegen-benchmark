@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpshufb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -49,6 +50,7 @@ func0000000000000001:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpshufb	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpaddw	.LCPI1_1(%rip), %xmm0, %xmm0
@@ -72,6 +74,7 @@ func0000000000000000:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpshufb	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

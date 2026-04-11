@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%ecx, %ecx
 	testl	%edi, %edi
@@ -6,6 +7,7 @@ func0000000000000001:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	cmpl	$2458605, %edi
 	movq	$-1988, %rcx
@@ -13,6 +15,7 @@ func0000000000000014:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	xorl	%ecx, %ecx
 	testl	%edi, %edi
@@ -22,6 +25,7 @@ func000000000000000c:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	xorl	%ecx, %ecx
 	testl	%edi, %edi
@@ -29,6 +33,7 @@ func0000000000000006:
 	cmovnsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -37,12 +42,14 @@ func000000000000000a:
 	orq	$2097152, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	cmpl	$1048576, %edi
 	movl	$10, %eax
 	sbbq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	cmpl	$127, %edi
@@ -51,6 +58,7 @@ func0000000000000008:
 	addq	$1048576, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000018:
 	cmpl	$20, %edi
 	movl	$1, %eax

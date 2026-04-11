@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpmaxuw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1

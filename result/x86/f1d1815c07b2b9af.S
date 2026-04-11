@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c7:
 	notl	%edi
 	testl	$2139095040, %edi
@@ -13,6 +14,7 @@ func00000000000000c7:
 
 .LCPI1_0:
 	.long	0x00800000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000014c:
 	testl	$2147483647, %edi
 	setne	%cl
@@ -22,6 +24,7 @@ func000000000000014c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008c:
 	shrl	$23, %edi
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -32,6 +35,7 @@ func000000000000008c:
 
 .LCPI3_0:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000081:
 	testb	$64, %dil
 	sete	%cl
@@ -40,6 +44,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ca:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -49,6 +54,7 @@ func00000000000000ca:
 
 .LCPI5_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000004c:
 	shrb	$2, %dil
 	vmovss	.LCPI5_0(%rip), %xmm1
@@ -57,6 +63,7 @@ func000000000000004c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000c4:
 	shrl	$24, %edi
 	andl	$1, %edi
@@ -66,6 +73,7 @@ func00000000000000c4:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000018c:
 	andl	$-2, %edi
 	cmpl	$8, %edi

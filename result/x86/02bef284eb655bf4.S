@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002f:
 	bswapl	%edx
 	addq	%rsi, %rdx
@@ -6,12 +7,14 @@ func000000000000002f:
 	leaq	(%rdx,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002e:
 	bswapl	%edx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	bswapl	%edx
 	leaq	(%rdx,%rsi), %rax
@@ -19,12 +22,14 @@ func000000000000000f:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001f:
 	bswapl	%edx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	bswapl	%edx
 	leaq	(%rdi,%rsi), %rax

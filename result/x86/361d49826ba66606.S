@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	xorl	%eax, %eax
 	addl	$-20, %esi
 	cmovnsl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	addl	$14, %esi
 	cmpl	$15, %esi
@@ -12,18 +14,21 @@ func0000000000000004:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	cmpl	$-8, %esi
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000038:
 	addl	$-9997, %esi
 	cmpl	$-9998, %esi
@@ -31,6 +36,7 @@ func0000000000000038:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000024:
 	addl	$-1114112, %esi
 	cmpl	$-1112064, %esi
@@ -38,6 +44,7 @@ func0000000000000024:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	addl	$-6850, %esi
 	cmpl	$-6900, %esi
@@ -45,6 +52,7 @@ func0000000000000008:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000004a:
 	addl	$16777216, %esi
 	xorl	%eax, %eax
@@ -52,12 +60,14 @@ func000000000000004a:
 	cmovll	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000061:
 	xorl	%eax, %eax
 	cmpl	$4094, %esi
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000034:
 	decl	%esi
 	cmpl	$16, %esi
@@ -65,6 +75,7 @@ func0000000000000034:
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000a:
 	addl	$-1900, %esi
 	cmpl	$1980, %esi

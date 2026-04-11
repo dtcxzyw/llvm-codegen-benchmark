@@ -5,6 +5,7 @@
 	.long	127
 .LCPI0_2:
 	.long	126
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001d1:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
@@ -20,6 +21,7 @@ func00000000000001d1:
 	.long	18
 .LCPI1_2:
 	.long	19
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000121:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
@@ -35,6 +37,7 @@ func0000000000000121:
 	.long	64
 .LCPI2_2:
 	.long	65
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1

@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	8188
 	.short	8188
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpsrlw	$3, %xmm2, %xmm2
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2

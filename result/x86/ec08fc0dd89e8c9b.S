@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x4012d97c7f330d32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -10,6 +11,7 @@ func0000000000000024:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -19,6 +21,7 @@ func0000000000000022:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000023:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -28,6 +31,7 @@ func0000000000000023:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -39,6 +43,7 @@ func0000000000000028:
 
 .LCPI4_0:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000034:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -50,6 +55,7 @@ func0000000000000034:
 
 .LCPI5_0:
 	.quad	0x73d658e3ab795204
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000032:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -62,6 +68,7 @@ func0000000000000032:
 
 .LCPI6_0:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000035:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -76,6 +83,7 @@ func0000000000000035:
 	.quad	0x3ff921fb54442d18
 .LCPI7_1:
 	.quad	0xbff921fb54442d18
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000042:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vcmpgtsd	.LCPI7_0(%rip), %xmm1, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
 	testl	%edx, %edx
 	setg	%cl
@@ -8,6 +9,7 @@ func000000000000014a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	cmpl	$32, %edx
 	setne	%cl
@@ -17,6 +19,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	testl	%edx, %edx
 	sete	%cl
@@ -26,6 +29,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000084:
 	cmpl	$2, %edx
 	setb	%cl
@@ -35,6 +39,7 @@ func0000000000000084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000144:
 	testl	%edx, %edx
 	setg	%cl
@@ -44,6 +49,7 @@ func0000000000000144:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c1:
 	cmpl	$1024, %edx
 	setl	%cl
@@ -53,6 +59,7 @@ func00000000000000c1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000181:
 	cmpl	$-1, %edx
 	setne	%cl
@@ -62,6 +69,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000021:
 	cmpl	$-32001, %edx
 	sete	%cl
@@ -71,6 +79,7 @@ func0000000000000021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000108:
 	cmpl	$512, %edx
 	setae	%cl
@@ -80,6 +89,7 @@ func0000000000000108:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000ca:
 	testl	%edx, %edx
 	sets	%cl
@@ -89,6 +99,7 @@ func00000000000000ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000018a:
 	testl	%edx, %edx
 	setne	%cl
@@ -98,6 +109,7 @@ func000000000000018a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000c6:
 	cmpl	$2, %edx
 	setl	%cl
@@ -107,6 +119,7 @@ func00000000000000c6:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000081:
 	cmpl	$2, %edx
 	setb	%cl
@@ -116,6 +129,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000141:
 	cmpl	$32, %edx
 	setge	%cl

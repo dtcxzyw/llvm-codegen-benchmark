@@ -5,6 +5,7 @@
 	.quad	8
 .LCPI0_2:
 	.quad	12
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2

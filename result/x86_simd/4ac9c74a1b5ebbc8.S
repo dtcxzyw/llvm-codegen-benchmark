@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000025:
 	vmaxps	%zmm3, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3
@@ -11,6 +12,7 @@ func0000000000000025:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
 	vmaxps	%zmm3, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3
@@ -23,6 +25,7 @@ func0000000000000023:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	vmaxps	%zmm3, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3
@@ -35,6 +38,7 @@ func000000000000002a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	vmaxps	%zmm3, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3
@@ -47,6 +51,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002b:
 	vmaxps	%zmm3, %zmm2, %zmm2
 	vextractf64x4	$1, %zmm2, %ymm3

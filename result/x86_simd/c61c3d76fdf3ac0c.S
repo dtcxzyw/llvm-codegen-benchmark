@@ -16,6 +16,7 @@
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -40,6 +41,7 @@ func0000000000000003:
 	.short	5
 	.short	5
 	.short	5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
@@ -81,6 +83,7 @@ func0000000000000013:
 	.short	65534
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	vpaddw	.LCPI2_0(%rip), %ymm0, %ymm0
 	vpsrlw	$3, %ymm0, %ymm0

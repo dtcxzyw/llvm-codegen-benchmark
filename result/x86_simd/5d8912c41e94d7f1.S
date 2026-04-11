@@ -3,6 +3,7 @@
 	.long	2048
 .LCPI0_1:
 	.long	4096
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}

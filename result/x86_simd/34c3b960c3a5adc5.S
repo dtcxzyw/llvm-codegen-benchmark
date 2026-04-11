@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
@@ -7,6 +8,7 @@ func0000000000000018:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
@@ -17,6 +19,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.zero	16,39
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
@@ -27,6 +30,7 @@ func0000000000000028:
 
 .LCPI3_0:
 	.zero	16,31
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0

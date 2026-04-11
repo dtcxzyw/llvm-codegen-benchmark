@@ -22,6 +22,7 @@
 	.long	4
 .LCPI0_3:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000023:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -39,6 +40,7 @@ func0000000000000023:
 	.long	1024
 .LCPI1_3:
 	.long	2048
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -72,6 +74,7 @@ func0000000000000007:
 	.long	64
 .LCPI2_3:
 	.long	32
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000013:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	8388608
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpslld	$16, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0
@@ -9,6 +10,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.long	8585216
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm0
@@ -17,6 +19,7 @@ func000000000000000a:
 
 .LCPI2_0:
 	.long	136314880
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpslld	$3, %ymm2, %ymm2
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
@@ -61,12 +64,14 @@ func000000000000000f:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vpslld	$24, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	vpslld	$24, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -112,6 +117,7 @@ func000000000000000b:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	vpslld	$24, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0
@@ -120,6 +126,7 @@ func0000000000000007:
 
 .LCPI6_0:
 	.long	254
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	vpslld	$8, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm0
@@ -164,6 +171,7 @@ func0000000000000001:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	vpslld	$16, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm0
@@ -172,6 +180,7 @@ func0000000000000002:
 
 .LCPI8_0:
 	.long	4292870144
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000c:
 	vpslld	$23, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0
@@ -216,6 +225,7 @@ func000000000000000c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000e:
 	vpslld	$6, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0
@@ -224,6 +234,7 @@ func000000000000000e:
 
 .LCPI10_0:
 	.long	15
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000d:
 	vpslld	$6, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0
@@ -232,6 +243,7 @@ func000000000000000d:
 
 .LCPI11_0:
 	.long	8160
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000009:
 	vpslld	$16, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm0
@@ -240,6 +252,7 @@ func0000000000000009:
 
 .LCPI12_0:
 	.long	4026531840
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000004:
 	vpslld	$16, %ymm2, %ymm2
 	vpor	%ymm2, %ymm0, %ymm0

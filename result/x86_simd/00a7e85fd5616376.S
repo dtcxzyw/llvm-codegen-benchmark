@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000039:
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
@@ -12,6 +13,7 @@ func0000000000000039:
 
 .LCPI1_0:
 	.long	64
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
@@ -25,6 +27,7 @@ func0000000000000008:
 	.long	4
 .LCPI2_1:
 	.quad	9
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003a:
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
@@ -35,6 +38,7 @@ func000000000000003a:
 
 .LCPI3_0:
 	.long	10
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
@@ -48,6 +52,7 @@ func0000000000000018:
 	.long	30
 .LCPI4_1:
 	.quad	28
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000003b:
 	vpbroadcastd	.LCPI4_0(%rip), %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1

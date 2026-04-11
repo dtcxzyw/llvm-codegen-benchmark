@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x80000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	kmovd	%esi, %k1
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -14,6 +15,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.long	0x80000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	kmovd	%esi, %k1
 	vxorps	%xmm1, %xmm1, %xmm1

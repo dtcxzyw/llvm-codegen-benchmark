@@ -16,6 +16,7 @@
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovzxwd	%ymm0, %zmm0
 	vplzcntd	%zmm0, %zmm0
@@ -40,6 +41,7 @@ func0000000000000000:
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovzxwd	%ymm0, %zmm0
 	vplzcntd	%zmm0, %zmm0

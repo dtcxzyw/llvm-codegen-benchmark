@@ -33,6 +33,7 @@
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000002842:
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
@@ -77,6 +78,7 @@ func0000000000002842:
 	.short	65281
 	.short	65281
 	.short	65281
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000002848:
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0

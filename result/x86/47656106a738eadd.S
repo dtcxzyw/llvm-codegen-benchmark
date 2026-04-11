@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000053:
 	cmpl	$32768, %edx
 	movb	$2, %al
@@ -10,6 +11,7 @@ func0000000000000053:
 	shlxl	%ecx, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000050:
 	cmpl	$65535, %edx
 	movb	$2, %al
@@ -21,6 +23,7 @@ func0000000000000050:
 	shlxl	%ecx, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	cmpl	$65536, %edx
 	setl	%al

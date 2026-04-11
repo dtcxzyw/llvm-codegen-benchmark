@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	vptestmq	%ymm2, %ymm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -13,6 +14,7 @@ func0000000000000084:
 
 .LCPI1_0:
 	.quad	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000085:
 	vptestmq	%ymm2, %ymm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -25,6 +27,7 @@ func0000000000000085:
 
 .LCPI2_0:
 	.quad	15
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	vptestmq	%ymm2, %ymm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -41,6 +44,7 @@ func0000000000000088:
 	.quad	64
 .LCPI3_2:
 	.quad	32
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000208:
 	vpcmpnltuq	.LCPI3_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm2
@@ -52,6 +56,7 @@ func0000000000000208:
 
 .LCPI4_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c1:
 	vptestmq	%ymm2, %ymm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -68,6 +73,7 @@ func00000000000000c1:
 	.quad	40
 .LCPI5_2:
 	.quad	8
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000249:
 	vpcmpnltuq	.LCPI5_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastq	.LCPI5_1(%rip), %ymm2

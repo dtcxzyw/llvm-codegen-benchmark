@@ -20,6 +20,7 @@
 	.long	4294967199
 .LCPI0_2:
 	.zero	4,32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxbd	%xmm0, %ymm0

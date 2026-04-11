@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000401:
 	leaq	1(%rdi,%rdx), %rax
 	addq	$130, %rsi
@@ -6,6 +7,7 @@ func0000000000000401:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	leaq	680(%rdi,%rdx), %rax
 	addq	$668, %rsi
@@ -13,6 +15,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000007e4:
 	leaq	3(%rdi,%rdx), %rax
 	addq	$2, %rsi
@@ -20,6 +23,7 @@ func00000000000007e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000007e8:
 	leaq	1(%rdi,%rdx), %rax
 	addq	$18, %rsi
@@ -27,6 +31,7 @@ func00000000000007e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000148:
 	leaq	4(%rdi,%rdx), %rax
 	addq	$-12, %rsi
@@ -34,6 +39,7 @@ func0000000000000148:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000141:
 	shlq	$7, %rdx
 	leaq	128(%rdi,%rdx), %rax
@@ -42,6 +48,7 @@ func0000000000000141:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000007e1:
 	leaq	8(%rdi,%rdx), %rax
 	addq	$32, %rsi
@@ -49,6 +56,7 @@ func00000000000007e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000768:
 	leaq	15(%rdi,%rdx), %rax
 	addq	$-32, %rsi
@@ -56,6 +64,7 @@ func0000000000000768:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000764:
 	leaq	19(%rdi,%rdx), %rax
 	addq	$-64, %rsi
@@ -63,6 +72,7 @@ func0000000000000764:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000608:
 	leaq	16(%rdi,%rdx), %rax
 	addq	$65536, %rsi
@@ -70,6 +80,7 @@ func0000000000000608:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000708:
 	leaq	4(%rdi,%rdx), %rax
 	addq	$-12, %rsi
@@ -77,6 +88,7 @@ func0000000000000708:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000541:
 	shlq	$4, %rdx
 	leaq	16(%rdi,%rdx), %rax
@@ -85,6 +97,7 @@ func0000000000000541:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000008:
 	leaq	4(%rdi,%rdx), %rax
 	addq	$-12, %rsi
@@ -92,6 +105,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000144:
 	leaq	19(%rdi,%rdx), %rax
 	addq	$-64, %rsi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	andl	$1048320, %edx
 	cmpl	$2816, %edx
@@ -10,6 +11,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	testb	%dl, %dl
 	setne	%cl
@@ -20,6 +22,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	andl	$3840, %edx
 	cmpl	$2048, %edx

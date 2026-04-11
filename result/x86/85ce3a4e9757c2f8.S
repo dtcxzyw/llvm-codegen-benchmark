@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000035:
 	andl	$1, %edx
 	subq	%rdx, %rsi
@@ -9,6 +10,7 @@ func0000000000000035:
 	subq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000030:
 	andl	$1, %edx
 	subq	%rdx, %rsi

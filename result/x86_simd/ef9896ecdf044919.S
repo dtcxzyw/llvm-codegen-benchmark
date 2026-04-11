@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcmpgtps	.LCPI0_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -9,6 +10,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vcmpneqps	.LCPI1_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -19,6 +21,7 @@ func0000000000000007:
 	.long	0x3f800000
 .LCPI2_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vbroadcastss	.LCPI2_0(%rip), %zmm1
 	vsubps	%zmm0, %zmm1, %zmm0
@@ -29,6 +32,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vcmpnleps	.LCPI3_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -37,6 +41,7 @@ func0000000000000003:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vcmpltps	.LCPI4_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -45,6 +50,7 @@ func0000000000000004:
 
 .LCPI5_0:
 	.long	0x45000000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vcmpleps	.LCPI5_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -53,6 +59,7 @@ func000000000000000c:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000009:
 	vcmpeq_uqps	.LCPI6_0(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -61,6 +68,7 @@ func0000000000000009:
 
 .LCPI7_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000005:
 	vbroadcastss	.LCPI7_0(%rip), %zmm1
 	vsubps	%zmm0, %zmm1, %zmm0
@@ -73,6 +81,7 @@ func0000000000000005:
 	.long	0x3f800000
 .LCPI8_1:
 	.long	0x38d1b717
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000d:
 	vbroadcastss	.LCPI8_0(%rip), %zmm1
 	vsubps	%zmm0, %zmm1, %zmm0
@@ -83,6 +92,7 @@ func000000000000000d:
 
 .LCPI9_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000e:
 	vbroadcastss	.LCPI9_0(%rip), %zmm1
 	vsubps	%zmm0, %zmm1, %zmm0
@@ -96,6 +106,7 @@ func000000000000000e:
 	.long	0x3f800000
 .LCPI10_1:
 	.long	0x2b8cbccc
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000a:
 	vbroadcastss	.LCPI10_0(%rip), %zmm1
 	vsubps	%zmm0, %zmm1, %zmm0

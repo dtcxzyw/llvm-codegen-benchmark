@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	decl	%esi
 	testb	$1, %dil
@@ -9,6 +10,7 @@ func00000000000000a6:
 	cmovlel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	incl	%esi
 	xorl	%ecx, %ecx
@@ -19,6 +21,7 @@ func0000000000000001:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a1:
 	leal	-2(%rsi), %eax
 	testb	$1, %dil

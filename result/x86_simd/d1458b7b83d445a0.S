@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000154:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2
@@ -9,6 +10,7 @@ func0000000000000154:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000141:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2
@@ -19,6 +21,7 @@ func0000000000000141:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000014c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2
@@ -29,6 +32,7 @@ func000000000000014c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000146:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2
@@ -39,6 +43,7 @@ func0000000000000146:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000144:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2
@@ -49,6 +54,7 @@ func0000000000000144:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000149:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2
@@ -59,6 +65,7 @@ func0000000000000149:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000158:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2
@@ -69,6 +76,7 @@ func0000000000000158:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000148:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpunpcklbw	%xmm2, %xmm3, %xmm2

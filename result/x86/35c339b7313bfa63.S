@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ac:
 	testl	%esi, %esi
 	setns	%cl
@@ -9,6 +10,7 @@ func00000000000000ac:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
 	testl	%esi, %esi
 	setg	%cl

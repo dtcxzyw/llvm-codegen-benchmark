@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	tzcntq	%rsi, %rax
 	incl	%edi
@@ -6,6 +7,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003f9:
 	tzcntq	%rsi, %rax
 	incl	%edi
@@ -13,6 +15,7 @@ func00000000000003f9:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000381:
 	tzcntq	%rsi, %rax
 	decl	%edi

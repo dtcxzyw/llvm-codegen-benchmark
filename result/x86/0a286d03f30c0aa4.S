@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	subl	%esi, %edi
 	addl	$64, %edi
@@ -6,12 +7,14 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	leal	(%rdi,%rsi,8), %eax
 	testb	$15, %al
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
 	subl	%esi, %edi
 	testb	$7, %dil

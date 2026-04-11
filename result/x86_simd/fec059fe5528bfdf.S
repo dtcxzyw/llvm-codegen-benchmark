@@ -3,6 +3,7 @@
 	.long	0xbf800000
 .LCPI0_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vbroadcastss	.LCPI0_0(%rip), %zmm1
@@ -16,6 +17,7 @@ func0000000000000024:
 	.long	0x3f800000
 .LCPI1_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vbroadcastss	.LCPI1_0(%rip), %zmm1
@@ -27,6 +29,7 @@ func0000000000000042:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -40,6 +43,7 @@ func0000000000000022:
 	.long	0x3f800000
 .LCPI3_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000044:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vbroadcastss	.LCPI3_0(%rip), %zmm1
@@ -51,6 +55,7 @@ func0000000000000044:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000045:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vbroadcastss	.LCPI4_0(%rip), %zmm1
@@ -61,6 +66,7 @@ func0000000000000045:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -69,6 +75,7 @@ func0000000000000084:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000083:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -81,6 +88,7 @@ func0000000000000083:
 
 .LCPI7_0:
 	.long	0x3f7fffff
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000048:
 	vdivps	%zmm1, %zmm0, %zmm0
 	vbroadcastss	.LCPI7_0(%rip), %zmm1

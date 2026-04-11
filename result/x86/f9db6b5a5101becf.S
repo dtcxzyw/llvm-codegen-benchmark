@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
@@ -13,6 +14,7 @@ func0000000000000008:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI1_0(%rip){1to2}, %xmm0, %xmm0
@@ -25,6 +27,7 @@ func0000000000000005:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001b:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm0, %xmm0
@@ -36,6 +39,7 @@ func000000000000001b:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x3e7ad7f29abcaf48
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI3_0(%rip){1to2}, %xmm0, %xmm0
@@ -47,6 +51,7 @@ func0000000000000014:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000012:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI4_0(%rip){1to2}, %xmm0, %xmm0
@@ -59,6 +64,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI5_0(%rip){1to2}, %xmm0, %xmm0
@@ -70,6 +76,7 @@ func0000000000000004:
 	.quad	0x7fffffffffffffff
 .LCPI6_1:
 	.quad	0x3a1b900000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000002:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI6_0(%rip){1to2}, %xmm0, %xmm0
@@ -82,6 +89,7 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x38aa95a5c0000000
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI7_0(%rip){1to2}, %xmm0, %xmm0
@@ -90,6 +98,7 @@ func000000000000000a:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000009:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
@@ -103,6 +112,7 @@ func0000000000000009:
 	.quad	0x7fffffffffffffff
 .LCPI9_1:
 	.quad	0x4066800000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000018:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vandpd	.LCPI9_0(%rip){1to2}, %xmm0, %xmm0
@@ -110,6 +120,7 @@ func0000000000000018:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000019:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
@@ -119,6 +130,7 @@ func0000000000000019:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000006:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax
@@ -128,6 +140,7 @@ func0000000000000006:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000007:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vmovq	%xmm0, %rax

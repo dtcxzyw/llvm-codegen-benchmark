@@ -12,6 +12,7 @@
 	.long	1
 .LCPI0_2:
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003e9:
 	vpmovdw	%ymm1, %xmm1
 	vpbroadcastw	.LCPI0_2(%rip), %xmm2

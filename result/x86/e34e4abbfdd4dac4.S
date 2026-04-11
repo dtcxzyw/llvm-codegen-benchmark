@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
 	movzbl	%sil, %eax
 	shll	$8, %eax
@@ -7,6 +8,7 @@ func0000000000000184:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000386:
 	movzbl	%sil, %eax
 	shll	$6, %eax
@@ -15,6 +17,7 @@ func0000000000000386:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001ec:
 	movzbl	%sil, %eax
 	shll	$4, %eax
@@ -23,6 +26,7 @@ func00000000000001ec:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001c8:
 	movzbl	%sil, %eax
 	shll	$8, %eax
@@ -31,6 +35,7 @@ func00000000000001c8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001a6:
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,4), %eax
@@ -38,6 +43,7 @@ func00000000000001a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000003aa:
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,2), %eax
@@ -45,6 +51,7 @@ func00000000000003aa:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000388:
 	shll	$28, %esi
 	addl	%edi, %esi
@@ -52,6 +59,7 @@ func0000000000000388:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001f8:
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,8), %eax
@@ -59,6 +67,7 @@ func00000000000001f8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001f4:
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,8), %eax
@@ -66,6 +75,7 @@ func00000000000001f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000188:
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,8), %eax
@@ -73,6 +83,7 @@ func0000000000000188:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000001aa:
 	movzbl	%sil, %eax
 	addl	%eax, %eax

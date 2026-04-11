@@ -5,6 +5,7 @@
 	.long	8388607
 .LCPI0_2:
 	.long	2147483648
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm2
@@ -20,6 +21,7 @@ func0000000000000088:
 	.long	8388607
 .LCPI1_2:
 	.long	2147483648
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008c:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpternlogd	$248, .LCPI1_1(%rip){1to8}, %ymm1, %ymm2

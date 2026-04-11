@@ -5,6 +5,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_2:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vaddsd	.LCPI0_0(%rip), %xmm0, %xmm1
 	kmovd	%edi, %k1
@@ -15,6 +16,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vaddsd	%xmm1, %xmm0, %xmm1

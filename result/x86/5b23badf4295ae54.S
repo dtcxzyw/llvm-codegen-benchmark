@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000012c:
 	cmpl	$1, %edx
 	adcl	$0, %edx
@@ -9,6 +10,7 @@ func000000000000012c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	cmpl	$6, %edx
 	movl	$5, %eax

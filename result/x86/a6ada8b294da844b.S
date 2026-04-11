@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -8,6 +9,7 @@ func0000000000000004:
 	cmovbel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	testb	$1, %sil
 	movl	$8, %eax
@@ -19,6 +21,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	andb	$1, %sil
 	vucomiss	.LCPI2_0(%rip), %xmm0

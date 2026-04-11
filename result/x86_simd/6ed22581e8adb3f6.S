@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	85
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c8:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -12,6 +13,7 @@ func00000000000000c8:
 
 .LCPI1_0:
 	.long	4294967286
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -25,6 +27,7 @@ func0000000000000001:
 	.long	2147483695
 .LCPI2_1:
 	.long	10
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000012a:
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -38,6 +41,7 @@ func000000000000012a:
 	.long	47
 .LCPI3_1:
 	.long	10
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000048:
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -51,6 +55,7 @@ func0000000000000048:
 	.long	2147483695
 .LCPI4_1:
 	.long	10
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002a:
 	vpbroadcastd	.LCPI4_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -64,6 +69,7 @@ func000000000000002a:
 	.long	2147483695
 .LCPI5_1:
 	.long	10
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000010a:
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -77,6 +83,7 @@ func000000000000010a:
 	.long	3648
 .LCPI6_1:
 	.long	152
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -88,6 +95,7 @@ func0000000000000008:
 
 .LCPI7_0:
 	.long	4294967244
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ac:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -99,6 +107,7 @@ func00000000000000ac:
 
 .LCPI8_0:
 	.long	4294967244
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000a1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -112,6 +121,7 @@ func00000000000000a1:
 	.long	2147483647
 .LCPI9_1:
 	.long	10
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000aa:
 	vpxord	.LCPI9_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI9_1(%rip){1to8}, %ymm0, %ymm0
@@ -120,6 +130,7 @@ func00000000000000aa:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1

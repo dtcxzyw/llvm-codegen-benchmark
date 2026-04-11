@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000101:
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -9,6 +10,7 @@ func0000000000000101:
 
 .LCPI1_0:
 	.quad	9
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000108:
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1

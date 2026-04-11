@@ -20,6 +20,7 @@
 	.long	1
 .LCPI0_2:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000266:
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2
@@ -51,6 +52,7 @@ func0000000000000266:
 	.long	1
 .LCPI1_2:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000022a:
 	vpcmpltub	.LCPI1_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2
@@ -65,6 +67,7 @@ func000000000000022a:
 	.long	2
 .LCPI2_1:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a6:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2
@@ -96,6 +99,7 @@ func00000000000000a6:
 	.long	4294967209
 .LCPI3_2:
 	.long	4294967248
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000324:
 	vpcmpltb	.LCPI3_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm2
@@ -127,6 +131,7 @@ func0000000000000324:
 	.long	3
 .LCPI4_2:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000e6:
 	vpcmpeqb	.LCPI4_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm2
@@ -158,6 +163,7 @@ func00000000000000e6:
 	.long	2
 .LCPI5_2:
 	.long	4
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000474:
 	vpcmpnleub	.LCPI5_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm2
@@ -172,6 +178,7 @@ func0000000000000474:
 	.long	1
 .LCPI6_1:
 	.long	3
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000e8:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2
@@ -203,6 +210,7 @@ func00000000000000e8:
 	.long	7
 .LCPI7_2:
 	.long	2
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000086:
 	vpcmpeqb	.LCPI7_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI7_1(%rip), %ymm2
@@ -217,6 +225,7 @@ func0000000000000086:
 	.long	1
 .LCPI8_1:
 	.long	9
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000364:
 	vpmovb2m	%xmm2, %k1
 	vpbroadcastd	.LCPI8_0(%rip), %ymm2
@@ -231,6 +240,7 @@ func0000000000000364:
 	.long	7
 .LCPI9_1:
 	.long	6
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000f8:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI9_0(%rip), %ymm2
@@ -245,6 +255,7 @@ func00000000000000f8:
 	.long	4
 .LCPI10_1:
 	.long	9
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000aa:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI10_0(%rip), %ymm2

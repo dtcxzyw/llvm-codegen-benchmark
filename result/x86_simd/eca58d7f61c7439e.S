@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpor	%ymm2, %ymm0, %ymm0
 	vptestnmq	%ymm1, %ymm0, %k0
@@ -6,6 +7,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vptestnmq	%ymm2, %ymm0, %k1
 	vptestmq	%ymm1, %ymm0, %k0 {%k1}

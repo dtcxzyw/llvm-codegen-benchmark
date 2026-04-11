@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -8,6 +9,7 @@ func0000000000000006:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	andl	$63, %esi
 	testb	$1, %dil
@@ -17,6 +19,7 @@ func0000000000000002:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	andl	$7, %esi
 	notb	%dil

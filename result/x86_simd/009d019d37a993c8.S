@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,17
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -12,6 +13,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.zero	16,95
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -21,6 +23,7 @@ func0000000000000002:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -32,6 +35,7 @@ func000000000000000c:
 
 .LCPI3_0:
 	.zero	16,22
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000030:
 	vpcmpneqb	.LCPI3_0(%rip), %xmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -43,6 +47,7 @@ func0000000000000030:
 
 .LCPI4_0:
 	.zero	16,20
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -52,6 +57,7 @@ func0000000000000018:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vptestnmb	%xmm2, %xmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -63,6 +69,7 @@ func0000000000000004:
 
 .LCPI6_0:
 	.zero	16,10
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000010:
 	vpcmpltub	.LCPI6_0(%rip), %xmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -72,6 +79,7 @@ func0000000000000010:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000014:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -82,6 +90,7 @@ func0000000000000014:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000028:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpgtb	%xmm3, %xmm2, %k0

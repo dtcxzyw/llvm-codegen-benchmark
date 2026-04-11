@@ -3,6 +3,7 @@
 	.quad	-7046029288634856825
 .LCPI0_1:
 	.quad	-8796714831421723037
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vprolq	$27, %ymm0, %ymm0
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0

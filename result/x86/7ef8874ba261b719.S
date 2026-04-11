@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000006c:
 	vucomiss	%xmm1, %xmm0
 	setb	%cl
@@ -7,6 +8,7 @@ func000000000000006c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	vucomiss	%xmm0, %xmm1
 	setb	%cl
@@ -15,6 +17,7 @@ func00000000000000a1:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vucomiss	%xmm1, %xmm0
 	seta	%cl
@@ -23,6 +26,7 @@ func0000000000000081:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ec:
 	vucomiss	%xmm1, %xmm0
 	setp	%al
@@ -33,6 +37,7 @@ func00000000000000ec:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000010c:
 	vucomiss	%xmm1, %xmm0
 	setnp	%al
@@ -43,6 +48,7 @@ func000000000000010c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000161:
 	vucomiss	%xmm1, %xmm0
 	setbe	%cl
@@ -51,6 +57,7 @@ func0000000000000161:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000041:
 	vucomiss	%xmm0, %xmm1
 	seta	%cl

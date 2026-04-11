@@ -8,6 +8,7 @@
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpmovdw	%ymm1, %xmm1

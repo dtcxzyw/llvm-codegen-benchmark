@@ -5,6 +5,7 @@
 	.long	2
 .LCPI0_2:
 	.long	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vandps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
@@ -54,6 +55,7 @@ func0000000000000003:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vandps	.LCPI1_3(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1

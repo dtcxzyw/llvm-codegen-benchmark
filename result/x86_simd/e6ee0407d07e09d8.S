@@ -13,6 +13,7 @@
 .LCPI0_2:
 	.short	62
 	.short	62
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1

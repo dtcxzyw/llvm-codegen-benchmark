@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	274877907
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpshufd	$245, %xmm2, %xmm3
 	vpbroadcastd	.LCPI0_0(%rip), %xmm4
@@ -21,6 +22,7 @@ func0000000000000024:
 
 .LCPI1_0:
 	.long	274877907
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000086:
 	vpshufd	$245, %xmm2, %xmm3
 	vpbroadcastd	.LCPI1_0(%rip), %xmm4
@@ -39,6 +41,7 @@ func0000000000000086:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a6:
 	vpsrld	$31, %xmm2, %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2

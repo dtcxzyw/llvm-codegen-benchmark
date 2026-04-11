@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000486:
 	leal	-32(%rdi), %eax
 	cmpb	$6, %sil
@@ -8,6 +9,7 @@ func0000000000000486:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000498:
 	leal	-32(%rdi), %eax
 	cmpb	$6, %sil
@@ -17,6 +19,7 @@ func0000000000000498:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000494:
 	leal	-32(%rdi), %eax
 	cmpb	$6, %sil
@@ -26,6 +29,7 @@ func0000000000000494:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c81:
 	leal	32(%rdi), %eax
 	cmpb	$26, %sil
@@ -35,6 +39,7 @@ func0000000000000c81:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000481:
 	leal	-32(%rdi), %eax
 	cmpb	$26, %sil
@@ -44,6 +49,7 @@ func0000000000000481:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000048c:
 	leal	-32(%rdi), %eax
 	cmpb	$26, %sil

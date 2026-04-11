@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x3e45798ee2308c3a
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002cb:
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm0
 	vucomisd	.LCPI0_1(%rip), %xmm0
@@ -16,6 +17,7 @@ func00000000000002cb:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c2:
 	vandpd	.LCPI1_0(%rip){1to2}, %xmm0, %xmm0
 	vmovsd	.LCPI1_1(%rip), %xmm1

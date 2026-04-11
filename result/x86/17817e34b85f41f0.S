@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f7fbe77
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006cb:
 	incq	%rsi
 	cmpq	%rdi, %rsi
@@ -10,6 +11,7 @@ func00000000000006cb:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000006cd:
 	incq	%rsi
 	cmpq	%rdi, %rsi
@@ -20,6 +22,7 @@ func00000000000006cd:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000004c8:
 	incq	%rsi
 	cmpq	%rdi, %rsi

@@ -10,6 +10,7 @@
 	.zero	2
 .LCPI0_1:
 	.long	256
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c8:
 	vpcmpnltuw	.LCPI0_0(%rip), %xmm1, %k1
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm0 {%k1}
@@ -25,6 +26,7 @@ func00000000000000c8:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpneqw	.LCPI1_0(%rip), %xmm1, %k1

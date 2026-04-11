@@ -3,6 +3,7 @@
 	.long	2290649225
 .LCPI0_1:
 	.long	60
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
@@ -57,6 +58,7 @@ func0000000000000000:
 	.long	2863311531
 .LCPI1_1:
 	.long	1431655766
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

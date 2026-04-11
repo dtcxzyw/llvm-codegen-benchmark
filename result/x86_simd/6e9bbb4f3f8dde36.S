@@ -5,6 +5,7 @@
 	.long	16777216
 .LCPI0_2:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vandps	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vptestmd	%ymm0, %ymm0, %k1
@@ -18,6 +19,7 @@ func0000000000000043:
 	.long	8388608
 .LCPI1_2:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vandps	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vptestmd	%ymm0, %ymm0, %k1
@@ -31,6 +33,7 @@ func0000000000000042:
 	.long	1627388926
 .LCPI2_2:
 	.long	2147483648
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vandps	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vptestmd	%ymm0, %ymm0, %k1

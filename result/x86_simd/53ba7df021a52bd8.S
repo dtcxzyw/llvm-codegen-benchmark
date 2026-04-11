@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1152921504606846975
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a8:
 	vpsraq	$3, %ymm1, %ymm1
 	vpsraq	$3, %ymm0, %ymm0
@@ -10,6 +11,7 @@ func00000000000001a8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001a1:
 	vpsraq	$4, %ymm1, %ymm1
 	vpsraq	$5, %ymm0, %ymm0
@@ -20,6 +22,7 @@ func00000000000001a1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001aa:
 	vpsraq	$3, %ymm1, %ymm1
 	vpsraq	$3, %ymm0, %ymm0
@@ -32,6 +35,7 @@ func00000000000001aa:
 
 .LCPI3_0:
 	.quad	64
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001b4:
 	vpsraq	$3, %ymm1, %ymm1
 	vpsraq	$3, %ymm0, %ymm0
@@ -43,6 +47,7 @@ func00000000000001b4:
 
 .LCPI4_0:
 	.quad	-32768
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001a6:
 	vpsraq	$48, %ymm1, %ymm1
 	vpsraq	$48, %ymm0, %ymm0
@@ -52,6 +57,7 @@ func00000000000001a6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000121:
 	vpsraq	$3, %ymm1, %ymm1
 	vpsraq	$63, %ymm0, %ymm0
@@ -64,6 +70,7 @@ func0000000000000121:
 
 .LCPI6_0:
 	.quad	-61440
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
 	vpsraq	$32, %ymm1, %ymm1
 	vpsraq	$32, %ymm0, %ymm0
@@ -75,6 +82,7 @@ func000000000000002a:
 
 .LCPI7_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000124:
 	vpsraq	$6, %ymm1, %ymm1
 	vpsraq	$1, %ymm0, %ymm0
@@ -86,6 +94,7 @@ func0000000000000124:
 
 .LCPI8_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001a4:
 	vpsraq	$6, %ymm1, %ymm1
 	vpsraq	$6, %ymm0, %ymm0
@@ -95,6 +104,7 @@ func00000000000001a4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000012a:
 	vpsraq	$3, %ymm1, %ymm1
 	vpsraq	$1, %ymm0, %ymm0
@@ -107,6 +117,7 @@ func000000000000012a:
 
 .LCPI10_0:
 	.quad	64
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000134:
 	vpsraq	$3, %ymm1, %ymm1
 	vpsraq	$1, %ymm0, %ymm0
@@ -118,6 +129,7 @@ func0000000000000134:
 
 .LCPI11_0:
 	.quad	1152921504606846976
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000024:
 	vpsraq	$2, %ymm1, %ymm1
 	vpsraq	$2, %ymm0, %ymm0

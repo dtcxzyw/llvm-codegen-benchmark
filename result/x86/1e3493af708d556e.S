@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000169:
 	leaq	1(%rdi), %rax
 	cmpq	%rax, %rsi
@@ -10,6 +11,7 @@ func0000000000000169:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f9:
 	leaq	1(%rdi), %rax
 	cmpq	%rax, %rsi

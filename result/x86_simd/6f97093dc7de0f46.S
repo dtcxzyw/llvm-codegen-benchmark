@@ -48,6 +48,7 @@
 	.byte	16
 	.byte	8
 	.byte	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpshufd	$245, %ymm1, %ymm2
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3

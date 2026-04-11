@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovdb	%ymm1, %xmm1
 	vpextrb	$1, %xmm0, %ecx
@@ -51,6 +52,7 @@ func0000000000000006:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovdb	%ymm1, %xmm1
 	vpextrb	$1, %xmm0, %ecx

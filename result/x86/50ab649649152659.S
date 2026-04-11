@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	andl	$16252928, %edx
 	andl	$64512, %esi
@@ -6,6 +7,7 @@ func0000000000000007:
 	leal	-16777216(%rdi,%rsi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	andl	$1024, %edx
 	andl	$1073740798, %esi
@@ -14,6 +16,7 @@ func0000000000000005:
 	orl	$-1073741824, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	movl	%esi, %eax
 	andl	$1879047166, %edx
@@ -23,6 +26,7 @@ func0000000000000000:
 	orl	$-2147483648, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	andl	$4, %edx
 	andl	$8, %esi
@@ -31,6 +35,7 @@ func0000000000000004:
 	orl	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	andl	$-23601, %edx
 	andl	$7168, %esi
@@ -39,6 +44,7 @@ func0000000000000006:
 	orl	$16384, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000003:
 	andl	$-32768, %edx
 	andl	$-32514, %esi

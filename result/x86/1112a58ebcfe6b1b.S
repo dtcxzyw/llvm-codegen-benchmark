@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	$1, %esi
 	movl	%edi, %eax
@@ -8,6 +9,7 @@ func0000000000000021:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	testl	%esi, %esi
 	movl	$42, %eax
@@ -16,6 +18,7 @@ func0000000000000181:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000298:
 	cmpl	$57344, %esi
 	movl	$-1, %eax
@@ -24,6 +27,7 @@ func0000000000000298:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000141:
 	testl	%esi, %esi
 	movl	$26, %eax
@@ -32,6 +36,7 @@ func0000000000000141:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000101:
 	cmpl	$48, %esi
 	movl	$2, %eax
@@ -40,6 +45,7 @@ func0000000000000101:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000014a:
 	testl	%esi, %esi
 	movl	$-1, %eax
@@ -48,6 +54,7 @@ func000000000000014a:
 	cmovlel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
 	testl	%esi, %esi
 	movl	$255, %eax
@@ -56,6 +63,7 @@ func000000000000002a:
 	cmovll	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000c1:
 	testl	%esi, %esi
 	movl	$-1, %eax

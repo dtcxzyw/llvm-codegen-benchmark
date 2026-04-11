@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0xbeb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000005b:
 	vcmpnlesd	%xmm1, %xmm0, %k0
 	vcmpngtsd	.LCPI0_0(%rip), %xmm0, %k1
@@ -10,6 +11,7 @@ func000000000000005b:
 
 .LCPI1_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000053:
 	vcmpnlesd	%xmm1, %xmm0, %k0
 	vcmpngesd	.LCPI1_0(%rip), %xmm0, %k1
@@ -17,6 +19,7 @@ func0000000000000053:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002b:
 	vcmpltsd	%xmm1, %xmm0, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -25,6 +28,7 @@ func000000000000002b:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000048:
 	vcmpltsd	%xmm0, %xmm1, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -33,6 +37,7 @@ func0000000000000048:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000041:
 	vcmpltsd	%xmm0, %xmm1, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -41,6 +46,7 @@ func0000000000000041:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002e:
 	vcmpltsd	%xmm1, %xmm0, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -51,6 +57,7 @@ func000000000000002e:
 
 .LCPI6_0:
 	.quad	0x3fbacee9f37bebd5
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000042:
 	vcmpltsd	%xmm0, %xmm1, %k0
 	vcmpltsd	.LCPI6_0(%rip), %xmm0, %k1
@@ -58,6 +65,7 @@ func0000000000000042:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000009b:
 	vcmpeq_uqsd	%xmm1, %xmm0, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -66,6 +74,7 @@ func000000000000009b:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000db:
 	vcmpnltsd	%xmm1, %xmm0, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1

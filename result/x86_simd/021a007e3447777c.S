@@ -14,6 +14,7 @@
 	.long	7
 .LCPI0_3:
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003aa:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1

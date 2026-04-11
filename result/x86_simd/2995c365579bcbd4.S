@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000015f:
 	vpcmpleud	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %xmm1
@@ -7,6 +8,7 @@ func000000000000015f:
 	vpsllq	$32, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000005f:
 	vpcmpeqd	%xmm2, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0

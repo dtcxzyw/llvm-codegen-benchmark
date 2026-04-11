@@ -3,6 +3,7 @@
 	.long	0x437f0000
 .LCPI0_1:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vaddps	.LCPI0_1(%rip){1to16}, %zmm0, %zmm0
@@ -16,6 +17,7 @@ func0000000000000002:
 	.long	0x437f0000
 .LCPI1_1:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vbroadcastss	.LCPI1_0(%rip), %zmm1
 	vmulps	%zmm1, %zmm0, %zmm0
@@ -31,6 +33,7 @@ func0000000000000004:
 	.long	0x3f000000
 .LCPI2_2:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000b:
 	vmulps	.LCPI2_0(%rip){1to16}, %zmm0, %zmm0
 	vaddps	.LCPI2_1(%rip){1to16}, %zmm0, %zmm0
@@ -45,6 +48,7 @@ func000000000000000b:
 	.long	0x3f000000
 .LCPI3_2:
 	.long	0x43800000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vmulps	.LCPI3_0(%rip){1to16}, %zmm0, %zmm0
 	vaddps	.LCPI3_1(%rip){1to16}, %zmm0, %zmm0
@@ -57,6 +61,7 @@ func000000000000000d:
 	.long	0x3f000000
 .LCPI4_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vmulps	.LCPI4_0(%rip){1to16}, %zmm0, %zmm0
 	vbroadcastss	.LCPI4_1(%rip), %zmm1
@@ -70,6 +75,7 @@ func0000000000000007:
 	.long	0x449981af
 .LCPI5_1:
 	.long	0x44d06000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vmulps	.LCPI5_0(%rip){1to16}, %zmm0, %zmm0
 	vbroadcastss	.LCPI5_1(%rip), %zmm1
@@ -85,6 +91,7 @@ func000000000000000c:
 	.long	0x44d06000
 .LCPI6_2:
 	.long	0x457a0000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vmulps	.LCPI6_0(%rip){1to16}, %zmm0, %zmm0
 	vaddps	.LCPI6_1(%rip){1to16}, %zmm0, %zmm0
@@ -99,6 +106,7 @@ func000000000000000a:
 	.long	0x44d06000
 .LCPI7_2:
 	.long	0x457a0000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000003:
 	vmulps	.LCPI7_0(%rip){1to16}, %zmm0, %zmm0
 	vaddps	.LCPI7_1(%rip){1to16}, %zmm0, %zmm0
@@ -113,6 +121,7 @@ func0000000000000003:
 	.long	0x44d06000
 .LCPI8_2:
 	.long	0x45dac000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000005:
 	vmulps	.LCPI8_0(%rip){1to16}, %zmm0, %zmm0
 	vaddps	.LCPI8_1(%rip){1to16}, %zmm0, %zmm0
@@ -125,6 +134,7 @@ func0000000000000005:
 	.long	0x41200000
 .LCPI9_1:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	vmulps	.LCPI9_0(%rip){1to16}, %zmm0, %zmm0
 	vaddps	.LCPI9_1(%rip){1to16}, %zmm0, %zmm0

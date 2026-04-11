@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx

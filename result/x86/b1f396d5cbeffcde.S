@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000761:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqss	%xmm1, %xmm0, %k0
@@ -7,6 +8,7 @@ func0000000000000761:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000408:
 	vxorps	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
@@ -17,6 +19,7 @@ func0000000000000408:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000778:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqss	%xmm1, %xmm0, %k0
@@ -26,6 +29,7 @@ func0000000000000778:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000278:
 	vxorps	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax

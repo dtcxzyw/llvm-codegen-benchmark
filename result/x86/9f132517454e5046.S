@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	sarq	$3, %rsi
 	movabsq	$-6148914691236517205, %rax
@@ -9,6 +10,7 @@ func000000000000000a:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	sarq	$3, %rsi
 	movabsq	$7905747460161236407, %rax
@@ -19,6 +21,7 @@ func000000000000000e:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	movq	%rsi, %rax
 	movabsq	$2361183241434822607, %rcx
@@ -33,6 +36,7 @@ func0000000000000002:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	sarq	$2, %rsi
 	movabsq	$-6148914691236517205, %rax

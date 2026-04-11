@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002f:
 	andl	$134217727, %edx
 	decl	%edx
@@ -7,6 +8,7 @@ func000000000000002f:
 	leaq	(%rsi,%rdx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003b:
 	shlq	$5, %rsi
 	addq	%rdi, %rsi
@@ -14,6 +16,7 @@ func000000000000003b:
 	leaq	-32(%rdx,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002b:
 	andl	$134217727, %edx
 	leal	-1(%rdx), %eax
@@ -23,6 +26,7 @@ func000000000000002b:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000007f:
 	movzbl	%dl, %eax
 	shlq	$4, %rsi
@@ -31,24 +35,28 @@ func000000000000007f:
 	leaq	16(%rax,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000007b:
 	movzbl	%dl, %eax
 	addq	%rsi, %rdi
 	leaq	4(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000070:
 	andl	$511, %edx
 	addq	%rsi, %rdi
 	leaq	1(%rdx,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000007c:
 	andl	$511, %edx
 	leaq	(%rdi,%rsi,4), %rax
 	leaq	4(%rax,%rdx,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000073:
 	andl	$511, %edx
 	addq	%rsi, %rdi

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
@@ -16,6 +17,7 @@ func0000000000000024:
 	.long	0x3fa00000
 .LCPI1_1:
 	.long	0x3f4ccccd
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
@@ -31,6 +33,7 @@ func0000000000000042:
 	.long	0x3f800000
 .LCPI2_1:
 	.long	0x3e800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000045:
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
@@ -42,6 +45,7 @@ func0000000000000045:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1

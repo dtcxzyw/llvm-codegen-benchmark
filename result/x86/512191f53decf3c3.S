@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	testl	$2048, %edx
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000302:
 	testl	$897, %edx
 	setne	%cl
@@ -17,6 +19,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000310:
 	andl	$13, %edx
 	cmpl	$5, %edx
@@ -27,6 +30,7 @@ func0000000000000310:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000318:
 	andl	$32, %edx
 	shrl	$5, %edx
@@ -36,6 +40,7 @@ func0000000000000318:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000058:
 	testb	$32, %dl
 	sete	%cl
@@ -45,6 +50,7 @@ func0000000000000058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000030c:
 	testl	$-5, %edx
 	setne	%cl
@@ -54,6 +60,7 @@ func000000000000030c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000004c:
 	testb	$3, %dl
 	sete	%cl
@@ -63,6 +70,7 @@ func000000000000004c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000050:
 	testb	$1, %dl
 	sete	%cl
@@ -72,6 +80,7 @@ func0000000000000050:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000054:
 	notl	%edx
 	testl	$2139095040, %edx
@@ -82,6 +91,7 @@ func0000000000000054:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000308:
 	andl	$224, %edx
 	cmpl	$192, %edx

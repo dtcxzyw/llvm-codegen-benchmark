@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	960
 	.short	960
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpmovzxwd	%xmm1, %ymm1
 	vpslld	$10, %ymm1, %ymm1

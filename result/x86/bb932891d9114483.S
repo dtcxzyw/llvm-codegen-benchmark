@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001a:
 	vmovd	%esi, %xmm0
 	vmovd	%edi, %xmm1
@@ -7,6 +8,7 @@ func000000000000001a:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000005a:
 	vmovd	%esi, %xmm0
 	vmovd	%edi, %xmm1

@@ -37,6 +37,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
 	vptestnmd	%ymm0, %ymm0, %k1

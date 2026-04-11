@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	shrxl	%edx, %esi, %eax
 	cmpl	$1, %eax
@@ -6,6 +7,7 @@ func0000000000000001:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	shrxl	%edx, %esi, %eax
 	testl	%eax, %eax
@@ -13,6 +15,7 @@ func000000000000000c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	shrxl	%edx, %esi, %eax
 	cmpl	$32, %eax
@@ -20,6 +23,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	shrxl	%edx, %esi, %eax
 	cmpl	$5, %eax
@@ -27,6 +31,7 @@ func0000000000000014:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	shrxl	%edx, %esi, %eax
 	cmpl	$127, %eax
@@ -34,6 +39,7 @@ func0000000000000018:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	shrxl	%edx, %esi, %eax
 	testl	%eax, %eax

@@ -3,6 +3,7 @@
 	.long	8
 .LCPI0_1:
 	.quad	-32212254720
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000426:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpcmpltd	.LCPI0_0(%rip){1to4}, %xmm0, %k1
@@ -11,6 +12,7 @@ func0000000000000426:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm2, %xmm3, %xmm2

@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	32768
 	.short	32768
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpxord	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnleuw	%ymm0, %ymm1, %k0
@@ -43,6 +44,7 @@ func0000000000000008:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpxor	%ymm0, %ymm1, %ymm0
 	vpcmpeqw	.LCPI1_0(%rip), %ymm0, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vsubps	%zmm2, %zmm1, %zmm3
 	vcmpltps	%zmm2, %zmm1, %k1
@@ -6,6 +7,7 @@ func0000000000000002:
 	vmovaps	%zmm3, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vsubps	%zmm2, %zmm1, %zmm3
 	vcmpltps	%zmm1, %zmm2, %k1

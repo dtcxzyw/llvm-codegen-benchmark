@@ -30,6 +30,7 @@
 .LCPI0_3:
 	.short	65509
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000075:
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1

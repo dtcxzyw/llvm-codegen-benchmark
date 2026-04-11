@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a4:
 	leal	-65664(%rsi,%rdi), %eax
 	cmpl	$1048576, %eax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000124:
 	addl	$-62914560, %esi
 	orl	%edi, %esi

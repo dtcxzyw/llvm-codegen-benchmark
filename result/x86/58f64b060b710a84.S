@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fffffe000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000054:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmplesd	%xmm1, %xmm0, %k1
@@ -11,6 +12,7 @@ func0000000000000054:
 
 .LCPI1_0:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vmaxsd	%xmm1, %xmm0, %xmm0
@@ -22,6 +24,7 @@ func0000000000000042:
 	.quad	0xc1e0000000000000
 .LCPI2_1:
 	.quad	0x41dfffffffc00000
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c4:
 	vmaxsd	.LCPI2_0(%rip), %xmm0, %xmm0
 	vmovsd	.LCPI2_1(%rip), %xmm1
@@ -30,6 +33,7 @@ func00000000000000c4:
 
 .LCPI3_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000044:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vmaxsd	%xmm1, %xmm0, %xmm0
@@ -41,6 +45,7 @@ func0000000000000044:
 	.quad	0x3fb999999999999a
 .LCPI4_1:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000052:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpnlesd	%xmm1, %xmm0, %k1
@@ -50,6 +55,7 @@ func0000000000000052:
 	vmaxsd	%xmm1, %xmm0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ea:
 	vcmpordsd	%xmm0, %xmm0, %k1
 	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}

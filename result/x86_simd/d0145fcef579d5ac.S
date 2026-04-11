@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000006f:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$48, %ymm1, %ymm1
@@ -6,6 +7,7 @@ func000000000000006f:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$9, %ymm1, %ymm1
@@ -13,6 +15,7 @@ func000000000000003f:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001d:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$5, %ymm1, %ymm1
@@ -20,6 +23,7 @@ func000000000000001d:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000007f:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$5, %ymm1, %ymm1
@@ -27,6 +31,7 @@ func000000000000007f:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000035:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$5, %ymm1, %ymm1
@@ -34,6 +39,7 @@ func0000000000000035:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$3, %ymm1, %ymm1
@@ -41,6 +47,7 @@ func000000000000000c:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000030:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$3, %ymm1, %ymm1
@@ -48,6 +55,7 @@ func0000000000000030:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000005d:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$3, %ymm1, %ymm1
@@ -55,6 +63,7 @@ func000000000000005d:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000000:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$35, %ymm1, %ymm1
@@ -62,6 +71,7 @@ func0000000000000000:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000075:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$2, %ymm1, %ymm1
@@ -69,6 +79,7 @@ func0000000000000075:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000028:
 	vpmovzxdq	%xmm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0

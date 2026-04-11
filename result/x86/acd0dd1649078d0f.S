@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
 	andl	$858993459, %esi
 	leal	(%rsi,%rdi), %ecx

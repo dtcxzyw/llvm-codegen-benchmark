@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	addl	$7, %edi
 	shrl	$3, %edi
 	leal	44(%rdi,%rdi,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004a:
 	addl	$32768, %edi
 	shrl	$16, %edi
@@ -12,6 +14,7 @@ func000000000000004a:
 	addl	$8388608, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	leal	128(%rdi), %eax
 	movl	%eax, %ecx
@@ -21,6 +24,7 @@ func000000000000000a:
 	addl	$64, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	incl	%edi
 	shrl	%edi

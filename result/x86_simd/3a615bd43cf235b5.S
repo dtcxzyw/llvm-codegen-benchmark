@@ -32,6 +32,7 @@
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0

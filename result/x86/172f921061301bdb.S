@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	addb	$-16, %sil
 	movzbl	%sil, %ecx
@@ -7,6 +8,7 @@ func0000000000000000:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	addb	$2, %sil
 	movzbl	%sil, %ecx
@@ -15,6 +17,7 @@ func0000000000000004:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	addb	$2, %sil
 	movzbl	%sil, %ecx
@@ -23,6 +26,7 @@ func0000000000000007:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	addb	$-2, %sil
 	movzbl	%sil, %ecx
@@ -31,6 +35,7 @@ func0000000000000002:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	addb	$-48, %sil
 	movzbl	%sil, %ecx

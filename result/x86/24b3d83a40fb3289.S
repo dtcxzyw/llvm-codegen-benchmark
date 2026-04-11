@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vcvtsd2ss	%xmm2, %xmm2, %xmm2
 	vminss	%xmm1, %xmm2, %xmm1
@@ -6,6 +7,7 @@ func0000000000000042:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
 	vcvtsd2ss	%xmm2, %xmm2, %xmm2
 	vcmpless	%xmm2, %xmm1, %k1
@@ -14,6 +16,7 @@ func00000000000000a4:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vcvtsd2ss	%xmm2, %xmm2, %xmm2
 	vmaxss	%xmm1, %xmm2, %xmm1
@@ -21,6 +24,7 @@ func0000000000000024:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000044:
 	vcvtsd2ss	%xmm2, %xmm2, %xmm2
 	vminss	%xmm1, %xmm2, %xmm1

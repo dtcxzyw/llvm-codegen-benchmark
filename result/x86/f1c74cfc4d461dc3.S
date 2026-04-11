@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	shrl	$15, %edi
 	andb	$31, %dil
@@ -7,6 +8,7 @@ func000000000000000d:
 	notq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	shrq	$46, %rdi
 	movabsq	$1099511627776, %rax

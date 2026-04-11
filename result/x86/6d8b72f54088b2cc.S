@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vmovq	%xmm0, %rax
 	shrq	$52, %rax
@@ -13,6 +14,7 @@ func0000000000000009:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vandpd	.LCPI1_0(%rip){1to2}, %xmm0, %xmm1
 	vmovsd	.LCPI1_1(%rip), %xmm2
@@ -24,6 +26,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3e45798ee2308c3a
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm0, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -35,6 +38,7 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x38aa95a5c0000000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vandpd	.LCPI3_0(%rip){1to2}, %xmm0, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
@@ -46,6 +50,7 @@ func000000000000000a:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x4056800000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vandpd	.LCPI4_0(%rip){1to2}, %xmm0, %xmm1
 	vmovsd	.LCPI4_1(%rip), %xmm2
@@ -53,6 +58,7 @@ func0000000000000004:
 	vmovsd	%xmm2, %xmm0, %xmm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vmovq	%xmm0, %rax
 	movb	$63, %cl

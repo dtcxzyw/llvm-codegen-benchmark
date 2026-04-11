@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsrad	$31, %ymm1, %ymm1
 	vpternlogd	$222, %ymm2, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vptestmd	%ymm1, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vpcmpeqq	%ymm2, %ymm1, %k0
 	vpcmpnleuw	.LCPI0_0(%rip), %xmm0, %k1
@@ -25,6 +26,7 @@ func0000000000000028:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vpcmpeqq	%ymm2, %ymm1, %k0
 	vpcmpneqw	.LCPI1_0(%rip), %xmm0, %k1
@@ -42,6 +44,7 @@ func000000000000002c:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpcmpeqw	.LCPI2_0(%rip), %xmm0, %k1
@@ -50,6 +53,7 @@ func0000000000000081:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000101:
 	vpcmpnleuq	%ymm2, %ymm1, %k0
 	vptestnmw	%xmm0, %xmm0, %k1
@@ -58,6 +62,7 @@ func0000000000000101:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ac:
 	vpcmpleuq	%ymm2, %ymm1, %k0
 	vptestmw	%xmm0, %xmm0, %k1
@@ -75,6 +80,7 @@ func00000000000000ac:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpcmpltuw	.LCPI5_0(%rip), %xmm0, %k1
@@ -83,6 +89,7 @@ func0000000000000084:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000181:
 	vpcmpneqq	%ymm2, %ymm1, %k0
 	vptestnmw	%xmm0, %xmm0, %k1
@@ -100,6 +107,7 @@ func0000000000000181:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	vpcmpeqq	%ymm2, %ymm1, %k0
 	vpcmpltuw	.LCPI7_0(%rip), %xmm0, %k1
@@ -108,6 +116,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000021:
 	vpcmpeqq	%ymm2, %ymm1, %k0
 	vptestnmw	%xmm0, %xmm0, %k1
@@ -116,6 +125,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000012c:
 	vpcmpnltuq	%ymm2, %ymm1, %k0
 	vptestmw	%xmm0, %xmm0, %k1
@@ -124,6 +134,7 @@ func000000000000012c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a6:
 	vpcmpleuq	%ymm2, %ymm1, %k0
 	vpmovw2m	%xmm0, %k1

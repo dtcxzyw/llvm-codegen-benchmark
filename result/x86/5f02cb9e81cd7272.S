@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000521:
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
@@ -7,6 +8,7 @@ func0000000000000521:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000526:
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx

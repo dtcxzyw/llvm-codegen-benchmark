@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e7:
 	xorb	$31, %sil
 	movzbl	%sil, %eax
@@ -10,6 +11,7 @@ func00000000000000e7:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ea:
 	xorb	$31, %sil
 	movzbl	%sil, %eax

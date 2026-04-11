@@ -28,6 +28,7 @@
 .LCPI0_2:
 	.short	28672
 	.short	28672
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovqw	%ymm2, %xmm2
 	vpand	.LCPI0_0(%rip), %xmm2, %xmm2

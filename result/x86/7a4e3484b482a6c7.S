@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movl	$12288, %eax
 	shrxl	%edx, %eax, %eax
@@ -6,6 +7,7 @@ func0000000000000000:
 	shrxl	%edi, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movl	$65280, %eax
 	shrxl	%edx, %eax, %eax

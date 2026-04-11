@@ -3,6 +3,7 @@
 	.quad	9
 .LCPI0_1:
 	.quad	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -14,6 +15,7 @@ func0000000000000088:
 
 .LCPI1_0:
 	.quad	23
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -28,6 +30,7 @@ func0000000000000084:
 	.quad	-2
 .LCPI2_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000304:
 	vpmovb2m	%xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -39,6 +42,7 @@ func0000000000000304:
 
 .LCPI3_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000301:
 	vpmovb2m	%xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -51,6 +55,7 @@ func0000000000000301:
 	.quad	-40
 .LCPI4_1:
 	.quad	-24
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000308:
 	vpmovb2m	%xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -64,6 +69,7 @@ func0000000000000308:
 	.quad	-40
 .LCPI5_1:
 	.quad	-24
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000508:
 	vpmovb2m	%xmm2, %k1
 	vmovdqa64	%ymm1, %ymm0 {%k1}

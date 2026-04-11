@@ -28,6 +28,7 @@
 .LCPI0_2:
 	.short	36608
 	.short	36608
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovqw	%ymm2, %xmm2
 	vpternlogq	$248, .LCPI0_0(%rip), %xmm2, %xmm0
@@ -59,6 +60,7 @@ func0000000000000003:
 .LCPI1_3:
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpmovqw	%ymm2, %xmm2
 	vpternlogd	$248, .LCPI1_2(%rip){1to4}, %xmm2, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
@@ -7,6 +8,7 @@ func0000000000000000:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -15,6 +17,7 @@ func0000000000000014:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
@@ -25,6 +28,7 @@ func0000000000000010:
 
 .LCPI3_0:
 	.long	16777169
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000035:
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpand	%ymm2, %ymm1, %ymm1

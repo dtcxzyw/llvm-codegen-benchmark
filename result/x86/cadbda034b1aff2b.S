@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	notq	%rdx
 	addq	%rsi, %rdx
@@ -6,6 +7,7 @@ func0000000000000000:
 	imulq	$265, %rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	notq	%rdx
 	addq	%rsi, %rdx

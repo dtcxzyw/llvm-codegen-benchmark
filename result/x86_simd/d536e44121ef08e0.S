@@ -33,6 +33,7 @@
 	.short	221
 	.short	221
 	.short	221
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2

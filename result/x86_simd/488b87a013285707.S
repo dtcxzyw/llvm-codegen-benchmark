@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000074:
 	vpsrld	$3, %xmm1, %xmm1
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -14,6 +15,7 @@ func0000000000000074:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpsrld	$4, %xmm1, %xmm1
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
@@ -29,6 +31,7 @@ func0000000000000041:
 	.long	15
 .LCPI2_1:
 	.long	4
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e1:
 	vpsrld	$13, %xmm1, %xmm1
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
@@ -41,6 +44,7 @@ func00000000000000e1:
 
 .LCPI3_0:
 	.long	67108863
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000044:
 	vpsrld	$1, %xmm1, %xmm1
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
@@ -54,6 +58,7 @@ func0000000000000044:
 
 .LCPI4_0:
 	.long	4294967260
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000068:
 	vpsrld	$9, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -65,6 +70,7 @@ func0000000000000068:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000061:
 	vpsrld	$3, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -94,6 +100,7 @@ func0000000000000061:
 	.byte	128
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000f4:
 	vpshufb	.LCPI6_0(%rip), %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -106,6 +113,7 @@ func00000000000000f4:
 
 .LCPI7_0:
 	.long	3
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000048:
 	vpsrld	$3, %xmm1, %xmm1
 	vpandd	.LCPI7_0(%rip){1to4}, %xmm1, %xmm1
@@ -119,6 +127,7 @@ func0000000000000048:
 
 .LCPI8_0:
 	.long	511
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001e1:
 	vpsrld	$3, %xmm1, %xmm1
 	vpandd	.LCPI8_0(%rip){1to4}, %xmm1, %xmm1
@@ -132,6 +141,7 @@ func00000000000001e1:
 
 .LCPI9_0:
 	.long	511
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000e4:
 	vpsrld	$3, %xmm1, %xmm1
 	vpandd	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
@@ -145,6 +155,7 @@ func00000000000000e4:
 
 .LCPI10_0:
 	.long	511
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000e8:
 	vpsrld	$3, %xmm1, %xmm1
 	vpandd	.LCPI10_0(%rip){1to4}, %xmm1, %xmm1
@@ -156,6 +167,7 @@ func00000000000000e8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000064:
 	vpsrld	$1, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2

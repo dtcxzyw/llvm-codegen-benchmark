@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	16
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004c4:
 	vpsllq	$20, %ymm2, %ymm2
 	vpcmpltuq	%ymm0, %ymm2, %k1
@@ -9,6 +10,7 @@ func00000000000004c4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000054c:
 	vpsllq	$3, %ymm2, %ymm2
 	vpcmpneqq	%ymm0, %ymm2, %k1

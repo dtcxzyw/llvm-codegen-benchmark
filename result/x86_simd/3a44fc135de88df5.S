@@ -60,6 +60,7 @@
 	.byte	16
 	.byte	8
 	.byte	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000016:
 	vpmovdw	%ymm0, %xmm0
 	vpsrlw	$2, %xmm0, %xmm1

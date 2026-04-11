@@ -3,6 +3,7 @@
 	.quad	9223372036854775807
 .LCPI0_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vdivpd	%zmm3, %zmm1, %zmm1
 	vdivpd	%zmm2, %zmm0, %zmm0
@@ -21,6 +22,7 @@ func0000000000000008:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -39,6 +41,7 @@ func000000000000000a:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3e7ad7f29abcaf48
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -57,6 +60,7 @@ func0000000000000015:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x3e7ad7f29abcaf48
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -75,6 +79,7 @@ func000000000000001a:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -93,6 +98,7 @@ func0000000000000005:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -111,6 +117,7 @@ func000000000000000c:
 	.quad	0x7fffffffffffffff
 .LCPI6_1:
 	.quad	0x3f5ed5d8479950f6
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000014:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -129,6 +136,7 @@ func0000000000000014:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000012:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -147,6 +155,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI8_1:
 	.quad	0x4042800000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -165,6 +174,7 @@ func0000000000000004:
 	.quad	0x7fffffffffffffff
 .LCPI9_1:
 	.quad	0x401c48c6001f0abf
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000002:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -183,6 +193,7 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI10_1:
 	.quad	0x4000000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000003:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -199,6 +210,7 @@ func0000000000000003:
 
 .LCPI11_0:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000009:
 	vdivpd	%zmm3, %zmm1, %zmm1
 	vdivpd	%zmm2, %zmm0, %zmm0
@@ -216,6 +228,7 @@ func0000000000000009:
 	.quad	0x7fffffffffffffff
 .LCPI12_1:
 	.quad	0x3ee4f8b588e368f1
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000000d:
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
@@ -234,6 +247,7 @@ func000000000000000d:
 	.quad	9223372036854775807
 .LCPI13_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000007:
 	vdivpd	%zmm3, %zmm1, %zmm1
 	vdivpd	%zmm2, %zmm0, %zmm0
@@ -250,6 +264,7 @@ func0000000000000007:
 
 .LCPI14_0:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000006:
 	vdivpd	%zmm3, %zmm1, %zmm1
 	vdivpd	%zmm2, %zmm0, %zmm0

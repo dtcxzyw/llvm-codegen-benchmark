@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	testl	%edi, %edi
 	setg	%al
@@ -12,6 +13,7 @@ func00000000000000a4:
 
 .LCPI1_0:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a5:
 	cmpl	$-1, %edi
 	setge	%al
@@ -22,6 +24,7 @@ func00000000000000a5:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000013:
 	cmpl	$1, %edi
 	sete	%al
@@ -34,6 +37,7 @@ func0000000000000013:
 
 .LCPI3_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	testl	%edi, %edi
 	sete	%al
@@ -43,6 +47,7 @@ func0000000000000014:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000012:
 	cmpl	$1, %edi
 	sete	%al
@@ -53,6 +58,7 @@ func0000000000000012:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c2:
 	cmpl	$1, %edi
 	sete	%al
@@ -65,6 +71,7 @@ func00000000000000c2:
 
 .LCPI6_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000062:
 	testl	%edi, %edi
 	sets	%al
@@ -77,6 +84,7 @@ func0000000000000062:
 
 .LCPI7_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000064:
 	testl	%edi, %edi
 	sets	%al

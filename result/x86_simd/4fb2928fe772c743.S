@@ -3,6 +3,7 @@
 	.long	28
 .LCPI0_1:
 	.long	31
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000017:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm0, %ymm2
@@ -16,6 +17,7 @@ func0000000000000017:
 	.long	28
 .LCPI1_1:
 	.long	31
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm0, %ymm2
@@ -29,6 +31,7 @@ func0000000000000015:
 	.long	28
 .LCPI2_1:
 	.long	31
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm0, %ymm2

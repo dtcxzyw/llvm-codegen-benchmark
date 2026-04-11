@@ -16,6 +16,7 @@
 	.short	65488
 	.short	65488
 	.short	65488
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovsxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -39,6 +40,7 @@ func0000000000000000:
 	.short	65488
 	.short	65488
 	.short	65488
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpmovsxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

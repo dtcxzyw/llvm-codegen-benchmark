@@ -3,6 +3,7 @@
 	.zero	16,3
 .LCPI0_1:
 	.byte	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpbroadcastb	.LCPI0_1(%rip), %xmm3
 	vpand	%xmm3, %xmm2, %xmm2

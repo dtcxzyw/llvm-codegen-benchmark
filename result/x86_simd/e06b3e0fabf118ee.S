@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vcmpeqps	.LCPI0_0(%rip){1to16}, %zmm1, %k1
 	vpternlogd	$255, %zmm1, %zmm1, %zmm1
@@ -12,6 +13,7 @@ func0000000000000008:
 	.long	0x28800000
 .LCPI1_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vcmpltps	.LCPI1_0(%rip){1to16}, %zmm1, %k1
 	vbroadcastss	.LCPI1_1(%rip), %zmm0 {%k1}
@@ -20,6 +22,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vbroadcastss	.LCPI2_0(%rip), %zmm2
 	vcmpltps	%zmm1, %zmm2, %k1
@@ -29,6 +32,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.long	0x1e3ce508
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vcmpgeps	.LCPI3_0(%rip){1to16}, %zmm1, %k1
 	vmovaps	%zmm0, %zmm0 {%k1} {z}

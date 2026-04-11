@@ -3,6 +3,7 @@
 	.long	3
 .LCPI0_1:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000084c:
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm1, %k0
 	vpcmpeqd	.LCPI0_1(%rip){1to4}, %xmm1, %k1
@@ -19,6 +20,7 @@ func000000000000084c:
 	.long	711
 .LCPI1_2:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000841:
 	vpcmpeqd	.LCPI1_0(%rip){1to4}, %xmm1, %k0
 	vpcmpeqd	.LCPI1_1(%rip){1to4}, %xmm1, %k1

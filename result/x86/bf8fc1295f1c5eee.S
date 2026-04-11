@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000193:
 	xorl	%ecx, %ecx
 	cmpl	$1570, %edx
@@ -9,6 +10,7 @@ func0000000000000193:
 	addl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000303:
 	leal	(%rdi,%rsi), %ecx
 	movl	$3435973837, %eax
@@ -18,6 +20,7 @@ func0000000000000303:
 	sbbl	$-1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000183:
 	xorl	%ecx, %ecx
 	cmpl	$-11, %edx
@@ -29,6 +32,7 @@ func0000000000000183:
 	addl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000513:
 	addl	%esi, %edi
 	imulq	$963315389, %rdi, %rax

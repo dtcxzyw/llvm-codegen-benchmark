@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2146435072
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -12,6 +13,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	31
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -23,6 +25,7 @@ func0000000000000007:
 
 .LCPI2_0:
 	.long	131071
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -34,6 +37,7 @@ func0000000000000018:
 
 .LCPI3_0:
 	.long	131071
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -43,6 +47,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -53,6 +58,7 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -65,6 +71,7 @@ func0000000000000006:
 
 .LCPI6_0:
 	.long	15
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000015:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -76,6 +83,7 @@ func0000000000000015:
 
 .LCPI7_0:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -87,6 +95,7 @@ func000000000000000c:
 
 .LCPI8_0:
 	.long	268435455
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -96,6 +105,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000b:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -144,6 +154,7 @@ func000000000000000b:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000019:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -191,6 +202,7 @@ func0000000000000019:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

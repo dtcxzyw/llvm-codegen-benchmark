@@ -16,6 +16,7 @@
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovzxbw	%xmm0, %ymm1
 	vptestnmb	%xmm0, %xmm0, %k1

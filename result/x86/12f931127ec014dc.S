@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000842:
 	cmpl	$1, %edx
 	sete	%al
@@ -10,6 +11,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000318c:
 	testl	%edx, %edx
 	setle	%al
@@ -21,6 +23,7 @@ func000000000000318c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003182:
 	testl	%edx, %edx
 	setle	%al
@@ -32,6 +35,7 @@ func0000000000003182:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000006302:
 	orl	%edx, %esi
 	setne	%cl
@@ -40,6 +44,7 @@ func0000000000006302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000b18:
 	testl	%edx, %edx
 	sete	%cl
@@ -49,6 +54,7 @@ func0000000000000b18:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000006310:
 	orl	%edx, %esi
 	setne	%cl
@@ -57,6 +63,7 @@ func0000000000006310:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000084c:
 	testl	%edx, %edx
 	sete	%al
@@ -68,6 +75,7 @@ func000000000000084c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000006308:
 	xorl	$10, %edx
 	orl	%esi, %edx
@@ -77,6 +85,7 @@ func0000000000006308:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000002102:
 	cmpl	$94, %edx
 	setb	%al
@@ -88,6 +97,7 @@ func0000000000002102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000002058:
 	cmpl	$4, %edx
 	setb	%al
@@ -99,6 +109,7 @@ func0000000000002058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000006314:
 	orl	%edx, %esi
 	setne	%cl
@@ -107,6 +118,7 @@ func0000000000006314:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000006318:
 	xorl	$19, %edx
 	xorl	$5, %esi
@@ -115,6 +127,7 @@ func0000000000006318:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000b02:
 	cmpl	$2, %edx
 	sete	%cl
@@ -126,6 +139,7 @@ func0000000000000b02:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000005310:
 	cmpl	$3, %edx
 	setge	%al

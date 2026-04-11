@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x75154fdd7f73bf3c
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vdivpd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm3
 	vptestnmd	%ymm2, %ymm2, %k1

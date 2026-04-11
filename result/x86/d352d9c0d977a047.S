@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	subq	%rdx, %rdi
 	movl	$4294967293, %eax

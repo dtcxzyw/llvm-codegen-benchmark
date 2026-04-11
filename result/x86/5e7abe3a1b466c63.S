@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c0:
 	movq	%rdi, %rax
 	cqto
@@ -7,6 +8,7 @@ func00000000000000c0:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	movq	%rdi, %rax
 	cqto
@@ -15,6 +17,7 @@ func00000000000000c1:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a0:
 	movq	%rdi, %rax
 	cqto

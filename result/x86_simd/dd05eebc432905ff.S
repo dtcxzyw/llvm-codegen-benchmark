@@ -5,6 +5,7 @@
 	.long	0x3f800000
 .LCPI0_2:
 	.long	0x3da2f983
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vbroadcastss	.LCPI0_1(%rip), %zmm1

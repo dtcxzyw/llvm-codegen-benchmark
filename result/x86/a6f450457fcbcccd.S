@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006a6:
 	leal	(%rdx,%rdx,4), %eax
 	leal	(%rdx,%rax,4), %eax
@@ -9,6 +10,7 @@ func00000000000006a6:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000020a:
 	leal	(%rdx,%rdx,4), %eax
 	leal	-48(%rsi,%rax,2), %eax

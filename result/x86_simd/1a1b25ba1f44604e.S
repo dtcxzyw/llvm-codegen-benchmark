@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsllq	$12, %ymm2, %ymm2
 	vextracti128	$1, %ymm1, %xmm3
@@ -29,6 +30,7 @@ func0000000000000000:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001b:
 	vpsllq	$3, %ymm2, %ymm2
 	vextracti128	$1, %ymm1, %xmm3
@@ -59,6 +61,7 @@ func000000000000001b:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vpsllq	$16, %ymm2, %ymm2
 	vextracti128	$1, %ymm1, %xmm3

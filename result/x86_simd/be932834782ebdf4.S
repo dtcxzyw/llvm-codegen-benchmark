@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	vandps	.LCPI0_0(%rip){1to16}, %zmm1, %zmm1
 	vbroadcastss	.LCPI0_1(%rip), %zmm2
@@ -16,6 +17,7 @@ func00000000000000aa:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001aa:
 	vandps	.LCPI1_0(%rip){1to16}, %zmm1, %zmm1
 	vbroadcastss	.LCPI1_1(%rip), %zmm2
@@ -29,6 +31,7 @@ func00000000000001aa:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000124:
 	vandps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -42,6 +45,7 @@ func0000000000000124:
 	.long	0x7fffffff
 .LCPI3_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000022:
 	vandps	.LCPI3_0(%rip){1to16}, %zmm1, %zmm1
 	vbroadcastss	.LCPI3_1(%rip), %zmm2
@@ -55,6 +59,7 @@ func0000000000000022:
 	.long	0x7fffffff
 .LCPI4_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000122:
 	vandps	.LCPI4_0(%rip){1to16}, %zmm1, %zmm1
 	vbroadcastss	.LCPI4_1(%rip), %zmm2
@@ -70,6 +75,7 @@ func0000000000000122:
 	.long	0x40a00000
 .LCPI5_2:
 	.long	0x41f00000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000024:
 	vandps	.LCPI5_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpgtps	.LCPI5_1(%rip){1to16}, %zmm0, %k1
@@ -82,6 +88,7 @@ func0000000000000024:
 	.long	4278190080
 .LCPI6_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000099:
 	vpaddd	%zmm1, %zmm1, %zmm1
 	vpcmpnltud	.LCPI6_0(%rip){1to16}, %zmm1, %k1
@@ -94,6 +101,7 @@ func0000000000000099:
 	.long	0x7fffffff
 .LCPI7_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000066:
 	vandps	.LCPI7_0(%rip){1to16}, %zmm1, %zmm1
 	vbroadcastss	.LCPI7_1(%rip), %zmm2
@@ -107,6 +115,7 @@ func0000000000000066:
 	.long	0x7fffffff
 .LCPI8_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000006d:
 	vandps	.LCPI8_0(%rip){1to16}, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -120,6 +129,7 @@ func000000000000006d:
 	.long	0x7fffffff
 .LCPI9_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001dd:
 	vandps	.LCPI9_0(%rip){1to16}, %zmm1, %zmm1
 	vbroadcastss	.LCPI9_1(%rip), %zmm2
@@ -133,6 +143,7 @@ func00000000000001dd:
 	.long	0x7fffffff
 .LCPI10_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000dd:
 	vandps	.LCPI10_0(%rip){1to16}, %zmm1, %zmm1
 	vbroadcastss	.LCPI10_1(%rip), %zmm2
@@ -146,6 +157,7 @@ func00000000000000dd:
 	.long	0x7fffffff
 .LCPI11_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000086:
 	vandps	.LCPI11_0(%rip){1to16}, %zmm1, %zmm1
 	vxorps	%xmm2, %xmm2, %xmm2

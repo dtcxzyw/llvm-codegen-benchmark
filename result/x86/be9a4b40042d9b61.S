@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	addl	%esi, %edi
 	incb	%dil
@@ -6,6 +7,7 @@ func000000000000000a:
 	shlxq	%rdi, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	addl	%esi, %edi
 	decb	%dil
@@ -13,6 +15,7 @@ func000000000000002a:
 	shlxq	%rdi, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	addl	%esi, %edi
 	decb	%dil

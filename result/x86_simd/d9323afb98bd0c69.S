@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsllq	$56, %ymm1, %ymm1
@@ -24,6 +25,7 @@ func000000000000007f:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpmovsxbd	.LCPI1_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -49,6 +51,7 @@ func000000000000003f:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003b:
 	vpmovsxbd	.LCPI2_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3
@@ -74,6 +77,7 @@ func000000000000003b:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003d:
 	vpmovsxbd	.LCPI3_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3

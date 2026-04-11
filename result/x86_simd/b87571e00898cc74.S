@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpaddw	%xmm3, %xmm2, %xmm3
@@ -11,6 +12,7 @@ func0000000000000034:
 	vpand	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000037:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpaddw	%xmm3, %xmm2, %xmm3
@@ -23,6 +25,7 @@ func0000000000000037:
 	vpand	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpaddw	%xmm3, %xmm2, %xmm3

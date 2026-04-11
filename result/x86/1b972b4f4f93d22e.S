@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000284:
 	blsrq	%rdi, %rax
 	sete	%cl
@@ -7,6 +8,7 @@ func0000000000000284:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	popcntq	%rdi, %rax
 	cmpl	$1, %eax

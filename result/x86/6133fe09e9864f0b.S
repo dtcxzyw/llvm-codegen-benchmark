@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000884:
 	testb	$1, %dil
 	cmovel	%edx, %esi
@@ -10,6 +11,7 @@ func0000000000000884:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000886:
 	testb	$1, %dil
 	cmovel	%edx, %esi
@@ -19,6 +21,7 @@ func0000000000000886:
 	shrl	$31, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000088a:
 	testb	$1, %dil
 	cmovel	%edx, %esi

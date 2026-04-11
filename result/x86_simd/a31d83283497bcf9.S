@@ -3,6 +3,7 @@
 	.long	73
 .LCPI0_1:
 	.long	3
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000102c:
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm2, %k0
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2
@@ -13,6 +14,7 @@ func000000000000102c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000318c:
 	vpor	%ymm2, %ymm1, %ymm1
 	vptestmd	%ymm1, %ymm1, %k1

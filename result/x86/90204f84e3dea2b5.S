@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rdi, %r8
@@ -9,6 +10,7 @@ func0000000000000005:
 	adcq	%r8, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rdi, %rax
@@ -21,6 +23,7 @@ func0000000000000004:
 	adcq	%rcx, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rdi, %rax
@@ -33,6 +36,7 @@ func000000000000000e:
 	adcq	%rcx, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rax, %rdi
@@ -44,6 +48,7 @@ func000000000000000f:
 	adcq	%rcx, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rdi, %rax
@@ -56,6 +61,7 @@ func0000000000000008:
 	adcq	%rcx, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	imulq	%rdi, %rcx
 	mulxq	%rdi, %rax, %rdi

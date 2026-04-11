@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	movq	%rdi, %rcx
 	movb	$-2, %al
 	rolb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	movq	%rdi, %rcx
 	andb	$7, %cl
@@ -13,6 +15,7 @@ func000000000000000d:
 	notb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	movq	%rdi, %rcx
 	andb	$6, %cl

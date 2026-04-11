@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -13,6 +14,7 @@ func0000000000000007:
 	.long	1308886016
 .LCPI1_1:
 	.long	1577321472
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -24,6 +26,7 @@ func0000000000000005:
 
 .LCPI2_0:
 	.long	128
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -34,6 +37,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	32768
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
@@ -44,6 +48,7 @@ func0000000000000003:
 
 .LCPI4_0:
 	.long	8192
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1

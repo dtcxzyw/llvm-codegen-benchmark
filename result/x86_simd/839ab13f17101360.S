@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpackssdw	%xmm0, %xmm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0

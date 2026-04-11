@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
 	vpsrld	$6, %xmm2, %xmm2
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
@@ -9,6 +10,7 @@ func0000000000000141:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000201:
 	vpsrld	$5, %xmm2, %xmm2
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2

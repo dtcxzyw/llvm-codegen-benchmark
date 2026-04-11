@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	subl	%edx, %esi
 	xorl	%edi, %esi
@@ -7,6 +8,7 @@ func0000000000000009:
 	rorxl	$28, %esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	subl	%edx, %esi
 	xorl	%edi, %esi

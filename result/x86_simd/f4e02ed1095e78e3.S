@@ -36,6 +36,7 @@
 	.quad	-1190112520884487201
 .LCPI0_2:
 	.quad	595056260442243600
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0

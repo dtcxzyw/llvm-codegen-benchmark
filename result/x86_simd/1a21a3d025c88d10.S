@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpextrd	$1, %xmm0, %eax
 	testl	%eax, %eax
@@ -52,6 +53,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpextrd	$1, %xmm0, %eax
 	cmpl	$1084227584, %eax

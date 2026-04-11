@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x40000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vcvtsi2ss	%edi, %xmm15, %xmm2
 	vdivss	%xmm2, %xmm1, %xmm1
@@ -16,6 +17,7 @@ func0000000000000014:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x3c23d70a
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vcvtsi2ss	%edi, %xmm15, %xmm2
 	vdivss	%xmm2, %xmm1, %xmm1

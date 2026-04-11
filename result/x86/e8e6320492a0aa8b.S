@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000005c:
 	sarq	$5, %rsi
 	notq	%rdi
@@ -6,6 +7,7 @@ func000000000000005c:
 	shlq	$3, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000005f:
 	sarq	$5, %rsi
 	notq	%rdi
@@ -13,6 +15,7 @@ func000000000000005f:
 	shlq	$3, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000017:
 	shrl	$16, %esi
 	subl	%edi, %esi

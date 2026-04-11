@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003e1:
 	andl	$32767, %edx
 	leaq	(%rdx,%rdx,2), %rax
@@ -8,6 +9,7 @@ func00000000000003e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003e4:
 	andl	$15, %edx
 	leaq	4(%rsi,%rdx), %rax

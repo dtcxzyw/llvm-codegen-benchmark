@@ -3,6 +3,7 @@
 	.quad	216180478695505931
 .LCPI0_1:
 	.quad	3819052484010180608
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f0:
 	vpsllq	$16, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -14,6 +15,7 @@ func00000000000000f0:
 	.quad	86400
 .LCPI1_1:
 	.quad	-62135596800
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000fd:
 	vpsllq	$16, %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2

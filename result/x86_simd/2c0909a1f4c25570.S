@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpslld	$31, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k1
@@ -79,6 +80,7 @@ func0000000000000000:
 	.zero	1
 .LCPI1_2:
 	.byte	20
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpslld	$31, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k1

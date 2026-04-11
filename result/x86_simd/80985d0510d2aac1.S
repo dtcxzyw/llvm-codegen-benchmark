@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	39
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -11,6 +12,7 @@ func000000000000001f:
 
 .LCPI1_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -21,6 +23,7 @@ func000000000000002f:
 
 .LCPI2_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -31,6 +34,7 @@ func000000000000000f:
 
 .LCPI3_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -41,6 +45,7 @@ func000000000000003f:
 
 .LCPI4_0:
 	.quad	16642998272
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -53,6 +58,7 @@ func0000000000000042:
 	.long	2147483647
 .LCPI5_1:
 	.quad	31
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000004f:
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -62,6 +68,7 @@ func000000000000004f:
 
 .LCPI6_0:
 	.quad	-4
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -74,6 +81,7 @@ func000000000000000d:
 	.long	4294967294
 .LCPI7_1:
 	.quad	-4
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001d:
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -83,6 +91,7 @@ func000000000000001d:
 
 .LCPI8_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000007d:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -93,6 +102,7 @@ func000000000000007d:
 
 .LCPI9_0:
 	.quad	-4
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000003d:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -103,6 +113,7 @@ func000000000000003d:
 
 .LCPI10_0:
 	.quad	-4
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000004d:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -113,6 +124,7 @@ func000000000000004d:
 
 .LCPI11_0:
 	.quad	48
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000007f:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0

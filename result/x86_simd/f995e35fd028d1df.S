@@ -3,6 +3,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpternlogq	$254, %xmm2, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1

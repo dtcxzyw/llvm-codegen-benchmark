@@ -5,6 +5,7 @@
 	.quad	-9223372036854775808
 .LCPI0_2:
 	.quad	-8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -22,6 +23,7 @@ func0000000000000028:
 	.quad	-9223372036854775808
 .LCPI1_3:
 	.quad	-8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0

@@ -71,6 +71,7 @@
 	.byte	35
 .LCPI0_5:
 	.byte	29
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastb	.LCPI0_4(%rip), %xmm1

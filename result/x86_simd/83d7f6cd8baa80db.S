@@ -17,6 +17,7 @@
 	.byte	2
 	.byte	3
 	.byte	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorps	%xmm1, %xmm0, %xmm0
 	vpmovsxbd	.LCPI0_1(%rip), %ymm1
@@ -25,6 +26,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	922
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpxor	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0

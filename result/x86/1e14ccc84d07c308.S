@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	shrq	$32, %rsi
 	xorl	%eax, %eax
@@ -6,6 +7,7 @@ func0000000000000041:
 	cmovnel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	shrq	$3, %rsi
 	cmpl	$1, %edi
@@ -13,6 +15,7 @@ func0000000000000001:
 	cmovnel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008a:
 	shrq	%rsi
 	xorl	%eax, %eax

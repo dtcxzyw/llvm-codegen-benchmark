@@ -3,6 +3,7 @@
 	.quad	0x3fe0000000000000
 .LCPI0_1:
 	.quad	0x40efffe000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvtps2pd	%ymm0, %zmm1
 	vextractf64x4	$1, %zmm0, %ymm0
@@ -20,6 +21,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vcvtps2pd	%ymm0, %zmm1
 	vextractf64x4	$1, %zmm0, %ymm0
@@ -39,6 +41,7 @@ func0000000000000005:
 	.quad	0x3fe0000000000000
 .LCPI2_1:
 	.quad	0x40efffe000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vcvtps2pd	%ymm0, %zmm1
 	vextractf64x4	$1, %zmm0, %ymm0
@@ -58,6 +61,7 @@ func0000000000000003:
 	.quad	0xbff0000000000000
 .LCPI3_1:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vcvtps2pd	%ymm0, %zmm1
 	vextractf64x4	$1, %zmm0, %ymm0
@@ -75,6 +79,7 @@ func0000000000000004:
 
 .LCPI4_0:
 	.quad	0xbff0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vcvtps2pd	%ymm0, %zmm1
 	vextractf64x4	$1, %zmm0, %ymm0

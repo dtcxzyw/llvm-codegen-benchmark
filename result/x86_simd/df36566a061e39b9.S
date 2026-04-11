@@ -7,6 +7,7 @@
 	.zero	4,31
 .LCPI0_3:
 	.zero	4,224
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtb	%xmm0, %xmm1, %xmm1

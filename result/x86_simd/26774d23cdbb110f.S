@@ -20,6 +20,7 @@
 	.quad	4294967294
 .LCPI0_2:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0

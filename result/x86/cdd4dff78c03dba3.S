@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x40f86a0000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmulsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -10,6 +11,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vmulsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -19,6 +21,7 @@ func0000000000000006:
 
 .LCPI2_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vmulsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -28,6 +31,7 @@ func000000000000000a:
 
 .LCPI3_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000016:
 	vmulsd	.LCPI3_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -35,6 +39,7 @@ func0000000000000016:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	vaddsd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -44,6 +49,7 @@ func0000000000000014:
 
 .LCPI5_0:
 	.quad	0x3fefd70a3d70a3d7
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vmulsd	.LCPI5_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -53,6 +59,7 @@ func0000000000000008:
 
 .LCPI6_0:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000010:
 	vmulsd	.LCPI6_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -62,6 +69,7 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001a:
 	vaddsd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0

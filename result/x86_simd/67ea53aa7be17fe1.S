@@ -39,6 +39,7 @@
 	.byte	255
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$24, %ymm1, %ymm1
@@ -51,6 +52,7 @@ func0000000000000005:
 	.long	4294967288
 .LCPI1_1:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$29, %ymm1, %ymm1

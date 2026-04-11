@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovzxbd	%xmm1, %ymm1
 	vptestmd	%ymm1, %ymm0, %k1
@@ -59,6 +60,7 @@ func0000000000000001:
 	.zero	1
 .LCPI1_2:
 	.byte	58
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpmovzxbd	%xmm1, %ymm1
 	vptestnmd	%ymm1, %ymm0, %k1

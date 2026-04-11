@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000064:
 	andq	$-8, %rdx
 	leaq	8(%rsi,%rdx), %rax
@@ -7,6 +8,7 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movabsq	$2305843009213693950, %rax
 	andq	%rdx, %rax
@@ -16,6 +18,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000761:
 	movl	%edx, %eax
 	leaq	-8(%rsi,%rax,8), %rax
@@ -24,6 +27,7 @@ func0000000000000761:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000764:
 	movl	%edx, %eax
 	leaq	-10(%rsi,%rax,2), %rax

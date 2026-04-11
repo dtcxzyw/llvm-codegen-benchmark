@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
@@ -6,6 +7,7 @@ func000000000000000f:
 	bzhiq	%rax, %rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	movabsq	$96076792050570581, %rax
 	andq	%rdx, %rax
@@ -17,6 +19,7 @@ func000000000000000b:
 	andq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
@@ -24,6 +27,7 @@ func0000000000000003:
 	bzhiq	%rax, %rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
@@ -31,6 +35,7 @@ func000000000000000c:
 	bzhiq	%rax, %rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	andq	$-16, %rdx
 	leaq	(%rdx,%rsi), %rax

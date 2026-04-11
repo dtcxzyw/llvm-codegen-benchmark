@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c4:
 	vcmplepd	%zmm0, %zmm1, %k1
 	vmovapd	%zmm0, %zmm1 {%k1}
@@ -8,6 +9,7 @@ func00000000000000c4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vmaxpd	%zmm1, %zmm0, %zmm0
 	vcvtdq2pd	%ymm2, %zmm1
@@ -16,6 +18,7 @@ func0000000000000044:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vmaxpd	%zmm1, %zmm0, %zmm0
 	vcvtdq2pd	%ymm2, %zmm1

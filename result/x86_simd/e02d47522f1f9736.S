@@ -3,6 +3,7 @@
 	.long	458
 .LCPI0_1:
 	.long	448
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -16,6 +17,7 @@ func0000000000000034:
 	.long	457
 .LCPI1_1:
 	.long	448
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
@@ -27,6 +29,7 @@ func0000000000000014:
 
 .LCPI2_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a1:
 	vpbroadcastq	.LCPI2_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
@@ -39,6 +42,7 @@ func00000000000000a1:
 	.quad	31
 .LCPI3_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpneqq	.LCPI3_1(%rip){1to4}, %ymm0, %k0
@@ -48,6 +52,7 @@ func000000000000000c:
 
 .LCPI4_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	vpbroadcastq	.LCPI4_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
@@ -62,6 +67,7 @@ func0000000000000001:
 	.long	2147483640
 .LCPI5_2:
 	.long	17
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000174:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
@@ -75,6 +81,7 @@ func0000000000000174:
 	.quad	63
 .LCPI6_1:
 	.quad	51
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001a1:
 	vpandq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpeqq	.LCPI6_1(%rip){1to4}, %ymm0, %k0
@@ -88,6 +95,7 @@ func00000000000001a1:
 	.long	4294967294
 .LCPI7_2:
 	.long	2
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001ac:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
@@ -100,6 +108,7 @@ func00000000000001ac:
 
 .LCPI8_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000161:
 	vpbroadcastq	.LCPI8_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
@@ -110,6 +119,7 @@ func0000000000000161:
 
 .LCPI9_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000081:
 	vpbroadcastq	.LCPI9_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
@@ -124,6 +134,7 @@ func0000000000000081:
 	.long	4294967288
 .LCPI10_2:
 	.long	65
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000004:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
@@ -135,6 +146,7 @@ func0000000000000004:
 
 .LCPI11_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000141:
 	vpbroadcastq	.LCPI11_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0
@@ -145,6 +157,7 @@ func0000000000000141:
 
 .LCPI12_0:
 	.long	127
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000021:
 	vpmovqd	%ymm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1

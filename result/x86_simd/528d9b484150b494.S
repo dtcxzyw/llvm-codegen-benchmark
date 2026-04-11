@@ -3,6 +3,7 @@
 	.quad	65520
 .LCPI0_1:
 	.quad	-65521
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000718:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpcmpnleuq	%ymm3, %ymm1, %k1

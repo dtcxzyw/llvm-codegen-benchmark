@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	andl	$3, %esi
 	shll	$10, %esi
@@ -6,6 +7,7 @@ func000000000000001f:
 	leal	1024(%rsi,%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	shll	$10, %esi
 	andl	$1047552, %esi
@@ -13,6 +15,7 @@ func0000000000000007:
 	leal	65536(%rsi,%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	andl	$-16, %esi
 	shll	$17, %esi
@@ -20,6 +23,7 @@ func0000000000000001:
 	leal	8388608(%rsi,%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	shll	$4, %esi
 	andl	$16, %esi

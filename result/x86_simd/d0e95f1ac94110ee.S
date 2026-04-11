@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	41
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000b02:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -15,6 +16,7 @@ func0000000000000b02:
 	.long	15
 .LCPI1_1:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000a02:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -29,6 +31,7 @@ func0000000000000a02:
 	.long	5
 .LCPI2_1:
 	.long	99
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000d10:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -39,6 +42,7 @@ func0000000000000d10:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000842:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -51,6 +55,7 @@ func0000000000000842:
 
 .LCPI4_0:
 	.long	8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000848:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -65,6 +70,7 @@ func0000000000000848:
 	.long	65
 .LCPI5_1:
 	.long	108
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000868:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -79,6 +85,7 @@ func0000000000000868:
 	.long	8192
 .LCPI6_1:
 	.long	4294867296
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000910:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -91,6 +98,7 @@ func0000000000000910:
 
 .LCPI7_0:
 	.long	852000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000858:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -103,6 +111,7 @@ func0000000000000858:
 
 .LCPI8_0:
 	.long	65536
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000302:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -117,6 +126,7 @@ func0000000000000302:
 	.long	3811744309
 .LCPI9_1:
 	.long	201252086
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000930:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -131,6 +141,7 @@ func0000000000000930:
 	.long	1114112
 .LCPI10_1:
 	.long	2
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000001868:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1
@@ -145,6 +156,7 @@ func0000000000001868:
 	.long	1114111
 .LCPI11_1:
 	.long	864
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000001a82:
 	vpmovzxbd	%xmm2, %ymm2
 	vpor	%ymm2, %ymm1, %ymm1

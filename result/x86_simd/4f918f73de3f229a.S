@@ -41,6 +41,7 @@
 	.short	0
 .LCPI0_4:
 	.short	292
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000005d:
 	vpbroadcastw	.LCPI0_4(%rip), %xmm1
 	vpsubw	%xmm0, %xmm1, %xmm0

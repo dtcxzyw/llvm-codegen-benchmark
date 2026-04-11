@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpsrld	$12, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -40,6 +41,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.long	248
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	vpsrld	$12, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0

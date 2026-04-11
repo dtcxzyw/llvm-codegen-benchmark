@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	leaq	-2(%rsi,%rdx,2), %rax
 	addq	$-2, %rdi
@@ -6,6 +7,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	leaq	4(%rsi,%rdx), %rax
 	addq	$-2, %rdi
@@ -13,6 +15,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000564:
 	leaq	4(%rsi,%rdx), %rax
 	addq	$-2, %rdi
@@ -20,6 +23,7 @@ func0000000000000564:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001e1:
 	leaq	8(%rsi,%rdx,8), %rax
 	addq	$16656, %rdi
@@ -27,6 +31,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000005e8:
 	leaq	20(%rsi,%rdx), %rax
 	incq	%rdi
@@ -34,6 +39,7 @@ func00000000000005e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000007e4:
 	leaq	10(%rsi,%rdx), %rax
 	addq	$8, %rdi
@@ -41,6 +47,7 @@ func00000000000007e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000764:
 	leaq	8(%rsi,%rdx), %rax
 	addq	$-12, %rdi
@@ -48,6 +55,7 @@ func0000000000000764:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000664:
 	leaq	3(%rsi,%rdx), %rax
 	decq	%rdi
@@ -55,6 +63,7 @@ func0000000000000664:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000604:
 	leaq	4(%rsi,%rdx,2), %rax
 	addq	$2, %rdi
@@ -62,6 +71,7 @@ func0000000000000604:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000768:
 	leaq	1(%rsi,%rdx), %rax
 	decq	%rdi
@@ -69,6 +79,7 @@ func0000000000000768:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000104:
 	leaq	1(%rsi,%rdx), %rax
 	decq	%rdi
@@ -76,6 +87,7 @@ func0000000000000104:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000561:
 	leaq	8(%rsi,%rdx,8), %rax
 	addq	$-8, %rdi
@@ -83,6 +95,7 @@ func0000000000000561:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000007e8:
 	leaq	1(%rsi,%rdx), %rax
 	addq	$2, %rdi
@@ -90,6 +103,7 @@ func00000000000007e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000468:
 	leaq	2(%rsi,%rdx), %rax
 	decq	%rdi
@@ -97,6 +111,7 @@ func0000000000000468:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000761:
 	leaq	32(%rsi,%rdx), %rax
 	addq	$-32, %rdi
@@ -104,6 +119,7 @@ func0000000000000761:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000005e1:
 	leaq	(%rdx,%rdx,2), %rax
 	shlq	$4, %rax
@@ -112,6 +128,7 @@ func00000000000005e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000007e1:
 	leaq	(%rdx,%rdx,4), %rax
 	shlq	$7, %rax
@@ -120,6 +137,7 @@ func00000000000007e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000181:
 	leaq	-9(%rsi,%rdx), %rax
 	incq	%rdi
@@ -127,6 +145,7 @@ func0000000000000181:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000668:
 	leaq	6(%rsi,%rdx), %rax
 	addq	$-11, %rdi
@@ -134,6 +153,7 @@ func0000000000000668:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000108:
 	leaq	4(%rsi,%rdx), %rax
 	addq	$-8, %rdi
@@ -141,6 +161,7 @@ func0000000000000108:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000105:
 	leaq	4(%rsi,%rdx), %rax
 	addq	$-8, %rdi
@@ -148,6 +169,7 @@ func0000000000000105:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func000000000000056c:
 	leaq	16(%rsi,%rdx), %rax
 	decq	%rdi
@@ -155,6 +177,7 @@ func000000000000056c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000064:
 	leaq	7(%rsi,%rdx), %rax
 	addq	$-7, %rdi
@@ -162,6 +185,7 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func00000000000005c9:
 	leaq	-1(%rsi,%rdx), %rax
 	addq	$24, %rdi
@@ -169,6 +193,7 @@ func00000000000005c9:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func00000000000005c4:
 	leaq	-1(%rsi,%rdx), %rax
 	addq	$56, %rdi
@@ -176,6 +201,7 @@ func00000000000005c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func00000000000005c1:
 	leaq	-8(%rsi,%rdx,8), %rax
 	addq	$8, %rdi

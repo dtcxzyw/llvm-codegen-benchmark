@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fe0000035afe535
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vcvttpd2dq	%xmm0, %xmm1
 	vcvtdq2pd	%xmm1, %xmm1
@@ -12,6 +13,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.quad	0x3fdfffff94a03595
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcvttpd2dq	%xmm0, %xmm1
 	vcvtdq2pd	%xmm1, %xmm1
@@ -22,6 +24,7 @@ func0000000000000004:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vroundsd	$11, %xmm0, %xmm0, %xmm1
 	vucomisd	%xmm1, %xmm0

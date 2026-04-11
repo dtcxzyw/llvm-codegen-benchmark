@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -11,6 +12,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	0x3c23d70a
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vcvtqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -21,6 +23,7 @@ func0000000000000012:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -31,6 +34,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	0x3e4ccccd
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -39,6 +43,7 @@ func0000000000000003:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -47,6 +52,7 @@ func000000000000000c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -55,6 +61,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -65,6 +72,7 @@ func0000000000000007:
 
 .LCPI7_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000014:
 	vcvtqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -73,6 +81,7 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000001:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -83,6 +92,7 @@ func0000000000000001:
 
 .LCPI9_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000015:
 	vcvtqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
@@ -93,6 +103,7 @@ func0000000000000015:
 
 .LCPI10_0:
 	.long	0x42c60000
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000b:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0

@@ -5,6 +5,7 @@
 	.long	19
 .LCPI0_2:
 	.long	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm1, %k0
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
@@ -18,6 +19,7 @@ func0000000000000108:
 	.long	16199
 .LCPI1_2:
 	.long	256
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000109:
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm1, %k0
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1

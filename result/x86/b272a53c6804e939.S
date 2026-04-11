@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	shrq	$60, %rsi
@@ -8,6 +9,7 @@ func0000000000000008:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	subq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -15,6 +17,7 @@ func000000000000000a:
 	cmovlq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	subq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -22,12 +25,14 @@ func0000000000000001:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	cmpq	%rdx, %rsi
 	movabsq	$768614336404564650, %rax
 	cmovnsq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	subq	%rdx, %rsi
 	shrq	$62, %rsi
@@ -37,6 +42,7 @@ func0000000000000028:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
@@ -45,6 +51,7 @@ func0000000000000021:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	subq	%rdx, %rsi
 	cmpq	$1000, %rsi
@@ -52,6 +59,7 @@ func0000000000000004:
 	cmovaeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000044:
 	subq	%rdx, %rsi
 	cmpq	$1000000, %rsi
@@ -59,6 +67,7 @@ func0000000000000044:
 	cmovaeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
 	subq	%rdx, %rsi
 	cmpq	$384, %rsi

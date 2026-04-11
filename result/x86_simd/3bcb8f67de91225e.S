@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000038:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -22,6 +23,7 @@ func0000000000000038:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x408f400000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000032:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -43,6 +45,7 @@ func0000000000000032:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -64,6 +67,7 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000022:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -85,6 +89,7 @@ func0000000000000022:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x2ab0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000035:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -106,6 +111,7 @@ func0000000000000035:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x5e40000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000033:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -125,6 +131,7 @@ func0000000000000033:
 
 .LCPI6_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000037:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -146,6 +153,7 @@ func0000000000000037:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x4000000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000034:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -165,6 +173,7 @@ func0000000000000034:
 
 .LCPI8_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

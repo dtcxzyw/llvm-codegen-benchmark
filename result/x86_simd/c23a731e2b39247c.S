@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x43b40000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	subq	$136, %rsp
 	vmovups	%zmm0, 64(%rsp)

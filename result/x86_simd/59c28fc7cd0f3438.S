@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c8c:
 	vpcmpltub	%xmm1, %xmm0, %k1
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k0 {%k1}
@@ -9,6 +10,7 @@ func0000000000000c8c:
 
 .LCPI1_0:
 	.zero	16,8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubb	%xmm3, %xmm2, %xmm2

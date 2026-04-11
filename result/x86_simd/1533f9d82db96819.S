@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000074:
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm1, %k1
@@ -26,6 +27,7 @@ func0000000000000074:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpaddb	%xmm3, %xmm2, %xmm2

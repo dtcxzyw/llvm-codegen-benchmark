@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3e800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmulps	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vcvttps2dq	%ymm1, %ymm1
@@ -13,6 +14,7 @@ func0000000000000004:
 	.long	0x457ff000
 .LCPI1_1:
 	.long	8192
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vmulps	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vcvttps2dq	%ymm1, %ymm1
@@ -24,6 +26,7 @@ func0000000000000000:
 	.long	0x42c80000
 .LCPI2_1:
 	.long	128
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vmulps	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vcvttps2dq	%ymm1, %ymm1

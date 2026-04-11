@@ -3,6 +3,7 @@
 	.long	128
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vpminsd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpmaxsd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1

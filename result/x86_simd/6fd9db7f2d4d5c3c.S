@@ -20,6 +20,7 @@
 	.long	4294966758
 .LCPI0_2:
 	.long	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k1
 	vpternlogd	$248, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0
@@ -49,6 +50,7 @@ func0000000000000007:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
@@ -61,6 +63,7 @@ func0000000000000004:
 	.long	4294922203
 .LCPI2_1:
 	.long	4
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vptestmb	%xmm2, %xmm2, %k1
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	cmpw	$1, %si
 	movl	$6, %eax
@@ -7,6 +8,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	movzwl	%si, %eax
 	xorl	%ecx, %ecx
@@ -17,6 +19,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
 	movzwl	%si, %eax
 	xorl	%ecx, %ecx
@@ -27,6 +30,7 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	cmpw	$28, %si
 	movl	$15, %eax
@@ -36,6 +40,7 @@ func0000000000000038:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000114:
 	cmpw	$11, %si
 	movl	$4320, %eax

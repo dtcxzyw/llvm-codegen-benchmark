@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	testb	%dl, %dl
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000042:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000050:
 	cmpb	$2, %dl
 	sete	%cl
@@ -17,6 +19,7 @@ func0000000000000050:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000102:
 	cmpb	$3, %dl
 	setb	%cl

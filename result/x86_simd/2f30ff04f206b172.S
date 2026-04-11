@@ -7,6 +7,7 @@
 	.quad	2097152
 .LCPI0_3:
 	.quad	512
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm0, %k1
 	vpblendmq	.LCPI0_1(%rip){1to4}, %ymm1, %ymm1 {%k1}
@@ -23,6 +24,7 @@ func0000000000000021:
 	.quad	12
 .LCPI1_3:
 	.quad	13
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vpblendmq	.LCPI1_1(%rip){1to4}, %ymm1, %ymm1 {%k1}
@@ -39,6 +41,7 @@ func0000000000000084:
 	.quad	24
 .LCPI2_3:
 	.quad	16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000286:
 	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm0, %k1
 	vpblendmq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1 {%k1}

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vptestnmd	%xmm0, %xmm0, %k0 {%k1}
@@ -12,6 +13,7 @@ func0000000000000042:
 	.long	1
 .LCPI1_1:
 	.long	12
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000102:
 	vpcmpeqd	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vpcmpltud	.LCPI1_1(%rip){1to4}, %xmm1, %k0 {%k1}
@@ -19,6 +21,7 @@ func0000000000000102:
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000318:
 	vptestmd	%xmm1, %xmm1, %k1
 	vptestmd	%xmm0, %xmm0, %k0 {%k1}
@@ -30,6 +33,7 @@ func0000000000000318:
 	.long	64
 .LCPI3_1:
 	.long	31
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000202:
 	vpcmpeqd	.LCPI3_0(%rip){1to4}, %xmm0, %k1
 	vpcmpnleud	.LCPI3_1(%rip){1to4}, %xmm1, %k0 {%k1}
@@ -39,6 +43,7 @@ func0000000000000202:
 
 .LCPI4_0:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000118:
 	vpcmpltud	.LCPI4_0(%rip){1to4}, %xmm1, %k1
 	vptestmd	%xmm0, %xmm0, %k0 {%k1}
@@ -48,6 +53,7 @@ func0000000000000118:
 
 .LCPI5_0:
 	.long	2
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000308:
 	vpcmpltud	.LCPI5_0(%rip){1to4}, %xmm0, %k1
 	vptestmd	%xmm1, %xmm1, %k0 {%k1}
@@ -57,6 +63,7 @@ func0000000000000308:
 
 .LCPI6_0:
 	.long	2
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000302:
 	vpcmpeqd	.LCPI6_0(%rip){1to4}, %xmm0, %k1
 	vptestmd	%xmm1, %xmm1, %k0 {%k1}
@@ -64,6 +71,7 @@ func0000000000000302:
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000314:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm0, %k1
@@ -74,6 +82,7 @@ func0000000000000314:
 
 .LCPI8_0:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000030c:
 	vpcmpltd	.LCPI8_0(%rip){1to4}, %xmm0, %k1
 	vptestmd	%xmm1, %xmm1, %k0 {%k1}
@@ -83,6 +92,7 @@ func000000000000030c:
 
 .LCPI9_0:
 	.long	4294966297
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000028c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm1, %k1
@@ -95,6 +105,7 @@ func000000000000028c:
 	.long	100000000
 .LCPI10_1:
 	.long	10
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000108:
 	vpcmpltud	.LCPI10_0(%rip){1to4}, %xmm0, %k1
 	vpcmpltud	.LCPI10_1(%rip){1to4}, %xmm1, %k0 {%k1}

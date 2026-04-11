@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	decl	%edx
 	testb	$1, %dil
@@ -9,6 +10,7 @@ func000000000000002a:
 	addq	$3, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000038:
 	addl	$-3, %edx
 	testb	$1, %dil
@@ -18,6 +20,7 @@ func0000000000000038:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	addl	$-3, %edx
 	testb	$1, %dil

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpsraq	$63, %ymm2, %ymm3
 	vpsrlq	$62, %ymm3, %ymm3
@@ -10,6 +11,7 @@ func0000000000000007:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpsraq	$63, %ymm2, %ymm3
 	vpsrlq	$62, %ymm3, %ymm3
@@ -21,6 +23,7 @@ func0000000000000006:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vpsrlq	$63, %ymm2, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
@@ -33,6 +36,7 @@ func000000000000000a:
 
 .LCPI3_0:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000081:
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
@@ -44,6 +48,7 @@ func0000000000000081:
 
 .LCPI4_0:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a8:
 	vpsraq	$4, %ymm2, %ymm2
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
@@ -55,6 +60,7 @@ func00000000000000a8:
 
 .LCPI5_0:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a4:
 	vpsraq	$4, %ymm2, %ymm2
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
@@ -64,6 +70,7 @@ func00000000000000a4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
 	vpsrlq	$63, %ymm2, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
@@ -76,6 +83,7 @@ func000000000000002a:
 
 .LCPI7_0:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000c6:
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
@@ -87,6 +95,7 @@ func00000000000000c6:
 
 .LCPI8_0:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000008a:
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI8_0(%rip){1to4}, %ymm2, %ymm2
@@ -98,6 +107,7 @@ func000000000000008a:
 
 .LCPI9_0:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000aa:
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI9_0(%rip){1to4}, %ymm2, %ymm2
@@ -109,6 +119,7 @@ func00000000000000aa:
 
 .LCPI10_0:
 	.quad	-3689348814741910323
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000e4:
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI10_0(%rip){1to4}, %ymm2, %ymm2

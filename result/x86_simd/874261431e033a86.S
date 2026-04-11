@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a8:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpminsd	%ymm3, %ymm2, %ymm2
@@ -6,6 +7,7 @@ func00000000000000a8:
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002ad:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpminsd	%ymm3, %ymm2, %ymm2
@@ -13,6 +15,7 @@ func00000000000002ad:
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000002ac:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpminsd	%ymm3, %ymm2, %ymm2

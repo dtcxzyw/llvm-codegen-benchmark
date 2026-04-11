@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000013:
 	decl	%edi
 	lzcntl	%edi, %ecx
@@ -6,6 +7,7 @@ func0000000000000013:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	decl	%edi
 	lzcntl	%edi, %ecx
@@ -13,6 +15,7 @@ func0000000000000003:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	decl	%edi
 	lzcntl	%edi, %ecx
@@ -20,6 +23,7 @@ func0000000000000007:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000017:
 	decl	%edi
 	lzcntl	%edi, %ecx
@@ -27,6 +31,7 @@ func0000000000000017:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000037:
 	incl	%edi
 	lzcntl	%edi, %ecx
@@ -34,6 +39,7 @@ func0000000000000037:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000027:
 	incl	%edi
 	lzcntl	%edi, %ecx
@@ -41,12 +47,14 @@ func0000000000000027:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	decl	%edi
 	lzcntl	%edi, %eax
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000b:
 	decl	%edi
 	lzcntl	%edi, %ecx
@@ -54,6 +62,7 @@ func000000000000000b:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000001b:
 	decl	%edi
 	lzcntl	%edi, %ecx
@@ -61,6 +70,7 @@ func000000000000001b:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000f:
 	decl	%edi
 	lzcntl	%edi, %ecx
@@ -68,6 +78,7 @@ func000000000000000f:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000015:
 	addl	$-6, %edi
 	lzcntl	%edi, %ecx

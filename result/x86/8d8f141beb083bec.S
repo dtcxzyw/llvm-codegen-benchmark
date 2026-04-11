@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003f8:
 	addl	$-48, %esi
 	andl	$-2, %esi
@@ -8,6 +9,7 @@ func00000000000003f8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003f4:
 	addl	$-48, %esi
 	andl	$-2, %esi
@@ -17,6 +19,7 @@ func00000000000003f4:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000007ec:
 	addl	$-48, %esi
 	addq	%rdi, %rdi
@@ -25,6 +28,7 @@ func00000000000007ec:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000003ec:
 	addl	$-48, %esi
 	addq	%rdi, %rdi
@@ -33,6 +37,7 @@ func00000000000003ec:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000308:
 	addl	$-48, %esi
 	andl	$-2, %esi

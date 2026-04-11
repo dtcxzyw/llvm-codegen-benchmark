@@ -5,6 +5,7 @@
 	.quad	73
 .LCPI0_2:
 	.quad	9
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003e:
 	vplzcntq	%ymm0, %ymm0
 	vpxorq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000910:
 	movabsq	$-4611686018427387905, %rax
 	addq	%rax, %rdx
@@ -10,6 +11,7 @@ func0000000000000910:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	cmpq	$16, %rdx
 	sete	%cl
@@ -18,6 +20,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000192:
 	decq	%rdx
 	sets	%cl
@@ -26,6 +29,7 @@ func0000000000000192:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000302:
 	cmpq	$1, %rdx
 	sete	%cl
@@ -34,6 +38,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000110:
 	movabsq	$-4611686018427387905, %rax
 	addq	%rax, %rdx
@@ -45,6 +50,7 @@ func0000000000000110:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000248:
 	addq	$-37, %rdx
 	cmpq	$-35, %rdx
@@ -54,6 +60,7 @@ func0000000000000248:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000318:
 	notq	%rdx
 	xorq	%rsi, %rdi
@@ -61,6 +68,7 @@ func0000000000000318:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000310:
 	addq	$-127, %rdx
 	cmpq	$-128, %rdx

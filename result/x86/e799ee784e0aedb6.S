@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	negb	%sil
 	movl	$1, %eax
@@ -8,6 +9,7 @@ func00000000000000ca:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004a:
 	movb	$-53, %al
 	subb	%sil, %al

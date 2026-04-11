@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004a6:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -13,6 +14,7 @@ func00000000000004a6:
 	.long	4294247828
 .LCPI1_1:
 	.long	573372
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000aa:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1

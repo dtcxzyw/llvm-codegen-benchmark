@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	shll	$8, %esi
 	leal	768(%rsi), %ecx
@@ -8,6 +9,7 @@ func0000000000000000:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	shll	$13, %esi
 	addl	$57344, %esi

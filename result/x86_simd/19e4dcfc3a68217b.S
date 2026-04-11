@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,127
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2
@@ -44,6 +45,7 @@ func000000000000001f:
 	.zero	1
 .LCPI1_1:
 	.zero	4,127
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001e:
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2
@@ -70,6 +72,7 @@ func000000000000001e:
 	.zero	1
 .LCPI2_1:
 	.zero	4,127
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2
@@ -96,6 +99,7 @@ func0000000000000016:
 	.zero	1
 .LCPI3_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001c:
 	vpandd	.LCPI3_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2
@@ -103,6 +107,7 @@ func000000000000001c:
 	vpternlogq	$254, %ymm1, %ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vpmovzxbq	%xmm2, %ymm2
 	vpsllq	$63, %ymm2, %ymm2

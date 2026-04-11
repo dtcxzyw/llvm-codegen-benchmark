@@ -21,6 +21,7 @@
 .LCPI0_2:
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpnleub	.LCPI0_0(%rip), %xmm0, %k0
 	vpmovm2w	%k0, %ymm0

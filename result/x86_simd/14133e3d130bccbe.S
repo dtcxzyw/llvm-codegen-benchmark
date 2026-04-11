@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vptestnmw	.LCPI0_0(%rip), %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
@@ -35,6 +36,7 @@ func0000000000000002:
 .LCPI1_2:
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpeqw	.LCPI1_1(%rip), %xmm2, %k1

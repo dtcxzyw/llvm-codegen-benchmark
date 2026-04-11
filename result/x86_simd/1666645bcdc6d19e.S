@@ -7,6 +7,7 @@
 	.quad	0x3fd34413509f79ff
 .LCPI0_3:
 	.quad	0xbddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpmaxud	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000082a:
 	andl	$127, %edx
 	cmpl	%edi, %edx

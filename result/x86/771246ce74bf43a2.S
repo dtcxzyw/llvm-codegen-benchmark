@@ -5,6 +5,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_2:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vfmadd213sd	.LCPI0_0(%rip), %xmm1, %xmm0
 	vandpd	.LCPI0_1(%rip){1to2}, %xmm0, %xmm0

@@ -45,6 +45,7 @@
 .LCPI0_3:
 	.short	65471
 	.short	65471
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1
@@ -97,6 +98,7 @@ func0000000000000003:
 .LCPI1_3:
 	.short	65527
 	.short	65527
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1
@@ -149,6 +151,7 @@ func000000000000000f:
 .LCPI2_3:
 	.short	65407
 	.short	65407
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1
@@ -175,6 +178,7 @@ func0000000000000009:
 .LCPI3_1:
 	.short	65523
 	.short	65523
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	vpaddb	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm1, %xmm1
@@ -228,6 +232,7 @@ func000000000000000e:
 .LCPI4_3:
 	.short	65311
 	.short	65311
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	vgf2p8affineqb	$0, .LCPI4_2(%rip){1to2}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1

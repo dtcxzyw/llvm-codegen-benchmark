@@ -105,6 +105,7 @@
 	.byte	0
 .LCPI0_8:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpsrlw	$2, %xmm0, %xmm1
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm1

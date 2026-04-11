@@ -3,6 +3,7 @@
 	.long	2048
 .LCPI0_1:
 	.long	64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsrld	$4, %ymm1, %ymm1
@@ -12,6 +13,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	3435973836
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsrld	$2, %ymm1, %ymm1

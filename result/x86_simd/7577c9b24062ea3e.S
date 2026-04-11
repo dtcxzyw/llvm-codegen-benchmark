@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
@@ -39,6 +40,7 @@ func0000000000000021:
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpmovsxbw	%xmm0, %ymm0
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0

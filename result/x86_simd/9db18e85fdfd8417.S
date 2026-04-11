@@ -32,6 +32,7 @@
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vpmovzxbd	%xmm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2

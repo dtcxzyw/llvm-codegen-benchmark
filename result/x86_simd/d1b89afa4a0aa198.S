@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2146435072
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -9,6 +10,7 @@ func0000000000000041:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
 	vpsrld	$16, %xmm1, %xmm1
@@ -18,6 +20,7 @@ func0000000000000006:
 
 .LCPI2_0:
 	.long	7
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000054:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -29,6 +32,7 @@ func0000000000000054:
 
 .LCPI3_0:
 	.long	15
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	vpsrlq	$34, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -39,6 +43,7 @@ func0000000000000061:
 
 .LCPI4_0:
 	.long	536870911
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000046:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -69,6 +74,7 @@ func0000000000000046:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000048:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -100,6 +106,7 @@ func0000000000000048:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000058:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -131,6 +138,7 @@ func0000000000000058:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000045:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -162,6 +170,7 @@ func0000000000000045:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000004a:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -172,6 +181,7 @@ func000000000000004a:
 
 .LCPI9_0:
 	.long	536870911
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000004b:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -183,6 +193,7 @@ func000000000000004b:
 
 .LCPI10_0:
 	.long	1
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000006c:
 	vpsrlq	$61, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -194,6 +205,7 @@ func000000000000006c:
 
 .LCPI11_0:
 	.long	536870911
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000059:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -203,6 +215,7 @@ func0000000000000059:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000001:
 	vpmovqd	%ymm1, %xmm1
 	vpsrld	$1, %xmm1, %xmm1
@@ -212,6 +225,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000044:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -224,6 +238,7 @@ func0000000000000044:
 
 .LCPI14_0:
 	.long	127
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000066:
 	vpsrlq	$56, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -234,6 +249,7 @@ func0000000000000066:
 
 .LCPI15_0:
 	.long	2147483648
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000008:
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -243,6 +259,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000068:
 	vpsrlq	$38, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -275,6 +292,7 @@ func0000000000000068:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000014:
 	vpsrlq	$19, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -284,6 +302,7 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000078:
 	vpsrlq	$38, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -294,6 +313,7 @@ func0000000000000078:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000079:
 	vpsrlq	$38, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -304,6 +324,7 @@ func0000000000000079:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000007:
 	vpmovqd	%ymm1, %xmm1
 	vpsrld	$3, %xmm1, %xmm1
@@ -314,6 +335,7 @@ func0000000000000007:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000064:
 	vpsrlq	$38, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -346,6 +368,7 @@ func0000000000000064:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000074:
 	vpsrlq	$40, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -357,6 +380,7 @@ func0000000000000074:
 
 .LCPI23_0:
 	.long	2
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000084:
 	vpmovqd	%ymm1, %xmm1
 	vpsrld	$3, %xmm1, %xmm1

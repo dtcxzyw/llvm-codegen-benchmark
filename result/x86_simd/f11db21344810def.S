@@ -8,6 +8,7 @@
 	.short	7
 	.short	7
 	.short	7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovdw	%ymm1, %xmm1
 	vpaddw	%xmm0, %xmm1, %xmm0
@@ -15,6 +16,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003c:
 	vpmovdw	%ymm1, %xmm1
 	vpaddw	%xmm0, %xmm1, %xmm0
@@ -32,6 +34,7 @@ func000000000000003c:
 	.short	6
 	.short	6
 	.short	6
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003d:
 	vpmovdw	%ymm1, %xmm1
 	vpaddw	%xmm0, %xmm1, %xmm0
@@ -48,6 +51,7 @@ func000000000000003d:
 	.short	61087
 	.short	61087
 	.short	61087
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000025:
 	vpmovdw	%ymm1, %xmm1
 	vpaddw	%xmm0, %xmm1, %xmm0

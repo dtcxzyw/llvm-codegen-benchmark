@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -8,6 +9,7 @@ func0000000000000088:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -17,6 +19,7 @@ func00000000000000ca:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000cc:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -26,6 +29,7 @@ func00000000000000cc:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000aa:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2

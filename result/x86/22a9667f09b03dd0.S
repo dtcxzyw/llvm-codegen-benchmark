@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000046:
 	imulq	$100, %rsi, %rax
 	cqto
@@ -7,6 +8,7 @@ func0000000000000046:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000058:
 	imulq	$100, %rsi, %rax
 	cqto
@@ -15,6 +17,7 @@ func0000000000000058:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	imulq	$100, %rsi, %rax
 	cqto
@@ -23,6 +26,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	imulq	$100, %rsi, %rax
 	cqto
@@ -31,6 +35,7 @@ func0000000000000018:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
@@ -41,6 +46,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000004a:
 	imulq	$100, %rsi, %rax
 	cqto

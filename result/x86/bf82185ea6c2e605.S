@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -7,6 +8,7 @@ func0000000000000007:
 	leaq	32768(%rax,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	testb	$1, %sil
 	movabsq	$-6148914694099828736, %rcx

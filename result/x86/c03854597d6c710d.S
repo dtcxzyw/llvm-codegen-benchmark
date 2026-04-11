@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000ca4:
 	vcmpless	%xmm2, %xmm1, %k1
 	vmovaps	%xmm1, %xmm3

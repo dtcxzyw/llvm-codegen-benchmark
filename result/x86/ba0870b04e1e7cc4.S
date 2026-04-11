@@ -1,40 +1,47 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	movabsq	$106102737862656, %rax
 	btq	%rdi, %rax
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	movabsq	$8070450532247928833, %rax
 	btq	%rdi, %rax
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ec:
 	movl	$102631199, %eax
 	btq	%rdi, %rax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000041:
 	movl	$59627, %eax
 	btq	%rdi, %rax
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000004c:
 	movl	$60139, %eax
 	btq	%rdi, %rax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000cc:
 	movabsq	$-2749786749764, %rax
 	btq	%rdi, %rax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000c4:
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
@@ -43,6 +50,7 @@ func00000000000000c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000c8:
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
@@ -52,6 +60,7 @@ func00000000000000c8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000d4:
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax

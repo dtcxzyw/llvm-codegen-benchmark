@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	testl	$2139095040, %edx
 	movl	$-126, %eax
@@ -7,6 +8,7 @@ func0000000000000015:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	shll	$30, %edx
 	sarl	$31, %edx

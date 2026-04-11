@@ -3,6 +3,7 @@
 	.long	32768
 .LCPI0_1:
 	.long	32767
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000146:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -16,6 +17,7 @@ func0000000000000146:
 
 .LCPI1_0:
 	.long	6
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -31,6 +33,7 @@ func000000000000002c:
 	.long	252
 .LCPI2_1:
 	.long	256
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -44,6 +47,7 @@ func0000000000000084:
 
 .LCPI3_0:
 	.long	768
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000181:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -59,6 +63,7 @@ func0000000000000181:
 	.long	2
 .LCPI4_1:
 	.long	6
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -72,6 +77,7 @@ func0000000000000024:
 
 .LCPI5_0:
 	.long	127
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000188:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -88,6 +94,7 @@ func0000000000000188:
 	.long	15
 .LCPI6_1:
 	.long	1
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000c6:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -103,6 +110,7 @@ func00000000000000c6:
 	.long	15
 .LCPI7_1:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000014a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -118,6 +126,7 @@ func000000000000014a:
 	.long	2
 .LCPI8_1:
 	.long	3
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -133,6 +142,7 @@ func0000000000000021:
 	.long	6
 .LCPI9_1:
 	.long	7
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000144:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -144,6 +154,7 @@ func0000000000000144:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000014c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -156,6 +167,7 @@ func000000000000014c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000018c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

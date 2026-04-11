@@ -18,6 +18,7 @@
 	.short	256
 .LCPI0_1:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -46,6 +47,7 @@ func0000000000000181:
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpsllw	$7, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3

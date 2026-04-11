@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	testw	%si, %si
 	sete	%al
@@ -6,6 +7,7 @@ func0000000000000002:
 	andb	$1, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	movzwl	%si, %eax
 	cmpl	$6554, %eax
@@ -14,6 +16,7 @@ func0000000000000010:
 	andb	$1, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	testw	%si, %si
 	setne	%al

@@ -16,6 +16,7 @@
 	.short	1008
 	.short	1008
 	.short	1008
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqb	%xmm1, %xmm0, %k1
 	vptestnmw	.LCPI0_0(%rip), %ymm2, %k0 {%k1}

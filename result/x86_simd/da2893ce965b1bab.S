@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	-36
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	vpmovzxbq	%xmm1, %ymm1
 	vpcmpltub	.LCPI0_0(%rip), %xmm0, %k1
@@ -43,6 +44,7 @@ func00000000000000a4:
 	.zero	1
 .LCPI1_1:
 	.quad	-3
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	vpmovzxbq	%xmm1, %ymm1
 	vpcmpeqb	.LCPI1_0(%rip), %xmm0, %k1

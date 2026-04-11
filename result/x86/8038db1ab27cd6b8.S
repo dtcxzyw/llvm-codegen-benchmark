@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000486:
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
@@ -9,6 +10,7 @@ func0000000000000486:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000498:
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
@@ -19,6 +21,7 @@ func0000000000000498:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000494:
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
@@ -29,6 +32,7 @@ func0000000000000494:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c81:
 	leal	-65(%rdi), %eax
 	leal	32(%rdi), %ecx
@@ -39,6 +43,7 @@ func0000000000000c81:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000481:
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx
@@ -49,6 +54,7 @@ func0000000000000481:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000048c:
 	leal	-97(%rdi), %eax
 	leal	-32(%rdi), %ecx

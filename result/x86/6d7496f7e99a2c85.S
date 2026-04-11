@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	movq	%rdi, %rax
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -6,6 +7,7 @@ func0000000000000004:
 	cmovbeq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movq	%rdi, %rax
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -13,12 +15,14 @@ func0000000000000002:
 	cmovbeq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	movq	%rdi, %rax
 	vucomisd	%xmm0, %xmm0
 	cmovnpq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	movq	%rsi, %rax
 	vxorpd	%xmm1, %xmm1, %xmm1

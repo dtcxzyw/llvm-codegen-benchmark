@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x412e848000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	subq	%rsi, %rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm1
@@ -11,6 +12,7 @@ func0000000000000012:
 
 .LCPI1_0:
 	.quad	0x41cdcd6500000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001b:
 	subq	%rsi, %rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm1
@@ -21,6 +23,7 @@ func000000000000001b:
 
 .LCPI2_0:
 	.quad	0x41cdcd6500000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001c:
 	subq	%rsi, %rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm1
@@ -31,6 +34,7 @@ func000000000000001c:
 
 .LCPI3_0:
 	.quad	0x41cdcd6500000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000013:
 	subq	%rsi, %rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm1
@@ -41,6 +45,7 @@ func0000000000000013:
 
 .LCPI4_0:
 	.quad	0x412e848000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	subq	%rsi, %rdi
 	vcvtsi2sd	%rdi, %xmm15, %xmm1

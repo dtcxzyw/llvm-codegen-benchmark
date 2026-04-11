@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	addl	$50, %edi
 	movslq	%edi, %rax
@@ -12,6 +13,7 @@ func0000000000000004:
 	cmovll	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movl	%edi, %eax
 	addl	$-1046568, %eax

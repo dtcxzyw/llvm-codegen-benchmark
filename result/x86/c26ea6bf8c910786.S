@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	addq	$16393, %rdi
 	movl	$1, %eax
@@ -11,6 +12,7 @@ func0000000000000004:
 .LBB0_2:
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	incq	%rdi
 	movl	$4, %eax

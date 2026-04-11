@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	subq	%rdi, %rsi
 	addq	$16, %rsi
@@ -6,6 +7,7 @@ func0000000000000018:
 	movl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	subq	%rdi, %rsi
 	addq	$8, %rsi
@@ -13,6 +15,7 @@ func0000000000000019:
 	movl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	subq	%rdi, %rsi
 	leaq	8(%rsi), %rax
@@ -20,6 +23,7 @@ func0000000000000000:
 	andl	$2147483647, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000011:
 	subl	%edi, %esi
 	leal	-8(%rsi), %eax
@@ -27,6 +31,7 @@ func0000000000000011:
 	andl	$63, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	subq	%rdi, %rsi
 	leaq	-8(%rsi), %rax
@@ -34,6 +39,7 @@ func0000000000000010:
 	andl	$67108863, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	subq	%rdi, %rsi
 	addq	$-8, %rsi

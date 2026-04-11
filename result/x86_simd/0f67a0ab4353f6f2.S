@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -34,6 +35,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.quad	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -66,6 +68,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -101,6 +104,7 @@ func000000000000000c:
 
 .LCPI3_0:
 	.quad	455
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000048:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -133,6 +137,7 @@ func0000000000000048:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000041:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -167,6 +172,7 @@ func0000000000000041:
 
 .LCPI5_0:
 	.quad	9
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -199,6 +205,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -234,6 +241,7 @@ func000000000000000a:
 
 .LCPI7_0:
 	.quad	-1000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000006:
 	vextracti128	$1, %ymm1, %xmm3
 	vpextrq	$1, %xmm3, %rax

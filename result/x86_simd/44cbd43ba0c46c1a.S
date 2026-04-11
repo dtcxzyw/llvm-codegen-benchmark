@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vprold	$6, %ymm2, %ymm3
 	vpsubd	%ymm2, %ymm1, %ymm1
@@ -7,6 +8,7 @@ func0000000000000009:
 	vpxor	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vprold	$4, %ymm2, %ymm3
 	vpsubd	%ymm2, %ymm1, %ymm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001f3:
 	incl	%esi
 	vcvtsi2ss	%esi, %xmm15, %xmm1

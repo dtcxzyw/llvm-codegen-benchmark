@@ -20,6 +20,7 @@
 	.long	4
 .LCPI0_2:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsrld	$16, %ymm1, %ymm1
 	vpmovdb	%ymm1, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	imull	$-1410065408, %edx, %eax
 	addl	%esi, %eax
@@ -7,6 +8,7 @@ func0000000000000000:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003c0:
 	imull	$-100000000, %edx, %ecx
 	addl	%esi, %ecx

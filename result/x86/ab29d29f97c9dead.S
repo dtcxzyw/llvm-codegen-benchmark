@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vcvttss2si	%xmm0, %eax
@@ -6,6 +7,7 @@ func0000000000000002:
 	leaq	(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vcvttss2si	%xmm0, %eax

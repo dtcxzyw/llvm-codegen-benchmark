@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	vpshufb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -41,6 +42,7 @@ func0000000000000048:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vpshufb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -66,6 +68,7 @@ func0000000000000044:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
 	vpshufb	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -91,6 +94,7 @@ func0000000000000041:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpshufb	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -116,6 +120,7 @@ func0000000000000001:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vpshufb	.LCPI4_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -141,6 +146,7 @@ func0000000000000004:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	vpshufb	.LCPI5_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -166,6 +172,7 @@ func0000000000000014:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	vpshufb	.LCPI6_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -191,6 +198,7 @@ func0000000000000008:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000018:
 	vpshufb	.LCPI7_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1
@@ -216,6 +224,7 @@ func0000000000000018:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000019:
 	vpshufb	.LCPI8_0(%rip), %xmm1, %xmm1
 	vpmovzxwq	%xmm1, %ymm1

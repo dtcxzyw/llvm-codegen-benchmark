@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f0:
 	testb	$1, %dil
 	cmoveq	%rdx, %rsi

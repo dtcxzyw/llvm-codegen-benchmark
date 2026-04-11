@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000166:
 	vmovd	%xmm0, %eax
 	vmovd	%xmm1, %ecx
@@ -15,6 +16,7 @@ func0000000000000166:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x48976760
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vbroadcastss	.LCPI1_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
@@ -30,6 +32,7 @@ func0000000000000044:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000055:
 	vbroadcastss	.LCPI2_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
@@ -45,6 +48,7 @@ func0000000000000055:
 	.long	0x7fffffff
 .LCPI3_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001dd:
 	vbroadcastss	.LCPI3_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
@@ -60,6 +64,7 @@ func00000000000001dd:
 	.long	0x7fffffff
 .LCPI4_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000122:
 	vbroadcastss	.LCPI4_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
@@ -75,6 +80,7 @@ func0000000000000122:
 	.long	0x7fffffff
 .LCPI5_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000155:
 	vbroadcastss	.LCPI5_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
@@ -86,6 +92,7 @@ func0000000000000155:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000099:
 	vmovd	%xmm0, %eax
 	vmovd	%xmm1, %ecx
@@ -102,6 +109,7 @@ func0000000000000099:
 	.long	0x7fffffff
 .LCPI7_1:
 	.long	0x2edbe6ff
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000dd:
 	vbroadcastss	.LCPI7_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1
@@ -113,6 +121,7 @@ func00000000000000dd:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000088:
 	vmovd	%xmm0, %eax
 	vmovd	%xmm1, %ecx
@@ -129,6 +138,7 @@ func0000000000000088:
 	.long	0x7fffffff
 .LCPI9_1:
 	.long	0x00800000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000144:
 	vbroadcastss	.LCPI9_0(%rip), %xmm2
 	vandps	%xmm2, %xmm1, %xmm1

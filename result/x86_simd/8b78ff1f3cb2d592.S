@@ -14,6 +14,7 @@
 	.short	292
 .LCPI0_3:
 	.short	292
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a5:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0

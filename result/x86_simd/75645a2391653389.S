@@ -16,6 +16,7 @@
 	.short	65531
 	.short	65531
 	.short	65531
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ee:
 	vpaddw	%ymm0, %ymm1, %ymm0
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm0

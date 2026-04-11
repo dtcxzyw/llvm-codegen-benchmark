@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	movl	%edx, %eax
 	sarq	$3, %rsi
@@ -7,6 +8,7 @@ func0000000000000028:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000029:
 	movl	%edx, %eax
 	sarq	$5, %rsi
@@ -15,6 +17,7 @@ func0000000000000029:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	movl	%edx, %eax
 	sarq	$4, %rsi

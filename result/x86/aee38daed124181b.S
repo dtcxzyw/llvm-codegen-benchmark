@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0xbfc90fdb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vcmpltss	.LCPI0_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
@@ -8,6 +9,7 @@ func0000000000000022:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -16,6 +18,7 @@ func0000000000000024:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000023:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -24,6 +27,7 @@ func0000000000000023:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -32,6 +36,7 @@ func000000000000002a:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000032:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpnless	%xmm2, %xmm3, %k1
@@ -40,6 +45,7 @@ func0000000000000032:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000027:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -48,6 +54,7 @@ func0000000000000027:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000025:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -56,6 +63,7 @@ func0000000000000025:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002b:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -64,6 +72,7 @@ func000000000000002b:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000028:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -74,6 +83,7 @@ func0000000000000028:
 
 .LCPI9_0:
 	.long	0x40c90fdb
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000042:
 	vcmpgtss	.LCPI9_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
@@ -83,6 +93,7 @@ func0000000000000042:
 
 .LCPI10_0:
 	.long	0x40490fdb
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000044:
 	vcmpgtss	.LCPI10_0(%rip), %xmm2, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}

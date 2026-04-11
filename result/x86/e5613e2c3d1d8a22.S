@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	cmpl	$128, %edi
 	movl	$128, %ecx
@@ -9,6 +10,7 @@ func0000000000000024:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	cmpl	$4083, %edi
 	movl	$4083, %ecx
@@ -19,6 +21,7 @@ func0000000000000064:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000066:
 	cmpl	$1114111, %edi
 	movl	$1114111, %ecx
@@ -29,6 +32,7 @@ func0000000000000066:
 	cmovnsl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
 	cmpl	$4194307, %edi
 	movl	$4194307, %ecx

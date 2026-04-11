@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vcvtudq2pd	%ymm0, %zmm0
 	retq
@@ -41,6 +42,7 @@ func0000000000000004:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vandps	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vcvtdq2pd	%ymm0, %zmm0

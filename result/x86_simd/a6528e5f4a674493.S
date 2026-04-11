@@ -5,6 +5,7 @@
 	.quad	3
 .LCPI0_2:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000074:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
@@ -18,6 +19,7 @@ func0000000000000074:
 	.quad	6
 .LCPI1_2:
 	.quad	5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000034:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
@@ -27,6 +29,7 @@ func0000000000000034:
 
 .LCPI2_0:
 	.quad	7168
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsraq	$63, %ymm0, %ymm0
@@ -39,6 +42,7 @@ func0000000000000006:
 	.quad	9
 .LCPI3_2:
 	.quad	8
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
@@ -50,6 +54,7 @@ func0000000000000004:
 	.quad	9223372036854775807
 .LCPI4_1:
 	.quad	-9223372036854775807
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -62,6 +67,7 @@ func000000000000000a:
 	.quad	9007199254740991
 .LCPI5_1:
 	.quad	4503599627370496
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000078:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
@@ -70,6 +76,7 @@ func0000000000000078:
 
 .LCPI6_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubq	%ymm1, %ymm2, %ymm1
@@ -79,6 +86,7 @@ func000000000000000c:
 
 .LCPI7_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000006c:
 	vpor	%ymm1, %ymm0, %ymm0
 	vptestmq	%ymm0, %ymm0, %k1
@@ -87,6 +95,7 @@ func000000000000006c:
 
 .LCPI8_0:
 	.quad	16
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubq	%ymm1, %ymm2, %ymm1
@@ -100,6 +109,7 @@ func000000000000002c:
 	.quad	3
 .LCPI9_2:
 	.quad	4
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI9_0(%rip){1to4}, %ymm0, %k1
@@ -111,6 +121,7 @@ func0000000000000008:
 	.quad	400
 .LCPI10_1:
 	.quad	396
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000001:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubq	%ymm1, %ymm2, %ymm1

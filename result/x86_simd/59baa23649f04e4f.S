@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -25,6 +26,7 @@ func0000000000000001:
 	.short	120
 	.short	120
 	.short	120
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -51,6 +53,7 @@ func0000000000000004:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
@@ -77,6 +80,7 @@ func000000000000000c:
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1

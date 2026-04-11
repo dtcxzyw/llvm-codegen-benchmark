@@ -3,6 +3,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000029:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -15,6 +16,7 @@ func0000000000000029:
 	.zero	16,1
 .LCPI1_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpord	.LCPI1_1(%rip){1to4}, %xmm0, %xmm1
@@ -26,6 +28,7 @@ func0000000000000004:
 	.zero	16,1
 .LCPI2_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000031:
 	vptestmd	%ymm1, %ymm1, %k1
 	vpord	.LCPI2_1(%rip){1to4}, %xmm0, %xmm1
@@ -39,6 +42,7 @@ func0000000000000031:
 	.zero	4,1
 .LCPI3_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI3_2(%rip){1to4}, %xmm0, %xmm1
@@ -50,6 +54,7 @@ func0000000000000005:
 	.zero	16,1
 .LCPI4_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -62,6 +67,7 @@ func0000000000000028:
 	.zero	16,1
 .LCPI5_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000030:
 	vptestmd	%ymm1, %ymm1, %k1
 	vpord	.LCPI5_1(%rip){1to4}, %xmm0, %xmm1
@@ -75,6 +81,7 @@ func0000000000000030:
 	.zero	4,1
 .LCPI6_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000018:
 	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI6_2(%rip){1to4}, %xmm0, %xmm1
@@ -88,6 +95,7 @@ func0000000000000018:
 	.zero	4,1
 .LCPI7_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000011:
 	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI7_2(%rip){1to4}, %xmm0, %xmm1
@@ -101,6 +109,7 @@ func0000000000000011:
 	.zero	4,1
 .LCPI8_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000060:
 	vpcmpnleud	.LCPI8_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI8_2(%rip){1to4}, %xmm0, %xmm1
@@ -114,6 +123,7 @@ func0000000000000060:
 	.zero	4,1
 .LCPI9_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000051:
 	vpcmpltud	.LCPI9_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI9_2(%rip){1to4}, %xmm0, %xmm1
@@ -127,6 +137,7 @@ func0000000000000051:
 	.zero	4,1
 .LCPI10_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000061:
 	vpcmpnleud	.LCPI10_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI10_2(%rip){1to4}, %xmm0, %xmm1
@@ -140,6 +151,7 @@ func0000000000000061:
 	.zero	4,1
 .LCPI11_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000021:
 	vpcmpnleud	.LCPI11_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI11_2(%rip){1to4}, %xmm0, %xmm1
@@ -153,6 +165,7 @@ func0000000000000021:
 	.zero	4,1
 .LCPI12_1:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000020:
 	vpcmpnleud	.LCPI12_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI12_2(%rip){1to4}, %xmm0, %xmm1

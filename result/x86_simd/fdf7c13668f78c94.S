@@ -39,6 +39,7 @@
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpxor	%ymm1, %ymm2, %ymm1
@@ -48,6 +49,7 @@ func0000000000000005:
 
 .LCPI1_0:
 	.long	65536
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpslld	$16, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1

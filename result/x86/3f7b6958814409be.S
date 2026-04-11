@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0
 	vcmpnless	.LCPI0_0(%rip), %xmm0, %k0
@@ -12,6 +13,7 @@ func00000000000000a6:
 
 .LCPI1_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b6:
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0
 	vcmpnless	.LCPI1_0(%rip), %xmm0, %k0
@@ -23,6 +25,7 @@ func00000000000000b6:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0
 	vcmpgtss	.LCPI2_0(%rip), %xmm0, %k0
@@ -34,6 +37,7 @@ func0000000000000084:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000110:
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0
 	vcmpeqss	.LCPI3_0(%rip), %xmm0, %k0
@@ -47,6 +51,7 @@ func0000000000000110:
 	.long	0x3f800000
 .LCPI4_1:
 	.long	0x40000000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000007a:
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0
 	vcmpngess	.LCPI4_0(%rip), %xmm0, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018f:
 	movq	%rdi, %rax
 	movabsq	$1729382256910270464, %rcx
@@ -8,6 +9,7 @@ func000000000000018f:
 	shlq	$27, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	andl	$7, %esi
 	cmpq	$1, %rsi
@@ -15,6 +17,7 @@ func000000000000018c:
 	leaq	(,%rdi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000187:
 	andl	$63, %esi
 	cmpq	$1, %rsi
@@ -22,6 +25,7 @@ func0000000000000187:
 	leaq	(,%rdi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018e:
 	movq	%rdi, %rax
 	andl	$56, %esi
@@ -30,6 +34,7 @@ func000000000000018e:
 	shlq	$6, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000185:
 	andl	$7, %esi
 	cmpq	$1, %rsi

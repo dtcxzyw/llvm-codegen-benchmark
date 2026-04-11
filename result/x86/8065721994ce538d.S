@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001b8:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi
@@ -10,6 +11,7 @@ func00000000000001b8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001a8:
 	xorl	%eax, %eax
 	subq	%rdx, %rsi

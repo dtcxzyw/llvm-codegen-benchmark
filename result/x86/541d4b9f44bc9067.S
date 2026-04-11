@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000210:
 	subq	%rdx, %rsi
 	cmpq	$10001, %rsi
@@ -8,6 +9,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -17,6 +19,7 @@ func000000000000010c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000842:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -25,6 +28,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000108:
 	subq	%rdx, %rsi
 	cmpq	$128, %rsi
@@ -34,6 +38,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	subq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -43,6 +48,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000114:
 	subq	%rdx, %rsi
 	cmpq	$4097, %rsi
@@ -52,6 +58,7 @@ func0000000000000114:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000908:
 	subq	%rdx, %rsi
 	cmpq	$1024, %rsi
@@ -61,6 +68,7 @@ func0000000000000908:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000050c:
 	subq	%rdx, %rsi
 	cmpq	$1024, %rsi
@@ -70,6 +78,7 @@ func000000000000050c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000048:
 	subq	%rdx, %rsi
 	cmpq	$2097152, %rsi
@@ -79,6 +88,7 @@ func0000000000000048:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000030c:
 	subq	%rdx, %rsi
 	cmpq	$3, %rsi
@@ -88,6 +98,7 @@ func000000000000030c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000018c:
 	subq	%rdx, %rsi
 	cmpq	$3, %rsi
@@ -97,6 +108,7 @@ func000000000000018c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000001108:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -106,6 +118,7 @@ func0000000000001108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000208:
 	subq	%rdx, %rsi
 	cmpq	$32, %rsi
@@ -115,6 +128,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000004c:
 	subq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -124,6 +138,7 @@ func000000000000004c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000102:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -132,6 +147,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000001310:
 	subq	%rdx, %rsi
 	cmpq	$3, %rsi
@@ -141,6 +157,7 @@ func0000000000001310:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000998:
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -149,6 +166,7 @@ func0000000000000998:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000302:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -158,6 +176,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000001110:
 	subq	%rdx, %rsi
 	cmpq	$16, %rsi
@@ -167,6 +186,7 @@ func0000000000001110:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func000000000000028c:
 	subq	%rdx, %rsi
 	cmpq	$-7, %rsi
@@ -176,6 +196,7 @@ func000000000000028c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000194:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -185,6 +206,7 @@ func0000000000000194:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000001102:
 	subq	%rdx, %rsi
 	cmpq	$2, %rsi
@@ -194,6 +216,7 @@ func0000000000001102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000054:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -202,6 +225,7 @@ func0000000000000054:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000118:
 	subq	%rdx, %rsi
 	cmpq	$63, %rsi
@@ -211,6 +235,7 @@ func0000000000000118:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func0000000000000058:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -219,6 +244,7 @@ func0000000000000058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func0000000000001050:
 	subq	%rdx, %rsi
 	cmpq	$65537, %rsi
@@ -228,6 +254,7 @@ func0000000000001050:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end26, nop
 func0000000000000b14:
 	subq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -237,6 +264,7 @@ func0000000000000b14:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end27, nop
 func0000000000000918:
 	subq	%rdx, %rsi
 	cmpq	$253, %rsi
@@ -246,6 +274,7 @@ func0000000000000918:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end28, nop
 func00000000000009b0:
 	subq	%rdx, %rsi
 	cmpq	$2046, %rsi
@@ -255,6 +284,7 @@ func00000000000009b0:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end29, nop
 func0000000000000308:
 	subq	%rdx, %rsi
 	cmpq	$64, %rsi
@@ -264,6 +294,7 @@ func0000000000000308:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end30, nop
 func0000000000000508:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -273,6 +304,7 @@ func0000000000000508:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end31, nop
 func00000000000001b0:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -282,6 +314,7 @@ func00000000000001b0:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end32, nop
 func0000000000000190:
 	subq	%rdx, %rsi
 	cmpq	$16, %rsi
@@ -291,6 +324,7 @@ func0000000000000190:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end33, nop
 func0000000000000294:
 	subq	%rdx, %rsi
 	cmpq	$7, %rsi
@@ -300,6 +334,7 @@ func0000000000000294:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end34, nop
 func0000000000000a94:
 	subq	%rdx, %rsi
 	cmpq	$7, %rsi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2
@@ -11,6 +12,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.quad	11
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f4:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -22,6 +24,7 @@ func00000000000001f4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000010a:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -34,6 +37,7 @@ func000000000000010a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a6:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -45,6 +49,7 @@ func00000000000000a6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000008a:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -57,6 +62,7 @@ func000000000000008a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -70,6 +76,7 @@ func0000000000000006:
 
 .LCPI6_0:
 	.quad	562949953421312
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -81,6 +88,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -95,6 +103,7 @@ func000000000000000a:
 
 .LCPI8_0:
 	.quad	562949953421311
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -108,6 +117,7 @@ func0000000000000008:
 
 .LCPI9_0:
 	.quad	2046
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000f8:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpslld	$31, %xmm2, %xmm1
@@ -121,6 +131,7 @@ func00000000000000f8:
 
 .LCPI10_0:
 	.long	1
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000141:
 	vpandd	.LCPI10_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -133,6 +144,7 @@ func0000000000000141:
 
 .LCPI11_0:
 	.long	1
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000001e1:
 	vpandd	.LCPI11_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2

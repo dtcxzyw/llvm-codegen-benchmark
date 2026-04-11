@@ -70,6 +70,7 @@
 .LCPI0_4:
 	.short	65503
 	.short	65503
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000102:
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpcmpltuw	.LCPI0_1(%rip), %ymm1, %k0

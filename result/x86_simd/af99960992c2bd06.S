@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3089705f
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpltps	%zmm0, %zmm1, %k0
@@ -10,6 +11,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	0x447a0000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vmulps	.LCPI1_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpleps	%zmm1, %zmm0, %k0
@@ -19,6 +21,7 @@ func000000000000000c:
 
 .LCPI2_0:
 	.long	0x3f99999a
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vmulps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpnleps	%zmm0, %zmm1, %k0
@@ -28,6 +31,7 @@ func0000000000000005:
 
 .LCPI3_0:
 	.long	0x3c23d70a
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vmulps	.LCPI3_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpltps	%zmm1, %zmm0, %k0
@@ -37,6 +41,7 @@ func0000000000000004:
 
 .LCPI4_0:
 	.long	0x447a0000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vmulps	.LCPI4_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpnleps	%zmm1, %zmm0, %k0
@@ -46,6 +51,7 @@ func0000000000000003:
 
 .LCPI5_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000b:
 	vmulps	.LCPI5_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpnltps	%zmm1, %zmm0, %k0
@@ -55,6 +61,7 @@ func000000000000000b:
 
 .LCPI6_0:
 	.long	0x37800000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vmulps	.LCPI6_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpleps	%zmm0, %zmm1, %k0
@@ -64,6 +71,7 @@ func000000000000000a:
 
 .LCPI7_0:
 	.long	0x37800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vmulps	.LCPI7_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpeqps	%zmm0, %zmm1, %k0
@@ -73,6 +81,7 @@ func0000000000000008:
 
 .LCPI8_0:
 	.long	0x42c80000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000007:
 	vmulps	.LCPI8_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpneqps	%zmm0, %zmm1, %k0
@@ -82,6 +91,7 @@ func0000000000000007:
 
 .LCPI9_0:
 	.long	0x40400000
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000d:
 	vmulps	.LCPI9_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpnltps	%zmm0, %zmm1, %k0
@@ -91,6 +101,7 @@ func000000000000000d:
 
 .LCPI10_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000001:
 	vmulps	.LCPI10_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpunordps	%zmm0, %zmm1, %k0

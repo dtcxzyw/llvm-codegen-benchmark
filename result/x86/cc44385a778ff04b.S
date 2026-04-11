@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003e1:
 	movl	%edx, %eax
 	movl	$1000, %ecx
@@ -11,6 +12,7 @@ func00000000000003e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f8:
 	movl	%edx, %eax
 	movl	$1000000000, %ecx
@@ -22,6 +24,7 @@ func00000000000001f8:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000003f8:
 	movl	%edx, %eax
 	movl	$1000000000, %ecx
@@ -33,6 +36,7 @@ func00000000000003f8:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001f4:
 	movl	%edx, %eax
 	movl	$4000000000, %ecx
@@ -44,6 +48,7 @@ func00000000000001f4:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e1:
 	movl	%edx, %eax
 	movl	$1000000000, %ecx
@@ -56,6 +61,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000003f4:
 	movl	%edx, %eax
 	movl	$1000, %ecx

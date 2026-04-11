@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x322bcc77
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -15,6 +16,7 @@ func000000000000000b:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x3727c5ac
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
@@ -28,6 +30,7 @@ func0000000000000012:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x43340000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001c:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
@@ -40,6 +43,7 @@ func000000000000001c:
 	.long	0x7fffffff
 .LCPI3_1:
 	.long	0x43340000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
@@ -52,6 +56,7 @@ func0000000000000004:
 	.long	0x7fffffff
 .LCPI4_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
@@ -65,6 +70,7 @@ func0000000000000002:
 	.long	0x7fffffff
 .LCPI5_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000015:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
@@ -78,6 +84,7 @@ func0000000000000015:
 	.long	0x7fffffff
 .LCPI6_1:
 	.long	0x3f800054
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0

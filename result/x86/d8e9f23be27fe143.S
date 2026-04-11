@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004c8:
 	leal	24(%rdi), %eax
 	testl	%edi, %edi
@@ -7,6 +8,7 @@ func00000000000004c8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000004c1:
 	leal	24(%rdi), %eax
 	testl	%edi, %edi
@@ -15,6 +17,7 @@ func00000000000004c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000004cc:
 	leal	60(%rdi), %eax
 	testl	%edi, %edi
@@ -23,6 +26,7 @@ func00000000000004cc:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000004c6:
 	leal	13(%rdi), %eax
 	testl	%edi, %edi
@@ -31,6 +35,7 @@ func00000000000004c6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000004ca:
 	leal	24(%rdi), %eax
 	testl	%edi, %edi
@@ -39,6 +44,7 @@ func00000000000004ca:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c1:
 	leal	-2147483647(%rdi), %eax
 	testl	%edi, %edi
@@ -47,6 +53,7 @@ func00000000000000c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000054a:
 	leal	-2(%rdi), %eax
 	cmpl	$3, %edi
@@ -55,6 +62,7 @@ func000000000000054a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000701:
 	movl	%edi, %eax
 	subl	$32, %eax
@@ -63,6 +71,7 @@ func0000000000000701:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000cc8:
 	movl	%edi, %eax
 	subl	$-305, %eax
@@ -71,6 +80,7 @@ func0000000000000cc8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000cca:
 	movl	%edi, %eax
 	subl	$-305, %eax
@@ -79,11 +89,13 @@ func0000000000000cca:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000cc6:
 	cmpl	$-613, %edi
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000546:
 	leal	-3600(%rdi), %eax
 	cmpl	$3601, %edi
@@ -91,6 +103,7 @@ func0000000000000546:
 	shrl	$31, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000541:
 	movl	%edi, %eax
 	subl	$12, %eax
@@ -99,6 +112,7 @@ func0000000000000541:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000101:
 	movl	%edi, %eax
 	subl	$1000000000, %eax
@@ -107,6 +121,7 @@ func0000000000000101:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000004d4:
 	leal	100(%rdi), %eax
 	testl	%edi, %edi

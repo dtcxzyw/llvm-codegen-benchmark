@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000148c:
 	vpsraq	$3, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2
@@ -9,6 +10,7 @@ func000000000000148c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001481:
 	vpsraq	$2, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2
@@ -18,6 +20,7 @@ func0000000000001481:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001081:
 	vpsraq	$1, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2
@@ -27,6 +30,7 @@ func0000000000001081:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000108c:
 	vpsraq	$1, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2
@@ -39,6 +43,7 @@ func000000000000108c:
 
 .LCPI4_0:
 	.quad	768
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000001498:
 	vpsraq	$2, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2

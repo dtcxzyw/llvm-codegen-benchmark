@@ -3,6 +3,7 @@
 	.long	134217856
 .LCPI0_1:
 	.long	134217728
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpslld	$27, %ymm0, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0

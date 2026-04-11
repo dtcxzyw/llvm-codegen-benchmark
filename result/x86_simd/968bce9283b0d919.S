@@ -25,6 +25,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
@@ -32,6 +33,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0

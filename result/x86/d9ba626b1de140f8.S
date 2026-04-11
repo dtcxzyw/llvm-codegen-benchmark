@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x2edbe6ff
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000006d:
 	vmovd	%xmm0, %eax
 	addl	%eax, %eax
@@ -16,6 +17,7 @@ func000000000000006d:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000d2:
 	vandps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -27,6 +29,7 @@ func00000000000000d2:
 
 .LCPI2_0:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000065:
 	vmovd	%xmm0, %eax
 	addl	%eax, %eax
@@ -42,6 +45,7 @@ func0000000000000065:
 	.long	0x7fffffff
 .LCPI3_1:
 	.long	0x42c80000
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a7:
 	vandps	.LCPI3_0(%rip){1to4}, %xmm0, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2

@@ -3,6 +3,7 @@
 	.quad	-16
 .LCPI0_1:
 	.quad	1152921504606846975
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -12,6 +13,7 @@ func0000000000000024:
 	vmovdqa	%ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -21,6 +23,7 @@ func0000000000000004:
 	vmovdqa	%ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubq	%ymm2, %ymm3, %ymm2

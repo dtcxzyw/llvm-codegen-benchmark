@@ -22,6 +22,7 @@
 	.long	16944
 .LCPI0_3:
 	.quad	4294967296
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm2
@@ -52,6 +53,7 @@ func0000000000000024:
 	.long	25136
 .LCPI1_2:
 	.long	16944
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpcmpeqb	.LCPI1_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm2

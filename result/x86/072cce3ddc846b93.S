@@ -1,106 +1,124 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000604:
 	leaq	6(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000661:
 	leaq	16632(%rdx,%rsi,8), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000761:
 	leaq	2(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000764:
 	leaq	57(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000007e5:
 	leaq	6(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000007e1:
 	leaq	6(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000007e8:
 	leaq	16(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000768:
 	leaq	25(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000741:
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000608:
 	leaq	-2(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000007e4:
 	leaq	7(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000007c1:
 	leaq	-1(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000601:
 	leaq	1(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000001:
 	leaq	19(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000004:
 	leaq	2(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000008:
 	leaq	13(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000001e8:
 	leaq	8(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000561:
 	leaq	(%rdx,%rsi,8), %rax
 	cmpq	%rdi, %rax

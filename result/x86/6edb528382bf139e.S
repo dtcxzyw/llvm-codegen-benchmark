@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000003181:
 	testq	%rdx, %rdx
 	setne	%al
@@ -10,6 +11,7 @@ func0000000000003181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000318c:
 	testl	%edx, %edx
 	setne	%al
@@ -21,6 +23,7 @@ func000000000000318c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003021:
 	testq	%rdx, %rdx
 	setne	%cl
@@ -31,6 +34,7 @@ func0000000000003021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000584:
 	cmpl	$3, %edx
 	sete	%al
@@ -42,6 +46,7 @@ func0000000000000584:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000586:
 	cmpl	$4, %edx
 	sete	%al
@@ -53,6 +58,7 @@ func0000000000000586:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000581:
 	xorl	$11, %edx
 	testq	%rsi, %rsi
@@ -63,6 +69,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000001181:
 	cmpl	$-4, %edx
 	setb	%al
@@ -74,6 +81,7 @@ func0000000000001181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000058c:
 	cmpl	$4, %edx
 	sete	%cl
@@ -85,6 +93,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000058a:
 	testl	%edx, %edx
 	sete	%al
@@ -96,6 +105,7 @@ func000000000000058a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000588:
 	cmpl	$14, %edx
 	sete	%al
@@ -107,6 +117,7 @@ func0000000000000588:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000118c:
 	cmpl	$7, %edx
 	setb	%cl
@@ -118,6 +129,7 @@ func000000000000118c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000002821:
 	testl	%edx, %edx
 	setg	%cl
@@ -129,6 +141,7 @@ func0000000000002821:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000298a:
 	testl	%edx, %edx
 	setg	%cl
@@ -140,6 +153,7 @@ func000000000000298a:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000003024:
 	testq	%rdx, %rdx
 	setne	%al

@@ -20,6 +20,7 @@
 	.quad	8590197760
 .LCPI0_2:
 	.quad	8590328832
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm0

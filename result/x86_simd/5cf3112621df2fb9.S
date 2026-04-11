@@ -3,6 +3,7 @@
 	.long	1073856640
 .LCPI0_1:
 	.long	1073774720
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vptestnmd	%ymm1, %ymm1, %k0
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -15,6 +16,7 @@ func0000000000000042:
 	.long	4089970688
 .LCPI1_1:
 	.long	4090494976
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	vptestnmd	%ymm1, %ymm1, %k0
 	vptestnmd	%ymm0, %ymm0, %k1

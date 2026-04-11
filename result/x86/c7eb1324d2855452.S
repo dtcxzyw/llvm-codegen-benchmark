@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	testb	$1, %dl
 	movl	$11, %ecx
@@ -8,6 +9,7 @@ func0000000000000002:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	andl	$1, %edx
 	leaq	5(,%rdx,8), %rax

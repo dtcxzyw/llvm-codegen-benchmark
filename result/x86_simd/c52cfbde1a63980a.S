@@ -33,6 +33,7 @@
 	.short	4449
 	.short	4449
 	.short	4449
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrlw	$2, %ymm0, %ymm0
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0

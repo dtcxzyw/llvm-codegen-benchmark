@@ -20,6 +20,7 @@
 	.long	55295
 .LCPI0_2:
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000698:
 	vpbroadcastb	.LCPI0_2(%rip), %xmm3
 	vpand	%xmm3, %xmm2, %xmm2

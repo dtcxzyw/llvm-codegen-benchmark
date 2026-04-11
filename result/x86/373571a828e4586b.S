@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	addl	$-57344, %edx
 	cmpl	$1056768, %edx
@@ -9,6 +10,7 @@ func0000000000000084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	addl	$-3, %edx
 	cmpl	$10, %edx
@@ -19,6 +21,7 @@ func000000000000008a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000094:
 	addl	$-4, %edx
 	cmpl	$29, %edx
@@ -29,6 +32,7 @@ func0000000000000094:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000098:
 	decl	%edx
 	cmpl	$16658, %edx

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	movzwl	%di, %eax
 	shll	$2, %eax
 	xorq	$-4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	movzwl	%di, %ecx
 	shlq	$42, %rcx

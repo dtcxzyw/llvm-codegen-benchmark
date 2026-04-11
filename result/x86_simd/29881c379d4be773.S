@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpaddw	%ymm1, %ymm1, %ymm2
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -41,6 +42,7 @@ func000000000000003f:
 	.short	65488
 	.short	65488
 	.short	65488
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpmullw	.LCPI1_0(%rip), %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -81,6 +83,7 @@ func0000000000000004:
 	.short	65533
 	.short	65533
 	.short	65533
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmullw	.LCPI2_0(%rip), %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -104,6 +107,7 @@ func0000000000000000:
 	.short	63232
 	.short	63232
 	.short	63232
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000035:
 	vpaddw	%ymm1, %ymm1, %ymm2
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -145,6 +149,7 @@ func0000000000000035:
 	.short	65531
 	.short	65531
 	.short	65531
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vpmullw	.LCPI4_0(%rip), %ymm0, %ymm0
 	vpaddw	%ymm0, %ymm1, %ymm0

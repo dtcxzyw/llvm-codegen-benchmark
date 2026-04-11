@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3e45798ee2308c3a
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006cb:
 	cmpq	$15, %rdi
 	setne	%cl
@@ -11,6 +12,7 @@ func00000000000006cb:
 
 .LCPI1_0:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000006c2:
 	cmpq	$2, %rdi
 	setne	%cl

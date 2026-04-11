@@ -2,6 +2,7 @@
 .LCPI0_0:
 	.quad	0xfff0000000000000
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -12,6 +13,7 @@ func0000000000000001:
 .LCPI1_0:
 	.quad	0x40f0000000000000
 	.quad	0x3f10000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	xorl	%eax, %eax
 	cmpl	$31, %edi
@@ -22,6 +24,7 @@ func000000000000000a:
 .LCPI2_0:
 	.quad	0x3ff0000000000000
 	.quad	0x3fe5555555555555
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	xorl	%eax, %eax
 	cmpl	$25, %edi
@@ -32,6 +35,7 @@ func0000000000000006:
 .LCPI3_0:
 	.quad	0x3fd3333333333333
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	xorl	%eax, %eax
 	cmpl	$40, %edi
@@ -41,6 +45,7 @@ func0000000000000014:
 
 .LCPI4_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	cmpl	$3, %edi
 	setb	%al
@@ -51,6 +56,7 @@ func0000000000000004:
 .LCPI5_0:
 	.quad	0x3ff0000000000000
 	.quad	0x3ee4f8b588e368f1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	xorl	%eax, %eax
 	cmpl	$5, %edi

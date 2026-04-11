@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	decl	%edi
 	shrl	$5, %edi
 	leal	4(,%rdi,8), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	addl	$16711680, %edi
 	shrl	$10, %edi
@@ -12,6 +14,7 @@ func0000000000000001:
 	movzwl	%di, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	leal	983040(%rdi), %eax
 	shrl	$10, %eax

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm1, %ymm2, %k1

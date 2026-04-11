@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c88:
 	cmpq	$258, %rdx
 	cmovael	%esi, %edx
@@ -6,6 +7,7 @@ func0000000000000c88:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000c84:
 	cmpq	$258, %rdx
 	cmovael	%esi, %edx

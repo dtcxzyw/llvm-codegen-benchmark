@@ -16,6 +16,7 @@
 	.short	1023
 	.short	1023
 	.short	1023
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -43,6 +44,7 @@ func0000000000000010:
 	.short	1792
 	.short	1792
 	.short	1792
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -53,6 +55,7 @@ func0000000000000002:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vptestnmw	%ymm2, %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -63,6 +66,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -90,6 +94,7 @@ func0000000000000018:
 	.short	24
 	.short	24
 	.short	24
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
 	vpcmpneqw	.LCPI4_0(%rip), %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
@@ -117,6 +122,7 @@ func0000000000000030:
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
@@ -144,6 +150,7 @@ func0000000000000008:
 	.short	255
 	.short	255
 	.short	255
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000020:
 	vpcmpnleuw	.LCPI6_0(%rip), %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0

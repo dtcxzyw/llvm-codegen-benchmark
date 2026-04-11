@@ -5,6 +5,7 @@
 	.zero	16,64
 .LCPI0_2:
 	.zero	4,64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpor	%xmm1, %xmm0, %xmm0
 	vpaddb	%xmm0, %xmm2, %xmm0

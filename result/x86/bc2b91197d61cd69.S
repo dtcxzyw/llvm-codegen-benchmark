@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	orq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000210:
 	cmpq	$2, %rdx
 	setae	%cl
@@ -14,6 +16,7 @@ func0000000000000210:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000218:
 	cmpq	$65, %rdx
 	cmovbq	%rdx, %rsi
@@ -22,6 +25,7 @@ func0000000000000218:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000202:
 	cmpq	$5, %rdx
 	cmovbq	%rdx, %rsi
@@ -30,6 +34,7 @@ func0000000000000202:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000058:
 	cmpq	$-1, %rdx
 	cmovneq	%rdx, %rsi
@@ -38,6 +43,7 @@ func0000000000000058:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000050:
 	cmpq	$-1, %rdx
 	cmovneq	%rdx, %rsi

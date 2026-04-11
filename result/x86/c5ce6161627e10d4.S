@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	testq	$-779184, %rdi
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	leaq	1048576(%rdi), %rax
 	cmpq	$2097149, %rax
@@ -17,6 +19,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000424:
 	movl	%edi, %eax
 	andl	$6, %eax

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000018c1:
 	vpmaxsd	%ymm1, %ymm0, %ymm2
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm2, %k0
@@ -10,6 +11,7 @@ func00000000000018c1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000421:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpand	%ymm1, %ymm0, %ymm3
@@ -20,6 +22,7 @@ func0000000000000421:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000042c:
 	vpor	%ymm0, %ymm1, %ymm2
 	vptestnmd	%ymm2, %ymm2, %k0
@@ -29,6 +32,7 @@ func000000000000042c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000424:
 	vpor	%ymm0, %ymm1, %ymm2
 	vptestnmd	%ymm2, %ymm2, %k0

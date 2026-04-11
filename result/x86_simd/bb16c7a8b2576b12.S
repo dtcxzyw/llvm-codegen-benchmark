@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c21:
 	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm2, %k0
 	vpcmpeqd	%xmm1, %xmm0, %k1
@@ -11,6 +12,7 @@ func0000000000000c21:
 
 .LCPI1_0:
 	.quad	1023
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000c2c:
 	vpcmpeqq	.LCPI1_0(%rip){1to4}, %ymm2, %k0
 	vpcmpneqd	%xmm1, %xmm0, %k1
@@ -21,6 +23,7 @@ func0000000000000c2c:
 
 .LCPI2_0:
 	.quad	16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000c24:
 	vpcmpeqq	.LCPI2_0(%rip){1to4}, %ymm2, %k0
 	vpcmpltud	%xmm1, %xmm0, %k1
@@ -33,6 +36,7 @@ func0000000000000c24:
 	.quad	2048
 .LCPI3_1:
 	.quad	4096
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000008c:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpltuq	.LCPI3_1(%rip){1to4}, %ymm2, %k0
@@ -44,6 +48,7 @@ func000000000000008c:
 
 .LCPI4_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000c26:
 	vpcmpeqq	.LCPI4_0(%rip){1to4}, %ymm2, %k0
 	vpcmpgtd	%xmm0, %xmm1, %k1
@@ -54,6 +59,7 @@ func0000000000000c26:
 
 .LCPI5_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002b:
 	vpcmpeqq	.LCPI5_0(%rip){1to4}, %ymm2, %k0
 	vpcmpnltd	%xmm1, %xmm0, %k1
@@ -64,6 +70,7 @@ func000000000000002b:
 
 .LCPI6_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000429:
 	vpcmpeqq	.LCPI6_0(%rip){1to4}, %ymm2, %k0
 	vpcmpnltud	%xmm1, %xmm0, %k1
@@ -74,6 +81,7 @@ func0000000000000429:
 
 .LCPI7_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000029:
 	vpcmpeqq	.LCPI7_0(%rip){1to4}, %ymm2, %k0
 	vpcmpnltud	%xmm1, %xmm0, %k1
@@ -84,6 +92,7 @@ func0000000000000029:
 
 .LCPI8_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000039:
 	vpcmpeqq	.LCPI8_0(%rip){1to4}, %ymm2, %k0
 	vpcmpnltud	%xmm1, %xmm0, %k1
@@ -94,6 +103,7 @@ func0000000000000039:
 
 .LCPI9_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002c:
 	vpcmpeqq	.LCPI9_0(%rip){1to4}, %ymm2, %k0
 	vpcmpneqd	%xmm1, %xmm0, %k1
@@ -104,6 +114,7 @@ func000000000000002c:
 
 .LCPI10_0:
 	.quad	20
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000c2a:
 	vpcmpeqq	.LCPI10_0(%rip){1to4}, %ymm2, %k0
 	vpcmpgtd	%xmm1, %xmm0, %k1

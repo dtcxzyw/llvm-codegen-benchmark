@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	5871781006564002453
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpcmpltub	.LCPI0_0(%rip), %xmm0, %k1
 	vmovdqa64	%ymm1, %ymm2 {%k1}
@@ -43,6 +44,7 @@ func0000000000000004:
 	.zero	1
 .LCPI1_1:
 	.quad	5871781006564002453
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpcmpeqb	.LCPI1_0(%rip), %xmm0, %k1
 	vmovdqa64	%ymm1, %ymm2 {%k1}

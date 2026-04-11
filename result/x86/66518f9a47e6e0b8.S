@@ -2,6 +2,7 @@
 .LCPI0_0:
 	.quad	0x3fd0000000000000
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	xorl	%eax, %eax
 	cmpl	$1, %edi
@@ -14,6 +15,7 @@ func0000000000000012:
 .LCPI1_0:
 	.quad	0x3e80000000000000
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	xorl	%eax, %eax
 	cmpl	$4, %edi

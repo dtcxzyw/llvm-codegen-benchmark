@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	7680
 	.short	7680
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpternlogd	$190, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0
@@ -63,6 +64,7 @@ func0000000000000000:
 .LCPI1_3:
 	.short	64511
 	.short	64511
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpbroadcastw	.LCPI1_2(%rip), %ymm1
 	vpternlogd	$108, .LCPI1_3(%rip){1to8}, %ymm1, %ymm0

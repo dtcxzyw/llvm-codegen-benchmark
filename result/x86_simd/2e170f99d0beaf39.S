@@ -33,6 +33,7 @@
 	.zero	4,252
 .LCPI0_5:
 	.zero	4,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm2, %xmm2
 	vpternlogd	$248, .LCPI0_4(%rip){1to4}, %xmm1, %xmm2

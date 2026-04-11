@@ -3,6 +3,7 @@
 	.long	128
 .LCPI0_1:
 	.long	256
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	vpslld	$16, %ymm0, %ymm0
 	vpsrad	$16, %ymm0, %ymm0

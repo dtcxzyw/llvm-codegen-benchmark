@@ -3,6 +3,7 @@
 	.long	16
 .LCPI0_1:
 	.long	12
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm1
 	vpsrld	$4, %xmm1, %xmm0
@@ -35,6 +36,7 @@ func0000000000000001:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqd	%ymm0, %xmm1
 	vpsrld	$23, %xmm1, %xmm0

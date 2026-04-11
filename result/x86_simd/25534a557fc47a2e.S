@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm0, %k1
@@ -7,6 +8,7 @@ func00000000000000ca:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ec:
 	vpcmpled	%ymm1, %ymm0, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
@@ -14,6 +16,7 @@ func00000000000000ec:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	vpcmpeqd	%ymm1, %ymm0, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
@@ -21,6 +24,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000008c:
 	vpcmpltud	%ymm1, %ymm0, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
@@ -28,6 +32,7 @@ func000000000000008c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000146:
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpeqss	%xmm1, %xmm0, %k0
@@ -13,6 +15,7 @@ func0000000000000010:
 
 .LCPI2_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vucomiss	.LCPI2_0(%rip), %xmm0
 	setb	%al
@@ -20,6 +23,7 @@ func000000000000000e:
 
 .LCPI3_0:
 	.long	0x3e570a3d
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
 	vmovss	.LCPI3_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -28,29 +32,34 @@ func000000000000001a:
 
 .LCPI4_0:
 	.long	0x495bba00
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vmovss	.LCPI4_0(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000002:
 	vucomiss	%xmm0, %xmm0
 	setp	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000018:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000001c:
 	vucomiss	%xmm0, %xmm0
 	setnp	%al
@@ -58,6 +67,7 @@ func000000000000001c:
 
 .LCPI9_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000012:
 	vucomiss	.LCPI9_0(%rip), %xmm0
 	sete	%al
@@ -65,11 +75,13 @@ func0000000000000012:
 
 .LCPI10_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000c:
 	vucomiss	.LCPI10_0(%rip), %xmm0
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000016:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0

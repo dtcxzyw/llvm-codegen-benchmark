@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpextrw	$1, %xmm1, %ecx
@@ -25,6 +26,7 @@ func000000000000000c:
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpextrw	$1, %xmm0, %eax
 	vpextrw	$2, %xmm1, %ecx
@@ -50,6 +52,7 @@ func0000000000000000:
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpextrw	$1, %xmm1, %ecx
@@ -76,6 +79,7 @@ func0000000000000008:
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpextrw	$1, %xmm1, %ecx

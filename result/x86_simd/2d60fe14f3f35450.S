@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.long	23
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000101:
 	vpcmpnleub	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1

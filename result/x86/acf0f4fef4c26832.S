@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000028b4:
 	subl	%edi, %esi
 	cmpq	$16777216, %rdx

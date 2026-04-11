@@ -16,6 +16,7 @@
 	.short	769
 	.short	769
 	.short	769
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1

@@ -13,6 +13,7 @@
 .LCPI0_2:
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm1
@@ -33,6 +34,7 @@ func0000000000000005:
 .LCPI1_1:
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000031:
 	vptestmq	%ymm1, %ymm1, %k0
 	vpmovm2w	%k0, %xmm1

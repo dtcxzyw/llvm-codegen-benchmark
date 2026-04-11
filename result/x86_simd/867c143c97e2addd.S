@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1008
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpsllq	$8, %ymm1, %ymm1
 	vpternlogq	$168, .LCPI0_0(%rip){1to4}, %ymm1, %ymm0
@@ -8,6 +9,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.quad	65534
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpsllq	$8, %ymm1, %ymm1
 	vpternlogq	$168, .LCPI1_0(%rip){1to4}, %ymm1, %ymm0
@@ -15,11 +17,13 @@ func0000000000000007:
 
 .LCPI2_0:
 	.quad	4503599627370495
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpsllq	$8, %ymm1, %ymm1
 	vpternlogq	$168, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpsllq	$32, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0
@@ -29,6 +33,7 @@ func0000000000000000:
 
 .LCPI4_0:
 	.quad	-4294967295
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vpsllq	$16, %ymm1, %ymm1
 	vpternlogq	$168, .LCPI4_0(%rip){1to4}, %ymm1, %ymm0
@@ -76,6 +81,7 @@ func0000000000000005:
 	.byte	255
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vpsllq	$48, %ymm1, %ymm1
 	vpternlogq	$236, .LCPI5_1(%rip){1to4}, %ymm1, %ymm0

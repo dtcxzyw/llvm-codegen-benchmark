@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vptestmd	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
@@ -10,6 +11,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	16
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c3:
 	vptestmd	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2
@@ -19,6 +21,7 @@ func00000000000000c3:
 
 .LCPI2_0:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpneqd	%xmm2, %xmm0, %k1

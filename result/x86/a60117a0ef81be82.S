@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
 	leaq	(,%rsi,4), %rax
 	shlq	$8, %rdi
@@ -6,6 +7,7 @@ func0000000000000031:
 	orq	$2, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	shlq	$16, %rsi
 	shlq	$32, %rdi
@@ -14,6 +16,7 @@ func000000000000003f:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	shlq	$46, %rsi
 	leaq	(%rdi,%rdi), %rax
@@ -21,12 +24,14 @@ func0000000000000001:
 	incq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002f:
 	shlq	$32, %rsi
 	shlq	$24, %rdi
 	leaq	6553600(%rdi,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000039:
 	leaq	(,%rsi,4), %rax
 	shlq	$32, %rdi
@@ -34,17 +39,20 @@ func0000000000000039:
 	orq	$2, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000003b:
 	shlq	$16, %rsi
 	shlq	$32, %rdi
 	leaq	285245441(%rdi,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000033:
 	shlq	$33, %rdi
 	leaq	1(%rdi,%rsi,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000003a:
 	shlq	$42, %rsi
 	shlq	$48, %rdi
@@ -53,6 +61,7 @@ func000000000000003a:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000021:
 	shlq	$7, %rsi
 	shlq	$32, %rdi
@@ -60,6 +69,7 @@ func0000000000000021:
 	leaq	127(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000d:
 	shlq	$34, %rsi
 	shlq	$4, %rdi
@@ -67,6 +77,7 @@ func000000000000000d:
 	leaq	4(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000005:
 	shlq	$34, %rsi
 	shlq	$4, %rdi
@@ -74,6 +85,7 @@ func0000000000000005:
 	leaq	3(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000011:
 	shlq	$4, %rsi
 	shlq	$34, %rdi

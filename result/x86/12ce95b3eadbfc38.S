@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000146:
 	cmpq	%rdx, %rsi
 	setg	%cl
@@ -7,6 +8,7 @@ func0000000000000146:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
 	cmpq	%rdx, %rsi
 	setl	%cl
@@ -15,6 +17,7 @@ func00000000000000ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	testw	%dx, %dx
 	setne	%cl
@@ -23,6 +26,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -32,6 +36,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -40,6 +45,7 @@ func0000000000000021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	testw	%dx, %dx
 	sete	%cl
@@ -48,6 +54,7 @@ func0000000000000026:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000025:
 	cmpw	$-1, %dx
 	sete	%cl
@@ -56,6 +63,7 @@ func0000000000000025:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000014a:
 	cmpq	%rdx, %rsi
 	setg	%cl
@@ -64,6 +72,7 @@ func000000000000014a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000121:
 	cmpq	%rdx, %rsi
 	setae	%cl
@@ -72,6 +81,7 @@ func0000000000000121:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000010c:
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -81,6 +91,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000185:
 	testw	%dx, %dx
 	setne	%cl
@@ -89,6 +100,7 @@ func0000000000000185:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000184:
 	cmpw	$61, %dx
 	setne	%cl
@@ -97,6 +109,7 @@ func0000000000000184:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000141:
 	cmpq	%rdx, %rsi
 	setg	%cl
@@ -105,6 +118,7 @@ func0000000000000141:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000a8:
 	cmpq	%rdx, %rsi
 	setbe	%cl

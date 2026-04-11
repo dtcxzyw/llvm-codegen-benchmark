@@ -35,6 +35,7 @@
 	.short	2341
 	.short	2341
 	.short	2341
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -82,6 +83,7 @@ func0000000000000004:
 	.short	2341
 	.short	2341
 	.short	2341
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpmovdw	%ymm0, %xmm0
 	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0

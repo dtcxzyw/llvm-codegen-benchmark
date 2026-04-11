@@ -5,6 +5,7 @@
 	.long	0x7fffffff
 .LCPI0_2:
 	.long	0x3a83126f
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI0_1(%rip){1to16}, %zmm0, %zmm0
@@ -19,6 +20,7 @@ func0000000000000002:
 	.long	2147483647
 .LCPI1_2:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vmulps	.LCPI1_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI1_1(%rip){1to16}, %zmm0, %zmm0
@@ -33,6 +35,7 @@ func0000000000000018:
 	.long	0x7fffffff
 .LCPI2_2:
 	.long	0x38d1b717
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000012:
 	vmulps	.LCPI2_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI2_1(%rip){1to16}, %zmm0, %zmm0
@@ -45,6 +48,7 @@ func0000000000000012:
 	.long	0x3f000000
 .LCPI3_1:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vbroadcastss	.LCPI3_0(%rip), %zmm1
 	vmulps	%zmm1, %zmm0, %zmm0
@@ -60,6 +64,7 @@ func0000000000000014:
 	.long	0x7fffffff
 .LCPI4_2:
 	.long	0x48976760
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vmulps	.LCPI4_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI4_1(%rip){1to16}, %zmm0, %zmm0
@@ -72,6 +77,7 @@ func0000000000000004:
 	.long	0x7fffffff
 .LCPI5_1:
 	.long	0x3e4ccccd
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000015:
 	vaddps	%zmm0, %zmm0, %zmm0
 	vandps	.LCPI5_0(%rip){1to16}, %zmm0, %zmm0
@@ -86,6 +92,7 @@ func0000000000000015:
 	.long	0x7fffffff
 .LCPI6_2:
 	.long	0x3e3851ec
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	vmulps	.LCPI6_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI6_1(%rip){1to16}, %zmm0, %zmm0
@@ -100,6 +107,7 @@ func0000000000000005:
 	.long	2147483647
 .LCPI7_2:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vmulps	.LCPI7_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI7_1(%rip){1to16}, %zmm0, %zmm0
@@ -114,6 +122,7 @@ func0000000000000008:
 	.long	0x7fffffff
 .LCPI8_2:
 	.long	0x43000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000003:
 	vmulps	.LCPI8_0(%rip){1to16}, %zmm0, %zmm0
 	vandps	.LCPI8_1(%rip){1to16}, %zmm0, %zmm0

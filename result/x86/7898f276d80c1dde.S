@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	shlq	$7, %rdx
 	orq	%rsi, %rdx
@@ -7,6 +8,7 @@ func000000000000002a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f4:
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
@@ -15,6 +17,7 @@ func00000000000000f4:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
@@ -22,6 +25,7 @@ func0000000000000021:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000e1:
 	shlq	$16, %rdx
 	orq	%rsi, %rdx
@@ -31,6 +35,7 @@ func00000000000000e1:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a6:
 	shlq	$56, %rdx
 	orq	%rsi, %rdx
@@ -39,6 +44,7 @@ func00000000000000a6:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ec:
 	shlq	$24, %rdx
 	orq	%rsi, %rdx
@@ -46,6 +52,7 @@ func00000000000000ec:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000f8:
 	shlq	$24, %rdx
 	orq	%rsi, %rdx
@@ -54,6 +61,7 @@ func00000000000000f8:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000004c:
 	shlq	$32, %rdx
 	orq	%rsi, %rdx

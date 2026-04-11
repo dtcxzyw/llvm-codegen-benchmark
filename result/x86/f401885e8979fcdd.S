@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006e1:
 	xorl	%eax, %eax
 	cmpl	$54, %edx
@@ -8,6 +9,7 @@ func00000000000006e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000ae1:
 	cmpl	$54, %edx
 	movl	$6, %eax
@@ -17,6 +19,7 @@ func0000000000000ae1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e1:
 	cmpl	$1, %edx
 	movl	$6, %eax
@@ -26,6 +29,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000018e1:
 	cmpl	$16, %edx
 	movl	$14, %eax
@@ -35,6 +39,7 @@ func00000000000018e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000004e1:
 	cmpl	$117440512, %edx
 	movl	$1, %eax
@@ -44,6 +49,7 @@ func00000000000004e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000014e1:
 	cmpl	$7, %edx
 	movl	$1, %eax
@@ -53,6 +59,7 @@ func00000000000014e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000006f4:
 	cmpl	$6, %edx
 	movl	$1, %eax
@@ -62,6 +69,7 @@ func00000000000006f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000014f4:
 	cmpl	$6, %edx
 	movl	$1, %eax
@@ -71,6 +79,7 @@ func00000000000014f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000661:
 	cmpl	$6, %edx
 	movl	$1, %eax
@@ -80,6 +89,7 @@ func0000000000000661:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000001461:
 	cmpl	$7, %edx
 	movl	$1, %eax
@@ -89,6 +99,7 @@ func0000000000001461:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000008e1:
 	cmpl	$4, %edx
 	movl	$8, %eax
@@ -98,6 +109,7 @@ func00000000000008e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000161:
 	testl	%edx, %edx
 	movl	$1, %eax
@@ -107,6 +119,7 @@ func0000000000000161:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000484:
 	cmpl	$80, %edx
 	movl	$10, %eax
@@ -116,6 +129,7 @@ func0000000000000484:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000861:
 	cmpl	$4, %edx
 	movl	$23, %eax

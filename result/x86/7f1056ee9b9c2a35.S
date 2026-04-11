@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	btsl	%edx, %esi
 	testl	%edi, %esi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	movl	$-1, %eax
 	shlxl	%edx, %eax, %eax
@@ -13,6 +15,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	movl	$16, %eax
 	shlxl	%edx, %eax, %eax
@@ -21,6 +24,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	movl	$2, %eax
 	shlxl	%edx, %eax, %eax
@@ -29,6 +33,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c1:
 	btsl	%edx, %esi
 	testl	%edi, %esi

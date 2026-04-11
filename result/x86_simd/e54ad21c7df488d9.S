@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	255
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -36,6 +37,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpslld	$31, %xmm2, %xmm2
 	vpsrad	$31, %xmm2, %xmm2

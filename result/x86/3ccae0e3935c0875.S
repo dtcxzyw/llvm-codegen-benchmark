@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	imull	$-4369, %edi, %eax
 	addl	$2184, %eax
@@ -8,6 +9,7 @@ func0000000000000001:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	imull	$23593, %edi, %eax
 	addl	$1310, %eax
@@ -16,6 +18,7 @@ func000000000000000c:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	movswl	%di, %eax
 	imull	$26215, %eax, %eax
@@ -30,6 +33,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	movswl	%di, %eax
 	imull	$26215, %eax, %eax
@@ -44,6 +48,7 @@ func000000000000000a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	movswl	%di, %eax
 	imull	$26215, %eax, %eax

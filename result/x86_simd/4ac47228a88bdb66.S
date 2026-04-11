@@ -44,6 +44,7 @@
 	.byte	4
 .LCPI0_3:
 	.zero	4,216
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm0, %xmm0
@@ -96,6 +97,7 @@ func0000000000000004:
 	.byte	16
 .LCPI1_3:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm0, %xmm0
@@ -148,6 +150,7 @@ func0000000000000001:
 	.byte	4
 .LCPI2_3:
 	.zero	4,184
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm0, %xmm0
@@ -200,6 +203,7 @@ func0000000000000000:
 	.byte	4
 .LCPI3_3:
 	.zero	4,240
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI3_2(%rip){1to2}, %xmm0, %xmm0
@@ -252,6 +256,7 @@ func000000000000000d:
 	.byte	4
 .LCPI4_3:
 	.zero	4,240
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI4_2(%rip){1to2}, %xmm0, %xmm0

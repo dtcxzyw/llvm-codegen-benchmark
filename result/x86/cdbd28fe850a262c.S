@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	andl	$1, %edx
 	orl	%esi, %edx
@@ -6,6 +7,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000421:
 	andl	$448, %edx
 	orl	%esi, %edx
@@ -15,6 +17,7 @@ func0000000000000421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	movzwl	%dx, %eax
 	orl	%esi, %eax
@@ -24,6 +27,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000058c:
 	andl	$768, %edx
 	orl	%esi, %edx

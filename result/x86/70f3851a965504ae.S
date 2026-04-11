@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	shrq	$56, %rsi
 	cmpl	$22, %esi
@@ -8,6 +9,7 @@ func000000000000018c:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	testw	%si, %si
 	sets	%cl
@@ -16,6 +18,7 @@ func0000000000000181:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	testb	$1, %sil
 	sete	%cl
@@ -24,6 +27,7 @@ func0000000000000021:
 	xorb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	testl	%esi, %esi
 	sets	%cl

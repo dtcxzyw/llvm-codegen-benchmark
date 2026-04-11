@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	leaq	1(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003a:
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	leaq	-8(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003b:
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	leaq	8(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	movl	%edx, %eax
 	orq	%rsi, %rax

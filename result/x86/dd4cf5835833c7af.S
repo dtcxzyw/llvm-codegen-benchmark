@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000041:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -17,6 +19,7 @@ func0000000000000042:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000044:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -26,6 +29,7 @@ func0000000000000044:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000004c:
 	cmpq	$536870911, %rdx
 	sete	%cl
@@ -36,6 +40,7 @@ func000000000000004c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000030c:
 	testq	%rdx, %rdx
 	setne	%cl
@@ -46,6 +51,7 @@ func000000000000030c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000306:
 	cmpq	$2047, %rdx
 	setne	%cl
@@ -55,6 +61,7 @@ func0000000000000306:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000046:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -64,6 +71,7 @@ func0000000000000046:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000301:
 	cmpq	$2, %rdx
 	setne	%cl
@@ -73,6 +81,7 @@ func0000000000000301:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000304:
 	testq	%rdx, %rdx
 	setne	%cl
@@ -82,6 +91,7 @@ func0000000000000304:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000308:
 	testq	%rdx, %rdx
 	setne	%cl
@@ -91,6 +101,7 @@ func0000000000000308:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000018a:
 	testq	%rdx, %rdx
 	sets	%cl
@@ -100,6 +111,7 @@ func000000000000018a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000186:
 	movl	$4278190081, %eax
 	cmpq	%rax, %rdx
@@ -111,6 +123,7 @@ func0000000000000186:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000194:
 	testq	%rdx, %rdx
 	setle	%cl
@@ -120,6 +133,7 @@ func0000000000000194:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000210:
 	movabsq	$-8446744073709551617, %rax
 	cmpq	%rax, %rdx

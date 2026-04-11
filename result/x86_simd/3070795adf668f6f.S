@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0
 	vpsrld	$11, %ymm0, %ymm0
@@ -11,6 +12,7 @@ func0000000000000001:
 	.long	16368
 .LCPI1_1:
 	.long	16383
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsrld	$3, %ymm0, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm0

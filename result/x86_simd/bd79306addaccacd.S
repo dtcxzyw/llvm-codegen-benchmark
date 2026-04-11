@@ -44,6 +44,7 @@
 	.byte	32
 	.byte	64
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vpshufb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm1, %xmm1

@@ -8,6 +8,7 @@
 	.short	0
 	.short	3
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000068:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -27,6 +28,7 @@ func0000000000000068:
 	.short	0
 	.short	12
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1

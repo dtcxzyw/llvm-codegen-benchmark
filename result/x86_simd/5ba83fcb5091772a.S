@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	65279
 	.short	65279
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm2
 	vptestnmw	%ymm1, %ymm1, %k1

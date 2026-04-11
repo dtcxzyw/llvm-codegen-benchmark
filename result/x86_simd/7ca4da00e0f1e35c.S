@@ -8,6 +8,7 @@
 	.short	307
 	.short	307
 	.short	307
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	vpsrad	$31, %ymm1, %ymm2
 	vpsrld	$14, %ymm2, %ymm2

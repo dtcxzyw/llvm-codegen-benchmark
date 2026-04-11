@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	testq	%rdx, %rdx
 	movl	$2048, %eax
@@ -7,6 +8,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000109:
 	shrq	$62, %rdx
 	xorl	%eax, %eax
@@ -17,6 +19,7 @@ func0000000000000109:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	negq	%rdx
@@ -25,6 +28,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	xorl	%eax, %eax
 	cmpq	$1, %rdx
@@ -34,6 +38,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000101:
 	shrq	$61, %rdx
 	xorl	%eax, %eax
@@ -44,6 +49,7 @@ func0000000000000101:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000104:
 	shrq	$61, %rdx
 	xorl	%eax, %eax
@@ -54,6 +60,7 @@ func0000000000000104:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
 	xorl	%eax, %eax
 	cmpq	$1, %rdx
@@ -63,6 +70,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000038:
 	cmpq	$-1, %rdx
 	movabsq	$4294967296, %rax
@@ -71,6 +79,7 @@ func0000000000000038:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000084:
 	cmpq	$23, %rdx
 	movl	$32, %eax
@@ -79,6 +88,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000146:
 	testq	%rdx, %rdx
 	movl	$1, %eax
@@ -87,6 +97,7 @@ func0000000000000146:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000029:
 	testq	%rdx, %rdx
 	movl	$1, %eax
@@ -95,6 +106,7 @@ func0000000000000029:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000141:
 	movabsq	$9223372035, %rax
 	cmpq	%rax, %rdx
@@ -108,6 +120,7 @@ func0000000000000141:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000306:
 	movabsq	$9223372035, %rax
 	cmpq	%rax, %rdx
@@ -121,6 +134,7 @@ func0000000000000306:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000088:
 	cmpq	$23, %rdx
 	movl	$32, %eax
@@ -129,6 +143,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000314:
 	cmpq	$2048, %rdx
 	movl	$2048, %eax
@@ -137,6 +152,7 @@ func0000000000000314:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000301:
 	cmpq	$2048, %rdx
 	movl	$2048, %eax
@@ -145,6 +161,7 @@ func0000000000000301:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000c1:
 	testq	%rdx, %rdx
 	movabsq	$9223372036854775807, %rax
@@ -153,6 +170,7 @@ func00000000000000c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000002c:
 	testq	%rdx, %rdx
 	movl	$63, %eax

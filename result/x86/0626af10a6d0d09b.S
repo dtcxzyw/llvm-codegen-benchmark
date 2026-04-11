@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000110:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmovq	%xmm1, %rax
@@ -16,6 +17,7 @@ func0000000000000110:
 
 .LCPI1_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f0:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmovq	%xmm1, %rax
@@ -33,6 +35,7 @@ func00000000000000f0:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vandpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm1

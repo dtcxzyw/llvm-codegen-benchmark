@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000302:
 	movl	$4294967293, %eax
 	cmpq	%rax, %rdx
@@ -9,6 +10,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	cmpq	$-1, %rdx
 	sete	%cl
@@ -18,6 +20,7 @@ func0000000000000048:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -27,6 +30,7 @@ func0000000000000042:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000308:
 	testq	%rdx, %rdx
 	setne	%cl

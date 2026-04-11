@@ -35,6 +35,7 @@
 	.zero	2
 .LCPI0_2:
 	.zero	4,31
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vplzcntd	%ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0

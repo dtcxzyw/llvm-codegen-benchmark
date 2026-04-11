@@ -17,6 +17,7 @@
 	.short	52429
 	.short	52429
 	.short	52429
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -34,6 +35,7 @@ func0000000000000007:
 	.short	43691
 	.short	43691
 	.short	43691
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000037:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
@@ -61,6 +63,7 @@ func0000000000000037:
 	.short	32897
 	.short	32897
 	.short	32897
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000027:
 	vpaddw	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI2_1(%rip), %xmm0, %xmm0
@@ -87,6 +90,7 @@ func0000000000000027:
 	.short	32897
 	.short	32897
 	.short	32897
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	vpaddw	.LCPI3_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI3_1(%rip), %xmm0, %xmm0
@@ -113,6 +117,7 @@ func0000000000000026:
 	.short	42609
 	.short	42609
 	.short	42609
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000017:
 	vpaddw	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpmulhuw	.LCPI4_1(%rip), %xmm0, %xmm0

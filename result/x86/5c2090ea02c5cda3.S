@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000201:
 	shll	$6, %edx
 	addl	%esi, %edi
@@ -8,6 +9,7 @@ func0000000000000201:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000288:
 	leaq	(%rsi,%rdx,8), %rax
 	addq	%rdi, %rax
@@ -18,6 +20,7 @@ func0000000000000288:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000002a1:
 	shll	$6, %edx
 	addl	%edx, %esi
@@ -25,6 +28,7 @@ func00000000000002a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000228:
 	leaq	(%rsi,%rdx,8), %rax
 	addq	%rdi, %rax

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	movl	%esi, %ecx
 	addq	$-2, %rcx
@@ -7,6 +8,7 @@ func00000000000000a4:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	movl	%esi, %ecx
 	addq	$-999999999, %rcx
@@ -15,6 +17,7 @@ func00000000000000a1:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000064:
 	movl	%esi, %ecx
 	incq	%rcx

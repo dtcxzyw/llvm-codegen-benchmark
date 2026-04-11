@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001842:
 	addq	$48, %rdx
 	cmpq	%rdx, %rdi
@@ -8,6 +9,7 @@ func0000000000001842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001858:
 	addq	$8, %rdx
 	cmpq	%rdx, %rdi
@@ -17,6 +19,7 @@ func0000000000001858:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001912:
 	addq	$8, %rdx
 	cmpq	%rdx, %rdi
@@ -26,6 +29,7 @@ func0000000000001912:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000110:
 	addq	$4, %rdx
 	cmpq	%rdx, %rdi
@@ -35,6 +39,7 @@ func0000000000000110:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	addq	$-4056, %rdx
 	cmpq	%rdx, %rdi
@@ -44,6 +49,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000208:
 	addq	$4096, %rdx
 	cmpq	%rdx, %rdi
@@ -53,6 +59,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000001208:
 	decq	%rdx
 	cmpq	%rdx, %rdi
@@ -62,6 +69,7 @@ func0000000000001208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000001a08:
 	addq	$6, %rdx
 	cmpq	%rdx, %rdi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
 	subq	%rdx, %rsi
 	testq	%rsi, %rsi
@@ -8,6 +9,7 @@ func000000000000014a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	subq	%rdx, %rsi
 	cmpq	$5, %rsi
@@ -18,6 +20,7 @@ func000000000000008a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -27,12 +30,14 @@ func0000000000000026:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	xorq	%rdx, %rsi
 	orq	%rdi, %rsi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000084:
 	subq	%rdx, %rsi
 	cmpq	$32, %rsi
@@ -42,6 +47,7 @@ func0000000000000084:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -50,6 +56,7 @@ func0000000000000021:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000024:
 	subq	%rdx, %rsi
 	cmpq	$4, %rsi
@@ -59,6 +66,7 @@ func0000000000000024:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000108:
 	subq	%rdx, %rsi
 	cmpq	$64, %rsi
@@ -68,6 +76,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c6:
 	subq	%rdx, %rsi
 	cmpq	$4, %rsi
@@ -77,6 +86,7 @@ func00000000000000c6:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000484:
 	subq	%rdx, %rsi
 	cmpq	$32, %rsi
@@ -86,6 +96,7 @@ func0000000000000484:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000904:
 	subq	%rdx, %rsi
 	cmpq	$16, %rsi
@@ -95,6 +106,7 @@ func0000000000000904:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000821:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -103,6 +115,7 @@ func0000000000000821:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000421:
 	subq	%rdx, %rsi
 	cmpq	$1, %rsi
@@ -112,6 +125,7 @@ func0000000000000421:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000028:
 	subq	%rdx, %rsi
 	cmpq	$2048, %rsi

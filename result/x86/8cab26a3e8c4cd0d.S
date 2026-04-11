@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	imull	$-286331153, %edi, %eax
 	cmpl	$286331154, %eax
@@ -8,6 +9,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	imull	$-1431655765, %edi, %eax
 	cmpl	$1431655766, %eax
@@ -17,6 +19,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
 	imull	$-1431655765, %edi, %eax
 	cmpl	$1431655766, %eax
@@ -26,6 +29,7 @@ func0000000000000034:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	imull	$-858993459, %edi, %eax
 	rorxl	$1, %eax, %eax
@@ -36,6 +40,7 @@ func000000000000002a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	imull	$-1030792151, %edi, %eax
 	rorxl	$1, %eax, %eax
@@ -46,6 +51,7 @@ func0000000000000028:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000038:
 	imull	$-1431655765, %edi, %eax
 	cmpl	$1431655766, %eax

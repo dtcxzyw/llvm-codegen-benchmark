@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leaq	2(%rsi), %rax
 	testb	$1, %dil
@@ -6,6 +7,7 @@ func0000000000000000:
 	andq	$-64, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	leal	86400(%rsi), %eax
 	testb	$1, %dil

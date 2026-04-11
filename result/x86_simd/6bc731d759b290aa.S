@@ -30,6 +30,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovqd	%ymm0, %xmm0
 	vpsrld	$12, %xmm0, %xmm0
@@ -49,6 +50,7 @@ func0000000000000003:
 	.short	0
 	.short	65533
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
 	vpsrld	$13, %xmm0, %xmm0

@@ -19,6 +19,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -59,6 +60,7 @@ func0000000000000001:
 	.zero	2
 .LCPI1_4:
 	.short	406
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

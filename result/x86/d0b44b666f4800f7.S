@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000421:
 	xorb	$4, %dl
 	xorb	$5, %sil
@@ -8,6 +9,7 @@ func0000000000000421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000581:
 	testb	%sil, %sil
 	setne	%cl
@@ -16,6 +18,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003021:
 	testb	%dl, %dl
 	setne	%cl
@@ -24,6 +27,7 @@ func0000000000003021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000003181:
 	testb	%dl, %dl
 	setne	%al
@@ -35,6 +39,7 @@ func0000000000003181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000001084:
 	cmpb	$4, %dl
 	setb	%al
@@ -46,6 +51,7 @@ func0000000000001084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000318c:
 	testb	%dl, %dl
 	setne	%al
@@ -57,6 +63,7 @@ func000000000000318c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000042a:
 	xorb	$2, %dl
 	xorb	$2, %sil
@@ -67,6 +74,7 @@ func000000000000042a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000488:
 	testb	%dl, %dl
 	sete	%al
@@ -78,6 +86,7 @@ func0000000000000488:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000002021:
 	cmpb	$7, %dl
 	setae	%cl
@@ -88,6 +97,7 @@ func0000000000002021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000424:
 	xorb	$8, %dl
 	xorb	$18, %sil
@@ -98,6 +108,7 @@ func0000000000000424:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000042c:
 	xorb	$4, %dl
 	xorb	$34, %sil
@@ -108,6 +119,7 @@ func000000000000042c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000484:
 	cmpb	$3, %dl
 	sete	%cl
@@ -119,6 +131,7 @@ func0000000000000484:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000428:
 	xorb	$6, %dl
 	orb	%sil, %dl
@@ -128,6 +141,7 @@ func0000000000000428:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000426:
 	addb	$-128, %dl
 	xorb	$-30, %sil

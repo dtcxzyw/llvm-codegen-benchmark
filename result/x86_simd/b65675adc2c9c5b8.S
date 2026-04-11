@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -8,6 +9,7 @@ func000000000000014a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000012a:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -17,6 +19,7 @@ func000000000000012a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ac:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpleuq	%ymm2, %ymm1, %k1
@@ -25,6 +28,7 @@ func00000000000000ac:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000010c:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpnleuq	%ymm2, %ymm1, %k1
@@ -33,6 +37,7 @@ func000000000000010c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000014c:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpgtq	%ymm2, %ymm1, %k1
@@ -41,6 +46,7 @@ func000000000000014c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000010a:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -50,6 +56,7 @@ func000000000000010a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000148:
 	vpmovsxdq	%xmm1, %ymm2
 	vpcmpnleuq	%ymm2, %ymm0, %k1
@@ -59,6 +66,7 @@ func0000000000000148:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002c:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -68,6 +76,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000018c:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -77,6 +86,7 @@ func000000000000018c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000018a:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -88,6 +98,7 @@ func000000000000018a:
 
 .LCPI10_0:
 	.long	1073741823
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000106:
 	vpmovsxdq	%xmm0, %ymm2
 	vpcmpnleuq	%ymm2, %ymm1, %k1
@@ -96,6 +107,7 @@ func0000000000000106:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000016a:
 	vpmovsxdq	%xmm0, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c4:
 	testq	%rdi, %rdi
 	setne	%cl
@@ -8,6 +9,7 @@ func00000000000000c4:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	testq	%rdi, %rdi
 	sete	%cl
@@ -21,6 +23,7 @@ func0000000000000017:
 
 .LCPI2_0:
 	.quad	0x47efffffe0000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	testq	%rdi, %rdi
 	sete	%cl
@@ -33,6 +36,7 @@ func0000000000000018:
 
 .LCPI3_0:
 	.quad	0xc0d6e6c000000000
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c7:
 	testq	%rdi, %rdi
 	setne	%cl

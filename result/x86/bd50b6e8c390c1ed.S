@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testl	%edi, %edi
 	sete	%al
@@ -10,6 +11,7 @@ func0000000000000001:
 	vmovaps	%xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	testl	%edi, %edi
 	setg	%al
@@ -17,6 +19,7 @@ func000000000000000a:
 	vmovss	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	cmpl	$1073741823, %edi
 	setb	%al
@@ -26,6 +29,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	testl	%edi, %edi
 	sete	%al
@@ -33,6 +37,7 @@ func000000000000000c:
 	vmovss	.LCPI3_0(%rip), %xmm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	testl	%edi, %edi
 	sets	%al

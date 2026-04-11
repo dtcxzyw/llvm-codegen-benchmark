@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x43b40000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vandps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0

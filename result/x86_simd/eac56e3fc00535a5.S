@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestmd	%xmm0, %xmm0, %k1
 	vandpd	.LCPI0_1(%rip){1to4}, %ymm1, %ymm0 {%k1} {z}
@@ -48,6 +49,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.quad	17179869176
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm0, %k1
@@ -58,6 +60,7 @@ func0000000000000006:
 	.long	15
 .LCPI2_1:
 	.quad	15
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpcmpleud	.LCPI2_0(%rip){1to4}, %xmm0, %k1
 	vandpd	.LCPI2_1(%rip){1to4}, %ymm1, %ymm0 {%k1} {z}

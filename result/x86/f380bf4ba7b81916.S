@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	shlq	$9, %rdx
 	orq	%rdi, %rdx
 	leaq	(%rdx,%rsi,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	shlq	$17, %rdx
 	orq	%rdi, %rdx
 	leaq	(%rdx,%rsi,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003b:
 	shlq	$48, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -18,6 +21,7 @@ func000000000000003b:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002f:
 	shlq	$56, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -25,6 +29,7 @@ func000000000000002f:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000003e:
 	shlq	$16, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -32,6 +37,7 @@ func000000000000003e:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000038:
 	movq	%rsi, %rax
 	shlq	$48, %rdx
@@ -40,6 +46,7 @@ func0000000000000038:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000036:
 	movq	%rdi, %rax
 	shlq	$42, %rdx
@@ -48,6 +55,7 @@ func0000000000000036:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000030:
 	movq	%rdi, %rax
 	shlq	$56, %rdx
@@ -56,6 +64,7 @@ func0000000000000030:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000003d:
 	shlq	$48, %rdx
 	leaq	(%rdx,%rsi), %rax
@@ -63,6 +72,7 @@ func000000000000003d:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000003c:
 	movq	%rsi, %rax
 	shlq	$32, %rdx
@@ -71,6 +81,7 @@ func000000000000003c:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000008:
 	shlq	$49, %rdx
 	leaq	(%rdx,%rsi), %rax
@@ -78,6 +89,7 @@ func0000000000000008:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000000:
 	movq	%rsi, %rax
 	shlq	$49, %rdx
@@ -86,6 +98,7 @@ func0000000000000000:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000002:
 	shlq	$49, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -93,6 +106,7 @@ func0000000000000002:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000014:
 	movq	%rsi, %rax
 	shlq	$32, %rdx
@@ -101,6 +115,7 @@ func0000000000000014:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000000c:
 	shlq	$6, %rdx
 	orq	%rdi, %rdx
@@ -108,6 +123,7 @@ func000000000000000c:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000000e:
 	shlq	$8, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -115,6 +131,7 @@ func000000000000000e:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000034:
 	movq	%rdi, %rax
 	shlq	$48, %rdx
@@ -123,6 +140,7 @@ func0000000000000034:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000010:
 	movq	%rsi, %rax
 	shlq	$21, %rdx
@@ -131,6 +149,7 @@ func0000000000000010:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000016:
 	shlq	$16, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -138,6 +157,7 @@ func0000000000000016:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func000000000000002c:
 	shlq	$32, %rdx
 	orq	%rdi, %rdx
@@ -145,6 +165,7 @@ func000000000000002c:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000039:
 	shlq	$62, %rdx
 	orq	%rdi, %rdx
@@ -152,6 +173,7 @@ func0000000000000039:
 	leaq	(%rsi,%rdx), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000033:
 	shlq	$8, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -159,6 +181,7 @@ func0000000000000033:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000004:
 	movq	%rsi, %rax
 	shlq	$36, %rdx
@@ -167,6 +190,7 @@ func0000000000000004:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000028:
 	shlq	$32, %rdx
 	leaq	(%rdx,%rsi), %rax
@@ -174,6 +198,7 @@ func0000000000000028:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func0000000000000006:
 	shlq	$8, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -181,6 +206,7 @@ func0000000000000006:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func000000000000000f:
 	shlq	$40, %rdx
 	leaq	(%rdx,%rdi), %rax

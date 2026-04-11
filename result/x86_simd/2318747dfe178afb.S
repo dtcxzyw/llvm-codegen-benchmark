@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vptestnmb	%xmm2, %xmm2, %k0
 	vpmovm2q	%k0, %ymm2
@@ -23,6 +24,7 @@ func0000000000000010:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c0:
 	vpcmpneqb	.LCPI1_0(%rip), %xmm2, %k0
 	vpmovm2q	%k0, %ymm2
@@ -30,6 +32,7 @@ func00000000000000c0:
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000cd:
 	vptestmb	%xmm2, %xmm2, %k0
 	vpmovm2q	%k0, %ymm2
@@ -54,6 +57,7 @@ func00000000000000cd:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vpcmpeqb	.LCPI3_0(%rip), %xmm2, %k0
 	vpmovm2q	%k0, %ymm2

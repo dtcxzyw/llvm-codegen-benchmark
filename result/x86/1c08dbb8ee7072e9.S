@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	movl	%edi, %ecx
 	xorl	%esi, %esi
@@ -11,6 +12,7 @@ func0000000000000004:
 	cmovneq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	movl	%edi, %ecx
 	xorl	%esi, %esi
@@ -23,6 +25,7 @@ func0000000000000007:
 	cmovneq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	movq	$-1, %rdx
 	shlxq	%rdi, %rdx, %rcx
@@ -32,6 +35,7 @@ func0000000000000005:
 	cmovneq	%rcx, %rdx
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	movl	%edi, %ecx
 	xorl	%esi, %esi

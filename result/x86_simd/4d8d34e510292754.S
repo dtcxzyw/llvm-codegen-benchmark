@@ -10,6 +10,7 @@
 	.short	65317
 .LCPI0_1:
 	.long	37097
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpunpcklbw	%xmm1, %xmm2, %xmm1

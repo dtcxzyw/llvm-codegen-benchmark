@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vsubpd	%zmm3, %zmm5, %zmm5
 	vsubpd	%zmm2, %zmm4, %zmm4

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000058:
 	vmovq	%xmm0, %rax
 	movabsq	$-9221120237041090560, %rcx

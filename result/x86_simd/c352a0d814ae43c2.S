@@ -17,6 +17,7 @@
 	.short	2114
 	.short	2114
 	.short	2114
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

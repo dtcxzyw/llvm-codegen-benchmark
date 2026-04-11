@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	64
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -16,6 +17,7 @@ func000000000000000a:
 	.long	1
 .LCPI1_1:
 	.long	99
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -28,6 +30,7 @@ func000000000000002a:
 
 .LCPI2_0:
 	.long	116
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -42,6 +45,7 @@ func0000000000000021:
 	.long	1
 .LCPI3_1:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -52,6 +56,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -64,6 +69,7 @@ func000000000000002c:
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -78,6 +84,7 @@ func0000000000000026:
 	.long	3
 .LCPI6_1:
 	.long	9999
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -92,6 +99,7 @@ func0000000000000028:
 	.long	3
 .LCPI7_1:
 	.long	99
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000038:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -106,6 +114,7 @@ func0000000000000038:
 	.long	2147483648
 .LCPI8_1:
 	.long	648000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000048:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -120,6 +129,7 @@ func0000000000000048:
 	.long	131072
 .LCPI9_1:
 	.long	8
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000078:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -132,6 +142,7 @@ func0000000000000078:
 
 .LCPI10_0:
 	.long	2147483648
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000046:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
@@ -146,6 +157,7 @@ func0000000000000046:
 	.long	2147483648
 .LCPI11_1:
 	.long	3212836864
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000044:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

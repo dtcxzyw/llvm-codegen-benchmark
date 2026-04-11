@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e6:
 	leaq	(%rdx,%rdx,4), %rax
 	shlq	$4, %rax
@@ -7,6 +8,7 @@ func00000000000001e6:
 	cmovnsq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001ea:
 	shlq	$4, %rdx
 	leaq	16(%rdi,%rdx), %rax
@@ -14,18 +16,21 @@ func00000000000001ea:
 	cmovleq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	leaq	-1(%rdi,%rdx), %rax
 	testl	%esi, %esi
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	leaq	32(%rdi,%rdx), %rax
 	testl	%esi, %esi
 	cmovleq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	shlq	$4, %rdx
 	leaq	16(%rdi,%rdx), %rax
@@ -33,18 +38,21 @@ func0000000000000006:
 	cmovgeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000158:
 	leaq	-65536(%rdi,%rdx), %rax
 	cmpl	$65537, %esi
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001e1:
 	leaq	8(%rdi,%rdx,8), %rax
 	testl	%esi, %esi
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001d8:
 	leaq	-65536(%rdi,%rdx), %rax
 	cmpl	$65537, %esi

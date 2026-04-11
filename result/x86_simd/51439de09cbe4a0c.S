@@ -4,6 +4,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1
@@ -15,6 +16,7 @@ func000000000000000f:
 
 .LCPI1_0:
 	.long	65528
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1

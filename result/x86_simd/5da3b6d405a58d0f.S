@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	vmovdqa	%ymm0, %ymm3
 	vpternlogq	$15, %ymm0, %ymm0, %ymm3

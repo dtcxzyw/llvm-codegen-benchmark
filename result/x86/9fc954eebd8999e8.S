@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000068:
 	cmpq	$3, %rdi
 	sete	%cl
@@ -8,6 +9,7 @@ func0000000000000068:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000302:
 	cmpq	$27, %rsi
 	setne	%cl
@@ -17,6 +19,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000050:
 	testq	%rdi, %rdi
 	sete	%cl
@@ -26,6 +29,7 @@ func0000000000000050:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000182:
 	movabsq	$-9223372036854775805, %rax
 	cmpq	%rax, %rdi
@@ -36,6 +40,7 @@ func0000000000000182:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000108:
 	cmpq	$9, %rdi
 	setb	%cl
@@ -45,6 +50,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000054:
 	cmpq	$2, %rdi
 	sete	%cl
@@ -54,6 +60,7 @@ func0000000000000054:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000042:
 	cmpq	$1, %rdi
 	sete	%cl
@@ -63,6 +70,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000004c:
 	testq	%rdi, %rdi
 	sete	%al
@@ -71,6 +79,7 @@ func000000000000004c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000028c:
 	cmpq	$8, %rdi
 	setge	%cl
@@ -80,6 +89,7 @@ func000000000000028c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000210:
 	cmpq	$256, %rdi
 	setae	%cl
@@ -89,6 +99,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000602:
 	cmpq	$2, %rdi
 	setae	%cl
@@ -98,6 +109,7 @@ func0000000000000602:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000194:
 	cmpq	$2, %rdi
 	setl	%cl
@@ -107,6 +119,7 @@ func0000000000000194:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000314:
 	testq	%rdi, %rdi
 	setne	%cl
@@ -116,6 +129,7 @@ func0000000000000314:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000528:
 	cmpq	$100, %rdi
 	setb	%cl

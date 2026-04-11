@@ -7,6 +7,7 @@
 	.quad	0x3fd287a7636f4361
 .LCPI0_3:
 	.quad	0x3fd34413509f79fb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vbroadcastsd	.LCPI0_0(%rip), %zmm6
 	vaddpd	%zmm6, %zmm5, %zmm5

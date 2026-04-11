@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vroundps	$11, %ymm2, %ymm2
 	vaddps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2

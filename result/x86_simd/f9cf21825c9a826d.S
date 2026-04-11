@@ -22,6 +22,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm1, %k1
@@ -54,6 +55,7 @@ func0000000000000004:
 	.zero	1
 .LCPI1_3:
 	.byte	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm1, %k1

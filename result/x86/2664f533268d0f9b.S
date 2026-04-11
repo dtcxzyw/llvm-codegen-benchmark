@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movabsq	$-5435081209227447693, %rcx
 	imulq	%rdx, %rcx
@@ -8,6 +9,7 @@ func0000000000000000:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a0:
 	movl	$2246822518, %eax
 	imulq	%rax, %rdx
@@ -17,6 +19,7 @@ func00000000000000a0:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000d4:
 	imulq	$1000, %rdx, %rcx
 	addq	%rsi, %rcx
@@ -24,6 +27,7 @@ func00000000000000d4:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000075:
 	imulq	$-997805, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -31,6 +35,7 @@ func0000000000000075:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000dd:
 	imulq	$136657, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -38,6 +43,7 @@ func00000000000000dd:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000d5:
 	imulq	$136657, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -45,6 +51,7 @@ func00000000000000d5:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000f5:
 	imulq	$136657, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -52,6 +59,7 @@ func00000000000000f5:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ff:
 	imulq	$666643, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -59,6 +67,7 @@ func00000000000000ff:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000055:
 	imulq	$-997805, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -66,6 +75,7 @@ func0000000000000055:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000044:
 	imulq	$654183, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -73,6 +83,7 @@ func0000000000000044:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000011:
 	imulq	$-997805, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -80,6 +91,7 @@ func0000000000000011:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000054:
 	imulq	$654183, %rdx, %rcx
 	addq	%rsi, %rcx
@@ -87,6 +99,7 @@ func0000000000000054:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000040:
 	imulq	$136657, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -94,6 +107,7 @@ func0000000000000040:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000c0:
 	imulq	$470296, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -101,6 +115,7 @@ func00000000000000c0:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000050:
 	imulq	$666643, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -108,6 +123,7 @@ func0000000000000050:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000010:
 	imulq	$-997805, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -115,6 +131,7 @@ func0000000000000010:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000d0:
 	imulq	$666643, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -122,6 +139,7 @@ func00000000000000d0:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000004:
 	imulq	$654183, %rdx, %rcx
 	addq	%rsi, %rcx
@@ -129,6 +147,7 @@ func0000000000000004:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000030:
 	imulq	$1326, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -136,6 +155,7 @@ func0000000000000030:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func000000000000000c:
 	imulq	$1000000, %rdx, %rcx
 	addq	%rsi, %rcx
@@ -143,6 +163,7 @@ func000000000000000c:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func00000000000000f0:
 	imulq	$8304, %rdx, %rcx
 	addq	%rdi, %rcx
@@ -150,6 +171,7 @@ func00000000000000f0:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func00000000000000c4:
 	imulq	$8304, %rdx, %rcx
 	addq	%rsi, %rcx
@@ -157,6 +179,7 @@ func00000000000000c4:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func00000000000000cc:
 	leaq	(%rdx,%rdx,4), %rax
 	leaq	(%rdi,%rax,2), %rcx

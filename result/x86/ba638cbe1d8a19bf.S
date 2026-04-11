@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001ff:
 	addq	%rdx, %rsi
 	movl	%edi, %eax
@@ -7,6 +8,7 @@ func00000000000001ff:
 	leaq	(%rcx,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001ef:
 	leaq	(%rsi,%rdx,8), %rax
 	movl	%edi, %ecx
@@ -15,6 +17,7 @@ func00000000000001ef:
 	leaq	(%rax,%rcx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000017f:
 	leaq	(%rsi,%rdx,4), %rax
 	movl	%edi, %ecx

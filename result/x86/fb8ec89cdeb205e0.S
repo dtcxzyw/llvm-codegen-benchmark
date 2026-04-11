@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	andl	$-4, %esi
 	subq	%rsi, %rdi
@@ -6,6 +7,7 @@ func0000000000000048:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
 	andl	$1, %esi
 	subq	%rsi, %rdi
@@ -13,6 +15,7 @@ func00000000000000a4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a8:
 	andl	$1, %esi
 	subq	%rsi, %rdi
@@ -20,6 +23,7 @@ func00000000000000a8:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000088:
 	andl	$2147483647, %esi
 	subq	%rsi, %rdi
@@ -27,6 +31,7 @@ func0000000000000088:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c4:
 	andl	$33554431, %esi
 	subq	%rsi, %rdi
@@ -34,6 +39,7 @@ func00000000000000c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	andl	$-2, %esi
 	subq	%rsi, %rdi

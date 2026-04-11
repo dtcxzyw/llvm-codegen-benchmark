@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000761:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%ymm2, %ymm1, %ymm1
@@ -12,6 +13,7 @@ func0000000000000761:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000408:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%ymm1, %ymm2, %ymm1
@@ -23,6 +25,7 @@ func0000000000000408:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000778:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%ymm2, %ymm1, %ymm1
@@ -34,6 +37,7 @@ func0000000000000778:
 
 .LCPI3_0:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000278:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%ymm2, %ymm1, %ymm1

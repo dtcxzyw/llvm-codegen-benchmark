@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpnleuq	%ymm1, %ymm3, %k1

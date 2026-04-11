@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpmovzxbw	%xmm1, %ymm1
 	vpaddw	%ymm1, %ymm1, %ymm2
@@ -42,6 +43,7 @@ func000000000000003f:
 	.short	65531
 	.short	65531
 	.short	65531
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vpmovzxbw	%xmm1, %ymm1
 	vpmullw	.LCPI1_0(%rip), %ymm1, %ymm1

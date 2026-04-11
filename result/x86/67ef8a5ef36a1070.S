@@ -1,34 +1,40 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	addq	$3, %rsi
 	andq	$-4, %rsi
 	leaq	8(%rsi,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	addq	$63, %rsi
 	andq	$-64, %rsi
 	leaq	32(%rsi,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	addq	$63, %rsi
 	andq	$-64, %rsi
 	leaq	-4(%rsi,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	addq	$63, %rsi
 	andq	$-64, %rsi
 	leaq	64(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	addq	$31, %rsi
 	andq	$-32, %rsi
 	leaq	8(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001b:
 	addq	$7, %rsi
 	andq	$-8, %rsi

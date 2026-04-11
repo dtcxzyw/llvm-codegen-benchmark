@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	pushq	%rbx
 	vpaddd	%ymm1, %ymm2, %ymm2
@@ -85,6 +86,7 @@ func0000000000000000:
 	popq	%rbx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	pushq	%rbx
 	vpaddd	%ymm1, %ymm2, %ymm2

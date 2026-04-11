@@ -45,6 +45,7 @@
 .LCPI0_3:
 	.short	32768
 	.short	32768
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1
@@ -97,6 +98,7 @@ func0000000000000007:
 .LCPI1_3:
 	.short	1344
 	.short	1344
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1

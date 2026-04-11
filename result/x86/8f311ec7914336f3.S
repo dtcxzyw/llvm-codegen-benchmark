@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000604:
 	subq	%rdx, %rdi
 	addq	$-2, %rdi
@@ -7,6 +8,7 @@ func0000000000000604:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000608:
 	notq	%rdx
 	addq	%rdi, %rdx

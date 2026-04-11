@@ -29,6 +29,7 @@
 	.byte	0
 .LCPI0_3:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm0, %xmm1
 	vpternlogd	$236, .LCPI0_3(%rip){1to4}, %xmm1, %xmm0

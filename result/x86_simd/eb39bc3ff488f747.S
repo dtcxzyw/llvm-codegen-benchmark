@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpnltud	%ymm2, %ymm1, %k1
@@ -7,6 +8,7 @@ func0000000000000024:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpnleud	%ymm2, %ymm1, %k1
@@ -15,24 +17,28 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	7
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpltud	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpneqd	%ymm2, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpneqd	%ymm2, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpltud	%ymm2, %ymm1, %k1

@@ -5,6 +5,7 @@
 	.long	4008636143
 .LCPI0_2:
 	.long	71582787
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -22,6 +23,7 @@ func00000000000000a1:
 	.long	4008636143
 .LCPI1_2:
 	.long	71582788
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ac:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

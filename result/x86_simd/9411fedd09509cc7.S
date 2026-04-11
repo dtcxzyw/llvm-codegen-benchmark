@@ -3,6 +3,7 @@
 	.quad	32768
 .LCPI0_1:
 	.quad	1023
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpternlogq	$248, %ymm3, %ymm2, %ymm0

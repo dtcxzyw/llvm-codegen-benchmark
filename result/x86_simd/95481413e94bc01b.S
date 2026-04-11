@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	31
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpandnd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnleud	%ymm1, %ymm0, %k0
@@ -12,6 +13,7 @@ func0000000000000008:
 	.long	112
 .LCPI1_1:
 	.long	127
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpternlogd	$120, .LCPI1_0(%rip){1to8}, %ymm1, %ymm0
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm0, %k0
@@ -21,6 +23,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpandnd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
@@ -30,6 +33,7 @@ func0000000000000006:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vpandnd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnleud	%ymm1, %ymm0, %k0
@@ -39,6 +43,7 @@ func0000000000000018:
 
 .LCPI4_0:
 	.long	4
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpbroadcastd	.LCPI4_0(%rip), %ymm2
 	vpternlogd	$120, %ymm2, %ymm1, %ymm0
@@ -85,6 +90,7 @@ func000000000000000c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	vpandnd	.LCPI5_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	%ymm1, %ymm0, %k0
@@ -130,6 +136,7 @@ func0000000000000014:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000015:
 	vpandnd	.LCPI6_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpleud	%ymm1, %ymm0, %k0
@@ -175,6 +182,7 @@ func0000000000000015:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	vpandnd	.LCPI7_1(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0

@@ -39,6 +39,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$8, %ymm1, %ymm1
@@ -48,6 +49,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
@@ -60,6 +62,7 @@ func0000000000000019:
 	.quad	4503599627370457
 .LCPI2_1:
 	.quad	2251799813685247
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001b:
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$51, %ymm1, %ymm1
@@ -71,6 +74,7 @@ func000000000000001b:
 	.quad	4503599627370458
 .LCPI3_1:
 	.quad	2251799813685247
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$51, %ymm1, %ymm1
@@ -80,6 +84,7 @@ func000000000000000b:
 
 .LCPI4_0:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$32, %ymm1, %ymm1

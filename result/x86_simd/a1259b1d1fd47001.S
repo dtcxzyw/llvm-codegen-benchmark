@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vminpd	%zmm4, %zmm3, %zmm3
@@ -7,6 +8,7 @@ func0000000000000022:
 	vmaxpd	%zmm3, %zmm1, %zmm1
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vmaxpd	%zmm4, %zmm3, %zmm3

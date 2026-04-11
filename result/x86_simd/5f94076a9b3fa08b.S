@@ -53,6 +53,7 @@
 .LCPI0_3:
 	.short	28672
 	.short	28672
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k0
@@ -98,6 +99,7 @@ func0000000000000042:
 	.short	2
 .LCPI1_2:
 	.short	3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000068:
 	vpbroadcastw	.LCPI1_2(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0

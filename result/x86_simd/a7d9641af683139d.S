@@ -8,6 +8,7 @@
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovdw	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

@@ -61,6 +61,7 @@
 	.byte	8
 .LCPI0_4:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003d:
 	vpmovzxwd	%xmm1, %ymm1
 	vpslld	$31, %ymm1, %ymm1
@@ -138,6 +139,7 @@ func000000000000003d:
 	.byte	8
 .LCPI1_4:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovzxwd	%xmm1, %ymm1
 	vpslld	$31, %ymm1, %ymm1

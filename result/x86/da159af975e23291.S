@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -10,6 +11,7 @@ func0000000000000014:
 
 .LCPI1_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001b:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
@@ -19,6 +21,7 @@ func000000000000001b:
 
 .LCPI2_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000012:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
@@ -28,6 +31,7 @@ func0000000000000012:
 
 .LCPI3_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
@@ -37,6 +41,7 @@ func000000000000000a:
 
 .LCPI4_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001d:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
@@ -46,6 +51,7 @@ func000000000000001d:
 
 .LCPI5_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000015:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
@@ -55,6 +61,7 @@ func0000000000000015:
 
 .LCPI6_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000001a:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
@@ -64,6 +71,7 @@ func000000000000001a:
 
 .LCPI7_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI7_0(%rip){1to4}, %xmm1, %xmm1
@@ -73,6 +81,7 @@ func0000000000000002:
 
 .LCPI8_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI8_0(%rip){1to4}, %xmm1, %xmm1
@@ -82,6 +91,7 @@ func0000000000000004:
 
 .LCPI9_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000005:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
@@ -91,6 +101,7 @@ func0000000000000005:
 
 .LCPI10_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000013:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI10_0(%rip){1to4}, %xmm1, %xmm1
@@ -100,6 +111,7 @@ func0000000000000013:
 
 .LCPI11_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000d:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vandps	.LCPI11_0(%rip){1to4}, %xmm1, %xmm1

@@ -18,6 +18,7 @@
 	.short	4
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmb	.LCPI0_0(%rip), %xmm1, %k0
 	vptestnmw	.LCPI0_1(%rip), %ymm0, %k1

@@ -33,6 +33,7 @@
 	.short	6
 	.short	6
 	.short	6
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpsrlw	$2, %ymm1, %ymm1
@@ -78,6 +79,7 @@ func0000000000000003:
 .LCPI1_2:
 	.short	2046
 	.short	2046
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpsrlw	$1, %ymm0, %ymm1
 	vpmulhuw	.LCPI1_0(%rip), %ymm1, %ymm1

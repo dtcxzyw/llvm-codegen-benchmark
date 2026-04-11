@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0xc3340000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
 	vcmpltss	.LCPI0_0(%rip), %xmm1, %k1
@@ -10,6 +11,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	0x42340000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
 	vcmpgtss	.LCPI1_0(%rip), %xmm1, %k1
@@ -17,6 +19,7 @@ func0000000000000004:
 	vmovaps	%xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vcvtsd2ss	%xmm1, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2

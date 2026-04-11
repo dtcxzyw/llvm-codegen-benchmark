@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000704:
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
@@ -8,6 +9,7 @@ func0000000000000704:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000304:
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004c:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpltpd	%ymm2, %ymm1, %k1
@@ -11,6 +12,7 @@ func000000000000004c:
 	.quad	-2
 .LCPI1_1:
 	.quad	0x4049000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vcmpltpd	.LCPI1_1(%rip){1to4}, %ymm1, %k0 {%k1}
@@ -22,6 +24,7 @@ func0000000000000044:
 	.quad	1000
 .LCPI2_1:
 	.quad	0x3ddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000148:
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
 	vcmplepd	.LCPI2_1(%rip){1to4}, %ymm1, %k0 {%k1}

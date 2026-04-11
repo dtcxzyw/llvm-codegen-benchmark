@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x447a0000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000444:
 	vminss	%xmm2, %xmm1, %xmm1
 	vmovss	.LCPI0_0(%rip), %xmm2
@@ -12,6 +13,7 @@ func0000000000000444:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000448:
 	vminss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -25,6 +27,7 @@ func0000000000000448:
 	.long	0x7c38aa25
 .LCPI2_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000046a:
 	vmaxss	%xmm2, %xmm1, %xmm1
 	vcmpngess	.LCPI2_0(%rip), %xmm1, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b8:
 	leal	308(%rdi), %eax
 	movl	$-308, %ecx
@@ -8,6 +9,7 @@ func00000000000000b8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b4:
 	leal	1(%rdi), %eax
 	movl	$-1, %ecx

@@ -3,6 +3,7 @@
 	.quad	0x3fd34413509f79fb
 .LCPI0_1:
 	.long	22
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vcvtdq2pd	%ymm2, %zmm2
 	vfmadd132pd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm2
@@ -17,6 +18,7 @@ func0000000000000008:
 	.quad	0x3fd34413509f79fb
 .LCPI1_1:
 	.long	22
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	vcvtdq2pd	%ymm2, %zmm2
 	vfmadd132pd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm2

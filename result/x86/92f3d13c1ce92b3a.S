@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	vmulss	%xmm2, %xmm0, %xmm2
 	vmulss	%xmm1, %xmm0, %xmm0
@@ -9,6 +10,7 @@ func0000000000000044:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	vmulss	%xmm1, %xmm2, %xmm2
 	vmulss	%xmm1, %xmm0, %xmm0

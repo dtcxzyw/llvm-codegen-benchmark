@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000185:
 	vpmovqb	%ymm2, %xmm2
 	vptestmb	%xmm2, %xmm2, %k0

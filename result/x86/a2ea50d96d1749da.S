@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	subl	%edi, %esi
 	testb	$4, %sil
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	subl	%edi, %esi
 	testl	$-1024, %esi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	subl	%edi, %esi
 	testl	$-4, %esi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	subl	%edi, %esi
 	andl	$-2, %esi
@@ -24,6 +28,7 @@ func0000000000000014:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	subq	%rdi, %rsi
 	movabsq	$-9223372036854775808, %rax

@@ -7,6 +7,7 @@
 	.quad	0x3fc68a288b60c8b3
 .LCPI0_3:
 	.quad	0x3fd34413509f79fb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovq	%rsi, %xmm0
 	vaddsd	.LCPI0_0(%rip), %xmm0, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
 	decb	%dl
 	movl	$1, %eax
@@ -8,6 +9,7 @@ func00000000000000ca:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000cb:
 	incb	%dl
 	movl	$1, %eax

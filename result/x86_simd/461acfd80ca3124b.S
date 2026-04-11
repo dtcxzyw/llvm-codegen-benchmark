@@ -3,6 +3,7 @@
 	.long	1977538899
 .LCPI0_1:
 	.long	139
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1

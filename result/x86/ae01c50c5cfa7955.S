@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000008c1:
 	cmpl	$7, %edi
 	setl	%cl
@@ -7,6 +8,7 @@ func00000000000008c1:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000008ca:
 	cmpl	$7, %edi
 	setl	%cl
@@ -15,6 +17,7 @@ func00000000000008ca:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000088a:
 	cmpl	$117440512, %edi
 	setb	%cl
@@ -23,6 +26,7 @@ func000000000000088a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000881:
 	cmpl	$117440512, %edi
 	setb	%cl
@@ -31,6 +35,7 @@ func0000000000000881:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000a81:
 	cmpl	$7, %edi
 	setb	%cl
@@ -39,6 +44,7 @@ func0000000000000a81:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000a8a:
 	cmpl	$7, %edi
 	setb	%cl
@@ -47,6 +53,7 @@ func0000000000000a8a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000008c6:
 	cmpl	$6, %edi
 	setge	%cl
@@ -55,6 +62,7 @@ func00000000000008c6:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ca:
 	movl	$4, %eax
 	shlxl	%esi, %eax, %eax
@@ -65,6 +73,7 @@ func00000000000000ca:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000a86:
 	cmpl	$7, %edi
 	setae	%cl
@@ -73,6 +82,7 @@ func0000000000000a86:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000008c4:
 	cmpl	$7, %edi
 	setl	%cl
@@ -81,6 +91,7 @@ func00000000000008c4:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000886:
 	cmpl	$117440512, %edi
 	setae	%cl
@@ -89,6 +100,7 @@ func0000000000000886:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000826:
 	testl	%edi, %edi
 	setne	%cl
@@ -97,6 +109,7 @@ func0000000000000826:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000821:
 	testl	%edi, %edi
 	sete	%cl
@@ -105,6 +118,7 @@ func0000000000000821:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000021:
 	testl	%edi, %edi
 	setne	%cl

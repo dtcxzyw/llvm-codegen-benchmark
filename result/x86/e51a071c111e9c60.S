@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	andl	$1, %edx
 	leaq	(%rdi,%rsi), %rax
@@ -6,6 +7,7 @@ func0000000000000006:
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f4:
 	andl	$1, %edx
 	addq	%rsi, %rdi
@@ -14,6 +16,7 @@ func00000000000001f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000010a:
 	andl	$1, %edx
 	addq	%rsi, %rdx
@@ -21,6 +24,7 @@ func000000000000010a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000008a:
 	andl	$1, %edx
 	addq	%rsi, %rdx
@@ -28,6 +32,7 @@ func000000000000008a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	andl	$1, %edx
 	addq	%rsi, %rdx
@@ -35,6 +40,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	andl	$1, %edx
 	addq	%rsi, %rdx
@@ -42,6 +48,7 @@ func000000000000000a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000188:
 	andl	$1, %edx
 	addq	%rsi, %rdi
@@ -50,6 +57,7 @@ func0000000000000188:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	andl	$1, %edx
 	addq	%rsi, %rdi
@@ -58,6 +66,7 @@ func0000000000000008:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001f8:
 	andl	$1, %edx
 	addq	%rsi, %rdi
@@ -66,6 +75,7 @@ func00000000000001f8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000108:
 	andl	$1, %edx
 	addq	%rsi, %rdi
@@ -75,6 +85,7 @@ func0000000000000108:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000101:
 	andl	$1, %edx
 	addq	%rsi, %rdi
@@ -84,6 +95,7 @@ func0000000000000101:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000010c:
 	andl	$1, %edx
 	addq	%rsi, %rdx
@@ -92,6 +104,7 @@ func000000000000010c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000004:
 	andl	$1, %edx
 	addq	%rsi, %rdi
@@ -100,6 +113,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000141:
 	andl	$1, %edx
 	addq	%rsi, %rdx
@@ -107,6 +121,7 @@ func0000000000000141:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000a1:
 	andl	$1, %edx
 	addq	%rsi, %rdx
@@ -115,6 +130,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000018a:
 	andl	$1, %edx
 	addq	%rsi, %rdx

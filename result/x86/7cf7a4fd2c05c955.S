@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x39b4484bfeebc2a0
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a5:
 	cmpl	$-29, %edi
 	setge	%al
@@ -11,6 +12,7 @@ func00000000000000a5:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000144:
 	cmpl	$4, %edi
 	setb	%al
@@ -20,6 +22,7 @@ func0000000000000144:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a4:
 	testl	%edi, %edi
 	setg	%al

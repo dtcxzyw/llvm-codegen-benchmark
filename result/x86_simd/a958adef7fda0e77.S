@@ -3,6 +3,7 @@
 	.quad	16
 .LCPI0_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpcmpltud	%xmm1, %xmm0, %k1

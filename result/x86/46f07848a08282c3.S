@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	orq	%r8, %rcx
 	cmpq	%rdx, %rdi
@@ -6,6 +7,7 @@ func00000000000000a4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	orq	%r8, %rcx
 	cmpq	%rdx, %rdi
@@ -13,6 +15,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ab:
 	orq	%r8, %rcx
 	cmpq	%rdx, %rdi
@@ -20,6 +23,7 @@ func00000000000000ab:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000aa:
 	orq	%r8, %rcx
 	cmpq	%rdi, %rdx
@@ -27,6 +31,7 @@ func00000000000000aa:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a1:
 	orq	%r8, %rcx
 	xorq	%rdx, %rdi
@@ -35,6 +40,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a8:
 	orq	%r8, %rcx
 	cmpq	%rdi, %rdx
@@ -42,6 +48,7 @@ func00000000000000a8:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000e4:
 	shldq	$32, %r8, %r9
 	shlq	$32, %r8
@@ -52,6 +59,7 @@ func00000000000000e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000a9:
 	orq	%r8, %rcx
 	cmpq	%rdx, %rdi
@@ -59,6 +67,7 @@ func00000000000000a9:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000e9:
 	shldq	$32, %r8, %r9
 	shlq	$32, %r8
@@ -69,6 +78,7 @@ func00000000000000e9:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000ac:
 	orq	%r8, %rcx
 	xorq	%rdx, %rdi
@@ -77,6 +87,7 @@ func00000000000000ac:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000081:
 	orq	%r8, %rcx
 	xorq	%rdx, %rdi
@@ -85,6 +96,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000e1:
 	shldq	$1, %r8, %r9
 	orq	%rcx, %r9
@@ -95,6 +107,7 @@ func00000000000000e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000021:
 	addq	%r8, %r8
 	orq	%rcx, %r8

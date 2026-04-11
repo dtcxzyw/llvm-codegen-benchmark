@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddw	%ymm2, %ymm1, %ymm1
@@ -25,6 +26,7 @@ func0000000000000006:
 	.short	65534
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpaddw	.LCPI1_0(%rip), %ymm1, %ymm1
 	vpcmpeqw	%ymm1, %ymm0, %k0
@@ -32,6 +34,7 @@ func0000000000000041:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddw	%ymm2, %ymm1, %ymm1
@@ -41,6 +44,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddw	%ymm2, %ymm1, %ymm1

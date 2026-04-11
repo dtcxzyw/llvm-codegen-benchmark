@@ -33,6 +33,7 @@
 	.short	65488
 	.short	65488
 	.short	65488
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmullw	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpmovsxbw	%xmm0, %ymm0
@@ -74,6 +75,7 @@ func0000000000000000:
 	.short	65488
 	.short	65488
 	.short	65488
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	vpmullw	.LCPI1_0(%rip), %ymm1, %ymm1
 	vpmovsxbw	%xmm0, %ymm0

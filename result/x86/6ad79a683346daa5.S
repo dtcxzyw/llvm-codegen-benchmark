@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003e4:
 	addl	$-65536, %esi
 	xorl	%eax, %eax
@@ -8,6 +9,7 @@ func00000000000003e4:
 	leaq	1(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e1:
 	leaq	24(%rdi), %rax
 	leaq	12(%rdi), %rcx
@@ -15,6 +17,7 @@ func00000000000001e1:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e4:
 	decl	%esi
 	leaq	208(%rdi), %rax

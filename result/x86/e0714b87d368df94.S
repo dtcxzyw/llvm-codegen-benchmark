@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	shlb	$4, %sil
 	andb	$15, %dil
@@ -6,6 +7,7 @@ func0000000000000001:
 	notb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	leal	(,%rsi,4), %eax
 	andb	$3, %dil

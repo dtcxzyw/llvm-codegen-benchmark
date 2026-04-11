@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsllw	$4, %ymm1, %ymm1
 	vpaddw	%ymm0, %ymm1, %ymm0
@@ -23,6 +24,7 @@ func0000000000000000:
 	.short	20480
 	.short	20480
 	.short	20480
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpsllw	$6, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -46,6 +48,7 @@ func000000000000003f:
 	.short	10240
 	.short	10240
 	.short	10240
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpsllw	$4, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

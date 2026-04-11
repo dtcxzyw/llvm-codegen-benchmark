@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000082:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpeqsd	%xmm2, %xmm1, %k1
@@ -9,6 +10,7 @@ func0000000000000082:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -16,6 +18,7 @@ func0000000000000023:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -25,6 +28,7 @@ func0000000000000022:
 
 .LCPI3_0:
 	.quad	0x3f66719f3601671a
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000045:
 	vmovsd	.LCPI3_0(%rip), %xmm2
 	vminsd	%xmm1, %xmm2, %xmm1
@@ -34,6 +38,7 @@ func0000000000000045:
 
 .LCPI4_0:
 	.quad	0x2b2bff2ee48e0530
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vmovsd	.LCPI4_0(%rip), %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -41,6 +46,7 @@ func0000000000000024:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000088:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpeqsd	%xmm2, %xmm1, %k1
@@ -49,6 +55,7 @@ func0000000000000088:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000048:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vminsd	%xmm1, %xmm2, %xmm1
@@ -56,6 +63,7 @@ func0000000000000048:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000025:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -63,6 +71,7 @@ func0000000000000025:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002e:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -72,6 +81,7 @@ func000000000000002e:
 
 .LCPI9_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000042:
 	vmovsd	.LCPI9_0(%rip), %xmm2
 	vminsd	%xmm1, %xmm2, %xmm1
@@ -81,6 +91,7 @@ func0000000000000042:
 
 .LCPI10_0:
 	.quad	0x3ce4000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000002c:
 	vmovsd	.LCPI10_0(%rip), %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1

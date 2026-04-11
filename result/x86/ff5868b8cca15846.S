@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	decq	%rsi
 	cmpq	$-2, %rsi
@@ -6,6 +7,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	movabsq	$4611686018427387904, %rax
 	addq	%rsi, %rax
@@ -13,24 +15,28 @@ func000000000000000a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	cmpq	$1, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	cmpq	$2, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	cmpq	$1, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000024:
 	addq	$-3, %rsi
 	cmpq	$2, %rsi
@@ -38,12 +44,14 @@ func0000000000000024:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000006c:
 	cmpq	$4, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	addq	$-5, %rsi
 	cmpq	$-3, %rsi
@@ -51,6 +59,7 @@ func0000000000000008:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000006:
 	decq	%rsi
 	movabsq	$9223372036854775680, %rax
@@ -59,12 +68,14 @@ func0000000000000006:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	cmpq	$-1, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000028:
 	addq	$-14, %rsi
 	cmpq	$-13, %rsi
@@ -72,12 +83,14 @@ func0000000000000028:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000061:
 	cmpq	$64, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000004c:
 	cmpq	$-2, %rsi
 	setne	%al

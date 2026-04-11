@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014c:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -16,6 +17,7 @@ func000000000000014c:
 	.short	65024
 	.short	65024
 	.short	65024
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm0, %k1
@@ -24,6 +26,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000056c:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpnltd	%ymm2, %ymm1, %k1
@@ -41,6 +44,7 @@ func000000000000056c:
 	.short	13
 	.short	13
 	.short	13
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000108:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpnleud	%ymm2, %ymm0, %k1
@@ -58,6 +62,7 @@ func0000000000000108:
 	.short	49816
 	.short	49816
 	.short	49816
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpnleud	%ymm2, %ymm0, %k1
@@ -66,6 +71,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000039:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpnltud	%ymm2, %ymm0, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	subq	%rdi, %rsi
 	leaq	1(%rsi), %rax
@@ -10,6 +11,7 @@ func0000000000000026:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000076:
 	subq	%rdi, %rsi
 	leaq	1(%rsi), %rax
@@ -21,6 +23,7 @@ func0000000000000076:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	subq	%rdi, %rsi
 	leaq	4(%rsi), %rax
@@ -32,6 +35,7 @@ func0000000000000024:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000072:
 	subq	%rdi, %rsi
 	leaq	1(%rsi), %rax
@@ -43,6 +47,7 @@ func0000000000000072:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000066:
 	subq	%rdi, %rsi
 	leaq	1(%rsi), %rax

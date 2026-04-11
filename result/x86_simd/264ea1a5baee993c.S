@@ -37,6 +37,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpsrld	$16, %ymm0, %ymm0 {%k1}
@@ -45,6 +46,7 @@ func0000000000000021:
 
 .LCPI1_0:
 	.long	192
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpsrld	$8, %ymm0, %ymm0 {%k1}

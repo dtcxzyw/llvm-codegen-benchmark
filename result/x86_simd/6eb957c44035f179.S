@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpmullq	%ymm0, %ymm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
@@ -6,6 +7,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpmullq	%ymm0, %ymm1, %ymm1
 	vpcmpgtq	%ymm0, %ymm1, %k0
@@ -13,6 +15,7 @@ func0000000000000006:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpmullq	%ymm1, %ymm0, %ymm1
 	vpcmpnleuq	%ymm1, %ymm0, %k0

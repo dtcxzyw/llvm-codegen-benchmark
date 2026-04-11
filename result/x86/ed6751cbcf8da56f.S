@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004f:
 	leaq	40(%rdi), %rax
 	leaq	16(%rdi), %rcx
@@ -7,6 +8,7 @@ func000000000000004f:
 	addq	$16, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
@@ -14,6 +16,7 @@ func000000000000001f:
 	leaq	48(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000004c:
 	leaq	46(%rdi), %rax
 	leaq	24(%rdi), %rcx

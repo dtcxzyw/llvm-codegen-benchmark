@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	andb	$1, %sil
 	shrq	$3, %rdx
@@ -9,6 +10,7 @@ func0000000000000004:
 	leaq	(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	sarq	$32, %rdx
 	xorl	%eax, %eax
@@ -17,6 +19,7 @@ func0000000000000006:
 	leaq	(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	sarq	$32, %rdx
 	testb	$1, %sil

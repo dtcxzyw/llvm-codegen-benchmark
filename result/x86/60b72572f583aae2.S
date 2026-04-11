@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leaq	1000(%rdi), %rax
 	movl	$56, %ecx
@@ -6,6 +7,7 @@ func0000000000000000:
 	seto	%dl
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	leaq	-1(%rdi), %rax
 	movl	$3, %ecx
@@ -13,6 +15,7 @@ func0000000000000002:
 	seto	%dl
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	leaq	1(%rdi), %rax
 	movl	$40, %ecx
@@ -20,6 +23,7 @@ func0000000000000004:
 	seto	%dl
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	leaq	1(%rdi), %rax
 	movl	$3, %ecx

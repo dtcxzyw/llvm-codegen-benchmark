@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	movzwl	%si, %eax
 	imull	$7152, %eax, %ecx
@@ -6,6 +7,7 @@ func000000000000003f:
 	addl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003a:
 	movzwl	%si, %eax
 	imull	$32896, %eax, %ecx
@@ -13,6 +15,7 @@ func000000000000003a:
 	addl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	movzwl	%si, %eax
 	imull	$5273, %eax, %ecx

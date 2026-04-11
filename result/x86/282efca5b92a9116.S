@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000029:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -6,6 +7,7 @@ func0000000000000029:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	cmpl	$2147483639, %edx
 	movl	$2147483647, %eax
@@ -13,6 +15,7 @@ func0000000000000019:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	testl	%edx, %edx
 	movl	$-73, %eax
@@ -20,11 +23,13 @@ func0000000000000018:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	movl	%esi, %eax
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -32,6 +37,7 @@ func0000000000000005:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000020:
 	cmpl	$3, %edx
 	movl	$10, %eax
@@ -39,6 +45,7 @@ func0000000000000020:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	testl	%edx, %edx
 	movl	$-1, %eax
@@ -46,6 +53,7 @@ func0000000000000028:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000011:
 	cmpl	$67108864, %edx
 	movl	$4, %eax

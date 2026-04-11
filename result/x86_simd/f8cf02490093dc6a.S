@@ -3,6 +3,7 @@
 	.long	31337
 .LCPI0_1:
 	.long	1619
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpmulld	%ymm3, %ymm2, %ymm2
@@ -18,6 +19,7 @@ func0000000000000004:
 	.long	4294951227
 .LCPI1_2:
 	.long	1024
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000155:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
@@ -32,6 +34,7 @@ func0000000000000155:
 	.long	4294951227
 .LCPI2_2:
 	.long	1024
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1
@@ -46,6 +49,7 @@ func0000000000000000:
 	.long	4294967196
 .LCPI3_2:
 	.long	4294962656
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000355:
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
@@ -60,6 +64,7 @@ func0000000000000355:
 	.long	28
 .LCPI4_2:
 	.long	4292327780
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000003f4:
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI4_1(%rip){1to8}, %ymm1, %ymm1
@@ -74,6 +79,7 @@ func00000000000003f4:
 	.long	150
 .LCPI5_2:
 	.long	128
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000003ff:
 	vpmulld	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI5_1(%rip){1to8}, %ymm1, %ymm1
@@ -88,6 +94,7 @@ func00000000000003ff:
 	.long	2446
 .LCPI6_2:
 	.long	1024
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000140:
 	vpmulld	.LCPI6_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI6_1(%rip){1to8}, %ymm1, %ymm1
@@ -102,6 +109,7 @@ func0000000000000140:
 	.long	32896
 .LCPI7_2:
 	.long	32768
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000003ea:
 	vpmulld	.LCPI7_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI7_1(%rip){1to8}, %ymm1, %ymm1
@@ -116,6 +124,7 @@ func00000000000003ea:
 	.long	10
 .LCPI8_2:
 	.long	4294961968
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000003d5:
 	vpmulld	.LCPI8_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI8_1(%rip){1to8}, %ymm1, %ymm1
@@ -130,6 +139,7 @@ func00000000000003d5:
 	.long	28
 .LCPI9_2:
 	.long	30380
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000375:
 	vpmulld	.LCPI9_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI9_1(%rip){1to8}, %ymm1, %ymm1
@@ -144,6 +154,7 @@ func0000000000000375:
 	.long	10
 .LCPI10_2:
 	.long	4294961968
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000003d7:
 	vpmulld	.LCPI10_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI10_1(%rip){1to8}, %ymm1, %ymm1
@@ -158,6 +169,7 @@ func00000000000003d7:
 	.long	254
 .LCPI11_2:
 	.long	4282596353
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000001:
 	vpmulld	.LCPI11_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI11_1(%rip){1to8}, %ymm1, %ymm1
@@ -172,6 +184,7 @@ func0000000000000001:
 	.long	460324
 .LCPI12_2:
 	.long	134742016
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000c0:
 	vpmulld	.LCPI12_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI12_1(%rip){1to8}, %ymm1, %ymm1
@@ -186,6 +199,7 @@ func00000000000000c0:
 	.long	4191920
 .LCPI13_2:
 	.long	2105344
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000003fa:
 	vpmulld	.LCPI13_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI13_1(%rip){1to8}, %ymm1, %ymm1
@@ -200,6 +214,7 @@ func00000000000003fa:
 	.long	4191289
 .LCPI14_2:
 	.long	2105344
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000003fe:
 	vpmulld	.LCPI14_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI14_1(%rip){1to8}, %ymm1, %ymm1
@@ -214,6 +229,7 @@ func00000000000003fe:
 	.long	67084748
 .LCPI15_2:
 	.long	33685504
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000330:
 	vpmulld	.LCPI15_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI15_1(%rip){1to8}, %ymm1, %ymm1
@@ -228,6 +244,7 @@ func0000000000000330:
 	.long	4294948215
 .LCPI16_2:
 	.long	33685504
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000157:
 	vpmulld	.LCPI16_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI16_1(%rip){1to8}, %ymm1, %ymm1
@@ -242,6 +259,7 @@ func0000000000000157:
 	.long	115200
 .LCPI17_2:
 	.long	33685504
+	.prefalign	4, .Lfunc_end17, nop
 func00000000000001dd:
 	vpmulld	.LCPI17_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI17_1(%rip){1to8}, %ymm1, %ymm1

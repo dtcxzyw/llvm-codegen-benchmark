@@ -7,6 +7,7 @@
 	.zero	4,7
 .LCPI0_3:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -49,6 +50,7 @@ func0000000000000041:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004c:
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -65,6 +67,7 @@ func000000000000004c:
 	.zero	16,7
 .LCPI2_1:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbw	%xmm0, %ymm0

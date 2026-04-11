@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	addl	%esi, %edi
 	xorl	%eax, %eax
@@ -7,6 +8,7 @@ func0000000000000021:
 	shll	$12, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000034:
 	xorl	%eax, %eax
 	addb	%sil, %dil
@@ -14,6 +16,7 @@ func0000000000000034:
 	leal	-1(%rax,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000074:
 	addl	%esi, %edi
 	andl	$65504, %edi
@@ -23,6 +26,7 @@ func0000000000000074:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	leal	(%rdi,%rsi), %eax
 	andl	$1, %eax

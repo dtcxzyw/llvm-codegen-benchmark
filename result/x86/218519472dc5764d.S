@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000009f:
 	cmpl	%edx, %esi
 	cmovgl	%esi, %edx
@@ -6,6 +7,7 @@ func000000000000009f:
 	shlq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	cmpl	%edx, %esi
 	cmovgl	%esi, %edx
@@ -13,6 +15,7 @@ func000000000000008a:
 	shlq	$32, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
 	cmpl	%edx, %esi
 	cmovgl	%esi, %edx
@@ -20,6 +23,7 @@ func000000000000001f:
 	shlq	$3, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	cmpl	%edx, %esi
 	cmovgl	%esi, %edx

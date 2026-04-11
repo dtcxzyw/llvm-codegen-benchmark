@@ -20,6 +20,7 @@
 .LCPI0_2:
 	.short	31
 	.short	31
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpmovdw	%ymm0, %xmm0
 	vpsrlw	$10, %xmm0, %xmm0

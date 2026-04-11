@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000131:
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -7,6 +8,7 @@ func0000000000000131:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	addq	%rdx, %rsi
@@ -14,6 +16,7 @@ func0000000000000008:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	xorl	%eax, %eax
 	addq	%rdx, %rsi
@@ -21,6 +24,7 @@ func0000000000000009:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	xorl	%eax, %eax
 	addq	%rdx, %rsi
@@ -28,6 +32,7 @@ func000000000000000a:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000003c3:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -36,6 +41,7 @@ func00000000000003c3:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000003c0:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -43,6 +49,7 @@ func00000000000003c0:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000151:
 	addq	%rdx, %rsi
 	xorl	%eax, %eax
@@ -51,6 +58,7 @@ func0000000000000151:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000060:
 	xorl	%eax, %eax
 	addq	%rdx, %rsi
@@ -58,6 +66,7 @@ func0000000000000060:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000063:
 	xorl	%eax, %eax
 	addq	%rdx, %rsi
@@ -65,6 +74,7 @@ func0000000000000063:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000a3:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -72,6 +82,7 @@ func00000000000000a3:
 	adcq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000003c1:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -80,6 +91,7 @@ func00000000000003c1:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000043:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -87,6 +99,7 @@ func0000000000000043:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000001a3:
 	movq	%rdi, %rax
 	addq	%rdx, %rsi
@@ -94,6 +107,7 @@ func00000000000001a3:
 	adcq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000061:
 	xorl	%eax, %eax
 	addq	%rdx, %rsi

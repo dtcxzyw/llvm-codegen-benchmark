@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	shrq	$2, %rsi
 	movl	%esi, %ecx
@@ -6,12 +7,14 @@ func000000000000000a:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	shrl	$16, %esi
 	movl	%edi, %eax
 	imulq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	shrl	$2, %esi
 	andl	$2097151, %esi
@@ -19,6 +22,7 @@ func0000000000000007:
 	imulq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	shrq	$28, %rsi
 	andq	$-16, %rsi
@@ -26,6 +30,7 @@ func0000000000000000:
 	imulq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	shrl	$4, %esi
 	andl	$-128, %esi
@@ -33,6 +38,7 @@ func000000000000000b:
 	imulq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000002:
 	shrq	$2, %rsi
 	movl	%esi, %ecx
@@ -40,6 +46,7 @@ func0000000000000002:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	shrq	$9, %rsi
 	movabsq	$9007199254740984, %rcx
@@ -48,6 +55,7 @@ func0000000000000004:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000f:
 	shrq	$2, %rsi
 	andl	$2147483647, %esi

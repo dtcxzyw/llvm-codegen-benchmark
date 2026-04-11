@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000050:
 	addl	$130974, %edi
 	shrl	%edi
@@ -6,6 +7,7 @@ func0000000000000050:
 	shrxl	%edi, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	addl	$268431360, %edi
 	shrl	$12, %edi

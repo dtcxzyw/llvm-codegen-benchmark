@@ -3,6 +3,7 @@
 	.long	16
 .LCPI0_1:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$17, %ymm1, %ymm2, %ymm1
@@ -20,6 +21,7 @@ func0000000000000043:
 	.long	8192
 .LCPI1_3:
 	.long	16384
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	.LCPI1_1(%rip){1to4}, %ymm1, %k1

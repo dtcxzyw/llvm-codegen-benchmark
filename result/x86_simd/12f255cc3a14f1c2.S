@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	16384
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000100:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -12,6 +13,7 @@ func0000000000000100:
 
 .LCPI1_0:
 	.long	32768
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000102:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -23,6 +25,7 @@ func0000000000000102:
 
 .LCPI2_0:
 	.long	128
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f8:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -34,6 +37,7 @@ func00000000000001f8:
 
 .LCPI3_0:
 	.long	128
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001fa:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -45,6 +49,7 @@ func00000000000001fa:
 
 .LCPI4_0:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -56,6 +61,7 @@ func000000000000000b:
 
 .LCPI5_0:
 	.long	24608
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -67,6 +73,7 @@ func0000000000000000:
 
 .LCPI6_0:
 	.long	2105344
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001d0:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -78,6 +85,7 @@ func00000000000001d0:
 
 .LCPI7_0:
 	.long	2105344
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001f0:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -89,6 +97,7 @@ func00000000000001f0:
 
 .LCPI8_0:
 	.long	16384
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000a8:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -100,6 +109,7 @@ func00000000000000a8:
 
 .LCPI9_0:
 	.long	33685504
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000180:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -111,6 +121,7 @@ func0000000000000180:
 
 .LCPI10_0:
 	.long	33685504
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000ba:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -122,6 +133,7 @@ func00000000000000ba:
 
 .LCPI11_0:
 	.long	33685504
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000001aa:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0

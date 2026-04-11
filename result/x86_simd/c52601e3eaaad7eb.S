@@ -5,6 +5,7 @@
 	.long	4294967293
 .LCPI0_2:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a4:
 	vpsrlq	$60, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -19,6 +20,7 @@ func00000000000001a4:
 	.quad	9218868437227405312
 .LCPI1_1:
 	.quad	4494592428115755008
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001a1:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpeqq	.LCPI1_1(%rip){1to4}, %ymm0, %k0
@@ -30,6 +32,7 @@ func00000000000001a1:
 	.long	7
 .LCPI2_1:
 	.long	4
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000124:
 	vpsrlq	$32, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

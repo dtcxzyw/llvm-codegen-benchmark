@@ -3,6 +3,7 @@
 	.long	768
 .LCPI0_1:
 	.long	4294966528
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vpmaxsd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -12,6 +13,7 @@ func0000000000000015:
 
 .LCPI1_0:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000035:
 	vpmaxsd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0

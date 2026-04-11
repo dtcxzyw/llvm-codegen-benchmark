@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	lzcntq	%rsi, %rax
 	movl	$11, %ecx
@@ -8,6 +9,7 @@ func000000000000000d:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	lzcntq	%rsi, %rax
 	movl	$64, %ecx

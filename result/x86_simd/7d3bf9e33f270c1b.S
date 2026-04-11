@@ -16,6 +16,7 @@
 	.short	21846
 	.short	21846
 	.short	21846
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovzxbw	%xmm0, %ymm0
 	vpsllw	$2, %ymm0, %ymm0

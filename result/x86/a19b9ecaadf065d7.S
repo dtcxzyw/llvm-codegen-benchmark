@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000064:
 	andl	$1, %edx
 	leaq	(%rsi,%rdx,4), %rax
@@ -6,6 +7,7 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	andl	$1, %edx
 	leaq	(%rsi,%rdx,8), %rax
@@ -13,6 +15,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000006c:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -22,6 +25,7 @@ func000000000000006c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000049:
 	addl	%edx, %edx
 	orq	$-4, %rdx
@@ -30,6 +34,7 @@ func0000000000000049:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000044:
 	addl	%edx, %edx
 	orq	$-4, %rdx
@@ -38,6 +43,7 @@ func0000000000000044:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000069:
 	andl	$1, %edx
 	leaq	1(%rsi,%rdx,2), %rax
@@ -45,6 +51,7 @@ func0000000000000069:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000068:
 	andl	$1, %edx
 	shll	$4, %edx
@@ -53,6 +60,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000041:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -62,6 +70,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	andl	$1, %edx
 	leaq	(%rsi,%rdx,4), %rax
@@ -69,6 +78,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000065:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -79,6 +89,7 @@ func0000000000000065:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000004c:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -88,6 +99,7 @@ func000000000000004c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000001:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -97,6 +109,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000000c:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -106,6 +119,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000008:
 	leaq	12(%rsi), %rax
 	testb	$1, %dl

@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000082:
 	leal	(%rdx,%rsi), %ecx
 	movl	%edi, %eax
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c2:
 	leal	(%rdx,%rsi), %ecx
 	movl	%edi, %eax
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f2:
 	leal	(%rdx,%rsi), %ecx
 	movl	%edi, %eax

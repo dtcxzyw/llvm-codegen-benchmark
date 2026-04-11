@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000107:
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,8), %rax
@@ -8,6 +9,7 @@ func0000000000000107:
 	addq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	testq	%rdi, %rdi
 	je	.LBB1_1

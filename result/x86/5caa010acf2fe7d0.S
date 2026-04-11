@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	cmpq	$3, %rdx
@@ -7,6 +8,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	testq	%rdx, %rdx
 	movl	$1, %eax
@@ -15,6 +17,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	cmpq	$10, %rdx
 	movl	$50, %eax
@@ -23,6 +26,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002b:
 	testq	%rdx, %rdx
 	movl	$7, %eax
@@ -31,6 +35,7 @@ func000000000000002b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000145:
 	testq	%rdx, %rdx
 	movl	$5, %eax
@@ -39,6 +44,7 @@ func0000000000000145:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000101:
 	cmpq	$10, %rdx
 	movl	$4, %eax
@@ -47,6 +53,7 @@ func0000000000000101:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000108:
 	shrq	$32, %rdx
 	sete	%cl
@@ -55,6 +62,7 @@ func0000000000000108:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000104:
 	shrq	$32, %rdx
 	sete	%cl
@@ -63,6 +71,7 @@ func0000000000000104:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000081:
 	xorl	%eax, %eax
 	cmpq	$2, %rdx
@@ -71,6 +80,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000106:
 	cmpq	$1073741824, %rdx
 	movl	$3, %eax
@@ -79,6 +89,7 @@ func0000000000000106:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000002a:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
@@ -87,6 +98,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000084:
 	movabsq	$-4294967296, %rax
 	cmpq	%rax, %rdx
@@ -96,6 +108,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000c6:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
@@ -104,6 +117,7 @@ func00000000000000c6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000ca:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx

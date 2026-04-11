@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpmaxuq	%ymm3, %ymm2, %ymm2

@@ -42,6 +42,7 @@
 	.short	240
 .LCPI0_5:
 	.byte	117
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_4(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k1
@@ -73,6 +74,7 @@ func0000000000000001:
 	.zero	16,5
 .LCPI1_3:
 	.byte	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vptestnmw	.LCPI1_0(%rip), %ymm0, %k1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm0

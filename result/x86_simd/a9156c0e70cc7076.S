@@ -9,6 +9,7 @@
 	.zero	4,6
 .LCPI0_4:
 	.byte	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbw	%xmm0, %ymm0

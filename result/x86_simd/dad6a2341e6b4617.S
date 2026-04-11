@@ -5,6 +5,7 @@
 	.long	2
 .LCPI0_2:
 	.long	1808407283
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpshufd	$245, %ymm1, %ymm2
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
@@ -34,6 +35,7 @@ func000000000000000a:
 	.long	4900
 .LCPI1_2:
 	.long	1374389535
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpshufd	$245, %ymm1, %ymm2
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3

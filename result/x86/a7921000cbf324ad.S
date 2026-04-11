@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014c:
 	testl	%esi, %esi
 	setg	%cl
@@ -11,6 +12,7 @@ func000000000000014c:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000028c:
 	cmpl	$61, %esi
 	setb	%cl
@@ -23,6 +25,7 @@ func000000000000028c:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	testl	%esi, %esi
 	sete	%cl

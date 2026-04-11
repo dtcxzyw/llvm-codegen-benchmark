@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000481:
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vptestmd	%ymm0, %ymm0, %k2
@@ -11,6 +12,7 @@ func0000000000000481:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001946:
 	vpmovd2m	%ymm1, %k0
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -24,6 +26,7 @@ func0000000000001946:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003101:
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vpcmpnleud	%ymm2, %ymm1, %k1
@@ -41,6 +44,7 @@ func0000000000003101:
 	.long	1
 .LCPI3_2:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000581:
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm0, %k1
@@ -54,6 +58,7 @@ func0000000000000581:
 
 .LCPI4_0:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000194a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm0, %k1
@@ -67,6 +72,7 @@ func000000000000194a:
 
 .LCPI5_0:
 	.long	2
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000028c6:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k0
@@ -78,6 +84,7 @@ func00000000000028c6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000028c1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1

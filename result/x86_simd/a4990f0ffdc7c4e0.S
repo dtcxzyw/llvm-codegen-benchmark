@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	262144
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm1, %k0
 	vptestmq	%ymm0, %ymm0, %k1
@@ -11,6 +12,7 @@ func000000000000002c:
 
 .LCPI1_0:
 	.long	65536
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vptestnmd	.LCPI1_0(%rip){1to4}, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -21,6 +23,7 @@ func0000000000000021:
 
 .LCPI2_0:
 	.long	10
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	vptestmd	.LCPI2_0(%rip){1to4}, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -33,6 +36,7 @@ func0000000000000181:
 	.long	32
 .LCPI3_1:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	vptestmd	.LCPI3_0(%rip){1to4}, %xmm1, %k0
 	vpcmpneqq	.LCPI3_1(%rip){1to4}, %ymm0, %k1
@@ -45,6 +49,7 @@ func000000000000018c:
 	.long	268435455
 .LCPI4_1:
 	.long	13
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000281:
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltd	.LCPI4_1(%rip){1to4}, %xmm1, %k0
@@ -58,6 +63,7 @@ func0000000000000281:
 	.long	2147483647
 .LCPI5_1:
 	.long	8
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000030c:
 	vpandd	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpgtd	.LCPI5_1(%rip){1to4}, %xmm1, %k0
@@ -73,6 +79,7 @@ func000000000000030c:
 	.long	999999999
 .LCPI6_2:
 	.quad	2592000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000030a:
 	vpandd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpgtd	.LCPI6_1(%rip){1to4}, %xmm1, %k0
@@ -88,6 +95,7 @@ func000000000000030a:
 	.long	407710288
 .LCPI7_2:
 	.quad	4
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000184:
 	vpandd	.LCPI7_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqd	.LCPI7_1(%rip){1to4}, %xmm1, %k0
@@ -99,6 +107,7 @@ func0000000000000184:
 
 .LCPI8_0:
 	.long	20
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000026:
 	vptestnmd	.LCPI8_0(%rip){1to4}, %xmm1, %k0
 	vpmovq2m	%ymm0, %k1
@@ -109,6 +118,7 @@ func0000000000000026:
 
 .LCPI9_0:
 	.long	2046
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000028c:
 	vptestnmd	.LCPI9_0(%rip){1to4}, %xmm1, %k0
 	vptestmq	%ymm0, %ymm0, %k1

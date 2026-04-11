@@ -7,6 +7,7 @@
 	.zero	4,7
 .LCPI0_3:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000302:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpbroadcastb	.LCPI0_3(%rip), %xmm2
@@ -24,6 +25,7 @@ func0000000000000302:
 	.zero	16,10
 .LCPI1_3:
 	.zero	4,254
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vptestnmb	.LCPI1_0(%rip), %xmm1, %k0
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0
@@ -36,6 +38,7 @@ func0000000000000042:
 	.zero	16,4
 .LCPI2_1:
 	.zero	16,32
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000058:
 	vptestnmb	.LCPI2_0(%rip), %xmm1, %k0
 	vptestmb	.LCPI2_1(%rip), %xmm0, %k1
@@ -51,6 +54,7 @@ func0000000000000058:
 	.byte	7
 .LCPI3_3:
 	.byte	3
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000318:
 	vpbroadcastb	.LCPI3_2(%rip), %xmm2
 	vpand	%xmm2, %xmm1, %xmm1

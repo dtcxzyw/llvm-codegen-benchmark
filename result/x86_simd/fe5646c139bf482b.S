@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpslld	$16, %ymm2, %ymm2
 	vpternlogd	$150, %ymm0, %ymm1, %ymm2

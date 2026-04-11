@@ -3,6 +3,7 @@
 	.zero	16,240
 .LCPI0_1:
 	.zero	4,240
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %xmm1
@@ -14,6 +15,7 @@ func0000000000000005:
 	.zero	16,252
 .LCPI1_1:
 	.zero	4,252
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000031:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %xmm1
@@ -29,6 +31,7 @@ func0000000000000031:
 	.zero	16,1
 .LCPI2_2:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpcmpeqb	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpternlogd	$168, .LCPI2_2(%rip){1to4}, %xmm1, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000144:
 	incq	%rdx
 	xorl	%eax, %eax
@@ -8,6 +9,7 @@ func0000000000000144:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000064:
 	decq	%rdx
 	movq	%rdx, %rcx
@@ -18,6 +20,7 @@ func0000000000000064:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000044:
 	leaq	-1(%rdx), %rcx
 	xorl	%eax, %eax

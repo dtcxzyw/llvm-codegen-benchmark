@@ -22,6 +22,7 @@
 	.long	4294967232
 .LCPI0_3:
 	.long	4294942786
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000115:
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2
@@ -54,6 +55,7 @@ func0000000000000115:
 	.long	33
 .LCPI1_3:
 	.long	10
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpaddd	%ymm0, %ymm2, %ymm0
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k1

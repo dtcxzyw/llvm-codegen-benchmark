@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	leaq	(%rdi,%rsi), %rdx
 	movabsq	$-7070675565921424023, %rax
@@ -6,6 +7,7 @@ func0000000000000004:
 	xorl	%edx, %edx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	leaq	(%rdi,%rsi), %rdx
 	movabsq	$1844674407370955162, %rax
@@ -13,6 +15,7 @@ func0000000000000006:
 	xorl	%edx, %edx
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	leaq	(%rdi,%rsi), %rdx
 	movabsq	$2361183241434822607, %rax
@@ -21,6 +24,7 @@ func0000000000000026:
 	xorl	%edx, %edx
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003e:
 	leaq	(%rdi,%rsi), %rdx
 	movabsq	$3022314549036573, %rax
@@ -29,6 +33,7 @@ func000000000000003e:
 	xorl	%edx, %edx
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001e:
 	leaq	(%rdi,%rsi), %rdx
 	movl	$121666, %eax

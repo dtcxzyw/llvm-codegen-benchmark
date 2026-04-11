@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	xorb	$1, %sil
 	xorb	$1, %dil
@@ -8,6 +9,7 @@ func0000000000000021:
 	subb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	xorl	%eax, %eax
 	cmpb	$3, %sil

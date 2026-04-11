@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x4014000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	testq	%rdi, %rdi
 	setne	%cl
@@ -9,6 +10,7 @@ func0000000000000014:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	testq	%rdi, %rdi
 	setne	%cl

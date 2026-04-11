@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	xorl	%ecx, %ecx
 	vucomisd	%xmm1, %xmm0
@@ -6,6 +7,7 @@ func000000000000000c:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	xorl	%ecx, %ecx
 	vucomisd	%xmm0, %xmm1
@@ -13,6 +15,7 @@ func000000000000000a:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	xorl	%ecx, %ecx
 	vucomisd	%xmm1, %xmm0
@@ -21,6 +24,7 @@ func0000000000000008:
 	cmovpq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	xorl	%eax, %eax
 	vucomisd	%xmm0, %xmm1
@@ -28,6 +32,7 @@ func0000000000000002:
 	leaq	-1(%rax,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	xorl	%ecx, %ecx
 	vucomisd	%xmm1, %xmm0
@@ -35,6 +40,7 @@ func0000000000000004:
 	cmovbeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
@@ -43,6 +49,7 @@ func0000000000000007:
 	cmovpq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000003:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
@@ -50,6 +57,7 @@ func0000000000000003:
 	addl	%eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000b:
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0

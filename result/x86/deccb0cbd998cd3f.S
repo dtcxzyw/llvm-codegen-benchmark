@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vaddss	%xmm0, %xmm2, %xmm2
 	vcmpltss	%xmm1, %xmm0, %k0
@@ -7,6 +8,7 @@ func0000000000000042:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004a:
 	vaddss	%xmm2, %xmm0, %xmm2
 	vcmpless	%xmm1, %xmm0, %k0

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcmpltpd	%zmm2, %zmm0, %k0
 	vcmpltpd	%zmm3, %zmm1, %k1
@@ -15,6 +16,7 @@ func0000000000000002:
 	.zero	16,2
 .LCPI1_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vcmpnlepd	%zmm0, %zmm2, %k0
 	vcmpnlepd	%zmm1, %zmm3, %k1
@@ -26,6 +28,7 @@ func0000000000000003:
 
 .LCPI2_0:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vcmpneqpd	%zmm2, %zmm0, %k0
 	vcmpneqpd	%zmm3, %zmm1, %k1
@@ -40,6 +43,7 @@ func0000000000000008:
 	.zero	16,1
 .LCPI3_2:
 	.byte	2
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vcmplepd	%zmm0, %zmm2, %k0
 	vcmplepd	%zmm1, %zmm3, %k1
@@ -51,6 +55,7 @@ func000000000000000c:
 
 .LCPI4_0:
 	.zero	16,8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vcmpltpd	%zmm0, %zmm2, %k0
 	vcmpltpd	%zmm1, %zmm3, %k1
@@ -65,6 +70,7 @@ func0000000000000004:
 	.zero	16,2
 .LCPI5_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vcmpnlepd	%zmm2, %zmm0, %k0
 	vcmpnlepd	%zmm3, %zmm1, %k1

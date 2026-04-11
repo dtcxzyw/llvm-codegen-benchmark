@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	xorl	%eax, %eax
 	cmpl	$127, %edx
@@ -8,6 +9,7 @@ func0000000000000010:
 	leaq	21(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a0:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -17,6 +19,7 @@ func00000000000000a0:
 	leaq	-4063(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
 	negq	%rsi
 	cmpl	$1, %edx
@@ -25,6 +28,7 @@ func000000000000001f:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000060:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
@@ -33,6 +37,7 @@ func0000000000000060:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001c:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -41,6 +46,7 @@ func000000000000001c:
 	leaq	2(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000af:
 	xorl	%eax, %eax
 	cmpl	$10000, %edx
@@ -49,6 +55,7 @@ func00000000000000af:
 	leaq	4(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000008f:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
@@ -57,6 +64,7 @@ func000000000000008f:
 	leaq	4(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000008d:
 	leaq	20(%rsi), %rax
 	leaq	13(%rsi), %rcx
@@ -65,6 +73,7 @@ func000000000000008d:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000040:
 	xorl	%eax, %eax
 	cmpl	$3, %edx
@@ -74,6 +83,7 @@ func0000000000000040:
 	leaq	9(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000006f:
 	xorl	%eax, %eax
 	cmpl	$34, %edx
@@ -82,6 +92,7 @@ func000000000000006f:
 	leaq	1(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000080:
 	leaq	128(%rsi), %rax
 	leaq	149312(%rsi), %rcx
@@ -90,6 +101,7 @@ func0000000000000080:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000018:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -99,12 +111,14 @@ func0000000000000018:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000087:
 	cmpl	$100000000, %edx
 	sbbq	$-1, %rsi
 	leaq	1(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000015:
 	leaq	2079(%rsi), %rax
 	testl	%edx, %edx

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0xc2fe0000
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vmovss	.LCPI0_0(%rip), %xmm1
@@ -9,6 +10,7 @@ func000000000000000d:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -17,6 +19,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -25,6 +28,7 @@ func000000000000000c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -35,6 +39,7 @@ func0000000000000008:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -47,6 +52,7 @@ func0000000000000007:
 
 .LCPI5_0:
 	.long	0x42c80000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000b:
 	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI5_0(%rip), %xmm0

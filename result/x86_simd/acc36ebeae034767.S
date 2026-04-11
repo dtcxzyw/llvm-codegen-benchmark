@@ -3,6 +3,7 @@
 	.long	804389138
 .LCPI0_1:
 	.long	4294967287
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	vpslld	$8, %ymm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2
@@ -16,6 +17,7 @@ func00000000000001e1:
 	.long	32768
 .LCPI1_2:
 	.long	1131
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e4:
 	vpslld	$8, %ymm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2

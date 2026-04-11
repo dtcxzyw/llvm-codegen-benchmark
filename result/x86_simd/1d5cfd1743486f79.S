@@ -25,6 +25,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI0_1(%rip){1to2}, %xmm0, %xmm2
@@ -37,6 +38,7 @@ func0000000000000000:
 	.long	65530
 .LCPI1_1:
 	.long	65504
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpmovzxbd	%xmm1, %ymm1
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0

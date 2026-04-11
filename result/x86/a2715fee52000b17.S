@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
 	decl	%edx
 	testb	$1, %dil
@@ -7,6 +8,7 @@ func0000000000000086:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	decl	%edx
 	testb	$1, %dil
@@ -15,6 +17,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	leal	-2(%rdx), %eax
 	testb	$1, %dil

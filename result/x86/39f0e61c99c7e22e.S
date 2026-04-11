@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	incq	%rdx
 	xorl	%eax, %eax
@@ -6,6 +7,7 @@ func0000000000000061:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	decq	%rdx
 	xorl	%eax, %eax
@@ -13,6 +15,7 @@ func0000000000000004:
 	cmovaeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000078:
 	addq	$2, %rdx
 	cmpq	%rsi, %rdx
@@ -20,6 +23,7 @@ func0000000000000078:
 	cmovbeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000041:
 	incq	%rdx
 	cmpq	%rsi, %rdx
@@ -27,6 +31,7 @@ func0000000000000041:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	addq	$4096, %rdx
 	cmpq	%rsi, %rdx
@@ -34,6 +39,7 @@ func0000000000000005:
 	cmovaq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	movabsq	$1442695040888963407, %rax
 	addq	%rdx, %rax
@@ -42,6 +48,7 @@ func0000000000000001:
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000044:
 	addq	$4096, %rdx
 	cmpq	%rsi, %rdx

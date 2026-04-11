@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
 	vpsraq	$2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
@@ -8,6 +9,7 @@ func0000000000000086:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	vpsraq	$32, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0

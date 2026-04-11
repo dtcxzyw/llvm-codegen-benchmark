@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	leal	7(%rdx), %eax
 	testl	%edx, %edx
@@ -9,6 +10,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	leal	7(%rdx), %eax
 	testl	%edx, %edx
@@ -19,6 +21,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -29,6 +32,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000027:
 	movslq	%edx, %rax
 	imulq	$1431655766, %rax, %rax
@@ -41,6 +45,7 @@ func0000000000000027:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	movslq	%edx, %rax
 	imulq	$-1717986919, %rax, %rax
@@ -53,6 +58,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	leal	3(%rdx), %eax
 	testl	%edx, %edx
@@ -63,6 +69,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -73,6 +80,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002b:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -83,6 +91,7 @@ func000000000000002b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -93,6 +102,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000c:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -103,6 +113,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
 	movslq	%edx, %rax
 	imulq	$1717986919, %rax, %rax
@@ -115,6 +126,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000009:
 	leal	15(%rdx), %eax
 	testl	%edx, %edx
@@ -125,6 +137,7 @@ func0000000000000009:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000001:
 	leal	7(%rdx), %eax
 	testl	%edx, %edx
@@ -135,6 +148,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000007:
 	movl	%edx, %eax
 	shrl	$31, %eax

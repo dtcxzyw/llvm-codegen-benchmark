@@ -16,6 +16,7 @@
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestnmw	.LCPI0_0(%rip), %ymm1, %k1
 	vpmovwb	%ymm1, %xmm1

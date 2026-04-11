@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000007f:
 	imulq	$4320, %rdx, %rax
 	addq	%rdi, %rax
@@ -6,6 +7,7 @@ func000000000000007f:
 	leaq	(%rax,%rcx,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000070:
 	imulq	$272, %rdx, %rax
 	addq	%rdi, %rax
@@ -13,6 +15,7 @@ func0000000000000070:
 	leaq	(%rax,%rcx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000063:
 	leaq	(%rdx,%rdx,4), %rax
 	leaq	(%rdi,%rax,8), %rax

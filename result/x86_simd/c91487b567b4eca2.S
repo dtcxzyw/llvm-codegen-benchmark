@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4294966896
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -15,6 +16,7 @@ func0000000000000061:
 	.quad	16
 .LCPI1_1:
 	.long	16
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000006a:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpgtq	%ymm1, %ymm2, %k1
@@ -24,6 +26,7 @@ func000000000000006a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
@@ -36,6 +39,7 @@ func0000000000000028:
 	.quad	128
 .LCPI3_1:
 	.long	128
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpgtq	%ymm1, %ymm2, %k1
@@ -49,6 +53,7 @@ func000000000000002a:
 	.quad	1024
 .LCPI4_1:
 	.long	1024
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000078:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpnleuq	%ymm1, %ymm2, %k1
@@ -58,6 +63,7 @@ func0000000000000078:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000074:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -66,6 +72,7 @@ func0000000000000074:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000066:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -74,6 +81,7 @@ func0000000000000066:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000064:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -82,6 +90,7 @@ func0000000000000064:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000006c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -90,6 +99,7 @@ func000000000000006c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000021:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddq	%ymm3, %ymm2, %ymm2
@@ -102,6 +112,7 @@ func0000000000000021:
 	.quad	8192
 .LCPI10_1:
 	.long	8192
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000008:
 	vpaddq	.LCPI10_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpnleuq	%ymm1, %ymm2, %k1

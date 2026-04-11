@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	andl	$1, %edx
 	leaq	(%rdx,%rdx,4), %rax
@@ -7,6 +8,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	andl	$1, %edx
 	notq	%rdx
@@ -15,6 +17,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	andl	$1, %edx
 	shll	$6, %edx
@@ -23,6 +26,7 @@ func0000000000000005:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	andl	$1, %edx
 	leal	(%rdx,%rdx,2), %eax
@@ -32,6 +36,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000061:
 	leaq	64(%rsi), %rax
 	addq	$40, %rsi
@@ -41,6 +46,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000068:
 	andl	$1, %edx
 	leaq	4(%rsi,%rdx,8), %rax
@@ -48,6 +54,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	andl	$1, %edx
 	leaq	4(%rsi,%rdx,4), %rax
@@ -55,6 +62,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000018:
 	leaq	11(%rsi), %rax
 	testb	$1, %dl
@@ -63,6 +71,7 @@ func0000000000000018:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000024:
 	orq	$-2, %rdx
 	addq	%rsi, %rdx
@@ -70,6 +79,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000009:
 	andl	$1, %edx
 	leaq	4(%rsi,%rdx,8), %rax
@@ -77,6 +87,7 @@ func0000000000000009:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
 	leaq	84(%rsi), %rax
 	addq	$44, %rsi
@@ -86,6 +97,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000069:
 	andl	$1, %edx
 	leaq	20(%rsi,%rdx,4), %rax
@@ -93,6 +105,7 @@ func0000000000000069:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000021:
 	andl	$1, %edx
 	decq	%rdx
@@ -102,6 +115,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000074:
 	andl	$1, %edx
 	leaq	3(%rdx,%rsi), %rax
@@ -109,6 +123,7 @@ func0000000000000074:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000064:
 	andl	$1, %edx
 	leaq	(%rsi,%rdx,8), %rax

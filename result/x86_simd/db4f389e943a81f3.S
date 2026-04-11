@@ -38,6 +38,7 @@
 .LCPI0_3:
 	.short	65279
 	.short	65279
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpbroadcastw	.LCPI0_2(%rip), %ymm1
 	vpternlogd	$108, .LCPI0_3(%rip){1to8}, %ymm1, %ymm0

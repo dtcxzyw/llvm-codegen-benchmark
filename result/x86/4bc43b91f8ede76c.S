@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	imulq	$3600, %rsi, %rcx
 	imulq	$60, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movabsq	$-5435081209227447693, %rcx
 	imulq	%rsi, %rcx
@@ -13,6 +15,7 @@ func0000000000000000:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	movabsq	$-4417276706812531889, %rcx
 	imulq	%rsi, %rcx
@@ -21,42 +24,49 @@ func0000000000000008:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003f:
 	imulq	$1000, %rsi, %rax
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000034:
 	imulq	$470296, %rsi, %rcx
 	imulq	$654183, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	imulq	$666643, %rsi, %rcx
 	imulq	$470296, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000030:
 	imulq	$654183, %rsi, %rcx
 	imulq	$-997805, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	imulq	$-997805, %rsi, %rcx
 	imulq	$136657, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000010:
 	imulq	$136657, %rsi, %rcx
 	imulq	$-683901, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000f:
 	leaq	(%rsi,%rsi,2), %rax
 	addq	%rax, %rax
@@ -64,12 +74,14 @@ func000000000000000f:
 	leaq	(%rax,%rcx,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000017:
 	imulq	$3600, %rsi, %rcx
 	imulq	$60, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000001d:
 	imulq	$1000000, %rsi, %rcx
 	movabsq	$86400000000, %rax
@@ -77,6 +89,7 @@ func000000000000001d:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000038:
 	imulq	$1734723475, %rsi, %rcx
 	movl	$4195354525, %eax
@@ -84,12 +97,14 @@ func0000000000000038:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000000c:
 	imulq	$65713, %rsi, %rcx
 	imulq	$1686049, %rdi, %rax
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000035:
 	imulq	$2446, %rsi, %rcx
 	imulq	$-7373, %rdi, %rax

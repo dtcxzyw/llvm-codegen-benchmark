@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000027:
 	vminpd	%zmm4, %zmm2, %zmm2
 	vminpd	%zmm5, %zmm3, %zmm3
@@ -14,6 +15,7 @@ func0000000000000027:
 
 .LCPI1_0:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vminpd	%zmm4, %zmm2, %zmm2
 	vminpd	%zmm5, %zmm3, %zmm3
@@ -27,6 +29,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000043:
 	vminpd	%zmm4, %zmm2, %zmm2
 	vminpd	%zmm5, %zmm3, %zmm3
@@ -42,6 +45,7 @@ func0000000000000043:
 
 .LCPI3_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	vminpd	%zmm4, %zmm2, %zmm2
 	vminpd	%zmm5, %zmm3, %zmm3

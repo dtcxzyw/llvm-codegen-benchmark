@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	testb	$1, %dl
 	cmovel	%esi, %edi
@@ -8,6 +9,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	testb	$1, %dl
 	cmovel	%esi, %edi
@@ -17,6 +19,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	cmpl	$1, %esi
 	cmovnel	%esi, %edi
@@ -26,6 +29,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	movl	%edi, %eax
 	cmpl	$-1, %esi
@@ -35,6 +39,7 @@ func0000000000000026:
 	shrl	$31, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
 	cmpl	$-2, %esi
 	cmovnel	%esi, %edi
@@ -44,6 +49,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000038:
 	cmpl	$1, %esi
 	cmovnel	%esi, %edi
@@ -53,6 +59,7 @@ func0000000000000038:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000014a:
 	cmpl	$4, %esi
 	cmovll	%esi, %edi
@@ -62,6 +69,7 @@ func000000000000014a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000146:
 	movl	%edi, %eax
 	testl	%esi, %esi

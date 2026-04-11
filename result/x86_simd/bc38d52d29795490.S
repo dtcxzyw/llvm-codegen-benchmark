@@ -3,6 +3,7 @@
 	.quad	3
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000102:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -13,6 +14,7 @@ func0000000000000102:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000318:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
@@ -25,6 +27,7 @@ func0000000000000318:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
@@ -37,6 +40,7 @@ func0000000000000042:
 
 .LCPI3_0:
 	.long	24576
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000302:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1

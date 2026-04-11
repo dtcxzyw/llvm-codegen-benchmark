@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	testb	$1, %dil
 	cmovel	%edx, %esi
@@ -8,6 +9,7 @@ func000000000000000a:
 	addq	$3, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	testb	$1, %dil
 	cmovel	%edx, %esi
@@ -16,6 +18,7 @@ func0000000000000018:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	testb	$1, %dil
 	cmovel	%edx, %esi
@@ -24,6 +27,7 @@ func0000000000000008:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	testb	$1, %dil
 	cmovel	%edx, %esi

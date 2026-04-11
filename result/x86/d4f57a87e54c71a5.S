@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	incl	%edi
 	movslq	%edi, %rax
@@ -11,6 +12,7 @@ func0000000000000028:
 	leaq	-8(,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	addl	$69, %edi
 	movslq	%edi, %rax

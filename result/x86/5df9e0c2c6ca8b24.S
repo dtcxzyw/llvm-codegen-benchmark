@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	leal	255(%rdi), %eax
 	addl	$510, %edi
@@ -10,6 +11,7 @@ func0000000000000009:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	addl	$-10, %edi
 	movslq	%edi, %rax

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	leal	1(%rdi), %eax
 	movl	%eax, %ecx
@@ -9,6 +10,7 @@ func0000000000000005:
 	subb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	addb	$42, %dil
 	movsbl	%dil, %eax

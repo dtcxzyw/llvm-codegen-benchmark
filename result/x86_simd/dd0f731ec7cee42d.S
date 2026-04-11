@@ -3,6 +3,7 @@
 	.quad	0xbfe0000000000000
 .LCPI0_1:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpltps	%zmm1, %zmm0, %k1
@@ -17,6 +18,7 @@ func0000000000000002:
 	.long	0x42a00000
 .LCPI1_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcmpngtps	.LCPI1_0(%rip){1to16}, %zmm0, %k1
 	vbroadcastsd	.LCPI1_1(%rip), %zmm1

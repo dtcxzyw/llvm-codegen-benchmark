@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vptestnmw	%xmm2, %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
@@ -13,6 +14,7 @@ func0000000000000004:
 	.short	49152
 	.short	49152
 	.short	49152
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	vpcmpltw	.LCPI1_0(%rip), %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
@@ -27,6 +29,7 @@ func0000000000000019:
 	.short	21
 	.short	21
 	.short	21
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpcmpeqw	.LCPI2_0(%rip), %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
@@ -41,6 +44,7 @@ func0000000000000005:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	vpcmpgtw	.LCPI3_0(%rip), %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
@@ -55,11 +59,13 @@ func0000000000000028:
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000020:
 	vpcmpnleuw	.LCPI4_0(%rip), %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000029:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtw	%xmm3, %xmm2, %k1
@@ -77,6 +83,7 @@ func0000000000000029:
 	.short	6
 .LCPI6_1:
 	.long	65530
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000051:
 	vpcmpltuw	.LCPI6_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI6_1(%rip), %ymm2
@@ -93,6 +100,7 @@ func0000000000000051:
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000011:
 	vpcmpltuw	.LCPI7_0(%rip), %xmm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -109,6 +117,7 @@ func0000000000000011:
 	.short	64
 	.short	64
 	.short	64
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000061:
 	vpcmpnleuw	.LCPI8_0(%rip), %xmm2, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}

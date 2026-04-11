@@ -17,6 +17,7 @@
 	.short	3048
 	.short	3048
 	.short	3048
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000c410:
 	vptestmd	%ymm2, %ymm2, %k0
 	vpcmpnleuw	.LCPI0_0(%rip), %xmm1, %k1
@@ -38,6 +39,7 @@ func000000000000c410:
 	.short	2112
 	.short	2112
 	.short	2112
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000c610:
 	vptestmw	%xmm2, %xmm2, %k0
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1

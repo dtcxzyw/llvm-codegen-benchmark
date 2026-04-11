@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	andl	$8, %edx
 	cmovnel	%esi, %edx
 	leal	(%rdx,%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	testb	$1, %dl
 	movl	$524288, %eax

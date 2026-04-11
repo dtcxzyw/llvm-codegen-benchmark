@@ -3,6 +3,7 @@
 	.quad	48
 .LCPI0_1:
 	.quad	-48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
@@ -14,6 +15,7 @@ func0000000000000002:
 	.quad	24
 .LCPI1_1:
 	.quad	-24
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	vpsraq	$5, %ymm1, %ymm1
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1

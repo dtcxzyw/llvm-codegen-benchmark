@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000581:
 	xorb	$127, %dl
 	cmpq	$-1, %rsi
@@ -9,6 +10,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000504:
 	testb	%dl, %dl
 	sete	%al
@@ -20,6 +22,7 @@ func0000000000000504:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000421:
 	cmpb	$1, %dl
 	sete	%al

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	cmpq	$-1, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	movsbq	%sil, %rax
 	cmpq	%rsi, %rax
@@ -12,12 +14,14 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	cmpq	$3, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	movabsq	$-4294967297, %rax
 	addq	%rax, %rsi
@@ -27,12 +31,14 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	cmpq	$3, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000050:
 	addq	$-7, %rsi
 	cmpq	$-5, %rsi
@@ -40,6 +46,7 @@ func0000000000000050:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000070:
 	movabsq	$-2305843009213693953, %rax
 	addq	%rax, %rsi
@@ -49,18 +56,21 @@ func0000000000000070:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000c2:
 	cmpq	$3, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000c:
 	decq	%rsi
 	sets	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000014:
 	addq	$-2, %rsi
 	cmpq	$2147483647, %rsi
@@ -68,6 +78,7 @@ func0000000000000014:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000048:
 	addq	$27, %rsi
 	cmpq	$83, %rsi
@@ -75,18 +86,21 @@ func0000000000000048:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000058:
 	cmpq	$2, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000082:
 	cmpq	$-2, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000008c:
 	addq	$512, %rsi
 	sets	%al

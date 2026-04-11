@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	63
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -11,6 +12,7 @@ func000000000000000f:
 
 .LCPI1_0:
 	.long	63
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -21,6 +23,7 @@ func000000000000000c:
 
 .LCPI2_0:
 	.long	65528
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
@@ -31,6 +34,7 @@ func0000000000000000:
 
 .LCPI3_0:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -61,6 +65,7 @@ func0000000000000008:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -91,6 +96,7 @@ func0000000000000007:
 	.byte	255
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -103,6 +109,7 @@ func0000000000000005:
 	.long	27
 .LCPI6_1:
 	.long	31
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
@@ -112,6 +119,7 @@ func0000000000000006:
 
 .LCPI7_0:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vpmovqd	%ymm0, %xmm0
 	vpandnd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
@@ -120,6 +128,7 @@ func0000000000000004:
 
 .LCPI8_0:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000e:
 	vpmovqd	%ymm0, %xmm0
 	vpandnd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
@@ -128,6 +137,7 @@ func000000000000000e:
 
 .LCPI9_0:
 	.long	7
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000d:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -138,6 +148,7 @@ func000000000000000d:
 
 .LCPI10_0:
 	.long	31
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000002:
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

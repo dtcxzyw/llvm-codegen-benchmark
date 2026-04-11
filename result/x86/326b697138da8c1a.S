@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	shrq	$11, %rsi
 	leaq	(%rsi,%rdi), %rcx

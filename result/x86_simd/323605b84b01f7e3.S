@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000089:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpnltuq	%ymm1, %ymm0, %k1
@@ -7,6 +8,7 @@ func0000000000000089:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000124:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm0, %k1
@@ -15,6 +17,7 @@ func0000000000000124:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a5:
 	vpaddq	%ymm0, %ymm2, %ymm2
 	vpcmpleuq	%ymm1, %ymm0, %k1
@@ -23,6 +26,7 @@ func00000000000000a5:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000566:
 	vpaddq	%ymm2, %ymm1, %ymm2
 	vpcmpgtq	%ymm0, %ymm1, %k1
@@ -31,6 +35,7 @@ func0000000000000566:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000105:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpleuq	%ymm2, %ymm0, %k1
@@ -39,6 +44,7 @@ func0000000000000105:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a8:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpnleuq	%ymm1, %ymm0, %k1
@@ -47,6 +53,7 @@ func00000000000000a8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000004cb:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpnltq	%ymm1, %ymm0, %k1
@@ -55,6 +62,7 @@ func00000000000004cb:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000004ca:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpgtq	%ymm1, %ymm0, %k1
@@ -63,6 +71,7 @@ func00000000000004ca:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c6:
 	vpaddq	%ymm0, %ymm2, %ymm2
 	vpcmpgtq	%ymm0, %ymm1, %k1
@@ -71,6 +80,7 @@ func00000000000000c6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000008b:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpnltq	%ymm1, %ymm0, %k1
@@ -79,6 +89,7 @@ func000000000000008b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000088:
 	vpaddq	%ymm2, %ymm1, %ymm2
 	vpcmpnleuq	%ymm1, %ymm0, %k1
@@ -87,6 +98,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000108:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpmaxuq	%ymm1, %ymm2, %ymm1
@@ -95,6 +107,7 @@ func0000000000000108:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000085:
 	vpaddq	%ymm0, %ymm2, %ymm2
 	vpcmpleuq	%ymm1, %ymm0, %k1
@@ -103,6 +116,7 @@ func0000000000000085:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000018c:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpcmpneqq	%ymm1, %ymm0, %k1

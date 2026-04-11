@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -11,6 +12,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -19,6 +21,7 @@ func0000000000000003:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -30,6 +33,7 @@ func000000000000000e:
 
 .LCPI3_0:
 	.quad	328
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -40,6 +44,7 @@ func000000000000000c:
 
 .LCPI4_0:
 	.quad	10
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -50,6 +55,7 @@ func000000000000000a:
 
 .LCPI5_0:
 	.quad	86400
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -60,6 +66,7 @@ func0000000000000005:
 
 .LCPI6_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
@@ -70,6 +77,7 @@ func0000000000000004:
 
 .LCPI7_0:
 	.quad	1441151881
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000f:
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1

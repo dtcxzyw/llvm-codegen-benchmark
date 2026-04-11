@@ -19,6 +19,7 @@
 	.short	6
 .LCPI0_2:
 	.short	6
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001f4:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -53,6 +54,7 @@ func00000000000001f4:
 	.short	269
 	.short	269
 	.short	269
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001c1:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -80,6 +82,7 @@ func00000000000001c1:
 	.short	259
 	.short	259
 	.short	259
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

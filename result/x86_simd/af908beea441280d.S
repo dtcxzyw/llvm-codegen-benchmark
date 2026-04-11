@@ -3,6 +3,7 @@
 	.long	4294967288
 .LCPI0_1:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
@@ -16,6 +17,7 @@ func0000000000000008:
 	.long	536870910
 .LCPI1_1:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000068:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm2, %ymm2

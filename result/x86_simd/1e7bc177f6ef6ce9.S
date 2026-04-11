@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	vpmovzxbd	%xmm2, %ymm2
 	vpmulld	%ymm2, %ymm1, %ymm1
@@ -77,6 +78,7 @@ func000000000000001e:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001a:
 	vpmovzxbd	%xmm2, %ymm2
 	vpmulld	%ymm2, %ymm1, %ymm1

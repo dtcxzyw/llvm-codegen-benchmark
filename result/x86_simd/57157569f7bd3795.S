@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpsllw	$8, %ymm1, %ymm2
 	vpsubw	%ymm1, %ymm2, %ymm1
@@ -106,6 +107,7 @@ func0000000000000004:
 	.short	36
 	.short	36
 	.short	36
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmullw	.LCPI1_0(%rip), %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2

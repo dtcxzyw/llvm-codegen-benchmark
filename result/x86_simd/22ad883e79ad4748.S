@@ -5,6 +5,7 @@
 	.zero	16,48
 .LCPI0_2:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpcmpltub	.LCPI0_0(%rip), %xmm0, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}

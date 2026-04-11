@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0xbff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vfmadd213sd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -8,6 +9,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vfmadd213sd	%xmm1, %xmm0, %xmm0
@@ -15,6 +17,7 @@ func0000000000000008:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vfmadd213sd	%xmm1, %xmm0, %xmm0

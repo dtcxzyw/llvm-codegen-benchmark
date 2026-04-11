@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	movzwl	%si, %ecx
 	testb	$1, %dil
@@ -8,6 +9,7 @@ func0000000000000007:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	movzwl	%si, %ecx
 	movl	$4294967292, %edx

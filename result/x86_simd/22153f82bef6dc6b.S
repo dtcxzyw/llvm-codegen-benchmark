@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000166:
 	vbroadcastss	.LCPI0_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -19,6 +20,7 @@ func0000000000000166:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x48976760
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vbroadcastss	.LCPI1_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -35,6 +37,7 @@ func0000000000000044:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000055:
 	vbroadcastss	.LCPI2_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -51,6 +54,7 @@ func0000000000000055:
 	.long	0x7fffffff
 .LCPI3_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001dd:
 	vbroadcastss	.LCPI3_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -67,6 +71,7 @@ func00000000000001dd:
 	.long	0x7fffffff
 .LCPI4_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000122:
 	vbroadcastss	.LCPI4_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -83,6 +88,7 @@ func0000000000000122:
 	.long	0x7fffffff
 .LCPI5_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000155:
 	vbroadcastss	.LCPI5_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -97,6 +103,7 @@ func0000000000000155:
 
 .LCPI6_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000099:
 	vpaddd	%zmm1, %zmm1, %zmm1
 	vpaddd	%zmm0, %zmm0, %zmm0
@@ -110,6 +117,7 @@ func0000000000000099:
 	.long	0x7fffffff
 .LCPI7_1:
 	.long	0x2edbe6ff
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000dd:
 	vbroadcastss	.LCPI7_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1
@@ -126,6 +134,7 @@ func00000000000000dd:
 	.long	2147483647
 .LCPI8_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000088:
 	vpbroadcastd	.LCPI8_0(%rip), %zmm2
 	vpandd	%zmm2, %zmm1, %zmm1
@@ -142,6 +151,7 @@ func0000000000000088:
 	.long	0x7fffffff
 .LCPI9_1:
 	.long	0x00800000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000144:
 	vbroadcastss	.LCPI9_0(%rip), %zmm2
 	vandps	%zmm2, %zmm1, %zmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vmovdqa	%xmm0, %xmm3
 	vpternlogq	$15, %xmm0, %xmm0, %xmm3
@@ -7,6 +8,7 @@ func0000000000000021:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vmovdqa	%xmm0, %xmm3
 	vpternlogq	$15, %xmm0, %xmm0, %xmm3

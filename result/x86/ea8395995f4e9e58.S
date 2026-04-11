@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000121:
 	addl	$78, %edi
 	cmpl	$8, %edi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000124:
 	leal	-21(%rdi), %eax
 	addl	$-18, %edi
@@ -16,6 +18,7 @@ func0000000000000124:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	addl	$58, %edi
 	cmpl	$30, %edi

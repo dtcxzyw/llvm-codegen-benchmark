@@ -43,6 +43,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpandq	.LCPI0_2(%rip){1to4}, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -53,6 +54,7 @@ func000000000000000c:
 	.quad	2251799813685247
 .LCPI1_1:
 	.quad	4503599627370494
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0

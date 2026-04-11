@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	shrq	%rdx
 	movabsq	$-6914713590511394805, %rax
@@ -9,6 +10,7 @@ func0000000000000000:
 	cmovbq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movabsq	$-3689348814741910323, %rax
 	mulxq	%rax, %rax, %rax

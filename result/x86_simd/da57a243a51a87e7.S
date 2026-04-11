@@ -3,6 +3,7 @@
 	.quad	2097151
 .LCPI0_1:
 	.quad	666643
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpmovzxdq	%xmm0, %ymm0

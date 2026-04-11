@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	shrl	$2, %edi
 	imulq	$327796565, %rdi, %rax
@@ -6,6 +7,7 @@ func0000000000000003:
 	imull	$12211, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movl	%edi, %eax
 	movl	$2147516417, %ecx
@@ -16,6 +18,7 @@ func0000000000000002:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	movl	%edi, %eax
 	movl	$3435973837, %ecx
@@ -28,6 +31,7 @@ func0000000000000000:
 	subl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	movl	%edi, %eax
 	movl	$2863311531, %ecx

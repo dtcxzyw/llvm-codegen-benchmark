@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	imull	$1619, %edx, %ecx
 	addl	%edi, %ecx
@@ -7,6 +8,7 @@ func0000000000000044:
 	andl	$2147483647, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	imull	$1013, %edx, %ecx
 	addl	%edi, %ecx
@@ -15,6 +17,7 @@ func0000000000000000:
 	andl	$2147483647, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	imull	$1013, %edx, %ecx
 	addl	%esi, %ecx
@@ -23,6 +26,7 @@ func0000000000000004:
 	andl	$2147483647, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ff:
 	leal	(%rdi,%rdx,8), %ecx
 	subl	%edx, %ecx
@@ -32,6 +36,7 @@ func00000000000000ff:
 	andl	$63, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000f7:
 	imull	$44, %edx, %eax
 	addl	%edi, %eax
@@ -40,6 +45,7 @@ func00000000000000f7:
 	andl	$63, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000f5:
 	imull	$44, %edx, %eax
 	addl	%edi, %eax

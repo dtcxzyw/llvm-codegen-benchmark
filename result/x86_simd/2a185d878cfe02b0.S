@@ -16,6 +16,7 @@
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -59,6 +60,7 @@ func0000000000000021:
 	.short	65490
 	.short	65490
 	.short	65490
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -103,6 +105,7 @@ func0000000000000004:
 	.short	65490
 	.short	65490
 	.short	65490
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -147,6 +150,7 @@ func0000000000000024:
 	.short	71
 	.short	71
 	.short	71
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

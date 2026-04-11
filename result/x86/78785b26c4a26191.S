@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x75154fdd7f73bf3c
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testl	$256, %edi
 	je	.LBB0_2

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	testq	%rdx, %rdx
 	setne	%al
@@ -7,6 +8,7 @@ func0000000000000007:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000033:
 	testq	%rdx, %rdx
 	setne	%al

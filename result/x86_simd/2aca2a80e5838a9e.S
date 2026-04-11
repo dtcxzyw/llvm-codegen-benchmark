@@ -63,6 +63,7 @@
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpsrld	$9, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm2
@@ -150,6 +151,7 @@ func000000000000000f:
 	.byte	32
 	.byte	16
 	.byte	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsrld	$9, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm2

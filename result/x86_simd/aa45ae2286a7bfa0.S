@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	-33554688
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpmovzxdq	%xmm2, %ymm2
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
@@ -26,6 +27,7 @@ func000000000000000f:
 	.byte	13
 	.byte	3
 	.byte	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpmovsxbd	.LCPI1_1(%rip), %ymm3
 	vpermi2d	%ymm1, %ymm2, %ymm3

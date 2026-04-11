@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000080:
 	cmpq	$3, %rsi
 	cmovbq	%rsi, %rdi
@@ -6,6 +7,7 @@ func0000000000000080:
 	leaq	-16(%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000185:
 	cmpq	$131042, %rsi
 	cmovbq	%rsi, %rdi
@@ -14,12 +16,14 @@ func0000000000000185:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	testq	%rsi, %rsi
 	cmovneq	%rsi, %rdi
 	leaq	-1(%rdi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	cmpq	$-1, %rsi
 	cmovneq	%rsi, %rdi

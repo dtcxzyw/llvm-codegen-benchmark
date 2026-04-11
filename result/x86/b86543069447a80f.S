@@ -5,6 +5,7 @@
 	.quad	0x41cdcd6500000000
 .LCPI0_2:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vdivsd	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -16,6 +17,7 @@ func0000000000000004:
 	.quad	0x4066800000000000
 .LCPI1_1:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vmulsd	.LCPI1_0(%rip), %xmm0, %xmm0
 	vdivsd	.LCPI1_1(%rip), %xmm0, %xmm0
@@ -30,6 +32,7 @@ func0000000000000002:
 	.quad	0x401921fb54442d18
 .LCPI2_2:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vmulsd	.LCPI2_0(%rip), %xmm0, %xmm0
 	vdivsd	.LCPI2_1(%rip), %xmm0, %xmm0
@@ -42,6 +45,7 @@ func0000000000000005:
 	.quad	0x400921fb54442d18
 .LCPI3_1:
 	.quad	0x4066800000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vmulsd	.LCPI3_0(%rip), %xmm0, %xmm0
 	vdivsd	.LCPI3_1(%rip), %xmm0, %xmm0
@@ -56,6 +60,7 @@ func0000000000000007:
 	.quad	0x400921fb53c8d4f1
 .LCPI4_2:
 	.quad	0xc063b00000000000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vmulsd	.LCPI4_0(%rip), %xmm0, %xmm0
 	vdivsd	.LCPI4_1(%rip), %xmm0, %xmm0
@@ -69,6 +74,7 @@ func000000000000000c:
 	.quad	0x400921fb53c8d4f1
 .LCPI5_2:
 	.quad	0xc05c200000000000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vmulsd	.LCPI5_0(%rip), %xmm0, %xmm0
 	vdivsd	.LCPI5_1(%rip), %xmm0, %xmm0
@@ -81,6 +87,7 @@ func000000000000000a:
 	.quad	0x4052000000000000
 .LCPI6_1:
 	.quad	0x4018000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000003:
 	vmulsd	.LCPI6_0(%rip), %xmm0, %xmm0
 	vdivsd	.LCPI6_1(%rip), %xmm0, %xmm0

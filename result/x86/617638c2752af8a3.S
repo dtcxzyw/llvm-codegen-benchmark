@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
@@ -6,6 +7,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
@@ -13,6 +15,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
@@ -20,6 +23,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	vcvttsd2si	%xmm0, %eax
 	decl	%edi
@@ -27,6 +31,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000027:
 	vcvttsd2si	%xmm0, %eax
 	decl	%edi
@@ -34,6 +39,7 @@ func0000000000000027:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
@@ -41,6 +47,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000006a:
 	vcvttsd2si	%xmm0, %eax
 	addl	$10, %edi
@@ -48,6 +55,7 @@ func000000000000006a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000067:
 	vcvttsd2si	%xmm0, %eax
 	addl	$2, %edi
@@ -55,6 +63,7 @@ func0000000000000067:
 	setle	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002b:
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
@@ -62,6 +71,7 @@ func000000000000002b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002a:
 	vcvttsd2si	%xmm0, %eax
 	addl	$-2, %edi
@@ -69,6 +79,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000026:
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi
@@ -76,6 +87,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000028:
 	vcvttsd2si	%xmm0, %eax
 	decl	%edi
@@ -83,6 +95,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000066:
 	vcvttsd2si	%xmm0, %eax
 	incl	%edi

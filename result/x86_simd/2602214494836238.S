@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -8,6 +9,7 @@ func0000000000000061:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
@@ -19,6 +21,7 @@ func0000000000000021:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
 	vpxord	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm2, %xmm1
@@ -28,6 +31,7 @@ func0000000000000041:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1

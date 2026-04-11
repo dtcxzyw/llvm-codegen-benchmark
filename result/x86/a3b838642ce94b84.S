@@ -5,6 +5,7 @@
 	.long	0x3e22f983
 .LCPI0_2:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddss	.LCPI0_0(%rip), %xmm0, %xmm0
 	vmulss	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -18,6 +19,7 @@ func0000000000000004:
 	.long	0x3f000000
 .LCPI1_2:
 	.long	0x3c23d70a
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vaddss	.LCPI1_0(%rip), %xmm0, %xmm0
 	vmulss	.LCPI1_1(%rip), %xmm0, %xmm0

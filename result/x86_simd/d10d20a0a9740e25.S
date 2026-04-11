@@ -3,6 +3,7 @@
 	.long	457
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm1
@@ -17,6 +18,7 @@ func0000000000000001:
 	.long	7
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm1

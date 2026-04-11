@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
@@ -8,11 +9,13 @@ func0000000000000000:
 
 .LCPI1_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm0, %ymm1
@@ -21,6 +24,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
@@ -28,6 +32,7 @@ func000000000000000f:
 
 .LCPI4_0:
 	.quad	6
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
@@ -35,6 +40,7 @@ func0000000000000004:
 
 .LCPI5_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000002:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
@@ -42,6 +48,7 @@ func0000000000000002:
 
 .LCPI6_0:
 	.quad	48
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
@@ -49,6 +56,7 @@ func0000000000000005:
 
 .LCPI7_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000007:
 	vpmullq	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0

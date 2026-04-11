@@ -3,6 +3,7 @@
 	.quad	0x3fe0000035afe535
 .LCPI0_1:
 	.quad	0x3fdfffff94a03595
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vcmpgtsd	.LCPI0_0(%rip), %xmm0, %k0
@@ -13,6 +14,7 @@ func0000000000000084:
 
 .LCPI1_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000194:
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vcmpgesd	.LCPI1_0(%rip), %xmm0, %k0
@@ -24,6 +26,7 @@ func0000000000000194:
 
 .LCPI2_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000110:
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vcmpeqsd	.LCPI2_0(%rip), %xmm0, %k0

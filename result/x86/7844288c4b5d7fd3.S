@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	orq	$1, %rdx
 	cmpq	%rsi, %rdx
@@ -6,6 +7,7 @@ func0000000000000024:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	orq	$1048575, %rdx
 	cmpq	%rsi, %rdx
@@ -13,6 +15,7 @@ func0000000000000009:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	orq	$2, %rdx
 	cmpq	%rsi, %rdx
@@ -20,6 +23,7 @@ func000000000000002a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	orq	$4, %rdx
 	cmpq	%rsi, %rdx
@@ -27,6 +31,7 @@ func0000000000000001:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	orq	$1, %rdx
 	cmpq	%rsi, %rdx
@@ -34,6 +39,7 @@ func0000000000000021:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	orq	$1, %rdx
 	cmpq	%rsi, %rdx

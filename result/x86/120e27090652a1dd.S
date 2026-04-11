@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b4:
 	decb	%sil
 	movl	$-1, %eax
@@ -8,6 +9,7 @@ func00000000000000b4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	decb	%sil
 	shrxl	%esi, %edi, %eax

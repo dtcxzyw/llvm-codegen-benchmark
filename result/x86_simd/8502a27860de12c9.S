@@ -21,6 +21,7 @@
 	.byte	0
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3

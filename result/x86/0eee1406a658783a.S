@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	addl	$-300, %esi
 	cmpl	$-100, %esi
@@ -8,6 +9,7 @@ func0000000000000008:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	decl	%esi
 	cmpl	$2, %esi
@@ -17,6 +19,7 @@ func0000000000000009:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	addl	$-65535, %esi
 	xorl	%eax, %eax
@@ -26,6 +29,7 @@ func0000000000000010:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000071:
 	addl	$-40, %esi
 	xorl	%eax, %eax
@@ -35,6 +39,7 @@ func0000000000000071:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000068:
 	addl	$-65, %esi
 	xorl	%eax, %eax
@@ -44,6 +49,7 @@ func0000000000000068:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000069:
 	addl	$-65, %esi
 	xorl	%eax, %eax

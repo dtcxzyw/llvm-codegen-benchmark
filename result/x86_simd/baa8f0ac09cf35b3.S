@@ -5,6 +5,7 @@
 	.quad	1
 .LCPI0_2:
 	.quad	64
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpternlogq	$248, .LCPI0_1(%rip){1to4}, %ymm2, %ymm1
@@ -97,6 +98,7 @@ func0000000000000003:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpandq	.LCPI1_3(%rip){1to4}, %ymm1, %ymm1
 	vpternlogq	$248, .LCPI1_4(%rip){1to4}, %ymm2, %ymm1
@@ -109,6 +111,7 @@ func0000000000000000:
 	.quad	-449
 .LCPI2_2:
 	.quad	-16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpandq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1

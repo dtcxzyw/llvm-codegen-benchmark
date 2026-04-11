@@ -37,6 +37,7 @@
 	.byte	192
 .LCPI0_3:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpmovqb	%ymm0, %xmm1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm0

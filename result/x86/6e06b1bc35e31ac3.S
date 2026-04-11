@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	cmpl	$1048576, %edi
 	movl	$10, %ecx
@@ -8,6 +9,7 @@ func0000000000000084:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	xorl	%ecx, %ecx
 	cmpl	$2, %edi
@@ -18,6 +20,7 @@ func0000000000000021:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000318:
 	cmpl	$20, %edi
 	movl	$1, %ecx
@@ -27,6 +30,7 @@ func0000000000000318:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000294:
 	cmpl	$100, %edi
 	movl	$3, %ecx
@@ -36,6 +40,7 @@ func0000000000000294:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000094:
 	cmpl	$65536, %edi
 	movl	$4, %ecx
@@ -45,6 +50,7 @@ func0000000000000094:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ca:
 	movl	%edi, %ecx
 	notl	%ecx
@@ -55,6 +61,7 @@ func00000000000000ca:
 	cmovleq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000108:
 	xorl	%ecx, %ecx
 	cmpl	$134217764, %edi
@@ -66,6 +73,7 @@ func0000000000000108:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000308:
 	xorl	%ecx, %ecx
 	cmpl	$3, %edi
@@ -77,6 +85,7 @@ func0000000000000308:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000014a:
 	xorl	%ecx, %ecx
 	cmpl	$5, %edi
@@ -88,6 +97,7 @@ func000000000000014a:
 	cmovlq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000286:
 	xorl	%eax, %eax
 	cmpl	$65536, %edi
@@ -98,6 +108,7 @@ func0000000000000286:
 	cmovgeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000281:
 	xorl	%eax, %eax
 	cmpl	$13, %edi
@@ -108,6 +119,7 @@ func0000000000000281:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000181:
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -118,6 +130,7 @@ func0000000000000181:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000c6:
 	xorl	%ecx, %ecx
 	cmpl	$27, %edi
@@ -128,6 +141,7 @@ func00000000000000c6:
 	cmovgeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000d4:
 	xorl	%ecx, %ecx
 	cmpl	$30, %edi
@@ -139,6 +153,7 @@ func00000000000000d4:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000144:
 	testl	%edi, %edi
 	movl	$36, %eax

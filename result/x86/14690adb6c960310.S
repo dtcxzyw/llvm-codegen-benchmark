@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movzbl	%dil, %ecx
 	movl	$-1, %eax
@@ -6,6 +7,7 @@ func0000000000000000:
 	divl	%ecx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movzbl	%dil, %ecx
 	movl	$2147483647, %eax

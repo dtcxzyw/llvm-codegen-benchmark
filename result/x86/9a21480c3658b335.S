@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006a8:
 	addq	%rsi, %rdi
 	movq	%rdi, %rcx

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	movzwl	%dx, %eax
 	cmpl	$49152, %eax
@@ -9,6 +10,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	testw	%dx, %dx
 	setne	%cl
@@ -18,6 +20,7 @@ func000000000000018c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000184:
 	movzwl	%dx, %eax
 	cmpl	$2673, %eax

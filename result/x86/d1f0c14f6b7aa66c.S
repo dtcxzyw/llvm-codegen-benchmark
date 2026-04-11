@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	shrq	$2, %rdi
 	imull	$-1431655765, %edi, %eax
 	shrl	$6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movq	%rdi, %rax
 	movabsq	$3074457345618258603, %rcx

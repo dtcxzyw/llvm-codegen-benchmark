@@ -23,6 +23,7 @@
 	.short	0
 	.short	9
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003e:
 	vplzcntd	%ymm0, %ymm0
 	vpxord	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
@@ -55,6 +56,7 @@ func000000000000003e:
 	.short	0
 	.short	9
 	.short	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000007e:
 	vplzcntd	%ymm0, %ymm0
 	vpxord	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0

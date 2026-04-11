@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	7905747460161236407
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
@@ -13,6 +14,7 @@ func0000000000000024:
 
 .LCPI1_0:
 	.quad	3353953467947191203
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
@@ -25,6 +27,7 @@ func0000000000000028:
 
 .LCPI2_0:
 	.quad	7905747460161236407
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
@@ -37,6 +40,7 @@ func0000000000000021:
 
 .LCPI3_0:
 	.quad	-6148914691236517205
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000025:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	100
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1}
@@ -13,6 +14,7 @@ func0000000000000084:
 
 .LCPI1_0:
 	.long	32
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e1:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1
@@ -25,6 +27,7 @@ func00000000000000e1:
 
 .LCPI2_0:
 	.long	1000000000
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e6:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k1}
@@ -37,6 +40,7 @@ func00000000000000e6:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000321:
 	vpmovd2m	%ymm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1 {%k1}
@@ -51,6 +55,7 @@ func0000000000000321:
 	.long	9
 .LCPI4_1:
 	.long	6
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000461:
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm1 {%k1}
@@ -65,6 +70,7 @@ func0000000000000461:
 	.long	1
 .LCPI5_1:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000361:
 	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm1 {%k1}
@@ -79,6 +85,7 @@ func0000000000000361:
 	.long	8
 .LCPI6_1:
 	.long	2
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000088:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm1 {%k1}
@@ -90,6 +97,7 @@ func0000000000000088:
 
 .LCPI7_0:
 	.long	4
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000c1:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI7_0(%rip), %ymm1 {%k1}
@@ -102,6 +110,7 @@ func00000000000000c1:
 
 .LCPI8_0:
 	.long	25
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000a1:
 	vpcmpneqd	.LCPI8_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
@@ -114,6 +123,7 @@ func00000000000000a1:
 
 .LCPI9_0:
 	.long	2
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000e9:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI9_0(%rip), %ymm1 {%k1}
@@ -126,6 +136,7 @@ func00000000000000e9:
 
 .LCPI10_0:
 	.long	1
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a6:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1

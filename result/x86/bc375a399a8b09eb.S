@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000033:
 	vcmpnless	%xmm1, %xmm2, %k0
 	vcmpnless	%xmm0, %xmm1, %k1
@@ -6,6 +7,7 @@ func0000000000000033:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vcmpltss	%xmm1, %xmm2, %k0
 	vcmpltss	%xmm0, %xmm1, %k1
@@ -13,6 +15,7 @@ func0000000000000044:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
 	vcmpltss	%xmm2, %xmm1, %k0
 	vcmpltss	%xmm1, %xmm0, %k1
@@ -20,6 +23,7 @@ func0000000000000022:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000d5:
 	vcmpnltss	%xmm2, %xmm1, %k0
 	vcmpnless	%xmm1, %xmm0, %k1
@@ -27,6 +31,7 @@ func00000000000000d5:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000055:
 	vcmpnless	%xmm2, %xmm1, %k0
 	vcmpnless	%xmm1, %xmm0, %k1
@@ -34,6 +39,7 @@ func0000000000000055:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000077:
 	vcmpneqss	%xmm2, %xmm1, %k0
 	vcmpneqss	%xmm1, %xmm0, %k1
@@ -41,6 +47,7 @@ func0000000000000077:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000035:
 	vcmpnless	%xmm1, %xmm2, %k0
 	vcmpnless	%xmm1, %xmm0, %k1

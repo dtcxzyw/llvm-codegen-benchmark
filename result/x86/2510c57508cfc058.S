@@ -1,82 +1,96 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f5:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000b1:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a5:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000035:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000e4:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c5:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000025:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000030:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000085:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000075:
 	imull	%edi, %edx
 	addl	%edx, %esi
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000f4:
 	imull	%edi, %edx
 	addl	%edx, %esi

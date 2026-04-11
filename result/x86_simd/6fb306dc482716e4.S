@@ -3,6 +3,7 @@
 	.quad	3
 .LCPI0_1:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpminuq	%ymm2, %ymm1, %ymm1
 	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1

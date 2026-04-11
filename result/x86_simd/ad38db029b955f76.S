@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	3
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -11,6 +12,7 @@ func00000000000000e1:
 	.long	3
 .LCPI1_1:
 	.long	8388608
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vptestnmd	.LCPI1_1(%rip){1to8}, %ymm0, %k0
@@ -22,6 +24,7 @@ func0000000000000001:
 	.long	3
 .LCPI2_1:
 	.long	8388608
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vptestnmd	.LCPI2_1(%rip){1to8}, %ymm0, %k0
@@ -33,6 +36,7 @@ func0000000000000041:
 	.long	7
 .LCPI3_1:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqd	.LCPI3_1(%rip){1to8}, %ymm0, %k0
@@ -42,6 +46,7 @@ func0000000000000061:
 
 .LCPI4_0:
 	.long	7
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000081:
 	vpbroadcastd	.LCPI4_0(%rip), %ymm1
 	vpand	%ymm1, %ymm0, %ymm0

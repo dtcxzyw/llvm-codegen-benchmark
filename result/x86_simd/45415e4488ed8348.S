@@ -25,6 +25,7 @@
 	.short	0
 	.short	3
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	vpmulhuw	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpsrlw	$1, %xmm2, %xmm2

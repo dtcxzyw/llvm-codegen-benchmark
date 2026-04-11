@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	movzbl	%sil, %eax
 	shll	$21, %eax
@@ -6,6 +7,7 @@ func0000000000000007:
 	xorl	$536862720, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	movzbl	%sil, %eax
 	shll	$3, %eax
@@ -13,6 +15,7 @@ func0000000000000006:
 	xorl	$2047, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	movl	%esi, %eax
 	shll	$24, %eax

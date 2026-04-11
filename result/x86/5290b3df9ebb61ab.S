@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	xorl	%ecx, %ecx
 	cmpl	$11, %edx
@@ -9,6 +10,7 @@ func000000000000001e:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	xorl	%ecx, %ecx
 	cmpl	$11, %edx
@@ -19,6 +21,7 @@ func0000000000000012:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
 	xorl	%ecx, %ecx
 	cmpl	$11, %edx
@@ -29,6 +32,7 @@ func000000000000001f:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000af:
 	xorl	%ecx, %ecx
 	testl	%edx, %edx
@@ -41,6 +45,7 @@ func00000000000000af:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	xorl	%eax, %eax
 	testl	%edx, %edx

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000504:
 	cmpb	$97, %sil
 	cmovll	%esi, %edi
@@ -7,6 +8,7 @@ func0000000000000504:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000401:
 	cmpb	$94, %sil
 	cmovbl	%esi, %edi
@@ -14,6 +16,7 @@ func0000000000000401:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000404:
 	cmpb	$94, %sil
 	cmovbl	%esi, %edi

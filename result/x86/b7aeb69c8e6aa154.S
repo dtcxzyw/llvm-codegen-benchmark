@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000063:
 	andb	$15, %dil
 	cmpb	$10, %dil
@@ -8,6 +9,7 @@ func0000000000000063:
 	addb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000053:
 	andb	$15, %dil
 	cmpb	$10, %dil

@@ -17,6 +17,7 @@
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpslld	$16, %xmm1, %xmm2
 	vpmovsxbd	.LCPI0_1(%rip), %ymm1
@@ -42,6 +43,7 @@ func0000000000000005:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000045:
 	vpslld	$4, %xmm1, %xmm2
 	vpmovsxbd	.LCPI1_1(%rip), %ymm1
@@ -67,6 +69,7 @@ func0000000000000045:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000006d:
 	vpslld	$2, %xmm1, %xmm2
 	vpmovsxbd	.LCPI2_1(%rip), %ymm1
@@ -92,6 +95,7 @@ func000000000000006d:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000007f:
 	vpaddd	%xmm1, %xmm1, %xmm2
 	vpmovsxbd	.LCPI3_1(%rip), %ymm1
@@ -117,6 +121,7 @@ func000000000000007f:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000017:
 	vpslld	$20, %xmm1, %xmm2
 	vpmovsxbd	.LCPI4_1(%rip), %ymm1
@@ -124,6 +129,7 @@ func0000000000000017:
 	vmovdqa	%ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000006f:
 	vpslld	$3, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -132,6 +138,7 @@ func000000000000006f:
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000069:
 	vpslld	$2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
@@ -158,6 +165,7 @@ func0000000000000069:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000003f:
 	vpslld	$5, %xmm1, %xmm2
 	vpmovsxbd	.LCPI7_1(%rip), %ymm1
@@ -183,6 +191,7 @@ func000000000000003f:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000025:
 	vpaddd	%xmm1, %xmm1, %xmm2
 	vpmovsxbd	.LCPI8_1(%rip), %ymm1

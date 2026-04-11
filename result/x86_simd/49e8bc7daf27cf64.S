@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003b:
 	vpslld	$16, %ymm2, %ymm2
 	vpternlogd	$54, %ymm1, %ymm0, %ymm2

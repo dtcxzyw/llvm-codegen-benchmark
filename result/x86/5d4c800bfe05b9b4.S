@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	notb	%dil
 	testb	$12, %sil
@@ -8,6 +9,7 @@ func0000000000000014:
 	shll	$14, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	testb	$64, %sil
 	movl	$33188, %ecx

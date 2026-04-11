@@ -3,6 +3,7 @@
 	.long	0x3f4ccccd
 .LCPI0_1:
 	.long	0x3e4ccccd
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	vbroadcastss	.LCPI0_0(%rip), %ymm0
@@ -13,6 +14,7 @@ func0000000000000006:
 	.long	0x3f800000
 .LCPI1_1:
 	.long	0x40000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpcmpeqd	%ymm1, %ymm0, %k1
 	vbroadcastss	.LCPI1_0(%rip), %ymm0
@@ -23,6 +25,7 @@ func0000000000000001:
 	.long	0x3f000000
 .LCPI2_1:
 	.long	0xbf000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	vbroadcastss	.LCPI2_0(%rip), %ymm0
@@ -33,6 +36,7 @@ func0000000000000008:
 	.long	0x3f000000
 .LCPI3_1:
 	.long	0xbf000000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vpcmpgtd	%ymm1, %ymm0, %k1
 	vbroadcastss	.LCPI3_0(%rip), %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	addl	$-512, %esi
 	cmpl	$-1023, %esi
@@ -7,6 +8,7 @@ func0000000000000048:
 	movzbl	%al, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	addl	$-1024, %esi
 	cmpl	$-2047, %esi

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -8,6 +9,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -18,6 +20,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.quad	0x3ddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000012:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -28,6 +31,7 @@ func0000000000000012:
 
 .LCPI3_0:
 	.quad	0x3e80000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -37,6 +41,7 @@ func0000000000000014:
 
 .LCPI4_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -45,6 +50,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -53,6 +59,7 @@ func0000000000000018:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -61,6 +68,7 @@ func0000000000000007:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000013:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -71,6 +79,7 @@ func0000000000000013:
 
 .LCPI8_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000003:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -80,6 +89,7 @@ func0000000000000003:
 
 .LCPI9_0:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000002:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1
@@ -90,6 +100,7 @@ func0000000000000002:
 
 .LCPI10_0:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000015:
 	vmulsd	%xmm1, %xmm1, %xmm1
 	vfmadd231sd	%xmm0, %xmm0, %xmm1

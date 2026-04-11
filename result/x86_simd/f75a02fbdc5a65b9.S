@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	63
 	.short	63
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -35,6 +36,7 @@ func00000000000000a4:
 .LCPI1_2:
 	.short	60
 	.short	60
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

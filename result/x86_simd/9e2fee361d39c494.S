@@ -42,6 +42,7 @@
 	.byte	128
 	.byte	64
 	.byte	32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpmovqb	%ymm0, %xmm0
 	vpmovsxbw	%xmm0, %ymm1
@@ -99,6 +100,7 @@ func0000000000000002:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqb	%ymm0, %xmm0
 	vpmovsxbw	%xmm0, %ymm0

@@ -16,6 +16,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrlq	$16, %ymm2, %ymm2
 	vpmovqw	%ymm2, %xmm2
@@ -36,6 +37,7 @@ func0000000000000003:
 .LCPI1_1:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpsrlq	$49, %ymm2, %ymm2
 	vpmovqw	%ymm2, %xmm2

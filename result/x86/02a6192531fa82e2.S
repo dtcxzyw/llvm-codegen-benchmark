@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	shrq	$10, %rdi
 	lzcntq	%rdi, %rax

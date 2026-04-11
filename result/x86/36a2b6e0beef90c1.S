@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000260:
 	movl	%edi, %eax
 	btq	%rdx, %rsi
 	adcl	$0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000263:
 	movl	%edi, %eax
 	btq	%rdx, %rsi
 	adcl	$0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000363:
 	movl	%edi, %eax
 	btq	%rdx, %rsi
 	adcl	$0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000261:
 	movl	%edi, %eax
 	shrxq	%rdx, %rsi, %rcx
@@ -25,6 +29,7 @@ func0000000000000261:
 	sbbl	$-1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000060:
 	movl	%edi, %eax
 	shrxq	%rdx, %rsi, %rcx

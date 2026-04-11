@@ -3,6 +3,7 @@
 	.long	1023
 .LCPI0_1:
 	.long	1024
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1
@@ -13,6 +14,7 @@ func0000000000000003:
 	.long	2047
 .LCPI1_1:
 	.long	107
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1
@@ -21,6 +23,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.long	4294965248
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1

@@ -5,6 +5,7 @@
 	.long	0x3f666666
 .LCPI0_2:
 	.long	0x3dcccccd
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	kmovd	%esi, %k1
 	vmovss	.LCPI0_0(%rip), %xmm0

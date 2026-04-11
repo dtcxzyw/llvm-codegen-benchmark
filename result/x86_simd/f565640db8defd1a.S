@@ -5,6 +5,7 @@
 	.long	240
 .LCPI0_2:
 	.long	40
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpternlogd	$248, .LCPI0_1(%rip){1to4}, %xmm0, %xmm1

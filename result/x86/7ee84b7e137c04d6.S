@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	movzbl	%dil, %eax
 	movl	%eax, %ecx
@@ -8,6 +9,7 @@ func0000000000000061:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e1:
 	movzbl	%dil, %ecx
 	movl	%ecx, %edx

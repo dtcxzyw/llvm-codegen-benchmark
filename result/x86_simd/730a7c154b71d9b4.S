@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	pushq	%rbx
 	movb	$80, %al
@@ -46,6 +47,7 @@ func0000000000000001:
 	popq	%rbx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	pushq	%rbx
 	movb	$-1, %al

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	addq	%rdx, %rsi
 	movslq	%esi, %rax
@@ -7,6 +8,7 @@ func0000000000000108:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	addq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -14,6 +16,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	leaq	1073741824(%rsi,%rdx), %rax
 	shrq	$31, %rax

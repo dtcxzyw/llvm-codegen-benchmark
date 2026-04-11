@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
 	cmpb	$6, %dl
 	cmovael	%esi, %edi
@@ -6,6 +7,7 @@ func0000000000000086:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000098:
 	cmpb	$6, %dl
 	cmovael	%esi, %edi
@@ -13,6 +15,7 @@ func0000000000000098:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000094:
 	cmpb	$6, %dl
 	cmovael	%esi, %edi
@@ -20,6 +23,7 @@ func0000000000000094:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
 	testb	%dl, %dl
 	cmovnel	%esi, %edi
@@ -27,6 +31,7 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	testb	%dl, %dl
 	cmovnel	%esi, %edi
@@ -34,6 +39,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000038:
 	testb	%dl, %dl
 	cmovnel	%esi, %edi
@@ -41,6 +47,7 @@ func0000000000000038:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000081:
 	cmpb	$26, %dl
 	cmovael	%esi, %edi
@@ -48,6 +55,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000008c:
 	cmpb	$26, %dl
 	cmovael	%esi, %edi
@@ -55,6 +63,7 @@ func000000000000008c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000028:
 	cmpb	$45, %dl
 	cmovnel	%esi, %edi
@@ -62,6 +71,7 @@ func0000000000000028:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000008a:
 	cmpb	$64, %dl
 	cmovael	%esi, %edi
@@ -69,6 +79,7 @@ func000000000000008a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000024:
 	cmpb	$20, %dl
 	cmovnel	%esi, %edi
@@ -76,6 +87,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000084:
 	cmpb	$3, %dl
 	cmovael	%esi, %edi

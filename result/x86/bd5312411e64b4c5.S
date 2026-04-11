@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	shrl	$29, %edx
 	andl	$1, %edx
@@ -9,6 +10,7 @@ func0000000000000004:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	xorl	%ecx, %ecx
 	testb	$27, %dl

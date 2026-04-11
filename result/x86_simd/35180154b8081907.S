@@ -20,6 +20,7 @@
 	.quad	64
 .LCPI0_2:
 	.quad	32
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1

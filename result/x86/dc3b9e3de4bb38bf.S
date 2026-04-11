@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	movb	$7, %al
 	subb	%sil, %al
@@ -7,6 +8,7 @@ func000000000000000a:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movb	$7, %al
 	subb	%sil, %al
@@ -15,6 +17,7 @@ func0000000000000002:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	movb	$25, %al
 	subb	%sil, %al
@@ -22,6 +25,7 @@ func0000000000000000:
 	andb	$127, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
 	movb	$3, %al
 	subb	%sil, %al

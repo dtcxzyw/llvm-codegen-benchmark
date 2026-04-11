@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm1, %xmm0, %k1
@@ -6,6 +7,7 @@ func0000000000000026:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpled	%xmm0, %xmm1, %k1
@@ -13,6 +15,7 @@ func000000000000002a:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000067:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%xmm1, %xmm0, %k1
@@ -20,6 +23,7 @@ func0000000000000067:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000006a:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpled	%xmm1, %xmm0, %k1
@@ -27,6 +31,7 @@ func000000000000006a:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpled	%xmm1, %xmm0, %k1
@@ -34,6 +39,7 @@ func000000000000000a:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%xmm1, %xmm0, %k1
@@ -41,6 +47,7 @@ func000000000000002c:
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm1, %xmm0, %k1

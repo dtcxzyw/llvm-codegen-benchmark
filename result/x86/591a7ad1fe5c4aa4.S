@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	movq	%rdi, %rax
 	addl	%edx, %esi
 	btrq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	addl	%edx, %esi
 	andl	$7, %esi
 	bzhil	%esi, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	addl	%edx, %esi
 	andb	$7, %sil
@@ -19,12 +22,14 @@ func0000000000000003:
 	andnq	%rdi, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	movq	%rdi, %rax
 	addl	%edx, %esi
 	btrq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	movq	%rdi, %rax
 	addl	%edx, %esi

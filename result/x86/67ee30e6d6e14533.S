@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	movq	%rdi, %rcx
 	shrq	$32, %rcx
@@ -9,6 +10,7 @@ func0000000000000044:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	movq	%rdi, %rcx
 	shrq	$2, %rcx
@@ -17,6 +19,7 @@ func000000000000000a:
 	cmovgel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	movq	%rdi, %rcx
 	shrq	%rcx
@@ -27,6 +30,7 @@ func0000000000000004:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000046:
 	movq	%rdi, %rax
 	shrq	$32, %rax

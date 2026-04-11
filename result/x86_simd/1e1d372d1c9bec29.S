@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000777:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmpneqpd	%zmm6, %zmm4, %k0
@@ -18,6 +19,7 @@ func0000000000000777:
 
 .LCPI1_0:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000bbb:
 	vbroadcastsd	.LCPI1_0(%rip), %zmm6
 	vcmpnltpd	%zmm4, %zmm6, %k0
@@ -37,6 +39,7 @@ func0000000000000bbb:
 
 .LCPI2_0:
 	.quad	0x4000000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000888:
 	vbroadcastsd	.LCPI2_0(%rip), %zmm6
 	vcmpeqpd	%zmm6, %zmm4, %k0
@@ -54,6 +57,7 @@ func0000000000000888:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000222:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmpltpd	%zmm6, %zmm4, %k0
@@ -71,6 +75,7 @@ func0000000000000222:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000111:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmpunordpd	%zmm6, %zmm4, %k0
@@ -90,6 +95,7 @@ func0000000000000111:
 
 .LCPI5_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000878:
 	vbroadcastsd	.LCPI5_0(%rip), %zmm6
 	vcmpeqpd	%zmm6, %zmm4, %k0
@@ -111,6 +117,7 @@ func0000000000000878:
 	.quad	0x402921fb54442d18
 .LCPI6_1:
 	.quad	0x4009220092718f51
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000555:
 	vbroadcastsd	.LCPI6_0(%rip), %zmm6
 	vcmpnlepd	%zmm6, %zmm4, %k0
@@ -129,6 +136,7 @@ func0000000000000555:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000aaa:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm6, %zmm4, %k0
@@ -148,6 +156,7 @@ func0000000000000aaa:
 
 .LCPI8_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000bbd:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmpnltpd	%zmm4, %zmm6, %k0
@@ -168,6 +177,7 @@ func0000000000000bbd:
 
 .LCPI9_0:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000a2a:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmplepd	%zmm6, %zmm4, %k0
@@ -186,6 +196,7 @@ func0000000000000a2a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000444:
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmpltpd	%zmm4, %zmm6, %k0

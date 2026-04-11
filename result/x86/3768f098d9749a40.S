@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	imull	%edx, %esi
 	cmpl	%edi, %esi
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000444:
 	imull	%edx, %esi
 	cmpl	%edi, %esi
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000404:
 	imull	%edx, %esi
 	cmpl	%edi, %esi

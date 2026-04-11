@@ -53,6 +53,7 @@
 .LCPI0_3:
 	.short	65519
 	.short	65519
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000082:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
@@ -137,6 +138,7 @@ func0000000000000082:
 	.byte	255
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0

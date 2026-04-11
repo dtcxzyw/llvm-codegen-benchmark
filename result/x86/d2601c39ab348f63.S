@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqss	%xmm3, %xmm1, %k1
@@ -8,6 +9,7 @@ func0000000000000088:
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm1, %xmm3, %k1
@@ -21,6 +23,7 @@ func0000000000000044:
 	.long	0x40490fdb
 .LCPI2_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ca:
 	vmovss	.LCPI2_0(%rip), %xmm3
 	vcmpless	%xmm3, %xmm1, %k1

@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpneqd	%ymm3, %ymm1, %k1
@@ -47,6 +48,7 @@ func000000000000002c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpcmpneqd	.LCPI1_1(%rip){1to8}, %ymm2, %k1 {%k1}
@@ -73,6 +75,7 @@ func000000000000018c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vptestnmd	%ymm2, %ymm2, %k1 {%k1}
@@ -101,6 +104,7 @@ func0000000000000034:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqd	.LCPI3_1(%rip){1to8}, %ymm2, %k1 {%k1}

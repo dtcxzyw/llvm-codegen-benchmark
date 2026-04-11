@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000112:
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm1, %k1
@@ -7,6 +8,7 @@ func0000000000000112:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001d3:
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm1, %k1

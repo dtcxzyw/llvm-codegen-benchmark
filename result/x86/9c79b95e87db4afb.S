@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	addq	%rsi, %rsi
 	movq	%rsi, %rax
@@ -8,6 +9,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	addq	%rsi, %rsi
 	cmpq	$2, %rsi

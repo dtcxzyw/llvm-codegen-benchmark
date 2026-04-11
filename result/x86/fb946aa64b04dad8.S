@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000042c:
 	orl	%edx, %esi
 	cmpl	$65000, %esi
@@ -8,6 +9,7 @@ func000000000000042c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000421:
 	orl	%edx, %esi
 	xorl	$771, %esi
@@ -16,6 +18,7 @@ func0000000000000421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	orl	%edx, %esi
 	setne	%cl
@@ -24,6 +27,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000058c:
 	orl	%edx, %esi
 	setne	%cl
@@ -32,6 +36,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
 	orl	%edx, %esi
 	setne	%cl
@@ -40,6 +45,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000698:
 	orl	%edx, %esi
 	cmpl	$57344, %esi
@@ -49,6 +55,7 @@ func0000000000000698:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000581:
 	orl	%edx, %esi
 	setne	%cl
@@ -57,6 +64,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002c:
 	orl	%edx, %esi
 	sete	%cl
@@ -65,6 +73,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000cc:
 	orl	%edx, %esi
 	sets	%cl
@@ -73,12 +82,14 @@ func00000000000000cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000021:
 	orl	%edx, %esi
 	orl	%edi, %esi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000054c:
 	orl	%edx, %esi
 	setg	%cl
@@ -87,6 +98,7 @@ func000000000000054c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000701:
 	orl	%edx, %esi
 	cmpl	$7, %esi
@@ -96,6 +108,7 @@ func0000000000000701:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000681:
 	orl	%edx, %esi
 	cmpl	$1114112, %esi
@@ -105,6 +118,7 @@ func0000000000000681:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000141:
 	orl	%edx, %esi
 	setns	%cl
@@ -113,6 +127,7 @@ func0000000000000141:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000024:
 	orl	%edx, %esi
 	sete	%cl

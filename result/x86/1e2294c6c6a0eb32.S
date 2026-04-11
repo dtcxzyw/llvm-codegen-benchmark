@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000b02:
 	cmpq	$5, %rdi
 	setne	%cl
@@ -8,6 +9,7 @@ func0000000000000b02:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000902:
 	leaq	-4(%rdi), %rax
 	cmpq	$3, %rax
@@ -18,6 +20,7 @@ func0000000000000902:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000102:
 	leaq	-8(%rdi), %rax
 	cmpq	$121, %rax
@@ -28,6 +31,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000302:
 	movabsq	$-9223372036854775808, %rax
 	orq	$4, %rax

@@ -5,6 +5,7 @@
 	.long	4293853184
 .LCPI0_2:
 	.long	4293918720
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003a4:
 	vpslld	$18, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI0_0(%rip){1to8}, %ymm0, %ymm1
@@ -16,6 +17,7 @@ func00000000000003a4:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002a4:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
@@ -33,6 +35,7 @@ func00000000000002a4:
 	.long	4294967287
 .LCPI2_2:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a4:
 	vpslld	$2, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI2_0(%rip){1to8}, %ymm0, %ymm1
@@ -48,6 +51,7 @@ func00000000000000a4:
 	.long	4294901760
 .LCPI3_2:
 	.long	1048576
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001a4:
 	vpslld	$18, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI3_0(%rip){1to8}, %ymm0, %ymm1

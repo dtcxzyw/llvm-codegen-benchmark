@@ -3,6 +3,7 @@
 	.quad	-2
 .LCPI0_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004e6:
 	vpmullq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm2

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c78:
 	xorl	%ecx, %ecx
 	cmpq	$2147483647, %rdx
@@ -11,6 +12,7 @@ func0000000000000c78:
 	orq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000c44:
 	xorl	%ecx, %ecx
 	cmpq	$7, %rdx

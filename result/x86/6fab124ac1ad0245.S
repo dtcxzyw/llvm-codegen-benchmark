@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000618:
 	andb	$-8, %sil
 	cmpb	$48, %sil
@@ -8,6 +9,7 @@ func0000000000000618:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	addb	$-7, %sil
 	cmpb	$3, %sil
@@ -17,6 +19,7 @@ func000000000000010c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000110:
 	addb	$-32, %sil
 	cmpb	$-23, %sil
@@ -26,6 +29,7 @@ func0000000000000110:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000902:
 	addb	$-6, %sil
 	cmpb	$-2, %sil
@@ -35,6 +39,7 @@ func0000000000000902:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000188:
 	addb	$-3, %sil
 	cmpb	$-2, %sil
@@ -44,6 +49,7 @@ func0000000000000188:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000108:
 	addb	$95, %sil
 	cmpb	$94, %sil
@@ -53,6 +59,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000102:
 	addb	$-13, %sil
 	cmpb	$-12, %sil
@@ -62,6 +69,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000210:
 	addb	$-7, %sil
 	cmpb	$-8, %sil
@@ -71,6 +79,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000048:
 	addb	$-5, %sil
 	cmpb	$2, %sil
@@ -80,6 +89,7 @@ func0000000000000048:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000908:
 	addb	$-37, %sil
 	cmpb	$2, %sil
@@ -89,6 +99,7 @@ func0000000000000908:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000848:
 	addb	$39, %sil
 	cmpb	$3, %sil
@@ -98,6 +109,7 @@ func0000000000000848:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000118:
 	addb	$-19, %sil
 	cmpb	$-18, %sil
@@ -107,6 +119,7 @@ func0000000000000118:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000308:
 	addb	$-85, %sil
 	cmpb	$-2, %sil
@@ -116,6 +129,7 @@ func0000000000000308:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000050:
 	addb	$-5, %sil
 	cmpb	$-3, %sil
@@ -125,6 +139,7 @@ func0000000000000050:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000850:
 	addb	$-5, %sil
 	cmpb	$-3, %sil
@@ -134,6 +149,7 @@ func0000000000000850:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000302:
 	cmpb	$-1, %sil
 	setne	%cl

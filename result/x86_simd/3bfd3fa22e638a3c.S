@@ -20,6 +20,7 @@
 	.long	1
 .LCPI0_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpbroadcastb	.LCPI0_2(%rip), %xmm2
 	vpand	%xmm2, %xmm1, %xmm1
@@ -67,6 +68,7 @@ func0000000000000001:
 	.long	64
 .LCPI1_3:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpnleud	.LCPI1_1(%rip){1to8}, %ymm0, %k1

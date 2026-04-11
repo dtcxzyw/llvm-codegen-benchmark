@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	andb	$1, %dil
 	negb	%dl
@@ -9,6 +10,7 @@ func000000000000000c:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	negb	%dl
 	shlxq	%rdx, %rsi, %rcx

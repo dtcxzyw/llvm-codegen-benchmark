@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	andq	$-33, %rsi
 	cmpq	$4, %rsi
@@ -8,6 +9,7 @@ func000000000000002c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000281:
 	andl	$532676608, %esi
 	cmpl	$12582912, %esi
@@ -17,6 +19,7 @@ func0000000000000281:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	testl	%esi, %esi
 	sets	%cl
@@ -25,6 +28,7 @@ func0000000000000181:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	movabsq	$8070450532247928833, %rax
 	testq	%rax, %rsi
@@ -34,11 +38,13 @@ func0000000000000038:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
 	orl	%edi, %esi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	testb	$2, %sil
 	sete	%cl
@@ -47,6 +53,7 @@ func0000000000000026:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000301:
 	movabsq	$30064771072, %rax
 	andq	%rsi, %rax
@@ -58,6 +65,7 @@ func0000000000000301:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000021:
 	testb	$8, %sil
 	sete	%cl
@@ -66,6 +74,7 @@ func0000000000000021:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
 	testl	$536870912, %esi
 	sete	%cl
@@ -74,6 +83,7 @@ func000000000000002a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000186:
 	movabsq	$1095216660480, %rax
 	andq	%rsi, %rax
@@ -85,6 +95,7 @@ func0000000000000186:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000024:
 	movabsq	$4611686018427387872, %rax
 	testq	%rax, %rsi
@@ -94,6 +105,7 @@ func0000000000000024:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000306:
 	movzbl	%sil, %eax
 	cmpl	$159, %eax
@@ -103,6 +115,7 @@ func0000000000000306:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000030c:
 	movabsq	$9223372028264841216, %rax
 	andq	%rsi, %rax
@@ -114,6 +127,7 @@ func000000000000030c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000188:
 	testl	%esi, %esi
 	setne	%cl
@@ -122,6 +136,7 @@ func0000000000000188:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000018a:
 	testl	$16624895, %esi
 	setne	%cl
@@ -130,6 +145,7 @@ func000000000000018a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000028c:
 	cmpl	$3, %esi
 	setb	%cl
@@ -138,6 +154,7 @@ func000000000000028c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000034:
 	movabsq	$9223372034707292159, %rax
 	testq	%rax, %rsi

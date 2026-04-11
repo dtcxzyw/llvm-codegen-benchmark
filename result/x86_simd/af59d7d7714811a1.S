@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	7
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	vpslld	$2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -49,6 +50,7 @@ func0000000000000081:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpslld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -62,6 +64,7 @@ func0000000000000001:
 	.long	4294965248
 .LCPI2_1:
 	.long	55296
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	vpslld	$8, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -73,6 +76,7 @@ func0000000000000181:
 
 .LCPI3_0:
 	.long	32
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	vpslld	$3, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -83,6 +87,7 @@ func0000000000000061:
 
 .LCPI4_0:
 	.long	7
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e1:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -93,6 +98,7 @@ func00000000000001e1:
 
 .LCPI5_0:
 	.long	536870912
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000141:
 	vpslld	$16, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

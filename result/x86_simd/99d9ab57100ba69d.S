@@ -3,6 +3,7 @@
 	.long	32
 .LCPI0_1:
 	.long	127
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004c1:
 	vpcmpeqd	%ymm2, %ymm1, %k1
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k1 {%k1}
@@ -11,6 +12,7 @@ func00000000000004c1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000003181:
 	vpcmpneqd	%ymm2, %ymm1, %k1
 	vptestmd	%ymm1, %ymm1, %k1 {%k1}
@@ -19,6 +21,7 @@ func0000000000003181:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000002141:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm1, %k1
@@ -30,6 +33,7 @@ func0000000000002141:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000581:
 	vpcmpeqd	%ymm2, %ymm1, %k1
 	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm0, %k1 {%k1}
@@ -40,6 +44,7 @@ func0000000000000581:
 
 .LCPI4_0:
 	.long	64
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000001d44:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtd	%ymm3, %ymm1, %k1

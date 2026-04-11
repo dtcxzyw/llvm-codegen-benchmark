@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000042a:
 	leal	-4(%rdx), %eax
 	testb	$1, %sil
@@ -10,6 +11,7 @@ func000000000000042a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000042c:
 	leal	-4(%rdx), %eax
 	testb	$1, %sil

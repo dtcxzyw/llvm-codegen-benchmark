@@ -7,6 +7,7 @@
 	.quad	4503599627370496
 .LCPI0_3:
 	.quad	9214364837600034816
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

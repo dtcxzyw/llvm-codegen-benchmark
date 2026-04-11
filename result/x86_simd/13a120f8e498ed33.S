@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	511
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpsrld	$16, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
@@ -15,6 +16,7 @@ func0000000000000061:
 	.long	1073741822
 .LCPI1_1:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000078:
 	vpsrld	$1, %ymm1, %ymm1
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
@@ -26,6 +28,7 @@ func0000000000000078:
 
 .LCPI2_0:
 	.long	63
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	vpsrld	$6, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
@@ -36,6 +39,7 @@ func000000000000002a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	vpsrld	$1, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -51,6 +55,7 @@ func0000000000000038:
 	.long	536870910
 .LCPI4_1:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000068:
 	vpsrld	$3, %ymm1, %ymm1
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
@@ -62,6 +67,7 @@ func0000000000000068:
 
 .LCPI5_0:
 	.long	67108863
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000028:
 	vpsrld	$1, %ymm1, %ymm1
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
@@ -74,6 +80,7 @@ func0000000000000028:
 
 .LCPI6_0:
 	.long	67108863
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000024:
 	vpsrld	$1, %ymm1, %ymm1
 	vpandd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
@@ -88,6 +95,7 @@ func0000000000000024:
 	.long	15
 .LCPI7_1:
 	.long	4294967287
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000021:
 	vpsrld	$4, %ymm1, %ymm1
 	vpandd	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
@@ -137,6 +145,7 @@ func0000000000000021:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000074:
 	vpsrld	$6, %ymm1, %ymm1
 	vpandd	.LCPI8_2(%rip){1to8}, %ymm1, %ymm1
@@ -186,6 +195,7 @@ func0000000000000074:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000006a:
 	vpsrld	$6, %ymm1, %ymm1
 	vpandd	.LCPI9_2(%rip){1to8}, %ymm1, %ymm1
@@ -197,6 +207,7 @@ func000000000000006a:
 
 .LCPI10_0:
 	.long	511
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000066:
 	vpsrld	$3, %ymm1, %ymm1
 	vpandd	.LCPI10_0(%rip){1to8}, %ymm1, %ymm1

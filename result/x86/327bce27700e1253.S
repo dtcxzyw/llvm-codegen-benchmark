@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3f91df46a2529d39
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testl	%edi, %edi
 	sete	%al
@@ -11,6 +12,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	testl	%edi, %edi
 	sets	%al
@@ -21,6 +23,7 @@ func0000000000000006:
 
 .LCPI2_0:
 	.quad	0x3e112e0be826d695
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	testl	%edi, %edi
 	setg	%al

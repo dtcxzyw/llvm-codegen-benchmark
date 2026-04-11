@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1
@@ -8,6 +9,7 @@ func000000000000000b:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -17,6 +19,7 @@ func0000000000000003:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI2_0(%rip), %xmm1
@@ -26,6 +29,7 @@ func0000000000000000:
 
 .LCPI3_0:
 	.long	8192
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI3_0(%rip), %xmm1
@@ -35,6 +39,7 @@ func0000000000000007:
 
 .LCPI4_0:
 	.long	4294966988
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI4_0(%rip), %xmm1
@@ -44,6 +49,7 @@ func000000000000000f:
 
 .LCPI5_0:
 	.long	64
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI5_0(%rip), %xmm1
@@ -53,6 +59,7 @@ func000000000000000a:
 
 .LCPI6_0:
 	.long	64
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI6_0(%rip), %xmm1
@@ -62,6 +69,7 @@ func0000000000000001:
 
 .LCPI7_0:
 	.long	64
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000011:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI7_0(%rip), %xmm1
@@ -69,6 +77,7 @@ func0000000000000011:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000002:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -78,6 +87,7 @@ func0000000000000002:
 
 .LCPI9_0:
 	.long	14
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000001b:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI9_0(%rip), %xmm1
@@ -87,6 +97,7 @@ func000000000000001b:
 
 .LCPI10_0:
 	.long	8192
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000001f:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI10_0(%rip), %xmm1
@@ -96,6 +107,7 @@ func000000000000001f:
 
 .LCPI11_0:
 	.long	2
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000009:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI11_0(%rip), %xmm1

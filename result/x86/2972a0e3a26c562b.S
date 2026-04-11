@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x408f400000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	movq	%rdi, %rax
 	subq	%rsi, %rax
@@ -16,6 +17,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x408f400000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movq	%rdi, %rax
 	subq	%rsi, %rax

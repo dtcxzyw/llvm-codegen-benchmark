@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001081:
 	cmpl	$32, %esi
 	movl	$-1, %eax

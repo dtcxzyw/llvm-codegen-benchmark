@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004c:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -10,6 +11,7 @@ func000000000000004c:
 
 .LCPI1_0:
 	.quad	0x4049000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vmovsd	.LCPI1_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -21,6 +23,7 @@ func0000000000000044:
 
 .LCPI2_0:
 	.quad	0x3ddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000148:
 	vmovsd	.LCPI2_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1

@@ -51,6 +51,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm1, %xmm1
@@ -109,6 +110,7 @@ func000000000000003f:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003b:
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm1, %xmm1
@@ -167,6 +169,7 @@ func000000000000003b:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003c:
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI2_3(%rip){1to2}, %xmm1, %xmm1
@@ -225,6 +228,7 @@ func000000000000003c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	vgf2p8affineqb	$0, .LCPI3_2(%rip){1to2}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI3_3(%rip){1to2}, %xmm1, %xmm1
@@ -283,6 +287,7 @@ func0000000000000038:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vgf2p8affineqb	$0, .LCPI4_2(%rip){1to2}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI4_3(%rip){1to2}, %xmm1, %xmm1
@@ -315,6 +320,7 @@ func0000000000000003:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	vpaddb	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm2, %xmm2
@@ -348,6 +354,7 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002c:
 	vgf2p8affineqb	$0, .LCPI6_1(%rip){1to2}, %xmm2, %xmm2
 	vpaddb	%xmm1, %xmm1, %xmm1
@@ -407,6 +414,7 @@ func000000000000002c:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002f:
 	vgf2p8affineqb	$0, .LCPI7_2(%rip){1to2}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI7_3(%rip){1to2}, %xmm1, %xmm1
@@ -465,6 +473,7 @@ func000000000000002f:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000003d:
 	vgf2p8affineqb	$0, .LCPI8_2(%rip){1to2}, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI8_3(%rip){1to2}, %xmm0, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	xorb	$1, %sil
 	cmpb	$2, %dil
@@ -6,6 +7,7 @@ func0000000000000002:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	xorb	$1, %sil
 	testb	%dil, %dil
@@ -13,6 +15,7 @@ func0000000000000018:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	xorb	$1, %sil
 	cmpb	$2, %dil
@@ -20,6 +23,7 @@ func0000000000000030:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	xorb	$1, %sil
 	testb	%dil, %dil
@@ -27,6 +31,7 @@ func000000000000000c:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	xorb	$1, %sil
 	cmpb	$2, %dil
@@ -34,6 +39,7 @@ func0000000000000028:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	xorb	$1, %sil
 	testb	%dil, %dil
@@ -41,6 +47,7 @@ func0000000000000014:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	xorb	$1, %sil
 	cmpb	$11, %dil

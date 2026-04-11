@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a1:
 	leal	1(%rdi,%rsi), %eax
 	testb	$2, %al
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	leal	-1(%rdi,%rsi), %eax
 	testb	$32, %al
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e1:
 	addl	%esi, %edi
 	notl	%edi
@@ -18,6 +21,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	addl	%esi, %edi
 	andl	$3, %edi
@@ -25,6 +29,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	leaq	-4(%rdi,%rsi), %rax
 	testq	$-5, %rax

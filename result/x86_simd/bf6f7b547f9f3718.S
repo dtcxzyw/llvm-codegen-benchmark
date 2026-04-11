@@ -3,6 +3,7 @@
 	.long	1
 .LCPI0_1:
 	.quad	268435456
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -13,6 +14,7 @@ func0000000000000002:
 	.long	1114112
 .LCPI1_1:
 	.quad	562949953421312
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vptestnmd	.LCPI1_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	decl	%edx
 	andl	$2147483647, %edx
@@ -10,6 +11,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000128:
 	incl	%edx
 	subq	%rsi, %rdi

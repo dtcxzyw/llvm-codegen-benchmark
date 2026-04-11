@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000180:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -10,6 +11,7 @@ func0000000000000180:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -19,6 +21,7 @@ func0000000000000020:
 
 .LCPI2_0:
 	.quad	-9223372036854775807
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018f:
 	vpbroadcastq	.LCPI2_0(%rip), %ymm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -30,6 +33,7 @@ func000000000000018f:
 
 .LCPI3_0:
 	.quad	258
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002f:
 	vpbroadcastq	.LCPI3_0(%rip), %ymm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -37,6 +41,7 @@ func000000000000002f:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -46,6 +51,7 @@ func0000000000000024:
 
 .LCPI5_0:
 	.quad	-9223372036854775807
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000014f:
 	vpbroadcastq	.LCPI5_0(%rip), %ymm3
 	vpcmpgtq	%ymm3, %ymm2, %ymm2
@@ -53,6 +59,7 @@ func000000000000014f:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000018c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -62,6 +69,7 @@ func000000000000018c:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -71,6 +79,7 @@ func000000000000002c:
 
 .LCPI8_0:
 	.quad	16383
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000010c:
 	vpcmpnleuq	.LCPI8_0(%rip){1to4}, %ymm2, %k0
 	vpmovm2q	%k0, %ymm2
@@ -80,6 +89,7 @@ func000000000000010c:
 
 .LCPI9_0:
 	.quad	131073
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000008f:
 	vpcmpltuq	.LCPI9_0(%rip){1to4}, %ymm2, %k0
 	vpmovm2q	%k0, %ymm2
@@ -87,6 +97,7 @@ func000000000000008f:
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000140:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpgtq	%ymm3, %ymm2, %ymm2

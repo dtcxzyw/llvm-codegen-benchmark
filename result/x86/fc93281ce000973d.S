@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	notb	%dil
 	movzbl	%dil, %eax
@@ -6,6 +7,7 @@ func0000000000000007:
 	leaq	56(,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	testb	$1, %dil
 	movl	$181, %ecx

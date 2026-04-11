@@ -5,6 +5,7 @@
 	.long	0x3de978d5
 .LCPI0_2:
 	.long	0xc3000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vfmadd132ps	.LCPI0_0(%rip){1to16}, %zmm2, %zmm1
 	vpmovzxbd	%xmm0, %zmm0

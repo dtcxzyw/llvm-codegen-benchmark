@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000058:
 	vptestnmq	.LCPI0_1(%rip){1to4}, %ymm1, %k1
 	vptestmd	%xmm0, %xmm0, %k0 {%k1}

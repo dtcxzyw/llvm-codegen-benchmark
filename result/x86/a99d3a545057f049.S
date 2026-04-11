@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	testb	$1, %sil
 	movl	$584400, %eax
@@ -8,6 +9,7 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -18,6 +20,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	andl	$1, %esi
 	incq	%rsi
@@ -25,6 +28,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	testb	$1, %sil
 	movl	$2, %eax

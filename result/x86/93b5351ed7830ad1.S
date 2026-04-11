@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	kmovd	%edi, %k1
 	vmovss	.LCPI0_0(%rip), %xmm2
@@ -11,6 +12,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.long	0xff800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	kmovd	%edi, %k1
 	vmovss	.LCPI1_0(%rip), %xmm2
@@ -21,6 +23,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.long	0x40400000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	kmovd	%edi, %k1
 	vmovss	.LCPI2_0(%rip), %xmm2
@@ -31,6 +34,7 @@ func000000000000000d:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	kmovd	%edi, %k1
 	vmovss	.LCPI3_0(%rip), %xmm2
@@ -41,6 +45,7 @@ func0000000000000008:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	kmovd	%edi, %k1
 	vmovss	.LCPI4_0(%rip), %xmm2
@@ -49,6 +54,7 @@ func0000000000000007:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	kmovd	%edi, %k1
 	vmovss	%xmm1, %xmm1, %xmm1 {%k1} {z}
@@ -56,6 +62,7 @@ func000000000000000c:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	kmovd	%edi, %k1
 	vmovss	%xmm1, %xmm1, %xmm1 {%k1} {z}
@@ -65,6 +72,7 @@ func0000000000000005:
 
 .LCPI7_0:
 	.long	0x36800000
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	kmovd	%edi, %k1
 	vmovss	.LCPI7_0(%rip), %xmm2

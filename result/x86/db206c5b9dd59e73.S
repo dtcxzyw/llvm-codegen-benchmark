@@ -3,6 +3,7 @@
 	.long	0x3f800000
 .LCPI0_1:
 	.long	0x3d4ccccd
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmovss	.LCPI0_1(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -18,6 +19,7 @@ func0000000000000002:
 	.long	0x7149f2ca
 .LCPI1_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -32,6 +34,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	andl	%esi, %edi
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -11,6 +12,7 @@ func0000000000000010:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	andl	%esi, %edi
 	vmovss	.LCPI1_0(%rip), %xmm1

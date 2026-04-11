@@ -33,6 +33,7 @@
 	.byte	22
 	.byte	7
 	.byte	23
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000017:
 	vpsrlw	$8, %xmm1, %xmm1
 	vpmovsxbw	.LCPI0_1(%rip), %ymm2

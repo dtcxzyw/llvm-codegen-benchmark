@@ -23,6 +23,7 @@
 	.quad	2
 .LCPI0_4:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000210:
 	vpcmpltuw	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2

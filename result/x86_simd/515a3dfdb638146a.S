@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm2, %zmm4, %k1
@@ -14,6 +15,7 @@ func0000000000000042:
 
 .LCPI1_0:
 	.quad	0x43d0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -30,6 +32,7 @@ func0000000000000022:
 
 .LCPI2_0:
 	.quad	0xc3d0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -46,6 +49,7 @@ func000000000000002c:
 
 .LCPI3_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000023:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -60,6 +64,7 @@ func0000000000000023:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002e:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -73,6 +78,7 @@ func000000000000002e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -88,6 +94,7 @@ func0000000000000021:
 
 .LCPI6_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000024:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -102,6 +109,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000012:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpunordpd	%zmm4, %zmm2, %k1
@@ -117,6 +125,7 @@ func0000000000000012:
 
 .LCPI8_0:
 	.quad	0x3fe6666666666666
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000004c:
 	vbroadcastsd	.LCPI8_0(%rip), %zmm4
 	vcmpltpd	%zmm2, %zmm4, %k1
@@ -133,6 +142,7 @@ func000000000000004c:
 
 .LCPI9_0:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000025:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -147,6 +157,7 @@ func0000000000000025:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000003d:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm2, %zmm4, %k1
@@ -160,6 +171,7 @@ func000000000000003d:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000028:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm2, %k1
@@ -173,6 +185,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000e1:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpordpd	%zmm4, %zmm2, %k1
@@ -188,6 +201,7 @@ func00000000000000e1:
 
 .LCPI13_0:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000034:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm2, %zmm4, %k1
@@ -204,6 +218,7 @@ func0000000000000034:
 
 .LCPI14_0:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000035:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm2, %zmm4, %k1
@@ -220,6 +235,7 @@ func0000000000000035:
 
 .LCPI15_0:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000003a:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm2, %zmm4, %k1
@@ -236,6 +252,7 @@ func000000000000003a:
 
 .LCPI16_0:
 	.quad	0x73d658e3ab795204
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000032:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm2, %zmm4, %k1
@@ -250,6 +267,7 @@ func0000000000000032:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000033:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm2, %zmm4, %k1
@@ -267,6 +285,7 @@ func0000000000000033:
 	.quad	0x4066800000000000
 .LCPI18_1:
 	.quad	0x4056800000000000
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000044:
 	vbroadcastsd	.LCPI18_0(%rip), %zmm4
 	vcmpltpd	%zmm2, %zmm4, %k1
@@ -285,6 +304,7 @@ func0000000000000044:
 	.quad	0x4056800000000000
 .LCPI19_1:
 	.quad	0x404e000000000000
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000045:
 	vbroadcastsd	.LCPI19_0(%rip), %zmm4
 	vcmpltpd	%zmm2, %zmm4, %k1
@@ -301,6 +321,7 @@ func0000000000000045:
 
 .LCPI20_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end20, nop
 func000000000000008e:
 	vbroadcastsd	.LCPI20_0(%rip), %zmm4
 	vcmpeqpd	%zmm4, %zmm2, %k1
@@ -315,6 +336,7 @@ func000000000000008e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000088:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpeqpd	%zmm4, %zmm2, %k1
@@ -328,6 +350,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000082:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpeqpd	%zmm4, %zmm2, %k1
@@ -341,6 +364,7 @@ func0000000000000082:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func000000000000008c:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpeqpd	%zmm4, %zmm2, %k1

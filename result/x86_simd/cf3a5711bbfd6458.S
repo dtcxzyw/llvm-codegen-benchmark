@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpmovzxbw	%xmm0, %ymm0
 	vpsllw	$8, %ymm0, %ymm1
@@ -38,6 +39,7 @@ func0000000000000002:
 	.byte	14
 	.byte	15
 	.byte	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vmovdqa	.LCPI1_0(%rip), %ymm1
 	vpermb	%ymm0, %ymm1, %ymm0
@@ -60,17 +62,20 @@ func0000000000000007:
 	.short	2114
 	.short	2114
 	.short	2114
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpmovzxbw	%xmm0, %ymm0
 	vpmullw	.LCPI2_0(%rip), %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vpmovzxbw	%xmm0, %ymm0
 	vpaddw	%ymm0, %ymm0, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vpmovzxbw	%xmm0, %ymm0
 	vpsllw	$3, %ymm0, %ymm1
@@ -94,6 +99,7 @@ func0000000000000005:
 	.short	65518
 	.short	65518
 	.short	65518
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	vpmovzxbw	%xmm0, %ymm0
 	vpmullw	.LCPI5_0(%rip), %ymm0, %ymm0

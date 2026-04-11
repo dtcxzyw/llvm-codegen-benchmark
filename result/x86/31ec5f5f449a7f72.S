@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vcvttss2si	%xmm0, %eax
 	movzbl	%al, %eax
@@ -7,6 +8,7 @@ func000000000000000f:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	vcvttss2si	%xmm0, %eax
 	shll	$24, %eax
@@ -14,6 +16,7 @@ func000000000000000b:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vcvttss2si	%xmm0, %eax
 	movzbl	%al, %eax
@@ -22,6 +25,7 @@ func000000000000000e:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vcvttss2si	%xmm0, %eax
 	movzbl	%al, %eax

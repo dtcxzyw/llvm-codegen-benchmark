@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpmovqb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

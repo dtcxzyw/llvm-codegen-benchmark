@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.byte	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2

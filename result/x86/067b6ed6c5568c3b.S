@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	addb	$-97, %dil
 	movzbl	%dil, %eax
@@ -7,6 +8,7 @@ func00000000000001e1:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001c1:
 	addb	$72, %dil
 	movzbl	%dil, %eax

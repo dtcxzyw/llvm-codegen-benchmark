@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	notb	%dil
 	movzbl	%dil, %eax
@@ -8,6 +9,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000054:
 	notb	%dil
 	movzbl	%dil, %eax
@@ -17,6 +19,7 @@ func0000000000000054:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	andl	$1, %edi
 	xorl	$5, %edi
@@ -24,6 +27,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	andl	$1, %edi
 	orl	$16, %edi
@@ -31,6 +35,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000061:
 	andl	$1, %edi
 	shll	$5, %edi
@@ -39,6 +44,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	andl	$1, %edi
 	movl	$2, %eax
@@ -47,6 +53,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000041:
 	andl	$1, %edi
 	incl	%edi
@@ -54,6 +61,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000058:
 	testb	$1, %dil
 	movl	$16384, %eax
@@ -63,6 +71,7 @@ func0000000000000058:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000021:
 	testb	$1, %dil
 	movl	$17, %eax
@@ -72,6 +81,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000018:
 	testb	$1, %dil
 	movl	$12, %eax
@@ -81,6 +91,7 @@ func0000000000000018:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000c:
 	andl	$1, %edi
 	incl	%edi
@@ -88,6 +99,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000006:
 	testb	$1, %dil
 	movl	$251, %eax
@@ -97,6 +109,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000046:
 	notb	%dil
 	movzbl	%dil, %eax

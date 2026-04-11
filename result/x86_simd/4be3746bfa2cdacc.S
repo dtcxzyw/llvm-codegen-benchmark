@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpnlepd	%zmm1, %zmm4, %k1
@@ -7,6 +8,7 @@ func0000000000000003:
 	vaddpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm1, %k1
@@ -15,6 +17,7 @@ func0000000000000002:
 	vaddpd	%zmm3, %zmm1, %zmm1 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpordpd	%zmm4, %zmm1, %k1

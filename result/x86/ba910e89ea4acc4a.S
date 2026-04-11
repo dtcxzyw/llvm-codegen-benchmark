@@ -5,6 +5,7 @@
 	.long	0x3fc00000
 .LCPI0_2:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000424:
 	vmovss	.LCPI0_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1
@@ -20,6 +21,7 @@ func0000000000000424:
 	.long	0x42c80000
 .LCPI1_2:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000422:
 	vmovss	.LCPI1_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1
@@ -33,6 +35,7 @@ func0000000000000422:
 	.long	0x437f0000
 .LCPI2_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000042b:
 	vmovss	.LCPI2_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1
@@ -47,6 +50,7 @@ func000000000000042b:
 	.long	0x437f0000
 .LCPI3_1:
 	.long	0x43800000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000042d:
 	vmovss	.LCPI3_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1
@@ -61,6 +65,7 @@ func000000000000042d:
 	.long	0x3f800000
 .LCPI4_1:
 	.long	0x3d25aee6
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000423:
 	vmovss	.LCPI4_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1
@@ -73,6 +78,7 @@ func0000000000000423:
 
 .LCPI5_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000428:
 	vmovss	.LCPI5_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1
@@ -85,6 +91,7 @@ func0000000000000428:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000042a:
 	vmovss	.LCPI6_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1
@@ -99,6 +106,7 @@ func000000000000042a:
 	.long	0x3f800000
 .LCPI7_1:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000425:
 	vmovss	.LCPI7_0(%rip), %xmm1
 	vminss	%xmm0, %xmm1, %xmm1

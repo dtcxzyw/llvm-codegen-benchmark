@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x4089f00000000000
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vmovsd	.LCPI0_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -11,6 +12,7 @@ func000000000000000a:
 
 .LCPI1_0:
 	.quad	0x4076800000000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vucomisd	.LCPI1_0(%rip), %xmm0
 	setae	%al
@@ -18,6 +20,7 @@ func000000000000000c:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -26,6 +29,7 @@ func0000000000000004:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -34,6 +38,7 @@ func0000000000000002:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000d:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -44,6 +49,7 @@ func000000000000000d:
 
 .LCPI5_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vucomisd	.LCPI5_0(%rip), %xmm0
 	setne	%al
@@ -51,6 +57,7 @@ func0000000000000006:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000e:
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
@@ -60,6 +67,7 @@ func000000000000000e:
 
 .LCPI7_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vucomisd	.LCPI7_0(%rip), %xmm0
 	setnp	%cl
@@ -71,6 +79,7 @@ func0000000000000008:
 
 .LCPI8_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000b:
 	vucomisd	.LCPI8_0(%rip), %xmm0
 	setbe	%al
@@ -80,6 +89,7 @@ func000000000000000b:
 
 .LCPI9_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000007:
 	vucomisd	.LCPI9_0(%rip), %xmm0
 	setb	%al
@@ -89,6 +99,7 @@ func0000000000000007:
 
 .LCPI10_0:
 	.quad	0xbff0000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000005:
 	vmovsd	.LCPI10_0(%rip), %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -97,6 +108,7 @@ func0000000000000005:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000001:
 	vucomisd	%xmm0, %xmm0
 	setp	%al

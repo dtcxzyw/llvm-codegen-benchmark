@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	andl	$7, %edx
 	leaq	(%rdx,%rsi), %rax
 	xorq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movabsq	$34359738360, %rax
 	andq	%rdx, %rax

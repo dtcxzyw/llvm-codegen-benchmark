@@ -20,6 +20,7 @@
 	.quad	3
 .LCPI0_2:
 	.quad	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm2, %ymm0 {%k1}

@@ -21,6 +21,7 @@
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vmovdqu16	%xmm0, %xmm1 {%k1}
@@ -42,6 +43,7 @@ func0000000000000001:
 	.short	65533
 	.short	65533
 	.short	65533
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vmovdqu16	%xmm0, %xmm1 {%k1}

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000103:
 	imull	%esi, %edi
 	leal	(%rdi,%rdx), %eax

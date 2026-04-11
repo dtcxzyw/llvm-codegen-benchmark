@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b0:
 	vucomiss	%xmm0, %xmm0
 	setp	%cl
@@ -10,6 +11,7 @@ func00000000000000b0:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000003a8:
 	vucomiss	.LCPI1_0(%rip), %xmm0
 	setp	%al
@@ -23,6 +25,7 @@ func00000000000003a8:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000003b0:
 	vucomiss	.LCPI2_0(%rip), %xmm0
 	setp	%al

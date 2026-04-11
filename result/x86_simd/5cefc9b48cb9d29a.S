@@ -18,6 +18,7 @@
 	.short	5243
 .LCPI0_1:
 	.zero	16,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrlw	$2, %ymm0, %ymm0
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0
@@ -46,6 +47,7 @@ func0000000000000003:
 	.short	52429
 .LCPI1_1:
 	.zero	16,129
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpmulhuw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpsrlw	$3, %ymm0, %ymm0
@@ -73,6 +75,7 @@ func000000000000000f:
 	.short	5243
 .LCPI2_1:
 	.zero	16,48
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpsrlw	$2, %ymm0, %ymm0
 	vpmulhuw	.LCPI2_0(%rip), %ymm0, %ymm0
@@ -101,6 +104,7 @@ func0000000000000000:
 	.short	33157
 .LCPI3_1:
 	.zero	16,210
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vpmulhuw	.LCPI3_0(%rip), %ymm0, %ymm0
 	vpsrlw	$7, %ymm0, %ymm0

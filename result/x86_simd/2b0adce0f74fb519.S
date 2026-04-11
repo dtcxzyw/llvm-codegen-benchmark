@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -12,6 +13,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -23,6 +25,7 @@ func0000000000000024:
 
 .LCPI2_0:
 	.quad	16
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c1:
 	vpbroadcastq	.LCPI2_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -34,6 +37,7 @@ func00000000000000c1:
 
 .LCPI3_0:
 	.quad	2048
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	vpbroadcastq	.LCPI3_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -45,6 +49,7 @@ func0000000000000021:
 
 .LCPI4_0:
 	.quad	32
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000e1:
 	vpbroadcastq	.LCPI4_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -56,6 +61,7 @@ func00000000000000e1:
 
 .LCPI5_0:
 	.quad	16384
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpbroadcastq	.LCPI5_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -67,6 +73,7 @@ func0000000000000008:
 
 .LCPI6_0:
 	.quad	32
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	vpbroadcastq	.LCPI6_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -78,6 +85,7 @@ func0000000000000001:
 
 .LCPI7_0:
 	.quad	64
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000041:
 	vpbroadcastq	.LCPI7_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -89,6 +97,7 @@ func0000000000000041:
 
 .LCPI8_0:
 	.quad	4096
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c9:
 	vpbroadcastq	.LCPI8_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -100,6 +109,7 @@ func00000000000000c9:
 
 .LCPI9_0:
 	.quad	4096
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000c4:
 	vpbroadcastq	.LCPI9_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
@@ -111,6 +121,7 @@ func00000000000000c4:
 
 .LCPI10_0:
 	.quad	4096
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000044:
 	vpbroadcastq	.LCPI10_0(%rip), %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2

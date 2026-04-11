@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000cc:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpgtq	%ymm1, %ymm2, %k1
@@ -7,6 +8,7 @@ func00000000000000cc:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpneqq	%ymm2, %ymm1, %k1
@@ -17,6 +19,7 @@ func000000000000018c:
 
 .LCPI2_0:
 	.quad	32
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000168:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpnltq	%ymm2, %ymm1, %k1
@@ -25,6 +28,7 @@ func0000000000000168:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ca:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
@@ -34,6 +38,7 @@ func00000000000000ca:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000008c:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm1, %k1
@@ -44,6 +49,7 @@ func000000000000008c:
 
 .LCPI5_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000094:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpltuq	%ymm2, %ymm1, %k1
@@ -54,6 +60,7 @@ func0000000000000094:
 
 .LCPI6_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000021:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpeqq	%ymm2, %ymm1, %k1
@@ -62,6 +69,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000141:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpgtq	%ymm2, %ymm1, %k1
@@ -72,6 +80,7 @@ func0000000000000141:
 
 .LCPI8_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c8:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpgtq	%ymm1, %ymm2, %k1
@@ -80,6 +89,7 @@ func00000000000000c8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000181:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpneqq	%ymm2, %ymm1, %k1
@@ -90,6 +100,7 @@ func0000000000000181:
 
 .LCPI10_0:
 	.quad	65534
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000d4:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpgtq	%ymm1, %ymm2, %k1
@@ -98,6 +109,7 @@ func00000000000000d4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000014a:
 	vpmovsxdq	%xmm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3

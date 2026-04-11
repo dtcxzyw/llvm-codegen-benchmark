@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x4415af1d78b58c40
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddsd	%xmm1, %xmm0, %xmm0
 	vcvtsd2ss	%xmm0, %xmm0, %xmm0

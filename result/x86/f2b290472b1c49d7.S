@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	addb	$95, %sil
 	cmpb	$63, %sil
@@ -8,6 +9,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	decb	%sil
 	cmpb	$2, %sil
@@ -17,6 +19,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	addb	$-3, %sil
 	cmpb	$5, %sil
@@ -26,6 +29,7 @@ func0000000000000088:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000084:
 	addb	$-91, %sil
 	cmpb	$-26, %sil
@@ -35,6 +39,7 @@ func0000000000000084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c4:
 	addb	$112, %sil
 	cmpb	$48, %sil
@@ -44,6 +49,7 @@ func00000000000000c4:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000008c:
 	addb	$-91, %sil
 	cmpb	$-26, %sil
@@ -53,6 +59,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000484:
 	addb	$-5, %sil
 	cmpb	$68, %sil
@@ -62,6 +69,7 @@ func0000000000000484:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000184:
 	addb	$-42, %sil
 	cmpb	$18, %sil
@@ -71,6 +79,7 @@ func0000000000000184:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000481:
 	addb	$-4, %sil
 	cmpb	$3, %sil
@@ -80,12 +89,14 @@ func0000000000000481:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000021:
 	xorb	$19, %sil
 	orb	%dil, %sil
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000584:
 	decb	%sil
 	cmpb	$2, %sil
@@ -95,6 +106,7 @@ func0000000000000584:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000508:
 	addb	$-5, %sil
 	cmpb	$-3, %sil
@@ -104,6 +116,7 @@ func0000000000000508:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000002c:
 	cmpb	$14, %sil
 	setne	%cl
@@ -112,6 +125,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000504:
 	addb	$80, %sil
 	cmpb	$72, %sil
@@ -121,12 +135,14 @@ func0000000000000504:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000821:
 	xorb	$13, %sil
 	orb	%dil, %sil
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000824:
 	cmpb	$93, %sil
 	sete	%cl

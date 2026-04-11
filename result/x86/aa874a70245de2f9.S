@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	cmpb	$3, %dil
 	setne	%al
@@ -6,6 +7,7 @@ func0000000000000003:
 	addb	$-125, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	cmpb	$16, %dil
 	setb	%al

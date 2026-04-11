@@ -12,6 +12,7 @@
 	.short	2048
 	.short	2048
 	.short	2048
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmw	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
@@ -41,6 +42,7 @@ func0000000000000021:
 	.short	9
 .LCPI1_1:
 	.long	9
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpcmpeqw	.LCPI1_0(%rip), %xmm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

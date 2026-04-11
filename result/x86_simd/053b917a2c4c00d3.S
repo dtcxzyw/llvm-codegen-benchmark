@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpneqps	%zmm1, %zmm0, %k0
@@ -7,6 +8,7 @@ func000000000000000e:
 	vcvtdq2ps	%zmm0, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpleps	%zmm1, %zmm0, %k0
@@ -15,6 +17,7 @@ func0000000000000014:
 	vcvtdq2ps	%zmm0, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpltps	%zmm0, %zmm1, %k0
@@ -23,6 +26,7 @@ func0000000000000008:
 	vcvtdq2ps	%zmm0, %zmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpleps	%zmm0, %zmm1, %k0

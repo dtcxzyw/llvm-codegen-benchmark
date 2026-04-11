@@ -45,6 +45,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpandq	.LCPI0_3(%rip){1to4}, %ymm0, %ymm0
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1
@@ -58,6 +59,7 @@ func0000000000000041:
 	.quad	1
 .LCPI1_1:
 	.quad	127756
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpblendd	$170, %ymm1, %ymm0, %ymm0
@@ -74,6 +76,7 @@ func0000000000000061:
 	.quad	1
 .LCPI2_2:
 	.quad	17585743593472
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000004c:
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1

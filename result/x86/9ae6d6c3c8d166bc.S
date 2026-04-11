@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	movl	$1000, %eax
 	mulxq	%rax, %rcx, %rax
@@ -8,6 +9,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f8:
 	movl	$1000000000, %eax
 	mulxq	%rax, %rax, %rcx
@@ -16,6 +18,7 @@ func00000000000001f8:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f4:
 	movl	$4000000000, %eax
 	mulxq	%rax, %rax, %rcx

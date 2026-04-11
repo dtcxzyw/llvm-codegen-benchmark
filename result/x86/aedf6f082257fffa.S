@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001202:
 	leal	-48(%rdi), %eax
 	cmpl	$10, %eax
@@ -9,6 +10,7 @@ func0000000000001202:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000202:
 	leal	-11(%rdi), %eax
 	cmpl	$3, %eax
@@ -19,6 +21,7 @@ func0000000000000202:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000204:
 	leal	-48(%rsi), %eax
 	cmpl	$10, %eax
@@ -29,6 +32,7 @@ func0000000000000204:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000001204:
 	leal	-44(%rsi), %eax
 	cmpl	$-7, %eax
@@ -39,6 +43,7 @@ func0000000000001204:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000210:
 	leal	-57344(%rdi), %eax
 	cmpl	$6400, %eax
@@ -49,6 +54,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000001214:
 	leal	-65(%rdi), %eax
 	cmpl	$26, %eax

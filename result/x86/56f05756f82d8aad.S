@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000030c:
 	addb	$-54, %sil
 	cmpb	$-6, %sil
@@ -9,6 +10,7 @@ func000000000000030c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000008c:
 	addb	$-3, %sil
 	cmpb	$-2, %sil

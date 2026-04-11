@@ -5,6 +5,7 @@
 	.long	4294967290
 .LCPI0_2:
 	.long	6
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
@@ -12,6 +13,7 @@ func0000000000000020:
 	vpaddd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

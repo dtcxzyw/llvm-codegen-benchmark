@@ -61,6 +61,7 @@
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e7:
 	vpxord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1
@@ -138,6 +139,7 @@ func00000000000000e7:
 	.byte	8
 	.byte	4
 	.byte	2
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ea:
 	vpxord	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1

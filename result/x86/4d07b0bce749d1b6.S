@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	leal	(%rsi,%rsi,4), %eax
 	leal	-48(%rdx,%rax,2), %eax
@@ -6,6 +7,7 @@ func0000000000000010:
 	cmovel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000035:
 	leal	(%rsi,%rsi,4), %eax
 	leal	-48(%rdx,%rax,2), %eax

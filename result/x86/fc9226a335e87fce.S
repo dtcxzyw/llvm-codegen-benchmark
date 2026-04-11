@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000298:
 	cmpq	$128, %rdi
 	movl	$3, %ecx
@@ -8,6 +9,7 @@ func0000000000000298:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	cmpq	$1022, %rdi
@@ -16,6 +18,7 @@ func0000000000000021:
 	cmoveq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	xorl	%eax, %eax
 	movq	%rdi, %rcx
@@ -27,6 +30,7 @@ func0000000000000084:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000294:
 	xorl	%eax, %eax
 	movq	%rdi, %rcx
@@ -40,6 +44,7 @@ func0000000000000294:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000318:
 	xorl	%eax, %eax
 	cmpq	$24, %rdi
@@ -50,6 +55,7 @@ func0000000000000318:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000086:
 	xorl	%ecx, %ecx
 	movq	%rdi, %rax
@@ -61,6 +67,7 @@ func0000000000000086:
 	cmovnsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000108:
 	cmpq	$1048576, %rdi
 	movl	$20, %eax
@@ -71,6 +78,7 @@ func0000000000000108:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000288:
 	cmpq	$2097152, %rdi
 	movl	$4096, %eax
@@ -81,6 +89,7 @@ func0000000000000288:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000034:
 	xorl	%eax, %eax
 	cmpq	$2, %rdi

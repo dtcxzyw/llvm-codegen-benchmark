@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpneqpd	%zmm3, %zmm2, %k1
@@ -6,6 +7,7 @@ func0000000000000021:
 	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpnltpd	%zmm2, %zmm3, %k1
@@ -14,6 +16,7 @@ func0000000000000011:
 
 .LCPI2_0:
 	.quad	0xbee4f8b588e368f1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vcmpltpd	.LCPI2_0(%rip){1to8}, %zmm2, %k1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

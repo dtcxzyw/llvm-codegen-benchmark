@@ -3,6 +3,7 @@
 	.long	0xffffffff
 .LCPI0_1:
 	.long	0x40490fdb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	kmovd	%edi, %k1
 	vmovss	.LCPI0_0(%rip), %xmm1 {%k1}
@@ -15,6 +16,7 @@ func0000000000000004:
 	.long	0xffffffff
 .LCPI1_1:
 	.long	0xc2fe0000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	kmovd	%edi, %k1
 	vmovss	.LCPI1_0(%rip), %xmm1 {%k1}
@@ -24,6 +26,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	kmovd	%edi, %k1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -35,6 +38,7 @@ func000000000000000c:
 
 .LCPI3_0:
 	.long	0x7fc00000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	kmovd	%edi, %k1
 	vmovss	.LCPI3_0(%rip), %xmm1 {%k1}
@@ -46,6 +50,7 @@ func0000000000000003:
 
 .LCPI4_0:
 	.long	0x3d25aee6
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	kmovd	%edi, %k1
 	vxorps	%xmm2, %xmm2, %xmm2

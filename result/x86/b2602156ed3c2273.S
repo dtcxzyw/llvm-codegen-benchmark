@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000025:
 	movl	%esi, %edx
 	addl	$26, %edx
@@ -12,6 +13,7 @@ func0000000000000025:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	addl	$12, %esi
 	imulq	$1321528399, %rsi, %rax
@@ -24,6 +26,7 @@ func0000000000000020:
 	addl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	addl	$-2370, %esi
 	imulq	$1374389535, %rsi, %rax

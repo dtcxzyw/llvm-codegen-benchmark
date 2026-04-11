@@ -1,100 +1,117 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000075:
 	shll	$16, %edx
 	orl	%esi, %edx
 	leal	-1(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000050:
 	shll	$24, %edx
 	orl	%esi, %edx
 	leal	1352829926(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000070:
 	shll	$8, %edx
 	orl	%esi, %edx
 	leal	1640531527(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	shll	$8, %edx
 	orl	%esi, %edx
 	leal	-2027808486(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000007f:
 	shll	$9, %edx
 	orl	%esi, %edx
 	leal	1(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000005c:
 	shll	$16, %edx
 	orl	%esi, %edx
 	leal	2(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000058:
 	shll	$16, %edx
 	orl	%esi, %edx
 	leal	2(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000077:
 	shll	$8, %edx
 	orl	%esi, %edx
 	leal	-56613888(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000064:
 	shll	$8, %edx
 	orl	%edi, %edx
 	leal	10(%rsi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000004:
 	shll	$7, %edx
 	orl	%edi, %edx
 	leal	-16(%rsi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000004d:
 	shll	$24, %edx
 	orl	%edi, %edx
 	leal	9(%rsi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000007:
 	shll	$4, %edx
 	orl	%esi, %edx
 	leal	-56613888(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000073:
 	shll	$9, %edx
 	orl	%esi, %edx
 	leal	1(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000044:
 	shll	$24, %edx
 	orl	%edi, %edx
 	leal	-559038725(%rsi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000006d:
 	shll	$8, %edx
 	orl	%edi, %edx
 	leal	2(%rsi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000071:
 	shll	$8, %edx
 	orl	%esi, %edx
 	leal	2(%rdi,%rdx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000055:
 	shll	$24, %edx
 	orl	%esi, %edx

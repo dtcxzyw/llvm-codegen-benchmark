@@ -3,6 +3,7 @@
 	.long	0xffffffff
 .LCPI0_1:
 	.long	0x40490fdb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpnless	%xmm2, %xmm3, %k1
@@ -16,6 +17,7 @@ func0000000000000034:
 	.long	0xffffffff
 .LCPI1_1:
 	.long	0xc2fe0000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000032:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpnless	%xmm2, %xmm3, %k1
@@ -26,6 +28,7 @@ func0000000000000032:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -37,6 +40,7 @@ func0000000000000022:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltss	%xmm3, %xmm2, %k1
@@ -46,6 +50,7 @@ func0000000000000024:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000008c:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqss	%xmm3, %xmm2, %k1
@@ -57,6 +62,7 @@ func000000000000008c:
 
 .LCPI5_0:
 	.long	0x7fc00000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000013:
 	vcmpunordss	%xmm2, %xmm2, %k1
 	vmovss	.LCPI5_0(%rip), %xmm1 {%k1}
@@ -68,6 +74,7 @@ func0000000000000013:
 
 .LCPI6_0:
 	.long	0x3d25aee6
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000085:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqss	%xmm3, %xmm2, %k1

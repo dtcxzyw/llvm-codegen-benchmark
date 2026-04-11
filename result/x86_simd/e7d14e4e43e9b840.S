@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000025:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmovqw	%ymm1, %xmm1

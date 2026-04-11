@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000078:
 	vpslld	$7, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -7,6 +8,7 @@ func0000000000000078:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002b:
 	vpslld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -15,6 +17,7 @@ func000000000000002b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpslld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -23,6 +26,7 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpslld	$10, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -31,6 +35,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vpslld	$10, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -39,6 +44,7 @@ func0000000000000002:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
 	vpsrld	$12, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -46,6 +52,7 @@ func000000000000002a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000060:
 	vpslld	$2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -54,6 +61,7 @@ func0000000000000060:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000062:
 	vpslld	$8, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -62,6 +70,7 @@ func0000000000000062:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000007a:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -70,6 +79,7 @@ func000000000000007a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000007b:
 	vpslld	$3, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -78,6 +88,7 @@ func000000000000007b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000008:
 	vpslld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -86,6 +97,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000a:
 	vpslld	$4, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

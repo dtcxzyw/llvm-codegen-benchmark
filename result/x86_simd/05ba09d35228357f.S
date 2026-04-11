@@ -22,6 +22,7 @@
 .LCPI0_3:
 	.short	1023
 	.short	1023
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpslld	$6, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0
@@ -54,6 +55,7 @@ func000000000000003f:
 .LCPI1_3:
 	.short	1023
 	.short	1023
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpslld	$6, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0

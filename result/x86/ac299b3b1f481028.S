@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	addq	$4095, %rdx
 	andq	$-4096, %rdx
@@ -7,6 +8,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	addq	$4095, %rdx
 	andq	$-4096, %rdx
@@ -15,6 +17,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f4:
 	addl	$-61440, %edx
 	andl	$-32, %edx
@@ -23,6 +26,7 @@ func00000000000001f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000188:
 	addq	$7, %rdx
 	movabsq	$8589934584, %rax
@@ -32,6 +36,7 @@ func0000000000000188:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000084:
 	addq	$7, %rdx
 	andq	$-8, %rdx
@@ -40,6 +45,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	addq	$7, %rdx
 	andq	$-8, %rdx
@@ -48,6 +54,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000181:
 	addl	$15, %edx
 	andl	$504, %edx
@@ -56,6 +63,7 @@ func0000000000000181:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000088:
 	addq	$3, %rdx
 	andq	$-4, %rdx
@@ -64,6 +72,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000048:
 	addq	$3, %rdx
 	andq	$-4, %rdx
@@ -72,6 +81,7 @@ func0000000000000048:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001f8:
 	addq	$39, %rdx
 	movabsq	$68719476728, %rax
@@ -81,6 +91,7 @@ func00000000000001f8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000184:
 	decl	%edx
 	addq	%rsi, %rdx
@@ -88,6 +99,7 @@ func0000000000000184:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000a:
 	addq	$7, %rdx
 	andq	$-8, %rdx
@@ -96,6 +108,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000001e6:
 	addl	$3, %edx
 	andl	$131068, %edx
@@ -104,6 +117,7 @@ func00000000000001e6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000001a8:
 	addq	$7, %rdx
 	movabsq	$8589934584, %rax
@@ -113,6 +127,7 @@ func00000000000001a8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000a4:
 	incq	%rdx
 	andq	$-2, %rdx

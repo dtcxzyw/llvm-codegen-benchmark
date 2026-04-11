@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	incb	%dil
 	movl	$-1, %eax
@@ -6,6 +7,7 @@ func0000000000000008:
 	notl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001d:
 	addb	$-2, %dil
 	movl	$-1, %eax
@@ -13,6 +15,7 @@ func000000000000001d:
 	notl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000019:
 	incb	%dil
 	movl	$-1, %eax
@@ -20,6 +23,7 @@ func0000000000000019:
 	notl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
 	decb	%dil
 	movl	$-1, %eax
@@ -27,6 +31,7 @@ func0000000000000015:
 	subl	$-128, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000009:
 	decb	%dil
 	movl	$-1, %eax
@@ -34,6 +39,7 @@ func0000000000000009:
 	notl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001a:
 	addb	$-6, %dil
 	movl	$1, %eax
@@ -41,6 +47,7 @@ func000000000000001a:
 	incl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000b:
 	addb	$-3, %dil
 	movl	$1, %eax
@@ -48,6 +55,7 @@ func000000000000000b:
 	incl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000010:
 	decb	%dil
 	movl	$2, %eax
@@ -55,6 +63,7 @@ func0000000000000010:
 	decl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000011:
 	addb	$-8, %dil
 	movl	$128, %eax
@@ -62,6 +71,7 @@ func0000000000000011:
 	decl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000001b:
 	incb	%dil
 	movl	$1, %eax
@@ -69,6 +79,7 @@ func000000000000001b:
 	incl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000001:
 	addb	$-8, %dil
 	movl	$256, %eax
@@ -76,6 +87,7 @@ func0000000000000001:
 	decl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000001f:
 	decb	%dil
 	movl	$1, %eax
@@ -83,6 +95,7 @@ func000000000000001f:
 	incl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000018:
 	decb	%dil
 	movl	$-1, %eax
@@ -90,6 +103,7 @@ func0000000000000018:
 	notl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000000:
 	addb	$-2, %dil
 	movl	$4, %eax
@@ -97,6 +111,7 @@ func0000000000000000:
 	addl	$-4, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000012:
 	addb	$-17, %dil
 	movl	$2, %eax
@@ -104,6 +119,7 @@ func0000000000000012:
 	addl	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000013:
 	addb	$4, %dil
 	movl	$4, %eax
@@ -111,6 +127,7 @@ func0000000000000013:
 	addl	$64, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func000000000000000d:
 	incb	%dil
 	movl	$-1, %eax

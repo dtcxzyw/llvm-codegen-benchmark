@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -52,6 +53,7 @@ func0000000000000000:
 	.quad	2251799813685247
 .LCPI1_1:
 	.quad	4503599627370458
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -61,6 +63,7 @@ func0000000000000017:
 
 .LCPI2_0:
 	.quad	18014398509481983
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0

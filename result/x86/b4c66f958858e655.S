@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vxorpd	.LCPI0_0(%rip){1to2}, %xmm1, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -10,6 +11,7 @@ func0000000000000022:
 
 .LCPI1_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vxorpd	.LCPI1_0(%rip){1to2}, %xmm1, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -19,6 +21,7 @@ func000000000000002a:
 
 .LCPI2_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000027:
 	vxorpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -28,6 +31,7 @@ func0000000000000027:
 
 .LCPI3_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000032:
 	vxorpd	.LCPI3_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
@@ -38,6 +42,7 @@ func0000000000000032:
 
 .LCPI4_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000035:
 	vxorpd	.LCPI4_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
@@ -48,6 +53,7 @@ func0000000000000035:
 
 .LCPI5_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000028:
 	vxorpd	.LCPI5_0(%rip){1to2}, %xmm1, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
@@ -57,6 +63,7 @@ func0000000000000028:
 
 .LCPI6_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000003c:
 	vxorpd	.LCPI6_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
@@ -67,6 +74,7 @@ func000000000000003c:
 
 .LCPI7_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000033:
 	vxorpd	.LCPI7_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
@@ -77,6 +85,7 @@ func0000000000000033:
 
 .LCPI8_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000003a:
 	vxorpd	.LCPI8_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
@@ -87,6 +96,7 @@ func000000000000003a:
 
 .LCPI9_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000023:
 	vxorpd	.LCPI9_0(%rip){1to2}, %xmm1, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1

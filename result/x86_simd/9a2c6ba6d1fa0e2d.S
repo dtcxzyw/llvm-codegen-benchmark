@@ -18,6 +18,7 @@
 	.byte	14
 .LCPI0_1:
 	.long	1047552
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	vpshufb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpmovzxwd	%xmm0, %ymm0
@@ -37,6 +38,7 @@ func000000000000000b:
 .LCPI1_1:
 	.short	248
 	.short	248
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpsrlw	$5, %xmm0, %xmm0
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0

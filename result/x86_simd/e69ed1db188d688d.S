@@ -5,6 +5,7 @@
 	.zero	16,2
 .LCPI0_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000035:
 	vcmpnlepd	%zmm1, %zmm3, %k0
 	vcmpnlepd	%zmm2, %zmm4, %k1

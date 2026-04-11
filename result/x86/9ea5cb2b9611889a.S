@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	decl	%esi
 	imull	%edi, %esi
@@ -9,6 +10,7 @@ func000000000000000a:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	decl	%esi
 	imull	%edi, %esi
@@ -23,6 +25,7 @@ func0000000000000000:
 	cltq
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	decl	%esi
 	imull	%edi, %esi

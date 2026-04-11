@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	movb	$48, %al
 	bzhiq	%rax, %rdx, %rcx
@@ -9,6 +10,7 @@ func0000000000000002:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movabsq	$6442450944, %rcx
 	andq	%rdx, %rcx
@@ -19,6 +21,7 @@ func0000000000000000:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	andl	$8, %edx
 	leaq	(%rsi,%rdx), %rcx

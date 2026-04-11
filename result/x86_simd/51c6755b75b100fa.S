@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpsrad	$6, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
@@ -9,6 +10,7 @@ func0000000000000041:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpsrad	$5, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
@@ -19,6 +21,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vpsrad	$1, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
@@ -29,6 +32,7 @@ func0000000000000026:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
 	vpsrad	$5, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
@@ -41,6 +45,7 @@ func0000000000000061:
 
 .LCPI4_0:
 	.quad	16
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000e6:
 	vpsrad	$1, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1

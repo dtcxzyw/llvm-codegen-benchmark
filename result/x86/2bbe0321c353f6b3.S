@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000205:
 	movabsq	$230584300921369395, %rax
 	cmpq	%rax, %rdx
@@ -9,6 +10,7 @@ func0000000000000205:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000208:
 	movabsq	$88686269585142075, %rax
 	cmpq	%rax, %rdx
@@ -19,6 +21,7 @@ func0000000000000208:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000268:
 	cmpq	$2097152, %rdx
 	movl	$2097152, %eax

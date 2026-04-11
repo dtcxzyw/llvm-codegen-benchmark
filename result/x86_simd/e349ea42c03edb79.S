@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -51,6 +52,7 @@ func0000000000000001:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -103,6 +105,7 @@ func0000000000000015:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -155,6 +158,7 @@ func0000000000000000:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000011:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

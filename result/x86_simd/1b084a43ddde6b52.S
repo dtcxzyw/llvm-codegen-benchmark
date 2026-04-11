@@ -5,6 +5,7 @@
 	.long	0x00800000
 .LCPI0_2:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001a:
 	vandps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vbroadcastss	.LCPI0_1(%rip), %ymm1
@@ -18,6 +19,7 @@ func000000000000001a:
 	.long	0x34000000
 .LCPI1_2:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003a:
 	vandps	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vbroadcastss	.LCPI1_1(%rip), %ymm1
@@ -31,6 +33,7 @@ func000000000000003a:
 	.long	0x3a83126f
 .LCPI2_2:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vandps	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vbroadcastss	.LCPI2_1(%rip), %ymm1
@@ -44,6 +47,7 @@ func0000000000000008:
 	.long	0x7f800000
 .LCPI3_2:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vandps	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vbroadcastss	.LCPI3_1(%rip), %ymm1
@@ -57,6 +61,7 @@ func000000000000000c:
 	.long	0x3727c5ac
 .LCPI4_2:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000038:
 	vandps	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	vbroadcastss	.LCPI4_1(%rip), %ymm1
@@ -70,6 +75,7 @@ func0000000000000038:
 	.long	0x34000000
 .LCPI5_2:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000024:
 	vandps	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vbroadcastss	.LCPI5_1(%rip), %ymm1

@@ -1,34 +1,40 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003c:
 	movzbl	%sil, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	24(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000030:
 	movzbl	%sil, %eax
 	imulq	$88, %rax, %rax
 	leaq	2912(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
 	movzbl	%sil, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	24(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000007f:
 	movzbl	%sil, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	217(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000070:
 	movzbl	%sil, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	248(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000007c:
 	movzbl	%sil, %eax
 	imulq	$568, %rax, %rax

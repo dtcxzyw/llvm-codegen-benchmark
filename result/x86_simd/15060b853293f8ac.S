@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vptestnmq	%ymm2, %ymm2, %k1
 	vpbroadcastb	.LCPI0_1(%rip), %xmm2

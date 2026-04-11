@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	subq	%rdi, %rsi
 	shrq	$3, %rsi
@@ -6,6 +7,7 @@ func0000000000000001:
 	negq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	subl	%edi, %esi
 	shrl	$12, %esi

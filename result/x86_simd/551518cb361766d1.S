@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	256
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -10,6 +11,7 @@ func000000000000000b:
 
 .LCPI1_0:
 	.quad	4261412608
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -19,6 +21,7 @@ func000000000000000c:
 
 .LCPI2_0:
 	.quad	256
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2
@@ -28,6 +31,7 @@ func000000000000000f:
 
 .LCPI3_0:
 	.quad	32
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2
@@ -37,6 +41,7 @@ func000000000000000e:
 
 .LCPI4_0:
 	.quad	32
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2
@@ -46,6 +51,7 @@ func0000000000000002:
 
 .LCPI5_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpandq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2
@@ -55,6 +61,7 @@ func0000000000000008:
 
 .LCPI6_0:
 	.quad	4026503167
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000000:
 	vpandq	.LCPI6_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -64,6 +71,7 @@ func0000000000000000:
 
 .LCPI7_0:
 	.quad	240
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000003:
 	vpandq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -73,6 +81,7 @@ func0000000000000003:
 
 .LCPI8_0:
 	.quad	4294965247
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	vpandq	.LCPI8_0(%rip){1to4}, %ymm2, %ymm2
 	vpternlogq	$254, %ymm0, %ymm1, %ymm2

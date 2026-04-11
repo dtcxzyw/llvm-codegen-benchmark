@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	xorb	$79, %dl
 	xorb	$86, %sil
@@ -7,6 +8,7 @@ func000000000000018c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	testb	%dl, %dl
 	sete	%cl
@@ -16,6 +18,7 @@ func0000000000000021:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	testb	%dl, %dl
 	setne	%cl
@@ -25,6 +28,7 @@ func0000000000000181:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	cmpb	$9, %dl
 	sete	%cl
@@ -34,6 +38,7 @@ func0000000000000024:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000086:
 	cmpb	$26, %dl
 	setb	%cl
@@ -43,6 +48,7 @@ func0000000000000086:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	testb	%dl, %dl
 	sete	%cl
@@ -52,6 +58,7 @@ func000000000000002c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000014a:
 	cmpb	$-64, %dl
 	setge	%cl
@@ -61,6 +68,7 @@ func000000000000014a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000144:
 	cmpb	$-64, %dl
 	setge	%cl
@@ -70,6 +78,7 @@ func0000000000000144:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000184:
 	cmpb	$18, %dl
 	setne	%cl
@@ -79,6 +88,7 @@ func0000000000000184:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000108:
 	cmpb	$-122, %dl
 	setae	%cl
@@ -88,6 +98,7 @@ func0000000000000108:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000084:
 	cmpb	$43, %dl
 	setb	%cl
@@ -97,6 +108,7 @@ func0000000000000084:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000010c:
 	cmpb	$64, %dl
 	setae	%cl
@@ -106,6 +118,7 @@ func000000000000010c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000318:
 	cmpb	$60, %dl
 	setae	%cl
@@ -115,6 +128,7 @@ func0000000000000318:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000c6:
 	orb	%dl, %sil
 	sets	%al

@@ -7,6 +7,7 @@
 	.quad	73
 .LCPI0_3:
 	.quad	9
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vporq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	vplzcntq	%ymm0, %ymm0
@@ -23,6 +24,7 @@ func000000000000001f:
 	.quad	73
 .LCPI1_3:
 	.quad	9
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000005f:
 	vporq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vplzcntq	%ymm0, %ymm0

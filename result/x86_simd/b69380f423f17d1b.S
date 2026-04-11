@@ -7,6 +7,7 @@
 	.quad	32
 .LCPI0_3:
 	.quad	24
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	vpcmpneqd	.LCPI0_0(%rip){1to4}, %xmm0, %k1
 	vptestnmd	.LCPI0_1(%rip){1to4}, %xmm1, %k1 {%k1}
@@ -22,6 +23,7 @@ func0000000000000181:
 	.quad	3
 .LCPI1_3:
 	.quad	4
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqd	.LCPI1_1(%rip){1to4}, %xmm1, %k1

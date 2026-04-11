@@ -19,6 +19,7 @@
 	.short	6553
 	.short	6553
 	.short	6553
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpsrld	$5, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1
@@ -56,6 +57,7 @@ func0000000000000061:
 	.short	6553
 	.short	6553
 	.short	6553
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2

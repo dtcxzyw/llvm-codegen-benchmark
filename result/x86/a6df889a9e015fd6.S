@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
@@ -9,6 +10,7 @@ func0000000000000034:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	testq	%rsi, %rsi
 	movabsq	$2251799813685248, %rax
@@ -18,6 +20,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	testq	%rsi, %rsi
 	movabsq	$2251799813685248, %rax
@@ -27,6 +30,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000294:
 	cmpq	$513, %rsi
 	movq	$-8, %rax
@@ -37,6 +41,7 @@ func0000000000000294:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000301:
 	xorl	%eax, %eax
 	cmpq	$3, %rsi
@@ -47,6 +52,7 @@ func0000000000000301:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000314:
 	cmpq	$524289, %rsi
 	movl	$524287, %eax
@@ -56,6 +62,7 @@ func0000000000000314:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000318:
 	cmpq	$524289, %rsi
 	movq	$-524288, %rax

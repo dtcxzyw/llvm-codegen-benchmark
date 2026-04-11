@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
 	subl	%edi, %esi
 	leal	-16(%rsi), %eax
@@ -6,6 +7,7 @@ func0000000000000011:
 	andl	$63, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	subq	%rdi, %rsi
 	addq	$4, %rsi
@@ -13,6 +15,7 @@ func0000000000000019:
 	movl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	subq	%rdi, %rsi
 	leaq	4(%rsi), %rax

@@ -3,6 +3,7 @@
 	.long	0x80000000
 .LCPI0_1:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm1
 	kmovd	%edi, %k1
@@ -17,6 +18,7 @@ func0000000000000002:
 	.long	0x80000000
 .LCPI1_1:
 	.quad	0x3fb999999999999a
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vxorps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm1
 	kmovd	%edi, %k1

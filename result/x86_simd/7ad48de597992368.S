@@ -49,6 +49,7 @@
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpmaxuw	.LCPI0_1(%rip), %ymm1, %ymm1
@@ -109,6 +110,7 @@ func0000000000000141:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1
 	vpmaxuw	.LCPI1_1(%rip), %ymm1, %ymm1

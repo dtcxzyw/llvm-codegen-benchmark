@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	cmpw	$8, %si
 	setae	%cl
@@ -7,6 +8,7 @@ func0000000000000108:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	movzwl	%si, %eax
 	cmpl	$35615, %eax
@@ -16,6 +18,7 @@ func0000000000000021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018a:
 	testw	%si, %si
 	setne	%cl
@@ -24,6 +27,7 @@ func000000000000018a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	testw	%si, %si
 	sete	%cl
@@ -32,6 +36,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
 	cmpw	$5, %si
 	setne	%cl
@@ -41,6 +46,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000014c:
 	testw	%si, %si
 	setg	%cl
@@ -49,6 +55,7 @@ func000000000000014c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000184:
 	cmpw	$-1, %si
 	setne	%cl
@@ -57,6 +64,7 @@ func0000000000000184:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000188:
 	cmpw	$-1, %si
 	setne	%cl
@@ -65,6 +73,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000081:
 	movzwl	%si, %eax
 	cmpl	$65278, %eax
@@ -74,6 +83,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000101:
 	movzwl	%si, %eax
 	cmpl	$771, %eax
@@ -83,6 +93,7 @@ func0000000000000101:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000181:
 	testw	%si, %si
 	setne	%cl
@@ -91,6 +102,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000024:
 	testw	%si, %si
 	sete	%cl
@@ -99,6 +111,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000008c:
 	cmpw	$120, %si
 	setb	%cl
@@ -107,6 +120,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000028:
 	cmpw	$27, %si
 	sete	%cl
@@ -115,6 +129,7 @@ func0000000000000028:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000158:
 	testw	%si, %si
 	setg	%cl
@@ -123,6 +138,7 @@ func0000000000000158:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000141:
 	testw	%si, %si
 	setg	%cl

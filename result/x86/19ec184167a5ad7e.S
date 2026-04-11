@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000fb:
 	lzcntq	%rdi, %rcx
 	movl	$64, %eax
@@ -7,6 +8,7 @@ func00000000000000fb:
 	incl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f9:
 	lzcntq	%rdi, %rcx
 	movl	$67, %eax
@@ -15,6 +17,7 @@ func00000000000000f9:
 	decl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000079:
 	lzcntq	%rdi, %rcx
 	movl	$67, %eax

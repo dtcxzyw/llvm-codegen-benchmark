@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsrad	$31, %ymm0, %ymm3
@@ -13,6 +14,7 @@ func00000000000000c1:
 
 .LCPI1_0:
 	.long	274877907
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpshufd	$245, %ymm0, %ymm3
@@ -32,6 +34,7 @@ func00000000000000a1:
 	.long	2
 .LCPI2_1:
 	.long	3579139413
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vpshufd	$245, %ymm0, %ymm3

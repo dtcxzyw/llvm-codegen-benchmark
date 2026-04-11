@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000546:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -8,6 +9,7 @@ func0000000000000546:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000421:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -36,6 +38,7 @@ func0000000000000421:
 	.short	3
 .LCPI2_1:
 	.short	3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000428:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpbroadcastw	.LCPI2_1(%rip), %ymm2
@@ -62,6 +65,7 @@ func0000000000000428:
 	.short	6
 	.short	6
 	.short	6
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpeqw	.LCPI3_0(%rip), %ymm0, %k1

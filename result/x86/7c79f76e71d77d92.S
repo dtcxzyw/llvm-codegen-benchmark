@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000884:
 	movslq	%edx, %rax
 	incq	%rsi
@@ -9,6 +10,7 @@ func0000000000000884:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000cc6:
 	movslq	%edx, %rax
 	incq	%rsi
@@ -19,6 +21,7 @@ func0000000000000cc6:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000054a:
 	movslq	%edx, %rax
 	decq	%rsi
@@ -29,6 +32,7 @@ func000000000000054a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000cd4:
 	movslq	%edx, %rax
 	incq	%rsi

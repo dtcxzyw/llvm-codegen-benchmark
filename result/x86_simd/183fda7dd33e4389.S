@@ -7,6 +7,7 @@
 	.long	12
 .LCPI0_3:
 	.long	239
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1

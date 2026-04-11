@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.long	4294967248
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpcmpnltub	.LCPI0_1(%rip), %xmm2, %k1

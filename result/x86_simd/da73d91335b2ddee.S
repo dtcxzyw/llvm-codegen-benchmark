@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	vpcmpltud	%ymm0, %ymm2, %k0
 	vpcmpeqd	%ymm1, %ymm0, %k1
@@ -7,6 +8,7 @@ func0000000000000081:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000146:
 	vpmaxsd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
@@ -14,6 +16,7 @@ func0000000000000146:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a5:
 	vpcmpleud	%ymm0, %ymm2, %k0
 	vpcmpleud	%ymm1, %ymm0, %k1
@@ -22,6 +25,7 @@ func00000000000000a5:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c6:
 	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpcmpgtd	%ymm0, %ymm1, %k1
@@ -30,6 +34,7 @@ func00000000000000c6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000108:
 	vpcmpnleud	%ymm0, %ymm2, %k0
 	vpcmpnleud	%ymm1, %ymm0, %k1
@@ -38,6 +43,7 @@ func0000000000000108:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000cb:
 	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpcmpnltd	%ymm1, %ymm0, %k1
@@ -46,6 +52,7 @@ func00000000000000cb:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000105:
 	vpcmpnleud	%ymm0, %ymm2, %k0
 	vpcmpleud	%ymm1, %ymm0, %k1
@@ -54,6 +61,7 @@ func0000000000000105:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000021:
 	vpcmpeqd	%ymm0, %ymm2, %k0
 	vpcmpeqd	%ymm1, %ymm0, %k1
@@ -62,6 +70,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000124:
 	vpcmpnltud	%ymm0, %ymm2, %k0
 	vpcmpltud	%ymm1, %ymm0, %k1

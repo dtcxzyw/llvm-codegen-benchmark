@@ -8,6 +8,7 @@
 	.short	64536
 	.short	64536
 	.short	64536
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000060:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -25,6 +26,7 @@ func0000000000000060:
 	.short	50
 	.short	50
 	.short	50
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000fb:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -42,6 +44,7 @@ func00000000000000fb:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f0:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -59,6 +62,7 @@ func00000000000000f0:
 	.short	6
 	.short	6
 	.short	6
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000e0:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -67,6 +71,7 @@ func00000000000000e0:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000050:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -85,6 +90,7 @@ func0000000000000050:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -93,6 +99,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000080:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0

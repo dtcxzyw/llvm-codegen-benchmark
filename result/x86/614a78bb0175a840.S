@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
@@ -6,6 +7,7 @@ func0000000000000044:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	leal	(%rsi,%rdx,2), %eax
 	addl	$-2, %edi
@@ -13,6 +15,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	leal	(%rsi,%rdx,8), %eax
 	incl	%edi
@@ -20,6 +23,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	leal	(%rsi,%rdx,2), %eax
 	addl	$6, %edi
@@ -27,6 +31,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000606:
 	leal	(%rsi,%rdx,8), %eax
 	addl	$16, %edi
@@ -34,6 +39,7 @@ func0000000000000606:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	leal	(%rsi,%rdx,8), %eax
 	decl	%edi
@@ -41,6 +47,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000604:
 	shll	$4, %edx
 	addl	%esi, %edx
@@ -49,6 +56,7 @@ func0000000000000604:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000002e6:
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
@@ -56,6 +64,7 @@ func00000000000002e6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000002e1:
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
@@ -63,6 +72,7 @@ func00000000000002e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000041:
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi
@@ -70,6 +80,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000066:
 	leal	(%rsi,%rdx,8), %eax
 	incl	%edi
@@ -77,6 +88,7 @@ func0000000000000066:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000061:
 	leal	(%rsi,%rdx,2), %eax
 	incl	%edi

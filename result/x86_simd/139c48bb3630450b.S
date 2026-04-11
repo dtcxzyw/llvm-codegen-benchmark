@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000060:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqw	%ymm2, %ymm1, %ymm1
@@ -7,6 +8,7 @@ func0000000000000060:
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000063:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqw	%ymm2, %ymm1, %ymm1
@@ -15,6 +17,7 @@ func0000000000000063:
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000051:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtw	%ymm2, %ymm1, %ymm1
@@ -38,6 +41,7 @@ func0000000000000051:
 	.short	65533
 	.short	65533
 	.short	65533
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000040:
 	vpcmpnleuw	.LCPI3_0(%rip), %ymm1, %k0
 	vpmovm2w	%k0, %ymm1

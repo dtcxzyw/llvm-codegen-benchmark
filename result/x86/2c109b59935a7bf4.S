@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a8:
 	movl	%esi, %eax
 	imulq	$-100, %rdi, %rcx
@@ -7,6 +8,7 @@ func00000000000000a8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001f4:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -15,6 +17,7 @@ func00000000000001f4:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f8:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -23,6 +26,7 @@ func00000000000001f8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000308:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -32,6 +36,7 @@ func0000000000000308:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000003f4:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -40,6 +45,7 @@ func00000000000003f4:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	movl	%esi, %eax
 	imulq	$1000000000, %rdi, %rcx
@@ -47,6 +53,7 @@ func000000000000000a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000003f8:
 	movl	%esi, %eax
 	imulq	$1000000, %rdi, %rcx
@@ -56,6 +63,7 @@ func00000000000003f8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000264:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -64,6 +72,7 @@ func0000000000000264:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000002a6:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -73,6 +82,7 @@ func00000000000002a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000204:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -82,6 +92,7 @@ func0000000000000204:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000201:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -91,6 +102,7 @@ func0000000000000201:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000208:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -100,6 +112,7 @@ func0000000000000208:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000002aa:
 	movl	%esi, %eax
 	imulq	$-1000000000, %rdi, %rcx
@@ -108,6 +121,7 @@ func00000000000002aa:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000020a:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -116,6 +130,7 @@ func000000000000020a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000003c6:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi), %rcx
@@ -126,6 +141,7 @@ func00000000000003c6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000003c1:
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi), %rcx

@@ -3,6 +3,7 @@
 	.quad	144115188075855872
 .LCPI0_1:
 	.quad	18040924479227903
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpslld	$31, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -15,6 +16,7 @@ func0000000000000000:
 	.quad	16384
 .LCPI1_1:
 	.quad	262148
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
@@ -26,6 +28,7 @@ func0000000000000004:
 	.quad	98304
 .LCPI2_1:
 	.quad	12884901952
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpslld	$31, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -38,6 +41,7 @@ func0000000000000006:
 	.quad	281474976710656
 .LCPI3_1:
 	.quad	-9223372036854775808
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
@@ -51,6 +55,7 @@ func0000000000000007:
 	.quad	1744830464
 .LCPI4_2:
 	.quad	1099511627780
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1

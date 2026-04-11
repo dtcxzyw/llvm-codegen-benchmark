@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x4059000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vmulpd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm1
 	vcvttpd2dq	%zmm1, %ymm1
@@ -11,6 +12,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.quad	0x402a000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vmulpd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm1
 	vcvttpd2dq	%zmm1, %ymm1
@@ -21,6 +23,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vmulpd	.LCPI2_0(%rip){1to8}, %zmm1, %zmm1
 	vcvttpd2dq	%zmm1, %ymm1
@@ -31,6 +34,7 @@ func0000000000000018:
 
 .LCPI3_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vmulpd	.LCPI3_0(%rip){1to8}, %zmm1, %zmm1
 	vcvttpd2dq	%zmm1, %ymm1
@@ -41,6 +45,7 @@ func000000000000000b:
 
 .LCPI4_0:
 	.quad	0x3fb999999999999a
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vmulpd	.LCPI4_0(%rip){1to8}, %zmm1, %zmm1
 	vcvttpd2dq	%zmm1, %ymm1

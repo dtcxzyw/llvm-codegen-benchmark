@@ -5,6 +5,7 @@
 	.quad	0xc061000000000000
 .LCPI0_2:
 	.quad	0x404ca5dc1a63c1f8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovsd	.LCPI0_0(%rip), %xmm1
 	vfmadd213sd	.LCPI0_1(%rip), %xmm0, %xmm1

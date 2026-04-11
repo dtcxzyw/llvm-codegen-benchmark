@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	shrb	$5, %sil
 	testb	%dil, %dil
@@ -6,6 +7,7 @@ func000000000000002c:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	andb	$-16, %sil
 	cmpb	$32, %sil

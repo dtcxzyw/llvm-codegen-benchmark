@@ -3,6 +3,7 @@
 	.zero	16,192
 .LCPI0_1:
 	.zero	16,63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpsubb	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -14,6 +15,7 @@ func0000000000000008:
 	.zero	16,192
 .LCPI1_1:
 	.zero	16,64
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpsubb	.LCPI1_0(%rip), %xmm0, %xmm0

@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpbroadcastb	.LCPI0_2(%rip), %xmm1
 	vpand	%xmm1, %xmm0, %xmm0

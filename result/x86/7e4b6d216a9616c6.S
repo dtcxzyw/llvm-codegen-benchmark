@@ -3,6 +3,7 @@
 	.long	0x40c90fdb
 .LCPI0_1:
 	.long	0x40490fdb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vaddss	.LCPI0_0(%rip), %xmm0, %xmm1
@@ -17,6 +18,7 @@ func0000000000000024:
 	.long	0x43b40000
 .LCPI1_1:
 	.long	0x43340000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vaddss	.LCPI1_0(%rip), %xmm0, %xmm1
@@ -34,6 +36,7 @@ func0000000000000022:
 	.long	0x40490fdb
 .LCPI2_2:
 	.long	0xc0490fdb
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vsubss	%xmm1, %xmm0, %xmm0
 	vaddss	.LCPI2_0(%rip), %xmm0, %xmm1

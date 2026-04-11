@@ -52,6 +52,7 @@
 .LCPI0_2:
 	.short	48959
 	.short	48959
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vmovdqa	.LCPI0_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2

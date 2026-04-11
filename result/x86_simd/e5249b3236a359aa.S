@@ -21,6 +21,7 @@
 	.short	1
 .LCPI0_3:
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002f4:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1

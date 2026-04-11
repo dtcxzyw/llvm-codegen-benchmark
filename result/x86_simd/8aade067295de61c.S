@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000101:
 	vxorps	%xmm0, %xmm0, %xmm0
 	retq
@@ -7,6 +8,7 @@ func0000000000000101:
 	.long	64
 .LCPI1_1:
 	.long	4294963200
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1
 	vpsllvd	%ymm0, %ymm1, %ymm0

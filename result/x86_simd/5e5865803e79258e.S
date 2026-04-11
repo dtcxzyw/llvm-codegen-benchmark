@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f7fffef
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -15,6 +16,7 @@ func0000000000000043:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -29,6 +31,7 @@ func0000000000000042:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000027:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -44,6 +47,7 @@ func0000000000000027:
 	.long	0x447a0000
 .LCPI3_1:
 	.long	0x3fc00000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000044:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -59,6 +63,7 @@ func0000000000000044:
 	.long	0x437f0000
 .LCPI4_1:
 	.long	0xbf800000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000004b:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -74,6 +79,7 @@ func000000000000004b:
 	.long	0x437f0000
 .LCPI5_1:
 	.long	0x43800000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000004d:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -87,6 +93,7 @@ func000000000000004d:
 
 .LCPI6_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000048:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -100,6 +107,7 @@ func0000000000000048:
 
 .LCPI7_0:
 	.long	0xc0a00000
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002e:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -114,6 +122,7 @@ func000000000000002e:
 
 .LCPI8_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000004a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -126,6 +135,7 @@ func000000000000004a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000024:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -141,6 +151,7 @@ func0000000000000024:
 	.long	0x3f800000
 .LCPI10_1:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000045:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -154,6 +165,7 @@ func0000000000000045:
 
 .LCPI11_0:
 	.long	0x3d25aee6
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000025:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

@@ -1,15 +1,18 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000058:
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000068:
 	addb	%dl, %sil
 	setns	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	addl	%edx, %esi
 	testb	$3, %sil
@@ -17,6 +20,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	addl	%edx, %esi
 	testb	$3, %sil
@@ -24,6 +28,7 @@ func0000000000000018:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	addl	%edx, %esi
 	andl	$-2048, %esi

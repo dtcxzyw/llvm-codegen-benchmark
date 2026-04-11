@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	movq	%rdi, %rax
 	subq	%rsi, %rax
@@ -11,6 +12,7 @@ func0000000000000002:
 	vcvtsi2sd	%rdx, %xmm15, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movq	%rdi, %rax
 	subq	%rsi, %rax

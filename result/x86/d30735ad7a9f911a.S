@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	andl	$31, %esi
 	xorq	$10, %rsi
@@ -6,6 +7,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	testb	$7, %sil
 	sete	%cl
@@ -14,6 +16,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	testb	%sil, %sil
 	sets	%cl
@@ -22,6 +25,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000186:
 	shrl	$13, %esi
 	andl	$1, %esi
@@ -30,6 +34,7 @@ func0000000000000186:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	testl	$8192, %esi
 	sete	%cl
@@ -38,6 +43,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000188:
 	testw	%si, %si
 	setne	%cl
@@ -46,6 +52,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000184:
 	andl	$2, %esi
 	shrl	%esi
@@ -54,12 +61,14 @@ func0000000000000184:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000008c:
 	cmpq	$33554432, %rdi
 	setb	%al
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000081:
 	testb	$1, %sil
 	sete	%cl
@@ -68,6 +77,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000034:
 	btq	$37, %rsi
 	setae	%cl
@@ -77,6 +87,7 @@ func0000000000000034:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000028:
 	shlq	$37, %rsi
 	sete	%cl
@@ -85,6 +96,7 @@ func0000000000000028:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000028c:
 	testb	$48, %sil
 	setne	%cl
@@ -93,6 +105,7 @@ func000000000000028c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000301:
 	movabsq	$9214364837600034816, %rax
 	testq	%rax, %rsi
@@ -102,6 +115,7 @@ func0000000000000301:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000024:
 	testq	$-779184, %rsi
 	sete	%cl
@@ -110,6 +124,7 @@ func0000000000000024:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000294:
 	cmpl	$25, %esi
 	setb	%cl
@@ -118,6 +133,7 @@ func0000000000000294:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000198:
 	andl	$16, %esi
 	shrl	$4, %esi
@@ -126,6 +142,7 @@ func0000000000000198:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000026:
 	andl	$2047, %esi
 	cmpl	$1054, %esi
@@ -135,6 +152,7 @@ func0000000000000026:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000002a:
 	testb	$1, %sil
 	sete	%cl
@@ -143,6 +161,7 @@ func000000000000002a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func000000000000010c:
 	testl	%esi, %esi
 	setne	%cl
@@ -151,6 +170,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end19, nop
 func00000000000000c1:
 	testb	$15, %sil
 	sete	%cl
@@ -159,6 +179,7 @@ func00000000000000c1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func000000000000018a:
 	cmpl	$6, %esi
 	setne	%cl
@@ -167,6 +188,7 @@ func000000000000018a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000141:
 	testb	$1, %sil
 	sete	%cl
@@ -175,6 +197,7 @@ func0000000000000141:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func000000000000014c:
 	testl	%esi, %esi
 	setne	%cl
@@ -183,6 +206,7 @@ func000000000000014c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000084:
 	andq	$-2, %rsi
 	cmpq	$4097, %rsi
@@ -192,6 +216,7 @@ func0000000000000084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end24, nop
 func0000000000000194:
 	shrl	$8, %esi
 	andl	$1, %esi
@@ -200,6 +225,7 @@ func0000000000000194:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end25, nop
 func00000000000000ca:
 	andq	$-8, %rsi
 	cmpq	$25, %rsi
@@ -209,6 +235,7 @@ func00000000000000ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end26, nop
 func0000000000000146:
 	andq	$-8, %rsi
 	cmpq	$25, %rsi

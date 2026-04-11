@@ -44,6 +44,7 @@
 	.byte	0
 .LCPI0_3:
 	.zero	4,32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e4:
 	addl	$-65536, %edx
 	leaq	4(%rsi), %rax
@@ -6,12 +7,14 @@ func00000000000000e4:
 	cmovaeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	leaq	12(%rsi), %rax
 	cmpl	$1, %edx
 	cmovneq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000064:
 	incl	%edx
 	leaq	5(%rsi), %rax
@@ -19,6 +22,7 @@ func0000000000000064:
 	cmovaeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000e1:
 	leaq	28(%rsi), %rax
 	cmpl	$1, %edx

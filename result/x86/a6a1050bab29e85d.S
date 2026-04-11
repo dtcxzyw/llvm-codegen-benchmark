@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	incq	%rdi
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
@@ -12,6 +13,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	incq	%rdi
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
@@ -20,6 +22,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	decq	%rdi
 	vcvtusi2sd	%rdi, %xmm15, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000302:
 	testq	%rsi, %rsi
 	movl	$20, %eax
@@ -7,6 +8,7 @@ func0000000000000302:
 	cmovneq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	testq	%rsi, %rsi
 	movl	$160, %ecx
@@ -16,6 +18,7 @@ func0000000000000042:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000048:
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
@@ -26,6 +29,7 @@ func0000000000000048:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000058:
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
@@ -36,6 +40,7 @@ func0000000000000058:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000308:
 	testq	%rsi, %rsi
 	setne	%al

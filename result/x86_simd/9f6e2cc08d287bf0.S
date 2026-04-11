@@ -20,6 +20,7 @@
 	.long	32768
 .LCPI0_2:
 	.zero	4,128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovdb	%ymm1, %xmm1
 	vpxord	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
@@ -31,6 +32,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpmovdb	%ymm1, %xmm2
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2

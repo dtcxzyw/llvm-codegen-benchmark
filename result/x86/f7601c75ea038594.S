@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c7:
 	testl	%edi, %edi
 	setne	%cl
@@ -12,6 +13,7 @@ func00000000000000c7:
 
 .LCPI1_0:
 	.quad	0x40c3880000000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000006a:
 	cmpl	$5, %edi
 	setl	%cl
@@ -23,6 +25,7 @@ func000000000000006a:
 
 .LCPI2_0:
 	.quad	0x3ee4f8b588e368f1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001b:
 	testl	%edi, %edi
 	sete	%cl
@@ -33,6 +36,7 @@ func000000000000001b:
 
 .LCPI3_0:
 	.quad	0x3fee666666666666
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000012:
 	testl	%edi, %edi
 	sete	%cl
@@ -42,6 +46,7 @@ func0000000000000012:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000017:
 	testl	%edi, %edi
 	sete	%cl
@@ -55,6 +60,7 @@ func0000000000000017:
 
 .LCPI5_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a4:
 	testl	%edi, %edi
 	setg	%cl
@@ -65,6 +71,7 @@ func00000000000000a4:
 
 .LCPI6_0:
 	.quad	0x4014000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000014:
 	cmpl	$7, %edi
 	sete	%cl
@@ -75,6 +82,7 @@ func0000000000000014:
 
 .LCPI7_0:
 	.quad	0x3e7ad7f29abcaf48
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000013:
 	testl	%edi, %edi
 	sete	%cl
@@ -83,6 +91,7 @@ func0000000000000013:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000018:
 	cmpl	$5, %edi
 	sete	%cl
@@ -96,6 +105,7 @@ func0000000000000018:
 
 .LCPI9_0:
 	.quad	0x3fe921fb54442d18
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000065:
 	cmpl	$40, %edi
 	setl	%cl
@@ -107,6 +117,7 @@ func0000000000000065:
 
 .LCPI10_0:
 	.quad	0x3fd999999999999a
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000001a:
 	testl	%edi, %edi
 	sete	%cl

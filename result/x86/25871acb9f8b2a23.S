@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	movzwl	%si, %eax
 	imull	$43691, %eax, %eax
@@ -7,6 +8,7 @@ func000000000000000f:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	movzwl	%si, %eax
 	imull	$43691, %eax, %eax
@@ -15,6 +17,7 @@ func000000000000000e:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	movzwl	%si, %eax
 	imull	$65794, %eax, %eax
@@ -22,6 +25,7 @@ func000000000000000c:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	movzwl	%si, %eax
 	imull	$65794, %eax, %eax

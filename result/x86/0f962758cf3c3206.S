@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000df:
 	addl	%edx, %esi
 	shrl	%esi
@@ -7,6 +8,7 @@ func00000000000000df:
 	leaq	4(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	addl	%edx, %esi
 	shrl	%esi

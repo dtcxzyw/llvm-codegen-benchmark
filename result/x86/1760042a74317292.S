@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -7,6 +8,7 @@ func0000000000000026:
 	shrl	$31, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	testb	$1, %dil
 	movl	$1, %eax
@@ -15,6 +17,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000101:
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -24,6 +27,7 @@ func0000000000000101:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	testb	$1, %dil
@@ -32,6 +36,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001a6:
 	xorl	%eax, %eax
 	testb	$1, %dil

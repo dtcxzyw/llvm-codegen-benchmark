@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsrlq	$16, %ymm0, %ymm1
 	vpternlogq	$40, .LCPI0_1(%rip){1to4}, %ymm1, %ymm0

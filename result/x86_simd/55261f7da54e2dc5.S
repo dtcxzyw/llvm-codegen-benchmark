@@ -16,6 +16,7 @@
 	.short	38
 	.short	38
 	.short	38
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpaddw	.LCPI0_0(%rip), %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
@@ -122,6 +123,7 @@ func0000000000000006:
 	.short	38
 	.short	38
 	.short	38
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddw	.LCPI1_0(%rip), %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2

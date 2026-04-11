@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	andq	$-2, %rdi
 	cmpq	$4, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
 	andq	$-16, %rdi
 	cmpq	$16, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	shrq	$8, %rdi
 	movabsq	$-54043195528445953, %rax
@@ -20,6 +23,7 @@ func0000000000000028:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	shrq	$5, %rdi
 	decq	%rdi
@@ -27,6 +31,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000034:
 	shrq	$7, %rdi
 	decq	%rdi
@@ -34,16 +39,19 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a1:
 	cmpq	$32, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000e1:
 	cmpq	$128, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000b8:
 	shrq	$2, %rdi
 	addq	$-4, %rdi
@@ -51,6 +59,7 @@ func00000000000000b8:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000038:
 	shrq	$3, %rdi
 	movabsq	$-614891469123651722, %rax

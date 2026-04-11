@@ -14,6 +14,7 @@
 	.long	4294967294
 .LCPI0_3:
 	.short	32
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003a5:
 	vpbroadcastw	.LCPI0_3(%rip), %xmm2
 	vpsubw	%xmm1, %xmm2, %xmm1

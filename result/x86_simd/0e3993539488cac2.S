@@ -5,6 +5,7 @@
 	.long	8
 .LCPI0_2:
 	.long	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000049:
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -15,6 +16,7 @@ func0000000000000049:
 	.long	8
 .LCPI1_1:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vorps	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -23,6 +25,7 @@ func0000000000000043:
 
 .LCPI2_0:
 	.long	10
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vorps	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -31,6 +34,7 @@ func0000000000000002:
 	.long	16
 .LCPI3_1:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -44,6 +48,7 @@ func0000000000000014:
 	.long	2
 .LCPI4_2:
 	.long	32
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -56,6 +61,7 @@ func0000000000000030:
 	.long	1048576
 .LCPI5_2:
 	.long	2097152
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000042:
 	vpcmpeqd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -66,6 +72,7 @@ func0000000000000042:
 	.long	4
 .LCPI6_1:
 	.long	8
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000055:
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -79,6 +86,7 @@ func0000000000000055:
 	.long	8
 .LCPI7_2:
 	.long	4
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000071:
 	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI7_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -89,6 +97,7 @@ func0000000000000071:
 	.long	2097152
 .LCPI8_1:
 	.long	4194304
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000054:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%ymm2, %ymm1, %k1
@@ -102,6 +111,7 @@ func0000000000000054:
 	.long	8
 .LCPI9_2:
 	.long	4
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000051:
 	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI9_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -114,6 +124,7 @@ func0000000000000051:
 	.long	2048
 .LCPI10_2:
 	.long	201326592
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000048:
 	vpcmpltud	.LCPI10_0(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI10_1(%rip){1to8}, %ymm0, %ymm0 {%k1}

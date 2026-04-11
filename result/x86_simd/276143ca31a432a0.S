@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpaddq	%ymm0, %ymm0, %ymm1
@@ -9,6 +10,7 @@ func0000000000000004:
 	.quad	24
 .LCPI1_1:
 	.quad	20
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1

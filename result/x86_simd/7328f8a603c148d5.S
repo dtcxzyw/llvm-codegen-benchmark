@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000054a:
 	vpaddq	%ymm2, %ymm0, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -8,6 +9,7 @@ func000000000000054a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpaddq	%ymm2, %ymm0, %ymm2
 	vpcmpneqq	%ymm2, %ymm1, %k1

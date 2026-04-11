@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000016:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
@@ -12,6 +13,7 @@ func0000000000000016:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	subq	%rdx, %rsi
 	sarq	$3, %rsi

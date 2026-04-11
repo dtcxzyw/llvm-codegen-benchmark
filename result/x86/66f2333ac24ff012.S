@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	andl	$2147483647, %edi
 	vmovd	%edi, %xmm0
@@ -9,6 +10,7 @@ func0000000000000015:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	addl	%edi, %edi
 	cmpl	$-16777216, %edi
@@ -17,6 +19,7 @@ func0000000000000009:
 
 .LCPI2_0:
 	.long	0x00800000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	andl	$2147483647, %edi
 	vmovd	%edi, %xmm0
@@ -25,6 +28,7 @@ func000000000000000d:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	andl	$2147483647, %edi
 	cmpl	$2139095040, %edi

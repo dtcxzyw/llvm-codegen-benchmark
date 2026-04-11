@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c21:
 	shlq	$53, %rdx
 	cmovneq	%rsi, %rdi
@@ -7,6 +8,7 @@ func0000000000000c21:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	testb	$3, %dl
 	cmovneq	%rsi, %rdi

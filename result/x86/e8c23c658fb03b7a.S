@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000168:
 	rolw	$8, %dx
 	movzwl	%dx, %eax
@@ -7,6 +8,7 @@ func0000000000000168:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000174:
 	rolw	$8, %dx
 	movzwl	%dx, %eax
@@ -15,6 +17,7 @@ func0000000000000174:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000074:
 	rolw	$8, %dx
 	movzwl	%dx, %eax
@@ -23,6 +26,7 @@ func0000000000000074:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000078:
 	rolw	$8, %dx
 	movzwl	%dx, %eax
@@ -31,6 +35,7 @@ func0000000000000078:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000f8:
 	rolw	$8, %dx
 	movzwl	%dx, %eax
@@ -39,6 +44,7 @@ func00000000000000f8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	rolw	$8, %dx
 	movzwl	%dx, %eax

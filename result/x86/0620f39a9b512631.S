@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	shrl	$14, %esi
 	andl	$3, %esi
@@ -6,6 +7,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	shrl	%esi
 	andl	$1, %esi
@@ -13,6 +15,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	shrl	$11, %esi
 	andl	$2047, %esi
@@ -20,6 +23,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	shrl	%esi
 	andl	$4, %esi
@@ -27,6 +31,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000038:
 	shrl	$4, %esi
 	andl	$15, %esi
@@ -35,6 +40,7 @@ func0000000000000038:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000034:
 	shrl	$12, %esi
 	andl	$240, %esi
@@ -43,6 +49,7 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	shrl	$27, %esi
 	andl	$2, %esi
@@ -51,6 +58,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	shrl	$27, %esi
 	andl	$3, %esi
@@ -59,6 +67,7 @@ func0000000000000008:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	shrl	%esi
 	andl	$32640, %esi
@@ -67,6 +76,7 @@ func0000000000000014:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000061:
 	shrl	$8, %esi
 	andl	$4095, %esi

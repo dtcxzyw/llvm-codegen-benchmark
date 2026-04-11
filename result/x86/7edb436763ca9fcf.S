@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	leal	2(%rsi,%rsi), %eax
 	cltq
@@ -6,6 +7,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	shll	$7, %esi
 	addl	$256, %esi
@@ -14,6 +16,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	shll	$6, %esi
 	addl	$64, %esi
@@ -22,6 +25,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	leal	64(,%rsi,4), %eax
 	cltq
@@ -29,6 +33,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a1:
 	leal	64(,%rsi,8), %eax
 	cltq
@@ -36,6 +41,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000121:
 	leal	64(%rsi,%rsi), %eax
 	cltq
@@ -43,6 +49,7 @@ func0000000000000121:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000a6:
 	leal	-1(%rsi,%rsi), %eax
 	cltq
@@ -50,6 +57,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000a4:
 	leal	3(%rsi,%rsi), %eax
 	cltq
@@ -57,6 +65,7 @@ func00000000000000a4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
 	leal	-8(,%rsi,4), %eax
 	cltq
@@ -64,6 +73,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	leal	-1(%rsi,%rsi), %eax
 	cltq
@@ -71,6 +81,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a8:
 	leal	-1(%rsi,%rsi), %eax
 	cltq
@@ -78,6 +89,7 @@ func00000000000000a8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002a:
 	leal	-3(,%rsi,4), %eax
 	cltq
@@ -85,6 +97,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000010a:
 	leal	-2(%rsi,%rsi), %eax
 	cltq
@@ -92,6 +105,7 @@ func000000000000010a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000008a:
 	leal	-12(,%rsi,4), %eax
 	cltq
@@ -99,6 +113,7 @@ func000000000000008a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000ab:
 	shll	$13, %esi
 	addl	$8192, %esi
@@ -107,6 +122,7 @@ func00000000000000ab:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000001a6:
 	leal	-1(%rsi,%rsi), %eax
 	cltq
@@ -114,6 +130,7 @@ func00000000000001a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000aa:
 	leal	-3(,%rsi,4), %eax
 	cltq

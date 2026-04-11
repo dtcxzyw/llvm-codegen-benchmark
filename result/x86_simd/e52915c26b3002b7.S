@@ -8,6 +8,7 @@
 	.short	99
 	.short	99
 	.short	99
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000020f:
 	vpmovzxwd	%xmm1, %ymm1
 	vpcmpnleuw	.LCPI0_0(%rip), %xmm2, %k0

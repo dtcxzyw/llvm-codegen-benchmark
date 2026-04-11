@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000421:
 	leal	1(%rsi), %eax
 	testl	%esi, %esi
@@ -7,6 +8,7 @@ func0000000000000421:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	leal	1(%rsi), %eax
 	xorl	%ecx, %ecx
@@ -16,6 +18,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	leal	1(%rsi), %eax
 	xorl	%ecx, %ecx
@@ -25,6 +28,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c34:
 	leal	1(%rsi), %eax
 	cmpl	$55295, %esi
@@ -34,6 +38,7 @@ func0000000000000c34:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	leal	1(%rsi), %eax
 	xorl	%ecx, %ecx
@@ -43,6 +48,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000c21:
 	leal	1(%rsi), %eax
 	xorl	%ecx, %ecx

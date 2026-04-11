@@ -20,6 +20,7 @@
 	.long	6
 .LCPI0_2:
 	.zero	4,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -46,6 +47,7 @@ func0000000000000010:
 	.zero	1
 .LCPI1_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -75,6 +77,7 @@ func000000000000001f:
 	.long	4294967264
 .LCPI2_2:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -103,6 +106,7 @@ func0000000000000015:
 	.long	2
 .LCPI3_2:
 	.zero	4,252
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpandd	.LCPI3_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
@@ -131,6 +135,7 @@ func0000000000000000:
 	.long	4294967294
 .LCPI4_2:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000017:
 	vpandd	.LCPI4_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1

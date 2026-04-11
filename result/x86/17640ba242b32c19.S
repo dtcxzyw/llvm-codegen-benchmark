@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	shrq	$32, %rsi
 	leaq	8(%rdi), %rax
 	xorq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	shrq	$43, %rsi
 	movabsq	$2266404186210603134, %rax
@@ -12,6 +14,7 @@ func0000000000000001:
 	xorq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	shrq	$32, %rsi
 	movabsq	$1442695040888963407, %rax

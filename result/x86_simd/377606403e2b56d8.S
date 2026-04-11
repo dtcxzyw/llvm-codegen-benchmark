@@ -25,6 +25,7 @@
 	.short	65511
 	.short	65511
 	.short	65511
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpord	.LCPI0_3(%rip){1to4}, %xmm0, %xmm2

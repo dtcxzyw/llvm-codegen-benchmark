@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vpmovsxwd	%xmm0, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k0
@@ -8,6 +9,7 @@ func0000000000000042:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001cc:
 	vpmovsxwd	%xmm0, %ymm2
 	vpcmpled	%ymm2, %ymm1, %k0
@@ -27,6 +29,7 @@ func00000000000001cc:
 	.short	65534
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vpmovsxwd	%xmm0, %ymm2
 	vpcmpgtd	%ymm1, %ymm2, %k0

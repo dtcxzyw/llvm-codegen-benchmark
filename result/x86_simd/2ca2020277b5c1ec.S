@@ -3,6 +3,7 @@
 	.long	0xbd23d70a
 .LCPI0_1:
 	.quad	0xbc91a62633145c07
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vmovq	%xmm0, %rax
 	movabsq	$9218868437227405312, %rcx
@@ -8,6 +9,7 @@ func0000000000000005:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vmovq	%xmm0, %rax
 	movl	$17, %ecx

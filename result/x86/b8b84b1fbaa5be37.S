@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	movl	%esi, %eax
 	subl	%edx, %eax
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	subl	%edx, %esi
 	andl	$-24, %esi
@@ -13,6 +15,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	subl	%edx, %esi
 	andl	$-2, %esi
@@ -21,6 +24,7 @@ func0000000000000042:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000058:
 	subl	%edx, %esi
 	testb	$3, %sil

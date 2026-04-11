@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	addq	%rdx, %rdx
 	testb	$1, %sil
@@ -11,6 +12,7 @@ func0000000000000084:
 	cmovaeq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000d4:
 	addq	%rdx, %rdx
 	testb	$1, %sil

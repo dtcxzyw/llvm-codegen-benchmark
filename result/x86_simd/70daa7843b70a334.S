@@ -33,6 +33,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovq	.LCPI0_1(%rip), %xmm1
 	vpshufb	%xmm0, %xmm1, %xmm0

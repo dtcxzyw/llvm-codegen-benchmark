@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000055:
 	movzbl	%dl, %eax
 	imull	$-100, %eax, %eax
@@ -6,6 +7,7 @@ func0000000000000055:
 	leal	12800(%rdi,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000054:
 	movzbl	%dl, %eax
 	imull	$-748800, %eax, %eax

@@ -43,6 +43,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpandd	.LCPI0_4(%rip){1to8}, %ymm1, %ymm1
 	vptestmd	.LCPI0_1(%rip){1to8}, %ymm0, %k1
@@ -56,6 +57,7 @@ func0000000000000021:
 	.long	63
 .LCPI1_2:
 	.long	131072
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vptestmd	.LCPI1_1(%rip){1to8}, %ymm0, %k1

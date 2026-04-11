@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vmaxss	%xmm2, %xmm3, %xmm2
@@ -7,6 +8,7 @@ func0000000000000024:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vxorps	%xmm3, %xmm3, %xmm3
 	vmaxss	%xmm2, %xmm3, %xmm2
@@ -17,6 +19,7 @@ func0000000000000022:
 
 .LCPI2_0:
 	.long	0x2b8cbccc
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002d:
 	vmovss	.LCPI2_0(%rip), %xmm3
 	vmaxss	%xmm2, %xmm3, %xmm2

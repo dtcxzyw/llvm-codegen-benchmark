@@ -33,6 +33,7 @@
 	.short	65436
 	.short	65436
 	.short	65436
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmaxuw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpaddw	.LCPI0_1(%rip), %ymm0, %ymm0

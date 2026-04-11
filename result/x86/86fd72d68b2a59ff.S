@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	movzbl	%dil, %eax
 	imull	$205, %eax, %ecx
@@ -10,6 +11,7 @@ func000000000000000b:
 	movzbl	%al, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	movzbl	%dil, %eax
 	imull	$205, %eax, %ecx

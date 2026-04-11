@@ -20,6 +20,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000006a4:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm3
 	vpaddd	%ymm2, %ymm3, %ymm2

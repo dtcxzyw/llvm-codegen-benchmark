@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vpmovzxwq	%xmm1, %ymm0
 	retq
@@ -23,6 +24,7 @@ func000000000000002c:
 	.zero	2
 .LCPI1_2:
 	.short	7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000034:
 	vpcmpltuw	.LCPI1_0(%rip), %xmm0, %k1
 	vpbroadcastw	.LCPI1_2(%rip), %xmm0

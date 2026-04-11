@@ -3,6 +3,7 @@
 	.long	2
 .LCPI0_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vpmaxsd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
@@ -15,6 +16,7 @@ func00000000000000e1:
 	.long	3
 .LCPI1_1:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
 	vpmaxsd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
@@ -29,6 +31,7 @@ func00000000000000a4:
 	.long	3
 .LCPI2_1:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	vpmaxsd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm1
@@ -39,6 +42,7 @@ func0000000000000084:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000041:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpmaxsd	%ymm2, %ymm1, %ymm1

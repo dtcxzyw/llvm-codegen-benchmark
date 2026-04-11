@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000085:
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -12,6 +13,7 @@ func0000000000000085:
 
 .LCPI1_0:
 	.long	8191
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000086:
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -23,6 +25,7 @@ func0000000000000086:
 
 .LCPI2_0:
 	.long	511
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -34,6 +37,7 @@ func0000000000000084:
 
 .LCPI3_0:
 	.long	511
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000094:
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -45,6 +49,7 @@ func0000000000000094:
 
 .LCPI4_0:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -76,6 +81,7 @@ func0000000000000001:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000088:
 	vpandd	.LCPI5_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -87,6 +93,7 @@ func0000000000000088:
 
 .LCPI6_0:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000a4:
 	vpandd	.LCPI6_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -96,6 +103,7 @@ func00000000000000a4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ab:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendw	$170, %xmm3, %xmm2, %xmm2
@@ -106,6 +114,7 @@ func00000000000000ab:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000e4:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendw	$170, %xmm3, %xmm2, %xmm2
@@ -118,6 +127,7 @@ func00000000000000e4:
 
 .LCPI9_0:
 	.long	33554431
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000c8:
 	vpandd	.LCPI9_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -127,6 +137,7 @@ func00000000000000c8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a1:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendw	$170, %xmm3, %xmm2, %xmm2

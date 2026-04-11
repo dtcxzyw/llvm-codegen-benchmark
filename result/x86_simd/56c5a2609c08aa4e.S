@@ -16,6 +16,7 @@
 	.byte	22
 	.byte	14
 	.byte	23
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpmovdw	%ymm1, %xmm2
 	vmovdqa	.LCPI0_0(%rip), %xmm1

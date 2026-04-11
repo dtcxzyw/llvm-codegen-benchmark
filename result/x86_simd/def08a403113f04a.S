@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	-5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000126:
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -13,6 +14,7 @@ func0000000000000126:
 
 .LCPI1_0:
 	.quad	-5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000106:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -25,6 +27,7 @@ func0000000000000106:
 
 .LCPI2_0:
 	.quad	511
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000c68:
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -37,6 +40,7 @@ func0000000000000c68:
 
 .LCPI3_0:
 	.quad	511
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c61:
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -49,6 +53,7 @@ func0000000000000c61:
 
 .LCPI4_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000c78:
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -61,6 +66,7 @@ func0000000000000c78:
 
 .LCPI5_0:
 	.quad	15
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000c64:
 	vpandq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -73,6 +79,7 @@ func0000000000000c64:
 
 .LCPI6_0:
 	.quad	36028779839094784
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000c74:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendd	$170, %ymm2, %ymm3, %ymm2
@@ -88,6 +95,7 @@ func0000000000000c74:
 
 .LCPI7_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000c21:
 	vpandq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3

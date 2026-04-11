@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	216180478695505931
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003c:
 	vpmovzxbq	%xmm2, %ymm2
 	vpsllq	$40, %ymm2, %ymm2
@@ -10,6 +11,7 @@ func000000000000003c:
 
 .LCPI1_0:
 	.quad	506832829
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpmovzxbq	%xmm2, %ymm2
 	vpsllq	$24, %ymm2, %ymm2

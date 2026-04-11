@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	orl	%edx, %esi
 	setne	%al
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	cmpl	$-1, %edx
 	cmovnel	%edx, %esi
@@ -13,6 +15,7 @@ func0000000000000021:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	testl	%edx, %edx
 	cmovnel	%edx, %esi
@@ -21,6 +24,7 @@ func000000000000002a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c6:
 	cmpl	$128, %edx
 	cmovgel	%edx, %esi
@@ -29,6 +33,7 @@ func00000000000000c6:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000cc:
 	cmpl	$127, %edx
 	setg	%cl
@@ -38,6 +43,7 @@ func00000000000000cc:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c1:
 	testl	%edx, %edx
 	cmovnsl	%edx, %esi
@@ -46,6 +52,7 @@ func00000000000000c1:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000ca:
 	testl	%edx, %edx
 	cmovnsl	%edx, %esi

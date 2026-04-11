@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	shrl	$2, %esi
 	andl	$4, %esi
@@ -6,6 +7,7 @@ func000000000000000f:
 	leaq	(%rdi,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	shrl	$23, %esi
 	movzbl	%sil, %eax

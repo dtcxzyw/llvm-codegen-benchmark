@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testb	%sil, %sil
 	sete	%al
@@ -6,6 +7,7 @@ func0000000000000001:
 	incb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	testb	%sil, %sil
 	sets	%al
@@ -13,6 +15,7 @@ func0000000000000006:
 	shlb	$7, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	cmpb	$96, %sil
 	setne	%al
@@ -24,6 +27,7 @@ func000000000000000c:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	andb	$1, %dil
 	shlb	$3, %dil
@@ -34,6 +38,7 @@ func0000000000000008:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	cmpb	$3, %sil

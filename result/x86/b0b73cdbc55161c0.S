@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000037:
 	andl	$983040, %edi
 	leal	65536(%rdi), %eax
@@ -6,6 +7,7 @@ func0000000000000037:
 	orb	$-16, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	leal	4064(%rdi), %eax
 	shrl	$4, %eax

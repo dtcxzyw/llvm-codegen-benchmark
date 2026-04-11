@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
 	shrq	$2, %rsi
 	testl	%esi, %esi
@@ -6,6 +7,7 @@ func0000000000000086:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	shrq	$3, %rsi
 	cmpl	$3, %esi

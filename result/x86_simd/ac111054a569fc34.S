@@ -3,6 +3,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpeqb	%xmm2, %xmm1, %k1
 	vpbroadcastb	.LCPI0_1(%rip), %xmm1
@@ -10,6 +11,7 @@ func0000000000000001:
 	vmovdqa	%xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpcmpnleub	%xmm2, %xmm1, %k1
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}

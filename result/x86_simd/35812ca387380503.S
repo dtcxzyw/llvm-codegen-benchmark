@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	11
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000474:
 	vpcmpltud	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -10,6 +11,7 @@ func0000000000000474:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000161:
 	vpcmpeqd	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -22,6 +24,7 @@ func0000000000000161:
 
 .LCPI2_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000178:
 	vpcmpeqd	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -33,6 +36,7 @@ func0000000000000178:
 
 .LCPI3_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000174:
 	vpcmpeqd	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -44,6 +48,7 @@ func0000000000000174:
 
 .LCPI4_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000108:
 	vpcmpeqd	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1

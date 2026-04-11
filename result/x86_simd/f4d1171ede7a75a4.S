@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vdivps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
@@ -10,6 +11,7 @@ func000000000000000a:
 
 .LCPI1_0:
 	.long	8192
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vdivps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0

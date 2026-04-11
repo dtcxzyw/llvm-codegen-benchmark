@@ -1,19 +1,23 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	imulq	$100, %rdi, %rax
 	vcvtusi2sd	%rax, %xmm15, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	leaq	(%rdi,%rdi,2), %rax
 	vcvtsi2sd	%rax, %xmm15, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	leaq	(%rdi,%rdi,4), %rax
 	vcvtusi2sd	%rax, %xmm15, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	shlq	$2, %rdi
 	leaq	(%rdi,%rdi,4), %rax

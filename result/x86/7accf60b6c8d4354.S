@@ -2,6 +2,7 @@
 .LCPI0_0:
 	.quad	0x3fb999999999999a
 	.quad	0x401c000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	xorl	%eax, %eax
 	testl	%edi, %edi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000059:
 	andl	$1, %esi
 	xorl	%eax, %eax
@@ -8,6 +9,7 @@ func0000000000000059:
 	leal	32769(%rsi,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -19,6 +21,7 @@ func0000000000000043:
 	leal	9(%rax,%rcx,4), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -30,6 +33,7 @@ func0000000000000042:
 	orl	$1073742080, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	testb	$1, %sil
 	jne	.LBB3_1
@@ -47,6 +51,7 @@ func0000000000000003:
 	jne	.LBB3_4
 	jmp	.LBB3_5
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000069:
 	notb	%sil
 	movzbl	%sil, %ecx

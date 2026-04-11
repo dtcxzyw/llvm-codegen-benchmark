@@ -3,6 +3,7 @@
 	.quad	96
 .LCPI0_1:
 	.quad	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1

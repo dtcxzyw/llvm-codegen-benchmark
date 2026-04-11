@@ -20,6 +20,7 @@
 .LCPI0_2:
 	.short	65532
 	.short	65532
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpsraw	$15, %xmm0, %xmm1
@@ -48,6 +49,7 @@ func0000000000000001:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0

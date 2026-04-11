@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008a:
 	shrq	$4, %rsi
 	imull	$-858993459, %esi, %eax
@@ -7,6 +8,7 @@ func000000000000008a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	shrq	$3, %rsi
 	imull	$-1227133513, %esi, %eax

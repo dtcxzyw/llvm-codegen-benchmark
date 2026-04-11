@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vaddpd	%zmm0, %zmm2, %zmm2
 	vaddpd	%zmm1, %zmm3, %zmm3
@@ -16,6 +17,7 @@ func0000000000000005:
 
 .LCPI1_0:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vaddpd	%zmm0, %zmm2, %zmm2
 	vaddpd	%zmm1, %zmm3, %zmm3
@@ -29,6 +31,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vaddpd	%zmm2, %zmm0, %zmm2
 	vaddpd	%zmm3, %zmm1, %zmm3

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvttsd2si	%xmm0, %eax
 	leal	347(%rax), %ecx
@@ -8,6 +9,7 @@ func0000000000000002:
 	sarl	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vcvttsd2si	%xmm0, %eax
 	leal	7(%rax), %ecx

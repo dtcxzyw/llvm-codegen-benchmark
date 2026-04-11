@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	orl	%esi, %edi
 	movq	$-273940481, %rcx
@@ -6,6 +7,7 @@ func0000000000000001:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000038:
 	orl	%esi, %edi
 	xorl	%eax, %eax
@@ -14,6 +16,7 @@ func0000000000000038:
 	shll	$4, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000024:
 	orl	%esi, %edi
 	xorl	%eax, %eax
@@ -22,6 +25,7 @@ func0000000000000024:
 	leaq	36(,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	xorl	%eax, %eax
 	orl	%esi, %edi
@@ -29,6 +33,7 @@ func0000000000000021:
 	leaq	(%rax,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000034:
 	orl	%esi, %edi
 	cmpl	$126, %edi
@@ -36,6 +41,7 @@ func0000000000000034:
 	sbbq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000028:
 	orl	%esi, %edi
 	xorl	%eax, %eax

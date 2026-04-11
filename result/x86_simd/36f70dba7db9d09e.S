@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2064
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000b02:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vptestmd	%ymm1, %ymm1, %k0 {%k1}
@@ -16,6 +17,7 @@ func0000000000000b02:
 	.long	5
 .LCPI1_2:
 	.long	16777215
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000006310:
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpcmpneqd	.LCPI1_1(%rip){1to8}, %ymm2, %k0 {%k1}
@@ -27,6 +29,7 @@ func0000000000006310:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000a98:
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vptestnmd	%ymm2, %ymm2, %k0 {%k1}
@@ -36,6 +39,7 @@ func0000000000000a98:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000006058:
 	vptestmd	%ymm2, %ymm2, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
@@ -49,6 +53,7 @@ func0000000000006058:
 	.long	1
 .LCPI4_1:
 	.long	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000006202:
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vpcmpneqd	.LCPI4_1(%rip){1to8}, %ymm2, %k0 {%k1}
@@ -60,6 +65,7 @@ func0000000000006202:
 
 .LCPI5_0:
 	.long	768
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000006298:
 	vpcmpgtd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	vptestmd	%ymm2, %ymm2, %k0 {%k1}
@@ -73,6 +79,7 @@ func0000000000006298:
 	.long	8
 .LCPI6_1:
 	.long	32
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000842:
 	vpbroadcastd	.LCPI6_0(%rip), %ymm3
 	vpcmpeqd	%ymm3, %ymm1, %k1
@@ -87,6 +94,7 @@ func0000000000000842:
 	.long	3
 .LCPI7_1:
 	.long	22
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000630c:
 	vpcmpneqd	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vptestmd	%ymm2, %ymm2, %k0 {%k1}
@@ -102,6 +110,7 @@ func000000000000630c:
 	.long	62
 .LCPI8_2:
 	.long	10
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000006042:
 	vpcmpeqd	.LCPI8_0(%rip){1to8}, %ymm1, %k1
 	vpcmpneqd	.LCPI8_1(%rip){1to8}, %ymm2, %k0 {%k1}
@@ -117,6 +126,7 @@ func0000000000006042:
 	.long	30288
 .LCPI9_2:
 	.long	11172
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000002308:
 	vpcmpneqd	.LCPI9_0(%rip){1to8}, %ymm1, %k1
 	vpcmpltud	.LCPI9_1(%rip){1to8}, %ymm2, %k0 {%k1}
@@ -128,6 +138,7 @@ func0000000000002308:
 
 .LCPI10_0:
 	.long	256
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000006318:
 	vpcmpneqd	.LCPI10_0(%rip){1to8}, %ymm1, %k1
 	vptestmd	%ymm2, %ymm2, %k0 {%k1}
@@ -143,6 +154,7 @@ func0000000000006318:
 	.long	4294967294
 .LCPI11_2:
 	.long	12
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000002318:
 	vpcmpneqd	.LCPI11_0(%rip){1to8}, %ymm1, %k1
 	vpcmpltud	.LCPI11_1(%rip){1to8}, %ymm2, %k0 {%k1}
@@ -154,6 +166,7 @@ func0000000000002318:
 
 .LCPI12_0:
 	.long	1
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000006050:
 	vptestmd	%ymm2, %ymm2, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
@@ -165,6 +178,7 @@ func0000000000006050:
 
 .LCPI13_0:
 	.long	1073741823
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000006288:
 	vpbroadcastd	.LCPI13_0(%rip), %ymm3
 	vpcmpgtd	%ymm3, %ymm1, %k1
@@ -179,6 +193,7 @@ func0000000000006288:
 	.long	2139095040
 .LCPI14_1:
 	.long	15
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000854:
 	vpcmpeqd	.LCPI14_0(%rip){1to8}, %ymm2, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
@@ -192,6 +207,7 @@ func0000000000000854:
 	.long	13
 .LCPI15_1:
 	.long	25
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000006302:
 	vpbroadcastd	.LCPI15_0(%rip), %ymm3
 	vpcmpneqd	%ymm3, %ymm1, %k1
@@ -202,6 +218,7 @@ func0000000000006302:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000b18:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vptestmd	%ymm1, %ymm1, %k0 {%k1}
@@ -213,6 +230,7 @@ func0000000000000b18:
 
 .LCPI17_0:
 	.long	8
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000006048:
 	vpbroadcastd	.LCPI17_0(%rip), %ymm3
 	vpcmpneqd	%ymm3, %ymm2, %k1
@@ -227,6 +245,7 @@ func0000000000006048:
 	.long	30
 .LCPI18_1:
 	.long	31
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000848:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%ymm3, %ymm2, %k1
@@ -243,6 +262,7 @@ func0000000000000848:
 	.long	13
 .LCPI19_2:
 	.long	9
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000002048:
 	vpcmpeqd	.LCPI19_0(%rip){1to8}, %ymm1, %k1
 	vpcmpltud	.LCPI19_1(%rip){1to8}, %ymm2, %k0 {%k1}

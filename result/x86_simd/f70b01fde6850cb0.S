@@ -3,6 +3,7 @@
 	.quad	1
 .LCPI0_1:
 	.quad	40
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpmaxuq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0

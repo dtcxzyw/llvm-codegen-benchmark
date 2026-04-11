@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	orq	%rdx, %rsi
 	movq	%rsi, %rax
@@ -7,6 +8,7 @@ func0000000000000008:
 	cmovbq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	orq	%rdx, %rsi
 	movabsq	$8589934592, %rax
@@ -15,6 +17,7 @@ func0000000000000006:
 	cmovnsq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	leaq	(%rsi,%rdx), %rcx
 	movabsq	$8589934592, %rax
@@ -23,6 +26,7 @@ func0000000000000061:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	orq	%rdx, %rsi
 	movq	%rsi, %rax

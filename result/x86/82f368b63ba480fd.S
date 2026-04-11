@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c5:
 	testq	%rdx, %rdx
 	setne	%al
@@ -8,6 +9,7 @@ func00000000000000c5:
 	addl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
 	testq	%rdx, %rdx
 	sete	%al

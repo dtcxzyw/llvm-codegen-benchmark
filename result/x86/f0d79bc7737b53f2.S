@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testl	%esi, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	testl	%esi, %esi
 	setne	%al
@@ -12,6 +14,7 @@ func000000000000000c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000078:
 	cmpl	$1601, %esi
 	setae	%al
@@ -19,6 +22,7 @@ func0000000000000078:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	testl	%esi, %esi
 	setns	%al
@@ -26,18 +30,21 @@ func000000000000000a:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000066:
 	testl	%esi, %esi
 	setle	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
 	cmpl	$5, %esi
 	setge	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000021:
 	cmpl	$5, %esi
 	sete	%al
@@ -45,6 +52,7 @@ func0000000000000021:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000026:
 	cmpl	$4, %esi
 	setl	%al
@@ -52,18 +60,21 @@ func0000000000000026:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	cmpl	$2, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	cmpl	$3, %esi
 	setae	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000004:
 	testl	$-4096, %esi
 	sete	%al
@@ -71,6 +82,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000006:
 	testl	%esi, %esi
 	sets	%al
@@ -78,18 +90,21 @@ func0000000000000006:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000041:
 	cmpl	$-1, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000006a:
 	cmpl	$2, %esi
 	setge	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000061:
 	testl	%esi, %esi
 	sete	%al
@@ -97,6 +112,7 @@ func0000000000000061:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000006c:
 	testl	%esi, %esi
 	setne	%al

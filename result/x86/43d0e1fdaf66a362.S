@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	notb	%sil
 	movzbl	%sil, %ecx
@@ -10,6 +11,7 @@ func0000000000000003:
 	orl	$8192, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	testb	$1, %sil
 	movl	$-520093697, %ecx
@@ -17,6 +19,7 @@ func0000000000000000:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -28,6 +31,7 @@ func0000000000000002:
 	orl	$1073742080, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	testb	$1, %sil
 	jne	.LBB3_1

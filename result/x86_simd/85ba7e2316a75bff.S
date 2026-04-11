@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	13
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsubd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -9,18 +10,21 @@ func000000000000001f:
 
 .LCPI1_0:
 	.long	4294963200
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsubd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -28,24 +32,28 @@ func000000000000000b:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000010:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001a:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -54,12 +62,14 @@ func000000000000001a:
 
 .LCPI8_0:
 	.long	4294967286
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000003:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsubd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -68,6 +78,7 @@ func0000000000000001:
 
 .LCPI10_0:
 	.long	44
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000017:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsubd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
@@ -76,18 +87,21 @@ func0000000000000017:
 
 .LCPI11_0:
 	.long	11
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000019:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsubd	.LCPI11_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000007:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000002:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -96,6 +110,7 @@ func0000000000000002:
 
 .LCPI14_0:
 	.long	22
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000018:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsubd	.LCPI14_0(%rip){1to4}, %xmm0, %xmm0
@@ -104,12 +119,14 @@ func0000000000000018:
 
 .LCPI15_0:
 	.long	4
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000001c:
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsubd	.LCPI15_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func000000000000001b:
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

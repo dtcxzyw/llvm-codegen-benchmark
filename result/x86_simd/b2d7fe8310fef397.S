@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddps	%zmm2, %zmm2, %zmm2
 	vcmpltps	%zmm1, %zmm2, %k1
@@ -9,6 +10,7 @@ func0000000000000004:
 	.long	0x40ba827a
 .LCPI1_1:
 	.long	0x3ec3ef15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vmulps	.LCPI1_0(%rip){1to16}, %zmm2, %zmm2
 	vcmpnleps	%zmm2, %zmm1, %k1

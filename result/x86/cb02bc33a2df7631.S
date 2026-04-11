@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	leal	2(%rdi,%rdi,4), %eax
 	movl	$3593175255, %ecx

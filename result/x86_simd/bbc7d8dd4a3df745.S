@@ -35,6 +35,7 @@
 	.short	53
 .LCPI0_2:
 	.short	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0

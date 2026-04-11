@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsubq	%ymm2, %ymm0, %ymm2
 	vextracti128	$1, %ymm2, %xmm3

@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovqb	%ymm1, %xmm1
 	vpxor	%xmm1, %xmm0, %xmm0
@@ -43,6 +44,7 @@ func0000000000000001:
 	.zero	1
 .LCPI1_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpmovqb	%ymm1, %xmm1
 	vpbroadcastb	.LCPI1_1(%rip), %xmm2

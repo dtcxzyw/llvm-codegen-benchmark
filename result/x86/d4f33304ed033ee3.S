@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008a:
 	sarq	%rsi
 	subq	%rsi, %rdi
@@ -7,6 +8,7 @@ func000000000000008a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002a8:
 	sarq	$3, %rsi
 	subq	%rsi, %rdi
@@ -17,6 +19,7 @@ func00000000000002a8:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000204:
 	sarq	$52, %rsi
 	subq	%rsi, %rdi
@@ -25,6 +28,7 @@ func0000000000000204:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000002a4:
 	sarq	$32, %rsi
 	subq	%rsi, %rdi
@@ -33,6 +37,7 @@ func00000000000002a4:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000030a:
 	sarq	$2, %rsi
 	subq	%rdi, %rsi

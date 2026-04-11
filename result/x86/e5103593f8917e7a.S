@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	cmpb	$-4, %dil
 	movl	$252, %eax
@@ -6,6 +7,7 @@ func0000000000000000:
 	movzbl	%al, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	cmpb	$18, %dil
 	movl	$18, %eax

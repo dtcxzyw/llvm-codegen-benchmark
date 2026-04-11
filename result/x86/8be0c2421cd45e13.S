@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	testq	%rsi, %rsi
 	movl	$16, %eax
@@ -8,6 +9,7 @@ func00000000000000e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000085:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -17,6 +19,7 @@ func0000000000000085:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a5:
 	testq	%rsi, %rsi
 	sete	%cl
@@ -26,6 +29,7 @@ func00000000000000a5:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c4:
 	xorl	%eax, %eax
 	cmpq	$1, %rsi
@@ -36,6 +40,7 @@ func00000000000000c4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a4:
 	xorl	%eax, %eax
 	cmpq	$1, %rsi

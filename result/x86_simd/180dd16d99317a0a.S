@@ -43,6 +43,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpandq	.LCPI0_2(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2
@@ -96,6 +97,7 @@ func0000000000000041:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpandq	.LCPI1_2(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm2
@@ -107,6 +109,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000004c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
@@ -121,6 +124,7 @@ func000000000000004c:
 	.quad	4294967292
 .LCPI3_1:
 	.quad	8
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm2
@@ -134,6 +138,7 @@ func0000000000000001:
 	.quad	4294967292
 .LCPI4_1:
 	.quad	8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
 	vpbroadcastq	.LCPI4_1(%rip), %ymm2
@@ -143,6 +148,7 @@ func0000000000000008:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000044:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1

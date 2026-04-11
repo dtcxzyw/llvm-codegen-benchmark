@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002a6:
 	leal	4(%rsi,%rdx,4), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002ab:
 	leal	8(%rsi,%rdx,8), %eax
 	cmpl	%edi, %eax
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000686:
 	leal	-1(%rsi,%rdx,2), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	shll	$5, %edx
 	leal	256(%rdx,%rsi), %eax
@@ -24,24 +28,28 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000206:
 	leal	2(%rsi,%rdx,2), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
 	leal	4(%rsi,%rdx,4), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	leal	8(%rsi,%rdx,4), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000009:
 	shll	$4, %edx
 	leal	64(%rdx,%rsi), %eax
@@ -49,12 +57,14 @@ func0000000000000009:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
 	leal	72(%rsi,%rdx,8), %eax
 	cmpl	%edi, %eax
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000025:
 	shll	$10, %edx
 	leal	-972(%rdx,%rsi), %eax
@@ -62,6 +72,7 @@ func0000000000000025:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000028:
 	shll	$10, %edx
 	leal	-940(%rdx,%rsi), %eax
@@ -69,12 +80,14 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000501:
 	leal	8(%rsi,%rdx,4), %eax
 	cmpl	%edi, %eax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000006e6:
 	shll	$10, %edx
 	leal	-56613888(%rdx,%rsi), %eax
@@ -82,6 +95,7 @@ func00000000000006e6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000006:
 	shll	$10, %edx
 	leal	-56613888(%rdx,%rsi), %eax
@@ -89,6 +103,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000006eb:
 	shll	$10, %edx
 	leal	-56613888(%rdx,%rsi), %eax
@@ -96,6 +111,7 @@ func00000000000006eb:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000006a1:
 	shll	$15, %edx
 	leal	-1073741824(%rdx,%rsi), %eax
@@ -103,6 +119,7 @@ func00000000000006a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000007e1:
 	shll	$15, %edx
 	leal	1073741824(%rdx,%rsi), %eax
@@ -110,6 +127,7 @@ func00000000000007e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func00000000000002a8:
 	leal	12(%rsi,%rdx,2), %eax
 	cmpl	%edi, %eax

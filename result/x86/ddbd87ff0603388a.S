@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	andl	$1, %esi
 	leal	-1(%rsi), %eax
@@ -11,6 +12,7 @@ func0000000000000021:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000286:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -24,6 +26,7 @@ func0000000000000286:
 	cmovgel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000108:
 	andl	$1, %esi
 	leal	1(%rsi), %eax
@@ -35,6 +38,7 @@ func0000000000000108:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ca:
 	andl	$1, %esi
 	xorl	$5, %esi
@@ -46,6 +50,7 @@ func00000000000000ca:
 	cmovll	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000318:
 	andl	$1, %esi
 	leal	3(%rsi), %eax
@@ -57,6 +62,7 @@ func0000000000000318:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -70,6 +76,7 @@ func0000000000000084:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000014a:
 	testb	$1, %sil
 	movl	$2648, %eax
@@ -83,6 +90,7 @@ func000000000000014a:
 	cmovll	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -95,6 +103,7 @@ func0000000000000024:
 	cmovael	%edx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000294:
 	andl	$1, %esi
 	movl	$4, %eax

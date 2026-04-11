@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddw	%ymm2, %ymm1, %ymm1
 	vpaddw	%ymm0, %ymm1, %ymm0
@@ -23,6 +24,7 @@ func0000000000000000:
 	.short	65356
 	.short	65356
 	.short	65356
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpaddw	%ymm2, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

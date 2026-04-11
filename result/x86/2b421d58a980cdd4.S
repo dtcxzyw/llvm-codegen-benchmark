@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000110:
 	cmpq	$23, %rsi
 	setae	%al
@@ -8,6 +9,7 @@ func0000000000000110:
 	movzbl	%cl, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	testq	%rsi, %rsi
 	setne	%al
@@ -17,6 +19,7 @@ func0000000000000048:
 	movzbl	%cl, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000118:
 	cmpq	$2, %rsi
 	setb	%al

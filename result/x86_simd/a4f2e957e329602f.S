@@ -8,6 +8,7 @@
 	.short	38
 	.short	38
 	.short	38
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vpaddw	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpextrw	$1, %xmm1, %eax

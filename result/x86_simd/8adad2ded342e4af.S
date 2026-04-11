@@ -5,6 +5,7 @@
 	.zero	16,1
 .LCPI0_2:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %xmm0
@@ -33,6 +34,7 @@ func00000000000000a1:
 	.long	4294967260
 .LCPI1_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0

@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	leaq	(%rsi,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	leaq	(%rsi,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	movl	%esi, %eax
 	testb	$1, %dil
@@ -18,6 +21,7 @@ func0000000000000002:
 	shlq	$32, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	movl	%esi, %eax
 	testb	$1, %dil
@@ -25,6 +29,7 @@ func0000000000000000:
 	shlq	$39, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	movl	%esi, %eax
 	testb	$1, %dil

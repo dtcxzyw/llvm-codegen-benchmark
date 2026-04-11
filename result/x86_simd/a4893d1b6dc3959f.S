@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vptestnmd	%xmm2, %xmm2, %k0
 	vpcmpgtq	%ymm0, %ymm1, %k1
@@ -9,6 +10,7 @@ func0000000000000026:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c4:
 	vpcmpgtq	%ymm1, %ymm2, %k0
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k1
@@ -17,6 +19,7 @@ func00000000000000c4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
 	vptestmd	%xmm2, %xmm2, %k0
 	vpcmpeqq	%ymm1, %ymm0, %k1
@@ -25,6 +28,7 @@ func0000000000000181:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018c:
 	vptestmd	%xmm2, %xmm2, %k0
 	vpcmpneqq	%ymm1, %ymm0, %k1
@@ -33,6 +37,7 @@ func000000000000018c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000188:
 	vptestmd	%xmm2, %xmm2, %k0
 	vpcmpnleuq	%ymm1, %ymm0, %k1
@@ -41,6 +46,7 @@ func0000000000000188:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	vpcmpeqq	%ymm2, %ymm1, %k0
 	vptestmd	%xmm0, %xmm0, %k1
@@ -49,6 +55,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000184:
 	vptestmd	%xmm2, %xmm2, %k0
 	vpcmpltuq	%ymm1, %ymm0, %k1
@@ -57,6 +64,7 @@ func0000000000000184:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000012a:
 	vpcmpnltuq	%ymm2, %ymm1, %k0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -66,6 +74,7 @@ func000000000000012a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000149:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%xmm3, %xmm2, %k0
@@ -75,6 +84,7 @@ func0000000000000149:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000185:
 	vptestmd	%xmm2, %xmm2, %k0
 	vpcmpleuq	%ymm1, %ymm0, %k1
@@ -83,6 +93,7 @@ func0000000000000185:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000189:
 	vptestmd	%xmm2, %xmm2, %k0
 	vpcmpnltuq	%ymm1, %ymm0, %k1
@@ -91,6 +102,7 @@ func0000000000000189:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000ec:
 	vpcmpleq	%ymm2, %ymm1, %k0
 	vptestmd	%xmm0, %xmm0, %k1

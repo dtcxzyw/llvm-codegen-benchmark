@@ -18,6 +18,7 @@
 	.short	0
 	.short	25
 	.short	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm0, %ymm1, %ymm0
@@ -27,6 +28,7 @@ func0000000000000003:
 
 .LCPI1_0:
 	.long	51130563
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpslld	$4, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

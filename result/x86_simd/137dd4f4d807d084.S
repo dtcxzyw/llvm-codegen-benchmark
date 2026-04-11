@@ -32,6 +32,7 @@
 	.byte	10
 	.byte	9
 	.byte	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000032:
 	vpsllq	$3, %ymm1, %ymm1
 	vpsllq	$9, %ymm0, %ymm0

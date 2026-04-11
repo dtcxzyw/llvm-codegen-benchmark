@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x44800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vmovss	.LCPI0_0(%rip), %xmm2
@@ -12,6 +13,7 @@ func0000000000000044:
 
 .LCPI1_0:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vmovss	.LCPI1_0(%rip), %xmm2
@@ -21,6 +23,7 @@ func0000000000000022:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000037:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -30,6 +33,7 @@ func0000000000000037:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000057:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -39,6 +43,7 @@ func0000000000000057:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000077:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -48,6 +53,7 @@ func0000000000000077:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000011:
 	vsubss	%xmm2, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2

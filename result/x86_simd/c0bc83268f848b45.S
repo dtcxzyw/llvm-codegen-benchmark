@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4008636143
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000206:
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -14,6 +15,7 @@ func0000000000000206:
 
 .LCPI1_0:
 	.long	1332920885
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000020a:
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -26,6 +28,7 @@ func000000000000020a:
 
 .LCPI2_0:
 	.long	4294967286
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
@@ -73,6 +76,7 @@ func000000000000000c:
 	.long	4294967293
 .LCPI3_2:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000204:
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -85,6 +89,7 @@ func0000000000000204:
 
 .LCPI4_0:
 	.long	3435973837
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000201:
 	vpsrlq	$4, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -98,6 +103,7 @@ func0000000000000201:
 	.long	2863311531
 .LCPI5_1:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000020c:
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

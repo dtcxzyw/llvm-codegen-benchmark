@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	btl	%edx, %esi
 	setae	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	andb	$15, %dl
 	shrxl	%edx, %esi, %eax
@@ -13,12 +15,14 @@ func0000000000000061:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000004c:
 	btl	%edx, %esi
 	setb	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000006c:
 	andl	$7, %edx
 	btl	%edx, %esi

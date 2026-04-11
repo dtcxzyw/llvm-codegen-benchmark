@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	cmpl	%esi, %edi
 	cmoval	%edi, %esi
 	leal	(,%rsi,4), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	movl	%esi, %eax
 	cmpl	%esi, %edi
@@ -12,6 +14,7 @@ func0000000000000007:
 	shll	$25, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	cmpl	%esi, %edi
 	cmoval	%edi, %esi

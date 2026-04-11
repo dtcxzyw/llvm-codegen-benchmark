@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c2:
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -10,6 +11,7 @@ func00000000000000c2:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000082:
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -19,6 +21,7 @@ func0000000000000082:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000d8:
 	vpsrlvd	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
@@ -27,6 +30,7 @@ func00000000000000d8:
 
 .LCPI3_0:
 	.long	4
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vpsrlvd	%xmm1, %xmm0, %xmm0
 	vptestnmd	.LCPI3_0(%rip){1to4}, %xmm0, %k0
@@ -36,6 +40,7 @@ func0000000000000002:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000098:
 	vpsrlvd	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0

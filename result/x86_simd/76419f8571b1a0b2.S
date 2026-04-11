@@ -16,6 +16,7 @@
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	vpopcntw	%ymm0, %ymm0
 	vpcmpltw	.LCPI0_0(%rip), %ymm0, %k0

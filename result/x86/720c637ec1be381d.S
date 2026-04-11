@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	subq	%rdx, %rsi
 	shrq	%rdi
@@ -6,6 +7,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	shrq	$3, %rdi
@@ -13,6 +15,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	subq	%rdx, %rsi
 	shrq	$9, %rdi
@@ -20,6 +23,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	subq	%rdx, %rsi
 	shrq	$4, %rdi
@@ -27,6 +31,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000085:
 	subq	%rdx, %rsi
 	shrq	$9, %rdi
@@ -34,6 +39,7 @@ func0000000000000085:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a5:
 	subq	%rdx, %rsi
 	shrq	$9, %rdi
@@ -41,6 +47,7 @@ func00000000000000a5:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000054:
 	subq	%rdx, %rsi
 	shrq	%rdi
@@ -48,6 +55,7 @@ func0000000000000054:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000044:
 	subq	%rdx, %rsi
 	shrq	%rdi
@@ -55,6 +63,7 @@ func0000000000000044:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000d8:
 	subq	%rdx, %rsi
 	shrq	$12, %rdi

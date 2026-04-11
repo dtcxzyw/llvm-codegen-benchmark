@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000098:
 	addl	$-57, %edx
 	leal	57(%rdi), %ecx
@@ -7,6 +8,7 @@ func0000000000000098:
 	cmovgel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a9:
 	incl	%edx
 	xorl	%eax, %eax
@@ -15,6 +17,7 @@ func00000000000000a9:
 	leal	-1(%rdi,%rax,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	addl	$-4, %edx
 	xorl	%eax, %eax
@@ -23,6 +26,7 @@ func0000000000000010:
 	leal	16(%rdi,%rax,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000009b:
 	decl	%edx
 	leal	48(%rdi), %eax

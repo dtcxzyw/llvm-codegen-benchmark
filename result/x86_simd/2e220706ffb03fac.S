@@ -8,6 +8,7 @@
 	.short	256
 	.short	256
 	.short	256
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
@@ -36,6 +37,7 @@ func0000000000000001:
 	.short	147
 .LCPI1_2:
 	.short	403
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k1

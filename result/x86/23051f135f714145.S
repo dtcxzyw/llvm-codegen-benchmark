@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
@@ -9,6 +10,7 @@ func0000000000000003:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000031:
 	movabsq	$-4294967296, %rax
 	xorl	%ecx, %ecx
@@ -20,6 +22,7 @@ func0000000000000031:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	movabsq	$-4294967296, %rax
 	xorl	%ecx, %ecx
@@ -31,6 +34,7 @@ func0000000000000011:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000009:
 	xorl	%ecx, %ecx
 	shrq	$32, %rsi
@@ -41,6 +45,7 @@ func0000000000000009:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000029:
 	xorl	%ecx, %ecx
 	cmpq	$16, %rsi

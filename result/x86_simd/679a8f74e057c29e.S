@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	vmulps	%zmm1, %zmm1, %zmm1
 	vfmadd231ps	%zmm0, %zmm0, %zmm1

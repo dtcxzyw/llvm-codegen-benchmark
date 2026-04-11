@@ -52,6 +52,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000047:
 	vpcmpnleub	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastb	.LCPI0_3(%rip), %xmm1
@@ -79,6 +80,7 @@ func0000000000000047:
 	.zero	1
 .LCPI1_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpbroadcastb	.LCPI1_1(%rip), %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %k1

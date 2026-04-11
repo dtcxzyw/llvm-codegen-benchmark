@@ -35,6 +35,7 @@
 	.zero	2
 .LCPI0_2:
 	.short	51
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -65,6 +66,7 @@ func0000000000000010:
 	.zero	2
 .LCPI1_1:
 	.short	223
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -96,6 +98,7 @@ func0000000000000000:
 	.zero	2
 .LCPI2_1:
 	.short	163
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -144,6 +147,7 @@ func0000000000000030:
 	.zero	2
 .LCPI3_2:
 	.short	209
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000038:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0

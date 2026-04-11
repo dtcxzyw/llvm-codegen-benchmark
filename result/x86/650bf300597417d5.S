@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000030c:
 	subq	%rsi, %rdx
 	addq	$421, %rdx
@@ -7,6 +8,7 @@ func000000000000030c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	notq	%rsi
 	addq	%rdx, %rsi
@@ -15,6 +17,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000202:
 	notq	%rsi
 	addq	%rdx, %rsi
@@ -23,12 +26,14 @@ func0000000000000202:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000302:
 	cmpq	%rsi, %rdx
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	subq	%rsi, %rdx
 	incq	%rdx
@@ -37,6 +42,7 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	subq	%rsi, %rdx
 	addq	$2, %rdx

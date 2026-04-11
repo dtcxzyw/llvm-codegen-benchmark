@@ -3,6 +3,7 @@
 	.quad	1
 .LCPI0_1:
 	.long	4095
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpternlogq	$248, .LCPI0_0(%rip){1to4}, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -14,6 +15,7 @@ func0000000000000000:
 	.quad	32512
 .LCPI1_1:
 	.long	32767
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpternlogq	$248, .LCPI1_0(%rip){1to4}, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0

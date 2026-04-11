@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000023:
 	shlq	$32, %rdx
 	leaq	(%rdx,%rdi), %rcx
@@ -7,6 +8,7 @@ func0000000000000023:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	andl	$7, %edx
 	shlq	$48, %rdx
@@ -15,6 +17,7 @@ func000000000000003f:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	andl	$1, %edx
 	shlq	$61, %rdx
@@ -23,6 +26,7 @@ func0000000000000003:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	movzbl	%dl, %ecx
 	shlq	$32, %rcx
@@ -31,6 +35,7 @@ func000000000000000f:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	andq	$-4096, %rdx
 	shlq	$20, %rdx
@@ -38,6 +43,7 @@ func0000000000000002:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002b:
 	shlq	$48, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -45,6 +51,7 @@ func000000000000002b:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000003b:
 	shlq	$32, %rdx
 	leaq	(%rdx,%rdi), %rax
@@ -52,6 +59,7 @@ func000000000000003b:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002f:
 	shll	$8, %edx
 	shlq	$32, %rsi
@@ -59,6 +67,7 @@ func000000000000002f:
 	orq	%rdx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000b:
 	movzbl	%dl, %ecx
 	shlq	$40, %rcx
@@ -67,6 +76,7 @@ func000000000000000b:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000033:
 	shlq	$16, %rdx
 	leaq	(%rdx,%rdi), %rcx
@@ -75,6 +85,7 @@ func0000000000000033:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000c:
 	shlq	$8, %rdx
 	movabsq	$576460752303423488, %rax
@@ -84,6 +95,7 @@ func000000000000000c:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000022:
 	leaq	(%rdi,%rdx,2), %rax
 	andl	$-2147483648, %esi
@@ -91,6 +103,7 @@ func0000000000000022:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000032:
 	leaq	(%rdi,%rdx,2), %rax
 	shll	$7, %esi

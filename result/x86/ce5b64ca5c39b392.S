@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	xorl	%ecx, %ecx
 	testb	$1, %dil
@@ -8,6 +9,7 @@ func0000000000000034:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	andb	$1, %dil
 	xorl	%ecx, %ecx

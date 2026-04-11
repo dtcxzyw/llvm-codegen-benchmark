@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	leal	65536(%rdx), %eax
 	testb	$1, %dil
@@ -7,6 +8,7 @@ func0000000000000003:
 	orl	$131072, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	testb	$1, %dil
 	cmovel	%edx, %esi

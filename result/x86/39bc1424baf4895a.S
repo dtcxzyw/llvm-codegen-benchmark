@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000148:
 	decq	%rdi
 	lzcntq	%rdi, %rax
@@ -9,6 +10,7 @@ func0000000000000148:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000158:
 	decq	%rdi
 	lzcntq	%rdi, %rax

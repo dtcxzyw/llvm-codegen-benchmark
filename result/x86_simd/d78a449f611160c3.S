@@ -39,6 +39,7 @@
 	.long	2048
 .LCPI0_4:
 	.zero	4,254
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandd	.LCPI0_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1
@@ -67,6 +68,7 @@ func0000000000000001:
 	.long	49
 .LCPI1_2:
 	.long	48
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vptestnmb	.LCPI1_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0
@@ -94,6 +96,7 @@ func0000000000000021:
 	.long	196676
 .LCPI2_2:
 	.long	131140
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	vptestnmb	.LCPI2_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	testl	%edx, %edx
 	setne	%cl
@@ -8,6 +9,7 @@ func0000000000000181:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000014c:
 	cmpl	$769, %edx
 	setge	%cl
@@ -17,6 +19,7 @@ func000000000000014c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000141:
 	testl	%edx, %edx
 	setns	%cl
@@ -26,6 +29,7 @@ func0000000000000141:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000188:
 	testl	%edx, %edx
 	setne	%cl
@@ -35,6 +39,7 @@ func0000000000000188:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	testl	%edx, %edx
 	sete	%cl
@@ -44,6 +49,7 @@ func0000000000000021:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000018c:
 	testl	%edx, %edx
 	setne	%cl
@@ -53,6 +59,7 @@ func000000000000018c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000088:
 	cmpl	$63487, %edx
 	setb	%cl
@@ -62,6 +69,7 @@ func0000000000000088:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002a:
 	testl	%edx, %edx
 	sete	%cl
@@ -71,6 +79,7 @@ func000000000000002a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000018a:
 	cmpl	$-1, %edx
 	setne	%cl
@@ -80,6 +89,7 @@ func000000000000018a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000c1:
 	testl	%edx, %edx
 	sets	%cl
@@ -89,6 +99,7 @@ func00000000000000c1:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000028:
 	cmpl	$18, %edx
 	sete	%cl
@@ -98,6 +109,7 @@ func0000000000000028:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000146:
 	cmpl	$2, %edx
 	setge	%cl
@@ -107,6 +119,7 @@ func0000000000000146:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000002c:
 	testl	%edx, %edx
 	sete	%cl
@@ -116,6 +129,7 @@ func000000000000002c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000c6:
 	cmpl	$2, %edx
 	setl	%cl
@@ -125,6 +139,7 @@ func00000000000000c6:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000026:
 	testl	%edx, %edx
 	sete	%cl

@@ -34,6 +34,7 @@
 	.byte	8
 .LCPI0_1:
 	.quad	-4417276706812531889
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1
 	vpxor	%ymm0, %ymm1, %ymm0

@@ -36,6 +36,7 @@
 .LCPI0_2:
 	.short	65534
 	.short	65534
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$8, %ymm1, %ymm1

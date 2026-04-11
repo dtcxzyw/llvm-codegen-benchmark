@@ -19,6 +19,7 @@
 	.zero	2
 .LCPI0_2:
 	.short	292
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vpackssdw	%xmm0, %xmm0, %xmm0
 	vpbroadcastw	.LCPI0_2(%rip), %xmm1

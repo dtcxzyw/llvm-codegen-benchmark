@@ -3,6 +3,7 @@
 	.quad	0x3fe3333333333333
 .LCPI0_1:
 	.quad	0x4000000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovsd	.LCPI0_0(%rip), %xmm3
 	vdivsd	%xmm2, %xmm3, %xmm2
@@ -14,6 +15,7 @@ func0000000000000000:
 	.quad	0x3ff0000000000000
 .LCPI1_1:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vmovsd	.LCPI1_0(%rip), %xmm3
 	vdivsd	%xmm2, %xmm3, %xmm2

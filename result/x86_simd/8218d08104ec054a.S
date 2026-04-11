@@ -5,6 +5,7 @@
 	.long	64
 .LCPI0_2:
 	.long	96
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000023:
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0
@@ -17,6 +18,7 @@ func0000000000000023:
 	.long	64
 .LCPI1_2:
 	.long	96
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000063:
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0
@@ -29,6 +31,7 @@ func0000000000000063:
 	.long	176400
 .LCPI2_2:
 	.long	192000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000053:
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0
@@ -39,6 +42,7 @@ func0000000000000053:
 	.long	176400
 .LCPI3_1:
 	.long	192000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm0
@@ -51,6 +55,7 @@ func0000000000000007:
 	.long	128
 .LCPI4_2:
 	.long	256
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002b:
 	vpcmpgtd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm0
@@ -61,6 +66,7 @@ func000000000000002b:
 	.long	16
 .LCPI5_1:
 	.long	8
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000033:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm0
@@ -71,6 +77,7 @@ func0000000000000033:
 	.long	4294967280
 .LCPI6_1:
 	.long	16
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm0
@@ -83,6 +90,7 @@ func0000000000000005:
 	.long	64
 .LCPI7_2:
 	.long	128
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000013:
 	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI7_1(%rip), %ymm0
@@ -95,6 +103,7 @@ func0000000000000013:
 	.long	4227858432
 .LCPI8_2:
 	.long	4261412864
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000050:
 	vpcmpltud	.LCPI8_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI8_1(%rip), %ymm0
@@ -107,6 +116,7 @@ func0000000000000050:
 	.long	278528
 .LCPI9_2:
 	.long	16384
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000001b:
 	vpcmpltd	.LCPI9_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI9_1(%rip), %ymm0

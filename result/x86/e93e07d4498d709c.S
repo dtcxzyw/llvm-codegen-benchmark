@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
@@ -12,6 +13,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x41e0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	xorl	%ecx, %ecx
 	vucomisd	.LCPI1_0(%rip), %xmm0
@@ -22,6 +24,7 @@ func000000000000000c:
 	cmovnel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	xorl	%ecx, %ecx

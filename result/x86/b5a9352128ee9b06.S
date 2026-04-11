@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000910:
 	addl	$-16, %edx
 	cmpl	$-8, %edx
@@ -9,6 +10,7 @@ func0000000000000910:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000902:
 	addl	$-65281, %edx
 	cmpl	$94, %edx

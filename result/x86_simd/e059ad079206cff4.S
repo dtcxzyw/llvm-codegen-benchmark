@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vpabsq	%ymm0, %ymm0
 	vpcmpltuq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
@@ -63,6 +64,7 @@ func0000000000000034:
 	.zero	1
 .LCPI1_3:
 	.byte	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpabsq	%ymm0, %ymm0
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
@@ -90,6 +92,7 @@ func0000000000000014:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpabsq	%ymm0, %ymm0
 	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm0, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testq	%rdx, %rdx
 	sete	%al
@@ -6,6 +7,7 @@ func0000000000000001:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	testq	%rdx, %rdx
 	setne	%al
@@ -13,6 +15,7 @@ func000000000000000c:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	cmpq	$1024, %rdx
 	setae	%al
@@ -20,6 +23,7 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	cmpq	$32, %rdx
 	setb	%al
@@ -27,6 +31,7 @@ func0000000000000004:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	testq	%rdx, %rdx
 	setle	%al
@@ -34,6 +39,7 @@ func0000000000000006:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	cmpq	$500000000, %rdx
 	setge	%al

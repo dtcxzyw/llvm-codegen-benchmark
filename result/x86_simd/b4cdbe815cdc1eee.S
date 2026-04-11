@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	274877907
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx

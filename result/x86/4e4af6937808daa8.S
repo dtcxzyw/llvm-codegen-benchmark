@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000042c:
 	incl	%esi
 	cmpl	%esi, %edi
@@ -8,6 +9,7 @@ func000000000000042c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	decl	%esi
 	cmpl	%esi, %edi
@@ -17,6 +19,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008c:
 	decl	%esi
 	cmpl	%esi, %edi
@@ -26,6 +29,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000146:
 	addl	$-22, %esi
 	cmpl	%esi, %edi
@@ -35,6 +39,7 @@ func0000000000000146:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000058c:
 	decl	%esi
 	cmpl	%esi, %edi
@@ -44,6 +49,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000108:
 	decl	%esi
 	cmpl	%esi, %edi
@@ -53,6 +59,7 @@ func0000000000000108:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000004ca:
 	decl	%esi
 	cmpl	%esi, %edi

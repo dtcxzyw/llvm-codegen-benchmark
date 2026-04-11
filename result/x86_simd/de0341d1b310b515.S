@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -7,6 +8,7 @@ func000000000000000a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004a:
 	vpmovqd	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -17,6 +19,7 @@ func000000000000004a:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$34, %ymm1, %ymm2, %ymm1
@@ -29,6 +32,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.quad	2147483648
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vptestmq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
@@ -37,6 +41,7 @@ func0000000000000006:
 
 .LCPI4_0:
 	.long	8
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnleud	.LCPI4_0(%rip){1to4}, %xmm1, %k1
@@ -46,6 +51,7 @@ func0000000000000008:
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vpmovqd	%ymm1, %xmm1
 	vptestnmd	%xmm1, %xmm1, %k1

@@ -16,6 +16,7 @@
 	.short	57343
 	.short	57343
 	.short	57343
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpnleuw	.LCPI0_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -77,6 +78,7 @@ func0000000000000001:
 	.byte	255
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	vpcmpneqw	.LCPI1_1(%rip), %ymm0, %k0

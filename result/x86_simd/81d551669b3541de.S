@@ -7,6 +7,7 @@
 	.zero	4,60
 .LCPI0_3:
 	.byte	20
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0

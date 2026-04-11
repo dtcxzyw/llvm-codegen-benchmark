@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	addl	%edx, %esi
 	xorl	%eax, %eax
@@ -7,6 +8,7 @@ func000000000000000c:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	addl	%edx, %esi
 	xorl	%eax, %eax
@@ -15,6 +17,7 @@ func000000000000002c:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	addl	%edx, %esi
 	xorl	%eax, %eax
@@ -23,6 +26,7 @@ func000000000000002a:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	addl	%edx, %esi
 	xorl	%eax, %eax
@@ -30,6 +34,7 @@ func0000000000000004:
 	sbbl	%eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	addl	%edx, %esi
 	xorl	%eax, %eax
@@ -38,6 +43,7 @@ func0000000000000026:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002b:
 	addl	%edx, %esi
 	xorl	%eax, %eax
@@ -46,6 +52,7 @@ func000000000000002b:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	addl	%edx, %esi
 	xorl	%eax, %eax
@@ -54,6 +61,7 @@ func000000000000000a:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000021:
 	addl	%edx, %esi
 	xorl	%eax, %eax

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3e45798ee2308c3a
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulsd	%xmm2, %xmm2, %xmm2
 	vfmadd231sd	%xmm0, %xmm1, %xmm2
@@ -9,6 +10,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vmulsd	%xmm2, %xmm2, %xmm2
 	vfmadd231sd	%xmm0, %xmm1, %xmm2

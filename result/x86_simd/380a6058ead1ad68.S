@@ -20,6 +20,7 @@
 	.quad	64
 .LCPI0_2:
 	.quad	16384
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k1
 	vpternlogq	$248, .LCPI0_1(%rip){1to4}, %ymm1, %ymm0

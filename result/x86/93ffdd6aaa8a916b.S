@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x412c448400000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vaddsd	.LCPI0_0(%rip), %xmm1, %xmm1
 	vaddsd	%xmm1, %xmm0, %xmm0
@@ -11,6 +12,7 @@ func0000000000000007:
 
 .LCPI1_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vaddsd	.LCPI1_0(%rip), %xmm1, %xmm1
 	vaddsd	%xmm1, %xmm0, %xmm0
@@ -21,6 +23,7 @@ func000000000000000c:
 
 .LCPI2_0:
 	.quad	0xbff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vaddsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vaddsd	%xmm0, %xmm1, %xmm0
@@ -33,6 +36,7 @@ func0000000000000005:
 	.quad	0xbff0000000000000
 .LCPI3_1:
 	.quad	0xbf847ae147ae147b
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vaddsd	.LCPI3_0(%rip), %xmm1, %xmm1
 	vaddsd	%xmm0, %xmm1, %xmm0
@@ -41,6 +45,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000e:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vaddsd	%xmm2, %xmm1, %xmm1
@@ -51,6 +56,7 @@ func000000000000000e:
 
 .LCPI5_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000d:
 	vaddsd	.LCPI5_0(%rip), %xmm1, %xmm1
 	vaddsd	%xmm0, %xmm1, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vmulpd	%zmm5, %zmm1, %zmm5
 	vmulpd	%zmm4, %zmm0, %zmm4
@@ -11,6 +12,7 @@ func0000000000000002:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vmulpd	%zmm5, %zmm3, %zmm5
 	vmulpd	%zmm4, %zmm2, %zmm4

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vmovd	%esi, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -9,6 +10,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vmovd	%esi, %xmm0
 	vucomiss	.LCPI1_0(%rip), %xmm0
@@ -18,6 +20,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	0x43c80000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vmovd	%esi, %xmm0
 	vucomiss	.LCPI2_0(%rip), %xmm0
@@ -27,6 +30,7 @@ func000000000000000e:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vmovd	%esi, %xmm0
 	vucomiss	%xmm0, %xmm0
@@ -34,6 +38,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	testl	$2147483647, %esi
 	sete	%al
@@ -42,6 +47,7 @@ func0000000000000010:
 
 .LCPI5_0:
 	.long	0x4b800000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	vmovd	%esi, %xmm0
 	vucomiss	.LCPI5_0(%rip), %xmm0

@@ -3,6 +3,7 @@
 	.long	1431655766
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -25,6 +26,7 @@ func0000000000000001:
 	.long	2147483711
 .LCPI1_1:
 	.long	2147483648
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000046:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
@@ -35,6 +37,7 @@ func0000000000000046:
 
 .LCPI2_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	vptestmq	.LCPI2_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -47,6 +50,7 @@ func000000000000002c:
 	.long	715827880
 .LCPI3_2:
 	.long	178956970
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
@@ -59,6 +63,7 @@ func0000000000000021:
 
 .LCPI4_0:
 	.long	2147483651
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0

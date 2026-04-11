@@ -54,6 +54,7 @@
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	vpsllw	$5, %ymm0, %ymm1
@@ -133,6 +134,7 @@ func000000000000000f:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpandd	.LCPI1_3(%rip){1to8}, %ymm0, %ymm0
 	vpmullw	.LCPI1_1(%rip), %ymm0, %ymm0
@@ -194,6 +196,7 @@ func000000000000000a:
 	.byte	0
 	.byte	255
 	.byte	0
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vpandd	.LCPI2_2(%rip){1to8}, %ymm0, %ymm0
 	vpsllw	$7, %ymm0, %ymm1

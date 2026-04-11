@@ -20,6 +20,7 @@
 	.long	4294967169
 .LCPI0_2:
 	.long	4294967201
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000224:
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}

@@ -5,6 +5,7 @@
 	.long	8212
 .LCPI0_2:
 	.long	16777216
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000035:
 	vpmovd2m	%ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1

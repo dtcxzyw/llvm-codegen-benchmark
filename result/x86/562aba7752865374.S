@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000327:
 	xorl	%ecx, %ecx
 	negq	%rdx
@@ -10,6 +11,7 @@ func0000000000000327:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002a7:
 	movabsq	$-9223372036854775807, %rax
 	xorl	%ecx, %ecx

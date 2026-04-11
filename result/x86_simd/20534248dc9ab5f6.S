@@ -7,6 +7,7 @@
 	.long	4294966226
 .LCPI0_3:
 	.long	4294967247
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000057:
 	vpmaxud	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltd	.LCPI0_1(%rip){1to4}, %xmm0, %k1

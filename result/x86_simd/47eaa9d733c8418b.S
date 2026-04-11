@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000406:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpnleuq	%ymm1, %ymm2, %k0
@@ -11,6 +12,7 @@ func0000000000000406:
 
 .LCPI1_0:
 	.quad	562949953421312
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000404:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpnleuq	%ymm1, %ymm2, %k0
@@ -21,6 +23,7 @@ func0000000000000404:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000040a:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
@@ -34,6 +37,7 @@ func000000000000040a:
 
 .LCPI3_0:
 	.quad	562949953421311
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000408:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpnleuq	%ymm1, %ymm2, %k0
@@ -46,6 +50,7 @@ func0000000000000408:
 
 .LCPI4_0:
 	.quad	39
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000448:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpcmpnleuq	%ymm1, %ymm2, %k0

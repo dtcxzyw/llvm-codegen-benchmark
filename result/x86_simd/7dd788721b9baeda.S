@@ -3,6 +3,7 @@
 	.long	16
 .LCPI0_1:
 	.long	4294967280
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm1
@@ -17,6 +18,7 @@ func0000000000000002:
 	.long	2
 .LCPI1_1:
 	.long	4294967292
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm1
@@ -29,6 +31,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.long	1431655766
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -50,6 +53,7 @@ func0000000000000000:
 	.long	17
 .LCPI3_1:
 	.long	2021161081
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1

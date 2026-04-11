@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vcmpltpd	%ymm0, %ymm1, %ymm0
 	vandpd	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
@@ -8,6 +9,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001a:
 	vcmpnltpd	%ymm1, %ymm0, %ymm0
 	vandpd	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -15,6 +17,7 @@ func000000000000001a:
 
 .LCPI2_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	vcmpnltpd	%ymm0, %ymm1, %ymm0
 	vandpd	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
@@ -22,6 +25,7 @@ func0000000000000016:
 
 .LCPI3_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vcmpltpd	%ymm1, %ymm0, %ymm0
 	vandpd	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
@@ -29,6 +33,7 @@ func0000000000000004:
 
 .LCPI4_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vcmplepd	%ymm0, %ymm1, %ymm0
 	vandpd	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
@@ -36,6 +41,7 @@ func0000000000000018:
 
 .LCPI5_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	vcmplepd	%ymm1, %ymm0, %ymm0
 	vandpd	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
@@ -43,6 +49,7 @@ func0000000000000014:
 
 .LCPI6_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000010:
 	vcmpeqpd	%ymm1, %ymm0, %ymm0
 	vandpd	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
@@ -50,6 +57,7 @@ func0000000000000010:
 
 .LCPI7_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000e:
 	vcmpneqpd	%ymm1, %ymm0, %ymm0
 	vandpd	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
@@ -57,6 +65,7 @@ func000000000000000e:
 
 .LCPI8_0:
 	.quad	1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
 	vcmpnlepd	%ymm1, %ymm0, %ymm0
 	vandpd	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0

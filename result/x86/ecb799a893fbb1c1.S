@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	subl	%edx, %esi
 	movl	$128, %eax
@@ -7,6 +8,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
 	subl	%edx, %esi
 	movl	$19, %eax
@@ -15,6 +17,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000aa:
 	subl	%edx, %esi
 	movl	$8, %eax
@@ -23,6 +26,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000068:
 	subl	%edx, %esi
 	movl	$64, %eax
@@ -31,6 +35,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	subl	%edx, %esi
 	movl	$12, %eax

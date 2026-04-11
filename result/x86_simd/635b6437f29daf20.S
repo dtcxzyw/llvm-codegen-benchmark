@@ -37,6 +37,7 @@
 	.zero	4,251
 .LCPI0_3:
 	.zero	4,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1

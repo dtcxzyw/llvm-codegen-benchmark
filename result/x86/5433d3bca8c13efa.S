@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002aa:
 	leal	(%rsi,%rdx), %eax
 	leal	-1(%rsi,%rdx), %ecx
@@ -10,6 +11,7 @@ func00000000000002aa:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	leal	(%rsi,%rdx), %eax
 	leal	-1(%rsi,%rdx), %ecx
@@ -21,6 +23,7 @@ func000000000000000a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000002a6:
 	movl	$1, %ecx
 	subl	%esi, %ecx

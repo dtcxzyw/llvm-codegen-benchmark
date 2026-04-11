@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	movl	%esi, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movl	%esi, %eax
 	imulq	$-773703683, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	movl	%esi, %ecx
 	movabsq	$-5171249494174542183, %rax
@@ -18,42 +21,49 @@ func0000000000000000:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
 	movl	%esi, %eax
 	imulq	$-997805, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001f:
 	movl	%esi, %eax
 	imulq	$136657, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001d:
 	movl	%esi, %eax
 	imulq	$136657, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000f:
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	leaq	(%rdi,%rax,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001c:
 	movl	%esi, %eax
 	imulq	$376, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000d:
 	movl	%esi, %eax
 	imulq	$1000, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000a:
 	movl	%esi, %ecx
 	movl	$4195354525, %eax
@@ -61,6 +71,7 @@ func000000000000000a:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000014:
 	movq	%rdi, %rax
 	movl	%esi, %ecx
@@ -68,12 +79,14 @@ func0000000000000014:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000e:
 	movl	%esi, %eax
 	leaq	(%rax,%rax,4), %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000005:
 	movq	%rdi, %rax
 	movl	%esi, %ecx
@@ -82,6 +95,7 @@ func0000000000000005:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000010:
 	movl	%esi, %ecx
 	movabsq	$-5435081209227447693, %rax
@@ -89,6 +103,7 @@ func0000000000000010:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000008:
 	movl	%esi, %ecx
 	movq	%rcx, %rax
@@ -97,6 +112,7 @@ func0000000000000008:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000001e:
 	movl	%esi, %eax
 	imulq	$1000, %rax, %rax

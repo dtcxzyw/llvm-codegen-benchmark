@@ -3,6 +3,7 @@
 	.quad	0x3fe0000000000000
 .LCPI0_1:
 	.quad	0xc086200000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vminpd	%zmm2, %zmm0, %zmm0
 	vminpd	%zmm3, %zmm1, %zmm1
@@ -21,6 +22,7 @@ func0000000000000024:
 	.quad	0x3fe0000000000000
 .LCPI1_1:
 	.quad	0x4086280000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000022:
 	vmaxpd	%zmm2, %zmm0, %zmm0
 	vmaxpd	%zmm3, %zmm1, %zmm1
@@ -37,6 +39,7 @@ func0000000000000022:
 
 .LCPI2_0:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000044:
 	vmaxpd	%zmm2, %zmm0, %zmm0
 	vmaxpd	%zmm3, %zmm1, %zmm1
@@ -54,6 +57,7 @@ func0000000000000044:
 	.quad	0x3f50624dd2f1a9fc
 .LCPI3_1:
 	.quad	0xbf50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	vminpd	%zmm2, %zmm0, %zmm0
 	vminpd	%zmm3, %zmm1, %zmm1

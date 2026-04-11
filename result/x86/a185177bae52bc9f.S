@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	movl	%edi, %ecx
 	andl	$511, %ecx
@@ -10,6 +11,7 @@ func00000000000000c1:
 	sbbl	$-1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	xorl	%ecx, %ecx
 	testl	$-2147483645, %edi

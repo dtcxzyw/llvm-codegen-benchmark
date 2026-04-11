@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vandps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm0
 	retq
@@ -11,6 +12,7 @@ func0000000000000003:
 	.long	1073741824
 .LCPI1_2:
 	.long	1073741888
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -24,6 +26,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.long	1073741824
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1

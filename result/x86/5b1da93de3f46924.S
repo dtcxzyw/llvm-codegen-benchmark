@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -6,6 +7,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -13,6 +15,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -21,6 +24,7 @@ func0000000000000008:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -29,6 +33,7 @@ func0000000000000018:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000aa:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -36,6 +41,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a1:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -44,6 +50,7 @@ func00000000000000a1:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000a6:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
@@ -51,6 +58,7 @@ func00000000000000a6:
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000086:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -58,6 +66,7 @@ func0000000000000086:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000094:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -65,6 +74,7 @@ func0000000000000094:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000006:
 	movq	%rsi, %rax
 	subq	%rdx, %rax
@@ -72,6 +82,7 @@ func0000000000000006:
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000001:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -79,6 +90,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000084:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -86,6 +98,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000104:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -93,6 +106,7 @@ func0000000000000104:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000101:
 	subq	%rdx, %rsi
 	imulq	%rdi, %rsi

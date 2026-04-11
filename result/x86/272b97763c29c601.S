@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000030:
 	testq	%rdx, %rdx
 	setne	%al
@@ -6,6 +7,7 @@ func0000000000000030:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	cmpq	$20, %rdx
 	sete	%al
@@ -13,6 +15,7 @@ func0000000000000004:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000020:
 	shrq	$32, %rdx
 	setne	%al
@@ -20,6 +23,7 @@ func0000000000000020:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	cmpq	$128, %rdx
 	setb	%al
@@ -27,6 +31,7 @@ func0000000000000010:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000060:
 	shrq	$61, %rdx
 	setne	%al
@@ -34,6 +39,7 @@ func0000000000000060:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
 	testq	%rdx, %rdx
 	sets	%al
@@ -41,6 +47,7 @@ func0000000000000018:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
 	movabsq	$-9223372036854775806, %rax
 	cmpq	%rax, %rdx
@@ -49,6 +56,7 @@ func0000000000000028:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000050:
 	cmpq	$65536, %rdx
 	setb	%al

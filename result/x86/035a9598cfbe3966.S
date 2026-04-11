@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
@@ -12,6 +13,7 @@ func0000000000000088:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000077:
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
@@ -26,6 +28,7 @@ func0000000000000077:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000066:
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
@@ -44,6 +47,7 @@ func0000000000000066:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000188:
 	vmovq	%xmm1, %rax
 	movb	$63, %cl
@@ -63,6 +67,7 @@ func0000000000000188:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000022:
 	vmovddup	.LCPI4_0(%rip), %xmm2
 	vandpd	%xmm2, %xmm1, %xmm1
@@ -78,6 +83,7 @@ func0000000000000022:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000098:
 	vmovq	%xmm1, %rax
 	shrq	$52, %rax

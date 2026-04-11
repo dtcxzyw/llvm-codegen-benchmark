@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsllq	$56, %ymm1, %ymm1
 	vpshldq	$1, %ymm1, %ymm0, %ymm0
@@ -37,6 +38,7 @@ func0000000000000002:
 	.byte	10
 	.byte	9
 	.byte	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1
 	vpshldq	$63, %ymm1, %ymm0, %ymm0

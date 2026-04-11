@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000005f:
 	leal	10(%rdx,%rdx), %eax
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000005b:
 	leaq	7(,%rdx,4), %rax
 	andq	$-8, %rax
@@ -12,6 +14,7 @@ func000000000000005b:
 	leaq	(%rax,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000005a:
 	leaq	7(,%rdx,4), %rax
 	andq	$-8, %rax
@@ -19,6 +22,7 @@ func000000000000005a:
 	leaq	(%rax,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ff:
 	leaq	7(,%rdx,4), %rax
 	movabsq	$17179869176, %rcx
@@ -27,6 +31,7 @@ func00000000000000ff:
 	leaq	(%rcx,%rdi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000b0:
 	movabsq	$8589934560, %rcx
 	leaq	(%rcx,%rdx,2), %rax
@@ -35,12 +40,14 @@ func00000000000000b0:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	leal	76(%rdx,%rdx), %eax
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002f:
 	leaq	15(,%rdx,8), %rax
 	andq	$-16, %rax
@@ -48,6 +55,7 @@ func000000000000002f:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002e:
 	leaq	15(,%rdx,8), %rax
 	andq	$-16, %rax
@@ -55,6 +63,7 @@ func000000000000002e:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000aa:
 	leaq	15(,%rdx,8), %rax
 	andq	$-16, %rax
@@ -62,6 +71,7 @@ func00000000000000aa:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000af:
 	leaq	15(%rdx,%rdx), %rax
 	andq	$-16, %rax
@@ -69,6 +79,7 @@ func00000000000000af:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000ae:
 	leaq	15(%rdx,%rdx), %rax
 	andq	$-16, %rax
@@ -76,6 +87,7 @@ func00000000000000ae:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000050:
 	leaq	7(,%rdx,4), %rax
 	andq	$-8, %rax
@@ -83,6 +95,7 @@ func0000000000000050:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000f0:
 	shll	$5, %edx
 	leal	55(%rdx), %eax

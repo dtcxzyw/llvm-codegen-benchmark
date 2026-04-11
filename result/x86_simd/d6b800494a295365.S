@@ -3,6 +3,7 @@
 	.quad	-6148914691236517205
 .LCPI0_1:
 	.quad	1537228672809129301
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
@@ -35,6 +36,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.quad	5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vmovq	%xmm0, %rdx
 	movabsq	$-3689348814741910323, %rdi

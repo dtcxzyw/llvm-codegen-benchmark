@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a6:
 	notb	%dl
 	movl	$2, %eax
@@ -8,6 +9,7 @@ func00000000000001a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	notb	%dl
 	movl	$2, %eax

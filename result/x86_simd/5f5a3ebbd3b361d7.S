@@ -33,6 +33,7 @@
 	.short	33
 	.short	33
 	.short	33
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpcmpltuw	.LCPI0_1(%rip), %ymm0, %k0
@@ -74,6 +75,7 @@ func0000000000000024:
 	.short	638
 	.short	638
 	.short	638
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000034:
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpcmpltuw	.LCPI1_1(%rip), %ymm0, %k0
@@ -98,6 +100,7 @@ func0000000000000034:
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpcmpeqw	.LCPI2_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -121,6 +124,7 @@ func0000000000000021:
 	.short	12
 	.short	12
 	.short	12
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a4:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
@@ -133,6 +137,7 @@ func00000000000000a4:
 	.long	4294967010
 .LCPI4_1:
 	.long	4294967267
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a8:
 	vpmovzxwd	%xmm0, %ymm0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
@@ -158,6 +163,7 @@ func00000000000000a8:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a1:
 	vpcmpeqw	.LCPI5_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -181,6 +187,7 @@ func00000000000000a1:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000061:
 	vpcmpeqw	.LCPI6_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -191,6 +198,7 @@ func0000000000000061:
 	.long	4294967292
 .LCPI7_1:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000028:
 	vpmovzxwd	%xmm0, %ymm0
 	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
@@ -203,6 +211,7 @@ func0000000000000028:
 	.long	4294967286
 .LCPI8_1:
 	.long	4294967291
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000038:
 	vpmovzxwd	%xmm0, %ymm0
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
@@ -228,6 +237,7 @@ func0000000000000038:
 	.short	16
 	.short	16
 	.short	16
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000002c:
 	vpcmpneqw	.LCPI9_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -251,6 +261,7 @@ func000000000000002c:
 	.short	20
 	.short	20
 	.short	20
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000ac:
 	vpcmpneqw	.LCPI10_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0

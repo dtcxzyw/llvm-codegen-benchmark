@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	subq	%rsi, %rdx
 	cmpq	$5, %rdx
@@ -6,6 +7,7 @@ func0000000000000020:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	subq	%rsi, %rdx
 	cmpq	$16801, %rdx
@@ -13,6 +15,7 @@ func0000000000000018:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	subq	%rsi, %rdx
 	testq	%rdx, %rdx
@@ -20,6 +23,7 @@ func0000000000000028:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000030:
 	subq	%rsi, %rdx
 	cmpq	$40, %rdx

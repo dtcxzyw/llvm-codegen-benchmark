@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	104
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm1, %ecx

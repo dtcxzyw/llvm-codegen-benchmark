@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	cmpq	$8, %rdi
 	sete	%al
@@ -11,6 +12,7 @@ func000000000000000c:
 .LCPI1_0:
 	.long	0x41f00000
 	.long	0x40a00000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	cmpq	$4, %rdi
@@ -21,6 +23,7 @@ func0000000000000008:
 .LCPI2_0:
 	.long	0xff7fffff
 	.long	0xc3000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	cmpq	$1, %rdi
@@ -31,6 +34,7 @@ func0000000000000001:
 .LCPI3_0:
 	.long	0x3f000000
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	cmpq	$8, %rdi
@@ -41,6 +45,7 @@ func0000000000000004:
 .LCPI4_0:
 	.long	0xbf800000
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	xorl	%eax, %eax
 	testq	%rdi, %rdi

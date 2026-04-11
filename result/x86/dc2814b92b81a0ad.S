@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000d81:
 	cmpq	$15, %rsi
 	setne	%cl
@@ -7,6 +8,7 @@ func0000000000000d81:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
 	movabsq	$9223372036854775807, %rax
 	addq	%rsi, %rax
@@ -17,6 +19,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -25,6 +28,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000501:
 	addq	$-14, %rsi
 	cmpq	$-13, %rsi
@@ -34,6 +38,7 @@ func0000000000000501:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000d8c:
 	cmpq	$6, %rsi
 	setne	%cl
@@ -42,6 +47,7 @@ func0000000000000d8c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000101:
 	andq	$-8, %rsi
 	cmpq	$8, %rsi
@@ -51,6 +57,7 @@ func0000000000000101:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000058c:
 	cmpq	$1, %rsi
 	setne	%cl
@@ -59,6 +66,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000050c:
 	addq	$-3, %rsi
 	cmpq	$-2, %rsi
@@ -68,6 +76,7 @@ func000000000000050c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000010c:
 	addq	$-3, %rsi
 	cmpq	$-2, %rsi

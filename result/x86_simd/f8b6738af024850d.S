@@ -3,6 +3,7 @@
 	.long	33554432
 .LCPI0_1:
 	.quad	-34013185
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpslld	$16, %xmm1, %xmm1
 	vpord	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -30,6 +31,7 @@ func000000000000001f:
 	.byte	13
 	.byte	3
 	.byte	15
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpslld	$2, %xmm1, %xmm1
 	vpord	.LCPI1_0(%rip){1to4}, %xmm1, %xmm2

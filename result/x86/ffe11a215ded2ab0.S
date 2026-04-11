@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	leaq	1(%rdi), %rcx
 	testb	$8, %sil
@@ -6,6 +7,7 @@ func0000000000000021:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	orq	$46079, %rdi
 	testb	%sil, %sil

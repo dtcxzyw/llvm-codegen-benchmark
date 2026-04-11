@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e4:
 	vpextrd	$1, %xmm2, %ecx
 	movl	$2147483645, %eax

@@ -1,12 +1,14 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	movq	%rdi, %rax
 	vucomisd	.LCPI0_0(%rip), %xmm0
 	cmovneq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	movq	%rdi, %rax
 	vucomisd	%xmm0, %xmm0
@@ -15,12 +17,14 @@ func000000000000000e:
 
 .LCPI2_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	movq	%rdi, %rax
 	vucomisd	.LCPI2_0(%rip), %xmm0
 	cmovbq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	movq	%rdi, %rax
 	vucomisd	%xmm0, %xmm0
@@ -29,12 +33,14 @@ func0000000000000001:
 
 .LCPI4_0:
 	.quad	0xbeb0c6f7a0000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	movq	%rdi, %rax
 	vucomisd	.LCPI4_0(%rip), %xmm0
 	cmovbeq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000002:
 	movq	%rdi, %rax
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -42,6 +48,7 @@ func0000000000000002:
 	cmovbeq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
 	movq	%rsi, %rax
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -50,6 +57,7 @@ func0000000000000007:
 	cmovpq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000003:
 	movq	%rdi, %rax
 	vxorpd	%xmm1, %xmm1, %xmm1

@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	cmpw	$1, %di
 	movl	$6, %eax
 	sbbl	$0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	movzwl	%di, %eax
 	cmpl	$761, %eax
@@ -13,6 +15,7 @@ func0000000000000011:
 	cmovael	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	movzwl	%di, %eax
 	xorl	%ecx, %ecx

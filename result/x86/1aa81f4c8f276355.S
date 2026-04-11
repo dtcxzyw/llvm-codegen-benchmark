@@ -1,9 +1,11 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	bzhil	%esi, %edi, %eax
 	btsl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	movl	$131072, %eax
 	shlxl	%esi, %eax, %ecx
@@ -12,6 +14,7 @@ func000000000000000e:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	bzhil	%esi, %edi, %eax
 	btsl	%esi, %eax

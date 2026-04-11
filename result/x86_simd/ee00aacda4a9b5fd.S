@@ -3,6 +3,7 @@
 	.long	0xbf800000
 .LCPI0_1:
 	.long	0x40000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vbroadcastss	.LCPI0_0(%rip), %zmm2
 	vfmadd132ps	.LCPI0_1(%rip){1to16}, %zmm2, %zmm1

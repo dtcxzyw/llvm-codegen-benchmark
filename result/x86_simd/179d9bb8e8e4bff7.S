@@ -3,6 +3,7 @@
 	.long	2047
 .LCPI0_1:
 	.long	4294966273
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000019:
 	vpsrlq	$52, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -15,6 +16,7 @@ func0000000000000019:
 	.long	2047
 .LCPI1_1:
 	.long	4294967242
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	vpsrlq	$52, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

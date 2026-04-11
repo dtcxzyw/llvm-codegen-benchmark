@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	orl	%esi, %edi
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -9,6 +10,7 @@ func0000000000000007:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	orl	%esi, %edi
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -17,6 +19,7 @@ func000000000000000b:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	orl	%esi, %edi
 	vxorps	%xmm1, %xmm1, %xmm1
@@ -25,6 +28,7 @@ func0000000000000004:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	orl	%esi, %edi
 	vxorps	%xmm1, %xmm1, %xmm1

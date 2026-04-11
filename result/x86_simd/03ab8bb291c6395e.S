@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vpmovdb	%ymm0, %xmm0
 	vpor	%xmm0, %xmm1, %xmm0
@@ -23,6 +24,7 @@ func0000000000000014:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001c:
 	vpmovdb	%ymm0, %xmm0
 	vpor	%xmm0, %xmm1, %xmm0
@@ -31,6 +33,7 @@ func000000000000001c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vpmovdb	%ymm0, %xmm0
 	vpor	%xmm0, %xmm1, %xmm0
@@ -39,6 +42,7 @@ func0000000000000010:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vpmovdb	%ymm0, %xmm0
 	vpor	%xmm0, %xmm1, %xmm0

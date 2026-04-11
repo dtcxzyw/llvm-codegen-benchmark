@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	pushq	%rbx
 	vpmovdb	%ymm0, %xmm0
@@ -47,6 +48,7 @@ func000000000000000d:
 	popq	%rbx
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	pushq	%rbx
 	vpmovdb	%ymm0, %xmm0
@@ -95,6 +97,7 @@ func0000000000000009:
 	popq	%rbx
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	pushq	%rbx
 	vpmovdb	%ymm0, %xmm0

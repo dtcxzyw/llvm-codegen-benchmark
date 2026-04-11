@@ -39,6 +39,7 @@
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpminud	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpslld	$16, %ymm1, %ymm1
@@ -85,6 +86,7 @@ func000000000000000f:
 	.byte	0
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpminud	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpslld	$16, %ymm1, %ymm1
@@ -126,6 +128,7 @@ func0000000000000007:
 	.byte	29
 	.byte	30
 	.byte	60
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vpminud	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vmovdqa	.LCPI2_1(%rip), %ymm2

@@ -3,6 +3,7 @@
 	.quad	16
 .LCPI0_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
 	vpackusdw	%xmm1, %xmm1, %xmm1
 	vpcmpltuw	%xmm1, %xmm0, %k1
@@ -14,6 +15,7 @@ func0000000000000044:
 	.quad	16
 .LCPI1_1:
 	.quad	24
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpmovdw	%xmm1, %xmm1
 	vpcmpltuw	%xmm1, %xmm0, %k1

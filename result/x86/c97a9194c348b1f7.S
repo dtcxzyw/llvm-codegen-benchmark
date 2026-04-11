@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -7,6 +8,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -15,6 +17,7 @@ func0000000000000003:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -23,6 +26,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -31,6 +35,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -39,6 +44,7 @@ func0000000000000007:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -47,6 +53,7 @@ func0000000000000008:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	vaddsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0

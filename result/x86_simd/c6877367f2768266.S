@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001104:
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k0
 	vpmovm2q	%k0, %ymm2
@@ -43,6 +44,7 @@ func0000000000001104:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000005104:
 	vpcmpltub	.LCPI1_0(%rip), %xmm2, %k0
 	vpmovm2q	%k0, %ymm2

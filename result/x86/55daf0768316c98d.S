@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	incl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm0
@@ -9,6 +10,7 @@ func0000000000000007:
 
 .LCPI1_0:
 	.long	0x42c80000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	incl	%edi
 	vcvtusi2ss	%edi, %xmm15, %xmm0
@@ -17,6 +19,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.long	0x3de147ae
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	decl	%edi
 	vcvtusi2ss	%edi, %xmm15, %xmm0
@@ -25,6 +28,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	0x40c90fdb
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	decl	%edi
 	vcvtsi2ss	%edi, %xmm15, %xmm0

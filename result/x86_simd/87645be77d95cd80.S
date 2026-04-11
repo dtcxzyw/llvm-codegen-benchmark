@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018a:
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2
@@ -8,6 +9,7 @@ func000000000000018a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2

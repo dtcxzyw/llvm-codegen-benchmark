@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movq	%rdi, %rax
 	imull	%edx, %esi
 	imull	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	imulq	%rdx, %rsi
 	imulq	%rdi, %rsi
@@ -12,12 +14,14 @@ func0000000000000005:
 	andq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	movq	%rdi, %rax
 	imull	%edx, %esi
 	imull	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	movq	%rdi, %rax
 	imull	%edx, %esi
@@ -25,6 +29,7 @@ func0000000000000008:
 	andl	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	movq	%rsi, %rax
 	imulq	%rdx, %rax

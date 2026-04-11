@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fb999999999999a
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vfmadd213ps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1
@@ -16,6 +17,7 @@ func0000000000000002:
 
 .LCPI1_0:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vfmadd213ps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1
@@ -31,6 +33,7 @@ func0000000000000014:
 
 .LCPI2_0:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000012:
 	vfmadd213ps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1
@@ -46,6 +49,7 @@ func0000000000000012:
 
 .LCPI3_0:
 	.quad	0x3ddb7cdfc28ae400
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
 	vfmadd213ps	%zmm1, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm0, %ymm1

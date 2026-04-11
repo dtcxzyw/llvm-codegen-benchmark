@@ -3,6 +3,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpbroadcastb	.LCPI0_1(%rip), %xmm2
 	vpternlogq	$120, %xmm2, %xmm1, %xmm0
@@ -13,6 +14,7 @@ func0000000000000001:
 	.zero	16,1
 .LCPI1_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vpbroadcastb	.LCPI1_1(%rip), %xmm2
 	vpternlogq	$120, %xmm2, %xmm1, %xmm0

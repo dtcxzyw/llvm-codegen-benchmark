@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c6:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -6,6 +7,7 @@ func00000000000000c6:
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -13,6 +15,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000008a:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -20,6 +23,7 @@ func000000000000008a:
 	setns	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -28,6 +32,7 @@ func0000000000000008:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -35,6 +40,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000046:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi
@@ -42,6 +48,7 @@ func0000000000000046:
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rsi

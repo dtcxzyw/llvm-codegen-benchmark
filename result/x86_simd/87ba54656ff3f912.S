@@ -17,6 +17,7 @@
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000035:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovsxbd	.LCPI0_1(%rip), %ymm2
@@ -41,6 +42,7 @@ func0000000000000035:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovsxbd	.LCPI1_1(%rip), %ymm2

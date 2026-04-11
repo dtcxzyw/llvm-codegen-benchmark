@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a61:
 	cmpq	$128, %rsi
 	movl	$6, %ecx
@@ -9,6 +10,7 @@ func0000000000000a61:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000210:
 	xorl	%eax, %eax
 	movq	%rsi, %rcx
@@ -21,6 +23,7 @@ func0000000000000210:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000213:
 	cmpq	$8193, %rsi
 	movl	$58, %eax
@@ -32,6 +35,7 @@ func0000000000000213:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000a51:
 	cmpq	$8193, %rsi
 	movl	$64, %eax
@@ -43,6 +47,7 @@ func0000000000000a51:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000a53:
 	cmpq	$8193, %rsi
 	movl	$64, %eax
@@ -54,6 +59,7 @@ func0000000000000a53:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000a20:
 	cmpq	$2097152, %rsi
 	movl	$4096, %eax

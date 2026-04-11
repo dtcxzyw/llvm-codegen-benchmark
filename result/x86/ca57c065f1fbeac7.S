@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d5:
 	andl	$2097151, %edx
 	imulq	$-683901, %rdx, %rcx
@@ -7,6 +8,7 @@ func00000000000000d5:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ff:
 	andl	$2097151, %edx
 	imulq	$470296, %rdx, %rcx
@@ -15,6 +17,7 @@ func00000000000000ff:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000f5:
 	andl	$2097151, %edx
 	imulq	$136657, %rdx, %rcx
@@ -23,6 +26,7 @@ func00000000000000f5:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000dd:
 	andl	$2097151, %edx
 	imulq	$-997805, %rdx, %rcx
@@ -31,6 +35,7 @@ func00000000000000dd:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000075:
 	andl	$2097151, %edx
 	imulq	$666643, %rdx, %rcx
@@ -39,6 +44,7 @@ func0000000000000075:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000055:
 	andl	$2097151, %edx
 	imulq	$-683901, %rdx, %rcx
@@ -47,6 +53,7 @@ func0000000000000055:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000000:
 	movb	$40, %al
 	bzhiq	%rax, %rdx, %rax

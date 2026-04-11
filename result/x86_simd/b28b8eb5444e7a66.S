@@ -3,6 +3,7 @@
 	.quad	-365
 .LCPI0_1:
 	.quad	365
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000050:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
@@ -14,6 +15,7 @@ func0000000000000050:
 	.quad	30
 .LCPI1_1:
 	.quad	-30
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000040:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0

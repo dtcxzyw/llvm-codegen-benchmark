@@ -3,6 +3,7 @@
 	.long	4096
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2
@@ -14,6 +15,7 @@ func0000000000000002:
 	.long	4096
 .LCPI1_1:
 	.long	1040384
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1

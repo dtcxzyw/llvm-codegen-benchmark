@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -40,6 +41,7 @@ func000000000000000c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -64,6 +66,7 @@ func0000000000000000:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
@@ -71,6 +74,7 @@ func000000000000003f:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000020:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0

@@ -1,24 +1,29 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001c:
 	andl	%edx, %esi
 	leaq	4(%rdi,%rsi,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
 	andl	%edx, %esi
 	leaq	656(%rdi,%rsi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	andl	%edx, %esi
 	leaq	32(%rdi,%rsi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	andl	%edx, %esi
 	leaq	64(%rdi,%rsi,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	andl	%edx, %esi
 	leaq	20(%rdi,%rsi,2), %rax

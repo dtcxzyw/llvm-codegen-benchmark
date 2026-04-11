@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000075:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -6,6 +7,7 @@ func0000000000000075:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000007f:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -13,6 +15,7 @@ func000000000000007f:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000005d:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -20,6 +23,7 @@ func000000000000005d:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000055:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -27,6 +31,7 @@ func0000000000000055:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000005c:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -34,6 +39,7 @@ func000000000000005c:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000000:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -41,6 +47,7 @@ func0000000000000000:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000001d:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -48,6 +55,7 @@ func000000000000001d:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000004c:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -55,6 +63,7 @@ func000000000000004c:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000040:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
@@ -62,6 +71,7 @@ func0000000000000040:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000c:
 	movl	%edx, %eax
 	addq	%rsi, %rax
@@ -69,6 +79,7 @@ func000000000000000c:
 	leaq	(%rax,%rcx,2), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000004:
 	movl	%edx, %ecx
 	addq	%rsi, %rcx
@@ -76,6 +87,7 @@ func0000000000000004:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000e:
 	movl	%edx, %eax
 	addq	%rsi, %rax
@@ -83,6 +95,7 @@ func000000000000000e:
 	leaq	(%rax,%rcx,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000050:
 	movl	%edx, %ecx
 	addq	%rdi, %rcx

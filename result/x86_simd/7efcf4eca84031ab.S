@@ -20,6 +20,7 @@
 	.zero	16,1
 .LCPI0_2:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovq	.LCPI0_0(%rip), %xmm2
 	vpshufb	%xmm1, %xmm2, %xmm1

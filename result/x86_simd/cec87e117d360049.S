@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	12
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d3:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpcmpltud	%ymm2, %ymm1, %k1

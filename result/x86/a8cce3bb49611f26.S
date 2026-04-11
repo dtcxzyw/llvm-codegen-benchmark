@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	movb	$9, %al
 	subb	%sil, %al
 	shlxl	%eax, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	movb	$8, %al
 	subb	%sil, %al

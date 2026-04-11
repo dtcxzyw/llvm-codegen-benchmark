@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	addl	$7, %esi
 	sarl	$3, %esi
@@ -6,6 +7,7 @@ func0000000000000008:
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	addl	$-32768, %esi
 	sarl	$16, %esi
@@ -13,6 +15,7 @@ func0000000000000009:
 	movslq	%esi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	decl	%esi
 	sarl	$5, %esi

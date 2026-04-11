@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpmovqw	%ymm0, %xmm0
 	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -23,6 +24,7 @@ func000000000000000a:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqw	%ymm0, %xmm0
 	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0
@@ -38,6 +40,7 @@ func0000000000000000:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vpmovqw	%ymm0, %xmm0
 	vpmullw	.LCPI2_0(%rip), %xmm0, %xmm0
@@ -53,6 +56,7 @@ func0000000000000003:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vpmovqw	%ymm0, %xmm0
 	vpmullw	.LCPI3_0(%rip), %xmm0, %xmm0
@@ -68,6 +72,7 @@ func000000000000000b:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	vpmovqw	%ymm0, %xmm0
 	vpmullw	.LCPI4_0(%rip), %xmm0, %xmm0
@@ -83,6 +88,7 @@ func000000000000000f:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000e:
 	vpmovqw	%ymm0, %xmm0
 	vpmullw	.LCPI5_0(%rip), %xmm0, %xmm0

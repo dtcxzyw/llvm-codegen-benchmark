@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -9,6 +10,7 @@ func0000000000000003:
 
 .LCPI1_0:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000007c:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
@@ -18,6 +20,7 @@ func000000000000007c:
 
 .LCPI2_0:
 	.long	4294967280
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
@@ -27,6 +30,7 @@ func0000000000000002:
 
 .LCPI3_0:
 	.long	12
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000007f:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
@@ -34,6 +38,7 @@ func000000000000007f:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000054:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -42,6 +47,7 @@ func0000000000000054:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000006c:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -52,6 +58,7 @@ func000000000000006c:
 
 .LCPI6_0:
 	.long	4
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000063:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
@@ -61,6 +68,7 @@ func0000000000000063:
 
 .LCPI7_0:
 	.long	3
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000060:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm1, %xmm1
@@ -68,6 +76,7 @@ func0000000000000060:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000005:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -78,6 +87,7 @@ func0000000000000005:
 
 .LCPI9_0:
 	.long	36
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000000:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
@@ -87,6 +97,7 @@ func0000000000000000:
 
 .LCPI10_0:
 	.long	16
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000007d:
 	vpaddd	%xmm1, %xmm2, %xmm1
 	vpaddd	.LCPI10_0(%rip){1to4}, %xmm1, %xmm1

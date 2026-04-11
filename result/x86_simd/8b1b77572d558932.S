@@ -16,6 +16,7 @@
 	.short	15
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000078:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddw	%ymm2, %ymm1, %ymm2

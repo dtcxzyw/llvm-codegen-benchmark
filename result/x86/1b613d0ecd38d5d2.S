@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	andl	$1, %edi
 	negl	%edi
@@ -12,6 +13,7 @@ func0000000000000007:
 
 .LCPI1_0:
 	.quad	0xc1e0000000200000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	andl	$1, %edi
 	leal	(%rdi,%rdi), %ecx

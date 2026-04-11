@@ -7,6 +7,7 @@
 	.zero	16,8
 .LCPI0_3:
 	.zero	16,10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vpblendmb	.LCPI0_1(%rip), %xmm1, %xmm1 {%k1}

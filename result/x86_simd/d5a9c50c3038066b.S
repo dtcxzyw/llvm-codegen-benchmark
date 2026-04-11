@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpbroadcastb	.LCPI0_1(%rip), %xmm2
 	vpand	%xmm2, %xmm1, %xmm1
@@ -48,6 +49,7 @@ func0000000000000001:
 	.quad	8
 .LCPI1_2:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm0, %k1

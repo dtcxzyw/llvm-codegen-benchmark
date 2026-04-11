@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000006c:
 	incl	%esi
 	testb	$-2, %sil
@@ -6,6 +7,7 @@ func000000000000006c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	incl	%esi
 	testb	$-2, %sil
@@ -13,6 +15,7 @@ func0000000000000061:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	leal	32770(%rsi), %eax
 	shrl	$16, %eax
@@ -20,6 +23,7 @@ func000000000000000c:
 	andl	$1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	decl	%esi
 	testl	$-3, %esi
@@ -27,6 +31,7 @@ func0000000000000001:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
 	movl	$56319, %eax
 	subl	%esi, %eax
@@ -35,6 +40,7 @@ func000000000000002c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	addl	$63, %esi
 	andl	$-64, %esi
@@ -43,6 +49,7 @@ func0000000000000004:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000021:
 	decl	%esi
 	andl	$-2147483647, %esi

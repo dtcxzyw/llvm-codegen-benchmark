@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000118:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -8,6 +9,7 @@ func0000000000000118:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000218:
 	subq	%rdx, %rsi
 	cmpq	$5, %rsi
@@ -15,6 +17,7 @@ func0000000000000218:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000308:
 	testl	$511, %edx
 	setne	%cl

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -8,6 +9,7 @@ func0000000000000021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000068c:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -17,6 +19,7 @@ func000000000000068c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000584:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -26,6 +29,7 @@ func0000000000000584:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000028c:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -35,6 +39,7 @@ func000000000000028c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000684:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -44,6 +49,7 @@ func0000000000000684:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000681:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -53,6 +59,7 @@ func0000000000000681:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000030c:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -62,6 +69,7 @@ func000000000000030c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000018c:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -71,6 +79,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000181:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -80,6 +89,7 @@ func0000000000000181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000421:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -89,6 +99,7 @@ func0000000000000421:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000101:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -98,6 +109,7 @@ func0000000000000101:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002c:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -107,6 +119,7 @@ func000000000000002c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000284:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi
@@ -116,6 +129,7 @@ func0000000000000284:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000281:
 	movl	%edx, %eax
 	cmpq	%rax, %rsi

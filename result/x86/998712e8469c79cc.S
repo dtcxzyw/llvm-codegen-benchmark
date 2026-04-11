@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	lzcntw	%di, %ax
 	addl	$8, %eax
 	movzwl	%ax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	lzcntw	%di, %ax
 	movzwl	%ax, %eax

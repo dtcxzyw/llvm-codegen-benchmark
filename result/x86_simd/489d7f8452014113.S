@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpaddd	%ymm1, %ymm2, %ymm3
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -54,6 +55,7 @@ func0000000000000061:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000066:
 	vpaddd	%ymm1, %ymm2, %ymm3
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -109,6 +111,7 @@ func0000000000000066:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vpaddd	%ymm1, %ymm2, %ymm3
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -164,6 +167,7 @@ func0000000000000026:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpaddd	%ymm1, %ymm2, %ymm3
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

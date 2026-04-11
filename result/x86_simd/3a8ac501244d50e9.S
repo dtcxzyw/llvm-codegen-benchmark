@@ -3,6 +3,7 @@
 	.long	1000
 .LCPI0_1:
 	.long	999999
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000028a:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -14,6 +15,7 @@ func000000000000028a:
 
 .LCPI1_0:
 	.long	4294967196
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000601:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
@@ -25,6 +27,7 @@ func0000000000000601:
 
 .LCPI2_0:
 	.long	6
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
@@ -38,6 +41,7 @@ func000000000000002a:
 	.long	1000
 .LCPI3_1:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000781:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
@@ -51,6 +55,7 @@ func0000000000000781:
 	.long	4294967196
 .LCPI4_1:
 	.long	49
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
@@ -62,6 +67,7 @@ func0000000000000008:
 
 .LCPI5_0:
 	.long	4194967296
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
@@ -73,6 +79,7 @@ func0000000000000001:
 
 .LCPI6_0:
 	.long	4294967196
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000060c:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
@@ -83,6 +90,7 @@ func000000000000060c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000401:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm2
@@ -97,6 +105,7 @@ func0000000000000401:
 	.long	1000000
 .LCPI8_1:
 	.long	999
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI8_0(%rip){1to4}, %xmm1, %xmm1
@@ -110,6 +119,7 @@ func000000000000000a:
 	.long	1000
 .LCPI9_1:
 	.long	34
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
@@ -121,6 +131,7 @@ func0000000000000006:
 
 .LCPI10_0:
 	.long	4294967196
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000006a1:
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI10_0(%rip){1to4}, %xmm1, %xmm1

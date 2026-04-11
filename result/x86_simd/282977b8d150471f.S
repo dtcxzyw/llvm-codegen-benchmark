@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c3:
 	pushq	%rbp
 	pushq	%r15
@@ -85,6 +86,7 @@ func00000000000000c3:
 	popq	%rbp
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c0:
 	pushq	%rbp
 	pushq	%r15
@@ -171,6 +173,7 @@ func00000000000000c0:
 	popq	%rbp
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c1:
 	pushq	%rbp
 	pushq	%r15

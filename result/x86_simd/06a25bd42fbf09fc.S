@@ -32,6 +32,7 @@
 	.byte	128
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vmovdqa	.LCPI0_0(%rip), %ymm2
 	vpshufb	%ymm2, %ymm1, %ymm1
@@ -41,6 +42,7 @@ func0000000000000003:
 
 .LCPI1_0:
 	.long	1431655765
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpsrld	$1, %ymm1, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2

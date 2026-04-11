@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2048
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$2, %xmm1, %xmm1
@@ -10,6 +11,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.long	2130706432
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$24, %xmm1, %xmm1
@@ -19,6 +21,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.long	2097120
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$5, %xmm1, %xmm1
@@ -28,6 +31,7 @@ func0000000000000009:
 
 .LCPI3_0:
 	.long	56
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000011:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$3, %xmm1, %xmm1
@@ -37,6 +41,7 @@ func0000000000000011:
 
 .LCPI4_0:
 	.long	14
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm1
@@ -46,6 +51,7 @@ func0000000000000005:
 
 .LCPI5_0:
 	.long	2147483648
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001d:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$16, %xmm1, %xmm1
@@ -55,6 +61,7 @@ func000000000000001d:
 
 .LCPI6_0:
 	.long	524280
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000019:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$3, %xmm1, %xmm1
@@ -64,6 +71,7 @@ func0000000000000019:
 
 .LCPI7_0:
 	.long	2093056
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000013:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$12, %xmm1, %xmm1
@@ -73,6 +81,7 @@ func0000000000000013:
 
 .LCPI8_0:
 	.long	48
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000007:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$4, %xmm1, %xmm1
@@ -82,6 +91,7 @@ func0000000000000007:
 
 .LCPI9_0:
 	.long	4177920
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000001f:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$14, %xmm1, %xmm1
@@ -106,6 +116,7 @@ func000000000000001f:
 	.byte	12
 	.byte	128
 	.byte	128
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000b:
 	vpmovqd	%ymm1, %xmm1
 	vpshufb	.LCPI10_0(%rip), %xmm1, %xmm1
@@ -115,6 +126,7 @@ func000000000000000b:
 
 .LCPI11_0:
 	.long	112
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$4, %xmm1, %xmm1

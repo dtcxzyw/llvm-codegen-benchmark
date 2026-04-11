@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	testl	%edx, %edx
 	sete	%al
@@ -7,6 +8,7 @@ func0000000000000010:
 	leaq	1(%rax,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004f:
 	cmpl	$10, %edx
 	setb	%al
@@ -15,6 +17,7 @@ func000000000000004f:
 	leaq	1(%rax,%rsi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000006f:
 	notb	%dil
 	movzbl	%dil, %ecx
@@ -27,6 +30,7 @@ func000000000000006f:
 	addq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001f:
 	notb	%dil
 	movzbl	%dil, %eax

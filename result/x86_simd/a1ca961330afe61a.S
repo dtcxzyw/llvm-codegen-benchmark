@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3fd34413509f79fb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vfmadd132pd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm0
 	vrndscalepd	$11, %zmm0, %zmm1

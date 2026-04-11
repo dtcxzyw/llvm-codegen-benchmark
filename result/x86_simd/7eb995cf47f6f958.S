@@ -7,6 +7,7 @@
 	.long	1
 .LCPI0_3:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000019:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -33,6 +34,7 @@ func0000000000000019:
 	.long	1
 .LCPI1_3:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000099:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1

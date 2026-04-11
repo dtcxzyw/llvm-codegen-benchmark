@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000054:
 	movq	%rsi, %rax
 	andl	$2147483647, %eax
@@ -6,12 +7,14 @@ func0000000000000054:
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	movzwl	%si, %eax
 	cmpl	$65521, %eax
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	movq	%rsi, %rax
 	andl	$-1610612737, %eax

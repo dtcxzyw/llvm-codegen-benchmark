@@ -3,6 +3,7 @@
 	.quad	80
 .LCPI0_1:
 	.quad	2480
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vpsraq	$63, %ymm1, %ymm2
 	vpsrlq	$62, %ymm2, %ymm2

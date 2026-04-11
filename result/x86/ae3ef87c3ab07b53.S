@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leal	1(%rdi), %ecx
 	movabsq	$7109453100751455733, %rax
@@ -6,6 +7,7 @@ func0000000000000000:
 	shrq	$28, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001e:
 	incl	%edi
 	imulq	$100, %rdi, %rax

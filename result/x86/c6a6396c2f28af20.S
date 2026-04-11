@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000502:
 	andl	$63, %edx
 	cmpl	%esi, %edx
@@ -8,6 +9,7 @@ func0000000000000502:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001142:
 	andl	$16777215, %edx
 	cmpl	%esi, %edx
@@ -17,6 +19,7 @@ func0000000000001142:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000001182:
 	andl	$536870911, %edx
 	cmpl	%esi, %edx
@@ -27,6 +30,7 @@ func0000000000001182:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000012c2:
 	andl	$536870911, %edx
 	cmpl	%esi, %edx
@@ -37,6 +41,7 @@ func00000000000012c2:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000142:
 	andl	$2147483647, %edx
 	cmpl	%esi, %edx

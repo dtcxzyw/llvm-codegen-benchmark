@@ -3,6 +3,7 @@
 	.long	4294967238
 .LCPI0_1:
 	.long	4294967286
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -17,6 +18,7 @@ func0000000000000184:
 	.long	4294967293
 .LCPI1_1:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -29,6 +31,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.long	624
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -38,6 +41,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ac:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -51,6 +55,7 @@ func00000000000000ac:
 
 .LCPI4_0:
 	.long	4294967286
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -62,6 +67,7 @@ func000000000000000c:
 
 .LCPI5_0:
 	.long	18
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -73,6 +79,7 @@ func0000000000000001:
 
 .LCPI6_0:
 	.long	31
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001a4:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -88,6 +95,7 @@ func00000000000001a4:
 	.long	4294967288
 .LCPI7_1:
 	.long	57
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000104:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -102,6 +110,7 @@ func0000000000000104:
 	.long	4294967293
 .LCPI8_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000124:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -116,6 +125,7 @@ func0000000000000124:
 	.long	4294967293
 .LCPI9_1:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -128,6 +138,7 @@ func0000000000000008:
 
 .LCPI10_0:
 	.long	10000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000084:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
@@ -143,6 +154,7 @@ func0000000000000084:
 	.long	4294967294
 .LCPI11_1:
 	.long	4
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000024:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	cmpl	%esi, %edi
 	sete	%al
@@ -8,6 +9,7 @@ func0000000000000001:
 
 .LCPI1_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	cmpl	%esi, %edi
 	setb	%al
@@ -17,6 +19,7 @@ func0000000000000004:
 	vmovapd	%xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	cmpl	%esi, %edi
 	seta	%al
@@ -26,6 +29,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	cmpl	%esi, %edi
 	setl	%al

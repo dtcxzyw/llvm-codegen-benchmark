@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpmovd2m	%ymm1, %k1
@@ -10,6 +11,7 @@ func00000000000000c1:
 
 .LCPI1_0:
 	.long	39997
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpmovd2m	%ymm1, %k1
@@ -19,6 +21,7 @@ func00000000000000ca:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000004c1:
 	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
@@ -27,6 +30,7 @@ func00000000000004c1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000004ca:
 	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpxor	%xmm3, %xmm3, %xmm3

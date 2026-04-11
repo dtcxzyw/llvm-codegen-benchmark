@@ -19,6 +19,7 @@
 	.short	65025
 .LCPI0_1:
 	.long	4294965249
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000484:
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm0, %k1
@@ -45,6 +46,7 @@ func0000000000000484:
 	.short	100
 	.short	100
 	.short	100
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000184:
 	vpaddw	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpcmpltuw	.LCPI1_1(%rip), %xmm1, %k1
@@ -64,6 +66,7 @@ func0000000000000184:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpcmpeqw	.LCPI2_1(%rip), %xmm1, %k0 {%k1}
@@ -91,6 +94,7 @@ func0000000000000028:
 	.short	120
 .LCPI3_2:
 	.long	6
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000144:
 	vpaddw	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpcmpltuw	.LCPI3_1(%rip), %xmm1, %k1
@@ -119,6 +123,7 @@ func0000000000000144:
 	.short	120
 .LCPI4_1:
 	.long	32
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000084:
 	vpaddw	.LCPI4_0(%rip), %xmm1, %xmm1
 	vpcmpltud	.LCPI4_1(%rip){1to8}, %ymm0, %k1
@@ -147,6 +152,7 @@ func0000000000000084:
 	.short	8
 .LCPI5_1:
 	.long	64
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000081:
 	vpaddw	.LCPI5_0(%rip), %xmm1, %xmm1
 	vpcmpeqd	.LCPI5_1(%rip){1to8}, %ymm0, %k1
@@ -175,6 +181,7 @@ func0000000000000081:
 	.short	120
 .LCPI6_2:
 	.long	2
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000024:
 	vpaddw	.LCPI6_0(%rip), %xmm1, %xmm1
 	vpcmpltuw	.LCPI6_1(%rip), %xmm1, %k1
@@ -203,6 +210,7 @@ func0000000000000024:
 	.short	5
 .LCPI7_1:
 	.long	65
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000094:
 	vpaddw	.LCPI7_0(%rip), %xmm1, %xmm1
 	vpcmpltud	.LCPI7_1(%rip){1to8}, %ymm0, %k1
@@ -220,6 +228,7 @@ func0000000000000094:
 	.short	40
 	.short	40
 	.short	40
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000018c:
 	vpcmpneqw	.LCPI8_0(%rip), %xmm1, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
@@ -236,6 +245,7 @@ func000000000000018c:
 	.short	36
 	.short	36
 	.short	36
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000181:
 	vpcmpeqw	.LCPI9_0(%rip), %xmm1, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	addq	$-160, %rdx
 	testb	$1, %dil
@@ -7,6 +8,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	addq	$3801, %rdx
 	testb	$1, %dil
@@ -15,6 +17,7 @@ func0000000000000061:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	addq	$-9, %rdx
 	testb	$1, %dil
@@ -23,6 +26,7 @@ func0000000000000028:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	incq	%rdx
 	testb	$1, %dil
@@ -31,6 +35,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	incq	%rdx
 	testb	$1, %dil
@@ -39,6 +44,7 @@ func000000000000000a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	addq	$-10, %rdx
 	testb	$1, %dil
@@ -47,6 +53,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
 	addq	$-2, %rdx
 	testb	$1, %dil
@@ -55,6 +62,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000066:
 	leaq	16(%rdx), %rax
 	testb	$1, %dil
@@ -62,6 +70,7 @@ func0000000000000066:
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000c:
 	decq	%rdx
 	testb	$1, %dil
@@ -70,6 +79,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000078:
 	incq	%rdx
 	testb	$1, %dil
@@ -78,6 +88,7 @@ func0000000000000078:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000044:
 	incq	%rdx
 	testb	$1, %dil
@@ -86,6 +97,7 @@ func0000000000000044:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000074:
 	incq	%rdx
 	testb	$1, %dil
@@ -94,6 +106,7 @@ func0000000000000074:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000064:
 	incq	%rdx
 	testb	$1, %dil
@@ -102,12 +115,14 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000004c:
 	testq	%rsi, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000041:
 	testq	%rsi, %rsi
 	sete	%al
@@ -115,6 +130,7 @@ func0000000000000041:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000008:
 	addq	$-10, %rdx
 	testb	$1, %dil
@@ -123,6 +139,7 @@ func0000000000000008:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000034:
 	decq	%rdx
 	testb	$1, %dil

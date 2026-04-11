@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1
@@ -10,6 +11,7 @@ func0000000000000081:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000005e1:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1
@@ -21,6 +23,7 @@ func00000000000005e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001e1:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1
@@ -32,6 +35,7 @@ func00000000000001e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000005f4:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1
@@ -43,6 +47,7 @@ func00000000000005f4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000005e4:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1
@@ -54,6 +59,7 @@ func00000000000005e4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000005e8:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1
@@ -65,6 +71,7 @@ func00000000000005e8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000007f8:
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpabsd	%xmm1, %xmm1

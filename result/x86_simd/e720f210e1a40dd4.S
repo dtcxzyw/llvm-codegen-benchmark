@@ -13,6 +13,7 @@
 	.short	8193
 	.short	8193
 	.short	8193
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000016:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm2, %ymm0
@@ -35,6 +36,7 @@ func0000000000000016:
 	.short	4096
 	.short	4096
 	.short	4096
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001c:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm2, %ymm0
@@ -57,6 +59,7 @@ func000000000000001c:
 	.short	32768
 	.short	32768
 	.short	32768
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm2, %ymm0
@@ -79,6 +82,7 @@ func000000000000001f:
 	.short	31744
 	.short	31744
 	.short	31744
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm2, %ymm0
@@ -101,6 +105,7 @@ func000000000000000d:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001d:
 	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI4_0(%rip){1to8}, %ymm2, %ymm0

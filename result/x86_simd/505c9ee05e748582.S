@@ -39,6 +39,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000302:
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k0
@@ -52,6 +53,7 @@ func0000000000000302:
 	.long	55296
 .LCPI1_1:
 	.long	1056767
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000108:
 	vpslld	$4, %ymm1, %ymm1
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm1, %k0
@@ -63,6 +65,7 @@ func0000000000000108:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vpslld	$3, %ymm1, %ymm1
 	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm1, %k0
@@ -76,6 +79,7 @@ func000000000000018c:
 	.long	536870911
 .LCPI3_1:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000004c:
 	vptestnmd	.LCPI3_0(%rip){1to8}, %ymm1, %k0
 	vpcmpltd	.LCPI3_1(%rip){1to8}, %ymm0, %k1
@@ -88,6 +92,7 @@ func000000000000004c:
 	.long	32768
 .LCPI4_1:
 	.long	2147549183
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000298:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$170, %ymm2, %ymm1, %ymm1
@@ -140,6 +145,7 @@ func0000000000000298:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000318:
 	vpandd	.LCPI5_3(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqd	.LCPI5_1(%rip){1to8}, %ymm1, %k0
@@ -153,6 +159,7 @@ func0000000000000318:
 	.long	32768
 .LCPI6_1:
 	.long	2147549183
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000314:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$170, %ymm2, %ymm1, %ymm1
@@ -167,6 +174,7 @@ func0000000000000314:
 	.long	2147483647
 .LCPI7_1:
 	.long	64
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000202:
 	vptestnmd	.LCPI7_0(%rip){1to8}, %ymm1, %k0
 	vpcmpnleud	.LCPI7_1(%rip){1to8}, %ymm0, %k1
@@ -179,6 +187,7 @@ func0000000000000202:
 	.long	1114111
 .LCPI8_1:
 	.long	864
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000050:
 	vpslld	$6, %ymm1, %ymm1
 	vpcmpnleud	.LCPI8_0(%rip){1to8}, %ymm1, %k0
@@ -230,6 +239,7 @@ func0000000000000050:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000042:
 	vpandd	.LCPI9_3(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI9_1(%rip){1to8}, %ymm1, %k0

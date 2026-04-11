@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vxorpd	.LCPI0_0(%rip){1to2}, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -14,6 +15,7 @@ func0000000000000004:
 	.quad	0x8000000000000000
 .LCPI1_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vxorpd	.LCPI1_0(%rip){1to2}, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -24,6 +26,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.quad	0x8000000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	vxorpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0

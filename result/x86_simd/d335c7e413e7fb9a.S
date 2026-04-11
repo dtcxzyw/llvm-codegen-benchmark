@@ -37,6 +37,7 @@
 	.long	457
 .LCPI0_3:
 	.long	453
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1

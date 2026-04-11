@@ -20,6 +20,7 @@
 	.zero	1
 .LCPI0_2:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000082:
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0
@@ -50,6 +51,7 @@ func0000000000000082:
 	.zero	1
 .LCPI1_2:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000098:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -9,6 +10,7 @@ func0000000000000024:
 
 .LCPI1_0:
 	.quad	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	vptestmq	.LCPI1_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -50,6 +52,7 @@ func0000000000000026:
 	.byte	8
 .LCPI2_1:
 	.quad	47
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm0
 	vpcmpnleuq	.LCPI2_1(%rip){1to4}, %ymm0, %k0
@@ -90,6 +93,7 @@ func0000000000000028:
 	.byte	10
 	.byte	9
 	.byte	8
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpshufb	.LCPI3_0(%rip), %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -133,6 +137,7 @@ func000000000000002a:
 	.byte	8
 .LCPI4_1:
 	.quad	12000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000034:
 	vpshufb	.LCPI4_0(%rip), %ymm0, %ymm0
 	vpcmpltuq	.LCPI4_1(%rip){1to4}, %ymm0, %k0
@@ -175,6 +180,7 @@ func0000000000000034:
 	.byte	8
 .LCPI5_1:
 	.quad	8589934592
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vpshufb	.LCPI5_0(%rip), %ymm0, %ymm0
 	vpcmpltuq	.LCPI5_1(%rip){1to4}, %ymm0, %k0
@@ -217,6 +223,7 @@ func0000000000000004:
 	.byte	8
 .LCPI6_1:
 	.quad	2147483647
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	vpshufb	.LCPI6_0(%rip), %ymm0, %ymm0
 	vpcmpnleuq	.LCPI6_1(%rip){1to4}, %ymm0, %k0
@@ -226,6 +233,7 @@ func0000000000000008:
 
 .LCPI7_0:
 	.quad	128
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000006:
 	vptestmq	.LCPI7_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

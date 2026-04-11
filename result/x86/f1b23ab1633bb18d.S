@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movl	$70, %ecx
 	subl	%esi, %ecx
@@ -7,6 +8,7 @@ func0000000000000000:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	negl	%esi
 	xorl	%eax, %eax
@@ -14,6 +16,7 @@ func0000000000000009:
 	cmovel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	negl	%esi
 	testb	$1, %dil
@@ -21,6 +24,7 @@ func0000000000000001:
 	cmovel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	negl	%esi
 	testb	$1, %dil
@@ -28,6 +32,7 @@ func0000000000000005:
 	cmovel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000d:
 	movl	$11, %ecx
 	subl	%esi, %ecx
@@ -36,6 +41,7 @@ func000000000000000d:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	movl	$64, %ecx
 	subl	%esi, %ecx
@@ -44,6 +50,7 @@ func000000000000000f:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000003:
 	movl	$64, %ecx
 	subl	%esi, %ecx

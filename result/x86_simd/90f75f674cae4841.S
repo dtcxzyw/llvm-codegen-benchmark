@@ -37,6 +37,7 @@
 	.zero	4,32
 .LCPI0_3:
 	.zero	4,28
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovqb	%ymm2, %xmm2
 	vpternlogd	$248, .LCPI0_2(%rip){1to4}, %xmm1, %xmm0

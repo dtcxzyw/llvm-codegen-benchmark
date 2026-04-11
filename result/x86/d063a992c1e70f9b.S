@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000063:
 	testq	%rdx, %rdx
 	setne	%al
@@ -7,6 +8,7 @@ func0000000000000063:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	testq	%rdx, %rdx
 	sete	%al
@@ -15,6 +17,7 @@ func0000000000000008:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000051:
 	cmpq	$5, %rdx
 	setge	%al
@@ -23,6 +26,7 @@ func0000000000000051:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000060:
 	testq	%rdx, %rdx
 	setne	%al
@@ -31,6 +35,7 @@ func0000000000000060:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000009:
 	cmpq	$-2, %rdx
 	sete	%al
@@ -39,6 +44,7 @@ func0000000000000009:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000040:
 	cmpq	$2, %rdx
 	setae	%al
@@ -47,6 +53,7 @@ func0000000000000040:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000030:
 	testq	%rdx, %rdx
 	sets	%al
@@ -55,6 +62,7 @@ func0000000000000030:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000053:
 	testq	%rdx, %rdx
 	setns	%al
@@ -63,6 +71,7 @@ func0000000000000053:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000061:
 	testq	%rdx, %rdx
 	setne	%al

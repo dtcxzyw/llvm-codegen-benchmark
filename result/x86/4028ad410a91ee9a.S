@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
 	subq	%rsi, %rdx
 	cmpq	$17, %rdx
@@ -8,6 +9,7 @@ func000000000000014a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000014c:
 	subq	%rsi, %rdx
 	testq	%rdx, %rdx
@@ -17,6 +19,7 @@ func000000000000014c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000010c:
 	subq	%rsi, %rdx
 	cmpq	$17, %rdx
@@ -26,6 +29,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	subq	%rsi, %rdx
 	xorq	$1, %rdx
@@ -34,6 +38,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	subq	%rsi, %rdx
 	cmpq	$32, %rdx
@@ -43,6 +48,7 @@ func0000000000000028:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ca:
 	subq	%rsi, %rdx
 	cmpq	$1025, %rdx
@@ -52,6 +58,7 @@ func00000000000000ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000146:
 	subq	%rsi, %rdx
 	cmpq	$1025, %rdx
@@ -61,6 +68,7 @@ func0000000000000146:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000181:
 	subq	%rsi, %rdx
 	cmpq	$8, %rdx

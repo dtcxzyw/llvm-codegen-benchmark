@@ -3,6 +3,7 @@
 	.zero	16,240
 .LCPI0_1:
 	.zero	4,240
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vandps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	retq

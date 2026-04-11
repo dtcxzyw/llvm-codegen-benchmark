@@ -3,6 +3,7 @@
 	.long	0x3ec3ef15
 .LCPI0_1:
 	.long	0x3f0a8bd4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vaddss	%xmm1, %xmm0, %xmm1
 	vsubss	%xmm2, %xmm1, %xmm0

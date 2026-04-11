@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	addq	%rdx, %rsi
 	shlq	$2, %rsi
@@ -7,6 +8,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e4:
 	addq	%rdx, %rsi
 	addq	%rsi, %rsi
@@ -15,6 +17,7 @@ func00000000000001e4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	addq	%rdx, %rsi
 	imulq	$1000000, %rsi, %rax
@@ -22,6 +25,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000086:
 	addq	%rdx, %rsi
 	imulq	$60000000, %rsi, %rax
@@ -29,6 +33,7 @@ func0000000000000086:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	addq	%rdx, %rsi
 	leaq	(%rsi,%rsi,8), %rax
@@ -36,6 +41,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000144:
 	addq	%rdx, %rsi
 	addq	%rsi, %rsi

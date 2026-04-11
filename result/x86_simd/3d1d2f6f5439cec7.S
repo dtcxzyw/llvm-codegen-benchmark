@@ -50,6 +50,7 @@
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$3, %ymm0, %ymm0

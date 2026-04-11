@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	268435456
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpmovzxbq	%xmm2, %ymm2

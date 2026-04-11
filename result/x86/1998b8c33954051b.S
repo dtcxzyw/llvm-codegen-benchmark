@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d0:
 	subq	%rsi, %rdx
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	12(%rdi,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	subq	%rsi, %rdx
 	leaq	(%rdx,%rdx,2), %rax
 	leaq	48(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ec:
 	subq	%rsi, %rdx
 	imulq	$208, %rdx, %rax
 	leaq	208(%rax,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000fc:
 	subq	%rsi, %rdx
 	imulq	$368, %rdx, %rax

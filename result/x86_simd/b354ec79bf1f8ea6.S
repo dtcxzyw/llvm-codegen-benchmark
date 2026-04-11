@@ -39,6 +39,7 @@
 	.zero	4,253
 .LCPI0_4:
 	.zero	4,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm1

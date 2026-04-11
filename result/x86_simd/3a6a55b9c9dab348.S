@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpsrlq	$27, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1
@@ -8,6 +9,7 @@ func0000000000000018:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	vpsrlq	$27, %ymm2, %ymm2
 	vpxor	%ymm2, %ymm1, %ymm1

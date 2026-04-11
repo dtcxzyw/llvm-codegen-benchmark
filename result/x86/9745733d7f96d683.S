@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000029:
 	cmpl	$3, %edx
 	movl	$2, %eax
@@ -8,6 +9,7 @@ func0000000000000029:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	cmpl	$3, %edx
 	movl	$2, %eax
@@ -17,6 +19,7 @@ func0000000000000028:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	cmpl	$3, %edx
 	movl	$2, %eax
@@ -26,6 +29,7 @@ func0000000000000021:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000009:
 	cmpl	$1, %edx
 	adcl	$0, %edx

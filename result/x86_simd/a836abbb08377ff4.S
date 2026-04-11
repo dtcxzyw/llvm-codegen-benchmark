@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000087:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpand	%xmm0, %xmm2, %xmm2
@@ -7,6 +8,7 @@ func0000000000000087:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000319:
 	vpand	%xmm0, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
@@ -16,6 +18,7 @@ func0000000000000319:
 
 .LCPI2_0:
 	.long	3435973836
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%xmm3, %xmm0, %k1
@@ -24,6 +27,7 @@ func0000000000000084:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000b2:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpneqd	%xmm3, %xmm2, %k1
@@ -32,6 +36,7 @@ func00000000000000b2:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000b3:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%xmm3, %xmm0, %k1

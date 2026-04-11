@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000581:
 	testq	%rsi, %rsi
 	setne	%cl
@@ -8,6 +9,7 @@ func0000000000000581:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000001081:
 	cmpq	$2, %rdx
 	setb	%al
@@ -19,6 +21,7 @@ func0000000000001081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003084:
 	testq	%rdx, %rdx
 	setne	%cl
@@ -30,6 +33,7 @@ func0000000000003084:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000318c:
 	cmpq	$-1, %rdx
 	setne	%al
@@ -42,6 +46,7 @@ func000000000000318c:
 	andb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000003021:
 	cmpq	$536870911, %rdx
 	setne	%cl
@@ -50,6 +55,7 @@ func0000000000003021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000004d4:
 	cmpq	$1054, %rdx
 	sete	%al
@@ -61,6 +67,7 @@ func00000000000004d4:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000001021:
 	cmpq	$1073741769, %rdx
 	setb	%cl
@@ -69,6 +76,7 @@ func0000000000001021:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000003184:
 	testq	%rdx, %rdx
 	setne	%al
@@ -80,6 +88,7 @@ func0000000000003184:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000003181:
 	testq	%rdx, %rdx
 	setne	%al
@@ -91,6 +100,7 @@ func0000000000003181:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000594:
 	testq	%rdx, %rdx
 	sete	%al
@@ -102,6 +112,7 @@ func0000000000000594:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000048c:
 	testq	%rdx, %rdx
 	sete	%al
@@ -113,6 +124,7 @@ func000000000000048c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000058c:
 	cmpq	$2, %rdx
 	sete	%cl
@@ -124,6 +136,7 @@ func000000000000058c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000494:
 	testq	%rdx, %rdx
 	sete	%cl
@@ -135,6 +148,7 @@ func0000000000000494:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000584:
 	testq	%rdx, %rdx
 	sete	%al
@@ -147,6 +161,7 @@ func0000000000000584:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000588:
 	testq	%rdx, %rdx
 	sete	%al
@@ -159,6 +174,7 @@ func0000000000000588:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000421:
 	movabsq	$-9223372036854775807, %rax
 	xorq	%rax, %rdx

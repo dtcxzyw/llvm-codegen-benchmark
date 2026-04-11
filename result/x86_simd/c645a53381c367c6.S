@@ -3,6 +3,7 @@
 	.quad	-365
 .LCPI0_1:
 	.quad	719050
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vptestmb	.LCPI0_0(%rip), %xmm0, %k0
 	vpsllw	$7, %xmm0, %xmm0

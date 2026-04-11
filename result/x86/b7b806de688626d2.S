@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000066:
 	vmovd	%xmm0, %eax
 	andl	$2147483647, %eax
@@ -11,12 +12,14 @@ func0000000000000066:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vmovd	%xmm0, %eax
 	testl	%eax, %eax
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000099:
 	vmovd	%xmm0, %eax
 	andl	$2147483647, %eax
@@ -27,6 +30,7 @@ func0000000000000099:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	vmovd	%xmm0, %eax
 	andl	$2147483647, %eax
@@ -35,12 +39,14 @@ func0000000000000042:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001e:
 	vmovd	%xmm0, %eax
 	leal	-1(%rax), %ecx
@@ -59,6 +65,7 @@ func000000000000001e:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vmovd	%xmm0, %eax
 	testl	%eax, %eax
@@ -75,6 +82,7 @@ func0000000000000006:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000003bd:
 	vmovd	%xmm0, %eax
 	andl	$2147483647, %eax
@@ -83,6 +91,7 @@ func00000000000003bd:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000399:
 	vmovd	%xmm0, %eax
 	andl	$2147483647, %eax
@@ -96,6 +105,7 @@ func0000000000000399:
 	orb	%dl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000003db:
 	vmovd	%xmm0, %eax
 	andl	$2147483647, %eax
@@ -108,12 +118,14 @@ func00000000000003db:
 	.long	0x7fffffff
 .LCPI10_1:
 	.long	0x00800000
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000c3:
 	vandps	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
 	vucomiss	.LCPI10_1(%rip), %xmm0
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000002:
 	vmovd	%xmm0, %eax
 	testl	%eax, %eax
@@ -125,6 +137,7 @@ func0000000000000002:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000306:
 	vmovd	%xmm0, %eax
 	movl	%eax, %ecx
@@ -144,6 +157,7 @@ func0000000000000306:
 	orb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000019:
 	vmovd	%xmm0, %eax
 	cmpl	$2139095040, %eax

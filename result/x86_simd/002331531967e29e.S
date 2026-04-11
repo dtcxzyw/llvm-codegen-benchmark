@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.zero	4,16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrlq	$15, %ymm2, %ymm2
 	vpmovqb	%ymm2, %xmm2

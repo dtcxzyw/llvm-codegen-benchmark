@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vmovdqa	%ymm0, %ymm3
 	vpternlogq	$15, %ymm0, %ymm0, %ymm3

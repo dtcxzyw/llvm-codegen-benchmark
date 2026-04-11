@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vmovapd	%xmm0, %xmm2
 	vxorpd	%xmm0, %xmm0, %xmm0
@@ -12,6 +13,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.quad	0x3e45798ee2308c3a
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vmovapd	%xmm0, %xmm2
 	vxorpd	%xmm0, %xmm0, %xmm0

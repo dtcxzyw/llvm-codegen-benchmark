@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	movzbl	%dil, %eax
 	movl	%eax, %ecx
@@ -14,6 +15,7 @@ func000000000000000e:
 	shrl	$5, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movzbl	%dil, %eax
 	movl	%eax, %ecx
@@ -25,6 +27,7 @@ func0000000000000004:
 	shrl	$17, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	movzbl	%dil, %eax
 	imull	$100, %eax, %eax

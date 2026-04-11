@@ -16,6 +16,7 @@
 	.short	127
 	.short	127
 	.short	127
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$15, %ymm1, %ymm1
@@ -26,6 +27,7 @@ func000000000000002a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$15, %ymm1, %ymm1
@@ -52,6 +54,7 @@ func0000000000000001:
 	.short	16383
 	.short	16383
 	.short	16383
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$15, %ymm1, %ymm1

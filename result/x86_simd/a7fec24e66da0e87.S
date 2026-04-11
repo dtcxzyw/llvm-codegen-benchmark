@@ -8,6 +8,7 @@
 	.short	36
 	.short	36
 	.short	36
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpmullw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpextrw	$1, %xmm0, %ecx
@@ -54,6 +55,7 @@ func0000000000000009:
 	vpmovzxwd	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpsllw	$8, %xmm1, %xmm2
 	vpsubw	%xmm1, %xmm2, %xmm1
@@ -110,6 +112,7 @@ func0000000000000008:
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmullw	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpextrw	$1, %xmm0, %ecx

@@ -18,6 +18,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000581:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpcmpeqd	%ymm3, %ymm2, %k1
@@ -30,6 +31,7 @@ func0000000000000581:
 
 .LCPI1_0:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000003188:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vptestmb	%xmm1, %xmm1, %k1
@@ -39,6 +41,7 @@ func0000000000003188:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000421:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vptestnmd	%ymm2, %ymm2, %k1 {%k1}
@@ -68,6 +71,7 @@ func0000000000000421:
 	.long	32
 .LCPI3_2:
 	.long	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000586:
 	vpcmpneqb	.LCPI3_0(%rip), %xmm1, %k1
 	vpcmpeqd	.LCPI3_1(%rip){1to8}, %ymm2, %k1 {%k1}
@@ -97,6 +101,7 @@ func0000000000000586:
 	.long	1
 .LCPI4_2:
 	.long	32
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000042a:
 	vpcmpeqb	.LCPI4_0(%rip), %xmm1, %k1
 	vpcmpeqd	.LCPI4_1(%rip){1to8}, %ymm2, %k1 {%k1}
@@ -122,6 +127,7 @@ func000000000000042a:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000182a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI5_0(%rip), %xmm1, %k1
@@ -133,6 +139,7 @@ func000000000000182a:
 
 .LCPI6_0:
 	.long	2
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000003034:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vptestmd	%ymm2, %ymm2, %k1 {%k1}
@@ -141,6 +148,7 @@ func0000000000003034:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000058c:
 	vptestmb	%xmm1, %xmm1, %k1
 	vptestmd	%ymm0, %ymm0, %k1 {%k1}
@@ -170,6 +178,7 @@ func000000000000058c:
 	.long	1
 .LCPI8_2:
 	.long	2
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000426:
 	vpcmpeqb	.LCPI8_0(%rip), %xmm1, %k1
 	vpcmpeqd	.LCPI8_1(%rip){1to8}, %ymm2, %k1 {%k1}
@@ -178,6 +187,7 @@ func0000000000000426:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000302c:
 	vptestnmb	%xmm1, %xmm1, %k0
 	vptestmd	%ymm0, %ymm0, %k1
@@ -206,6 +216,7 @@ func000000000000302c:
 	.zero	1
 .LCPI10_1:
 	.long	2
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000001886:
 	vpcmpltub	.LCPI10_0(%rip), %xmm1, %k1
 	vpmaxsd	%ymm0, %ymm2, %ymm0
@@ -233,6 +244,7 @@ func0000000000001886:
 	.zero	1
 .LCPI11_1:
 	.long	2
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000003084:
 	vpcmpltub	.LCPI11_0(%rip), %xmm1, %k1
 	vpcmpltud	.LCPI11_1(%rip){1to8}, %ymm0, %k1 {%k1}
@@ -241,6 +253,7 @@ func0000000000003084:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000298a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vptestmb	%xmm1, %xmm1, %k1
@@ -267,6 +280,7 @@ func000000000000298a:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000481:
 	vpor	%ymm0, %ymm2, %ymm0
 	vpcmpltub	.LCPI13_0(%rip), %xmm1, %k1

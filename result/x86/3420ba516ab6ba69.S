@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	andb	$1, %sil
 	xorl	%ecx, %ecx
@@ -13,6 +14,7 @@ func000000000000000a:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004a:
 	andb	$1, %sil
 	xorl	%ecx, %ecx

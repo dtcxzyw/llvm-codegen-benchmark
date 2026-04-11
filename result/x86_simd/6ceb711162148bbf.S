@@ -3,6 +3,7 @@
 	.quad	9187201950435737344
 .LCPI0_1:
 	.quad	-72340172838076928
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpand	%ymm2, %ymm1, %ymm1
 	vpsllq	$9, %ymm1, %ymm1
@@ -14,6 +15,7 @@ func0000000000000000:
 	.quad	1024
 .LCPI1_1:
 	.quad	256
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpand	%ymm2, %ymm1, %ymm1
 	vpsllq	$6, %ymm1, %ymm1

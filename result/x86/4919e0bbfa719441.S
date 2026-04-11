@@ -1,16 +1,19 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	andl	$1048576, %esi
 	cmpl	%esi, %edi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	andl	$1048575, %esi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	andl	$32767, %esi
 	cmpl	%esi, %edi

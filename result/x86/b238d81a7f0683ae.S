@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -12,6 +13,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -27,6 +29,7 @@ func0000000000000008:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0
@@ -35,6 +38,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm1, %xmm0, %xmm0

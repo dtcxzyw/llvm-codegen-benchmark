@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vcvtuqq2ps	%ymm0, %xmm2
 	vptestmq	%ymm0, %ymm0, %k1

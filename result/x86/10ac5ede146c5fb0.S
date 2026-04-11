@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000060a:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -7,6 +8,7 @@ func000000000000060a:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000eb4:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -15,6 +17,7 @@ func0000000000000eb4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000a08:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -23,6 +26,7 @@ func0000000000000a08:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000eb8:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -31,6 +35,7 @@ func0000000000000eb8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -39,6 +44,7 @@ func0000000000000028:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
 	leal	(%rsi,%rsi,4), %eax
 	leal	-48(%rax,%rax), %eax
@@ -47,6 +53,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000208:
 	imull	$85, %esi, %eax
 	movzbl	%dil, %ecx
@@ -55,6 +62,7 @@ func0000000000000208:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000601:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -63,6 +71,7 @@ func0000000000000601:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000201:
 	leal	(%rsi,%rsi,4), %eax
 	leal	-48(%rax,%rax), %eax
@@ -71,6 +80,7 @@ func0000000000000201:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000606:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -79,6 +89,7 @@ func0000000000000606:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000608:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -87,6 +98,7 @@ func0000000000000608:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000218:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx
@@ -95,6 +107,7 @@ func0000000000000218:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000614:
 	leal	(%rsi,%rsi,4), %eax
 	movzbl	%dil, %ecx

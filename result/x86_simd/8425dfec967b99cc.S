@@ -7,6 +7,7 @@
 	.long	5
 .LCPI0_2:
 	.long	4294967045
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vcmpltpd	.LCPI0_0(%rip){1to8}, %zmm2, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2
@@ -20,6 +21,7 @@ func0000000000000022:
 	.long	1
 .LCPI1_1:
 	.quad	0x4066800000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpltpd	%zmm3, %zmm2, %k1

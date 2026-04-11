@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000606:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm1
@@ -13,6 +14,7 @@ func0000000000000606:
 
 .LCPI1_0:
 	.long	4294967293
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000401:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm1
@@ -26,6 +28,7 @@ func0000000000000401:
 	.long	24
 .LCPI2_1:
 	.long	4294967232
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
@@ -40,6 +43,7 @@ func0000000000000001:
 	.long	3294967296
 .LCPI3_2:
 	.long	2294967297
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
@@ -53,6 +57,7 @@ func0000000000000004:
 	.long	6
 .LCPI4_1:
 	.long	26
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	vpmovqd	%ymm0, %xmm0
 	vpmulld	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0

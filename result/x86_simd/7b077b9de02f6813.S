@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	6364136223846793005
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -9,6 +10,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.quad	1431655766
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -17,6 +19,7 @@ func0000000000000003:
 
 .LCPI2_0:
 	.quad	24
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -25,6 +28,7 @@ func0000000000000007:
 
 .LCPI3_0:
 	.quad	-146097
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001d:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -33,12 +37,14 @@ func000000000000001d:
 
 .LCPI4_0:
 	.quad	1000000
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001f:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	vpmuludq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -49,6 +55,7 @@ func0000000000000001:
 
 .LCPI6_0:
 	.quad	86400000000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000b:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -57,6 +64,7 @@ func000000000000000b:
 
 .LCPI7_0:
 	.quad	163391164108059
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -81,12 +89,14 @@ func0000000000000008:
 	.byte	2
 	.byte	3
 	.byte	3
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000002:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovsxbd	.LCPI8_1(%rip), %ymm1
 	vpermd	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000a:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -96,6 +106,7 @@ func000000000000000a:
 
 .LCPI10_0:
 	.quad	216
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000f:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -8,6 +9,7 @@ func0000000000000003:
 	leal	67108864(%rax,%rcx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	testl	%esi, %esi
 	setne	%al

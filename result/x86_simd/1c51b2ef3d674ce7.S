@@ -17,6 +17,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpcmpltuw	.LCPI0_1(%rip), %xmm1, %k1

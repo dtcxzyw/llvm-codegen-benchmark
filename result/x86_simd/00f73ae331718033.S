@@ -20,6 +20,7 @@
 	.long	4294967293
 .LCPI0_2:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpxor	%xmm1, %xmm0, %xmm0
 	vptestnmb	.LCPI0_0(%rip), %xmm0, %k1

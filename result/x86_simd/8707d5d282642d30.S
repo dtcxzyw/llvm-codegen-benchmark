@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x399d4952
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vdivps	%zmm2, %zmm1, %zmm1
 	vsubps	%zmm1, %zmm0, %zmm0
@@ -16,6 +17,7 @@ func000000000000000d:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x40000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vdivps	%zmm2, %zmm1, %zmm1
 	vsubps	%zmm1, %zmm0, %zmm0
@@ -29,6 +31,7 @@ func0000000000000014:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x3c23d70a
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
 	vdivps	%zmm2, %zmm1, %zmm1
 	vsubps	%zmm1, %zmm0, %zmm0
@@ -40,6 +43,7 @@ func0000000000000015:
 
 .LCPI3_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000009:
 	vdivps	%zmm2, %zmm1, %zmm1
 	vsubps	%zmm1, %zmm0, %zmm0

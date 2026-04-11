@@ -21,6 +21,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovqd	%ymm2, %xmm2
 	vpslld	$16, %xmm1, %xmm1
@@ -51,6 +52,7 @@ func0000000000000003:
 	.byte	255
 	.byte	255
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqd	%ymm2, %xmm2
 	vpslld	$16, %xmm1, %xmm1
@@ -61,6 +63,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.long	4095
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpslld	$22, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
@@ -71,6 +74,7 @@ func000000000000000f:
 
 .LCPI3_0:
 	.long	15
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpmovqd	%ymm2, %xmm2
 	vpslld	$6, %xmm1, %xmm1

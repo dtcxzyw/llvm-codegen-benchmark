@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	vaddss	%xmm2, %xmm0, %xmm2
 	vcmpless	%xmm1, %xmm0, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000190:
 	movq	%rdx, %rcx
 	movq	%rdi, %rax
@@ -9,6 +10,7 @@ func0000000000000190:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000180:
 	movq	%rdx, %rcx
 	movq	%rdi, %rax

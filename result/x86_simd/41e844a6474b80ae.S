@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vbroadcastss	.LCPI0_0(%rip), %zmm2
@@ -13,6 +14,7 @@ func0000000000000034:
 
 .LCPI1_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vbroadcastss	.LCPI1_0(%rip), %zmm2
@@ -25,6 +27,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000032:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vbroadcastss	.LCPI2_0(%rip), %zmm2
@@ -37,6 +40,7 @@ func0000000000000032:
 
 .LCPI3_0:
 	.long	0x7fffffff
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vbroadcastss	.LCPI3_0(%rip), %zmm2

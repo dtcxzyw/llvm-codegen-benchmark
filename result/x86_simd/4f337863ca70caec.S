@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000031e1:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -10,6 +11,7 @@ func00000000000031e1:
 
 .LCPI1_0:
 	.quad	36028779839094784
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000031c1:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -19,6 +21,7 @@ func00000000000031c1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003064:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -31,6 +34,7 @@ func0000000000003064:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000300c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -42,6 +46,7 @@ func000000000000300c:
 
 .LCPI4_0:
 	.quad	62
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000003004:
 	vpbroadcastq	.LCPI4_0(%rip), %ymm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -54,6 +59,7 @@ func0000000000003004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000030e1:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
@@ -63,6 +69,7 @@ func00000000000030e1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000003044:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqq	%ymm3, %ymm2, %ymm2

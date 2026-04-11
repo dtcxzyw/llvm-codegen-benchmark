@@ -5,6 +5,7 @@
 	.zero	16,86
 .LCPI0_2:
 	.zero	16,76
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000318c:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k0
 	vpcmpneqb	.LCPI0_1(%rip), %xmm1, %k1
@@ -14,6 +15,7 @@ func000000000000318c:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000421:
 	vptestnmb	%xmm2, %xmm2, %k0
 	vptestnmb	%xmm1, %xmm1, %k1
@@ -23,6 +25,7 @@ func0000000000000421:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000003021:
 	vptestmb	%xmm2, %xmm2, %k0
 	vptestnmb	%xmm1, %xmm1, %k1
@@ -34,6 +37,7 @@ func0000000000003021:
 
 .LCPI3_0:
 	.zero	16,26
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000010c4:
 	vpmovb2m	%xmm1, %k0
 	vpminub	%xmm0, %xmm2, %xmm0
@@ -42,6 +46,7 @@ func00000000000010c4:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000581:
 	vptestnmb	%xmm2, %xmm2, %k0
 	vptestmb	%xmm1, %xmm1, %k1
@@ -57,6 +62,7 @@ func0000000000000581:
 	.zero	16,143
 .LCPI5_2:
 	.byte	191
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000294a:
 	vpbroadcastb	.LCPI5_2(%rip), %xmm3
 	vpcmpgtb	%xmm3, %xmm2, %k0
@@ -71,6 +77,7 @@ func000000000000294a:
 	.zero	16,208
 .LCPI6_1:
 	.zero	16,191
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000288a:
 	vpcmpltub	.LCPI6_0(%rip), %xmm1, %k0
 	vpmaxsb	%xmm0, %xmm2, %xmm0
@@ -85,6 +92,7 @@ func000000000000288a:
 	.zero	16,32
 .LCPI7_2:
 	.zero	16,10
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000308c:
 	vpcmpneqb	.LCPI7_0(%rip), %xmm2, %k0
 	vpcmpltub	.LCPI7_1(%rip), %xmm1, %k1
@@ -96,6 +104,7 @@ func000000000000308c:
 
 .LCPI8_0:
 	.zero	16,133
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000002108:
 	vpmaxub	%xmm2, %xmm1, %xmm1
 	vpmaxub	%xmm0, %xmm1, %xmm0
@@ -105,6 +114,7 @@ func0000000000002108:
 
 .LCPI9_0:
 	.zero	16,43
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000001084:
 	vpminub	%xmm2, %xmm1, %xmm1
 	vpminub	%xmm0, %xmm1, %xmm0
@@ -118,6 +128,7 @@ func0000000000001084:
 	.zero	16,23
 .LCPI10_2:
 	.byte	59
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000006318:
 	vpbroadcastb	.LCPI10_2(%rip), %xmm3
 	vpcmpnleub	%xmm3, %xmm2, %k0
@@ -128,6 +139,7 @@ func0000000000006318:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000018c6:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpternlogq	$254, %xmm2, %xmm1, %xmm0

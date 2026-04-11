@@ -5,6 +5,7 @@
 	.long	6
 .LCPI0_2:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000228a:
 	vpcmpleud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
@@ -21,6 +22,7 @@ func000000000000228a:
 	.long	6
 .LCPI1_2:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000228c:
 	vpcmpleud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}

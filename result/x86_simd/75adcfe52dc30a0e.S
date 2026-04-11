@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -18,6 +19,7 @@ func0000000000000042:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000aa:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -34,6 +36,7 @@ func00000000000000aa:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ca:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -50,6 +53,7 @@ func00000000000000ca:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000022:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -66,6 +70,7 @@ func0000000000000022:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000d5:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -84,6 +89,7 @@ func00000000000000d5:
 
 .LCPI5_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ac:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -101,6 +107,7 @@ func00000000000000ac:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000cc:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -119,6 +126,7 @@ func00000000000000cc:
 
 .LCPI7_0:
 	.quad	0x4058c00000000000
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ea:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -138,6 +146,7 @@ func00000000000000ea:
 
 .LCPI8_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000066:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -158,6 +167,7 @@ func0000000000000066:
 	.quad	0x3fe0000000000000
 .LCPI9_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000084:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -179,6 +189,7 @@ func0000000000000084:
 	.quad	0x7ff0000000000000
 .LCPI10_1:
 	.quad	0x41dfffffffc00000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000063:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -200,6 +211,7 @@ func0000000000000063:
 	.quad	0x3870000000000000
 .LCPI11_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000db:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -219,6 +231,7 @@ func00000000000000db:
 
 .LCPI12_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000bb:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -235,6 +248,7 @@ func00000000000000bb:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000088:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -251,6 +265,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000087:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -267,6 +282,7 @@ func0000000000000087:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000077:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -283,6 +299,7 @@ func0000000000000077:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000011:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -299,6 +316,7 @@ func0000000000000011:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000004c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -315,6 +333,7 @@ func000000000000004c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end18, nop
 func00000000000000c4:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -333,6 +352,7 @@ func00000000000000c4:
 
 .LCPI19_0:
 	.quad	0x4066800000000000
+	.prefalign	4, .Lfunc_end19, nop
 func000000000000002c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -350,6 +370,7 @@ func000000000000002c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000044:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
@@ -368,6 +389,7 @@ func0000000000000044:
 
 .LCPI21_0:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000055:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5

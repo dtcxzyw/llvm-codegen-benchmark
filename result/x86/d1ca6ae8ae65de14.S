@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	movzwl	%si, %ecx
 	testq	%rdi, %rdi
@@ -6,6 +7,7 @@ func000000000000000c:
 	cmoveq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	movzwl	%si, %ecx
 	cmpq	$54400, %rdi

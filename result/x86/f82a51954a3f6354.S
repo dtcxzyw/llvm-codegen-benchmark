@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3e800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	sarq	$3, %rdi
 	vcvtusi2ss	%rdi, %xmm15, %xmm1

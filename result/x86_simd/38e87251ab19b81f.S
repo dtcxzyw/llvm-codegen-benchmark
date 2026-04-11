@@ -5,6 +5,7 @@
 	.zero	16,3
 .LCPI0_2:
 	.byte	5
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
@@ -20,6 +21,7 @@ func000000000000000c:
 	.zero	16,208
 .LCPI1_2:
 	.byte	169
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
@@ -35,6 +37,7 @@ func0000000000000000:
 	.zero	16,3
 .LCPI2_2:
 	.byte	2
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
@@ -50,6 +53,7 @@ func000000000000000f:
 	.zero	16,78
 .LCPI3_2:
 	.byte	105
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1

@@ -5,6 +5,7 @@
 	.long	6
 .LCPI0_2:
 	.long	5
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000010b:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -18,6 +19,7 @@ func000000000000010b:
 	.long	2
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000c0b:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmd	%ymm0, %ymm0, %k1

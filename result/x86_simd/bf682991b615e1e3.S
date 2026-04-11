@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
@@ -8,6 +9,7 @@ func0000000000000184:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000d86:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
@@ -17,6 +19,7 @@ func0000000000000d86:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000984:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
@@ -30,6 +33,7 @@ func0000000000000984:
 	.long	2
 .LCPI3_1:
 	.quad	63
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000284:
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm2, %xmm2
 	vpcmpltud	%xmm0, %xmm2, %k1
@@ -40,6 +44,7 @@ func0000000000000284:
 
 .LCPI4_0:
 	.quad	31
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000686:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
@@ -51,6 +56,7 @@ func0000000000000686:
 
 .LCPI5_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000e86:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2

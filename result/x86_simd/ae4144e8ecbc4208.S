@@ -33,6 +33,7 @@
 	.short	15
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000078:
 	vpmovzxwd	%ymm1, %zmm1
 	vplzcntd	%zmm1, %zmm1

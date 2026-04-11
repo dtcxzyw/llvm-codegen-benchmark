@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpabsq	%ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -41,6 +42,7 @@ func0000000000000003:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpabsq	%ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -85,6 +87,7 @@ func0000000000000009:
 
 .LCPI2_0:
 	.quad	4294966296
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpabsq	%ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -110,6 +113,7 @@ func0000000000000008:
 
 .LCPI3_0:
 	.quad	4294967236
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vpabsq	%ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
@@ -135,6 +139,7 @@ func000000000000000a:
 
 .LCPI4_0:
 	.quad	4294967272
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	vpabsq	%ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1

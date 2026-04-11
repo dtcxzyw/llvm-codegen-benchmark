@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vmulps	%zmm2, %zmm2, %zmm2
 	vfmadd231ps	%zmm1, %zmm1, %zmm2
@@ -18,6 +19,7 @@ func0000000000000014:
 
 .LCPI1_0:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	vmulps	%zmm2, %zmm2, %zmm2
 	vfmadd231ps	%zmm1, %zmm1, %zmm2
@@ -35,6 +37,7 @@ func0000000000000012:
 
 .LCPI2_0:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vmulps	%zmm2, %zmm2, %zmm2
 	vfmadd231ps	%zmm1, %zmm1, %zmm2

@@ -33,6 +33,7 @@
 	.byte	1
 	.byte	1
 	.byte	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
 	vptestmd	%ymm0, %ymm0, %k1
 	vmovq	.LCPI0_0(%rip), %xmm0
@@ -76,6 +77,7 @@ func0000000000000031:
 	.byte	1
 	.byte	1
 	.byte	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vmovq	.LCPI1_1(%rip), %xmm0
@@ -119,6 +121,7 @@ func0000000000000005:
 	.byte	1
 	.byte	1
 	.byte	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vmovq	.LCPI2_1(%rip), %xmm0

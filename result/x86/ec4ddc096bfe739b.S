@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000168:
 	movl	%edx, %eax
 	shlq	$3, %rax
@@ -7,6 +8,7 @@ func0000000000000168:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000068:
 	movl	%edx, %eax
 	shlq	$3, %rax
@@ -15,6 +17,7 @@ func0000000000000068:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	movl	%edx, %eax
 	shlq	$2, %rax

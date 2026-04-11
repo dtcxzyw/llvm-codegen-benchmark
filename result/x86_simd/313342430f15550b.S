@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpslld	$4, %ymm2, %ymm2
 	vpternlogd	$150, %ymm1, %ymm0, %ymm2
@@ -43,6 +44,7 @@ func000000000000000a:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpaddd	%ymm2, %ymm2, %ymm2
 	vpxor	%ymm1, %ymm2, %ymm1

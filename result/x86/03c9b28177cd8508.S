@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	sarq	$3, %rsi
 	movabsq	$-3689348814741910323, %rax
@@ -8,6 +9,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	sarq	$2, %rsi
 	movabsq	$-6148914691236517205, %rax
@@ -17,6 +19,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	sarq	$3, %rsi
 	movabsq	$-6148914691236517205, %rax

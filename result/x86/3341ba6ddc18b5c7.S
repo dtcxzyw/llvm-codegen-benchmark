@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000187:
 	cmpb	$4, %sil
 	sbbl	$-1, %edi

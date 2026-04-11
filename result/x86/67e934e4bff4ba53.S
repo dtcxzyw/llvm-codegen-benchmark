@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	subq	%rdx, %rsi
 	cmpq	$1023, %rsi
@@ -8,6 +9,7 @@ func0000000000000014:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000094:
 	subq	%rdx, %rsi
 	cmpq	$8, %rsi
@@ -17,6 +19,7 @@ func0000000000000094:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000088:
 	subq	%rdx, %rsi
 	cmpq	$64, %rsi
@@ -26,6 +29,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	subq	%rdx, %rsi
 	cmpq	$4, %rsi
@@ -35,6 +39,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	subq	%rdx, %rsi
 	cmpq	$16, %rsi
@@ -44,6 +49,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000b8:
 	subq	%rdx, %rsi
 	cmpq	$32, %rsi
@@ -53,6 +59,7 @@ func00000000000000b8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000018:
 	subq	%rdx, %rsi
 	cmpq	$1792, %rsi
@@ -62,6 +69,7 @@ func0000000000000018:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000a8:
 	subq	%rdx, %rsi
 	cmpq	$32, %rsi

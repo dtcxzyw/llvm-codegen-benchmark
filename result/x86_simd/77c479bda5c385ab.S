@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000185:
 	vpmovzxwd	%xmm1, %ymm1
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -13,6 +14,7 @@ func0000000000000185:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000025:
 	vpmovzxwd	%xmm1, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3
@@ -23,6 +25,7 @@ func0000000000000025:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000145:
 	vpmovzxwd	%xmm1, %ymm1
 	vpxor	%xmm3, %xmm3, %xmm3

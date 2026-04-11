@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%esi, %edi
 	cmpl	$1024, %edi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	sarl	$16, %esi
 	sarl	$16, %edi
@@ -12,11 +14,13 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000006a:
 	cmpl	%esi, %edi
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000004a:
 	sarl	$16, %esi
 	sarl	$16, %edi
@@ -24,16 +28,19 @@ func000000000000004a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000066:
 	cmpl	%esi, %edi
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000061:
 	cmpl	%esi, %edi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	sarl	%esi
 	sarl	%edi
@@ -41,12 +48,14 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000c:
 	xorl	%esi, %edi
 	cmpl	$2, %edi
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000b:
 	sarl	%esi
 	sarl	%edi
@@ -54,12 +63,14 @@ func000000000000000b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000041:
 	xorl	%esi, %edi
 	cmpl	$65536, %edi
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000046:
 	sarl	$16, %esi
 	sarl	$16, %edi

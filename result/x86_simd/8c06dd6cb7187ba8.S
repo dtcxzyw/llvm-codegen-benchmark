@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -16,6 +17,7 @@ func0000000000000048:
 	.quad	0x400a53f7ced91687
 .LCPI1_1:
 	.quad	0x3fd46a7ef9db22d1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
@@ -30,6 +32,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e5:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
@@ -45,6 +48,7 @@ func00000000000000e5:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ec:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
@@ -60,6 +64,7 @@ func00000000000000ec:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ea:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0

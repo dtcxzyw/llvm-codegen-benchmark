@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	cmpq	$1, %rdi
@@ -6,46 +7,54 @@ func0000000000000001:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000068:
 	cmpq	$2147483647, %rdi
 	movl	$-1, %eax
 	cmovbel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	testq	%rdi, %rdi
 	movl	$12, %eax
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	testq	%rdi, %rdi
 	movl	$7, %eax
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	cmpq	$2147483647, %rdi
 	movl	$-1, %eax
 	cmovbel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000048:
 	movq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
 	cmovsl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000006:
 	testq	%rdi, %rdi
 	movl	$-1, %eax
 	cmovnsl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	movq	%rdi, %rax
 	shrq	$32, %rax
@@ -53,22 +62,26 @@ func0000000000000014:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000054:
 	cmpq	$2, %rdi
 	movl	$7, %eax
 	cmovael	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000058:
 	movq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000078:
 	xorl	%eax, %eax
 	cmpq	$268435457, %rdi
 	cmovbl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000041:
 	movl	$4294967295, %eax
 	cmpq	%rax, %rdi

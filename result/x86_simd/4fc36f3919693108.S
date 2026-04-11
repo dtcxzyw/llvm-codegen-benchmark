@@ -3,6 +3,7 @@
 	.long	32768
 .LCPI0_1:
 	.long	16384
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vorps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -14,6 +15,7 @@ func0000000000000061:
 	.long	6
 .LCPI1_1:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vorps	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -25,6 +27,7 @@ func0000000000000021:
 	.long	4194304
 .LCPI2_1:
 	.long	256
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
 	vorps	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -38,6 +41,7 @@ func0000000000000041:
 	.long	15
 .LCPI3_2:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vorps	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	.LCPI3_1(%rip){1to8}, %ymm0, %k1

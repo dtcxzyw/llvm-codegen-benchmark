@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000098a:
 	vpsraq	$4, %ymm2, %ymm2
 	vpcmpleuq	%ymm0, %ymm2, %k0
@@ -10,6 +11,7 @@ func000000000000098a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000094c:
 	vpsraq	$3, %ymm2, %ymm2
 	vpcmpleuq	%ymm1, %ymm2, %k0
@@ -19,6 +21,7 @@ func000000000000094c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000009cc:
 	vpsraq	$2, %ymm2, %ymm2
 	vpcmpleq	%ymm1, %ymm2, %k0
@@ -28,6 +31,7 @@ func00000000000009cc:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000842:
 	vpsraq	$2, %ymm2, %ymm2
 	vpcmpeqq	%ymm1, %ymm2, %k0

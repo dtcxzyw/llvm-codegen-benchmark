@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004c1:
 	sarq	$2, %rdx
 	cmpq	%rdx, %rsi

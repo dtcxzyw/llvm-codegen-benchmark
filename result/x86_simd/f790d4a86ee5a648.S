@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpsllw	$15, %xmm2, %xmm2
 	vpsllw	$15, %xmm1, %xmm1
@@ -10,6 +11,7 @@ func000000000000000c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpsllw	$15, %xmm2, %xmm2
 	vpsllw	$15, %xmm1, %xmm1
@@ -23,6 +25,7 @@ func0000000000000006:
 
 .LCPI2_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpsllw	$15, %xmm2, %xmm2
 	vpsllw	$15, %xmm1, %xmm1

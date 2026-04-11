@@ -21,6 +21,7 @@
 	.long	4294583295
 .LCPI0_3:
 	.long	4294583296
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpcmpltuw	.LCPI0_1(%rip), %xmm1, %k0

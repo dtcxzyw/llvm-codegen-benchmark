@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000064:
 	subq	%rsi, %rdi
 	addq	$-32, %rdi
@@ -6,6 +7,7 @@ func0000000000000064:
 	imull	$-1227133513, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	subq	%rsi, %rdi
 	addq	$24, %rdi
@@ -13,6 +15,7 @@ func0000000000000044:
 	imull	$-1431655765, %edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000060:
 	subq	%rsi, %rdi
 	leaq	-14(%rdi), %rax

@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	subl	%esi, %edi
 	andl	$-8, %edi
 	leal	16(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	subl	%esi, %edi
 	andl	$-4, %edi
 	leal	-1(,%rdi,8), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000040:
 	subl	%esi, %edi
 	andl	$-8, %edi
 	leal	12(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
@@ -24,6 +28,7 @@ func0000000000000005:
 	leal	-1(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000045:
 	subq	%rsi, %rdi
 	shrq	$2, %rdi

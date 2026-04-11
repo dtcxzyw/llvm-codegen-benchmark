@@ -57,6 +57,7 @@
 .LCPI0_5:
 	.short	65151
 	.short	65151
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpbroadcastw	.LCPI0_3(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1

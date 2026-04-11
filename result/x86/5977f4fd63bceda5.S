@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000009b:
 	movslq	%edi, %rcx
 	imulq	$1374389535, %rcx, %rax

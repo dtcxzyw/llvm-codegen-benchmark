@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	subl	%esi, %edi
 	leal	160(%rdi), %eax
@@ -7,6 +8,7 @@ func0000000000000003:
 	andl	$7, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	subq	%rsi, %rdi
 	leaq	-9(%rdi), %rax
@@ -15,6 +17,7 @@ func0000000000000043:
 	andq	$-4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	subq	%rsi, %rdi
 	leaq	-2(%rdi), %rax
@@ -23,6 +26,7 @@ func0000000000000002:
 	andq	$-64, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000006b:
 	subl	%esi, %edi
 	leal	13(%rdi), %eax
@@ -31,6 +35,7 @@ func000000000000006b:
 	andl	$7, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
 	subl	%esi, %edi
 	addl	$63, %edi
@@ -39,6 +44,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000b:
 	subq	%rsi, %rdi
 	leaq	-4(%rdi), %rax
@@ -47,6 +53,7 @@ func000000000000000b:
 	andq	$-8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000003b:
 	subq	%rsi, %rdi
 	leaq	1(%rdi), %rax

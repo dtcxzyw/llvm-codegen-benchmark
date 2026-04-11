@@ -22,6 +22,7 @@
 	.zero	16,12
 .LCPI0_3:
 	.byte	16
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestnmw	.LCPI0_0(%rip), %ymm0, %k1
 	vpbroadcastb	.LCPI0_3(%rip), %xmm0

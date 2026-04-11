@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	256
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
@@ -9,6 +10,7 @@ func000000000000000a:
 
 .LCPI1_0:
 	.quad	-54
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -17,6 +19,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.quad	-64
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
@@ -25,6 +28,7 @@ func0000000000000000:
 
 .LCPI3_0:
 	.quad	-9
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
@@ -33,6 +37,7 @@ func0000000000000010:
 
 .LCPI4_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
@@ -41,6 +46,7 @@ func0000000000000006:
 
 .LCPI5_0:
 	.quad	-3
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001a:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
@@ -49,6 +55,7 @@ func000000000000001a:
 
 .LCPI6_0:
 	.quad	-2
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000003:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
@@ -57,6 +64,7 @@ func0000000000000003:
 
 .LCPI7_0:
 	.quad	4294963200
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001c:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
@@ -65,6 +73,7 @@ func000000000000001c:
 
 .LCPI8_0:
 	.quad	7
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000e:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
@@ -73,12 +82,14 @@ func000000000000000e:
 
 .LCPI9_0:
 	.quad	63
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000001e:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$6, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000014:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

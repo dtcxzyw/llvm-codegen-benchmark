@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	decl	%esi
 	cmpl	$2, %esi
@@ -6,6 +7,7 @@ func0000000000000048:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	addl	$-238, %esi
 	cmpl	$-9, %esi
@@ -13,6 +15,7 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	addl	$-32767, %esi
 	cmpl	$-32768, %esi
@@ -20,18 +23,21 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	decl	%esi
 	sets	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	cmpl	$-1, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000070:
 	andl	$-4, %esi
 	cmpl	$16, %esi
@@ -39,6 +45,7 @@ func0000000000000070:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000068:
 	addl	$-257, %esi
 	cmpl	$-256, %esi
@@ -46,12 +53,14 @@ func0000000000000068:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000018:
 	cmpl	$60, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	addl	$7, %esi
 	cmpl	$64, %esi
@@ -59,6 +68,7 @@ func0000000000000014:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000050:
 	addl	$-8, %esi
 	cmpl	$-7, %esi
@@ -66,12 +76,14 @@ func0000000000000050:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000042:
 	cmpl	$1, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000028:
 	addl	$-9, %esi
 	cmpl	$5, %esi
@@ -79,18 +91,21 @@ func0000000000000028:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000058:
 	cmpl	$1, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000c2:
 	cmpl	$999, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000030:
 	addl	$-16401, %esi
 	cmpl	$-16385, %esi
@@ -98,6 +113,7 @@ func0000000000000030:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000000d8:
 	cmpl	$5, %esi
 	setne	%al

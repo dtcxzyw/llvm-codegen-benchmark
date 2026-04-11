@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ec:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -12,6 +13,7 @@ func00000000000000ec:
 
 .LCPI1_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000cc:
 	vucomiss	.LCPI1_0(%rip), %xmm0
 	setne	%cl
@@ -22,6 +24,7 @@ func00000000000000cc:
 
 .LCPI2_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c6:
 	testq	%rdi, %rdi
 	setne	%cl
@@ -32,6 +35,7 @@ func00000000000000c6:
 
 .LCPI3_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000008c:
 	vucomiss	.LCPI3_0(%rip), %xmm0
 	seta	%cl
@@ -40,6 +44,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ac:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -49,6 +54,7 @@ func00000000000000ac:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c4:
 	testq	%rdi, %rdi
 	setne	%cl

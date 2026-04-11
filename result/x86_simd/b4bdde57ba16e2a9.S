@@ -20,6 +20,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	240
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000080:
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpsrld	$18, %ymm0, %ymm0
@@ -68,6 +69,7 @@ func0000000000000080:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000085:
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpsrld	$12, %ymm0, %ymm0
@@ -98,6 +100,7 @@ func0000000000000085:
 	.zero	1
 .LCPI2_2:
 	.byte	240
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000087:
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpsrld	$18, %ymm0, %ymm0
@@ -146,6 +149,7 @@ func0000000000000087:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000081:
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vpsrld	$12, %ymm0, %ymm0

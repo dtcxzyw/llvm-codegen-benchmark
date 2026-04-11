@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vmovmskps	%xmm0, %eax
 	andl	$1, %eax
@@ -6,6 +7,7 @@ func0000000000000000:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vmovd	%xmm0, %eax
 	shrl	$2, %eax

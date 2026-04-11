@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpslld	$16, %ymm0, %ymm0
 	vpblendw	$170, %ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpslld	$16, %ymm0, %ymm0
@@ -13,12 +15,14 @@ func0000000000000001:
 
 .LCPI2_0:
 	.long	4026531855
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpslld	$4, %ymm0, %ymm0
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpslld	$16, %ymm0, %ymm0
@@ -58,6 +62,7 @@ func000000000000000d:
 	.byte	29
 	.byte	30
 	.byte	60
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vpor	%ymm2, %ymm1, %ymm2
 	vmovdqa	.LCPI4_0(%rip), %ymm1
@@ -67,6 +72,7 @@ func0000000000000005:
 
 .LCPI5_0:
 	.long	4286644223
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpslld	$16, %ymm0, %ymm0

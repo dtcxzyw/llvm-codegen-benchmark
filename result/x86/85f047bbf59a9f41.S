@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	sarl	$2, %esi
 	addl	%edi, %esi
@@ -6,6 +7,7 @@ func0000000000000005:
 	imulq	$86400, %rax, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	sarl	%esi
 	addl	%edi, %esi

@@ -3,6 +3,7 @@
 	.long	2021161081
 .LCPI0_1:
 	.long	1023
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpmovqd	%ymm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm1
@@ -18,6 +19,7 @@ func0000000000000009:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
 	vpsrld	$31, %xmm0, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpandn	%ymm0, %ymm1, %ymm0
 	vptestnmw	%ymm0, %ymm0, %k0
@@ -43,6 +44,7 @@ func0000000000000001:
 .LCPI1_2:
 	.short	55296
 	.short	55296
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpternlogd	$96, .LCPI1_2(%rip){1to8}, %ymm1, %ymm0
 	vpcmpltuw	.LCPI1_1(%rip), %ymm0, %k0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	orb	$2, %sil
 	movzbl	%sil, %ecx
@@ -7,6 +8,7 @@ func0000000000000001:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	orb	$-32, %sil
 	movzbl	%sil, %ecx

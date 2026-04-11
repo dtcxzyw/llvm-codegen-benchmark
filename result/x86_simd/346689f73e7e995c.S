@@ -19,6 +19,7 @@
 	.long	12
 	.long	6
 	.long	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000019:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm2
 	vpmovsxbd	.LCPI0_2(%rip), %ymm1

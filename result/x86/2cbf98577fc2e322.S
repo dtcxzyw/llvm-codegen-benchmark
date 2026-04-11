@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ea:
 	movl	%edx, %eax
 	sarl	$31, %eax
@@ -8,6 +9,7 @@ func00000000000000ea:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000f8:
 	cmpl	$2, %edx
 	movl	$1, %eax

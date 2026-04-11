@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	85
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000c2c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -15,6 +16,7 @@ func0000000000000c2c:
 
 .LCPI1_0:
 	.long	536870912
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000f2c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -29,6 +31,7 @@ func0000000000000f2c:
 	.long	64512
 .LCPI2_1:
 	.long	55296
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000082c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -44,6 +47,7 @@ func000000000000082c:
 	.long	64512
 .LCPI3_1:
 	.long	55296
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000042c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2

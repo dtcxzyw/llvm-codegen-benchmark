@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000074:
 	addq	%rsi, %rdi
 	cmpq	$128, %rdi
@@ -6,6 +7,7 @@ func0000000000000074:
 	sbbq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000034:
 	addq	%rsi, %rdi
 	cmpq	$128, %rdi
@@ -13,12 +15,14 @@ func0000000000000034:
 	sbbq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	leaq	(%rdi,%rsi), %rax
 	sarq	$63, %rax
 	andl	$7168, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	addq	%rsi, %rdi
 	shrq	$56, %rdi
@@ -27,6 +31,7 @@ func0000000000000004:
 	sbbq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	movabsq	$9223372036854775807, %rcx
 	leaq	2(%rcx), %rax
@@ -34,6 +39,7 @@ func000000000000000a:
 	cmovsq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000078:
 	addq	%rsi, %rdi
 	xorl	%eax, %eax
@@ -42,6 +48,7 @@ func0000000000000078:
 	shlq	$52, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	xorl	%eax, %eax
 	addq	%rsi, %rdi
@@ -49,6 +56,7 @@ func000000000000000c:
 	shll	$2, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000006c:
 	xorl	%eax, %eax
 	orq	%rsi, %rdi
@@ -56,6 +64,7 @@ func000000000000006c:
 	shll	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	xorl	%eax, %eax
 	addq	%rsi, %rdi
@@ -63,6 +72,7 @@ func000000000000002c:
 	shll	$4, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	addq	%rsi, %rdi
 	cmpq	$1024, %rdi
@@ -70,6 +80,7 @@ func0000000000000008:
 	sbbq	$-1, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	addq	%rsi, %rdi

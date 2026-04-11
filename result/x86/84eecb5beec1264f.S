@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -9,6 +10,7 @@ func0000000000000002:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -19,6 +21,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -28,6 +31,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.quad	0x3fb999999999999a
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -36,6 +40,7 @@ func000000000000000d:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -46,6 +51,7 @@ func0000000000000005:
 
 .LCPI5_0:
 	.quad	0x41cdcd6500000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000003:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -53,6 +59,7 @@ func0000000000000003:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000e:
 	vcvtusi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -62,6 +69,7 @@ func000000000000000e:
 
 .LCPI7_0:
 	.quad	0x433fffffffffffff
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000014:
 	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0

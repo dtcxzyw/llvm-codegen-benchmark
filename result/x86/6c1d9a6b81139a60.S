@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000025:
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vminsd	%xmm0, %xmm1, %xmm0
@@ -9,6 +10,7 @@ func0000000000000025:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vminsd	%xmm0, %xmm1, %xmm0
@@ -17,6 +19,7 @@ func0000000000000024:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000043:
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vmaxsd	%xmm0, %xmm1, %xmm0
@@ -27,6 +30,7 @@ func0000000000000043:
 
 .LCPI3_0:
 	.quad	0x3fb999999999999a
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000022:
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vminsd	%xmm0, %xmm1, %xmm0
@@ -37,6 +41,7 @@ func0000000000000022:
 
 .LCPI4_0:
 	.quad	0x3f50624dd2f1a9fc
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vmaxsd	%xmm0, %xmm1, %xmm0

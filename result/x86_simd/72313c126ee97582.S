@@ -5,6 +5,7 @@
 	.zero	16,4
 .LCPI0_2:
 	.zero	4,4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000074:
 	vpminub	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
@@ -16,6 +17,7 @@ func0000000000000074:
 	.zero	16,254
 .LCPI1_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpbroadcastb	.LCPI1_2(%rip), %xmm1
@@ -28,6 +30,7 @@ func0000000000000004:
 	.zero	16,96
 .LCPI2_1:
 	.zero	16,169
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000038:
 	vpcmpnleub	.LCPI2_0(%rip), %xmm0, %k1
 	vpaddb	.LCPI2_1(%rip), %xmm0, %xmm0 {%k1} {z}

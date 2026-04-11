@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000056:
 	sarq	$2, %rdi
 	movabsq	$-6148914691236517205, %rax
@@ -12,6 +13,7 @@ func0000000000000056:
 	cmovaeq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000076:
 	sarq	$2, %rdi
 	movabsq	$-6148914691236517205, %rax

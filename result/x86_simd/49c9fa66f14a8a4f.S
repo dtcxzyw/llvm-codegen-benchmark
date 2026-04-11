@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	55295
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000698:
 	vpor	%ymm2, %ymm1, %ymm1
 	vpcmpltub	.LCPI0_0(%rip), %xmm0, %k1

@@ -18,6 +18,7 @@
 	.short	258
 .LCPI0_1:
 	.short	258
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -28,6 +29,7 @@ func0000000000000005:
 	vmovdqu16	%ymm1, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -37,6 +39,7 @@ func000000000000000f:
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vpmovzxbw	%xmm2, %ymm0
 	vpsllw	$8, %ymm1, %ymm1

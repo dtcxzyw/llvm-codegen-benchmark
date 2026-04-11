@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	22
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c0:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubb	%xmm3, %xmm2, %xmm2

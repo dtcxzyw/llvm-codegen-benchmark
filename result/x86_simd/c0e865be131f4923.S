@@ -5,6 +5,7 @@
 	.quad	4
 .LCPI0_1:
 	.long	127
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1 {%k1} {z}
@@ -21,6 +22,7 @@ func0000000000000021:
 	.quad	8588
 .LCPI1_2:
 	.long	16
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1

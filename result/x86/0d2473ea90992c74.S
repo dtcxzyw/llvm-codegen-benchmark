@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	movslq	%esi, %rax
 	imulq	$1431655766, %rax, %rax
@@ -10,6 +11,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movl	%esi, %eax
 	shrl	$31, %eax

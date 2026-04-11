@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000010c:
 	addl	$-1, %edi
 	setb	%cl
@@ -7,6 +8,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000004ca:
 	incl	%edi
 	setge	%cl
@@ -15,6 +17,7 @@ func00000000000004ca:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000004c8:
 	leal	-87(%rdi), %eax
 	cmpl	%esi, %eax

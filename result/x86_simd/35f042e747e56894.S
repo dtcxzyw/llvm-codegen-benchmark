@@ -7,6 +7,7 @@
 	.long	67108863
 .LCPI0_3:
 	.long	524287
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000085:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k2
@@ -23,6 +24,7 @@ func0000000000000085:
 	.long	6
 .LCPI1_3:
 	.long	5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000087:
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vptestnmd	%ymm0, %ymm0, %k2

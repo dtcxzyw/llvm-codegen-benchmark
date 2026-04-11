@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestnmw	%ymm2, %ymm2, %k1
 	vpor	%ymm1, %ymm0, %ymm1
@@ -24,6 +25,7 @@ func0000000000000003:
 	.short	5
 .LCPI1_1:
 	.short	5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vptestnmw	%ymm2, %ymm2, %k1
 	vpbroadcastw	.LCPI1_1(%rip), %ymm2

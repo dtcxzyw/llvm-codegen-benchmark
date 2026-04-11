@@ -41,6 +41,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	vpmovzxdq	%xmm2, %ymm2
 	vpsrlvq	%ymm2, %ymm1, %ymm1

@@ -4,6 +4,7 @@
 	.long	0
 	.long	4294967295
 	.long	2147483647
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	andb	$1, %dil
 	negb	%dil

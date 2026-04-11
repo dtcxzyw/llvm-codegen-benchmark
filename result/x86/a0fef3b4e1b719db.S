@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	andl	$1, %edx
 	movl	$6, %ecx
@@ -9,6 +10,7 @@ func0000000000000061:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	andl	$1, %edx
 	leaq	-1(%rdx), %rax
@@ -18,6 +20,7 @@ func0000000000000004:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	notb	%dl
 	movzbl	%dl, %eax
@@ -29,6 +32,7 @@ func0000000000000010:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	andl	$1, %edx
 	leaq	-1(%rdx), %rax
@@ -38,6 +42,7 @@ func0000000000000005:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
 	testb	$1, %dl
 	movl	$58, %eax
@@ -49,6 +54,7 @@ func0000000000000013:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000051:
 	testb	$1, %dl
 	movl	$64, %eax
@@ -60,6 +66,7 @@ func0000000000000051:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000053:
 	testb	$1, %dl
 	movl	$64, %eax
@@ -71,6 +78,7 @@ func0000000000000053:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000020:
 	testb	$1, %dl
 	movl	$4096, %eax

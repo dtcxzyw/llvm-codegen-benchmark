@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vptestnmw	%ymm2, %ymm2, %k1
 	vmovdqu16	%ymm0, %ymm1 {%k1}
@@ -45,6 +46,7 @@ func0000000000000001:
 .LCPI1_1:
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	vptestnmw	%ymm2, %ymm2, %k1
 	vmovdqu16	%ymm1, %ymm0 {%k1}

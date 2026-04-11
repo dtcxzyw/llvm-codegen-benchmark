@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
@@ -8,6 +9,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000d09:
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
@@ -17,6 +19,7 @@ func0000000000000d09:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000908:
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
@@ -26,6 +29,7 @@ func0000000000000908:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000109:
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx
@@ -35,6 +39,7 @@ func0000000000000109:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a4:
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -44,6 +49,7 @@ func00000000000000a4:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000d08:
 	addq	%rdi, %rdx
 	cmpq	%rsi, %rdx

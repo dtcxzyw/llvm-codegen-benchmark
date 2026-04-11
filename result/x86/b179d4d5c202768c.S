@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	decq	%rdi
 	xorl	%eax, %eax
@@ -6,18 +7,21 @@ func0000000000000008:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	xorl	%eax, %eax
 	cmpq	$-1, %rdi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	xorl	%eax, %eax
 	cmpq	$7, %rdi
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000048:
 	addq	$-8173, %rdi
 	xorl	%eax, %eax
@@ -25,6 +29,7 @@ func0000000000000048:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000042:
 	xorl	%eax, %eax
 	cmpq	$-1, %rdi

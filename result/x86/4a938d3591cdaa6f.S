@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000084:
 	testq	%rdx, %rdx
 	cmovneq	%rdx, %rsi
@@ -7,6 +8,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
 	cmpq	$-1, %rdx
 	cmovneq	%rdx, %rsi
@@ -15,6 +17,7 @@ func00000000000000c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	cmpq	$-1, %rdx
 	cmovneq	%rdx, %rsi
@@ -23,6 +26,7 @@ func0000000000000081:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000441:
 	cmpq	$4, %rdx
 	cmovbq	%rdx, %rsi
@@ -31,6 +35,7 @@ func0000000000000441:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000401:
 	cmpq	$2, %rdx
 	cmovbq	%rdx, %rsi
@@ -39,6 +44,7 @@ func0000000000000401:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000444:
 	cmpq	$3, %rdx
 	cmovbq	%rdx, %rsi
@@ -47,6 +53,7 @@ func0000000000000444:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000404:
 	cmpq	$6, %rdx
 	cmovbq	%rdx, %rsi

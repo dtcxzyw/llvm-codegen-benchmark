@@ -22,6 +22,7 @@
 	.quad	196
 .LCPI0_3:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e1:
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0

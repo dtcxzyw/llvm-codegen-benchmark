@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x408f400000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	vmovsd	.LCPI0_0(%rip), %xmm2
 	vucomisd	%xmm1, %xmm2
@@ -11,6 +12,7 @@ func0000000000000088:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002a8:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm1, %xmm2
@@ -25,6 +27,7 @@ func00000000000002a8:
 	.quad	0x4000000000000000
 .LCPI2_1:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000108:
 	vucomisd	.LCPI2_0(%rip), %xmm1
 	seta	%cl
@@ -34,6 +37,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001dc:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm2, %xmm1
@@ -50,6 +54,7 @@ func00000000000001dc:
 
 .LCPI4_0:
 	.quad	0x3a1b900000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000208:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm2, %xmm1
@@ -63,6 +68,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm1, %xmm2
@@ -77,6 +83,7 @@ func0000000000000084:
 	.quad	0x3a1b900000000000
 .LCPI6_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000090:
 	vmovsd	.LCPI6_0(%rip), %xmm2
 	vucomisd	%xmm1, %xmm2
@@ -91,6 +98,7 @@ func0000000000000090:
 
 .LCPI7_0:
 	.quad	0xbff921fb54442d18
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000210:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm2, %xmm1
@@ -107,6 +115,7 @@ func0000000000000210:
 
 .LCPI8_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000104:
 	vucomisd	.LCPI8_0(%rip), %xmm1
 	seta	%cl
@@ -119,6 +128,7 @@ func0000000000000104:
 
 .LCPI9_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000264:
 	vmovsd	.LCPI9_0(%rip), %xmm2
 	vucomisd	%xmm2, %xmm1
@@ -133,6 +143,7 @@ func0000000000000264:
 	.quad	0x3ff0000000000000
 .LCPI10_1:
 	.quad	0x3870000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000314:
 	vucomisd	.LCPI10_0(%rip), %xmm1
 	setae	%cl
@@ -143,6 +154,7 @@ func0000000000000314:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000cc:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm2, %xmm1
@@ -157,6 +169,7 @@ func00000000000000cc:
 	.quad	0x7ff0000000000000
 .LCPI12_1:
 	.quad	0x4070000000000000
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000258:
 	vucomisd	.LCPI12_0(%rip), %xmm1
 	sete	%cl
@@ -166,6 +179,7 @@ func0000000000000258:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000288:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm1, %xmm2
@@ -178,6 +192,7 @@ func0000000000000288:
 
 .LCPI14_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000001d0:
 	vmovsd	.LCPI14_0(%rip), %xmm2
 	vucomisd	%xmm2, %xmm1
@@ -188,6 +203,7 @@ func00000000000001d0:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000021c:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vucomisd	%xmm2, %xmm1
@@ -204,6 +220,7 @@ func000000000000021c:
 
 .LCPI16_0:
 	.quad	0x3ffe666772d5e071
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000110:
 	vmovsd	.LCPI16_0(%rip), %xmm2
 	vucomisd	%xmm2, %xmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000011a:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpmovd2m	%ymm1, %k1

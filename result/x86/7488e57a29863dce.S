@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	testl	%edx, %edx
 	movabsq	$72057594037927936, %rcx
@@ -8,6 +9,7 @@ func0000000000000003:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	cmpl	$127, %edx
 	movabsq	$9151314442816847872, %rcx

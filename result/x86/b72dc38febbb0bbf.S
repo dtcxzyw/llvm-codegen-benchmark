@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	cmpl	$-1, %edi
 	sete	%cl
@@ -10,6 +11,7 @@ func0000000000000014:
 
 .LCPI1_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000006c:
 	testl	%edi, %edi
 	setle	%cl
@@ -18,6 +20,7 @@ func000000000000006c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000067:
 	testl	%edi, %edi
 	setle	%cl
@@ -29,6 +32,7 @@ func0000000000000067:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c7:
 	testl	%edi, %edi
 	setne	%cl
@@ -40,6 +44,7 @@ func00000000000000c7:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a8:
 	testl	%edi, %edi
 	setg	%cl
@@ -53,6 +58,7 @@ func00000000000000a8:
 
 .LCPI5_0:
 	.long	0x3727c5ac
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000062:
 	cmpl	$8, %edi
 	setl	%cl
@@ -64,6 +70,7 @@ func0000000000000062:
 
 .LCPI6_0:
 	.long	0x3727c5ac
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000042:
 	cmpl	$8, %edi
 	setb	%cl
@@ -73,6 +80,7 @@ func0000000000000042:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000a4:
 	testl	%edi, %edi
 	setg	%cl
@@ -82,6 +90,7 @@ func00000000000000a4:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c4:
 	testl	%edi, %edi
 	setne	%cl
@@ -93,6 +102,7 @@ func00000000000000c4:
 
 .LCPI9_0:
 	.long	0x3727c5ac
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000144:
 	cmpl	$100000, %edi
 	setb	%cl
@@ -101,6 +111,7 @@ func0000000000000144:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000cc:
 	testl	%edi, %edi
 	setne	%cl
@@ -110,6 +121,7 @@ func00000000000000cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000001a:
 	cmpl	$-1, %edi
 	sete	%cl
@@ -119,6 +131,7 @@ func000000000000001a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000a7:
 	testl	%edi, %edi
 	setg	%cl
@@ -130,6 +143,7 @@ func00000000000000a7:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000018:
 	cmpl	$1, %edi
 	sete	%cl
@@ -143,6 +157,7 @@ func0000000000000018:
 
 .LCPI14_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000016:
 	cmpl	$5, %edi
 	sete	%cl
@@ -153,6 +168,7 @@ func0000000000000016:
 
 .LCPI15_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000000a2:
 	cmpl	$2, %edi
 	setge	%cl
@@ -164,6 +180,7 @@ func00000000000000a2:
 
 .LCPI16_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000a6:
 	testl	%edi, %edi
 	setg	%cl
@@ -174,6 +191,7 @@ func00000000000000a6:
 
 .LCPI17_0:
 	.long	0x42960000
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000001c:
 	cmpl	$5, %edi
 	sete	%cl

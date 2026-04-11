@@ -3,6 +3,7 @@
 	.long	31
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
@@ -15,6 +16,7 @@ func000000000000000e:
 	.long	31
 .LCPI1_1:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
@@ -25,6 +27,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.long	31
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
@@ -37,6 +40,7 @@ func0000000000000001:
 	.long	7
 .LCPI3_1:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
@@ -49,6 +53,7 @@ func0000000000000003:
 	.long	31
 .LCPI4_1:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
@@ -61,6 +66,7 @@ func000000000000000a:
 	.long	7
 .LCPI5_1:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
@@ -93,6 +99,7 @@ func000000000000000f:
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000000:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI6_2(%rip){1to4}, %xmm0, %xmm0
@@ -105,6 +112,7 @@ func0000000000000000:
 	.long	15
 .LCPI7_1:
 	.long	4
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000b:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
@@ -117,6 +125,7 @@ func000000000000000b:
 	.long	7
 .LCPI8_1:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000007:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
@@ -129,6 +138,7 @@ func0000000000000007:
 	.long	31
 .LCPI9_1:
 	.long	1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000006:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI9_0(%rip){1to4}, %xmm0, %xmm0
@@ -139,6 +149,7 @@ func0000000000000006:
 
 .LCPI10_0:
 	.long	31
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000009:
 	vpmovqd	%ymm0, %xmm0
 	vpandd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0

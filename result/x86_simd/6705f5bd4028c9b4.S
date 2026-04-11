@@ -3,6 +3,7 @@
 	.long	215
 .LCPI0_1:
 	.quad	8388607
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpsrlq	$40, %ymm1, %ymm1
 	vpcmpltd	.LCPI0_0(%rip){1to4}, %xmm0, %k1

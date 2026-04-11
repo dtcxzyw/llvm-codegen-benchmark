@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	andl	$1, %esi
 	xorl	$23, %esi
@@ -6,6 +7,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	andl	$1, %esi
 	shll	$7, %esi
@@ -14,6 +16,7 @@ func0000000000000014:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	andl	$1, %esi
 	movl	$2, %eax
@@ -22,6 +25,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	andl	$1, %esi
 	incl	%esi
@@ -29,6 +33,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -38,6 +43,7 @@ func0000000000000018:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -48,6 +54,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	testb	$1, %sil
 	movl	$50, %eax
@@ -57,6 +64,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000005:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -66,6 +74,7 @@ func0000000000000005:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
 	testb	$1, %sil
 	movl	$256, %eax
@@ -75,6 +84,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000019:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -85,6 +95,7 @@ func0000000000000019:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000b:
 	andl	$1, %esi
 	xorl	$5, %esi
@@ -92,6 +103,7 @@ func000000000000000b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000009:
 	andl	$1, %esi
 	shll	$5, %esi
@@ -100,6 +112,7 @@ func0000000000000009:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000015:
 	andl	$1, %esi
 	leal	8(,%rsi,8), %eax
@@ -107,6 +120,7 @@ func0000000000000015:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000007:
 	andl	$1, %esi
 	leal	8(,%rsi,4), %eax

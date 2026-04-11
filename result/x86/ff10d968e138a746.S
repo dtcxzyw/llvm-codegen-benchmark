@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	notb	%dil
 	cmpl	$16, %esi
@@ -8,6 +9,7 @@ func0000000000000010:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	notb	%dil
 	testl	%esi, %esi
@@ -17,6 +19,7 @@ func0000000000000018:
 	negl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	notb	%dil
 	cmpl	$8, %esi

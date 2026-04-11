@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000070:
 	movslq	%esi, %rax
 	imulq	$88, %rax, %rax
 	leaq	2952(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,2), %rax
@@ -12,18 +14,21 @@ func0000000000000043:
 	leaq	1412(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000073:
 	movslq	%esi, %rax
 	imulq	$220, %rax, %rax
 	leaq	92(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000040:
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,8), %rax
 	leaq	27(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000007b:
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,2), %rax

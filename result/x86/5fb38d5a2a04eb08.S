@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
 	movq	%rdi, %rax
 	cmpq	$5242885, %rdi
@@ -7,6 +8,7 @@ func0000000000000020:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	movq	%rdi, %rax
 	cmpq	$32, %rdi
@@ -14,6 +16,7 @@ func0000000000000006:
 	subq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000019:
 	movq	%rdi, %rax
 	testq	%rdi, %rdi
@@ -22,6 +25,7 @@ func0000000000000019:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000029:
 	movq	%rdi, %rax
 	cmpq	$384, %rdi
@@ -30,6 +34,7 @@ func0000000000000029:
 	subq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx

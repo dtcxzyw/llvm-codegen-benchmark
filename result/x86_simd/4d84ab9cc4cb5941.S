@@ -33,6 +33,7 @@
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vptestnmw	.LCPI0_0(%rip), %ymm1, %k0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k1

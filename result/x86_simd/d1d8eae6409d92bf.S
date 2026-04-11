@@ -3,6 +3,7 @@
 	.quad	8
 .LCPI0_1:
 	.quad	-7070675565921424023
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpxor	%ymm0, %ymm1, %ymm0
@@ -14,6 +15,7 @@ func0000000000000018:
 	.quad	963444408
 .LCPI1_1:
 	.quad	-7046029288634856825
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpxor	%ymm1, %ymm0, %ymm0
@@ -23,6 +25,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.quad	7109453100751455733
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -35,6 +38,7 @@ func0000000000000010:
 	.quad	-4650441984963589867
 .LCPI3_1:
 	.quad	-7070675565921424023
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpxor	%ymm1, %ymm0, %ymm0

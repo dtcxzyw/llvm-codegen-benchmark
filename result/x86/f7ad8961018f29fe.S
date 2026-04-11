@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	cmpl	$1, %edx
 	sete	%al
@@ -7,6 +8,7 @@ func000000000000000b:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000060:
 	testl	%edx, %edx
 	setne	%al
@@ -15,6 +17,7 @@ func0000000000000060:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000063:
 	testl	%edx, %edx
 	setne	%al
@@ -23,6 +26,7 @@ func0000000000000063:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000050:
 	testl	%edx, %edx
 	setns	%al
@@ -31,6 +35,7 @@ func0000000000000050:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000021:
 	cmpl	$-2, %edx
 	setb	%al
@@ -39,6 +44,7 @@ func0000000000000021:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000061:
 	testl	%edx, %edx
 	setne	%al
@@ -47,6 +53,7 @@ func0000000000000061:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000030:
 	cmpl	$-999, %edx
 	setl	%al
@@ -55,6 +62,7 @@ func0000000000000030:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000051:
 	testl	%edx, %edx
 	setg	%al
@@ -63,6 +71,7 @@ func0000000000000051:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000031:
 	cmpl	$-999, %edx
 	setl	%al

@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	3840
 	.short	3840
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpternlogd	$248, .LCPI0_1(%rip){1to4}, %xmm2, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -29,6 +30,7 @@ func0000000000000006:
 .LCPI1_1:
 	.short	2048
 	.short	2048
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpternlogd	$248, .LCPI1_1(%rip){1to4}, %xmm2, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -57,6 +59,7 @@ func0000000000000007:
 	.byte	255
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpternlogd	$248, .LCPI2_1(%rip){1to4}, %xmm2, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -75,6 +78,7 @@ func0000000000000005:
 .LCPI3_1:
 	.short	56
 	.short	56
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	vpternlogd	$248, .LCPI3_1(%rip){1to4}, %xmm2, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

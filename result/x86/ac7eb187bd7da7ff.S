@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	orl	%esi, %edi
 	andl	$1048575, %edi
 	imulq	$2000, %rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	orq	%rsi, %rdi
 	andq	$-16777216, %rdi

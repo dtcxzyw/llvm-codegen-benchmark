@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -7,6 +8,7 @@ func0000000000000028:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -15,6 +17,7 @@ func000000000000002c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -23,6 +26,7 @@ func0000000000000081:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000101:
 	cmpq	%rdx, %rsi
 	seta	%cl
@@ -31,6 +35,7 @@ func0000000000000101:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ac:
 	cmpq	%rdx, %rsi
 	setbe	%cl
@@ -39,6 +44,7 @@ func00000000000000ac:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	cmpq	%rdx, %rsi
 	setb	%cl
@@ -47,6 +53,7 @@ func0000000000000084:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000181:
 	cmpq	%rdx, %rsi
 	setne	%cl
@@ -55,6 +62,7 @@ func0000000000000181:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -64,6 +72,7 @@ func0000000000000024:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000021:
 	cmpq	%rdx, %rsi
 	sete	%cl
@@ -72,6 +81,7 @@ func0000000000000021:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000012c:
 	cmpq	%rdx, %rsi
 	setae	%cl
@@ -80,6 +90,7 @@ func000000000000012c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a6:
 	cmpq	%rdx, %rsi
 	setbe	%cl

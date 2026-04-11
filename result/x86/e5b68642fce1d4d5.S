@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	movzbl	%dl, %eax
 	shll	$8, %eax
@@ -7,6 +8,7 @@ func000000000000001f:
 	bswapl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	movzbl	%dl, %eax
 	shll	$4, %eax
@@ -15,6 +17,7 @@ func0000000000000018:
 	bswapl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001e:
 	movzbl	%dl, %eax
 	shll	$8, %eax

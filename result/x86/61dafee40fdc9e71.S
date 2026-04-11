@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	addq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	imulq	$104, %rdx, %rax
 	addq	%rsi, %rax
@@ -12,6 +14,7 @@ func0000000000000041:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	shlq	$3, %rdx
 	addq	%rsi, %rdx
@@ -19,6 +22,7 @@ func0000000000000061:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000004c:
 	addq	%rdx, %rsi
 	setne	%al
@@ -26,6 +30,7 @@ func000000000000004c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000006c:
 	imulq	$56, %rdx, %rax
 	addq	%rsi, %rax
@@ -34,6 +39,7 @@ func000000000000006c:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	addq	%rdx, %rsi
 	setne	%al

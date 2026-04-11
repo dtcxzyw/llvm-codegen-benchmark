@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	andb	$-33, %dil
 	addb	$-65, %dil
@@ -6,6 +7,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	andb	$31, %dil
 	addb	$-12, %dil
@@ -13,6 +15,7 @@ func0000000000000024:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000104:
 	andb	$-33, %dil
 	addb	$-65, %dil
@@ -20,6 +23,7 @@ func0000000000000104:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000124:
 	andb	$127, %dil
 	addb	$-8, %dil

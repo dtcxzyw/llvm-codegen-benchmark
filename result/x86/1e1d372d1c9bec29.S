@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000777:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpneqsd	%xmm3, %xmm2, %k0
@@ -14,6 +15,7 @@ func0000000000000777:
 
 .LCPI1_0:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000bbb:
 	vmovsd	.LCPI1_0(%rip), %xmm3
 	vcmpnltsd	%xmm2, %xmm3, %k0
@@ -27,6 +29,7 @@ func0000000000000bbb:
 
 .LCPI2_0:
 	.quad	0x4000000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000888:
 	vmovsd	.LCPI2_0(%rip), %xmm3
 	vcmpeqsd	%xmm3, %xmm2, %k0
@@ -40,6 +43,7 @@ func0000000000000888:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000222:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpltsd	%xmm3, %xmm2, %k0
@@ -51,6 +55,7 @@ func0000000000000222:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000111:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpunordsd	%xmm3, %xmm2, %k0
@@ -64,6 +69,7 @@ func0000000000000111:
 
 .LCPI5_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000878:
 	vmovsd	.LCPI5_0(%rip), %xmm3
 	vcmpeqsd	%xmm3, %xmm2, %k0
@@ -79,6 +85,7 @@ func0000000000000878:
 	.quad	0x402921fb54442d18
 .LCPI6_1:
 	.quad	0x4009220092718f51
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000555:
 	vmovsd	.LCPI6_0(%rip), %xmm3
 	vcmpnlesd	%xmm3, %xmm2, %k0
@@ -91,6 +98,7 @@ func0000000000000555:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000aaa:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmplesd	%xmm3, %xmm2, %k0
@@ -104,6 +112,7 @@ func0000000000000aaa:
 
 .LCPI8_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000bbd:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpnltsd	%xmm2, %xmm3, %k0
@@ -118,6 +127,7 @@ func0000000000000bbd:
 
 .LCPI9_0:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000a2a:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmplesd	%xmm3, %xmm2, %k0
@@ -129,6 +139,7 @@ func0000000000000a2a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000444:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpltsd	%xmm2, %xmm3, %k0

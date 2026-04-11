@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x3ddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm1, %xmm1
@@ -12,6 +13,7 @@ func0000000000000012:
 
 .LCPI1_0:
 	.quad	0x3e80000000000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm1, %xmm1
@@ -20,6 +22,7 @@ func0000000000000014:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm1, %xmm1
@@ -29,6 +32,7 @@ func0000000000000018:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm1, %xmm1
@@ -40,6 +44,7 @@ func0000000000000007:
 
 .LCPI4_0:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm1, %xmm1
@@ -51,6 +56,7 @@ func0000000000000002:
 
 .LCPI5_0:
 	.quad	0x3a88c240c4aecb14
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm1, %xmm1
@@ -59,6 +65,7 @@ func0000000000000004:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm1, %xmm1

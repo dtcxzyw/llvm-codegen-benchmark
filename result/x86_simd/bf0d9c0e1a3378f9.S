@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000003181:
 	vptestmb	%xmm1, %xmm1, %k1
 	vptestmb	%xmm0, %xmm0, %k1 {%k1}
@@ -8,6 +9,7 @@ func0000000000003181:
 
 .LCPI1_0:
 	.zero	16,28
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000002101:
 	vpminub	%xmm1, %xmm0, %xmm2
 	vpcmpeqb	%xmm1, %xmm0, %k1

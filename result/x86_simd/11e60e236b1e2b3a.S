@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3fa2f983
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%zmm2, %zmm1, %k1
@@ -11,6 +12,7 @@ func0000000000000007:
 	.long	0x3f000000
 .LCPI1_1:
 	.long	0x428c0000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcmpgtps	.LCPI1_0(%rip){1to16}, %zmm1, %k1
 	vbroadcastss	.LCPI1_1(%rip), %zmm1
@@ -22,6 +24,7 @@ func0000000000000004:
 	.long	0xc20a27b5
 .LCPI2_1:
 	.long	0x40200000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnleps	%zmm2, %zmm1, %k1

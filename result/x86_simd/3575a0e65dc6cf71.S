@@ -5,6 +5,7 @@
 	.quad	-4194304
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vandpd	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpeqd	.LCPI0_1(%rip){1to4}, %xmm0, %k1

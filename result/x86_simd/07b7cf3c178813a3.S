@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000018cc:
 	vpor	%ymm1, %ymm0, %ymm2
 	vpmovd2m	%ymm2, %k0
@@ -8,6 +9,7 @@ func00000000000018cc:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000428:
 	vptestnmd	%ymm0, %ymm0, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
@@ -18,6 +20,7 @@ func0000000000000428:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000042c:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k0
@@ -29,6 +32,7 @@ func000000000000042c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000018c1:
 	vpor	%ymm1, %ymm0, %ymm2
 	vpmovd2m	%ymm2, %k0
@@ -38,6 +42,7 @@ func00000000000018c1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000421:
 	vptestnmd	%ymm1, %ymm1, %k0
 	vptestnmd	%ymm0, %ymm0, %k1

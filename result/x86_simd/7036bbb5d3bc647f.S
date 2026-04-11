@@ -5,6 +5,7 @@
 	.zero	16,8
 .LCPI0_2:
 	.zero	4,56
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vpxord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpltub	.LCPI0_1(%rip), %xmm0, %k0

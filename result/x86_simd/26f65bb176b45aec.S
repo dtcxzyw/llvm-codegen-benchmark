@@ -33,6 +33,7 @@
 	.short	16385
 	.short	16385
 	.short	16385
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpcmpltuw	.LCPI0_1(%rip), %ymm0, %k0
@@ -40,6 +41,7 @@ func0000000000000034:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

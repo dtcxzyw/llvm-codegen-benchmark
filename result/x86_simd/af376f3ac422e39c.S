@@ -75,6 +75,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vcvttps2dq	%ymm2, %ymm2
 	vpternlogd	$248, .LCPI0_2(%rip){1to8}, %ymm1, %ymm0

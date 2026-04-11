@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000128:
 	incl	%esi
 	sarq	$2, %rdi
@@ -7,6 +8,7 @@ func0000000000000128:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000124:
 	incl	%esi
 	sarq	$2, %rdi

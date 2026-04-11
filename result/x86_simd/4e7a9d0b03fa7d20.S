@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovw2m	%xmm1, %k1
 	vpmovsxdq	%xmm0, %ymm0 {%k1} {z}
@@ -6,6 +7,7 @@ func0000000000000006:
 
 .LCPI1_0:
 	.quad	27
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vptestnmw	%xmm1, %xmm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1

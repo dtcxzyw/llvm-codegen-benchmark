@@ -8,6 +8,7 @@
 	.short	21846
 	.short	21846
 	.short	21846
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vpsllw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm0
@@ -23,6 +24,7 @@ func000000000000000d:
 	.short	43691
 	.short	43691
 	.short	43691
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	vpsllw	$2, %xmm0, %xmm0
 	vpmulhuw	.LCPI1_0(%rip), %xmm0, %xmm0

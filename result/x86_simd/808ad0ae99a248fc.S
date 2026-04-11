@@ -16,6 +16,7 @@
 	.short	26215
 	.short	26215
 	.short	26215
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmulhw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$15, %ymm0, %ymm1

@@ -45,6 +45,7 @@
 .LCPI0_3:
 	.short	61440
 	.short	61440
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
 	vpmovzxbw	%xmm1, %ymm1

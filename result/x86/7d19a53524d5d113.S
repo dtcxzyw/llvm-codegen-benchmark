@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	testq	%rsi, %rsi
 	setne	%al
@@ -7,6 +8,7 @@ func000000000000000c:
 	negq	%rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	cmpq	$2, %rsi
 	setae	%al

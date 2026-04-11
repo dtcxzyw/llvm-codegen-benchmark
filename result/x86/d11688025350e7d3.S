@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	testb	%sil, %sil
 	sete	%al
@@ -8,6 +9,7 @@ func0000000000000042:
 	movzbl	%cl, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000058:
 	cmpb	$-1, %sil
 	sete	%al

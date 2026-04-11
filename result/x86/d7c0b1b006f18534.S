@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000053:
 	movl	%edi, %eax
 	shrl	$12, %eax
@@ -6,6 +7,7 @@ func0000000000000053:
 	sbbl	$-1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000093:
 	movl	%edi, %eax
 	shrl	$12, %eax
@@ -13,6 +15,7 @@ func0000000000000093:
 	sbbl	$-1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000083:
 	movl	%edi, %eax
 	shrl	$8, %eax
@@ -20,6 +23,7 @@ func0000000000000083:
 	adcl	$0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c3:
 	xorl	%eax, %eax
 	cmpl	%edx, %esi

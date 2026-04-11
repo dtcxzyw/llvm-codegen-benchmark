@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	xorl	%eax, %eax
 	testb	%sil, %sil
@@ -9,6 +10,7 @@ func0000000000000041:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	testb	%sil, %sil
 	sete	%cl

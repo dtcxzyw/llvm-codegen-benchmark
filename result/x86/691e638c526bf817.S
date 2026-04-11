@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000314:
 	cmpb	$6, %dl
 	setne	%cl
@@ -8,6 +9,7 @@ func0000000000000314:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004c:
 	cmpb	$45, %dl
 	sete	%cl
@@ -17,6 +19,7 @@ func000000000000004c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000318:
 	cmpb	$13, %dl
 	setne	%cl
@@ -26,6 +29,7 @@ func0000000000000318:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	cmpb	$1, %dl
 	sete	%cl
@@ -35,6 +39,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000058:
 	cmpb	$14, %dl
 	sete	%cl
@@ -44,6 +49,7 @@ func0000000000000058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000048:
 	cmpb	$16, %dl
 	sete	%cl
@@ -53,6 +59,7 @@ func0000000000000048:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000102:
 	cmpb	$-6, %dl
 	setb	%cl
@@ -62,6 +69,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000118:
 	cmpb	$-2, %dl
 	setb	%cl
@@ -71,6 +79,7 @@ func0000000000000118:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000302:
 	cmpb	$95, %dl
 	setne	%cl

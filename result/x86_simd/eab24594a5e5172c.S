@@ -8,6 +8,7 @@
 	.short	32518
 	.short	32518
 	.short	32518
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d8:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0

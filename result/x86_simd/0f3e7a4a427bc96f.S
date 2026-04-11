@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000040:
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrq	$1, %xmm3, %rax
@@ -43,6 +44,7 @@ func0000000000000040:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vextracti128	$1, %ymm0, %xmm3
 	vpextrq	$1, %xmm3, %rax

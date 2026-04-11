@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	addl	%edx, %esi
 	cmpl	$47, %esi
@@ -6,6 +7,7 @@ func0000000000000081:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001c1:
 	addl	%edx, %esi
 	cmpl	$3, %esi
@@ -13,6 +15,7 @@ func00000000000001c1:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000aa:
 	leal	-528(%rdx,%rsi), %eax
 	cmpl	$32, %eax
@@ -20,6 +23,7 @@ func00000000000000aa:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	addl	%edx, %esi
 	cmpl	$47, %esi
@@ -27,6 +31,7 @@ func0000000000000001:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	leal	-1(%rdx,%rsi), %eax
 	cmpl	$2, %eax
@@ -34,6 +39,7 @@ func000000000000000a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a6:
 	leal	-272(%rdx,%rsi), %eax
 	cmpl	$17, %eax
@@ -41,6 +47,7 @@ func00000000000000a6:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000a1:
 	addl	$-48, %edx
 	addl	%esi, %edx
@@ -48,12 +55,14 @@ func00000000000000a1:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001ec:
 	addl	%edx, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001a6:
 	leal	40(%rdx,%rsi), %eax
 	cmpl	$24, %eax
@@ -61,6 +70,7 @@ func00000000000001a6:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001a1:
 	addl	%edx, %esi
 	cmpl	$-2, %esi
@@ -68,6 +78,7 @@ func00000000000001a1:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000086:
 	addl	%edx, %esi
 	decl	%esi

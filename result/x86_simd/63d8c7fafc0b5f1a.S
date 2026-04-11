@@ -20,6 +20,7 @@
 	.zero	2
 .LCPI0_2:
 	.short	139
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
@@ -53,6 +54,7 @@ func0000000000000010:
 	.zero	2
 .LCPI1_2:
 	.short	209
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000050:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$1, %ymm0, %ymm0
@@ -86,6 +88,7 @@ func0000000000000050:
 	.zero	2
 .LCPI2_2:
 	.short	139
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000040:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$1, %ymm0, %ymm0
@@ -119,6 +122,7 @@ func0000000000000040:
 	.zero	2
 .LCPI3_2:
 	.short	139
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$3, %ymm0, %ymm0

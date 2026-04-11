@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000060:
 	xorl	%eax, %eax
 	shlq	$55, %rsi
@@ -7,6 +8,7 @@ func0000000000000060:
 	orq	$16384, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
 	xorl	%eax, %eax
 	shlq	$42, %rsi

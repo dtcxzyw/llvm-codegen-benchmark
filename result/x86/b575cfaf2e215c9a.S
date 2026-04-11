@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	kmovd	%edi, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
@@ -14,6 +15,7 @@ func0000000000000005:
 	.long	0x3e4ccccd
 .LCPI1_1:
 	.long	0x44004000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	kmovd	%edi, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
@@ -24,6 +26,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.long	0x3fc00000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	kmovd	%edi, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
@@ -37,6 +40,7 @@ func0000000000000007:
 	.long	0x40c00000
 .LCPI3_1:
 	.long	0x40800000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	kmovd	%edi, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
@@ -48,6 +52,7 @@ func0000000000000002:
 
 .LCPI4_0:
 	.long	0xff800000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	kmovd	%edi, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}

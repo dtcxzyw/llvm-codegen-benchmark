@@ -32,6 +32,7 @@
 	.byte	128
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpsrld	$24, %ymm0, %ymm0

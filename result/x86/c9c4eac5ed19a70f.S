@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	movl	%esi, %eax
 	imulq	$1374389535, %rax, %rax
@@ -6,6 +7,7 @@ func000000000000000f:
 	leal	1(%rdi,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	movl	%esi, %eax
 	imulq	$1374389535, %rax, %rax
@@ -13,6 +15,7 @@ func0000000000000005:
 	leal	-477(%rdi,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	movl	%esi, %eax
 	movl	$3435973837, %ecx
@@ -21,6 +24,7 @@ func000000000000000d:
 	leal	-306(%rdi,%rcx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	movl	%esi, %eax
 	movl	$2863311531, %ecx
@@ -29,6 +33,7 @@ func0000000000000000:
 	leal	1(%rdi,%rcx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000009:
 	movl	%edi, %eax
 	movl	$2863311531, %ecx
@@ -37,6 +42,7 @@ func0000000000000009:
 	leal	1900(%rsi,%rcx), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	movl	%esi, %eax
 	imulq	$91625969, %rax, %rax
@@ -44,6 +50,7 @@ func0000000000000006:
 	leal	-1(%rdi,%rax), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000003:
 	movl	%esi, %eax
 	movl	$2155905153, %ecx

@@ -5,6 +5,7 @@
 	.quad	4503599627370495
 .LCPI0_2:
 	.quad	4503599627370496
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestmd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vandpd	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0

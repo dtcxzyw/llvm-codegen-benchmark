@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	testl	%esi, %esi
 	movl	$2, %eax
@@ -8,6 +9,7 @@ func00000000000001e1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000006e1:
 	testl	%esi, %esi
 	movl	$2147483647, %eax

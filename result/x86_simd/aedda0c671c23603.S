@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpaddq	%ymm0, %ymm0, %ymm0
 	vpcmpnltuq	.LCPI0_0(%rip){1to4}, %ymm0, %k0
@@ -12,6 +13,7 @@ func0000000000000009:
 	.quad	9223372036854775807
 .LCPI1_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpeqq	.LCPI1_1(%rip){1to4}, %ymm0, %k0
@@ -23,6 +25,7 @@ func0000000000000008:
 	.quad	9223372036854775807
 .LCPI2_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpneqq	.LCPI2_1(%rip){1to4}, %ymm0, %k0
@@ -34,6 +37,7 @@ func0000000000000007:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000b:
 	vandpd	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vcmpngtpd	.LCPI3_1(%rip){1to4}, %ymm0, %k0
@@ -45,6 +49,7 @@ func000000000000000b:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	vandpd	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vcmpneq_oqpd	.LCPI4_1(%rip){1to4}, %ymm0, %k0
@@ -56,6 +61,7 @@ func0000000000000006:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x43e0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vandpd	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
 	vcmpnlepd	.LCPI5_1(%rip){1to4}, %ymm0, %k0
@@ -67,6 +73,7 @@ func0000000000000005:
 	.quad	0x7fffffffffffffff
 .LCPI6_1:
 	.quad	0x401921fb54442d18
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	vandpd	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	vcmpgtpd	.LCPI6_1(%rip){1to4}, %ymm0, %k0
@@ -78,6 +85,7 @@ func0000000000000004:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x3ddb7cdfd9d7bdbb
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000002:
 	vandpd	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	vcmpltpd	.LCPI7_1(%rip){1to4}, %ymm0, %k0
@@ -89,6 +97,7 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI8_1:
 	.quad	0x3ff921fb54442d18
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000003:
 	vandpd	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	vcmpngepd	.LCPI8_1(%rip){1to4}, %ymm0, %k0

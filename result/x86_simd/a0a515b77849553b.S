@@ -19,6 +19,7 @@
 	.short	16
 .LCPI0_2:
 	.short	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpbroadcastw	.LCPI0_2(%rip), %xmm0

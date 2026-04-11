@@ -9,6 +9,7 @@
 	.quad	0x3fb54fdf3b645a1d
 .LCPI0_4:
 	.quad	0x3fd54fdf3b645a1d
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vbroadcastsd	.LCPI0_1(%rip), %zmm1

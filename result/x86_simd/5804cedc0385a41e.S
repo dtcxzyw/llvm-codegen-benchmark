@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsrld	$9, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -18,6 +19,7 @@ func0000000000000001:
 	.short	1
 .LCPI1_1:
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000046:
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

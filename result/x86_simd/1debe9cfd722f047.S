@@ -34,6 +34,7 @@
 	.byte	12
 .LCPI0_1:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm2
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
@@ -45,6 +46,7 @@ func0000000000000021:
 
 .LCPI1_0:
 	.long	57005
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$24, %ymm0, %ymm0 {%k1}
@@ -91,6 +93,7 @@ func000000000000002a:
 	.long	57005
 .LCPI2_2:
 	.long	357913941
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm2
 	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
@@ -135,6 +138,7 @@ func0000000000000028:
 	.byte	12
 .LCPI3_1:
 	.long	57005
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	vpshufb	.LCPI3_0(%rip), %ymm0, %ymm2
 	vpcmpeqd	.LCPI3_1(%rip){1to8}, %ymm1, %k1
@@ -181,6 +185,7 @@ func000000000000002c:
 	.long	57005
 .LCPI4_2:
 	.long	65535
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vpshufb	.LCPI4_0(%rip), %ymm0, %ymm2
 	vpcmpeqd	.LCPI4_1(%rip){1to8}, %ymm1, %k1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	100
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000054:
 	vpsraq	$3, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0

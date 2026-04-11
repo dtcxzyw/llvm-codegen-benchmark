@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000186:
 	addq	$16, %rdx
 	leaq	(%rdi,%rdi), %rcx
@@ -7,6 +8,7 @@ func0000000000000186:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000187:
 	addq	$16, %rdx
 	leaq	(%rdi,%rdi), %rcx
@@ -15,6 +17,7 @@ func0000000000000187:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000106:
 	addq	$-64, %rdx
 	leaq	(%rdi,%rdi), %rcx
@@ -23,6 +26,7 @@ func0000000000000106:
 	cmovneq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000184:
 	addq	$88, %rdx
 	leaq	(%rdi,%rdi), %rcx

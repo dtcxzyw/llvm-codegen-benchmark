@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	vpternlogd	$128, .LCPI0_1(%rip){1to4}, %xmm2, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -22,6 +23,7 @@ func0000000000000061:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -35,6 +37,7 @@ func0000000000000008:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
@@ -46,6 +49,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1

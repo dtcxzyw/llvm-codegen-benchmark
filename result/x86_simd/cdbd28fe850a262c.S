@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2
@@ -15,6 +16,7 @@ func0000000000000021:
 	.long	9
 .LCPI1_2:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000421:
 	vpternlogd	$248, .LCPI1_0(%rip){1to8}, %ymm2, %ymm1
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1
@@ -23,6 +25,7 @@ func0000000000000421:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendw	$170, %ymm3, %ymm2, %ymm2
@@ -35,6 +38,7 @@ func000000000000018c:
 
 .LCPI3_0:
 	.long	768
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000058c:
 	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm2, %ymm1
 	vptestmd	%ymm0, %ymm0, %k1

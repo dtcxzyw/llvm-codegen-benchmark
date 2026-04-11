@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	andl	$2097151, %esi
 	imulq	$666643, %rsi, %rcx

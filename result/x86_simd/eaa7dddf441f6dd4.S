@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vpcmpltuq	%ymm2, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -6,6 +7,7 @@ func0000000000000012:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpcmpltuq	%ymm2, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -13,6 +15,7 @@ func0000000000000010:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000053:
 	vpcmpltuq	%ymm2, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -20,6 +23,7 @@ func0000000000000053:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000029:
 	vpcmpgtq	%ymm2, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}

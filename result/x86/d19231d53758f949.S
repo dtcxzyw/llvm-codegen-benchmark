@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c4:
 	negb	%sil
 	shrxq	%rsi, %rdi, %rax
@@ -6,6 +7,7 @@ func00000000000001c4:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	movb	$-54, %al
 	subb	%sil, %al
@@ -14,6 +16,7 @@ func0000000000000044:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c4:
 	movb	$-53, %al
 	subb	%sil, %al

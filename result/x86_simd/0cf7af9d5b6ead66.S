@@ -3,6 +3,7 @@
 	.long	31337
 .LCPI0_1:
 	.long	1619
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpmulld	%ymm2, %ymm1, %ymm1
@@ -17,6 +18,7 @@ func0000000000000001:
 	.long	6270
 .LCPI1_2:
 	.long	1024
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000055:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
@@ -30,6 +32,7 @@ func0000000000000055:
 	.long	6270
 .LCPI2_2:
 	.long	16384
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
@@ -43,6 +46,7 @@ func0000000000000000:
 	.long	4294967196
 .LCPI3_2:
 	.long	4294962656
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000d5:
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
@@ -56,6 +60,7 @@ func00000000000000d5:
 	.long	28
 .LCPI4_2:
 	.long	4292327780
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000fd:
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
@@ -69,6 +74,7 @@ func00000000000000fd:
 	.long	150
 .LCPI5_2:
 	.long	128
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ff:
 	vpmulld	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
@@ -82,6 +88,7 @@ func00000000000000ff:
 	.long	6270
 .LCPI6_2:
 	.long	1024
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000050:
 	vpmulld	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI6_1(%rip){1to8}, %ymm0, %ymm0
@@ -95,6 +102,7 @@ func0000000000000050:
 	.long	32896
 .LCPI7_2:
 	.long	32768
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000fa:
 	vpmulld	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI7_1(%rip){1to8}, %ymm0, %ymm0
@@ -106,6 +114,7 @@ func00000000000000fa:
 	.long	80
 .LCPI8_1:
 	.long	390
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000cc:
 	vpmulld	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm0, %ymm2
@@ -120,6 +129,7 @@ func00000000000000cc:
 	.long	10
 .LCPI9_2:
 	.long	4294961968
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000f5:
 	vpmulld	.LCPI9_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI9_1(%rip){1to8}, %ymm0, %ymm0
@@ -133,6 +143,7 @@ func00000000000000f5:
 	.long	2971
 .LCPI10_2:
 	.long	4294965285
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000f6:
 	vpmulld	.LCPI10_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI10_1(%rip){1to8}, %ymm0, %ymm0
@@ -146,6 +157,7 @@ func00000000000000f6:
 	.long	4256249
 .LCPI11_2:
 	.long	5190199
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000df:
 	vpmulld	.LCPI11_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI11_1(%rip){1to8}, %ymm0, %ymm0
@@ -159,6 +171,7 @@ func00000000000000df:
 	.long	4256249
 .LCPI12_2:
 	.long	6673113
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000d8:
 	vpmulld	.LCPI12_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI12_1(%rip){1to8}, %ymm0, %ymm0
@@ -172,6 +185,7 @@ func00000000000000d8:
 	.long	28
 .LCPI13_2:
 	.long	30380
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000000dd:
 	vpmulld	.LCPI13_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI13_1(%rip){1to8}, %ymm0, %ymm0
@@ -183,6 +197,7 @@ func00000000000000dd:
 	.long	1000
 .LCPI14_1:
 	.long	100
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000c4:
 	vpmulld	.LCPI14_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI14_1(%rip){1to8}, %ymm0, %ymm0
@@ -197,6 +212,7 @@ func00000000000000c4:
 	.long	8867
 .LCPI15_2:
 	.long	8192
+	.prefalign	4, .Lfunc_end15, nop
 func0000000000000054:
 	vpmulld	.LCPI15_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI15_1(%rip){1to8}, %ymm0, %ymm0
@@ -210,6 +226,7 @@ func0000000000000054:
 	.long	460324
 .LCPI16_2:
 	.long	134742016
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000030:
 	vpmulld	.LCPI16_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI16_1(%rip){1to8}, %ymm0, %ymm0
@@ -223,6 +240,7 @@ func0000000000000030:
 	.long	4191920
 .LCPI17_2:
 	.long	2105344
+	.prefalign	4, .Lfunc_end17, nop
 func00000000000000fe:
 	vpmulld	.LCPI17_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI17_1(%rip){1to8}, %ymm0, %ymm0
@@ -236,6 +254,7 @@ func00000000000000fe:
 	.long	115200
 .LCPI18_2:
 	.long	33685504
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000077:
 	vpmulld	.LCPI18_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI18_1(%rip){1to8}, %ymm0, %ymm0
@@ -249,6 +268,7 @@ func0000000000000077:
 	.long	4294961944
 .LCPI19_2:
 	.long	51000
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000040:
 	vpmulld	.LCPI19_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	.LCPI19_1(%rip){1to8}, %ymm0, %ymm0

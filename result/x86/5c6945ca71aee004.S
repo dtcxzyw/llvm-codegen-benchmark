@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	leal	63(%rdi,%rsi), %eax
 	movl	%esi, %ecx
@@ -7,6 +8,7 @@ func0000000000000002:
 	sarl	$6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	leal	(%rsi,%rdi), %ecx
 	movl	%ecx, %eax
@@ -15,6 +17,7 @@ func0000000000000000:
 	sarl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	leal	7(%rdi,%rsi), %eax
 	movl	%esi, %ecx
@@ -23,6 +26,7 @@ func0000000000000018:
 	sarl	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
 	leal	63(%rdi,%rsi), %eax
 	movl	%esi, %ecx
@@ -31,6 +35,7 @@ func000000000000001a:
 	sarl	$6, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000012:
 	leal	(%rsi,%rdi), %ecx
 	movl	%ecx, %eax
@@ -39,6 +44,7 @@ func0000000000000012:
 	sarl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000010:
 	leal	(%rsi,%rdi), %ecx
 	movl	%ecx, %eax

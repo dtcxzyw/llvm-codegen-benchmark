@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008a:
 	vucomisd	%xmm1, %xmm0
 	seta	%cl
@@ -7,6 +8,7 @@ func000000000000008a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000046:
 	vucomisd	%xmm0, %xmm1
 	seta	%cl
@@ -15,6 +17,7 @@ func0000000000000046:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000101:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al
@@ -25,6 +28,7 @@ func0000000000000101:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000010c:
 	vucomisd	%xmm1, %xmm0
 	setnp	%al

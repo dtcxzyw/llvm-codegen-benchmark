@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x80000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	testl	%edi, %edi
 	sete	%al
@@ -13,6 +14,7 @@ func0000000000000001:
 .LCPI1_0:
 	.long	0x43800000
 	.long	0x41800000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	xorl	%eax, %eax
 	cmpl	$1024, %edi

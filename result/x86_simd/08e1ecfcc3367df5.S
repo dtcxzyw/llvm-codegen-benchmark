@@ -3,6 +3,7 @@
 	.quad	-5
 .LCPI0_1:
 	.quad	3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000281:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
@@ -19,6 +20,7 @@ func0000000000000281:
 	.quad	9223372036854775807
 .LCPI1_1:
 	.quad	11
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3b83126f
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000082:
 	cmpl	$51, %edi
 	setae	%cl
@@ -12,6 +13,7 @@ func0000000000000082:
 
 .LCPI1_0:
 	.long	0x24e69595
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000012:
 	cmpl	$100, %edi
 	sete	%cl
@@ -21,6 +23,7 @@ func0000000000000012:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000068:
 	testl	%edi, %edi
 	sets	%cl
@@ -34,6 +37,7 @@ func0000000000000068:
 
 .LCPI3_0:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001b:
 	cmpl	$202, %edi
 	sete	%cl
@@ -42,6 +46,7 @@ func000000000000001b:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000001a:
 	testl	%edi, %edi
 	sete	%cl

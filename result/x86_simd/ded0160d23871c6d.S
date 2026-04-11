@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestnmb	%xmm0, %xmm0, %k1
@@ -7,6 +8,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000068c:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestmb	%xmm0, %xmm0, %k1
@@ -32,6 +34,7 @@ func000000000000068c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000584:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpltub	.LCPI2_0(%rip), %xmm0, %k1
@@ -40,6 +43,7 @@ func0000000000000584:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000028c:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestmb	%xmm0, %xmm0, %k1
@@ -65,6 +69,7 @@ func000000000000028c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000684:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpltub	.LCPI4_0(%rip), %xmm0, %k1
@@ -90,6 +95,7 @@ func0000000000000684:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000681:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqb	.LCPI5_0(%rip), %xmm0, %k1
@@ -115,6 +121,7 @@ func0000000000000681:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000030c:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpneqb	.LCPI6_0(%rip), %xmm0, %k1
@@ -123,6 +130,7 @@ func000000000000030c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000018c:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestmb	%xmm0, %xmm0, %k1
@@ -131,6 +139,7 @@ func000000000000018c:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000181:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
@@ -157,6 +166,7 @@ func0000000000000181:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000421:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqb	.LCPI9_0(%rip), %xmm0, %k1
@@ -182,6 +192,7 @@ func0000000000000421:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000101:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpeqb	.LCPI10_0(%rip), %xmm0, %k1
@@ -190,6 +201,7 @@ func0000000000000101:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002c:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestmb	%xmm0, %xmm0, %k1
@@ -215,6 +227,7 @@ func000000000000002c:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000284:
 	vpmovzxdq	%xmm2, %ymm2
 	vpcmpltub	.LCPI12_0(%rip), %xmm0, %k1
@@ -223,6 +236,7 @@ func0000000000000284:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000281:
 	vpmovzxdq	%xmm2, %ymm2
 	vptestnmb	%xmm0, %xmm0, %k1

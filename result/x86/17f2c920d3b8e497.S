@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	leal	15(%rdx), %eax
 	testl	%edx, %edx
@@ -9,6 +10,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movslq	%edx, %rax
 	imulq	$-1321528399, %rax, %rax
@@ -21,6 +23,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -31,6 +34,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	leal	3(%rdx), %eax
 	testl	%edx, %edx
@@ -41,6 +45,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002a:
 	movslq	%edx, %rax
 	imulq	$1431655766, %rax, %rax
@@ -53,6 +58,7 @@ func000000000000002a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000002c:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -63,6 +69,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -73,6 +80,7 @@ func000000000000000c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000b:
 	movslq	%edx, %rax
 	imulq	$1374389535, %rax, %rax
@@ -85,6 +93,7 @@ func000000000000000b:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000021:
 	movslq	%edx, %rax
 	imulq	$1431655766, %rax, %rax
@@ -97,6 +106,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	leal	255(%rdx), %eax
 	testl	%edx, %edx
@@ -107,6 +117,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000034:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -117,6 +128,7 @@ func0000000000000034:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000039:
 	movl	%edx, %eax
 	shrl	$31, %eax
@@ -127,6 +139,7 @@ func0000000000000039:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000007:
 	movl	%edx, %eax
 	shrl	$31, %eax

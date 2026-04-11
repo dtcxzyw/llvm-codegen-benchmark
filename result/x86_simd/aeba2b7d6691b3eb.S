@@ -3,6 +3,7 @@
 	.long	83886080
 .LCPI0_1:
 	.long	67108864
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1
@@ -12,6 +13,7 @@ func0000000000000003:
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vptestmd	%ymm1, %ymm1, %k0
 	vpslld	$31, %ymm0, %ymm0

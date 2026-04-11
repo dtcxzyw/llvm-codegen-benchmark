@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	addq	$152, %rsi
 	xorl	%eax, %eax
@@ -7,6 +8,7 @@ func0000000000000061:
 	incl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	addq	$-16, %rsi
 	xorl	%eax, %eax
@@ -15,6 +17,7 @@ func0000000000000041:
 	leal	-3(%rax,%rax,2), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	addq	$2304, %rsi
 	xorl	%eax, %eax

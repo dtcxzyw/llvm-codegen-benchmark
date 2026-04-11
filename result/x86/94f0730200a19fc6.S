@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	decl	%esi
 	movl	$2863311531, %eax
@@ -8,6 +9,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	leal	18(%rsi), %edx
 	movabsq	$970881267157434368, %rax
@@ -16,6 +18,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000038:
 	addl	$-16, %esi
 	movl	$2863311531, %eax

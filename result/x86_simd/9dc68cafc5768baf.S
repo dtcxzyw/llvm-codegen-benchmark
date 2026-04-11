@@ -35,6 +35,7 @@
 	.zero	1
 .LCPI0_2:
 	.quad	-5
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001481:
 	vpaddb	.LCPI0_0(%rip), %xmm2, %xmm2
 	vpcmpltub	.LCPI0_1(%rip), %xmm2, %k1

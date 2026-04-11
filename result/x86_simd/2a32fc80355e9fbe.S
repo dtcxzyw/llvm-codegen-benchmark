@@ -3,6 +3,7 @@
 	.long	10
 .LCPI0_1:
 	.long	4294935088
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d7:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -13,6 +14,7 @@ func00000000000000d7:
 	.long	100
 .LCPI1_1:
 	.long	1972
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000055:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -23,6 +25,7 @@ func0000000000000055:
 	.long	10
 .LCPI2_1:
 	.long	4294967231
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000040:
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -33,6 +36,7 @@ func0000000000000040:
 	.long	10
 .LCPI3_1:
 	.long	4294967247
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000d5:
 	vpmulld	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -43,6 +47,7 @@ func00000000000000d5:
 	.long	10
 .LCPI4_1:
 	.long	4294967247
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -53,6 +58,7 @@ func0000000000000000:
 	.long	10
 .LCPI5_1:
 	.long	13
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000041:
 	vpmulld	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -63,6 +69,7 @@ func0000000000000041:
 	.long	10
 .LCPI6_1:
 	.long	4294965348
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	vpmulld	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -73,6 +80,7 @@ func0000000000000001:
 	.long	10
 .LCPI7_1:
 	.long	4294966768
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000d4:
 	vpmulld	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -83,6 +91,7 @@ func00000000000000d4:
 	.long	12
 .LCPI8_1:
 	.long	4294967285
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000005:
 	vpmulld	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -93,6 +102,7 @@ func0000000000000005:
 	.long	10
 .LCPI9_1:
 	.long	52
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000043:
 	vpmulld	.LCPI9_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0

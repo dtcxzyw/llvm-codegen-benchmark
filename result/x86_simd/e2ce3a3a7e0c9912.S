@@ -5,6 +5,7 @@
 	.long	0x40c90fdb
 .LCPI0_2:
 	.long	0xc0c90fdb
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -20,6 +21,7 @@ func0000000000000002:
 	.long	0xc2b40000
 .LCPI1_2:
 	.long	0x42b40000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	andl	%esi, %edi
 	vucomisd	%xmm0, %xmm0
@@ -7,6 +8,7 @@ func0000000000000001:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	andl	%esi, %edi
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -18,6 +20,7 @@ func0000000000000002:
 
 .LCPI2_0:
 	.quad	0xc0bf400000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	andl	%esi, %edi
 	vucomisd	.LCPI2_0(%rip), %xmm0

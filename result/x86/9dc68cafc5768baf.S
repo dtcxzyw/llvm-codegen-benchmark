@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001481:
 	addb	$-6, %dl
 	addq	$-5, %rsi

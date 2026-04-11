@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
 	negq	%rdx
 	leaq	(%rdx,%rdx,4), %rax
@@ -9,6 +10,7 @@ func0000000000000031:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
 	negq	%rdx
 	leaq	(%rdx,%rdx,2), %rax
@@ -19,6 +21,7 @@ func0000000000000011:
 	imulq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	subq	%rdx, %rsi
 	subq	%rdi, %rsi

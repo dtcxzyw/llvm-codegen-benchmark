@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	vpslld	$2, %ymm0, %ymm0
@@ -9,6 +10,7 @@ func0000000000000004:
 
 .LCPI1_0:
 	.long	4294967169
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003d:
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	vpslld	$7, %ymm0, %ymm0
@@ -17,6 +19,7 @@ func000000000000003d:
 
 .LCPI2_0:
 	.long	4238344192
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	vpslld	$10, %ymm0, %ymm0
@@ -25,6 +28,7 @@ func000000000000000d:
 
 .LCPI3_0:
 	.long	4
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000030:
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	vpslld	$2, %ymm0, %ymm0

@@ -54,6 +54,7 @@
 	.zero	16,48
 .LCPI0_4:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$3, %ymm0, %ymm0

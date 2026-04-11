@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000019:
 	imull	$668265295, %esi, %eax
 	shlq	$32, %rdi

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	movabsq	$9218868437227405312, %rax
 	testq	%rax, %rdx

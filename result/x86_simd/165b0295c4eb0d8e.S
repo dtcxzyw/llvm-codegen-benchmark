@@ -3,6 +3,7 @@
 	.zero	16,240
 .LCPI0_1:
 	.zero	4,240
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm1, %xmm1

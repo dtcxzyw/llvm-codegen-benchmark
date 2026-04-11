@@ -37,6 +37,7 @@
 	.byte	128
 .LCPI0_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$6, %ymm0, %ymm0
@@ -84,6 +85,7 @@ func0000000000000011:
 	.byte	128
 .LCPI1_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0
@@ -131,6 +133,7 @@ func0000000000000001:
 	.byte	72
 .LCPI2_3:
 	.zero	4,3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$24, %ymm0, %ymm0
@@ -178,6 +181,7 @@ func0000000000000005:
 	.byte	128
 .LCPI3_3:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000031:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$6, %ymm0, %ymm0
@@ -225,6 +229,7 @@ func0000000000000031:
 	.byte	48
 .LCPI4_3:
 	.zero	4,15
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000035:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0

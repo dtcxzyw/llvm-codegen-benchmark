@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vcvttsd2usi	%xmm0, %eax
@@ -6,6 +7,7 @@ func0000000000000001:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vmulsd	%xmm1, %xmm0, %xmm0
 	vcvttsd2usi	%xmm0, %eax

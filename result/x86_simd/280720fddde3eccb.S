@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	512
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c3:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1
@@ -42,6 +43,7 @@ func00000000000000c3:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c2:
 	vpslld	$16, %ymm2, %ymm2
 	vpcmpneqb	.LCPI1_0(%rip), %xmm1, %k1

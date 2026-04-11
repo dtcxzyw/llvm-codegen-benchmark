@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ea:
 	imull	%edx, %edx
 	addl	%esi, %edx
@@ -6,6 +7,7 @@ func00000000000000ea:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000086:
 	imull	%edx, %edx
 	addl	%esi, %edx
@@ -13,6 +15,7 @@ func0000000000000086:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e6:
 	imull	%edx, %edx
 	addl	%esi, %edx
@@ -20,6 +23,7 @@ func00000000000000e6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000f4:
 	imull	%edx, %edx
 	addl	%esi, %edx
@@ -27,6 +31,7 @@ func00000000000000f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e8:
 	imull	%edx, %edx
 	addl	%esi, %edx
@@ -34,6 +39,7 @@ func00000000000001e8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000a6:
 	imull	%edx, %edx
 	addl	%esi, %edx

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x403e99a027525461
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	incl	%edi
 	vcvtsi2sd	%edi, %xmm15, %xmm0
@@ -9,6 +10,7 @@ func0000000000000007:
 
 .LCPI1_0:
 	.quad	0x3ff199999999999a
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	addl	$5, %edi
 	vcvtusi2sd	%edi, %xmm15, %xmm0
@@ -17,6 +19,7 @@ func0000000000000000:
 
 .LCPI2_0:
 	.quad	0x4010000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	incl	%edi
 	vcvtsi2sd	%edi, %xmm15, %xmm0
@@ -25,6 +28,7 @@ func0000000000000001:
 
 .LCPI3_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	decl	%edi
 	vcvtsi2sd	%edi, %xmm15, %xmm0

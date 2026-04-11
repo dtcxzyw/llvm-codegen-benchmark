@@ -17,6 +17,7 @@
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -43,6 +44,7 @@ func0000000000000015:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -69,6 +71,7 @@ func0000000000000005:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000085:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -95,6 +98,7 @@ func0000000000000085:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000055:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -121,6 +125,7 @@ func0000000000000055:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000d5:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -147,6 +152,7 @@ func00000000000000d5:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000095:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -173,6 +179,7 @@ func0000000000000095:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000dd:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -199,6 +206,7 @@ func00000000000000dd:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000d1:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -225,6 +233,7 @@ func00000000000000d1:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000df:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -251,6 +260,7 @@ func00000000000000df:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000001:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -277,6 +287,7 @@ func0000000000000001:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000045:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -303,6 +314,7 @@ func0000000000000045:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000001f:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2

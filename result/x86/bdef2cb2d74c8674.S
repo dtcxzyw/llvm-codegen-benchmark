@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c8:
 	movl	%edi, %eax
 	vcmpneqsd	%xmm1, %xmm0, %k0
@@ -10,6 +11,7 @@ func00000000000001c8:
 	subl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001c9:
 	movl	%edi, %eax
 	vcmpneqsd	%xmm1, %xmm0, %k0

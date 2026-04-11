@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000088:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
@@ -8,6 +9,7 @@ func0000000000000088:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	cmpq	$1, %rdx
 	sbbq	$16382, %rsi
@@ -15,6 +17,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000221:
 	shrq	$61, %rdx
 	cmpq	$1, %rdx
@@ -23,6 +26,7 @@ func0000000000000221:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000084:
 	xorl	%eax, %eax
 	testq	%rdx, %rdx
@@ -34,6 +38,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000208:
 	xorl	%eax, %eax
 	shrq	$32, %rdx
@@ -43,6 +48,7 @@ func0000000000000208:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000081:
 	cmpq	$1, %rdx
 	adcq	$1, %rsi

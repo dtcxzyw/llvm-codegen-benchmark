@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -10,6 +11,7 @@ func0000000000000000:
 
 .LCPI1_0:
 	.long	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -19,6 +21,7 @@ func0000000000000001:
 
 .LCPI2_0:
 	.long	684
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -28,6 +31,7 @@ func0000000000000005:
 
 .LCPI3_0:
 	.long	63
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003f:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
@@ -37,6 +41,7 @@ func000000000000003f:
 
 .LCPI4_0:
 	.long	64
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000020:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
@@ -46,6 +51,7 @@ func0000000000000020:
 
 .LCPI5_0:
 	.long	39
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000030:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
@@ -55,6 +61,7 @@ func0000000000000030:
 
 .LCPI6_0:
 	.long	20000
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000f:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -64,6 +71,7 @@ func000000000000000f:
 
 .LCPI7_0:
 	.long	2
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000010:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -73,6 +81,7 @@ func0000000000000010:
 
 .LCPI8_0:
 	.long	684
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000015:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -82,6 +91,7 @@ func0000000000000015:
 
 .LCPI9_0:
 	.long	2654435769
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000038:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$24, %xmm0, %xmm0
@@ -89,6 +99,7 @@ func0000000000000038:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000003d:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$3, %xmm0, %xmm0
@@ -99,6 +110,7 @@ func000000000000003d:
 
 .LCPI11_0:
 	.long	134217728
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000002e:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$27, %xmm0, %xmm0
@@ -108,6 +120,7 @@ func000000000000002e:
 
 .LCPI12_0:
 	.long	1536
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000002f:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$10, %xmm0, %xmm0
@@ -115,6 +128,7 @@ func000000000000002f:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000002d:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
@@ -125,6 +139,7 @@ func000000000000002d:
 
 .LCPI14_0:
 	.long	16
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000003:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -134,6 +149,7 @@ func0000000000000003:
 
 .LCPI15_0:
 	.long	4294967280
+	.prefalign	4, .Lfunc_end15, nop
 func000000000000000d:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -141,6 +157,7 @@ func000000000000000d:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end16, nop
 func0000000000000011:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -151,6 +168,7 @@ func0000000000000011:
 
 .LCPI17_0:
 	.long	16
+	.prefalign	4, .Lfunc_end17, nop
 func000000000000000a:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
@@ -160,6 +178,7 @@ func000000000000000a:
 
 .LCPI18_0:
 	.long	64
+	.prefalign	4, .Lfunc_end18, nop
 func0000000000000007:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$6, %xmm0, %xmm0
@@ -169,6 +188,7 @@ func0000000000000007:
 
 .LCPI19_0:
 	.long	64
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000006:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$6, %xmm0, %xmm0
@@ -178,6 +198,7 @@ func0000000000000006:
 
 .LCPI20_0:
 	.long	5
+	.prefalign	4, .Lfunc_end20, nop
 func0000000000000023:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -185,6 +206,7 @@ func0000000000000023:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end21, nop
 func0000000000000009:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
@@ -193,6 +215,7 @@ func0000000000000009:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end22, nop
 func0000000000000004:
 	vpmovqd	%ymm0, %xmm0
 	vpslld	$6, %xmm0, %xmm0
@@ -203,6 +226,7 @@ func0000000000000004:
 
 .LCPI23_0:
 	.long	12
+	.prefalign	4, .Lfunc_end23, nop
 func0000000000000002:
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0

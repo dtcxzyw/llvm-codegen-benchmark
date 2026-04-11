@@ -5,6 +5,7 @@
 	.zero	16,246
 .LCPI0_2:
 	.byte	250
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001084:
 	vpbroadcastb	.LCPI0_2(%rip), %xmm3
 	vpcmpltub	%xmm3, %xmm2, %k1

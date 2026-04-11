@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000094:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rax, %rax
@@ -9,6 +10,7 @@ func0000000000000094:
 	setb	%dl
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000090:
 	imulq	%rdx, %r9
 	mulxq	%r8, %rax, %rax

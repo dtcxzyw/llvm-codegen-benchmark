@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002b:
 	cmpl	$4, %esi
 	movl	$4, %eax
@@ -7,6 +8,7 @@ func000000000000002b:
 	leaq	-32(%rdi,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	cmpl	$5, %esi
 	movl	$5, %eax
@@ -16,6 +18,7 @@ func000000000000002c:
 	leaq	1024(%rdi,%rax), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002f:
 	cmpl	$5, %esi
 	movl	$5, %eax

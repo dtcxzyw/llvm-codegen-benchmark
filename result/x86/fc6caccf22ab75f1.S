@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	andl	$65536, %esi
 	xorl	%eax, %eax
@@ -6,6 +7,7 @@ func0000000000000001:
 	cmovneq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	andl	$58720255, %esi
 	xorl	%eax, %eax
@@ -13,6 +15,7 @@ func0000000000000018:
 	cmovbq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	andl	$-16777216, %esi
 	xorl	%eax, %eax
@@ -20,6 +23,7 @@ func000000000000000a:
 	cmovlq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	andq	$-512, %rsi
 	shrq	$61, %rdi
@@ -29,6 +33,7 @@ func0000000000000008:
 	orq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	andl	$496, %esi
 	cmpq	$23, %rdi
@@ -36,6 +41,7 @@ func0000000000000014:
 	cmovaeq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	andq	$-16, %rsi
 	cmpq	$23, %rdi
@@ -43,6 +49,7 @@ func0000000000000004:
 	cmovaeq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	movabsq	$9223372036854775744, %rcx
 	andq	%rsi, %rcx

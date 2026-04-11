@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpsrlq	$1, %ymm2, %ymm3
 	vmovdqa	%ymm3, %ymm4
@@ -8,6 +9,7 @@ func0000000000000026:
 	vmovdqa	%ymm3, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vpsrlq	$1, %ymm2, %ymm3
 	vmovdqa	%ymm3, %ymm4
@@ -17,6 +19,7 @@ func000000000000002a:
 	vmovdqa	%ymm3, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
 	vpsrlq	$1, %ymm2, %ymm3
 	vmovdqa	%ymm3, %ymm4
@@ -26,6 +29,7 @@ func0000000000000028:
 	vmovdqa	%ymm3, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	vpsrlq	$1, %ymm2, %ymm3
 	vmovdqa	%ymm3, %ymm4

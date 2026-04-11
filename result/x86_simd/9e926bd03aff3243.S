@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	-8796093022208
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxbq	%xmm1, %ymm1
@@ -43,6 +44,7 @@ func000000000000000f:
 	.byte	12
 	.byte	6
 	.byte	14
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubb	%xmm2, %xmm1, %xmm1

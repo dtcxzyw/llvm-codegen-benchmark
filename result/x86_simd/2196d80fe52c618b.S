@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -10,6 +11,7 @@ func000000000000001e:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001c:
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -19,6 +21,7 @@ func000000000000001c:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -28,6 +31,7 @@ func000000000000001f:
 
 .LCPI3_0:
 	.long	1
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001d:
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -37,6 +41,7 @@ func000000000000001d:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
 	vpbroadcastd	.LCPI4_0(%rip), %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1
@@ -46,6 +51,7 @@ func0000000000000010:
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000013:
 	vpbroadcastd	.LCPI5_0(%rip), %xmm2
 	vpsllvd	%xmm1, %xmm2, %xmm1

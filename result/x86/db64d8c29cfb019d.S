@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	leaq	(%rsi,%rsi), %rax
 	orq	%rdi, %rax
 	shrq	$63, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	addq	%rsi, %rsi
 	cmpq	%rdi, %rsi
@@ -14,6 +16,7 @@ func0000000000000028:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a8:
 	addq	%rsi, %rsi
 	cmpq	%rdi, %rsi
@@ -23,12 +26,14 @@ func00000000000000a8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	addq	%rsi, %rsi
 	orq	%rdi, %rsi
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	addq	%rsi, %rsi
 	cmpq	%rdi, %rsi
@@ -37,6 +42,7 @@ func0000000000000008:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000084:
 	addq	%rsi, %rsi
 	cmpq	%rsi, %rdi

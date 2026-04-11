@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	movl	%edx, %eax
 	imulq	%rsi, %rax
@@ -7,6 +8,7 @@ func0000000000000024:
 	shrq	$32, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	movl	%edx, %eax
 	imulq	%rsi, %rax

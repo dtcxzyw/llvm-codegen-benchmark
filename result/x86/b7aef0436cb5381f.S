@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vcvttsd2si	%xmm0, %rax
 	movabsq	$9223372036854775807, %rcx
@@ -7,6 +8,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	vcvttsd2si	%xmm0, %rax
 	movabsq	$-9223372036854775808, %rcx

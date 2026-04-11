@@ -1,19 +1,23 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
 	vminsd	%xmm2, %xmm1, %xmm1
 	vminsd	%xmm0, %xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vminsd	%xmm2, %xmm1, %xmm1
 	vmaxsd	%xmm0, %xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vmaxsd	%xmm2, %xmm1, %xmm1
 	vminsd	%xmm0, %xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ca:
 	vcmplesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
@@ -21,11 +25,13 @@ func00000000000000ca:
 	vmovsd	%xmm2, %xmm0, %xmm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vminsd	%xmm2, %xmm1, %xmm1
 	vmaxsd	%xmm0, %xmm1, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000cc:
 	vcmplesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vprolq	$55, %ymm2, %ymm3
 	vpxor	%ymm0, %ymm3, %ymm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpeqps	%zmm2, %zmm0, %k1
@@ -11,6 +12,7 @@ func0000000000000018:
 	.zero	16,8
 .LCPI1_1:
 	.long	0x438c0000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k1
 	vcmpgtps	.LCPI1_1(%rip){1to16}, %zmm0, %k0 {%k1}
@@ -20,6 +22,7 @@ func0000000000000014:
 
 .LCPI2_0:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%zmm1, %zmm2, %k1
@@ -30,6 +33,7 @@ func0000000000000081:
 
 .LCPI3_0:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpunordps	%zmm2, %zmm1, %k1
@@ -40,6 +44,7 @@ func0000000000000024:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ec:
 	vcmpneqps	.LCPI4_0(%rip){1to16}, %zmm1, %k1
 	vptestmb	%xmm0, %xmm0, %k0 {%k1}
@@ -47,6 +52,7 @@ func00000000000000ec:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000101:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpeqps	%zmm2, %zmm1, %k1

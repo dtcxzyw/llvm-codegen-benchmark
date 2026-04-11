@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpackssdw	%xmm0, %xmm0, %xmm0

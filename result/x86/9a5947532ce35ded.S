@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	notb	%sil
 	andl	$3, %edx
@@ -10,6 +11,7 @@ func0000000000000003:
 	leal	65536(%rax,%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000019:
 	shrl	$29, %edx
 	orl	%esi, %edx

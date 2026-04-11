@@ -19,6 +19,7 @@
 	.short	10
 	.short	10
 	.short	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsrld	$5, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1
@@ -56,6 +57,7 @@ func0000000000000003:
 	.short	100
 	.short	100
 	.short	100
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
@@ -93,6 +95,7 @@ func0000000000000002:
 	.short	60
 	.short	60
 	.short	60
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2

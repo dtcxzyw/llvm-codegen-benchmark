@@ -3,6 +3,7 @@
 	.long	0x3f000000
 .LCPI0_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vcmpnltps	.LCPI0_0(%rip){1to16}, %zmm1, %k1
 	vbroadcastss	.LCPI0_1(%rip), %zmm1 {%k1} {z}
@@ -13,6 +14,7 @@ func0000000000000002:
 	.long	0x3f000000
 .LCPI1_1:
 	.long	0xbf000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnleps	%zmm1, %zmm2, %k1
@@ -25,6 +27,7 @@ func0000000000000003:
 	.long	0xbf800000
 .LCPI2_1:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%zmm1, %zmm2, %k1
@@ -39,6 +42,7 @@ func0000000000000004:
 	.long	0x3e79eba7
 .LCPI3_2:
 	.long	0x3e72ba9d
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vcmpnleps	.LCPI3_0(%rip){1to16}, %zmm1, %k1
 	vbroadcastss	.LCPI3_1(%rip), %zmm1

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	xorb	$1, %sil
 	xorl	%ecx, %ecx
@@ -7,6 +8,7 @@ func0000000000000008:
 	cmovbl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	notb	%sil
 	testl	%edi, %edi
@@ -15,6 +17,7 @@ func000000000000000a:
 	cmovnsl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	addb	$-128, %sil
 	cmpl	$32768, %edi
@@ -23,6 +26,7 @@ func0000000000000006:
 	cmovll	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	notb	%sil
 	cmpl	$8, %edi

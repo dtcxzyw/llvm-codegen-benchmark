@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000858:
 	vpor	%xmm2, %xmm1, %xmm1
 	vptestmd	%xmm1, %xmm1, %k0
@@ -13,6 +14,7 @@ func0000000000000858:
 	.long	2
 .LCPI1_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000918:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpcmpneqd	.LCPI1_0(%rip){1to4}, %xmm1, %k0
@@ -26,6 +28,7 @@ func0000000000000918:
 	.long	2
 .LCPI2_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000b02:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpcmpneqd	.LCPI2_0(%rip){1to4}, %xmm1, %k0
@@ -35,6 +38,7 @@ func0000000000000b02:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000182:
 	vpor	%xmm2, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
@@ -44,6 +48,7 @@ func0000000000000182:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000318:
 	vpor	%xmm2, %xmm1, %xmm1
 	vptestmd	%xmm1, %xmm1, %k0
@@ -53,6 +58,7 @@ func0000000000000318:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000042:
 	vpor	%xmm2, %xmm1, %xmm1
 	vptestnmd	%xmm1, %xmm1, %k0

@@ -7,6 +7,7 @@
 	.long	8388608
 .LCPI0_3:
 	.long	2130706432
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000066:
 	vpandd	.LCPI0_0(%rip){1to16}, %zmm0, %zmm0
 	vpternlogd	$255, %zmm1, %zmm1, %zmm1
@@ -19,6 +20,7 @@ func0000000000000066:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vptestnmd	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -29,6 +31,7 @@ func0000000000000008:
 	.long	2147483647
 .LCPI2_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000099:
 	vpandd	.LCPI2_0(%rip){1to16}, %zmm0, %zmm0
 	vpcmpeqd	.LCPI2_1(%rip){1to16}, %zmm0, %k0
@@ -44,6 +47,7 @@ func0000000000000099:
 	.long	8388608
 .LCPI3_2:
 	.long	2130706432
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	vpandd	.LCPI3_0(%rip){1to16}, %zmm0, %zmm0
 	vpsubd	.LCPI3_1(%rip){1to16}, %zmm0, %zmm0
@@ -52,6 +56,7 @@ func0000000000000042:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpeqps	%zmm1, %zmm0, %k0
@@ -67,6 +72,7 @@ func0000000000000018:
 	.long	2130706432
 .LCPI5_3:
 	.long	8388607
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001e:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnltd	%zmm1, %zmm0, %k1
@@ -91,6 +97,7 @@ func000000000000001e:
 	.long	2130706432
 .LCPI6_3:
 	.long	8388607
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnltd	%zmm1, %zmm0, %k1
@@ -111,6 +118,7 @@ func0000000000000006:
 	.long	8388608
 .LCPI7_2:
 	.long	2130706432
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000003bd:
 	vpandd	.LCPI7_0(%rip){1to16}, %zmm0, %zmm0
 	vpsubd	.LCPI7_1(%rip){1to16}, %zmm0, %zmm0
@@ -123,6 +131,7 @@ func00000000000003bd:
 	.long	2147483647
 .LCPI8_1:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000399:
 	vpandd	.LCPI8_0(%rip){1to16}, %zmm0, %zmm0
 	vpbroadcastd	.LCPI8_1(%rip), %zmm1
@@ -139,6 +148,7 @@ func0000000000000399:
 	.long	2147483647
 .LCPI9_1:
 	.long	8388607
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000003db:
 	vpandd	.LCPI9_0(%rip){1to16}, %zmm0, %zmm0
 	vpternlogd	$255, %zmm1, %zmm1, %zmm1
@@ -152,6 +162,7 @@ func00000000000003db:
 	.long	0x7fffffff
 .LCPI10_1:
 	.long	0x00800000
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000c3:
 	vandps	.LCPI10_0(%rip){1to16}, %zmm0, %zmm0
 	vcmpgeps	.LCPI10_1(%rip){1to16}, %zmm0, %k0
@@ -165,6 +176,7 @@ func00000000000000c3:
 	.long	8388608
 .LCPI11_2:
 	.long	2130706432
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000002:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnltd	%zmm1, %zmm0, %k1
@@ -185,6 +197,7 @@ func0000000000000002:
 	.long	8388607
 .LCPI12_4:
 	.long	2139095040
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000306:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpnltd	%zmm1, %zmm0, %k1
@@ -205,6 +218,7 @@ func0000000000000306:
 	.long	2139095040
 .LCPI13_1:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000019:
 	vpcmpeqd	.LCPI13_0(%rip){1to16}, %zmm0, %k0
 	vptestnmd	.LCPI13_1(%rip){1to16}, %zmm0, %k1

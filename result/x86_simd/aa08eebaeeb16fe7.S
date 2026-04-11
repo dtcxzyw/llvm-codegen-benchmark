@@ -18,6 +18,7 @@
 	.byte	128
 .LCPI0_1:
 	.long	7
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	vpshufb	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0

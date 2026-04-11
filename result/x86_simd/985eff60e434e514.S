@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqb	%ymm0, %xmm0
@@ -40,6 +41,7 @@ func000000000000000f:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqb	%ymm0, %xmm0
@@ -64,6 +66,7 @@ func0000000000000003:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000b:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqb	%ymm0, %xmm0
@@ -71,6 +74,7 @@ func000000000000000b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqb	%ymm0, %xmm0
@@ -94,6 +98,7 @@ func0000000000000000:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000009:
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqb	%ymm0, %xmm0

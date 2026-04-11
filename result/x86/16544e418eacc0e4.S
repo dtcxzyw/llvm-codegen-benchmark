@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	xorq	%rdx, %rsi
 	sets	%al
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	xorq	%rdx, %rsi
 	movabsq	$-81929232789475893, %rax
@@ -13,6 +15,7 @@ func0000000000000018:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	xorq	%rdx, %rsi
 	cmpq	$4, %rsi
@@ -20,6 +23,7 @@ func0000000000000008:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	xorq	%rdx, %rsi
 	cmpq	$2, %rsi
@@ -27,6 +31,7 @@ func0000000000000010:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	xorq	%rdx, %rsi
 	cmpq	$-1, %rsi
@@ -34,6 +39,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
 	xorq	%rdx, %rsi
 	setns	%al

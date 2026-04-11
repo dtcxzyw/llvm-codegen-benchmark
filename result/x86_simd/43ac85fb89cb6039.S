@@ -12,6 +12,7 @@
 	.long	47024469
 .LCPI0_2:
 	.long	3786406372
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000075:
 	vpmulhuw	.LCPI0_0(%rip), %xmm0, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0

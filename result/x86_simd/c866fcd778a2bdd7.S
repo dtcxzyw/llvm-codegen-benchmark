@@ -20,6 +20,7 @@
 	.zero	16,2
 .LCPI0_2:
 	.zero	4,2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestnmw	.LCPI0_0(%rip), %ymm1, %k1
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm1
@@ -51,6 +52,7 @@ func0000000000000003:
 	.zero	16,64
 .LCPI1_3:
 	.byte	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vptestnmw	.LCPI1_0(%rip), %ymm1, %k1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm1

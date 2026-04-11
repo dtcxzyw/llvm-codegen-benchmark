@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	cmpq	%rdx, %rsi
 	setbe	%al
@@ -8,6 +9,7 @@ func000000000000000a:
 	addl	%eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	cmpq	%rdx, %rsi
 	setg	%al
@@ -18,6 +20,7 @@ func0000000000000014:
 	orl	$1, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	cmpq	%rdx, %rsi
 	setl	%al
@@ -27,6 +30,7 @@ func000000000000000c:
 	orl	$18, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000012:
 	cmpq	%rdx, %rsi
 	setae	%al
@@ -36,6 +40,7 @@ func0000000000000012:
 	orl	$2, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
 	cmpq	%rdx, %rsi
 	sete	%al
@@ -45,6 +50,7 @@ func0000000000000002:
 	incl	%eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	xorl	%eax, %eax
 	testb	$1, %dil

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000201:
 	xorl	%eax, %eax
 	cmpl	$2, %esi
@@ -7,6 +8,7 @@ func0000000000000201:
 	cmovel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	cmpl	$1, %esi
 	sete	%al
@@ -16,6 +18,7 @@ func0000000000000041:
 	movzbl	%cl, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000301:
 	xorl	%ecx, %ecx
 	cmpl	$4, %esi

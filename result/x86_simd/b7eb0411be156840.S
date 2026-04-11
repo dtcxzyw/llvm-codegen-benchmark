@@ -3,6 +3,7 @@
 	.long	0x3f800000
 .LCPI0_1:
 	.long	0x437f0000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	vcmpgtps	.LCPI0_0(%rip){1to16}, %zmm0, %k1
 	vxorps	%xmm1, %xmm1, %xmm1

@@ -1,22 +1,26 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	andq	$-64, %rsi
 	andl	$2147483647, %edi
 	leaq	922880(%rsi,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	andq	$-64, %rsi
 	andl	$2147483647, %edi
 	leaq	1397376(%rsi,%rdi,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	andq	$-8, %rsi
 	andq	$-32, %rdi
 	leaq	16(%rsi,%rdi), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	andq	$-16, %rsi
 	andl	$536870911, %edi

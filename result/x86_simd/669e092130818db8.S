@@ -37,6 +37,7 @@
 	.short	1024
 .LCPI0_3:
 	.short	2048
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vptestnmb	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastw	.LCPI0_3(%rip), %ymm1

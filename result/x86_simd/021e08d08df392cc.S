@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vpsrlq	$12, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -10,6 +11,7 @@ func0000000000000012:
 
 .LCPI1_0:
 	.quad	65521
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	vpsrlq	$16, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3

@@ -8,6 +8,7 @@
 	.short	307
 	.short	307
 	.short	307
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
 	vpmovdw	%ymm0, %xmm0
 	vpsllw	$15, %xmm1, %xmm1

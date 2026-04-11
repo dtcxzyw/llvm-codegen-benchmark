@@ -18,6 +18,7 @@
 	.zero	1
 .LCPI0_1:
 	.quad	5871781006564002453
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	vpmovzxbq	%xmm1, %ymm3
 	vpxor	%ymm3, %ymm2, %ymm2
@@ -27,6 +28,7 @@ func0000000000000081:
 
 .LCPI1_0:
 	.quad	5871781006564002453
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpmovzxbq	%xmm1, %ymm3
 	vpxor	%ymm3, %ymm2, %ymm2

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,29
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpcmpltub	.LCPI0_0(%rip), %xmm2, %k0
 	vpand	%xmm1, %xmm0, %xmm0

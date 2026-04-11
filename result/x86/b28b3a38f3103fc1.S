@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	vcvttsd2si	%xmm0, %eax
 	testl	%eax, %eax
@@ -8,6 +9,7 @@ func0000000000000034:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vcvttsd2si	%xmm0, %eax
 	notl	%edi
@@ -15,6 +17,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000014a:
 	vcvttsd2si	%xmm0, %eax
 	testl	%eax, %eax
@@ -24,6 +27,7 @@ func000000000000014a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c1:
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$1000, %eax
@@ -33,6 +37,7 @@ func00000000000000c1:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000158:
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$3, %eax
@@ -42,6 +47,7 @@ func0000000000000158:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c6:
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$20001, %eax

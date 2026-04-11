@@ -8,6 +8,7 @@
 	.short	9363
 	.short	9363
 	.short	9363
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -28,6 +29,7 @@ func0000000000000018:
 	.short	32897
 	.short	32897
 	.short	32897
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001c:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -45,6 +47,7 @@ func000000000000001c:
 	.short	52429
 	.short	52429
 	.short	52429
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001e:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -62,6 +65,7 @@ func000000000000001e:
 	.short	5243
 	.short	5243
 	.short	5243
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

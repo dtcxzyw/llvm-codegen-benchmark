@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsrld	$9, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -7,6 +8,7 @@ func0000000000000000:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -24,6 +26,7 @@ func0000000000000008:
 	.short	55296
 	.short	55296
 	.short	55296
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -40,6 +43,7 @@ func0000000000000003:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpsrld	$2, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -56,6 +60,7 @@ func000000000000000f:
 	.short	55296
 	.short	55296
 	.short	55296
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000011:
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -63,6 +68,7 @@ func0000000000000011:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001f:
 	vpsrld	$8, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -71,6 +77,7 @@ func000000000000001f:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000010:
 	vpsrld	$1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -79,6 +86,7 @@ func0000000000000010:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	vpsrld	$2, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -87,6 +95,7 @@ func0000000000000001:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
 	vpsrld	$1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -104,6 +113,7 @@ func000000000000000a:
 	.short	4
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000000e:
 	vpsrld	$17, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -111,6 +121,7 @@ func000000000000000e:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000000d:
 	vpsrld	$24, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -128,6 +139,7 @@ func000000000000000d:
 	.short	55232
 	.short	55232
 	.short	55232
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000b:
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

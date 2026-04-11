@@ -20,6 +20,7 @@
 	.zero	1
 .LCPI0_2:
 	.byte	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000301:
 	vptestmd	%ymm1, %ymm1, %k1
 	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k1} {z}

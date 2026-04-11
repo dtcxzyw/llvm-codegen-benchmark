@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000042:
 	cmpl	$20, %edx
 	sete	%cl
@@ -9,6 +10,7 @@ func0000000000000042:
 	andb	%sil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	cmpl	$19, %edx
 	sete	%cl

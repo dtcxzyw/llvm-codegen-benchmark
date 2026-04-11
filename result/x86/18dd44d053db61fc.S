@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000208:
 	cmpq	%rdx, %rdi
 	seta	%cl
@@ -7,6 +8,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000024a:
 	cmpq	%rdx, %rdi
 	setae	%cl
@@ -15,6 +17,7 @@ func000000000000024a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000152:
 	cmpq	%rdx, %rdi
 	setbe	%cl
@@ -23,6 +26,7 @@ func0000000000000152:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000110:
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -31,6 +35,7 @@ func0000000000000110:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000302:
 	cmpq	%rdx, %rdi
 	setne	%cl
@@ -39,6 +44,7 @@ func0000000000000302:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000042:
 	cmpq	%rdx, %rdi
 	sete	%cl
@@ -47,6 +53,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000020a:
 	cmpq	%rdx, %rdi
 	seta	%cl
@@ -55,6 +62,7 @@ func000000000000020a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000052:
 	cmpq	%rdx, %rdi
 	sete	%cl
@@ -63,6 +71,7 @@ func0000000000000052:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000242:
 	cmpq	%rdx, %rdi
 	setae	%cl
@@ -71,6 +80,7 @@ func0000000000000242:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000050:
 	cmpq	%rdx, %rdi
 	sete	%cl
@@ -79,6 +89,7 @@ func0000000000000050:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000058:
 	cmpq	%rdx, %rdi
 	sete	%cl
@@ -87,6 +98,7 @@ func0000000000000058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000004a:
 	cmpq	%rdx, %rdi
 	sete	%cl
@@ -95,6 +107,7 @@ func000000000000004a:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000112:
 	cmpq	%rdx, %rdi
 	setb	%cl
@@ -103,6 +116,7 @@ func0000000000000112:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000248:
 	cmpq	%rdx, %rdi
 	setae	%cl
@@ -111,6 +125,7 @@ func0000000000000248:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000318:
 	xorq	%rdi, %rdx
 	xorq	%rdi, %rsi

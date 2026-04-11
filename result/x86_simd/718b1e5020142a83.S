@@ -33,6 +33,7 @@
 	.short	43691
 	.short	43691
 	.short	43691
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpmulhuw	.LCPI0_1(%rip), %ymm0, %ymm0
@@ -58,6 +59,7 @@ func000000000000001b:
 	.short	43691
 	.short	43691
 	.short	43691
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0

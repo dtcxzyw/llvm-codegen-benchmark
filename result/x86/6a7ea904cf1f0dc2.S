@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	leal	55(%rdi), %ecx
 	leal	48(%rdi), %eax
@@ -6,6 +7,7 @@ func000000000000000f:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	notb	%sil
 	movzbl	%sil, %eax
@@ -15,12 +17,14 @@ func000000000000000c:
 	addb	$-127, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
 	andl	$1, %esi
 	xorl	$65, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	leal	247(%rdi), %ecx
 	leal	3(%rdi), %eax
@@ -28,6 +32,7 @@ func0000000000000004:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	leal	87(%rdi), %ecx
 	leal	48(%rdi), %eax
@@ -35,12 +40,14 @@ func0000000000000000:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
 	andl	$1, %esi
 	xorl	$9, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000005:
 	leal	1(%rdi), %ecx
 	leal	8(%rdi), %eax
@@ -48,6 +55,7 @@ func0000000000000005:
 	cmovel	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	notb	%sil
 	movzbl	%sil, %eax

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	movabsq	$-4294967296, %rax
 	cmpq	%rax, %rdx
@@ -8,6 +9,7 @@ func0000000000000008:
 	cmovel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	testb	$1, %sil
 	movl	$-2000000001, %eax
@@ -16,6 +18,7 @@ func0000000000000002:
 	cmovnel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
 	andb	$1, %sil
 	cmpq	$257, %rdx
@@ -27,6 +30,7 @@ func0000000000000010:
 	orl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	cmpq	$10, %rdx
 	movl	$1999999998, %eax
@@ -35,6 +39,7 @@ func0000000000000018:
 	cmovel	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
 	xorl	%eax, %eax
 	testb	$1, %sil

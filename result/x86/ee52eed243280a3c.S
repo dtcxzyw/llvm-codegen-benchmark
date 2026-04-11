@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004a:
 	andl	$1, %edx
 	cmpq	%rdx, %rsi
@@ -6,6 +7,7 @@ func000000000000004a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	andl	$268435455, %edx
 	cmpq	%rdx, %rsi
@@ -13,6 +15,7 @@ func0000000000000042:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000068:
 	andl	$4194303, %edx
 	cmpq	%rdx, %rsi
@@ -20,6 +23,7 @@ func0000000000000068:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
 	andl	$-32, %edx
 	cmpq	%rdx, %rsi
@@ -27,6 +31,7 @@ func0000000000000002:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	andl	$-8, %edx
 	cmpq	%rdx, %rsi

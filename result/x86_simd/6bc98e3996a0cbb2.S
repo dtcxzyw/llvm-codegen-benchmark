@@ -3,12 +3,14 @@
 	.long	2147483646
 .LCPI0_1:
 	.long	2147483647
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpsrad	$31, %ymm0, %ymm0
 	vpand	%ymm1, %ymm0, %ymm0

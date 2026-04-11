@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpaddd	%xmm2, %xmm2, %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2
@@ -11,6 +12,7 @@ func0000000000000024:
 
 .LCPI1_0:
 	.long	60
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	vpmulld	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
@@ -22,6 +24,7 @@ func0000000000000026:
 
 .LCPI2_0:
 	.long	211
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2

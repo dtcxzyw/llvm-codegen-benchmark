@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovzxdq	%xmm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -32,6 +33,7 @@ func0000000000000004:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000088:
 	vpmovzxdq	%xmm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3
@@ -65,6 +67,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpmovzxdq	%xmm2, %ymm2
 	vextracti128	$1, %ymm0, %xmm3

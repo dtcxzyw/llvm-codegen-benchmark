@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	movl	%esi, %eax
 	cmpl	$524288, %edi
@@ -6,6 +7,7 @@ func0000000000000010:
 	shll	$10, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
 	movl	%esi, %eax
 	cmpl	$524288, %edi
@@ -13,6 +15,7 @@ func0000000000000013:
 	shll	$10, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	movl	%esi, %eax
 	cmpl	$10, %edi
@@ -20,18 +23,21 @@ func0000000000000011:
 	shll	$4, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000019:
 	cmpl	$2, %edi
 	cmovll	%edi, %esi
 	leal	(,%rsi,8), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000053:
 	cmpl	$4097, %edi
 	cmovbl	%edi, %esi
 	leal	(,%rsi,8), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000050:
 	movl	%esi, %eax
 	cmpl	$8, %edi
@@ -39,6 +45,7 @@ func0000000000000050:
 	shll	$23, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000012:
 	movl	%esi, %eax
 	cmpl	$256, %edi

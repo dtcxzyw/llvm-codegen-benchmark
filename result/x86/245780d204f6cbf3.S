@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000caa:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmplesd	%xmm2, %xmm3, %k0
@@ -10,6 +11,7 @@ func0000000000000caa:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000888:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpeqsd	%xmm3, %xmm2, %k0
@@ -25,6 +27,7 @@ func0000000000000888:
 
 .LCPI2_0:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000aaa:
 	vmovsd	.LCPI2_0(%rip), %xmm3
 	vcmplesd	%xmm3, %xmm2, %k0
@@ -42,6 +45,7 @@ func0000000000000aaa:
 	.quad	0x3fa999999999999a
 .LCPI3_2:
 	.quad	0xbfb999999999999a
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000224:
 	vcmpltsd	.LCPI3_0(%rip), %xmm2, %k0
 	vcmpltsd	.LCPI3_1(%rip), %xmm1, %k1
@@ -52,6 +56,7 @@ func0000000000000224:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000777:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpneqsd	%xmm3, %xmm2, %k0
@@ -69,6 +74,7 @@ func0000000000000777:
 	.quad	0x40862e42fefa39ef
 .LCPI5_1:
 	.quad	0x406573fae561f647
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000222:
 	vmovsd	.LCPI5_0(%rip), %xmm3
 	vcmpltsd	%xmm3, %xmm2, %k0
@@ -80,6 +86,7 @@ func0000000000000222:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000111:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpunordsd	%xmm3, %xmm2, %k0
@@ -95,6 +102,7 @@ func0000000000000111:
 	.quad	0x3ddb7cdfd9d7bdbb
 .LCPI7_1:
 	.quad	0x4009220092718f51
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000004a4:
 	vmovsd	.LCPI7_0(%rip), %xmm3
 	vcmpltsd	%xmm2, %xmm3, %k0
@@ -106,6 +114,7 @@ func00000000000004a4:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000c22:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmplesd	%xmm2, %xmm3, %k0
@@ -119,6 +128,7 @@ func0000000000000c22:
 
 .LCPI9_0:
 	.quad	0xbd71979980000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000444:
 	vmovsd	.LCPI9_0(%rip), %xmm3
 	vcmpltsd	%xmm2, %xmm3, %k0
@@ -132,6 +142,7 @@ func0000000000000444:
 
 .LCPI10_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000666:
 	vmovsd	.LCPI10_0(%rip), %xmm3
 	vcmpneq_oqsd	%xmm3, %xmm2, %k0
@@ -143,6 +154,7 @@ func0000000000000666:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000eee:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpordsd	%xmm3, %xmm2, %k0

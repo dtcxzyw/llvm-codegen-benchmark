@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
@@ -11,6 +12,7 @@ func0000000000000008:
 
 .LCPI1_0:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003d:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2
@@ -21,6 +23,7 @@ func000000000000003d:
 
 .LCPI2_0:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000038:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2
@@ -31,6 +34,7 @@ func0000000000000038:
 
 .LCPI3_0:
 	.long	4
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000011:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2
@@ -41,6 +45,7 @@ func0000000000000011:
 
 .LCPI4_0:
 	.long	1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000039:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI4_0(%rip), %xmm2
@@ -51,6 +56,7 @@ func0000000000000039:
 
 .LCPI5_0:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000019:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI5_0(%rip), %xmm2
@@ -61,6 +67,7 @@ func0000000000000019:
 
 .LCPI6_0:
 	.long	1
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000003b:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI6_0(%rip), %xmm2
@@ -71,6 +78,7 @@ func000000000000003b:
 
 .LCPI7_0:
 	.long	1
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000003f:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI7_0(%rip), %xmm2
@@ -81,6 +89,7 @@ func000000000000003f:
 
 .LCPI8_0:
 	.long	1
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000009:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI8_0(%rip), %xmm2
@@ -91,6 +100,7 @@ func0000000000000009:
 
 .LCPI9_0:
 	.long	4
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000003c:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI9_0(%rip), %xmm2
@@ -101,6 +111,7 @@ func000000000000003c:
 
 .LCPI10_0:
 	.long	2
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000003e:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI10_0(%rip), %xmm2
@@ -111,6 +122,7 @@ func000000000000003e:
 
 .LCPI11_0:
 	.long	1
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000028:
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI11_0(%rip), %xmm2

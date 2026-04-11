@@ -19,6 +19,7 @@
 .LCPI0_1:
 	.short	8192
 	.short	8192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpor	%ymm0, %ymm1, %ymm0
 	vpsllw	$11, %ymm0, %ymm0
@@ -33,6 +34,7 @@ func0000000000000000:
 	.zero	4,17
 .LCPI1_3:
 	.zero	4,204
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpternlogd	$248, .LCPI1_2(%rip){1to8}, %ymm1, %ymm0
 	vpsllw	$2, %ymm0, %ymm0

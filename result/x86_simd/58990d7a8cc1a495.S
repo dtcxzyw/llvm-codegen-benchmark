@@ -32,6 +32,7 @@
 	.byte	46
 	.byte	15
 	.byte	47
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ac:
 	vmovdqa	.LCPI0_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -90,6 +91,7 @@ func00000000000000ac:
 	.short	65317
 	.short	65317
 	.short	65317
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a1:
 	vmovdqa	.LCPI1_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -131,6 +133,7 @@ func00000000000000a1:
 	.byte	46
 	.byte	15
 	.byte	47
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000aa:
 	vmovdqa	.LCPI2_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -190,6 +193,7 @@ func00000000000000aa:
 	.short	4
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a8:
 	vmovdqa	.LCPI3_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -215,6 +219,7 @@ func00000000000000a8:
 	.short	4095
 	.short	4095
 	.short	4095
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001e1:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$4, %ymm1, %ymm1
@@ -275,6 +280,7 @@ func00000000000001e1:
 	.short	15
 	.short	15
 	.short	15
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000b8:
 	vmovdqa	.LCPI5_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -333,6 +339,7 @@ func00000000000000b8:
 	.short	60001
 	.short	60001
 	.short	60001
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000a4:
 	vmovdqa	.LCPI6_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -391,6 +398,7 @@ func00000000000000a4:
 	.short	5
 	.short	5
 	.short	5
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000000b4:
 	vmovdqa	.LCPI7_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -416,6 +424,7 @@ func00000000000000b4:
 	.short	977
 	.short	977
 	.short	977
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000003ec:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$6, %ymm1, %ymm1
@@ -476,6 +485,7 @@ func00000000000003ec:
 	.short	32767
 	.short	32767
 	.short	32767
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000002e1:
 	vmovdqa	.LCPI9_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
@@ -501,6 +511,7 @@ func00000000000002e1:
 	.short	1000
 	.short	1000
 	.short	1000
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000003f4:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$5, %ymm1, %ymm1
@@ -561,6 +572,7 @@ func00000000000003f4:
 	.short	1
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000a6:
 	vmovdqa	.LCPI11_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002aa:
 	movsbl	%sil, %eax
 	leal	(%rax,%rax,4), %eax
@@ -7,6 +8,7 @@ func00000000000002aa:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000002a6:
 	movsbl	%sil, %eax
 	leal	(%rax,%rax,4), %eax
@@ -15,6 +17,7 @@ func00000000000002a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000002a4:
 	movsbl	%sil, %eax
 	leal	(%rax,%rax,4), %eax

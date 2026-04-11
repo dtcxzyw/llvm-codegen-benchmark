@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	cmpb	$1, %sil
 	movq	$-1, %rax
@@ -6,6 +7,7 @@ func0000000000000004:
 	subq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	cmpb	$2, %sil
 	movl	$64, %ecx
@@ -14,6 +16,7 @@ func0000000000000007:
 	subq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	cmpb	$10, %sil
 	movq	$-2147483648, %rcx

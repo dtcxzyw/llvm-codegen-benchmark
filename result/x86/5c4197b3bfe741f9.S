@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000001984:
 	addl	%edx, %esi
 	shll	$10, %edi
@@ -7,6 +8,7 @@ func0000000000001984:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000184:
 	addl	%edx, %esi
 	shll	$10, %edi
@@ -15,6 +17,7 @@ func0000000000000184:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000608:
 	addl	%edx, %esi
 	shll	$28, %edi

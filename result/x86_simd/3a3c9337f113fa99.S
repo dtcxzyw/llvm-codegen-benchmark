@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000060c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
@@ -19,6 +20,7 @@ func000000000000060c:
 	.short	5
 	.short	5
 	.short	5
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000084:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
@@ -39,6 +41,7 @@ func0000000000000084:
 	.short	6854
 	.short	6854
 	.short	6854
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000082:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
@@ -59,6 +62,7 @@ func0000000000000082:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000204:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
@@ -79,6 +83,7 @@ func0000000000000204:
 	.short	2
 	.short	2
 	.short	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000614:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
@@ -102,6 +107,7 @@ func0000000000000614:
 	.short	58
 .LCPI5_1:
 	.long	1
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000620:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
@@ -124,6 +130,7 @@ func0000000000000620:
 	.short	256
 .LCPI6_1:
 	.long	3
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000202:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
@@ -144,6 +151,7 @@ func0000000000000202:
 	.short	72
 	.short	72
 	.short	72
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000098:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
@@ -164,6 +172,7 @@ func0000000000000098:
 	.short	8
 	.short	8
 	.short	8
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000618:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0

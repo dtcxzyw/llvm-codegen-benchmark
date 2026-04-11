@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000318a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpor	%ymm2, %ymm1, %ymm1
@@ -8,6 +9,7 @@ func000000000000318a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000302c:
 	vptestmd	%ymm2, %ymm2, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
@@ -21,6 +23,7 @@ func000000000000302c:
 	.long	1
 .LCPI2_1:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000424:
 	vpbroadcastd	.LCPI2_0(%rip), %ymm3
 	vpcmpeqd	%ymm3, %ymm2, %k0

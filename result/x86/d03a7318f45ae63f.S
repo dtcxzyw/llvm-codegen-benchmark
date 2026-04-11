@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	cmpl	$4, %edx
 	movq	$-1, %rax
@@ -6,6 +7,7 @@ func0000000000000028:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	cmpl	$4, %edx
 	movl	$1, %eax
@@ -13,6 +15,7 @@ func0000000000000005:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -20,6 +23,7 @@ func0000000000000004:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -27,6 +31,7 @@ func0000000000000018:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	xorl	%eax, %eax
 	cmpl	$3, %edx
@@ -34,6 +39,7 @@ func0000000000000007:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000050:
 	cmpl	$2048, %edx
 	movq	$-2, %rax
@@ -41,6 +47,7 @@ func0000000000000050:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000053:
 	cmpl	$2048, %edx
 	movl	$2, %eax
@@ -48,6 +55,7 @@ func0000000000000053:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000001a:
 	xorl	%eax, %eax
 	testl	%edx, %edx
@@ -55,6 +63,7 @@ func000000000000001a:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000010:
 	cmpl	$5, %edx
 	movl	$4, %eax
@@ -62,6 +71,7 @@ func0000000000000010:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000020:
 	xorl	%eax, %eax
 	cmpl	$2, %edx
@@ -69,6 +79,7 @@ func0000000000000020:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000052:
 	cmpl	$15, %edx
 	movl	$4095, %eax
@@ -76,6 +87,7 @@ func0000000000000052:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000022:
 	xorl	%eax, %eax
 	cmpl	$16, %edx
@@ -83,6 +95,7 @@ func0000000000000022:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000030:
 	testl	%edx, %edx
 	movl	$16, %eax
@@ -90,6 +103,7 @@ func0000000000000030:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000013:
 	cmpl	$524288, %edx
 	movl	$12, %eax
@@ -97,6 +111,7 @@ func0000000000000013:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000011:
 	cmpl	$10, %edx
 	movq	$-48, %rax

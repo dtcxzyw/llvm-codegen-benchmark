@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018d:
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
@@ -7,6 +8,7 @@ func000000000000018d:
 	andl	$2, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000180:
 	cmpq	$1, %rsi
 	sbbq	$-1, %rdi
@@ -14,6 +16,7 @@ func0000000000000180:
 	andq	$-8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018f:
 	cmpq	$1, %rsi
 	sbbq	$-1, %rdi

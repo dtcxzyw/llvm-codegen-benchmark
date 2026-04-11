@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	0x3f7fbe77
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000cb:
 	vpcmpneqq	%ymm2, %ymm1, %k1
 	vcmpngtps	.LCPI0_0(%rip){1to4}, %xmm0, %k0 {%k1}
@@ -8,6 +9,7 @@ func00000000000000cb:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000cd:
 	vpcmpneqq	%ymm2, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -18,6 +20,7 @@ func00000000000000cd:
 
 .LCPI2_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vpcmpltuq	%ymm2, %ymm1, %k1
 	vcmpltps	.LCPI2_0(%rip){1to4}, %xmm0, %k0 {%k1}
@@ -25,6 +28,7 @@ func0000000000000042:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c8:
 	vpcmpneqq	%ymm2, %ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1

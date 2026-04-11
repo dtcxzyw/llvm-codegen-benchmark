@@ -3,6 +3,7 @@
 	.long	0x7fffffff
 .LCPI0_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000aa:
 	vandps	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI0_1(%rip), %xmm2
@@ -16,6 +17,7 @@ func00000000000000aa:
 	.long	0x7fffffff
 .LCPI1_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001aa:
 	vandps	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI1_1(%rip), %xmm2
@@ -29,6 +31,7 @@ func00000000000001aa:
 	.long	0x7fffffff
 .LCPI2_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000124:
 	vandps	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vxorps	%xmm2, %xmm2, %xmm2
@@ -42,6 +45,7 @@ func0000000000000124:
 	.long	0x7fffffff
 .LCPI3_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000022:
 	vandps	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI3_1(%rip), %xmm2
@@ -55,6 +59,7 @@ func0000000000000022:
 	.long	0x7fffffff
 .LCPI4_1:
 	.long	0x34000000
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000122:
 	vandps	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI4_1(%rip), %xmm2
@@ -70,6 +75,7 @@ func0000000000000122:
 	.long	0x40a00000
 .LCPI5_2:
 	.long	0x41f00000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000024:
 	vandps	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
 	vcmpgtss	.LCPI5_1(%rip), %xmm0, %k0
@@ -80,6 +86,7 @@ func0000000000000024:
 
 .LCPI6_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000099:
 	vmovd	%xmm1, %eax
 	addl	%eax, %eax
@@ -92,6 +99,7 @@ func0000000000000099:
 
 .LCPI7_0:
 	.long	0x7f800000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000066:
 	vmovd	%xmm1, %eax
 	addl	%eax, %eax
@@ -102,6 +110,7 @@ func0000000000000066:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000006d:
 	vmovd	%xmm1, %eax
 	addl	%eax, %eax
@@ -117,6 +126,7 @@ func000000000000006d:
 	.long	0x7fffffff
 .LCPI9_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001dd:
 	vandps	.LCPI9_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI9_1(%rip), %xmm2
@@ -130,6 +140,7 @@ func00000000000001dd:
 	.long	0x7fffffff
 .LCPI10_1:
 	.long	0x358637bd
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000dd:
 	vandps	.LCPI10_0(%rip){1to4}, %xmm1, %xmm1
 	vmovss	.LCPI10_1(%rip), %xmm2
@@ -139,6 +150,7 @@ func00000000000000dd:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000086:
 	vmovd	%xmm1, %eax
 	addl	%eax, %eax

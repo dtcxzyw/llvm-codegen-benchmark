@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003a:
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1
@@ -24,6 +25,7 @@ func000000000000003a:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpaddw	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1
@@ -31,6 +33,7 @@ func0000000000000000:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000020:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
@@ -48,6 +51,7 @@ func0000000000000020:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003f:
 	vpaddw	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1
@@ -64,6 +68,7 @@ func000000000000003f:
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000007:
 	vpaddw	.LCPI4_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1

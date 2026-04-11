@@ -8,6 +8,7 @@
 	.short	411
 	.short	411
 	.short	411
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpcmpeqw	.LCPI0_0(%rip), %xmm0, %k0
 	vpmovm2d	%k0, %ymm0
@@ -27,6 +28,7 @@ func0000000000000005:
 	.long	6
 .LCPI1_2:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	vpcmpeqw	.LCPI1_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0

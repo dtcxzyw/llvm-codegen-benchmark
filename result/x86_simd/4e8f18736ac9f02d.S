@@ -3,6 +3,7 @@
 	.long	0x41b00000
 .LCPI0_1:
 	.long	0x3dcccccc
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vmulps	%zmm1, %zmm0, %zmm1

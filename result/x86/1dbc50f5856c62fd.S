@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000198:
 	cmpl	$127, %edi
 	setne	%cl
@@ -7,6 +8,7 @@ func0000000000000198:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	cmpl	$3, %edi
 	setne	%cl
@@ -15,6 +17,7 @@ func000000000000018c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000cc:
 	cmpl	$128, %edi
 	setl	%cl
@@ -23,6 +26,7 @@ func00000000000000cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000018a:
 	cmpl	$65536, %edi
 	setne	%cl
@@ -31,6 +35,7 @@ func000000000000018a:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000186:
 	cmpl	$-2, %edi
 	setne	%cl
@@ -39,6 +44,7 @@ func0000000000000186:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000194:
 	cmpl	$3, %edi
 	setne	%cl
@@ -47,6 +53,7 @@ func0000000000000194:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000014c:
 	testl	%edi, %edi
 	setns	%cl
@@ -55,6 +62,7 @@ func000000000000014c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000184:
 	cmpl	$2000, %edi
 	setne	%cl
@@ -63,6 +71,7 @@ func0000000000000184:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000008c:
 	cmpl	$16777216, %edi
 	setb	%cl
@@ -71,6 +80,7 @@ func000000000000008c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000188:
 	cmpl	$6, %edi
 	setne	%cl
@@ -79,6 +89,7 @@ func0000000000000188:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000010c:
 	cmpl	$33, %edi
 	setae	%cl
@@ -87,6 +98,7 @@ func000000000000010c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000030c:
 	cmpl	$48, %edi
 	setae	%cl
@@ -95,6 +107,7 @@ func000000000000030c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000028c:
 	cmpl	$61504, %edi
 	setb	%cl
@@ -103,6 +116,7 @@ func000000000000028c:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func000000000000008b:
 	cmpl	$6, %edi
 	setb	%al

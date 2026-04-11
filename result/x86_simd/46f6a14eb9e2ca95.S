@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vptestnmb	%xmm1, %xmm1, %k1
 	vorps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm0 {%k1}
@@ -8,6 +9,7 @@ func000000000000000c:
 
 .LCPI1_0:
 	.long	4278190080
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vptestmb	%xmm1, %xmm1, %k1
 	vorps	.LCPI1_0(%rip){1to8}, %ymm2, %ymm0 {%k1}
@@ -32,6 +34,7 @@ func0000000000000001:
 	.zero	1
 .LCPI2_1:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
 	vpcmpeqb	.LCPI2_0(%rip), %xmm1, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
@@ -56,6 +59,7 @@ func000000000000002c:
 	.zero	1
 .LCPI3_1:
 	.long	3221225472
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	vpcmpneqb	.LCPI3_0(%rip), %xmm1, %k1
 	vorps	.LCPI3_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
@@ -80,6 +84,7 @@ func0000000000000021:
 	.zero	1
 .LCPI4_1:
 	.long	48
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	vpcmpleub	.LCPI4_0(%rip), %xmm1, %k1
 	vorps	.LCPI4_1(%rip){1to8}, %ymm2, %ymm0 {%k1}

@@ -3,6 +3,7 @@
 	.quad	-16
 .LCPI0_1:
 	.quad	16
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
@@ -16,6 +17,7 @@ func00000000000000c1:
 	.quad	-128
 .LCPI1_1:
 	.quad	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
@@ -27,6 +29,7 @@ func0000000000000041:
 
 .LCPI2_0:
 	.quad	2147483647
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
@@ -41,6 +44,7 @@ func0000000000000061:
 	.quad	-2
 .LCPI3_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000081:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
@@ -52,6 +56,7 @@ func0000000000000081:
 
 .LCPI4_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000161:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
@@ -66,6 +71,7 @@ func0000000000000161:
 	.quad	-2
 .LCPI5_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
@@ -77,6 +83,7 @@ func0000000000000001:
 
 .LCPI6_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000001e1:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
@@ -91,6 +98,7 @@ func00000000000001e1:
 	.quad	-32
 .LCPI7_1:
 	.quad	32
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000141:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
@@ -102,6 +110,7 @@ func0000000000000141:
 
 .LCPI8_0:
 	.quad	3
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000e1:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
@@ -116,6 +125,7 @@ func00000000000000e1:
 	.quad	-8
 .LCPI9_1:
 	.quad	8
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000044:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI9_0(%rip){1to4}, %ymm1, %ymm1
@@ -129,6 +139,7 @@ func0000000000000044:
 	.quad	504
 .LCPI10_1:
 	.quad	8
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000001c1:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI10_0(%rip){1to4}, %ymm1, %ymm1
@@ -138,6 +149,7 @@ func00000000000001c1:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000074:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -151,6 +163,7 @@ func0000000000000074:
 
 .LCPI12_0:
 	.quad	-6
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000028:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -163,6 +176,7 @@ func0000000000000028:
 
 .LCPI13_0:
 	.quad	-6
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000038:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -177,6 +191,7 @@ func0000000000000038:
 	.quad	9223372036854775804
 .LCPI14_1:
 	.quad	4
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000f4:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI14_0(%rip){1to4}, %ymm1, %ymm1
@@ -190,6 +205,7 @@ func00000000000000f4:
 	.quad	9223372036854775806
 .LCPI15_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end15, nop
 func00000000000000e4:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI15_0(%rip){1to4}, %ymm1, %ymm1
@@ -203,6 +219,7 @@ func00000000000000e4:
 	.quad	-8
 .LCPI16_1:
 	.quad	8
+	.prefalign	4, .Lfunc_end16, nop
 func00000000000000c4:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI16_0(%rip){1to4}, %ymm1, %ymm1
@@ -214,6 +231,7 @@ func00000000000000c4:
 
 .LCPI17_0:
 	.quad	-16
+	.prefalign	4, .Lfunc_end17, nop
 func0000000000000004:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -226,6 +244,7 @@ func0000000000000004:
 
 .LCPI18_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end18, nop
 func00000000000000f8:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -238,6 +257,7 @@ func00000000000000f8:
 
 .LCPI19_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end19, nop
 func0000000000000078:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -252,6 +272,7 @@ func0000000000000078:
 	.quad	9223372036854775552
 .LCPI20_1:
 	.quad	32
+	.prefalign	4, .Lfunc_end20, nop
 func00000000000001f4:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI20_0(%rip){1to4}, %ymm1, %ymm1

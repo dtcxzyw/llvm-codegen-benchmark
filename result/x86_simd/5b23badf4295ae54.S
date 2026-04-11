@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000012c:
 	vpmaxud	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpnltud	%ymm2, %ymm1, %k1
@@ -11,6 +12,7 @@ func000000000000012c:
 
 .LCPI1_0:
 	.long	5
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000002c:
 	vpmaxud	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1

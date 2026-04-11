@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x0010000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000082:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpeqpd	%zmm4, %zmm2, %k1
@@ -15,6 +16,7 @@ func0000000000000082:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vmaxpd	%zmm3, %zmm4, %zmm3
@@ -26,6 +28,7 @@ func0000000000000023:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vmaxpd	%zmm3, %zmm4, %zmm3
@@ -39,6 +42,7 @@ func0000000000000022:
 
 .LCPI3_0:
 	.quad	0x3f66719f3601671a
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000045:
 	vbroadcastsd	.LCPI3_0(%rip), %zmm4
 	vminpd	%zmm3, %zmm4, %zmm3
@@ -52,6 +56,7 @@ func0000000000000045:
 
 .LCPI4_0:
 	.quad	0x2b2bff2ee48e0530
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000024:
 	vbroadcastsd	.LCPI4_0(%rip), %zmm4
 	vmaxpd	%zmm3, %zmm4, %zmm3
@@ -63,6 +68,7 @@ func0000000000000024:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000088:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpneqpd	%zmm4, %zmm2, %k1
@@ -76,6 +82,7 @@ func0000000000000088:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000048:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vminpd	%zmm3, %zmm4, %zmm3
@@ -87,6 +94,7 @@ func0000000000000048:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000025:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vmaxpd	%zmm3, %zmm4, %zmm3
@@ -98,6 +106,7 @@ func0000000000000025:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002e:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vmaxpd	%zmm3, %zmm4, %zmm3
@@ -111,6 +120,7 @@ func000000000000002e:
 
 .LCPI9_0:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000042:
 	vbroadcastsd	.LCPI9_0(%rip), %zmm4
 	vminpd	%zmm3, %zmm4, %zmm3
@@ -124,6 +134,7 @@ func0000000000000042:
 
 .LCPI10_0:
 	.quad	0x3ce4000000000000
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000002c:
 	vbroadcastsd	.LCPI10_0(%rip), %zmm4
 	vmaxpd	%zmm3, %zmm4, %zmm3

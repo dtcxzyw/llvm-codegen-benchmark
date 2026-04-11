@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000010a:
 	addl	%esi, %edi
 	cmpl	%edi, %edx
@@ -11,6 +12,7 @@ func000000000000010a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001aa:
 	addl	%esi, %edi
 	cmpl	%edi, %edx

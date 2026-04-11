@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x4066800000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vandpd	.LCPI0_0(%rip){1to2}, %xmm0, %xmm0
 	vucomisd	.LCPI0_1(%rip), %xmm0
@@ -17,6 +18,7 @@ func0000000000000010:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vandpd	.LCPI1_0(%rip){1to2}, %xmm0, %xmm0
 	vucomisd	.LCPI1_1(%rip), %xmm0
@@ -25,6 +27,7 @@ func0000000000000008:
 	andb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vmovq	%xmm0, %rax
 	shrq	$52, %rax

@@ -1,11 +1,13 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -14,16 +16,19 @@ func0000000000000004:
 
 .LCPI2_0:
 	.long	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -31,6 +36,7 @@ func0000000000000008:
 
 .LCPI5_0:
 	.long	13
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
@@ -38,6 +44,7 @@ func000000000000000f:
 
 .LCPI6_0:
 	.long	13
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
@@ -45,16 +52,19 @@ func000000000000000c:
 
 .LCPI7_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000002:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -62,6 +72,7 @@ func0000000000000002:
 
 .LCPI10_0:
 	.long	26
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000009:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI10_0(%rip){1to8}, %ymm0, %ymm0
@@ -69,22 +80,26 @@ func0000000000000009:
 
 .LCPI11_0:
 	.long	44
+	.prefalign	4, .Lfunc_end11, nop
 func000000000000000b:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI11_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000003:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000006:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func000000000000000e:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

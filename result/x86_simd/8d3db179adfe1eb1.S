@@ -5,6 +5,7 @@
 	.zero	16,128
 .LCPI0_2:
 	.zero	4,128
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsubb	%xmm2, %xmm1, %xmm1
 	vpaddb	%xmm0, %xmm1, %xmm0

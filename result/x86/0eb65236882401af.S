@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	orl	%esi, %edi
 	jne	.LBB0_1
@@ -10,6 +11,7 @@ func000000000000018c:
 	movb	$1, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000058c:
 	andl	$15, %edx
 	xorl	$8, %edx
@@ -18,6 +20,7 @@ func000000000000058c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000428:
 	andl	$2095104, %edx
 	cmpl	$55296, %edx

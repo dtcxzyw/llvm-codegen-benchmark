@@ -3,6 +3,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.zero	4,1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000318:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpor	%xmm1, %xmm0, %xmm0

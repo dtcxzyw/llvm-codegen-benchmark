@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -6,6 +7,7 @@ func0000000000000006:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -13,6 +15,7 @@ func0000000000000004:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a6:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -20,6 +23,7 @@ func00000000000000a6:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000084:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -27,6 +31,7 @@ func0000000000000084:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
 	addl	%edx, %esi
 	shll	$6, %edi
@@ -34,6 +39,7 @@ func0000000000000008:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -41,6 +47,7 @@ func0000000000000026:
 	setl	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000eb:
 	addl	%edx, %esi
 	shll	$2, %edi
@@ -48,6 +55,7 @@ func00000000000000eb:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -55,6 +63,7 @@ func000000000000000a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000001f4:
 	addl	%edx, %esi
 	shll	$2, %edi
@@ -62,6 +71,7 @@ func00000000000001f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000001f8:
 	addl	%edx, %esi
 	shll	$2, %edi
@@ -69,6 +79,7 @@ func00000000000001f8:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000000aa:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -76,6 +87,7 @@ func00000000000000aa:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000000a1:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -83,6 +95,7 @@ func00000000000000a1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000064:
 	addl	%edx, %esi
 	addl	%edi, %edi
@@ -90,6 +103,7 @@ func0000000000000064:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000086:
 	addl	%edx, %esi
 	addl	%edi, %edi

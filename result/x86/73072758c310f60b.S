@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000401:
 	imulq	%rdx, %rsi
 	shlq	$32, %rdi
@@ -6,6 +7,7 @@ func0000000000000401:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000601:
 	imulq	%rdx, %rsi
 	shlq	$32, %rdi
@@ -13,6 +15,7 @@ func0000000000000601:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	shlq	$6, %rdx
 	imulq	%rsi, %rdi

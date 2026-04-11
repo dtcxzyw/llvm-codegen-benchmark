@@ -40,6 +40,7 @@
 	.byte	128
 .LCPI0_4:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$6, %ymm0, %ymm0
@@ -90,6 +91,7 @@ func0000000000000011:
 	.byte	64
 .LCPI1_4:
 	.zero	4,31
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpsrlw	$5, %ymm0, %ymm0

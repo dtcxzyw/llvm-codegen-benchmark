@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000030c:
 	movzwl	%dx, %eax
 	cmpl	$513, %eax
@@ -8,6 +9,7 @@ func000000000000030c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000285:
 	andl	$2147483647, %edx
 	cmpl	$3, %edx
@@ -17,6 +19,7 @@ func0000000000000285:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	andl	$-2, %edx
 	cmpl	$32, %edx
@@ -26,6 +29,7 @@ func0000000000000021:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002c:
 	testl	$67108864, %edx
 	sete	%cl
@@ -34,6 +38,7 @@ func000000000000002c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000304:
 	andl	$252, %edx
 	cmpl	$12, %edx
@@ -43,6 +48,7 @@ func0000000000000304:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000188:
 	andl	$4, %edx
 	shrl	$2, %edx

@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001ec:
 	vpsllq	$24, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -9,6 +10,7 @@ func00000000000001ec:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001e1:
 	vpsllq	$24, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -19,6 +21,7 @@ func00000000000001e1:
 
 .LCPI2_0:
 	.quad	8191
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f8:
 	vpsllq	$24, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -27,6 +30,7 @@ func00000000000001f8:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpsllq	$4, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -37,6 +41,7 @@ func0000000000000001:
 
 .LCPI4_0:
 	.quad	8
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001f4:
 	vpsllq	$24, %ymm0, %ymm0
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0
@@ -45,6 +50,7 @@ func00000000000001f4:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000161:
 	vpsllq	$48, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -53,6 +59,7 @@ func0000000000000161:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000016c:
 	vpsllq	$16, %ymm2, %ymm2
 	vpternlogq	$254, %ymm1, %ymm0, %ymm2
@@ -63,6 +70,7 @@ func000000000000016c:
 
 .LCPI7_0:
 	.quad	-9223372036854775808
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001a1:
 	vpsllq	$32, %ymm0, %ymm0
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0

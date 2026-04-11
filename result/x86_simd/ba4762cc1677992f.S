@@ -3,6 +3,7 @@
 	.quad	9223372036854775807
 .LCPI0_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f0:
 	vpbroadcastq	.LCPI0_0(%rip), %zmm4
 	vpandq	%zmm4, %zmm2, %zmm2
@@ -25,6 +26,7 @@ func00000000000000f0:
 	.quad	9223372036854775807
 .LCPI1_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000010e:
 	vpbroadcastq	.LCPI1_0(%rip), %zmm4
 	vpandq	%zmm4, %zmm2, %zmm2
@@ -47,6 +49,7 @@ func000000000000010e:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001b6:
 	vbroadcastsd	.LCPI2_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -69,6 +72,7 @@ func00000000000001b6:
 	.quad	9223372036854775807
 .LCPI3_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ee:
 	vpbroadcastq	.LCPI3_0(%rip), %zmm4
 	vpandq	%zmm4, %zmm2, %zmm2
@@ -89,6 +93,7 @@ func00000000000000ee:
 
 .LCPI4_0:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000132:
 	vpaddq	%zmm2, %zmm2, %zmm2
 	vpbroadcastq	.LCPI4_0(%rip), %zmm4
@@ -110,6 +115,7 @@ func0000000000000132:
 	.quad	9223372036854775807
 .LCPI5_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000110:
 	vpbroadcastq	.LCPI5_0(%rip), %zmm4
 	vpandq	%zmm4, %zmm2, %zmm2
@@ -132,6 +138,7 @@ func0000000000000110:
 	.quad	0x7fffffffffffffff
 .LCPI6_1:
 	.quad	0x471a36e2d0e56042
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000288:
 	vbroadcastsd	.LCPI6_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -154,6 +161,7 @@ func0000000000000288:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000006aa:
 	vbroadcastsd	.LCPI7_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -176,6 +184,7 @@ func00000000000006aa:
 	.quad	0x7fffffffffffffff
 .LCPI8_1:
 	.quad	0x3f1a36e2eb1c432d
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000088:
 	vbroadcastsd	.LCPI8_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -198,6 +207,7 @@ func0000000000000088:
 	.quad	0x7fffffffffffffff
 .LCPI9_1:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000044:
 	vbroadcastsd	.LCPI9_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -220,6 +230,7 @@ func0000000000000044:
 	.quad	9223372036854775807
 .LCPI10_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000710:
 	vpbroadcastq	.LCPI10_0(%rip), %zmm4
 	vpandq	%zmm4, %zmm2, %zmm2
@@ -242,6 +253,7 @@ func0000000000000710:
 	.quad	0x7fffffffffffffff
 .LCPI11_1:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000644:
 	vbroadcastsd	.LCPI11_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -264,6 +276,7 @@ func0000000000000644:
 	.quad	0x7fffffffffffffff
 .LCPI12_1:
 	.quad	0x3d00000000000000
+	.prefalign	4, .Lfunc_end12, nop
 func00000000000000aa:
 	vbroadcastsd	.LCPI12_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -286,6 +299,7 @@ func00000000000000aa:
 	.quad	0x7fffffffffffffff
 .LCPI13_1:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end13, nop
 func00000000000001ba:
 	vbroadcastsd	.LCPI13_0(%rip), %zmm4
 	vandpd	%zmm4, %zmm3, %zmm3
@@ -310,6 +324,7 @@ func00000000000001ba:
 	.quad	9218868437227405312
 .LCPI14_2:
 	.quad	-9007199254740992
+	.prefalign	4, .Lfunc_end14, nop
 func00000000000000f2:
 	vpbroadcastq	.LCPI14_0(%rip), %zmm4
 	vpandq	%zmm4, %zmm2, %zmm2

@@ -10,6 +10,7 @@
 	.short	126
 .LCPI0_1:
 	.short	126
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000002c:
 	vpmovdw	%ymm1, %xmm1
 	vpbroadcastw	.LCPI0_1(%rip), %xmm2
@@ -28,6 +29,7 @@ func000000000000002c:
 	.short	3
 	.short	3
 	.short	3
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpmovdw	%ymm1, %xmm1
 	vpcmpneqw	.LCPI1_0(%rip), %xmm0, %k1

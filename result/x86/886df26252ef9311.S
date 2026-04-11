@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	leaq	-2(%rdi), %rcx
 	cmpq	$4, %rcx
@@ -6,6 +7,7 @@ func0000000000000003:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	leaq	4096(%rdi), %rcx
 	movl	$4294967295, %eax
@@ -13,6 +15,7 @@ func0000000000000002:
 	cmovbq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	leaq	1(%rdi), %rcx
 	cmpq	$1024, %rcx

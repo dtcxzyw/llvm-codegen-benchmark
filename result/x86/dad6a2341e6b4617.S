@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	movslq	%esi, %rax
 	imulq	$274877907, %rax, %rax
@@ -15,6 +16,7 @@ func000000000000000a:
 	addl	%ecx, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movslq	%esi, %rax
 	imulq	$715827883, %rax, %rax

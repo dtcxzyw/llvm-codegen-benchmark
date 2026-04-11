@@ -17,6 +17,7 @@
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003a:
 	vpmovsxbd	.LCPI0_1(%rip), %ymm2
 	vpermi2d	%ymm0, %ymm1, %ymm2
@@ -42,6 +43,7 @@ func000000000000003a:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000030:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$30, %ymm0, %ymm0

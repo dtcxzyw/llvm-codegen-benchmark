@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm0, %k1
@@ -7,6 +8,7 @@ func0000000000000021:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c6:
 	vpmovzxwd	%xmm2, %ymm2
 	vpmaxsd	%ymm1, %ymm0, %ymm0
@@ -15,6 +17,7 @@ func00000000000000c6:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000184:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpltud	%ymm2, %ymm0, %k1
@@ -23,6 +26,7 @@ func0000000000000184:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000167:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpled	%ymm2, %ymm0, %k1
@@ -31,6 +35,7 @@ func0000000000000167:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000315:
 	vpmovzxwd	%xmm2, %ymm2
 	vpcmpleud	%ymm2, %ymm0, %k1
@@ -39,6 +44,7 @@ func0000000000000315:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000294:
 	vpmovzxwd	%xmm2, %ymm2
 	vpmaxud	%ymm1, %ymm0, %ymm0

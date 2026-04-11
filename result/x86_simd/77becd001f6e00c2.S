@@ -36,6 +36,7 @@
 .LCPI0_2:
 	.short	4094
 	.short	4094
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmulhuw	.LCPI0_0(%rip), %ymm0, %ymm0
 	vpsrlw	$4, %ymm0, %ymm0
@@ -97,6 +98,7 @@ func0000000000000003:
 	.byte	255
 	.byte	0
 	.byte	255
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpmulhuw	.LCPI1_0(%rip), %ymm0, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0

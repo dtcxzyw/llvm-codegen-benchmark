@@ -1,10 +1,12 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000038:
 	shlb	$3, %dil
 	movl	$1802332780, %eax
 	shrxl	%edi, %eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003c:
 	shlb	$3, %dil
 	addb	$-48, %dil

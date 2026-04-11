@@ -3,6 +3,7 @@
 	.long	50331647
 .LCPI0_1:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a1:
 	vpcmpleud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -10,6 +11,7 @@ func00000000000000a1:
 
 .LCPI1_0:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a9:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
@@ -22,6 +24,7 @@ func00000000000000a9:
 	.long	8
 .LCPI2_1:
 	.long	7
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a8:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
@@ -35,6 +38,7 @@ func00000000000000a8:
 	.long	317
 .LCPI3_2:
 	.long	148
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001e3:
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -47,6 +51,7 @@ func00000000000001e3:
 	.long	4294966896
 .LCPI4_2:
 	.long	4294967096
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000e1:
 	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -55,6 +60,7 @@ func00000000000000e1:
 
 .LCPI5_0:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -68,6 +74,7 @@ func0000000000000005:
 	.long	4294967292
 .LCPI6_2:
 	.long	4294967294
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
 	vpcmpeqd	.LCPI6_0(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI6_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -80,6 +87,7 @@ func0000000000000004:
 	.long	4
 .LCPI7_2:
 	.long	8
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000187:
 	vpcmpeqd	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI7_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -92,6 +100,7 @@ func0000000000000187:
 	.long	10
 .LCPI8_2:
 	.long	5
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000085:
 	vpcmpeqd	.LCPI8_0(%rip){1to8}, %ymm1, %k1
 	vpaddd	.LCPI8_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -102,6 +111,7 @@ func0000000000000085:
 	.long	4294967292
 .LCPI9_1:
 	.long	3
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000006:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpaddd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0 {%k1}

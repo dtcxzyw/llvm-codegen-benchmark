@@ -5,6 +5,7 @@
 	.long	4261412864
 .LCPI0_2:
 	.long	33554432
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm1
 	vpcmpltud	.LCPI0_1(%rip){1to4}, %xmm1, %k1
@@ -16,6 +17,7 @@ func0000000000000009:
 	.long	15
 .LCPI1_1:
 	.long	16
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm1
@@ -28,6 +30,7 @@ func0000000000000008:
 	.long	15
 .LCPI2_1:
 	.long	16
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000049:
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm1

@@ -3,6 +3,7 @@
 	.long	60
 .LCPI0_1:
 	.long	61
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vpcmpeqq	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1

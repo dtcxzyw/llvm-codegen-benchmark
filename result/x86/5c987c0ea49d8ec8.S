@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vfmadd213sd	%xmm2, %xmm1, %xmm3
@@ -12,6 +13,7 @@ func0000000000000001:
 	.quad	0x408f400000000000
 .LCPI1_1:
 	.quad	0x7fffffffffffffff
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vfmadd132sd	.LCPI1_0(%rip), %xmm2, %xmm1
 	vaddsd	%xmm0, %xmm1, %xmm0

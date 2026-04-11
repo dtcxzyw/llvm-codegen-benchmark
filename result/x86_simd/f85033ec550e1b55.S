@@ -8,6 +8,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000048:
 	vpmovzxwd	%xmm1, %xmm2
 	vpcmpeqd	%xmm3, %xmm3, %xmm3

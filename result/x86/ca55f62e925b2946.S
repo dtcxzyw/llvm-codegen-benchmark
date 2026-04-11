@@ -1,8 +1,10 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000081:
 	xorl	%eax, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	leaq	(%rdi,%rdi,2), %rax
 	leaq	63(,%rax,4), %rax
@@ -10,6 +12,7 @@ func0000000000000001:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000001f4:
 	imulq	$1103515245, %rdi, %rax
 	addq	$12345, %rax
@@ -19,6 +22,7 @@ func00000000000001f4:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func00000000000001e1:
 	imulq	$1103515245, %rdi, %rax
 	addq	$12345, %rax

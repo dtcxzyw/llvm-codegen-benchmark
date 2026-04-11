@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	4294967296
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000889:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -11,6 +12,7 @@ func0000000000000889:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000829:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -23,6 +25,7 @@ func0000000000000829:
 
 .LCPI2_0:
 	.quad	2
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000c8b:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -37,6 +40,7 @@ func0000000000000c8b:
 	.quad	-2
 .LCPI3_1:
 	.quad	2
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000088:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpnleuq	%ymm0, %ymm2, %k0
@@ -50,6 +54,7 @@ func0000000000000088:
 	.quad	14
 .LCPI4_1:
 	.quad	40
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000c88:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpnleuq	%ymm0, %ymm2, %k0
@@ -63,6 +68,7 @@ func0000000000000c88:
 	.quad	1087
 .LCPI5_1:
 	.quad	2046
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000501:
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpcmpeqq	%ymm0, %ymm2, %k0
@@ -74,6 +80,7 @@ func0000000000000501:
 
 .LCPI6_0:
 	.quad	16
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000c99:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -86,6 +93,7 @@ func0000000000000c99:
 
 .LCPI7_0:
 	.quad	1844674407370955161
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000d19:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -98,6 +106,7 @@ func0000000000000d19:
 
 .LCPI8_0:
 	.quad	6
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000c39:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -108,6 +117,7 @@ func0000000000000c39:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000029:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -120,6 +130,7 @@ func0000000000000029:
 
 .LCPI10_0:
 	.quad	160000
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000d0b:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
@@ -130,6 +141,7 @@ func0000000000000d0b:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000021:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2

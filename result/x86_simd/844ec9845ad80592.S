@@ -5,6 +5,7 @@
 	.long	3
 .LCPI0_2:
 	.long	10
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000421:
 	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpcmpeqd	.LCPI0_1(%rip){1to4}, %xmm2, %k1 {%k1}

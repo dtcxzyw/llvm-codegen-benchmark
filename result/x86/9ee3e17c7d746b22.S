@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x3cd203af9ee75616
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -15,6 +16,7 @@ func000000000000001b:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -28,6 +30,7 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3d719799812dea11
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -41,6 +44,7 @@ func000000000000000d:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -49,6 +53,7 @@ func0000000000000018:
 	kmovd	%k0, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000019:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -63,6 +68,7 @@ func0000000000000019:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x400921fb54442d18
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000012:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -72,6 +78,7 @@ func0000000000000012:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000009:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -86,6 +93,7 @@ func0000000000000009:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x4330000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -98,6 +106,7 @@ func0000000000000004:
 	.quad	0x7fffffffffffffff
 .LCPI8_1:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000005:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -107,6 +116,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000006:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -117,6 +127,7 @@ func0000000000000006:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000007:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -128,6 +139,7 @@ func0000000000000007:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000008:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0
@@ -143,6 +155,7 @@ func0000000000000008:
 	.quad	0x7fffffffffffffff
 .LCPI12_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000000b:
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vsubsd	%xmm0, %xmm1, %xmm0

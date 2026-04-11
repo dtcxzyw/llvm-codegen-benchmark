@@ -9,6 +9,7 @@
 	.long	143165576
 .LCPI0_4:
 	.long	71582788
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000008c:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1

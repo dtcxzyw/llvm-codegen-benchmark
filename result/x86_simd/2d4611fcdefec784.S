@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000008a4:
 	vpaddb	%xmm2, %xmm0, %xmm2
 	vpcmpltub	%xmm1, %xmm0, %k1

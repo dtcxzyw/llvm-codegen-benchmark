@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	addl	%edx, %edi
 	leal	(%rsi,%rsi,4), %eax
@@ -6,6 +7,7 @@ func0000000000000000:
 	shrl	$16, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001fe:
 	addl	%edx, %edi
 	imull	$77, %esi, %eax
@@ -13,6 +15,7 @@ func00000000000001fe:
 	shrl	$8, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000180:
 	addl	%edx, %edi
 	imull	$268435123, %esi, %eax
@@ -20,6 +23,7 @@ func0000000000000180:
 	shrl	$12, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000060:
 	addl	%edx, %edi
 	imull	$460324, %esi, %eax
@@ -27,6 +31,7 @@ func0000000000000060:
 	shrl	$20, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000001f4:
 	addl	%edx, %edi
 	imull	$3596, %esi, %eax
@@ -34,6 +39,7 @@ func00000000000001f4:
 	shrl	$14, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000001fc:
 	addl	%edx, %edi
 	imull	$4193722, %esi, %eax
@@ -41,6 +47,7 @@ func00000000000001fc:
 	shrl	$14, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000000ee:
 	addl	%edx, %edi
 	imull	$28800, %esi, %eax
@@ -48,6 +55,7 @@ func00000000000000ee:
 	shrl	$18, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000001aa:
 	addl	%edx, %edi
 	imull	$-4684, %esi, %eax
@@ -55,6 +63,7 @@ func00000000000001aa:
 	shrl	$18, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func00000000000000ba:
 	addl	%edx, %edi
 	imull	$-96464, %esi, %eax

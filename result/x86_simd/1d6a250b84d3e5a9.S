@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000032:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -14,6 +15,7 @@ func0000000000000032:
 	.zero	16,2
 .LCPI1_2:
 	.zero	4,254
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
 	vpsllw	$7, %xmm0, %xmm0
@@ -24,6 +26,7 @@ func0000000000000004:
 
 .LCPI2_0:
 	.zero	16,14
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000060:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -33,6 +36,7 @@ func0000000000000060:
 
 .LCPI3_0:
 	.zero	16,14
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000062:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -42,6 +46,7 @@ func0000000000000062:
 
 .LCPI4_0:
 	.zero	16,1
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
@@ -51,6 +56,7 @@ func0000000000000030:
 
 .LCPI5_0:
 	.zero	16,63
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

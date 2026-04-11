@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x3cb0000000000000
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vmovddup	.LCPI0_0(%rip), %xmm3
 	vandpd	%xmm3, %xmm2, %xmm2
@@ -17,6 +18,7 @@ func0000000000000005:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3cb8000000000004
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000033:
 	vmovddup	.LCPI1_0(%rip), %xmm3
 	vandpd	%xmm3, %xmm2, %xmm2
@@ -31,6 +33,7 @@ func0000000000000033:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3f747ae147ae147b
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vmovddup	.LCPI2_0(%rip), %xmm3
 	vandpd	%xmm3, %xmm2, %xmm2
@@ -45,6 +48,7 @@ func0000000000000003:
 	.quad	0x7fffffffffffffff
 .LCPI3_1:
 	.quad	0x3fb999999999999a
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vmovddup	.LCPI3_0(%rip), %xmm3
 	vandpd	%xmm3, %xmm2, %xmm2

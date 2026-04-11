@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d3:
 	addb	%dil, %dil
 	movzbl	%dil, %eax

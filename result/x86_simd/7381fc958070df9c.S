@@ -5,6 +5,7 @@
 	.long	2290649225
 .LCPI0_2:
 	.long	60
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000065:
 	vpmovq2m	%ymm0, %k1
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0 {%k1}

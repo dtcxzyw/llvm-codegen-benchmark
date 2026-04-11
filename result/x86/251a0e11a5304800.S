@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000142:
 	testq	%rdi, %rdi
 	setns	%cl
@@ -7,6 +8,7 @@ func0000000000000142:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000014e:
 	testq	%rdi, %rdi
 	setns	%cl
@@ -18,6 +20,7 @@ func000000000000014e:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000282:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -29,6 +32,7 @@ func0000000000000282:
 
 .LCPI3_0:
 	.quad	0x3f847ae147ae147b
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	cmpq	$4, %rdi
 	sete	%cl
@@ -38,6 +42,7 @@ func0000000000000024:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000202:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -51,6 +56,7 @@ func0000000000000202:
 
 .LCPI5_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000182:
 	vucomisd	.LCPI5_0(%rip), %xmm0
 	setne	%cl
@@ -61,6 +67,7 @@ func0000000000000182:
 
 .LCPI6_0:
 	.quad	0x7ff0000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000250:
 	vucomisd	.LCPI6_0(%rip), %xmm0
 	sete	%cl
@@ -70,6 +77,7 @@ func0000000000000250:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000002d8:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -81,6 +89,7 @@ func00000000000002d8:
 
 .LCPI8_0:
 	.quad	0x3fe0000000000000
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000148:
 	cmpq	$2, %rdi
 	setge	%cl
@@ -89,6 +98,7 @@ func0000000000000148:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000d6:
 	testq	%rdi, %rdi
 	setle	%cl
@@ -98,6 +108,7 @@ func00000000000000d6:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func000000000000020c:
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
@@ -109,6 +120,7 @@ func000000000000020c:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000030:
 	testq	%rdi, %rdi
 	sete	%cl

@@ -3,6 +3,7 @@
 	.quad	0x7fffffffffffffff
 .LCPI0_1:
 	.quad	0x3e7ad7f29abcaf48
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -16,6 +17,7 @@ func0000000000000015:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3e7ad7f29abcaf48
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000001a:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -29,6 +31,7 @@ func000000000000001a:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x7fefffffffffffff
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -38,6 +41,7 @@ func0000000000000005:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -53,6 +57,7 @@ func0000000000000008:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x3f5ed5d8479950f6
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -65,6 +70,7 @@ func0000000000000014:
 	.quad	0x7fffffffffffffff
 .LCPI5_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000002:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -78,6 +84,7 @@ func0000000000000002:
 	.quad	0x7fffffffffffffff
 .LCPI6_1:
 	.quad	0x3c00000000000000
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000012:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -91,6 +98,7 @@ func0000000000000012:
 	.quad	0x7fffffffffffffff
 .LCPI7_1:
 	.quad	0x3ff0000000000000
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -103,6 +111,7 @@ func0000000000000004:
 	.quad	0x7fffffffffffffff
 .LCPI8_1:
 	.quad	0x3ee4f8b588e368f1
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000000d:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -112,6 +121,7 @@ func000000000000000d:
 	setbe	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000007:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0
@@ -123,6 +133,7 @@ func0000000000000007:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vdivsd	%xmm0, %xmm1, %xmm0

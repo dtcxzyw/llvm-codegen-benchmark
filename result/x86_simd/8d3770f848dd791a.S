@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	32
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestnmd	%xmm0, %xmm0, %k1
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k0 {%k1}
@@ -12,6 +13,7 @@ func0000000000000021:
 	.quad	7
 .LCPI1_1:
 	.long	7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1
@@ -25,6 +27,7 @@ func0000000000000024:
 	.quad	9218868437227405312
 .LCPI2_1:
 	.long	21
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vptestnmq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
 	vpcmpltd	.LCPI2_1(%rip){1to4}, %xmm0, %k1
@@ -37,6 +40,7 @@ func0000000000000026:
 	.long	11
 .LCPI3_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpcmpgtd	.LCPI3_0(%rip){1to4}, %xmm0, %k1
 	vptestmq	.LCPI3_1(%rip){1to4}, %ymm1, %k0 {%k1}
@@ -48,6 +52,7 @@ func000000000000002a:
 	.long	4294967243
 .LCPI4_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000038:
 	vpcmpnleud	.LCPI4_0(%rip){1to4}, %xmm0, %k1
 	vptestmq	.LCPI4_1(%rip){1to4}, %ymm1, %k0 {%k1}
@@ -59,6 +64,7 @@ func0000000000000038:
 	.quad	9218868437227405312
 .LCPI5_1:
 	.long	4294967168
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000034:
 	vptestnmq	.LCPI5_0(%rip){1to4}, %ymm1, %k0
 	vpcmpltud	.LCPI5_1(%rip){1to4}, %xmm0, %k1
@@ -69,6 +75,7 @@ func0000000000000034:
 
 .LCPI6_0:
 	.quad	1073741824
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000002c:
 	vptestnmq	.LCPI6_0(%rip){1to4}, %ymm1, %k0
 	vptestmd	%xmm0, %xmm0, %k1
@@ -81,6 +88,7 @@ func000000000000002c:
 	.quad	4097
 .LCPI7_1:
 	.long	4096
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000304:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
@@ -92,6 +100,7 @@ func0000000000000304:
 
 .LCPI8_0:
 	.quad	4097
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000301:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
@@ -103,6 +112,7 @@ func0000000000000301:
 
 .LCPI9_0:
 	.quad	4097
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000306:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1

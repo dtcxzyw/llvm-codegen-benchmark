@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000073:
 	movzbl	%dl, %eax
 	shll	$8, %eax
@@ -7,6 +8,7 @@ func0000000000000073:
 	shlq	$4, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000003f:
 	movzbl	%dl, %eax
 	shll	$16, %eax
@@ -15,6 +17,7 @@ func000000000000003f:
 	shlq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000003e:
 	movzbl	%dl, %eax
 	shll	$8, %eax
@@ -23,6 +26,7 @@ func000000000000003e:
 	shlq	$32, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003c:
 	movzbl	%dl, %eax
 	shll	$8, %eax
@@ -31,6 +35,7 @@ func000000000000003c:
 	shlq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000038:
 	movzbl	%dl, %eax
 	shlq	$40, %rax
@@ -39,6 +44,7 @@ func0000000000000038:
 	shlq	$8, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000007f:
 	movzbl	%dl, %eax
 	shll	$16, %eax

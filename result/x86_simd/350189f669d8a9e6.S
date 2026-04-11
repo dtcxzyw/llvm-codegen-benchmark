@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000302:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -16,6 +17,7 @@ func0000000000000302:
 	.zero	16,3
 .LCPI1_2:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000318:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -34,6 +36,7 @@ func0000000000000318:
 	.zero	16,30
 .LCPI2_3:
 	.zero	4,254
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -48,6 +51,7 @@ func0000000000000042:
 	.zero	16,95
 .LCPI3_1:
 	.zero	16,6
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000058:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0

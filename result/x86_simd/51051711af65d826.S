@@ -23,6 +23,7 @@
 .LCPI0_3:
 	.short	448
 	.short	448
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovdw	%ymm2, %xmm2
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
@@ -55,6 +56,7 @@ func0000000000000003:
 .LCPI1_3:
 	.short	1023
 	.short	1023
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
 	vpmovdw	%ymm2, %xmm2
 	vpternlogd	$248, .LCPI1_2(%rip){1to4}, %xmm2, %xmm0
@@ -86,6 +88,7 @@ func000000000000000b:
 .LCPI2_3:
 	.short	1022
 	.short	1022
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpmovdw	%ymm2, %xmm2
 	vpternlogd	$248, .LCPI2_2(%rip){1to4}, %xmm2, %xmm0
@@ -117,6 +120,7 @@ func0000000000000001:
 .LCPI3_3:
 	.short	1022
 	.short	1022
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpmovdw	%ymm2, %xmm2
 	vpternlogd	$248, .LCPI3_2(%rip){1to4}, %xmm2, %xmm0
@@ -148,6 +152,7 @@ func000000000000000d:
 .LCPI4_3:
 	.short	32
 	.short	32
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpmovdw	%ymm2, %xmm2
 	vpternlogd	$248, .LCPI4_2(%rip){1to4}, %xmm2, %xmm0

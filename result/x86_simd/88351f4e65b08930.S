@@ -11,6 +11,7 @@
 .LCPI0_1:
 	.short	4
 	.short	4
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpmovdw	%ymm1, %xmm1
 	vpsrlw	$11, %xmm1, %xmm1
@@ -30,6 +31,7 @@ func0000000000000001:
 .LCPI1_1:
 	.short	1
 	.short	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovdw	%ymm1, %xmm1
 	vpsrlw	$3, %xmm1, %xmm1
@@ -49,6 +51,7 @@ func0000000000000000:
 .LCPI2_1:
 	.short	128
 	.short	128
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vpmovdw	%ymm1, %xmm1
 	vpsrlw	$8, %xmm1, %xmm1

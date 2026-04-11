@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	movswq	%dx, %rax
 	cmpq	%rax, %rsi
@@ -6,6 +7,7 @@ func000000000000000a:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movswq	%dx, %rax
 	cmpq	%rax, %rsi
@@ -13,6 +15,7 @@ func0000000000000004:
 	orb	%dil, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	movswq	%dx, %rax
 	cmpq	%rax, %rsi

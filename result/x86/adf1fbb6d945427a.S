@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	imull	$34953, %edi, %eax
 	shrl	$21, %eax
@@ -7,6 +8,7 @@ func000000000000001f:
 	leal	48(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	imull	$52429, %edi, %eax
 	shrl	$18, %eax
@@ -16,6 +18,7 @@ func0000000000000017:
 	leal	48(%rdi), %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	movzwl	%di, %eax
 	imull	$12137, %eax, %eax

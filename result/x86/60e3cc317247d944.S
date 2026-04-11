@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000102:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -8,6 +9,7 @@ func0000000000000102:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000001c2:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -17,6 +19,7 @@ func00000000000001c2:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000610:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -26,6 +29,7 @@ func0000000000000610:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000042:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -35,6 +39,7 @@ func0000000000000042:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000110:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -44,6 +49,7 @@ func0000000000000110:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000842:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -53,6 +59,7 @@ func0000000000000842:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000508:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -62,6 +69,7 @@ func0000000000000508:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000108:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -71,6 +79,7 @@ func0000000000000108:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000542:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -80,6 +89,7 @@ func0000000000000542:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000982:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -89,6 +99,7 @@ func0000000000000982:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000d02:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -98,6 +109,7 @@ func0000000000000d02:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000a82:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -107,6 +119,7 @@ func0000000000000a82:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000202:
 	movzwl	%di, %eax
 	cmpl	%eax, %esi
@@ -116,6 +129,7 @@ func0000000000000202:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000000058:
 	movzwl	%si, %eax
 	cmpl	%eax, %edi
@@ -125,6 +139,7 @@ func0000000000000058:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end14, nop
 func0000000000000048:
 	movzwl	%si, %eax
 	cmpl	%eax, %edi

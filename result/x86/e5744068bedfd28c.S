@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000004a:
 	testb	$1, %dl
 	movl	$1, %eax
@@ -7,6 +8,7 @@ func000000000000004a:
 	setg	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000048:
 	testb	$1, %dl
 	movl	$2, %eax
@@ -15,6 +17,7 @@ func0000000000000048:
 	seta	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	xorl	%eax, %eax
 	testb	$1, %dl

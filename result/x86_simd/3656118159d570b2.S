@@ -50,6 +50,7 @@
 	.short	96
 	.short	96
 	.short	96
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000698:
 	vpaddw	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpcmpltuw	.LCPI0_1(%rip), %ymm1, %k0
@@ -110,6 +111,7 @@ func0000000000000698:
 	.short	27
 	.short	27
 	.short	27
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000498:
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm1
 	vpcmpltuw	.LCPI1_1(%rip), %ymm1, %k0

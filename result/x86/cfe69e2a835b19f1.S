@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
@@ -8,6 +9,7 @@ func0000000000000018:
 	leaq	6(,%rax,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
@@ -17,6 +19,7 @@ func0000000000000014:
 	shll	$3, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
@@ -26,6 +29,7 @@ func0000000000000034:
 	leaq	4(,%rax,4), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi
@@ -35,6 +39,7 @@ func0000000000000004:
 	sbbq	$0, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
 	cmpq	%rsi, %rdi
 	cmovaq	%rdi, %rsi

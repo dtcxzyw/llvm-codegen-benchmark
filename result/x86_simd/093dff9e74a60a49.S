@@ -33,6 +33,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000581:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -62,6 +63,7 @@ func0000000000000581:
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000504:
 	vptestnmb	%xmm2, %xmm2, %k1
 	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm1, %k0 {%k1}
@@ -92,6 +94,7 @@ func0000000000000504:
 	.quad	1970
 .LCPI2_2:
 	.byte	1
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000421:
 	vpbroadcastb	.LCPI2_2(%rip), %xmm3
 	vpcmpeqb	%xmm3, %xmm2, %k1

@@ -11,6 +11,7 @@
 	.zero	4,15
 .LCPI0_5:
 	.zero	4,48
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f4:
 	vpandd	.LCPI0_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpltb	.LCPI0_1(%rip), %xmm0, %k1

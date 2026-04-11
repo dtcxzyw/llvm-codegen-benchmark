@@ -3,6 +3,7 @@
 	.zero	16,63
 .LCPI0_1:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm0, %xmm1, %xmm0
@@ -13,6 +14,7 @@ func0000000000000000:
 	.zero	16,63
 .LCPI1_1:
 	.zero	4,63
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm0, %xmm1, %xmm0
@@ -23,6 +25,7 @@ func0000000000000001:
 	.zero	16,7
 .LCPI2_1:
 	.zero	4,7
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm0, %xmm1, %xmm0

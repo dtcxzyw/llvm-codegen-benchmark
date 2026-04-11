@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000004c9:
 	vpsubd	%ymm2, %ymm1, %ymm2
 	vpminud	%ymm2, %ymm1, %ymm1
@@ -7,6 +8,7 @@ func00000000000004c9:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000526:
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vpsubd	%ymm2, %ymm1, %ymm1 {%k1}
@@ -15,6 +17,7 @@ func0000000000000526:
 	vzeroupper
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000052a:
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vpsubd	%ymm2, %ymm1, %ymm1 {%k1}

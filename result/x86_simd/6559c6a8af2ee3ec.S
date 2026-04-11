@@ -7,6 +7,7 @@
 	.zero	4,32
 .LCPI0_3:
 	.zero	4,96
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm2
 	vpor	%xmm1, %xmm0, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000b18:
 	negl	%edx
 	xorl	%esi, %edx
@@ -6,6 +7,7 @@ func0000000000000b18:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000208:
 	movl	$117, %eax
 	subl	%edx, %eax
@@ -16,6 +18,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000218:
 	negl	%edx
 	cmpl	%edx, %esi

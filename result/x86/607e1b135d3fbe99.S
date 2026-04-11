@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003b:
 	movl	%esi, %eax
 	shll	$16, %edx
@@ -7,6 +8,7 @@ func000000000000003b:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	movl	%esi, %eax
 	shll	$16, %edx
@@ -15,6 +17,7 @@ func0000000000000009:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000002f:
 	movl	%esi, %eax
 	shll	$16, %edx
@@ -23,6 +26,7 @@ func000000000000002f:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000007f:
 	movzwl	%dx, %eax
 	shll	$13, %eax
@@ -31,6 +35,7 @@ func000000000000007f:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000006f:
 	movl	%esi, %eax
 	shll	$24, %edx
@@ -39,6 +44,7 @@ func000000000000006f:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000007b:
 	movl	%esi, %eax
 	shll	$16, %edx
@@ -47,6 +53,7 @@ func000000000000007b:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000007c:
 	movl	%esi, %eax
 	shll	$16, %edx
@@ -55,6 +62,7 @@ func000000000000007c:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000002d:
 	movl	%esi, %eax
 	shll	$16, %edx
@@ -63,6 +71,7 @@ func000000000000002d:
 	orl	%edi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000003c:
 	movzwl	%dx, %eax
 	shll	$4, %eax
@@ -71,6 +80,7 @@ func000000000000003c:
 	orl	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
 	movl	%esi, %eax
 	shll	$16, %edx

@@ -16,6 +16,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003f4:
 	vpminuq	%ymm2, %ymm1, %ymm1
 	vpmovqb	%ymm1, %xmm1

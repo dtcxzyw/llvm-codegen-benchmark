@@ -5,6 +5,7 @@
 	.quad	164703072086692425
 .LCPI0_2:
 	.quad	56
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000003b:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1

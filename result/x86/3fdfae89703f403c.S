@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
@@ -7,6 +8,7 @@ func000000000000000b:
 	leaq	(,%rdx,8), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	subq	%rsi, %rdx
 	sarq	$2, %rdx

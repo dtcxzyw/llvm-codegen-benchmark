@@ -17,6 +17,7 @@
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpsrld	$1, %xmm1, %xmm1
 	vpmovsxbd	.LCPI0_1(%rip), %ymm2
@@ -41,12 +42,14 @@ func000000000000001f:
 	.byte	10
 	.byte	3
 	.byte	11
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000017:
 	vpsrld	$31, %xmm1, %xmm1
 	vpmovsxbd	.LCPI1_1(%rip), %ymm2
 	vpermt2d	%ymm1, %ymm2, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000001d:
 	vpsrld	$4, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1

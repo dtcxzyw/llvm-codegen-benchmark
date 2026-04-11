@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	xorl	%eax, %eax
 	cmpb	%sil, %dil
@@ -6,6 +7,7 @@ func00000000000001e1:
 	leaq	1(%rax,%rdx), %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000141:
 	xorl	%eax, %eax
 	cmpb	%sil, %dil

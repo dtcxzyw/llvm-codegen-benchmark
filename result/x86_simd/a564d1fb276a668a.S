@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	1047552
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -48,6 +49,7 @@ func000000000000001f:
 	.byte	255
 	.byte	0
 	.byte	0
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpternlogd	$248, .LCPI1_2(%rip){1to8}, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -58,6 +60,7 @@ func0000000000000010:
 	.long	3
 .LCPI2_1:
 	.long	400
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -68,6 +71,7 @@ func000000000000000c:
 	.long	1984
 .LCPI3_1:
 	.long	16777216
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpternlogd	$248, .LCPI3_0(%rip){1to8}, %ymm2, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0

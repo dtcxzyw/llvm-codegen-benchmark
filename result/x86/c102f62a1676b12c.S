@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	andb	$1, %sil
 	shrq	$58, %rdx
@@ -12,6 +13,7 @@ func0000000000000010:
 	orq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	testq	%rdx, %rdx
 	cmoveq	%rdx, %rdi
@@ -20,6 +22,7 @@ func0000000000000002:
 	cmoveq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	testq	%rdx, %rdx
 	movl	$34, %eax

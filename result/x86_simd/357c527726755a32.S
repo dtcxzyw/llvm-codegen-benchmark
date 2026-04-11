@@ -8,6 +8,7 @@
 	.short	8192
 	.short	8192
 	.short	8192
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
 	vptestmd	%ymm2, %ymm2, %k1
 	vmovdqu16	.LCPI0_0(%rip), %xmm2 {%k1} {z}

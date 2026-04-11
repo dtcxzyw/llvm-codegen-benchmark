@@ -10,6 +10,7 @@
 	.zero	2
 .LCPI0_1:
 	.long	256
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c8:
 	vpsrld	$7, %xmm0, %xmm2
 	vpcmpnltuw	.LCPI0_0(%rip), %xmm1, %k1

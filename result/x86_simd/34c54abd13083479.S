@@ -5,6 +5,7 @@
 	.quad	0x3eb0c6f7a0000000
 .LCPI0_2:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000002d8:
 	vandpd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpngtpd	.LCPI0_1(%rip){1to8}, %zmm1, %k0
@@ -20,6 +21,7 @@ func00000000000002d8:
 	.quad	0x3cb0000000000000
 .LCPI1_2:
 	.long	1
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000004d6:
 	vandpd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpngtpd	.LCPI1_1(%rip){1to8}, %zmm1, %k0
@@ -35,6 +37,7 @@ func00000000000004d6:
 	.quad	0x3cb0000000000000
 .LCPI2_2:
 	.long	1
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000000d6:
 	vandpd	.LCPI2_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpngtpd	.LCPI2_1(%rip){1to8}, %zmm1, %k0
@@ -48,6 +51,7 @@ func00000000000000d6:
 	.quad	9223372036854775807
 .LCPI3_1:
 	.quad	9218868437227405312
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000190:
 	vpandq	.LCPI3_0(%rip){1to8}, %zmm1, %zmm1
 	vpcmpeqq	.LCPI3_1(%rip){1to8}, %zmm1, %k0
@@ -61,6 +65,7 @@ func0000000000000190:
 	.quad	0x7fffffffffffffff
 .LCPI4_1:
 	.quad	0x3eb0c6f7a0b5ed8d
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000102:
 	vandpd	.LCPI4_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpgtpd	.LCPI4_1(%rip){1to8}, %zmm1, %k0

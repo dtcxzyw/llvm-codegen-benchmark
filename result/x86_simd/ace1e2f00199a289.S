@@ -34,6 +34,7 @@
 	.byte	12
 .LCPI0_1:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm2
 	vpsllw	$7, %xmm1, %xmm1
@@ -79,6 +80,7 @@ func0000000000000041:
 	.byte	12
 .LCPI1_1:
 	.long	8
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm2
 	vpsllw	$7, %xmm1, %xmm1
@@ -122,6 +124,7 @@ func0000000000000044:
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	vpshufb	.LCPI2_0(%rip), %ymm0, %ymm2
 	vpsllw	$7, %xmm1, %xmm1
@@ -165,6 +168,7 @@ func0000000000000001:
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000004c:
 	vpshufb	.LCPI3_0(%rip), %ymm0, %ymm2
 	vpsllw	$7, %xmm1, %xmm1
@@ -208,6 +212,7 @@ func000000000000004c:
 	.byte	14
 	.byte	13
 	.byte	12
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpshufb	.LCPI4_0(%rip), %ymm0, %ymm2
 	vpsllw	$7, %xmm1, %xmm1
@@ -253,6 +258,7 @@ func000000000000000c:
 	.byte	12
 .LCPI5_1:
 	.long	255
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpshufb	.LCPI5_0(%rip), %ymm0, %ymm2
 	vpsllw	$7, %xmm1, %xmm1

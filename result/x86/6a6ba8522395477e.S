@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c6:
 	negq	%rdx
 	xorl	%eax, %eax
@@ -7,6 +8,7 @@ func00000000000000c6:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	negq	%rdx
 	xorl	%eax, %eax
@@ -15,6 +17,7 @@ func0000000000000006:
 	addq	%rdi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000086:
 	negq	%rdx
 	xorl	%eax, %eax

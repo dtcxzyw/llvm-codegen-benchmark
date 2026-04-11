@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	65536
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
@@ -9,6 +10,7 @@ func0000000000000007:
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -17,6 +19,7 @@ func0000000000000005:
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
 	vpmovzxdq	%xmm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0

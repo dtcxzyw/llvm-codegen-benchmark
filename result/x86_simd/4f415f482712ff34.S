@@ -8,6 +8,7 @@
 	.short	217
 	.short	217
 	.short	217
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000301:
 	vptestmw	.LCPI0_0(%rip), %xmm2, %k0
 	vpmovm2d	%k0, %ymm2

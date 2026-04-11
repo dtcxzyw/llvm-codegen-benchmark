@@ -5,6 +5,7 @@
 	.long	65521
 .LCPI0_2:
 	.quad	131041
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000003f8:
 	vpshufd	$245, %xmm2, %xmm3
 	vpbroadcastd	.LCPI0_0(%rip), %xmm4

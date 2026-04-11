@@ -8,6 +8,7 @@
 	.short	5243
 	.short	5243
 	.short	5243
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -26,6 +27,7 @@ func0000000000000008:
 	.short	34953
 	.short	34953
 	.short	34953
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -43,6 +45,7 @@ func0000000000000004:
 	.short	5243
 	.short	5243
 	.short	5243
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -61,6 +64,7 @@ func0000000000000000:
 	.short	33157
 	.short	33157
 	.short	33157
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	andl	$1, %esi
 	testl	$1073741824, %edi
@@ -6,6 +7,7 @@ func0000000000000061:
 	cmovnel	%esi, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000041:
 	andl	$7, %esi
 	andl	$1073741824, %edi

@@ -19,6 +19,7 @@
 	.short	17
 	.short	17
 	.short	17
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000e02:
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqw	.LCPI0_1(%rip), %xmm0, %k0 {%k1}
@@ -48,6 +49,7 @@ func0000000000000e02:
 	.short	17
 	.short	17
 	.short	17
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000a02:
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqw	.LCPI1_1(%rip), %xmm0, %k0 {%k1}
@@ -68,6 +70,7 @@ func0000000000000a02:
 	.short	49152
 .LCPI2_1:
 	.short	49152
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000610c:
 	vpbroadcastw	.LCPI2_1(%rip), %xmm2
 	vpcmpltuw	%xmm2, %xmm0, %k1

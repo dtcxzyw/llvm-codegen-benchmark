@@ -3,6 +3,7 @@
 	.long	0x3f000000
 .LCPI0_1:
 	.long	0x3f2ac083
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000000b:
 	kmovd	%edi, %k1
 	vmovss	.LCPI0_0(%rip), %xmm1
@@ -15,6 +16,7 @@ func000000000000000b:
 	.long	0x3f2ac083
 .LCPI1_1:
 	.long	0x3f000000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	kmovd	%edi, %k1
 	vmovss	.LCPI1_0(%rip), %xmm1
@@ -27,6 +29,7 @@ func0000000000000002:
 	.long	0x43c80000
 .LCPI2_1:
 	.long	0x442f0000
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	kmovd	%edi, %k1
 	vmovss	.LCPI2_0(%rip), %xmm1

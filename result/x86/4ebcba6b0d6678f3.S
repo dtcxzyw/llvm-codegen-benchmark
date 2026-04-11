@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	testb	%dil, %dil
 	sete	%cl
@@ -12,6 +13,7 @@ func0000000000000018:
 
 .LCPI1_0:
 	.long	0x438c0000
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	cmpb	$8, %dil
 	sete	%cl
@@ -20,6 +22,7 @@ func0000000000000014:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
@@ -29,6 +32,7 @@ func0000000000000081:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
 	vucomiss	%xmm0, %xmm0
 	setp	%cl
@@ -39,6 +43,7 @@ func0000000000000024:
 
 .LCPI4_0:
 	.long	0x3f800000
+	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ec:
 	vucomiss	.LCPI4_0(%rip), %xmm0
 	setp	%al
@@ -49,6 +54,7 @@ func00000000000000ec:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000101:
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0

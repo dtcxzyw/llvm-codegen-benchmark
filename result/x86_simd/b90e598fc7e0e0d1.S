@@ -5,6 +5,7 @@
 	.long	100
 .LCPI0_2:
 	.long	10
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000d4:
 	vpsrad	$13, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm2

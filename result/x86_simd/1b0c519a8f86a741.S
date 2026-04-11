@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
@@ -8,6 +9,7 @@ func000000000000018c:
 	vpsllq	$2, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018f:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
@@ -19,6 +21,7 @@ func000000000000018f:
 
 .LCPI2_0:
 	.quad	2147483647
+	.prefalign	4, .Lfunc_end2, nop
 func000000000000018e:
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
@@ -30,6 +33,7 @@ func000000000000018e:
 
 .LCPI3_0:
 	.quad	281474976710655
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000030e:
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -37,6 +41,7 @@ func000000000000030e:
 	vpsllq	$48, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000187:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
@@ -46,6 +51,7 @@ func0000000000000187:
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000180:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
@@ -57,6 +63,7 @@ func0000000000000180:
 
 .LCPI6_0:
 	.quad	18014398509481983
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000030f:
 	vpcmpnleuq	.LCPI6_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -66,6 +73,7 @@ func000000000000030f:
 
 .LCPI7_0:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end7, nop
 func000000000000010f:
 	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -75,6 +83,7 @@ func000000000000010f:
 
 .LCPI8_0:
 	.quad	4294967295
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000100:
 	vpcmpnleuq	.LCPI8_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -84,6 +93,7 @@ func0000000000000100:
 
 .LCPI9_0:
 	.quad	18014398509481983
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000307:
 	vpcmpnleuq	.LCPI9_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
@@ -91,6 +101,7 @@ func0000000000000307:
 	vpsllq	$52, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000183:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
@@ -100,6 +111,7 @@ func0000000000000183:
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000000185:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1

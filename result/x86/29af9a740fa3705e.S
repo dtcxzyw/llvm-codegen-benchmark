@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000808:
 	cmpl	$3, %edx
 	setb	%cl
@@ -9,6 +10,7 @@ func0000000000000808:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000208:
 	cmpl	$1600, %edx
 	sete	%cl
@@ -19,6 +21,7 @@ func0000000000000208:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000888:
 	cmpl	$-3875, %edx
 	setb	%cl
@@ -29,6 +32,7 @@ func0000000000000888:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c08:
 	testl	%edx, %edx
 	setle	%cl
@@ -39,6 +43,7 @@ func0000000000000c08:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000410:
 	addl	$-5, %edx
 	cmpl	$-4, %edx
@@ -49,6 +54,7 @@ func0000000000000410:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000210:
 	addl	$-48, %edx
 	cmpl	$10, %edx
@@ -59,6 +65,7 @@ func0000000000000210:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000288:
 	cmpl	$2, %edx
 	sete	%cl
@@ -69,6 +76,7 @@ func0000000000000288:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000001888:
 	testl	%edx, %edx
 	setne	%cl
@@ -79,6 +87,7 @@ func0000000000001888:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000001090:
 	addl	$-44, %edx
 	cmpl	$-7, %edx
@@ -89,6 +98,7 @@ func0000000000001090:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000001808:
 	cmpl	$8, %edx
 	setne	%cl
@@ -99,6 +109,7 @@ func0000000000001808:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000090:
 	addl	$-11, %edx
 	cmpl	$3, %edx
@@ -109,6 +120,7 @@ func0000000000000090:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func0000000000001008:
 	cmpl	$86400000, %edx
 	setae	%cl
@@ -119,6 +131,7 @@ func0000000000001008:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func0000000000000310:
 	addl	$-7, %edx
 	cmpl	$-8, %edx
@@ -129,6 +142,7 @@ func0000000000000310:
 	orb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end13, nop
 func0000000000001310:
 	addl	$-7, %edx
 	cmpl	$-8, %edx

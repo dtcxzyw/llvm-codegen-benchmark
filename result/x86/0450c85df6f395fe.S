@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func000000000000001a:
 	leal	(%rdx,%rdx), %eax
 	orq	$-4, %rax
@@ -7,6 +8,7 @@ func000000000000001a:
 	subq	%rsi, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000030:
 	leaq	773968(%rdi), %rcx
 	leaq	1547936(%rdi), %rax
@@ -16,6 +18,7 @@ func0000000000000030:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	leaq	-56(%rdi), %rcx
 	testb	$1, %dl
@@ -24,6 +27,7 @@ func0000000000000018:
 	addq	%rcx, %rax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000003c:
 	notb	%dl
 	movzbl	%dl, %eax

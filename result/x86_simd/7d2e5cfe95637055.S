@@ -3,6 +3,7 @@
 	.long	55
 .LCPI0_1:
 	.long	8
+	.prefalign	4, .Lfunc_end0, nop
 func00000000000000f1:
 	vpsrld	$3, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -16,6 +17,7 @@ func00000000000000f1:
 	.long	512
 .LCPI1_1:
 	.long	3
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c3:
 	vpsrld	$3, %xmm1, %xmm1
 	vptestmd	%xmm0, %xmm0, %k1

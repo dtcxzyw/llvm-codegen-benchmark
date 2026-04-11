@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	rorxl	$1, %esi, %eax
 	cmpl	$429496730, %eax

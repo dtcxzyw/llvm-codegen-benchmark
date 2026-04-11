@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000546:
 	leaq	3(%rdi), %rax
 	testq	%rdi, %rdi
@@ -11,6 +12,7 @@ func0000000000000546:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func00000000000004cc:
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi
@@ -23,6 +25,7 @@ func00000000000004cc:
 	andb	%cl, %al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func00000000000004ca:
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi

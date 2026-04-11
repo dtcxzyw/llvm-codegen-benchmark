@@ -17,6 +17,7 @@
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmovsxbd	.LCPI0_1(%rip), %ymm3
@@ -27,6 +28,7 @@ func0000000000000005:
 
 .LCPI1_0:
 	.quad	9223372032559808512
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpmovzxdq	%xmm1, %ymm1
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -36,6 +38,7 @@ func0000000000000014:
 
 .LCPI2_0:
 	.quad	205
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$48, %ymm0, %ymm0
@@ -45,6 +48,7 @@ func0000000000000004:
 
 .LCPI3_0:
 	.quad	205
+	.prefalign	4, .Lfunc_end3, nop
 func000000000000001f:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$48, %ymm0, %ymm0
@@ -72,6 +76,7 @@ func000000000000001f:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000003c:
 	vpmovsxbd	.LCPI4_2(%rip), %ymm2
 	vpermi2d	%ymm0, %ymm1, %ymm2
@@ -98,6 +103,7 @@ func000000000000003c:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end5, nop
 func000000000000001c:
 	vpmovsxbd	.LCPI5_2(%rip), %ymm2
 	vpermi2d	%ymm0, %ymm1, %ymm2
@@ -124,6 +130,7 @@ func000000000000001c:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end6, nop
 func0000000000000034:
 	vpmovsxbd	.LCPI6_2(%rip), %ymm2
 	vpermi2d	%ymm0, %ymm1, %ymm2
@@ -150,6 +157,7 @@ func0000000000000034:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000024:
 	vpmovsxbd	.LCPI7_2(%rip), %ymm2
 	vpermi2d	%ymm0, %ymm1, %ymm2
@@ -176,6 +184,7 @@ func0000000000000024:
 	.byte	12
 	.byte	3
 	.byte	14
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000003f:
 	vpmovsxbd	.LCPI8_2(%rip), %ymm2
 	vpermi2d	%ymm0, %ymm1, %ymm2
@@ -184,6 +193,7 @@ func000000000000003f:
 
 .LCPI9_0:
 	.quad	281479271743489
+	.prefalign	4, .Lfunc_end9, nop
 func000000000000003e:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$8, %ymm0, %ymm0

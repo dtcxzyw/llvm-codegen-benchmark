@@ -8,6 +8,7 @@
 	.short	32897
 	.short	32897
 	.short	32897
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000027:
 	vpmovdw	%ymm1, %xmm1
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm1
@@ -25,6 +26,7 @@ func0000000000000027:
 	.short	2622
 	.short	2622
 	.short	2622
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpmovdw	%ymm1, %xmm1
 	vpsrlw	$4, %xmm1, %xmm1
@@ -42,6 +44,7 @@ func0000000000000005:
 	.short	2622
 	.short	2622
 	.short	2622
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000025:
 	vpmovdw	%ymm1, %xmm1
 	vpsrlw	$4, %xmm1, %xmm1
@@ -59,6 +62,7 @@ func0000000000000025:
 	.short	2622
 	.short	2622
 	.short	2622
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	vpmovdw	%ymm1, %xmm1
 	vpsrlw	$4, %xmm1, %xmm1

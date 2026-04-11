@@ -20,6 +20,7 @@
 	.long	4294966758
 .LCPI0_2:
 	.long	512
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k1
 	vandps	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1

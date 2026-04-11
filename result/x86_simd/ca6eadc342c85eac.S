@@ -3,6 +3,7 @@
 	.zero	16,8
 .LCPI0_1:
 	.zero	16,3
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1
@@ -14,6 +15,7 @@ func0000000000000181:
 	.zero	16,22
 .LCPI1_1:
 	.byte	22
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	vpbroadcastb	.LCPI1_1(%rip), %xmm2
 	vpcmpneqb	%xmm2, %xmm1, %k0
@@ -26,6 +28,7 @@ func000000000000018c:
 	.zero	16,3
 .LCPI2_1:
 	.byte	3
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000294:
 	vpbroadcastb	.LCPI2_1(%rip), %xmm2
 	vpcmpltub	%xmm2, %xmm1, %k0
@@ -38,6 +41,7 @@ func0000000000000294:
 	.zero	16,47
 .LCPI3_1:
 	.byte	47
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	vpbroadcastb	.LCPI3_1(%rip), %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %k0
@@ -50,6 +54,7 @@ func0000000000000021:
 	.zero	16,1
 .LCPI4_1:
 	.byte	1
+	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
 	vpbroadcastb	.LCPI4_1(%rip), %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %k0
@@ -58,6 +63,7 @@ func000000000000002c:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func00000000000000cc:
 	vpmovb2m	%xmm1, %k0
 	vptestmb	%xmm0, %xmm0, %k1
@@ -65,6 +71,7 @@ func00000000000000cc:
 	vpmovm2b	%k0, %xmm0
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func000000000000018a:
 	vptestmb	%xmm1, %xmm1, %k0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
@@ -77,6 +84,7 @@ func000000000000018a:
 	.zero	16,3
 .LCPI7_1:
 	.byte	3
+	.prefalign	4, .Lfunc_end7, nop
 func0000000000000084:
 	vpbroadcastb	.LCPI7_1(%rip), %xmm2
 	vpcmpltub	%xmm2, %xmm1, %k0
@@ -89,6 +97,7 @@ func0000000000000084:
 	.zero	16,4
 .LCPI8_1:
 	.zero	16,5
+	.prefalign	4, .Lfunc_end8, nop
 func0000000000000154:
 	vpcmpgtb	.LCPI8_0(%rip), %xmm1, %k0
 	vpcmpltub	.LCPI8_1(%rip), %xmm0, %k1
@@ -100,6 +109,7 @@ func0000000000000154:
 	.zero	16,53
 .LCPI9_1:
 	.byte	53
+	.prefalign	4, .Lfunc_end9, nop
 func00000000000000c6:
 	vpbroadcastb	.LCPI9_1(%rip), %xmm2
 	vpcmpgtb	%xmm1, %xmm2, %k0
@@ -110,6 +120,7 @@ func00000000000000c6:
 
 .LCPI10_0:
 	.zero	16,127
+	.prefalign	4, .Lfunc_end10, nop
 func0000000000000024:
 	vptestnmb	%xmm1, %xmm1, %k0
 	vpcmpltub	.LCPI10_0(%rip), %xmm0, %k1

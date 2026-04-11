@@ -5,6 +5,7 @@
 	.long	1
 .LCPI0_2:
 	.long	2
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vandps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
@@ -60,6 +61,7 @@ func0000000000000041:
 	.long	1
 .LCPI1_3:
 	.long	4
+	.prefalign	4, .Lfunc_end1, nop
 func000000000000004c:
 	vpandq	.LCPI1_4(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	.LCPI1_1(%rip){1to4}, %ymm1, %k1

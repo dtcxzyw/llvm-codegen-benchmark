@@ -1,4 +1,5 @@
 	.att_syntax
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a84:
 	cmpq	$65536, %rsi
 	cmovael	%esi, %edi
@@ -6,6 +7,7 @@ func0000000000000a84:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000141:
 	testq	%rsi, %rsi
 	cmovlel	%esi, %edi
@@ -13,6 +15,7 @@ func0000000000000141:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000146:
 	movl	%edi, %eax
 	testq	%rsi, %rsi
@@ -20,6 +23,7 @@ func0000000000000146:
 	shrl	$31, %eax
 	retq
 
+	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
 	cmpq	$-1, %rsi
 	cmovnel	%esi, %edi
@@ -27,6 +31,7 @@ func0000000000000021:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end4, nop
 func0000000000000884:
 	cmpq	$65536, %rsi
 	cmovael	%esi, %edi
@@ -34,6 +39,7 @@ func0000000000000884:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end5, nop
 func0000000000000e84:
 	cmpq	$65536, %rsi
 	cmovael	%esi, %edi
@@ -41,6 +47,7 @@ func0000000000000e84:
 	setb	%al
 	retq
 
+	.prefalign	4, .Lfunc_end6, nop
 func00000000000004c8:
 	testq	%rsi, %rsi
 	cmovnsl	%esi, %edi
@@ -48,6 +55,7 @@ func00000000000004c8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end7, nop
 func00000000000004d8:
 	testq	%rsi, %rsi
 	cmovnsl	%esi, %edi
@@ -55,6 +63,7 @@ func00000000000004d8:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end8, nop
 func000000000000002c:
 	testq	%rsi, %rsi
 	cmovnel	%esi, %edi
@@ -62,6 +71,7 @@ func000000000000002c:
 	setne	%al
 	retq
 
+	.prefalign	4, .Lfunc_end9, nop
 func0000000000000b08:
 	cmpq	$65536, %rsi
 	cmovbl	%esi, %edi
@@ -69,6 +79,7 @@ func0000000000000b08:
 	setae	%al
 	retq
 
+	.prefalign	4, .Lfunc_end10, nop
 func00000000000004c1:
 	testq	%rsi, %rsi
 	cmovnsl	%esi, %edi
@@ -76,6 +87,7 @@ func00000000000004c1:
 	sete	%al
 	retq
 
+	.prefalign	4, .Lfunc_end11, nop
 func00000000000004ca:
 	testq	%rsi, %rsi
 	cmovnsl	%esi, %edi
@@ -83,6 +95,7 @@ func00000000000004ca:
 	setge	%al
 	retq
 
+	.prefalign	4, .Lfunc_end12, nop
 func000000000000082a:
 	movl	$4294967295, %eax
 	cmpq	%rax, %rsi

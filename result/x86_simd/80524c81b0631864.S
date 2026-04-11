@@ -1,6 +1,7 @@
 	.att_syntax
 .LCPI0_0:
 	.long	2636928640
+	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpslld	$7, %ymm0, %ymm0
@@ -40,6 +41,7 @@ func0000000000000000:
 	.byte	128
 	.byte	28
 	.byte	128
+	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
@@ -47,6 +49,7 @@ func0000000000000003:
 
 .LCPI2_0:
 	.long	268435440
+	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpslld	$4, %ymm0, %ymm0
