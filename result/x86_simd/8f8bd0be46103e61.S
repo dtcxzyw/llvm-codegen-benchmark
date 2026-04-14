@@ -17,8 +17,6 @@
 	.byte	0
 	.byte	0
 .LCPI0_1:
-	.zero	16,192
-.LCPI0_2:
 	.byte	16
 	.byte	8
 	.byte	4
@@ -27,12 +25,9 @@
 	.byte	0
 	.byte	0
 	.byte	0
-.LCPI0_3:
-	.zero	4,192
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
+	vgf2p8affineqb	$192, .LCPI0_1(%rip){1to2}, %xmm0, %xmm0
 	retq
 
 .LCPI1_0:
@@ -100,8 +95,6 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 .LCPI3_1:
-	.zero	16,1
-.LCPI3_2:
 	.byte	8
 	.byte	4
 	.byte	2
@@ -110,12 +103,9 @@ func0000000000000000:
 	.byte	0
 	.byte	0
 	.byte	0
-.LCPI3_3:
-	.zero	4,1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
-	vgf2p8affineqb	$0, .LCPI3_2(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI3_3(%rip){1to4}, %xmm0, %xmm0
+	vgf2p8affineqb	$1, .LCPI3_1(%rip){1to2}, %xmm0, %xmm0
 	retq
 
 .LCPI4_0:

@@ -17,8 +17,6 @@
 	.byte	32
 	.byte	16
 .LCPI0_1:
-	.zero	16,224
-.LCPI0_2:
 	.byte	0
 	.byte	0
 	.byte	0
@@ -27,13 +25,10 @@
 	.byte	64
 	.byte	32
 	.byte	16
-.LCPI0_3:
-	.zero	4,224
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000017:
 	vpmovwb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
+	vgf2p8affineqb	$224, .LCPI0_1(%rip){1to2}, %xmm0, %xmm0
 	vzeroupper
 	retq
 

@@ -1,8 +1,6 @@
 	.att_syntax
 .LCPI0_0:
 	.long	281475
-.LCPI0_5:
-	.zero	4,48
 .LCPI0_1:
 	.short	205
 	.short	205
@@ -38,23 +36,6 @@
 	.byte	16
 	.byte	8
 .LCPI0_3:
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI0_4:
 	.byte	0
 	.byte	0
 	.byte	0
@@ -79,15 +60,12 @@ func000000000000003d:
 	vpmullw	.LCPI0_1(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI0_4(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI0_5(%rip){1to4}, %xmm0, %xmm0
+	vgf2p8affineqb	$48, .LCPI0_3(%rip){1to2}, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI1_0:
 	.long	281475
-.LCPI1_5:
-	.zero	4,48
 .LCPI1_1:
 	.short	205
 	.short	205
@@ -123,23 +101,6 @@ func000000000000003d:
 	.byte	16
 	.byte	8
 .LCPI1_3:
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.byte	48
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI1_4:
 	.byte	0
 	.byte	0
 	.byte	0
@@ -164,8 +125,7 @@ func0000000000000001:
 	vpmullw	.LCPI1_1(%rip), %ymm0, %ymm0
 	vpsrlw	$8, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI1_4(%rip){1to2}, %xmm0, %xmm0
-	vpord	.LCPI1_5(%rip){1to4}, %xmm0, %xmm0
+	vgf2p8affineqb	$48, .LCPI1_3(%rip){1to2}, %xmm0, %xmm0
 	vzeroupper
 	retq
 
