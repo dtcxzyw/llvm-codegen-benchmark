@@ -22,7 +22,7 @@ func0000000000000002:
 
 func0000000000000032:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vi	v10, v10, 3
+	vxor.vi	v10, v10, 3
 	vzext.vf4	v12, v8
 	vsrl.vv	v8, v12, v10
 	vsetvli	zero, zero, e16, m1, ta, ma

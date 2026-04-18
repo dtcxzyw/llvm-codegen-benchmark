@@ -7,8 +7,7 @@ func0000000000000080:
 	ret
 
 func00000000000001fe:
-	mov	w8, #255
-	sub	w8, w8, w0
+	eor	w8, w0, #0xff
 	mul	w8, w8, w2
 	madd	w8, w0, w1, w8
 	lsr	w0, w8, #15

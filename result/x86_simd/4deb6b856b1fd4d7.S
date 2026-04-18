@@ -80,8 +80,7 @@ func000000000000000b:
 	.long	3
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000001a:
-	vpbroadcastd	.LCPI7_0(%rip), %ymm2
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpxord	.LCPI7_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper

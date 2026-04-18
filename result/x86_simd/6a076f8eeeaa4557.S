@@ -59,8 +59,7 @@ func0000000000000005:
 	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
-	vpbroadcastd	.LCPI5_0(%rip), %ymm1
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpxord	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vpbroadcastd	.LCPI5_1(%rip), %ymm1
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	retq

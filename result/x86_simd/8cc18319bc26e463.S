@@ -46,8 +46,7 @@ func0000000000000068:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000164:
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
-	vpbroadcastq	.LCPI3_1(%rip), %ymm2
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpxorq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

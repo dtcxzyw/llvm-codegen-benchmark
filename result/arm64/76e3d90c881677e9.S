@@ -116,8 +116,7 @@ func0000000000000089:
 	ret
 
 func00000000000001e1:
-	mov	w8, #1023
-	sub	x8, x8, x2
+	eor	x8, x2, #0x3ff
 	add	x8, x1, x8, lsl #2
 	cmp	x8, x0
 	cset	w0, eq

@@ -13,15 +13,13 @@ func0000000000000000:
 	ret
 
 func00000000000000e8:
-	mov	w8, #65535
+	eor	w8, w2, #0xffff
 	mul	w9, w1, w2
-	sub	w8, w8, w2
 	madd	w0, w8, w0, w9
 	ret
 
 func00000000000000ff:
-	mov	w8, #255
-	sub	w8, w8, w0
+	eor	w8, w0, #0xff
 	mul	w8, w8, w2
 	madd	w0, w0, w1, w8
 	ret

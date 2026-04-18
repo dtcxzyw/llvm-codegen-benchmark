@@ -38,11 +38,10 @@ func0000000000000024:
 .LCPI3_0:
 	.zero	16,63
 .LCPI3_1:
-	.byte	63
+	.zero	4,63
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000068:
-	vpbroadcastb	.LCPI3_1(%rip), %xmm2
-	vpsubb	%xmm1, %xmm2, %xmm1
+	vpxord	.LCPI3_1(%rip){1to4}, %xmm1, %xmm1
 	vpcmpnleub	%xmm0, %xmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

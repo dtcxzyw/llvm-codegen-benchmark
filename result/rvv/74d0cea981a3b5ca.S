@@ -10,7 +10,7 @@ func0000000000000080:
 func00000000000001fe:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vx	v14, v8, a0
+	vxor.vx	v14, v8, a0
 	vmul.vv	v8, v8, v10
 	vmacc.vv	v8, v12, v14
 	vsrl.vi	v8, v8, 15

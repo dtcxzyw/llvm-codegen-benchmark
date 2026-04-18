@@ -43,7 +43,7 @@ func0000000000000057:
 	vnsrl.wi	v10, v8, 0
 	vclz.v	v8, v10
 	li	a0, 31
-	vrsub.vx	v10, v8, a0
+	vxor.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret

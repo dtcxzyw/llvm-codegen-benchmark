@@ -14,9 +14,8 @@ func000000000000002a:
 	ret
 
 func0000000000000061:
-	mov	w8, #1
+	eor	w8, w0, #0x1
 	cmp	w1, #2
-	sub	w8, w8, w0
 	csel	w0, w8, w0, eq
 	ret
 
@@ -41,9 +40,8 @@ func000000000000000a:
 	ret
 
 func0000000000000064:
-	mov	w8, #3
+	eor	w8, w0, #0x3
 	cmp	w1, #2
-	sub	w8, w8, w0
 	csel	w0, w8, w0, lo
 	ret
 

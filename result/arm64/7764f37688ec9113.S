@@ -23,9 +23,8 @@ func0000000000000002:
 	ret
 
 func000000000000000f:
-	mov	w8, #3
+	eor	w8, w2, #0x3
 	tst	w1, #0x1
-	sub	w8, w8, w2
 	csinc	w8, w8, wzr, eq
 	add	w0, w8, w0
 	ret

@@ -19,8 +19,7 @@ func00000000000001a4:
 func00000000000001e4:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
-	vpbroadcastq	.LCPI1_0(%rip), %ymm2
-	vpsubq	%ymm1, %ymm2, %ymm1
+	vpxorq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsraq	$3, %ymm0, %ymm0
 	vpcmpltuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0

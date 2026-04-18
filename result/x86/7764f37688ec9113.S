@@ -30,11 +30,10 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
-	movl	$3, %ecx
-	subl	%edx, %ecx
+	xorl	$3, %edx
 	testb	$1, %sil
 	movl	$1, %eax
-	cmovel	%ecx, %eax
+	cmovel	%edx, %eax
 	addl	%edi, %eax
 	retq
 

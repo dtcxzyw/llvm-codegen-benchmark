@@ -126,9 +126,8 @@ func000000000000008a:
 	ret
 
 func00000000000001a1:
-	mov	w8, #7
+	eor	w8, w1, #0x7
 	sub	w9, w0, #8
-	sub	w8, w8, w1
 	cmp	w9, w8
 	cset	w0, eq
 	ret

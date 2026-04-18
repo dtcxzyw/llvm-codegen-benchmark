@@ -5,10 +5,9 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	mov	w8, #31
-	mov	w9, #1
-	sub	x8, x8, x1
-	lsl	x8, x9, x8
+	mov	w8, #1
+	eor	x9, x1, #0x1f
+	lsl	x8, x8, x9
 	and	x0, x0, x8
 	ret
 

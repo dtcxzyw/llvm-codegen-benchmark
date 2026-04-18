@@ -3,8 +3,7 @@ func000000000000001b:
 	addi	a1, a1, 1451
 	mul	a0, a0, a1
 	srliw	a0, a0, 16
-	li	a1, 255
-	sub	a0, a1, a0
+	xori	a0, a0, 255
 	ret
 
 func0000000000000001:

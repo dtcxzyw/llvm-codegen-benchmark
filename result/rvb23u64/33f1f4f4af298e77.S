@@ -20,8 +20,7 @@ func000000000000000d:
 
 func0000000000000007:
 	add.uw	a0, a1, a0
-	li	a1, 3
-	sub	a0, a1, a0
+	xori	a0, a0, 3
 	ret
 
 func0000000000000000:

@@ -33,9 +33,8 @@ func0000000000000005:
 
 func0000000000000053:
 	cmp	w2, #128
-	mov	w9, #255
 	csel	w8, w0, w1, lo
-	sub	w0, w9, w8
+	eor	w0, w8, #0xff
 	ret
 
 func0000000000000019:

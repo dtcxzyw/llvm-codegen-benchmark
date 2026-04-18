@@ -13,8 +13,7 @@ func000000000000002a:
 	ret
 
 func000000000000007e:
-	mov	w8, #255
-	sub	w8, w8, w2
+	eor	w8, w2, #0xff
 	madd	w8, w8, w1, w0
 	lsr	w0, w8, #15
 	ret

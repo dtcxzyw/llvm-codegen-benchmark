@@ -8,9 +8,9 @@ func0000000000000001:
 
 func0000000000000003:
 	mov	w8, #32769
-	mov	w9, #65535
 	movk	w8, #32768, lsl #16
 	umull	x8, w0, w8
-	sub	x0, x9, x8, lsr #47
+	lsr	x8, x8, #47
+	eor	w0, w8, #0xffff
 	ret
 

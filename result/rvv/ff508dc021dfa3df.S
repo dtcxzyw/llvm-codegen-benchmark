@@ -20,7 +20,7 @@ func0000000000000074:
 	li	a0, 127
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vx	v0, v10, a0
-	vrsub.vx	v8, v10, a0, v0.t
+	vxor.vx	v8, v10, a0, v0.t
 	ret
 
 func000000000000004a:

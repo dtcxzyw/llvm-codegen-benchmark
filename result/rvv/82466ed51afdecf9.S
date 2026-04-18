@@ -3,7 +3,7 @@ func000000000000001f:
 	vmv.v.i	v10, -2
 	vsll.vv	v10, v10, v8
 	vnot.v	v10, v10
-	vrsub.vi	v8, v8, 7
+	vxor.vi	v8, v8, 7
 	vsll.vv	v8, v10, v8
 	ret
 

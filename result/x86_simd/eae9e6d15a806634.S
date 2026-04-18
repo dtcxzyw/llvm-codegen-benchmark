@@ -138,8 +138,7 @@ func0000000000000184:
 	.long	63
 	.prefalign	4, .Lfunc_end12, nop
 func00000000000001a1:
-	vpbroadcastd	.LCPI12_0(%rip), %ymm3
-	vpsubd	%ymm2, %ymm3, %ymm2
+	vpxord	.LCPI12_0(%rip){1to8}, %ymm2, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

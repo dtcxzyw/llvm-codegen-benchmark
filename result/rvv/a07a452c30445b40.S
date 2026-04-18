@@ -21,7 +21,7 @@ func000000000000002a:
 
 func0000000000000078:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vi	v10, v10, 3
+	vxor.vi	v10, v10, 3
 	vmsltu.vv	v0, v8, v10
 	ret
 

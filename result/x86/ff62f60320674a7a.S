@@ -29,9 +29,8 @@ func0000000000000012:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000057:
-	lzcntl	%edi, %ecx
-	movl	$31, %eax
-	subl	%ecx, %eax
+	lzcntl	%edi, %eax
+	xorl	$31, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

@@ -97,8 +97,7 @@ func000000000000002a:
 	.quad	3
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000079:
-	vpbroadcastq	.LCPI10_0(%rip), %ymm2
-	vpsubq	%ymm1, %ymm2, %ymm1
+	vpxorq	.LCPI10_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpnltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

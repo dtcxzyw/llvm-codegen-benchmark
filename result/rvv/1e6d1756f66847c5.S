@@ -21,7 +21,7 @@ func0000000000000024:
 func0000000000000068:
 	li	a0, 63
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vrsub.vx	v9, v9, a0
+	vxor.vx	v9, v9, a0
 	vmsltu.vv	v0, v8, v9
 	ret
 

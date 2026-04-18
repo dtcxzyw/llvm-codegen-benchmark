@@ -75,8 +75,7 @@ func0000000000000021:
 	.quad	3
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
-	vpbroadcastq	.LCPI3_0(%rip), %ymm2
 	vptestmb	%xmm1, %xmm1, %k1
-	vpsubq	%ymm0, %ymm2, %ymm0 {%k1}
+	vxorpd	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 

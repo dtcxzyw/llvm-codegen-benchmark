@@ -51,7 +51,7 @@ func0000000000000078:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	li	a0, 1023
-	vrsub.vx	v10, v10, a0
+	vxor.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

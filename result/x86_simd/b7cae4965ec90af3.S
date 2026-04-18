@@ -13,8 +13,7 @@ func0000000000000006:
 	.long	63
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
-	vpbroadcastd	.LCPI1_0(%rip), %xmm2
-	vpsubd	%xmm1, %xmm2, %xmm1
+	vpxord	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0
 	retq

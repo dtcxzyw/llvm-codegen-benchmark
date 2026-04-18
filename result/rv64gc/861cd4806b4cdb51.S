@@ -1,11 +1,8 @@
 func0000000000000061:
 	andi	a0, a0, 1
-	beqz	a0, .LBB0_2
-	li	a0, 1
-	sub	a1, a0, a1
-.LBB0_2:
-	sext.w	a1, a1
-	seqz	a0, a1
+	xor	a0, a0, a1
+	sext.w	a0, a0
+	seqz	a0, a0
 	ret
 
 func0000000000000026:

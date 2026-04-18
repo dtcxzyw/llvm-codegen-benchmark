@@ -11,7 +11,6 @@ func0000000000000017:
 	sub	a1, a1, a2
 	zext.w	a0, a0
 	sh3add	a0, a1, a0
-	li	a1, 3
-	sub	a0, a1, a0
+	xori	a0, a0, 3
 	ret
 

@@ -33,8 +33,8 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000061:
-	movl	$7, %eax
-	subq	%rdi, %rax
+	movq	%rdi, %rax
+	xorq	$7, %rax
 	testb	%sil, %sil
 	cmovneq	%rdi, %rax
 	retq

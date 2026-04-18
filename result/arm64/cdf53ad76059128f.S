@@ -1,7 +1,6 @@
 func00000000000001bf:
-	mov	w8, #255
+	eor	w8, w0, #0xff
 	and	w9, w2, #0xffff
-	sub	w8, w8, w0
 	mul	w8, w8, w1
 	madd	w0, w0, w9, w8
 	ret

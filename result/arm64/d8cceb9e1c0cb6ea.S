@@ -7,9 +7,8 @@ func0000000000000014:
 
 func0000000000000017:
 	sub	x8, x1, x2
-	mov	w9, #3
 	add	x8, x0, x8, lsl #3
-	sub	x0, x9, x8
+	eor	x0, x8, #0x3
 	ret
 
 func0000000000000000:

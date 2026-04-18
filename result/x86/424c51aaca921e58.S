@@ -25,8 +25,8 @@ func000000000000002a:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
-	movl	$1, %eax
-	subl	%edi, %eax
+	movl	%edi, %eax
+	xorl	$1, %eax
 	cmpl	$2, %esi
 	cmovnel	%edi, %eax
 	retq
@@ -65,8 +65,8 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000064:
-	movl	$3, %eax
-	subl	%edi, %eax
+	movl	%edi, %eax
+	xorl	$3, %eax
 	cmpl	$2, %esi
 	cmovael	%edi, %eax
 	retq

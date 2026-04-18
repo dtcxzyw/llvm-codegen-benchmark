@@ -17,8 +17,7 @@ func0000000000000007:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovzxdq	%xmm1, %ymm0
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1
 	knotw	%k0, %k1
-	vpsubq	%ymm0, %ymm1, %ymm0 {%k1} {z}
+	vpxorq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}
 	retq
 

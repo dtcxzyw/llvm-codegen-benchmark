@@ -41,7 +41,7 @@ func0000000000000053:
 	vmsltu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 255
-	vrsub.vx	v8, v8, a0
+	vxor.vx	v8, v8, a0
 	ret
 
 func0000000000000019:

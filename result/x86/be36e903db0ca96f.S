@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
-	imull	$21931, %edi, %ecx
-	shrl	$16, %ecx
-	movl	$255, %eax
-	subl	%ecx, %eax
+	imull	$21931, %edi, %eax
+	shrl	$16, %eax
+	xorl	$255, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

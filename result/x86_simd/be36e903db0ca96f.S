@@ -7,8 +7,7 @@
 func000000000000001b:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpxord	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

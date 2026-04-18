@@ -30,7 +30,7 @@ func00000000000000e4:
 	li	a1, -1
 	srai	a2, a2, 3
 	srli	a1, a1, 4
-	sub	a1, a1, a2
+	xor	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

@@ -19,9 +19,9 @@ func0000000000000006:
 	ret
 
 func0000000000000074:
-	mov	w8, #127
-	subs	w8, w8, w1
-	csel	w0, w8, w0, hi
+	eor	w8, w1, #0x7f
+	cmp	w1, #127
+	csel	w0, w8, w0, lo
 	ret
 
 func000000000000004a:

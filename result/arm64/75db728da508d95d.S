@@ -14,9 +14,8 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	mov	w8, #3
+	eor	x8, x0, #0x3
 	tst	w1, #0x1
-	sub	x8, x8, x0
 	csel	x0, x8, x0, ne
 	ret
 

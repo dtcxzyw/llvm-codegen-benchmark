@@ -5,11 +5,10 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	lsr	w9, w1, #1
-	mov	w8, #7
+	lsr	w8, w1, #1
 	tst	w0, #0x1
-	sub	w8, w8, w9
-	csel	w0, w9, w8, ne
+	eor	w9, w8, #0x7
+	csel	w0, w8, w9, ne
 	ret
 
 func0000000000000003:

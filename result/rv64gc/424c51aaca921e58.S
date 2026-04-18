@@ -21,12 +21,9 @@ func000000000000002a:
 	ret
 
 func0000000000000061:
-	sext.w	a1, a1
-	li	a2, 2
-	bne	a1, a2, .LBB3_2
-	li	a1, 1
-	subw	a0, a1, a0
-.LBB3_2:
+	addiw	a1, a1, -2
+	seqz	a1, a1
+	xor	a0, a0, a1
 	ret
 
 func0000000000000006:
@@ -59,11 +56,10 @@ func000000000000000a:
 
 func0000000000000064:
 	sext.w	a1, a1
-	li	a2, 2
-	bgeu	a1, a2, .LBB8_2
-	li	a1, 3
-	subw	a0, a1, a0
-.LBB8_2:
+	sltiu	a1, a1, 2
+	neg	a1, a1
+	andi	a1, a1, 3
+	xor	a0, a0, a1
 	ret
 
 func000000000000002c:

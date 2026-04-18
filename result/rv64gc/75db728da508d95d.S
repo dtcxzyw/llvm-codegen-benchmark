@@ -20,11 +20,10 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 1
-	beqz	a1, .LBB3_2
-	li	a1, 3
-	sub	a0, a1, a0
-.LBB3_2:
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	andi	a1, a1, 3
+	xor	a0, a0, a1
 	ret
 
 func0000000000000006:

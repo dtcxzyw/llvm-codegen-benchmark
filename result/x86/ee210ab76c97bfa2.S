@@ -19,19 +19,18 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e8:
-	movl	$65535, %eax
-	subl	%edx, %eax
-	imull	%edi, %eax
 	imull	%edx, %esi
-	addl	%esi, %eax
+	xorl	$65535, %edx
+	imull	%edi, %edx
+	leal	(%rdx,%rsi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ff:
-	movl	$255, %eax
-	subl	%edi, %eax
-	imull	%edx, %eax
 	imull	%edi, %esi
+	movl	%edi, %eax
+	xorl	$255, %eax
+	imull	%edx, %eax
 	addl	%esi, %eax
 	retq
 

@@ -1,11 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	movl	$3, %ecx
-	subl	%esi, %ecx
+	xorl	$3, %esi
 	testb	$1, %dil
 	movl	$1, %eax
-	cmoveq	%rcx, %rax
+	cmoveq	%rsi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

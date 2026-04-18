@@ -17,14 +17,13 @@ func0000000000000021:
 	retq
 
 .LCPI2_0:
-	.quad	63
-.LCPI2_1:
 	.long	31
+.LCPI2_1:
+	.quad	63
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
-	vpbroadcastq	.LCPI2_0(%rip), %ymm2
-	vpcmpneqd	.LCPI2_1(%rip){1to4}, %xmm0, %k1
-	vpsubq	%ymm1, %ymm2, %ymm0 {%k1} {z}
+	vpcmpneqd	.LCPI2_0(%rip){1to4}, %xmm0, %k1
+	vxorpd	.LCPI2_1(%rip){1to4}, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI3_0:

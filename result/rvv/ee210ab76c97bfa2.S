@@ -18,7 +18,7 @@ func00000000000000e8:
 	lui	a0, 16
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vx	v14, v12, a0
+	vxor.vx	v14, v12, a0
 	vmul.vv	v8, v14, v8
 	vmacc.vv	v8, v12, v10
 	ret
@@ -26,7 +26,7 @@ func00000000000000e8:
 func00000000000000ff:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vx	v14, v8, a0
+	vxor.vx	v14, v8, a0
 	vmul.vv	v8, v8, v10
 	vmacc.vv	v8, v12, v14
 	ret

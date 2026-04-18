@@ -1,6 +1,5 @@
 func000000000000000d:
-	mov	w8, #15
-	sub	w8, w8, w2
+	eor	w8, w2, #0xf
 	lsr	w8, w1, w8
 	and	w8, w8, #0x1
 	orr	w0, w0, w8

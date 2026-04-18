@@ -13,8 +13,7 @@ func0000000000000038:
 	ret
 
 func000000000000003f:
-	mov	w8, #255
-	sub	w8, w8, w2
+	eor	w8, w2, #0xff
 	madd	w8, w8, w1, w0
 	and	w0, w8, #0x7fff
 	ret

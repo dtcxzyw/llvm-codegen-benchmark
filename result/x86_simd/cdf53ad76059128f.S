@@ -3,8 +3,7 @@
 	.long	255
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001bf:
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3
-	vpsubd	%ymm0, %ymm3, %ymm3
+	vpxord	.LCPI0_0(%rip){1to8}, %ymm0, %ymm3
 	vpmulld	%ymm1, %ymm3, %ymm1
 	vpmovzxwd	%xmm2, %ymm2
 	vpmulld	%ymm2, %ymm0, %ymm0

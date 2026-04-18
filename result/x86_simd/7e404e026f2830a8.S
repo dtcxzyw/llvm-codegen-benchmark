@@ -226,8 +226,7 @@ func000000000000008a:
 	.long	4294967288
 	.prefalign	4, .Lfunc_end18, nop
 func00000000000001a1:
-	vpbroadcastd	.LCPI18_0(%rip), %ymm2
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpxord	.LCPI18_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI18_1(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

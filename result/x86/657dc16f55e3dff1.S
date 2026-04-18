@@ -11,8 +11,8 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	shrl	%esi
-	movl	$7, %eax
-	subl	%esi, %eax
+	movl	%esi, %eax
+	xorl	$7, %eax
 	testb	$1, %dil
 	cmovnel	%esi, %eax
 	retq

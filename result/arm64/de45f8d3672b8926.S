@@ -24,10 +24,9 @@ func0000000000000034:
 	ret
 
 func0000000000000036:
-	mov	w8, #15
-	sxtw	x9, w2
-	sub	x8, x8, x1
-	mul	x8, x8, x9
+	sxtw	x8, w2
+	eor	x9, x1, #0xf
+	mul	x8, x9, x8
 	add	x0, x0, x8, lsl #1
 	ret
 

@@ -36,8 +36,7 @@ func0000000000000009:
 
 func000000000000002b:
 	clzw	a0, a0
-	li	a1, 31
-	sub	a0, a1, a0
+	xori	a0, a0, 31
 	ret
 
 func000000000000000b:

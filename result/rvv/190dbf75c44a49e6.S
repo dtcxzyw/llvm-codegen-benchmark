@@ -70,7 +70,7 @@ func0000000000000001:
 
 func0000000000000068:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v10, v10, 3
+	vxor.vi	v10, v10, 3
 	vmsltu.vv	v0, v8, v10
 	ret
 

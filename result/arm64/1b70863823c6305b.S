@@ -6,9 +6,8 @@ func0000000000000007:
 	ret
 
 func000000000000000f:
-	mov	w8, #3
+	eor	w8, w1, #0x3
 	eor	w9, w0, #0x1
-	sub	w8, w8, w1
 	lsl	w0, w9, w8
 	ret
 

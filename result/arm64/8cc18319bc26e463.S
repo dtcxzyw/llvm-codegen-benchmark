@@ -24,10 +24,9 @@ func0000000000000068:
 	ret
 
 func0000000000000164:
-	mov	w8, #16777215
-	add	x9, x1, #6
-	sub	x8, x8, x0
-	cmp	x8, x9
+	add	x8, x1, #6
+	eor	x9, x0, #0xffffff
+	cmp	x9, x8
 	cset	w0, lo
 	ret
 

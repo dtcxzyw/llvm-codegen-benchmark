@@ -55,8 +55,7 @@ func0000000000000005:
 func0000000000000053:
 	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vpbroadcastd	.LCPI5_1(%rip), %ymm0
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpxord	.LCPI5_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

@@ -10,10 +10,10 @@ func000000000000001f:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	negl	%edi
-	andl	$127, %edi
-	movl	$63, %eax
-	subl	%edi, %eax
+	movl	%edi, %eax
+	negl	%eax
+	andl	$127, %eax
+	xorl	$63, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

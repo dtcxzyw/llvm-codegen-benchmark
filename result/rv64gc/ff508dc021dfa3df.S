@@ -24,10 +24,10 @@ func0000000000000006:
 	ret
 
 func0000000000000074:
-	sext.w	a3, a1
-	li	a2, 127
-	bgeu	a3, a2, .LBB3_2
-	subw	a0, a2, a1
+	sext.w	a2, a1
+	li	a3, 127
+	bgeu	a2, a3, .LBB3_2
+	xori	a0, a1, 127
 .LBB3_2:
 	ret
 

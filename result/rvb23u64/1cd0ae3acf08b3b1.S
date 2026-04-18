@@ -20,8 +20,7 @@ func0000000000000007:
 
 func000000000000000d:
 	andi	a0, a0, 1
-	li	a2, 1023
-	subw	a2, a2, a1
+	xori	a2, a1, 1023
 	addiw	a1, a1, -1023
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

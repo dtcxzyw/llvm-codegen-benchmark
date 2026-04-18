@@ -4,8 +4,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000038:
 	vpmovzxwd	%xmm2, %ymm2
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3
-	vpsubd	%ymm1, %ymm3, %ymm1
+	vpxord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq

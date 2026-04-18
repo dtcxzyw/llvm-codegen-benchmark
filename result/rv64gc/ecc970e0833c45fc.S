@@ -1,7 +1,6 @@
 func000000000000001c:
-	li	a3, 63
-	sub	a3, a3, a2
-	srl	a1, a1, a3
+	xori	a2, a2, 63
+	srl	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

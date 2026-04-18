@@ -38,18 +38,17 @@ func0000000000000002:
 	retq
 
 .LCPI3_0:
-	.long	3
-.LCPI3_1:
 	.long	1
+.LCPI3_1:
+	.long	3
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1
-	vpbroadcastd	.LCPI3_1(%rip), %ymm3
-	vpsubd	%ymm2, %ymm1, %ymm3 {%k1}
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpxord	.LCPI3_1(%rip){1to8}, %ymm2, %ymm1 {%k1}
+	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

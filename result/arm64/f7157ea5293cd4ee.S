@@ -25,9 +25,8 @@ func000000000000000d:
 	ret
 
 func0000000000000007:
-	mov	w8, #3
-	add	x9, x0, x1
-	sub	x0, x8, x9
+	add	x8, x0, x1
+	eor	x0, x8, #0x3
 	ret
 
 func0000000000000008:

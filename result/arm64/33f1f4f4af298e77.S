@@ -18,8 +18,7 @@ func000000000000000d:
 
 func0000000000000007:
 	add	x8, x0, w1, uxtw
-	mov	w9, #3
-	sub	x0, x9, x8
+	eor	x0, x8, #0x3
 	ret
 
 func0000000000000000:

@@ -17,8 +17,7 @@ func0000000000000006:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltw	%xmm2, %xmm0, %k1
 	vpsrld	$1, %ymm1, %ymm0
-	vpbroadcastd	.LCPI1_0(%rip), %ymm1
-	vpsubd	%ymm0, %ymm1, %ymm0 {%k1}
+	vpxord	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

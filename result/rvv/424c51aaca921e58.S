@@ -20,7 +20,7 @@ func000000000000002a:
 func0000000000000061:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v0, v10, 2
-	vrsub.vi	v8, v8, 1, v0.t
+	vxor.vi	v8, v8, 1, v0.t
 	ret
 
 func0000000000000006:
@@ -52,7 +52,7 @@ func000000000000000a:
 func0000000000000064:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsleu.vi	v0, v10, 1
-	vrsub.vi	v8, v8, 3, v0.t
+	vxor.vi	v8, v8, 3, v0.t
 	ret
 
 func000000000000002c:

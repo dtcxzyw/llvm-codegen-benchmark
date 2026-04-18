@@ -1,10 +1,9 @@
 func000000000000001f:
 	li	a1, -2
-	li	a2, 7
 	sllw	a1, a1, a0
 	not	a1, a1
-	sub	a2, a2, a0
-	sllw	a0, a1, a2
+	xori	a0, a0, 7
+	sllw	a0, a1, a0
 	ret
 
 func0000000000000010:

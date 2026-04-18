@@ -7,9 +7,8 @@ func000000000000001c:
 
 func000000000000003f:
 	srliw	a1, a1, 1
-	li	a2, 3
-	subw	a2, a2, a1
-	sh3add	a1, a2, a2
+	xori	a1, a1, 3
+	sh3add	a1, a1, a1
 	sh3add	a0, a1, a0
 	ret
 

@@ -115,8 +115,7 @@ func0000000000000000:
 	.zero	1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
-	vpbroadcastd	.LCPI3_0(%rip), %ymm2
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpxord	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI3_2(%rip){1to4}, %xmm0, %xmm0

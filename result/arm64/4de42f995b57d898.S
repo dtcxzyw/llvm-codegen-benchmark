@@ -7,10 +7,9 @@ func000000000000001f:
 	ret
 
 func0000000000000007:
-	neg	w9, w0
-	mov	w8, #63
-	and	w9, w9, #0x7f
-	sub	w0, w8, w9
+	neg	w8, w0
+	and	w8, w8, #0x7f
+	eor	w0, w8, #0x3f
 	ret
 
 func000000000000000f:

@@ -27,9 +27,8 @@ func0000000000000061:
 func0000000000000161:
 	sext.w	a0, a0
 	clzw	a1, a1
-	li	a2, 31
-	sub	a2, a2, a1
-	xor	a0, a0, a2
+	xori	a1, a1, 31
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 

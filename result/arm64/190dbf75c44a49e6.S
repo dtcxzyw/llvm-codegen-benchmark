@@ -64,8 +64,7 @@ func0000000000000001:
 	ret
 
 func0000000000000068:
-	mov	w8, #3
-	sub	x8, x8, x1
+	eor	x8, x1, #0x3
 	cmp	x8, x0
 	cset	w0, hi
 	ret

@@ -16,7 +16,7 @@ func00000000000001e4:
 	sarq	$3, %rsi
 	sarq	$3, %rdi
 	movabsq	$1152921504606846975, %rax
-	subq	%rdi, %rax
+	xorq	%rdi, %rax
 	cmpq	%rsi, %rax
 	setb	%al
 	retq

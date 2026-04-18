@@ -1,7 +1,6 @@
 func000000000000001b:
-	li	a2, 7
-	sub	a2, a2, a1
-	bset	a1, zero, a2
+	xori	a1, a1, 7
+	bset	a1, zero, a1
 	and	a0, a0, a1
 	ret
 

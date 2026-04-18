@@ -3,7 +3,7 @@ func0000000000000038:
 	vzext.vf2	v14, v12
 	lui	a0, 16
 	addi	a0, a0, -1
-	vrsub.vx	v10, v10, a0
+	vxor.vx	v10, v10, a0
 	vmacc.vv	v8, v14, v10
 	ret
 

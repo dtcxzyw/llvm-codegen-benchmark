@@ -16,7 +16,7 @@ func000000000000000b:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
 	leaq	(%rsi,%rdi), %rax
-	movl	$3, %edx
-	subq	%rdi, %rdx
+	xorq	$3, %rdi
+	movq	%rdi, %rdx
 	retq
 

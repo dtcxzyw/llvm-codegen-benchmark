@@ -1,8 +1,7 @@
 func000000000000000e:
-	mov	w8, #65535
-	and	w9, w1, #0xffff
-	sub	w8, w8, w0
-	mul	w0, w8, w9
+	and	w8, w1, #0xffff
+	eor	w9, w0, #0xffff
+	mul	w0, w9, w8
 	ret
 
 func0000000000000004:

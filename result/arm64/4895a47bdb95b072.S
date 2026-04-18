@@ -7,9 +7,8 @@ func0000000000000000:
 	ret
 
 func000000000000000d:
-	mov	w8, #127
+	eor	w8, w2, #0x7f
 	tst	w0, #0x1
-	sub	w8, w8, w2
 	csel	w8, w8, w1, ne
 	sub	w0, w8, #8
 	ret

@@ -6,8 +6,7 @@ func0000000000000007:
 
 func000000000000000f:
 	srliw	a0, a0, 1
-	li	a1, 3
-	subw	a0, a1, a0
+	xori	a0, a0, 3
 	ret
 
 func000000000000000a:

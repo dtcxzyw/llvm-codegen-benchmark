@@ -15,7 +15,6 @@ func0000000000000017:
 	slli	a1, a1, 3
 	srli	a0, a0, 32
 	add	a0, a0, a1
-	li	a1, 3
-	sub	a0, a1, a0
+	xori	a0, a0, 3
 	ret
 

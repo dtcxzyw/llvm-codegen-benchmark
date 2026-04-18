@@ -28,7 +28,7 @@ func0000000000000015:
 func000000000000003f:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vx	v12, v12, a0
+	vxor.vx	v12, v12, a0
 	vmacc.vv	v8, v10, v12
 	ret
 

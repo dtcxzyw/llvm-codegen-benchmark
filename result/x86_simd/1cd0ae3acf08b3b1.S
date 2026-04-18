@@ -33,8 +33,7 @@ func0000000000000007:
 func000000000000000d:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm0
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpxord	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
 

@@ -1,7 +1,6 @@
 func0000000000000007:
-	mov	w8, #3
+	eor	w8, w1, #0x3
 	tst	w0, #0x1
-	sub	w8, w8, w1
 	csinc	x0, x8, xzr, eq
 	ret
 

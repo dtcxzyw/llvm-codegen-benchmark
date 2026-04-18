@@ -1,5 +1,5 @@
 func00000000000000c1:
-	mvn	x8, x1
+	eor	x8, x1, #0x3f
 	lsr	x8, x0, x8
 	cmp	x8, #0
 	cset	w0, eq

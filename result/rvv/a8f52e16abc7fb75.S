@@ -34,7 +34,7 @@ func00000000000000e4:
 	li	a0, -1
 	vsra.vi	v10, v10, 3
 	srli	a0, a0, 4
-	vrsub.vx	v10, v10, a0
+	vxor.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret
 

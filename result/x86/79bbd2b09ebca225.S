@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001ec:
-	movb	$7, %al
-	subb	%sil, %al
-	movzbl	%al, %eax
+	xorb	$7, %sil
+	movzbl	%sil, %eax
 	btl	%eax, %edi
 	setb	%al
 	retq

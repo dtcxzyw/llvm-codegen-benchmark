@@ -39,10 +39,9 @@ func0000000000000032:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000036:
-	movl	$15, %eax
-	subq	%rdx, %rax
-	imulq	%rsi, %rax
-	leaq	(%rdi,%rax,2), %rax
+	xorq	$15, %rdx
+	imulq	%rsi, %rdx
+	leaq	(%rdi,%rdx,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

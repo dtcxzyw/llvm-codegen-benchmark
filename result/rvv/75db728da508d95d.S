@@ -27,7 +27,7 @@ func000000000000000c:
 	vand.vi	v10, v10, 1
 	vmsne.vi	v0, v10, 0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vrsub.vi	v8, v8, 3, v0.t
+	vxor.vi	v8, v8, 3, v0.t
 	ret
 
 func0000000000000006:

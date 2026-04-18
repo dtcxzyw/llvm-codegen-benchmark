@@ -15,10 +15,9 @@ func0000000000000007:
 	ret
 
 func000000000000000d:
-	mov	w8, #1023
+	eor	w8, w1, #0x3ff
 	sub	w9, w1, #1023
 	tst	w0, #0x1
-	sub	w8, w8, w1
 	csel	w0, w9, w8, ne
 	ret
 

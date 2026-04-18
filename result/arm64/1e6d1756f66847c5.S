@@ -23,8 +23,7 @@ func0000000000000024:
 	ret
 
 func0000000000000068:
-	mov	w8, #63
-	sub	w8, w8, w1
+	eor	w8, w1, #0x3f
 	and	w8, w8, #0xff
 	cmp	w8, w0, uxtb
 	cset	w0, hi

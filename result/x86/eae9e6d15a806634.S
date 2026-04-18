@@ -103,10 +103,9 @@ func0000000000000184:
 
 	.prefalign	4, .Lfunc_end12, nop
 func00000000000001a1:
-	movl	$63, %eax
-	subl	%edx, %eax
+	xorl	$63, %edx
 	subl	%esi, %edi
-	cmpl	%eax, %edi
+	cmpl	%edx, %edi
 	sete	%al
 	retq
 

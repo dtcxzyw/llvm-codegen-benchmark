@@ -12,7 +12,7 @@ func000000000000000c:
 	vand.vi	v10, v10, 1
 	vmsne.vi	v0, v10, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vrsub.vi	v10, v8, 7
+	vxor.vi	v10, v8, 7
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

@@ -35,9 +35,8 @@ func0000000000000009:
 	ret
 
 func000000000000002b:
-	mov	w8, #31
-	clz	w9, w0
-	sub	w0, w8, w9
+	clz	w8, w0
+	eor	w0, w8, #0x1f
 	ret
 
 func000000000000000b:

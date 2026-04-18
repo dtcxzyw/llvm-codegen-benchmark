@@ -5,7 +5,7 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	mvn	w8, w1
+	eor	w8, w1, #0x3f
 	lsr	x0, x0, x8
 	ret
 

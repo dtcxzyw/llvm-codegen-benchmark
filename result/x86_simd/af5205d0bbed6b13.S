@@ -62,8 +62,7 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	vpmovqd	%ymm0, %xmm0
-	vpbroadcastd	.LCPI4_0(%rip), %xmm1
-	vpsubd	%xmm0, %xmm1, %xmm0
+	vpxord	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vpbroadcastd	.LCPI4_1(%rip), %xmm1
 	vpsllvd	%xmm0, %xmm1, %xmm0
 	vzeroupper

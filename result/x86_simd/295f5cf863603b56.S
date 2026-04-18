@@ -43,8 +43,7 @@ func0000000000000015:
 	.long	255
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000003f:
-	vpbroadcastd	.LCPI4_0(%rip), %ymm3
-	vpsubd	%ymm2, %ymm3, %ymm2
+	vpxord	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

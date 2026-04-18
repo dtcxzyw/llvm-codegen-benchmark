@@ -11,10 +11,10 @@ func0000000000000080:
 
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000001fe:
-	movl	$255, %eax
-	subl	%edi, %eax
-	imull	%edx, %eax
 	imull	%edi, %esi
+	movl	%edi, %eax
+	xorl	$255, %eax
+	imull	%edx, %eax
 	addl	%esi, %eax
 	shrl	$15, %eax
 	retq

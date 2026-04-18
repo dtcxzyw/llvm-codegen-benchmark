@@ -194,13 +194,11 @@ func0000000000000057:
 	addi	a1, a1, 257
 	mul	a0, a0, a1
 	srliw	a0, a0, 24
-	li	a1, 31
-	sub	a0, a1, a0
+	xori	a0, a0, 31
 	ret
 .LBB4_2:
 	li	a0, 32
-	li	a1, 31
-	sub	a0, a1, a0
+	xori	a0, a0, 31
 	ret
 
 func0000000000000017:

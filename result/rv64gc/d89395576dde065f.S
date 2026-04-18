@@ -3,8 +3,8 @@ func0000000000000007:
 	bnez	a0, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	li	a0, 63
-	subw	a0, a0, a1
+	xori	a0, a1, 63
+	sext.w	a0, a0
 	ret
 
 func0000000000000003:

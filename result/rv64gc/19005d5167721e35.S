@@ -1,8 +1,8 @@
 func0000000000000007:
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
-	li	a0, 3
-	subw	a0, a0, a1
+	xori	a0, a1, 3
+	sext.w	a0, a0
 	ret
 .LBB0_2:
 	li	a0, 1

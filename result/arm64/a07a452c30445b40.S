@@ -19,8 +19,7 @@ func000000000000002a:
 	ret
 
 func0000000000000078:
-	mov	w8, #3
-	sub	w8, w8, w1
+	eor	w8, w1, #0x3
 	cmp	w8, w0
 	cset	w0, hi
 	ret

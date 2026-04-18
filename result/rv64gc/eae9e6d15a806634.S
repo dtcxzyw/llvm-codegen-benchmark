@@ -86,10 +86,10 @@ func0000000000000184:
 	ret
 
 func00000000000001a1:
-	li	a3, 63
-	subw	a3, a3, a2
+	xori	a2, a2, 63
+	sext.w	a2, a2
 	subw	a0, a0, a1
-	xor	a0, a0, a3
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

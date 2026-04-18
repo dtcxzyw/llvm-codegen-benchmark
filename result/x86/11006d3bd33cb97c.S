@@ -41,10 +41,10 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000053:
+	movl	%edi, %eax
 	cmpl	$128, %edx
-	cmovael	%esi, %edi
-	movl	$255, %eax
-	subl	%edi, %eax
+	cmovael	%esi, %eax
+	xorl	$255, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

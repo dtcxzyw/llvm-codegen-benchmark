@@ -10,8 +10,7 @@ func0000000000000000:
 func000000000000000d:
 	andi	a0, a0, 1
 	beqz	a0, .LBB1_2
-	li	a1, 127
-	sub	a1, a1, a2
+	xori	a1, a2, 127
 .LBB1_2:
 	addiw	a0, a1, -8
 	ret

@@ -29,9 +29,8 @@ func0000000000000008:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000068:
 	subq	%rdx, %rsi
-	movl	$3, %eax
-	subq	%rdi, %rax
-	cmpq	%rsi, %rax
+	xorq	$3, %rdi
+	cmpq	%rsi, %rdi
 	seta	%al
 	retq
 

@@ -51,7 +51,7 @@ func000000000000002b:
 	vnsrl.wi	v10, v8, 0
 	vclz.v	v8, v10
 	li	a0, 31
-	vrsub.vx	v8, v8, a0
+	vxor.vx	v8, v8, a0
 	ret
 
 func000000000000000b:

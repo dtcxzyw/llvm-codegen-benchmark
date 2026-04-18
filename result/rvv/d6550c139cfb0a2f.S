@@ -15,6 +15,6 @@ func0000000000000003:
 	lui	a0, 16
 	vsrl.vi	v8, v8, 15
 	addi	a0, a0, -1
-	vrsub.vx	v8, v8, a0
+	vxor.vx	v8, v8, a0
 	ret
 

@@ -22,9 +22,8 @@ func0000000000000068:
 
 func0000000000000164:
 	addi	a1, a1, 6
-	lui	a2, 4096
-	addi	a2, a2, -1
-	sub	a2, a2, a0
-	sltu	a0, a2, a1
+	lui	a2, 1044480
+	xnor	a0, a0, a2
+	sltu	a0, a0, a1
 	ret
 

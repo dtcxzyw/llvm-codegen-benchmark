@@ -17,11 +17,10 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
-	movl	$63, %ecx
-	subq	%rsi, %rcx
+	xorq	$63, %rsi
 	xorl	%eax, %eax
 	cmpl	$31, %edi
-	cmovneq	%rcx, %rax
+	cmovneq	%rsi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

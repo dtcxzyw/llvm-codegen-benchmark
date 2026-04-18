@@ -25,8 +25,8 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000061:
-	movl	$3, %eax
-	subq	%rdi, %rax
+	movq	%rdi, %rax
+	xorq	$3, %rax
 	testb	%sil, %sil
 	cmoveq	%rdi, %rax
 	retq

@@ -25,8 +25,7 @@ func0000000000000000:
 	.long	65535
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e8:
-	vpbroadcastd	.LCPI2_0(%rip), %ymm3
-	vpsubd	%ymm2, %ymm3, %ymm3
+	vpxord	.LCPI2_0(%rip){1to8}, %ymm2, %ymm3
 	vpmulld	%ymm0, %ymm3, %ymm0
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -36,8 +35,7 @@ func00000000000000e8:
 	.long	255
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ff:
-	vpbroadcastd	.LCPI3_0(%rip), %ymm3
-	vpsubd	%ymm0, %ymm3, %ymm3
+	vpxord	.LCPI3_0(%rip){1to8}, %ymm0, %ymm3
 	vpmulld	%ymm2, %ymm3, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0

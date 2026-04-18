@@ -26,7 +26,7 @@ func0000000000000161:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vclz.v	v10, v10
 	li	a0, 31
-	vrsub.vx	v10, v10, a0
+	vxor.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
 	ret
 

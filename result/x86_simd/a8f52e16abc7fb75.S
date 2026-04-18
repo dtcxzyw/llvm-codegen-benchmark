@@ -44,8 +44,7 @@ func00000000000000b4:
 func00000000000000e4:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
-	vpbroadcastq	.LCPI3_0(%rip), %ymm2
-	vpsubq	%ymm1, %ymm2, %ymm1
+	vpxorq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

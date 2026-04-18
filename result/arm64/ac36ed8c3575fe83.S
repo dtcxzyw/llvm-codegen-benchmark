@@ -56,8 +56,7 @@ func000000000000002a:
 	ret
 
 func0000000000000079:
-	mov	w8, #3
-	sub	x8, x8, x1
+	eor	x8, x1, #0x3
 	cmp	x0, x8
 	cset	w0, hs
 	ret

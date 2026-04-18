@@ -12,9 +12,8 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	movl	%esi, %eax
-	movl	$63, %ecx
-	subq	%rax, %rcx
+	movl	%esi, %ecx
+	xorq	$63, %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax

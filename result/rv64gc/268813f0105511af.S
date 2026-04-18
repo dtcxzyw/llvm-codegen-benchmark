@@ -1,9 +1,8 @@
 func0000000000000006:
-	li	a2, 31
+	xori	a1, a1, 31
 	slli	a0, a0, 32
-	sub	a2, a2, a1
 	srli	a0, a0, 32
-	srl	a0, a0, a2
+	srl	a0, a0, a1
 	ret
 
 func0000000000000002:

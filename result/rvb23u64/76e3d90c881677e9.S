@@ -110,9 +110,8 @@ func0000000000000089:
 	ret
 
 func00000000000001e1:
-	li	a3, 1023
-	sub	a3, a3, a2
-	sh2add	a1, a3, a1
+	xori	a2, a2, 1023
+	sh2add	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

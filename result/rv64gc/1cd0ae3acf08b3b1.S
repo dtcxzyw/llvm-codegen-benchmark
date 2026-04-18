@@ -21,8 +21,7 @@ func0000000000000007:
 func000000000000000d:
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
-	li	a0, 1023
-	subw	a0, a0, a1
+	xori	a0, a1, 1023
 	ret
 .LBB2_2:
 	addiw	a0, a1, -1023

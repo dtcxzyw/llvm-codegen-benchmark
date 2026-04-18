@@ -26,8 +26,7 @@ func0000000000000032:
 	ret
 
 func0000000000000036:
-	mov	w8, #15
-	sub	x8, x8, x2
+	eor	x8, x2, #0xf
 	mul	x8, x8, x1
 	add	x0, x0, x8, lsl #1
 	ret

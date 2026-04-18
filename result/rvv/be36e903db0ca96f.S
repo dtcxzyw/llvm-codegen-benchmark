@@ -5,7 +5,7 @@ func000000000000001b:
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 16
 	li	a0, 255
-	vrsub.vx	v8, v8, a0
+	vxor.vx	v8, v8, a0
 	ret
 
 func0000000000000001:

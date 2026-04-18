@@ -29,8 +29,7 @@ func000000000000000c:
 func0000000000000079:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpbroadcastq	.LCPI2_0(%rip), %ymm0
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpxorq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm0
 	vpcmpnltuq	%ymm0, %ymm1, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0

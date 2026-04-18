@@ -29,9 +29,8 @@ func0000000000000034:
 
 func0000000000000036:
 	sext.w	a2, a2
-	li	a3, 15
-	sub	a3, a3, a1
-	mul	a1, a3, a2
+	xori	a1, a1, 15
+	mul	a1, a1, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	ret

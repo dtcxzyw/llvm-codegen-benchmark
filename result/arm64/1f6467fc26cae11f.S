@@ -23,9 +23,8 @@ func0000000000000061:
 	ret
 
 func0000000000000161:
-	mov	w8, #31
-	clz	w9, w1
-	sub	w8, w8, w9
+	clz	w8, w1
+	eor	w8, w8, #0x1f
 	cmp	w0, w8
 	cset	w0, eq
 	ret

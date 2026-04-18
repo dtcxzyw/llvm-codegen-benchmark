@@ -14,8 +14,7 @@ func0000000000000007:
 	addiw	a0, a1, -127
 	ret
 .LBB1_2:
-	li	a0, 127
-	subw	a0, a0, a1
+	xori	a0, a1, 127
 	ret
 
 func0000000000000004:

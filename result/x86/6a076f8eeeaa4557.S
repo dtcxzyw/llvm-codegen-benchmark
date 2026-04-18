@@ -38,10 +38,9 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
-	movb	$7, %al
-	subb	%dil, %al
-	movl	$1, %ecx
-	shlxl	%eax, %ecx, %eax
+	xorb	$7, %dil
+	movl	$1, %eax
+	shlxl	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

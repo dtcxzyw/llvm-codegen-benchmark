@@ -7,8 +7,7 @@ func000000000000000f:
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm2, %xmm0
 	vmovdqa32	%xmm1, %xmm0 {%k1}
-	vpbroadcastd	.LCPI0_0(%rip), %xmm1
-	vpsubd	%xmm0, %xmm1, %xmm0
+	vpxord	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 

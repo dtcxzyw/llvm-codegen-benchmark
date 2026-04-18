@@ -57,8 +57,7 @@ func0000000000000078:
 	sext.w	a2, a1
 	li	a3, 1022
 	bltu	a3, a2, .LBB7_2
-	li	a0, 1023
-	subw	a0, a0, a1
+	xori	a0, a1, 1023
 .LBB7_2:
 	ret
 

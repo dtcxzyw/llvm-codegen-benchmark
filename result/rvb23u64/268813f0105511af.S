@@ -1,8 +1,7 @@
 func0000000000000006:
-	li	a2, 31
-	sub	a2, a2, a1
+	xori	a1, a1, 31
 	zext.w	a0, a0
-	srl	a0, a0, a2
+	srl	a0, a0, a1
 	ret
 
 func0000000000000002:

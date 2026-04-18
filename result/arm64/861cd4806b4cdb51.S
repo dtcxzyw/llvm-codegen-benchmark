@@ -1,7 +1,6 @@
 func0000000000000061:
-	mov	w8, #1
+	eor	w8, w1, #0x1
 	tst	w0, #0x1
-	sub	w8, w8, w1
 	csel	w8, w8, w1, ne
 	cmp	w8, #0
 	cset	w0, eq

@@ -43,9 +43,8 @@ func0000000000000026:
 	ret
 
 func0000000000000078:
-	mov	w8, #1023
+	eor	w8, w1, #0x3ff
 	cmp	w1, #1022
-	sub	w8, w8, w1
 	csel	w0, w0, w8, hi
 	ret
 

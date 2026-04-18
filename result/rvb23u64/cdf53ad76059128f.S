@@ -1,7 +1,6 @@
 func00000000000001bf:
-	li	a3, 255
+	xori	a3, a0, 255
 	zext.h	a2, a2
-	sub	a3, a3, a0
 	mul	a1, a1, a3
 	mul	a0, a0, a2
 	addw	a0, a0, a1

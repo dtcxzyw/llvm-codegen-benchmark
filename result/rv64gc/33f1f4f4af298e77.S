@@ -24,10 +24,9 @@ func000000000000000d:
 
 func0000000000000007:
 	slli	a1, a1, 32
-	li	a2, 3
 	srli	a1, a1, 32
-	sub	a0, a2, a0
-	sub	a0, a0, a1
+	add	a0, a0, a1
+	xori	a0, a0, 3
 	ret
 
 func0000000000000000:

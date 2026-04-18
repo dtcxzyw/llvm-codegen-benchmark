@@ -3,7 +3,7 @@ func000000000000000f:
 	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
 	li	a0, 63
-	vrsub.vx	v8, v8, a0
+	vxor.vx	v8, v8, a0
 	ret
 
 func0000000000000001:

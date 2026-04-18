@@ -25,9 +25,8 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000068:
-	movb	$63, %al
-	subb	%sil, %al
-	cmpb	%dil, %al
+	xorb	$63, %sil
+	cmpb	%dil, %sil
 	seta	%al
 	retq
 

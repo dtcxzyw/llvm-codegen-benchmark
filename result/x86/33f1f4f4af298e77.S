@@ -25,10 +25,9 @@ func000000000000000d:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
-	movl	%esi, %ecx
-	addq	%rdi, %rcx
-	movl	$3, %eax
-	subq	%rcx, %rax
+	movl	%esi, %eax
+	addq	%rdi, %rax
+	xorq	$3, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

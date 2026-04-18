@@ -5,8 +5,7 @@
 	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001ec:
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpxord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0
 	vptestmd	.LCPI0_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

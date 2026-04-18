@@ -73,9 +73,8 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000068:
-	movl	$3, %eax
-	subq	%rsi, %rax
-	cmpq	%rdi, %rax
+	xorq	$3, %rsi
+	cmpq	%rdi, %rsi
 	seta	%al
 	retq
 

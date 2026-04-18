@@ -22,10 +22,9 @@ func00000000000001c1:
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000005c1:
 	lzcntl	%esi, %eax
-	movl	$31, %ecx
-	subl	%eax, %ecx
+	xorl	$31, %eax
 	incl	%edi
-	cmpl	%ecx, %edi
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 

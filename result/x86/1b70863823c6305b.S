@@ -10,9 +10,8 @@ func0000000000000007:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	xorl	$1, %edi
-	movb	$3, %al
-	subb	%sil, %al
-	shlxl	%eax, %edi, %eax
+	xorb	$3, %sil
+	shlxl	%esi, %edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

@@ -18,8 +18,7 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000032:
 	movzbl	%dil, %eax
-	movb	$3, %cl
-	subb	%sil, %cl
-	shrxl	%ecx, %eax, %eax
+	xorb	$3, %sil
+	shrxl	%esi, %eax, %eax
 	retq
 

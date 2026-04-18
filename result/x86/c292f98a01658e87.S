@@ -56,8 +56,8 @@ func0000000000000026:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000078:
-	movl	$1023, %eax
-	subl	%esi, %eax
+	movl	%esi, %eax
+	xorl	$1023, %eax
 	cmpl	$1023, %esi
 	cmovael	%edi, %eax
 	retq

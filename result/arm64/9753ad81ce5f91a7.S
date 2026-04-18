@@ -17,10 +17,9 @@ func000000000000000e:
 	ret
 
 func000000000000001a:
-	mov	w8, #7
-	mov	w9, #-1
-	sub	w8, w8, w1
-	lsl	w8, w9, w8
+	mov	w8, #-1
+	eor	w9, w1, #0x7
+	lsl	w8, w8, w9
 	bic	w0, w0, w8
 	ret
 

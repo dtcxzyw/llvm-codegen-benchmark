@@ -1,8 +1,8 @@
 func000000000000001b:
 	mov	w8, #21931
-	mov	w9, #255
 	mul	w8, w0, w8
-	sub	w0, w9, w8, lsr #16
+	lsr	w8, w8, #16
+	eor	w0, w8, #0xff
 	ret
 
 func0000000000000001:

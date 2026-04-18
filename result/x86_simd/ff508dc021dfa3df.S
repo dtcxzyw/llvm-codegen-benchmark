@@ -33,8 +33,8 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000074:
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2
-	vpcmpnleud	%ymm1, %ymm2, %k1
-	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpcmpltud	%ymm2, %ymm1, %k1
+	vpxord	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI4_0:

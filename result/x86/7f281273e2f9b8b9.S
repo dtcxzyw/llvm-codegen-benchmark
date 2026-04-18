@@ -19,10 +19,9 @@ func000000000000002a:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000007e:
-	movl	$255, %eax
-	subl	%edx, %eax
-	imull	%esi, %eax
-	addl	%edi, %eax
+	xorl	$255, %edx
+	imull	%esi, %edx
+	leal	(%rdx,%rdi), %eax
 	shrl	$15, %eax
 	retq
 

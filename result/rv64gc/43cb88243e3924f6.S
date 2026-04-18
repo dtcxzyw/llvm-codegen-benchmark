@@ -130,18 +130,16 @@ func00000000000005c1:
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	li	a2, 31
-	sub	a2, a2, a1
+	xori	a1, a1, 31
 	addiw	a0, a0, 1
-	xor	a0, a0, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 .LBB2_2:
 	li	a1, 32
-	li	a2, 31
-	sub	a2, a2, a1
+	xori	a1, a1, 31
 	addiw	a0, a0, 1
-	xor	a0, a0, a2
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 

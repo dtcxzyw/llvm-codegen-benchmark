@@ -29,9 +29,8 @@ func0000000000000068:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000164:
 	addq	$6, %rsi
-	movl	$16777215, %eax
-	subq	%rdi, %rax
-	cmpq	%rsi, %rax
+	xorq	$16777215, %rdi
+	cmpq	%rsi, %rdi
 	setb	%al
 	retq
 

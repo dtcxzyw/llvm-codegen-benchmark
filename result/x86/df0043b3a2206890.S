@@ -12,8 +12,7 @@ func0000000000000014:
 func0000000000000017:
 	subq	%rdx, %rsi
 	movl	%edi, %eax
-	leaq	(%rax,%rsi,8), %rcx
-	movl	$3, %eax
-	subq	%rcx, %rax
+	leaq	(%rax,%rsi,8), %rax
+	xorq	$3, %rax
 	retq
 

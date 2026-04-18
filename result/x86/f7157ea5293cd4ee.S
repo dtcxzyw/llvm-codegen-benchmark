@@ -33,9 +33,8 @@ func000000000000000d:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
-	addq	%rsi, %rdi
-	movl	$3, %eax
-	subq	%rdi, %rax
+	leaq	(%rdi,%rsi), %rax
+	xorq	$3, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

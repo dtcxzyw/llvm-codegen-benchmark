@@ -34,7 +34,7 @@ func00000000000000e4:
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	movabsq	$1152921504606846975, %rax
-	subq	%rdx, %rax
+	xorq	%rdx, %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq

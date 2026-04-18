@@ -103,8 +103,7 @@ func0000000000000038:
 	.long	32767
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000003f:
-	vpbroadcastd	.LCPI2_0(%rip), %ymm3
-	vpsubd	%ymm2, %ymm3, %ymm2
+	vpxord	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0

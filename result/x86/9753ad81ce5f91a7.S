@@ -17,9 +17,9 @@ func000000000000000e:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000001a:
-	movb	$7, %al
-	subb	%sil, %al
-	bzhil	%eax, %edi, %eax
+	xorb	$7, %sil
+	bzhil	%esi, %edi, %eax
+	movzbl	%al, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

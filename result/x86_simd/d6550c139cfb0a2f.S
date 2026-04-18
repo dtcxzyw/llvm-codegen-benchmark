@@ -29,7 +29,6 @@ func0000000000000003:
 	vpshufd	$245, %ymm0, %ymm0
 	vpblendd	$170, %ymm1, %ymm0, %ymm0
 	vpsrld	$15, %ymm0, %ymm0
-	vpbroadcastd	.LCPI1_1(%rip), %ymm1
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpxord	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 

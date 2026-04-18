@@ -13,9 +13,8 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	mov	w8, #3
-	sub	x8, x8, x0
+	mov	x8, x0
 	add	x0, x1, x0
-	mov	x1, x8
+	eor	x1, x8, #0x3
 	ret
 

@@ -25,9 +25,8 @@ func0000000000000024:
 
 func0000000000000068:
 	zext.b	a0, a0
-	li	a2, 63
-	sub	a2, a2, a1
-	zext.b	a1, a2
+	xori	a1, a1, 63
+	zext.b	a1, a1
 	sltu	a0, a0, a1
 	ret
 

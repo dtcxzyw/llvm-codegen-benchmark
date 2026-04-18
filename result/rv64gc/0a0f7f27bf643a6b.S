@@ -18,9 +18,8 @@ func0000000000000038:
 	ret
 
 func000000000000003f:
-	li	a3, 255
-	sub	a3, a3, a2
-	mul	a1, a3, a1
+	xori	a2, a2, 255
+	mul	a1, a2, a1
 	add	a0, a0, a1
 	slli	a0, a0, 49
 	srli	a0, a0, 49

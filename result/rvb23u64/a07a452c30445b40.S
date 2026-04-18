@@ -22,9 +22,9 @@ func000000000000002a:
 
 func0000000000000078:
 	sext.w	a0, a0
-	li	a2, 3
-	subw	a2, a2, a1
-	sltu	a0, a0, a2
+	xori	a1, a1, 3
+	sext.w	a1, a1
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000008:

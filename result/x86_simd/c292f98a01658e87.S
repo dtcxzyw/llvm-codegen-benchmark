@@ -61,14 +61,13 @@ func0000000000000026:
 	retq
 
 .LCPI7_0:
-	.long	1023
-.LCPI7_1:
 	.long	1022
+.LCPI7_1:
+	.long	1023
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000078:
-	vpbroadcastd	.LCPI7_0(%rip), %ymm2
-	vpcmpleud	.LCPI7_1(%rip){1to8}, %ymm1, %k1
-	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpcmpleud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
+	vpxord	.LCPI7_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI8_0:
