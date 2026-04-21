@@ -2,7 +2,7 @@ func0000000000000000:
 	sub	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
-	add	a0, a0, a1
+	or	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 1
 	bltu	a0, a1, .LBB0_2
@@ -14,7 +14,7 @@ func0000000000000004:
 	sub	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
-	add	a0, a0, a1
+	or	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 1
 	bltu	a0, a1, .LBB1_2
@@ -26,7 +26,7 @@ func0000000000000002:
 	sub	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
-	add	a0, a0, a1
+	or	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 4
 	bltu	a0, a1, .LBB2_2

@@ -3,7 +3,7 @@ func0000000000000012:
 	slli	a0, a0, 63
 	seqz	a2, a1
 	add	a1, a1, a1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	li	a2, -1
 	srai	a0, a0, 63
 	or	a0, a0, a1
@@ -18,7 +18,7 @@ func0000000000000010:
 	slli	a0, a0, 63
 	seqz	a2, a1
 	add	a1, a1, a1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	li	a2, -1
 	srai	a0, a0, 63
 	or	a0, a0, a1

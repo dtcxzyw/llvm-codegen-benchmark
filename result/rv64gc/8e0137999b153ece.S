@@ -11,7 +11,7 @@ func000000000000005b:
 	mul	a1, a1, a2
 	seqz	a2, a1
 	add	a1, a1, a1
-	add	a1, a1, a2
+	or	a1, a1, a2
 	bltu	a1, a0, .LBB0_2
 	mv	a1, a0
 .LBB0_2:

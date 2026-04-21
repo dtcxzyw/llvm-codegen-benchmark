@@ -3,7 +3,7 @@
 func000000000000000b:
 	seqz	a3, a2
 	add	a2, a2, a2
-	add	a3, a3, a2
+	or	a3, a3, a2
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	slli	a1, a1, 63
@@ -22,7 +22,7 @@ func0000000000000003:
 	seqz	a3, a2
 	add	a2, a2, a2
 	slli	a1, a1, 63
-	add	a2, a2, a3
+	or	a2, a2, a3
 	li	a3, -1
 	srai	a1, a1, 63
 	or	a1, a1, a2
@@ -37,7 +37,7 @@ func0000000000000008:
 	seqz	a3, a2
 	add	a2, a2, a2
 	slli	a1, a1, 63
-	add	a2, a2, a3
+	or	a2, a2, a3
 	li	a3, -1
 	srai	a1, a1, 63
 	or	a1, a1, a2

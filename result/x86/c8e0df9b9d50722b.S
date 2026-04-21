@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	addl	%edi, %esi
-	leal	-1(%rdi,%rsi), %eax
+	addl	%edi, %edi
+	leal	-1(%rsi,%rdi), %eax
 	retq
 

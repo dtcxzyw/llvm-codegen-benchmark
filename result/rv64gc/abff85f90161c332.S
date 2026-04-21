@@ -12,7 +12,7 @@ func0000000000000012:
 	mul	a0, a0, a2
 	seqz	a2, a0
 	add	a0, a0, a0
-	add	a0, a0, a2
+	or	a0, a0, a2
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -32,7 +32,7 @@ func0000000000000016:
 	mul	a0, a0, a2
 	seqz	a2, a0
 	add	a0, a0, a0
-	add	a0, a0, a2
+	or	a0, a0, a2
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -52,7 +52,7 @@ func0000000000000010:
 	mul	a0, a0, a2
 	seqz	a2, a0
 	add	a0, a0, a0
-	add	a0, a0, a2
+	or	a0, a0, a2
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:

@@ -5,7 +5,7 @@ func000000000000000b:
 	ld	a2, %lo(.LCPI0_0)(a2)
 	seqz	a3, a1
 	add	a1, a1, a1
-	add	a1, a1, a3
+	or	a1, a1, a3
 	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
@@ -27,7 +27,7 @@ func0000000000000003:
 	ld	a2, %lo(.LCPI1_0)(a2)
 	seqz	a3, a1
 	add	a1, a1, a1
-	add	a1, a1, a3
+	or	a1, a1, a3
 	andi	a0, a0, 1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2

@@ -8,7 +8,7 @@ func0000000000000009:
 	mul	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
-	add	a0, a0, a1
+	or	a0, a0, a1
 	ret
 
 func000000000000000b:
@@ -21,7 +21,7 @@ func000000000000000b:
 	mul	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
-	add	a0, a0, a1
+	or	a0, a0, a1
 	ret
 
 func0000000000000008:
@@ -34,6 +34,6 @@ func0000000000000008:
 	mul	a0, a0, a1
 	seqz	a1, a0
 	add	a0, a0, a0
-	add	a0, a0, a1
+	or	a0, a0, a1
 	ret
 
