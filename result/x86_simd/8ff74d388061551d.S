@@ -8,14 +8,14 @@
 	.byte	15
 	.byte	15
 	.byte	15
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI0_1:
 	.byte	16
 	.byte	8
@@ -34,8 +34,6 @@
 	.byte	0
 	.byte	0
 .LCPI0_2:
-	.zero	4,15
-.LCPI0_3:
 	.byte	16
 	.byte	8
 	.byte	4
@@ -46,9 +44,9 @@
 	.byte	0
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
+	vpand	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpaddb	%xmm0, %xmm0, %xmm1
-	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm0, %xmm0
+	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm0, %xmm0
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
 	retq

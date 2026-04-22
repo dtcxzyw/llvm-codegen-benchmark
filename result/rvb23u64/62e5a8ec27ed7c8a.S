@@ -1,8 +1,7 @@
 func0000000000000000:
-	sgtz	a3, a1
-	sub	a2, a0, a1
-	slt	a1, a2, a0
-	xor	a1, a1, a3
-	mv	a0, a2
+	slt	a2, a0, a1
+	sub	a0, a0, a1
+	srli	a1, a0, 63
+	xor	a1, a1, a2
 	ret
 
