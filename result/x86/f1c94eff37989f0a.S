@@ -8,9 +8,10 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	cmpl	$1, %esi
-	adcl	$-1, %esi
-	leal	(%rsi,%rdi), %eax
+	xorl	%eax, %eax
+	subl	$1, %esi
+	cmovael	%esi, %eax
+	addl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

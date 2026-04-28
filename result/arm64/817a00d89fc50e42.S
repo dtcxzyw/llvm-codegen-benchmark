@@ -10,9 +10,8 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	cmp	w0, #0
-	cset	w8, ne
-	mvn	w8, w8
-	add	w0, w8, w0
+	subs	w8, w0, #1
+	csel	w8, wzr, w8, lo
+	sub	w0, w8, #1
 	ret
 

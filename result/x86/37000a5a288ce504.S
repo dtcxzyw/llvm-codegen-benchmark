@@ -9,16 +9,18 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	cmpq	$1, %rdi
-	adcq	$-1, %rdi
-	leaq	-1(%rdi), %rax
+	xorl	%eax, %eax
+	subq	$1, %rdi
+	cmovaeq	%rdi, %rax
+	decq	%rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
-	cmpq	$1, %rdi
-	adcq	$-1, %rdi
-	leaq	3(%rdi), %rax
+	xorl	%eax, %eax
+	subq	$1, %rdi
+	cmovaeq	%rdi, %rax
+	addq	$3, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

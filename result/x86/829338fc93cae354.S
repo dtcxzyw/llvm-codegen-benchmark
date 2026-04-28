@@ -6,8 +6,8 @@ func0000000000000004:
 	movq	%rdi, %rax
 	retq
 .LBB0_1:
-	cmpq	$1, %rsi
-	adcq	$-1, %rsi
-	movq	%rsi, %rax
+	xorl	%eax, %eax
+	subq	$1, %rsi
+	cmovaeq	%rsi, %rax
 	retq
 

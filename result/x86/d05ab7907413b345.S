@@ -1,19 +1,19 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
-	movq	%rsi, %rax
-	subq	%rdi, %rax
-	sarq	$3, %rax
-	cmpq	$1, %rax
-	adcq	$-1, %rax
+	subq	%rdi, %rsi
+	sarq	$3, %rsi
+	xorl	%eax, %eax
+	subq	$1, %rsi
+	cmovaeq	%rsi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
-	movq	%rsi, %rax
-	subq	%rdi, %rax
-	sarq	$3, %rax
-	cmpq	$1, %rax
-	adcq	$-1, %rax
+	subq	%rdi, %rsi
+	sarq	$3, %rsi
+	xorl	%eax, %eax
+	subq	$1, %rsi
+	cmovaeq	%rsi, %rax
 	retq
 

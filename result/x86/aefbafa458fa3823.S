@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	movl	%edi, %eax
-	cmpw	$1, %ax
-	adcl	$-1, %eax
+	xorl	%eax, %eax
+	subw	$1, %di
+	cmovael	%edi, %eax
 	retq
 

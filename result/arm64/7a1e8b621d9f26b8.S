@@ -1,7 +1,6 @@
 func0000000000000000:
-	cmp	x0, #0
-	cset	w8, ne
-	sub	x8, x0, x8
+	subs	x8, x0, #1
+	csel	x8, xzr, x8, lo
 	lsl	x0, x8, #2
 	ret
 

@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	movq	%rdx, %rax
-	cmpq	$1, %rdx
-	adcq	$-1, %rax
+	xorl	%eax, %eax
+	subq	$1, %rdx
+	cmovaeq	%rdx, %rax
 	testb	$1, %dil
 	cmovneq	%rsi, %rax
 	retq

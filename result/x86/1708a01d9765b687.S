@@ -1,9 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	cmpq	$1, %rsi
-	adcq	$-1, %rsi
-	leaq	(%rsi,%rdi), %rax
+	xorl	%eax, %eax
+	subq	$1, %rsi
+	cmovaeq	%rsi, %rax
+	addq	%rdi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
