@@ -1,8 +1,7 @@
 func0000000000000826:
-	cmp	x1, x2
-	and	w9, w0, #0xff
-	cset	w8, hi
-	sub	w8, w9, w8
+	cmp	x2, x1
+	and	w8, w0, #0xff
+	sbc	w8, w8, wzr
 	cmp	w8, #3
 	cset	w0, lt
 	ret

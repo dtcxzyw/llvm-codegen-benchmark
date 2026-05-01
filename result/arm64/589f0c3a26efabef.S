@@ -28,9 +28,8 @@ func0000000000000401:
 	ret
 
 func0000000000000404:
-	cmp	x1, x2
-	cset	w8, hi
-	sub	x8, x0, x8
+	cmp	x2, x1
+	sbc	x8, x0, xzr
 	cmp	x8, #3
 	cset	w0, lo
 	ret

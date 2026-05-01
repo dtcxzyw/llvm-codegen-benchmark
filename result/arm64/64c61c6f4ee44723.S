@@ -1,8 +1,8 @@
 func0000000000000010:
 	mov	w8, #65531
-	cmp	w8, w1, uxth
-	cset	w8, hi
-	sub	w0, w0, w8
+	and	w9, w1, #0xffff
+	cmp	w9, w8
+	sbc	w0, w0, wzr
 	ret
 
 func0000000000000005:
@@ -21,9 +21,9 @@ func0000000000000004:
 
 func0000000000000011:
 	mov	w8, #65534
-	cmp	w8, w1, uxth
-	cset	w8, hi
-	sub	w0, w0, w8
+	and	w9, w1, #0xffff
+	cmp	w9, w8
+	sbc	w0, w0, wzr
 	ret
 
 func0000000000000031:

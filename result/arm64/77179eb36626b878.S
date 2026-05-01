@@ -5,9 +5,8 @@ func0000000000000005:
 	ret
 
 func0000000000000020:
-	cmp	x0, x1
-	cset	w8, hi
-	sub	x0, x0, x8
+	cmp	x1, x0
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000004:

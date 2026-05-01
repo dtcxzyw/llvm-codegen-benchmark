@@ -11,14 +11,12 @@ func0000000000000006:
 	ret
 
 func0000000000000022:
-	cmp	x0, x1
-	cset	w8, hi
-	sub	x0, x0, x8
+	cmp	x1, x0
+	sbc	x0, x0, xzr
 	ret
 
 func0000000000000020:
-	cmp	x0, x1
-	cset	w8, hi
-	sub	x0, x0, x8
+	cmp	x1, x0
+	sbc	x0, x0, xzr
 	ret
 

@@ -57,9 +57,8 @@ func0000000000000011:
 	ret
 
 func0000000000000021:
-	cmp	w1, w2
-	cset	w8, hi
-	sub	w0, w0, w8
+	cmp	w2, w1
+	sbc	w0, w0, wzr
 	ret
 
 func0000000000000015:

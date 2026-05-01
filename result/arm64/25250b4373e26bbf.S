@@ -1,7 +1,6 @@
 func0000000000000021:
-	cmp	x1, x2
-	cset	w8, hi
-	sub	w8, w0, w8
+	cmp	x2, x1
+	sbc	w8, w0, wzr
 	sxtw	x0, w8
 	ret
 
