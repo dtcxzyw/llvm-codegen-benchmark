@@ -178,11 +178,9 @@ func0000000000000110:
 
 	.prefalign	4, .Lfunc_end18, nop
 func0000000000000048:
-	cmpl	$3, %edi
-	sete	%al
-	setb	%cl
-	andb	%sil, %al
-	orb	%cl, %al
+	btl	$0, %esi
+	sbbl	$3, %edi
+	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end19, nop

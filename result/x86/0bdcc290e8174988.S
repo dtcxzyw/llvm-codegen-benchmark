@@ -34,10 +34,8 @@ func0000000000000108:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000048:
-	cmpw	$8, %di
-	sete	%al
-	setb	%cl
-	andb	%sil, %al
-	orb	%cl, %al
+	btl	$0, %esi
+	sbbw	$8, %di
+	setb	%al
 	retq
 

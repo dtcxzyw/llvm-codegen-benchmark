@@ -146,10 +146,11 @@ func0000000000000110:
 	ret
 
 func0000000000000048:
-	cmp	w0, #3
-	cset	w8, eq
-	and	w8, w8, w1
-	csinc	w0, w8, wzr, hs
+	and	w9, w1, #0x1
+	mov	w8, #3
+	cmp	wzr, w9
+	sbcs	wzr, w0, w8
+	cset	w0, lo
 	ret
 
 func0000000000000102:

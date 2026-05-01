@@ -10,10 +10,8 @@ func0000000000000026:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
-	cmpl	%esi, %edi
-	sete	%al
-	setb	%cl
-	andb	%dl, %al
-	orb	%cl, %al
+	btl	$0, %edx
+	sbbl	%esi, %edi
+	setb	%al
 	retq
 
