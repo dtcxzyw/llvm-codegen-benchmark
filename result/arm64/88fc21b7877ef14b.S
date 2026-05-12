@@ -1,8 +1,7 @@
 func000000000000005b:
-	mov	w8, #67043328
-	mov	w9, #55296
-	add	w8, w0, w8
-	add	w0, w9, w8, lsr #10
+	mov	w8, #55232
+	movk	w8, #1, lsl #16
+	add	w0, w8, w0, lsr #10
 	ret
 
 func0000000000000001:

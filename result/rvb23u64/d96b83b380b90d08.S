@@ -16,9 +16,8 @@ func0000000000000028:
 
 func0000000000000038:
 	or	a0, a0, a1
-	lui	a1, 16
-	add	a0, a0, a1
 	srliw	a0, a0, 12
+	addi	a0, a0, 16
 	ret
 
 func0000000000000022:

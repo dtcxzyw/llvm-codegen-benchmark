@@ -127,24 +127,24 @@ func0000000000000301:
 	retq
 
 .LCPI11_0:
-	.quad	8589934584
+	.long	4294967292
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000304:
-	vpaddq	.LCPI11_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
+	vpaddd	.LCPI11_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI12_0:
-	.quad	8589934584
+	.long	4294967292
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000308:
-	vpaddq	.LCPI12_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
+	vpaddd	.LCPI12_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpnleud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

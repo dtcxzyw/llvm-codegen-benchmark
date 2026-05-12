@@ -23,19 +23,17 @@ func000000000000001b:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
-	shlq	$31, %rdi
-	movabsq	$-85899345920, %rax
-	addq	%rdi, %rax
-	sarq	$32, %rax
+	shrq	%rdi
+	movslq	%edi, %rax
+	addq	$-20, %rax
 	andq	$-8, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
-	shlq	$16, %rdi
-	movabsq	$137438953472, %rax
-	addq	%rdi, %rax
-	sarq	$32, %rax
+	shrq	$16, %rdi
+	movslq	%edi, %rax
+	addq	$32, %rax
 	andq	$-64, %rax
 	retq
 

@@ -28,8 +28,8 @@ func0000000000000077:
 
 func00000000000000f4:
 	add	w8, w2, w1
-	add	w8, w8, #48
 	lsr	w8, w8, #3
+	add	w8, w8, #6
 	add	x0, x0, x8
 	ret
 

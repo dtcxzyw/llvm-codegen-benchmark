@@ -7,8 +7,9 @@ func0000000000000004:
 	ret
 
 func000000000000000e:
-	addiw	a1, a1, -160
+	sext.w	a1, a1
 	srli	a1, a1, 1
+	addi	a1, a1, -80
 	sh2add	a0, a1, a0
 	ret
 

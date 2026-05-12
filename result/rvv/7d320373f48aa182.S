@@ -43,13 +43,14 @@ func000000000000000e:
 
 func000000000000001f:
 	li	a0, 21
-	bseti	a1, zero, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addi	a0, a1, -16
-	addi	a1, a1, -4
+	bseti	a0, zero, 33
+	addi	a0, a0, -16
 	vand.vx	v8, v8, a0
-	csrwi	vxrm, 2
-	vaaddu.vx	v8, v8, a1
+	li	a0, -2
+	vsrl.vi	v8, v8, 1
+	zext.w	a0, a0
+	vadd.vx	v8, v8, a0
 	ret
 

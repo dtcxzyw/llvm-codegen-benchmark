@@ -4,13 +4,13 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	addi	a0, a0, -320
 	sraiw	a0, a0, 1
+	addi	a0, a0, -160
 	ret
 
 func0000000000000003:
-	addi	a0, a0, -160
 	sraiw	a0, a0, 1
+	addi	a0, a0, -80
 	ret
 
 func0000000000000001:

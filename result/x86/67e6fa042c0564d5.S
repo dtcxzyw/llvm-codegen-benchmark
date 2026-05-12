@@ -115,10 +115,8 @@ func0000000000000013:
 
 	.prefalign	4, .Lfunc_end16, nop
 func000000000000001c:
-	movabsq	$25769803776, %rax
-	addq	%rsi, %rax
-	shrq	$32, %rax
-	addq	%rdi, %rax
+	shrq	$32, %rsi
+	leaq	6(%rsi,%rdi), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end17, nop

@@ -25,12 +25,13 @@ func0000000000000106:
 	ret
 
 func0000000000000301:
-	bseti	a0, zero, 34
-	addi	a0, a0, -8
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
+	li	a0, -2
+	zext.w	a0, a0
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 2
+	vnsrl.wi	v9, v10, 0
 	vmseq.vv	v0, v8, v9
 	ret
 

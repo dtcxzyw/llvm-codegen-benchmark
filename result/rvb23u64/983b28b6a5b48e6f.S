@@ -23,11 +23,9 @@ func000000000000002c:
 	ret
 
 func000000000000007f:
-	bseti	a2, zero, 32
-	add	a1, a1, a2
 	srli	a1, a1, 30
 	add	a0, a0, a1
-	addi	a0, a0, 12
+	addi	a0, a0, 16
 	ret
 
 func000000000000003f:

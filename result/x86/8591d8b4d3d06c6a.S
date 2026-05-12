@@ -70,9 +70,8 @@ func000000000000000f:
 
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000003f:
-	addl	$160, %esi
 	shrl	%esi
-	leaq	(%rdi,%rsi,4), %rax
+	leaq	320(%rdi,%rsi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop

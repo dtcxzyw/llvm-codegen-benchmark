@@ -13,8 +13,8 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
-	leaq	96(%rdi), %rax
-	shrq	$3, %rax
+	shrq	$3, %rdi
+	leaq	12(%rdi), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

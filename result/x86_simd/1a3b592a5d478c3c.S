@@ -42,13 +42,13 @@ func0000000000000008:
 	retq
 
 .LCPI4_0:
-	.long	744
+	.long	186
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001f:
 	vpaddd	%ymm0, %ymm0, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$2, %ymm0, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

@@ -44,24 +44,24 @@ func0000000000000004:
 	retq
 
 .LCPI4_0:
-	.long	55232
+	.long	1726
 .LCPI4_1:
 	.long	2047
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$5, %ymm0, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	vpandd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:
-	.long	512
+	.long	32
 .LCPI5_1:
 	.long	262112
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000007:
-	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$4, %ymm0, %ymm0
+	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vpandd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 

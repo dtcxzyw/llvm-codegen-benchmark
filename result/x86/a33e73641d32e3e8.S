@@ -29,11 +29,10 @@ func0000000000000c41:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000c04:
-	movabsq	$8589934584, %rax
-	addq	%rsi, %rax
-	shrq	%rax
+	shrq	%rsi
+	addl	$-4, %esi
 	incl	%edi
-	cmpl	%eax, %edi
+	cmpl	%esi, %edi
 	setb	%al
 	retq
 

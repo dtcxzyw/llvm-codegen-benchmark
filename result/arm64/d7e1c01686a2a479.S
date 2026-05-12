@@ -5,11 +5,9 @@ func0000000000000011:
 	ret
 
 func000000000000001a:
-	mov	x8, #281389077364736
-	mov	w9, w0
-	movk	x8, #65535, lsl #48
-	add	x8, x8, x9, lsl #31
-	asr	x0, x8, #32
+	mov	w8, w0
+	ubfx	x8, x8, #1, #32
+	sub	x0, x8, #20
 	ret
 
 func000000000000001b:

@@ -12,14 +12,13 @@ func0000000000000006:
 	retq
 
 .LCPI1_0:
-	.long	55296
+	.long	432
 .LCPI1_1:
 	.long	65534
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
-	vpsrld	$10, %ymm0, %ymm0
+	vpsrld	$17, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$7, %ymm0, %ymm0
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 

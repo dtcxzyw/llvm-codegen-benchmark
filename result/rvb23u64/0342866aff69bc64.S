@@ -1,10 +1,7 @@
 func00000000000000c4:
-	lui	a2, 2048
-	addi	a2, a2, -1
-	slli	a2, a2, 21
-	add	a1, a1, a2
-	slli	a1, a1, 20
-	srli	a1, a1, 32
+	srli	a1, a1, 12
+	addi	a1, a1, -512
+	zext.w	a1, a1
 	sltu	a0, a1, a0
 	ret
 

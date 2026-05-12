@@ -17,17 +17,15 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	lui	a1, 13
-	addi	a1, a1, 1984
-	add	a0, a0, a1
-	slli	a0, a0, 48
-	srli	a0, a0, 53
+	srli	a0, a0, 5
+	addi	a0, a0, 1726
+	andi	a0, a0, 2047
 	ret
 
 func000000000000000f:
-	addi	a0, a0, 512
-	lui	a1, 64
 	srli	a0, a0, 4
+	lui	a1, 64
+	addi	a0, a0, 32
 	addi	a1, a1, -32
 	and	a0, a0, a1
 	ret

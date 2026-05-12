@@ -20,9 +20,8 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	lui	a1, 32768
-	add	a0, a0, a1
 	srliw	a0, a0, 24
+	addi	a0, a0, 8
 	ret
 
 func0000000000000001:
@@ -31,9 +30,9 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	lui	a1, 4080
-	add	a0, a0, a1
 	srliw	a0, a0, 10
+	li	a1, 2040
+	sh3add	a0, a1, a0
 	ret
 
 func0000000000000005:

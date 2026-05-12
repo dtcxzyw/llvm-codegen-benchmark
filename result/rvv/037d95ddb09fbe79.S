@@ -48,12 +48,12 @@ func0000000000000000:
 	ret
 
 func000000000000001f:
-	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v8, v8, a0
-	bseti	a0, zero, 32
-	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 30
+	vsll.vi	v8, v8, 2
+	bseti	a0, zero, 34
+	addi	a0, a0, -4
+	vand.vx	v8, v8, a0
+	vadd.vi	v8, v8, 4
 	ret
 
 func000000000000001a:

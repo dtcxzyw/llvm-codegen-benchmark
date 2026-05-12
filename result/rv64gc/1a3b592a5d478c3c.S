@@ -34,8 +34,8 @@ func0000000000000008:
 func000000000000001f:
 	slli	a1, a0, 1
 	add	a0, a0, a1
-	addi	a0, a0, 744
 	srliw	a0, a0, 2
+	addi	a0, a0, 186
 	ret
 
 func000000000000001e:

@@ -5,10 +5,9 @@ func000000000000001b:
 	ret
 
 func000000000000001f:
-	mov	x8, #4294967296
-	and	w9, w0, #0xff
-	add	x8, x8, x9, lsl #32
-	lsr	x0, x8, #30
+	and	x8, x0, #0xff
+	lsl	x8, x8, #2
+	add	x0, x8, #4
 	ret
 
 func000000000000001e:

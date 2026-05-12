@@ -21,11 +21,10 @@ func0000000000000016:
 	ret
 
 func0000000000000034:
-	li	a0, 27
-	slli	a0, a0, 11
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 8
+	li	a0, 216
+	vadd.vx	v10, v10, a0
 	li	a0, 255
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v8

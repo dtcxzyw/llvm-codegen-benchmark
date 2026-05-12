@@ -80,12 +80,12 @@ func0000000000000020:
 	retq
 
 .LCPI8_0:
-	.quad	137438953472
+	.quad	32
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$16, %ymm0, %ymm0
-	vpaddq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	vpsraq	$32, %ymm0, %ymm0
+	vpaddq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 

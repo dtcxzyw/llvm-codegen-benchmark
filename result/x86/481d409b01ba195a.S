@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000036:
-	leal	67043328(%rdi), %eax
-	shrl	$10, %eax
-	addl	$55296, %eax
+	shrl	$10, %edi
+	leal	120768(%rdi), %eax
 	shrl	$12, %eax
 	retq
 

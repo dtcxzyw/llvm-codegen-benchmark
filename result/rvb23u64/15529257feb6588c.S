@@ -35,8 +35,8 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	addi	a0, a0, 496
 	slli	a0, a0, 48
 	srli	a0, a0, 49
+	addi	a0, a0, 248
 	ret
 

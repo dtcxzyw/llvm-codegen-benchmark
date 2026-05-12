@@ -53,11 +53,11 @@ func0000000000000003:
 	retq
 
 .LCPI6_0:
-	.long	160
+	.long	80
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000f:
-	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$1, %xmm0, %xmm0
+	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

@@ -99,21 +99,15 @@ func0000000000000301:
 
 func0000000000000304:
 	sext.w	a0, a0
-	bseti	a2, zero, 33
-	addi	a2, a2, -8
-	add	a1, a1, a2
 	srli	a1, a1, 1
-	sext.w	a1, a1
+	addiw	a1, a1, -4
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000308:
 	sext.w	a0, a0
-	bseti	a2, zero, 33
-	addi	a2, a2, -8
-	add	a1, a1, a2
 	srli	a1, a1, 1
-	sext.w	a1, a1
+	addiw	a1, a1, -4
 	sltu	a0, a1, a0
 	ret
 

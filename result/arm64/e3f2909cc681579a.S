@@ -30,8 +30,8 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
-	mov	x8, #8589934588
-	add	x8, x8, w0, uxtw
-	lsr	x0, x8, #1
+	mov	w8, #-2
+	mov	w9, w0
+	add	x0, x8, x9, lsr #1
 	ret
 

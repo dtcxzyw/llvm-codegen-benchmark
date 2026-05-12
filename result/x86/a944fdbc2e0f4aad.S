@@ -31,8 +31,8 @@ func0000000000000019:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001b:
-	leal	64(%rdi), %eax
-	shrl	$3, %eax
+	shrl	$3, %edi
+	leal	8(%rdi), %eax
 	andl	$33554424, %eax
 	addl	$8, %eax
 	retq

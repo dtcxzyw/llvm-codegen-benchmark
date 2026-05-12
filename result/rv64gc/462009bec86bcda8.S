@@ -4,9 +4,8 @@ func0000000000000006:
 	addi	a1, a1, -833
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
-	srli	a0, a0, 35
-	addi	a0, a0, 64
-	srli	a0, a0, 3
+	srli	a0, a0, 38
+	addi	a0, a0, 8
 	ret
 
 func0000000000000002:

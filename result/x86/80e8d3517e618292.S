@@ -10,8 +10,8 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	imull	%esi, %edi
-	leal	8388608(%rdi), %eax
-	shrl	$16, %eax
+	shrl	$16, %edi
+	leal	128(%rdi), %eax
 	andl	$65280, %eax
 	retq
 

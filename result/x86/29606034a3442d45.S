@@ -26,10 +26,8 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000301:
-	movabsq	$17179869120, %rax
-	addq	%rdi, %rax
-	shrq	$2, %rax
-	cmpl	$5, %eax
+	shrq	$2, %rdi
+	cmpl	$21, %edi
 	sete	%al
 	retq
 
@@ -78,10 +76,8 @@ func000000000000030a:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000381:
-	movabsq	$17179869176, %rax
-	addq	%rdi, %rax
-	shrq	$2, %rax
-	testl	%eax, %eax
+	shrq	$2, %rdi
+	cmpl	$2, %edi
 	sete	%al
 	retq
 

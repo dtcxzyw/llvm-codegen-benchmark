@@ -96,10 +96,8 @@ func0000000000000046:
 	ret
 
 func000000000000006a:
-	li	a2, -1
-	slli	a2, a2, 34
-	add	a1, a1, a2
 	srai	a1, a1, 32
+	addi	a1, a1, -4
 	slt	a0, a1, a0
 	ret
 

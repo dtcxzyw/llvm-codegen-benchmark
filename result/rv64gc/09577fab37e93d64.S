@@ -30,7 +30,7 @@ func0000000000000003:
 	ret
 
 func000000000000000f:
-	addi	a0, a0, 160
 	srliw	a0, a0, 1
+	addiw	a0, a0, 80
 	ret
 

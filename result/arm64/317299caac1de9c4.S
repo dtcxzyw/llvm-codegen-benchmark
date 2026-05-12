@@ -24,9 +24,9 @@ func000000000000030a:
 	ret
 
 func000000000000070a:
-	mov	x8, #17179869176
-	add	x8, x8, w0, uxtw
-	lsr	x8, x8, #2
+	mov	w8, #-2
+	mov	w9, w0
+	add	x8, x8, x9, lsr #2
 	cmp	w8, #0
 	cset	w0, gt
 	ret

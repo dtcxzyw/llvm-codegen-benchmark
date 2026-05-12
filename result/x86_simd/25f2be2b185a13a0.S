@@ -18,11 +18,11 @@ func0000000000000001:
 	retq
 
 .LCPI2_0:
-	.quad	48
+	.quad	24
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
-	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
+	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpmaxuq	%ymm0, %ymm1, %ymm0
 	retq
 

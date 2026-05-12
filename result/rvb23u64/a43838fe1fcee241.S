@@ -9,10 +9,8 @@ func000000000000001b:
 
 func000000000000001f:
 	zext.b	a0, a0
-	slli	a0, a0, 32
-	bseti	a1, zero, 32
-	add	a0, a0, a1
-	srli	a0, a0, 30
+	slli	a0, a0, 2
+	addi	a0, a0, 4
 	ret
 
 func000000000000001e:

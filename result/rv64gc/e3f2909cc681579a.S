@@ -37,9 +37,9 @@ func000000000000000a:
 func000000000000000f:
 	sext.w	a0, a0
 	li	a1, 1
-	slli	a1, a1, 33
-	addi	a1, a1, -4
-	add	a0, a0, a1
 	srli	a0, a0, 1
+	slli	a1, a1, 32
+	addi	a1, a1, -2
+	add	a0, a0, a1
 	ret
 

@@ -11,8 +11,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	addi	a1, a1, 48
 	srli	a1, a1, 1
+	addi	a1, a1, 24
 	maxu	a0, a1, a0
 	ret
 

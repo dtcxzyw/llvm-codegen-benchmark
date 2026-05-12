@@ -1,10 +1,10 @@
 	.att_syntax
 .LCPI0_0:
-	.quad	17592183947264
+	.quad	4294966784
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c4:
-	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$12, %ymm1, %ymm1
+	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
 	vpcmpltuq	%ymm0, %ymm1, %k0

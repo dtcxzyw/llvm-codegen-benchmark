@@ -30,14 +30,14 @@ func00000000000000c1:
 	retq
 
 .LCPI2_0:
-	.quad	8589934584
+	.quad	2147483646
 .LCPI2_1:
 	.quad	2147483647
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000001c1:
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
+	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpandq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

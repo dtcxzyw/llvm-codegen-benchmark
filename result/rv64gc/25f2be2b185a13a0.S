@@ -16,8 +16,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	addi	a1, a1, 48
 	srli	a1, a1, 1
+	addi	a1, a1, 24
 	bltu	a0, a1, .LBB2_2
 	mv	a1, a0
 .LBB2_2:

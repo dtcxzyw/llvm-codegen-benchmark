@@ -15,10 +15,9 @@ func0000000000000035:
 	ret
 
 func0000000000000031:
-	lui	a1, 16
-	add	a0, a0, a1
-	slli	a0, a0, 46
-	srli	a0, a0, 58
+	srli	a0, a0, 12
+	addi	a0, a0, 16
+	andi	a0, a0, 63
 	addiw	a0, a0, -128
 	ret
 

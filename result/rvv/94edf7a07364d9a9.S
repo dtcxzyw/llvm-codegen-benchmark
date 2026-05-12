@@ -28,22 +28,21 @@ func000000000000001b:
 
 func000000000000001a:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v8, v8, 31
-	li	a0, -5
-	slli	a0, a0, 34
+	vsrl.vi	v8, v8, 1
+	li	a0, -1
+	srli	a0, a0, 32
+	vand.vx	v8, v8, a0
+	li	a0, -20
 	vadd.vx	v8, v8, a0
-	li	a0, 32
-	vsra.vx	v8, v8, a0
 	vand.vi	v8, v8, -8
 	ret
 
 func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 16
-	bseti	a0, zero, 37
-	vadd.vx	v8, v8, a0
 	li	a0, 32
 	vsra.vx	v8, v8, a0
+	vadd.vx	v8, v8, a0
 	li	a0, -64
 	vand.vx	v8, v8, a0
 	ret

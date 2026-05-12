@@ -42,12 +42,10 @@ func0000000000000006:
 	ret
 
 func000000000000000f:
-	li	a0, 8
-	csrwi	vxrm, 2
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vaaddu.vx	v10, v8, a0
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vzext.vf4	v8, v10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf4	v10, v8
+	vsrl.vi	v8, v10, 1
+	vadd.vi	v8, v8, 4
 	ret
 
 func0000000000000007:

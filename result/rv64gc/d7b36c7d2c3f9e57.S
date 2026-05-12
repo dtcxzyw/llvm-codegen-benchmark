@@ -21,12 +21,11 @@ func00000000000000c1:
 	ret
 
 func00000000000001c1:
-	sext.w	a1, a1
-	li	a2, 1
-	slli	a2, a2, 33
-	addi	a2, a2, -8
+	sraiw	a1, a1, 2
+	lui	a2, 524288
+	addi	a2, a2, -2
 	add	a1, a1, a2
-	slli	a1, a1, 31
+	slli	a1, a1, 33
 	srli	a1, a1, 33
 	xor	a0, a0, a1
 	seqz	a0, a0

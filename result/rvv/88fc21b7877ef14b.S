@@ -1,11 +1,9 @@
 func000000000000005b:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 16368
-	vadd.vx	v8, v10, a0
-	li	a0, 27
-	vsrl.vi	v8, v8, 10
-	slli	a0, a0, 11
+	lui	a0, 29
+	vsrl.vi	v8, v10, 10
+	addi	a0, a0, 1984
 	vadd.vx	v8, v8, a0
 	ret
 

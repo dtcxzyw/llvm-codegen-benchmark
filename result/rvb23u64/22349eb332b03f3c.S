@@ -58,9 +58,9 @@ func000000000000001a:
 	ret
 
 func0000000000000006:
-	slli	a0, a0, 6
-	lui	a1, 4080
-	add	a0, a0, a1
-	srliw	a0, a0, 10
+	slli	a0, a0, 38
+	srli	a0, a0, 42
+	li	a1, 2040
+	sh3add	a0, a1, a0
 	ret
 

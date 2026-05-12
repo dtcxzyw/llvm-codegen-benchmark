@@ -26,8 +26,8 @@ func000000000000001d:
 
 func000000000000003d:
 	add	w8, w1, w0
-	add	w8, w8, #48
-	lsr	w0, w8, #3
+	lsr	w8, w8, #3
+	add	w0, w8, #6
 	ret
 
 func0000000000000021:

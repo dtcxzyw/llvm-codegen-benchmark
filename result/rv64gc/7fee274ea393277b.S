@@ -59,9 +59,8 @@ func000000000000000e:
 	ret
 
 func000000000000004c:
-	addi	a1, a1, 64
 	srli	a1, a1, 1
 	add	a0, a0, a1
-	addi	a0, a0, 80
+	addi	a0, a0, 112
 	ret
 

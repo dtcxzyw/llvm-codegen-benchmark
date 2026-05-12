@@ -50,9 +50,9 @@ func000000000000007f:
 	ret
 
 func00000000000000f3:
-	addi	a1, a1, 160
-	lui	a2, 225
 	srliw	a1, a1, 1
+	lui	a2, 225
+	addiw	a1, a1, 80
 	addi	a2, a2, 1280
 	slli	a1, a1, 2
 	add	a0, a0, a2

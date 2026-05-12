@@ -34,26 +34,12 @@ func0000000000000006:
 	retq
 
 .LCPI4_0:
-	.byte	7
-	.byte	7
-	.byte	7
-	.byte	7
-	.byte	7
-	.byte	7
-	.byte	7
-	.byte	7
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.long	4
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
-	vpavgb	.LCPI4_0(%rip), %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
+	vpsrld	$1, %ymm0, %ymm0
+	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

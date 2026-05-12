@@ -39,8 +39,8 @@ func00000000000000df:
 	ret
 
 func00000000000000f3:
-	addi	a1, a1, 160
 	srliw	a1, a1, 1
+	addiw	a1, a1, 80
 	sh2add	a0, a1, a0
 	lui	a1, 150
 	addi	a1, a1, 768
@@ -48,8 +48,8 @@ func00000000000000f3:
 	ret
 
 func00000000000000ff:
-	addi	a1, a1, 160
 	srliw	a1, a1, 1
+	addiw	a1, a1, 80
 	sh2add	a0, a1, a0
 	lui	a1, 163
 	addi	a1, a1, -1280

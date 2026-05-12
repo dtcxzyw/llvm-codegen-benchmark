@@ -6,9 +6,8 @@ func0000000000000036:
 	ret
 
 func0000000000000030:
-	mov	x8, #17179865088
-	add	x8, x1, x8
-	lsr	x8, x8, #2
+	mov	w8, #-1024
+	add	x8, x8, x1, lsr #2
 	cmp	w0, w8
 	csel	w0, w0, w8, lo
 	ret

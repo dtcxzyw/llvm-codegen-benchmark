@@ -38,12 +38,12 @@ func0000000000000008:
 	ret
 
 func000000000000001f:
-	li	a0, 744
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.x	v10, a0
 	li	a0, 3
-	vmacc.vx	v10, a0, v8
-	vsrl.vi	v8, v10, 2
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmul.vx	v8, v8, a0
+	vsrl.vi	v8, v8, 2
+	li	a0, 186
+	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000001e:

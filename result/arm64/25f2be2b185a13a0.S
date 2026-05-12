@@ -13,8 +13,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	add	x8, x1, #48
-	lsr	x8, x8, #1
+	lsr	x8, x1, #1
+	add	x8, x8, #24
 	cmp	x8, x0
 	csel	x0, x8, x0, hi
 	ret

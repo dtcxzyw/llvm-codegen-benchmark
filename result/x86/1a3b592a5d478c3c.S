@@ -27,8 +27,9 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001f:
-	leal	744(%rdi,%rdi,2), %eax
+	leal	(%rdi,%rdi,2), %eax
 	shrl	$2, %eax
+	addl	$186, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

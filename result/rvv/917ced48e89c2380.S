@@ -7,11 +7,13 @@ func0000000000000002:
 	ret
 
 func0000000000000010:
-	lui	a0, 4080
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v8, v8, 10
+	lui	a0, 4
+	addi	a0, a0, -64
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v8, v10, 10
+	vnsrl.wi	v8, v10, 0
 	ret
 
 func000000000000001b:
@@ -47,11 +49,13 @@ func0000000000000012:
 	ret
 
 func0000000000000018:
-	lui	a0, 16368
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v8, v8, 10
+	lui	a0, 16
+	addi	a0, a0, -64
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v8, v10, 10
+	vnsrl.wi	v8, v10, 0
 	ret
 
 func0000000000000013:
@@ -95,11 +99,12 @@ func0000000000000007:
 	ret
 
 func000000000000001a:
-	lui	a0, 240
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v8, v8, 10
+	li	a0, 960
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vnsrl.wi	v8, v10, 10
+	vnsrl.wi	v8, v10, 0
 	ret
 
 func000000000000000e:

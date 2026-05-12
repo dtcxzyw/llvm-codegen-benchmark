@@ -6,11 +6,8 @@ func0000000000000078:
 	ret
 
 func000000000000007f:
-	slli	a1, a1, 32
-	bseti	a2, zero, 32
-	add	a1, a1, a2
-	srli	a1, a1, 30
-	add	a0, a0, a1
+	sh2add.uw	a0, a1, a0
+	addi	a0, a0, 4
 	ret
 
 func000000000000006f:

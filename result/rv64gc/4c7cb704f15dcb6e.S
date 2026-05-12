@@ -44,9 +44,9 @@ func00000000000000df:
 	ret
 
 func00000000000000f3:
-	addi	a1, a1, 160
-	lui	a2, 150
 	srliw	a1, a1, 1
+	lui	a2, 150
+	addiw	a1, a1, 80
 	addi	a2, a2, 768
 	slli	a1, a1, 2
 	add	a0, a0, a2
@@ -54,9 +54,9 @@ func00000000000000f3:
 	ret
 
 func00000000000000ff:
-	addi	a1, a1, 160
-	lui	a2, 163
 	srliw	a1, a1, 1
+	lui	a2, 163
+	addiw	a1, a1, 80
 	addi	a2, a2, -1280
 	slli	a1, a1, 2
 	add	a0, a0, a2

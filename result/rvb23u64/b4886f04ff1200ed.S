@@ -12,8 +12,9 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	addi	a0, a0, 96
-	bexti	a0, a0, 3
+	srli	a0, a0, 3
+	addi	a0, a0, 12
+	andi	a0, a0, 1
 	ret
 
 func0000000000000001:

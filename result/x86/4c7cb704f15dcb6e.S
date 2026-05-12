@@ -40,15 +40,13 @@ func00000000000000df:
 
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000f3:
-	addl	$160, %esi
 	shrl	%esi
-	leaq	615168(%rdi,%rsi,4), %rax
+	leaq	615488(%rdi,%rsi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func00000000000000ff:
-	addl	$160, %esi
 	shrl	%esi
-	leaq	666368(%rdi,%rsi,4), %rax
+	leaq	666688(%rdi,%rsi,4), %rax
 	retq
 

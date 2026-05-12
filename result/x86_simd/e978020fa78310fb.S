@@ -30,11 +30,11 @@ func000000000000000a:
 	retq
 
 .LCPI3_0:
-	.long	65536
+	.long	16
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

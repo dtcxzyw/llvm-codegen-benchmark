@@ -52,9 +52,8 @@ func0000000000000020:
 	ret
 
 func000000000000002a:
-	mov	x8, #137438953472
-	add	x9, x0, x1
-	add	x8, x8, x9, lsl #16
-	asr	x0, x8, #32
+	add	x8, x0, x1
+	sbfx	x8, x8, #16, #32
+	add	x0, x8, #32
 	ret
 

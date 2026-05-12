@@ -66,9 +66,8 @@ func0000000000000008:
 	ret
 
 func00000000000001ea:
-	bseti	a2, zero, 34
-	sub	a1, a1, a2
 	srai	a1, a1, 32
+	addi	a1, a1, -4
 	addi	a0, a0, 4
 	slt	a0, a1, a0
 	ret

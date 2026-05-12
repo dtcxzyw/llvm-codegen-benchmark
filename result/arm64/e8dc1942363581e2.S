@@ -58,10 +58,8 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	mov	x8, #281449206906880
-	movk	x8, #65535, lsl #48
-	add	x8, x1, x8
-	add	x0, x0, x8, asr #32
+	add	x8, x0, x1, asr #32
+	sub	x0, x8, #6
 	ret
 
 func0000000000000000:

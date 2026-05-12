@@ -9,8 +9,9 @@ func000000000000002a:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	imull	%edx, %esi
-	leal	8384512(%rdi,%rsi), %eax
+	leal	(%rsi,%rdi), %eax
 	shrl	$8, %eax
+	addl	$32752, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

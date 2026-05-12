@@ -12,8 +12,8 @@ func0000000000000018:
 	ret
 
 func0000000000000038:
-	mov	x8, #17179869176
-	add	x8, x8, w0, uxtw
-	lsr	x0, x8, #2
+	mov	w8, #-2
+	mov	w9, w0
+	add	x0, x8, x9, lsr #2
 	ret
 

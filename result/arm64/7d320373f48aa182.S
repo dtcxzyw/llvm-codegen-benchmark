@@ -28,9 +28,8 @@ func000000000000000e:
 
 func000000000000001f:
 	add	x9, x0, #21
-	mov	x8, #8589934588
+	mov	w8, #-2
 	and	x9, x9, #0x1fffffff0
-	add	x8, x9, x8
-	lsr	x0, x8, #1
+	add	x0, x8, x9, lsr #1
 	ret
 

@@ -31,11 +31,10 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	lui	a0, 13
-	addi	a0, a0, 1984
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 5
+	li	a0, 1726
+	vadd.vx	v8, v8, a0
 	li	a0, 2047
 	vand.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -43,11 +42,11 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	li	a0, 512
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vsrl.vi	v8, v8, 4
+	li	a0, 32
 	vadd.vx	v8, v8, a0
 	lui	a0, 64
-	vsrl.vi	v8, v8, 4
 	addi	a0, a0, -32
 	vand.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma

@@ -31,7 +31,7 @@ func0000000000000014:
 	movl	%esi, %eax
 	movzbl	%ah, %eax
 	imull	%edi, %eax
-	addl	$8388608, %eax
 	shrl	$16, %eax
+	subl	$-128, %eax
 	retq
 

@@ -17,8 +17,8 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
-	leaq	48(%rdx), %rax
-	shrq	%rax
+	shrq	%rdx
+	leaq	24(%rdx), %rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq

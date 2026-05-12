@@ -34,13 +34,8 @@ func000000000000030a:
 	ret
 
 func000000000000070a:
-	sext.w	a0, a0
-	li	a1, 1
-	slli	a1, a1, 34
-	addi	a1, a1, -8
-	add	a0, a0, a1
-	srli	a0, a0, 2
-	sext.w	a0, a0
+	sraiw	a0, a0, 2
+	addiw	a0, a0, -2
 	sgtz	a0, a0
 	ret
 

@@ -4,9 +4,8 @@ func0000000000000006:
 	movq	%rdi, %rax
 	shlq	$7, %rax
 	subq	%rdi, %rax
-	shrq	$7, %rax
-	addq	$4096, %rax
-	shrq	$7, %rax
+	shrq	$14, %rax
+	addq	$32, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

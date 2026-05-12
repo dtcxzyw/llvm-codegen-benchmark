@@ -21,8 +21,8 @@ func000000000000000a:
 
 func0000000000000014:
 	ubfx	w8, w1, #8, #8
-	mov	w9, #8388608
-	madd	w8, w0, w8, w9
-	lsr	w0, w8, #16
+	mul	w8, w0, w8
+	lsr	w8, w8, #16
+	add	w0, w8, #128
 	ret
 

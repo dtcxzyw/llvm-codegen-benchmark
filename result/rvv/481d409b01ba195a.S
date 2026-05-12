@@ -1,10 +1,8 @@
 func0000000000000036:
-	lui	a0, 16368
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	li	a0, 27
 	vsrl.vi	v8, v8, 10
-	slli	a0, a0, 11
+	lui	a0, 29
+	addi	a0, a0, 1984
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 12
 	ret

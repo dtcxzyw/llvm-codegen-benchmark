@@ -75,12 +75,12 @@ func0000000000000404:
 	retq
 
 .LCPI6_0:
-	.quad	17179869176
+	.long	4294967294
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000c01:
-	vpaddq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
+	vpaddd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper

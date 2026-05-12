@@ -10,11 +10,8 @@ func000000000000001b:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
-	movzbl	%dil, %ecx
-	shlq	$32, %rcx
-	movabsq	$4294967296, %rax
-	addq	%rcx, %rax
-	shrq	$30, %rax
+	movzbl	%dil, %eax
+	leaq	4(,%rax,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

@@ -17,8 +17,9 @@ func0000000000000007:
 	ret
 
 func000000000000000f:
-	mov	x8, #8589934588
-	add	x8, x8, w0, uxtw
-	ubfx	x0, x8, #1, #32
+	mov	w8, #-2
+	mov	w9, w0
+	add	x8, x8, x9, lsr #1
+	mov	w0, w8
 	ret
 

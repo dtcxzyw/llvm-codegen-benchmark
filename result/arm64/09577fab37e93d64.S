@@ -29,7 +29,7 @@ func0000000000000003:
 	ret
 
 func000000000000000f:
-	add	w8, w0, #160
-	lsr	w0, w8, #1
+	lsr	w8, w0, #1
+	add	w0, w8, #80
 	ret
 

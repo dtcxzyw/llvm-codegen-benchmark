@@ -37,8 +37,7 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
-	shrq	%rdi
-	leaq	64(%rdi), %rax
-	shrq	%rax
+	shrq	$2, %rdi
+	leaq	32(%rdi), %rax
 	retq
 

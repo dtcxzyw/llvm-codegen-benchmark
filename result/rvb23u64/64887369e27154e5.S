@@ -43,12 +43,15 @@ func0000000000000060:
 	ret
 
 func000000000000004f:
-	lui	a2, 1048575
-	add.uw	a1, a2, a1
-	lui	a2, 8
-	srliw	a1, a1, 10
-	sh3add	a0, a1, a0
-	addi	a2, a2, 8
-	add	a0, a0, a2
+	srli	a1, a1, 7
+	lui	a2, 8192
+	addi	a3, a2, -32
+	add	a1, a1, a3
+	lui	a3, 8
+	addi	a2, a2, -8
+	addi	a3, a3, 8
+	and	a1, a1, a2
+	add	a0, a0, a3
+	add	a0, a0, a1
 	ret
 

@@ -59,10 +59,9 @@ func0000000000000020:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
-	leaq	(%rdi,%rsi), %rcx
-	shlq	$16, %rcx
-	movabsq	$137438953472, %rax
-	addq	%rcx, %rax
-	sarq	$32, %rax
+	addq	%rsi, %rdi
+	shrq	$16, %rdi
+	movslq	%edi, %rax
+	addq	$32, %rax
 	retq
 

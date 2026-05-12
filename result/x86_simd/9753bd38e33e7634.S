@@ -24,15 +24,12 @@ func000000000000006d:
 	retq
 
 .LCPI2_0:
-	.quad	-16
-.LCPI2_1:
-	.quad	-4
+	.quad	-8
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000002d:
 	vpsllq	$4, %ymm0, %ymm0
-	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpsraq	$2, %ymm0, %ymm0
-	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:

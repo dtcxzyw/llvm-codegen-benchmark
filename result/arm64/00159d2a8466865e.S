@@ -21,14 +21,14 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	mov	w8, #55232
-	add	w8, w0, w8
-	ubfx	w0, w8, #5, #11
+	lsr	w8, w0, #5
+	add	w8, w8, #1726
+	and	w0, w8, #0x7ff
 	ret
 
 func0000000000000007:
-	add	w8, w0, #512
-	lsr	w8, w8, #4
+	lsr	w8, w0, #4
+	add	w8, w8, #32
 	and	w0, w8, #0x3ffe0
 	ret
 

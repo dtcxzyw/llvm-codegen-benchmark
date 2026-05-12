@@ -50,12 +50,12 @@ func0000000000000002:
 	retq
 
 .LCPI6_0:
-	.long	67043328
+	.long	65472
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vpsubd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
+	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:

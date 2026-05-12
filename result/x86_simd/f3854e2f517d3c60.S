@@ -63,12 +63,12 @@ func0000000000000003:
 	retq
 
 .LCPI7_0:
-	.quad	4294963200
+	.quad	4194300
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000001c:
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$10, %ymm0, %ymm0
+	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI8_0:

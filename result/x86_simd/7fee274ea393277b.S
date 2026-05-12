@@ -87,14 +87,11 @@ func000000000000000e:
 	retq
 
 .LCPI8_0:
-	.quad	64
-.LCPI8_1:
-	.quad	80
+	.quad	112
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000004c:
-	vpaddq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI8_1(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 

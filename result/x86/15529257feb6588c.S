@@ -43,8 +43,8 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
-	addl	$496, %edi
 	movzwl	%di, %eax
 	shrl	%eax
+	addl	$248, %eax
 	retq
 

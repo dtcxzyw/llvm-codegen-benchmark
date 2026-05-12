@@ -1,8 +1,9 @@
 func0000000000000016:
 	sub	a0, a0, a1
-	lui	a1, 16368
-	add	a0, a0, a1
+	lui	a1, 16
 	srliw	a0, a0, 10
+	addi	a1, a1, -64
+	add	a0, a0, a1
 	ret
 
 func0000000000000000:

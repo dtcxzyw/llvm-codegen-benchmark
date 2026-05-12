@@ -105,13 +105,13 @@ func0000000000000008:
 	retq
 
 .LCPI8_0:
-	.quad	-17179869184
+	.quad	-4
 .LCPI8_1:
 	.quad	4
 	.prefalign	4, .Lfunc_end8, nop
 func00000000000001ea:
-	vpaddq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpsraq	$32, %ymm1, %ymm1
+	vpaddq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	.LCPI8_1(%rip){1to4}, %ymm0, %ymm0
 	vpcmpgtq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

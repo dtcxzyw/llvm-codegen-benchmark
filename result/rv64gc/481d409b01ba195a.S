@@ -1,9 +1,7 @@
 func0000000000000036:
-	lui	a1, 16368
-	add	a0, a0, a1
-	li	a1, 27
 	srliw	a0, a0, 10
-	slli	a1, a1, 11
+	lui	a1, 29
+	addi	a1, a1, 1984
 	add	a0, a0, a1
 	srli	a0, a0, 12
 	ret

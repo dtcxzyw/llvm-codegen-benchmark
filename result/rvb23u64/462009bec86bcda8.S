@@ -3,9 +3,8 @@ func0000000000000006:
 	lui	a1, 142180
 	addi	a1, a1, -833
 	mul	a0, a0, a1
-	srli	a0, a0, 35
-	addi	a0, a0, 64
-	srli	a0, a0, 3
+	srli	a0, a0, 38
+	addi	a0, a0, 8
 	ret
 
 func0000000000000002:

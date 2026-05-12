@@ -1,10 +1,10 @@
 func0000000000000006:
 	andi	a0, a0, 1
-	lui	a2, 64
-	addi	a2, a2, -24
+	srli	a1, a1, 2
+	lui	a2, 16
+	addi	a2, a2, -6
 	add	a1, a1, a2
-	slli	a1, a1, 46
-	srli	a1, a1, 48
+	zext.h	a1, a1
 	czero.nez	a0, a1, a0
 	ret
 

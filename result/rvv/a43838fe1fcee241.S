@@ -16,12 +16,9 @@ func000000000000001b:
 func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v8
-	li	a0, 32
-	vwsll.vx	v8, v10, a0
-	bseti	a0, zero, 32
+	vwsll.vi	v8, v10, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 30
+	vadd.vi	v8, v8, 4
 	ret
 
 func000000000000001e:

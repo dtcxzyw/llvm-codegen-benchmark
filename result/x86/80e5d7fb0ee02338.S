@@ -19,10 +19,9 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
-	movabsq	$-8589934592, %rax
-	addq	%rsi, %rax
-	sarq	$32, %rax
-	cmpq	%rdi, %rax
+	sarq	$32, %rsi
+	addq	$-2, %rsi
+	cmpq	%rdi, %rsi
 	sete	%al
 	retq
 

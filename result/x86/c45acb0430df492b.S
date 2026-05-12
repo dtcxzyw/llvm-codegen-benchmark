@@ -30,8 +30,8 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	movzbl	%dil, %eax
-	addl	$8, %eax
 	shrl	%eax
+	addl	$4, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

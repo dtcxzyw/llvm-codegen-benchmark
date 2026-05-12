@@ -41,13 +41,13 @@ func000000000000030a:
 	retq
 
 .LCPI3_0:
-	.quad	17179869176
+	.long	4294967294
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000070a:
 	vpmovzxdq	%xmm0, %ymm0
-	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
+	vpaddd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper

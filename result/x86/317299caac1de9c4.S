@@ -31,11 +31,9 @@ func000000000000030a:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000070a:
-	movl	%edi, %eax
-	movabsq	$17179869176, %rcx
-	addq	%rax, %rcx
-	shrq	$2, %rcx
-	testl	%ecx, %ecx
+	shrl	$2, %edi
+	addl	$-2, %edi
+	testl	%edi, %edi
 	setg	%al
 	retq
 

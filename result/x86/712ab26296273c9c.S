@@ -23,10 +23,7 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
-	movl	%edi, %eax
-	movabsq	$8589934588, %rcx
-	addq	%rax, %rcx
-	shrq	%rcx
-	movl	%ecx, %eax
+	shrl	%edi
+	leal	-2(%rdi), %eax
 	retq
 

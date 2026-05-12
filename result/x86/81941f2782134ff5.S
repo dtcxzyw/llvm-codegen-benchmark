@@ -2,8 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	movzwl	%di, %eax
-	addl	$131068, %eax
 	shrl	%eax
+	addl	$-2, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

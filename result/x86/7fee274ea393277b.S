@@ -61,8 +61,7 @@ func000000000000000e:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000004c:
-	addq	$64, %rsi
 	shrq	%rsi
-	leaq	80(%rsi,%rdi), %rax
+	leaq	112(%rsi,%rdi), %rax
 	retq
 

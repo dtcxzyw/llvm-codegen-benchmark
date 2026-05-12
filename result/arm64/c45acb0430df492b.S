@@ -23,9 +23,8 @@ func0000000000000006:
 	ret
 
 func000000000000000f:
-	and	w8, w0, #0xff
-	add	w8, w8, #8
-	lsr	w0, w8, #1
+	ubfx	w8, w0, #1, #7
+	add	w0, w8, #4
 	ret
 
 func0000000000000007:

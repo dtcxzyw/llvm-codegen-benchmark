@@ -20,8 +20,8 @@ func0000000000000017:
 	ret
 
 func0000000000000037:
-	add	w8, w0, #64
-	lsr	w8, w8, #3
+	lsr	w8, w0, #3
+	add	w8, w8, #8
 	and	w8, w8, #0x1fffff8
 	add	w0, w8, #8
 	ret

@@ -3,9 +3,8 @@
 func0000000000000006:
 	movl	%edi, %eax
 	imulq	$582368447, %rax, %rax
-	shrq	$35, %rax
-	addl	$64, %eax
-	shrl	$3, %eax
+	shrq	$38, %rax
+	addl	$8, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

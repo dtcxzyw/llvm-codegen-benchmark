@@ -6,9 +6,9 @@ func0000000000000078:
 	ret
 
 func000000000000007f:
-	mov	x8, #4294967296
-	add	x8, x8, x1, lsl #32
-	add	x0, x0, x8, lsr #30
+	ubfiz	x8, x1, #2, #32
+	add	x8, x8, x0
+	add	x0, x8, #4
 	ret
 
 func000000000000006f:

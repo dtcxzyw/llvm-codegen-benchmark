@@ -8,11 +8,12 @@ func000000000000002a:
 	ret
 
 func0000000000000006:
-	lui	a0, 2047
+	lui	a0, 8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 8
+	addi	a0, a0, -16
+	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000026:

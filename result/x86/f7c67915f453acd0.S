@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000064:
-	addq	$4096, %rdi
 	shrq	$7, %rdi
-	decq	%rdi
+	addq	$31, %rdi
 	lzcntq	%rdi, %rax
 	retq
 

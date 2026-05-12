@@ -1,21 +1,18 @@
 	.att_syntax
 .LCPI0_0:
-	.long	67043328
-.LCPI0_1:
-	.short	55296
-	.short	55296
-	.short	55296
-	.short	55296
-	.short	55296
-	.short	55296
-	.short	55296
-	.short	55296
+	.short	55232
+	.short	55232
+	.short	55232
+	.short	55232
+	.short	55232
+	.short	55232
+	.short	55232
+	.short	55232
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000063:
-	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpaddw	.LCPI0_1(%rip), %xmm0, %xmm0
+	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -40,14 +37,19 @@ func0000000000000000:
 	retq
 
 .LCPI2_0:
-	.long	262120
+	.short	65531
+	.short	65531
+	.short	65531
+	.short	65531
+	.short	65531
+	.short	65531
+	.short	65531
+	.short	65531
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000061:
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$2, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubw	%xmm1, %xmm0, %xmm0
+	vpaddw	.LCPI2_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 

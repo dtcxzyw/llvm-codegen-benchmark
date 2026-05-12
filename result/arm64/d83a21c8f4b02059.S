@@ -62,10 +62,10 @@ func0000000000000008:
 	ret
 
 func00000000000001ea:
-	mov	x8, #-17179869184
+	asr	x8, x1, #32
 	add	x9, x0, #4
-	add	x8, x1, x8
-	cmp	x9, x8, asr #32
+	sub	x8, x8, #4
+	cmp	x9, x8
 	cset	w0, gt
 	ret
 

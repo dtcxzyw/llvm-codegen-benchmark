@@ -9,9 +9,8 @@ func0000000000000036:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000030:
-	movabsq	$17179865088, %rax
-	addq	%rsi, %rax
-	shrq	$2, %rax
+	shrq	$2, %rsi
+	leal	-1024(%rsi), %eax
 	cmpl	%eax, %edi
 	cmovbl	%edi, %eax
 	retq

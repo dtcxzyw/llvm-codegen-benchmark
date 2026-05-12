@@ -21,9 +21,10 @@ func000000000000001a:
 	ret
 
 func0000000000000013:
-	add	w8, w2, #2048, lsl #12
+	lsr	w8, w2, #16
 	orr	w9, w0, w1
-	lsr	w8, w8, #24
-	orr	w0, w9, w8, lsl #8
+	add	w8, w8, #128
+	and	w8, w8, #0xff00
+	orr	w0, w9, w8
 	ret
 

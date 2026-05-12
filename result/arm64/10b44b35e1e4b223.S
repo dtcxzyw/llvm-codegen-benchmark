@@ -1,9 +1,8 @@
 func0000000000000006:
 	lsl	x8, x0, #7
 	sub	x8, x8, x0
-	lsr	x8, x8, #7
-	add	x8, x8, #1, lsl #12
-	lsr	x0, x8, #7
+	lsr	x8, x8, #14
+	add	x0, x8, #32
 	ret
 
 func0000000000000036:

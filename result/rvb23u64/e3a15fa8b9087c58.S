@@ -13,9 +13,8 @@ func0000000000000018:
 
 func0000000000000038:
 	sext.w	a0, a0
-	bseti	a1, zero, 34
-	addi	a1, a1, -8
-	add	a0, a0, a1
 	srli	a0, a0, 2
+	li	a1, -2
+	add.uw	a0, a1, a0
 	ret
 

@@ -8,10 +8,10 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	li	a0, 32
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3
+	vadd.vi	v8, v8, 4
+	li	a0, 32
 	vand.vx	v8, v8, a0
 	ret
 

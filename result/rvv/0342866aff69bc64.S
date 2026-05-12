@@ -1,11 +1,10 @@
 func00000000000000c4:
-	lui	a0, 2048
-	addi	a0, a0, -1
-	slli	a0, a0, 21
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 12
+	li	a0, -512
+	zext.w	a0, a0
 	vadd.vx	v10, v10, a0
 	li	a0, -1
-	vsrl.vi	v10, v10, 12
 	srli	a0, a0, 32
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8

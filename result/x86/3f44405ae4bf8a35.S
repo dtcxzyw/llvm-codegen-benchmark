@@ -46,21 +46,17 @@ func0000000000000378:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000304:
-	movl	%esi, %eax
-	movabsq	$8589934584, %rcx
-	addq	%rax, %rcx
-	shrq	%rcx
-	cmpl	%ecx, %edi
+	shrl	%esi
+	addl	$-4, %esi
+	cmpl	%esi, %edi
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000308:
-	movl	%esi, %eax
-	movabsq	$8589934584, %rcx
-	addq	%rax, %rcx
-	shrq	%rcx
-	cmpl	%ecx, %edi
+	shrl	%esi
+	addl	$-4, %esi
+	cmpl	%esi, %edi
 	seta	%al
 	retq
 

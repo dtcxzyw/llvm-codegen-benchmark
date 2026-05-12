@@ -10,12 +10,8 @@ func0000000000000036:
 
 func0000000000000030:
 	sext.w	a0, a0
-	lui	a2, 1024
-	addi	a2, a2, -1
-	slli	a2, a2, 12
-	add	a1, a1, a2
 	srli	a1, a1, 2
-	sext.w	a1, a1
+	addiw	a1, a1, -1024
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

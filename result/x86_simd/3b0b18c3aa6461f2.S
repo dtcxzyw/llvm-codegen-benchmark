@@ -27,15 +27,15 @@ func0000000000000001:
 	retq
 
 .LCPI2_0:
-	.long	983040
+	.long	960
 .LCPI2_1:
 	.long	55296
 .LCPI2_2:
 	.long	1023
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$10, %ymm0, %ymm1
+	vpsrld	$10, %ymm0, %ymm0
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0
 	vpternlogd	$248, .LCPI2_2(%rip){1to8}, %ymm1, %ymm0
 	retq

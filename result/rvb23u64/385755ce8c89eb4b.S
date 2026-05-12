@@ -36,10 +36,11 @@ func0000000000000012:
 	ret
 
 func0000000000000013:
-	lui	a3, 2048
-	add	a2, a2, a3
-	srliw	a2, a2, 24
-	slli	a2, a2, 8
+	srli	a2, a2, 16
+	lui	a3, 16
+	addi	a2, a2, 128
+	addi	a3, a3, -256
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

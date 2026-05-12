@@ -3,10 +3,8 @@ func0000000000000006:
 	addi	a0, a0, -833
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 3
-	li	a0, 64
-	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 3
+	vsrl.vi	v8, v8, 6
+	vadd.vi	v8, v8, 8
 	ret
 
 func0000000000000002:

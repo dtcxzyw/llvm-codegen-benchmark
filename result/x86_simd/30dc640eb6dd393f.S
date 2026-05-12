@@ -101,12 +101,12 @@ func000000000000000a:
 	.byte	128
 	.byte	128
 .LCPI3_1:
-	.long	8388608
+	.long	128
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpshufb	.LCPI3_0(%rip), %ymm1, %ymm1
 	vpmulld	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$16, %ymm0, %ymm0
+	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 

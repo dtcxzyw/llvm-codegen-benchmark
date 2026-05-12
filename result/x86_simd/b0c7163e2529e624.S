@@ -44,11 +44,10 @@ func0000000000000004:
 	retq
 
 .LCPI5_0:
-	.quad	64
+	.quad	32
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
-	vpsrlq	$1, %ymm0, %ymm0
+	vpsrlq	$2, %ymm0, %ymm0
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$1, %ymm0, %ymm0
 	retq
 

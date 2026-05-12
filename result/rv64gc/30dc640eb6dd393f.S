@@ -26,8 +26,7 @@ func0000000000000014:
 	slli	a1, a1, 48
 	srli	a1, a1, 56
 	mul	a0, a0, a1
-	lui	a1, 2048
-	add	a0, a0, a1
 	srliw	a0, a0, 16
+	addi	a0, a0, 128
 	ret
 

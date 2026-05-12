@@ -58,8 +58,8 @@ func000000000000000f:
 	ret
 
 func000000000000003f:
-	addi	a1, a1, 160
 	srliw	a1, a1, 1
+	addiw	a1, a1, 80
 	sh2add	a0, a1, a0
 	ret
 

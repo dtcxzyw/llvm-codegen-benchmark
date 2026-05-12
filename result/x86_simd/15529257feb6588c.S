@@ -122,25 +122,25 @@ func0000000000000003:
 	retq
 
 .LCPI6_0:
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
-	.short	496
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
-	vpaddw	.LCPI6_0(%rip), %ymm0, %ymm0
 	vpsrlw	$1, %ymm0, %ymm0
+	vpaddw	.LCPI6_0(%rip), %ymm0, %ymm0
 	retq
 

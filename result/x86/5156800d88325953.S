@@ -22,15 +22,15 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
-	leal	55232(%rdi), %eax
-	shrl	$5, %eax
+	shrl	$5, %edi
+	leal	1726(%rdi), %eax
 	andl	$2047, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
-	leal	512(%rdi), %eax
-	shrl	$4, %eax
+	shrl	$4, %edi
+	leal	32(%rdi), %eax
 	andl	$262112, %eax
 	retq
 

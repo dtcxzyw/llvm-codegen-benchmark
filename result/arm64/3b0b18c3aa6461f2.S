@@ -14,9 +14,10 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
+	lsr	w9, w0, #10
 	mov	w8, #55296
-	add	w9, w0, #240, lsl #12
-	bfxil	w8, w9, #10, #10
+	add	w9, w9, #960
+	bfxil	w8, w9, #0, #10
 	mov	w0, w8
 	ret
 

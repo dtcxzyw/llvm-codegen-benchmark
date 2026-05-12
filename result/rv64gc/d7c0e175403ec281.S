@@ -1,9 +1,9 @@
 func0000000000000006:
 	andi	a0, a0, 1
-	lui	a2, 64
-	addi	a2, a2, -24
-	add	a1, a1, a2
 	srli	a1, a1, 2
+	lui	a2, 16
+	addi	a2, a2, -6
+	add	a1, a1, a2
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	slli	a0, a0, 48

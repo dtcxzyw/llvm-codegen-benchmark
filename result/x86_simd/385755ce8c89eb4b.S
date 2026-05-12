@@ -77,44 +77,50 @@ func0000000000000012:
 	retq
 
 .LCPI4_0:
-	.long	8388608
+	.long	128
+.LCPI4_2:
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
 .LCPI4_1:
-	.byte	128
-	.byte	3
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	7
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	11
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	15
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	19
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	23
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	27
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	31
-	.byte	128
-	.byte	128
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
+	vpsrld	$16, %ymm2, %ymm2
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
-	vpshufb	.LCPI4_1(%rip), %ymm2, %ymm2
+	vpandd	.LCPI4_2(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	retq
 

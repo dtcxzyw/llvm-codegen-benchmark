@@ -88,13 +88,11 @@ func0000000000000011:
 	retq
 
 .LCPI9_0:
-	.quad	4096
+	.quad	31
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000019:
-	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$7, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI10_0:

@@ -33,9 +33,8 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000001c:
-	movabsq	$17179869104, %rax
-	addq	%rdi, %rax
-	shrq	$2, %rax
+	shrq	$2, %rdi
+	leal	-20(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

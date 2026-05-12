@@ -55,11 +55,11 @@ func0000000000000013:
 	retq
 
 .LCPI4_0:
-	.quad	262120
+	.quad	65530
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000019:
-	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
+	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpblendw	$17, %ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

@@ -22,13 +22,13 @@ func0000000000000000:
 	retq
 
 .LCPI2_0:
-	.quad	48
+	.quad	24
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpaddq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm0
-	vpsrlq	$1, %ymm0, %ymm1 {%k1}
+	vpsrlq	$1, %ymm2, %ymm0
+	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

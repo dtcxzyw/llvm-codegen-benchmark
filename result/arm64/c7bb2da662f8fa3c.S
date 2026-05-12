@@ -7,8 +7,8 @@ func000000000000002a:
 
 func0000000000000006:
 	madd	w8, w1, w2, w0
-	add	w8, w8, #2047, lsl #12
-	lsr	w0, w8, #8
+	mov	w9, #32752
+	add	w0, w9, w8, lsr #8
 	ret
 
 func0000000000000026:

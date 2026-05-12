@@ -8,8 +8,8 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	addl	$-320, %edi
 	sarl	%edi
+	addl	$-160, %edi
 	movslq	%edi, %rax
 	retq
 

@@ -60,7 +60,7 @@ func000000000000001a:
 	retq
 
 .LCPI2_0:
-	.long	65536
+	.long	16
 .LCPI2_2:
 	.zero	4,63
 .LCPI2_1:
@@ -82,8 +82,8 @@ func000000000000001a:
 	.zero	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

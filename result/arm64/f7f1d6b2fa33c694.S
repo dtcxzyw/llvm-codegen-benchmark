@@ -6,9 +6,9 @@ func0000000000000004:
 	ret
 
 func000000000000000e:
-	sub	w8, w1, #160
-	asr	w8, w8, #1
-	add	x0, x0, w8, sxtw #2
+	asr	w8, w1, #1
+	add	x8, x0, w8, sxtw #2
+	sub	x0, x8, #320
 	ret
 
 func000000000000000a:

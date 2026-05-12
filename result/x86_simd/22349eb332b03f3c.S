@@ -88,11 +88,13 @@ func000000000000001a:
 	retq
 
 .LCPI10_0:
-	.long	16711680
+	.long	4194303
+.LCPI10_1:
+	.long	16320
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
-	vpslld	$6, %ymm0, %ymm0
-	vpaddd	.LCPI10_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$10, %ymm0, %ymm0
+	vpsrld	$4, %ymm0, %ymm0
+	vpandd	.LCPI10_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI10_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 

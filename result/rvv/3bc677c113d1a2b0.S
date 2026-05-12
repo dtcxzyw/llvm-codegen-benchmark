@@ -13,9 +13,9 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	li	a0, 48
-	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vaaddu.vx	v8, v10, a0, v0.t
+	vsrl.vi	v10, v10, 1
+	li	a0, 24
+	vadd.vx	v8, v10, a0, v0.t
 	ret
 

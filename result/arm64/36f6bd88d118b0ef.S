@@ -6,8 +6,8 @@ func0000000000000020:
 	ret
 
 func000000000000002e:
-	sub	w8, w1, #320
-	asr	w8, w8, #1
+	asr	w8, w1, #1
+	sub	w8, w8, #160
 	add	x8, x0, w8, sxtw
 	add	x0, x8, #338, lsl #12
 	ret
@@ -36,11 +36,10 @@ func0000000000000022:
 	ret
 
 func0000000000000032:
-	sub	w8, w1, #160
-	asr	w8, w8, #1
+	asr	w8, w1, #1
 	add	x8, x0, w8, sxtw #2
 	add	x8, x8, #225, lsl #12
-	add	x0, x8, #1280
+	add	x0, x8, #960
 	ret
 
 func0000000000000000:

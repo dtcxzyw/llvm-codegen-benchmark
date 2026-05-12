@@ -68,11 +68,10 @@ func0000000000000011:
 	ret
 
 func0000000000000019:
-	lui	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 7
-	vadd.vi	v8, v8, -1
+	li	a0, 31
+	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000001f:

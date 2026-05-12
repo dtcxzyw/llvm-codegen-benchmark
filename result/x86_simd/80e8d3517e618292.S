@@ -12,44 +12,50 @@ func0000000000000000:
 	retq
 
 .LCPI1_0:
-	.long	8388608
+	.long	128
+.LCPI1_2:
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
 .LCPI1_1:
-	.byte	128
-	.byte	3
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	7
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	11
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	15
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	19
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	23
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	27
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	31
-	.byte	128
-	.byte	128
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpmulld	%ymm1, %ymm0, %ymm0
+	vpsrld	$16, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpshufb	.LCPI1_1(%rip), %ymm0, %ymm0
+	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq
 

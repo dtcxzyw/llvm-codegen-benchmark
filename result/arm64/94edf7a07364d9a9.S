@@ -17,17 +17,14 @@ func000000000000001b:
 	ret
 
 func000000000000001a:
-	mov	x8, #281389077364736
-	movk	x8, #65535, lsl #48
-	add	x8, x8, x0, lsl #31
-	asr	x8, x8, #32
+	sbfx	x8, x0, #1, #32
+	sub	x8, x8, #20
 	and	x0, x8, #0xfffffffffffffff8
 	ret
 
 func000000000000000a:
-	mov	x8, #137438953472
-	add	x8, x8, x0, lsl #16
-	asr	x8, x8, #32
+	sbfx	x8, x0, #16, #32
+	add	x8, x8, #32
 	and	x0, x8, #0xffffffffffffffc0
 	ret
 

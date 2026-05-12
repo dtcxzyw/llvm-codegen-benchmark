@@ -91,19 +91,17 @@ func0000000000000301:
 
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000304:
-	movabsq	$8589934584, %rax
-	addq	%rsi, %rax
-	shrq	%rax
-	cmpl	%eax, %edi
+	shrq	%rsi
+	addl	$-4, %esi
+	cmpl	%esi, %edi
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000308:
-	movabsq	$8589934584, %rax
-	addq	%rsi, %rax
-	shrq	%rax
-	cmpl	%eax, %edi
+	shrq	%rsi
+	addl	$-4, %esi
+	cmpl	%esi, %edi
 	seta	%al
 	retq
 

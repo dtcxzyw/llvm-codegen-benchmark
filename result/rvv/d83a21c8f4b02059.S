@@ -79,11 +79,10 @@ func0000000000000008:
 	ret
 
 func00000000000001ea:
-	bseti	a0, zero, 34
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vx	v10, v10, a0
 	li	a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v10, v10, a0
+	vadd.vi	v10, v10, -4
 	vadd.vi	v8, v8, 4
 	vmslt.vv	v0, v10, v8
 	ret

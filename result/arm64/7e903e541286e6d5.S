@@ -4,7 +4,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	sub	w8, w0, #320
-	sbfx	x0, x8, #1, #31
+	asr	w8, w0, #1
+	sub	w8, w8, #160
+	sxtw	x0, w8
 	ret
 

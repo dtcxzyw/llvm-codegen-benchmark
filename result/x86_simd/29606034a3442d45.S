@@ -38,14 +38,14 @@ func0000000000000001:
 	retq
 
 .LCPI3_0:
-	.quad	17179869120
+	.long	4294967280
 .LCPI3_1:
 	.long	5
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000301:
-	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
+	vpaddd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vpbroadcastd	.LCPI3_1(%rip), %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -118,12 +118,12 @@ func000000000000030a:
 	retq
 
 .LCPI9_0:
-	.quad	17179869176
+	.long	4294967294
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000381:
-	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
+	vpaddd	.LCPI9_0(%rip){1to4}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper

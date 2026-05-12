@@ -56,7 +56,7 @@ func000000000000001a:
 
 func0000000000000006:
 	lsl	w8, w0, #6
-	add	w8, w8, #4080, lsl #12
-	lsr	w0, w8, #10
+	mov	w9, #16320
+	add	w0, w9, w8, lsr #10
 	ret
 

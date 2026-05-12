@@ -88,11 +88,10 @@ func0000000000000008:
 
 func00000000000001ea:
 	li	a0, 32
-	bseti	a1, zero, 34
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	vsub.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
+	vadd.vi	v10, v10, -4
 	vadd.vi	v8, v8, 4
 	vmslt.vv	v0, v10, v8
 	ret

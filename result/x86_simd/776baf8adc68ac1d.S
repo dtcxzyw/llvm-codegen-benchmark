@@ -1,9 +1,13 @@
 	.att_syntax
 .LCPI0_0:
-	.long	16711680
-.LCPI0_2:
-	.short	55296
-	.short	55296
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
 .LCPI0_1:
 	.short	55296
 	.short	55296
@@ -13,11 +17,14 @@
 	.short	55296
 	.short	55296
 	.short	55296
+.LCPI0_2:
+	.short	55296
+	.short	55296
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000020:
-	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -46,10 +53,14 @@ func0000000000000000:
 	retq
 
 .LCPI2_0:
-	.long	16711680
-.LCPI2_2:
-	.short	55296
-	.short	55296
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
 .LCPI2_1:
 	.short	55296
 	.short	55296
@@ -59,20 +70,27 @@ func0000000000000000:
 	.short	55296
 	.short	55296
 	.short	55296
+.LCPI2_2:
+	.short	55296
+	.short	55296
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000036:
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpord	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI3_0:
-	.long	16711680
-.LCPI3_2:
-	.short	55296
-	.short	55296
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
 .LCPI3_1:
 	.short	55296
 	.short	55296
@@ -82,11 +100,14 @@ func0000000000000036:
 	.short	55296
 	.short	55296
 	.short	55296
+.LCPI3_2:
+	.short	55296
+	.short	55296
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI3_0(%rip), %xmm0, %xmm0
 	vpord	.LCPI3_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

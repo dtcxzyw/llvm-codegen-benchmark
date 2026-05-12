@@ -55,9 +55,8 @@ func0000000000000011:
 	ret
 
 func0000000000000019:
-	add	x8, x0, #1, lsl #12
-	lsr	x8, x8, #7
-	sub	x0, x8, #1
+	lsr	x8, x0, #7
+	add	x0, x8, #31
 	ret
 
 func000000000000001f:

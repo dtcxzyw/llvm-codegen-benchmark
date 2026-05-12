@@ -30,11 +30,11 @@ func0000000000000002:
 	ret
 
 func000000000000001c:
-	li	a1, 1
-	slli	a1, a1, 34
-	addi	a1, a1, -80
-	add	a0, a0, a1
 	srli	a0, a0, 2
+	li	a1, 1
+	slli	a1, a1, 32
+	addi	a1, a1, -20
+	add	a0, a0, a1
 	ret
 
 func0000000000000018:

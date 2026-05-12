@@ -49,8 +49,7 @@ func000000000000000e:
 	ret
 
 func000000000000004c:
-	add	x8, x1, #64
-	add	x8, x0, x8, lsr #1
-	add	x0, x8, #80
+	add	x8, x0, x1, lsr #1
+	add	x0, x8, #112
 	ret
 

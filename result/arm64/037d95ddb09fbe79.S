@@ -33,9 +33,8 @@ func0000000000000000:
 	ret
 
 func000000000000001f:
-	mov	x8, #4294967296
-	add	x8, x8, x0, lsl #32
-	lsr	x0, x8, #30
+	ubfiz	x8, x0, #2, #32
+	add	x0, x8, #4
 	ret
 
 func000000000000001a:

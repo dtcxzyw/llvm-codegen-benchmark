@@ -1,11 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c4:
-	movabsq	$17592183947264, %rax
-	addq	%rsi, %rax
-	shrq	$12, %rax
-	movl	%eax, %eax
-	cmpq	%rdi, %rax
+	shrq	$12, %rsi
+	addl	$-512, %esi
+	cmpq	%rdi, %rsi
 	setb	%al
 	retq
 

@@ -41,9 +41,8 @@ func0000000000000404:
 	ret
 
 func0000000000000c01:
-	mov	x8, #17179869176
-	add	x8, x1, x8
-	lsr	x8, x8, #2
+	mov	w8, #-2
+	add	x8, x8, x1, lsr #2
 	cmp	w0, w8
 	cset	w0, eq
 	ret

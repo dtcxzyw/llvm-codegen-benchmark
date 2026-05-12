@@ -4,13 +4,13 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	sub	w8, w0, #320
-	asr	w0, w8, #1
+	asr	w8, w0, #1
+	sub	w0, w8, #160
 	ret
 
 func0000000000000003:
-	sub	w8, w0, #160
-	asr	w0, w8, #1
+	asr	w8, w0, #1
+	sub	w0, w8, #80
 	ret
 
 func0000000000000001:

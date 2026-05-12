@@ -7,10 +7,11 @@ func0000000000000004:
 	ret
 
 func000000000000000e:
-	addiw	a1, a1, -160
+	sext.w	a1, a1
 	slli	a1, a1, 1
 	andi	a1, a1, -4
 	add	a0, a0, a1
+	addi	a0, a0, -320
 	ret
 
 func000000000000000a:

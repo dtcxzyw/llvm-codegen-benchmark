@@ -125,13 +125,11 @@ func0000000000000013:
 	ret
 
 func000000000000001c:
-	li	a0, 3
-	slli	a0, a0, 33
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
 	li	a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 6
 	ret
 
 func000000000000000f:

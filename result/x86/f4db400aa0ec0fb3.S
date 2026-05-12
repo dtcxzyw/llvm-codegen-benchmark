@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
-	leal	-52(%rsi), %eax
-	sarl	%eax
-	addl	%edi, %eax
+	sarl	%esi
+	leal	-26(%rsi,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

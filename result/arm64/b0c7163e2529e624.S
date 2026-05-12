@@ -32,8 +32,7 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	lsr	x8, x0, #1
-	add	x8, x8, #64
-	lsr	x0, x8, #1
+	lsr	x8, x0, #2
+	add	x0, x8, #32
 	ret
 

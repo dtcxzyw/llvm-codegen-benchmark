@@ -1,8 +1,8 @@
 func000000000000001b:
-	bseti	a2, zero, 37
-	addi	a2, a2, -32
-	add	a1, a1, a2
 	srli	a1, a1, 2
+	bseti	a2, zero, 35
+	addi	a2, a2, -8
+	add	a1, a1, a2
 	srli	a1, a1, 3
 	sh3add.uw	a0, a1, a0
 	ret

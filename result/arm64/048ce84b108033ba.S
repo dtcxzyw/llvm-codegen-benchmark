@@ -9,9 +9,8 @@ func0000000000000002:
 	ret
 
 func0000000000000016:
-	mov	w8, #67043328
-	add	w8, w0, w8
-	lsr	w0, w8, #10
+	mov	w8, #65472
+	add	w0, w8, w0, lsr #10
 	ret
 
 func000000000000001e:

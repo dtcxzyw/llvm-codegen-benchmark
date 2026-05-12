@@ -1,13 +1,10 @@
 	.att_syntax
 .LCPI0_0:
-	.long	67043328
-.LCPI0_1:
-	.long	55296
+	.long	120768
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000036:
-	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
-	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$12, %ymm0, %ymm0
 	retq
 

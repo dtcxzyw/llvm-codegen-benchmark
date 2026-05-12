@@ -6,10 +6,9 @@ func000000000000007a:
 	ret
 
 func0000000000000078:
-	slli	a0, a0, 10
-	lui	a1, 16
-	add	a0, a0, a1
-	srliw	a0, a0, 12
+	slli	a0, a0, 42
+	srli	a0, a0, 44
+	addi	a0, a0, 16
 	ret
 
 func0000000000000028:

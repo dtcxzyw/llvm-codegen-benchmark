@@ -42,11 +42,11 @@ func0000000000000012:
 	ret
 
 func0000000000000013:
-	lui	a0, 2048
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v12, v12, 16
+	li	a0, 128
 	vadd.vx	v12, v12, a0
 	lui	a0, 16
-	vsrl.vi	v12, v12, 16
 	addi	a0, a0, -256
 	vand.vx	v12, v12, a0
 	vor.vv	v10, v10, v12

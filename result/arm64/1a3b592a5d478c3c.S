@@ -30,8 +30,8 @@ func0000000000000008:
 
 func000000000000001f:
 	add	w8, w0, w0, lsl #1
-	add	w8, w8, #744
-	lsr	w0, w8, #2
+	lsr	w8, w8, #2
+	add	w0, w8, #186
 	ret
 
 func000000000000001e:

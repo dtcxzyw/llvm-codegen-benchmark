@@ -53,10 +53,8 @@ func0000000000000020:
 
 func000000000000002a:
 	add	a0, a0, a1
-	li	a1, 1
 	slli	a0, a0, 16
-	slli	a1, a1, 37
-	add	a0, a0, a1
 	srai	a0, a0, 32
+	addi	a0, a0, 32
 	ret
 

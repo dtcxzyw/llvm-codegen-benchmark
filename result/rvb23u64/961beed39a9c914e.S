@@ -1,6 +1,6 @@
 func0000000000000003:
-	addi	a0, a0, -52
 	sraiw	a0, a0, 1
+	addi	a0, a0, -26
 	ret
 
 func0000000000000002:

@@ -14,12 +14,11 @@ func000000000000007b:
 	retq
 
 .LCPI1_0:
-	.long	65536
+	.long	16
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000078:
-	vpslld	$10, %ymm0, %ymm0
+	vpsrld	$2, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$12, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

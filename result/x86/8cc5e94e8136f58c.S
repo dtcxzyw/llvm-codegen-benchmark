@@ -69,10 +69,9 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000001a:
-	shlq	$31, %rdi
-	movabsq	$-85899345920, %rax
-	addq	%rdi, %rax
-	sarq	$32, %rax
+	shrq	%rdi
+	movslq	%edi, %rax
+	addq	$-20, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop

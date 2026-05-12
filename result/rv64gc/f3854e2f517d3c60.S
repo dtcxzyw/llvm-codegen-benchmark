@@ -42,11 +42,10 @@ func0000000000000003:
 
 func000000000000001c:
 	sub	a0, a0, a1
-	lui	a1, 256
-	addi	a1, a1, -1
-	slli	a1, a1, 12
-	add	a0, a0, a1
+	lui	a1, 1024
 	srli	a0, a0, 10
+	addi	a1, a1, -4
+	add	a0, a0, a1
 	ret
 
 func000000000000000e:

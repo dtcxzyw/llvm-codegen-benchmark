@@ -1,9 +1,9 @@
 func00000000000000c4:
-	mov	x8, #17592183947264
-	add	x8, x1, x8
-	lsr	x8, x8, #12
-	cmp	x0, w8, uxtw
-	cset	w0, hi
+	mov	w8, #-512
+	add	x8, x8, x1, lsr #12
+	mov	w8, w8
+	cmp	x8, x0
+	cset	w0, lo
 	ret
 
 func0000000000000044:

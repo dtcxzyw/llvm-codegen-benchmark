@@ -1,10 +1,8 @@
 func0000000000000006:
 	slli	a1, a0, 7
 	sub	a1, a1, a0
-	srli	a1, a1, 7
-	lui	a0, 1
-	add	a0, a0, a1
-	srli	a0, a0, 7
+	srli	a1, a1, 14
+	addi	a0, a1, 32
 	ret
 
 func0000000000000036:

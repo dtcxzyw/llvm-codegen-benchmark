@@ -56,10 +56,8 @@ func0000000000000011:
 	ret
 
 func0000000000000019:
-	lui	a1, 1
-	add	a0, a0, a1
 	srli	a0, a0, 7
-	addi	a0, a0, -1
+	addi	a0, a0, 31
 	ret
 
 func000000000000001f:

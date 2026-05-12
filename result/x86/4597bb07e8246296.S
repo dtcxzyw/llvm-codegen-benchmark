@@ -28,8 +28,8 @@ func000000000000001a:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000013:
-	leal	8388608(%rdx), %ecx
-	shrl	$16, %ecx
+	shrl	$16, %edx
+	leal	128(%rdx), %ecx
 	andl	$65280, %ecx
 	leal	(%rdi,%rsi), %eax
 	orl	%ecx, %eax

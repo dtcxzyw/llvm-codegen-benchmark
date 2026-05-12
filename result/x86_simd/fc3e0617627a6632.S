@@ -48,11 +48,11 @@ func0000000000000004:
 	retq
 
 .LCPI6_0:
-	.quad	17179869104
+	.quad	4294967276
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
-	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
+	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:

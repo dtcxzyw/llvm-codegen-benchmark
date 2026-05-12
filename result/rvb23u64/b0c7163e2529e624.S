@@ -33,8 +33,7 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	srli	a0, a0, 1
-	addi	a0, a0, 64
-	srli	a0, a0, 1
+	srli	a0, a0, 2
+	addi	a0, a0, 32
 	ret
 

@@ -65,9 +65,8 @@ func0000000000000011:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000019:
-	leaq	4096(%rdi), %rax
-	shrq	$7, %rax
-	decq	%rax
+	shrq	$7, %rdi
+	leaq	31(%rdi), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end10, nop

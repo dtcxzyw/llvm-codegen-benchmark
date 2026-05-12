@@ -2,8 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000016:
 	subl	%esi, %edi
-	leal	67043328(%rdi), %eax
-	shrl	$10, %eax
+	shrl	$10, %edi
+	leal	65472(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

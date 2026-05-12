@@ -7,14 +7,14 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	leal	-320(%rdi), %eax
-	sarl	%eax
+	sarl	%edi
+	leal	-160(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
-	leal	-160(%rdi), %eax
-	sarl	%eax
+	sarl	%edi
+	leal	-80(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

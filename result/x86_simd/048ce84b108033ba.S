@@ -20,12 +20,12 @@ func0000000000000002:
 	retq
 
 .LCPI2_0:
-	.long	67043328
+	.long	65472
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000016:
 	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$10, %xmm0, %xmm0
+	vpaddd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 

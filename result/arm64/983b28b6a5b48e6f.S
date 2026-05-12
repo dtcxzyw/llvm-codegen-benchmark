@@ -20,10 +20,8 @@ func000000000000002c:
 	ret
 
 func000000000000007f:
-	mov	x8, #4294967296
-	add	x8, x1, x8
-	add	x8, x0, x8, lsr #30
-	add	x0, x8, #12
+	add	x8, x0, x1, lsr #30
+	add	x0, x8, #16
 	ret
 
 func000000000000003f:

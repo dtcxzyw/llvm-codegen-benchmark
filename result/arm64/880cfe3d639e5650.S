@@ -78,17 +78,15 @@ func0000000000000301:
 	ret
 
 func0000000000000304:
-	mov	x8, #8589934584
-	add	x8, x1, x8
-	lsr	x8, x8, #1
+	mov	w8, #-4
+	add	x8, x8, x1, lsr #1
 	cmp	w0, w8
 	cset	w0, lo
 	ret
 
 func0000000000000308:
-	mov	x8, #8589934584
-	add	x8, x1, x8
-	lsr	x8, x8, #1
+	mov	w8, #-4
+	add	x8, x8, x1, lsr #1
 	cmp	w0, w8
 	cset	w0, hi
 	ret

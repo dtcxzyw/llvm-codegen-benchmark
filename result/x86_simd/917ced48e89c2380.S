@@ -10,12 +10,19 @@ func0000000000000002:
 	retq
 
 .LCPI1_0:
-	.long	16711680
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
+	.short	16320
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
-	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -59,12 +66,19 @@ func0000000000000012:
 	retq
 
 .LCPI6_0:
-	.long	67043328
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
+	.short	65472
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000018:
-	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI6_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -117,12 +131,19 @@ func0000000000000007:
 	retq
 
 .LCPI12_0:
-	.long	983040
+	.short	960
+	.short	960
+	.short	960
+	.short	960
+	.short	960
+	.short	960
+	.short	960
+	.short	960
 	.prefalign	4, .Lfunc_end12, nop
 func000000000000001a:
-	vpaddd	.LCPI12_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$10, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
+	vpaddw	.LCPI12_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 

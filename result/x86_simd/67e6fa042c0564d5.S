@@ -143,12 +143,12 @@ func0000000000000013:
 	retq
 
 .LCPI16_0:
-	.quad	25769803776
+	.quad	6
 	.prefalign	4, .Lfunc_end16, nop
 func000000000000001c:
-	vpaddq	.LCPI16_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$32, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	.LCPI16_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI17_0:

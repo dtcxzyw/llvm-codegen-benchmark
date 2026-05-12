@@ -6,10 +6,10 @@ func0000000000000020:
 	ret
 
 func000000000000002e:
-	addi	a1, a1, -320
-	lui	a2, 338
 	sraiw	a1, a1, 1
-	add	a0, a0, a2
+	add	a0, a0, a1
+	lui	a1, 338
+	addi	a1, a1, -160
 	add	a0, a0, a1
 	ret
 
@@ -40,8 +40,9 @@ func0000000000000022:
 	ret
 
 func0000000000000032:
-	addiw	a1, a1, -160
+	sext.w	a1, a1
 	srli	a1, a1, 1
+	addi	a1, a1, -80
 	sh2add	a0, a1, a0
 	lui	a1, 225
 	addi	a1, a1, 1280

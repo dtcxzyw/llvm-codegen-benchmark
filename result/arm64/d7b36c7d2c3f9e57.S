@@ -16,9 +16,10 @@ func00000000000000c1:
 	ret
 
 func00000000000001c1:
-	mov	x8, #8589934584
-	add	x8, x8, w1, uxtw
-	ubfx	x8, x8, #2, #31
+	mov	w8, #2147483646
+	mov	w9, w1
+	add	x8, x8, x9, lsr #2
+	and	x8, x8, #0x7fffffff
 	cmp	x0, x8
 	cset	w0, eq
 	ret

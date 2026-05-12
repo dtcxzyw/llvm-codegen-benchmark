@@ -17,8 +17,8 @@ func0000000000000035:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000031:
-	leal	65536(%rdi), %eax
-	shrl	$12, %eax
+	shrl	$12, %edi
+	leal	16(%rdi), %eax
 	andb	$63, %al
 	orb	$-128, %al
 	retq

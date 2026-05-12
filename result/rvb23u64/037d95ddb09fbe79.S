@@ -38,10 +38,8 @@ func0000000000000000:
 	ret
 
 func000000000000001f:
-	slli	a0, a0, 32
-	bseti	a1, zero, 32
-	add	a0, a0, a1
-	srli	a0, a0, 30
+	slli.uw	a0, a0, 2
+	addi	a0, a0, 4
 	ret
 
 func000000000000001a:

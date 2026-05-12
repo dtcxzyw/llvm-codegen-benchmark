@@ -9,8 +9,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	addi	a0, a0, 96
 	srli	a0, a0, 3
+	addi	a0, a0, 12
 	ret
 
 func0000000000000001:

@@ -1,7 +1,7 @@
 func0000000000000048:
 	sext.w	a0, a0
-	addi	a1, a1, -48
 	sraiw	a1, a1, 3
+	addi	a1, a1, -6
 	sltu	a0, a0, a1
 	ret
 

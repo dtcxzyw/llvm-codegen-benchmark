@@ -24,10 +24,8 @@ func0000000000000004:
 
 func000000000000000e:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v8, v8, 10
-	li	a0, 27
-	slli	a0, a0, 11
+	vsrl.vi	v8, v8, 17
+	li	a0, 432
 	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 7
 	ret
 

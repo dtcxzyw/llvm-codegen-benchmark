@@ -36,16 +36,16 @@ func00000000000000df:
 	ret
 
 func00000000000000f3:
-	add	w8, w1, #160
-	lsr	w8, w8, #1
+	lsr	w8, w1, #1
+	add	w8, w8, #80
 	add	x8, x0, w8, uxtw #2
 	add	x8, x8, #150, lsl #12
 	add	x0, x8, #768
 	ret
 
 func00000000000000ff:
-	add	w8, w1, #160
-	lsr	w8, w8, #1
+	lsr	w8, w1, #1
+	add	w8, w8, #80
 	add	x8, x0, w8, uxtw #2
 	add	x8, x8, #162, lsl #12
 	add	x0, x8, #2816

@@ -51,9 +51,8 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000001c:
 	subq	%rsi, %rdi
-	movl	$4294963200, %eax
-	addq	%rdi, %rax
-	shrq	$10, %rax
+	shrq	$10, %rdi
+	leaq	4194300(%rdi), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop

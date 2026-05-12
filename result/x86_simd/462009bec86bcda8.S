@@ -2,7 +2,7 @@
 .LCPI0_0:
 	.long	582368447
 .LCPI0_1:
-	.long	64
+	.long	8
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpshufd	$245, %ymm0, %ymm1
@@ -11,9 +11,8 @@ func0000000000000006:
 	vpmuludq	%ymm2, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm0
 	vpblendd	$170, %ymm1, %ymm0, %ymm0
-	vpsrld	$3, %ymm0, %ymm0
+	vpsrld	$6, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$3, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

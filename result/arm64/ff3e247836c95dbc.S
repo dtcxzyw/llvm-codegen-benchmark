@@ -5,9 +5,8 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	mov	w8, #55296
-	add	w8, w8, w0, lsr #10
-	lsr	w8, w8, #7
+	lsr	w8, w0, #17
+	add	w8, w8, #432
 	and	w0, w8, #0xfffe
 	ret
 

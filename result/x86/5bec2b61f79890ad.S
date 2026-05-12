@@ -30,9 +30,9 @@ func0000000000000077:
 
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000f4:
-	leal	48(%rdx,%rsi), %eax
-	shrl	$3, %eax
-	addq	%rdi, %rax
+	addl	%edx, %esi
+	shrl	$3, %esi
+	leaq	6(%rsi,%rdi), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

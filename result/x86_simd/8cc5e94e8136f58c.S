@@ -81,21 +81,22 @@ func0000000000000004:
 	retq
 
 .LCPI9_0:
-	.quad	-94489280512
+	.quad	-22
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000003:
 	vpsllq	$32, %ymm0, %ymm0
-	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	vpsraq	$32, %ymm0, %ymm0
+	vpaddq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI10_0:
-	.quad	-85899345920
+	.quad	-20
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000001a:
-	vpsllq	$31, %ymm0, %ymm0
+	vpsrlq	$1, %ymm0, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpblendd	$170, %ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0
-	vpsraq	$32, %ymm0, %ymm0
 	retq
 
 .LCPI11_0:

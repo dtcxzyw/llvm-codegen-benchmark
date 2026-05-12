@@ -1,6 +1,6 @@
 func000000000000000d:
-	sub	w8, w1, #52
-	add	w0, w0, w8, asr #1
+	add	w8, w0, w1, asr #1
+	sub	w0, w8, #26
 	ret
 
 func0000000000000009:

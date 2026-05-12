@@ -9,10 +9,9 @@ func0000000000000020:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000002e:
-	addl	$-320, %esi
 	sarl	%esi
 	movslq	%esi, %rax
-	leaq	1384448(%rdi,%rax), %rax
+	leaq	1384288(%rax,%rdi), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -41,10 +40,9 @@ func0000000000000022:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000032:
-	addl	$-160, %esi
 	sarl	%esi
 	movslq	%esi, %rax
-	leaq	922880(%rdi,%rax,4), %rax
+	leaq	922560(%rdi,%rax,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

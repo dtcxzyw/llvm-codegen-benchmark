@@ -55,17 +55,16 @@ func0000000000000019:
 	retq
 
 .LCPI4_0:
-	.long	64
+	.long	8
 .LCPI4_1:
 	.long	33554424
-.LCPI4_2:
-	.long	8
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001b:
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$3, %ymm0, %ymm0
+	vpbroadcastd	.LCPI4_0(%rip), %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
-	vpaddd	.LCPI4_2(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

@@ -17,11 +17,10 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
-	lui	a1, 240
-	add	a0, a0, a1
+	srli	a0, a0, 10
 	li	a1, 27
-	slli	a0, a0, 44
-	srli	a0, a0, 54
+	addi	a0, a0, 960
+	andi	a0, a0, 1023
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	ret

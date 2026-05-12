@@ -26,11 +26,10 @@ func0000000000000004:
 	retq
 
 .LCPI3_0:
-	.long	55296
+	.long	432
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
-	vpsrld	$10, %ymm0, %ymm0
+	vpsrld	$17, %ymm0, %ymm0
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$7, %ymm0, %ymm0
 	retq
 

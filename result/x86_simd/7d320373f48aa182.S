@@ -53,14 +53,14 @@ func000000000000000e:
 .LCPI4_0:
 	.quad	21
 .LCPI4_1:
-	.quad	8589934576
+	.quad	4294967288
 .LCPI4_2:
-	.quad	8589934588
+	.quad	4294967294
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001f:
 	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
+	vpsrlq	$1, %ymm0, %ymm0
 	vpandq	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI4_2(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$1, %ymm0, %ymm0
 	retq
 

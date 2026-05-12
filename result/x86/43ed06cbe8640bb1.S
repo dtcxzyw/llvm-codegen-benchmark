@@ -44,8 +44,8 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	subl	%esi, %edi
-	leal	67043328(%rdi), %eax
-	shrl	$10, %eax
+	shrl	$10, %edi
+	leal	65472(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop

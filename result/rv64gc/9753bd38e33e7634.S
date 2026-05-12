@@ -12,9 +12,8 @@ func000000000000006d:
 
 func000000000000002d:
 	slli	a0, a0, 4
-	addi	a0, a0, -16
 	srai	a0, a0, 2
-	addi	a0, a0, -4
+	addi	a0, a0, -8
 	ret
 
 func0000000000000001:
