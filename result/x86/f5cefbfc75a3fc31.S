@@ -11,8 +11,10 @@ func0000000000000038:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
-	addl	$4, %esi
-	testl	$-9, %esi
+	movl	%esi, %eax
+	negl	%eax
+	cmovsl	%esi, %eax
+	cmpl	$4, %eax
 	sete	%al
 	orb	%dil, %al
 	retq
