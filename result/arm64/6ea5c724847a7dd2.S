@@ -10,8 +10,7 @@ func0000000000000002:
 	fsub	d1, d1, d2
 	mov	x8, #9218868437227405311
 	fmov	d2, x8
-	fcmp	d1, d2
-	fcsel	d1, d1, d2, mi
+	fminnm	d1, d1, d2
 	fmul	d0, d0, d1
 	ret
 

@@ -3,8 +3,7 @@ func0000000000000004:
 	fadd	d0, d0, d1
 	movk	x8, #16495, lsl #48
 	fmov	d1, x8
-	fcmp	d0, d1
-	fcsel	d0, d1, d0, gt
+	fminnm	d0, d0, d1
 	ret
 
 func0000000000000002:

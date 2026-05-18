@@ -10,8 +10,7 @@ func000000000000000c:
 	fsub	s1, s1, s2
 	fsub	s0, s1, s0
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, ge
+	fmaxnm	s0, s0, s1
 	ret
 
 func0000000000000002:
@@ -20,7 +19,6 @@ func0000000000000002:
 	movk	w8, #15886, lsl #16
 	fsub	s0, s1, s0
 	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 

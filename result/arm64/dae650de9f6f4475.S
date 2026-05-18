@@ -5,8 +5,7 @@ func0000000000000024:
 	fmov	d1, #1.00000000
 	adrp	x8, .LCPI0_0
 	fadd	d0, d0, d1
-	fcmp	d0, d1
-	fcsel	d0, d1, d0, mi
+	fmaxnm	d0, d0, d1
 	ldr	d1, [x8, :lo12:.LCPI0_0]
 	fcmp	d0, d1
 	cset	w0, gt

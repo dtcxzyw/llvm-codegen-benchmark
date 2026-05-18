@@ -1,8 +1,7 @@
 func0000000000000002:
 	fmul	d0, d0, d1
 	fmov	d1, #-1.00000000
-	fcmp	d0, d1
-	fcsel	d0, d1, d0, mi
+	fmaxnm	d0, d0, d1
 	ret
 
 func0000000000000004:
@@ -10,8 +9,7 @@ func0000000000000004:
 	fmul	d0, d0, d1
 	movk	x8, #16623, lsl #48
 	fmov	d1, x8
-	fcmp	d0, d1
-	fcsel	d0, d1, d0, gt
+	fminnm	d0, d0, d1
 	ret
 
 func0000000000000008:
@@ -24,8 +22,7 @@ func0000000000000008:
 func000000000000000c:
 	fmul	d0, d0, d1
 	fmov	d1, #1.00000000
-	fcmp	d0, d1
-	fcsel	d0, d1, d0, ge
+	fminnm	d0, d0, d1
 	ret
 
 func000000000000000a:

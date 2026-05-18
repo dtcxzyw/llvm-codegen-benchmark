@@ -23,8 +23,7 @@ func0000000000000014:
 	movk	x8, #16374, lsl #48
 	fmadd	d0, d0, d1, d2
 	fmov	d1, x8
-	fcmp	d0, d1
-	fcsel	d0, d1, d0, gt
+	fminnm	d0, d0, d1
 	ret
 
 func0000000000000004:
@@ -33,7 +32,6 @@ func0000000000000004:
 	movk	x8, #16367, lsl #48
 	fmadd	d0, d0, d1, d2
 	fmov	d1, x8
-	fcmp	d0, d1
-	fcsel	d0, d1, d0, gt
+	fminnm	d0, d0, d1
 	ret
 

@@ -9,7 +9,6 @@ func0000000000000002:
 func0000000000000004:
 	fmov	s1, #1.00000000
 	fsub	s0, s1, s0
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
+	fminnm	s0, s0, s1
 	ret
 

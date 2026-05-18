@@ -15,8 +15,7 @@ func000000000000000c:
 func0000000000000002:
 	fcvt	s0, d0
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 
 func0000000000000007:

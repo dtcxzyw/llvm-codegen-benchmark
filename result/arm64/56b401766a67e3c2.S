@@ -4,8 +4,7 @@ func0000000000000002:
 	movk	x8, #16623, lsl #48
 	fadd	d0, d0, d1
 	fmov	d1, x8
-	fcmp	d0, d1
-	fcsel	d0, d0, d1, mi
+	fminnm	d0, d0, d1
 	ret
 
 .LCPI1_0:
@@ -24,8 +23,7 @@ func000000000000000c:
 	mov	x8, #-4476578029606273024
 	fadd	d0, d0, d1
 	fmov	d1, x8
-	fcmp	d0, d1
-	fcsel	d0, d0, d1, ge
+	fmaxnm	d0, d0, d1
 	ret
 
 func000000000000000e:

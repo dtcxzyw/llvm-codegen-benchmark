@@ -20,8 +20,7 @@ func0000000000000002:
 	fmadd	d0, d0, d1, d2
 	movk	x8, #16495, lsl #48
 	fmov	d1, x8
-	fcmp	d0, d1
-	fcsel	d0, d0, d1, mi
+	fminnm	d0, d0, d1
 	ret
 
 func000000000000000a:

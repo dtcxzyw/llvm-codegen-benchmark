@@ -27,7 +27,6 @@ func0000000000000004:
 	mov	w8, #1065353215
 	fsub	s0, s1, s0
 	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
+	fminnm	s0, s0, s1
 	ret
 

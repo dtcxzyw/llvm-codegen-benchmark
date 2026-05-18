@@ -8,8 +8,7 @@ func0000000000000004:
 func000000000000000a:
 	fsub	s0, s0, s1
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, ls
+	fminnm	s0, s0, s1
 	ret
 
 func000000000000000c:
@@ -22,7 +21,6 @@ func000000000000000c:
 func0000000000000002:
 	fsub	s0, s0, s1
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 

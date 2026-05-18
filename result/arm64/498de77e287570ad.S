@@ -3,8 +3,7 @@ func0000000000000004:
 	fadd	s0, s0, s0
 	movk	w8, #12843, lsl #16
 	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, gt
+	fmaxnm	s0, s0, s1
 	ret
 
 func0000000000000007:
@@ -21,8 +20,7 @@ func0000000000000002:
 	mov	w8, #1120403456
 	fmul	s0, s0, s1
 	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 
 func000000000000000c:

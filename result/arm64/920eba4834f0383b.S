@@ -13,8 +13,7 @@ func0000000000000042:
 	fmov	s1, #1.25000000
 	mov	w8, #52429
 	movk	w8, #16204, lsl #16
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
+	fminnm	s0, s0, s1
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w0, mi
@@ -23,8 +22,7 @@ func0000000000000042:
 func0000000000000045:
 	fcvt	s0, d0
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
+	fminnm	s0, s0, s1
 	fmov	s1, #0.25000000
 	fcmp	s0, s1
 	cset	w0, hi

@@ -12,16 +12,14 @@ func0000000000000002:
 	mov	w8, #1123942400
 	fadd	s0, s0, s1
 	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 
 func000000000000000c:
 	fmov	s1, #0.50000000
 	fadd	s0, s0, s1
 	movi	v1.2s, #195, lsl #24
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, ge
+	fmaxnm	s0, s0, s1
 	ret
 
 func000000000000000e:

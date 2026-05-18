@@ -4,8 +4,7 @@ func0000000000000022:
 	fmul	s0, s0, s1
 	fmov	s1, w8
 	mov	w8, #-1027080192
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w0, mi

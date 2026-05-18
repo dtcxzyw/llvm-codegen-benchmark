@@ -8,15 +8,13 @@ func0000000000000004:
 func0000000000000002:
 	fmadd	s0, s0, s1, s2
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 
 func000000000000000a:
 	fmadd	s0, s0, s1, s2
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, ls
+	fminnm	s0, s0, s1
 	ret
 
 func0000000000000014:
@@ -29,7 +27,6 @@ func0000000000000014:
 func0000000000000012:
 	fmadd	s0, s0, s1, s2
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 

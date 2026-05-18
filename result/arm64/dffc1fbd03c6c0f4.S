@@ -2,8 +2,7 @@ func0000000000000002:
 	fdiv	d0, d0, d1
 	fmov	s1, #1.00000000
 	fcvt	s0, d0
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	ret
 
 func0000000000000004:

@@ -1,8 +1,7 @@
 func0000000000000023:
 	fadd	s0, s0, s1
 	fmov	s1, #0.12500000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
 	cset	w0, lt
 	ret
@@ -33,8 +32,7 @@ func00000000000000c4:
 func0000000000000024:
 	fadd	s0, s0, s1
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s0, s1, mi
+	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
 	cset	w0, gt
 	ret

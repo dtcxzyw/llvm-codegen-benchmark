@@ -2,8 +2,7 @@ func0000000000000042:
 	fsub	s1, s1, s2
 	fdiv	s0, s1, s0
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
+	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
 	cset	w0, mi
 	ret
@@ -34,8 +33,7 @@ func0000000000000045:
 	fsub	s1, s1, s2
 	fdiv	s0, s1, s0
 	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
+	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
 	cset	w0, hi
 	ret
@@ -45,8 +43,7 @@ func0000000000000048:
 	mov	w8, #1065353215
 	fdiv	s0, s1, s0
 	fmov	s1, w8
-	fcmp	s0, s1
-	fcsel	s0, s1, s0, gt
+	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
 	cset	w0, eq
 	ret
