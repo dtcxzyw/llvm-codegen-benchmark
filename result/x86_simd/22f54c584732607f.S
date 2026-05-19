@@ -17,7 +17,7 @@
 	.byte	0
 	.byte	0
 .LCPI0_1:
-	.byte	16
+	.byte	0
 	.byte	8
 	.byte	4
 	.byte	2
@@ -25,7 +25,7 @@
 	.byte	0
 	.byte	0
 	.byte	0
-	.byte	16
+	.byte	0
 	.byte	8
 	.byte	4
 	.byte	2
@@ -34,7 +34,7 @@
 	.byte	0
 	.byte	0
 .LCPI0_2:
-	.byte	16
+	.byte	0
 	.byte	8
 	.byte	4
 	.byte	2
@@ -44,9 +44,9 @@
 	.byte	0
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vpand	.LCPI0_0(%rip), %xmm0, %xmm0
-	vpaddb	%xmm0, %xmm0, %xmm1
+	vpand	.LCPI0_0(%rip), %xmm0, %xmm1
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm0, %xmm0
+	vpaddb	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
 	retq
