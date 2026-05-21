@@ -1,8 +1,7 @@
 func0000000000003426:
-	lsl	w8, w0, #24
-	sub	w9, w1, #1
-	cmp	w8, #0
-	ccmp	w9, w2, #0, mi
+	sub	w8, w1, #1
+	cmp	wzr, w0, lsl #24
+	ccmp	w8, w2, #0, gt
 	cset	w0, eq
 	ret
 

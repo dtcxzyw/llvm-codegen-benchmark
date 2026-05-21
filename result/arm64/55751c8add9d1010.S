@@ -11,11 +11,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	lsr	x9, x1, #61
 	mov	x8, #9223372036854775806
-	and	x10, x0, #0x7ffffffffffffffe
-	cmp	x9, #0
-	csel	x0, x8, x10, ne
+	and	x9, x0, #0x7ffffffffffffffe
+	cmp	xzr, x1, lsr #61
+	csel	x0, x8, x9, ne
 	ret
 
 func0000000000000014:

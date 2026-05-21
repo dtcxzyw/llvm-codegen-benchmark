@@ -12,8 +12,7 @@ func00000000000000ec:
 
 func0000000000000024:
 	orr	w8, w0, w1, lsl #27
-	lsr	w8, w8, #27
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #27
 	cset	w0, eq
 	ret
 

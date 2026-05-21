@@ -30,8 +30,7 @@ func000000000000018a:
 	ret
 
 func0000000000000184:
-	lsr	w8, w0, #29
-	cmp	w8, #0
+	cmp	wzr, w0, lsr #29
 	ccmp	w1, #0, #4, eq
 	csetm	w0, ne
 	ret

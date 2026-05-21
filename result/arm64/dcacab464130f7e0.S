@@ -251,7 +251,7 @@ func0000000000000025:
 func000000000000008b:
 	lsr	w8, w2, #26
 	cmp	w0, w1
-	ccmp	w8, #0, #0, ge
+	ccmp	wzr, w8, #0, ge
 	cset	w0, eq
 	ret
 

@@ -7,8 +7,7 @@ func000000000000000a:
 func0000000000000008:
 	fmov	x9, d0
 	mov	w8, #2
-	lsr	x9, x9, #32
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #32
 	cinc	w0, w8, ne
 	ret
 

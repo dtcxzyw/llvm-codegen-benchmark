@@ -28,8 +28,7 @@ func0000000000000034:
 
 func0000000000000004:
 	rev	x8, x0
-	lsr	x8, x8, #33
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #33
 	cset	w0, eq
 	ret
 

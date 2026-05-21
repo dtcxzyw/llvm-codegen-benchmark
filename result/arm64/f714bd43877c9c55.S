@@ -13,8 +13,7 @@ func000000000000000c:
 func0000000000000004:
 	and	x9, x0, x1
 	mov	w8, #32
-	lsr	x9, x9, #32
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #32
 	csel	w0, wzr, w8, eq
 	ret
 

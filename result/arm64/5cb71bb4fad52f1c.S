@@ -20,8 +20,7 @@ func000000000000000a:
 
 func0000000000000004:
 	sub	w8, w2, w1
-	lsr	w8, w8, #29
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #29
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

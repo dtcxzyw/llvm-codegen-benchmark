@@ -39,7 +39,7 @@ func0000000000000684:
 	sub	w8, w2, #3
 	cmp	w0, w1
 	lsr	w8, w8, #24
-	ccmp	w8, #0, #0, lo
+	ccmp	wzr, w8, #0, lo
 	cset	w0, eq
 	ret
 

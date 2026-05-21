@@ -1,11 +1,10 @@
 func0000000000000064:
 	orr	w8, w2, #0x8
 	tst	w1, #0x1
-	lsr	w9, w0, #28
 	csel	w8, w8, w2, ne
-	orr	w10, w8, #0x4
-	cmp	w9, #0
-	csel	w0, w10, w8, eq
+	cmp	wzr, w0, lsr #28
+	orr	w9, w8, #0x4
+	csel	w0, w9, w8, eq
 	ret
 
 func0000000000000061:

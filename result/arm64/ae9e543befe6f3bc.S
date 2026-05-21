@@ -1,8 +1,7 @@
 func0000000000000284:
-	lsr	w8, w0, #26
-	lsr	w9, w2, #24
-	cmp	w8, #0
-	ccmp	w1, w9, #2, eq
+	lsr	w8, w2, #24
+	cmp	wzr, w0, lsr #26
+	ccmp	w1, w8, #2, eq
 	cset	w0, lo
 	ret
 

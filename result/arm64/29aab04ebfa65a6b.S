@@ -60,8 +60,7 @@ func0000000000000194:
 
 func0000000000000084:
 	orr	x8, x0, x1
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 
@@ -146,9 +145,8 @@ func000000000000028a:
 	ret
 
 func0000000000000104:
-	lsr	x9, x0, #32
 	mov	x8, #-4294967297
-	cmp	x9, #0
+	cmp	xzr, x0, lsr #32
 	ccmp	x1, x8, #0, eq
 	cset	w0, hi
 	ret
@@ -273,7 +271,7 @@ func0000000000000306:
 func0000000000000088:
 	lsr	x8, x1, #32
 	tst	x0, #0xffffffff00000000
-	ccmp	x8, #0, #0, ne
+	ccmp	xzr, x8, #0, ne
 	cset	w0, eq
 	ret
 

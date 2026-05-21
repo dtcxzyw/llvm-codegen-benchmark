@@ -37,23 +37,21 @@ func0000000000000004:
 	ret
 
 func0000000000000014:
-	lsr	x9, x0, #31
 	mov	x8, #114278840544526336
 	tst	w1, #0x1
-	mov	x10, #132293239054008320
-	csel	x8, x10, x8, ne
-	cmp	x9, #0
+	mov	x9, #132293239054008320
+	csel	x8, x9, x8, ne
+	cmp	xzr, x0, lsr #31
 	mov	x9, #141300438308749312
 	csel	x0, x9, x8, eq
 	ret
 
 func0000000000000008:
-	lsr	x9, x0, #30
 	mov	w8, #10
 	tst	w1, #0x1
-	mov	w10, #20
-	csel	x8, x10, x8, ne
-	cmp	x9, #0
+	mov	w9, #20
+	csel	x8, x9, x8, ne
+	cmp	xzr, x0, lsr #30
 	mov	w9, #30
 	csel	x0, x9, x8, ne
 	ret

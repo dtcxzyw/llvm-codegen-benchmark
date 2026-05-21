@@ -22,11 +22,10 @@ func000000000000002c:
 	ret
 
 func0000000000000284:
-	lsr	w8, w0, #24
-	and	w9, w2, #0xff
-	and	w10, w1, #0xff
-	cmp	w8, #0
-	ccmp	w10, w9, #2, eq
+	and	w8, w2, #0xff
+	and	w9, w1, #0xff
+	cmp	wzr, w0, lsr #24
+	ccmp	w9, w8, #2, eq
 	cset	w0, lo
 	ret
 

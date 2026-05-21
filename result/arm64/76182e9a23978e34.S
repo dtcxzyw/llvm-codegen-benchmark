@@ -16,9 +16,8 @@ func0000000000000014:
 
 func0000000000000004:
 	mov	x8, #4562146422526312448
+	cmp	xzr, x0, lsr #30
 	fmov	d1, x8
-	lsr	x8, x0, #30
-	cmp	x8, #0
 	fmul	d1, d0, d1
 	fcsel	d0, d0, d1, eq
 	ret

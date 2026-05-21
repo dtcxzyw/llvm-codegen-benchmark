@@ -20,8 +20,7 @@ func0000000000000010:
 	ret
 
 func0000000000000020:
-	lsr	x8, x1, #31
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #31
 	csel	w0, wzr, w0, ne
 	ret
 

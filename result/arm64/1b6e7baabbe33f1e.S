@@ -6,8 +6,7 @@ func00000000000001e1:
 
 func00000000000001f4:
 	add	x8, x0, x1, lsl #3
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 
@@ -93,8 +92,7 @@ func0000000000000008:
 
 func0000000000000084:
 	add	x8, x0, x1, lsl #3
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

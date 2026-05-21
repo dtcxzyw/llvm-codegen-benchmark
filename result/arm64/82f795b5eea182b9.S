@@ -20,10 +20,9 @@ func0000000000000c24:
 	ret
 
 func0000000000000d84:
-	lsr	x8, x0, #32
-	add	x9, x2, #130
-	cmp	x8, #0
-	ccmp	x9, x1, #4, eq
+	add	x8, x2, #130
+	cmp	xzr, x0, lsr #32
+	ccmp	x8, x1, #4, eq
 	cset	w0, ne
 	ret
 
@@ -143,7 +142,7 @@ func0000000000000c84:
 	add	x8, x2, #88
 	lsr	x9, x1, #30
 	cmp	x8, x0
-	ccmp	x9, #0, #0, lo
+	ccmp	xzr, x9, #0, lo
 	cset	w0, eq
 	ret
 

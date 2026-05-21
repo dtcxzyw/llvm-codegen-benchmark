@@ -123,8 +123,7 @@ func00000000000007e4:
 	add	x8, x2, x1
 	add	x8, x8, x0
 	add	x8, x8, #8
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

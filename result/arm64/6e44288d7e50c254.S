@@ -32,8 +32,7 @@ func00000000000000a9:
 
 func00000000000000a1:
 	add	w8, w1, w2
-	lsr	w8, w8, #16
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #16
 	mov	w8, #1
 	cinc	w8, w8, ne
 	add	w0, w8, w0

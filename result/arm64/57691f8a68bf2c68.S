@@ -15,10 +15,9 @@ func0000000000000006:
 	ret
 
 func0000000000000063:
-	lsr	x8, x2, #53
-	orr	x9, x0, x1
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #53
 	mov	x8, #4503599627370496
+	orr	x9, x0, x1
 	csel	x8, x8, xzr, ne
 	orr	x0, x9, x8
 	ret

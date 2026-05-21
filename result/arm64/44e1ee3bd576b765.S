@@ -34,11 +34,10 @@ func0000000000000021:
 
 func0000000000000044:
 	and	w8, w2, #0x2
-	lsr	w9, w0, #30
+	cmp	wzr, w0, lsr #30
 	orr	w8, w1, w8
-	orr	w10, w8, #0x80000000
-	cmp	w9, #0
-	csel	w0, w8, w10, eq
+	orr	w9, w8, #0x80000000
+	csel	w0, w8, w9, eq
 	ret
 
 func0000000000000074:

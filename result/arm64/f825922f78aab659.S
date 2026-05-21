@@ -12,10 +12,9 @@ func00000000000000a7:
 	ret
 
 func0000000000000042:
-	lsr	x8, x1, #32
-	lsr	x9, x0, #32
-	cmp	x8, #0
-	csel	w0, wzr, w9, ne
+	lsr	x8, x0, #32
+	cmp	xzr, x1, lsr #32
+	csel	w0, wzr, w8, ne
 	ret
 
 func000000000000000b:

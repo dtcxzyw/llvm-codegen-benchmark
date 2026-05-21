@@ -124,7 +124,7 @@ func0000000000000184:
 	sub	x8, x1, x2
 	tst	w0, #0xff
 	lsr	x8, x8, #52
-	ccmp	x8, #0, #0, ne
+	ccmp	xzr, x8, #0, ne
 	cset	w0, eq
 	ret
 

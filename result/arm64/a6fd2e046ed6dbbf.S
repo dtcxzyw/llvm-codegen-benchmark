@@ -119,9 +119,8 @@ func000000000000008c:
 	ret
 
 func0000000000000186:
-	lsl	w8, w0, #16
-	cmp	w8, #0
-	ccmp	w1, #0, #0, pl
+	cmp	wzr, w0, lsl #16
+	ccmp	w1, #0, #0, le
 	cset	w0, ne
 	ret
 

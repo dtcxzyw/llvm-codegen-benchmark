@@ -7,10 +7,9 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	lsr	x9, x0, #52
 	mov	w8, #11
+	cmp	xzr, x0, lsr #52
 	sub	w8, w8, w1
-	cmp	x9, #0
 	csel	w0, wzr, w8, eq
 	ret
 
@@ -35,10 +34,9 @@ func0000000000000074:
 	ret
 
 func0000000000000064:
-	lsr	x9, x0, #56
 	mov	w8, #8
+	cmp	xzr, x0, lsr #56
 	sub	w8, w8, w1
-	cmp	x9, #0
 	csel	w0, wzr, w8, eq
 	ret
 

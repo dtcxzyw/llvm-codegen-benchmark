@@ -1,7 +1,7 @@
 func000000000000008b:
 	lsr	x8, x2, #31
 	cmp	w0, w1
-	ccmp	x8, #0, #0, ge
+	ccmp	xzr, x8, #0, ge
 	cset	w0, eq
 	ret
 
@@ -206,7 +206,7 @@ func0000000000000147:
 func0000000000000087:
 	lsr	x8, x2, #32
 	cmp	w0, w1
-	ccmp	x8, #0, #0, le
+	ccmp	xzr, x8, #0, le
 	cset	w0, eq
 	ret
 

@@ -1,9 +1,8 @@
 func00000000000000b8:
-	sub	x9, x0, x1
 	mov	w8, #-1
-	lsr	x9, x9, #32
+	sub	x9, x0, x1
 	add	x8, x1, x8
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #32
 	csel	x0, x8, x0, ne
 	ret
 

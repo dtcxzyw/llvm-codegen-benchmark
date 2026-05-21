@@ -37,8 +37,7 @@ func0000000000000aa4:
 	movk	x9, #11915, lsl #48
 	madd	x8, x8, x9, x10
 	add	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

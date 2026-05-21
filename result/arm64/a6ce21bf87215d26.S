@@ -21,8 +21,7 @@ func000000000000002a:
 
 func0000000000000004:
 	add	x8, x1, x2
-	lsr	x9, x8, #32
-	cmp	x9, #0
+	cmp	xzr, x8, lsr #32
 	csel	x0, x8, x0, eq
 	ret
 

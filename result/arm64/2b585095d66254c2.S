@@ -57,7 +57,7 @@ func000000000000000a:
 func0000000000000021:
 	lsr	x8, x1, #2
 	cmp	x0, #0
-	ccmp	x8, #0, #4, ne
+	ccmp	xzr, x8, #4, ne
 	cset	w0, eq
 	ret
 
@@ -71,8 +71,7 @@ func0000000000000028:
 func0000000000000074:
 	lsr	x8, x1, #3
 	mul	x8, x8, x0
-	lsr	x8, x8, #30
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #30
 	cset	w0, eq
 	ret
 

@@ -1,8 +1,7 @@
 func00000000000003a4:
 	lsl	x8, x1, #32
 	sub	x8, x8, x0
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #59
 	cset	w0, eq
 	ret
 

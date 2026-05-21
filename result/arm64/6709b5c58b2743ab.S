@@ -1,8 +1,7 @@
 func000000000000008c:
 	mov	w8, #16777216
 	add	x8, x1, x8
-	lsr	x8, x8, #25
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #25
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

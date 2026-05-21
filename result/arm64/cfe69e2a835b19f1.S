@@ -28,8 +28,7 @@ func0000000000000004:
 	cmp	x0, x1
 	mov	w8, #2
 	csel	x9, x0, x1, hi
-	lsr	x9, x9, #32
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #32
 	cinc	x0, x8, ne
 	ret
 
@@ -37,8 +36,7 @@ func0000000000000028:
 	cmp	x0, x1
 	mov	w8, #8
 	csel	x9, x0, x1, hi
-	lsr	x9, x9, #60
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #60
 	csel	x0, xzr, x8, ne
 	ret
 

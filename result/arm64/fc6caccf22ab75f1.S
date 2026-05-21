@@ -5,11 +5,10 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
-	lsr	x8, x0, #25
-	and	x9, x1, #0x3ffffff
-	and	x9, x9, #0xffffffffff7fffff
-	cmp	x8, #0
-	csel	x0, xzr, x9, ne
+	and	x8, x1, #0x3ffffff
+	cmp	xzr, x0, lsr #25
+	and	x8, x8, #0xffffffffff7fffff
+	csel	x0, xzr, x8, ne
 	ret
 
 func000000000000000a:
@@ -19,10 +18,9 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	lsr	x8, x0, #61
-	and	x9, x1, #0xfffffffffffffe00
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	and	x8, x1, #0xfffffffffffffe00
+	cmp	xzr, x0, lsr #61
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000014:

@@ -103,8 +103,7 @@ func000000000000008c:
 
 func0000000000000184:
 	sub	w8, w1, w2
-	lsr	w8, w8, #29
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #29
 	ccmp	w0, #0, #4, eq
 	cset	w0, ne
 	ret

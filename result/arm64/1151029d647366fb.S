@@ -10,8 +10,7 @@ func00000000000005f4:
 	cmp	w2, #0
 	cinc	w8, w1, eq
 	add	w8, w8, w0
-	lsr	w8, w8, #28
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #28
 	cset	w0, eq
 	ret
 
@@ -71,8 +70,7 @@ func00000000000005e1:
 	ret
 
 func00000000000011f8:
-	lsr	w8, w2, #24
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #24
 	cinc	w8, w1, eq
 	add	w8, w8, w0
 	cmp	w8, #1

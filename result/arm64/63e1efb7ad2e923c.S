@@ -6,9 +6,8 @@ func000000000000002c:
 	ret
 
 func0000000000000026:
-	lsl	w8, w0, #24
-	cmp	w8, #0
-	ccmp	x1, x2, #4, pl
+	cmp	wzr, w0, lsl #24
+	ccmp	x1, x2, #4, le
 	cset	w0, eq
 	ret
 

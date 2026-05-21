@@ -63,11 +63,10 @@ func0000000000000006:
 	ret
 
 func0000000000000028:
-	lsr	x8, x1, #32
-	mov	w9, #-1
-	sub	x9, x9, x2
-	cmp	x8, #0
-	csel	x0, x9, x0, ne
+	mov	w8, #-1
+	cmp	xzr, x1, lsr #32
+	sub	x8, x8, x2
+	csel	x0, x8, x0, ne
 	ret
 
 func000000000000002a:

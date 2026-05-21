@@ -1,9 +1,8 @@
 func0000000000000320:
-	lsr	x8, x2, #32
-	lsl	w9, w1, #8
-	cmp	x8, #0
-	csel	w8, w1, w9, eq
+	lsl	w8, w1, #8
+	cmp	xzr, x2, lsr #32
 	mov	w9, #33554432
+	csel	w8, w1, w8, eq
 	orr	w8, w8, w0
 	add	w0, w8, w9
 	ret

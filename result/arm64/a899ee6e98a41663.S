@@ -3,8 +3,7 @@ func0000000000000004:
 	add	w9, w0, #16
 	movk	w8, #32768, lsl #16
 	add	x8, x1, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	csinv	w0, w9, wzr, eq
 	ret
 

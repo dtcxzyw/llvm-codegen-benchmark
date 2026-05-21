@@ -38,8 +38,7 @@ func0000000000000021:
 func00000000000001a4:
 	lsl	w8, w1, #16
 	sub	w8, w8, w0
-	lsr	w8, w8, #29
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #29
 	cset	w0, eq
 	ret
 

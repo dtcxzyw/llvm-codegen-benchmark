@@ -80,11 +80,10 @@ func0000000000000068:
 	ret
 
 func000000000000004c:
-	lsl	w9, w0, #24
 	mov	w8, #253
+	cmp	wzr, w0, lsl #24
 	and	w8, w0, w8
-	cmp	w9, #0
-	ccmp	w8, #8, #4, pl
+	ccmp	w8, #8, #4, le
 	cset	w0, eq
 	ret
 

@@ -15,8 +15,7 @@ func0000000000000021:
 func0000000000000024:
 	sxth	x8, w0
 	add	x8, x8, #1
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #60
 	cset	w0, eq
 	ret
 

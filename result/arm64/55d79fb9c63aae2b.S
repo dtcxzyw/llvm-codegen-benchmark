@@ -135,8 +135,7 @@ func00000000000002a4:
 	add	x8, x2, x2, lsl #2
 	add	x9, x1, x0
 	add	x8, x8, x9
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

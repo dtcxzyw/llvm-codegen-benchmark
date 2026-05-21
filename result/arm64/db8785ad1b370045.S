@@ -15,8 +15,7 @@ func00000000000000ca:
 func0000000000000084:
 	cmp	w2, #16, lsl #12
 	csel	w8, w1, w2, lo
-	lsr	w9, w8, #24
-	cmp	w9, #0
+	cmp	wzr, w8, lsr #24
 	csel	w0, w0, w8, eq
 	ret
 
@@ -35,8 +34,7 @@ func0000000000000146:
 	ret
 
 func0000000000000118:
-	lsr	w8, w2, #16
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #16
 	csel	w8, w1, w2, ne
 	cmp	w8, #255
 	csel	w0, w0, w8, hi
@@ -52,8 +50,7 @@ func0000000000000318:
 func0000000000000284:
 	cmp	w2, #16, lsl #12
 	csel	w8, w1, w2, lo
-	lsr	w9, w8, #24
-	cmp	w9, #0
+	cmp	wzr, w8, lsr #24
 	csel	w0, w0, w8, eq
 	ret
 

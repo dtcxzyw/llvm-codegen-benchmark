@@ -86,8 +86,7 @@ func00000000000000aa:
 func0000000000000024:
 	mov	w8, w1
 	mul	x8, x0, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 
@@ -162,8 +161,7 @@ func0000000000000021:
 func00000000000000f4:
 	mov	w8, w1
 	mul	x8, x0, x8
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #61
 	cset	w0, eq
 	ret
 
@@ -210,8 +208,7 @@ func0000000000000026:
 func0000000000000074:
 	mov	w8, w1
 	mul	x8, x0, x8
-	lsr	x8, x8, #30
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #30
 	cset	w0, eq
 	ret
 

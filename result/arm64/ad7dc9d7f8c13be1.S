@@ -20,8 +20,7 @@ func000000000000000c:
 
 func00000000000000f4:
 	add	x8, x1, w2, uxtw
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

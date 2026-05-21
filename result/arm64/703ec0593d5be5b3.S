@@ -1,6 +1,5 @@
 func0000000000000010:
-	lsr	x8, x1, #31
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #31
 	cset	w8, eq
 	tst	w0, w8
 	csinv	w0, w1, wzr, ne
@@ -16,8 +15,7 @@ func0000000000000020:
 	ret
 
 func0000000000000013:
-	lsr	x8, x1, #31
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #31
 	cset	w8, eq
 	tst	w0, w8
 	csinv	w0, w1, wzr, ne

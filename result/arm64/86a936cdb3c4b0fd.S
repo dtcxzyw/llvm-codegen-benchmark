@@ -52,8 +52,7 @@ func0000000000000024:
 	tst	w0, #0x1
 	sub	x8, x8, x1
 	csel	x8, x1, x8, ne
-	lsr	x8, x8, #28
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #28
 	cset	w0, eq
 	ret
 
@@ -80,8 +79,7 @@ func0000000000000034:
 	tst	w0, #0x1
 	sub	x8, x8, x1
 	csel	x8, x1, x8, ne
-	lsr	x8, x8, #27
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #27
 	cset	w0, eq
 	ret
 

@@ -230,7 +230,7 @@ func0000000000000026:
 func0000000000000184:
 	lsr	w8, w0, #29
 	cmn	w1, w2
-	ccmp	w8, #0, #0, ne
+	ccmp	wzr, w8, #0, ne
 	cset	w0, eq
 	ret
 

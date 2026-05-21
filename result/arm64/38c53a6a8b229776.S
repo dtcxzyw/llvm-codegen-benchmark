@@ -23,7 +23,7 @@ func0000000000000081:
 func00000000000000a1:
 	asr	x8, x1, #32
 	cmp	x0, #0
-	ccmp	x8, #0, #4, ne
+	ccmp	xzr, x8, #4, ne
 	cset	w0, eq
 	ret
 
@@ -58,7 +58,7 @@ func0000000000000028:
 func0000000000000021:
 	asr	x8, x1, #32
 	cmp	x0, #0
-	ccmp	x8, #0, #4, ne
+	ccmp	xzr, x8, #4, ne
 	cset	w0, eq
 	ret
 
@@ -100,13 +100,12 @@ func0000000000000094:
 func000000000000002c:
 	asr	x8, x1, #32
 	cmp	x0, #0
-	ccmp	x8, #0, #4, ne
+	ccmp	xzr, x8, #4, ne
 	cset	w0, ne
 	ret
 
 func00000000000000ac:
-	asr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, asr #32
 	ccmp	x0, #0, #4, ne
 	cset	w0, ne
 	ret
@@ -126,8 +125,7 @@ func0000000000000026:
 func0000000000000024:
 	asr	x8, x1, #2
 	mul	x8, x0, x8
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #60
 	cset	w0, eq
 	ret
 

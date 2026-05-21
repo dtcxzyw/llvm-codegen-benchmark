@@ -28,8 +28,7 @@ func0000000000000006:
 func0000000000000174:
 	sub	w8, w1, #48
 	add	x8, x0, x8
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 
@@ -82,8 +81,7 @@ func00000000000001b4:
 func00000000000001f4:
 	sub	w8, w1, #48
 	add	x8, x0, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

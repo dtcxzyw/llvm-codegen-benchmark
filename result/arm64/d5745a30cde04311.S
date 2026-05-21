@@ -14,9 +14,8 @@ func0000000000000c2c:
 	ret
 
 func0000000000000cc1:
-	lsl	w8, w1, #24
-	cmp	w8, #0
-	ccmp	x0, #0, #0, mi
+	cmp	wzr, w1, lsl #24
+	ccmp	x0, #0, #0, gt
 	cset	w0, eq
 	ret
 

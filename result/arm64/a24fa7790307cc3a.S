@@ -57,8 +57,7 @@ func00000000000000a8:
 func0000000000000084:
 	orr	x8, x1, x2
 	sub	x8, x8, x0
-	lsr	x8, x8, #35
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #35
 	cset	w0, eq
 	ret
 

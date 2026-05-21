@@ -7,8 +7,7 @@ func000000000000000a:
 func0000000000000004:
 	add	w8, w1, w0
 	eor	w8, w8, w0
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 

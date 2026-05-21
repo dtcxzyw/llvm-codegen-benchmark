@@ -1,8 +1,7 @@
 func00000000000001d1:
 	and	x8, x2, #0x1
 	add	x8, x1, x8
-	lsr	x8, x8, #24
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #24
 	mov	w8, #40
 	cinc	w8, w8, ne
 	add	w0, w8, w0

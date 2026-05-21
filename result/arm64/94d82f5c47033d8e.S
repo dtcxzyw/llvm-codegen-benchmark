@@ -60,10 +60,9 @@ func000000000000006a:
 	ret
 
 func0000000000000024:
-	lsr	w8, w1, #24
-	sub	x9, x2, #1
-	cmp	w8, #0
-	csel	x0, x0, x9, eq
+	sub	x8, x2, #1
+	cmp	wzr, w1, lsr #24
+	csel	x0, x0, x8, eq
 	ret
 
 func0000000000000026:

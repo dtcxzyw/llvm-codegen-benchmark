@@ -53,10 +53,9 @@ func0000000000000098:
 	ret
 
 func0000000000000026:
-	lsl	w8, w0, #24
-	and	w9, w1, #0xff
-	cmp	w8, #0
-	ccmp	w9, #1, #0, mi
+	and	w8, w1, #0xff
+	cmp	wzr, w0, lsl #24
+	ccmp	w8, #1, #0, gt
 	cset	w0, eq
 	ret
 
@@ -69,8 +68,8 @@ func000000000000014a:
 func00000000000000cc:
 	lsl	w8, w1, #24
 	tst	w0, #0xff
-	ccmp	w8, #0, #0, ne
-	cset	w0, mi
+	ccmp	wzr, w8, #4, ne
+	cset	w0, gt
 	ret
 
 func000000000000014c:
@@ -97,8 +96,8 @@ func0000000000000024:
 func0000000000000086:
 	lsl	w8, w0, #24
 	tst	w1, #0xf8
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #4, eq
+	cset	w0, gt
 	ret
 
 func000000000000002a:
@@ -111,8 +110,8 @@ func000000000000002a:
 func0000000000000286:
 	lsl	w8, w0, #24
 	tst	w1, #0xf8
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000184:
@@ -247,8 +246,8 @@ func0000000000000284:
 func0000000000000186:
 	lsl	w8, w0, #24
 	tst	w1, #0xff
-	ccmp	w8, #0, #0, ne
-	cset	w0, mi
+	ccmp	wzr, w8, #4, ne
+	cset	w0, gt
 	ret
 
 func0000000000000118:

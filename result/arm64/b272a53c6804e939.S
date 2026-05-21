@@ -1,7 +1,6 @@
 func0000000000000008:
 	sub	x8, x1, x2
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #60
 	csinv	x0, x0, xzr, eq
 	ret
 
@@ -27,8 +26,7 @@ func0000000000000006:
 
 func0000000000000028:
 	sub	x8, x1, x2
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	csinv	x0, x0, xzr, eq
 	ret
 

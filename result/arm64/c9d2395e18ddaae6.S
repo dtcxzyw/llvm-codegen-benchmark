@@ -135,14 +135,14 @@ func000000000000054a:
 func0000000000000085:
 	lsr	w8, w1, #24
 	cmp	w0, w2
-	ccmp	w8, #0, #0, ls
+	ccmp	wzr, w8, #0, ls
 	cset	w0, eq
 	ret
 
 func0000000000000084:
 	lsr	w8, w1, #29
 	cmp	w0, w2
-	ccmp	w8, #0, #0, lo
+	ccmp	wzr, w8, #0, lo
 	cset	w0, eq
 	ret
 

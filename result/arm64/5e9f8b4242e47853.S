@@ -19,10 +19,9 @@ func0000000000000018:
 	ret
 
 func000000000000000c:
-	lsl	w9, w1, #24
+	cmp	wzr, w1, lsl #24
 	mov	w8, #2097152
-	cmp	w9, #0
-	cset	w9, mi
+	cset	w9, gt
 	orr	w9, w9, w0
 	tst	w9, #0x1
 	csel	w0, w8, wzr, ne

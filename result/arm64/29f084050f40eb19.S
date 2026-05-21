@@ -168,13 +168,11 @@ func0000000000000318:
 	ret
 
 func00000000000000c6:
-	lsl	w8, w2, #24
-	lsl	w9, w1, #24
-	cmp	w8, #0
-	cset	w8, mi
-	cmp	w9, #0
+	cmp	wzr, w2, lsl #24
+	cset	w8, gt
+	cmp	wzr, w1, lsl #24
 	orr	w8, w0, w8
-	cset	w9, mi
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

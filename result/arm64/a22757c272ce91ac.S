@@ -114,8 +114,7 @@ func0000000000000026:
 
 func0000000000000024:
 	mul	x8, x0, x1
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

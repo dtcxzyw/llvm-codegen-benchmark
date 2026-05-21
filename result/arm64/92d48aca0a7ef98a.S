@@ -21,8 +21,7 @@ func0000000000000006:
 
 func0000000000000004:
 	fmov	x8, d0
-	lsr	x8, x8, #52
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #52
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

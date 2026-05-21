@@ -1,7 +1,6 @@
 func0000000000000004:
-	lsr	x9, x1, #56
+	cmp	xzr, x1, lsr #56
 	mov	w8, #8
-	cmp	x9, #0
 	cset	w9, eq
 	orr	w9, w0, w9
 	tst	w9, #0x1

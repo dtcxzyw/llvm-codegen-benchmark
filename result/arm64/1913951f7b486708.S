@@ -37,10 +37,9 @@ func0000000000000481:
 func0000000000000084:
 	mov	w8, #1073741823
 	sub	w9, w1, #1
-	lsr	w10, w0, #30
 	cmp	w9, w8
 	cset	w8, lo
-	cmp	w10, #0
+	cmp	wzr, w0, lsr #30
 	cset	w9, eq
 	eor	w0, w9, w8
 	ret

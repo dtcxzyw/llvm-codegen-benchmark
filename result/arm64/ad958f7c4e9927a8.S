@@ -37,7 +37,7 @@ func0000000000000481:
 	cmp	w2, #0
 	lsr	x8, x1, #32
 	ccmp	x0, #0, #0, eq
-	ccmp	x8, #0, #0, eq
+	ccmp	xzr, x8, #0, eq
 	cset	w0, eq
 	ret
 

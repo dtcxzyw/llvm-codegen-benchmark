@@ -77,8 +77,7 @@ func000000000000018c:
 	ret
 
 func00000000000000c4:
-	lsr	x8, x0, #31
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #31
 	ccmp	x0, x1, #0, eq
 	cset	w0, lt
 	ret

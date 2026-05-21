@@ -1,7 +1,6 @@
 func000000000000018f:
-	lsr	x9, x1, #16
 	mov	w8, #2
-	cmp	x9, #0
+	cmp	xzr, x1, lsr #16
 	mov	w9, #4
 	csel	w8, w9, w8, ne
 	add	w8, w8, w0

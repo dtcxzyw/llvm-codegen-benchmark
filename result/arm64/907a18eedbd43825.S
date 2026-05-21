@@ -125,8 +125,7 @@ func00000000000000c4:
 	ret
 
 func0000000000000184:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #32
 	ccmp	w1, #0, #0, ne
 	cset	w0, ne
 	ret

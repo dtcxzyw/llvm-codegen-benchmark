@@ -40,8 +40,7 @@ func000000000000006c:
 func00000000000000f4:
 	and	w8, w1, #0xffff
 	mul	w8, w0, w8
-	lsr	w8, w8, #29
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #29
 	cset	w0, eq
 	ret
 

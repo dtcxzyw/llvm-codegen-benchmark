@@ -115,10 +115,9 @@ func0000000000000281:
 	ret
 
 func0000000000000086:
-	lsl	w8, w0, #16
-	and	w9, w1, #0xff
-	cmp	w8, #0
-	ccmp	w9, #7, #2, mi
+	and	w8, w1, #0xff
+	cmp	wzr, w0, lsl #16
+	ccmp	w8, #7, #2, gt
 	cset	w0, lo
 	ret
 

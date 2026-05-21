@@ -68,7 +68,7 @@ func00000000000000cc:
 func0000000000000294:
 	lsr	x8, x1, #24
 	cmp	w0, #255
-	ccmp	x8, #0, #0, lo
+	ccmp	xzr, x8, #0, lo
 	cset	w0, eq
 	ret
 
@@ -206,7 +206,7 @@ func000000000000010a:
 func0000000000000088:
 	lsr	x8, x1, #32
 	cmp	w0, #1
-	ccmp	x8, #0, #0, hi
+	ccmp	xzr, x8, #0, hi
 	cset	w0, eq
 	ret
 

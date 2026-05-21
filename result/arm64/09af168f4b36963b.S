@@ -133,8 +133,7 @@ func00000000000000e6:
 func0000000000000024:
 	asr	x8, x1, #2
 	sub	x8, x8, x0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #60
 	cset	w0, eq
 	ret
 

@@ -100,8 +100,7 @@ func00000000000000ca:
 	ret
 
 func0000000000000101:
-	lsr	w8, w1, #20
-	cmp	w8, #0
+	cmp	wzr, w1, lsr #20
 	csel	w8, wzr, w1, ne
 	cmp	w8, w0
 	cset	w0, eq

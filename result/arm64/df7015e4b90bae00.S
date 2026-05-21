@@ -1,8 +1,7 @@
 func0000000000000014:
-	lsr	x8, x2, #31
-	mov	w9, #502
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #31
 	mov	w8, #470
+	mov	w9, #502
 	csel	w8, w9, w8, eq
 	tst	w0, #0x1
 	csel	w0, w8, w1, ne

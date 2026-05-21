@@ -9,8 +9,7 @@ func0000000000000004:
 	mov	w8, #1073741824
 	sub	x8, x8, x1
 	orr	x8, x0, x8
-	lsr	x8, x8, #30
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #30
 	cset	w0, eq
 	ret
 

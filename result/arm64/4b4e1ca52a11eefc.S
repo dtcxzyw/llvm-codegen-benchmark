@@ -54,12 +54,11 @@ func0000000000000318:
 	ret
 
 func000000000000004c:
-	lsl	w8, w1, #24
 	cmp	x2, #0
-	cset	w9, eq
-	cmp	w8, #0
-	orr	w8, w0, w9
-	cset	w9, mi
+	cset	w8, eq
+	cmp	wzr, w1, lsl #24
+	orr	w8, w0, w8
+	cset	w9, gt
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret

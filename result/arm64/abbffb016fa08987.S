@@ -32,10 +32,9 @@ func0000000000000042:
 
 func0000000000000048:
 	tst	x2, #0x4
-	lsr	x8, x0, #32
-	cset	w9, eq
-	and	w9, w1, w9
-	cmp	x8, #0
-	csinc	w0, w9, wzr, ne
+	cset	w8, eq
+	cmp	xzr, x0, lsr #32
+	and	w8, w1, w8
+	csinc	w0, w8, wzr, ne
 	ret
 

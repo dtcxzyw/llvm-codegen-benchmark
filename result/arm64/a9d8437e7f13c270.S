@@ -78,8 +78,8 @@ func0000000000000130:
 func000000000000030c:
 	lsl	w8, w0, #16
 	tst	w1, #0xffff
-	ccmp	w8, #0, #8, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000328:

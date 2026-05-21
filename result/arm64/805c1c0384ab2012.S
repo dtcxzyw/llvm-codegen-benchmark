@@ -29,7 +29,7 @@ func0000000000001484:
 	cmp	x0, w0, sxtw
 	add	x8, x1, x8
 	lsr	x8, x8, #32
-	ccmp	x8, #0, #0, eq
+	ccmp	xzr, x8, #0, eq
 	cset	w0, eq
 	ret
 

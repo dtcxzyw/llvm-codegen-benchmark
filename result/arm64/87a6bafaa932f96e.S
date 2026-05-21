@@ -3,8 +3,7 @@ func0000000000000084:
 	mov	w9, #16
 	csel	w8, w1, w2, lo
 	csel	w9, w9, wzr, lo
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	csel	w0, w0, w9, eq
 	ret
 
@@ -23,8 +22,7 @@ func0000000000000284:
 	mov	w9, #16
 	csel	w8, w1, w2, lo
 	csel	w9, w9, wzr, lo
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	csel	w0, w0, w9, eq
 	ret
 

@@ -45,10 +45,9 @@ func000000000000018c:
 	ret
 
 func0000000000000084:
-	lsr	x8, x0, #32
-	sxtw	x9, w1
-	cmp	x8, #0
-	ccmp	x1, x9, #0, eq
+	sxtw	x8, w1
+	cmp	xzr, x0, lsr #32
+	ccmp	x1, x8, #0, eq
 	cset	w0, eq
 	ret
 
@@ -70,8 +69,7 @@ func0000000000000484:
 	mov	w8, #-2147483648
 	add	x8, x1, x8
 	orr	x8, x0, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

@@ -26,10 +26,9 @@ func000000000000000c:
 	ret
 
 func0000000000000028:
-	lsr	x8, x0, #61
-	lsr	x9, x1, #29
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsr	x8, x1, #29
+	cmp	xzr, x0, lsr #61
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000008:

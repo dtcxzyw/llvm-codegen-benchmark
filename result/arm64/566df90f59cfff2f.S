@@ -57,8 +57,7 @@ func0000000000000024:
 func0000000000000284:
 	tst	x2, #0x7f0000
 	csel	w8, w0, w1, eq
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 

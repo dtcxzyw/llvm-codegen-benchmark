@@ -1,8 +1,7 @@
 func0000000000000181:
 	mov	w8, w1
 	mul	x8, x8, x0
-	lsl	x8, x8, #9
-	cmp	x8, #0
+	cmp	xzr, x8, lsl #9
 	cset	w0, eq
 	ret
 

@@ -58,8 +58,7 @@ func000000000000002c:
 func0000000000000034:
 	mov	w8, #-2147483647
 	add	x8, x0, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

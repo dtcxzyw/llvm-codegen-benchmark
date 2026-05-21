@@ -106,7 +106,7 @@ func0000000000000084:
 	fmov	s1, #0.50000000
 	lsr	w8, w0, #24
 	fcmp	s0, s1
-	ccmp	w8, #0, #4, pl
+	ccmp	wzr, w8, #4, pl
 	cset	w0, eq
 	ret
 

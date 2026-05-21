@@ -7,8 +7,7 @@ func0000000000000181:
 func0000000000000008:
 	add	x8, x2, x1
 	add	x8, x8, #31
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	csinv	x0, x0, xzr, eq
 	ret
 
@@ -22,8 +21,7 @@ func0000000000000101:
 func00000000000000a8:
 	add	x8, x2, x1
 	add	x8, x8, #15
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	csinv	x0, x0, xzr, eq
 	ret
 

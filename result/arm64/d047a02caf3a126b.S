@@ -177,8 +177,7 @@ func0000000000000109:
 	ret
 
 func0000000000000024:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #32
 	ccmp	x1, x0, #0, eq
 	cset	w0, eq
 	ret

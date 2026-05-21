@@ -5,8 +5,7 @@ func0000000000000144:
 	tst	w0, #0x1
 	lsl	w9, w8, #8
 	csel	w8, w9, w8, ne
-	lsr	w8, w8, #28
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #28
 	cset	w0, eq
 	ret
 

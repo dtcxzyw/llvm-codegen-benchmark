@@ -50,8 +50,7 @@ func0000000000000461:
 func0000000000000404:
 	cmp	x1, x2
 	cinc	x8, x0, lo
-	lsr	x8, x8, #49
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #49
 	cset	w0, eq
 	ret
 

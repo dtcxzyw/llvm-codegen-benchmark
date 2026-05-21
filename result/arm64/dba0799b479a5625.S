@@ -36,10 +36,9 @@ func000000000000002c:
 	ret
 
 func0000000000000004:
-	lsr	w8, w0, #30
-	add	w9, w1, w2
-	cmp	w8, #0
-	csinv	w0, w9, wzr, eq
+	add	w8, w1, w2
+	cmp	wzr, w0, lsr #30
+	csinv	w0, w8, wzr, eq
 	ret
 
 func0000000000000008:

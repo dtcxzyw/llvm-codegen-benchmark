@@ -8,8 +8,8 @@ func000000000000008a:
 func0000000000000046:
 	fcmp	d0, d1
 	lsl	w8, w0, #24
-	ccmp	w8, #0, #0, mi
-	cset	w0, mi
+	ccmp	wzr, w8, #4, mi
+	cset	w0, gt
 	ret
 
 func0000000000000101:

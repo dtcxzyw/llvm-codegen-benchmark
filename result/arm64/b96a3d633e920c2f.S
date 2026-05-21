@@ -40,10 +40,9 @@ func0000000000000004:
 	ret
 
 func0000000000000014:
-	lsr	w8, w0, #27
-	lsl	w9, w1, #3
-	cmp	w8, #0
-	csinc	w0, w9, wzr, eq
+	lsl	w8, w1, #3
+	cmp	wzr, w0, lsr #27
+	csinc	w0, w8, wzr, eq
 	ret
 
 func000000000000004a:

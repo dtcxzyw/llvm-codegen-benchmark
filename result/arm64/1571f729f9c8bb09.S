@@ -24,8 +24,7 @@ func0000000000000028:
 
 func0000000000000101:
 	add	w8, w1, #1
-	lsr	w8, w8, #20
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #20
 	csinc	w8, wzr, w1, ne
 	cmp	w8, w0
 	cset	w0, eq

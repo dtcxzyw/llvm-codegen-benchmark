@@ -14,10 +14,9 @@ func000000000000008a:
 	ret
 
 func0000000000000481:
-	lsr	w8, w1, #27
-	sub	w9, w2, #1
-	cmp	w8, #0
-	csel	w8, w0, w9, eq
+	sub	w8, w2, #1
+	cmp	wzr, w1, lsr #27
+	csel	w8, w0, w8, eq
 	cmp	w8, #0
 	cset	w0, eq
 	ret
@@ -70,10 +69,9 @@ func0000000000000421:
 	ret
 
 func000000000000048c:
-	lsr	w8, w1, #27
-	sub	w9, w2, #1
-	cmp	w8, #0
-	csel	w8, w0, w9, eq
+	sub	w8, w2, #1
+	cmp	wzr, w1, lsr #27
+	csel	w8, w0, w8, eq
 	cmp	w8, #0
 	cset	w0, ne
 	ret

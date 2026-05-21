@@ -24,8 +24,8 @@ func000000000000408c:
 	and	w11, w1, #0xff
 	cmp	w9, #33
 	ccmp	w11, w8, #0, ne
-	ccmp	w10, #0, #8, hs
-	cset	w0, mi
+	ccmp	wzr, w10, #0, hs
+	cset	w0, gt
 	ret
 
 func0000000000001202:

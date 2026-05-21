@@ -6,8 +6,7 @@ func0000000000000018:
 	ret
 
 func0000000000000010:
-	lsr	x8, x2, #24
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #24
 	csel	x8, x0, x1, eq
 	sub	x0, x8, #32
 	ret

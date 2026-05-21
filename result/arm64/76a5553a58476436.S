@@ -41,7 +41,7 @@ func0000000000000081:
 	mov	w8, #3
 	lsr	x9, x0, #32
 	bics	wzr, w8, w1
-	ccmp	x9, #0, #0, eq
+	ccmp	xzr, x9, #0, eq
 	cset	w0, eq
 	ret
 

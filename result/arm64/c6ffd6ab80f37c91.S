@@ -30,8 +30,7 @@ func00000000000001f4:
 	and	w9, w1, #0x1
 	add	w8, w0, w8
 	add	w8, w8, w9
-	lsr	w8, w8, #28
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #28
 	cset	w0, eq
 	ret
 

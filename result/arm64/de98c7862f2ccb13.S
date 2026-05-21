@@ -8,8 +8,7 @@ func0000000000000008:
 func0000000000000004:
 	mov	w8, #16777215
 	add	w8, w1, w8
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w8, eq
 	and	w0, w8, w0
 	ret

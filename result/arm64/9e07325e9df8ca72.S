@@ -14,9 +14,8 @@ func0000000000000031:
 	ret
 
 func0000000000000011:
-	lsr	w9, w0, #16
 	mov	w8, #8
-	cmp	w9, #0
+	cmp	wzr, w0, lsr #16
 	mov	w9, #24
 	csel	x0, x9, x8, ne
 	ret

@@ -52,9 +52,8 @@ func0000000000000188:
 	ret
 
 func0000000000000026:
-	lsl	w8, w0, #16
-	cmp	w8, #0
-	ccmp	x1, #0, #4, pl
+	cmp	wzr, w0, lsl #16
+	ccmp	x1, #0, #4, le
 	cset	w0, eq
 	ret
 

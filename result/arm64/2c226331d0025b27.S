@@ -1,11 +1,10 @@
 func0000000000000008:
 	and	x8, x2, #0xfffffffffffffffb
 	tst	w1, #0x1
-	lsr	x9, x0, #16
 	csel	x8, x8, x2, ne
-	and	x10, x8, #0xfffffffffffff7ff
-	cmp	x9, #0
-	csel	x0, x10, x8, ne
+	cmp	xzr, x0, lsr #16
+	and	x9, x8, #0xfffffffffffff7ff
+	csel	x0, x9, x8, ne
 	ret
 
 func0000000000000001:
@@ -22,10 +21,9 @@ func0000000000000001:
 func0000000000000004:
 	and	x8, x2, #0x1ff
 	tst	w1, #0x1
-	lsr	x9, x0, #32
 	csel	x8, x8, x2, ne
-	mov	w10, w8
-	cmp	x9, #0
-	csel	x0, x10, x8, eq
+	cmp	xzr, x0, lsr #32
+	mov	w9, w8
+	csel	x0, x9, x8, eq
 	ret
 

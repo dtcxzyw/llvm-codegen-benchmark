@@ -1,8 +1,7 @@
 func0000000000000024:
 	sub	x9, x1, x0
 	mov	w8, #9
-	lsr	x9, x9, #36
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #36
 	mov	w9, #5
 	csel	x0, x9, x8, eq
 	ret

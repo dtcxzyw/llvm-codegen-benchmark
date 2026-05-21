@@ -5,11 +5,10 @@ func0000000000000181:
 	ret
 
 func0000000000000184:
-	lsr	x9, x0, #32
-	sxtb	w10, w1
+	sxtb	w9, w1
 	mov	w8, #-97
-	cmp	x9, #0
-	ccmp	w10, w8, #4, eq
+	cmp	xzr, x0, lsr #32
+	ccmp	w9, w8, #4, eq
 	cset	w0, gt
 	ret
 

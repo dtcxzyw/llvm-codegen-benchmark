@@ -36,8 +36,7 @@ func00000000000008c1:
 func0000000000000084:
 	cmp	w1, #16, lsl #12
 	csel	w8, w0, w1, lo
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 

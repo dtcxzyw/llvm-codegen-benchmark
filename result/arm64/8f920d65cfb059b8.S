@@ -36,8 +36,7 @@ func000000000000001b:
 	ret
 
 func0000000000000022:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	csel	w0, w0, w1, ne
 	ret
 

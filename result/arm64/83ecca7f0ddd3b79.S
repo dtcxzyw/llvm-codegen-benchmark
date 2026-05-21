@@ -72,11 +72,10 @@ func000000000000002c:
 
 func0000000000000084:
 	cmp	w2, #33
-	lsr	x8, x0, #32
-	cset	w9, lo
-	and	w9, w9, w1
-	cmp	x8, #0
-	csel	w0, wzr, w9, ne
+	cset	w8, lo
+	cmp	xzr, x0, lsr #32
+	and	w8, w8, w1
+	csel	w0, wzr, w8, ne
 	ret
 
 func000000000000014c:

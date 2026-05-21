@@ -48,8 +48,7 @@ func0000000000000061:
 
 func00000000000001f4:
 	umull	x8, w0, w1
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #61
 	cset	w0, eq
 	ret
 

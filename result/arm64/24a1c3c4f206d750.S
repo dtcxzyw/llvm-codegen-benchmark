@@ -9,8 +9,7 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	lsl	w8, w2, #1
-	cmp	w8, #0
-	csel	w0, w0, w1, gt
+	cmp	wzr, w2, lsl #1
+	csel	w0, w0, w1, lt
 	ret
 

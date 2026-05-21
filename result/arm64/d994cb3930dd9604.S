@@ -1,8 +1,7 @@
 func0000000000000024:
 	and	x8, x1, x2
 	sub	x8, x0, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

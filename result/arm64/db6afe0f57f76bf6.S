@@ -16,11 +16,10 @@ func0000000000000021:
 
 func0000000000000024:
 	cmp	w2, #0
-	lsr	x8, x1, #31
-	cset	w9, eq
-	and	w9, w0, w9
-	cmp	x8, #0
-	csel	w0, wzr, w9, ne
+	cset	w8, eq
+	cmp	xzr, x1, lsr #31
+	and	w8, w0, w8
+	csel	w0, wzr, w8, ne
 	ret
 
 func000000000000002a:

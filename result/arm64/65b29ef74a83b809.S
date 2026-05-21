@@ -24,8 +24,7 @@ func000000000000000c:
 func0000000000000008:
 	mov	w8, #-2147483633
 	add	x8, x0, x8
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

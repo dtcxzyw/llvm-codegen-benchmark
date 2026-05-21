@@ -7,14 +7,12 @@ func0000000000000188:
 
 func0000000000000181:
 	mul	x8, x1, x0
-	lsl	x8, x8, #9
-	cmp	x8, #0
+	cmp	xzr, x8, lsl #9
 	cset	w0, eq
 	ret
 
 func00000000000001f1:
-	lsl	x8, x1, #2
-	cmp	x8, #0
+	cmp	xzr, x1, lsl #2
 	ccmp	x0, #0, #4, ne
 	cset	w0, eq
 	ret
@@ -35,8 +33,7 @@ func0000000000000088:
 
 func0000000000000001:
 	mul	x8, x1, x0
-	lsl	x8, x8, #1
-	cmp	x8, #0
+	cmp	xzr, x8, lsl #1
 	cset	w0, eq
 	ret
 
@@ -56,8 +53,7 @@ func00000000000001a8:
 
 func0000000000000081:
 	mul	x8, x1, x0
-	lsl	x8, x8, #2
-	cmp	x8, #0
+	cmp	xzr, x8, lsl #2
 	cset	w0, eq
 	ret
 
@@ -102,8 +98,7 @@ func00000000000000a6:
 	ret
 
 func00000000000001e1:
-	lsl	x8, x1, #2
-	cmp	x8, #0
+	cmp	xzr, x1, lsl #2
 	ccmp	x0, #0, #4, ne
 	cset	w0, eq
 	ret

@@ -47,8 +47,7 @@ func0000000000000004:
 	and	x8, x2, #0x1
 	add	x9, x0, x1
 	add	x8, x9, x8
-	lsr	x8, x8, #49
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #49
 	cset	w0, eq
 	ret
 

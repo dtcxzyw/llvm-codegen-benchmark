@@ -37,15 +37,13 @@ func0000000000000188:
 	ret
 
 func0000000000000184:
-	lsr	x8, x0, #31
-	ubfx	x9, x1, #1, #1
-	cmp	x8, #0
-	csel	w0, wzr, w9, ne
+	ubfx	x8, x1, #1, #1
+	cmp	xzr, x0, lsr #31
+	csel	w0, wzr, w8, ne
 	ret
 
 func000000000000008c:
-	lsr	x8, x0, #25
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #25
 	cset	w8, eq
 	and	w0, w1, w8
 	ret

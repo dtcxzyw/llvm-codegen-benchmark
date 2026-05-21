@@ -174,10 +174,9 @@ func0000000000000141:
 	ret
 
 func0000000000000146:
-	lsl	w8, w0, #16
-	sxth	w9, w1
-	cmp	w8, #0
-	ccmp	w9, #0, #4, mi
+	sxth	w8, w1
+	cmp	wzr, w0, lsl #16
+	ccmp	w8, #0, #4, gt
 	cset	w0, gt
 	ret
 

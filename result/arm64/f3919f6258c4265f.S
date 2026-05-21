@@ -96,11 +96,10 @@ func0000000000000011:
 	ret
 
 func0000000000000063:
-	lsr	w9, w1, #16
 	mov	w8, #8
-	add	w10, w0, #4
-	cmp	w9, #0
-	csel	w0, w8, w10, ne
+	add	w9, w0, #4
+	cmp	wzr, w1, lsr #16
+	csel	w0, w8, w9, ne
 	ret
 
 func0000000000000051:

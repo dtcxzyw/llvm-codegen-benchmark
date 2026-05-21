@@ -34,8 +34,7 @@ func0000000000000026:
 	ret
 
 func0000000000000008:
-	lsr	x8, x1, #31
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #31
 	csel	w0, w0, w1, ne
 	ret
 
@@ -50,14 +49,12 @@ func0000000000000061:
 	ret
 
 func0000000000000014:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	csel	w0, w0, w1, eq
 	ret
 
 func0000000000000058:
-	lsr	x8, x1, #16
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #16
 	csel	w0, w0, w1, ne
 	ret
 

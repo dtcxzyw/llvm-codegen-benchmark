@@ -11,8 +11,7 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	lsr	x8, x1, #52
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #52
 	csel	x8, x0, x1, eq
 	lsr	x0, x8, #52
 	ret
@@ -24,8 +23,7 @@ func0000000000000002:
 	ret
 
 func0000000000000030:
-	lsr	x8, x1, #16
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #16
 	csel	x8, x0, x1, ne
 	lsr	x0, x8, #8
 	ret
@@ -37,8 +35,7 @@ func0000000000000003:
 	ret
 
 func0000000000000028:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	csel	x8, x0, x1, eq
 	lsr	x0, x8, #6
 	ret

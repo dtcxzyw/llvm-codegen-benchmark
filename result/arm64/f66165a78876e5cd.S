@@ -90,7 +90,7 @@ func0000000000000102:
 	and	w8, w0, #0x1c0
 	lsr	w9, w0, #26
 	cmp	w8, #320
-	ccmp	w9, #0, #4, ne
+	ccmp	wzr, w9, #4, ne
 	cset	w0, eq
 	ret
 

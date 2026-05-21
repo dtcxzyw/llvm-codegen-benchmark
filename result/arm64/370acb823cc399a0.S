@@ -10,7 +10,7 @@ func000000000000008c:
 	orr	w8, w0, w1
 	cmp	w0, #0
 	lsr	w8, w8, #30
-	ccmp	w8, #0, #0, ne
+	ccmp	wzr, w8, #0, ne
 	cset	w0, eq
 	ret
 

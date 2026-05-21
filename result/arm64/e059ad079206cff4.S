@@ -22,8 +22,7 @@ func0000000000000004:
 	cmp	x0, #0
 	mov	w8, #32
 	cneg	x9, x0, mi
-	lsr	x9, x9, #32
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #32
 	csel	w0, w8, wzr, eq
 	ret
 

@@ -32,20 +32,18 @@ func000000000000018c:
 
 func0000000000000184:
 	cmp	x2, #0
-	lsr	x8, x0, #56
-	cset	w9, ne
-	and	w9, w1, w9
-	cmp	x8, #0
-	csel	w0, wzr, w9, ne
+	cset	w8, ne
+	cmp	xzr, x0, lsr #56
+	and	w8, w1, w8
+	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000104:
 	tst	x2, #0xff00000000000000
-	lsr	x8, x0, #56
-	cset	w9, ne
-	and	w9, w9, w1
-	cmp	x8, #0
-	csel	w0, wzr, w9, ne
+	cset	w8, ne
+	cmp	xzr, x0, lsr #56
+	and	w8, w8, w1
+	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000188:

@@ -186,8 +186,8 @@ func000000000000018c:
 func00000000000000c1:
 	lsl	w8, w2, #24
 	cmp	x0, x1
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000181:

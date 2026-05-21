@@ -1,7 +1,6 @@
 func000000000000004c:
-	lsl	w8, w1, #24
-	cmp	w8, #0
-	ccmp	w0, #0, #4, pl
+	cmp	wzr, w1, lsl #24
+	ccmp	w0, #0, #4, le
 	cset	w0, eq
 	ret
 

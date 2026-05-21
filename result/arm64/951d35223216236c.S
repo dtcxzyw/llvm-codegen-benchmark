@@ -97,7 +97,7 @@ func0000000000000084:
 	add	w8, w1, w8
 	lsr	w8, w8, #30
 	cmp	w8, #3
-	ccmp	x9, #0, #0, lo
+	ccmp	xzr, x9, #0, lo
 	cset	w0, eq
 	ret
 

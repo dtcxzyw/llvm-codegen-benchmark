@@ -41,10 +41,9 @@ func000000000000018c:
 	ret
 
 func0000000000000084:
-	lsr	x8, x0, #32
-	add	w9, w1, #1
-	cmp	x8, #0
-	ccmp	w9, #11, #2, eq
+	add	w8, w1, #1
+	cmp	xzr, x0, lsr #32
+	ccmp	w8, #11, #2, eq
 	cset	w0, lo
 	ret
 

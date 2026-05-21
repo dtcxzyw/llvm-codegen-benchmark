@@ -82,15 +82,13 @@ func00000000000000a8:
 
 func0000000000000004:
 	orr	x8, x0, x1, lsl #32
-	lsr	x8, x8, #56
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #56
 	cset	w0, eq
 	ret
 
 func0000000000000014:
 	orr	x8, x0, x1, lsl #32
-	lsr	x8, x8, #48
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #48
 	cset	w0, eq
 	ret
 

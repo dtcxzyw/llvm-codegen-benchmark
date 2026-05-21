@@ -1,8 +1,7 @@
 func0000000000000212:
 	cmp	w2, #16, lsl #12
 	csel	w8, w1, w2, lo
-	lsr	w9, w8, #24
-	cmp	w9, #0
+	cmp	wzr, w8, lsr #24
 	csel	w8, w0, w8, eq
 	lsl	w0, w8, #4
 	ret

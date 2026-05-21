@@ -9,8 +9,7 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	lsr	x8, x0, #52
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #52
 	fcsel	d0, d0, d1, eq
 	ret
 

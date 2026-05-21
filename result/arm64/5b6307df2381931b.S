@@ -14,9 +14,8 @@ func0000000000000041:
 
 func0000000000000028:
 	mov	x8, #-1
-	lsr	x9, x0, #24
+	cmp	xzr, x0, lsr #24
 	lsl	x8, x8, x1
-	cmp	x9, #0
 	csinv	x0, x8, xzr, ne
 	ret
 

@@ -32,7 +32,7 @@ func0000000000000028:
 func0000000000000085:
 	lsr	w8, w1, #24
 	cmp	w0, w2
-	ccmp	w8, #0, #0, hs
+	ccmp	wzr, w8, #0, hs
 	cset	w0, eq
 	ret
 

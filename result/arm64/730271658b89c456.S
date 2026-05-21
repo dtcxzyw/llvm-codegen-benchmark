@@ -1,8 +1,7 @@
 func0000000000000068:
 	lsl	x8, x1, #2
-	lsr	x9, x0, #60
+	cmp	xzr, x0, lsr #60
 	add	x8, x8, #8
-	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
 
@@ -17,9 +16,8 @@ func0000000000000008:
 
 func0000000000000168:
 	lsl	x8, x1, #2
-	lsr	x9, x0, #58
+	cmp	xzr, x0, lsr #58
 	add	x8, x8, #16
-	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
 

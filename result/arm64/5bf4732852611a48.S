@@ -1,9 +1,8 @@
 func0000000000000014:
-	lsr	x8, x1, #24
+	cmp	xzr, x1, lsr #24
 	and	x9, x1, #0x1ffffff
-	and	x9, x9, #0xffffffffff7fffff
-	cmp	x8, #0
 	cset	w8, eq
+	and	x9, x9, #0xffffffffff7fffff
 	tst	w0, w8
 	csel	x0, x9, xzr, ne
 	ret

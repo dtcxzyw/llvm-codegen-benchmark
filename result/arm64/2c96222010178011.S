@@ -46,8 +46,7 @@ func0000000000000018:
 	ret
 
 func0000000000000008:
-	lsr	w8, w2, #24
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #24
 	csel	w8, wzr, w1, eq
 	orr	w0, w8, w0
 	ret

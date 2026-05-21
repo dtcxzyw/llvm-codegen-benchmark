@@ -6,12 +6,11 @@ func000000000000018c:
 	ret
 
 func0000000000000146:
-	lsl	w8, w0, #24
-	add	w9, w1, w2
-	cmp	w8, #0
-	mov	w8, #37885
-	movk	w8, #30517, lsl #16
-	ccmp	w9, w8, #4, mi
+	mov	w9, #37885
+	add	w8, w1, w2
+	cmp	wzr, w0, lsl #24
+	movk	w9, #30517, lsl #16
+	ccmp	w8, w9, #4, gt
 	cset	w0, gt
 	ret
 

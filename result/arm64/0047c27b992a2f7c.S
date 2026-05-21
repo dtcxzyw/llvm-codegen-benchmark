@@ -9,7 +9,7 @@ func000000000000308c:
 	cmp	x2, #0
 	lsr	x8, x1, #32
 	ccmp	x0, #0, #4, ne
-	ccmp	x8, #0, #0, ne
+	ccmp	xzr, x8, #0, ne
 	cset	w0, eq
 	ret
 

@@ -8,7 +8,7 @@ func00000000000000c1:
 	lsl	w8, w0, #24
 	and	w9, w1, #0xf0
 	cmp	w9, #32
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #4, eq
+	cset	w0, gt
 	ret
 

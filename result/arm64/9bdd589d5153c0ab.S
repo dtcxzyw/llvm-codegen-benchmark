@@ -1,7 +1,6 @@
 func0000000000000004:
 	fcvtzu	x8, d0
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	cset	w0, eq
 	ret
 

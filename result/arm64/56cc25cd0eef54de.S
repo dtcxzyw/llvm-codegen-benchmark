@@ -8,8 +8,7 @@ func000000000000000a:
 func0000000000000004:
 	sub	x9, x0, x1
 	mov	w8, #8
-	lsr	x9, x9, #62
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #62
 	csel	x0, x8, xzr, eq
 	ret
 

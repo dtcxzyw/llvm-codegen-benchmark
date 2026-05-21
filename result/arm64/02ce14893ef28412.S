@@ -1,15 +1,12 @@
 func0000000000000118:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	csel	x8, x1, x2, ne
-	lsr	x9, x8, #16
-	cmp	x9, #0
+	cmp	xzr, x8, lsr #16
 	csel	x0, x0, x8, ne
 	ret
 
 func0000000000000318:
-	lsr	x8, x2, #16
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #16
 	csel	x8, x1, x2, ne
 	cmp	x8, #255
 	csel	x0, x0, x8, hi
@@ -23,11 +20,9 @@ func0000000000000308:
 	ret
 
 func0000000000000084:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	csel	x8, x1, x2, eq
-	lsr	x9, x8, #48
-	cmp	x9, #0
+	cmp	xzr, x8, lsr #48
 	csel	x0, x0, x8, eq
 	ret
 
@@ -54,11 +49,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000284:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	csel	x8, x1, x2, eq
-	lsr	x9, x8, #48
-	cmp	x9, #0
+	cmp	xzr, x8, lsr #48
 	csel	x0, x0, x8, eq
 	ret
 

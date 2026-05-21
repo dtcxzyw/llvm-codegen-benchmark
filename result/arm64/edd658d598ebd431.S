@@ -92,8 +92,7 @@ func00000000000000a4:
 	lsl	w8, w1, #24
 	and	w8, w8, #0x3c000000
 	orr	w8, w8, w0
-	lsr	w8, w8, #26
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #26
 	cset	w0, eq
 	ret
 

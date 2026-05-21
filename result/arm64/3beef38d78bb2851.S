@@ -7,11 +7,10 @@ func0000000000000026:
 	ret
 
 func0000000000000084:
-	lsr	w8, w0, #27
-	sub	w9, w2, #1
-	add	w10, w1, #15
-	cmp	w8, #0
-	csel	w0, w10, w9, eq
+	sub	w8, w2, #1
+	add	w9, w1, #15
+	cmp	wzr, w0, lsr #27
+	csel	w0, w9, w8, eq
 	ret
 
 func0000000000000001:

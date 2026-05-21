@@ -21,8 +21,7 @@ func0000000000000026:
 	ret
 
 func0000000000000081:
-	lsr	w8, w2, #30
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #30
 	csinv	w8, w1, wzr, ne
 	cmp	x0, w8, sxtw
 	cset	w0, eq

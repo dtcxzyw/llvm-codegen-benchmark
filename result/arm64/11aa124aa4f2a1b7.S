@@ -57,11 +57,10 @@ func000000000000008c:
 	ret
 
 func0000000000000184:
-	lsr	x9, x0, #32
 	mov	w8, #128
-	and	w10, w1, #0xe0
-	cmp	x9, #0
-	ccmp	w10, w8, #4, eq
+	and	w9, w1, #0xe0
+	cmp	xzr, x0, lsr #32
+	ccmp	w9, w8, #4, eq
 	cset	w0, ne
 	ret
 

@@ -59,7 +59,7 @@ func0000000000000484:
 	add	x8, x1, #22
 	lsr	x9, x0, #53
 	cmp	x8, #45
-	ccmp	x9, #0, #0, lo
+	ccmp	xzr, x9, #0, lo
 	cset	w0, eq
 	ret
 

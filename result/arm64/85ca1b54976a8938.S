@@ -30,7 +30,7 @@ func0000000000000908:
 	sub	w8, w1, #7
 	lsr	x9, x0, #56
 	cmn	w8, #2
-	ccmp	x9, #0, #4, hs
+	ccmp	xzr, x9, #4, hs
 	cset	w0, eq
 	ret
 

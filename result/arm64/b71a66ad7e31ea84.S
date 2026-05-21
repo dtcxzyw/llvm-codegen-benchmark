@@ -34,11 +34,10 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	lsr	x8, x1, #31
-	mov	x9, #-2147483648
-	sub	x9, x9, x2
-	cmp	x8, #0
-	csel	x0, x0, x9, eq
+	mov	x8, #-2147483648
+	cmp	xzr, x1, lsr #31
+	sub	x8, x8, x2
+	csel	x0, x0, x8, eq
 	ret
 
 func0000000000000064:

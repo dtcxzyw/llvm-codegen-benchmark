@@ -45,15 +45,13 @@ func0000000000000101:
 	ret
 
 func0000000000000108:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	ccmp	w1, w0, #2, eq
 	cset	w0, lo
 	ret
 
 func0000000000000104:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	ccmp	w1, w0, #0, eq
 	cset	w0, hi
 	ret
@@ -66,8 +64,7 @@ func0000000000000081:
 	ret
 
 func0000000000000106:
-	lsr	x8, x2, #30
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #30
 	mov	w8, #3
 	csel	w8, w8, w1, ne
 	cmp	w0, w8

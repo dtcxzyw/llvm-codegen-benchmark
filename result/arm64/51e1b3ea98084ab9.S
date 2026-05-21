@@ -1,7 +1,6 @@
 func0000000000000004:
-	lsr	w8, w1, #30
-	and	w9, w1, #0x3fffffff
-	cmp	w8, #0
-	csel	w0, w9, w0, eq
+	and	w8, w1, #0x3fffffff
+	cmp	wzr, w1, lsr #30
+	csel	w0, w8, w0, eq
 	ret
 

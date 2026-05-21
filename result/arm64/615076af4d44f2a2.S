@@ -29,8 +29,7 @@ func00000000000000c7:
 	ret
 
 func0000000000000044:
-	lsr	w8, w2, #30
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #30
 	csel	w8, wzr, w1, ne
 	add	x0, x0, w8, uxtw #3
 	ret

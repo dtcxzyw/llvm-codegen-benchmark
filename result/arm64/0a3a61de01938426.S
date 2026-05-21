@@ -35,11 +35,10 @@ func0000000000000284:
 	ret
 
 func0000000000000024:
-	lsr	x8, x0, #32
-	sub	x9, x0, #1
-	eor	x10, x0, x9
-	cmp	x8, #0
-	ccmp	x10, x9, #0, eq
+	sub	x8, x0, #1
+	cmp	xzr, x0, lsr #32
+	eor	x9, x0, x8
+	ccmp	x9, x8, #0, eq
 	cset	w0, hi
 	ret
 

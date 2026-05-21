@@ -25,8 +25,7 @@ func0000000000000288:
 	ret
 
 func00000000000002a1:
-	asr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, asr #32
 	ccmp	x1, #0, #4, ne
 	ccmp	x0, #0, #4, ne
 	cset	w0, eq

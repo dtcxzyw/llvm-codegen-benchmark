@@ -170,12 +170,11 @@ func00000000000000c6:
 	ret
 
 func0000000000000308:
-	lsr	w9, w0, #14
 	mov	w8, #2
 	cmp	w0, #511
-	mov	w10, #11
-	csel	w8, w10, w8, hi
-	cmp	w9, #0
+	mov	w9, #11
+	csel	w8, w9, w8, hi
+	cmp	wzr, w0, lsr #14
 	csinc	w0, w8, wzr, eq
 	ret
 

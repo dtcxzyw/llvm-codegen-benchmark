@@ -71,14 +71,13 @@ func0000000000000053:
 	ret
 
 func0000000000000020:
-	lsr	x8, x1, #30
 	tst	w2, #0x1
-	mov	w9, #2097152
-	mov	w10, #4096
-	csel	x9, x10, x9, ne
-	cmp	x8, #0
-	mov	w8, #1073741824
-	csel	x8, x9, x8, eq
+	mov	w8, #2097152
+	mov	w9, #4096
+	csel	x8, x9, x8, ne
+	cmp	xzr, x1, lsr #30
+	mov	w9, #1073741824
+	csel	x8, x8, x9, eq
 	add	x0, x0, x8
 	ret
 

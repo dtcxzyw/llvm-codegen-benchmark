@@ -113,8 +113,7 @@ func0000000000000318:
 	ret
 
 func0000000000000310:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	ccmp	w2, #1, #8, ne
 	cset	w8, lt
 	orr	w8, w8, w0

@@ -90,8 +90,7 @@ func0000000000000062:
 	ret
 
 func0000000000000020:
-	lsr	w8, w2, #29
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #29
 	cset	w8, eq
 	and	w8, w1, w8
 	add	w0, w0, w8

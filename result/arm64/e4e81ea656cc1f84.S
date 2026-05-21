@@ -10,9 +10,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	lsl	w8, w0, #1
-	cmp	w8, #0
-	cset	w0, gt
+	cmp	wzr, w0, lsl #1
+	cset	w0, lt
 	ret
 
 func00000000000001ca:

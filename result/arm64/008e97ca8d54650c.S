@@ -23,10 +23,9 @@ func0000000000000014:
 	ret
 
 func0000000000000024:
-	lsr	w8, w1, #30
-	orr	w9, w2, #0x2
-	cmp	w8, #0
-	csel	w0, w0, w9, eq
+	orr	w8, w2, #0x2
+	cmp	wzr, w1, lsr #30
+	csel	w0, w0, w8, eq
 	ret
 
 func0000000000000004:

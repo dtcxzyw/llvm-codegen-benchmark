@@ -1,8 +1,7 @@
 func0000000000000049:
-	lsr	w8, w1, #24
-	orr	w9, w0, #0x8
-	cmp	w8, #0
-	csel	w8, w9, w0, eq
+	orr	w8, w0, #0x8
+	cmp	wzr, w1, lsr #24
+	csel	w8, w8, w0, eq
 	orr	w0, w8, #0x4
 	ret
 

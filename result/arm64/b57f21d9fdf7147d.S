@@ -40,9 +40,8 @@ func0000000000000608:
 	ret
 
 func0000000000000228:
-	lsr	x9, x1, #62
 	mov	x8, #-128
-	cmp	x9, #0
+	cmp	xzr, x1, lsr #62
 	cinc	x8, x8, ne
 	add	x8, x0, x8
 	cmp	x8, #252
@@ -50,9 +49,8 @@ func0000000000000228:
 	ret
 
 func000000000000022c:
-	lsr	x9, x1, #62
 	mov	x8, #-128
-	cmp	x9, #0
+	cmp	xzr, x1, lsr #62
 	cinc	x8, x8, ne
 	add	x8, x0, x8
 	cmp	x8, #253

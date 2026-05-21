@@ -8,9 +8,8 @@ func000000000000018f:
 
 func0000000000000040:
 	add	x8, x0, x1
-	lsr	x9, x8, #24
-	cmp	x9, #0
 	mov	w9, #1048575
+	cmp	xzr, x8, lsr #24
 	csel	x9, x9, x2, eq
 	add	x0, x8, x9
 	ret

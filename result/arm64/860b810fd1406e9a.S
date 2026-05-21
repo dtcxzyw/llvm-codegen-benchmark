@@ -34,8 +34,7 @@ func0000000000000088:
 	ret
 
 func0000000000000101:
-	lsr	x8, x2, #61
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #61
 	csinv	x8, x1, xzr, eq
 	cmp	x8, x0
 	cset	w0, eq
@@ -71,8 +70,7 @@ func0000000000000288:
 	ret
 
 func0000000000000108:
-	lsr	x8, x2, #48
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #48
 	mov	x8, #-65536
 	csel	x8, x8, x1, ne
 	cmp	x8, x0

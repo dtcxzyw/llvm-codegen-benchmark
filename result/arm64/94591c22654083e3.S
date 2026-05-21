@@ -24,8 +24,7 @@ func00000000000000c6:
 	ret
 
 func0000000000000084:
-	lsr	w8, w2, #24
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #24
 	mov	w8, #12
 	csel	w8, w1, w8, eq
 	cmp	w8, w0
@@ -124,8 +123,7 @@ func0000000000000189:
 	ret
 
 func000000000000008a:
-	lsr	w8, w2, #26
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #26
 	mov	w8, #4
 	csel	w8, w1, w8, eq
 	cmp	w8, w0

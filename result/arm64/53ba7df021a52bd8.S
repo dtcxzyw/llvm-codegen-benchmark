@@ -76,8 +76,7 @@ func0000000000000134:
 func0000000000000024:
 	asr	x8, x0, #2
 	add	x8, x8, x1, asr #2
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #60
 	cset	w0, eq
 	ret
 

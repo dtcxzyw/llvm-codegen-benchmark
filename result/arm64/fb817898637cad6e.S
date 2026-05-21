@@ -1,14 +1,12 @@
 func0000000000000078:
 	add	x8, x1, x2
-	lsr	x8, x8, #25
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #25
 	csel	x0, xzr, x0, ne
 	ret
 
 func0000000000000008:
 	add	x8, x1, x2
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	csinv	x0, x0, xzr, eq
 	ret
 
@@ -26,16 +24,14 @@ func0000000000000001:
 
 func0000000000000004:
 	add	x8, x1, x2
-	lsr	x8, x8, #24
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #24
 	mov	w8, #1048575
 	csel	x0, x8, x0, eq
 	ret
 
 func0000000000000028:
 	add	x8, x1, x2
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #61
 	csinv	x0, x0, xzr, eq
 	ret
 

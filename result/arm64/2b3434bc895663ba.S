@@ -1,8 +1,7 @@
 func0000000000000093:
-	lsr	w8, w1, #30
-	orr	w9, w0, #0x2
-	cmp	w8, #0
-	csel	w8, w9, w0, eq
+	orr	w8, w0, #0x2
+	cmp	wzr, w1, lsr #30
+	csel	w8, w8, w0, eq
 	add	w0, w8, #1
 	ret
 
@@ -14,10 +13,9 @@ func0000000000000087:
 	ret
 
 func0000000000000091:
-	lsr	w8, w1, #30
-	orr	w9, w0, #0x2
-	cmp	w8, #0
-	csel	w8, w9, w0, eq
+	orr	w8, w0, #0x2
+	cmp	wzr, w1, lsr #30
+	csel	w8, w8, w0, eq
 	sub	w0, w8, #1
 	ret
 

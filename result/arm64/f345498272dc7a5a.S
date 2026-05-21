@@ -13,8 +13,7 @@ func0000000000000038:
 func0000000000000034:
 	mov	x8, #4611686018427387903
 	add	x8, x0, x8
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	cset	w0, eq
 	ret
 

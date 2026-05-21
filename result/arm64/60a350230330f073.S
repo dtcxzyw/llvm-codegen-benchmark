@@ -78,14 +78,13 @@ func0000000000000006:
 	ret
 
 func0000000000000020:
-	lsr	w8, w2, #16
-	mov	w9, #8
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #16
 	mov	w8, #16
+	mov	w9, #8
 	csel	w8, w8, wzr, ne
 	tst	w1, #0x1
+	orr	w8, w8, w0
 	csel	w9, w9, wzr, ne
-	orr	w9, w0, w9
 	orr	w0, w8, w9
 	ret
 

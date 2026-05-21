@@ -15,11 +15,10 @@ func0000000000000081:
 	ret
 
 func0000000000000086:
-	lsl	w8, w0, #16
-	and	w9, w1, #0xff
-	sub	w9, w9, #66
-	cmp	w8, #0
-	ccmp	w9, #7, #2, mi
+	and	w8, w1, #0xff
+	cmp	wzr, w0, lsl #16
+	sub	w8, w8, #66
+	ccmp	w8, #7, #2, gt
 	cset	w0, lo
 	ret
 

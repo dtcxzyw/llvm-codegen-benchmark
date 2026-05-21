@@ -75,8 +75,7 @@ func0000000000000014:
 func0000000000000004:
 	add	w9, w0, w1
 	mov	w8, #4
-	lsr	w9, w9, #28
-	cmp	w9, #0
+	cmp	wzr, w9, lsr #28
 	cinc	w0, w8, ne
 	ret
 
@@ -99,8 +98,7 @@ func0000000000000074:
 func0000000000000028:
 	add	w9, w0, w1
 	mov	w8, #1
-	lsr	w9, w9, #16
-	cmp	w9, #0
+	cmp	wzr, w9, lsr #16
 	cinc	w0, w8, ne
 	ret
 

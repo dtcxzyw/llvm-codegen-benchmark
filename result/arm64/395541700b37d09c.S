@@ -87,18 +87,16 @@ func00000000000000c6:
 	ret
 
 func0000000000000106:
-	lsr	w9, w1, #16
 	mov	w8, #1
-	cmp	w9, #0
+	cmp	wzr, w1, lsr #16
 	cinc	x8, x8, ne
 	cmp	x0, x8
 	cset	w0, lt
 	ret
 
 func0000000000000104:
-	lsr	w9, w1, #16
 	mov	w8, #1
-	cmp	w9, #0
+	cmp	wzr, w1, lsr #16
 	cinc	x8, x8, ne
 	cmp	x0, x8
 	cset	w0, lo

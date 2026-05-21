@@ -12,9 +12,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	lsr	w8, w0, #30
-	and	w9, w0, #0xfff
-	cmp	w8, #0
-	csinv	w0, w9, wzr, ne
+	and	w8, w0, #0xfff
+	cmp	wzr, w0, lsr #30
+	csinv	w0, w8, wzr, ne
 	ret
 

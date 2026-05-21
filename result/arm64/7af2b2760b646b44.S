@@ -118,7 +118,7 @@ func00000000000000c8:
 func0000000000000085:
 	lsr	x8, x2, #32
 	cmp	w0, w1
-	ccmp	x8, #0, #0, ls
+	ccmp	xzr, x8, #0, ls
 	cset	w0, eq
 	ret
 

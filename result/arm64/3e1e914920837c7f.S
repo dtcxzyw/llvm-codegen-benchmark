@@ -18,9 +18,8 @@ func0000000000000005:
 	ret
 
 func0000000000000013:
-	lsr	x8, x2, #62
+	cmp	xzr, x2, lsr #62
 	mov	w9, #-1075
-	cmp	x8, #0
 	csel	w8, w0, w1, eq
 	sub	w0, w9, w8
 	ret

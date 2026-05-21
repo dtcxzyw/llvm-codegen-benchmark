@@ -57,8 +57,8 @@ func00000000000000c1:
 	mov	w8, #7
 	lsl	w9, w0, #24
 	bics	wzr, w8, w1
-	ccmp	w9, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w9, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000101:

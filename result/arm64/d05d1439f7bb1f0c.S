@@ -7,10 +7,9 @@ func0000000000000c2c:
 	ret
 
 func0000000000000c26:
-	lsl	w8, w0, #24
-	add	x9, x2, #4
-	cmp	w8, #0
-	ccmp	x9, x1, #4, pl
+	add	x8, x2, #4
+	cmp	wzr, w0, lsl #24
+	ccmp	x8, x1, #4, le
 	cset	w0, eq
 	ret
 

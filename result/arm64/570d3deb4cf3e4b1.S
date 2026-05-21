@@ -4,8 +4,7 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	lsr	x8, x2, #62
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #62
 	csel	x0, x0, x1, eq
 	ret
 

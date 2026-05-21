@@ -245,17 +245,15 @@ func0000000000000144:
 	ret
 
 func0000000000000284:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #32
 	ccmp	x1, #5, #0, ne
 	cset	w0, lo
 	ret
 
 func0000000000000294:
-	lsr	x8, x0, #32
-	lsr	x9, x1, #32
-	cmp	x8, #0
-	ccmp	x9, #0, #4, ne
+	lsr	x8, x1, #32
+	cmp	xzr, x0, lsr #32
+	ccmp	xzr, x8, #4, ne
 	cset	w0, eq
 	ret
 

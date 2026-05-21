@@ -26,8 +26,7 @@ func000000000000018c:
 	ret
 
 func0000000000000101:
-	lsl	x8, x0, #3
-	cmp	x8, #0
+	cmp	xzr, x0, lsl #3
 	cset	w0, eq
 	ret
 

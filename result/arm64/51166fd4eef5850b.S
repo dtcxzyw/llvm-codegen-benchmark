@@ -16,7 +16,7 @@ func0000000000000089:
 	sub	x8, x0, #1
 	cmp	x0, x1
 	lsr	x8, x8, #56
-	ccmp	x8, #0, #0, hs
+	ccmp	xzr, x8, #0, hs
 	cset	w0, eq
 	ret
 

@@ -1,6 +1,5 @@
 func0000000000000219:
-	lsr	w8, w1, #30
-	cmp	w8, #0
+	cmp	wzr, w1, lsr #30
 	mov	w8, #32
 	csel	w8, w8, w2, eq
 	cmp	w1, #0
@@ -9,8 +8,7 @@ func0000000000000219:
 	ret
 
 func000000000000021b:
-	lsr	w8, w1, #30
-	cmp	w8, #0
+	cmp	wzr, w1, lsr #30
 	mov	w8, #32
 	csel	w8, w8, w2, eq
 	cmp	w1, #0

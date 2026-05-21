@@ -1,14 +1,12 @@
 func0000000000000453:
-	lsr	w8, w2, #30
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #30
 	csel	w8, w1, w2, eq
 	mvn	w8, w8
 	add	w0, w0, w8, lsr #31
 	ret
 
 func0000000000000451:
-	lsr	w8, w2, #30
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #30
 	csel	w8, w1, w2, eq
 	mvn	w8, w8
 	add	w0, w0, w8, lsr #31

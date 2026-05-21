@@ -15,16 +15,14 @@ func0000000000000028:
 func0000000000000024:
 	tst	w2, #0x20
 	csel	x8, x0, x1, eq
-	lsr	x8, x8, #28
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #28
 	cset	w0, eq
 	ret
 
 func0000000000000034:
 	tst	w2, #0x20
 	csel	x8, x0, x1, eq
-	lsr	x8, x8, #27
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #27
 	cset	w0, eq
 	ret
 

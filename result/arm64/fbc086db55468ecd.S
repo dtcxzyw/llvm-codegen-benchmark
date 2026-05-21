@@ -240,8 +240,7 @@ func00000000000000ec:
 	ret
 
 func0000000000000024:
-	lsr	x8, x0, #62
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #62
 	ccmp	x1, x2, #0, eq
 	cset	w0, eq
 	ret

@@ -18,8 +18,7 @@ func0000000000000004:
 	and	x8, x1, #0xff000000
 	tst	w0, #0x1
 	csel	x8, x8, x1, ne
-	lsr	x8, x8, #24
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #24
 	cset	w0, eq
 	ret
 

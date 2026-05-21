@@ -1,8 +1,7 @@
 func0000000000000004:
 	orr	x8, x1, #0x4000
 	mul	x8, x0, x8
-	lsr	x8, x8, #29
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #29
 	cset	w0, eq
 	ret
 

@@ -1,16 +1,14 @@
 func0000000000000028:
 	mov	w8, #8
-	lsr	x9, x0, #60
+	cmp	xzr, x0, lsr #60
 	orr	x8, x8, x0, lsl #4
-	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
 
 func00000000000000a8:
 	mov	w8, #16
-	lsr	x9, x0, #57
+	cmp	xzr, x0, lsr #57
 	orr	x8, x8, x0, lsl #7
-	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
 
@@ -30,9 +28,8 @@ func0000000000000021:
 
 func00000000000000e8:
 	mov	w8, #5
-	lsr	x9, x0, #60
+	cmp	xzr, x0, lsr #60
 	orr	x8, x8, x0, lsl #3
-	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
 

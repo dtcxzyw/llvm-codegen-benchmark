@@ -75,9 +75,8 @@ func0000000000000014:
 	ret
 
 func0000000000000048:
-	lsr	w8, w1, #27
-	sub	w9, w2, #1
-	cmp	w8, #0
-	csel	w0, w0, w9, eq
+	sub	w8, w2, #1
+	cmp	wzr, w1, lsr #27
+	csel	w0, w0, w8, eq
 	ret
 

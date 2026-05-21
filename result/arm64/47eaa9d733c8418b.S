@@ -7,8 +7,7 @@ func0000000000000406:
 func0000000000000404:
 	cmn	x1, x2
 	cinc	x8, x0, hs
-	lsr	x8, x8, #49
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #49
 	cset	w0, eq
 	ret
 

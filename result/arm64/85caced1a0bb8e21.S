@@ -9,9 +9,8 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	lsr	x9, x1, #31
 	mov	w8, #8
-	cmp	x9, #0
+	cmp	xzr, x1, lsr #31
 	csel	w0, w0, w8, ne
 	ret
 

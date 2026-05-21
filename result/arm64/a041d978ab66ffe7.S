@@ -89,8 +89,7 @@ func0000000000000046:
 
 func0000000000000034:
 	sub	w8, w1, #3
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

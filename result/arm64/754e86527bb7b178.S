@@ -2,8 +2,7 @@ func0000000000000074:
 	and	x9, x1, #0x1
 	mov	w8, #40
 	add	x9, x0, x9
-	lsr	x9, x9, #24
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #24
 	cinc	w0, w8, ne
 	ret
 

@@ -139,8 +139,7 @@ func0000000000000284:
 	mov	w8, #21
 	add	x9, x0, x1
 	madd	x8, x2, x8, x9
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

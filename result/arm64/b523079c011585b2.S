@@ -4,10 +4,9 @@ func0000000000000006:
 
 func0000000000000008:
 	mov	w8, #4107
-	lsr	w9, w0, #16
+	cmp	wzr, w0, lsr #16
 	movk	w8, #1, lsl #16
 	eor	w8, w0, w8
-	cmp	w9, #0
 	csel	w0, w8, w0, ne
 	ret
 

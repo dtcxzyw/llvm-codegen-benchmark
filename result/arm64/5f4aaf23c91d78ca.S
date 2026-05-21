@@ -27,7 +27,7 @@ func0000000000000318:
 func0000000000000102:
 	lsr	w8, w2, #24
 	cmp	x1, #0
-	ccmp	w8, #0, #4, ne
+	ccmp	wzr, w8, #4, ne
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

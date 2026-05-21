@@ -91,8 +91,7 @@ func0000000000000304:
 func0000000000000004:
 	add	x8, x1, #4095
 	add	x8, x0, x8, lsr #12
-	lsr	x8, x8, #52
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #52
 	cset	w0, eq
 	ret
 

@@ -9,8 +9,7 @@ func0000000000000184:
 	and	x8, x2, #0x3ffffffc0
 	add	x8, x1, x8
 	sub	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 
@@ -18,8 +17,7 @@ func0000000000000104:
 	and	x8, x2, #0xffffffffffffffc0
 	add	x8, x1, x8
 	sub	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

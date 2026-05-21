@@ -28,8 +28,7 @@ func0000000000000004:
 func0000000000000018:
 	eor	w9, w0, w1
 	mov	w8, #2
-	lsr	w9, w9, #27
-	cmp	w9, #0
+	cmp	wzr, w9, lsr #27
 	cinc	w0, w8, ne
 	ret
 

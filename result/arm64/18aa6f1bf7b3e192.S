@@ -26,8 +26,7 @@ func0000000000000184:
 	ret
 
 func0000000000000084:
-	lsr	w8, w2, #24
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #24
 	and	w8, w0, #0xff
 	cset	w9, eq
 	cmp	w8, #5

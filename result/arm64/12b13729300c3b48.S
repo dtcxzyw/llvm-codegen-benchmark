@@ -37,8 +37,7 @@ func0000000000000021:
 func0000000000000024:
 	cmn	w2, #1
 	csel	x8, x0, x1, eq
-	lsr	x8, x8, #48
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #48
 	cset	w0, eq
 	ret
 

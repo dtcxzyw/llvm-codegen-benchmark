@@ -111,10 +111,9 @@ func0000000000000c21:
 	ret
 
 func0000000000000084:
-	lsr	w8, w0, #28
-	add	w9, w2, #1
-	cmp	w8, #0
-	ccmp	w1, w9, #2, eq
+	add	w8, w2, #1
+	cmp	wzr, w0, lsr #28
+	ccmp	w1, w8, #2, eq
 	cset	w0, lo
 	ret
 

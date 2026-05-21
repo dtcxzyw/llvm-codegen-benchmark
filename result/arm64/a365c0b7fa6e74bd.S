@@ -1,6 +1,5 @@
 func0000000000000018:
-	lsr	x8, x2, #25
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #25
 	csel	x8, xzr, x1, ne
 	tst	w0, #0x1
 	csel	x0, x8, xzr, ne

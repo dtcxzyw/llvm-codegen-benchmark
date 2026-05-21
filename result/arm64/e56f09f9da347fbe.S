@@ -17,8 +17,7 @@ func0000000000000040:
 	ret
 
 func0000000000000023:
-	lsr	x8, x1, #62
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #62
 	cset	w8, eq
 	lsl	x0, x0, x8
 	ret

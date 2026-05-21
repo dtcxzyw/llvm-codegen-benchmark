@@ -39,8 +39,7 @@ func0000000000000034:
 	ret
 
 func000000000000000c:
-	lsl	w8, w0, #1
-	cmp	w8, #0
+	cmp	wzr, w0, lsl #1
 	cset	w0, ne
 	ret
 

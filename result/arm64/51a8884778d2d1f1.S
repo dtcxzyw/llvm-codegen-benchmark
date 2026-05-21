@@ -105,8 +105,7 @@ func00000000000000b8:
 
 func0000000000000024:
 	orr	w8, w0, w1, lsl #30
-	lsr	w8, w8, #26
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #26
 	cset	w0, eq
 	ret
 

@@ -12,8 +12,7 @@ func00000000000003f4:
 	sub	w9, w1, #48
 	and	x9, x9, #0xfffffffe
 	madd	x8, x0, x8, x9
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

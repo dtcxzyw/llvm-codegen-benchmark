@@ -10,11 +10,10 @@ func0000000000000102:
 
 func000000000000010c:
 	mov	w8, #223
-	lsl	w9, w0, #24
+	cmp	wzr, w0, lsl #24
 	and	w8, w0, w8
 	sub	w8, w8, #65
-	cmp	w9, #0
-	ccmp	w8, #26, #0, pl
+	ccmp	w8, #26, #0, le
 	cset	w0, lo
 	ret
 

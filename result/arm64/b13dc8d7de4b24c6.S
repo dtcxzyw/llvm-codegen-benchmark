@@ -7,8 +7,7 @@ func0000000000000141:
 
 func0000000000000104:
 	umaddl	x8, w1, w2, x0
-	lsr	x8, x8, #28
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #28
 	cset	w0, eq
 	ret
 
@@ -33,8 +32,7 @@ func0000000000000148:
 
 func0000000000000144:
 	umaddl	x8, w1, w2, x0
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

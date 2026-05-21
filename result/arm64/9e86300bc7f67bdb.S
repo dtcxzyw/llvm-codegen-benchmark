@@ -165,7 +165,7 @@ func0000000000000294:
 func000000000000008c:
 	lsr	x8, x1, #25
 	cmp	x0, #0
-	ccmp	x8, #0, #0, ne
+	ccmp	xzr, x8, #0, ne
 	cset	w0, eq
 	ret
 

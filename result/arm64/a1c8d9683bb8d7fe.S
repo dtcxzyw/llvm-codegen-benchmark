@@ -1,6 +1,5 @@
 func0000000000000010:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	csel	x8, x1, x2, ne
 	tst	w0, #0x1
 	lsr	x9, x8, #16
@@ -8,8 +7,7 @@ func0000000000000010:
 	ret
 
 func0000000000000030:
-	lsr	x8, x2, #16
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #16
 	csel	x8, x1, x2, ne
 	tst	w0, #0x1
 	lsr	x9, x8, #8

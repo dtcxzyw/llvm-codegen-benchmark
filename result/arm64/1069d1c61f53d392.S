@@ -99,15 +99,15 @@ func0000000000000028:
 func0000000000000186:
 	lsl	w8, w0, #24
 	tst	w1, #0xff
-	ccmp	w8, #0, #0, ne
-	cset	w0, mi
+	ccmp	wzr, w8, #4, ne
+	cset	w0, gt
 	ret
 
 func00000000000000cc:
 	lsl	w8, w1, #24
 	tst	w0, #0xff
-	ccmp	w8, #0, #0, ne
-	cset	w0, mi
+	ccmp	wzr, w8, #4, ne
+	cset	w0, gt
 	ret
 
 func00000000000000c4:
@@ -163,8 +163,8 @@ func00000000000000ca:
 	lsl	w8, w0, #24
 	lsl	w9, w1, #24
 	cmn	w8, #1
-	ccmp	w9, #0, #0, gt
-	cset	w0, mi
+	ccmp	wzr, w9, #4, gt
+	cset	w0, gt
 	ret
 
 func00000000000000c1:

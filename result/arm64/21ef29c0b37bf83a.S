@@ -15,8 +15,7 @@ func0000000000000001:
 func0000000000000024:
 	sub	x9, x0, #1
 	mov	w8, #33
-	lsr	x9, x9, #32
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #32
 	csinc	w0, w8, wzr, ne
 	ret
 

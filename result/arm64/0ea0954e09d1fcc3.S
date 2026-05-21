@@ -1,9 +1,8 @@
 func0000000000000546:
-	lsl	w8, w0, #16
-	orr	w9, w1, w2
-	sxth	w9, w9
-	cmp	w8, #0
-	ccmp	w9, #0, #4, mi
+	orr	w8, w1, w2
+	cmp	wzr, w0, lsl #16
+	sxth	w8, w8
+	ccmp	w8, #0, #4, gt
 	cset	w0, gt
 	ret
 

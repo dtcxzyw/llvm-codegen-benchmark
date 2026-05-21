@@ -367,8 +367,7 @@ func000000000000008a:
 	ret
 
 func0000000000000114:
-	lsr	w8, w0, #25
-	cmp	w8, #0
+	cmp	wzr, w0, lsr #25
 	ccmp	w1, #4, #2, ne
 	cset	w0, hi
 	ret

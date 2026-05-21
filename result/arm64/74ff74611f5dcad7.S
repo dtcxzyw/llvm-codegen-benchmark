@@ -50,8 +50,7 @@ func000000000000630c:
 	ret
 
 func0000000000006204:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	ccmp	x0, #0, #4, ne
 	ccmp	w2, #1, #8, ne
 	cset	w0, lt

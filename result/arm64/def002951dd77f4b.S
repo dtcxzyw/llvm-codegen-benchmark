@@ -31,9 +31,8 @@ func0000000000000102:
 	ret
 
 func000000000000030c:
-	lsl	w8, w0, #24
-	cmp	w8, #0
-	ccmp	x1, x2, #0, pl
+	cmp	wzr, w0, lsl #24
+	ccmp	x1, x2, #0, le
 	cset	w0, ne
 	ret
 

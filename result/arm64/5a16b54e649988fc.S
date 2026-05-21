@@ -28,8 +28,7 @@ func0000000000000011:
 	ret
 
 func0000000000000009:
-	lsr	x8, x2, #32
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	mov	w8, #32
 	csel	w8, wzr, w8, eq
 	tst	w0, #0x1

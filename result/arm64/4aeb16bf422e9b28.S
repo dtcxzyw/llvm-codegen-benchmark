@@ -31,8 +31,7 @@ func0000000000000004:
 	tst	w0, #0x1
 	sub	x9, x8, #8
 	csel	x8, x9, x8, ne
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

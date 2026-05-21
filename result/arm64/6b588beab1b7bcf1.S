@@ -7,8 +7,7 @@ func0000000000000004:
 
 func0000000000000044:
 	add	x8, x1, x2
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	csinv	w0, w0, wzr, eq
 	ret
 

@@ -25,10 +25,9 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	lsr	w8, w1, #15
-	and	w9, w0, #0x10000
-	cmp	w8, #0
-	csel	w0, wzr, w9, ne
+	and	w8, w0, #0x10000
+	cmp	wzr, w1, lsr #15
+	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000004:

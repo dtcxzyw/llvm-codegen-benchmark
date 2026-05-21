@@ -51,12 +51,11 @@ func0000000000000088:
 
 func0000000000000608:
 	and	w8, w0, #0x1c0
-	lsr	w9, w0, #26
 	cmp	w8, #320
 	cset	w8, ne
-	cmp	w9, #0
-	orr	w8, w8, w1
+	cmp	wzr, w0, lsr #26
 	cset	w9, eq
+	orr	w9, w9, w1
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret

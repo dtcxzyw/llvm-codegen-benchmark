@@ -54,8 +54,8 @@ func000000000000014c:
 func00000000000000cc:
 	lsl	w8, w1, #16
 	cmp	x0, #0
-	ccmp	w8, #0, #0, ne
-	cset	w0, mi
+	ccmp	wzr, w8, #4, ne
+	cset	w0, gt
 	ret
 
 func000000000000010c:

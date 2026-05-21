@@ -2,8 +2,7 @@ func0000000000000084:
 	add	x8, x1, x2
 	add	x8, x0, x8
 	sub	x8, x8, #1
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

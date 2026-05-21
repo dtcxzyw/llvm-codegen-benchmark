@@ -80,8 +80,8 @@ func000000000000002a:
 func00000000000000c1:
 	lsl	w8, w2, #24
 	cmp	w0, w1
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000025:

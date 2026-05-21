@@ -134,8 +134,7 @@ func0000000000000284:
 	movk	x9, #43691
 	madd	x8, x8, x9, x1
 	add	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

@@ -19,12 +19,11 @@ func0000000000000081:
 	ret
 
 func0000000000000c18:
-	lsr	w9, w0, #16
 	mov	w8, #2
 	cmp	w0, #2047
-	cinc	w8, w8, hi
-	cmp	w9, #0
 	mov	w9, #4
+	cinc	w8, w8, hi
+	cmp	wzr, w0, lsr #16
 	csel	w0, w9, w8, ne
 	ret
 

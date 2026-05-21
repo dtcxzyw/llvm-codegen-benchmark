@@ -6,8 +6,7 @@ func00000000000000a8:
 	ret
 
 func00000000000000a1:
-	asr	x8, x0, #32
-	cmp	x8, #0
+	cmp	xzr, x0, asr #32
 	ccmp	w1, #0, #4, ne
 	cset	w0, eq
 	ret

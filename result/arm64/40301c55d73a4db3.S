@@ -122,20 +122,18 @@ func0000000000000502:
 
 func0000000000000048:
 	cmp	x2, #0
-	lsr	x8, x0, #32
-	cset	w9, eq
-	and	w9, w1, w9
-	cmp	x8, #0
-	csinc	w0, w9, wzr, ne
+	cset	w8, eq
+	cmp	xzr, x0, lsr #32
+	and	w8, w1, w8
+	csinc	w0, w8, wzr, ne
 	ret
 
 func0000000000000308:
 	cmp	x2, #35
-	lsr	x8, x0, #32
-	cset	w9, ne
-	and	w9, w9, w1
-	cmp	x8, #0
-	csinc	w0, w9, wzr, ne
+	cset	w8, ne
+	cmp	xzr, x0, lsr #32
+	and	w8, w8, w1
+	csinc	w0, w8, wzr, ne
 	ret
 
 func0000000000000618:

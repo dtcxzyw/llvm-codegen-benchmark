@@ -124,8 +124,7 @@ func00000000000001a4:
 	mov	x8, #-4294967296
 	add	x9, x0, x1
 	add	x8, x9, x8
-	lsr	x8, x8, #35
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #35
 	cset	w0, eq
 	ret
 

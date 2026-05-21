@@ -1,8 +1,7 @@
 func0000000000000018:
 	mov	w8, #58720255
-	lsr	x9, x0, #25
+	cmp	xzr, x0, lsr #25
 	and	x8, x8, x0, lsr #1
-	cmp	x9, #0
 	csel	x0, xzr, x8, ne
 	ret
 

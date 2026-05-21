@@ -129,12 +129,11 @@ func0000000000000a18:
 	ret
 
 func0000000000000c20:
-	lsr	w9, w1, #16
 	mov	w8, #4
 	cmp	w1, #255
-	mov	w10, #6
-	csel	w8, w10, w8, hi
-	cmp	w9, #0
+	mov	w9, #6
+	csel	w8, w9, w8, hi
+	cmp	wzr, w1, lsr #16
 	mov	w9, #10
 	csel	w8, w9, w8, ne
 	add	w0, w0, w8

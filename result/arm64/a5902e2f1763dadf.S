@@ -1,17 +1,15 @@
 func0000000000000063:
-	lsr	x8, x2, #16
-	orr	w9, w0, w1
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #16
 	mov	w8, #16
+	orr	w9, w0, w1
 	csel	w8, w8, wzr, ne
 	orr	w0, w9, w8
 	ret
 
 func0000000000000023:
-	lsr	x8, x2, #32
-	orr	w9, w0, w1
-	cmp	x8, #0
+	cmp	xzr, x2, lsr #32
 	mov	w8, #32
+	orr	w9, w0, w1
 	csel	w8, w8, wzr, ne
 	orr	w0, w9, w8
 	ret

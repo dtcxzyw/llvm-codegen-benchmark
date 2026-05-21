@@ -252,7 +252,7 @@ func0000000000001610:
 	lsr	w9, w0, #26
 	cmp	w2, w8
 	mov	w8, #320
-	ccmp	w9, #0, #4, ne
+	ccmp	wzr, w9, #4, ne
 	ccmp	w1, w8, #0, ne
 	cset	w0, ne
 	ret
@@ -262,7 +262,7 @@ func0000000000001608:
 	lsr	w9, w0, #26
 	cmp	w2, w8
 	mov	w8, #320
-	ccmp	w9, #0, #4, ne
+	ccmp	wzr, w9, #4, ne
 	ccmp	w1, w8, #0, ne
 	cset	w0, ne
 	ret

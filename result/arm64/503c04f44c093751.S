@@ -11,8 +11,7 @@ func00000000000031f4:
 	cmp	w2, #0
 	add	w8, w0, w1
 	cinc	w8, w8, ne
-	lsr	w8, w8, #28
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #28
 	cset	w0, eq
 	ret
 

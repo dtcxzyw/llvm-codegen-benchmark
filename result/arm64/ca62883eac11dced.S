@@ -42,8 +42,7 @@ func000000000000058c:
 
 func0000000000000024:
 	orr	x8, x1, x2
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	ccmp	w0, #2, #0, eq
 	cset	w0, eq
 	ret

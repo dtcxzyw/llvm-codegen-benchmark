@@ -6,9 +6,8 @@ func0000000000000004:
 	ret
 
 func0000000000000020:
-	lsr	x8, x2, #61
+	cmp	xzr, x2, lsr #61
 	and	x9, x1, #0xfffffffffffffff8
-	cmp	x8, #0
 	csinv	x8, x0, xzr, eq
 	add	x0, x8, x9
 	ret

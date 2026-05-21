@@ -104,8 +104,7 @@ func000000000000002c:
 	ret
 
 func0000000000000118:
-	lsr	w8, w2, #16
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #16
 	csel	x8, x0, x1, ne
 	cmp	x8, #255
 	cset	w0, hi
@@ -126,8 +125,7 @@ func0000000000000181:
 	ret
 
 func000000000000008a:
-	lsr	w8, w2, #24
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #24
 	csel	x8, x0, x1, eq
 	cmp	x8, #0
 	cset	w0, gt

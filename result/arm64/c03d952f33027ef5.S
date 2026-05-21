@@ -1,6 +1,5 @@
 func000000000000004a:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	csel	w8, w1, w2, eq
 	tst	w0, #0x1
 	lsl	w9, w8, #16
@@ -8,8 +7,7 @@ func000000000000004a:
 	ret
 
 func000000000000014a:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	csel	w8, w1, w2, eq
 	tst	w0, #0x1
 	lsl	w9, w8, #16

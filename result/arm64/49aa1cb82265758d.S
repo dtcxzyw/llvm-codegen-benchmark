@@ -39,14 +39,13 @@ func0000000000000210:
 
 func0000000000000218:
 	and	w8, w2, #0xff
-	lsl	w9, w1, #24
 	sub	w8, w8, #65
 	cmp	w8, #26
 	cset	w8, lo
-	cmp	w9, #0
-	orr	w8, w0, w8
-	cset	w9, mi
-	orr	w8, w8, w9
+	cmp	wzr, w1, lsl #24
+	cset	w9, gt
+	orr	w9, w0, w9
+	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
 

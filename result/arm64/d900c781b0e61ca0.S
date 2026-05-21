@@ -14,8 +14,7 @@ func00000000000000e1:
 func00000000000000a4:
 	lsr	w8, w1, #6
 	sub	x8, x0, x8
-	lsr	x8, x8, #24
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #24
 	cset	w0, eq
 	ret
 

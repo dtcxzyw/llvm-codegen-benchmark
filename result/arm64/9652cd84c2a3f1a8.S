@@ -39,10 +39,9 @@ func000000000000002a:
 	ret
 
 func0000000000000186:
-	lsl	w8, w0, #24
-	ubfx	w9, w1, #2, #1
-	cmp	w8, #0
-	csinc	w0, w9, wzr, pl
+	ubfx	w8, w1, #2, #1
+	cmp	wzr, w0, lsl #24
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000308:

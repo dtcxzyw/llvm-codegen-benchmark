@@ -37,10 +37,9 @@ func00000000000002c2:
 	ret
 
 func0000000000000108:
-	lsr	x8, x0, #32
-	and	w9, w2, #0x7fffffff
-	cmp	x8, #0
-	ccmp	w9, w1, #0, ne
+	and	w8, w2, #0x7fffffff
+	cmp	xzr, x0, lsr #32
+	ccmp	w8, w1, #0, ne
 	cset	w0, lo
 	ret
 

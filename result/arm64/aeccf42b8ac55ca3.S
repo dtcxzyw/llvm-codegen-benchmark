@@ -10,8 +10,7 @@ func0000000000000074:
 	orr	w8, w1, w2
 	and	x8, x8, #0x1
 	add	x8, x0, x8
-	lsr	x8, x8, #24
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #24
 	cset	w0, eq
 	ret
 

@@ -77,8 +77,7 @@ func0000000000000284:
 	mov	w8, w2
 	mul	x8, x1, x8
 	mul	x8, x8, x0
-	lsr	x8, x8, #30
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #30
 	cset	w0, eq
 	ret
 

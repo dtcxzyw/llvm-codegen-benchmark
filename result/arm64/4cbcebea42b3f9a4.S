@@ -39,9 +39,8 @@ func0000000000000040:
 	ret
 
 func0000000000000045:
-	lsr	w9, w1, #24
 	mov	w8, #7
-	cmp	w9, #0
+	cmp	wzr, w1, lsr #24
 	csel	w8, w8, wzr, eq
 	add	w8, w0, w8
 	sub	w0, w8, #1

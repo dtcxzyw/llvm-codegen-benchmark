@@ -1,8 +1,7 @@
 func000000000000090c:
-	lsl	w8, w0, #24
-	sub	w9, w1, #65
-	cmp	w8, #0
-	ccmp	w9, #26, #0, pl
+	sub	w8, w1, #65
+	cmp	wzr, w0, lsl #24
+	ccmp	w8, #26, #0, le
 	cset	w0, lo
 	ret
 
@@ -120,9 +119,8 @@ func0000000000000a08:
 	ret
 
 func000000000000004c:
-	lsl	w8, w0, #24
-	cmp	w8, #0
-	ccmp	w1, #1, #4, pl
+	cmp	wzr, w0, lsl #24
+	ccmp	w1, #1, #4, le
 	cset	w0, eq
 	ret
 

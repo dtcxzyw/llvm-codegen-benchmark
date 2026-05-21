@@ -27,10 +27,9 @@ func000000000000014a:
 	ret
 
 func00000000000000c4:
-	lsr	x8, x0, #31
-	sxtw	x9, w1
-	cmp	x8, #0
-	ccmp	x0, x9, #0, eq
+	sxtw	x8, w1
+	cmp	xzr, x0, lsr #31
+	ccmp	x0, x8, #0, eq
 	cset	w0, lt
 	ret
 

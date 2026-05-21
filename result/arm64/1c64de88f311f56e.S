@@ -35,7 +35,7 @@ func0000000000000081:
 	and	w9, w0, #0xff
 	lsr	x8, x8, #32
 	cmp	w9, #3
-	ccmp	x8, #0, #0, eq
+	ccmp	xzr, x8, #0, eq
 	cset	w0, eq
 	ret
 

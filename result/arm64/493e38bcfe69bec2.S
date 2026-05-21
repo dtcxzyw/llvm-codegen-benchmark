@@ -1,10 +1,9 @@
 func0000000000000034:
 	mov	w8, #1048576
-	lsr	x9, x0, #52
-	and	w10, w1, #0xfffff
+	and	w9, w1, #0xfffff
+	cmp	xzr, x0, lsr #52
 	bfxil	w8, w1, #0, #20
-	cmp	x9, #0
-	csel	w0, w10, w8, eq
+	csel	w0, w9, w8, eq
 	ret
 
 func0000000000000021:

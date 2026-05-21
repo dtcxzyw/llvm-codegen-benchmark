@@ -14,8 +14,7 @@ func0000000000000008:
 func0000000000000004:
 	add	x8, x1, x2
 	add	x8, x8, x0
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	cset	w0, eq
 	ret
 
@@ -29,8 +28,7 @@ func00000000000001f8:
 func00000000000001f4:
 	add	x8, x1, x2
 	add	x8, x8, x0
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 
@@ -180,8 +178,7 @@ func0000000000000084:
 func0000000000000104:
 	add	x8, x1, x2
 	add	x8, x8, x0
-	lsr	x8, x8, #54
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #54
 	cset	w0, eq
 	ret
 
@@ -281,8 +278,7 @@ func00000000000000f8:
 func00000000000001e4:
 	add	x8, x1, x2
 	add	x8, x8, x0
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

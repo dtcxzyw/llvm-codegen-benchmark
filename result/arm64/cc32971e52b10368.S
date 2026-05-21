@@ -23,9 +23,8 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	lsr	x9, x1, #32
 	mov	x8, #-32
-	cmp	x9, #0
+	cmp	xzr, x1, lsr #32
 	mov	x9, #-48
 	csel	x8, x9, x8, eq
 	tst	w0, #0x1
@@ -51,9 +50,8 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	lsr	x9, x1, #20
 	mov	w8, #10
-	cmp	x9, #0
+	cmp	xzr, x1, lsr #20
 	mov	w9, #20
 	csel	x8, x9, x8, ne
 	tst	w0, #0x1

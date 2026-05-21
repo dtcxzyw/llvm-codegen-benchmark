@@ -18,8 +18,7 @@ func0000000000000008:
 	add	x8, x1, x2
 	mov	w9, #1073741824
 	add	x8, x8, x9
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w8, eq
 	orr	w8, w8, w0
 	and	w0, w8, #0x1

@@ -35,17 +35,15 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	lsr	x8, x0, #32
-	lsl	x9, x1, #32
-	cmp	x8, #0
-	csel	x0, x9, xzr, eq
+	lsl	x8, x1, #32
+	cmp	xzr, x0, lsr #32
+	csel	x0, x8, xzr, eq
 	ret
 
 func0000000000000008:
-	lsr	x8, x0, #52
-	lsl	x9, x1, #52
-	cmp	x8, #0
-	csel	x0, x9, xzr, ne
+	lsl	x8, x1, #52
+	cmp	xzr, x0, lsr #52
+	csel	x0, x8, xzr, ne
 	ret
 
 func0000000000000041:

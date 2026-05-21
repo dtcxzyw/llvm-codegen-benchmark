@@ -17,8 +17,7 @@ func0000000000000192:
 	ret
 
 func0000000000000048:
-	lsr	w8, w0, #24
-	cmp	w8, #0
+	cmp	wzr, w0, lsr #24
 	ccmp	w1, w2, #4, ne
 	cset	w0, eq
 	ret
@@ -231,8 +230,7 @@ func0000000000000630:
 	ret
 
 func0000000000000208:
-	lsr	w8, w0, #24
-	cmp	w8, #0
+	cmp	wzr, w0, lsr #24
 	ccmp	w1, w2, #2, ne
 	cset	w0, hi
 	ret
@@ -293,15 +291,13 @@ func0000000000000114:
 	ret
 
 func0000000000000608:
-	lsr	w8, w0, #24
-	cmp	w8, #0
+	cmp	wzr, w0, lsr #24
 	ccmp	w1, w2, #2, ne
 	cset	w0, hi
 	ret
 
 func00000000000001c8:
-	lsr	w8, w0, #24
-	cmp	w8, #0
+	cmp	wzr, w0, lsr #24
 	ccmp	w1, w2, #4, ne
 	cset	w0, le
 	ret

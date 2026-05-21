@@ -137,9 +137,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000086:
-	lsl	w8, w0, #24
-	cmp	w8, #0
-	ccmp	x1, x2, #2, mi
+	cmp	wzr, w0, lsl #24
+	ccmp	x1, x2, #2, gt
 	cset	w0, lo
 	ret
 

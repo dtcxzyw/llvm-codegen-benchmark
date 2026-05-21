@@ -1,7 +1,6 @@
 func0000000000000038:
 	sub	x8, x1, x2
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	csel	x0, x0, x1, ne
 	ret
 

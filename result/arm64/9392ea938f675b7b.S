@@ -289,7 +289,7 @@ func00000000000000aa:
 func0000000000000089:
 	lsr	x8, x2, #56
 	cmp	x0, x1
-	ccmp	x8, #0, #0, hs
+	ccmp	xzr, x8, #0, hs
 	cset	w0, eq
 	ret
 
@@ -372,15 +372,13 @@ func00000000000000b4:
 	ret
 
 func0000000000000034:
-	lsr	x8, x0, #62
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #62
 	ccmp	x1, x2, #0, eq
 	cset	w0, eq
 	ret
 
 func0000000000000104:
-	lsr	x8, x0, #48
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #48
 	ccmp	x1, x2, #0, eq
 	cset	w0, hi
 	ret

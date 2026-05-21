@@ -31,7 +31,7 @@ func0000000000000021:
 func0000000000000081:
 	lsr	x8, x0, #32
 	tst	w1, #0x8
-	ccmp	x8, #0, #0, eq
+	ccmp	xzr, x8, #0, eq
 	cset	w0, eq
 	ret
 

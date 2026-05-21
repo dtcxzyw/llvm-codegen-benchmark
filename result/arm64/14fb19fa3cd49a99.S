@@ -42,8 +42,7 @@ func00000000000000a8:
 	mov	w8, #8
 	cmp	x0, x9
 	csinc	x9, x0, x1, hi
-	lsr	x9, x9, #60
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #60
 	csel	x0, xzr, x8, ne
 	ret
 

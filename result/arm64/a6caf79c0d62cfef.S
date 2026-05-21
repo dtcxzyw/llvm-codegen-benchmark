@@ -1,6 +1,5 @@
 func0000000000000c94:
-	lsr	w8, w2, #30
-	cmp	w8, #0
+	cmp	wzr, w2, lsr #30
 	mov	w8, #32
 	csinc	w8, w8, w1, eq
 	tst	w0, #0x1

@@ -16,11 +16,10 @@ func000000000000002c:
 
 func0000000000000024:
 	tst	w2, #0xff
-	lsr	x8, x1, #32
-	cset	w9, eq
-	and	w9, w0, w9
-	cmp	x8, #0
-	csel	w0, wzr, w9, ne
+	cset	w8, eq
+	cmp	xzr, x1, lsr #32
+	and	w8, w0, w8
+	csel	w0, wzr, w8, ne
 	ret
 
 func000000000000010c:

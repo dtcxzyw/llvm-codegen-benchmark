@@ -65,8 +65,8 @@ func000000000000018c:
 func00000000000000cc:
 	lsl	w8, w1, #24
 	cmp	x0, #0
-	ccmp	w8, #0, #0, ne
-	cset	w0, mi
+	ccmp	wzr, w8, #4, ne
+	cset	w0, gt
 	ret
 
 func0000000000000081:
@@ -239,9 +239,8 @@ func000000000000028a:
 	ret
 
 func0000000000000306:
-	lsl	w8, w0, #24
-	cmp	w8, #0
-	ccmp	x1, #1, #0, mi
+	cmp	wzr, w0, lsl #24
+	ccmp	x1, #1, #0, gt
 	cset	w0, hi
 	ret
 

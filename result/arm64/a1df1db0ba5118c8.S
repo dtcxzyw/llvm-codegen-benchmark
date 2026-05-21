@@ -1,7 +1,6 @@
 func0000000000003a34:
 	add	x8, x1, x2
-	lsr	x8, x8, #24
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #24
 	mov	w8, #126
 	cinc	w8, w8, ne
 	add	w8, w8, w0

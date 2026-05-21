@@ -22,8 +22,7 @@ func0000000000000018:
 
 func0000000000000004:
 	eor	w8, w0, #0x20000000
-	lsr	w8, w8, #28
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #28
 	cset	w0, eq
 	ret
 

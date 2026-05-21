@@ -1,6 +1,5 @@
 func000000000000008c:
-	lsr	x8, x1, #29
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #29
 	cset	w8, eq
 	lsl	x8, x1, x8
 	add	x0, x0, x8

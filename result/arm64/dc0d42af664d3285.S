@@ -8,8 +8,7 @@ func0000000000000078:
 
 func0000000000000004:
 	add	x8, x1, w2, uxtb
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

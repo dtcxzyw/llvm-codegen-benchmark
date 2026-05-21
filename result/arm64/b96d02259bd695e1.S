@@ -18,8 +18,7 @@ func0000000000000181:
 
 func0000000000000144:
 	add	x8, x1, x2
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	ccmn	w0, #1, #4, eq
 	cset	w0, gt
 	ret

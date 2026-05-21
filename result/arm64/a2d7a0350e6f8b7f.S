@@ -8,7 +8,7 @@ func0000000000000028:
 func000000000000008c:
 	lsr	x8, x1, #32
 	tst	w0, #0xff
-	ccmp	x8, #0, #4, eq
+	ccmp	xzr, x8, #4, eq
 	cset	w0, eq
 	ret
 
@@ -89,7 +89,7 @@ func0000000000000181:
 func0000000000000081:
 	lsr	x8, x1, #31
 	tst	w0, #0xff
-	ccmp	x8, #0, #4, ne
+	ccmp	xzr, x8, #4, ne
 	cset	w0, eq
 	ret
 

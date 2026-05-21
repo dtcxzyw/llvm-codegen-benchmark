@@ -24,7 +24,7 @@ func000000000000008c:
 	cmp	x0, #0
 	add	x8, x1, x8
 	lsr	x8, x8, #25
-	ccmp	x8, #0, #0, ne
+	ccmp	xzr, x8, #0, ne
 	cset	w0, eq
 	ret
 
@@ -80,7 +80,7 @@ func0000000000000084:
 	add	x8, x1, #22
 	lsr	x9, x0, #53
 	cmp	x8, #45
-	ccmp	x9, #0, #0, lo
+	ccmp	xzr, x9, #0, lo
 	cset	w0, eq
 	ret
 

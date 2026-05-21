@@ -1,7 +1,6 @@
 func0000000000000090:
-	lsr	x9, x1, #32
 	mov	w8, #12288
-	cmp	x9, #0
+	cmp	xzr, x1, lsr #32
 	mov	w9, #48
 	csel	w8, w9, w8, eq
 	mov	w9, #16777216

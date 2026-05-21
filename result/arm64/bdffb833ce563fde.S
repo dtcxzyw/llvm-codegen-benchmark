@@ -12,8 +12,7 @@ func0000000000000014:
 	sub	w8, w8, w1
 	cmp	x8, x0
 	csel	x8, x8, x0, lo
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

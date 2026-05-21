@@ -22,8 +22,7 @@ func0000000000000604:
 	sub	x9, x1, x0
 	movk	w8, #32768, lsl #16
 	add	x8, x9, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

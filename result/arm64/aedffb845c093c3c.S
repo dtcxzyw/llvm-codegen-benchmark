@@ -36,8 +36,7 @@ func0000000000000044:
 	movk	w8, #16772, lsl #16
 	csel	x8, x8, x2, ne
 	mul	x8, x0, x8
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 
@@ -45,8 +44,7 @@ func0000000000000024:
 	tst	w1, #0x1
 	csinc	x8, x2, xzr, eq
 	mul	x8, x8, x0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #60
 	cset	w0, eq
 	ret
 

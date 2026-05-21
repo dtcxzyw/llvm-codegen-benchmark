@@ -1,9 +1,8 @@
 func0000000000000018:
-	lsr	x8, x1, #25
-	and	x9, x2, #0x3ffffff
-	and	x9, x9, #0xffffffffff7fffff
-	cmp	x8, #0
-	csel	x8, xzr, x9, ne
+	and	x8, x2, #0x3ffffff
+	cmp	xzr, x1, lsr #25
+	and	x8, x8, #0xffffffffff7fffff
+	csel	x8, xzr, x8, ne
 	tst	w0, #0x1
 	csel	x0, x8, xzr, ne
 	ret

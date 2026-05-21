@@ -14,8 +14,7 @@ func0000000000000001:
 func0000000000000004:
 	add	x8, x1, w2, sxtw
 	sub	x8, x8, x0
-	lsr	x8, x8, #26
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #26
 	cset	w0, eq
 	ret
 

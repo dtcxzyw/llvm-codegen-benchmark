@@ -13,8 +13,7 @@ func0000000000000006:
 
 func0000000000000004:
 	asr	x8, x0, x1
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

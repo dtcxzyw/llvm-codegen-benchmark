@@ -34,10 +34,9 @@ func0000000000000028:
 	ret
 
 func0000000000000284:
-	lsr	w8, w0, #24
-	and	w9, w2, #0xff
-	cmp	w8, #0
-	ccmp	w1, w9, #0, eq
+	and	w8, w2, #0xff
+	cmp	wzr, w0, lsr #24
+	ccmp	w1, w8, #0, eq
 	cset	w0, hi
 	ret
 

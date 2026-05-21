@@ -2,8 +2,7 @@ func0000000000000044:
 	lsr	w8, w1, #16
 	and	w8, w8, #0xff00
 	mul	w8, w0, w8
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 

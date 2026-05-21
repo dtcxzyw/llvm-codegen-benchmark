@@ -2,8 +2,7 @@ func00000000000005f4:
 	mov	w8, #10
 	sub	w9, w1, #48
 	madd	x8, x0, x8, x9
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 
@@ -29,8 +28,7 @@ func00000000000007f4:
 	mov	w8, #10
 	sub	w9, w1, #48
 	madd	x8, x0, x8, x9
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

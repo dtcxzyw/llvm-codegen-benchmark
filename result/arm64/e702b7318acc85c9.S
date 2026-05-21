@@ -67,8 +67,7 @@ func0000000000000208:
 	ret
 
 func0000000000000048:
-	lsr	x8, x1, #32
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #32
 	mov	w8, #-1
 	ccmp	x2, x8, #4, ne
 	cset	w8, eq

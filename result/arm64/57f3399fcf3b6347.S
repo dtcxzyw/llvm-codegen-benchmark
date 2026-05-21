@@ -18,9 +18,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	lsl	w8, w1, #2
-	cmp	w8, #0
-	cset	w8, gt
+	cmp	wzr, w1, lsl #2
+	cset	w8, lt
 	and	w0, w0, w8
 	ret
 

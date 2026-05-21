@@ -15,14 +15,12 @@ func0000000000000041:
 	ret
 
 func0000000000000044:
-	lsr	x8, x0, #37
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #37
 	csinv	w0, w1, wzr, eq
 	ret
 
 func0000000000000004:
-	lsr	x8, x0, #32
-	cmp	x8, #0
+	cmp	xzr, x0, lsr #32
 	csinv	w0, w1, wzr, eq
 	ret
 

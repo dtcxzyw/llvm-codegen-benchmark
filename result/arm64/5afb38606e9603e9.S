@@ -1,7 +1,6 @@
 func0000000000000185:
-	lsr	w8, w2, #21
+	cmp	wzr, w2, lsr #21
 	neg	w9, w0
-	cmp	w8, #0
 	csel	w8, w1, wzr, ne
 	sub	w0, w9, w8
 	ret

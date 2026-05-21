@@ -8,9 +8,8 @@ func0000000000000048:
 
 func0000000000000008:
 	lsl	x8, x1, #6
-	lsr	x9, x0, #61
+	cmp	xzr, x0, lsr #61
 	sub	x8, x8, x1, lsl #3
-	cmp	x9, #0
 	csinv	x0, x8, xzr, eq
 	ret
 

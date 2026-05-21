@@ -1,8 +1,7 @@
 func0000000000000034:
 	tst	x0, #0x800000000
 	csel	x8, x0, x1, eq
-	lsr	x8, x8, #30
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #30
 	cset	w0, eq
 	ret
 

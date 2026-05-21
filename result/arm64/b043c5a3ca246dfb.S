@@ -29,8 +29,7 @@ func0000000000000031:
 
 func0000000000000011:
 	add	x8, x1, x2
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	mov	x8, #-1024
 	cinc	x8, x8, ne
 	add	x0, x0, x8

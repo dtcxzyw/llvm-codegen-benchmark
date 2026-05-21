@@ -154,26 +154,24 @@ func0000000000000084:
 	ret
 
 func000000000000020c:
-	lsl	w8, w0, #24
-	and	w9, w2, #0xff
-	cmp	w9, #92
-	cset	w9, lo
-	cmp	w8, #0
-	orr	w8, w1, w9
-	cset	w9, mi
+	and	w8, w2, #0xff
+	cmp	w8, #92
+	cset	w8, lo
+	cmp	wzr, w0, lsl #24
+	cset	w9, gt
+	orr	w9, w9, w1
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
 
 func0000000000000218:
-	lsl	w8, w1, #24
-	and	w9, w2, #0xff
-	cmp	w9, #26
-	cset	w9, lo
-	cmp	w8, #0
-	orr	w8, w0, w9
-	cset	w9, mi
-	orr	w8, w8, w9
+	and	w8, w2, #0xff
+	cmp	w8, #26
+	cset	w8, lo
+	cmp	wzr, w1, lsl #24
+	cset	w9, gt
+	orr	w9, w0, w9
+	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
 

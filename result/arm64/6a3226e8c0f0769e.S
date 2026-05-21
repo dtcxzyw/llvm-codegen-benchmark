@@ -1,8 +1,7 @@
 func0000000000000a84:
 	cmp	x1, #16, lsl #12
 	csel	w8, w0, w1, lo
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 
@@ -29,16 +28,14 @@ func0000000000000021:
 func0000000000000884:
 	cmp	x1, #16, lsl #12
 	csel	w8, w0, w1, lo
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 
 func0000000000000e84:
 	cmp	x1, #16, lsl #12
 	csel	w8, w0, w1, lo
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 
@@ -65,8 +62,7 @@ func000000000000002c:
 	ret
 
 func0000000000000b08:
-	lsr	x8, x1, #16
-	cmp	x8, #0
+	cmp	xzr, x1, lsr #16
 	csel	w8, w0, w1, ne
 	cmp	w8, #255
 	cset	w0, hi

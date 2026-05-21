@@ -1,7 +1,6 @@
 func0000000000000028:
 	add	x8, x1, w2, uxtw
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #61
 	csinv	x0, x0, xzr, eq
 	ret
 

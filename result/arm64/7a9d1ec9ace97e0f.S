@@ -18,15 +18,13 @@ func0000000000000006:
 
 func0000000000000014:
 	fmov	x8, d0
-	lsr	x8, x8, #52
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #52
 	cset	w0, eq
 	ret
 
 func0000000000000004:
 	fmov	x8, d0
-	lsr	x8, x8, #52
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #52
 	cset	w0, eq
 	ret
 

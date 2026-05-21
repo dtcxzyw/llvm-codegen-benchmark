@@ -85,9 +85,8 @@ func0000000000000034:
 	ret
 
 func0000000000000026:
-	lsl	w8, w0, #16
-	cmp	w8, #0
-	ccmp	w1, w2, #4, pl
+	cmp	wzr, w0, lsl #16
+	ccmp	w1, w2, #4, le
 	cset	w0, eq
 	ret
 
@@ -125,16 +124,14 @@ func0000000000000106:
 	ret
 
 func0000000000000086:
-	lsl	w8, w0, #16
-	cmp	w8, #0
-	ccmp	w1, w2, #0, pl
+	cmp	wzr, w0, lsl #16
+	ccmp	w1, w2, #0, le
 	cset	w0, lo
 	ret
 
 func00000000000000c6:
-	lsl	w8, w0, #16
-	cmp	w8, #0
-	ccmp	w1, w2, #8, pl
+	cmp	wzr, w0, lsl #16
+	ccmp	w1, w2, #8, le
 	cset	w0, lt
 	ret
 

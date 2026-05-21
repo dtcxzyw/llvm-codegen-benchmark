@@ -33,8 +33,8 @@ func00000000000000cc:
 	lsl	w8, w1, #16
 	and	w9, w0, #0xff
 	cmp	w9, #2
-	ccmp	w8, #0, #8, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #0, eq
+	cset	w0, gt
 	ret
 
 func0000000000000028:

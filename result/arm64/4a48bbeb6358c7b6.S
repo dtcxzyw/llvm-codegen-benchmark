@@ -20,7 +20,7 @@ func00000000000002a8:
 	mov	x8, #4611686018427387903
 	lsr	x9, x1, #61
 	cmp	x2, x8
-	ccmp	x9, #0, #0, lt
+	ccmp	xzr, x9, #0, lt
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

@@ -8,8 +8,7 @@ func000000000000000a:
 func0000000000000104:
 	lsl	x8, x1, #3
 	sub	x8, x8, x0
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	cset	w0, eq
 	ret
 
@@ -55,8 +54,7 @@ func00000000000000a4:
 func00000000000001a4:
 	lsl	x8, x1, #32
 	sub	x8, x8, x0
-	lsr	x8, x8, #59
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #59
 	cset	w0, eq
 	ret
 

@@ -27,14 +27,14 @@ func0000000000000029:
 func0000000000000089:
 	lsr	x8, x2, #32
 	cmp	x0, x1
-	ccmp	x8, #0, #4, lo
+	ccmp	xzr, x8, #4, lo
 	cset	w0, eq
 	ret
 
 func0000000000000299:
 	lsr	x8, x2, #32
 	cmp	x0, x1
-	ccmp	x8, #0, #4, lo
+	ccmp	xzr, x8, #4, lo
 	cset	w0, eq
 	ret
 

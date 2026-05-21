@@ -45,8 +45,7 @@ func0000000000000024:
 	and	w8, w2, #0xffff
 	cmp	w8, #7
 	csel	x8, x0, x1, eq
-	lsr	x8, x8, #24
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #24
 	cset	w0, eq
 	ret
 

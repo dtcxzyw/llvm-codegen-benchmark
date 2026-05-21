@@ -1,15 +1,13 @@
 func0000000000000048:
-	lsr	x8, x0, #62
-	lsl	x9, x0, #2
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #2
+	cmp	xzr, x0, lsr #62
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000008:
-	lsr	x8, x0, #61
-	lsl	x9, x0, #3
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #3
+	cmp	xzr, x0, lsr #61
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000001:

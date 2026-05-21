@@ -67,8 +67,8 @@ func000000000000002a:
 func0000000000000026:
 	lsl	w8, w0, #16
 	tst	w1, #0x1
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #4, eq
+	cset	w0, gt
 	ret
 
 func0000000000000198:
@@ -112,8 +112,8 @@ func000000000000008c:
 func00000000000000c1:
 	lsl	w8, w0, #16
 	tst	w1, #0x8
-	ccmp	w8, #0, #0, eq
-	cset	w0, mi
+	ccmp	wzr, w8, #4, eq
+	cset	w0, gt
 	ret
 
 func000000000000018a:

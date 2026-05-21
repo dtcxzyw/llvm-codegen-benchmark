@@ -23,7 +23,7 @@ func0000000000003104:
 	tst	x1, #0xff00000000000000
 	lsr	x8, x0, #56
 	ccmp	x2, #0, #4, ne
-	ccmp	x8, #0, #0, ne
+	ccmp	xzr, x8, #0, ne
 	cset	w0, eq
 	ret
 

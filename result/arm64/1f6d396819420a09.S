@@ -58,16 +58,14 @@ func0000000000000078:
 func0000000000000004:
 	tst	w0, #0x1
 	csel	w8, w1, w2, ne
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 
 func0000000000000044:
 	tst	w0, #0x1
 	csel	w8, w1, w2, ne
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 
@@ -120,8 +118,7 @@ func0000000000000046:
 func0000000000000064:
 	tst	w0, #0x1
 	csel	w8, w1, w2, ne
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 

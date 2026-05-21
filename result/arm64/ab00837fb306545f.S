@@ -6,8 +6,7 @@ func000000000000002c:
 
 func0000000000000024:
 	sub	x8, x1, #1
-	lsr	x8, x8, #30
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #30
 	cset	w8, eq
 	and	w0, w0, w8
 	ret

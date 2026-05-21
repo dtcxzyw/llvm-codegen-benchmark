@@ -10,8 +10,7 @@ func00000000000001f4:
 	mov	w8, #10
 	mul	x8, x0, x8
 	add	x8, x8, w1, uxtw
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 
@@ -37,8 +36,7 @@ func00000000000003f4:
 	mov	w8, #10
 	mul	x8, x0, x8
 	add	x8, x8, w1, uxtw
-	lsr	x8, x8, #32
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	cset	w0, eq
 	ret
 

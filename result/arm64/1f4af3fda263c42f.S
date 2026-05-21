@@ -291,7 +291,7 @@ func000000000000018a:
 func0000000000000088:
 	lsr	w8, w2, #27
 	cmp	x0, x1
-	ccmp	w8, #0, #0, hi
+	ccmp	wzr, w8, #0, hi
 	cset	w0, eq
 	ret
 

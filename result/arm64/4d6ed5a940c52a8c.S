@@ -27,9 +27,8 @@ func0000000000000149:
 
 func0000000000000085:
 	subs	x8, x1, x0
-	lsr	x8, x8, #32
 	cset	w9, hs
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #32
 	csel	w0, wzr, w9, ne
 	ret
 

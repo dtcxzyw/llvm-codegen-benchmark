@@ -6,31 +6,27 @@ func0000000000000001:
 	ret
 
 func0000000000000068:
-	lsr	x8, x0, #61
-	lsl	x9, x0, #3
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #3
+	cmp	xzr, x0, lsr #61
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000008:
-	lsr	x8, x0, #62
-	lsl	x9, x0, #2
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #2
+	cmp	xzr, x0, lsr #62
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000048:
-	lsr	x8, x0, #62
-	lsl	x9, x0, #2
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #2
+	cmp	xzr, x0, lsr #62
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000028:
-	lsr	x8, x0, #62
-	lsl	x9, x0, #2
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #2
+	cmp	xzr, x0, lsr #62
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000061:
@@ -41,25 +37,22 @@ func0000000000000061:
 	ret
 
 func0000000000000078:
-	lsr	x9, x0, #60
-	lsl	x10, x0, #1
+	lsl	x9, x0, #1
 	mov	x8, #2305843009213693951
-	cmp	x9, #0
-	csel	x0, x8, x10, ne
+	cmp	xzr, x0, lsr #60
+	csel	x0, x8, x9, ne
 	ret
 
 func0000000000000018:
-	lsr	x8, x0, #60
-	lsl	x9, x0, #4
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #4
+	cmp	xzr, x0, lsr #60
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000058:
-	lsr	x8, x0, #61
-	lsl	x9, x0, #3
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	lsl	x8, x0, #3
+	cmp	xzr, x0, lsr #61
+	csinv	x0, x8, xzr, eq
 	ret
 
 func0000000000000066:

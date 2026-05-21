@@ -30,8 +30,7 @@ func0000000000000001:
 func0000000000000014:
 	udiv	x8, x0, x1
 	add	x8, x8, #1
-	lsr	x8, x8, #40
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #40
 	cset	w0, eq
 	ret
 

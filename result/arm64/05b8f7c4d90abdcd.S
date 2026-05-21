@@ -66,8 +66,7 @@ func0000000000000114:
 	mov	w9, w0
 	cmp	x9, x8
 	csel	x8, x9, x8, lo
-	lsr	x8, x8, #31
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #31
 	cset	w0, eq
 	ret
 

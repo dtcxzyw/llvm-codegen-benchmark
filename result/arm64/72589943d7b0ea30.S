@@ -80,11 +80,10 @@ func000000000000002a:
 	ret
 
 func0000000000000184:
-	lsr	x8, x0, #32
 	cmp	w1, #0
-	cset	w9, ne
-	cmp	x8, #0
-	cset	w8, eq
-	eor	w0, w8, w9
+	cset	w8, ne
+	cmp	xzr, x0, lsr #32
+	cset	w9, eq
+	eor	w0, w9, w8
 	ret
 

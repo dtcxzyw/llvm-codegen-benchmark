@@ -42,8 +42,7 @@ func0000000000000008:
 
 func0000000000000004:
 	fcvtzs	x8, d0
-	lsr	x8, x8, #60
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #60
 	cset	w0, eq
 	ret
 

@@ -71,8 +71,7 @@ func0000000000000284:
 func00000000000001b4:
 	orr	w8, w0, w1, lsl #1
 	sub	w8, w8, #3
-	lsr	w8, w8, #24
-	cmp	w8, #0
+	cmp	wzr, w8, lsr #24
 	cset	w0, eq
 	ret
 

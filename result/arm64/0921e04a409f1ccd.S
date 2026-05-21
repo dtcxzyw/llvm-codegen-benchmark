@@ -1,8 +1,7 @@
 func0000000000000064:
-	lsr	x8, x1, #24
-	lsl	x9, x1, #1
-	cmp	x8, #0
-	csel	x0, x9, x0, eq
+	lsl	x8, x1, #1
+	cmp	xzr, x1, lsr #24
+	csel	x0, x8, x0, eq
 	ret
 
 func0000000000000074:

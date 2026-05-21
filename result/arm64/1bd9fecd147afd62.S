@@ -23,11 +23,10 @@ func0000000000000008:
 	ret
 
 func0000000000000028:
-	add	x9, x1, x0
 	mov	w8, #-1
-	lsr	x9, x9, #32
+	add	x9, x1, x0
 	sub	x8, x8, x1
-	cmp	x9, #0
+	cmp	xzr, x9, lsr #32
 	csel	x0, x8, x0, ne
 	ret
 

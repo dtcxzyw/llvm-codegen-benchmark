@@ -7,9 +7,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	lsr	x8, x0, #61
-	sbfiz	x9, x1, #3, #32
-	cmp	x8, #0
-	csinv	x0, x9, xzr, eq
+	sbfiz	x8, x1, #3, #32
+	cmp	xzr, x0, lsr #61
+	csinv	x0, x8, xzr, eq
 	ret
 

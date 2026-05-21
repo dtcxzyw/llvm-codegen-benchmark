@@ -79,8 +79,7 @@ func0000000000000044:
 
 func0000000000000001:
 	eor	x8, x0, x1
-	lsr	x8, x8, #62
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #62
 	cset	w0, eq
 	ret
 

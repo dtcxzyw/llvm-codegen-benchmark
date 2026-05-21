@@ -1,8 +1,7 @@
 func0000000000000008:
 	cmp	x1, x2
 	csel	x8, x1, x2, lo
-	lsr	x8, x8, #61
-	cmp	x8, #0
+	cmp	xzr, x8, lsr #61
 	csinv	x0, x0, xzr, eq
 	ret
 
