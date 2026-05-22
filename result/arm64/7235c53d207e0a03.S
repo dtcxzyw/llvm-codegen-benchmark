@@ -26,10 +26,9 @@ func00000000000007e1:
 	ret
 
 func0000000000000aaa:
-	mov	x8, #-34560
-	mov	w9, w2
-	movk	x8, #64620, lsl #16
-	madd	x8, x9, x8, x1
+	mov	w8, #34560
+	movk	w8, #915, lsl #16
+	umsubl	x8, w2, w8, x1
 	add	x8, x0, x8
 	cmp	x8, #99
 	cset	w0, gt

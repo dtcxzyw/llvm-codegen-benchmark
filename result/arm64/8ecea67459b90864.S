@@ -13,11 +13,10 @@ func00000000000000ff:
 	ret
 
 func00000000000000dd:
-	mov	x9, #-14765
-	mov	w8, w2
-	add	x10, x0, w1, uxtw
-	movk	x9, #65520, lsl #16
-	madd	x0, x8, x9, x10
+	mov	w8, #14765
+	add	x9, x0, w1, uxtw
+	movk	w8, #15, lsl #16
+	umsubl	x0, w2, w8, x9
 	ret
 
 func000000000000007f:

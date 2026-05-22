@@ -4,10 +4,9 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	mov	x8, #-51203
-	mov	w9, w1
-	movk	x8, #53730, lsl #16
-	madd	x0, x9, x8, x0
+	mov	w8, #51203
+	movk	w8, #11805, lsl #16
+	umsubl	x0, w1, w8, x0
 	ret
 
 func0000000000000000:
@@ -20,10 +19,9 @@ func0000000000000000:
 	ret
 
 func0000000000000015:
-	mov	x8, #-14765
-	mov	w9, w1
-	movk	x8, #65520, lsl #16
-	madd	x0, x9, x8, x0
+	mov	w8, #14765
+	movk	w8, #15, lsl #16
+	umsubl	x0, w1, w8, x0
 	ret
 
 func000000000000001f:
@@ -69,9 +67,8 @@ func000000000000000e:
 	ret
 
 func0000000000000005:
-	mov	x8, #-24
-	mov	w9, w1
-	madd	x0, x9, x8, x0
+	mov	w8, #24
+	umsubl	x0, w1, w8, x0
 	ret
 
 func0000000000000010:

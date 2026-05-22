@@ -6,9 +6,8 @@ func0000000000000188:
 	ret
 
 func00000000000002a4:
-	mov	x8, #-100
-	mov	w9, w2
-	madd	x8, x9, x8, x1
+	mov	w8, #100
+	umsubl	x8, w2, w8, x1
 	cmp	x8, x0
 	cset	w0, lo
 	ret

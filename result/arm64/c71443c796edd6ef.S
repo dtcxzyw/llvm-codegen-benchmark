@@ -12,11 +12,10 @@ func0000000000000075:
 	ret
 
 func000000000000005d:
-	mov	x9, #-28541
-	mov	w8, w2
-	add	x10, x0, x1
-	movk	x9, #65525, lsl #16
-	madd	x0, x8, x9, x10
+	mov	w8, #28541
+	add	x9, x0, x1
+	movk	w8, #10, lsl #16
+	umsubl	x0, w2, w8, x9
 	ret
 
 func000000000000007f:
@@ -27,11 +26,10 @@ func000000000000007f:
 	ret
 
 func0000000000000055:
-	mov	x9, #-14765
-	mov	w8, w2
-	add	x10, x0, x1
-	movk	x9, #65520, lsl #16
-	madd	x0, x8, x9, x10
+	mov	w8, #14765
+	add	x9, x0, x1
+	movk	w8, #15, lsl #16
+	umsubl	x0, w2, w8, x9
 	ret
 
 func000000000000005f:
@@ -70,9 +68,8 @@ func0000000000000035:
 	ret
 
 func0000000000000015:
-	mov	w8, w2
-	mov	x9, #-14924
-	add	x10, x0, x1
-	madd	x0, x8, x9, x10
+	mov	w8, #14924
+	add	x9, x0, x1
+	umsubl	x0, w2, w8, x9
 	ret
 

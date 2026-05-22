@@ -49,9 +49,9 @@ func00000000000000bf:
 	ret
 
 func0000000000000050:
-	mov	x8, #-48
+	mov	w8, #48
 	sub	w9, w1, #1
-	madd	x8, x9, x8, x0
+	umsubl	x8, w9, w8, x0
 	add	x0, x8, #104
 	ret
 

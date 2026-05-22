@@ -23,9 +23,8 @@ func00000000000007ec:
 	ret
 
 func0000000000000a01:
-	mov	w8, w2
-	mov	x9, #-48
-	madd	x8, x8, x9, x1
+	mov	w8, #48
+	umsubl	x8, w2, w8, x1
 	add	x8, x8, #112
 	cmp	x0, x8
 	cset	w0, eq

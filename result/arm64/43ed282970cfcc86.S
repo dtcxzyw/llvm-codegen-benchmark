@@ -11,9 +11,8 @@ func00000000000000c0:
 	ret
 
 func0000000000000055:
-	mov	x8, #-15137
-	mov	w9, w2
-	madd	x8, x9, x8, x1
+	mov	w8, #15137
+	umsubl	x8, w2, w8, x1
 	add	x0, x8, x0, lsl #13
 	ret
 

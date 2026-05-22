@@ -6,10 +6,10 @@ func000000000000001d:
 	ret
 
 func0000000000000015:
-	mov	x8, #-28541
+	mov	w8, #28541
 	and	w9, w1, #0x1fffff
-	movk	x8, #65525, lsl #16
-	smaddl	x0, w9, w8, x0
+	movk	w8, #10, lsl #16
+	umsubl	x0, w9, w8, x0
 	ret
 
 func000000000000001f:

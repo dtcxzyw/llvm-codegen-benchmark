@@ -12,15 +12,14 @@ func000000000000000d:
 
 func0000000000000025:
 	mov	x8, #13531
-	mov	w10, w1
-	mov	x11, #-3600
+	mov	w10, #3600
 	movk	x8, #55222, lsl #16
 	movk	x8, #56962, lsl #32
 	movk	x8, #17179, lsl #48
 	smulh	x8, x0, x8
 	asr	x9, x8, #18
 	add	x8, x9, x8, lsr #63
-	madd	x0, x10, x11, x8
+	umsubl	x0, w1, w10, x8
 	ret
 
 func000000000000002d:

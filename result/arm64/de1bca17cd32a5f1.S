@@ -1,8 +1,7 @@
 func0000000000000055:
-	mov	x8, #-28541
-	mov	w9, w2
-	movk	x8, #65525, lsl #16
-	madd	x8, x9, x8, x1
+	mov	w8, #28541
+	movk	w8, #10, lsl #16
+	umsubl	x8, w2, w8, x1
 	sub	x0, x8, x0
 	ret
 
@@ -29,9 +28,8 @@ func0000000000000035:
 	ret
 
 func0000000000000015:
-	mov	x8, #-11586
-	mov	w9, w2
-	madd	x8, x9, x8, x1
+	mov	w8, #11586
+	umsubl	x8, w2, w8, x1
 	sub	x0, x8, x0
 	ret
 

@@ -1,8 +1,7 @@
 func00000000000004a8:
-	mov	x8, #-100
-	mov	w9, w1
-	mul	x8, x9, x8
-	add	x8, x8, w0, uxtw
+	mov	w8, #100
+	mov	w9, w0
+	umsubl	x8, w1, w8, x9
 	cmp	x8, #99
 	cset	w0, hi
 	ret
@@ -44,11 +43,10 @@ func00000000000007f8:
 	ret
 
 func00000000000006aa:
-	mov	x8, #-51712
-	mov	w9, w1
-	movk	x8, #50277, lsl #16
-	mul	x8, x9, x8
-	add	x8, x8, w0, uxtw
+	mov	w8, #51712
+	mov	w9, w0
+	movk	w8, #15258, lsl #16
+	umsubl	x8, w1, w8, x9
 	cmp	x8, #99
 	cset	w0, gt
 	ret

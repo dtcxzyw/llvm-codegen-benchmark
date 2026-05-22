@@ -1,8 +1,7 @@
 func00000000000004a4:
-	mov	x8, #-100
-	mov	w9, w2
-	mul	x8, x9, x8
-	add	x8, x8, w1, uxtw
+	mov	w8, #100
+	mov	w9, w1
+	umsubl	x8, w2, w8, x9
 	cmp	x8, x0
 	cset	w0, lo
 	ret

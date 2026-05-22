@@ -1,10 +1,8 @@
 func00000000000000d5:
-	mov	x8, #-14765
-	mov	w9, w2
-	movk	x8, #65520, lsl #16
-	mul	x8, x9, x8
-	add	x8, x8, w1, uxtw
-	add	x0, x8, x0
+	mov	w8, #14765
+	movk	w8, #15, lsl #16
+	umsubl	x8, w2, w8, x0
+	add	x0, x8, w1, uxtw
 	ret
 
 func00000000000000ff:

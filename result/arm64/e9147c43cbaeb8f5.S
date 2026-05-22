@@ -9,12 +9,11 @@ func0000000000000175:
 
 func00000000000001dd:
 	mov	w8, #5585
-	mov	x10, #-28541
-	mov	w9, w2
+	mov	w9, #28541
 	movk	w8, #2, lsl #16
-	movk	x10, #65525, lsl #16
+	movk	w9, #10, lsl #16
 	madd	x8, x1, x8, x0
-	madd	x0, x9, x10, x8
+	umsubl	x0, w2, w9, x8
 	ret
 
 func00000000000001f5:
@@ -37,12 +36,11 @@ func00000000000001ff:
 
 func00000000000001d5:
 	mov	w8, #64359
-	mov	x10, #-14765
-	mov	w9, w2
+	mov	w9, #14765
 	movk	w8, #9, lsl #16
-	movk	x10, #65520, lsl #16
+	movk	w9, #15, lsl #16
 	madd	x8, x1, x8, x0
-	madd	x0, x9, x10, x8
+	umsubl	x0, w2, w9, x8
 	ret
 
 func00000000000001f0:
@@ -60,10 +58,9 @@ func00000000000000f5:
 
 func0000000000000055:
 	mov	w8, #3529
-	mov	w9, w2
-	mov	x10, #-14924
+	mov	w9, #14924
 	madd	x8, x1, x8, x0
-	madd	x0, x9, x10, x8
+	umsubl	x0, w2, w9, x8
 	ret
 
 func0000000000000075:
@@ -75,10 +72,9 @@ func0000000000000075:
 
 func00000000000000d5:
 	mov	w8, #8203
-	mov	w9, w2
-	mov	x10, #-13802
+	mov	w9, #13802
 	madd	x8, x1, x8, x0
-	madd	x0, x9, x10, x8
+	umsubl	x0, w2, w9, x8
 	ret
 
 func00000000000000ff:
