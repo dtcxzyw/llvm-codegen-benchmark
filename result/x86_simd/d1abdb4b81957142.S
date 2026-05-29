@@ -5,11 +5,9 @@
 	.zero	4,1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
+	vpandn	%xmm0, %xmm2, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k0
-	vpsllw	$7, %xmm2, %xmm0
 	vpmovb2m	%xmm0, %k1
-	kandnw	%k0, %k1, %k1
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
