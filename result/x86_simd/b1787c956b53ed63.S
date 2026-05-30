@@ -26,10 +26,42 @@ func0000000000000001:
 	vpsubw	%ymm0, %ymm1, %ymm0
 	retq
 
+.LCPI1_0:
+	.byte	1
+	.byte	1
+	.byte	3
+	.byte	3
+	.byte	5
+	.byte	5
+	.byte	7
+	.byte	7
+	.byte	9
+	.byte	9
+	.byte	11
+	.byte	11
+	.byte	13
+	.byte	13
+	.byte	15
+	.byte	15
+	.byte	17
+	.byte	17
+	.byte	19
+	.byte	19
+	.byte	21
+	.byte	21
+	.byte	23
+	.byte	23
+	.byte	25
+	.byte	25
+	.byte	27
+	.byte	27
+	.byte	29
+	.byte	29
+	.byte	31
+	.byte	31
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	vpsrlw	$8, %ymm0, %ymm1
-	vpshldw	$8, %ymm0, %ymm1, %ymm0
+	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
