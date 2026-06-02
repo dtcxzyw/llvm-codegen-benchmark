@@ -26,28 +26,24 @@ func0000000000000000:
 	srli	a0, a0, 56
 	ret
 
-.LCPI1_0:
-	.quad	3689348814741910272
-.LCPI1_1:
-	.quad	3689348814741910320
 func0000000000000001:
 	lui	a1, 1
 	srli	a2, a0, 1
-	lui	a3, %hi(.LCPI1_0)
-	lui	a4, %hi(.LCPI1_1)
+	lui	a3, 209715
 	addi	a1, a1, -832
 	and	a0, a0, a1
 	lui	a1, 61681
 	andi	a2, a2, 1088
-	ld	a3, %lo(.LCPI1_0)(a3)
-	ld	a4, %lo(.LCPI1_1)(a4)
+	addi	a3, a3, 819
 	addi	a1, a1, -241
 	sub	a0, a0, a2
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	and	a3, a3, a0
+	slli	a2, a3, 32
+	add	a2, a2, a3
+	slli	a3, a1, 32
+	add	a1, a1, a3
+	and	a3, a0, a2
 	srli	a0, a0, 2
-	and	a0, a0, a4
+	and	a0, a0, a2
 	add	a0, a0, a3
 	srli	a2, a0, 4
 	add	a0, a0, a2
