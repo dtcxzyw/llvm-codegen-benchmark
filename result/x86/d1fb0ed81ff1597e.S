@@ -52,7 +52,7 @@ func0000000000000001:
 func000000000000000f:
 	leal	(,%rdx,8), %eax
 	andl	$2016, %eax
-	andl	$-2048, %esi
+	andl	$63488, %esi
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq

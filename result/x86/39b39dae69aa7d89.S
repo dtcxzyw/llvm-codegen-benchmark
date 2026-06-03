@@ -11,7 +11,7 @@ func0000000000000003:
 func0000000000000002:
 	shrl	$3, %esi
 	andl	$4064, %esi
-	andl	$-2048, %edi
+	andl	$63488, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
 

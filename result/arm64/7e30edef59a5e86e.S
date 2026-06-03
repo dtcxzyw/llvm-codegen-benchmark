@@ -11,6 +11,6 @@ func0000000000000007:
 	ret
 
 func0000000000000002:
-	and	w0, w0, #0xfffffff0
+	and	w0, w0, #0xf0
 	ret
 

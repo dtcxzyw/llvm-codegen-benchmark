@@ -1,11 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c1:
-	andb	$1, %dl
-	movzbl	%dl, %eax
-	shll	$27, %eax
-	orl	%esi, %eax
-	cmpl	%edi, %eax
+	andl	$1, %edx
+	shll	$27, %edx
+	orl	%esi, %edx
+	cmpl	%edi, %edx
 	sete	%al
 	retq
 

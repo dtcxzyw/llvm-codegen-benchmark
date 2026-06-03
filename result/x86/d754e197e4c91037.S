@@ -1,21 +1,21 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	andl	$-241, %esi
+	andl	$65295, %esi
 	orl	%edi, %esi
 	movzwl	%si, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	andl	$-256, %esi
+	andl	$65280, %esi
 	orl	%edi, %esi
 	movzwl	%si, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
-	andl	$-64, %esi
+	andl	$65472, %esi
 	orl	%edi, %esi
 	movzwl	%si, %eax
 	retq

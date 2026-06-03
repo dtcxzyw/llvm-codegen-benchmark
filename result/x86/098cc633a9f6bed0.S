@@ -1,8 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	shrl	$16, %edi
-	leal	8(,%rdi,8), %eax
+	shrl	$13, %edi
+	andl	$65528, %edi
+	leal	8(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

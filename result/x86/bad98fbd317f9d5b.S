@@ -2,28 +2,28 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	movzbl	%sil, %eax
-	andl	$-65, %edi
+	andl	$65471, %edi
 	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movzbl	%sil, %eax
-	andl	$-129, %edi
+	andl	$65407, %edi
 	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	movzbl	%sil, %eax
-	andl	$-13, %edi
+	andl	$65523, %edi
 	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	movzbl	%sil, %eax
-	andl	$-64, %edi
+	andl	$65472, %edi
 	orl	%edi, %eax
 	retq
 

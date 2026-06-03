@@ -1,21 +1,23 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	andb	$-97, %sil
-	movzbl	%sil, %ecx
-	orb	$24, %sil
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	orb	$24, %al
+	andb	$-97, %al
+	andl	$159, %esi
+	movzbl	%al, %eax
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovel	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	andb	$1, %sil
-	movzbl	%sil, %ecx
-	orb	$2, %sil
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	andb	$1, %al
+	orb	$2, %al
+	andl	$1, %esi
+	movzbl	%al, %eax
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovel	%esi, %eax
 	retq
 

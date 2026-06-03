@@ -9,9 +9,7 @@ func000000000000001f:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
 	andl	$32767, %edi
-	decl	%edi
-	movzwl	%di, %eax
-	shll	$2, %eax
+	leal	-4(,%rdi,4), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

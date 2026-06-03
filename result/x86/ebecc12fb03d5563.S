@@ -6,7 +6,7 @@ func0000000000000003:
 	cmpl	$2, %esi
 	sete	%al
 	shll	$13, %eax
-	andl	$-8193, %edi
+	andl	$57343, %edi
 	orl	%edi, %eax
 	retq
 
@@ -14,7 +14,7 @@ func0000000000000003:
 func0000000000000002:
 	andl	$1024, %esi
 	leal	1024(%rsi), %eax
-	andl	$-513, %edi
+	andl	$65023, %edi
 	orl	%edi, %eax
 	retq
 

@@ -5,7 +5,7 @@ func0000000000000001:
 	leal	-113(%rdi), %ecx
 	testw	%ax, %ax
 	cmovnsl	%eax, %ecx
-	andl	$-4, %ecx
+	andl	$65532, %ecx
 	negl	%ecx
 	leal	-116(%rdi,%rcx), %eax
 	movswq	%ax, %rax

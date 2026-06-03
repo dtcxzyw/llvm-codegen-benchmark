@@ -19,7 +19,7 @@ func000000000000000f:
 func0000000000000007:
 	movzbl	%sil, %eax
 	shll	$3, %eax
-	andl	$-2049, %edi
+	andl	$63487, %edi
 	orl	%edi, %eax
 	retq
 

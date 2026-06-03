@@ -1,11 +1,11 @@
 func0000000000000000:
 	orr	w8, w0, w1
-	and	w0, w8, #0xfffffffe
+	and	w0, w8, #0xfe
 	ret
 
 func0000000000000004:
 	orr	w8, w0, w1
-	and	w0, w8, #0xffffffc0
+	and	w0, w8, #0xc0
 	ret
 
 func0000000000000006:

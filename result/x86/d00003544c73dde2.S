@@ -12,7 +12,7 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	movzbl	%dl, %eax
-	orw	%ax, %si
+	orw	%si, %ax
 	setg	%al
 	andb	%dil, %al
 	retq

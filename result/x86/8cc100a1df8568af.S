@@ -10,7 +10,7 @@ func0000000000000048:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
-	andl	$-33, %esi
+	andl	$65503, %esi
 	addl	$-65, %esi
 	cmpw	$26, %si
 	setb	%al

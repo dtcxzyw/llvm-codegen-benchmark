@@ -1,6 +1,7 @@
 func0000000000000006:
-	orr	w8, w0, w1
-	and	w0, w8, #0xffffefff
+	mov	w8, #61439
+	orr	w9, w0, w1
+	and	w0, w9, w8
 	ret
 
 func0000000000000000:

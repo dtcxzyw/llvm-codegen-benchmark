@@ -30,8 +30,8 @@ func000000000000000e:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
-	andb	$2, %sil
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	andl	$2, %eax
 	shll	$30, %eax
 	orl	%edi, %eax
 	retq

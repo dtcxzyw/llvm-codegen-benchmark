@@ -15,7 +15,7 @@ func00000000000000a1:
 func00000000000000aa:
 	movzbl	%dl, %eax
 	shll	$8, %esi
-	orw	%ax, %si
+	orw	%si, %ax
 	setg	%al
 	andb	%dil, %al
 	retq

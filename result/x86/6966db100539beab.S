@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000108:
-	andl	$-33, %esi
+	andl	$65503, %esi
 	addl	$-65, %esi
 	cmpw	$26, %si
 	setb	%cl
@@ -23,7 +23,7 @@ func0000000000000902:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000102:
-	andl	$-33, %esi
+	andl	$65503, %esi
 	decl	%esi
 	cmpw	$2, %si
 	setb	%cl

@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	andl	$-385, %edi
+	andl	$65151, %edi
 	leal	128(%rdi), %eax
 	retq
 
@@ -13,7 +13,7 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
-	andl	$-32768, %edi
+	andl	$32768, %edi
 	leal	31744(%rdi), %eax
 	retq
 

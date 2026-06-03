@@ -1,12 +1,13 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	andb	$1, %dl
-	movzbl	%dl, %eax
-	orb	$2, %dl
-	movzbl	%dl, %ecx
+	movl	%edx, %eax
+	andb	$1, %al
+	orb	$2, %al
+	andl	$1, %edx
+	movzbl	%al, %ecx
 	testb	$1, %sil
-	cmovel	%eax, %ecx
+	cmovel	%edx, %ecx
 	leal	4(%rcx), %eax
 	movzbl	%al, %eax
 	testb	$1, %dil

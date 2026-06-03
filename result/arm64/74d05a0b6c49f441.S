@@ -1,7 +1,7 @@
 func000000000000007a:
 	add	w8, w0, w1, lsl #1
 	lsr	w8, w8, #2
-	and	w0, w8, #0x3ffffffc
+	and	w0, w8, #0xfc
 	ret
 
 func0000000000000063:

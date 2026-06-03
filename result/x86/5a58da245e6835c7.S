@@ -28,11 +28,10 @@ func00000000000001f8:
 
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000001c1:
-	andb	$1, %sil
-	movzbl	%sil, %eax
-	shll	$27, %eax
-	orl	%edi, %eax
-	negl	%eax
+	andl	$1, %esi
+	shll	$27, %esi
+	orl	%edi, %esi
+	negl	%esi
 	seto	%al
 	retq
 

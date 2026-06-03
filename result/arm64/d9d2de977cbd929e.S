@@ -1,5 +1,5 @@
 func0000000000000004:
-	and	w0, w0, #0xffffffc0
+	and	w0, w0, #0xc0
 	ret
 
 func0000000000000006:

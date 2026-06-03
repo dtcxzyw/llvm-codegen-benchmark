@@ -16,14 +16,14 @@ func0000000000000007:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	movl	%esi, %eax
-	andl	$-8, %eax
+	andl	$65528, %eax
 	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
 	movl	%esi, %eax
-	andl	$-8, %eax
+	andl	$65528, %eax
 	orl	%edi, %eax
 	retq
 

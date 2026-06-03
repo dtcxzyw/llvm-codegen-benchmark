@@ -2,11 +2,10 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movl	%esi, %eax
-	andb	$15, %al
-	shrb	$4, %sil
-	movzbl	%sil, %ecx
+	shrb	$4, %al
+	andl	$15, %esi
 	movzbl	%al, %eax
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovel	%esi, %eax
 	retq
 

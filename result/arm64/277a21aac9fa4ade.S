@@ -9,11 +9,11 @@ func0000000000000003:
 
 func0000000000000006:
 	lsr	w8, w0, #5
-	and	w0, w8, #0x7ff8000
+	and	w0, w8, #0x8000
 	ret
 
 func0000000000000004:
 	lsr	w8, w0, #1
-	and	w0, w8, #0x7ffffff8
+	and	w0, w8, #0xfff8
 	ret
 

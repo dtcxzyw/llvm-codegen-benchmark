@@ -9,6 +9,6 @@ func0000000000000003:
 
 func0000000000000004:
 	lsr	w8, w0, #8
-	and	w0, w8, #0xfffff0
+	and	w0, w8, #0xf0
 	ret
 

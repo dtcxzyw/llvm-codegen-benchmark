@@ -20,7 +20,7 @@ func00000000000000a1:
 func00000000000000aa:
 	movzbl	%sil, %eax
 	shll	$8, %edi
-	orw	%ax, %di
+	orw	%di, %ax
 	setg	%al
 	retq
 
@@ -113,7 +113,7 @@ func00000000000001f4:
 func00000000000000a6:
 	movzbl	%sil, %eax
 	shll	$8, %edi
-	orw	%ax, %di
+	orw	%di, %ax
 	setle	%al
 	retq
 

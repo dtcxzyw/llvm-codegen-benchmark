@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
-	andl	$-321, %esi
+	andl	$65215, %esi
 	notb	%dil
 	movzbl	%dil, %eax
 	andl	$1, %eax
@@ -13,7 +13,7 @@ func0000000000000002:
 func0000000000000003:
 	andl	$1, %esi
 	shll	$9, %esi
-	andl	$-1024, %edi
+	andl	$64512, %edi
 	leal	1(%rdi,%rsi), %eax
 	retq
 

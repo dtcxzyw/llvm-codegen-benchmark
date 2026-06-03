@@ -8,7 +8,7 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	andl	$-32, %esi
+	andl	$65504, %esi
 	orl	%edi, %esi
 	movzwl	%si, %eax
 	retq

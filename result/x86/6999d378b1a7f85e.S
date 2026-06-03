@@ -30,7 +30,7 @@ func0000000000000000:
 func000000000000000c:
 	leal	(,%rdx,8), %eax
 	andl	$4032, %eax
-	andl	$-2048, %esi
+	andl	$63488, %esi
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
@@ -49,7 +49,7 @@ func0000000000000008:
 func0000000000000002:
 	shll	$5, %edx
 	andl	$96, %edx
-	andl	$-97, %esi
+	andl	$65439, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq

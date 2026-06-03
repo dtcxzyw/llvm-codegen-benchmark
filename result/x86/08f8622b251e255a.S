@@ -3,7 +3,7 @@
 func00000000000000a1:
 	movzwl	%si, %eax
 	shll	$8, %eax
-	andl	$-2, %edi
+	andl	$65534, %edi
 	orl	%eax, %edi
 	cmpw	$12, %di
 	sete	%al

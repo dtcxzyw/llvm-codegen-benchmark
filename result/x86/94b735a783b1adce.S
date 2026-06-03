@@ -7,7 +7,7 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
-	andl	$-32768, %edi
+	andl	$32768, %edi
 	leal	31744(%rdi), %eax
 	retq
 

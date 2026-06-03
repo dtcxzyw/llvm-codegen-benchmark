@@ -10,7 +10,7 @@ func0000000000000181:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
-	andl	$-12544, %esi
+	andl	$52992, %esi
 	xorl	$16640, %esi
 	xorl	$65, %edi
 	orw	%si, %di

@@ -17,7 +17,7 @@ func0000000000000002:
 	testl	$1024, %edi
 	sete	%al
 	shll	$9, %eax
-	andl	$-16640, %edi
+	andl	$48896, %edi
 	orl	%edi, %eax
 	orl	$16406, %eax
 	retq

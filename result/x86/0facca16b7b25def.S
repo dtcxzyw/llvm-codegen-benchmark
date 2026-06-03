@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	andl	$-6145, %edx
+	andl	$59391, %edx
 	leal	4096(%rdx), %eax
 	testb	$1, %dil
 	cmovnel	%esi, %eax

@@ -1,14 +1,13 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	movzwl	%si, %ecx
-	xorl	%eax, %eax
-	cmpl	$128, %ecx
-	setne	%al
-	shll	$8, %eax
-	andl	$-385, %edi
-	orl	%edi, %eax
-	orl	$128, %eax
+	movzwl	%si, %eax
+	xorl	%ecx, %ecx
+	cmpl	$128, %eax
+	setne	%cl
+	shll	$8, %ecx
+	andl	$65151, %edi
+	leal	128(%rcx,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -28,7 +27,7 @@ func0000000000000002:
 	testw	%si, %si
 	sete	%al
 	shll	$9, %eax
-	andl	$-16640, %edi
+	andl	$48896, %edi
 	orl	%edi, %eax
 	orl	$16406, %eax
 	retq

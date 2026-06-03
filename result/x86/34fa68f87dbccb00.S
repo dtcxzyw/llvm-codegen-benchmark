@@ -12,7 +12,7 @@ func000000000000001d:
 func0000000000000008:
 	movl	%esi, %eax
 	shll	$8, %edx
-	andl	$-16381, %eax
+	andl	$49155, %eax
 	orl	%edi, %eax
 	orl	%edx, %eax
 	retq
@@ -21,7 +21,7 @@ func0000000000000008:
 func0000000000000000:
 	movl	%esi, %eax
 	shll	$9, %edx
-	andl	$-32767, %eax
+	andl	$32769, %eax
 	orl	%edi, %eax
 	orl	%edx, %eax
 	retq

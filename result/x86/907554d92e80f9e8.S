@@ -1,37 +1,33 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	andb	$1, %sil
-	xorl	%ecx, %ecx
+	andl	$1, %esi
+	xorl	%eax, %eax
 	testb	%dil, %dil
-	movzbl	%sil, %eax
-	cmovel	%ecx, %eax
+	cmovnel	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
-	andb	$2, %sil
+	andl	$2, %esi
 	cmpb	$-64, %dil
-	movzbl	%sil, %ecx
 	movl	$4, %eax
-	cmovbl	%ecx, %eax
+	cmovbl	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
-	andb	$127, %sil
+	andl	$127, %esi
 	cmpb	$23, %dil
-	movzbl	%sil, %ecx
 	movl	$31, %eax
-	cmovael	%ecx, %eax
+	cmovael	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
-	andb	$4, %sil
-	xorl	%ecx, %ecx
+	andl	$4, %esi
+	xorl	%eax, %eax
 	testb	%dil, %dil
-	movzbl	%sil, %eax
-	cmovnel	%ecx, %eax
+	cmovel	%esi, %eax
 	retq
 

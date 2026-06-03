@@ -18,7 +18,7 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	movzbl	%sil, %eax
-	orw	%ax, %di
+	orw	%di, %ax
 	setg	%al
 	retq
 
@@ -92,7 +92,7 @@ func000000000000006c:
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000026:
 	movzbl	%sil, %eax
-	orw	%ax, %di
+	orw	%di, %ax
 	setle	%al
 	retq
 

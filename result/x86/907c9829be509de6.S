@@ -9,20 +9,18 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
-	andb	$1, %sil
-	movzbl	%sil, %ecx
-	shll	$8, %ecx
+	andl	$1, %esi
+	shll	$8, %esi
 	movzbl	%dil, %eax
-	orl	%ecx, %eax
+	orl	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000017:
-	andb	$15, %sil
-	movzbl	%sil, %ecx
-	shll	$8, %ecx
+	andl	$15, %esi
+	shll	$8, %esi
 	movzbl	%dil, %eax
-	orl	%ecx, %eax
+	orl	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

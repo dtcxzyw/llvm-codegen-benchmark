@@ -2,7 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	movzwl	%di, %eax
-	andl	$-513, %esi
+	andl	$65023, %esi
 	shll	$9, %eax
 	orl	%esi, %eax
 	retq
@@ -17,7 +17,7 @@ func0000000000000001:
 func0000000000000006:
 	movzwl	%si, %eax
 	shll	$4, %eax
-	andl	$-49, %edi
+	andl	$65487, %edi
 	orl	%edi, %eax
 	retq
 
@@ -32,7 +32,7 @@ func0000000000000005:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	leal	(,%rsi,4), %eax
-	andl	$-4093, %edi
+	andl	$61443, %edi
 	orl	%edi, %eax
 	retq
 

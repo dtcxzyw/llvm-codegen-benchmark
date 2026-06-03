@@ -5,7 +5,7 @@ func0000000000000005:
 	xorl	%eax, %eax
 	cmpw	$32, %si
 	sete	%al
-	andl	$-2, %edi
+	andl	$65534, %edi
 	orl	%edi, %eax
 	retq
 

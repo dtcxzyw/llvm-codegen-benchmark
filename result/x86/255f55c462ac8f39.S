@@ -2,7 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	movzbl	%dl, %ecx
-	andl	$-129, %esi
+	andl	$65407, %esi
 	orl	%esi, %ecx
 	movzbl	%dil, %eax
 	orl	%ecx, %eax

@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	andl	$-113, %edi
-	orl	$48, %edi
-	movzwl	%di, %eax
+	andl	$65423, %edi
+	leal	48(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

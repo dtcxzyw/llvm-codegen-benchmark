@@ -1,11 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
-	andb	$-128, %dil
-	movzbl	%dil, %ecx
-	shlq	$56, %rcx
+	andl	$128, %edi
+	shlq	$56, %rdi
 	movabsq	$4607182418800017408, %rax
-	orq	%rcx, %rax
+	orq	%rdi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

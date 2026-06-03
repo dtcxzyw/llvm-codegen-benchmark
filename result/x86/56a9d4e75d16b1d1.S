@@ -3,14 +3,15 @@
 func0000000000000000:
 	andb	$1, %sil
 	xorl	%edi, %edx
-	andb	$1, %dl
-	xorl	%eax, %eax
+	movl	%edx, %eax
+	andb	$1, %al
+	xorl	%ecx, %ecx
 	negb	%sil
-	sbbl	%eax, %eax
-	orb	%dl, %al
-	movzbl	%al, %ecx
-	movzbl	%dl, %eax
+	sbbl	%ecx, %ecx
+	orb	%al, %cl
+	movzbl	%cl, %eax
+	andl	$1, %edx
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovel	%edx, %eax
 	retq
 

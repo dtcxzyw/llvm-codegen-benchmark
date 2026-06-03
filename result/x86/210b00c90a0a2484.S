@@ -3,7 +3,7 @@
 func0000000000000002:
 	andl	$1, %edx
 	shll	$10, %edx
-	andl	$-1025, %esi
+	andl	$64511, %esi
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq

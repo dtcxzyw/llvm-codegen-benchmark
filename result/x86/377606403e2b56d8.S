@@ -5,7 +5,7 @@ func0000000000000007:
 	cmpl	$1, %edx
 	sete	%al
 	shll	$3, %eax
-	andl	$-25, %esi
+	andl	$65511, %esi
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq

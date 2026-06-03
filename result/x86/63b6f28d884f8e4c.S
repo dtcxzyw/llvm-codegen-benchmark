@@ -33,7 +33,7 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000b:
 	movl	%esi, %eax
-	andl	$-32768, %eax
+	andl	$32768, %eax
 	orl	%edi, %eax
 	orl	$31744, %eax
 	retq

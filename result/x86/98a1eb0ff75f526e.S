@@ -9,7 +9,7 @@ func0000000000000007:
 func0000000000000003:
 	andl	$15, %edi
 	decl	%edi
-	movzwl	%di, %eax
+	movslq	%edi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

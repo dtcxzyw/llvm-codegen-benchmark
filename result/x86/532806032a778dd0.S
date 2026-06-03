@@ -14,7 +14,7 @@ func0000000000000000:
 	movl	%esi, %eax
 	shrl	$2, %edx
 	andl	$126, %edx
-	andl	$-2048, %eax
+	andl	$63488, %eax
 	orl	%edi, %eax
 	orl	%edx, %eax
 	retq

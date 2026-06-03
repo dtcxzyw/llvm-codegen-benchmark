@@ -20,7 +20,7 @@ func0000000000000003:
 func0000000000000000:
 	movl	%esi, %eax
 	shll	$9, %edx
-	andl	$-32258, %eax
+	andl	$33278, %eax
 	orl	%edx, %eax
 	orl	%edi, %eax
 	retq

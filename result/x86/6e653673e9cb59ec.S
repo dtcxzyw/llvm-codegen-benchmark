@@ -13,8 +13,7 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movzbl	%dil, %eax
-	imull	$223, %eax, %eax
-	imull	$32897, %eax, %eax
+	imull	$7336031, %eax, %eax
 	shrl	$23, %eax
 	retq
 

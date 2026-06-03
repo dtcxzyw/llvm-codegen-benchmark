@@ -11,15 +11,13 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	movl	%edi, %ecx
-	andl	$-8189, %ecx
 	andl	$57347, %edi
 	imull	$32897, %edi, %eax
 	shrl	$23, %eax
-	movl	%eax, %edx
-	shll	$8, %edx
-	subl	%edx, %eax
-	addl	%ecx, %eax
+	movl	%eax, %ecx
+	shll	$8, %ecx
+	subl	%ecx, %eax
+	addl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

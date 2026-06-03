@@ -21,8 +21,8 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
-	andb	$-128, %dil
-	movzbl	%dil, %eax
+	movl	%edi, %eax
+	andl	$128, %eax
 	shlq	$56, %rax
 	retq
 

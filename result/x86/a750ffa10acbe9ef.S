@@ -7,7 +7,7 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
-	andl	$-449, %esi
+	andl	$65087, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
 
@@ -19,7 +19,7 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
-	andl	$-16, %esi
+	andl	$65520, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
 

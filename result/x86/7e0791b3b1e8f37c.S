@@ -2,7 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	movl	%esi, %eax
-	andl	$-1793, %edx
+	andl	$63743, %edx
 	orl	%edi, %edx
 	andl	$512, %eax
 	orl	%edx, %eax
@@ -12,7 +12,7 @@ func0000000000000007:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	movl	%esi, %eax
-	andl	$-195, %edx
+	andl	$65341, %edx
 	orl	%edi, %edx
 	andl	$64, %eax
 	orl	%edx, %eax

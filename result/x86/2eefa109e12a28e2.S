@@ -2,7 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000546:
 	movzbl	%dl, %eax
-	orw	%ax, %si
+	orw	%si, %ax
 	setg	%cl
 	testw	%di, %di
 	sets	%al

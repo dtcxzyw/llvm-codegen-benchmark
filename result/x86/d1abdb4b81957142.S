@@ -2,14 +2,15 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	andb	$1, %dl
-	andb	$1, %sil
-	xorl	%eax, %eax
+	movl	%esi, %eax
+	andb	$1, %al
+	xorl	%ecx, %ecx
 	cmpb	$1, %dl
-	sbbl	%eax, %eax
-	orb	%sil, %al
-	movzbl	%al, %ecx
-	movzbl	%sil, %eax
+	sbbl	%ecx, %ecx
+	orb	%al, %cl
+	movzbl	%cl, %eax
+	andl	$1, %esi
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovel	%esi, %eax
 	retq
 

@@ -4,7 +4,7 @@ func0000000000000015:
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setns	%al
-	andl	$-3, %edi
+	andl	$65533, %edi
 	leal	(%rdi,%rax,2), %eax
 	retq
 
@@ -14,7 +14,7 @@ func0000000000000003:
 	testl	%esi, %esi
 	sete	%al
 	shll	$9, %eax
-	andl	$-3600, %edi
+	andl	$61936, %edi
 	orl	%edi, %eax
 	retq
 
@@ -24,7 +24,7 @@ func0000000000000009:
 	cmpl	$100, %esi
 	setb	%al
 	shll	$6, %eax
-	andl	$-65, %edi
+	andl	$65471, %edi
 	orl	%edi, %eax
 	retq
 
@@ -33,7 +33,7 @@ func0000000000000011:
 	xorl	%eax, %eax
 	cmpl	$256, %esi
 	setae	%al
-	andl	$-5, %edi
+	andl	$65531, %edi
 	leal	(%rdi,%rax,4), %eax
 	retq
 
@@ -43,7 +43,7 @@ func0000000000000019:
 	testl	%esi, %esi
 	setne	%al
 	shll	$14, %eax
-	andl	$-16385, %edi
+	andl	$49151, %edi
 	orl	%edi, %eax
 	retq
 
@@ -64,7 +64,7 @@ func0000000000000002:
 	setne	%al
 	shll	$10, %eax
 	addl	$1024, %eax
-	andl	$-513, %edi
+	andl	$65023, %edi
 	orl	%edi, %eax
 	retq
 

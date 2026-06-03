@@ -9,7 +9,7 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	andl	$-33, %edi
+	andl	$65503, %edi
 	addl	$-65, %edi
 	cmpw	$26, %di
 	setb	%al

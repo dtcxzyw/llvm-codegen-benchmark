@@ -1,11 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
-	andb	$63, %sil
-	movzbl	%sil, %eax
-	shll	$24, %eax
-	shlq	$16, %rdi
-	orq	%rdi, %rax
+	movq	%rdi, %rax
+	andl	$63, %esi
+	shll	$24, %esi
+	shlq	$16, %rax
+	orq	%rsi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

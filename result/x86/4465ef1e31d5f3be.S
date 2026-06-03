@@ -3,7 +3,7 @@
 func0000000000000007:
 	andl	$16, %edx
 	orl	%esi, %edi
-	andl	$-17, %edi
+	andl	$65519, %edi
 	leal	(%rdi,%rdx), %eax
 	retq
 
@@ -11,7 +11,7 @@ func0000000000000007:
 func0000000000000005:
 	andl	$128, %edx
 	orl	%esi, %edi
-	andl	$-129, %edi
+	andl	$65407, %edi
 	leal	(%rdi,%rdx), %eax
 	retq
 

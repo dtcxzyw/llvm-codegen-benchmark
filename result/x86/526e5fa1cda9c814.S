@@ -3,7 +3,7 @@
 func0000000000000003:
 	shlb	$6, %sil
 	movzbl	%sil, %eax
-	andl	$-65, %edi
+	andl	$65471, %edi
 	orl	%edi, %eax
 	retq
 
@@ -11,7 +11,7 @@ func0000000000000003:
 func000000000000000f:
 	shlb	$3, %sil
 	movzbl	%sil, %eax
-	andl	$-9, %edi
+	andl	$65527, %edi
 	orl	%edi, %eax
 	retq
 
@@ -19,7 +19,7 @@ func000000000000000f:
 func0000000000000009:
 	shlb	$7, %sil
 	movzbl	%sil, %eax
-	andl	$-129, %edi
+	andl	$65407, %edi
 	orl	%edi, %eax
 	retq
 
@@ -27,7 +27,7 @@ func0000000000000009:
 func000000000000000e:
 	shlb	$2, %sil
 	movzbl	%sil, %eax
-	andl	$-13, %edi
+	andl	$65523, %edi
 	orl	%edi, %eax
 	retq
 
@@ -35,7 +35,7 @@ func000000000000000e:
 func0000000000000001:
 	shlb	$5, %sil
 	movzbl	%sil, %eax
-	andl	$-225, %edi
+	andl	$65311, %edi
 	orl	%edi, %eax
 	retq
 

@@ -5,7 +5,7 @@ func0000000000000001:
 	testb	$1, %dil
 	movl	$64, %eax
 	cmovel	%edx, %eax
-	andl	$-833, %esi
+	andl	$64703, %esi
 	orl	%esi, %eax
 	retq
 

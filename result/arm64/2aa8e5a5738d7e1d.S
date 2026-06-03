@@ -3,6 +3,6 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	and	w0, w0, #0xfffff000
+	and	w0, w0, #0xf000
 	ret
 

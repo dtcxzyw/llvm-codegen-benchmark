@@ -8,10 +8,9 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	andb	$1, %sil
-	movzbl	%sil, %ecx
+	andl	$1, %esi
 	testb	$1, %dil
 	movl	$2, %eax
-	cmovnel	%ecx, %eax
+	cmovnel	%esi, %eax
 	retq
 

@@ -17,7 +17,7 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
-	andl	$-256, %edx
+	andl	$65280, %edx
 	orl	%esi, %edx
 	movzwl	%dx, %eax
 	orl	%edi, %eax

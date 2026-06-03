@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	andb	$63, %sil
-	movzbl	%sil, %ecx
+	andl	$63, %esi
 	xorl	%eax, %eax
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovnel	%esi, %eax
 	retq
 

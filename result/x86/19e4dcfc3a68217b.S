@@ -26,11 +26,11 @@ func0000000000000016:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000001c:
-	andb	$1, %dl
-	movzbl	%dl, %eax
-	shll	$30, %eax
-	orq	%rsi, %rdi
-	orq	%rdi, %rax
+	movq	%rdi, %rax
+	andl	$1, %edx
+	shll	$30, %edx
+	orq	%rsi, %rax
+	orq	%rdx, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

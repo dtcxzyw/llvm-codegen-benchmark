@@ -9,9 +9,9 @@ func0000000000000027:
 	ret
 
 func0000000000000017:
-	lsr	w8, w1, #3
-	lsl	w9, w0, #3
-	orr	w0, w9, w8, lsl #11
+	lsl	w8, w1, #8
+	and	w8, w8, #0xf800
+	orr	w0, w8, w0, lsl #3
 	ret
 
 func000000000000003d:

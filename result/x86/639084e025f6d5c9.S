@@ -34,7 +34,7 @@ func0000000000000002:
 	leal	7(%rax), %ecx
 	testw	%ax, %ax
 	cmovnsl	%edi, %ecx
-	andl	$-8, %ecx
+	andl	$65528, %ecx
 	subl	%ecx, %eax
 	retq
 

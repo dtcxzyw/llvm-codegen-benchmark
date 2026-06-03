@@ -5,7 +5,7 @@ func0000000000000003:
 	testq	$-5, %rsi
 	setne	%al
 	shll	$8, %eax
-	andl	$-257, %edi
+	andl	$65279, %edi
 	orl	%edi, %eax
 	retq
 

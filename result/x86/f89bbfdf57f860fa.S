@@ -4,7 +4,7 @@ func0000000000000003:
 	testw	%dx, %dx
 	movl	$384, %eax
 	cmovnel	%edi, %eax
-	andl	$-449, %esi
+	andl	$65087, %esi
 	orl	%esi, %eax
 	retq
 

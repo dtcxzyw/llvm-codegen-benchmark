@@ -10,7 +10,8 @@ func000000000000001f:
 
 func0000000000000000:
 	orr	w8, w0, w1, lsl #3
-	and	w0, w8, #0xffffff7f
+	mov	w9, #65407
+	and	w0, w8, w9
 	ret
 
 func000000000000001e:

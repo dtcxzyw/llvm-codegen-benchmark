@@ -11,7 +11,7 @@ func0000000000000001:
 func0000000000000000:
 	leal	7(%rsi), %eax
 	andl	$-8200, %eax
-	andl	$-8192, %edi
+	andl	$57344, %edi
 	orl	%edi, %eax
 	retq
 

@@ -3,10 +3,11 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	and	w0, w0, #0xfffffff7
+	mov	w8, #247
+	and	w0, w0, w8
 	ret
 
 func0000000000000000:
-	and	w0, w0, #0xfffffffc
+	and	w0, w0, #0xfc
 	ret
 

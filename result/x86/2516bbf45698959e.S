@@ -15,8 +15,7 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	andl	$1023, %edi
-	addl	$-6, %edi
-	movzwl	%di, %eax
+	leal	-6(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -27,7 +26,7 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
-	andl	$-256, %edi
+	andl	$65280, %edi
 	addl	$-40, %edi
 	movzwl	%di, %eax
 	retq
