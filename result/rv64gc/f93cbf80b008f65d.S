@@ -7,13 +7,11 @@ func0000000000000001:
 	addi	a3, a3, -1911
 	slli	a4, a3, 32
 	add	a3, a3, a4
-	mulh	a2, a1, a2
-	add	a1, a1, a2
+	mulhsu	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 25
 	add	a1, a1, a2
-	mulh	a2, a1, a3
-	add	a2, a2, a1
+	mulhsu	a2, a1, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 5
 	add	a2, a2, a3

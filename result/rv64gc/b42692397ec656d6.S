@@ -6,8 +6,7 @@ func0000000000000009:
 	lui	a2, 4
 	addi	a2, a2, -1604
 	add	a0, a0, a2
-	mulh	a1, a0, a1
-	add	a0, a0, a1
+	mulhsu	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 21
 	add	a0, a0, a1

@@ -76,8 +76,7 @@ func000000000000004e:
 func000000000000000e:
 	lui	a3, %hi(.LCPI6_0)
 	ld	a3, %lo(.LCPI6_0)(a3)
-	mulh	a3, a2, a3
-	add	a2, a2, a3
+	mulhsu	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 7
 	add	a2, a2, a3

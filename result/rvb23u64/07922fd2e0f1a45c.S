@@ -7,8 +7,7 @@ func0000000000000001:
 	ld	a2, %lo(.LCPI0_0)(a2)
 	lui	a3, %hi(.LCPI0_1)
 	ld	a3, %lo(.LCPI0_1)(a3)
-	mulh	a2, a1, a2
-	add	a1, a1, a2
+	mulhsu	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 8
 	add	a1, a1, a2

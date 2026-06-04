@@ -116,8 +116,7 @@ func0000000000000008:
 	ld	a3, %lo(.LCPI9_0)(a3)
 	sub	a1, a1, a2
 	slli	a0, a0, 32
-	mulh	a2, a1, a3
-	add	a1, a1, a2
+	mulhsu	a1, a1, a3
 	srli	a2, a1, 63
 	srai	a1, a1, 9
 	add	a1, a1, a2

@@ -41,8 +41,7 @@ func0000000000000009:
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
 	sext.w	a1, a1
-	mulh	a2, a0, a2
-	add	a0, a0, a2
+	mulhsu	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 6
 	add	a0, a0, a2

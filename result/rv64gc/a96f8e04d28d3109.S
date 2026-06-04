@@ -21,8 +21,7 @@ func0000000000000008:
 	addi	a2, a2, 1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	mulh	a1, a0, a1
-	add	a0, a0, a1
+	mulhsu	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 9
 	add	a0, a0, a1

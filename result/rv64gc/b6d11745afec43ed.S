@@ -116,8 +116,7 @@ func0000000000000001:
 	add	a3, a3, a5
 	slli	a5, a4, 32
 	add	a4, a4, a5
-	mulh	a1, a0, a1
-	add	a0, a0, a1
+	mulhsu	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 6
 	add	a0, a0, a1

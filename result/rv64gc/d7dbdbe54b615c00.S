@@ -19,8 +19,7 @@ func0000000000000008:
 	addi	a1, a1, 1
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	mulh	a2, a0, a2
-	add	a0, a0, a2
+	mulhsu	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 9
 	add	a0, a0, a2

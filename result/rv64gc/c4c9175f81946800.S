@@ -45,8 +45,7 @@ func0000000000000015:
 	mul	a1, a1, a4
 	slli	a4, a3, 32
 	add	a3, a3, a4
-	mulh	a3, a2, a3
-	add	a2, a2, a3
+	mulhsu	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 5
 	add	a2, a2, a3

@@ -8,8 +8,7 @@ func0000000000000020:
 	addi	a2, a2, -1024
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	mulh	a1, a0, a3
-	add	a0, a0, a1
+	mulhsu	a0, a0, a3
 	srli	a1, a0, 63
 	srli	a0, a0, 25
 	add	a0, a0, a1

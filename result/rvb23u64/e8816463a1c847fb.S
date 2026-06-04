@@ -33,8 +33,7 @@ func0000000000000007:
 	addi	a2, a2, 1
 	bseti	a2, a2, 38
 	bseti	a2, a2, 63
-	mulh	a2, a1, a2
-	add	a1, a1, a2
+	mulhsu	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 25
 	addw	a1, a1, a2

@@ -88,8 +88,7 @@ func0000000000000008:
 	addi	a2, a2, -1911
 	slli	a3, a2, 32
 	add	a2, a2, a3
-	mulh	a2, a1, a2
-	add	a1, a1, a2
+	mulhsu	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 5
 	addw	a1, a1, a2

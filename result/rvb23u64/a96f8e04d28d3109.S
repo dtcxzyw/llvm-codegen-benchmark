@@ -19,8 +19,7 @@ func0000000000000008:
 	sub	a0, a0, a1
 	addi	a2, a2, 1
 	zext.w	a2, a2
-	mulh	a1, a0, a3
-	add	a0, a0, a1
+	mulhsu	a0, a0, a3
 	srli	a1, a0, 63
 	srai	a0, a0, 9
 	add	a0, a0, a1

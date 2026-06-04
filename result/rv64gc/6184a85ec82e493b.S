@@ -23,8 +23,7 @@ func0000000000000000:
 	ld	a2, %lo(.LCPI1_0)(a2)
 	sub	a1, a1, a0
 	li	a0, 24
-	mulh	a2, a1, a2
-	add	a1, a1, a2
+	mulhsu	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 9
 	add	a1, a1, a2

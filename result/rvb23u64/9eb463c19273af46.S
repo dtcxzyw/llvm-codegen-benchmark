@@ -66,8 +66,7 @@ func0000000000000025:
 	ld	a3, %lo(.LCPI4_0)(a3)
 	ld	a4, %lo(.LCPI4_1)(a4)
 	mulh	a2, a2, a3
-	mulh	a3, a1, a4
-	add	a1, a1, a3
+	mulhsu	a1, a1, a4
 	srli	a3, a2, 63
 	srai	a2, a2, 13
 	add	a2, a2, a3

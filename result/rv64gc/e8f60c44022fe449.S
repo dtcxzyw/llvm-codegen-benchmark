@@ -35,8 +35,7 @@ func0000000000000000:
 	ld	a3, %lo(.LCPI3_0)(a3)
 	sub	a1, a1, a2
 	add	a0, a0, a1
-	mulh	a1, a0, a3
-	add	a0, a0, a1
+	mulhsu	a0, a0, a3
 	srli	a1, a0, 63
 	srai	a0, a0, 6
 	add	a0, a0, a1

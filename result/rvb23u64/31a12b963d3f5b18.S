@@ -83,8 +83,7 @@ func0000000000000195:
 	addi	a2, a2, 1024
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	mulh	a1, a0, a3
-	add	a1, a1, a0
+	mulhsu	a1, a0, a3
 	srli	a2, a1, 63
 	srai	a1, a1, 25
 	add	a1, a1, a2

@@ -7,8 +7,7 @@ func0000000000000000:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	mulh	a1, a0, a3
-	add	a0, a0, a1
+	mulhsu	a0, a0, a3
 	srli	a1, a0, 63
 	srai	a0, a0, 8
 	add	a0, a0, a1

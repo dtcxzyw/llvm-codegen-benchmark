@@ -3,13 +3,11 @@ func0000000000000000:
 	addi	a1, a1, -1911
 	slli	a2, a1, 32
 	add	a1, a1, a2
-	mulh	a2, a0, a1
-	add	a0, a0, a2
+	mulhsu	a0, a0, a1
 	srli	a2, a0, 63
 	srai	a0, a0, 5
 	add	a0, a0, a2
-	mulh	a1, a0, a1
-	add	a1, a1, a0
+	mulhsu	a1, a0, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 5
 	add	a1, a1, a2

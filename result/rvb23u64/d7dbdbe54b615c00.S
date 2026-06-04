@@ -17,8 +17,7 @@ func0000000000000008:
 	ld	a2, %lo(.LCPI1_0)(a2)
 	addi	a1, a1, 1
 	zext.w	a1, a1
-	mulh	a2, a0, a2
-	add	a0, a0, a2
+	mulhsu	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 9
 	add	a0, a0, a2

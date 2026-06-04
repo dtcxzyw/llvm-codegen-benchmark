@@ -102,8 +102,7 @@ func0000000000000008:
 	lui	a2, %hi(.LCPI9_0)
 	ld	a2, %lo(.LCPI9_0)(a2)
 	zext.w	a1, a1
-	mulh	a2, a0, a2
-	add	a0, a0, a2
+	mulhsu	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 9
 	add	a0, a0, a2
@@ -211,8 +210,7 @@ func0000000000000007:
 	lui	a2, %hi(.LCPI18_0)
 	ld	a2, %lo(.LCPI18_0)(a2)
 	zext.w	a1, a1
-	mulh	a2, a0, a2
-	add	a0, a0, a2
+	mulhsu	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 7
 	add	a0, a0, a2
@@ -226,8 +224,7 @@ func000000000000004a:
 	lui	a2, %hi(.LCPI19_0)
 	ld	a2, %lo(.LCPI19_0)(a2)
 	sext.w	a1, a1
-	mulh	a2, a0, a2
-	add	a0, a0, a2
+	mulhsu	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 7
 	add	a0, a0, a2

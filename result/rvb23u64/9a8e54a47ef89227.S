@@ -9,8 +9,7 @@ func0000000000000029:
 	lui	a1, 4
 	addi	a1, a1, -1604
 	add	a0, a0, a1
-	mulh	a1, a0, a2
-	add	a0, a0, a1
+	mulhsu	a0, a0, a2
 	srli	a1, a0, 63
 	srai	a0, a0, 21
 	add	a0, a0, a1
