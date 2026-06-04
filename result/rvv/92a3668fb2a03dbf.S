@@ -10,15 +10,21 @@ func0000000000000007:
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
-	fld	fa3, %lo(.LCPI0_2)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmv.v.f	v16, fa5
+	fld	fa5, %lo(.LCPI0_2)(a0)
 	vfmacc.vf	v16, fa4, v12
-	vfmacc.vf	v16, fa3, v8
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vfncvt.rtz.x.f.w	v12, v16
-	vfwcvt.f.x.v	v8, v12
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfne.vv	v0, v16, v8
+	li	a0, 1075
+	slli	a0, a0, 52
+	vfmacc.vf	v16, fa5, v8
+	fmv.d.x	fa5, a0
+	vfabs.v	v8, v16
+	vmflt.vf	v0, v8, fa5
+	vfcvt.rtz.x.f.v	v8, v16, v0.t
+	vfcvt.f.x.v	v8, v8, v0.t
+	vmv.v.v	v12, v16
+	vsetvli	zero, zero, e64, m4, ta, mu
+	vfsgnj.vv	v12, v8, v16, v0.t
+	vmfne.vv	v0, v16, v12
 	ret
 
