@@ -1,7 +1,7 @@
 func0000000000000424:
 	andi	a1, a1, 15
-	addi	a0, a0, -7
 	addi	a1, a1, -1
+	addi	a0, a0, -7
 	snez	a0, a0
 	sltiu	a1, a1, 7
 	and	a0, a0, a1
@@ -38,8 +38,8 @@ func0000000000000434:
 
 func000000000000002a:
 	addi	a1, a1, 8
-	seqz	a0, a0
 	srliw	a1, a1, 31
+	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

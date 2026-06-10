@@ -1,17 +1,17 @@
 func000000000000001f:
+	lui	a3, 274878
+	addi	a3, a3, -381
 	slli	a2, a2, 32
+	slli	a3, a3, 32
+	mulhu	a2, a2, a3
 	li	a3, 1000
+	mul	a4, a0, a3
 	mul	a1, a1, a3
-	mulhu	a4, a0, a3
-	add	a1, a1, a4
-	lui	a4, 274878
-	addi	a4, a4, -381
-	slli	a4, a4, 32
-	mulhu	a2, a2, a4
-	srli	a2, a2, 50
-	mul	a3, a0, a3
-	add	a0, a3, a2
-	sltu	a2, a0, a3
+	mulhu	a3, a0, a3
+	srli	a0, a2, 50
+	add	a0, a0, a4
+	add	a1, a1, a3
+	sltu	a2, a0, a4
 	add	a1, a1, a2
 	ret
 

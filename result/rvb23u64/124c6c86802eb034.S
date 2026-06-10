@@ -13,10 +13,10 @@ func0000000000000001:
 	ret
 
 func000000000000000f:
+	lui	a3, 983040
 	or	a1, a1, a2
-	lui	a2, 983040
-	addi	a2, a2, 15
-	and	a1, a1, a2
+	addi	a3, a3, 15
+	and	a1, a1, a3
 	slliw	a0, a0, 4
 	or	a0, a0, a1
 	ret

@@ -15,10 +15,10 @@ func0000000000000a8c:
 	ret
 
 func0000000000001210:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v12
 	lui	a0, 524288
 	addiw	a0, a0, -1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v12
 	vmsgtu.vx	v12, v10, a0
 	vmsltu.vv	v13, v8, v10
 	vmor.mm	v0, v12, v13

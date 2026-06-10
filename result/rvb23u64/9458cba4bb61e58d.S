@@ -5,11 +5,11 @@ func000000000000022a:
 	ret
 
 func000000000000072a:
+	lui	a2, 1048560
 	sub	a0, a0, a1
-	lui	a1, 1048560
-	addi	a1, a1, 8
-	addw	a0, a0, a1
+	addi	a2, a2, 8
 	lui	a1, 16
+	addw	a0, a0, a2
 	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret

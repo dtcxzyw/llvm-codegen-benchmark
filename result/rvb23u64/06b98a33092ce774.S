@@ -29,9 +29,9 @@ func000000000000007c:
 func000000000000007f:
 	zext.h	a2, a2
 	addw	a1, a1, a2
-	lui	a2, 17
 	sh1add	a0, a1, a0
-	addi	a1, a2, -1864
+	lui	a1, 17
+	addi	a1, a1, -1864
 	add	a0, a0, a1
 	ret
 

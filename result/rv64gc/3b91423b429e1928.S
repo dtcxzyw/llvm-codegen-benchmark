@@ -10,9 +10,9 @@ func0000000000000003:
 	addi	a2, a2, -2
 	add	a1, a1, a2
 	addiw	a2, a2, 1
+	lui	a3, 1015808
 	and	a1, a1, a2
-	lui	a2, 1015808
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -20,8 +20,8 @@ func0000000000000005:
 	lui	a2, 524272
 	and	a1, a1, a2
 	lui	a2, 524280
-	slli	a0, a0, 49
 	add	a1, a1, a2
+	slli	a0, a0, 49
 	and	a1, a1, a2
 	srli	a0, a0, 49
 	or	a0, a0, a1

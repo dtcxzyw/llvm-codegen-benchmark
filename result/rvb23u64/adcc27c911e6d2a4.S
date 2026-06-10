@@ -1,7 +1,7 @@
 func00000000000007e4:
 	slli.uw	a2, a2, 5
-	slli	a1, a1, 5
 	add	a2, a2, a0
+	slli	a1, a1, 5
 	addi	a2, a2, 32
 	add	a0, a0, a1
 	sltu	a0, a2, a0
@@ -17,8 +17,8 @@ func0000000000000984:
 
 func0000000000000761:
 	sh3add.uw	a2, a2, a0
-	addi	a2, a2, 8
 	sh3add	a0, a1, a0
+	addi	a2, a2, 8
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
@@ -49,8 +49,8 @@ func0000000000000008:
 
 func00000000000007e1:
 	sh2add.uw	a2, a2, a0
-	addi	a2, a2, 4
 	sh2add	a0, a1, a0
+	addi	a2, a2, 4
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
@@ -66,8 +66,8 @@ func0000000000000fe1:
 
 func0000000000000744:
 	slli.uw	a2, a2, 4
-	slli	a1, a1, 4
 	add	a2, a2, a0
+	slli	a1, a1, 4
 	addi	a2, a2, -16
 	add	a0, a0, a1
 	sltu	a0, a2, a0

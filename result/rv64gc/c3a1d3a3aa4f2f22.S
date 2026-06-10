@@ -9,8 +9,8 @@ func0000000000000028:
 	ret
 
 func0000000000000081:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	sext.w	a1, a1
 	sltiu	a2, a2, 8
 	and	a0, a0, a2
 	seqz	a1, a1
@@ -18,8 +18,8 @@ func0000000000000081:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	sext.w	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a2
 	seqz	a1, a1

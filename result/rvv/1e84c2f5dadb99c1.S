@@ -4,8 +4,8 @@ func00000000000000c6:
 	vmslt.vx	v0, v8, a0
 	lui	a0, 524288
 	vmv.v.x	v12, a0
-	lui	a0, 603392
 	vmerge.vvm	v10, v12, v10, v0
+	lui	a0, 603392
 	vmslt.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 0, v0
 	ret

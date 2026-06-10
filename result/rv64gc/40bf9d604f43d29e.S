@@ -7,10 +7,10 @@ func0000000000000003:
 	and	a0, a0, a3
 	ret
 .LBB0_2:
-	sll	a1, a1, a2
-	not	a2, a2
+	not	a5, a2
 	srli	a0, a0, 1
-	srl	a0, a0, a2
+	sll	a1, a1, a2
+	srl	a0, a0, a5
 	or	a1, a1, a0
 	srai	a0, a4, 63
 	and	a0, a0, a3
@@ -25,10 +25,10 @@ func0000000000000000:
 	and	a0, a0, a3
 	ret
 .LBB1_2:
-	sll	a1, a1, a2
-	not	a2, a2
+	not	a5, a2
 	srli	a0, a0, 1
-	srl	a0, a0, a2
+	sll	a1, a1, a2
+	srl	a0, a0, a5
 	or	a1, a1, a0
 	srai	a0, a4, 63
 	and	a0, a0, a3
@@ -43,10 +43,10 @@ func0000000000000002:
 	and	a0, a0, a3
 	ret
 .LBB2_2:
-	sll	a1, a1, a2
-	not	a2, a2
+	not	a5, a2
 	srli	a0, a0, 1
-	srl	a0, a0, a2
+	sll	a1, a1, a2
+	srl	a0, a0, a5
 	or	a1, a1, a0
 	srai	a0, a4, 63
 	and	a0, a0, a3
@@ -61,10 +61,10 @@ func0000000000000001:
 	and	a0, a0, a3
 	ret
 .LBB3_2:
-	sll	a1, a1, a2
-	not	a2, a2
+	not	a5, a2
 	srli	a0, a0, 1
-	srl	a0, a0, a2
+	sll	a1, a1, a2
+	srl	a0, a0, a5
 	or	a1, a1, a0
 	srai	a0, a4, 63
 	and	a0, a0, a3

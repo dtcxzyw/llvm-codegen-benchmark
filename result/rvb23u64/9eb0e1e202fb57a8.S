@@ -1,14 +1,14 @@
 func0000000000000003:
-	andi	a0, a0, 1
 	lui	a1, 8
+	andi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	lui	a1, 8192
 	addi	a1, a1, 63
+	andi	a0, a0, 1
 	slli	a1, a1, 27
 	czero.eqz	a0, a1, a0
 	bseti	a1, zero, 52

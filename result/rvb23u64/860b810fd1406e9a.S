@@ -93,9 +93,9 @@ func0000000000000025:
 	ret
 
 func000000000000002a:
-	czero.eqz	a1, a1, a2
 	lui	a3, 524288
 	addiw	a3, a3, -1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	slt	a0, a0, a1

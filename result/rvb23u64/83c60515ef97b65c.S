@@ -1,7 +1,7 @@
 func000000000000008a:
-	sext.w	a1, a1
 	andi	a2, a2, 1
 	addi	a2, a2, -1
+	sext.w	a1, a1
 	ori	a2, a2, 1
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
@@ -10,8 +10,8 @@ func000000000000008a:
 	ret
 
 func0000000000000a01:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	xori	a2, a2, 3
 	sltiu	a1, a1, 128
 	addi	a2, a2, -1
@@ -23,8 +23,8 @@ func0000000000000a01:
 	ret
 
 func0000000000000221:
-	sext.w	a1, a1
 	not	a2, a2
+	sext.w	a1, a1
 	slli	a2, a2, 5
 	sltiu	a1, a1, 10
 	ori	a2, a2, -39

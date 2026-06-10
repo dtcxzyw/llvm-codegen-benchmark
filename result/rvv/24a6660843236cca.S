@@ -15,9 +15,9 @@ func0000000000000084:
 	ret
 
 func0000000000000158:
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 256
 	vmsgtu.vx	v12, v10, a0
 	vmslt.vv	v13, v8, v10
 	vmor.mm	v0, v12, v13
@@ -48,9 +48,9 @@ func0000000000000421:
 	ret
 
 func000000000000002a:
+	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 255
 	vmsgt.vx	v12, v10, a0
 	vmseq.vv	v13, v10, v8
 	vmor.mm	v0, v12, v13

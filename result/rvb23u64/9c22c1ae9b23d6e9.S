@@ -1,10 +1,10 @@
 func000000000000004c:
-	srliw	a1, a0, 31
-	lui	a2, 524288
-	addiw	a2, a2, -17
-	and	a0, a0, a2
-	addi	a0, a0, -8
-	seqz	a0, a0
+	lui	a1, 524288
+	addiw	a1, a1, -17
+	and	a1, a1, a0
+	addi	a1, a1, -8
+	srliw	a0, a0, 31
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
@@ -19,11 +19,11 @@ func0000000000000050:
 	ret
 
 func0000000000000042:
-	sext.w	a1, a0
-	andi	a0, a0, -2
-	addiw	a0, a0, -2
-	seqz	a0, a0
+	andi	a1, a0, -2
+	sext.w	a0, a0
+	addiw	a1, a1, -2
 	seqz	a1, a1
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 

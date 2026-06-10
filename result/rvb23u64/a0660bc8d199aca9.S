@@ -19,8 +19,8 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	addi	a2, a2, 63
 	lui	a3, 8
+	addi	a2, a2, 63
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	add	a1, a1, a2

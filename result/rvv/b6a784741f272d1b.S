@@ -36,9 +36,9 @@ func000000000000000a:
 func0000000000000015:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
+	vfabs.v	v8, v8
 	lui	a0, 212332
 	addi	a0, a0, -107
-	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
@@ -47,8 +47,8 @@ func0000000000000015:
 func0000000000000012:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
-	lui	a0, 212992
 	vfabs.v	v8, v8
+	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -65,9 +65,9 @@ func000000000000001d:
 func0000000000000004:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
+	vfabs.v	v8, v8
 	lui	a0, 260116
 	addi	a0, a0, 1966
-	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -118,9 +118,9 @@ func0000000000000006:
 func0000000000000005:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
+	vfabs.v	v8, v8
 	lui	a0, 264543
 	addi	a0, a0, -937
-	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12

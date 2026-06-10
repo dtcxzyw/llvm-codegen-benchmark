@@ -14,16 +14,16 @@ func0000000000000004:
 	bnez	a0, .LBB1_2
 	fmv.w.x	fa1, zero
 .LBB1_2:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 259217
 	addi	a0, a0, -37
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 
 func000000000000000b:
-	andi	a0, a0, 1
 	fmv.w.x	fa5, zero
+	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	fmv.s	fa1, fa5
 .LBB2_2:

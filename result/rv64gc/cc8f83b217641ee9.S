@@ -8,9 +8,9 @@ func00000000000001e1:
 	ret
 
 func0000000000000184:
-	addi	a1, a1, 63
 	li	a2, 1
 	slli	a2, a2, 33
+	addi	a1, a1, 63
 	addi	a2, a2, -64
 	and	a1, a1, a2
 	addi	a0, a0, 64
@@ -18,9 +18,9 @@ func0000000000000184:
 	ret
 
 func00000000000001e4:
-	addi	a1, a1, 63
 	li	a2, 1
 	slli	a2, a2, 33
+	addi	a1, a1, 63
 	addi	a2, a2, -64
 	and	a1, a1, a2
 	addi	a0, a0, 64
@@ -28,8 +28,8 @@ func00000000000001e4:
 	ret
 
 func00000000000001c1:
-	addi	a1, a1, 1
 	li	a2, -13
+	addi	a1, a1, 1
 	srli	a2, a2, 2
 	and	a1, a1, a2
 	addi	a0, a0, 4

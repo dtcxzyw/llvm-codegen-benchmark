@@ -1,9 +1,9 @@
 func000000000000003f:
 	andi	a1, a1, 7
-	lui	a2, 2
 	addw	a0, a0, a1
-	addi	a1, a2, 1171
+	lui	a1, 2
 	zext.w	a2, a0
+	addi	a1, a1, 1171
 	mul	a1, a1, a2
 	srli	a1, a1, 16
 	sub	a2, a0, a1

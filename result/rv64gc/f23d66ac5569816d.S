@@ -33,8 +33,8 @@ func0000000000000054:
 	ret
 
 func0000000000000003:
-	sext.w	a2, a2
 	li	a3, 3
+	sext.w	a2, a2
 	slli	a3, a3, 10
 	xor	a2, a2, a3
 	seqz	a2, a2
@@ -45,10 +45,10 @@ func0000000000000003:
 
 func0000000000000042:
 	sext.w	a2, a2
-	lui	a3, 256
 	snez	a2, a2
-	addi	a3, a3, -128
+	lui	a3, 256
 	addi	a2, a2, -1
+	addi	a3, a3, -128
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

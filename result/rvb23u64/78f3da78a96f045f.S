@@ -12,9 +12,9 @@ func0000000000000118:
 	ret
 
 func0000000000000028:
+	lui	a2, 804435
 	add.uw	a0, a1, a0
-	lui	a1, 804435
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	sltu	a0, a0, a1
 	ret
 

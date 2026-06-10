@@ -1,8 +1,8 @@
 func0000000000000002:
+	li	a2, 1087
+	slli	a2, a2, 52
 	fmv.d.x	fa5, a1
-	li	a1, 1087
-	slli	a1, a1, 52
-	fmv.d.x	fa4, a1
+	fmv.d.x	fa4, a2
 	flt.d	a1, fa5, fa4
 	and	a0, a0, a1
 	ret

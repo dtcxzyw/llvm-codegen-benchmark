@@ -1,9 +1,9 @@
 func0000000000000024:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmv1r.v	v16, v0
 	lui	a0, 232731
 	addi	a0, a0, 1815
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmv1r.v	v16, v0
 	vmflt.vf	v0, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
 	vmv1r.v	v0, v16
@@ -12,11 +12,11 @@ func0000000000000024:
 	ret
 
 func0000000000000022:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmv1r.v	v16, v0
 	lui	a0, 205501
 	addi	a0, a0, -905
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmv1r.v	v16, v0
 	vmflt.vf	v0, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
 	vmv1r.v	v0, v16

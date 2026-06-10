@@ -16,25 +16,25 @@ func00000000000002ac:
 
 func0000000000000226:
 	slli	a2, a2, 1
+	li	a3, 2
 	add	a0, a0, a2
-	li	a2, 2
-	sub	a2, a2, a1
-	slt	a0, a0, a2
+	sub	a3, a3, a1
+	slt	a0, a0, a3
 	ret
 
 func0000000000000286:
 	slli	a2, a2, 2
+	li	a3, 2
 	add	a0, a0, a2
-	li	a2, 2
-	sub	a2, a2, a1
-	slt	a0, a0, a2
+	sub	a3, a3, a1
+	slt	a0, a0, a3
 	ret
 
 func00000000000002a6:
 	slli	a2, a2, 1
+	li	a3, 3
 	add	a0, a0, a2
-	li	a2, 3
-	sub	a2, a2, a1
-	slt	a0, a0, a2
+	sub	a3, a3, a1
+	slt	a0, a0, a3
 	ret
 

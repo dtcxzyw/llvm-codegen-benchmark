@@ -1,6 +1,6 @@
 func000000000000000e:
-	slli	a0, a0, 1
 	lui	a1, 65536
+	slli	a0, a0, 1
 	addi	a0, a0, 63
 	srli	a0, a0, 3
 	addi	a1, a1, -8
@@ -8,8 +8,8 @@ func000000000000000e:
 	ret
 
 func000000000000001e:
-	slli	a0, a0, 1
 	lui	a1, 8
+	slli	a0, a0, 1
 	addi	a0, a0, 63
 	srli	a0, a0, 3
 	addi	a1, a1, -8
@@ -39,8 +39,8 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 13
 	lui	a1, 16
+	slli	a0, a0, 13
 	add	a0, a0, a1
 	slli	a0, a0, 40
 	srli	a0, a0, 56

@@ -33,8 +33,8 @@ func000000000000002c:
 
 func0000000000000184:
 	slli	a0, a0, 48
-	andi	a1, a1, 251
 	srli	a0, a0, 48
+	andi	a1, a1, 251
 	snez	a1, a1
 	sltiu	a0, a0, 173
 	and	a0, a0, a1
@@ -42,8 +42,8 @@ func0000000000000184:
 
 func0000000000000024:
 	slli	a0, a0, 48
-	andi	a1, a1, 5
 	srli	a0, a0, 48
+	andi	a1, a1, 5
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1

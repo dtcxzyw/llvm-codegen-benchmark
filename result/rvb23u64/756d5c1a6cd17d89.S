@@ -1,8 +1,8 @@
 func0000000000000026:
+	lui	a3, 21
 	add	a1, a1, a2
-	lui	a2, 21
+	addi	a2, a3, 384
 	srliw	a3, a1, 31
-	addi	a2, a2, 384
 	addw	a1, a1, a2
 	czero.eqz	a1, a1, a3
 	czero.nez	a0, a0, a3
@@ -10,10 +10,10 @@ func0000000000000026:
 	ret
 
 func00000000000000a6:
+	lui	a3, 21
 	add	a1, a1, a2
-	lui	a2, 21
+	addi	a2, a3, 384
 	srliw	a3, a1, 31
-	addi	a2, a2, 384
 	addw	a1, a1, a2
 	czero.eqz	a1, a1, a3
 	czero.nez	a0, a0, a3

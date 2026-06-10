@@ -12,13 +12,13 @@ func000000000000000f:
 func000000000000000b:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
+	lui	a4, %hi(.LCPI1_1)
+	ld	a4, %lo(.LCPI1_1)(a4)
 	and	a2, a2, a3
-	lui	a3, %hi(.LCPI1_1)
-	ld	a3, %lo(.LCPI1_1)(a3)
+	lui	a3, 28784
 	add	a1, a1, a2
-	lui	a2, 28784
-	addi	a2, a2, 1799
-	and	a1, a1, a3
+	addi	a2, a3, 1799
+	and	a1, a1, a4
 	slli	a3, a2, 32
 	add	a0, a0, a1
 	add	a2, a2, a3

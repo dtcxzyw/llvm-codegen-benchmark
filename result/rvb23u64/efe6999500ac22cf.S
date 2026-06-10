@@ -1,13 +1,13 @@
 func0000000000000180:
-	snez	a2, a2
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
+	snez	a1, a2
+	sh2add	a0, a1, a0
 	ret
 
 func0000000000000020:
-	seqz	a2, a2
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
+	seqz	a1, a2
+	sh2add	a0, a1, a0
 	ret
 
 func000000000000018b:
@@ -18,9 +18,9 @@ func000000000000018b:
 
 func000000000000010f:
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
 	sh3add	a0, a1, a0
-	sh3add	a0, a2, a0
+	xori	a1, a2, 1
+	sh3add	a0, a1, a0
 	ret
 
 func000000000000018f:
@@ -31,9 +31,10 @@ func000000000000018f:
 
 func0000000000000300:
 	srli	a2, a2, 11
+	slli	a1, a1, 4
 	snez	a2, a2
-	sh3add	a1, a1, a2
-	sh1add	a0, a1, a0
+	add	a0, a0, a1
+	sh1add	a0, a2, a0
 	ret
 
 func000000000000002b:
@@ -44,8 +45,8 @@ func000000000000002b:
 	ret
 
 func0000000000000028:
-	seqz	a2, a2
 	sh3add	a0, a1, a0
-	sh3add	a0, a2, a0
+	seqz	a1, a2
+	sh3add	a0, a1, a0
 	ret
 

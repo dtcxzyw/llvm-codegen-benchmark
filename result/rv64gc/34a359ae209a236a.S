@@ -8,8 +8,8 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	addi	a2, a2, -1
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	xor	a0, a0, a2
@@ -25,8 +25,8 @@ func0000000000000008:
 	ret
 
 func0000000000000009:
-	andi	a0, a0, 1
 	addi	a2, a2, -1
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sltu	a0, a0, a2
@@ -34,8 +34,8 @@ func0000000000000009:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	addi	a2, a2, -1
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	xor	a0, a0, a2

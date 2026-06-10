@@ -82,9 +82,9 @@ func00000000000000e0:
 
 func0000000000000030:
 	sh2add	a1, a1, a2
-	lui	a2, 320
 	sh2add	a0, a0, a1
-	addi	a1, a2, -932
+	lui	a1, 320
+	addi	a1, a1, -932
 	add	a0, a0, a1
 	ret
 

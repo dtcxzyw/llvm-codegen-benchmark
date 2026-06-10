@@ -1,21 +1,21 @@
 func0000000000000002:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vxor.vi	v8, v8, 7
 	vmv.v.i	v9, 1
+	vxor.vi	v8, v8, 7
 	vsll.vv	v8, v9, v8
 	ret
 
 func0000000000000001:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vxor.vi	v8, v8, 7
 	vmv.v.i	v9, -1
+	vxor.vi	v8, v8, 7
 	vsll.vv	v8, v9, v8
 	ret
 
 func0000000000000003:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vxor.vi	v8, v8, 6
 	vmv.v.i	v9, 1
+	vxor.vi	v8, v8, 6
 	vsll.vv	v8, v9, v8
 	ret
 

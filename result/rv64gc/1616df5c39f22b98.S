@@ -91,8 +91,8 @@ func0000000000000012:
 	ret
 
 func000000000000004e:
-	sext.w	a0, a0
 	lui	a2, 64
+	sext.w	a0, a0
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1

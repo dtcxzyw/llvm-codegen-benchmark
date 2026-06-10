@@ -12,9 +12,9 @@ func0000000000000c51:
 	ret
 
 func0000000000000099:
+	lui	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
-	lui	a0, 1
 	vmslt.vx	v12, v10, a0
 	vmand.mm	v0, v12, v14
 	vmv.v.i	v10, 0

@@ -26,18 +26,18 @@ func000000000000001a:
 
 func0000000000000016:
 	fmv.d.x	fa5, zero
-	flt.d	a2, fa5, fa0
-	xori	a2, a2, 1
 	or	a0, a0, a1
-	or	a0, a0, a2
+	flt.d	a1, fa5, fa0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000006:
 	fmv.d.x	fa5, zero
-	fle.d	a2, fa5, fa0
-	xori	a2, a2, 1
 	or	a0, a0, a1
-	or	a0, a0, a2
+	fle.d	a1, fa5, fa0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000008:

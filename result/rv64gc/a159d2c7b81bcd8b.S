@@ -1,8 +1,8 @@
 func000000000000001e:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	snez	a2, a2
 	addi	a2, a2, -1
+	sext.w	a1, a1
 	andi	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -10,9 +10,9 @@ func000000000000001e:
 
 func000000000000001c:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	snez	a2, a2
 	addi	a2, a2, -1
+	sext.w	a1, a1
 	andi	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -20,9 +20,9 @@ func000000000000001c:
 
 func00000000000000ae:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	slti	a2, a2, 3
 	xori	a2, a2, 1
+	sext.w	a1, a1
 	slli	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -33,16 +33,16 @@ func0000000000000080:
 	li	a3, 2
 	bltu	a3, a2, .LBB3_2
 	li	a2, 64
+	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB3_2:
 	li	a2, 21
 	slli	a2, a2, 10
+	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000010:

@@ -10,8 +10,8 @@ func00000000000000a4:
 	ret
 
 func00000000000000a8:
-	snez	a1, a1
 	sltiu	a0, a0, 100
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

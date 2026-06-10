@@ -37,8 +37,8 @@ func0000000000000318:
 
 func00000000000000a8:
 	zext.w	a2, a2
-	zext.w	a1, a1
 	sltu	a2, a2, a0
+	zext.w	a1, a1
 	xori	a2, a2, 1
 	sltu	a0, a1, a0
 	and	a0, a0, a2

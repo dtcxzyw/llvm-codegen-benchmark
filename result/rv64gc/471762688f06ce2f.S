@@ -45,8 +45,8 @@ func0000000000000050:
 	zext.b	a1, a1
 	andi	a2, a2, 1
 	li	a3, 2
-	sub	a3, a3, a2
 	sltiu	a1, a1, 224
+	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	add	a0, a0, a1

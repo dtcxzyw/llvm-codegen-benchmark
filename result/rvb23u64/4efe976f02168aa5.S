@@ -1,6 +1,6 @@
 func00000000000000c3:
-	sext.w	a0, a0
 	li	a2, 32
+	sext.w	a0, a0
 	subw	a2, a2, a1
 	czero.eqz	a0, a2, a0
 	ret

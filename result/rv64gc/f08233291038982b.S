@@ -1,9 +1,9 @@
 func000000000000042c:
+	li	a3, -1
+	srli	a3, a3, 1
 	or	a1, a1, a2
-	li	a2, -1
+	xor	a0, a0, a3
 	seqz	a1, a1
-	srli	a2, a2, 1
-	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

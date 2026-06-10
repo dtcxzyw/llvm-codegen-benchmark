@@ -62,10 +62,10 @@ func0000000000000001:
 	lui	a0, %hi(.LCPI7_0)
 	ld	a0, %lo(.LCPI7_0)(a0)
 	lui	a1, %hi(.LCPI7_1)
-	ld	a1, %lo(.LCPI7_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	vmacc.vx	v12, a1, v10
+	ld	a0, %lo(.LCPI7_1)(a1)
+	vmacc.vx	v12, a0, v10
 	vmseq.vv	v0, v12, v8
 	ret
 

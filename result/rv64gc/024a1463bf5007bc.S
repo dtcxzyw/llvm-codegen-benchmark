@@ -1,6 +1,6 @@
 func0000000000000008:
-	slli	a1, a1, 6
 	srliw	a0, a0, 6
+	slli	a1, a1, 6
 	slli	a0, a0, 6
 	add	a0, a0, a1
 	srli	a0, a0, 32
@@ -22,9 +22,9 @@ func000000000000000c:
 func00000000000001f8:
 	andi	a1, a1, 15
 	slli	a0, a0, 1
+	lui	a2, 15
 	add	a0, a0, a1
-	lui	a1, 15
-	addi	a1, a1, -1440
+	addi	a1, a2, -1440
 	sltu	a0, a1, a0
 	ret
 

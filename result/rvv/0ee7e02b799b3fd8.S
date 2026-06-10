@@ -3,8 +3,8 @@ func00000000000001a1:
 	vnsrl.wi	v10, v8, 0
 	li	a0, 2047
 	vand.vx	v8, v10, a0
-	li	a0, -1075
 	vmseq.vi	v0, v8, 0
+	li	a0, -1075
 	vadd.vx	v8, v8, a0
 	li	a0, -1074
 	vmerge.vxm	v8, v8, a0, v0

@@ -35,9 +35,9 @@ func00000000000001f8:
 	vsll.vi	v12, v12, 12
 	lui	a0, 63
 	vand.vx	v12, v12, a0
-	lui	a0, 13
 	vor.vv	v10, v12, v10
 	vor.vv	v8, v8, v10
+	lui	a0, 13
 	addi	a0, a0, 2047
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -101,9 +101,9 @@ func00000000000000f4:
 	vsll.vi	v12, v12, 18
 	lui	a0, 448
 	vand.vx	v12, v12, a0
-	li	a0, 27
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v8, v10
+	li	a0, 27
 	slli	a0, a0, 11
 	vmsltu.vx	v0, v8, a0
 	ret

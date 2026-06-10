@@ -9,10 +9,10 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
+	lui	a2, 748983
 	sub	a1, a1, a0
-	lui	a0, 748983
+	addi	a0, a2, -585
 	srli	a1, a1, 3
-	addi	a0, a0, -585
 	slli	a0, a0, 32
 	mul	a0, a0, a1
 	ret

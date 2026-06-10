@@ -78,8 +78,8 @@ func00000000000000ff:
 
 func00000000000000fc:
 	li	a3, 688
-	slli	a0, a0, 5
 	mul	a2, a2, a3
+	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 152

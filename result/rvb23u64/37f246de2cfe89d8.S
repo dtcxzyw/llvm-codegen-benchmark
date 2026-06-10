@@ -50,11 +50,11 @@ func0000000000000047:
 
 func0000000000000040:
 	zext.b	a1, a1
-	lui	a2, 253
 	sltiu	a1, a1, 6
+	lui	a2, 253
+	lui	a3, 3
 	czero.nez	a1, a2, a1
-	lui	a2, 3
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret

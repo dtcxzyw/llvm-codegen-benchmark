@@ -5,8 +5,8 @@ func0000000000000010:
 	ret
 
 func000000000000000f:
-	srli	a0, a0, 9
 	lui	a1, 8192
+	srli	a0, a0, 9
 	addi	a0, a0, 7
 	addi	a1, a1, -8
 	and	a0, a0, a1
@@ -43,8 +43,8 @@ func000000000000000d:
 	ret
 
 func0000000000000000:
-	srli	a0, a0, 16
 	lui	a1, 8
+	srli	a0, a0, 16
 	addw	a0, a0, a1
 	lui	a1, 1048560
 	and	a0, a0, a1

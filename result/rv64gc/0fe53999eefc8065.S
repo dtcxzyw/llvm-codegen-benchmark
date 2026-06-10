@@ -1,8 +1,8 @@
 func00000000000000c1:
 	sub	a1, a1, a2
 	lui	a2, 1
-	andi	a0, a0, 15
 	addi	a2, a2, -15
+	andi	a0, a0, 15
 	slt	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -29,8 +29,8 @@ func000000000000002c:
 func00000000000000ca:
 	sub	a1, a1, a2
 	andi	a0, a0, -8
-	slti	a1, a1, 1025
 	slti	a0, a0, 25
+	slti	a1, a1, 1025
 	not	a0, a0
 	and	a0, a0, a1
 	ret

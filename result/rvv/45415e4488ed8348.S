@@ -3,8 +3,8 @@ func00000000000001e1:
 	addi	a0, a0, -1365
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmulhu.vx	v12, v12, a0
-	li	a0, 3
 	vsrl.vi	v14, v12, 1
+	li	a0, 3
 	vwmulu.vx	v12, v14, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10

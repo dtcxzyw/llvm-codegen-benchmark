@@ -14,22 +14,22 @@ func0000000000000858:
 	ret
 
 func0000000000000058:
+	lui	a3, 8
+	addi	a3, a3, -1
 	or	a1, a1, a2
-	lui	a2, 8
+	xor	a0, a0, a3
 	seqz	a1, a1
-	addi	a2, a2, -1
-	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000210:
+	li	a3, 1
 	or	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 42
 	srli	a1, a1, 32
-	slli	a2, a2, 42
+	addi	a2, a3, -1024
 	snez	a1, a1
-	addi	a2, a2, -1024
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

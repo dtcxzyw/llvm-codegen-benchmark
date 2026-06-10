@@ -15,8 +15,8 @@ func000000000000003c:
 	ret
 
 func000000000000001c:
-	addiw	a1, a1, -3
 	li	a2, 88
+	addiw	a1, a1, -3
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -54,8 +54,8 @@ func000000000000003f:
 	ret
 
 func0000000000000014:
-	addiw	a1, a1, -1
 	li	a2, -48
+	addiw	a1, a1, -1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

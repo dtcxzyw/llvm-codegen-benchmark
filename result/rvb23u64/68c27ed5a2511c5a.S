@@ -9,8 +9,8 @@ func0000000000000007:
 
 func0000000000000022:
 	zext.h	a2, a2
-	lui	a3, 1047040
 	sltiu	a2, a2, 13
+	lui	a3, 1047040
 	czero.eqz	a2, a3, a2
 	lui	a3, 525824
 	add	a2, a2, a3
@@ -20,8 +20,8 @@ func0000000000000022:
 
 func0000000000000023:
 	zext.h	a2, a2
-	lui	a3, 3904
 	sltiu	a2, a2, 5
+	lui	a3, 3904
 	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -29,8 +29,8 @@ func0000000000000023:
 
 func0000000000000004:
 	zext.h	a2, a2
-	lui	a3, 32768
 	binvi	a2, a2, 14
+	lui	a3, 32768
 	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

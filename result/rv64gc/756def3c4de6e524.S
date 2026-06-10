@@ -1,7 +1,7 @@
 func0000000000000004:
+	li	a1, 94
 	zext.b	a0, a0
 	addi	a0, a0, -33
-	li	a1, 94
 	bltu	a0, a1, .LBB0_2
 	li	a0, 7
 	ret
@@ -18,9 +18,9 @@ func0000000000000024:
 	ret
 
 func0000000000000034:
+	li	a1, 2
 	zext.b	a0, a0
 	addi	a0, a0, -113
-	li	a1, 2
 	bltu	a0, a1, .LBB2_2
 	li	a0, 5
 	ret
@@ -40,9 +40,9 @@ func0000000000000038:
 	ret
 
 func0000000000000028:
+	li	a1, -2
 	zext.b	a0, a0
 	addi	a0, a0, -3
-	li	a1, -2
 	bltu	a0, a1, .LBB4_2
 	li	a0, 5
 	ret

@@ -2,8 +2,8 @@ func0000000000002608:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a0, a0, a3
-	and	a1, a1, a3
 	and	a2, a2, a3
+	and	a1, a1, a3
 	sltiu	a2, a2, 10
 	sltiu	a1, a1, 97
 	sltiu	a0, a0, 6

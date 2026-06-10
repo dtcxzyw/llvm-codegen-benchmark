@@ -5,10 +5,10 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vror.vi	v8, v8, 2
 	lui	a0, 10486
 	addi	a0, a0, -984
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vror.vi	v8, v8, 2
 	vmsgtu.vx	v0, v8, a0
 	ret
 

@@ -52,9 +52,9 @@ func0000000000000088:
 	ret
 
 func000000000000002b:
-	fli.s	fa5, 1.0
-	flt.s	a0, fa1, fa5
 	fmv.w.x	fa5, zero
+	fli.s	fa4, 1.0
+	flt.s	a0, fa1, fa4
 	flt.s	a1, fa5, fa0
 	xor	a0, a0, a1
 	xori	a0, a0, 1

@@ -1,25 +1,25 @@
 func0000000000000166:
 	fclass.s	a0, fa1
 	fli.s	fa5, inf
+	flt.s	a1, fa0, fa5
 	andi	a0, a0, 126
 	snez	a0, a0
-	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000044:
 	fabs.s	fa5, fa1
 	lui	a0, 297334
-	fmax.s	fa5, fa5, fa0
 	addi	a0, a0, 1888
+	fmax.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 
 func0000000000000055:
-	fabs.s	fa5, fa1
 	lui	a0, 219235
 	addi	a0, a0, 1981
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	fle.s	a1, fa0, fa4
@@ -28,8 +28,8 @@ func0000000000000055:
 	ret
 
 func00000000000001dd:
-	fabs.s	fa5, fa1
 	lui	a0, 212992
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	flt.s	a1, fa0, fa4
@@ -46,9 +46,9 @@ func0000000000000122:
 	ret
 
 func0000000000000155:
-	fabs.s	fa5, fa1
 	lui	a0, 219235
 	addi	a0, a0, 1981
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	fle.s	a1, fa0, fa4
@@ -59,19 +59,19 @@ func0000000000000155:
 func0000000000000099:
 	fclass.s	a0, fa1
 	fli.s	fa5, inf
-	andi	a0, a0, 897
 	flt.s	a1, fa0, fa5
 	flt.s	a2, fa5, fa0
-	snez	a0, a0
+	andi	a0, a0, 897
 	or	a1, a1, a2
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func00000000000000dd:
-	fabs.s	fa5, fa1
 	lui	a0, 191934
 	addi	a0, a0, 1791
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	flt.s	a1, fa0, fa4
@@ -82,9 +82,9 @@ func00000000000000dd:
 func0000000000000088:
 	fclass.s	a0, fa1
 	fli.s	fa5, inf
+	feq.s	a1, fa0, fa5
 	andi	a0, a0, 129
 	snez	a0, a0
-	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 

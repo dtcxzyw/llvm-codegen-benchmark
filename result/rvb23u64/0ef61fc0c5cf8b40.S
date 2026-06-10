@@ -1,8 +1,8 @@
 func0000000000000017:
 	lui	a2, 524032
+	lui	a3, 247552
 	andn	a1, a1, a2
-	lui	a2, 247552
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	lui	a1, %hi(.promoted_doubles.func0000000000000000)
 	addi	a1, a1, %lo(.promoted_doubles.func0000000000000000)
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, 8
 	add	a0, a0, a1

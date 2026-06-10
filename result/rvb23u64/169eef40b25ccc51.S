@@ -29,11 +29,11 @@ func00000000000000e8:
 	ret
 
 func00000000000001ff:
-	slli	a2, a2, 42
+	lui	a3, 24578
 	add	a0, a0, a1
-	lui	a1, 24578
+	slli	a2, a2, 42
+	bseti	a1, a3, 54
 	add	a0, a0, a2
-	bseti	a1, a1, 54
 	bseti	a1, a1, 62
 	add	a0, a0, a1
 	ret

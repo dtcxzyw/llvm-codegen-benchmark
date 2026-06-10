@@ -1,10 +1,10 @@
 func000000000000000e:
-	zext.b	a1, a0
+	lui	a1, 16656
+	zext.b	a2, a0
 	slli	a0, a0, 8
-	sub	a0, a0, a1
-	slli	a1, a0, 48
-	lui	a2, 16656
-	mulhu	a1, a1, a2
+	sub	a0, a0, a2
+	slli	a2, a0, 48
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	sub	a0, a0, a1
 	slli	a0, a0, 48
@@ -14,10 +14,10 @@ func000000000000000e:
 	ret
 
 func0000000000000004:
-	zext.b	a1, a0
-	slli	a0, a0, 8
-	sub	a0, a0, a1
 	lui	a1, 1
+	zext.b	a2, a0
+	slli	a0, a0, 8
+	sub	a0, a0, a2
 	slli	a0, a0, 48
 	srli	a0, a0, 50
 	addi	a1, a1, 1147

@@ -6,10 +6,10 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
-	sext.w	a2, a0
-	li	a3, 7
+	li	a2, 7
+	sext.w	a3, a0
 	mv	a0, a1
-	bgeu	a2, a3, .LBB1_2
+	bgeu	a3, a2, .LBB1_2
 	li	a0, 1
 .LBB1_2:
 	ret

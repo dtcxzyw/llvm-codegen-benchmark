@@ -2,12 +2,12 @@ func000000000000048c:
 	andi	a0, a0, 1
 	lui	a2, 1048573
 	addi	a0, a0, -1
+	addi	a2, a2, 384
 	or	a0, a0, a1
 	lui	a1, 3
-	addi	a2, a2, 384
-	addi	a1, a1, 63
 	add	a2, a2, a0
 	sext.w	a0, a0
+	addi	a1, a1, 63
 	srliw	a2, a2, 4
 	xor	a0, a0, a1
 	sltiu	a1, a2, 1893
@@ -17,15 +17,15 @@ func000000000000048c:
 
 func000000000000008c:
 	slli	a0, a0, 63
-	lui	a2, 1032192
 	srai	a0, a0, 63
-	addi	a3, a2, -1
-	addi	a2, a2, 511
+	lui	a2, 1032192
 	and	a0, a0, a1
-	sext.w	a1, a0
-	addw	a0, a0, a3
-	snez	a1, a1
-	sltu	a0, a0, a2
-	and	a0, a0, a1
+	addi	a1, a2, -1
+	sext.w	a3, a0
+	addw	a0, a0, a1
+	addi	a1, a2, 511
+	snez	a2, a3
+	sltu	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

@@ -21,51 +21,51 @@ func0000000000000064:
 	ret
 
 func0000000000000061:
-	zext.w	a1, a1
 	li	a2, 376
+	zext.w	a1, a1
 	mul	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func00000000000000e6:
-	sext.w	a1, a1
 	lui	a2, 244
+	sext.w	a1, a1
 	addi	a2, a2, 576
 	mul	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 
 func0000000000000008:
-	zext.w	a1, a1
 	lui	a2, 4841
 	addi	a2, a2, -611
+	zext.w	a1, a1
 	slli	a2, a2, 11
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
 func000000000000006a:
-	zext.w	a1, a1
 	lui	a2, 21
+	zext.w	a1, a1
 	addi	a2, a2, 384
 	mul	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 
 func0000000000000068:
-	zext.w	a1, a1
 	lui	a2, 1318
+	zext.w	a1, a1
 	addi	a2, a2, 1472
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a1
 	lui	a2, 4112
 	addi	a2, a2, 257
 	slli	a3, a2, 32
+	sext.w	a1, a1
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	xor	a0, a0, a1
@@ -73,16 +73,16 @@ func00000000000000c1:
 	ret
 
 func0000000000000079:
-	zext.w	a1, a1
 	li	a2, 1000
+	zext.w	a1, a1
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000075:
-	zext.w	a1, a1
 	li	a2, 1000
+	zext.w	a1, a1
 	mul	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

@@ -1,8 +1,8 @@
 func0000000000000000:
 	slli	a3, a2, 2
+	lui	a4, 943431
 	add	a2, a2, a3
-	lui	a3, 943431
-	addi	a3, a3, -1180
+	addi	a3, a4, -1180
 	add	a2, a2, a3
 	lui	a3, 548541
 	xor	a1, a1, a2

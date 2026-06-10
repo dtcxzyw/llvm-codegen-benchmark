@@ -15,8 +15,8 @@ func0000000000000001:
 	ret
 
 func000000000000008a:
-	srli	a1, a1, 4
 	lui	a2, 81
+	srli	a1, a1, 4
 	sext.w	a1, a1
 	addi	a2, a2, 1556
 	bge	a2, a1, .LBB2_2

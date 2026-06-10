@@ -1,10 +1,10 @@
 func0000000000000001:
 	slli	a1, a1, 56
-	lui	a2, 599186
 	srai	a1, a1, 56
-	addi	a2, a2, 1171
+	lui	a2, 599186
 	addw	a0, a0, a1
-	mul	a1, a0, a2
+	addi	a1, a2, 1171
+	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
 	srliw	a2, a1, 31
@@ -17,11 +17,11 @@ func0000000000000001:
 
 func0000000000000000:
 	slli	a1, a1, 56
-	lui	a2, 174763
 	srai	a1, a1, 56
-	addi	a2, a2, -1365
+	lui	a2, 174763
 	addw	a0, a0, a1
-	mul	a1, a0, a2
+	addi	a1, a2, -1365
+	mul	a1, a0, a1
 	srli	a2, a1, 63
 	srli	a1, a1, 32
 	add	a1, a1, a2

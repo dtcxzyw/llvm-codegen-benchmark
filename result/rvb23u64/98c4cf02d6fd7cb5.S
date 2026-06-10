@@ -15,21 +15,21 @@ func0000000000000030:
 func0000000000000035:
 	slli	a1, a1, 56
 	lui	a2, 625
+	li	a3, -250
 	mulhu	a1, a1, a2
-	li	a2, -250
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 56
 	lui	a2, 91494
+	slli	a1, a1, 56
 	addi	a2, a2, 1969
+	lui	a3, 163151
 	slli	a2, a2, 8
+	addi	a3, a3, -1233
 	mulhu	a1, a1, a2
-	lui	a2, 163151
-	addi	a2, a2, -1233
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

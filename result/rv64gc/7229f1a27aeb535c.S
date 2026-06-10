@@ -31,21 +31,21 @@ func00000000000000c4:
 	ret
 
 func0000000000000022:
-	andi	a1, a0, 1
-	lui	a0, 260096
-	addi	a2, a0, -1
+	lui	a1, 260096
+	addi	a2, a1, -1
 	fmv.w.x	fa5, a2
 	fmin.s	fa5, fa0, fa5
-	bnez	a1, .LBB2_2
-	fmv.w.x	fa1, a0
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
+	fmv.w.x	fa1, a1
 .LBB2_2:
 	flt.s	a0, fa5, fa1
 	ret
 
 func0000000000000042:
-	andi	a0, a0, 1
 	fmv.w.x	fa4, zero
 	fmax.s	fa5, fa0, fa4
+	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	fmv.s	fa1, fa4
 .LBB3_2:

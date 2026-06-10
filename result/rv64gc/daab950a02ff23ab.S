@@ -7,8 +7,8 @@ func000000000000000f:
 	ret
 
 func000000000000001f:
-	zext.b	a2, a2
 	slli	a1, a1, 48
+	zext.b	a2, a2
 	srli	a1, a1, 48
 	mul	a1, a1, a2
 	addw	a0, a0, a1
@@ -23,16 +23,16 @@ func000000000000002f:
 	ret
 
 func000000000000000d:
-	zext.b	a2, a2
 	slli	a1, a1, 48
+	zext.b	a2, a2
 	srli	a1, a1, 48
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000000c:
-	zext.b	a2, a2
 	slli	a1, a1, 48
+	zext.b	a2, a2
 	srli	a1, a1, 48
 	mul	a1, a1, a2
 	addw	a0, a0, a1

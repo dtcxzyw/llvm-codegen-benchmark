@@ -1,9 +1,9 @@
 func0000000000000003:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v12, v8, fa5
-	vmnot.m	v0, v12
+	vmfge.vf	v16, v8, fa5
 	vfneg.v	v12, v8
+	vmnot.m	v0, v16
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 
@@ -34,9 +34,9 @@ func000000000000000c:
 func000000000000000d:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v12, v8, fa5
-	vmnot.m	v0, v12
+	vmflt.vf	v16, v8, fa5
 	vfneg.v	v12, v8
+	vmnot.m	v0, v16
 	vmerge.vvm	v8, v12, v8, v0
 	ret
 

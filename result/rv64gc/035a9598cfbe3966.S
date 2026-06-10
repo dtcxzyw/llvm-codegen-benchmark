@@ -29,14 +29,14 @@ func0000000000000066:
 	ret
 
 func0000000000000188:
-	fclass.d	a0, fa1
+	li	a0, 1023
 	fabs.d	fa5, fa0
-	li	a1, 1023
-	andi	a0, a0, 129
-	slli	a1, a1, 52
-	snez	a0, a0
-	fmv.d.x	fa4, a1
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
+	fclass.d	a0, fa1
 	feq.d	a1, fa5, fa4
+	andi	a0, a0, 129
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -44,23 +44,23 @@ func0000000000000188:
 	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000022:
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
-	fabs.d	fa4, fa1
+	fabs.d	fa5, fa1
+	fld	fa4, %lo(.LCPI4_0)(a0)
 	fabs.d	fa3, fa0
-	flt.d	a0, fa4, fa5
-	flt.d	a1, fa3, fa5
+	flt.d	a0, fa5, fa4
+	flt.d	a1, fa3, fa4
 	and	a0, a0, a1
 	ret
 
 func0000000000000098:
-	fclass.d	a0, fa1
+	li	a0, 1023
 	fabs.d	fa5, fa0
-	li	a1, 1023
-	andi	a0, a0, 897
-	slli	a1, a1, 52
-	snez	a0, a0
-	fmv.d.x	fa4, a1
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
+	fclass.d	a0, fa1
 	feq.d	a1, fa5, fa4
+	andi	a0, a0, 897
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

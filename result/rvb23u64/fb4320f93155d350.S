@@ -31,8 +31,8 @@ func000000000000002c:
 
 func0000000000000101:
 	sext.w	a2, a2
-	seqz	a1, a1
 	sltiu	a2, a2, 257
+	seqz	a1, a1
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -48,8 +48,8 @@ func000000000000018c:
 
 func000000000000014c:
 	sext.w	a2, a2
-	snez	a1, a1
 	slti	a2, a2, 2
+	snez	a1, a1
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -1,6 +1,6 @@
 func00000000000000aa:
-	sext.w	a2, a0
 	addi	a1, a1, -48
+	sext.w	a2, a0
 	mulw	a0, a1, a0
 	sgtz	a1, a2
 	neg	a1, a1

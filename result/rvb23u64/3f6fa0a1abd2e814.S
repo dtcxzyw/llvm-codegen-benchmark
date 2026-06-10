@@ -64,18 +64,18 @@ func000000000000002c:
 func000000000000003f:
 	addi	a1, a1, -20
 	srliw	a1, a1, 2
+	lui	a2, 256
 	add	a0, a0, a1
-	lui	a1, 256
-	addi	a1, a1, -5
-	addw	a0, a0, a1
+	addi	a2, a2, -5
+	addw	a0, a0, a2
 	ret
 
 func0000000000000065:
 	addi	a1, a1, 128
 	srliw	a1, a1, 13
+	lui	a2, 1048575
 	add	a0, a0, a1
-	lui	a1, 1048575
-	addi	a1, a1, -98
+	addi	a1, a2, -98
 	addw	a0, a0, a1
 	ret
 

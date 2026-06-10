@@ -11,10 +11,10 @@ func000000000000002a:
 	ret
 
 func0000000000000029:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, 0
 	li	a0, 30
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vmsgt.vi	v0, v10, 0
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v8, v10
 	ret

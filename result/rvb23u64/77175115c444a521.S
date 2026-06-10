@@ -1,11 +1,11 @@
 func0000000000000000:
 	lui	a0, 783019
 	addi	a0, a0, -1365
+	lui	a1, 257814
 	fmv.w.x	fa5, a0
-	lui	a0, 257814
-	addi	a0, a0, -1041
-	fmul.s	fa5, fa2, fa5
+	addi	a0, a1, -1041
 	fmv.w.x	fa4, a0
+	fmul.s	fa5, fa2, fa5
 	lui	a0, 780971
 	addi	a0, a0, -1365
 	fmul.s	fa4, fa1, fa4

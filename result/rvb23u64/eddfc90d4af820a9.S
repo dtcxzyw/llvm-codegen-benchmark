@@ -2,8 +2,8 @@ func000000000000000b:
 	sh1add	a2, a1, a1
 	sh1add	a1, a2, a1
 	lui	a2, 748983
-	addi	a2, a2, -585
 	slli	a1, a1, 3
+	addi	a2, a2, -585
 	sub	a1, a1, a0
 	slli	a0, a2, 33
 	srli	a1, a1, 3
@@ -15,8 +15,8 @@ func000000000000000b:
 	.quad	-2912643801112034465
 func0000000000000000:
 	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
 	sh3add	a3, a1, a1
+	ld	a2, %lo(.LCPI1_0)(a2)
 	sh1add	a1, a3, a1
 	sub	a1, a1, a0
 	mulhu	a0, a1, a2

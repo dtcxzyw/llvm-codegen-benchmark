@@ -13,8 +13,8 @@ func0000000000000108:
 
 func0000000000000042:
 	sub	a1, a1, a2
-	addi	a0, a0, 1
 	addi	a1, a1, 1
+	addi	a0, a0, 1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -23,9 +23,9 @@ func0000000000000042:
 func0000000000000114:
 	sub	a1, a1, a2
 	lui	a2, 1
+	lui	a3, 1048575
 	slt	a1, a2, a1
-	lui	a2, 1048575
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -94,8 +94,8 @@ func0000000000000194:
 
 func0000000000000058:
 	sub	a1, a1, a2
-	addi	a0, a0, 1
 	addi	a1, a1, -112
+	addi	a0, a0, 1
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

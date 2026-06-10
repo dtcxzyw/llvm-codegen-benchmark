@@ -1,8 +1,8 @@
 func000000000000000d:
 	andi	a1, a1, 31
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, -974
+	addi	a1, a2, -974
 	addw	a0, a0, a1
 	ret
 
@@ -46,10 +46,10 @@ func0000000000000000:
 
 func000000000000000a:
 	bclri	a1, a1, 31
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -1
-	addw	a0, a0, a1
+	addi	a2, a2, -1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000008:

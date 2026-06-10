@@ -14,15 +14,15 @@ func0000000000000010:
 	ret
 
 func0000000000000098:
-	sext.w	a2, a2
 	sh3add	a0, a0, a1
+	sext.w	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, -8
 	ret
 
 func0000000000000018:
-	sext.w	a2, a2
 	sh3add	a0, a0, a1
+	sext.w	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, -8
 	ret

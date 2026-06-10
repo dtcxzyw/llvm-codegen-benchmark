@@ -4,8 +4,8 @@ func00000000000000a6:
 	fmv.w.x	fa5, zero
 	vmfge.vf	v8, v16, fa5
 	fli.s	fa5, 1.0
-	vmnot.m	v8, v8
 	vmfle.vf	v9, v16, fa5
+	vmnot.m	v8, v8
 	vmorn.mm	v0, v8, v9
 	ret
 
@@ -15,8 +15,8 @@ func00000000000000b6:
 	fmv.w.x	fa5, zero
 	vmfgt.vf	v8, v16, fa5
 	fli.s	fa5, 0.5
-	vmnot.m	v8, v8
 	vmfle.vf	v9, v16, fa5
+	vmnot.m	v8, v8
 	vmorn.mm	v0, v8, v9
 	ret
 
@@ -46,8 +46,8 @@ func000000000000007a:
 	fli.s	fa5, 2.0
 	vmflt.vf	v8, v16, fa5
 	fli.s	fa5, 1.0
-	vmnot.m	v8, v8
 	vmfge.vf	v9, v16, fa5
+	vmnot.m	v8, v8
 	vmorn.mm	v0, v8, v9
 	ret
 

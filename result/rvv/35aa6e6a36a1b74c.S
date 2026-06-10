@@ -9,12 +9,12 @@ func0000000000000024:
 
 func0000000000000025:
 	fmv.d.x	fa5, zero
-	li	a0, 997
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v16, fa5
-	slli	a0, a0, 52
 	vmerge.vim	v16, v16, 0, v0
 	vfmul.vv	v8, v8, v16
+	li	a0, 997
+	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
@@ -22,9 +22,9 @@ func0000000000000025:
 
 func0000000000000021:
 	fmv.d.x	fa5, zero
-	lui	a0, 66109
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v16, fa5
+	lui	a0, 66109
 	slli	a0, a0, 34
 	vmerge.vxm	v16, v16, a0, v0
 	vfmul.vv	v8, v16, v8

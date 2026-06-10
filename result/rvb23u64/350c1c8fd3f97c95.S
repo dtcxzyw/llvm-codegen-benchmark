@@ -31,17 +31,17 @@ func0000000000000308:
 	ret
 
 func0000000000000118:
-	sltu	a2, a0, a2
-	xor	a0, a0, a1
-	snez	a0, a0
-	or	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a0, a2
+	snez	a1, a1
+	or	a0, a0, a1
 	ret
 
 func000000000000018e:
-	slt	a2, a0, a2
-	slt	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	slt	a1, a1, a0
+	slt	a0, a0, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000248:
@@ -87,17 +87,17 @@ func0000000000000252:
 	ret
 
 func000000000000028e:
-	slt	a2, a2, a0
-	slt	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	slt	a1, a1, a0
+	slt	a0, a2, a0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000102:
-	sltu	a2, a0, a2
-	xor	a0, a0, a1
-	seqz	a0, a0
-	or	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a0, a2
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 
 func000000000000028c:
@@ -137,17 +137,17 @@ func00000000000002c2:
 	ret
 
 func000000000000020a:
-	sltu	a2, a2, a0
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a1, a1, a0
+	sltu	a0, a2, a0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000196:
-	slt	a2, a0, a2
-	slt	a0, a0, a1
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	slt	a1, a0, a1
+	slt	a0, a0, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func00000000000001d4:
@@ -181,10 +181,10 @@ func0000000000000302:
 	ret
 
 func000000000000012a:
-	sltu	a2, a0, a2
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a1, a1, a0
+	sltu	a0, a0, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000630:
@@ -205,10 +205,10 @@ func0000000000000050:
 	ret
 
 func0000000000000202:
-	sltu	a2, a2, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	or	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a2, a0
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 
 func00000000000002a8:
@@ -232,9 +232,9 @@ func00000000000002cc:
 	ret
 
 func0000000000000112:
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 

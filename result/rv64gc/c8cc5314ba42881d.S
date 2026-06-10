@@ -1,7 +1,7 @@
 func000000000000000f:
+	li	a2, 16
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 16
 	beq	a1, a2, .LBB0_2
 	li	a1, 8
 	add	a0, a0, a1

@@ -1,8 +1,8 @@
 func0000000000000021:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v9, v9, 0
 	li	a0, -256
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v8, v8, a0
+	vmseq.vi	v9, v9, 0
 	lui	a0, 32
 	addi	a0, a0, -1792
 	vmseq.vx	v8, v8, a0

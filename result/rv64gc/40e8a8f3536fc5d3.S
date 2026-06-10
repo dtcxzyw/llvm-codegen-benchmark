@@ -34,9 +34,9 @@ func000000000000002c:
 	ret
 
 func0000000000000024:
-	srliw	a2, a1, 10
-	li	a3, 55
-	beq	a2, a3, .LBB3_2
+	li	a2, 55
+	srliw	a3, a1, 10
+	beq	a3, a2, .LBB3_2
 	mv	a0, a1
 .LBB3_2:
 	sext.w	a0, a0
@@ -44,10 +44,10 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	andi	a2, a1, -9
-	sext.w	a2, a2
-	li	a3, 258
-	beq	a2, a3, .LBB4_2
+	li	a2, 258
+	andi	a3, a1, -9
+	sext.w	a3, a3
+	beq	a3, a2, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
 	sext.w	a0, a0

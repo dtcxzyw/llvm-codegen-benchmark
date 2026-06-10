@@ -1,7 +1,7 @@
 func00000000000002c2:
 	lui	a3, 64
-	slt	a0, a0, a1
 	and	a2, a2, a3
+	slt	a0, a0, a1
 	seqz	a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

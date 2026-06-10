@@ -10,8 +10,8 @@ func0000000000000008:
 
 func0000000000000002:
 	fli.s	fa5, 1.0
-	lui	a0, 242237
 	fsub.s	fa5, fa5, fa1
+	lui	a0, 242237
 	addi	a0, a0, 1802
 	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0

@@ -1,7 +1,7 @@
 func0000000000000001:
+	li	a0, 16
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 16
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v9, v9, 0
 	vsrl.vi	v9, v9, 1

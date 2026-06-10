@@ -8,12 +8,12 @@ func0000000000000028:
 	ret
 
 func0000000000000068:
-	sext.w	a1, a0
-	srliw	a0, a0, 1
-	addiw	a0, a0, 3
-	sltiu	a1, a1, 2
-	addi	a0, a0, -1
-	czero.nez	a0, a0, a1
+	srliw	a1, a0, 1
+	sext.w	a0, a0
+	addiw	a1, a1, 3
+	sltiu	a0, a0, 2
+	addi	a1, a1, -1
+	czero.nez	a0, a1, a0
 	addi	a0, a0, 1
 	ret
 

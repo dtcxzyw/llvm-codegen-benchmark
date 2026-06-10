@@ -13,8 +13,8 @@ func0000000000000000:
 	ret
 
 func0000000000000009:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	max	a0, a0, zero
 	addw	a0, a0, a1
 	ret

@@ -7,12 +7,12 @@ func0000000000000002:
 
 func000000000000003c:
 	lui	a3, 1048561
-	slli	a1, a1, 2
 	add	a2, a2, a3
+	slli	a1, a1, 2
+	srliw	a2, a2, 5
 	add	a0, a0, a1
-	srliw	a1, a2, 5
-	slli	a1, a1, 7
-	add	a0, a0, a1
+	slli	a2, a2, 7
+	add	a0, a0, a2
 	ret
 
 func0000000000000032:

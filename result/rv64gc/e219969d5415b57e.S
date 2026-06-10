@@ -5,8 +5,8 @@ func0000000000000026:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	lui	a1, 8192
+	sext.w	a0, a0
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	neg	a0, a0

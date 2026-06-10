@@ -1,8 +1,8 @@
 func0000000000000244:
 	srliw	a3, a2, 16
-	andi	a0, a0, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 3
 	sllw	a0, a1, a0
@@ -12,9 +12,9 @@ func0000000000000244:
 
 func0000000000000246:
 	srliw	a3, a2, 28
-	andi	a0, a0, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 1
 	sllw	a0, a1, a0
@@ -23,9 +23,9 @@ func0000000000000246:
 
 func000000000000024a:
 	srliw	a3, a2, 28
-	andi	a0, a0, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 1
 	sllw	a0, a1, a0

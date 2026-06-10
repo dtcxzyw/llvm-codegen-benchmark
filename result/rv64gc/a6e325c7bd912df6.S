@@ -15,13 +15,13 @@ func000000000000004f:
 	li	a3, 2
 	bltu	a2, a3, .LBB1_2
 	li	a2, 1
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB1_2:
 	li	a2, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func000000000000001f:
@@ -73,12 +73,12 @@ func000000000000001c:
 	zext.b	a2, a2
 	beqz	a2, .LBB6_2
 	li	a2, 1
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB6_2:
 	li	a2, 4
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 

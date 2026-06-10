@@ -15,8 +15,8 @@ func0000000000000318:
 	ret
 
 func0000000000000058:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -48
 	seqz	a1, a1
 	snez	a0, a0

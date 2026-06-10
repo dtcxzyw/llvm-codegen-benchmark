@@ -1,9 +1,10 @@
 func000000000000000a:
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v8, v8, 24
 	li	a0, 32
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsll.vi	v8, v8, 24
 	vor.vv	v8, v8, v12
 	ret
 

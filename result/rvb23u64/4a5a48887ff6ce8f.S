@@ -22,8 +22,8 @@ func000000000000000f:
 	ret
 
 func0000000000000013:
-	andi	a1, a1, -8
 	sext.w	a0, a0
+	andi	a1, a1, -8
 	slli	a0, a0, 5
 	add	a0, a0, a1
 	addi	a0, a0, 8

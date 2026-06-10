@@ -101,15 +101,14 @@ func000000000000002a:
 	sgtz	a0, a0
 	ret
 
+.LCPI15_0:
+	.quad	10000000000000000
 func0000000000000044:
+	lui	a2, %hi(.LCPI15_0)
+	ld	a2, %lo(.LCPI15_0)(a2)
 	andi	a1, a1, 1
 	add	a0, a0, a1
-	lui	a1, 9095
-	addi	a1, a1, -217
-	slli	a1, a1, 12
-	addi	a1, a1, -63
-	slli	a1, a1, 16
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
 func000000000000006c:
@@ -119,12 +118,12 @@ func000000000000006c:
 	ret
 
 func0000000000000068:
+	li	a2, 1
 	andi	a1, a1, 1
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	sltu	a0, a1, a0
+	addi	a2, a2, -2
+	sltu	a0, a2, a0
 	ret
 
 func000000000000002c:

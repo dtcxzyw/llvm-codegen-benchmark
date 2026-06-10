@@ -54,8 +54,8 @@ func0000000000000003:
 func000000000000001c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	lui	a0, 1024
 	vsrl.vi	v8, v8, 10
+	lui	a0, 1024
 	addi	a0, a0, -4
 	vadd.vx	v8, v8, a0
 	ret

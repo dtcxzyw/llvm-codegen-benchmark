@@ -6,9 +6,9 @@ func0000000000000054:
 	ret
 
 func0000000000000056:
+	li	a3, -4
 	sh2add	a0, a1, a0
-	li	a1, -4
-	andn	a1, a1, a2
+	andn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 

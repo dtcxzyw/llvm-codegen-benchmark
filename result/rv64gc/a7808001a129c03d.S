@@ -6,8 +6,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	not	a1, a1
 	lui	a2, 1048524
+	not	a1, a1
 	addi	a2, a2, -896
 	or	a1, a1, a2
 	and	a0, a0, a1

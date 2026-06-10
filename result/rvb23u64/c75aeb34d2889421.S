@@ -17,8 +17,8 @@ func000000000000018c:
 func0000000000000181:
 	and	a1, a1, a2
 	andi	a0, a0, 248
-	sext.w	a1, a1
 	addi	a0, a0, -32
+	sext.w	a1, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret

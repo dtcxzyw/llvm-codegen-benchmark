@@ -28,18 +28,18 @@ func00000000000000f8:
 	ret
 
 func000000000000002a:
-	zext.w	a1, a1
 	lui	a2, 477
 	addi	a2, a2, -667
+	zext.w	a1, a1
 	slli	a2, a2, 11
 	sub	a2, a2, a1
 	slt	a0, a0, a2
 	ret
 
 func0000000000000027:
-	zext.w	a1, a1
 	lui	a2, 477
 	addi	a2, a2, -667
+	zext.w	a1, a1
 	slli	a2, a2, 11
 	sub	a2, a2, a1
 	slt	a0, a0, a2
@@ -61,8 +61,8 @@ func00000000000000ea:
 	ret
 
 func0000000000000066:
-	zext.w	a1, a1
 	li	a2, -129
+	zext.w	a1, a1
 	srli	a2, a2, 1
 	sub	a2, a2, a1
 	slt	a0, a2, a0

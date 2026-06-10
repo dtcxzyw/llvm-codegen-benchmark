@@ -19,10 +19,10 @@ func00000000000000a8:
 
 func00000000000000a4:
 	slli	a1, a1, 32
+	li	a2, -11
 	or	a0, a0, a1
-	li	a1, -11
-	zext.w	a1, a1
-	sltu	a0, a0, a1
+	zext.w	a2, a2
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000081:
@@ -53,17 +53,17 @@ func00000000000000ac:
 
 func00000000000000f4:
 	slli.uw	a1, a1, 29
+	lui	a2, 244141
 	or	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	sltu	a0, a0, a1
 	ret
 
 func00000000000000d4:
 	slli.uw	a1, a1, 29
+	lui	a2, 244141
 	or	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	sltu	a0, a0, a1
 	ret
 

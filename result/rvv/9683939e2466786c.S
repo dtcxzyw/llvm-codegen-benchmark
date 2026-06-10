@@ -1,8 +1,8 @@
 func0000000000000049:
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmv1r.v	v10, v8
 	li	a0, 26
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsltu.vx	v0, v9, a0
+	vmv1r.v	v10, v8
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vor.vx	v10, v8, a0, v0.t
@@ -11,10 +11,10 @@ func0000000000000049:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmv1r.v	v10, v8
 	li	a0, 26
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsltu.vx	v0, v9, a0
+	vmv1r.v	v10, v8
 	lui	a0, 131072
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vor.vx	v10, v8, a0, v0.t
@@ -23,10 +23,10 @@ func0000000000000008:
 	ret
 
 func0000000000000009:
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmv1r.v	v10, v8
 	li	a0, 26
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsltu.vx	v0, v9, a0
+	vmv1r.v	v10, v8
 	lui	a0, 512
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vor.vx	v10, v8, a0, v0.t

@@ -23,8 +23,8 @@ func000000000000003f:
 	ret
 
 func00000000000001ff:
-	slliw	a2, a2, 9
 	slli	a1, a1, 9
+	slliw	a2, a2, 9
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

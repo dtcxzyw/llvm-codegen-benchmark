@@ -7,8 +7,8 @@ func000000000000000c:
 
 func0000000000000008:
 	sext.w	a1, a1
-	or	a0, a0, a2
 	sltiu	a1, a1, 256
+	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

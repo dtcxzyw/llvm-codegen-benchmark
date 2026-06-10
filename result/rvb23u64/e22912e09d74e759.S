@@ -1,6 +1,6 @@
 func000000000000000e:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 231424
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	fmul.s	fa5, fa5, fa4
 	fli.s	fa4, 1.0

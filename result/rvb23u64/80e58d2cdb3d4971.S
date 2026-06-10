@@ -15,8 +15,8 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 64
 	li	a1, 1024
+	andi	a0, a0, 64
 	czero.eqz	a0, a1, a0
 	bseti	a0, a0, 18
 	ret

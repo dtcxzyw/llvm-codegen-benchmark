@@ -63,19 +63,19 @@ func0000000000000084:
 func0000000000000104:
 	lui	a2, 16
 	addi	a2, a2, -1
+	lui	a3, 8
 	and	a0, a0, a2
 	and	a1, a1, a2
-	lui	a2, 8
-	sltu	a1, a2, a1
-	addi	a2, a2, 1
+	addi	a2, a3, 1
+	sltu	a1, a3, a1
 	sltu	a0, a0, a2
 	xor	a0, a0, a1
 	ret
 
 func0000000000000088:
 	lui	a2, 16
-	lui	a3, 8
 	addi	a2, a2, -1
+	lui	a3, 8
 	and	a0, a0, a2
 	and	a1, a1, a2
 	addi	a2, a3, 1

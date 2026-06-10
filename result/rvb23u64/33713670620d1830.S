@@ -25,8 +25,8 @@ func000000000000002c:
 	ret
 
 func0000000000000101:
-	andi	a0, a0, 1
 	lui	a2, 524288
+	andi	a0, a0, 1
 	addi	a2, a2, 1
 	czero.eqz	a0, a2, a0
 	addw	a0, a0, a1
@@ -65,8 +65,8 @@ func00000000000000aa:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 1
 	lui	a2, 976563
+	andi	a0, a0, 1
 	addi	a2, a2, -2048
 	czero.eqz	a0, a2, a0
 	lui	a2, 976562

@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	or	a2, a2, a1
+	andi	a0, a0, 1
 	ori	a2, a2, 2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -8,9 +8,9 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	or	a2, a2, a1
 	lui	a3, 524288
+	andi	a0, a0, 1
 	or	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

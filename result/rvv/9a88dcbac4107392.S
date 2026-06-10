@@ -1,7 +1,7 @@
 func00000000000000c6:
+	li	a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v8, v10
-	li	a0, 33
 	vmslt.vx	v12, v10, a0
 	vmsle.vi	v10, v8, 8
 	vmand.mm	v0, v10, v12
@@ -16,9 +16,9 @@ func00000000000000ca:
 	ret
 
 func000000000000010c:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v8, v10
-	li	a0, 16
 	vmsgtu.vi	v12, v10, 11
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
@@ -69,10 +69,10 @@ func000000000000002c:
 	ret
 
 func00000000000004c6:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v8
 	lui	a0, 16
 	addi	a1, a0, 1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vv	v10, v10, v8
 	vmslt.vx	v12, v10, a1
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12

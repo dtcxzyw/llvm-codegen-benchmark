@@ -1,6 +1,6 @@
 func000000000000002d:
-	addi	a0, a0, -1
 	li	a1, 205
+	addi	a0, a0, -1
 	sraiw	a2, a0, 31
 	xor	a0, a0, a2
 	subw	a0, a0, a2

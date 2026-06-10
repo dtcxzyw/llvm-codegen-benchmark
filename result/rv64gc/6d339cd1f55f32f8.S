@@ -16,8 +16,8 @@ func000000000000002c:
 
 func0000000000000024:
 	zext.b	a2, a2
-	srli	a1, a1, 32
 	seqz	a2, a2
+	srli	a1, a1, 32
 	and	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -25,8 +25,8 @@ func0000000000000024:
 
 func000000000000010c:
 	zext.b	a2, a2
-	sltiu	a1, a1, -1
 	sltiu	a2, a2, 2
+	sltiu	a1, a1, -1
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

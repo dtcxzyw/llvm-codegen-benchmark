@@ -4,8 +4,8 @@ func000000000000008c:
 	bgeu	a2, a3, .LBB0_2
 	li	a2, 3
 .LBB0_2:
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func000000000000001f:
@@ -29,13 +29,13 @@ func00000000000000a0:
 	li	a3, 1
 	blt	a3, a2, .LBB3_2
 	li	a2, -4
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB3_2:
 	li	a2, -8
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000045:
@@ -43,13 +43,13 @@ func0000000000000045:
 	li	a3, 6
 	bltu	a2, a3, .LBB4_2
 	li	a2, -48
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB4_2:
 	li	a2, -55
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000065:
@@ -65,13 +65,13 @@ func000000000000004f:
 	li	a3, 8
 	bltu	a2, a3, .LBB6_2
 	li	a2, 60
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB6_2:
 	li	a2, 62
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000010:
@@ -79,13 +79,13 @@ func0000000000000010:
 	li	a3, 1
 	beq	a2, a3, .LBB7_2
 	li	a2, 17
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB7_2:
 	li	a2, 12
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func000000000000001a:
@@ -98,9 +98,9 @@ func000000000000001a:
 
 func0000000000000014:
 	addiw	a2, a2, -3
-	lui	a3, 1047552
 	seqz	a2, a2
 	addi	a2, a2, -1
+	lui	a3, 1047552
 	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -140,8 +140,8 @@ func00000000000000af:
 	ret
 
 func000000000000008f:
-	sext.w	a2, a2
 	lui	a3, 24
+	sext.w	a2, a2
 	addi	a3, a3, 1695
 	sltu	a2, a3, a2
 	add	a0, a0, a1
@@ -150,8 +150,8 @@ func000000000000008f:
 	ret
 
 func000000000000018f:
-	sext.w	a2, a2
 	lui	a3, 24
+	sext.w	a2, a2
 	addi	a3, a3, 1695
 	sltu	a2, a3, a2
 	add	a0, a0, a1
@@ -164,13 +164,13 @@ func0000000000000040:
 	li	a3, 10
 	bltu	a2, a3, .LBB16_2
 	li	a2, 169
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB16_2:
 	li	a2, 208
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000185:
@@ -187,13 +187,13 @@ func0000000000000041:
 	li	a3, 4
 	bltu	a2, a3, .LBB18_2
 	li	a2, -34
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB18_2:
 	li	a2, -38
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func00000000000000c0:

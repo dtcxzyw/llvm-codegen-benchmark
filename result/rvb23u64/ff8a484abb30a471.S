@@ -40,8 +40,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	srli	a1, a1, 9
 	lui	a2, 1048572
+	srli	a1, a1, 9
 	srli	a2, a2, 11
 	and	a1, a1, a2
 	sext.w	a0, a0

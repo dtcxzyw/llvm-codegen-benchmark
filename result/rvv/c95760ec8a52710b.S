@@ -1,9 +1,9 @@
 func0000000000000084:
 	lui	a0, 335544
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v8, v8, 31
 	addi	a0, a0, 1311
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulh.vx	v10, v10, a0
+	vsra.vi	v8, v8, 31
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v8, v8, v10

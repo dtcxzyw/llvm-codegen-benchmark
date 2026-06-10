@@ -35,8 +35,8 @@ func0000000000000004:
 	vmv1r.v	v11, v0
 	li	a0, 100
 	vmv.v.x	v12, a0
-	li	a0, 1000
 	vmv1r.v	v0, v10
+	li	a0, 1000
 	vmerge.vxm	v12, v12, a0, v0
 	vmsltu.vv	v10, v8, v12
 	vmand.mm	v0, v10, v11
@@ -58,9 +58,9 @@ func0000000000000006:
 	lui	a0, 174763
 	addi	a0, a0, -1366
 	vmv.v.x	v12, a0
+	vmv1r.v	v0, v10
 	lui	a0, 87381
 	addi	a0, a0, 1365
-	vmv1r.v	v0, v10
 	vmerge.vxm	v12, v12, a0, v0
 	vmslt.vv	v10, v8, v12
 	vmand.mm	v0, v10, v11

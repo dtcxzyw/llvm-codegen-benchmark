@@ -77,9 +77,9 @@ func0000000000000011:
 
 func0000000000000029:
 	sext.w	a1, a1
-	lui	a2, 12288
 	sltiu	a1, a1, 8
 	xori	a1, a1, 1
+	lui	a2, 12288
 	slli	a1, a1, 26
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -98,12 +98,12 @@ func0000000000000014:
 	ret
 
 func000000000000000d:
-	sext.w	a1, a1
 	lui	a2, 73
+	sext.w	a1, a1
 	addi	a2, a2, 992
+	lui	a3, 1048575
 	slt	a1, a1, a2
-	lui	a2, 1048575
-	addi	a2, a2, 2047
+	addi	a2, a3, 2047
 	slli	a1, a1, 11
 	and	a0, a0, a2
 	or	a0, a0, a1

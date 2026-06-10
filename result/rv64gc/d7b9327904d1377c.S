@@ -30,13 +30,13 @@ func0000000000000004:
 	ret
 
 func0000000000000608:
-	add	a0, a0, a1
 	lui	a2, 7
+	add	a0, a0, a1
+	lui	a3, 23
 	addi	a2, a2, 1676
+	addi	a3, a3, 1676
 	add	a0, a0, a2
-	lui	a2, 23
-	addi	a2, a2, 1676
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 

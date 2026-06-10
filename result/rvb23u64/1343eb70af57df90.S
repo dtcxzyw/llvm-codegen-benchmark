@@ -9,12 +9,12 @@ func0000000000000021:
 	ret
 
 func000000000000050c:
+	lui	a3, 57344
+	and	a1, a1, a3
+	lui	a3, 40960
+	xor	a1, a1, a3
 	sext.w	a2, a2
 	sltu	a0, a2, a0
-	lui	a2, 57344
-	and	a1, a1, a2
-	lui	a2, 40960
-	xor	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

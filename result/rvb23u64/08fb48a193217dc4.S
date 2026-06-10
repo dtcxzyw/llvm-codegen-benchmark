@@ -10,8 +10,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	addi	a0, a0, 1
 	lui	a1, 5
+	addi	a0, a0, 1
 	sext.h	a2, a0
 	addi	a1, a1, 1366
 	mul	a1, a1, a2

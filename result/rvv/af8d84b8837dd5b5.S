@@ -1,8 +1,8 @@
 func0000000000000028:
 	fli.d	fa5, 1.0
-	li	a0, 971
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmin.vf	v8, v8, fa5
+	li	a0, 971
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
@@ -35,10 +35,10 @@ func00000000000000ee:
 func0000000000000022:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, 3897
-	slli	a0, a0, 38
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmin.vf	v8, v8, fa5
+	lui	a0, 3897
+	slli	a0, a0, 38
 	fmv.d.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vmflt.vf	v0, v8, fa5

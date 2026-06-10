@@ -10,8 +10,8 @@ func00000000000006e1:
 
 func0000000000000ae1:
 	sext.w	a2, a2
-	addi	a1, a1, -6
 	slti	a2, a2, 54
+	addi	a1, a1, -6
 	czero.eqz	a1, a1, a2
 	addiw	a1, a1, 6
 	addi	a0, a0, 1
@@ -31,8 +31,8 @@ func00000000000001e1:
 
 func00000000000018e1:
 	sext.w	a2, a2
-	addi	a1, a1, -14
 	sltiu	a2, a2, 16
+	addi	a1, a1, -14
 	czero.eqz	a1, a1, a2
 	addiw	a1, a1, 14
 	addi	a0, a0, 1
@@ -42,8 +42,8 @@ func00000000000018e1:
 
 func00000000000004e1:
 	srliw	a2, a2, 24
-	addi	a1, a1, -1
 	sltiu	a2, a2, 7
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1
 	addi	a0, a0, 1
@@ -53,8 +53,8 @@ func00000000000004e1:
 
 func00000000000014e1:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	sltiu	a2, a2, 7
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1
 	addi	a0, a0, 1
@@ -64,8 +64,8 @@ func00000000000014e1:
 
 func00000000000006f4:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	slti	a2, a2, 6
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1
 	addi	a0, a0, 2
@@ -74,8 +74,8 @@ func00000000000006f4:
 
 func00000000000014f4:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	sltiu	a2, a2, 6
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1
 	addi	a0, a0, 2
@@ -84,8 +84,8 @@ func00000000000014f4:
 
 func0000000000000661:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	slti	a2, a2, 6
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addi	a1, a1, 1
 	zext.w	a1, a1
@@ -96,8 +96,8 @@ func0000000000000661:
 
 func0000000000001461:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	sltiu	a2, a2, 7
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addi	a1, a1, 1
 	zext.w	a1, a1
@@ -108,8 +108,8 @@ func0000000000001461:
 
 func00000000000008e1:
 	sext.w	a2, a2
-	addi	a1, a1, -8
 	sltiu	a2, a2, 4
+	addi	a1, a1, -8
 	czero.eqz	a1, a1, a2
 	addiw	a1, a1, 8
 	addi	a0, a0, 1
@@ -130,8 +130,8 @@ func0000000000000161:
 
 func0000000000000484:
 	sext.w	a2, a2
-	addi	a1, a1, -10
 	sltiu	a2, a2, 80
+	addi	a1, a1, -10
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 10
 	addi	a0, a0, 1
@@ -140,8 +140,8 @@ func0000000000000484:
 
 func0000000000000861:
 	sext.w	a2, a2
-	addi	a1, a1, -23
 	sltiu	a2, a2, 4
+	addi	a1, a1, -23
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 23
 	zext.w	a1, a1

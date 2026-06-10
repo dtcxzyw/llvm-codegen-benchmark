@@ -10,9 +10,9 @@ func0000000000000043:
 
 func0000000000000002:
 	sext.w	a2, a2
-	andi	a0, a0, 512
 	binvi	a2, a2, 14
 	seqz	a2, a2
+	andi	a0, a0, 512
 	slli	a2, a2, 18
 	or	a0, a0, a1
 	or	a0, a0, a2

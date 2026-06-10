@@ -1,8 +1,8 @@
 func0000000000000007:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfabs.v	v10, v8
 	lui	a0, 307200
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfabs.v	v10, v8
 	vmflt.vf	v0, v10, fa5
 	vfcvt.rtz.x.f.v	v10, v8, v0.t
 	vfcvt.f.x.v	v10, v10, v0.t
@@ -13,10 +13,10 @@ func0000000000000007:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfabs.v	v10, v8
 	lui	a0, 307200
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfabs.v	v10, v8
 	vmflt.vf	v0, v10, fa5
 	vfcvt.rtz.x.f.v	v10, v8, v0.t
 	vfcvt.f.x.v	v10, v10, v0.t
@@ -27,10 +27,10 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfabs.v	v10, v8
 	lui	a0, 307200
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfabs.v	v10, v8
 	vmflt.vf	v0, v10, fa5
 	vfcvt.rtz.x.f.v	v10, v8, v0.t
 	vfcvt.f.x.v	v10, v10, v0.t
@@ -41,10 +41,10 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfabs.v	v10, v8
 	lui	a0, 307200
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfabs.v	v10, v8
 	vmflt.vf	v0, v10, fa5
 	vfcvt.rtz.x.f.v	v10, v8, v0.t
 	vfcvt.f.x.v	v10, v10, v0.t

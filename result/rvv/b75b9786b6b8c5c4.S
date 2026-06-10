@@ -1,7 +1,7 @@
 func000000000000003f:
+	li	a0, 3
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v14, v11
-	li	a0, 3
 	vwmulu.vx	v12, v14, a0
 	vzext.vf2	v11, v10
 	vwaddu.wv	v12, v12, v11
@@ -10,9 +10,9 @@ func000000000000003f:
 	ret
 
 func00000000000000ff:
+	li	a0, 100
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v14, v11
-	li	a0, 100
 	vwmulu.vx	v12, v14, a0
 	vzext.vf2	v11, v10
 	vwaddu.wv	v12, v12, v11
@@ -21,9 +21,9 @@ func00000000000000ff:
 	ret
 
 func00000000000000bf:
+	li	a0, 100
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v14, v11
-	li	a0, 100
 	vwmulu.vx	v12, v14, a0
 	vzext.vf2	v11, v10
 	vwaddu.wv	v12, v12, v11

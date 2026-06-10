@@ -72,8 +72,8 @@ func0000000000000084:
 	ret
 
 func0000000000000154:
-	zext.b	a0, a0
 	slli	a1, a1, 56
+	zext.b	a0, a0
 	srai	a1, a1, 56
 	slti	a1, a1, 5
 	sltiu	a0, a0, 5

@@ -1,10 +1,10 @@
 func0000000000000003:
-	addi	a1, a1, 512
 	li	a2, 15
+	addi	a1, a1, 512
 	slli	a2, a2, 9
+	lui	a3, 2
 	and	a1, a1, a2
-	lui	a2, 2
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -25,23 +25,23 @@ func000000000000000f:
 	ret
 
 func0000000000000002:
-	addi	a1, a1, 2047
 	lui	a2, 512
+	addi	a1, a1, 2047
+	lui	a3, 524288
 	addi	a1, a1, 1
 	addi	a2, a2, -2048
+	addi	a3, a3, 2
 	and	a1, a1, a2
-	lui	a2, 524288
-	addi	a2, a2, 2
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
 	andi	a1, a1, 7
 	xori	a1, a1, 4
+	lui	a2, 4096
 	or	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -1000
+	addi	a1, a2, -1000
 	or	a0, a0, a1
 	ret
 

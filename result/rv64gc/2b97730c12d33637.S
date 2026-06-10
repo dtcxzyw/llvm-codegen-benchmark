@@ -1,6 +1,6 @@
 func000000000000000e:
-	andi	a2, a2, 1
 	slli	a1, a1, 32
+	andi	a2, a2, 1
 	srli	a1, a1, 32
 	sll	a1, a1, a2
 	mul	a0, a1, a0
@@ -14,8 +14,8 @@ func000000000000001f:
 	ret
 
 func000000000000000f:
-	andi	a2, a2, 1
 	slli	a1, a1, 32
+	andi	a2, a2, 1
 	srli	a1, a1, 32
 	sll	a1, a1, a2
 	mul	a0, a1, a0

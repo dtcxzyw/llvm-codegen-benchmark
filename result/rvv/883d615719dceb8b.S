@@ -7,12 +7,11 @@ func0000000000000630:
 	addi	a0, a0, -273
 	vmacc.vx	v10, a0, v9
 	lui	a0, 17476
-	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmsne.vi	v8, v8, 5
 	addi	a0, a0, 1092
-	vsetvli	zero, zero, e32, m1, ta, ma
 	vror.vi	v9, v10, 2
 	vmsgtu.vx	v9, v9, a0
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsne.vi	v8, v8, 5
 	vmor.mm	v0, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 0

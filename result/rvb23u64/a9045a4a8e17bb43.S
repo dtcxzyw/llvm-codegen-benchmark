@@ -3,9 +3,9 @@
 func000000000000002e:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	sh3add	a1, a2, a1
 	srai	a0, a0, 3
 	mul	a0, a0, a3
+	sh3add	a1, a2, a1
 	sub	a0, a0, a1
 	ret
 

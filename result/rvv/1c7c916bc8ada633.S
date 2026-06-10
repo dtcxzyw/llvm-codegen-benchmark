@@ -123,8 +123,8 @@ func000000000000004c:
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	lui	a0, 1
 	vand.vi	v8, v8, -8
+	lui	a0, 1
 	addi	a0, a0, -1384
 	vmsgtu.vx	v0, v8, a0
 	ret

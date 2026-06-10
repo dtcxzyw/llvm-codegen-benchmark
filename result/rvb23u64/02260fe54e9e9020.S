@@ -19,13 +19,13 @@ func0000000000000031:
 
 func000000000000003d:
 	sh1add	a2, a2, a2
+	lui	a3, 61440
 	sh1add	a1, a2, a1
-	lui	a2, 61440
-	addi	a2, a2, 15
+	addi	a3, a3, 15
+	slli	a3, a3, 24
 	srli	a1, a1, 4
-	slli	a2, a2, 24
-	addi	a2, a2, 15
-	and	a1, a1, a2
+	addi	a3, a3, 15
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

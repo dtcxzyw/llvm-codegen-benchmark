@@ -20,15 +20,15 @@ func000000000000002f:
 	ret
 
 func000000000000002c:
-	andi	a2, a2, 1
 	sh2add	a0, a1, a0
+	andi	a2, a2, 1
 	sh2add	a0, a2, a0
 	addi	a0, a0, 4
 	ret
 
 func000000000000003c:
-	andi	a2, a2, 1
 	sh2add	a1, a1, a1
+	andi	a2, a2, 1
 	sh3add	a0, a1, a0
 	sh2add	a1, a2, a2
 	sh3add	a0, a1, a0

@@ -17,10 +17,10 @@ func000000000000000c:
 func0000000000000021:
 	lui	a2, 15
 	and	a1, a1, a2
-	lui	a2, 14
 	or	a0, a0, a1
+	lui	a1, 14
 	sext.w	a0, a0
-	addi	a1, a2, -1024
+	addi	a1, a1, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -68,11 +68,11 @@ func0000000000000028:
 	lui	a2, 1048560
 	addi	a2, a2, 255
 	and	a1, a1, a2
-	lui	a2, 8192
 	or	a0, a0, a1
+	lui	a1, 8192
 	sext.w	a0, a0
-	addi	a2, a2, -2
-	sltu	a0, a2, a0
+	addi	a1, a1, -2
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000024:

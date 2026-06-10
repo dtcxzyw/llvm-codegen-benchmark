@@ -1,8 +1,8 @@
 func0000000000000042:
 	addiw	a2, a2, -1
 	addiw	a1, a1, -1
-	andi	a0, a0, 1
 	seqz	a2, a2
+	andi	a0, a0, 1
 	seqz	a1, a1
 	xori	a0, a0, 3
 	or	a1, a1, a2

@@ -16,9 +16,9 @@ func0000000000000021:
 
 func0000000000000121:
 	andi	a2, a2, 127
+	addi	a2, a2, -117
 	sltu	a0, a0, a1
-	addi	a1, a2, -117
-	seqz	a1, a1
+	seqz	a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

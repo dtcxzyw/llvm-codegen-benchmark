@@ -13,10 +13,10 @@ func0000000000000a8c:
 	ret
 
 func0000000000001210:
+	lui	a3, 524288
+	addiw	a3, a3, -1
 	sub	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1
-	minu	a0, a0, a2
+	minu	a0, a0, a3
 	sltu	a0, a0, a1
 	ret
 
@@ -31,10 +31,10 @@ func0000000000000042:
 
 func00000000000002cc:
 	sub	a1, a1, a2
-	slti	a2, a1, 1
 	slt	a0, a1, a0
+	slti	a1, a1, 1
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000102:
@@ -53,9 +53,9 @@ func0000000000000194:
 	ret
 
 func0000000000000108:
+	li	a3, 8
 	sub	a1, a1, a2
-	li	a2, 8
-	maxu	a0, a0, a2
+	maxu	a0, a0, a3
 	sltu	a0, a1, a0
 	ret
 

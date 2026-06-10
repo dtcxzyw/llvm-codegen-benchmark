@@ -1,9 +1,9 @@
 func0000000000000100:
 	sext.w	a2, a2
-	slli	a1, a1, 32
 	sltiu	a2, a2, 3
-	srli	a1, a1, 27
+	slli	a1, a1, 32
 	addi	a2, a2, -1
+	srli	a1, a1, 27
 	andi	a2, a2, -32
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -12,11 +12,11 @@ func0000000000000100:
 func00000000000000c3:
 	srliw	a2, a2, 31
 	slli	a1, a1, 32
-	addi	a2, a2, -1
 	srli	a3, a1, 29
 	srli	a1, a1, 27
-	andi	a2, a2, 12
+	addi	a2, a2, -1
 	add	a1, a1, a3
+	andi	a2, a2, 12
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -30,8 +30,8 @@ func0000000000000023:
 	li	a2, 36
 .LBB2_3:
 	li	a3, 535
-	slli	a1, a1, 32
 	slli	a3, a3, 36
+	slli	a1, a1, 32
 	mulhu	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -56,9 +56,9 @@ func000000000000002f:
 
 func000000000000003f:
 	addiw	a2, a2, -33
-	sext.w	a1, a1
 	seqz	a2, a2
 	addi	a2, a2, -1
+	sext.w	a1, a1
 	andi	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -117,11 +117,11 @@ func0000000000000033:
 func000000000000014f:
 	sext.w	a2, a2
 	slli	a1, a1, 32
-	sgtz	a2, a2
 	srli	a3, a1, 29
 	srli	a1, a1, 28
-	slli	a2, a2, 3
+	sgtz	a2, a2
 	add	a1, a1, a3
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

@@ -1,9 +1,9 @@
 func0000000000000002:
 	slli	a1, a1, 48
-	lui	a2, 2
 	srli	a1, a1, 48
 	addi	a1, a1, -10
 	seqz	a1, a1
+	lui	a2, 2
 	slli	a1, a1, 22
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -23,10 +23,10 @@ func0000000000000043:
 
 func0000000000000051:
 	slli	a1, a1, 48
-	lui	a2, 12
 	srli	a1, a1, 48
 	sltiu	a1, a1, 830
 	addi	a1, a1, -1
+	lui	a2, 12
 	andi	a1, a1, 33
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -34,10 +34,10 @@ func0000000000000051:
 
 func0000000000000050:
 	slli	a1, a1, 48
-	lui	a2, 64
 	srli	a1, a1, 48
 	sltiu	a1, a1, 1061
 	xori	a1, a1, 1
+	lui	a2, 64
 	slli	a1, a1, 7
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -45,10 +45,10 @@ func0000000000000050:
 
 func0000000000000010:
 	slli	a1, a1, 48
-	lui	a2, 12
 	srli	a1, a1, 48
 	sltiu	a1, a1, 953
 	xori	a1, a1, 1
+	lui	a2, 12
 	slli	a1, a1, 13
 	or	a0, a0, a2
 	or	a0, a0, a1

@@ -1,9 +1,9 @@
 func0000000000000081:
 	li	a2, -1
-	li	a3, -9
 	srli	a2, a2, 1
-	srli	a3, a3, 1
+	li	a3, -9
 	add	a2, a2, a1
+	srli	a3, a3, 1
 	sltiu	a2, a2, 7
 	add	a1, a1, a3
 	czero.eqz	a1, a1, a2

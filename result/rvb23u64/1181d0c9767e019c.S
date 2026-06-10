@@ -19,9 +19,9 @@ func0000000000000000:
 
 func0000000000000003:
 	bseti	a2, zero, 33
+	bseti	a3, zero, 32
 	sll	a1, a2, a1
-	bseti	a2, zero, 32
-	sub	a0, a0, a2
+	sub	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

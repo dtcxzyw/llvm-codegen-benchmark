@@ -1,7 +1,7 @@
 func0000000000000014:
-	fabs.s	fa5, fa0
 	lui	a0, 246333
 	addi	a0, a0, 1802
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	lui	a0, 260096
 	fmul.s	fa5, fa5, fa4
@@ -10,8 +10,8 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
-	fabs.s	fa5, fa0
 	lui	a0, 264192
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	lui	a0, 260096
 	fmul.s	fa5, fa5, fa4
@@ -20,8 +20,8 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	fabs.s	fa5, fa0
 	lui	a0, 264192
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -29,8 +29,8 @@ func0000000000000002:
 	ret
 
 func0000000000000012:
-	fabs.s	fa5, fa0
 	lui	a0, 276464
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -38,8 +38,8 @@ func0000000000000012:
 	ret
 
 func0000000000000003:
-	fabs.s	fa5, fa0
 	lui	a0, 260096
+	fabs.s	fa5, fa0
 	fadd.s	fa5, fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
@@ -47,9 +47,9 @@ func0000000000000003:
 	ret
 
 func0000000000000018:
-	fabs.s	fa5, fa0
 	lui	a0, 215552
 	addi	a0, a0, 3
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero

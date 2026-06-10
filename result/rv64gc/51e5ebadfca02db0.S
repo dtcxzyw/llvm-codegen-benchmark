@@ -1,8 +1,8 @@
 func0000000000000021:
-	slli	a1, a1, 48
 	lui	a2, 2064
-	srli	a1, a1, 48
+	slli	a1, a1, 48
 	addi	a2, a2, -1
+	srli	a1, a1, 48
 	and	a0, a0, a2
 	or	a0, a0, a1
 	addi	a0, a0, -514

@@ -15,10 +15,10 @@ func0000000000000000:
 	ret
 
 func0000000000000015:
+	lui	a3, 804435
+	addi	a3, a3, 1536
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	lui	a2, 804435
-	addi	a2, a2, 1536
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -39,10 +39,10 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
+	lui	a3, 244
+	addi	a3, a3, 576
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

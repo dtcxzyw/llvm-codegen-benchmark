@@ -10,8 +10,8 @@ func0000000000000c2c:
 
 func0000000000000c21:
 	addi	a2, a2, 1
-	andi	a1, a1, 7
 	xor	a0, a0, a2
+	andi	a1, a1, 7
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -19,8 +19,8 @@ func0000000000000c21:
 
 func000000000000002c:
 	addi	a2, a2, 8
-	slli	a1, a1, 3
 	xor	a0, a0, a2
+	slli	a1, a1, 3
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1

@@ -1,8 +1,8 @@
 func0000000000000004:
 	sub	a0, a0, a1
 	srai	a1, a0, 3
-	slli	a0, a0, 2
 	sh3add	a1, a1, a1
+	slli	a0, a0, 2
 	sub	a0, a0, a1
 	ret
 

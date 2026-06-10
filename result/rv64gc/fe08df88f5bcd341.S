@@ -8,8 +8,8 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	srli	a1, a1, 13
 	lui	a2, 32
+	srli	a1, a1, 13
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -17,8 +17,8 @@ func000000000000000f:
 	ret
 
 func000000000000001f:
-	srli	a1, a1, 4
 	lui	a2, 1
+	srli	a1, a1, 4
 	addi	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1

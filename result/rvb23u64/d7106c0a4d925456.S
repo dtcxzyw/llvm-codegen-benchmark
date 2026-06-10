@@ -1,7 +1,7 @@
 func000000000000004c:
-	bset	a1, zero, a1
 	lui	a2, 262145
 	slli	a2, a2, 2
+	bset	a1, zero, a1
 	addi	a2, a2, -511
 	and	a1, a1, a2
 	snez	a1, a1
@@ -9,8 +9,8 @@ func000000000000004c:
 	ret
 
 func000000000000006c:
-	bset	a1, zero, a1
 	lui	a2, 25056
+	bset	a1, zero, a1
 	addi	a2, a2, 1823
 	and	a1, a1, a2
 	snez	a1, a1
@@ -43,8 +43,8 @@ func0000000000000054:
 	ret
 
 func0000000000000041:
-	bset	a1, zero, a1
 	lui	a2, 2
+	bset	a1, zero, a1
 	addi	a2, a2, 1537
 	and	a1, a1, a2
 	seqz	a1, a1

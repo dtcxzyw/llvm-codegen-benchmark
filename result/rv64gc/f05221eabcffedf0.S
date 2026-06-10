@@ -5,12 +5,12 @@ func0000000000000010:
 	ret
 
 func000000000000001f:
-	andi	a0, a0, 31
 	li	a1, 1
+	andi	a0, a0, 31
+	li	a2, -1
 	sll	a0, a1, a0
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 
 func0000000000000018:
@@ -20,8 +20,8 @@ func0000000000000018:
 	ret
 
 func000000000000001d:
-	andi	a0, a0, 31
 	li	a1, -1
+	andi	a0, a0, 31
 	sll	a0, a1, a0
 	not	a0, a0
 	ret
@@ -35,9 +35,9 @@ func0000000000000015:
 
 func000000000000001a:
 	li	a1, 1
+	li	a2, -1
 	sll	a0, a1, a0
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 

@@ -1,7 +1,7 @@
 func000000000000003f:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v10, 16
-	li	a0, 32
 	vsll.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8

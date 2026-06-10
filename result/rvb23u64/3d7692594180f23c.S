@@ -1,8 +1,8 @@
 func0000000000000065:
-	sext.w	a1, a0
-	slti	a1, a1, 578
-	li	a2, -100
-	czero.nez	a1, a2, a1
+	li	a1, -100
+	sext.w	a2, a0
+	slti	a2, a2, 578
+	czero.nez	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 1472
 	ret

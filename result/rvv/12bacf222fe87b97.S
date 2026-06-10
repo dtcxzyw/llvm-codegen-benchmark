@@ -1,12 +1,13 @@
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv1r.v	v10, v0
-	vmseq.vi	v0, v8, 0
 	li	a0, 35
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmv.v.x	v8, a0
+	vmv.v.x	v11, a0
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vi	v0, v8, 0
 	li	a0, 34
-	vmerge.vxm	v8, v8, a0, v0
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmerge.vxm	v8, v11, a0, v0
 	li	a0, 29
 	vmv.v.x	v9, a0
 	li	a0, 28

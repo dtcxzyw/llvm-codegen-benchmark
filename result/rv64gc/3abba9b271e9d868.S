@@ -3,8 +3,8 @@ func0000000000000001:
 	mv	a0, a1
 	bnez	a3, .LBB0_2
 	lui	a0, 1047038
-	and	a0, a0, a2
 	lui	a1, 1024
+	and	a0, a0, a2
 	addi	a1, a1, 382
 	or	a0, a0, a1
 .LBB0_2:

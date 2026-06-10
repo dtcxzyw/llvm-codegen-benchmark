@@ -1,6 +1,6 @@
 func0000000000000141:
-	sext.w	a0, a0
 	srliw	a1, a1, 31
+	sext.w	a0, a0
 	slli	a1, a1, 31
 	or	a0, a0, a1
 	seqz	a0, a0

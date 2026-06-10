@@ -5,8 +5,8 @@ func0000000000000000:
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	lui	a0, 16473
-	slli	a0, a0, 36
 	fmul.d	fa5, fa1, fa5
+	slli	a0, a0, 36
 	fmv.d.x	fa4, a0
 	fmul.d	fa0, fa5, fa4
 .LBB0_2:

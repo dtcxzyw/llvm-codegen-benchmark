@@ -16,9 +16,9 @@ func0000000000000038:
 
 func000000000000002b:
 	or	a1, a1, a2
-	zext.b	a2, a0
-	slliw	a0, a0, 24
+	slliw	a2, a0, 24
+	zext.b	a0, a0
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 

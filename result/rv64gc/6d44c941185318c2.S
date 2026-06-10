@@ -51,21 +51,21 @@ func000000000000004c:
 	ret
 
 func0000000000000064:
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
+	slli	a3, a3, 63
 	or	a0, a0, a1
-	slli	a2, a2, 63
-	addi	a2, a2, 7
-	sltu	a0, a0, a2
+	addi	a3, a3, 7
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000066:
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
+	slli	a3, a3, 63
 	or	a0, a0, a1
-	slli	a2, a2, 63
-	addi	a2, a2, 7
-	slt	a0, a0, a2
+	addi	a3, a3, 7
+	slt	a0, a0, a3
 	ret
 
 func000000000000000a:

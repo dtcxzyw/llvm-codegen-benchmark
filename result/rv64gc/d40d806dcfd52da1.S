@@ -37,9 +37,9 @@ func0000000000000030:
 	ret
 
 func000000000000000c:
+	lui	a1, 4
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	lui	a1, 4
 	slt	a0, a0, a1
 	ret
 

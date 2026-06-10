@@ -24,9 +24,9 @@ func00000000000000c1:
 
 func00000000000000e0:
 	slli	a1, a1, 24
+	lui	a2, 648056
 	add	a0, a0, a1
-	lui	a1, 648056
-	addi	a1, a1, -1607
+	addi	a1, a2, -1607
 	addw	a0, a0, a1
 	ret
 
@@ -80,9 +80,9 @@ func0000000000000010:
 
 func00000000000000bc:
 	slli	a1, a1, 1
+	lui	a2, 705893
 	add	a0, a0, a1
-	lui	a1, 705893
-	addi	a1, a1, -1273
+	addi	a1, a2, -1273
 	addw	a0, a0, a1
 	ret
 

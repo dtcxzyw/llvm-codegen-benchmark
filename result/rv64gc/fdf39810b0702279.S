@@ -5,8 +5,8 @@ func0000000000000017:
 	ret
 
 func0000000000000019:
-	slli	a1, a1, 16
 	lui	a2, 256
+	slli	a1, a1, 16
 	addi	a2, a2, -1
 	or	a1, a1, a2
 	sub	a0, a1, a0
@@ -43,8 +43,8 @@ func000000000000000f:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 9
 	li	a2, 1
+	slli	a1, a1, 9
 	slli	a2, a2, 61
 	or	a1, a1, a2
 	sub	a0, a1, a0

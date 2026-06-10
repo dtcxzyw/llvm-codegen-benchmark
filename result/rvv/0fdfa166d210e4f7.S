@@ -129,9 +129,9 @@ func0000000000000032:
 	ret
 
 func0000000000000038:
+	li	a0, 56
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 56
 	vsll.vx	v8, v8, a0
 	vadd.vv	v8, v8, v10
 	ret

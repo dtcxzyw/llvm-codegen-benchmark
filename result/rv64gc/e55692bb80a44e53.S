@@ -23,8 +23,8 @@ func0000000000000387:
 
 func0000000000000187:
 	slli	a2, a2, 32
-	addi	a1, a1, 1
 	srli	a2, a2, 32
+	addi	a1, a1, 1
 	xor	a2, a2, a1
 	seqz	a2, a2
 	addi	a2, a2, -1
@@ -37,8 +37,8 @@ func0000000000000187:
 
 func0000000000000184:
 	slli	a2, a2, 32
-	addi	a1, a1, 1
 	srli	a2, a2, 32
+	addi	a1, a1, 1
 	xor	a2, a2, a1
 	seqz	a2, a2
 	addi	a2, a2, -1

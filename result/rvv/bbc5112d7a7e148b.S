@@ -3,12 +3,12 @@ func000000000000000b:
 	addi	a0, a0, 1365
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
+	vadd.vv	v10, v10, v12
 	lui	a0, 13107
 	addi	a0, a0, 819
-	vadd.vv	v10, v10, v12
 	vand.vx	v10, v10, a0
-	lui	a0, 28784
 	vadd.vv	v8, v8, v10
+	lui	a0, 28784
 	addi	a0, a0, 1799
 	vand.vx	v8, v8, a0
 	ret
@@ -18,12 +18,12 @@ func000000000000000f:
 	addi	a0, a0, 819
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
+	vadd.vv	v10, v10, v12
 	lui	a0, 112
 	addi	a0, a0, 1799
-	vadd.vv	v10, v10, v12
 	vand.vx	v10, v10, a0
-	lui	a0, 240
 	vadd.vv	v8, v8, v10
+	lui	a0, 240
 	addi	a0, a0, 15
 	vand.vx	v8, v8, a0
 	ret
@@ -43,8 +43,8 @@ func0000000000000003:
 	addi	a0, a0, -129
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	lui	a0, 4080
 	vadd.vv	v10, v12, v10
+	lui	a0, 4080
 	addi	a0, a0, 255
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8

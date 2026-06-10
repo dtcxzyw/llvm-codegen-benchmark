@@ -1,10 +1,10 @@
 func000000000000000f:
 	lui	a3, 1048512
+	li	a4, 15
 	addi	a3, a3, 511
+	slli	a4, a4, 9
 	and	a2, a2, a3
-	li	a3, 15
-	slli	a3, a3, 9
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	slliw	a0, a0, 13
 	or	a0, a0, a1
@@ -12,9 +12,9 @@ func000000000000000f:
 
 func0000000000000009:
 	lui	a3, 2096
+	lui	a4, 2048
 	and	a2, a2, a3
-	lui	a3, 2048
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	slliw	a0, a0, 8
 	or	a0, a0, a1
@@ -42,9 +42,9 @@ func0000000000000002:
 
 func000000000000000b:
 	lui	a3, 4080
+	lui	a4, 258048
 	and	a2, a2, a3
-	lui	a3, 258048
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	slliw	a0, a0, 31
 	or	a0, a0, a1
@@ -60,9 +60,9 @@ func0000000000000007:
 
 func000000000000000d:
 	lui	a3, 1048568
-	slliw	a0, a0, 8
 	and	a2, a2, a3
 	addi	a3, a3, 254
+	slliw	a0, a0, 8
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

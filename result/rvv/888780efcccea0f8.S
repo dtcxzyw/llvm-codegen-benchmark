@@ -1,10 +1,10 @@
 func0000000000000004:
+	lui	a0, 132023
+	slli	a0, a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfwcvt.f.x.v	v16, v12
-	lui	a0, 132023
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfsub.vv	v8, v16, v8
-	slli	a0, a0, 33
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret

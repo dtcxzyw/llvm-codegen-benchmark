@@ -4,8 +4,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 30
 	li	a1, 5
+	slli	a0, a0, 30
 	slli	a1, a1, 35
 	sub	a0, a1, a0
 	srai	a0, a0, 32

@@ -19,9 +19,9 @@ func0000000000000007:
 
 func000000000000000f:
 	add	a1, a1, a2
-	lui	a2, 21
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	lui	a2, 21
 	add	a0, a0, a1
 	addi	a1, a2, 384
 	mul	a0, a0, a1

@@ -4,14 +4,14 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	srliw	a0, a0, 4
 	li	a1, -5
+	srliw	a0, a0, 4
 	add.uw	a0, a1, a0
 	ret
 
 func0000000000000003:
-	srliw	a0, a0, 4
 	li	a1, -5
+	srliw	a0, a0, 4
 	add.uw	a0, a1, a0
 	ret
 

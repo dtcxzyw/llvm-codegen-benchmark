@@ -10,10 +10,10 @@ func0000000000000007:
 	or	a1, a1, a2
 	lui	a2, 916990
 	or	a0, a0, a1
-	lui	a1, 514
-	addi	a2, a2, -33
-	and	a0, a0, a2
-	addi	a1, a1, 32
+	addi	a1, a2, -33
+	lui	a2, 514
+	and	a0, a0, a1
+	addi	a1, a2, 32
 	or	a0, a0, a1
 	ret
 

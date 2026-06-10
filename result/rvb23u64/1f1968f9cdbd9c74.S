@@ -3,9 +3,9 @@ func0000000000000021:
 	lui	a1, 16
 	zext.h	a0, a0
 	addi	a1, a1, -219
+	lui	a2, 9
 	xor	a0, a0, a1
-	lui	a1, 9
-	addi	a1, a1, 233
+	addi	a1, a2, 233
 	czero.nez	a0, a1, a0
 	ret
 

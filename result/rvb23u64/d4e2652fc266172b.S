@@ -33,12 +33,12 @@ func0000000000000399:
 	ret
 
 func00000000000002a9:
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
+	addi	a1, a2, 906
 	lui	a2, 1048575
-	addi	a1, a1, 906
-	addi	a2, a2, -907
 	slt	a1, a1, a0
+	addi	a2, a2, -907
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a2
 	addw	a0, a0, a1

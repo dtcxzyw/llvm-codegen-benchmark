@@ -1,7 +1,7 @@
 func0000000000000005:
-	sext.w	a2, a1
-	lui	a3, 667231
-	addi	a3, a3, 859
+	lui	a2, 667231
+	sext.w	a3, a1
+	addi	a2, a2, 859
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	add	a1, a1, a2
@@ -14,8 +14,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	sext.w	a1, a1
 	lui	a2, 174763
+	sext.w	a1, a1
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	srli	a2, a1, 63
@@ -37,9 +37,9 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	sext.w	a2, a1
-	lui	a3, 599186
-	addi	a3, a3, 1171
+	lui	a2, 599186
+	sext.w	a3, a1
+	addi	a2, a2, 1171
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	add	a1, a1, a2

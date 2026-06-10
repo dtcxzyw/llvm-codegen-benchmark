@@ -1,6 +1,6 @@
 func0000000000000206:
-	srli	a1, a1, 4
 	lui	a2, 838861
+	srli	a1, a1, 4
 	addi	a2, a2, -819
 	mulw	a1, a1, a2
 	sext.w	a0, a0
@@ -8,8 +8,8 @@ func0000000000000206:
 	ret
 
 func000000000000020a:
-	srli	a1, a1, 2
 	lui	a2, 699051
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	sext.w	a0, a0
@@ -17,8 +17,8 @@ func000000000000020a:
 	ret
 
 func0000000000000201:
-	srli	a1, a1, 2
 	lui	a2, 699051
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	sext.w	a0, a0
@@ -27,8 +27,8 @@ func0000000000000201:
 	ret
 
 func0000000000000204:
-	srli	a1, a1, 2
 	lui	a2, 699051
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	sext.w	a0, a0
@@ -36,8 +36,8 @@ func0000000000000204:
 	ret
 
 func000000000000020c:
-	srli	a1, a1, 4
 	lui	a2, 838861
+	srli	a1, a1, 4
 	addi	a2, a2, -819
 	mulw	a1, a1, a2
 	sext.w	a0, a0
@@ -46,8 +46,8 @@ func000000000000020c:
 	ret
 
 func0000000000000207:
-	srli	a1, a1, 3
 	lui	a2, 699051
+	srli	a1, a1, 3
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	sext.w	a0, a0

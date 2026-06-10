@@ -22,11 +22,11 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	slli	a3, a2, 32
-	lui	a4, 233017
-	addi	a4, a4, -455
-	slli	a4, a4, 32
-	mulhu	a3, a3, a4
+	lui	a3, 233017
+	addi	a3, a3, -455
+	slli	a4, a2, 32
+	slli	a3, a3, 32
+	mulhu	a3, a4, a3
 	srli	a3, a3, 35
 	slli	a4, a3, 2
 	slli	a3, a3, 5
@@ -38,15 +38,14 @@ func0000000000000014:
 .LBB2_2:
 	ret
 
+.LCPI3_0:
+	.quad	2635249153617166336
 func0000000000000018:
-	slli	a3, a2, 32
-	lui	a4, 293
-	srli	a3, a3, 32
-	addi	a4, a4, -1755
-	slli	a4, a4, 12
-	addi	a4, a4, -1755
-	slli	a4, a4, 29
-	mulhu	a3, a3, a4
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
+	slli	a4, a2, 32
+	srli	a4, a4, 32
+	mulhu	a3, a4, a3
 	slli	a4, a3, 3
 	add	a2, a2, a3
 	subw	a2, a2, a4

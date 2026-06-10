@@ -20,8 +20,8 @@ func0000000000000030:
 	ret
 
 func0000000000000010:
-	add.uw	a0, a2, a0
 	srai	a1, a1, 32
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -33,8 +33,8 @@ func000000000000002e:
 	ret
 
 func000000000000001c:
-	add.uw	a0, a2, a0
 	srai	a1, a1, 30
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 

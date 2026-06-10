@@ -49,10 +49,10 @@ func0000000000000005:
 	ret
 
 func000000000000000d:
-	fli.s	fa5, 1.0
 	lui	a0, 232731
-	fsub.s	fa5, fa5, fa0
+	fli.s	fa5, 1.0
 	addi	a0, a0, 1815
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -65,10 +65,10 @@ func000000000000000e:
 	ret
 
 func000000000000000a:
-	fli.s	fa5, 1.0
 	lui	a0, 178380
-	fsub.s	fa5, fa5, fa0
+	fli.s	fa5, 1.0
 	addi	a0, a0, -820
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret

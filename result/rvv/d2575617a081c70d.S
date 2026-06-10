@@ -33,10 +33,10 @@ func000000000000c098:
 	ret
 
 func0000000000001090:
+	lui	a0, 1048320
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v9, v12, 0
 	vmseq.vi	v12, v10, 0
-	lui	a0, 1048320
 	vmor.mm	v9, v12, v9
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0

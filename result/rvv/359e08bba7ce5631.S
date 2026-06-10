@@ -1,8 +1,8 @@
 func0000000000000054:
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v12, 2
 	vmsgt.vi	v0, v11, 0
-	vmv.v.i	v11, 2
-	vmerge.vvm	v10, v11, v10, v0
+	vmerge.vvm	v10, v12, v10, v0
 	vwaddu.wv	v8, v8, v10
 	ret
 

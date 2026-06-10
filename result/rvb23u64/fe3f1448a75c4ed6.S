@@ -1,13 +1,13 @@
 func0000000000000025:
-	bset	a2, zero, a2
 	mul	a0, a0, a1
-	addw	a0, a0, a2
+	bset	a1, zero, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000024:
-	li	a3, 512
-	sllw	a2, a3, a2
 	mul	a0, a0, a1
-	addw	a0, a0, a2
+	li	a1, 512
+	sllw	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 

@@ -1,16 +1,16 @@
 func0000000000000006:
-	bset	a0, zero, a0
 	lui	a1, 262145
 	slli	a1, a1, 2
+	bset	a0, zero, a0
 	addi	a1, a1, -511
 	and	a0, a0, a1
 	ret
 
 func0000000000000002:
-	bset	a0, zero, a0
 	lui	a1, 16128
 	addi	a1, a1, 1023
 	slli	a1, a1, 14
+	bset	a0, zero, a0
 	addi	a1, a1, 15
 	and	a0, a0, a1
 	ret
@@ -28,8 +28,8 @@ func0000000000000005:
 	ret
 
 func0000000000000003:
-	bset	a0, zero, a0
 	lui	a1, 8192
+	bset	a0, zero, a0
 	addi	a1, a1, 432
 	and	a0, a0, a1
 	ret

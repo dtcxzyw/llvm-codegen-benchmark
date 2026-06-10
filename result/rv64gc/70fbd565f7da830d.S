@@ -39,23 +39,23 @@ func0000000000000010:
 	ret
 
 func0000000000000054:
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 575
+	addi	a1, a2, 575
 	slt	a0, a1, a0
 	ret
 
 func0000000000000028:
+	lui	a2, 804435
 	add	a0, a0, a1
-	lui	a1, 804435
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000068:
+	lui	a2, 1048555
 	add	a0, a0, a1
-	lui	a1, 1048555
-	addi	a1, a1, -384
+	addi	a1, a2, -384
 	sltu	a0, a0, a1
 	ret
 

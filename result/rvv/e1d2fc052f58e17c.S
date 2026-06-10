@@ -1,9 +1,9 @@
 func000000000000010a:
-	vsetivli	zero, 8, e64, m4, ta, ma
-	vfabs.v	v12, v8
 	li	a0, 1075
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vfabs.v	v12, v8
 	vmflt.vf	v0, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v20, v8

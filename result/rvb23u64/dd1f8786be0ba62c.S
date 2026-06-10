@@ -8,8 +8,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000041:
-	sext.w	a1, a1
 	lui	a2, 524288
+	sext.w	a1, a1
 	addiw	a2, a2, -1
 	minu	a1, a1, a2
 	addi	a1, a1, -1
@@ -28,8 +28,8 @@ func0000000000000061:
 	ret
 
 func00000000000000f4:
-	sext.w	a1, a1
 	lui	a2, 32
+	sext.w	a1, a1
 	addi	a2, a2, -5
 	minu	a1, a1, a2
 	addi	a1, a1, 5

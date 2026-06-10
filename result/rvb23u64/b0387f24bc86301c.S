@@ -4,8 +4,8 @@ func0000000000000043:
 	snez	a1, a1
 	seqz	a0, a0
 	addi	a1, a1, -1
-	andi	a1, a1, 12
 	sh1add	a0, a0, a0
+	andi	a1, a1, 12
 	or	a0, a0, a1
 	ret
 

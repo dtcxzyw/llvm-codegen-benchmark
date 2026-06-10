@@ -7,8 +7,8 @@ func0000000000000024:
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	lui	a0, 918577
-	slli	a0, a0, 33
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 33
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
 	ret
@@ -20,13 +20,13 @@ func0000000000000022:
 	bnez	a0, .LBB1_2
 	fmv.d	fa0, fa1
 .LBB1_2:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
 	li	a0, 511
 	slli	a0, a0, 53
-	fmv.d.x	fa4, a0
-	fmul.d	fa4, fa0, fa4
-	flt.d	a0, fa4, fa5
+	fmv.d.x	fa5, a0
+	fmul.d	fa5, fa0, fa5
+	lui	a0, %hi(.LCPI1_0)
+	fld	fa4, %lo(.LCPI1_0)(a0)
+	flt.d	a0, fa5, fa4
 	ret
 
 .LCPI2_0:
@@ -43,11 +43,11 @@ func0000000000000044:
 	ret
 
 func0000000000000042:
-	lui	a0, %hi(.promoted_doubles.func0000000000000042)
-	addi	a0, a0, %lo(.promoted_doubles.func0000000000000042)
-	fld	fa4, 0(a0)
-	fld	fa5, 8(a0)
 	flt.d	a0, fa0, fa1
+	lui	a1, %hi(.promoted_doubles.func0000000000000042)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000042)
+	fld	fa4, 0(a1)
+	fld	fa5, 8(a1)
 	bnez	a0, .LBB3_2
 	fmv.d	fa0, fa1
 .LBB3_2:

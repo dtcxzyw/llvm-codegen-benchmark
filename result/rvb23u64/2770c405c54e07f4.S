@@ -1,8 +1,8 @@
 func00000000000000c0:
+	li	a3, -57
 	sh3add	a0, a2, a0
-	li	a2, -57
-	srli	a2, a2, 3
-	and	a1, a1, a2
+	srli	a3, a3, 3
+	and	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
@@ -22,10 +22,10 @@ func0000000000000043:
 	ret
 
 func00000000000000ff:
+	lui	a3, 131072
 	sh3add	a0, a2, a0
-	lui	a2, 131072
-	addi	a2, a2, -8
-	and	a1, a1, a2
+	addi	a3, a3, -8
+	and	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

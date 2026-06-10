@@ -1,8 +1,8 @@
 func00000000000004ca:
 	sext.w	a3, a1
-	slt	a3, a2, a3
-	srli	a2, a2, 63
-	not	a2, a2
+	srli	a4, a2, 63
+	slt	a2, a2, a3
+	not	a3, a4
 	and	a2, a2, a3
 	bnez	a2, .LBB0_2
 	mv	a0, a1

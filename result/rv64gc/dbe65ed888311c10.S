@@ -56,8 +56,8 @@ func000000000000002a:
 
 func0000000000000198:
 	sext.w	a0, a0
-	snez	a1, a1
 	sltiu	a0, a0, 2
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -77,8 +77,8 @@ func0000000000000026:
 
 func0000000000000188:
 	sext.w	a0, a0
-	snez	a1, a1
 	sltiu	a0, a0, 2
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

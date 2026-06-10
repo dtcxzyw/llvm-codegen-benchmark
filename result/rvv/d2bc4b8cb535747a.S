@@ -17,8 +17,8 @@ func000000000000000b:
 func0000000000000008:
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmv1r.v	v10, v8
-	li	a0, 48
 	vwsubu.wv	v10, v10, v9
+	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vx	v8, v10, a0
 	ret

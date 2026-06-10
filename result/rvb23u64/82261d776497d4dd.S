@@ -57,21 +57,21 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	addi	a1, a1, -1
 	li	a2, -1
-	snez	a1, a1
 	srli	a2, a2, 32
+	addi	a1, a1, -1
 	xor	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	addi	a1, a1, -1
 	li	a2, -1
-	snez	a1, a1
 	srli	a2, a2, 32
+	addi	a1, a1, -1
 	xor	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

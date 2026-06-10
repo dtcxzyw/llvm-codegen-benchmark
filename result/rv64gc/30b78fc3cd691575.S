@@ -13,8 +13,8 @@ func0000000000000061:
 	ret
 
 func0000000000000028:
-	srli	a1, a1, 3
 	lui	a2, 262144
+	srli	a1, a1, 3
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -40,10 +40,10 @@ func0000000000000078:
 
 func0000000000000068:
 	srliw	a1, a1, 16
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -16
-	sltu	a0, a1, a0
+	addi	a2, a2, -16
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000008:
@@ -55,10 +55,10 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	srli	a1, a1, 10
 	lui	a2, 240
 	addi	a2, a2, 15
 	slli	a3, a2, 32
+	srli	a1, a1, 10
 	add	a2, a2, a3
 	and	a1, a1, a2
 	neg	a1, a1

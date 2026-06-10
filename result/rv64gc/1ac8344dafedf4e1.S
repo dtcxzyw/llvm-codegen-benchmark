@@ -98,10 +98,10 @@ func0000000000000064:
 
 func0000000000000084:
 	srli	a1, a1, 3
+	lui	a2, 64
 	add	a0, a0, a1
-	lui	a1, 64
-	addi	a1, a1, -7
-	sltu	a0, a0, a1
+	addi	a2, a2, -7
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000026:
@@ -118,10 +118,10 @@ func000000000000006c:
 
 func00000000000000f8:
 	srli	a1, a1, 2
+	li	a2, -9
 	add	a0, a0, a1
-	li	a1, -9
-	srli	a1, a1, 3
-	sltu	a0, a1, a0
+	srli	a2, a2, 3
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000081:

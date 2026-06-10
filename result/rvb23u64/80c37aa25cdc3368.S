@@ -57,8 +57,8 @@ func00000000000000e1:
 	ret
 
 func00000000000000f5:
-	slliw	a1, a1, 17
 	lui	a2, 32
+	slliw	a1, a1, 17
 	addw	a0, a0, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

@@ -8,10 +8,10 @@ func0000000000001e8c:
 	ret
 
 func0000000000000e8c:
+	li	a0, 25
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vadd.vi	v10, v10, 1
-	li	a0, 25
 	vmsltu.vv	v12, v10, v14
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12

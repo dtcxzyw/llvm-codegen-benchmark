@@ -6,15 +6,15 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	lui	a1, 1048568
 	slli	a0, a0, 56
 	srai	a0, a0, 63
-	lui	a1, 1048568
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
-	zext.b	a0, a0
 	li	a1, 3
+	zext.b	a0, a0
 	bltu	a0, a1, .LBB2_2
 	li	a0, 18
 	ret

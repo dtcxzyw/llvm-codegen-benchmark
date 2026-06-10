@@ -3,14 +3,14 @@
 func0000000000000005:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	slli	a0, a0, 63
-	srai	a0, a0, 63
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 1
 	add	a2, a2, a3
+	slli	a0, a0, 63
 	slli	a3, a2, 3
 	add	a1, a1, a2
+	srai	a0, a0, 63
 	sub	a1, a1, a3
 	andi	a0, a0, 7
 	add	a0, a0, a1

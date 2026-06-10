@@ -4,16 +4,16 @@ func0000000000000004:
 	ret
 
 func000000000000000b:
+	xori	a1, a1, 1
 	slt	a0, a2, a0
 	xori	a0, a0, 1
-	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
+	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0
-	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

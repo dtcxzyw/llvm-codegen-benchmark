@@ -12,9 +12,9 @@ func000000000000002a:
 	ret
 
 func0000000000000074:
+	lui	a2, 2
 	addw	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 1809
+	addi	a1, a2, 1809
 	sltu	a1, a0, a1
 	addi	a1, a1, -1
 	or	a0, a0, a1

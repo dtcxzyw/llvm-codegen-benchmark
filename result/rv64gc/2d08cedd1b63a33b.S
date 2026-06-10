@@ -1,6 +1,6 @@
 func00000000000003e1:
-	sext.w	a1, a1
 	li	a2, 5
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB0_2
 	li	a1, 5
 .LBB0_2:

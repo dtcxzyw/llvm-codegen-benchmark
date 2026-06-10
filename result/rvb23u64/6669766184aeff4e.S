@@ -39,23 +39,23 @@ func000000000000008e:
 	ret
 
 func000000000000005a:
-	not	a3, a1
 	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0
-	sh3add	a0, a3, a0
+	not	a1, a1
+	sh3add	a0, a1, a0
 	ret
 
 func000000000000005b:
-	not	a3, a1
 	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0
-	sh3add	a0, a3, a0
+	not	a1, a1
+	sh3add	a0, a1, a0
 	ret
 
 func0000000000000010:
-	not	a3, a1
 	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0
-	sh3add	a0, a3, a0
+	not	a1, a1
+	sh3add	a0, a1, a0
 	ret
 

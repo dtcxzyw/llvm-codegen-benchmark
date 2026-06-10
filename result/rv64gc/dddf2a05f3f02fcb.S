@@ -73,10 +73,10 @@ func0000000000000074:
 	ret
 
 func00000000000001c1:
+	li	a3, -17
 	add	a1, a1, a2
-	li	a2, -17
-	srli	a2, a2, 4
-	and	a1, a1, a2
+	srli	a3, a3, 4
+	and	a1, a1, a3
 	addi	a0, a0, 2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -98,10 +98,10 @@ func0000000000000044:
 	ret
 
 func00000000000000f4:
+	li	a3, -7
 	add	a1, a1, a2
-	li	a2, -7
-	srli	a2, a2, 1
-	and	a1, a1, a2
+	srli	a3, a3, 1
+	and	a1, a1, a3
 	addi	a0, a0, 4
 	sltu	a0, a0, a1
 	ret

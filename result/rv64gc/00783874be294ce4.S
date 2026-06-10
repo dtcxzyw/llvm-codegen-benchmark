@@ -8,8 +8,8 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	sext.w	a0, a0
 	li	a1, 8
+	sext.w	a0, a0
 	blt	a1, a0, .LBB1_2
 	li	a0, 8
 .LBB1_2:
@@ -18,8 +18,8 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
 	lui	a1, 1048568
+	sext.w	a0, a0
 	blt	a1, a0, .LBB2_2
 	lui	a0, 1048568
 .LBB2_2:

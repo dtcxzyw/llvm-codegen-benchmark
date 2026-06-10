@@ -1,8 +1,8 @@
 func0000000000000008:
 	lui	a3, 1048575
+	lui	a4, 1
 	and	a2, a2, a3
-	lui	a3, 1
-	add	a1, a1, a3
+	add	a1, a1, a4
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

@@ -1,7 +1,7 @@
 func0000000000000019:
 	mv	a3, a0
-	sext.w	a1, a1
 	lui	a0, 8
+	sext.w	a1, a1
 	subw	a0, a0, a2
 	sext.w	a3, a3
 	bgeu	a0, a1, .LBB0_3
@@ -31,8 +31,8 @@ func0000000000000009:
 	ret
 
 func0000000000000000:
-	sext.w	a1, a1
 	li	a3, 15
+	sext.w	a1, a1
 	subw	a2, a3, a2
 	sext.w	a0, a0
 	bgeu	a1, a2, .LBB2_3

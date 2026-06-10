@@ -14,8 +14,8 @@ func0000000000000007:
 	.quad	0xc13c7dd040000000
 func0000000000000005:
 	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	fcvt.d.lu	fa4, a0
-	fadd.d	fa0, fa4, fa5
+	fcvt.d.lu	fa5, a0
+	fld	fa4, %lo(.LCPI2_0)(a1)
+	fadd.d	fa0, fa5, fa4
 	ret
 

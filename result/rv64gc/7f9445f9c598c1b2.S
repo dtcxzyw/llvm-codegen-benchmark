@@ -1,6 +1,6 @@
 func000000000000001b:
-	sext.w	a0, a0
 	li	a1, 9
+	sext.w	a0, a0
 	beq	a0, a1, .LBB0_2
 	lui	a0, 258048
 	fmv.w.x	fa5, a0
@@ -16,8 +16,8 @@ func000000000000001b:
 	ret
 
 func0000000000000012:
-	sext.w	a0, a0
 	li	a1, 9
+	sext.w	a0, a0
 	beq	a0, a1, .LBB1_2
 	lui	a0, 258732
 	addi	a0, a0, 131

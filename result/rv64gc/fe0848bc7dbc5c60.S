@@ -9,9 +9,9 @@ func0000000000000044:
 	add	a0, a0, a1
 	sltu	a1, a0, a1
 	neg	a1, a1
+	li	a2, -1
 	or	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 5
+	srli	a1, a2, 5
 	bltu	a0, a1, .LBB0_5
 	mv	a0, a1
 .LBB0_5:

@@ -12,9 +12,9 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 56
 	lui	a1, 440584
 	addi	a1, a1, 985
+	slli	a0, a0, 56
 	slli	a1, a1, 8
 	mulhu	a0, a0, a1
 	sext.w	a0, a0
@@ -40,8 +40,8 @@ func0000000000000001:
 	ret
 
 func0000000000000005:
-	zext.b	a0, a0
 	li	a1, -10
+	zext.b	a0, a0
 	mul	a0, a0, a1
 	ret
 

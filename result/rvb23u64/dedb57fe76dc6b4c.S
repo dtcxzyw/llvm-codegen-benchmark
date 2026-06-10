@@ -1,6 +1,6 @@
 func0000000000000015:
-	sraiw	a0, a0, 21
 	li	a1, 292
+	sraiw	a0, a0, 21
 	sub	a1, a1, a0
 	slli	a0, a1, 48
 	lui	a2, 194192

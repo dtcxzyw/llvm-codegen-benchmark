@@ -52,10 +52,10 @@ func0000000000000044:
 func0000000000000043:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v8, v8, v16
+	fmv.d.x	fa5, zero
+	vfmax.vf	v8, v8, fa5
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	fmv.d.x	fa4, zero
-	vfmax.vf	v8, v8, fa4
 	vmflt.vf	v0, v8, fa5
 	ret
 

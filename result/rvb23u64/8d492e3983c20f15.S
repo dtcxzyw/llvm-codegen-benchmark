@@ -5,8 +5,8 @@ func0000000000000031:
 	ld	a3, %lo(.LCPI0_0)(a3)
 	mul	a2, a2, a3
 	mulhu	a4, a1, a3
-	add	a2, a2, a4
 	mul	a1, a1, a3
+	add	a2, a2, a4
 	xor	a1, a1, a2
 	rol	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func0000000000000030:
 	ld	a3, %lo(.LCPI1_0)(a3)
 	mul	a2, a2, a3
 	mulhu	a4, a1, a3
-	add	a2, a2, a4
 	mul	a1, a1, a3
+	add	a2, a2, a4
 	xor	a1, a1, a2
 	rol	a0, a0, a1
 	ret

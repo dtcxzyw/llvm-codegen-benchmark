@@ -17,11 +17,11 @@ func0000000000000015:
 	add	a1, a1, a2
 	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a2, a2, 576
-	add	a0, a0, a2
-	addi	a1, a1, -8
-	and	a0, a0, a1
+	addi	a1, a2, 576
+	lui	a2, 16
+	add	a0, a0, a1
+	addi	a2, a2, -8
+	and	a0, a0, a2
 	ret
 
 func0000000000000030:

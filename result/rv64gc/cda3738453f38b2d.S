@@ -5,10 +5,10 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
+	lui	a3, 12
 	or	a0, a0, a1
 	or	a0, a0, a2
-	lui	a1, 12
-	or	a0, a0, a1
+	or	a0, a0, a3
 	ret
 
 func0000000000000006:
@@ -24,9 +24,9 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
+	lui	a3, 786432
 	or	a0, a0, a1
 	or	a0, a0, a2
-	lui	a1, 786432
-	or	a0, a0, a1
+	or	a0, a0, a3
 	ret
 

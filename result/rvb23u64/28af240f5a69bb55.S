@@ -32,8 +32,8 @@ func000000000000003a:
 	ret
 
 func0000000000000015:
-	zext.h	a2, a2
 	lui	a3, 1048571
+	zext.h	a2, a2
 	addi	a3, a3, 1399
 	mul	a2, a2, a3
 	add	a0, a0, a1

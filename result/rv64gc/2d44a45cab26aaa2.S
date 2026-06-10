@@ -1,6 +1,6 @@
 func0000000000000007:
-	addiw	a1, a1, 8
 	li	a2, 4
+	addiw	a1, a1, 8
 	blt	a2, a1, .LBB0_2
 	li	a1, 4
 .LBB0_2:
@@ -20,8 +20,8 @@ func000000000000000f:
 	ret
 
 func0000000000000017:
-	sext.w	a1, a1
 	li	a2, 2
+	sext.w	a1, a1
 	blt	a2, a1, .LBB2_2
 	li	a1, 2
 .LBB2_2:

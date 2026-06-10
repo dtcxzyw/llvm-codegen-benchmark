@@ -1,18 +1,18 @@
 func0000000000000012:
-	addi	a1, a0, 2
+	flt.d	a1, fa0, fa1
+	addi	a2, a0, 2
 	addi	a0, a0, 1
-	flt.d	a2, fa0, fa1
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	czero.nez	a2, a2, a1
+	czero.eqz	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000014:
-	addi	a1, a0, 2
+	flt.d	a1, fa1, fa0
+	addi	a2, a0, 2
 	addi	a0, a0, 1
-	flt.d	a2, fa1, fa0
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
+	czero.nez	a2, a2, a1
+	czero.eqz	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

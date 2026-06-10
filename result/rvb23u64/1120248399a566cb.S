@@ -22,9 +22,9 @@ func0000000000000002:
 
 func000000000000000e:
 	slli	a1, a1, 8
+	lui	a2, 553590
 	or	a0, a0, a1
-	lui	a1, 553590
-	addi	a1, a1, -1381
+	addi	a1, a2, -1381
 	xor	a0, a0, a1
 	zext.w	a0, a0
 	ret

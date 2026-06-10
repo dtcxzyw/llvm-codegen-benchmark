@@ -8,8 +8,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	neg	a0, a0
 	lui	a1, 1048568
+	neg	a0, a0
 	blt	a1, a0, .LBB1_2
 	lui	a0, 1048568
 .LBB1_2:

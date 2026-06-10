@@ -6,8 +6,8 @@ func000000000000000f:
 	ret
 
 func000000000000000e:
-	zext.b	a0, a0
 	lui	a1, 5
+	zext.b	a0, a0
 	addi	a0, a0, -65
 	bset	a0, zero, a0
 	addi	a1, a1, -976

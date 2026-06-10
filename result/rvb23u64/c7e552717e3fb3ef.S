@@ -1,10 +1,10 @@
 func000000000000000e:
-	srli	a1, a0, 23
-	li	a2, 126
-	slli	a0, a0, 41
-	sub	a2, a2, a1
-	srli	a0, a0, 41
-	bseti	a0, a0, 23
-	srlw	a0, a0, a2
+	li	a1, 126
+	slli	a2, a0, 41
+	srli	a0, a0, 23
+	srli	a2, a2, 41
+	sub	a1, a1, a0
+	bseti	a0, a2, 23
+	srlw	a0, a0, a1
 	ret
 

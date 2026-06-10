@@ -15,11 +15,11 @@ func000000000000002c:
 	ret
 
 func000000000000030c:
+	li	a0, 5
+	slli	a0, a0, 9
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vi	v10, v10, 15
-	li	a0, 5
 	vmsne.vi	v12, v10, 11
-	slli	a0, a0, 9
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret
@@ -61,9 +61,9 @@ func0000000000000281:
 	ret
 
 func0000000000000101:
+	li	a0, 2047
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vi	v10, v10, 15
-	li	a0, 2047
 	vmseq.vi	v12, v10, 0
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10

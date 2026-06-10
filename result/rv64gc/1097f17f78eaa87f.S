@@ -10,12 +10,12 @@ func0000000000000007:
 
 func0000000000000004:
 	zext.b	a2, a2
-	slli	a1, a1, 63
 	addi	a2, a2, -77
-	srai	a1, a1, 63
+	slli	a1, a1, 63
 	snez	a2, a2
-	andi	a1, a1, 6
+	srai	a1, a1, 63
 	addi	a2, a2, -1
+	andi	a1, a1, 6
 	andi	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2

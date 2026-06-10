@@ -24,11 +24,11 @@ func0000000000000010:
 	sltiu	a1, a1, 14
 	orn	a0, a0, a1
 	lui	a1, 1048525
-	addi	a1, a1, -204
 	andi	a0, a0, 1
+	addi	a1, a1, -204
+	lui	a2, 308
 	czero.nez	a0, a1, a0
-	lui	a1, 308
-	addi	a1, a1, 348
+	addi	a1, a2, 348
 	add	a0, a0, a1
 	ret
 

@@ -1,9 +1,9 @@
 func0000000000000021:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v8, v8, 4
 	li	a0, -1
 	slli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsrl.vi	v8, v8, 4
 	lui	a0, 427198
 	addi	a0, a0, -1517
 	slli	a0, a0, 32

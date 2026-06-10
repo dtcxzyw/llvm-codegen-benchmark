@@ -1,6 +1,6 @@
 func0000000000000004:
-	fmadd.s	fa5, fa0, fa0, fa1
 	lui	a0, 219235
+	fmadd.s	fa5, fa0, fa0, fa1
 	addi	a0, a0, 1981
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
@@ -77,8 +77,8 @@ func0000000000000015:
 	ret
 
 func0000000000000005:
-	fmadd.s	fa5, fa0, fa0, fa1
 	lui	a0, 212332
+	fmadd.s	fa5, fa0, fa0, fa1
 	addi	a0, a0, -107
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4

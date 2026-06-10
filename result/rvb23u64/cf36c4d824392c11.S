@@ -12,8 +12,9 @@ func000000000000003f:
 	ret
 
 func0000000000000001:
-	li	a2, 1280
-	sh1add	a1, a1, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	li	a1, 1280
 	sh3add	a0, a1, a0
 	ret
 

@@ -30,12 +30,12 @@ func0000000000000008:
 
 func0000000000000049:
 	zext.b	a1, a1
-	lui	a2, 96
 	sltiu	a1, a1, 11
-	neg	a1, a1
-	and	a1, a1, a2
 	lui	a2, 2048
+	neg	a1, a1
+	lui	a3, 96
 	addi	a2, a2, 128
+	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

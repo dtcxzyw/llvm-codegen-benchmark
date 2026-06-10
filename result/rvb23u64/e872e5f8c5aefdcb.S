@@ -1,15 +1,15 @@
 func0000000000000089:
 	sh3add	a2, a2, a1
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	andn	a0, a2, a0
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	andn	a0, a0, a1
 	ret
 
 func0000000000000889:
 	sh3add	a2, a2, a1
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	andn	a0, a2, a0
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	andn	a0, a0, a1
 	ret
 
 func0000000000000885:
@@ -50,10 +50,10 @@ func0000000000000c85:
 
 func0000000000000d8c:
 	add	a2, a2, a1
-	xor	a1, a1, a0
-	xor	a0, a0, a2
+	xor	a2, a2, a0
+	xor	a0, a0, a1
+	snez	a1, a2
 	snez	a0, a0
-	snez	a1, a1
 	and	a0, a0, a1
 	ret
 

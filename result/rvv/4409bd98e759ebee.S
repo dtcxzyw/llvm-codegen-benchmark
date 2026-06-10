@@ -19,9 +19,9 @@ func0000000000000021:
 	ret
 
 func0000000000000061:
-	lui	a0, 32768
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
+	lui	a0, 32768
 	vrsub.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

@@ -1,6 +1,6 @@
 func0000000000000007:
-	sext.w	a1, a1
 	xori	a2, a2, 2
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

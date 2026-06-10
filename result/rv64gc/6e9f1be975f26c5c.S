@@ -6,22 +6,22 @@ func0000000000000006:
 	ret
 
 func00000000000000a1:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 61
 	add	a0, a0, a1
-	slli	a2, a2, 61
-	addi	a1, a2, 63
+	addi	a1, a3, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000008:
 	add	a1, a1, a2
-	lui	a2, 2
 	add	a0, a0, a1
+	lui	a1, 2
 	addi	a0, a0, 1
-	addi	a2, a2, -3
-	sltu	a0, a2, a0
+	addi	a1, a1, -3
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000004:
@@ -35,11 +35,11 @@ func0000000000000004:
 
 func00000000000007e6:
 	add	a1, a1, a2
-	lui	a2, 16
 	add	a0, a0, a1
+	lui	a1, 16
 	addi	a0, a0, 8
-	addi	a2, a2, 7
-	slt	a0, a0, a2
+	addi	a1, a1, 7
+	slt	a0, a0, a1
 	ret
 
 func0000000000000788:
@@ -52,19 +52,19 @@ func0000000000000788:
 
 func0000000000000604:
 	add	a1, a1, a2
-	lui	a2, 64
 	add	a0, a0, a1
+	lui	a1, 64
 	addi	a0, a0, 16
-	addi	a2, a2, -7
-	sltu	a0, a0, a2
+	addi	a1, a1, -7
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000608:
 	add	a1, a1, a2
-	lui	a2, 51
 	add	a0, a0, a1
+	lui	a1, 51
 	addi	a0, a0, 20
-	addi	a1, a2, 811
+	addi	a1, a1, 811
 	sltu	a0, a1, a0
 	ret
 
@@ -78,10 +78,10 @@ func0000000000000001:
 
 func0000000000000784:
 	add	a1, a1, a2
-	lui	a2, 1048575
 	add	a0, a0, a1
+	lui	a1, 1048575
 	addi	a0, a0, 176
-	addi	a1, a2, 2047
+	addi	a1, a1, 2047
 	sltu	a0, a0, a1
 	ret
 
@@ -94,32 +94,32 @@ func00000000000002f8:
 	ret
 
 func0000000000000221:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 60
 	add	a0, a0, a1
-	slli	a2, a2, 60
-	addi	a1, a2, 63
+	addi	a1, a3, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000201:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 60
 	add	a0, a0, a1
-	slli	a2, a2, 60
-	addi	a1, a2, 63
+	addi	a1, a3, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000281:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 59
 	add	a0, a0, a1
-	slli	a2, a2, 59
-	addi	a2, a2, 31
-	xor	a0, a0, a2
+	addi	a3, a3, 31
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 
@@ -133,12 +133,12 @@ func00000000000007e4:
 
 func0000000000000204:
 	add	a1, a1, a2
-	lui	a2, 1048575
 	add	a0, a0, a1
 	addi	a0, a0, -2048
+	lui	a1, 1048575
 	addi	a0, a0, -2047
-	addi	a2, a2, -1
-	sltu	a0, a0, a2
+	addi	a1, a1, -1
+	sltu	a0, a0, a1
 	ret
 
 func000000000000070c:

@@ -53,10 +53,10 @@ func0000000000000007:
 .LCPI4_1:
 	.quad	0x3fe570a3d70a3d71
 func000000000000000c:
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vv	v8, v8, v16
+	lui	a0, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a0)
 	vfdiv.vf	v8, v8, fa5
 	lui	a0, %hi(.LCPI4_1)
 	fld	fa5, %lo(.LCPI4_1)(a0)

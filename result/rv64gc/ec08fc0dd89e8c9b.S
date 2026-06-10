@@ -89,9 +89,9 @@ func0000000000000035:
 func0000000000000042:
 	lui	a0, %hi(.promoted_doubles.func0000000000000042)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000042)
+	fsub.d	fa4, fa1, fa2
 	fld	fa3, 0(a0)
 	fld	fa5, 8(a0)
-	fsub.d	fa4, fa1, fa2
 	flt.d	a0, fa3, fa4
 	bnez	a0, .LBB7_2
 	fmv.d	fa0, fa4

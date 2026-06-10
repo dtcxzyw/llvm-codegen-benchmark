@@ -31,18 +31,18 @@ func0000000000000302:
 	ret
 
 func0000000000000318:
+	li	a0, 25
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 12
-	li	a0, 25
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmand.mm	v0, v8, v0
 	ret
 
 func0000000000000102:
+	li	a0, 28
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, 2
-	li	a0, 28
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmand.mm	v0, v8, v0

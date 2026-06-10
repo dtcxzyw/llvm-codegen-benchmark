@@ -98,10 +98,10 @@ func000000000000000c:
 	ret
 
 func000000000000003b:
+	lui	a2, 32
 	sub	a0, a0, a1
-	lui	a1, 32
-	addi	a1, a1, -32
-	add	a0, a0, a1
+	addi	a2, a2, -32
+	add	a0, a0, a2
 	ret
 
 func0000000000000033:

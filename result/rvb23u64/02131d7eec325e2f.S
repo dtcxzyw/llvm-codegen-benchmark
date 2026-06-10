@@ -1,7 +1,7 @@
 func0000000000000584:
 	andi	a1, a0, 13
-	addiw	a0, a0, -3
 	addi	a1, a1, -5
+	addiw	a0, a0, -3
 	snez	a1, a1
 	sltiu	a0, a0, -2
 	and	a0, a0, a1
@@ -9,41 +9,41 @@ func0000000000000584:
 
 func000000000000008c:
 	lui	a1, 1048352
-	srliw	a2, a0, 4
+	lui	a2, 1
 	addi	a1, a1, -496
+	srliw	a3, a0, 4
+	addi	a2, a2, -32
 	addw	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -32
-	xor	a1, a1, a2
+	xor	a2, a2, a3
 	sltiu	a0, a0, -240
-	snez	a1, a1
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000184:
 	lui	a1, 16
-	lui	a2, 1048562
 	addi	a1, a1, -2
+	lui	a2, 1048562
 	add	a2, a2, a0
 	and	a0, a0, a1
-	srliw	a2, a2, 13
 	xor	a0, a0, a1
+	srliw	a1, a2, 13
 	snez	a0, a0
-	sltiu	a1, a2, 129
+	sltiu	a1, a1, 129
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	andi	a1, a0, 7
-	addiw	a0, a0, -1
-	sltiu	a0, a0, 1600
-	czero.nez	a0, a0, a1
+	addiw	a1, a0, -1
+	andi	a0, a0, 7
+	sltiu	a1, a1, 1600
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000424:
 	andi	a1, a0, 6
-	addiw	a0, a0, -2
 	addi	a1, a1, -2
+	addiw	a0, a0, -2
 	seqz	a1, a1
 	sltiu	a0, a0, 3
 	and	a0, a0, a1

@@ -23,8 +23,8 @@ func0000000000001b08:
 
 func0000000000001842:
 	addi	a2, a2, 24
-	addi	a0, a0, -2
 	xor	a1, a1, a2
+	addi	a0, a0, -2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -47,8 +47,8 @@ func0000000000000110:
 
 func0000000000001a02:
 	addi	a2, a2, 24
-	sltiu	a1, a1, 8
 	xor	a0, a0, a2
+	sltiu	a1, a1, 8
 	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1

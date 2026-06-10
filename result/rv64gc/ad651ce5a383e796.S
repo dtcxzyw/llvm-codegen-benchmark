@@ -1,6 +1,6 @@
 func0000000000000061:
-	srli	a1, a1, 16
 	li	a2, 20
+	srli	a1, a1, 16
 	bltu	a1, a2, .LBB0_2
 	li	a1, 20
 .LBB0_2:
@@ -10,8 +10,8 @@ func0000000000000061:
 	ret
 
 func00000000000000e1:
-	srli	a1, a1, 3
 	li	a2, 10
+	srli	a1, a1, 3
 	bltu	a1, a2, .LBB1_2
 	li	a1, 10
 .LBB1_2:

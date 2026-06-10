@@ -1,6 +1,6 @@
 func000000000000001e:
-	zext.b	a2, a2
 	slli	a1, a1, 48
+	zext.b	a2, a2
 	srli	a1, a1, 48
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -8,8 +8,8 @@ func000000000000001e:
 	ret
 
 func000000000000003e:
-	zext.b	a2, a2
 	slli	a1, a1, 48
+	zext.b	a2, a2
 	srli	a1, a1, 48
 	mul	a1, a1, a2
 	add	a0, a0, a1

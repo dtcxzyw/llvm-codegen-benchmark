@@ -1,7 +1,7 @@
 func00000000000000ef:
-	addi	a2, a2, -1
 	li	a3, 332
 	mul	a1, a1, a3
+	addi	a2, a2, -1
 	add	a0, a0, a1
 	sh2add.uw	a0, a2, a0
 	addi	a0, a0, 4
@@ -17,11 +17,11 @@ func000000000000004c:
 	ret
 
 func000000000000002f:
-	addi	a2, a2, -1
 	sh2add	a3, a1, a1
-	andi	a2, a2, 3
 	sh1add	a1, a3, a1
+	addi	a2, a2, -1
 	sh3add	a0, a1, a0
+	andi	a2, a2, 3
 	sh3add	a0, a2, a0
 	addi	a0, a0, 56
 	ret

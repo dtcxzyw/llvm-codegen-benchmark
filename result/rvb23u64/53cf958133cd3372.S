@@ -1,7 +1,7 @@
 func0000000000000189:
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -1366
+	addi	a2, a3, -1366
 	mul	a1, a1, a2
 	lui	a2, 131051
 	addi	a2, a2, -1376
@@ -11,9 +11,9 @@ func0000000000000189:
 	ret
 
 func00000000000000a9:
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -1366
+	addi	a2, a3, -1366
 	mul	a1, a1, a2
 	lui	a2, 131051
 	addi	a2, a2, -1376

@@ -1,8 +1,8 @@
 func000000000000018c:
-	andi	a2, a0, 31
-	xor	a0, a0, a1
-	snez	a0, a0
-	czero.eqz	a0, a0, a2
+	xor	a1, a1, a0
+	andi	a0, a0, 31
+	snez	a1, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000028:
@@ -12,9 +12,9 @@ func0000000000000028:
 	ret
 
 func000000000000002c:
-	sltiu	a2, a0, 4
-	xor	a0, a0, a1
-	seqz	a0, a0
-	andn	a0, a0, a2
+	xor	a1, a1, a0
+	sltiu	a0, a0, 4
+	seqz	a1, a1
+	andn	a0, a1, a0
 	ret
 

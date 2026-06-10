@@ -80,9 +80,9 @@ func0000000000000048:
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
-	lui	a2, 174763
 	mulw	a0, a0, a1
-	addi	a1, a2, -1366
+	lui	a1, 174763
+	addi	a1, a1, -1366
 	sltu	a0, a1, a0
 	ret
 

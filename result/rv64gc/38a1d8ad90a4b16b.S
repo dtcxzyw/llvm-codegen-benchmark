@@ -8,8 +8,8 @@ func0000000000000009:
 	ret
 
 func0000000000000000:
-	addiw	a1, a1, -457
 	lui	a2, 419430
+	addiw	a1, a1, -457
 	addi	a2, a2, 1639
 	mul	a1, a1, a2
 	srli	a2, a1, 63
@@ -19,8 +19,8 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
-	addiw	a1, a1, 125
 	lui	a2, 532610
+	addiw	a1, a1, 125
 	addi	a2, a2, 131
 	mul	a2, a1, a2
 	srli	a2, a2, 32

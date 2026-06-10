@@ -1,6 +1,6 @@
 func000000000000002b:
-	sub	a0, a0, a2
 	slli	a1, a1, 48
+	sub	a0, a0, a2
 	srli	a1, a1, 48
 	add	a0, a0, a1
 	ret
@@ -14,15 +14,15 @@ func000000000000003b:
 	ret
 
 func0000000000000020:
-	sub	a0, a0, a2
 	slli	a1, a1, 48
+	sub	a0, a0, a2
 	srli	a1, a1, 48
 	add	a0, a0, a1
 	ret
 
 func000000000000001b:
-	sub	a0, a0, a2
 	slli	a1, a1, 48
+	sub	a0, a0, a2
 	srli	a1, a1, 48
 	add	a0, a0, a1
 	ret

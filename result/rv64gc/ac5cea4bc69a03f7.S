@@ -1,16 +1,16 @@
 func0000000000000044:
 	fabs.s	fa5, fa1
 	lui	a1, 297334
-	fmax.s	fa5, fa0, fa5
 	addi	a1, a1, 1888
+	fmax.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 
 func00000000000000dd:
-	fabs.s	fa5, fa1
 	lui	a1, 212992
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	flt.s	a2, fa0, fa4

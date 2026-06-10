@@ -15,9 +15,9 @@ func0000000000000424:
 
 func0000000000000586:
 	lui	a3, 8
-	srli	a0, a0, 63
 	addi	a3, a3, -1
 	xor	a1, a1, a3
+	srli	a0, a0, 63
 	czero.nez	a2, a0, a2
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

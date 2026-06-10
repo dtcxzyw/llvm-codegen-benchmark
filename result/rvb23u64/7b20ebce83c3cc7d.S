@@ -2,9 +2,9 @@ func0000000000000010:
 	andi	a0, a0, 1
 	slli	a1, a1, 23
 	lui	a2, 122880
+	lui	a3, 8192
 	czero.eqz	a0, a2, a0
-	lui	a2, 8192
-	add	a1, a1, a2
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

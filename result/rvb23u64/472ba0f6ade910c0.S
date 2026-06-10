@@ -11,8 +11,8 @@ func0000000000000008:
 
 func0000000000000002:
 	add	a0, a0, a1
-	lui	a1, 335544
 	neg	a0, a0
+	lui	a1, 335544
 	zext.w	a0, a0
 	addi	a1, a1, 1311
 	mul	a0, a0, a1

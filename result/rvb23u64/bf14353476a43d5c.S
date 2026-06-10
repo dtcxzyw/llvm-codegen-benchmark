@@ -6,9 +6,9 @@ func0000000000000014:
 
 func0000000000000050:
 	sub	a1, a1, a2
-	li	a2, 16
 	sh2add	a0, a1, a0
-	bseti	a1, a2, 31
+	li	a1, 16
+	bseti	a1, a1, 31
 	add	a0, a0, a1
 	ret
 

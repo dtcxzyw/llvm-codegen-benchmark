@@ -26,10 +26,10 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	slli	a2, a2, 28
 	slli	a1, a1, 63
-	sraiw	a2, a2, 31
+	slli	a2, a2, 28
 	srai	a1, a1, 63
+	sraiw	a2, a2, 31
 	ori	a1, a1, 1
 	and	a1, a1, a2
 	addw	a0, a0, a1

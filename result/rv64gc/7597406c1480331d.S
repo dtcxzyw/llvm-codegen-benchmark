@@ -9,18 +9,18 @@ func0000000000000005:
 func0000000000000000:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
+	lui	a2, 618
 	add	a0, a0, a1
-	lui	a1, 618
-	addi	a1, a1, -317
+	addi	a1, a2, -317
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000004:
 	slli	a1, a1, 48
 	srai	a1, a1, 48
+	lui	a2, 30
 	add	a0, a0, a1
-	lui	a1, 30
-	addi	a1, a1, -1792
+	addi	a1, a2, -1792
 	mulw	a0, a0, a1
 	ret
 

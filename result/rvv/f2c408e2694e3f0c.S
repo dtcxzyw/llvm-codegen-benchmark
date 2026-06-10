@@ -1,8 +1,8 @@
 func000000000000000b:
 	fli.s	fa5, 0.5
-	lui	a0, 258732
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v12, fa5
+	lui	a0, 258732
 	addi	a0, a0, 131
 	vmerge.vxm	v12, v12, a0, v0
 	vmflt.vv	v16, v12, v8

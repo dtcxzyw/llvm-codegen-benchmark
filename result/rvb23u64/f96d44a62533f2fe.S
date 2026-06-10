@@ -13,9 +13,9 @@ func0000000000000848:
 	lui	a1, 16
 	zext.h	a0, a0
 	addi	a1, a1, -255
-	sltiu	a2, a0, 63
-	xor	a0, a0, a1
-	seqz	a0, a0
-	or	a0, a0, a2
+	xor	a1, a1, a0
+	sltiu	a0, a0, 63
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 

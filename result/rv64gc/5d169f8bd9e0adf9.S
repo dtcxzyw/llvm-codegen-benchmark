@@ -1,6 +1,6 @@
 func000000000000018c:
-	addi	a2, a2, -94
 	lui	a3, 2048
+	addi	a2, a2, -94
 	or	a1, a1, a3
 	sllw	a1, a1, a2
 	lui	a2, 524288
@@ -10,8 +10,8 @@ func000000000000018c:
 	ret
 
 func0000000000000188:
-	addi	a2, a2, -94
 	lui	a3, 2048
+	addi	a2, a2, -94
 	or	a1, a1, a3
 	sllw	a1, a1, a2
 	lui	a2, 524288

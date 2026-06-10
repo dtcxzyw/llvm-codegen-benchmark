@@ -1,8 +1,8 @@
 func000000000000000f:
 	slli	a2, a2, 6
-	slli	a0, a0, 1
 	addi	a2, a2, 432
 	slli	a2, a2, 32
+	slli	a0, a0, 1
 	srli	a2, a2, 31
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -19,9 +19,9 @@ func00000000000001ff:
 
 func000000000000000c:
 	slli	a2, a2, 1
-	slli	a0, a0, 3
 	addi	a2, a2, -2
 	slli	a2, a2, 32
+	slli	a0, a0, 3
 	srli	a2, a2, 29
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -29,9 +29,9 @@ func000000000000000c:
 
 func000000000000000e:
 	slli	a2, a2, 2
-	slli	a0, a0, 2
 	addi	a2, a2, 640
 	slli	a2, a2, 32
+	slli	a0, a0, 2
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -23,10 +23,10 @@ func0000000000000003:
 
 func0000000000000007:
 	lui	a2, 524288
+	lui	a3, 131071
 	sub	a1, a1, a2
-	lui	a2, 131071
-	slli	a2, a2, 20
-	and	a1, a1, a2
+	slli	a3, a3, 20
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -43,9 +43,9 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	addi	a1, a1, 112
 	li	a2, 1
 	slli	a2, a2, 37
+	addi	a1, a1, 112
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	or	a0, a0, a1

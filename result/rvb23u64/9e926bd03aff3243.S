@@ -1,7 +1,7 @@
 func000000000000000f:
 	addi	a1, a1, -9
-	srli	a0, a0, 43
 	zext.b	a1, a1
+	srli	a0, a0, 43
 	slli	a1, a1, 28
 	slli	a0, a0, 43
 	or	a0, a0, a1

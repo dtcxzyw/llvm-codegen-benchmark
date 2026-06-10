@@ -1,6 +1,6 @@
 func0000000000000006:
-	bset	a0, zero, a0
 	li	a1, -24
+	bset	a0, zero, a0
 	rori	a1, a1, 4
 	andn	a0, a0, a1
 	ret

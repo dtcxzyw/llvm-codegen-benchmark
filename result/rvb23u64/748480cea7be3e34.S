@@ -1,7 +1,7 @@
 func000000000000002c:
 	zext.b	a1, a1
-	srli	a2, a2, 25
 	addi	a1, a1, -95
+	srli	a2, a2, 25
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func000000000000002c:
 
 func0000000000000181:
 	zext.b	a1, a1
-	bexti	a2, a2, 25
 	addi	a1, a1, -95
+	bexti	a2, a2, 25
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

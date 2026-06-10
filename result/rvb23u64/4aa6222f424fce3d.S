@@ -1,19 +1,19 @@
 func0000000000000021:
 	or	a1, a1, a2
 	lui	a2, 131088
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
+	li	a3, 2
 	xor	a1, a1, a2
-	li	a2, 2
-	sub	a2, a2, a0
-	czero.eqz	a0, a2, a1
+	sub	a3, a3, a0
+	czero.eqz	a0, a3, a1
 	ret
 
 func000000000000002a:
-	andi	a0, a0, 1
 	or	a1, a1, a2
-	lui	a2, 8
+	andi	a0, a0, 1
 	sext.w	a1, a1
+	lui	a2, 8
 	addi	a3, a2, 1131
 	slli	a0, a0, 10
 	slt	a1, a3, a1

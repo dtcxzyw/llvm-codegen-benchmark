@@ -6,9 +6,9 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
+	lui	a0, 522240
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	lui	a0, 522240
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

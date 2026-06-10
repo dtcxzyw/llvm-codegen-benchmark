@@ -8,8 +8,8 @@ func00000000000000cc:
 
 func0000000000000011:
 	fsub.s	fa5, fa1, fa2
-	feq.s	a0, fa5, fa5
-	feq.s	a1, fa0, fa0
+	feq.s	a0, fa0, fa0
+	feq.s	a1, fa5, fa5
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -23,9 +23,9 @@ func0000000000000055:
 	ret
 
 func0000000000000022:
-	fsub.s	fa5, fa1, fa2
 	lui	a0, 253133
 	addi	a0, a0, -819
+	fsub.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	flt.s	a1, fa0, fa4

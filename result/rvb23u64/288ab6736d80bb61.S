@@ -36,8 +36,8 @@ func00000000000004d4:
 	ret
 
 func0000000000000438:
-	sext.w	a1, a1
 	lui	a2, 16
+	sext.w	a1, a1
 	sub	a2, a2, a0
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -57,8 +57,8 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
-	neg	a2, a0
 	addiw	a1, a1, -45
+	neg	a2, a0
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	lui	a2, 524288

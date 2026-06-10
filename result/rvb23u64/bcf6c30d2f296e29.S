@@ -63,9 +63,9 @@ func0000000000000029:
 func0000000000000011:
 	sext.w	a2, a2
 	sltiu	a2, a2, 999
+	lui	a3, 1048575
 	and	a1, a1, a2
-	lui	a2, 1048575
-	addi	a2, a2, -904
+	addi	a2, a3, -904
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret

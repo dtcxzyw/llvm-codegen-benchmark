@@ -31,11 +31,11 @@ func0000000000000088:
 	ret
 
 func00000000000000a4:
+	lui	a0, 384
+	addi	a0, a0, -23
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 384
 	vmsleu.vv	v12, v10, v8
-	addi	a0, a0, -23
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v8, v12
 	ret

@@ -33,9 +33,9 @@ func0000000000000302:
 func0000000000000102:
 	lui	a0, 1048572
 	addi	a1, a0, 3
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	addi	a0, a0, -1
 	vmsltu.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v8, v8, 0
@@ -82,9 +82,9 @@ func0000000000000b02:
 func0000000000000918:
 	lui	a0, 524288
 	addi	a1, a0, 3
-	addi	a0, a0, 4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	addi	a0, a0, 4
 	vmsltu.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vi	v8, v8, 1
@@ -106,9 +106,9 @@ func0000000000000210:
 func0000000000000b10:
 	li	a0, -1
 	bclri	a1, a0, 32
-	slli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	slli	a0, a0, 32
 	vmsltu.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vi	v8, v8, 1

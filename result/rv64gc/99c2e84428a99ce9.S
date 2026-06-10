@@ -17,8 +17,8 @@ func000000000000002c:
 func0000000000000028:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	seqz	a1, a1
 	sltiu	a0, a0, 65
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

@@ -1,14 +1,14 @@
 func0000000000000021:
-	sext.w	a0, a0
 	andi	a3, a1, 1
-	lui	a1, 8192
+	sext.w	a1, a0
+	lui	a0, 8192
 	bnez	a3, .LBB0_2
-	mv	a1, a2
+	mv	a0, a2
 .LBB0_2:
 	lui	a2, 12
-	xor	a0, a0, a2
-	seqz	a0, a0
-	slli	a0, a0, 20
+	xor	a1, a1, a2
+	seqz	a1, a1
+	slli	a1, a1, 20
 	or	a0, a0, a1
 	ret
 
@@ -24,8 +24,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	andi	a3, a1, 1
+	sext.w	a0, a0
 	lui	a1, 272
 	bnez	a3, .LBB2_2
 	mv	a1, a2

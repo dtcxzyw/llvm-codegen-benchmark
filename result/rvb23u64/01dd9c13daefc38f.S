@@ -17,10 +17,10 @@ func00000000000028b4:
 	ret
 
 func0000000000000a85:
+	sltiu	a1, a1, -16
 	add	a2, a2, a0
 	addi	a2, a2, -32
 	sltu	a0, a2, a0
-	sltiu	a1, a1, -16
 	andn	a0, a1, a0
 	ret
 

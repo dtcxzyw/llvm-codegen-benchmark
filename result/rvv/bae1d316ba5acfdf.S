@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.quad	230584300921369395
 func0000000000000288:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a1, 12
-	vmacc.vx	v8, a1, v12
+	li	a0, 12
+	vmacc.vx	v8, a0, v12
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -20,9 +20,9 @@ func0000000000000281:
 
 func0000000000000204:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v12, v12, 2
 	vadd.vv	v8, v8, v10
-	vsll.vi	v10, v12, 2
-	vsub.vv	v8, v8, v10
+	vsub.vv	v8, v8, v12
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -39,9 +39,9 @@ func000000000000020a:
 	ret
 
 func0000000000000001:
+	li	a0, -10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -10
 	vmul.vx	v8, v8, a0
 	vrsub.vi	v10, v10, 0
 	vmseq.vv	v0, v8, v10
@@ -74,20 +74,20 @@ func0000000000000401:
 	ret
 
 func000000000000040c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v10, v12
 	lui	a0, 1046192
 	addi	a0, a0, -761
 	slli	a0, a0, 10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v10, v10, v12
 	vmul.vx	v8, v8, a0
 	vrsub.vi	v10, v10, 0
 	vmsne.vv	v0, v8, v10
 	ret
 
 func000000000000000c:
+	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 10
 	vmul.vx	v8, v8, a0
 	vrsub.vi	v10, v10, 0
 	vmsne.vv	v0, v8, v10

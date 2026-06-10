@@ -18,8 +18,8 @@ func0000000000000005:
 	ret
 
 func0000000000000003:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -32,8 +32,8 @@ func0000000000000012:
 	ret
 
 func0000000000000014:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 276832
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -46,8 +46,8 @@ func000000000000000b:
 	ret
 
 func0000000000000013:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 259956
+	fmadd.s	fa5, fa0, fa1, fa2
 	addi	a0, a0, 1773
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
@@ -62,8 +62,8 @@ func0000000000000017:
 	ret
 
 func000000000000000c:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 258458
+	fmadd.s	fa5, fa0, fa1, fa2
 	addi	a0, a0, -1638
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
@@ -94,8 +94,8 @@ func0000000000000007:
 	ret
 
 func000000000000001b:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 260092
+	fmadd.s	fa5, fa0, fa1, fa2
 	addi	a0, a0, -393
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
@@ -121,25 +121,25 @@ func000000000000001c:
 	ret
 
 func0000000000000016:
-	fmadd.s	fa5, fa0, fa1, fa2
-	fmv.w.x	fa4, zero
-	flt.s	a0, fa5, fa4
-	flt.s	a1, fa4, fa5
+	fmv.w.x	fa5, zero
+	fmadd.s	fa4, fa0, fa1, fa2
+	flt.s	a0, fa4, fa5
+	flt.s	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
 func0000000000000019:
-	fmadd.s	fa5, fa0, fa1, fa2
-	fmv.w.x	fa4, zero
-	flt.s	a0, fa5, fa4
-	flt.s	a1, fa4, fa5
+	fmv.w.x	fa5, zero
+	fmadd.s	fa4, fa0, fa1, fa2
+	flt.s	a0, fa4, fa5
+	flt.s	a1, fa5, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000015:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 784384
+	fmadd.s	fa5, fa0, fa1, fa2
 	addi	a0, a0, -2
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4

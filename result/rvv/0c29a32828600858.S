@@ -31,9 +31,9 @@ func00000000000003f4:
 	ret
 
 func00000000000003e4:
+	li	a0, 512
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
-	li	a0, 512
 	vor.vv	v8, v12, v8
 	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
@@ -96,9 +96,9 @@ func0000000000000378:
 	ret
 
 func000000000000032a:
+	li	a0, -32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v12
-	li	a0, -32
 	vor.vv	v8, v8, v12
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8

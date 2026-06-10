@@ -54,9 +54,9 @@ func0000000000000009:
 	ret
 
 func0000000000000008:
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -768
+	addi	a1, a2, -768
 	subw	a0, a1, a0
 	ret
 

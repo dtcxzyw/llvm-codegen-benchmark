@@ -1,10 +1,10 @@
 func00000000000000c0:
 	slli	a1, a1, 3
 	sub	a0, a0, a2
-	lui	a2, 1048544
 	sub	a0, a0, a1
+	lui	a1, 1048544
 	slli	a0, a0, 3
-	addi	a1, a2, -1920
+	addi	a1, a1, -1920
 	add	a0, a0, a1
 	ret
 

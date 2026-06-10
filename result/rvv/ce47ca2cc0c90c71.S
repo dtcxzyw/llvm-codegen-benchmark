@@ -12,9 +12,9 @@ func0000000000000014:
 	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v10, v10, a0
+	vadd.vv	v8, v10, v8
 	li	a0, -1
 	srli	a0, a0, 17
-	vadd.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
 	li	a0, 48
 	vsrl.vx	v8, v8, a0
@@ -25,9 +25,9 @@ func000000000000001e:
 	srli	a0, a0, 13
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
+	vadd.vv	v8, v10, v8
 	lui	a0, 1048574
 	srli	a0, a0, 12
-	vadd.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
 	li	a0, 51
 	vsrl.vx	v8, v8, a0
@@ -37,8 +37,8 @@ func0000000000000018:
 	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v10, v10, a0
-	lui	a0, 1
 	vadd.vv	v8, v10, v8
+	lui	a0, 1
 	addi	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 12

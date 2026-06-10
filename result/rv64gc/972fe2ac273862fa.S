@@ -1,9 +1,9 @@
 func0000000000000030:
-	addi	a1, a1, 127
 	li	a2, 1
-	addi	a0, a0, 127
+	addi	a1, a1, 127
 	slli	a2, a2, 36
 	addi	a2, a2, -128
+	addi	a0, a0, 127
 	and	a1, a1, a2
 	andi	a0, a0, -128
 	add	a0, a0, a1
@@ -19,8 +19,8 @@ func000000000000000c:
 
 func0000000000000000:
 	addi	a1, a1, 1
-	addi	a0, a0, 7
 	slli	a1, a1, 32
+	addi	a0, a0, 7
 	srli	a1, a1, 32
 	andi	a0, a0, -8
 	add	a0, a0, a1

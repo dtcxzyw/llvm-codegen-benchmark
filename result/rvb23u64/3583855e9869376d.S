@@ -61,12 +61,12 @@ func0000000000000077:
 func0000000000000076:
 	lui	a1, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a1)
-	fli.d	fa4, inf
-	flt.d	a1, fa0, fa4
-	feq.d	a2, fa1, fa5
-	xori	a2, a2, 1
-	and	a0, a0, a1
+	feq.d	a1, fa1, fa5
+	fli.d	fa5, inf
+	flt.d	a2, fa0, fa5
+	xori	a1, a1, 1
 	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000011:

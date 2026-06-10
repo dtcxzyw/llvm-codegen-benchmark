@@ -35,9 +35,9 @@ func0000000000000001:
 	li	a1, 65
 	slli	a1, a1, 29
 .LBB3_2:
+	li	a2, 9
 	or	a0, a0, a1
-	li	a1, 9
-	slli	a1, a1, 39
-	or	a0, a0, a1
+	slli	a2, a2, 39
+	or	a0, a0, a2
 	ret
 

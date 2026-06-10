@@ -3,8 +3,8 @@ func0000000000000002:
 	addi	a0, a0, 1808
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmin.vx	v8, v8, a0
-	li	a0, 63
 	vsll.vi	v8, v8, 3
+	li	a0, 63
 	vsra.vx	v10, v8, a0
 	li	a0, 60
 	vsrl.vx	v10, v10, a0
@@ -18,8 +18,8 @@ func0000000000000006:
 	addi	a0, a0, 1808
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmin.vx	v8, v8, a0
-	li	a0, 63
 	vsll.vi	v8, v8, 3
+	li	a0, 63
 	vsra.vx	v10, v8, a0
 	li	a0, 60
 	vsrl.vx	v10, v10, a0

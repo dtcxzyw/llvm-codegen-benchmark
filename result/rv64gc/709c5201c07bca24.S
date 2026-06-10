@@ -6,52 +6,52 @@ func0000000000000068:
 	srliw	a1, a1, 1
 	or	a1, a1, a2
 	lui	a2, 104858
-	srliw	a0, a0, 16
 	addi	a2, a2, -1638
+	srliw	a0, a0, 16
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000004c:
-	sext.w	a1, a0
-	lui	a2, 838861
-	addi	a2, a2, -819
-	mul	a0, a0, a2
-	slliw	a2, a0, 31
-	srliw	a0, a0, 1
-	or	a0, a0, a2
+	lui	a1, 838861
+	addi	a1, a1, -819
+	mul	a1, a0, a1
+	slliw	a2, a1, 31
+	srliw	a1, a1, 1
+	or	a1, a1, a2
 	lui	a2, 104858
+	sext.w	a0, a0
 	addi	a2, a2, -1638
-	sltu	a0, a0, a2
-	slti	a1, a1, 20
+	sltu	a1, a1, a2
+	slti	a0, a0, 20
 	or	a0, a0, a1
 	ret
 
 func0000000000000308:
-	sext.w	a1, a0
-	lui	a2, 699051
-	addi	a2, a2, -1365
-	mulw	a0, a0, a2
+	lui	a1, 699051
+	addi	a1, a1, -1365
+	mulw	a1, a0, a1
 	lui	a2, 349525
+	sext.w	a0, a0
 	addi	a2, a2, 1365
-	sltu	a0, a2, a0
-	sltiu	a1, a1, 9
+	sltu	a1, a2, a1
+	sltiu	a0, a0, 9
 	or	a0, a0, a1
 	ret
 
 func0000000000000048:
-	sext.w	a1, a0
-	lui	a2, 159384
-	addi	a2, a2, -1835
-	mul	a0, a0, a2
-	slliw	a2, a0, 29
-	srliw	a0, a0, 3
-	or	a0, a0, a2
+	lui	a1, 159384
+	addi	a1, a1, -1835
+	mul	a1, a0, a1
+	slliw	a2, a1, 29
+	srliw	a1, a1, 3
+	or	a1, a1, a2
 	lui	a2, 1049
+	sext.w	a0, a0
 	addi	a2, a2, -1736
-	sltu	a0, a0, a2
-	sltiu	a1, a1, 100
+	sltu	a1, a1, a2
+	sltiu	a0, a0, 100
 	or	a0, a0, a1
 	ret
 

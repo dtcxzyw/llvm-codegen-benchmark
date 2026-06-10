@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func0000000000000030:
-	addi	a2, a2, 127
 	bseti	a3, zero, 36
+	addi	a2, a2, 127
 	addi	a3, a3, -128
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -28,8 +28,8 @@ func0000000000000005:
 	ret
 
 func000000000000003c:
-	addi	a2, a2, 3
 	bseti	a3, zero, 33
+	addi	a2, a2, 3
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -37,8 +37,8 @@ func000000000000003c:
 	ret
 
 func000000000000003f:
-	addi	a2, a2, 3
 	bseti	a3, zero, 33
+	addi	a2, a2, 3
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1

@@ -39,9 +39,9 @@ func0000000000000308:
 	ret
 
 func0000000000000518:
-	bexti	a1, a1, 8
 	lui	a2, 524288
 	addiw	a2, a2, -511
+	bexti	a1, a1, 8
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -107,10 +107,10 @@ func0000000000000610:
 
 func0000000000000054:
 	lui	a2, 4
-	slti	a0, a0, 509
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a1, a1, a2
+	slti	a0, a0, 509
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

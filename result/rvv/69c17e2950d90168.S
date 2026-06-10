@@ -1,7 +1,7 @@
 func000000000000004a:
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 256
 	vmseq.vx	v0, v10, a0
 	lui	a0, 16
 	addi	a0, a0, -256

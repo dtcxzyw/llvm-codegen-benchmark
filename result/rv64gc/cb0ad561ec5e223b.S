@@ -142,10 +142,10 @@ func0000000000000184:
 	ret
 
 func00000000000001e9:
+	lui	a3, 16
 	add	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	add	a1, a1, a2
+	addi	a3, a3, -1
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

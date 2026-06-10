@@ -1,7 +1,7 @@
 func0000000000000065:
 	sext.w	a3, a2
-	addi	a2, a2, -7
 	slti	a3, a3, 1
+	addi	a2, a2, -7
 	czero.nez	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -21,9 +21,9 @@ func0000000000000010:
 	sext.w	a3, a2
 	lui	a4, 244
 	addi	a4, a4, 576
+	lui	a5, 24
 	xor	a3, a3, a4
-	lui	a4, 24
-	addi	a4, a4, 1696
+	addi	a4, a5, 1696
 	czero.eqz	a2, a2, a3
 	czero.nez	a3, a4, a3
 	or	a2, a2, a3

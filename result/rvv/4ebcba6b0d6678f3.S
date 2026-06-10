@@ -1,20 +1,20 @@
 func0000000000000018:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v12, v12, 0
 	fmv.w.x	fa5, zero
-	vsetvli	zero, zero, e32, m4, ta, ma
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v13, v8, fa5
-	vmand.mm	v0, v13, v12
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vmseq.vi	v8, v12, 0
+	vmand.mm	v0, v13, v8
 	ret
 
 func0000000000000014:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v12, v12, 8
 	lui	a0, 276672
 	fmv.w.x	fa5, a0
-	vsetvli	zero, zero, e32, m4, ta, ma
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v13, v8, fa5
-	vmand.mm	v0, v13, v12
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vmseq.vi	v8, v12, 8
+	vmand.mm	v0, v13, v8
 	ret
 
 func0000000000000081:

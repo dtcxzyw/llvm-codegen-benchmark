@@ -29,8 +29,8 @@ func0000000000000041:
 	ret
 
 func0000000000000074:
-	addi	a2, a2, 640
 	srli	a1, a1, 6
+	addi	a2, a2, 640
 	sltiu	a1, a1, 59
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

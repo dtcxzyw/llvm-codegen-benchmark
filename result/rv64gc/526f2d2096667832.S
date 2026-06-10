@@ -19,9 +19,9 @@ func00000000000000c1:
 	ret
 
 func0000000000000081:
-	sltu	a1, a1, a0
-	addi	a0, a0, 1
-	seqz	a0, a0
+	addi	a2, a0, 1
+	sltu	a0, a1, a0
+	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -72,9 +72,9 @@ func0000000000000026:
 	ret
 
 func00000000000000c8:
-	slt	a1, a1, a0
-	srli	a0, a0, 31
-	snez	a0, a0
+	srli	a2, a0, 31
+	slt	a0, a1, a0
+	snez	a1, a2
 	or	a0, a0, a1
 	ret
 

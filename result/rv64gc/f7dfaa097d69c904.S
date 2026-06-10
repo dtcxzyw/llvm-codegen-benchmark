@@ -10,10 +10,10 @@ func00000000000000a1:
 
 func00000000000000e1:
 	andi	a1, a1, 1
-	lui	a3, 1048568
-	add	a0, a0, a2
 	addi	a1, a1, -1
+	lui	a3, 1048568
 	and	a1, a1, a3
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	lui	a1, 8
 	xor	a0, a0, a1
@@ -22,8 +22,8 @@ func00000000000000e1:
 
 func0000000000000081:
 	andi	a1, a1, 1
-	lui	a3, 1048568
 	addi	a1, a1, -1
+	lui	a3, 1048568
 	and	a1, a1, a3
 	addw	a1, a1, a2
 	negw	a0, a0

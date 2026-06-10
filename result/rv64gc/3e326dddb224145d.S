@@ -1,22 +1,22 @@
 func0000000000000002:
-	srai	a0, a0, 3
 	lui	a1, 699051
 	addi	a1, a1, -1365
 	slli	a2, a1, 32
+	srai	a0, a0, 3
 	add	a1, a1, a2
-	li	a2, 1023
-	slli	a2, a2, 52
 	mul	a0, a0, a1
+	li	a1, 1023
+	slli	a1, a1, 52
 	fcvt.d.lu	fa5, a0
-	fmv.d.x	fa4, a2
+	fmv.d.x	fa4, a1
 	fdiv.d	fa0, fa4, fa5
 	ret
 
 func0000000000000003:
-	srai	a0, a0, 3
 	lui	a1, 699051
 	addi	a1, a1, -1365
 	slli	a2, a1, 32
+	srai	a0, a0, 3
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	fcvt.d.lu	fa5, a0

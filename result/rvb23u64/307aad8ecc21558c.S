@@ -5,13 +5,13 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	zext.w	a2, a2
+	lui	a3, 524288
 	sltu	a0, a1, a0
-	lui	a1, 524288
-	czero.nez	a2, a2, a0
-	addiw	a1, a1, -2
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	zext.w	a2, a2
+	addiw	a3, a3, -2
+	czero.nez	a1, a2, a0
+	czero.eqz	a0, a3, a0
+	or	a0, a0, a1
 	ret
 
 func0000000000000004:

@@ -1,7 +1,7 @@
 func000000000000001d:
 	lui	a2, 448
-	slli	a0, a0, 12
 	and	a1, a1, a2
+	slli	a0, a0, 12
 	or	a0, a0, a1
 	lui	a1, 1048304
 	addw	a0, a0, a1

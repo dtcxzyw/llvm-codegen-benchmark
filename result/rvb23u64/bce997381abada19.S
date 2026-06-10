@@ -11,10 +11,10 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
+	lui	a3, 917536
 	add	a1, a1, a2
-	lui	a2, 917536
-	srli	a2, a2, 17
-	sltu	a1, a1, a2
+	srli	a3, a3, 17
+	sltu	a1, a1, a3
 	xor	a0, a0, a1
 	ret
 

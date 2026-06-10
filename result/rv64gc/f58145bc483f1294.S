@@ -23,9 +23,9 @@ func000000000000003f:
 func0000000000000015:
 	andi	a2, a2, 1
 	lui	a3, 1
-	slli	a1, a1, 2
 	addi	a2, a2, -1
 	addi	a3, a3, -2017
+	slli	a1, a1, 2
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -38,9 +38,9 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
+	lui	a3, 65
 	or	a1, a1, a2
-	lui	a2, 65
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ori	a0, a0, 2
 	ret
@@ -55,9 +55,9 @@ func0000000000000002:
 
 func0000000000000004:
 	lui	a3, 788496
+	addi	a3, a3, -1
 	or	a0, a0, a1
 	lui	a1, 1024
-	addi	a3, a3, -1
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

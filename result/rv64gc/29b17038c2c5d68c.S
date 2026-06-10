@@ -7,9 +7,9 @@ func0000000000000000:
 func000000000000000c:
 	mulw	a1, a1, a2
 	lui	a2, 12
+	addi	a2, a2, 672
 	slli	a1, a1, 2
-	add	a0, a0, a1
-	addi	a1, a2, 672
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

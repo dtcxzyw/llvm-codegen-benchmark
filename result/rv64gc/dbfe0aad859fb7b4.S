@@ -1,6 +1,6 @@
 func0000000000000006:
-	addiw	a1, a1, 2
 	lui	a2, 349525
+	addiw	a1, a1, 2
 	addi	a2, a2, 1366
 	mul	a2, a1, a2
 	srli	a3, a2, 63
@@ -14,8 +14,8 @@ func0000000000000006:
 	ret
 
 func0000000000000002:
-	addiw	a1, a1, 1
 	lui	a2, 174763
+	addiw	a1, a1, 1
 	addi	a2, a2, -1365
 	mul	a2, a1, a2
 	srli	a3, a2, 63
@@ -42,11 +42,11 @@ func0000000000000000:
 
 func0000000000000004:
 	lui	a2, 1048565
-	lui	a3, 599186
 	addi	a2, a2, 1024
-	addi	a3, a3, 1171
+	lui	a3, 599186
 	addw	a1, a1, a2
-	mul	a2, a1, a3
+	addi	a2, a3, 1171
+	mul	a2, a1, a2
 	srli	a2, a2, 32
 	add	a2, a2, a1
 	srliw	a3, a2, 31

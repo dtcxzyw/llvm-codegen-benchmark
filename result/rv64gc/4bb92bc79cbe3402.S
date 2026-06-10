@@ -9,10 +9,10 @@ func0000000000000000:
 
 func0000000000000005:
 	andi	a2, a2, 1
-	slli	a0, a0, 63
 	addi	a2, a2, -1
-	srai	a0, a0, 63
+	slli	a0, a0, 63
 	ori	a2, a2, 11
+	srai	a0, a0, 63
 	add	a1, a1, a2
 	andi	a0, a0, -12
 	addw	a0, a0, a1
@@ -22,15 +22,15 @@ func000000000000000f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB2_2
 	li	a2, 9
-	add	a1, a1, a2
 	andi	a0, a0, 1
+	add	a1, a1, a2
 	slli	a0, a0, 2
 	addw	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a2, 5
-	add	a1, a1, a2
 	andi	a0, a0, 1
+	add	a1, a1, a2
 	slli	a0, a0, 2
 	addw	a0, a0, a1
 	ret

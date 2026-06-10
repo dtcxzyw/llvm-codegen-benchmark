@@ -30,11 +30,11 @@ func0000000000000015:
 	ret
 
 func000000000000001f:
-	andi	a1, a1, 1
 	sext.w	a2, a2
+	andi	a1, a1, 1
 	snez	a2, a2
-	addi	a1, a1, -1
 	sh1add	a0, a2, a0
+	addi	a1, a1, -1
 	andi	a1, a1, 2
 	addw	a0, a0, a1
 	ret

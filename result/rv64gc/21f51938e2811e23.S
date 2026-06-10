@@ -16,17 +16,17 @@ func0000000000000084:
 
 func000000000000008c:
 	zext.b	a2, a2
+	addi	a2, a2, -48
 	xor	a0, a0, a1
-	addi	a1, a2, -48
-	sltiu	a1, a1, 10
+	sltiu	a1, a2, 10
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000081:
 	zext.b	a2, a2
-	xor	a0, a0, a1
 	addi	a2, a2, -5
+	xor	a0, a0, a1
 	sltiu	a1, a2, 31
 	seqz	a0, a0
 	and	a0, a0, a1

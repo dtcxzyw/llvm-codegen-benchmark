@@ -22,14 +22,14 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	fmv.d	fa5, fa0
 	lui	a0, 32941
 	slli	a0, a0, 35
-	fmv.d.x	fa0, a0
-	flt.d	a0, fa0, fa5
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB2_2
-	fmul.d	fa0, fa1, fa2
+	fmul.d	fa5, fa1, fa2
 .LBB2_2:
+	fmv.d	fa0, fa5
 	ret
 
 .LCPI3_0:

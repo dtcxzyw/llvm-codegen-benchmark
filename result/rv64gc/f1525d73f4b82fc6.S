@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	li	a2, -18
+	sext.w	a0, a0
 	lui	a1, %hi(.promoted_doubles.func0000000000000021)
 	addi	a1, a1, %lo(.promoted_doubles.func0000000000000021)
 	beq	a0, a2, .LBB0_2

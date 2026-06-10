@@ -1,6 +1,6 @@
 func0000000000000014:
-	fabs.d	fa5, fa1
 	lui	a0, 4105
+	fabs.d	fa5, fa1
 	slli	a0, a0, 38
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
@@ -15,9 +15,9 @@ func0000000000000014:
 	.quad	0x3f1a36e2eb1c432d
 func0000000000000002:
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fabs.d	fa4, fa1
-	flt.d	a0, fa4, fa5
+	fabs.d	fa5, fa1
+	fld	fa4, %lo(.LCPI1_0)(a0)
+	flt.d	a0, fa5, fa4
 	bnez	a0, .LBB1_2
 	fmv.d.x	fa0, zero
 .LBB1_2:
@@ -26,9 +26,9 @@ func0000000000000002:
 func0000000000000004:
 	lui	a0, %hi(.promoted_doubles.func0000000000000004)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000004)
-	fld	fa5, 0(a0)
-	fabs.d	fa4, fa1
-	flt.d	a1, fa5, fa4
+	fabs.d	fa5, fa1
+	fld	fa4, 0(a0)
+	flt.d	a1, fa4, fa5
 	bnez	a1, .LBB2_2
 	fld	fa0, 8(a0)
 .LBB2_2:

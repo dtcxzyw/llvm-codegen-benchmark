@@ -34,8 +34,8 @@ func00000000000000bd:
 	fmv.w.x	fa5, zero
 	vmflt.vf	v12, v8, fa5
 	fli.s	fa5, 1.0
-	vmnot.m	v12, v12
 	vmfgt.vf	v13, v8, fa5
-	vmandn.mm	v0, v12, v13
+	vmnot.m	v8, v12
+	vmandn.mm	v0, v8, v13
 	ret
 

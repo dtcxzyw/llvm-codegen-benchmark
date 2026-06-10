@@ -23,11 +23,11 @@ func0000000000000041:
 	ret
 
 func000000000000004c:
+	lui	a2, 16
 	and	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	xor	a0, a0, a1
+	addi	a2, a2, -1
+	and	a0, a0, a2
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 

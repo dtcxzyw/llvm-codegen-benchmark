@@ -80,8 +80,8 @@ func0000000000000020:
 	ret
 
 func0000000000000006:
-	zext.h	a1, a1
 	lui	a2, 16
+	zext.h	a1, a1
 	addi	a2, a2, -1
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -131,8 +131,8 @@ func0000000000000051:
 
 func0000000000000022:
 	zext.h	a1, a1
-	lui	a2, 16
 	sltiu	a1, a1, 2
+	lui	a2, 16
 	xori	a1, a1, 1
 	add	a0, a0, a2
 	addw	a0, a0, a1
@@ -140,8 +140,8 @@ func0000000000000022:
 
 func0000000000000062:
 	zext.h	a1, a1
-	lui	a2, 16
 	sltiu	a1, a1, 7
+	lui	a2, 16
 	xori	a1, a1, 1
 	add	a0, a0, a2
 	addw	a0, a0, a1

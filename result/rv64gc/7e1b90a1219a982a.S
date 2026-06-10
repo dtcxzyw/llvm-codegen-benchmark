@@ -9,11 +9,11 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	zext.b	a1, a0
-	lui	a2, 4096
-	addi	a1, a1, 2
-	addi	a2, a2, -256
-	and	a0, a0, a2
-	or	a0, a0, a1
+	lui	a1, 4096
+	zext.b	a2, a0
+	addi	a1, a1, -256
+	addi	a2, a2, 2
+	and	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

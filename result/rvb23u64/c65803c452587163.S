@@ -24,9 +24,9 @@ func0000000000000180:
 
 func000000000000002b:
 	zext.b	a2, a2
-	slli	a1, a1, 5
 	addi	a2, a2, -7
 	seqz	a2, a2
+	slli	a1, a1, 5
 	add	a0, a0, a1
 	slli	a2, a2, 5
 	add	a0, a0, a2

@@ -7,8 +7,8 @@ func000000000000003f:
 	ret
 
 func000000000000003e:
-	zext.h	a1, a1
 	sh1add	a0, a0, a0
+	zext.h	a1, a1
 	sh1add	a0, a1, a0
 	slliw	a0, a0, 13
 	ret

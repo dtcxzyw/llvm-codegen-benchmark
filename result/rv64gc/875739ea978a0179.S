@@ -24,17 +24,17 @@ func000000000000030f:
 
 func000000000000000a:
 	sext.w	a2, a0
+	seqz	a2, a2
 	add	a0, a0, a1
-	seqz	a1, a2
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	addi	a2, a2, -1
+	and	a0, a0, a2
 	slli	a0, a0, 32
 	ret
 
 func000000000000010a:
-	sext.w	a2, a0
-	li	a3, -1
-	bne	a2, a3, .LBB3_2
+	li	a2, -1
+	sext.w	a3, a0
+	bne	a3, a2, .LBB3_2
 	lui	a0, 524288
 	addi	a0, a0, -1
 	slli	a0, a0, 32

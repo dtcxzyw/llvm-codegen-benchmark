@@ -1,8 +1,8 @@
 func0000000000000000:
-	sext.w	a0, a0
-	negw	a1, a0
-	max	a0, a0, a1
 	lui	a1, 559241
+	sext.w	a0, a0
+	negw	a2, a0
+	max	a0, a0, a2
 	addi	a1, a1, -1911
 	mul	a1, a1, a0
 	srli	a1, a1, 32

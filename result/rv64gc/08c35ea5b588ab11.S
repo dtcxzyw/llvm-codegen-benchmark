@@ -18,11 +18,11 @@ func0000000000000101:
 	subw	a1, a1, a2
 	slli	a0, a0, 48
 	lui	a2, 14
-	sltiu	a1, a1, 2
 	srli	a0, a0, 48
 	addi	a2, a2, 333
-	xori	a1, a1, 1
+	sltiu	a1, a1, 2
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

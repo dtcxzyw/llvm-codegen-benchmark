@@ -30,11 +30,11 @@ func0000000000000006:
 
 func0000000000000008:
 	sext.w	a1, a1
-	sext.w	a3, a2
-	lui	a4, 1048560
-	addi	a4, a4, 1
-	sltu	a1, a3, a1
-	addw	a2, a2, a4
+	lui	a3, 1048560
+	sext.w	a4, a2
+	addi	a3, a3, 1
+	addw	a2, a2, a3
+	sltu	a1, a4, a1
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

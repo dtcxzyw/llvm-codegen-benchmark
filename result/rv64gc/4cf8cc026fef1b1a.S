@@ -1,6 +1,6 @@
 func0000000000000003:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 32
@@ -9,8 +9,8 @@ func0000000000000003:
 	ret
 
 func000000000000000b:
-	addi	a2, a2, -1
 	slli	a1, a1, 63
+	addi	a2, a2, -1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 32
@@ -19,8 +19,8 @@ func000000000000000b:
 	ret
 
 func000000000000001f:
-	addiw	a2, a2, 1
 	slli	a1, a1, 63
+	addiw	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 4
@@ -58,16 +58,16 @@ func0000000000000013:
 	ret
 
 func000000000000001c:
-	addiw	a2, a2, 1
 	slli	a1, a1, 63
+	addiw	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 32

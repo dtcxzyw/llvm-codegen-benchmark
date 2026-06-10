@@ -121,8 +121,8 @@ func0000000000000081:
 	ret
 
 func000000000000010c:
-	sext.w	a1, a1
 	lui	a2, 1
+	sext.w	a1, a1
 	addi	a2, a2, 904
 	sltu	a1, a2, a1
 	czero.eqz	a0, a1, a0

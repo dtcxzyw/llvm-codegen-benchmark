@@ -72,9 +72,9 @@ func0000000000000011:
 	ret
 
 func000000000000000d:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v8
-	li	a0, 63
 	vsra.vx	v8, v10, a0
 	vandn.vv	v8, v12, v8
 	ret

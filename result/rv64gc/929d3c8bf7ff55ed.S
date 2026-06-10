@@ -14,12 +14,12 @@ func0000000000000187:
 	ret
 
 func0000000000000084:
-	andi	a3, a0, 1
+	seqz	a3, a2
+	andi	a4, a0, 1
 	addi	a0, a2, -192
-	seqz	a2, a2
-	addi	a2, a2, -1
-	and	a0, a0, a2
-	beqz	a3, .LBB1_2
+	addi	a3, a3, -1
+	and	a0, a0, a3
+	beqz	a4, .LBB1_2
 	li	a1, 192
 .LBB1_2:
 	add	a0, a0, a1

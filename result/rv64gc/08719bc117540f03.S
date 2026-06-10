@@ -1,19 +1,19 @@
 func0000000000000003:
 	fmv.w.x	fa5, zero
 	or	a0, a0, a1
+	not	a0, a0
 	fle.s	a1, fa5, fa0
 	xori	a1, a1, 1
-	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000004:
 	lui	a2, 788992
-	or	a0, a0, a1
 	fmv.w.x	fa5, a2
-	flt.s	a1, fa5, fa0
+	flt.s	a2, fa5, fa0
+	or	a0, a0, a1
 	not	a0, a0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000002:
@@ -46,10 +46,10 @@ func0000000000000007:
 
 func000000000000000b:
 	lui	a2, 784384
-	or	a0, a0, a1
 	fmv.w.x	fa5, a2
-	flt.s	a1, fa5, fa0
-	xori	a1, a1, 1
+	flt.s	a2, fa5, fa0
+	or	a0, a0, a1
+	xori	a1, a2, 1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

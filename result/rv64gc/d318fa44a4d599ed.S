@@ -19,9 +19,9 @@ func0000000000000042:
 	ret
 
 func000000000000004c:
-	sext.w	a2, a0
 	andi	a1, a1, 1
 	addi	a1, a1, -1
+	sext.w	a2, a0
 	ori	a1, a1, 10
 	xor	a1, a1, a2
 	seqz	a1, a1

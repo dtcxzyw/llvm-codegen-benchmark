@@ -1,7 +1,7 @@
 func000000000000003e:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vclz.v	v8, v8
-	li	a0, 31
 	vxor.vx	v8, v8, a0
 	li	a0, 73
 	vmv.v.x	v10, a0
@@ -11,9 +11,9 @@ func000000000000003e:
 	ret
 
 func000000000000007e:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vclz.v	v8, v8
-	li	a0, 31
 	vxor.vx	v8, v8, a0
 	li	a0, 73
 	vmv.v.x	v10, a0

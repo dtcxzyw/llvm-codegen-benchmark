@@ -1,8 +1,8 @@
 func0000000000000000:
-	vsetivli	zero, 8, e64, m4, ta, ma
-	vfadd.vv	v12, v12, v12
 	lui	a0, 4101
 	slli	a0, a0, 38
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vfadd.vv	v12, v12, v12
 	fmv.d.x	fa5, a0
 	vfdiv.vf	v12, v12, fa5
 	vfadd.vv	v12, v12, v8

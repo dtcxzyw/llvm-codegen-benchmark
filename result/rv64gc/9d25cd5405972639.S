@@ -1,6 +1,6 @@
 func0000000000000650:
-	srli	a2, a2, 63
 	srli	a1, a1, 63
+	srli	a2, a2, 63
 	not	a1, a1
 	and	a1, a1, a2
 	add	a0, a0, a1

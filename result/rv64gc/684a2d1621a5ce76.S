@@ -17,8 +17,8 @@ func0000000000000007:
 	ret
 
 func0000000000000000:
-	slliw	a1, a1, 27
 	slli	a0, a0, 63
+	slliw	a1, a1, 27
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret

@@ -1,6 +1,6 @@
 func0000000000000144:
-	addi	a3, a0, 30
 	slti	a2, a2, 31
+	addi	a3, a0, 30
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
@@ -25,8 +25,8 @@ func0000000000000d04:
 	ret
 
 func0000000000000d44:
-	addi	a3, a0, 19
 	slti	a2, a2, 20
+	addi	a3, a0, 19
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2

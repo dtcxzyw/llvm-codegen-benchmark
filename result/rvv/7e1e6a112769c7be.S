@@ -3,11 +3,11 @@ func0000000000000021:
 	vmseq.vv	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.i	v10, 0
-	li	a0, 61
-	li	a1, 60
-	vmseq.vx	v9, v8, a1
+	li	a0, 60
+	vmseq.vx	v9, v8, a0
 	vmerge.vim	v10, v10, -1, v0
 	vmv.v.v	v0, v9
+	li	a0, 61
 	vadd.vx	v8, v10, a0, v0.t
 	ret
 

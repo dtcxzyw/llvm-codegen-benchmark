@@ -36,8 +36,8 @@ func0000000000000184:
 
 func000000000000010c:
 	srli	a2, a2, 5
-	snez	a1, a1
 	sltiu	a2, a2, 513
+	snez	a1, a1
 	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2

@@ -3,29 +3,29 @@
 .LCPI0_1:
 	.quad	0x47efffffe0000000
 func0000000000000007:
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, mu
+	vmfne.vf	v0, v8, fa5
+	lui	a0, %hi(.LCPI0_1)
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfmv.v.f	v24, fa5
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
-	fmv.d.x	fa3, zero
-	vsetivli	zero, 16, e64, m8, ta, mu
-	vmfne.vf	v0, v8, fa3
-	vfmul.vf	v24, v16, fa5
-	vfmv.v.f	v16, fa4
-	vfdiv.vv	v16, v24, v8, v0.t
-	vmv.v.v	v8, v16
+	vfmul.vf	v16, v16, fa5
+	vfdiv.vv	v24, v16, v8, v0.t
+	vmv.v.v	v8, v24
 	ret
 
 func0000000000000004:
-	lui	a0, 16473
 	fmv.d.x	fa5, zero
-	slli	a0, a0, 36
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfgt.vf	v0, v8, fa5
+	vmv.v.i	v24, 0
+	lui	a0, 16473
+	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
-	vfmul.vf	v24, v16, fa5
-	vmv.v.i	v16, 0
-	vfdiv.vv	v16, v24, v8, v0.t
-	vmv.v.v	v8, v16
+	vfmul.vf	v16, v16, fa5
+	vfdiv.vv	v24, v16, v8, v0.t
+	vmv.v.v	v8, v24
 	ret
 

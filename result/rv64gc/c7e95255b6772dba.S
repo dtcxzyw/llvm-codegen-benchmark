@@ -6,8 +6,8 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	snez	a1, a1
 	slli	a0, a0, 48
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -63,8 +63,8 @@ func0000000000000024:
 func0000000000000188:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	snez	a1, a1
 	sltiu	a0, a0, 2
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

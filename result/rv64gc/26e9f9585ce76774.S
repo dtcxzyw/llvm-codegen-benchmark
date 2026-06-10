@@ -15,9 +15,9 @@ func0000000000000070:
 func00000000000000f0:
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
+	lui	a2, 213
 	add	a0, a0, a1
-	lui	a1, 213
-	addi	a1, a1, -896
+	addi	a1, a2, -896
 	add	a0, a0, a1
 	ret
 

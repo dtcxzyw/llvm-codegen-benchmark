@@ -1,27 +1,27 @@
 func0000000000000007:
+	lui	a3, 1048516
 	add	a1, a1, a2
-	lui	a2, 1048516
+	addi	a3, a3, -1
 	slli	a1, a1, 15
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000017:
+	lui	a3, 1048516
 	add	a1, a1, a2
-	lui	a2, 1048516
+	addi	a3, a3, -1
 	slli	a1, a1, 15
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000000:
+	lui	a3, 1047560
 	add	a1, a1, a2
-	lui	a2, 1047560
+	addi	a3, a3, -1
 	slli	a1, a1, 15
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -73,12 +73,12 @@ func0000000000000011:
 	ret
 
 func000000000000001f:
+	li	a3, -31
+	slli	a3, a3, 27
 	add	a1, a1, a2
-	li	a2, -31
+	addi	a3, a3, -1
 	slli	a1, a1, 27
-	slli	a2, a2, 27
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

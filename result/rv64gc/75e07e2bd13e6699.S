@@ -32,8 +32,8 @@ func0000000000000141:
 
 func0000000000000081:
 	sext.w	a1, a1
-	sext.w	a2, a2
 	lui	a3, 1048560
+	sext.w	a2, a2
 	addi	a3, a3, 63
 	sltu	a2, a2, a3
 	seqz	a1, a1

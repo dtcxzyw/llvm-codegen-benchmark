@@ -9,9 +9,9 @@ func0000000000000004:
 	lui	a0, 1024
 	addi	a0, a0, -1
 	vmerge.vxm	v10, v10, a0, v0
+	vmv1r.v	v0, v8
 	lui	a0, 256
 	addi	a0, a0, -1
-	vmv1r.v	v0, v8
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

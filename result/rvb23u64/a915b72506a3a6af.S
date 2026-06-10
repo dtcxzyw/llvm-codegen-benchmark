@@ -15,8 +15,8 @@ func000000000000000c:
 func0000000000000002:
 	fsub.s	fa5, fa1, fa2
 	lui	a0, 254192
-	fsub.s	fa5, fa5, fa0
 	addi	a0, a0, -1482
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret

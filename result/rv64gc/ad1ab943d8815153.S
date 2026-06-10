@@ -8,9 +8,9 @@ func000000000000001f:
 
 func000000000000001e:
 	sext.w	a2, a2
-	slli	a0, a0, 2
 	snez	a2, a2
 	addi	a2, a2, -1
+	slli	a0, a0, 2
 	andi	a2, a2, 136
 	add	a0, a0, a1
 	add	a0, a0, a2

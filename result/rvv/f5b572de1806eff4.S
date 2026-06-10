@@ -45,10 +45,10 @@ func000000000000001a:
 	lui	a0, 33005
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
-	lui	a0, 1016013
-	slli	a0, a0, 35
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
+	lui	a0, 1016013
+	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
 	vmflt.vf	v16, v8, fa5
 	vmorn.mm	v0, v0, v16

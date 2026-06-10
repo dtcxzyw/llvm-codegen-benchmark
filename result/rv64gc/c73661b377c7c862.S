@@ -5,8 +5,8 @@ func0000000000000021:
 
 func000000000000008c:
 	sext.w	a1, a1
-	andi	a0, a0, 48
 	sltiu	a1, a1, 2
+	andi	a0, a0, 48
 	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

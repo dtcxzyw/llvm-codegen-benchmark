@@ -8,8 +8,8 @@ func000000000000000f:
 
 func0000000000000003:
 	li	a3, 255
-	slli	a1, a1, 56
 	slli	a3, a3, 48
+	slli	a1, a1, 56
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

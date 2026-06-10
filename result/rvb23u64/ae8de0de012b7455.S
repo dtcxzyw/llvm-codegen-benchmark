@@ -8,8 +8,8 @@ func0000000000000048:
 
 func0000000000000054:
 	addiw	a2, a2, -10
-	slti	a1, a1, 10
 	seqz	a2, a2
+	slti	a1, a1, 10
 	or	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

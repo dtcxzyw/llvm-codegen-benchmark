@@ -11,10 +11,10 @@ func0000000000000008:
 func000000000000000a:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v16
-	lui	a0, 260096
 	vfsub.vv	v8, v8, v12
-	addi	a0, a0, 84
 	vfabs.v	v8, v8
+	lui	a0, 260096
+	addi	a0, a0, 84
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

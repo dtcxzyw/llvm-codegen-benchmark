@@ -1,13 +1,13 @@
 func00000000000000a1:
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -219
 	slli	a0, a0, 48
+	lui	a1, 16
 	srli	a0, a0, 48
+	addi	a1, a1, -219
 	xor	a0, a0, a1
-	lui	a1, 9
 	snez	a0, a0
+	lui	a1, 9
 	addi	a0, a0, -1
 	addi	a1, a1, 233
 	and	a0, a0, a1

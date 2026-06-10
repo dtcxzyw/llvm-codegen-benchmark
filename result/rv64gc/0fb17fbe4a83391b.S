@@ -11,8 +11,8 @@ func0000000000000042:
 	and	a1, a1, a2
 	lui	a2, 12
 	xor	a1, a1, a2
-	lui	a2, 512
 	seqz	a1, a1
+	lui	a2, 512
 	slli	a1, a1, 20
 	or	a0, a0, a2
 	or	a0, a0, a1

@@ -1,16 +1,16 @@
 func0000000000000000:
-	fcvt.s.wu	fa5, a0
-	lui	a0, 258048
-	fmv.w.x	fa4, a0
-	fmul.s	fa4, fa0, fa4
-	fdiv.s	fa0, fa4, fa5
+	lui	a1, 258048
+	fmv.w.x	fa5, a1
+	fcvt.s.wu	fa4, a0
+	fmul.s	fa5, fa0, fa5
+	fdiv.s	fa0, fa5, fa4
 	ret
 
 func0000000000000001:
-	fcvt.s.wu	fa5, a0
-	lui	a0, 253952
-	fmv.w.x	fa4, a0
-	fmul.s	fa4, fa0, fa4
-	fdiv.s	fa0, fa4, fa5
+	lui	a1, 253952
+	fmv.w.x	fa5, a1
+	fcvt.s.wu	fa4, a0
+	fmul.s	fa5, fa0, fa5
+	fdiv.s	fa0, fa5, fa4
 	ret
 

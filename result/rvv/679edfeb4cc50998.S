@@ -11,9 +11,9 @@ func000000000000001d:
 	ret
 
 func0000000000000019:
+	li	a0, -128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
-	li	a0, -128
 	vadd.vi	v10, v10, 8
 	vand.vx	v10, v10, a0
 	vand.vi	v8, v8, 7

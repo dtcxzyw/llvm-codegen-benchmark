@@ -1,17 +1,17 @@
 func00000000000007a4:
-	addi	a2, a2, 1
 	li	a3, 5
+	bseti	a3, a3, 33
+	mulhu	a3, a1, a3
+	sub	a4, a1, a3
+	addi	a2, a2, 1
+	srli	a4, a4, 1
 	mul	a0, a0, a2
-	bseti	a2, a3, 33
-	mulhu	a2, a1, a2
-	sub	a3, a1, a2
-	srli	a3, a3, 1
-	add	a2, a2, a3
-	srli	a2, a2, 30
-	slli	a3, a2, 31
-	sub	a3, a3, a2
-	not	a3, a3
-	add	a1, a1, a3
+	add	a3, a3, a4
+	srli	a3, a3, 30
+	slli	a2, a3, 31
+	sub	a2, a2, a3
+	not	a2, a2
+	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

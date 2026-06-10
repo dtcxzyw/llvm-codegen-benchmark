@@ -1,9 +1,9 @@
 func0000000000000001:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vadd.vv	v10, v8, v8
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v8
 	vmv.v.i	v8, -1
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vadd.vv	v10, v10, v10
 	vwaddu.wv	v8, v8, v10
 	ret
 
@@ -23,11 +23,11 @@ func000000000000001f:
 	ret
 
 func000000000000001d:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vsll.vi	v10, v8, 2
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v8
 	vmv.v.i	v8, -12
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vsll.vi	v10, v10, 2
 	vwaddu.wv	v8, v8, v10
 	ret
 

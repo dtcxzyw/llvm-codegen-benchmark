@@ -85,9 +85,9 @@ func000000000000008c:
 	addi	a0, a0, -47
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vadd.vx	v10, v10, a0
+	vmsleu.vi	v12, v10, -6
 	lui	a0, 2
 	addi	a0, a0, 12
-	vmsleu.vi	v12, v10, -6
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

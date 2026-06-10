@@ -9,25 +9,25 @@ func0000000000000014:
 	ret
 
 func0000000000000008:
+	lui	a2, 16
 	srl	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -2
-	sltu	a0, a1, a0
+	addi	a2, a2, -2
+	sltu	a0, a2, a0
 	ret
 
 func000000000000000a:
+	lui	a2, 524288
 	srl	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func0000000000000004:
+	li	a2, 1
+	slli	a2, a2, 41
 	srl	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 41
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func000000000000000c:
@@ -42,9 +42,9 @@ func0000000000000018:
 	ret
 
 func0000000000000006:
+	lui	a2, 31
 	srl	a0, a0, a1
-	lui	a1, 31
-	addi	a1, a1, -1975
+	addi	a1, a2, -1975
 	slt	a0, a0, a1
 	ret
 

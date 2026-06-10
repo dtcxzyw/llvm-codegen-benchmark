@@ -28,8 +28,8 @@ func000000000000016b:
 	ret
 
 func0000000000000003:
-	sub	a0, a0, a2
 	slli	a1, a1, 12
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 9
 	ret

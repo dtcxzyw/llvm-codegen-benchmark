@@ -19,8 +19,8 @@ func0000000000000084:
 	lui	a2, 1048560
 	sltu	a1, a1, a2
 	li	a2, -1
-	slli	a2, a2, 32
 	slli	a1, a1, 1
+	slli	a2, a2, 32
 	sltu	a0, a0, a2
 	addi	a1, a1, -6
 	czero.nez	a0, a1, a0

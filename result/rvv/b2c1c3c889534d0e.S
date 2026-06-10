@@ -1,15 +1,15 @@
 func0000000000000064:
-	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v8, 1
+	li	a0, 32
 	vrsub.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000074:
-	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v8, 1
+	li	a0, 32
 	vrsub.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

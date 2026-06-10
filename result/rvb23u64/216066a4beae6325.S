@@ -146,11 +146,11 @@ func000000000000004a:
 
 func0000000000000018:
 	or	a1, a1, a2
-	lui	a2, 1
 	or	a0, a0, a1
+	lui	a1, 1
 	sext.w	a0, a0
-	addi	a2, a2, -24
-	sltu	a0, a2, a0
+	addi	a1, a1, -24
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000054:

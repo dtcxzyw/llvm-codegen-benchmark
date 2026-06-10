@@ -20,8 +20,8 @@ func0000000000000002:
 	vmerge.vxm	v8, v8, a0, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	li	a0, 255
 	vmv1r.v	v0, v9
+	li	a0, 255
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 
@@ -35,8 +35,8 @@ func0000000000000015:
 	vmerge.vxm	v8, v8, a0, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	li	a0, 64
 	vmv1r.v	v0, v9
+	li	a0, 64
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

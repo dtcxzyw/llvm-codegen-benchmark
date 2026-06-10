@@ -1,37 +1,37 @@
 func000000000000007f:
 	slli	a2, a2, 8
 	slli	a1, a1, 16
+	lui	a3, 1044480
 	or	a1, a1, a2
-	lui	a2, 1044480
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000000:
 	slli	a2, a2, 8
 	slli	a1, a1, 16
+	lui	a3, 1044480
 	or	a1, a1, a2
-	lui	a2, 1044480
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000007e:
 	slliw	a2, a2, 19
+	lui	a3, 319554
 	slliw	a1, a1, 5
+	addi	a3, a3, -1024
 	or	a1, a1, a2
-	lui	a2, 319554
-	addi	a2, a2, -1024
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000078:
 	slli	a2, a2, 8
 	slli	a1, a1, 16
+	lui	a3, 1044480
 	or	a1, a1, a2
-	lui	a2, 1044480
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -46,18 +46,18 @@ func000000000000005f:
 func000000000000001f:
 	slliw	a2, a2, 20
 	slliw	a1, a1, 15
+	lui	a3, 178
 	or	a1, a1, a2
-	lui	a2, 178
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000002:
 	slli	a2, a2, 8
 	slli	a1, a1, 16
+	lui	a3, 720896
 	or	a1, a1, a2
-	lui	a2, 720896
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -71,20 +71,20 @@ func0000000000000077:
 
 func0000000000000076:
 	slliw	a2, a2, 16
+	lui	a3, 4096
 	slliw	a1, a1, 24
+	addi	a3, a3, 240
 	or	a1, a1, a2
-	lui	a2, 4096
-	addi	a2, a2, 240
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000074:
 	slliw	a2, a2, 16
 	slliw	a1, a1, 24
+	lui	a3, 1024
 	or	a1, a1, a2
-	lui	a2, 1024
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

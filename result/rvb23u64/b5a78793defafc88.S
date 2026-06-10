@@ -7,10 +7,10 @@ func00000000000000f4:
 	ret
 
 func0000000000000521:
-	sext.w	a1, a0
-	slti	a1, a1, 100
-	li	a2, 100
-	czero.eqz	a1, a2, a1
+	li	a1, 100
+	sext.w	a2, a0
+	slti	a2, a2, 100
+	czero.eqz	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -99
 	addiw	a0, a0, -1
@@ -35,20 +35,20 @@ func000000000000032a:
 	ret
 
 func000000000000008a:
-	sext.w	a1, a0
-	snez	a1, a1
-	slli	a1, a1, 5
-	addw	a0, a0, a1
 	lui	a1, 16
+	sext.w	a2, a0
+	snez	a2, a2
+	slli	a2, a2, 5
+	addw	a0, a0, a2
 	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 
 func000000000000052a:
-	sext.w	a1, a0
-	slti	a1, a1, 300
-	li	a2, 400
-	czero.eqz	a1, a2, a1
+	li	a1, 400
+	sext.w	a2, a0
+	slti	a2, a2, 300
+	czero.eqz	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -300
 	slti	a0, a0, 301

@@ -19,9 +19,9 @@ func0000000000000021:
 
 func00000000000000c1:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v14, 0
 	vmsgt.vi	v0, v12, 0
-	vmv.v.i	v12, 0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmseq.vv	v0, v10, v8
 	ret
 

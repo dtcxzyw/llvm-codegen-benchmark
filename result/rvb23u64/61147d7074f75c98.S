@@ -1,15 +1,15 @@
 func0000000000000001:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 8
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 1000
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	slti	a0, a0, 16
 	addi	a1, a1, -1
@@ -18,9 +18,9 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 100
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	sltiu	a0, a0, 80
 	addi	a1, a1, -10

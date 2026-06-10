@@ -1,6 +1,6 @@
 func000000000000000f:
-	andi	a2, a2, 992
 	li	a3, 31
+	andi	a2, a2, 992
 	slli	a3, a3, 10
 	and	a1, a1, a3
 	or	a0, a0, a2
@@ -8,8 +8,8 @@ func000000000000000f:
 	ret
 
 func000000000000000e:
-	andi	a2, a2, 2016
 	li	a3, 31
+	andi	a2, a2, 2016
 	slli	a3, a3, 11
 	and	a1, a1, a3
 	or	a0, a0, a2

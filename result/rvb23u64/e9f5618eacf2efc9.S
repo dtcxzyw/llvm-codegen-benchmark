@@ -17,14 +17,14 @@ func00000000000001ef:
 .LCPI2_0:
 	.quad	-6313183731941900
 func00000000000001e5:
-	addi	a1, a1, 3
 	lui	a2, 718
-	lui	a3, %hi(.LCPI2_0)
+	addi	a1, a1, 3
 	addi	a2, a2, -1183
-	ld	a3, %lo(.LCPI2_0)(a3)
 	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
 	srli	a1, a1, 32
+	add	a0, a0, a2
 	add	a0, a0, a1
-	add	a0, a0, a3
 	ret
 

@@ -62,10 +62,10 @@ func00000000000002aa:
 
 func0000000000000004:
 	lui	a3, 2
-	add	a0, a0, a1
-	lui	a1, 20
 	addi	a3, a3, 1808
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 20
 	addw	a0, a0, a2
 	addi	a1, a1, -1717
 	sltu	a0, a0, a1
@@ -170,17 +170,17 @@ func00000000000006a4:
 
 func0000000000000224:
 	li	a3, -192
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 2
-	mul	a2, a2, a3
 	addw	a0, a0, a2
 	addi	a1, a1, -323
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000221:
-	sext.w	a0, a0
 	sh1add	a2, a2, a2
+	sext.w	a0, a0
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
 	subw	a2, a2, a1
@@ -190,10 +190,10 @@ func0000000000000221:
 
 func0000000000000201:
 	sh1add	a2, a2, a2
+	negw	a0, a0
 	sh2add	a2, a2, a2
 	sh2add	a1, a2, a1
 	sext.w	a1, a1
-	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

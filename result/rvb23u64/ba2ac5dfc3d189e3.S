@@ -22,8 +22,8 @@ func0000000000000104:
 
 func000000000000004c:
 	lui	a3, 522240
-	sltiu	a0, a0, -1
 	xor	a2, a2, a3
+	sltiu	a0, a0, -1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -31,8 +31,8 @@ func000000000000004c:
 
 func000000000000010c:
 	li	a3, -1
-	sltiu	a0, a0, -1
 	slli	a3, a3, 32
+	sltiu	a0, a0, -1
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

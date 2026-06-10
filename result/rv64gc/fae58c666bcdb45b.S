@@ -1,8 +1,8 @@
 func0000000000000002:
 	lui	a1, 4
+	li	a2, -1
 	sub	a0, a1, a0
-	li	a1, -1
-	srli	a1, a1, 32
+	srli	a1, a2, 32
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:

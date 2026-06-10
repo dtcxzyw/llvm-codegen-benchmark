@@ -11,8 +11,8 @@ func0000000000000021:
 
 func0000000000000034:
 	fmv.x.w	a1, fa0
-	lui	a2, 1047552
 	slli	a1, a1, 41
+	lui	a2, 1047552
 	srai	a1, a1, 63
 	addw	a0, a0, a2
 	and	a0, a0, a1

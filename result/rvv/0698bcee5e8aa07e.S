@@ -5,8 +5,8 @@ func0000000000000063:
 	vmv.v.i	v10, 0
 	lui	a0, 335544
 	addi	a0, a0, 1311
-	vmerge.vim	v10, v10, 1, v0
 	vmulhu.vx	v8, v8, a0
+	vmerge.vim	v10, v10, 1, v0
 	vsrl.vi	v8, v8, 7
 	vadd.vv	v8, v8, v10
 	ret
@@ -16,9 +16,9 @@ func00000000000000c3:
 	vmsne.vi	v0, v10, 0
 	vmv.v.i	v10, 0
 	lui	a0, 838861
-	vmerge.vim	v10, v10, 1, v0
 	addi	a0, a0, -819
 	vmulhu.vx	v8, v8, a0
+	vmerge.vim	v10, v10, 1, v0
 	vsrl.vi	v8, v8, 4
 	vadd.vv	v8, v8, v10
 	ret
@@ -42,9 +42,9 @@ func0000000000000183:
 	vmsgtu.vi	v0, v10, 4
 	vmv.v.i	v10, 0
 	lui	a0, 838861
-	vmerge.vim	v10, v10, 1, v0
 	addi	a0, a0, -819
 	vmulhu.vx	v8, v8, a0
+	vmerge.vim	v10, v10, 1, v0
 	vsrl.vi	v8, v8, 3
 	vadd.vv	v8, v8, v10
 	ret

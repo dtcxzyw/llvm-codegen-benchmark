@@ -23,9 +23,9 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
+	lui	a2, 32
 	sext.w	a0, a0
 	addiw	a1, a1, 10
-	lui	a2, 32
 	addi	a2, a2, -5
 	slt	a0, a2, a0
 	lui	a2, 64

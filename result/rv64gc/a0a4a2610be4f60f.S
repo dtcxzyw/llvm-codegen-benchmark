@@ -1,6 +1,6 @@
 func0000000000000009:
-	slli	a0, a0, 16
 	lui	a1, 16
+	slli	a0, a0, 16
 	add	a0, a0, a1
 	sraiw	a0, a0, 16
 	ret

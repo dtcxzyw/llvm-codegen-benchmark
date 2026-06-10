@@ -1,8 +1,8 @@
 func0000000000000020:
 	lui	a2, 1280
-	lui	a3, 256
 	addi	a2, a2, 4
 	sltu	a2, a2, a0
+	lui	a3, 256
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2

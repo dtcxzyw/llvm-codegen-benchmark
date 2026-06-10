@@ -1,7 +1,7 @@
 func00000000000001fd:
-	sext.w	a2, a2
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
+	sext.w	a2, a2
 	sh2add	a1, a1, a2
 	lui	a2, 244
 	addi	a2, a2, 576
@@ -10,16 +10,16 @@ func00000000000001fd:
 	ret
 
 func0000000000000100:
-	sext.w	a2, a2
 	sh2add	a1, a1, a1
+	sext.w	a2, a2
 	sh1add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret
 
 func0000000000000188:
-	sext.w	a2, a2
 	sh2add	a1, a1, a1
+	sext.w	a2, a2
 	sh1add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
@@ -44,24 +44,24 @@ func00000000000000f0:
 	ret
 
 func0000000000000155:
-	sext.w	a2, a2
 	sh2add	a1, a1, a1
+	sext.w	a2, a2
 	sh1add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret
 
 func0000000000000150:
-	sext.w	a2, a2
 	sh2add	a1, a1, a1
+	sext.w	a2, a2
 	sh1add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	ret
 
 func0000000000000108:
-	sext.w	a2, a2
 	sh2add	a1, a1, a1
+	sext.w	a2, a2
 	sh1add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0

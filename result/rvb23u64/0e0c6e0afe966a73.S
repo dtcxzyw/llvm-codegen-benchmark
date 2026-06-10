@@ -22,24 +22,24 @@ func0000000000000042:
 	ret
 
 func0000000000000048:
-	flt.d	a0, fa0, fa1
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa0, fa1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000022:
-	flt.d	a0, fa1, fa0
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa1, fa0
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000038:
-	fle.d	a0, fa0, fa1
 	fmv.d.x	fa5, zero
-	xori	a0, a0, 1
+	fle.d	a0, fa0, fa1
 	feq.d	a1, fa0, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

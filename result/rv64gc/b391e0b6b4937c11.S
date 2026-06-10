@@ -3,21 +3,21 @@
 .LCPI0_1:
 	.quad	-7723592293110705685
 func0000000000000000:
-	srli	a2, a1, 30
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
-	lui	a4, %hi(.LCPI0_1)
-	ld	a4, %lo(.LCPI0_1)(a4)
-	xor	a1, a1, a2
-	mul	a1, a1, a3
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	srli	a3, a1, 30
+	xor	a1, a1, a3
+	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI0_1)
+	ld	a2, %lo(.LCPI0_1)(a2)
 	xor	a0, a0, a1
-	mul	a0, a0, a4
+	mul	a0, a0, a2
 	ret
 
 func0000000000000004:
-	srli	a2, a1, 14
-	xor	a1, a1, a2
 	li	a2, 21
+	srli	a3, a1, 14
+	xor	a1, a1, a3
 	mul	a1, a1, a2
 	xor	a0, a0, a1
 	slli	a1, a0, 31

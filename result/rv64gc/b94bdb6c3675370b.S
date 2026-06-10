@@ -8,18 +8,18 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	andi	a2, a0, 1
-	andi	a1, a1, 1
+	andi	a2, a1, 1
+	andi	a1, a0, 1
 	li	a0, 6
-	bnez	a1, .LBB1_2
-	li	a1, 6
-	beqz	a2, .LBB1_3
+	bnez	a2, .LBB1_2
+	li	a2, 6
+	beqz	a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	li	a1, 11
-	bnez	a2, .LBB1_4
+	li	a2, 11
+	bnez	a1, .LBB1_4
 .LBB1_3:
-	mv	a0, a1
+	mv	a0, a2
 .LBB1_4:
 	ret
 

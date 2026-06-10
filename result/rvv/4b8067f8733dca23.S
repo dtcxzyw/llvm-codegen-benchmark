@@ -1,8 +1,8 @@
 func00000000000001f8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 244141
 	vadd.vv	v9, v9, v12
+	lui	a0, 244141
 	addi	a0, a0, -1537
 	vmsgtu.vx	v0, v9, a0
 	vmerge.vvm	v8, v9, v8, v0

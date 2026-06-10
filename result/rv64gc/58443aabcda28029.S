@@ -11,8 +11,8 @@ func0000000000000044:
 	ret
 
 func0000000000000064:
-	addi	a1, a1, -13
 	li	a2, 20
+	addi	a1, a1, -13
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 32
 	ret
@@ -29,8 +29,8 @@ func0000000000000041:
 	ret
 
 func0000000000000024:
-	addi	a1, a1, 58
 	li	a2, 59
+	addi	a1, a1, 58
 	bgeu	a1, a2, .LBB4_2
 	li	a0, 28
 	ret

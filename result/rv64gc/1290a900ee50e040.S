@@ -8,8 +8,8 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	li	a2, 12
+	sext.w	a0, a0
 	bne	a0, a2, .LBB1_2
 	li	a0, 1
 	ret
@@ -18,15 +18,15 @@ func0000000000000001:
 	ret
 
 func0000000000000026:
-	ori	a1, a1, 2
 	srliw	a0, a0, 31
+	ori	a1, a1, 2
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000004:
-	srliw	a0, a0, 4
 	li	a2, 625
+	srliw	a0, a0, 4
 	bgeu	a0, a2, .LBB3_2
 	li	a0, 3
 	slli	a0, a0, 11

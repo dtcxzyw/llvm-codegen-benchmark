@@ -19,8 +19,8 @@ func00000000000000c0:
 func0000000000000055:
 	sh1add	a2, a0, a0
 	slli	a0, a0, 5
-	sub	a0, a0, a2
 	add	a0, a0, a1
+	sub	a0, a0, a2
 	addiw	a0, a0, 1
 	ret
 

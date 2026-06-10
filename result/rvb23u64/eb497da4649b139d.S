@@ -1,8 +1,8 @@
 func00000000000000c0:
 	slli	a2, a2, 3
 	addi	a2, a2, 8
-	andi	a2, a2, -32
 	sh3add	a0, a1, a0
+	andi	a2, a2, -32
 	add	a0, a0, a2
 	ret
 
@@ -27,8 +27,8 @@ func00000000000000f8:
 	bseti	a3, zero, 35
 	addi	a2, a2, 4
 	addi	a3, a3, -32
-	and	a2, a2, a3
 	sh2add	a0, a1, a0
+	and	a2, a2, a3
 	add	a0, a0, a2
 	ret
 
@@ -36,8 +36,8 @@ func00000000000000fc:
 	bseti	a3, zero, 33
 	addi	a3, a3, -4
 	sh1add	a2, a2, a3
-	and	a2, a2, a3
 	sh3add	a0, a1, a0
+	and	a2, a2, a3
 	sh3add	a0, a2, a0
 	ret
 
@@ -46,8 +46,8 @@ func00000000000000f0:
 	addi	a3, a3, -12
 	sh2add	a2, a2, a3
 	addi	a3, a3, 8
-	and	a2, a2, a3
 	sh3add	a0, a1, a0
+	and	a2, a2, a3
 	sh3add	a0, a2, a0
 	ret
 

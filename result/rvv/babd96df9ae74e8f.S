@@ -9,9 +9,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vi	v10, v10, 4, v0.t
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
@@ -28,9 +28,9 @@ func000000000000000d:
 	ret
 
 func0000000000000000:
-	li	a0, -4
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vi	v10, v10, 4, v0.t
+	li	a0, -4
 	zext.w	a0, a0
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
@@ -44,9 +44,9 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	li	a0, -8
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vi	v10, v10, 8, v0.t
+	li	a0, -8
 	zext.w	a0, a0
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10

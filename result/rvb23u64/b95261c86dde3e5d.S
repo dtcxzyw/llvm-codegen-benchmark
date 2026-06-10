@@ -5,9 +5,9 @@ func000000000000000f:
 	ret
 
 func000000000000000b:
+	lui	a1, 8
 	srli	a0, a0, 1
 	slli	a0, a0, 15
-	lui	a1, 8
 	add	a0, a0, a1
 	ret
 
@@ -37,8 +37,8 @@ func000000000000000e:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, -64
 	lui	a1, 1044480
+	andi	a0, a0, -64
 	add	a0, a0, a1
 	ret
 

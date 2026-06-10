@@ -33,8 +33,8 @@ func0000000000000030:
 	ret
 
 func000000000000000c:
-	sext.h	a0, a0
 	lui	a1, 4
+	sext.h	a0, a0
 	slt	a0, a0, a1
 	ret
 

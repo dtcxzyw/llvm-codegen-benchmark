@@ -100,12 +100,12 @@ func000000000000001c:
 
 func000000000000000c:
 	sext.w	a1, a1
+	li	a2, -1
 	slli	a1, a1, 4
+	slli	a2, a2, 33
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 33
-	addi	a1, a1, 12
-	add	a0, a0, a1
+	addi	a2, a2, 12
+	add	a0, a0, a2
 	ret
 
 func0000000000000004:

@@ -1,7 +1,7 @@
 func00000000000000e5:
 	slli	a2, a2, 8
-	andi	a0, a0, -512
 	or	a1, a1, a2
+	andi	a0, a0, -512
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a1, a0
@@ -19,9 +19,9 @@ func00000000000000e1:
 
 func00000000000000cc:
 	slli	a2, a2, 12
+	lui	a3, 8
 	or	a1, a1, a2
-	lui	a2, 8
-	addi	a2, a2, -512
+	addi	a2, a3, -512
 	sext.w	a1, a1
 	and	a0, a0, a2
 	xor	a0, a0, a1
@@ -30,8 +30,8 @@ func00000000000000cc:
 
 func0000000000000008:
 	slli	a2, a2, 16
-	andi	a0, a0, -129
 	or	a1, a1, a2
+	andi	a0, a0, -129
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a1, a0

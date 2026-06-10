@@ -68,8 +68,8 @@ func00000000000000c8:
 	fli.s	fa5, min
 	fle.s	a0, fa5, fa0
 	fli.s	fa5, 1.0
-	xori	a0, a0, 1
 	feq.s	a1, fa0, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

@@ -6,12 +6,12 @@ func000000000000000c:
 	ret
 
 func0000000000000028:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf4	v12, v10
 	lui	a0, 13
 	addi	a0, a0, 1151
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
+	vzext.vf4	v8, v10
 	li	a0, 100
-	vmerge.vxm	v8, v12, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -1,8 +1,8 @@
 func0000000000000087:
 	addiw	a2, a2, -1
+	seqz	a2, a2
 	or	a0, a0, a1
 	lui	a1, 8192
-	seqz	a2, a2
 	slli	a2, a2, 7
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -10,9 +10,9 @@ func0000000000000087:
 
 func0000000000000004:
 	addiw	a2, a2, -1
+	seqz	a2, a2
 	or	a0, a0, a1
 	lui	a1, 8
-	seqz	a2, a2
 	slli	a2, a2, 13
 	or	a0, a0, a1
 	or	a0, a0, a2

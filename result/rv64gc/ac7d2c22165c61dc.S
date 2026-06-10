@@ -37,19 +37,19 @@ func0000000000000053:
 
 func000000000000007a:
 	li	a6, -1
+	mulhu	a6, a4, a6
 	neg	a7, a4
 	sub	a2, a2, a4
-	sub	a5, a5, a3
-	mulhu	a3, a4, a6
 	sltu	a4, a2, a7
-	srli	a2, a2, 32
-	sub	a3, a3, a5
-	add	a3, a3, a4
+	sub	a5, a5, a3
+	sub	a5, a5, a4
+	sub	a3, a6, a5
 	slli	a4, a3, 32
-	srli	a3, a3, 32
+	srli	a2, a2, 32
 	or	a2, a2, a4
-	add	a1, a1, a3
+	srli	a3, a3, 32
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a1, a1, a0
 	mv	a0, a2

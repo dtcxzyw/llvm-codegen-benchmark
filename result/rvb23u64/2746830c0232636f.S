@@ -22,8 +22,8 @@ func000000000000010a:
 	ret
 
 func0000000000000300:
-	sext.w	a2, a2
 	lui	a3, 1048509
+	sext.w	a2, a2
 	addi	a3, a3, 432
 	xor	a2, a2, a3
 	snez	a2, a2

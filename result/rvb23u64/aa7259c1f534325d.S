@@ -1,23 +1,23 @@
 func0000000000000194:
-	sext.w	a1, a1
 	addi	a2, a2, 2
 	zext.w	a2, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000028:
 	addi	a2, a2, 1
-	addiw	a1, a1, 1
 	zext.w	a2, a2
+	addiw	a1, a1, 1
 	sltu	a0, a2, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000088:
-	sext.w	a1, a1
 	addi	a2, a2, 1
+	sext.w	a1, a1
 	zext.w	a2, a2
 	sltu	a0, a2, a0
 	sltiu	a1, a1, 2
@@ -26,30 +26,30 @@ func0000000000000088:
 
 func0000000000000025:
 	addi	a2, a2, 1
-	addiw	a1, a1, -3
 	zext.w	a2, a2
+	addiw	a1, a1, -3
 	sltu	a0, a2, a0
 	seqz	a1, a1
 	andn	a0, a1, a0
 	ret
 
 func0000000000000181:
-	sext.w	a1, a1
 	addi	a2, a2, -1
 	zext.w	a2, a2
 	xor	a0, a0, a2
+	sext.w	a1, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000039:
 	sext.w	a1, a1
+	lui	a3, 16
 	addi	a2, a2, -1
+	addi	a3, a3, -1
+	xor	a1, a1, a3
 	zext.w	a2, a2
 	sltu	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	xor	a1, a1, a2
 	seqz	a1, a1
 	andn	a0, a1, a0
 	ret

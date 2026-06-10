@@ -46,12 +46,12 @@ func0000000000000002:
 	ret
 
 func0000000000000005:
+	lui	a0, 260096
+	addi	a0, a0, 839
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v12
 	vfmul.vv	v8, v8, v12
-	lui	a0, 260096
 	vfadd.vv	v8, v8, v16
-	addi	a0, a0, 839
 	fmv.w.x	fa5, a0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12

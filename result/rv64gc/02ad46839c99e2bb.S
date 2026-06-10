@@ -31,8 +31,8 @@ func0000000000000028:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, -256
 	lui	a1, 1048320
+	andi	a0, a0, -256
 	addi	a2, a1, 511
 	add	a0, a0, a2
 	addi	a1, a1, -1
@@ -40,8 +40,8 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, -8
 	lui	a1, 8
+	andi	a0, a0, -8
 	addi	a0, a0, 32
 	addi	a1, a1, 1
 	sltu	a0, a0, a1

@@ -1,10 +1,10 @@
 func0000000000000308:
+	li	a3, 1
 	slli	a2, a2, 5
+	slli	a3, a3, 32
 	add	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 32
-	addi	a2, a2, -31
-	sltu	a1, a1, a2
+	addi	a3, a3, -31
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

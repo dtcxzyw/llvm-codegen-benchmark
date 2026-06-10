@@ -8,8 +8,8 @@ func0000000000000184:
 
 func0000000000000008:
 	andi	a2, a2, -2048
-	lui	a3, 1
 	bclri	a2, a2, 11
+	lui	a3, 1
 	add	a2, a2, a3
 	sub	a0, a0, a1
 	sltu	a0, a2, a0

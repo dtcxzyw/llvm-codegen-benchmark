@@ -1,6 +1,6 @@
 func0000000000000021:
-	andi	a0, a0, -256
 	lui	a2, 32
+	andi	a0, a0, -256
 	addi	a2, a2, -1792
 	xor	a0, a0, a2
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000141:
-	srliw	a1, a1, 31
 	not	a0, a0
+	srliw	a1, a1, 31
 	bexti	a0, a0, 30
 	andn	a0, a0, a1
 	ret

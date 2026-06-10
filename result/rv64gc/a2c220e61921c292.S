@@ -1,7 +1,7 @@
 func0000000000000021:
+	li	a2, 196
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 196
 	bne	a1, a2, .LBB0_2
 	negw	a0, a0
 .LBB0_2:

@@ -14,8 +14,8 @@ func00000000000000c6:
 
 func0000000000000021:
 	sext.w	a2, a2
-	binvi	a0, a0, 63
 	seqz	a2, a2
+	binvi	a0, a0, 63
 	and	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -25,9 +25,9 @@ func0000000000000288:
 	sext.w	a2, a2
 	lui	a3, 5273
 	addi	a3, a3, 1793
+	lui	a4, 15820
 	sltu	a2, a2, a3
-	lui	a3, 15820
-	addi	a3, a3, 1279
+	addi	a3, a4, 1279
 	and	a1, a1, a2
 	sltu	a0, a3, a0
 	and	a0, a0, a1
@@ -35,11 +35,11 @@ func0000000000000288:
 
 func0000000000000034:
 	sext.w	a2, a2
+	lui	a3, 1
 	seqz	a2, a2
+	addi	a3, a3, -1
 	and	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret
 

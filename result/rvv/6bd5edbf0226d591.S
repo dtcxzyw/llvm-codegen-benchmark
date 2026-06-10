@@ -16,10 +16,10 @@ func0000000000000421:
 
 func0000000000000d66:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vadd.vi	v12, v12, 1
 	vmslt.vv	v0, v12, v10
-	vmv.v.i	v10, 0
-	vmerge.vvm	v10, v10, v12, v0
+	vmerge.vvm	v10, v14, v12, v0
 	vmslt.vv	v0, v10, v8
 	ret
 

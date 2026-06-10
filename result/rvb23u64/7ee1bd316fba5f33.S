@@ -24,11 +24,11 @@ func0000000000000078:
 
 func0000000000000048:
 	or	a1, a1, a2
-	srliw	a2, a0, 16
-	or	a0, a0, a1
-	sltiu	a1, a2, 17
-	addi	a0, a0, -63
-	czero.eqz	a0, a0, a1
+	or	a1, a1, a0
+	srliw	a0, a0, 16
+	sltiu	a0, a0, 17
+	addi	a1, a1, -63
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, 63
 	ret
 

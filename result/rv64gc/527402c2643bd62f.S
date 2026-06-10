@@ -21,11 +21,11 @@ func0000000000000001:
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	lui	a2, 262144
+	lui	a3, 135168
 	addi	a2, a2, 260
+	addi	a3, a3, -2048
 	and	a1, a1, a2
-	lui	a2, 135168
-	addi	a2, a2, -2048
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

@@ -1,9 +1,9 @@
 func000000000000000d:
 	slli	a1, a1, 46
 	srli	a1, a1, 59
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, -974
+	addi	a1, a2, -974
 	addw	a0, a0, a1
 	ret
 

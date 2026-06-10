@@ -1,6 +1,6 @@
 func0000000000000002:
-	fabs.d	fa5, fa0
 	li	a1, 1
+	fabs.d	fa5, fa0
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4
@@ -9,8 +9,8 @@ func0000000000000002:
 	ret
 
 func0000000000000012:
-	fabs.d	fa5, fa0
 	li	a1, 1023
+	fabs.d	fa5, fa0
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4

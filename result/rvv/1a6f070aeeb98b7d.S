@@ -22,9 +22,9 @@ func0000000000000005:
 	ret
 
 func0000000000000006:
+	li	a0, 258
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v10, v8, 2
-	li	a0, 258
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vx	v8, v10, a0
 	ret
@@ -43,12 +43,12 @@ func0000000000000001:
 
 func000000000000000d:
 	li	a0, 63
+	li	a1, 2047
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v10, v8, a0
-	li	a0, 2047
-	slli	a0, a0, 52
+	slli	a1, a1, 52
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vx	v8, v10, a0
+	vor.vx	v8, v10, a1
 	ret
 
 func0000000000000004:

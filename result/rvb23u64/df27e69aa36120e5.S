@@ -4,8 +4,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fsub.s	fa5, fa0, fa1
 	lui	a1, 280576
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	or	a0, a0, a1

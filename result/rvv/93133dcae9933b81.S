@@ -63,8 +63,8 @@ func0000000000000424:
 	vand.vx	v10, v10, a0
 	li	a0, -31
 	vadd.vx	v10, v10, a0
-	li	a0, 32
 	vmsleu.vi	v12, v10, 5
+	li	a0, 32
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
@@ -87,9 +87,9 @@ func000000000000008c:
 	lui	a0, 1048575
 	addi	a0, a0, 433
 	vadd.vx	v10, v10, a0
+	vmsleu.vi	v12, v10, -9
 	lui	a0, 1
 	addi	a0, a0, -460
-	vmsleu.vi	v12, v10, -9
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

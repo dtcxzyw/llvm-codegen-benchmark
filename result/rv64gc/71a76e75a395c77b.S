@@ -50,8 +50,8 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	sext.w	a2, a2
 	lui	a3, 5
+	sext.w	a2, a2
 	addi	a3, a3, -512
 	bltu	a3, a2, .LBB6_2
 	mv	a0, a1

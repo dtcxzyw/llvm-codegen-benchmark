@@ -7,8 +7,8 @@ func000000000000000f:
 
 func0000000000000000:
 	andi	a2, a2, 1
-	andi	a1, a1, -4
 	addi	a2, a2, -1
+	andi	a1, a1, -4
 	andi	a2, a2, 12
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -16,8 +16,8 @@ func0000000000000000:
 
 func000000000000000c:
 	andi	a2, a2, 1
-	andi	a1, a1, -128
 	addi	a2, a2, -1
+	andi	a1, a1, -128
 	andi	a2, a2, 64
 	add	a0, a0, a1
 	add	a0, a0, a2

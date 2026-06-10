@@ -25,8 +25,8 @@ func000000000000007f:
 	ret
 
 func0000000000000010:
-	zext.b	a1, a1
 	li	a2, -56
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -16

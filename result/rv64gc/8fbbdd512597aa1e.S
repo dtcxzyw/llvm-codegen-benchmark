@@ -20,19 +20,19 @@ func000000000000010c:
 
 func0000000000000181:
 	zext.b	a1, a1
-	sext.w	a2, a2
 	lui	a3, 16
+	sext.w	a2, a2
 	addi	a3, a3, -1
-	seqz	a1, a1
 	xor	a2, a2, a3
+	seqz	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000018c:
-	sext.w	a2, a2
 	zext.b	a1, a1
+	sext.w	a2, a2
 	xori	a1, a1, 22
 	or	a1, a1, a2
 	snez	a1, a1

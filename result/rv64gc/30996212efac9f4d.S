@@ -1,6 +1,6 @@
 func000000000000005a:
-	add	a0, a0, a1
 	slli	a2, a2, 1
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 
@@ -12,20 +12,20 @@ func000000000000003a:
 	ret
 
 func00000000000000da:
-	add	a0, a0, a1
 	slli	a2, a2, 4
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 
 func000000000000000a:
-	add	a0, a0, a1
 	slli	a2, a2, 3
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 
 func00000000000000de:
-	add	a0, a0, a1
 	slli	a2, a2, 3
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 
@@ -37,8 +37,8 @@ func000000000000003e:
 	ret
 
 func0000000000000000:
-	add	a0, a0, a1
 	slli	a2, a2, 1
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 
@@ -52,8 +52,8 @@ func0000000000000002:
 	ret
 
 func0000000000000050:
-	add	a0, a0, a1
 	slli	a2, a2, 3
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 

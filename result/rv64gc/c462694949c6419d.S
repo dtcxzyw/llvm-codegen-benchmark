@@ -1,8 +1,8 @@
 func0000000000000015:
+	lui	a3, 1048409
+	addi	a3, a3, 131
+	mul	a0, a0, a3
 	or	a1, a1, a2
-	lui	a2, 1048409
-	addi	a2, a2, 131
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -38,10 +38,10 @@ func000000000000000d:
 	ret
 
 func0000000000000010:
+	lui	a3, 163
+	addi	a3, a3, -1005
+	mul	a0, a0, a3
 	or	a1, a1, a2
-	lui	a2, 163
-	addi	a2, a2, -1005
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -56,11 +56,11 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
+	lui	a3, 1571
+	addi	a3, a3, 667
+	slli	a3, a3, 9
+	mul	a0, a0, a3
 	or	a1, a1, a2
-	lui	a2, 1571
-	addi	a2, a2, 667
-	slli	a2, a2, 9
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

@@ -50,8 +50,8 @@ func0000000000000021:
 	ret
 
 func0000000000000061:
-	sext.w	a0, a0
 	addiw	a1, a1, 48
+	sext.w	a0, a0
 	addi	a1, a1, -42
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 42
@@ -137,9 +137,9 @@ func0000000000000046:
 	ret
 
 func0000000000000038:
-	sext.w	a0, a0
 	lui	a2, 1048574
 	addi	a2, a2, -1485
+	sext.w	a0, a0
 	addw	a1, a1, a2
 	sltiu	a0, a0, 20
 	addi	a1, a1, -51

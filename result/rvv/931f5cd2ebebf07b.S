@@ -36,8 +36,8 @@ func0000000000000040:
 func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 524288
 	vadd.vi	v10, v10, 1
+	lui	a0, 524288
 	addi	a0, a0, -100
 	vmadd.vx	v8, a0, v10
 	ret

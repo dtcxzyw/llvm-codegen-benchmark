@@ -10,10 +10,10 @@ func0000000000000481:
 	ret
 
 func000000000000048a:
-	sext.w	a0, a0
 	addiw	a1, a1, -48
 	sltiu	a2, a1, 10
 	neg	a2, a2
+	sext.w	a0, a0
 	and	a1, a1, a2
 	slt	a0, a0, a1
 	ret

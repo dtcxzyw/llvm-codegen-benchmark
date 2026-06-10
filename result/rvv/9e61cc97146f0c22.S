@@ -1,38 +1,43 @@
 func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v10, v8, v8
-	vmv.v.i	v8, 3
-	vor.vi	v8, v10, 1, v0.t
+	vmv.v.i	v10, 3
+	vadd.vv	v8, v8, v8
+	vor.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000007:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v10, v8, v8
-	vmv.v.i	v8, 4
-	vor.vi	v8, v10, 1, v0.t
+	vmv.v.i	v10, 4
+	vadd.vv	v8, v8, v8
+	vor.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000003:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vv	v10, v8, v8
-	vmv.v.i	v8, 0
-	vor.vi	v8, v10, 1, v0.t
+	vmv.v.i	v10, 0
+	vadd.vv	v8, v8, v8
+	vor.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vsll.vi	v10, v8, 19
 	lui	a0, 12800
 	addi	a0, a0, 7
-	vmv.v.x	v8, a0
-	vor.vi	v8, v10, 7, v0.t
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.x	v10, a0
+	vsll.vi	v8, v8, 19
+	vor.vi	v10, v8, 7, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vsll.vi	v10, v8, 16
+	vmv.v.i	v10, 0
+	vsll.vi	v8, v8, 16
 	lui	a0, 65536
-	vmv.v.i	v8, 0
-	vor.vx	v8, v10, a0, v0.t
+	vor.vx	v10, v8, a0, v0.t
+	vmv.v.v	v8, v10
 	ret
 

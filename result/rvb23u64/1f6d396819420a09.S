@@ -45,24 +45,24 @@ func0000000000000041:
 	ret
 
 func0000000000000014:
+	lui	a3, 1
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
-	lui	a1, 1
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addi	a1, a1, -515
+	addi	a1, a3, -515
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000018:
+	lui	a3, 12
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
-	lui	a1, 12
 	or	a0, a0, a2
 	sext.w	a0, a0
-	addi	a1, a1, 848
+	addi	a1, a3, 848
 	sltu	a0, a1, a0
 	ret
 

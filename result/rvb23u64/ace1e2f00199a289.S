@@ -1,7 +1,7 @@
 func0000000000000041:
 	rev8	a2, a0
-	andi	a1, a1, 1
 	srli	a2, a2, 32
+	andi	a1, a1, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -11,8 +11,8 @@ func0000000000000041:
 
 func0000000000000044:
 	rev8	a2, a0
-	andi	a1, a1, 1
 	srli	a2, a2, 32
+	andi	a1, a1, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -22,8 +22,8 @@ func0000000000000044:
 
 func0000000000000001:
 	rev8	a2, a0
-	andi	a1, a1, 1
 	srli	a2, a2, 32
+	andi	a1, a1, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000001:
 
 func000000000000004c:
 	rev8	a2, a0
-	andi	a1, a1, 1
 	srli	a2, a2, 32
+	andi	a1, a1, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -44,8 +44,8 @@ func000000000000004c:
 
 func000000000000000c:
 	rev8	a2, a0
-	andi	a1, a1, 1
 	srli	a2, a2, 32
+	andi	a1, a1, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -55,8 +55,8 @@ func000000000000000c:
 
 func0000000000000008:
 	rev8	a2, a0
-	andi	a1, a1, 1
 	srli	a2, a2, 32
+	andi	a1, a1, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

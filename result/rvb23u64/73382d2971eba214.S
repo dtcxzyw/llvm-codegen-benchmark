@@ -32,8 +32,8 @@ func0000000000000301:
 
 func0000000000000038:
 	andi	a1, a0, 240
-	andi	a0, a0, 15
 	addi	a1, a1, -64
+	andi	a0, a0, 15
 	seqz	a1, a1
 	sltiu	a0, a0, 5
 	andn	a0, a1, a0

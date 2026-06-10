@@ -2,12 +2,12 @@ func0000000000000020:
 	li	a3, -1
 	slli	a3, a3, 32
 	sltu	a2, a2, a3
-	lui	a3, 560295
-	addi	a3, a3, -1025
 	or	a0, a0, a2
+	lui	a2, 560295
 	andi	a0, a0, 1
+	addi	a2, a2, -1025
 	czero.nez	a1, a1, a0
-	czero.eqz	a0, a3, a0
+	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 

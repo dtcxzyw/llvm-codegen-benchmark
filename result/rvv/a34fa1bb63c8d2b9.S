@@ -7,8 +7,8 @@ func0000000000000030:
 	addi	a0, a0, -273
 	vmacc.vx	v9, a0, v8
 	lui	a0, 17476
-	addi	a0, a0, 1092
 	vror.vi	v8, v9, 2
+	addi	a0, a0, 1092
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma

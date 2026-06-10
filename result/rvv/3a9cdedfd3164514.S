@@ -8,8 +8,8 @@ func0000000000000001:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	li	a0, -1
 	vmul.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 2
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -24,8 +24,8 @@ func0000000000000081:
 func0000000000000108:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 78125
 	vmul.vv	v8, v10, v8
+	lui	a0, 78125
 	slli	a0, a0, 11
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
@@ -34,8 +34,8 @@ func0000000000000108:
 func00000000000001e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 65279
 	vmul.vv	v8, v10, v8
+	lui	a0, 65279
 	addi	a0, a0, 16
 	vmseq.vx	v0, v8, a0
 	ret
@@ -43,8 +43,8 @@ func00000000000001e1:
 func00000000000001ec:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 65279
 	vmul.vv	v8, v10, v8
+	lui	a0, 65279
 	addi	a0, a0, 16
 	vmsne.vx	v0, v8, a0
 	ret
@@ -147,9 +147,9 @@ func00000000000000a1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v14, v12, 0
 	vmseq.vi	v12, v10, 0
-	vmor.mm	v10, v12, v14
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v10, v11
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v8, v12, v14
+	vmor.mm	v0, v8, v10
 	ret
 
 func000000000000000a:
@@ -169,8 +169,8 @@ func000000000000008c:
 func0000000000000018:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	li	a0, -1
 	vmul.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -178,8 +178,8 @@ func0000000000000018:
 func00000000000000a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	li	a0, -1
 	vmul.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 2
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -194,8 +194,8 @@ func00000000000000a6:
 func000000000000008a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 524288
 	vmul.vv	v8, v10, v8
+	lui	a0, 524288
 	addiw	a0, a0, -2
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -217,8 +217,8 @@ func0000000000000014:
 func00000000000000b8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	li	a0, -1
 	vmul.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 2
 	vmsgtu.vx	v0, v8, a0
 	ret

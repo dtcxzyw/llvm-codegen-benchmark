@@ -1,8 +1,8 @@
 func000000000000000c:
 	li	a3, -1
-	srli	a1, a1, 5
 	slli	a3, a3, 32
 	srli	a3, a3, 8
+	srli	a1, a1, 5
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -25,8 +25,8 @@ func000000000000001e:
 
 func000000000000001f:
 	addi	a2, a2, -2
-	seqz	a2, a2
 	sh1add	a0, a0, a0
+	seqz	a2, a2
 	sh1add	a0, a2, a0
 	sh3add	a0, a0, a1
 	ret
@@ -42,8 +42,8 @@ func000000000000008b:
 
 func000000000000004e:
 	sltiu	a2, a2, 2
-	slli	a0, a0, 4
 	xori	a2, a2, 1
+	slli	a0, a0, 4
 	slli	a2, a2, 5
 	add	a0, a0, a1
 	add	a0, a0, a2

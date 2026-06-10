@@ -19,12 +19,11 @@ func0000000000000001:
 	vadd.vi	v8, v8, 2
 	ret
 
+.LCPI2_0:
+	.quad	-62162121600000000
 func00000000000000aa:
-	lui	a0, 935504
-	addi	a0, a0, -985
-	slli	a0, a0, 14
-	addi	a0, a0, -927
-	slli	a0, a0, 13
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 140

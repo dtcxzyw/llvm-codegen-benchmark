@@ -14,8 +14,8 @@ func000000000000007f:
 	ret
 
 func000000000000003f:
-	sh3add	a0, a0, a1
 	srli	a2, a2, 58
+	sh3add	a0, a0, a1
 	andi	a2, a2, 4
 	add	a0, a0, a2
 	addi	a0, a0, 48

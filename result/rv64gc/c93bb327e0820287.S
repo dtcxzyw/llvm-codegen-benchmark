@@ -25,9 +25,9 @@ func0000000000000033:
 	ret
 
 func0000000000000020:
-	sext.w	a1, a0
-	li	a2, 254
-	bltu	a1, a2, .LBB3_2
+	li	a1, 254
+	sext.w	a2, a0
+	bltu	a2, a1, .LBB3_2
 	li	a1, 5
 	add	a0, a0, a1
 	slli	a0, a0, 32

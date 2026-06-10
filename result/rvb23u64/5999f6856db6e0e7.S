@@ -1,8 +1,8 @@
 func0000000000000284:
-	sext.w	a1, a0
-	cpopw	a0, a0
-	sltiu	a0, a0, 2
-	sltiu	a1, a1, 65
+	cpopw	a1, a0
+	sext.w	a0, a0
+	sltiu	a1, a1, 2
+	sltiu	a0, a0, 65
 	and	a0, a0, a1
 	ret
 
@@ -21,10 +21,10 @@ func000000000000028a:
 	ret
 
 func0000000000000684:
-	sext.w	a1, a0
-	cpopw	a0, a0
-	sltiu	a0, a0, 2
-	sltiu	a1, a1, 9
+	cpopw	a1, a0
+	sext.w	a0, a0
+	sltiu	a1, a1, 2
+	sltiu	a0, a0, 9
 	and	a0, a0, a1
 	ret
 

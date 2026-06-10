@@ -20,10 +20,10 @@ func0000000000000066:
 	ret
 
 func000000000000002a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmax.vv	v10, v10, v12
 	lui	a0, 1048568
 	addi	a0, a0, 1015
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmax.vv	v10, v10, v12
 	vadd.vx	v8, v8, a0
 	vmslt.vv	v0, v10, v8
 	ret

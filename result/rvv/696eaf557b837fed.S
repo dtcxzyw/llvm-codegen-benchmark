@@ -1,7 +1,7 @@
 func00000000000004c6:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmv.v.i	v11, 0
 	vmsle.vi	v0, v10, -1
+	vmv.v.i	v11, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, 0
 	vsetvli	zero, zero, e16, m1, ta, mu

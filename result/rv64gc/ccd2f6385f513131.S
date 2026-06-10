@@ -23,17 +23,17 @@ func000000000000000c:
 	ret
 
 func000000000000000f:
+	lui	a3, 1267
 	add	a1, a1, a2
-	lui	a2, 1267
-	addi	a2, a2, 567
+	addi	a2, a3, 567
 	addw	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000008:
+	lui	a3, 1629
 	add	a1, a1, a2
-	lui	a2, 1629
-	addi	a2, a2, 729
+	addi	a2, a3, 729
 	addw	a1, a1, a2
 	and	a0, a0, a1
 	ret

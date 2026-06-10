@@ -9,9 +9,9 @@ func0000000000000033:
 func000000000000003f:
 	slliw	a2, a2, 8
 	slliw	a1, a1, 16
+	lui	a3, 1044480
 	or	a1, a1, a2
-	lui	a2, 1044480
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -42,20 +42,20 @@ func000000000000000f:
 
 func000000000000003b:
 	slliw	a2, a2, 16
+	lui	a3, 16
 	slliw	a1, a1, 24
+	addi	a3, a3, -256
 	or	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000003a:
 	slliw	a2, a2, 16
 	slliw	a1, a1, 24
+	lui	a3, 260080
 	or	a1, a1, a2
-	lui	a2, 260080
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

@@ -1,36 +1,36 @@
 func0000000000000101:
 	li	a1, 2047
-	addiw	a0, a0, -34
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	feq.d	a1, fa0, fa5
+	addiw	a0, a0, -34
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	sext.w	a0, a0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000004c:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
+	sext.w	a0, a0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000121:
-	sext.w	a0, a0
 	li	a1, 2047
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa5, fa0
+	sext.w	a0, a0
 	or	a1, a1, a2
 	xori	a1, a1, 1
 	seqz	a0, a0
@@ -38,30 +38,30 @@ func0000000000000121:
 	ret
 
 func0000000000000048:
-	sext.w	a0, a0
 	li	a1, 1023
 	slli	a1, a1, 52
-	sltiu	a0, a0, 23
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
+	sext.w	a0, a0
+	sltiu	a0, a0, 23
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa5, fa0
+	sext.w	a0, a0
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000061:
 	li	a1, 1023
-	addiw	a0, a0, -1
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
+	addiw	a0, a0, -1
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -69,72 +69,72 @@ func0000000000000061:
 
 func00000000000000a1:
 	li	a1, 1023
-	addiw	a0, a0, 1
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	fle.d	a1, fa0, fa5
+	addiw	a0, a0, 1
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	lui	a1, 4101
 	slli	a1, a1, 38
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
+	sext.w	a0, a0
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
+	sext.w	a0, a0
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000cc:
 	li	a1, 2047
-	addiw	a0, a0, -10
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
+	addiw	a0, a0, -10
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000008c:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
+	sext.w	a0, a0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000004a:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
+	sext.w	a0, a0
 	slti	a0, a0, 2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	feq.d	a1, fa0, fa0
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000088:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
+	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	not	a0, a0
 	and	a0, a0, a1
@@ -148,8 +148,8 @@ func0000000000000046:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	feq.d	a1, fa0, fa0
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -157,19 +157,19 @@ func000000000000002c:
 
 func00000000000000e1:
 	fmv.d.x	fa5, zero
-	addiw	a0, a0, -1
 	feq.d	a1, fa0, fa5
+	addiw	a0, a0, -1
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000094:
-	sext.w	a0, a0
 	li	a1, 1033
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
+	sext.w	a0, a0
 	sltiu	a0, a0, 4
 	and	a0, a0, a1
 	ret
@@ -179,68 +179,68 @@ func0000000000000094:
 func0000000000000186:
 	lui	a1, %hi(.LCPI19_0)
 	fld	fa5, %lo(.LCPI19_0)(a1)
-	sext.w	a0, a0
 	fle.d	a1, fa5, fa0
+	sext.w	a0, a0
 	slti	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func00000000000000ec:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000aa:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa0, fa5
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000001cc:
-	sext.w	a0, a0
 	feq.d	a1, fa0, fa0
+	sext.w	a0, a0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000118:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	sext.w	a0, a0
 	sltiu	a0, a0, 5
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000ea:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	sext.w	a0, a0
 	slti	a0, a0, 2
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000008a:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
+	sext.w	a0, a0
 	slti	a0, a0, 2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000014c:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa0, fa5
+	sext.w	a0, a0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

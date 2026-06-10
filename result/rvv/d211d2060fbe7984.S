@@ -1,7 +1,7 @@
 func0000000000000026:
+	bseti	a0, zero, 11
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vv	v12, v8, v10
-	bseti	a0, zero, 11
 	vmslt.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret
@@ -14,9 +14,9 @@ func0000000000000021:
 	ret
 
 func0000000000000104:
+	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v12, v10, v8
-	li	a0, 128
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret

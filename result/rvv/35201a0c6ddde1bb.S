@@ -1,8 +1,8 @@
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, -4
 	vsub.vv	v10, v14, v10
+	li	a0, -4
 	zext.w	a0, a0
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
@@ -33,9 +33,9 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
+	lui	a0, 209715
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 209715
 	vsub.vv	v10, v14, v10
 	addi	a0, a0, 819
 	slli	a1, a0, 32

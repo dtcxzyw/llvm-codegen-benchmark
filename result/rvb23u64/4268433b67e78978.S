@@ -18,10 +18,10 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	srliw	a1, a1, 31
-	zext.w	a0, a0
 	li	a2, -1
+	srliw	a1, a1, 31
 	srli	a2, a2, 32
+	zext.w	a0, a0
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

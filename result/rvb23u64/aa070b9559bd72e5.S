@@ -1,8 +1,8 @@
 func0000000000000000:
 	andi	a2, a2, 1
 	li	a3, 55
-	andi	a1, a1, 128
 	czero.nez	a2, a3, a2
+	andi	a1, a1, 128
 	addi	a2, a2, 9
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -21,8 +21,8 @@ func0000000000000001:
 	li	a3, 1
 	andn	a2, a3, a2
 	lui	a3, 16
-	addi	a3, a3, -256
 	slli	a2, a2, 4
+	addi	a3, a3, -256
 	or	a0, a0, a2
 	and	a1, a1, a3
 	or	a0, a0, a1

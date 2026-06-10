@@ -43,10 +43,10 @@ func00000000000000a1:
 	ret
 
 func00000000000004a1:
-	sext.w	a0, a0
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -20
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0

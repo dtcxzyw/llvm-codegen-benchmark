@@ -94,8 +94,8 @@ func00000000000000e1:
 func00000000000000f8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 3
 	vsub.vv	v8, v12, v8
+	li	a0, 3
 	slli	a0, a0, 10
 	vmsgtu.vx	v0, v8, a0
 	ret

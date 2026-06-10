@@ -1,8 +1,8 @@
 func0000000000000000:
 	addiw	a2, a2, 32
+	lui	a3, 6
 	or	a0, a0, a2
-	lui	a2, 6
-	addw	a1, a1, a2
+	addw	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -23,10 +23,10 @@ func0000000000000012:
 	ret
 
 func0000000000000016:
+	lui	a3, 1033216
 	add	a0, a0, a2
-	lui	a2, 1033216
 	addiw	a0, a0, -128
-	addw	a1, a1, a2
+	addw	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -40,17 +40,17 @@ func000000000000001a:
 
 func000000000000003c:
 	addiw	a2, a2, 63
+	lui	a3, 1008
 	or	a0, a0, a2
-	lui	a2, 1008
-	addw	a1, a1, a2
+	addw	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000003e:
+	li	a3, 2016
 	add	a0, a0, a2
-	li	a2, 2016
+	sh3add	a1, a3, a1
 	addi	a0, a0, 63
-	sh3add	a1, a2, a1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret

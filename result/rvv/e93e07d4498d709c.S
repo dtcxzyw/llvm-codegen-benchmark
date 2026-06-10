@@ -27,9 +27,9 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmv1r.v	v12, v0
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.i	v8, 0

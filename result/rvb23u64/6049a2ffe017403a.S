@@ -1,7 +1,7 @@
 func000000000000003e:
 	andi	a2, a2, 1
-	slli	a0, a0, 4
 	sh1add	a2, a2, a2
+	slli	a0, a0, 4
 	slli	a2, a2, 5
 	add	a0, a0, a1
 	add	a0, a0, a2

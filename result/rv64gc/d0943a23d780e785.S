@@ -1,8 +1,8 @@
 func0000000000000009:
 	sraiw	a1, a1, 31
-	li	a2, 205
 	addw	a0, a0, a1
 	zext.b	a1, a0
+	li	a2, 205
 	mul	a1, a1, a2
 	srli	a1, a1, 11
 	slli	a2, a1, 1

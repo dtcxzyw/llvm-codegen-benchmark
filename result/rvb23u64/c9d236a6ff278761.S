@@ -1,7 +1,7 @@
 func0000000000000001:
 	add	a1, a1, a2
-	lui	a2, 1040384
 	slli	a1, a1, 59
+	lui	a2, 1040384
 	srli	a1, a1, 52
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -37,8 +37,8 @@ func000000000000001f:
 
 func0000000000000019:
 	add	a1, a1, a2
-	lui	a2, 252
 	slli	a1, a1, 58
+	lui	a2, 252
 	srli	a1, a1, 44
 	andn	a0, a0, a2
 	or	a0, a0, a1
@@ -46,8 +46,8 @@ func0000000000000019:
 
 func000000000000000b:
 	add	a1, a1, a2
-	lui	a2, 4032
 	slli	a1, a1, 58
+	lui	a2, 4032
 	srli	a1, a1, 40
 	andn	a0, a0, a2
 	or	a0, a0, a1

@@ -1,6 +1,6 @@
 func000000000000000e:
-	addiw	a1, a1, -1
 	li	a2, 256
+	addiw	a1, a1, -1
 	subw	a0, a2, a0
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
@@ -26,8 +26,8 @@ func000000000000001a:
 	ret
 
 func0000000000000000:
-	addiw	a1, a1, 8
 	li	a2, 1200
+	addiw	a1, a1, 8
 	subw	a0, a2, a0
 	bltu	a0, a1, .LBB3_2
 	mv	a0, a1

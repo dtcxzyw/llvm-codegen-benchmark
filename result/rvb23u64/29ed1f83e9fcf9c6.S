@@ -10,8 +10,8 @@ func000000000000001a:
 
 func000000000000001f:
 	andi	a2, a2, 126
-	slli	a1, a1, 5
 	addi	a2, a2, -22
+	slli	a1, a1, 5
 	seqz	a2, a2
 	add	a0, a0, a1
 	sh1add	a0, a2, a0

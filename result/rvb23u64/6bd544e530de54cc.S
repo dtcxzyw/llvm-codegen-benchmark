@@ -1,15 +1,15 @@
 func0000000000000084:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -5
 	maxu	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
 
 func0000000000000081:
-	zext.h	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -17
+	zext.h	a0, a0
 	sltiu	a1, a1, 120
 	czero.nez	a0, a1, a0
 	ret

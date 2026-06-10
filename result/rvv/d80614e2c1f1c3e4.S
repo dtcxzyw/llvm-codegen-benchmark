@@ -12,31 +12,34 @@ func000000000000006f:
 	ret
 
 func000000000000000e:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v12, v10, 2
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 3
 	vand.vi	v8, v8, -4
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwsll.vi	v12, v10, 2
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v12, v10, 3
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 7
 	vand.vi	v8, v8, -8
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwsll.vi	v12, v10, 3
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
 	ret
 
 func000000000000003f:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v12, v10, 3
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 7
 	bseti	a0, zero, 35
 	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwsll.vi	v12, v10, 3
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
 	ret
 

@@ -32,9 +32,9 @@ func00000000000000ca:
 	bltu	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	slt	a1, a0, a1
-	slti	a0, a0, 2
-	not	a0, a0
+	slti	a2, a0, 2
+	slt	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

@@ -13,8 +13,8 @@ func0000000000000010:
 	ret
 
 func000000000000003c:
-	addi	a1, a1, 15
 	lui	a2, 1024
+	addi	a1, a1, 15
 	addi	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1

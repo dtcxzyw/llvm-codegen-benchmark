@@ -11,10 +11,10 @@ func0000000000000018:
 	ret
 
 func0000000000000013:
-	sext.w	a2, a0
-	lui	a3, 244
-	addi	a3, a3, 576
-	sltu	a2, a2, a3
+	lui	a2, 244
+	sext.w	a3, a0
+	addi	a2, a2, 576
+	sltu	a2, a3, a2
 	czero.eqz	a1, a1, a2
 	addw	a0, a0, a1
 	ret

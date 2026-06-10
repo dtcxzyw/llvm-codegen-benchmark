@@ -4,14 +4,14 @@ func0000000000000000:
 	ret
 
 func000000000000000d:
-	srli	a0, a0, 1
 	lui	a1, 1044480
+	srli	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	srliw	a0, a0, 16
 	lui	a1, 524288
+	srliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 

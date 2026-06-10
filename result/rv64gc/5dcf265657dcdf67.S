@@ -50,10 +50,10 @@ func0000000000000009:
 
 func000000000000001e:
 	slli	a1, a1, 28
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 60
-	or	a0, a0, a1
+	slli	a2, a2, 60
+	or	a0, a0, a2
 	ret
 
 func000000000000000f:

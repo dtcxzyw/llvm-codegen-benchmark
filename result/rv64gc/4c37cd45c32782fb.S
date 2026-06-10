@@ -1,12 +1,12 @@
 func0000000000000002:
-	fmv.d	fa5, fa0
 	li	a0, 1023
 	slli	a0, a0, 52
-	fmv.d.x	fa0, a0
-	flt.d	a0, fa5, fa0
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
 	bnez	a0, .LBB0_2
-	fadd.d	fa0, fa1, fa2
+	fadd.d	fa5, fa1, fa2
 .LBB0_2:
+	fmv.d	fa0, fa5
 	ret
 
 .LCPI1_0:

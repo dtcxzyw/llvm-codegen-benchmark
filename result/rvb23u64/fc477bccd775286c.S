@@ -40,8 +40,8 @@ func0000000000000220:
 
 func0000000000000618:
 	zext.b	a2, a2
-	srliw	a1, a1, 31
 	addi	a2, a2, -17
+	srliw	a1, a1, 31
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -106,8 +106,8 @@ func0000000000000450:
 	ret
 
 func0000000000000630:
-	sext.w	a2, a2
 	zext.b	a1, a1
+	sext.w	a2, a2
 	xori	a1, a1, 27
 	or	a1, a1, a2
 	snez	a1, a1

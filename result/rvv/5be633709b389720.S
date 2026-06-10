@@ -6,8 +6,8 @@ func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vmulh.vx	v8, v8, a0
-	li	a0, 63
 	vsra.vi	v10, v10, 2
+	li	a0, 63
 	vsrl.vx	v12, v8, a0
 	vsra.vi	v8, v8, 5
 	vadd.vv	v8, v8, v12
@@ -15,15 +15,15 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
+	lui	a0, 748983
+	addi	a0, a0, -585
+	slli	a1, a0, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	vsra.vi	v8, v8, 3
-	lui	a0, 748983
-	vsra.vi	v10, v10, 3
-	addi	a0, a0, -585
-	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
+	vsra.vi	v10, v10, 3
 	vminu.vv	v8, v8, v10
 	ret
 

@@ -6,9 +6,9 @@ func00000000000001e1:
 	ret
 
 func0000000000000001:
+	li	a2, 54
 	slli	a1, a1, 48
 	srli	a1, a1, 58
-	li	a2, 54
 	beq	a1, a2, .LBB1_2
 	li	a1, -2
 	add	a0, a0, a1

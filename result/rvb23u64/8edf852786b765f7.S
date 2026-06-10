@@ -18,9 +18,9 @@ func0000000000000094:
 	fmv.d.x	fa5, a0
 	fmul.d	fa5, fa1, fa5
 	fli.d	fa4, min
+	fabs.d	fa3, fa0
 	fmax.d	fa5, fa5, fa4
-	fabs.d	fa4, fa0
-	flt.d	a0, fa5, fa4
+	flt.d	a0, fa5, fa3
 	ret
 
 func0000000000000092:
@@ -29,9 +29,9 @@ func0000000000000092:
 	fmv.d.x	fa5, a0
 	fmul.d	fa5, fa1, fa5
 	fli.d	fa4, min
+	fabs.d	fa3, fa0
 	fmax.d	fa5, fa5, fa4
-	fabs.d	fa4, fa0
-	flt.d	a0, fa4, fa5
+	flt.d	a0, fa3, fa5
 	ret
 
 func000000000000008a:
@@ -39,9 +39,9 @@ func000000000000008a:
 	slli	a0, a0, 56
 	fmv.d.x	fa5, a0
 	fmul.d	fa4, fa1, fa5
+	fabs.d	fa3, fa0
 	fmax.d	fa5, fa4, fa5
-	fabs.d	fa4, fa0
-	fle.d	a0, fa4, fa5
+	fle.d	a0, fa3, fa5
 	ret
 
 .promoted_doubles.func000000000000009a:

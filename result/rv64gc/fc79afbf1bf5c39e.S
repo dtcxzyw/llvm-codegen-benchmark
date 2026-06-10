@@ -1,7 +1,7 @@
 func0000000000000022:
-	slliw	a1, a1, 26
 	slli	a0, a0, 21
 	lui	a2, 1015808
+	slliw	a1, a1, 26
 	addw	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -17,8 +17,8 @@ func00000000000000ff:
 
 func000000000000007f:
 	zext.b	a1, a1
-	slli	a0, a0, 15
 	slli	a1, a1, 7
+	slli	a0, a0, 15
 	or	a0, a0, a1
 	lui	a1, 16
 	addw	a0, a0, a1
@@ -34,8 +34,8 @@ func0000000000000018:
 	ret
 
 func00000000000000cf:
-	slli	a1, a1, 16
 	zext.b	a0, a0
+	slli	a1, a1, 16
 	slli	a0, a0, 8
 	or	a0, a0, a1
 	lui	a1, 1046848

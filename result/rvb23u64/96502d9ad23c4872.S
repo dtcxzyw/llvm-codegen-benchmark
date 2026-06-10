@@ -6,8 +6,8 @@ func0000000000000005:
 	ret
 
 func0000000000000006:
-	srli	a0, a0, 1
 	li	a1, -2
+	srli	a0, a0, 1
 	rol	a0, a1, a0
 	ret
 

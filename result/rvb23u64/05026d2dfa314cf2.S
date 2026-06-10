@@ -10,9 +10,9 @@ func0000000000000003:
 	ret
 
 func000000000000001f:
+	lui	a1, 1
 	sext.w	a0, a0
 	slli	a0, a0, 12
-	lui	a1, 1
 	add	a0, a0, a1
 	ret
 
@@ -73,15 +73,15 @@ func0000000000000012:
 	ret
 
 func000000000000001c:
-	slli	a0, a0, 48
 	li	a1, -623
+	slli	a0, a0, 48
 	slli	a1, a1, 48
 	add	a0, a0, a1
 	ret
 
 func000000000000001e:
-	slli	a0, a0, 58
 	bseti	a1, zero, 58
+	slli	a0, a0, 58
 	add	a0, a0, a1
 	ret
 
@@ -91,8 +91,8 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	slli	a0, a0, 58
 	bseti	a1, zero, 58
+	slli	a0, a0, 58
 	sub	a0, a0, a1
 	ret
 

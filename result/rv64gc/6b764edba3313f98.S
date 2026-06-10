@@ -1,10 +1,10 @@
 func000000000000001f:
 	srliw	a1, a1, 7
 	mul	a0, a0, a1
-	lui	a1, 256
-	add	a0, a0, a1
 	lui	a1, 262144
+	lui	a2, 256
 	addi	a1, a1, -1
+	add	a0, a0, a2
 	slli	a1, a1, 21
 	and	a0, a0, a1
 	ret

@@ -29,12 +29,13 @@ func0000000000000014:
 	ret
 
 func0000000000000055:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v10, 4
-	vadd.vi	v12, v8, 4
 	li	a0, 16
-	vmv.v.x	v8, a0
-	vmacc.vv	v8, v10, v12
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vi	v10, v10, 4
+	vadd.vi	v8, v8, 4
+	vmacc.vv	v12, v10, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000054:

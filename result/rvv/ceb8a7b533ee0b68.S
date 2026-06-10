@@ -1,8 +1,8 @@
 func0000000000000003:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsrl.vi	v10, v10, 2
-	li	a0, 16
 	vor.vv	v8, v8, v9
+	li	a0, 16
 	vand.vx	v9, v10, a0
 	li	a0, -17
 	vand.vx	v8, v8, a0

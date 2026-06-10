@@ -11,19 +11,19 @@ func0000000000000018:
 	ret
 
 func0000000000000013:
-	sext.w	a2, a0
-	lui	a3, 244
-	addi	a3, a3, 576
-	sltu	a2, a2, a3
+	lui	a2, 244
+	sext.w	a3, a0
+	addi	a2, a2, 576
+	sltu	a2, a3, a2
 	neg	a2, a2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000063:
-	sext.w	a2, a0
-	li	a3, 56
-	bltu	a3, a2, .LBB3_2
+	li	a2, 56
+	sext.w	a3, a0
+	bltu	a2, a3, .LBB3_2
 	li	a1, 8
 .LBB3_2:
 	addw	a0, a0, a1
@@ -54,9 +54,9 @@ func0000000000000012:
 	ret
 
 func0000000000000051:
-	sext.w	a2, a0
-	li	a3, 159
-	bltu	a2, a3, .LBB7_2
+	li	a2, 159
+	sext.w	a3, a0
+	bltu	a3, a2, .LBB7_2
 	li	a1, -126
 .LBB7_2:
 	addw	a0, a0, a1

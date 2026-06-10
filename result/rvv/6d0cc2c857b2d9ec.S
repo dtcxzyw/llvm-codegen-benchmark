@@ -8,9 +8,9 @@ func0000000000000141:
 	ret
 
 func0000000000000021:
+	li	a0, 60
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 60
 	vmseq.vi	v9, v9, 1
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vx	v8, v8, a0

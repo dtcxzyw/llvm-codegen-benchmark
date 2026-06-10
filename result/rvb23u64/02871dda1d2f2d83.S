@@ -12,8 +12,8 @@ func0000000000000021:
 	ret
 
 func0000000000000006:
-	addiw	a0, a0, 1
 	lui	a1, 174763
+	addiw	a0, a0, 1
 	addi	a1, a1, -1365
 	mul	a1, a1, a0
 	srli	a2, a1, 63

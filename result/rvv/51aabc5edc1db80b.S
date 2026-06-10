@@ -43,9 +43,9 @@ func0000000000000005:
 	ret
 
 func0000000000000009:
+	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vv	v8, v8, v16
-	fli.d	fa5, inf
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmnor.mm	v0, v17, v16
@@ -60,10 +60,10 @@ func0000000000000001:
 .LCPI8_0:
 	.quad	0x3fa999999999999a
 func000000000000000c:
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vv	v8, v8, v16
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	vmfge.vf	v0, v8, fa5
 	ret
 

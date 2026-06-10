@@ -23,10 +23,10 @@ func0000000000000081:
 	ret
 
 func0000000000000088:
+	li	a3, 1
+	slli	a3, a3, 37
 	sub	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 37
-	addi	a2, a2, -64
+	addi	a2, a3, -64
 	and	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1

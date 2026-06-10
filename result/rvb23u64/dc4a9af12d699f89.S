@@ -1,10 +1,10 @@
 func0000000000000181:
 	srli	a2, a2, 3
+	lui	a3, 4
 	andi	a2, a2, 24
+	addi	a3, a3, 272
 	add	a0, a0, a2
-	lui	a2, 4
-	addi	a2, a2, 272
-	add	a1, a1, a2
+	add	a1, a1, a3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

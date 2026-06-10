@@ -1,11 +1,11 @@
 func00000000000001ca:
-	slli	a0, a0, 57
 	lui	a1, 4096
+	slli	a0, a0, 57
 	srli	a0, a0, 33
+	lui	a2, 8192
 	addw	a0, a0, a1
-	lui	a1, 8192
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func00000000000001a4:
@@ -16,8 +16,8 @@ func00000000000001a4:
 	ret
 
 func00000000000001c6:
-	slli	a0, a0, 57
 	lui	a1, 4096
+	slli	a0, a0, 57
 	srli	a0, a0, 33
 	addw	a0, a0, a1
 	lui	a1, 8192

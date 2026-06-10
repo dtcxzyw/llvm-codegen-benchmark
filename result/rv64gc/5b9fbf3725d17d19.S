@@ -36,8 +36,8 @@ func0000000000000301:
 	ld	a2, %lo(.LCPI4_0)(a2)
 	andi	a1, a1, 248
 	addi	a1, a1, -48
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -49,16 +49,16 @@ func0000000000000701:
 	ld	a2, %lo(.LCPI5_0)(a2)
 	zext.b	a1, a1
 	addi	a1, a1, -57
-	sltiu	a1, a1, -9
 	xor	a0, a0, a2
+	sltiu	a1, a1, -9
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000488:
 	zext.b	a1, a1
-	sltiu	a0, a0, 2
 	addi	a1, a1, -97
+	sltiu	a0, a0, 2
 	sltiu	a1, a1, 6
 	not	a0, a0
 	and	a0, a0, a1
@@ -90,8 +90,8 @@ func000000000000008c:
 
 func0000000000000088:
 	zext.b	a1, a1
-	sltiu	a0, a0, 4
 	addi	a1, a1, -48
+	sltiu	a0, a0, 4
 	sltiu	a1, a1, 10
 	not	a0, a0
 	and	a0, a0, a1

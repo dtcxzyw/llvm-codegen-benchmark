@@ -1,7 +1,7 @@
 func0000000000000000:
-	li	a3, -60
-	mul	a1, a1, a3
 	lui	a3, 1048575
+	li	a4, -60
+	mul	a1, a1, a4
 	addi	a3, a3, 496
 	mul	a2, a2, a3
 	sub	a0, a1, a0
@@ -20,9 +20,9 @@ func0000000000000050:
 
 func0000000000000054:
 	sh2add	a3, a2, a2
+	sh3add	a4, a1, a1
 	sh2add	a2, a3, a2
-	sh3add	a3, a1, a1
-	sh1add	a1, a3, a1
+	sh1add	a1, a4, a1
 	sh2add	a1, a1, a2
 	slli	a1, a1, 1
 	subw	a0, a1, a0

@@ -1,18 +1,18 @@
 func0000000000000006:
-	li	a1, 1
-	sll	a0, a1, a0
 	lui	a1, 262145
+	li	a2, 1
 	slli	a1, a1, 2
+	sll	a0, a2, a0
 	addi	a1, a1, -511
 	and	a0, a0, a1
 	ret
 
 func0000000000000002:
-	li	a1, 1
-	sll	a0, a1, a0
 	lui	a1, 16128
 	addi	a1, a1, 1023
+	li	a2, 1
 	slli	a1, a1, 14
+	sll	a0, a2, a0
 	addi	a1, a1, 15
 	and	a0, a0, a1
 	ret
@@ -32,9 +32,9 @@ func0000000000000005:
 
 func0000000000000003:
 	li	a1, 1
+	lui	a2, 8192
 	sll	a0, a1, a0
-	lui	a1, 8192
-	addi	a1, a1, 432
+	addi	a1, a2, 432
 	and	a0, a0, a1
 	ret
 

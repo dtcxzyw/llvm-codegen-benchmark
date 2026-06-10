@@ -24,10 +24,10 @@ func0000000000000019:
 func000000000000001b:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
+	li	a3, -1
 	slt	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
-	xor	a0, a0, a2
+	srli	a3, a3, 1
+	xor	a0, a0, a3
 	neg	a1, a1
 	and	a0, a0, a1
 	ret

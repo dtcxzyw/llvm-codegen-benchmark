@@ -22,8 +22,8 @@ func00000000000000f8:
 	ret
 
 func000000000000008c:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	sext.w	a1, a1
 	neg	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -31,8 +31,8 @@ func000000000000008c:
 	ret
 
 func0000000000000001:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	sext.w	a1, a1
 	neg	a2, a2
 	xor	a1, a1, a2
 	seqz	a1, a1

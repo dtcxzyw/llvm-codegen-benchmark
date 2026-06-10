@@ -34,9 +34,9 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	lui	a1, 2575
 	addi	a1, a1, -325
+	sext.w	a0, a0
 	slli	a1, a1, 13
 	mul	a0, a0, a1
 	ret

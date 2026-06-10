@@ -6,8 +6,8 @@ func0000000000000034:
 	ret
 
 func0000000000000006:
-	sraiw	a1, a0, 31
-	lui	a2, 786432
+	lui	a1, 786432
+	sraiw	a2, a0, 31
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

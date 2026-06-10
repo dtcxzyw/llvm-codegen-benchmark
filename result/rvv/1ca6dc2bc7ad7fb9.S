@@ -1,7 +1,7 @@
 func0000000000000044:
+	lui	a0, 264704
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v12, v12, v12
-	lui	a0, 264704
 	fmv.w.x	fa5, a0
 	vfmax.vf	v12, v12, fa5
 	vmflt.vv	v0, v12, v8

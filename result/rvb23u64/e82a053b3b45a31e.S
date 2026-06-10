@@ -43,8 +43,8 @@ func00000000000000ef:
 func00000000000000ee:
 	li	a3, 220
 	mul	a1, a1, a3
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh2add	a0, a0, a1
 	addi	a0, a0, 112
 	ret

@@ -1,18 +1,18 @@
 func00000000000004e1:
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v8, -1
-	lui	a0, 524288
 	vmsle.vv	v14, v12, v10
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func0000000000000561:
+	lui	a0, 524288
+	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v8, 1
-	lui	a0, 524288
 	vmsle.vv	v14, v10, v12
-	addi	a0, a0, -1
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

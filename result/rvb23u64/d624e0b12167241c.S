@@ -1,6 +1,6 @@
 func0000000000000007:
-	slli	a0, a0, 29
 	bseti	a1, zero, 48
+	slli	a0, a0, 29
 	and	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000007:
 	li	a3, 31
-	andi	a1, a1, 1023
 	slli	a3, a3, 10
+	andi	a1, a1, 1023
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -10,11 +10,11 @@ func0000000000000007:
 func0000000000000002:
 	lui	a3, 589823
 	bclri	a3, a3, 31
+	lui	a4, 983039
 	andn	a2, a2, a3
-	lui	a3, 983039
-	slli	a3, a3, 16
+	slli	a4, a4, 16
 	or	a0, a0, a2
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a0, a0, a1
 	ret
 

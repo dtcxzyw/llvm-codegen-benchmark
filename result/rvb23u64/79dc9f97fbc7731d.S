@@ -16,8 +16,8 @@ func000000000000000c:
 
 func000000000000000f:
 	sub	a2, a2, a1
-	lui	a1, 48
 	addi	a2, a2, 1
+	lui	a1, 48
 	zext.h	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

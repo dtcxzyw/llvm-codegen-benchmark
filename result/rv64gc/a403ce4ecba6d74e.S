@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a1, a1, 31
 	li	a2, 4
+	andi	a1, a1, 31
 	bne	a1, a2, .LBB0_2
 	li	a0, 1
 .LBB0_2:
@@ -14,8 +14,8 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, -8
 	lui	a2, 2
+	andi	a1, a1, -8
 	addi	a2, a2, -9
 	bgeu	a1, a2, .LBB2_2
 	lui	a0, 8

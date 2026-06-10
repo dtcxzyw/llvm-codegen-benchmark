@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a2, a0
 	li	a3, 2
+	sext.w	a2, a0
 	mv	a0, a1
 	beq	a2, a3, .LBB0_3
 	li	a1, 1
@@ -16,8 +16,8 @@ func0000000000000021:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	li	a2, -1
+	sext.w	a0, a0
 	bne	a0, a2, .LBB1_2
 	li	a0, 3
 	ret
@@ -45,8 +45,8 @@ func0000000000000286:
 	ret
 
 func0000000000000028:
-	sext.w	a0, a0
 	li	a2, 7
+	sext.w	a0, a0
 	bgeu	a2, a0, .LBB3_2
 	li	a0, 65
 	ret
@@ -57,8 +57,8 @@ func0000000000000028:
 	ret
 
 func00000000000000c1:
-	sext.w	a0, a0
 	li	a2, 7
+	sext.w	a0, a0
 	bge	a0, a2, .LBB4_2
 	li	a1, 1
 .LBB4_2:
@@ -68,8 +68,8 @@ func00000000000000c1:
 	ret
 
 func0000000000000108:
-	sext.w	a2, a0
 	li	a3, 4
+	sext.w	a2, a0
 	mv	a0, a1
 	bltu	a3, a2, .LBB5_3
 	li	a1, 16
@@ -85,8 +85,8 @@ func0000000000000108:
 	ret
 
 func00000000000000ca:
-	sext.w	a2, a0
 	li	a3, -99
+	sext.w	a2, a0
 	mv	a0, a1
 	blt	a2, a3, .LBB6_3
 	li	a1, 99
@@ -102,8 +102,8 @@ func00000000000000ca:
 	ret
 
 func0000000000000298:
-	srliw	a2, a0, 23
 	li	a3, 113
+	srliw	a2, a0, 23
 	mv	a0, a1
 	bltu	a2, a3, .LBB7_3
 	li	a1, 142
@@ -140,8 +140,8 @@ func0000000000000318:
 	ret
 
 func0000000000000084:
-	sext.w	a2, a0
 	li	a3, 5
+	sext.w	a2, a0
 	mv	a0, a1
 	bltu	a2, a3, .LBB9_3
 	li	a1, 3
@@ -175,16 +175,16 @@ func000000000000014a:
 	ret
 
 func0000000000000024:
-	sext.w	a2, a0
-	li	a3, 2
+	li	a2, 2
+	sext.w	a3, a0
 	mv	a0, a1
-	beq	a2, a3, .LBB11_3
-	bltu	a2, a3, .LBB11_4
+	beq	a3, a2, .LBB11_3
+	bltu	a3, a2, .LBB11_4
 .LBB11_2:
 	ret
 .LBB11_3:
 	li	a0, 13
-	bgeu	a2, a3, .LBB11_2
+	bgeu	a3, a2, .LBB11_2
 .LBB11_4:
 	li	a0, 24
 	ret
@@ -207,9 +207,9 @@ func0000000000000294:
 	ret
 
 func00000000000000c6:
+	lui	a3, 198
 	sext.w	a2, a0
-	lui	a0, 198
-	addi	a3, a0, -1008
+	addi	a3, a3, -1008
 	mv	a0, a1
 	blt	a2, a3, .LBB13_3
 	lui	a1, 132
@@ -227,16 +227,16 @@ func00000000000000c6:
 	ret
 
 func000000000000002a:
-	sext.w	a2, a0
-	li	a3, 5
+	li	a2, 5
+	sext.w	a3, a0
 	mv	a0, a1
-	beq	a2, a3, .LBB14_3
-	blt	a3, a2, .LBB14_4
+	beq	a3, a2, .LBB14_3
+	blt	a2, a3, .LBB14_4
 .LBB14_2:
 	ret
 .LBB14_3:
 	li	a0, 2
-	bge	a3, a2, .LBB14_2
+	bge	a2, a3, .LBB14_2
 .LBB14_4:
 	li	a0, 3
 	ret

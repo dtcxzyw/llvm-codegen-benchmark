@@ -7,8 +7,8 @@ func0000000000000604:
 
 func0000000000000608:
 	sh2add	a1, a1, a2
-	addi	a1, a1, 24
 	addi	a0, a0, 4
+	addi	a1, a1, 24
 	sltu	a0, a1, a0
 	ret
 
@@ -21,20 +21,20 @@ func0000000000000004:
 
 func0000000000000761:
 	sh1add	a3, a1, a1
+	addi	a0, a0, 112
 	sh1add	a1, a3, a1
 	slli	a1, a1, 4
 	add	a1, a1, a2
 	addi	a1, a1, 8
-	addi	a0, a0, 112
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func00000000000007e1:
 	sh1add	a1, a1, a1
+	addi	a0, a0, 24
 	sh3add	a1, a1, a2
 	addi	a1, a1, 8
-	addi	a0, a0, 24
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -172,16 +172,16 @@ func000000000000076c:
 
 func00000000000007c1:
 	sh3add	a1, a1, a2
-	addi	a1, a1, 64
 	addi	a0, a0, -8
+	addi	a1, a1, 64
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000541:
 	sh3add	a1, a1, a2
-	addi	a1, a1, -56
 	addi	a0, a0, -8
+	addi	a1, a1, -56
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -197,8 +197,8 @@ func0000000000000561:
 
 func0000000000000641:
 	sh2add	a1, a1, a2
-	addi	a1, a1, 12
 	addi	a0, a0, -4
+	addi	a1, a1, 12
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -240,8 +240,8 @@ func000000000000070c:
 
 func0000000000000741:
 	sh3add	a1, a1, a2
-	addi	a1, a1, 16
 	addi	a0, a0, -8
+	addi	a1, a1, 16
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -1,8 +1,8 @@
 func000000000000000f:
-	zext.b	a1, a1
 	li	a2, 783
-	slli	a1, a1, 40
+	zext.b	a1, a1
 	slli	a2, a2, 32
+	slli	a1, a1, 40
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -15,16 +15,16 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 56
 	slli	a0, a0, 8
+	slli	a1, a1, 56
 	srli	a0, a0, 8
 	or	a0, a0, a1
 	ret
 
 func0000000000000009:
-	slli	a1, a1, 63
 	li	a2, 2047
 	slli	a2, a2, 52
+	slli	a1, a1, 63
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

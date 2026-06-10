@@ -1,17 +1,17 @@
 func00000000000000c6:
 	addi	a3, a2, -1
 	not	a2, a2
-	lui	a4, 5
 	and	a2, a2, a3
-	addi	a3, a4, 1365
+	lui	a3, 5
 	srli	a4, a2, 1
+	addi	a3, a3, 1365
 	and	a3, a3, a4
-	lui	a4, 3
-	addi	a4, a4, 819
 	sub	a2, a2, a3
-	and	a3, a2, a4
-	srli	a2, a2, 2
-	and	a2, a2, a4
+	lui	a3, 3
+	addi	a3, a3, 819
+	srli	a4, a2, 2
+	and	a2, a2, a3
+	and	a3, a3, a4
 	add	a2, a2, a3
 	srli	a3, a2, 4
 	add	a2, a2, a3
@@ -30,17 +30,17 @@ func00000000000000c6:
 func00000000000000c4:
 	addi	a3, a2, -1
 	not	a2, a2
-	lui	a4, 5
 	and	a2, a2, a3
-	addi	a3, a4, 1365
+	lui	a3, 5
 	srli	a4, a2, 1
+	addi	a3, a3, 1365
 	and	a3, a3, a4
-	lui	a4, 3
-	addi	a4, a4, 819
 	sub	a2, a2, a3
-	and	a3, a2, a4
-	srli	a2, a2, 2
-	and	a2, a2, a4
+	lui	a3, 3
+	addi	a3, a3, 819
+	srli	a4, a2, 2
+	and	a2, a2, a3
+	and	a3, a3, a4
 	add	a2, a2, a3
 	srli	a3, a2, 4
 	add	a2, a2, a3

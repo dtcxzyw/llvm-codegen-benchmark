@@ -4,12 +4,11 @@ func000000000000001b:
 	bexti	a0, a0, 30
 	ret
 
+.LCPI1_0:
+	.quad	2104162448473173
 func0000000000000003:
-	lui	a1, 979827
-	slli.uw	a1, a1, 4
-	addi	a1, a1, -363
-	slli	a1, a1, 15
-	addi	a1, a1, -939
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
 	mul	a0, a0, a1
 	slli	a0, a0, 12
 	srli	a0, a0, 60

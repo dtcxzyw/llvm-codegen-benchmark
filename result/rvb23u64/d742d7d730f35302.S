@@ -19,16 +19,16 @@ func000000000000000d:
 	ret
 
 func0000000000000004:
-	zext.h	a1, a1
 	li	a2, -60
+	zext.h	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	zext.h	a1, a1
 	lui	a2, 184659
 	addi	a2, a2, 957
+	zext.h	a1, a1
 	slli	a2, a2, 32
 	mul	a1, a1, a2
 	add	a0, a0, a1

@@ -24,9 +24,9 @@ func0000000000000204:
 
 func00000000000000a4:
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 11
 	sltiu	a0, a0, 27
@@ -34,9 +34,9 @@ func00000000000000a4:
 
 func0000000000000084:
 	slli	a1, a1, 10
+	lui	a2, 1034740
 	add	a0, a0, a1
-	lui	a1, 1034740
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 4
 	sltiu	a0, a0, 477
@@ -44,9 +44,9 @@ func0000000000000084:
 
 func00000000000000b4:
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 16
 	seqz	a0, a0
@@ -62,9 +62,9 @@ func0000000000000008:
 
 func00000000000000ac:
 	slli	a1, a1, 10
+	lui	a2, 13838
 	addw	a0, a0, a1
-	lui	a1, 13838
-	addi	a1, a1, -1281
+	addi	a1, a2, -1281
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

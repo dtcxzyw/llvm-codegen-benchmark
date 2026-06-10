@@ -45,18 +45,18 @@ func0000000000000052:
 	ret
 
 func0000000000000051:
-	sext.w	a1, a1
 	li	a2, -1
-	sltiu	a1, a1, 3
+	sext.w	a1, a1
 	sllw	a0, a2, a0
+	sltiu	a1, a1, 3
 	addi	a0, a0, 8
 	czero.nez	a0, a0, a1
 	addi	a0, a0, -8
 	ret
 
 func0000000000000004:
-	sext.w	a1, a1
 	lui	a2, 64
+	sext.w	a1, a1
 	sllw	a0, a2, a0
 	lui	a2, 256
 	czero.eqz	a0, a0, a1

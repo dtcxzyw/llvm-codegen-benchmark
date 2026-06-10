@@ -66,17 +66,17 @@ func0000000000000003:
 	bnez	a1, .LBB6_2
 	lui	a1, 174
 	addi	a1, a1, 1728
+	lui	a2, 29
 	add	a0, a0, a1
-	lui	a1, 29
-	addi	a1, a1, 288
+	addi	a1, a2, 288
 	add	a0, a0, a1
 	ret
 .LBB6_2:
 	lui	a1, 349
 	addi	a1, a1, -640
+	lui	a2, 29
 	add	a0, a0, a1
-	lui	a1, 29
-	addi	a1, a1, 288
+	addi	a1, a2, 288
 	add	a0, a0, a1
 	ret
 

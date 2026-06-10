@@ -15,8 +15,8 @@ func0000000000000001:
 	ret
 
 func000000000000000f:
-	slli	a1, a1, 6
 	slli	a0, a0, 54
+	slli	a1, a1, 6
 	srli	a0, a0, 20
 	sh2add.uw	a0, a1, a0
 	ret
@@ -46,8 +46,8 @@ func000000000000001d:
 	ret
 
 func0000000000000007:
-	slli.uw	a1, a1, 19
 	slli	a0, a0, 48
+	slli.uw	a1, a1, 19
 	srli	a0, a0, 45
 	or	a0, a0, a1
 	ret

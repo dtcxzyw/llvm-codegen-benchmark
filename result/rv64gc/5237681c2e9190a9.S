@@ -23,9 +23,9 @@ func0000000000000034:
 	addw	a0, a0, a1
 	ret
 .LBB2_2:
-	slli	a1, a2, 9
-	lui	a2, 1048574
-	addi	a2, a2, -1485
+	lui	a1, 1048574
+	slli	a2, a2, 9
+	addi	a1, a1, -1485
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret

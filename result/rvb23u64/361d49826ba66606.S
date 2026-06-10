@@ -25,8 +25,8 @@ func0000000000000001:
 func0000000000000038:
 	lui	a2, 1048574
 	addi	a3, a2, -1805
-	addi	a2, a2, -1806
 	addw	a1, a1, a3
+	addi	a2, a2, -1806
 	sltu	a1, a1, a2
 	addi	a0, a0, -609
 	czero.nez	a0, a0, a1
@@ -35,9 +35,9 @@ func0000000000000038:
 
 func0000000000000024:
 	lui	a2, 1048304
+	lui	a3, 1048305
 	addw	a1, a1, a2
-	lui	a2, 1048305
-	addi	a2, a2, -2048
+	addi	a2, a3, -2048
 	sltu	a1, a1, a2
 	lui	a2, 272
 	czero.nez	a0, a0, a1
@@ -48,8 +48,8 @@ func0000000000000024:
 func0000000000000008:
 	lui	a2, 1048574
 	addi	a3, a2, 1342
-	addi	a2, a2, 1292
 	addw	a1, a1, a3
+	addi	a2, a2, 1292
 	sltu	a1, a1, a2
 	addi	a0, a0, -63
 	czero.nez	a0, a0, a1
@@ -58,16 +58,16 @@ func0000000000000008:
 
 func000000000000004a:
 	lui	a2, 4096
+	lui	a3, 8192
 	addw	a1, a1, a2
-	lui	a2, 8192
-	addi	a2, a2, -1
-	slt	a1, a2, a1
+	addi	a3, a3, -1
+	slt	a1, a3, a1
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000061:
-	sext.w	a1, a1
 	lui	a2, 1
+	sext.w	a1, a1
 	addi	a2, a2, -2
 	xor	a1, a1, a2
 	czero.eqz	a0, a0, a1

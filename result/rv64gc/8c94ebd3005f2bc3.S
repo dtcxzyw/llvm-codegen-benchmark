@@ -12,9 +12,9 @@ func0000000000000005:
 
 func0000000000000001:
 	zext.b	a1, a1
+	lui	a2, 1048573
 	add	a0, a0, a1
-	lui	a1, 1048573
-	addi	a1, a1, -128
+	addi	a1, a2, -128
 	addw	a0, a0, a1
 	ret
 

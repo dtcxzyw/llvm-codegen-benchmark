@@ -21,8 +21,8 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	beqz	a0, .LBB1_3
 	flt.d	a0, fa4, fa5

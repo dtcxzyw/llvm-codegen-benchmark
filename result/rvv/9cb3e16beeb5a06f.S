@@ -25,8 +25,8 @@ func0000000000000021:
 	vmv1r.v	v11, v0
 	li	a0, 32
 	vmv.v.x	v12, a0
-	li	a1, 64
 	vmv1r.v	v0, v10
+	li	a1, 64
 	vmerge.vxm	v12, v12, a1, v0
 	vadd.vv	v8, v8, v12
 	vmseq.vx	v10, v8, a0
@@ -38,8 +38,8 @@ func0000000000000024:
 	vmv1r.v	v11, v0
 	li	a0, -88
 	vmv.v.x	v12, a0
-	li	a0, -120
 	vmv1r.v	v0, v10
+	li	a0, -120
 	vmerge.vxm	v12, v12, a0, v0
 	vadd.vv	v8, v12, v8
 	vmsleu.vi	v10, v8, 2

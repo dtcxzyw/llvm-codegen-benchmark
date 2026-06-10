@@ -14,11 +14,11 @@ func0000000000000014:
 
 func0000000000000010:
 	slli	a2, a2, 48
+	lui	a3, 519510
 	srli	a2, a2, 48
+	addi	a3, a3, -746
 	or	a1, a1, a2
-	lui	a2, 519510
-	addi	a2, a2, -746
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

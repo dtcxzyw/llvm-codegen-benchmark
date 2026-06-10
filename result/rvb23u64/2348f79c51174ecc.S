@@ -13,8 +13,8 @@ func0000000000000026:
 	ret
 
 func0000000000000061:
-	srliw	a1, a1, 10
 	lui	a2, 13
+	srliw	a1, a1, 10
 	addi	a2, a2, 1984
 	add	a1, a1, a2
 	zext.h	a0, a0

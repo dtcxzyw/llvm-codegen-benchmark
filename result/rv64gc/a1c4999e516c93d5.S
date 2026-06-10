@@ -1,10 +1,10 @@
 func0000000000000003:
 	lui	a2, 1048514
-	andi	a0, a0, 511
 	addi	a2, a2, -512
+	andi	a0, a0, 511
+	lui	a3, 2
 	and	a1, a1, a2
-	lui	a2, 2
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

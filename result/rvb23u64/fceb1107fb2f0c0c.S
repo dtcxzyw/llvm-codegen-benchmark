@@ -1,7 +1,7 @@
 func0000000000000004:
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	sll	a0, a2, a0
+	sll	a0, a3, a0
 	andn	a0, a1, a0
 	ret
 

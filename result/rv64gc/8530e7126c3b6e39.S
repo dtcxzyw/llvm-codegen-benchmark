@@ -6,11 +6,11 @@ func0000000000000031:
 	ret
 
 func0000000000000019:
-	sext.w	a1, a1
 	lui	a2, 917504
-	slti	a1, a1, 5
 	addi	a2, a2, 1
+	sext.w	a1, a1
 	slli	a2, a2, 34
+	slti	a1, a1, 5
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

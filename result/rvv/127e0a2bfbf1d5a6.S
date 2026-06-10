@@ -18,9 +18,9 @@ func000000000000006c:
 func00000000000000c8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 1
-	li	a0, -31
 	vadd.vi	v8, v8, 15
 	vand.vi	v8, v8, -8
+	li	a0, -31
 	srli	a0, a0, 1
 	vmsgtu.vx	v0, v8, a0
 	ret

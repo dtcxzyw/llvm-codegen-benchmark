@@ -66,8 +66,8 @@ func00000000000000d4:
 	slli	a0, a2, 48
 	srai	a0, a0, 48
 .LBB6_2:
-	sext.w	a0, a0
 	lui	a1, 524288
+	sext.w	a0, a0
 	addiw	a1, a1, -10
 	sltu	a0, a0, a1
 	ret

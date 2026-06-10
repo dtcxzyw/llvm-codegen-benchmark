@@ -20,8 +20,8 @@ func0000000000000061:
 
 func00000000000002ac:
 	addiw	a0, a0, -4
-	sext.w	a1, a1
 	snez	a0, a0
+	sext.w	a1, a1
 	sgtz	a1, a1
 	slli	a0, a0, 1
 	or	a0, a0, a1
@@ -31,10 +31,10 @@ func00000000000002ac:
 func0000000000000238:
 	sext.w	a0, a0
 	srliw	a1, a1, 16
-	snez	a1, a1
 	sltiu	a0, a0, 256
-	slli	a1, a1, 4
+	snez	a1, a1
 	xori	a0, a0, 1
+	slli	a1, a1, 4
 	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret
@@ -55,8 +55,8 @@ func000000000000006c:
 	ret
 
 func0000000000000534:
-	srliw	a1, a1, 1
 	li	a2, 1571
+	srliw	a1, a1, 1
 	bltu	a1, a2, .LBB5_2
 	lui	a1, 65857
 	addi	a1, a1, 161

@@ -13,13 +13,13 @@ func0000000000000000:
 	ret
 
 func000000000000001b:
-	slli	a1, a0, 8
-	sub	a1, a1, a0
-	lui	a0, 277453
-	addi	a0, a0, -1361
-	slli	a1, a1, 32
+	lui	a1, 277453
+	slli	a2, a0, 8
+	sub	a2, a2, a0
+	addi	a0, a1, -1361
+	slli	a2, a2, 32
 	slli	a0, a0, 32
-	mulhu	a0, a1, a0
+	mulhu	a0, a2, a0
 	srli	a0, a0, 44
 	li	a1, 213
 	mul	a0, a0, a1

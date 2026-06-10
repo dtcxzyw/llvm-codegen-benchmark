@@ -12,20 +12,20 @@ func00000000000000e6:
 	ret
 
 func00000000000000e8:
-	sext.w	a1, a0
+	li	a1, 127
+	sext.w	a2, a0
 	slli	a0, a0, 56
-	li	a2, 127
-	sltiu	a1, a1, 128
-	slli	a2, a2, 56
-	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
+	sltiu	a2, a2, 128
+	slli	a1, a1, 56
+	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000061:
 	sext.w	a1, a0
-	slli.uw	a0, a0, 20
 	sltiu	a1, a1, -1
+	slli.uw	a0, a0, 20
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret

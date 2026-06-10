@@ -1,7 +1,7 @@
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v8, v8, -6
 	vmv.v.i	v10, 1
+	vadd.vi	v8, v8, -6
 	vsll.vv	v8, v10, v8
 	li	a0, 255
 	vand.vx	v8, v8, a0
@@ -9,8 +9,8 @@ func0000000000000006:
 
 func0000000000000007:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v8, v8, -1
 	vmv.v.i	v10, 1
+	vadd.vi	v8, v8, -1
 	vsll.vv	v8, v10, v8
 	li	a0, 255
 	vand.vx	v8, v8, a0

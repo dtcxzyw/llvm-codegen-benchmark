@@ -22,22 +22,22 @@ func000000000000058c:
 
 func0000000000000084:
 	bseti	a0, zero, 31
-	bseti	a1, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vadd.vx	v8, v8, a0
+	bseti	a1, zero, 32
 	vmsltu.vx	v12, v10, a1
+	vadd.vx	v8, v8, a0
 	vmsltu.vx	v10, v8, a1
 	vmand.mm	v0, v10, v12
 	ret
 
 func0000000000001484:
 	bseti	a0, zero, 31
-	bseti	a1, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vadd.vx	v8, v8, a0
+	bseti	a1, zero, 32
 	vmsltu.vx	v12, v10, a1
+	vadd.vx	v8, v8, a0
 	vmsltu.vx	v10, v8, a1
 	vmand.mm	v0, v10, v12
 	ret

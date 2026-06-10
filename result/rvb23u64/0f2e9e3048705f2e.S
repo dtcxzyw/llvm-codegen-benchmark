@@ -1,6 +1,6 @@
 func0000000000000009:
-	addi	a0, a0, -12
 	lui	a1, 699051
+	addi	a0, a0, -12
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	slli	a2, a0, 32
@@ -12,8 +12,8 @@ func0000000000000009:
 	ret
 
 func000000000000000f:
-	addi	a0, a0, -1
 	lui	a1, 699051
+	addi	a0, a0, -1
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	slli	a2, a0, 32

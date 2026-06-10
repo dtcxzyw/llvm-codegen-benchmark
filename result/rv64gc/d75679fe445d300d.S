@@ -21,18 +21,18 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
+	li	a2, 3
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 3
 	bgeu	a2, a1, .LBB3_2
 	li	a0, 3
 .LBB3_2:
 	ret
 
 func0000000000000004:
+	li	a2, 2
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 2
 	bgeu	a1, a2, .LBB4_2
 	li	a0, 7
 .LBB4_2:

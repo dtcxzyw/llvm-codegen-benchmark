@@ -7,8 +7,8 @@ func0000000000000090:
 	ret
 
 func00000000000000e1:
-	addi	a2, a2, -20
 	srli	a1, a1, 12
+	addi	a2, a2, -20
 	sltiu	a1, a1, 5
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1

@@ -16,8 +16,8 @@ func000000000000019e:
 
 func000000000000011e:
 	addw	a1, a1, a2
-	lui	a2, 1
 	slli	a1, a1, 2
+	lui	a2, 1
 	add	a0, a0, a1
 	addi	a1, a2, 1052
 	add	a0, a0, a1

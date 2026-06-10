@@ -7,8 +7,8 @@ func000000000000000f:
 
 func000000000000000c:
 	li	a3, 31
-	sext.w	a1, a1
 	slli	a3, a3, 8
+	sext.w	a1, a1
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -16,8 +16,8 @@ func000000000000000c:
 
 func000000000000000e:
 	lui	a3, 16
-	sext.w	a1, a1
 	addi	a3, a3, -256
+	sext.w	a1, a1
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -1,6 +1,6 @@
 func0000000000000008:
-	sraiw	a0, a0, 2
 	li	a1, 37
+	sraiw	a0, a0, 2
 	mul	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

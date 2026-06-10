@@ -33,9 +33,9 @@ func0000000000000a84:
 
 func0000000000000a81:
 	lui	a2, 524288
-	addiw	a0, a0, -6
 	addiw	a2, a2, -2
 	and	a1, a1, a2
+	addiw	a0, a0, -6
 	sltiu	a1, a1, 6
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -73,9 +73,9 @@ func0000000000000821:
 	ret
 
 func0000000000000301:
-	sext.w	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 257
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	czero.nez	a0, a1, a0
 	ret

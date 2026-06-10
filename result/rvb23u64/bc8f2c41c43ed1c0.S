@@ -1,8 +1,8 @@
 func0000000000000003:
-	slli	a1, a1, 2
 	seqz	a0, a0
-	andi	a1, a1, 128
+	slli	a1, a1, 2
 	addi	a0, a0, -1
+	andi	a1, a1, 128
 	andi	a0, a0, 112
 	or	a0, a0, a1
 	ret

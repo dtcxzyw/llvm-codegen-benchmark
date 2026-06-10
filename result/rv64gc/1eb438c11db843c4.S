@@ -44,8 +44,8 @@ func0000000000000021:
 
 func0000000000000108:
 	sltiu	a2, a2, 256
-	sltiu	a1, a1, 256
 	xori	a2, a2, 1
+	sltiu	a1, a1, 256
 	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -119,8 +119,8 @@ func00000000000000ca:
 
 func0000000000000028:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 129
 	seqz	a2, a2
+	sltiu	a1, a1, 129
 	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

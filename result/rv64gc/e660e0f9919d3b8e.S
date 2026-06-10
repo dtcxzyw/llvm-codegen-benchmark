@@ -11,9 +11,9 @@ func0000000000000001:
 func0000000000000002:
 	lui	a1, 522232
 	addi	a1, a1, -129
+	lui	a2, 526344
 	addw	a0, a0, a1
-	lui	a1, 526344
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	xor	a0, a0, a1
 	ret
 

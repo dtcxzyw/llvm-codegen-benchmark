@@ -16,11 +16,11 @@ func000000000000002a:
 
 func0000000000000066:
 	add	a1, a1, a2
-	lui	a2, 8
 	add	a0, a0, a1
+	lui	a1, 8
 	srliw	a0, a0, 8
-	addi	a2, a2, -16
-	add	a0, a0, a2
+	addi	a1, a1, -16
+	add	a0, a0, a1
 	ret
 
 func0000000000000006:

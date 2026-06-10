@@ -10,9 +10,9 @@ func0000000000002308:
 func0000000000006308:
 	li	a0, 23
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsne.vi	v10, v9, 15
-	vmsne.vx	v9, v9, a0
-	vmand.mm	v9, v10, v9
+	vmsne.vx	v10, v9, a0
+	vmsne.vi	v9, v9, 15
+	vmand.mm	v9, v9, v10
 	vmsleu.vi	v8, v8, 1
 	vmor.mm	v0, v8, v9
 	ret

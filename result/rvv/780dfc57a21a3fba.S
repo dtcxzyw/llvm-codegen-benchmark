@@ -1,8 +1,8 @@
 func0000000000000008:
 	fmv.d.x	fa5, zero
-	li	a0, 1055
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v0, v16, fa5
+	li	a0, 1055
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vfmul.vf	v8, v8, fa5

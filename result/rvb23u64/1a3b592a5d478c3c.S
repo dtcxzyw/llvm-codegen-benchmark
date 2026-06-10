@@ -15,15 +15,15 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	addi	a0, a0, -1023
 	li	a1, 1233
+	addi	a0, a0, -1023
 	mul	a0, a0, a1
 	srliw	a0, a0, 12
 	ret
 
 func0000000000000008:
-	sh1add	a0, a0, a0
 	lui	a1, 1048573
+	sh1add	a0, a0, a0
 	addi	a1, a1, 3
 	add	a0, a0, a1
 	srliw	a0, a0, 1
@@ -48,8 +48,8 @@ func0000000000000009:
 	ret
 
 func000000000000000e:
-	addi	a0, a0, -1
 	lui	a1, 297
+	addi	a0, a0, -1
 	addi	a1, a1, 847
 	mul	a0, a0, a1
 	srliw	a0, a0, 19

@@ -24,8 +24,8 @@ func0000000000000008:
 
 func0000000000000002:
 	fmul.s	fa5, fa1, fa1
-	lui	a0, 280080
 	fmadd.s	fa5, fa0, fa0, fa5
+	lui	a0, 280080
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

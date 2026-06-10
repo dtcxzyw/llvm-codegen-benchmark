@@ -39,12 +39,12 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	slli	a2, a2, 3
+	li	a3, -1
 	add	a0, a0, a1
-	li	a1, -1
+	slli	a2, a2, 3
+	slli	a3, a3, 63
 	add	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a1, a1, 63
+	addi	a1, a3, 63
 	and	a0, a0, a1
 	ret
 

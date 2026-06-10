@@ -46,8 +46,8 @@ func000000000000001f:
 	ret
 
 func000000000000001d:
-	addi	a1, a1, 31
 	lui	a2, 2
+	addi	a1, a1, 31
 	addi	a2, a2, -32
 	and	a1, a1, a2
 	add	a0, a0, a1

@@ -28,9 +28,9 @@ func0000000000000601:
 func0000000000000604:
 	slli	a2, a2, 32
 	srli	a2, a2, 30
+	lui	a3, 315
 	add	a1, a1, a2
-	lui	a2, 315
-	addi	a2, a2, 1280
+	addi	a2, a3, 1280
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

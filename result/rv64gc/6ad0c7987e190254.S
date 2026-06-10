@@ -44,25 +44,25 @@ func000000000000000c:
 	andi	a2, a2, 1
 	bnez	a2, .LBB5_2
 	li	a2, 48
+	add	a1, a1, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	ret
 .LBB5_2:
 	li	a2, 40
+	add	a1, a1, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	ret
 
 func0000000000000001:
 	andi	a2, a2, 1
 	bnez	a2, .LBB6_2
 	li	a2, -38
+	add	a1, a1, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	ret
 .LBB6_2:
 	li	a2, -32
+	add	a1, a1, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	ret
 

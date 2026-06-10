@@ -1,6 +1,6 @@
 func00000000000018c1:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	slti	a2, a1, 2
 	slti	a3, a0, 2
 	xor	a0, a0, a1
@@ -33,11 +33,11 @@ func000000000000042c:
 
 func0000000000000424:
 	sext.w	a2, a1
-	sext.w	a3, a0
-	or	a0, a0, a1
+	or	a1, a1, a0
 	sext.w	a0, a0
-	seqz	a0, a0
-	sltu	a1, a3, a2
+	sext.w	a1, a1
+	seqz	a1, a1
+	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

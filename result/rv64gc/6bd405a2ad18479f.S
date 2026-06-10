@@ -16,21 +16,21 @@ func0000000000000042:
 	li	a0, 1023
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
+	fmv.d.x	fa3, zero
 	flt.d	a0, fa5, fa4
-	fmv.d.x	fa4, zero
-	flt.d	a1, fa4, fa5
+	flt.d	a1, fa3, fa5
 	and	a0, a0, a1
 	ret
 
 func00000000000000ac:
 	fneg.d	fa5, fa1
 	fdiv.d	fa5, fa5, fa0
-	fmv.d.x	fa4, zero
 	li	a0, 1023
+	fmv.d.x	fa4, zero
 	slli	a0, a0, 52
-	fle.d	a1, fa4, fa5
-	fmv.d.x	fa4, a0
-	fle.d	a0, fa5, fa4
+	fmv.d.x	fa3, a0
+	fle.d	a0, fa4, fa5
+	fle.d	a1, fa5, fa3
 	and	a0, a0, a1
 	ret
 

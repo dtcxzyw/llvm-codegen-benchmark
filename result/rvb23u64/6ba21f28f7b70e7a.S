@@ -14,11 +14,11 @@ func0000000000000015:
 	ret
 
 func0000000000000008:
-	sext.w	a1, a0
-	li	a2, -1
-	sltiu	a1, a1, 32
-	srli	a2, a2, 32
-	czero.nez	a1, a2, a1
+	li	a1, -1
+	sext.w	a2, a0
+	sltiu	a2, a2, 32
+	srli	a1, a1, 32
+	czero.nez	a1, a1, a2
 	zext.w	a0, a0
 	or	a0, a0, a1
 	ret
@@ -32,8 +32,8 @@ func0000000000000009:
 	ret
 
 func0000000000000018:
-	sext.w	a0, a0
 	li	a1, 1
+	sext.w	a0, a0
 	maxu	a0, a0, a1
 	zext.w	a0, a0
 	ret

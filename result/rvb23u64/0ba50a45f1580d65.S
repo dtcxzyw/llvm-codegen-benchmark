@@ -1,12 +1,12 @@
 func0000000000000008:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	divu	a0, a0, a1
 	ret
 
 func000000000000000a:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	divu	a0, a0, a1
 	ret
 

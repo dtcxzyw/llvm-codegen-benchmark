@@ -1,8 +1,8 @@
 func00000000000002a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	bseti	a0, zero, 31
 	vsub.vv	v8, v12, v8
+	bseti	a0, zero, 31
 	vadd.vx	v8, v8, a0
 	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
@@ -36,8 +36,8 @@ func00000000000000a1:
 func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, -1240
 	vsub.vv	v8, v12, v8
+	li	a0, -1240
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048575
 	addi	a0, a0, 1616
@@ -47,8 +47,8 @@ func0000000000000004:
 func00000000000000a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 8
 	vsub.vv	v8, v12, v8
+	lui	a0, 8
 	vadd.vx	v8, v8, a0
 	lui	a0, 16
 	vmsltu.vx	v0, v8, a0

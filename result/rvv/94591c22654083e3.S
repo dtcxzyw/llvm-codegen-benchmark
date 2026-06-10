@@ -1,8 +1,8 @@
 func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 1
 	vmseq.vi	v0, v12, 1
-	vmv.v.i	v12, 1
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmseq.vv	v0, v10, v8
 	ret
 
@@ -38,9 +38,9 @@ func0000000000000084:
 
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsltu.vv	v0, v10, v8
 	ret
 
@@ -53,17 +53,17 @@ func0000000000000028:
 
 func000000000000002a:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmslt.vv	v0, v10, v8
 	ret
 
@@ -76,25 +76,25 @@ func0000000000000141:
 
 func0000000000000108:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 1
 	vmsgtu.vi	v0, v12, 1
-	vmv.v.i	v12, 1
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000038:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 3
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 3
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000146:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vmsgt.vi	v0, v12, 8
-	vmv.v.i	v12, 0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmslt.vv	v0, v10, v8
 	ret
 
@@ -114,11 +114,11 @@ func0000000000000088:
 	ret
 
 func0000000000000158:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v12, -1
 	li	a0, 127
-	vmv.v.x	v12, a0
-	vmerge.vvm	v10, v12, v10, v0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vmsgt.vi	v0, v12, -1
+	vmerge.vvm	v10, v14, v10, v0
 	vmsltu.vv	v0, v8, v10
 	ret
 
@@ -147,26 +147,26 @@ func000000000000008a:
 
 func000000000000002b:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 1
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 1
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsle.vv	v0, v8, v10
 	ret
 
 func0000000000000027:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 1
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 1
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsle.vv	v0, v10, v8
 	ret
 
 func0000000000000034:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v12, 0
 	li	a0, 127
-	vmv.v.x	v12, a0
-	vmerge.vvm	v10, v12, v10, v0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vmseq.vi	v0, v12, 0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsltu.vv	v0, v10, v8
 	ret
 

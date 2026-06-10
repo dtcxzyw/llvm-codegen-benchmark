@@ -1,29 +1,32 @@
 func0000000000000040:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v11
+	vmv.v.i	v12, 7
+	vzext.vf2	v14, v11
+	vmul.vv	v8, v8, v14
 	vzext.vf2	v14, v10
-	vmul.vv	v10, v8, v12
-	vmv.v.i	v8, 7
-	vmacc.vv	v8, v10, v14
+	vmacc.vv	v12, v8, v14
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000030:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v11
-	vzext.vf2	v14, v10
 	li	a0, -1
-	vmul.vv	v10, v8, v12
 	srli	a0, a0, 29
-	vmv.v.x	v8, a0
-	vmacc.vv	v8, v10, v14
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vzext.vf2	v14, v11
+	vmul.vv	v8, v8, v14
+	vzext.vf2	v14, v10
+	vmacc.vv	v12, v8, v14
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000020:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v11
+	vmv.v.i	v12, 7
+	vzext.vf2	v14, v11
+	vmul.vv	v8, v8, v14
 	vzext.vf2	v14, v10
-	vmul.vv	v10, v8, v12
-	vmv.v.i	v8, 7
-	vmacc.vv	v8, v10, v14
+	vmacc.vv	v12, v8, v14
+	vmv.v.v	v8, v12
 	ret
 

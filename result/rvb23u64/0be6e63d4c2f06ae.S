@@ -7,10 +7,10 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
+	li	a1, 223
 	slli	a0, a0, 48
 	srli	a0, a0, 56
 	addi	a0, a0, 27
-	li	a1, 223
 	mul	a0, a0, a1
 	addi	a0, a0, 123
 	ret
@@ -25,8 +25,8 @@ func000000000000000e:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, -256
 	li	a1, 1024
+	andi	a0, a0, -256
 	sub	a0, a1, a0
 	ret
 

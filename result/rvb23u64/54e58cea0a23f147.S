@@ -20,8 +20,8 @@ func000000000000001f:
 	ret
 
 func000000000000007f:
-	addi	a1, a1, 14
 	lui	a2, 16
+	addi	a1, a1, 14
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -29,8 +29,8 @@ func000000000000007f:
 	ret
 
 func000000000000007c:
-	addi	a1, a1, 3
 	lui	a2, 32
+	addi	a1, a1, 3
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	add	a0, a0, a1

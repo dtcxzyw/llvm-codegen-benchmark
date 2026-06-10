@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	add.uw	a0, a2, a0
 	srli	a1, a1, 2
+	add.uw	a0, a2, a0
 	sh2add.uw	a0, a1, a0
 	ret
 
@@ -20,28 +20,28 @@ func0000000000000010:
 	ret
 
 func000000000000001c:
+	lui	a3, 524288
 	sext.w	a2, a2
+	addiw	a3, a3, -4
 	add	a0, a0, a2
-	lui	a2, 524288
-	addiw	a2, a2, -4
-	and	a1, a1, a2
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 
 func000000000000001f:
 	sext.w	a2, a2
+	lui	a3, 524288
 	sh1add	a0, a2, a0
-	lui	a2, 524288
-	addiw	a2, a2, -2
-	and	a1, a1, a2
+	addiw	a3, a3, -2
+	and	a1, a1, a3
 	sh1add	a0, a1, a0
 	ret
 
 func000000000000000c:
+	bseti	a3, zero, 34
 	sh2add.uw	a0, a2, a0
-	bseti	a2, zero, 34
-	addi	a2, a2, -16
-	and	a1, a1, a2
+	addi	a3, a3, -16
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

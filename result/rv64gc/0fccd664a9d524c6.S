@@ -1,8 +1,8 @@
 func0000000000000001:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	sgtz	a3, a2
 	neg	a3, a3
+	sext.w	a1, a1
 	and	a2, a2, a3
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
@@ -26,10 +26,10 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	sgtz	a3, a2
 	neg	a3, a3
+	sext.w	a1, a1
 	and	a2, a2, a3
 	blt	a1, a2, .LBB2_2
 	mv	a1, a2

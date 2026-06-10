@@ -5,9 +5,9 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
+	lui	a1, 524288
 	not	a0, a0
 	slliw	a0, a0, 9
-	lui	a1, 524288
 	and	a0, a0, a1
 	ret
 

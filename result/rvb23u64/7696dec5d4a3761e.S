@@ -7,11 +7,11 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 1
 	lui	a2, 1048570
-	sltiu	a0, a0, 8
+	andi	a1, a1, 1
 	addi	a2, a2, -768
 	czero.nez	a1, a2, a1
+	sltiu	a0, a0, 8
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -54,14 +54,14 @@ func000000000000000a:
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 1
 	li	a2, 50
+	andi	a1, a1, 1
+	lui	a3, 1
 	czero.nez	a1, a2, a1
-	lui	a2, 1
-	sltiu	a0, a0, 19
-	addi	a2, a2, 334
+	addi	a2, a3, 334
 	add	a1, a1, a2
 	li	a2, 17
+	sltiu	a0, a0, 19
 	slli	a2, a2, 8
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

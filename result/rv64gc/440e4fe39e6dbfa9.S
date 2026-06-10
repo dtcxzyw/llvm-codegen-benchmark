@@ -14,12 +14,12 @@ func0000000000000024:
 
 func00000000000000a4:
 	zext.b	a1, a1
+	lui	a2, 1048566
 	add	a0, a0, a1
-	lui	a1, 1048566
-	addi	a1, a1, 1493
+	addi	a1, a2, 1493
+	lui	a2, 37
 	addw	a0, a0, a1
-	lui	a1, 37
-	addi	a1, a1, -1971
+	addi	a1, a2, -1971
 	sltu	a0, a0, a1
 	ret
 

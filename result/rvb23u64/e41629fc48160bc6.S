@@ -1,7 +1,7 @@
 func0000000000000004:
+	li	a1, 383
 	addi	a0, a0, -2048
 	addi	a0, a0, -426
-	li	a1, 383
 	srl	a0, a1, a0
 	ret
 

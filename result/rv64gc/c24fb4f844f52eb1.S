@@ -8,16 +8,16 @@ func00000000000000ff:
 	ret
 
 func000000000000003a:
+	lui	a2, 16
 	sub	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 731
+	addi	a1, a2, 731
 	add	a0, a0, a1
 	ret
 
 func000000000000003b:
+	lui	a2, 16
 	sub	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 733
+	addi	a1, a2, 733
 	add	a0, a0, a1
 	ret
 

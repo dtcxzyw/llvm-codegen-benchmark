@@ -1,9 +1,9 @@
 func000000000000000f:
 	lui	a3, 524288
-	zext.b	a1, a1
 	addiw	a3, a3, -256
-	slli	a1, a1, 1
+	zext.b	a1, a1
 	and	a2, a2, a3
+	slli	a1, a1, 1
 	slli	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2

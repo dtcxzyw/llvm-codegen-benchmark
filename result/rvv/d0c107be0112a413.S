@@ -35,8 +35,8 @@ func0000000000000005:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, zero
-	lui	a0, 246333
 	vmfle.vf	v12, v8, fa5
+	lui	a0, 246333
 	addi	a0, a0, 1802
 	vmnot.m	v0, v12
 	vmv.v.x	v12, a0

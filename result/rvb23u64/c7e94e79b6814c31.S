@@ -19,9 +19,9 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
+	li	a3, 3
 	or	a1, a1, a2
-	li	a2, 3
-	sllw	a0, a2, a0
+	sllw	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

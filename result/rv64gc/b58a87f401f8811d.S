@@ -1,8 +1,8 @@
 func000000000000000a:
 	sext.w	a2, a0
 	sext.w	a1, a1
-	seqz	a1, a1
 	sgtz	a2, a2
+	seqz	a1, a1
 	neg	a2, a2
 	and	a0, a0, a2
 	addi	a1, a1, -1

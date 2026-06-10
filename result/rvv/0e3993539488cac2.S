@@ -60,9 +60,9 @@ func0000000000000071:
 	ret
 
 func0000000000000054:
-	lui	a0, 512
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v0, v10, -1
+	lui	a0, 512
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 1024

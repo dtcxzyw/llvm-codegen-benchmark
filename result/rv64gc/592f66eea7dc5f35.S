@@ -6,9 +6,9 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
+	li	a1, 223
 	zext.b	a0, a0
 	addi	a0, a0, 36
-	li	a1, 223
 	mul	a0, a0, a1
 	addi	a0, a0, 132
 	ret

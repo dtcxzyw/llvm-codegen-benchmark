@@ -11,9 +11,9 @@ func0000000000000003:
 func0000000000000001:
 	srli	a2, a2, 5
 	lui	a3, 2096
+	lui	a4, 2048
 	and	a2, a2, a3
-	lui	a3, 2048
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

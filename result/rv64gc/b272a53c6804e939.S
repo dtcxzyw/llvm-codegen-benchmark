@@ -41,9 +41,9 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
+	li	a3, -1
 	sub	a2, a1, a2
-	li	a1, -1
-	srli	a1, a1, 1
+	srli	a1, a3, 1
 	bne	a2, a1, .LBB5_2
 	mv	a0, a1
 .LBB5_2:
@@ -58,9 +58,9 @@ func0000000000000004:
 	ret
 
 func0000000000000044:
+	lui	a3, 244
 	sub	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
+	addi	a2, a3, 576
 	bgeu	a1, a2, .LBB7_2
 	li	a0, 1
 .LBB7_2:

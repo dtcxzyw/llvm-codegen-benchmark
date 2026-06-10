@@ -1,9 +1,9 @@
 func0000000000000002:
+	lui	a2, 978671
+	addi	a2, a2, -273
 	sub	a0, a0, a1
-	lui	a1, 978671
+	slli	a1, a2, 32
 	srai	a0, a0, 3
-	addi	a1, a1, -273
-	slli	a2, a1, 32
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	fcvt.d.lu	fa5, a0

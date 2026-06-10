@@ -9,8 +9,8 @@ func0000000000000004:
 
 func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmv.v.i	v10, 0
-	vnmsub.vv	v8, v12, v10
+	vmv.v.i	v12, 0
+	vsext.vf2	v14, v10
+	vnmsub.vv	v8, v14, v12
 	ret
 

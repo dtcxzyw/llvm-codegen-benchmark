@@ -17,8 +17,8 @@ func0000000000000008:
 
 func000000000000000c:
 	sext.w	a1, a1
-	lui	a2, 2
 	seqz	a1, a1
+	lui	a2, 2
 	addi	a1, a1, -1
 	addi	a2, a2, 1
 	and	a1, a1, a2

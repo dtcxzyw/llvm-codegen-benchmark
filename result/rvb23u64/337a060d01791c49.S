@@ -10,9 +10,9 @@ func000000000000000c:
 	ret
 
 func0000000000000021:
+	lui	a2, 4080
 	or	a0, a0, a1
-	lui	a1, 4080
-	addi	a1, a1, 511
+	addi	a1, a2, 511
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -24,10 +24,10 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
+	li	a2, 31
 	or	a0, a0, a1
-	li	a1, 31
-	slli	a1, a1, 11
-	and	a0, a0, a1
+	slli	a2, a2, 11
+	and	a0, a0, a2
 	snez	a0, a0
 	ret
 

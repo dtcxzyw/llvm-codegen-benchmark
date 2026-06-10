@@ -1,6 +1,6 @@
 func0000000000000003:
-	fadd.s	fa5, fa1, fa2
 	lui	a0, 260096
+	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	beqz	a0, .LBB0_2

@@ -34,9 +34,9 @@ func0000000000000f01:
 	ret
 
 func0000000000000d81:
-	andi	a1, a1, 7
 	lui	a2, 393216
 	xor	a0, a0, a2
+	andi	a1, a1, 7
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret

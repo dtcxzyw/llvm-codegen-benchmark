@@ -24,8 +24,8 @@ func0000000000000008:
 
 func0000000000000014:
 	sext.w	a0, a0
-	not	a1, a1
 	sltiu	a0, a0, 2
+	not	a1, a1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

@@ -16,8 +16,8 @@ func0000000000000368:
 
 func0000000000000361:
 	sh2add	a2, a2, a2
-	li	a3, 280
 	slliw	a2, a2, 1
+	li	a3, 280
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 280

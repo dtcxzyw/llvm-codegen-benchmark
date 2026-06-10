@@ -12,9 +12,9 @@ func00000000000000a6:
 	ret
 
 func0000000000000001:
+	negw	a2, a2
 	addw	a0, a0, a1
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
@@ -39,9 +39,9 @@ func000000000000040a:
 	ret
 
 func0000000000000201:
+	negw	a2, a2
 	addw	a0, a0, a1
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
@@ -53,17 +53,17 @@ func00000000000006a1:
 	ret
 
 func00000000000000a1:
+	negw	a2, a2
 	addw	a0, a0, a1
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
 func0000000000000008:
+	lui	a3, 64
 	add	a0, a0, a1
 	addw	a0, a0, a2
-	lui	a1, 64
-	sltu	a0, a1, a0
+	sltu	a0, a3, a0
 	ret
 
 func000000000000018a:
@@ -92,9 +92,9 @@ func0000000000000606:
 	ret
 
 func0000000000000601:
+	negw	a2, a2
 	addw	a0, a0, a1
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

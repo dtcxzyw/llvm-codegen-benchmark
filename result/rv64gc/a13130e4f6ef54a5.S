@@ -20,8 +20,8 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
-	andi	a0, a0, 7
 	li	a1, 3
+	andi	a0, a0, 7
 	bltu	a0, a1, .LBB3_2
 	li	a0, 72
 	ret

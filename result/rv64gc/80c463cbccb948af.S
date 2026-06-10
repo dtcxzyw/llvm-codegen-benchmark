@@ -1,18 +1,18 @@
 func0000000000000004:
-	fmv.s	fa5, fa0
-	fcvt.s.w	fa0, a0
-	flt.s	a0, fa5, fa0
+	fcvt.s.w	fa5, a0
+	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB0_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB0_2:
+	fmv.s	fa0, fa5
 	ret
 
 func0000000000000002:
-	fmv.s	fa5, fa0
-	fcvt.s.w	fa0, a0
-	flt.s	a0, fa0, fa5
+	fcvt.s.w	fa5, a0
+	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB1_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB1_2:
+	fmv.s	fa0, fa5
 	ret
 

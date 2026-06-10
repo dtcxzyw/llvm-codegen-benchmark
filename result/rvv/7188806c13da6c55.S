@@ -30,9 +30,9 @@ func0000000000000006:
 	ret
 
 func0000000000000005:
+	lui	a0, 992
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 27
-	lui	a0, 992
 	vandn.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret

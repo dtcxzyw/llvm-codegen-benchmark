@@ -13,8 +13,8 @@ func000000000000000a:
 	ret
 
 func0000000000000002:
-	neg	a0, a0
 	lui	a1, 33157
+	neg	a0, a0
 	slli	a0, a0, 48
 	slli	a1, a1, 4
 	mulhu	a0, a0, a1

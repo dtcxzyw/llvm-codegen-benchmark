@@ -16,13 +16,13 @@ func000000000000001d:
 func000000000000001f:
 	beqz	a2, .LBB2_2
 	li	a2, 40
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB2_2:
 	li	a2, 32
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000015:

@@ -1,6 +1,6 @@
 func0000000000000064:
-	add	a0, a0, a1
 	li	a3, -127
+	add	a0, a0, a1
 	srli	a3, a3, 1
 	mv	a2, a0
 	bltu	a0, a3, .LBB0_2

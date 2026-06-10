@@ -1,6 +1,6 @@
 func0000000000000021:
-	zext.b	a1, a1
 	lui	a2, 1040384
+	zext.b	a1, a1
 	czero.eqz	a1, a2, a1
 	lui	a2, 1044480
 	and	a0, a0, a2

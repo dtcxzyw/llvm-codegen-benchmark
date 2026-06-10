@@ -1,7 +1,7 @@
 func0000000000000000:
+	li	a1, 256
 	slli	a0, a0, 34
 	srli	a0, a0, 50
-	li	a1, 256
 	bltu	a1, a0, .LBB0_2
 	li	a0, 256
 .LBB0_2:

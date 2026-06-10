@@ -15,20 +15,20 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
+	lui	a3, 244
 	andi	a0, a0, 1
+	addi	a3, a3, 576
 	sub	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000005:
+	lui	a3, 244
 	andi	a0, a0, 1
+	addi	a3, a3, 576
 	sub	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	add	a0, a0, a1
 	ret
 

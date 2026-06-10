@@ -3,9 +3,9 @@ func0000000000000028:
 	vmv1r.v	v16, v0
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v12, fa5
-	fli.s	fa5, 1.0
 	vmerge.vim	v12, v12, 0, v0
 	vmv1r.v	v0, v16
+	fli.s	fa5, 1.0
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmfeq.vv	v0, v12, v8
 	ret
@@ -16,8 +16,8 @@ func0000000000000022:
 	fli.s	fa5, 1.52587890625e-05
 	vmflt.vf	v0, v12, fa5
 	vfmerge.vfm	v12, v12, fa5, v0
-	fli.s	fa5, 1.0
 	vmv1r.v	v0, v16
+	fli.s	fa5, 1.0
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmflt.vv	v0, v12, v8
 	ret
@@ -28,8 +28,8 @@ func0000000000000024:
 	fli.s	fa5, 1.52587890625e-05
 	vmflt.vf	v0, v12, fa5
 	vfmerge.vfm	v12, v12, fa5, v0
-	fli.s	fa5, 1.0
 	vmv1r.v	v0, v16
+	fli.s	fa5, 1.0
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmflt.vv	v0, v8, v12
 	ret
@@ -51,8 +51,8 @@ func0000000000000023:
 	fli.s	fa5, -1.0
 	vmflt.vf	v0, v12, fa5
 	vfmerge.vfm	v12, v12, fa5, v0
-	fli.s	fa5, 1.0
 	vmv1r.v	v0, v16
+	fli.s	fa5, 1.0
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmfle.vv	v16, v8, v12
 	vmnot.m	v0, v16

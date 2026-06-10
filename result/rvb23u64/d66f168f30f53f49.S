@@ -18,9 +18,9 @@ func000000000000000c:
 func000000000000000f:
 	addi	a2, a2, 1
 	and	a1, a1, a2
-	lui	a2, 7
 	sh1add.uw	a0, a1, a0
-	addi	a1, a2, -964
+	lui	a1, 7
+	addi	a1, a1, -964
 	add	a0, a0, a1
 	ret
 

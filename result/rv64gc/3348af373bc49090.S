@@ -1,14 +1,14 @@
 func0000000000000005:
+	lui	a2, 1048555
 	addw	a0, a0, a1
-	lui	a1, 1048555
-	addi	a1, a1, -384
+	addi	a1, a2, -384
 	mul	a0, a0, a1
 	ret
 
 func0000000000000015:
+	lui	a2, 1027482
 	addw	a0, a0, a1
-	lui	a1, 1027482
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	mul	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func000000000000000c:
 	andi	a1, a1, 1
-	andi	a0, a0, 1
 	slli	a1, a1, 6
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 4
 	or	a0, a0, a1
@@ -29,8 +29,8 @@ func0000000000000000:
 
 func000000000000000e:
 	andi	a1, a1, 1
-	andi	a0, a0, 1
 	slli	a1, a1, 12
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 13
 	or	a0, a0, a1

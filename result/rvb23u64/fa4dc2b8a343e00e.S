@@ -13,10 +13,10 @@ func0000000000000021:
 	ret
 
 func0000000000000281:
-	zext.w	a1, a1
 	lui	a2, 6
-	sltiu	a1, a1, 29
+	zext.w	a1, a1
 	addi	a2, a2, 128
+	sltiu	a1, a1, 29
 	and	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret

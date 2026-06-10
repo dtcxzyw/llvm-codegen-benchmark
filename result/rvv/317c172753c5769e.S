@@ -38,9 +38,9 @@ func00000000000000a8:
 func00000000000001e1:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v8, v8, 4
-	lui	a0, 1
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 1
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmseq.vx	v0, v8, a0
@@ -58,9 +58,9 @@ func00000000000000b8:
 func00000000000000a4:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v8, v8, 8
-	lui	a0, 1048575
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 1048575
 	addi	a0, a0, -1439
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -88,9 +88,9 @@ func00000000000001ec:
 func00000000000000e1:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v8, v8, 8
-	lui	a0, 8
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 8
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmseq.vx	v0, v8, a0

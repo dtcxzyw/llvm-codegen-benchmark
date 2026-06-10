@@ -1,8 +1,8 @@
 func0000000000000038:
 	lui	a3, 15
+	bseti	a4, zero, 11
 	and	a2, a2, a3
-	bseti	a3, zero, 11
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	srli	a1, a1, 11
 	sltiu	a1, a1, 27

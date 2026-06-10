@@ -21,9 +21,9 @@ func000000000000000c:
 
 func0000000000000032:
 	slliw	a2, a2, 10
+	lui	a3, 8
 	or	a0, a0, a2
-	lui	a2, 8
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

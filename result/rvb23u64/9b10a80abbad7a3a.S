@@ -3,9 +3,9 @@
 func00000000000006cb:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
+	flt.d	a1, fa5, fa0
 	addi	a0, a0, -15
 	snez	a0, a0
-	flt.d	a1, fa5, fa0
 	andn	a0, a0, a1
 	ret
 
@@ -14,9 +14,9 @@ func00000000000006cb:
 func00000000000006c2:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
+	flt.d	a1, fa0, fa5
 	addi	a0, a0, -2
 	snez	a0, a0
-	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 

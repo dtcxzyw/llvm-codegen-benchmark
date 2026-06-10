@@ -7,8 +7,8 @@ func000000000000003f:
 	ret
 
 func000000000000003b:
-	slli	a2, a2, 48
 	slli	a1, a1, 32
+	slli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

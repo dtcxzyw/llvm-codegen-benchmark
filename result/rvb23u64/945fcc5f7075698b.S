@@ -1,6 +1,6 @@
 func0000000000000008:
-	andi	a2, a2, 1
 	li	a3, -31
+	andi	a2, a2, 1
 	slli	a3, a3, 11
 	czero.eqz	a2, a3, a2
 	lui	a3, 16

@@ -3,10 +3,10 @@ func0000000000000000:
 	slli	a1, a1, 13
 	or	a1, a1, a2
 	lui	a2, 943431
-	addi	a2, a2, -1180
 	add	a0, a0, a1
-	slli	a1, a0, 2
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	addi	a1, a2, -1180
+	slli	a2, a0, 2
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 

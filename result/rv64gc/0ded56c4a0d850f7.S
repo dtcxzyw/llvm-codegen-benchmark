@@ -30,10 +30,10 @@ func0000000000000042:
 
 func0000000000000008:
 	sext.w	a2, a2
-	andi	a0, a0, 1
 	sltiu	a2, a2, 2
-	slli	a0, a0, 4
+	andi	a0, a0, 1
 	xori	a2, a2, 1
+	slli	a0, a0, 4
 	slli	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -10,10 +10,10 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a2, a1
-	li	a3, 224
+	li	a2, 224
+	sext.w	a3, a1
 	mv	a1, a0
-	beq	a2, a3, .LBB1_2
+	beq	a3, a2, .LBB1_2
 	li	a0, 7
 	andi	a1, a1, 224
 	li	a2, 192

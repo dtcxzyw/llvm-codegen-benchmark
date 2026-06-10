@@ -1,8 +1,8 @@
 func000000000000000a:
-	andi	a0, a0, 1
 	li	a1, 971
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
+	andi	a0, a0, 1
 	beqz	a0, .LBB0_2
 	fmul.d	fa5, fa1, fa5
 .LBB0_2:

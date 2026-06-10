@@ -1,12 +1,12 @@
 func0000000000000002:
-	addi	a0, a0, -432
 	lui	a1, 32768
+	addi	a0, a0, -432
 	minu	a0, a0, a1
 	ret
 
 func0000000000000000:
-	addi	a0, a0, -2
 	li	a1, 4
+	addi	a0, a0, -2
 	minu	a0, a0, a1
 	ret
 
@@ -25,8 +25,8 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	addi	a0, a0, -16
 	li	a1, 16
+	addi	a0, a0, -16
 	minu	a0, a0, a1
 	ret
 
@@ -37,8 +37,8 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	addi	a0, a0, -1
 	li	a1, 10
+	addi	a0, a0, -1
 	minu	a0, a0, a1
 	ret
 

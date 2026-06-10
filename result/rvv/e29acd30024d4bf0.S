@@ -1,9 +1,9 @@
 func0000000000000003:
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.i	v14, 1
 	vmseq.vi	v0, v10, 0
-	vmv.v.i	v10, 1
-	vand.vi	v10, v12, 2, v0.t
-	vor.vv	v8, v8, v10
+	vand.vi	v14, v12, 2, v0.t
+	vor.vv	v8, v8, v14
 	ret
 
 func0000000000000002:

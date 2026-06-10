@@ -24,9 +24,9 @@ func00000000000000a8:
 
 func00000000000000a2:
 	bset	a2, zero, a2
+	li	a3, 14
 	bset	a1, a2, a1
-	li	a2, 14
-	sllw	a0, a2, a0
+	sllw	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

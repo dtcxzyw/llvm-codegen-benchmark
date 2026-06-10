@@ -21,8 +21,8 @@ func000000000000001d:
 	ret
 
 func0000000000000017:
-	slli	a1, a1, 48
 	zext.b	a0, a0
+	slli	a1, a1, 48
 	slli	a0, a0, 40
 	or	a0, a0, a1
 	ret

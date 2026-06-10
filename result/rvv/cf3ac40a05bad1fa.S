@@ -15,12 +15,12 @@ func0000000000000005:
 	ret
 
 func000000000000000d:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v8, v10, v8
 	lui	a0, 16
 	addi	a0, a0, -1
-	vmv.v.x	v10, a0
-	vandn.vv	v8, v10, v8
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
+	vandn.vv	v8, v12, v8
 	ret
 
 func000000000000000c:
@@ -32,17 +32,17 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v8, v10, v8
 	li	a0, 255
-	vmv.v.x	v10, a0
-	vandn.vv	v8, v10, v8
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
+	vandn.vv	v8, v12, v8
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v12, 1
 	vsub.vv	v8, v10, v8
-	vmv.v.i	v10, 1
-	vandn.vv	v8, v10, v8
+	vandn.vv	v8, v12, v8
 	ret
 

@@ -95,9 +95,9 @@ func0000000000000006:
 
 func0000000000000044:
 	andi	a1, a1, -4
+	lui	a2, 16
 	sub	a1, a1, a0
-	lui	a0, 16
-	addi	a0, a0, 1
-	sltu	a0, a1, a0
+	addi	a2, a2, 1
+	sltu	a0, a1, a2
 	ret
 

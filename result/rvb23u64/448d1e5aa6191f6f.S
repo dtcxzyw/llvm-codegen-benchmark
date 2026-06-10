@@ -1,18 +1,18 @@
 func000000000000060a:
-	srli	a1, a1, 2
 	lui	a2, 699051
-	srli	a0, a0, 2
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
+	srli	a0, a0, 2
 	mulw	a1, a1, a2
 	mulw	a0, a0, a2
 	slt	a0, a1, a0
 	ret
 
 func0000000000000601:
-	srli	a1, a1, 2
 	lui	a2, 699051
-	srli	a0, a0, 2
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
+	srli	a0, a0, 2
 	mulw	a1, a1, a2
 	mulw	a0, a0, a2
 	xor	a0, a0, a1
@@ -20,20 +20,20 @@ func0000000000000601:
 	ret
 
 func0000000000000604:
-	srli	a1, a1, 2
 	lui	a2, 699051
-	srli	a0, a0, 2
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
+	srli	a0, a0, 2
 	mulw	a1, a1, a2
 	mulw	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 
 func000000000000060c:
-	srli	a1, a1, 4
 	lui	a2, 838861
-	srli	a0, a0, 4
+	srli	a1, a1, 4
 	addi	a2, a2, -819
+	srli	a0, a0, 4
 	mulw	a1, a1, a2
 	mulw	a0, a0, a2
 	xor	a0, a0, a1
@@ -41,10 +41,10 @@ func000000000000060c:
 	ret
 
 func0000000000000607:
-	srli	a1, a1, 3
 	lui	a2, 699051
-	srli	a0, a0, 3
+	srli	a1, a1, 3
 	addi	a2, a2, -1365
+	srli	a0, a0, 3
 	mulw	a1, a1, a2
 	mulw	a0, a0, a2
 	slt	a0, a1, a0
@@ -52,10 +52,10 @@ func0000000000000607:
 	ret
 
 func0000000000000606:
-	srli	a1, a1, 3
 	lui	a2, 762601
-	srli	a0, a0, 3
+	srli	a1, a1, 3
 	addi	a2, a2, -1117
+	srli	a0, a0, 3
 	mulw	a1, a1, a2
 	mulw	a0, a0, a2
 	slt	a0, a0, a1

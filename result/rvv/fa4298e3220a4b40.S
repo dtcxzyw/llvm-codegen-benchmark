@@ -1,8 +1,8 @@
 func0000000000000101:
 	fli.d	fa5, inf
-	li	a0, 34
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfeq.vf	v10, v12, fa5
+	li	a0, 34
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
@@ -31,17 +31,17 @@ func0000000000000121:
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v10, v12, fa5
 	vmfgt.vf	v11, v12, fa5
-	vmor.mm	v10, v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vi	v11, v8, 0
-	vmandn.mm	v0, v11, v10
+	vmseq.vi	v12, v8, 0
+	vmor.mm	v8, v11, v10
+	vmandn.mm	v0, v12, v8
 	ret
 
 func0000000000000048:
 	fli.d	fa5, 1.0
-	li	a0, 22
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v10, v12, fa5
+	li	a0, 22
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
@@ -99,10 +99,10 @@ func00000000000000cc:
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v10, v12, fa5
 	vmfgt.vf	v11, v12, fa5
-	vmor.mm	v10, v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsne.vi	v11, v8, 10
-	vmand.mm	v0, v11, v10
+	vmsne.vi	v12, v8, 10
+	vmor.mm	v8, v11, v10
+	vmand.mm	v0, v12, v8
 	ret
 
 func000000000000008c:

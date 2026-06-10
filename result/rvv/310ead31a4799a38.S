@@ -13,12 +13,12 @@ func0000000000000021:
 
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vand.vi	v12, v12, -7
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 0
-	li	a0, 45
-	vmerge.vim	v12, v12, -1, v0
+	vmerge.vim	v12, v14, -1, v0
 	vmsleu.vi	v0, v10, 2
+	li	a0, 45
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

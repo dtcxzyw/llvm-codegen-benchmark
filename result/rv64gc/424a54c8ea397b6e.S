@@ -21,22 +21,22 @@ func0000000000000224:
 	ret
 
 func00000000000000a1:
-	sext.w	a0, a0
 	zext.b	a2, a2
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000221:
-	sext.w	a0, a0
 	zext.b	a2, a2
 	sltiu	a2, a2, 192
 	addi	a2, a2, -1
 	and	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

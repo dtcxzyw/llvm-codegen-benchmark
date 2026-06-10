@@ -11,8 +11,8 @@ func0000000000000401:
 	ret
 
 func000000000000242a:
-	addw	a2, a2, a0
 	lui	a3, 32
+	addw	a2, a2, a0
 	subw	a0, a0, a1
 	sltu	a1, a3, a2
 	sgtz	a0, a0

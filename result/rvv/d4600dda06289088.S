@@ -5,8 +5,8 @@ func0000000000000208:
 	vmsltu.vx	v12, v10, a0
 	lui	a0, 48
 	addi	a0, a0, -496
-	vmor.mm	v10, v12, v0
-	vmsltu.vx	v11, v8, a0
-	vmnor.mm	v0, v11, v10
+	vmsltu.vx	v10, v8, a0
+	vmor.mm	v8, v12, v0
+	vmnor.mm	v0, v10, v8
 	ret
 

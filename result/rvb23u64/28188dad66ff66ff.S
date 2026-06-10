@@ -1,49 +1,49 @@
 func000000000000000a:
-	srli	a1, a1, 32
 	lui	a2, 548541
 	addi	a2, a2, -1401
+	srli	a1, a1, 32
 	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000008:
-	srli	a1, a1, 32
 	lui	a2, 81007
 	slli	a2, a2, 3
+	srli	a1, a1, 32
 	addi	a2, a2, -1615
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000f:
-	srli	a1, a1, 32
 	lui	a2, 163151
+	srli	a1, a1, 32
 	addi	a2, a2, -1201
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	srli	a1, a1, 32
 	lui	a2, 775381
 	addi	a2, a2, 451
+	srli	a1, a1, 32
 	bclri	a2, a2, 31
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000005:
-	srli	a1, a1, 21
 	lui	a2, 1048409
+	srli	a1, a1, 21
 	addi	a2, a2, 131
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
-	srli	a1, a1, 21
 	lui	a2, 115
+	srli	a1, a1, 21
 	addi	a2, a2, -744
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -57,15 +57,15 @@ func000000000000001d:
 	ret
 
 func0000000000000004:
-	srli	a1, a1, 51
 	li	a2, -19
+	srli	a1, a1, 51
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000d:
-	srli	a1, a1, 51
 	li	a2, -19
+	srli	a1, a1, 51
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -84,16 +84,16 @@ func000000000000001a:
 	ret
 
 func000000000000001f:
-	srli	a1, a1, 32
 	lui	a2, 1
+	srli	a1, a1, 32
 	addi	a2, a2, -27
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000001c:
-	srli	a1, a1, 1
 	li	a2, 789
+	srli	a1, a1, 1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

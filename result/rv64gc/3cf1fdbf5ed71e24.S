@@ -1,30 +1,30 @@
 func0000000000000000:
-	srli	a2, a2, 2
+	lui	a3, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
+	srli	a2, a2, 2
+	slli	a3, a3, 3
 	add	a0, a0, a2
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	addi	a1, a3, -1607
 	add	a0, a0, a1
 	ret
 
 func000000000000003c:
-	srli	a2, a2, 2
+	lui	a3, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
+	srli	a2, a2, 2
+	slli	a3, a3, 3
 	add	a0, a0, a2
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	addi	a1, a3, -1607
 	add	a0, a0, a1
 	ret
 
 func0000000000000014:
-	srli	a2, a2, 2
+	lui	a3, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
+	srli	a2, a2, 2
+	slli	a3, a3, 3
 	add	a0, a0, a2
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	addi	a1, a3, -1607
 	add	a0, a0, a1
 	ret
 
@@ -62,22 +62,22 @@ func0000000000000015:
 	ret
 
 func000000000000003d:
-	srli	a2, a2, 2
+	lui	a3, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
+	srli	a2, a2, 2
+	slli	a3, a3, 3
 	add	a0, a0, a2
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	addi	a1, a3, -1607
 	add	a0, a0, a1
 	ret
 
 func0000000000000040:
-	srli	a2, a2, 2
+	li	a3, 1
 	add	a0, a0, a1
-	li	a1, 1
+	srli	a2, a2, 2
+	slli	a3, a3, 32
 	add	a0, a0, a2
-	slli	a1, a1, 32
-	addi	a1, a1, -64
+	addi	a1, a3, -64
 	add	a0, a0, a1
 	ret
 

@@ -3,8 +3,8 @@ func0000000000000008:
 	vsub.vv	v10, v10, v12
 	li	a0, -1
 	srli	a1, a0, 2
-	slli	a0, a0, 62
 	vsub.vx	v10, v10, a1
+	slli	a0, a0, 62
 	vmsltu.vx	v0, v10, a0
 	vmerge.vim	v8, v8, -1, v0
 	ret
@@ -14,8 +14,8 @@ func00000000000000a8:
 	vsub.vv	v10, v10, v12
 	li	a0, -1
 	srli	a1, a0, 2
-	slli	a0, a0, 62
 	vsub.vx	v10, v10, a1
+	slli	a0, a0, 62
 	vmsltu.vx	v0, v10, a0
 	vmerge.vim	v8, v8, -1, v0
 	ret

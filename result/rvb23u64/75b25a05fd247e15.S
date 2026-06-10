@@ -2,11 +2,11 @@
 	.quad	0x7fefffffffffffff
 func00000000000000aa:
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	fabs.d	fa4, fa1
+	fabs.d	fa5, fa1
+	fld	fa4, %lo(.LCPI0_0)(a0)
 	fabs.d	fa3, fa0
-	fle.d	a0, fa4, fa5
-	fle.d	a1, fa3, fa5
+	fle.d	a0, fa5, fa4
+	fle.d	a1, fa3, fa4
 	and	a0, a0, a1
 	ret
 
@@ -14,10 +14,10 @@ func00000000000000aa:
 	.quad	0x3e112e0be0000000
 func0000000000000028:
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fabs.d	fa4, fa1
+	fabs.d	fa5, fa1
+	fld	fa4, %lo(.LCPI1_0)(a0)
 	fclass.d	a0, fa0
-	flt.d	a1, fa4, fa5
+	flt.d	a1, fa5, fa4
 	andi	a0, a0, 129
 	czero.eqz	a0, a1, a0
 	ret
@@ -26,32 +26,32 @@ func0000000000000028:
 	.quad	0x3eb0c6f7a0000000
 func0000000000000022:
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	fabs.d	fa4, fa1
-	fabs.d	fa3, fa0
-	flt.d	a0, fa4, fa5
-	flt.d	a1, fa3, fa5
-	and	a0, a0, a1
-	ret
-
-func0000000000000122:
 	fabs.d	fa5, fa1
-	fli.d	fa4, 0.5
+	fld	fa4, %lo(.LCPI2_0)(a0)
 	fabs.d	fa3, fa0
 	flt.d	a0, fa5, fa4
 	flt.d	a1, fa3, fa4
 	and	a0, a0, a1
 	ret
 
+func0000000000000122:
+	fabs.d	fa5, fa1
+	fabs.d	fa4, fa0
+	fli.d	fa3, 0.5
+	flt.d	a0, fa5, fa3
+	flt.d	a1, fa4, fa3
+	and	a0, a0, a1
+	ret
+
 func0000000000000124:
 	lui	a0, %hi(.promoted_doubles.func0000000000000124)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000124)
-	fld	fa5, 0(a0)
-	fld	fa4, 8(a0)
-	fabs.d	fa3, fa1
-	fabs.d	fa2, fa0
-	flt.d	a0, fa3, fa5
-	flt.d	a1, fa4, fa2
+	fabs.d	fa5, fa1
+	fabs.d	fa4, fa0
+	fld	fa3, 0(a0)
+	fld	fa2, 8(a0)
+	flt.d	a0, fa5, fa3
+	flt.d	a1, fa2, fa4
 	and	a0, a0, a1
 	ret
 
@@ -77,11 +77,11 @@ func0000000000000088:
 	.quad	0x3ee4f8b588e368f1
 func0000000000000044:
 	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
-	fabs.d	fa4, fa1
+	fabs.d	fa5, fa1
+	fld	fa4, %lo(.LCPI7_0)(a0)
 	fabs.d	fa3, fa0
-	flt.d	a0, fa5, fa4
-	flt.d	a1, fa5, fa3
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa4, fa3
 	and	a0, a0, a1
 	ret
 

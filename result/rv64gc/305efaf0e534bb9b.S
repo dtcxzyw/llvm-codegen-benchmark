@@ -13,8 +13,8 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	not	a1, a1
 	li	a2, 17
+	not	a1, a1
 	slli	a2, a2, 8
 	and	a1, a1, a2
 	andi	a0, a0, 2

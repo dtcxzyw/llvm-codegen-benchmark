@@ -1,6 +1,6 @@
 func0000000000000010:
-	sext.w	a2, a2
 	mul	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
@@ -15,8 +15,8 @@ func0000000000000000:
 	ret
 
 func0000000000000015:
-	sext.w	a2, a2
 	mul	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
@@ -26,8 +26,8 @@ func000000000000000f:
 	ret
 
 func000000000000001f:
-	sext.w	a2, a2
 	mul	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
@@ -47,14 +47,14 @@ func000000000000000e:
 	ret
 
 func0000000000000017:
-	sext.w	a2, a2
 	mul	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
 func0000000000000011:
-	sext.w	a2, a2
 	mul	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
@@ -64,14 +64,14 @@ func0000000000000008:
 	ret
 
 func000000000000001a:
-	sext.w	a2, a2
 	mul	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
 func000000000000001e:
-	sext.w	a2, a2
 	mul	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 

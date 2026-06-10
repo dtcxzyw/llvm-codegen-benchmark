@@ -1,9 +1,9 @@
 func0000000000000009:
-	addi	a0, a0, -457
 	lui	a1, 6
+	addi	a0, a0, -457
 	slli	a0, a0, 48
-	addi	a1, a1, 1639
 	srai	a0, a0, 48
+	addi	a1, a1, 1639
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 17

@@ -1,8 +1,8 @@
 func0000000000000014:
 	slli	a1, a1, 8
+	lui	a2, 4
 	or	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, 62
+	addi	a1, a2, 62
 	sub	a0, a1, a0
 	ret
 

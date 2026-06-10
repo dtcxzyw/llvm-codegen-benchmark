@@ -1,15 +1,15 @@
 func0000000000000004:
-	fcvt.l.d	a1, fa0, rtz
-	lui	a2, 15
-	addi	a2, a2, -1440
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	lui	a1, 15
+	addi	a1, a1, -1440
+	fcvt.l.d	a2, fa0, rtz
+	mul	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000000:
-	fcvt.l.d	a1, fa0, rtz
-	li	a2, 1000
-	mul	a0, a0, a2
-	add	a0, a0, a1
+	li	a1, 1000
+	fcvt.l.d	a2, fa0, rtz
+	mul	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

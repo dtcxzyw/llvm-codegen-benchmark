@@ -7,9 +7,9 @@ func00000000000000f4:
 	ret
 
 func0000000000000521:
-	sext.w	a1, a0
-	li	a2, 99
-	blt	a2, a1, .LBB1_2
+	li	a1, 99
+	sext.w	a2, a0
+	blt	a1, a2, .LBB1_2
 	li	a1, 1
 	add	a0, a0, a1
 	addiw	a0, a0, -1
@@ -40,19 +40,19 @@ func000000000000032a:
 	ret
 
 func000000000000008a:
-	sext.w	a1, a0
-	snez	a1, a1
-	slli	a1, a1, 5
-	addw	a0, a0, a1
 	lui	a1, 16
+	sext.w	a2, a0
+	snez	a2, a2
+	slli	a2, a2, 5
+	addw	a0, a0, a2
 	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret
 
 func000000000000052a:
-	sext.w	a1, a0
-	li	a2, 299
-	blt	a2, a1, .LBB5_2
+	li	a1, 299
+	sext.w	a2, a0
+	blt	a1, a2, .LBB5_2
 	li	a1, 100
 	addw	a0, a0, a1
 	slti	a0, a0, 301

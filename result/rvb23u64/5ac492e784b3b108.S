@@ -2,9 +2,9 @@ func000000000000000a:
 	lui	a1, 522232
 	addi	a1, a1, -130
 	addi	a2, a1, 1
+	lui	a3, 152146
 	and	a0, a0, a2
-	lui	a2, 152146
-	addi	a2, a2, 1317
+	addi	a2, a3, 1317
 	add	a0, a0, a2
 	lui	a2, 106914
 	and	a0, a0, a1

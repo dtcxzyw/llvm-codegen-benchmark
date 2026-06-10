@@ -8,8 +8,8 @@ func0000000000000003:
 
 func0000000000000000:
 	li	a3, 127
-	slli	a0, a0, 63
 	slli	a3, a3, 56
+	slli	a0, a0, 63
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -24,8 +24,8 @@ func000000000000000f:
 
 func0000000000000002:
 	li	a3, -7
-	slli	a1, a1, 20
 	srli	a3, a3, 1
+	slli	a1, a1, 20
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -33,8 +33,8 @@ func0000000000000002:
 
 func0000000000000008:
 	lui	a3, 1048560
-	slli	a0, a0, 54
 	srli	a3, a3, 15
+	slli	a0, a0, 54
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -42,9 +42,9 @@ func0000000000000008:
 
 func000000000000000b:
 	lui	a3, 262144
-	slli	a1, a1, 62
 	addi	a3, a3, -1
 	slli	a3, a3, 17
+	slli	a1, a1, 62
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -115,8 +115,8 @@ func000000000000000e:
 
 func000000000000000a:
 	li	a3, 1
-	slli	a1, a1, 4
 	slli	a3, a3, 56
+	slli	a1, a1, 4
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

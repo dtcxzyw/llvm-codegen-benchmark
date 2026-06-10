@@ -7,10 +7,10 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
-	sext.w	a1, a1
-	srliw	a2, a2, 31
 	lui	a3, 131072
+	sext.w	a1, a1
 	addi	a3, a3, -1
+	srliw	a2, a2, 31
 	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a2

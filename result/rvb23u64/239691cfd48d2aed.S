@@ -1,9 +1,9 @@
 func0000000000000000:
-	andi	a2, a2, 1
-	li	a3, 5
-	czero.nez	a2, a3, a2
 	mul	a0, a0, a1
-	add	a0, a0, a2
+	andi	a2, a2, 1
+	li	a1, 5
+	czero.nez	a1, a1, a2
+	add	a0, a0, a1
 	addi	a0, a0, 14
 	ret
 

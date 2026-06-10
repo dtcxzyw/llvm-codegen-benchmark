@@ -1,8 +1,8 @@
 func0000000000000003:
 	andi	a2, a2, 1
+	lui	a3, 699051
 	sub	a1, a1, a2
-	lui	a2, 699051
-	addi	a2, a2, -1365
+	addi	a2, a3, -1365
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -13,9 +13,9 @@ func0000000000000003:
 
 func000000000000000b:
 	andi	a2, a2, 1
+	lui	a3, 274878
 	sub	a1, a1, a2
-	lui	a2, 274878
-	addi	a2, a2, -381
+	addi	a2, a3, -381
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2

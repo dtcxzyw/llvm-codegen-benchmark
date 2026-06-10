@@ -36,9 +36,9 @@ func0000000000000010:
 	li	a3, 1
 	slli	a3, a3, 32
 	addi	a3, a3, -4
+	addi	a4, a3, 3
 	and	a2, a2, a3
-	addi	a3, a3, 3
-	and	a1, a1, a3
+	and	a1, a1, a4
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1

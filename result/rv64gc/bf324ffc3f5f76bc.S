@@ -37,10 +37,10 @@ func00000000000001a1:
 func00000000000001aa:
 	srai	a1, a1, 48
 	srai	a0, a0, 48
+	lui	a2, 8
 	sub	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func00000000000001a6:

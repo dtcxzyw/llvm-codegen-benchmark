@@ -4,8 +4,8 @@ func0000000000000007:
 	beqz	a3, .LBB0_2
 	lui	a2, 8256
 .LBB0_2:
-	or	a1, a1, a2
 	andi	a0, a0, 1
+	or	a1, a1, a2
 	slli	a0, a0, 21
 	or	a0, a0, a1
 	ret
@@ -26,8 +26,8 @@ func0000000000000010:
 	bltu	a3, a2, .LBB2_2
 	li	a2, 130
 .LBB2_2:
-	or	a1, a1, a2
 	andi	a0, a0, 1
+	or	a1, a1, a2
 	slli	a0, a0, 5
 	or	a0, a0, a1
 	ret

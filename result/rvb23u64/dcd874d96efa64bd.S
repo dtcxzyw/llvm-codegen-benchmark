@@ -9,8 +9,8 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	andi	a1, a1, 1
 	bclri	a2, a2, 63
+	andi	a1, a1, 1
 	addi	a2, a2, -23
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 23
@@ -18,8 +18,8 @@ func0000000000000018:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 1
 	bclri	a2, a2, 63
+	andi	a1, a1, 1
 	addi	a2, a2, -23
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 23

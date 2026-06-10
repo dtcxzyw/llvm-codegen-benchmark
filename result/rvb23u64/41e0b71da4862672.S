@@ -125,8 +125,8 @@ func0000000000000050:
 
 func00000000000000fc:
 	sh2add	a1, a2, a1
-	add	a0, a0, a1
-	lui	a1, 1
+	lui	a2, 1
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

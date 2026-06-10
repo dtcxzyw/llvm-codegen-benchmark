@@ -6,9 +6,9 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
+	li	a0, 256
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 256
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
@@ -22,9 +22,9 @@ func0000000000000081:
 	ret
 
 func0000000000000038:
+	li	a0, 180
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsne.vi	v12, v10, -1
-	li	a0, 180
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

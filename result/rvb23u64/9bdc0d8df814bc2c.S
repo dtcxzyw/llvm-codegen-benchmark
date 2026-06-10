@@ -1,6 +1,6 @@
 func0000000000000007:
-	sext.w	a0, a0
 	lui	a1, 349525
+	sext.w	a0, a0
 	addi	a1, a1, 1366
 	mul	a0, a0, a1
 	srli	a1, a0, 63
@@ -12,11 +12,11 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	sraiw	a1, a0, 31
-	srliw	a1, a1, 27
-	add	a0, a0, a1
-	sraiw	a0, a0, 5
 	li	a1, 2
+	sraiw	a2, a0, 31
+	srliw	a2, a2, 27
+	add	a0, a0, a2
+	sraiw	a0, a0, 5
 	max	a0, a0, a1
 	addi	a0, a0, -1
 	ret

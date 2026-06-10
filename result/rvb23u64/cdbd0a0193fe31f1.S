@@ -8,8 +8,8 @@ func0000000000000046:
 	ret
 
 func000000000000004a:
-	sext.w	a0, a0
 	add	a2, a2, a1
+	sext.w	a0, a0
 	srli	a1, a1, 1
 	slti	a0, a0, 3
 	czero.eqz	a2, a2, a0

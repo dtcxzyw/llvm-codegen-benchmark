@@ -7,18 +7,18 @@ func00000000000000a1:
 	ret
 
 func00000000000000a7:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	li	a0, 16
 	vsra.vi	v10, v10, 16
 	vadd.vx	v8, v8, a0
 	vmsle.vv	v0, v8, v10
 	ret
 
 func000000000000008a:
+	li	a0, -64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	li	a0, -64
 	vsra.vi	v10, v10, 16
 	vadd.vx	v8, v8, a0
 	vmslt.vv	v0, v10, v8

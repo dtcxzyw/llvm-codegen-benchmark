@@ -19,9 +19,9 @@ func0000000000000002:
 
 func0000000000000008:
 	fmv.s	fa5, fa0
-	andi	a0, a0, 1
 	fli.s	fa4, inf
 	feq.s	a1, fa1, fa4
+	andi	a0, a0, 1
 	fli.s	fa0, inf
 	beqz	a1, .LBB1_3
 	bnez	a0, .LBB1_4
@@ -35,10 +35,10 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	lui	a1, 274400
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa1
+	andi	a0, a0, 1
 	fli.s	fa5, inf
 	beqz	a1, .LBB2_3
 	fli.s	fa0, 1.0

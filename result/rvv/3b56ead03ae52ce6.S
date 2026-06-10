@@ -3,12 +3,12 @@ func000000000000000f:
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 4
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 24
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 
 func000000000000000a:
@@ -16,12 +16,12 @@ func000000000000000a:
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 4
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 24
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000008:
@@ -29,12 +29,12 @@ func0000000000000008:
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 4
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 24
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 
 func000000000000000d:
@@ -42,26 +42,25 @@ func000000000000000d:
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 4
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 24
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000000:
 	lui	a0, 699051
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.i	v10, 12
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 3
+	vsrl.vi	v10, v8, 3
+	vmv.v.i	v8, 12
 	li	a0, 12
-	vmacc.vx	v10, a0, v8
-	vmv.v.v	v8, v10
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000005:
@@ -69,12 +68,12 @@ func0000000000000005:
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 4
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 24
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 
 func000000000000000b:
@@ -82,11 +81,11 @@ func000000000000000b:
 	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 4
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 20
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 

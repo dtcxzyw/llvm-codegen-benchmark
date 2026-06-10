@@ -1,5 +1,4 @@
 func0000000000000302:
-	sext.w	a0, a0
 	lui	a2, 978671
 	addi	a2, a2, -273
 	mul	a1, a1, a2
@@ -7,6 +6,7 @@ func0000000000000302:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 17476
+	sext.w	a0, a0
 	addi	a2, a2, 1092
 	sltu	a1, a2, a1
 	seqz	a0, a0
@@ -14,11 +14,11 @@ func0000000000000302:
 	ret
 
 func0000000000000318:
-	slli	a2, a1, 32
-	lui	a3, 699051
-	addi	a3, a3, -1365
-	slli	a3, a3, 32
-	mulhu	a2, a2, a3
+	lui	a2, 699051
+	addi	a2, a2, -1365
+	slli	a3, a1, 32
+	slli	a2, a2, 32
+	mulhu	a2, a3, a2
 	srli	a2, a2, 33
 	slli	a3, a2, 1
 	sub	a1, a1, a2
@@ -30,7 +30,6 @@ func0000000000000318:
 	ret
 
 func000000000000004c:
-	sext.w	a0, a0
 	lui	a2, 838861
 	addi	a2, a2, -819
 	mul	a1, a1, a2
@@ -38,6 +37,7 @@ func000000000000004c:
 	srliw	a1, a1, 1
 	or	a1, a1, a2
 	lui	a2, 104858
+	sext.w	a0, a0
 	addi	a2, a2, -1638
 	sltu	a1, a1, a2
 	slti	a0, a0, 19
@@ -45,25 +45,24 @@ func000000000000004c:
 	ret
 
 func0000000000000068:
-	sext.w	a0, a0
-	addi	a1, a1, -59
 	lui	a2, 978671
+	addi	a1, a1, -59
 	addi	a2, a2, -273
 	mul	a1, a1, a2
 	slliw	a2, a1, 30
 	srliw	a1, a1, 2
+	lui	a3, 17476
 	or	a1, a1, a2
-	lui	a2, 17476
-	addi	a2, a2, 1092
-	sltu	a1, a1, a2
 	lui	a2, 244141
+	sext.w	a0, a0
+	addi	a3, a3, 1092
 	addi	a2, a2, -1536
+	sltu	a1, a1, a3
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000058:
-	sext.w	a0, a0
 	lui	a2, 796918
 	addi	a2, a2, -983
 	mul	a1, a1, a2
@@ -71,6 +70,7 @@ func0000000000000058:
 	srliw	a1, a1, 2
 	or	a1, a1, a2
 	lui	a2, 10486
+	sext.w	a0, a0
 	addi	a2, a2, -983
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -78,16 +78,16 @@ func0000000000000058:
 	ret
 
 func0000000000000330:
-	sext.w	a0, a0
-	srliw	a2, a1, 5
-	lui	a3, 8216
-	addi	a3, a3, 289
-	mul	a2, a2, a3
+	lui	a2, 8216
+	srliw	a3, a1, 5
+	addi	a2, a2, 289
+	mul	a2, a3, a2
 	lui	a3, 8
-	addi	a3, a3, -96
 	srli	a2, a2, 35
+	addi	a3, a3, -96
 	mul	a2, a2, a3
 	subw	a1, a1, a2
+	sext.w	a0, a0
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -95,11 +95,11 @@ func0000000000000330:
 	ret
 
 func0000000000000042:
-	sext.w	a0, a0
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	lui	a2, 349525
+	sext.w	a0, a0
 	addi	a2, a2, 1366
 	sltu	a1, a1, a2
 	seqz	a0, a0

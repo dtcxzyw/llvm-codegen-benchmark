@@ -12,17 +12,17 @@ func0000000000000144:
 	ret
 
 func00000000000001f8:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, -1
 	srli	a0, a0, 32
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func00000000000000a4:
-	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -64,24 +64,24 @@ func000000000000000a:
 	ret
 
 func0000000000000018:
-	lui	a0, 25600
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	lui	a0, 25600
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000104:
-	lui	a0, 65536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	lui	a0, 65536
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func00000000000001f4:
-	lui	a0, 65536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	lui	a0, 65536
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -139,16 +139,16 @@ func00000000000001ac:
 	ret
 
 func0000000000000004:
-	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func00000000000001e4:
-	lui	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	lui	a0, 64
 	addi	a0, a0, -8
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -161,9 +161,9 @@ func000000000000000c:
 	ret
 
 func0000000000000184:
-	li	a0, 26
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, 26
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -181,16 +181,16 @@ func0000000000000146:
 	ret
 
 func00000000000001a4:
-	li	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, 256
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000148:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, -1
 	srli	a0, a0, 32
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -215,9 +215,9 @@ func0000000000000081:
 	ret
 
 func0000000000000088:
-	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

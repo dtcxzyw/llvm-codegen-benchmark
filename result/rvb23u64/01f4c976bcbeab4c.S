@@ -5,9 +5,9 @@ func0000000000000018:
 	ret
 
 func000000000000002a:
+	lui	a2, 2562
 	add	a0, a0, a1
-	lui	a1, 2562
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 18
 	ret
@@ -45,9 +45,9 @@ func0000000000000000:
 	ret
 
 func0000000000000068:
+	lui	a2, 2562
 	add	a0, a0, a1
-	lui	a1, 2562
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 18
 	ret

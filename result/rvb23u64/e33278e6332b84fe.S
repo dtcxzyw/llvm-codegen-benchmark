@@ -1,6 +1,6 @@
 func0000000000000020:
-	srli	a0, a0, 2
 	li	a1, -1358
+	srli	a0, a0, 2
 	sh2add	a0, a1, a0
 	srliw	a1, a0, 31
 	add	a0, a0, a1

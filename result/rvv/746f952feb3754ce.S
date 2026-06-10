@@ -1,7 +1,7 @@
 func000000000000007f:
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 1048064
 	vandn.vx	v10, v10, a0
 	vmadd.vv	v10, v14, v8
 	lui	a0, 256
@@ -9,10 +9,10 @@ func000000000000007f:
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v14, v12
 	bseti	a0, zero, 36
 	addi	a0, a0, -128
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf2	v14, v12
 	vand.vx	v10, v10, a0
 	vmadd.vv	v10, v14, v8
 	li	a0, 128

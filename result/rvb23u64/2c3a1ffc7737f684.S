@@ -36,8 +36,8 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	srai	a1, a1, 2
 	slli	a0, a0, 33
+	srai	a1, a1, 2
 	srli	a0, a0, 33
 	slt	a0, a1, a0
 	ret

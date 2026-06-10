@@ -22,10 +22,10 @@ func0000000000000029:
 	ret
 
 func0000000000000019:
-	sext.w	a1, a0
-	slti	a1, a1, 5
-	li	a2, -6
-	czero.nez	a1, a2, a1
+	li	a1, -6
+	sext.w	a2, a0
+	slti	a2, a2, 5
+	czero.nez	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret

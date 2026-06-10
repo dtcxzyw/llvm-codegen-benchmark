@@ -1,7 +1,7 @@
 func0000000000000000:
-	slli	a2, a2, 32
 	lui	a3, 941363
 	addi	a3, a3, -1249
+	slli	a2, a2, 32
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 47
@@ -9,22 +9,21 @@ func0000000000000000:
 	addw	a0, a0, a2
 	ret
 
+.LCPI1_0:
+	.quad	50539024867131392
 func0000000000000005:
+	lui	a3, %hi(.LCPI1_0)
+	ld	a3, %lo(.LCPI1_0)(a3)
 	zext.w	a2, a2
-	lui	a3, 359
-	addi	a3, a3, 415
-	slli	a3, a3, 12
-	addi	a3, a3, 865
-	slli	a3, a3, 23
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func0000000000000004:
-	slli	a2, a2, 32
 	lui	a3, 838861
 	addi	a3, a3, -819
+	slli	a2, a2, 32
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 34
@@ -33,9 +32,9 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	slli	a2, a2, 32
 	lui	a3, 699051
 	addi	a3, a3, -1365
+	slli	a2, a2, 32
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 35
@@ -44,8 +43,8 @@ func000000000000000c:
 	ret
 
 func000000000000000f:
-	zext.w	a2, a2
 	lui	a3, 91867
+	zext.w	a2, a2
 	addi	a3, a3, 115
 	mul	a2, a2, a3
 	srli	a2, a2, 39
@@ -54,9 +53,9 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	slli	a2, a2, 32
 	lui	a3, 559241
 	addi	a3, a3, -1911
+	slli	a2, a2, 32
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 35

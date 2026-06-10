@@ -15,8 +15,8 @@ func0000000000000001:
 
 func0000000000000006:
 	li	a3, -1
-	slli	a1, a1, 63
 	slli	a3, a3, 63
+	slli	a1, a1, 63
 	xor	a2, a2, a3
 	srai	a1, a1, 63
 	and	a1, a1, a2

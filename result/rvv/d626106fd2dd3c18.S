@@ -28,8 +28,8 @@ func0000000000000021:
 func0000000000000061:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	li	a0, 32
 	vwaddu.wv	v10, v10, v13
+	li	a0, 32
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vmerge.vim	v8, v8, 0, v0

@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a2, 1
 	sub	a1, a1, a0
-	lui	a0, 1
-	addi	a0, a0, 704
+	addi	a0, a2, 704
 	add	a0, a0, a1
 	sraiw	a1, a0, 31
 	srliw	a1, a1, 30

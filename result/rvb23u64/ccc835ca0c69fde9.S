@@ -3,9 +3,9 @@
 func0000000000000022:
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
+	fmul.d	fa5, fa1, fa5
 	li	a0, 125
 	slli	a0, a0, 55
-	fmul.d	fa5, fa1, fa5
 	fmin.d	fa5, fa5, fa0
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4

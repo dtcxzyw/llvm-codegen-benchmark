@@ -15,8 +15,8 @@ func000000000000003f:
 	ret
 
 func0000000000000000:
-	srli	a2, a2, 20
 	lui	a3, 4
+	srli	a2, a2, 20
 	addi	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -26,8 +26,8 @@ func0000000000000000:
 
 func0000000000000043:
 	bseti	a3, zero, 35
-	slli	a0, a0, 4
 	addi	a3, a3, -16
+	slli	a0, a0, 4
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

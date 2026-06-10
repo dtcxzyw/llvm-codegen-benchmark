@@ -7,24 +7,24 @@ func0000000000000009:
 
 func000000000000000f:
 	lui	a2, 786431
-	slli	a0, a0, 34
 	slli	a2, a2, 4
+	li	a3, 13
 	addi	a2, a2, 255
+	slli	a0, a0, 34
+	slli	a3, a3, 8
 	and	a1, a1, a2
-	li	a2, 13
-	slli	a2, a2, 8
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000d:
 	li	a2, 61
-	slli	a0, a0, 32
 	slli	a2, a2, 26
 	addi	a2, a2, -1
+	slli	a0, a0, 32
+	lui	a3, 32768
 	and	a1, a1, a2
-	lui	a2, 32768
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

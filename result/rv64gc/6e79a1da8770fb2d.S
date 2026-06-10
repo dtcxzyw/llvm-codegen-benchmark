@@ -37,8 +37,8 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	fcvt.w.d	a1, fa0, rtz
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -46,9 +46,9 @@ func0000000000000021:
 
 func000000000000000a:
 	fcvt.w.d	a1, fa0, rtz
+	lui	a2, 244
 	addw	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 576
+	addi	a1, a2, 576
 	slt	a0, a1, a0
 	ret
 

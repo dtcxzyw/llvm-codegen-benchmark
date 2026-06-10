@@ -1,6 +1,6 @@
 func000000000000000d:
-	slli	a0, a0, 8
 	lui	a1, 1048568
+	slli	a0, a0, 8
 	add	a0, a0, a1
 	fcvt.s.w	fa0, a0
 	ret

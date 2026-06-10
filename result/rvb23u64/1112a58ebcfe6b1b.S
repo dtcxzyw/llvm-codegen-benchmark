@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	sext.w	a2, a0
 	sext.w	a1, a1
+	sext.w	a2, a0
 	snez	a1, a1
 	czero.nez	a1, a1, a2
 	addi	a0, a0, -42
@@ -29,8 +29,8 @@ func0000000000000298:
 	ret
 
 func0000000000000141:
-	sext.w	a2, a0
 	sext.w	a1, a1
+	sext.w	a2, a0
 	sgtz	a1, a1
 	czero.nez	a1, a1, a2
 	addi	a0, a0, -26
@@ -39,9 +39,9 @@ func0000000000000141:
 	ret
 
 func0000000000000101:
-	sext.w	a2, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 48
+	sext.w	a2, a0
 	xori	a1, a1, 1
 	czero.nez	a1, a1, a2
 	addi	a0, a0, -2

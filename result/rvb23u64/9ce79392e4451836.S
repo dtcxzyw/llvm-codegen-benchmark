@@ -19,11 +19,11 @@ func000000000000001d:
 func000000000000001c:
 	add	a1, a1, a2
 	lui	a2, 8
+	lui	a3, 533248
 	addi	a2, a2, 256
+	addi	a3, a3, 48
 	add	a1, a1, a2
-	lui	a2, 533248
-	addi	a2, a2, 48
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -54,9 +54,9 @@ func0000000000000008:
 
 func0000000000000000:
 	lui	a3, 1048544
+	addw	a2, a2, a3
 	or	a0, a0, a1
 	lui	a1, 45056
-	addw	a2, a2, a3
 	or	a0, a0, a2
 	addi	a1, a1, 128
 	or	a0, a0, a1

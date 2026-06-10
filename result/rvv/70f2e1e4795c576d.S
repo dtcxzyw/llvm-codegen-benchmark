@@ -1,7 +1,7 @@
 func0000000000000068:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	bseti	a0, zero, 32
 	vsra.vi	v10, v10, 5
 	vadd.vx	v8, v8, a0
 	li	a0, 32
@@ -10,9 +10,9 @@ func0000000000000068:
 	ret
 
 func0000000000000064:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	bseti	a0, zero, 32
 	vsra.vi	v10, v10, 5
 	vadd.vx	v8, v8, a0
 	li	a0, 32
@@ -21,9 +21,9 @@ func0000000000000064:
 	ret
 
 func0000000000000048:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	bseti	a0, zero, 32
 	vsra.vi	v10, v10, 2
 	vadd.vx	v8, v8, a0
 	li	a0, 32
@@ -32,9 +32,9 @@ func0000000000000048:
 	ret
 
 func0000000000000044:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	bseti	a0, zero, 32
 	vsra.vi	v10, v10, 2
 	vadd.vx	v8, v8, a0
 	li	a0, 32

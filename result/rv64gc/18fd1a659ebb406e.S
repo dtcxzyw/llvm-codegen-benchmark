@@ -16,8 +16,8 @@ func0000000000000618:
 
 func0000000000000604:
 	zext.b	a2, a2
-	seqz	a1, a1
 	addi	a2, a2, -28
+	seqz	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -25,8 +25,8 @@ func0000000000000604:
 
 func0000000000000602:
 	zext.b	a2, a2
-	seqz	a0, a0
 	addi	a2, a2, -48
+	seqz	a0, a0
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -50,8 +50,8 @@ func0000000000000204:
 
 func0000000000000630:
 	zext.b	a2, a2
-	snez	a1, a1
 	addi	a2, a2, -1
+	snez	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -7,8 +7,8 @@ func0000000000000000:
 
 func0000000000000005:
 	lui	a0, 1
-	csrwi	vxrm, 2
 	addi	a0, a0, -1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vaaddu.vx	v8, v8, a0
 	lui	a0, 1048575
@@ -53,8 +53,8 @@ func0000000000000007:
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	bseti	a0, zero, 33
 	vsrl.vi	v8, v8, 4
+	bseti	a0, zero, 33
 	addi	a0, a0, -256
 	vand.vx	v8, v8, a0
 	ret

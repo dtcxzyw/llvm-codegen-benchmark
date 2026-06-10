@@ -1,14 +1,14 @@
 func0000000000000142:
-	srli	a0, a0, 63
 	feq.d	a1, fa0, fa0
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000014e:
-	srli	a0, a0, 63
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -25,9 +25,9 @@ func0000000000000282:
 func0000000000000024:
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
+	flt.d	a1, fa0, fa5
 	addi	a0, a0, -4
 	seqz	a0, a0
-	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
@@ -49,9 +49,9 @@ func0000000000000250:
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa5, fa0
+	li	a3, -8
 	or	a1, a1, a2
-	li	a2, -8
-	rori	a2, a2, 16
+	rori	a2, a3, 16
 	xori	a1, a1, 1
 	sltu	a0, a2, a0
 	or	a0, a0, a1
@@ -66,17 +66,17 @@ func00000000000002d8:
 	ret
 
 func0000000000000148:
-	slti	a0, a0, 2
 	fli.d	fa5, 0.5
-	xori	a0, a0, 1
 	flt.d	a1, fa5, fa0
+	slti	a0, a0, 2
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func00000000000000d6:
-	slti	a0, a0, 1
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
+	slti	a0, a0, 1
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -89,9 +89,9 @@ func000000000000020c:
 	ret
 
 func0000000000000030:
-	seqz	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 

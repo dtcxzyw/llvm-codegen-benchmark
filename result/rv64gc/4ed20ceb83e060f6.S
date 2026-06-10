@@ -9,8 +9,8 @@ func00000000000000ef:
 	ret
 
 func000000000000006f:
-	zext.b	a0, a0
 	slli	a2, a2, 32
+	zext.b	a0, a0
 	srli	a3, a2, 28
 	srli	a2, a2, 25
 	slli	a0, a0, 3
@@ -22,8 +22,8 @@ func000000000000006f:
 
 func000000000000000c:
 	slli	a2, a2, 32
-	zext.b	a0, a0
 	srli	a2, a2, 32
+	zext.b	a0, a0
 	add	a1, a1, a2
 	slli	a0, a0, 4
 	add	a0, a0, a1
@@ -32,8 +32,8 @@ func000000000000000c:
 
 func0000000000000000:
 	slli	a2, a2, 32
-	zext.b	a0, a0
 	srli	a2, a2, 32
+	zext.b	a0, a0
 	add	a1, a1, a2
 	slli	a0, a0, 4
 	add	a0, a0, a1
@@ -42,8 +42,8 @@ func0000000000000000:
 
 func000000000000001c:
 	slli	a2, a2, 32
-	zext.b	a0, a0
 	srli	a2, a2, 32
+	zext.b	a0, a0
 	add	a1, a1, a2
 	slli	a0, a0, 4
 	add	a0, a0, a1
@@ -51,8 +51,8 @@ func000000000000001c:
 	ret
 
 func000000000000007f:
-	zext.b	a0, a0
 	slli	a2, a2, 32
+	zext.b	a0, a0
 	srli	a3, a2, 29
 	srli	a2, a2, 25
 	slli	a0, a0, 3

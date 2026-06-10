@@ -3,11 +3,11 @@ func0000000000000010:
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	lui	a0, 553506
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
+	lui	a0, 553506
 	addi	a0, a0, -1766
 	vadd.vx	v8, v8, a0
 	ret
@@ -29,11 +29,11 @@ func0000000000000077:
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	lui	a0, 1034754
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
+	lui	a0, 1034754
 	addi	a0, a0, 1024
 	vadd.vx	v8, v8, a0
 	ret

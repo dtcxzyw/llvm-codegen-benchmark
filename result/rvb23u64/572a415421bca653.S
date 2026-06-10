@@ -1,14 +1,14 @@
 func000000000000000d:
+	li	a1, 107
 	slli	a0, a0, 1
 	srli	a0, a0, 53
-	li	a1, 107
 	sub	a0, a1, a0
 	ret
 
 func000000000000000f:
+	li	a1, 75
 	slli	a0, a0, 1
 	srli	a0, a0, 53
-	li	a1, 75
 	sub	a0, a1, a0
 	ret
 
@@ -19,16 +19,16 @@ func000000000000000b:
 	ret
 
 func0000000000000009:
+	li	a1, 352
 	slli	a0, a0, 3
 	srli	a0, a0, 35
-	li	a1, 352
 	sub	a0, a1, a0
 	ret
 
 func0000000000000003:
+	li	a1, 64
 	slli	a0, a0, 55
 	srli	a0, a0, 58
-	li	a1, 64
 	sub	a0, a1, a0
 	ret
 

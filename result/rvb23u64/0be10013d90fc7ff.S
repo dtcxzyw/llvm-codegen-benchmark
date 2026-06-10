@@ -68,10 +68,10 @@ func0000000000000086:
 	ret
 
 func0000000000000098:
+	lui	a2, 917504
 	sub	a0, a0, a1
-	lui	a1, 917504
-	addi	a1, a1, -4
-	add	a0, a0, a1
+	addi	a2, a2, -4
+	add	a0, a0, a2
 	srliw	a0, a0, 29
 	sltiu	a0, a0, 7
 	ret
@@ -118,13 +118,13 @@ func0000000000000024:
 	ret
 
 func0000000000000018:
+	lui	a2, 1048573
 	sub	a0, a0, a1
-	lui	a1, 1048573
-	addi	a1, a1, 2045
+	addi	a1, a2, 2045
+	li	a2, -5
 	addw	a0, a0, a1
-	li	a1, -5
-	slli	a1, a1, 11
-	sltu	a0, a0, a1
+	slli	a2, a2, 11
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000b8:

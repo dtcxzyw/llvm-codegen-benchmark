@@ -4,8 +4,8 @@ func0000000000000004:
 	vandn.vx	v12, v12, a0
 	lui	a0, 2048
 	vor.vx	v12, v12, a0
-	lui	a0, 8
 	vsrl.vv	v8, v12, v8
+	lui	a0, 8
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret

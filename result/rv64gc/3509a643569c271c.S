@@ -1,7 +1,7 @@
 func000000000000001b:
-	slli	a0, a0, 32
 	lui	a1, 174763
 	addi	a1, a1, -1365
+	slli	a0, a0, 32
 	slli	a1, a1, 33
 	mulhu	a0, a0, a1
 	srli	a0, a0, 32
@@ -44,8 +44,8 @@ func0000000000000003:
 	ret
 
 func0000000000000038:
-	sext.w	a0, a0
 	lui	a1, 68719
+	sext.w	a0, a0
 	addi	a1, a1, 1954
 	mul	a0, a0, a1
 	srli	a0, a0, 16

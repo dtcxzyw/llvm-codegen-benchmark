@@ -19,28 +19,28 @@ func000000000000002b:
 	li	a3, 7
 	blt	a3, a2, .LBB2_2
 	li	a2, 8
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB2_2:
 	li	a2, 136
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000063:
-	sext.w	a2, a2
 	lui	a3, 32768
+	sext.w	a2, a2
 	addi	a3, a3, 15
 	bltu	a3, a2, .LBB3_2
 	li	a2, 8
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB3_2:
 	li	a2, 264
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000006:

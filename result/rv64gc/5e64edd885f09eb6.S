@@ -1,6 +1,6 @@
 func0000000000000004:
-	andi	a2, a2, 1
 	slli	a1, a1, 63
+	andi	a2, a2, 1
 	srai	a1, a1, 63
 	andi	a1, a1, -256
 	sub	a2, a2, a0
@@ -14,12 +14,12 @@ func000000000000000c:
 	slli	a1, a1, 3
 	bnez	a3, .LBB1_2
 	li	a2, 24
-	add	a0, a0, a2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 96
-	add	a0, a0, a2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

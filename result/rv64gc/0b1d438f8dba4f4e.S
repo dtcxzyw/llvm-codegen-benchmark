@@ -23,8 +23,8 @@ func0000000000000081:
 	ret
 
 func0000000000000086:
-	sext.w	a0, a0
 	srliw	a1, a1, 24
+	sext.w	a0, a0
 	sltiu	a1, a1, 7
 	not	a1, a1
 	slti	a0, a0, 1

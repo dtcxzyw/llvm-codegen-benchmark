@@ -9,12 +9,12 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmor.mm	v0, v0, v10
 	lui	a0, 8256
-	vmv.v.x	v10, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vmor.mm	v0, v0, v10
 	lui	a0, 532544
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v10, v12, a0, v0
 	lui	a0, 9280
 	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10

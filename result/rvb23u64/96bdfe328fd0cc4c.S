@@ -1,6 +1,6 @@
 func0000000000000011:
-	srli	a0, a0, 1
 	lui	a1, 349525
+	srli	a0, a0, 1
 	sext.w	a0, a0
 	addi	a1, a1, 1366
 	mul	a0, a0, a1

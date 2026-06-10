@@ -79,9 +79,9 @@ func0000000000000048:
 	ret
 
 func0000000000000310:
+	li	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 1024
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8

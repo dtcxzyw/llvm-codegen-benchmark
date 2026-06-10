@@ -8,12 +8,11 @@ func000000000000001b:
 	vand.vi	v8, v10, 1
 	ret
 
+.LCPI1_0:
+	.quad	2104162448473173
 func0000000000000003:
-	lui	a0, 979827
-	slli.uw	a0, a0, 4
-	addi	a0, a0, -363
-	slli	a0, a0, 15
-	addi	a0, a0, -939
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	li	a0, 48

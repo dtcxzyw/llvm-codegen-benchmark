@@ -1,8 +1,8 @@
 func00000000000001f8:
 	slli	a1, a1, 32
-	srliw	a0, a0, 1
 	srli	a2, a1, 31
 	srli	a1, a1, 29
+	srliw	a0, a0, 1
 	add	a1, a1, a2
 	slli	a0, a0, 1
 	add	a0, a0, a1
@@ -12,9 +12,9 @@ func00000000000001f8:
 
 func00000000000001f4:
 	slli	a1, a1, 32
-	srliw	a0, a0, 1
 	srli	a2, a1, 31
 	srli	a1, a1, 29
+	srliw	a0, a0, 1
 	add	a1, a1, a2
 	slli	a0, a0, 1
 	add	a0, a0, a1

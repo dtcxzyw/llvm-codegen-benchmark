@@ -4,8 +4,8 @@ func00000000000000b4:
 
 func0000000000000064:
 	zext.h	a1, a1
-	addiw	a0, a0, 26
 	addi	a1, a1, -6
+	addiw	a0, a0, 26
 	sltiu	a1, a1, 4
 	addi	a0, a0, -700
 	czero.eqz	a0, a0, a1

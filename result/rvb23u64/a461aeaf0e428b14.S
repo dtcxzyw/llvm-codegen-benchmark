@@ -27,10 +27,10 @@ func000000000000000c:
 	ret
 
 func000000000000000e:
+	li	a3, -1
 	add.uw	a1, a2, a1
-	li	a2, -1
-	srli	a2, a2, 32
-	add	a1, a1, a2
+	srli	a3, a3, 32
+	add	a1, a1, a3
 	and	a0, a0, a1
 	ret
 
@@ -63,10 +63,10 @@ func0000000000000015:
 	ret
 
 func000000000000000f:
+	li	a3, -1
 	add.uw	a1, a2, a1
-	li	a2, -1
-	srli	a2, a2, 32
-	add	a1, a1, a2
+	srli	a3, a3, 32
+	add	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

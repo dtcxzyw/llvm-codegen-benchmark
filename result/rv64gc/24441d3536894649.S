@@ -1,16 +1,16 @@
 func0000000000000055:
-	slli	a2, a2, 2
 	lui	a3, 16
 	addi	a3, a3, -5
 	mul	a1, a1, a3
+	slli	a2, a2, 2
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000d5:
-	slli	a2, a2, 4
 	li	a3, -46
 	mul	a1, a1, a3
+	slli	a2, a2, 4
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func0000000000000003:
-	slli	a1, a0, 32
-	lui	a2, 439805
-	addi	a2, a2, -1429
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 439805
+	addi	a1, a1, -1429
+	slli	a2, a0, 32
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	lui	a2, 610
 	srli	a1, a1, 52
 	addi	a2, a2, 1440
@@ -14,13 +14,13 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	slli	a1, a0, 32
-	lui	a2, 111848
-	addi	a2, a2, 437
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
-	li	a2, 300
+	lui	a1, 111848
+	addi	a1, a1, 437
+	slli	a2, a0, 32
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 37
+	li	a2, 300
 	mul	a1, a1, a2
 	lui	a2, 2441
 	sub	a0, a0, a1

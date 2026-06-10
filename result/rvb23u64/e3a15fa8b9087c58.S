@@ -12,9 +12,9 @@ func0000000000000018:
 	ret
 
 func0000000000000038:
+	li	a1, -2
 	sext.w	a0, a0
 	srli	a0, a0, 2
-	li	a1, -2
 	add.uw	a0, a1, a0
 	ret
 

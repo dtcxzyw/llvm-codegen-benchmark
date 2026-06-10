@@ -15,9 +15,10 @@ func0000000000000084:
 	ret
 
 func0000000000000087:
-	bne	a0, a1, .LBB2_2
-	li	a2, 8
-.LBB2_2:
+	mv	a3, a0
 	mv	a0, a2
+	bne	a3, a1, .LBB2_2
+	li	a0, 8
+.LBB2_2:
 	ret
 

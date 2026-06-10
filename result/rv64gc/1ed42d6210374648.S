@@ -1,33 +1,33 @@
 func0000000000000a21:
-	srai	a2, a2, 3
+	li	a3, 1
 	add	a0, a0, a1
-	li	a1, 1
+	srai	a2, a2, 3
+	slli	a3, a3, 60
 	add	a0, a0, a2
-	slli	a1, a1, 60
-	addi	a1, a1, 63
+	addi	a1, a3, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000a01:
-	srai	a2, a2, 3
+	li	a3, 1
 	add	a0, a0, a1
-	li	a1, 1
+	srai	a2, a2, 3
+	slli	a3, a3, 60
 	add	a0, a0, a2
-	slli	a1, a1, 60
-	addi	a1, a1, 63
+	addi	a1, a3, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000a81:
-	srai	a2, a2, 4
+	li	a3, 1
 	add	a0, a0, a1
-	li	a1, 1
+	srai	a2, a2, 4
+	slli	a3, a3, 59
 	add	a0, a0, a2
-	slli	a1, a1, 59
-	addi	a1, a1, 31
-	xor	a0, a0, a1
+	addi	a3, a3, 31
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 

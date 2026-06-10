@@ -30,9 +30,9 @@ func0000000000000013:
 	ret
 
 func0000000000000003:
+	lui	a2, 524
 	sub	a0, a0, a1
-	lui	a1, 524
-	addi	a1, a1, 1179
+	addi	a1, a2, 1179
 	bltu	a0, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

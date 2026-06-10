@@ -36,9 +36,9 @@ func00000000000000f4:
 
 func0000000000000081:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vand.vi	v12, v10, 1
-	vmv.v.i	v13, 0
-	vwsubu.vv	v10, v13, v12
+	vmv.v.i	v12, 0
+	vand.vi	v13, v10, 1
+	vwsubu.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vv	v0, v8, v10
 	ret

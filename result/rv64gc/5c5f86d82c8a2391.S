@@ -111,19 +111,19 @@ func0000000000000038:
 	ret
 
 func00000000000000f4:
+	li	a3, -7
 	sub	a1, a1, a2
-	li	a2, -7
-	srli	a2, a2, 1
-	and	a1, a1, a2
+	srli	a3, a3, 1
+	and	a1, a1, a3
 	addi	a0, a0, 4
 	sltu	a0, a0, a1
 	ret
 
 func00000000000000e4:
+	li	a3, -3
 	sub	a1, a1, a2
-	li	a2, -3
-	srli	a2, a2, 1
-	and	a1, a1, a2
+	srli	a3, a3, 1
+	and	a1, a1, a3
 	addi	a0, a0, 2
 	sltu	a0, a0, a1
 	ret
@@ -160,10 +160,10 @@ func0000000000000078:
 	ret
 
 func00000000000001f4:
+	li	a3, -511
 	sub	a1, a1, a2
-	li	a2, -511
-	srli	a2, a2, 1
-	and	a1, a1, a2
+	srli	a3, a3, 1
+	and	a1, a1, a3
 	addi	a0, a0, 32
 	sltu	a0, a0, a1
 	ret

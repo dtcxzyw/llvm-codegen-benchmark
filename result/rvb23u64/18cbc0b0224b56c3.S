@@ -15,13 +15,13 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
+	lui	a3, 4096
+	addi	a3, a3, 255
+	and	a1, a1, a3
 	sext.w	a2, a2
 	snez	a2, a2
-	and	a0, a0, a2
-	lui	a2, 4096
-	addi	a2, a2, 255
-	and	a1, a1, a2
 	binvi	a1, a1, 24
+	and	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

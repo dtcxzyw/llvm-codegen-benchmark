@@ -12,9 +12,9 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
+	andi	a0, a0, 1
 	addi	a1, a1, -1
 	ori	a1, a1, 1
 	addi	a0, a0, -1

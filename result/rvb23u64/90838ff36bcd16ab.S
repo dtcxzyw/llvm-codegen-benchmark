@@ -1,6 +1,6 @@
 func000000000000006e:
-	andi	a2, a2, 1
 	sh2add	a0, a1, a0
+	andi	a2, a2, 1
 	sh2add	a0, a2, a0
 	addi	a0, a0, -4
 	ret
@@ -21,8 +21,8 @@ func000000000000007f:
 
 func000000000000007c:
 	slli	a2, a2, 33
-	srli	a2, a2, 33
 	sh2add	a0, a1, a0
+	srli	a2, a2, 33
 	sh2add	a0, a2, a0
 	addi	a0, a0, 8
 	ret

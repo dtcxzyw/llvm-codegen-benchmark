@@ -44,11 +44,11 @@ func0000000000000026:
 	ret
 
 func000000000000028c:
-	bclri	a1, a1, 63
 	li	a2, 2047
-	addi	a0, a0, -7
+	bclri	a1, a1, 63
 	slli	a2, a2, 52
 	addi	a2, a2, 1
+	addi	a0, a0, -7
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -56,10 +56,10 @@ func000000000000028c:
 
 func0000000000000038:
 	lui	a2, 262145
-	sltiu	a0, a0, 64
 	slli	a2, a2, 2
 	addi	a2, a2, -511
 	and	a1, a1, a2
+	sltiu	a0, a0, 64
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -83,14 +83,13 @@ func0000000000000184:
 	or	a0, a0, a1
 	ret
 
+.LCPI10_0:
+	.quad	-3307330977390599
 func0000000000000198:
-	li	a2, -47
-	sltiu	a0, a0, 64
-	slli	a2, a2, 33
-	addi	a2, a2, -127
-	slli	a2, a2, 13
-	addi	a2, a2, -7
+	lui	a2, %hi(.LCPI10_0)
+	ld	a2, %lo(.LCPI10_0)(a2)
 	and	a1, a1, a2
+	sltiu	a0, a0, 64
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

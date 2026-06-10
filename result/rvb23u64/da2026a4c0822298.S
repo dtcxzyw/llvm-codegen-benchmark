@@ -9,25 +9,25 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	zext.b	a1, a1
 	andi	a2, a2, 1
 	li	a3, 4
 	czero.nez	a2, a3, a2
 	lui	a3, 7
+	zext.b	a1, a1
 	addi	a3, a3, -1855
-	sltiu	a1, a1, 5
 	or	a2, a2, a3
+	sltiu	a1, a1, 5
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000014:
-	zext.b	a1, a1
 	andi	a2, a2, 1
+	zext.b	a1, a1
 	addi	a2, a2, -1
-	sltiu	a1, a1, 4
 	andi	a2, a2, 4
+	sltiu	a1, a1, 4
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

@@ -33,11 +33,11 @@ func0000000000000cc4:
 	ret
 
 func0000000000000422:
-	fmv.w.x	fa5, zero
 	lui	a0, 260096
-	fmax.s	fa5, fa1, fa5
+	fmv.w.x	fa5, zero
 	addi	a0, a0, -1
 	fmv.w.x	fa4, a0
+	fmax.s	fa5, fa1, fa5
 	fmin.s	fa4, fa0, fa4
 	flt.s	a0, fa4, fa5
 	ret

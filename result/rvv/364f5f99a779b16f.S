@@ -1,7 +1,7 @@
 func0000000000000003:
+	li	a0, 45
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv1r.v	v9, v0
-	li	a0, 45
 	vmseq.vx	v0, v8, a0
 	lui	a0, 4096
 	addi	a0, a0, 128
@@ -9,8 +9,8 @@ func0000000000000003:
 	vmv.v.x	v10, a0
 	li	a0, 128
 	vmerge.vxm	v10, v10, a0, v0
-	li	a0, 384
 	vmv1r.v	v0, v9
+	li	a0, 384
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 

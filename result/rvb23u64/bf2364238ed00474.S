@@ -1,30 +1,30 @@
 func000000000000000c:
-	addi	a0, a0, 1
 	li	a1, -1
+	addi	a0, a0, 1
 	srli	a0, a0, 1
 	srli	a1, a1, 4
 	minu	a0, a0, a1
 	ret
 
 func0000000000000000:
-	addi	a0, a0, 511
 	lui	a1, 65279
+	addi	a0, a0, 511
 	srli	a0, a0, 9
 	addi	a1, a1, 16
 	minu	a0, a0, a1
 	ret
 
 func0000000000000004:
+	li	a1, 64
 	addi	a0, a0, 8
 	srli	a0, a0, 3
-	li	a1, 64
 	minu	a0, a0, a1
 	ret
 
 func0000000000000006:
+	li	a1, 64
 	addi	a0, a0, 8
 	srli	a0, a0, 3
-	li	a1, 64
 	minu	a0, a0, a1
 	ret
 

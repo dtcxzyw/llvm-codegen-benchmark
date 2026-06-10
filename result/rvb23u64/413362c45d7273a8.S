@@ -15,16 +15,16 @@ func000000000000007b:
 	ret
 
 func000000000000000b:
-	addi	a2, a2, 1
 	sext.w	a1, a1
+	addi	a2, a2, 1
 	add	a0, a0, a1
 	add.uw	a0, a2, a0
 	ret
 
 func000000000000002b:
-	addi	a2, a2, 6
 	sext.w	a1, a1
 	sh2add	a0, a1, a0
+	addi	a2, a2, 6
 	sh2add.uw	a0, a2, a0
 	ret
 
@@ -37,8 +37,8 @@ func0000000000000078:
 	ret
 
 func0000000000000050:
-	addiw	a2, a2, 1
 	sext.w	a1, a1
+	addiw	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

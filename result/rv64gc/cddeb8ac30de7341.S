@@ -1,7 +1,7 @@
 func0000000000000008:
 	sub	a1, a1, a2
-	li	a2, 16
 	slli	a1, a1, 48
+	li	a2, 16
 	srli	a1, a1, 48
 	sub	a2, a2, a0
 	srlw	a0, a1, a2
@@ -9,8 +9,8 @@ func0000000000000008:
 
 func0000000000000000:
 	sub	a1, a1, a2
-	li	a2, 16
 	slli	a1, a1, 48
+	li	a2, 16
 	srli	a1, a1, 48
 	sub	a2, a2, a0
 	srlw	a0, a1, a2
@@ -18,8 +18,8 @@ func0000000000000000:
 
 func000000000000000a:
 	sub	a1, a1, a2
-	li	a2, 16
 	slli	a1, a1, 48
+	li	a2, 16
 	srli	a1, a1, 48
 	sub	a2, a2, a0
 	srlw	a0, a1, a2
@@ -27,8 +27,8 @@ func000000000000000a:
 
 func0000000000000002:
 	sub	a1, a1, a2
-	li	a2, 16
 	slli	a1, a1, 48
+	li	a2, 16
 	srli	a1, a1, 48
 	sub	a2, a2, a0
 	srlw	a0, a1, a2

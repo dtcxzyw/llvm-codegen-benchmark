@@ -1,14 +1,14 @@
 func0000000000000003:
+	lui	a0, 4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
-	lui	a0, 4
 	vmseq.vx	v0, v8, a0
 	lui	a0, 256
 	vmv.v.x	v8, a0
 	lui	a0, 524544
 	vmerge.vxm	v8, v8, a0, v0
-	lui	a0, 8448
 	vmv1r.v	v0, v10
+	lui	a0, 8448
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

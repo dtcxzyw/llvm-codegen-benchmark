@@ -1,6 +1,6 @@
 func0000000000000028:
-	sext.w	a1, a1
 	lui	a2, 1280
+	sext.w	a1, a1
 	addi	a2, a2, 4
 	sltu	a0, a2, a0
 	lui	a2, 256
@@ -24,8 +24,8 @@ func0000000000000021:
 func0000000000000008:
 	zext.w	a1, a1
 	srli	a0, a0, 12
-	lui	a2, 10
 	sltiu	a0, a0, 5
+	lui	a2, 10
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
@@ -34,16 +34,16 @@ func0000000000000008:
 func0000000000000018:
 	zext.w	a1, a1
 	srli	a0, a0, 12
-	lui	a2, 10
 	sltiu	a0, a0, 5
+	lui	a2, 10
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	lui	a2, 2560
+	sext.w	a1, a1
 	addi	a2, a2, 1280
 	sltu	a0, a0, a2
 	lui	a2, 2

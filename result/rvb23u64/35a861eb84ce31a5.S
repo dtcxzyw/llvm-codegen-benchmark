@@ -1,7 +1,7 @@
 func0000000000000073:
-	sh1add	a2, a2, a2
 	li	a3, 912
 	mul	a1, a1, a3
+	sh1add	a2, a2, a2
 	add	a0, a0, a1
 	sh3add	a0, a2, a0
 	addi	a0, a0, 4

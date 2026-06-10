@@ -1,8 +1,8 @@
 func000000000000003f:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v8, v8, 2
 	li	a0, 64
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsll.vi	v8, v8, 2
 	li	a0, 40
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v8, v10
@@ -11,8 +11,8 @@ func000000000000003f:
 
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v8, v8, 3
 	vmv.v.i	v10, 8
+	vsll.vi	v8, v8, 3
 	bseti	a0, zero, 32
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v8, v10

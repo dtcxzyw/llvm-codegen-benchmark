@@ -16,10 +16,10 @@ func0000000000000008:
 	ret
 
 func0000000000000048:
+	li	a3, -7
 	add.uw	a1, a2, a1
-	li	a2, -7
-	srli	a2, a2, 1
-	sltu	a1, a2, a1
+	srli	a3, a3, 1
+	sltu	a1, a3, a1
 	czero.nez	a0, a0, a1
 	ret
 

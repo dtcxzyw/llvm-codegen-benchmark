@@ -18,13 +18,13 @@ func000000000000001f:
 	ret
 
 func000000000000001e:
+	lui	a2, 16
 	zext.b	a1, a1
+	addi	a2, a2, 1
 	slli	a1, a1, 8
+	bseti	a2, a2, 32
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 1
-	bseti	a1, a1, 32
-	bseti	a1, a1, 48
+	bseti	a1, a2, 48
 	mul	a0, a0, a1
 	ret
 

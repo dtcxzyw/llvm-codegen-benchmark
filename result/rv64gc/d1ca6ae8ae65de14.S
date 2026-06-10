@@ -8,8 +8,8 @@ func000000000000000c:
 	ret
 
 func0000000000000028:
-	srli	a0, a0, 7
 	li	a2, 424
+	srli	a0, a0, 7
 	bgeu	a2, a0, .LBB1_2
 	li	a0, 100
 	ret

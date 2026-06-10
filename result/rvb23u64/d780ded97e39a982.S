@@ -15,9 +15,9 @@ func00000000000001f0:
 func0000000000000020:
 	slli	a1, a1, 2
 	addi	a1, a1, -4
+	lui	a2, 5
 	add.uw	a0, a1, a0
-	lui	a1, 5
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	add	a0, a0, a1
 	ret
 

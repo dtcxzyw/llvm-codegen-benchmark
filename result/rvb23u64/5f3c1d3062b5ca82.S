@@ -10,8 +10,8 @@ func0000000000000007:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	li	a1, -5
+	andi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	li	a1, -13
 	add.uw	a0, a1, a0

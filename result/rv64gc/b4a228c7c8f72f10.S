@@ -5,8 +5,8 @@ func000000000000000c:
 	ret
 
 func000000000000000d:
-	addi	a1, a1, 7
 	lui	a2, 32
+	addi	a1, a1, 7
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	subw	a0, a0, a1

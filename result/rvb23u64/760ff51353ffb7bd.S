@@ -1,6 +1,6 @@
 func0000000000000010:
-	sext.w	a0, a0
 	srli	a1, a1, 3
+	sext.w	a0, a0
 	sext.w	a1, a1
 	maxu	a0, a1, a0
 	zext.w	a0, a0

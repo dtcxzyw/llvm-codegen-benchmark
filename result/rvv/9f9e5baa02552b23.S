@@ -19,10 +19,10 @@ func0000000000000009:
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
 	lui	a0, 335544
 	addi	a0, a0, 1311
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
 	vmulh.vx	v9, v9, a0
 	vsra.vi	v9, v9, 7
 	vsrl.vi	v10, v9, 31

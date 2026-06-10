@@ -8,8 +8,8 @@ func0000000000000001:
 	lui	a0, 70693
 	addi	a0, a0, 981
 	slli	a0, a0, 33
-	vsrl.vi	v10, v10, 31
 	vmul.vx	v8, v8, a0
+	vsrl.vi	v10, v10, 31
 	vor.vv	v8, v10, v8
 	ret
 

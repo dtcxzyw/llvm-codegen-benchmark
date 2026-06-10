@@ -1,13 +1,13 @@
 func0000000000000002:
-	sext.w	a3, a0
-	sraiw	a0, a1, 31
-	srliw	a0, a0, 29
-	add	a0, a0, a1
-	sraiw	a0, a0, 3
-	add	a0, a0, a2
-	addiw	a0, a0, 1
-	blt	a0, a3, .LBB0_2
-	mv	a0, a3
+	sraiw	a3, a1, 31
+	srliw	a3, a3, 29
+	add	a1, a1, a3
+	sraiw	a1, a1, 3
+	add	a2, a2, a1
+	sext.w	a1, a0
+	addiw	a0, a2, 1
+	blt	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
 	ret
 

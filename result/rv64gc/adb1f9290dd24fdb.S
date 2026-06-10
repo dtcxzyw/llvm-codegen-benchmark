@@ -1,6 +1,6 @@
 func000000000000000a:
-	sext.w	a0, a0
 	fcvt.w.s	a1, fa0, rtz
+	sext.w	a0, a0
 	sgtz	a2, a0
 	neg	a2, a2
 	and	a0, a0, a2

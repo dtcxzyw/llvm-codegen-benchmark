@@ -1,7 +1,7 @@
 func0000000000000042:
 	andi	a2, a1, -3
-	addiw	a1, a1, -8
 	addiw	a2, a2, -1
+	addiw	a1, a1, -8
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2

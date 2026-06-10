@@ -15,8 +15,8 @@ func0000000000000009:
 
 func0000000000000011:
 	zext.h	a1, a1
-	lui	a2, 3904
 	sltiu	a1, a1, 5
+	lui	a2, 3904
 	czero.nez	a1, a2, a1
 	andi	a0, a0, 8
 	or	a0, a0, a1

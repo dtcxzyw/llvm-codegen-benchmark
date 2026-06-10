@@ -42,8 +42,8 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	negw	a0, a0
 	li	a1, -1
+	negw	a0, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

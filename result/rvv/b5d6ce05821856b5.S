@@ -18,18 +18,18 @@ func00000000000001ec:
 	ret
 
 func0000000000000001:
+	li	a0, -128
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 25
-	li	a0, -128
 	vand.vx	v10, v12, a0
 	vnsrl.wi	v11, v8, 0
 	vmseq.vv	v0, v10, v11
 	ret
 
 func0000000000000048:
+	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 1
-	lui	a0, 524288
 	vand.vx	v10, v12, a0
 	vnsrl.wi	v11, v8, 0
 	vmsltu.vv	v0, v11, v10

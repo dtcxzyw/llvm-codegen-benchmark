@@ -3,9 +3,9 @@ func0000000000000008:
 	bnez	a2, .LBB0_2
 	li	a1, -6
 .LBB0_2:
+	lui	a2, 599186
 	addw	a0, a0, a1
-	lui	a1, 599186
-	addi	a1, a1, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1

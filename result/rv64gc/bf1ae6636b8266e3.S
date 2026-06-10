@@ -72,22 +72,22 @@ func0000000000000015:
 	ret
 
 func000000000000003c:
+	lui	a2, 10126
+	addi	a2, a2, -537
 	slli	a1, a1, 6
+	slli	a2, a2, 12
 	add	a0, a0, a1
-	lui	a1, 10126
-	addi	a1, a1, -537
-	slli	a1, a1, 12
-	addi	a1, a1, -448
+	addi	a1, a2, -448
 	add	a0, a0, a1
 	ret
 
 func000000000000001f:
+	lui	a2, 10126
+	addi	a2, a2, -537
 	slli	a1, a1, 6
+	slli	a2, a2, 12
 	add	a0, a0, a1
-	lui	a1, 10126
-	addi	a1, a1, -537
-	slli	a1, a1, 12
-	addi	a1, a1, -448
+	addi	a1, a2, -448
 	add	a0, a0, a1
 	ret
 

@@ -44,8 +44,8 @@ func0000000000000024:
 	bnez	a0, .LBB4_2
 	fmv.d	fa1, fa2
 .LBB4_2:
-	fmul.d	fa5, fa1, fa0
 	li	a0, 1023
+	fmul.d	fa5, fa1, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
@@ -56,8 +56,8 @@ func000000000000002b:
 	bnez	a0, .LBB5_2
 	fmv.d	fa1, fa2
 .LBB5_2:
-	fmul.d	fa5, fa1, fa0
 	li	a0, 1023
+	fmul.d	fa5, fa1, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
@@ -69,8 +69,8 @@ func00000000000000cc:
 	bnez	a0, .LBB6_2
 	fmv.d	fa1, fa2
 .LBB6_2:
-	fmul.d	fa5, fa1, fa0
 	li	a0, 1023
+	fmul.d	fa5, fa1, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
@@ -101,8 +101,8 @@ func00000000000000c4:
 	bnez	a0, .LBB9_2
 	fmv.d	fa1, fa2
 .LBB9_2:
-	fmul.d	fa5, fa1, fa0
 	li	a0, 1023
+	fmul.d	fa5, fa1, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
@@ -113,8 +113,8 @@ func0000000000000042:
 	bnez	a0, .LBB10_2
 	fmv.d	fa1, fa2
 .LBB10_2:
-	fmul.d	fa5, fa0, fa1
 	li	a0, 1023
+	fmul.d	fa5, fa0, fa1
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
@@ -125,8 +125,8 @@ func0000000000000044:
 	bnez	a0, .LBB11_2
 	fmv.d	fa1, fa2
 .LBB11_2:
-	fmul.d	fa5, fa1, fa0
 	li	a0, 1023
+	fmul.d	fa5, fa1, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5

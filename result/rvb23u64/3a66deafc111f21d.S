@@ -1,6 +1,6 @@
 func000000000000003f:
-	addi	a1, a1, 15
 	bseti	a2, zero, 34
+	addi	a1, a1, 15
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	and	a0, a0, a2

@@ -1,7 +1,7 @@
 func0000000000000081:
 	zext.b	a2, a2
-	addiw	a1, a1, -4
 	sltiu	a2, a2, 3
+	addiw	a1, a1, -4
 	not	a2, a2
 	seqz	a1, a1
 	and	a1, a1, a2
@@ -9,22 +9,22 @@ func0000000000000081:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	zext.b	a2, a2
-	not	a0, a0
+	sext.w	a1, a1
 	addi	a2, a2, -8
 	seqz	a1, a1
+	not	a0, a0
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	zext.b	a2, a2
-	not	a0, a0
+	sext.w	a1, a1
 	addi	a2, a2, -4
 	sltiu	a1, a1, 4
+	not	a0, a0
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -42,9 +42,9 @@ func0000000000000098:
 
 func0000000000000026:
 	zext.b	a2, a2
+	addi	a2, a2, -82
 	not	a0, a0
 	srliw	a1, a1, 31
-	addi	a2, a2, -82
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

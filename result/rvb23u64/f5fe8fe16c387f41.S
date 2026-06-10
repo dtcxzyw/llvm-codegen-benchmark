@@ -14,8 +14,8 @@ func0000000000000029:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addi	a2, a2, -819
 	addi	a1, a1, 2
+	addi	a2, a2, -819
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -27,8 +27,8 @@ func0000000000000079:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addi	a2, a2, -819
 	addi	a1, a1, 2
+	addi	a2, a2, -819
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -38,8 +38,8 @@ func0000000000000079:
 
 func0000000000000003:
 	sh2add	a1, a1, a1
-	lui	a2, 175448
 	addi	a1, a1, 2
+	lui	a2, 175448
 	zext.w	a1, a1
 	addi	a2, a2, 43
 	mul	a1, a1, a2
@@ -50,8 +50,8 @@ func0000000000000003:
 func0000000000000018:
 	li	a2, -137
 	mul	a1, a1, a2
-	lui	a2, 142180
 	addi	a1, a1, 136
+	lui	a2, 142180
 	zext.w	a1, a1
 	addi	a2, a2, -833
 	mul	a1, a1, a2
@@ -62,8 +62,8 @@ func0000000000000018:
 func0000000000000019:
 	li	a2, -137
 	mul	a1, a1, a2
-	lui	a2, 142180
 	addi	a1, a1, 136
+	lui	a2, 142180
 	zext.w	a1, a1
 	addi	a2, a2, -833
 	mul	a1, a1, a2
@@ -73,9 +73,9 @@ func0000000000000019:
 
 func0000000000000000:
 	sh2add	a1, a1, a1
-	lui	a2, 335544
 	sh2add	a1, a1, a1
 	addi	a1, a1, 99
+	lui	a2, 335544
 	zext.w	a1, a1
 	addi	a2, a2, 1311
 	mul	a1, a1, a2

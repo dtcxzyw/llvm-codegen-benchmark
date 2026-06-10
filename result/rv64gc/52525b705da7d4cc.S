@@ -1,6 +1,6 @@
 func0000000000000008:
-	sext.w	a0, a0
 	lui	a1, 786432
+	sext.w	a0, a0
 	slt	a0, a1, a0
 	ret
 

@@ -4,9 +4,9 @@ func000000000000000b:
 	and	a2, a2, a3
 	lui	a3, 13107
 	add	a1, a1, a2
+	addi	a2, a3, 819
+	and	a1, a1, a2
 	lui	a2, 28784
-	addi	a3, a3, 819
-	and	a1, a1, a3
 	add	a0, a0, a1
 	addi	a1, a2, 1799
 	and	a0, a0, a1
@@ -18,9 +18,9 @@ func000000000000000f:
 	and	a2, a2, a3
 	lui	a3, 112
 	add	a1, a1, a2
+	addi	a2, a3, 1799
+	and	a1, a1, a2
 	lui	a2, 240
-	addi	a3, a3, 1799
-	and	a1, a1, a3
 	add	a0, a0, a1
 	addi	a2, a2, 15
 	and	a0, a0, a2

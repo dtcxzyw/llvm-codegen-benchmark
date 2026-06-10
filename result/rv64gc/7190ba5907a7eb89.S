@@ -12,11 +12,11 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
+	lui	a2, 32
 	sub	a0, a0, a1
-	lui	a1, 32
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	xor	a0, a0, a1
+	addi	a2, a2, -1
+	and	a0, a0, a2
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 
@@ -55,10 +55,10 @@ func0000000000000061:
 	ret
 
 func0000000000000014:
+	lui	a2, 4096
 	sub	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -4
-	and	a0, a0, a1
+	addi	a2, a2, -4
+	and	a0, a0, a2
 	seqz	a0, a0
 	ret
 

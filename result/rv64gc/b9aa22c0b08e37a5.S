@@ -1,6 +1,6 @@
 func0000000000000021:
-	slli	a0, a0, 48
 	lui	a2, 11
+	slli	a0, a0, 48
 	srli	a1, a0, 48
 	addi	a0, a2, -1912
 	beq	a1, a0, .LBB0_2
@@ -18,9 +18,9 @@ func0000000000000021:
 	ret
 
 func0000000000000084:
+	li	a1, 128
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 128
 	bgeu	a0, a1, .LBB1_2
 	li	a0, 1
 	ret

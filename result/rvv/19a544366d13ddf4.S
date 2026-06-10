@@ -13,8 +13,8 @@ func000000000000001f:
 func0000000000000007:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	li	a0, 63
 	vsrl.vi	v8, v10, 3
+	li	a0, 63
 	vand.vx	v8, v8, a0
 	li	a0, 64
 	vrsub.vx	v10, v8, a0

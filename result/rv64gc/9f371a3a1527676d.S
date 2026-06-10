@@ -16,10 +16,10 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	li	a1, 511
 	slli	a1, a1, 53
 	fmv.d.x	fa5, a1
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB1_2
 	li	a0, -513

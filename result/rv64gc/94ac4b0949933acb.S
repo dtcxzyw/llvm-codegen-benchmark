@@ -1,8 +1,8 @@
 func000000000000001e:
-	slli	a2, a2, 48
 	slli	a1, a1, 32
-	srli	a2, a2, 48
+	slli	a2, a2, 48
 	srli	a1, a1, 32
+	srli	a2, a2, 48
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret

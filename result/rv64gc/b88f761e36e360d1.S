@@ -1,9 +1,9 @@
 func0000000000000089:
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
+	lui	a3, 335544
 	sub	a1, a1, a2
-	lui	a2, 335544
-	addi	a2, a2, 1311
+	addi	a2, a3, 1311
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -14,9 +14,9 @@ func0000000000000089:
 func0000000000000081:
 	sext.w	a2, a2
 	sltiu	a2, a2, 3
+	lui	a3, 335544
 	sub	a1, a1, a2
-	lui	a2, 335544
-	addi	a2, a2, 1311
+	addi	a2, a3, 1311
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2

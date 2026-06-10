@@ -1,9 +1,9 @@
 func000000000000007b:
-	slli	a0, a0, 10
 	srliw	a2, a2, 23
+	slli	a0, a0, 10
 	add	a0, a0, a1
-	lui	a1, 3
 	slli	a2, a2, 1
+	lui	a1, 3
 	add	a0, a0, a2
 	addi	a1, a1, 1672
 	add	a0, a0, a1

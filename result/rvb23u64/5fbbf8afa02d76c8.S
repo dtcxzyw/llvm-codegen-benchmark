@@ -1,11 +1,11 @@
 func000000000000016f:
 	slli	a1, a1, 5
 	zext.h	a0, a0
-	add	a1, a1, a2
-	lui	a2, 1048560
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh1add	a0, a0, a1
-	addi	a1, a2, -1504
+	lui	a1, 1048560
+	addi	a1, a1, -1504
 	add	a0, a0, a1
 	ret
 

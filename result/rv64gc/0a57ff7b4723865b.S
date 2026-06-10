@@ -1,8 +1,8 @@
 func0000000000000046:
-	sext.w	a3, a0
-	li	a4, 1
-	sllw	a2, a4, a2
-	blt	a3, a2, .LBB0_2
+	li	a3, 1
+	sext.w	a4, a0
+	sllw	a2, a3, a2
+	blt	a4, a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
 	ret

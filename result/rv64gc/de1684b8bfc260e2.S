@@ -18,8 +18,8 @@ func00000000000000a5:
 
 func0000000000000299:
 	slli	a2, a2, 32
-	sltu	a1, a0, a1
 	srli	a2, a2, 32
+	sltu	a1, a0, a1
 	sltu	a0, a0, a2
 	not	a1, a1
 	and	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000299:
 
 func0000000000000089:
 	slli	a2, a2, 32
-	sltu	a1, a0, a1
 	srli	a2, a2, 32
+	sltu	a1, a0, a1
 	sltu	a0, a0, a2
 	not	a1, a1
 	and	a0, a0, a1

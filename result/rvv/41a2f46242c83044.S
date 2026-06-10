@@ -1,8 +1,8 @@
 func00000000000001f4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
+	vmv1r.v	v0, v10
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
@@ -14,8 +14,8 @@ func00000000000001f4:
 func000000000000010a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
+	vmv1r.v	v0, v10
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
@@ -27,8 +27,8 @@ func000000000000010a:
 func000000000000008a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
+	vmv1r.v	v0, v10
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
@@ -40,12 +40,12 @@ func000000000000008a:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
+	vmv1r.v	v0, v10
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
-	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v14
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	li	a0, 2047
 	vmsgtu.vx	v0, v8, a0
@@ -54,8 +54,8 @@ func0000000000000008:
 func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
+	vmv1r.v	v0, v10
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14
@@ -67,8 +67,8 @@ func0000000000000004:
 func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	vmv.v.i	v12, 0
+	vmv1r.v	v0, v10
 	vmerge.vim	v14, v12, 1, v0
 	vmv1r.v	v0, v11
 	vadd.vv	v8, v8, v14

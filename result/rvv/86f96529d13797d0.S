@@ -11,8 +11,8 @@ func0000000000000018:
 	li	a0, 254
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v8, a0
-	li	a0, 255
 	vmsgtu.vi	v0, v10, 9
+	li	a0, 255
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 9, v0
 	ret

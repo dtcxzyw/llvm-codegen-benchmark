@@ -29,10 +29,10 @@ func000000000000008a:
 
 func00000000000000a1:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v14, v12
-	vmv.v.i	v12, 0
-	vnmsac.vv	v12, v10, v14
-	vmseq.vv	v0, v8, v12
+	vmv.v.i	v14, 0
+	vsext.vf2	v16, v12
+	vnmsac.vv	v14, v10, v16
+	vmseq.vv	v0, v8, v14
 	ret
 
 func000000000000000a:
@@ -52,10 +52,10 @@ func0000000000000004:
 
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v14, v12
-	vmv.v.i	v12, 0
-	vnmsac.vv	v12, v10, v14
-	vmseq.vv	v0, v8, v12
+	vmv.v.i	v14, 0
+	vsext.vf2	v16, v12
+	vnmsac.vv	v14, v10, v16
+	vmseq.vv	v0, v8, v14
 	ret
 
 func0000000000000086:
@@ -75,17 +75,17 @@ func0000000000000008:
 
 func0000000000000081:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v14, v12
-	vmv.v.i	v12, 0
-	vnmsac.vv	v12, v10, v14
-	vmseq.vv	v0, v8, v12
+	vmv.v.i	v14, 0
+	vsext.vf2	v16, v12
+	vnmsac.vv	v14, v10, v16
+	vmseq.vv	v0, v8, v14
 	ret
 
 func0000000000000088:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
-	lui	a0, 524288
 	vmadd.vv	v14, v10, v8
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v14, a0
 	ret

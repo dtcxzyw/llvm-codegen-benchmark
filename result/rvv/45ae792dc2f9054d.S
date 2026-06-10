@@ -10,12 +10,11 @@ func0000000000000000:
 	vsub.vv	v8, v8, v10
 	ret
 
+.LCPI1_0:
+	.quad	-4819355556693147648
 func0000000000000002:
-	lui	a0, 1040015
-	addi	a0, a0, 429
-	slli	a0, a0, 13
-	addi	a0, a0, 1981
-	slli	a0, a0, 24
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	li	a0, 47

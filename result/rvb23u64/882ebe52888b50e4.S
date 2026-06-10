@@ -13,8 +13,8 @@ func000000000000007b:
 	ret
 
 func0000000000000079:
-	addi	a0, a0, 61
 	lui	a1, 1
+	addi	a0, a0, 61
 	addi	a1, a1, -1955
 	mul	a0, a0, a1
 	addi	a0, a0, 1776

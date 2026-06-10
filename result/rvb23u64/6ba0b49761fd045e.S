@@ -1,6 +1,6 @@
 func0000000000000025:
-	sext.h	a2, a2
 	lui	a3, 6
+	sext.h	a2, a2
 	addi	a3, a3, -1593
 	mul	a2, a2, a3
 	srli	a3, a2, 63
@@ -12,8 +12,8 @@ func0000000000000025:
 	ret
 
 func0000000000000000:
-	sext.h	a2, a2
 	lui	a3, 1
+	sext.h	a2, a2
 	addi	a3, a3, 1147
 	mul	a2, a2, a3
 	srli	a3, a2, 63

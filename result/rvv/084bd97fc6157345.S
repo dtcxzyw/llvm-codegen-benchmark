@@ -1,8 +1,8 @@
 func000000000000002a:
 	li	a0, 63
-	li	a1, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v12, v8, a0
+	li	a1, 62
 	vsrl.vx	v12, v12, a1
 	vadd.vv	v12, v8, v12
 	vand.vi	v12, v12, -4
@@ -15,9 +15,9 @@ func000000000000002a:
 
 func0000000000000020:
 	li	a0, 63
-	li	a1, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v12, v8, a0
+	li	a1, 62
 	vsrl.vx	v12, v12, a1
 	vadd.vv	v12, v8, v12
 	vand.vi	v12, v12, -4

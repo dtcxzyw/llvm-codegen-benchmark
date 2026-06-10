@@ -46,9 +46,9 @@ func0000000000000004:
 	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	lui	a0, 253133
-	addi	a0, a0, -819
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
+	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -82,9 +82,9 @@ func000000000000000c:
 func000000000000000a:
 	lui	a0, 281862
 	fmv.w.x	fa5, a0
-	lui	a0, 284576
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
+	lui	a0, 284576
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

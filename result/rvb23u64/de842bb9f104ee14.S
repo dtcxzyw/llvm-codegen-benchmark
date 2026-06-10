@@ -72,8 +72,8 @@ func0000000000000c68:
 	li	a2, -3
 	slli	a2, a2, 49
 	xor	a1, a1, a2
-	li	a2, -2
 	snez	a1, a1
+	li	a2, -2
 	add	a0, a0, a1
 	zext.w	a2, a2
 	sltu	a0, a2, a0

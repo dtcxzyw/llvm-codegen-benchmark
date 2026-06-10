@@ -28,12 +28,11 @@ func00000000000000c0:
 	sh3add	a0, a2, a0
 	ret
 
+.LCPI4_0:
+	.quad	1553255926290448384
 func0000000000000040:
-	lui	a3, 88292
-	addi	a3, a3, 1545
-	slli	a3, a3, 12
-	addi	a3, a3, 317
-	slli	a3, a3, 20
+	lui	a3, %hi(.LCPI4_0)
+	ld	a3, %lo(.LCPI4_0)(a3)
 	sltu	a2, a2, a3
 	not	a2, a2
 	add	a0, a0, a1

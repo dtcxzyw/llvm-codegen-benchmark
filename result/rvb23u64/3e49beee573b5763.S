@@ -15,8 +15,8 @@ func0000000000000617:
 	ret
 
 func0000000000000200:
-	sext.w	a2, a2
 	li	a3, -13
+	sext.w	a2, a2
 	slli	a3, a3, 8
 	sltu	a2, a2, a3
 	add	a0, a0, a1

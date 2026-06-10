@@ -7,11 +7,11 @@ func0000000000000008:
 
 func0000000000000004:
 	slli	a0, a0, 12
+	lui	a2, 1
 	sub	a1, a1, a0
-	lui	a0, 1
-	addi	a0, a0, -1
-	add	a0, a0, a1
-	lui	a1, 1048575
+	addi	a2, a2, -1
+	add	a1, a1, a2
+	lui	a0, 1048575
 	and	a0, a0, a1
 	ret
 

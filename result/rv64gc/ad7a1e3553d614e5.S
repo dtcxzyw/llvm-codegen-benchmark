@@ -1,7 +1,7 @@
 func00000000000000e1:
 	addiw	a1, a1, -1
-	li	a2, 32
 	seqz	a1, a1
+	li	a2, 32
 	subw	a2, a2, a0
 	addi	a0, a1, -1
 	and	a0, a0, a2
@@ -9,16 +9,16 @@ func00000000000000e1:
 
 func0000000000000061:
 	addiw	a1, a1, 8
-	li	a2, 32
 	seqz	a1, a1
+	li	a2, 32
 	subw	a2, a2, a0
 	addi	a0, a1, -1
 	and	a0, a0, a2
 	ret
 
 func00000000000000a4:
-	addiw	a1, a1, 3
 	li	a2, 7
+	addiw	a1, a1, 3
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 1
 	ret
@@ -28,8 +28,8 @@ func00000000000000a4:
 
 func0000000000000064:
 	addiw	a1, a1, 1
-	li	a2, 32
 	sltiu	a1, a1, 2
+	li	a2, 32
 	subw	a2, a2, a0
 	addi	a0, a1, -1
 	and	a0, a0, a2

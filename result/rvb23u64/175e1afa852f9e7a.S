@@ -1,8 +1,8 @@
 func000000000000000d:
+	lui	a1, 524304
 	rev8	a0, a0
 	srli	a0, a0, 48
 	slli	a0, a0, 16
-	lui	a1, 524304
 	add	a0, a0, a1
 	ret
 

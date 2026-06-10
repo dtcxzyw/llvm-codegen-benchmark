@@ -1,14 +1,14 @@
 func000000000000018c:
-	zext.h	a1, a1
 	zext.h	a2, a2
+	zext.h	a1, a1
 	snez	a2, a2
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	zext.h	a1, a1
 	zext.h	a2, a2
+	zext.h	a1, a1
 	seqz	a2, a2
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
@@ -60,11 +60,11 @@ func000000000000008c:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
+	lui	a4, 2
 	addi	a3, a3, -5
+	addi	a4, a4, 12
 	sltu	a2, a2, a3
-	lui	a3, 2
-	addi	a3, a3, 12
-	xor	a1, a1, a3
+	xor	a1, a1, a4
 	snez	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1

@@ -14,14 +14,14 @@ func0000000000000084:
 	ret
 
 func0000000000000085:
-	sext.w	a2, a1
-	lui	a3, 1048572
-	addi	a4, a3, -64
-	addi	a3, a3, -63
+	lui	a2, 1048572
+	sext.w	a3, a1
+	addi	a4, a2, -64
 	add	a1, a1, a4
-	czero.nez	a3, a3, a2
-	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
+	addi	a2, a2, -63
+	czero.nez	a2, a2, a3
+	czero.eqz	a1, a1, a3
+	or	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

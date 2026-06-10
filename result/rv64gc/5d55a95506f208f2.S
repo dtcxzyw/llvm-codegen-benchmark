@@ -10,10 +10,10 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	slli	a1, a1, 24
 	li	a2, 1
-	srli	a1, a1, 24
+	slli	a1, a1, 24
 	slli	a2, a2, 39
+	srli	a1, a1, 24
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	and	a0, a0, a1

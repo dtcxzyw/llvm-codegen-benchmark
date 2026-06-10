@@ -1,27 +1,27 @@
 func0000000000000004:
 	fmv.w.x	fa5, zero
-	lui	a0, 61681
-	flt.s	a1, fa5, fa0
-	neg	a1, a1
-	addi	a0, a0, -241
+	flt.s	a0, fa5, fa0
+	lui	a1, 61681
+	neg	a0, a0
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 
 func0000000000000007:
 	fmv.w.x	fa5, zero
-	lui	a0, 61681
-	feq.s	a1, fa0, fa5
-	addi	a1, a1, -1
-	addi	a0, a0, -241
+	feq.s	a0, fa0, fa5
+	lui	a1, 61681
+	addi	a0, a0, -1
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 
 func0000000000000002:
 	fmv.w.x	fa5, zero
-	lui	a0, 61681
-	flt.s	a1, fa0, fa5
-	neg	a1, a1
-	addi	a0, a0, -241
+	flt.s	a0, fa0, fa5
+	lui	a1, 61681
+	neg	a0, a0
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 
@@ -34,19 +34,19 @@ func000000000000000b:
 
 func000000000000000a:
 	fmv.w.x	fa5, zero
-	lui	a0, 61681
-	fle.s	a1, fa0, fa5
-	neg	a1, a1
-	addi	a0, a0, -241
+	fle.s	a0, fa0, fa5
+	lui	a1, 61681
+	neg	a0, a0
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 
 func0000000000000008:
 	fmv.w.x	fa5, zero
-	lui	a0, 61681
-	feq.s	a1, fa0, fa5
-	neg	a1, a1
-	addi	a0, a0, -241
+	feq.s	a0, fa0, fa5
+	lui	a1, 61681
+	neg	a0, a0
+	addi	a1, a1, -241
 	and	a0, a0, a1
 	ret
 

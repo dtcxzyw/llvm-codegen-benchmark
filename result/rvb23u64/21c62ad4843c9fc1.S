@@ -10,10 +10,10 @@ func0000000000000009:
 
 func000000000000000f:
 	lui	a3, 983040
-	slliw	a0, a0, 4
 	addi	a3, a3, 14
 	and	a2, a2, a3
 	addiw	a3, a3, 1
+	slliw	a0, a0, 4
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -31,9 +31,9 @@ func000000000000000d:
 
 func0000000000000006:
 	lui	a3, 260080
+	lui	a4, 2032
 	andn	a2, a2, a3
-	lui	a3, 2032
-	andn	a1, a1, a3
+	andn	a1, a1, a4
 	or	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1

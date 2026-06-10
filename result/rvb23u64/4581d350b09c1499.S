@@ -1,6 +1,6 @@
 func000000000000002c:
-	srli	a1, a1, 12
 	slli	a0, a0, 48
+	srli	a1, a1, 12
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -13,25 +13,25 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	srli	a1, a1, 5
 	slli	a0, a0, 48
+	srli	a1, a1, 5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
 	zext.h	a0, a0
-	andi	a1, a1, 1
 	addi	a0, a0, -1
+	andi	a1, a1, 1
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:
-	zext.h	a0, a0
 	lui	a2, 16
 	addi	a2, a2, -128
 	and	a1, a1, a2
+	zext.h	a0, a0
 	addi	a1, a1, -128
 	seqz	a1, a1
 	sltiu	a0, a0, 2

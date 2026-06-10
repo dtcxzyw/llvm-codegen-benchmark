@@ -16,9 +16,9 @@ func000000000000003e:
 
 func000000000000000c:
 	andi	a2, a2, 1
+	lui	a3, 65
 	addw	a1, a1, a2
-	lui	a2, 65
-	addi	a2, a2, 1616
+	addi	a2, a3, 1616
 	slli	a1, a1, 3
 	add	a0, a0, a2
 	add	a0, a0, a1

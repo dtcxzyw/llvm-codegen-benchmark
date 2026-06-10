@@ -1,6 +1,6 @@
 func0000000000000201:
-	andi	a3, a0, 1
 	li	a4, 7
+	andi	a3, a0, 1
 	li	a0, 4
 	bgeu	a1, a4, .LBB0_3
 	bnez	a3, .LBB0_4
@@ -20,8 +20,8 @@ func0000000000000201:
 	ret
 
 func0000000000000221:
-	andi	a3, a0, 1
 	li	a4, 10
+	andi	a3, a0, 1
 	li	a0, 5
 	bgeu	a1, a4, .LBB1_3
 	bnez	a3, .LBB1_4

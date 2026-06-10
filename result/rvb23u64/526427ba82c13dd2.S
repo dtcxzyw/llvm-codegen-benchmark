@@ -1,8 +1,8 @@
 func0000000000000108:
-	bseti	a3, zero, 32
-	sub	a2, a2, a3
 	li	a3, -1
+	bseti	a4, zero, 32
 	slli	a3, a3, 32
+	sub	a2, a2, a4
 	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	sltu	a0, a0, a1
@@ -49,20 +49,20 @@ func0000000000000310:
 
 func0000000000000308:
 	bseti	a3, zero, 51
-	xor	a0, a0, a1
-	li	a1, -1
 	sub	a2, a2, a3
-	slli	a1, a1, 52
-	sltu	a1, a2, a1
+	li	a3, -1
+	slli	a3, a3, 52
+	xor	a0, a0, a1
+	sltu	a1, a2, a3
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000042:
 	li	a3, 5
-	xor	a0, a0, a1
 	slli	a3, a3, 32
 	xor	a2, a2, a3
+	xor	a0, a0, a1
 	seqz	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

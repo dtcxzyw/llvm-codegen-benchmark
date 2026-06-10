@@ -6,8 +6,8 @@ func000000000000003e:
 	ret
 
 func0000000000000015:
-	zext.h	a1, a1
 	lui	a2, 1048573
+	zext.h	a1, a1
 	addi	a2, a2, -1
 	mul	a1, a1, a2
 	lui	a2, 48
@@ -24,16 +24,16 @@ func000000000000003f:
 	ret
 
 func0000000000000034:
-	zext.h	a1, a1
 	li	a2, 1000
+	zext.h	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	ret
 
 func000000000000003c:
-	zext.h	a1, a1
 	li	a2, 1000
+	zext.h	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 80

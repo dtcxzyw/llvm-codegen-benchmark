@@ -19,8 +19,8 @@ func0000000000000478:
 .LBB1_2:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa1, fa5
-	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
@@ -30,9 +30,9 @@ func0000000000000487:
 	fmv.d	fa1, fa2
 .LBB2_2:
 	fmv.d.x	fa5, zero
-	feq.d	a0, fa1, fa5
-	feq.d	a1, fa0, fa5
-	not	a1, a1
+	feq.d	a0, fa0, fa5
+	feq.d	a1, fa1, fa5
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -111,8 +111,8 @@ func0000000000000245:
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	fle.d	a0, fa1, fa5
-	not	a0, a0
 	flt.d	a1, fa5, fa0
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -126,9 +126,9 @@ func00000000000004ca:
 	slli	a0, a0, 53
 	slli	a1, a1, 51
 	fmv.d.x	fa5, a0
+	fmv.d.x	fa4, a1
 	fle.d	a0, fa5, fa1
-	fmv.d.x	fa5, a1
-	fle.d	a1, fa0, fa5
+	fle.d	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 

@@ -26,11 +26,11 @@ func0000000000000a8c:
 	ret
 
 func0000000000004048:
+	lui	a0, 4
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 4
 	vadd.vv	v9, v9, v12
-	addi	a0, a0, -1
 	vmsltu.vv	v8, v9, v8
 	vmseq.vx	v9, v9, a0
 	vmor.mm	v0, v8, v9

@@ -1,7 +1,7 @@
 func0000000000000024:
-	li	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 1
 	bseti	a0, a0, 62
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -15,9 +15,9 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	li	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 1
 	bseti	a0, a0, 62
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vx	v0, v8, a0

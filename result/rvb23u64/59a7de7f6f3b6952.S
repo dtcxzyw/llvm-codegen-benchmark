@@ -8,11 +8,11 @@ func000000000000001f:
 	ret
 
 func000000000000000f:
+	lui	a2, 512
 	add.uw	a0, a1, a0
-	lui	a1, 512
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
 	lui	a1, 16383
+	add	a0, a0, a2
 	slli	a1, a1, 8
 	and	a0, a0, a1
 	ret

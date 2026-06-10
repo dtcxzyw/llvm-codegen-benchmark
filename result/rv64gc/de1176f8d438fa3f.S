@@ -35,9 +35,9 @@ func0000000000000064:
 
 func0000000000000041:
 	addi	a1, a1, -32
+	lui	a2, 313396
 	xor	a0, a0, a1
-	lui	a1, 313396
-	addi	a1, a1, -363
+	addi	a1, a2, -363
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

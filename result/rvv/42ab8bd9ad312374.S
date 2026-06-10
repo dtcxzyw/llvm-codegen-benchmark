@@ -1,23 +1,22 @@
 func0000000000000020:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	li	a0, -1000
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v10, v10, v12
+	li	a0, -1000
 	zext.w	a0, a0
 	vmadd.vx	v8, a0, v10
 	ret
 
+.LCPI1_0:
+	.quad	8446744073709551616
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	lui	a0, 960284
 	vmerge.vim	v12, v12, 1, v0
-	addi	a0, a0, -1545
+	lui	a0, %hi(.LCPI1_0)
 	vadd.vv	v10, v10, v12
-	slli.uw	a0, a0, 12
-	addi	a0, a0, -317
-	slli	a0, a0, 19
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vmadd.vx	v8, a0, v10
 	ret
 

@@ -21,9 +21,10 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	sext.w	a2, a0
+	mv	a2, a0
 	li	a0, 1
 	slli	a3, a0, 11
+	sext.w	a2, a2
 	and	a1, a1, a3
 	seqz	a1, a1
 	sltiu	a2, a2, 2

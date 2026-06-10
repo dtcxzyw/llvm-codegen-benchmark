@@ -48,8 +48,8 @@ func0000000000000024:
 	ret
 
 func0000000000000188:
-	snez	a1, a1
 	srli	a0, a0, 32
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 25

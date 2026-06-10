@@ -7,10 +7,10 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v8, v8, 29
 	lui	a0, 131072
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsll.vi	v8, v8, 29
 	vandn.vv	v8, v10, v8
 	ret
 

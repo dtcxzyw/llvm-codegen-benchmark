@@ -1,9 +1,9 @@
 func0000000000000015:
 	add	a0, a0, a1
-	lui	a1, 335544
 	addiw	a0, a0, -1
-	negw	a2, a0
-	max	a0, a0, a2
+	negw	a1, a0
+	max	a0, a0, a1
+	lui	a1, 335544
 	zext.w	a2, a0
 	addi	a1, a1, 1311
 	mul	a1, a1, a2
@@ -16,10 +16,10 @@ func0000000000000015:
 
 func0000000000000005:
 	add	a0, a0, a1
-	lui	a1, 335544
 	addiw	a0, a0, -1
-	negw	a2, a0
-	max	a0, a0, a2
+	negw	a1, a0
+	max	a0, a0, a1
+	lui	a1, 335544
 	zext.w	a2, a0
 	addi	a1, a1, 1311
 	mul	a1, a1, a2

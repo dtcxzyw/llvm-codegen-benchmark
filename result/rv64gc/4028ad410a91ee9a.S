@@ -31,8 +31,8 @@ func0000000000000021:
 
 func0000000000000028:
 	sub	a2, a2, a1
-	sltiu	a0, a0, 33
 	addi	a2, a2, -32
+	sltiu	a0, a0, 33
 	seqz	a1, a2
 	not	a0, a0
 	and	a0, a0, a1

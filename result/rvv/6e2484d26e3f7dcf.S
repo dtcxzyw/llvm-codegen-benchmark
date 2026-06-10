@@ -9,9 +9,9 @@ func0000000000000164:
 	ret
 
 func0000000000000148:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
-	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -20,9 +20,9 @@ func0000000000000148:
 	ret
 
 func0000000000000168:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
-	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -31,9 +31,9 @@ func0000000000000168:
 	ret
 
 func0000000000000144:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
-	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma

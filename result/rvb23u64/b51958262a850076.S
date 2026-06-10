@@ -13,11 +13,11 @@ func0000000000000013:
 
 func000000000000001b:
 	fli.d	fa5, inf
-	li	a1, 8
-	flt.d	a2, fa0, fa5
-	czero.nez	a1, a1, a2
+	flt.d	a1, fa0, fa5
 	lui	a2, 65
+	li	a3, 8
 	addi	a2, a2, -1712
+	czero.nez	a1, a3, a1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func0000000000000000:
-	fround.s	fa5, fa1, rtz
-	fli.s	fa4, 0.5
-	fadd.s	fa5, fa5, fa4
+	fli.s	fa5, 0.5
+	fround.s	fa4, fa1, rtz
+	fadd.s	fa5, fa4, fa5
 	fsub.s	fa0, fa5, fa0
 	ret
 

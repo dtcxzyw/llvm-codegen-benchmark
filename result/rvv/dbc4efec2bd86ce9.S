@@ -7,9 +7,9 @@ func0000000000000021:
 	ret
 
 func0000000000000184:
+	li	a0, -16
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vi	v9, v9, 15
-	li	a0, -16
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v8, v8, v9
 	vmand.mm	v0, v8, v0
@@ -49,9 +49,9 @@ func000000000000002c:
 	ret
 
 func0000000000000188:
+	li	a0, -97
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vi	v9, v9, 15
-	li	a0, -97
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v8, v8, v9
 	vmand.mm	v0, v8, v0

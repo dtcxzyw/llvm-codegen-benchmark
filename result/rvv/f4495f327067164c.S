@@ -23,11 +23,11 @@ func00000000000004c1:
 	ret
 
 func00000000000000c8:
+	lui	a0, 524288
+	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 524288
 	vmslt.vv	v12, v10, v8
-	addiw	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

@@ -19,9 +19,9 @@ func0000000000000042:
 	ret
 
 func000000000000020a:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	addiw	a2, a2, 1
+	sext.w	a0, a0
+	sext.w	a1, a1
 	sltu	a2, a2, a0
 	xori	a2, a2, 1
 	sltu	a0, a1, a0
@@ -29,9 +29,9 @@ func000000000000020a:
 	ret
 
 func0000000000000210:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	addiw	a2, a2, 25
+	sext.w	a0, a0
 	minu	a1, a2, a1
 	sltu	a0, a1, a0
 	ret

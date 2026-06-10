@@ -3,10 +3,10 @@ func00000000000000b4:
 	ret
 
 func0000000000000064:
+	li	a2, 4
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -6
-	li	a2, 4
 	bltu	a1, a2, .LBB1_2
 	li	a0, 700
 	ret

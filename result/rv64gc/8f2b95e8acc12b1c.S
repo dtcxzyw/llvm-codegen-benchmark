@@ -24,8 +24,8 @@ func000000000000003e:
 	ret
 
 func0000000000000015:
-	slli	a0, a0, 14
 	lui	a1, 8
+	slli	a0, a0, 14
 	add	a0, a0, a1
 	ret
 
@@ -45,8 +45,8 @@ func0000000000000035:
 	ret
 
 func0000000000000013:
-	slli	a0, a0, 17
 	lui	a1, 32
+	slli	a0, a0, 17
 	add	a0, a0, a1
 	ret
 

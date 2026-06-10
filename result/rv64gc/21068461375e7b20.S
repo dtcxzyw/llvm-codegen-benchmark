@@ -1,7 +1,7 @@
 func000000000000001e:
-	addi	a1, a1, 23
 	li	a2, 1
 	slli	a2, a2, 36
+	addi	a1, a1, 23
 	addi	a2, a2, -16
 	and	a1, a1, a2
 	addi	a1, a1, 24

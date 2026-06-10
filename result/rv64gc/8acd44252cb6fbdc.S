@@ -1,9 +1,9 @@
 func000000000000003d:
 	slliw	a1, a1, 15
+	li	a2, 31
 	or	a0, a0, a1
-	li	a1, 31
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 
 func0000000000000009:
@@ -21,10 +21,10 @@ func0000000000000030:
 
 func000000000000003e:
 	slli	a1, a1, 6
+	li	a2, -9
 	or	a0, a0, a1
-	li	a1, -9
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 
 func0000000000000039:
@@ -35,9 +35,9 @@ func0000000000000039:
 
 func000000000000003f:
 	slliw	a1, a1, 8
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 11
-	or	a0, a0, a1
+	slli	a2, a2, 11
+	or	a0, a0, a2
 	ret
 

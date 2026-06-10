@@ -7,8 +7,8 @@ func0000000000000000:
 	ret
 
 func00000000000000c8:
-	add	a2, a2, a1
 	li	a3, -1
+	add	a2, a2, a1
 	srli	a3, a3, 3
 	add	a2, a2, a3
 	neg	a1, a1

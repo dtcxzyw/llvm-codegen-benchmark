@@ -6,9 +6,9 @@ func000000000000018c:
 	ret
 
 func000000000000010c:
+	lui	a3, 2
 	sub	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, 1808
+	addi	a2, a3, 1808
 	sltu	a1, a2, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -22,9 +22,9 @@ func0000000000000084:
 	ret
 
 func000000000000014a:
+	lui	a3, 1
 	sub	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, 903
+	addi	a2, a3, 903
 	slt	a1, a2, a1
 	slt	a0, a2, a0
 	and	a0, a0, a1

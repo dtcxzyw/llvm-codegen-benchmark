@@ -17,12 +17,12 @@ func0000000000000002:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	li	a0, 723
-	slli	a0, a0, 52
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
+	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
-	li	a0, -1022
 	vmflt.vf	v0, v8, fa5
+	li	a0, -1022
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, -1322

@@ -1,9 +1,9 @@
 func0000000000000021:
 	sub	a2, a2, a1
-	addi	a1, a0, 1
-	xor	a0, a0, a2
+	xor	a2, a2, a0
+	addi	a0, a0, 1
+	seqz	a1, a2
 	seqz	a0, a0
-	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 

@@ -1,9 +1,9 @@
 func0000000000000001:
 	li	a0, 39
-	lui	a1, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addi	a0, a1, -819
+	lui	a0, 838861
+	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0
@@ -12,9 +12,9 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 2
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -24,9 +24,9 @@ func0000000000000003:
 	ret
 
 func000000000000000b:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -12
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -37,10 +37,10 @@ func000000000000000b:
 
 func000000000000001b:
 	li	a0, 30
-	lui	a1, 559241
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addi	a0, a1, -1911
+	lui	a0, 559241
+	addi	a0, a0, -1911
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0
@@ -49,9 +49,9 @@ func000000000000001b:
 	ret
 
 func0000000000000019:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 12
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1

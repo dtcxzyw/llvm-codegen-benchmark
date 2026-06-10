@@ -58,11 +58,11 @@ func0000000000000068:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 62848
+	lui	a4, 62720
 	addi	a3, a3, 13
+	addi	a4, a4, 1
 	xor	a2, a2, a3
-	lui	a3, 62720
-	addi	a3, a3, 1
-	sltu	a1, a1, a3
+	sltu	a1, a1, a4
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

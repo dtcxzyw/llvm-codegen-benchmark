@@ -37,8 +37,8 @@ func00000000000000d0:
 func00000000000000ca:
 	li	a3, 4
 	sub	a3, a3, a2
-	li	a2, 16
 	sh3add	a1, a3, a1
+	li	a2, 16
 	sub	a2, a2, a0
 	sh3add	a0, a2, a1
 	addi	a0, a0, 8

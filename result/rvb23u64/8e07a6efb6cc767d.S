@@ -9,9 +9,9 @@ func000000000000007f:
 	lui	a2, 524288
 	addiw	a2, a2, -4
 	and	a1, a1, a2
-	lui	a2, 88
 	sh2add	a0, a1, a0
-	addi	a1, a2, 512
+	lui	a1, 88
+	addi	a1, a1, 512
 	add	a0, a0, a1
 	ret
 
@@ -19,9 +19,9 @@ func0000000000000073:
 	lui	a2, 524288
 	addiw	a2, a2, -4
 	and	a1, a1, a2
-	lui	a2, 48
 	sh2add	a0, a1, a0
-	addi	a1, a2, 512
+	lui	a1, 48
+	addi	a1, a1, 512
 	add	a0, a0, a1
 	ret
 

@@ -59,15 +59,15 @@ func0000000000000081:
 	ret
 
 func0000000000000074:
-	srli	a1, a1, 12
 	lui	a2, 512
+	srli	a1, a1, 12
 	add	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000079:
-	srli	a1, a1, 12
 	lui	a2, 512
+	srli	a1, a1, 12
 	add	a0, a0, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

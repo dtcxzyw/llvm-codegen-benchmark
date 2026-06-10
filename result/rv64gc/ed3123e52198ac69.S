@@ -1,32 +1,32 @@
 func000000000000000c:
-	sext.w	a0, a0
 	andi	a2, a2, 1
 	li	a3, 2
 	slli	a1, a1, 63
 	sub	a3, a3, a2
 	srai	a1, a1, 63
+	sext.w	a0, a0
 	and	a1, a1, a3
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 1
 	andi	a3, a2, 1
-	li	a2, 128
+	andi	a2, a1, 1
+	li	a1, 128
 	beqz	a3, .LBB1_3
 	sext.w	a0, a0
-	beqz	a1, .LBB1_4
+	beqz	a2, .LBB1_4
 .LBB1_2:
-	sltu	a0, a2, a0
+	sltu	a0, a1, a0
 	ret
 .LBB1_3:
-	li	a2, 64
+	li	a1, 64
 	sext.w	a0, a0
-	bnez	a1, .LBB1_2
+	bnez	a2, .LBB1_2
 .LBB1_4:
-	li	a2, 128
-	sltu	a0, a2, a0
+	li	a1, 128
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000001:

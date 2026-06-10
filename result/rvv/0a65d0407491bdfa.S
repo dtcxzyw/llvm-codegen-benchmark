@@ -126,8 +126,8 @@ func000000000000030c:
 func0000000000000310:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 3
-	lui	a0, 64
 	vmsne.vi	v9, v10, 0
+	lui	a0, 64
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

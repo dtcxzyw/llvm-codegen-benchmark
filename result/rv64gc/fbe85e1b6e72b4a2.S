@@ -1,6 +1,6 @@
 func0000000000000005:
-	sext.w	a1, a1
 	lui	a2, 16
+	sext.w	a1, a1
 	blt	a1, a2, .LBB0_2
 	lui	a1, 16
 .LBB0_2:
@@ -9,8 +9,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	sext.w	a1, a1
 	li	a2, 112
+	sext.w	a1, a1
 	blt	a1, a2, .LBB1_2
 	li	a1, 112
 .LBB1_2:
@@ -19,8 +19,8 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a1
 	li	a2, 8
+	sext.w	a1, a1
 	blt	a1, a2, .LBB2_2
 	li	a1, 8
 .LBB2_2:

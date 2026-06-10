@@ -9,9 +9,9 @@ func0000000000000488:
 
 func000000000000008a:
 	addi	a1, a1, -1
-	sltu	a1, a0, a1
-	srli	a0, a0, 63
-	not	a0, a0
+	srli	a2, a0, 63
+	sltu	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -31,9 +31,9 @@ func000000000000008c:
 
 func00000000000004ca:
 	addi	a1, a1, -3
-	slt	a1, a0, a1
-	slti	a0, a0, 3
-	not	a0, a0
+	slti	a2, a0, 3
+	slt	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

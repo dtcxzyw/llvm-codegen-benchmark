@@ -44,12 +44,12 @@ func00000000000000c2:
 	ret
 
 func00000000000000ff:
+	lui	a3, 2
+	addi	a3, a3, -1658
+	mul	a2, a2, a3
 	slli	a1, a1, 1
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -1658
-	mul	a1, a2, a1
-	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 2
 	ret
 

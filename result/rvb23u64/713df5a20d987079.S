@@ -1,17 +1,17 @@
 func0000000000000018:
-	sext.w	a0, a0
 	addw	a1, a1, a2
 	li	a2, 64
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
+	lui	a3, 272
 	addw	a1, a1, a2
-	lui	a2, 272
-	addi	a2, a2, -1
-	minu	a1, a1, a2
+	addi	a3, a3, -1
+	sext.w	a0, a0
+	minu	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 

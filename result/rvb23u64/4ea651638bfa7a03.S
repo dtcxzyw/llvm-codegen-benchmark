@@ -14,9 +14,9 @@ func0000000000000100:
 	ret
 
 func00000000000001fb:
-	slliw	a2, a2, 1
 	sh3add	a0, a0, a1
-	sh3add	a0, a2, a0
+	slliw	a1, a2, 1
+	sh3add	a0, a1, a0
 	addi	a0, a0, 16
 	ret
 

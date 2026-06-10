@@ -9,8 +9,8 @@ func000000000000002c:
 
 func0000000000000146:
 	sext.w	a3, a1
-	srli	a2, a2, 63
 	sgtz	a3, a3
+	srli	a2, a2, 63
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

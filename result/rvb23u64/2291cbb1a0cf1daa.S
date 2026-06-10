@@ -17,8 +17,8 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	bexti	a2, a2, 12
 	lui	a3, 524288
+	bexti	a2, a2, 12
 	addiw	a3, a3, -1024
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a1

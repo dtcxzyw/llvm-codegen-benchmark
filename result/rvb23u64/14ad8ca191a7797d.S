@@ -7,8 +7,8 @@ func0000000000000161:
 	ret
 
 func0000000000000005:
-	add.uw	a0, a2, a0
 	zext.b	a1, a1
+	add.uw	a0, a2, a0
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

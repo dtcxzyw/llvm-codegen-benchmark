@@ -20,17 +20,17 @@ func0000000000000070:
 	ret
 
 func000000000000007f:
-	sext.w	a2, a2
 	sh3add	a0, a1, a0
+	sext.w	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, 8
 	ret
 
 func000000000000007e:
 	sext.w	a2, a2
+	sh1add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a1, a2, a2
-	sh2add	a0, a1, a0
+	sh2add	a0, a2, a0
 	addi	a0, a0, -12
 	ret
 
@@ -61,15 +61,15 @@ func0000000000000000:
 	ret
 
 func000000000000006e:
-	sext.w	a2, a2
 	sh2add	a0, a1, a0
+	sext.w	a2, a2
 	sh2add	a0, a2, a0
 	addi	a0, a0, -4
 	ret
 
 func0000000000000060:
-	sext.w	a2, a2
 	sh2add	a0, a1, a0
+	sext.w	a2, a2
 	sh2add	a0, a2, a0
 	addi	a0, a0, -4
 	ret
@@ -106,8 +106,8 @@ func000000000000000e:
 	ret
 
 func000000000000007c:
-	sext.w	a2, a2
 	sh2add	a0, a1, a0
+	sext.w	a2, a2
 	sh2add	a0, a2, a0
 	addi	a0, a0, 4
 	ret
@@ -122,9 +122,9 @@ func000000000000006c:
 	ret
 
 func000000000000002f:
+	slli.uw	a2, a2, 6
 	add	a0, a0, a1
-	slli.uw	a1, a2, 6
-	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
 
@@ -148,15 +148,15 @@ func000000000000000f:
 	ret
 
 func000000000000004f:
-	sext.w	a2, a2
 	sh3add	a0, a1, a0
+	sext.w	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, 4
 	ret
 
 func0000000000000063:
-	sext.w	a2, a2
 	sh1add	a0, a1, a0
+	sext.w	a2, a2
 	sh1add	a0, a2, a0
 	addi	a0, a0, 2
 	ret

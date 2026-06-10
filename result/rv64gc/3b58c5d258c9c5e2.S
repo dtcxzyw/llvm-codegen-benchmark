@@ -4,16 +4,16 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	sraiw	a0, a0, 24
 	lui	a1, 1
+	sraiw	a0, a0, 24
 	addi	a1, a1, 1232
 	or	a0, a0, a1
 	ret
 
 func0000000000000000:
+	lui	a1, 524288
 	sext.w	a0, a0
 	srli	a0, a0, 31
-	lui	a1, 524288
 	or	a0, a0, a1
 	ret
 

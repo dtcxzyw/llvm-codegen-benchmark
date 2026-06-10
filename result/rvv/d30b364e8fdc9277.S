@@ -31,9 +31,9 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
+	li	a0, 63
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsrl.vi	v9, v9, 1
-	li	a0, 63
 	vand.vx	v9, v9, a0
 	vand.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v9

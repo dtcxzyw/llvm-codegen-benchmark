@@ -4,9 +4,9 @@ func0000000000000002:
 	bnez	a0, .LBB0_2
 	fmv.s	fa5, fa0
 .LBB0_2:
-	fcvt.d.s	fa5, fa5
 	lui	a0, 16473
 	slli	a0, a0, 36
+	fcvt.d.s	fa5, fa5
 	fmv.d.x	fa4, a0
 	fmul.d	fa0, fa5, fa4
 	ret
@@ -20,8 +20,8 @@ func0000000000000004:
 	fmv.s	fa5, fa0
 .LBB1_2:
 	lui	a0, %hi(.LCPI1_0)
-	fld	fa4, %lo(.LCPI1_0)(a0)
 	fcvt.d.s	fa5, fa5
+	fld	fa4, %lo(.LCPI1_0)(a0)
 	fmul.d	fa0, fa5, fa4
 	ret
 

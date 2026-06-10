@@ -38,31 +38,31 @@ func0000000000000008:
 	ret
 
 func0000000000000014:
-	li	a0, 496
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
 	li	a0, 23
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
+	li	a0, 496
+	vand.vx	v8, v10, a0
 	li	a0, 32
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v10, v10, -16
 	li	a0, 23
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
+	vand.vi	v8, v10, -16
 	li	a0, 32
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000006:
-	li	a0, -127
-	li	a1, 64
-	srli	a0, a0, 1
+	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmslt.vx	v0, v8, a1
-	vand.vx	v8, v10, a0
-	vmerge.vxm	v8, v8, a1, v0
+	vmslt.vx	v0, v8, a0
+	li	a1, -127
+	srli	a1, a1, 1
+	vand.vx	v8, v10, a1
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

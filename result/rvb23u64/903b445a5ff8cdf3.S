@@ -28,9 +28,9 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
+	lui	a1, 788992
 	fcvt.s.w	fa5, a0
-	lui	a0, 788992
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fadd.s	fa5, fa5, fa4
 	fle.s	a0, fa5, fa0
 	xori	a0, a0, 1

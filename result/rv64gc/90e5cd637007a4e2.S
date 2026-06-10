@@ -22,9 +22,9 @@ func000000000000036c:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	lui	a2, 10
 	xori	a1, a1, 1
 	slli	a1, a1, 2
+	lui	a2, 10
 	add	a0, a0, a1
 	addi	a1, a2, -960
 	xor	a0, a0, a1
@@ -35,9 +35,9 @@ func0000000000000371:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	lui	a2, 10
 	xori	a1, a1, 1
 	slli	a1, a1, 2
+	lui	a2, 10
 	add	a0, a0, a1
 	addi	a1, a2, -960
 	xor	a0, a0, a1

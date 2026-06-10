@@ -24,12 +24,12 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
+	lui	a3, 274878
+	addi	a3, a3, -381
+	slli	a3, a3, 13
 	slt	a1, a1, a2
-	lui	a2, 274878
+	addi	a2, a3, -1290
 	czero.nez	a0, a0, a1
-	addi	a2, a2, -381
-	slli	a2, a2, 13
-	addi	a2, a2, -1290
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -46,11 +46,11 @@ func000000000000000a:
 	ret
 
 func0000000000000014:
+	lui	a3, 524288
 	sltu	a1, a1, a2
-	lui	a2, 524288
+	addiw	a3, a3, -1
 	czero.nez	a0, a0, a1
-	addiw	a2, a2, -1
-	czero.eqz	a1, a2, a1
+	czero.eqz	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

@@ -1,8 +1,8 @@
 func0000000000000003:
 	lui	a3, 2048
+	lui	a4, 1792
 	and	a2, a2, a3
-	lui	a3, 1792
-	andn	a1, a1, a3
+	andn	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 20
@@ -10,9 +10,9 @@ func0000000000000003:
 
 func0000000000000007:
 	lui	a3, 4
+	lui	a4, 1047560
 	and	a2, a2, a3
-	lui	a3, 1047560
-	addi	a3, a3, -512
+	addi	a3, a4, -512
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

@@ -7,17 +7,17 @@ func000000000000007a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vf	v10, v8, fa5
 	fmv.d.x	fa5, a0
-	vmnot.m	v10, v10
 	vmfge.vf	v11, v8, fa5
-	vmorn.mm	v0, v10, v11
+	vmnot.m	v8, v10
+	vmorn.mm	v0, v8, v11
 	ret
 
 func0000000000000084:
-	fli.d	fa5, 2.0
 	lui	a0, 8225
+	fli.d	fa5, 2.0
+	slli	a0, a0, 37
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vf	v10, v8, fa5
-	slli	a0, a0, 37
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v11, v8, fa5
 	vmor.mm	v0, v10, v11

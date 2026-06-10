@@ -9,9 +9,9 @@ func0000000000000094:
 	ret
 
 func0000000000000024:
+	li	a0, 17
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	li	a0, 17
 	vmseq.vv	v14, v10, v12
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v14, v10

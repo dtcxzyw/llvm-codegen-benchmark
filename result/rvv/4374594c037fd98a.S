@@ -27,8 +27,8 @@ func0000000000000025:
 	addi	a0, a0, 965
 	vmulhu.vx	v8, v10, a0
 	lui	a0, 1048575
-	addi	a0, a0, 496
 	vsrl.vi	v10, v8, 11
+	addi	a0, a0, 496
 	vmv.v.x	v11, a0
 	vwmulsu.vv	v8, v11, v10
 	ret
@@ -39,8 +39,8 @@ func0000000000000017:
 	lui	a0, 596523
 	addi	a0, a0, 965
 	vmulhu.vx	v8, v10, a0
-	lui	a0, 1048575
 	vsrl.vi	v10, v8, 11
+	lui	a0, 1048575
 	addi	a0, a0, 496
 	vwmulu.vx	v8, v10, a0
 	ret
@@ -51,8 +51,8 @@ func0000000000000005:
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vmulhu.vx	v8, v10, a0
-	li	a0, -1000
 	vsrl.vi	v10, v8, 6
+	li	a0, -1000
 	vmv.v.x	v11, a0
 	vwmulsu.vv	v8, v11, v10
 	ret
@@ -63,8 +63,8 @@ func0000000000000007:
 	lui	a0, 858993
 	addi	a0, a0, 1881
 	vmulhu.vx	v8, v10, a0
-	lui	a0, 41
 	vsrl.vi	v10, v8, 13
+	lui	a0, 41
 	addi	a0, a0, -163
 	vwmulu.vx	v8, v10, a0
 	ret

@@ -20,9 +20,9 @@ func000000000000010c:
 
 func0000000000000714:
 	sub	a1, a1, a2
-	srli	a0, a0, 3
 	srli	a1, a1, 3
 	sltiu	a1, a1, 375
+	srli	a0, a0, 3
 	xori	a1, a1, 1
 	sltiu	a0, a0, 375
 	and	a0, a0, a1
@@ -97,10 +97,10 @@ func0000000000000104:
 	ret
 
 func00000000000000c1:
+	lui	a3, 1
 	sub	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -15
-	slt	a1, a1, a2
+	addi	a3, a3, -15
+	slt	a1, a1, a3
 	czero.nez	a0, a1, a0
 	ret
 
@@ -126,9 +126,9 @@ func000000000000058a:
 	ret
 
 func0000000000000306:
+	lui	a3, 1
 	sub	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -1096
+	addi	a2, a3, -1096
 	sltu	a1, a2, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1

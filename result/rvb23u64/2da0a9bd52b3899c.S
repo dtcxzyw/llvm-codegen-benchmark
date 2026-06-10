@@ -53,10 +53,10 @@ func0000000000000048:
 func000000000000000c:
 	sext.w	a2, a0
 	sext.w	a3, a1
-	subw	a1, a1, a0
 	xor	a2, a2, a3
-	snez	a0, a2
-	addi	a0, a0, -1
+	snez	a2, a2
+	subw	a1, a1, a0
+	addi	a0, a2, -1
 	or	a0, a0, a1
 	ret
 

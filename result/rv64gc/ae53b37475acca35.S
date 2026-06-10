@@ -14,10 +14,10 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	zext.b	a2, a0
-	li	a3, 4
+	li	a2, 4
+	zext.b	a3, a0
 	mv	a0, a1
-	bltu	a2, a3, .LBB2_2
+	bltu	a3, a2, .LBB2_2
 	li	a0, 44
 .LBB2_2:
 	ret

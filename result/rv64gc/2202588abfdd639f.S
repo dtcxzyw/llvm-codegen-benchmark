@@ -1,6 +1,6 @@
 func0000000000000090:
-	addiw	a1, a1, -48
 	li	a2, 10
+	addiw	a1, a1, -48
 	bltu	a1, a2, .LBB0_2
 	li	a1, 201
 	addw	a0, a0, a1
@@ -11,8 +11,8 @@ func0000000000000090:
 	ret
 
 func0000000000000011:
-	addiw	a1, a1, 2
 	li	a2, 1530
+	addiw	a1, a1, 2
 	bltu	a1, a2, .LBB1_2
 	li	a1, -9
 	addw	a0, a0, a1
@@ -44,8 +44,8 @@ func0000000000000093:
 	ret
 
 func0000000000000185:
-	sext.w	a1, a1
 	li	a2, 7
+	sext.w	a1, a1
 	beq	a1, a2, .LBB5_2
 	li	a1, 1
 	addw	a0, a0, a1

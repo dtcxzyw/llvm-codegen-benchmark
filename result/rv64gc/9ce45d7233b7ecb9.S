@@ -10,8 +10,8 @@ func0000000000000042:
 	ret
 
 func0000000000000050:
-	sext.w	a1, a1
 	li	a2, 27
+	sext.w	a1, a1
 	slli	a2, a2, 11
 	xor	a1, a1, a2
 	srliw	a2, a0, 16
@@ -25,12 +25,12 @@ func0000000000000050:
 	ret
 
 func0000000000000110:
-	sext.w	a2, a0
+	lui	a2, 272
+	sext.w	a3, a0
 	sext.w	a1, a1
-	lui	a3, 272
+	addi	a2, a2, -2
 	sltiu	a1, a1, 2047
-	addi	a3, a3, -2
-	sltu	a2, a3, a2
+	sltu	a2, a2, a3
 	or	a1, a1, a2
 	beqz	a1, .LBB2_2
 	lui	a0, 16

@@ -10,12 +10,12 @@ func0000000000000000:
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 624
-	vs8r.v	v16, (a0)
-	addi	a0, sp, 624
 	vs8r.v	v8, (a0)
 	addi	a0, sp, 128
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vse64.v	v8, (a0)
+	addi	a0, sp, 624
+	vs8r.v	v16, (a0)
 	addi	a0, sp, 256
 	vse64.v	v16, (a0)
 	fld	fa0, 248(sp)
@@ -66,57 +66,57 @@ func0000000000000000:
 	fld	fa1, 288(sp)
 	call	fmod
 	fsd	fa0, 416(sp)
-	addi	a0, sp, 624
-	vl8r.v	v8, (a0)
-	vsetivli	zero, 1, e64, m1, ta, ma
-	vfmv.f.s	fa0, v8
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 624
+	vl8r.v	v8, (a0)
+	vsetivli	zero, 1, e64, m1, ta, ma
+	vfmv.f.s	fa0, v8
+	addi	a0, sp, 624
 	vl8r.v	v8, (a0)
 	vfmv.f.s	fa1, v8
 	call	fmod
 	fsd	fa0, 384(sp)
-	addi	a0, sp, 624
+	csrr	a0, vlenb
+	sh3add	a0, a0, sp
+	addi	a0, a0, 624
 	vl8r.v	v8, (a0)
 	vsetivli	zero, 1, e64, m1, ta, ma
 	vslidedown.vi	v8, v8, 1
 	vfmv.f.s	fa0, v8
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 624
+	addi	a0, sp, 624
 	vl8r.v	v8, (a0)
 	vslidedown.vi	v8, v8, 1
 	vfmv.f.s	fa1, v8
 	call	fmod
 	fsd	fa0, 392(sp)
-	addi	a0, sp, 624
-	vl8r.v	v8, (a0)
-	vsetivli	zero, 1, e64, m2, ta, ma
-	vslidedown.vi	v8, v8, 3
-	vfmv.f.s	fa0, v8
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 624
 	vl8r.v	v8, (a0)
+	vsetivli	zero, 1, e64, m2, ta, ma
 	vslidedown.vi	v8, v8, 3
-	vfmv.f.s	fa1, v8
+	addi	a0, sp, 624
+	vl8r.v	v16, (a0)
+	vslidedown.vi	v10, v16, 3
+	vfmv.f.s	fa0, v8
+	vfmv.f.s	fa1, v10
 	call	fmod
 	fsd	fa0, 408(sp)
-	addi	a0, sp, 624
+	csrr	a0, vlenb
+	sh3add	a0, a0, sp
+	addi	a0, a0, 624
 	vl8r.v	v8, (a0)
 	vsetivli	zero, 1, e64, m2, ta, ma
 	vslidedown.vi	v8, v8, 2
-	csrr	a0, vlenb
-	sh3add	a0, a0, sp
-	addi	a0, a0, 624
+	addi	a0, sp, 624
 	vl8r.v	v16, (a0)
 	vslidedown.vi	v10, v16, 2
 	vfmv.f.s	fa0, v8
 	vfmv.f.s	fa1, v10
 	call	fmod
-	fsd	fa0, 400(sp)
 	addi	a0, sp, 384
+	fsd	fa0, 400(sp)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v8, (a0)
 	addi	sp, s0, -640

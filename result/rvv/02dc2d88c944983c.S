@@ -3,9 +3,9 @@ func000000000000000f:
 	vzext.vf4	v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 244
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v13
+	lui	a0, 244
 	addi	a0, a0, 576
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0

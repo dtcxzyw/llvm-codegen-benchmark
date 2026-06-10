@@ -10,10 +10,10 @@ func0000000000000018:
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v10, v10, 4
 	li	a0, -1
 	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v10, v10, 4
 	vand.vx	v10, v10, a0
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12
@@ -28,9 +28,9 @@ func0000000000000000:
 	ret
 
 func000000000000001f:
+	li	a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 7
-	li	a0, 24
 	vand.vx	v10, v10, a0
 	vzext.vf2	v12, v8
 	vmul.vv	v8, v10, v12

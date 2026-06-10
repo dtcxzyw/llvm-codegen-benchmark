@@ -22,19 +22,19 @@ func0000000000000004:
 	ret
 
 func0000000000000601:
+	li	a3, -2
 	sub	a0, a0, a1
-	li	a1, -2
-	sub	a1, a1, a2
-	xor	a0, a0, a1
+	sub	a3, a3, a2
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 
 func0000000000000604:
+	lui	a3, 1
 	sub	a0, a0, a1
-	lui	a1, 1
 	add	a0, a0, a2
 	addi	a0, a0, 4
-	addi	a1, a1, -2047
+	addi	a1, a3, -2047
 	sltu	a0, a0, a1
 	ret
 

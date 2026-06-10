@@ -18,12 +18,12 @@ func0000000000000008:
 
 func0000000000000188:
 	sext.w	a2, a0
-	sext.w	a3, a1
-	sub	a1, a1, a0
-	addiw	a1, a1, 2
-	sltu	a0, a3, a2
-	addi	a1, a1, -1
-	czero.nez	a0, a1, a0
+	sub	a0, a1, a0
+	sext.w	a1, a1
+	addiw	a0, a0, 2
+	sltu	a1, a1, a2
+	addi	a0, a0, -1
+	czero.nez	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 

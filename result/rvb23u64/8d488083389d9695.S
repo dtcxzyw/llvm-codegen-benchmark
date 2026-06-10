@@ -1,8 +1,8 @@
 func000000000000009b:
-	sraiw	a1, a0, 31
-	andi	a1, a1, 100
-	addw	a0, a0, a1
 	li	a1, 205
+	sraiw	a2, a0, 31
+	andi	a2, a2, 100
+	addw	a0, a0, a2
 	mul	a1, a1, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 59

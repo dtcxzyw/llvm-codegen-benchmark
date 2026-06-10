@@ -17,9 +17,9 @@ func0000000000000084:
 	fdiv.s	fa5, fa0, fa5
 	fmv.w.x	fa4, zero
 	lui	a0, 260096
-	flt.s	a1, fa5, fa4
-	fmv.w.x	fa4, a0
-	flt.s	a0, fa4, fa5
+	fmv.w.x	fa3, a0
+	flt.s	a0, fa5, fa4
+	flt.s	a1, fa3, fa5
 	or	a0, a0, a1
 	ret
 

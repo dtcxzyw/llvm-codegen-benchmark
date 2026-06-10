@@ -19,14 +19,14 @@ func0000000000000006:
 	ret
 
 func000000000000000d:
-	ctzw	a0, a0
 	li	a1, -1
+	ctzw	a0, a0
 	sllw	a0, a1, a0
 	ret
 
 func0000000000000005:
-	ctzw	a0, a0
 	li	a1, -1
+	ctzw	a0, a0
 	sllw	a0, a1, a0
 	ret
 
@@ -36,8 +36,8 @@ func0000000000000002:
 	ret
 
 func000000000000000b:
-	ctzw	a0, a0
 	li	a1, 8
+	ctzw	a0, a0
 	sllw	a0, a1, a0
 	ret
 
@@ -47,8 +47,8 @@ func000000000000000a:
 	ret
 
 func0000000000000009:
-	ctzw	a0, a0
 	li	a1, -1
+	ctzw	a0, a0
 	sllw	a0, a1, a0
 	ret
 

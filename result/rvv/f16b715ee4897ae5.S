@@ -226,9 +226,9 @@ func0000000000000202:
 	ret
 
 func00000000000001d8:
+	li	a0, 112
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, -2
-	li	a0, 112
 	vmsne.vx	v14, v12, a0
 	vmsle.vv	v12, v8, v10
 	vmor.mm	v0, v14, v12

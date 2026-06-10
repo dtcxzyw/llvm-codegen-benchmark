@@ -8,8 +8,8 @@ func00000000000000d4:
 
 func00000000000000c0:
 	srai	a2, a2, 6
-	srai	a1, a1, 6
 	add	a0, a0, a2
+	srai	a1, a1, 6
 	li	a2, -1
 	add	a0, a0, a1
 	srli	a2, a2, 7

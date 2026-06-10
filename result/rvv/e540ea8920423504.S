@@ -26,9 +26,9 @@ func0000000000000004:
 
 func0000000000000020:
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv.v.i	v10, 11
 	vmsgtu.vi	v0, v9, 8
-	vmv.v.i	v9, 11
-	vmerge.vim	v9, v9, 13, v0
+	vmerge.vim	v9, v10, 13, v0
 	vadd.vv	v8, v9, v8
 	ret
 
@@ -44,9 +44,9 @@ func0000000000000005:
 
 func0000000000000007:
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv.v.i	v10, 8
 	vmseq.vi	v0, v9, 0
-	vmv.v.i	v9, 8
-	vmerge.vim	v9, v9, 4, v0
+	vmerge.vim	v9, v10, 4, v0
 	vadd.vv	v8, v8, v9
 	ret
 

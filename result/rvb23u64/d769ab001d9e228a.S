@@ -8,9 +8,9 @@ func0000000000000004:
 	mulh	a1, a0, a3
 	srli	a2, a1, 63
 	srai	a1, a1, 14
+	lui	a3, 15
 	add	a1, a1, a2
-	lui	a2, 15
-	addi	a2, a2, -1440
+	addi	a2, a3, -1440
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret
@@ -25,9 +25,9 @@ func0000000000000080:
 	mulh	a1, a0, a3
 	srli	a2, a1, 63
 	srai	a1, a1, 7
+	lui	a3, 16
 	add	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -1000
+	addi	a2, a3, -1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -40,11 +40,11 @@ func0000000000000000:
 	add	a1, a1, a2
 	add	a0, a0, a1
 	mulh	a1, a0, a3
-	srli	a2, a1, 63
-	srai	a1, a1, 18
-	add	a1, a1, a2
 	lui	a2, 262083
+	srli	a3, a1, 63
+	srai	a1, a1, 18
 	slli	a2, a2, 2
+	add	a1, a1, a3
 	addi	a2, a2, -576
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -60,9 +60,9 @@ func0000000000000095:
 	mulh	a1, a0, a3
 	srli	a2, a1, 63
 	srai	a1, a1, 18
+	lui	a3, 244
 	add	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
+	addi	a2, a3, 576
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret
@@ -77,9 +77,9 @@ func0000000000000084:
 	mulh	a1, a0, a3
 	srli	a2, a1, 63
 	srai	a1, a1, 26
+	lui	a3, 244141
 	add	a1, a1, a2
-	lui	a2, 244141
-	addi	a2, a2, -1536
+	addi	a2, a3, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret

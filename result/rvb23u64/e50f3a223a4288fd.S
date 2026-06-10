@@ -20,16 +20,16 @@ func000000000000078a:
 	ret
 
 func00000000000002aa:
-	sext.w	a0, a0
 	sh1add	a2, a2, a2
+	sext.w	a0, a0
 	sh2add	a1, a2, a1
 	sext.w	a1, a1
 	slt	a0, a0, a1
 	ret
 
 func00000000000007aa:
-	sext.w	a0, a0
 	sh1add	a2, a2, a2
+	sext.w	a0, a0
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	xori	a0, a0, 1

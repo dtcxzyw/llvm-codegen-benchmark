@@ -3,8 +3,8 @@ func0000000000000444:
 	bnez	a0, .LBB0_2
 	fmv.s	fa1, fa2
 .LBB0_2:
-	fmin.s	fa5, fa0, fa1
 	lui	a0, 280480
+	fmin.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -16,9 +16,9 @@ func0000000000000448:
 .LBB1_2:
 	fmv.w.x	fa5, zero
 	lui	a0, 260096
-	flt.s	a1, fa1, fa5
-	fmv.w.x	fa5, a0
-	flt.s	a0, fa5, fa0
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa1, fa5
+	flt.s	a1, fa4, fa0
 	or	a0, a0, a1
 	ret
 
@@ -28,12 +28,12 @@ func000000000000046a:
 	fmv.s	fa1, fa2
 .LBB2_2:
 	lui	a0, 508811
-	lui	a1, 260096
 	addi	a0, a0, -1499
+	lui	a1, 260096
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, a1
 	fle.s	a0, fa5, fa1
-	fmv.w.x	fa5, a1
-	fle.s	a1, fa0, fa5
+	fle.s	a1, fa0, fa4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

@@ -19,20 +19,20 @@ func000000000000002c:
 	ret
 
 func0000000000000038:
-	lui	a2, 12
-	and	a1, a1, a2
 	li	a2, 31
+	lui	a3, 12
 	slli	a2, a2, 8
-	seqz	a1, a1
+	and	a1, a1, a3
 	and	a0, a0, a2
+	seqz	a1, a1
 	sltiu	a0, a0, 257
 	andn	a0, a1, a0
 	ret
 
 func0000000000000181:
-	bexti	a1, a1, 16
 	andi	a0, a0, 230
 	addi	a0, a0, -230
+	bexti	a1, a1, 16
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -61,33 +61,33 @@ func0000000000000301:
 	ret
 
 func0000000000000298:
-	andi	a1, a1, 12
 	lui	a2, 7168
 	and	a0, a0, a2
 	lui	a2, 2560
+	andi	a1, a1, 12
 	sltu	a0, a2, a0
 	czero.nez	a0, a0, a1
 	ret
 
 func000000000000028c:
-	zext.h	a1, a1
 	andi	a0, a0, 1023
-	sltiu	a1, a1, 5
+	zext.h	a1, a1
 	addi	a0, a0, -24
+	sltiu	a1, a1, 5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000314:
 	lui	a2, 524288
-	lui	a3, 21094
 	addiw	a2, a2, -1024
-	addi	a4, a3, -1025
-	addi	a3, a3, -1024
+	lui	a3, 21094
 	and	a1, a1, a2
+	addi	a4, a3, -1025
 	and	a0, a0, a2
+	addi	a2, a3, -1024
 	sltu	a1, a4, a1
-	sltu	a0, a0, a3
+	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

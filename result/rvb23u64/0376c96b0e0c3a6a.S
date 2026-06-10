@@ -24,9 +24,9 @@ func0000000000000007:
 
 func0000000000000004:
 	zext.b	a1, a1
+	lui	a2, 400520
 	or	a0, a0, a1
-	lui	a1, 400520
-	addi	a1, a1, 1607
+	addi	a1, a2, 1607
 	addw	a0, a0, a1
 	ret
 

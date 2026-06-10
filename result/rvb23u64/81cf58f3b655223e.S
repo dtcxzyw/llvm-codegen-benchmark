@@ -38,11 +38,11 @@ func0000000000000044:
 	ret
 
 func0000000000000042:
-	lui	a0, %hi(.promoted_doubles.func0000000000000042)
-	addi	a0, a0, %lo(.promoted_doubles.func0000000000000042)
-	fld	fa4, 0(a0)
-	fld	fa5, 8(a0)
 	flt.d	a0, fa0, fa1
+	lui	a1, %hi(.promoted_doubles.func0000000000000042)
+	addi	a1, a1, %lo(.promoted_doubles.func0000000000000042)
+	fld	fa4, 0(a1)
+	fld	fa5, 8(a1)
 	bnez	a0, .LBB3_2
 	fmv.d	fa0, fa1
 .LBB3_2:

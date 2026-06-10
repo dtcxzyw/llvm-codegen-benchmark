@@ -1,9 +1,9 @@
 func0000000000000030:
 	slli.uw	a1, a1, 7
+	lui	a2, 313
 	sh2add	a1, a1, a1
-	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -768
+	addi	a2, a2, -768
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

@@ -13,8 +13,8 @@ func000000000000000a:
 	ret
 
 func0000000000000009:
-	srai	a0, a0, 3
 	li	a1, 35
+	srai	a0, a0, 3
 	bltu	a1, a0, .LBB2_2
 	li	a0, 35
 .LBB2_2:
@@ -22,8 +22,8 @@ func0000000000000009:
 	ret
 
 func000000000000000c:
-	srai	a0, a0, 2
 	li	a1, 8
+	srai	a0, a0, 2
 	bltu	a1, a0, .LBB3_2
 	li	a0, 8
 .LBB3_2:
@@ -31,8 +31,8 @@ func000000000000000c:
 	ret
 
 func000000000000000f:
-	srai	a0, a0, 3
 	li	a1, 4
+	srai	a0, a0, 3
 	bltu	a1, a0, .LBB4_2
 	li	a0, 4
 .LBB4_2:
@@ -40,8 +40,8 @@ func000000000000000f:
 	ret
 
 func000000000000000b:
-	srai	a0, a0, 2
 	li	a1, 8
+	srai	a0, a0, 2
 	bltu	a1, a0, .LBB5_2
 	li	a0, 8
 .LBB5_2:

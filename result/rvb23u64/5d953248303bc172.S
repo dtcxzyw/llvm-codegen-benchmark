@@ -1,49 +1,49 @@
 func0000000000000000:
 	slli	a1, a1, 15
 	lui	a2, 8
+	lui	a3, 1016
 	add	a1, a1, a2
-	lui	a2, 1016
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000001e:
-	slli	a1, a1, 25
-	lui	a2, 8192
-	add	a1, a1, a2
 	lui	a2, 508
+	slli	a1, a1, 25
 	addi	a2, a2, 1
+	lui	a3, 8192
 	slli	a2, a2, 11
+	add	a1, a1, a3
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000001a:
-	slli	a1, a1, 25
-	lui	a2, 1040384
-	add	a1, a1, a2
 	li	a2, 127
+	slli	a1, a1, 25
+	lui	a3, 1040384
 	slli	a2, a2, 25
+	add	a1, a1, a3
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
 	slli	a1, a1, 32
+	bseti	a2, zero, 32
 	add.uw	a0, a0, a1
-	bseti	a1, zero, 32
-	bseti	a1, a1, 63
+	bseti	a1, a2, 63
 	sub	a0, a0, a1
 	ret
 
 func0000000000000007:
-	slli	a1, a1, 9
 	lui	a2, 1040384
+	slli	a1, a1, 9
+	li	a3, 9
 	addi	a2, a2, 511
+	slli	a3, a3, 11
 	and	a0, a0, a2
-	li	a2, 9
-	slli	a2, a2, 11
-	add	a1, a1, a2
+	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

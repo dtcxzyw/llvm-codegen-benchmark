@@ -1,62 +1,60 @@
+.LCPI0_0:
+	.quad	50539024867131392
 func0000000000000009:
-	li	a2, 400
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	slli	a0, a0, 32
-	mul	a1, a1, a2
-	lui	a2, 359
+	li	a3, 400
 	srli	a0, a0, 32
-	addi	a2, a2, 415
-	slli	a2, a2, 12
-	addi	a2, a2, 865
-	slli	a2, a2, 23
+	mul	a1, a1, a3
 	mulhu	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000000f:
-	srliw	a1, a1, 3
 	lui	a2, 93207
+	srliw	a1, a1, 3
 	addi	a2, a2, -1001
 	mul	a1, a1, a2
 	li	a2, 213
-	srli	a1, a1, 34
 	mul	a0, a0, a2
+	srli	a1, a1, 34
 	addw	a0, a0, a1
 	ret
 
 func0000000000000000:
-	li	a2, 1000
-	slli	a0, a0, 32
-	mul	a1, a1, a2
 	lui	a2, 67109
 	addi	a2, a2, -557
+	slli	a0, a0, 32
 	slli	a2, a2, 32
 	mulhu	a0, a0, a2
+	li	a2, 1000
+	mul	a1, a1, a2
 	srli	a0, a0, 38
 	addw	a0, a0, a1
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 32
 	lui	a2, 351844
 	addi	a2, a2, -1143
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	li	a2, -10
-	srli	a1, a1, 57
 	mul	a0, a0, a2
+	srli	a1, a1, 57
 	addw	a0, a0, a1
 	ret
 
+.LCPI4_0:
+	.quad	50539024867131392
 func000000000000001b:
-	li	a2, 400
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
 	slli	a0, a0, 32
-	mul	a1, a1, a2
-	lui	a2, 359
+	li	a3, 400
 	srli	a0, a0, 32
-	addi	a2, a2, 415
-	slli	a2, a2, 12
-	addi	a2, a2, 865
-	slli	a2, a2, 23
+	mul	a1, a1, a3
 	mulhu	a0, a0, a2
 	addw	a0, a0, a1
 	ret

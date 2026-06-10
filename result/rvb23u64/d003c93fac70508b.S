@@ -23,8 +23,8 @@ func0000000000000007:
 	ret
 
 func000000000000000f:
-	sh1add	a0, a0, a0
 	li	a1, -1093
+	sh1add	a0, a0, a0
 	bclri	a1, a1, 63
 	sub	a0, a1, a0
 	ret

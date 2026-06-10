@@ -1,7 +1,7 @@
 func0000000000000005:
+	li	a0, 90
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, 90
 	vmerge.vxm	v8, v8, a0, v0
 	vadd.vv	v8, v8, v10
 	ret
@@ -22,8 +22,8 @@ func000000000000000e:
 
 func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmerge.vim	v10, v10, 4, v0
 	vsll.vi	v8, v8, 2
+	vmerge.vim	v10, v10, 4, v0
 	vadd.vv	v8, v8, v10
 	ret
 
@@ -35,9 +35,9 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
+	li	a0, 19
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 5
-	li	a0, 19
 	vmerge.vxm	v8, v8, a0, v0
 	vadd.vv	v8, v8, v10
 	ret

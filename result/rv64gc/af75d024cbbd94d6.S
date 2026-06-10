@@ -19,11 +19,11 @@ func0000000000000021:
 
 func000000000000018c:
 	lui	a3, 16
-	sext.w	a1, a1
 	addi	a3, a3, -1
-	snez	a1, a1
 	and	a2, a2, a3
+	sext.w	a1, a1
 	xor	a2, a2, a3
+	snez	a1, a1
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -31,10 +31,10 @@ func000000000000018c:
 
 func000000000000002c:
 	slli	a2, a2, 48
-	addiw	a1, a1, -12
 	srli	a2, a2, 48
-	snez	a1, a1
+	addiw	a1, a1, -12
 	addi	a2, a2, -62
+	snez	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

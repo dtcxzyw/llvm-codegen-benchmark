@@ -31,8 +31,8 @@ func000000000000000f:
 	ret
 
 func0000000000000008:
-	slli	a1, a1, 32
 	li	a2, 255
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	and	a1, a1, a2
@@ -47,8 +47,8 @@ func000000000000000b:
 	ret
 
 func000000000000000e:
-	slli	a1, a1, 8
 	li	a2, 15
+	slli	a1, a1, 8
 	slli	a2, a2, 9
 	add	a1, a1, a2
 	addiw	a2, a2, 256

@@ -1,10 +1,10 @@
 func00000000000000ff:
-	sext.w	a2, a2
 	lui	a3, 1
-	sext.w	a1, a1
+	sext.w	a2, a2
 	addi	a3, a3, 224
-	slli	a1, a1, 2
 	mul	a2, a2, a3
+	sext.w	a1, a1
+	slli	a1, a1, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

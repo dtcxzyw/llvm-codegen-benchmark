@@ -22,11 +22,11 @@ func0000000000000069:
 
 func0000000000000001:
 	srai	a2, a1, 63
+	srai	a3, a0, 63
 	srli	a2, a2, 61
+	srli	a3, a3, 61
 	add	a1, a1, a2
-	srai	a2, a0, 63
-	srli	a2, a2, 61
-	add	a0, a0, a2
+	add	a0, a0, a3
 	srai	a1, a1, 3
 	srai	a0, a0, 3
 	xor	a0, a0, a1

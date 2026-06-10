@@ -26,16 +26,16 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
+	lui	a2, 524288
 	slt	a0, a1, a0
-	lui	a1, 524288
-	addiw	a1, a1, -86
+	addiw	a1, a2, -86
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000021:
 	sub	a0, a0, a1
-	li	a1, -2
 	binvi	a0, a0, 63
+	li	a1, -2
 	czero.eqz	a0, a1, a0
 	bseti	a1, zero, 63
 	add	a0, a0, a1

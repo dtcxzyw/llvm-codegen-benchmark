@@ -8,8 +8,8 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	andi	a2, a2, 1
 	lui	a3, 16
+	andi	a2, a2, 1
 	addi	a3, a3, -1024
 	czero.eqz	a2, a3, a2
 	add	a1, a1, a2

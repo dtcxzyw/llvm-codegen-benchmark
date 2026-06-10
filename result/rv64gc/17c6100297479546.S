@@ -31,9 +31,9 @@ func0000000000000005:
 
 func0000000000000007:
 	li	a2, -1
-	slli	a0, a0, 32
 	srli	a2, a2, 32
 	addi	a2, a2, 1
+	slli	a0, a0, 32
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	or	a0, a0, a1

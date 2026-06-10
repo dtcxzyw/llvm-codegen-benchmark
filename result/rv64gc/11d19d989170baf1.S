@@ -5,18 +5,18 @@ func0000000000000007:
 	bne	a3, a4, .LBB0_2
 	addi	a2, a2, 4
 .LBB0_2:
-	or	a0, a0, a2
 	andi	a1, a1, 1
+	or	a0, a0, a2
 	slli	a1, a1, 14
 	or	a0, a0, a1
 	ret
 
 func000000000000002b:
 	slli	a2, a2, 56
-	andi	a1, a1, 1
 	srai	a2, a2, 56
-	slli	a1, a1, 13
+	andi	a1, a1, 1
 	sgtz	a2, a2
+	slli	a1, a1, 13
 	slli	a2, a2, 12
 	or	a0, a0, a1
 	or	a0, a0, a2

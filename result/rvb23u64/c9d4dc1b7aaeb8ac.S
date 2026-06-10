@@ -23,9 +23,9 @@ func000000000000005e:
 	add	a1, a1, a2
 	addiw	a1, a1, -3
 	slli	a2, a1, 5
+	lui	a3, 5
 	sh1add	a1, a1, a2
-	lui	a2, 5
-	addi	a2, a2, 574
+	addi	a2, a3, 574
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

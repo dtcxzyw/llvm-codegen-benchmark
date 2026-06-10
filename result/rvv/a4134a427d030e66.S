@@ -23,8 +23,8 @@ func000000000000000a:
 func0000000000000002:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vnot.v	v10, v10
-	lui	a0, 486296
 	vadd.vv	v8, v8, v10
+	lui	a0, 486296
 	addi	a0, a0, 475
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 6

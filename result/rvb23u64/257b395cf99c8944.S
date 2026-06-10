@@ -1,6 +1,6 @@
 func0000000000000074:
-	zext.h	a0, a0
 	andi	a2, a2, 56
+	zext.h	a0, a0
 	sltiu	a0, a0, 8
 	xori	a0, a0, 1
 	or	a1, a1, a2
@@ -9,8 +9,8 @@ func0000000000000074:
 	ret
 
 func0000000000000021:
-	slli	a0, a0, 48
 	andi	a2, a2, 14
+	slli	a0, a0, 48
 	snez	a0, a0
 	or	a1, a1, a2
 	slli	a0, a0, 4
@@ -18,8 +18,8 @@ func0000000000000021:
 	ret
 
 func0000000000000064:
-	zext.h	a0, a0
 	andi	a2, a2, 8
+	zext.h	a0, a0
 	sltiu	a0, a0, 8
 	xori	a0, a0, 1
 	or	a1, a1, a2

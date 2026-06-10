@@ -29,12 +29,12 @@ func0000000000000019:
 	ret
 
 func0000000000000030:
+	li	a2, 1
 	slli	a1, a1, 2
+	slli	a2, a2, 58
 	sub	a0, a1, a0
-	li	a1, 1
-	slli	a1, a1, 58
-	addi	a1, a1, 4
-	add	a0, a0, a1
+	addi	a2, a2, 4
+	add	a0, a0, a2
 	ret
 
 func000000000000003d:

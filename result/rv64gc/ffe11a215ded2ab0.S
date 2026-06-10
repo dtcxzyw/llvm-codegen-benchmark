@@ -8,9 +8,9 @@ func0000000000000021:
 func0000000000000001:
 	slli	a1, a1, 56
 	srai	a1, a1, 63
+	lui	a2, 11
 	and	a0, a0, a1
-	lui	a1, 11
-	addi	a1, a1, 1023
+	addi	a1, a2, 1023
 	or	a0, a0, a1
 	ret
 

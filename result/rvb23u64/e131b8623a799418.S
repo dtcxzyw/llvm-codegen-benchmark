@@ -42,19 +42,19 @@ func0000000000000018:
 	addi	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
-	lui	a2, 10923
 	mulhu	a0, a0, a1
 	slli	a0, a0, 31
+	lui	a1, 10923
 	srli	a0, a0, 33
-	addi	a1, a2, -1366
+	addi	a1, a1, -1366
 	sltu	a0, a1, a0
 	ret
 
 func000000000000002c:
-	srli	a0, a0, 3
 	lui	a1, 595138
 	addi	a1, a1, -1107
 	slli	a2, a1, 36
+	srli	a0, a0, 3
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	andi	a0, a0, 7

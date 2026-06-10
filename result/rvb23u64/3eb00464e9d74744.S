@@ -1,6 +1,6 @@
 func0000000000001c2c:
-	zext.b	a0, a0
 	sext.w	a2, a2
+	zext.b	a0, a0
 	addi	a1, a1, 1
 	xor	a1, a1, a2
 	addi	a0, a0, -255
@@ -10,9 +10,9 @@ func0000000000001c2c:
 	ret
 
 func0000000000001c21:
-	zext.b	a0, a0
 	sext.w	a2, a2
 	addi	a1, a1, 1
+	zext.b	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
 	seqz	a0, a0
@@ -20,8 +20,8 @@ func0000000000001c21:
 	ret
 
 func0000000000000c21:
-	zext.b	a0, a0
 	zext.w	a2, a2
+	zext.b	a0, a0
 	addi	a1, a1, 1
 	xor	a1, a1, a2
 	addi	a0, a0, -2

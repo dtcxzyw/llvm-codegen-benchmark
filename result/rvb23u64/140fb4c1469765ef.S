@@ -45,13 +45,13 @@ func0000000000000040:
 	ret
 
 func0000000000000015:
-	sext.w	a1, a1
 	lui	a2, 1
+	sext.w	a1, a1
+	lui	a3, 6
 	addi	a2, a2, -2017
+	addi	a3, a3, -810
 	czero.eqz	a1, a2, a1
-	lui	a2, 6
-	addi	a2, a2, -810
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

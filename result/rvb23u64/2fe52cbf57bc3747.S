@@ -1,10 +1,10 @@
 func0000000000000021:
-	sext.w	a1, a1
 	zext.b	a2, a2
-	li	a3, 10
 	addi	a2, a2, -12
+	li	a3, 10
 	czero.eqz	a2, a3, a2
 	ori	a2, a2, 161
+	sext.w	a1, a1
 	bseti	a2, a2, 11
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

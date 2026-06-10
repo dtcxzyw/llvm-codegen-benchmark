@@ -8,8 +8,8 @@ func0000000000000188:
 
 func000000000000010c:
 	slli	a2, a2, 4
-	sltiu	a1, a1, 4
 	xor	a0, a0, a2
+	sltiu	a1, a1, 4
 	snez	a0, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1

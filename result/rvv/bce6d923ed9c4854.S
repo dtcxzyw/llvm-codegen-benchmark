@@ -4,8 +4,8 @@ func0000000000000000:
 	vfadd.vf	v8, v8, fa5
 	fli.s	fa5, 0.5
 	lui	a0, 265361
-	addi	a0, a0, -37
 	vfmul.vf	v8, v8, fa5
+	addi	a0, a0, -37
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret

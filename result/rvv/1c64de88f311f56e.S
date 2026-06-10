@@ -1,8 +1,8 @@
 func0000000000000141:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 48
 	vmsgt.vi	v9, v10, 1
+	li	a0, 48
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

@@ -26,10 +26,10 @@ func000000000000000a:
 .LCPI1_0:
 	.quad	0x3ff1c28f5c28f5c3
 func0000000000000004:
-	andi	a0, a0, 1
 	li	a1, 1023
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
+	andi	a0, a0, 1
 	beqz	a0, .LBB1_3
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa0, %lo(.LCPI1_0)(a0)

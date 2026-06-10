@@ -36,8 +36,8 @@ func0000000000000626:
 	addi	a0, a0, 576
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmacc.vx	v8, a0, v10
-	lui	a0, 244141
 	vmsle.vi	v0, v8, -1
+	lui	a0, 244141
 	addi	a0, a0, -1536
 	vadd.vx	v8, v8, a0, v0.t
 	ret

@@ -42,9 +42,9 @@ func000000000000058a:
 	ret
 
 func0000000000000684:
+	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, -3
-	lui	a0, 4096
 	vmsltu.vx	v14, v12, a0
 	vmsltu.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14
@@ -75,9 +75,9 @@ func0000000000000586:
 	ret
 
 func0000000000000487:
+	li	a0, -19
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, -10
-	li	a0, -19
 	vmsltu.vx	v14, v12, a0
 	vmsle.vv	v12, v8, v10
 	vmand.mm	v0, v12, v14

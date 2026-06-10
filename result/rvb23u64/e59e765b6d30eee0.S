@@ -7,8 +7,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	zext.h	a0, a0
 	andi	a1, a1, 32
+	zext.h	a0, a0
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
@@ -21,10 +21,10 @@ func0000000000000198:
 	ret
 
 func0000000000000024:
-	zext.h	a0, a0
 	lui	a2, 16
 	addi	a2, a2, -2
 	and	a1, a1, a2
+	zext.h	a0, a0
 	addi	a1, a1, -6
 	seqz	a1, a1
 	sltiu	a0, a0, 2

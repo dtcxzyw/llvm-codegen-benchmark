@@ -1,7 +1,7 @@
 func0000000000000061:
-	slli	a0, a0, 32
 	lui	a1, 596523
 	addi	a1, a1, 965
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	lui	a1, 87381

@@ -2,9 +2,9 @@ func0000000000000035:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfneg.v	v24, v16
 	vmfle.vv	v7, v8, v24
-	vmnot.m	v24, v7
-	vmfle.vv	v25, v16, v8
-	vmandn.mm	v0, v24, v25
+	vmfle.vv	v24, v16, v8
+	vmnot.m	v8, v7
+	vmandn.mm	v0, v8, v24
 	ret
 
 func0000000000000042:
@@ -19,9 +19,9 @@ func000000000000005d:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfneg.v	v24, v16
 	vmflt.vv	v7, v8, v24
-	vmnot.m	v24, v7
-	vmfle.vv	v25, v16, v8
-	vmandn.mm	v0, v24, v25
+	vmfle.vv	v24, v16, v8
+	vmnot.m	v8, v7
+	vmandn.mm	v0, v8, v24
 	ret
 
 func0000000000000024:

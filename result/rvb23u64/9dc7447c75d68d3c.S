@@ -12,8 +12,8 @@ func00000000000000de:
 
 func00000000000000ce:
 	mulw	a1, a1, a2
-	add	a0, a0, a1
-	lui	a1, 128
+	lui	a2, 128
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

@@ -6,14 +6,14 @@ func0000000000000041:
 	ret
 
 func0000000000000004:
-	addi	a1, a0, 32
+	lui	a1, 2
+	addi	a2, a0, 32
 	srli	a0, a0, 5
-	lui	a2, 2
 	sltiu	a0, a0, 253
-	addi	a2, a2, -96
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
+	addi	a1, a1, -96
+	czero.nez	a2, a2, a0
+	czero.eqz	a0, a1, a0
+	or	a0, a0, a2
 	ret
 
 func0000000000000001:
@@ -22,20 +22,20 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	addi	a1, a0, -1
-	lui	a2, 4096
-	czero.eqz	a1, a1, a0
-	addi	a2, a2, -1
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	lui	a1, 4096
+	addi	a2, a0, -1
+	addi	a1, a1, -1
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret
 
 func0000000000000068:
-	addi	a1, a0, 1
-	lui	a2, 8
-	addi	a2, a2, -2
-	sltu	a0, a2, a0
-	czero.nez	a0, a1, a0
+	lui	a1, 8
+	addi	a1, a1, -2
+	addi	a2, a0, 1
+	sltu	a0, a1, a0
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000061:

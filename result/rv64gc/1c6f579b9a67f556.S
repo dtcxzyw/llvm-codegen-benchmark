@@ -1,10 +1,10 @@
 func0000000000000015:
+	lui	a3, 1048332
 	andi	a0, a0, 1
-	sub	a1, a1, a2
-	lui	a2, 1048332
 	addi	a0, a0, -1
-	addi	a2, a2, -576
-	and	a0, a0, a2
+	addi	a3, a3, -576
+	sub	a1, a1, a2
+	and	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

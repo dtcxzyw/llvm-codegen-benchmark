@@ -11,9 +11,9 @@ func000000000000000c:
 	ret
 
 func0000000000000003:
-	sext.w	a1, a0
-	li	a2, 16
-	bne	a1, a2, .LBB1_2
+	li	a1, 16
+	sext.w	a2, a0
+	bne	a2, a1, .LBB1_2
 	li	a0, 54
 	ret
 .LBB1_2:
@@ -21,10 +21,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	sext.w	a2, a0
-	li	a3, -1
+	li	a2, -1
+	sext.w	a3, a0
 	lui	a1, 524288
-	bne	a2, a3, .LBB2_2
+	bne	a3, a2, .LBB2_2
 	addi	a0, a1, 6
 	ret
 .LBB2_2:

@@ -3,11 +3,11 @@
 func0000000000000005:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	mulhu	a2, a1, a2
 	lui	a3, 244
 	addi	a3, a3, 576
-	mul	a0, a0, a3
-	mulhu	a2, a1, a2
 	srli	a2, a2, 18
+	mul	a0, a0, a3
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	sub	a0, a0, a2
@@ -20,11 +20,11 @@ func000000000000000f:
 	add	a2, a2, a3
 	mulhu	a2, a1, a2
 	andi	a3, a2, -8
+	srli	a2, a2, 3
+	slli	a2, a2, 1
 	sub	a1, a1, a3
 	slli	a3, a0, 1
 	slli	a0, a0, 2
-	srli	a2, a2, 3
-	slli	a2, a2, 1
 	sub	a1, a1, a2
 	add	a0, a0, a3
 	add	a0, a0, a1

@@ -56,8 +56,8 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	andi	a1, a1, 1
 	li	a3, 511
+	andi	a1, a1, 1
 	slli	a3, a3, 53
 	add	a2, a2, a3
 	addi	a1, a1, -1

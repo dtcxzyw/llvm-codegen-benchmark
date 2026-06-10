@@ -95,9 +95,9 @@ func0000000000000088:
 func00000000000000ec:
 	feq.d	a0, fa2, fa2
 	feq.d	a1, fa0, fa0
+	fle.d	a2, fa1, fa0
 	and	a0, a0, a1
-	fle.d	a1, fa1, fa0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000055:

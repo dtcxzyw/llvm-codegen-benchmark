@@ -10,8 +10,8 @@ func0000000000000001:
 	ret
 
 func000000000000000b:
-	addi	a0, a0, -2
 	li	a1, 2
+	addi	a0, a0, -2
 	bltu	a0, a1, .LBB1_2
 	li	a0, 2
 .LBB1_2:
@@ -19,8 +19,8 @@ func000000000000000b:
 	ret
 
 func0000000000000003:
-	addi	a0, a0, -1
 	lui	a1, 1
+	addi	a0, a0, -1
 	addi	a1, a1, -1
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
@@ -29,8 +29,8 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	addi	a0, a0, 1
 	li	a1, 1024
+	addi	a0, a0, 1
 	bltu	a0, a1, .LBB3_2
 	li	a0, 1024
 .LBB3_2:

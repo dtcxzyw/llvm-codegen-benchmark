@@ -43,9 +43,9 @@ func0000000000000077:
 	ret
 
 func0000000000000000:
-	slli	a2, a2, 56
 	lui	a3, 65536
 	addi	a3, a3, -1357
+	slli	a2, a2, 56
 	slli	a3, a3, 8
 	mulhu	a2, a2, a3
 	add	a0, a0, a1

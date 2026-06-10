@@ -7,9 +7,9 @@ func0000000000000007:
 
 func0000000000000006:
 	andi	a1, a1, 63
+	lui	a2, 14
 	or	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	or	a0, a0, a1
 	ret
 

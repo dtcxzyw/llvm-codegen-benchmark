@@ -19,9 +19,9 @@ func0000000000000000:
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	andi	a1, a1, 12
+	lui	a2, 15
 	add	a0, a0, a1
-	lui	a1, 15
-	addi	a1, a1, 1279
+	addi	a1, a2, 1279
 	mul	a0, a0, a1
 	addiw	a0, a0, 769
 	ret

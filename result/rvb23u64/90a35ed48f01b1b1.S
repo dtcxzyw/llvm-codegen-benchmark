@@ -17,9 +17,9 @@ func000000000000008c:
 
 func0000000000000026:
 	lui	a2, 496
-	srliw	a0, a0, 31
 	and	a1, a1, a2
 	binvi	a1, a1, 16
+	srliw	a0, a0, 31
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

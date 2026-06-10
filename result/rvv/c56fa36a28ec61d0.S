@@ -12,8 +12,8 @@ func0000000000000014:
 	li	a0, 513
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v10, v8, a0
-	li	a0, -64
 	vmor.mm	v0, v0, v10
+	li	a0, -64
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, -8, v0
 	ret

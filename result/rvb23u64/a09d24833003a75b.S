@@ -20,8 +20,8 @@ func000000000000018c:
 
 func0000000000000026:
 	andi	a2, a2, 2047
-	srli	a1, a1, 63
 	addi	a2, a2, -1054
+	srli	a1, a1, 63
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -37,9 +37,9 @@ func000000000000002c:
 	ret
 
 func0000000000000081:
-	andi	a2, a2, 7
 	lui	a3, 262144
 	addi	a3, a3, -55
+	andi	a2, a2, 7
 	sltu	a1, a1, a3
 	czero.nez	a1, a1, a2
 	and	a0, a0, a1

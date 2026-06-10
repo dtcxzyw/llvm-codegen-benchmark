@@ -1,15 +1,15 @@
 func00000000000000d5:
+	li	a3, 1
 	sub	a0, a0, a1
 	add	a0, a0, a2
-	li	a1, 1
-	subw	a0, a1, a0
+	subw	a0, a3, a0
 	ret
 
 func0000000000000001:
+	lui	a3, 524288
 	sub	a0, a0, a1
-	lui	a1, 524288
 	addw	a0, a0, a2
-	addiw	a1, a1, -1
-	xor	a0, a0, a1
+	addiw	a3, a3, -1
+	xor	a0, a0, a3
 	ret
 

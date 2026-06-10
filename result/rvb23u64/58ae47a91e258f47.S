@@ -7,17 +7,17 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a0
+	lui	a1, 244
+	sext.w	a2, a0
+	addi	a1, a1, 576
 	srliw	a0, a0, 3
-	lui	a2, 244
-	addi	a2, a2, 576
-	sltu	a1, a1, a2
+	sltu	a1, a2, a1
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000008:
-	srliw	a0, a0, 16
 	lui	a1, 16
+	srliw	a0, a0, 16
 	addi	a1, a1, -1
 	czero.nez	a1, a1, a0
 	or	a0, a0, a1

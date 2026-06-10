@@ -7,10 +7,10 @@ func0000000000000018:
 
 func0000000000000001:
 	srli	a1, a1, 16
+	lui	a2, 16
 	xor	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	xor	a0, a0, a1
+	addi	a2, a2, -1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

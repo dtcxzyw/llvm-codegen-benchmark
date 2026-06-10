@@ -13,8 +13,8 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	lui	a1, 262144
+	sext.w	a0, a0
 	addi	a1, a1, -1
 	bltu	a0, a1, .LBB2_2
 	fmv.w.x	fa0, zero

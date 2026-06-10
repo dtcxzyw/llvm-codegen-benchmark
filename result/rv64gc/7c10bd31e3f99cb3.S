@@ -1,41 +1,41 @@
 func0000000000000038:
 	li	a2, 7
-	andi	a0, a0, 192
 	slli	a2, a2, 60
 	addi	a2, a2, 1
 	and	a1, a1, a2
+	andi	a0, a0, 192
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000002c:
-	andi	a1, a1, 1
 	andi	a0, a0, 7
-	seqz	a1, a1
+	andi	a1, a1, 1
 	addi	a0, a0, -4
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000021:
 	lui	a2, 57344
-	andi	a0, a0, 7
 	and	a1, a1, a2
+	andi	a0, a0, 7
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000034:
-	lui	a2, 524288
-	addiw	a2, a2, -8
-	and	a0, a0, a2
 	li	a2, -1
 	slli	a2, a2, 32
 	addi	a2, a2, -1
+	lui	a3, 524288
 	srli	a2, a2, 1
+	addiw	a3, a3, -8
 	and	a1, a1, a2
+	and	a0, a0, a3
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

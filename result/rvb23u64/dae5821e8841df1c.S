@@ -1,7 +1,6 @@
 func0000000000000011:
-	andi	a0, a0, 1
-	addiw	a1, a1, 30
 	lui	a2, 559241
+	addiw	a1, a1, 30
 	addi	a2, a2, -1911
 	mul	a3, a1, a2
 	srli	a3, a3, 32
@@ -18,6 +17,7 @@ func0000000000000011:
 	sh1add	a2, a2, a2
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
+	andi	a0, a0, 1
 	subw	a1, a1, a2
 	czero.eqz	a0, a1, a0
 	ret

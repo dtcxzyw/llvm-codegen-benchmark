@@ -20,9 +20,9 @@ func0000000000000000:
 func000000000000000f:
 	bseti	a0, zero, 36
 	addi	a1, a0, -48
-	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
+	addi	a0, a0, -16
 	vand.vx	v8, v8, a0
 	li	a0, 16
 	vadd.vx	v8, v8, a0
@@ -44,12 +44,12 @@ func000000000000000a:
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI4_0)
-	ld	a1, %lo(.LCPI4_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
+	ld	a0, %lo(.LCPI4_0)(a1)
+	vand.vx	v8, v8, a0
 	lui	a0, 106914
 	addi	a0, a0, -1510
-	vand.vx	v8, v8, a1
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vadd.vx	v8, v8, a0

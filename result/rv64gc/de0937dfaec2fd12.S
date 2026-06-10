@@ -1,9 +1,9 @@
 func0000000000000000:
 	slli	a1, a1, 52
+	li	a2, -1
 	or	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	or	a0, a0, a1
+	slli	a2, a2, 63
+	or	a0, a0, a2
 	ret
 
 func000000000000001d:
@@ -16,10 +16,10 @@ func000000000000001d:
 func000000000000001f:
 	sext.w	a1, a1
 	slli	a1, a1, 16
+	lui	a2, 32769
 	or	a0, a0, a1
-	lui	a1, 32769
-	slli	a1, a1, 12
-	or	a0, a0, a1
+	slli	a2, a2, 12
+	or	a0, a0, a2
 	ret
 
 func000000000000000b:
@@ -43,18 +43,18 @@ func0000000000000001:
 
 func000000000000001c:
 	slli	a1, a1, 49
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 54
-	or	a0, a0, a1
+	slli	a2, a2, 54
+	or	a0, a0, a2
 	ret
 
 func000000000000001e:
 	slli	a1, a1, 32
+	lui	a2, 1
 	or	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -1
-	or	a0, a0, a1
+	addi	a2, a2, -1
+	or	a0, a0, a2
 	ret
 
 func000000000000000d:
@@ -90,26 +90,26 @@ func000000000000001b:
 
 func000000000000000a:
 	slli	a1, a1, 32
+	li	a2, -1
 	or	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	or	a0, a0, a1
+	slli	a2, a2, 63
+	or	a0, a0, a2
 	ret
 
 func000000000000000e:
 	slli	a1, a1, 32
 	srli	a1, a1, 3
+	lui	a2, 4095
 	or	a0, a0, a1
-	lui	a1, 4095
-	slli	a1, a1, 39
-	or	a0, a0, a1
+	slli	a2, a2, 39
+	or	a0, a0, a2
 	ret
 
 func000000000000001a:
 	slli	a1, a1, 63
+	lui	a2, 4095
 	or	a0, a0, a1
-	lui	a1, 4095
-	slli	a1, a1, 39
-	or	a0, a0, a1
+	slli	a2, a2, 39
+	or	a0, a0, a2
 	ret
 

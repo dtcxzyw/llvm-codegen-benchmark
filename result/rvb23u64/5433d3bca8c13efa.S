@@ -1,6 +1,6 @@
 func00000000000002aa:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	li	a2, 1
 	addiw	a3, a1, -1
 	subw	a2, a2, a1
@@ -12,8 +12,8 @@ func00000000000002aa:
 	ret
 
 func000000000000000a:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	li	a2, 1
 	addiw	a3, a1, -1
 	subw	a2, a2, a1
@@ -25,8 +25,8 @@ func000000000000000a:
 	ret
 
 func00000000000002a6:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	li	a2, 1
 	subw	a2, a2, a1
 	addiw	a1, a1, -1

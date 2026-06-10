@@ -7,9 +7,9 @@ func000000000000000f:
 	ret
 
 func0000000000000000:
-	bexti	a2, a1, 3
-	srliw	a1, a1, 5
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	srliw	a2, a1, 5
+	bexti	a1, a1, 3
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 

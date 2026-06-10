@@ -5,10 +5,10 @@ func000000000000000e:
 	ret
 
 func000000000000000f:
+	lui	a3, 32768
 	or	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 32768
-	addw	a0, a0, a1
+	addw	a0, a0, a3
 	ret
 
 func0000000000000000:
@@ -45,16 +45,16 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
+	lui	a3, 1048352
 	or	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 1048352
-	addw	a0, a0, a1
+	addw	a0, a0, a3
 	ret
 
 func000000000000000a:
+	lui	a3, 1033216
 	or	a1, a1, a2
-	lui	a2, 1033216
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -73,10 +73,10 @@ func0000000000000009:
 	ret
 
 func0000000000000003:
+	lui	a3, 1047552
 	or	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 1047552
-	addw	a0, a0, a1
+	addw	a0, a0, a3
 	ret
 
 func0000000000000008:

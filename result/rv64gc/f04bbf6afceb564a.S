@@ -1,10 +1,10 @@
 func0000000000000984:
-	zext.b	a0, a0
-	li	a2, 1
-	sll	a1, a2, a1
 	lui	a2, 262145
+	li	a3, 1
 	slli	a2, a2, 2
+	sll	a1, a3, a1
 	addi	a2, a2, -511
+	zext.b	a0, a0
 	and	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 64

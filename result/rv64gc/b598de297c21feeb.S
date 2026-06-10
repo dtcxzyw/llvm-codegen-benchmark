@@ -14,9 +14,9 @@ func0000000000000000:
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 688
+	addi	a1, a2, 688
 	add	a0, a0, a1
 	ret
 

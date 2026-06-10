@@ -65,10 +65,10 @@ func000000000000001c:
 	ret
 
 func0000000000000000:
+	bseti	a2, zero, 35
 	sub	a1, a1, a0
-	bseti	a0, zero, 35
-	addi	a0, a0, -16
-	sh3add	a0, a1, a0
+	addi	a2, a2, -16
+	sh3add	a0, a1, a2
 	ret
 
 func0000000000000034:
@@ -108,10 +108,10 @@ func0000000000000031:
 	ret
 
 func0000000000000004:
+	lui	a2, 2
 	sub	a1, a1, a0
-	lui	a0, 2
-	addi	a0, a0, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a1, a2
 	slli	a0, a0, 32
 	ret
 

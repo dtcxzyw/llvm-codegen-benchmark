@@ -43,10 +43,10 @@ func0000000000000084:
 
 func0000000000000104:
 	lui	a0, 1048568
+	addi	a1, a0, 1
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	addi	a0, a0, 1
-	vmsltu.vx	v10, v8, a0
+	vmsltu.vx	v10, v8, a1
 	vmxor.mm	v0, v10, v12
 	ret
 

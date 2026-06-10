@@ -9,8 +9,8 @@ func0000000000000004:
 	ret
 
 func0000000000000844:
-	srli	a1, a1, 3
 	lui	a2, 748983
+	srli	a1, a1, 3
 	addi	a2, a2, -585
 	mul	a1, a1, a2
 	addiw	a1, a1, -1
@@ -19,8 +19,8 @@ func0000000000000844:
 	ret
 
 func0000000000000804:
-	srli	a1, a1, 3
 	lui	a2, 838861
+	srli	a1, a1, 3
 	addi	a2, a2, -819
 	mul	a1, a1, a2
 	addiw	a1, a1, 1

@@ -1,25 +1,25 @@
 func0000000000000006:
 	beqz	a2, .LBB0_2
 	li	a2, 76
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB0_2:
 	li	a2, 12
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000007:
 	beqz	a2, .LBB1_2
 	li	a2, 12
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB1_2:
 	li	a2, 8
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000004:

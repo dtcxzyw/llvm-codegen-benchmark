@@ -10,9 +10,9 @@ func000000000000000f:
 
 func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v12, 5
 	vsrl.vi	v10, v10, 2
 	vand.vi	v10, v10, 7
-	vmv.v.i	v12, 5
 	vmadd.vv	v8, v10, v12
 	ret
 
@@ -27,11 +27,11 @@ func0000000000000005:
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v10, v10, 21
 	li	a0, 63
-	vand.vi	v10, v10, 7
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vsrl.vi	v10, v10, 21
+	vand.vi	v10, v10, 7
 	vmadd.vv	v8, v10, v12
 	ret
 

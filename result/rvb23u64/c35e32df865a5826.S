@@ -12,8 +12,8 @@ func0000000000000041:
 	ret
 
 func0000000000000061:
-	sext.w	a0, a0
 	lui	a2, 32
+	sext.w	a0, a0
 	sll	a1, a2, a1
 	czero.nez	a0, a1, a0
 	ret

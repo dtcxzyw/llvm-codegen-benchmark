@@ -18,14 +18,13 @@ func000000000000001f:
 	ret
 
 func000000000000000a:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v10, v9
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.i	v9, -1
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vwaddu.wv	v9, v9, v10
+	vzext.vf2	v11, v9
+	vwaddu.wv	v10, v10, v11
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmul.vv	v10, v9, v8
+	vmul.vv	v10, v10, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret

@@ -1,6 +1,6 @@
 func0000000000000013:
-	sext.w	a1, a1
 	slli	a2, a2, 41
+	sext.w	a1, a1
 	srli	a2, a2, 41
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
@@ -9,8 +9,8 @@ func0000000000000013:
 	ret
 
 func000000000000001b:
-	sext.w	a1, a1
 	slli	a2, a2, 36
+	sext.w	a1, a1
 	srli	a2, a2, 36
 	slt	a1, a2, a1
 	li	a2, -24

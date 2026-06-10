@@ -34,10 +34,10 @@ func0000000000000024:
 	ret
 
 func00000000000000e4:
-	srli	a2, a2, 3
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	slli	a4, a3, 32
+	srli	a2, a2, 3
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -45,10 +45,10 @@ func00000000000000e4:
 	ret
 
 func0000000000000081:
-	srli	a2, a2, 6
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	slli	a4, a3, 32
+	srli	a2, a2, 6
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	add	a1, a1, a2

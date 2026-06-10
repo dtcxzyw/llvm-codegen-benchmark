@@ -6,12 +6,12 @@ func0000000000000318:
 	ret
 
 func0000000000000118:
-	li	a3, 2
-	bseti	a3, a3, 63
-	sltu	a2, a2, a3
 	li	a3, 3
+	li	a4, 2
 	bseti	a3, a3, 63
 	xor	a1, a1, a3
+	bseti	a3, a4, 63
+	sltu	a2, a2, a3
 	snez	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -47,8 +47,8 @@ func0000000000000310:
 func0000000000000314:
 	li	a3, -1
 	slli	a4, a3, 62
-	bclri	a3, a3, 62
 	xor	a2, a2, a4
+	bclri	a3, a3, 62
 	snez	a2, a2
 	slt	a1, a3, a1
 	and	a1, a1, a2
@@ -71,8 +71,8 @@ func0000000000000294:
 	ret
 
 func0000000000000528:
-	sltiu	a2, a2, 100
 	srli	a1, a1, 4
+	sltiu	a2, a2, 100
 	sltiu	a1, a1, 1875
 	and	a1, a1, a2
 	or	a0, a0, a1

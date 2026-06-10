@@ -1,13 +1,13 @@
 func000000000000000b:
-	srliw	a1, a0, 13
-	srli	a0, a0, 15
-	slli	a0, a0, 50
-	lui	a2, 20972
-	mulhu	a0, a0, a2
-	srli	a0, a0, 17
-	sh2add	a0, a0, a0
-	sh2add	a0, a0, a0
-	slli	a0, a0, 2
-	sub	a0, a1, a0
+	lui	a1, 20972
+	srli	a2, a0, 15
+	slli	a2, a2, 50
+	mulhu	a1, a2, a1
+	srli	a1, a1, 17
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	srliw	a0, a0, 13
+	slli	a1, a1, 2
+	sub	a0, a0, a1
 	ret
 

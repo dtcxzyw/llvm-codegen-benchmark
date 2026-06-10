@@ -7,9 +7,9 @@ func00000000000001fa:
 
 func00000000000000ff:
 	slli	a2, a2, 32
-	slli	a0, a0, 4
 	srli	a3, a2, 22
 	srli	a2, a2, 20
+	slli	a0, a0, 4
 	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -19,10 +19,10 @@ func00000000000000ff:
 
 func00000000000000cc:
 	li	a3, 77
-	slli	a2, a2, 32
-	slli	a0, a0, 3
 	slli	a3, a3, 33
+	slli	a2, a2, 32
 	mulhu	a2, a2, a3
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1620

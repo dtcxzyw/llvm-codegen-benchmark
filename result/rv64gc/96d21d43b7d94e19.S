@@ -19,14 +19,14 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	slli	a0, a0, 19
 	lui	a1, 80
+	slli	a0, a0, 19
 	or	a0, a0, a1
 	ret
 
 func0000000000000014:
-	slli	a0, a0, 33
 	li	a1, 1
+	slli	a0, a0, 33
 	slli	a1, a1, 32
 	or	a0, a0, a1
 	ret
@@ -37,15 +37,15 @@ func000000000000001f:
 	ret
 
 func000000000000000c:
-	slli	a0, a0, 35
 	li	a1, 1
+	slli	a0, a0, 35
 	slli	a1, a1, 34
 	or	a0, a0, a1
 	ret
 
 func000000000000000f:
-	slli	a0, a0, 16
 	lui	a1, 8
+	slli	a0, a0, 16
 	or	a0, a0, a1
 	ret
 

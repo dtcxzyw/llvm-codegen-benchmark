@@ -50,11 +50,11 @@ func0000000000000028:
 
 func0000000000000008:
 	andi	a2, a2, 1
+	li	a3, -1
 	sub	a2, a2, a1
-	li	a1, -1
-	srli	a1, a1, 1
-	add	a1, a1, a2
-	sltu	a0, a1, a0
+	srli	a3, a3, 1
+	add	a2, a2, a3
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000021:
@@ -81,8 +81,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	andi	a2, a2, 1
 	li	a3, -1
+	andi	a2, a2, 1
 	srli	a3, a3, 2
 	xor	a2, a2, a3
 	sub	a2, a2, a1

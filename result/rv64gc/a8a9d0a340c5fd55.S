@@ -40,8 +40,8 @@ func0000000000000002:
 
 func000000000000000a:
 	fmv.s	fa5, fa0
-	andi	a0, a0, 1
 	fmv.w.x	fa0, zero
+	andi	a0, a0, 1
 	fmv.s	fa4, fa0
 	beqz	a0, .LBB2_3
 	fle.s	a0, fa4, fa0
@@ -79,9 +79,9 @@ func000000000000000c:
 
 func0000000000000008:
 	fmv.s	fa5, fa0
-	andi	a0, a0, 1
 	lui	a1, 285874
 	fmv.w.x	fa0, a1
+	andi	a0, a0, 1
 	fmv.s	fa4, fa0
 	beqz	a0, .LBB4_3
 	fmv.w.x	fa5, zero

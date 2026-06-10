@@ -1,6 +1,6 @@
 func000000000000000a:
-	andi	a0, a0, 1
 	sext.h	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -9,8 +9,8 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	sext.h	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -19,8 +19,8 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 1
 	sext.h	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -30,8 +30,8 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	sext.h	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -40,8 +40,8 @@ func0000000000000006:
 	ret
 
 func0000000000000018:
-	andi	a0, a0, 1
 	sext.h	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -51,8 +51,8 @@ func0000000000000018:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	sext.h	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -61,12 +61,12 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	andi	a0, a0, 1
 	sext.h	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
-	lui	a1, 524288
 	or	a0, a0, a2
+	lui	a1, 524288
 	sext.w	a0, a0
 	addiw	a1, a1, -10
 	sltu	a0, a0, a1

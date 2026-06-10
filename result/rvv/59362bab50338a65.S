@@ -33,13 +33,15 @@ func00000000000002a6:
 	ret
 
 func0000000000000481:
+	li	a0, -10
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v12, v10
-	li	a0, -48
-	vwadd.vx	v10, v12, a0
-	li	a0, -10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwadd.vx	v10, v12, a0
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vv	v0, v10, v8
 	ret
 

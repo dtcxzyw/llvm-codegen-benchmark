@@ -1,6 +1,6 @@
 func0000000000000000:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	addi	a0, a0, 11
@@ -23,8 +23,8 @@ func000000000000003b:
 	ret
 
 func0000000000000030:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret
@@ -69,8 +69,8 @@ func0000000000000040:
 	ret
 
 func000000000000003a:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret

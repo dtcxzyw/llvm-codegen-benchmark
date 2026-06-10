@@ -12,10 +12,10 @@ func0000000000000182:
 	slli	a1, a1, 6
 	snez	a2, a2
 	sub	a1, a1, a3
-	add	a0, a0, a1
-	slli	a1, a2, 3
+	slli	a3, a2, 3
 	slli	a2, a2, 6
-	sub	a2, a2, a1
+	add	a0, a0, a1
+	sub	a2, a2, a3
 	add	a0, a0, a2
 	ret
 
@@ -53,8 +53,8 @@ func000000000000010f:
 func0000000000000142:
 	not	a2, a2
 	slli	a1, a1, 4
-	add	a0, a0, a1
 	srli	a2, a2, 59
+	add	a0, a0, a1
 	andi	a2, a2, 16
 	add	a0, a0, a2
 	ret

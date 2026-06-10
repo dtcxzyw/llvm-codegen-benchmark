@@ -20,9 +20,9 @@ func0000000000000029:
 func000000000000003b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, -29
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
+	li	a0, -29
 	slli	a0, a0, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
@@ -69,9 +69,9 @@ func0000000000000023:
 	ret
 
 func0000000000000036:
+	lui	a0, 14
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	lui	a0, 14
 	vadd.vx	v10, v10, a0
 	vzext.vf2	v12, v8
 	vor.vv	v8, v10, v12

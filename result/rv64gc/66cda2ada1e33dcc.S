@@ -1,8 +1,8 @@
 func0000000000000101:
 	sext.w	a2, a0
 	sext.w	a4, a1
-	lui	a3, 256
 	li	a5, 127
+	lui	a3, 256
 	lui	a1, 512
 	bgeu	a5, a4, .LBB0_3
 	bne	a2, a3, .LBB0_4

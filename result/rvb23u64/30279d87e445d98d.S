@@ -162,10 +162,10 @@ func0000000000000299:
 	ret
 
 func0000000000000101:
-	sltu	a2, a2, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a2, a0
+	seqz	a1, a1
+	and	a0, a0, a1
 	ret
 
 func00000000000000ca:
@@ -181,10 +181,10 @@ func00000000000000c7:
 	ret
 
 func0000000000000141:
-	slt	a2, a2, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	slt	a0, a2, a0
+	seqz	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000109:
@@ -223,9 +223,9 @@ func0000000000000294:
 	ret
 
 func000000000000008c:
-	sltu	a2, a0, a2
-	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a0, a2
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 

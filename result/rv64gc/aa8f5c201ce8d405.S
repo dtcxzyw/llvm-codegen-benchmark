@@ -22,9 +22,9 @@ func0000000000000017:
 	ret
 
 func000000000000000f:
-	srli	a1, a1, 4
 	li	a2, 1
 	slli	a2, a2, 32
+	srli	a1, a1, 4
 	addi	a2, a2, -2
 	add	a1, a1, a2
 	addi	a2, a2, 1
@@ -50,9 +50,9 @@ func0000000000000007:
 	ret
 
 func000000000000001b:
-	srli	a1, a1, 1
 	li	a2, 1
 	slli	a2, a2, 32
+	srli	a1, a1, 1
 	addi	a2, a2, -2
 	add	a1, a1, a2
 	addi	a2, a2, 1

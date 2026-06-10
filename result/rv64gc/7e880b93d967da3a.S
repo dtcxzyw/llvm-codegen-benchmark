@@ -21,9 +21,9 @@ func0000000000000011:
 	mulhsu	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 15
+	lui	a3, 1048573
 	add	a1, a1, a2
-	lui	a2, 1048573
-	addi	a2, a2, 77
+	addi	a2, a3, 77
 	mul	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -85

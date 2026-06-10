@@ -31,8 +31,8 @@ func00000000000001ec:
 	ret
 
 func00000000000003e4:
-	addi	a1, a1, 14
 	lui	a2, 16
+	addi	a1, a1, 14
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	addi	a1, a1, 4
@@ -40,8 +40,8 @@ func00000000000003e4:
 	ret
 
 func00000000000003e8:
-	addi	a1, a1, 14
 	lui	a2, 16
+	addi	a1, a1, 14
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	addi	a1, a1, 4

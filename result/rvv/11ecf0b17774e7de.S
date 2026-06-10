@@ -1,16 +1,16 @@
 func0000000000000003:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v9, v9, 27
-	li	a0, 64
 	vand.vi	v10, v9, 2
 	vand.vx	v11, v8, a0
 	vwaddu.vv	v8, v11, v10
 	ret
 
 func0000000000000002:
+	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v9, v9, 7
-	lui	a0, 524288
 	vand.vi	v10, v9, 2
 	vand.vx	v11, v8, a0
 	vwaddu.vv	v8, v10, v11

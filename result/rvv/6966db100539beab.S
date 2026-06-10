@@ -16,8 +16,8 @@ func0000000000000902:
 	vand.vx	v10, v10, a0
 	li	a0, -21
 	vadd.vx	v10, v10, a0
-	li	a0, 18
 	vmsleu.vi	v12, v10, -6
+	li	a0, 18
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

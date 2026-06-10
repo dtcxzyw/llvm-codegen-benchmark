@@ -20,8 +20,8 @@ func0000000000000081:
 	ret
 
 func0000000000000038:
-	zext.b	a1, a1
 	lui	a2, 16384
+	zext.b	a1, a1
 	sltu	a0, a2, a0
 	czero.nez	a0, a0, a1
 	ret

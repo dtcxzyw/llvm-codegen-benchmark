@@ -1,29 +1,29 @@
 func0000000000000001:
-	slliw	a1, a1, 4
 	slli	a0, a0, 44
+	slliw	a1, a1, 4
 	srli	a0, a0, 60
 	or	a0, a0, a1
 	ret
 
 func0000000000000003:
-	slliw	a1, a1, 1
 	slli	a0, a0, 56
+	slliw	a1, a1, 1
 	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 
 func0000000000000031:
-	slliw	a1, a1, 2
 	srli	a0, a0, 6
+	slliw	a1, a1, 2
 	andi	a0, a0, 2
 	or	a0, a0, a1
 	ret
 
 func0000000000000021:
-	slliw	a1, a1, 16
-	srli	a0, a0, 8
 	lui	a2, 16
+	srli	a0, a0, 8
 	addi	a2, a2, -256
+	slliw	a1, a1, 16
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

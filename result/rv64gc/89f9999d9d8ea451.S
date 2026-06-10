@@ -1,10 +1,10 @@
 func000000000000354c:
-	sext.w	a3, a0
-	li	a4, 1
+	li	a3, 1
+	sext.w	a4, a0
+	sllw	a2, a3, a2
 	addw	a0, a0, a1
-	sllw	a1, a4, a2
-	slt	a0, a1, a0
-	snez	a1, a3
+	slt	a0, a2, a0
+	snez	a1, a4
 	and	a0, a0, a1
 	ret
 

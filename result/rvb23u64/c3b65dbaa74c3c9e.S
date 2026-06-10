@@ -1,6 +1,6 @@
 func0000000000000020:
-	add.uw	a0, a2, a0
 	slli	a1, a1, 32
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -25,8 +25,8 @@ func0000000000000015:
 	ret
 
 func000000000000002c:
-	add.uw	a0, a2, a0
 	slli	a1, a1, 32
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -53,8 +53,8 @@ func0000000000000040:
 	ret
 
 func000000000000003b:
-	add.uw	a0, a2, a0
 	slli	a1, a1, 7
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -71,8 +71,8 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
-	add.uw	a0, a2, a0
 	slli	a1, a1, 32
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 

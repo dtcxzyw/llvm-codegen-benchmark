@@ -31,8 +31,8 @@ func000000000000000a:
 	mulhu	a3, a0, a2
 	mul	a0, a0, a2
 	add	a1, a1, a3
-	srli	a0, a0, 32
 	slli	a2, a1, 32
+	srli	a0, a0, 32
 	or	a0, a0, a2
 	srli	a1, a1, 32
 	ret

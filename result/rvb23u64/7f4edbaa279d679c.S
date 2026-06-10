@@ -1,6 +1,6 @@
 func0000000000000002:
-	or	a0, a0, a2
 	lui	a1, 524296
+	or	a0, a0, a2
 	addi	a1, a1, 110
 	and	a0, a0, a1
 	ret

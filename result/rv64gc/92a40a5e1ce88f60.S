@@ -62,8 +62,8 @@ func0000000000000021:
 
 func0000000000000038:
 	add	a1, a1, a2
-	addi	a0, a0, -1
 	sltiu	a1, a1, 4
+	addi	a0, a0, -1
 	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -159,8 +159,8 @@ func0000000000000e81:
 
 func0000000000000188:
 	neg	a2, a2
-	sltiu	a0, a0, 2
 	xor	a1, a1, a2
+	sltiu	a0, a0, 2
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

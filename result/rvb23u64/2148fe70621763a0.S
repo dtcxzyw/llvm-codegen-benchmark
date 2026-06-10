@@ -8,18 +8,18 @@ func0000000000000081:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	zext.b	a2, a2
 	addi	a2, a2, -8
 	snez	a2, a2
+	sext.w	a1, a1
 	andn	a0, a2, a0
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	zext.b	a2, a2
 	addi	a2, a2, -4
+	sext.w	a1, a1
 	snez	a2, a2
 	sltiu	a1, a1, 4
 	andn	a0, a2, a0

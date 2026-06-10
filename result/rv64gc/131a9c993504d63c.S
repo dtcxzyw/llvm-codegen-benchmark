@@ -13,10 +13,10 @@ func000000000000001f:
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 46
-	and	a1, a1, a2
-	slli	a2, a0, 1
+	slli	a3, a0, 1
 	slli	a0, a0, 3
-	add	a0, a0, a2
+	and	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -26,10 +26,10 @@ func000000000000003f:
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 47
-	and	a1, a1, a2
-	slli	a2, a0, 1
+	slli	a3, a0, 1
 	slli	a0, a0, 3
-	add	a0, a0, a2
+	and	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -39,10 +39,10 @@ func0000000000000030:
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 47
-	and	a1, a1, a2
-	slli	a2, a0, 1
+	slli	a3, a0, 1
 	slli	a0, a0, 3
-	add	a0, a0, a2
+	and	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -52,10 +52,10 @@ func0000000000000010:
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 47
-	and	a1, a1, a2
-	slli	a2, a0, 1
+	slli	a3, a0, 1
 	slli	a0, a0, 3
-	add	a0, a0, a2
+	and	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -83,10 +83,10 @@ func0000000000000018:
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 47
-	and	a1, a1, a2
-	slli	a2, a0, 1
+	slli	a3, a0, 1
 	slli	a0, a0, 3
-	add	a0, a0, a2
+	and	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -96,10 +96,10 @@ func000000000000001e:
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 47
-	and	a1, a1, a2
-	slli	a2, a0, 1
+	slli	a3, a0, 1
 	slli	a0, a0, 3
-	add	a0, a0, a2
+	and	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

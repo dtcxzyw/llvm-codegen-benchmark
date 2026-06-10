@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a2, a2, a1
 	xor	a0, a0, a1
@@ -10,9 +10,9 @@ func0000000000000021:
 	ret
 
 func00000000000000ea:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a0, a0
 	slt	a2, a2, a1
 	xori	a2, a2, 1
 	slt	a0, a1, a0
@@ -20,8 +20,8 @@ func00000000000000ea:
 	ret
 
 func0000000000000108:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sext.w	a2, a2
 	sltu	a2, a2, a1
 	sltu	a0, a1, a0
@@ -29,8 +29,8 @@ func0000000000000108:
 	ret
 
 func0000000000000294:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltu	a2, a1, a2
 	sltu	a0, a0, a1
@@ -38,18 +38,18 @@ func0000000000000294:
 	ret
 
 func000000000000014b:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sext.w	a2, a2
-	slt	a2, a2, a1
 	slt	a0, a0, a1
+	slt	a1, a2, a1
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000014a:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sext.w	a2, a2
 	slt	a2, a2, a1
 	slt	a0, a1, a0
@@ -57,8 +57,8 @@ func000000000000014a:
 	ret
 
 func00000000000000c6:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a2, a1, a2
 	slt	a0, a0, a1
@@ -74,9 +74,9 @@ func000000000000018c:
 	ret
 
 func0000000000000026:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a0, a0
 	xor	a2, a2, a1
 	seqz	a2, a2
 	slt	a0, a0, a1
@@ -84,8 +84,8 @@ func0000000000000026:
 	ret
 
 func0000000000000286:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltu	a2, a1, a2
 	slt	a0, a0, a1
@@ -93,8 +93,8 @@ func0000000000000286:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a2, a1, a2
 	slt	a0, a1, a0
@@ -102,9 +102,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000128:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sltu	a2, a1, a2
 	xori	a2, a2, 1
 	sltu	a0, a1, a0
@@ -112,8 +112,8 @@ func0000000000000128:
 	ret
 
 func0000000000000318:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sext.w	a2, a2
 	sltu	a2, a2, a1
 	sltu	a0, a1, a0

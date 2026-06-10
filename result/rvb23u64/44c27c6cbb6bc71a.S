@@ -23,8 +23,8 @@ func0000000000000074:
 	ret
 
 func00000000000000d4:
-	slli	a2, a2, 4
 	sh2add	a0, a1, a0
+	slli	a2, a2, 4
 	add	a0, a0, a2
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000013:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v10, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -24,10 +24,10 @@ func0000000000000007:
 	ret
 
 func0000000000000023:
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv1r.v	v10, v0
 	lui	a0, 16
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv1r.v	v10, v0
 	vmsgtu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0

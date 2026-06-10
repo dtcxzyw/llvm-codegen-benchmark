@@ -24,8 +24,8 @@ func000000000000000f:
 	ret
 
 func0000000000000004:
-	slli	a0, a0, 3
 	li	a1, 8
+	slli	a0, a0, 3
 	sub	a0, a1, a0
 	ret
 

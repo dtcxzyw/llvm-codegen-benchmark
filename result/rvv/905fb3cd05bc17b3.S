@@ -19,9 +19,9 @@ func0000000000000368:
 	ret
 
 func0000000000000328:
+	li	a0, -36
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v14, v12
-	li	a0, -36
 	vwsll.vi	v12, v14, 24
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12

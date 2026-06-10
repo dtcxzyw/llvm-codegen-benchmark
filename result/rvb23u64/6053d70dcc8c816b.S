@@ -1,8 +1,8 @@
 func0000000000000000:
 	fcvt.d.s	fa5, fa2
-	fcvt.d.s	fa4, fa1
-	fli.d	fa3, 0.5
-	fmul.d	fa3, fa0, fa3
-	fmadd.d	fa0, fa3, fa4, fa5
+	fli.d	fa4, 0.5
+	fmul.d	fa4, fa0, fa4
+	fcvt.d.s	fa3, fa1
+	fmadd.d	fa0, fa4, fa3, fa5
 	ret
 

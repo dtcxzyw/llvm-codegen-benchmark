@@ -1,10 +1,10 @@
 func0000000000000118:
+	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, -8
-	lui	a0, 1048560
 	addi	a1, a0, -17
-	addi	a0, a0, 23
 	vadd.vx	v10, v10, a1
+	addi	a0, a0, 23
 	vmsltu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
@@ -25,9 +25,9 @@ func0000000000000208:
 	lui	a0, 1048568
 	addi	a1, a0, -1
 	vadd.vx	v10, v10, a1
-	lui	a1, 1
 	vmsltu.vx	v12, v10, a0
-	vmsgtu.vx	v10, v8, a1
+	lui	a0, 1
+	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret
 

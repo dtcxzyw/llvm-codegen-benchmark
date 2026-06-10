@@ -21,8 +21,8 @@ func000000000000002c:
 
 func00000000000000c1:
 	slli	a1, a1, 48
-	lui	a2, 1048569
 	srai	a1, a1, 48
+	lui	a2, 1048569
 	slt	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

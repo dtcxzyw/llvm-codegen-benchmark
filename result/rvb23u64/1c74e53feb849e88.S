@@ -24,9 +24,9 @@ func0000000000000008:
 	ret
 
 func0000000000000005:
-	zext.h	a0, a0
 	lui	a2, 16
 	addi	a2, a2, -2
+	zext.h	a0, a0
 	and	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
@@ -59,8 +59,8 @@ func0000000000000019:
 	ret
 
 func0000000000000009:
-	zext.h	a0, a0
 	slli	a1, a1, 50
+	zext.h	a0, a0
 	srli	a1, a1, 50
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

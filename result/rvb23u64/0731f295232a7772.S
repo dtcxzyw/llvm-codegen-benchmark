@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	fcvt.d.wu	fa5, a1
+	andi	a0, a0, 1
 	fli.d	fa4, nan
 	bnez	a0, .LBB0_2
 	fmv.d	fa4, fa0

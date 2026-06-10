@@ -7,9 +7,9 @@ func0000000000000026:
 	ret
 
 func0000000000000038:
-	sext.w	a2, a1
-	li	a3, 3
-	bgeu	a3, a2, .LBB1_2
+	li	a2, 3
+	sext.w	a3, a1
+	bgeu	a2, a3, .LBB1_2
 	li	a0, 5
 	subw	a0, a0, a1
 .LBB1_2:
@@ -24,9 +24,9 @@ func0000000000000006:
 	ret
 
 func0000000000000074:
-	sext.w	a2, a1
-	li	a3, 127
-	bgeu	a2, a3, .LBB3_2
+	li	a2, 127
+	sext.w	a3, a1
+	bgeu	a3, a2, .LBB3_2
 	xori	a0, a1, 127
 .LBB3_2:
 	ret
@@ -40,9 +40,9 @@ func000000000000004a:
 	ret
 
 func0000000000000034:
-	sext.w	a2, a1
-	li	a3, 161
-	bgeu	a2, a3, .LBB5_2
+	li	a2, 161
+	sext.w	a3, a1
+	bgeu	a3, a2, .LBB5_2
 	li	a0, 160
 	subw	a0, a0, a1
 .LBB5_2:
@@ -57,18 +57,18 @@ func000000000000000a:
 	ret
 
 func0000000000000078:
-	sext.w	a2, a1
-	li	a3, 1
-	bgeu	a3, a2, .LBB7_2
+	li	a2, 1
+	sext.w	a3, a1
+	bgeu	a2, a3, .LBB7_2
 	li	a0, -5
 	subw	a0, a0, a1
 .LBB7_2:
 	ret
 
 func0000000000000044:
-	srliw	a2, a1, 23
-	li	a3, 383
-	bgeu	a2, a3, .LBB8_2
+	li	a2, 383
+	srliw	a3, a1, 23
+	bgeu	a3, a2, .LBB8_2
 	lui	a0, 784384
 	subw	a0, a0, a1
 .LBB8_2:

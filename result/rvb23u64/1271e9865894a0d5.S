@@ -41,10 +41,10 @@ func0000000000000075:
 	lui	a2, 1048573
 	addi	a2, a2, -1
 	mul	a1, a1, a2
-	lui	a2, 48
 	sh3add	a0, a0, a1
-	addi	a2, a2, 16
-	addw	a0, a0, a2
+	lui	a1, 48
+	addi	a1, a1, 16
+	addw	a0, a0, a1
 	ret
 
 func00000000000000ff:

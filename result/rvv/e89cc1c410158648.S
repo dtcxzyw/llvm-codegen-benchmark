@@ -26,10 +26,10 @@ func0000000000000166:
 	ret
 
 func0000000000000066:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v10, 12
 	lui	a0, 349525
 	addi	a0, a0, 1366
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vi	v10, v10, 12
 	vmulh.vx	v10, v10, a0
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v12, v10, v11

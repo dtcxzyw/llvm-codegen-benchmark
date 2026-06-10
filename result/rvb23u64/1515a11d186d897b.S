@@ -15,14 +15,14 @@ func000000000000052a:
 	ret
 
 func0000000000000508:
-	sext.w	a1, a1
 	andi	a2, a2, 1
 	li	a3, 100
+	sext.w	a1, a1
 	czero.nez	a2, a3, a2
+	addi	a2, a2, -1980
 	lui	a3, 1048575
 	slti	a1, a1, 1980
 	addi	a3, a3, 216
-	addi	a2, a2, -1980
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

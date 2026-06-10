@@ -8,23 +8,23 @@ func0000000000000081:
 	ret
 
 func000000000000014b:
-	srli	a2, a1, 63
-	li	a3, -1
-	srli	a3, a3, 1
-	czero.eqz	a3, a3, a2
-	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	li	a2, -1
+	srli	a3, a1, 63
+	srli	a2, a2, 1
+	czero.eqz	a2, a2, a3
+	czero.nez	a1, a1, a3
+	or	a1, a1, a2
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000146:
-	srli	a2, a1, 63
-	li	a3, -1
-	srli	a3, a3, 1
-	czero.eqz	a3, a3, a2
-	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	li	a2, -1
+	srli	a3, a1, 63
+	srli	a2, a2, 1
+	czero.eqz	a2, a2, a3
+	czero.nez	a1, a1, a3
+	or	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 
@@ -48,12 +48,12 @@ func0000000000000144:
 	ret
 
 func000000000000014a:
-	sgtz	a2, a1
-	lui	a3, 524288
-	addiw	a3, a3, -1
-	czero.nez	a3, a3, a2
-	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
+	lui	a2, 524288
+	sgtz	a3, a1
+	addiw	a2, a2, -1
+	czero.nez	a2, a2, a3
+	czero.eqz	a1, a1, a3
+	or	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 

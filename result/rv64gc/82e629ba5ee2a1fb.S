@@ -1,7 +1,7 @@
 func0000000000000408:
 	sub	a2, a2, a1
-	lui	a1, 2
 	add	a0, a0, a2
+	lui	a1, 2
 	addiw	a0, a0, 1
 	addi	a1, a1, 1808
 	sltu	a0, a1, a0
@@ -23,8 +23,8 @@ func00000000000002a6:
 
 func0000000000000688:
 	sub	a2, a2, a1
-	lui	a1, 2
 	add	a0, a0, a2
+	lui	a1, 2
 	addiw	a0, a0, 1
 	addi	a1, a1, 1808
 	sltu	a0, a1, a0

@@ -5,8 +5,8 @@ func000000000000018c:
 	ret
 
 func0000000000000021:
-	andi	a1, a1, 1
 	li	a3, -1
+	andi	a1, a1, 1
 	srli	a3, a3, 1
 	xor	a2, a2, a3
 	xor	a0, a0, a3

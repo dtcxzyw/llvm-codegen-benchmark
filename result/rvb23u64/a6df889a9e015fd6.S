@@ -45,8 +45,8 @@ func0000000000000301:
 
 func0000000000000314:
 	lui	a2, 128
-	lui	a3, 1048480
 	sltu	a1, a2, a1
+	lui	a3, 1048480
 	czero.nez	a1, a3, a1
 	addi	a2, a2, -1
 	add	a1, a1, a2

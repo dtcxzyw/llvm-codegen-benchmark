@@ -11,8 +11,8 @@ func0000000000000708:
 	addi	a0, a0, 30
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v8, a0
-	lui	a0, 16
 	vminu.vv	v8, v10, v8
+	lui	a0, 16
 	addi	a0, a0, -16
 	vmsgtu.vx	v0, v8, a0
 	ret

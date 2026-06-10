@@ -1,9 +1,9 @@
 func0000000000000007:
 	bseti	a0, zero, 40
 	addi	a1, a0, -1280
-	addi	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	addi	a0, a0, -256
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	li	a0, 233

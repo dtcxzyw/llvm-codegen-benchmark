@@ -17,8 +17,8 @@ func0000000000000058:
 func0000000000000070:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	seqz	a1, a1
 	sltiu	a0, a0, 3
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -50,16 +50,16 @@ func0000000000000042:
 func0000000000000054:
 	sext.w	a0, a0
 	addiw	a1, a1, -1
-	seqz	a1, a1
 	slti	a0, a0, 2
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000318:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	lui	a2, 16384
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0

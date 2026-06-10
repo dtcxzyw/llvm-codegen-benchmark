@@ -243,12 +243,12 @@ func0000000000000086:
 	ret
 
 func0000000000000108:
+	lui	a3, 2384
 	add	a1, a1, a2
-	lui	a2, 2384
+	addi	a2, a3, 761
 	add	a0, a0, a1
-	addi	a1, a2, 761
-	slli	a1, a1, 9
-	sltu	a0, a1, a0
+	slli	a2, a2, 9
+	sltu	a0, a2, a0
 	ret
 
 func000000000000010c:
@@ -301,13 +301,13 @@ func000000000000018a:
 	ret
 
 func0000000000000018:
+	lui	a3, 2575
+	addi	a3, a3, -325
 	add	a1, a1, a2
-	lui	a2, 2575
+	slli	a3, a3, 13
 	add	a0, a0, a1
-	addi	a1, a2, -325
-	slli	a1, a1, 13
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	addi	a3, a3, -1
+	sltu	a0, a3, a0
 	ret
 
 func00000000000001a4:

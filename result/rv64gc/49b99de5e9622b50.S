@@ -1,6 +1,6 @@
 func00000000000000e1:
-	slli	a1, a1, 48
 	lui	a2, 1600
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -15,8 +15,8 @@ func00000000000000f8:
 	ret
 
 func0000000000000061:
-	slli	a1, a1, 48
 	lui	a2, 5312
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

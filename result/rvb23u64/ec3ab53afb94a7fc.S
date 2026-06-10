@@ -7,15 +7,15 @@ func0000000000000003:
 	or	a0, a0, a1
 	ret
 
+.LCPI1_0:
+	.quad	-42331734548481
 func0000000000000002:
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	andi	a1, a1, 8
-	bseti	a2, zero, 35
-	czero.eqz	a1, a2, a1
-	lui	a2, 78849
-	slli	a2, a2, 4
-	addi	a2, a2, 1
-	slli	a2, a2, 13
-	andn	a0, a0, a2
+	bseti	a3, zero, 35
+	czero.eqz	a1, a3, a1
+	and	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 29
 	ret

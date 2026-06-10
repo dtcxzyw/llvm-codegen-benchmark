@@ -1,6 +1,6 @@
 func000000000000002d:
-	addi	a1, a1, 2
 	lui	a2, 838861
+	addi	a1, a1, 2
 	addi	a2, a2, -819
 	slli	a2, a2, 32
 	slli	a1, a1, 32
@@ -11,8 +11,8 @@ func000000000000002d:
 	ret
 
 func0000000000000020:
-	addi	a1, a1, -6
 	lui	a2, 233017
+	addi	a1, a1, -6
 	addi	a2, a2, -455
 	slli	a2, a2, 32
 	slli	a1, a1, 32
@@ -25,9 +25,9 @@ func0000000000000020:
 func0000000000000006:
 	lui	a2, 12
 	addi	a2, a2, -1153
+	lui	a3, 22370
 	add	a1, a1, a2
-	lui	a2, 22370
-	addi	a2, a2, -1551
+	addi	a2, a3, -1551
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -50,8 +50,8 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	addi	a1, a1, -15
 	lui	a2, 526344
+	addi	a1, a1, -15
 	addi	a2, a2, 129
 	slli	a2, a2, 32
 	slli	a1, a1, 32

@@ -17,15 +17,15 @@ func000000000000001f:
 
 func000000000000007b:
 	addi	a2, a2, 1
-	andi	a2, a2, 3
 	sh2add	a0, a1, a0
+	andi	a2, a2, 3
 	sh2add	a0, a2, a0
 	ret
 
 func000000000000003b:
 	addi	a2, a2, 1
-	andi	a2, a2, 3
 	sh2add	a0, a1, a0
+	andi	a2, a2, 3
 	sh2add	a0, a2, a0
 	ret
 

@@ -3,9 +3,9 @@ func0000000000000044:
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmflt.vf	v14, v12, fa5
-	vmsltu.vv	v12, v8, v10
-	vmand.mm	v0, v12, v14
+	vmsltu.vv	v14, v8, v10
+	vmflt.vf	v8, v12, fa5
+	vmand.mm	v0, v14, v8
 	ret
 
 func00000000000000b4:

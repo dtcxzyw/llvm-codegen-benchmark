@@ -20,9 +20,9 @@ func000000000000000d:
 
 func000000000000000f:
 	srli	a4, a2, 63
+	sh1add	a3, a3, a4
 	sh1add	a0, a2, a0
 	slli	a2, a2, 1
-	sh1add	a3, a3, a4
 	sltu	a2, a0, a2
 	add	a1, a1, a3
 	add	a1, a1, a2

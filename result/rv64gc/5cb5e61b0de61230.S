@@ -10,10 +10,10 @@ func0000000000000015:
 	ret
 
 func0000000000000010:
+	lui	a2, 427198
 	sub	a1, a1, a0
-	lui	a0, 427198
+	addi	a0, a2, -1517
 	srli	a1, a1, 4
-	addi	a0, a0, -1517
 	slli	a0, a0, 32
 	mul	a0, a1, a0
 	li	a1, -1
@@ -33,10 +33,10 @@ func000000000000001d:
 	ret
 
 func0000000000000012:
+	lui	a2, 699051
 	sub	a1, a1, a0
-	lui	a0, 699051
+	addi	a0, a2, -1365
 	srli	a1, a1, 3
-	addi	a0, a0, -1365
 	slli	a0, a0, 32
 	mul	a0, a1, a0
 	li	a1, 1

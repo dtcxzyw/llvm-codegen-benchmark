@@ -1,6 +1,6 @@
 func0000000000000055:
-	sext.w	a2, a2
 	lui	a3, 1048409
+	sext.w	a2, a2
 	addi	a3, a3, 131
 	mul	a2, a2, a3
 	sub	a0, a1, a0
@@ -26,8 +26,8 @@ func0000000000000040:
 	ret
 
 func0000000000000035:
-	zext.w	a2, a2
 	lui	a3, 1
+	zext.w	a2, a2
 	addi	a3, a3, 1697
 	mul	a2, a2, a3
 	sub	a0, a1, a0
@@ -35,8 +35,8 @@ func0000000000000035:
 	ret
 
 func0000000000000015:
-	zext.w	a2, a2
 	lui	a3, 1048573
+	zext.w	a2, a2
 	addi	a3, a3, 702
 	mul	a2, a2, a3
 	sub	a0, a1, a0

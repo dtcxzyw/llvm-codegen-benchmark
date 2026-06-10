@@ -8,9 +8,9 @@ func0000000000000008:
 
 func0000000000000078:
 	neg	a2, a1
+	lui	a3, 244
 	max	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
+	addi	a2, a3, 576
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

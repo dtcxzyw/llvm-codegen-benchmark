@@ -15,21 +15,21 @@ func0000000000000055:
 	ret
 
 func0000000000000054:
-	slli	a1, a0, 2
-	li	a2, -15
-	addi	a1, a1, 7
-	srli	a2, a2, 1
+	li	a1, -15
+	slli	a2, a0, 2
+	addi	a2, a2, 7
+	srli	a1, a1, 1
 	and	a1, a1, a2
 	slli	a0, a0, 3
 	add	a0, a0, a1
 	ret
 
 func00000000000000ff:
-	slli	a1, a0, 2
-	li	a2, 1
-	addi	a1, a1, 7
-	slli	a2, a2, 35
-	addi	a2, a2, -8
+	li	a1, 1
+	slli	a2, a0, 2
+	slli	a1, a1, 35
+	addi	a2, a2, 7
+	addi	a1, a1, -8
 	and	a1, a1, a2
 	slli	a0, a0, 3
 	add	a0, a0, a1

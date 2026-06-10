@@ -37,18 +37,18 @@ func0000000000000013:
 	ret
 
 func0000000000000012:
+	li	a0, 32
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsleu.vi	v0, v10, 7
-	li	a0, 32
 	vor.vx	v10, v9, a0
 	vmerge.vvm	v9, v10, v9, v0
 	vor.vv	v8, v9, v8
 	ret
 
 func0000000000000010:
+	li	a0, 64
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsleu.vi	v0, v10, 7
-	li	a0, 64
 	vor.vx	v10, v9, a0
 	vmerge.vvm	v9, v10, v9, v0
 	vor.vv	v8, v9, v8

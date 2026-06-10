@@ -13,12 +13,12 @@ func0000000000000002:
 func0000000000000004:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmv.v.f	v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
-	vfmax.vf	v8, v8, fa4
+	lui	a0, %hi(.LCPI1_1)
+	fld	fa5, %lo(.LCPI1_1)(a0)
+	vfmax.vf	v8, v8, fa5
 	ret
 
 func000000000000000e:
@@ -40,8 +40,8 @@ func000000000000000a:
 func000000000000000c:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv.v.i	v16, 0
-	fmv.d.x	fa5, zero
 	vmerge.vvm	v8, v16, v8, v0
+	fmv.d.x	fa5, zero
 	vmfge.vf	v0, v8, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	ret

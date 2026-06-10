@@ -14,8 +14,8 @@ func0000000000000017:
 	ret
 
 func000000000000001e:
-	slli	a1, a1, 2
 	lui	a2, 524288
+	slli	a1, a1, 2
 	addiw	a2, a2, -256
 	and	a1, a1, a2
 	slliw	a0, a0, 16

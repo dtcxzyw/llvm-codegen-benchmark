@@ -1,10 +1,10 @@
 func000000000000002a:
 	add	a1, a1, a2
-	lui	a2, 13824
-	slli	a1, a1, 20
-	addw	a1, a1, a2
 	lui	a2, 524544
+	slli	a1, a1, 20
+	lui	a3, 13824
 	addi	a2, a2, -1
+	addw	a1, a1, a3
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -19,11 +19,11 @@ func0000000000000021:
 
 func000000000000000a:
 	add	a1, a1, a2
-	lui	a2, 260096
-	slli	a1, a1, 23
-	addw	a1, a1, a2
 	lui	a2, 526336
+	slli	a1, a1, 23
+	lui	a3, 260096
 	addi	a2, a2, -1
+	addw	a1, a1, a3
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

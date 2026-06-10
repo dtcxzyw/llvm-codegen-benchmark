@@ -1,12 +1,12 @@
 func00000000000001c3:
 	sext.w	a2, a2
-	slli	a0, a0, 4
 	sh1add	a3, a2, a2
 	sh1add	a2, a3, a2
 	lui	a3, 33
-	addi	a3, a3, -1964
 	sh3add	a1, a2, a1
-	add	a0, a0, a3
+	slli	a0, a0, 4
+	addi	a2, a3, -1964
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

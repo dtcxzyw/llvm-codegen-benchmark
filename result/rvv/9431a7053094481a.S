@@ -70,8 +70,8 @@ func0000000000000018:
 	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
-	li	a0, -17
 	vmerge.vim	v10, v10, 15, v0
+	li	a0, -17
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -81,8 +81,8 @@ func0000000000000018:
 func0000000000000014:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 7
-	li	a0, -32
 	vmerge.vim	v10, v10, 15, v0
+	li	a0, -32
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	li	a0, 31

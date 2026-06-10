@@ -32,8 +32,8 @@ func0000000000000181:
 	bseti	a0, zero, 11
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 46
 	vmseq.vi	v9, v10, 0
+	li	a0, 46
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -43,8 +43,8 @@ func000000000000018c:
 	bseti	a0, zero, 11
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 46
 	vmsne.vi	v9, v10, 0
+	li	a0, 46
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -63,8 +63,8 @@ func00000000000000c1:
 func0000000000000081:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vi	v10, v10, 8
-	li	a0, 32
 	vmseq.vi	v9, v10, 0
+	li	a0, 32
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

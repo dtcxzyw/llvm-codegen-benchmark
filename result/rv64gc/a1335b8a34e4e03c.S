@@ -1,9 +1,9 @@
 func000000000000000d:
-	slli	a1, a0, 33
-	srli	a1, a1, 53
-	li	a2, 75
-	sub	a2, a2, a1
-	srlw	a0, a0, a2
-	sllw	a0, a0, a2
+	li	a1, 75
+	slli	a2, a0, 33
+	srli	a2, a2, 53
+	sub	a1, a1, a2
+	srlw	a0, a0, a1
+	sllw	a0, a0, a1
 	ret
 

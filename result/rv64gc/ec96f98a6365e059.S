@@ -1,10 +1,10 @@
 func0000000000000004:
-	fmv.d	fa5, fa0
-	fmv.d.x	fa0, zero
-	flt.d	a0, fa0, fa5
+	fmv.d.x	fa5, zero
+	flt.d	a0, fa5, fa0
 	beqz	a0, .LBB0_2
-	fdiv.d	fa0, fa1, fa2
+	fdiv.d	fa5, fa1, fa2
 .LBB0_2:
+	fmv.d	fa0, fa5
 	ret
 
 func0000000000000003:
@@ -28,11 +28,11 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	fmv.d	fa5, fa0
-	fmv.d.x	fa0, zero
-	feq.d	a0, fa5, fa0
+	fmv.d.x	fa5, zero
+	feq.d	a0, fa0, fa5
 	bnez	a0, .LBB4_2
-	fdiv.d	fa0, fa1, fa2
+	fdiv.d	fa5, fa1, fa2
 .LBB4_2:
+	fmv.d	fa0, fa5
 	ret
 

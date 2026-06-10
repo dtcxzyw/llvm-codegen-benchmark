@@ -7,11 +7,11 @@ func0000000000000688:
 	ret
 
 func0000000000000684:
+	lui	a0, 524288
+	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vcpop.v	v10, v8
-	lui	a0, 524288
 	vmsleu.vi	v12, v10, 1
-	addiw	a0, a0, -1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -41,9 +41,9 @@ func0000000000000284:
 	ret
 
 func0000000000000024:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vcpop.v	v10, v8
-	bseti	a0, zero, 32
 	vmseq.vi	v12, v10, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
@@ -66,9 +66,9 @@ func000000000000002a:
 	ret
 
 func0000000000000288:
+	li	a0, 511
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vcpop.v	v10, v8
-	li	a0, 511
 	vmsleu.vi	v12, v10, 1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12

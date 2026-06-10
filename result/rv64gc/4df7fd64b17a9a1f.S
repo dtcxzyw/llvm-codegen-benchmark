@@ -9,11 +9,11 @@ func000000000000000e:
 	ret
 
 func000000000000001e:
-	slli	a0, a0, 3
 	lui	a1, 36992
-	addi	a0, a0, -16
 	addi	a1, a1, 1798
+	slli	a0, a0, 3
 	slli	a2, a1, 32
+	addi	a0, a0, -16
 	add	a1, a1, a2
 	srl	a0, a1, a0
 	ret

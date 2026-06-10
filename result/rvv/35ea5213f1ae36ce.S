@@ -1,20 +1,20 @@
 func0000000000000185:
 	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vrsub.vx	v10, v10, a0
 	vmseq.vi	v0, v8, 0
-	vrsub.vx	v8, v10, a0
-	vmv.v.i	v10, -1
-	vsll.vv	v8, v10, v8
+	vmv.v.i	v8, -1
+	vsll.vv	v8, v8, v10
 	vmerge.vim	v8, v8, -1, v0
 	ret
 
 func0000000000000186:
 	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vrsub.vx	v10, v10, a0
 	vmseq.vi	v0, v8, 0
-	vrsub.vx	v8, v10, a0
-	vmv.v.i	v10, 1
-	vsll.vv	v8, v10, v8
+	vmv.v.i	v8, 1
+	vsll.vv	v8, v8, v10
 	vmerge.vim	v8, v8, 1, v0
 	ret
 

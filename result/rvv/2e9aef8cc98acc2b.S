@@ -4,8 +4,8 @@ func0000000000000002:
 	li	a0, -1024
 	zext.w	a0, a0
 	vand.vx	v8, v10, a0
-	li	a0, 1023
 	vmseq.vi	v0, v8, 0
+	li	a0, 1023
 	vmv.v.x	v8, a0
 	vzext.vf2	v8, v12, v0.t
 	ret

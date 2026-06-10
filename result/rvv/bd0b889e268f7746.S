@@ -25,8 +25,8 @@ func0000000000000026:
 func00000000000000a6:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vv	v8, v8, v10
-	lui	a0, 1048540
 	vmsle.vi	v0, v8, -1
+	lui	a0, 1048540
 	addi	a0, a0, 1360
 	vadd.vx	v8, v8, a0, v0.t
 	ret
@@ -51,14 +51,13 @@ func000000000000008a:
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 
+.LCPI6_0:
+	.quad	8446744073709551616
 func0000000000000028:
+	lui	a0, %hi(.LCPI6_0)
+	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	lui	a0, 960284
-	addi	a0, a0, -1545
-	slli.uw	a0, a0, 12
-	addi	a0, a0, -317
-	slli	a0, a0, 19
 	vadd.vx	v10, v8, a0
 	vminu.vv	v8, v10, v8
 	ret

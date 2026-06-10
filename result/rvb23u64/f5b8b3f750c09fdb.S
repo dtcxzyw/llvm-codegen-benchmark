@@ -15,10 +15,10 @@ func0000000000000003:
 
 func0000000000000002:
 	li	a1, 8
+	li	a2, -8
 	max	a0, a0, a1
-	li	a1, -8
-	add.uw	a0, a1, a0
-	zext.w	a1, a1
+	zext.w	a1, a2
+	add.uw	a0, a2, a0
 	addi	a1, a1, 6
 	and	a0, a0, a1
 	ret

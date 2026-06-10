@@ -57,8 +57,8 @@ func0000000000000081:
 
 func0000000000000024:
 	lui	a3, 16
-	lui	a4, 7
 	addi	a3, a3, -1
+	lui	a4, 7
 	and	a2, a2, a3
 	addi	a4, a4, -512
 	beq	a2, a4, .LBB5_2

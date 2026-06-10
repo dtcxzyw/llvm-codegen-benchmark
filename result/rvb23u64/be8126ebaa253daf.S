@@ -1,7 +1,7 @@
 func0000000000000284:
 	sext.w	a1, a1
-	sext.w	a0, a0
 	zext.b	a2, a2
+	sext.w	a0, a0
 	addi	a2, a2, -48
 	sltiu	a2, a2, 10
 	sltu	a0, a0, a1
@@ -9,9 +9,9 @@ func0000000000000284:
 	ret
 
 func0000000000000144:
+	zext.b	a2, a2
 	sext.w	a0, a0
 	sext.w	a1, a1
-	zext.b	a2, a2
 	addi	a2, a2, -48
 	sltiu	a2, a2, 10
 	slt	a0, a1, a0
@@ -30,9 +30,9 @@ func0000000000000024:
 	ret
 
 func0000000000000104:
+	zext.b	a2, a2
 	sext.w	a0, a0
 	sext.w	a1, a1
-	zext.b	a2, a2
 	addi	a2, a2, -11
 	sltiu	a2, a2, 5
 	sltu	a0, a1, a0

@@ -19,8 +19,8 @@ func0000000000000018:
 	ret
 
 func000000000000000c:
-	zext.b	a0, a0
 	lui	a1, 4
+	zext.b	a0, a0
 	czero.nez	a0, a1, a0
 	bseti	a0, a0, 13
 	bseti	a0, a0, 18

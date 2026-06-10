@@ -27,8 +27,8 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 7
 	slli	a0, a0, 63
+	slli	a1, a1, 7
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ori	a0, a0, 16

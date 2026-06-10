@@ -1,6 +1,6 @@
 func000000000000000a:
-	sext.w	a0, a0
 	lui	a1, 419430
+	sext.w	a0, a0
 	addi	a1, a1, 1639
 	mul	a1, a1, a0
 	srli	a2, a1, 63

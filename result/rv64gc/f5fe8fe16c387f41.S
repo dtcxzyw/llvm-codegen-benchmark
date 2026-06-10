@@ -2,8 +2,8 @@ func0000000000000001:
 	slli	a2, a1, 2
 	add	a1, a1, a2
 	lui	a2, 877240
-	addi	a2, a2, 215
 	addi	a1, a1, 2
+	addi	a2, a2, 215
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -15,8 +15,8 @@ func0000000000000029:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addi	a2, a2, -819
 	addi	a1, a1, 2
+	addi	a2, a2, -819
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -28,8 +28,8 @@ func0000000000000079:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addi	a2, a2, -819
 	addi	a1, a1, 2
+	addi	a2, a2, -819
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -41,8 +41,8 @@ func0000000000000003:
 	slli	a2, a1, 2
 	add	a1, a1, a2
 	lui	a2, 175448
-	addi	a2, a2, 43
 	addi	a1, a1, 2
+	addi	a2, a2, 43
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -54,8 +54,8 @@ func0000000000000018:
 	li	a2, -137
 	mul	a1, a1, a2
 	lui	a2, 142180
-	addi	a2, a2, -833
 	addi	a1, a1, 136
+	addi	a2, a2, -833
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -67,8 +67,8 @@ func0000000000000019:
 	li	a2, -137
 	mul	a1, a1, a2
 	lui	a2, 142180
-	addi	a2, a2, -833
 	addi	a1, a1, 136
+	addi	a2, a2, -833
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -80,8 +80,8 @@ func0000000000000000:
 	li	a2, 25
 	mul	a1, a1, a2
 	lui	a2, 335544
-	addi	a2, a2, 1311
 	addi	a1, a1, 99
+	addi	a2, a2, 1311
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -95,9 +95,9 @@ func0000000000000028:
 	mul	a1, a1, a2
 	lui	a2, 42054
 	addi	a2, a2, -1284
+	lui	a3, 335544
 	add	a1, a1, a2
-	lui	a2, 335544
-	addi	a2, a2, 1311
+	addi	a2, a3, 1311
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -111,9 +111,9 @@ func0000000000000078:
 	mul	a1, a1, a2
 	lui	a2, 42054
 	addi	a2, a2, -1284
+	lui	a3, 335544
 	add	a1, a1, a2
-	lui	a2, 335544
-	addi	a2, a2, 1311
+	addi	a2, a3, 1311
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2

@@ -1,10 +1,10 @@
 func0000000000000000:
 	andi	a1, a1, 1
+	lui	a3, 382929
 	addi	a1, a1, -1
+	addi	a3, a3, 1320
 	and	a1, a1, a2
-	lui	a2, 382929
-	addi	a2, a2, 1320
-	add	a0, a0, a2
+	add	a0, a0, a3
 	subw	a0, a0, a1
 	ret
 

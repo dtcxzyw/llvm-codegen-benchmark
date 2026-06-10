@@ -10,9 +10,9 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	andi	a1, a1, 32
 	srli	a1, a1, 3
+	sext.w	a0, a0
 	addi	a1, a1, 4
 	czero.eqz	a0, a1, a0
 	ret

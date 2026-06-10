@@ -63,9 +63,9 @@ func000000000000014c:
 	ret
 
 func0000000000000141:
+	li	a0, 2047
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, 2047
 	vmseq.vv	v12, v8, v14
 	vmsgt.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8

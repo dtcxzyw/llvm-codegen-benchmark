@@ -8,18 +8,18 @@ func0000000000000003:
 func0000000000000001:
 	or	a1, a1, a2
 	lui	a2, 32768
+	bseti	a3, zero, 11
 	and	a1, a1, a2
-	bseti	a2, zero, 11
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000000:
 	or	a1, a1, a2
 	lui	a2, 48
+	lui	a3, 16
 	and	a1, a1, a2
-	lui	a2, 16
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

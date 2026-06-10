@@ -1,6 +1,6 @@
 func00000000000000ff:
-	addi	a2, a2, 7
 	bseti	a3, zero, 33
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -32,8 +32,8 @@ func0000000000000040:
 	ret
 
 func0000000000000070:
-	addi	a2, a2, -2
 	sh3add	a0, a0, a1
+	addi	a2, a2, -2
 	sh3add.uw	a0, a2, a0
 	addi	a0, a0, 144
 	ret

@@ -10,28 +10,28 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	slliw	a0, a0, 16
 	lui	a1, 241664
+	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
+	lui	a1, 231424
 	slli	a0, a0, 48
 	srli	a0, a0, 35
-	lui	a1, 231424
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	slliw	a0, a0, 20
 	lui	a1, 241
+	slliw	a0, a0, 20
 	addi	a1, a1, -2048
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
-	slliw	a0, a0, 16
 	lui	a1, 32768
+	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 

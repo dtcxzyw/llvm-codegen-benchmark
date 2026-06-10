@@ -21,8 +21,8 @@ func000000000000040c:
 	li	a0, 17
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsltu.vx	v10, v8, a0
-	li	a0, -126
 	vmor.mm	v9, v10, v9
+	li	a0, -126
 	vmor.mm	v9, v0, v9
 	vmslt.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

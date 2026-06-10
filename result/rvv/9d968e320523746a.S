@@ -33,21 +33,21 @@ func0000000000000002:
 func000000000000000a:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vf	v9, v16, fa5
-	vmand.mm	v10, v0, v8
-	vmor.mm	v9, v0, v9
-	vmandn.mm	v8, v9, v8
-	vmor.mm	v0, v10, v8
+	vmand.mm	v9, v0, v8
+	vmfle.vf	v10, v16, fa5
+	vmor.mm	v10, v0, v10
+	vmandn.mm	v8, v10, v8
+	vmor.mm	v0, v9, v8
 	ret
 
 func000000000000000c:
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v9, v16, fa5
-	vmandn.mm	v10, v8, v0
-	vmandn.mm	v9, v9, v0
-	vmandn.mm	v8, v9, v8
-	vmor.mm	v0, v10, v8
+	vmandn.mm	v9, v8, v0
+	vmfge.vf	v10, v16, fa5
+	vmandn.mm	v10, v10, v0
+	vmandn.mm	v8, v10, v8
+	vmor.mm	v0, v9, v8
 	ret
 
 func000000000000000e:

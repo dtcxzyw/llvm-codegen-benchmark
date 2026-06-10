@@ -1,6 +1,6 @@
 func0000000000000010:
-	sext.w	a1, a1
 	li	a2, -1
+	sext.w	a1, a1
 	beq	a1, a2, .LBB0_2
 	li	a1, 4
 	add	a0, a0, a1
@@ -13,8 +13,8 @@ func0000000000000010:
 	ret
 
 func00000000000000c0:
-	sext.w	a1, a1
 	li	a2, -1
+	sext.w	a1, a1
 	beq	a1, a2, .LBB1_2
 	li	a1, 4
 	add	a0, a0, a1
@@ -35,42 +35,42 @@ func000000000000001f:
 	ret
 
 func0000000000000180:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	bltu	a2, a1, .LBB3_2
 	lui	a1, 174
 	addi	a1, a1, 1728
+	lui	a2, 44
 	add	a0, a0, a1
-	lui	a1, 44
-	addi	a1, a1, -1616
+	addi	a1, a2, -1616
 	add	a0, a0, a1
 	ret
 .LBB3_2:
 	lui	a1, 349
 	addi	a1, a1, -640
+	lui	a2, 44
 	add	a0, a0, a1
-	lui	a1, 44
-	addi	a1, a1, -1616
+	addi	a1, a2, -1616
 	add	a0, a0, a1
 	ret
 
 func0000000000000183:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	bltu	a2, a1, .LBB4_2
 	lui	a1, 174
 	addi	a1, a1, 1728
+	lui	a2, 29
 	add	a0, a0, a1
-	lui	a1, 29
-	addi	a1, a1, 288
+	addi	a1, a2, 288
 	add	a0, a0, a1
 	ret
 .LBB4_2:
 	lui	a1, 349
 	addi	a1, a1, -640
+	lui	a2, 29
 	add	a0, a0, a1
-	lui	a1, 29
-	addi	a1, a1, 288
+	addi	a1, a2, 288
 	add	a0, a0, a1
 	ret
 
@@ -88,8 +88,8 @@ func000000000000001c:
 	ret
 
 func000000000000001b:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	beq	a1, a2, .LBB6_2
 	li	a1, -96
 	add	a0, a0, a1
@@ -137,8 +137,8 @@ func00000000000000c3:
 	ret
 
 func0000000000000083:
-	sext.w	a1, a1
 	li	a2, 2
+	sext.w	a1, a1
 	bltu	a2, a1, .LBB10_2
 	li	a1, 72
 	add	a0, a0, a1
@@ -159,8 +159,8 @@ func0000000000000013:
 	ret
 
 func0000000000000140:
-	sext.w	a1, a1
 	li	a2, 3
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB12_2
 	li	a1, 72
 	add	a0, a0, a1
@@ -173,8 +173,8 @@ func0000000000000140:
 	ret
 
 func0000000000000143:
-	sext.w	a1, a1
 	li	a2, 3
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB13_2
 	li	a1, 72
 	add	a0, a0, a1
@@ -202,8 +202,8 @@ func00000000000000af:
 	ret
 
 func0000000000000080:
-	sext.w	a1, a1
 	li	a2, 2
+	sext.w	a1, a1
 	bltu	a2, a1, .LBB15_2
 	li	a1, 64
 	add	a0, a0, a1
@@ -217,8 +217,8 @@ func0000000000000080:
 	ret
 
 func0000000000000043:
-	sext.w	a1, a1
 	li	a2, 3
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB16_2
 	li	a1, 16
 	add	a0, a0, a1

@@ -15,11 +15,11 @@ func0000000000000058:
 	ret
 
 func0000000000000302:
-	slli	a1, a1, 52
 	li	a2, 1
-	srli	a1, a1, 63
 	slli	a2, a2, 11
+	slli	a1, a1, 52
 	and	a0, a0, a2
+	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

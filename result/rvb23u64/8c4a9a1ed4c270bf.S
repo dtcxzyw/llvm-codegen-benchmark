@@ -1,7 +1,7 @@
 func0000000000000002:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 123854
 	addi	a0, a0, 1288
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB0_2

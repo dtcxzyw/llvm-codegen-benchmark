@@ -5,8 +5,8 @@ func0000000000000017:
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 16
 	srliw	a1, a1, 16
+	slli	a0, a0, 16
 	slli	a1, a1, 16
 	add	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func000000000000000f:
 	ret
 
 func000000000000000e:
-	slli	a0, a0, 9
 	andi	a1, a1, -512
+	slli	a0, a0, 9
 	bclri	a1, a1, 63
 	add	a0, a0, a1
 	ret

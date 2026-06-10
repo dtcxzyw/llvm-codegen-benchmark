@@ -19,8 +19,8 @@ func0000000000000042:
 func000000000000020a:
 	sext.w	a2, a0
 	zext.h	a1, a1
-	srliw	a0, a0, 16
 	sltu	a1, a1, a2
+	srliw	a0, a0, 16
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1

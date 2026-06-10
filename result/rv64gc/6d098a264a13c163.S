@@ -1,7 +1,7 @@
 func0000000000000001:
+	li	a1, 1000
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	li	a1, 1000
 	mul	a0, a0, a1
 	ret
 

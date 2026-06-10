@@ -7,9 +7,9 @@ func0000000000000060:
 
 func0000000000000018:
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 18
 	ret
@@ -29,9 +29,9 @@ func0000000000000000:
 
 func000000000000007a:
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 11
 	ret

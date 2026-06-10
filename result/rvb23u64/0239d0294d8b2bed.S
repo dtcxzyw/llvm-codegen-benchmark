@@ -48,10 +48,10 @@ func0000000000000074:
 
 func0000000000000178:
 	sext.w	a1, a1
+	lui	a2, 65535
 	add.uw	a0, a0, a1
-	lui	a1, 65535
-	slli	a1, a1, 4
-	sltu	a0, a1, a0
+	slli	a2, a2, 4
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000161:
@@ -68,9 +68,9 @@ func00000000000001e1:
 
 func00000000000000f4:
 	sext.w	a0, a0
+	lui	a2, 1
 	add.uw	a0, a1, a0
-	lui	a1, 1
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 

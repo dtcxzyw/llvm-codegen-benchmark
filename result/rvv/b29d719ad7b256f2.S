@@ -44,11 +44,11 @@ func000000000000000c:
 	ret
 
 func000000000000003d:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -57,11 +57,11 @@ func000000000000003d:
 	ret
 
 func000000000000000e:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma

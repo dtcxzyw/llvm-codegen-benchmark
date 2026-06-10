@@ -68,11 +68,11 @@ func000000000000006c:
 	ret
 
 func0000000000000048:
+	li	a0, -7
+	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v12, v12, 1
-	li	a0, -7
 	vadd.vv	v8, v8, v12
-	srli	a0, a0, 1
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret

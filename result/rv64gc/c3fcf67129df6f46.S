@@ -1,7 +1,7 @@
 func0000000000000008:
-	andi	a0, a0, 1
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	beqz	a0, .LBB0_2
 	fdiv.s	fa5, fa5, fa1
 .LBB0_2:
@@ -11,9 +11,9 @@ func0000000000000008:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	beqz	a0, .LBB1_2
 	fdiv.s	fa5, fa5, fa1
 .LBB1_2:
@@ -23,9 +23,9 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	fmul.s	fa4, fa5, fa0
 	flt.s	a0, fa5, fa4

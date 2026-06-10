@@ -70,8 +70,8 @@ func0000000000000017:
 	ret
 
 func0000000000000006:
-	slli	a1, a1, 31
 	li	a2, 1
+	slli	a1, a1, 31
 	slli	a2, a2, 46
 	and	a1, a1, a2
 	slli	a0, a0, 1

@@ -1,8 +1,8 @@
 func0000000000000033:
-	andi	a1, a1, 1
 	lui	a3, 2
 	addi	a3, a3, 368
 	mul	a0, a0, a3
+	andi	a1, a1, 1
 	add	a2, a2, a0
 	bnez	a1, .LBB0_2
 	li	a0, 32
@@ -59,10 +59,10 @@ func0000000000000020:
 	ret
 
 func0000000000000000:
-	add	a0, a0, a2
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	slli	a1, a1, 49
+	add	a0, a0, a2
 	srli	a1, a1, 49
 	add	a0, a0, a1
 	addi	a0, a0, -1

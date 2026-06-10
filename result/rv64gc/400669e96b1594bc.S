@@ -101,11 +101,11 @@ func0000000000000384:
 
 func00000000000001e1:
 	slli	a2, a2, 32
+	lui	a3, 3
 	srli	a2, a2, 32
+	addi	a3, a3, -648
 	add	a0, a0, a2
-	lui	a2, 3
-	addi	a2, a2, -648
-	add	a1, a1, a2
+	add	a1, a1, a3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -139,11 +139,11 @@ func0000000000000364:
 
 func0000000000000008:
 	slli	a2, a2, 32
+	lui	a3, 8
 	srli	a2, a2, 32
+	addi	a3, a3, 7
 	add	a0, a0, a2
-	lui	a2, 8
-	addi	a2, a2, 7
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 

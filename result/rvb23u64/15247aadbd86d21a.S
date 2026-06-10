@@ -20,8 +20,8 @@ func000000000000002b:
 
 func0000000000000070:
 	li	a3, 122
-	sext.w	a1, a1
 	mul	a2, a2, a3
+	sext.w	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

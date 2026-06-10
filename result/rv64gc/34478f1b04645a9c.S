@@ -1,7 +1,7 @@
 func0000000000000001:
+	li	a1, 32
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 32
 	beq	a0, a1, .LBB0_2
 	li	a0, 117
 	ret
@@ -10,10 +10,10 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	li	a1, 2
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	sgtz	a0, a0
-	li	a1, 2
 	sub	a0, a1, a0
 	ret
 
@@ -56,9 +56,9 @@ func000000000000000c:
 	ret
 
 func0000000000000018:
+	li	a1, 96
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 96
 	bltu	a1, a0, .LBB7_2
 	li	a0, -7
 	ret

@@ -13,8 +13,8 @@ func0000000000000000:
 
 func0000000000000030:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v10, 6
 	vmv.v.i	v12, 7
+	vadd.vi	v10, v10, 6
 	vmacc.vv	v12, v8, v10
 	li	a0, 255
 	vand.vx	v8, v12, a0

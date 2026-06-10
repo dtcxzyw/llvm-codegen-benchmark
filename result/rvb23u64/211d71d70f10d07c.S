@@ -33,8 +33,8 @@ func0000000000000004:
 	ret
 
 func000000000000001c:
-	addi	a0, a0, 4
 	lui	a1, 524288
+	addi	a0, a0, 4
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, 32

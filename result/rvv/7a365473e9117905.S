@@ -18,9 +18,9 @@ func00000000000000cc:
 	ret
 
 func0000000000000026:
+	li	a0, -233
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, -233
 	vmseq.vx	v0, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsle.vi	v10, v8, 0

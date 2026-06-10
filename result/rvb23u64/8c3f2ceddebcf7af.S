@@ -1,6 +1,6 @@
 func0000000000000003:
-	slli	a0, a0, 2
 	bseti	a1, zero, 38
+	slli	a0, a0, 2
 	addi	a1, a1, -129
 	add.uw	a0, a0, a1
 	ret
@@ -12,8 +12,8 @@ func0000000000000001:
 	ret
 
 func000000000000001f:
-	slliw	a0, a0, 2
 	li	a1, 63
+	slliw	a0, a0, 2
 	bseti	a1, a1, 32
 	add	a0, a0, a1
 	ret

@@ -39,8 +39,8 @@ func0000000000000042:
 	sext.w	a1, a1
 	lui	a2, 12
 	xor	a1, a1, a2
-	lui	a2, 512
 	seqz	a1, a1
+	lui	a2, 512
 	slli	a1, a1, 20
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -66,8 +66,8 @@ func0000000000000071:
 
 func0000000000000054:
 	not	a1, a1
-	lui	a2, 1024
 	srliw	a1, a1, 31
+	lui	a2, 1024
 	slli	a1, a1, 21
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -84,8 +84,8 @@ func0000000000000051:
 
 func0000000000000048:
 	sext.w	a1, a1
-	lui	a2, 49152
 	sltiu	a1, a1, 2
+	lui	a2, 49152
 	slli	a1, a1, 11
 	or	a0, a0, a2
 	or	a0, a0, a1

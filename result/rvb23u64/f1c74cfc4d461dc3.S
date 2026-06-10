@@ -6,8 +6,8 @@ func000000000000000d:
 	ret
 
 func0000000000000000:
-	srli	a0, a0, 46
 	bseti	a1, zero, 40
+	srli	a0, a0, 46
 	sll	a0, a1, a0
 	bseti	a1, zero, 39
 	sub	a0, a0, a1

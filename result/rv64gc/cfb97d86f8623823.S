@@ -17,8 +17,8 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	sext.w	a1, a1
 	li	a2, 2
+	sext.w	a1, a1
 	blt	a1, a2, .LBB2_2
 	lui	a0, 12
 	addi	a0, a0, 4

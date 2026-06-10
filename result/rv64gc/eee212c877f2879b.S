@@ -42,8 +42,8 @@ func00000000000000cc:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	andi	a1, a1, -5
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	seqz	a1, a1
 	sltiu	a0, a0, 5

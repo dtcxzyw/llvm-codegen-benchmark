@@ -10,10 +10,10 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	srli	a1, a1, 8
 	lui	a2, 2048
 	addi	a2, a2, 128
 	bseti	a2, a2, 39
+	srli	a1, a1, 8
 	bseti	a2, a2, 55
 	and	a1, a1, a2
 	or	a0, a0, a1

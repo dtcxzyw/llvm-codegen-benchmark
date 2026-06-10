@@ -1,10 +1,10 @@
 func0000000000000045:
 	slli	a3, a2, 3
 	slli	a2, a2, 5
-	sub	a0, a0, a1
-	lui	a1, 838861
 	add	a2, a2, a3
-	addi	a1, a1, -819
+	lui	a3, 838861
+	sub	a0, a0, a1
+	addi	a1, a3, -819
 	sub	a0, a0, a2
 	slli	a2, a1, 32
 	srai	a0, a0, 3
@@ -16,10 +16,10 @@ func0000000000000045:
 func0000000000000005:
 	slli	a3, a2, 3
 	slli	a2, a2, 4
-	sub	a0, a0, a1
-	lui	a1, 699051
 	add	a2, a2, a3
-	addi	a1, a1, -1365
+	lui	a3, 699051
+	sub	a0, a0, a1
+	addi	a1, a3, -1365
 	sub	a0, a0, a2
 	slli	a2, a1, 32
 	srai	a0, a0, 3

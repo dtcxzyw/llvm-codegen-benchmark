@@ -1,8 +1,8 @@
 func00000000000000f4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	li	a0, 17
 	vor.vv	v8, v8, v10
+	li	a0, 17
 	slli	a0, a0, 8
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -85,8 +85,8 @@ func0000000000000021:
 func00000000000000a8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 24
-	lui	a0, 272
 	vor.vv	v8, v8, v10
+	lui	a0, 272
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -94,8 +94,8 @@ func00000000000000a8:
 func00000000000000e8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	lui	a0, 272
 	vor.vv	v8, v10, v8
+	lui	a0, 272
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -103,8 +103,8 @@ func00000000000000e8:
 func00000000000000e4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	lui	a0, 16
 	vor.vv	v8, v8, v10
+	lui	a0, 16
 	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -191,8 +191,8 @@ func0000000000000044:
 func0000000000000066:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 2
-	lui	a0, 524288
 	vor.vv	v8, v10, v8
+	lui	a0, 524288
 	addi	a0, a0, 513
 	vmslt.vx	v0, v8, a0
 	ret
@@ -200,8 +200,8 @@ func0000000000000066:
 func000000000000006a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 2
-	lui	a0, 524288
 	vor.vv	v8, v10, v8
+	lui	a0, 524288
 	addi	a0, a0, -513
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -240,8 +240,8 @@ func00000000000000d4:
 func0000000000000088:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 24
-	lui	a0, 1036288
 	vor.vv	v8, v8, v10
+	lui	a0, 1036288
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -257,8 +257,8 @@ func0000000000000084:
 func0000000000000028:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 24
-	lui	a0, 1044480
 	vor.vv	v8, v10, v8
+	lui	a0, 1044480
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -281,8 +281,8 @@ func00000000000000a6:
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 4
-	lui	a0, 272
 	vor.vv	v8, v8, v10
+	lui	a0, 272
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -297,8 +297,8 @@ func0000000000000041:
 func0000000000000034:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 6
-	lui	a0, 16
 	vor.vv	v8, v8, v10
+	lui	a0, 16
 	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret

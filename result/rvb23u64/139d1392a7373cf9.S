@@ -1,6 +1,6 @@
 func000000000000006a:
-	add	a0, a0, a1
 	not	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
@@ -11,8 +11,8 @@ func000000000000007b:
 	ret
 
 func000000000000007a:
-	add	a0, a0, a1
 	not	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 

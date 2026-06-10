@@ -14,12 +14,12 @@ func0000000000000003:
 	srli	a1, a1, 63
 	bnez	a3, .LBB1_2
 	li	a2, 2
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 4
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

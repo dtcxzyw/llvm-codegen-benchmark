@@ -1,8 +1,8 @@
 func000000000000002c:
-	sext.w	a1, a1
 	slli	a2, a2, 33
-	lui	a3, 524032
 	srli	a2, a2, 33
+	lui	a3, 524032
+	sext.w	a1, a1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	snez	a1, a1

@@ -13,15 +13,15 @@ func00000000000001d0:
 	ret
 
 func00000000000001af:
-	addi	a2, a2, 1
 	slli	a1, a1, 4
+	addi	a2, a2, 1
 	add	a0, a0, a1
 	sh3add.uw	a0, a2, a0
 	ret
 
 func0000000000000060:
-	addi	a2, a2, -1
 	slli	a1, a1, 4
+	addi	a2, a2, -1
 	add	a0, a0, a1
 	sh3add.uw	a0, a2, a0
 	ret

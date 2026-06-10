@@ -14,10 +14,10 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	lui	a2, 4096
 	sllw	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func0000000000000008:
@@ -49,9 +49,9 @@ func0000000000000078:
 	ret
 
 func0000000000000018:
+	lui	a2, 90
 	sllw	a0, a0, a1
-	lui	a1, 90
-	addi	a1, a1, 610
+	addi	a1, a2, 610
 	sltu	a0, a1, a0
 	ret
 

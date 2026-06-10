@@ -1,7 +1,7 @@
 func0000000000000141:
 	slli	a0, a0, 48
-	andi	a1, a1, 512
 	srli	a0, a0, 63
+	andi	a1, a1, 512
 	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret
@@ -14,8 +14,8 @@ func000000000000008c:
 	ret
 
 func0000000000000021:
-	zext.h	a0, a0
 	andi	a1, a1, -2
+	zext.h	a0, a0
 	sext.w	a1, a1
 	xori	a1, a1, 4
 	xori	a0, a0, 70
@@ -25,29 +25,29 @@ func0000000000000021:
 
 func000000000000002c:
 	zext.h	a0, a0
-	srli	a1, a1, 13
 	addi	a0, a0, -14
+	srli	a1, a1, 13
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 1024
 	slli	a0, a0, 48
+	andi	a1, a1, 1024
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
 
 func000000000000018c:
-	srli	a1, a1, 8
 	slli	a0, a0, 48
+	srli	a1, a1, 8
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000cc:
-	slli	a0, a0, 48
 	andi	a1, a1, 127
+	slli	a0, a0, 48
 	addi	a1, a1, -40
 	snez	a1, a1
 	srli	a0, a0, 63
@@ -55,8 +55,8 @@ func00000000000000cc:
 	ret
 
 func0000000000000081:
-	zext.h	a0, a0
 	zext.b	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -17
 	seqz	a1, a1
 	sltiu	a0, a0, 173
@@ -85,8 +85,8 @@ func0000000000000101:
 
 func000000000000014c:
 	slli	a0, a0, 48
-	srli	a1, a1, 22
 	srli	a0, a0, 63
+	srli	a1, a1, 22
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

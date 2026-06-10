@@ -17,8 +17,8 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	beq	a1, a2, .LBB2_2
 	li	a1, 15
 	andi	a0, a0, 15

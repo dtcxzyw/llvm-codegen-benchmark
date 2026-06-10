@@ -1,9 +1,9 @@
 func0000000000000001:
-	slli	a2, a1, 32
-	lui	a3, 699051
-	addi	a3, a3, -1365
-	slli	a3, a3, 32
-	mulhu	a2, a2, a3
+	lui	a2, 699051
+	addi	a2, a2, -1365
+	slli	a3, a1, 32
+	slli	a2, a2, 32
+	mulhu	a2, a3, a2
 	srli	a2, a2, 36
 	slli	a3, a2, 3
 	slli	a2, a2, 4
@@ -14,15 +14,14 @@ func0000000000000001:
 	seqz	a0, a0
 	ret
 
+.LCPI1_0:
+	.quad	595056260559142912
 func000000000000002c:
-	slli	a2, a1, 32
-	lui	a3, 264
-	srli	a2, a2, 32
-	addi	a3, a3, 1057
-	slli	a3, a3, 12
-	addi	a3, a3, 133
-	slli	a3, a3, 27
-	mulhu	a2, a2, a3
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	slli	a3, a1, 32
+	srli	a3, a3, 32
+	mulhu	a2, a3, a2
 	slli	a3, a2, 5
 	add	a1, a1, a2
 	sub	a1, a1, a3

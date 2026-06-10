@@ -10,11 +10,11 @@ func0000000000000013:
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 1
 	lui	a2, 298023
+	andi	a1, a1, 1
+	addi	a2, a2, 917
 	add	a1, a1, a0
-	addi	a0, a2, 917
-	slli	a2, a0, 14
+	slli	a2, a2, 14
 	mul	a0, a1, a2
 	mulhu	a1, a1, a2
 	ret

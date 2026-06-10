@@ -1,7 +1,7 @@
 func00000000000000c1:
-	sext.w	a0, a0
 	lui	a2, 244
 	addi	a2, a2, 577
+	sext.w	a0, a0
 	slt	a1, a1, a2
 	czero.nez	a0, a1, a0
 	li	a1, -5

@@ -13,8 +13,8 @@ func000000000000001c:
 	ret
 
 func0000000000000014:
-	srli	a2, a2, 6
 	slli	a1, a1, 24
+	srli	a2, a2, 6
 	srli	a1, a1, 24
 	sub	a1, a1, a2
 	slli	a1, a1, 6

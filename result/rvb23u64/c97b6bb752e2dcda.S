@@ -1,6 +1,6 @@
 func0000000000000302:
-	sext.w	a1, a1
 	addiw	a0, a0, -1
+	sext.w	a1, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
@@ -12,9 +12,9 @@ func0000000000000042:
 	ret
 
 func0000000000000310:
-	sext.w	a1, a1
 	sext.w	a0, a0
 	lui	a2, 524288
+	sext.w	a1, a1
 	sltu	a0, a2, a0
 	czero.eqz	a0, a0, a1
 	ret
@@ -57,8 +57,8 @@ func0000000000000108:
 
 func0000000000000282:
 	sext.w	a1, a1
-	addiw	a0, a0, 1
 	slti	a1, a1, 2
+	addiw	a0, a0, 1
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1

@@ -25,9 +25,9 @@ func0000000000000030:
 
 func0000000000000038:
 	zext.b	a2, a2
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	li	a1, 3
-	slli	a2, a2, 16
 	or	a0, a0, a2
 	slli	a1, a1, 10
 	or	a0, a0, a1

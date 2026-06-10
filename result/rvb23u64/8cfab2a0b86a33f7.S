@@ -7,10 +7,10 @@ func0000000000000011:
 	ret
 
 func0000000000000088:
-	slli	a0, a0, 33
 	fmv.w.x	fa5, zero
-	srli	a0, a0, 33
 	feq.s	a1, fa0, fa5
+	slli	a0, a0, 33
+	srli	a0, a0, 33
 	czero.nez	a0, a1, a0
 	ret
 

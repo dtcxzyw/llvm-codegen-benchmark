@@ -12,15 +12,15 @@ func0000000000000000:
 
 func000000000000007b:
 	sh1add	a2, a2, a2
-	sext.w	a2, a2
 	sh1add	a0, a1, a0
+	sext.w	a2, a2
 	sh1add	a0, a2, a0
 	ret
 
 func000000000000003b:
 	sh1add	a2, a2, a2
-	sext.w	a2, a2
 	add	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
@@ -33,22 +33,22 @@ func000000000000002c:
 
 func0000000000000030:
 	sh1add	a2, a2, a2
-	slliw	a2, a2, 1
 	sh1add	a0, a1, a0
-	sh1add	a0, a2, a0
+	slliw	a1, a2, 1
+	sh1add	a0, a1, a0
 	ret
 
 func000000000000007f:
 	slli	a3, a2, 3
-	subw	a3, a3, a2
 	sh1add	a0, a1, a0
+	subw	a3, a3, a2
 	sh1add	a0, a3, a0
 	ret
 
 func000000000000003f:
 	sh1add	a2, a2, a2
-	sext.w	a2, a2
 	sh3add	a0, a1, a0
+	sext.w	a2, a2
 	sh3add	a0, a2, a0
 	ret
 

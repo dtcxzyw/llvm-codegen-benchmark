@@ -1,48 +1,48 @@
 func0000000000000010:
-	li	a3, -1
-	srli	a3, a3, 32
-	sll	a2, a3, a2
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	li	a1, -1
+	srli	a1, a1, 32
+	sll	a1, a1, a2
+	and	a0, a0, a1
 	ret
 
 func000000000000001e:
-	lui	a3, 16
-	addi	a3, a3, -1
-	sll	a2, a3, a2
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	lui	a1, 16
+	addi	a1, a1, -1
+	sll	a1, a1, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000018:
-	lui	a3, 16
-	addi	a3, a3, -1
-	sll	a2, a3, a2
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	lui	a1, 16
+	addi	a1, a1, -1
+	sll	a1, a1, a2
+	and	a0, a0, a1
 	ret
 
 func000000000000001b:
-	bset	a2, zero, a2
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	bset	a1, zero, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000012:
-	bset	a2, zero, a2
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	bset	a1, zero, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000009:
-	bset	a2, zero, a2
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	bset	a1, zero, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000019:
-	bset	a2, zero, a2
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	bset	a1, zero, a2
+	and	a0, a0, a1
 	ret
 

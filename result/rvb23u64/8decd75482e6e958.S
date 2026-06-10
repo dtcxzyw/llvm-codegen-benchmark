@@ -1,20 +1,20 @@
 func000000000000001c:
+	li	a3, -2
 	add	a0, a0, a2
-	li	a2, -2
-	orn	a1, a2, a1
+	orn	a1, a3, a1
 	addw	a0, a0, a1
 	ret
 
 func0000000000000014:
+	li	a3, -2
 	add	a0, a0, a2
-	li	a2, -2
-	orn	a1, a2, a1
+	orn	a1, a3, a1
 	addw	a0, a0, a1
 	ret
 
 func000000000000001d:
-	add	a0, a0, a2
 	andi	a1, a1, 1
+	add	a0, a0, a2
 	lui	a2, 1048570
 	sub	a0, a0, a1
 	addi	a1, a2, -974
@@ -22,15 +22,15 @@ func000000000000001d:
 	ret
 
 func0000000000000015:
+	li	a3, -2
 	add	a0, a0, a2
-	li	a2, -2
-	orn	a1, a2, a1
+	orn	a1, a3, a1
 	addw	a0, a0, a1
 	ret
 
 func0000000000000000:
-	add	a0, a0, a2
 	andi	a1, a1, 1
+	add	a0, a0, a2
 	sub	a0, a0, a1
 	addiw	a0, a0, 66
 	ret

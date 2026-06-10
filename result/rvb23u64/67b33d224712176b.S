@@ -16,9 +16,9 @@ func0000000000000404:
 	ret
 
 func0000000000000604:
+	li	a2, 8
 	sub	a1, a1, a0
-	li	a0, 8
-	bseti	a0, a0, 31
+	bseti	a0, a2, 31
 	add	a0, a0, a1
 	srli	a0, a0, 32
 	seqz	a0, a0

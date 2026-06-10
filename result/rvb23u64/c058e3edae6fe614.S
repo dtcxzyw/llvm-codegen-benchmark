@@ -22,11 +22,11 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	bexti	a2, a2, 32
 	li	a3, 3
-	czero.eqz	a1, a1, a2
 	slli	a3, a3, 32
+	bexti	a2, a2, 32
 	addi	a3, a3, -1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1

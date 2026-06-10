@@ -14,9 +14,9 @@ func0000000000000000:
 	mul	a0, a0, a1
 	srliw	a1, a0, 17
 	slli	a0, a0, 15
+	lui	a2, 112755
 	or	a0, a0, a1
-	lui	a1, 112755
-	addi	a1, a1, 1427
+	addi	a1, a2, 1427
 	mulw	a0, a0, a1
 	ret
 

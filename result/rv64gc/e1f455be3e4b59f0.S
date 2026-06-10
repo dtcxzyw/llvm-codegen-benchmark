@@ -1,7 +1,7 @@
 func0000000000000061:
-	addi	a1, a1, 1
 	addi	a0, a0, -1
 	seqz	a0, a0
+	addi	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	slli	a0, a0, 32
@@ -30,8 +30,8 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	addi	a1, a1, 1
 	seqz	a0, a0
+	addi	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	slli	a0, a0, 32
@@ -39,15 +39,15 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	li	a2, 1
-	slli	a3, a2, 32
+	mv	a2, a0
+	li	a0, 1
+	slli	a3, a0, 32
 	addi	a3, a3, -2
-	beq	a0, a3, .LBB4_2
+	beq	a2, a3, .LBB4_2
 	addi	a1, a1, 3
-	slli	a1, a1, 32
-	srli	a2, a1, 32
+	slli	a0, a1, 32
+	srli	a0, a0, 32
 .LBB4_2:
-	mv	a0, a2
 	ret
 
 func000000000000006a:
@@ -56,8 +56,8 @@ func000000000000006a:
 	li	a0, 192
 	ret
 .LBB5_2:
-	addi	a1, a1, 15
 	li	a0, -31
+	addi	a1, a1, 15
 	srli	a0, a0, 1
 	and	a0, a0, a1
 	ret

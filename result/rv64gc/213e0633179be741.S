@@ -9,8 +9,8 @@ func00000000000000a8:
 
 func00000000000000a4:
 	sub	a1, a1, a2
-	slli	a0, a0, 32
 	srai	a1, a1, 4
+	slli	a0, a0, 32
 	srli	a0, a0, 32
 	not	a1, a1
 	sltu	a0, a1, a0

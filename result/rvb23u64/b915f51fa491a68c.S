@@ -29,25 +29,23 @@ func0000000000000122:
 	addi	a0, a0, 1
 	ret
 
+.LCPI5_0:
+	.quad	8446744073709551616
 func0000000000000088:
+	lui	a3, %hi(.LCPI5_0)
+	ld	a3, %lo(.LCPI5_0)(a3)
 	sltu	a1, a1, a2
-	lui	a2, 960284
 	add	a0, a0, a1
-	addi	a1, a2, -1545
-	slli.uw	a1, a1, 12
-	addi	a1, a1, -317
-	slli	a1, a1, 19
-	add	a0, a0, a1
+	add	a0, a0, a3
 	ret
 
+.LCPI6_0:
+	.quad	8446744073709551616
 func0000000000000081:
+	lui	a3, %hi(.LCPI6_0)
+	ld	a3, %lo(.LCPI6_0)(a3)
 	sltu	a1, a1, a2
-	lui	a2, 960284
 	add	a0, a0, a1
-	addi	a1, a2, -1545
-	slli.uw	a1, a1, 12
-	addi	a1, a1, -317
-	slli	a1, a1, 19
-	add	a0, a0, a1
+	add	a0, a0, a3
 	ret
 

@@ -1,5 +1,4 @@
 func000000000000003f:
-	andi	a0, a0, 1
 	addw	a1, a1, a2
 	lui	a2, 2
 	zext.w	a3, a1
@@ -15,6 +14,7 @@ func000000000000003f:
 	slli	a3, a2, 3
 	add	a1, a1, a2
 	sub	a1, a1, a3
+	andi	a0, a0, 1
 	addi	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret

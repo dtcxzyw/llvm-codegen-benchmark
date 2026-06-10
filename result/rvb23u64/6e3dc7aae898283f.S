@@ -19,9 +19,9 @@ func0000000000000004:
 	ret
 
 func0000000000000014:
+	li	a1, 7
 	sext.w	a0, a0
 	sltiu	a0, a0, 10
-	li	a1, 7
 	czero.nez	a0, a1, a0
 	addiw	a0, a0, 48
 	ret
@@ -33,14 +33,14 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	srliw	a0, a0, 31
 	li	a1, 66
+	srliw	a0, a0, 31
 	sub	a0, a1, a0
 	ret
 
 func0000000000000018:
-	sext.w	a0, a0
 	lui	a1, 8
+	sext.w	a0, a0
 	addi	a1, a1, 1102
 	sltu	a0, a1, a0
 	addiw	a0, a0, 48

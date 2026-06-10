@@ -15,9 +15,9 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	ori	a0, a0, 1
 	li	a1, 1
 	slli	a1, a1, 33
+	ori	a0, a0, 1
 	addi	a1, a1, -2
 	add	a0, a0, a1
 	ret

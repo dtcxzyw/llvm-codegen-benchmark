@@ -1,6 +1,6 @@
 func000000000000000f:
-	slli	a1, a1, 15
 	lui	a2, 60
+	slli	a1, a1, 15
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 14
@@ -39,8 +39,8 @@ func0000000000000002:
 	ret
 
 func0000000000000009:
-	slli	a1, a1, 1
 	srli	a0, a0, 58
+	slli	a1, a1, 1
 	slli	a0, a0, 58
 	or	a0, a0, a1
 	addi	a0, a0, 1

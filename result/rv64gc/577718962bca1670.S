@@ -1,6 +1,6 @@
 func000000000000000e:
-	neg	a0, a0
 	li	a1, 1
+	neg	a0, a0
 	sll	a0, a1, a0
 	ret
 
@@ -41,10 +41,10 @@ func0000000000000006:
 
 func000000000000000c:
 	li	a1, 32
+	li	a2, -1
 	sub	a1, a1, a0
-	li	a0, -1
-	srli	a0, a0, 32
-	sll	a0, a0, a1
+	srli	a2, a2, 32
+	sll	a0, a2, a1
 	ret
 
 func0000000000000002:
@@ -55,13 +55,13 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	li	a1, 8
-	lui	a2, 66052
-	sub	a1, a1, a0
-	addi	a0, a2, 128
-	slli	a2, a0, 28
-	add	a0, a0, a2
-	sll	a0, a0, a1
+	lui	a1, 66052
+	addi	a1, a1, 128
+	li	a2, 8
+	slli	a3, a1, 28
+	sub	a2, a2, a0
+	add	a1, a1, a3
+	sll	a0, a1, a2
 	ret
 
 func000000000000001e:

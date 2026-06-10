@@ -1,7 +1,7 @@
 func0000000000006302:
 	addi	a2, a0, -27
-	addi	a0, a0, -28
 	snez	a2, a2
+	addi	a0, a0, -28
 	czero.eqz	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -25,8 +25,8 @@ func000000000000528c:
 	ret
 
 func000000000000a528:
-	sltiu	a2, a0, 100
 	srli	a1, a1, 4
+	sltiu	a2, a0, 100
 	sltiu	a1, a1, 1875
 	and	a1, a1, a2
 	sltiu	a0, a0, 6

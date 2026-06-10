@@ -7,12 +7,12 @@ func0000000000000001:
 
 func0000000000000018:
 	lui	a2, 1046528
+	lui	a3, 4091
 	srli	a2, a2, 1
+	slli	a3, a3, 10
 	and	a1, a1, a2
-	lui	a2, 4091
-	slli	a2, a2, 10
-	addi	a2, a2, -1
-	bgeu	a2, a1, .LBB1_2
+	addi	a3, a3, -1
+	bgeu	a3, a1, .LBB1_2
 	lui	a0, 1
 	addi	a0, a0, -8
 .LBB1_2:

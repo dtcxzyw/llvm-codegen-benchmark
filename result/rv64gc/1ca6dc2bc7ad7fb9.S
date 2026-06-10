@@ -1,6 +1,6 @@
 func0000000000000044:
-	fadd.s	fa5, fa1, fa1
 	lui	a0, 264704
+	fadd.s	fa5, fa1, fa1
 	fmv.w.x	fa4, a0
 	fmax.s	fa5, fa5, fa4
 	flt.s	a0, fa5, fa0

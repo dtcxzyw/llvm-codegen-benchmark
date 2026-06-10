@@ -13,9 +13,9 @@ func0000000000000081:
 	ret
 
 func0000000000000086:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 5
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -26,29 +26,29 @@ func0000000000000086:
 	ret
 
 func00000000000000a8:
+	lui	a0, 675749
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 4
-	lui	a0, 675749
 	addi	a0, a0, -91
 	slli	a1, a0, 36
 	add	a0, a0, a1
-	li	a1, -1
 	vmul.vx	v8, v8, a0
-	srli	a1, a1, 4
-	vmsgtu.vx	v0, v8, a1
+	li	a0, -1
+	srli	a0, a0, 4
+	vmsgtu.vx	v0, v8, a0
 	ret
 
 func000000000000008c:
+	lui	a0, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 2
-	lui	a0, 838861
 	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, -1
 	vmul.vx	v8, v8, a0
-	srli	a1, a1, 32
-	vand.vx	v8, v8, a1
+	li	a0, -1
+	srli	a0, a0, 32
+	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret
 

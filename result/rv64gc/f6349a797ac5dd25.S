@@ -1,9 +1,9 @@
 func0000000000000042:
 	srli	a1, a1, 12
 	lui	a2, 2
+	lui	a3, 12
 	and	a1, a1, a2
-	lui	a2, 12
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

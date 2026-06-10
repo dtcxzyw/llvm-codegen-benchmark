@@ -1,9 +1,9 @@
 func0000000000000000:
 	andi	a1, a1, -2048
 	bclri	a1, a1, 11
+	lui	a2, 524289
 	sub	a0, a1, a0
-	lui	a1, 524289
-	bclri	a1, a1, 31
+	bclri	a1, a2, 31
 	add	a0, a0, a1
 	ret
 
@@ -34,9 +34,9 @@ func000000000000000d:
 
 func0000000000000001:
 	andi	a1, a1, -2
+	li	a2, -1
 	sub	a1, a1, a0
-	li	a0, -1
-	srli	a0, a0, 32
-	sub	a0, a1, a0
+	srli	a2, a2, 32
+	sub	a0, a1, a2
 	ret
 

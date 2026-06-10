@@ -30,21 +30,21 @@ func0000000000000008:
 	slliw	a1, a2, 24
 	bnez	a3, .LBB3_2
 	li	a2, 992
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB3_2:
 	lui	a2, 524288
 	addi	a2, a2, 992
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000000:
 	slliw	a2, a2, 16
 	slli	a1, a1, 63
-	lui	a3, 525312
 	srai	a1, a1, 63
+	lui	a3, 525312
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -69,8 +69,8 @@ func0000000000000003:
 func0000000000000001:
 	andi	a1, a1, 1
 	slliw	a2, a2, 8
-	lui	a3, 262144
 	addi	a1, a1, -1
+	lui	a3, 262144
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -83,7 +83,7 @@ func0000000000000009:
 	lui	a2, 262146
 .LBB8_2:
 	slliw	a1, a1, 16
-	or	a1, a1, a2
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

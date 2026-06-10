@@ -1,10 +1,10 @@
 func000000000000004a:
+	li	a0, 20
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v9, v10, 3
-	li	a0, 20
-	vmor.mm	v9, v0, v9
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsgt.vx	v8, v8, a0
+	vmor.mm	v9, v0, v9
 	vmand.mm	v0, v8, v9
 	ret
 

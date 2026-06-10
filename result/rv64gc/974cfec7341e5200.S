@@ -15,18 +15,18 @@ func000000000000001f:
 func0000000000000000:
 	slli	a0, a0, 32
 	srli	a0, a0, 30
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -128
+	addi	a1, a2, -128
 	add	a0, a0, a1
 	ret
 
 func0000000000000013:
 	sext.w	a0, a0
 	slli	a0, a0, 2
+	lui	a2, 225
 	add	a0, a0, a1
-	lui	a1, 225
-	addi	a1, a1, 1280
+	addi	a1, a2, 1280
 	add	a0, a0, a1
 	ret
 

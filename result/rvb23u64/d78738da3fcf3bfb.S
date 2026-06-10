@@ -8,8 +8,8 @@ func0000000000000021:
 
 func000000000000008c:
 	zext.b	a2, a2
-	sltiu	a1, a1, -10
 	addi	a2, a2, -32
+	sltiu	a1, a1, -10
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

@@ -46,12 +46,12 @@ func0000000000000005:
 	ret
 
 func0000000000000023:
-	li	a0, 1040
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmul.vx	v8, v8, a0
 	lui	a0, 13
 	addi	a0, a0, 1151
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
+	li	a0, 1040
+	vmul.vx	v8, v8, a0
 	lui	a0, 25
 	addi	a0, a0, 1600
 	vmerge.vxm	v8, v8, a0, v0

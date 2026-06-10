@@ -1,6 +1,6 @@
 func0000000000000002:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 782336
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 786432
 	fmul.s	fa5, fa5, fa4
@@ -9,8 +9,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 258048
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -18,8 +18,8 @@ func0000000000000004:
 	ret
 
 func000000000000000b:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 276464
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 784384
 	fmul.s	fa5, fa5, fa4
@@ -29,8 +29,8 @@ func000000000000000b:
 	ret
 
 func000000000000000d:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 276464
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 276480
 	fmul.s	fa5, fa5, fa4
@@ -40,8 +40,8 @@ func000000000000000d:
 	ret
 
 func000000000000000c:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 282624
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -49,8 +49,8 @@ func000000000000000c:
 	ret
 
 func0000000000000003:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 258048
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -68,8 +68,8 @@ func0000000000000005:
 	ret
 
 func000000000000000a:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 258048
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -77,8 +77,8 @@ func000000000000000a:
 	ret
 
 func0000000000000009:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 258048
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -89,8 +89,8 @@ func0000000000000009:
 	ret
 
 func0000000000000008:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 258048
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero

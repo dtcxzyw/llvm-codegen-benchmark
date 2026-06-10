@@ -1,10 +1,10 @@
 func0000000000000048:
+	li	a3, 1
+	slli	a3, a3, 33
 	sub	a2, a2, a1
-	li	a1, 1
+	addi	a3, a3, -8
 	addi	a2, a2, -12
-	slli	a1, a1, 33
-	addi	a1, a1, -8
-	and	a0, a0, a1
+	and	a0, a0, a3
 	sltu	a0, a2, a0
 	ret
 

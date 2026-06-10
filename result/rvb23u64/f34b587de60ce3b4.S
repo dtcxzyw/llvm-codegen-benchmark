@@ -1,6 +1,6 @@
 func0000000000000701:
-	sext.w	a0, a0
 	feq.d	a1, fa0, fa1
+	sext.w	a0, a0
 	addi	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -13,8 +13,8 @@ func000000000000042a:
 	ret
 
 func0000000000000421:
-	sext.w	a0, a0
 	flt.d	a1, fa1, fa0
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -27,8 +27,8 @@ func0000000000000426:
 	ret
 
 func000000000000042c:
-	sext.w	a0, a0
 	flt.d	a1, fa1, fa0
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

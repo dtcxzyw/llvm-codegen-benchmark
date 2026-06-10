@@ -1,7 +1,7 @@
 func00000000000000ec:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 4
-	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -10,9 +10,9 @@ func00000000000000ec:
 	ret
 
 func00000000000000f8:
+	li	a0, 56
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 28
-	li	a0, 56
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -21,9 +21,9 @@ func00000000000000f8:
 	ret
 
 func00000000000000fe:
+	li	a0, 56
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 28
-	li	a0, 56
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma

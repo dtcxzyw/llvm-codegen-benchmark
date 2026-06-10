@@ -1,7 +1,7 @@
 func0000000000000008:
-	andi	a1, a1, 1
 	addi	a2, a2, -9
 	andi	a2, a2, -8
+	andi	a1, a1, 1
 	addi	a2, a2, 8
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, 1
 	addi	a2, a2, 7
+	andi	a1, a1, 1
 	andi	a2, a2, -8
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
@@ -19,24 +19,24 @@ func0000000000000000:
 	ret
 
 func0000000000000012:
-	andi	a1, a1, 1
 	li	a3, -1023
 	slli	a3, a3, 51
 	add	a2, a2, a3
-	li	a3, 511
 	srli	a2, a2, 52
+	li	a3, 511
 	slli	a2, a2, 52
 	slli	a3, a3, 53
+	andi	a1, a1, 1
 	add	a2, a2, a3
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	ret
 
 func000000000000003f:
-	andi	a1, a1, 1
 	addi	a2, a2, 7
 	srli	a2, a2, 3
 	slli.uw	a2, a2, 3
+	andi	a1, a1, 1
 	addi	a2, a2, 40
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

@@ -7,9 +7,9 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	addi	a1, a1, 7
 	li	a2, 1
 	slli	a2, a2, 33
+	addi	a1, a1, 7
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	bltu	a1, a0, .LBB1_2
@@ -18,8 +18,8 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	addi	a1, a1, 63
 	li	a2, -505
+	addi	a1, a1, 63
 	srli	a2, a2, 3
 	and	a1, a1, a2
 	bltu	a0, a1, .LBB2_2

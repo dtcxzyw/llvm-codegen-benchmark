@@ -1,6 +1,6 @@
 func000000000000000c:
-	addi	a1, a1, 127
 	bseti	a2, zero, 36
+	addi	a1, a1, 127
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	andi	a0, a0, -128
@@ -8,19 +8,19 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	addi	a1, a1, 127
 	bseti	a2, zero, 36
-	andi	a1, a1, -128
+	addi	a1, a1, 127
 	addi	a2, a2, -128
+	andi	a1, a1, -128
 	and	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000005:
-	addi	a1, a1, 7
 	lui	a2, 262144
-	andi	a1, a1, -8
+	addi	a1, a1, 7
 	addi	a2, a2, -8
+	andi	a1, a1, -8
 	and	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -33,8 +33,8 @@ func0000000000000003:
 	ret
 
 func000000000000000f:
-	addi	a1, a1, 39
 	lui	a2, 524288
+	addi	a1, a1, 39
 	srli	a2, a2, 28
 	and	a1, a1, a2
 	add.uw	a0, a0, a1

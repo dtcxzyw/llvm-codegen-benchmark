@@ -1,7 +1,7 @@
 func0000000000000040:
+	li	a0, -100
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
-	li	a0, -100
 	vadd.vx	v8, v8, a0
 	li	a0, 100
 	vmacc.vx	v8, a0, v10

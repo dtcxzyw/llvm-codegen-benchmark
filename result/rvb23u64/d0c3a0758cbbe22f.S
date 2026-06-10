@@ -16,9 +16,9 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	sext.w	a1, a1
 	li	a2, 3
+	andi	a0, a0, 1
 	fli.d	fa5, 0.5
 	bgeu	a1, a2, .LBB1_3
 	fli.d	fa0, 1.0
@@ -34,8 +34,8 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	fli.d	fa5, 0.5
 	bgez	a1, .LBB2_3
 	fli.d	fa0, 1.0

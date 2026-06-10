@@ -20,10 +20,10 @@ func0000000000000061:
 
 func00000000000001c1:
 	srli	a2, a2, 5
+	li	a3, -17
 	add	a1, a1, a2
-	li	a2, -17
-	srli	a2, a2, 4
-	and	a1, a1, a2
+	srli	a3, a3, 4
+	and	a1, a1, a3
 	addi	a0, a0, 2
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -1,8 +1,8 @@
 func000000000000003c:
 	zext.b	a2, a2
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	lui	a1, 370728
-	slli	a2, a2, 16
 	or	a0, a0, a2
 	addi	a1, a1, -1639
 	addw	a0, a0, a1

@@ -60,26 +60,26 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	li	a0, -1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
+	li	a0, -1024
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000074:
-	li	a0, 87
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vi	v0, v10, 9
+	li	a0, 87
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 
 func0000000000000061:
-	li	a0, -1
-	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
+	li	a0, -1
+	srli	a0, a0, 32
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

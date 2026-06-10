@@ -14,9 +14,9 @@ func0000000000000002:
 func000000000000000c:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
+	fmadd.d	fa5, fa0, fa5, fa1
 	li	a1, -505
 	slli	a1, a1, 53
-	fmadd.d	fa5, fa0, fa5, fa1
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa4, fa5
 	and	a0, a0, a1

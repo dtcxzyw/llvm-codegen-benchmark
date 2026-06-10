@@ -1,16 +1,17 @@
 func0000000000000030:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 1
 	vsra.vi	v10, v10, 3
-	vsra.vi	v12, v8, 3
-	vmv.v.i	v8, 1
-	vmacc.vv	v8, v10, v12
+	vsra.vi	v8, v8, 3
+	vmacc.vv	v12, v10, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000010:
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v8, 15
 	vsra.vx	v10, v10, a0
+	vsra.vi	v12, v8, 15
 	bseti	a0, zero, 31
 	vmv.v.x	v8, a0
 	vmacc.vv	v8, v10, v12
@@ -19,8 +20,8 @@ func0000000000000010:
 func0000000000000015:
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v8, 16
 	vsra.vx	v10, v10, a0
+	vsra.vi	v12, v8, 16
 	bseti	a0, zero, 31
 	vmv.v.x	v8, a0
 	vmacc.vv	v8, v10, v12

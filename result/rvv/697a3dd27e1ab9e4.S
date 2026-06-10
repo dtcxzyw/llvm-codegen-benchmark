@@ -15,10 +15,10 @@ func000000000000000e:
 func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 3
+	li	a0, 64
+	vrsub.vx	v12, v10, a0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	li	a1, 64
-	vrsub.vx	v12, v10, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vmv.v.x	v12, a0

@@ -98,24 +98,24 @@ func0000000000000018:
 
 func0000000000000032:
 	slli	a1, a1, 2
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -124
+	addi	a1, a2, -124
 	add	a0, a0, a1
 	ret
 
 func0000000000000020:
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, -1487
+	addi	a1, a2, -1487
 	add	a0, a0, a1
 	ret
 
 func000000000000003c:
 	slli	a1, a1, 2
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 144
+	addi	a1, a2, 144
 	add	a0, a0, a1
 	ret
 

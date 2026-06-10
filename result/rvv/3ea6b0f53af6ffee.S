@@ -7,9 +7,9 @@ func0000000000000084:
 	ret
 
 func000000000000010c:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v12, v10, 11
-	li	a0, 16
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -37,9 +37,9 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
+	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 128
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

@@ -25,10 +25,10 @@ func0000000000000000:
 
 func0000000000000002:
 	lui	a3, 520200
-	lui	a4, 2032
 	addi	a3, a3, -256
-	addi	a4, a4, 127
+	lui	a4, 2032
 	slli	a5, a3, 32
+	addi	a4, a4, 127
 	add	a3, a3, a5
 	slli	a5, a4, 32
 	add	a4, a4, a5
@@ -50,10 +50,10 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	slli	a2, a2, 54
 	li	a3, 1
-	srli	a2, a2, 20
+	slli	a2, a2, 54
 	slli	a3, a3, 34
+	srli	a2, a2, 20
 	addi	a3, a3, -256
 	and	a1, a1, a3
 	or	a0, a0, a2

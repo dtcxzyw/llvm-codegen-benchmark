@@ -10,8 +10,8 @@ func0000000000000042:
 
 func0000000000000302:
 	andi	a1, a1, 248
-	zext.b	a0, a0
 	addi	a1, a1, -136
+	zext.b	a0, a0
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

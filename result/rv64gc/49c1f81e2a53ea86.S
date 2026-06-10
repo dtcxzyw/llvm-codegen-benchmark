@@ -8,9 +8,9 @@ func000000000000000a:
 	fcvt.w.s	a0, fa0, rtz
 	lui	a1, 655360
 	addi	a1, a1, -1
+	lui	a2, 65536
 	and	a0, a0, a1
-	lui	a1, 65536
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 

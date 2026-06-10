@@ -11,10 +11,10 @@ func000000000000000d:
 func000000000000000e:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -4
-	sllw	a1, a2, a1
+	addi	a3, a3, -4
+	sllw	a1, a3, a1
 	not	a1, a1
 	and	a0, a0, a1
 	ret

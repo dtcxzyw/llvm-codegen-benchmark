@@ -43,8 +43,8 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	sext.w	a1, a1
 	lui	a3, 878478
+	sext.w	a1, a1
 	addi	a3, a3, 1991
 	bltu	a3, a1, .LBB6_2
 	srliw	a0, a2, 16

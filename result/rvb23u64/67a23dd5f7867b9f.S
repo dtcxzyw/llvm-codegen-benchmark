@@ -6,8 +6,8 @@ func000000000000002a:
 	ret
 
 func0000000000000024:
-	negw	a1, a1
 	andi	a0, a0, -64
+	negw	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret
@@ -61,8 +61,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	negw	a1, a1
 	slli	a0, a0, 36
+	negw	a1, a1
 	srli	a0, a0, 36
 	sltu	a0, a0, a1
 	ret

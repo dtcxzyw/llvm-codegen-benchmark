@@ -1,7 +1,7 @@
 func00000000000000e1:
+	li	a0, 63
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vsrl.vi	v10, v10, 4
-	li	a0, 63
 	vand.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf4	v10, v12
@@ -10,9 +10,9 @@ func00000000000000e1:
 	ret
 
 func00000000000000f4:
+	li	a0, 63
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vsrl.vi	v10, v10, 4
-	li	a0, 63
 	vand.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf4	v10, v12

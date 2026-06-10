@@ -6,9 +6,9 @@ func00000000000000a8:
 	ret
 
 func000000000000000b:
-	sext.w	a1, a1
 	lui	a3, 1
 	addi	a3, a3, -1
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	slt	a1, a1, a2
 	xori	a1, a1, 1
@@ -16,9 +16,9 @@ func000000000000000b:
 	ret
 
 func000000000000012b:
-	sext.w	a1, a1
 	lui	a3, 1
 	addi	a3, a3, -1
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	slt	a1, a1, a2
 	xori	a1, a1, 1

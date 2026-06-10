@@ -11,8 +11,8 @@ func0000000000000042:
 	ret
 
 func0000000000000318:
-	sext.w	a1, a1
 	zext.b	a0, a0
+	sext.w	a1, a1
 	xori	a0, a0, 121
 	or	a0, a0, a1
 	snez	a0, a0
@@ -31,8 +31,8 @@ func000000000000030c:
 func0000000000000302:
 	zext.b	a0, a0
 	sext.w	a1, a1
-	snez	a1, a1
 	addi	a0, a0, -18
+	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	slli	a0, a0, 8
@@ -40,8 +40,8 @@ func0000000000000302:
 	ret
 
 func0000000000000058:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -219
 	seqz	a1, a1
 	snez	a0, a0

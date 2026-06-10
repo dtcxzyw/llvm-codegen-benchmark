@@ -1,8 +1,8 @@
 func0000000000000061:
 	lui	a3, 4033
+	lui	a4, 36
 	and	a2, a2, a3
-	lui	a3, 36
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -45,8 +45,8 @@ func0000000000000001:
 	ret
 
 func0000000000000054:
-	andi	a2, a2, 256
 	li	a3, 15
+	andi	a2, a2, 256
 	slli	a3, a3, 11
 	and	a1, a1, a3
 	or	a0, a0, a2
@@ -56,15 +56,15 @@ func0000000000000054:
 	ret
 
 func0000000000000074:
-	andi	a2, a2, 48
 	lui	a3, 1
-	or	a0, a0, a2
-	lui	a2, 16
+	andi	a2, a2, 48
 	addi	a3, a3, -64
 	and	a1, a1, a3
+	or	a0, a0, a2
 	or	a0, a0, a1
+	lui	a1, 16
 	sext.w	a0, a0
-	addi	a1, a2, -528
+	addi	a1, a1, -528
 	sltu	a0, a0, a1
 	ret
 

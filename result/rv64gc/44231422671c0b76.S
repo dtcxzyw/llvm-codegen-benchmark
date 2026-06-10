@@ -1,7 +1,7 @@
 func0000000000000006:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 254362
 	addi	a1, a1, -1638
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa4, fa5
 	xori	a1, a1, 1
@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func000000000000001a:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 276480
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	xori	a1, a1, 1
@@ -18,8 +18,8 @@ func000000000000001a:
 	ret
 
 func0000000000000016:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 784384
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	xori	a1, a1, 1
@@ -49,9 +49,9 @@ func0000000000000010:
 	ret
 
 func000000000000000a:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 260096
 	addi	a1, a1, 839
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	xori	a1, a1, 1
@@ -59,8 +59,8 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 260096
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	or	a0, a0, a1

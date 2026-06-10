@@ -1,6 +1,6 @@
 func0000000000000001:
-	bclri	a2, a0, 33
 	bexti	a1, a1, 33
+	bclri	a2, a0, 33
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -6,16 +6,15 @@ func0000000000000000:
 	addi	a0, a0, 2
 	ret
 
+.LCPI1_0:
+	.quad	11644473600000000
 func0000000000000055:
 	li	a2, 1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	lui	a1, 21181
-	addi	a1, a1, 713
-	slli	a1, a1, 13
 	mul	a0, a0, a2
-	addi	a1, a1, 537
-	slli	a1, a1, 14
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
 	add	a0, a0, a1
 	ret
 

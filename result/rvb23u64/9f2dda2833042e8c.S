@@ -13,19 +13,19 @@ func0000000000000001:
 
 func000000000000004a:
 	lui	a1, 4096
+	lui	a2, 8192
 	addw	a0, a0, a1
-	lui	a1, 8192
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	neg	a0, a0
 	andi	a0, a0, 20
 	ret
 
 func0000000000000004:
+	li	a1, 64
 	addi	a0, a0, -2048
 	addiw	a0, a0, -1479
 	sltiu	a0, a0, 127
-	li	a1, 64
 	czero.nez	a0, a1, a0
 	ori	a0, a0, 1552
 	bseti	a0, a0, 11
@@ -48,8 +48,8 @@ func000000000000000c:
 func0000000000000028:
 	lui	a1, 1048551
 	addi	a2, a1, -1631
-	addi	a1, a1, -1632
 	addw	a0, a0, a2
+	addi	a1, a1, -1632
 	sltu	a0, a0, a1
 	li	a1, -23
 	czero.nez	a0, a1, a0
@@ -64,9 +64,9 @@ func0000000000000021:
 	ret
 
 func000000000000000a:
+	li	a1, 80
 	addiw	a0, a0, -120
 	sgtz	a0, a0
-	li	a1, 80
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 20
 	ret

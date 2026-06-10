@@ -20,9 +20,9 @@ func00000000000001e1:
 
 func0000000000000061:
 	addiw	a1, a1, -1
-	addi	a2, a1, -1
-	slti	a1, a1, 2
+	slti	a2, a1, 2
 	addi	a1, a1, -1
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -1,8 +1,8 @@
 func00000000000000f8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v9, v9, 8
-	li	a0, 769
 	vor.vv	v8, v9, v8
+	li	a0, 769
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 0
@@ -35,8 +35,8 @@ func0000000000000021:
 func00000000000000e8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v9, v9, 8
-	lui	a0, 16
 	vor.vv	v8, v8, v9
+	lui	a0, 16
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 10

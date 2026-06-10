@@ -1,7 +1,7 @@
 func000000000000002b:
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 256
 	vmseq.vx	v0, v10, a0
 	lui	a0, 16
 	addi	a0, a0, -256
@@ -12,9 +12,9 @@ func000000000000002b:
 	ret
 
 func000000000000002a:
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 256
 	vmseq.vx	v0, v10, a0
 	lui	a0, 16
 	addi	a0, a0, -256
@@ -25,9 +25,9 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 256
 	vmseq.vx	v0, v10, a0
 	lui	a0, 16
 	addi	a0, a0, -256
@@ -38,9 +38,9 @@ func0000000000000026:
 	ret
 
 func0000000000000025:
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 256
 	vmseq.vx	v0, v10, a0
 	lui	a0, 16
 	addi	a0, a0, -256

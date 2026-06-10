@@ -1,6 +1,6 @@
 func0000000000000031:
-	sext.w	a0, a0
 	li	a1, 1024
+	sext.w	a0, a0
 	bltu	a1, a0, .LBB0_2
 	li	a0, 2
 	fcvt.d.wu	fa5, a0

@@ -4,8 +4,8 @@ func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a1
 	lui	a1, 1048560
-	addi	a0, a0, 1
 	vandn.vx	v10, v10, a1
+	addi	a0, a0, 1
 	vmv.v.x	v12, a0
 	vsll.vv	v10, v12, v10
 	vandn.vv	v8, v8, v10

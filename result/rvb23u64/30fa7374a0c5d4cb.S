@@ -12,11 +12,11 @@ func0000000000000084:
 	ret
 
 func00000000000000ca:
+	li	a3, -255
 	sub	a1, a1, a2
-	li	a2, -255
+	srli	a3, a3, 1
 	slti	a1, a1, 131
-	srli	a2, a2, 1
-	slt	a0, a0, a2
+	slt	a0, a0, a3
 	andn	a0, a0, a1
 	ret
 
@@ -107,8 +107,8 @@ func0000000000000421:
 
 func000000000000010c:
 	sub	a1, a1, a2
-	sltiu	a0, a0, 401
 	addi	a1, a1, -400
+	sltiu	a0, a0, 401
 	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

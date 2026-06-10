@@ -34,8 +34,8 @@ func00000000000001e0:
 
 func000000000000003c:
 	addi	a2, a2, -2
-	slli	a1, a1, 4
 	slli	a2, a2, 32
+	slli	a1, a1, 4
 	srli	a2, a2, 29
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -43,8 +43,8 @@ func000000000000003c:
 
 func0000000000000030:
 	addi	a2, a2, -2
-	slli	a1, a1, 5
 	slli	a2, a2, 32
+	slli	a1, a1, 5
 	srli	a2, a2, 29
 	add	a0, a0, a1
 	add	a0, a0, a2

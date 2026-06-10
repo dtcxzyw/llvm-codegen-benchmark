@@ -1,8 +1,8 @@
 func0000000000000012:
 	mv	a3, a0
+	li	a4, -1
 	slli	a0, a2, 1
-	li	a2, -1
-	srli	a2, a2, 1
+	srli	a2, a4, 1
 	andi	a3, a3, 1
 	bgeu	a0, a2, .LBB0_3
 	beqz	a3, .LBB0_4
@@ -17,9 +17,9 @@ func0000000000000012:
 
 func0000000000000010:
 	mv	a3, a0
+	li	a4, -1
 	slli	a0, a2, 1
-	li	a2, -1
-	srli	a2, a2, 1
+	srli	a2, a4, 1
 	andi	a3, a3, 1
 	bgeu	a0, a2, .LBB1_3
 	beqz	a3, .LBB1_4
@@ -34,9 +34,9 @@ func0000000000000010:
 
 func0000000000000018:
 	mv	a3, a0
+	li	a4, -1
 	slli	a0, a2, 1
-	li	a2, -1
-	srli	a2, a2, 4
+	srli	a2, a4, 4
 	andi	a3, a3, 1
 	bgeu	a0, a2, .LBB2_3
 	beqz	a3, .LBB2_4

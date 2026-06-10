@@ -9,8 +9,8 @@ func00000000000008ca:
 	ret
 
 func000000000000094a:
-	sext.w	a0, a0
 	add	a2, a2, a1
+	sext.w	a0, a0
 	srli	a1, a1, 1
 	slti	a0, a0, 3
 	czero.eqz	a2, a2, a0

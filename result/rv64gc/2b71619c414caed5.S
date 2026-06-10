@@ -9,27 +9,27 @@ func0000000000000330:
 func0000000000000375:
 	slli	a2, a2, 7
 	slli	a0, a0, 14
+	lui	a3, 1048572
 	add	a1, a1, a2
-	lui	a2, 1048572
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func0000000000000344:
 	slli	a2, a2, 21
 	slli	a0, a0, 28
+	lui	a3, 983040
 	add	a1, a1, a2
-	lui	a2, 983040
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func0000000000000300:
 	slli	a2, a2, 21
 	slli	a0, a0, 28
+	lui	a3, 983040
 	add	a1, a1, a2
-	lui	a2, 983040
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

@@ -1,11 +1,11 @@
 func0000000000000000:
-	andi	a1, a1, 1
 	lui	a2, 276464
-	fli.s	fa5, 0.5
-	slli	a0, a0, 63
-	fmv.w.x	fa4, a2
-	fmadd.s	fa5, fa0, fa4, fa5
+	fmv.w.x	fa5, a2
+	fli.s	fa4, 0.5
+	fmadd.s	fa5, fa0, fa5, fa4
 	fcvt.w.s	a2, fa5, rtz
+	andi	a1, a1, 1
+	slli	a0, a0, 63
 	czero.nez	a1, a2, a1
 	srai	a0, a0, 63
 	or	a0, a0, a1

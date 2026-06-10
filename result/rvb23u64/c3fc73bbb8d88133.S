@@ -1,6 +1,6 @@
 func000000000000002c:
-	sext.w	a2, a2
 	zext.b	a3, a1
+	sext.w	a2, a2
 	seqz	a3, a3
 	czero.eqz	a2, a3, a2
 	czero.nez	a1, a1, a2

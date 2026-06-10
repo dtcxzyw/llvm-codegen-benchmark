@@ -30,12 +30,12 @@ func0000000000000005:
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	li	a0, 1703
-	slli	a0, a0, 52
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
+	slli	a0, a0, 52
 	vmv.v.x	v16, a0
-	li	a0, 1363
 	vmnot.m	v0, v24
+	li	a0, 1363
 	slli	a0, a0, 52
 	vmerge.vxm	v16, v16, a0, v0
 	vfmul.vv	v8, v16, v8

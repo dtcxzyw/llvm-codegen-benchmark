@@ -1,7 +1,7 @@
 func0000000000000041:
-	zext.w	a1, a1
 	li	a3, -1
 	srli	a3, a3, 32
+	zext.w	a1, a1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1

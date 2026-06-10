@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.quad	-8198552921648689607
 func0000000000000001:
-	andi	a1, a1, 1
 	lui	a3, %hi(.LCPI0_0)
+	andi	a1, a1, 1
 	ld	a3, %lo(.LCPI0_0)(a3)
 	czero.nez	a1, a2, a1
 	sub	a1, a1, a0

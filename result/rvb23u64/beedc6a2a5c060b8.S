@@ -1,15 +1,15 @@
 func0000000000000038:
+	lui	a2, 1048555
 	addw	a0, a0, a1
-	lui	a1, 1048555
-	addi	a1, a1, -384
+	addi	a1, a2, -384
 	addw	a1, a1, a0
 	minu	a0, a1, a0
 	ret
 
 func00000000000000b8:
+	lui	a2, 1048555
 	addw	a0, a0, a1
-	lui	a1, 1048555
-	addi	a1, a1, -384
+	addi	a1, a2, -384
 	addw	a1, a1, a0
 	minu	a0, a1, a0
 	ret
@@ -22,18 +22,18 @@ func0000000000000026:
 	ret
 
 func00000000000001b8:
+	lui	a2, 804435
 	addw	a0, a0, a1
-	lui	a1, 804435
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	addw	a1, a1, a0
 	minu	a0, a1, a0
 	ret
 
 func000000000000002a:
+	lui	a2, 244
 	addw	a0, a0, a1
-	lui	a1, 244
+	addi	a1, a2, 575
 	lui	a2, 1048332
-	addi	a1, a1, 575
 	slt	a1, a1, a0
 	addi	a2, a2, -576
 	czero.eqz	a1, a2, a1
@@ -72,9 +72,9 @@ func00000000000000aa:
 	ret
 
 func0000000000000008:
+	lui	a2, 1048332
 	addw	a0, a0, a1
-	lui	a1, 1048332
-	addi	a1, a1, -576
+	addi	a1, a2, -576
 	addw	a1, a1, a0
 	minu	a0, a1, a0
 	ret

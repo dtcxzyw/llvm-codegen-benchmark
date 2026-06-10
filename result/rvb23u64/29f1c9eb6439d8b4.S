@@ -16,8 +16,8 @@ func0000000000000010:
 
 func0000000000000018:
 	sext.w	a2, a2
-	slli	a1, a1, 33
 	sh3add	a0, a2, a0
+	slli	a1, a1, 33
 	srli	a1, a1, 33
 	sh3add	a0, a1, a0
 	ret

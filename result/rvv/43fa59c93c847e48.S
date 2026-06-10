@@ -3,8 +3,8 @@ func000000000000003f:
 	addi	a0, a0, 1725
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	li	a0, 100
 	vsrl.vi	v10, v10, 15
+	li	a0, 100
 	vmadd.vx	v10, a0, v8
 	lui	a0, 15
 	addi	a0, a0, -704
@@ -16,8 +16,8 @@ func000000000000003c:
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	lui	a0, 36
 	vsrl.vi	v10, v10, 7
+	lui	a0, 36
 	addi	a0, a0, -1359
 	vmadd.vx	v10, a0, v8
 	vadd.vx	v8, v10, a0
@@ -28,8 +28,8 @@ func0000000000000010:
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	lui	a0, 1048540
 	vsrl.vi	v10, v10, 7
+	lui	a0, 1048540
 	addi	a0, a0, 1359
 	vmadd.vx	v10, a0, v8
 	vadd.vx	v8, v10, a0
@@ -40,8 +40,8 @@ func0000000000000035:
 	addi	a0, a0, -1117
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	li	a0, 22
 	vsrl.vi	v10, v10, 4
+	li	a0, 22
 	vmadd.vx	v10, a0, v8
 	li	a0, -272
 	vadd.vx	v8, v10, a0

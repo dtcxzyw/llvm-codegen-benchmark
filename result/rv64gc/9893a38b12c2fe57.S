@@ -1,8 +1,8 @@
 func0000000000000007:
 	li	a3, 11
+	slli	a3, a3, 9
 	or	a0, a0, a2
 	andi	a2, a1, 128
-	slli	a3, a3, 9
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -21,9 +21,9 @@ func0000000000000005:
 
 func0000000000000000:
 	lui	a3, 1024
+	and	a3, a3, a1
 	or	a0, a0, a2
 	lui	a2, 4096
-	and	a3, a3, a1
 	or	a0, a0, a3
 	and	a1, a1, a2
 	or	a0, a0, a1

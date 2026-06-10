@@ -23,8 +23,8 @@ func000000000000002c:
 
 func0000000000000181:
 	andi	a1, a1, 1023
-	addiw	a0, a0, -2
 	addi	a1, a1, -19
+	addiw	a0, a0, -2
 	seqz	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1

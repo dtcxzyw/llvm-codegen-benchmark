@@ -2,10 +2,10 @@ func0000000000000033:
 	slti	a2, a2, 3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
-	lui	a2, 351844
 	or	a0, a0, a1
+	lui	a1, 351844
 	zext.w	a0, a0
-	addi	a1, a2, -1143
+	addi	a1, a1, -1143
 	mul	a0, a0, a1
 	ret
 

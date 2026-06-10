@@ -1,6 +1,6 @@
 func0000000000000088:
-	sext.w	a2, a2
 	li	a3, 15
+	sext.w	a2, a2
 	slli	a3, a3, 8
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 256

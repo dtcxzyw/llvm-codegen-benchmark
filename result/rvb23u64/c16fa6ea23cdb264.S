@@ -4,10 +4,10 @@ func0000000000000030:
 	ret
 
 func0000000000000000:
+	lui	a2, 1048568
 	add	a0, a0, a1
-	lui	a1, 1048568
-	addi	a1, a1, -2
-	addw	a0, a0, a1
+	addi	a2, a2, -2
+	addw	a0, a0, a2
 	ret
 
 func0000000000000001:
@@ -16,9 +16,9 @@ func0000000000000001:
 	ret
 
 func0000000000000080:
+	lui	a2, 775608
 	add	a0, a0, a1
-	lui	a1, 775608
-	addi	a1, a1, -514
+	addi	a1, a2, -514
 	addw	a0, a0, a1
 	ret
 

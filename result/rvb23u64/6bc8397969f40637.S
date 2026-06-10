@@ -15,9 +15,9 @@ func0000000000000018:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 56
 	lui	a2, 65536
 	addi	a2, a2, -333
+	slli	a1, a1, 56
 	slli	a2, a2, 8
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

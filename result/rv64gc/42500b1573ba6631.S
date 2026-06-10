@@ -9,19 +9,19 @@ func0000000000000000:
 	ret
 
 func0000000000000018:
+	lui	a2, 4112
+	addi	a2, a2, 257
+	slli	a3, a2, 32
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a1, a1, 257
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mul	a0, a0, a1
+	add	a2, a2, a3
+	mul	a0, a0, a2
 	srli	a0, a0, 56
 	ret
 
 func000000000000001e:
+	lui	a2, 175922
 	add	a0, a0, a1
-	lui	a1, 175922
-	addi	a1, a1, -571
+	addi	a1, a2, -571
 	mul	a0, a0, a1
 	srli	a0, a0, 24
 	ret
@@ -44,9 +44,9 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 1808
+	addi	a1, a2, 1808
 	mul	a0, a0, a1
 	srli	a0, a0, 32
 	ret

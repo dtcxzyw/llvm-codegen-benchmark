@@ -15,9 +15,9 @@ func0000000000000051:
 func0000000000000053:
 	lui	a3, 1048560
 	add	a2, a2, a3
-	lui	a3, 1
 	mul	a1, a2, a1
-	add	a0, a0, a3
+	lui	a2, 1
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

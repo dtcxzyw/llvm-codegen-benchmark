@@ -3,8 +3,8 @@ func0000000000000085:
 	lui	a2, 1048572
 	srli	a1, a1, 49
 	addi	a3, a2, -64
-	addi	a2, a2, -63
 	add	a3, a3, a1
+	addi	a2, a2, -63
 	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2

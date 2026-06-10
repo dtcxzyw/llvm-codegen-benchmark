@@ -1,11 +1,11 @@
 func00000000000000d4:
 	li	a2, 2047
+	lui	a3, 27392
 	slli	a2, a2, 52
+	addi	a3, a3, 1
 	and	a1, a1, a2
-	lui	a2, 27392
-	addi	a2, a2, 1
-	slli	a2, a2, 32
-	sltu	a1, a1, a2
+	slli	a3, a3, 32
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -13,10 +13,10 @@ func0000000000000058:
 	lui	a2, 524288
 	addi	a2, a2, -1
 	slli	a2, a2, 32
+	li	a3, 2047
 	and	a1, a1, a2
-	li	a2, 2047
-	slli	a2, a2, 52
-	sltu	a1, a2, a1
+	slli	a3, a3, 52
+	sltu	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

@@ -41,8 +41,8 @@ func000000000000000e:
 
 func0000000000000010:
 	bseti	a3, zero, 35
-	slli	a0, a0, 4
 	addi	a3, a3, -16
+	slli	a0, a0, 4
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

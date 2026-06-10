@@ -93,10 +93,10 @@ func0000000000000121:
 	ret
 
 func0000000000000048:
+	lui	a3, 1048560
 	add	a0, a0, a2
 	subw	a1, a1, a0
-	lui	a0, 1048560
-	sltu	a0, a0, a1
+	sltu	a0, a3, a1
 	ret
 
 func0000000000000101:
@@ -113,10 +113,10 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
+	lui	a3, 17
 	add	a0, a0, a2
 	subw	a1, a1, a0
-	lui	a0, 17
-	sltu	a0, a0, a1
+	sltu	a0, a3, a1
 	ret
 
 func0000000000000104:

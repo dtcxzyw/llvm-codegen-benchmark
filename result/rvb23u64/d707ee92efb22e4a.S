@@ -22,8 +22,8 @@ func00000000000000a7:
 	ret
 
 func0000000000000037:
-	sext.w	a2, a2
 	lui	a3, 16
+	sext.w	a2, a2
 	addi	a3, a3, -1
 	slt	a2, a2, a3
 	czero.nez	a3, a3, a2
@@ -43,8 +43,8 @@ func0000000000000044:
 	ret
 
 func0000000000000053:
-	srliw	a2, a2, 31
 	li	a3, -1
+	srliw	a2, a2, 31
 	srli	a3, a3, 32
 	czero.eqz	a2, a3, a2
 	zext.w	a1, a1
@@ -69,8 +69,8 @@ func0000000000000033:
 	ret
 
 func0000000000000057:
-	sext.w	a2, a2
 	lui	a3, 3
+	sext.w	a2, a2
 	addi	a3, a3, -2039
 	slt	a2, a3, a2
 	addi	a1, a1, -1024

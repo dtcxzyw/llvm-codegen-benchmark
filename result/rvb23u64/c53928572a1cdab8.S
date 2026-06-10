@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	add	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -21,8 +21,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
 	add	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -55,8 +55,8 @@ func0000000000000006:
 	ret
 
 func000000000000040c:
-	sext.w	a0, a0
 	add	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

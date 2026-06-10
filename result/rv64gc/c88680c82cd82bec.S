@@ -1,6 +1,6 @@
 func0000000000000061:
-	andi	a0, a0, 15
 	li	a1, 16
+	andi	a0, a0, 15
 	seqz	a2, a0
 	sub	a1, a1, a0
 	addi	a0, a2, -1
@@ -16,8 +16,9 @@ func0000000000000066:
 	ret
 
 func0000000000000021:
-	andi	a1, a0, 63
+	mv	a1, a0
 	li	a0, 63
+	andi	a1, a1, 63
 	beq	a1, a0, .LBB2_2
 	li	a0, 62
 	sub	a0, a0, a1

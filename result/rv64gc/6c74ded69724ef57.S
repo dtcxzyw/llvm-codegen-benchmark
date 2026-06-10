@@ -34,8 +34,8 @@ func0000000000000084:
 	ret
 
 func00000000000000d4:
-	sext.w	a2, a1
 	li	a3, 30
+	sext.w	a2, a1
 	mv	a1, a0
 	blt	a2, a3, .LBB2_2
 	li	a0, 72

@@ -74,8 +74,8 @@ func0000000000000302:
 func000000000000024c:
 	sext.w	a2, a2
 	sext.w	a3, a1
-	srliw	a1, a1, 31
 	sltu	a2, a3, a2
+	srliw	a1, a1, 31
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

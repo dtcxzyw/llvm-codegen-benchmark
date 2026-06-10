@@ -1,18 +1,18 @@
 func0000000000000030:
-	li	a3, 32
-	sub	a3, a3, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	sll	a2, a2, a3
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	li	a1, 32
+	li	a3, -1
+	sub	a1, a1, a2
+	srli	a3, a3, 32
+	sll	a1, a3, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000032:
-	li	a3, 64
-	sub	a3, a3, a2
-	bset	a2, zero, a3
 	mul	a0, a0, a1
-	and	a0, a0, a2
+	li	a1, 64
+	sub	a1, a1, a2
+	bset	a1, zero, a1
+	and	a0, a0, a1
 	ret
 

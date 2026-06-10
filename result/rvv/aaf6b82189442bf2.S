@@ -24,15 +24,15 @@ func0000000000000006:
 
 func000000000000000d:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vctz.v	v8, v8
 	vmv.v.i	v10, -1
+	vctz.v	v8, v8
 	vsll.vv	v8, v10, v8
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vctz.v	v8, v8
 	vmv.v.i	v10, -1
+	vctz.v	v8, v8
 	vsll.vv	v8, v10, v8
 	ret
 
@@ -44,8 +44,8 @@ func0000000000000002:
 
 func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vctz.v	v8, v8
 	vmv.v.i	v10, 8
+	vctz.v	v8, v8
 	vsll.vv	v8, v10, v8
 	ret
 
@@ -57,8 +57,8 @@ func000000000000000a:
 
 func0000000000000009:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vctz.v	v8, v8
 	vmv.v.i	v10, -1
+	vctz.v	v8, v8
 	vsll.vv	v8, v10, v8
 	ret
 

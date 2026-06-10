@@ -5,9 +5,9 @@ func0000000000000044:
 	addi	a0, a0, 1888
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v16, v12, fa5
-	vmor.mm	v12, v0, v16
-	vmfgt.vf	v13, v8, fa5
-	vmor.mm	v0, v12, v13
+	vmfgt.vf	v12, v8, fa5
+	vmor.mm	v8, v0, v16
+	vmor.mm	v0, v8, v12
 	ret
 
 func0000000000000055:
@@ -17,9 +17,9 @@ func0000000000000055:
 	addi	a0, a0, 1981
 	fmv.w.x	fa5, a0
 	vmfle.vf	v16, v12, fa5
-	vmorn.mm	v12, v0, v16
-	vmfle.vf	v13, v8, fa5
-	vmorn.mm	v0, v12, v13
+	vmfle.vf	v12, v8, fa5
+	vmorn.mm	v8, v0, v16
+	vmorn.mm	v0, v8, v12
 	ret
 
 func00000000000000dd:
@@ -28,8 +28,8 @@ func00000000000000dd:
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vmflt.vf	v16, v12, fa5
-	vmorn.mm	v12, v0, v16
-	vmflt.vf	v13, v8, fa5
-	vmorn.mm	v0, v12, v13
+	vmflt.vf	v12, v8, fa5
+	vmorn.mm	v8, v0, v16
+	vmorn.mm	v0, v8, v12
 	ret
 

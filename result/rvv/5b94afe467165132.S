@@ -7,8 +7,8 @@ func000000000000052a:
 	vmv.v.x	v10, a0
 	li	a0, 1131
 	vmerge.vxm	v10, v10, a0, v0
-	lui	a0, 8
 	vmv1r.v	v0, v12
+	lui	a0, 8
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8
 	vmsgt.vi	v0, v8, -1
@@ -23,9 +23,9 @@ func0000000000000508:
 	vmv.v.x	v10, a0
 	li	a0, -1980
 	vmerge.vxm	v10, v10, a0, v0
+	vmv1r.v	v0, v12
 	lui	a0, 1048575
 	addi	a0, a0, 216
-	vmv1r.v	v0, v12
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8
 	li	a0, 127

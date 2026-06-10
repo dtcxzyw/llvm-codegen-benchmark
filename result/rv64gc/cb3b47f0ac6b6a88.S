@@ -22,10 +22,10 @@ func000000000000001f:
 
 func000000000000000c:
 	li	a2, 32
+	li	a3, -1
 	sub	a2, a2, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	sll	a1, a1, a2
+	srli	a3, a3, 32
+	sll	a1, a3, a2
 	and	a0, a0, a1
 	ret
 
@@ -45,13 +45,13 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	li	a2, 8
-	lui	a3, 66052
-	sub	a2, a2, a1
-	addi	a1, a3, 128
-	slli	a3, a1, 28
-	add	a1, a1, a3
-	sll	a1, a1, a2
+	lui	a2, 66052
+	addi	a2, a2, 128
+	li	a3, 8
+	slli	a4, a2, 28
+	sub	a3, a3, a1
+	add	a2, a2, a4
+	sll	a1, a2, a3
 	and	a0, a0, a1
 	ret
 

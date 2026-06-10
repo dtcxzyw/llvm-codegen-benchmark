@@ -1,6 +1,6 @@
 func0000000000000007:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 263168
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -9,8 +9,8 @@ func0000000000000007:
 	ret
 
 func0000000000000002:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 227328
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 253133
 	addi	a0, a0, -819
@@ -20,8 +20,8 @@ func0000000000000002:
 	ret
 
 func0000000000000005:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 258048
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -30,8 +30,8 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 258048
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero

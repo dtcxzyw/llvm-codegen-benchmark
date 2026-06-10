@@ -48,8 +48,8 @@ func000000000000002c:
 
 func000000000000018c:
 	andi	a2, a2, 1023
-	xor	a0, a0, a1
 	addi	a2, a2, -19
+	xor	a0, a0, a1
 	snez	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

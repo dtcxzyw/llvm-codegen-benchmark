@@ -1,9 +1,9 @@
 func0000000000000088:
 	sext.w	a2, a2
-	lui	a3, 1048318
-	sltu	a2, a2, a3
 	srliw	a3, a1, 11
+	lui	a4, 1048318
 	sltiu	a3, a3, 27
+	sltu	a2, a2, a4
 	not	a3, a3
 	and	a2, a2, a3
 	bnez	a2, .LBB0_2
@@ -43,11 +43,11 @@ func0000000000000021:
 	ret
 
 func00000000000000cc:
+	lui	a3, 4096
 	sext.w	a2, a2
+	addi	a3, a3, 7
+	xor	a2, a2, a3
 	srliw	a3, a1, 31
-	lui	a4, 4096
-	addi	a4, a4, 7
-	xor	a2, a2, a4
 	snez	a2, a2
 	and	a2, a2, a3
 	bnez	a2, .LBB4_2

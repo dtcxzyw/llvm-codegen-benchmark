@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.quad	384307168202282325
 func0000000000000113:
-	add	a1, a1, a2
 	lui	a3, %hi(.LCPI0_0)
+	add	a1, a1, a2
 	ld	a3, %lo(.LCPI0_0)(a3)
 	sltu	a2, a1, a2
 	neg	a2, a2
@@ -16,10 +16,10 @@ func0000000000000013:
 	add	a1, a1, a2
 	sltu	a2, a1, a2
 	neg	a2, a2
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
-	minu	a1, a1, a2
+	srli	a3, a3, 1
+	minu	a1, a1, a3
 	add	a0, a0, a1
 	ret
 
@@ -27,10 +27,10 @@ func0000000000000110:
 	add	a1, a1, a2
 	sltu	a2, a1, a2
 	neg	a2, a2
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 4
-	minu	a1, a1, a2
+	srli	a3, a3, 4
+	minu	a1, a1, a3
 	sh3add	a0, a1, a0
 	ret
 

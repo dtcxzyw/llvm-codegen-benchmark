@@ -2,11 +2,11 @@ func0000000000000000:
 	fcvt.s.wu	fa5, a0
 	fdiv.s	fa5, fa0, fa5
 	lui	a0, 767092
+	lui	a1, 233743
 	addi	a0, a0, -1517
+	addi	a1, a1, 857
 	fmv.w.x	fa4, a0
-	lui	a0, 233743
-	addi	a0, a0, 857
-	fmv.w.x	fa3, a0
+	fmv.w.x	fa3, a1
 	fmadd.s	fa0, fa5, fa3, fa4
 	ret
 

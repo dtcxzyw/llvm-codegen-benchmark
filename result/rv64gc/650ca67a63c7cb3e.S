@@ -11,9 +11,9 @@ func0000000000003186:
 func000000000000318c:
 	addiw	a1, a1, -24
 	addiw	a2, a0, -26
-	addiw	a0, a0, -31
 	snez	a1, a1
 	snez	a2, a2
+	addiw	a0, a0, -31
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -24,8 +24,8 @@ func00000000000030cc:
 	addiw	a2, a0, -1995
 	addiw	a0, a0, -2020
 	snez	a2, a2
-	slti	a1, a1, 8
 	snez	a0, a0
+	slti	a1, a1, 8
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -50,18 +50,18 @@ func000000000000118c:
 	sext.w	a1, a1
 	addiw	a2, a0, -20
 	addiw	a0, a0, -29
-	sltiu	a1, a1, -2
 	snez	a2, a2
 	snez	a0, a0
+	sltiu	a1, a1, -2
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
 func00000000000004cc:
 	addiw	a1, a1, -27
+	seqz	a1, a1
 	srliw	a2, a0, 31
 	addiw	a0, a0, 6
-	seqz	a1, a1
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

@@ -5,9 +5,9 @@ func0000000000000000:
 	lui	a0, 18
 	addi	a0, a0, 1024
 	vand.vx	v10, v10, a0, v0.t
+	vmv1r.v	v0, v9
 	lui	a0, 24
 	addi	a0, a0, 1024
-	vmv1r.v	v0, v9
 	vand.vx	v10, v10, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

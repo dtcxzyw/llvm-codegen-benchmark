@@ -7,8 +7,8 @@ func0000000000000118:
 
 func0000000000000b02:
 	addi	a2, a2, -1
-	addi	a1, a1, -7
 	xor	a0, a0, a2
+	addi	a1, a1, -7
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1
@@ -23,21 +23,21 @@ func0000000000000042:
 	ret
 
 func000000000000004c:
+	li	a3, -1
+	slli	a3, a3, 63
+	xor	a1, a1, a3
 	addi	a2, a2, 2
 	slt	a0, a0, a2
-	li	a2, -1
-	slli	a2, a2, 63
-	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000182:
+	li	a3, -1
+	slli	a3, a3, 63
+	xor	a0, a0, a3
 	addi	a2, a2, 7
 	slt	a1, a1, a2
-	li	a2, -1
-	slli	a2, a2, 63
-	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

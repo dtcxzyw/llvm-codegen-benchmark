@@ -12,9 +12,9 @@ func0000000000000024:
 	lui	a3, 1048560
 	bgeu	a1, a3, .LBB1_2
 	zext.b	a0, a2
-	lui	a1, 8
 	addi	a0, a0, -45
 	snez	a0, a0
+	lui	a1, 8
 	addi	a0, a0, -1
 	addi	a1, a1, -1
 	xor	a0, a0, a1

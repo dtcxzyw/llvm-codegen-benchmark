@@ -1,6 +1,6 @@
 func0000000000000003:
-	sraiw	a0, a0, 21
 	li	a1, 31
+	sraiw	a0, a0, 21
 	sub	a0, a1, a0
 	ret
 

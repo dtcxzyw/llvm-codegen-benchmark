@@ -4,15 +4,15 @@ func00000000000001f0:
 	mul	a2, a2, a3
 	slli	a3, a1, 2
 	slli	a1, a1, 3
-	add	a0, a0, a2
 	add	a1, a1, a3
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func00000000000000ce:
-	slli	a2, a2, 32
 	slli	a3, a1, 3
 	slli	a1, a1, 6
+	slli	a2, a2, 32
 	sub	a1, a1, a3
 	srli	a3, a2, 29
 	srli	a2, a2, 26
@@ -22,9 +22,9 @@ func00000000000000ce:
 	ret
 
 func00000000000001d0:
-	sext.w	a2, a2
 	slli	a3, a1, 3
 	slli	a1, a1, 4
+	sext.w	a2, a2
 	add	a1, a1, a3
 	slli	a3, a2, 2
 	slli	a2, a2, 8

@@ -18,12 +18,12 @@ func00000000000000f4:
 	ret
 
 func000000000000002a:
+	lui	a2, 1048088
 	srli	a1, a1, 1
+	addi	a2, a2, -1153
 	sub	a1, a1, a0
-	lui	a0, 1048088
-	addi	a0, a0, -1153
-	srli	a0, a0, 1
-	slt	a0, a0, a1
+	srli	a2, a2, 1
+	slt	a0, a2, a1
 	ret
 
 func0000000000000021:

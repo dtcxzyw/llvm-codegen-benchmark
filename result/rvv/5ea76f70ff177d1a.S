@@ -1,7 +1,7 @@
 func000000000000000a:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 2
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -11,9 +11,9 @@ func000000000000000a:
 	ret
 
 func000000000000002a:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -27,12 +27,12 @@ func000000000000002a:
 	.quad	2312618258016476599
 func0000000000000000:
 	lui	a0, 1048574
-	lui	a1, %hi(.LCPI2_0)
-	ld	a1, %lo(.LCPI2_0)(a1)
-	addi	a2, a0, 40
+	addi	a1, a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v8, v8, a2
+	vadd.vx	v8, v8, a1
+	lui	a1, %hi(.LCPI2_0)
 	vsrl.vi	v8, v8, 3
+	ld	a1, %lo(.LCPI2_0)(a1)
 	vmulhu.vx	v8, v8, a1
 	vsll.vi	v8, v8, 6
 	vand.vx	v8, v8, a0
@@ -42,17 +42,17 @@ func0000000000000000:
 
 func000000000000002f:
 	li	a0, -529
-	lui	a1, 526344
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	addi	a0, a1, 129
+	lui	a0, 526344
+	addi	a0, a0, 129
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, -129
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 7
-	srli	a1, a1, 7
-	vand.vx	v8, v8, a1
+	li	a0, -129
+	srli	a0, a0, 7
+	vand.vx	v8, v8, a0
 	vadd.vi	v8, v8, 2
 	ret
 

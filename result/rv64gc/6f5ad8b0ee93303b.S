@@ -1,34 +1,34 @@
 func0000000000000f61:
 	li	a4, 10
+	mulhu	a4, a2, a4
+	slli	a5, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a5
 	slli	a5, a3, 1
 	slli	a3, a3, 3
 	add	a3, a3, a5
-	slli	a5, a2, 1
-	mulhu	a4, a2, a4
-	slli	a2, a2, 3
-	add	a2, a2, a5
-	add	a3, a3, a4
 	add	a0, a0, a2
 	sltu	a0, a0, a2
 	add	a1, a1, a3
 	add	a0, a0, a1
+	add	a0, a0, a4
 	seqz	a0, a0
 	ret
 
 func0000000000000f6c:
 	li	a4, 10
+	mulhu	a4, a2, a4
+	slli	a5, a2, 1
+	slli	a2, a2, 3
+	add	a2, a2, a5
 	slli	a5, a3, 1
 	slli	a3, a3, 3
 	add	a3, a3, a5
-	slli	a5, a2, 1
-	mulhu	a4, a2, a4
-	slli	a2, a2, 3
-	add	a2, a2, a5
-	add	a3, a3, a4
 	add	a0, a0, a2
 	sltu	a0, a0, a2
 	add	a1, a1, a3
 	add	a0, a0, a1
+	add	a0, a0, a4
 	snez	a0, a0
 	ret
 

@@ -96,8 +96,8 @@ func00000000000000e0:
 
 func0000000000000030:
 	slli	a1, a1, 2
-	slli	a0, a0, 2
 	add	a1, a1, a2
+	slli	a0, a0, 2
 	lui	a2, 320
 	add	a0, a0, a1
 	addi	a1, a2, -932

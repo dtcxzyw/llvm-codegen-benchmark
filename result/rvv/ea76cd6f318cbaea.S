@@ -17,10 +17,10 @@ func0000000000000026:
 .LCPI2_0:
 	.quad	5871781006564002453
 func0000000000000001:
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmul.vx	v8, v12, a0, v0.t
 	ret
@@ -42,9 +42,9 @@ func0000000000000061:
 	ret
 
 func0000000000000041:
-	li	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 4
+	li	a0, 1
 	bseti	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmul.vx	v8, v12, a0, v0.t

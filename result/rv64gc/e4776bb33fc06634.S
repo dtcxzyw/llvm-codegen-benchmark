@@ -23,8 +23,8 @@ func000000000000004c:
 	ret
 
 func0000000000000044:
-	srai	a1, a1, 5
 	li	a2, 2
+	srai	a1, a1, 5
 	bltu	a2, a1, .LBB3_2
 	li	a1, 2
 .LBB3_2:

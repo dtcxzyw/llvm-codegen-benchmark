@@ -1,45 +1,45 @@
 func0000000000000045:
 	li	a2, 1461
-	sext.w	a3, a1
-	mul	a1, a1, a2
-	lui	a2, 713032
-	addi	a2, a2, -1311
-	sraiw	a1, a1, 2
-	mul	a2, a3, a2
-	srli	a3, a2, 63
-	srai	a2, a2, 37
-	add	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	mul	a2, a1, a2
+	lui	a3, 713032
+	sext.w	a1, a1
+	addi	a3, a3, -1311
+	mul	a1, a1, a3
+	sraiw	a2, a2, 2
+	srli	a3, a1, 63
+	srai	a1, a1, 37
+	add	a1, a1, a3
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000041:
 	li	a2, 1461
-	sext.w	a3, a1
-	mul	a1, a1, a2
-	lui	a2, 713032
-	addi	a2, a2, -1311
-	sraiw	a1, a1, 2
-	mul	a2, a3, a2
-	srli	a3, a2, 63
-	srai	a2, a2, 37
-	add	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	mul	a2, a1, a2
+	lui	a3, 713032
+	sext.w	a1, a1
+	addi	a3, a3, -1311
+	mul	a1, a1, a3
+	sraiw	a2, a2, 2
+	srli	a3, a1, 63
+	srai	a1, a1, 37
+	add	a1, a1, a3
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000040:
 	li	a2, 1461
-	sext.w	a3, a1
-	mul	a1, a1, a2
-	lui	a2, 713032
-	addi	a2, a2, -1311
-	sraiw	a1, a1, 2
-	mul	a2, a3, a2
-	srli	a3, a2, 63
-	srai	a2, a2, 37
-	add	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	mul	a2, a1, a2
+	lui	a3, 713032
+	sext.w	a1, a1
+	addi	a3, a3, -1311
+	mul	a1, a1, a3
+	sraiw	a2, a2, 2
+	srli	a3, a1, 63
+	srai	a1, a1, 37
+	add	a1, a1, a3
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 

@@ -12,11 +12,11 @@ func0000000000000184:
 	ret
 
 func0000000000000086:
+	lui	a0, 3
+	addi	a0, a0, 1364
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -3
-	lui	a0, 3
 	vmsleu.vi	v12, v10, 9
-	addi	a0, a0, 1364
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12
 	vmand.mm	v0, v8, v0

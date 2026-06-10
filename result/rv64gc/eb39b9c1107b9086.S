@@ -1,10 +1,10 @@
 func00000000000000b8:
-	sext.w	a2, a0
-	lui	a3, 524288
-	addi	a3, a3, -1
-	xor	a3, a3, a1
-	sext.w	a3, a3
-	bgeu	a3, a2, .LBB0_2
+	lui	a2, 524288
+	addi	a2, a2, -1
+	xor	a2, a2, a1
+	sext.w	a3, a0
+	sext.w	a2, a2
+	bgeu	a2, a3, .LBB0_2
 	li	a0, -208
 	ret
 .LBB0_2:
@@ -13,8 +13,8 @@ func00000000000000b8:
 
 func0000000000000108:
 	mv	a2, a0
-	sext.w	a3, a0
 	lui	a0, 524288
+	sext.w	a3, a2
 	subw	a4, a0, a1
 	bltu	a4, a3, .LBB1_2
 	addw	a0, a2, a1
@@ -32,9 +32,9 @@ func0000000000000086:
 
 func00000000000000aa:
 	mv	a2, a0
-	sext.w	a3, a0
 	lui	a0, 524288
 	addiw	a0, a0, -11
+	sext.w	a3, a2
 	subw	a4, a0, a1
 	blt	a4, a3, .LBB3_2
 	addw	a0, a2, a1

@@ -1,28 +1,28 @@
 func0000000000000004:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 239665
 	addi	a0, a0, 623
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmax.s	fa0, fa5, fa4
 	ret
 
 func0000000000000002:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 522240
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret
 
 func000000000000000a:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 260096
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret
 
 func0000000000000005:
-	fmul.s	fa0, fa0, fa1
 	lui	a0, 784384
+	fmul.s	fa0, fa0, fa1
 	fmv.w.x	fa5, a0
 	fle.s	a1, fa0, fa5
 	beqz	a1, .LBB3_2
@@ -32,8 +32,8 @@ func0000000000000005:
 	ret
 
 func000000000000000c:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 784384
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmax.s	fa0, fa5, fa4
 	ret

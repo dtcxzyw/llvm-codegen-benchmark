@@ -13,9 +13,9 @@ func0000000000000001:
 func0000000000000034:
 	andi	a1, a1, -2048
 	lui	a2, 4
-	sext.w	a0, a0
 	bclri	a1, a1, 11
 	addi	a2, a2, 1
+	sext.w	a0, a0
 	sltu	a1, a1, a2
 	addi	a0, a0, -12
 	czero.nez	a0, a0, a1

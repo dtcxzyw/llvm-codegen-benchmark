@@ -22,24 +22,24 @@ func0000000000000000:
 
 func000000000000000a:
 	mul	a1, a1, a2
-	lui	a2, 31250
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	mul	a0, a0, a1
-	addi	a2, a2, -1
-	add	a0, a0, a2
+	lui	a1, 31250
+	addi	a1, a1, -1
+	add	a0, a0, a1
 	ret
 
 func0000000000000008:
 	mul	a1, a1, a2
-	lui	a2, 12875
 	slli	a1, a1, 32
-	addi	a2, a2, -1625
 	srli	a1, a1, 32
-	slli	a2, a2, 13
 	mul	a0, a0, a1
-	addi	a2, a2, -1
-	add	a0, a0, a2
+	lui	a1, 12875
+	addi	a1, a1, -1625
+	slli	a1, a1, 13
+	addi	a1, a1, -1
+	add	a0, a0, a1
 	ret
 
 func0000000000000028:

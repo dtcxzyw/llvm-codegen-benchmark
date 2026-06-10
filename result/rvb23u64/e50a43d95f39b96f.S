@@ -28,9 +28,9 @@ func000000000000002c:
 	ret
 
 func0000000000000007:
+	lui	a3, 72014
 	slt	a1, a2, a1
-	lui	a2, 72014
-	addi	a2, a2, -2048
+	addi	a2, a3, -2048
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret

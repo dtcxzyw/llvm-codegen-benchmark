@@ -1,17 +1,17 @@
 func0000000000000002:
+	lui	a2, 548541
 	xor	a0, a0, a1
-	lui	a1, 548541
+	addi	a1, a2, -1401
 	slli	a0, a0, 32
-	addi	a1, a1, -1401
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	ret
 
 func0000000000000003:
+	lui	a2, 163151
 	xor	a0, a0, a1
-	lui	a1, 163151
+	addi	a1, a2, -1201
 	slli	a0, a0, 32
-	addi	a1, a1, -1201
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	ret

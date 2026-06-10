@@ -7,10 +7,10 @@ func0000000000000104:
 
 func0000000000000107:
 	sh2add	a2, a2, a2
+	li	a3, -1
 	sh3add	a1, a2, a1
-	li	a2, -1
-	srli	a2, a2, 32
-	xor	a0, a0, a2
+	srli	a3, a3, 32
+	xor	a0, a0, a3
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 8
 	ret

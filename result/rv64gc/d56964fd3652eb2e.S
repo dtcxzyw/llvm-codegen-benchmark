@@ -1,16 +1,16 @@
 func0000000000000000:
-	slli	a1, a0, 2
-	addw	a0, a0, a1
 	li	a1, 259
+	slli	a2, a0, 2
+	addw	a0, a0, a2
 	bltu	a0, a1, .LBB0_2
 	li	a0, 259
 .LBB0_2:
 	ret
 
 func0000000000000006:
-	slli	a1, a0, 4
-	subw	a0, a1, a0
 	li	a1, 255
+	slli	a2, a0, 4
+	subw	a0, a2, a0
 	bltu	a0, a1, .LBB1_2
 	li	a0, 255
 .LBB1_2:

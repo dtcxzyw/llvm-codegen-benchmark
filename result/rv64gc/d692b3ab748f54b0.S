@@ -8,20 +8,20 @@ func0000000000000000:
 
 func000000000000000f:
 	add	a0, a0, a1
-	lui	a1, 1048537
 	slli	a0, a0, 13
+	lui	a1, 1048537
 	srli	a0, a0, 13
 	srli	a1, a1, 12
 	add	a0, a0, a1
 	ret
 
 func0000000000000003:
+	lui	a2, 1048572
 	andi	a1, a1, -2
+	srli	a2, a2, 13
 	add	a0, a0, a1
-	lui	a1, 1048572
-	srli	a1, a1, 13
-	addi	a1, a1, 1
-	and	a0, a0, a1
+	addi	a2, a2, 1
+	and	a0, a0, a2
 	addi	a0, a0, 1
 	ret
 

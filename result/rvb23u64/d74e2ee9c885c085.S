@@ -28,11 +28,11 @@ func0000000000000024:
 func0000000000000584:
 	sext.w	a1, a1
 	lui	a3, 1048560
+	lui	a4, 16
 	addi	a3, a3, 528
+	addi	a4, a4, -2
 	addw	a2, a2, a3
-	lui	a3, 16
-	addi	a3, a3, -2
-	xor	a1, a1, a3
+	xor	a1, a1, a4
 	sltiu	a2, a2, -32
 	snez	a1, a1
 	and	a1, a1, a2
@@ -93,8 +93,8 @@ func0000000000000481:
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	addiw	a2, a2, -27
+	sext.w	a1, a1
 	sltiu	a2, a2, 113
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1

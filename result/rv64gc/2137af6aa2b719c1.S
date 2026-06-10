@@ -1,8 +1,8 @@
 func0000000000000018:
-	sext.w	a0, a0
 	sext.w	a3, a1
-	addw	a1, a1, a2
+	sext.w	a0, a0
 	sltu	a0, a3, a0
+	addw	a1, a1, a2
 	neg	a0, a0
 	and	a0, a0, a1
 	ret

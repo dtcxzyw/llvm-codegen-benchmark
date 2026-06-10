@@ -16,11 +16,11 @@ func000000000000000f:
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 65793
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwsll.vi	v10, v13, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
+	lui	a0, 65793
 	addi	a0, a0, 16
 	vand.vx	v8, v8, a0
 	ret

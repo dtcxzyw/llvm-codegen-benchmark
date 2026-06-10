@@ -2,8 +2,8 @@ func000000000000003f:
 	zext.b	a1, a1
 	sh1add	a2, a1, a1
 	slli	a1, a1, 5
-	sub	a1, a1, a2
 	add	a0, a0, a1
+	sub	a0, a0, a2
 	addiw	a0, a0, 128
 	ret
 
@@ -17,8 +17,8 @@ func000000000000003c:
 
 func0000000000000035:
 	lui	a2, 157827
-	slli	a1, a1, 53
 	addi	a2, a2, -2048
+	slli	a1, a1, 53
 	mulhu	a1, a1, a2
 	lui	a2, 965733
 	addi	a2, a2, -2047
@@ -27,8 +27,8 @@ func0000000000000035:
 	ret
 
 func0000000000000015:
-	andi	a1, a1, 1020
 	lui	a2, 1048574
+	andi	a1, a1, 1020
 	addi	a2, a2, -1527
 	mul	a1, a1, a2
 	lui	a2, 8224
@@ -37,8 +37,8 @@ func0000000000000015:
 	ret
 
 func000000000000003d:
-	andi	a1, a1, 1020
 	lui	a2, 7
+	andi	a1, a1, 1020
 	addi	a2, a2, 128
 	mul	a1, a1, a2
 	lui	a2, 8224
@@ -47,8 +47,8 @@ func000000000000003d:
 	ret
 
 func0000000000000017:
-	zext.b	a1, a1
 	lui	a2, 1048571
+	zext.b	a1, a1
 	addi	a2, a2, 1744
 	mul	a1, a1, a2
 	lui	a2, 8224

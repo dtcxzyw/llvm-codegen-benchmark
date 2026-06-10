@@ -24,8 +24,8 @@ func0000000000000101:
 
 func000000000000008c:
 	andi	a1, a1, 3
-	srli	a0, a0, 18
 	addi	a1, a1, -3
+	srli	a0, a0, 18
 	snez	a1, a1
 	sltiu	a0, a0, 3
 	or	a0, a0, a1
@@ -97,10 +97,10 @@ func0000000000000301:
 	ret
 
 func0000000000000141:
-	not	a1, a1
 	lui	a2, 524288
-	bexti	a1, a1, 14
+	not	a1, a1
 	addiw	a2, a2, -2
+	bexti	a1, a1, 14
 	slt	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -108,10 +108,10 @@ func0000000000000141:
 func00000000000000c1:
 	li	a2, 31
 	slli	a2, a2, 11
+	li	a3, 27
 	and	a1, a1, a2
-	li	a2, 27
-	slli	a2, a2, 11
-	xor	a1, a1, a2
+	slli	a3, a3, 11
+	xor	a1, a1, a3
 	seqz	a1, a1
 	slti	a0, a0, 3
 	or	a0, a0, a1

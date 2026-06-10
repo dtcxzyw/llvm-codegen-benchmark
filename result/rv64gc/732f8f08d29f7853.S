@@ -1,11 +1,11 @@
 func0000000000000021:
-	lui	a3, 16
 	andi	a2, a2, 1
-	addi	a3, a3, -1
 	addi	a2, a2, -1
-	and	a0, a0, a3
+	lui	a3, 16
 	andi	a2, a2, 2
+	addi	a3, a3, -1
 	or	a1, a1, a2
+	and	a0, a0, a3
 	and	a1, a1, a3
 	xor	a0, a0, a1
 	seqz	a0, a0

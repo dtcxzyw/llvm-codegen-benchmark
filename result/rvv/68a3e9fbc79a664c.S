@@ -1,31 +1,31 @@
 func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v11, 3
+	vmv.v.i	v10, 3
+	vnsrl.wi	v11, v8, 0
 	li	a0, 3
-	vmacc.vx	v11, a0, v10
+	vmacc.vx	v10, a0, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v8, v11
+	vsext.vf2	v8, v10
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v11, 5
+	vmv.v.i	v10, 5
+	vnsrl.wi	v11, v8, 0
 	li	a0, 5
-	vmacc.vx	v11, a0, v10
+	vmacc.vx	v10, a0, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v8, v11
+	vsext.vf2	v8, v10
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
 	lui	a0, 244
 	addi	a0, a0, 576
-	vmv.v.x	v11, a0
-	vmacc.vx	v11, a0, v10
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v10, a0
+	vnsrl.wi	v11, v8, 0
+	vmacc.vx	v10, a0, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v8, v11
+	vsext.vf2	v8, v10
 	ret
 

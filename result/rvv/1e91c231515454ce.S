@@ -37,10 +37,10 @@ func000000000000001f:
 	ret
 
 func000000000000001c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v12, v12, 9
 	li	a0, 3
 	slli	a0, a0, 10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v12, v12, 9
 	vand.vx	v12, v12, a0
 	vzext.vf2	v14, v10
 	vor.vv	v10, v12, v14
@@ -48,10 +48,10 @@ func000000000000001c:
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v12, v12, 24
 	lui	a0, 65535
 	slli	a0, a0, 12
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v12, v12, 24
 	vand.vx	v12, v12, a0
 	vzext.vf2	v14, v10
 	vor.vv	v10, v12, v14

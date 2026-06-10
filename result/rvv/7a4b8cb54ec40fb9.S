@@ -19,8 +19,8 @@ func0000000000000286:
 	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
-	li	a0, 256
 	vmerge.vim	v10, v10, 4, v0
+	li	a0, 256
 	vmslt.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 2, v0
 	ret
@@ -45,8 +45,8 @@ func00000000000000c1:
 func0000000000000108:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v0, v8, 4
-	li	a0, 16
 	vmerge.vim	v10, v10, 4, v0
+	li	a0, 16
 	vmsgtu.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 8, v0
 	ret
@@ -55,8 +55,8 @@ func00000000000000ca:
 	li	a0, -99
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vx	v0, v8, a0
-	li	a0, 99
 	vmerge.vim	v10, v10, 6, v0
+	li	a0, 99
 	vmsgt.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 5, v0
 	ret
@@ -121,8 +121,8 @@ func0000000000000294:
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
-	li	a0, 128
 	vmerge.vim	v10, v10, 2, v0
+	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 1, v0
 	ret

@@ -23,9 +23,9 @@ func0000000000000042:
 
 func0000000000000058:
 	lui	a3, 4096
-	xor	a0, a0, a1
 	addi	a3, a3, 3
 	and	a2, a2, a3
+	xor	a0, a0, a1
 	seqz	a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000058:
 
 func0000000000000302:
 	andi	a2, a2, 15
-	xor	a0, a0, a1
 	addi	a2, a2, -12
+	xor	a0, a0, a1
 	snez	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

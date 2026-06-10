@@ -1,11 +1,11 @@
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v9, v0
+	vmv.v.i	v10, 0
+	vfncvt.rtz.x.f.w	v16, v12
 	vmv1r.v	v0, v8
-	vfncvt.rtz.x.f.w	v10, v12
-	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, -1, v0
-	vadd.vv	v10, v12, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v10, v10, v16
 	li	a0, 22
 	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v0, v8, v9
@@ -14,11 +14,11 @@ func0000000000000008:
 func0000000000000028:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v9, v0
+	vmv.v.i	v10, 0
+	vfncvt.rtz.x.f.w	v16, v12
 	vmv1r.v	v0, v8
-	vfncvt.rtz.x.f.w	v10, v12
-	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, -1, v0
-	vadd.vv	v10, v12, v10
+	vmerge.vim	v10, v10, -1, v0
+	vadd.vv	v10, v10, v16
 	li	a0, 22
 	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v0, v8, v9

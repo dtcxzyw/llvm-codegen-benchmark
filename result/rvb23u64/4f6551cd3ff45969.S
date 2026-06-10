@@ -1,6 +1,6 @@
 func000000000000001f:
-	andi	a1, a1, 256
 	lui	a2, 1
+	andi	a1, a1, 256
 	addi	a2, a2, -52
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

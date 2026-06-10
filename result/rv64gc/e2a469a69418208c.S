@@ -2,13 +2,13 @@
 	.quad	0x3eb0c6f7a0b5ed8d
 func0000000000000002:
 	fdiv.d	fa5, fa0, fa1
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
 	li	a0, 1023
 	slli	a0, a0, 52
-	fmv.d.x	fa3, a0
-	fsub.d	fa5, fa3, fa5
+	fmv.d.x	fa4, a0
+	fsub.d	fa5, fa4, fa5
 	fabs.d	fa5, fa5
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa4, %lo(.LCPI0_0)(a0)
 	flt.d	a0, fa5, fa4
 	ret
 

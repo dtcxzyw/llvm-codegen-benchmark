@@ -7,8 +7,8 @@ func0000000000000030:
 	ret
 
 func0000000000000029:
-	sext.w	a2, a2
 	lui	a3, 1048573
+	sext.w	a2, a2
 	addi	a3, a3, -473
 	slt	a2, a3, a2
 	and	a1, a1, a2
@@ -20,9 +20,9 @@ func0000000000000029:
 func0000000000000011:
 	sext.w	a2, a2
 	sltiu	a2, a2, 94
+	lui	a3, 1048560
 	and	a1, a1, a2
-	lui	a2, 1048560
-	addi	a2, a2, 288
+	addi	a2, a3, 288
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret

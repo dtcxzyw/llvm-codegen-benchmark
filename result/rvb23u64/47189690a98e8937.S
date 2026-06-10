@@ -8,10 +8,10 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
+	srliw	a2, a2, 31
 	zext.b	a0, a0
 	addi	a0, a0, -67
 	snez	a0, a0
-	srliw	a2, a2, 31
 	andn	a0, a0, a1
 	and	a0, a0, a2
 	ret

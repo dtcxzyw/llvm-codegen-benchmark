@@ -1,7 +1,7 @@
 func000000000000000a:
 	addi	a2, a2, 1
-	not	a1, a1
 	srliw	a2, a2, 31
+	not	a1, a1
 	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2

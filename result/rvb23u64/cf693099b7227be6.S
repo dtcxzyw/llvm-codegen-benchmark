@@ -23,8 +23,8 @@ func0000000000000011:
 	ret
 
 func00000000000000cc:
-	add	a0, a0, a2
 	slli	a1, a1, 6
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -65,14 +65,14 @@ func0000000000000048:
 	ret
 
 func0000000000000030:
-	add	a0, a0, a2
 	slli	a1, a1, 12
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000f5:
-	add	a0, a0, a2
 	slli	a1, a1, 8
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

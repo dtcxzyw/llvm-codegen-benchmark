@@ -15,11 +15,10 @@ func00000000000000e1:
 	vand.vi	v12, v12, 4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v12, v12, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v13, v10, v8
-	vmand.mm	v0, v12, v13
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vi	v8, v12, 0
+	vmand.mm	v0, v8, v13
 	ret
 
 func00000000000000c1:
@@ -27,10 +26,9 @@ func00000000000000c1:
 	vand.vi	v12, v12, 4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v12, v12, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v13, v10, v8
-	vmand.mm	v0, v12, v13
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vi	v8, v12, 0
+	vmand.mm	v0, v8, v13
 	ret
 

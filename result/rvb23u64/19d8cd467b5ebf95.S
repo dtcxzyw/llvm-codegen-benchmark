@@ -1,6 +1,6 @@
 func0000000000000021:
-	bexti	a1, a1, 29
 	li	a2, -1
+	bexti	a1, a1, 29
 	slli.uw	a2, a2, 30
 	czero.eqz	a1, a2, a1
 	lui	a2, 262144

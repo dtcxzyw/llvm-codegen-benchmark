@@ -37,8 +37,8 @@ func000000000000000e:
 func0000000000000002:
 	lui	a0, 1048575
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 3
 	vand.vx	v10, v10, a0
+	vmv.v.i	v12, 3
 	vmerge.vim	v12, v12, 1, v0
 	vor.vv	v10, v12, v10
 	vsll.vi	v8, v8, 6

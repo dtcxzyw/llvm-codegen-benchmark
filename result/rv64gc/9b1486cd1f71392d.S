@@ -1,7 +1,7 @@
 func0000000000000021:
 	li	a3, 31
-	li	a4, 27
 	slli	a3, a3, 11
+	li	a4, 27
 	and	a3, a3, a2
 	slli	a4, a4, 11
 	beq	a3, a4, .LBB0_2

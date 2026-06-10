@@ -15,8 +15,8 @@ func0000000000000009:
 
 func0000000000000011:
 	sltiu	a1, a1, 8
-	slli	a0, a0, 33
 	not	a1, a1
+	slli	a0, a0, 33
 	slliw	a1, a1, 31
 	srli	a0, a0, 33
 	or	a0, a0, a1

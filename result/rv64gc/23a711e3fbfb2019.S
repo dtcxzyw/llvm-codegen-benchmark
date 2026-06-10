@@ -6,8 +6,8 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	srliw	a1, a1, 13
 	lui	a2, 3968
+	srliw	a1, a1, 13
 	and	a0, a0, a2
 	or	a0, a0, a1
 	slliw	a0, a0, 8

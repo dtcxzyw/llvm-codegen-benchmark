@@ -2,10 +2,10 @@
 	.quad	0xbfda934efcbd5561
 func000000000000000b:
 	lui	a1, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a1)
-	fcvt.d.w	fa4, a0
+	fcvt.d.w	fa5, a0
+	fld	fa4, %lo(.LCPI0_0)(a1)
 	fli.d	fa3, 0.125
-	fmsub.d	fa5, fa4, fa5, fa3
+	fmsub.d	fa5, fa5, fa4, fa3
 	flt.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

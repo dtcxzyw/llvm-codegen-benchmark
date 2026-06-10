@@ -19,10 +19,10 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
+	lui	a2, 4096
 	sub	a0, a1, a0
-	lui	a1, 4096
-	addi	a1, a1, -4
-	add	a0, a0, a1
+	addi	a2, a2, -4
+	add	a0, a0, a2
 	ret
 
 func0000000000000018:
@@ -50,9 +50,9 @@ func0000000000000001:
 	ret
 
 func0000000000000035:
+	lui	a2, 17
 	sub	a0, a1, a0
-	lui	a1, 17
-	addi	a1, a1, -1032
+	addi	a1, a2, -1032
 	add	a0, a0, a1
 	ret
 
@@ -62,19 +62,19 @@ func000000000000001c:
 	ret
 
 func0000000000000004:
+	lui	a2, 24076
 	not	a0, a0
+	addi	a2, a2, 179
 	add	a0, a0, a1
-	lui	a1, 24076
-	addi	a1, a1, 179
-	slli	a1, a1, 7
-	add	a0, a0, a1
+	slli	a2, a2, 7
+	add	a0, a0, a2
 	ret
 
 func0000000000000020:
+	lui	a2, 524288
 	sub	a1, a1, a0
-	lui	a0, 524288
-	addi	a0, a0, -16
-	sub	a0, a1, a0
+	addi	a2, a2, -16
+	sub	a0, a1, a2
 	ret
 
 func0000000000000030:

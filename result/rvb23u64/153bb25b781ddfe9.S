@@ -9,12 +9,12 @@ func000000000000000d:
 	lui	a3, 512
 	addi	a3, a3, -1
 	slli	a3, a3, 12
+	lui	a4, 1024
 	and	a2, a2, a3
-	lui	a3, 1024
-	addi	a3, a3, -1
+	addi	a4, a4, -1
 	add	a1, a1, a2
-	slli	a3, a3, 12
-	and	a1, a1, a3
+	slli	a4, a4, 12
+	and	a1, a1, a4
 	add	a0, a0, a1
 	ret
 
@@ -23,13 +23,13 @@ func000000000000000d:
 func000000000000000b:
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
+	lui	a4, 209715
+	addi	a4, a4, 819
 	and	a2, a2, a3
-	lui	a3, 209715
-	addi	a3, a3, 819
+	slli	a3, a4, 32
 	add	a1, a1, a2
-	slli	a2, a3, 32
-	add	a2, a2, a3
-	and	a1, a1, a2
+	add	a3, a3, a4
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

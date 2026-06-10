@@ -9,9 +9,9 @@ func000000000000000c:
 func000000000000002c:
 	addi	a1, a1, -35
 	srli	a1, a1, 1
+	lui	a2, 13
 	add	a0, a0, a1
-	lui	a1, 13
-	addi	a1, a1, -432
+	addi	a1, a2, -432
 	add	a0, a0, a1
 	ret
 

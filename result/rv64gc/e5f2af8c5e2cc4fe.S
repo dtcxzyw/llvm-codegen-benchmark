@@ -1,20 +1,20 @@
 func0000000000000000:
 	srliw	a1, a0, 11
 	slliw	a2, a0, 21
-	or	a1, a1, a2
-	srliw	a2, a0, 6
+	srliw	a3, a0, 6
 	slliw	a0, a0, 26
-	or	a0, a0, a2
+	or	a1, a1, a2
+	or	a0, a0, a3
 	xor	a0, a0, a1
 	ret
 
 func0000000000000003:
 	srliw	a1, a0, 23
 	slliw	a2, a0, 9
-	or	a1, a1, a2
-	srliw	a2, a0, 15
+	srliw	a3, a0, 15
 	slliw	a0, a0, 17
-	or	a0, a0, a2
+	or	a1, a1, a2
+	or	a0, a0, a3
 	xor	a0, a0, a1
 	ret
 

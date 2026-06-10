@@ -1,9 +1,9 @@
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	bseti	a0, zero, 36
 	vmv.v.x	v12, a0
+	vmv1r.v	v0, v10
 	lui	a0, 524289
 	slli.uw	a0, a0, 5
 	vmerge.vxm	v12, v12, a0, v0

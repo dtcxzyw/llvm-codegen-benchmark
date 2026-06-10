@@ -16,15 +16,14 @@ func0000000000000048:
 	sltu	a0, a3, a0
 	ret
 
+.LCPI2_0:
+	.quad	10000000000000000
 func0000000000000044:
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
 	add	a2, a2, a1
 	sltu	a1, a2, a1
-	lui	a2, 9095
-	addi	a2, a2, -217
 	add	a0, a0, a1
-	slli	a2, a2, 12
-	addi	a1, a2, -63
-	slli	a1, a1, 16
-	sltu	a0, a0, a1
+	sltu	a0, a0, a3
 	ret
 

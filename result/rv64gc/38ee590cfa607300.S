@@ -8,8 +8,8 @@ func0000000000000042:
 
 func0000000000000059:
 	addiw	a1, a1, 1
-	lui	a2, 8
 	seqz	a1, a1
+	lui	a2, 8
 	slli	a1, a1, 5
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -41,8 +41,8 @@ func0000000000000049:
 
 func0000000000000003:
 	sext.w	a1, a1
-	lui	a2, 786432
 	seqz	a1, a1
+	lui	a2, 786432
 	addi	a1, a1, -1
 	addi	a2, a2, 64
 	and	a1, a1, a2

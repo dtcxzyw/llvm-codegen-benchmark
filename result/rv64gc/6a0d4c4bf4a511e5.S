@@ -1,7 +1,7 @@
 func0000000000000004:
 	slli	a2, a2, 41
-	lui	a3, 2048
 	srli	a2, a2, 41
+	lui	a3, 2048
 	or	a2, a2, a3
 	lui	a3, 8
 	srlw	a0, a2, a0

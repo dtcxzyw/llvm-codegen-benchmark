@@ -1,7 +1,7 @@
 func00000000000002a1:
+	li	a0, 45
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 45
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v0, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -11,9 +11,9 @@ func00000000000002a1:
 	ret
 
 func0000000000000201:
+	li	a0, 45
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 45
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v0, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma

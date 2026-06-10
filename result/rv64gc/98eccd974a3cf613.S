@@ -31,9 +31,9 @@ func000000000000000b:
 func000000000000001b:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	lui	a2, 8
 	addw	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -1
+	addi	a1, a2, -1
 	bltu	a0, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

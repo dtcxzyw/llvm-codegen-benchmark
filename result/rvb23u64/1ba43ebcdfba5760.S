@@ -109,9 +109,9 @@ func0000000000000011:
 	ret
 
 func000000000000000d:
+	li	a2, -179
 	add.uw	a0, a1, a0
-	li	a1, -179
-	zext.w	a1, a1
-	sub	a0, a0, a1
+	zext.w	a2, a2
+	sub	a0, a0, a2
 	ret
 

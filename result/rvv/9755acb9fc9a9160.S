@@ -87,10 +87,10 @@ func000000000000000d:
 	lui	a0, 239665
 	addi	a0, a0, 623
 	fmv.w.x	fa5, a0
-	li	a0, 17
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmflt.vf	v10, v8, fa5
 	vmnot.m	v0, v10
+	li	a0, 17
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 9, v0
 	ret

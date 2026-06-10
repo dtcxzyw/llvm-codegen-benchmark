@@ -8,8 +8,8 @@ func000000000000002f:
 
 func000000000000000f:
 	addi	a1, a1, -2048
-	lui	a2, 1
 	addi	a1, a1, -2048
+	lui	a2, 1
 	maxu	a1, a1, a2
 	sh3add	a0, a1, a0
 	lui	a1, 8

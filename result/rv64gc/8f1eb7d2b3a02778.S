@@ -5,8 +5,8 @@ func0000000000000004:
 	bnez	a0, .LBB0_2
 	fmv.s	fa5, fa0
 .LBB0_2:
-	fadd.s	fa4, fa1, fa2
 	lui	a0, 258048
+	fadd.s	fa4, fa1, fa2
 	fmv.w.x	fa3, a0
 	fmul.s	fa4, fa4, fa3
 	fmul.s	fa0, fa4, fa5

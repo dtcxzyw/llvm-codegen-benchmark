@@ -1,8 +1,8 @@
 func0000000000000058:
 	zext.b	a0, a0
 	addi	a1, a1, -1
-	seqz	a1, a1
 	addi	a0, a0, -2
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -26,15 +26,15 @@ func0000000000000842:
 func0000000000000302:
 	zext.b	a0, a0
 	addi	a1, a1, -16
-	seqz	a1, a1
 	addi	a0, a0, -58
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000102:
-	zext.b	a0, a0
 	lui	a2, 71356
+	zext.b	a0, a0
 	addi	a2, a2, 879
 	add	a1, a1, a2
 	lui	a2, 142713
@@ -70,11 +70,11 @@ func0000000000001842:
 	ret
 
 func0000000000000118:
-	zext.b	a0, a0
 	lui	a2, 524288
+	zext.b	a0, a0
 	addi	a3, a2, 64
-	addi	a0, a0, -159
 	add	a1, a1, a3
+	addi	a0, a0, -159
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1

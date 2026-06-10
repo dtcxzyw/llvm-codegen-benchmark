@@ -4,8 +4,8 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	roriw	a0, a0, 2
 	lui	a1, 10486
+	roriw	a0, a0, 2
 	addi	a1, a1, -984
 	sltu	a0, a1, a0
 	ret

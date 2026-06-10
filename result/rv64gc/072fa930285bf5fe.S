@@ -5,32 +5,32 @@ func000000000000006c:
 	ret
 
 func0000000000000021:
-	addi	a0, a0, -59
 	lui	a1, 16
+	addi	a0, a0, -59
 	addi	a1, a1, -33
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func000000000000002c:
-	addi	a0, a0, -125
 	lui	a1, 16
+	addi	a0, a0, -125
 	addi	a1, a1, -3
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func000000000000000c:
-	addi	a0, a0, -125
 	lui	a1, 16
+	addi	a0, a0, -125
 	addi	a1, a1, -3
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000001:
-	addi	a0, a0, -254
 	lui	a1, 16
+	addi	a0, a0, -254
 	addi	a1, a1, -3
 	and	a0, a0, a1
 	seqz	a0, a0

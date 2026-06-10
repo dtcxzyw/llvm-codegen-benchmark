@@ -1,8 +1,8 @@
 func0000000000000029:
-	zext.b	a1, a1
 	lui	a2, 1048151
 	addi	a2, a2, -847
 	mul	a0, a0, a2
+	zext.b	a1, a1
 	sraiw	a0, a0, 19
 	addw	a0, a0, a1
 	addi	a0, a0, -150

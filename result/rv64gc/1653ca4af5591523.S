@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a1, a1
 	li	a2, 511
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB0_2
 	li	a1, 511
 .LBB0_2:
@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	lui	a2, 524288
+	sext.w	a1, a1
 	addiw	a2, a2, -1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
@@ -19,8 +19,8 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	sext.w	a1, a1
 	lui	a2, 524288
+	sext.w	a1, a1
 	addiw	a2, a2, -1
 	bltu	a1, a2, .LBB2_2
 	mv	a1, a2
@@ -29,8 +29,8 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	sext.w	a1, a1
 	lui	a2, 524288
+	sext.w	a1, a1
 	addiw	a2, a2, -1
 	bltu	a1, a2, .LBB3_2
 	mv	a1, a2
@@ -39,8 +39,8 @@ func0000000000000028:
 	ret
 
 func0000000000000074:
-	sext.w	a1, a1
 	li	a2, 32
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB4_2
 	li	a1, 32
 .LBB4_2:
@@ -48,8 +48,8 @@ func0000000000000074:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
 	lui	a2, 2
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB5_2
 	lui	a1, 2
 .LBB5_2:
@@ -58,8 +58,8 @@ func000000000000002c:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a1
 	li	a2, 8
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB6_2
 	li	a1, 8
 .LBB6_2:
@@ -67,8 +67,8 @@ func0000000000000026:
 	ret
 
 func0000000000000038:
-	sext.w	a1, a1
 	li	a2, 40
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB7_2
 	li	a1, 40
 .LBB7_2:
@@ -76,8 +76,8 @@ func0000000000000038:
 	ret
 
 func000000000000002a:
-	sext.w	a1, a1
 	li	a2, 1200
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB8_2
 	li	a1, 1200
 .LBB8_2:

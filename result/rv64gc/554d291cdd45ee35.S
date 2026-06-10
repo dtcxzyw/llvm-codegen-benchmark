@@ -35,10 +35,10 @@ func000000000000003a:
 	ret
 
 func000000000000003f:
-	addi	a1, a1, 32
 	li	a2, 100
-	zext.b	a1, a1
 	mul	a0, a0, a2
+	addi	a1, a1, 32
+	zext.b	a1, a1
 	addw	a0, a0, a1
 	ret
 

@@ -9,8 +9,8 @@ func0000000000000374:
 	ret
 
 func0000000000000378:
-	addi	a2, a2, 39
 	lui	a3, 524288
+	addi	a2, a2, 39
 	srli	a3, a3, 28
 	and	a2, a2, a3
 	add	a0, a0, a2
@@ -27,8 +27,8 @@ func0000000000000008:
 	ret
 
 func0000000000000308:
-	addi	a2, a2, 127
 	bseti	a3, zero, 33
+	addi	a2, a2, 127
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	add	a0, a0, a2

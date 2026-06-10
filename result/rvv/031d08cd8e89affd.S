@@ -59,11 +59,11 @@ func0000000000000050:
 	ret
 
 func00000000000000fc:
+	bseti	a0, zero, 35
+	addi	a0, a0, -8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 2
-	bseti	a0, zero, 35
 	vadd.vi	v12, v12, 7
-	addi	a0, a0, -8
 	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
 	vadd.vv	v8, v8, v12

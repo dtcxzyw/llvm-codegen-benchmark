@@ -1,6 +1,6 @@
 func0000000000000022:
-	mv	a1, a0
 	flt.d	a2, fa0, fa1
+	mv	a1, a0
 	srli	a0, a0, 1
 	bnez	a2, .LBB0_2
 	not	a0, a0
@@ -9,8 +9,8 @@ func0000000000000022:
 	ret
 
 func0000000000000024:
-	mv	a1, a0
 	flt.d	a2, fa1, fa0
+	mv	a1, a0
 	srli	a0, a0, 1
 	bnez	a2, .LBB1_2
 	not	a0, a0
@@ -19,8 +19,8 @@ func0000000000000024:
 	ret
 
 func0000000000000005:
-	mv	a1, a0
 	fle.d	a2, fa0, fa1
+	mv	a1, a0
 	srli	a0, a0, 1
 	beqz	a2, .LBB2_2
 	not	a0, a0

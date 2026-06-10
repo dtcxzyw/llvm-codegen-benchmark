@@ -1,7 +1,7 @@
 func00000000000006a1:
 	srai	a2, a2, 5
-	srai	a1, a1, 5
 	add	a0, a0, a2
+	srai	a1, a1, 5
 	li	a2, -1
 	add	a0, a0, a1
 	srli	a2, a2, 6
@@ -20,8 +20,8 @@ func00000000000006ac:
 
 func00000000000006a8:
 	srai	a2, a2, 3
-	srai	a1, a1, 3
 	add	a0, a0, a2
+	srai	a1, a1, 3
 	lui	a2, 231934
 	add	a0, a0, a1
 	addi	a1, a2, -1664
@@ -73,8 +73,8 @@ func0000000000000601:
 
 func00000000000006a4:
 	srai	a2, a2, 4
-	srai	a1, a1, 4
 	add	a0, a0, a2
+	srai	a1, a1, 4
 	lui	a2, 16
 	add	a0, a0, a1
 	addi	a2, a2, -1
@@ -133,8 +133,8 @@ func00000000000004a4:
 
 func00000000000005a1:
 	srai	a2, a2, 2
-	srai	a0, a0, 2
 	neg	a1, a1
+	srai	a0, a0, 2
 	sub	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

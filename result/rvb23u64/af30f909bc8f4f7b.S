@@ -9,8 +9,8 @@ func0000000000000003:
 func000000000000000f:
 	slli	a2, a2, 58
 	or	a0, a0, a1
-	srli	a2, a2, 40
 	slli	a0, a0, 33
+	srli	a2, a2, 40
 	srli	a0, a0, 33
 	or	a0, a0, a2
 	ret

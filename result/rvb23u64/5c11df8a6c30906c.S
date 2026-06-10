@@ -7,8 +7,8 @@ func0000000000000021:
 	ret
 
 func0000000000000061:
-	andi	a2, a2, 2
 	li	a3, 8
+	andi	a2, a2, 2
 	subw	a3, a3, a1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a3, a2
@@ -16,8 +16,8 @@ func0000000000000061:
 	ret
 
 func0000000000000074:
-	andi	a2, a2, 128
 	li	a3, 254
+	andi	a2, a2, 128
 	subw	a3, a3, a1
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a3, a2

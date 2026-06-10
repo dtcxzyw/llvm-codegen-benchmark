@@ -16,9 +16,9 @@ func000000000000003e:
 
 func0000000000000010:
 	slli	a1, a1, 30
+	lui	a2, 45426
 	or	a0, a0, a1
-	lui	a1, 45426
-	addi	a1, a1, 383
+	addi	a1, a2, 383
 	mul	a0, a0, a1
 	srli	a0, a0, 28
 	ret

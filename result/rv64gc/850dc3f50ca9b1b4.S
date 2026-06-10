@@ -1,7 +1,7 @@
 func0000000000000038:
+	li	a2, 6
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 6
 	beq	a1, a2, .LBB0_2
 	li	a1, 12
 	sltu	a0, a0, a1
@@ -32,9 +32,9 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
+	li	a2, 2
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 2
 	beq	a1, a2, .LBB3_2
 	li	a1, 28
 	xor	a0, a0, a1

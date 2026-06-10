@@ -1,20 +1,20 @@
 func0000000000000210:
 	lui	a3, 44
-	sltiu	a1, a1, 32
 	addi	a3, a3, -1616
 	add	a2, a2, a3
+	sltiu	a1, a1, 32
 	sltiu	a2, a2, 32
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000208:
-	srli	a2, a2, 5
 	lui	a3, 1048547
-	sltiu	a0, a0, 32
 	addi	a3, a3, -257
+	srli	a2, a2, 5
 	srli	a3, a3, 5
 	xor	a2, a2, a3
+	sltiu	a0, a0, 32
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

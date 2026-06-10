@@ -1,6 +1,6 @@
 func0000000000000007:
-	zext.b	a1, a1
 	li	a2, 85
+	zext.b	a1, a1
 	beq	a1, a2, .LBB0_2
 	li	a1, 64
 	add	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000006:
 	ret
 
 func0000000000000013:
-	zext.b	a1, a1
 	li	a2, 2
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB3_2
 	li	a1, 16
 	add	a0, a0, a1
@@ -81,8 +81,8 @@ func000000000000001b:
 	ret
 
 func0000000000000023:
-	zext.b	a1, a1
 	li	a2, 6
+	zext.b	a1, a1
 	bltu	a2, a1, .LBB8_2
 	li	a1, 24
 	add	a0, a0, a1
@@ -93,8 +93,8 @@ func0000000000000023:
 	ret
 
 func0000000000000053:
-	zext.b	a1, a1
 	li	a2, 2
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB9_2
 	li	a1, 5
 	add	a0, a0, a1
@@ -105,12 +105,12 @@ func0000000000000053:
 	ret
 
 func0000000000000063:
-	zext.b	a2, a1
-	li	a1, 4
-	bgeu	a1, a2, .LBB10_2
-	li	a1, 8
+	li	a2, 4
+	zext.b	a1, a1
+	bgeu	a2, a1, .LBB10_2
+	li	a2, 8
 .LBB10_2:
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func000000000000002b:
@@ -131,8 +131,8 @@ func000000000000001a:
 	ret
 
 func0000000000000020:
-	zext.b	a1, a1
 	li	a2, 10
+	zext.b	a1, a1
 	bltu	a2, a1, .LBB13_2
 	li	a1, 124
 	add	a0, a0, a1

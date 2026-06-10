@@ -1,6 +1,6 @@
 func0000000000000003:
-	max	a0, a0, zero
 	lui	a1, 244
+	max	a0, a0, zero
 	addi	a1, a1, 576
 	mul	a0, a0, a1
 	ret

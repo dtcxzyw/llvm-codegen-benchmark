@@ -11,8 +11,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	not	a0, a0
 	lui	a1, 522232
+	not	a0, a0
 	addi	a1, a1, -129
 	and	a0, a0, a1
 	addw	a0, a0, a1

@@ -27,15 +27,15 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	sltiu	a0, a0, 9
 	li	a1, 80
+	sltiu	a0, a0, 9
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 80
 	ret
 
 func0000000000000014:
-	srli	a0, a0, 32
 	bseti	a1, zero, 43
+	srli	a0, a0, 32
 	czero.nez	a0, a1, a0
 	bseti	a0, a0, 44
 	bseti	a0, a0, 45

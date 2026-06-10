@@ -1,8 +1,8 @@
 func0000000000000006:
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
 	li	a1, 1
+	srai	a2, a0, 63
+	xor	a0, a0, a2
+	sub	a0, a0, a2
 	slli	a1, a1, 62
 	add	a0, a0, a1
 	ret
@@ -22,11 +22,11 @@ func000000000000000a:
 	ret
 
 func000000000000000d:
-	srai	a1, a0, 63
-	lui	a2, 1046592
-	xor	a0, a0, a1
-	sub	a1, a1, a2
-	sub	a0, a0, a1
+	lui	a1, 1046592
+	srai	a2, a0, 63
+	xor	a0, a0, a2
+	sub	a2, a2, a1
+	sub	a0, a0, a2
 	ret
 
 func0000000000000000:

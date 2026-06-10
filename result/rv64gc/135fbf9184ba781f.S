@@ -40,9 +40,9 @@ func0000000000000424:
 
 func0000000000002181:
 	srli	a2, a2, 5
+	sltiu	a2, a2, 513
 	snez	a1, a1
 	seqz	a0, a0
-	sltiu	a2, a2, 513
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -50,9 +50,9 @@ func0000000000002181:
 
 func0000000000000581:
 	xori	a2, a2, 48
-	snez	a1, a1
 	xori	a0, a0, 8
 	or	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -10,9 +10,9 @@ func0000000000000184:
 	sext.w	a1, a1
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
+	lui	a2, 297
 	sub	a0, a0, a1
-	lui	a1, 297
-	addi	a1, a1, 847
+	addi	a1, a2, 847
 	mulw	a0, a0, a1
 	ret
 
@@ -20,27 +20,27 @@ func0000000000000185:
 	sext.w	a1, a1
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
+	lui	a2, 297
 	sub	a0, a0, a1
-	lui	a1, 297
-	addi	a1, a1, 847
+	addi	a1, a2, 847
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000065:
 	sext.w	a1, a1
 	slti	a1, a1, 3
+	lui	a2, 9
 	sub	a0, a0, a1
-	lui	a1, 9
-	addi	a1, a1, -339
+	addi	a1, a2, -339
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000145:
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
+	lui	a2, 9
 	sub	a0, a0, a1
-	lui	a1, 9
-	addi	a1, a1, -339
+	addi	a1, a2, -339
 	mulw	a0, a0, a1
 	ret
 

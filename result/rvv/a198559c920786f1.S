@@ -4,9 +4,9 @@ func00000000000000a6:
 	fli.s	fa5, 0.125
 	vmfge.vf	v12, v8, fa5
 	fli.s	fa5, 8.0
-	vmnot.m	v12, v12
 	vmfle.vf	v13, v8, fa5
-	vmorn.mm	v0, v12, v13
+	vmnot.m	v8, v12
+	vmorn.mm	v0, v8, v13
 	ret
 
 func0000000000000084:

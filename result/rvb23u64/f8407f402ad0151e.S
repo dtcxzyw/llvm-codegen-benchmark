@@ -6,9 +6,9 @@ func00000000000000d4:
 
 func0000000000000024:
 	slli	a1, a1, 32
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	bseti	a1, a1, 62
+	bseti	a1, a2, 62
 	sltu	a0, a0, a1
 	ret
 
@@ -20,9 +20,9 @@ func00000000000000a1:
 
 func00000000000000a6:
 	slli	a1, a1, 32
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	bseti	a1, a1, 62
+	bseti	a1, a2, 62
 	slt	a0, a0, a1
 	ret
 
@@ -66,10 +66,10 @@ func00000000000000f4:
 
 func000000000000002a:
 	slli	a1, a1, 7
+	lui	a2, 4096
 	or	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func00000000000000ec:
@@ -108,10 +108,10 @@ func000000000000000a:
 
 func00000000000000a4:
 	slli	a1, a1, 32
+	li	a2, -11
 	or	a0, a0, a1
-	li	a1, -11
-	zext.w	a1, a1
-	sltu	a0, a0, a1
+	zext.w	a2, a2
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000ac:

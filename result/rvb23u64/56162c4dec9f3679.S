@@ -1,8 +1,8 @@
 func000000000000042c:
-	sext.w	a0, a0
 	zext.w	a2, a2
 	srai	a1, a1, 2
 	xor	a1, a1, a2
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.nez	a0, a1, a0
 	ret

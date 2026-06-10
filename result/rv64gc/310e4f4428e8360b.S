@@ -20,23 +20,23 @@ func0000000000000000:
 	ret
 
 func00000000000000f0:
-	slli	a2, a2, 6
+	lui	a3, 10126
 	add	a0, a0, a1
-	lui	a1, 10126
-	add	a0, a0, a2
-	addi	a1, a1, -537
+	addi	a1, a3, -537
+	slli	a2, a2, 6
 	slli	a1, a1, 12
+	add	a0, a0, a2
 	addi	a1, a1, -448
 	add	a0, a0, a1
 	ret
 
 func000000000000007f:
-	slli	a2, a2, 6
+	lui	a3, 10126
 	add	a0, a0, a1
-	lui	a1, 10126
-	add	a0, a0, a2
-	addi	a1, a1, -537
+	addi	a1, a3, -537
+	slli	a2, a2, 6
 	slli	a1, a1, 12
+	add	a0, a0, a2
 	addi	a1, a1, -448
 	add	a0, a0, a1
 	ret

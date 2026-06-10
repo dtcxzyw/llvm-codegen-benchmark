@@ -1,16 +1,16 @@
 func0000000000000021:
-	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 6
+	li	a0, 64
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vor.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 
 func0000000000000001:
-	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
+	li	a0, 64
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vor.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0

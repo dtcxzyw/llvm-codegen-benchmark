@@ -33,11 +33,10 @@ func000000000000000e:
 
 func0000000000000004:
 	li	a0, 112
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vx	v14, v11, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
+	vzext.vf4	v12, v10
 	vzext.vf4	v10, v14
 	vor.vv	v8, v8, v12
 	vor.vv	v8, v8, v10
@@ -55,13 +54,12 @@ func0000000000000007:
 
 func000000000000000b:
 	li	a0, -128
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vand.vx	v10, v11, a0
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vand.vx	v11, v11, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v11, v10
+	vzext.vf2	v12, v10
+	vzext.vf2	v10, v11
 	vwaddu.wv	v8, v8, v12
-	vwaddu.wv	v8, v8, v11
+	vwaddu.wv	v8, v8, v10
 	ret
 

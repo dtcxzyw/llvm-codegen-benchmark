@@ -89,11 +89,11 @@ func000000000000014a:
 
 func000000000000002c:
 	sext.w	a1, a1
-	sext.w	a2, a2
 	li	a3, 27
+	sext.w	a2, a2
 	slli	a3, a3, 11
-	snez	a1, a1
 	xor	a2, a2, a3
+	snez	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

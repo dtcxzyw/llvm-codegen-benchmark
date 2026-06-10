@@ -15,9 +15,9 @@ func0000000000000000:
 	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
 	li	a0, 1017
-	slli	a0, a0, 52
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmul.vf	v8, v12, fa5
+	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret

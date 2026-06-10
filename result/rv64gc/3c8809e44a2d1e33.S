@@ -1,8 +1,8 @@
 func000000000000002b:
 	fcvt.d.s	fa5, fa2
 	flt.d	a0, fa5, fa0
-	not	a0, a0
 	flt.d	a1, fa1, fa5
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

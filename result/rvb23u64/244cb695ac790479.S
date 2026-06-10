@@ -23,8 +23,8 @@ func000000000000004b:
 func00000000000001ff:
 	sh2add	a0, a0, a1
 	sext.w	a2, a2
-	lui	a1, 3
 	sh2add	a0, a2, a0
+	lui	a1, 3
 	addi	a1, a1, 1196
 	add	a0, a0, a1
 	ret

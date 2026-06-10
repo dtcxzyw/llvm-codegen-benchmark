@@ -21,9 +21,9 @@ func0000000000000000:
 
 func0000000000000001:
 	li	a1, -61
+	lui	a2, 19
 	sub	a1, a1, a0
-	lui	a0, 19
-	addi	a0, a0, 1089
+	addi	a0, a2, 1089
 	mulw	a0, a1, a0
 	ret
 

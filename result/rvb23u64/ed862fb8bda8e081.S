@@ -6,8 +6,8 @@ func00000000000001ff:
 
 func00000000000000f2:
 	slli	a2, a2, 53
-	slli	a0, a0, 52
 	add	a1, a1, a2
+	slli	a0, a0, 52
 	li	a2, 1023
 	add	a0, a0, a1
 	slli	a2, a2, 52
@@ -16,8 +16,8 @@ func00000000000000f2:
 
 func0000000000000050:
 	slli	a2, a2, 29
-	slli	a0, a0, 52
 	add	a1, a1, a2
+	slli	a0, a0, 52
 	li	a2, 7
 	add	a0, a0, a1
 	slli	a2, a2, 59

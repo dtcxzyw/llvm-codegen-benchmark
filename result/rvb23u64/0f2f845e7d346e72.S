@@ -20,8 +20,8 @@ func000000000000007c:
 	ret
 
 func0000000000000033:
-	zext.b	a1, a1
 	li	a2, 1986
+	zext.b	a1, a1
 	sh2add	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret

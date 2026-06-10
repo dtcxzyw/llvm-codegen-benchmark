@@ -9,9 +9,9 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	sext.w	a2, a1
-	li	a3, -2
-	bne	a2, a3, .LBB1_2
+	li	a2, -2
+	sext.w	a3, a1
+	bne	a3, a2, .LBB1_2
 	li	a1, 1
 .LBB1_2:
 	slli	a1, a1, 32

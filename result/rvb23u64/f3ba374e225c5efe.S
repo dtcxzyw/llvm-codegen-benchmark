@@ -1,7 +1,7 @@
 func00000000000000a1:
 	sub	a1, a1, a2
-	li	a2, -1
 	srai	a1, a1, 5
+	li	a2, -1
 	add	a0, a0, a1
 	srli	a2, a2, 6
 	xor	a0, a0, a2
@@ -86,8 +86,8 @@ func0000000000000086:
 
 func00000000000000a4:
 	sub	a1, a1, a2
-	lui	a2, 16
 	srai	a1, a1, 4
+	lui	a2, 16
 	add	a0, a0, a1
 	addi	a2, a2, -1
 	sltu	a0, a0, a2

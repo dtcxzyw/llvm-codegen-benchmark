@@ -53,11 +53,11 @@ func00000000000003ec:
 	zext.b	a2, a2
 	slli	a1, a1, 6
 	or	a1, a1, a2
-	lui	a2, 272
 	or	a0, a0, a1
+	lui	a1, 272
 	sext.w	a0, a0
-	addi	a2, a2, 1
-	xor	a0, a0, a2
+	addi	a1, a1, 1
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 
@@ -72,10 +72,10 @@ func00000000000003f8:
 	zext.b	a2, a2
 	slli	a1, a1, 6
 	or	a1, a1, a2
-	lui	a2, 16
 	or	a0, a0, a1
+	lui	a1, 16
 	sext.w	a0, a0
-	addi	a1, a2, -561
+	addi	a1, a1, -561
 	sltu	a0, a1, a0
 	ret
 

@@ -35,9 +35,9 @@ func000000000000000a:
 	ret
 
 func0000000000000003:
+	lui	a0, 4080
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 24
-	lui	a0, 4080
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
@@ -63,9 +63,9 @@ func000000000000000e:
 	ret
 
 func0000000000000007:
+	lui	a0, 4080
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 24
-	lui	a0, 4080
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8

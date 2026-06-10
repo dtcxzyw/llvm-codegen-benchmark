@@ -18,12 +18,12 @@ func000000000000001b:
 	mulhu	a5, a2, a4
 	mul	a2, a2, a4
 	add	a3, a3, a5
-	srli	a2, a2, 51
 	slli	a4, a3, 13
-	srli	a3, a3, 51
+	srli	a2, a2, 51
 	or	a2, a2, a4
-	add	a1, a1, a3
+	srli	a3, a3, 51
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a1, a1, a0
 	mv	a0, a2

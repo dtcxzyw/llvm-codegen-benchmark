@@ -8,8 +8,8 @@ func00000000000000f8:
 
 func0000000000000074:
 	srliw	a2, a2, 5
-	slli	a1, a1, 32
 	slli	a2, a2, 5
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
@@ -51,8 +51,8 @@ func00000000000000f4:
 
 func0000000000000061:
 	slli	a2, a2, 33
-	slli	a1, a1, 32
 	srli	a2, a2, 33
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	xor	a0, a0, a1
@@ -61,8 +61,8 @@ func0000000000000061:
 
 func0000000000000008:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a1, a0

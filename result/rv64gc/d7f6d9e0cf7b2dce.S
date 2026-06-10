@@ -1,10 +1,10 @@
 func000000000000000a:
 	sraiw	a2, a1, 31
+	sraiw	a3, a0, 31
 	xor	a1, a1, a2
+	xor	a0, a0, a3
 	subw	a1, a1, a2
-	sraiw	a2, a0, 31
-	xor	a0, a0, a2
-	subw	a0, a0, a2
+	subw	a0, a0, a3
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -12,11 +12,11 @@ func000000000000000a:
 
 func000000000000001e:
 	sraiw	a2, a1, 31
+	sraiw	a3, a0, 31
 	xor	a1, a1, a2
+	xor	a0, a0, a3
 	subw	a1, a1, a2
-	sraiw	a2, a0, 31
-	xor	a0, a0, a2
-	subw	a0, a0, a2
+	subw	a0, a0, a3
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

@@ -1,9 +1,9 @@
 func0000000000000000:
 	srliw	a3, a2, 16
 	slli	a2, a2, 16
+	lui	a4, 434334
 	or	a2, a2, a3
-	lui	a3, 434334
-	addi	a3, a3, 1639
+	addi	a3, a4, 1639
 	add	a2, a2, a3
 	xor	a1, a1, a2
 	srliw	a2, a1, 12

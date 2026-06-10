@@ -11,10 +11,10 @@ func0000000000000061:
 	ret
 
 func0000000000000008:
-	zext.h	a1, a0
-	lui	a2, 16
-	addi	a2, a2, -130
-	sltu	a1, a2, a1
+	lui	a1, 16
+	zext.h	a2, a0
+	addi	a1, a1, -130
+	sltu	a1, a1, a2
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 1
 	ret

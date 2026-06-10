@@ -1,10 +1,10 @@
 func0000000000000000:
+	lui	a1, 259564
 	slli	a0, a0, 48
 	srli	a0, a0, 48
+	addi	a1, a1, -1966
 	fcvt.s.wu	fa5, a0
-	lui	a0, 259564
-	addi	a0, a0, -1966
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	lui	a0, 268288
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0

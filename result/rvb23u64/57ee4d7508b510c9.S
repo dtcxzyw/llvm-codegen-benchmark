@@ -1,17 +1,17 @@
 func0000000000000003:
 	or	a1, a1, a2
 	lui	a2, 1792
+	lui	a3, 1536
 	andn	a1, a1, a2
-	lui	a2, 1536
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	bseti	a0, a0, 20
 	ret
 
 func0000000000000007:
+	lui	a3, 1047560
 	or	a1, a1, a2
-	lui	a2, 1047560
-	addi	a2, a2, -512
+	addi	a2, a3, -512
 	and	a1, a1, a2
 	andi	a0, a0, 256
 	or	a0, a0, a1

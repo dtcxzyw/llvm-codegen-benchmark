@@ -83,10 +83,10 @@ func000000000000002c:
 func00000000000000d3:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v16, v12, fa5
-	vmfge.vf	v12, v8, fa5
-	vmnot.m	v8, v12
-	vmandn.mm	v0, v8, v16
+	vmfge.vf	v16, v8, fa5
+	vmflt.vf	v8, v12, fa5
+	vmnot.m	v9, v16
+	vmandn.mm	v0, v9, v8
 	ret
 
 func00000000000000a4:
@@ -109,15 +109,15 @@ func00000000000000aa:
 
 func000000000000006d:
 	fli.s	fa5, inf
-	lui	a0, 191934
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
 	vmfgt.vf	v17, v12, fa5
+	lui	a0, 191934
 	addi	a0, a0, 1791
-	vmor.mm	v12, v17, v16
 	fmv.w.x	fa5, a0
-	vmflt.vf	v13, v8, fa5
-	vmandn.mm	v0, v12, v13
+	vmflt.vf	v12, v8, fa5
+	vmor.mm	v8, v17, v16
+	vmandn.mm	v0, v8, v12
 	ret
 
 func0000000000000011:
@@ -145,11 +145,11 @@ func00000000000000ac:
 func00000000000000a6:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v16, v12, fa5
-	vmflt.vf	v12, v8, fa5
-	vmfgt.vf	v13, v8, fa5
-	vmor.mm	v8, v13, v12
-	vmand.mm	v0, v8, v16
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmfle.vf	v8, v12, fa5
+	vmor.mm	v9, v17, v16
+	vmand.mm	v0, v9, v8
 	ret
 
 func00000000000000d2:
@@ -163,10 +163,10 @@ func00000000000000d2:
 	ret
 
 func00000000000000db:
-	lui	a0, 212992
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v8, fa5
+	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vmflt.vf	v8, v12, fa5
 	vmnot.m	v9, v16
@@ -182,10 +182,10 @@ func0000000000000042:
 	ret
 
 func00000000000000bb:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmax.vv	v8, v8, v12
 	lui	a0, 266499
 	addi	a0, a0, -717
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmax.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
@@ -269,18 +269,18 @@ func0000000000000065:
 	vmflt.vf	v16, v12, fa5
 	vmfgt.vf	v17, v12, fa5
 	fli.s	fa5, -1.0
-	vmor.mm	v12, v17, v16
-	vmfle.vf	v13, v8, fa5
-	vmandn.mm	v0, v12, v13
+	vmfle.vf	v12, v8, fa5
+	vmor.mm	v8, v17, v16
+	vmandn.mm	v0, v8, v12
 	ret
 
 func000000000000005d:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vf	v16, v12, fa5
-	vmflt.vf	v12, v8, fa5
-	vmnot.m	v8, v12
-	vmandn.mm	v0, v8, v16
+	vmflt.vf	v16, v8, fa5
+	vmfle.vf	v8, v12, fa5
+	vmnot.m	v9, v16
+	vmandn.mm	v0, v9, v8
 	ret
 
 func00000000000000a7:
@@ -328,23 +328,23 @@ func0000000000000087:
 	ret
 
 func00000000000000dd:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmin.vv	v8, v8, v12
 	lui	a0, 219235
 	addi	a0, a0, 1981
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmin.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vmflt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
 
 func0000000000000086:
-	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfeq.vf	v16, v12, fa5
 	fli.s	fa5, inf
-	vmflt.vf	v12, v8, fa5
-	vmfgt.vf	v13, v8, fa5
-	vmor.mm	v8, v13, v12
-	vmand.mm	v0, v8, v16
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	fmv.w.x	fa5, zero
+	vmfeq.vf	v8, v12, fa5
+	vmor.mm	v9, v17, v16
+	vmand.mm	v0, v9, v8
 	ret
 

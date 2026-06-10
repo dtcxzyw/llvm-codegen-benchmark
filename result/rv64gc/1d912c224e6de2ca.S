@@ -1,6 +1,6 @@
 func000000000000000d:
-	slli	a0, a0, 32
 	lui	a1, 699051
+	slli	a0, a0, 32
 	srli	a2, a0, 29
 	srli	a0, a0, 28
 	addi	a1, a1, -1365

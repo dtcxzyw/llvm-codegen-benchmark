@@ -64,9 +64,9 @@ func00000000000002f8:
 
 func0000000000000201:
 	zext.b	a1, a1
+	lui	a2, 52429
 	addw	a0, a0, a1
-	lui	a1, 52429
-	addi	a1, a1, -772
+	addi	a1, a2, -772
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

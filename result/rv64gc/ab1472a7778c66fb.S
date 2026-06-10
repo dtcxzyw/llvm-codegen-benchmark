@@ -1,6 +1,7 @@
 func0000000000000002:
-	fcvt.s.d	fa5, fa0
+	fmv.d	fa5, fa0
 	fmv.w.x	fa0, zero
+	fcvt.s.d	fa5, fa5
 	flt.s	a1, fa5, fa0
 	andi	a0, a0, 1
 	beqz	a1, .LBB0_3
@@ -16,8 +17,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fcvt.s.d	fa5, fa0
 	lui	a1, 260608
+	fcvt.s.d	fa5, fa0
 	fmv.w.x	fa0, a1
 	flt.s	a1, fa0, fa5
 	andi	a0, a0, 1

@@ -13,8 +13,8 @@ func00000000000001f8:
 	ret
 
 func0000000000000078:
-	add.uw	a0, a2, a0
 	zext.h	a1, a1
+	add.uw	a0, a2, a0
 	sltu	a0, a1, a0
 	ret
 

@@ -17,13 +17,13 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
+	lui	a3, 522232
+	addi	a3, a3, -129
 	or	a1, a1, a2
-	lui	a2, 522232
+	slli	a2, a3, 32
 	add	a0, a0, a1
-	addi	a1, a2, -129
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	andn	a0, a0, a1
+	add	a2, a2, a3
+	andn	a0, a0, a2
 	ret
 
 func0000000000000003:

@@ -30,8 +30,8 @@ func000000000000000a:
 
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 15
 	vmv.v.i	v12, 7
+	vand.vi	v10, v10, 15
 	vmacc.vv	v12, v8, v10
 	vsrl.vi	v8, v12, 3
 	ret

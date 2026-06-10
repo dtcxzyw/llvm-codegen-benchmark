@@ -77,10 +77,10 @@ func000000000000000a:
 	ret
 
 func0000000000000408:
+	lui	a2, 1048568
 	sub	a0, a0, a1
-	lui	a1, 1048568
-	addi	a1, a1, -1
-	addw	a0, a0, a1
+	addi	a2, a2, -1
+	addw	a0, a0, a2
 	lui	a1, 1048560
 	sltu	a0, a0, a1
 	ret

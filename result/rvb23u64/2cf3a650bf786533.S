@@ -1,8 +1,8 @@
 func0000000000000055:
 	srai	a2, a2, 21
+	lui	a3, 163
 	add	a1, a1, a2
-	lui	a2, 163
-	addi	a2, a2, -1005
+	addi	a2, a3, -1005
 	mul	a1, a1, a2
 	lui	a2, 256
 	add	a0, a0, a2
@@ -11,9 +11,9 @@ func0000000000000055:
 
 func0000000000000000:
 	srai	a2, a2, 21
+	lui	a3, 163
 	add	a1, a1, a2
-	lui	a2, 163
-	addi	a2, a2, -1005
+	addi	a2, a3, -1005
 	mul	a1, a1, a2
 	lui	a2, 256
 	add	a0, a0, a2
@@ -22,9 +22,9 @@ func0000000000000000:
 
 func0000000000000040:
 	srai	a2, a2, 21
+	lui	a3, 163
 	add	a1, a1, a2
-	lui	a2, 163
-	addi	a2, a2, -1005
+	addi	a2, a3, -1005
 	mul	a1, a1, a2
 	lui	a2, 256
 	add	a0, a0, a2

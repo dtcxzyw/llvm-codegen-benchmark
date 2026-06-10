@@ -1,6 +1,6 @@
 func0000000000000366:
-	add	a2, a2, a0
 	srliw	a1, a1, 31
+	add	a2, a2, a0
 	srliw	a2, a2, 1
 	addiw	a2, a2, 1
 	czero.nez	a0, a0, a1

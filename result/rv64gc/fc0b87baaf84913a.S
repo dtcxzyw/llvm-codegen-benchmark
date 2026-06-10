@@ -1,6 +1,6 @@
 func0000000000000037:
-	addi	a0, a0, 7
 	lui	a1, 131072
+	addi	a0, a0, 7
 	srli	a0, a0, 3
 	addi	a0, a0, 30
 	addi	a1, a1, -8

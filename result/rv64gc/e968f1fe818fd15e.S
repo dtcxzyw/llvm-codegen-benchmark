@@ -10,18 +10,18 @@ func000000000000003f:
 	slli	a2, a2, 32
 	slli	a1, a1, 32
 	srli	a2, a2, 32
-	add	a0, a0, a2
-	lui	a2, 524288
 	srli	a1, a1, 32
-	sub	a1, a1, a2
+	lui	a3, 524288
+	add	a0, a0, a2
+	sub	a1, a1, a3
 	add	a0, a0, a1
 	ret
 
 func000000000000003c:
 	li	a3, 1
-	andi	a0, a0, -8
 	slli	a3, a3, 35
 	addi	a3, a3, -8
+	andi	a0, a0, -8
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

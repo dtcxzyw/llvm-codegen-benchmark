@@ -19,11 +19,11 @@ func000000000000001c:
 func000000000000000f:
 	xor	a1, a1, a2
 	slli	a1, a1, 32
-	srli	a2, a1, 29
-	srli	a1, a1, 25
-	sub	a1, a1, a2
 	lui	a2, 1
+	srli	a3, a1, 29
+	srli	a1, a1, 25
 	addi	a2, a2, 848
+	sub	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -9,8 +9,8 @@ func0000000000000012:
 	ret
 
 func0000000000000002:
-	fabs.d	fa4, fa1
 	li	a0, 971
+	fabs.d	fa4, fa1
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	flt.d	a0, fa4, fa5

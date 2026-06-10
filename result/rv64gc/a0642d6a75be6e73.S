@@ -10,8 +10,8 @@ func0000000000000030:
 
 func000000000000003f:
 	slli	a2, a2, 40
-	li	a3, 722
 	srli	a2, a2, 56
+	li	a3, 722
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -19,8 +19,8 @@ func000000000000003f:
 
 func0000000000000037:
 	slli	a2, a2, 40
-	li	a3, 1260
 	srli	a2, a2, 56
+	li	a3, 1260
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -28,8 +28,8 @@ func0000000000000037:
 
 func0000000000000035:
 	slli	a2, a2, 40
-	li	a3, 1260
 	srli	a2, a2, 56
+	li	a3, 1260
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -37,8 +37,8 @@ func0000000000000035:
 
 func000000000000003d:
 	slli	a2, a2, 40
-	li	a3, 1260
 	srli	a2, a2, 56
+	li	a3, 1260
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2

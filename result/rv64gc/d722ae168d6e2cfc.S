@@ -1,6 +1,6 @@
 func0000000000000006:
-	addiw	a2, a2, 1
 	slli	a1, a1, 63
+	addiw	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 2
@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	addiw	a2, a2, 1
 	slli	a1, a1, 63
+	addiw	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 2

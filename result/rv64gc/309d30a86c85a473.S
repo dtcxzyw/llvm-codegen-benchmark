@@ -54,8 +54,8 @@ func0000000000000031:
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 1
 	srliw	a2, a2, 16
+	andi	a1, a1, 1
 	seqz	a2, a2
 	slli	a2, a2, 16
 	addi	a1, a1, -1
@@ -64,9 +64,9 @@ func0000000000000008:
 	ret
 
 func0000000000000029:
-	andi	a1, a1, 1
 	sext.w	a3, a2
 	li	a4, 1048
+	andi	a1, a1, 1
 	lui	a2, 262144
 	bgeu	a3, a4, .LBB5_3
 	lui	a3, 131072

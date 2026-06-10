@@ -1,8 +1,9 @@
 func0000000000000001:
-	bnez	a0, .LBB0_2
-	li	a1, 2
-.LBB0_2:
+	mv	a2, a0
 	mv	a0, a1
+	bnez	a2, .LBB0_2
+	li	a0, 2
+.LBB0_2:
 	ret
 
 func0000000000000008:
@@ -21,12 +22,13 @@ func0000000000000041:
 	ret
 
 func000000000000000a:
-	lui	a2, 524288
-	addiw	a3, a2, -2
-	bge	a3, a0, .LBB3_2
-	addiw	a1, a2, -1
-.LBB3_2:
+	mv	a2, a0
+	lui	a3, 524288
+	addiw	a4, a3, -2
 	mv	a0, a1
+	bge	a4, a2, .LBB3_2
+	addiw	a0, a3, -1
+.LBB3_2:
 	ret
 
 func0000000000000046:
@@ -50,19 +52,21 @@ func0000000000000044:
 	ret
 
 func0000000000000004:
-	lui	a2, 524288
-	addi	a2, a2, 1
-	bgeu	a0, a2, .LBB7_2
-	li	a1, 100
-.LBB7_2:
+	mv	a2, a0
+	lui	a0, 524288
+	addi	a3, a0, 1
 	mv	a0, a1
+	bgeu	a2, a3, .LBB7_2
+	li	a0, 100
+.LBB7_2:
 	ret
 
 func000000000000002a:
-	blez	a0, .LBB8_2
-	li	a1, 1
-.LBB8_2:
+	mv	a2, a0
 	mv	a0, a1
+	blez	a2, .LBB8_2
+	li	a0, 1
+.LBB8_2:
 	ret
 
 func000000000000006a:
@@ -72,13 +76,14 @@ func000000000000006a:
 	ret
 
 func0000000000000021:
-	li	a2, -1
-	srli	a2, a2, 1
-	bne	a0, a2, .LBB10_2
-	lui	a1, 524288
-	addiw	a1, a1, -1
-.LBB10_2:
+	mv	a2, a0
+	li	a0, -1
+	srli	a3, a0, 1
 	mv	a0, a1
+	bne	a2, a3, .LBB10_2
+	lui	a0, 524288
+	addiw	a0, a0, -1
+.LBB10_2:
 	ret
 
 func0000000000000006:
@@ -98,11 +103,12 @@ func0000000000000078:
 	ret
 
 func0000000000000018:
-	lui	a2, 1
-	bgeu	a2, a0, .LBB13_2
-	lui	a1, 1
-.LBB13_2:
+	mv	a2, a0
+	lui	a3, 1
 	mv	a0, a1
+	bgeu	a3, a2, .LBB13_2
+	lui	a0, 1
+.LBB13_2:
 	ret
 
 func0000000000000064:
@@ -127,12 +133,13 @@ func0000000000000054:
 	ret
 
 func0000000000000024:
-	li	a2, -1
-	slli	a2, a2, 32
-	bgeu	a0, a2, .LBB17_2
-	lui	a1, 524288
-	addiw	a1, a1, -1
-.LBB17_2:
+	mv	a2, a0
+	li	a0, -1
+	slli	a3, a0, 32
 	mv	a0, a1
+	bgeu	a2, a3, .LBB17_2
+	lui	a0, 524288
+	addiw	a0, a0, -1
+.LBB17_2:
 	ret
 

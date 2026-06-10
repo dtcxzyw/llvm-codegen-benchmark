@@ -17,22 +17,22 @@ func0000000000000041:
 	ret
 
 func0000000000000061:
-	li	a3, -2
 	sub	a2, a2, a1
 	li	a1, -1
-	sub	a3, a3, a0
+	li	a3, -2
 	slli	a1, a1, 32
+	sub	a3, a3, a0
 	or	a1, a1, a2
 	xor	a1, a1, a3
 	seqz	a0, a1
 	ret
 
 func00000000000000f4:
-	li	a3, -5
 	sub	a2, a2, a1
-	sub	a3, a3, a0
-	ori	a0, a2, 3
-	bseti	a0, a0, 63
-	sltu	a0, a0, a3
+	li	a1, -5
+	ori	a2, a2, 3
+	sub	a1, a1, a0
+	bseti	a0, a2, 63
+	sltu	a0, a0, a1
 	ret
 

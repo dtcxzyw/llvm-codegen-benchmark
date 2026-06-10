@@ -1,6 +1,6 @@
 func0000000000000005:
-	andi	a0, a0, 128
 	li	a1, 1023
+	andi	a0, a0, 128
 	slli	a0, a0, 56
 	slli	a1, a1, 52
 	or	a0, a0, a1

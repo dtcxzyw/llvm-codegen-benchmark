@@ -1,9 +1,9 @@
 func0000000000000061:
 	or	a1, a1, a2
-	lui	a2, 196384
 	or	a0, a0, a1
+	lui	a1, 196384
 	sext.w	a0, a0
-	addi	a1, a2, 274
+	addi	a1, a1, 274
 	xor	a0, a0, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -11,10 +11,9 @@ func0000000000000061:
 	ret
 
 func0000000000000064:
-	mv	a3, a0
 	or	a1, a1, a2
+	or	a1, a1, a0
 	lui	a0, 8
-	or	a1, a1, a3
 	sext.w	a1, a1
 	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB1_2

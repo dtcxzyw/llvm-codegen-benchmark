@@ -1,6 +1,6 @@
 func0000000000000294:
-	sext.b	a0, a0
 	sext.b	a1, a1
+	sext.b	a0, a0
 	sext.b	a2, a2
 	slt	a2, a2, a1
 	slt	a0, a1, a0
@@ -8,8 +8,8 @@ func0000000000000294:
 	ret
 
 func0000000000000210:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	zext.b	a2, a2
 	sltu	a2, a2, a1
 	sltu	a0, a1, a0

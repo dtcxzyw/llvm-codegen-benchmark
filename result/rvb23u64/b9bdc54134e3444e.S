@@ -23,15 +23,15 @@ func000000000000030a:
 	ret
 
 func0000000000000526:
-	sext.w	a2, a1
-	lui	a3, 1
-	addi	a3, a3, -496
-	slt	a2, a3, a2
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
+	lui	a2, 1
+	sext.w	a3, a1
+	addi	a2, a2, -496
+	slt	a3, a2, a3
+	czero.nez	a1, a1, a3
+	czero.eqz	a0, a0, a3
 	or	a0, a0, a1
 	sraiw	a1, a0, 31
-	and	a1, a1, a3
+	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
@@ -47,19 +47,19 @@ func000000000000036a:
 	ret
 
 func000000000000032a:
-	sext.w	a2, a1
-	lui	a3, 1047978
-	addi	a3, a3, -836
-	slt	a2, a2, a3
-	lui	a3, 523342
+	lui	a2, 1047978
+	sext.w	a3, a1
+	addi	a2, a2, -836
+	slt	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
-	lui	a2, 525234
-	addi	a3, a3, -1428
 	or	a0, a0, a1
-	sext.w	a1, a0
-	slt	a1, a3, a1
-	addi	a2, a2, 1427
+	lui	a1, 523342
+	sext.w	a2, a0
+	addi	a1, a1, -1428
+	lui	a3, 525234
+	slt	a1, a1, a2
+	addi	a2, a3, 1427
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret

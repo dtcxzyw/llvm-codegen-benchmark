@@ -49,19 +49,19 @@ func0000000000000040:
 
 func00000000000000d5:
 	add	a1, a1, a2
-	lui	a2, 1047615
 	add	a0, a0, a1
+	lui	a1, 1047615
 	slli	a0, a0, 6
-	addi	a1, a2, -1792
+	addi	a1, a1, -1792
 	addw	a0, a0, a1
 	ret
 
 func00000000000000d7:
 	add	a1, a1, a2
-	lui	a2, 1048336
 	add	a0, a0, a1
+	lui	a1, 1048336
 	slli	a0, a0, 4
-	addi	a1, a2, -1472
+	addi	a1, a1, -1472
 	addw	a0, a0, a1
 	ret
 

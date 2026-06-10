@@ -1,27 +1,27 @@
 func000000000000007c:
 	li	a3, 122
 	mulw	a2, a2, a3
-	lui	a3, 305
 	sh2add	a1, a2, a1
 	sh2add	a0, a0, a1
-	addi	a1, a3, 976
+	lui	a1, 305
+	addi	a1, a1, 976
 	add	a0, a0, a1
 	ret
 
 func000000000000004c:
 	li	a3, 122
 	mulw	a2, a2, a3
-	lui	a3, 320
 	sh2add	a1, a2, a1
 	sh2add	a0, a0, a1
-	addi	a1, a3, -928
+	lui	a1, 320
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 
 func00000000000001fc:
 	sh1add	a2, a2, a2
-	sext.w	a2, a2
 	add	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	addi	a0, a0, 10
 	ret

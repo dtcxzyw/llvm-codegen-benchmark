@@ -12,8 +12,8 @@ func0000000000000021:
 func0000000000000061:
 	lui	a2, 8160
 	and	a1, a1, a2
-	lui	a2, 32
 	andi	a0, a0, 63
+	lui	a2, 32
 	seqz	a0, a0
 	add	a1, a1, a2
 	addi	a0, a0, -1

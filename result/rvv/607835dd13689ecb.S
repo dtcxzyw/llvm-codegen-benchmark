@@ -17,8 +17,8 @@ func0000000000000004:
 	vmv.v.x	v8, a0
 	li	a0, -87
 	vmerge.vxm	v8, v8, a0, v0
-	li	a0, -48
 	vmv1r.v	v0, v9
+	li	a0, -48
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

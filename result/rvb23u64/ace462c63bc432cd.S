@@ -5,8 +5,8 @@ func0000000000000000:
 	ret
 
 func0000000000000037:
-	slli	a2, a2, 7
 	mul	a0, a0, a1
+	slli	a2, a2, 7
 	addw	a0, a0, a2
 	ret
 
@@ -17,8 +17,8 @@ func000000000000003f:
 	ret
 
 func0000000000000035:
-	slli	a2, a2, 8
 	mul	a0, a0, a1
+	slli	a2, a2, 8
 	addw	a0, a0, a2
 	ret
 

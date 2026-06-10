@@ -1,6 +1,6 @@
 func0000000000000005:
-	srli	a0, a0, 12
 	lui	a1, 262144
+	srli	a0, a0, 12
 	or	a0, a0, a1
 	ret
 
@@ -15,8 +15,8 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	srli	a0, a0, 32
 	lui	a1, 24
+	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 
@@ -31,8 +31,8 @@ func0000000000000006:
 	ret
 
 func000000000000000c:
-	srli	a0, a0, 32
 	lui	a1, 256
+	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 

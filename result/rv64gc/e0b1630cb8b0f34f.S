@@ -28,8 +28,8 @@ func000000000000002c:
 func0000000000000028:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	seqz	a1, a1
 	sltiu	a0, a0, 64
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	neg	a0, a0

@@ -12,8 +12,8 @@ func000000000000002c:
 	lui	a0, 8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 1048552
 	vmseq.vi	v0, v10, 0
+	lui	a0, 1048552
 	vandn.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsne.vi	v0, v8, 0

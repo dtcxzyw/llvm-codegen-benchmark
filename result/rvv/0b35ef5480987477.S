@@ -31,8 +31,8 @@ func0000000000000118:
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
-	lui	a0, 16
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 16
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -48,9 +48,9 @@ func0000000000000318:
 	ret
 
 func0000000000000308:
+	li	a0, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vi	v12, v10, 3
-	li	a0, 33
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

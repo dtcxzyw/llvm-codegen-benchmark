@@ -10,8 +10,8 @@ func0000000000000001:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
-	li	a0, -3
 	vsll.vi	v8, v8, 4
+	li	a0, -3
 	srli	a0, a0, 1
 	vmsgtu.vx	v0, v8, a0
 	ret

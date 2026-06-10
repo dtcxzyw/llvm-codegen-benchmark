@@ -52,13 +52,13 @@ func0000000000000035:
 	addi	a3, a3, %lo(.LCPI2_1)
 	add	a2, a2, a3
 	lbu	a2, 0(a2)
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a2, 64
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 .LCPI3_0:

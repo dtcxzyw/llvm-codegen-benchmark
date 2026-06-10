@@ -13,8 +13,8 @@ func0000000000000302:
 	addi	a0, a0, -1952
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 304
 	vmseq.vi	v9, v10, 0
+	li	a0, 304
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
@@ -35,8 +35,8 @@ func0000000000000048:
 	slli	a0, a0, 10
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 256
 	vmseq.vi	v9, v10, 0
+	li	a0, 256
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
@@ -46,8 +46,8 @@ func0000000000000102:
 	lui	a0, 4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 49
 	vmseq.vi	v9, v10, 0
+	li	a0, 49
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
@@ -57,8 +57,8 @@ func0000000000000202:
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 60
 	vmseq.vi	v9, v10, 0
+	li	a0, 60
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
@@ -68,8 +68,8 @@ func0000000000000118:
 	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 256
 	vmsne.vi	v9, v10, 0
+	li	a0, 256
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
@@ -78,8 +78,8 @@ func0000000000000118:
 func0000000000000310:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 3
-	lui	a0, 1
 	vmsne.vi	v9, v10, 0
+	lui	a0, 1
 	addi	a0, a0, 8
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
@@ -90,8 +90,8 @@ func0000000000000318:
 	lui	a0, 1048575
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vandn.vx	v10, v10, a0
-	li	a0, 340
 	vmsne.vi	v9, v10, 6
+	li	a0, 340
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
@@ -111,9 +111,9 @@ func0000000000000210:
 	addi	a0, a0, -2
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	vmsgtu.vi	v9, v10, 5
 	lui	a0, 1048572
 	addi	a0, a0, -1
-	vmsgtu.vi	v9, v10, 5
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
@@ -132,8 +132,8 @@ func000000000000004c:
 func0000000000000308:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 3
-	li	a0, 128
 	vmsne.vi	v9, v10, 1
+	li	a0, 128
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

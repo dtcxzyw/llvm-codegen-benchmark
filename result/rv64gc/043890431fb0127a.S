@@ -1,8 +1,8 @@
 func0000000000000094:
 	sext.w	a1, a1
 	li	a3, 1
-	sll	a2, a3, a2
 	slti	a1, a1, 64
+	sll	a2, a3, a2
 	neg	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

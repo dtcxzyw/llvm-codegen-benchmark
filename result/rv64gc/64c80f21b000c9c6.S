@@ -1,7 +1,7 @@
 func0000000000000007:
 	seqz	a2, a2
-	andi	a1, a1, 128
 	addi	a2, a2, -1
+	andi	a1, a1, 128
 	andi	a2, a2, 112
 	or	a0, a0, a1
 	or	a0, a0, a2

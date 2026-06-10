@@ -1,6 +1,6 @@
 func0000000000000063:
-	andi	a0, a0, 15
 	li	a1, 9
+	andi	a0, a0, 15
 	bltu	a1, a0, .LBB0_2
 	li	a1, 48
 	add	a0, a0, a1
@@ -11,8 +11,8 @@ func0000000000000063:
 	ret
 
 func0000000000000053:
-	andi	a0, a0, 15
 	li	a1, 10
+	andi	a0, a0, 15
 	bltu	a0, a1, .LBB1_2
 	li	a1, 55
 	add	a0, a0, a1

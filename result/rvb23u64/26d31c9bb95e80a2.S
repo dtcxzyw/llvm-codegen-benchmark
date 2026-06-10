@@ -15,8 +15,8 @@ func0000000000000040:
 	ret
 
 func0000000000000015:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	slli	a0, a0, 3
 	ret

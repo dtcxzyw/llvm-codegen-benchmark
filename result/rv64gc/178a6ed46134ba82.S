@@ -1,7 +1,7 @@
 func0000000000000000:
-	sext.w	a1, a1
 	lui	a3, 1
 	addi	a3, a3, -1
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
@@ -11,9 +11,9 @@ func0000000000000000:
 	ret
 
 func0000000000000020:
-	sext.w	a1, a1
 	lui	a3, 1
 	addi	a3, a3, -1
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2

@@ -23,8 +23,8 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	beq	a1, a2, .LBB2_2
 	lui	a1, 1
 	slli	a0, a0, 48
@@ -40,10 +40,10 @@ func000000000000000f:
 
 func0000000000000009:
 	sext.w	a1, a1
-	lui	a2, 1048568
-	slli	a0, a0, 48
 	snez	a1, a1
 	addi	a1, a1, -1
+	lui	a2, 1048568
+	slli	a0, a0, 48
 	and	a1, a1, a2
 	srli	a0, a0, 48
 	add	a0, a0, a1

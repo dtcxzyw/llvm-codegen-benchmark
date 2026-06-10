@@ -12,10 +12,10 @@ func0000000000000318:
 
 func000000000000030c:
 	li	a2, 1
-	li	a3, 3
 	bseti	a2, a2, 63
-	bseti	a3, a3, 63
+	li	a3, 3
 	xor	a2, a2, a1
+	bseti	a3, a3, 63
 	snez	a2, a2
 	slt	a1, a1, a3
 	and	a1, a1, a2

@@ -8,8 +8,8 @@ func0000000000000002:
 
 func000000000000000f:
 	lui	a3, 1048512
-	slliw	a0, a0, 13
 	addi	a3, a3, 511
+	slliw	a0, a0, 13
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -55,8 +55,8 @@ func000000000000000c:
 
 func000000000000000b:
 	lui	a3, 16
-	slliw	a1, a1, 24
 	addi	a3, a3, -256
+	slliw	a1, a1, 24
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -64,8 +64,8 @@ func000000000000000b:
 
 func000000000000000e:
 	lui	a3, 32
-	slliw	a1, a1, 5
 	addi	a3, a3, -256
+	slliw	a1, a1, 5
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -89,8 +89,8 @@ func000000000000000d:
 
 func0000000000000006:
 	li	a3, 15
-	slliw	a1, a1, 6
 	slli	a3, a3, 8
+	slliw	a1, a1, 6
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

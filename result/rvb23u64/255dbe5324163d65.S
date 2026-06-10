@@ -50,9 +50,9 @@ func0000000000000045:
 func00000000000000c0:
 	add	a1, a1, a2
 	sh3add	a2, a1, a1
+	lui	a3, 1000785
 	sh2add	a1, a2, a1
-	lui	a2, 1000785
-	addi	a2, a2, 865
+	addi	a2, a3, 865
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

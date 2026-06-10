@@ -1,9 +1,9 @@
 func0000000000000294:
-	srli	a2, a1, 16
-	snez	a2, a2
-	slli	a2, a2, 4
-	srl	a1, a1, a2
 	li	a2, 256
+	srli	a3, a1, 16
+	snez	a3, a3
+	slli	a3, a3, 4
+	srl	a1, a1, a3
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a0
 .LBB0_2:
@@ -11,11 +11,11 @@ func0000000000000294:
 	ret
 
 func0000000000000084:
-	srli	a2, a1, 16
-	snez	a2, a2
-	slli	a2, a2, 4
-	srl	a1, a1, a2
 	li	a2, 256
+	srli	a3, a1, 16
+	snez	a3, a3
+	slli	a3, a3, 4
+	srl	a1, a1, a3
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a0
 .LBB1_2:

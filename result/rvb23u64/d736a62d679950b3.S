@@ -5,9 +5,9 @@ func0000000000000024:
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB0_2
 	fmv.w.x	fa5, zero
-	fadd.s	fa5, fa5, fa0
 	lui	a0, 263313
 	addi	a0, a0, -37
+	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -15,9 +15,9 @@ func0000000000000024:
 	lui	a0, 265361
 	addi	a0, a0, -37
 	fmv.w.x	fa5, a0
-	fadd.s	fa5, fa5, fa0
 	lui	a0, 263313
 	addi	a0, a0, -37
+	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

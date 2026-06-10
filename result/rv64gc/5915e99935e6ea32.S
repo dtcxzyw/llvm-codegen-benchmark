@@ -43,8 +43,8 @@ func0000000000000198:
 
 func0000000000000028:
 	lui	a2, 2
-	sltiu	a0, a0, 2
 	and	a1, a1, a2
+	sltiu	a0, a0, 2
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -52,10 +52,10 @@ func0000000000000028:
 
 func000000000000002a:
 	lui	a2, 16
-	slti	a0, a0, 2044
 	addi	a2, a2, -2
 	and	a1, a1, a2
 	addi	a1, a1, -410
+	slti	a0, a0, 2044
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -63,9 +63,9 @@ func000000000000002a:
 
 func0000000000000101:
 	slli	a1, a1, 48
-	srli	a0, a0, 28
 	srli	a1, a1, 61
 	addi	a1, a1, -3
+	srli	a0, a0, 28
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

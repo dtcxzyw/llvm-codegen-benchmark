@@ -1,44 +1,44 @@
 func0000000000000044:
 	srli	a3, a2, 1
+	or	a3, a3, a2
+	srli	a4, a3, 2
+	or	a3, a3, a4
+	srli	a4, a3, 4
+	or	a3, a3, a4
+	srli	a4, a3, 8
 	lui	a6, 349525
+	or	a3, a3, a4
 	lui	a7, 209715
-	lui	t0, 61681
-	lui	t1, 4112
-	or	a5, a2, a3
+	srli	a5, a3, 16
 	addi	a4, a6, 1365
-	addi	t2, a7, 819
-	addi	a6, t0, -241
-	addi	a7, t1, 257
-	srli	a3, a5, 2
-	or	t1, a5, a3
-	slli	a5, a4, 32
-	add	t0, a4, a5
-	slli	a5, t2, 32
-	add	a5, a5, t2
-	slli	a4, a6, 32
-	add	a6, a6, a4
-	slli	a4, a7, 32
-	add	a7, a7, a4
-	srli	a3, t1, 4
-	or	a4, t1, a3
-	srli	a3, a4, 8
-	or	a3, a3, a4
-	srli	a4, a3, 16
-	or	a3, a3, a4
-	srli	a4, a3, 32
-	or	a3, a3, a4
+	or	a3, a3, a5
+	addi	a5, a7, 819
+	srli	a6, a3, 32
+	slli	a7, a4, 32
+	or	a3, a3, a6
+	slli	a6, a5, 32
 	not	a3, a3
+	add	a7, a7, a4
 	srli	a4, a3, 1
-	and	a4, a4, t0
+	add	a5, a5, a6
+	and	a4, a4, a7
+	lui	a6, 61681
 	sub	a3, a3, a4
 	and	a4, a3, a5
 	srli	a3, a3, 2
 	and	a3, a3, a5
+	lui	a7, 4112
+	addi	a5, a6, -241
+	add	a4, a4, a3
+	addi	a6, a7, 257
+	srli	a3, a4, 4
 	add	a3, a3, a4
-	srli	a4, a3, 4
-	add	a3, a3, a4
-	and	a3, a3, a6
-	mul	a3, a3, a7
+	slli	a4, a5, 32
+	add	a4, a4, a5
+	slli	a5, a6, 32
+	and	a3, a3, a4
+	add	a5, a5, a6
+	mul	a3, a3, a5
 	srli	a3, a3, 56
 	sll	a2, a2, a3
 	mul	a1, a1, a2
@@ -49,45 +49,45 @@ func0000000000000044:
 
 func0000000000000004:
 	srli	a3, a2, 1
+	or	a3, a3, a2
+	srli	a4, a3, 2
+	or	a3, a3, a4
+	srli	a4, a3, 4
+	or	a3, a3, a4
+	srli	a4, a3, 8
 	lui	a6, 349525
+	or	a3, a3, a4
 	lui	a7, 209715
-	lui	t0, 61681
-	lui	t1, 4112
-	or	a5, a2, a3
+	srli	a5, a3, 16
 	addi	a4, a6, 1365
-	addi	t2, a7, 819
-	addi	a6, t0, -241
-	addi	a7, t1, 257
-	srli	a3, a5, 2
-	or	t1, a5, a3
-	slli	a5, a4, 32
-	add	t0, a4, a5
-	slli	a5, t2, 32
-	add	a5, a5, t2
-	slli	a4, a6, 32
-	add	a6, a6, a4
-	slli	a4, a7, 32
-	add	a7, a7, a4
-	srli	a3, t1, 4
-	or	a4, t1, a3
-	srli	a3, a4, 8
-	or	a3, a3, a4
-	srli	a4, a3, 16
-	or	a3, a3, a4
-	srli	a4, a3, 32
-	or	a3, a3, a4
+	or	a3, a3, a5
+	addi	a5, a7, 819
+	srli	a6, a3, 32
+	slli	a7, a4, 32
+	or	a3, a3, a6
+	slli	a6, a5, 32
 	not	a3, a3
+	add	a7, a7, a4
 	srli	a4, a3, 1
-	and	a4, a4, t0
+	add	a5, a5, a6
+	and	a4, a4, a7
+	lui	a6, 61681
 	sub	a3, a3, a4
 	and	a4, a3, a5
 	srli	a3, a3, 2
 	and	a3, a3, a5
+	lui	a7, 4112
+	addi	a5, a6, -241
+	add	a4, a4, a3
+	addi	a6, a7, 257
+	srli	a3, a4, 4
 	add	a3, a3, a4
-	srli	a4, a3, 4
-	add	a3, a3, a4
-	and	a3, a3, a6
-	mul	a3, a3, a7
+	slli	a4, a5, 32
+	add	a4, a4, a5
+	slli	a5, a6, 32
+	and	a3, a3, a4
+	add	a5, a5, a6
+	mul	a3, a3, a5
 	srli	a3, a3, 56
 	sll	a2, a2, a3
 	mul	a1, a1, a2
@@ -98,45 +98,45 @@ func0000000000000004:
 
 func00000000000000c4:
 	srli	a3, a2, 1
+	or	a3, a3, a2
+	srli	a4, a3, 2
+	or	a3, a3, a4
+	srli	a4, a3, 4
+	or	a3, a3, a4
+	srli	a4, a3, 8
 	lui	a6, 349525
+	or	a3, a3, a4
 	lui	a7, 209715
-	lui	t0, 61681
-	lui	t1, 4112
-	or	a5, a2, a3
+	srli	a5, a3, 16
 	addi	a4, a6, 1365
-	addi	t2, a7, 819
-	addi	a6, t0, -241
-	addi	a7, t1, 257
-	srli	a3, a5, 2
-	or	t1, a5, a3
-	slli	a5, a4, 32
-	add	t0, a4, a5
-	slli	a5, t2, 32
-	add	a5, a5, t2
-	slli	a4, a6, 32
-	add	a6, a6, a4
-	slli	a4, a7, 32
-	add	a7, a7, a4
-	srli	a3, t1, 4
-	or	a4, t1, a3
-	srli	a3, a4, 8
-	or	a3, a3, a4
-	srli	a4, a3, 16
-	or	a3, a3, a4
-	srli	a4, a3, 32
-	or	a3, a3, a4
+	or	a3, a3, a5
+	addi	a5, a7, 819
+	srli	a6, a3, 32
+	slli	a7, a4, 32
+	or	a3, a3, a6
+	slli	a6, a5, 32
 	not	a3, a3
+	add	a7, a7, a4
 	srli	a4, a3, 1
-	and	a4, a4, t0
+	add	a5, a5, a6
+	and	a4, a4, a7
+	lui	a6, 61681
 	sub	a3, a3, a4
 	and	a4, a3, a5
 	srli	a3, a3, 2
 	and	a3, a3, a5
+	lui	a7, 4112
+	addi	a5, a6, -241
+	add	a4, a4, a3
+	addi	a6, a7, 257
+	srli	a3, a4, 4
 	add	a3, a3, a4
-	srli	a4, a3, 4
-	add	a3, a3, a4
-	and	a3, a3, a6
-	mul	a3, a3, a7
+	slli	a4, a5, 32
+	add	a4, a4, a5
+	slli	a5, a6, 32
+	and	a3, a3, a4
+	add	a5, a5, a6
+	mul	a3, a3, a5
 	srli	a3, a3, 56
 	sll	a2, a2, a3
 	mul	a1, a1, a2

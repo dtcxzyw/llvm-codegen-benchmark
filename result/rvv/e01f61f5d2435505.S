@@ -23,9 +23,9 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vcpop.v	v8, v8
-	li	a0, 31
 	vmseq.vx	v0, v8, a0
 	ret
 
@@ -48,9 +48,9 @@ func0000000000000058:
 	ret
 
 func0000000000000041:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vcpop.v	v8, v8
-	li	a0, 31
 	vmseq.vx	v0, v8, a0
 	ret
 

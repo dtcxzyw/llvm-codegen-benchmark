@@ -1,14 +1,14 @@
 func0000000000000021:
-	zext.b	a2, a0
-	zext.b	a1, a1
+	zext.b	a2, a1
+	zext.b	a1, a0
 	li	a0, 105
-	bnez	a1, .LBB0_3
-	bnez	a2, .LBB0_4
+	bnez	a2, .LBB0_3
+	bnez	a1, .LBB0_4
 .LBB0_2:
 	ret
 .LBB0_3:
 	li	a0, 121
-	beqz	a2, .LBB0_2
+	beqz	a1, .LBB0_2
 .LBB0_4:
 	li	a0, 105
 	ret

@@ -31,12 +31,12 @@ func000000000000000c:
 	ret
 
 func000000000000000d:
-	andi	a2, a2, 1
 	lui	a3, 1047599
+	andi	a2, a2, 1
 	addi	a3, a3, 1792
+	lui	a4, 1221
 	czero.nez	a2, a3, a2
-	lui	a3, 1221
-	addi	a3, a3, -1216
+	addi	a3, a4, -1216
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1

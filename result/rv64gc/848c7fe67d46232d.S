@@ -6,8 +6,8 @@ func0000000000000006:
 	ret
 
 func0000000000000038:
-	addi	a1, a1, -5
 	li	a2, 3
+	addi	a1, a1, -5
 	bltu	a2, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -21,8 +21,8 @@ func0000000000000001:
 	ret
 
 func0000000000000041:
-	addi	a1, a1, 1
 	li	a2, -1
+	addi	a1, a1, 1
 	beq	a1, a2, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

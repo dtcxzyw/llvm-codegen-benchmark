@@ -10,12 +10,12 @@ func000000000000018c:
 
 func00000000000001cf:
 	li	a3, 1680
-	zext.b	a0, a0
 	mul	a1, a1, a3
+	zext.b	a0, a0
 	lui	a3, 2
 	add	a0, a0, a2
-	add	a0, a0, a1
-	addi	a1, a3, -184
+	addi	a2, a3, -184
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

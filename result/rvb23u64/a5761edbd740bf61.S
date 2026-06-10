@@ -1,8 +1,8 @@
 func0000000000000003:
-	xori	a1, a1, 128
 	lui	a2, 512
-	zext.b	a1, a1
+	xori	a1, a1, 128
 	addi	a2, a2, -64
+	zext.b	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func0000000000000028:
 	slli	a3, a2, 1
 	slli	a2, a2, 2
-	sub	a0, a0, a1
 	add	a2, a2, a3
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 1
 	sltu	a0, a2, a0
@@ -12,9 +12,9 @@ func0000000000000028:
 func0000000000000024:
 	slli	a3, a2, 1
 	slli	a2, a2, 2
-	sub	a0, a0, a1
 	add	a2, a2, a3
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 1
 	sltu	a0, a0, a2

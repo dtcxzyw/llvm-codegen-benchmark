@@ -37,9 +37,9 @@ func00000000000004ca:
 	ret
 
 func00000000000000c1:
-	sraiw	a1, a0, 31
-	lui	a2, 524288
-	addi	a2, a2, 1
+	lui	a1, 524288
+	sraiw	a2, a0, 31
+	addi	a1, a1, 1
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	seqz	a0, a0
@@ -87,12 +87,12 @@ func0000000000000cc6:
 	ret
 
 func0000000000000546:
-	sext.w	a1, a0
-	lui	a2, 1
-	addi	a2, a2, -496
-	slt	a1, a2, a1
-	lui	a2, 1048575
-	addi	a2, a2, 496
+	lui	a1, 1
+	sext.w	a2, a0
+	addi	a1, a1, -496
+	lui	a3, 1048575
+	slt	a1, a1, a2
+	addi	a2, a3, 496
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	srliw	a0, a0, 31
@@ -109,11 +109,11 @@ func0000000000000541:
 	ret
 
 func0000000000000101:
-	sext.w	a1, a0
-	lui	a2, 804435
-	addi	a2, a2, 1536
-	addw	a0, a0, a2
-	minu	a0, a0, a1
+	lui	a1, 804435
+	addi	a1, a1, 1536
+	sext.w	a2, a0
+	addw	a0, a0, a1
+	minu	a0, a0, a2
 	seqz	a0, a0
 	ret
 

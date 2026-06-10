@@ -54,9 +54,9 @@ func00000000000000c8:
 func0000000000000088:
 	sext.w	a0, a0
 	addiw	a1, a1, -1
-	sltu	a1, a1, a0
-	sltiu	a0, a0, 2
-	not	a0, a0
+	sltiu	a2, a0, 2
+	sltu	a0, a1, a0
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

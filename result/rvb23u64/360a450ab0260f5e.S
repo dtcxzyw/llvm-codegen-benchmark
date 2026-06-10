@@ -64,13 +64,13 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	andi	a0, a0, 1
 	lui	a2, 1048540
+	andi	a0, a0, 1
+	lui	a3, 176
 	addi	a2, a2, 1360
+	addi	a3, a3, -1428
 	czero.nez	a0, a2, a0
-	lui	a2, 176
-	addi	a2, a2, -1428
-	add	a1, a1, a2
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

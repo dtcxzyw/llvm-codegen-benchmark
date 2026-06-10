@@ -1,6 +1,6 @@
 func0000000000000007:
-	slli	a0, a0, 11
 	li	a1, -1
+	slli	a0, a0, 11
 	slli	a1, a1, 63
 	or	a0, a0, a1
 	ret

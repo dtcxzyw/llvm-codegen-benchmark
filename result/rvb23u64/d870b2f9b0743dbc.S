@@ -15,8 +15,8 @@ func0000000000000030:
 	ret
 
 func00000000000000ec:
-	add.uw	a0, a2, a0
 	slli	a1, a1, 7
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 

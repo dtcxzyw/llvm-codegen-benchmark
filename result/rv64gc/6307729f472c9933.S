@@ -12,19 +12,19 @@ func0000000000000003:
 func0000000000000000:
 	slli	a1, a1, 63
 	srai	a1, a1, 63
+	lui	a3, 262144
 	and	a1, a1, a2
-	lui	a2, 262144
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000002:
 	slli	a1, a1, 63
+	lui	a3, 262144
 	srai	a1, a1, 63
+	addi	a3, a3, 176
 	and	a1, a1, a2
-	lui	a2, 262144
-	addi	a2, a2, 176
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

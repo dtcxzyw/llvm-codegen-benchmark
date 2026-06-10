@@ -1,18 +1,18 @@
 func000000000000000a:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	minu	a0, a0, a1
 	ret
 
 func0000000000000002:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	minu	a0, a0, a1
 	ret
 
 func000000000000003b:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	minu	a0, a0, a1
 	ret
 
@@ -24,8 +24,8 @@ func000000000000007b:
 	ret
 
 func000000000000001a:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	minu	a0, a0, a1
 	ret
 

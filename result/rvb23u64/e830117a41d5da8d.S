@@ -1,6 +1,6 @@
 func0000000000000024:
-	addi	a1, a1, 2
 	lui	a2, 877240
+	addi	a1, a1, 2
 	addi	a2, a2, 215
 	slli	a2, a2, 32
 	slli	a1, a1, 32
@@ -33,8 +33,8 @@ func0000000000000226:
 	ret
 
 func0000000000000378:
-	addi	a1, a1, 2
 	lui	a2, 838861
+	addi	a1, a1, 2
 	addi	a2, a2, -819
 	slli	a2, a2, 32
 	slli	a1, a1, 32

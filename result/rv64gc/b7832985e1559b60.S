@@ -39,20 +39,20 @@ func000000000000008c:
 func0000000000000028:
 	li	a1, 1
 	slli	a1, a1, 33
-	and	a1, a1, a0
-	sext.w	a0, a0
-	sltiu	a0, a0, 50
-	seqz	a1, a1
-	not	a0, a0
+	sext.w	a2, a0
+	and	a0, a0, a1
+	sltiu	a1, a2, 50
+	seqz	a0, a0
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a0
-	li	a2, -15
-	slti	a1, a1, 8
-	slli	a2, a2, 31
-	and	a0, a0, a2
+	li	a1, -15
+	slli	a1, a1, 31
+	sext.w	a2, a0
+	and	a0, a0, a1
+	slti	a1, a2, 8
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -74,12 +74,12 @@ func0000000000000081:
 
 func0000000000000184:
 	lui	a1, 65535
-	sraiw	a2, a0, 16
 	slli	a1, a1, 20
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	snez	a0, a0
-	seqz	a1, a2
+	and	a2, a0, a1
+	xor	a1, a1, a2
+	sraiw	a0, a0, 16
+	snez	a1, a1
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 

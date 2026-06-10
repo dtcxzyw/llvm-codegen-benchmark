@@ -15,12 +15,12 @@ func0000000000000043:
 	ret
 
 func0000000000000002:
-	bexti	a1, a0, 27
-	li	a2, 15
-	slli	a2, a2, 11
-	czero.nez	a1, a2, a1
-	lui	a2, 120
-	or	a0, a0, a2
+	li	a1, 15
+	bexti	a2, a0, 27
+	slli	a1, a1, 11
+	lui	a3, 120
+	czero.nez	a1, a1, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

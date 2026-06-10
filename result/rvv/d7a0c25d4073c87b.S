@@ -42,8 +42,8 @@ func0000000000000000:
 func000000000000002b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 63
 	vsub.vv	v8, v10, v8
+	li	a0, 63
 	vsra.vx	v10, v8, a0
 	li	a0, 62
 	vsrl.vx	v10, v10, a0
@@ -75,8 +75,8 @@ func0000000000000020:
 func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 63
 	vsub.vv	v8, v10, v8
+	li	a0, 63
 	vsra.vx	v10, v8, a0
 	li	a0, 62
 	vsrl.vx	v10, v10, a0

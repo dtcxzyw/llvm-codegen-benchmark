@@ -1,7 +1,7 @@
 func0000000000000021:
-	andi	a2, a0, 3
-	li	a3, 2
-	bne	a2, a3, .LBB0_2
+	li	a2, 2
+	andi	a3, a0, 3
+	bne	a3, a2, .LBB0_2
 	addi	a0, a1, 57
 .LBB0_2:
 	ret

@@ -15,10 +15,10 @@ func0000000000000001:
 
 func00000000000000aa:
 	andi	a2, a2, 1
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
-	add	a1, a1, a2
+	srli	a3, a3, 1
+	add	a1, a1, a3
 	slt	a0, a1, a0
 	ret
 

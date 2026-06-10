@@ -16,9 +16,9 @@ func0000000000000014:
 	ret
 
 func0000000000000010:
+	lui	a1, 262144
 	srli	a0, a0, 1
 	sext.w	a0, a0
-	lui	a1, 262144
 	sltu	a0, a1, a0
 	ret
 

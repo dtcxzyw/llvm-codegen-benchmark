@@ -25,11 +25,11 @@ func000000000000318c:
 
 func0000000000003021:
 	sext.w	a1, a1
-	snez	a2, a2
 	xori	a1, a1, 3
 	or	a0, a0, a1
+	snez	a1, a2
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000003108:

@@ -1,45 +1,45 @@
 func000000000000001f:
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 1
-	vwsll.vv	v12, v10, v11
+	vmv.v.i	v11, 1
+	vzext.vf2	v12, v10
+	vwsll.vv	v10, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func000000000000003c:
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 3
-	vwsll.vv	v12, v10, v11
+	vmv.v.i	v11, 3
+	vzext.vf2	v12, v10
+	vwsll.vv	v10, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000030:
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 1
-	vwsll.vv	v12, v10, v11
+	vmv.v.i	v11, 1
+	vzext.vf2	v12, v10
+	vwsll.vv	v10, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000033:
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 1
-	vwsll.vv	v12, v10, v11
+	vmv.v.i	v11, 1
+	vzext.vf2	v12, v10
+	vwsll.vv	v10, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000020:
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
-	vmv.v.i	v10, 5
-	vwsll.vv	v12, v10, v11
+	vmv.v.i	v11, 5
+	vzext.vf2	v12, v10
+	vwsll.vv	v10, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v12
+	vwaddu.wv	v8, v8, v10
 	ret
 

@@ -6,8 +6,8 @@ func0000000000000000:
 	srli	a0, a0, 2
 	mulhu	a0, a0, a1
 	lui	a1, 111848
-	addi	a1, a1, 437
 	srli	a0, a0, 4
+	addi	a1, a1, 437
 	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1

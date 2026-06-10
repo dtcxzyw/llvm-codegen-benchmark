@@ -58,18 +58,18 @@ func0000000000000030:
 func0000000000000067:
 	slli	a1, a1, 8
 	zext.b	a0, a0
+	lui	a2, 1048573
 	or	a0, a0, a1
-	lui	a1, 1048573
-	addi	a1, a1, 48
+	addi	a1, a2, 48
 	addw	a0, a0, a1
 	ret
 
 func0000000000000001:
 	slli	a1, a1, 6
 	zext.b	a0, a0
+	lui	a2, 1048573
 	add	a0, a0, a1
-	lui	a1, 1048573
-	addi	a1, a1, -128
+	addi	a1, a2, -128
 	addw	a0, a0, a1
 	ret
 

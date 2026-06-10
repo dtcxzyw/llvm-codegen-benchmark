@@ -64,10 +64,10 @@ func0000000000000002:
 
 func00000000000000f0:
 	mul	a1, a1, a2
-	li	a2, 1
 	add	a0, a0, a1
+	li	a1, 1
 	slli	a0, a0, 36
-	slli	a2, a2, 36
-	add	a0, a0, a2
+	slli	a1, a1, 36
+	add	a0, a0, a1
 	ret
 

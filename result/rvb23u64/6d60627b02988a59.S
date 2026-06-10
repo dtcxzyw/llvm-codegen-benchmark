@@ -7,10 +7,10 @@ func0000000000000014:
 	ret
 
 func0000000000000001:
+	bseti	a3, zero, 35
 	sub	a1, a1, a2
-	bseti	a2, zero, 35
-	addi	a2, a2, -16
-	and	a1, a1, a2
+	addi	a3, a3, -16
+	and	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

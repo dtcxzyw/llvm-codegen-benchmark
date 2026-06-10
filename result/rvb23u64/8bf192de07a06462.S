@@ -1,6 +1,6 @@
 func0000000000000318:
-	sext.w	a0, a0
 	binvi	a1, a1, 0
+	sext.w	a0, a0
 	binvi	a1, a1, 63
 	or	a0, a0, a1
 	snez	a0, a0

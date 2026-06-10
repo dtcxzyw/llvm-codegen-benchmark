@@ -1,7 +1,7 @@
 func0000000000000003:
 	mul	a1, a1, a2
-	lui	a2, 4080
 	srli	a1, a1, 8
+	lui	a2, 4080
 	add	a0, a0, a1
 	addi	a1, a2, 255
 	and	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000003:
 
 func000000000000000f:
 	mul	a1, a1, a2
-	lui	a2, 16
 	srli	a1, a1, 8
+	lui	a2, 16
 	add	a0, a0, a1
 	addi	a1, a2, -256
 	and	a0, a0, a1
@@ -18,8 +18,8 @@ func000000000000000f:
 
 func000000000000000b:
 	mul	a1, a1, a2
-	lui	a2, 8
 	srli	a1, a1, 5
+	lui	a2, 8
 	add	a0, a0, a1
 	addi	a1, a2, -993
 	and	a0, a0, a1

@@ -1,7 +1,7 @@
 func0000000000000061:
-	sext.w	a1, a0
-	addi	a0, a0, -1
-	zext.b	a0, a0
-	czero.eqz	a0, a0, a1
+	addi	a1, a0, -1
+	sext.w	a0, a0
+	zext.b	a1, a1
+	czero.eqz	a0, a1, a0
 	ret
 

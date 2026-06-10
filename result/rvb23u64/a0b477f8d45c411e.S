@@ -18,11 +18,11 @@ func0000000000000310:
 	ret
 
 func0000000000000110:
-	zext.b	a1, a1
 	zext.b	a0, a0
-	sltu	a1, a0, a1
-	sltiu	a0, a0, 100
-	xori	a0, a0, 1
+	zext.b	a1, a1
+	sltiu	a2, a0, 100
+	sltu	a0, a0, a1
+	xori	a1, a2, 1
 	or	a0, a0, a1
 	ret
 
@@ -56,11 +56,11 @@ func0000000000000218:
 	ret
 
 func0000000000000102:
-	zext.b	a1, a1
 	zext.b	a0, a0
-	sltu	a1, a0, a1
-	addi	a0, a0, -10
-	seqz	a0, a0
+	zext.b	a1, a1
+	addi	a2, a0, -10
+	sltu	a0, a0, a1
+	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 

@@ -7,10 +7,10 @@ func0000000000000003:
 
 func000000000000000b:
 	lui	a3, 1048568
+	li	a4, 31
 	and	a2, a2, a3
-	li	a3, 31
-	slli	a3, a3, 10
-	and	a1, a1, a3
+	slli	a4, a4, 10
+	and	a1, a1, a4
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

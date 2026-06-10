@@ -9,29 +9,29 @@ func0000000000000000:
 
 func0000000000000014:
 	andi	a1, a1, 1
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 17
-	add	a0, a0, a1
+	srli	a2, a2, 17
+	add	a0, a0, a2
 	srli	a0, a0, 48
 	ret
 
 func000000000000000e:
 	slli	a1, a1, 13
 	srli	a1, a1, 13
+	lui	a2, 1048538
 	add	a0, a0, a1
-	lui	a1, 1048538
-	srli	a1, a1, 12
-	add	a0, a0, a1
+	srli	a2, a2, 12
+	add	a0, a0, a2
 	srli	a0, a0, 51
 	ret
 
 func000000000000001e:
 	zext.h	a1, a1
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	srli	a0, a0, 16
 	ret
 

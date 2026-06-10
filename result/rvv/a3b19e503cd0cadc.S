@@ -9,8 +9,8 @@ func0000000000000005:
 
 func0000000000000009:
 	lui	a0, 1048572
-	csrwi	vxrm, 2
 	addi	a0, a0, 1
+	csrwi	vxrm, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vaadd.vx	v8, v8, a0
 	lui	a0, 4

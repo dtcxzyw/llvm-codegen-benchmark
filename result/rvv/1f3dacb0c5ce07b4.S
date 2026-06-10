@@ -1,9 +1,9 @@
 func00000000000000a6:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, -4
-	li	a0, 4
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsle.vi	v0, v8, 0
+	li	a0, 4
 	vwmaccus.vx	v10, a0, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v8, v10, -1, v0
@@ -12,8 +12,8 @@ func00000000000000a6:
 func0000000000000026:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v8, 1
-	li	a0, 4
 	vmsle.vi	v0, v8, -2
+	li	a0, 4
 	vwmulsu.vx	v8, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v8, v8, -1, v0
@@ -22,9 +22,9 @@ func0000000000000026:
 func00000000000000e6:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 4
-	li	a0, 4
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsle.vi	v0, v8, -2
+	li	a0, 4
 	vwmaccus.vx	v10, a0, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vim	v8, v10, -1, v0

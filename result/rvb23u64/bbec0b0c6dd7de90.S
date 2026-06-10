@@ -2,16 +2,16 @@ func0000000000000000:
 	lui	a3, 131072
 	addi	a3, a3, -1
 	slli	a3, a3, 32
-	orn	a2, a3, a2
 	sh3add	a0, a1, a0
-	sh3add	a0, a2, a0
+	orn	a1, a3, a2
+	sh3add	a0, a1, a0
 	ret
 
 func0000000000000010:
 	not	a2, a2
 	sext.w	a2, a2
+	sh1add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a1, a2, a2
-	sh3add	a0, a1, a0
+	sh3add	a0, a2, a0
 	ret
 

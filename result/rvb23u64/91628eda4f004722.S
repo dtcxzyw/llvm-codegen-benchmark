@@ -6,12 +6,11 @@ func0000000000000001:
 	or	a0, a0, a2
 	ret
 
+.LCPI1_0:
+	.quad	8446744073709551616
 func0000000000000008:
-	lui	a2, 960284
-	addi	a2, a2, -1545
-	slli.uw	a2, a2, 12
-	addi	a2, a2, -317
-	slli	a2, a2, 19
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	add	a2, a2, a0
 	sltu	a1, a1, a2
 	czero.nez	a2, a2, a1

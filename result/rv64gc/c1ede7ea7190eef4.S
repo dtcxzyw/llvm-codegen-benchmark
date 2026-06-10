@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func0000000000000016:
-	slliw	a0, a0, 2
 	li	a1, 16
+	slliw	a0, a0, 2
 	blt	a1, a0, .LBB1_2
 	li	a0, 16
 .LBB1_2:

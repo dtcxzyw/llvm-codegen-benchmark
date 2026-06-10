@@ -1,8 +1,8 @@
 func000000000000002b:
 	srai	a2, a2, 3
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 4
+	srli	a2, a3, 4
 	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
@@ -17,9 +17,9 @@ func000000000000002b:
 
 func0000000000000023:
 	srai	a2, a2, 1
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 2
+	srli	a2, a3, 2
 	andi	a0, a0, 1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2

@@ -8,9 +8,9 @@ func000000000000003c:
 
 func0000000000000038:
 	slli	a2, a2, 32
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	lui	a1, 3
-	srli	a2, a2, 32
 	add	a0, a0, a2
 	addi	a1, a1, 482
 	add	a0, a0, a1

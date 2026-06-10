@@ -45,9 +45,9 @@ func0000000000000058:
 	ret
 
 func0000000000000042:
+	lui	a3, 560295
 	add	a1, a1, a2
-	lui	a2, 560295
-	addi	a2, a2, -1024
+	addi	a2, a3, -1024
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1

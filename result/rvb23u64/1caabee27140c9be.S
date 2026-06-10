@@ -1,14 +1,14 @@
 func000000000000000c:
-	srli	a1, a1, 32
 	lui	a0, 1046192
 	addi	a0, a0, -761
+	srli	a1, a1, 32
 	slli	a0, a0, 10
 	mul	a0, a0, a1
 	ret
 
 func000000000000000f:
-	srli	a1, a1, 32
 	lui	a0, 175922
+	srli	a1, a1, 32
 	addi	a0, a0, -571
 	mul	a0, a0, a1
 	ret

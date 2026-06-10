@@ -11,8 +11,8 @@ func0000000000000004:
 	ret
 
 func0000000000000024:
-	addiw	a0, a0, -7
 	lui	a1, 1
+	addiw	a0, a0, -7
 	sltiu	a0, a0, 2
 	addi	a1, a1, 327
 	xor	a0, a0, a1

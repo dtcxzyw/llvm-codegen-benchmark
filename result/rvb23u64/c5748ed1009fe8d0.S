@@ -12,9 +12,9 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	srli	a1, a0, 30
-	xor	a0, a0, a1
 	lui	a1, 442489
+	srli	a2, a0, 30
+	xor	a0, a0, a2
 	addi	a1, a1, -1691
 	mul	a0, a0, a1
 	addi	a0, a0, 1

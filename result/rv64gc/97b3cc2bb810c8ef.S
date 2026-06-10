@@ -1,8 +1,8 @@
 func000000000000000f:
 	andi	a1, a1, 1
-	li	a2, 205
 	addw	a0, a0, a1
-	mul	a1, a0, a2
+	li	a1, 205
+	mul	a1, a0, a1
 	slli	a1, a1, 48
 	srli	a1, a1, 59
 	slli	a2, a1, 1
@@ -13,9 +13,9 @@ func000000000000000f:
 
 func0000000000000000:
 	andi	a1, a1, 1
-	li	a2, 205
 	addw	a0, a0, a1
 	zext.b	a1, a0
+	li	a2, 205
 	mul	a1, a1, a2
 	srli	a1, a1, 11
 	slli	a2, a1, 1

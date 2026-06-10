@@ -6,8 +6,8 @@ func000000000000000a:
 	ret
 
 func0000000000000003:
-	srliw	a1, a1, 16
 	slli	a0, a0, 32
+	srliw	a1, a1, 16
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
@@ -43,8 +43,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	srli	a1, a1, 9
 	lui	a2, 1048572
+	srli	a1, a1, 9
 	srli	a2, a2, 11
 	and	a1, a1, a2
 	sext.w	a0, a0

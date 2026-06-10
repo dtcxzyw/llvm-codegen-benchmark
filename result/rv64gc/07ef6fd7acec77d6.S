@@ -1,18 +1,18 @@
 func0000000000000302:
-	slli	a1, a0, 52
-	andi	a0, a0, 31
-	srli	a1, a1, 63
-	addi	a0, a0, -27
-	seqz	a0, a0
+	andi	a1, a0, 31
+	slli	a0, a0, 52
+	addi	a1, a1, -27
+	srli	a0, a0, 63
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000042:
-	andi	a1, a0, 1024
-	andi	a0, a0, 31
-	seqz	a1, a1
-	addi	a0, a0, -27
+	andi	a1, a0, 31
+	andi	a0, a0, 1024
+	addi	a1, a1, -27
 	seqz	a0, a0
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 

@@ -1,12 +1,14 @@
 func0000000000000002:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfwcvt.f.xu.v	v12, v8
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmv2r.v	v12, v8
 	lui	a0, 131839
 	slli	a0, a0, 33
-	vsetvli	zero, zero, e64, m4, ta, ma
 	vmv.v.x	v8, a0
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vfwcvt.f.xu.v	v16, v12
 	fli.d	fa5, 0.5
-	vfmacc.vf	v8, fa5, v12
+	vsetvli	zero, zero, e64, m4, ta, ma
+	vfmacc.vf	v8, fa5, v16
 	ret
 
 .LCPI1_0:
@@ -14,12 +16,12 @@ func0000000000000002:
 func0000000000000000:
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmv2r.v	v12, v8
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	fli.d	fa4, 0.5
-	vfmv.v.f	v8, fa4
+	fli.d	fa5, 0.5
+	vfmv.v.f	v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfwcvt.f.xu.v	v16, v12
+	lui	a0, %hi(.LCPI1_0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmacc.vf	v8, fa5, v16
 	ret

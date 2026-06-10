@@ -16,8 +16,8 @@ func0000000000000019:
 	li	a0, 33
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
-	li	a0, -1
 	vadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 31
 	vor.vx	v8, v8, a0
 	ret

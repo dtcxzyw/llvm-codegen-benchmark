@@ -11,8 +11,8 @@ func0000000000000081:
 	ret
 
 func0000000000000481:
-	addi	a1, a1, -4
 	li	a2, 10
+	addi	a1, a1, -4
 	bltu	a1, a2, .LBB1_2
 	li	a1, 5
 .LBB1_2:

@@ -20,8 +20,8 @@ func000000000000001c:
 
 func000000000000001f:
 	addi	a1, a1, 1
-	lui	a2, 64
 	srliw	a1, a1, 6
+	lui	a2, 64
 	slli	a1, a1, 3
 	add	a0, a0, a2
 	add	a0, a0, a1

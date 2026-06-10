@@ -1,8 +1,8 @@
 func0000000000000048:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 11
 	vmsleu.vi	v0, v10, 1
-	vmv.v.i	v10, 11
-	vmerge.vim	v10, v10, 3, v0
+	vmerge.vim	v10, v12, 3, v0
 	vadd.vv	v10, v10, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0

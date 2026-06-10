@@ -2,40 +2,40 @@
 	.quad	164703072086692425
 func00000000000004e5:
 	lui	a3, 299593
-	sub	a0, a0, a1
-	lui	a1, 748983
 	addi	a3, a3, 585
-	addi	a1, a1, -585
+	srai	a2, a2, 3
 	slli	a4, a3, 33
 	add	a3, a3, a4
-	slli	a4, a1, 33
-	add	a1, a1, a4
-	lui	a4, %hi(.LCPI0_0)
-	ld	a4, %lo(.LCPI0_0)(a4)
-	srai	a2, a2, 3
-	srai	a0, a0, 3
+	lui	a4, 748983
 	mul	a2, a2, a3
-	add	a2, a2, a4
+	addi	a3, a4, -585
+	sub	a0, a0, a1
+	slli	a1, a3, 33
+	srai	a0, a0, 3
+	add	a1, a1, a3
+	lui	a3, %hi(.LCPI0_0)
 	mul	a0, a0, a1
-	sltu	a0, a2, a0
+	ld	a1, %lo(.LCPI0_0)(a3)
+	add	a1, a1, a2
+	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 
 func00000000000004e4:
-	srai	a2, a2, 2
 	lui	a3, 349525
-	sub	a0, a0, a1
-	lui	a1, 699051
 	addi	a3, a3, 1365
-	srai	a0, a0, 2
-	addi	a1, a1, -1365
+	srai	a2, a2, 2
 	slli	a4, a3, 32
 	add	a3, a3, a4
-	slli	a4, a1, 32
-	add	a1, a1, a4
+	lui	a4, 699051
 	mul	a2, a2, a3
-	addi	a2, a2, 8
+	addi	a3, a4, -1365
+	sub	a0, a0, a1
+	slli	a1, a3, 32
+	srai	a0, a0, 2
+	add	a1, a1, a3
 	mul	a0, a0, a1
+	addi	a2, a2, 8
 	sltu	a0, a0, a2
 	ret
 

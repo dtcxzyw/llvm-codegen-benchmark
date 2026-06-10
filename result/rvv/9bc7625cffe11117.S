@@ -34,8 +34,8 @@ func0000000000000004:
 	vadd.vx	v10, v10, a0
 	li	a0, 1619
 	vmacc.vx	v10, a0, v12
-	lui	a0, 13
 	vadd.vv	v8, v8, v10
+	lui	a0, 13
 	addi	a0, a0, -657
 	vadd.vx	v8, v8, a0
 	ret
@@ -47,8 +47,8 @@ func0000000000000155:
 	lui	a0, 1048368
 	addi	a0, a0, -524
 	vmacc.vx	v10, a0, v12
-	lui	a0, 1043808
 	vadd.vv	v8, v8, v10
+	lui	a0, 1043808
 	addi	a0, a0, 1056
 	vadd.vx	v8, v8, a0
 	ret

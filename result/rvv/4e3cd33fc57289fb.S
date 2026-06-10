@@ -20,9 +20,9 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
+	lui	a0, 1048574
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 1048574
 	vadd.vx	v8, v8, a0
 	vrem.vv	v8, v8, v12
 	ret

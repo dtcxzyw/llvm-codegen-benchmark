@@ -9,12 +9,12 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
+	li	a2, 1
+	slli	a2, a2, 32
 	andi	a1, a1, -4
+	addi	a2, a2, -4
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 32
-	addi	a0, a0, -4
-	addi	a0, a0, 3
+	addi	a0, a2, 3
 	and	a0, a0, a1
 	ret
 

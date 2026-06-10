@@ -4,19 +4,19 @@ func0000000000000021:
 	ret
 
 func0000000000000828:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsne.vi	v12, v8, 0
 	li	a0, -9
 	srli	a0, a0, 3
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsne.vi	v12, v8, 0
 	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
 
 func0000000000000838:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsne.vi	v12, v8, 0
 	li	a0, -17
 	srli	a0, a0, 4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsne.vi	v12, v8, 0
 	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
@@ -38,9 +38,9 @@ func000000000000002c:
 	ret
 
 func0000000000000028:
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v12, v8, 0
-	lui	a0, 1048064
 	vadd.vx	v8, v10, a0
 	lui	a0, 523776
 	vmsltu.vx	v10, v8, a0

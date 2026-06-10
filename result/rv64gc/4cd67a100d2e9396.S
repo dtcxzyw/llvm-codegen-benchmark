@@ -7,12 +7,12 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
+	li	a2, -1
 	sub	a1, a1, a0
-	li	a0, -1
+	slli	a2, a2, 63
 	srai	a1, a1, 4
-	slli	a0, a0, 63
-	addi	a2, a0, 63
-	and	a1, a1, a2
-	sltu	a0, a0, a1
+	addi	a0, a2, 63
+	and	a0, a0, a1
+	sltu	a0, a2, a0
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.w	a0, a0
 	andi	a3, a1, 1
+	sext.w	a0, a0
 	lui	a1, 64
 	bnez	a3, .LBB0_2
 	slli	a1, a2, 46
@@ -11,11 +11,11 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
-	sext.w	a0, a0
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	slli	a1, a1, 47
+	sext.w	a0, a0
 	srli	a1, a1, 47
 	sltu	a0, a1, a0
 	ret
@@ -59,11 +59,11 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	slt	a0, a1, a0
 	ret

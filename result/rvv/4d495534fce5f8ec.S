@@ -7,9 +7,9 @@ func0000000000000084:
 	ret
 
 func0000000000000184:
-	li	a0, -92
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -92
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, -46
@@ -17,9 +17,9 @@ func0000000000000184:
 	ret
 
 func00000000000001a4:
-	li	a0, -60
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -60
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, 31
@@ -27,11 +27,11 @@ func00000000000001a4:
 	ret
 
 func00000000000000a4:
-	li	a0, 1500
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vadd.vi	v8, v8, -1
+	li	a0, 1500
 	vmsltu.vx	v0, v8, a0
 	ret
 

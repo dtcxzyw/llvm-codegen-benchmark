@@ -18,8 +18,8 @@ func0000000000000004:
 	ret
 
 func000000000000001e:
-	slli	a1, a1, 7
 	lui	a2, 65028
+	slli	a1, a1, 7
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	or	a0, a0, a1

@@ -32,10 +32,10 @@ func0000000000000013:
 .LCPI3_0:
 	.quad	-4658895280553007687
 func0000000000000004:
-	zext.b	a2, a2
 	lui	a3, %hi(.LCPI3_0)
-	addi	a2, a2, -5
+	zext.b	a2, a2
 	ld	a3, %lo(.LCPI3_0)(a3)
+	addi	a2, a2, -5
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

@@ -9,11 +9,11 @@ func0000000000000026:
 
 func0000000000000001:
 	lui	a2, 526344
+	lui	a3, 1044464
 	addi	a2, a2, 128
+	addi	a3, a3, -257
 	xor	a1, a1, a2
-	lui	a2, 1044464
-	addi	a2, a2, -257
-	add	a0, a0, a2
+	add	a0, a0, a3
 	and	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0

@@ -1,6 +1,6 @@
 func0000000000000003:
-	zext.b	a1, a1
 	andi	a2, a2, 1
+	zext.b	a1, a1
 	sh1add	a2, a2, a2
 	addi	a1, a1, -4
 	czero.eqz	a2, a2, a1

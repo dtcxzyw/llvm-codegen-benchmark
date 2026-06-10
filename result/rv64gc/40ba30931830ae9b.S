@@ -1,11 +1,10 @@
 func00000000000004aa:
-	sext.w	a0, a0
 	lui	a3, 8
 	addi	a3, a3, -2
+	lui	a4, 524304
 	addw	a2, a2, a3
-	lui	a3, 524304
-	addi	a3, a3, 3
-	mul	a3, a2, a3
+	addi	a4, a4, 3
+	mul	a3, a2, a4
 	srli	a3, a3, 32
 	add	a2, a2, a3
 	srliw	a3, a2, 31
@@ -13,6 +12,7 @@ func00000000000004aa:
 	add	a2, a2, a3
 	slli	a3, a2, 2
 	add	a1, a1, a2
+	sext.w	a0, a0
 	addw	a1, a1, a3
 	slt	a0, a1, a0
 	ret

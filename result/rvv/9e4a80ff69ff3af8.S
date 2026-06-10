@@ -1,7 +1,7 @@
 func0000000000000029:
+	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 255
 	vnsrl.wi	v10, v8, 0
 	vand.vx	v8, v12, a0
 	vand.vx	v9, v10, a0
@@ -9,9 +9,9 @@ func0000000000000029:
 	ret
 
 func0000000000000021:
+	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 255
 	vnsrl.wi	v10, v8, 0
 	vand.vx	v8, v12, a0
 	vand.vx	v9, v10, a0
@@ -19,9 +19,9 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
+	li	a0, 2047
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 2047
 	vnsrl.wi	v10, v8, 0
 	vand.vx	v8, v12, a0
 	vand.vx	v9, v10, a0
@@ -29,9 +29,9 @@ func0000000000000001:
 	ret
 
 func000000000000002b:
+	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 255
 	vnsrl.wi	v10, v8, 0
 	vand.vx	v8, v12, a0
 	vand.vx	v9, v10, a0
@@ -39,9 +39,9 @@ func000000000000002b:
 	ret
 
 func0000000000000003:
+	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 255
 	vnsrl.wi	v10, v8, 0
 	vand.vx	v8, v12, a0
 	vand.vx	v9, v10, a0

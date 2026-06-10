@@ -36,9 +36,9 @@ func0000000000000015:
 	xori	a2, a2, 1
 	and	a1, a1, a2
 	li	a2, 16
+	lui	a3, 176
 	czero.eqz	a1, a2, a1
-	lui	a2, 176
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

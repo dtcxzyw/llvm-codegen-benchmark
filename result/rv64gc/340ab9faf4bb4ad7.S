@@ -6,9 +6,9 @@ func0000000000000000:
 	fmv.d.x	fa0, a0
 	ret
 .LBB0_2:
-	fcvt.d.lu	fa5, a1
 	li	a0, 511
 	slli	a0, a0, 53
+	fcvt.d.lu	fa5, a1
 	fmv.d.x	fa4, a0
 	fmul.d	fa0, fa5, fa4
 	ret

@@ -47,8 +47,8 @@ func0000000000000081:
 func000000000000008a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 1
 	vadd.vi	v8, v8, 1
+	lui	a0, 1
 	addi	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -73,8 +73,8 @@ func0000000000000088:
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 262144
 	vadd.vi	v8, v8, 8
+	lui	a0, 262144
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -95,8 +95,8 @@ func00000000000000a1:
 func00000000000000a8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 8
 	vadd.vi	v8, v8, 5
+	lui	a0, 8
 	addi	a0, a0, -9
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -277,8 +277,8 @@ func00000000000000e8:
 func0000000000000108:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 16
 	vadd.vi	v8, v8, 2
+	lui	a0, 16
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -300,8 +300,8 @@ func00000000000001f8:
 func0000000000000078:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 16
 	vadd.vi	v8, v8, 1
+	lui	a0, 16
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -352,8 +352,8 @@ func00000000000001b8:
 func0000000000000018:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 4096
 	vadd.vi	v8, v8, 2
+	lui	a0, 4096
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -377,8 +377,8 @@ func0000000000000186:
 func000000000000018c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	lui	a0, 524288
 	vadd.vi	v8, v8, 4
+	lui	a0, 524288
 	addi	a0, a0, -1
 	vmsne.vx	v0, v8, a0
 	ret

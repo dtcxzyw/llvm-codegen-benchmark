@@ -64,9 +64,9 @@ func00000000000000aa:
 
 func00000000000000a6:
 	sext.h	a1, a1
+	lui	a2, 1048564
 	addw	a0, a0, a1
-	lui	a1, 1048564
-	addi	a1, a1, -1930
+	addi	a1, a2, -1930
 	slt	a0, a0, a1
 	ret
 

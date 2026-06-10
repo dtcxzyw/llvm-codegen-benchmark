@@ -36,12 +36,11 @@ func0000000000000063:
 	vadd.vv	v8, v10, v8
 	ret
 
+.LCPI5_0:
+	.quad	1000000000000000000
 func0000000000000010:
-	lui	a0, 227374
-	addi	a0, a0, -1329
-	slli	a0, a0, 12
-	addi	a0, a0, -1575
-	slli	a0, a0, 18
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
 	vmerge.vvm	v10, v12, v10, v0

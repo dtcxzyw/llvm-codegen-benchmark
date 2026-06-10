@@ -39,9 +39,9 @@ func0000000000000010:
 
 func0000000000000003:
 	slli	a2, a2, 32
-	slli	a0, a0, 2
 	srli	a3, a2, 28
 	srli	a2, a2, 22
+	slli	a0, a0, 2
 	add	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

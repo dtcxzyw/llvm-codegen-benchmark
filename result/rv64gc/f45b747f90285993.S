@@ -1,7 +1,7 @@
 func00000000000002a1:
 	andi	a2, a2, -8
-	srai	a1, a1, 6
 	add	a0, a0, a2
+	srai	a1, a1, 6
 	li	a2, -1
 	add	a0, a0, a1
 	srli	a2, a2, 7
@@ -29,9 +29,9 @@ func00000000000002ac:
 
 func00000000000002a8:
 	andi	a2, a2, -8
-	srai	a1, a1, 6
 	add	a0, a0, a2
 	li	a2, 1
+	srai	a1, a1, 6
 	slli	a2, a2, 32
 	add	a0, a0, a1
 	addi	a2, a2, -2

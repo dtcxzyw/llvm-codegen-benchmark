@@ -15,10 +15,10 @@ func000000000000048a:
 
 func000000000000002c:
 	add	a1, a1, a2
-	sltiu	a2, a1, -1
 	xor	a0, a0, a1
+	sltiu	a1, a1, -1
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 
 func00000000000004ca:

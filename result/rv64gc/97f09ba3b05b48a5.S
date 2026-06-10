@@ -1,8 +1,8 @@
 func0000000000000003:
+	lui	a2, 174763
 	add	a0, a0, a1
-	lui	a1, 174763
+	addi	a1, a2, -1365
 	slli	a0, a0, 32
-	addi	a1, a1, -1365
 	slli	a1, a1, 33
 	mulhu	a0, a0, a1
 	ret

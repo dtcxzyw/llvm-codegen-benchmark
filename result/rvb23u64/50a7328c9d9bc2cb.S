@@ -51,11 +51,11 @@ func0000000000000061:
 	ret
 
 func0000000000000068:
-	zext.b	a1, a1
 	lui	a3, 16
+	zext.b	a1, a1
 	addi	a3, a3, -48
-	sltiu	a1, a1, 58
 	addw	a2, a2, a3
+	sltiu	a1, a1, 58
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2

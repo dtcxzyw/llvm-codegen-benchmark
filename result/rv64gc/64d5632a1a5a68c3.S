@@ -1,9 +1,9 @@
 func0000000000000001:
 	sext.w	a0, a0
-	lui	a2, 1048560
-	and	a1, a1, a2
 	sgtz	a2, a0
+	lui	a3, 1048560
 	neg	a2, a2
+	and	a1, a1, a3
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

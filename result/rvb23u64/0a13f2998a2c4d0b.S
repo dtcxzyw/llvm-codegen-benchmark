@@ -6,8 +6,8 @@ func000000000000000a:
 	ret
 
 func000000000000003f:
-	addi	a2, a2, 3
 	bseti	a3, zero, 33
+	addi	a2, a2, 3
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -97,8 +97,8 @@ func000000000000003e:
 	addi	a2, a2, -1
 	slli.uw	a2, a2, 3
 	sh1add	a2, a2, a2
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	ret
 

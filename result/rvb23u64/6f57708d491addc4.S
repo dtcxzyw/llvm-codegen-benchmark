@@ -1,10 +1,10 @@
 func000000000000000f:
 	slli	a1, a1, 51
-	lui	a2, 2
 	srli	a1, a1, 55
-	addi	a2, a2, 1171
 	addw	a0, a0, a1
-	zext.w	a1, a0
+	lui	a1, 2
+	zext.w	a2, a0
+	addi	a1, a1, 1171
 	mul	a1, a1, a2
 	srli	a1, a1, 16
 	sub	a2, a0, a1

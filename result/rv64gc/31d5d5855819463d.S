@@ -8,17 +8,17 @@ func000000000000000e:
 	ret
 
 func000000000000000f:
-	addi	a1, a1, 65
 	lui	a2, 512
+	addi	a1, a1, 65
 	addi	a2, a2, -64
 	and	a1, a1, a2
 	mul	a0, a1, a0
 	ret
 
 func000000000000000c:
-	addi	a1, a1, 127
 	li	a2, 1
 	slli	a2, a2, 36
+	addi	a1, a1, 127
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	mul	a0, a1, a0

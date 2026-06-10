@@ -21,8 +21,8 @@ func000000000000007f:
 	ret
 
 func000000000000007c:
-	slli	a1, a1, 48
 	li	a2, 13
+	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -1
 	slli	a2, a2, 35

@@ -1,8 +1,8 @@
 func00000000000000e0:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vrsub.vi	v14, v12, 0
-	li	a0, 31
 	vmax.vv	v12, v12, v14
+	li	a0, 31
 	vmsgtu.vx	v0, v12, a0
 	vadd.vv	v8, v8, v10, v0.t
 	ret
@@ -17,11 +17,11 @@ func00000000000000d0:
 
 func00000000000000e1:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vi	v14, v12, 0
-	vmax.vv	v12, v12, v14
+	vmv.v.i	v14, 1
+	vrsub.vi	v16, v12, 0
+	vmax.vv	v12, v12, v16
 	vmsgtu.vi	v0, v12, 1
-	vmv.v.i	v12, 1
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vadd.vv	v8, v8, v10
 	ret
 

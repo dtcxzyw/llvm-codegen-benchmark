@@ -14,10 +14,10 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 60
 	andi	a0, a0, -2
-	srli	a1, a1, 63
+	slli	a1, a1, 60
 	addiw	a0, a0, -178
+	srli	a1, a1, 63
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

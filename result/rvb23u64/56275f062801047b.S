@@ -1,6 +1,6 @@
 func000000000000001f:
-	slli	a0, a0, 2
 	bseti	a1, zero, 34
+	slli	a0, a0, 2
 	addi	a0, a0, 7
 	addi	a1, a1, -8
 	and	a0, a0, a1

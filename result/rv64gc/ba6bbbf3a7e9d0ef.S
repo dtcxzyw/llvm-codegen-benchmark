@@ -14,8 +14,8 @@ func000000000000001f:
 	ret
 
 func0000000000000017:
-	srai	a0, a0, 1
 	li	a1, 416
+	srai	a0, a0, 1
 	sub	a0, a1, a0
 	ret
 

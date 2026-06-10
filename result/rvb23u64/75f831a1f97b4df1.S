@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	sext.w	a0, a0
 	li	a1, 1
+	sext.w	a0, a0
 	max	a0, a0, a1
 	fcvt.d.wu	fa0, a0
 	ret

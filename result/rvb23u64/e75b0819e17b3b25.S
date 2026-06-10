@@ -1,9 +1,9 @@
 func0000000000000000:
 	fli.s	fa5, 3.0
-	lui	a0, 259973
 	fmul.s	fa5, fa2, fa5
-	addi	a0, a0, 491
 	fadd.s	fa5, fa5, fa1
+	lui	a0, 259973
+	addi	a0, a0, 491
 	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fmul.s	fa0, fa5, fa4

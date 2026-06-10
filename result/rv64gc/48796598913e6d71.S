@@ -105,8 +105,8 @@ func000000000000004b:
 
 func000000000000003f:
 	add	a1, a1, a2
-	lui	a2, 1
 	slli	a1, a1, 2
+	lui	a2, 1
 	add	a0, a0, a1
 	addi	a1, a2, 64
 	add	a0, a0, a1

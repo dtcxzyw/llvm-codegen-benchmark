@@ -1,8 +1,8 @@
 func0000000000000114:
-	addiw	a1, a1, -384
 	srli	a0, a0, 3
-	sltiu	a1, a1, -385
+	addiw	a1, a1, -384
 	slli.uw	a0, a0, 3
+	sltiu	a1, a1, -385
 	sltiu	a0, a0, 312
 	or	a0, a0, a1
 	ret

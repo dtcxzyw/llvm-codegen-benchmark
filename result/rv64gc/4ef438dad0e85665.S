@@ -17,8 +17,8 @@ func0000000000000011:
 	ret
 
 func0000000000000017:
-	srli	a0, a0, 10
 	lui	a1, 512
+	srli	a0, a0, 10
 	addi	a1, a1, -1024
 	and	a0, a0, a1
 	lui	a1, 4

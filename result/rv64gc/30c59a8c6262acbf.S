@@ -1,7 +1,7 @@
 func000000000000000b:
 	lui	a1, 43691
-	slli	a2, a0, 48
 	slli	a1, a1, 4
+	slli	a2, a0, 48
 	mulhu	a1, a2, a1
 	srli	a1, a1, 22
 	slli	a2, a1, 5
@@ -12,9 +12,9 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	slli	a1, a0, 48
-	lui	a2, 149808
-	mulhu	a1, a1, a2
+	lui	a1, 149808
+	slli	a2, a0, 48
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	sub	a2, a0, a1
 	slli	a2, a2, 48
@@ -28,9 +28,9 @@ func000000000000000f:
 	ret
 
 func0000000000000003:
-	slli	a1, a0, 48
-	lui	a2, 56112
-	mulhu	a1, a1, a2
+	lui	a1, 56112
+	slli	a2, a0, 48
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	sub	a2, a0, a1
 	slli	a2, a2, 48

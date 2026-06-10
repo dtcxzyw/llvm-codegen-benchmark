@@ -6,8 +6,8 @@ func0000000000000028:
 	ret
 
 func0000000000000004:
-	addiw	a1, a1, -1
 	slli	a0, a0, 2
+	addiw	a1, a1, -1
 	addi	a0, a0, -4
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 4
@@ -23,8 +23,8 @@ func000000000000002b:
 	ret
 
 func0000000000000007:
-	addiw	a1, a1, -2
 	slli	a0, a0, 2
+	addiw	a1, a1, -2
 	addi	a0, a0, -4
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 4

@@ -36,8 +36,8 @@ func00000000000001e0:
 
 func00000000000000a5:
 	add	a1, a1, a2
-	lui	a2, 4096
 	addi	a1, a1, -2
+	lui	a2, 4096
 	srli	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -45,8 +45,8 @@ func00000000000000a5:
 
 func0000000000000025:
 	add	a1, a1, a2
-	lui	a2, 4096
 	addi	a1, a1, -2
+	lui	a2, 4096
 	srli	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1

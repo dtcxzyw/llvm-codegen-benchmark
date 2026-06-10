@@ -14,8 +14,8 @@ func0000000000000000:
 	ret
 
 func000000000000000a:
-	srliw	a1, a1, 16
 	li	a2, -10
+	srliw	a1, a1, 16
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	zext.w	a0, a0
@@ -37,8 +37,8 @@ func0000000000000010:
 	ret
 
 func0000000000000008:
-	srliw	a1, a1, 19
 	li	a2, -100
+	srliw	a1, a1, 19
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	zext.w	a0, a0

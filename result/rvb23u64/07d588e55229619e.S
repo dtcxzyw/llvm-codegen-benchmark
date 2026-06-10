@@ -1,6 +1,6 @@
 func0000000000000021:
-	andi	a1, a1, 1
 	ori	a0, a0, 1
+	andi	a1, a1, 1
 	addi	a0, a0, -3
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 3

@@ -43,10 +43,10 @@ func0000000000000010:
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf2	v12, v10
 	lui	a0, 107852
 	addi	a0, a0, 1408
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf2	v12, v10
 	vadd.vx	v8, v8, a0
 	lui	a0, 21
 	addi	a0, a0, 384

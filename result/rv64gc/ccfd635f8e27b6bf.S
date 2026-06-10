@@ -5,26 +5,26 @@ func000000000000001f:
 	ret
 
 func000000000000003f:
-	andi	a0, a0, 508
 	lui	a1, 18
+	andi	a0, a0, 508
 	slli	a0, a0, 9
 	addi	a1, a1, -2048
 	add	a0, a0, a1
 	ret
 
 func0000000000000015:
-	slli	a0, a0, 7
 	lui	a1, 524288
+	slli	a0, a0, 7
 	addi	a1, a1, -1024
+	lui	a2, 1047553
 	and	a0, a0, a1
-	lui	a1, 1047553
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	addw	a0, a0, a1
 	ret
 
 func0000000000000010:
-	srli	a0, a0, 2
 	lui	a1, 1047553
+	srli	a0, a0, 2
 	slli	a0, a0, 10
 	addi	a1, a1, -2048
 	addw	a0, a0, a1

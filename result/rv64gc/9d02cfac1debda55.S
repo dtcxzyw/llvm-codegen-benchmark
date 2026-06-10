@@ -7,10 +7,10 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	bne	a0, a1, .LBB1_2
+	addi	a2, a2, -1
+	bne	a0, a2, .LBB1_2
 	lui	a0, 1048568
 .LBB1_2:
 	ret
@@ -32,9 +32,9 @@ func000000000000002a:
 	ret
 
 func0000000000000061:
+	lui	a2, 244141
 	addw	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	xor	a1, a1, a0
 	seqz	a1, a1
 	addi	a1, a1, -1

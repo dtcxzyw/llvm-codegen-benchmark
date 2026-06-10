@@ -4,9 +4,9 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
+	lui	a2, 70179
 	czero.nez	a0, a1, a0
-	lui	a1, 70179
-	addi	a1, a1, 839
+	addi	a1, a2, 839
 	addw	a0, a0, a1
 	ret
 

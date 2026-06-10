@@ -13,8 +13,8 @@ func000000000000001f:
 	ret
 
 func0000000000000002:
-	slliw	a1, a1, 26
 	lui	a2, 1015808
+	slliw	a1, a1, 26
 	addw	a0, a0, a2
 	or	a0, a0, a1
 	ret

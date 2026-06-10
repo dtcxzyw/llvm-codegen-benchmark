@@ -8,11 +8,11 @@ func000000000000003f:
 
 func000000000000003d:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a1, a1, 8
+	zext.b	a0, a0
+	lui	a2, 1048567
 	or	a0, a0, a1
-	lui	a1, 1048567
-	addi	a1, a1, 637
+	addi	a1, a2, 637
 	add	a0, a0, a1
 	ret
 

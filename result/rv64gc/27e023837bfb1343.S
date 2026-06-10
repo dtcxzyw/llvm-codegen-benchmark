@@ -1,9 +1,9 @@
 func000000000000000f:
+	lui	a3, 1048320
 	or	a1, a1, a2
-	lui	a2, 1048320
+	addi	a3, a3, -3
 	slliw	a1, a1, 20
-	addi	a2, a2, -3
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

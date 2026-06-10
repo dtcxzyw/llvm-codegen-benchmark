@@ -1,13 +1,13 @@
 func0000000000000026:
-	slli	a1, a0, 1
-	bseti	a2, zero, 62
-	slt	a0, a0, a2
-	li	a2, -1
-	addi	a1, a1, 1
-	srli	a2, a2, 1
-	czero.nez	a2, a2, a0
-	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
+	bseti	a1, zero, 62
+	slli	a2, a0, 1
+	slt	a0, a0, a1
+	li	a1, -1
+	addi	a2, a2, 1
+	srli	a1, a1, 1
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a2, a0
+	or	a0, a0, a1
 	ret
 
 func00000000000000aa:

@@ -1,6 +1,6 @@
 func0000000000000065:
-	srliw	a1, a1, 31
 	li	a2, -2
+	srliw	a1, a1, 31
 	zext.w	a2, a2
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
@@ -8,8 +8,8 @@ func0000000000000065:
 	ret
 
 func00000000000000a5:
-	srliw	a1, a1, 31
 	li	a2, -2
+	srliw	a1, a1, 31
 	zext.w	a2, a2
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
@@ -32,8 +32,8 @@ func0000000000000010:
 	ret
 
 func0000000000000015:
-	sext.w	a1, a1
 	li	a2, -2
+	sext.w	a1, a1
 	zext.w	a2, a2
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

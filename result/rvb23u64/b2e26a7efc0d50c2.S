@@ -15,10 +15,10 @@ func0000000000000021:
 	or	a1, a1, a2
 	lui	a2, 512
 	addi	a2, a2, -2048
+	li	a3, 27
 	and	a1, a1, a2
-	li	a2, 27
-	slli	a2, a2, 11
-	xor	a1, a1, a2
+	slli	a3, a3, 11
+	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func0000000000000021:
-	lui	a0, 2
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 2
 	addi	a0, a0, 2
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmseq.vx	v10, v8, a0

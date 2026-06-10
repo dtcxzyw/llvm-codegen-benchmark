@@ -1,10 +1,10 @@
 func000000000000002e:
 	zext.b	a2, a2
-	slli	a1, a1, 32
 	addi	a2, a2, -103
-	srli	a1, a1, 27
 	snez	a2, a2
+	slli	a1, a1, 32
 	addi	a2, a2, -1
+	srli	a1, a1, 27
 	andi	a2, a2, -32
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -12,13 +12,13 @@ func000000000000002e:
 
 func000000000000003e:
 	zext.b	a2, a2
-	sext.w	a1, a1
 	addi	a2, a2, -137
+	sext.w	a1, a1
+	snez	a2, a2
 	slli	a3, a1, 2
 	slli	a1, a1, 5
-	snez	a2, a2
-	add	a1, a1, a3
 	addi	a2, a2, -1
+	add	a1, a1, a3
 	andi	a2, a2, -36
 	add	a0, a0, a1
 	add	a0, a0, a2

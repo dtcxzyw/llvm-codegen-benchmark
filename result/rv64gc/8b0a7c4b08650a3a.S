@@ -1,10 +1,10 @@
 func000000000000000f:
 	andi	a1, a1, 7
-	lui	a2, 9363
 	addw	a0, a0, a1
-	slli	a2, a2, 20
-	slli	a1, a0, 32
-	mulhu	a1, a1, a2
+	lui	a1, 9363
+	slli	a2, a0, 32
+	slli	a1, a1, 20
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	sub	a2, a0, a1
 	slli	a2, a2, 48

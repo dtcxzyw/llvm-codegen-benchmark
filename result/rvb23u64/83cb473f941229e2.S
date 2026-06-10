@@ -1,10 +1,10 @@
 func0000000000000004:
 	lui	a2, 4
-	li	a3, 5
 	addi	a2, a2, 423
-	bseti	a3, a3, 33
 	mul	a1, a1, a2
-	mulhu	a2, a1, a3
+	li	a2, 5
+	bseti	a2, a2, 33
+	mulhu	a2, a1, a2
 	sub	a3, a1, a2
 	srli	a3, a3, 1
 	add	a2, a2, a3
@@ -19,11 +19,11 @@ func0000000000000004:
 
 func00000000000000a4:
 	lui	a2, 4
-	li	a3, 5
 	addi	a2, a2, 423
-	bseti	a3, a3, 33
 	mul	a1, a1, a2
-	mulhu	a2, a1, a3
+	li	a2, 5
+	bseti	a2, a2, 33
+	mulhu	a2, a1, a2
 	sub	a3, a1, a2
 	srli	a3, a3, 1
 	add	a2, a2, a3

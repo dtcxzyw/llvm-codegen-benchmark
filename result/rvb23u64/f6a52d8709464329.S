@@ -53,8 +53,8 @@ func0000000000000546:
 
 func00000000000008c6:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	sub	a3, a3, a2
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a1
@@ -63,8 +63,8 @@ func00000000000008c6:
 
 func00000000000008c4:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	sub	a3, a3, a2
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a1

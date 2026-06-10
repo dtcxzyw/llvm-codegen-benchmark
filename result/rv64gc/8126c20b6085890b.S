@@ -46,8 +46,8 @@ func0000000000000035:
 	ret
 
 func000000000000003c:
-	addi	a2, a2, 15
 	lui	a3, 32
+	addi	a2, a2, 15
 	addi	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -55,8 +55,8 @@ func000000000000003c:
 	ret
 
 func000000000000003f:
-	addi	a2, a2, 75
 	lui	a3, 262144
+	addi	a2, a2, 75
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -64,8 +64,8 @@ func000000000000003f:
 	ret
 
 func0000000000000030:
-	addi	a2, a2, 1
 	lui	a3, 1
+	addi	a2, a2, 1
 	addi	a3, a3, -2
 	and	a2, a2, a3
 	add	a0, a0, a1

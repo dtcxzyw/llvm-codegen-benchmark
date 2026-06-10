@@ -1,8 +1,7 @@
 func0000000000000008:
-	srliw	a1, a0, 1
-	lui	a2, 349525
-	or	a0, a0, a1
-	addi	a1, a2, 1365
+	lui	a1, 349525
+	srliw	a2, a0, 1
+	or	a0, a0, a2
 	srliw	a2, a0, 2
 	or	a0, a0, a2
 	srliw	a2, a0, 4
@@ -12,22 +11,23 @@ func0000000000000008:
 	srliw	a2, a0, 16
 	or	a0, a0, a2
 	not	a0, a0
+	addi	a1, a1, 1365
 	srli	a2, a0, 1
 	and	a1, a1, a2
 	lui	a2, 209715
-	addi	a2, a2, 819
 	sub	a0, a0, a1
-	and	a1, a0, a2
-	srli	a0, a0, 2
-	and	a0, a0, a2
-	lui	a2, 61681
+	addi	a1, a2, 819
+	srli	a2, a0, 2
+	and	a0, a0, a1
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
+	lui	a2, 61681
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a2, a2, -241
-	addi	a1, a1, 257
-	and	a0, a0, a2
+	addi	a1, a2, -241
+	lui	a2, 4112
+	and	a0, a0, a1
+	addi	a1, a2, 257
 	mul	a0, a0, a1
 	not	a0, a0
 	srli	a0, a0, 24
@@ -38,10 +38,9 @@ func0000000000000008:
 	ret
 
 func000000000000000f:
-	srliw	a1, a0, 1
-	lui	a2, 349525
-	or	a0, a0, a1
-	addi	a1, a2, 1365
+	lui	a1, 349525
+	srliw	a2, a0, 1
+	or	a0, a0, a2
 	srliw	a2, a0, 2
 	or	a0, a0, a2
 	srliw	a2, a0, 4
@@ -51,22 +50,23 @@ func000000000000000f:
 	srliw	a2, a0, 16
 	or	a0, a0, a2
 	not	a0, a0
+	addi	a1, a1, 1365
 	srli	a2, a0, 1
 	and	a1, a1, a2
 	lui	a2, 209715
-	addi	a2, a2, 819
 	sub	a0, a0, a1
-	and	a1, a0, a2
-	srli	a0, a0, 2
-	and	a0, a0, a2
-	lui	a2, 61681
+	addi	a1, a2, 819
+	srli	a2, a0, 2
+	and	a0, a0, a1
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
+	lui	a2, 61681
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a2, a2, -241
-	addi	a1, a1, 257
-	and	a0, a0, a2
+	addi	a1, a2, -241
+	lui	a2, 4112
+	and	a0, a0, a1
+	addi	a1, a2, 257
 	mul	a0, a0, a1
 	not	a0, a0
 	srli	a0, a0, 24
@@ -75,10 +75,9 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	srliw	a1, a0, 1
-	lui	a2, 349525
-	or	a0, a0, a1
-	addi	a1, a2, 1365
+	lui	a1, 349525
+	srliw	a2, a0, 1
+	or	a0, a0, a2
 	srliw	a2, a0, 2
 	or	a0, a0, a2
 	srliw	a2, a0, 4
@@ -88,22 +87,23 @@ func000000000000000c:
 	srliw	a2, a0, 16
 	or	a0, a0, a2
 	not	a0, a0
+	addi	a1, a1, 1365
 	srli	a2, a0, 1
 	and	a1, a1, a2
 	lui	a2, 209715
-	addi	a2, a2, 819
 	sub	a0, a0, a1
-	and	a1, a0, a2
-	srli	a0, a0, 2
-	and	a0, a0, a2
-	lui	a2, 61681
+	addi	a1, a2, 819
+	srli	a2, a0, 2
+	and	a0, a0, a1
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
+	lui	a2, 61681
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a2, a2, -241
-	addi	a1, a1, 257
-	and	a0, a0, a2
+	addi	a1, a2, -241
+	lui	a2, 4112
+	and	a0, a0, a1
+	addi	a1, a2, 257
 	mul	a0, a0, a1
 	not	a0, a0
 	srli	a0, a0, 24
@@ -114,10 +114,9 @@ func000000000000000c:
 	ret
 
 func000000000000001f:
-	srliw	a1, a0, 1
-	lui	a2, 349525
-	or	a0, a0, a1
-	addi	a1, a2, 1365
+	lui	a1, 349525
+	srliw	a2, a0, 1
+	or	a0, a0, a2
 	srliw	a2, a0, 2
 	or	a0, a0, a2
 	srliw	a2, a0, 4
@@ -127,22 +126,23 @@ func000000000000001f:
 	srliw	a2, a0, 16
 	or	a0, a0, a2
 	not	a0, a0
+	addi	a1, a1, 1365
 	srli	a2, a0, 1
 	and	a1, a1, a2
 	lui	a2, 209715
-	addi	a2, a2, 819
 	sub	a0, a0, a1
-	and	a1, a0, a2
-	srli	a0, a0, 2
-	and	a0, a0, a2
-	lui	a2, 61681
+	addi	a1, a2, 819
+	srli	a2, a0, 2
+	and	a0, a0, a1
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
+	lui	a2, 61681
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a2, a2, -241
-	addi	a1, a1, 257
-	and	a0, a0, a2
+	addi	a1, a2, -241
+	lui	a2, 4112
+	and	a0, a0, a1
+	addi	a1, a2, 257
 	mul	a0, a0, a1
 	not	a0, a0
 	srli	a0, a0, 24

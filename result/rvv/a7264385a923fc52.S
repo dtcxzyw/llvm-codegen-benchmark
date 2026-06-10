@@ -1,7 +1,7 @@
 func000000000000003c:
+	li	a0, 127
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 3
-	li	a0, 127
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	bseti	a0, zero, 36
@@ -11,9 +11,9 @@ func000000000000003c:
 	ret
 
 func000000000000003f:
+	li	a0, 55
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 3
-	li	a0, 55
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	lui	a0, 524288

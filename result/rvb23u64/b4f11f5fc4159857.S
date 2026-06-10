@@ -1,7 +1,7 @@
 func000000000000014c:
 	remw	a1, a1, a2
-	sext.w	a0, a0
 	slti	a1, a1, 3
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret

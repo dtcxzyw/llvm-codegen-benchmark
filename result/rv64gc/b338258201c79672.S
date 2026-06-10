@@ -1,8 +1,8 @@
 func0000000000000504:
-	slli	a2, a1, 56
-	srai	a2, a2, 56
-	li	a3, 96
-	blt	a3, a2, .LBB0_2
+	li	a2, 96
+	slli	a3, a1, 56
+	srai	a3, a3, 56
+	blt	a2, a3, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
 	addi	a0, a0, -65
@@ -11,9 +11,9 @@ func0000000000000504:
 	ret
 
 func0000000000000401:
-	zext.b	a2, a1
-	li	a3, 93
-	bltu	a3, a2, .LBB1_2
+	li	a2, 93
+	zext.b	a3, a1
+	bltu	a2, a3, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
 	zext.b	a0, a0
@@ -22,9 +22,9 @@ func0000000000000401:
 	ret
 
 func0000000000000404:
-	zext.b	a2, a1
-	li	a3, 93
-	bltu	a3, a2, .LBB2_2
+	li	a2, 93
+	zext.b	a3, a1
+	bltu	a2, a3, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
 	addi	a0, a0, -89

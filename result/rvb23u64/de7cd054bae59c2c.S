@@ -216,9 +216,9 @@ func00000000000000b4:
 
 func0000000000000024:
 	slli	a1, a1, 8
+	lui	a2, 2
 	addw	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -323
+	addi	a1, a2, -323
 	sltu	a0, a0, a1
 	ret
 

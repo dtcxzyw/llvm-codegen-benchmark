@@ -15,10 +15,10 @@ func0000000000000250:
 	ret
 
 func0000000000000294:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vv	v12, v8, v12
 	lui	a0, 524288
 	addi	a0, a0, -8
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmul.vv	v12, v8, v12
 	vmsgt.vx	v14, v12, a0
 	vmslt.vv	v12, v10, v8
 	vmor.mm	v0, v12, v14

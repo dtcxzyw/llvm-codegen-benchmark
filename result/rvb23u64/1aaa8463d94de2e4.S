@@ -1,7 +1,7 @@
 func000000000000002c:
 	zext.h	a2, a2
-	slli	a1, a1, 24
 	or	a0, a0, a2
+	slli	a1, a1, 24
 	lui	a2, 370728
 	or	a0, a0, a1
 	addi	a1, a2, -1639

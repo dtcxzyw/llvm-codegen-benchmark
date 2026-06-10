@@ -19,15 +19,15 @@ func000000000000000e:
 	ret
 
 func0000000000000005:
-	srliw	a1, a1, 16
 	li	a2, -10
+	srliw	a1, a1, 16
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000000d:
-	srliw	a1, a1, 21
 	lui	a2, 16
+	srliw	a1, a1, 21
 	addi	a2, a2, -1000
 	mul	a1, a1, a2
 	addw	a0, a0, a1
@@ -40,8 +40,8 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	srliw	a1, a1, 9
 	li	a2, -48
+	srliw	a1, a1, 9
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

@@ -1,25 +1,25 @@
 func0000000000001881:
-	sext.w	a3, a0
-	srliw	a0, a0, 31
 	sltu	a1, a1, a2
-	czero.eqz	a0, a0, a3
-	czero.nez	a1, a1, a3
+	sext.w	a2, a0
+	srliw	a0, a0, 31
+	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000002921:
-	sext.w	a3, a0
-	srliw	a0, a0, 31
 	sltu	a1, a1, a2
-	czero.eqz	a0, a0, a3
-	czero.nez	a1, a1, a3
+	sext.w	a2, a0
+	srliw	a0, a0, 31
+	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000002901:
-	sext.w	a0, a0
 	sltu	a1, a2, a1
+	sext.w	a0, a0
 	sgtz	a2, a0
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -27,8 +27,8 @@ func0000000000002901:
 	ret
 
 func00000000000018a1:
-	sext.w	a0, a0
 	sltu	a1, a2, a1
+	sext.w	a0, a0
 	slti	a2, a0, 1
 	xori	a1, a1, 1
 	czero.eqz	a2, a2, a0
@@ -37,8 +37,8 @@ func00000000000018a1:
 	ret
 
 func0000000000002941:
-	sext.w	a0, a0
 	slt	a1, a2, a1
+	sext.w	a0, a0
 	sgtz	a2, a0
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -46,8 +46,8 @@ func0000000000002941:
 	ret
 
 func00000000000018e1:
-	sext.w	a0, a0
 	slt	a1, a2, a1
+	sext.w	a0, a0
 	slti	a2, a0, 1
 	xori	a1, a1, 1
 	czero.eqz	a2, a2, a0
@@ -56,8 +56,8 @@ func00000000000018e1:
 	ret
 
 func00000000000028c1:
-	sext.w	a0, a0
 	slt	a1, a1, a2
+	sext.w	a0, a0
 	sgtz	a2, a0
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -65,34 +65,34 @@ func00000000000028c1:
 	ret
 
 func00000000000018c1:
-	sext.w	a3, a0
-	srliw	a0, a0, 31
 	slt	a1, a1, a2
-	czero.eqz	a0, a0, a3
-	czero.nez	a1, a1, a3
+	sext.w	a2, a0
+	srliw	a0, a0, 31
+	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000002961:
-	sext.w	a3, a0
-	srliw	a0, a0, 31
 	slt	a1, a1, a2
-	czero.eqz	a0, a0, a3
-	czero.nez	a1, a1, a3
+	sext.w	a2, a0
+	srliw	a0, a0, 31
+	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000003141:
+	slt	a1, a2, a1
 	sext.w	a0, a0
 	snez	a0, a0
-	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000001961:
-	sext.w	a0, a0
 	slt	a1, a1, a2
+	sext.w	a0, a0
 	slti	a2, a0, 1
 	xori	a1, a1, 1
 	czero.eqz	a2, a2, a0

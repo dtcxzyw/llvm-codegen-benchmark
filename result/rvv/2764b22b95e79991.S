@@ -6,9 +6,9 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	lui	a0, 262144
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v0, v8, 0
+	lui	a0, 262144
 	addi	a0, a0, 128
 	vor.vx	v8, v12, a0
 	lui	a0, 786432

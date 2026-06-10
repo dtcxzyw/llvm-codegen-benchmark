@@ -9,12 +9,12 @@ func000000000000003f:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	li	a1, 24
-	add	a0, a0, a2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a1, 12
-	add	a0, a0, a2
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

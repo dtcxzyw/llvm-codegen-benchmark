@@ -1,16 +1,16 @@
 func0000000000000101:
-	sext.w	a0, a0
 	sub	a1, a1, a2
-	lui	a2, 16
+	sext.w	a0, a0
 	addi	a1, a1, 1
+	lui	a2, 16
 	seqz	a1, a1
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	addi	a1, a1, -144
 	snez	a1, a1
 	seqz	a0, a0
@@ -18,8 +18,8 @@ func000000000000002c:
 	ret
 
 func0000000000000108:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	sltiu	a1, a1, 9
 	sltiu	a0, a0, 2
 	and	a0, a0, a1

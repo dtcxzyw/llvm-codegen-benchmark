@@ -88,14 +88,14 @@ func0000000000000029:
 	ret
 
 func0000000000000014:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, -1
 	lui	a0, 16384
 	addi	a1, a0, 64
-	vmv.v.x	v10, a1
-	lui	a1, 49424
-	vmerge.vxm	v10, v10, a0, v0
-	vandn.vx	v8, v8, a1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a1
+	vmsgt.vi	v0, v10, -1
+	vmerge.vxm	v10, v12, a0, v0
+	lui	a0, 49424
+	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 

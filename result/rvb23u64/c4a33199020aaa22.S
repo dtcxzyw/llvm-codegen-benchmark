@@ -35,8 +35,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	li	a2, 8
+	andi	a0, a0, 1
 	sll	a1, a2, a1
 	lui	a2, 2
 	czero.nez	a1, a1, a0

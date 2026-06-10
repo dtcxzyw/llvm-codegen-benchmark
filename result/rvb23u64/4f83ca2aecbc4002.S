@@ -1,10 +1,10 @@
 func0000000000000030:
 	andi	a2, a2, 3
+	lui	a3, 1048572
 	sh3add	a1, a2, a1
-	lui	a2, 1048572
+	addi	a2, a3, -240
+	add	a0, a0, a2
 	sub	a0, a0, a1
-	addi	a1, a2, -240
-	add	a0, a0, a1
 	ret
 
 func000000000000003c:

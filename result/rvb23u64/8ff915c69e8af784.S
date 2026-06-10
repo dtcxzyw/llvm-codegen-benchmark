@@ -7,10 +7,10 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	slli	a1, a1, 60
 	lui	a2, 1048332
-	srli	a1, a1, 44
+	slli	a1, a1, 60
 	addi	a2, a2, -252
+	srli	a1, a1, 44
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -31,10 +31,10 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, 32
 	li	a2, 31
-	slli	a1, a1, 6
+	andi	a1, a1, 32
 	slli	a2, a2, 7
+	slli	a1, a1, 6
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -42,15 +42,15 @@ func0000000000000000:
 func0000000000000006:
 	slli	a1, a1, 11
 	lui	a2, 8192
+	lui	a3, 524286
 	and	a1, a1, a2
-	lui	a2, 524286
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000002:
-	slliw	a1, a1, 1
 	lui	a2, 1048568
+	slliw	a1, a1, 1
 	addi	a3, a2, 254
 	and	a1, a1, a3
 	and	a0, a0, a2

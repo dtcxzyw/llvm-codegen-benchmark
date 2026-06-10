@@ -7,9 +7,9 @@ func0000000000000008:
 	li	a2, 1
 	sub	a1, a2, a1
 .LBB0_3:
+	lui	a2, 599186
 	addw	a0, a0, a1
-	lui	a1, 599186
-	addi	a1, a1, 1171
+	addi	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1

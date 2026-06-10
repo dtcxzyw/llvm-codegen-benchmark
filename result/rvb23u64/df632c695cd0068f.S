@@ -15,10 +15,10 @@ func0000000000000002:
 	czero.nez	a0, a0, a2
 	lui	a2, 61440
 	or	a0, a0, a1
-	lui	a1, 921600
-	addi	a2, a2, 1025
-	and	a0, a0, a2
-	addi	a1, a1, -1026
+	addi	a1, a2, 1025
+	lui	a2, 921600
+	and	a0, a0, a1
+	addi	a1, a2, -1026
 	or	a0, a0, a1
 	ret
 

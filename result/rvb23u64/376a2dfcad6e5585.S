@@ -1,10 +1,10 @@
 func0000000000000012:
 	li	a3, -15
 	srli	a3, a3, 1
+	li	a4, -1
 	sltu	a2, a2, a3
-	li	a3, -1
-	srli	a3, a3, 3
-	czero.nez	a3, a3, a2
+	srli	a4, a4, 3
+	czero.nez	a3, a4, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
 	sh3add	a0, a1, a0
@@ -13,10 +13,10 @@ func0000000000000012:
 func0000000000000013:
 	li	a3, -15
 	srli	a3, a3, 1
+	li	a4, -1
 	sltu	a2, a2, a3
-	li	a3, -1
-	srli	a3, a3, 3
-	czero.nez	a3, a3, a2
+	srli	a4, a4, 3
+	czero.nez	a3, a4, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
 	sh3add	a0, a1, a0

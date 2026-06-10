@@ -1,14 +1,14 @@
 func0000000000000c04:
-	bset	a2, zero, a2
 	sh2add	a1, a1, a1
+	bset	a2, zero, a2
 	add	a0, a0, a2
 	slli	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000c09:
-	bset	a2, zero, a2
 	sh2add	a1, a1, a1
+	bset	a2, zero, a2
 	add	a0, a0, a2
 	slli	a1, a1, 1
 	sltu	a0, a0, a1

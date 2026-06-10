@@ -20,8 +20,8 @@ func000000000000007b:
 	ret
 
 func000000000000000b:
-	sub	a0, a0, a2
 	slli	a1, a1, 1
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -33,15 +33,15 @@ func0000000000000000:
 	ret
 
 func0000000000000030:
-	sub	a0, a0, a2
 	slli	a1, a1, 5
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
 
 func000000000000001a:
-	sub	a0, a0, a2
 	slli	a1, a1, 2
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

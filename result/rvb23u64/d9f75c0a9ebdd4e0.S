@@ -1,8 +1,8 @@
 func00000000000000c0:
 	slli	a2, a2, 48
+	srli	a2, a2, 42
 	add	a0, a0, a1
 	lui	a1, 648056
-	srli	a2, a2, 42
 	add	a0, a0, a2
 	addi	a1, a1, -1607
 	addw	a0, a0, a1
@@ -10,11 +10,11 @@ func00000000000000c0:
 
 func00000000000000d5:
 	zext.h	a2, a2
+	lui	a3, 48
 	sh3add	a1, a2, a1
-	lui	a2, 48
-	add	a0, a0, a1
-	addi	a2, a2, 16
-	addw	a0, a0, a2
+	addi	a3, a3, 16
+	add	a0, a0, a3
+	addw	a0, a0, a1
 	ret
 
 func00000000000000ff:

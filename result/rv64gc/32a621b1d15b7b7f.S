@@ -46,8 +46,8 @@ func0000000000000028:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a1
 	sext.w	a3, a2
+	sext.w	a1, a1
 	sext.w	a2, a0
 	beqz	a3, .LBB4_2
 	li	a0, 500
@@ -65,9 +65,9 @@ func0000000000000146:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sraiw	a2, a2, 31
-	ori	a2, a2, 1
 	slt	a0, a0, a1
+	ori	a1, a2, 1
 	addi	a0, a0, -1
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 

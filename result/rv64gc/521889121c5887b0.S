@@ -36,9 +36,9 @@ func0000000000000014:
 
 func000000000000001f:
 	zext.b	a1, a1
+	lui	a2, 648056
 	sub	a1, a1, a0
-	lui	a0, 648056
-	addi	a0, a0, -1607
+	addi	a0, a2, -1607
 	addw	a0, a0, a1
 	ret
 

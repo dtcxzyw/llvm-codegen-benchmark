@@ -1,7 +1,7 @@
 func0000000000000023:
 	sub	a0, a0, a1
-	lui	a1, 16
 	srli	a0, a0, 1
+	lui	a1, 16
 	sext.w	a0, a0
 	addi	a1, a1, -1
 	max	a0, a0, a1

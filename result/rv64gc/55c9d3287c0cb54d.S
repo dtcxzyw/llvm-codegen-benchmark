@@ -7,10 +7,10 @@ func00000000000000e1:
 	ret
 
 func0000000000000021:
-	sext.w	a3, a1
-	lui	a4, 524288
-	addiw	a4, a4, -1
-	beq	a3, a4, .LBB1_2
+	lui	a3, 524288
+	sext.w	a4, a1
+	addiw	a3, a3, -1
+	beq	a4, a3, .LBB1_2
 	slliw	a0, a1, 1
 	or	a0, a0, a2
 .LBB1_2:

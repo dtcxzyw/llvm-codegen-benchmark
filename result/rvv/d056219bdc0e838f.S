@@ -1,8 +1,8 @@
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v12, v10
-	lui	a0, 526344
 	vmul.vv	v8, v8, v12
+	lui	a0, 526344
 	addi	a0, a0, 129
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -13,8 +13,8 @@ func0000000000000000:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v12, v10
-	lui	a0, 699051
 	vmul.vv	v8, v8, v12
+	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -25,11 +25,11 @@ func0000000000000008:
 .LCPI2_0:
 	.quad	907216921657846801
 func0000000000000002:
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v12, v10
 	vmul.vv	v8, v8, v12
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1

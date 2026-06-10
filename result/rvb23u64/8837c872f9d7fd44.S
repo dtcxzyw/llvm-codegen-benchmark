@@ -1,8 +1,8 @@
 func0000000000000020:
 	srli	a1, a1, 32
+	lui	a2, 1039
 	add	a0, a0, a1
-	lui	a1, 1039
-	addi	a1, a1, 505
+	addi	a1, a2, 505
 	mulw	a0, a0, a1
 	ret
 

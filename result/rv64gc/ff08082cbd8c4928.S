@@ -11,8 +11,8 @@ func000000000000001f:
 	slli	a2, a2, 40
 	slli	a1, a1, 32
 	or	a0, a0, a2
-	li	a2, -1
 	srli	a1, a1, 32
+	li	a2, -1
 	or	a0, a0, a1
 	srli	a2, a2, 32
 	add	a0, a0, a2
@@ -30,12 +30,12 @@ func0000000000000005:
 
 func0000000000000019:
 	slli	a2, a2, 24
+	lui	a3, 16383
 	or	a0, a0, a2
-	lui	a2, 16383
-	slli	a2, a2, 36
-	and	a1, a1, a2
 	li	a2, -1
+	slli	a3, a3, 36
 	slli	a2, a2, 62
+	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

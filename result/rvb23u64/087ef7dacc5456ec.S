@@ -1,6 +1,6 @@
 func0000000000000004:
-	andi	a0, a0, 1
 	fsub.s	fa5, fa0, fa1
+	andi	a0, a0, 1
 	beqz	a0, .LBB0_2
 	fneg.s	fa5, fa5
 .LBB0_2:
@@ -11,8 +11,8 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	fsub.s	fa5, fa0, fa1
+	andi	a0, a0, 1
 	beqz	a0, .LBB1_2
 	fneg.s	fa5, fa5
 .LBB1_2:
@@ -21,8 +21,8 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	andi	a0, a0, 1
 	fsub.s	fa5, fa0, fa1
+	andi	a0, a0, 1
 	beqz	a0, .LBB2_2
 	fneg.s	fa5, fa5
 .LBB2_2:

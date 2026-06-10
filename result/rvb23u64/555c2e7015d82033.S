@@ -1,7 +1,7 @@
 func0000000000000008:
+	li	a3, -56
 	sltu	a0, a1, a0
-	li	a1, -56
-	czero.nez	a0, a1, a0
+	czero.nez	a0, a3, a0
 	add	a0, a0, a2
 	addi	a0, a0, 112
 	ret
@@ -36,9 +36,9 @@ func0000000000000006:
 	ret
 
 func00000000000001ea:
+	li	a3, 168
 	slt	a0, a1, a0
-	li	a1, 168
-	czero.nez	a0, a1, a0
+	czero.nez	a0, a3, a0
 	add	a0, a0, a2
 	addi	a0, a0, 256
 	ret

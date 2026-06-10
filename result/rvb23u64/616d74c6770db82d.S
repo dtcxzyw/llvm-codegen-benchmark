@@ -1,6 +1,6 @@
 func0000000000000058:
-	sext.w	a1, a1
 	not	a2, a2
+	sext.w	a1, a1
 	bexti	a2, a2, 11
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -50,8 +50,8 @@ func0000000000000118:
 	ret
 
 func0000000000000308:
-	sext.w	a1, a1
 	andi	a2, a2, 127
+	sext.w	a1, a1
 	addi	a2, a2, -7
 	snez	a2, a2
 	sltiu	a1, a1, -6
@@ -72,8 +72,8 @@ func0000000000000282:
 	ret
 
 func0000000000000182:
-	sext.w	a1, a1
 	lui	a3, 1
+	sext.w	a1, a1
 	addi	a3, a3, -2
 	and	a2, a2, a3
 	slti	a1, a1, 4

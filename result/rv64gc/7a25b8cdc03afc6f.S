@@ -1,7 +1,7 @@
 func0000000000000002:
-	slli	a1, a0, 1
-	addw	a0, a0, a1
 	li	a1, 120
+	slli	a2, a0, 1
+	addw	a0, a0, a2
 	blt	a0, a1, .LBB0_2
 	li	a0, 120
 .LBB0_2:

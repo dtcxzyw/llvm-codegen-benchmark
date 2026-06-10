@@ -4,8 +4,8 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	sraiw	a0, a0, 16
 	lui	a1, 1048568
+	sraiw	a0, a0, 16
 	xor	a0, a0, a1
 	ret
 

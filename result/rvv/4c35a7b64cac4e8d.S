@@ -3,8 +3,8 @@ func000000000000003f:
 	vsll.vi	v8, v8, 4
 	bseti	a0, zero, 36
 	addi	a1, a0, -48
-	addi	a0, a0, -16
 	vadd.vx	v8, v8, a1
+	addi	a0, a0, -16
 	vand.vx	v8, v8, a0
 	li	a0, 16
 	vadd.vx	v8, v8, a0
@@ -13,8 +13,8 @@ func000000000000003f:
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 2
-	li	a0, 248
 	vadd.vi	v8, v8, 7
+	li	a0, 248
 	vand.vx	v8, v8, a0
 	li	a0, 16
 	vadd.vx	v8, v8, a0

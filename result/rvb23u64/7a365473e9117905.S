@@ -40,8 +40,8 @@ func00000000000000c6:
 
 func00000000000000ca:
 	srliw	a2, a2, 31
-	srliw	a1, a1, 31
 	xori	a2, a2, 1
+	srliw	a1, a1, 31
 	xori	a1, a1, 1
 	or	a0, a0, a2
 	or	a0, a0, a1

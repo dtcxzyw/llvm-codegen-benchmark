@@ -2,10 +2,10 @@ func00000000000000a4:
 	li	a0, -37
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, -36
 	vmsleu.vi	v0, v10, 6
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vmv.v.i	v10, 0
+	li	a0, -36
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret

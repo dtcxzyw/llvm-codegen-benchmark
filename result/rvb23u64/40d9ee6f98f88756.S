@@ -9,8 +9,8 @@ func0000000000000108:
 	ret
 
 func0000000000000109:
-	sext.w	a1, a1
 	lui	a2, 4
+	sext.w	a1, a1
 	addi	a3, a2, -190
 	addi	a2, a2, -185
 	xor	a3, a3, a1

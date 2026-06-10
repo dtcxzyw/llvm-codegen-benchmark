@@ -1,6 +1,6 @@
 func0000000000000024:
-	fcvt.s.d	fa4, fa0
 	fmv.w.x	fa5, zero
+	fcvt.s.d	fa4, fa0
 	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB0_2
 	fmv.s	fa5, fa4
@@ -35,8 +35,8 @@ func0000000000000045:
 	ret
 
 func0000000000000028:
-	fcvt.s.d	fa4, fa0
 	fmv.w.x	fa5, zero
+	fcvt.s.d	fa4, fa0
 	flt.s	a0, fa4, fa5
 	fmv.s	fa3, fa5
 	bnez	a0, .LBB3_2

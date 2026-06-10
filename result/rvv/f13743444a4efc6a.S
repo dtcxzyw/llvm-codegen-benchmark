@@ -47,9 +47,9 @@ func0000000000000010:
 
 func0000000000000009:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v14, 8
 	vmsleu.vi	v0, v12, 15
-	vmv.v.i	v12, 8
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vor.vv	v8, v10, v8
 	ret
 

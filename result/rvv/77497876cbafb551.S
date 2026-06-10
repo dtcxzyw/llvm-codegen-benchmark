@@ -1,8 +1,8 @@
 func0000000000000004:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfsub.vv	v12, v12, v16
 	lui	a0, 260014
 	addi	a0, a0, 328
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfsub.vv	v12, v12, v16
 	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
 	vfdiv.vv	v8, v8, v12
@@ -13,10 +13,10 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfsub.vv	v12, v12, v16
 	lui	a0, 260014
 	addi	a0, a0, 328
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfsub.vv	v12, v12, v16
 	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
 	vfdiv.vv	v8, v8, v12
@@ -25,9 +25,9 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
+	fli.s	fa5, 2.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v12, v12, v16
-	fli.s	fa5, 2.0
 	fneg.s	fa5, fa5
 	vfmul.vf	v12, v12, fa5
 	vfdiv.vv	v8, v8, v12
@@ -37,9 +37,9 @@ func0000000000000003:
 	ret
 
 func0000000000000005:
+	fli.s	fa5, 2.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v12, v12, v16
-	fli.s	fa5, 2.0
 	fneg.s	fa5, fa5
 	vfmul.vf	v12, v12, fa5
 	vfdiv.vv	v8, v8, v12

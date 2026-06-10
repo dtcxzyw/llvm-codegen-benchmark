@@ -9,13 +9,13 @@ func0000000000000018:
 	ret
 
 func0000000000000001:
-	li	a2, 516
-	beq	a0, a2, .LBB1_2
+	mv	a2, a0
+	li	a0, 516
+	beq	a2, a0, .LBB1_2
 	slli	a1, a1, 63
 	srai	a1, a1, 63
-	andi	a2, a1, 1022
+	andi	a0, a1, 1022
 .LBB1_2:
-	mv	a0, a2
 	ret
 
 func0000000000000006:

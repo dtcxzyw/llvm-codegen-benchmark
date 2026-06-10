@@ -5,8 +5,8 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	sext.w	a0, a0
 	bseti	a1, zero, 38
+	sext.w	a0, a0
 	addi	a1, a1, -129
 	add	a0, a0, a1
 	srli	a0, a0, 6
@@ -31,9 +31,9 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
+	li	a1, -2
 	sext.w	a0, a0
 	srli	a0, a0, 1
-	li	a1, -2
 	add.uw	a0, a1, a0
 	ret
 

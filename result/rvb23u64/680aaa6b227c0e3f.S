@@ -1,6 +1,6 @@
 func0000000000000084:
-	sext.w	a1, a1
 	srli	a2, a2, 3
+	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a1, a2
 	and	a0, a0, a1

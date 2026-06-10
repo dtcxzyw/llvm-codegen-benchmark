@@ -1,7 +1,7 @@
 func000000000000000d:
 	zext.b	a1, a1
-	li	a2, 255
 	addi	a1, a1, -255
+	li	a2, 255
 	czero.nez	a1, a2, a1
 	zext.b	a0, a0
 	or	a0, a0, a1

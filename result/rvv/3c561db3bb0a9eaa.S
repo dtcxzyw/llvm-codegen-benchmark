@@ -1,11 +1,11 @@
 func0000000000000025:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, 918577
 	vfsub.vv	v16, v16, v24
 	vmflt.vv	v0, v16, v8
-	slli	a0, a0, 33
 	vmerge.vvm	v8, v8, v16, v0
+	lui	a0, 918577
+	slli	a0, a0, 33
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
@@ -26,11 +26,11 @@ func0000000000000024:
 func0000000000000022:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	vfsub.vv	v16, v16, v24
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v8, v16, v0
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
 	vmflt.vf	v0, v8, fa5
 	ret
 

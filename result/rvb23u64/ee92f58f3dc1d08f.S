@@ -1,8 +1,8 @@
 func00000000000000e1:
 	sext.w	a0, a0
-	slliw	a1, a1, 3
 	seqz	a0, a0
 	addi	a0, a0, -1
+	slliw	a1, a1, 3
 	andi	a0, a0, 7
 	or	a0, a0, a1
 	ret

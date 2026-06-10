@@ -44,9 +44,9 @@ func000000000000082c:
 	ret
 
 func000000000000018c:
+	lui	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
-	lui	a0, 64
 	vand.vx	v10, v10, a0
 	vmsne.vi	v12, v10, 0
 	vmsne.vi	v10, v8, 0

@@ -6,12 +6,12 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	sext.w	a1, a1
 	lui	a2, 279653
+	sext.w	a1, a1
 	addi	a2, a2, -940
+	lui	a3, 131586
 	xor	a1, a1, a2
-	lui	a2, 131586
-	addi	a2, a2, 32
+	addi	a2, a3, 32
 	czero.nez	a1, a2, a1
 	xor	a0, a0, a1
 	ret

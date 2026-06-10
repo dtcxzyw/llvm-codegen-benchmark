@@ -24,9 +24,9 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
+	lui	a2, 88
 	max	a0, a0, a1
-	lui	a1, 88
-	addi	a1, a1, -448
+	addi	a1, a2, -448
 	sltu	a0, a0, a1
 	ret
 

@@ -3,9 +3,9 @@ func0000000000000024:
 	slli	a1, a1, 11
 	xor	a0, a0, a1
 	lui	a1, 1048304
+	lui	a2, 1048305
 	addw	a0, a0, a1
-	lui	a1, 1048305
-	addi	a1, a1, -2048
+	addi	a1, a2, -2048
 	sltu	a0, a0, a1
 	ret
 
@@ -14,9 +14,9 @@ func0000000000000004:
 	slli	a1, a1, 11
 	xor	a0, a0, a1
 	lui	a1, 1048304
+	lui	a2, 1048305
 	addw	a0, a0, a1
-	lui	a1, 1048305
-	addi	a1, a1, -2048
+	addi	a1, a2, -2048
 	sltu	a0, a0, a1
 	ret
 

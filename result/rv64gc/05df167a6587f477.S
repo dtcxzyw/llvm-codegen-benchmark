@@ -12,8 +12,8 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	sext.w	a1, a1
 	li	a2, -1
+	sext.w	a1, a1
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	and	a0, a0, a1

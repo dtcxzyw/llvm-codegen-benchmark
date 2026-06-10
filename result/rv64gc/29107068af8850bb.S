@@ -7,8 +7,8 @@ func0000000000000564:
 
 func0000000000002864:
 	not	a2, a2
-	li	a3, 88
 	srli	a2, a2, 63
+	li	a3, 88
 	mul	a2, a2, a3
 	add	a0, a0, a2
 	addi	a1, a1, 88

@@ -30,12 +30,12 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
+	lui	a2, 526344
+	addi	a2, a2, 129
+	slli	a3, a2, 32
 	sub	a0, a0, a1
-	lui	a1, 526344
-	addi	a1, a1, 129
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mulhu	a1, a0, a1
+	add	a2, a2, a3
+	mulhu	a1, a0, a2
 	srli	a1, a1, 7
 	slli	a2, a1, 8
 	sub	a1, a1, a2
@@ -48,12 +48,12 @@ func0000000000000030:
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	mulhu	a2, a0, a2
-	srli	a2, a2, 4
-	addi	a1, a1, -19
-	mul	a1, a2, a1
+	mulhu	a1, a0, a2
+	li	a2, 1
+	slli	a2, a2, 32
+	srli	a1, a1, 4
+	addi	a2, a2, -19
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

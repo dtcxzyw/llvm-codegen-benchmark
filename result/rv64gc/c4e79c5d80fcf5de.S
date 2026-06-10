@@ -16,11 +16,11 @@ func000000000000018c:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
 	lui	a3, 4097
+	sext.w	a1, a1
 	addi	a3, a3, -2048
-	snez	a1, a1
 	and	a2, a2, a3
+	snez	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

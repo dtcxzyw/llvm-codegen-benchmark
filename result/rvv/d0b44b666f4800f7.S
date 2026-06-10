@@ -9,8 +9,8 @@ func0000000000000421:
 
 func0000000000000581:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vor.vv	v8, v10, v8
 	vmsne.vi	v9, v9, 0
+	vor.vv	v8, v10, v8
 	vmseq.vi	v8, v8, 0
 	vmand.mm	v0, v8, v9
 	ret
@@ -69,20 +69,20 @@ func0000000000000488:
 	ret
 
 func0000000000002021:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsgtu.vi	v10, v10, 6
 	li	a0, 18
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vx	v9, v9, a0
 	li	a0, -80
 	vmseq.vx	v8, v8, a0
+	vmsgtu.vi	v10, v10, 6
 	vmand.mm	v8, v9, v8
 	vmand.mm	v0, v8, v10
 	ret
 
 func0000000000000424:
+	li	a0, 18
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vi	v10, v10, 8
-	li	a0, 18
 	vmseq.vx	v9, v9, a0
 	vmand.mm	v9, v9, v10
 	vmsleu.vi	v8, v8, 2
@@ -90,9 +90,9 @@ func0000000000000424:
 	ret
 
 func000000000000042c:
+	li	a0, 34
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vi	v10, v10, 4
-	li	a0, 34
 	vmseq.vx	v9, v9, a0
 	vmand.mm	v9, v9, v10
 	vmsne.vi	v8, v8, 0
@@ -101,9 +101,9 @@ func000000000000042c:
 
 func0000000000000484:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v10, v10, 3
 	vmsleu.vi	v9, v9, 4
 	vmsleu.vi	v8, v8, 3
+	vmseq.vi	v10, v10, 3
 	vmand.mm	v8, v9, v8
 	vmand.mm	v0, v8, v10
 	ret

@@ -13,9 +13,9 @@ func0000000000000007:
 	ret
 
 func0000000000000023:
+	li	a1, -6
 	zext.b	a0, a0
 	sltiu	a0, a0, 2
-	li	a1, -6
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 16
 	ret

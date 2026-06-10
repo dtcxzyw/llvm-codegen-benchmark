@@ -17,9 +17,9 @@ func000000000000054a:
 	ret
 
 func0000000000000104:
+	li	a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v8, 15
-	li	a0, -16
 	vmsltu.vv	v14, v12, v10
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14

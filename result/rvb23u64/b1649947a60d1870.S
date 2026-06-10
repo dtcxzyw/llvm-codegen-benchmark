@@ -14,10 +14,10 @@ func00000000000004ca:
 	slti	a2, a1, 1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
-	lui	a2, 2
 	or	a0, a0, a1
+	lui	a1, 2
 	sext.w	a0, a0
-	addi	a1, a2, 1807
+	addi	a1, a1, 1807
 	slt	a0, a1, a0
 	ret
 
@@ -33,8 +33,8 @@ func00000000000004c8:
 	ret
 
 func00000000000004c6:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	sext.w	a0, a0
 	slti	a1, a1, -305
 	slti	a0, a0, -308
 	and	a0, a0, a1

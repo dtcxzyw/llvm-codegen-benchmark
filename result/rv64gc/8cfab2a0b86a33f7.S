@@ -7,10 +7,10 @@ func0000000000000011:
 	ret
 
 func0000000000000088:
-	slli	a0, a0, 33
 	fmv.w.x	fa5, zero
-	seqz	a0, a0
 	feq.s	a1, fa0, fa5
+	slli	a0, a0, 33
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 

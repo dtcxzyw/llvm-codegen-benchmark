@@ -25,16 +25,15 @@ func0000000000000020:
 	vsrl.vi	v8, v8, 3
 	ret
 
+.LCPI3_0:
+	.quad	62168256000000000
 func0000000000000000:
 	lui	a0, 244
 	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	lui	a0, 56542
-	addi	a0, a0, -1231
-	slli	a0, a0, 13
-	addi	a0, a0, -417
-	slli	a0, a0, 15
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 8
 	ret

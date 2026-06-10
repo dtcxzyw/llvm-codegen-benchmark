@@ -3,27 +3,27 @@ func00000000000000a6:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
 	fmv.d.x	fa5, zero
-	vmorn.mm	v16, v0, v24
-	vmfge.vf	v17, v8, fa5
-	vmorn.mm	v0, v16, v17
+	vmfge.vf	v16, v8, fa5
+	vmorn.mm	v8, v0, v24
+	vmorn.mm	v0, v8, v16
 	ret
 
 func0000000000000066:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v24, v16, fa5
-	vmorn.mm	v16, v0, v24
-	vmfge.vf	v17, v8, fa5
-	vmorn.mm	v0, v16, v17
+	vmfge.vf	v16, v8, fa5
+	vmorn.mm	v8, v0, v24
+	vmorn.mm	v0, v8, v16
 	ret
 
 func0000000000000154:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	vmor.mm	v16, v0, v24
-	vmfle.vf	v17, v8, fa5
-	vmor.mm	v0, v16, v17
+	vmfle.vf	v16, v8, fa5
+	vmor.mm	v8, v0, v24
+	vmor.mm	v0, v8, v16
 	ret
 
 func0000000000000132:

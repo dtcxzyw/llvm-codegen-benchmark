@@ -1,6 +1,6 @@
 func000000000000050a:
-	andi	a1, a1, 1
 	sraiw	a2, a2, 31
+	andi	a1, a1, 1
 	ori	a2, a2, 1
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
@@ -9,10 +9,10 @@ func000000000000050a:
 	ret
 
 func0000000000000a01:
-	andi	a1, a1, 1
 	srliw	a2, a2, 11
 	seqz	a2, a2
 	xori	a2, a2, 3
+	andi	a1, a1, 1
 	addi	a2, a2, -1
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 1
@@ -22,11 +22,11 @@ func0000000000000a01:
 	ret
 
 func0000000000000221:
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	sltiu	a2, a2, 6
 	not	a2, a2
 	slli	a2, a2, 5
+	andi	a1, a1, 1
 	ori	a2, a2, -39
 	czero.nez	a1, a2, a1
 	addi	a1, a1, -48

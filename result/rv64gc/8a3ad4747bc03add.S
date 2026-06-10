@@ -8,18 +8,18 @@ func000000000000005e:
 func0000000000000010:
 	addiw	a1, a1, 1708
 	slli	a1, a1, 2
+	lui	a2, 305
 	add	a0, a0, a1
-	lui	a1, 305
-	addi	a1, a1, 1028
+	addi	a1, a2, 1028
 	add	a0, a0, a1
 	ret
 
 func0000000000000050:
 	sext.w	a1, a1
 	slli	a1, a1, 4
+	lui	a2, 196
 	add	a0, a0, a1
-	lui	a1, 196
-	addi	a1, a1, -1924
+	addi	a1, a2, -1924
 	add	a0, a0, a1
 	ret
 

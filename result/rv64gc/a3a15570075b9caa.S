@@ -1,7 +1,7 @@
 func0000000000000005:
 	li	a2, -1
-	slli	a0, a0, 63
 	sllw	a1, a2, a1
+	slli	a0, a0, 63
 	addiw	a1, a1, 1
 	srai	a0, a0, 63
 	and	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000005:
 
 func0000000000000007:
 	li	a2, -1
-	slli	a0, a0, 63
 	sllw	a1, a2, a1
+	slli	a0, a0, 63
 	addiw	a1, a1, 1
 	srai	a0, a0, 63
 	and	a0, a0, a1
@@ -62,8 +62,8 @@ func000000000000000f:
 
 func0000000000000009:
 	li	a2, 1
-	slli	a0, a0, 63
 	sllw	a1, a2, a1
+	slli	a0, a0, 63
 	addiw	a1, a1, -3
 	srai	a0, a0, 63
 	and	a0, a0, a1
@@ -71,10 +71,10 @@ func0000000000000009:
 
 func0000000000000002:
 	li	a2, 4
-	slli	a0, a0, 63
 	sllw	a1, a2, a1
-	lui	a2, 1
+	slli	a0, a0, 63
 	srai	a0, a0, 63
+	lui	a2, 1
 	and	a0, a0, a1
 	addi	a1, a2, 296
 	addw	a0, a0, a1

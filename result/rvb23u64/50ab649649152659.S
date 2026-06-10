@@ -1,8 +1,8 @@
 func0000000000000007:
 	lui	a3, 3968
+	lui	a4, 16
 	and	a2, a2, a3
-	lui	a3, 16
-	addi	a3, a3, -1024
+	addi	a3, a4, -1024
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -13,18 +13,18 @@ func0000000000000007:
 func0000000000000005:
 	andi	a2, a2, 1024
 	andi	a1, a1, -1026
+	lui	a3, 786432
 	or	a1, a1, a2
-	lui	a2, 786432
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000000:
 	lui	a3, 458752
+	addi	a3, a3, -1026
 	andi	a1, a1, 2
 	or	a0, a0, a1
 	lui	a1, 524288
-	addi	a3, a3, -1026
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -40,11 +40,11 @@ func0000000000000004:
 
 func0000000000000006:
 	lui	a3, 1048570
+	li	a4, 7
 	addi	a3, a3, 975
+	slli	a4, a4, 10
 	and	a2, a2, a3
-	li	a3, 7
-	slli	a3, a3, 10
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 14

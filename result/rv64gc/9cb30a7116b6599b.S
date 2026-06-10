@@ -1,10 +1,10 @@
 func0000000000000001:
 	slli	a1, a1, 63
 	srai	a1, a1, 63
+	lui	a3, 1
 	and	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -2
-	and	a1, a1, a2
+	addi	a3, a3, -2
+	and	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

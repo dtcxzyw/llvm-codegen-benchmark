@@ -1,12 +1,12 @@
 func000000000000000a:
-	li	a2, 47
-	lui	a3, 838861
-	bseti	a2, a2, 63
-	addi	a3, a3, -819
-	sub	a2, a2, a1
-	slli	a1, a3, 32
-	add	a1, a1, a3
-	mulhu	a1, a2, a1
+	lui	a2, 838861
+	li	a3, 47
+	addi	a2, a2, -819
+	bseti	a3, a3, 63
+	slli	a4, a2, 32
+	sub	a3, a3, a1
+	add	a2, a2, a4
+	mulhu	a1, a3, a2
 	srli	a1, a1, 3
 	slt	a0, a1, a0
 	ret
@@ -35,14 +35,14 @@ func0000000000000014:
 	ret
 
 func0000000000000048:
-	li	a2, 47
-	lui	a3, 838861
-	bseti	a2, a2, 32
-	addi	a3, a3, -819
-	sub	a2, a2, a1
-	slli	a1, a3, 32
-	add	a1, a1, a3
-	mulhu	a1, a2, a1
+	lui	a2, 838861
+	li	a3, 47
+	addi	a2, a2, -819
+	bseti	a3, a3, 32
+	slli	a4, a2, 32
+	sub	a3, a3, a1
+	add	a2, a2, a4
+	mulhu	a1, a3, a2
 	srli	a1, a1, 3
 	sltu	a0, a1, a0
 	ret

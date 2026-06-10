@@ -23,8 +23,8 @@ func000000000000000a:
 	bnez	a0, .LBB2_2
 	fmv.d	fa0, fa1
 .LBB2_2:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 258048
+	fcvt.s.d	fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret
@@ -34,8 +34,8 @@ func000000000000000c:
 	bnez	a0, .LBB3_2
 	fmv.d	fa0, fa1
 .LBB3_2:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 258048
+	fcvt.s.d	fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	ret

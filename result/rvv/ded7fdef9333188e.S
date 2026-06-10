@@ -13,8 +13,8 @@ func00000000000000b0:
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 28
 	vmseq.vi	v9, v10, 0
+	li	a0, 28
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v8, v8, v9

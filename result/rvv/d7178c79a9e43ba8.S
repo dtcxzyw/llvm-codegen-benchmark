@@ -47,9 +47,9 @@ func000000000000001e:
 	vzext.vf2	v12, v10
 	li	a0, 42
 	vwsll.vx	v10, v12, a0
-	lui	a0, 4095
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
+	lui	a0, 4095
 	slli	a0, a0, 39
 	vor.vx	v8, v8, a0
 	ret
@@ -59,9 +59,9 @@ func000000000000000e:
 	vzext.vf2	v12, v10
 	li	a0, 42
 	vwsll.vx	v10, v12, a0
-	li	a0, 2047
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
+	li	a0, 2047
 	slli	a0, a0, 52
 	vor.vx	v8, v8, a0
 	ret

@@ -27,10 +27,10 @@ func0000000000000041:
 	ret
 
 func0000000000000026:
+	lui	a3, 12
 	divuw	a1, a1, a2
 	addw	a0, a0, a1
-	lui	a1, 12
-	slt	a0, a0, a1
+	slt	a0, a0, a3
 	ret
 
 func0000000000000006:

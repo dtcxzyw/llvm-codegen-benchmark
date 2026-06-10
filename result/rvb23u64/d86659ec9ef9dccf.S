@@ -33,11 +33,11 @@ func0000000000000186:
 	ret
 
 func0000000000000084:
+	lui	a2, 1048332
 	add.uw	a0, a1, a0
-	lui	a1, 1048332
-	addi	a2, a1, -577
-	add	a0, a0, a2
-	addi	a1, a1, -576
+	addi	a1, a2, -577
+	add	a0, a0, a1
+	addi	a1, a2, -576
 	sltu	a0, a0, a1
 	ret
 

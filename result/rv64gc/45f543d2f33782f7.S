@@ -10,10 +10,10 @@ func000000000000003f:
 
 func000000000000007e:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a2, a1, 1
 	slli	a1, a1, 3
 	add	a1, a1, a2
+	zext.b	a0, a0
 	lui	a2, 244
 	add	a0, a0, a1
 	addi	a1, a2, 576
@@ -22,10 +22,10 @@ func000000000000007e:
 
 func000000000000007f:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a2, a1, 1
 	slli	a1, a1, 3
 	add	a1, a1, a2
+	zext.b	a0, a0
 	add	a0, a0, a1
 	slli	a1, a0, 1
 	slli	a0, a0, 3
@@ -34,10 +34,10 @@ func000000000000007f:
 
 func00000000000000ff:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	sub	a1, a1, a2
+	zext.b	a0, a0
 	add	a0, a0, a1
 	slli	a1, a0, 2
 	slli	a0, a0, 6
@@ -46,10 +46,10 @@ func00000000000000ff:
 
 func00000000000000fc:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	sub	a1, a1, a2
+	zext.b	a0, a0
 	lui	a2, 14648
 	add	a0, a0, a1
 	addi	a1, a2, 1792

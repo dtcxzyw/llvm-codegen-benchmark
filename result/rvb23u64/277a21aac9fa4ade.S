@@ -9,14 +9,14 @@ func0000000000000003:
 	ret
 
 func0000000000000006:
-	srli	a0, a0, 5
 	lui	a1, 8
+	srli	a0, a0, 5
 	and	a0, a0, a1
 	ret
 
 func0000000000000004:
-	srli	a0, a0, 1
 	lui	a1, 16
+	srli	a0, a0, 1
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret

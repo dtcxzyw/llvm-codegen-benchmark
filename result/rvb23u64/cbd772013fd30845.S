@@ -1,7 +1,7 @@
 func0000000000000001:
+	li	a2, 3
 	sext.w	a0, a0
 	sraiw	a1, a1, 31
-	li	a2, 3
 	slli	a2, a2, 11
 	xor	a0, a0, a2
 	addi	a1, a1, -1

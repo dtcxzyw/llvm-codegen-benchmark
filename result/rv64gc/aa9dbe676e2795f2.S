@@ -10,12 +10,12 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	fmv.s	fa5, fa0
-	sext.w	a0, a0
 	lui	a1, 258048
-	fmv.w.x	fa0, a1
+	fmv.w.x	fa5, a1
+	sext.w	a0, a0
 	beqz	a0, .LBB1_2
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa5, fa0, fa5
 .LBB1_2:
+	fmv.s	fa0, fa5
 	ret
 

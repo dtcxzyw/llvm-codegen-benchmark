@@ -1,7 +1,7 @@
 func0000000000000006:
-	neg	a1, a0
-	max	a0, a0, a1
 	bseti	a1, zero, 62
+	neg	a2, a0
+	max	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -18,9 +18,9 @@ func000000000000000a:
 	ret
 
 func000000000000000d:
-	neg	a1, a0
-	max	a0, a0, a1
 	lui	a1, 1046592
+	neg	a2, a0
+	max	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

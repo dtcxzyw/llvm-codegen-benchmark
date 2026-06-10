@@ -10,8 +10,8 @@ func00000000000002a4:
 	li	a2, 188
 	mul	a1, a1, a2
 	lui	a2, 1048574
-	add	a0, a0, a1
-	addi	a1, a2, -644
+	addi	a2, a2, -644
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 1880
 	ret

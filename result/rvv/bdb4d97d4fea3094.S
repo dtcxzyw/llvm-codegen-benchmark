@@ -1,9 +1,9 @@
 func0000000000000043:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v14, v12
 	bseti	a0, zero, 33
-	vmv.v.x	v12, a0
-	vsll.vv	v12, v12, v14
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v14, a0
+	vzext.vf2	v16, v12
+	vsll.vv	v12, v14, v16
 	vadd.vv	v10, v12, v10
 	bseti	a0, zero, 32
 	vsub.vx	v10, v10, a0
@@ -12,9 +12,9 @@ func0000000000000043:
 
 func0000000000000060:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v14, v12
-	vmv.v.i	v12, -1
-	vsll.vv	v12, v12, v14
+	vmv.v.i	v14, -1
+	vzext.vf2	v16, v12
+	vsll.vv	v12, v14, v16
 	vsub.vv	v10, v12, v10
 	vandn.vv	v8, v8, v10
 	ret

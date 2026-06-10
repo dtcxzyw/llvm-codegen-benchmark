@@ -72,24 +72,24 @@ func00000000000000cf:
 
 func00000000000000c0:
 	sh2add	a1, a1, a1
-	slli	a1, a1, 4
 	add	a0, a0, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 278
 	ret
 
 func00000000000000f8:
 	sh2add	a1, a1, a1
-	slli	a1, a1, 4
 	add	a0, a0, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 278
 	ret
 
 func00000000000000fb:
 	sh2add	a1, a1, a1
-	slli	a1, a1, 4
 	add	a0, a0, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 292
 	ret

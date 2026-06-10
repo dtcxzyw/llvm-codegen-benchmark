@@ -54,9 +54,9 @@ func0000000000000070:
 func000000000000002f:
 	slli	a1, a1, 48
 	srli	a1, a1, 43
+	lui	a2, 1048560
 	add	a0, a0, a1
-	lui	a1, 1048560
-	addi	a1, a1, -1504
+	addi	a1, a2, -1504
 	add	a0, a0, a1
 	ret
 

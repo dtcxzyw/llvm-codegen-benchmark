@@ -1,14 +1,14 @@
 func00000000000001ff:
+	sext.w	a1, a1
 	add	a2, a2, a0
 	add	a0, a0, a0
 	add	a0, a0, a2
-	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
 
 func00000000000001ef:
-	slli	a0, a0, 1
 	slli	a1, a1, 32
+	slli	a0, a0, 1
 	add	a2, a2, a0
 	add	a0, a0, a0
 	add	a0, a0, a2
@@ -17,8 +17,8 @@ func00000000000001ef:
 	ret
 
 func000000000000014b:
-	slli	a0, a0, 2
 	slli	a1, a1, 32
+	slli	a0, a0, 2
 	add	a2, a2, a0
 	add	a0, a0, a0
 	add	a0, a0, a2
@@ -27,10 +27,10 @@ func000000000000014b:
 	ret
 
 func000000000000015b:
+	sext.w	a1, a1
 	add	a2, a2, a0
 	add	a0, a0, a0
 	add	a0, a0, a2
-	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
 

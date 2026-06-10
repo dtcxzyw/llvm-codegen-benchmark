@@ -60,8 +60,8 @@ func0000000000000008:
 func0000000000000009:
 	fcvt.d.s	fa5, fa1
 	li	a0, 1023
-	fadd.d	fa5, fa0, fa5
 	slli	a0, a0, 52
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
 	flt.d	a1, fa4, fa5

@@ -3,11 +3,11 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	addi	a1, a0, 499
+	lui	a1, 64
+	addi	a2, a0, 499
+	addi	a1, a1, 1
 	snez	a0, a0
-	lui	a2, 64
-	addi	a2, a2, 1
-	sltu	a1, a1, a2
+	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

@@ -15,11 +15,11 @@ func0000000000000040:
 
 func00000000000000d5:
 	add	a1, a1, a2
-	lui	a2, 842976
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	addi	a1, a2, 1120
+	lui	a1, 842976
+	addi	a1, a1, 1120
 	add	a0, a0, a1
 	ret
 

@@ -33,9 +33,9 @@ func00000000000000f4:
 	ret
 
 func00000000000000aa:
+	lui	a3, 1048400
 	addw	a1, a1, a2
-	lui	a2, 1048400
-	addi	a2, a2, 1427
+	addi	a2, a3, 1427
 	bge	a2, a1, .LBB4_2
 	lui	a0, 176
 	addi	a0, a0, -1428

@@ -15,8 +15,8 @@ func0000000000000108:
 	ret
 
 func0000000000000042:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -15
 	seqz	a1, a1
 	seqz	a0, a0
@@ -26,15 +26,15 @@ func0000000000000042:
 func0000000000000048:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 32
 	addi	a0, a0, -7
+	sltiu	a1, a1, 32
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000102:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -95
 	seqz	a1, a1
 	sltiu	a0, a0, 250

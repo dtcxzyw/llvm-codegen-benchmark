@@ -1,6 +1,6 @@
 func00000000000000c6:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	slti	a2, a2, 7
 	not	a2, a2
 	slti	a1, a1, 1
@@ -9,8 +9,8 @@ func00000000000000c6:
 	ret
 
 func0000000000000086:
-	sext.w	a1, a1
 	srliw	a2, a2, 24
+	sext.w	a1, a1
 	sltiu	a2, a2, 7
 	not	a2, a2
 	slti	a1, a1, 1

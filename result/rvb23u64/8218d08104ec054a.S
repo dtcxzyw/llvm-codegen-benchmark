@@ -15,22 +15,22 @@ func0000000000000063:
 	ret
 
 func0000000000000053:
-	srliw	a0, a0, 14
 	lui	a1, 4
+	srliw	a0, a0, 14
 	addi	a1, a1, -784
+	lui	a2, 43
 	czero.nez	a0, a1, a0
-	lui	a1, 43
-	addi	a1, a1, 272
+	addi	a1, a2, 272
 	add	a0, a0, a1
 	ret
 
 func0000000000000007:
-	sext.w	a0, a0
 	lui	a1, 4
+	sext.w	a0, a0
 	addi	a1, a1, -784
+	lui	a2, 43
 	czero.nez	a0, a1, a0
-	lui	a1, 43
-	addi	a1, a1, 272
+	addi	a1, a2, 272
 	add	a0, a0, a1
 	ret
 
@@ -64,16 +64,16 @@ func0000000000000013:
 	ret
 
 func0000000000000050:
+	lui	a1, 1040384
 	sext.w	a0, a0
 	sltiu	a0, a0, 16
-	lui	a1, 1040384
 	czero.nez	a0, a1, a0
 	add	a0, a0, a1
 	ret
 
 func000000000000001b:
-	sext.w	a0, a0
 	lui	a1, 16
+	sext.w	a0, a0
 	addi	a1, a1, 1
 	slt	a0, a0, a1
 	lui	a1, 64

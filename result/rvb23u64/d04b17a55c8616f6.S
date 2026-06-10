@@ -1,8 +1,8 @@
 func0000000000000023:
-	sext.w	a2, a0
-	lui	a3, 1
-	addi	a3, a3, 1
-	sltu	a2, a2, a3
+	lui	a2, 1
+	sext.w	a3, a0
+	addi	a2, a2, 1
+	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

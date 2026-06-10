@@ -8,8 +8,8 @@ func0000000000000c2a:
 
 func0000000000000c21:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vv	v0, v10, v12
 	vmv.v.i	v14, 0
+	vmslt.vv	v0, v10, v12
 	vmerge.vvm	v8, v14, v8, v0
 	vsub.vv	v10, v12, v10
 	vmseq.vv	v0, v8, v10
@@ -25,8 +25,8 @@ func0000000000000c0a:
 
 func0000000000000801:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vv	v0, v10, v12
 	vmv.v.i	v14, 0
+	vmsltu.vv	v0, v10, v12
 	vmerge.vvm	v8, v14, v8, v0
 	vsub.vv	v10, v12, v10
 	vmseq.vv	v0, v8, v10

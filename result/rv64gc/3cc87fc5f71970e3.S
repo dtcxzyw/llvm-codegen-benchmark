@@ -1,6 +1,6 @@
 func0000000000000015:
-	sext.w	a2, a2
 	lui	a3, 91867
+	sext.w	a2, a2
 	addi	a3, a3, 115
 	mul	a2, a2, a3
 	srli	a3, a2, 63

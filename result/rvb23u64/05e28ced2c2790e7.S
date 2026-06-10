@@ -9,11 +9,11 @@ func0000000000000004:
 	lui	a2, 60166
 	or	a1, a1, a2
 	lui	a2, 529657
+	lui	a3, 983039
 	bclri	a2, a2, 31
+	slli	a3, a3, 16
 	andn	a1, a1, a2
-	lui	a2, 983039
-	slli	a2, a2, 16
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

@@ -32,17 +32,17 @@ func0000000000000181:
 func0000000000000028:
 	zext.h	a0, a0
 	sext.w	a1, a1
-	seqz	a1, a1
 	sltiu	a0, a0, 2
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	slli	a0, a0, 48
-	snez	a1, a1
+	sext.w	a1, a1
 	srli	a0, a0, 60
+	snez	a1, a1
 	sltiu	a0, a0, 15
 	or	a0, a0, a1
 	ret
@@ -57,8 +57,8 @@ func000000000000014c:
 
 func0000000000000101:
 	sext.w	a1, a1
-	slli	a0, a0, 48
 	sltiu	a1, a1, 136
+	slli	a0, a0, 48
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -67,8 +67,8 @@ func0000000000000101:
 func000000000000028c:
 	zext.h	a0, a0
 	sext.w	a1, a1
-	sltiu	a1, a1, 256
 	addi	a0, a0, -4
+	sltiu	a1, a1, 256
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -76,8 +76,8 @@ func000000000000028c:
 func00000000000000c1:
 	zext.h	a0, a0
 	sext.w	a1, a1
-	slti	a1, a1, 1
 	addi	a0, a0, -2
+	slti	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -108,24 +108,24 @@ func000000000000030c:
 func00000000000000cc:
 	zext.h	a0, a0
 	sext.w	a1, a1
-	slti	a1, a1, 2
 	addi	a0, a0, -12
+	slti	a1, a1, 2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000141:
 	sext.w	a1, a1
-	slli	a0, a0, 48
 	slti	a1, a1, 8
+	slli	a0, a0, 48
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000144:
-	zext.h	a0, a0
 	sext.w	a1, a1
+	zext.h	a0, a0
 	slti	a1, a1, 8
 	xori	a1, a1, 1
 	sltiu	a0, a0, 49
@@ -133,8 +133,8 @@ func0000000000000144:
 	ret
 
 func0000000000000304:
-	zext.h	a0, a0
 	sext.w	a1, a1
+	zext.h	a0, a0
 	sltiu	a1, a1, 6
 	xori	a1, a1, 1
 	sltiu	a0, a0, 2
@@ -144,8 +144,8 @@ func0000000000000304:
 func000000000000008c:
 	zext.h	a0, a0
 	sext.w	a1, a1
-	sltiu	a1, a1, 2
 	addi	a0, a0, -2
+	sltiu	a1, a1, 2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -161,8 +161,8 @@ func0000000000000186:
 func0000000000000188:
 	zext.h	a0, a0
 	sext.w	a1, a1
-	snez	a1, a1
 	sltiu	a0, a0, 8
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

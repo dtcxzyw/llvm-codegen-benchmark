@@ -1,9 +1,8 @@
 func00000000000000f4:
-	mv	a2, a0
 	zext.b	a1, a1
-	lui	a0, 8
 	slli	a1, a1, 8
-	or	a1, a1, a2
+	or	a1, a1, a0
+	lui	a0, 8
 	sext.w	a1, a1
 	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB0_2

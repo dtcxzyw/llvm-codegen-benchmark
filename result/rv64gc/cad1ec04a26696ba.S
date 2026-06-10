@@ -1,6 +1,6 @@
 func000000000000008c:
-	sext.w	a0, a0
 	slli	a2, a2, 48
+	sext.w	a0, a0
 	srli	a2, a2, 48
 	sltu	a0, a0, a2
 	srli	a1, a1, 15
@@ -8,13 +8,13 @@ func000000000000008c:
 	ret
 
 func000000000000068c:
-	sext.w	a0, a0
+	li	a3, 7
+	slli	a3, a3, 10
+	and	a1, a1, a3
 	slli	a2, a2, 48
+	sext.w	a0, a0
 	srli	a2, a2, 48
 	sltu	a0, a0, a2
-	li	a2, 7
-	slli	a2, a2, 10
-	and	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

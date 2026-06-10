@@ -13,8 +13,8 @@ func0000000000000761:
 func0000000000000048:
 	sext.w	a2, a2
 	sh2add	a2, a2, a0
-	addi	a2, a2, -4
 	sh2add	a0, a1, a0
+	addi	a2, a2, -4
 	sltu	a0, a2, a0
 	ret
 

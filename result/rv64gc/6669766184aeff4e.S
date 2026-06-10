@@ -41,8 +41,8 @@ func000000000000008e:
 func000000000000005a:
 	not	a3, a1
 	slli	a1, a1, 3
-	slli	a2, a2, 3
 	add	a0, a0, a1
+	slli	a2, a2, 3
 	add	a0, a0, a2
 	slli	a3, a3, 3
 	add	a0, a0, a3
@@ -51,8 +51,8 @@ func000000000000005a:
 func000000000000005b:
 	not	a3, a1
 	slli	a1, a1, 3
-	slli	a2, a2, 3
 	add	a0, a0, a1
+	slli	a2, a2, 3
 	add	a0, a0, a2
 	slli	a3, a3, 3
 	add	a0, a0, a3
@@ -61,8 +61,8 @@ func000000000000005b:
 func0000000000000010:
 	not	a3, a1
 	slli	a1, a1, 3
-	slli	a2, a2, 3
 	add	a0, a0, a1
+	slli	a2, a2, 3
 	add	a0, a0, a2
 	slli	a3, a3, 3
 	add	a0, a0, a3

@@ -13,8 +13,8 @@ func0000000000000094:
 	ret
 
 func0000000000000028:
-	sltiu	a1, a1, -1
 	srli	a0, a0, 62
+	sltiu	a1, a1, -1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

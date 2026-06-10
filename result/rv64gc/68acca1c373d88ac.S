@@ -1,8 +1,8 @@
 func000000000000000f:
 	slli	a1, a1, 8
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	ret
 

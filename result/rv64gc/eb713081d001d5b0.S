@@ -1,6 +1,6 @@
 func0000000000000018:
-	zext.b	a1, a1
 	slli	a0, a0, 32
+	zext.b	a1, a1
 	srli	a0, a0, 32
 	sltu	a0, a1, a0
 	ret

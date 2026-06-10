@@ -1,10 +1,10 @@
 func0000000000000481:
-	addiw	a1, a1, -7
 	lui	a2, 4080
-	sltiu	a1, a1, -2
 	and	a0, a0, a2
 	lui	a2, 16
+	addiw	a1, a1, -7
 	xor	a0, a0, a2
+	sltiu	a1, a1, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -19,9 +19,9 @@ func000000000000018c:
 
 func0000000000000184:
 	andi	a1, a1, 7
-	addiw	a0, a0, -1
 	lui	a2, 524288
 	addi	a1, a1, -7
+	addiw	a0, a0, -1
 	addiw	a2, a2, -2
 	snez	a1, a1
 	sltu	a0, a0, a2
@@ -29,10 +29,10 @@ func0000000000000184:
 	ret
 
 func0000000000000081:
-	addiw	a1, a1, -56
 	lui	a2, 262144
-	andi	a0, a0, 7
+	addiw	a1, a1, -56
 	addi	a2, a2, -55
+	andi	a0, a0, 7
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -53,13 +53,13 @@ func000000000000048c:
 	ret
 
 func0000000000000584:
-	slli	a1, a1, 35
 	lui	a2, 1048467
 	addi	a2, a2, -203
 	addw	a0, a0, a2
 	lui	a2, 8
-	srli	a1, a1, 63
+	slli	a1, a1, 35
 	addi	a2, a2, 565
+	srli	a1, a1, 63
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

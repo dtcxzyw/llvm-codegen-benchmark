@@ -1,11 +1,10 @@
 func000000000000000f:
 	li	a0, 240
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, 8
-	vminu.vx	v8, v8, a0
+	vminu.vx	v10, v8, a0
+	vmv.v.i	v8, 8
 	li	a0, 24
-	vmacc.vx	v10, a0, v8
-	vmv.v.v	v8, v10
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000000:

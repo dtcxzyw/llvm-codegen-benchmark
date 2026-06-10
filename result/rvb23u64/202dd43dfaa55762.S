@@ -5,9 +5,9 @@ func000000000000003e:
 	ret
 
 func000000000000007c:
+	li	a1, 10
 	clz	a0, a0
 	neg	a0, a0
-	li	a1, 10
 	sllw	a0, a1, a0
 	ret
 

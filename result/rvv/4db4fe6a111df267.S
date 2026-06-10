@@ -1,16 +1,16 @@
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v10, -1
-	vsll.vv	v10, v10, v12
+	vmv.v.i	v12, -1
+	vzext.vf2	v14, v10
+	vsll.vv	v10, v12, v14
 	vadd.vv	v8, v10, v8
 	ret
 
 func0000000000000018:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v10, -1
-	vsll.vv	v10, v10, v12
+	vmv.v.i	v12, -1
+	vzext.vf2	v14, v10
+	vsll.vv	v10, v12, v14
 	vadd.vv	v8, v10, v8
 	ret
 
@@ -23,12 +23,12 @@ func0000000000000014:
 	ret
 
 func0000000000000010:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
 	lui	a0, 804435
 	addi	a0, a0, 1536
-	vmv.v.x	v10, a0
-	vsll.vv	v10, v10, v12
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vzext.vf2	v14, v10
+	vsll.vv	v10, v12, v14
 	vadd.vv	v8, v10, v8
 	ret
 

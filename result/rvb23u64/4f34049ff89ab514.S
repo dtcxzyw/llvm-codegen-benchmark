@@ -30,8 +30,8 @@ func0000000000000661:
 
 func0000000000000561:
 	sext.w	a1, a1
-	li	a2, -7
 	slti	a1, a1, 11
+	li	a2, -7
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 10
 	addi	a0, a0, 1

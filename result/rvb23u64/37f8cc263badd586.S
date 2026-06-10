@@ -242,8 +242,8 @@ func000000000000008a:
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
 	add	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

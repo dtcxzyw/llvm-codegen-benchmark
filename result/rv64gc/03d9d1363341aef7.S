@@ -23,8 +23,8 @@ func0000000000000000:
 	ret
 
 func000000000000000e:
-	neg	a1, a1
 	slli	a0, a0, 48
+	neg	a1, a1
 	srli	a0, a0, 48
 	srlw	a0, a0, a1
 	ret

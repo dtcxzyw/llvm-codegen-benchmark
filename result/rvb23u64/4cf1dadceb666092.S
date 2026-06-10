@@ -20,8 +20,8 @@ func0000000000000078:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 1
 	li	a3, 15
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.eqz	a1, a3, a1
 	sltu	a0, a1, a0
@@ -36,9 +36,9 @@ func0000000000000068:
 	ret
 
 func0000000000000074:
-	andi	a1, a1, 1
 	lui	a3, 244
 	addi	a3, a3, 576
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.eqz	a1, a3, a1
 	sltu	a0, a1, a0

@@ -17,9 +17,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000026:
-	sext.w	a2, a1
-	li	a3, -1
-	bne	a2, a3, .LBB2_2
+	li	a2, -1
+	sext.w	a3, a1
+	bne	a3, a2, .LBB2_2
 	li	a1, 18
 .LBB2_2:
 	sext.w	a1, a1
@@ -36,9 +36,9 @@ func000000000000002a:
 	ret
 
 func0000000000000024:
-	sext.w	a2, a1
-	li	a3, -1
-	bne	a2, a3, .LBB4_2
+	li	a2, -1
+	sext.w	a3, a1
+	bne	a3, a2, .LBB4_2
 	li	a1, 1
 .LBB4_2:
 	sext.w	a1, a1

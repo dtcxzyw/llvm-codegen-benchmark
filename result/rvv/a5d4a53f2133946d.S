@@ -15,36 +15,36 @@ func000000000000006c:
 	ret
 
 func0000000000000078:
+	li	a0, 48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 48
 	vadd.vx	v8, v8, a0
 	vmsltu.vv	v10, v12, v8
 	vmand.mm	v0, v0, v10
 	ret
 
 func00000000000000f8:
+	li	a0, 48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 48
 	vadd.vx	v8, v8, a0
 	vmsltu.vv	v10, v12, v8
 	vmand.mm	v0, v0, v10
 	ret
 
 func00000000000000aa:
+	li	a0, 48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 48
 	vadd.vx	v8, v8, a0
 	vmslt.vv	v10, v12, v8
 	vmand.mm	v0, v0, v10
 	ret
 
 func000000000000002a:
+	li	a0, 87
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 87
 	vadd.vx	v8, v8, a0
 	vmslt.vv	v10, v12, v8
 	vmand.mm	v0, v0, v10

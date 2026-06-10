@@ -27,15 +27,15 @@ func0000000000000054:
 	ret
 
 func0000000000000021:
-	andi	a1, a1, 1
 	li	a2, -1
+	andi	a1, a1, 1
 	sllw	a0, a2, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 1
 	li	a2, 3
+	andi	a1, a1, 1
 	sllw	a0, a2, a0
 	czero.eqz	a0, a0, a1
 	ret

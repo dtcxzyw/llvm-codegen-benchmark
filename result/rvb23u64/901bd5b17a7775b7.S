@@ -35,23 +35,23 @@ func0000000000000038:
 	ret
 
 func0000000000000061:
-	addiw	a0, a0, -2
 	lui	a1, 128
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ori	a0, a0, 1100
 	bseti	a0, a0, 16
 	ret
 
 func0000000000000006:
+	li	a1, 1900
 	addiw	a0, a0, 1
 	slti	a0, a0, 3
-	li	a1, 1900
 	sub	a0, a1, a0
 	ret
 
 func0000000000000001:
-	addiw	a0, a0, -3
 	li	a1, -3
+	addiw	a0, a0, -3
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 18
 	ret
@@ -77,24 +77,24 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
+	li	a1, 2
 	addi	a0, a0, -2048
 	addiw	a0, a0, -573
 	sltiu	a0, a0, 3
-	li	a1, 2
 	sub	a0, a1, a0
 	ret
 
 func000000000000000a:
+	li	a1, 100
 	addiw	a0, a0, -1900
 	slti	a0, a0, 80
-	li	a1, 100
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, -1980
 	ret
 
 func0000000000000018:
-	addiw	a0, a0, -2027
 	lui	a1, 1048575
+	addiw	a0, a0, -2027
 	addi	a1, a1, 2047
 	sltu	a0, a0, a1
 	li	a1, -2048

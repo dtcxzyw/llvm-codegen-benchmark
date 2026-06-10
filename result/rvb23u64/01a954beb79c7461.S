@@ -10,8 +10,8 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	li	a1, -5
+	sext.w	a0, a0
 	max	a0, a0, a1
 	addiw	a0, a0, 6
 	sltiu	a0, a0, 8

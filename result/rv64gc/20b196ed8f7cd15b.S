@@ -10,8 +10,8 @@ func0000000000000144:
 
 func0000000000000146:
 	andi	a1, a1, 1
-	andi	a0, a0, 1
 	slli	a1, a1, 2
+	andi	a0, a0, 1
 	sllw	a1, a2, a1
 	slli	a0, a0, 1
 	sllw	a0, a1, a0
@@ -20,8 +20,8 @@ func0000000000000146:
 
 func000000000000014a:
 	andi	a1, a1, 1
-	andi	a0, a0, 1
 	slli	a1, a1, 2
+	andi	a0, a0, 1
 	sllw	a1, a2, a1
 	slli	a0, a0, 1
 	sllw	a0, a1, a0

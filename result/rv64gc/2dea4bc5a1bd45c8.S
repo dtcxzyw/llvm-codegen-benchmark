@@ -1,9 +1,9 @@
 func0000000000000007:
+	li	a2, 1
 	sub	a1, a1, a0
-	li	a0, 1
+	slli	a2, a2, 33
 	srli	a1, a1, 1
-	slli	a0, a0, 33
-	addi	a0, a0, -4
+	addi	a0, a2, -4
 	and	a0, a0, a1
 	ret
 

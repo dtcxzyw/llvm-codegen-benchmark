@@ -1,7 +1,7 @@
 func0000000000000301:
-	sext.w	a0, a0
 	addi	a1, a1, 15
 	srliw	a1, a1, 4
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -16,11 +16,11 @@ func0000000000000061:
 	ret
 
 func0000000000000321:
-	sext.w	a0, a0
 	lui	a2, 150
 	addi	a2, a2, -156
 	add	a1, a1, a2
 	srliw	a1, a1, 20
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

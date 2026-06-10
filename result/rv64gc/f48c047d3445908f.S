@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a3, a1, 1
 	sext.w	a2, a2
+	andi	a3, a1, 1
 	lui	a1, 256
 	beqz	a2, .LBB0_2
 	lui	a1, 512
@@ -64,8 +64,8 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	sext.w	a2, a2
 	lui	a3, 32
+	sext.w	a2, a2
 	addi	a4, a3, -1
 	andi	a3, a1, 1
 	bltu	a2, a4, .LBB3_3

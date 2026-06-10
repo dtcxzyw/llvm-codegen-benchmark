@@ -11,8 +11,8 @@ func00000000000000c0:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a0
-	lui	a2, 524288
+	lui	a1, 524288
+	sext.w	a2, a0
 	xor	a1, a1, a2
 	snez	a1, a1
 	subw	a0, a0, a1

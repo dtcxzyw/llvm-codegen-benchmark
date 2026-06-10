@@ -14,11 +14,11 @@ func000000000000010a:
 	ret
 
 func0000000000000112:
-	sub	a2, a1, a0
-	lui	a3, 122070
+	lui	a2, 122070
+	sub	a3, a1, a0
+	addi	a2, a2, 1280
 	sltu	a0, a0, a1
-	addi	a1, a3, 1280
-	sltu	a1, a2, a1
+	sltu	a1, a3, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

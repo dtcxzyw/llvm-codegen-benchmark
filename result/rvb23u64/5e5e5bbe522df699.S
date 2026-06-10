@@ -6,9 +6,9 @@ func0000000000000020:
 	ret
 
 func0000000000000018:
+	lui	a3, 4
 	sub	a2, a2, a1
-	lui	a1, 4
-	addi	a1, a1, 417
+	addi	a1, a3, 417
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret

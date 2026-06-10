@@ -9,8 +9,8 @@ func0000000000000206:
 func00000000000002aa:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -348
 	vadd.vv	v8, v10, v8
+	li	a0, -348
 	vsub.vx	v8, v8, a0
 	li	a0, 19
 	vmsgt.vx	v0, v8, a0

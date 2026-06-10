@@ -7,8 +7,8 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	zext.b	a1, a1
 	addiw	a0, a0, -40
+	zext.b	a1, a1
 	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	li	a1, -673

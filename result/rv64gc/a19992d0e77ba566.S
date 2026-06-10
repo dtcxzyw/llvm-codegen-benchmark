@@ -36,11 +36,11 @@ func0000000000000014:
 	bltu	a1, a2, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
+	li	a2, 1
+	slli	a2, a2, 40
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 40
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000028:

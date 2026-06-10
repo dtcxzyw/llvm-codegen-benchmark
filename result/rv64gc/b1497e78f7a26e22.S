@@ -21,8 +21,8 @@ func0000000000000858:
 	ret
 
 func0000000000000848:
-	sext.w	a0, a0
 	addiw	a1, a1, -127
+	sext.w	a0, a0
 	andi	a1, a1, -5
 	seqz	a1, a1
 	sltiu	a0, a0, -2

@@ -20,9 +20,9 @@ func0000000000000192:
 	ret
 
 func0000000000000048:
+	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vv	v14, v10, v12
-	lui	a0, 4096
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -50,10 +50,10 @@ func000000000000030c:
 	ret
 
 func0000000000000142:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vv	v14, v10, v12
 	lui	a0, 32
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vv	v14, v10, v12
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -145,10 +145,10 @@ func0000000000000650:
 	ret
 
 func0000000000000210:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vv	v14, v12, v10
 	lui	a0, 262144
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsltu.vv	v14, v12, v10
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -161,9 +161,9 @@ func000000000000020c:
 	ret
 
 func00000000000002c8:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vv	v14, v12, v10
-	lui	a0, 16
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -278,9 +278,9 @@ func0000000000000630:
 	ret
 
 func0000000000000208:
+	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v14, v12, v10
-	lui	a0, 4096
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -336,10 +336,10 @@ func0000000000000054:
 	ret
 
 func0000000000000190:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vv	v14, v10, v12
 	lui	a0, 262144
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmslt.vv	v14, v10, v12
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -352,17 +352,17 @@ func0000000000000114:
 	ret
 
 func0000000000000608:
+	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v14, v12, v10
-	lui	a0, 4096
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func00000000000001c8:
+	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vv	v14, v10, v12
-	lui	a0, 4096
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -382,9 +382,9 @@ func000000000000004a:
 	ret
 
 func0000000000000070:
+	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vv	v14, v10, v12
-	li	a0, 99
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -446,9 +446,9 @@ func0000000000000288:
 	ret
 
 func0000000000000248:
+	li	a0, 2047
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vv	v14, v12, v10
-	li	a0, 2047
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -469,9 +469,9 @@ func00000000000002d8:
 	ret
 
 func0000000000000158:
+	li	a0, 166
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vv	v14, v10, v12
-	li	a0, 166
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -484,19 +484,19 @@ func0000000000000254:
 	ret
 
 func0000000000000290:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vv	v14, v12, v10
 	lui	a0, 524288
 	addi	a0, a0, -2
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmslt.vv	v14, v12, v10
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func0000000000000188:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vv	v14, v10, v12
 	lui	a0, 524288
 	addi	a0, a0, 4
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmslt.vv	v14, v10, v12
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -509,18 +509,18 @@ func00000000000001a8:
 	ret
 
 func0000000000000328:
+	li	a0, 48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vv	v14, v10, v12
-	li	a0, 48
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func00000000000002d4:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vv	v14, v12, v10
 	lui	a0, 171
 	addi	a0, a0, -416
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsle.vv	v14, v12, v10
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -576,17 +576,17 @@ func0000000000000618:
 	ret
 
 func0000000000000230:
+	lui	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v14, v12, v10
-	lui	a0, 1
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func00000000000001b0:
+	bseti	a0, zero, 11
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v14, v10, v12
-	bseti	a0, zero, 11
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -607,9 +607,9 @@ func0000000000000602:
 	ret
 
 func00000000000002d0:
+	li	a0, 19
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vv	v14, v12, v10
-	li	a0, 19
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

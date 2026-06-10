@@ -1,7 +1,7 @@
 func000000000000005d:
 	addiw	a2, a2, -3
-	slli	a1, a1, 22
 	snez	a2, a2
+	slli	a1, a1, 22
 	slli	a2, a2, 22
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -9,9 +9,9 @@ func000000000000005d:
 
 func000000000000004c:
 	addiw	a2, a2, -1
-	slli	a1, a1, 2
 	snez	a2, a2
 	addi	a2, a2, -1
+	slli	a1, a1, 2
 	andi	a2, a2, 12
 	add	a0, a0, a1
 	addw	a0, a0, a2

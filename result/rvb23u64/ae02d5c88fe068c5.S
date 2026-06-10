@@ -2,8 +2,8 @@
 	.quad	0x3fc99999a0000000
 func0000000000000000:
 	fmv.s	fa5, fa0
-	andi	a0, a0, 1
 	andi	a1, a1, 1
+	andi	a0, a0, 1
 	fli.d	fa0, 1.0
 	beqz	a1, .LBB0_3
 	bnez	a0, .LBB0_4

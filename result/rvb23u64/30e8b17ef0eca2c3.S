@@ -1,16 +1,16 @@
 func0000000000000001:
-	fcvt.d.wu	fa5, a0
-	fli.d	fa4, -1.0
-	fadd.d	fa4, fa0, fa4
-	fadd.d	fa0, fa4, fa5
+	fli.d	fa5, -1.0
+	fadd.d	fa5, fa0, fa5
+	fcvt.d.wu	fa4, a0
+	fadd.d	fa0, fa5, fa4
 	ret
 
 func0000000000000000:
-	fcvt.d.wu	fa5, a0
-	lui	a0, 32901
-	slli	a0, a0, 35
-	fmv.d.x	fa4, a0
-	fadd.d	fa4, fa0, fa4
-	fadd.d	fa0, fa4, fa5
+	lui	a1, 32901
+	slli	a1, a1, 35
+	fmv.d.x	fa5, a1
+	fadd.d	fa5, fa0, fa5
+	fcvt.d.wu	fa4, a0
+	fadd.d	fa0, fa5, fa4
 	ret
 

@@ -2,10 +2,10 @@ func0000000000000009:
 	lui	a3, 69905
 	addi	a3, a3, 273
 	and	a2, a2, a3
-	lui	a3, 838861
 	or	a1, a1, a2
+	lui	a2, 838861
 	slliw	a1, a1, 2
-	addi	a2, a3, -820
+	addi	a2, a2, -820
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

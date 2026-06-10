@@ -75,11 +75,11 @@ func0000000000000224:
 
 func0000000000000404:
 	zext.b	a1, a1
-	lui	a2, 253
 	sltiu	a1, a1, 6
+	lui	a2, 253
+	lui	a3, 3
 	czero.nez	a1, a2, a1
-	lui	a2, 3
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	srliw	a0, a0, 18
 	seqz	a0, a0
@@ -90,9 +90,9 @@ func0000000000000426:
 	sltiu	a1, a1, 127
 	addi	a1, a1, -1
 	andi	a1, a1, -34
+	lui	a2, 3
 	addw	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, 1487
+	addi	a1, a2, 1487
 	slt	a0, a0, a1
 	ret
 

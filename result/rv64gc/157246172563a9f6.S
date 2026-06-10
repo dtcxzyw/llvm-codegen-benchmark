@@ -11,8 +11,8 @@ func0000000000000054:
 	li	a2, -1
 	slli	a2, a2, 63
 	addi	a3, a2, 1
-	addi	a2, a2, 3
 	xor	a3, a3, a1
+	addi	a2, a2, 3
 	seqz	a3, a3
 	slt	a1, a2, a1
 	or	a1, a1, a3

@@ -8,10 +8,10 @@ func0000000000000306:
 
 func0000000000000088:
 	zext.w	a1, a1
-	sltu	a1, a0, a1
-	srli	a0, a0, 8
-	sltiu	a0, a0, 31
-	andn	a0, a1, a0
+	srli	a2, a0, 8
+	sltu	a0, a0, a1
+	sltiu	a1, a2, 31
+	andn	a0, a0, a1
 	ret
 
 func000000000000058c:
@@ -59,9 +59,9 @@ func0000000000000488:
 
 func000000000000010c:
 	zext.w	a1, a1
-	sltu	a1, a1, a0
-	addi	a0, a0, -3
-	snez	a0, a0
+	addi	a2, a0, -3
+	sltu	a0, a1, a0
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 

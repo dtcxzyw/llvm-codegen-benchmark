@@ -8,8 +8,8 @@ func000000000000008a:
 
 func0000000000000114:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	li	a2, 4
+	sext.w	a1, a1
 	minu	a0, a0, a2
 	sltu	a0, a1, a0
 	ret

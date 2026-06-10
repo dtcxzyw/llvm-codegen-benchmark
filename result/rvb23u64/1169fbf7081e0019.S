@@ -6,23 +6,23 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	lui	a1, 1048568
 	slli	a0, a0, 56
 	srai	a0, a0, 63
-	lui	a1, 1048568
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
+	li	a1, 14
 	zext.b	a0, a0
 	sltiu	a0, a0, 3
-	li	a1, 14
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 4
 	ret
 
 func0000000000000006:
-	sext.b	a0, a0
 	lui	a1, 8
+	sext.b	a0, a0
 	srli	a0, a0, 63
 	addi	a1, a1, -2
 	czero.nez	a0, a1, a0
@@ -30,11 +30,11 @@ func0000000000000006:
 	ret
 
 func000000000000000c:
-	zext.b	a0, a0
 	li	a1, -256
+	zext.b	a0, a0
+	lui	a2, 4
 	czero.eqz	a0, a1, a0
-	lui	a1, 4
-	addi	a1, a1, -485
+	addi	a1, a2, -485
 	add	a0, a0, a1
 	ret
 

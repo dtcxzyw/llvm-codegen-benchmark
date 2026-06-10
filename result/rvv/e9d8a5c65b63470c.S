@@ -1,8 +1,8 @@
 func000000000000000f:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmv1r.v	v10, v8
-	vsext.vf2	v11, v9
 	li	a0, 10
+	vsext.vf2	v11, v9
 	vwmul.vx	v8, v11, a0
 	vsext.vf2	v11, v10
 	vwadd.wv	v8, v8, v11
@@ -23,8 +23,8 @@ func0000000000000000:
 func0000000000000005:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmv1r.v	v10, v8
-	vsext.vf2	v11, v9
 	li	a0, -5
+	vsext.vf2	v11, v9
 	vwmulsu.vx	v8, v11, a0
 	vsext.vf2	v11, v10
 	vwadd.wv	v8, v8, v11

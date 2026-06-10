@@ -1,14 +1,14 @@
 func0000000000000000:
-	addiw	a1, a1, -1
 	slli	a2, a0, 4
+	addiw	a1, a1, -1
 	addw	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000003:
-	addiw	a1, a1, -1
 	li	a2, 37
 	mulw	a0, a0, a2
+	addiw	a1, a1, -1
 	and	a0, a0, a1
 	ret
 
@@ -29,9 +29,9 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	addiw	a1, a1, -1
 	li	a2, 37
 	mulw	a0, a0, a2
+	addiw	a1, a1, -1
 	and	a0, a0, a1
 	ret
 

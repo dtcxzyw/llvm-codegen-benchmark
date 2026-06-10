@@ -19,11 +19,11 @@ func0000000000000422:
 	bnez	a0, .LBB1_2
 	fmv.s	fa5, fa0
 .LBB1_2:
-	fli.s	fa4, 0.5
 	lui	a0, 273536
-	flt.s	a1, fa0, fa4
 	fmv.w.x	fa4, a0
-	flt.s	a0, fa5, fa4
+	fli.s	fa3, 0.5
+	flt.s	a0, fa0, fa3
+	flt.s	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
@@ -63,12 +63,12 @@ func0000000000000423:
 	bnez	a0, .LBB4_2
 	fmv.s	fa5, fa0
 .LBB4_2:
-	fmv.w.x	fa4, zero
 	lui	a0, 250459
-	flt.s	a1, fa0, fa4
 	addi	a0, a0, -282
 	fmv.w.x	fa4, a0
+	fmv.w.x	fa3, zero
 	fle.s	a0, fa4, fa5
+	flt.s	a1, fa0, fa3
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

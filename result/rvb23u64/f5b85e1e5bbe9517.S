@@ -46,11 +46,11 @@ func00000000000000a4:
 	ret
 
 func0000000000000064:
+	lui	a3, 64
 	add	a1, a1, a2
-	lui	a2, 64
-	addi	a2, a2, -8
-	sub	a2, a2, a1
-	sltu	a0, a0, a2
+	addi	a3, a3, -8
+	sub	a3, a3, a1
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000004:
@@ -104,9 +104,9 @@ func000000000000006a:
 	ret
 
 func000000000000004a:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
-	bseti	a2, a2, 63
+	bseti	a2, a3, 63
 	sub	a2, a2, a1
 	slt	a0, a2, a0
 	ret

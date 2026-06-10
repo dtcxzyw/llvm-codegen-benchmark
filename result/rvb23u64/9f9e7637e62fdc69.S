@@ -1,11 +1,10 @@
+.LCPI0_0:
+	.quad	595056260559142912
 func0000000000000004:
-	zext.w	a1, a0
-	lui	a2, 264
-	addi	a2, a2, 1057
-	slli	a2, a2, 12
-	addi	a2, a2, 133
-	slli	a2, a2, 27
-	mulhu	a1, a1, a2
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	zext.w	a2, a0
+	mulhu	a1, a2, a1
 	slli	a2, a1, 5
 	add	a1, a1, a0
 	subw	a1, a1, a2

@@ -7,9 +7,9 @@ func0000000000000000:
 
 func0000000000000004:
 	addi	a1, a1, -12
+	lui	a2, 4096
 	minu	a0, a1, a0
-	lui	a1, 4096
-	addi	a1, a1, -1
-	minu	a0, a0, a1
+	addi	a2, a2, -1
+	minu	a0, a0, a2
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000008:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB0_2
 	fmv.d	fa4, fa1

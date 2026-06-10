@@ -25,9 +25,9 @@ func00000000000002aa:
 
 func000000000000022a:
 	sub	a1, a1, a2
-	lui	a2, 23
 	addi	a1, a1, 15
 	andi	a1, a1, -16
+	lui	a2, 23
 	addw	a0, a0, a1
 	addi	a1, a2, 1792
 	slt	a0, a1, a0

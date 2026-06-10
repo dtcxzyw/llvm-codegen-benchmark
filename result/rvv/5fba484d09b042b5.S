@@ -2,8 +2,8 @@ func0000000000000010:
 	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vandn.vx	v12, v12, a0
-	lui	a0, 8
 	vmadd.vv	v12, v10, v8
+	lui	a0, 8
 	addi	a0, a0, 1
 	vadd.vx	v8, v12, a0
 	ret

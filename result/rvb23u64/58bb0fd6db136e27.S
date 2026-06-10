@@ -1,6 +1,6 @@
 func0000000000000c01:
-	sext.w	a0, a0
 	fle.s	a1, fa1, fa0
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

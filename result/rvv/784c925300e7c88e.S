@@ -1,7 +1,7 @@
 func0000000000001b02:
+	li	a0, 254
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, 1
-	li	a0, 254
 	vand.vx	v10, v10, a0
 	vmsne.vi	v12, v10, 0
 	vmseq.vi	v10, v8, 0

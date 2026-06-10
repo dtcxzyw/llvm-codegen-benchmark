@@ -1,6 +1,6 @@
 func000000000000000f:
-	sext.w	a2, a2
 	lui	a3, 4128
+	sext.w	a2, a2
 	addi	a3, a3, 772
 	xor	a2, a2, a3
 	czero.eqz	a1, a1, a2
@@ -11,8 +11,8 @@ func000000000000000f:
 	ret
 
 func000000000000000b:
-	sext.w	a2, a2
 	lui	a3, 14
+	sext.w	a2, a2
 	addi	a3, a3, -339
 	xor	a2, a2, a3
 	czero.eqz	a1, a1, a2

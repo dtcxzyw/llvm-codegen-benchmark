@@ -15,10 +15,10 @@ func000000000000002a:
 	ret
 
 func0000000000000481:
-	addiw	a1, a1, -7
 	lui	a2, 16
-	sltiu	a1, a1, -2
+	addiw	a1, a1, -7
 	xor	a0, a0, a2
+	sltiu	a1, a1, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -32,10 +32,10 @@ func0000000000000098:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	li	a2, -1
-	xori	a1, a1, 1
+	sext.w	a1, a1
 	slli	a2, a2, 63
+	xori	a1, a1, 1
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -57,10 +57,10 @@ func0000000000000084:
 	ret
 
 func0000000000000184:
-	addiw	a1, a1, -1
 	lui	a2, 524288
-	addi	a0, a0, -7
+	addiw	a1, a1, -1
 	addiw	a2, a2, -2
+	addi	a0, a0, -7
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -90,8 +90,8 @@ func000000000000048c:
 	ret
 
 func0000000000000081:
-	addiw	a1, a1, -56
 	lui	a2, 262144
+	addiw	a1, a1, -56
 	addi	a2, a2, -55
 	sltu	a1, a1, a2
 	seqz	a0, a0
@@ -121,10 +121,10 @@ func0000000000000504:
 	ret
 
 func0000000000000104:
-	addiw	a1, a1, -1
 	lui	a2, 262144
-	sltiu	a0, a0, 3
+	addiw	a1, a1, -1
 	addi	a2, a2, -1
+	sltiu	a0, a0, 3
 	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1
@@ -162,9 +162,9 @@ func0000000000000194:
 func0000000000000584:
 	lui	a2, 1048467
 	addi	a2, a2, -203
+	lui	a3, 8
 	addw	a1, a1, a2
-	lui	a2, 8
-	addi	a2, a2, 565
+	addi	a2, a3, 565
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

@@ -21,10 +21,10 @@ func000000000000000e:
 
 func000000000000000f:
 	slli	a0, a0, 26
+	lui	a2, 262143
 	add	a0, a0, a1
-	lui	a1, 262143
-	slli	a1, a1, 14
-	and	a0, a0, a1
+	slli	a2, a2, 14
+	and	a0, a0, a2
 	ret
 
 func0000000000000005:

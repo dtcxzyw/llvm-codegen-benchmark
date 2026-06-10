@@ -7,10 +7,10 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
-	sub	a2, a1, a0
-	slt	a0, a1, a0
-	addi	a0, a0, -1
-	and	a0, a0, a2
+	slt	a2, a1, a0
+	sub	a1, a1, a0
+	addi	a0, a2, -1
+	and	a0, a0, a1
 	ret
 
 func0000000000000004:
@@ -30,32 +30,32 @@ func0000000000000048:
 	ret
 
 func0000000000000044:
-	sub	a2, a0, a1
-	sltu	a0, a0, a1
-	neg	a0, a0
-	or	a0, a0, a2
+	sltu	a2, a0, a1
+	sub	a0, a0, a1
+	neg	a1, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000026:
-	sub	a2, a0, a1
-	slt	a0, a0, a1
-	addi	a0, a0, -1
+	slt	a2, a0, a1
+	sub	a0, a0, a1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 
 func0000000000000021:
-	sub	a2, a1, a0
-	xor	a0, a0, a1
-	snez	a0, a0
-	addi	a0, a0, -1
-	or	a0, a0, a2
+	xor	a2, a1, a0
+	snez	a2, a2
+	sub	a1, a1, a0
+	addi	a0, a2, -1
+	or	a0, a0, a1
 	ret
 
 func000000000000000a:
-	sub	a2, a1, a0
-	slt	a0, a1, a0
-	addi	a0, a0, -1
-	and	a0, a0, a2
+	slt	a2, a1, a0
+	sub	a1, a1, a0
+	addi	a0, a2, -1
+	and	a0, a0, a1
 	ret
 
 func0000000000000061:
@@ -67,9 +67,9 @@ func0000000000000061:
 	ret
 
 func0000000000000006:
-	sub	a2, a0, a1
-	slt	a0, a0, a1
-	addi	a0, a0, -1
+	slt	a2, a0, a1
+	sub	a0, a0, a1
+	addi	a2, a2, -1
 	and	a0, a0, a2
 	ret
 

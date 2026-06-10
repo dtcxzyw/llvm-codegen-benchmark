@@ -1,7 +1,7 @@
 func0000000000000041:
 	addiw	a2, a2, -25
-	addiw	a0, a0, 95
 	seqz	a2, a2
+	addiw	a0, a0, 95
 	or	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -20,8 +20,8 @@ func0000000000000101:
 
 func000000000000004c:
 	not	a1, a1
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sltiu	a2, a2, -1
 	snez	a0, a0
 	and	a1, a1, a2
@@ -31,11 +31,11 @@ func000000000000004c:
 func0000000000000044:
 	not	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a2
 	li	a3, 27
+	sext.w	a2, a2
 	slli	a3, a3, 11
-	sltiu	a0, a0, 128
 	xor	a2, a2, a3
+	sltiu	a0, a0, 128
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -43,8 +43,8 @@ func0000000000000044:
 
 func0000000000000181:
 	not	a1, a1
-	sext.w	a0, a0
 	srliw	a2, a2, 31
+	sext.w	a0, a0
 	not	a2, a2
 	seqz	a0, a0
 	and	a1, a1, a2
@@ -53,8 +53,8 @@ func0000000000000181:
 
 func000000000000004a:
 	not	a1, a1
-	sext.w	a0, a0
 	addiw	a2, a2, 124
+	sext.w	a0, a0
 	snez	a2, a2
 	sgtz	a0, a0
 	and	a1, a1, a2

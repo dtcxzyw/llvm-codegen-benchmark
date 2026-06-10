@@ -9,18 +9,18 @@ func00000000000000d5:
 func0000000000000015:
 	slli	a2, a2, 2
 	srai	a0, a0, 3
+	lui	a3, 4096
 	add	a1, a1, a2
-	lui	a2, 4096
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
 func0000000000000045:
 	slli	a2, a2, 3
 	srai	a1, a1, 2
+	lui	a3, 4096
 	add	a0, a0, a2
-	lui	a2, 4096
-	add	a1, a1, a2
+	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

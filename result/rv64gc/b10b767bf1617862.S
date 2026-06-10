@@ -1,18 +1,18 @@
 func000000000000002a:
-	mv	a1, a0
+	fcvt.w.s	a1, fa0, rtz
 	sext.w	a2, a0
-	fcvt.w.s	a0, fa0, rtz
-	blt	a0, a2, .LBB0_2
-	addiw	a0, a1, -1
+	blt	a1, a2, .LBB0_2
+	addiw	a1, a0, -1
 .LBB0_2:
+	mv	a0, a1
 	ret
 
 func0000000000000008:
-	mv	a1, a0
+	fcvt.w.s	a1, fa0, rtz
 	sext.w	a2, a0
-	fcvt.w.s	a0, fa0, rtz
-	bltu	a0, a2, .LBB1_2
-	addiw	a0, a1, -1
+	bltu	a1, a2, .LBB1_2
+	addiw	a1, a0, -1
 .LBB1_2:
+	mv	a0, a1
 	ret
 

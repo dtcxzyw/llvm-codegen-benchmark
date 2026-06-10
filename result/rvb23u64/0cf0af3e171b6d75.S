@@ -5,11 +5,11 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	addiw	a1, a0, -4
-	andi	a0, a0, -2
-	seqz	a1, a1
-	addiw	a0, a0, -2
+	andi	a1, a0, -2
+	addiw	a0, a0, -4
+	addiw	a1, a1, -2
 	seqz	a0, a0
+	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
@@ -28,9 +28,9 @@ func00000000000000cc:
 	ret
 
 func00000000000000d8:
-	srliw	a1, a0, 31
-	andi	a0, a0, 15
-	sltiu	a0, a0, 11
+	andi	a1, a0, 15
+	srliw	a0, a0, 31
+	sltiu	a1, a1, 11
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -44,24 +44,24 @@ func00000000000000d4:
 	ret
 
 func0000000000000101:
-	srliw	a1, a0, 16
-	lui	a2, 512
-	addi	a2, a2, -2048
-	and	a0, a0, a2
+	lui	a1, 512
+	addi	a1, a1, -2048
 	li	a2, 27
-	sltiu	a1, a1, 17
+	and	a1, a1, a0
 	slli	a2, a2, 11
-	xor	a0, a0, a2
-	seqz	a0, a0
+	srliw	a0, a0, 16
+	xor	a1, a1, a2
+	sltiu	a0, a0, 17
+	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000141:
-	sext.w	a1, a0
-	zext.b	a0, a0
-	slti	a1, a1, 23
-	addi	a0, a0, -7
-	seqz	a0, a0
+	zext.b	a1, a0
+	sext.w	a0, a0
+	addi	a1, a1, -7
+	slti	a0, a0, 23
+	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 

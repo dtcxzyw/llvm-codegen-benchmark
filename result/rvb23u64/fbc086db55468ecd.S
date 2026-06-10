@@ -103,10 +103,10 @@ func00000000000000ac:
 	ret
 
 func0000000000000104:
+	lui	a3, 384000
+	addi	a3, a3, 1
 	sltu	a1, a2, a1
-	lui	a2, 384000
-	addi	a2, a2, 1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret
 

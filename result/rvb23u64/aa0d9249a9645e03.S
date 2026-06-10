@@ -1,12 +1,12 @@
 func0000000000000001:
-	andi	a3, a0, 1
 	fcvt.s.d	fa5, fa0
-	fmv.x.w	a0, fa5
-	czero.nez	a1, a1, a3
-	slli	a0, a0, 41
-	srli	a0, a0, 41
-	czero.eqz	a0, a0, a3
+	fmv.x.w	a3, fa5
+	slli	a3, a3, 41
+	andi	a4, a0, 1
+	srli	a3, a3, 41
+	czero.nez	a0, a1, a4
+	czero.eqz	a1, a3, a4
 	or	a0, a0, a1
-	czero.nez	a1, a2, a3
+	czero.nez	a1, a2, a4
 	ret
 

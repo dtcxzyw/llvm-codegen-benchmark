@@ -1,9 +1,9 @@
 func0000000000000073:
-	sext.w	a2, a2
 	lui	a3, 2
-	seqz	a2, a2
 	addi	a3, a3, 368
 	mul	a0, a0, a3
+	sext.w	a2, a2
+	seqz	a2, a2
 	add	a0, a0, a1
 	sh2add	a0, a2, a0
 	addi	a0, a0, 248

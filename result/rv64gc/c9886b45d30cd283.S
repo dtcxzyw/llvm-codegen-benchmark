@@ -19,12 +19,12 @@ func000000000000010c:
 
 func000000000000018a:
 	sext.w	a1, a1
-	sgtz	a0, a0
 	snez	a1, a1
+	sgtz	a0, a0
+	li	a2, -1
 	and	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	sub	a0, a1, a0
+	slli	a2, a2, 63
+	sub	a0, a2, a0
 	ret
 
 func0000000000000101:

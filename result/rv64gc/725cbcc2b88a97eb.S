@@ -10,8 +10,8 @@ func0000000000000021:
 func0000000000000081:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 3
 	addi	a0, a0, -16
+	sltiu	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1
 	bnez	a0, .LBB1_2

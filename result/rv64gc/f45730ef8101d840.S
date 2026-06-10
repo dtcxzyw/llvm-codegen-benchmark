@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a0, a0, 1
 	addi	a2, a2, -64
+	andi	a0, a0, 1
 	snez	a2, a2
 	addi	a0, a0, -1
 	addi	a2, a2, -1

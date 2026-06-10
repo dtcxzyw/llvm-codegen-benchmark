@@ -19,8 +19,8 @@ func00000000000000c0:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
 	vsub.vv	v8, v8, v10
-	li	a0, 17
 	vsub.vv	v8, v8, v12
+	li	a0, 17
 	slli	a0, a0, 8
 	vadd.vx	v8, v8, a0
 	ret

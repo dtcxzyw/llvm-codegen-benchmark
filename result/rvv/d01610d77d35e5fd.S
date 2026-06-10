@@ -1,9 +1,9 @@
 func00000000000000f0:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 8
 	vadd.vv	v10, v12, v10
 	vadd.vi	v10, v10, 14
-	vmv.v.i	v12, 8
-	vmadd.vv	v8, v10, v12
+	vmadd.vv	v8, v10, v14
 	ret
 
 func0000000000000004:
@@ -24,10 +24,10 @@ func0000000000000000:
 
 func0000000000000044:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 3
 	vadd.vv	v10, v12, v10
 	vadd.vi	v10, v10, -2
-	vmv.v.i	v12, 3
-	vmadd.vv	v8, v10, v12
+	vmadd.vv	v8, v10, v14
 	ret
 
 func00000000000000c0:

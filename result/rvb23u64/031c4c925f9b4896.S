@@ -12,9 +12,9 @@ func000000000000000c:
 
 func0000000000000005:
 	srliw	a1, a1, 13
+	lui	a2, 1048575
 	add	a0, a0, a1
-	lui	a1, 1048575
-	addi	a1, a1, -98
+	addi	a1, a2, -98
 	addw	a0, a0, a1
 	ret
 

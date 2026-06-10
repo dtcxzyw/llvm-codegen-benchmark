@@ -1,9 +1,9 @@
 func000000000000001e:
 	slliw	a1, a1, 8
-	lui	a2, 1
 	or	a0, a0, a1
-	addi	a1, a2, -1981
+	lui	a1, 1
 	zext.w	a2, a0
+	addi	a1, a1, -1981
 	mul	a1, a1, a2
 	srli	a1, a1, 16
 	sub	a2, a0, a1

@@ -5,10 +5,10 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
+	li	a3, -257
 	xor	a1, a1, a2
-	li	a2, -257
-	zext.w	a2, a2
-	andn	a1, a1, a2
+	zext.w	a3, a3
+	andn	a1, a1, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

@@ -16,8 +16,8 @@ func00000000000000a4:
 
 func0000000000000001:
 	add	a0, a0, a1
-	lui	a1, 16
 	slli	a0, a0, 48
+	lui	a1, 16
 	srli	a0, a0, 48
 	addi	a1, a1, -3
 	xor	a0, a0, a1

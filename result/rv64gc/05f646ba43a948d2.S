@@ -1,6 +1,6 @@
 func0000000000000011:
-	addi	a1, a1, 2
 	li	a2, 1530
+	addi	a1, a1, 2
 	bltu	a1, a2, .LBB0_2
 	li	a1, -9
 	add	a0, a0, a1
@@ -29,8 +29,8 @@ func0000000000000010:
 	ret
 
 func0000000000000052:
-	addi	a1, a1, 1
 	li	a2, 9
+	addi	a1, a1, 1
 	bltu	a1, a2, .LBB3_2
 	li	a1, 6
 	add	a0, a0, a1

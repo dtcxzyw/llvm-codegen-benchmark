@@ -32,8 +32,8 @@ func000000000000004c:
 func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vv	v10, v10, v12
-	li	a0, 512
 	vmseq.vi	v0, v10, 0
+	li	a0, 512
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v9, a0
 	vmerge.vvm	v8, v9, v8, v0

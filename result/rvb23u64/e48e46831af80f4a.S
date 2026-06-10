@@ -34,8 +34,8 @@ func0000000000000000:
 	ret
 
 func000000000000000b:
-	andi	a0, a0, 15
 	li	a1, 4
+	andi	a0, a0, 15
 	sllw	a0, a1, a0
 	ret
 

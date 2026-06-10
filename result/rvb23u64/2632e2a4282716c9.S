@@ -72,8 +72,8 @@ func000000000000000c:
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 2
 	sh1add	a0, a0, a0
+	slli	a1, a1, 2
 	subw	a0, a1, a0
 	ret
 

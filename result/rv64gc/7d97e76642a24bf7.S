@@ -23,8 +23,8 @@ func0000000000000033:
 
 func0000000000000037:
 	add	a1, a1, a2
-	li	a2, 11
 	addi	a1, a1, 1
+	li	a2, 11
 	slli	a1, a1, 32
 	slli	a2, a2, 34
 	mulhu	a1, a1, a2

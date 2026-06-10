@@ -51,13 +51,13 @@ func000000000000000a:
 	ret
 
 func0000000000000018:
-	zext.h	a0, a0
 	lui	a1, 21
+	zext.h	a0, a0
 	sltiu	a0, a0, 301
 	addi	a1, a1, 384
+	lui	a2, 770428
 	czero.nez	a0, a1, a0
-	lui	a1, 770428
-	addi	a1, a1, 512
+	addi	a1, a2, 512
 	add.uw	a0, a1, a0
 	ret
 

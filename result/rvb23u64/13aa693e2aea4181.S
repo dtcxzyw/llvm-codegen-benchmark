@@ -11,13 +11,13 @@ func0000000000000002:
 	ret
 
 func0000000000000011:
+	lui	a3, 1024
 	sltu	a1, a2, a1
+	addi	a3, a3, -27
 	sext.w	a0, a0
-	lui	a2, 1024
+	slli	a3, a3, 10
 	czero.nez	a0, a0, a1
-	addi	a2, a2, -27
-	slli	a2, a2, 10
-	czero.eqz	a1, a2, a1
+	czero.eqz	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

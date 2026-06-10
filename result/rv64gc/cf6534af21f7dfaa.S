@@ -1,7 +1,7 @@
 func0000000000000009:
 	srliw	a1, a1, 16
-	andi	a0, a0, 1
 	seqz	a1, a1
+	andi	a0, a0, 1
 	slli	a1, a1, 4
 	slli	a0, a0, 3
 	or	a0, a0, a1
@@ -18,8 +18,8 @@ func0000000000000003:
 
 func0000000000000031:
 	srliw	a1, a1, 16
-	andi	a0, a0, 1
 	snez	a1, a1
+	andi	a0, a0, 1
 	slli	a1, a1, 4
 	slli	a0, a0, 3
 	or	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000031:
 
 func0000000000000029:
 	srliw	a1, a1, 16
-	andi	a0, a0, 1
 	seqz	a1, a1
+	andi	a0, a0, 1
 	slli	a1, a1, 4
 	slli	a0, a0, 3
 	or	a0, a0, a1

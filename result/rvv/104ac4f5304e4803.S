@@ -37,9 +37,9 @@ func00000000000000c1:
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	li	a0, -1
 	vsll.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vmseq.vx	v0, v8, a0
 	ret

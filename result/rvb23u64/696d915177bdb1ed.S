@@ -62,9 +62,9 @@ func00000000000002ff:
 	slli	a1, a1, 5
 	sh1add	a0, a0, a0
 	add	a1, a1, a2
-	lui	a2, 1048560
 	sh1add	a0, a0, a1
-	addi	a1, a2, -1488
+	lui	a1, 1048560
+	addi	a1, a1, -1488
 	add	a0, a0, a1
 	ret
 

@@ -7,8 +7,8 @@ func0000000000000000:
 	ret
 
 func000000000000002f:
-	andi	a3, a0, 1
 	sext.w	a2, a2
+	andi	a3, a0, 1
 	slli	a0, a2, 4
 	add	a0, a0, a1
 	bnez	a3, .LBB1_2
@@ -21,8 +21,8 @@ func000000000000002f:
 	ret
 
 func0000000000000020:
-	andi	a3, a0, 1
 	sext.w	a2, a2
+	andi	a3, a0, 1
 	slli	a0, a2, 2
 	add	a0, a0, a1
 	bnez	a3, .LBB2_2

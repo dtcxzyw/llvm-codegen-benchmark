@@ -39,12 +39,12 @@ func0000000000000000:
 	lui	a2, 240
 	addi	a2, a2, 15
 	slli	a3, a2, 32
+	li	a4, 1
 	add	a2, a2, a3
-	li	a3, 1
-	slli	a3, a3, 56
+	slli	a4, a4, 56
 	and	a1, a1, a2
-	addi	a3, a3, -10
-	mul	a1, a1, a3
+	addi	a4, a4, -10
+	mul	a1, a1, a4
 	add	a0, a0, a1
 	slli	a0, a0, 8
 	ret

@@ -1,7 +1,7 @@
 func0000000000000108:
+	li	a2, 31
 	zext.b	a1, a0
-	li	a0, 31
-	bltu	a0, a1, .LBB0_2
+	bltu	a2, a1, .LBB0_2
 	lui	a0, 65536
 	addi	a0, a0, 353
 	li	a2, 63
@@ -30,10 +30,10 @@ func0000000000000021:
 	ret
 
 func000000000000014a:
+	li	a2, 64
 	slli	a0, a0, 56
 	srai	a1, a0, 56
-	li	a0, 64
-	blt	a0, a1, .LBB2_2
+	blt	a2, a1, .LBB2_2
 	li	a0, -48
 	li	a2, 96
 	blt	a2, a1, .LBB2_3
@@ -48,9 +48,9 @@ func000000000000014a:
 	ret
 
 func0000000000000308:
+	li	a2, 64
 	zext.b	a1, a0
-	li	a0, 64
-	bltu	a0, a1, .LBB3_2
+	bltu	a2, a1, .LBB3_2
 	li	a0, -48
 	li	a2, 96
 	bltu	a2, a1, .LBB3_3
@@ -65,8 +65,8 @@ func0000000000000308:
 	ret
 
 func0000000000000084:
-	zext.b	a0, a0
 	li	a1, 16
+	zext.b	a0, a0
 	bgeu	a0, a1, .LBB4_2
 	li	a0, 3
 	ret
@@ -76,8 +76,8 @@ func0000000000000084:
 	ret
 
 func0000000000000081:
-	zext.b	a0, a0
 	li	a1, 1
+	zext.b	a0, a0
 	bne	a0, a1, .LBB5_2
 	lui	a0, 524288
 	ret
@@ -101,9 +101,9 @@ func000000000000002a:
 	ret
 
 func0000000000000318:
+	li	a2, 223
 	zext.b	a1, a0
-	li	a0, 223
-	bltu	a0, a1, .LBB7_2
+	bltu	a2, a1, .LBB7_2
 	li	a0, 31
 	li	a2, 239
 	bltu	a2, a1, .LBB7_3
@@ -118,9 +118,9 @@ func0000000000000318:
 	ret
 
 func0000000000000294:
+	li	a2, 240
 	zext.b	a1, a0
-	li	a0, 240
-	bltu	a1, a0, .LBB8_2
+	bltu	a1, a2, .LBB8_2
 	li	a0, 7
 	li	a2, 224
 	bltu	a1, a2, .LBB8_3

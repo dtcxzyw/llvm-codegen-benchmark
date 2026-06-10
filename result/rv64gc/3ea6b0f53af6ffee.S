@@ -8,8 +8,8 @@ func0000000000000084:
 
 func000000000000010c:
 	sext.w	a1, a1
-	addiw	a0, a0, -16
 	sltiu	a1, a1, 12
+	addiw	a0, a0, -16
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -49,8 +49,8 @@ func000000000000018c:
 func0000000000000028:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	seqz	a1, a1
 	sltiu	a0, a0, 2
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

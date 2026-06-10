@@ -21,8 +21,8 @@ func00000000000000aa:
 func00000000000000a6:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
-	li	a0, -528
 	vwadd.wv	v8, v8, v11
+	li	a0, -528
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, 60
@@ -52,8 +52,8 @@ func000000000000008a:
 func00000000000000a4:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
-	li	a0, -560
 	vwadd.wv	v8, v8, v11
+	li	a0, -560
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, -32

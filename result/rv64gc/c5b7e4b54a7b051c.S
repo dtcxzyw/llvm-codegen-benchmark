@@ -1,7 +1,7 @@
 func0000000000000003:
+	slli	a2, a2, 32
 	andi	a3, a0, 1
-	slli	a0, a2, 32
-	srli	a0, a0, 32
+	srli	a0, a2, 32
 	beqz	a3, .LBB0_2
 	li	a1, 1
 .LBB0_2:
@@ -9,9 +9,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
+	slli	a2, a2, 32
 	andi	a3, a0, 1
-	slli	a0, a2, 32
-	srli	a0, a0, 32
+	srli	a0, a2, 32
 	beqz	a3, .LBB1_2
 	li	a1, 5
 .LBB1_2:
@@ -19,9 +19,9 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
+	slli	a2, a2, 32
 	andi	a3, a0, 1
-	slli	a0, a2, 32
-	srli	a0, a0, 32
+	srli	a0, a2, 32
 	beqz	a3, .LBB2_2
 	li	a1, 512
 .LBB2_2:

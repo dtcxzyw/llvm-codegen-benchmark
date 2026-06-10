@@ -19,9 +19,9 @@ func000000000000002c:
 	ret
 
 func0000000000000004:
+	lui	a2, 786177
 	addw	a0, a0, a1
-	lui	a1, 786177
-	addi	a1, a1, 823
+	addi	a1, a2, 823
 	sltu	a0, a0, a1
 	neg	a0, a0
 	ret

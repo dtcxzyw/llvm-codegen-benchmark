@@ -6,9 +6,9 @@ func0000000000000018:
 	ret
 
 func0000000000000042:
+	lui	a3, 796918
 	add	a1, a1, a2
-	lui	a2, 796918
-	addi	a2, a2, -983
+	addi	a2, a3, -983
 	mul	a1, a1, a2
 	lui	a2, 20972
 	addi	a2, a2, -1968
@@ -21,9 +21,9 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
+	lui	a3, 796918
 	add	a1, a1, a2
-	lui	a2, 796918
-	addi	a2, a2, -983
+	addi	a2, a3, -983
 	mul	a1, a1, a2
 	lui	a2, 20972
 	addi	a2, a2, -1968

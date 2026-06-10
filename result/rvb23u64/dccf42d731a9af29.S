@@ -1,16 +1,16 @@
 func000000000000003f:
 	lui	a3, 1
-	sext.w	a1, a1
 	addi	a3, a3, -496
 	mulw	a2, a2, a3
+	sext.w	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func00000000000000ff:
 	sh1add	a2, a2, a2
-	sext.w	a1, a1
 	sh2add	a2, a2, a2
+	sext.w	a1, a1
 	slliw	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -18,9 +18,9 @@ func00000000000000ff:
 
 func00000000000000f0:
 	lui	a3, 1
-	sext.w	a1, a1
 	addi	a3, a3, -496
 	mulw	a2, a2, a3
+	sext.w	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

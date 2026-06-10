@@ -89,9 +89,9 @@ func0000000000000018:
 	ret
 
 func000000000000000a:
+	li	a0, 24
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v12, v10, -4
-	li	a0, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vx	v8, v8, a0
@@ -99,9 +99,9 @@ func000000000000000a:
 	ret
 
 func0000000000000075:
+	li	a0, 24
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v12, v10, -4
-	li	a0, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vx	v8, v8, a0

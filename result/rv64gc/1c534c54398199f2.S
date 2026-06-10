@@ -1,9 +1,9 @@
 func0000000000000006:
-	srai	a2, a1, 63
-	srli	a2, a2, 56
-	add	a1, a1, a2
-	srai	a1, a1, 8
 	li	a2, 320
+	srai	a3, a1, 63
+	srli	a3, a3, 56
+	add	a1, a1, a3
+	srai	a1, a1, 8
 	bge	a1, a2, .LBB0_3
 	li	a2, 8
 	bge	a2, a1, .LBB0_4

@@ -1,7 +1,7 @@
 func0000000000000001:
 	addi	a0, a0, -27
-	lui	a2, 16
 	seqz	a0, a0
+	lui	a2, 16
 	addi	a0, a0, -1
 	and	a1, a1, a2
 	and	a0, a0, a1
@@ -26,9 +26,9 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	andi	a1, a1, -512
 	srli	a0, a0, 61
 	seqz	a0, a0
+	andi	a1, a1, -512
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
@@ -52,12 +52,12 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	li	a2, 64
-	blt	a0, a2, .LBB6_2
+	mv	a2, a0
+	li	a0, 64
+	blt	a2, a0, .LBB6_2
 	li	a0, -127
 	srli	a0, a0, 1
-	and	a2, a1, a0
+	and	a0, a0, a1
 .LBB6_2:
-	mv	a0, a2
 	ret
 

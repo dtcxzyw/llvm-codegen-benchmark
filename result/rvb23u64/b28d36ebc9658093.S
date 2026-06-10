@@ -6,18 +6,18 @@ func000000000000001f:
 
 func0000000000000004:
 	slli	a1, a1, 32
+	li	a2, 15
 	add	a0, a0, a1
-	li	a1, 15
-	slli	a1, a1, 54
-	add	a0, a0, a1
+	slli	a2, a2, 54
+	add	a0, a0, a2
 	ret
 
 func0000000000000017:
 	slli	a1, a1, 56
+	lui	a2, 65535
 	add	a0, a0, a1
-	lui	a1, 65535
-	slli	a1, a1, 12
-	add	a0, a0, a1
+	slli	a2, a2, 12
+	add	a0, a0, a2
 	ret
 
 func000000000000000d:
@@ -32,10 +32,10 @@ func000000000000001c:
 
 func000000000000000c:
 	slli	a1, a1, 53
+	li	a2, 1023
 	add	a0, a0, a1
-	li	a1, 1023
-	slli	a1, a1, 52
-	add	a0, a0, a1
+	slli	a2, a2, 52
+	add	a0, a0, a2
 	ret
 
 func0000000000000015:

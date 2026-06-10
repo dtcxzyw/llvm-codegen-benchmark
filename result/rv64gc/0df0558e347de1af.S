@@ -18,8 +18,8 @@ func0000000000000007:
 	ret
 
 func0000000000000013:
-	sext.w	a1, a1
 	li	a2, 8
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB1_2
 	li	a1, 60
 	andi	a0, a0, 1
@@ -35,18 +35,18 @@ func0000000000000013:
 
 func0000000000000005:
 	addiw	a1, a1, -3
-	lui	a2, 1047552
-	andi	a0, a0, 1
 	seqz	a1, a1
 	addi	a1, a1, -1
+	lui	a2, 1047552
+	andi	a0, a0, 1
 	and	a1, a1, a2
 	slli	a0, a0, 22
 	add	a0, a0, a1
 	ret
 
 func0000000000000011:
-	sext.w	a1, a1
 	li	a2, 254
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB3_2
 	li	a1, 5
 	slli	a0, a0, 63

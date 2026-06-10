@@ -9,8 +9,8 @@ func0000000000000302:
 func0000000000000050:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	seqz	a1, a1
 	sltiu	a0, a0, 62
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -25,8 +25,8 @@ func0000000000000202:
 	ret
 
 func0000000000000102:
-	sltiu	a1, a1, 2
 	slli	a0, a0, 48
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

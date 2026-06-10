@@ -6,8 +6,8 @@ func000000000000002c:
 
 func0000000000000014:
 	addi	a1, a1, 2031
-	lui	a2, 4
 	srliw	a1, a1, 3
+	lui	a2, 4
 	slli	a1, a1, 3
 	addi	a2, a2, -2047
 	sltu	a1, a1, a2

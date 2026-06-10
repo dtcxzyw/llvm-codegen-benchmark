@@ -6,13 +6,13 @@ func000000000000008c:
 	ret
 
 func000000000000010c:
-	zext.h	a0, a0
-	zext.h	a1, a1
 	lui	a2, 16
-	sltu	a1, a1, a0
+	zext.h	a0, a0
 	addi	a2, a2, -1
-	xor	a0, a0, a2
-	snez	a0, a0
+	zext.h	a1, a1
+	xor	a2, a2, a0
+	sltu	a0, a1, a0
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 

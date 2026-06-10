@@ -48,9 +48,9 @@ func000000000000002a:
 	ret
 
 func0000000000000066:
+	lui	a3, 24
 	addw	a1, a1, a2
-	lui	a2, 24
-	addi	a2, a2, 1697
+	addi	a2, a3, 1697
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func0000000000000030:
 	lui	a3, 28
-	slli	a2, a2, 59
 	addi	a3, a3, 512
+	slli	a2, a2, 59
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -35,9 +35,9 @@ func000000000000003c:
 func0000000000000028:
 	lui	a3, 8
 	addi	a3, a3, -2
+	lui	a4, 21
 	and	a2, a2, a3
-	lui	a3, 21
-	addi	a3, a3, 384
+	addi	a3, a4, 384
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -52,8 +52,8 @@ func0000000000000037:
 	ret
 
 func0000000000000017:
-	andi	a2, a2, 1020
 	lui	a3, 1048571
+	andi	a2, a2, 1020
 	addi	a3, a3, 1399
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -61,8 +61,8 @@ func0000000000000017:
 	ret
 
 func0000000000000015:
-	andi	a2, a2, 1020
 	lui	a3, 1048570
+	andi	a2, a2, 1020
 	addi	a3, a3, 460
 	mul	a2, a2, a3
 	add	a0, a0, a1

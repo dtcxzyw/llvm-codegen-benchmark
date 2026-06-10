@@ -35,12 +35,12 @@ func0000000000000001:
 
 func0000000000000074:
 	lui	a3, 1
-	andi	a1, a1, 48
-	or	a0, a0, a1
-	lui	a1, 16
 	addi	a3, a3, -64
+	andi	a1, a1, 48
 	and	a2, a2, a3
+	or	a0, a0, a1
 	or	a0, a0, a2
+	lui	a1, 16
 	sext.w	a0, a0
 	addi	a1, a1, -528
 	sltu	a0, a0, a1

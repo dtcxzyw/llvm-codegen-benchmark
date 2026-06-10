@@ -70,11 +70,11 @@ func0000000000000075:
 
 func0000000000000065:
 	li	a2, 190
-	zext.b	a0, a0
 	mul	a1, a1, a2
 	lui	a2, 1048570
-	add	a0, a0, a1
-	addi	a1, a2, 66
+	zext.b	a0, a0
+	addi	a2, a2, 66
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -124,11 +124,11 @@ func0000000000000025:
 
 func0000000000000027:
 	li	a2, 94
-	zext.b	a0, a0
 	mul	a1, a1, a2
 	lui	a2, 14
-	add	a0, a0, a1
-	addi	a1, a2, -161
+	zext.b	a0, a0
+	addi	a2, a2, -161
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

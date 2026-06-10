@@ -17,8 +17,8 @@ func00000000000000c1:
 	ret
 
 func00000000000001c1:
-	sraiw	a1, a1, 2
 	lui	a2, 524288
+	sraiw	a1, a1, 2
 	addi	a2, a2, -2
 	add	a1, a1, a2
 	slli	a1, a1, 33

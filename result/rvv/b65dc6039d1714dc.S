@@ -9,8 +9,8 @@ func0000000000000042:
 func0000000000000024:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
-	lui	a0, 16489
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, 16489
 	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
@@ -27,11 +27,11 @@ func0000000000000028:
 .LCPI3_0:
 	.quad	0x483d6329f1c35ca5
 func000000000000002b:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmfgt.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
@@ -48,8 +48,8 @@ func0000000000000025:
 func0000000000000022:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v8, v16
-	lui	a0, 66109
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, 66109
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
@@ -72,11 +72,11 @@ func000000000000002e:
 .LCPI8_0:
 	.quad	0x41dfffffffc00000
 func000000000000004c:
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	vmfge.vf	v0, v8, fa5
 	ret
 
@@ -92,8 +92,8 @@ func0000000000000043:
 func0000000000000023:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
-	lui	a0, 528581
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, 528581
 	slli.uw	a0, a0, 31
 	fmv.d.x	fa5, a0
 	vmfge.vf	v16, v8, fa5
@@ -111,19 +111,19 @@ func00000000000000a8:
 .LCPI12_0:
 	.quad	0x3ddb7cdfd9d7bdbb
 func000000000000002a:
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, %hi(.LCPI12_0)
+	fld	fa5, %lo(.LCPI12_0)(a0)
 	vmfle.vf	v0, v8, fa5
 	ret
 
 func0000000000000045:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
-	li	a0, 269
 	vmerge.vvm	v8, v16, v8, v0
+	li	a0, 269
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
@@ -188,9 +188,9 @@ func000000000000002c:
 	ret
 
 func0000000000000029:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
-	fmv.d.x	fa5, zero
 	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5

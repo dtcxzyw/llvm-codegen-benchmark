@@ -28,8 +28,8 @@ func000000000000302c:
 	and	a1, a1, a3
 	and	a2, a2, a3
 	snez	a2, a2
-	seqz	a1, a1
 	snez	a0, a0
+	seqz	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -67,8 +67,8 @@ func0000000000001184:
 	and	a1, a1, a4
 	and	a2, a2, a4
 	addi	a4, a3, -10
-	addi	a3, a3, -26
 	sltu	a2, a2, a4
+	addi	a3, a3, -26
 	addi	a1, a1, -45
 	sltu	a0, a0, a3
 	snez	a1, a1
@@ -80,13 +80,13 @@ func0000000000002108:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a0, a0, a3
-	and	a1, a1, a3
 	and	a2, a2, a3
+	and	a1, a1, a3
 	sltiu	a2, a2, 32
-	sltiu	a1, a1, 32
-	sltiu	a0, a0, 32
 	not	a2, a2
+	sltiu	a1, a1, 32
 	not	a1, a1
+	sltiu	a0, a0, 32
 	and	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1

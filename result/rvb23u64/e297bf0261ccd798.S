@@ -1,19 +1,19 @@
 func0000000000000001:
-	sext.w	a0, a0
 	li	a1, 16
+	sext.w	a0, a0
+	lui	a2, 1
 	max	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -1023
+	addi	a1, a2, -1023
 	min	a0, a0, a1
 	addi	a0, a0, -16
 	ret
 
 func0000000000000003:
-	sext.w	a0, a0
 	li	a1, 16
+	sext.w	a0, a0
+	lui	a2, 1
 	max	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -1023
+	addi	a1, a2, -1023
 	min	a0, a0, a1
 	addi	a0, a0, 47
 	ret

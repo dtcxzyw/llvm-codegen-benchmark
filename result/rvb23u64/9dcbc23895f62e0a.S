@@ -14,9 +14,9 @@ func000000000000000a:
 
 func00000000000000f4:
 	zext.h	a1, a1
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 16
 	sltiu	a0, a0, 17
@@ -40,9 +40,9 @@ func0000000000000298:
 
 func00000000000000f8:
 	zext.h	a1, a1
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 20
 	snez	a0, a0

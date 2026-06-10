@@ -9,11 +9,11 @@ func0000000000000024:
 
 func0000000000000004:
 	lui	a2, 1048304
+	lui	a3, 1048305
 	addw	a1, a1, a2
-	lui	a2, 1048305
-	addiw	a0, a0, -1
-	addi	a2, a2, -2048
+	addi	a2, a3, -2048
 	sltu	a1, a1, a2
+	addiw	a0, a0, -1
 	lui	a2, 272
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

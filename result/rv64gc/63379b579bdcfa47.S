@@ -3,8 +3,8 @@ func0000000000000031:
 	snez	a2, a2
 	or	a1, a1, a2
 	lui	a2, 1048064
-	addi	a2, a2, -3
 	andi	a1, a1, 1
+	addi	a2, a2, -3
 	slli	a1, a1, 21
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -14,13 +14,13 @@ func0000000000000005:
 	sext.w	a2, a2
 	lui	a3, 32
 	xor	a2, a2, a3
-	lui	a3, 1044736
-	addi	a3, a3, -1
 	seqz	a2, a2
 	or	a1, a1, a2
+	lui	a2, 1044736
 	andi	a1, a1, 1
+	addi	a2, a2, -1
 	slli	a1, a1, 20
-	and	a0, a0, a3
+	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

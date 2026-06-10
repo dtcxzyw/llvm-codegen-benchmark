@@ -10,9 +10,9 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	not	a2, a2
 	addiw	a1, a1, -255
 	snez	a1, a1
+	not	a2, a2
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -29,8 +29,8 @@ func0000000000000028:
 
 func0000000000000029:
 	sext.w	a1, a1
-	not	a2, a2
 	sgtz	a1, a1
+	not	a2, a2
 	neg	a1, a1
 	and	a1, a1, a2
 	addw	a0, a0, a1

@@ -1,7 +1,7 @@
 func0000000000000029:
+	li	a0, 513
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v10, v0
-	li	a0, 513
 	vmsltu.vx	v0, v9, a0
 	li	a0, 128
 	vmv.v.x	v9, a0

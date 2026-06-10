@@ -10,8 +10,8 @@ func000000000000042c:
 func0000000000000421:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 44
 	vmseq.vv	v9, v10, v12
+	li	a0, 44
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

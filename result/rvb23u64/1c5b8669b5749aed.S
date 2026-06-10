@@ -1,20 +1,20 @@
 func000000000000001a:
-	sub	a0, a0, a2
 	andi	a1, a1, -64
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
 
 func000000000000003e:
-	sub	a0, a0, a2
 	andi	a1, a1, -64
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
 
 func000000000000001b:
-	sub	a0, a0, a2
 	zext.h	a1, a1
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -37,8 +37,8 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
-	sub	a0, a0, a2
 	andi	a1, a1, -2048
+	sub	a0, a0, a2
 	bclri	a1, a1, 11
 	add	a0, a0, a1
 	addi	a0, a0, 1

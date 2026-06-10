@@ -14,38 +14,38 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	sext.w	a3, a0
-	andi	a1, a1, 1
+	andi	a3, a1, 1
+	sext.w	a1, a0
 	lui	a0, 512
-	beqz	a1, .LBB1_3
-	li	a1, 1
-	beq	a3, a1, .LBB1_4
+	beqz	a3, .LBB1_3
+	li	a2, 1
+	beq	a1, a2, .LBB1_4
 .LBB1_2:
 	ret
 .LBB1_3:
 	mv	a0, a2
-	li	a1, 1
-	bne	a3, a1, .LBB1_2
+	li	a2, 1
+	bne	a1, a2, .LBB1_2
 .LBB1_4:
 	li	a0, 512
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
 	andi	a3, a1, 1
-	lui	a1, 1048573
+	sext.w	a1, a0
+	lui	a0, 1048573
 	bnez	a3, .LBB2_3
 	li	a3, 8
-	blt	a3, a0, .LBB2_4
+	blt	a3, a1, .LBB2_4
 .LBB2_2:
 	mv	a0, a2
 	ret
 .LBB2_3:
-	addi	a2, a1, -1544
+	addi	a2, a0, -1544
 	li	a3, 8
-	bge	a3, a0, .LBB2_2
+	bge	a3, a1, .LBB2_2
 .LBB2_4:
-	addi	a0, a1, -1533
+	addi	a0, a0, -1533
 	ret
 
 func0000000000000004:

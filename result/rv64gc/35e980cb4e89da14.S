@@ -1,8 +1,8 @@
 func0000000000000038:
-	sext.w	a1, a1
 	lui	a3, 524288
 	addi	a3, a3, -1
 	xor	a2, a2, a3
+	sext.w	a1, a1
 	sext.w	a2, a2
 	bgeu	a2, a1, .LBB0_2
 	li	a0, -208
@@ -27,8 +27,8 @@ func0000000000000001:
 	ret
 
 func0000000000000048:
-	sext.w	a1, a1
 	lui	a3, 524288
+	sext.w	a1, a1
 	subw	a3, a3, a2
 	bgeu	a3, a1, .LBB3_2
 	lui	a0, 524288

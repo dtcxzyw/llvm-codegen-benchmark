@@ -7,8 +7,8 @@ func000000000000000b:
 	ret
 
 func0000000000000025:
-	zext.b	a1, a1
 	li	a2, 10
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB1_2
 	li	a1, -55
 	zext.b	a0, a0

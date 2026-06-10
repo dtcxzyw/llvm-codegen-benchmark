@@ -9,25 +9,25 @@ func000000000000000c:
 func000000000000002c:
 	addi	a1, a1, -35
 	srli	a1, a1, 1
+	lui	a2, 13
 	add	a0, a0, a1
-	lui	a1, 13
-	addi	a1, a1, -432
+	addi	a1, a2, -432
 	add	a0, a0, a1
 	ret
 
 func0000000000000073:
 	slli	a1, a1, 1
+	lui	a2, 150
 	add	a0, a0, a1
-	lui	a1, 150
-	addi	a1, a1, 772
+	addi	a1, a2, 772
 	add	a0, a0, a1
 	ret
 
 func000000000000007f:
 	slli	a1, a1, 1
+	lui	a2, 163
 	add	a0, a0, a1
-	lui	a1, 163
-	addi	a1, a1, -1276
+	addi	a1, a2, -1276
 	add	a0, a0, a1
 	ret
 

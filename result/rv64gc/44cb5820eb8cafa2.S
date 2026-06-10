@@ -61,8 +61,8 @@ func00000000000000f9:
 	ret
 
 func00000000000000f8:
-	srli	a1, a1, 3
 	lui	a2, 524288
+	srli	a1, a1, 3
 	addiw	a2, a2, -64
 	and	a1, a1, a2
 	addi	a0, a0, 64

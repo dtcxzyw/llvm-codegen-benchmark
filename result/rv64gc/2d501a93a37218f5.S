@@ -24,10 +24,10 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	andi	a0, a0, 1
 	sext.w	a2, a1
-	addiw	a1, a1, -9
+	andi	a0, a0, 1
 	slti	a2, a2, 10
+	addiw	a1, a1, -9
 	addiw	a2, a2, -1
 	and	a1, a1, a2
 	addi	a0, a0, -1

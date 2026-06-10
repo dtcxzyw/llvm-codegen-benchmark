@@ -57,8 +57,8 @@ func0000000000000034:
 func0000000000000078:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 12
-	lui	a0, 16
 	vmseq.vi	v0, v10, 0
+	lui	a0, 16
 	vadd.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

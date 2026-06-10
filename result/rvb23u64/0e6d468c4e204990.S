@@ -6,10 +6,10 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
-	bexti	a1, a0, 16
-	bclri	a0, a0, 31
-	add	a0, a0, a1
 	lui	a1, 8
+	bexti	a2, a0, 16
+	bclri	a0, a0, 31
+	add	a0, a0, a2
 	addi	a1, a1, -1
 	addw	a0, a0, a1
 	ret

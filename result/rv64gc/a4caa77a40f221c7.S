@@ -1,9 +1,9 @@
 func000000000000000b:
 	slliw	a1, a1, 24
+	lui	a2, 2
 	or	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 2
-	or	a0, a0, a1
+	addi	a2, a2, 2
+	or	a0, a0, a2
 	ret
 
 func000000000000000f:
@@ -24,9 +24,9 @@ func000000000000001f:
 func000000000000001e:
 	andi	a1, a1, 143
 	slli	a1, a1, 6
+	lui	a2, 14
 	or	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	or	a0, a0, a1
 	ret
 
@@ -47,10 +47,10 @@ func000000000000000c:
 
 func000000000000001b:
 	slliw	a1, a1, 25
+	lui	a2, 4608
 	or	a0, a0, a1
-	lui	a1, 4608
-	addi	a1, a1, -1
-	or	a0, a0, a1
+	addi	a2, a2, -1
+	or	a0, a0, a2
 	ret
 
 func0000000000000018:
@@ -63,10 +63,10 @@ func0000000000000018:
 func000000000000001c:
 	zext.b	a1, a1
 	slli	a1, a1, 16
+	li	a2, 3
 	or	a0, a0, a1
-	li	a1, 3
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 
 func000000000000000d:

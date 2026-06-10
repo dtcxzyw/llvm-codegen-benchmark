@@ -14,8 +14,8 @@ func0000000000000001:
 
 func0000000000000003:
 	slli	a1, a1, 63
-	andi	a0, a0, 1
 	srai	a1, a1, 63
+	andi	a0, a0, 1
 	and	a1, a1, a2
 	slli	a0, a0, 3
 	add	a0, a0, a1

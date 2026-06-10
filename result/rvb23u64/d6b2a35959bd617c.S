@@ -1,6 +1,6 @@
 func000000000000000a:
-	andi	a0, a0, 1
 	li	a3, 16
+	andi	a0, a0, 1
 	maxu	a2, a2, a3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

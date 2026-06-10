@@ -16,20 +16,20 @@ func000000000000002c:
 
 func0000000000000198:
 	slli	a0, a0, 48
-	slli	a1, a1, 55
 	srli	a0, a0, 48
-	srli	a1, a1, 63
+	slli	a1, a1, 55
 	sltiu	a0, a0, 256
+	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	slli	a0, a0, 48
 	lui	a2, 16
-	srli	a0, a0, 48
 	addi	a2, a2, -2
+	slli	a0, a0, 48
 	and	a1, a1, a2
+	srli	a0, a0, 48
 	addi	a1, a1, -6
 	seqz	a1, a1
 	sltiu	a0, a0, 2

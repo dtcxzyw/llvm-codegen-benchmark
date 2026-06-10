@@ -40,8 +40,8 @@ func0000000000000202:
 
 func0000000000001a02:
 	addi	a2, a2, 4
-	sltiu	a1, a1, 9
 	xor	a0, a0, a2
+	sltiu	a1, a1, 9
 	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -72,8 +72,8 @@ func0000000000001110:
 
 func0000000000001870:
 	addi	a2, a2, 128
-	sltiu	a0, a0, 15
 	xor	a1, a1, a2
+	sltiu	a0, a0, 15
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -112,8 +112,8 @@ func0000000000000118:
 
 func0000000000001a18:
 	addi	a2, a2, 40
-	sltiu	a1, a1, 2
 	xor	a0, a0, a2
+	sltiu	a1, a1, 2
 	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -128,8 +128,8 @@ func0000000000001b18:
 
 func0000000000001b10:
 	addi	a2, a2, 48
-	sltiu	a0, a0, 128
 	xor	a1, a1, a2
+	sltiu	a0, a0, 128
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

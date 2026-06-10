@@ -34,11 +34,11 @@ func0000000000000055:
 func00000000000000fd:
 	sh2add	a2, a1, a1
 	sh2add	a1, a2, a1
-	lui	a2, 1047932
 	add	a0, a0, a1
 	sh1add	a1, a0, a0
 	sh1add	a0, a1, a0
-	addi	a1, a2, -1692
+	lui	a1, 1047932
+	addi	a1, a1, -1692
 	sh2add	a0, a0, a1
 	sext.w	a0, a0
 	ret
@@ -54,11 +54,11 @@ func000000000000000d:
 func00000000000000c0:
 	sh2add	a2, a1, a1
 	sh2add	a1, a2, a1
-	lui	a2, 1047932
 	add	a0, a0, a1
 	sh1add	a1, a0, a0
 	sh1add	a0, a1, a0
-	addi	a1, a2, -1692
+	lui	a1, 1047932
+	addi	a1, a1, -1692
 	sh2add	a0, a0, a1
 	sext.w	a0, a0
 	ret

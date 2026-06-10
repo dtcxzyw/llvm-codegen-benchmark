@@ -1,15 +1,15 @@
 func0000000000000000:
 	fli.s	fa5, 3.0
-	lui	a0, 263035
 	fneg.s	fa5, fa5
-	addi	a0, a0, -492
+	lui	a0, 263035
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v8, fa5
+	addi	a0, a0, -492
 	fmv.w.x	fa5, a0
-	lui	a0, 780493
-	addi	a0, a0, -819
 	vfadd.vf	v12, v12, fa5
+	lui	a0, 780493
 	vfmul.vv	v8, v12, v8
+	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	vfadd.vf	v8, v8, fa5
 	ret

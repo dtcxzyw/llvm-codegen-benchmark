@@ -6,23 +6,23 @@ func00000000000000a4:
 	ret
 
 func00000000000000aa:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srai	a1, a1, 48
 	slt	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	slli	a1, a1, 35
+	sext.w	a0, a0
 	srai	a1, a1, 51
 	slt	a0, a1, a0
 	ret
 
 func00000000000000a6:
-	sext.w	a0, a0
 	slli	a1, a1, 56
+	sext.w	a0, a0
 	srai	a1, a1, 56
 	slt	a0, a0, a1
 	ret

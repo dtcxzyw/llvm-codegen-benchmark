@@ -1,17 +1,17 @@
 func0000000000000028:
-	slli	a1, a0, 4
-	srli	a0, a0, 60
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 60
+	seqz	a1, a1
+	slli	a0, a0, 4
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ori	a0, a0, 8
 	ret
 
 func00000000000000a8:
-	slli	a1, a0, 7
-	srli	a0, a0, 57
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 57
+	seqz	a1, a1
+	slli	a0, a0, 7
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ori	a0, a0, 16
 	ret
@@ -34,10 +34,10 @@ func0000000000000021:
 	ret
 
 func00000000000000e8:
-	slli	a1, a0, 3
-	srli	a0, a0, 60
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 60
+	seqz	a1, a1
+	slli	a0, a0, 3
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ori	a0, a0, 5
 	ret

@@ -1,25 +1,28 @@
 func0000000000000015:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v8, v10
 	li	a0, 168
-	vmv.v.x	v8, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vv	v8, v8, v10
 	li	a0, 7
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func000000000000001f:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v8, v10
-	vmv.v.i	v8, 14
+	vmv.v.i	v12, 14
+	vadd.vv	v8, v8, v10
 	li	a0, 14
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000010:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v8, v10
-	vmv.v.i	v8, 5
+	vmv.v.i	v12, 5
+	vadd.vv	v8, v8, v10
 	li	a0, 5
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 

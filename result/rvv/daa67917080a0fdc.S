@@ -37,9 +37,9 @@ func0000000000000301:
 func0000000000000308:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsle.vi	v0, v12, -1
-	li	a0, -40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
+	li	a0, -40
 	vadd.vx	v8, v8, a0
 	li	a0, -24
 	vmsltu.vx	v0, v8, a0
@@ -48,9 +48,9 @@ func0000000000000308:
 func0000000000000508:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsle.vi	v0, v12, -1
-	li	a0, -40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v8, v10, v0
+	li	a0, -40
 	vadd.vx	v8, v8, a0
 	li	a0, -24
 	vmsltu.vx	v0, v8, a0

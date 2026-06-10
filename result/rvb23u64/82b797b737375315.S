@@ -1,7 +1,7 @@
 func000000000000001f:
 	addiw	a2, a2, -1
-	slliw	a1, a1, 21
 	seqz	a2, a2
+	slliw	a1, a1, 21
 	slli	a2, a2, 18
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -9,8 +9,8 @@ func000000000000001f:
 
 func0000000000000010:
 	sext.w	a2, a2
-	slliw	a1, a1, 16
 	snez	a2, a2
+	slliw	a1, a1, 16
 	slli	a2, a2, 22
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -18,8 +18,8 @@ func0000000000000010:
 
 func000000000000001e:
 	sext.w	a2, a2
-	slliw	a1, a1, 13
 	snez	a2, a2
+	slliw	a1, a1, 13
 	slli	a2, a2, 15
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -27,8 +27,8 @@ func000000000000001e:
 
 func0000000000000012:
 	addiw	a2, a2, -13
-	slliw	a1, a1, 16
 	seqz	a2, a2
+	slliw	a1, a1, 16
 	slli	a2, a2, 15
 	or	a0, a0, a1
 	or	a0, a0, a2

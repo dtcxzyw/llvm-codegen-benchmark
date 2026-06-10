@@ -1,7 +1,7 @@
 func000000000000000b:
 	slli	a2, a2, 48
-	slli	a0, a0, 2
 	srai	a2, a2, 48
+	slli	a0, a0, 2
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -16,8 +16,8 @@ func000000000000000a:
 
 func0000000000000000:
 	slli	a2, a2, 48
-	slli	a0, a0, 3
 	srai	a2, a2, 48
+	slli	a0, a0, 3
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2

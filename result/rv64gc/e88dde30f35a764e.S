@@ -52,8 +52,8 @@ func00000000000000a3:
 	ret
 
 func0000000000000023:
-	sext.w	a1, a1
 	li	a2, 254
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB5_2
 	li	a1, 4
 	srliw	a0, a0, 3
@@ -66,8 +66,8 @@ func0000000000000023:
 	ret
 
 func00000000000000a2:
-	sext.w	a1, a1
 	li	a2, 62
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB6_2
 	li	a1, 193
 	srliw	a0, a0, 1

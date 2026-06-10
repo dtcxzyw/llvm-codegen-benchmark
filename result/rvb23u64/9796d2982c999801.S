@@ -5,9 +5,9 @@ func000000000000018c:
 	ret
 
 func000000000000010c:
+	lui	a3, 2
 	sub	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, 1808
+	addi	a2, a3, 1808
 	sltu	a1, a2, a1
 	czero.eqz	a0, a1, a0
 	ret

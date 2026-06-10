@@ -1,7 +1,7 @@
 func0000000000000002:
-	andi	a0, a0, 1
 	fmv.d.x	fa4, zero
 	flt.d	a1, fa0, fa4
+	andi	a0, a0, 1
 	fli.d	fa5, -1.0
 	beqz	a1, .LBB0_3
 	fli.d	fa0, 1.0

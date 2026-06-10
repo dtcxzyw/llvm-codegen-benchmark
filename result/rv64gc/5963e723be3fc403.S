@@ -6,8 +6,8 @@ func000000000000003f:
 	ret
 
 func000000000000002f:
-	zext.b	a2, a2
 	slli	a1, a1, 32
+	zext.b	a2, a2
 	srli	a1, a1, 32
 	mul	a1, a1, a2
 	add	a0, a0, a1

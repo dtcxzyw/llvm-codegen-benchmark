@@ -1,67 +1,75 @@
 func0000000000000018:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
 	li	a0, -24
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vv	v8, v8, v10
 	li	a0, 24
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func000000000000003f:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
 	li	a0, 40
-	vmv.v.x	v8, a0
-	vmacc.vx	v8, a0, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vv	v8, v8, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000020:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
-	vmv.v.i	v8, 3
+	vmv.v.i	v12, 3
+	vadd.vv	v8, v8, v10
 	li	a0, 3
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
-	vmv.v.i	v8, 12
+	vmv.v.i	v12, 12
+	vadd.vv	v8, v8, v10
 	li	a0, 12
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
-	vmv.v.i	v8, 2
+	vmv.v.i	v12, 2
+	vadd.vv	v8, v8, v10
 	li	a0, 153
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
 	li	a0, -48
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vv	v8, v8, v10
 	li	a0, 10
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000035:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
-	vmv.v.i	v8, 1
+	vmv.v.i	v12, 1
+	vadd.vv	v8, v8, v10
 	li	a0, 3
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func000000000000000f:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v10, v8, v10
 	li	a0, 640
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vv	v8, v8, v10
 	li	a0, 120
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 

@@ -8,10 +8,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
+	li	a1, 128
 	andi	a0, a0, -128
-	sext.w	a1, a0
-	li	a2, 128
-	bne	a1, a2, .LBB1_2
+	sext.w	a2, a0
+	bne	a2, a1, .LBB1_2
 	li	a0, 256
 .LBB1_2:
 	slli	a0, a0, 32

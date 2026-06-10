@@ -6,9 +6,9 @@ func000000000000001f:
 
 func000000000000001e:
 	slli	a1, a1, 8
+	lui	a2, 8
 	or	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	ret
 

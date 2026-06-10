@@ -9,8 +9,8 @@ func00000000000000a1:
 .LCPI1_0:
 	.quad	768614336404564650
 func00000000000000a8:
-	sext.w	a1, a1
 	lui	a2, %hi(.LCPI1_0)
+	sext.w	a1, a1
 	ld	a2, %lo(.LCPI1_0)(a2)
 	seqz	a1, a1
 	xori	a1, a1, 5
@@ -19,8 +19,8 @@ func00000000000000a8:
 	ret
 
 func0000000000000088:
-	sext.w	a1, a1
 	lui	a2, 3
+	sext.w	a1, a1
 	addi	a2, a2, -1339
 	xor	a1, a1, a2
 	seqz	a1, a1

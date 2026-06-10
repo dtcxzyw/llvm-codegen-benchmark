@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.w	a1, a1
 	ori	a2, a2, 513
+	sext.w	a1, a1
 	bseti	a2, a2, 16
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -8,8 +8,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	sext.w	a1, a1
 	lui	a3, 524288
+	sext.w	a1, a1
 	or	a2, a2, a3
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
@@ -34,10 +34,10 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	sext.w	a1, a1
-	ori	a2, a2, 128
 	lui	a3, 8192
+	sext.w	a1, a1
 	addi	a3, a3, -1
+	ori	a2, a2, 128
 	slt	a1, a3, a1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
@@ -62,41 +62,41 @@ func0000000000000006:
 	ret
 
 func0000000000000028:
-	sext.w	a1, a1
 	lui	a3, 5
+	sext.w	a1, a1
 	addi	a3, a3, 1028
-	sltiu	a1, a1, 3
 	or	a2, a2, a3
+	sltiu	a1, a1, 3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	li	a3, 21
+	sext.w	a1, a1
 	slli	a3, a3, 10
-	sltiu	a1, a1, 16
 	or	a2, a2, a3
+	sltiu	a1, a1, 16
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000014:
-	sext.w	a1, a1
 	lui	a3, 5
+	sext.w	a1, a1
 	addi	a3, a3, 1028
-	sltiu	a1, a1, 16
 	or	a2, a2, a3
+	sltiu	a1, a1, 16
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
-	ori	a2, a2, 48
 	srliw	a1, a1, 6
+	ori	a2, a2, 48
 	sltiu	a1, a1, 625
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

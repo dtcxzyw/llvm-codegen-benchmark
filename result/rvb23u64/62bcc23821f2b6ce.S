@@ -1,7 +1,7 @@
 func0000000000000000:
-	fsub.s	fa5, fa2, fa1
 	lui	a0, 257087
 	addi	a0, a0, -235
+	fsub.s	fa5, fa2, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 260724
 	addi	a0, a0, -651

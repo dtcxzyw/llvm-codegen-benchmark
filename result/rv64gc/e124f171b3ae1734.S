@@ -7,8 +7,8 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	andi	a1, a1, 7
 	li	a2, 3
+	andi	a1, a1, 7
 	bltu	a1, a2, .LBB1_2
 	li	a0, 7
 .LBB1_2:
@@ -23,8 +23,8 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 248
 	li	a2, 8
+	andi	a1, a1, 248
 	bltu	a2, a1, .LBB3_2
 	li	a0, 8
 .LBB3_2:

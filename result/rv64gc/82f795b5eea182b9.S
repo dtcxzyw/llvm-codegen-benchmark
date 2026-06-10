@@ -24,8 +24,8 @@ func0000000000000c24:
 
 func0000000000000d84:
 	addi	a2, a2, 130
-	srli	a0, a0, 32
 	xor	a1, a1, a2
+	srli	a0, a0, 32
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -40,8 +40,8 @@ func0000000000000094:
 
 func0000000000000c28:
 	addi	a2, a2, 24
-	sltiu	a0, a0, 9
 	xor	a1, a1, a2
+	sltiu	a0, a0, 9
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -96,8 +96,8 @@ func0000000000000d05:
 
 func0000000000000d01:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 6
 	xor	a0, a0, a2
+	sltiu	a1, a1, 6
 	seqz	a0, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1

@@ -1,9 +1,9 @@
 func0000000000000084:
 	sext.w	a1, a1
-	addiw	a2, a2, -256
 	lui	a3, 16
-	seqz	a2, a2
+	addiw	a2, a2, -256
 	addi	a3, a3, -512
+	seqz	a2, a2
 	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a2
@@ -29,9 +29,9 @@ func0000000000002318:
 	ret
 
 func0000000000000630:
-	xori	a2, a2, 8
 	lui	a3, 1
 	addi	a3, a3, -1551
+	xori	a2, a2, 8
 	xor	a1, a1, a3
 	or	a1, a1, a2
 	sext.w	a1, a1

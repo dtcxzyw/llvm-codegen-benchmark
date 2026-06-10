@@ -1,6 +1,6 @@
 func000000000000032b:
-	slt	a2, a1, a2
 	srli	a3, a1, 63
+	slt	a2, a1, a2
 	not	a3, a3
 	and	a2, a2, a3
 	bnez	a2, .LBB0_2

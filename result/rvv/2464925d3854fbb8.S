@@ -1,8 +1,8 @@
 func0000000000000008:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfeq.vf	v0, v12, fa5
 	ret
 
@@ -16,18 +16,18 @@ func0000000000000012:
 	ret
 
 func0000000000000004:
-	fli.s	fa5, 4.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fli.s	fa5, 4.0
 	vmfgt.vf	v0, v12, fa5
 	ret
 
 func0000000000000014:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfgt.vf	v0, v12, fa5
 	ret
 
@@ -51,10 +51,10 @@ func0000000000000013:
 	ret
 
 func0000000000000018:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfeq.vf	v0, v12, fa5
 	ret
 
@@ -69,10 +69,10 @@ func000000000000001b:
 	ret
 
 func0000000000000017:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfne.vf	v0, v12, fa5
 	ret
 
@@ -88,9 +88,9 @@ func0000000000000015:
 
 func0000000000000005:
 	lui	a0, 212332
+	addi	a0, a0, -107
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
-	addi	a0, a0, -107
 	vfmacc.vv	v12, v8, v8
 	fmv.w.x	fa5, a0
 	vmfle.vf	v8, v12, fa5
@@ -98,26 +98,26 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfne.vf	v0, v12, fa5
 	ret
 
 func0000000000000038:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfeq.vf	v0, v12, fa5
 	ret
 
 func0000000000000035:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfle.vf	v8, v12, fa5
 	vmnot.m	v0, v8
 	ret
@@ -133,10 +133,10 @@ func000000000000001d:
 	ret
 
 func0000000000000003:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v12, v12, v16
 	vfmacc.vv	v12, v8, v8
+	fmv.w.x	fa5, zero
 	vmfge.vf	v8, v12, fa5
 	vmnot.m	v0, v8
 	ret

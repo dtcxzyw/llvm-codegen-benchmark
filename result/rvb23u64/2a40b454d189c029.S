@@ -13,9 +13,9 @@ func000000000000006a:
 	ret
 
 func0000000000000061:
-	sext.w	a0, a0
 	sh2add	a2, a2, a2
 	sh3add	a1, a2, a1
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 

@@ -7,9 +7,9 @@ func0000000000000000:
 	ret
 
 func0000000000000008:
+	lui	a2, 559241
 	subw	a0, a0, a1
-	lui	a1, 559241
-	addi	a1, a1, -1911
+	addi	a1, a2, -1911
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1

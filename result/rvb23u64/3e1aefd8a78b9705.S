@@ -11,9 +11,9 @@ func0000000000000005:
 func0000000000000006:
 	zext.w	a1, a1
 	slli	a0, a0, 16
+	lui	a2, 65541
 	or	a0, a0, a1
-	lui	a1, 65541
-	addi	a1, a1, 768
+	addi	a1, a2, 768
 	xor	a0, a0, a1
 	ret
 

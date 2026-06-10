@@ -40,9 +40,9 @@ func000000000000002c:
 
 func0000000000000028:
 	andi	a2, a2, 248
+	addi	a2, a2, -240
 	sub	a0, a0, a1
-	addi	a1, a2, -240
-	seqz	a1, a1
+	seqz	a1, a2
 	sltiu	a0, a0, 4
 	andn	a0, a1, a0
 	ret

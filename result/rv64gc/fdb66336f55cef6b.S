@@ -1,6 +1,6 @@
 func000000000000003c:
-	slli	a0, a0, 16
 	lui	a1, 8192
+	slli	a0, a0, 16
 	addw	a0, a0, a1
 	ret
 
@@ -10,8 +10,8 @@ func0000000000000014:
 	ret
 
 func000000000000003f:
-	slli	a0, a0, 12
 	lui	a1, 65537
+	slli	a0, a0, 12
 	addw	a0, a0, a1
 	ret
 

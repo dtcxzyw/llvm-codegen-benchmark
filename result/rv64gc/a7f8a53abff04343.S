@@ -1,7 +1,7 @@
 func0000000000000001:
-	slli	a0, a0, 32
 	lui	a1, 596523
 	addi	a1, a1, 965
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	lui	a1, 699051
@@ -10,22 +10,22 @@ func0000000000000001:
 	mul	a0, a0, a1
 	slliw	a1, a0, 29
 	srliw	a0, a0, 3
+	lui	a2, 43691
 	or	a0, a0, a1
-	lui	a1, 43691
-	addi	a1, a1, -1365
+	addi	a1, a2, -1365
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000014:
-	slli	a0, a0, 32
 	lui	a1, 559241
-	lui	a2, 34953
 	addi	a1, a1, -1911
-	addi	a2, a2, -1911
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
+	lui	a1, 34953
 	srli	a0, a0, 37
-	mul	a1, a0, a2
+	addi	a1, a1, -1911
+	mul	a1, a0, a1
 	srli	a1, a1, 33
 	slli	a2, a1, 6
 	slli	a1, a1, 2

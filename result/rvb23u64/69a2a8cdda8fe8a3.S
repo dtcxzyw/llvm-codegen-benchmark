@@ -8,8 +8,8 @@ func000000000000030c:
 
 func000000000000030f:
 	addi	a2, a2, 96
-	sext.w	a1, a1
 	czero.nez	a2, a2, a0
+	sext.w	a1, a1
 	or	a0, a0, a2
 	slli	a1, a1, 4
 	add	a0, a0, a1

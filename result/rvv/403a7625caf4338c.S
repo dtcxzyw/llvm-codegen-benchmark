@@ -1,8 +1,8 @@
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfabs.v	v8, v8
 	fli.s	fa5, 0.25
 	fneg.s	fa5, fa5
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfabs.v	v8, v8
 	vfadd.vf	v8, v8, fa5
 	ret
 

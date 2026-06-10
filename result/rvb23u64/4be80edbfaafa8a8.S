@@ -1,7 +1,7 @@
 func000000000000003d:
 	lui	a3, 666643
-	slli	a2, a2, 43
 	slli.uw	a3, a3, 9
+	slli	a2, a2, 43
 	mulhu	a2, a2, a3
 	sub	a0, a1, a0
 	add	a0, a0, a2

@@ -15,9 +15,9 @@ func0000000000000021:
 
 func0000000000000181:
 	li	a2, 1
-	addiw	a0, a0, -11
 	slli	a2, a2, 11
 	and	a1, a1, a2
+	addiw	a0, a0, -11
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

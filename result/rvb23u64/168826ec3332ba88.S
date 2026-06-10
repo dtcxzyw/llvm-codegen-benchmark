@@ -3,10 +3,10 @@ func0000000000000044:
 	slli	a1, a1, 3
 	addi	a1, a1, 39
 	andi	a1, a1, -16
+	li	a2, -29
 	add	a0, a0, a1
-	li	a1, -29
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
+	srli	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000041:

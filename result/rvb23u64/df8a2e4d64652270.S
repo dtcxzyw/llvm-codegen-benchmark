@@ -6,11 +6,11 @@ func0000000000000022:
 	ret
 
 func0000000000000024:
-	fli.d	fa5, 1.0
-	fmin.d	fa5, fa1, fa5
-	fmv.d.x	fa4, zero
-	fmax.d	fa4, fa0, fa4
-	fsub.d	fa0, fa4, fa5
+	fmv.d.x	fa5, zero
+	fli.d	fa4, 1.0
+	fmin.d	fa4, fa1, fa4
+	fmax.d	fa5, fa0, fa5
+	fsub.d	fa0, fa5, fa4
 	ret
 
 func00000000000000cc:

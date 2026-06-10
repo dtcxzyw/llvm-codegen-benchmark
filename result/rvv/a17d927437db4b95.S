@@ -18,8 +18,8 @@ func0000000000000108:
 func0000000000000b0c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 48
 	vmsle.vi	v9, v10, 5
+	li	a0, 48
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
@@ -28,8 +28,8 @@ func0000000000000b0c:
 func0000000000000308:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -93
 	vmsleu.vi	v9, v10, 1
+	li	a0, -93
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

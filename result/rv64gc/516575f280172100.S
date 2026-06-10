@@ -1,8 +1,8 @@
 func0000000000000426:
 	li	a3, -15
-	addw	a0, a0, a1
 	slli	a3, a3, 31
 	and	a2, a2, a3
+	addw	a0, a0, a1
 	seqz	a1, a2
 	slti	a0, a0, 8
 	and	a0, a0, a1

@@ -14,8 +14,8 @@ func0000000000000042:
 func0000000000000003:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v9, v0
-	lui	a0, 2
 	vmseq.vi	v0, v10, 0
+	lui	a0, 2
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -28,8 +28,8 @@ func0000000000000003:
 func0000000000000002:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v9, v0
-	li	a0, 512
 	vmseq.vi	v0, v10, 0
+	li	a0, 512
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0

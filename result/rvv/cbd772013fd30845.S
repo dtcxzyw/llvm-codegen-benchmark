@@ -15,12 +15,12 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v10, v10, 24
 	li	a0, -26
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
+	vsra.vi	v8, v10, 24
 	li	a0, 90
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000006:

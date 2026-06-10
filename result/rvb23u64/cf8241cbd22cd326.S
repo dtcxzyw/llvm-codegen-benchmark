@@ -17,8 +17,8 @@ func0000000000000021:
 
 func0000000000000101:
 	sub	a1, a1, a2
-	addiw	a0, a0, -32
 	srliw	a1, a1, 2
+	addiw	a0, a0, -32
 	slli	a1, a1, 2
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1

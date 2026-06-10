@@ -8,8 +8,8 @@ func000000000000007b:
 
 func000000000000007a:
 	add	a0, a0, a1
-	lui	a1, 4112
 	addi	a0, a0, 2
+	lui	a1, 4112
 	srliw	a0, a0, 2
 	addi	a1, a1, 257
 	mulw	a0, a0, a1

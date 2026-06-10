@@ -6,8 +6,8 @@ func000000000000007f:
 	ret
 
 func000000000000003f:
-	add.uw	a0, a2, a0
 	srliw	a1, a1, 2
+	add.uw	a0, a2, a0
 	sh2add	a0, a1, a0
 	addi	a0, a0, 3
 	ret

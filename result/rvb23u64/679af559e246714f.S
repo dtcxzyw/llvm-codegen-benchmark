@@ -6,39 +6,39 @@ func0000000000000981:
 	ret
 
 func000000000000098c:
-	sext.w	a0, a0
 	srl	a1, a1, a2
+	sext.w	a0, a0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000d8c:
-	sext.w	a0, a0
 	srl	a1, a1, a2
+	sext.w	a0, a0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000881:
-	sext.w	a0, a0
 	bext	a1, a1, a2
+	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000d81:
-	sext.w	a0, a0
 	srl	a1, a1, a2
+	sext.w	a0, a0
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000d84:
+	lui	a3, 262144
 	sext.w	a0, a0
+	addi	a3, a3, -1
 	srl	a1, a1, a2
-	lui	a2, 262144
-	addi	a2, a2, -1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret
 

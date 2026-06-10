@@ -1,7 +1,7 @@
 func00000000000000ff:
 	sh1add	a0, a0, a1
-	lui	a1, 786432
 	slli	a0, a0, 2
+	lui	a1, 786432
 	addi	a0, a0, 7
 	srli	a1, a1, 27
 	and	a0, a0, a1

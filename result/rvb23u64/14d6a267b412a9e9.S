@@ -7,8 +7,8 @@ func000000000000003b:
 	ret
 
 func000000000000007f:
-	addi	a2, a2, 7
 	bseti	a3, zero, 34
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a2
@@ -41,16 +41,16 @@ func000000000000000f:
 func0000000000000010:
 	addi	a2, a2, 16
 	lui	a3, 131072
-	sext.w	a1, a1
 	addi	a3, a3, -16
+	sext.w	a1, a1
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func000000000000006f:
-	addi	a2, a2, 63
 	bseti	a3, zero, 33
+	addi	a2, a2, 63
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	add	a0, a0, a2

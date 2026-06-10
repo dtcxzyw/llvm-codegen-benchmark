@@ -4,8 +4,8 @@ func000000000000001c:
 	vand.vx	v12, v10, a0
 	li	a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v10, v12
 	vmul.vx	v8, v8, a0
+	vzext.vf8	v10, v12
 	vsll.vv	v8, v10, v8
 	ret
 
@@ -15,8 +15,8 @@ func000000000000001f:
 	vand.vx	v12, v10, a0
 	li	a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v10, v12
 	vmul.vx	v8, v8, a0
+	vzext.vf8	v10, v12
 	vsll.vv	v8, v10, v8
 	ret
 
@@ -26,8 +26,8 @@ func0000000000000004:
 	vand.vx	v12, v10, a0
 	li	a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v10, v12
 	vmul.vx	v8, v8, a0
+	vzext.vf8	v10, v12
 	vsll.vv	v8, v10, v8
 	ret
 

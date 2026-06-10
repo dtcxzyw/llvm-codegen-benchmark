@@ -30,8 +30,8 @@ func0000000000000002:
 	vmv.v.i	v11, 0
 	vmv1r.v	v0, v9
 	vmerge.vim	v9, v11, 1, v0
-	vadd.vv	v9, v9, v9
 	vmv1r.v	v0, v10
+	vadd.vv	v9, v9, v9
 	vmerge.vim	v9, v9, 3, v0
 	vadd.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma

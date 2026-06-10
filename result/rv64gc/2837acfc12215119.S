@@ -8,12 +8,12 @@ func0000000000000101:
 
 func0000000000000104:
 	slli	a1, a1, 32
-	lui	a2, 950920
 	srli	a1, a1, 32
 	mul	a0, a0, a1
-	addi	a1, a2, -1025
-	add	a0, a0, a1
-	addi	a1, a2, -1024
+	lui	a1, 950920
+	addi	a2, a1, -1025
+	add	a0, a0, a2
+	addi	a1, a1, -1024
 	sltu	a0, a0, a1
 	ret
 

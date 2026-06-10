@@ -8,9 +8,9 @@ func000000000000000f:
 func000000000000000e:
 	lui	a2, 1048448
 	slli	a0, a0, 3
+	lui	a3, 128
 	and	a1, a1, a2
-	lui	a2, 128
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

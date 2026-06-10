@@ -75,8 +75,8 @@ func0000000000001090:
 	li	a0, -37
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, 32
 	vmsleu.vi	v12, v10, -7
+	li	a0, 32
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v12, v10
 	vmor.mm	v0, v8, v0

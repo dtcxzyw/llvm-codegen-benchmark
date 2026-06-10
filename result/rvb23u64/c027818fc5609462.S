@@ -30,9 +30,9 @@ func000000000000001c:
 
 func000000000000003c:
 	addi	a1, a1, -1
+	lui	a2, 1
 	add.uw	a0, a1, a0
-	lui	a1, 1
-	addi	a1, a1, 291
+	addi	a1, a2, 291
 	add	a0, a0, a1
 	ret
 

@@ -1,15 +1,15 @@
 func0000000000000000:
-	slli	a2, a1, 9
-	slli	a0, a0, 63
-	lui	a3, 8176
+	lui	a2, 8176
+	slli	a3, a1, 9
+	lui	a4, 786930
 	and	a2, a2, a3
-	lui	a3, 786930
+	addi	a4, a4, -1
+	slli	a0, a0, 63
+	slli	a4, a4, 16
 	srai	a0, a0, 63
-	addi	a3, a3, -1
+	addi	a3, a4, 127
 	and	a0, a0, a2
-	slli	a3, a3, 16
-	addi	a2, a3, 127
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

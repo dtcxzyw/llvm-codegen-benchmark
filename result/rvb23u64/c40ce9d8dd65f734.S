@@ -1,8 +1,8 @@
 func00000000000000a1:
+	li	a3, 56
 	sub	a1, a1, a2
-	li	a2, 56
+	bseti	a2, a3, 63
 	srli	a1, a1, 2
-	bseti	a2, a2, 63
 	xor	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret

@@ -56,10 +56,10 @@ func0000000000000011:
 
 func0000000000000007:
 	slli	a1, a1, 9
+	li	a2, 9
 	add	a0, a0, a1
-	li	a1, 9
-	slli	a1, a1, 11
-	add	a0, a0, a1
+	slli	a2, a2, 11
+	add	a0, a0, a2
 	ret
 
 func000000000000000a:

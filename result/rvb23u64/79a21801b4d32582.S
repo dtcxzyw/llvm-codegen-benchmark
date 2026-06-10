@@ -1,9 +1,9 @@
 func0000000000000014:
 	fli.d	fa5, -1.0
-	lui	a1, 15621
 	fadd.d	fa5, fa0, fa5
-	slli	a1, a1, 36
+	lui	a1, 15621
 	fabs.d	fa5, fa5
+	slli	a1, a1, 36
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4
 	or	a0, a0, a1
@@ -11,10 +11,10 @@ func0000000000000014:
 
 func0000000000000036:
 	fli.d	fa5, -1.0
-	li	a1, 971
 	fadd.d	fa5, fa0, fa5
-	slli	a1, a1, 52
+	li	a1, 971
 	fabs.d	fa5, fa5
+	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa4, fa5
 	xori	a1, a1, 1
@@ -23,10 +23,10 @@ func0000000000000036:
 
 func0000000000000016:
 	fli.d	fa5, -1.0
-	li	a1, 971
 	fadd.d	fa5, fa0, fa5
-	slli	a1, a1, 52
+	li	a1, 971
 	fabs.d	fa5, fa5
+	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa4, fa5
 	xori	a1, a1, 1

@@ -1,8 +1,8 @@
 func000000000000000a:
 	li	a2, 1
+	lui	a3, 15
 	sll	a1, a2, a1
-	lui	a2, 15
-	addi	a2, a2, -640
+	addi	a2, a3, -640
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

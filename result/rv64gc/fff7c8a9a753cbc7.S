@@ -8,10 +8,10 @@ func0000000000000001:
 func000000000000000c:
 	li	a3, 255
 	slli	a3, a3, 32
+	li	a4, 1
 	and	a2, a2, a3
-	li	a3, 1
-	slli	a3, a3, 33
-	beq	a2, a3, .LBB1_2
+	slli	a4, a4, 33
+	beq	a2, a4, .LBB1_2
 	andi	a0, a1, 1
 .LBB1_2:
 	ret

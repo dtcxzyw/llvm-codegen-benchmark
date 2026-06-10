@@ -27,8 +27,8 @@ func0000000000000048:
 	li	a0, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v12, v12, a0
-	bseti	a0, zero, 62
 	vmseq.vv	v14, v10, v12
+	bseti	a0, zero, 62
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

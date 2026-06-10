@@ -7,8 +7,8 @@ func000000000000003f:
 
 func000000000000007f:
 	zext.h	a2, a2
-	sext.w	a1, a1
 	sh1add	a2, a2, a2
+	sext.w	a1, a1
 	sh1add	a0, a2, a0
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0

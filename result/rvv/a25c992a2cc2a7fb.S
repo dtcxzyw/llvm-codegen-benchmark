@@ -1,9 +1,9 @@
 func000000000000018c:
 	lui	a0, 1
 	addi	a1, a0, -991
-	addi	a0, a0, -1279
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v10, v8, a1
+	addi	a0, a0, -1279
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

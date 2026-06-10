@@ -19,9 +19,9 @@ func0000000000000005:
 	ret
 
 func0000000000000002:
-	slli	a0, a0, 22
 	lui	a1, 393217
 	slli	a1, a1, 1
+	slli	a0, a0, 22
 	addi	a1, a1, 5
 	or	a0, a0, a1
 	ret
@@ -38,8 +38,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	slli	a0, a0, 1
 	li	a1, -1
+	slli	a0, a0, 1
 	slli	a1, a1, 58
 	or	a0, a0, a1
 	ret

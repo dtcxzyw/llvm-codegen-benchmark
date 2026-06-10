@@ -19,8 +19,8 @@ func000000000000007e:
 	ret
 
 func000000000000005e:
-	sext.w	a1, a1
 	slli	a0, a0, 32
+	sext.w	a1, a1
 	srli	a0, a0, 32
 	mul	a0, a0, a1
 	addi	a0, a0, 7

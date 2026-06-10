@@ -26,9 +26,9 @@ func000000000000000b:
 	ret
 
 func0000000000000008:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -1
-	bseti	a0, zero, 32
 	vadd.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

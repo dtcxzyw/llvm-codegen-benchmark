@@ -1,18 +1,18 @@
 func0000000000000001:
 	lui	a2, 804435
 	addi	a2, a2, 1536
+	li	a3, 1000
 	mul	a1, a1, a2
-	li	a2, 1000
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func000000000000010c:
-	sh2add	a1, a1, a1
 	sh2add	a2, a0, a0
-	slli	a1, a1, 4
+	sh2add	a1, a1, a1
 	sh1add	a0, a2, a0
+	slli	a1, a1, 4
 	slli	a0, a0, 3
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -20,8 +20,8 @@ func000000000000010c:
 
 func0000000000000045:
 	sh2add	a2, a1, a1
-	sh2add	a0, a0, a0
 	sh1add	a1, a2, a1
+	sh2add	a0, a0, a0
 	slli	a1, a1, 3
 	slli	a0, a0, 4
 	sltu	a0, a1, a0
@@ -31,9 +31,9 @@ func0000000000000045:
 func00000000000000a6:
 	lui	a2, 21094
 	addi	a2, a2, -1024
+	li	a3, 1000
 	mul	a1, a1, a2
-	li	a2, 1000
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	slt	a0, a0, a1
 	ret
 
@@ -57,10 +57,10 @@ func0000000000000004:
 	ret
 
 func0000000000000184:
+	sh2add	a0, a0, a0
 	sh2add	a1, a1, a1
 	sh2add	a0, a0, a0
 	slli	a1, a1, 3
-	sh2add	a0, a0, a0
 	slli	a0, a0, 2
 	sltu	a0, a0, a1
 	ret
@@ -75,10 +75,10 @@ func0000000000000109:
 	ret
 
 func0000000000000101:
-	sh1add	a1, a1, a1
 	li	a2, 280
-	slli	a1, a1, 3
 	mul	a0, a0, a2
+	sh1add	a1, a1, a1
+	slli	a1, a1, 3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -101,9 +101,9 @@ func00000000000000a8:
 
 func0000000000000048:
 	sh1add	a2, a1, a1
+	sh1add	a3, a0, a0
 	sh1add	a1, a2, a1
-	sh1add	a2, a0, a0
-	sh1add	a0, a2, a0
+	sh1add	a0, a3, a0
 	slli	a1, a1, 3
 	slli	a0, a0, 3
 	sltu	a0, a1, a0

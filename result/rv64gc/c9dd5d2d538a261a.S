@@ -17,10 +17,10 @@ func0000000000000008:
 func000000000000001a:
 	addi	a1, a1, -8
 	li	a2, 1
+	lui	a3, 524288
 	sllw	a1, a2, a1
-	lui	a2, 524288
-	addi	a2, a2, -1
-	addw	a1, a1, a2
+	addi	a3, a3, -1
+	addw	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

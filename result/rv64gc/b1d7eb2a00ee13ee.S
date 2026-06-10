@@ -33,9 +33,9 @@ func00000000000000c5:
 	ret
 
 func0000000000000080:
-	sext.w	a2, a1
-	li	a3, 253
-	bltu	a3, a2, .LBB4_2
+	li	a2, 253
+	sext.w	a3, a1
+	bltu	a2, a3, .LBB4_2
 	li	a2, 3
 	add	a0, a0, a1
 	addw	a0, a0, a2

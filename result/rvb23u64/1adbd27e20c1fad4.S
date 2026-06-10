@@ -5,11 +5,11 @@ func0000000000000001:
 
 func0000000000000004:
 	li	a1, 543
-	li	a2, -1
 	slli	a1, a1, 53
-	srli	a2, a2, 1
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
+	li	a2, -1
+	srli	a2, a2, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -17,10 +17,10 @@ func0000000000000004:
 
 func0000000000000002:
 	li	a1, -481
-	bseti	a2, zero, 63
 	slli	a1, a1, 53
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
+	bseti	a2, zero, 63
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

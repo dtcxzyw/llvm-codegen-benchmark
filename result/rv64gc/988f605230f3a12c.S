@@ -6,8 +6,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	srli	a1, a1, 17
 	addiw	a0, a0, -4
+	srli	a1, a1, 17
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -21,11 +21,11 @@ func0000000000000181:
 	ret
 
 func0000000000000184:
+	lui	a2, 8
 	sext.w	a0, a0
 	slli	a1, a1, 35
-	lui	a2, 8
-	srli	a1, a1, 63
 	addi	a2, a2, 565
+	srli	a1, a1, 63
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -33,8 +33,8 @@ func0000000000000184:
 func000000000000018a:
 	sext.w	a0, a0
 	slli	a1, a1, 55
-	srli	a1, a1, 63
 	slti	a0, a0, 3
+	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

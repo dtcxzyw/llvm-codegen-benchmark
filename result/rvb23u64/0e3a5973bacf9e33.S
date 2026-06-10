@@ -13,11 +13,11 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
+	lui	a2, 522232
+	addi	a2, a2, -129
 	or	a0, a0, a1
-	lui	a1, 522232
+	slli	a1, a2, 32
 	addi	a0, a0, 1
-	addi	a1, a1, -129
-	slli	a2, a1, 32
 	add	a1, a1, a2
 	andn	a0, a0, a1
 	ret

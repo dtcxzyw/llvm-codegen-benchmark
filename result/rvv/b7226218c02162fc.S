@@ -4,8 +4,8 @@ func0000000000000009:
 	lui	a0, 53
 	addi	a0, a0, 618
 	vmul.vx	v8, v10, a0
-	lui	a0, 1048568
 	vsra.vi	v8, v8, 16
+	lui	a0, 1048568
 	addi	a0, a0, 150
 	vadd.vx	v8, v8, a0
 	ret

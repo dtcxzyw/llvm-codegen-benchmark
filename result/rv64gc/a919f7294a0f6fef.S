@@ -1,6 +1,6 @@
 func00000000000000d8:
-	srai	a0, a0, 2
 	li	a1, 6
+	srai	a0, a0, 2
 	bgeu	a1, a0, .LBB0_2
 	li	a0, 3
 	ret

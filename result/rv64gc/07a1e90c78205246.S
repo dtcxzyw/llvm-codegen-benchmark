@@ -20,16 +20,16 @@ func000000000000007f:
 func0000000000000058:
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
-	zext.b	a1, a1
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func0000000000000010:
 	li	a3, 25
-	zext.b	a1, a1
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -44,9 +44,9 @@ func0000000000000070:
 
 func0000000000000035:
 	lui	a3, 21
-	zext.b	a1, a1
 	addi	a3, a3, 384
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

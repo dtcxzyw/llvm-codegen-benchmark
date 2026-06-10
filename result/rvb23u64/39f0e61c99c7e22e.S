@@ -54,10 +54,10 @@ func0000000000000001:
 func0000000000000044:
 	lui	a3, 1
 	add	a2, a2, a3
-	lui	a3, 8
 	sltu	a1, a2, a1
+	lui	a2, 8
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

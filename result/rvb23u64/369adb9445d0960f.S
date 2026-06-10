@@ -29,8 +29,8 @@ func0000000000000105:
 	ret
 
 func0000000000000193:
-	zext.w	a2, a2
 	srliw	a1, a1, 30
+	zext.w	a2, a2
 	sltiu	a1, a1, 3
 	czero.nez	a1, a2, a1
 	bset	a1, zero, a1

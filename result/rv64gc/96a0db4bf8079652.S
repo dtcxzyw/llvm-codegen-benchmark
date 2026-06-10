@@ -12,9 +12,9 @@ func0000000000000008:
 	ret
 
 func000000000000000b:
-	sext.w	a1, a0
-	li	a2, -1
-	bne	a1, a2, .LBB1_2
+	li	a1, -1
+	sext.w	a2, a0
+	bne	a2, a1, .LBB1_2
 	li	a0, 24
 	ret
 .LBB1_2:

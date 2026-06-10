@@ -25,8 +25,8 @@ func000000000000003f:
 
 func000000000000003e:
 	slli	a2, a2, 22
-	slli	a1, a1, 23
 	or	a0, a0, a2
+	slli	a1, a1, 23
 	or	a0, a0, a1
 	lui	a1, 1044999
 	andn	a0, a0, a1
@@ -34,8 +34,8 @@ func000000000000003e:
 
 func000000000000002f:
 	slliw	a2, a2, 24
-	slliw	a1, a1, 8
 	or	a0, a0, a2
+	slliw	a1, a1, 8
 	lui	a2, 916990
 	or	a0, a0, a1
 	addi	a1, a2, -256

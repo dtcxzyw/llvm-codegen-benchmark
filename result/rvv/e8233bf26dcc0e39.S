@@ -23,10 +23,10 @@ func000000000000000a:
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
-	lui	a0, 21
-	addi	a0, a0, 384
 	vsra.vi	v8, v8, 13
 	vadd.vv	v8, v8, v10
+	lui	a0, 21
+	addi	a0, a0, 384
 	vmul.vx	v8, v8, a0
 	lui	a0, 1030267
 	addi	a0, a0, -1537

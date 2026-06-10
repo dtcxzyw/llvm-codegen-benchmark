@@ -50,9 +50,9 @@ func0000000000000141:
 func0000000000000148:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 524288
 	vsub.vv	v10, v14, v10
 	vminu.vv	v8, v10, v8
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -60,9 +60,9 @@ func0000000000000148:
 func00000000000000d8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 524288
 	vsub.vv	v10, v14, v10
 	vminu.vv	v8, v10, v8
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

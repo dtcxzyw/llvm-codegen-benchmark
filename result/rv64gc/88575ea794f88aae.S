@@ -1,10 +1,10 @@
 func0000000000000000:
 	lui	a2, 816668
+	lui	a3, 91494
 	addi	a2, a2, 572
+	addi	a3, a3, 1969
 	xor	a1, a1, a2
-	lui	a2, 91494
-	addi	a2, a2, 1969
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

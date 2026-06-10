@@ -1,6 +1,6 @@
 func000000000000018c:
-	sext.w	a2, a0
 	addiw	a1, a1, -123
+	sext.w	a2, a0
 	snez	a1, a1
 	czero.eqz	a1, a1, a2
 	addi	a0, a0, -1
@@ -18,8 +18,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
 	sext.w	a2, a0
+	sext.w	a1, a1
 	seqz	a2, a2
 	czero.eqz	a1, a2, a1
 	addi	a0, a0, -1

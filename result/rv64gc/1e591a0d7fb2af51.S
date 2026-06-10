@@ -13,12 +13,12 @@ func0000000000000006:
 func00000000000000a1:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	lui	a3, %hi(.LCPI1_1)
-	ld	a3, %lo(.LCPI1_1)(a3)
 	srai	a1, a1, 3
 	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI1_1)
+	ld	a2, %lo(.LCPI1_1)(a2)
 	add	a0, a0, a1
-	xor	a0, a0, a3
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
@@ -28,13 +28,13 @@ func00000000000000a8:
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
-	add	a2, a2, a3
-	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
 	srai	a1, a1, 3
+	add	a2, a2, a3
 	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
 	add	a0, a0, a1
-	sltu	a0, a3, a0
+	sltu	a0, a2, a0
 	ret
 
 .LCPI3_0:
@@ -43,20 +43,20 @@ func0000000000000088:
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
-	add	a2, a2, a3
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
 	srai	a1, a1, 3
+	add	a2, a2, a3
 	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	add	a0, a0, a1
-	sltu	a0, a3, a0
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000084:
-	srai	a1, a1, 4
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srai	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -64,10 +64,10 @@ func0000000000000084:
 	ret
 
 func0000000000000081:
-	srai	a1, a1, 4
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srai	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -124,10 +124,10 @@ func0000000000000034:
 	ret
 
 func000000000000008a:
-	srai	a1, a1, 4
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srai	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -153,11 +153,11 @@ func0000000000000026:
 	lui	a2, %hi(.LCPI13_0)
 	ld	a2, %lo(.LCPI13_0)(a2)
 	mulh	a1, a1, a2
-	srli	a2, a1, 63
-	srai	a1, a1, 13
-	add	a1, a1, a2
 	lui	a2, 961553
+	srli	a3, a1, 63
+	srai	a1, a1, 13
 	addi	a2, a2, 721
+	add	a1, a1, a3
 	slli	a2, a2, 12
 	add	a0, a0, a1
 	addi	a1, a2, -647
@@ -165,10 +165,10 @@ func0000000000000026:
 	ret
 
 func00000000000000b1:
-	srai	a1, a1, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srai	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	neg	a0, a0
@@ -212,10 +212,10 @@ func0000000000000008:
 	ret
 
 func0000000000000086:
-	srai	a1, a1, 3
 	lui	a2, 349525
 	addi	a2, a2, 1365
 	slli	a3, a2, 32
+	srai	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -251,10 +251,10 @@ func000000000000000a:
 	ret
 
 func000000000000008c:
-	srai	a1, a1, 3
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srai	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	neg	a0, a0
@@ -263,10 +263,10 @@ func000000000000008c:
 	ret
 
 func00000000000000a6:
-	srai	a1, a1, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srai	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1

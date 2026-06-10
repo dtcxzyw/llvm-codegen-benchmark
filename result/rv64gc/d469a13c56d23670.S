@@ -33,8 +33,8 @@ func000000000000002c:
 
 func0000000000000188:
 	slli	a1, a1, 48
-	snez	a2, a2
 	srli	a1, a1, 48
+	snez	a2, a2
 	sltiu	a1, a1, 32
 	not	a1, a1
 	and	a0, a0, a2

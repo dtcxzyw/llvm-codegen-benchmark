@@ -1,8 +1,8 @@
 func0000000000000002:
-	fmv.s	fa5, fa0
 	lui	a0, 251085
 	addi	a0, a0, -819
 	fmv.w.x	fa4, a0
+	fmv.s	fa5, fa0
 	flt.s	a0, fa0, fa4
 	fli.s	fa0, 1.0
 	bnez	a0, .LBB0_2
@@ -24,8 +24,8 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	fmv.s	fa5, fa0
 	fmv.w.x	fa4, zero
+	fmv.s	fa5, fa0
 	fle.s	a0, fa0, fa4
 	fli.s	fa0, 1.0
 	bnez	a0, .LBB2_2

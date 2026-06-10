@@ -7,11 +7,11 @@ func000000000000008c:
 	ret
 
 func0000000000000146:
-	sext.w	a0, a0
 	addiw	a1, a1, -24
+	sext.w	a0, a0
+	slti	a2, a1, 4
 	slt	a0, a1, a0
-	slti	a1, a1, 4
-	xori	a1, a1, 1
+	xori	a1, a2, 1
 	and	a0, a0, a1
 	ret
 
@@ -24,11 +24,11 @@ func00000000000000ca:
 	ret
 
 func0000000000000108:
-	sext.w	a0, a0
 	addiw	a1, a1, 1
+	sext.w	a0, a0
+	sltiu	a2, a1, 65
 	sltu	a0, a0, a1
-	sltiu	a1, a1, 65
-	not	a1, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

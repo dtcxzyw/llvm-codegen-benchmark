@@ -5,16 +5,16 @@ func000000000000003f:
 	ret
 
 func000000000000000f:
-	neg	a0, a0
 	li	a1, -1
+	neg	a0, a0
 	slli	a0, a0, 3
 	slli	a1, a1, 35
 	or	a0, a0, a1
 	ret
 
 func000000000000000d:
-	addi	a0, a0, 2
 	lui	a1, 1
+	addi	a0, a0, 2
 	slli	a0, a0, 32
 	srli	a0, a0, 29
 	addi	a1, a1, -2040

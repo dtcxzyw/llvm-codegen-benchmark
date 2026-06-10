@@ -1,9 +1,9 @@
 func0000000000000008:
 	lui	a3, 244
-	sub	a1, a1, a0
-	lui	a0, 1221
 	addi	a3, a3, 576
 	mul	a2, a2, a3
+	sub	a1, a1, a0
+	lui	a0, 1221
 	add	a1, a1, a2
 	addi	a0, a0, -1217
 	sltu	a0, a0, a1
@@ -27,10 +27,10 @@ func0000000000000206:
 
 func000000000000000a:
 	lui	a3, 244141
-	sub	a1, a1, a0
-	lui	a0, 4883
 	addi	a3, a3, -1536
 	mul	a2, a2, a3
+	sub	a1, a1, a0
+	lui	a0, 4883
 	add	a1, a1, a2
 	addi	a0, a0, -769
 	slt	a0, a0, a1

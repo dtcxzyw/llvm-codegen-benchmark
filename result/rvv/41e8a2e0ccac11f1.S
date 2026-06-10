@@ -31,10 +31,10 @@ func0000000000000044:
 	vfdiv.vv	v8, v8, v16
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
 	vmfgt.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
-	vmfgt.vf	v0, v8, fa4
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa5, %lo(.LCPI2_1)(a0)
+	vmfgt.vf	v0, v8, fa5
 	ret
 

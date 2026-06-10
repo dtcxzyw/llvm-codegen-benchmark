@@ -18,8 +18,8 @@ func0000000000000001:
 func0000000000000078:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 1
-	lui	a0, 16
 	vadd.vv	v8, v8, v10
+	lui	a0, 16
 	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
 	vmsgtu.vi	v0, v8, 5
@@ -68,9 +68,9 @@ func0000000000000018:
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -2
-	lui	a0, 1
 	vadd.vv	v8, v8, v10
 	vand.vi	v8, v8, -8
+	lui	a0, 1
 	addi	a0, a0, -1384
 	vmsgtu.vx	v0, v8, a0
 	ret

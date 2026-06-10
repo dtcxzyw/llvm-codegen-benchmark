@@ -1,9 +1,9 @@
 func0000000000000094:
 	sext.w	a1, a1
 	bltz	a1, .LBB0_2
-	srliw	a0, a2, 31
-	lui	a1, 524288
-	addi	a1, a1, -1
+	lui	a0, 524288
+	srliw	a1, a2, 31
+	addi	a0, a0, -1
 	add	a0, a0, a1
 .LBB0_2:
 	slli	a0, a0, 32
@@ -13,9 +13,9 @@ func0000000000000094:
 func000000000000008c:
 	sext.w	a1, a1
 	bgez	a1, .LBB1_2
-	srliw	a0, a2, 31
-	lui	a1, 524288
-	addi	a1, a1, -1
+	lui	a0, 524288
+	srliw	a1, a2, 31
+	addi	a0, a0, -1
 	add	a0, a0, a1
 .LBB1_2:
 	slli	a0, a0, 32

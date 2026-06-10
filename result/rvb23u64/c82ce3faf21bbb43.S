@@ -1,33 +1,33 @@
 func0000000000000000:
 	slliw	a2, a2, 16
+	lui	a3, 2048
 	or	a0, a0, a2
-	lui	a2, 2048
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000a:
 	slliw	a2, a2, 8
+	lui	a3, 2096
 	or	a0, a0, a2
-	lui	a2, 2096
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000f:
 	slliw	a2, a2, 3
+	lui	a3, 33280
 	or	a1, a1, a2
-	lui	a2, 33280
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000003:
+	lui	a3, 16
 	slliw	a2, a2, 24
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -39,11 +39,11 @@ func000000000000000b:
 	ret
 
 func0000000000000007:
+	lui	a3, 16
 	slliw	a2, a2, 24
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -55,19 +55,19 @@ func0000000000000001:
 	ret
 
 func0000000000000002:
+	lui	a3, 4096
 	slliw	a2, a2, 16
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 4096
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000c:
 	slliw	a2, a2, 23
+	lui	a3, 1048064
 	or	a0, a0, a2
-	lui	a2, 1048064
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -86,19 +86,19 @@ func000000000000000d:
 	ret
 
 func0000000000000009:
+	lui	a3, 2
 	slliw	a2, a2, 16
+	addi	a3, a3, -32
 	or	a0, a0, a2
-	lui	a2, 2
-	addi	a2, a2, -32
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
 	slliw	a2, a2, 16
+	lui	a3, 983040
 	or	a0, a0, a2
-	lui	a2, 983040
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

@@ -1,12 +1,12 @@
 func0000000000000003:
+	li	a2, 128
 	slli	a1, a1, 48
-	srli	a2, a1, 48
-	li	a1, 128
-	beq	a2, a1, .LBB0_2
-	li	a1, 384
+	srli	a1, a1, 48
+	beq	a1, a2, .LBB0_2
+	li	a2, 384
 .LBB0_2:
 	andi	a0, a0, -385
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000029:

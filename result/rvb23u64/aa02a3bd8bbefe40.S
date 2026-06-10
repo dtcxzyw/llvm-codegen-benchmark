@@ -1,11 +1,11 @@
 func0000000000000188:
-	sext.w	a0, a0
 	li	a2, 3
 	slli	a2, a2, 11
-	sltiu	a0, a0, 3
 	and	a1, a1, a2
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
+	sltiu	a0, a0, 3
 	andn	a0, a1, a0
 	li	a1, 11
 	czero.nez	a0, a1, a0
@@ -24,9 +24,9 @@ func0000000000000021:
 
 func000000000000002a:
 	srliw	a1, a1, 30
-	srliw	a0, a0, 31
 	addi	a1, a1, -1
 	seqz	a1, a1
+	srliw	a0, a0, 31
 	andn	a0, a1, a0
 	li	a1, 16
 	czero.eqz	a0, a1, a0

@@ -8,8 +8,8 @@ func0000000000000007:
 
 func0000000000000001:
 	li	a3, 15
-	andi	a0, a0, 15
 	slli	a3, a3, 8
+	andi	a0, a0, 15
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -18,8 +18,8 @@ func0000000000000001:
 
 func0000000000000006:
 	lui	a3, 16
-	zext.b	a1, a1
 	addi	a3, a3, -256
+	zext.b	a1, a1
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -29,9 +29,9 @@ func0000000000000006:
 
 func0000000000000005:
 	lui	a3, 4080
+	lui	a4, 16
 	and	a2, a2, a3
-	lui	a3, 16
-	addi	a3, a3, -256
+	addi	a3, a4, -256
 	or	a0, a0, a2
 	and	a1, a1, a3
 	or	a0, a0, a1

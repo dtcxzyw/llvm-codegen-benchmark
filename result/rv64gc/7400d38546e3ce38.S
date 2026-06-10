@@ -43,14 +43,14 @@ func0000000000000741:
 	ret
 
 func0000000000000108:
-	neg	a0, a0
 	sub	a2, a2, a1
+	neg	a0, a0
 	sltu	a0, a0, a2
 	ret
 
 func0000000000000128:
-	neg	a0, a0
 	sub	a2, a2, a1
+	neg	a0, a0
 	sltu	a0, a0, a2
 	ret
 
@@ -63,8 +63,8 @@ func0000000000000141:
 	ret
 
 func00000000000006a1:
-	neg	a0, a0
 	sub	a2, a2, a1
+	neg	a0, a0
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

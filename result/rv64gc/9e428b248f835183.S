@@ -1,12 +1,12 @@
 func0000000000000000:
-	sext.w	a3, a0
-	subw	a0, a1, a2
+	subw	a2, a1, a2
 	sext.w	a1, a1
-	sltu	a1, a1, a0
-	addi	a1, a1, -1
-	and	a0, a0, a1
-	bltu	a0, a3, .LBB0_2
-	mv	a0, a3
+	sltu	a1, a1, a2
+	addi	a3, a1, -1
+	sext.w	a1, a0
+	and	a0, a3, a2
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
 	ret
 

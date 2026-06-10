@@ -10,10 +10,10 @@ func000000000000294c:
 
 func000000000000302c:
 	sext.w	a2, a2
-	addiw	a1, a1, -772
 	snez	a2, a2
-	seqz	a1, a1
+	addiw	a1, a1, -772
 	snez	a0, a0
+	seqz	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -41,9 +41,9 @@ func000000000000318c:
 func000000000000058c:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	seqz	a2, a2
 	snez	a1, a1
 	snez	a0, a0
+	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -70,8 +70,8 @@ func000000000000114c:
 
 func000000000000108c:
 	sext.w	a1, a1
-	sext.w	a2, a2
 	lui	a3, 524288
+	sext.w	a2, a2
 	addiw	a3, a3, -2
 	sltu	a2, a2, a3
 	sltu	a1, a1, a3

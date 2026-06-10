@@ -1,9 +1,9 @@
 func0000000000001c2c:
+	lui	a0, 16
+	addi	a0, a0, -536
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
-	lui	a0, 16
 	vor.vv	v10, v12, v10
-	addi	a0, a0, -536
 	vmseq.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v12
@@ -12,8 +12,8 @@ func0000000000001c2c:
 func0000000000001c21:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
-	li	a0, 771
 	vor.vv	v10, v12, v10
+	li	a0, 771
 	vmseq.vx	v12, v10, a0
 	li	a0, 772
 	vmseq.vx	v10, v8, a0
@@ -48,9 +48,9 @@ func000000000000142c:
 	ret
 
 func0000000000001f01:
+	li	a0, 224
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
-	li	a0, 224
 	vor.vv	v10, v12, v10
 	vmsgtu.vi	v12, v10, 6
 	vmseq.vx	v10, v8, a0
@@ -60,8 +60,8 @@ func0000000000001f01:
 func0000000000001e81:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 18
-	lui	a0, 272
 	vor.vv	v10, v10, v12
+	lui	a0, 272
 	vmsltu.vx	v12, v10, a0
 	lui	a0, 16
 	addi	a0, a0, -2

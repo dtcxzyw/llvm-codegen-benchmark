@@ -1,7 +1,7 @@
 func0000000000001842:
 	addi	a3, a0, 8
-	xor	a0, a0, a1
 	xor	a2, a2, a3
+	xor	a0, a0, a1
 	seqz	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000001842:
 
 func0000000000000042:
 	addi	a3, a0, -104
-	xor	a0, a0, a1
 	xor	a2, a2, a3
+	xor	a0, a0, a1
 	seqz	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

@@ -37,8 +37,8 @@ func0000000000000081:
 .LCPI4_0:
 	.quad	1000000000000000001
 func0000000000000444:
-	sext.w	a2, a2
 	lui	a3, %hi(.LCPI4_0)
+	sext.w	a2, a2
 	ld	a3, %lo(.LCPI4_0)(a3)
 	sltiu	a2, a2, 16
 	czero.eqz	a1, a1, a2
@@ -48,8 +48,8 @@ func0000000000000444:
 
 func0000000000000a01:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	sltiu	a2, a2, 128
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addi	a1, a1, 1
 	neg	a0, a0
@@ -69,8 +69,8 @@ func00000000000000a8:
 
 func0000000000000221:
 	sext.w	a2, a2
-	addi	a1, a1, 48
 	sltiu	a2, a2, 10
+	addi	a1, a1, 48
 	czero.nez	a1, a1, a2
 	addi	a1, a1, -48
 	neg	a0, a0

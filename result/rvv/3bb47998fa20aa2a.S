@@ -57,8 +57,8 @@ func0000000000000041:
 func000000000000008c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v12, v10
-	li	a0, -2
 	vsrl.vv	v8, v8, v12
+	li	a0, -2
 	zext.w	a0, a0
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0

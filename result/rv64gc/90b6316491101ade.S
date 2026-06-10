@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.quad	3353953467947191203
 func000000000000004a:
-	slli	a1, a1, 1
 	lui	a2, 2
+	slli	a1, a1, 1
 	addi	a2, a2, 1808
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
@@ -20,8 +20,8 @@ func000000000000004a:
 	ret
 
 func0000000000000008:
-	slli	a1, a1, 1
 	lui	a2, 2
+	slli	a1, a1, 1
 	addi	a2, a2, 1808
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2

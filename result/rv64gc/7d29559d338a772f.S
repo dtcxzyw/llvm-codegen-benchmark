@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	fmv.x.w	a1, fa0
+	sext.w	a0, a0
 	snez	a0, a0
 	slli	a1, a1, 41
 	srli	a1, a1, 41

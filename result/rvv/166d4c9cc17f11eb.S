@@ -1,7 +1,7 @@
 func0000000000000082:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -3
-	li	a0, 16
 	vmseq.vi	v9, v10, 1
 	vmor.mm	v9, v0, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -20,9 +20,9 @@ func0000000000000604:
 	ret
 
 func0000000000000602:
+	li	a0, 95
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 1
-	li	a0, 95
 	vmsne.vi	v9, v10, 0
 	vmor.mm	v9, v0, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma

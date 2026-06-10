@@ -16,9 +16,9 @@ func00000000000001be:
 func0000000000000012:
 	addiw	a1, a1, 160
 	slli	a1, a1, 2
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -128
+	addi	a1, a2, -128
 	add	a0, a0, a1
 	ret
 

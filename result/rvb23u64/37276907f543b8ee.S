@@ -7,8 +7,8 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	andi	a2, a2, 64
+	sext.w	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a2
 	seqz	a1, a1
@@ -26,13 +26,13 @@ func0000000000000038:
 	ret
 
 func000000000000018c:
-	sext.w	a1, a1
 	lui	a3, 4096
+	sext.w	a1, a1
 	addi	a3, a3, -256
-	binvi	a1, a1, 16
 	and	a2, a2, a3
-	snez	a1, a1
+	binvi	a1, a1, 16
 	binvi	a2, a2, 16
+	snez	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -48,8 +48,8 @@ func0000000000000188:
 
 func000000000000002c:
 	andi	a2, a2, 256
-	addiw	a1, a1, -384
 	seqz	a2, a2
+	addiw	a1, a1, -384
 	or	a0, a0, a2
 	snez	a1, a1
 	or	a0, a0, a1

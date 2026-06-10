@@ -58,11 +58,11 @@ func0000000000000e08:
 func0000000000000008:
 	addi	a2, a2, -3
 	slli	a2, a2, 32
+	lui	a3, 8
 	srli	a2, a2, 32
+	addi	a3, a3, 7
 	add	a0, a0, a2
-	lui	a2, 8
-	addi	a2, a2, 7
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 

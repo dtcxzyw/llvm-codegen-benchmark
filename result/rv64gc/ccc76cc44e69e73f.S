@@ -8,12 +8,12 @@ func000000000000003f:
 func0000000000000030:
 	slli	a3, a1, 3
 	slli	a1, a1, 6
-	slli	a0, a0, 4
 	sub	a1, a1, a3
-	lui	a3, 33
+	slli	a0, a0, 4
 	add	a0, a0, a2
+	lui	a2, 33
 	add	a0, a0, a1
-	addi	a1, a3, -1968
+	addi	a1, a2, -1968
 	add	a0, a0, a1
 	ret
 

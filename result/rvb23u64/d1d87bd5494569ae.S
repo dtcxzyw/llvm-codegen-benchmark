@@ -5,8 +5,8 @@ func0000000000000009:
 	ret
 
 func000000000000001f:
-	slliw	a0, a0, 1
 	li	a1, 512
+	slliw	a0, a0, 1
 	sub	a0, a1, a0
 	ret
 
@@ -21,8 +21,8 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	slliw	a0, a0, 1
 	li	a1, 128
+	slliw	a0, a0, 1
 	sub	a0, a1, a0
 	ret
 
@@ -32,9 +32,9 @@ func000000000000001d:
 	ret
 
 func0000000000000003:
+	lui	a1, 1046527
 	slli	a0, a0, 44
 	srli	a0, a0, 32
-	lui	a1, 1046527
 	sub	a0, a1, a0
 	ret
 

@@ -10,10 +10,10 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	sext.w	a1, a1
 	lui	a2, 4
 	xor	a1, a1, a2
+	andi	a0, a0, 1
 	snez	a1, a1
 	addi	a1, a1, -1
 	addi	a0, a0, -1
@@ -76,11 +76,11 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	sext.w	a2, a1
-	lui	a1, 32768
-	addi	a3, a1, 35
+	lui	a2, 32768
+	sext.w	a3, a1
+	addi	a2, a2, 35
 	andi	a1, a0, 1
-	bltu	a3, a2, .LBB7_2
+	bltu	a2, a3, .LBB7_2
 	li	a0, 536
 	bnez	a1, .LBB7_3
 	j	.LBB7_4

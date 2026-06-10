@@ -16,8 +16,8 @@ func0000000000000002:
 func0000000000000012:
 	fcvt.s.lu	fa5, a0
 	lui	a0, 250459
-	fmul.s	fa5, fa0, fa5
 	addi	a0, a0, -282
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -25,8 +25,8 @@ func0000000000000012:
 func0000000000000004:
 	fcvt.s.lu	fa5, a0
 	lui	a0, 260096
-	fmul.s	fa5, fa0, fa5
 	addi	a0, a0, -1
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

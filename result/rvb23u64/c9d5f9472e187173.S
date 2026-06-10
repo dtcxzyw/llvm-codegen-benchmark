@@ -9,9 +9,9 @@ func0000000000000001:
 
 func0000000000000008:
 	andi	a1, a1, 1
-	sltiu	a0, a0, 128
 	lui	a2, 1
 	slli	a1, a1, 4
+	sltiu	a0, a0, 128
 	addi	a2, a2, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -20,9 +20,9 @@ func0000000000000008:
 
 func0000000000000006:
 	andi	a1, a1, 1
-	srli	a0, a0, 63
 	lui	a2, 1
 	slli	a1, a1, 4
+	srli	a0, a0, 63
 	addi	a2, a2, 1
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

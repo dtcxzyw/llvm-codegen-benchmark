@@ -1,9 +1,9 @@
 func0000000000000541:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vmseq.vv	v14, v10, v12
-	vmsgt.vi	v10, v8, -1
-	vmand.mm	v0, v14, v10
+	vmsgt.vi	v14, v8, -1
+	vmerge.vim	v8, v12, 1, v0
+	vmseq.vv	v12, v10, v8
+	vmand.mm	v0, v12, v14
 	ret
 

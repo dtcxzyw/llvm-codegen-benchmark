@@ -37,10 +37,10 @@ func000000000000000c:
 	ret
 
 func0000000000000018:
+	li	a2, 7
 	sub	a0, a0, a1
-	li	a1, 7
-	slli	a1, a1, 10
-	sltu	a0, a1, a0
+	slli	a2, a2, 10
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000041:
@@ -71,10 +71,10 @@ func0000000000000011:
 	ret
 
 func0000000000000058:
+	li	a2, -31
 	sub	a0, a0, a1
-	li	a1, -31
-	srli	a1, a1, 1
-	sltu	a0, a1, a0
+	srli	a2, a2, 1
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000024:

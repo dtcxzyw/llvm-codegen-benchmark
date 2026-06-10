@@ -1,6 +1,6 @@
 func0000000000000049:
-	addiw	a0, a0, -3
 	li	a1, 12
+	addiw	a0, a0, -3
 	bltu	a0, a1, .LBB0_2
 	li	a0, 6
 .LBB0_2:

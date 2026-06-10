@@ -12,17 +12,17 @@ func000000000000001f:
 
 func0000000000000000:
 	slli	a1, a1, 3
+	lui	a2, 16
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -129
+	addi	a1, a2, -129
 	and	a0, a0, a1
 	ret
 
 func000000000000001e:
 	slli	a1, a1, 8
+	lui	a2, 8
 	or	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	ret
 

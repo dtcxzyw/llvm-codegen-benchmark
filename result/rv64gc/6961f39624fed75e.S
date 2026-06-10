@@ -1,6 +1,6 @@
 func00000000000000f0:
-	slli	a2, a2, 32
 	lui	a3, 376095
+	slli	a2, a2, 32
 	srli	a2, a2, 32
 	addi	a3, a3, -1643
 	mul	a2, a2, a3

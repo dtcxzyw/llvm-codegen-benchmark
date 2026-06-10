@@ -49,8 +49,8 @@ func0000000000000014:
 	bnez	a0, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
-	sext.w	a1, a1
 	lui	a0, 1
+	sext.w	a1, a1
 	addi	a0, a0, -515
 	sltu	a0, a1, a0
 	ret
@@ -60,8 +60,8 @@ func0000000000000018:
 	bnez	a0, .LBB6_2
 	mv	a1, a2
 .LBB6_2:
-	sext.w	a1, a1
 	lui	a0, 12
+	sext.w	a1, a1
 	addi	a0, a0, 848
 	sltu	a0, a0, a1
 	ret

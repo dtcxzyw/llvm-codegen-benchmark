@@ -150,9 +150,9 @@ func00000000000001f4:
 func000000000000012a:
 	zext.b	a1, a1
 	slliw	a0, a0, 6
+	lui	a2, 272
 	or	a0, a0, a1
-	lui	a1, 272
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 

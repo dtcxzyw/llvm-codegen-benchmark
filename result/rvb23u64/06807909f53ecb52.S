@@ -1,7 +1,7 @@
 func000000000000010a:
-	andi	a0, a0, 1
 	sext.w	a3, a2
 	sltiu	a3, a3, 10
+	andi	a0, a0, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -12,9 +12,9 @@ func000000000000010a:
 	ret
 
 func000000000000010c:
-	andi	a0, a0, 1
 	sext.w	a3, a2
 	sltiu	a3, a3, 10
+	andi	a0, a0, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -24,8 +24,8 @@ func000000000000010c:
 	ret
 
 func000000000000002a:
-	andi	a0, a0, 1
 	addiw	a3, a2, 1
+	andi	a0, a0, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -42,8 +42,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 1
 	addiw	a3, a2, 1
+	andi	a0, a0, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

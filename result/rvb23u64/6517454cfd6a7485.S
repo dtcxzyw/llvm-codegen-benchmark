@@ -7,8 +7,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	zext.h	a2, a2
 	lui	a3, 16
+	zext.h	a2, a2
 	addi	a3, a3, -2
 	xor	a2, a2, a3
 	snez	a2, a2

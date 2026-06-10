@@ -3,8 +3,8 @@ func0000000000000019:
 	vmv1r.v	v11, v0
 	li	a0, 592
 	vmv.v.x	v12, a0
-	li	a0, 336
 	vmv1r.v	v0, v10
+	li	a0, 336
 	vmerge.vxm	v12, v12, a0, v0
 	vmsleu.vv	v10, v12, v8
 	vmor.mm	v0, v11, v10
@@ -26,8 +26,8 @@ func0000000000000018:
 	vmv1r.v	v11, v0
 	li	a0, 125
 	vmv.v.x	v12, a0
-	li	a0, 111
 	vmv1r.v	v0, v10
+	li	a0, 111
 	vmerge.vxm	v12, v12, a0, v0
 	vmsltu.vv	v10, v12, v8
 	vmor.mm	v0, v11, v10

@@ -3,8 +3,8 @@
 func0000000000000005:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	lui	a2, 244
 	mulhu	a1, a0, a1
+	lui	a2, 244
 	srli	a1, a1, 18
 	addi	a2, a2, 576
 	mul	a1, a1, a2

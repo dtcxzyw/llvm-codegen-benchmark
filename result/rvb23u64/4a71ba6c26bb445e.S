@@ -18,10 +18,10 @@ func00000000000000a4:
 
 func00000000000000a1:
 	srai	a1, a1, 5
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 6
-	xor	a0, a0, a1
+	srli	a2, a2, 6
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
@@ -114,10 +114,10 @@ func000000000000000a:
 
 func000000000000002a:
 	srai	a1, a1, 31
+	lui	a2, 524288
 	add	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func00000000000000f8:

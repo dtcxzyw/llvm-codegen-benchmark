@@ -63,11 +63,11 @@ func00000000000004ca:
 	ret
 
 func0000000000000314:
+	li	a0, -1
+	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -1
 	vmsltu.vv	v12, v8, v10
-	srli	a0, a0, 32
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v8, v12
 	ret

@@ -11,15 +11,15 @@ func0000000000000038:
 	li	a3, 3
 	beq	a2, a3, .LBB1_2
 	li	a2, 20
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
 .LBB1_2:
 	li	a2, 56
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret

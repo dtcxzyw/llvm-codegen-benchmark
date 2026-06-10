@@ -33,10 +33,10 @@ func0000000000000007:
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v12, v12, 24
 	lui	a0, 65535
 	slli	a0, a0, 12
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v12, v12, 24
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v12, v8
 	vzext.vf2	v12, v10

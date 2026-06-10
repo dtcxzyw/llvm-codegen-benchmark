@@ -1,18 +1,18 @@
 func00000000000001ec:
 	sext.w	a2, a2
 	sh2add	a1, a2, a1
-	lui	a2, 305
 	sh2add	a0, a0, a1
-	addi	a1, a2, 1028
+	lui	a1, 305
+	addi	a1, a1, 1028
 	add	a0, a0, a1
 	ret
 
 func000000000000012c:
 	sext.w	a2, a2
 	sh2add	a1, a2, a1
-	lui	a2, 320
 	sh2add	a0, a0, a1
-	addi	a1, a2, -876
+	lui	a1, 320
+	addi	a1, a1, -876
 	add	a0, a0, a1
 	ret
 

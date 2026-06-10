@@ -17,16 +17,16 @@ func0000000000000028:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 63
 	li	a2, 32
+	andi	a1, a1, 63
 	bne	a1, a2, .LBB2_2
 	li	a0, 30
 .LBB2_2:
 	ret
 
 func0000000000000004:
-	slli	a1, a1, 3
 	li	a2, 23
+	slli	a1, a1, 3
 	bgeu	a1, a2, .LBB3_2
 	li	a0, 32
 .LBB3_2:

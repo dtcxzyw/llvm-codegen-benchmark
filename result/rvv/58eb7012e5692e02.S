@@ -24,8 +24,8 @@ func0000000000000003:
 	vsrl.vx	v10, v10, a0
 	lui	a0, 2
 	vand.vx	v10, v10, a0
-	lui	a0, 1
 	vor.vv	v8, v8, v10
+	lui	a0, 1
 	addi	a0, a0, 1092
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0

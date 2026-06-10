@@ -1,9 +1,9 @@
 func000000000000000f:
+	lui	a3, 16
 	add	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	add	a0, a0, a2
+	addi	a3, a3, -1
+	and	a1, a1, a3
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -19,10 +19,10 @@ func0000000000000010:
 func0000000000000030:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	lui	a3, 1048544
 	add	a1, a1, a2
-	lui	a2, 1048544
-	srli	a2, a2, 12
-	and	a1, a1, a2
+	srli	a3, a3, 12
+	and	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, 15
 	ret

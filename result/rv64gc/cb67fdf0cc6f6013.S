@@ -4,8 +4,8 @@ func00000000000000c4:
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	srliw	a0, a0, 31
 	srliw	a1, a1, 16
+	srliw	a0, a0, 31
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

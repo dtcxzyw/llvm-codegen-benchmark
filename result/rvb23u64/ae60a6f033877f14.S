@@ -8,8 +8,8 @@ func0000000000000d8c:
 	ret
 
 func0000000000000d81:
-	sext.w	a1, a1
 	addi	a2, a2, 8
+	sext.w	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	snez	a1, a1

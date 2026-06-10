@@ -1,8 +1,8 @@
 func0000000000000000:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfabs.v	v14, v12
 	lui	a0, 307200
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfabs.v	v14, v12
 	vmflt.vf	v0, v14, fa5
 	vfcvt.rtz.x.f.v	v14, v12, v0.t
 	vfcvt.f.x.v	v14, v14, v0.t

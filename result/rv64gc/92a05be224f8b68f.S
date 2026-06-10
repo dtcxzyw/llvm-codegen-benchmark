@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	li	a2, 15
+	sext.w	a0, a0
 	bgeu	a0, a2, .LBB1_2
 	li	a0, 16
 	ret
@@ -20,8 +20,8 @@ func0000000000000004:
 	ret
 
 func0000000000000061:
-	sext.w	a0, a0
 	lui	a2, 8160
+	sext.w	a0, a0
 	and	a1, a1, a2
 	lui	a2, 32
 	seqz	a0, a0

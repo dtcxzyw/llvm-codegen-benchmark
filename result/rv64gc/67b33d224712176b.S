@@ -16,10 +16,10 @@ func0000000000000404:
 	ret
 
 func0000000000000604:
+	lui	a2, 524288
 	sub	a1, a1, a0
-	lui	a0, 524288
-	addi	a0, a0, -8
-	sub	a1, a1, a0
+	addi	a2, a2, -8
+	sub	a1, a1, a2
 	srli	a1, a1, 32
 	seqz	a0, a1
 	ret

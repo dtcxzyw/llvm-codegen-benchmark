@@ -68,8 +68,8 @@ func0000000000000078:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	lui	a2, 3503
+	sext.w	a1, a1
 	addi	a2, a2, 619
 	sltu	a1, a1, a2
 	addi	a1, a1, -1

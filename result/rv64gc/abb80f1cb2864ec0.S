@@ -48,10 +48,10 @@ func0000000000000078:
 	ret
 
 func0000000000000021:
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	slli	a2, a2, 63
-	xor	a1, a1, a2
+	slli	a3, a3, 63
+	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

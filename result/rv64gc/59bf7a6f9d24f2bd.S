@@ -23,11 +23,11 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	andi	a2, a0, 1
-	lui	a0, 16
-	addi	a0, a0, -256
+	lui	a2, 16
+	andi	a3, a0, 1
+	addi	a0, a2, -256
 	and	a0, a0, a1
-	bnez	a2, .LBB2_2
+	bnez	a3, .LBB2_2
 	li	a1, -44
 	add	a0, a0, a1
 	ret

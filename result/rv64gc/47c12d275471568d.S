@@ -1,7 +1,7 @@
 func0000000000000003:
-	andi	a0, a0, 1
 	fmv.x.d	a1, fa0
 	li	a2, 1
+	andi	a0, a0, 1
 	slli	a1, a1, 12
 	addi	a0, a0, -1
 	slli	a2, a2, 52

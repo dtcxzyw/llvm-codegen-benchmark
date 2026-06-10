@@ -11,8 +11,8 @@ func000000000000060a:
 
 func00000000000003f8:
 	addi	a1, a1, -48
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 256
@@ -33,8 +33,8 @@ func0000000000000601:
 
 func0000000000000604:
 	addi	a1, a1, -48
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 32
@@ -42,8 +42,8 @@ func0000000000000604:
 
 func0000000000000608:
 	addi	a1, a1, -48
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 64
@@ -62,8 +62,8 @@ func00000000000006ac:
 
 func0000000000000008:
 	addi	a1, a1, -48
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 128
@@ -72,8 +72,8 @@ func0000000000000008:
 
 func0000000000000668:
 	addi	a1, a1, -48
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	srliw	a0, a0, 16
 	snez	a0, a0
@@ -81,8 +81,8 @@ func0000000000000668:
 
 func00000000000006aa:
 	addi	a1, a1, -48
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	slti	a0, a0, 1001
@@ -91,8 +91,8 @@ func00000000000006aa:
 
 func00000000000006a6:
 	addi	a1, a1, -48
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	srliw	a0, a0, 31
 	ret

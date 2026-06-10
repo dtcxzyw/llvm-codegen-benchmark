@@ -15,9 +15,9 @@ func000000000000000e:
 	ret
 
 func000000000000000c:
-	lui	a3, 983055
-	and	a1, a1, a3
 	lui	a3, 240
+	lui	a4, 983055
+	and	a1, a1, a4
 	addi	a3, a3, 15
 	and	a2, a2, a3
 	or	a0, a0, a1

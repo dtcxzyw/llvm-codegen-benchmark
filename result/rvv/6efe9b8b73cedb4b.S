@@ -13,9 +13,9 @@ func0000000000000008:
 func000000000000000d:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v8, v8, v16
+	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	vfabs.v	v8, v8
 	vmflt.vf	v16, v8, fa5
 	vmandn.mm	v0, v0, v16
 	ret
@@ -25,9 +25,9 @@ func000000000000000d:
 func0000000000000002:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v8, v8, v16
+	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	vfabs.v	v8, v8
 	vmflt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v0
 	ret

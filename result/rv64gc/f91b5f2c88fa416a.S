@@ -26,10 +26,10 @@ func000000000000004a:
 	lui	a1, 520192
 	and	a0, a0, a1
 	lui	a1, 4096
+	lui	a2, 8192
 	addw	a0, a0, a1
-	lui	a1, 8192
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func0000000000000028:
@@ -76,8 +76,8 @@ func0000000000000008:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, -8
 	lui	a1, 2
+	andi	a0, a0, -8
 	addiw	a0, a0, -4
 	addi	a1, a1, 1
 	slt	a0, a0, a1

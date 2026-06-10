@@ -37,10 +37,10 @@ func0000000000000028:
 func0000000000000124:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
-	lui	a0, 16457
 	vmflt.vv	v0, v16, v8
-	slli	a0, a0, 36
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, 16457
+	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret

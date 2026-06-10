@@ -4,9 +4,9 @@ func0000000000000009:
 	lui	a3, 69905
 	addi	a3, a3, 273
 	slli	a4, a3, 32
+	lui	a5, %hi(.LCPI0_0)
 	add	a3, a3, a4
-	lui	a4, %hi(.LCPI0_0)
-	ld	a4, %lo(.LCPI0_0)(a4)
+	ld	a4, %lo(.LCPI0_0)(a5)
 	and	a2, a2, a3
 	or	a1, a1, a2
 	slli	a1, a1, 2
@@ -16,8 +16,8 @@ func0000000000000009:
 
 func000000000000000f:
 	slli	a2, a2, 48
-	lui	a3, 4080
 	srli	a2, a2, 48
+	lui	a3, 4080
 	or	a1, a1, a2
 	slli	a2, a3, 32
 	slli	a1, a1, 8

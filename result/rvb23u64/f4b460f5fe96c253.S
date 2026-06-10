@@ -1,10 +1,10 @@
 func0000000000000015:
 	lui	a1, 1048540
-	lui	a2, 235184
 	addi	a1, a1, 1359
-	addi	a2, a2, 1725
 	add	a0, a0, a1
-	zext.w	a1, a0
+	lui	a1, 235184
+	zext.w	a2, a0
+	addi	a1, a1, 1725
 	mul	a1, a1, a2
 	lui	a2, 36
 	srli	a1, a1, 47
@@ -15,11 +15,11 @@ func0000000000000015:
 
 func0000000000000000:
 	lui	a1, 804435
-	lui	a2, 69
 	addi	a1, a1, 1536
-	addi	a2, a2, -1149
 	add	a0, a0, a1
-	srliw	a1, a0, 9
+	lui	a1, 69
+	srliw	a2, a0, 9
+	addi	a1, a1, -1149
 	mul	a1, a1, a2
 	lui	a2, 244141
 	srli	a1, a1, 39
@@ -29,11 +29,11 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
-	addi	a0, a0, -128
 	lui	a1, 838861
+	addi	a0, a0, -128
 	addi	a1, a1, -819
-	slli	a2, a0, 32
 	slli	a1, a1, 32
+	slli	a2, a0, 32
 	mulhu	a1, a2, a1
 	srli	a1, a1, 35
 	li	a2, 246

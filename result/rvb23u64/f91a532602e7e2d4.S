@@ -20,10 +20,10 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
+	lui	a2, 1048544
 	add.uw	a0, a1, a0
-	lui	a1, 1048544
-	srli	a1, a1, 12
-	and	a0, a0, a1
+	srli	a2, a2, 12
+	and	a0, a0, a2
 	addi	a0, a0, -64
 	ret
 

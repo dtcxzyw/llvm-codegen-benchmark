@@ -5,22 +5,21 @@
 .LCPI0_2:
 	.quad	0x3fd34413509f79fb
 func0000000000000007:
-	fli.d	fa5, 1.5
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa3, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
-	fneg.d	fa5, fa5
-	vsetivli	zero, 8, e64, m4, ta, ma
-	vfadd.vf	v16, v16, fa5
-	fld	fa5, %lo(.LCPI0_2)(a0)
-	vfmv.v.f	v20, fa4
-	vfmacc.vf	v20, fa3, v16
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vfwcvt.f.x.v	v16, v12
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfwcvt.f.x.v	v20, v12
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vfmadd.vf	v16, fa5, v20
-	vmfne.vv	v0, v16, v8
+	vfmv.v.f	v12, fa5
+	fli.d	fa5, 1.5
+	fneg.d	fa5, fa5
+	vfadd.vf	v16, v16, fa5
+	lui	a0, %hi(.LCPI0_1)
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfmacc.vf	v12, fa5, v16
+	lui	a0, %hi(.LCPI0_2)
+	fld	fa5, %lo(.LCPI0_2)(a0)
+	vfmadd.vf	v20, fa5, v12
+	vmfne.vv	v0, v20, v8
 	ret
 

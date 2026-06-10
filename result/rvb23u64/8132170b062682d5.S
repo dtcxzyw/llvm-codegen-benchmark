@@ -6,10 +6,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	binvi	a1, a1, 14
 	li	a2, 3
-	sext.w	a1, a1
+	binvi	a1, a1, 14
 	slli	a2, a2, 10
+	sext.w	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

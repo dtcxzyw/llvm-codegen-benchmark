@@ -19,11 +19,11 @@ func000000000000000f:
 func000000000000000a:
 	lui	a2, 8
 	addi	a2, a2, -2
+	lui	a3, 21
 	and	a1, a1, a2
-	lui	a2, 21
-	slli	a0, a0, 47
-	addi	a2, a2, 384
+	addi	a2, a3, 384
 	mul	a1, a1, a2
+	slli	a0, a0, 47
 	srli	a0, a0, 47
 	addw	a0, a0, a1
 	ret

@@ -36,12 +36,12 @@ func0000000000000008:
 	ret
 
 func0000000000000005:
-	lui	a3, 16
 	andi	a1, a1, 1
-	addi	a3, a3, -1
+	lui	a3, 16
 	addi	a1, a1, -1
-	and	a0, a0, a3
+	addi	a3, a3, -1
 	and	a1, a1, a2
+	and	a0, a0, a3
 	and	a1, a1, a3
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

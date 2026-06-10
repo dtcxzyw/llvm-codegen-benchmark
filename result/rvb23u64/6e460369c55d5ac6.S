@@ -4,9 +4,9 @@ func0000000000000003:
 	czero.nez	a2, a3, a2
 	lui	a3, 5
 	addi	a3, a3, 5
+	lui	a4, 1
 	or	a2, a2, a3
-	lui	a3, 1
-	addi	a3, a3, -2024
+	addi	a3, a4, -2024
 	and	a0, a0, a2
 	and	a1, a1, a3
 	or	a0, a0, a1
@@ -14,8 +14,8 @@ func0000000000000003:
 
 func0000000000000009:
 	sext.w	a2, a2
-	li	a3, 816
 	sltiu	a2, a2, 2
+	li	a3, 816
 	czero.nez	a2, a3, a2
 	addiw	a2, a2, -832
 	and	a0, a0, a2
@@ -29,9 +29,9 @@ func0000000000000002:
 	czero.eqz	a2, a3, a2
 	lui	a3, 655352
 	addi	a3, a3, -253
+	lui	a4, 524288
 	or	a2, a2, a3
-	lui	a3, 524288
-	addiw	a3, a3, -1021
+	addiw	a3, a4, -1021
 	and	a0, a0, a2
 	and	a1, a1, a3
 	or	a0, a0, a1

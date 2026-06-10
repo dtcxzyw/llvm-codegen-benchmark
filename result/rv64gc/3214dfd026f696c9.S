@@ -7,8 +7,8 @@ func000000000000000b:
 	ret
 
 func000000000000000d:
-	sub	a0, a0, a2
 	srli	a1, a1, 2
+	sub	a0, a0, a2
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

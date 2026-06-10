@@ -1,28 +1,28 @@
 func0000000000000003:
+	li	a1, 8
 	addi	a0, a0, -1
 	andi	a0, a0, 7
-	li	a1, 8
 	sub	a0, a1, a0
 	ret
 
 func0000000000000007:
+	li	a1, 64
 	addi	a0, a0, 59
 	andi	a0, a0, 63
-	li	a1, 64
 	sub	a0, a1, a0
 	ret
 
 func000000000000000f:
+	li	a1, 32
 	addi	a0, a0, 1
 	andi	a0, a0, 31
-	li	a1, 32
 	sub	a0, a1, a0
 	ret
 
 func000000000000000b:
+	li	a1, 64
 	addi	a0, a0, 1
 	andi	a0, a0, 63
-	li	a1, 64
 	sub	a0, a1, a0
 	ret
 
@@ -32,9 +32,9 @@ func0000000000000001:
 	ret
 
 func0000000000000005:
+	li	a1, 36
 	addi	a0, a0, 4
 	zext.b	a0, a0
-	li	a1, 36
 	sub	a0, a1, a0
 	ret
 
@@ -45,9 +45,9 @@ func0000000000000000:
 	ret
 
 func000000000000000d:
+	li	a1, 32
 	addi	a0, a0, 7
 	andi	a0, a0, 248
-	li	a1, 32
 	sub	a0, a1, a0
 	ret
 

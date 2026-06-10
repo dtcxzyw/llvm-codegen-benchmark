@@ -86,10 +86,10 @@ func0000000000000033:
 
 func0000000000000012:
 	sh2add	a1, a1, a1
+	lui	a2, 313
+	addi	a2, a2, -128
 	slli	a1, a1, 7
-	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -128
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

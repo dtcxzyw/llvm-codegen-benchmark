@@ -75,8 +75,8 @@ func0000000000000024:
 func0000000000000424:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -2
-	li	a0, 362
 	vmsleu.vi	v9, v10, 2
+	li	a0, 362
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

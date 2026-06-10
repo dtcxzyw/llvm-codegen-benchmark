@@ -10,8 +10,8 @@ func0000000000000042:
 	ret
 
 func0000000000000302:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -2
 	snez	a1, a1
 	seqz	a0, a0

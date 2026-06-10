@@ -9,8 +9,8 @@ func0000000000000004:
 	ret
 
 func0000000000000024:
-	addi	a1, a1, -2
 	li	a2, 87
+	addi	a1, a1, -2
 	bltu	a1, a2, .LBB1_2
 	li	a0, 1
 .LBB1_2:

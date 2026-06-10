@@ -7,10 +7,10 @@ func00000000000000b4:
 func0000000000000004:
 	or	a0, a0, a1
 	lui	a1, 1048562
+	lui	a2, 258
 	addw	a0, a0, a1
-	lui	a1, 258
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000024:
@@ -72,20 +72,20 @@ func0000000000000034:
 	ret
 
 func0000000000000008:
+	lui	a2, 1048560
 	or	a0, a0, a1
-	lui	a1, 1048560
-	addi	a2, a1, 1
-	addw	a0, a0, a2
-	sltu	a0, a0, a1
+	addi	a1, a2, 1
+	addw	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000a8:
+	lui	a2, 1048512
 	or	a0, a0, a1
-	lui	a1, 1048512
-	addi	a2, a1, -21
-	addw	a0, a0, a2
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a1, a2, -21
+	addw	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000001:

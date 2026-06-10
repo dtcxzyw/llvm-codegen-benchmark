@@ -1,8 +1,8 @@
 func0000000000000023:
-	sext.w	a2, a0
-	lui	a3, 1
-	addi	a3, a3, 1
-	bltu	a2, a3, .LBB0_2
+	lui	a2, 1
+	sext.w	a3, a0
+	addi	a2, a2, 1
+	bltu	a3, a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
 	slli	a0, a0, 32

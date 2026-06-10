@@ -1,7 +1,7 @@
 func0000000000000108:
-	zext.h	a0, a0
 	zext.h	a2, a2
 	zext.h	a1, a1
+	zext.h	a0, a0
 	maxu	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -44,9 +44,9 @@ func0000000000000089:
 	ret
 
 func0000000000000339:
-	zext.h	a0, a0
 	zext.h	a2, a2
 	zext.h	a1, a1
+	zext.h	a0, a0
 	maxu	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

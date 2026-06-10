@@ -1,11 +1,11 @@
 func0000000000000003:
 	andi	a1, a1, 1
-	andi	a2, a2, 8
 	li	a3, 3
 	slli	a3, a3, 11
+	lui	a4, 2
 	czero.eqz	a1, a3, a1
-	lui	a3, 2
-	addi	a3, a3, -1912
+	addi	a3, a4, -1912
+	andi	a2, a2, 8
 	bseti	a3, a3, 39
 	or	a1, a1, a2
 	andn	a0, a0, a3

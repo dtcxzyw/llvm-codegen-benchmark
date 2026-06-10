@@ -23,8 +23,8 @@ func0000000000000318:
 
 func0000000000000048:
 	srai	a2, a2, 62
-	srli	a0, a0, 62
 	xor	a1, a1, a2
+	srli	a0, a0, 62
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

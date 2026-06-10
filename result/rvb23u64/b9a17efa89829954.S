@@ -25,8 +25,8 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	zext.h	a2, a2
 	lui	a3, 5
+	zext.h	a2, a2
 	addi	a3, a3, -1719
 	xor	a2, a2, a3
 	czero.eqz	a0, a0, a2
@@ -36,8 +36,8 @@ func0000000000000018:
 	ret
 
 func0000000000000003:
-	zext.h	a2, a2
 	lui	a3, 1
+	zext.h	a2, a2
 	addi	a3, a3, -2002
 	xor	a2, a2, a3
 	czero.eqz	a1, a1, a2

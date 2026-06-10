@@ -18,13 +18,13 @@ func000000000000018c:
 
 func0000000000000184:
 	lui	a2, 512
-	li	a3, 27
 	addi	a2, a2, -2048
+	li	a3, 27
 	and	a2, a2, a1
-	srliw	a1, a1, 16
 	slli	a3, a3, 11
-	sltiu	a1, a1, 17
+	srliw	a1, a1, 16
 	xor	a2, a2, a3
+	sltiu	a1, a1, 17
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

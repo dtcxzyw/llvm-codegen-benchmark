@@ -1,9 +1,9 @@
 func0000000000000000:
+	lui	a2, 292864
 	zext.h	a1, a1
+	addi	a2, a2, -256
 	fcvt.s.wu	fa5, a1
-	lui	a1, 292864
-	addi	a1, a1, -256
-	fmv.w.x	fa4, a1
+	fmv.w.x	fa4, a2
 	fdiv.s	fa5, fa5, fa4
 	fli.s	fa4, 1.0
 	fdiv.s	fa5, fa4, fa5

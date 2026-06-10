@@ -8,8 +8,8 @@ func0000000000000006:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -1
 	vadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 3
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -25,8 +25,8 @@ func0000000000000004:
 func00000000000001f8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -1
 	vadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -64,8 +64,8 @@ func00000000000000a8:
 func0000000000000088:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -1
 	vadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -144,8 +144,8 @@ func0000000000000101:
 func00000000000000a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 16
 	vadd.vv	v8, v10, v8
+	lui	a0, 16
 	addi	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -221,8 +221,8 @@ func0000000000000188:
 func00000000000001e6:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 16
 	vadd.vv	v8, v10, v8
+	lui	a0, 16
 	addi	a0, a0, 7
 	vmslt.vx	v0, v8, a0
 	ret
@@ -273,8 +273,8 @@ func0000000000000086:
 func0000000000000108:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 2384
 	vadd.vv	v8, v8, v10
+	lui	a0, 2384
 	addi	a0, a0, 761
 	slli	a0, a0, 9
 	vmsgtu.vx	v0, v8, a0
@@ -290,8 +290,8 @@ func000000000000010c:
 func0000000000000184:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 1048575
 	vadd.vv	v8, v8, v10
+	lui	a0, 1048575
 	addi	a0, a0, 2047
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -335,9 +335,9 @@ func000000000000018a:
 	ret
 
 func0000000000000018:
+	lui	a0, 2575
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 2575
 	vadd.vv	v8, v10, v8
 	addi	a0, a0, -325
 	slli	a0, a0, 13
@@ -348,8 +348,8 @@ func0000000000000018:
 func00000000000001a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -1
 	vadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -371,8 +371,8 @@ func00000000000001ec:
 func0000000000000148:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -7
 	vadd.vv	v8, v10, v8
+	li	a0, -7
 	srli	a0, a0, 1
 	vmsgtu.vx	v0, v8, a0
 	ret

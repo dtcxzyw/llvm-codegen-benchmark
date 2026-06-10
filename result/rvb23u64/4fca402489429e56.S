@@ -14,14 +14,14 @@ func0000000000000011:
 	ret
 
 func0000000000000010:
-	srli	a0, a0, 2
 	lui	a1, 16384
+	srli	a0, a0, 2
 	subw	a0, a1, a0
 	ret
 
 func000000000000000f:
-	srli	a0, a0, 62
 	li	a1, 4
+	srli	a0, a0, 62
 	sub	a0, a1, a0
 	ret
 
@@ -31,8 +31,8 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	srli	a0, a0, 3
 	li	a1, 8
+	srli	a0, a0, 3
 	subw	a0, a1, a0
 	ret
 
@@ -42,8 +42,8 @@ func000000000000000d:
 	ret
 
 func0000000000000013:
-	srli	a0, a0, 4
 	lui	a1, 1048574
+	srli	a0, a0, 4
 	addi	a1, a1, -1811
 	subw	a0, a1, a0
 	ret

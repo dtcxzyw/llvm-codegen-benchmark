@@ -32,8 +32,8 @@ func0000000000000181:
 
 func0000000000000081:
 	srli	a2, a2, 35
-	addiw	a1, a1, -50
 	seqz	a2, a2
+	addiw	a1, a1, -50
 	and	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1

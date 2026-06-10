@@ -60,8 +60,8 @@ func0000000000000008:
 	lui	a1, %hi(.LCPI5_0)
 	ld	a1, %lo(.LCPI5_0)(a1)
 	mulhu	a0, a0, a1
-	lui	a1, 24414
 	srli	a0, a0, 26
+	lui	a1, 24414
 	sext.w	a0, a0
 	addi	a1, a1, 255
 	sltu	a0, a1, a0
@@ -73,8 +73,8 @@ func0000000000000018:
 	lui	a1, %hi(.LCPI6_0)
 	ld	a1, %lo(.LCPI6_0)(a1)
 	mulhu	a0, a0, a1
-	lui	a1, 244
 	srli	a0, a0, 26
+	lui	a1, 244
 	sext.w	a0, a0
 	addi	a1, a1, 575
 	sltu	a0, a1, a0

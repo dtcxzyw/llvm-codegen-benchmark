@@ -14,9 +14,9 @@ func0000000000000181:
 	li	a2, 8
 	czero.eqz	a1, a2, a1
 	li	a2, 1073
-	andi	a0, a0, 16
 	sh3add	a1, a2, a1
 	lui	a2, 2
+	andi	a0, a0, 16
 	addi	a2, a2, 396
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

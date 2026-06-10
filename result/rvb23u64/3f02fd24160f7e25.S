@@ -7,12 +7,12 @@ func0000000000000641:
 	ret
 
 func00000000000000c1:
-	addiw	a0, a0, -4
-	sext.w	a1, a1
 	lui	a2, 8
-	snez	a0, a0
+	sext.w	a1, a1
 	addi	a2, a2, 1269
+	addiw	a0, a0, -4
 	xor	a1, a1, a2
+	snez	a0, a0
 	seqz	a1, a1
 	sh1add	a0, a0, a1
 	ret

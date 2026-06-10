@@ -12,8 +12,8 @@ func00000000000000c3:
 	lui	a0, 1048560
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v10, v10, a0
-	bseti	a0, zero, 32
 	vmseq.vi	v0, v10, 0
+	bseti	a0, zero, 32
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

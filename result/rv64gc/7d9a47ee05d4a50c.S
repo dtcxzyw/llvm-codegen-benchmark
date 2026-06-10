@@ -9,8 +9,8 @@ func0000000000000204:
 
 func0000000000001210:
 	sext.w	a1, a1
-	addiw	a2, a2, -1938
 	lui	a3, 1048575
+	addiw	a2, a2, -1938
 	addi	a3, a3, 221
 	sltu	a2, a2, a3
 	sltu	a1, a1, a3

@@ -20,9 +20,9 @@ func00000000000000aa:
 	ret
 
 func00000000000000a1:
+	li	a2, 1
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 1
 	beq	a1, a2, .LBB2_2
 	li	a1, -16
 	add	a0, a0, a1

@@ -44,9 +44,9 @@ func0000000000000000:
 	mv	a0, a1
 	ret
 .LBB4_2:
-	slliw	a0, a2, 3
-	lui	a1, 5
-	addi	a1, a1, 1028
+	lui	a0, 5
+	slliw	a1, a2, 3
+	addi	a0, a0, 1028
 	or	a0, a0, a1
 	ret
 

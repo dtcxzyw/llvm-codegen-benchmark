@@ -21,12 +21,12 @@ func000000000000001a:
 	ret
 
 func000000000000001c:
-	sext.w	a2, a2
 	li	a3, 104
-	slli	a2, a2, 2
 	mul	a1, a1, a3
-	add	a0, a0, a1
+	sext.w	a2, a2
+	slli	a2, a2, 2
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func000000000000001b:

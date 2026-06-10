@@ -44,9 +44,9 @@ func0000000000000042:
 
 func0000000000000052:
 	sh3add	a1, a2, a1
-	sltu	a1, a0, a1
-	xori	a1, a1, 1
-	seqz	a0, a0
-	or	a0, a0, a1
+	seqz	a2, a0
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	or	a0, a0, a2
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000000:
-	slli	a0, a0, 33
 	bseti	a1, zero, 33
+	slli	a0, a0, 33
 	add	a0, a0, a1
 	ret
 

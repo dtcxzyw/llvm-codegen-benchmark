@@ -1,6 +1,6 @@
 func000000000000014c:
-	zext.b	a0, a0
 	srliw	a1, a1, 31
+	zext.b	a0, a0
 	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	slli	a0, a0, 3
@@ -29,8 +29,8 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	xori	a0, a0, 1

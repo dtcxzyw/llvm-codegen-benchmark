@@ -28,10 +28,10 @@ func0000000000000009:
 
 func000000000000000a:
 	li	a2, 1
+	lui	a3, 32
 	sllw	a1, a2, a1
-	lui	a2, 32
-	addi	a2, a2, -1
-	addw	a1, a1, a2
+	addi	a3, a3, -1
+	addw	a1, a1, a3
 	and	a0, a0, a1
 	ret
 
@@ -44,10 +44,10 @@ func0000000000000001:
 
 func000000000000000f:
 	li	a2, 3
+	lui	a3, 512
 	sllw	a1, a2, a1
-	lui	a2, 512
-	addi	a2, a2, -1
-	addw	a1, a1, a2
+	addi	a3, a3, -1
+	addw	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

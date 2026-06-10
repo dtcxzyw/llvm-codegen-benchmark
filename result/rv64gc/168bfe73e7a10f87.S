@@ -30,9 +30,9 @@ func0000000000000008:
 
 func0000000000000001:
 	feq.s	a2, fa0, fa0
-	xori	a2, a2, 1
 	and	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 1
+	and	a0, a0, a1
 	ret
 
 func000000000000000a:

@@ -1,6 +1,6 @@
 func0000000000000113:
-	add	a0, a0, a1
 	li	a3, -1
+	add	a0, a0, a1
 	srli	a3, a3, 4
 	mv	a2, a0
 	bltu	a0, a3, .LBB0_2
@@ -15,8 +15,8 @@ func0000000000000113:
 	ret
 
 func0000000000000013:
-	add	a0, a0, a1
 	li	a3, -1
+	add	a0, a0, a1
 	srli	a3, a3, 2
 	mv	a2, a0
 	bltu	a0, a3, .LBB1_2
@@ -31,8 +31,8 @@ func0000000000000013:
 	ret
 
 func0000000000000012:
-	add	a0, a0, a1
 	li	a3, -1
+	add	a0, a0, a1
 	srli	a3, a3, 1
 	mv	a2, a0
 	bltu	a0, a3, .LBB2_2

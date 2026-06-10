@@ -13,9 +13,9 @@ func0000000000000001:
 	ret
 
 func0000000000000061:
-	neg	a1, a0
-	max	a0, a0, a1
 	lui	a1, 4095
+	neg	a2, a0
+	max	a0, a0, a2
 	bseti	a1, a1, 63
 	andn	a0, a0, a1
 	seqz	a0, a0

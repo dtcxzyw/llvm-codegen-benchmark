@@ -1,6 +1,6 @@
 func0000000000000113:
-	srai	a1, a1, 3
 	li	a3, -1
+	srai	a1, a1, 3
 	srli	a3, a3, 5
 	mv	a2, a1
 	bltu	a1, a3, .LBB0_2

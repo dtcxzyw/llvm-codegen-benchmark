@@ -1,11 +1,11 @@
 func000000000000000f:
+	lui	a2, 1024
 	add	a0, a0, a1
 	lui	a1, 256
+	addi	a2, a2, -1
 	add	a0, a0, a1
-	lui	a1, 1024
-	addi	a1, a1, -1
-	slli	a1, a1, 21
-	and	a0, a0, a1
+	slli	a2, a2, 21
+	and	a0, a0, a2
 	ret
 
 func0000000000000005:
@@ -37,10 +37,10 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	andi	a0, a0, -2048
 	bclri	a0, a0, 11
 	ret

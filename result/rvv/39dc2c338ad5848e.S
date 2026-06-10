@@ -11,10 +11,10 @@ func0000000000000010:
 func0000000000000012:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
+	vmor.mm	v8, v0, v8
 	vmflt.vf	v9, v12, fa5
 	vmfgt.vf	v10, v12, fa5
 	vmor.mm	v9, v10, v9
-	vmor.mm	v8, v0, v8
 	vmorn.mm	v0, v8, v9
 	ret
 

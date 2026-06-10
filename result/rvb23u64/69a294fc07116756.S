@@ -5,9 +5,9 @@ func0000000000000002:
 
 func0000000000000043:
 	sext.w	a0, a0
-	andi	a1, a1, 511
 	binvi	a0, a0, 14
 	seqz	a0, a0
+	andi	a1, a1, 511
 	slliw	a0, a0, 31
 	or	a0, a0, a1
 	bseti	a0, a0, 25
@@ -15,8 +15,8 @@ func0000000000000043:
 
 func0000000000000055:
 	sext.w	a0, a0
-	andi	a1, a1, 3
 	slti	a0, a0, 5
+	andi	a1, a1, 3
 	xori	a0, a0, 1
 	sh2add	a0, a0, a1
 	addiw	a0, a0, 8

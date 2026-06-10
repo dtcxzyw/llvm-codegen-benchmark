@@ -3,9 +3,9 @@ func000000000000007b:
 	mul	a1, a1, a2
 	slli	a2, a0, 3
 	slli	a0, a0, 4
+	lui	a3, 699051
 	add	a0, a0, a2
-	lui	a2, 699051
-	addi	a2, a2, -1365
+	addi	a2, a3, -1365
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -18,9 +18,9 @@ func000000000000002b:
 	mul	a1, a1, a2
 	slli	a2, a0, 3
 	slli	a0, a0, 4
+	lui	a3, 699051
 	add	a0, a0, a2
-	lui	a2, 699051
-	addi	a2, a2, -1365
+	addi	a2, a3, -1365
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -33,9 +33,9 @@ func0000000000000069:
 	mul	a1, a1, a2
 	slli	a2, a0, 3
 	slli	a0, a0, 4
+	lui	a3, 699051
 	add	a0, a0, a2
-	lui	a2, 699051
-	addi	a2, a2, -1365
+	addi	a2, a3, -1365
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -48,9 +48,9 @@ func000000000000006b:
 	mul	a1, a1, a2
 	slli	a2, a0, 3
 	slli	a0, a0, 5
+	lui	a3, 838861
 	add	a0, a0, a2
-	lui	a2, 838861
-	addi	a2, a2, -819
+	addi	a2, a3, -819
 	add	a0, a0, a1
 	slli	a1, a2, 32
 	srai	a0, a0, 3
@@ -64,9 +64,9 @@ func0000000000000009:
 	li	a2, -416
 	li	a3, 104
 	mul	a1, a1, a2
+	mul	a0, a0, a3
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	mul	a0, a0, a3
 	add	a0, a0, a1
 	srai	a0, a0, 3
 	mul	a0, a0, a2

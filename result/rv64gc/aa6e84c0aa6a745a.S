@@ -1,8 +1,8 @@
 func0000000000000080:
 	slli	a2, a2, 56
+	srli	a2, a2, 40
 	add	a0, a0, a1
 	lui	a1, 648056
-	srli	a2, a2, 40
 	add	a0, a0, a2
 	addi	a1, a1, -1607
 	addw	a0, a0, a1

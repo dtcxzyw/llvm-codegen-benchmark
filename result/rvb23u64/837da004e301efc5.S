@@ -23,9 +23,9 @@ func0000000000000000:
 func000000000000003d:
 	slliw	a1, a1, 20
 	slliw	a0, a0, 28
+	lui	a2, 240
 	or	a0, a0, a1
-	lui	a1, 240
-	addi	a1, a1, 1280
+	addi	a1, a2, 1280
 	or	a0, a0, a1
 	ret
 

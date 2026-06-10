@@ -1,7 +1,7 @@
 func0000000000000044:
 	zext.b	a1, a1
-	addi	a2, a2, 4
 	sltiu	a1, a1, 2
+	addi	a2, a2, 4
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -24,8 +24,8 @@ func0000000000000614:
 
 func0000000000000010:
 	zext.b	a1, a1
-	addi	a2, a2, 2
 	seqz	a1, a1
+	addi	a2, a2, 2
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	add	a0, a0, a1

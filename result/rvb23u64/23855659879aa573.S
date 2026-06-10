@@ -7,8 +7,8 @@ func0000000000000301:
 	ret
 
 func000000000000030c:
-	sext.w	a0, a0
 	snez	a2, a2
+	sext.w	a0, a0
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -39,24 +39,24 @@ func0000000000000042:
 	ret
 
 func000000000000004a:
-	sext.w	a0, a0
 	seqz	a2, a2
+	sext.w	a0, a0
 	or	a1, a1, a2
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000004c:
-	sext.w	a0, a0
 	seqz	a2, a2
+	sext.w	a0, a0
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000304:
-	sext.w	a0, a0
 	snez	a2, a2
+	sext.w	a0, a0
 	or	a1, a1, a2
 	sltiu	a0, a0, 2
 	and	a0, a0, a1

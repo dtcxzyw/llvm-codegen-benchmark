@@ -1,27 +1,27 @@
 func0000000000000012:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
 func000000000000001b:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000002:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000008:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	slli	a0, a0, 63
@@ -30,8 +30,8 @@ func0000000000000008:
 	ret
 
 func000000000000001a:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	slli	a0, a0, 63
@@ -40,15 +40,15 @@ func000000000000001a:
 	ret
 
 func000000000000000a:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	slli	a0, a0, 22
@@ -57,15 +57,15 @@ func0000000000000000:
 	ret
 
 func000000000000000b:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000018:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
 	slli	a0, a0, 22

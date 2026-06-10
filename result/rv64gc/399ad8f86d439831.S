@@ -10,8 +10,8 @@ func0000000000000015:
 
 func000000000000003f:
 	lui	a3, 58787
-	slli	a2, a2, 43
 	slli	a3, a3, 12
+	slli	a2, a2, 43
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -19,8 +19,8 @@ func000000000000003f:
 
 func0000000000000035:
 	lui	a3, 136657
-	slli	a2, a2, 43
 	slli	a3, a3, 9
+	slli	a2, a2, 43
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -40,12 +40,12 @@ func0000000000000010:
 	lui	a3, 240
 	addi	a3, a3, 15
 	slli	a4, a3, 32
+	li	a5, 1
 	add	a3, a3, a4
-	li	a4, 1
-	slli	a4, a4, 56
-	addi	a4, a4, -10
+	slli	a5, a5, 56
 	and	a2, a2, a3
-	mul	a2, a2, a4
+	addi	a5, a5, -10
+	mul	a2, a2, a5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

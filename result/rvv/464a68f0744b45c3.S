@@ -22,20 +22,20 @@ func0000000000000421:
 	ret
 
 func00000000000004c1:
+	li	a0, 85
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
-	li	a0, 85
 	vmseq.vx	v12, v10, a0
 	vmsle.vi	v10, v8, 4
 	vmand.mm	v0, v12, v10
 	ret
 
 func00000000000000ca:
+	lui	a0, 24
+	addi	a0, a0, 1697
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
-	lui	a0, 24
 	vmsgt.vi	v12, v10, -1
-	addi	a0, a0, 1697
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

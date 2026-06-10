@@ -9,10 +9,10 @@ func0000000000000043:
 
 func0000000000000629:
 	li	a3, -1
-	srli	a1, a1, 16
 	slli	a3, a3, 32
 	sltu	a2, a2, a3
 	slli	a2, a2, 5
+	srli	a1, a1, 16
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -21,10 +21,10 @@ func0000000000000629:
 
 func0000000000000209:
 	li	a3, -1
-	srli	a1, a1, 16
 	slli	a3, a3, 32
 	sltu	a2, a2, a3
 	slli	a2, a2, 5
+	srli	a1, a1, 16
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -33,9 +33,9 @@ func0000000000000209:
 
 func0000000000000129:
 	srli	a2, a2, 32
-	srli	a1, a1, 16
 	snez	a2, a2
 	slli	a2, a2, 5
+	srli	a1, a1, 16
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -44,12 +44,12 @@ func0000000000000129:
 
 func0000000000000229:
 	li	a3, -1
-	srli	a1, a1, 16
 	bclri	a3, a3, 32
 	sltu	a2, a3, a2
 	xori	a2, a2, 1
 	slli	a2, a2, 5
 	addiw	a2, a2, 1
+	srli	a1, a1, 16
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -58,9 +58,9 @@ func0000000000000229:
 
 func0000000000000529:
 	srli	a2, a2, 16
-	sltiu	a1, a1, 256
 	snez	a2, a2
 	slli	a2, a2, 4
+	sltiu	a1, a1, 256
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

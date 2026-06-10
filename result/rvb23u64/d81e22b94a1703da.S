@@ -58,9 +58,9 @@ func0000000000000081:
 	ret
 
 func0000000000000d8c:
+	lui	a3, 10
 	add	a1, a1, a2
-	lui	a2, 10
-	addi	a2, a2, -960
+	addi	a2, a3, -960
 	xor	a1, a1, a2
 	xor	a0, a0, a2
 	snez	a1, a1

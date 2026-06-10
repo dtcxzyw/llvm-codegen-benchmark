@@ -43,9 +43,9 @@ func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v8, v8, v10
 	lui	a0, 174763
-	lui	a1, 699051
 	addi	a0, a0, -1366
 	vmv.v.x	v10, a0
+	lui	a1, 699051
 	addi	a1, a1, -1365
 	vmacc.vx	v10, a1, v8
 	vror.vi	v8, v10, 1

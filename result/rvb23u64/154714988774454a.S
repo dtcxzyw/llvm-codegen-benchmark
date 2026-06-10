@@ -21,8 +21,8 @@ func000000000000007f:
 	ret
 
 func0000000000000070:
-	sext.w	a1, a1
 	li	a2, 1239
+	sext.w	a1, a1
 	sh1add	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret

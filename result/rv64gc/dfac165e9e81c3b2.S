@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	fcvt.d.w	fa5, a1
+	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	lui	a0, 16425
 	slli	a0, a0, 36

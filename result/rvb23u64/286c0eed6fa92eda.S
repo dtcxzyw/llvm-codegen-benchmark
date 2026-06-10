@@ -6,9 +6,9 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 1
 	srli	a1, a1, 12
 	ori	a1, a1, -32
+	andi	a0, a0, 1
 	addi	a1, a1, 17
 	czero.nez	a0, a1, a0
 	addi	a0, a0, -17
@@ -22,9 +22,9 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	srli	a1, a1, 12
 	ori	a1, a1, -32
+	andi	a0, a0, 1
 	addi	a1, a1, 17
 	czero.nez	a0, a1, a0
 	addi	a0, a0, -17

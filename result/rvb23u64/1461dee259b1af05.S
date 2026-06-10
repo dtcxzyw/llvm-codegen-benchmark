@@ -33,9 +33,9 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
+	bseti	a3, zero, 56
 	add	a1, a1, a2
-	bseti	a2, zero, 56
-	and	a0, a0, a2
+	and	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

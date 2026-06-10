@@ -1,8 +1,8 @@
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 255
 	vsrl.vi	v10, v10, 16
+	li	a0, 255
 	slli	a0, a0, 32
 	addi	a0, a0, 255
 	vand.vx	v10, v10, a0

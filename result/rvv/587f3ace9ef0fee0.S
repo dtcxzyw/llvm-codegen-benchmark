@@ -1,8 +1,8 @@
 func00000000000000d5:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
-	vsll.vi	v8, v8, 5
 	vadd.vv	v10, v12, v10
+	vsll.vi	v8, v8, 5
 	vnot.v	v8, v8
 	vadd.vv	v8, v8, v10
 	ret
@@ -37,8 +37,8 @@ func00000000000001d5:
 func0000000000000115:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 2
-	vsll.vi	v8, v8, 6
 	vadd.vv	v10, v10, v12
+	vsll.vi	v8, v8, 6
 	vnot.v	v8, v8
 	vadd.vv	v8, v8, v10
 	ret

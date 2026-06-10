@@ -12,8 +12,8 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
-	sub	a2, a2, a0
 	slli	a1, a1, 9
+	sub	a2, a2, a0
 	li	a0, -1
 	add	a1, a1, a2
 	srli	a0, a0, 1

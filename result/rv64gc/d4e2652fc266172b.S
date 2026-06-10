@@ -33,13 +33,13 @@ func0000000000000399:
 	ret
 
 func00000000000002a9:
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	lui	a2, 1048575
-	addi	a1, a1, 906
-	addi	a2, a2, -907
+	addi	a1, a2, 906
 	slt	a1, a1, a0
+	lui	a2, 1048575
 	neg	a1, a1
+	addi	a2, a2, -907
 	and	a1, a1, a2
 	add	a0, a0, a2
 	addw	a0, a0, a1

@@ -24,9 +24,9 @@ func000000000000008c:
 
 func0000000000000081:
 	li	a3, -1
-	xor	a0, a0, a1
 	srli	a3, a3, 1
 	sub	a2, a2, a3
+	xor	a0, a0, a1
 	sltiu	a1, a2, 2
 	seqz	a0, a0
 	or	a0, a0, a1

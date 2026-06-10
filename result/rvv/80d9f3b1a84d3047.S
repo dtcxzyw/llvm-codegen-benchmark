@@ -21,9 +21,9 @@ func0000000000000004:
 	lui	a0, 255181
 	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
-	lui	a0, 278532
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
+	lui	a0, 278532
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v12, fa5
 	fli.s	fa5, 8.0

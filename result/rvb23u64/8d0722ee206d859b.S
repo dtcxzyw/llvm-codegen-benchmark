@@ -46,11 +46,11 @@ func0000000000000024:
 
 func000000000000002c:
 	sext.w	a1, a1
-	zext.h	a2, a2
 	lui	a3, 16
+	zext.h	a2, a2
 	addi	a3, a3, -1
-	snez	a1, a1
 	xor	a2, a2, a3
+	snez	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

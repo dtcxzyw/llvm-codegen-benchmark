@@ -9,18 +9,18 @@ func000000000000001f:
 	ret
 
 func0000000000000010:
-	andi	a3, a1, 1
-	sext.w	a2, a2
+	sext.w	a3, a2
+	andi	a2, a1, 1
 	li	a1, 8
-	beqz	a2, .LBB1_2
-	li	a2, 8
-	add	a0, a0, a2
-	bnez	a3, .LBB1_3
+	beqz	a3, .LBB1_2
+	li	a3, 8
+	add	a0, a0, a3
+	bnez	a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	li	a2, 4
-	add	a0, a0, a2
-	beqz	a3, .LBB1_4
+	li	a3, 4
+	add	a0, a0, a3
+	beqz	a2, .LBB1_4
 .LBB1_3:
 	li	a1, 12
 .LBB1_4:

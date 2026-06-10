@@ -1,8 +1,8 @@
 func00000000000000ff:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 40
-	add	a1, a1, a2
+	slli	a3, a3, 40
+	add	a1, a1, a3
 	mul	a2, a1, a0
 	mulhu	a1, a1, a0
 	mv	a0, a2

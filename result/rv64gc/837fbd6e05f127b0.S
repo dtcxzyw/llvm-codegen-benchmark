@@ -1,71 +1,71 @@
 func00000000000000bd:
-	flt.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa2, fa1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000055:
-	fle.d	a0, fa1, fa2
 	fmv.d.x	fa5, zero
+	fle.d	a0, fa1, fa2
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000033:
-	fle.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
+	fle.d	a0, fa2, fa1
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000005d:
+	li	a0, 125
+	slli	a0, a0, 55
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa1, fa2
-	li	a1, 125
-	slli	a1, a1, 55
-	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000042:
+	lui	a0, 238009
+	slli	a0, a0, 32
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa2, fa1
-	lui	a1, 238009
-	slli	a1, a1, 32
-	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000044:
-	flt.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa2, fa1
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
 
 func00000000000000a8:
+	lui	a0, 32973
+	slli	a0, a0, 35
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa1, fa2
-	lui	a1, 32973
-	slli	a1, a1, 35
-	fmv.d.x	fa5, a1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000059:
-	fle.d	a0, fa1, fa2
-	li	a1, 2047
-	slli	a1, a1, 52
-	fmv.d.x	fa5, a1
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
+	flt.d	a1, fa5, fa0
+	fle.d	a2, fa1, fa2
+	or	a0, a0, a1
+	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
@@ -80,59 +80,59 @@ func0000000000000024:
 	ret
 
 func000000000000003b:
-	fle.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
+	fle.d	a0, fa2, fa1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000008c:
+	li	a0, 543
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	feq.d	a0, fa1, fa2
-	li	a1, 543
-	slli	a1, a1, 53
-	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
 
 func0000000000000058:
-	fle.d	a0, fa1, fa2
 	fmv.d.x	fa5, zero
-	xori	a0, a0, 1
+	fle.d	a0, fa1, fa2
 	feq.d	a1, fa0, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000038:
-	fle.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
-	xori	a0, a0, 1
+	fle.d	a0, fa2, fa1
 	feq.d	a1, fa0, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func000000000000003d:
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
 	fle.d	a0, fa2, fa1
-	li	a1, 1023
-	slli	a1, a1, 52
-	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func00000000000000c5:
-	fle.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
-	fle.d	a1, fa0, fa5
-	xori	a1, a1, 1
+	fle.d	a0, fa0, fa5
+	fle.d	a1, fa2, fa1
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000084:
-	feq.d	a0, fa1, fa2
 	fmv.d.x	fa5, zero
+	feq.d	a0, fa1, fa2
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret

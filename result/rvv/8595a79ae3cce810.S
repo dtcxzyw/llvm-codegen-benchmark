@@ -58,12 +58,13 @@ func0000000000000019:
 	ret
 
 func000000000000000d:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsle.vi	v0, v10, -1
 	lui	a0, 524288
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v9, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsle.vi	v0, v10, -1
 	lui	a0, 786432
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vxm	v9, v9, a0, v0
 	lui	a0, 1044480
 	vandn.vx	v8, v8, a0

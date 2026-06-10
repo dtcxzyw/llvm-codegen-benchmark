@@ -1,25 +1,25 @@
 func0000000000000007:
 	lui	a3, 131071
 	slli	a3, a3, 28
+	li	a4, -1
 	czero.eqz	a2, a3, a2
-	li	a3, -1
-	srli	a3, a3, 24
-	or	a2, a2, a3
+	srli	a4, a4, 24
+	or	a2, a2, a4
 	add	a0, a0, a1
 	and	a0, a0, a2
 	ret
 
 func0000000000000005:
 	add	a0, a0, a1
-	czero.eqz	a1, a0, a2
-	slli	a0, a0, 24
-	srli	a0, a0, 24
+	slli	a1, a0, 24
+	czero.eqz	a0, a0, a2
+	srli	a1, a1, 24
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
-	addi	a2, a2, -4
 	lui	a3, 65535
+	addi	a2, a2, -4
 	slli	a3, a3, 4
 	czero.eqz	a2, a3, a2
 	lui	a3, 1048560

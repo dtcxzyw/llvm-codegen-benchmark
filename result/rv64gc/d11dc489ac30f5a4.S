@@ -1,7 +1,7 @@
 func00000000000000ad:
-	sext.w	a2, a0
-	li	a3, -1086
-	bge	a3, a2, .LBB0_2
+	li	a2, -1086
+	sext.w	a3, a0
+	bge	a2, a3, .LBB0_2
 	li	a1, -49
 	addw	a0, a0, a1
 	ret
@@ -12,9 +12,9 @@ func00000000000000ad:
 	ret
 
 func00000000000000ac:
-	sext.w	a2, a0
-	li	a3, -1086
-	bge	a3, a2, .LBB1_2
+	li	a2, -1086
+	sext.w	a3, a0
+	bge	a2, a3, .LBB1_2
 	li	a1, -49
 	addw	a0, a0, a1
 	ret

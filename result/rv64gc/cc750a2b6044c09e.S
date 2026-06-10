@@ -1,6 +1,6 @@
 func000000000000000a:
-	sext.w	a1, a0
-	lui	a2, 524288
+	lui	a1, 524288
+	sext.w	a2, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
 	addi	a1, a1, -1
@@ -11,11 +11,11 @@ func000000000000000a:
 	ret
 
 func000000000000000b:
-	sext.w	a1, a0
-	li	a2, 64
-	seqz	a1, a1
-	subw	a2, a2, a0
-	addi	a0, a1, -1
-	and	a0, a0, a2
+	li	a1, 64
+	sext.w	a2, a0
+	seqz	a2, a2
+	subw	a1, a1, a0
+	addi	a0, a2, -1
+	and	a0, a0, a1
 	ret
 

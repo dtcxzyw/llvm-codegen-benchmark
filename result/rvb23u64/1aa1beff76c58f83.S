@@ -1,6 +1,6 @@
 func000000000000000f:
-	sext.w	a0, a0
 	li	a1, 240
+	sext.w	a0, a0
 	minu	a0, a0, a1
 	sh1add	a0, a0, a0
 	slli	a0, a0, 3
@@ -8,8 +8,8 @@ func000000000000000f:
 	ret
 
 func0000000000000000:
-	sext.w	a0, a0
 	lui	a1, 1048512
+	sext.w	a0, a0
 	addi	a1, a1, 197
 	minu	a0, a0, a1
 	li	a1, -208
@@ -20,8 +20,8 @@ func0000000000000000:
 	ret
 
 func000000000000000d:
-	sext.w	a0, a0
 	li	a1, 42
+	sext.w	a0, a0
 	minu	a0, a0, a1
 	sh3add	a0, a0, a0
 	addiw	a0, a0, -72

@@ -68,9 +68,9 @@ func000000000000000c:
 func0000000000000030:
 	slli	a1, a1, 15
 	slli	a0, a0, 8
+	lui	a2, 786432
 	or	a0, a0, a1
-	lui	a1, 786432
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	or	a0, a0, a1
 	ret
 

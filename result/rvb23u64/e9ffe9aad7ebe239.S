@@ -15,19 +15,19 @@ func000000000000003e:
 
 func0000000000000073:
 	sh2add	a1, a1, a1
+	lui	a2, 313
+	addi	a2, a2, -124
 	slli	a1, a1, 7
-	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -124
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000032:
 	sh2add	a1, a1, a1
+	lui	a2, 313
+	addi	a2, a2, -124
 	slli	a1, a1, 7
-	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -124
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

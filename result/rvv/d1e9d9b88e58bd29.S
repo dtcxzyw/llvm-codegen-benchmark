@@ -10,8 +10,8 @@ func0000000000000018:
 
 func0000000000000060:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v12, v8
 	vsll.vi	v10, v10, 11
+	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v8, v10
 	bseti	a0, zero, 11
 	vadd.vx	v8, v8, a0
@@ -20,8 +20,8 @@ func0000000000000060:
 
 func00000000000001fe:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v12, v8
 	vadd.vv	v10, v10, v10
+	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v8, v10
 	li	a0, 512
 	vadd.vx	v8, v8, a0

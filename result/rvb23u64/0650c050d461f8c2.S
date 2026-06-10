@@ -28,9 +28,9 @@ func000000000000008f:
 	sext.w	a2, a2
 	sltiu	a2, a2, 4
 	czero.nez	a1, a1, a2
-	lui	a2, 7
 	sh1add.uw	a0, a1, a0
-	addi	a1, a2, -740
+	lui	a1, 7
+	addi	a1, a1, -740
 	add	a0, a0, a1
 	ret
 

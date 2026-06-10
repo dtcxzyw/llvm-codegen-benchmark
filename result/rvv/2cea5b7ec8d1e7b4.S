@@ -26,10 +26,10 @@ func0000000000000048:
 	ret
 
 func0000000000000042:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v12, v10, 0
 	li	a0, 2
 	bseti	a0, a0, 63
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vi	v12, v10, 0
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vmv.v.i	v8, 0

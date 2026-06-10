@@ -18,9 +18,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
+	lui	a0, 4112
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vi	v10, v8, 1
-	lui	a0, 4112
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf8	v8, v10
 	addi	a0, a0, 257

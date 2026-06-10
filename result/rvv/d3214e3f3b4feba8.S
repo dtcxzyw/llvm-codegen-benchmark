@@ -21,8 +21,8 @@ func000000000000000f:
 	li	a0, 44
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	li	a0, 42
 	vadd.vv	v10, v12, v10
+	li	a0, 42
 	vsrl.vx	v10, v10, a0
 	li	a0, 5
 	vmacc.vx	v8, a0, v10
@@ -72,8 +72,8 @@ func000000000000006f:
 	li	a0, 44
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	li	a0, 42
 	vadd.vv	v10, v12, v10
+	li	a0, 42
 	vsrl.vx	v10, v10, a0
 	li	a0, 5
 	vmacc.vx	v8, a0, v10

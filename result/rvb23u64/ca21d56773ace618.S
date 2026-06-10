@@ -1,7 +1,7 @@
 func00000000000000ca:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	li	a2, -1
+	sext.w	a1, a1
 	max	a0, a0, a2
 	slt	a0, a0, a1
 	ret
@@ -41,8 +41,8 @@ func000000000000014a:
 
 func0000000000000146:
 	sext.w	a0, a0
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	max	a0, a0, a2
 	slt	a0, a0, a1
 	ret
@@ -50,8 +50,8 @@ func0000000000000146:
 func000000000000018c:
 	sext.w	a0, a0
 	sext.w	a2, a1
-	addiw	a1, a1, -1
 	xor	a0, a0, a2
+	addiw	a1, a1, -1
 	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
@@ -91,10 +91,10 @@ func000000000000010a:
 func0000000000000024:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sltiu	a2, a1, 64
 	xor	a0, a0, a1
+	sltiu	a1, a1, 64
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 
 func00000000000000c6:

@@ -1,9 +1,9 @@
 func000000000000007c:
 	slli	a2, a2, 53
 	slli	a1, a1, 54
+	lui	a3, 1
 	or	a1, a1, a2
-	lui	a2, 1
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

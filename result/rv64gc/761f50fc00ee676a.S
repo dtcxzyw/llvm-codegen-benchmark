@@ -29,8 +29,8 @@ func0000000000000014:
 
 func0000000000000018:
 	lui	a3, 16
-	lui	a4, 5
 	addi	a3, a3, -1
+	lui	a4, 5
 	and	a2, a2, a3
 	addi	a4, a4, -1719
 	beq	a2, a4, .LBB3_2

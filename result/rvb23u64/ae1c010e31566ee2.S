@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	srli	a0, a0, 5
 	bseti	a1, zero, 63
+	srli	a0, a0, 5
 	add.uw	a0, a0, a1
 	ret
 

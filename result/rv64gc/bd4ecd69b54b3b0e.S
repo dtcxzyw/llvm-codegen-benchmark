@@ -3,8 +3,8 @@ func0000000000000004:
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	li	a0, 511
-	slli	a0, a0, 53
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 53
 	fmv.d.x	fa0, a0
 	flt.d	a0, fa0, fa5
 	bnez	a0, .LBB0_2
@@ -27,8 +27,8 @@ func0000000000000008:
 	ret
 
 func0000000000000002:
-	fadd.d	fa5, fa0, fa0
 	li	a0, -1025
+	fadd.d	fa5, fa0, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa0, a0
 	flt.d	a0, fa5, fa0
@@ -43,8 +43,8 @@ func000000000000000a:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	li	a0, 1
-	slli	a0, a0, 52
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 52
 	fmv.d.x	fa0, a0
 	fle.d	a0, fa5, fa0
 	bnez	a0, .LBB3_2

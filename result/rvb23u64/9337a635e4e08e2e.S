@@ -27,13 +27,13 @@ func0000000000000cca:
 	ret
 
 func00000000000000c6:
+	lui	a3, 372529
+	slli	a3, a3, 2
+	addi	a3, a3, 489
 	add	a2, a2, a0
+	slli	a3, a3, 14
 	slt	a1, a2, a1
-	lui	a2, 372529
-	slli	a2, a2, 2
-	addi	a2, a2, 489
-	slli	a2, a2, 14
-	slt	a0, a0, a2
+	slt	a0, a0, a3
 	and	a0, a0, a1
 	ret
 

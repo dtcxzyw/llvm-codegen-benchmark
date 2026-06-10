@@ -1,6 +1,6 @@
 func000000000000002c:
-	srli	a1, a1, 31
 	addi	a0, a0, -4
+	srli	a1, a1, 31
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

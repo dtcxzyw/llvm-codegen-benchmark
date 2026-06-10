@@ -1,10 +1,10 @@
 func0000000000000003:
 	andi	a1, a1, 1
 	andi	a2, a2, 1
+	slli	a2, a2, 18
 	lui	a3, 1048544
 	czero.nez	a1, a3, a1
 	lui	a3, 2224
-	slli	a2, a2, 18
 	add	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -24,7 +24,7 @@ func0000000000000000:
 	sh2add	a2, a2, a2
 	srai	a1, a1, 63
 	andi	a1, a1, 6
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -32,11 +32,11 @@ func0000000000000001:
 	andi	a1, a1, 1
 	andi	a2, a2, 1
 	lui	a3, 131072
+	lui	a4, 262144
 	addi	a3, a3, -6
+	addi	a4, a4, -2
 	czero.eqz	a2, a3, a2
-	lui	a3, 262144
-	addi	a3, a3, -2
-	czero.eqz	a1, a3, a1
+	czero.eqz	a1, a4, a1
 	addi	a2, a2, 6
 	addi	a1, a1, 2
 	or	a1, a1, a2

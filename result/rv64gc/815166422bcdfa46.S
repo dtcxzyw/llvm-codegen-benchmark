@@ -24,14 +24,14 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
-	slliw	a0, a0, 1
 	lui	a1, 2048
+	slliw	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000002:
-	slliw	a0, a0, 8
 	lui	a1, 3888
+	slliw	a0, a0, 8
 	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret

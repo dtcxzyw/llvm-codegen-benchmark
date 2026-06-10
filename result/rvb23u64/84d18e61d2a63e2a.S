@@ -41,15 +41,15 @@ func0000000000000086:
 func000000000000048a:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sltiu	a0, a0, 15
 	slti	a1, a1, -999
+	sltiu	a0, a0, 15
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000421:
-	sext.w	a0, a0
 	addiw	a1, a1, -2
+	sext.w	a0, a0
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret

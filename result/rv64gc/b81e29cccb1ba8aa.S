@@ -5,8 +5,8 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 7
 	li	a1, 128
+	andi	a0, a0, 7
 	srlw	a0, a1, a0
 	ret
 

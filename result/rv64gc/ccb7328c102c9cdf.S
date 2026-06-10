@@ -16,9 +16,9 @@ func00000000000000a1:
 
 func0000000000000086:
 	slli	a2, a2, 34
+	srli	a2, a2, 34
 	sub	a0, a0, a1
 	lui	a1, 262144
-	srli	a2, a2, 34
 	addw	a0, a0, a2
 	addi	a1, a1, 1
 	slt	a0, a0, a1

@@ -1,15 +1,15 @@
 func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vv	v12, v12, v12
 	vmv.v.i	v16, 0
+	vfmul.vv	v12, v12, v12
 	vfmadd.vv	v8, v12, v16
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vv	v12, v12, v12
 	fli.s	fa5, 1.0
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v16, fa5
+	vfmul.vv	v12, v12, v12
 	vfmadd.vv	v8, v12, v16
 	ret
 

@@ -6,8 +6,8 @@ func0000000000000000:
 	srli	a3, a1, 9
 	mulhu	a2, a3, a2
 	lui	a3, 804435
-	addi	a3, a3, 1536
 	srli	a2, a2, 11
+	addi	a3, a3, 1536
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -18,10 +18,10 @@ func0000000000000000:
 func00000000000000f0:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	lui	a3, 1024162
-	addi	a3, a3, -256
 	mulhu	a2, a1, a2
+	lui	a3, 1024162
 	srli	a2, a2, 26
+	addi	a3, a3, -256
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2

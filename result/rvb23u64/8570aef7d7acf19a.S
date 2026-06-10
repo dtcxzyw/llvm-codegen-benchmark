@@ -23,8 +23,8 @@ func0000000000000005:
 func000000000000000b:
 	fmul.s	fa5, fa0, fa1
 	lui	a0, 205501
-	fabs.s	fa5, fa5
 	addi	a0, a0, -905
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -49,8 +49,8 @@ func0000000000000012:
 func000000000000000d:
 	fmul.s	fa5, fa0, fa1
 	lui	a0, 191934
-	fabs.s	fa5, fa5
 	addi	a0, a0, 1791
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -59,8 +59,8 @@ func000000000000000d:
 func0000000000000004:
 	fmul.s	fa5, fa0, fa1
 	lui	a0, 260096
-	fabs.s	fa5, fa5
 	addi	a0, a0, -1
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

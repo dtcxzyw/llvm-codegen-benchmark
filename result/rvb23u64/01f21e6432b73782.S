@@ -53,11 +53,11 @@ func0000000000000e08:
 	ret
 
 func0000000000000008:
+	lui	a3, 8
 	addi	a2, a2, -3
+	addi	a3, a3, 7
 	add.uw	a0, a2, a0
-	lui	a2, 8
-	addi	a2, a2, 7
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 

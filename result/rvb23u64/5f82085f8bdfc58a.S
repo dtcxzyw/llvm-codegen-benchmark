@@ -1,6 +1,6 @@
 func000000000000018c:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	minu	a1, a1, a2
 	snez	a0, a0
@@ -8,9 +8,9 @@ func000000000000018c:
 	ret
 
 func0000000000000084:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	sltiu	a1, a1, 64
 	sltiu	a0, a0, 65
@@ -18,8 +18,8 @@ func0000000000000084:
 	ret
 
 func0000000000000104:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	minu	a1, a1, a2
 	sltiu	a0, a0, 4

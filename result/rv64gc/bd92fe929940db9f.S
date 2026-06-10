@@ -1,8 +1,8 @@
 func000000000000048c:
 	zext.b	a0, a0
 	addiw	a1, a1, -14
-	sltiu	a1, a1, -5
 	addi	a0, a0, -32
+	sltiu	a1, a1, -5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -26,8 +26,8 @@ func0000000000000484:
 func0000000000000424:
 	zext.b	a0, a0
 	addiw	a1, a1, -9
-	sltiu	a1, a1, 3
 	addi	a0, a0, -6
+	sltiu	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -35,15 +35,15 @@ func0000000000000424:
 func000000000000002c:
 	zext.b	a0, a0
 	addiw	a1, a1, -1
-	snez	a1, a1
 	addi	a0, a0, -13
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000421:
-	zext.b	a0, a0
 	sext.w	a1, a1
+	zext.b	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -52,8 +52,8 @@ func0000000000000421:
 func0000000000000024:
 	zext.b	a0, a0
 	addiw	a1, a1, -1
-	sltiu	a1, a1, 2
 	addi	a0, a0, -132
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -85,8 +85,8 @@ func0000000000000084:
 func0000000000000081:
 	zext.b	a0, a0
 	addiw	a1, a1, -3
-	sltiu	a1, a1, 2
 	addi	a0, a0, -63
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -104,8 +104,8 @@ func000000000000002a:
 func0000000000000481:
 	zext.b	a0, a0
 	addiw	a1, a1, -19
-	sltiu	a1, a1, -2
 	addi	a0, a0, -17
+	sltiu	a1, a1, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -113,16 +113,16 @@ func0000000000000481:
 func0000000000000306:
 	zext.b	a0, a0
 	addiw	a1, a1, 7
-	slti	a1, a1, 64
 	sltiu	a0, a0, 64
+	slti	a1, a1, 64
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000008c:
+	lui	a2, 272
 	zext.b	a0, a0
 	addiw	a1, a1, -32
-	lui	a2, 272
 	addi	a2, a2, -32
 	sltu	a1, a1, a2
 	snez	a0, a0
@@ -149,8 +149,8 @@ func0000000000000c21:
 	ret
 
 func0000000000000028:
-	zext.b	a0, a0
 	andi	a1, a1, -4
+	zext.b	a0, a0
 	addiw	a1, a1, -4
 	snez	a1, a1
 	seqz	a0, a0
@@ -170,8 +170,8 @@ func000000000000030c:
 func000000000000042c:
 	zext.b	a0, a0
 	addiw	a1, a1, -1
-	snez	a1, a1
 	addi	a0, a0, -37
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -194,10 +194,10 @@ func0000000000000584:
 
 func000000000000048a:
 	slli	a0, a0, 56
-	addiw	a1, a1, -97
 	srai	a0, a0, 56
-	sltiu	a1, a1, 6
+	addiw	a1, a1, -97
 	slti	a0, a0, 87
+	sltiu	a1, a1, 6
 	not	a0, a0
 	and	a0, a0, a1
 	ret

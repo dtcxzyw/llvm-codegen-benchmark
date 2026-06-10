@@ -1,14 +1,14 @@
 func0000000000000000:
-	xori	a1, a0, 128
+	lui	a1, 16
 	srli	a2, a0, 8
-	lui	a3, 16
+	addi	a1, a1, -256
+	xori	a3, a0, 128
+	and	a2, a2, a1
 	srliw	a0, a0, 24
-	addi	a3, a3, -256
-	and	a2, a2, a3
-	and	a3, a3, a1
+	and	a1, a1, a3
+	slli	a1, a1, 8
+	slliw	a3, a3, 24
 	or	a0, a0, a2
-	slli	a3, a3, 8
-	slliw	a1, a1, 24
 	or	a1, a1, a3
 	or	a0, a0, a1
 	ret

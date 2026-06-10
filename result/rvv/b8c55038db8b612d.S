@@ -29,9 +29,9 @@ func0000000000000003:
 	ret
 
 func0000000000000009:
+	li	a0, -31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vctz.v	v8, v8
-	li	a0, -31
 	vadd.vx	v8, v8, a0
 	ret
 

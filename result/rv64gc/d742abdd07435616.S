@@ -36,10 +36,10 @@ func000000000000002a:
 	ret
 
 func0000000000000028:
-	sext.w	a0, a0
-	sext.w	a1, a1
 	li	a2, 3
+	sext.w	a1, a1
 	slli	a2, a2, 11
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
 	sltiu	a0, a0, 2
@@ -63,8 +63,8 @@ func0000000000000081:
 
 func0000000000000141:
 	sext.w	a1, a1
-	addiw	a0, a0, -592
 	slti	a1, a1, 3
+	addiw	a0, a0, -592
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -103,8 +103,8 @@ func000000000000018c:
 	ret
 
 func00000000000000c1:
-	srliw	a1, a1, 31
 	addiw	a0, a0, -3
+	srliw	a1, a1, 31
 	seqz	a0, a0
 	and	a0, a0, a1
 	slli	a0, a0, 9
@@ -146,10 +146,10 @@ func0000000000000281:
 func0000000000000306:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	lui	a2, 1048568
-	sltu	a1, a2, a1
 	lui	a2, 8
+	lui	a3, 1048568
 	addi	a2, a2, -1
+	sltu	a1, a3, a1
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	bnez	a0, .LBB14_2

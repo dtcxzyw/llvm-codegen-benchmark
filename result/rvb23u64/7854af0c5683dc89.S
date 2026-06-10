@@ -22,8 +22,8 @@ func0000000000000010:
 	ret
 
 func00000000000000c7:
-	zext.h	a1, a1
 	lui	a2, 16
+	zext.h	a1, a1
 	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1

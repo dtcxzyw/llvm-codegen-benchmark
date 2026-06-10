@@ -15,9 +15,9 @@ func0000000000000015:
 func000000000000003d:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
+	li	a3, 528
 	add	a1, a1, a2
-	li	a2, 528
-	sub	a0, a2, a0
+	sub	a0, a3, a0
 	subw	a0, a0, a1
 	ret
 

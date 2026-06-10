@@ -39,9 +39,9 @@ func0000000000000005:
 	bnez	a0, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
-	slli	a0, a1, 16
-	lui	a1, 983055
-	slli	a1, a1, 4
+	lui	a0, 983055
+	slli	a1, a1, 16
+	slli	a0, a0, 4
 	add	a0, a0, a1
 	ret
 
@@ -59,9 +59,9 @@ func0000000000000002:
 	bnez	a0, .LBB6_2
 	mv	a1, a2
 .LBB6_2:
-	slli	a0, a1, 32
-	li	a1, 1
+	li	a0, 1
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	add	a0, a0, a1
 	ret
 

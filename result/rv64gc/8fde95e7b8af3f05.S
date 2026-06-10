@@ -9,22 +9,21 @@ func0000000000000000:
 .LBB0_2:
 	ret
 
+.LCPI1_0:
+	.quad	1844674407377666048
 func0000000000000003:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	lui	a0, 3277
-	addi	a0, a0, -819
-	slli	a0, a0, 12
-	addi	a0, a0, -819
-	slli	a0, a0, 25
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	ret
 .LBB1_2:
 	lui	a0, 8192
 	addi	a0, a0, -1
+	lui	a2, 1015808
 	add	a0, a0, a1
-	lui	a1, 1015808
-	srli	a1, a1, 2
-	and	a0, a0, a1
+	srli	a2, a2, 2
+	and	a0, a0, a2
 	ret
 
 func0000000000000002:

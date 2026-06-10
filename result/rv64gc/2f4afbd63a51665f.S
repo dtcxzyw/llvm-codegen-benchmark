@@ -1,8 +1,8 @@
 func0000000000000020:
 	sub	a1, a1, a0
 	addiw	a0, a1, -1023
-	addiw	a1, a1, -1017
 	slti	a0, a0, -5
+	addiw	a1, a1, -1017
 	addiw	a0, a0, -1
 	and	a0, a0, a1
 	ret

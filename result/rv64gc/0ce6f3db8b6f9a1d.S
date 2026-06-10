@@ -7,19 +7,19 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	zext.b	a2, a2
 	slli	a1, a1, 48
-	slli	a2, a2, 16
+	zext.b	a2, a2
 	srli	a1, a1, 48
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000003c:
-	zext.b	a2, a2
 	slli	a1, a1, 48
-	slli	a2, a2, 14
+	zext.b	a2, a2
 	srli	a1, a1, 48
+	slli	a2, a2, 14
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -42,8 +42,8 @@ func000000000000003b:
 
 func000000000000003f:
 	slli	a2, a2, 48
-	zext.b	a1, a1
 	srli	a2, a2, 48
+	zext.b	a1, a1
 	or	a0, a0, a2
 	slli	a1, a1, 17
 	or	a0, a0, a1
@@ -51,8 +51,8 @@ func000000000000003f:
 
 func000000000000001f:
 	slli	a2, a2, 48
-	zext.b	a1, a1
 	srli	a2, a2, 48
+	zext.b	a1, a1
 	or	a0, a0, a2
 	slli	a1, a1, 18
 	or	a0, a0, a1

@@ -5,8 +5,8 @@ func000000000000003f:
 	ld	a4, %lo(.LCPI0_0)(a4)
 	mul	a6, a5, a4
 	mulhu	a4, a5, a4
-	add	a3, a3, a4
 	add	a6, a6, a2
+	add	a3, a3, a4
 	sltu	a2, a6, a2
 	add	a0, a0, a6
 	add	a1, a1, a3
@@ -16,19 +16,19 @@ func000000000000003f:
 	ret
 
 func0000000000000017:
-	slli	a6, a5, 32
-	sub	a4, a2, a5
-	sub	a6, a4, a6
-	li	a4, -1
-	bclri	a4, a4, 32
+	li	a6, -1
+	slli	a7, a5, 32
+	bclri	a4, a6, 32
 	mulhsu	a4, a4, a5
-	sltu	a5, a6, a2
-	add	a2, a0, a6
-	add	a3, a3, a4
-	add	a1, a1, a5
+	sub	a5, a2, a5
+	sub	a5, a5, a7
+	sltu	a2, a5, a2
+	add	a3, a3, a2
+	add	a2, a0, a5
 	add	a1, a1, a3
 	sltu	a0, a2, a0
-	add	a1, a1, a0
+	add	a0, a0, a1
+	add	a1, a0, a4
 	mv	a0, a2
 	ret
 
@@ -37,9 +37,9 @@ func000000000000003a:
 	mulhu	a4, a5, a4
 	sub	a5, a2, a5
 	sltu	a2, a5, a2
+	add	a2, a2, a3
 	add	a0, a0, a5
-	add	a3, a3, a4
-	sltu	a4, a0, a5
+	sltu	a3, a0, a5
 	add	a1, a1, a2
 	add	a1, a1, a3
 	add	a1, a1, a4
@@ -50,9 +50,9 @@ func000000000000003e:
 	mulhu	a4, a5, a4
 	sub	a5, a2, a5
 	sltu	a2, a5, a2
+	add	a2, a2, a3
 	add	a0, a0, a5
-	add	a3, a3, a4
-	sltu	a4, a0, a5
+	sltu	a3, a0, a5
 	add	a1, a1, a2
 	add	a1, a1, a3
 	add	a1, a1, a4

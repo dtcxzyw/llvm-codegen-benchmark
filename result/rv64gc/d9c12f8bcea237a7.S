@@ -1,9 +1,9 @@
 func0000000000000003:
 	lui	a3, 2048
+	lui	a4, 1046784
 	and	a2, a2, a3
-	lui	a3, 1046784
-	addi	a3, a3, -1
-	and	a1, a1, a3
+	addi	a4, a4, -1
+	and	a1, a1, a4
 	or	a0, a0, a2
 	or	a0, a0, a1
 	lui	a1, 256
@@ -11,16 +11,16 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	lui	a3, 4
-	and	a2, a2, a3
 	lui	a3, 1047560
+	lui	a4, 4
 	addi	a3, a3, -512
+	and	a2, a2, a4
 	and	a1, a1, a3
-	lui	a3, 8
 	or	a0, a0, a2
+	lui	a2, 8
 	or	a0, a0, a1
-	addi	a3, a3, 5
-	or	a0, a0, a3
+	addi	a2, a2, 5
+	or	a0, a0, a2
 	ret
 
 func0000000000000006:

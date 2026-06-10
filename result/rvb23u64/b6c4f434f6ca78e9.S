@@ -11,8 +11,8 @@ func00000000000001e5:
 	addi	a2, a2, -1901
 	mul	a1, a1, a2
 	lui	a2, 1048575
-	addi	a2, a2, -98
 	addi	a1, a1, 128
+	addi	a2, a2, -98
 	srliw	a1, a1, 13
 	add	a0, a0, a2
 	addw	a0, a0, a1

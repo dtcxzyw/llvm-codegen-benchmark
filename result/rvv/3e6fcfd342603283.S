@@ -12,11 +12,11 @@ func000000000000000f:
 func000000000000001b:
 	li	a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 11
 	vsll.vx	v12, v12, a0
+	vor.vv	v8, v12, v8
+	vsrl.vi	v10, v10, 11
 	li	a0, -1
 	srli	a0, a0, 12
-	vor.vv	v8, v12, v8
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	ret

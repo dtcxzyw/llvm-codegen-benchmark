@@ -8,11 +8,11 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a0
+	lui	a1, 244
+	sext.w	a2, a0
+	addi	a1, a1, 576
+	sltu	a1, a2, a1
 	srliw	a0, a0, 3
-	lui	a2, 244
-	addi	a2, a2, 576
-	sltu	a1, a1, a2
 	neg	a1, a1
 	and	a0, a0, a1
 	ret

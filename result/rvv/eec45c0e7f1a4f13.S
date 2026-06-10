@@ -9,11 +9,12 @@ func0000000000000028:
 	ret
 
 func000000000000002c:
-	vsetivli	zero, 4, e16, mf2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 4
+	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmseq.vi	v0, v10, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, 4
-	vmerge.vim	v10, v10, 2, v0
+	vmerge.vim	v10, v12, 2, v0
 	vmsne.vv	v0, v8, v10
 	ret
 

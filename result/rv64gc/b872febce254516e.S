@@ -1,9 +1,9 @@
 func0000000000000010:
 	slli	a1, a1, 48
-	andi	a2, a2, 1
 	srli	a1, a1, 48
-	addi	a2, a2, -3
+	andi	a2, a2, 1
 	sltiu	a1, a1, 127
+	addi	a2, a2, -3
 	neg	a1, a1
 	or	a1, a1, a2
 	addw	a0, a0, a1

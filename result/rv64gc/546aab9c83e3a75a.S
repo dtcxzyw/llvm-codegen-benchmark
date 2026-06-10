@@ -1,9 +1,9 @@
 func000000000000007c:
 	slliw	a1, a1, 4
 	slli	a1, a1, 2
+	lui	a2, 12
 	add	a0, a0, a1
-	lui	a1, 12
-	addi	a1, a1, 40
+	addi	a1, a2, 40
 	add	a0, a0, a1
 	ret
 

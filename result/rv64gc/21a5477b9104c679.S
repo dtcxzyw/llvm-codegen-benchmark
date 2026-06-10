@@ -18,8 +18,8 @@ func0000000000000012:
 
 func000000000000001e:
 	lui	a3, 524304
-	slli	a1, a1, 16
 	addi	a3, a3, -8
+	slli	a1, a1, 16
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

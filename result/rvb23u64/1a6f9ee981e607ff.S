@@ -26,8 +26,8 @@ func0000000000000003:
 	ret
 
 func0000000000000005:
-	slli	a0, a0, 32
 	bseti	a1, zero, 32
+	slli	a0, a0, 32
 	add	a0, a0, a1
 	srli	a0, a0, 30
 	addi	a0, a0, -4

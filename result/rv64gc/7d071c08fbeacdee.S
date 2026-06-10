@@ -26,13 +26,13 @@ func0000000000000066:
 
 func000000000000006d:
 	li	a1, 2047
-	li	a2, -497
 	slli	a1, a1, 52
-	slli	a2, a2, 53
+	li	a2, -497
 	fmv.d.x	fa5, a1
+	slli	a2, a2, 53
+	fmv.d.x	fa4, a2
 	flt.d	a1, fa1, fa5
-	fmv.d.x	fa5, a2
-	flt.d	a2, fa0, fa5
+	flt.d	a2, fa0, fa4
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -40,13 +40,13 @@ func000000000000006d:
 
 func0000000000000065:
 	li	a1, 2047
-	li	a2, -1025
 	slli	a1, a1, 52
-	slli	a2, a2, 52
+	li	a2, -1025
 	fmv.d.x	fa5, a1
+	slli	a2, a2, 52
+	fmv.d.x	fa4, a2
 	flt.d	a1, fa1, fa5
-	fmv.d.x	fa5, a2
-	fle.d	a2, fa0, fa5
+	fle.d	a2, fa0, fa4
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

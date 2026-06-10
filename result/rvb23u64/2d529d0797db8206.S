@@ -22,8 +22,8 @@ func000000000000000a:
 	slli	a0, a0, 36
 	fmv.d.x	fa4, a0
 	lui	a0, 4101
-	slli	a0, a0, 38
 	fmul.d	fa5, fa5, fa4
+	slli	a0, a0, 38
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa5, fa4
 	ret
@@ -34,8 +34,8 @@ func000000000000000c:
 	slli	a0, a0, 38
 	fmv.d.x	fa4, a0
 	lui	a0, 4113
-	slli	a0, a0, 38
 	fmul.d	fa5, fa5, fa4
+	slli	a0, a0, 38
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
 	ret

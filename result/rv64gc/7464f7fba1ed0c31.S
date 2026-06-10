@@ -1,8 +1,8 @@
 func0000000000000002:
 	fdiv.d	fa5, fa0, fa1
 	li	a1, 1
-	slli	a1, a1, 62
 	fabs.d	fa5, fa5
+	slli	a1, a1, 62
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4
 	and	a0, a0, a1
@@ -12,9 +12,9 @@ func0000000000000002:
 	.quad	0x3fe999999999999a
 func0000000000000004:
 	fdiv.d	fa5, fa0, fa1
+	fabs.d	fa5, fa5
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a1)
-	fabs.d	fa5, fa5
 	flt.d	a1, fa4, fa5
 	and	a0, a0, a1
 	ret

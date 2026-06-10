@@ -19,15 +19,15 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
+	li	a1, 2
 	addiw	a0, a0, -58
 	sltiu	a0, a0, -10
-	li	a1, 2
 	sub	a0, a1, a0
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	li	a1, 1
+	sext.w	a0, a0
 	beq	a0, a1, .LBB4_2
 	li	a0, 32
 	ret

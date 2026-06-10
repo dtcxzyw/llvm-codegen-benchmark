@@ -7,9 +7,9 @@ func0000000000000302:
 	ret
 
 func0000000000000042:
+	li	a0, 16
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vi	v9, v9, 12
-	li	a0, 16
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v8, v8, v9
 	vmand.mm	v0, v0, v8
@@ -49,9 +49,9 @@ func0000000000000210:
 	ret
 
 func0000000000000102:
+	li	a0, 106
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsleu.vi	v9, v9, 4
-	li	a0, 106
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v8, v8, v9
 	vmand.mm	v0, v0, v8

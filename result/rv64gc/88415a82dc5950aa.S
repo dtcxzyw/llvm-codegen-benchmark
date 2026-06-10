@@ -10,11 +10,11 @@ func0000000000000009:
 	or	a1, a1, a2
 	lui	a2, 838861
 	slliw	a1, a1, 2
+	lui	a3, 209715
 	addi	a2, a2, -820
+	addi	a3, a3, 819
 	and	a1, a1, a2
-	lui	a2, 209715
-	addi	a2, a2, 819
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -28,8 +28,8 @@ func000000000000000f:
 
 func000000000000000d:
 	or	a1, a1, a2
-	lui	a2, 77824
 	andi	a1, a1, -64
+	lui	a2, 77824
 	slliw	a1, a1, 24
 	and	a0, a0, a2
 	or	a0, a0, a1

@@ -19,8 +19,8 @@ func0000000000000088:
 	ret
 
 func0000000000000158:
-	sext.w	a1, a1
 	slli	a2, a2, 56
+	sext.w	a1, a1
 	srai	a2, a2, 56
 	slti	a2, a2, 97
 	sltiu	a1, a1, 11
@@ -30,8 +30,8 @@ func0000000000000158:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	zext.b	a2, a2
+	sext.w	a1, a1
 	xori	a2, a2, 58
 	or	a1, a1, a2
 	seqz	a1, a1

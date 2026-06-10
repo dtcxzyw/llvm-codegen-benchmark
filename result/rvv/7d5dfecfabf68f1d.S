@@ -1,7 +1,7 @@
 func0000000000000078:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 7
 	vmv.v.i	v12, 8
+	vand.vi	v10, v10, 7
 	vsll.vv	v10, v12, v10
 	vmsltu.vv	v0, v8, v10
 	ret
@@ -16,25 +16,25 @@ func0000000000000048:
 
 func0000000000000074:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 7
 	vmv.v.i	v12, 8
+	vand.vi	v10, v10, 7
 	vsll.vv	v10, v12, v10
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000061:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 7
 	vmv.v.i	v12, 8
+	vand.vi	v10, v10, 7
 	vsll.vv	v10, v12, v10
 	vmseq.vv	v0, v10, v8
 	ret
 
 func0000000000000064:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 7
 	li	a0, 1000
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vand.vi	v10, v10, 7
 	vsll.vv	v10, v12, v10
 	vmsltu.vv	v0, v10, v8
 	ret

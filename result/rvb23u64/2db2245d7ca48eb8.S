@@ -28,8 +28,8 @@ func0000000000000010:
 
 func0000000000000063:
 	zext.b	a1, a1
-	li	a2, 13
 	sltiu	a1, a1, 72
+	li	a2, 13
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	li	a1, -72
@@ -38,8 +38,8 @@ func0000000000000063:
 
 func0000000000000053:
 	zext.b	a1, a1
-	li	a2, -13
 	sltiu	a1, a1, 46
+	li	a2, -13
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	li	a1, -33

@@ -1,8 +1,8 @@
 func0000000000000084:
-	srli	a2, a2, 3
 	lui	a3, 748983
 	addi	a3, a3, -585
 	slli	a4, a3, 33
+	srli	a2, a2, 3
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	sub	a0, a0, a1
@@ -34,10 +34,10 @@ func0000000000000004:
 	ret
 
 func0000000000000088:
-	srli	a2, a2, 4
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	slli	a4, a3, 32
+	srli	a2, a2, 4
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	sub	a0, a0, a1

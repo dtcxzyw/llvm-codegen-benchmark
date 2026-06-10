@@ -8,18 +8,18 @@ func000000000000007f:
 func000000000000007d:
 	slli	a1, a1, 18
 	slli	a0, a0, 10
+	lui	a2, 1034754
 	or	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	addw	a0, a0, a1
 	ret
 
 func0000000000000004:
 	slli	a1, a1, 8
 	slli	a0, a0, 12
+	lui	a2, 112
 	or	a0, a0, a1
-	lui	a1, 112
-	addi	a1, a1, 456
+	addi	a1, a2, 456
 	addw	a0, a0, a1
 	ret
 

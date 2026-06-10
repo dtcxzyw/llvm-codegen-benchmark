@@ -22,9 +22,9 @@ func0000000000002114:
 	ret
 
 func0000000000000842:
-	li	a0, 92
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v9, v10, 0
+	li	a0, 92
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v10, v8, a0
 	li	a0, 47
@@ -34,9 +34,9 @@ func0000000000000842:
 	ret
 
 func0000000000000a02:
-	li	a0, 92
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v9, v10, 1
+	li	a0, 92
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v10, v8, a0
 	li	a0, 47

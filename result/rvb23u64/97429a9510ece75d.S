@@ -1,16 +1,16 @@
 func0000000000000001:
+	fcvt.w.d	a2, fa0, rtz
 	and	a0, a0, a1
-	fcvt.w.d	a1, fa0, rtz
-	li	a2, -2
-	orn	a0, a2, a0
-	addw	a0, a0, a1
+	li	a1, -2
+	orn	a0, a1, a0
+	addw	a0, a0, a2
 	ret
 
 func0000000000000005:
+	fcvt.w.d	a2, fa0, rtz
 	and	a0, a0, a1
-	fcvt.w.d	a1, fa0, rtz
-	li	a2, -2
-	orn	a0, a2, a0
-	addw	a0, a0, a1
+	li	a1, -2
+	orn	a0, a1, a0
+	addw	a0, a0, a2
 	ret
 

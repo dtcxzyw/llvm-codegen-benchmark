@@ -5,13 +5,13 @@ func0000000000000000:
 	fld	fa4, 8(a0)
 	fld	fa3, 16(a0)
 	fld	fa2, 24(a0)
-	fld	fa1, 32(a0)
-	fld	ft0, 40(a0)
 	fmadd.d	fa5, fa0, fa5, fa4
 	fmadd.d	fa5, fa0, fa5, fa3
 	fmadd.d	fa5, fa0, fa5, fa2
-	fmadd.d	fa5, fa0, fa5, fa1
-	fmadd.d	fa0, fa0, fa5, ft0
+	fld	fa4, 32(a0)
+	fld	fa3, 40(a0)
+	fmadd.d	fa5, fa0, fa5, fa4
+	fmadd.d	fa0, fa0, fa5, fa3
 	ret
 
 .promoted_doubles.func0000000000000000:

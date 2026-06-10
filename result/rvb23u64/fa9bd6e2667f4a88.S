@@ -1,6 +1,6 @@
 func0000000000000063:
-	srliw	a0, a0, 10
 	li	a1, -1288
+	srliw	a0, a0, 10
 	sh3add	a0, a1, a0
 	ret
 

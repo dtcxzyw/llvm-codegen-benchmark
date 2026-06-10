@@ -54,8 +54,8 @@ func0000000000000001:
 	li	a2, 1619
 	mul	a1, a1, a2
 	lui	a2, 8
-	add	a0, a0, a1
-	addi	a1, a2, -1431
+	addi	a2, a2, -1431
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -86,9 +86,9 @@ func0000000000000030:
 func000000000000003a:
 	slli	a2, a0, 7
 	slli	a0, a0, 15
+	lui	a3, 8
 	add	a0, a0, a2
-	lui	a2, 8
-	add	a1, a1, a2
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

@@ -125,8 +125,8 @@ func0000000000000094:
 func0000000000000081:
 	slli	a2, a2, 8
 	or	a0, a0, a1
-	lui	a1, 283893
 	or	a0, a0, a2
+	lui	a1, 283893
 	sext.w	a0, a0
 	addi	a1, a1, -1723
 	xor	a0, a0, a1
@@ -177,8 +177,8 @@ func0000000000000164:
 func0000000000000198:
 	slli	a2, a2, 8
 	or	a0, a0, a1
-	lui	a1, 1
 	or	a0, a0, a2
+	lui	a1, 1
 	sext.w	a0, a0
 	addi	a1, a1, -24
 	sltu	a0, a1, a0

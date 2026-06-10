@@ -1,8 +1,8 @@
 func0000000000000070:
 	addiw	a2, a2, -105
 	li	a3, 600
-	sh2add	a0, a0, a0
 	czero.eqz	a2, a3, a2
+	sh2add	a0, a0, a0
 	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	li	a1, 1098
@@ -19,9 +19,9 @@ func000000000000006a:
 
 func000000000000006f:
 	sext.w	a2, a2
-	slli	a0, a0, 5
 	seqz	a2, a2
 	addi	a2, a2, -1
+	slli	a0, a0, 5
 	andi	a2, a2, -32
 	add	a0, a0, a1
 	add	a0, a0, a2

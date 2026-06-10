@@ -16,8 +16,8 @@ func0000000000000010:
 
 func0000000000000014:
 	li	a1, -1
-	li	a2, 8
 	sllw	a1, a1, a0
+	li	a2, 8
 	not	a1, a1
 	sub	a2, a2, a0
 	sllw	a0, a1, a2

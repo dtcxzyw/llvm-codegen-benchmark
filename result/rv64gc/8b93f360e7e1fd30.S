@@ -1,7 +1,7 @@
 func000000000000001d:
-	sext.w	a1, a0
-	li	a2, 8
-	bne	a1, a2, .LBB0_2
+	li	a1, 8
+	sext.w	a2, a0
+	bne	a2, a1, .LBB0_2
 	li	a0, 511
 	ret
 .LBB0_2:

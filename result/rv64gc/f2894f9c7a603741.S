@@ -1,9 +1,9 @@
 func0000000000000841:
 	addiw	a2, a1, -123
 	addiw	a1, a1, -55
-	addiw	a0, a0, -6
 	seqz	a2, a2
 	seqz	a1, a1
+	addiw	a0, a0, -6
 	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -21,8 +21,8 @@ func0000000000000844:
 	ret
 
 func000000000000084c:
-	sext.w	a0, a0
 	andi	a1, a1, -5
+	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
 	snez	a0, a0
@@ -32,9 +32,9 @@ func000000000000084c:
 func0000000000000842:
 	addiw	a2, a1, -6
 	addiw	a1, a1, -1
-	addiw	a0, a0, -1
 	seqz	a2, a2
 	seqz	a1, a1
+	addiw	a0, a0, -1
 	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

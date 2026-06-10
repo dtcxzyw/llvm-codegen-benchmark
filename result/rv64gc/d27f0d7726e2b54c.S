@@ -16,9 +16,9 @@ func000000000000002b:
 
 func0000000000000027:
 	slli	a2, a2, 48
-	slt	a0, a1, a0
 	srli	a2, a2, 48
 	addi	a2, a2, -2
+	slt	a0, a1, a0
 	seqz	a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -148,8 +148,8 @@ func000000000000004a:
 func00000000000000a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 2
-	li	a0, -7
 	vsub.vv	v8, v8, v10
+	li	a0, -7
 	srli	a0, a0, 1
 	vmsgtu.vx	v0, v8, a0
 	ret

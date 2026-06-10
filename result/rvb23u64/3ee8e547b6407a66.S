@@ -46,8 +46,8 @@ func0000000000000015:
 	ret
 
 func0000000000000038:
-	slli	a0, a0, 24
 	lui	a1, 648056
+	slli	a0, a0, 24
 	addi	a1, a1, -1607
 	addw	a0, a0, a1
 	ret
@@ -58,8 +58,8 @@ func000000000000003d:
 	ret
 
 func000000000000002e:
-	slli	a0, a0, 27
 	lui	a1, 32768
+	slli	a0, a0, 27
 	addw	a0, a0, a1
 	ret
 

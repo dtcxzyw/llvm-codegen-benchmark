@@ -1,8 +1,8 @@
 func00000000000000e4:
-	zext.b	a1, a0
-	li	a2, 160
-	srli	a0, a1, 4
-	bltu	a1, a2, .LBB0_2
+	li	a1, 160
+	zext.b	a2, a0
+	srli	a0, a2, 4
+	bltu	a2, a1, .LBB0_2
 	addi	a0, a0, 55
 	ret
 .LBB0_2:

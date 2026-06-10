@@ -15,9 +15,9 @@ func000000000000000c:
 func0000000000000018:
 	lui	a3, 16
 	addi	a3, a3, -1024
+	lui	a4, 12
 	and	a2, a2, a3
-	lui	a3, 12
-	addi	a3, a3, 768
+	addi	a3, a4, 768
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

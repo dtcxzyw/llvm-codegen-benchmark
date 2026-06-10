@@ -1,6 +1,6 @@
 func0000000000000009:
-	addi	a0, a0, -457
 	lui	a1, 6
+	addi	a0, a0, -457
 	sext.h	a0, a0
 	addi	a1, a1, 1639
 	mul	a0, a0, a1

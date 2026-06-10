@@ -12,13 +12,13 @@ func000000000000000c:
 .LCPI1_0:
 	.quad	-7046029288634856825
 func0000000000000000:
-	lui	a3, 235216
-	lui	a4, %hi(.LCPI1_0)
-	ld	a4, %lo(.LCPI1_0)(a4)
-	addi	a3, a3, -328
-	add	a2, a2, a3
+	lui	a3, %hi(.LCPI1_0)
+	lui	a4, 235216
+	ld	a3, %lo(.LCPI1_0)(a3)
+	addi	a4, a4, -328
+	add	a2, a2, a4
 	xor	a1, a1, a2
-	mul	a1, a1, a4
+	mul	a1, a1, a3
 	xor	a0, a0, a1
 	ret
 

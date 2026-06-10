@@ -1,8 +1,8 @@
 func0000000000000012:
+	li	a3, -15
 	sub	a1, a1, a2
-	li	a2, -15
-	srli	a2, a2, 1
-	bltu	a1, a2, .LBB0_2
+	srli	a3, a3, 1
+	bltu	a1, a3, .LBB0_2
 	li	a0, -8
 	ret
 .LBB0_2:

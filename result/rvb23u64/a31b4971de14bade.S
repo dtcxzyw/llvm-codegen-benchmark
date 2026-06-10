@@ -36,12 +36,12 @@ func00000000000001fe:
 
 func00000000000001fc:
 	add	a1, a1, a2
-	zext.b	a0, a0
-	lui	a2, 244
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
+	zext.b	a0, a0
 	sh2add	a0, a1, a0
-	addi	a1, a2, 576
+	lui	a1, 244
+	addi	a1, a1, 576
 	mulw	a0, a0, a1
 	ret
 

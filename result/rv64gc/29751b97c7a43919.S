@@ -93,9 +93,9 @@ func0000000000000000:
 
 func0000000000000037:
 	li	a2, 1
+	lui	a3, 16
 	sllw	a1, a2, a1
-	lui	a2, 16
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

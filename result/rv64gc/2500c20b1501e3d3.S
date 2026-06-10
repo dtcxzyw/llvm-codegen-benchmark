@@ -1,8 +1,8 @@
 func000000000000002c:
+	zext.b	a2, a2
 	andi	a3, a0, 1
-	zext.b	a0, a2
-	addi	a0, a0, -2
-	snez	a0, a0
+	addi	a2, a2, -2
+	snez	a0, a2
 	beqz	a3, .LBB0_3
 	sext.w	a2, a1
 	seqz	a2, a2

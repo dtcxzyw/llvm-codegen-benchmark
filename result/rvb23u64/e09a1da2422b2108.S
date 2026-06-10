@@ -24,8 +24,8 @@ func0000000000000304:
 
 func000000000000004c:
 	addi	a2, a0, -1
-	addi	a0, a0, -2
 	seqz	a2, a2
+	addi	a0, a0, -2
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

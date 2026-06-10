@@ -1,16 +1,16 @@
 func000000000000000d:
-	fmv.x.d	a0, fa0
-	slli	a0, a0, 1
-	srli	a0, a0, 53
-	li	a1, 107
-	sub	a0, a1, a0
+	li	a0, 107
+	fmv.x.d	a1, fa0
+	slli	a1, a1, 1
+	srli	a1, a1, 53
+	sub	a0, a0, a1
 	ret
 
 func000000000000000f:
-	fmv.x.d	a0, fa0
-	slli	a0, a0, 1
-	srli	a0, a0, 53
-	li	a1, 75
-	sub	a0, a1, a0
+	li	a0, 75
+	fmv.x.d	a1, fa0
+	slli	a1, a1, 1
+	srli	a1, a1, 53
+	sub	a0, a0, a1
 	ret
 

@@ -5,15 +5,15 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret
 
 func000000000000000a:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret
@@ -25,8 +25,8 @@ func0000000000000014:
 	ret
 
 func0000000000000012:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret

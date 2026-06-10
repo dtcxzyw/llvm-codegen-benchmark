@@ -24,9 +24,9 @@ func0000000000000154:
 	ret
 
 func0000000000000119:
+	lui	a0, 917504
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 917504
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0
@@ -50,9 +50,9 @@ func000000000000010c:
 	ret
 
 func0000000000000114:
+	lui	a0, 917504
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 917504
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0
@@ -78,9 +78,9 @@ func0000000000000018:
 	ret
 
 func0000000000000158:
+	lui	a0, 1044480
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 1044480
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0
@@ -88,9 +88,9 @@ func0000000000000158:
 	ret
 
 func0000000000000118:
+	lui	a0, 917504
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 917504
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0
@@ -105,9 +105,9 @@ func00000000000001e1:
 	ret
 
 func0000000000000019:
+	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 524288
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0
@@ -115,9 +115,9 @@ func0000000000000019:
 	ret
 
 func0000000000000159:
+	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 524288
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0
@@ -125,9 +125,9 @@ func0000000000000159:
 	ret
 
 func00000000000001f8:
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 1048560
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0
@@ -135,9 +135,9 @@ func00000000000001f8:
 	ret
 
 func00000000000001f9:
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 1048560
 	vnsrl.wi	v10, v8, 0
 	vandn.vx	v8, v12, a0
 	vandn.vx	v9, v10, a0

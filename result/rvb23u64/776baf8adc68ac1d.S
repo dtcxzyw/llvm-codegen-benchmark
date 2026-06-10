@@ -1,6 +1,6 @@
 func0000000000000020:
-	srli	a0, a0, 10
 	li	a1, 2040
+	srli	a0, a0, 10
 	sh3add	a0, a1, a0
 	li	a1, -5
 	slli	a1, a1, 11
@@ -17,8 +17,8 @@ func0000000000000000:
 	ret
 
 func0000000000000036:
-	srli	a0, a0, 10
 	li	a1, 2040
+	srli	a0, a0, 10
 	sh3add	a0, a1, a0
 	li	a1, -5
 	slli	a1, a1, 11
@@ -26,8 +26,8 @@ func0000000000000036:
 	ret
 
 func0000000000000034:
-	srli	a0, a0, 10
 	li	a1, 2040
+	srli	a0, a0, 10
 	sh3add	a0, a1, a0
 	li	a1, -5
 	slli	a1, a1, 11

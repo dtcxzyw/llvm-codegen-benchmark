@@ -1,14 +1,14 @@
 func000000000000000a:
-	sext.w	a3, a0
-	mul	a0, a0, a2
-	subw	a1, a1, a0
-	min	a0, a3, a1
+	mul	a2, a2, a0
+	sext.w	a0, a0
+	subw	a1, a1, a2
+	min	a0, a0, a1
 	ret
 
 func0000000000000000:
-	sext.w	a3, a0
-	mul	a0, a0, a2
-	subw	a1, a1, a0
-	min	a0, a1, a3
+	mul	a2, a2, a0
+	sext.w	a0, a0
+	subw	a1, a1, a2
+	min	a0, a1, a0
 	ret
 

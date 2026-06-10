@@ -15,9 +15,9 @@ func000000000000000c:
 	ret
 
 func000000000000006c:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	max	a1, a1, zero
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret

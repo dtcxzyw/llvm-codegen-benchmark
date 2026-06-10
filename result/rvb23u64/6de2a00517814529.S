@@ -1,8 +1,8 @@
 func0000000000000015:
 	sext.w	a1, a1
+	lui	a2, 163
 	add	a0, a0, a1
-	lui	a1, 163
-	addi	a1, a1, -1005
+	addi	a1, a2, -1005
 	mul	a0, a0, a1
 	ret
 
@@ -57,9 +57,9 @@ func0000000000000012:
 	ret
 
 func0000000000000000:
+	lui	a2, 13
 	add.uw	a0, a1, a0
-	lui	a1, 13
-	addi	a1, a1, -879
+	addi	a1, a2, -879
 	mul	a0, a0, a1
 	ret
 
@@ -101,16 +101,16 @@ func0000000000000005:
 
 func0000000000000011:
 	sext.w	a1, a1
+	lui	a2, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	ret
 
 func000000000000000d:
+	lui	a2, 1048574
 	add.uw	a0, a1, a0
-	lui	a1, 1048574
-	addi	a1, a1, 819
+	addi	a1, a2, 819
 	mul	a0, a0, a1
 	ret
 

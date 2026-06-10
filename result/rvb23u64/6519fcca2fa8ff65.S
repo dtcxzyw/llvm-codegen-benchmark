@@ -19,13 +19,13 @@ func00000000000001f8:
 	ret
 
 func0000000000000048:
-	sext.w	a2, a0
-	lui	a3, 2
+	lui	a2, 2
+	sext.w	a3, a0
+	addw	a4, a1, a2
+	sltu	a3, a3, a4
 	subw	a0, a0, a1
-	addw	a1, a1, a3
-	sltu	a1, a2, a1
-	czero.eqz	a0, a0, a1
-	czero.nez	a1, a3, a1
+	czero.eqz	a0, a0, a3
+	czero.nez	a1, a2, a3
 	or	a0, a0, a1
 	ret
 

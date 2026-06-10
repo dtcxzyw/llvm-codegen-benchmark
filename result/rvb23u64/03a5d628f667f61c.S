@@ -1,23 +1,23 @@
 func0000000000000040:
-	sext.w	a2, a2
 	sh3add	a0, a1, a0
+	sext.w	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, 8
 	ret
 
 func0000000000000000:
+	lui	a3, 313
 	sh2add	a0, a1, a0
-	lui	a1, 313
 	sh2add.uw	a0, a2, a0
-	addi	a1, a1, -128
+	addi	a1, a3, -128
 	add	a0, a0, a1
 	ret
 
 func0000000000000002:
+	lui	a3, 25
 	sh2add	a0, a1, a0
-	lui	a1, 25
 	sh2add.uw	a0, a2, a0
-	addi	a1, a1, 128
+	addi	a1, a3, 128
 	add	a0, a0, a1
 	ret
 

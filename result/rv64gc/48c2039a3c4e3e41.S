@@ -1,19 +1,19 @@
 func000000000000000f:
+	li	a3, 1
+	slli	a3, a3, 32
 	sub	a1, a1, a2
-	li	a2, 1
+	add	a0, a0, a3
 	srai	a1, a1, 5
-	slli	a2, a2, 32
-	add	a0, a0, a2
 	srai	a0, a0, 32
 	sub	a0, a0, a1
 	ret
 
 func000000000000000b:
+	li	a3, 1
+	slli	a3, a3, 32
 	sub	a1, a1, a2
-	li	a2, 1
+	add	a0, a0, a3
 	srai	a1, a1, 2
-	slli	a2, a2, 32
-	add	a0, a0, a2
 	srai	a0, a0, 32
 	sub	a0, a0, a1
 	ret

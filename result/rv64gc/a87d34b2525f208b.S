@@ -1,6 +1,6 @@
 func00000000000000bb:
-	srli	a3, a1, 2
 	slli	a2, a2, 32
+	srli	a3, a1, 2
 	srli	a2, a2, 32
 	sub	a2, a2, a3
 	add	a0, a0, a1

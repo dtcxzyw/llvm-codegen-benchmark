@@ -9,10 +9,10 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v8, v8, 7
 	li	a0, 16
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
+	vand.vi	v8, v8, 7
 	vmerge.vim	v10, v10, 8, v0
 	vor.vv	v8, v10, v8
 	vsll.vi	v8, v8, 4

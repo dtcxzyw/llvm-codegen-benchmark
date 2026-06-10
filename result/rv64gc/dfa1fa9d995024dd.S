@@ -1,13 +1,13 @@
 func0000000000000002:
-	slli	a0, a0, 32
 	lui	a1, 209762
+	lui	a2, 134
+	slli	a0, a0, 32
+	addi	a2, a2, -323
 	srli	a0, a0, 32
 	addi	a1, a1, 841
+	slli	a2, a2, 12
 	xor	a0, a0, a1
-	lui	a1, 134
-	addi	a1, a1, -323
-	slli	a1, a1, 12
-	addi	a1, a1, -1401
+	addi	a1, a2, -1401
 	mul	a0, a0, a1
 	ret
 

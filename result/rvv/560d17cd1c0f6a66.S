@@ -10,8 +10,8 @@ func0000000000000014:
 func0000000000000010:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 16
 	vwaddu.wv	v12, v10, v14
+	lui	a0, 16
 	addi	a0, a0, -5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v12

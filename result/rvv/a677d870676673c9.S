@@ -1,8 +1,8 @@
 func0000000000000001:
+	li	a0, 48
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsll.vi	v9, v9, 2
 	vsll.vi	v8, v8, 4
-	li	a0, 48
 	vand.vi	v9, v9, 12
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v9

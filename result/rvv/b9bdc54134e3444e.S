@@ -9,8 +9,8 @@ func0000000000000366:
 func000000000000030a:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v10, -1
-	li	a0, 59
 	vmerge.vvm	v8, v10, v8, v0
+	li	a0, 59
 	vmsgt.vx	v0, v8, a0
 	vadd.vi	v8, v8, 4, v0.t
 	ret
@@ -38,9 +38,9 @@ func000000000000032a:
 	addi	a0, a0, -836
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vx	v0, v10, a0
+	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 523342
 	addi	a0, a0, -1428
-	vmerge.vvm	v8, v10, v8, v0
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 525234
 	addi	a0, a0, 1427

@@ -22,8 +22,8 @@ func000000000000018b:
 
 func000000000000010f:
 	sltiu	a2, a2, 2
-	slli	a1, a1, 3
 	xori	a2, a2, 1
+	slli	a1, a1, 3
 	add	a0, a0, a1
 	slli	a2, a2, 3
 	add	a0, a0, a2
@@ -37,8 +37,8 @@ func000000000000018f:
 
 func0000000000000300:
 	srli	a2, a2, 11
-	slli	a1, a1, 4
 	snez	a2, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	slli	a2, a2, 1
 	add	a0, a0, a2

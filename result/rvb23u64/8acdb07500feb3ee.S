@@ -7,8 +7,8 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sext.b	a0, a0
 	lui	a1, 1048320
+	sext.b	a0, a0
 	srli	a0, a0, 63
 	czero.nez	a0, a1, a0
 	lui	a1, 512
@@ -22,20 +22,20 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	zext.b	a0, a0
 	lui	a1, 983040
+	zext.b	a0, a0
 	sltiu	a0, a0, 32
 	addi	a1, a1, -8
+	lui	a2, 131072
 	czero.eqz	a0, a1, a0
-	lui	a1, 131072
-	addi	a1, a1, 361
+	addi	a1, a2, 361
 	add	a0, a0, a1
 	ret
 
 func0000000000000014:
+	li	a1, -7
 	zext.b	a0, a0
 	sltiu	a0, a0, 58
-	li	a1, -7
 	czero.nez	a0, a1, a0
 	addi	a0, a0, -48
 	ret
@@ -53,9 +53,9 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
+	li	a1, 6
 	zext.b	a0, a0
 	sltiu	a0, a0, 97
-	li	a1, 6
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 5
 	ret

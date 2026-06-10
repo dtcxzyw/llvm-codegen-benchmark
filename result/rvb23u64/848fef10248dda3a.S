@@ -4,8 +4,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	ori	a0, a0, 4
 	li	a1, -12
+	ori	a0, a0, 4
 	zext.w	a1, a1
 	and	a0, a0, a1
 	ret

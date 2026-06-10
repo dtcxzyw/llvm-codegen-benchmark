@@ -1,9 +1,9 @@
 func0000000000000002:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
-	li	a0, 32
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v8, v0
+	li	a0, 32
 	vmv.v.x	v8, a0
 	li	a0, 48
 	vmerge.vxm	v8, v8, a0, v0

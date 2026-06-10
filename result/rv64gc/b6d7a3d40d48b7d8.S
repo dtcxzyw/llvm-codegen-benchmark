@@ -9,12 +9,12 @@ func0000000000000181:
 	ret
 
 func0000000000000101:
-	zext.b	a2, a2
 	zext.b	a1, a1
+	zext.b	a2, a2
 	sltiu	a3, a1, 29
+	not	a3, a3
 	xor	a1, a1, a2
-	not	a2, a3
-	and	a0, a0, a2
+	and	a0, a0, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

@@ -43,8 +43,8 @@ func0000000000002181:
 
 func0000000000000581:
 	xori	a2, a2, 48
-	snez	a1, a1
 	xori	a0, a0, 8
+	snez	a1, a1
 	or	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret

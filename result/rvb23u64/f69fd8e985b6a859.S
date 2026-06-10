@@ -16,9 +16,9 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
+	bseti	a1, zero, 32
 	slli	a0, a0, 32
 	neg	a0, a0
-	bseti	a1, zero, 32
 	slt	a0, a0, a1
 	ret
 

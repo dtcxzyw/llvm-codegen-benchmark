@@ -8,9 +8,9 @@ func00000000000006a8:
 	ret
 
 func00000000000006a4:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
-	li	a0, 32
 	vsra.vx	v10, v10, a0
 	vadd.vv	v10, v12, v10
 	vadd.vi	v10, v10, -1

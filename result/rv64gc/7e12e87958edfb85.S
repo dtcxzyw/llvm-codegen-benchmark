@@ -46,8 +46,8 @@ func0000000000000d8c:
 
 func0000000000000089:
 	sext.w	a3, a2
-	sltu	a0, a0, a1
 	xor	a2, a2, a3
+	sltu	a0, a0, a1
 	seqz	a1, a2
 	not	a0, a0
 	and	a0, a0, a1

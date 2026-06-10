@@ -20,20 +20,20 @@ func000000000000018c:
 	lui	a2, 131072
 	addi	a2, a2, -1
 	xor	a1, a1, a2
-	lui	a2, 1046356
 	snez	a1, a1
+	lui	a2, 1046356
 	czero.eqz	a0, a1, a0
-	lui	a1, 912318
-	addi	a2, a2, 1739
-	czero.eqz	a0, a2, a0
-	addi	a1, a1, -16
-	add	a0, a0, a1
+	addi	a1, a2, 1739
+	lui	a2, 912318
+	czero.eqz	a0, a1, a0
+	addi	a2, a2, -16
+	add	a0, a0, a2
 	ret
 
 func0000000000000024:
 	addi	a1, a1, -90
-	sltiu	a0, a0, 271
 	seqz	a1, a1
+	sltiu	a0, a0, 271
 	and	a0, a0, a1
 	li	a1, 10
 	czero.nez	a0, a1, a0

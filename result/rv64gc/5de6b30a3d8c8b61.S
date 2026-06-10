@@ -1,6 +1,6 @@
 func0000000000000021:
-	andi	a0, a0, 1
 	addiw	a2, a2, -1
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	addiw	a2, a2, 4
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -40,8 +40,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	addiw	a2, a2, -1
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0

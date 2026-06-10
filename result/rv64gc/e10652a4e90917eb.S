@@ -7,8 +7,8 @@ func0000000000000021:
 
 func000000000000010a:
 	sltiu	a2, a2, 2
-	slti	a1, a1, 20
 	xori	a2, a2, 1
+	slti	a1, a1, 20
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

@@ -97,8 +97,8 @@ func0000000000000884:
 
 func0000000000000988:
 	addi	a2, a2, 1
-	sltiu	a0, a0, 8
 	xor	a1, a1, a2
+	sltiu	a0, a0, 8
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

@@ -25,10 +25,10 @@ func0000000000000020:
 
 func0000000000000063:
 	lui	a0, 272
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vor.vv	v8, v8, v10
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgtu.vx	v0, v12, a0
+	vor.vv	v8, v8, v10
 	li	a0, 256
 	vor.vx	v8, v8, a0, v0.t
 	ret
@@ -60,10 +60,10 @@ func000000000000002b:
 
 func0000000000000023:
 	lui	a0, 272
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vor.vv	v8, v8, v10
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgtu.vx	v0, v12, a0
+	vor.vv	v8, v8, v10
 	li	a0, 256
 	vor.vx	v8, v8, a0, v0.t
 	ret
@@ -71,8 +71,8 @@ func0000000000000023:
 func0000000000000010:
 	lui	a0, 262144
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vv	v8, v8, v10
 	vmsltu.vx	v0, v12, a0
+	vor.vv	v8, v8, v10
 	lui	a0, 786432
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -106,8 +106,8 @@ func0000000000000005:
 func0000000000000013:
 	li	a0, 1501
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vv	v8, v8, v10
 	vmsltu.vx	v0, v12, a0
+	vor.vv	v8, v8, v10
 	li	a0, 32
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -116,8 +116,8 @@ func0000000000000013:
 func0000000000000028:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vor.vv	v8, v8, v10
 	vmsgt.vx	v0, v12, a0
+	vor.vv	v8, v8, v10
 	lui	a0, 8
 	vor.vx	v8, v8, a0, v0.t
 	ret

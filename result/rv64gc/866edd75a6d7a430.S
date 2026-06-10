@@ -1,8 +1,8 @@
 func0000000000000021:
-	srli	a0, a0, 3
 	lui	a1, 838861
 	addi	a1, a1, -819
 	slli	a2, a1, 32
+	srli	a0, a0, 3
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	addiw	a0, a0, -11
@@ -10,10 +10,10 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	srli	a0, a0, 3
 	lui	a1, 838861
 	addi	a1, a1, -819
 	slli	a2, a1, 32
+	srli	a0, a0, 3
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	slli	a0, a0, 32
@@ -35,12 +35,12 @@ func0000000000000028:
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
 	srai	a0, a0, 4
-	li	a2, -1
-	slli	a2, a2, 63
 	mul	a0, a0, a1
-	addi	a1, a2, 63
-	and	a0, a0, a1
-	sltu	a0, a2, a0
+	li	a1, -1
+	slli	a1, a1, 63
+	addi	a2, a1, 63
+	and	a0, a0, a2
+	sltu	a0, a1, a0
 	ret
 
 func000000000000000c:
@@ -52,10 +52,10 @@ func000000000000000c:
 	ret
 
 func000000000000002c:
-	srli	a0, a0, 2
 	lui	a1, 699051
 	addi	a1, a1, -1365
 	slli	a2, a1, 32
+	srli	a0, a0, 2
 	add	a1, a1, a2
 	mulw	a0, a0, a1
 	snez	a0, a0
@@ -89,13 +89,13 @@ func0000000000000038:
 	ret
 
 func0000000000000008:
-	srli	a1, a0, 63
-	li	a2, -1
-	add	a0, a0, a1
-	slli	a2, a2, 63
+	li	a1, -1
+	srli	a2, a0, 63
+	add	a0, a0, a2
+	slli	a1, a1, 63
 	srai	a0, a0, 1
-	addi	a1, a2, 63
-	and	a0, a0, a1
-	sltu	a0, a2, a0
+	addi	a2, a1, 63
+	and	a0, a0, a2
+	sltu	a0, a1, a0
 	ret
 

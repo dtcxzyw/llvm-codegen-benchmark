@@ -17,8 +17,8 @@ func0000000000000074:
 	ret
 
 func0000000000000028:
-	slli	a0, a0, 32
 	li	a1, -1
+	slli	a0, a0, 32
 	srli	a0, a0, 32
 	slli	a1, a1, 63
 	addi	a0, a0, -1
@@ -52,8 +52,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000078:
-	slli	a0, a0, 32
 	lui	a1, 2
+	slli	a0, a0, 32
 	srli	a0, a0, 32
 	addi	a0, a0, 7
 	andi	a0, a0, -8

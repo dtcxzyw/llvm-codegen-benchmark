@@ -1,6 +1,6 @@
 func000000000000000f:
-	slli	a0, a0, 32
 	bseti	a1, zero, 53
+	slli	a0, a0, 32
 	sub	a0, a0, a1
 	fmv.d.x	fa0, a0
 	ret

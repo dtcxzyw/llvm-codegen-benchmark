@@ -42,9 +42,9 @@ func000000000000002c:
 	ret
 
 func0000000000000024:
-	zext.b	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
+	zext.b	a0, a0
 	xori	a1, a1, 3
 	sltu	a0, a0, a1
 	ret
@@ -52,8 +52,8 @@ func0000000000000024:
 func0000000000000028:
 	zext.b	a0, a0
 	sext.w	a1, a1
-	seqz	a1, a1
 	sltiu	a0, a0, 32
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

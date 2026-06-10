@@ -1,9 +1,9 @@
 func0000000000000005:
 	sext.w	a1, a1
 	max	a1, a1, zero
+	lui	a2, 524288
 	sub	a1, a1, a0
-	lui	a0, 524288
-	addi	a0, a0, -1
+	addi	a0, a2, -1
 	addw	a0, a0, a1
 	ret
 

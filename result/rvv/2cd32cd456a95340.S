@@ -10,10 +10,10 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vxor.vv	v10, v10, v12
 	li	a0, 13
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	vxor.vv	v10, v10, v12
 	vxor.vv	v8, v8, v10
 	ret
 

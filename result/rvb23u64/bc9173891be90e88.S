@@ -12,8 +12,8 @@ func000000000000001a:
 	ret
 
 func0000000000000010:
-	not	a2, a2
 	sh3add	a0, a1, a0
+	not	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, -8
 	ret

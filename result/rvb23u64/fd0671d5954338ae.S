@@ -40,8 +40,8 @@ func0000000000000040:
 	ret
 
 func0000000000000033:
-	zext.w	a2, a2
 	lui	a3, 2
+	zext.w	a2, a2
 	addi	a3, a3, 368
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -71,9 +71,9 @@ func000000000000003e:
 func000000000000004c:
 	sext.w	a2, a2
 	sh2add	a1, a2, a1
-	lui	a2, 320
 	sh2add	a0, a0, a1
-	addi	a1, a2, -928
+	lui	a1, 320
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 

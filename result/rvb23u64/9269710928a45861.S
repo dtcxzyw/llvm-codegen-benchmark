@@ -26,11 +26,11 @@ func0000000000000066:
 
 func000000000000002a:
 	sext.w	a2, a2
+	lui	a3, 1048568
 	sext.w	a1, a1
+	addi	a3, a3, 1015
 	max	a1, a1, a2
-	lui	a2, 1048568
-	addi	a2, a2, 1015
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	slt	a0, a1, a0
 	ret
 

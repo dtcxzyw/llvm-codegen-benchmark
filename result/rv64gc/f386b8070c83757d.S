@@ -1,12 +1,12 @@
 func0000000000000000:
-	add	a0, a0, a2
 	srliw	a1, a1, 6
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000025:
-	add	a0, a0, a2
 	srliw	a1, a1, 24
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -17,8 +17,8 @@ func0000000000000020:
 	ret
 
 func0000000000000003:
-	add	a0, a0, a2
 	srliw	a1, a1, 1
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

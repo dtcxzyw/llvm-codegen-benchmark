@@ -1,5 +1,4 @@
 func0000000000000003:
-	andi	a0, a0, 1
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
@@ -9,6 +8,7 @@ func0000000000000003:
 	sh1add	a2, a2, a2
 	slli	a2, a2, 2
 	sub	a1, a1, a2
+	andi	a0, a0, 1
 	addi	a1, a1, -12
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 12

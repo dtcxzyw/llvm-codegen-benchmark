@@ -8,8 +8,8 @@ func0000000000000042:
 
 func0000000000000602:
 	zext.b	a2, a2
-	addi	a1, a1, -2
 	sltiu	a2, a2, 4
+	addi	a1, a1, -2
 	xori	a2, a2, 1
 	seqz	a1, a1
 	and	a1, a1, a2
@@ -18,8 +18,8 @@ func0000000000000602:
 
 func0000000000000202:
 	zext.b	a2, a2
-	addi	a1, a1, -64
 	sltiu	a2, a2, 8
+	addi	a1, a1, -64
 	xori	a2, a2, 1
 	seqz	a1, a1
 	and	a1, a1, a2

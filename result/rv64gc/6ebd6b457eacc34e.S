@@ -1,7 +1,7 @@
 func0000000000000021:
 	andi	a1, a1, 1
-	lui	a3, 256
 	addi	a1, a1, -1
+	lui	a3, 256
 	and	a1, a1, a3
 	lui	a3, 16
 	or	a1, a1, a2
@@ -14,8 +14,8 @@ func0000000000000021:
 
 func0000000000000001:
 	andi	a1, a1, 1
-	lui	a3, 786432
 	addi	a1, a1, -1
+	lui	a3, 786432
 	and	a1, a1, a3
 	lui	a3, 262144
 	or	a1, a1, a2

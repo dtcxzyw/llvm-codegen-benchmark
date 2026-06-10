@@ -37,12 +37,12 @@ func00000000000001de:
 	ret
 
 func000000000000009a:
+	li	a3, -1
 	not	a2, a2
+	slli	a3, a3, 32
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	or	a1, a1, a2
-	add	a0, a0, a1
+	or	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func0000000000000110:
@@ -53,12 +53,12 @@ func0000000000000110:
 	ret
 
 func00000000000000da:
+	li	a3, -1
 	not	a2, a2
+	slli	a3, a3, 32
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	or	a1, a1, a2
-	add	a0, a0, a1
+	or	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func00000000000000d0:

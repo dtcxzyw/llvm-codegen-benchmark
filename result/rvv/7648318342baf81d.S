@@ -22,9 +22,9 @@ func000000000000000f:
 	ret
 
 func0000000000000007:
+	li	a0, 56
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 3
-	li	a0, 56
 	vand.vx	v12, v12, a0
 	vand.vi	v10, v10, 7
 	vor.vv	v10, v12, v10
@@ -113,10 +113,10 @@ func0000000000000001:
 	ret
 
 func0000000000000005:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v12, v12, v12
 	lui	a0, 1048568
 	addi	a1, a0, 254
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vv	v12, v12, v12
 	vand.vx	v12, v12, a1
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v12, v10

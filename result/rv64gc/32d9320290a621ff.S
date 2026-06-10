@@ -67,12 +67,12 @@ func00000000000000c4:
 
 func00000000000000c8:
 	lui	a0, 2048
-	lui	a1, 260096
 	fmv.w.x	fa5, a0
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa0
-	fmv.w.x	fa5, a1
+	feq.s	a1, fa0, fa4
 	xori	a0, a0, 1
-	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 

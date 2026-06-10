@@ -1,10 +1,10 @@
 func0000000000000014:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 9
-	lui	a0, 21
 	vand.vi	v10, v10, 15
-	addi	a0, a0, 384
 	vmsltu.vv	v0, v10, v8
+	lui	a0, 21
+	addi	a0, a0, 384
 	vmv.v.x	v8, a0
 	lui	a0, 1048555
 	addi	a0, a0, -384
@@ -16,8 +16,8 @@ func0000000000000001:
 	vsrl.vi	v10, v10, 16
 	lui	a0, 1048575
 	vandn.vx	v10, v10, a0
-	li	a0, -22
 	vmseq.vv	v0, v10, v8
+	li	a0, -22
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret

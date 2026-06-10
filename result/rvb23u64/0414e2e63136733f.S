@@ -6,8 +6,8 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	or	a1, a1, a3
 	or	a0, a0, a2
+	or	a1, a1, a3
 	sltiu	a0, a0, 10
 	czero.nez	a0, a0, a1
 	ret
@@ -15,8 +15,8 @@ func0000000000000024:
 func0000000000000028:
 	or	a0, a0, a2
 	or	a1, a1, a3
-	snez	a1, a1
 	sltiu	a0, a0, 100
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -31,17 +31,17 @@ func000000000000002c:
 .LCPI4_0:
 	.quad	542101086242752217
 func0000000000000038:
+	lui	a4, %hi(.LCPI4_0)
+	ld	a4, %lo(.LCPI4_0)(a4)
+	lui	a5, 500149
 	or	a0, a0, a2
+	slli	a5, a5, 25
 	or	a1, a1, a3
-	lui	a2, %hi(.LCPI4_0)
-	lui	a3, 500149
-	ld	a2, %lo(.LCPI4_0)(a2)
-	slli	a3, a3, 25
-	addi	a3, a3, -1
-	sltu	a0, a3, a0
-	xor	a3, a1, a2
-	czero.nez	a0, a0, a3
-	sltu	a1, a2, a1
+	addi	a5, a5, -1
+	xor	a2, a1, a4
+	sltu	a0, a5, a0
+	czero.nez	a0, a0, a2
+	sltu	a1, a4, a1
 	or	a0, a0, a1
 	ret
 
@@ -50,8 +50,8 @@ func0000000000000038:
 func0000000000000034:
 	lui	a4, %hi(.LCPI5_0)
 	ld	a4, %lo(.LCPI5_0)(a4)
-	or	a1, a1, a3
 	or	a0, a0, a2
+	or	a1, a1, a3
 	sltu	a0, a0, a4
 	czero.nez	a0, a0, a1
 	ret

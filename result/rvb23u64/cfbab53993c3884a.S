@@ -1,22 +1,22 @@
 func000000000000018c:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	neg	a0, a0
 	ret
 
 func00000000000000c1:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	slti	a1, a1, 1000
 	czero.nez	a0, a1, a0
 	neg	a0, a0
 	ret
 
 func0000000000000181:
-	sext.w	a1, a1
 	addiw	a0, a0, -18
+	sext.w	a1, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	neg	a0, a0
@@ -31,8 +31,8 @@ func000000000000014a:
 	ret
 
 func000000000000018a:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	sgtz	a0, a0
 	czero.eqz	a0, a0, a1
 	neg	a0, a0

@@ -33,11 +33,11 @@ func0000000000000102:
 	ret
 
 func0000000000000048:
-	slli	a0, a0, 48
 	lui	a2, 16
-	srli	a0, a0, 48
 	addi	a2, a2, -2
+	slli	a0, a0, 48
 	and	a1, a1, a2
+	srli	a0, a0, 48
 	addi	a1, a1, -10
 	seqz	a1, a1
 	sltiu	a0, a0, 173
@@ -55,10 +55,10 @@ func0000000000000318:
 
 func0000000000000502:
 	slli	a0, a0, 48
-	andi	a1, a1, 14
 	srli	a0, a0, 48
-	seqz	a1, a1
+	andi	a1, a1, 14
 	addi	a0, a0, -64
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

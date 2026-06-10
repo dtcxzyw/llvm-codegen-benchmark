@@ -7,8 +7,8 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	andi	a1, a1, 7
 	li	a2, 273
+	andi	a1, a1, 7
 	mul	a1, a1, a2
 	or	a0, a0, a1
 	ret

@@ -11,8 +11,8 @@ func0000000000000003:
 	ret
 
 func000000000000001b:
-	srliw	a0, a0, 10
 	lui	a1, 29
+	srliw	a0, a0, 10
 	addi	a1, a1, 1984
 	add	a0, a0, a1
 	ret

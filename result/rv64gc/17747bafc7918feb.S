@@ -1,12 +1,12 @@
 func0000000000000037:
-	slli	a1, a0, 32
-	lui	a2, 858993
-	addi	a2, a2, 1881
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 858993
+	addi	a1, a1, 1881
+	slli	a2, a0, 32
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	lui	a2, 2
-	addi	a2, a2, 1808
 	srli	a1, a1, 45
+	addi	a2, a2, 1808
 	mul	a1, a1, a2
 	lui	a2, 1
 	sub	a0, a0, a1

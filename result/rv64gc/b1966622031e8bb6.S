@@ -23,9 +23,9 @@ func0000000000000004:
 	ret
 
 func000000000000000d:
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	or	a0, a0, a2
+	or	a0, a0, a3
 	sub	a0, a0, a1
 	ret
 

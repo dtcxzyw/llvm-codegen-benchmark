@@ -15,18 +15,18 @@ func0000000000000001:
 	ret
 
 func0000000000000061:
-	addi	a1, a0, 63
-	li	a2, -127
-	srli	a2, a2, 1
+	li	a1, -127
+	addi	a2, a0, 63
+	srli	a1, a1, 1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000078:
-	addi	a1, a0, 7
-	li	a2, -15
-	srli	a2, a2, 1
+	li	a1, -15
+	addi	a2, a0, 7
+	srli	a1, a1, 1
 	and	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

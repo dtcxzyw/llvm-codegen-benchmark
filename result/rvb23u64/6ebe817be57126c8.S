@@ -6,8 +6,8 @@ func000000000000000f:
 	ret
 
 func000000000000000b:
-	addiw	a0, a0, -1
 	li	a1, 925
+	addiw	a0, a0, -1
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 181
 	ret

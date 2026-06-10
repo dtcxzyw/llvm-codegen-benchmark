@@ -46,8 +46,8 @@ func000000000000006d:
 
 func0000000000000006:
 	add	a1, a1, a2
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	srli	a0, a0, 16
 	or	a0, a0, a1

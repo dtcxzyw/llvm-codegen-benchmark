@@ -16,10 +16,10 @@ func000000000000000a:
 	ret
 
 func000000000000000b:
-	sext.w	a0, a0
 	li	a1, -1
-	slli	a0, a0, 8
+	sext.w	a0, a0
 	slli	a1, a1, 32
+	slli	a0, a0, 8
 	srli	a1, a1, 8
 	and	a0, a0, a1
 	ret
@@ -31,9 +31,9 @@ func000000000000000f:
 	ret
 
 func0000000000000003:
-	sext.w	a0, a0
 	li	a1, 1
 	slli	a1, a1, 36
+	sext.w	a0, a0
 	addi	a1, a1, -16
 	and	a0, a0, a1
 	ret

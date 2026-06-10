@@ -35,8 +35,8 @@ func0000000000000004:
 func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	lui	a0, 524288
 	vmul.vv	v8, v8, v12
+	lui	a0, 524288
 	addiw	a0, a0, -2
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
@@ -45,8 +45,8 @@ func000000000000000a:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	lui	a0, 1953
 	vmul.vv	v8, v8, v12
+	lui	a0, 1953
 	addi	a0, a0, 512
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10

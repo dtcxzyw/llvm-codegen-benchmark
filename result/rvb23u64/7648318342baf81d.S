@@ -37,9 +37,9 @@ func000000000000000b:
 func000000000000000c:
 	slli	a2, a2, 11
 	lui	a3, 8192
+	lui	a4, 524286
 	and	a2, a2, a3
-	lui	a3, 524286
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

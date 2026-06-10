@@ -25,12 +25,12 @@ func0000000000000010:
 
 func0000000000000055:
 	li	a3, 1000
-	add	a0, a0, a1
-	lui	a1, 1048563
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, -80
+	lui	a3, 1048563
 	add	a0, a0, a1
+	addi	a1, a3, -80
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func00000000000000ff:
@@ -69,12 +69,12 @@ func00000000000000d5:
 
 func0000000000000040:
 	li	a3, -19
-	add	a0, a0, a1
-	lui	a1, 1048538
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	srli	a1, a1, 12
+	lui	a3, 1048538
 	add	a0, a0, a1
+	srli	a3, a3, 12
+	add	a0, a0, a3
+	add	a0, a0, a2
 	ret
 
 func00000000000000c0:
@@ -88,20 +88,20 @@ func00000000000000c0:
 
 func0000000000000041:
 	li	a3, 365
-	add	a0, a0, a1
-	lui	a1, 420
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, 1103
+	lui	a3, 420
 	add	a0, a0, a1
+	addi	a1, a3, 1103
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000075:
 	lui	a3, 3
-	add	a0, a0, a2
-	lui	a2, 32
 	addi	a3, a3, -1850
 	mul	a1, a1, a3
+	add	a0, a0, a2
+	lui	a2, 32
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -117,9 +117,9 @@ func0000000000000050:
 func00000000000000e0:
 	slli	a3, a2, 6
 	slli	a2, a2, 9
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 8
-	sub	a2, a2, a3
 	add	a0, a0, a2
 	addi	a1, a1, 448
 	add	a0, a0, a1

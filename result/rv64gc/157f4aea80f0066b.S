@@ -41,8 +41,8 @@ func0000000000000021:
 	bge	a2, a1, .LBB2_3
 	bnez	a1, .LBB2_4
 .LBB2_2:
-	sext.w	a0, a0
 	lui	a1, 244141
+	sext.w	a0, a0
 	addi	a1, a1, -1536
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -51,8 +51,8 @@ func0000000000000021:
 	mv	a2, a1
 	beqz	a1, .LBB2_2
 .LBB2_4:
-	sext.w	a0, a2
 	lui	a1, 244141
+	sext.w	a0, a2
 	addi	a1, a1, -1536
 	xor	a0, a0, a1
 	seqz	a0, a0

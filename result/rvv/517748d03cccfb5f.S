@@ -1,8 +1,8 @@
 func0000000000000141:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, -5
-	lui	a0, 748983
 	vadd.vi	v8, v8, 4, v0.t
+	lui	a0, 748983
 	addi	a0, a0, -585
 	vmul.vx	v8, v8, a0
 	lui	a0, 149797
@@ -15,9 +15,9 @@ func0000000000000101:
 	addi	a0, a0, 1536
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v8, a0
+	vminu.vv	v8, v10, v8
 	lui	a0, 429094
 	addi	a0, a0, 313
-	vminu.vv	v8, v10, v8
 	vmul.vx	v8, v8, a0
 	lui	a0, 1
 	vror.vi	v8, v8, 6
@@ -28,8 +28,8 @@ func0000000000000101:
 func0000000000000558:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, -5
-	lui	a0, 149797
 	vadd.vi	v8, v8, 4, v0.t
+	lui	a0, 149797
 	addi	a0, a0, -1755
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10
@@ -44,8 +44,8 @@ func0000000000000558:
 func0000000000000541:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, -5
-	lui	a0, 748983
 	vadd.vi	v8, v8, 4, v0.t
+	lui	a0, 748983
 	addi	a0, a0, -585
 	vmul.vx	v8, v8, a0
 	lui	a0, 149797

@@ -7,8 +7,8 @@ func0000000000000526:
 	vmv.v.x	v14, a0
 	li	a0, 1131
 	vmerge.vxm	v14, v14, a0, v0
-	lui	a0, 8
 	vmv1r.v	v0, v12
+	lui	a0, 8
 	vmerge.vxm	v12, v14, a0, v0
 	vadd.vv	v10, v12, v10
 	vmslt.vv	v0, v10, v8

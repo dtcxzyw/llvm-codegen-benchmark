@@ -1,6 +1,6 @@
 func0000000000000001:
-	sh1add	a0, a0, a0
 	lui	a1, 599186
+	sh1add	a0, a0, a0
 	slliw	a2, a0, 2
 	addi	a1, a1, 1171
 	mul	a1, a1, a2
@@ -16,16 +16,16 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	sh1add	a0, a0, a0
 	lui	a1, 274878
-	slliw	a0, a0, 1
+	sh1add	a0, a0, a0
 	addi	a1, a1, -381
+	slliw	a0, a0, 1
 	mul	a1, a1, a0
 	srli	a2, a1, 63
 	srai	a1, a1, 50
+	lui	a3, 244
 	add	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
+	addi	a2, a3, 576
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret

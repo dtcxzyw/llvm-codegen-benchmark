@@ -11,9 +11,9 @@ func00000000000004ca:
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, 1
+	slti	a2, a2, -1
 	slt	a0, a0, a1
-	slti	a1, a2, -1
-	not	a1, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -21,9 +21,9 @@ func00000000000004c8:
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, -87
+	sltiu	a2, a2, 97
 	slt	a0, a0, a1
-	sltiu	a1, a2, 97
-	not	a1, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

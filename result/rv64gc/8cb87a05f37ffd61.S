@@ -58,8 +58,8 @@ func0000000000000040:
 	ret
 
 func0000000000000045:
-	sext.w	a1, a1
 	li	a2, 6
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB6_2
 	li	a1, -48
 	add	a0, a0, a1
@@ -80,8 +80,8 @@ func00000000000000c0:
 	ret
 
 func0000000000000044:
-	sext.w	a1, a1
 	li	a2, 1530
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB8_2
 	lui	a1, 16
 	addi	a1, a1, -9

@@ -21,10 +21,10 @@ func0000000000000020:
 
 func000000000000002e:
 	bset	a2, zero, a2
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 3
-	add	a1, a1, a2
+	srli	a3, a3, 3
+	add	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

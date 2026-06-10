@@ -63,9 +63,9 @@ func0000000000000087:
 func000000000000008b:
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
+	fmv.d.x	fa4, zero
 	feq.d	a0, fa1, fa5
-	fmv.d.x	fa5, zero
-	flt.d	a1, fa5, fa0
+	flt.d	a1, fa4, fa0
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -84,9 +84,9 @@ func0000000000000048:
 	lui	a0, 32941
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
+	fmv.d.x	fa4, zero
 	flt.d	a0, fa5, fa1
-	fmv.d.x	fa5, zero
-	feq.d	a1, fa0, fa5
+	feq.d	a1, fa0, fa4
 	andn	a0, a1, a0
 	ret
 
@@ -94,9 +94,9 @@ func0000000000000042:
 	lui	a0, 32941
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
+	fmv.d.x	fa4, zero
 	flt.d	a0, fa5, fa1
-	fmv.d.x	fa5, zero
-	flt.d	a1, fa0, fa5
+	flt.d	a1, fa0, fa4
 	andn	a0, a1, a0
 	ret
 
@@ -112,33 +112,33 @@ func0000000000000028:
 	ret
 
 func0000000000000015:
-	feq.d	a0, fa1, fa1
 	fmv.d.x	fa5, zero
-	fle.d	a1, fa0, fa5
-	xori	a1, a1, 1
+	fle.d	a0, fa0, fa5
+	feq.d	a1, fa1, fa1
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000014:
+	li	a0, -756
+	rori	a0, a0, 10
+	fmv.d.x	fa5, a0
 	feq.d	a0, fa1, fa1
-	li	a1, -756
-	rori	a1, a1, 10
-	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 
 func0000000000000012:
-	feq.d	a0, fa1, fa1
 	fmv.d.x	fa5, zero
+	feq.d	a0, fa1, fa1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 
 func0000000000000011:
-	feq.d	a0, fa1, fa1
-	feq.d	a1, fa0, fa0
-	xori	a1, a1, 1
+	feq.d	a0, fa0, fa0
+	feq.d	a1, fa1, fa1
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
@@ -160,21 +160,21 @@ func000000000000002c:
 .LCPI18_0:
 	.quad	0x3f847ae147ae147b
 func0000000000000023:
-	lui	a0, %hi(.LCPI18_0)
-	li	a1, 543
-	fld	fa5, %lo(.LCPI18_0)(a0)
-	slli	a1, a1, 53
-	fmv.d.x	fa4, a1
-	fle.d	a0, fa4, fa0
-	flt.d	a1, fa1, fa5
+	li	a0, 543
+	slli	a0, a0, 53
+	lui	a1, %hi(.LCPI18_0)
+	fmv.d.x	fa5, a0
+	fld	fa4, %lo(.LCPI18_0)(a1)
+	fle.d	a0, fa5, fa0
+	flt.d	a1, fa1, fa4
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000044:
-	fli.d	fa5, 1.0
-	flt.d	a0, fa5, fa1
 	fmv.d.x	fa5, zero
+	fli.d	fa4, 1.0
+	flt.d	a0, fa4, fa1
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
@@ -183,17 +183,17 @@ func000000000000009e:
 	fli.d	fa5, inf
 	flt.d	a0, fa1, fa5
 	flt.d	a1, fa5, fa1
+	feq.d	a2, fa0, fa0
 	or	a0, a0, a1
 	xori	a0, a0, 1
-	feq.d	a1, fa0, fa0
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func000000000000001c:
-	feq.d	a0, fa1, fa1
 	fmv.d.x	fa5, zero
-	xori	a0, a0, 1
+	feq.d	a0, fa1, fa1
 	fle.d	a1, fa5, fa0
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

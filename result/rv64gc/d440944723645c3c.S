@@ -9,8 +9,8 @@ func0000000000000154:
 	ret
 
 func0000000000000421:
-	zext.b	a1, a1
 	sext.w	a2, a2
+	zext.b	a1, a1
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -27,8 +27,8 @@ func0000000000000038:
 	ret
 
 func0000000000000101:
-	zext.b	a0, a0
 	slli	a2, a2, 32
+	zext.b	a0, a0
 	srli	a2, a2, 32
 	sltu	a1, a2, a1
 	seqz	a0, a0
@@ -36,9 +36,9 @@ func0000000000000101:
 	ret
 
 func0000000000000081:
-	zext.b	a1, a1
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	zext.b	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	sltiu	a1, a1, 2
@@ -46,17 +46,17 @@ func0000000000000081:
 	ret
 
 func0000000000000021:
-	zext.b	a0, a0
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	zext.b	a0, a0
 	xor	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func000000000000050c:
-	zext.b	a0, a0
 	sext.w	a2, a2
+	zext.b	a0, a0
 	sltu	a1, a2, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -73,8 +73,8 @@ func0000000000000184:
 	ret
 
 func0000000000000188:
-	zext.b	a1, a1
 	slli	a2, a2, 32
+	zext.b	a1, a1
 	srli	a2, a2, 32
 	sltu	a0, a2, a0
 	snez	a1, a1

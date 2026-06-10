@@ -50,8 +50,8 @@ func0000000000000334:
 
 func00000000000003a8:
 	zext.b	a1, a1
-	lui	a2, 1048512
 	slli	a1, a1, 8
+	lui	a2, 1048512
 	or	a0, a0, a1
 	addi	a1, a2, -21
 	addw	a0, a0, a1
@@ -61,8 +61,8 @@ func00000000000003a8:
 
 func0000000000000384:
 	zext.b	a1, a1
-	lui	a2, 1048560
 	slli	a1, a1, 8
+	lui	a2, 1048560
 	or	a0, a0, a1
 	addi	a1, a2, -1
 	addw	a0, a0, a1

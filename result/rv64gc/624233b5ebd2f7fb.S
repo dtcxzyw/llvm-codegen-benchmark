@@ -1,8 +1,8 @@
 func0000000000001801:
+	li	a3, -2
 	subw	a0, a0, a1
-	li	a1, -2
-	subw	a1, a1, a2
-	xor	a0, a0, a1
+	subw	a3, a3, a2
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 
@@ -14,10 +14,10 @@ func0000000000000801:
 	ret
 
 func0000000000001841:
+	li	a3, -2
 	subw	a0, a0, a1
-	li	a1, -2
-	subw	a1, a1, a2
-	xor	a0, a0, a1
+	subw	a3, a3, a2
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 

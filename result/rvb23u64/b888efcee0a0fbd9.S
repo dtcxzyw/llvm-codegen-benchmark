@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func000000000000018a:
-	sext.w	a0, a0
 	zext.b	a2, a2
+	sext.w	a0, a0
 	snez	a2, a2
 	and	a1, a1, a2
 	sgtz	a0, a0

@@ -30,9 +30,9 @@ func00000000000000a1:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
 	vmseq.vi	v12, v10, 0
-	vmor.mm	v10, v12, v14
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v10, v11
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v8, v12, v14
+	vmor.mm	v0, v8, v10
 	ret
 
 func00000000000000a6:
@@ -111,8 +111,8 @@ func00000000000001f4:
 func00000000000000a8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 131072
 	vmul.vv	v8, v8, v10
+	lui	a0, 131072
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -121,16 +121,16 @@ func00000000000001e1:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
 	vmseq.vi	v12, v10, 0
-	vmor.mm	v10, v12, v14
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v10, v11
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v8, v12, v14
+	vmor.mm	v0, v8, v10
 	ret
 
 func00000000000001f8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 4048
 	vmul.vv	v8, v10, v8
+	lui	a0, 4048
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -138,8 +138,8 @@ func00000000000001f8:
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 16
 	vmul.vv	v8, v10, v8
+	lui	a0, 16
 	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -147,9 +147,9 @@ func0000000000000024:
 func0000000000000021:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	vmseq.vi	v12, v10, 0
-	vmseq.vi	v10, v8, 0
-	vmor.mm	v0, v12, v10
+	vmseq.vi	v12, v8, 0
+	vmseq.vi	v8, v10, 0
+	vmor.mm	v0, v8, v12
 	ret
 
 func00000000000001a6:
@@ -163,9 +163,9 @@ func00000000000001a1:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
 	vmseq.vi	v12, v10, 0
-	vmor.mm	v10, v12, v14
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vmseq.vi	v10, v8, 0
+	vmor.mm	v8, v12, v14
+	vmor.mm	v0, v10, v8
 	ret
 
 func0000000000000026:
@@ -178,8 +178,8 @@ func0000000000000026:
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 2197
 	vmul.vv	v8, v10, v8
+	lui	a0, 2197
 	addi	a0, a0, 1087
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -209,8 +209,8 @@ func00000000000001a8:
 func00000000000000a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v10, v10, v12
-	lui	a0, 4
 	vmul.vv	v8, v10, v8
+	lui	a0, 4
 	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret

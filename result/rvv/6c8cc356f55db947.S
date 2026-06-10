@@ -26,9 +26,9 @@ func00000000000000a1:
 	ret
 
 func00000000000000a6:
+	li	a0, -1024
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vi	v12, v10, 0
-	li	a0, -1024
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12
 	vadd.vx	v8, v8, a0

@@ -24,14 +24,14 @@ func0000000000000005:
 func000000000000000b:
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
+	lui	a4, 28784
 	add	a1, a1, a2
+	addi	a2, a4, 1799
 	and	a1, a1, a3
-	lui	a2, 28784
-	addi	a2, a2, 1799
+	slli	a3, a2, 32
 	add	a0, a0, a1
-	slli	a1, a2, 32
-	add	a1, a1, a2
-	and	a0, a0, a1
+	add	a2, a2, a3
+	and	a0, a0, a2
 	ret
 
 func0000000000000003:

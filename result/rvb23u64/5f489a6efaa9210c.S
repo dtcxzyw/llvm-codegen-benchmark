@@ -11,9 +11,9 @@ func0000000000000015:
 	ret
 
 func0000000000000000:
+	lui	a2, 31
 	sub	a1, a1, a0
-	lui	a0, 31
-	addi	a0, a0, 1200
+	addi	a0, a2, 1200
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
 	ret

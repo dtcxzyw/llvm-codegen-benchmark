@@ -17,10 +17,10 @@ func0000000000000010:
 	ret
 
 func000000000000000f:
+	bseti	a2, zero, 34
 	minu	a0, a0, a1
-	bseti	a1, zero, 34
-	addi	a1, a1, -4
-	sh2add	a0, a0, a1
+	addi	a2, a2, -4
+	sh2add	a0, a0, a2
 	ret
 
 func0000000000000005:
@@ -30,10 +30,10 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
+	bseti	a2, zero, 35
 	minu	a0, a0, a1
-	bseti	a1, zero, 35
-	addi	a1, a1, -8
-	sh2add	a0, a0, a1
+	addi	a2, a2, -8
+	sh2add	a0, a0, a2
 	ret
 
 func0000000000000001:

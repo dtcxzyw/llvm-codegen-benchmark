@@ -17,8 +17,8 @@ func0000000000000030:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	mulhu	a2, a2, a3
-	lui	a3, 148
 	srli	a2, a2, 17
+	lui	a3, 148
 	add	a1, a1, a2
 	addi	a2, a3, -1408
 	mul	a1, a1, a2
@@ -32,8 +32,8 @@ func0000000000000015:
 	ld	a3, %lo(.LCPI2_0)(a3)
 	srli	a2, a2, 8
 	mulhu	a2, a2, a3
-	lui	a3, 1033928
 	srli	a2, a2, 10
+	lui	a3, 1033928
 	add	a1, a1, a2
 	addi	a2, a3, -1792
 	mul	a1, a1, a2

@@ -50,8 +50,8 @@ func000000000000002a:
 	ret
 
 func0000000000000008:
-	slli	a1, a1, 29
 	li	a2, -3
+	slli	a1, a1, 29
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	srai	a1, a1, 32
@@ -65,8 +65,8 @@ func0000000000000061:
 	ret
 
 func0000000000000146:
-	slli	a1, a1, 30
 	li	a2, -3
+	slli	a1, a1, 30
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	srai	a1, a1, 32

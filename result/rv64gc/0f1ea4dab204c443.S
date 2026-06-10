@@ -1,9 +1,9 @@
 func0000000000000001:
-	srli	a2, a2, 11
 	li	a3, 1
+	srli	a2, a2, 11
+	slli	a3, a3, 11
 	or	a0, a0, a1
 	lui	a1, 32768
-	slli	a3, a3, 11
 	and	a2, a2, a3
 	and	a0, a0, a1
 	or	a0, a0, a2

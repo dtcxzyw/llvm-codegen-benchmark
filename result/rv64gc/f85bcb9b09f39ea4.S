@@ -1,21 +1,21 @@
 func0000000000000764:
-	add	a0, a0, a1
-	slli	a1, a2, 2
+	slli	a3, a2, 2
 	slli	a2, a2, 3
-	add	a1, a1, a2
-	add	a1, a1, a0
-	addi	a1, a1, -12
-	sltu	a0, a0, a1
+	add	a0, a0, a1
+	add	a2, a2, a3
+	add	a2, a2, a0
+	addi	a2, a2, -12
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000744:
-	add	a0, a0, a1
-	slli	a1, a2, 3
+	slli	a3, a2, 3
 	slli	a2, a2, 4
-	add	a1, a1, a2
-	add	a1, a1, a0
-	addi	a1, a1, -24
-	sltu	a0, a0, a1
+	add	a0, a0, a1
+	add	a2, a2, a3
+	add	a2, a2, a0
+	addi	a2, a2, -24
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000004:

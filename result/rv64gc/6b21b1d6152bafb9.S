@@ -17,10 +17,10 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
+	lui	a3, 2
 	add	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, 1
-	add	a1, a1, a2
+	addi	a3, a3, 1
+	add	a1, a1, a3
 	bltu	a1, a0, .LBB2_2
 	mv	a0, a1
 .LBB2_2:

@@ -5,19 +5,19 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
+	lui	a2, 4096
 	minu	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	lui	a1, 1044480
 	and	a0, a0, a1
 	ret
 
 func0000000000000002:
+	lui	a2, 2
 	minu	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	lui	a1, 1048574
 	and	a0, a0, a1
 	ret

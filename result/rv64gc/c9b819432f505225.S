@@ -6,11 +6,11 @@ func00000000000001b0:
 	mul	a2, a2, a3
 	mulhu	a1, a1, a3
 	lui	a3, 1046192
-	addi	a3, a3, -761
 	add	a1, a1, a2
+	addi	a2, a3, -761
 	srli	a1, a1, 32
-	slli	a3, a3, 10
-	mul	a1, a1, a3
+	slli	a2, a2, 10
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
@@ -22,8 +22,8 @@ func0000000000000130:
 	mul	a2, a2, a3
 	mulhu	a1, a1, a3
 	li	a3, 1
-	slli	a3, a3, 32
 	add	a1, a1, a2
+	slli	a3, a3, 32
 	srli	a1, a1, 9
 	addi	a2, a3, -1000
 	mul	a1, a1, a2

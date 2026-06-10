@@ -30,8 +30,8 @@ func000000000000000c:
 func000000000000000a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, 1
-	li	a0, 100
 	vmerge.vim	v12, v12, 8, v0
+	li	a0, 100
 	vmsgt.vx	v0, v10, a0
 	vmerge.vvm	v8, v8, v12, v0
 	ret

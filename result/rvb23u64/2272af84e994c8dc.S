@@ -43,12 +43,12 @@ func0000000000000042:
 	ret
 
 func000000000000002c:
-	lui	a0, 265361
 	fmv.w.x	fa5, zero
-	addi	a0, a0, -37
-	flt.s	a1, fa1, fa5
-	fmv.w.x	fa5, a0
-	bnez	a1, .LBB2_3
+	flt.s	a0, fa1, fa5
+	lui	a1, 265361
+	addi	a1, a1, -37
+	fmv.w.x	fa5, a1
+	bnez	a0, .LBB2_3
 	fle.s	a0, fa5, fa1
 	beqz	a0, .LBB2_4
 .LBB2_2:

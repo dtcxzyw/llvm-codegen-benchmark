@@ -69,8 +69,8 @@ func0000000000000406:
 func000000000000074a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 64
 	vsub.vv	v8, v8, v9
+	li	a0, 64
 	vadd.vx	v8, v8, a0
 	li	a0, 128
 	vmsgt.vx	v0, v8, a0

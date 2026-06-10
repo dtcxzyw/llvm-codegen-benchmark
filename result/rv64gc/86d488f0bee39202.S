@@ -18,10 +18,10 @@ func0000000000000003:
 func0000000000000031:
 	li	a3, 7
 	slli	a3, a3, 9
+	li	a4, 9
 	and	a2, a2, a3
-	li	a3, 9
-	slli	a3, a3, 8
-	bgeu	a3, a2, .LBB2_2
+	slli	a4, a4, 8
+	bgeu	a4, a2, .LBB2_2
 	li	a1, 9
 .LBB2_2:
 	or	a0, a0, a1

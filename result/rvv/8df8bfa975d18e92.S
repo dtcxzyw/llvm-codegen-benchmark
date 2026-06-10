@@ -6,10 +6,10 @@ func0000000000000061:
 	ret
 
 func0000000000000001:
-	lui	a0, 524289
-	bclri	a0, a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0
+	lui	a0, 524289
+	bclri	a0, a0, 31
 	vadd.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

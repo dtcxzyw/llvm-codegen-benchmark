@@ -1,7 +1,7 @@
 func0000000000000035:
+	lui	a2, 1048572
 	sub	a0, a0, a1
-	lui	a1, 1048572
-	addi	a1, a1, 66
+	addi	a1, a2, 66
 	add	a0, a0, a1
 	fcvt.d.w	fa0, a0
 	ret

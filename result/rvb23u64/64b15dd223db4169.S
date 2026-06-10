@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	zext.h	a0, a0
 	sext.w	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -32
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 32

@@ -22,9 +22,9 @@ func0000000000000029:
 	ret
 
 func0000000000000019:
-	sext.w	a1, a0
-	li	a2, 5
-	blt	a1, a2, .LBB3_2
+	li	a1, 5
+	sext.w	a2, a0
+	blt	a2, a1, .LBB3_2
 	li	a1, -5
 	addw	a0, a0, a1
 	ret

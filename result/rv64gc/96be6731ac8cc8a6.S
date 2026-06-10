@@ -6,8 +6,8 @@ func0000000000000028:
 	ret
 
 func0000000000000024:
-	addiw	a1, a1, -3
 	li	a2, 2
+	addiw	a1, a1, -3
 	bgeu	a1, a2, .LBB1_2
 	li	a0, 16
 .LBB1_2:
@@ -42,8 +42,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	addiw	a1, a1, -401
 	li	a2, -400
+	addiw	a1, a1, -401
 	bgeu	a1, a2, .LBB6_2
 	li	a0, 4
 .LBB6_2:

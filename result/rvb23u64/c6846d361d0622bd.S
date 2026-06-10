@@ -1,6 +1,6 @@
 func00000000000000c8:
-	not	a0, a0
 	addi	a1, a1, 63
+	not	a0, a0
 	sltu	a0, a0, a2
 	li	a2, -1
 	srli	a1, a1, 3

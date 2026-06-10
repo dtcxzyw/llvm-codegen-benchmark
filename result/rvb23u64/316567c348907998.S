@@ -34,8 +34,8 @@ func0000000000000198:
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 48
 	addi	a0, a0, -3
+	andi	a1, a1, 48
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret

@@ -11,8 +11,8 @@ func00000000000000e0:
 func00000000000000a0:
 	li	a3, -1
 	bclri	a4, a3, 32
-	slli	a3, a3, 32
 	add	a2, a2, a4
+	slli	a3, a3, 32
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -25,8 +25,8 @@ func0000000000000008:
 
 func000000000000000c:
 	zext.h	a1, a1
-	lui	a2, 1048560
 	addi	a1, a1, -4
+	lui	a2, 1048560
 	seqz	a1, a1
 	addi	a2, a2, 1
 	xor	a1, a1, a2

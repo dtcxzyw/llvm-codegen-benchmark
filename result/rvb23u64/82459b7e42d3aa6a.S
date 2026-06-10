@@ -43,19 +43,19 @@ func0000000000000063:
 	ret
 
 func0000000000000060:
+	lui	a3, 4
 	sub	a1, a1, a2
-	lui	a2, 4
-	addi	a2, a2, -8
-	and	a1, a1, a2
+	addi	a3, a3, -8
+	and	a1, a1, a3
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000151:
+	li	a3, -127
 	sub	a1, a1, a2
-	li	a2, -127
-	srli	a2, a2, 1
-	andn	a1, a1, a2
+	srli	a3, a3, 1
+	andn	a1, a1, a3
 	sgtz	a1, a1
 	add	a0, a0, a1
 	ret

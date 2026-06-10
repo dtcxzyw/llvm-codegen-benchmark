@@ -1,10 +1,10 @@
 func000000000000000c:
 	lui	a2, 263172
-	lui	a3, 1044464
 	addi	a2, a2, 64
-	addi	a3, a3, -257
+	lui	a3, 1044464
 	add	a1, a1, a2
 	slli	a2, a2, 32
+	addi	a3, a3, -257
 	add	a1, a1, a2
 	slli	a2, a3, 32
 	xor	a0, a0, a1

@@ -23,18 +23,18 @@ func0000000000000011:
 func000000000000003b:
 	slli	a1, a1, 48
 	srli	a1, a1, 45
+	lui	a2, 1048549
 	add	a0, a0, a1
-	lui	a1, 1048549
-	addi	a1, a1, 856
+	addi	a1, a2, 856
 	addw	a0, a0, a1
 	ret
 
 func000000000000001b:
 	slli	a1, a1, 48
 	srli	a1, a1, 45
+	lui	a2, 1048549
 	add	a0, a0, a1
-	lui	a1, 1048549
-	addi	a1, a1, 856
+	addi	a1, a2, 856
 	addw	a0, a0, a1
 	ret
 

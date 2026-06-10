@@ -43,8 +43,8 @@ func000000000000000a:
 
 func0000000000000001:
 	fsub.d	fa5, fa1, fa2
-	feq.d	a0, fa5, fa5
-	feq.d	a1, fa0, fa0
+	feq.d	a0, fa0, fa0
+	feq.d	a1, fa5, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

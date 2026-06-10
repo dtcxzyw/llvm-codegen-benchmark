@@ -16,9 +16,9 @@ func000000000000254a:
 	ret
 
 func0000000000000021:
+	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 524288
 	vsub.vv	v9, v9, v12
 	vmseq.vx	v9, v9, a0
 	vmseq.vi	v8, v8, -1

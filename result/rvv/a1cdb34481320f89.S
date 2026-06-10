@@ -11,9 +11,9 @@ func0000000000000000:
 	vfdiv.vf	v16, v8, fa5
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
-	fld	fa4, %lo(.LCPI0_2)(a0)
 	vfmv.v.f	v8, fa5
-	vfmacc.vf	v8, fa4, v16
+	lui	a0, %hi(.LCPI0_2)
+	fld	fa5, %lo(.LCPI0_2)(a0)
+	vfmacc.vf	v8, fa5, v16
 	ret
 

@@ -10,33 +10,33 @@ func00000000000000a1:
 func0000000000000185:
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
+	lui	a3, 1048572
 	addi	a2, a2, -1
+	addi	a3, a3, 1
 	and	a1, a1, a2
-	lui	a2, 1048572
-	addi	a2, a2, 1
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func000000000000006d:
 	sext.w	a2, a2
 	sgtz	a2, a2
+	lui	a3, 1048400
 	addi	a2, a2, -1
+	addi	a3, a3, 1733
 	and	a1, a1, a2
-	lui	a2, 1048400
-	addi	a2, a2, 1733
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func000000000000006c:
 	sext.w	a2, a2
 	sgtz	a2, a2
+	lui	a3, 1048400
 	addi	a2, a2, -1
+	addi	a3, a3, 1733
 	and	a1, a1, a2
-	lui	a2, 1048400
-	addi	a2, a2, 1733
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

@@ -7,9 +7,9 @@ func0000000000000018:
 	ret
 
 func0000000000000006:
+	li	a0, 18
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vi	v0, v10, 0
-	li	a0, 18
 	vand.vx	v9, v9, a0
 	vor.vi	v10, v9, 12
 	vmerge.vvm	v9, v10, v9, v0
@@ -17,12 +17,12 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v0, v10, 0
 	li	a0, 64
-	vmv.v.x	v10, a0
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv.v.x	v11, a0
+	vmseq.vi	v0, v10, 0
 	li	a0, 72
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v10, v11, a0, v0
 	vand.vi	v9, v9, 4
 	vor.vv	v9, v10, v9
 	vor.vv	v8, v9, v8

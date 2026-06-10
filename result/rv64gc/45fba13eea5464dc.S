@@ -4,10 +4,10 @@ func0000000000000001:
 	mv	a0, a1
 	ret
 .LBB0_2:
-	srai	a0, a2, 1
-	lui	a1, 1
-	addi	a1, a1, 616
-	add	a0, a0, a1
+	lui	a0, 1
+	srai	a2, a2, 1
+	addi	a0, a0, 616
+	add	a0, a0, a2
 	ret
 
 func0000000000000005:
@@ -16,9 +16,9 @@ func0000000000000005:
 	mv	a0, a1
 	ret
 .LBB1_2:
-	srai	a0, a2, 32
-	lui	a1, 176
-	addi	a1, a1, -1428
-	add	a0, a0, a1
+	lui	a0, 176
+	srai	a2, a2, 32
+	addi	a0, a0, -1428
+	add	a0, a0, a2
 	ret
 

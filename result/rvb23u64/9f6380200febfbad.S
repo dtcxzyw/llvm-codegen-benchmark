@@ -51,8 +51,8 @@ func0000000000000005:
 	ret
 
 func0000000000000048:
-	andi	a1, a1, 1
 	li	a2, -1
+	andi	a1, a1, 1
 	slli.uw	a2, a2, 16
 	czero.eqz	a1, a2, a1
 	lui	a2, 16

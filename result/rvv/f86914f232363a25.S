@@ -1,7 +1,7 @@
 func00000000000000f0:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v12, v12, a0
 	li	a0, 32
@@ -10,9 +10,9 @@ func00000000000000f0:
 	ret
 
 func00000000000000a0:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v10, v12, v10
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v12, v12, a0
 	li	a0, 32

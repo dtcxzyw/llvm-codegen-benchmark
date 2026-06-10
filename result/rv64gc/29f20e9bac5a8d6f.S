@@ -1,7 +1,7 @@
 func0000000000000021:
 	addiw	a2, a2, -62
-	addiw	a0, a0, -63
 	snez	a2, a2
+	addiw	a0, a0, -63
 	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

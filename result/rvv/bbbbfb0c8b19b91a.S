@@ -11,8 +11,8 @@ func000000000000000c:
 func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vv	v8, v8, v16
-	lui	a0, 238009
 	vfabs.v	v8, v8
+	lui	a0, 238009
 	slli	a0, a0, 32
 	fmv.d.x	fa5, a0
 	vmflt.vf	v16, v8, fa5
@@ -42,8 +42,8 @@ func000000000000000e:
 func0000000000000008:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vv	v8, v8, v16
-	lui	a0, 66109
 	vfabs.v	v8, v8
+	lui	a0, 66109
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v16, v8, fa5

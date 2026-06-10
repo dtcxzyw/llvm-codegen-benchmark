@@ -19,9 +19,9 @@ func0000000000000004:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a2, a2, a1
-	slli	a0, a0, 63
 	srli	a2, a2, 2
 	mul	a1, a2, a3
+	slli	a0, a0, 63
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
@@ -32,9 +32,9 @@ func0000000000000007:
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
 	sub	a2, a2, a1
-	slli	a0, a0, 63
 	srli	a2, a2, 3
 	mul	a1, a2, a3
+	slli	a0, a0, 63
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret

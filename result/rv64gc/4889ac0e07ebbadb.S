@@ -32,8 +32,8 @@ func0000000000000181:
 	ret
 
 func0000000000000306:
-	sext.w	a1, a1
 	sext.w	a2, a0
+	sext.w	a1, a1
 	sltiu	a2, a2, 5
 	xori	a2, a2, 1
 	slti	a1, a1, 513
@@ -44,10 +44,10 @@ func0000000000000306:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
 	lui	a2, 524288
 	addi	a2, a2, -1
 	or	a1, a1, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1
@@ -56,10 +56,10 @@ func00000000000000ca:
 
 func0000000000000088:
 	sext.w	a1, a1
-	lui	a2, 1048318
-	sltu	a1, a1, a2
 	srliw	a2, a0, 11
+	lui	a3, 1048318
 	sltiu	a2, a2, 27
+	sltu	a1, a1, a3
 	not	a2, a2
 	and	a1, a1, a2
 	beqz	a1, .LBB5_2

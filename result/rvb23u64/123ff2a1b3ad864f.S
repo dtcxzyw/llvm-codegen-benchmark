@@ -5,17 +5,17 @@ func000000000000003f:
 	ret
 
 func000000000000000c:
+	li	a2, 29
 	sub	a0, a0, a1
-	li	a1, 29
-	slli	a1, a1, 10
-	sh3add	a0, a0, a1
+	slli	a2, a2, 10
+	sh3add	a0, a0, a2
 	ret
 
 func0000000000000008:
+	li	a2, 29
 	sub	a0, a0, a1
-	li	a1, 29
-	slli	a1, a1, 10
-	sh3add	a0, a0, a1
+	slli	a2, a2, 10
+	sh3add	a0, a0, a2
 	ret
 
 func0000000000000005:

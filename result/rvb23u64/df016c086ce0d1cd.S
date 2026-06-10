@@ -16,8 +16,8 @@ func00000000000000aa:
 
 func000000000000024a:
 	srliw	a2, a2, 24
-	addi	a0, a0, -1
 	sltiu	a2, a2, 7
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a2
 	addiw	a0, a0, 1
 	sext.w	a1, a1
@@ -26,8 +26,8 @@ func000000000000024a:
 
 func000000000000034a:
 	sext.w	a2, a2
-	addi	a0, a0, -1
 	slti	a2, a2, 7
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a2
 	addiw	a0, a0, 1
 	sext.w	a1, a1
@@ -36,8 +36,8 @@ func000000000000034a:
 
 func0000000000000361:
 	sext.w	a2, a2
-	addi	a0, a0, -1
 	slti	a2, a2, 7
+	addi	a0, a0, -1
 	czero.nez	a0, a0, a2
 	addiw	a0, a0, 1
 	sext.w	a1, a1

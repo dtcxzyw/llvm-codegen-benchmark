@@ -7,9 +7,9 @@ func000000000000001c:
 	ret
 
 func000000000000003e:
+	lui	a3, 4
 	add	a0, a0, a2
-	lui	a2, 4
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	slliw	a1, a1, 15
 	or	a0, a0, a1
 	ret
@@ -38,8 +38,8 @@ func0000000000000038:
 
 func000000000000000c:
 	lui	a3, 16
-	slliw	a1, a1, 16
 	addi	a3, a3, -512
+	slliw	a1, a1, 16
 	addw	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

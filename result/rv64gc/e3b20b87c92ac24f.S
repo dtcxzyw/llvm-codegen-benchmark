@@ -1,8 +1,8 @@
 func0000000000000024:
+	li	a1, -2
 	slli	a0, a0, 40
 	srli	a0, a0, 56
 	addi	a0, a0, -7
-	li	a1, -2
 	bltu	a0, a1, .LBB0_2
 	li	a0, 5
 	ret
@@ -11,10 +11,10 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
+	li	a1, -128
 	srli	a0, a0, 13
 	andi	a0, a0, 2032
 	addi	a0, a0, -176
-	li	a1, -128
 	bltu	a0, a1, .LBB1_2
 	li	a0, 64
 	ret

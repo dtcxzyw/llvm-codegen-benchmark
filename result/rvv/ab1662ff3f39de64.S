@@ -6,9 +6,9 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vror.vi	v12, v12, 33
 	vmul.vx	v12, v12, a0
-	vror.vi	v12, v12, 63
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v8, v12
+	vror.vi	v10, v12, 63
+	vadd.vv	v8, v8, v10
 	ret
 
 .LCPI1_0:
@@ -19,8 +19,8 @@ func0000000000000090:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vror.vi	v12, v12, 33
 	vmul.vx	v12, v12, a0
-	vror.vi	v12, v12, 63
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v8, v12
+	vror.vi	v10, v12, 63
+	vadd.vv	v8, v8, v10
 	ret
 

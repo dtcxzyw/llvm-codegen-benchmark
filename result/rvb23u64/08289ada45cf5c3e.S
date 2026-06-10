@@ -60,9 +60,9 @@ func0000000000000003:
 
 func0000000000000007:
 	srliw	a1, a1, 2
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, -974
+	addi	a1, a2, -974
 	addw	a0, a0, a1
 	ret
 

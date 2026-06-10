@@ -1,8 +1,8 @@
 func0000000000000068:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	fcvt.w.s	a2, fa0, rtz
+	sext.w	a1, a1
 	sgtz	a3, a2
+	sext.w	a0, a0
 	neg	a3, a3
 	and	a2, a2, a3
 	blt	a0, a1, .LBB0_2
@@ -12,10 +12,10 @@ func0000000000000068:
 	ret
 
 func000000000000000b:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	fcvt.w.s	a2, fa0, rtz
+	sext.w	a1, a1
 	sgtz	a3, a2
+	sext.w	a0, a0
 	neg	a3, a3
 	and	a2, a2, a3
 	blt	a0, a1, .LBB1_2
@@ -26,10 +26,10 @@ func000000000000000b:
 	ret
 
 func0000000000000006:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	fcvt.w.s	a2, fa0, rtz
+	sext.w	a1, a1
 	sgtz	a3, a2
+	sext.w	a0, a0
 	neg	a3, a3
 	and	a2, a2, a3
 	blt	a0, a1, .LBB2_2
@@ -39,9 +39,9 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
+	fcvt.w.s	a2, fa0, rtz
 	sext.w	a1, a1
 	sext.w	a0, a0
-	fcvt.w.s	a2, fa0, rtz
 	srai	a3, a2, 63
 	or	a2, a2, a3
 	blt	a0, a1, .LBB3_2
@@ -51,10 +51,10 @@ func000000000000000a:
 	ret
 
 func000000000000006a:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	fcvt.w.s	a2, fa0, rtz
+	sext.w	a1, a1
 	sgtz	a3, a2
+	sext.w	a0, a0
 	neg	a3, a3
 	and	a2, a2, a3
 	blt	a0, a1, .LBB4_2

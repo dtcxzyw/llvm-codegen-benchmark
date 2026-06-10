@@ -22,17 +22,17 @@ func0000000000000000:
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
 	srli	a0, a0, 4
-	lui	a2, 335544
 	mulhu	a0, a0, a1
-	srli	a1, a0, 3
-	slli	a0, a0, 29
-	srli	a0, a0, 32
+	slli	a1, a0, 29
+	lui	a2, 335544
+	srli	a1, a1, 32
 	addi	a2, a2, 1311
-	mul	a0, a0, a2
-	srli	a0, a0, 37
-	sh2add	a0, a0, a0
-	sh2add	a0, a0, a0
-	slli	a0, a0, 2
-	subw	a0, a1, a0
+	mul	a1, a1, a2
+	srli	a1, a1, 37
+	sh2add	a1, a1, a1
+	sh2add	a1, a1, a1
+	srli	a0, a0, 3
+	slli	a1, a1, 2
+	subw	a0, a0, a1
 	ret
 

@@ -1,9 +1,9 @@
 func000000000000000a:
-	sraiw	a0, a0, 20
 	li	a1, 2
+	sraiw	a0, a0, 20
+	lui	a2, 425
 	sub	a1, a1, a0
-	lui	a0, 425
-	addi	a0, a0, 847
+	addi	a0, a2, 847
 	mul	a0, a0, a1
 	sraiw	a0, a0, 19
 	ret

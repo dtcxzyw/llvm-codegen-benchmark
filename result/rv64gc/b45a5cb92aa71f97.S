@@ -30,10 +30,10 @@ func0000000000000008:
 func000000000000000d:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	lui	a2, 1048560
 	add	a0, a0, a1
-	lui	a1, 1048560
-	addi	a1, a1, 15
-	add	a0, a0, a1
+	addi	a2, a2, 15
+	add	a0, a0, a2
 	ret
 
 func000000000000000a:
@@ -52,9 +52,9 @@ func0000000000000004:
 func0000000000000005:
 	slli	a1, a1, 44
 	srli	a1, a1, 44
+	lui	a2, 1048332
 	add	a0, a0, a1
-	lui	a1, 1048332
-	addi	a1, a1, -576
+	addi	a1, a2, -576
 	add	a0, a0, a1
 	ret
 

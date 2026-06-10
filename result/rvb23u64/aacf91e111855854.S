@@ -50,10 +50,10 @@ func000000000000000a:
 
 func000000000000000b:
 	lui	a2, 1
-	andi	a0, a0, -2048
 	addi	a2, a2, -8
 	sh1add	a1, a1, a2
 	addiw	a2, a2, 6
+	andi	a0, a0, -2048
 	and	a1, a1, a2
 	bclri	a0, a0, 11
 	or	a0, a0, a1

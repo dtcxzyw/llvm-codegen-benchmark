@@ -23,9 +23,9 @@ func0000000000000068:
 func0000000000000065:
 	andi	a1, a1, 1
 	li	a2, -256
+	lui	a3, 1
 	czero.nez	a1, a2, a1
-	lui	a2, 1
-	addi	a2, a2, 510
+	addi	a2, a3, 510
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1

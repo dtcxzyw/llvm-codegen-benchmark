@@ -12,12 +12,12 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v12, 2
 	lui	a0, 266177
 	addi	a0, a0, -63
-	vmv.v.x	v12, a0
-	vmerge.vvm	v10, v12, v10, v0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vmsleu.vi	v0, v12, 2
+	vmerge.vvm	v10, v14, v10, v0
 	vfmul.vv	v8, v10, v8
 	ret
 

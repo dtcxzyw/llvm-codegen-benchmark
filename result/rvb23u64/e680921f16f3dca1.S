@@ -14,8 +14,8 @@ func0000000000000058:
 	ret
 
 func0000000000000302:
-	bexti	a1, a1, 11
 	not	a0, a0
+	bexti	a1, a1, 11
 	bexti	a0, a0, 11
 	or	a0, a0, a1
 	ret

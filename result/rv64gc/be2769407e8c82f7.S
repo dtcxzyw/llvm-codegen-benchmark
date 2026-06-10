@@ -1,9 +1,9 @@
 func00000000000000e1:
 	li	a3, -1
-	addi	a0, a0, 1
 	slli	a3, a3, 63
-	xor	a0, a0, a1
+	addi	a0, a0, 1
 	xor	a2, a2, a3
+	xor	a0, a0, a1
 	snez	a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

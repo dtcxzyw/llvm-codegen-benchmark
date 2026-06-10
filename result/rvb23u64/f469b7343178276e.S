@@ -6,10 +6,10 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
+	li	a3, -127
 	sub	a0, a0, a2
-	li	a2, -127
 	add.uw	a0, a1, a0
-	srli	a2, a2, 1
-	andn	a0, a0, a2
+	srli	a3, a3, 1
+	andn	a0, a0, a3
 	ret
 

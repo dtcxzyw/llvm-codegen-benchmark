@@ -18,10 +18,10 @@ func00000000000002a1:
 	ret
 
 func0000000000000201:
-	srli	a0, a0, 3
 	lui	a1, 838861
 	addi	a1, a1, -819
 	slli	a2, a1, 32
+	srli	a0, a0, 3
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	addiw	a0, a0, 1
@@ -29,14 +29,14 @@ func0000000000000201:
 	ret
 
 func0000000000000088:
-	srai	a1, a0, 63
-	srli	a1, a1, 49
-	add	a0, a0, a1
 	lui	a1, 1048568
+	srai	a2, a0, 63
+	srli	a2, a2, 49
+	add	a0, a0, a2
+	lui	a2, 1048512
 	and	a0, a0, a1
-	lui	a1, 1048512
-	srli	a1, a1, 3
-	sub	a0, a0, a1
+	srli	a2, a2, 3
+	sub	a0, a0, a2
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7
 	ret

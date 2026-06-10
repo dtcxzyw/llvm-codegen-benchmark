@@ -5,9 +5,9 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	slli	a1, a1, 1
 	li	a2, 1
 	slli	a2, a2, 36
+	slli	a1, a1, 1
 	addi	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1

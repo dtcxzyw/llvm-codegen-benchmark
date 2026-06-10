@@ -9,9 +9,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
+	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v9, v9, 9
-	lui	a0, 524288
 	vand.vx	v10, v9, a0
 	vand.vi	v11, v8, 2
 	vwaddu.vv	v8, v11, v10
@@ -41,9 +41,9 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
+	li	a0, 254
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v9, v9, v9
-	li	a0, 254
 	vand.vx	v10, v9, a0
 	vand.vi	v11, v8, 1
 	vwaddu.vv	v8, v10, v11

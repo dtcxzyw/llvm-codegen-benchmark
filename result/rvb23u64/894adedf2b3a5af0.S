@@ -1,13 +1,12 @@
+.LCPI0_0:
+	.quad	-27021597490294784
 func0000000000000001:
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	or	a0, a0, a1
-	lui	a1, 1024000
 	sext.w	a0, a0
-	addi	a1, a1, 1
-	slli	a1, a1, 16
-	addi	a1, a1, 1341
-	slli	a1, a1, 12
-	czero.eqz	a0, a1, a0
 	lui	a1, 981696
+	czero.eqz	a0, a2, a0
 	addi	a1, a1, -1
 	add	a0, a0, a1
 	ret

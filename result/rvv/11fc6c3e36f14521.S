@@ -22,9 +22,9 @@ func0000000000000088:
 	ret
 
 func0000000000000481:
+	li	a0, 16
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v9, v9, 7
-	li	a0, 16
 	vadd.vi	v9, v9, -4
 	vmsleu.vi	v9, v9, 2
 	vmseq.vx	v8, v8, a0

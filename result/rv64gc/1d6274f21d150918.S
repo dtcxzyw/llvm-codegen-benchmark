@@ -7,9 +7,9 @@ func0000000000000014:
 
 func0000000000000012:
 	li	a2, 1
+	li	a3, -1
 	sll	a1, a2, a1
-	li	a2, -1
-	sll	a0, a2, a0
+	sll	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

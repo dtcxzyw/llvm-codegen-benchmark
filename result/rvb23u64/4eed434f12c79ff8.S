@@ -64,11 +64,11 @@ func0000000000000041:
 func00000000000000f0:
 	sh3add	a2, a1, a1
 	sh2add	a1, a2, a1
-	lui	a2, 1000785
 	add	a0, a0, a1
 	sh3add	a1, a0, a0
 	sh2add	a0, a1, a0
-	addi	a1, a2, 865
+	lui	a1, 1000785
+	addi	a1, a1, 865
 	addw	a0, a0, a1
 	ret
 

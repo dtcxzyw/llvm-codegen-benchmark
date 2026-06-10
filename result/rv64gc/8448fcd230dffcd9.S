@@ -33,8 +33,8 @@ func0000000000000421:
 
 func000000000000042a:
 	sext.w	a1, a1
-	addiw	a0, a0, -2
 	slti	a1, a1, 28
+	addiw	a0, a0, -2
 	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

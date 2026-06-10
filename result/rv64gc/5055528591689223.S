@@ -1,8 +1,8 @@
 func0000000000000421:
 	slli	a2, a2, 32
-	addiw	a1, a1, -61
 	srli	a2, a2, 32
 	xor	a0, a0, a2
+	addiw	a1, a1, -61
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1

@@ -14,8 +14,8 @@ func000000000000000f:
 	ret
 
 func000000000000000e:
-	slli	a1, a1, 48
 	lui	a2, 268912
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -27,8 +27,8 @@ func0000000000000004:
 	ret
 
 func000000000000000d:
-	zext.h	a1, a1
 	li	a2, 365
+	zext.h	a1, a1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -42,16 +42,16 @@ func000000000000000a:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, -2
 	lui	a2, 1
+	andi	a1, a1, -2
 	addi	a2, a2, 81
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000005:
-	andi	a1, a1, 2047
 	lui	a2, 1048552
+	andi	a1, a1, 2047
 	addi	a2, a2, -1696
 	mul	a1, a1, a2
 	addw	a0, a0, a1

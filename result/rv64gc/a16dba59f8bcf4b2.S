@@ -41,8 +41,8 @@ func00000000000001a0:
 	slli	a1, a1, 3
 	add	a1, a1, a2
 	lui	a2, 4
-	addi	a2, a2, 184
 	slli	a1, a1, 32
+	addi	a2, a2, 184
 	srli	a1, a1, 32
 	add	a0, a0, a2
 	add	a0, a0, a1

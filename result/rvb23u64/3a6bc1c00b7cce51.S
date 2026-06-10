@@ -82,8 +82,8 @@ func00000000000001a6:
 	ret
 
 func000000000000018c:
-	sext.w	a0, a0
 	mul	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -97,8 +97,8 @@ func000000000000000c:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	mul	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -1,6 +1,6 @@
 func0000000000000001:
-	srai	a0, a0, 17
 	lui	a1, 1048568
+	srai	a0, a0, 17
 	and	a0, a0, a1
 	ret
 

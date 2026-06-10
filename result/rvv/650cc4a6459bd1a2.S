@@ -7,11 +7,11 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmand.mm	v12, v0, v12
 	fmv.w.x	fa5, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v13, v8, fa5
-	vmand.mm	v0, v13, v12
+	vmand.mm	v8, v0, v12
+	vmand.mm	v0, v13, v8
 	ret
 
 func0000000000000008:
@@ -24,16 +24,16 @@ func0000000000000008:
 
 func000000000000000e:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmand.mm	v12, v0, v12
 	vmfeq.vv	v13, v8, v8
-	vmand.mm	v0, v13, v12
+	vmand.mm	v8, v0, v12
+	vmand.mm	v0, v13, v8
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmand.mm	v12, v0, v12
 	fmv.w.x	fa5, zero
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfne.vf	v13, v8, fa5
-	vmand.mm	v0, v13, v12
+	vmand.mm	v8, v0, v12
+	vmand.mm	v0, v13, v8
 	ret
 

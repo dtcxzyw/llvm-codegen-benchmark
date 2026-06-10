@@ -8,10 +8,10 @@ func000000000000000c:
 	ret
 
 func000000000000002c:
-	srli	a1, a1, 2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srli	a1, a1, 2
 	add	a2, a2, a3
 	mulw	a1, a1, a2
 	snez	a1, a1
@@ -19,10 +19,10 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	srli	a1, a1, 3
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srli	a1, a1, 3
 	add	a2, a2, a3
 	mulw	a1, a1, a2
 	seqz	a1, a1

@@ -14,10 +14,10 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v14, v10, a0
 	vmul.vv	v8, v8, v10
-	vmacc.vv	v8, v12, v14
+	li	a0, 32
+	vsrl.vx	v10, v10, a0
+	vmacc.vv	v8, v12, v10
 	ret
 

@@ -42,8 +42,8 @@ func0000000000000004:
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	addiw	a1, a1, -3
 	xor	a0, a0, a1
 	seqz	a0, a0

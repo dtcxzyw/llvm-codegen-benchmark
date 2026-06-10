@@ -9,8 +9,8 @@ func0000000000000001:
 
 func0000000000000018:
 	mv	a1, a0
-	andi	a2, a0, 254
 	li	a0, 9
+	andi	a2, a1, 254
 	bltu	a0, a2, .LBB1_2
 	zext.b	a0, a1
 .LBB1_2:

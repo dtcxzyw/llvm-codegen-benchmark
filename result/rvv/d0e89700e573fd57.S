@@ -1,7 +1,7 @@
 func000000000000000b:
+	lui	a0, 748983
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	lui	a0, 748983
 	vsra.vi	v8, v8, 3
 	addi	a0, a0, -585
 	slli	a1, a0, 33
@@ -13,9 +13,9 @@ func000000000000000b:
 	ret
 
 func0000000000000009:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	lui	a0, 699051
 	vsra.vi	v8, v8, 6
 	addi	a0, a0, -1365
 	slli	a1, a0, 32

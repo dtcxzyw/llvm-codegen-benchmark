@@ -9,9 +9,9 @@ func0000000000000046:
 	ret
 
 func0000000000000086:
+	srli	a2, a2, 4
 	andi	a3, a0, 1
-	srli	a0, a2, 4
-	sext.w	a0, a0
+	sext.w	a0, a2
 	beqz	a3, .LBB1_2
 	lui	a1, 244
 	addi	a1, a1, 576
@@ -29,21 +29,21 @@ func0000000000000048:
 	ret
 
 func000000000000008a:
-	andi	a0, a0, 1
 	srli	a2, a2, 2
-	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
+	sext.w	a2, a2
 	sext.w	a0, a0
 	slt	a0, a2, a0
 	ret
 
 func0000000000000094:
-	andi	a0, a0, 1
 	srli	a2, a2, 2
-	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
+	sext.w	a2, a2
 	sext.w	a0, a0
 	sltu	a0, a0, a2
 	ret

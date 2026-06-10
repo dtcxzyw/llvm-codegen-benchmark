@@ -14,18 +14,18 @@ func0000000000000044:
 
 func0000000000000047:
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa5, fa1
-	feq.s	a1, fa0, fa5
-	not	a1, a1
+	feq.s	a0, fa0, fa5
+	flt.s	a1, fa5, fa1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000077:
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	feq.s	a0, fa1, fa5
-	fmv.w.x	fa5, zero
-	feq.s	a1, fa0, fa5
+	feq.s	a1, fa0, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -33,10 +33,10 @@ func0000000000000077:
 func0000000000000072:
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	feq.s	a0, fa1, fa5
-	fmv.w.x	fa5, zero
+	flt.s	a1, fa0, fa4
 	xori	a0, a0, 1
-	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 
@@ -64,9 +64,9 @@ func00000000000000cc:
 
 func00000000000000c7:
 	fmv.w.x	fa5, zero
-	fle.s	a0, fa5, fa1
-	feq.s	a1, fa0, fa5
-	not	a1, a1
+	feq.s	a0, fa0, fa5
+	fle.s	a1, fa5, fa1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -104,13 +104,13 @@ func00000000000000aa:
 	ret
 
 func000000000000006d:
-	lui	a0, 522240
-	lui	a1, 191934
+	lui	a0, 191934
+	addi	a0, a0, 1791
+	lui	a1, 522240
 	fmv.w.x	fa5, a0
-	addi	a0, a1, 1791
-	flt.s	a1, fa1, fa5
-	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, a1
 	flt.s	a0, fa0, fa5
+	flt.s	a1, fa1, fa4
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -124,8 +124,8 @@ func0000000000000011:
 
 func000000000000001e:
 	feq.s	a0, fa1, fa1
-	xori	a0, a0, 1
 	feq.s	a1, fa0, fa0
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
@@ -138,29 +138,29 @@ func00000000000000ac:
 
 func00000000000000a6:
 	fmv.w.x	fa5, zero
-	fle.s	a0, fa1, fa5
-	flt.s	a1, fa0, fa5
-	flt.s	a2, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
+	flt.s	a0, fa0, fa5
+	flt.s	a1, fa5, fa0
+	fle.s	a2, fa1, fa5
+	or	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func00000000000000d2:
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa5
-	fmv.w.x	fa5, zero
+	flt.s	a1, fa0, fa4
 	xori	a0, a0, 1
-	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 
 func00000000000000db:
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa5
-	fmv.w.x	fa5, zero
-	flt.s	a1, fa5, fa0
+	flt.s	a1, fa4, fa0
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -173,9 +173,9 @@ func0000000000000042:
 	ret
 
 func00000000000000bb:
-	fmax.s	fa5, fa0, fa1
 	lui	a0, 266499
 	addi	a0, a0, -717
+	fmax.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -194,10 +194,10 @@ func0000000000000099:
 	flt.s	a0, fa1, fa5
 	flt.s	a1, fa5, fa1
 	flt.s	a2, fa0, fa5
+	flt.s	a3, fa5, fa0
 	or	a0, a0, a1
-	flt.s	a1, fa5, fa0
-	or	a1, a1, a2
-	or	a0, a0, a1
+	or	a2, a2, a3
+	or	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
@@ -219,8 +219,8 @@ func0000000000000048:
 func0000000000000078:
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa1, fa5
-	xori	a0, a0, 1
 	feq.s	a1, fa0, fa5
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
@@ -241,19 +241,19 @@ func00000000000000c8:
 func0000000000000074:
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa1, fa5
-	xori	a0, a0, 1
 	flt.s	a1, fa5, fa0
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000065:
-	lui	a0, 522240
-	lui	a1, 784384
+	lui	a0, 784384
+	lui	a1, 522240
 	fmv.w.x	fa5, a0
-	flt.s	a0, fa1, fa5
-	fmv.w.x	fa5, a1
-	fle.s	a1, fa0, fa5
-	not	a1, a1
+	fmv.w.x	fa4, a1
+	fle.s	a0, fa0, fa5
+	flt.s	a1, fa1, fa4
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -268,10 +268,10 @@ func000000000000005d:
 func00000000000000a7:
 	lui	a0, 273536
 	fmv.w.x	fa5, zero
-	feq.s	a1, fa0, fa5
-	fmv.w.x	fa5, a0
-	fle.s	a0, fa1, fa5
-	not	a1, a1
+	fmv.w.x	fa4, a0
+	feq.s	a0, fa0, fa5
+	fle.s	a1, fa1, fa4
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -300,16 +300,16 @@ func00000000000000ca:
 
 func0000000000000087:
 	fmv.w.x	fa5, zero
-	feq.s	a0, fa1, fa5
-	feq.s	a1, fa0, fa5
-	not	a1, a1
+	feq.s	a0, fa0, fa5
+	feq.s	a1, fa1, fa5
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000dd:
-	fmin.s	fa5, fa0, fa1
 	lui	a0, 219235
 	addi	a0, a0, 1981
+	fmin.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -318,9 +318,9 @@ func00000000000000dd:
 func0000000000000086:
 	fmv.w.x	fa5, zero
 	lui	a0, 522240
-	feq.s	a1, fa1, fa5
-	fmv.w.x	fa5, a0
-	flt.s	a0, fa0, fa5
+	fmv.w.x	fa4, a0
+	feq.s	a0, fa1, fa5
+	flt.s	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 

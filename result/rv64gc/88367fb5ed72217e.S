@@ -74,10 +74,10 @@ func0000000000000008:
 	ret
 
 func000000000000006c:
+	lui	a3, 524288
 	add	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1
-	xor	a1, a1, a2
+	addiw	a3, a3, -1
+	xor	a1, a1, a3
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

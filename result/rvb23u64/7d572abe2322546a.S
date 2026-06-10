@@ -62,10 +62,10 @@ func0000000000000034:
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
-	negw	a1, a0
-	max	a0, a0, a1
 	lui	a1, 519168
+	sext.w	a0, a0
+	negw	a2, a0
+	max	a0, a0, a2
 	slt	a0, a0, a1
 	ret
 

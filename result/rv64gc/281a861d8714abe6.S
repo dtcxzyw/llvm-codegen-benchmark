@@ -31,44 +31,44 @@ func0000000000000000:
 	ret
 
 func0000000000000012:
-	sext.w	a2, a2
 	slli	a1, a1, 2
+	sext.w	a2, a2
 	add	a0, a0, a1
-	lui	a1, 313
 	slli	a2, a2, 2
+	lui	a1, 313
 	add	a0, a0, a2
 	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
 func0000000000000002:
-	sext.w	a2, a2
 	slli	a1, a1, 2
+	sext.w	a2, a2
 	add	a0, a0, a1
-	lui	a1, 313
 	slli	a2, a2, 2
+	lui	a1, 313
 	add	a0, a0, a2
 	addi	a1, a1, -128
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
-	sext.w	a2, a2
 	slli	a1, a1, 2
+	sext.w	a2, a2
 	add	a0, a0, a1
-	lui	a1, 100
 	slli	a2, a2, 2
+	lui	a1, 100
 	add	a0, a0, a2
 	addi	a1, a1, 512
 	add	a0, a0, a1
 	ret
 
 func000000000000000e:
-	sext.w	a2, a2
 	slli	a1, a1, 2
+	sext.w	a2, a2
 	add	a0, a0, a1
-	lui	a1, 175
 	slli	a2, a2, 2
+	lui	a1, 175
 	add	a0, a0, a2
 	addi	a1, a1, 896
 	add	a0, a0, a1

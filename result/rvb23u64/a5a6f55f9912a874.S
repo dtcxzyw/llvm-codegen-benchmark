@@ -6,8 +6,8 @@ func000000000000003f:
 	ret
 
 func000000000000002f:
-	ori	a1, a1, 13
 	li	a2, -3
+	ori	a1, a1, 13
 	zext.w	a2, a2
 	and	a1, a1, a2
 	add	a0, a0, a1

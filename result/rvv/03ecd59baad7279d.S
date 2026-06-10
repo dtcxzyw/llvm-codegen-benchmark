@@ -34,8 +34,8 @@ func0000000000000086:
 func00000000000000a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 4
 	vadd.vi	v8, v8, -16
+	lui	a0, 4
 	addi	a0, a0, -15
 	vmsltu.vx	v0, v8, a0
 	ret

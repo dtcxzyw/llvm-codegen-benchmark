@@ -1,6 +1,6 @@
 func0000000000000002:
-	sext.w	a1, a1
 	li	a2, 42
+	sext.w	a1, a1
 	beq	a1, a2, .LBB0_2
 	li	a1, 260
 	or	a0, a0, a1

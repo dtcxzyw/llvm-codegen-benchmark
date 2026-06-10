@@ -21,8 +21,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	addiw	a0, a0, -176
 	li	a1, -128
+	addiw	a0, a0, -176
 	bltu	a0, a1, .LBB3_2
 	li	a0, 64
 	ret
@@ -31,8 +31,8 @@ func0000000000000028:
 	ret
 
 func0000000000000038:
-	addiw	a0, a0, -176
 	li	a1, -128
+	addiw	a0, a0, -176
 	bltu	a0, a1, .LBB4_2
 	li	a0, 64
 	ret
@@ -41,8 +41,8 @@ func0000000000000038:
 	ret
 
 func0000000000000061:
-	sext.w	a0, a0
 	li	a1, 2
+	sext.w	a0, a0
 	beq	a0, a1, .LBB5_2
 	lui	a0, 16
 	addi	a0, a0, 1100
@@ -53,15 +53,15 @@ func0000000000000061:
 	ret
 
 func0000000000000006:
+	li	a1, 1900
 	addiw	a0, a0, 1
 	slti	a0, a0, 3
-	li	a1, 1900
 	sub	a0, a1, a0
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	li	a1, 3
+	sext.w	a0, a0
 	beq	a0, a1, .LBB7_2
 	li	a0, 15
 	ret
@@ -90,16 +90,16 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
+	li	a1, 2
 	addi	a0, a0, -2048
 	addiw	a0, a0, -573
 	sltiu	a0, a0, 3
-	li	a1, 2
 	sub	a0, a1, a0
 	ret
 
 func000000000000000a:
-	addiw	a0, a0, -1900
 	li	a1, 79
+	addiw	a0, a0, -1900
 	blt	a1, a0, .LBB12_2
 	li	a0, -1880
 	ret
@@ -108,11 +108,11 @@ func000000000000000a:
 	ret
 
 func0000000000000018:
-	addiw	a1, a0, -2027
-	lui	a0, 1048575
-	addi	a2, a0, 2047
+	lui	a1, 1048575
+	addiw	a2, a0, -2027
+	addi	a1, a1, 2047
 	lui	a0, 1
-	bltu	a1, a2, .LBB13_2
+	bltu	a2, a1, .LBB13_2
 	li	a0, 1
 	slli	a0, a0, 11
 .LBB13_2:

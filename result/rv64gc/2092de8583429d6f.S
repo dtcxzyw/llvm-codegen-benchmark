@@ -12,8 +12,8 @@ func0000000000000000:
 	beqz	a1, .LBB1_2
 	li	a2, -1076
 .LBB1_2:
-	add	a0, a0, a2
 	lui	a1, 1048279
+	add	a0, a0, a2
 	addi	a1, a1, -847
 	mulw	a0, a0, a1
 	ret
@@ -23,8 +23,8 @@ func0000000000000005:
 	beqz	a1, .LBB2_2
 	li	a2, -151
 .LBB2_2:
-	add	a0, a0, a2
 	lui	a1, 1048279
+	add	a0, a0, a2
 	addi	a1, a1, -847
 	mulw	a0, a0, a1
 	ret
@@ -34,8 +34,8 @@ func0000000000000007:
 	beqz	a1, .LBB3_2
 	li	a2, 2000
 .LBB3_2:
-	add	a0, a0, a2
 	lui	a1, 9
+	add	a0, a0, a2
 	addi	a1, a1, -339
 	mulw	a0, a0, a1
 	ret

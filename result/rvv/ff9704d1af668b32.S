@@ -15,9 +15,9 @@ func0000000000000002:
 	vle64.v	v24, (a0)
 	vfadd.vv	v16, v16, v24
 	vfdiv.vv	v8, v8, v16
+	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	vfabs.v	v8, v8
 	vmflt.vf	v0, v8, fa5
 	ret
 

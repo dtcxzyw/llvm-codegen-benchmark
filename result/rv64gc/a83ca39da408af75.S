@@ -1,6 +1,6 @@
 func0000000000000001:
-	zext.b	a0, a0
 	li	a1, 45
+	zext.b	a0, a0
 	beq	a0, a1, .LBB0_2
 	lui	a0, 522240
 	fmv.w.x	fa0, a0
@@ -11,8 +11,8 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	zext.b	a0, a0
 	li	a1, 2
+	zext.b	a0, a0
 	bltu	a0, a1, .LBB1_2
 	lui	a0, 253133
 	addi	a0, a0, -819
@@ -25,8 +25,8 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
-	zext.b	a0, a0
 	li	a1, 31
+	zext.b	a0, a0
 	bltu	a1, a0, .LBB2_2
 	lui	a0, 784384
 	fmv.w.x	fa0, a0

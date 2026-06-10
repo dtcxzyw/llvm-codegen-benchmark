@@ -21,15 +21,15 @@ func000000000000001f:
 	ret
 
 func0000000000000005:
-	slli	a0, a0, 36
 	lui	a1, 67400
+	slli	a0, a0, 36
 	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func000000000000003f:
-	slli	a0, a0, 36
 	lui	a1, 67592
+	slli	a0, a0, 36
 	addi	a1, a1, 2
 	or	a0, a0, a1
 	ret

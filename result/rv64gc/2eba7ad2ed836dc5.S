@@ -21,13 +21,13 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	fmv.d	fa5, fa0
 	fmv.d.x	fa4, zero
-	li	a0, 2047
-	fle.d	a1, fa0, fa4
-	slli	a0, a0, 51
-	fmv.d.x	fa0, a0
-	bnez	a1, .LBB2_2
+	fmv.d	fa5, fa0
+	fle.d	a0, fa0, fa4
+	li	a1, 2047
+	slli	a1, a1, 51
+	fmv.d.x	fa0, a1
+	bnez	a0, .LBB2_2
 	fmul.d	fa0, fa5, fa0
 .LBB2_2:
 	ret

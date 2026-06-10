@@ -1,11 +1,11 @@
 func0000000000000000:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 33
 	slli	a1, a1, 32
-	slli	a2, a2, 33
+	addi	a3, a3, -2
 	srli	a1, a1, 32
-	addi	a2, a2, -2
-	and	a0, a0, a2
+	and	a0, a0, a3
 	mul	a0, a0, a1
 	ret
 

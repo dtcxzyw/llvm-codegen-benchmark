@@ -39,10 +39,10 @@ func000000000000018c:
 	ret
 
 func000000000000010c:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vv	v12, v10, v8
 	lui	a0, 244141
 	addi	a0, a0, -1536
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsltu.vv	v12, v10, v8
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12
 	vmand.mm	v0, v0, v8

@@ -13,9 +13,9 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	fabs.s	fa5, fa0
 	lui	a1, 265361
 	addi	a1, a1, -37
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a1
 	feq.s	a1, fa5, fa4
 	or	a0, a0, a1

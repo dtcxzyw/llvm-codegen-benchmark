@@ -1,7 +1,7 @@
 func000000000000000c:
+	lui	a1, 1
 	andi	a0, a0, -2048
 	bclri	a0, a0, 11
-	lui	a1, 1
 	add	a0, a0, a1
 	ret
 

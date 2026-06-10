@@ -1,6 +1,6 @@
 func000000000000003a:
-	andi	a3, a0, 1
 	slli	a2, a2, 32
+	andi	a3, a0, 1
 	srli	a0, a2, 29
 	add	a0, a0, a1
 	bnez	a3, .LBB0_2
@@ -21,13 +21,13 @@ func000000000000007f:
 	ret
 
 func000000000000003f:
-	andi	a3, a0, 1
 	slli	a2, a2, 32
-	srli	a0, a2, 29
+	srli	a3, a2, 29
 	srli	a2, a2, 28
-	add	a0, a0, a2
+	andi	a4, a0, 1
+	add	a0, a2, a3
 	add	a0, a0, a1
-	bnez	a3, .LBB2_2
+	bnez	a4, .LBB2_2
 	li	a1, 8
 	add	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func000000000000008d:
+	li	a0, 15
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v8, v8, v9
-	li	a0, 15
 	vminu.vx	v9, v8, a0
 	vsra.vi	v8, v8, 31
 	vandn.vv	v10, v9, v8

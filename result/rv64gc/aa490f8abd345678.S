@@ -1,6 +1,6 @@
 func0000000000000042:
-	fsub.s	fa4, fa0, fa1
 	lui	a0, 260096
+	fsub.s	fa4, fa0, fa1
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa4
 	beqz	a0, .LBB0_3
@@ -19,8 +19,8 @@ func0000000000000042:
 	ret
 
 func00000000000000ca:
-	fsub.s	fa4, fa0, fa1
 	lui	a0, 260096
+	fsub.s	fa4, fa0, fa1
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa5, fa4
 	beqz	a0, .LBB1_3

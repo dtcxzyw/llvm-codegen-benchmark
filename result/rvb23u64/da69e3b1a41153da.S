@@ -9,8 +9,8 @@ func000000000000002c:
 
 func0000000000000034:
 	slli	a2, a2, 37
-	czero.eqz	a0, a0, a1
 	srli	a2, a2, 37
+	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	lui	a2, 230
 	or	a0, a0, a1
@@ -20,8 +20,8 @@ func0000000000000034:
 
 func0000000000000038:
 	slli	a2, a2, 30
-	czero.eqz	a0, a0, a1
 	srli	a2, a2, 30
+	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	li	a2, 45
 	or	a0, a0, a1
@@ -38,11 +38,11 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
+	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
-	czero.nez	a1, a2, a1
-	li	a2, -17
-	or	a0, a0, a1
-	slli	a2, a2, 32
-	sltu	a0, a0, a2
+	li	a1, -17
+	or	a0, a0, a2
+	slli	a1, a1, 32
+	sltu	a0, a0, a1
 	ret
 

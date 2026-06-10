@@ -51,8 +51,8 @@ func000000000000000c:
 	fmul.d	fa5, fa0, fa5
 	fli.d	fa4, 0.5
 	li	a0, -497
-	slli	a0, a0, 53
 	fadd.d	fa5, fa5, fa4
+	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
 	ret

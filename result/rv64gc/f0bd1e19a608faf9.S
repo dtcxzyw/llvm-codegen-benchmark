@@ -1,23 +1,23 @@
 func00000000000001b5:
 	li	a3, 100
-	zext.b	a1, a1
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	lui	a3, 1048575
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a1, a3, -1232
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func00000000000001a5:
 	li	a3, 100
-	zext.b	a1, a1
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	lui	a3, 1048575
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a1, a3, -1232
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func00000000000001ff:
@@ -32,23 +32,23 @@ func00000000000001ff:
 
 func00000000000001b7:
 	li	a3, 100
-	zext.b	a1, a1
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	lui	a3, 1048575
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a1, a3, -1232
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func00000000000001ef:
 	li	a3, 588
-	zext.b	a1, a1
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	lui	a3, 11
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a1, a3, -1024
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 

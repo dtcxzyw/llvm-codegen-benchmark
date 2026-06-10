@@ -13,9 +13,9 @@ func0000000000000004:
 
 func0000000000000002:
 	fli.d	fa5, 1.0
-	lui	a0, 8187
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmv.v.f	v16, fa5
+	lui	a0, 8187
 	slli	a0, a0, 37
 	fmv.d.x	fa5, a0
 	vfmacc.vf	v16, fa5, v8
@@ -26,11 +26,11 @@ func0000000000000002:
 .LCPI2_0:
 	.quad	0x4170101010000000
 func000000000000000c:
+	fli.d	fa5, 0.5
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfmv.v.f	v16, fa5
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	fli.d	fa4, 0.5
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmv.v.f	v16, fa4
 	vfmacc.vf	v16, fa5, v8
 	fmv.d.x	fa5, zero
 	vmfge.vf	v0, v16, fa5

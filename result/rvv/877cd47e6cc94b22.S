@@ -27,8 +27,8 @@ func0000000000000286:
 func00000000000002a6:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, -272
 	vadd.vv	v8, v12, v8
+	li	a0, -272
 	vadd.vx	v8, v8, a0
 	li	a0, 17
 	vmslt.vx	v0, v8, a0
@@ -70,8 +70,8 @@ func00000000000000aa:
 func00000000000002a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 256
 	vadd.vv	v8, v8, v10
+	li	a0, 256
 	vadd.vx	v8, v8, a0
 	li	a0, 769
 	vmsltu.vx	v0, v8, a0

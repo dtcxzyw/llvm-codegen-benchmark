@@ -8,11 +8,11 @@ func0000000000000294:
 	ret
 
 func0000000000000030:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vv	v16, v12, v14
 	fmv.d.x	fa5, zero
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfeq.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v16
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmfeq.vf	v16, v8, fa5
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vv	v8, v12, v14
+	vmor.mm	v0, v16, v8
 	ret
 

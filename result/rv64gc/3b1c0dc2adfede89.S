@@ -1,14 +1,14 @@
 func000000000000003c:
-	slli	a1, a1, 48
 	lui	a2, 2432
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func000000000000007c:
-	slli	a1, a1, 48
 	lui	a2, 2432
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
@@ -39,8 +39,8 @@ func0000000000000070:
 	lui	a2, 7856
 	mulhu	a1, a1, a2
 	lui	a2, 1
-	add	a0, a0, a1
-	addi	a1, a2, 1577
+	addi	a2, a2, 1577
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -49,8 +49,8 @@ func000000000000007f:
 	lui	a2, 7856
 	mulhu	a1, a1, a2
 	lui	a2, 1
-	add	a0, a0, a1
-	addi	a1, a2, 1372
+	addi	a2, a2, 1372
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

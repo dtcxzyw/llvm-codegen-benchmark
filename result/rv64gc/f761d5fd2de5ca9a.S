@@ -11,30 +11,30 @@ func00000000000000e4:
 	ret
 
 func0000000000000044:
-	addiw	a1, a0, -1
-	lui	a2, 1048560
-	addi	a3, a2, -1
-	sltu	a1, a1, a3
-	subw	a2, a2, a0
-	neg	a0, a1
-	and	a0, a0, a2
+	lui	a1, 1048560
+	addiw	a2, a0, -1
+	addi	a3, a1, -1
+	sltu	a2, a2, a3
+	subw	a1, a1, a0
+	neg	a0, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	addiw	a1, a0, 8
-	li	a2, 10
-	sltiu	a1, a1, 6
-	subw	a2, a2, a0
-	addi	a0, a1, -1
-	or	a0, a0, a2
+	li	a1, 10
+	addiw	a2, a0, 8
+	sltiu	a2, a2, 6
+	subw	a1, a1, a0
+	addi	a0, a2, -1
+	or	a0, a0, a1
 	ret
 
 func0000000000000004:
-	addiw	a1, a0, -97
-	li	a2, 197
-	sltiu	a1, a1, 4
-	subw	a2, a2, a0
-	neg	a0, a1
-	and	a0, a0, a2
+	li	a1, 197
+	addiw	a2, a0, -97
+	sltiu	a2, a2, 4
+	subw	a1, a1, a0
+	neg	a0, a2
+	and	a0, a0, a1
 	ret
 

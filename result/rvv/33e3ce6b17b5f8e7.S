@@ -2,8 +2,8 @@ func000000000000002c:
 	lui	a0, 1048568
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vandn.vx	v12, v12, a0
-	li	a0, -1
 	vmseq.vi	v0, v12, 0
+	li	a0, -1
 	srli	a0, a0, 16
 	vand.vx	v8, v10, a0, v0.t
 	vmsne.vi	v0, v8, 0
@@ -22,8 +22,8 @@ func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vx	v12, v12, a0
 	vmseq.vi	v0, v12, 0
-	li	a0, -17
 	vmerge.vvm	v8, v8, v10, v0
+	li	a0, -17
 	slli	a0, a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret

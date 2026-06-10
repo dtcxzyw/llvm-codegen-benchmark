@@ -4,10 +4,10 @@ func0000000000000000:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	xor	a1, a1, a2
-	slli	a0, a0, 48
 	mul	a1, a1, a3
 	srli	a2, a1, 59
 	slli	a1, a1, 5
+	slli	a0, a0, 48
 	or	a1, a1, a2
 	srli	a0, a0, 48
 	xor	a0, a0, a1
@@ -19,10 +19,10 @@ func0000000000000002:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	xor	a1, a1, a2
-	slli	a0, a0, 48
 	mul	a1, a1, a3
 	srli	a2, a1, 59
 	slli	a1, a1, 5
+	slli	a0, a0, 48
 	or	a1, a1, a2
 	srli	a0, a0, 48
 	xor	a0, a0, a1

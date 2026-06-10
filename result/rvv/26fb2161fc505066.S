@@ -18,9 +18,9 @@ func000000000000003c:
 
 func0000000000000020:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vi	v14, v8, 8
-	vsrl.vv	v10, v10, v14
 	vzext.vf4	v14, v12
+	vrsub.vi	v12, v8, 8
+	vsrl.vv	v10, v10, v12
 	vsll.vv	v8, v14, v8
 	vor.vv	v8, v8, v10
 	ret

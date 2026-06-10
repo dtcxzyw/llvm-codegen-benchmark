@@ -20,9 +20,9 @@ func0000000000000035:
 	ret
 
 func0000000000000020:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, 32
 	vsll.vx	v8, v8, a0
 	vmacc.vv	v8, v10, v14
 	ret

@@ -23,12 +23,12 @@ func00000000000000d5:
 
 func0000000000000005:
 	li	a3, 1000
-	sub	a1, a1, a0
-	lui	a0, 464
 	mul	a2, a2, a3
-	add	a1, a1, a2
-	addi	a0, a0, -544
-	addw	a0, a0, a1
+	lui	a3, 464
+	sub	a1, a1, a0
+	addi	a0, a3, -544
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000000:
@@ -36,7 +36,7 @@ func0000000000000000:
 	addi	a3, a3, -496
 	mul	a2, a2, a3
 	add	a1, a1, a3
-	add	a1, a1, a2
-	subw	a0, a1, a0
+	sub	a0, a1, a0
+	addw	a0, a0, a2
 	ret
 

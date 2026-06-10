@@ -18,18 +18,18 @@ func0000000000000008:
 	ret
 
 func0000000000000001:
-	andi	a2, a0, 1
-	zext.b	a1, a1
+	zext.b	a2, a1
+	andi	a1, a0, 1
 	li	a0, 1154
-	beqz	a1, .LBB1_2
-	li	a1, 1154
-	beqz	a2, .LBB1_3
+	beqz	a2, .LBB1_2
+	li	a2, 1154
+	beqz	a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	li	a1, 421
-	bnez	a2, .LBB1_4
+	li	a2, 421
+	bnez	a1, .LBB1_4
 .LBB1_3:
-	mv	a0, a1
+	mv	a0, a2
 .LBB1_4:
 	ret
 

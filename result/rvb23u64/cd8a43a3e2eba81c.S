@@ -10,11 +10,11 @@ func0000000000000042:
 	ret
 
 func0000000000000302:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -2
-	seqz	a0, a0
 	snez	a1, a1
+	seqz	a0, a0
 	or	a0, a0, a1
 	li	a1, -98
 	czero.nez	a0, a1, a0

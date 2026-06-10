@@ -21,31 +21,31 @@ func0000000000000026:
 	ret
 
 func000000000000002c:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v8, v10
 	lui	a0, 20972
 	addi	a0, a0, -1968
-	vmv.v.x	v10, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vv	v8, v8, v10
 	lui	a0, 796918
 	addi	a0, a0, -983
-	vmacc.vx	v10, a0, v8
+	vmacc.vx	v12, a0, v8
 	lui	a0, 10486
-	vror.vi	v8, v10, 2
+	vror.vi	v8, v12, 2
 	addi	a0, a0, -984
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000021:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v8, v10
 	lui	a0, 20972
 	addi	a0, a0, -1968
-	vmv.v.x	v10, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vadd.vv	v8, v8, v10
 	lui	a0, 796918
 	addi	a0, a0, -983
-	vmacc.vx	v10, a0, v8
+	vmacc.vx	v12, a0, v8
 	lui	a0, 2621
-	vror.vi	v8, v10, 4
+	vror.vi	v8, v12, 4
 	addi	a0, a0, 1802
 	vmsleu.vx	v0, v8, a0
 	ret
@@ -100,10 +100,10 @@ func000000000000002a:
 func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, -64
 	vsra.vi	v10, v8, 31
 	vsrl.vi	v10, v10, 26
 	vadd.vv	v10, v8, v10
+	li	a0, -64
 	vand.vx	v10, v10, a0
 	vsub.vv	v8, v8, v10
 	li	a0, 60

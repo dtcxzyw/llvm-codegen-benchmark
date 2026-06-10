@@ -15,8 +15,8 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 1
 	lui	a3, 32768
+	andi	a1, a1, 1
 	addi	a3, a3, -4
 	and	a3, a3, a2
 	czero.nez	a1, a2, a1

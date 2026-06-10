@@ -17,8 +17,8 @@ func0000000000000015:
 
 func0000000000000040:
 	sext.w	a1, a1
-	li	a2, -39
 	sltiu	a1, a1, 10
+	li	a2, -39
 	czero.nez	a1, a2, a1
 	slli	a0, a0, 4
 	add	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000014:
 	ret
 
 func000000000000001f:
-	sext.w	a1, a1
 	lui	a2, 48385
+	sext.w	a1, a1
 	addi	a2, a2, -1069
 	xor	a1, a1, a2
 	li	a2, 28

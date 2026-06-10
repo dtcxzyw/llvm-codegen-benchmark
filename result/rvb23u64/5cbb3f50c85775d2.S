@@ -16,9 +16,9 @@ func00000000000000e1:
 func0000000000000074:
 	zext.b	a1, a1
 	zext.h	a0, a0
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 

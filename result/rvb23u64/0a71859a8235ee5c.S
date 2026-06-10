@@ -9,9 +9,9 @@ func0000000000000001:
 func0000000000000008:
 	sext.w	a0, a0
 	sext.w	a1, a1
+	lui	a2, 4
 	sltu	a0, a1, a0
-	lui	a1, 4
-	addi	a1, a1, 439
+	addi	a1, a2, 439
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -48,9 +48,9 @@ func000000000000000a:
 func0000000000000007:
 	sext.w	a0, a0
 	sext.w	a1, a1
+	lui	a2, 8
 	slt	a0, a1, a0
-	lui	a1, 8
-	addi	a1, a1, -1
-	czero.eqz	a0, a1, a0
+	addi	a2, a2, -1
+	czero.eqz	a0, a2, a0
 	ret
 

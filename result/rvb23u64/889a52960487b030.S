@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	bset	a1, zero, a1
+	sext.w	a0, a0
 	addi	a1, a1, -1
 	slti	a0, a0, 6
 	addi	a1, a1, -15
@@ -20,8 +20,8 @@ func000000000000002a:
 
 func0000000000000028:
 	bset	a1, zero, a1
-	srliw	a0, a0, 28
 	addi	a1, a1, -1
+	srliw	a0, a0, 28
 	sltiu	a0, a0, 3
 	addi	a1, a1, -15
 	czero.eqz	a0, a1, a0

@@ -10,8 +10,8 @@ func0000000000000082:
 
 func0000000000000618:
 	srliw	a2, a2, 23
-	snez	a0, a0
 	addi	a2, a2, -8
+	snez	a0, a0
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -43,10 +43,10 @@ func0000000000000088:
 
 func0000000000000098:
 	lui	a3, 131072
-	snez	a0, a0
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
+	snez	a0, a0
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -54,8 +54,8 @@ func0000000000000098:
 
 func00000000000000b0:
 	andi	a2, a2, 15
-	snez	a1, a1
 	addi	a2, a2, -5
+	snez	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -1,7 +1,7 @@
 func000000000000001b:
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 4
+	srli	a2, a3, 4
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
@@ -10,9 +10,9 @@ func000000000000001b:
 	ret
 
 func0000000000000013:
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
+	srli	a2, a3, 1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:

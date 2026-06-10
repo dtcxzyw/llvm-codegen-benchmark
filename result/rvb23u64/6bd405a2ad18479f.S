@@ -13,9 +13,9 @@ func0000000000000024:
 func0000000000000042:
 	fneg.d	fa5, fa1
 	fdiv.d	fa5, fa5, fa0
-	fli.d	fa4, 1.0
-	flt.d	a0, fa5, fa4
 	fmv.d.x	fa4, zero
+	fli.d	fa3, 1.0
+	flt.d	a0, fa5, fa3
 	flt.d	a1, fa4, fa5
 	and	a0, a0, a1
 	ret

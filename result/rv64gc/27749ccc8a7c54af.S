@@ -155,8 +155,8 @@ func00000000000002a1:
 	ret
 
 func0000000000000384:
-	neg	a0, a0
 	sub	a1, a1, a2
+	neg	a0, a0
 	sltu	a0, a1, a0
 	ret
 

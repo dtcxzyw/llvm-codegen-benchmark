@@ -42,10 +42,10 @@ func0000000000000058:
 	ret
 
 func0000000000000302:
-	addiw	a1, a1, -2
 	lui	a2, 1046016
-	snez	a1, a1
+	addiw	a1, a1, -2
 	xor	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

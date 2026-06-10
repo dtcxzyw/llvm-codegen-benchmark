@@ -23,11 +23,11 @@ func000000000000000a:
 	ret
 
 func0000000000000005:
+	lui	a3, 524288
 	add	a0, a0, a2
-	lui	a2, 524288
 	sub	a0, a1, a0
-	addi	a2, a2, 1
-	add	a0, a0, a2
+	addi	a3, a3, 1
+	add	a0, a0, a3
 	ret
 
 func0000000000000009:

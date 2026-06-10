@@ -41,11 +41,11 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
+	lui	a0, 458752
+	addi	a0, a0, -1026
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v10, v10
-	lui	a0, 458752
 	vand.vi	v12, v12, 2
-	addi	a0, a0, -1026
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v12, v10
 	vor.vv	v8, v10, v8

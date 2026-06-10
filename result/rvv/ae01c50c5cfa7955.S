@@ -6,9 +6,9 @@ func00000000000008c1:
 	ret
 
 func00000000000008ca:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v12, v8, 6
-	li	a0, 31
 	vmsne.vx	v8, v10, a0
 	vmor.mm	v0, v12, v8
 	ret
@@ -38,17 +38,17 @@ func0000000000000a81:
 	ret
 
 func0000000000000a8a:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v8, 6
-	li	a0, 31
 	vmsne.vx	v8, v10, a0
 	vmor.mm	v0, v12, v8
 	ret
 
 func00000000000008c6:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v8, 5
-	li	a0, 31
 	vmseq.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
@@ -63,9 +63,9 @@ func00000000000000ca:
 	ret
 
 func0000000000000a86:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v12, v8, 6
-	li	a0, 31
 	vmseq.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
@@ -88,9 +88,9 @@ func0000000000000886:
 	ret
 
 func0000000000000826:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v8, 0
-	li	a0, 31
 	vmseq.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
@@ -103,9 +103,9 @@ func0000000000000821:
 	ret
 
 func0000000000000021:
+	li	a0, 30
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v8, 0
-	li	a0, 30
 	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret

@@ -8,8 +8,8 @@ func0000000000000002:
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 12
-	li	a0, 40
 	vand.vi	v8, v8, -8
+	li	a0, 40
 	vadd.vx	v8, v8, a0
 	lui	a0, 8
 	vmerge.vxm	v8, v8, a0, v0

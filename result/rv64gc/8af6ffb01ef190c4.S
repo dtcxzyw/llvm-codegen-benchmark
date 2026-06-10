@@ -1,7 +1,7 @@
 func0000000000000070:
 	add	a1, a1, a2
-	lui	a2, 2
 	slliw	a1, a1, 4
+	lui	a2, 2
 	add	a0, a0, a1
 	addi	a1, a2, -360
 	add	a0, a0, a1

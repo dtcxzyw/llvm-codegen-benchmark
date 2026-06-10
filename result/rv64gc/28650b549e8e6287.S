@@ -1,6 +1,6 @@
 func0000000000000009:
-	sext.w	a2, a0
 	slli	a1, a1, 48
+	sext.w	a2, a0
 	srli	a1, a1, 48
 	sltu	a1, a2, a1
 	neg	a1, a1
@@ -8,8 +8,8 @@ func0000000000000009:
 	ret
 
 func0000000000000001:
-	sext.w	a2, a0
 	slli	a1, a1, 48
+	sext.w	a2, a0
 	srli	a1, a1, 48
 	xor	a1, a1, a2
 	seqz	a1, a1

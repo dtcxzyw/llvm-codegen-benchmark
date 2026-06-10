@@ -1,7 +1,7 @@
 func00000000000000a2:
-	srai	a1, a1, 4
 	li	a2, -1
 	slli	a2, a2, 63
+	srai	a1, a1, 4
 	addi	a3, a2, 63
 	and	a1, a1, a3
 	sltu	a1, a2, a1
@@ -11,9 +11,9 @@ func00000000000000a2:
 	ret
 
 func0000000000000022:
-	srai	a1, a1, 32
 	li	a2, -1
 	slli	a2, a2, 63
+	srai	a1, a1, 32
 	addi	a3, a2, 63
 	and	a1, a1, a3
 	sltu	a1, a2, a1

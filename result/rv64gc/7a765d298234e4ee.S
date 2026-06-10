@@ -1,6 +1,6 @@
 func0000000000000024:
-	addi	a0, a0, 136
 	li	a1, 256
+	addi	a0, a0, 136
 	bltu	a0, a1, .LBB0_2
 	li	a0, -67
 	ret

@@ -32,9 +32,9 @@ func0000000000000034:
 func0000000000000038:
 	addw	a0, a0, a1
 	negw	a1, a0
+	lui	a2, 3
 	max	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, -1366
+	addi	a1, a2, -1366
 	sltu	a0, a1, a0
 	ret
 

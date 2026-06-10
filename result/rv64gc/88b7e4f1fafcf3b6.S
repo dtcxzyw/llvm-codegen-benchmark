@@ -110,11 +110,11 @@ func0000000000000024:
 
 func0000000000000234:
 	add	a1, a1, a2
-	lui	a2, 8
 	add	a0, a0, a1
+	lui	a1, 8
 	addiw	a0, a0, -31
-	addi	a2, a2, -1
-	sltu	a0, a0, a2
+	addi	a1, a1, -1
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000206:

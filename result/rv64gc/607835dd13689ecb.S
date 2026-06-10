@@ -27,10 +27,10 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 1
+	andi	a0, a0, 1
 	neg	a1, a1
 	ori	a1, a1, 1
 	addi	a0, a0, -1

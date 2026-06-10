@@ -125,10 +125,10 @@ func0000000000000024:
 	lui	a0, %hi(.LCPI15_0)
 	ld	a0, %lo(.LCPI15_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v12, v12, a0
-	vmseq.vv	v14, v12, v10
-	vmsleu.vi	v10, v8, 4
-	vmand.mm	v0, v10, v14
+	vmsleu.vi	v14, v8, 4
+	vadd.vx	v8, v12, a0
+	vmseq.vv	v12, v8, v10
+	vmand.mm	v0, v14, v12
 	ret
 
 func0000000000000c2c:
@@ -148,9 +148,9 @@ func000000000000008c:
 	ret
 
 func00000000000004d4:
+	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
-	li	a0, 31
 	vmslt.vv	v14, v12, v10
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14

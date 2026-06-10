@@ -1,8 +1,8 @@
 func0000000000000000:
+	li	a2, -33
+	slli	a2, a2, 27
 	or	a0, a0, a1
-	li	a1, -33
-	slli	a1, a1, 27
-	addi	a1, a1, -1237
+	addi	a1, a2, -1237
 	and	a0, a0, a1
 	addi	a0, a0, 1108
 	ret

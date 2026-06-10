@@ -1,24 +1,21 @@
 func0000000000000008:
-	neg	a3, a0
 	sub	a2, a2, a1
-	snez	a0, a0
-	sub	a1, a2, a0
-	mv	a0, a3
+	snez	a1, a0
+	neg	a0, a0
+	sub	a1, a2, a1
 	ret
 
 func000000000000000a:
-	neg	a3, a0
 	sub	a2, a2, a1
-	snez	a0, a0
-	sub	a1, a2, a0
-	mv	a0, a3
+	snez	a1, a0
+	neg	a0, a0
+	sub	a1, a2, a1
 	ret
 
 func000000000000000d:
-	neg	a3, a0
 	sub	a2, a2, a1
-	snez	a0, a0
-	sub	a1, a2, a0
-	mv	a0, a3
+	snez	a1, a0
+	neg	a0, a0
+	sub	a1, a2, a1
 	ret
 

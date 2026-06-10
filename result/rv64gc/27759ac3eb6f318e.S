@@ -20,16 +20,15 @@ func0000000000000000:
 	ret
 
 .LCPI3_0:
+	.quad	1080863974993432320
+.LCPI3_1:
 	.quad	3472327196715986992
 func000000000000000b:
+	lui	a2, %hi(.LCPI3_0)
+	lui	a3, %hi(.LCPI3_1)
+	ld	a2, %lo(.LCPI3_0)(a2)
+	ld	a3, %lo(.LCPI3_1)(a3)
 	slli	a1, a1, 8
-	lui	a2, 61440
-	lui	a3, %hi(.LCPI3_0)
-	addi	a2, a2, 15
-	ld	a3, %lo(.LCPI3_0)(a3)
-	slli	a2, a2, 24
-	addi	a2, a2, 15
-	slli	a2, a2, 8
 	and	a1, a1, a2
 	or	a0, a0, a3
 	or	a0, a0, a1
@@ -38,10 +37,10 @@ func000000000000000b:
 func000000000000000c:
 	slli	a1, a1, 63
 	srli	a1, a1, 26
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 38
-	or	a0, a0, a1
+	slli	a2, a2, 38
+	or	a0, a0, a2
 	ret
 
 func000000000000000f:

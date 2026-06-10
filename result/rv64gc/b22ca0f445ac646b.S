@@ -19,8 +19,8 @@ func000000000000014c:
 
 func00000000000000c8:
 	zext.b	a1, a1
-	srliw	a2, a2, 31
 	sltiu	a1, a1, 222
+	srliw	a2, a2, 31
 	xori	a1, a1, 1
 	or	a1, a1, a2
 	and	a0, a0, a1

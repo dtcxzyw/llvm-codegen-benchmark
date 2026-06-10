@@ -7,11 +7,11 @@ func0000000000000003:
 
 func0000000000000002:
 	lui	a3, 1048574
+	lui	a4, 1048575
 	addi	a3, a3, 2047
+	addi	a4, a4, 2047
 	and	a2, a2, a3
-	lui	a3, 1048575
-	addi	a3, a3, 2047
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

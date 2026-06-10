@@ -65,15 +65,15 @@ func0000000000000029:
 	ret
 
 func0000000000000020:
-	sext.w	a2, a1
-	lui	a3, 976562
-	addi	a3, a3, 2047
-	sltu	a2, a3, a2
-	lui	a3, 976563
+	lui	a2, 976562
+	sext.w	a3, a1
+	addi	a2, a2, 2047
+	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 976563
 	or	a0, a0, a1
-	addi	a1, a3, -2048
+	addi	a1, a2, -2048
 	subw	a0, a1, a0
 	ret
 

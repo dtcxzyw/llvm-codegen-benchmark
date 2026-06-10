@@ -25,10 +25,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
+	lui	a3, 524288
 	subw	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -2
-	sltu	a1, a2, a1
+	addiw	a3, a3, -2
+	sltu	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

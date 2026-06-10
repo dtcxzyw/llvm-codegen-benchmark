@@ -14,8 +14,8 @@ func0000000000000004:
 	ret
 
 func000000000000000f:
-	addi	a0, a0, 71
 	lui	a1, 128
+	addi	a0, a0, 71
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret

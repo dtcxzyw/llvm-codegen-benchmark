@@ -28,10 +28,10 @@ func0000000000000001:
 	mv	a0, a1
 	ret
 .LBB2_2:
-	slli	a2, a2, 32
 	lui	a0, 981163
-	srli	a2, a2, 32
+	slli	a2, a2, 32
 	slli	a0, a0, 3
+	srli	a2, a2, 32
 	addi	a0, a0, 384
 	add	a0, a0, a2
 	ret

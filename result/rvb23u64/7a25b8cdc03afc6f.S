@@ -1,7 +1,7 @@
 func0000000000000002:
+	li	a1, 120
 	sh1add	a0, a0, a0
 	sext.w	a0, a0
-	li	a1, 120
 	min	a0, a0, a1
 	ret
 

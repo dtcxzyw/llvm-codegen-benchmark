@@ -1,19 +1,19 @@
 func0000000000000001:
 	li	a1, -51
 	mul	a0, a0, a1
-	slli	a1, a0, 7
-	slli	a0, a0, 56
-	srli	a0, a0, 57
+	slli	a1, a0, 56
+	slli	a0, a0, 7
+	srli	a1, a1, 57
 	or	a0, a0, a1
 	zext.b	a0, a0
 	sltiu	a0, a0, 26
 	ret
 
 func0000000000000014:
-	slli	a1, a0, 56
-	li	a2, 133
-	srli	a1, a1, 57
-	mul	a1, a1, a2
+	li	a1, 133
+	slli	a2, a0, 56
+	srli	a2, a2, 57
+	mul	a1, a2, a1
 	srli	a1, a1, 12
 	slli	a2, a1, 6
 	slli	a1, a1, 1
@@ -26,9 +26,9 @@ func0000000000000014:
 func000000000000000c:
 	li	a1, -51
 	mul	a0, a0, a1
-	slli	a1, a0, 6
-	slli	a0, a0, 56
-	srli	a0, a0, 58
+	slli	a1, a0, 56
+	slli	a0, a0, 6
+	srli	a1, a1, 58
 	or	a0, a0, a1
 	zext.b	a0, a0
 	sltiu	a0, a0, 13
@@ -36,9 +36,9 @@ func000000000000000c:
 	ret
 
 func0000000000000018:
-	zext.b	a1, a0
-	li	a2, 205
-	mul	a1, a1, a2
+	li	a1, 205
+	zext.b	a2, a0
+	mul	a1, a2, a1
 	srli	a1, a1, 11
 	slli	a2, a1, 1
 	slli	a1, a1, 3

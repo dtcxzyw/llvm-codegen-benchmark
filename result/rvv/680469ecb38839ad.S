@@ -10,9 +10,9 @@ func0000000000000094:
 	ret
 
 func0000000000000306:
+	li	a0, 513
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v14, v12, 4
-	li	a0, 513
 	vmslt.vx	v12, v10, a0
 	vmand.mm	v0, v12, v14
 	vmv.v.i	v10, 0
@@ -38,9 +38,9 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
+	li	a0, 229
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
-	li	a0, 229
 	vmsltu.vx	v12, v10, a0
 	vmand.mm	v0, v12, v14
 	vmv.v.i	v10, 0
@@ -59,9 +59,9 @@ func00000000000000ca:
 func000000000000028c:
 	lui	a0, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsne.vi	v14, v10, 0
-	vmsltu.vx	v10, v12, a0
-	vmand.mm	v0, v14, v10
+	vmsltu.vx	v14, v12, a0
+	vmsne.vi	v12, v10, 0
+	vmand.mm	v0, v12, v14
 	vmv.v.i	v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

@@ -82,8 +82,8 @@ func000000000000000a:
 func0000000000000788:
 	slli	a1, a1, 3
 	sub	a2, a2, a0
-	li	a0, -15
 	add	a1, a1, a2
+	li	a0, -15
 	addi	a1, a1, 16
 	srli	a0, a0, 1
 	sltu	a0, a0, a1

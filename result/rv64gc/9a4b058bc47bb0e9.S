@@ -28,11 +28,11 @@ func000000000000003b:
 func000000000000001a:
 	li	a2, -112
 	mul	a2, a0, a2
-	add	a1, a1, a2
-	slli	a2, a0, 4
+	slli	a3, a0, 4
 	slli	a0, a0, 7
-	sub	a0, a0, a2
+	sub	a0, a0, a3
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000030:

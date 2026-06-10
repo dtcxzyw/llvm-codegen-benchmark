@@ -10,9 +10,9 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
+	lui	a1, 524288
 	sext.w	a0, a0
 	srli	a0, a0, 31
-	lui	a1, 524288
 	or	a0, a0, a1
 	ret
 

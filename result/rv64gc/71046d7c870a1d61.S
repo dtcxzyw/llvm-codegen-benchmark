@@ -13,25 +13,25 @@ func0000000000000010:
 	beqz	a2, .LBB1_2
 	li	a2, 8
 	andi	a1, a1, 1
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	addi	a0, a0, 7
 	ret
 .LBB1_2:
 	li	a2, 4
 	andi	a1, a1, 1
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	addi	a0, a0, 7
 	ret
 
 func000000000000001b:
-	addiw	a2, a2, -63
 	slli	a1, a1, 63
-	seqz	a2, a2
+	addiw	a2, a2, -63
 	srai	a1, a1, 63
-	slli	a2, a2, 3
+	seqz	a2, a2
 	andi	a1, a1, -8
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

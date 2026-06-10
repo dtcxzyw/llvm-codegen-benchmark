@@ -8,8 +8,8 @@ func0000000000000024:
 	ret
 
 func0000000000000004:
-	addiw	a2, a2, -1
 	lui	a3, 262144
+	addiw	a2, a2, -1
 	addi	a3, a3, -1
 	sltu	a2, a2, a3
 	and	a0, a0, a1

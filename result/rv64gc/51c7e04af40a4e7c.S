@@ -1,7 +1,7 @@
 func0000000000000029:
-	sext.w	a2, a1
-	li	a3, 640
-	bgeu	a2, a3, .LBB0_2
+	li	a2, 640
+	sext.w	a3, a1
+	bgeu	a3, a2, .LBB0_2
 	srli	a0, a1, 6
 .LBB0_2:
 	andi	a0, a0, 207

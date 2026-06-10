@@ -9,9 +9,9 @@ func0000000000000021:
 	ret
 
 func0000000000000318:
-	sltiu	a1, a0, 150
-	li	a2, 11
-	czero.eqz	a1, a2, a1
+	li	a1, 11
+	sltiu	a2, a0, 150
+	czero.eqz	a1, a1, a2
 	sltiu	a0, a0, 250
 	addi	a1, a1, 12
 	czero.eqz	a0, a1, a0
@@ -38,14 +38,14 @@ func0000000000000026:
 	ret
 
 func0000000000000294:
-	sltiu	a1, a0, 40
-	li	a2, 50
-	czero.nez	a1, a2, a1
+	li	a1, 50
 	lui	a2, 1
-	sltiu	a0, a0, 19
+	sltiu	a3, a0, 40
+	czero.nez	a1, a1, a3
 	addi	a2, a2, 334
 	add	a1, a1, a2
 	li	a2, 17
+	sltiu	a0, a0, 19
 	slli	a2, a2, 8
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

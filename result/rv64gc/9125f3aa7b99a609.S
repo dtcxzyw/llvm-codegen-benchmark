@@ -1,7 +1,7 @@
 func000000000000000c:
-	andi	a0, a0, 1
 	li	a3, 1000
 	mul	a2, a2, a3
+	andi	a0, a0, 1
 	add	a1, a1, a2
 	addi	a0, a0, -1
 	and	a0, a0, a1
@@ -9,9 +9,9 @@ func000000000000000c:
 
 func0000000000000005:
 	lui	a3, 244141
-	slli	a0, a0, 63
 	addi	a3, a3, -1536
 	mul	a2, a2, a3
+	slli	a0, a0, 63
 	add	a1, a1, a2
 	srai	a0, a0, 63
 	or	a0, a0, a1

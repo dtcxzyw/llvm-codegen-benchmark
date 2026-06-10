@@ -1,7 +1,7 @@
 func000000000000006e:
-	slli	a1, a1, 32
 	lui	a2, 174763
 	addi	a2, a2, -1365
+	slli	a1, a1, 32
 	slli	a2, a2, 33
 	mulhu	a1, a1, a2
 	srli	a1, a1, 32
@@ -41,8 +41,8 @@ func000000000000006c:
 	ret
 
 func00000000000000ef:
-	sext.w	a1, a1
 	lui	a2, 244141
+	sext.w	a1, a1
 	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	srli	a1, a1, 23

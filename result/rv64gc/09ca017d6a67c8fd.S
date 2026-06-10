@@ -1,7 +1,7 @@
 func000000000000002c:
 	andi	a2, a2, 31
-	xor	a0, a0, a1
 	addi	a2, a2, -11
+	xor	a0, a0, a1
 	snez	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000081:
 
 func0000000000000021:
 	lui	a3, 16
-	xor	a0, a0, a1
 	and	a2, a2, a3
+	xor	a0, a0, a1
 	seqz	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

@@ -37,18 +37,18 @@ func0000000000000028:
 	ret
 
 func00000000000000ca:
-	zext.b	a1, a1
 	li	a2, -1
 	slli	a2, a2, 63
+	zext.b	a1, a1
 	addi	a2, a2, 47
 	sub	a2, a2, a1
 	slt	a0, a2, a0
 	ret
 
 func000000000000004a:
-	zext.b	a1, a1
 	li	a2, -1
 	slli	a2, a2, 63
+	zext.b	a1, a1
 	addi	a2, a2, 47
 	sub	a2, a2, a1
 	slt	a0, a2, a0

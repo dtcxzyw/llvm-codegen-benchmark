@@ -65,10 +65,10 @@ func0000000000000024:
 	bexti	a2, a2, 32
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
-	lui	a2, 419430
 	or	a0, a0, a1
+	lui	a1, 419430
 	sext.w	a0, a0
-	addi	a1, a2, 1638
+	addi	a1, a1, 1638
 	sltu	a0, a0, a1
 	ret
 

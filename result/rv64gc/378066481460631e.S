@@ -13,9 +13,9 @@ func0000000000000000:
 func0000000000000021:
 	srliw	a2, a1, 15
 	slli	a1, a1, 17
+	lui	a3, 163151
 	or	a1, a1, a2
-	lui	a2, 163151
-	addi	a2, a2, -1233
+	addi	a2, a3, -1233
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a1, a0, 15

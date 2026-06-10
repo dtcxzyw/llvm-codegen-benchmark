@@ -1,17 +1,17 @@
 func0000000000000008:
+	lui	a2, 344254
 	maxu	a0, a0, a1
+	addi	a2, a2, 1023
 	sub	a0, a0, a1
-	lui	a1, 344254
-	addi	a1, a1, 1023
-	bseti	a1, a1, 33
+	bseti	a1, a2, 33
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000004:
 	maxu	a0, a0, a1
+	lui	a2, 3662
 	sub	a0, a0, a1
-	lui	a1, 3662
-	addi	a1, a1, 449
+	addi	a1, a2, 449
 	sltu	a0, a0, a1
 	ret
 
@@ -58,9 +58,9 @@ func000000000000000c:
 
 func0000000000000028:
 	maxu	a0, a0, a1
+	lui	a2, 12
 	sub	a0, a0, a1
-	lui	a1, 12
-	addi	a1, a1, 848
+	addi	a1, a2, 848
 	sltu	a0, a1, a0
 	ret
 

@@ -125,8 +125,8 @@ func0000000000000086:
 func0000000000000184:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 1
 	vadd.vi	v8, v10, 1
+	lui	a0, 1
 	addi	a0, a0, 199
 	vmsltu.vx	v0, v8, a0
 	ret

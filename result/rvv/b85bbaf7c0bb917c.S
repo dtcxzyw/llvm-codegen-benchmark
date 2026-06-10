@@ -10,8 +10,8 @@ func00000000000000a8:
 func00000000000000a4:
 	lui	a0, 1040384
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v8, v8, 24
 	vandn.vx	v10, v10, a0
+	vsra.vi	v8, v8, 24
 	vadd.vv	v8, v8, v10
 	li	a0, 25
 	vmsltu.vx	v0, v8, a0

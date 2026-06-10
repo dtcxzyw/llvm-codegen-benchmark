@@ -19,9 +19,9 @@ func000000000000008c:
 	ret
 
 func00000000000000ac:
-	sgtz	a0, a0
 	fli.s	fa5, 1.0
 	fle.s	a1, fa5, fa0
+	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -33,10 +33,10 @@ func00000000000000ec:
 	ret
 
 func0000000000000082:
-	sltiu	a0, a0, 11
 	fmv.w.x	fa5, zero
-	xori	a0, a0, 1
 	flt.s	a1, fa0, fa5
+	sltiu	a0, a0, 11
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

@@ -31,8 +31,8 @@ func0000000000000007:
 	ret
 
 func0000000000000009:
-	srai	a1, a1, 5
 	addi	a0, a0, 2047
+	srai	a1, a1, 5
 	addi	a0, a0, 1
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1

@@ -20,8 +20,8 @@ func0000000000000041:
 	ret
 
 func00000000000000a1:
-	sext.w	a1, a1
 	lui	a2, 12
+	sext.w	a1, a1
 	addi	a2, a2, 3
 	slt	a1, a2, a1
 	sraiw	a0, a0, 27

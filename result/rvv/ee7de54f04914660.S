@@ -1,21 +1,21 @@
 func0000000000000184:
-	li	a0, 101
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
+	li	a0, 101
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000004:
-	li	a0, 41
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
+	li	a0, 41
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000188:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 8
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -36,17 +36,17 @@ func0000000000000008:
 	ret
 
 func0000000000000108:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func00000000000001f8:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -54,10 +54,10 @@ func00000000000001f8:
 .LCPI7_0:
 	.quad	384307168202282325
 func0000000000000088:
-	lui	a0, %hi(.LCPI7_0)
-	ld	a0, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
+	lui	a0, %hi(.LCPI7_0)
+	ld	a0, %lo(.LCPI7_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -75,9 +75,9 @@ func0000000000000001:
 	ret
 
 func00000000000000a8:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v8, v10, v8
+	li	a0, -1
 	srli	a0, a0, 3
 	vmsgtu.vx	v0, v8, a0
 	ret

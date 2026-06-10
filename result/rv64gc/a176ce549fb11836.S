@@ -1,6 +1,6 @@
 func000000000000c618:
-	xori	a2, a2, 102
 	lui	a3, 16384
+	xori	a2, a2, 102
 	xor	a1, a1, a3
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -21,9 +21,9 @@ func000000000000c604:
 func000000000000c082:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	snez	a2, a2
 	seqz	a1, a1
 	seqz	a0, a0
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

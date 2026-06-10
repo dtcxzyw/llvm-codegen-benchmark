@@ -1,7 +1,7 @@
 func000000000000003f:
-	addi	a1, a1, 15
 	li	a2, 1
 	slli	a2, a2, 34
+	addi	a1, a1, 15
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	and	a0, a0, a2
@@ -27,9 +27,9 @@ func0000000000000015:
 
 func000000000000000c:
 	li	a2, 1
-	addi	a0, a0, 7
 	slli	a2, a2, 35
 	addi	a2, a2, -8
+	addi	a0, a0, 7
 	and	a1, a1, a2
 	andi	a0, a0, -8
 	add	a0, a0, a1
@@ -45,9 +45,9 @@ func0000000000000035:
 	ret
 
 func000000000000000f:
-	addi	a1, a1, 1
 	li	a2, 1
 	slli	a2, a2, 32
+	addi	a1, a1, 1
 	addi	a2, a2, -2
 	and	a1, a1, a2
 	and	a0, a0, a2

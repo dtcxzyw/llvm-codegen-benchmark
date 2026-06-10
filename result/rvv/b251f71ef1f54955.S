@@ -1,8 +1,8 @@
 func0000000000000020:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v10, -13
 	lui	a0, 174763
 	addi	a0, a0, -1365
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v10, v10, -13
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31

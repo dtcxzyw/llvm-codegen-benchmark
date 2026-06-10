@@ -25,13 +25,13 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	zext.w	a2, a2
 	lui	a3, 209715
+	addi	a3, a3, 819
+	zext.w	a2, a2
+	slli	a4, a3, 32
 	sub	a2, a2, a1
-	addi	a1, a3, 819
-	slli	a3, a1, 32
-	add	a1, a1, a3
-	and	a1, a1, a2
-	add	a0, a0, a1
+	add	a3, a3, a4
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 

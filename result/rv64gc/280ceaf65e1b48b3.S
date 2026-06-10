@@ -1,6 +1,6 @@
 func0000000000000003:
-	neg	a0, a0
 	li	a1, -57
+	neg	a0, a0
 	srli	a0, a0, 2
 	srli	a1, a1, 3
 	and	a0, a0, a1

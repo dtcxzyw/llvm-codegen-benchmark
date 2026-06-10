@@ -5,8 +5,8 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	srliw	a0, a0, 1
 	li	a1, 1000
+	srliw	a0, a0, 1
 	mulw	a0, a0, a1
 	ret
 

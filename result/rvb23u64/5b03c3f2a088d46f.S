@@ -1,6 +1,6 @@
 func0000000000000001:
-	zext.h	a0, a0
 	andi	a1, a1, 1
+	zext.h	a0, a0
 	slli	a1, a1, 3
 	addi	a0, a0, -129
 	addi	a1, a1, -4
@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	zext.h	a0, a0
 	andi	a1, a1, 1
+	zext.h	a0, a0
 	xori	a1, a1, 3
 	sltiu	a0, a0, 128
 	addi	a1, a1, -1

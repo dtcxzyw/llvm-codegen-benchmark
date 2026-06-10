@@ -11,8 +11,8 @@ func000000000000007f:
 	ret
 
 func0000000000000072:
-	add	a0, a0, a2
 	slli	a1, a1, 52
+	add	a0, a0, a2
 	li	a2, 1023
 	add	a0, a0, a1
 	slli	a2, a2, 52
@@ -20,8 +20,8 @@ func0000000000000072:
 	ret
 
 func0000000000000050:
-	add	a0, a0, a2
 	slli	a1, a1, 52
+	add	a0, a0, a2
 	li	a2, 7
 	add	a0, a0, a1
 	slli	a2, a2, 59

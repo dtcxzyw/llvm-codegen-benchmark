@@ -84,10 +84,10 @@ func0000000000000005:
 func0000000000000006:
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmand.mm	v8, v0, v8
 	vmflt.vf	v9, v16, fa5
 	vmfgt.vf	v10, v16, fa5
 	vmor.mm	v9, v10, v9
-	vmand.mm	v8, v0, v8
 	vmand.mm	v0, v8, v9
 	ret
 

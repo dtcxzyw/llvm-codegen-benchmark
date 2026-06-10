@@ -46,9 +46,9 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
+	lui	a3, 1221
 	sub	a2, a2, a1
-	lui	a1, 1221
-	addi	a1, a1, -1216
+	addi	a1, a3, -1216
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

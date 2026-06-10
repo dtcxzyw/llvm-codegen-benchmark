@@ -39,12 +39,12 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
-	slli	a1, a1, 48
 	lui	a2, 33843
-	seqz	a1, a1
+	sext.w	a0, a0
 	addi	a2, a2, 571
+	slli	a1, a1, 48
 	xor	a0, a0, a2
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

@@ -19,10 +19,10 @@ func0000000000000001:
 func000000000000000f:
 	slli	a1, a1, 13
 	srli	a1, a1, 13
+	lui	a2, 1048574
 	add	a0, a0, a1
-	lui	a1, 1048574
-	srli	a1, a1, 11
-	sub	a0, a1, a0
+	srli	a2, a2, 11
+	sub	a0, a2, a0
 	ret
 
 func0000000000000005:

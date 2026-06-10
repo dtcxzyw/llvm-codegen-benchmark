@@ -7,8 +7,8 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	xori	a1, a1, 1
 	xori	a0, a0, 40
@@ -25,8 +25,8 @@ func0000000000000021:
 	ret
 
 func00000000000000c6:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srai	a1, a1, 48
 	slti	a1, a1, 3
 	slti	a0, a0, 3
@@ -42,8 +42,8 @@ func000000000000002c:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	sltiu	a1, a1, 256
 	seqz	a0, a0
@@ -53,9 +53,9 @@ func0000000000000081:
 func000000000000014c:
 	slli	a1, a1, 48
 	lui	a2, 1048569
-	addiw	a0, a0, -513
 	srai	a1, a1, 48
 	addi	a2, a2, -1
+	addiw	a0, a0, -513
 	slt	a1, a2, a1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -70,9 +70,9 @@ func00000000000000c1:
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	sext.w	a0, a0
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
 	seqz	a0, a0
@@ -80,9 +80,9 @@ func0000000000000101:
 	ret
 
 func0000000000000026:
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	sext.w	a0, a0
 	addi	a1, a1, -14
 	seqz	a1, a1
 	slti	a0, a0, 2
@@ -102,17 +102,17 @@ func0000000000000086:
 
 func000000000000008c:
 	slli	a1, a1, 48
-	addiw	a0, a0, -225
 	srli	a1, a1, 48
+	addiw	a0, a0, -225
 	sltiu	a1, a1, 173
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000186:
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	sext.w	a0, a0
 	addi	a1, a1, -60
 	snez	a1, a1
 	slti	a0, a0, 9
@@ -121,8 +121,8 @@ func0000000000000186:
 
 func0000000000000141:
 	slli	a1, a1, 48
-	addiw	a0, a0, -40
 	srli	a1, a1, 63
+	addiw	a0, a0, -40
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -140,9 +140,9 @@ func0000000000000084:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	sext.w	a0, a0
 	addi	a1, a1, -78
 	seqz	a1, a1
 	sltiu	a0, a0, 2
@@ -176,8 +176,8 @@ func0000000000000098:
 	ret
 
 func000000000000010a:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	sltiu	a1, a1, 2
 	slti	a0, a0, 2
@@ -188,27 +188,27 @@ func000000000000010a:
 func0000000000000028:
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	seqz	a1, a1
 	sltiu	a0, a0, 30
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func00000000000000cc:
 	slli	a1, a1, 48
-	addiw	a0, a0, -403
 	srai	a1, a1, 48
+	addiw	a0, a0, -403
 	slti	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func00000000000000c4:
+	lui	a2, 1047552
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	lui	a2, 1047552
-	srli	a1, a1, 63
 	addi	a2, a2, 3
+	srli	a1, a1, 63
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

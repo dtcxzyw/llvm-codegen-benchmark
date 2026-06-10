@@ -7,8 +7,8 @@ func000000000000003b:
 
 func0000000000000038:
 	mulw	a2, a2, a1
-	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

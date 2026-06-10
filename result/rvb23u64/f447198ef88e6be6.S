@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a0, a0, 1
 	andi	a2, a2, 3
+	andi	a0, a0, 1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	andi	a2, a2, 63
+	andi	a0, a0, 1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
@@ -19,8 +19,8 @@ func000000000000000c:
 	ret
 
 func0000000000000018:
-	andi	a0, a0, 1
 	lui	a3, 1536
+	andi	a0, a0, 1
 	and	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -30,8 +30,8 @@ func0000000000000018:
 	ret
 
 func0000000000000014:
-	andi	a0, a0, 1
 	lui	a3, 32
+	andi	a0, a0, 1
 	and	a2, a2, a3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -58,8 +58,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	andi	a0, a0, 1
 	slli	a2, a2, 34
+	andi	a0, a0, 1
 	srli	a2, a2, 34
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

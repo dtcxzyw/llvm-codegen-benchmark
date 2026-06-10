@@ -6,18 +6,18 @@ func000000000000000a:
 	ret
 
 func000000000000001f:
-	slliw	a1, a1, 20
 	bclri	a0, a0, 1
+	slliw	a1, a1, 20
 	bclri	a0, a0, 20
 	or	a0, a0, a1
 	addi	a0, a0, 2
 	ret
 
 func000000000000001e:
-	slli	a1, a1, 48
 	lui	a2, 1048544
-	srli	a1, a1, 44
+	slli	a1, a1, 48
 	addi	a2, a2, 7
+	srli	a1, a1, 44
 	and	a0, a0, a2
 	or	a0, a0, a1
 	addi	a0, a0, 8

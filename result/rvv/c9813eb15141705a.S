@@ -8,14 +8,14 @@ func000000000000001d:
 	ret
 
 func000000000000000d:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v8, -8
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v10, -8
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vadd.vi	v10, v10, 1
+	vnsrl.wi	v12, v8, 0
+	vadd.vi	v8, v12, 1
 	li	a0, 8
-	vwmaccus.vx	v8, a0, v10
+	vwmaccus.vx	v10, a0, v8
+	vmv2r.v	v8, v10
 	ret
 
 func0000000000000015:

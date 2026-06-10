@@ -10,9 +10,9 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
+	li	a0, 24
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
-	li	a0, 24
 	vand.vx	v9, v9, a0
 	vor.vv	v9, v9, v10
 	vor.vv	v10, v9, v8

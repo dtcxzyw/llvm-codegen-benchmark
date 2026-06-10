@@ -47,10 +47,10 @@ func0000000000000018:
 	ret
 
 func000000000000001b:
-	lui	a0, 367
-	addi	a0, a0, -1024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v0, v10, 2
+	lui	a0, 367
+	addi	a0, a0, -1024
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vadd.vi	v8, v8, 4

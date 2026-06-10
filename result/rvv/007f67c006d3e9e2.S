@@ -4,14 +4,14 @@ func0000000000000012:
 	slli	a2, a1, 4
 	add	a1, a1, a2
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v16, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
 	vfabs.v	v24, v16
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
@@ -44,14 +44,14 @@ func0000000000000014:
 	slli	a2, a1, 4
 	add	a1, a1, a2
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v16, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
 	vfabs.v	v24, v16
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
@@ -84,14 +84,14 @@ func0000000000000004:
 	slli	a2, a1, 4
 	add	a1, a1, a2
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v16, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
 	vfabs.v	v24, v16
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
@@ -124,14 +124,14 @@ func0000000000000002:
 	slli	a2, a1, 4
 	add	a1, a1, a2
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v16, (a1)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 16
 	vs8r.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v16, (a0)
 	vfabs.v	v24, v16
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp

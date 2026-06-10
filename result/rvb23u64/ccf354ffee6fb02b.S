@@ -1,8 +1,8 @@
 func0000000000000161:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 252
 	max	a1, a1, a2
+	sext.w	a0, a0
 	addiw	a1, a1, -252
 	xor	a0, a0, a1
 	seqz	a0, a0

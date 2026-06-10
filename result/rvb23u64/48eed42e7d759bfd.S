@@ -53,8 +53,8 @@ func0000000000000004:
 	ret
 
 func0000000000000028:
-	srli	a1, a1, 2
 	bseti	a2, zero, 33
+	srli	a1, a1, 2
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	sltu	a0, a0, a1

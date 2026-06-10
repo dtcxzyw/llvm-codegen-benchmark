@@ -19,8 +19,8 @@ func0000000000000012:
 	ret
 
 func0000000000000003:
-	zext.w	a0, a0
 	lui	a1, 274878
+	zext.w	a0, a0
 	addi	a1, a1, -381
 	mul	a0, a0, a1
 	srli	a0, a0, 49

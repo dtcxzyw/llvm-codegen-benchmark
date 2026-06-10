@@ -13,8 +13,8 @@ func00000000000004ca:
 	blez	a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	sext.w	a0, a0
 	lui	a1, 2
+	sext.w	a0, a0
 	addi	a1, a1, 1807
 	slt	a0, a1, a0
 	ret
@@ -31,8 +31,8 @@ func00000000000004c8:
 	ret
 
 func00000000000004c6:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	sext.w	a0, a0
 	slti	a1, a1, -305
 	slti	a0, a0, -308
 	and	a0, a0, a1

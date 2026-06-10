@@ -54,8 +54,8 @@ func000000000000000c:
 	ret
 
 func0000000000000013:
-	sext.w	a2, a2
 	sh1add	a0, a1, a0
+	sext.w	a2, a2
 	sh1add	a0, a2, a0
 	ret
 

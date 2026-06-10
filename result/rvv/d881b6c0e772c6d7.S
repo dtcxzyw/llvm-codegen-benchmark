@@ -31,9 +31,9 @@ func0000000000000066:
 	ret
 
 func00000000000000e6:
+	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v10, -1
-	li	a0, 16
 	vand.vi	v12, v10, -16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12

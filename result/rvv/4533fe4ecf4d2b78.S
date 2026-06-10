@@ -6,9 +6,9 @@ func0000000000000000:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmv.v.f	v24, fa5
 	fli.d	fa5, 1.0
+	vfmv.v.f	v0, fa5
 	vfmacc.vv	v24, v8, v16
-	vfmv.v.f	v16, fa5
-	vfmacc.vv	v16, v8, v24
-	vfmul.vv	v8, v8, v16
+	vfmacc.vv	v0, v8, v24
+	vfmul.vv	v8, v8, v0
 	ret
 

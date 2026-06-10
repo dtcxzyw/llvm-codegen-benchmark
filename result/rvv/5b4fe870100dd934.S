@@ -1,9 +1,9 @@
 func0000000000000201:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 3
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -13,11 +13,11 @@ func0000000000000201:
 	ret
 
 func000000000000020a:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -27,11 +27,11 @@ func000000000000020a:
 	ret
 
 func0000000000000204:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -41,11 +41,11 @@ func0000000000000204:
 	ret
 
 func0000000000000246:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -55,11 +55,11 @@ func0000000000000246:
 	ret
 
 func000000000000020c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 4
 	lui	a0, 838861
 	addi	a0, a0, -819
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 4
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -69,11 +69,11 @@ func000000000000020c:
 	ret
 
 func000000000000020b:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 4
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 4
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -83,11 +83,11 @@ func000000000000020b:
 	ret
 
 func0000000000000221:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 4
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 4
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -111,11 +111,11 @@ func0000000000000206:
 	ret
 
 func0000000000000207:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 3
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -125,11 +125,11 @@ func0000000000000207:
 	ret
 
 func0000000000000266:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 3
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -139,11 +139,11 @@ func0000000000000266:
 	ret
 
 func0000000000000226:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 4
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 4
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

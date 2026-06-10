@@ -7,8 +7,8 @@ func0000000000000007:
 
 func0000000000000001:
 	andi	a0, a0, 1
-	zext.b	a1, a1
 	li	a2, 7
+	zext.b	a1, a1
 	czero.nez	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, -55
@@ -23,8 +23,8 @@ func0000000000000003:
 
 func0000000000000005:
 	andi	a0, a0, 1
-	zext.b	a1, a1
 	li	a2, 12
+	zext.b	a1, a1
 	czero.nez	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, -3

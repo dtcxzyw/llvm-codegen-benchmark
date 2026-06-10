@@ -1,6 +1,6 @@
 func0000000000000009:
-	srliw	a1, a1, 24
 	li	a2, 7
+	srliw	a1, a1, 24
 	bgeu	a1, a2, .LBB0_2
 	li	a0, 1
 .LBB0_2:
@@ -8,8 +8,8 @@ func0000000000000009:
 	ret
 
 func000000000000000d:
-	sext.w	a1, a1
 	li	a2, 2
+	sext.w	a1, a1
 	bge	a1, a2, .LBB1_2
 	li	a0, 2
 .LBB1_2:
@@ -17,8 +17,8 @@ func000000000000000d:
 	ret
 
 func0000000000000008:
-	sext.w	a1, a1
 	li	a2, 7
+	sext.w	a1, a1
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 1
 .LBB2_2:

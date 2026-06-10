@@ -7,10 +7,10 @@ func00000000000001fc:
 
 func00000000000000af:
 	add	a1, a1, a2
-	lui	a2, 7
 	addi	a1, a1, 1
 	sh3add.uw	a0, a1, a0
-	addi	a1, a2, -856
+	lui	a1, 7
+	addi	a1, a1, -856
 	add	a0, a0, a1
 	ret
 

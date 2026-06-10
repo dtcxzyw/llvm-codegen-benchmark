@@ -2,9 +2,9 @@ func0000000000000044:
 	srai	a1, a1, 3
 	sltu	a1, a0, a1
 	neg	a1, a1
+	li	a2, -1
 	or	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 4
+	srli	a1, a2, 4
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:

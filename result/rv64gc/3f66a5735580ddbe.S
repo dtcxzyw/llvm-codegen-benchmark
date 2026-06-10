@@ -1,8 +1,8 @@
 func0000000000000064:
-	addi	a1, a1, 3
 	lui	a2, 32
-	andi	a0, a0, -4
+	addi	a1, a1, 3
 	addi	a2, a2, -4
+	andi	a0, a0, -4
 	and	a1, a1, a2
 	sext.w	a0, a0
 	sltu	a0, a0, a1

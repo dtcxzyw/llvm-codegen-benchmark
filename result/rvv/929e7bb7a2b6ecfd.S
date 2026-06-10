@@ -8,11 +8,11 @@ func000000000000007b:
 	ret
 
 func0000000000000040:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v12, v12, v8
 	lui	a0, 1
 	addi	a0, a0, 904
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
+	vsub.vv	v12, v12, v8
 	vminu.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret
@@ -72,35 +72,35 @@ func0000000000000029:
 
 func000000000000005c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v12, v12, v8
 	vrsub.vi	v10, v10, 2
+	vsub.vv	v12, v12, v8
 	vminu.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret
 
 func0000000000000018:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v12, v12, v8
 	lui	a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
+	vsub.vv	v12, v12, v8
 	vminu.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret
 
 func0000000000000058:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v12, v12, v8
 	li	a0, 64
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
+	vsub.vv	v12, v12, v8
 	vminu.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v12, v12, v8
 	li	a0, 16
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v10, v10, a0
+	vsub.vv	v12, v12, v8
 	vminu.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret

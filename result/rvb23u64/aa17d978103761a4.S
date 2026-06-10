@@ -7,9 +7,9 @@ func0000000000000005:
 	mulhsu	a0, a0, a2
 	srli	a1, a0, 63
 	srli	a0, a0, 25
+	lui	a2, 1033928
 	addw	a0, a0, a1
-	lui	a1, 1033928
-	addi	a1, a1, -1792
+	addi	a1, a2, -1792
 	mul	a0, a0, a1
 	ret
 
@@ -22,9 +22,9 @@ func0000000000000045:
 	mulh	a0, a0, a2
 	srli	a1, a0, 63
 	srli	a0, a0, 13
+	lui	a2, 21
 	addw	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	ret
 

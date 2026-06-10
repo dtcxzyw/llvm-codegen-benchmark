@@ -1,10 +1,10 @@
 func0000000000000001:
-	addi	a1, a1, 512
 	li	a2, 15
+	addi	a1, a1, 512
 	slli	a2, a2, 9
+	lui	a3, 917504
 	and	a1, a1, a2
-	lui	a2, 917504
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -41,8 +41,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	addiw	a1, a1, -2
 	lui	a2, 1048569
+	addiw	a1, a1, -2
 	addi	a3, a2, -2
 	addi	a2, a2, -15
 	and	a1, a1, a3

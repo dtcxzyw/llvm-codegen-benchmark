@@ -37,11 +37,11 @@ func0000000000000301:
 	srli	a3, a2, 63
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
-	li	a3, -1
 	or	a1, a1, a2
+	li	a2, -1
 	sub	a0, a0, a1
-	srli	a3, a3, 1
-	xor	a0, a0, a3
+	srli	a2, a2, 1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

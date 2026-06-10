@@ -114,8 +114,8 @@ func00000000000000ca:
 func0000000000000038:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 0
-	lui	a0, 512
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 512
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -236,8 +236,8 @@ func00000000000000d8:
 func0000000000000148:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v0, v12, -1
-	lui	a0, 158203
 	vmerge.vvm	v8, v8, v10, v0
+	lui	a0, 158203
 	addi	a0, a0, 512
 	vmsgtu.vx	v0, v8, a0
 	ret

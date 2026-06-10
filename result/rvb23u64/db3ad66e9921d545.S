@@ -27,13 +27,13 @@ func0000000000000018:
 
 func000000000000001e:
 	sh1add	a1, a1, a1
+	lui	a2, 61440
 	sh1add	a0, a1, a0
-	lui	a1, 61440
-	addi	a1, a1, 15
+	addi	a2, a2, 15
+	slli	a2, a2, 24
 	srli	a0, a0, 4
-	slli	a1, a1, 24
-	addi	a1, a1, 15
-	and	a0, a0, a1
+	addi	a2, a2, 15
+	and	a0, a0, a2
 	ret
 
 func000000000000001a:

@@ -13,8 +13,8 @@ func0000000000000004:
 	slli	a0, a0, 32
 	srli	a3, a0, 28
 	srli	a0, a0, 24
-	sltiu	a2, a2, 33
 	sub	a0, a0, a3
+	sltiu	a2, a2, 33
 	add	a0, a0, a1
 	neg	a1, a2
 	and	a0, a0, a1

@@ -15,16 +15,16 @@ func00000000000007e1:
 
 func0000000000000701:
 	sh3add	a1, a1, a2
-	addi	a1, a1, 16
 	addi	a0, a0, 8
+	addi	a1, a1, 16
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000604:
 	sh2add	a1, a1, a2
-	addi	a1, a1, 8
 	addi	a0, a0, 4
+	addi	a1, a1, 8
 	sltu	a0, a0, a1
 	ret
 

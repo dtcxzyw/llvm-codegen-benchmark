@@ -50,10 +50,10 @@ func0000000000000018:
 	ret
 
 func000000000000002a:
-	sext.w	a3, a2
-	lui	a4, 1
-	addi	a4, a4, 906
-	blt	a4, a3, .LBB5_2
+	lui	a3, 1
+	sext.w	a4, a2
+	addi	a3, a3, 906
+	blt	a3, a4, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
 	sext.w	a1, a1

@@ -15,8 +15,8 @@ func0000000000000007:
 	ret
 
 func0000000000000012:
-	sltiu	a0, a0, 8
 	li	a1, -9
+	sltiu	a0, a0, 8
 	slli	a1, a1, 28
 	czero.nez	a0, a1, a0
 	lui	a1, 69632

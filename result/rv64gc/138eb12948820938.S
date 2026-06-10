@@ -12,8 +12,8 @@ func0000000000000007:
 	ret
 
 func0000000000000050:
-	andi	a1, a1, 7
 	li	a2, 3
+	andi	a1, a1, 7
 	bltu	a1, a2, .LBB1_2
 	li	a1, 72
 	add	a0, a0, a1

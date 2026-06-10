@@ -14,9 +14,9 @@ func0000000000000181:
 
 func0000000000000388:
 	addiw	a1, a1, 1
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 1808
+	addi	a1, a2, 1808
 	sltu	a0, a1, a0
 	ret
 
@@ -96,10 +96,10 @@ func0000000000000008:
 
 func00000000000003f4:
 	addiw	a1, a1, 1
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 .LCPI14_0:
@@ -138,10 +138,10 @@ func00000000000003aa:
 
 func00000000000001e4:
 	addiw	a1, a1, -48
+	lui	a2, 524288
 	add	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	sltu	a0, a0, a1
+	addiw	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 
 func00000000000001a6:

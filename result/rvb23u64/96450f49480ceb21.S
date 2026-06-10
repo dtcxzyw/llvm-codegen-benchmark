@@ -34,9 +34,9 @@ func0000000000000010:
 	ret
 
 func0000000000000030:
-	sext.w	a2, a2
 	li	a3, -1
 	srli	a3, a3, 2
+	sext.w	a2, a2
 	add	a1, a1, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1

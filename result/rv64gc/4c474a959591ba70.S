@@ -7,10 +7,10 @@ func000000000000000c:
 	ret
 
 func0000000000000007:
-	slli	a0, a0, 63
 	lui	a3, 1048560
-	slli	a2, a2, 48
+	slli	a0, a0, 63
 	srai	a0, a0, 63
+	slli	a2, a2, 48
 	addi	a3, a3, 15
 	srli	a2, a2, 48
 	and	a0, a0, a3

@@ -32,9 +32,9 @@ func0000000000000026:
 	ret
 
 func0000000000000034:
+	lui	a3, 88
 	sub	a1, a1, a2
-	lui	a2, 88
-	addi	a2, a2, -448
+	addi	a2, a3, -448
 	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1

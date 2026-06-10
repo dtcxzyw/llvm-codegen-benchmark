@@ -1,10 +1,10 @@
 func0000000000000019:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	lui	a0, 838861
-	vsra.vi	v8, v8, 3
 	addi	a0, a0, -819
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v10, v10, 3
+	vsra.vi	v8, v8, 3
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vmul.vx	v8, v8, a0
@@ -13,12 +13,12 @@ func0000000000000019:
 	ret
 
 func000000000000001b:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	lui	a0, 699051
-	vsra.vi	v8, v8, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v10, v10, 3
+	vsra.vi	v8, v8, 3
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vmul.vx	v8, v8, a0

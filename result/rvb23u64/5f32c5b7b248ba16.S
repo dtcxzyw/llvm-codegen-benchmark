@@ -10,8 +10,8 @@ func0000000000000041:
 	addi	a1, a1, -1
 	zext.w	a1, a1
 	xor	a0, a0, a1
-	lui	a1, 1044738
 	seqz	a0, a0
+	lui	a1, 1044738
 	addi	a0, a0, -1
 	addi	a1, a1, 240
 	or	a0, a0, a1

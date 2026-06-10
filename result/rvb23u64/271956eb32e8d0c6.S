@@ -1,15 +1,15 @@
 func0000000000000185:
-	sext.w	a1, a1
 	li	a3, -1
 	sllw	a2, a3, a2
+	sext.w	a1, a1
 	ori	a2, a2, 1
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 
 func00000000000001d1:
-	sext.w	a1, a1
 	li	a3, -1
+	sext.w	a1, a1
 	sllw	a2, a3, a2
 	ori	a2, a2, 1
 	sltiu	a1, a1, 256

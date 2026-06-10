@@ -1,7 +1,7 @@
 func0000000000000004:
-	fabs.s	fa5, fa0
-	fmv.w.x	fa4, zero
-	fmax.s	fa0, fa5, fa4
+	fmv.w.x	fa5, zero
+	fabs.s	fa4, fa0
+	fmax.s	fa0, fa4, fa5
 	ret
 
 func0000000000000014:

@@ -8,16 +8,16 @@ func000000000000001d:
 	ret
 
 func000000000000000e:
-	srli	a0, a0, 8
 	lui	a1, 2032
-	lui	a2, 522248
+	srli	a0, a0, 8
 	addi	a1, a1, 127
-	addi	a2, a2, -128
+	lui	a2, 522248
 	slli	a3, a1, 32
+	addi	a2, a2, -128
 	add	a1, a1, a3
 	slli	a3, a2, 32
-	add	a2, a2, a3
 	and	a0, a0, a1
+	add	a2, a2, a3
 	slli	a1, a0, 1
 	add	a0, a0, a2
 	add	a0, a0, a1

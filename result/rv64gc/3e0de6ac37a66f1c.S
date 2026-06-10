@@ -1,8 +1,8 @@
 func0000000000000014:
-	fmv.x.w	a1, fa0
-	srliw	a1, a1, 23
-	li	a2, 113
-	bgeu	a1, a2, .LBB0_2
+	li	a1, 113
+	fmv.x.w	a2, fa0
+	srliw	a2, a2, 23
+	bgeu	a2, a1, .LBB0_2
 	lui	a0, 231424
 .LBB0_2:
 	ret

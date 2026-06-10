@@ -38,13 +38,13 @@ func0000000000000028:
 
 func0000000000000008:
 	li	a0, -256
-	lui	a1, 1048320
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
-	addi	a0, a1, 511
-	vadd.vx	v8, v8, a0
-	addi	a1, a1, -1
-	vmsltu.vx	v0, v8, a1
+	lui	a0, 1048320
+	addi	a1, a0, 511
+	vadd.vx	v8, v8, a1
+	addi	a0, a0, -1
+	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000004:

@@ -1,8 +1,8 @@
 func0000000000000009:
 	sext.w	a1, a1
-	slli	a0, a0, 5
 	binvi	a1, a1, 27
 	seqz	a1, a1
+	slli	a0, a0, 5
 	slli	a1, a1, 4
 	andi	a0, a0, 128
 	or	a0, a0, a1

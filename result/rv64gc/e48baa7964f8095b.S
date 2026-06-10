@@ -21,15 +21,15 @@ func0000000000000043:
 	ret
 
 func0000000000000003:
-	sext.w	a3, a1
-	andi	a2, a2, 1
+	andi	a3, a2, 1
+	sext.w	a2, a1
 	lui	a1, 8192
-	bnez	a2, .LBB2_2
+	bnez	a3, .LBB2_2
 	lui	a1, 155904
 .LBB2_2:
-	seqz	a2, a3
-	lui	a3, 131328
+	seqz	a2, a2
 	addi	a2, a2, -1
+	lui	a3, 131328
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

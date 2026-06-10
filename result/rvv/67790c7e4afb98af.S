@@ -2,9 +2,9 @@ func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v12, v12, v16
 	fli.s	fa5, 0.5
+	fli.s	fa4, 0.25
 	vfmul.vf	v12, v12, fa5
-	fli.s	fa5, 0.25
-	fneg.s	fa5, fa5
+	fneg.s	fa5, fa4
 	vfmul.vf	v8, v8, fa5
 	vfadd.vv	v8, v12, v8
 	vfmul.vv	v8, v8, v8

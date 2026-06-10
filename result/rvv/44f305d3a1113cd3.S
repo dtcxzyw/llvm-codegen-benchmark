@@ -9,9 +9,9 @@ func000000000000001e:
 	ret
 
 func000000000000001f:
+	li	a0, 16
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 15
-	li	a0, 16
 	vor.vx	v12, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v10, v12

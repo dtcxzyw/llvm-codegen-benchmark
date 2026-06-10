@@ -11,10 +11,10 @@ func0000000000000043:
 func0000000000000051:
 	zext.b	a0, a0
 	li	a2, 1
-	andn	a1, a2, a1
 	sltiu	a0, a0, 32
-	slli	a1, a1, 12
+	andn	a1, a2, a1
 	xori	a0, a0, 1
+	slli	a1, a1, 12
 	slli	a0, a0, 10
 	or	a0, a0, a1
 	bseti	a0, a0, 1

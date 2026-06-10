@@ -1,11 +1,11 @@
 func0000000000000005:
 	sext.w	a1, a1
-	andi	a2, a2, 1
 	lui	a3, 522240
-	addi	a2, a2, -1
+	andi	a2, a2, 1
 	xor	a1, a1, a3
-	ori	a2, a2, 1
+	addi	a2, a2, -1
 	seqz	a1, a1
+	ori	a2, a2, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -64,8 +64,8 @@ func0000000000000029:
 	ret
 
 func0000000000000051:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	li	a3, 2
 	bnez	a2, .LBB4_2
 	li	a2, 2
@@ -156,8 +156,8 @@ func0000000000000050:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	lui	a3, 878478
+	sext.w	a1, a1
 	addi	a3, a3, 1991
 	bgeu	a3, a1, .LBB10_2
 	li	a1, -306

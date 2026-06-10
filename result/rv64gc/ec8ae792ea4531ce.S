@@ -7,9 +7,9 @@ func0000000000000000:
 	fld	fa0, %lo(.LCPI0_0)(a0)
 	ret
 .LBB0_2:
-	fcvt.d.s	fa5, fa0
 	li	a0, 511
 	slli	a0, a0, 53
+	fcvt.d.s	fa5, fa0
 	fmv.d.x	fa4, a0
 	fadd.d	fa0, fa5, fa4
 	ret

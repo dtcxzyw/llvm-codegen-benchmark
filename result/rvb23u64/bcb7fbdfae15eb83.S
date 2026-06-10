@@ -1,9 +1,9 @@
 func000000000000000a:
+	lui	a3, 838861
+	addi	a3, a3, -819
 	sub	a1, a1, a2
-	lui	a2, 838861
+	slli	a2, a3, 32
 	srli	a1, a1, 2
-	addi	a2, a2, -819
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	not	a2, a0
@@ -12,12 +12,12 @@ func000000000000000a:
 	ret
 
 func0000000000000000:
+	lui	a3, 559241
+	addi	a3, a3, -1911
+	slli	a4, a3, 32
 	sub	a1, a1, a2
-	lui	a2, 559241
-	addi	a2, a2, -1911
-	slli	a3, a2, 32
-	add	a2, a2, a3
-	mulhu	a1, a1, a2
+	add	a3, a3, a4
+	mulhu	a1, a1, a3
 	srli	a1, a1, 6
 	not	a2, a0
 	minu	a1, a1, a2

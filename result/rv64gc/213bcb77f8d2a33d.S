@@ -10,8 +10,8 @@ func000000000000000b:
 func0000000000000000:
 	sext.w	a2, a2
 	li	a3, 888
-	slli	a0, a0, 2
 	mul	a2, a2, a3
+	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 444

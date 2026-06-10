@@ -1,7 +1,7 @@
 func000000000000007c:
 	li	a3, 122
-	slli	a0, a0, 2
 	mulw	a2, a2, a3
+	slli	a0, a0, 2
 	lui	a3, 305
 	add	a0, a0, a1
 	addi	a1, a3, 976
@@ -12,8 +12,8 @@ func000000000000007c:
 
 func000000000000004c:
 	li	a3, 122
-	slli	a0, a0, 2
 	mulw	a2, a2, a3
+	slli	a0, a0, 2
 	lui	a3, 320
 	add	a0, a0, a1
 	addi	a1, a3, -928
@@ -32,9 +32,9 @@ func00000000000001fc:
 
 func000000000000003f:
 	slli	a3, a2, 1
-	slli	a0, a0, 3
 	add	a2, a2, a3
 	slli	a2, a2, 32
+	slli	a0, a0, 3
 	srli	a2, a2, 29
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -43,8 +43,8 @@ func000000000000003f:
 
 func00000000000001ef:
 	slli	a3, a2, 1
-	slli	a0, a0, 3
 	addw	a2, a2, a3
+	slli	a0, a0, 3
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -53,8 +53,8 @@ func00000000000001ef:
 
 func00000000000001ff:
 	li	a3, 164
-	slli	a0, a0, 2
 	mulw	a2, a2, a3
+	slli	a0, a0, 2
 	lui	a3, 3
 	add	a0, a0, a1
 	addi	a1, a3, 1160

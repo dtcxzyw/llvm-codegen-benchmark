@@ -9,10 +9,10 @@ func0000000000000003:
 
 func000000000000002b:
 	add	a1, a1, a2
-	lui	a2, 2575
 	add	a0, a0, a1
-	addi	a1, a2, -325
+	lui	a1, 2575
 	slli	a0, a0, 32
+	addi	a1, a1, -325
 	srli	a0, a0, 32
 	slli	a1, a1, 13
 	mul	a0, a0, a1

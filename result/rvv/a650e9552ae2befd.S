@@ -33,8 +33,8 @@ func0000000000000084:
 func0000000000000204:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v10, 2
-	lui	a0, 1047844
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 1047844
 	addi	a0, a0, -1728
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 2

@@ -1,7 +1,7 @@
 func0000000000000042:
 	andi	a1, a0, 13
-	addiw	a2, a0, -7
 	addi	a1, a1, -4
+	addiw	a2, a0, -7
 	seqz	a1, a1
 	seqz	a2, a2
 	or	a1, a1, a2
@@ -12,10 +12,10 @@ func0000000000000042:
 
 func0000000000000050:
 	lui	a1, 512
-	li	a2, 27
 	addi	a1, a1, -2048
-	slli	a2, a2, 11
+	li	a2, 27
 	and	a1, a1, a0
+	slli	a2, a2, 11
 	xor	a1, a1, a2
 	srliw	a2, a0, 16
 	snez	a1, a1

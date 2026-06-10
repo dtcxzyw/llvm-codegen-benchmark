@@ -40,12 +40,12 @@ func0000000000000028:
 	ret
 
 func000000000000005f:
-	sub	a1, a1, a2
-	li	a2, 2
-	sub	a2, a2, a0
-	bltu	a2, a1, .LBB4_2
-	mv	a2, a1
+	li	a3, 2
+	sub	a2, a1, a2
+	sub	a1, a3, a0
+	bltu	a1, a2, .LBB4_2
+	mv	a1, a2
 .LBB4_2:
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 

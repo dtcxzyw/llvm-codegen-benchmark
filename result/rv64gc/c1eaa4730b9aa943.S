@@ -5,8 +5,8 @@ func00000000000000a1:
 	ret
 
 func00000000000000a8:
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	sltiu	a0, a0, 3
@@ -16,12 +16,12 @@ func00000000000000a8:
 func00000000000000a4:
 	slli	a1, a1, 32
 	slli	a0, a0, 32
+	li	a2, 1
 	srli	a0, a0, 32
+	slli	a2, a2, 32
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -11
-	sltu	a0, a0, a1
+	addi	a2, a2, -11
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000ac:

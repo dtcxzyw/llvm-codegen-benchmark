@@ -1,8 +1,8 @@
 func0000000000000072:
 	add	a4, a4, a2
-	add	a1, a1, a3
 	sltu	a2, a4, a2
 	add	a0, a0, a4
+	add	a1, a1, a3
 	sltu	a0, a0, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
@@ -10,9 +10,9 @@ func0000000000000072:
 
 func00000000000000fb:
 	add	a4, a4, a2
-	add	a1, a1, a3
 	sltu	a2, a4, a2
 	add	a0, a0, a4
+	add	a1, a1, a3
 	sltu	a0, a0, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
@@ -20,9 +20,9 @@ func00000000000000fb:
 
 func000000000000007b:
 	add	a4, a4, a2
-	add	a1, a1, a3
 	sltu	a2, a4, a2
 	add	a0, a0, a4
+	add	a1, a1, a3
 	sltu	a0, a0, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
@@ -30,9 +30,9 @@ func000000000000007b:
 
 func0000000000000002:
 	add	a4, a4, a2
-	add	a1, a1, a3
 	sltu	a2, a4, a2
 	add	a4, a4, a0
+	add	a1, a1, a3
 	sltu	a0, a4, a0
 	add	a1, a1, a2
 	add	a0, a0, a1
@@ -40,9 +40,9 @@ func0000000000000002:
 
 func0000000000000052:
 	add	a4, a4, a2
-	add	a1, a1, a3
 	sltu	a2, a4, a2
 	add	a0, a0, a4
+	add	a1, a1, a3
 	sltu	a0, a0, a4
 	add	a1, a1, a2
 	add	a0, a0, a1

@@ -13,8 +13,8 @@ func00000000000000e6:
 	ret
 
 func00000000000000e8:
-	sext.w	a2, a0
 	li	a1, 127
+	sext.w	a2, a0
 	bgeu	a1, a2, .LBB2_2
 	slli	a0, a1, 56
 	ret
@@ -25,8 +25,8 @@ func00000000000000e8:
 func0000000000000061:
 	sext.w	a1, a0
 	slli	a0, a0, 32
-	srli	a0, a0, 12
 	sltiu	a1, a1, -1
+	srli	a0, a0, 12
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret

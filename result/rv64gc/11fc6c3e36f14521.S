@@ -1,6 +1,6 @@
 func0000000000000084:
-	zext.b	a0, a0
 	andi	a1, a1, 223
+	zext.b	a0, a0
 	addi	a1, a1, -91
 	sltiu	a1, a1, -26
 	sltiu	a0, a0, 246

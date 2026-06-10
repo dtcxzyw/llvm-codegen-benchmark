@@ -33,8 +33,8 @@ func0000000000000005:
 	ret
 
 func000000000000000c:
-	slli.uw	a0, a0, 20
 	lui	a1, 1044513
+	slli.uw	a0, a0, 20
 	slli	a1, a1, 8
 	add	a0, a0, a1
 	ret

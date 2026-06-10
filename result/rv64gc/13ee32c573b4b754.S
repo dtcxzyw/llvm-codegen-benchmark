@@ -18,8 +18,8 @@ func000000000000008c:
 
 func000000000000002c:
 	zext.b	a0, a0
-	srli	a1, a1, 4
 	addi	a0, a0, -48
+	srli	a1, a1, 4
 	seqz	a0, a0
 	and	a0, a0, a1
 	addi	a0, a0, -1

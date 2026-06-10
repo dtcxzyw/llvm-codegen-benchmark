@@ -6,11 +6,11 @@ func000000000000018c:
 	ret
 
 func0000000000000001:
+	li	a3, -1
 	sll	a1, a1, a2
-	li	a2, -1
+	slli	a3, a3, 56
 	add	a0, a0, a1
-	slli	a2, a2, 56
-	addi	a1, a2, 511
+	addi	a1, a3, 511
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

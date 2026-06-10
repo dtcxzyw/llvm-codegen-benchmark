@@ -15,8 +15,8 @@ func0000000000000181:
 	ret
 
 func0000000000000188:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret

@@ -7,9 +7,9 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
+	li	a1, -128
 	andi	a0, a0, 2032
 	addi	a0, a0, -176
-	li	a1, -128
 	bltu	a0, a1, .LBB1_2
 	li	a0, 64
 	ret
@@ -18,8 +18,8 @@ func0000000000000028:
 	ret
 
 func0000000000000061:
-	zext.b	a0, a0
 	li	a1, 2
+	zext.b	a0, a0
 	beq	a0, a1, .LBB2_2
 	lui	a0, 16
 	addi	a0, a0, 1100

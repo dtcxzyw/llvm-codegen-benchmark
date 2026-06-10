@@ -25,8 +25,8 @@ func0000000000000015:
 
 func00000000000000b0:
 	slli	a1, a1, 48
-	srai	a0, a0, 15
 	srai	a1, a1, 48
+	srai	a0, a0, 15
 	mul	a0, a0, a1
 	lui	a1, 524288
 	sub	a0, a0, a1

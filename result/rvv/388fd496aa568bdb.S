@@ -1,7 +1,7 @@
 func00000000000000aa:
-	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmacc.vv	v8, v10, v11
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
@@ -22,9 +22,9 @@ func00000000000000a6:
 	ret
 
 func0000000000000088:
-	lui	a0, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmacc.vv	v8, v10, v11
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0

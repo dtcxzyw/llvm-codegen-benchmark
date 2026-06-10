@@ -2,8 +2,8 @@ func0000000000000026:
 	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vandn.vx	v10, v10, a0
-	lui	a0, 7
 	vmseq.vi	v0, v10, 0
+	lui	a0, 7
 	addi	a0, a0, 1328
 	vmerge.vxm	v10, v10, a0, v0
 	vmslt.vv	v0, v10, v8

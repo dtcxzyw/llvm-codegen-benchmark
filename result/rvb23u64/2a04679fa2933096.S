@@ -5,19 +5,19 @@ func0000000000000022:
 	fld	fa5, 8(a0)
 	flt.d	a1, fa2, fa4
 	beqz	a1, .LBB0_3
-	fld	fa4, 16(a0)
-	flt.d	a0, fa1, fa5
-	beqz	a0, .LBB0_4
+	flt.d	a1, fa1, fa5
+	fld	fa5, 16(a0)
+	beqz	a1, .LBB0_4
 .LBB0_2:
-	fmul.d	fa0, fa0, fa4
+	fmul.d	fa0, fa0, fa5
 	ret
 .LBB0_3:
 	fmv.d	fa1, fa2
-	fld	fa4, 16(a0)
-	flt.d	a0, fa2, fa5
-	bnez	a0, .LBB0_2
+	flt.d	a1, fa2, fa5
+	fld	fa5, 16(a0)
+	bnez	a1, .LBB0_2
 .LBB0_4:
-	fmul.d	fa0, fa1, fa4
+	fmul.d	fa0, fa1, fa5
 	ret
 
 .LCPI1_0:

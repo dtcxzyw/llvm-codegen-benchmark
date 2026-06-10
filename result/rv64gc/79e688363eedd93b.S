@@ -1,8 +1,8 @@
 func0000000000000108:
 	slli	a2, a2, 48
 	lui	a3, 9
-	lui	a4, 12
 	srli	a2, a2, 48
+	lui	a4, 12
 	addi	a3, a3, 636
 	addi	a4, a4, 1588
 	xor	a3, a3, a2

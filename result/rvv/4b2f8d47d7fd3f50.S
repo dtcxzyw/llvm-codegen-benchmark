@@ -12,8 +12,8 @@ func0000000000000002:
 	vmv1r.v	v0, v8
 	li	a0, 128
 	vor.vx	v10, v10, a0, v0.t
-	lui	a0, 64
 	vmv1r.v	v0, v9
+	lui	a0, 64
 	vor.vx	v10, v10, a0, v0.t
 	vand.vi	v8, v10, -6
 	ret

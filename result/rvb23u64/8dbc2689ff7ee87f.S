@@ -18,18 +18,18 @@ func0000000000000026:
 	ret
 
 func0000000000000201:
-	sext.w	a0, a0
 	li	a2, 1
+	sext.w	a0, a0
 	subw	a2, a2, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
 func0000000000000701:
+	lui	a2, 4
 	addw	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, -2
-	xor	a0, a0, a1
+	addi	a2, a2, -2
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

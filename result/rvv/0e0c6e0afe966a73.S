@@ -1,7 +1,7 @@
 func0000000000000028:
+	fli.d	fa5, -1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v16, v8
-	fli.d	fa5, -1.0
 	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret
@@ -25,25 +25,25 @@ func0000000000000042:
 	ret
 
 func0000000000000048:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret
 
 func0000000000000022:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v16, v8
-	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret
 
 func0000000000000038:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfeq.vf	v16, v8, fa5
 	vmorn.mm	v0, v16, v24
 	ret

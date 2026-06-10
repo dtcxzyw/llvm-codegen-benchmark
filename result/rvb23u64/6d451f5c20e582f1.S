@@ -25,9 +25,9 @@ func0000000000000000:
 func0000000000000004:
 	sext.w	a2, a2
 	sext.w	a1, a1
+	lui	a3, 1048568
 	maxu	a1, a1, a2
-	lui	a2, 1048568
-	sub	a0, a0, a2
+	sub	a0, a0, a3
 	subw	a0, a1, a0
 	ret
 

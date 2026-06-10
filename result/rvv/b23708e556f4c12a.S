@@ -24,8 +24,8 @@ func000000000000000c:
 func000000000000000e:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vv	v8, v8, v16
-	fli.d	fa5, inf
 	vmfeq.vv	v0, v8, v8
+	fli.d	fa5, inf
 	vfmv.v.f	v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	ret

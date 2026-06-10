@@ -13,8 +13,8 @@ func0000000000000208:
 	ret
 
 func0000000000000164:
-	add.uw	a0, a2, a0
 	addi	a1, a1, -12
+	add.uw	a0, a2, a0
 	sltu	a0, a0, a1
 	ret
 
@@ -50,8 +50,8 @@ func0000000000000261:
 	ret
 
 func0000000000000168:
-	add.uw	a0, a2, a0
 	addi	a1, a1, -8
+	add.uw	a0, a2, a0
 	sltu	a0, a1, a0
 	ret
 
@@ -70,14 +70,14 @@ func00000000000003e4:
 	ret
 
 func0000000000000184:
-	add.uw	a0, a2, a0
 	addi	a1, a1, 36
+	add.uw	a0, a2, a0
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000004:
-	add.uw	a0, a2, a0
 	addi	a1, a1, 4
+	add.uw	a0, a2, a0
 	sltu	a0, a0, a1
 	ret
 
@@ -89,9 +89,9 @@ func0000000000000384:
 	ret
 
 func00000000000001e1:
+	li	a3, 1455
+	sh3add	a1, a3, a1
 	add.uw	a0, a2, a0
-	li	a2, 1455
-	sh3add	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -121,22 +121,22 @@ func0000000000000364:
 	ret
 
 func0000000000000008:
+	lui	a3, 8
+	addi	a3, a3, 7
 	add.uw	a0, a2, a0
-	lui	a2, 8
-	addi	a2, a2, 7
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 
 func00000000000001e8:
-	add.uw	a0, a2, a0
 	addi	a1, a1, 1
+	add.uw	a0, a2, a0
 	sltu	a0, a1, a0
 	ret
 
 func00000000000001e4:
-	add.uw	a0, a2, a0
 	addi	a1, a1, 10
+	add.uw	a0, a2, a0
 	sltu	a0, a0, a1
 	ret
 

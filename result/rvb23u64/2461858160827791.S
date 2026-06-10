@@ -17,16 +17,16 @@ func0000000000000021:
 
 func000000000000002c:
 	zext.b	a0, a0
-	andi	a1, a1, 1023
 	addi	a0, a0, -31
+	andi	a1, a1, 1023
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000101:
 	zext.b	a0, a0
-	andi	a1, a1, 7
 	sltiu	a0, a0, 10
+	andi	a1, a1, 7
 	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret

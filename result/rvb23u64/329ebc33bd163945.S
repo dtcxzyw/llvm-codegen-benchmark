@@ -5,9 +5,9 @@ func00000000000000c4:
 	ret
 
 func0000000000000017:
-	seqz	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	seqz	a0, a0
 	andn	a0, a0, a1
 	ret
 
@@ -25,8 +25,8 @@ func0000000000000018:
 func00000000000000c7:
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	snez	a0, a0
 	feq.d	a1, fa0, fa5
+	snez	a0, a0
 	andn	a0, a0, a1
 	ret
 

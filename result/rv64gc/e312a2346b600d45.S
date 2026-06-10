@@ -2,9 +2,9 @@ func000000000000000c:
 	lui	a1, 6
 	addi	a1, a1, -983
 	mul	a0, a0, a1
-	lui	a1, 1
 	addi	a0, a0, 1310
 	slli	a0, a0, 48
+	lui	a1, 1
 	srli	a0, a0, 48
 	addi	a1, a1, -1476
 	sltu	a0, a1, a0
@@ -53,11 +53,11 @@ func000000000000004a:
 	ret
 
 func0000000000000026:
-	slli	a1, a0, 48
-	lui	a2, 1
-	srai	a1, a1, 48
-	addi	a2, a2, 1147
-	mul	a1, a1, a2
+	lui	a1, 1
+	slli	a2, a0, 48
+	srai	a2, a2, 48
+	addi	a1, a1, 1147
+	mul	a1, a2, a1
 	srli	a2, a1, 63
 	srli	a1, a1, 19
 	add	a1, a1, a2

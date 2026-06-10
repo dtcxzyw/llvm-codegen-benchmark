@@ -8,12 +8,12 @@ func000000000000018c:
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	li	a3, 1
 	slli	a3, a3, 35
-	sltiu	a1, a1, -15
+	sext.w	a1, a1
 	addi	a3, a3, -128
 	and	a2, a2, a3
+	sltiu	a1, a1, -15
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

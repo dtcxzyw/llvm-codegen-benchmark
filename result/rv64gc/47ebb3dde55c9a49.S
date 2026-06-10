@@ -1,8 +1,8 @@
 func0000000000000001:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
+	addi	a1, a2, -256
 	addi	a0, a0, 1
-	addi	a1, a1, -256
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
 	and	a2, a2, a1
@@ -15,10 +15,10 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
+	addi	a1, a2, -256
 	addi	a0, a0, 32
-	addi	a1, a1, -256
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
 	and	a2, a2, a1

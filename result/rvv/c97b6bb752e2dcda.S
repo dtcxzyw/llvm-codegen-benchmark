@@ -18,9 +18,9 @@ func0000000000000042:
 	ret
 
 func0000000000000310:
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	lui	a0, 524288
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vsetvli	zero, zero, e8, mf2, ta, ma

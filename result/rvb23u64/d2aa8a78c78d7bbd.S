@@ -1,17 +1,17 @@
 func0000000000000108:
-	zext.b	a1, a0
-	andi	a0, a0, 240
-	sltiu	a1, a1, 16
-	addi	a0, a0, -16
-	snez	a0, a0
-	andn	a0, a0, a1
+	andi	a1, a0, 240
+	zext.b	a0, a0
+	addi	a1, a1, -16
+	sltiu	a0, a0, 16
+	snez	a1, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000101:
-	zext.b	a1, a0
-	addi	a0, a0, -100
+	addi	a1, a0, -100
 	zext.b	a0, a0
-	minu	a0, a0, a1
+	zext.b	a1, a1
+	minu	a0, a1, a0
 	addi	a0, a0, -11
 	seqz	a0, a0
 	ret

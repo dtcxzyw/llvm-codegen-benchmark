@@ -23,11 +23,11 @@ func0000000000000008:
 	vmv1r.v	v12, v0
 	vmsltu.vv	v0, v10, v8
 	vmv.v.i	v8, 0
-	li	a0, 46
 	vmerge.vim	v8, v8, -1, v0
+	li	a0, 46
 	vadd.vx	v8, v8, a0
-	li	a0, 49
 	vmv1r.v	v0, v12
+	li	a0, 49
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -39,8 +39,8 @@ func0000000000000004:
 	vmv.v.x	v8, a0
 	li	a0, 127
 	vmerge.vxm	v8, v8, a0, v0
-	li	a0, 19
 	vmv1r.v	v0, v12
+	li	a0, 19
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

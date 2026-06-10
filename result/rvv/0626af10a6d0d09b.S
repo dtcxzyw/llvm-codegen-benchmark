@@ -1,11 +1,11 @@
 func0000000000000110:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	li	a0, 129
-	fli.d	fa5, inf
 	vfsub.vv	v16, v16, v24
 	vfclass.v	v16, v16
+	li	a0, 129
 	vand.vx	v16, v16, a0
+	fli.d	fa5, inf
 	vmsne.vi	v24, v16, 0
 	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
@@ -14,11 +14,11 @@ func0000000000000110:
 func00000000000000f0:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	li	a0, 894
-	fli.d	fa5, inf
 	vfsub.vv	v16, v16, v24
 	vfclass.v	v16, v16
+	li	a0, 894
 	vand.vx	v16, v16, a0
+	fli.d	fa5, inf
 	vmsne.vi	v24, v16, 0
 	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24

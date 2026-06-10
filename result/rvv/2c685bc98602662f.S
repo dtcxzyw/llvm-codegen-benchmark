@@ -1,7 +1,7 @@
 func0000000000000081:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v9, v9, -1
 	vmv.v.i	v10, 2
+	vadd.vi	v9, v9, -1
 	vsll.vv	v10, v10, v9
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmseq.vi	v0, v8, 0
@@ -12,8 +12,8 @@ func0000000000000081:
 
 func00000000000000c1:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v9, v9, -1
 	vmv.v.i	v10, 1
+	vadd.vi	v9, v9, -1
 	vsll.vv	v10, v10, v9
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmseq.vi	v0, v8, 0

@@ -22,8 +22,8 @@ func00000000000000ab:
 	ret
 
 func000000000000009b:
-	sub	a0, a0, a1
 	sext.w	a2, a2
+	sub	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 2
 	ret

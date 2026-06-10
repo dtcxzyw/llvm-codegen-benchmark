@@ -1,6 +1,6 @@
 func000000000000002a:
-	andi	a0, a0, 1
 	neg	a3, a2
+	andi	a0, a0, 1
 	sraiw	a2, a2, 31
 	and	a2, a2, a3
 	czero.eqz	a0, a1, a0
@@ -8,8 +8,8 @@ func000000000000002a:
 	ret
 
 func00000000000000ab:
-	andi	a0, a0, 1
 	neg	a3, a2
+	andi	a0, a0, 1
 	sraiw	a2, a2, 31
 	and	a2, a2, a3
 	czero.eqz	a0, a1, a0

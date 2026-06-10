@@ -12,17 +12,17 @@ func0000000000000041:
 
 func0000000000000010:
 	srai	a1, a1, 63
+	lui	a2, 176
 	add	a0, a0, a1
-	lui	a1, 176
-	addi	a1, a1, -1733
+	addi	a1, a2, -1733
 	addw	a0, a0, a1
 	ret
 
 func0000000000000015:
 	srai	a1, a1, 63
+	lui	a2, 176
 	add	a0, a0, a1
-	lui	a1, 176
-	addi	a1, a1, -1733
+	addi	a1, a2, -1733
 	addw	a0, a0, a1
 	ret
 

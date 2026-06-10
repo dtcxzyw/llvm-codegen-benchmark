@@ -15,8 +15,8 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	addi	a0, a0, 511
 	lui	a1, 524288
+	addi	a0, a0, 511
 	addiw	a1, a1, -512
 	and	a0, a0, a1
 	ret

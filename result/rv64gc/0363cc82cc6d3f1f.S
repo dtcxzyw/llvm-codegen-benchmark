@@ -13,8 +13,8 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
 	and	a1, a1, a2
+	sext.w	a0, a0
 	sgtz	a0, a0
 	xor	a0, a0, a1
 	ret

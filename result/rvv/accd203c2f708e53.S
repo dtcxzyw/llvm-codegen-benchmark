@@ -12,9 +12,9 @@ func0000000000000042:
 
 func0000000000001842:
 	li	a0, 30
-	li	a1, 28
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v8, a0
+	li	a1, 28
 	vmseq.vx	v12, v10, a1
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12

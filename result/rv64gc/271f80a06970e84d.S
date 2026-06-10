@@ -8,10 +8,10 @@ func0000000000000058:
 	ret
 
 func0000000000000308:
-	sext.w	a1, a1
 	lui	a3, 4032
 	and	a2, a2, a3
 	lui	a3, 576
+	sext.w	a1, a1
 	xor	a2, a2, a3
 	snez	a2, a2
 	sltiu	a1, a1, -4

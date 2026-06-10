@@ -17,15 +17,14 @@ func000000000000001d:
 	ret
 
 func000000000000000f:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
 	li	a0, -48
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.x	v10, a0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v11, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vwaddu.wv	v10, v10, v11
+	vzext.vf2	v12, v10
+	vwaddu.wv	v11, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000003f:
@@ -38,50 +37,46 @@ func000000000000003f:
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
 	li	a0, -55
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.x	v10, a0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v11, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vwaddu.wv	v10, v10, v11
+	vzext.vf2	v12, v10
+	vwaddu.wv	v11, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000000d:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
 	li	a0, -48
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.x	v10, a0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v11, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vwaddu.wv	v10, v10, v11
+	vzext.vf2	v12, v10
+	vwaddu.wv	v11, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000002c:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
 	li	a0, -48
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.x	v10, a0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v11, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vwaddu.wv	v10, v10, v11
+	vzext.vf2	v12, v10
+	vwaddu.wv	v11, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func000000000000002d:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v11, v10
 	li	a0, -48
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.x	v10, a0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v11, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vwaddu.wv	v10, v10, v11
+	vzext.vf2	v12, v10
+	vwaddu.wv	v11, v11, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 

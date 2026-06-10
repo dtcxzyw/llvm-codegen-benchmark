@@ -28,12 +28,12 @@ func000000000000001a:
 func00000000000000ff:
 	slli	a3, a2, 3
 	slli	a2, a2, 4
+	li	a4, 2
 	add	a2, a2, a3
-	li	a3, 2
-	sub	a3, a3, a1
+	sub	a4, a4, a1
 	add	a0, a0, a2
-	slli	a3, a3, 3
-	add	a0, a0, a3
+	slli	a4, a4, 3
+	add	a0, a0, a4
 	ret
 
 func00000000000000de:

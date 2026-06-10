@@ -33,8 +33,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	fadd.s	fa4, fa1, fa1
 	fmv.w.x	fa5, zero
+	fadd.s	fa4, fa1, fa1
 	feq.s	a0, fa4, fa5
 	beqz	a0, .LBB3_2
 	fmv.s	fa0, fa5

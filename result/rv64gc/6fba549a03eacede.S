@@ -1,8 +1,8 @@
 func0000000000000008:
 	zext.b	a2, a2
 	sub	a2, a2, a1
-	li	a1, 16
 	slli	a2, a2, 48
+	li	a1, 16
 	srli	a2, a2, 48
 	sub	a1, a1, a0
 	srlw	a0, a2, a1
@@ -11,8 +11,8 @@ func0000000000000008:
 func000000000000000a:
 	zext.b	a2, a2
 	sub	a2, a2, a1
-	li	a1, 16
 	slli	a2, a2, 48
+	li	a1, 16
 	srli	a2, a2, 48
 	sub	a1, a1, a0
 	srlw	a0, a2, a1
@@ -21,8 +21,8 @@ func000000000000000a:
 func0000000000000000:
 	zext.b	a2, a2
 	sub	a2, a2, a1
-	li	a1, 16
 	slli	a2, a2, 48
+	li	a1, 16
 	srli	a2, a2, 48
 	sub	a1, a1, a0
 	srlw	a0, a2, a1

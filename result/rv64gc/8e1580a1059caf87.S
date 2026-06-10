@@ -8,8 +8,8 @@ func0000000000000481:
 
 func0000000000000121:
 	addi	a2, a2, -1
-	andi	a1, a1, 63
 	sltu	a0, a2, a0
+	andi	a1, a1, 63
 	xori	a0, a0, 1
 	seqz	a1, a1
 	and	a0, a0, a1

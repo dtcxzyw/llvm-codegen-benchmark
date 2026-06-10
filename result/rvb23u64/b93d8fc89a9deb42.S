@@ -44,10 +44,10 @@ func00000000000001e1:
 
 func00000000000001e8:
 	zext.b	a2, a2
-	or	a0, a0, a1
-	lui	a1, 16
 	slli	a2, a2, 8
+	or	a0, a0, a1
 	or	a0, a0, a2
+	lui	a1, 16
 	sext.w	a0, a0
 	addi	a1, a1, 2
 	sltu	a0, a1, a0
@@ -55,10 +55,10 @@ func00000000000001e8:
 
 func00000000000001e4:
 	zext.b	a2, a2
-	or	a0, a0, a1
-	lui	a1, 16
 	slli	a2, a2, 8
+	or	a0, a0, a1
 	or	a0, a0, a2
+	lui	a1, 16
 	sext.w	a0, a0
 	addi	a1, a1, 1
 	sltu	a0, a0, a1

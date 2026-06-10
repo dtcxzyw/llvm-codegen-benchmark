@@ -1,6 +1,6 @@
 func000000000000000c:
-	addi	a1, a1, -128
 	li	a2, 255
+	addi	a1, a1, -128
 	slli	a2, a2, 32
 	orn	a1, a2, a1
 	srli	a1, a1, 8

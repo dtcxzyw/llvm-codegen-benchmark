@@ -15,8 +15,8 @@ func0000000000000021:
 	ret
 
 func0000000000000006:
-	sraiw	a0, a0, 31
 	lui	a2, 976563
+	sraiw	a0, a0, 31
 	addi	a2, a2, -2048
 	and	a0, a0, a2
 	addw	a0, a0, a1

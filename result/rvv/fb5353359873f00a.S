@@ -22,11 +22,11 @@ func0000000000006310:
 	ret
 
 func0000000000006210:
+	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vi	v10, v8, 15
-	li	a0, 31
 	vmand.mm	v9, v10, v9
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

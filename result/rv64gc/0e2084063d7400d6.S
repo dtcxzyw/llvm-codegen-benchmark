@@ -45,15 +45,15 @@ func0000000000000181:
 func0000000000000081:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 2
 	addi	a0, a0, -152
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000084:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 9
 	xori	a1, a1, 1
 	sltiu	a0, a0, 9
@@ -61,8 +61,8 @@ func0000000000000084:
 	ret
 
 func0000000000000101:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 11
 	not	a1, a1
 	seqz	a0, a0

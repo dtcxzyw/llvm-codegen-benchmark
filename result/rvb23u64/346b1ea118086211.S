@@ -23,8 +23,8 @@ func000000000000002c:
 
 func00000000000000cb:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	lui	a3, 7
+	sext.w	a1, a1
 	addi	a3, a3, 1344
 	slt	a3, a1, a3
 	slt	a1, a1, a2
@@ -43,9 +43,9 @@ func00000000000000ea:
 	ret
 
 func0000000000000108:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	li	a3, 7
+	sext.w	a1, a1
 	maxu	a2, a2, a3
 	sltu	a1, a2, a1
 	and	a0, a0, a1

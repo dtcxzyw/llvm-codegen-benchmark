@@ -20,8 +20,8 @@ func000000000000003c:
 func000000000000001e:
 	li	a2, 2
 	sub	a2, a2, a1
-	lui	a1, 44
 	sh2add	a0, a2, a0
+	lui	a1, 44
 	addi	a1, a1, -1616
 	add	a0, a0, a1
 	ret

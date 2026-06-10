@@ -54,9 +54,9 @@ func0000000000000084:
 func0000000000000081:
 	lui	a3, 16
 	addi	a4, a3, -1
-	addi	a3, a3, -2
 	and	a1, a1, a4
 	and	a2, a2, a4
+	addi	a3, a3, -2
 	sltu	a2, a2, a3
 	addi	a1, a1, -128
 	seqz	a1, a1
@@ -67,9 +67,9 @@ func0000000000000081:
 func000000000000008c:
 	lui	a3, 16
 	addi	a4, a3, -1
-	addi	a3, a3, -10
 	and	a1, a1, a4
 	and	a2, a2, a4
+	addi	a3, a3, -10
 	sltu	a2, a2, a3
 	addi	a1, a1, -45
 	snez	a1, a1

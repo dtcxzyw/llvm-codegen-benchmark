@@ -55,9 +55,9 @@ func00000000000000bd:
 	ret
 
 func000000000000004d:
-	flt.s	a0, fa2, fa0
-	flt.s	a1, fa0, fa1
-	not	a1, a1
+	flt.s	a0, fa0, fa1
+	flt.s	a1, fa2, fa0
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

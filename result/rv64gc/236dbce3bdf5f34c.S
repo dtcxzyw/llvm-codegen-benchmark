@@ -1,9 +1,9 @@
 func00000000000007a1:
-	sext.w	a0, a0
+	lui	a3, 1048575
 	add	a1, a1, a2
-	lui	a2, 1048575
-	addi	a2, a2, 496
+	addi	a2, a3, 496
 	mulw	a1, a1, a2
+	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

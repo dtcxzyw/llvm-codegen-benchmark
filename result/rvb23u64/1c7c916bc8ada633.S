@@ -5,10 +5,10 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
+	lui	a2, 524288
 	add	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -16
-	and	a0, a0, a1
+	addiw	a2, a2, -16
+	and	a0, a0, a2
 	sltiu	a0, a0, 309
 	xori	a0, a0, 1
 	ret
@@ -19,10 +19,10 @@ func000000000000002c:
 	ret
 
 func0000000000000038:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -2
-	and	a0, a0, a1
+	addi	a2, a2, -2
+	and	a0, a0, a2
 	sltiu	a0, a0, 102
 	xori	a0, a0, 1
 	ret
@@ -53,18 +53,18 @@ func0000000000000041:
 	ret
 
 func0000000000000034:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -8
-	and	a0, a0, a1
+	addi	a2, a2, -8
+	and	a0, a0, a2
 	sltiu	a0, a0, 1000
 	ret
 
 func0000000000000054:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -8
-	and	a0, a0, a1
+	addi	a2, a2, -8
+	and	a0, a0, a2
 	sltiu	a0, a0, 1000
 	ret
 
@@ -85,10 +85,10 @@ func000000000000006c:
 	ret
 
 func0000000000000078:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -2
-	and	a0, a0, a1
+	addi	a2, a2, -2
+	and	a0, a0, a2
 	sltiu	a0, a0, 6
 	xori	a0, a0, 1
 	ret

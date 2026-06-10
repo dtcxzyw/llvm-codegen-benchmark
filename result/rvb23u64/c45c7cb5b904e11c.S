@@ -7,8 +7,8 @@ func00000000000000a8:
 
 func00000000000000a5:
 	sext.w	a3, a2
-	addi	a2, a2, -30
 	sgtz	a3, a3
+	addi	a2, a2, -30
 	czero.eqz	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -13,11 +13,11 @@ func00000000000000c4:
 	ret
 
 func0000000000000104:
-	addiw	a1, a1, -4
 	li	a2, 1
-	sltiu	a1, a1, -2
 	slli	a2, a2, 32
+	addiw	a1, a1, -4
 	addi	a2, a2, -13
+	sltiu	a1, a1, -2
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret
@@ -32,9 +32,9 @@ func000000000000018c:
 func0000000000000304:
 	addi	a1, a1, -2048
 	lui	a2, 15
-	sltiu	a0, a0, 4
 	addiw	a1, a1, -1
 	addi	a2, a2, 2047
+	sltiu	a0, a0, 4
 	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1
@@ -105,9 +105,9 @@ func0000000000000424:
 
 func0000000000000084:
 	lui	a2, 761856
-	srli	a0, a0, 32
 	add	a1, a1, a2
 	srliw	a1, a1, 30
+	srli	a0, a0, 32
 	sltiu	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1

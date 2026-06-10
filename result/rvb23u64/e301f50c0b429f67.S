@@ -20,8 +20,8 @@ func000000000000003e:
 
 func0000000000000070:
 	sh1add	a2, a2, a2
-	sext.w	a2, a2
 	add	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 
@@ -56,8 +56,8 @@ func000000000000001c:
 
 func000000000000007c:
 	sh1add	a2, a2, a2
-	sext.w	a2, a2
 	add	a0, a0, a1
+	sext.w	a2, a2
 	add	a0, a0, a2
 	ret
 

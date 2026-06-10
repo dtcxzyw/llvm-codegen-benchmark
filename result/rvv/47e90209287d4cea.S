@@ -1,10 +1,10 @@
 func0000000000000181:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vi	v12, v10, 0
 	lui	a0, 34953
-	vmax.vv	v10, v10, v12
 	addi	a0, a0, -1912
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vrsub.vi	v14, v10, 0
+	vmax.vv	v10, v10, v14
 	lui	a0, 978671
 	addi	a0, a0, -273
 	vmacc.vx	v12, a0, v10

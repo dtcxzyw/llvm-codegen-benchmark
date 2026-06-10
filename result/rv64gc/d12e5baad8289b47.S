@@ -4,15 +4,15 @@ func0000000000000014:
 	ret
 
 func000000000000003c:
-	add	a0, a0, a2
 	li	a1, -1
+	add	a0, a0, a2
 	slli	a1, a1, 46
 	add	a0, a0, a1
 	ret
 
 func000000000000003f:
-	add	a0, a0, a2
 	lui	a1, 1048538
+	add	a0, a0, a2
 	srli	a1, a1, 13
 	add	a0, a0, a1
 	ret

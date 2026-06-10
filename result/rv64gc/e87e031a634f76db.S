@@ -1,9 +1,9 @@
 func0000000000000003:
 	andi	a2, a2, 1
 	li	a3, 1
-	slli	a1, a1, 61
 	addi	a2, a2, -1
 	slli	a3, a3, 60
+	slli	a1, a1, 61
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

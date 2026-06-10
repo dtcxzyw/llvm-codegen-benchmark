@@ -1,25 +1,26 @@
 func0000000000000004:
-	fmv.s	fa5, fa0
 	lui	a1, 276464
-	fmv.w.x	fa0, a1
-	fmul.s	fa5, fa5, fa0
-	flt.s	a1, fa0, fa5
+	fmv.w.x	fa5, a1
+	fmul.s	fa4, fa0, fa5
+	flt.s	a1, fa5, fa4
 	andi	a0, a0, 1
 	beqz	a1, .LBB0_3
 	bnez	a0, .LBB0_4
 .LBB0_2:
+	fmv.s	fa0, fa5
 	ret
 .LBB0_3:
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa4
 	beqz	a0, .LBB0_2
 .LBB0_4:
-	fmv.w.x	fa0, zero
+	fmv.w.x	fa5, zero
+	fmv.s	fa0, fa5
 	ret
 
 func0000000000000002:
-	fadd.s	fa5, fa0, fa0
 	lui	a1, 253133
 	addi	a1, a1, -819
+	fadd.s	fa5, fa0, fa0
 	fmv.w.x	fa0, a1
 	flt.s	a1, fa5, fa0
 	andi	a0, a0, 1

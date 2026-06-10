@@ -20,9 +20,9 @@ func0000000000000021:
 	zext.b	a1, a1
 	slli	a0, a0, 56
 	srli	a0, a0, 48
+	lui	a2, 14
 	or	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, 333
+	addi	a1, a2, 333
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

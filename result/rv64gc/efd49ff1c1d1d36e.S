@@ -29,18 +29,18 @@ func0000000000000010:
 func000000000000003f:
 	srliw	a1, a1, 6
 	slli	a1, a1, 3
+	lui	a2, 9
 	add	a0, a0, a1
-	lui	a1, 9
-	addi	a1, a1, -16
-	add	a0, a0, a1
+	addi	a2, a2, -16
+	add	a0, a0, a2
 	ret
 
 func0000000000000033:
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
+	lui	a2, 225
 	add	a0, a0, a1
-	lui	a1, 225
-	addi	a1, a1, 1280
+	addi	a1, a2, 1280
 	add	a0, a0, a1
 	ret
 

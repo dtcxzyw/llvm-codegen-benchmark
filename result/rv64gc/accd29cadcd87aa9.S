@@ -30,9 +30,9 @@ func0000000000000025:
 func0000000000000020:
 	slli	a1, a1, 56
 	srli	a1, a1, 40
+	lui	a2, 648056
 	add	a0, a0, a1
-	lui	a1, 648056
-	addi	a1, a1, -1607
+	addi	a1, a2, -1607
 	addw	a0, a0, a1
 	ret
 

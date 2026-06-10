@@ -18,28 +18,28 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
+	lui	a0, 258048
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 30
-	lui	a0, 258048
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000001:
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 16
-	lui	a0, 1048560
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vsll.vi	v12, v11, 12
 	li	a0, 31
 	slli	a0, a0, 7
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vsll.vi	v12, v11, 12
 	vand.vx	v13, v10, a0
 	vwaddu.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -47,19 +47,19 @@ func0000000000000004:
 	ret
 
 func0000000000000009:
+	li	a0, -57
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 3
-	li	a0, -57
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10
 	ret
 
 func000000000000001d:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vsll.vi	v11, v11, 7
 	lui	a0, 983548
 	addi	a0, a0, 127
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vsll.vi	v11, v11, 7
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10

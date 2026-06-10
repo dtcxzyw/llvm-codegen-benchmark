@@ -1,10 +1,10 @@
 func000000000000001e:
 	lui	a3, 13107
-	add	a0, a0, a1
-	lui	a1, 241
 	addi	a3, a3, 819
 	and	a2, a2, a3
+	add	a0, a0, a1
 	add	a0, a0, a2
+	lui	a1, 241
 	srli	a0, a0, 8
 	addi	a1, a1, -241
 	and	a0, a0, a1

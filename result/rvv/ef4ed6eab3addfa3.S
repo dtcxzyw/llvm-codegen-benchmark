@@ -20,10 +20,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	lui	a0, 1048560
-	addi	a0, a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v0, v12, v10
+	lui	a0, 1048560
+	addi	a0, a0, 1
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

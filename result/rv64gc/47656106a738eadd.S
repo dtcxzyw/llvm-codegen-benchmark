@@ -1,6 +1,6 @@
 func0000000000000053:
-	andi	a1, a1, 1
 	srliw	a2, a2, 15
+	andi	a1, a1, 1
 	snez	a2, a2
 	addi	a2, a2, 1
 	addi	a1, a1, -1
@@ -10,8 +10,8 @@ func0000000000000053:
 
 func0000000000000050:
 	andi	a1, a1, 1
-	sext.w	a2, a2
 	lui	a3, 16
+	sext.w	a2, a2
 	addi	a3, a3, -1
 	sltu	a2, a2, a3
 	li	a3, 2

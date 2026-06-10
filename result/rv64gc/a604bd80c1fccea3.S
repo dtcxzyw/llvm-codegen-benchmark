@@ -7,8 +7,8 @@ func0000000000000061:
 	ret
 
 func0000000000000041:
-	andi	a0, a0, 1
 	addi	a2, a2, -32
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	xor	a0, a0, a2
@@ -16,8 +16,8 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	addi	a2, a2, -136
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	xor	a0, a0, a2

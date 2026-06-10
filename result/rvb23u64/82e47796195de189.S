@@ -5,10 +5,10 @@ func0000000000000013:
 	ret
 
 func00000000000000d0:
+	lui	a3, 3
 	add	a0, a0, a2
-	lui	a2, 3
 	add	a0, a0, a1
-	addi	a1, a2, -1601
+	addi	a1, a3, -1601
 	add	a0, a0, a1
 	ret
 
@@ -42,42 +42,42 @@ func0000000000000010:
 	ret
 
 func00000000000000ff:
+	lui	a3, 178
 	add	a0, a0, a2
-	lui	a2, 178
 	add	a0, a0, a1
-	addi	a1, a2, 230
+	addi	a1, a3, 230
 	add	a0, a0, a1
 	ret
 
 func00000000000000ea:
+	lui	a3, 305
 	sh2add	a0, a0, a2
-	lui	a2, 305
 	sh2add	a0, a1, a0
-	addi	a1, a2, 1028
+	addi	a1, a3, 1028
 	add	a0, a0, a1
 	ret
 
 func00000000000000ec:
+	lui	a3, 305
 	sh2add	a0, a0, a2
-	lui	a2, 305
 	sh2add	a0, a1, a0
-	addi	a1, a2, 1028
+	addi	a1, a3, 1028
 	add	a0, a0, a1
 	ret
 
 func000000000000002a:
+	lui	a3, 320
 	sh2add	a0, a0, a2
-	lui	a2, 320
 	sh2add	a0, a1, a0
-	addi	a1, a2, -876
+	addi	a1, a3, -876
 	add	a0, a0, a1
 	ret
 
 func000000000000002c:
+	lui	a3, 320
 	sh2add	a0, a0, a2
-	lui	a2, 320
 	sh2add	a0, a1, a0
-	addi	a1, a2, -876
+	addi	a1, a3, -876
 	add	a0, a0, a1
 	ret
 

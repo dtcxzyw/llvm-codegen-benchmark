@@ -1,6 +1,6 @@
 func0000000000000008:
-	not	a1, a1
 	lui	a2, 1
+	not	a1, a1
 	addi	a2, a2, -1
 	or	a1, a1, a2
 	sltu	a0, a1, a0

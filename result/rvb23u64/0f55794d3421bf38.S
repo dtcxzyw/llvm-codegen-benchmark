@@ -1,7 +1,7 @@
 func0000000000000041:
+	lui	a2, 524296
 	or	a0, a0, a1
-	lui	a1, 524296
-	addi	a1, a1, 110
+	addi	a1, a2, 110
 	and	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0

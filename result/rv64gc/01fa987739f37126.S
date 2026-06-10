@@ -32,21 +32,21 @@ func000000000000002c:
 	ret
 
 func0000000000000101:
-	zext.b	a0, a0
 	li	a2, 1
+	zext.b	a0, a0
 	slli	a2, a2, 40
-	sltiu	a0, a0, 25
 	and	a1, a1, a2
+	sltiu	a0, a0, 25
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000181:
-	zext.b	a0, a0
 	li	a2, 1
 	slli	a2, a2, 35
 	addi	a2, a2, -16
+	zext.b	a0, a0
 	and	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0

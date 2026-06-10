@@ -14,9 +14,9 @@ func000000000000014c:
 
 func00000000000000ca:
 	sext.w	a1, a1
-	slt	a1, a0, a1
-	srli	a0, a0, 63
-	not	a0, a0
+	srli	a2, a0, 63
+	slt	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -29,9 +29,9 @@ func000000000000014a:
 
 func00000000000000c4:
 	sext.w	a1, a1
-	slt	a1, a0, a1
-	srli	a0, a0, 31
-	seqz	a0, a0
+	srli	a2, a0, 31
+	slt	a0, a0, a1
+	seqz	a1, a2
 	and	a0, a0, a1
 	ret
 

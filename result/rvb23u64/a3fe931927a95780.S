@@ -1,12 +1,12 @@
 func00000000000003e1:
-	sext.w	a1, a0
-	clzw	a0, a0
-	neg	a0, a0
-	sltiu	a1, a1, 2
-	li	a2, -1
-	sllw	a0, a2, a0
-	addi	a0, a0, 2
-	czero.nez	a0, a0, a1
+	li	a1, -1
+	clzw	a2, a0
+	neg	a2, a2
+	sext.w	a0, a0
+	sllw	a1, a1, a2
+	sltiu	a0, a0, 2
+	addi	a1, a1, 2
+	czero.nez	a0, a1, a0
 	addi	a0, a0, -2
 	ret
 

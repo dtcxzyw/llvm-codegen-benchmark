@@ -5,8 +5,8 @@ func0000000000000001:
 	lui	a0, 262144
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0
-	lui	a0, 131072
 	vmv1r.v	v0, v10
+	lui	a0, 131072
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

@@ -17,10 +17,10 @@ func0000000000000000:
 	ret
 
 func000000000000000b:
+	lui	a2, 1048538
 	sub	a0, a0, a1
-	lui	a1, 1048538
-	srli	a1, a1, 12
-	add	a0, a0, a1
+	srli	a2, a2, 12
+	add	a0, a0, a2
 	li	a1, 0
 	ret
 

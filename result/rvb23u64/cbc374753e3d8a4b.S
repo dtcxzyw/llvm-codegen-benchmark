@@ -42,9 +42,9 @@ func000000000000000f:
 
 func000000000000000d:
 	zext.h	a1, a1
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	addw	a0, a0, a1
 	ret
 

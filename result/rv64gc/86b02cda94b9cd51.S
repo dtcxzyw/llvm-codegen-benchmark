@@ -1,67 +1,67 @@
 func000000000000001f:
-	slli	a1, a0, 2
+	lui	a1, 699051
+	slli	a2, a0, 2
 	slli	a0, a0, 3
-	lui	a2, 699051
-	add	a0, a0, a1
-	addi	a1, a2, -1365
-	addi	a0, a0, -12
+	addi	a1, a1, -1365
+	add	a0, a0, a2
 	slli	a2, a1, 32
+	addi	a0, a0, -12
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
-	andi	a1, a0, -8
-	srli	a0, a0, 3
-	slli	a0, a0, 2
+	srli	a1, a0, 3
+	andi	a0, a0, -8
+	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
 
 func000000000000001d:
-	slli	a1, a0, 2
+	lui	a1, 699051
+	slli	a2, a0, 2
 	slli	a0, a0, 3
-	lui	a2, 699051
-	add	a0, a0, a1
-	addi	a1, a2, -1365
-	addi	a0, a0, -12
+	addi	a1, a1, -1365
+	add	a0, a0, a2
 	slli	a2, a1, 32
+	addi	a0, a0, -12
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
-	andi	a1, a0, -8
-	srli	a0, a0, 3
-	slli	a0, a0, 2
+	srli	a1, a0, 3
+	andi	a0, a0, -8
+	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
 
 func0000000000000000:
-	slli	a1, a0, 3
+	lui	a1, 838861
+	slli	a2, a0, 3
 	slli	a0, a0, 5
-	lui	a2, 838861
-	add	a0, a0, a1
-	addi	a1, a2, -819
-	addi	a0, a0, -40
+	addi	a1, a1, -819
+	add	a0, a0, a2
 	slli	a2, a1, 32
+	addi	a0, a0, -40
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
-	andi	a1, a0, -32
-	srli	a0, a0, 5
-	slli	a0, a0, 3
+	srli	a1, a0, 5
+	andi	a0, a0, -32
+	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 40
 	ret
 
 func0000000000000015:
-	slli	a1, a0, 4
+	lui	a1, 699051
+	slli	a2, a0, 4
 	slli	a0, a0, 5
-	lui	a2, 699051
-	add	a0, a0, a1
-	addi	a1, a2, -1365
-	addi	a0, a0, -48
+	addi	a1, a1, -1365
+	add	a0, a0, a2
 	slli	a2, a1, 32
+	addi	a0, a0, -48
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
-	andi	a1, a0, -32
-	srli	a0, a0, 5
-	slli	a0, a0, 4
+	srli	a1, a0, 5
+	andi	a0, a0, -32
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret

@@ -1,17 +1,17 @@
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmv.v.i	v10, -1
-	vmacc.vv	v10, v8, v12
-	vsrl.vi	v8, v10, 2
+	vmv.v.i	v12, -1
+	vsext.vf2	v14, v10
+	vmacc.vv	v12, v8, v14
+	vsrl.vi	v8, v12, 2
 	ret
 
 func000000000000000a:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
 	lui	a0, 8
-	vmv.v.x	v10, a0
-	vmacc.vv	v10, v8, v12
-	vsrl.vi	v8, v10, 16
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsext.vf2	v14, v10
+	vmacc.vv	v12, v8, v14
+	vsrl.vi	v8, v12, 16
 	ret
 

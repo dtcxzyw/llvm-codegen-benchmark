@@ -19,8 +19,8 @@ func000000000000003d:
 	addi	a0, a0, 383
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v14, a0
-	lui	a0, 1048448
 	vmacc.vv	v14, v12, v10
+	lui	a0, 1048448
 	srli	a0, a0, 15
 	vand.vx	v10, v14, a0
 	vadd.vv	v8, v10, v8

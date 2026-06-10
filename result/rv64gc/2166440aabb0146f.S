@@ -5,11 +5,11 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
+	li	a3, 1
+	slli	a3, a3, 62
 	or	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 62
-	addi	a2, a2, 1
-	slt	a1, a1, a2
+	addi	a3, a3, 1
+	slt	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

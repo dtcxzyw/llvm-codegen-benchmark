@@ -10,11 +10,11 @@ func0000000000000001:
 	addi	a2, a2, 127
 	slli	a3, a2, 32
 	add	a2, a2, a3
-	lui	a3, 520200
-	addi	a3, a3, -256
 	and	a1, a1, a2
-	slli	a2, a3, 32
+	lui	a2, 520200
 	sh1add	a1, a1, a1
+	addi	a2, a2, -256
+	slli	a3, a2, 32
 	slli	a1, a1, 8
 	add	a2, a2, a3
 	and	a1, a1, a2

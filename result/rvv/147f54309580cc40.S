@@ -7,9 +7,9 @@ func0000000000000026:
 	vmulh.vx	v12, v10, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
-	li	a0, 7
 	vsra.vi	v12, v12, 1
 	vadd.vv	v12, v12, v14
+	li	a0, 7
 	vnmsub.vx	v12, a0, v10
 	vmsle.vi	v0, v12, -1
 	vsetvli	zero, zero, e32, m1, ta, mu
@@ -25,13 +25,13 @@ func0000000000000006:
 	vmulh.vx	v12, v10, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
-	lui	a0, 244141
-	addi	a0, a0, -1536
 	vsra.vi	v12, v12, 26
 	vadd.vv	v12, v12, v14
+	lui	a0, 244141
+	addi	a0, a0, -1536
 	vnmsub.vx	v12, a0, v10
-	lui	a0, 976563
 	vmsle.vi	v0, v12, -1
+	lui	a0, 976563
 	addi	a0, a0, -2048
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vadd.vx	v8, v8, a0, v0.t

@@ -41,8 +41,8 @@ func0000000000000007:
 	ret
 
 func000000000000000d:
-	fsub.d	fa5, fa0, fa1
 	li	a1, 903
+	fsub.d	fa5, fa0, fa1
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4

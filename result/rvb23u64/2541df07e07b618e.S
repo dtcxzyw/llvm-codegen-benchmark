@@ -1,7 +1,7 @@
 func0000000000000001:
-	andi	a1, a0, 12
-	srli	a0, a0, 4
-	andi	a0, a0, 16
+	srli	a1, a0, 4
+	andi	a0, a0, 12
+	andi	a1, a1, 16
 	or	a0, a0, a1
 	ret
 

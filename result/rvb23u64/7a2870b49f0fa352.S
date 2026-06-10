@@ -19,13 +19,13 @@ func0000000000000141:
 
 func000000000000018c:
 	lui	a3, 61681
+	addi	a3, a3, -241
+	slli	a4, a3, 32
+	add	a3, a3, a4
 	xor	a0, a0, a1
-	addi	a1, a3, -241
-	slli	a3, a1, 32
-	add	a1, a1, a3
-	and	a1, a1, a2
+	and	a2, a2, a3
 	snez	a0, a0
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000101:

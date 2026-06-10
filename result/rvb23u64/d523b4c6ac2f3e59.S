@@ -6,8 +6,8 @@ func00000000000000ea:
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 1
 	li	a3, 8
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
 	add	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000181:
 	ret
 
 func0000000000000081:
-	negw	a2, a2
 	slli	a1, a1, 63
+	negw	a2, a2
 	srai	a1, a1, 63
 	or	a1, a1, a2
 	negw	a0, a0
@@ -26,8 +26,8 @@ func0000000000000081:
 	ret
 
 func000000000000008a:
-	andi	a1, a1, 1
 	li	a3, 16
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
 	addw	a0, a0, a1
@@ -35,8 +35,8 @@ func000000000000008a:
 	ret
 
 func00000000000001a8:
-	andi	a1, a1, 1
 	li	a3, 32
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
 	addw	a0, a0, a1
@@ -45,8 +45,8 @@ func00000000000001a8:
 	ret
 
 func000000000000000a:
-	andi	a1, a1, 1
 	li	a3, 7
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
 	add	a0, a0, a1

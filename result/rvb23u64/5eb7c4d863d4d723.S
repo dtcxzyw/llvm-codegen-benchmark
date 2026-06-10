@@ -106,7 +106,7 @@ func0000000000000010:
 func0000000000000015:
 	sh1add	a2, a0, a0
 	slli	a0, a0, 5
-	sub	a0, a0, a2
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	subw	a0, a0, a2
 	ret
 

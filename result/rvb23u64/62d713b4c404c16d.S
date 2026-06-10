@@ -8,8 +8,8 @@ func00000000000000ff:
 	ret
 
 func0000000000000000:
-	not	a2, a2
 	sh3add	a0, a1, a0
+	not	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, 16
 	ret
@@ -43,8 +43,8 @@ func00000000000000aa:
 	ret
 
 func00000000000000d0:
-	not	a2, a2
 	sh3add	a0, a1, a0
+	not	a2, a2
 	sh3add	a0, a2, a0
 	addi	a0, a0, -8
 	ret

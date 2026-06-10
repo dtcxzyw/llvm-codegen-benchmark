@@ -1,10 +1,10 @@
 func0000000000000003:
-	zext.b	a2, a2
+	lui	a3, 276795
 	or	a0, a0, a1
-	lui	a1, 276795
-	or	a0, a0, a2
-	slli	a1, a1, 1
-	addi	a1, a1, -1381
+	zext.b	a1, a2
+	slli	a3, a3, 1
+	or	a0, a0, a1
+	addi	a1, a3, -1381
 	xor	a0, a0, a1
 	ret
 

@@ -12,8 +12,8 @@ func0000000000001c94:
 
 func0000000000000c34:
 	slli	a2, a2, 32
-	addi	a1, a1, 1
 	srli	a2, a2, 32
+	addi	a1, a1, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

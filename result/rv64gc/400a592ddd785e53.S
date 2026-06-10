@@ -1,14 +1,14 @@
 func0000000000000004:
+	mul	a0, a0, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	mul	a0, a0, a1
 	mul	a0, a0, a2
 	sltiu	a0, a0, 8
 	ret
 
 func0000000000000008:
-	slli	a2, a2, 48
 	mul	a0, a0, a1
+	slli	a2, a2, 48
 	srli	a2, a2, 48
 	mul	a0, a0, a2
 	lui	a1, 1
@@ -16,17 +16,17 @@ func0000000000000008:
 	ret
 
 func00000000000001c4:
+	mul	a0, a0, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	mul	a0, a0, a1
 	mul	a0, a0, a2
 	sltiu	a0, a0, 8
 	ret
 
 func0000000000000014:
+	mul	a0, a0, a1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
-	mul	a0, a0, a1
 	mul	a0, a0, a2
 	sltiu	a0, a0, 8
 	ret

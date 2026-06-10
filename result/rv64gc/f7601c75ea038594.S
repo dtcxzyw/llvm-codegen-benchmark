@@ -1,8 +1,8 @@
 func00000000000000c7:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
-	snez	a0, a0
 	feq.d	a1, fa0, fa5
+	sext.w	a0, a0
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -12,9 +12,9 @@ func00000000000000c7:
 func000000000000006a:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
+	fle.d	a1, fa0, fa5
 	sext.w	a0, a0
 	slti	a0, a0, 5
-	fle.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
@@ -23,9 +23,9 @@ func000000000000006a:
 func000000000000001b:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
+	flt.d	a1, fa5, fa0
 	sext.w	a0, a0
 	seqz	a0, a0
-	flt.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -35,38 +35,38 @@ func000000000000001b:
 func0000000000000012:
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
+	flt.d	a1, fa0, fa5
 	sext.w	a0, a0
 	seqz	a0, a0
-	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000017:
-	sext.w	a0, a0
 	fmv.d.x	fa5, zero
-	seqz	a0, a0
 	feq.d	a1, fa0, fa5
+	sext.w	a0, a0
+	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func00000000000000a4:
-	sext.w	a0, a0
 	li	a1, 1023
-	sgtz	a0, a0
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
+	sext.w	a0, a0
+	sgtz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000014:
-	addiw	a0, a0, -7
 	lui	a1, 4101
-	seqz	a0, a0
 	slli	a1, a1, 38
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa5, fa0
+	addiw	a0, a0, -7
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
@@ -75,18 +75,18 @@ func0000000000000014:
 func0000000000000013:
 	lui	a1, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a1)
+	fle.d	a1, fa5, fa0
 	sext.w	a0, a0
 	seqz	a0, a0
-	fle.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000018:
-	addiw	a0, a0, -5
 	fmv.d.x	fa5, zero
-	seqz	a0, a0
 	feq.d	a1, fa0, fa5
+	addiw	a0, a0, -5
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
@@ -95,9 +95,9 @@ func0000000000000018:
 func0000000000000065:
 	lui	a1, %hi(.LCPI9_0)
 	fld	fa5, %lo(.LCPI9_0)(a1)
+	fle.d	a1, fa0, fa5
 	sext.w	a0, a0
 	slti	a0, a0, 40
-	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -107,9 +107,9 @@ func0000000000000065:
 func000000000000001a:
 	lui	a1, %hi(.LCPI10_0)
 	fld	fa5, %lo(.LCPI10_0)(a1)
+	fle.d	a1, fa0, fa5
 	sext.w	a0, a0
 	seqz	a0, a0
-	fle.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 

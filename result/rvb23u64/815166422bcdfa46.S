@@ -29,8 +29,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	slliw	a0, a0, 8
 	lui	a1, 3888
+	slliw	a0, a0, 8
 	addi	a1, a1, 128
 	or	a0, a0, a1
 	ret

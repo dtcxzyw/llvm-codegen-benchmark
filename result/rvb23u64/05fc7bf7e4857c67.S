@@ -1,14 +1,14 @@
 func0000000000000003:
-	srliw	a0, a0, 5
 	lui	a1, 42950
+	srliw	a0, a0, 5
 	addi	a1, a1, -1339
 	mul	a0, a0, a1
 	srli	a0, a0, 39
 	ret
 
 func0000000000000000:
-	zext.w	a0, a0
 	lui	a1, 202135
+	zext.w	a0, a0
 	addi	a1, a1, 543
 	mul	a0, a0, a1
 	srli	a0, a0, 36
@@ -31,8 +31,8 @@ func000000000000001a:
 	ret
 
 func0000000000000012:
-	srliw	a0, a0, 5
 	lui	a1, 42950
+	srliw	a0, a0, 5
 	addi	a1, a1, -1339
 	mul	a0, a0, a1
 	srli	a0, a0, 39

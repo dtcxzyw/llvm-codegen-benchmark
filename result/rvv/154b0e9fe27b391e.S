@@ -13,8 +13,8 @@ func0000000000000308:
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	li	a0, 64
 	vmsltu.vv	v9, v12, v10
+	li	a0, 64
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

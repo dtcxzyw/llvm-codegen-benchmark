@@ -58,8 +58,8 @@ func000000000000008c:
 
 func0000000000000028:
 	zext.b	a0, a0
-	seqz	a1, a1
 	sltiu	a0, a0, 253
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -73,8 +73,8 @@ func0000000000000024:
 
 func0000000000000188:
 	zext.b	a0, a0
-	snez	a1, a1
 	sltiu	a0, a0, 253
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -95,8 +95,8 @@ func0000000000000186:
 
 func000000000000002a:
 	slli	a0, a0, 56
-	seqz	a1, a1
 	srli	a0, a0, 63
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

@@ -13,19 +13,19 @@ func00000000000002ad:
 	ret
 
 func0000000000000610:
-	sext.w	a3, a2
-	li	a4, 4
-	sub	a4, a4, a2
-	czero.eqz	a2, a4, a3
+	li	a3, 4
+	sext.w	a4, a2
+	sub	a3, a3, a2
+	czero.eqz	a2, a3, a4
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func000000000000061c:
-	sext.w	a3, a2
-	li	a4, 4
-	sub	a4, a4, a2
-	czero.eqz	a2, a4, a3
+	li	a3, 4
+	sext.w	a4, a2
+	sub	a3, a3, a2
+	czero.eqz	a2, a3, a4
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

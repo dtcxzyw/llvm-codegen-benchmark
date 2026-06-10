@@ -1,8 +1,8 @@
 func0000000000000042:
 	sext.w	a2, a2
+	lui	a3, 560295
 	add	a1, a1, a2
-	lui	a2, 560295
-	addi	a2, a2, -1024
+	addi	a2, a3, -1024
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -41,10 +41,10 @@ func0000000000000002:
 
 func0000000000000014:
 	sext.w	a2, a2
+	lui	a3, 262144
 	add	a1, a1, a2
-	lui	a2, 262144
-	addi	a2, a2, -2
-	slt	a1, a2, a1
+	addi	a3, a3, -2
+	slt	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

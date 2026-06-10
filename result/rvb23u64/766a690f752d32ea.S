@@ -17,9 +17,9 @@ func000000000000000f:
 
 func0000000000000003:
 	lui	a3, 589823
+	bclri	a3, a3, 31
 	or	a0, a0, a1
 	lui	a1, 60160
-	bclri	a3, a3, 31
 	andn	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

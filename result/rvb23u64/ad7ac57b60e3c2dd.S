@@ -1,8 +1,8 @@
 func0000000000000026:
-	sext.h	a1, a0
-	li	a2, 13
-	srli	a1, a1, 15
-	slli	a2, a2, 11
+	li	a1, 13
+	sext.h	a2, a0
+	srli	a2, a2, 15
+	slli	a1, a1, 11
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -16,10 +16,10 @@ func000000000000002a:
 	ret
 
 func0000000000000008:
-	zext.h	a1, a0
-	addi	a0, a0, -4
+	addi	a1, a0, -4
 	zext.h	a0, a0
-	minu	a0, a0, a1
+	zext.h	a1, a1
+	minu	a0, a1, a0
 	ret
 
 func0000000000000078:
@@ -31,9 +31,9 @@ func0000000000000078:
 	ret
 
 func0000000000000038:
-	zext.h	a1, a0
-	addi	a0, a0, -4
+	addi	a1, a0, -4
 	zext.h	a0, a0
-	minu	a0, a0, a1
+	zext.h	a1, a1
+	minu	a0, a1, a0
 	ret
 

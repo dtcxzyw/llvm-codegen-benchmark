@@ -1,6 +1,6 @@
 func0000000000000000:
-	srli	a0, a0, 10
 	li	a1, -5
+	srli	a0, a0, 10
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	ret

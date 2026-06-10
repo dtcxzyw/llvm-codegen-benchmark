@@ -22,11 +22,11 @@ func0000000000000000:
 func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, 208
-	vmv.v.x	v12, a0
 	lui	a0, 16
 	addi	a0, a0, -256
 	vand.vx	v10, v10, a0
+	li	a0, 208
+	vmv.v.x	v12, a0
 	li	a0, 192
 	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v8, v12, v8
@@ -45,9 +45,9 @@ func0000000000000002:
 	ret
 
 func0000000000000007:
+	lui	a0, 131056
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsll.vi	v10, v10, 16
-	lui	a0, 131056
 	vand.vx	v10, v10, a0
 	lui	a0, 131072
 	vor.vx	v8, v8, a0, v0.t

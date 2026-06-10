@@ -10,14 +10,14 @@ func0000000000000201:
 	ret
 
 func0000000000000088:
-	srli	a2, a2, 1
+	li	a3, -1
 	add	a0, a0, a1
-	li	a1, -1
+	srli	a2, a2, 1
+	slli	a3, a3, 63
 	add	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a2, a1, 63
-	and	a0, a0, a2
-	sltu	a0, a1, a0
+	addi	a1, a3, 63
+	and	a0, a0, a1
+	sltu	a0, a3, a0
 	ret
 
 func0000000000000361:

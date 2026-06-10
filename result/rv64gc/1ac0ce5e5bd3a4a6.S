@@ -14,13 +14,13 @@ func0000000000000002:
 func0000000000000004:
 	lui	a0, %hi(.promoted_doubles.func0000000000000004)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000004)
-	fld	fa4, 0(a0)
-	fld	fa5, 8(a0)
-	flt.d	a0, fa4, fa0
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
+	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB1_2
-	fmv.d	fa4, fa0
+	fmv.d	fa5, fa0
 .LBB1_2:
-	fmul.d	fa0, fa4, fa5
+	fmul.d	fa0, fa5, fa4
 	ret
 
 .promoted_doubles.func0000000000000002:

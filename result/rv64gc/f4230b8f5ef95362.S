@@ -11,9 +11,9 @@ func0000000000000426:
 	ret
 
 func00000000000000a1:
+	negw	a2, a2
 	subw	a0, a0, a1
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
@@ -31,9 +31,9 @@ func00000000000000a6:
 	ret
 
 func0000000000000001:
+	negw	a2, a2
 	subw	a0, a0, a1
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 
@@ -78,9 +78,9 @@ func0000000000000206:
 	ret
 
 func0000000000000101:
+	negw	a2, a2
 	subw	a0, a0, a1
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

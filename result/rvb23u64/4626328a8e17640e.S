@@ -6,8 +6,8 @@ func0000000000000004:
 	ret
 
 func00000000000001c1:
-	addi	a1, a1, 7
 	bseti	a2, zero, 33
+	addi	a1, a1, 7
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	xor	a0, a0, a1
@@ -49,10 +49,10 @@ func0000000000000006:
 
 func000000000000012a:
 	li	a2, -8
+	zext.w	a3, a2
 	add.uw	a1, a2, a1
-	zext.w	a2, a2
-	addi	a2, a2, 6
-	and	a1, a1, a2
+	addi	a3, a3, 6
+	and	a1, a1, a3
 	slt	a0, a1, a0
 	ret
 

@@ -28,8 +28,8 @@ func0000000000000004:
 
 func0000000000000008:
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	sltiu	a0, a0, 512
+	xori	a1, a1, 1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

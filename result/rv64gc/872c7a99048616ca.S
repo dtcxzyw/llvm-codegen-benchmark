@@ -10,10 +10,10 @@ func0000000000000003:
 func0000000000000002:
 	li	a3, 3
 	slli	a3, a3, 32
+	li	a4, 1
 	and	a2, a2, a3
-	li	a3, 1
-	slli	a3, a3, 32
-	beq	a2, a3, .LBB1_2
+	slli	a4, a4, 32
+	beq	a2, a4, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
 	lui	a1, 4

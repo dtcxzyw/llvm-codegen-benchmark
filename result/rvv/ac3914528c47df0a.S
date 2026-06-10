@@ -1,8 +1,8 @@
 func0000000000000098:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v11
-	li	a0, -31
 	vmsltu.vv	v11, v12, v8
+	li	a0, -31
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8
@@ -11,8 +11,8 @@ func0000000000000098:
 func0000000000000084:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v11
-	li	a0, 48
 	vmsltu.vv	v11, v8, v12
+	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8
@@ -30,8 +30,8 @@ func00000000000000d9:
 func000000000000054c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v11
-	li	a0, 63
 	vmsne.vv	v11, v8, v12
+	li	a0, 63
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgt.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8
@@ -85,8 +85,8 @@ func000000000000058c:
 func0000000000000198:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v11
-	lui	a0, 320757
 	vmsltu.vv	v11, v12, v8
+	lui	a0, 320757
 	addi	a0, a0, 842
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vx	v8, v10, a0

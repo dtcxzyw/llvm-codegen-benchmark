@@ -1,17 +1,17 @@
 func000000000000000f:
+	lui	a3, 128
 	add.uw	a1, a2, a1
-	lui	a2, 128
+	addi	a3, a3, -8
 	slli	a1, a1, 19
-	addi	a2, a2, -8
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000009:
 	slli	a2, a2, 43
-	slli	a0, a0, 42
 	srli	a2, a2, 43
 	or	a1, a1, a2
+	slli	a0, a0, 42
 	slli	a1, a1, 22
 	srli	a0, a0, 42
 	or	a0, a0, a1

@@ -1,11 +1,11 @@
 func0000000000000210:
-	seqz	a1, a0
-	li	a2, -7
-	add	a1, a1, a0
+	li	a1, -7
+	seqz	a2, a0
+	add	a2, a2, a0
+	slli	a2, a2, 3
+	srli	a1, a1, 1
 	srli	a0, a0, 61
-	srli	a2, a2, 1
-	slli	a1, a1, 3
-	sltu	a1, a2, a1
+	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

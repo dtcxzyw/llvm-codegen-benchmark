@@ -1,6 +1,6 @@
 func000000000000003c:
-	slli	a1, a1, 4
 	lui	a2, 3
+	slli	a1, a1, 4
 	addi	a2, a2, 10
 	add	a1, a1, a2
 	slli	a1, a1, 2

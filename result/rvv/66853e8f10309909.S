@@ -10,9 +10,9 @@ func0000000000000188:
 
 func0000000000000081:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, -6
-	vwmulsu.vv	v10, v13, v12
+	vmv.v.i	v12, -6
+	vzext.vf2	v13, v10
+	vwmulsu.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8

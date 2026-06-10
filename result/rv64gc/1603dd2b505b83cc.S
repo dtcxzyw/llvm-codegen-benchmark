@@ -1,17 +1,17 @@
 func000000000000004c:
-	zext.b	a0, a0
 	lui	a3, 128
+	zext.b	a0, a0
 	and	a2, a2, a3
-	addi	a0, a0, -13
 	seqz	a2, a2
+	addi	a0, a0, -13
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000044:
-	zext.b	a0, a0
 	andi	a2, a2, 1
+	zext.b	a0, a0
 	seqz	a2, a2
 	or	a1, a1, a2
 	sltiu	a0, a0, 95
@@ -19,8 +19,8 @@ func0000000000000044:
 	ret
 
 func000000000000004a:
-	slli	a0, a0, 56
 	andi	a2, a2, 1
+	slli	a0, a0, 56
 	seqz	a2, a2
 	srli	a0, a0, 63
 	or	a1, a1, a2

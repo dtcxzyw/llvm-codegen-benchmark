@@ -1,7 +1,7 @@
 func000000000000c204:
+	li	a0, -1600
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v9, v12, 0
-	li	a0, -1600
 	vmsltu.vx	v12, v10, a0
 	vmor.mm	v9, v12, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -12,10 +12,10 @@ func000000000000c204:
 func0000000000004202:
 	li	a0, 26
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v9, v10, 9
-	vmsltu.vx	v10, v12, a0
+	vmsltu.vx	v9, v12, a0
+	vmsleu.vi	v12, v10, 9
 	li	a0, 95
-	vmor.mm	v9, v9, v10
+	vmor.mm	v9, v12, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

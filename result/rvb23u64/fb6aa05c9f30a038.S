@@ -24,10 +24,10 @@ func00000000000001a1:
 
 func00000000000000a1:
 	srliw	a1, a1, 14
+	lui	a2, 32
 	addw	a0, a0, a1
-	lui	a1, 32
-	addi	a1, a1, -2
-	xor	a0, a0, a1
+	addi	a2, a2, -2
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

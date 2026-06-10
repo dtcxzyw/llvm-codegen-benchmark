@@ -1,6 +1,6 @@
 func0000000000000001:
-	slli	a0, a0, 16
 	lui	a1, 1048560
+	slli	a0, a0, 16
 	add	a0, a0, a1
 	sraiw	a0, a0, 16
 	ret
@@ -24,8 +24,8 @@ func0000000000000000:
 	ret
 
 func000000000000000b:
-	slli	a0, a0, 24
 	lui	a1, 1044480
+	slli	a0, a0, 24
 	add	a0, a0, a1
 	sraiw	a0, a0, 24
 	ret

@@ -27,16 +27,16 @@ func000000000000007a:
 	ret
 
 func0000000000000000:
-	slliw	a2, a2, 1
 	sh3add	a0, a0, a1
-	sh3add	a0, a2, a0
+	slliw	a1, a2, 1
+	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
 
 func0000000000000008:
-	slliw	a2, a2, 1
 	sh3add	a0, a0, a1
-	sh3add	a0, a2, a0
+	slliw	a1, a2, 1
+	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
 

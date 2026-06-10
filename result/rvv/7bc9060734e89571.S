@@ -1,7 +1,7 @@
 func0000000000000008:
+	li	a0, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vclz.v	v8, v8
-	li	a0, 31
 	vxor.vx	v8, v8, a0
 	vmv.v.i	v9, 4
 	vsll.vv	v10, v9, v8
@@ -10,9 +10,9 @@ func0000000000000008:
 	ret
 
 func000000000000000f:
+	li	a0, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vclz.v	v8, v8
-	li	a0, 31
 	vxor.vx	v8, v8, a0
 	vmv.v.i	v9, 2
 	vsll.vv	v10, v9, v8
@@ -21,9 +21,9 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
+	li	a0, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vclz.v	v8, v8
-	li	a0, 31
 	vxor.vx	v8, v8, a0
 	vmv.v.i	v9, 1
 	vsll.vv	v10, v9, v8
@@ -32,9 +32,9 @@ func000000000000000c:
 	ret
 
 func000000000000001f:
+	li	a0, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vclz.v	v8, v8
-	li	a0, 31
 	vxor.vx	v8, v8, a0
 	lui	a0, 1
 	vmv.v.x	v9, a0

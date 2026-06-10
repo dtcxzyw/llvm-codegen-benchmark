@@ -4,8 +4,8 @@ func0000000000000020:
 	li	a3, 4
 	bge	a2, a3, .LBB0_4
 .LBB0_2:
+	add	a1, a1, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	ret
 .LBB0_3:
 	sub	a2, a0, a1
@@ -13,7 +13,7 @@ func0000000000000020:
 	blt	a2, a3, .LBB0_2
 .LBB0_4:
 	li	a2, 4
+	add	a1, a1, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	ret
 

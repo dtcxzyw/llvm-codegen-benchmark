@@ -1,34 +1,34 @@
 func00000000000000c7:
-	sext.w	a0, a0
-	lui	a1, 522240
 	fmv.w.x	fa5, zero
-	xor	a0, a0, a1
-	snez	a0, a0
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
+	lui	a2, 522240
+	xor	a0, a0, a2
+	snez	a0, a0
 	andn	a0, a0, a1
 	ret
 
 func0000000000000087:
-	sext.w	a0, a0
 	fli.s	fa5, inf
-	sltiu	a0, a0, 2
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
+	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
 	lui	a1, 278432
 	fmv.w.x	fa5, a1
 	fle.s	a1, fa5, fa0
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000e1:
 	fmv.w.x	fa5, zero
-	addiw	a0, a0, -1
 	feq.s	a1, fa0, fa5
+	addiw	a0, a0, -1
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -36,78 +36,78 @@ func00000000000000e1:
 
 func0000000000000141:
 	fmv.w.x	fa5, zero
-	addiw	a0, a0, -2
 	fle.s	a1, fa0, fa5
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000041:
 	fmv.w.x	fa5, zero
-	addiw	a0, a0, -2
 	flt.s	a1, fa0, fa5
+	addiw	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000014c:
-	sext.w	a0, a0
 	fli.s	fa5, min
 	fle.s	a1, fa0, fa5
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008c:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000a7:
-	sext.w	a0, a0
 	fli.s	fa5, 1.0
-	sgtz	a0, a0
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
+	sgtz	a0, a0
 	andn	a0, a0, a1
 	ret
 
 func00000000000000a8:
-	sext.w	a0, a0
 	lui	a1, 272000
-	sgtz	a0, a0
 	fmv.w.x	fa5, a1
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
+	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	lui	a1, 212992
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
+	sext.w	a0, a0
 	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000001a:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
+	sext.w	a0, a0
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000014:
-	addiw	a0, a0, -2
 	fli.s	fa5, 1.0
-	seqz	a0, a0
 	flt.s	a1, fa5, fa0
+	addiw	a0, a0, -2
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -122,112 +122,112 @@ func00000000000000aa:
 	ret
 
 func0000000000000012:
-	addiw	a0, a0, -3
 	lui	a1, 255181
-	seqz	a0, a0
 	addi	a1, a1, -819
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
+	addiw	a0, a0, -3
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000c4:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008a:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
+	sext.w	a0, a0
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000004c:
-	sext.w	a0, a0
 	fli.s	fa5, 0.5
 	flt.s	a1, fa0, fa5
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000006a:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
-	slti	a0, a0, 1
 	fle.s	a1, fa0, fa5
+	sext.w	a0, a0
+	slti	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000018:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
 	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000ea:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000161:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
+	sext.w	a0, a0
 	xori	a1, a1, 1
 	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
 	fmv.w.x	fa5, zero
-	addiw	a0, a0, -8
 	fle.s	a1, fa5, fa0
+	addiw	a0, a0, -8
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000c8:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000188:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa5, fa0
+	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	andn	a0, a1, a0
 	ret
 
 func000000000000001c:
-	addiw	a0, a0, -4
 	fli.s	fa5, 1.0
-	seqz	a0, a0
 	fle.s	a1, fa5, fa0
+	addiw	a0, a0, -4
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000a4:
-	srliw	a0, a0, 31
 	fmv.w.x	fa5, zero
-	xori	a0, a0, 1
 	flt.s	a1, fa5, fa0
+	srliw	a0, a0, 31
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
+	sext.w	a0, a0
 	czero.nez	a0, a1, a0
 	ret
 

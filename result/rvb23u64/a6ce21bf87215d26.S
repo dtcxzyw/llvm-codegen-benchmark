@@ -1,8 +1,8 @@
 func000000000000000a:
+	li	a3, -5
 	add	a1, a1, a2
-	li	a2, -5
-	srli	a2, a2, 2
-	slt	a2, a2, a1
+	srli	a3, a3, 2
+	slt	a2, a3, a1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

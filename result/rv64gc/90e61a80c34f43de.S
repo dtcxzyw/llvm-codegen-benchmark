@@ -1,6 +1,6 @@
 func00000000000000e1:
-	addi	a1, a1, 1
 	li	a2, 200
+	addi	a1, a1, 1
 	bltu	a1, a2, .LBB0_2
 	li	a1, 200
 .LBB0_2:
@@ -10,8 +10,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000161:
-	addi	a1, a1, 2
 	li	a2, 10
+	addi	a1, a1, 2
 	bltu	a1, a2, .LBB1_2
 	li	a1, 10
 .LBB1_2:
@@ -21,8 +21,8 @@ func0000000000000161:
 	ret
 
 func0000000000000061:
-	addi	a1, a1, -3
 	li	a2, 16
+	addi	a1, a1, -3
 	bltu	a1, a2, .LBB2_2
 	li	a1, 16
 .LBB2_2:
@@ -32,8 +32,8 @@ func0000000000000061:
 	ret
 
 func0000000000000121:
-	addi	a1, a1, -3
 	li	a2, 2
+	addi	a1, a1, -3
 	bltu	a1, a2, .LBB3_2
 	li	a1, 2
 .LBB3_2:

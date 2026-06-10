@@ -17,23 +17,23 @@ func000000000000018c:
 	ret
 
 func0000000000000681:
+	lui	a3, 16
+	addi	a3, a3, -2
 	or	a1, a1, a2
-	lui	a2, 16
+	and	a0, a0, a3
 	srliw	a1, a1, 16
-	addi	a2, a2, -2
+	xor	a0, a0, a3
 	sltiu	a1, a1, 17
-	and	a0, a0, a2
-	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000701:
 	or	a1, a1, a2
-	andi	a0, a0, 192
 	sext.w	a1, a1
-	addi	a0, a0, -128
+	andi	a0, a0, 192
 	srli	a1, a1, 11
+	addi	a0, a0, -128
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

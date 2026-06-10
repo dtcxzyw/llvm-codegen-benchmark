@@ -18,8 +18,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	zext.h	a2, a2
 	lui	a3, 16
+	zext.h	a2, a2
 	addi	a4, a3, -2
 	xor	a2, a2, a4
 	czero.eqz	a1, a1, a2
@@ -53,8 +53,8 @@ func0000000000000081:
 	ret
 
 func0000000000000024:
-	zext.h	a2, a2
 	lui	a3, 7
+	zext.h	a2, a2
 	addi	a3, a3, -512
 	xor	a2, a2, a3
 	czero.eqz	a1, a1, a2

@@ -6,8 +6,8 @@ func0000000000000000:
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -2048
-	or	a0, a0, a2
 	lui	a1, 262144
+	or	a0, a0, a2
 	addi	a1, a1, 64
 	and	a0, a0, a1
 	ret

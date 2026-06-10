@@ -3,8 +3,8 @@ func0000000000000008:
 	addi	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	lui	a0, 1221
 	vsub.vv	v8, v10, v8
+	lui	a0, 1221
 	addi	a0, a0, -1217
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -31,8 +31,8 @@ func000000000000000a:
 	addi	a0, a0, -1536
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	lui	a0, 4883
 	vsub.vv	v8, v10, v8
+	lui	a0, 4883
 	addi	a0, a0, -769
 	vmsgt.vx	v0, v8, a0
 	ret

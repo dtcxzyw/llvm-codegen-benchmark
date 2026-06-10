@@ -11,29 +11,29 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	addw	a0, a0, a1
 	ret
 
 func000000000000000b:
+	lui	a2, 1048573
 	add	a0, a0, a1
-	lui	a1, 1048573
-	addi	a1, a1, -128
+	addi	a1, a2, -128
 	addw	a0, a0, a1
 	ret
 
 func0000000000000018:
-	addiw	a1, a1, 1
 	lui	a2, 1048560
+	addiw	a1, a1, 1
 	addw	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000008:
-	addiw	a1, a1, -2
 	lui	a2, 1048560
+	addiw	a1, a1, -2
 	addw	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -47,9 +47,9 @@ func0000000000000010:
 	ret
 
 func0000000000000009:
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	addw	a0, a0, a1
 	ret
 
@@ -61,9 +61,9 @@ func0000000000000006:
 	ret
 
 func000000000000001e:
-	addiw	a1, a1, 63
 	lui	a2, 4
 	addi	a2, a2, -256
+	addiw	a1, a1, 63
 	addw	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -76,9 +76,9 @@ func0000000000000002:
 	ret
 
 func000000000000001f:
+	lui	a2, 1856
 	add	a0, a0, a1
-	lui	a1, 1856
-	addi	a1, a1, 2
-	addw	a0, a0, a1
+	addi	a2, a2, 2
+	addw	a0, a0, a2
 	ret
 

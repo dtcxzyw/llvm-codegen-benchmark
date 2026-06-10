@@ -5,11 +5,11 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
 	li	a1, 256
+	andi	a0, a0, 1
+	lui	a2, 1048570
 	czero.nez	a0, a1, a0
-	lui	a1, 1048570
-	addi	a1, a1, 192
+	addi	a1, a2, 192
 	or	a0, a0, a1
 	ret
 

@@ -75,8 +75,8 @@ func000000000000010c:
 	ret
 
 func000000000000014a:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	max	a1, a1, zero
 	slt	a0, a1, a0
 	ret
@@ -90,9 +90,9 @@ func000000000000018c:
 	ret
 
 func0000000000000108:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 7
+	sext.w	a0, a0
 	maxu	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

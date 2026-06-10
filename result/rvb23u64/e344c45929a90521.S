@@ -7,8 +7,8 @@ func000000000000002a:
 
 func0000000000000022:
 	addi	a2, a2, 1
-	sraiw	a2, a2, 6
 	sh3add	a0, a1, a0
-	sh3add	a0, a2, a0
+	sraiw	a1, a2, 6
+	sh3add	a0, a1, a0
 	ret
 

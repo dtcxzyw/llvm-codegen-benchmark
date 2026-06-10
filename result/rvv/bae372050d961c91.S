@@ -8,8 +8,8 @@ func0000000000000398:
 func0000000000000298:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 16
 	vsrl.vv	v8, v8, v9
+	lui	a0, 16
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	vmv.v.i	v8, 0

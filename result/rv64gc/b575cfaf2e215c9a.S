@@ -3,8 +3,8 @@ func0000000000000005:
 	bnez	a0, .LBB0_2
 	fmv.s	fa0, fa1
 .LBB0_2:
-	fadd.s	fa5, fa0, fa0
 	lui	a0, 258048
+	fadd.s	fa5, fa0, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -55,8 +55,8 @@ func0000000000000008:
 	bnez	a0, .LBB4_2
 	fmv.s	fa0, fa1
 .LBB4_2:
-	fadd.s	fa5, fa0, fa0
 	lui	a0, 1046528
+	fadd.s	fa5, fa0, fa0
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa5, fa4
 	ret

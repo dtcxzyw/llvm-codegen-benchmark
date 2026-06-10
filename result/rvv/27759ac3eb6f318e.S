@@ -29,20 +29,19 @@ func0000000000000000:
 	ret
 
 .LCPI3_0:
+	.quad	1080863974993432320
+.LCPI3_1:
 	.quad	3472327196715986992
 func000000000000000b:
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	lui	a0, 61440
-	lui	a1, %hi(.LCPI3_0)
-	addi	a0, a0, 15
-	slli	a0, a0, 24
-	addi	a0, a0, 15
-	ld	a1, %lo(.LCPI3_0)(a1)
-	slli	a0, a0, 8
 	vand.vx	v10, v10, a0
+	lui	a0, %hi(.LCPI3_1)
 	vor.vv	v8, v10, v8
-	vor.vx	v8, v8, a1
+	ld	a0, %lo(.LCPI3_1)(a0)
+	vor.vx	v8, v8, a0
 	ret
 
 func000000000000000c:

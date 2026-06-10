@@ -1,7 +1,7 @@
 func000000000000000e:
 	andi	a1, a1, 1
-	andi	a2, a2, 2047
 	li	a3, 1
+	andi	a2, a2, 2047
 	slli	a3, a3, 11
 	sub	a3, a3, a2
 	addi	a1, a1, -1

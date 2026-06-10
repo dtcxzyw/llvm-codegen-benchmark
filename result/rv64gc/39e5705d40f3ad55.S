@@ -1,16 +1,16 @@
 func000000000000003c:
 	andi	a1, a1, -4
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 1324
+	addi	a1, a2, 1324
 	add	a0, a0, a1
 	ret
 
 func000000000000001c:
 	andi	a1, a1, -4
+	lui	a2, 5
 	add	a0, a0, a1
-	lui	a1, 5
-	addi	a1, a1, -1740
+	addi	a1, a2, -1740
 	add	a0, a0, a1
 	ret
 

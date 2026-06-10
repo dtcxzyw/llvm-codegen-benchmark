@@ -1,8 +1,8 @@
 func0000000000000061:
-	li	a2, 16
 	slli	a0, a0, 48
-	sub	a2, a2, a1
+	li	a2, 16
 	seqz	a0, a0
+	sub	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret
@@ -17,9 +17,9 @@ func0000000000000001:
 	ret
 
 func0000000000000064:
+	li	a2, 2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a2, 2
 	bgeu	a0, a2, .LBB2_2
 	li	a0, 1
 	ret

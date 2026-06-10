@@ -14,10 +14,10 @@ func000000000000018c:
 	ret
 
 func000000000000008c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	li	a0, -1
 	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsub.vv	v10, v10, v8
 	vmsltu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, -1
 	vmand.mm	v0, v10, v12

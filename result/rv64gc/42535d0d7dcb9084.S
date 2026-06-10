@@ -9,11 +9,11 @@ func0000000000000002:
 
 func0000000000000003:
 	seqz	a2, a2
+	lui	a3, 1040624
 	addi	a2, a2, -1
+	addi	a3, a3, 32
 	and	a1, a1, a2
-	lui	a2, 1040624
-	addi	a2, a2, 32
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

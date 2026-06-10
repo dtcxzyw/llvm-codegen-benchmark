@@ -1,6 +1,6 @@
 func000000000000048c:
-	zext.h	a0, a0
 	addiw	a1, a1, -4
+	zext.h	a0, a0
 	sltiu	a1, a1, -2
 	czero.eqz	a0, a1, a0
 	ret
@@ -17,8 +17,8 @@ func000000000000008c:
 	ret
 
 func000000000000058c:
-	zext.h	a0, a0
 	addiw	a1, a1, -6
+	zext.h	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
@@ -32,8 +32,8 @@ func0000000000000484:
 	ret
 
 func0000000000000108:
-	zext.h	a0, a0
 	andi	a1, a1, -16
+	zext.h	a0, a0
 	addiw	a1, a1, -16
 	snez	a1, a1
 	sltiu	a0, a0, 16

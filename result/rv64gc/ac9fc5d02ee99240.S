@@ -1,7 +1,7 @@
 func0000000000000043:
 	seqz	a2, a2
-	andi	a0, a0, 1
 	slli	a2, a2, 5
+	andi	a0, a0, 1
 	srl	a1, a1, a2
 	slli	a0, a0, 4
 	srl	a0, a1, a0
@@ -9,11 +9,11 @@ func0000000000000043:
 
 func0000000000000002:
 	li	a3, -1
-	andi	a0, a0, 1
 	srli	a3, a3, 32
 	xor	a2, a2, a3
 	seqz	a2, a2
 	slli	a2, a2, 5
+	andi	a0, a0, 1
 	srl	a1, a1, a2
 	slli	a0, a0, 4
 	srl	a0, a1, a0

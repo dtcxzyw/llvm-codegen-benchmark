@@ -22,8 +22,8 @@ func0000000000000008:
 	ret
 
 func00000000000003c8:
-	addi	a2, a2, 2
 	addi	a1, a1, 2047
+	addi	a2, a2, 2
 	addi	a1, a1, 573
 	sltu	a1, a1, a2
 	or	a0, a0, a1

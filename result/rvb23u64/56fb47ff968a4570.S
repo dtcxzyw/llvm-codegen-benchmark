@@ -1,6 +1,6 @@
 func0000000000000001:
-	slli	a1, a1, 6
 	andi	a0, a0, -2048
+	slli	a1, a1, 6
 	bclri	a0, a0, 11
 	xor	a0, a0, a1
 	seqz	a0, a0

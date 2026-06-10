@@ -2,14 +2,14 @@ func0000000000000015:
 	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, -1022
-	sub	a1, a1, a0
 	add	a1, a1, a2
+	sub	a1, a1, a0
 	addiw	a0, a1, -967
 	ret
 .LBB0_2:
 	li	a2, -1536
-	sub	a1, a1, a0
 	add	a1, a1, a2
+	sub	a1, a1, a0
 	addiw	a0, a1, -967
 	ret
 

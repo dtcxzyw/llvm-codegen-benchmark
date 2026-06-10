@@ -1,6 +1,6 @@
 func0000000000000902:
-	zext.b	a0, a0
 	addiw	a2, a2, -48
+	zext.b	a0, a0
 	sltiu	a2, a2, 10
 	addi	a0, a0, -95
 	or	a1, a1, a2
@@ -9,8 +9,8 @@ func0000000000000902:
 	ret
 
 func0000000000000908:
-	zext.b	a0, a0
 	addiw	a2, a2, -48
+	zext.b	a0, a0
 	sltiu	a2, a2, 10
 	or	a1, a1, a2
 	sltiu	a0, a0, 2

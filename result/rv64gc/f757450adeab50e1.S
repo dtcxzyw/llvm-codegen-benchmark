@@ -71,8 +71,8 @@ func0000000000000014:
 	ret
 
 func0000000000000029:
-	sext.w	a1, a1
 	lui	a2, 4
+	sext.w	a1, a1
 	addi	a2, a2, 1
 	bltu	a1, a2, .LBB9_2
 	li	a1, 10

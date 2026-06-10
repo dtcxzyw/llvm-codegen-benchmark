@@ -10,8 +10,8 @@ func00000000000000cc:
 func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v9
-	li	a0, 32
 	vmseq.vv	v9, v10, v12
+	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -128,8 +128,8 @@ func000000000000010a:
 func0000000000000081:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v9
-	li	a0, 176
 	vmsltu.vv	v9, v10, v12
+	li	a0, 176
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -138,8 +138,8 @@ func0000000000000081:
 func0000000000000144:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v9
-	lui	a0, 16
 	vmslt.vv	v9, v12, v10
+	lui	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

@@ -1,6 +1,6 @@
 func0000000000000630:
-	zext.b	a1, a1
 	li	a3, 1
+	zext.b	a1, a1
 	slli	a3, a3, 39
 	and	a2, a2, a3
 	xori	a1, a1, 12

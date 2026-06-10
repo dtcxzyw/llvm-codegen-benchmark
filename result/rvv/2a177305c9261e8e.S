@@ -1,8 +1,8 @@
 func0000000000000021:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v12, v0
 	lui	a0, 131072
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -12,10 +12,10 @@ func0000000000000021:
 	ret
 
 func0000000000000061:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v12, v0
 	lui	a0, 512
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0

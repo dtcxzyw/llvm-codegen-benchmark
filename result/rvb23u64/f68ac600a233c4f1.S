@@ -7,9 +7,9 @@ func0000000000000035:
 	ret
 
 func000000000000003f:
-	sext.w	a1, a1
 	li	a2, -9
 	srli	a2, a2, 3
+	sext.w	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	slli	a0, a0, 2
@@ -50,8 +50,8 @@ func0000000000000025:
 	ret
 
 func000000000000001d:
-	slli	a1, a1, 32
 	slli	a0, a0, 56
+	slli	a1, a1, 32
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret

@@ -14,9 +14,9 @@ func0000000000000601:
 
 func0000000000000004:
 	slli	a1, a1, 2
+	lui	a2, 114
 	sub	a0, a0, a1
-	lui	a1, 114
-	addi	a1, a1, 504
+	addi	a1, a2, 504
 	add	a0, a0, a1
 	srliw	a0, a0, 18
 	seqz	a0, a0

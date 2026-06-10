@@ -1,24 +1,24 @@
 func0000000000000074:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
 	lui	a0, 160
 	addi	a0, a0, -1177
 	vmul.vx	v8, v8, a0
+	vsrl.vi	v10, v12, 21
 	lui	a0, 115
 	addi	a0, a0, -744
-	vmacc.vx	v8, a0, v12
+	vmacc.vx	v8, a0, v10
 	ret
 
 func0000000000000070:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v12, 21
 	vadd.vv	v8, v8, v10
 	lui	a0, 1048332
 	addi	a0, a0, 1619
 	vmul.vx	v8, v8, a0
+	vsrl.vi	v10, v12, 21
 	lui	a0, 160
 	addi	a0, a0, -1177
-	vmacc.vx	v8, a0, v12
+	vmacc.vx	v8, a0, v10
 	ret
 

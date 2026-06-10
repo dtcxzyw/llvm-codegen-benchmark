@@ -11,19 +11,18 @@ func0000000000000001:
 	sltu	a0, a0, a1
 	ret
 
+.LCPI1_0:
+	.quad	2635249153617166336
 func0000000000000018:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	slli	a0, a1, 32
-	lui	a2, 293
-	srli	a0, a0, 32
-	addi	a2, a2, -1755
-	slli	a2, a2, 12
-	addi	a2, a2, -1755
-	slli	a2, a2, 29
-	mulhu	a0, a0, a2
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
+	slli	a2, a1, 32
+	srli	a2, a2, 32
+	mulhu	a0, a2, a0
 	slli	a2, a0, 3
 	add	a0, a0, a1
 	subw	a0, a0, a2

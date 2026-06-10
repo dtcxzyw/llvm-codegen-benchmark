@@ -1,6 +1,6 @@
 func00000000000001f4:
-	srli	a0, a0, 6
 	li	a2, 59
+	srli	a0, a0, 6
 	bltu	a0, a2, .LBB0_2
 	li	a0, 320
 	add	a0, a0, a1

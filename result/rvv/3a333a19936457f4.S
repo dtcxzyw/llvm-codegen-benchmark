@@ -90,9 +90,9 @@ func000000000000000a:
 	ret
 
 func0000000000000081:
+	li	a0, -100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, -100
 	vmul.vx	v8, v8, a0
 	vrsub.vi	v10, v10, 0
 	vmseq.vv	v0, v8, v10

@@ -1,7 +1,7 @@
 func0000000000000028:
-	srliw	a1, a0, 13
-	li	a2, 2
-	bltu	a2, a1, .LBB0_2
+	li	a1, 2
+	srliw	a2, a0, 13
+	bltu	a1, a2, .LBB0_2
 	li	a0, 1
 	ret
 .LBB0_2:
@@ -11,8 +11,8 @@ func0000000000000028:
 
 func0000000000000068:
 	mv	a1, a0
-	sext.w	a2, a0
 	li	a0, 1
+	sext.w	a2, a1
 	bgeu	a0, a2, .LBB1_2
 	srliw	a0, a1, 1
 	addiw	a0, a0, 3

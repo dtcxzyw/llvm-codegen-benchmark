@@ -7,9 +7,9 @@ func0000000000000005:
 	lui	a0, 16384
 	addi	a0, a0, -1
 	vmerge.vxm	v8, v8, a0, v0
+	vmv1r.v	v0, v10
 	lui	a0, 128
 	addi	a0, a0, -1
-	vmv1r.v	v0, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

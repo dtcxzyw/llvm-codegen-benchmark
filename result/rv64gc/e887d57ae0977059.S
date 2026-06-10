@@ -42,9 +42,9 @@ func000000000000002b:
 func0000000000000008:
 	sext.w	a1, a1
 	slli	a1, a1, 2
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -132
+	addi	a1, a2, -132
 	add	a0, a0, a1
 	ret
 
@@ -99,9 +99,9 @@ func0000000000000020:
 func0000000000000003:
 	sext.w	a1, a1
 	slli	a1, a1, 4
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 792
+	addi	a1, a2, 792
 	add	a0, a0, a1
 	ret
 

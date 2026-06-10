@@ -1,8 +1,8 @@
 func0000000000000014:
-	fli.s	fa5, 1.0
 	lui	a1, 178380
-	fsub.s	fa5, fa5, fa0
+	fli.s	fa5, 1.0
 	addi	a1, a1, -820
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	or	a0, a0, a1

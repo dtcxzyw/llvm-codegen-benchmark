@@ -1,8 +1,8 @@
 func00000000000002c8:
 	sub	a0, a0, a1
-	li	a1, -31
 	srli	a0, a0, 1
 	addi	a0, a0, 15
+	li	a1, -31
 	andi	a0, a0, -8
 	srli	a1, a1, 1
 	sltu	a0, a1, a0

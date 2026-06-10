@@ -11,8 +11,8 @@ func0000000000000104:
 func00000000000000c6:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	slti	a2, a2, 1
 	slti	a1, a1, 1
+	slti	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

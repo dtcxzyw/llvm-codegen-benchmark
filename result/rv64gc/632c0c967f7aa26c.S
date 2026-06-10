@@ -22,9 +22,9 @@ func0000000000000101:
 	ret
 
 func0000000000000024:
-	zext.b	a1, a1
 	zext.b	a3, a2
 	li	a4, 86
+	zext.b	a1, a1
 	lui	a2, 7
 	beq	a3, a4, .LBB2_2
 	addi	a2, a2, -1941

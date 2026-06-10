@@ -7,10 +7,10 @@ func000000000000007a:
 
 func0000000000000040:
 	sext.w	a2, a2
+	lui	a3, 313
 	sh2add	a1, a2, a1
-	lui	a2, 313
-	add	a0, a0, a1
-	addi	a1, a2, -768
+	addi	a2, a3, -768
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

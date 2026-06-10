@@ -33,11 +33,11 @@ func00000000000002a6:
 	ret
 
 func0000000000000481:
-	slli	a1, a1, 56
 	li	a2, -10
+	slli	a1, a1, 56
+	mulw	a0, a0, a2
 	srai	a1, a1, 56
 	addi	a1, a1, -48
-	mulw	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

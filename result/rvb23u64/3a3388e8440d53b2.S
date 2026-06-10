@@ -1,6 +1,6 @@
 func00000000000000ff:
-	zext.b	a1, a1
 	li	a2, 150
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	sh1add	a2, a0, a0
 	slli	a0, a0, 5
@@ -10,8 +10,8 @@ func00000000000000ff:
 	ret
 
 func00000000000001f5:
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
+	zext.b	a1, a1
 	sh2add	a1, a1, a1
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
@@ -24,9 +24,9 @@ func00000000000001f5:
 func00000000000000f5:
 	zext.b	a1, a1
 	li	a2, 1260
+	lui	a3, 3
 	mul	a1, a1, a2
-	lui	a2, 3
-	addi	a2, a2, 312
+	addi	a2, a3, 312
 	mul	a0, a0, a2
 	lui	a2, 1048164
 	addi	a2, a2, 382
@@ -35,35 +35,35 @@ func00000000000000f5:
 	ret
 
 func0000000000000000:
-	zext.b	a1, a1
 	lui	a2, 65536
 	addi	a2, a2, -1357
+	zext.b	a1, a1
+	addi	a3, a2, 666
 	mul	a1, a1, a2
-	addi	a2, a2, 666
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addiw	a0, a0, 1
 	ret
 
 func0000000000000030:
-	lui	a2, 28770
-	slli	a1, a1, 56
-	addi	a2, a2, 1024
-	mulhu	a1, a1, a2
 	lui	a2, 65462
 	addi	a2, a2, -2031
 	mul	a0, a0, a2
-	add	a0, a0, a1
-	lui	a1, 32896
+	lui	a2, 28770
+	addi	a2, a2, 1024
+	slli	a1, a1, 56
+	mulhu	a1, a1, a2
+	lui	a2, 32896
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000001ff:
-	zext.b	a1, a1
 	li	a2, 1260
-	sh2add	a1, a1, a1
 	mul	a0, a0, a2
+	zext.b	a1, a1
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	lui	a1, 16
 	addw	a0, a0, a1

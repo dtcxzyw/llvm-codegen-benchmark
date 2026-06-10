@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	addi	a1, a1, -11
 	li	a2, 10
+	addi	a1, a1, -11
 	minu	a0, a0, a2
 	maxu	a0, a0, a1
 	ret

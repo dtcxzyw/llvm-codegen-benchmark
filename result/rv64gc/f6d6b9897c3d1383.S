@@ -1,7 +1,7 @@
 func0000000000000003:
 	zext.b	a1, a1
-	lui	a3, 16384
 	seqz	a1, a1
+	lui	a3, 16384
 	addi	a1, a1, -1
 	and	a2, a2, a3
 	and	a1, a1, a2

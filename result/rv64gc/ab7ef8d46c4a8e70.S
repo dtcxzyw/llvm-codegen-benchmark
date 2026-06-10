@@ -5,10 +5,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	sext.w	a0, a0
 	lui	a1, 393217
-	slli	a0, a0, 22
+	sext.w	a0, a0
 	slli	a1, a1, 1
+	slli	a0, a0, 22
 	addi	a1, a1, 5
 	or	a0, a0, a1
 	ret

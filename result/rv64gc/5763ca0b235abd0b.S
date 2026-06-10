@@ -38,9 +38,9 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
+	li	a3, 1
 	sub	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 11
+	slli	a2, a3, 11
 	bltu	a1, a2, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
@@ -48,9 +48,9 @@ func0000000000000024:
 	ret
 
 func00000000000000ac:
+	li	a3, 1
 	sub	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 11
+	slli	a2, a3, 11
 	bltu	a1, a2, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
@@ -87,9 +87,9 @@ func0000000000000004:
 	ret
 
 func0000000000000054:
+	lui	a3, 524288
 	sub	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1
+	addiw	a2, a3, -1
 	bltu	a1, a2, .LBB9_2
 	mv	a1, a2
 .LBB9_2:

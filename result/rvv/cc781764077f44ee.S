@@ -1,7 +1,7 @@
 func0000000000006102:
+	li	a0, 32
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vi	v9, v8, 9
-	li	a0, 32
 	vmsltu.vx	v10, v8, a0
 	li	a0, 127
 	vmand.mm	v9, v10, v9
@@ -10,9 +10,9 @@ func0000000000006102:
 	ret
 
 func0000000000006110:
+	li	a0, 32
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vi	v9, v8, 9
-	li	a0, 32
 	vmsltu.vx	v10, v8, a0
 	li	a0, 126
 	vmand.mm	v9, v10, v9

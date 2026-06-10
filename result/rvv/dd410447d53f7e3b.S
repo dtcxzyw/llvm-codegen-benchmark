@@ -60,8 +60,8 @@ func0000000000000067:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 9
 	vsll.vi	v8, v8, 2
-	lui	a0, 11
 	vadd.vv	v8, v8, v10
+	lui	a0, 11
 	addi	a0, a0, 112
 	vadd.vx	v8, v8, a0
 	ret

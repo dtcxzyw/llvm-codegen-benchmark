@@ -1,8 +1,8 @@
 func0000000000000021:
 	sext.w	a0, a0
 	srliw	a1, a1, 31
-	slli	a1, a1, 31
 	binvi	a0, a0, 13
+	slli	a1, a1, 31
 	binvi	a0, a0, 15
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -17,8 +17,8 @@ func000000000000014c:
 
 func000000000000030c:
 	sext.w	a0, a0
-	andi	a1, a1, 7
 	sltiu	a0, a0, 2
+	andi	a1, a1, 7
 	xori	a0, a0, 1
 	czero.eqz	a0, a0, a1
 	ret

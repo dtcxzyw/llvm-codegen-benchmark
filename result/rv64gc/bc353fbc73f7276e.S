@@ -26,9 +26,9 @@ func0000000000000003:
 func0000000000000000:
 	srliw	a2, a2, 16
 	slliw	a1, a1, 8
+	lui	a3, 1044480
 	or	a0, a0, a2
-	lui	a2, 1044480
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

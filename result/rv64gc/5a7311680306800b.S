@@ -1,8 +1,8 @@
 func000000000000000c:
-	addi	a1, a1, -10
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -10
+	addi	a1, a1, -10
 	addi	a2, a2, 9
 	and	a1, a1, a2
 	sll	a0, a0, a1

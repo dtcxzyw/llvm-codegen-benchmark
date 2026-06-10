@@ -19,8 +19,8 @@ func0000000000000077:
 	li	a2, 94
 	mul	a1, a1, a2
 	lui	a2, 1048572
-	add	a0, a0, a1
-	addi	a1, a2, 1089
+	addi	a2, a2, 1089
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -36,17 +36,17 @@ func000000000000000c:
 	li	a2, 365
 	mul	a1, a1, a2
 	lui	a2, 420
-	add	a0, a0, a1
-	addi	a1, a2, -423
+	addi	a2, a2, -423
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000001f:
 	sh2add	a2, a1, a1
+	lui	a3, 1048553
 	sh2add	a1, a2, a1
-	lui	a2, 1048553
-	add	a0, a0, a1
-	addi	a1, a2, -1633
+	addi	a2, a3, -1633
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

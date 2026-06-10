@@ -3,9 +3,9 @@ func0000000000000444:
 	bnez	a0, .LBB0_2
 	fmv.d	fa1, fa2
 .LBB0_2:
-	fmin.d	fa5, fa0, fa1
 	lui	a0, 66109
 	slli	a0, a0, 34
+	fmin.d	fa5, fa0, fa1
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
 	ret

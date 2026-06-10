@@ -10,9 +10,9 @@ func0000000000000000:
 func0000000000000005:
 	sext.w	a2, a2
 	sext.w	a1, a1
+	lui	a3, 181
 	min	a1, a1, a2
-	lui	a2, 181
-	addi	a2, a2, 81
+	addi	a2, a3, 81
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

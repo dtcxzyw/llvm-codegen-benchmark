@@ -1,10 +1,10 @@
 func0000000000000004:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	flt.s	a0, fa0, fa5
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa0
 	beqz	a0, .LBB0_2
-	fmul.s	fa0, fa1, fa2
+	fmul.s	fa5, fa1, fa2
 .LBB0_2:
+	fmv.s	fa0, fa5
 	ret
 
 func0000000000000007:

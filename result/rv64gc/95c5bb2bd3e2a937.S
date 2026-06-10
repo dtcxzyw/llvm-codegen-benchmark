@@ -56,8 +56,9 @@ func00000000000000c1:
 	ret
 
 func0000000000000024:
-	sext.w	a2, a0
+	mv	a2, a0
 	li	a0, 3
+	sext.w	a2, a2
 	bgeu	a2, a0, .LBB4_2
 	addiw	a1, a1, -2
 	seqz	a0, a1
@@ -83,9 +84,9 @@ func0000000000000141:
 
 func0000000000000028:
 	sext.w	a1, a1
-	lui	a2, 4
 	srliw	a0, a0, 12
 	seqz	a1, a1
+	lui	a2, 4
 	seqz	a0, a0
 	or	a1, a1, a2
 	addi	a0, a0, -1

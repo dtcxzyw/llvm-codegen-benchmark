@@ -1,7 +1,7 @@
 func000000000000002c:
 	li	a3, 8
-	zext.b	a2, a2
 	sub	a3, a3, a1
+	zext.b	a2, a2
 	srlw	a2, a2, a3
 	sllw	a0, a0, a1
 	or	a0, a0, a2
@@ -9,8 +9,8 @@ func000000000000002c:
 
 func000000000000006c:
 	li	a3, 8
-	zext.b	a2, a2
 	sub	a3, a3, a1
+	zext.b	a2, a2
 	srlw	a2, a2, a3
 	sllw	a0, a0, a1
 	or	a0, a0, a2
@@ -18,8 +18,8 @@ func000000000000006c:
 
 func0000000000000060:
 	li	a3, 8
-	zext.b	a2, a2
 	sub	a3, a3, a1
+	zext.b	a2, a2
 	srlw	a2, a2, a3
 	sllw	a0, a0, a1
 	or	a0, a0, a2
@@ -27,8 +27,8 @@ func0000000000000060:
 
 func0000000000000020:
 	li	a3, 8
-	zext.b	a2, a2
 	sub	a3, a3, a1
+	zext.b	a2, a2
 	srlw	a2, a2, a3
 	sllw	a0, a0, a1
 	or	a0, a0, a2

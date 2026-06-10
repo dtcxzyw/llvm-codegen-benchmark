@@ -6,9 +6,9 @@ func0000000000000000:
 	mulh	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 7
+	lui	a2, 596523
 	addw	a0, a0, a1
-	lui	a1, 596523
-	addi	a1, a1, 965
+	addi	a1, a2, 965
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -18,8 +18,8 @@ func0000000000000000:
 	ret
 
 func0000000000000008:
-	srli	a0, a0, 3
 	lui	a1, 423892
+	srli	a0, a0, 3
 	addi	a1, a1, 1743
 	mul	a0, a0, a1
 	sraiw	a1, a0, 31

@@ -4,9 +4,9 @@ func0000000000000208:
 	vmseq.vx	v10, v8, a0
 	li	a0, -48
 	vadd.vx	v8, v8, a0
-	vmor.mm	v10, v10, v0
 	vmsleu.vi	v11, v8, 9
-	vmor.mm	v0, v11, v10
+	vmor.mm	v8, v10, v0
+	vmor.mm	v0, v11, v8
 	ret
 
 func0000000000000288:
@@ -15,9 +15,9 @@ func0000000000000288:
 	vmseq.vx	v10, v8, a0
 	li	a0, -48
 	vadd.vx	v8, v8, a0
-	vmor.mm	v10, v10, v0
 	vmsleu.vi	v11, v8, 9
-	vmor.mm	v0, v11, v10
+	vmor.mm	v8, v10, v0
+	vmor.mm	v0, v11, v8
 	ret
 
 func0000000000000090:

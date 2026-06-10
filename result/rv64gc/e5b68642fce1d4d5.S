@@ -1,10 +1,10 @@
 func000000000000001f:
 	zext.b	a2, a2
 	or	a0, a0, a1
-	lui	a1, 16
 	slli	a2, a2, 8
-	addi	a1, a1, -256
+	lui	a1, 16
 	or	a0, a0, a2
+	addi	a1, a1, -256
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
 	and	a2, a2, a1
@@ -19,10 +19,10 @@ func000000000000001f:
 func0000000000000018:
 	zext.b	a2, a2
 	or	a0, a0, a1
-	lui	a1, 16
 	slli	a2, a2, 4
-	addi	a1, a1, -256
+	lui	a1, 16
 	or	a0, a0, a2
+	addi	a1, a1, -256
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
 	and	a2, a2, a1
@@ -37,10 +37,10 @@ func0000000000000018:
 func000000000000001e:
 	zext.b	a2, a2
 	or	a0, a0, a1
-	lui	a1, 16
 	slli	a2, a2, 8
-	addi	a1, a1, -256
+	lui	a1, 16
 	or	a0, a0, a2
+	addi	a1, a1, -256
 	srli	a2, a0, 8
 	srliw	a3, a0, 24
 	and	a2, a2, a1

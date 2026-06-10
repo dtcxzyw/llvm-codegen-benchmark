@@ -5,9 +5,9 @@ func0000000000000003:
 	ret
 
 func0000000000000011:
+	li	a1, 760
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 760
 	bltu	a1, a0, .LBB1_2
 	li	a0, 289
 	ret
@@ -16,9 +16,9 @@ func0000000000000011:
 	ret
 
 func0000000000000009:
+	li	a1, 256
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 256
 	bltu	a0, a1, .LBB2_2
 	li	a0, 12
 	ret

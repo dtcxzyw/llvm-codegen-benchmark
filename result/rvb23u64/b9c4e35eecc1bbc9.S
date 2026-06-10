@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	addiw	a2, a2, -1
 	max	a1, a1, zero
 	czero.nez	a2, a2, a0
@@ -9,8 +9,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	addiw	a2, a2, -2
 	max	a1, a1, zero
 	czero.nez	a2, a2, a0

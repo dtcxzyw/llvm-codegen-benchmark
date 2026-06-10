@@ -14,8 +14,8 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, -8
 	lui	a2, 2
+	andi	a1, a1, -8
 	addi	a2, a2, -9
 	sltu	a1, a1, a2
 	lui	a2, 8

@@ -1,7 +1,7 @@
 func000000000000003b:
+	lui	a3, 209715
 	sub	a1, a1, a2
-	lui	a2, 209715
-	addi	a2, a2, 819
+	addi	a2, a3, 819
 	and	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a1, a0, 4
@@ -9,9 +9,9 @@ func000000000000003b:
 	ret
 
 func000000000000001b:
+	lui	a3, 209715
 	sub	a1, a1, a2
-	lui	a2, 209715
-	addi	a2, a2, 819
+	addi	a2, a3, 819
 	and	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a1, a0, 4

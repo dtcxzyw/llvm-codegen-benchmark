@@ -8,9 +8,9 @@ func0000000000000302:
 	ret
 
 func0000000000000042:
-	sext.w	a0, a0
 	lui	a2, 524288
 	addiw	a2, a2, -1
+	sext.w	a0, a0
 	and	a1, a1, a2
 	xor	a2, a2, a1
 	xor	a0, a0, a1
@@ -36,11 +36,11 @@ func0000000000000628:
 	ret
 
 func0000000000000502:
-	sext.w	a0, a0
 	andi	a1, a1, 3
+	sext.w	a0, a0
+	addi	a2, a1, -3
 	sltu	a0, a1, a0
-	addi	a1, a1, -3
-	seqz	a1, a1
+	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 

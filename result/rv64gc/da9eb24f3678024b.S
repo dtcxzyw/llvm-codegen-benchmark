@@ -15,10 +15,10 @@ func00000000000000cc:
 	ret
 
 func00000000000000c6:
-	snez	a0, a0
 	lui	a1, 522240
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -39,9 +39,9 @@ func00000000000000ac:
 	ret
 
 func00000000000000c4:
-	snez	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

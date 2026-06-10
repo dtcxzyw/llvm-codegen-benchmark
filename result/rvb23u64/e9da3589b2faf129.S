@@ -11,9 +11,9 @@ func0000000000000019:
 	ret
 
 func000000000000001b:
+	li	a1, -1
 	bset	a0, zero, a0
 	srli	a0, a0, 1
-	li	a1, -1
 	add.uw	a0, a1, a0
 	ret
 

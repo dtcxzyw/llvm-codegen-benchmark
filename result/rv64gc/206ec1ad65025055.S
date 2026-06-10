@@ -1,10 +1,10 @@
 func0000000000000114:
-	addiw	a1, a1, -384
 	li	a2, 1
-	sltiu	a1, a1, -385
 	slli	a2, a2, 35
 	addi	a2, a2, -8
+	addiw	a1, a1, -384
 	and	a0, a0, a2
+	sltiu	a1, a1, -385
 	sltiu	a0, a0, 312
 	or	a0, a0, a1
 	ret

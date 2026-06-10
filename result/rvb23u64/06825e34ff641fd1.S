@@ -6,10 +6,10 @@ func00000000000000ab:
 	ret
 
 func0000000000000187:
-	sext.w	a2, a1
-	li	a3, 4
-	sub	a3, a3, a1
-	czero.eqz	a1, a3, a2
+	li	a2, 4
+	sext.w	a3, a1
+	sub	a2, a2, a1
+	czero.eqz	a1, a2, a3
 	zext.h	a0, a0
 	addw	a0, a0, a1
 	ret

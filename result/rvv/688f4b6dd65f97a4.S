@@ -7,11 +7,11 @@ func00000000000008ca:
 	ret
 
 func0000000000000185:
+	li	a0, -1
+	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -1
 	vmsleu.vv	v12, v8, v10
-	srli	a0, a0, 32
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
@@ -33,11 +33,11 @@ func000000000000094a:
 	ret
 
 func00000000000000cc:
+	li	a0, -1
+	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -1
 	vmslt.vv	v12, v8, v10
-	srli	a0, a0, 32
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

@@ -16,8 +16,8 @@ func0000000000000088:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	srli	a2, a0, 8
-	sltiu	a0, a0, 256
 	addi	a2, a2, -31
+	sltiu	a0, a0, 256
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

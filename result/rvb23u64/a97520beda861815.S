@@ -1,14 +1,14 @@
 func000000000000000b:
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	seqz	a1, a1
 	sh1add	a0, a0, a0
+	seqz	a1, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000053:
-	sext.w	a1, a1
 	lui	a2, 24
+	sext.w	a1, a1
 	addi	a2, a2, 1695
 	slt	a1, a2, a1
 	andi	a0, a0, 1

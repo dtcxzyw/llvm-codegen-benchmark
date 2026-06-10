@@ -17,12 +17,13 @@ func0000000000000011:
 	ret
 
 func0000000000000005:
-	vsetivli	zero, 4, e8, mf4, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v10, v0
+	vmv.v.i	v11, 1
+	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vi	v0, v9, 6
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.i	v9, 1
-	vmerge.vim	v9, v9, 4, v0
+	vmerge.vim	v9, v11, 4, v0
 	vadd.vv	v9, v8, v9
 	vmv1r.v	v0, v10
 	vmerge.vvm	v10, v9, v8, v0

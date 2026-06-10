@@ -10,12 +10,12 @@ func000000000000020c:
 
 func0000000000000230:
 	li	a1, -1
-	srli	a2, a0, 61
 	srli	a1, a1, 3
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	seqz	a0, a0
-	snez	a1, a2
+	and	a2, a0, a1
+	xor	a1, a1, a2
+	srli	a0, a0, 61
+	seqz	a1, a1
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 

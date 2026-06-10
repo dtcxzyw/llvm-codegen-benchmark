@@ -1,16 +1,15 @@
+.LCPI0_0:
+	.quad	216180478695505931
 func00000000000000f0:
-	slli	a2, a2, 16
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	or	a0, a0, a1
-	lui	a1, 196615
+	slli	a2, a2, 16
 	or	a0, a0, a2
-	li	a2, 53
-	slli	a1, a1, 12
-	addi	a1, a1, 5
-	slli	a1, a1, 16
-	addi	a1, a1, 11
-	mul	a0, a0, a1
-	slli	a2, a2, 56
-	add	a0, a0, a2
+	mul	a0, a0, a3
+	li	a1, 53
+	slli	a1, a1, 56
+	add	a0, a0, a1
 	ret
 
 func00000000000000fd:
@@ -18,11 +17,11 @@ func00000000000000fd:
 	or	a0, a0, a1
 	lui	a1, 21
 	or	a0, a0, a2
-	lui	a2, 989319
 	addi	a1, a1, 384
-	addi	a2, a2, -503
 	mul	a0, a0, a1
-	slli	a2, a2, 8
-	add	a0, a0, a2
+	lui	a1, 989319
+	addi	a1, a1, -503
+	slli	a1, a1, 8
+	add	a0, a0, a1
 	ret
 

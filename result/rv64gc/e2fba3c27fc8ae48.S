@@ -1,8 +1,8 @@
 func0000000000000041:
 	sext.w	a0, a0
 	srliw	a1, a1, 1
-	addiw	a1, a1, 1
 	seqz	a0, a0
+	addiw	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func0000000000000021:
 	ret
 
 func0000000000000078:
-	sext.w	a0, a0
 	li	a2, 55
+	sext.w	a0, a0
 	bgeu	a2, a0, .LBB2_2
 	li	a0, 8
 	ret

@@ -13,15 +13,15 @@ func0000000000000010:
 
 func000000000000007f:
 	mulw	a2, a2, a1
-	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func00000000000000ff:
 	mulw	a2, a1, a2
-	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

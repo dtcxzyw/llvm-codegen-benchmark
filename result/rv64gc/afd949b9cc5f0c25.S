@@ -5,8 +5,8 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	slli	a0, a0, 40
 	li	a1, -1
+	slli	a0, a0, 40
 	slli	a1, a1, 63
 	or	a0, a0, a1
 	ret

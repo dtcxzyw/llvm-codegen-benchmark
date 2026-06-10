@@ -1,8 +1,8 @@
 func0000000000000314:
-	sext.w	a2, a0
-	lui	a3, 4096
+	lui	a2, 4096
+	sext.w	a3, a0
 	srliw	a1, a0, 16
-	blt	a2, a3, .LBB0_2
+	blt	a3, a2, .LBB0_2
 	li	a0, 8
 	beqz	a1, .LBB0_3
 	j	.LBB0_4
@@ -15,9 +15,9 @@ func0000000000000314:
 	ret
 
 func0000000000000081:
+	li	a3, 2
 	sext.w	a1, a0
 	li	a2, 1
-	li	a3, 2
 	li	a0, 1
 	bne	a1, a3, .LBB1_3
 	beq	a1, a2, .LBB1_4

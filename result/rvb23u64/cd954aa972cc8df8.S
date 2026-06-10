@@ -34,10 +34,10 @@ func0000000000000005:
 	ret
 
 func0000000000000018:
-	srli	a1, a1, 4
 	lui	a2, 675749
 	addi	a2, a2, -91
 	slli	a3, a2, 36
+	srli	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	add	a0, a0, a1

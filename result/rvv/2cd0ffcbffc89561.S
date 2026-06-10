@@ -1,7 +1,7 @@
 func0000000000000018:
-	lui	a0, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
+	lui	a0, 2
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vor.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0

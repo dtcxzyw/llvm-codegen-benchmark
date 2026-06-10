@@ -8,10 +8,10 @@ func000000000000000f:
 
 func0000000000000000:
 	lui	a2, 240
-	lui	a3, 197379
 	addi	a2, a2, 15
-	addi	a3, a3, 48
+	lui	a3, 197379
 	slli	a4, a2, 32
+	addi	a3, a3, 48
 	add	a2, a2, a4
 	slli	a4, a3, 32
 	add	a3, a3, a4

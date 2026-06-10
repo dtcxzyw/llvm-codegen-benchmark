@@ -1,13 +1,13 @@
 func0000000000000009:
-	sext.w	a1, a0
+	lui	a1, 1048560
+	addi	a1, a1, 159
 	lui	a2, 2
+	addw	a1, a1, a0
+	sext.w	a0, a0
 	addi	a2, a2, 530
-	xor	a1, a1, a2
-	lui	a2, 1048560
-	addi	a2, a2, 159
-	addw	a0, a0, a2
-	addi	a0, a0, 84
-	czero.eqz	a0, a0, a1
+	xor	a0, a0, a2
+	addi	a1, a1, 84
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, -84
 	ret
 
@@ -28,10 +28,10 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
-	addiw	a1, a0, -3
-	addiw	a0, a0, 1
-	addi	a0, a0, -5
-	czero.eqz	a0, a0, a1
+	addiw	a1, a0, 1
+	addiw	a0, a0, -3
+	addi	a1, a1, -5
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, 5
 	ret
 

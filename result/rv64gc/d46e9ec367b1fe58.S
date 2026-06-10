@@ -1,7 +1,7 @@
 func0000000000000021:
 	or	a1, a1, a2
-	lui	a2, 2
 	slli	a1, a1, 48
+	lui	a2, 2
 	srli	a1, a1, 48
 	addi	a2, a2, 2
 	xor	a1, a1, a2

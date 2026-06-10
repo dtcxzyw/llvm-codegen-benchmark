@@ -20,14 +20,14 @@ func0000000000000026:
 	ret
 
 func0000000000000004:
-	bseti	a0, zero, 11
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vor.vx	v10, v10, a0
 	lui	a0, 2
 	addi	a0, a0, 1808
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
+	bseti	a0, zero, 11
+	vor.vx	v8, v10, a0
 	li	a0, 3
 	slli	a0, a0, 11
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

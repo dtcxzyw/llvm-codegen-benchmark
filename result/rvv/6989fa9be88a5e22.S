@@ -15,9 +15,9 @@ func0000000000000684:
 	ret
 
 func0000000000000484:
+	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
-	bseti	a0, zero, 11
 	vmsltu.vv	v14, v8, v12
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v14, v8

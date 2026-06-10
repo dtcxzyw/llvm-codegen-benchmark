@@ -1,6 +1,6 @@
 func0000000000000065:
-	andi	a0, a0, 1
 	sh2add	a2, a2, a2
+	andi	a0, a0, 1
 	sh2add	a2, a2, a2
 	slli	a2, a2, 4
 	czero.eqz	a0, a2, a0

@@ -2,8 +2,8 @@ func0000000000000007:
 	sext.w	a2, a2
 	lui	a3, 4096
 	czero.eqz	a2, a3, a2
-	lui	a3, 4160
 	andi	a0, a0, 1
+	lui	a3, 4160
 	slli	a0, a0, 21
 	add	a2, a2, a3
 	or	a0, a0, a1
@@ -22,10 +22,10 @@ func0000000000000018:
 
 func0000000000000010:
 	sext.w	a2, a2
-	andi	a0, a0, 1
 	sltiu	a2, a2, 2
-	slli	a0, a0, 5
+	andi	a0, a0, 1
 	xori	a2, a2, 1
+	slli	a0, a0, 5
 	slli	a2, a2, 7
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -1,9 +1,9 @@
 func0000000000000000:
+	li	a3, 1
 	zext.b	a2, a2
+	slli	a3, a3, 40
 	xor	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 40
-	addi	a2, a2, 435
+	addi	a2, a3, 435
 	mul	a1, a1, a2
 	xor	a0, a0, a1
 	ret

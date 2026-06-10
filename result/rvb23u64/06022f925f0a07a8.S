@@ -11,10 +11,10 @@ func0000000000000004:
 	slli	a0, a0, 4
 	or	a0, a0, a1
 	lui	a1, 1048562
+	lui	a2, 258
 	addw	a0, a0, a1
-	lui	a1, 258
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000024:
@@ -73,9 +73,9 @@ func00000000000003a8:
 func0000000000000484:
 	zext.b	a1, a1
 	slli	a0, a0, 6
+	lui	a2, 1048560
 	or	a0, a0, a1
-	lui	a1, 1048560
-	addi	a1, a1, 560
+	addi	a1, a2, 560
 	addw	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret

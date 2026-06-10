@@ -1,15 +1,15 @@
 func000000000000000f:
-	slliw	a1, a1, 30
 	bclri	a0, a0, 31
+	slliw	a1, a1, 30
 	bclri	a0, a0, 62
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	slli	a1, a1, 49
 	lui	a2, 32767
-	srli	a1, a1, 32
+	slli	a1, a1, 49
 	slli	a2, a2, 20
+	srli	a1, a1, 32
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

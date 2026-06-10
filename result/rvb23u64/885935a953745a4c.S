@@ -1,9 +1,9 @@
 func0000000000000029:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	sltiu	a2, a2, 513
 	xori	a2, a2, 1
 	slli	a2, a2, 6
+	andi	a0, a0, 1
 	addi	a2, a2, 64
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -12,9 +12,9 @@ func0000000000000029:
 	ret
 
 func0000000000000003:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	seqz	a2, a2
+	andi	a0, a0, 1
 	addi	a2, a2, 2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -23,9 +23,9 @@ func0000000000000003:
 	ret
 
 func0000000000000019:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	snez	a2, a2
+	andi	a0, a0, 1
 	slli	a2, a2, 1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

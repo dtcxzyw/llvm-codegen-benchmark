@@ -40,8 +40,8 @@ func0000000000000068:
 
 func0000000000000074:
 	lui	a3, 244
-	slli	a1, a1, 63
 	addi	a3, a3, 576
+	slli	a1, a1, 63
 	sub	a3, a3, a2
 	srai	a1, a1, 63
 	and	a1, a1, a3

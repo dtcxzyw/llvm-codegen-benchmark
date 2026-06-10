@@ -39,9 +39,9 @@ func000000000000001f:
 
 func0000000000000008:
 	slli	a1, a1, 30
+	lui	a2, 45426
 	or	a0, a0, a1
-	lui	a1, 45426
-	addi	a1, a1, 383
+	addi	a1, a2, 383
 	mul	a0, a0, a1
 	ret
 
@@ -53,12 +53,12 @@ func0000000000000010:
 	ret
 
 func000000000000001e:
+	lui	a2, 16
+	addi	a2, a2, 1
 	slli	a1, a1, 8
+	bseti	a2, a2, 32
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 1
-	bseti	a1, a1, 32
-	bseti	a1, a1, 48
+	bseti	a1, a2, 48
 	mul	a0, a0, a1
 	ret
 

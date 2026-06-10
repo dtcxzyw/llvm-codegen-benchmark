@@ -1,7 +1,7 @@
 func0000000000000012:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmv1r.v	v0, v12
@@ -9,9 +9,9 @@ func0000000000000012:
 	ret
 
 func0000000000000052:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v12, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmv1r.v	v0, v12

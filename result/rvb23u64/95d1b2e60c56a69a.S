@@ -2,9 +2,9 @@ func00000000000000ac:
 	lui	a0, 65891
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
+	fmv.d.x	fa4, zero
 	fle.d	a0, fa2, fa5
-	fmv.d.x	fa5, zero
-	fle.d	a1, fa5, fa2
+	fle.d	a1, fa4, fa2
 	and	a0, a0, a1
 	bnez	a0, .LBB0_2
 	fmv.d	fa0, fa1

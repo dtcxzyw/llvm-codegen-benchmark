@@ -1,10 +1,10 @@
 func000000000000001e:
 	zext.b	a2, a2
+	slli	a2, a2, 8
 	or	a0, a0, a1
 	lui	a1, 699051
-	slli	a2, a2, 8
-	addi	a1, a1, -1365
 	or	a0, a0, a2
+	addi	a1, a1, -1365
 	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1

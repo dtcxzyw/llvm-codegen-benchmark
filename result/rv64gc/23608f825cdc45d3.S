@@ -20,9 +20,9 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
+	li	a2, 128
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 128
 	bltu	a2, a1, .LBB3_2
 	li	a0, 1
 	slli	a0, a0, 11

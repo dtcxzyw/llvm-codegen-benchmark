@@ -17,15 +17,14 @@ func000000000000018c:
 	and	a0, a0, a1
 	ret
 
+.LCPI3_0:
+	.quad	1000000000000000000
 func0000000000000184:
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
 	xor	a1, a1, a2
-	lui	a2, 227374
 	snez	a1, a1
-	addi	a2, a2, -1329
-	slli	a2, a2, 12
-	addi	a2, a2, -1575
-	slli	a2, a2, 18
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret
 
@@ -56,10 +55,10 @@ func0000000000000021:
 	ret
 
 func0000000000000088:
+	li	a3, 1
+	slli	a3, a3, 11
 	sltu	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 11
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	and	a0, a0, a1
 	ret
 

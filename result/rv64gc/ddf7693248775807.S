@@ -2,19 +2,19 @@ func0000000000000109:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a1, a1, a3
-	and	a2, a2, a3
 	and	a0, a0, a3
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	and	a2, a2, a3
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func00000000000000e7:
-	slli	a0, a0, 48
 	slli	a1, a1, 48
-	slli	a2, a2, 48
+	slli	a0, a0, 48
 	srai	a0, a0, 48
+	slli	a2, a2, 48
 	srai	a1, a1, 48
 	srai	a2, a2, 48
 	slt	a2, a2, a1
@@ -38,8 +38,8 @@ func00000000000000a5:
 func000000000000014a:
 	slli	a1, a1, 48
 	slli	a2, a2, 48
-	slli	a0, a0, 48
 	srai	a1, a1, 48
+	slli	a0, a0, 48
 	srai	a2, a2, 48
 	srai	a0, a0, 48
 	slt	a2, a0, a2

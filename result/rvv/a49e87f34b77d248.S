@@ -33,10 +33,10 @@ func0000000000000002:
 .LCPI3_0:
 	.quad	0x3fa999999999999a
 func000000000000000d:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmul.vf	v16, v24, fa5
 	vmflt.vv	v24, v8, v16
@@ -46,10 +46,10 @@ func000000000000000d:
 .LCPI4_0:
 	.quad	0x3fee54edc0000000
 func0000000000000008:
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
+	lui	a0, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmul.vf	v16, v24, fa5
 	vmfeq.vv	v0, v8, v16

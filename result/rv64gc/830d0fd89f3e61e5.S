@@ -5,10 +5,10 @@ func0000000000000000:
 	add	a0, a0, a1
 	ret
 .LBB0_2:
-	srl	a1, a1, a3
-	not	a3, a3
+	not	a4, a3
 	slli	a2, a2, 1
-	sll	a2, a2, a3
+	srl	a1, a1, a3
+	sll	a2, a2, a4
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -20,10 +20,10 @@ func000000000000000a:
 	add	a0, a0, a1
 	ret
 .LBB1_2:
-	srl	a1, a1, a3
-	not	a3, a3
+	not	a4, a3
 	slli	a2, a2, 1
-	sll	a2, a2, a3
+	srl	a1, a1, a3
+	sll	a2, a2, a4
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret

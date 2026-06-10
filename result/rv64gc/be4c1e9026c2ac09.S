@@ -1,7 +1,7 @@
 func0000000000000001:
 	add	a1, a1, a2
-	srliw	a0, a0, 16
 	slli	a1, a1, 48
+	srliw	a0, a0, 16
 	srli	a1, a1, 48
 	slli	a0, a0, 16
 	or	a0, a0, a1
@@ -22,13 +22,13 @@ func0000000000000003:
 	ret
 
 func0000000000000005:
+	lui	a3, 524288
 	add	a1, a1, a2
-	lui	a2, 524288
+	addi	a3, a3, -1
 	srliw	a1, a1, 31
-	addi	a2, a2, -1
+	slli	a3, a3, 32
 	slli	a1, a1, 31
-	slli	a2, a2, 32
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

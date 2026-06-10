@@ -16,11 +16,11 @@ func0000000000000000:
 	vmv1r.v	v10, v8
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	lui	a1, %hi(.LCPI1_1)
-	ld	a1, %lo(.LCPI1_1)(a1)
 	vmv.v.x	v8, a0
+	lui	a0, %hi(.LCPI1_1)
 	vzext.vf2	v12, v10
-	vmacc.vx	v8, a1, v12
+	ld	a0, %lo(.LCPI1_1)(a0)
+	vmacc.vx	v8, a0, v12
 	ret
 
 func000000000000000f:
@@ -44,13 +44,14 @@ func000000000000001f:
 
 func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vmv1r.v	v10, v8
 	li	a0, 39
 	slli	a0, a0, 29
 	vmv.v.x	v8, a0
+	vzext.vf2	v12, v10
 	li	a0, 3
 	slli	a0, a0, 32
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v8, a0, v12
 	ret
 
 func0000000000000015:
@@ -74,11 +75,12 @@ func000000000000001d:
 
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v10, v8
+	vmv1r.v	v10, v8
 	bseti	a0, zero, 33
 	vmv.v.x	v8, a0
+	vzext.vf2	v12, v10
 	li	a0, 1
 	bseti	a0, a0, 32
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v8, a0, v12
 	ret
 

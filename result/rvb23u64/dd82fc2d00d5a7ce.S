@@ -29,18 +29,18 @@ func0000000000000070:
 func000000000000001f:
 	li	a2, 122
 	mulw	a1, a1, a2
-	lui	a2, 305
 	sh2add	a0, a1, a0
-	addi	a1, a2, 976
+	lui	a1, 305
+	addi	a1, a1, 976
 	add	a0, a0, a1
 	ret
 
 func0000000000000013:
 	li	a2, 122
 	mulw	a1, a1, a2
-	lui	a2, 320
 	sh2add	a0, a1, a0
-	addi	a1, a2, -928
+	lui	a1, 320
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 

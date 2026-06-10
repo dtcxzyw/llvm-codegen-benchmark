@@ -1,8 +1,8 @@
 func0000000000000021:
-	sext.w	a2, a0
-	li	a3, 2
+	li	a2, 2
+	sext.w	a3, a0
 	li	a1, 3
-	beq	a2, a3, .LBB0_3
+	beq	a3, a2, .LBB0_3
 	sext.w	a2, a0
 	beq	a2, a1, .LBB0_4
 .LBB0_2:

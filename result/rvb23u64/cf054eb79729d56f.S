@@ -11,8 +11,8 @@ func0000000000000021:
 func0000000000000181:
 	sext.w	a1, a1
 	li	a2, 61
-	andi	a0, a0, 253
 	czero.eqz	a1, a2, a1
+	andi	a0, a0, 253
 	addi	a0, a0, -4
 	addi	a1, a1, 52
 	czero.eqz	a0, a1, a0

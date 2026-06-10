@@ -2,14 +2,14 @@ func000000000000000f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, 20
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	slli	a0, a0, 6
 	ret
 .LBB0_2:
 	li	a2, 16
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	slli	a0, a0, 6
 	ret
 

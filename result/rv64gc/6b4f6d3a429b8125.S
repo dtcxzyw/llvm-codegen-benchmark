@@ -3,8 +3,8 @@ func0000000000000007:
 	srli	a2, a2, 32
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 
 .LCPI1_0:
@@ -15,8 +15,8 @@ func0000000000000003:
 	and	a2, a2, a3
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 
 func0000000000000005:
@@ -24,7 +24,7 @@ func0000000000000005:
 	srli	a2, a2, 32
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 

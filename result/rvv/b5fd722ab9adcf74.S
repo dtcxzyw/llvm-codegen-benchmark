@@ -5,9 +5,9 @@ func0000000000000000:
 	vmv.v.x	v16, a0
 	lui	a0, 245529
 	addi	a0, a0, 1602
+	vmv.v.x	v20, a0
 	vfmacc.vv	v16, v8, v12
-	vmv.v.x	v12, a0
-	vfmadd.vv	v8, v16, v12
+	vfmadd.vv	v8, v16, v20
 	ret
 
 func0000000000000003:
@@ -17,8 +17,8 @@ func0000000000000003:
 	vmv.v.x	v16, a0
 	lui	a0, 783369
 	addi	a0, a0, 919
+	vmv.v.x	v20, a0
 	vfmacc.vv	v16, v8, v12
-	vmv.v.x	v12, a0
-	vfmadd.vv	v8, v16, v12
+	vfmadd.vv	v8, v16, v20
 	ret
 

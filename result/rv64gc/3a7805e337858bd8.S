@@ -20,8 +20,8 @@ func000000000000001c:
 	ret
 
 func0000000000000185:
-	sext.w	a0, a0
 	lui	a1, 3
+	sext.w	a0, a0
 	addi	a1, a1, -288
 	bltu	a1, a0, .LBB2_2
 	fmv.s	fa0, fa1
@@ -34,8 +34,8 @@ func0000000000000185:
 	ret
 
 func0000000000000183:
-	sext.w	a0, a0
 	lui	a1, 3
+	sext.w	a0, a0
 	addi	a1, a1, -288
 	bltu	a1, a0, .LBB3_2
 	fmv.s	fa0, fa1

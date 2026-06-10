@@ -18,20 +18,21 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	fmv.d	fa5, fa0
-	fmv.d.x	fa0, zero
-	flt.d	a0, fa5, fa0
+	fmv.d.x	fa5, zero
+	flt.d	a0, fa0, fa5
 	fli.d	fa4, -1.0
 	beqz	a0, .LBB1_3
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	beqz	a0, .LBB1_4
 .LBB1_2:
+	fmv.d	fa0, fa5
 	ret
 .LBB1_3:
 	fli.d	fa4, 1.0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	bnez	a0, .LBB1_2
 .LBB1_4:
-	fmv.d	fa0, fa4
+	fmv.d	fa5, fa4
+	fmv.d	fa0, fa5
 	ret
 

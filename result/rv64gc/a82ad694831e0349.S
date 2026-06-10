@@ -23,8 +23,8 @@ func0000000000000386:
 
 func000000000000018a:
 	li	a3, 13
-	slli	a2, a2, 32
 	slli	a3, a3, 35
+	slli	a2, a2, 32
 	mulhu	a2, a2, a3
 	sub	a0, a0, a1
 	sub	a0, a0, a2
@@ -41,9 +41,9 @@ func0000000000000184:
 
 func0000000000000188:
 	slli	a2, a2, 32
+	srli	a2, a2, 29
 	sub	a0, a0, a1
 	li	a1, -15
-	srli	a2, a2, 29
 	sub	a0, a0, a2
 	srli	a1, a1, 1
 	sltu	a0, a1, a0

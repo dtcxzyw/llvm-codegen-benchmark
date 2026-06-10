@@ -2,8 +2,8 @@ func00000000000000c7:
 	fadd.d	fa5, fa1, fa2
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa5, fa4
-	not	a0, a0
 	fle.d	a1, fa4, fa0
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -25,12 +25,12 @@ func00000000000000cc:
 
 func0000000000000088:
 	fadd.d	fa5, fa1, fa2
-	fmv.d.x	fa4, zero
 	li	a0, -1025
-	feq.d	a1, fa5, fa4
+	fmv.d.x	fa4, zero
 	slli	a0, a0, 52
-	fmv.d.x	fa5, a0
-	feq.d	a0, fa0, fa5
+	fmv.d.x	fa3, a0
+	feq.d	a0, fa5, fa4
+	feq.d	a1, fa0, fa3
 	and	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.b	a0, a0
 	li	a1, 1000
+	sext.b	a0, a0
 	mul	a0, a0, a1
 	ret
 

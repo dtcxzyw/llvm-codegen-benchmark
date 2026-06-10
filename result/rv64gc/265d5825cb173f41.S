@@ -25,8 +25,8 @@ func0000000000000049:
 
 func0000000000000003:
 	zext.b	a1, a1
-	lui	a2, 65536
 	snez	a1, a1
+	lui	a2, 65536
 	slli	a1, a1, 30
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -34,8 +34,8 @@ func0000000000000003:
 
 func0000000000000042:
 	zext.b	a1, a1
-	lui	a2, 524288
 	snez	a1, a1
+	lui	a2, 524288
 	slli	a1, a1, 28
 	or	a0, a0, a2
 	or	a0, a0, a1

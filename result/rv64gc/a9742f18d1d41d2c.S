@@ -7,8 +7,8 @@ func0000000000000058:
 
 func0000000000000042:
 	addi	a2, a2, -3
-	addi	a1, a1, -3
 	seqz	a2, a2
+	addi	a1, a1, -3
 	or	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -24,8 +24,8 @@ func0000000000000102:
 
 func0000000000000218:
 	lui	a3, 24
-	snez	a0, a0
 	addi	a3, a3, 1696
+	snez	a0, a0
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

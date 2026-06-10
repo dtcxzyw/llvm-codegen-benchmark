@@ -21,8 +21,8 @@ func000000000000003d:
 	ret
 
 func000000000000003f:
-	addi	a1, a1, 15
 	li	a2, -31
+	addi	a1, a1, 15
 	srli	a2, a2, 1
 	and	a1, a1, a2
 	addi	a1, a1, 16

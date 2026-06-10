@@ -17,8 +17,8 @@ func000000000000002c:
 	ret
 
 func000000000000028c:
-	sext.w	a0, a0
 	lui	a2, 520192
+	sext.w	a0, a0
 	and	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
@@ -26,9 +26,9 @@ func000000000000028c:
 	ret
 
 func000000000000030c:
-	andi	a1, a1, 128
 	lui	a2, 345895
 	addi	a2, a2, -1741
+	andi	a1, a1, 128
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	sext.w	a0, a0

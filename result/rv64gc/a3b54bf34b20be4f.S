@@ -14,19 +14,19 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
+	lui	a3, 524288
 	slli	a2, a2, 32
+	addi	a3, a3, -1
 	or	a1, a1, a2
-	lui	a2, 524288
-	addi	a2, a2, -1
-	slli	a2, a2, 30
-	and	a1, a1, a2
+	slli	a3, a3, 30
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000b:
-	slli	a2, a2, 59
 	li	a3, -31
 	slli	a3, a3, 27
+	slli	a2, a2, 59
 	addi	a3, a3, -1
 	and	a1, a1, a3
 	or	a0, a0, a2

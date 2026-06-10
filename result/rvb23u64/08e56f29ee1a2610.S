@@ -1,6 +1,6 @@
 func000000000000000f:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	maxu	a1, a1, a2
 	addi	a1, a1, -1
 	zext.w	a1, a1

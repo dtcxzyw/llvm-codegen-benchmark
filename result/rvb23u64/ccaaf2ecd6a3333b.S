@@ -23,8 +23,8 @@ func0000000000000012:
 	ret
 
 func000000000000000f:
-	zext.h	a2, a2
 	sh2add	a0, a1, a0
+	zext.h	a2, a2
 	sh2add	a0, a2, a0
 	ret
 

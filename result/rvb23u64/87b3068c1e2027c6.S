@@ -20,13 +20,13 @@ func00000000000000ac:
 
 func000000000000002c:
 	lui	a1, 16473
-	fmv.d.x	fa5, zero
 	slli	a1, a1, 36
-	fle.d	a2, fa5, fa0
-	fmv.d.x	fa5, a1
-	flt.d	a1, fa0, fa5
-	and	a0, a0, a2
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a1
+	fle.d	a1, fa5, fa0
+	flt.d	a2, fa0, fa4
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 .promoted_doubles.func0000000000000024:

@@ -2,8 +2,8 @@ func0000000000000081:
 	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 16
-	addi	a0, a0, 1
 	addi	a2, a2, -1
+	addi	a0, a0, 1
 	and	a1, a1, a2
 	and	a0, a0, a2
 	xor	a0, a0, a1
@@ -14,8 +14,8 @@ func0000000000000085:
 	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 16
-	addi	a0, a0, -2
 	addi	a2, a2, -1
+	addi	a0, a0, -2
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a1, a0
@@ -26,8 +26,8 @@ func0000000000000084:
 	zext.b	a2, a2
 	or	a1, a1, a2
 	lui	a2, 16
-	addi	a0, a0, -2
 	addi	a2, a2, -1
+	addi	a0, a0, -2
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltu	a0, a0, a1

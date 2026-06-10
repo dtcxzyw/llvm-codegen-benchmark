@@ -47,10 +47,10 @@ func000000000000014b:
 	ret
 
 func00000000000000c1:
-	slt	a2, a2, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	slt	a0, a2, a0
+	seqz	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000114:

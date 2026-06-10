@@ -1,19 +1,18 @@
 func000000000000006e:
-	zext.w	a1, a1
 	lui	a2, 349525
+	zext.w	a1, a1
 	addi	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	addw	a0, a0, a1
 	ret
 
+.LCPI1_0:
+	.quad	196742565691928
 func00000000000000ed:
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	sext.w	a1, a1
-	lui	a2, 732923
-	slli.uw	a2, a2, 1
-	addi	a2, a2, 1403
-	slli	a2, a2, 15
-	addi	a2, a2, 536
 	mul	a1, a1, a2
 	srli	a1, a1, 48
 	addw	a0, a0, a1
@@ -39,21 +38,20 @@ func000000000000006c:
 	ret
 
 func00000000000000ef:
-	sext.w	a1, a1
 	lui	a2, 244141
+	sext.w	a1, a1
 	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	srli	a1, a1, 23
 	addw	a0, a0, a1
 	ret
 
+.LCPI5_0:
+	.quad	196742565691928
 func000000000000008d:
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	sext.w	a1, a1
-	lui	a2, 732923
-	slli.uw	a2, a2, 1
-	addi	a2, a2, 1403
-	slli	a2, a2, 15
-	addi	a2, a2, 536
 	mul	a1, a1, a2
 	srli	a1, a1, 48
 	addw	a0, a0, a1

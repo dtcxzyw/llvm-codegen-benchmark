@@ -42,8 +42,8 @@ func0000000000000c64:
 	ret
 
 func0000000000000c74:
-	srli	a2, a2, 32
 	lui	a3, 2048
+	srli	a2, a2, 32
 	addi	a3, a3, -4
 	xor	a2, a2, a3
 	snez	a2, a2

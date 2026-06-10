@@ -1,7 +1,7 @@
 func0000000000000048:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 3
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -35,9 +35,9 @@ func0000000000000078:
 	ret
 
 func0000000000000058:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 5
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1

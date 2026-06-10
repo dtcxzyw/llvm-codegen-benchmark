@@ -20,8 +20,8 @@ func0000000000000000:
 
 func00000000000001aa:
 	li	a3, 298
-	add	a0, a0, a1
 	mul	a2, a2, a3
+	add	a0, a0, a1
 	add	a0, a0, a2
 	li	a1, -1160
 	sh2add	a0, a1, a0

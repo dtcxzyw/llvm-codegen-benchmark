@@ -18,9 +18,9 @@ func0000000000000007:
 
 func0000000000000002:
 	andi	a1, a1, 1
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
+	addi	a1, a2, -1
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:

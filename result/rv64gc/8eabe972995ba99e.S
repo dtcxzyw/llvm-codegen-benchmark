@@ -1,7 +1,7 @@
 func0000000000000046:
+	li	a1, 2
 	srai	a0, a0, 32
 	slti	a0, a0, 1
-	li	a1, 2
 	sub	a0, a1, a0
 	ret
 

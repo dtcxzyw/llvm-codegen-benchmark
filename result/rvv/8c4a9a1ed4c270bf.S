@@ -1,8 +1,8 @@
 func0000000000000002:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vv	v8, v8, v12
 	lui	a0, 123854
 	addi	a0, a0, 1288
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmul.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0

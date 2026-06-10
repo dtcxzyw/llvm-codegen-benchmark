@@ -1,6 +1,6 @@
 func0000000000000188:
-	zext.b	a0, a0
 	sext.w	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 33
 	not	a1, a1
 	snez	a0, a0
@@ -18,8 +18,8 @@ func0000000000000021:
 
 func0000000000000141:
 	slli	a0, a0, 56
-	addiw	a1, a1, -3
 	srai	a0, a0, 56
+	addiw	a1, a1, -3
 	seqz	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1

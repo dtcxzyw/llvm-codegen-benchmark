@@ -77,9 +77,9 @@ func00000000000000ac:
 	ret
 
 func00000000000000f0:
-	slli	a1, a1, 1
 	li	a2, 1
 	slli	a2, a2, 33
+	slli	a1, a1, 1
 	addi	a2, a2, -2
 	add	a1, a1, a2
 	and	a1, a1, a2

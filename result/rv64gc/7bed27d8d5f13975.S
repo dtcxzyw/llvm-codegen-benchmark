@@ -28,8 +28,8 @@ func0000000000000004:
 	ret
 
 func000000000000000e:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	beqz	a0, .LBB2_3
 	feq.d	a0, fa0, fa0
 	beqz	a0, .LBB2_4
@@ -55,8 +55,8 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	beqz	a0, .LBB4_3
 	fle.d	a0, fa5, fa0
 	beqz	a0, .LBB4_4

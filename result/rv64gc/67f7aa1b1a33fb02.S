@@ -9,9 +9,9 @@ func0000000000000002:
 	and	a1, a1, a3
 	ret
 .LBB0_2:
-	srl	a0, a0, a2
 	slli	a5, a1, 1
 	not	a4, a4
+	srl	a0, a0, a2
 	sll	a4, a5, a4
 	or	a0, a0, a4
 	srl	a1, a1, a2
@@ -30,9 +30,9 @@ func0000000000000000:
 	and	a1, a1, a3
 	ret
 .LBB1_2:
-	srl	a0, a0, a2
 	slli	a5, a1, 1
 	not	a4, a4
+	srl	a0, a0, a2
 	sll	a4, a5, a4
 	or	a0, a0, a4
 	srl	a1, a1, a2

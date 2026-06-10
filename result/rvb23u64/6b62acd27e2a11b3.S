@@ -1,6 +1,6 @@
 func00000000000000e1:
-	sext.w	a2, a2
 	lui	a3, 524288
+	sext.w	a2, a2
 	addiw	a3, a3, -1
 	minu	a2, a2, a3
 	slli	a2, a2, 6

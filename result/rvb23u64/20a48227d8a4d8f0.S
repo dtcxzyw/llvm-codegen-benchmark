@@ -1,17 +1,17 @@
 func0000000000000021:
-	lui	a2, 32768
-	lui	a3, 134656
+	lui	a2, 134656
+	lui	a3, 32768
 	and	a2, a2, a1
 	and	a1, a1, a3
-	xor	a0, a0, a1
-	or	a0, a0, a2
+	xor	a0, a0, a2
+	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	slli	a2, a1, 40
+	sext.w	a0, a0
 	srli	a2, a2, 40
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -20,12 +20,12 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
+	slli	a2, a1, 52
 	sext.w	a0, a0
-	bexti	a2, a1, 14
-	slli	a1, a1, 52
-	srli	a1, a1, 52
-	xor	a0, a0, a1
+	srli	a2, a2, 52
+	xor	a0, a0, a2
+	bexti	a1, a1, 14
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 

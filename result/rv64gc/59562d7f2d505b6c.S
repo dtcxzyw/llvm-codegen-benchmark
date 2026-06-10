@@ -41,8 +41,8 @@ func0000000000000031:
 	ret
 
 func000000000000003f:
-	addi	a1, a1, 55
 	lui	a2, 524288
+	addi	a1, a1, 55
 	srli	a2, a2, 28
 	and	a1, a1, a2
 	slli	a0, a0, 4
@@ -64,8 +64,8 @@ func0000000000000015:
 	ret
 
 func0000000000000014:
-	addi	a1, a1, 7
 	li	a2, -15
+	addi	a1, a1, 7
 	srli	a2, a2, 1
 	and	a1, a1, a2
 	slli	a0, a0, 3
@@ -82,10 +82,10 @@ func0000000000000008:
 func0000000000000035:
 	lui	a2, 1
 	addi	a2, a2, 383
+	lui	a3, 1048448
 	add	a1, a1, a2
-	lui	a2, 1048448
-	srli	a2, a2, 15
-	and	a1, a1, a2
+	srli	a3, a3, 15
+	and	a1, a1, a3
 	slli	a0, a0, 4
 	add	a0, a0, a1
 	ret

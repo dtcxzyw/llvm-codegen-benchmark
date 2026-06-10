@@ -14,9 +14,9 @@ func0000000000000014:
 	ret
 
 func000000000000003c:
-	addi	a2, a2, 63
 	li	a3, 2016
 	sh3add	a1, a3, a1
+	addi	a2, a2, 63
 	or	a1, a1, a2
 	sext.w	a1, a1
 	or	a0, a0, a1

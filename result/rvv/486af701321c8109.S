@@ -17,10 +17,10 @@ func0000000000000284:
 	ret
 
 func0000000000000084:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vv	v12, v10, v8
 	lui	a0, 1048568
 	addi	a0, a0, 2
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmseq.vv	v12, v10, v8
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	vmv.v.i	v8, 0

@@ -1,8 +1,8 @@
 func0000000000000244:
-	slli	a1, a1, 1
 	li	a2, -1
-	addi	a0, a0, 5
+	slli	a1, a1, 1
 	srli	a2, a2, 1
+	addi	a0, a0, 5
 	minu	a2, a1, a2
 	sltu	a1, a0, a1
 	czero.eqz	a2, a2, a1
@@ -11,10 +11,10 @@ func0000000000000244:
 	ret
 
 func0000000000000204:
-	slli	a1, a1, 1
 	li	a2, -1
-	addi	a0, a0, 1
+	slli	a1, a1, 1
 	srli	a2, a2, 1
+	addi	a0, a0, 1
 	minu	a2, a1, a2
 	sltu	a1, a0, a1
 	czero.eqz	a2, a2, a1
@@ -23,10 +23,10 @@ func0000000000000204:
 	ret
 
 func0000000000000314:
-	slli	a1, a1, 1
 	li	a2, -1
-	addi	a0, a0, 1
+	slli	a1, a1, 1
 	srli	a2, a2, 4
+	addi	a0, a0, 1
 	minu	a2, a1, a2
 	sltu	a1, a0, a1
 	czero.eqz	a2, a2, a1

@@ -19,9 +19,9 @@ func0000000000000042:
 	ret
 
 func0000000000000024:
-	fadd.s	fa4, fa0, fa0
 	lui	a0, 253133
 	addi	a0, a0, -819
+	fadd.s	fa4, fa0, fa0
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa4, fa5
 	beqz	a0, .LBB1_3

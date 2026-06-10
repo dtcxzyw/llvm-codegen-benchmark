@@ -72,10 +72,11 @@ func00000000000000e6:
 
 func00000000000001e4:
 	li	a0, 20
-	vsetivli	zero, 8, e16, m1, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v10, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 

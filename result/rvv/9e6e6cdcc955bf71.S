@@ -88,9 +88,9 @@ func0000000000000066:
 	ret
 
 func00000000000000bb:
+	lui	a0, 277312
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmax.vv	v8, v8, v12
-	lui	a0, 277312
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmandn.mm	v0, v0, v12
@@ -109,10 +109,10 @@ func0000000000000024:
 	lui	a0, 259686
 	addi	a0, a0, 1638
 	fmv.w.x	fa5, a0
-	lui	a0, 253133
-	addi	a0, a0, -819
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
+	lui	a0, 253133
+	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v8, v12, v16
@@ -129,9 +129,9 @@ func00000000000000ee:
 
 func000000000000008b:
 	fmv.w.x	fa5, zero
-	lui	a0, 273536
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v16, v12, fa5
+	lui	a0, 273536
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmandn.mm	v8, v16, v12

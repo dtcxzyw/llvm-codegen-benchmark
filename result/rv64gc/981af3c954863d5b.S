@@ -19,9 +19,9 @@ func000000000000001e:
 
 func0000000000000006:
 	li	a2, 32
+	li	a3, 8
 	sub	a1, a2, a1
-	li	a2, 8
-	sub	a0, a2, a0
+	sub	a0, a3, a0
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:

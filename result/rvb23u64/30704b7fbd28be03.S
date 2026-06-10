@@ -1,28 +1,28 @@
 func0000000000000000:
-	andi	a1, a1, 1
 	lui	a3, 1
 	addi	a3, a3, -1
 	add	a2, a2, a3
 	andi	a2, a2, -2048
+	andi	a1, a1, 1
 	bclri	a2, a2, 11
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 1
-	addi	a2, a2, 15
 	bseti	a3, zero, 34
+	addi	a2, a2, 15
 	addi	a3, a3, -8
+	andi	a1, a1, 1
 	and	a2, a2, a3
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 1
 	addi	a2, a2, 33
 	zext.w	a2, a2
+	andi	a1, a1, 1
 	addi	a2, a2, -32
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
@@ -30,25 +30,25 @@ func0000000000000003:
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 1
 	addi	a2, a2, 63
+	andi	a1, a1, 1
 	andi	a2, a2, -64
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	ret
 
 func000000000000000d:
-	andi	a1, a1, 1
 	addi	a2, a2, 7
+	andi	a1, a1, 1
 	andi	a2, a2, 508
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 1
 	addi	a2, a2, 15
 	andi	a2, a2, 504
+	andi	a1, a1, 1
 	addi	a2, a2, -32
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

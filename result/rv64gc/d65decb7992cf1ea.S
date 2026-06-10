@@ -5,18 +5,18 @@ func0000000000000155:
 	slli	a0, a0, 3
 	add	a0, a0, a3
 	lui	a3, 1048563
-	addi	a3, a3, -80
-	add	a1, a1, a2
-	add	a0, a0, a3
 	add	a0, a0, a1
+	addi	a1, a3, -80
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func00000000000003ff:
 	li	a3, 150
 	mul	a2, a2, a3
 	li	a3, 77
-	add	a1, a1, a2
 	mul	a0, a0, a3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 128
 	ret
@@ -35,11 +35,11 @@ func0000000000000375:
 
 func0000000000000310:
 	lui	a3, 2
+	lui	a4, 1048574
 	addi	a3, a3, 112
+	addi	a4, a4, -112
 	mul	a2, a2, a3
-	lui	a3, 1048574
-	addi	a3, a3, -112
-	mul	a0, a0, a3
+	mul	a0, a0, a4
 	lui	a3, 65
 	addi	a3, a3, -512
 	add	a1, a1, a2
@@ -49,11 +49,11 @@ func0000000000000310:
 
 func0000000000000175:
 	lui	a3, 1
+	lui	a4, 2
 	addi	a3, a3, -1200
+	addi	a4, a4, -1716
 	mul	a1, a1, a3
-	lui	a3, 2
-	addi	a3, a3, -1716
-	mul	a0, a0, a3
+	mul	a0, a0, a4
 	lui	a3, 32
 	add	a1, a1, a2
 	add	a0, a0, a3

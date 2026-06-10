@@ -5,10 +5,10 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
+	lui	a3, 32767
 	sub	a2, a2, a1
-	lui	a1, 32767
-	slli	a1, a1, 5
-	sltu	a1, a2, a1
+	slli	a3, a3, 5
+	sltu	a1, a2, a3
 	addi	a0, a0, -31
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 31

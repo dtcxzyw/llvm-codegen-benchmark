@@ -35,8 +35,8 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	srli	a1, a1, 32
 	lui	a2, 349525
+	srli	a1, a1, 32
 	addi	a2, a2, 1365
 	and	a1, a1, a2
 	addw	a0, a0, a1

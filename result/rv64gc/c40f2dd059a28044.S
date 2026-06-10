@@ -9,9 +9,9 @@ func0000000000000070:
 
 func000000000000002f:
 	slli	a2, a2, 3
-	slli	a0, a0, 1
 	addi	a2, a2, 2
 	slli	a2, a2, 32
+	slli	a0, a0, 1
 	srli	a2, a2, 31
 	add	a0, a0, a1
 	add	a0, a0, a2

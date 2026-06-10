@@ -1,15 +1,15 @@
 func0000000000000101:
-	lui	a1, 524032
 	fmv.d.x	fa5, zero
-	and	a0, a0, a1
-	seqz	a0, a0
 	feq.d	a1, fa0, fa5
+	lui	a2, 524032
+	and	a0, a0, a2
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000001cc:
-	srli	a0, a0, 1
 	feq.d	a1, fa0, fa0
+	srli	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
@@ -18,25 +18,25 @@ func00000000000001cc:
 func000000000000008c:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
-	srli	a0, a0, 1
 	flt.d	a1, fa5, fa0
+	srli	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000004c:
-	srli	a0, a0, 1
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
+	srli	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000041:
-	andi	a0, a0, 511
 	li	a1, 1023
-	seqz	a0, a0
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
+	andi	a0, a0, 511
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 

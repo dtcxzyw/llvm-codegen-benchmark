@@ -1,7 +1,7 @@
 func000000000000001e:
+	lui	a0, 4080
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 4080
 	vor.vx	v8, v8, a0
 	vmul.vv	v8, v8, v10
 	ret

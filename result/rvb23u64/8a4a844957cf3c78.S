@@ -1,7 +1,7 @@
 func0000000000000006:
 	addiw	a1, a0, 1
-	addiw	a0, a0, 13
 	slti	a2, a1, 3
+	addiw	a0, a0, 13
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000006:
 
 func000000000000000a:
 	addiw	a1, a0, -10
-	addiw	a0, a0, -11
 	slti	a2, a1, 73
+	addiw	a0, a0, -11
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
@@ -38,10 +38,10 @@ func0000000000000064:
 
 func0000000000000008:
 	addiw	a1, a0, 97
-	addi	a0, a0, 2047
 	srliw	a2, a1, 11
-	addiw	a0, a0, 98
+	addi	a0, a0, 2047
 	sltiu	a2, a2, 27
+	addiw	a0, a0, 98
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

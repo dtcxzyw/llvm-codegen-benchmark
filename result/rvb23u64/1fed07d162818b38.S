@@ -16,13 +16,12 @@ func0000000000000001:
 	neg	a0, a0
 	ret
 
+.LCPI3_0:
+	.quad	196742565691928
 func000000000000000c:
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
 	negw	a0, a0
-	lui	a1, 732923
-	slli.uw	a1, a1, 1
-	addi	a1, a1, 1403
-	slli	a1, a1, 15
-	addi	a1, a1, 536
 	mul	a0, a0, a1
 	ret
 

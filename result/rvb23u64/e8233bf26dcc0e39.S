@@ -21,9 +21,9 @@ func000000000000000a:
 	mulh	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 13
+	lui	a2, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	lui	a1, 1030267
 	addi	a1, a1, -1537

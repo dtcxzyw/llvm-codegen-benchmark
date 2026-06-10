@@ -42,11 +42,11 @@ func00000000000000aa:
 
 func000000000000006d:
 	lui	a1, 522240
-	lui	a2, 847872
 	fmv.w.x	fa5, a1
+	lui	a1, 847872
+	fmv.w.x	fa4, a1
 	flt.s	a1, fa1, fa5
-	fmv.w.x	fa5, a2
-	flt.s	a2, fa0, fa5
+	flt.s	a2, fa0, fa4
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -72,11 +72,11 @@ func0000000000000074:
 
 func0000000000000065:
 	lui	a1, 522240
-	lui	a2, 784384
 	fmv.w.x	fa5, a1
+	lui	a1, 784384
+	fmv.w.x	fa4, a1
 	flt.s	a1, fa1, fa5
-	fmv.w.x	fa5, a2
-	fle.s	a2, fa0, fa5
+	fle.s	a2, fa0, fa4
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

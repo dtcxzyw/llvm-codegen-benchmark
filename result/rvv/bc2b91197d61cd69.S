@@ -1,27 +1,27 @@
 func0000000000000042:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v12, v10, 0
-	vmseq.vi	v10, v8, 0
-	vmandn.mm	v8, v0, v12
-	vmor.mm	v9, v0, v10
-	vmand.mm	v9, v9, v12
-	vmor.mm	v0, v9, v8
+	vmseq.vi	v12, v8, 0
+	vmseq.vi	v8, v10, 0
+	vmor.mm	v9, v0, v12
+	vmandn.mm	v10, v0, v8
+	vmand.mm	v8, v9, v8
+	vmor.mm	v0, v8, v10
 	ret
 
 func0000000000000210:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vi	v12, v10, 1
-	vmsgtu.vi	v10, v8, 1
-	vmandn.mm	v8, v0, v12
-	vmor.mm	v9, v0, v10
-	vmand.mm	v9, v9, v12
-	vmor.mm	v0, v9, v8
+	vmsgtu.vi	v12, v8, 1
+	vmsgtu.vi	v8, v10, 1
+	vmor.mm	v9, v0, v12
+	vmandn.mm	v10, v0, v8
+	vmand.mm	v8, v9, v8
+	vmor.mm	v0, v8, v10
 	ret
 
 func0000000000000218:
+	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 64
 	vmsgtu.vx	v0, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsne.vi	v10, v8, 1

@@ -3,17 +3,17 @@
 func0000000000000021:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	lui	a2, 281475
 	mul	a0, a0, a1
-	addi	a1, a2, -95
-	slli	a2, a2, 4
-	slli	a1, a1, 12
-	addi	a1, a1, -2048
-	add	a0, a0, a1
-	slli	a1, a0, 55
+	lui	a1, 281475
+	addi	a2, a1, -95
+	slli	a2, a2, 12
+	addi	a2, a2, -2048
+	add	a0, a0, a2
+	slli	a2, a0, 55
 	srli	a0, a0, 9
-	or	a0, a0, a1
-	addi	a1, a2, -1527
+	slli	a1, a1, 4
+	or	a0, a0, a2
+	addi	a1, a1, -1527
 	sltu	a0, a0, a1
 	ret
 
@@ -56,15 +56,15 @@ func000000000000002a:
 func000000000000002c:
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
-	lui	a2, %hi(.LCPI3_1)
-	ld	a2, %lo(.LCPI3_1)(a2)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI3_2)
-	ld	a1, %lo(.LCPI3_2)(a1)
-	add	a0, a0, a2
-	slli	a2, a0, 57
+	lui	a1, %hi(.LCPI3_1)
+	ld	a1, %lo(.LCPI3_1)(a1)
+	lui	a2, %hi(.LCPI3_2)
+	ld	a2, %lo(.LCPI3_2)(a2)
+	add	a0, a0, a1
+	slli	a1, a0, 57
 	srli	a0, a0, 7
-	or	a0, a0, a2
-	sltu	a0, a1, a0
+	or	a0, a0, a1
+	sltu	a0, a2, a0
 	ret
 

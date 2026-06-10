@@ -16,10 +16,10 @@ func0000000000000084:
 	li	a0, 36
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, -65
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vadd.vx	v8, v8, a0
 	lui	a0, 1
+	li	a1, -65
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vadd.vx	v8, v8, a1
 	addi	a0, a0, -2012
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v9, v10, a0

@@ -1,14 +1,14 @@
 func0000000000000002:
-	fcvt.d.lu	fa5, a0
-	fli.d	fa4, 1.0
-	fadd.d	fa4, fa0, fa4
-	flt.d	a0, fa4, fa5
+	fli.d	fa5, 1.0
+	fadd.d	fa5, fa0, fa5
+	fcvt.d.lu	fa4, a0
+	flt.d	a0, fa5, fa4
 	ret
 
 func0000000000000008:
-	fcvt.d.lu	fa5, a0
-	fli.d	fa4, 1.0
-	fadd.d	fa4, fa0, fa4
-	feq.d	a0, fa4, fa5
+	fli.d	fa5, 1.0
+	fadd.d	fa5, fa0, fa5
+	fcvt.d.lu	fa4, a0
+	feq.d	a0, fa5, fa4
 	ret
 

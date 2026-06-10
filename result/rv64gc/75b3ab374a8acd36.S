@@ -1,6 +1,6 @@
 func0000000000000024:
-	addiw	a1, a1, 48
 	li	a2, 64
+	addiw	a1, a1, 48
 	bgeu	a1, a2, .LBB0_2
 	li	a0, 16
 	ret
@@ -10,9 +10,9 @@ func0000000000000024:
 
 func0000000000000004:
 	lui	a2, 1048304
+	lui	a3, 1048305
 	addw	a1, a1, a2
-	lui	a2, 1048305
-	addi	a2, a2, -2048
+	addi	a2, a3, -2048
 	bgeu	a1, a2, .LBB1_2
 	lui	a0, 272
 	ret

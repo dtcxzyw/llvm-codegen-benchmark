@@ -7,9 +7,9 @@ func000000000000042a:
 	ret
 
 func0000000000000421:
-	li	a0, 96
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 1
+	li	a0, 96
 	vadd.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmseq.vi	v0, v8, 0

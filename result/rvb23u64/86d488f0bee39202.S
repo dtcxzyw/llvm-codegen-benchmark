@@ -16,10 +16,10 @@ func0000000000000003:
 func0000000000000031:
 	li	a3, 7
 	slli	a3, a3, 9
+	li	a4, 9
 	and	a2, a2, a3
-	li	a3, 9
-	slli	a3, a3, 8
-	sltu	a2, a3, a2
+	slli	a4, a4, 8
+	sltu	a2, a4, a2
 	addi	a1, a1, -9
 	czero.nez	a1, a1, a2
 	addi	a1, a1, 9

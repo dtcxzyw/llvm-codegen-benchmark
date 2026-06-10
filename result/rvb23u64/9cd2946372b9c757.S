@@ -6,10 +6,10 @@ func00000000000000a6:
 	ret
 
 func00000000000000e4:
-	sext.w	a0, a0
 	slliw	a2, a2, 8
 	or	a1, a1, a2
 	lui	a2, 4
+	sext.w	a0, a0
 	addi	a2, a2, -15
 	sltu	a0, a0, a2
 	addi	a1, a1, -1000

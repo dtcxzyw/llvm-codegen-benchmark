@@ -1,9 +1,9 @@
 func0000000000000001:
 	zext.b	a1, a1
 	seqz	a1, a1
+	lui	a2, 8
 	and	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, 221
+	addi	a1, a2, 221
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 4
 	ret

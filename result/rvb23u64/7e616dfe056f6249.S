@@ -1,13 +1,13 @@
 func0000000000000008:
+	li	a1, 5
 	slli	a0, a0, 1
 	addiw	a0, a0, 5
-	li	a1, 5
 	max	a0, a0, a1
 	ret
 
 func000000000000000a:
-	slliw	a0, a0, 1
 	li	a1, -84
+	slliw	a0, a0, 1
 	max	a0, a0, a1
 	addiw	a0, a0, 100
 	ret

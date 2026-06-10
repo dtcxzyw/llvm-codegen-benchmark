@@ -19,8 +19,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	slliw	a0, a0, 7
 	lui	a1, 262144
+	slliw	a0, a0, 7
 	or	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000154:
+	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vnsrl.wi	v12, v10, 0
@@ -11,9 +11,9 @@ func0000000000000154:
 	ret
 
 func0000000000000144:
+	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vnsrl.wi	v12, v10, 0
@@ -23,9 +23,9 @@ func0000000000000144:
 	ret
 
 func00000000000001d4:
+	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vnsrl.wi	v12, v10, 0

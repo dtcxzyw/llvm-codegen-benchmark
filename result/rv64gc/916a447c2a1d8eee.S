@@ -1,14 +1,14 @@
 func0000000000000006:
-	slli	a1, a0, 8
-	sub	a1, a1, a0
-	slli	a0, a1, 48
-	lui	a2, 16656
-	mulhu	a0, a0, a2
+	lui	a1, 16656
+	slli	a2, a0, 8
+	sub	a2, a2, a0
+	slli	a0, a2, 48
+	mulhu	a0, a0, a1
 	srli	a0, a0, 16
-	sub	a1, a1, a0
-	slli	a1, a1, 48
-	srli	a1, a1, 49
-	add	a0, a0, a1
+	sub	a2, a2, a0
+	slli	a2, a2, 48
+	srli	a2, a2, 49
+	add	a0, a0, a2
 	srli	a0, a0, 5
 	ret
 

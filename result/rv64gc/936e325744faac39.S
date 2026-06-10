@@ -21,10 +21,10 @@ func000000000000000a:
 
 func0000000000000000:
 	slliw	a1, a1, 19
+	lui	a2, 32
 	or	a0, a0, a1
-	lui	a1, 32
-	addi	a1, a1, 25
-	or	a0, a0, a1
+	addi	a2, a2, 25
+	or	a0, a0, a2
 	ret
 
 func000000000000001e:

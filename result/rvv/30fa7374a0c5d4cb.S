@@ -1,7 +1,7 @@
 func000000000000014a:
+	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 16
 	vmsgt.vx	v12, v10, a0
 	vmsgt.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
@@ -73,9 +73,9 @@ func0000000000000504:
 	ret
 
 func0000000000000024:
+	bseti	a0, zero, 35
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	bseti	a0, zero, 35
 	vmsltu.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 0
 	vmand.mm	v0, v12, v10
@@ -90,9 +90,9 @@ func0000000000000108:
 	ret
 
 func0000000000000184:
+	lui	a0, 4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 4
 	vmsltu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v12, v10
@@ -107,9 +107,9 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
+	li	a0, 56
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 56
 	vmseq.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 1
 	vmand.mm	v0, v12, v10
@@ -123,9 +123,9 @@ func0000000000000421:
 	ret
 
 func000000000000010c:
+	li	a0, 400
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 400
 	vmsne.vx	v12, v10, a0
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10

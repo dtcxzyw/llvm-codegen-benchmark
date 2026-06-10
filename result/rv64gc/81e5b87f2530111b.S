@@ -8,8 +8,8 @@ func000000000000000f:
 
 func000000000000000a:
 	addiw	a1, a1, -2
-	slli	a0, a0, 38
 	seqz	a1, a1
+	slli	a0, a0, 38
 	not	a1, a1
 	srli	a0, a0, 38
 	add	a0, a0, a1

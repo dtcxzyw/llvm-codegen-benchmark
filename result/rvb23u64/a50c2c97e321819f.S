@@ -1,8 +1,8 @@
 func0000000000000008:
-	sub	a0, a1, a0
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	sub	a0, a1, a0
 	add	a2, a2, a3
 	mulhu	a2, a0, a2
 	srli	a2, a2, 4
@@ -13,10 +13,10 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	sub	a0, a1, a0
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	sub	a0, a1, a0
 	add	a2, a2, a3
 	mulhu	a2, a0, a2
 	srli	a3, a2, 1

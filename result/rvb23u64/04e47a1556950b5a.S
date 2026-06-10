@@ -2,10 +2,10 @@ func00000000000000a4:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addi	a2, a2, -819
 	addi	a1, a1, 2
-	slli	a2, a2, 32
+	addi	a2, a2, -819
 	slli	a1, a1, 32
+	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	lui	a2, 1048400
 	addi	a2, a2, 1427
@@ -47,10 +47,10 @@ func00000000000000a5:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addi	a2, a2, -819
 	addi	a1, a1, 2
-	slli	a2, a2, 32
+	addi	a2, a2, -819
 	slli	a1, a1, 32
+	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	lui	a2, 1048400
 	addi	a2, a2, 1428

@@ -15,11 +15,11 @@ func000000000000007f:
 	ret
 
 func000000000000003f:
-	li	a0, 46
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
+	li	a0, 46
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -40,11 +40,11 @@ func0000000000000015:
 	ret
 
 func0000000000000001:
-	lui	a0, 1048572
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
+	lui	a0, 1048572
 	vadd.vx	v8, v8, a0
 	ret
 

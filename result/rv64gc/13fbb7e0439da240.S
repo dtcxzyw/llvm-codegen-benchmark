@@ -8,9 +8,9 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	seqz	a1, a1
 	li	a2, 37
 	mulw	a0, a0, a2
+	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

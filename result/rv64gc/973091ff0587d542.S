@@ -1,7 +1,7 @@
 func0000000000000009:
+	li	a4, 16
 	sext.w	a3, a1
-	li	a1, 16
-	subw	a1, a1, a2
+	subw	a1, a4, a2
 	blt	a1, a3, .LBB0_2
 	mv	a1, a3
 .LBB0_2:

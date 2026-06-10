@@ -12,8 +12,8 @@ func0000000000000086:
 func000000000000068c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -3
-	li	a0, 256
 	vmsleu.vi	v9, v10, 10
+	li	a0, 256
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

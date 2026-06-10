@@ -1,29 +1,29 @@
 func00000000000004e6:
+	lui	a0, 748983
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
-	lui	a0, 748983
 	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
-	li	a1, 32
 	vmul.vx	v10, v10, a0
-	vsll.vx	v10, v10, a1
-	vsra.vx	v10, v10, a1
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vsra.vx	v10, v10, a0
 	vadd.vi	v8, v8, 1
 	vmslt.vv	v0, v8, v10
 	ret
 
 func00000000000004a1:
+	lui	a0, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
-	lui	a0, 838861
 	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 32
 	vmul.vx	v10, v10, a0
-	vsll.vx	v10, v10, a1
-	vsra.vx	v10, v10, a1
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vsra.vx	v10, v10, a0
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
@@ -52,8 +52,8 @@ func00000000000000a1:
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	li	a0, 32
 	vadd.vv	v10, v10, v12
+	li	a0, 32
 	vsll.vx	v10, v10, a0
 	vsra.vx	v10, v10, a0
 	vadd.vi	v8, v8, 1
@@ -61,16 +61,16 @@ func00000000000000a1:
 	ret
 
 func00000000000004c1:
+	lui	a0, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
-	lui	a0, 838861
 	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 32
 	vmul.vx	v10, v10, a0
-	vsll.vx	v10, v10, a1
-	vsra.vx	v10, v10, a1
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vsra.vx	v10, v10, a0
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret

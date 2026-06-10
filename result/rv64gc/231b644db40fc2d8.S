@@ -10,8 +10,8 @@ func000000000000000e:
 
 func000000000000001e:
 	or	a1, a1, a2
-	li	a2, 22
 	sext.w	a1, a1
+	li	a2, 22
 	mul	a1, a1, a2
 	lui	a2, 3
 	addi	a2, a2, 1348

@@ -1,8 +1,8 @@
 func0000000000000f44:
 	sext.w	a2, a2
-	slli	a1, a1, 2
 	slli	a2, a2, 2
 	add	a2, a2, a0
+	slli	a1, a1, 2
 	addi	a2, a2, -4
 	add	a0, a0, a1
 	sltu	a0, a0, a2
@@ -19,13 +19,13 @@ func0000000000000764:
 
 func00000000000007e1:
 	slli	a2, a2, 32
-	slli	a3, a1, 3
-	slli	a1, a1, 4
-	add	a1, a1, a3
 	srli	a3, a2, 29
 	srli	a2, a2, 28
 	add	a2, a2, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 4
 	add	a2, a2, a0
+	add	a1, a1, a3
 	addi	a2, a2, 24
 	add	a0, a0, a1
 	xor	a0, a0, a2
@@ -34,9 +34,9 @@ func00000000000007e1:
 
 func00000000000007c1:
 	slli	a2, a2, 32
-	slli	a1, a1, 5
 	srli	a2, a2, 27
 	add	a2, a2, a0
+	slli	a1, a1, 5
 	addi	a2, a2, 32
 	add	a0, a0, a1
 	xor	a0, a0, a2

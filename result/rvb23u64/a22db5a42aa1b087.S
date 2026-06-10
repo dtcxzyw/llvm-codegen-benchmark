@@ -1,20 +1,20 @@
 func0000000000000434:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a2
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	zext.w	a2, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000194:
-	sext.w	a1, a1
 	zext.w	a2, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret
@@ -44,8 +44,8 @@ func0000000000000145:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	zext.w	a2, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a2
 	czero.nez	a0, a0, a1
 	ret
@@ -75,9 +75,9 @@ func0000000000000154:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
 	zext.w	a2, a2
 	xor	a0, a0, a2
+	sext.w	a1, a1
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
@@ -101,8 +101,8 @@ func0000000000000028:
 func0000000000000306:
 	sext.w	a1, a1
 	zext.w	a2, a2
-	slt	a0, a0, a2
 	sltiu	a1, a1, 2
+	slt	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -116,8 +116,8 @@ func0000000000000288:
 	ret
 
 func000000000000018c:
-	sext.w	a1, a1
 	zext.w	a2, a2
+	sext.w	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	sltiu	a1, a1, -1
@@ -150,23 +150,23 @@ func0000000000000088:
 	ret
 
 func0000000000000581:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	xor	a0, a0, a2
+	sext.w	a1, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000198:
-	sext.w	a1, a1
 	zext.w	a2, a2
+	sext.w	a1, a1
 	sltu	a0, a2, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000594:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	sltu	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret
@@ -198,8 +198,8 @@ func0000000000000199:
 func0000000000000114:
 	sext.w	a1, a1
 	zext.w	a2, a2
-	sltu	a0, a0, a2
 	sltiu	a1, a1, 16
+	sltu	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -245,16 +245,16 @@ func0000000000000029:
 	ret
 
 func0000000000000181:
-	sext.w	a1, a1
 	zext.w	a2, a2
 	xor	a0, a0, a2
+	sext.w	a1, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000014c:
-	sext.w	a1, a1
 	zext.w	a2, a2
+	sext.w	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	sgtz	a1, a1
@@ -262,12 +262,12 @@ func000000000000014c:
 	ret
 
 func0000000000000039:
+	lui	a3, 16
 	sext.w	a1, a1
+	addi	a3, a3, -1
+	xor	a1, a1, a3
 	zext.w	a2, a2
 	sltu	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	xor	a1, a1, a2
 	seqz	a1, a1
 	andn	a0, a1, a0
 	ret

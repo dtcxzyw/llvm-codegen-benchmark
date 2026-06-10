@@ -14,8 +14,8 @@ func0000000000000184:
 
 func0000000000000081:
 	lui	a3, 24
-	seqz	a0, a0
 	addi	a3, a3, 1697
+	seqz	a0, a0
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -43,8 +43,8 @@ func0000000000000084:
 
 func000000000000014a:
 	slti	a2, a2, 1001
-	slti	a0, a0, 7
 	xori	a2, a2, 1
+	slti	a0, a0, 7
 	and	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1

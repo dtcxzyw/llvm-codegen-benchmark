@@ -5,16 +5,16 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	addi	a1, a1, 7
 	bseti	a2, zero, 33
+	addi	a1, a1, 7
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	maxu	a0, a0, a1
 	ret
 
 func0000000000000007:
-	addi	a1, a1, 63
 	li	a2, -505
+	addi	a1, a1, 63
 	srli	a2, a2, 3
 	and	a1, a1, a2
 	maxu	a0, a1, a0

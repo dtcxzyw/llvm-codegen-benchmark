@@ -21,11 +21,11 @@ func000000000000007b:
 	ret
 
 func000000000000003f:
-	andi	a1, a1, 1
 	li	a3, 11
 	slli	a3, a3, 35
 	slli	a2, a2, 32
 	mulhu	a2, a2, a3
+	andi	a1, a1, 1
 	add	a0, a0, a2
 	bnez	a1, .LBB2_2
 	li	a1, 64
@@ -39,10 +39,10 @@ func000000000000003f:
 	ret
 
 func000000000000004f:
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	slli	a3, a2, 6
 	slli	a2, a2, 7
+	andi	a1, a1, 1
 	add	a2, a2, a3
 	add	a0, a0, a2
 	bnez	a1, .LBB3_2
@@ -57,10 +57,10 @@ func000000000000004f:
 	ret
 
 func0000000000000043:
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	slli	a3, a2, 4
 	slli	a2, a2, 6
+	andi	a1, a1, 1
 	add	a2, a2, a3
 	add	a0, a0, a2
 	bnez	a1, .LBB4_2

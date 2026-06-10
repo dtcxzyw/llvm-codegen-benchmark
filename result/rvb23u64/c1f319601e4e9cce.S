@@ -6,15 +6,15 @@ func00000000000000a8:
 	ret
 
 func00000000000000a4:
-	srai	a1, a1, 32
 	srai	a0, a0, 2
+	srai	a1, a1, 32
 	not	a0, a0
 	sltu	a0, a0, a1
 	ret
 
 func00000000000001a4:
-	srai	a1, a1, 32
 	srai	a0, a0, 2
+	srai	a1, a1, 32
 	not	a0, a0
 	sltu	a0, a0, a1
 	ret

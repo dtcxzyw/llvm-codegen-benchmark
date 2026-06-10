@@ -1,7 +1,7 @@
 func0000000000000035:
 	li	a3, 400
-	slli	a1, a1, 63
 	mul	a2, a2, a3
+	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -10,9 +10,9 @@ func0000000000000035:
 
 func000000000000001d:
 	lui	a3, 1048540
-	slli	a1, a1, 63
 	addi	a3, a3, 1359
 	mul	a2, a2, a3
+	slli	a1, a1, 63
 	lui	a3, 1048400
 	srai	a1, a1, 63
 	addi	a3, a3, 1733
@@ -23,9 +23,9 @@ func000000000000001d:
 
 func000000000000001c:
 	lui	a3, 1048540
-	slli	a1, a1, 63
 	addi	a3, a3, 1359
 	mul	a2, a2, a3
+	slli	a1, a1, 63
 	lui	a3, 1048400
 	srai	a1, a1, 63
 	addi	a3, a3, 1733
@@ -36,8 +36,8 @@ func000000000000001c:
 
 func0000000000000000:
 	li	a3, 100
-	slli	a1, a1, 63
 	mul	a2, a2, a3
+	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1

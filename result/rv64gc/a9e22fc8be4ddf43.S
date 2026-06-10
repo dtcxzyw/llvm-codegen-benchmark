@@ -30,8 +30,8 @@ func0000000000000030:
 	ret
 
 func0000000000000010:
-	sext.w	a1, a1
 	li	a2, 3
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB4_2
 	li	a1, 3
 .LBB4_2:

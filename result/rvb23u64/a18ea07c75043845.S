@@ -20,8 +20,8 @@ func00000000000000f4:
 	ret
 
 func00000000000000d8:
-	addi	a1, a1, 143
 	lui	a2, 512
+	addi	a1, a1, 143
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	zext.w	a0, a0
@@ -57,8 +57,8 @@ func00000000000000d4:
 	ret
 
 func00000000000000c1:
-	addi	a1, a1, 47
 	bseti	a2, zero, 33
+	addi	a1, a1, 47
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	zext.w	a0, a0

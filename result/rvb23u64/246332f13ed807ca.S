@@ -9,9 +9,9 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a0
-	li	a2, 11
-	czero.eqz	a1, a2, a1
+	li	a1, 11
+	sext.w	a2, a0
+	czero.eqz	a1, a1, a2
 	srliw	a0, a0, 31
 	addi	a1, a1, -13
 	czero.nez	a0, a1, a0
@@ -19,10 +19,10 @@ func0000000000000026:
 	ret
 
 func0000000000000281:
+	li	a1, 2
 	sext.w	a0, a0
-	sltiu	a1, a0, 128
-	li	a2, 2
-	sub	a2, a2, a1
-	czero.eqz	a0, a2, a0
+	sltiu	a2, a0, 128
+	sub	a1, a1, a2
+	czero.eqz	a0, a1, a0
 	ret
 

@@ -16,11 +16,11 @@ func0000000000000003:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v24, v0
 	fmv.d.x	fa5, zero
-	lui	a0, 32941
 	vmfge.vf	v25, v16, fa5
 	vmnot.m	v0, v25
-	slli	a0, a0, 35
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, 32941
+	slli	a0, a0, 35
 	vmv.v.x	v16, a0
 	vmv1r.v	v0, v24
 	vmerge.vvm	v8, v16, v8, v0

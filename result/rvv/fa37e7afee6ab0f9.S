@@ -30,9 +30,9 @@ func0000000000000018:
 	ret
 
 func0000000000000010:
+	li	a0, 56
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v14, v11
-	li	a0, 56
 	vwsll.vx	v12, v14, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12
@@ -83,9 +83,9 @@ func000000000000003e:
 	ret
 
 func000000000000003b:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v14, v11
-	li	a0, 32
 	vwsll.vx	v12, v14, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12

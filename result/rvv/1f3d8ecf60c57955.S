@@ -13,8 +13,8 @@ func000000000000008a:
 	li	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, -40
 	vmseq.vi	v0, v10, 0
+	li	a0, -40
 	vmv.v.x	v10, a0
 	li	a0, -32
 	vmerge.vxm	v10, v10, a0, v0

@@ -1,7 +1,7 @@
 func00000000000000a9:
+	li	a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v12
-	li	a0, 2
 	vmax.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
 	vadd.vv	v8, v12, v8
@@ -26,9 +26,9 @@ func00000000000000a0:
 	ret
 
 func00000000000000e9:
+	li	a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v12, v12
-	li	a0, 2
 	vmax.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
 	vadd.vv	v8, v12, v8

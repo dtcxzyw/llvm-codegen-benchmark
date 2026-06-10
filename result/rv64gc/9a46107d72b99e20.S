@@ -51,9 +51,9 @@ func0000000000000010:
 	ret
 
 func0000000000000029:
+	li	a2, 2
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	li	a2, 2
 	blt	a2, a1, .LBB6_2
 	li	a1, 9
 	add	a0, a0, a1
@@ -64,12 +64,12 @@ func0000000000000029:
 	ret
 
 func0000000000000007:
-	zext.b	a2, a1
-	li	a1, 1
-	bne	a2, a1, .LBB7_2
-	li	a1, 255
+	li	a2, 1
+	zext.b	a1, a1
+	bne	a1, a2, .LBB7_2
+	li	a2, 255
 .LBB7_2:
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000019:

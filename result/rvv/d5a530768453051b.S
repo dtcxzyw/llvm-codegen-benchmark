@@ -1,89 +1,89 @@
 func0000000000000089:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 8
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 8
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vv	v0, v10, v8
 	ret
 
 func0000000000000084:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 4
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 4
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func00000000000000e8:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func00000000000000e1:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 2
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 2
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000ca:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmslt.vv	v0, v10, v8
 	ret
 
 func00000000000000c1:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000041:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000cc:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsne.vv	v0, v8, v10
 	ret
 
 func00000000000000c8:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func00000000000000c6:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmslt.vv	v0, v8, v10
 	ret
@@ -96,29 +96,29 @@ func00000000000000c4:
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
 	lui	a0, 17
 	addi	a0, a0, 64
-	vmv.v.x	v10, a0
-	vsll.vv	v10, v10, v12
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vzext.vf4	v14, v10
+	vsll.vv	v10, v12, v14
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000000e6:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmslt.vv	v0, v8, v10
 	ret
 
 func00000000000000b8:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vmv.v.i	v10, -1
-	vsll.vv	v10, v10, v12
+	vmv.v.i	v12, -1
+	vzext.vf4	v14, v10
+	vsll.vv	v10, v12, v14
 	vmsltu.vv	v0, v10, v8
 	ret
 

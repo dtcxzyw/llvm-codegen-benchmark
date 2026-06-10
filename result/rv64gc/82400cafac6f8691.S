@@ -11,9 +11,9 @@ func000000000000000e:
 	ret
 
 func000000000000001e:
+	lui	a3, 296942
 	addw	a1, a1, a2
-	lui	a2, 296942
-	addi	a2, a2, -507
+	addi	a2, a3, -507
 	mul	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 37

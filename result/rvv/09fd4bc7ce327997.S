@@ -6,11 +6,11 @@ func0000000000000201:
 	ret
 
 func0000000000000208:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	li	a0, -1
 	slli	a0, a0, 61
 	addi	a1, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v10, v10, 3
 	vmv.v.x	v12, a1
 	vmacc.vv	v12, v8, v10
 	vmsltu.vx	v0, v12, a0

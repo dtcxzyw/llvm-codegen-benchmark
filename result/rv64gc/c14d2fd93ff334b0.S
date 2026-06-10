@@ -30,11 +30,11 @@ func0000000000000081:
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	lui	a3, 32
+	sext.w	a1, a1
 	addi	a3, a3, -48
-	sltiu	a1, a1, 11
 	and	a2, a2, a3
+	sltiu	a1, a1, 11
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

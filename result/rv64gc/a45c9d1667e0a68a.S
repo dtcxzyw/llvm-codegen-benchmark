@@ -19,10 +19,10 @@ func0000000000000084:
 	zext.b	a1, a1
 	addi	a1, a1, -46
 	seqz	a1, a1
+	lui	a2, 16
 	sub	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000a1:

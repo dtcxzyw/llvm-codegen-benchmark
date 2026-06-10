@@ -1,20 +1,20 @@
 func0000000000000026:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vv	v12, v8, v10
-	vmslt.vv	v13, v8, v10
-	vmandn.mm	v8, v13, v12
-	vmor.mm	v9, v13, v0
-	vmand.mm	v9, v9, v12
-	vmor.mm	v0, v9, v8
+	vmslt.vv	v12, v8, v10
+	vmseq.vv	v13, v8, v10
+	vmor.mm	v8, v12, v0
+	vmandn.mm	v9, v12, v13
+	vmand.mm	v8, v8, v13
+	vmor.mm	v0, v8, v9
 	ret
 
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vv	v12, v8, v10
-	vmsltu.vv	v13, v8, v10
-	vmandn.mm	v8, v13, v12
-	vmor.mm	v9, v13, v0
-	vmand.mm	v9, v9, v12
-	vmor.mm	v0, v9, v8
+	vmsltu.vv	v12, v8, v10
+	vmseq.vv	v13, v8, v10
+	vmor.mm	v8, v12, v0
+	vmandn.mm	v9, v12, v13
+	vmand.mm	v8, v8, v13
+	vmor.mm	v0, v8, v9
 	ret
 

@@ -1,9 +1,9 @@
 func0000000000000081:
-	sext.w	a0, a0
 	addiw	a3, a2, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
 	or	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -49,11 +49,11 @@ func0000000000000408:
 	ret
 
 func00000000000000a1:
-	sext.w	a0, a0
 	sext.w	a3, a2
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
 	or	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

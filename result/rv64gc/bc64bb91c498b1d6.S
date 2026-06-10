@@ -19,9 +19,9 @@ func00000000000000f6:
 func00000000000000fa:
 	slliw	a2, a2, 6
 	slli	a1, a1, 18
+	lui	a3, 1033216
 	or	a0, a0, a2
-	lui	a2, 1033216
-	addw	a1, a1, a2
+	addw	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

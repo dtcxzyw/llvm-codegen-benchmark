@@ -1,16 +1,16 @@
 func000000000000000e:
 	andi	a1, a1, 1
+	sh3add	a3, a0, a0
+	sh1add	a0, a3, a0
 	czero.nez	a1, a2, a1
-	sh3add	a2, a0, a0
-	sh1add	a0, a2, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 344
 	ret
 
 func000000000000000f:
 	andi	a1, a1, 1
-	czero.nez	a1, a2, a1
 	sh2add	a0, a0, a0
+	czero.nez	a1, a2, a1
 	sh3add	a0, a0, a1
 	addi	a0, a0, 112
 	ret

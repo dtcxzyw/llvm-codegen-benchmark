@@ -129,9 +129,9 @@ func0000000000000504:
 	ret
 
 func0000000000000506:
+	lui	a3, 244
 	sub	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 575
+	addi	a2, a3, 575
 	sltu	a1, a2, a1
 	srli	a0, a0, 63
 	or	a0, a0, a1

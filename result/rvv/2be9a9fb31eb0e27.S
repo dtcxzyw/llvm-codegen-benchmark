@@ -99,8 +99,8 @@ func0000000000000048:
 	vnsrl.wi	v9, v10, 0
 	lui	a0, 524288
 	vandn.vx	v9, v9, a0
-	lui	a0, 262144
 	vadd.vv	v8, v8, v9
+	lui	a0, 262144
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

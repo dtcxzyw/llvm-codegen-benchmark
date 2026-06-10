@@ -1,16 +1,16 @@
 func0000000000000094:
-	lui	a0, 1048575
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	lui	a0, 1048575
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vandn.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000021:
-	li	a0, 31
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, 31
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8
@@ -44,9 +44,9 @@ func0000000000000064:
 	ret
 
 func0000000000000081:
-	li	a0, 255
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, 255
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8

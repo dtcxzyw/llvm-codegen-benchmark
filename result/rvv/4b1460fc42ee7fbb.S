@@ -10,9 +10,9 @@ func00000000000000c4:
 func00000000000000d4:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v24, v16, fa5
-	vmnot.m	v0, v24
+	vmflt.vf	v7, v16, fa5
 	vfneg.v	v24, v16
+	vmnot.m	v0, v7
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v8, v16
 	ret

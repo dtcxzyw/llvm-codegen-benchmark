@@ -6,13 +6,13 @@ func0000000000000000:
 	ret
 
 func000000000000001f:
+	li	a3, 1
+	slli	a3, a3, 34
 	slli	a1, a1, 2
+	addi	a3, a3, -4
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 34
-	addi	a1, a1, -4
-	and	a1, a1, a2
-	add	a0, a0, a1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func000000000000000b:
@@ -31,22 +31,22 @@ func000000000000000f:
 	ret
 
 func000000000000001b:
+	li	a3, 1
+	slli	a3, a3, 37
 	slli	a1, a1, 5
+	addi	a3, a3, -32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 37
-	addi	a1, a1, -32
-	and	a1, a1, a2
-	add	a0, a0, a1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func0000000000000018:
+	li	a3, 1
+	slli	a3, a3, 33
 	slli	a1, a1, 2
+	addi	a3, a3, -4
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
-	addi	a1, a1, -4
-	and	a1, a1, a2
-	add	a0, a0, a1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 

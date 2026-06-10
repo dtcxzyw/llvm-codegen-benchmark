@@ -1,7 +1,7 @@
 func0000000000000099:
-	srai	a1, a0, 63
-	lui	a2, 21
-	addi	a2, a2, 384
+	lui	a1, 21
+	srai	a2, a0, 63
+	addi	a1, a1, 384
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -16,9 +16,9 @@ func00000000000000a9:
 
 func0000000000000028:
 	lui	a1, 244
-	lui	a2, 12
 	addi	a1, a1, 575
 	slt	a1, a1, a0
+	lui	a2, 12
 	neg	a1, a1
 	addi	a2, a2, -576
 	and	a1, a1, a2
@@ -26,18 +26,18 @@ func0000000000000028:
 	ret
 
 func000000000000009b:
-	srai	a1, a0, 63
-	lui	a2, 21
-	addi	a2, a2, 384
+	lui	a1, 21
+	srai	a2, a0, 63
+	addi	a1, a1, 384
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000098:
-	srai	a1, a0, 63
-	lui	a2, 477
-	addi	a2, a2, -667
-	slli	a2, a2, 11
+	lui	a1, 477
+	addi	a1, a1, -667
+	srai	a2, a0, 63
+	slli	a1, a1, 11
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

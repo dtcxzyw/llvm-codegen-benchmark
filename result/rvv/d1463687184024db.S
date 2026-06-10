@@ -10,8 +10,8 @@ func0000000000002842:
 func0000000000002848:
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, 63
 	vor.vv	v8, v10, v8
+	li	a0, 63
 	vmsltu.vx	v10, v8, a0
 	li	a0, -255
 	vmseq.vx	v11, v8, a0

@@ -1,8 +1,8 @@
 func0000000000000010:
 	zext.b	a1, a1
+	lui	a2, 1
 	sub	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 704
+	addi	a1, a2, 704
 	addw	a0, a0, a1
 	ret
 
@@ -69,9 +69,9 @@ func000000000000000c:
 
 func000000000000001f:
 	zext.b	a1, a1
+	lui	a2, 648056
 	sub	a0, a0, a1
-	lui	a1, 648056
-	addi	a1, a1, -1607
+	addi	a1, a2, -1607
 	addw	a0, a0, a1
 	ret
 

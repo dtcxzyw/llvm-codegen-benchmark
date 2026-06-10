@@ -38,10 +38,10 @@ func0000000000000904:
 	ret
 
 func0000000000000889:
-	sub	a2, a0, a1
-	lui	a3, 732
-	addi	a3, a3, 1729
-	sltu	a2, a2, a3
+	lui	a2, 732
+	sub	a3, a0, a1
+	addi	a2, a2, 1729
+	sltu	a2, a3, a2
 	sltu	a0, a0, a1
 	andn	a0, a2, a0
 	ret

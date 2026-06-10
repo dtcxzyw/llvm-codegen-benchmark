@@ -1,15 +1,15 @@
 func0000000000000001:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 64
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 26
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	sltiu	a0, a0, 36
 	addi	a1, a1, -1
@@ -18,9 +18,9 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 16
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	slti	a0, a0, 5
 	addi	a1, a1, -8

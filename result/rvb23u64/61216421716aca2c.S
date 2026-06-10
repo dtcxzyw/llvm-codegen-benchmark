@@ -11,9 +11,9 @@ func0000000000000001:
 	ret
 
 func0000000000000005:
-	fsub.s	fa5, fa0, fa1
 	lui	a1, 248381
 	addi	a1, a1, 1802
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	xori	a1, a1, 1

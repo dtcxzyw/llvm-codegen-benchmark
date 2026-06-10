@@ -96,9 +96,9 @@ func000000000000003e:
 
 func0000000000000005:
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	addw	a0, a0, a1
 	ret
 
@@ -111,9 +111,9 @@ func0000000000000020:
 
 func000000000000000c:
 	slli	a1, a1, 8
+	lui	a2, 112
 	add	a0, a0, a1
-	lui	a1, 112
-	addi	a1, a1, 636
+	addi	a1, a2, 636
 	addw	a0, a0, a1
 	ret
 
@@ -131,9 +131,9 @@ func0000000000000002:
 
 func0000000000000008:
 	slli	a1, a1, 4
+	li	a2, -13
 	add	a0, a0, a1
-	li	a1, -13
-	slli	a1, a1, 10
-	addw	a0, a0, a1
+	slli	a2, a2, 10
+	addw	a0, a0, a2
 	ret
 

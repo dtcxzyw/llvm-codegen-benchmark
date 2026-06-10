@@ -15,8 +15,8 @@ func0000000000000000:
 func00000000000001ff:
 	sh1add	a0, a0, a1
 	lui	a1, 24578
-	slli	a0, a0, 42
 	bseti	a1, a1, 54
+	slli	a0, a0, 42
 	bseti	a1, a1, 62
 	add	a0, a0, a1
 	ret

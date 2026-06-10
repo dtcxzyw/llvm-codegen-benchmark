@@ -17,8 +17,8 @@ func0000000000000080:
 	ret
 
 func00000000000000c0:
-	slli	a2, a2, 6
 	mul	a0, a0, a1
+	slli	a2, a2, 6
 	addw	a0, a0, a2
 	ret
 

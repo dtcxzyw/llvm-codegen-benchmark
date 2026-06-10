@@ -19,8 +19,8 @@ func00000000000000b4:
 func00000000000000e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v11
-	li	a0, 1024
 	vmseq.vv	v0, v8, v12
+	li	a0, 1024
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.x	v8, a0
 	vadd.vi	v8, v10, 1, v0.t

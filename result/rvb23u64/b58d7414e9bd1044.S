@@ -1,6 +1,6 @@
 func000000000000000f:
-	slli	a1, a1, 44
 	lui	a2, 512000
+	slli	a1, a1, 44
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -8,18 +8,18 @@ func000000000000000f:
 func0000000000000000:
 	li	a2, 255
 	slli	a2, a2, 32
+	lui	a3, 15625
 	addi	a2, a2, 255
+	slli	a3, a3, 26
 	and	a1, a1, a2
-	lui	a2, 15625
-	slli	a2, a2, 26
-	addi	a2, a2, 100
+	addi	a2, a3, 100
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 43
 	lui	a2, 1048409
+	slli	a1, a1, 43
 	srli	a1, a1, 43
 	addi	a2, a2, 131
 	mul	a1, a1, a2
@@ -45,17 +45,17 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	zext.w	a1, a1
 	lui	a2, 804435
+	zext.w	a1, a1
 	addi	a2, a2, 1536
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000a:
-	slli	a1, a1, 32
 	lui	a2, 1032699
 	addi	a2, a2, 389
+	slli	a1, a1, 32
 	slli	a2, a2, 33
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

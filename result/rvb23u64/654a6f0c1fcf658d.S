@@ -1,8 +1,8 @@
 func000000000000007b:
 	sext.w	a2, a2
 	li	a3, 1680
-	sext.w	a0, a0
 	mul	a2, a2, a3
+	sext.w	a0, a0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	li	a1, 1682

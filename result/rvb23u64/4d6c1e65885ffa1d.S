@@ -1,10 +1,10 @@
 func0000000000000030:
-	zext.b	a2, a2
 	lui	a3, 1048571
-	sext.w	a1, a1
+	zext.b	a2, a2
 	addi	a3, a3, 512
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a2
+	sext.w	a1, a1
 	sh2add	a0, a1, a0
 	lui	a1, 10
 	add	a0, a0, a1

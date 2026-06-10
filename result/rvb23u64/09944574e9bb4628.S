@@ -1,18 +1,18 @@
 func0000000000000038:
+	li	a2, -4
 	maxu	a0, a0, a1
-	li	a1, -4
-	rori	a1, a1, 10
+	rori	a1, a2, 10
 	add	a0, a0, a1
 	srli	a0, a0, 54
 	sltiu	a0, a0, 1021
 	ret
 
 func0000000000000008:
+	lui	a2, 1048571
 	maxu	a0, a0, a1
-	lui	a1, 1048571
-	addi	a2, a1, -1
-	add	a0, a0, a2
-	sltu	a0, a0, a1
+	addi	a1, a2, -1
+	add	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000001:

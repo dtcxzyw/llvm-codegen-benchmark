@@ -9,25 +9,25 @@ func0000000000000028:
 	andi	a1, a1, 1
 	bnez	a1, .LBB1_2
 	li	a1, -8
-	sub	a0, a2, a0
-	add	a0, a0, a1
+	add	a1, a1, a2
+	sub	a0, a1, a0
 	ret
 .LBB1_2:
 	li	a1, -16
-	sub	a0, a2, a0
-	add	a0, a0, a1
+	add	a1, a1, a2
+	sub	a0, a1, a0
 	ret
 
 func0000000000000000:
 	andi	a1, a1, 1
 	bnez	a1, .LBB2_2
 	li	a1, 24
-	sub	a0, a2, a0
-	add	a0, a0, a1
+	add	a1, a1, a2
+	sub	a0, a1, a0
 	ret
 .LBB2_2:
 	li	a1, 20
-	sub	a0, a2, a0
-	add	a0, a0, a1
+	add	a1, a1, a2
+	sub	a0, a1, a0
 	ret
 

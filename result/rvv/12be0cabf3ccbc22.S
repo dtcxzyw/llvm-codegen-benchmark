@@ -1,7 +1,7 @@
 func0000000000000091:
-	li	a0, -48
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsleu.vi	v0, v10, 9
+	li	a0, -48
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -27,9 +27,9 @@ func0000000000000004:
 	ret
 
 func0000000000000187:
-	li	a0, 17
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vi	v0, v10, 1
+	li	a0, 17
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0

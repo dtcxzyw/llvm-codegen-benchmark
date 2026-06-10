@@ -1,6 +1,6 @@
 func0000000000000001:
-	slliw	a0, a0, 1
 	li	a1, 3
+	slliw	a0, a0, 1
 	blt	a1, a0, .LBB0_2
 	li	a0, 3
 .LBB0_2:
@@ -9,9 +9,9 @@ func0000000000000001:
 
 func0000000000000009:
 	slliw	a0, a0, 1
-	addi	a1, a0, -1
-	slti	a0, a0, 2
+	slti	a1, a0, 2
 	addi	a0, a0, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 
@@ -24,8 +24,8 @@ func000000000000000b:
 	ret
 
 func0000000000000000:
-	slliw	a0, a0, 2
 	li	a1, -15
+	slliw	a0, a0, 2
 	blt	a1, a0, .LBB3_2
 	li	a0, -15
 .LBB3_2:

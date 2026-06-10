@@ -8,10 +8,10 @@ func00000000000000c4:
 	ret
 
 func00000000000000c1:
-	slli	a1, a1, 32
 	li	a2, 1
-	srli	a1, a1, 32
+	slli	a1, a1, 32
 	slli	a2, a2, 34
+	srli	a1, a1, 32
 	addi	a2, a2, -4
 	add	a1, a1, a2
 	slli	a1, a1, 30
@@ -21,8 +21,8 @@ func00000000000000c1:
 	ret
 
 func00000000000001c1:
-	sraiw	a1, a1, 2
 	lui	a2, 524288
+	sraiw	a1, a1, 2
 	addi	a2, a2, -2
 	add	a1, a1, a2
 	slli	a1, a1, 33

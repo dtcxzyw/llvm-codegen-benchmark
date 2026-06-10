@@ -45,10 +45,10 @@ func00000000000003aa:
 
 func0000000000000388:
 	slli	a1, a1, 28
+	lui	a2, 524288
 	addw	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -17
-	sltu	a0, a1, a0
+	addiw	a2, a2, -17
+	sltu	a0, a2, a0
 	ret
 
 func00000000000001f8:

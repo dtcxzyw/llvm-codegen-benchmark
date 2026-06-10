@@ -15,8 +15,8 @@ func00000000000000c0:
 	vadd.vi	v10, v10, 4
 	li	a0, 12
 	vmacc.vx	v10, a0, v12
-	li	a0, -4
 	vadd.vv	v8, v8, v10
+	li	a0, -4
 	zext.w	a0, a0
 	vand.vx	v8, v8, a0
 	ret

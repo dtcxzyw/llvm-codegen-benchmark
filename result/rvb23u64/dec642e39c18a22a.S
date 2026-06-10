@@ -1,8 +1,8 @@
 func000000000000002c:
-	zext.h	a1, a0
-	andi	a0, a0, 1
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	andi	a1, a0, 1
+	zext.h	a0, a0
+	seqz	a1, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002a:

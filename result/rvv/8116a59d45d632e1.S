@@ -1,7 +1,7 @@
 func000000000000001e:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 32
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -49,9 +49,9 @@ func000000000000009e:
 	ret
 
 func000000000000000e:
+	li	a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 33
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -59,9 +59,9 @@ func000000000000000e:
 	ret
 
 func000000000000004e:
+	li	a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 33
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -69,9 +69,9 @@ func000000000000004e:
 	ret
 
 func000000000000002e:
+	li	a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 33
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -79,9 +79,9 @@ func000000000000002e:
 	ret
 
 func000000000000006e:
+	li	a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 33
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -89,9 +89,9 @@ func000000000000006e:
 	ret
 
 func000000000000006f:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 32
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -109,9 +109,9 @@ func000000000000002d:
 	ret
 
 func000000000000005c:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 32
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 2

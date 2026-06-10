@@ -13,15 +13,15 @@ func0000000000000107:
 	ret
 
 func0000000000000090:
-	sltiu	a0, a0, 64
 	slli	a1, a1, 6
+	sltiu	a0, a0, 64
 	addi	a1, a1, -64
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000091:
-	sltiu	a0, a0, 64
 	slli	a1, a1, 3
+	sltiu	a0, a0, 64
 	addi	a1, a1, -8
 	czero.nez	a0, a1, a0
 	ret

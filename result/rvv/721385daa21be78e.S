@@ -8,11 +8,11 @@ func000000000000001c:
 	ret
 
 func000000000000003e:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v8, v12, v8
 	lui	a0, 4
-	vadd.vx	v8, v8, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 15
+	vadd.vv	v8, v12, v8
+	vadd.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 

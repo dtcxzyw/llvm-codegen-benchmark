@@ -1,8 +1,8 @@
 func0000000000001718:
-	sext.w	a0, a0
 	sext.w	a2, a2
-	sext.w	a1, a1
+	sext.w	a0, a0
 	negw	a3, a2
+	sext.w	a1, a1
 	max	a2, a2, a3
 	negw	a3, a1
 	max	a1, a1, a3

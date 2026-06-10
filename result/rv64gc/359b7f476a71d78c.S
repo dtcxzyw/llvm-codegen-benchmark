@@ -3,9 +3,9 @@ func0000000000000002:
 	slli	a1, a1, 63
 	addi	a2, a2, -1
 	srai	a1, a1, 63
+	lui	a3, 262144
 	and	a1, a1, a2
-	lui	a2, 262144
-	addi	a2, a2, 176
+	addi	a2, a3, 176
 	andi	a1, a1, 260
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -19,9 +19,9 @@ func0000000000000000:
 .LBB1_2:
 	slli	a1, a1, 63
 	srai	a1, a1, 63
+	lui	a3, 8
 	and	a1, a1, a2
-	lui	a2, 8
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

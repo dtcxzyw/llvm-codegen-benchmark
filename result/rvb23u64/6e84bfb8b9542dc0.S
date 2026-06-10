@@ -23,8 +23,8 @@ func0000000000000087:
 	ret
 
 func0000000000000006:
-	sh1add	a0, a2, a0
 	zext.b	a1, a1
+	sh1add	a0, a2, a0
 	slli	a1, a1, 20
 	or	a0, a0, a1
 	sext.w	a0, a0

@@ -67,8 +67,8 @@ func00000000000001a1:
 	add	a1, a1, a2
 	li	a2, 31
 	add	a0, a0, a1
-	li	a1, 27
 	slli	a2, a2, 11
+	li	a1, 27
 	and	a0, a0, a2
 	slli	a1, a1, 11
 	xor	a0, a0, a1

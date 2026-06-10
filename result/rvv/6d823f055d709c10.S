@@ -29,12 +29,13 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vand.vi	v8, v8, 1
 	li	a0, 257
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v10, a0
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vzext.vf4	v10, v8
-	vmv.v.x	v11, a0
-	vwsll.vv	v8, v11, v10
+	vzext.vf4	v11, v8
+	vwsll.vv	v8, v10, v11
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000000a:
-	sext.w	a0, a0
 	li	a2, -1086
+	sext.w	a0, a0
 	bge	a2, a0, .LBB0_2
 	li	a0, 53
 	ret
@@ -13,8 +13,8 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	srliw	a0, a0, 2
 	li	a2, 1724
+	srliw	a0, a0, 2
 	bgeu	a2, a0, .LBB1_2
 	li	a0, 63
 	ret

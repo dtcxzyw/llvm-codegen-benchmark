@@ -1,7 +1,7 @@
 func0000000000000318:
+	li	a0, 36
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 36
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vmv.v.i	v8, 0
@@ -14,12 +14,12 @@ func0000000000000318:
 	.quad	5756111188138146979
 func0000000000000042:
 	lui	a0, %hi(.LCPI1_0)
-	lui	a1, %hi(.LCPI1_1)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	ld	a1, %lo(.LCPI1_1)(a1)
+	lui	a1, %hi(.LCPI1_1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v12, v10, a0
-	vmseq.vx	v10, v8, a1
+	ld	a0, %lo(.LCPI1_1)(a1)
+	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -71,9 +71,9 @@ func0000000000000050:
 	ret
 
 func000000000000028c:
+	li	a0, -59
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vi	v12, v10, 0
-	li	a0, -59
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vmv.v.i	v8, 0

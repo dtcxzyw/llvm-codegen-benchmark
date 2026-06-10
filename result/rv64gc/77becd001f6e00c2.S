@@ -8,9 +8,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	slli	a1, a0, 48
-	lui	a2, 16656
-	mulhu	a1, a1, a2
+	lui	a1, 16656
+	slli	a2, a0, 48
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	sub	a0, a0, a1
 	slli	a0, a0, 48

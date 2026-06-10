@@ -6,24 +6,23 @@ func0000000000000001:
 	and	a0, a0, a2
 	lui	a2, 748983
 	add	a0, a0, a1
+	addi	a1, a2, -585
+	mulw	a0, a0, a1
 	lui	a1, 149797
-	addi	a2, a2, -585
-	mulw	a0, a0, a2
 	addi	a1, a1, -1755
 	sltu	a0, a0, a1
 	ret
 
+.LCPI1_0:
+	.quad	2635249153617166336
 func0000000000000038:
 	andi	a0, a0, 1
-	lui	a2, 293
+	lui	a2, %hi(.LCPI1_0)
 	slli	a0, a0, 2
-	addi	a2, a2, -1755
+	ld	a2, %lo(.LCPI1_0)(a2)
 	add	a0, a0, a1
-	slli	a2, a2, 12
 	slli	a1, a0, 32
-	addi	a2, a2, -1755
 	srli	a1, a1, 32
-	slli	a2, a2, 29
 	mulhu	a1, a1, a2
 	slli	a2, a1, 3
 	sub	a1, a1, a2
@@ -35,9 +34,9 @@ func0000000000000038:
 func0000000000000021:
 	andi	a0, a0, 1
 	slli	a0, a0, 2
+	lui	a2, 748983
 	add	a0, a0, a1
-	lui	a1, 748983
-	addi	a1, a1, -585
+	addi	a1, a2, -585
 	mulw	a0, a0, a1
 	lui	a1, 149797
 	addi	a1, a1, -1755

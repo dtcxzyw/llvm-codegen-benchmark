@@ -1,7 +1,7 @@
 func000000000000001b:
 	slli	a2, a2, 48
-	slli	a1, a1, 32
 	srli	a2, a2, 16
+	slli	a1, a1, 32
 	or	a0, a0, a2
 	srli	a1, a1, 32
 	or	a0, a0, a1
@@ -40,8 +40,8 @@ func0000000000000010:
 
 func000000000000001a:
 	slli	a2, a2, 48
-	slli	a1, a1, 32
 	srli	a2, a2, 24
+	slli	a1, a1, 32
 	or	a0, a0, a2
 	srli	a1, a1, 32
 	or	a0, a0, a1

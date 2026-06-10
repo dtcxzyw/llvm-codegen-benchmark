@@ -17,11 +17,11 @@ func00000000000001a4:
 	ret
 
 func0000000000000046:
-	sext.w	a2, a1
-	lui	a3, 15
-	czero.eqz	a1, a1, a2
-	addi	a3, a3, -1440
-	czero.nez	a2, a3, a2
+	lui	a2, 15
+	sext.w	a3, a1
+	addi	a2, a2, -1440
+	czero.eqz	a1, a1, a3
+	czero.nez	a2, a2, a3
 	or	a1, a1, a2
 	zext.w	a1, a1
 	slt	a0, a0, a1

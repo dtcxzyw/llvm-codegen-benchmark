@@ -194,8 +194,8 @@ func0000000000000024:
 	beqz	a2, .LBB22_2
 	mv	a0, a1
 .LBB22_2:
-	sext.w	a0, a0
 	lui	a1, 419430
+	sext.w	a0, a0
 	addi	a1, a1, 1638
 	sltu	a0, a0, a1
 	ret

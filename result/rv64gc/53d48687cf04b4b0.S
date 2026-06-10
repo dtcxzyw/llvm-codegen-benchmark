@@ -66,9 +66,9 @@ func0000000000000037:
 
 func0000000000000018:
 	slli	a2, a2, 32
+	srli	a2, a2, 8
 	or	a0, a0, a1
 	li	a1, -1
-	srli	a2, a2, 8
 	or	a0, a0, a2
 	slli	a1, a1, 62
 	or	a0, a0, a1
@@ -76,9 +76,9 @@ func0000000000000018:
 
 func0000000000000019:
 	slli	a2, a2, 32
+	srli	a2, a2, 8
 	or	a0, a0, a1
 	li	a1, -1
-	srli	a2, a2, 8
 	or	a0, a0, a2
 	slli	a1, a1, 62
 	or	a0, a0, a1

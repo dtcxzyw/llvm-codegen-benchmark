@@ -1,8 +1,8 @@
 func0000000000000141:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, -5
-	lui	a0, 748983
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 748983
 	addi	a0, a0, -585
 	vmul.vx	v8, v8, a0
 	lui	a0, 149797
@@ -15,9 +15,9 @@ func0000000000000101:
 	addi	a0, a0, -1537
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
+	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 429094
 	addi	a0, a0, 313
-	vmerge.vvm	v8, v10, v8, v0
 	vmul.vx	v8, v8, a0
 	lui	a0, 1
 	vror.vi	v8, v8, 6
@@ -28,8 +28,8 @@ func0000000000000101:
 func0000000000000158:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, -5
-	lui	a0, 149797
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 149797
 	addi	a0, a0, -1755
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10

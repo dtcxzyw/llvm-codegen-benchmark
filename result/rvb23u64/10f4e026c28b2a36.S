@@ -110,9 +110,9 @@ func000000000000002c:
 
 func000000000000004a:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	addi	a3, a3, -1
 	addw	a2, a2, a3
+	srliw	a1, a1, 31
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -120,9 +120,9 @@ func000000000000004a:
 
 func0000000000000046:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	addi	a3, a3, -1
 	addw	a2, a2, a3
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -174,10 +174,10 @@ func0000000000000064:
 
 func0000000000000054:
 	lui	a3, 64
-	srliw	a1, a1, 18
 	addi	a3, a3, 1
-	sltiu	a1, a1, 5
+	srliw	a1, a1, 18
 	addw	a2, a2, a3
+	sltiu	a1, a1, 5
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

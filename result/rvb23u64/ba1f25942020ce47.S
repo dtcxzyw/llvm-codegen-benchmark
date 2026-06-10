@@ -6,9 +6,9 @@ func0000000000000001:
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 26
+	lui	a4, 244141
 	add	a2, a2, a3
-	lui	a3, 244141
-	addi	a3, a3, -1536
+	addi	a3, a4, -1536
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	srai	a1, a1, 63

@@ -23,8 +23,8 @@ func000000000000005d:
 	ret
 
 func0000000000000060:
-	slli	a0, a0, 2
 	sub	a1, a1, a2
+	slli	a0, a0, 2
 	sub	a1, a1, a0
 	andi	a0, a1, -4
 	addi	a0, a0, 4

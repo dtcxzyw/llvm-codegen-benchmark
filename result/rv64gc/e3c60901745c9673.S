@@ -1,6 +1,6 @@
 func0000000000000022:
-	fadd.d	fa4, fa0, fa0
 	li	a0, -1025
+	fadd.d	fa4, fa0, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	flt.d	a0, fa4, fa5
@@ -32,8 +32,8 @@ func0000000000000042:
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	lui	a0, 32973
-	slli	a0, a0, 35
 	fmul.d	fa4, fa0, fa5
+	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
 	flt.d	a0, fa5, fa4
 	bnez	a0, .LBB2_2

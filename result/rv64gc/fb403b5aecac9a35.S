@@ -1,6 +1,6 @@
 func0000000000000068:
-	sext.w	a0, a0
 	fcvt.w.s	a1, fa1, rtz
+	sext.w	a0, a0
 	blt	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -12,20 +12,20 @@ func0000000000000068:
 	ret
 
 func000000000000000a:
-	sext.w	a1, a0
-	fcvt.w.s	a0, fa1, rtz
-	blt	a0, a1, .LBB1_2
-	mv	a0, a1
+	fcvt.w.s	a1, fa1, rtz
+	sext.w	a0, a0
+	blt	a1, a0, .LBB1_2
+	mv	a1, a0
 .LBB1_2:
-	fcvt.w.s	a1, fa0, rtz
-	srai	a2, a1, 63
-	or	a1, a1, a2
-	slt	a0, a0, a1
+	fcvt.w.s	a0, fa0, rtz
+	srai	a2, a0, 63
+	or	a0, a0, a2
+	slt	a0, a1, a0
 	ret
 
 func000000000000006a:
-	sext.w	a0, a0
 	fcvt.w.s	a1, fa1, rtz
+	sext.w	a0, a0
 	blt	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:

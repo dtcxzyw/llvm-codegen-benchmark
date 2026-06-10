@@ -10,8 +10,8 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	zext.b	a1, a1
 	li	a2, 2
+	zext.b	a1, a1
 	beq	a1, a2, .LBB1_2
 	li	a1, 992
 	slliw	a0, a0, 24
@@ -26,10 +26,10 @@ func000000000000000c:
 
 func0000000000000008:
 	zext.b	a1, a1
-	lui	a2, 525312
 	addi	a1, a1, -2
 	snez	a1, a1
 	addi	a1, a1, -1
+	lui	a2, 525312
 	and	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1

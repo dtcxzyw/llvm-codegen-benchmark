@@ -56,23 +56,23 @@ func0000000000000008:
 
 func000000000000001d:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, -1
 	vmul.vv	v8, v8, v10
-	vmul.vv	v8, v8, v12
+	vadd.vi	v10, v12, -1
+	vmul.vv	v8, v8, v10
 	ret
 
 func000000000000001c:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, -1
 	vmul.vv	v8, v8, v10
-	vmul.vv	v8, v8, v12
+	vadd.vi	v10, v12, -1
+	vmul.vv	v8, v8, v10
 	ret
 
 func0000000000000011:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v12, v12, 3
 	vmul.vv	v8, v8, v10
-	vmul.vv	v8, v8, v12
+	vadd.vi	v10, v12, 3
+	vmul.vv	v8, v8, v10
 	ret
 
 func0000000000000001:

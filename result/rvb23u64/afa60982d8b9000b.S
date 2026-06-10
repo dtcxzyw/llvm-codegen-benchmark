@@ -48,9 +48,9 @@ func00000000000000c8:
 	ret
 
 func0000000000000088:
-	sext.w	a0, a0
 	addiw	a1, a1, -1
 	li	a2, 1
+	sext.w	a0, a0
 	maxu	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

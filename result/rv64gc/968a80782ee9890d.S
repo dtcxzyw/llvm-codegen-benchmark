@@ -1,12 +1,12 @@
 func0000000000000004:
 	li	a1, 21
-	lui	a2, 456528
 	slli	a1, a1, 10
 	add	a0, a0, a1
 	slli	a1, a0, 48
+	lui	a2, 456528
 	mulhu	a1, a1, a2
-	li	a2, 588
 	srli	a1, a1, 24
+	li	a2, 588
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	slli	a0, a0, 48
@@ -17,13 +17,13 @@ func0000000000000004:
 
 func000000000000000c:
 	li	a1, 21
-	lui	a2, 456528
 	slli	a1, a1, 10
 	add	a0, a0, a1
 	slli	a1, a0, 48
+	lui	a2, 456528
 	mulhu	a1, a1, a2
-	li	a2, 588
 	srli	a1, a1, 24
+	li	a2, 588
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	slli	a0, a0, 48

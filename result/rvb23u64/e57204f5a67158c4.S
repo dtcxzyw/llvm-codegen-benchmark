@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	xori	a0, a0, 1
 	andi	a1, a1, 10
+	xori	a0, a0, 1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

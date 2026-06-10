@@ -13,8 +13,8 @@ func0000000000000058:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 1280
 	vmseq.vi	v12, v10, 1
+	li	a0, 1280
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
@@ -44,8 +44,8 @@ func0000000000000302:
 	addi	a0, a0, -2048
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 1152
 	vmsne.vi	v12, v10, 0
+	li	a0, 1152
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

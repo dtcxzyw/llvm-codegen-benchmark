@@ -1,10 +1,10 @@
 func0000000000000003:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vv	v20, v16, v12
 	fli.s	fa5, 1.0
-	vmnot.m	v0, v20
-	vfmv.v.f	v12, fa5
-	vmerge.vvm	v8, v12, v8, v0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmv.v.f	v20, fa5
+	vmfle.vv	v24, v16, v12
+	vmnot.m	v0, v24
+	vmerge.vvm	v8, v20, v8, v0
 	ret
 
 func0000000000000004:
@@ -38,22 +38,22 @@ func000000000000000a:
 	ret
 
 func000000000000000d:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vv	v20, v12, v16
 	fli.s	fa5, 1.0
-	vmnot.m	v0, v20
-	vfmv.v.f	v12, fa5
-	vmerge.vvm	v8, v12, v8, v0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfmv.v.f	v20, fa5
+	vmflt.vv	v24, v12, v16
+	vmnot.m	v0, v24
+	vmerge.vvm	v8, v20, v8, v0
 	ret
 
 func0000000000000005:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vv	v20, v12, v16
 	lui	a0, 257087
-	vmnot.m	v0, v20
 	addi	a0, a0, -235
-	vmv.v.x	v12, a0
-	vmerge.vvm	v8, v12, v8, v0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmv.v.x	v20, a0
+	vmfle.vv	v24, v12, v16
+	vmnot.m	v0, v24
+	vmerge.vvm	v8, v20, v8, v0
 	ret
 
 func000000000000000c:

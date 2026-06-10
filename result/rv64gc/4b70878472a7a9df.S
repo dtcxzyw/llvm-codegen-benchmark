@@ -17,10 +17,10 @@ func000000000000001b:
 func000000000000000f:
 	andi	a1, a1, 1
 	slli	a2, a2, 32
-	srli	a2, a2, 24
 	addi	a1, a1, -1
-	or	a0, a0, a2
+	srli	a2, a2, 24
 	srli	a1, a1, 40
+	or	a0, a0, a2
 	slli	a1, a1, 40
 	or	a0, a0, a1
 	ret
@@ -28,8 +28,8 @@ func000000000000000f:
 func000000000000000b:
 	andi	a1, a1, 1
 	slli	a2, a2, 32
-	or	a0, a0, a2
 	addi	a1, a1, -1
+	or	a0, a0, a2
 	andi	a1, a1, 8
 	or	a0, a0, a1
 	ret

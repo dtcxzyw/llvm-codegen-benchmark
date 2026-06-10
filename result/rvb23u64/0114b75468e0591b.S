@@ -1,6 +1,6 @@
 func0000000000000302:
-	zext.b	a0, a0
 	andi	a1, a1, 97
+	zext.b	a0, a0
 	snez	a1, a1
 	czero.nez	a0, a1, a0
 	ret

@@ -16,10 +16,10 @@ func0000000000000005:
 	ret
 
 func0000000000000029:
-	sext.w	a3, a2
-	lui	a4, 65536
-	addi	a4, a4, -1
-	blt	a4, a3, .LBB2_2
+	lui	a3, 65536
+	sext.w	a4, a2
+	addi	a3, a3, -1
+	blt	a3, a4, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
 	mulw	a0, a1, a0

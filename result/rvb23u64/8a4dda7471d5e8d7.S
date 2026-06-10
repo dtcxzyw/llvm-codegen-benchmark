@@ -1,17 +1,17 @@
 func0000000000002108:
-	sext.w	a0, a0
 	sltiu	a2, a2, 256
-	srli	a1, a1, 16
-	snez	a1, a1
+	sext.w	a0, a0
 	sltiu	a0, a0, 32
+	srli	a1, a1, 16
 	and	a0, a0, a2
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func000000000000318c:
-	sext.w	a0, a0
 	or	a1, a1, a2
+	sext.w	a0, a0
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -22,12 +22,12 @@ func000000000000318c:
 	.quad	-8753079529849560484
 func0000000000003181:
 	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
 	lui	a4, %hi(.LCPI2_1)
+	ld	a3, %lo(.LCPI2_0)(a3)
 	ld	a4, %lo(.LCPI2_1)(a4)
 	xor	a2, a2, a3
-	sext.w	a0, a0
 	xor	a1, a1, a4
+	sext.w	a0, a0
 	or	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -35,8 +35,8 @@ func0000000000003181:
 	ret
 
 func000000000000318a:
-	sext.w	a0, a0
 	or	a1, a1, a2
+	sext.w	a0, a0
 	snez	a1, a1
 	sgtz	a0, a0
 	or	a0, a0, a1

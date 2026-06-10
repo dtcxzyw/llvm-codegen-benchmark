@@ -9,8 +9,8 @@ func00000000000000aa:
 func00000000000000a8:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v10, v8, -3
-	lui	a0, 2
 	vrsub.vi	v10, v8, 3, v0.t
+	lui	a0, 2
 	addi	a0, a0, 1807
 	vmsgtu.vx	v0, v10, a0
 	ret

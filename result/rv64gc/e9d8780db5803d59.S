@@ -1,8 +1,8 @@
 func0000000000000000:
 	mv	a3, a0
+	lui	a4, 122
 	sext.w	a0, a2
-	lui	a2, 122
-	addi	a2, a2, 288
+	addi	a2, a4, 288
 	andi	a3, a3, 1
 	bgeu	a0, a2, .LBB0_3
 	beqz	a3, .LBB0_4

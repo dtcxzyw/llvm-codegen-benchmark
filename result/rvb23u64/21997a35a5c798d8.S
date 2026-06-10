@@ -30,10 +30,10 @@ func0000000000000042:
 	ret
 
 func0000000000000044:
+	flt.d	a2, fa1, fa0
 	lui	a1, %hi(.promoted_doubles.func0000000000000044)
 	addi	a1, a1, %lo(.promoted_doubles.func0000000000000044)
 	fld	fa5, 0(a1)
-	flt.d	a2, fa1, fa0
 	beqz	a2, .LBB2_4
 	flt.d	a2, fa5, fa0
 	andi	a0, a0, 1

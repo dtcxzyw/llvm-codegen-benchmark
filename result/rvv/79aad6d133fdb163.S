@@ -1,21 +1,21 @@
 func0000000000000000:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v14, v12, 0
-	vnsrl.wi	v11, v8, 0
+	vnsrl.wi	v11, v12, 0
+	vadd.vv	v11, v10, v11
+	vnsrl.wi	v10, v8, 0
 	lui	a0, 1039
-	vadd.vv	v8, v10, v14
 	addi	a0, a0, 505
-	vmacc.vx	v11, a0, v8
-	vmv.v.v	v8, v11
+	vmacc.vx	v10, a0, v11
+	vmv.v.v	v8, v10
 	ret
 
 func00000000000003b1:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v14, v12, 0
-	vnsrl.wi	v11, v8, 0
-	vadd.vv	v8, v10, v14
+	vnsrl.wi	v11, v12, 0
+	vadd.vv	v11, v10, v11
+	vnsrl.wi	v10, v8, 0
 	li	a0, 3
-	vmacc.vx	v11, a0, v8
-	vmv.v.v	v8, v11
+	vmacc.vx	v10, a0, v11
+	vmv.v.v	v8, v10
 	ret
 

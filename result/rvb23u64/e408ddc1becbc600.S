@@ -1,7 +1,7 @@
 func0000000000000000:
-	fcvt.d.l	fa5, a0
-	fli.d	fa4, 8.0
-	fmul.d	fa4, fa0, fa4
-	fdiv.d	fa0, fa4, fa5
+	fli.d	fa5, 8.0
+	fmul.d	fa5, fa0, fa5
+	fcvt.d.l	fa4, a0
+	fdiv.d	fa0, fa5, fa4
 	ret
 

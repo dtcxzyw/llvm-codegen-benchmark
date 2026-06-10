@@ -16,11 +16,11 @@ func000000000000002c:
 
 func0000000000000021:
 	li	a2, -7
-	not	a0, a0
 	slli.uw	a2, a2, 29
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	xor	a1, a1, a2
+	not	a0, a0
 	seqz	a1, a1
 	bexti	a0, a0, 29
 	xor	a0, a0, a1

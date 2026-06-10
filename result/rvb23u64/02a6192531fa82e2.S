@@ -1,6 +1,6 @@
 func000000000000001f:
-	srli	a0, a0, 10
 	li	a1, 64
+	srli	a0, a0, 10
 	clz	a0, a0
 	sub	a1, a1, a0
 	li	a0, 7

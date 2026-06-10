@@ -12,8 +12,8 @@ func0000000000000000:
 	bnez	a3, .LBB1_2
 	lui	a2, 2
 .LBB1_2:
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	not	a0, a0
 	ret
 

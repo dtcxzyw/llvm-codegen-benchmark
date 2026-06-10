@@ -1,6 +1,6 @@
 func00000000000002e4:
-	srai	a2, a2, 2
 	slli	a1, a1, 32
+	srai	a2, a2, 2
 	srli	a1, a1, 32
 	sub	a1, a1, a2
 	srai	a0, a0, 2

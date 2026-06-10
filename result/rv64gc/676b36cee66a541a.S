@@ -1,6 +1,6 @@
 func0000000000000000:
-	srli	a0, a0, 3
 	lui	a1, 16
+	srli	a0, a0, 3
 	addi	a1, a1, -8
 	bgeu	a1, a0, .LBB0_3
 	lui	a1, 64

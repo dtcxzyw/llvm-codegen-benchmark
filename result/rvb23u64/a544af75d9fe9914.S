@@ -16,10 +16,10 @@ func000000000000006a:
 
 func000000000000002a:
 	sh2add	a2, a2, a2
-	sh2add	a2, a2, a2
-	slli	a2, a2, 4
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a1, a2, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
 

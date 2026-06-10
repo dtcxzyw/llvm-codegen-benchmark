@@ -4,8 +4,8 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	andi	a1, a1, -8
 	li	a0, 1123
+	andi	a1, a1, -8
 	sh3add	a0, a0, a1
 	ret
 

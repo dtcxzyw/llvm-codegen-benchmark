@@ -1,7 +1,7 @@
 func0000000000000000:
+	li	a3, 365
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 365
-	mul	a0, a0, a2
 	subw	a0, a0, a1
 	ret
 
@@ -12,8 +12,8 @@ func0000000000000015:
 	ret
 
 func0000000000000004:
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 
@@ -26,16 +26,16 @@ func000000000000001d:
 	ret
 
 func0000000000000005:
+	lui	a3, 24
+	addi	a3, a3, 8
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 24
-	addi	a2, a2, 8
-	mul	a0, a0, a2
 	subw	a0, a0, a1
 	ret
 
 func000000000000003d:
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 

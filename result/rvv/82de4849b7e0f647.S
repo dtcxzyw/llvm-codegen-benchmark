@@ -69,9 +69,9 @@ func0000000000000184:
 	ret
 
 func000000000000016a:
+	li	a0, 179
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vv	v14, v12, v10
-	li	a0, 179
 	vmsgt.vx	v10, v8, a0
 	vmxor.mm	v0, v10, v14
 	ret

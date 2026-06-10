@@ -1,7 +1,7 @@
 func0000000000000001:
 	sub	a1, a1, a2
-	lui	a2, 32704
 	slli	a1, a1, 55
+	lui	a2, 32704
 	srli	a1, a1, 37
 	andn	a0, a0, a2
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000001:
 
 func000000000000000b:
 	sub	a1, a1, a2
-	lui	a2, 992
 	slli	a1, a1, 59
+	lui	a2, 992
 	srli	a1, a1, 42
 	andn	a0, a0, a2
 	or	a0, a0, a1

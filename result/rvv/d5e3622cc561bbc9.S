@@ -1,7 +1,7 @@
 func0000000000000015:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 0
-	li	a0, 31
 	vadd.vx	v10, v10, a0
 	li	a0, -118
 	vmerge.vxm	v10, v10, a0, v0
@@ -9,10 +9,10 @@ func0000000000000015:
 	ret
 
 func0000000000000010:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v12, 0
 	lui	a0, 648056
 	addi	a1, a0, -1607
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmseq.vi	v0, v12, 0
 	vadd.vx	v10, v10, a1
 	addi	a0, a0, -1608
 	vmerge.vxm	v10, v10, a0, v0

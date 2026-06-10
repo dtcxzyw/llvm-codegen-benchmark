@@ -68,8 +68,8 @@ func000000000000000a:
 	ret
 
 func000000000000000b:
-	slli	a1, a1, 4
 	li	a2, 9
+	slli	a1, a1, 4
 	slli	a2, a2, 10
 	add	a1, a1, a2
 	lui	a2, 1008
@@ -79,8 +79,8 @@ func000000000000000b:
 
 func000000000000000f:
 	slli	a1, a1, 2
-	lui	a2, 4
 	addi	a1, a1, 2047
+	lui	a2, 4
 	addi	a1, a1, 257
 	addi	a2, a2, -256
 	and	a1, a1, a2

@@ -1,7 +1,7 @@
 func0000000000000028:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 2
 	sltu	a0, a2, a0
@@ -9,8 +9,8 @@ func0000000000000028:
 
 func0000000000000034:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	sltu	a0, a0, a2
@@ -18,8 +18,8 @@ func0000000000000034:
 
 func0000000000000038:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	sltu	a0, a2, a0
@@ -34,8 +34,8 @@ func0000000000000268:
 
 func0000000000000021:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	xor	a0, a0, a2
@@ -58,8 +58,8 @@ func0000000000000668:
 
 func0000000000000228:
 	addi	a2, a2, -3
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 4
 	sltu	a0, a2, a0
@@ -67,8 +67,8 @@ func0000000000000228:
 
 func0000000000000029:
 	addi	a2, a2, -1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 4
 	sltu	a0, a0, a2
@@ -77,8 +77,8 @@ func0000000000000029:
 
 func0000000000000424:
 	addi	a2, a2, 4
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	sltu	a0, a0, a2
@@ -86,8 +86,8 @@ func0000000000000424:
 
 func0000000000000428:
 	addi	a2, a2, 4
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	sltu	a0, a2, a0
@@ -111,8 +111,8 @@ func0000000000000269:
 
 func0000000000000024:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 2
 	sltu	a0, a0, a2
@@ -120,8 +120,8 @@ func0000000000000024:
 
 func0000000000000224:
 	addi	a2, a2, -1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 4
 	sltu	a0, a0, a2
@@ -129,8 +129,8 @@ func0000000000000224:
 
 func0000000000000025:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	sltu	a0, a2, a0
@@ -139,8 +139,8 @@ func0000000000000025:
 
 func0000000000000421:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	xor	a0, a0, a2

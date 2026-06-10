@@ -26,9 +26,9 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
+	lui	a3, 1048575
 	sub	a1, a1, a2
-	lui	a2, 1048575
-	and	a0, a0, a2
+	and	a0, a0, a3
 	sltu	a0, a0, a1
 	ret
 

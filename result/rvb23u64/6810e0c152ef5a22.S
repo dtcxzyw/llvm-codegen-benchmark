@@ -7,8 +7,8 @@ func000000000000003f:
 	ret
 
 func000000000000007f:
-	negw	a2, a2
 	sext.w	a1, a1
+	negw	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

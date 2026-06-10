@@ -1,7 +1,7 @@
 func0000000000000426:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	addiw	a1, a1, 25
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
 	slti	a0, a0, 2024
@@ -9,9 +9,9 @@ func0000000000000426:
 	ret
 
 func000000000000042a:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	addiw	a1, a1, 39
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
 	slti	a0, a0, 2009

@@ -12,13 +12,13 @@ func00000000000001e1:
 	ret
 
 func00000000000000b4:
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, 576
+	addi	a1, a2, 576
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -8
-	and	a0, a0, a1
+	addi	a2, a2, -8
+	and	a0, a0, a2
 	sltiu	a0, a0, 1000
 	ret
 
@@ -49,8 +49,8 @@ func00000000000000e1:
 
 func0000000000000008:
 	add	a0, a0, a1
-	lui	a1, 1
 	addiw	a0, a0, 7
+	lui	a1, 1
 	andi	a0, a0, -8
 	addi	a1, a1, -1384
 	sltu	a0, a1, a0

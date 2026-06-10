@@ -147,9 +147,9 @@ func0000000000000184:
 
 func0000000000000105:
 	lui	a3, 24
+	addi	a3, a3, 1696
 	sltu	a0, a1, a0
-	addi	a1, a3, 1696
-	sltu	a1, a1, a2
+	sltu	a1, a3, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -211,8 +211,8 @@ func0000000000000039:
 
 func000000000000014b:
 	li	a3, -5
-	slt	a0, a0, a1
 	srli	a3, a3, 1
+	slt	a0, a0, a1
 	slt	a1, a3, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -309,9 +309,9 @@ func00000000000000c7:
 
 func000000000000010b:
 	lui	a3, 39
+	addi	a3, a3, 256
 	slt	a0, a0, a1
-	addi	a1, a3, 256
-	sltu	a1, a1, a2
+	sltu	a1, a3, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

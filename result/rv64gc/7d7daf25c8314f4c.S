@@ -9,8 +9,8 @@ func00000000000007f4:
 
 func000000000000076c:
 	slli	a2, a2, 8
-	slli	a1, a1, 16
 	or	a0, a0, a2
+	slli	a1, a1, 16
 	or	a0, a0, a1
 	sext.w	a0, a0
 	lui	a1, 131088
@@ -20,8 +20,8 @@ func000000000000076c:
 
 func0000000000000761:
 	slli	a2, a2, 8
-	slli	a1, a1, 16
 	or	a0, a0, a2
+	slli	a1, a1, 16
 	or	a0, a0, a1
 	sext.w	a0, a0
 	lui	a1, 131088
@@ -141,12 +141,12 @@ func00000000000007e8:
 
 func00000000000005e1:
 	slli	a2, a2, 24
-	slli	a1, a1, 8
 	or	a0, a0, a2
-	lui	a2, 1047952
+	slli	a1, a1, 8
 	or	a0, a0, a1
+	lui	a1, 1047952
 	sext.w	a0, a0
-	addi	a1, a2, -256
+	addi	a1, a1, -256
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

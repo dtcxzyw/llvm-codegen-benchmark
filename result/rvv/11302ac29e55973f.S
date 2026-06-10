@@ -1,7 +1,7 @@
 func0000000000000001:
-	lui	a0, 1024
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 1
+	lui	a0, 1024
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vadd.vx	v10, v12, a0
@@ -10,9 +10,9 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	li	a0, 23
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
+	li	a0, 23
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vadd.vx	v10, v12, a0
 	vand.vi	v8, v10, -8, v0.t

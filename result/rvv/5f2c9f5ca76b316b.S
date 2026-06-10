@@ -30,9 +30,9 @@ func0000000000000108:
 	ret
 
 func0000000000000218:
+	li	a0, 25
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vi	v9, v9, 15
-	li	a0, 25
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v8, v8, v9
 	vmor.mm	v0, v0, v8

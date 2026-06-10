@@ -26,9 +26,9 @@ func000000000000000c:
 	ret
 
 func000000000000002a:
-	addi	a1, a1, 1
 	li	a2, -1
 	slli	a2, a2, 63
+	addi	a1, a1, 1
 	addi	a2, a2, 7
 	and	a1, a1, a2
 	sgtz	a1, a1

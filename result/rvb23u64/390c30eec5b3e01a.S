@@ -1,6 +1,6 @@
 func000000000000007b:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a4, a4, a2
 	add	a0, a0, a1
@@ -12,8 +12,8 @@ func000000000000007b:
 	ret
 
 func0000000000000052:
-	add	a1, a1, a3
 	add	a2, a2, a0
+	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a4, a4, a2
 	add	a0, a0, a1

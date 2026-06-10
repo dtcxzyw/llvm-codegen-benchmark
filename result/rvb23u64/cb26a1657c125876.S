@@ -18,9 +18,9 @@ func0000000000000005:
 	zext.h	a2, a2
 	lui	a3, 16
 	addi	a3, a3, -1
+	lui	a4, 7699
 	xor	a2, a2, a3
-	lui	a3, 7699
-	addi	a3, a3, 896
+	addi	a3, a4, 896
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2

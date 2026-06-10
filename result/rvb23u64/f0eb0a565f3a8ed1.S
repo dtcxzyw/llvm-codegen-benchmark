@@ -1,8 +1,8 @@
 func0000000000000012:
 	sub	a2, a2, a1
 	li	a1, -15
-	slli	a0, a0, 3
 	srli	a1, a1, 1
+	slli	a0, a0, 3
 	sltu	a1, a2, a1
 	addi	a0, a0, 8
 	czero.eqz	a0, a0, a1

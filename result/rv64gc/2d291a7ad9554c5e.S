@@ -1,22 +1,22 @@
 func0000000000000001:
-	zext.b	a1, a1
 	li	a2, 43
+	zext.b	a1, a1
 	beq	a1, a2, .LBB0_2
 	neg	a0, a0
 .LBB0_2:
 	ret
 
 func0000000000000024:
-	zext.b	a1, a1
 	li	a2, 10
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB1_2
 	neg	a0, a0
 .LBB1_2:
 	ret
 
 func0000000000000021:
-	zext.b	a1, a1
 	li	a2, 45
+	zext.b	a1, a1
 	beq	a1, a2, .LBB2_2
 	neg	a0, a0
 .LBB2_2:

@@ -1,11 +1,10 @@
 func00000000000000c3:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v12, v12, 8
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vi	v0, v10, 2
-	li	a0, 512
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vxm	v10, v12, a0, v0
+	vsll.vi	v10, v12, 8
+	li	a0, 512
+	vmerge.vxm	v10, v10, a0, v0
 	vor.vv	v8, v10, v8
 	ret
 

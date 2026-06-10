@@ -23,8 +23,8 @@ func000000000000002d:
 	ret
 
 func0000000000000004:
-	sraiw	a1, a1, 16
 	slli	a0, a0, 48
+	sraiw	a1, a1, 16
 	srai	a0, a0, 15
 	mul	a0, a0, a1
 	ret

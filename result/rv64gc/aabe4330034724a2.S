@@ -9,8 +9,8 @@ func0000000000000017:
 
 func0000000000000005:
 	lui	a3, 1048560
-	slli	a1, a1, 49
 	srli	a3, a3, 15
+	slli	a1, a1, 49
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -41,8 +41,8 @@ func0000000000000004:
 
 func000000000000001f:
 	lui	a3, 128
-	slli	a1, a1, 19
 	addi	a3, a3, -8
+	slli	a1, a1, 19
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -63,8 +63,8 @@ func0000000000000014:
 
 func000000000000001c:
 	lui	a3, 1044480
-	slli	a1, a1, 58
 	srli	a3, a3, 12
+	slli	a1, a1, 58
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

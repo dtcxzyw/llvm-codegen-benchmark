@@ -14,15 +14,15 @@ func000000000000000c:
 
 func000000000000000a:
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	slti	a0, a0, 16
+	xori	a1, a1, 1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000004:
-	xori	a1, a1, 1
 	srliw	a0, a0, 16
+	xori	a1, a1, 1
 	sltiu	a0, a0, 17
 	and	a0, a0, a1
 	ret

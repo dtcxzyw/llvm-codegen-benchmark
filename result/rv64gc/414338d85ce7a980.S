@@ -8,8 +8,8 @@ func00000000000000ff:
 
 func000000000000007d:
 	zext.b	a2, a2
-	slli	a0, a0, 8
 	add	a1, a1, a2
+	slli	a0, a0, 8
 	lui	a2, 1046785
 	add	a0, a0, a1
 	addi	a1, a2, 96
@@ -18,8 +18,8 @@ func000000000000007d:
 
 func000000000000007f:
 	zext.b	a2, a2
-	slli	a0, a0, 8
 	add	a1, a1, a2
+	slli	a0, a0, 8
 	lui	a2, 1045508
 	add	a0, a0, a1
 	addi	a1, a2, 128

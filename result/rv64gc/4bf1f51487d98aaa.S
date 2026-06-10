@@ -14,37 +14,37 @@ func0000000000000041:
 	mul	a1, a1, a2
 	slliw	a2, a1, 31
 	srliw	a1, a1, 1
+	lui	a3, 20972
 	or	a1, a1, a2
-	lui	a2, 20972
-	addi	a2, a2, -1966
+	addi	a2, a3, -1966
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func000000000000006c:
-	addi	a1, a1, -59
 	lui	a2, 978671
+	addi	a1, a1, -59
 	addi	a2, a2, -273
 	mul	a1, a1, a2
 	slliw	a2, a1, 30
 	srliw	a1, a1, 2
+	lui	a3, 17476
 	or	a1, a1, a2
-	lui	a2, 17476
-	addi	a2, a2, 1091
+	addi	a2, a3, 1091
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	addi	a1, a1, -59
 	lui	a2, 978671
+	addi	a1, a1, -59
 	addi	a2, a2, -273
 	mul	a1, a1, a2
 	slliw	a2, a1, 30
 	srliw	a1, a1, 2
+	lui	a3, 17476
 	or	a1, a1, a2
-	lui	a2, 17476
-	addi	a2, a2, 1091
+	addi	a2, a3, 1091
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

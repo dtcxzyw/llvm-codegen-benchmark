@@ -51,8 +51,8 @@ func0000000000000004:
 	ret
 
 func0000000000000060:
-	andi	a1, a1, 7
 	li	a2, 2
+	andi	a1, a1, 7
 	bltu	a2, a1, .LBB5_2
 	li	a1, 16
 	add	a0, a0, a1
@@ -63,8 +63,8 @@ func0000000000000060:
 	ret
 
 func0000000000000050:
-	andi	a1, a1, 7
 	li	a2, 3
+	andi	a1, a1, 7
 	bltu	a1, a2, .LBB6_2
 	li	a1, 72
 	add	a0, a0, a1

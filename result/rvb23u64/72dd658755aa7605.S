@@ -1,10 +1,10 @@
 func00000000000000e4:
-	srli	a0, a0, 32
 	zext.b	a1, a1
-	lui	a2, 2
-	snez	a0, a0
 	addi	a1, a1, -6
+	lui	a2, 2
+	srli	a0, a0, 32
 	czero.eqz	a1, a2, a1
+	snez	a0, a0
 	ori	a1, a1, 560
 	bseti	a1, a1, 14
 	slli	a0, a0, 3
@@ -12,11 +12,11 @@ func00000000000000e4:
 	ret
 
 func00000000000000e1:
-	snez	a0, a0
 	zext.b	a1, a1
-	lui	a2, 2
 	addi	a1, a1, -6
+	lui	a2, 2
 	czero.eqz	a1, a2, a1
+	snez	a0, a0
 	ori	a1, a1, 560
 	bseti	a1, a1, 14
 	slli	a0, a0, 3

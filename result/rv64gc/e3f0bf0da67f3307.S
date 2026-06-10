@@ -16,11 +16,11 @@ func0000000000000002:
 
 func0000000000000008:
 	fmv.d.x	fa5, zero
-	li	a0, 1023
-	feq.d	a1, fa1, fa5
-	slli	a0, a0, 52
-	fmv.d.x	fa5, a0
-	bnez	a1, .LBB1_2
+	feq.d	a0, fa1, fa5
+	li	a1, 1023
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
+	bnez	a0, .LBB1_2
 	fdiv.d	fa5, fa5, fa1
 .LBB1_2:
 	fmul.d	fa0, fa5, fa0

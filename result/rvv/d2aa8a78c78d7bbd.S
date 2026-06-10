@@ -1,10 +1,10 @@
 func0000000000000108:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsgtu.vi	v9, v8, 15
-	vand.vi	v8, v8, -16
 	li	a0, 16
-	vmsne.vx	v8, v8, a0
-	vmand.mm	v0, v9, v8
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vand.vi	v9, v8, -16
+	vmsgtu.vi	v8, v8, 15
+	vmsne.vx	v9, v9, a0
+	vmand.mm	v0, v8, v9
 	ret
 
 func0000000000000101:

@@ -1,7 +1,7 @@
 func000000000000018c:
+	li	a0, 511
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 9
-	li	a0, 511
 	vmsne.vv	v14, v8, v12
 	vmsne.vx	v8, v10, a0
 	vmand.mm	v0, v14, v8
@@ -32,9 +32,9 @@ func0000000000000101:
 	ret
 
 func0000000000000024:
+	lui	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 20
-	lui	a0, 256
 	vmseq.vv	v14, v10, v12
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14

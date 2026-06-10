@@ -1,6 +1,6 @@
 func000000000000000c:
-	addi	a0, a0, 64
 	lui	a1, 524676
+	addi	a0, a0, 64
 	addi	a1, a1, 1280
 	or	a0, a0, a1
 	zext.w	a0, a0
@@ -32,8 +32,8 @@ func0000000000000001:
 	ret
 
 func0000000000000002:
-	ori	a0, a0, 1
 	lui	a1, 8
+	ori	a0, a0, 1
 	addi	a1, a1, 18
 	add	a0, a0, a1
 	zext.w	a0, a0

@@ -1,7 +1,7 @@
 func000000000000001c:
-	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -17,9 +17,9 @@ func0000000000000004:
 	ret
 
 func000000000000001f:
-	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -27,18 +27,18 @@ func000000000000001f:
 	ret
 
 func000000000000000c:
-	li	a0, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, 31
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vand.vv	v8, v10, v8
 	ret
 
 func000000000000000e:
-	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -46,9 +46,9 @@ func000000000000000e:
 	ret
 
 func000000000000001e:
-	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
@@ -80,9 +80,9 @@ func0000000000000015:
 	ret
 
 func000000000000000f:
-	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0

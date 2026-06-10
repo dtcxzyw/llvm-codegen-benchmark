@@ -13,8 +13,8 @@ func000000000000007f:
 	ret
 
 func000000000000006f:
-	slli	a1, a1, 32
 	li	a2, -1
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	srli	a1, a1, 30

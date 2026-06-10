@@ -1,7 +1,7 @@
 func00000000000003d3:
-	li	a0, 87
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsleu.vi	v0, v8, 9
+	li	a0, 87
 	vadd.vx	v10, v8, a0
 	li	a0, 48
 	vor.vx	v10, v8, a0, v0.t
@@ -12,9 +12,9 @@ func00000000000003d3:
 	ret
 
 func00000000000002d0:
-	li	a0, 87
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsleu.vi	v0, v8, 9
+	li	a0, 87
 	vadd.vx	v10, v8, a0
 	li	a0, 48
 	vor.vx	v10, v8, a0, v0.t

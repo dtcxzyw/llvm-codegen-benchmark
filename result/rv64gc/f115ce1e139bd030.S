@@ -65,11 +65,11 @@ func0000000000000015:
 	ret
 
 func0000000000000005:
+	li	a2, 1
 	sub	a0, a0, a1
-	li	a1, 1
+	slli	a2, a2, 40
 	slli	a0, a0, 8
-	slli	a1, a1, 40
-	addi	a1, a1, -1280
+	addi	a1, a2, -1280
 	add	a0, a0, a1
 	ret
 

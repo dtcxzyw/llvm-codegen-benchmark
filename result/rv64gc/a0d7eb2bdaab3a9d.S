@@ -1,6 +1,6 @@
 func00000000000000cc:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	slti	a1, a1, 2
 	not	a1, a1
 	sltiu	a0, a0, -1
@@ -8,8 +8,8 @@ func00000000000000cc:
 	ret
 
 func00000000000000c1:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	slti	a1, a1, 2
 	not	a1, a1
 	seqz	a0, a0

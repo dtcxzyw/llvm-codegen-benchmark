@@ -13,10 +13,10 @@ func0000000000000001:
 func0000000000000003:
 	sh2add	a1, a1, a1
 	lui	a2, 838861
-	slli	a1, a1, 3
 	addi	a2, a2, -819
-	addi	a1, a1, -40
+	slli	a1, a1, 3
 	slli	a3, a2, 32
+	addi	a1, a1, -40
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
 	srli	a1, a1, 5
@@ -26,10 +26,10 @@ func0000000000000003:
 func0000000000000000:
 	sh1add	a1, a1, a1
 	lui	a2, 699051
-	slli	a1, a1, 3
 	addi	a2, a2, -1365
-	addi	a1, a1, -24
+	slli	a1, a1, 3
 	slli	a3, a2, 32
+	addi	a1, a1, -24
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
 	srli	a1, a1, 4

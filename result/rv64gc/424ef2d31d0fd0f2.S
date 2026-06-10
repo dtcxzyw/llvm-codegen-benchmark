@@ -1,10 +1,10 @@
 func0000000000000001:
 	lui	a2, 8
 	addi	a2, a2, -256
+	li	a3, 15
 	and	a1, a1, a2
-	li	a2, 15
-	slli	a2, a2, 10
-	xor	a1, a1, a2
+	slli	a3, a3, 10
+	xor	a1, a1, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -19,9 +19,9 @@ func000000000000000c:
 func0000000000000018:
 	lui	a2, 8192
 	addi	a2, a2, -2048
+	lui	a3, 4
 	and	a1, a1, a2
-	lui	a2, 4
-	addi	a2, a2, 1536
+	addi	a2, a3, 1536
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

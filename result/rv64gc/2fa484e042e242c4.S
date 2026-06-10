@@ -1,6 +1,6 @@
 func0000000000000021:
-	zext.b	a1, a1
 	li	a2, 8
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB0_2
 	li	a1, 8
 .LBB0_2:
@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000014:
-	zext.b	a1, a1
 	li	a2, 128
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB1_2
 	li	a1, 128
 .LBB1_2:
@@ -18,8 +18,8 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
-	zext.b	a1, a1
 	li	a2, 128
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB2_2
 	li	a1, 128
 .LBB2_2:
@@ -27,8 +27,8 @@ func0000000000000004:
 	ret
 
 func0000000000000034:
-	zext.b	a1, a1
 	li	a2, 2
+	zext.b	a1, a1
 	bltu	a1, a2, .LBB3_2
 	li	a1, 2
 .LBB3_2:

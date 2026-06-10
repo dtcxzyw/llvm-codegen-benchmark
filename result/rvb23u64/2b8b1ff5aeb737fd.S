@@ -13,8 +13,8 @@ func000000000000000e:
 
 func0000000000000000:
 	slli.uw	a2, a2, 3
-	slli	a0, a0, 4
 	sh3add	a2, a2, a2
+	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

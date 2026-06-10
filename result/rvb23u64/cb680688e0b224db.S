@@ -44,9 +44,9 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
+	sh2add	a0, a0, a0
 	addi	a1, a1, -1
 	lui	a2, 1040384
-	sh2add	a0, a0, a0
 	and	a1, a1, a2
 	slli	a0, a0, 4
 	add	a0, a0, a1

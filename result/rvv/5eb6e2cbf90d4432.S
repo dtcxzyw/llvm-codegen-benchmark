@@ -1,9 +1,9 @@
 func0000000000000004:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v0, v12, 0
 	lui	a0, 64
 	bseti	a0, a0, 36
 	bseti	a0, a0, 53
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmseq.vi	v0, v12, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 262145

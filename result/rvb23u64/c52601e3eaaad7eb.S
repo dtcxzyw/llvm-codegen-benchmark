@@ -8,10 +8,10 @@ func00000000000001a4:
 func00000000000001a1:
 	li	a1, 2047
 	slli	a1, a1, 52
+	li	a2, 499
 	and	a0, a0, a1
-	li	a1, 499
-	slli	a1, a1, 53
-	xor	a0, a0, a1
+	slli	a2, a2, 53
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

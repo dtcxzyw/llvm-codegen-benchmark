@@ -1,9 +1,9 @@
 func000000000000000f:
-	andi	a1, a1, 1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	slli	a3, a2, 3
 	slli	a2, a2, 6
+	andi	a1, a1, 1
 	add	a2, a2, a3
 	add	a0, a0, a2
 	bnez	a1, .LBB0_2
@@ -16,11 +16,11 @@ func000000000000000f:
 	ret
 
 func000000000000000e:
-	andi	a1, a1, 1
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	slli	a3, a2, 3
 	slli	a2, a2, 5
+	andi	a1, a1, 1
 	add	a2, a2, a3
 	add	a0, a0, a2
 	bnez	a1, .LBB1_2
@@ -43,8 +43,8 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 1
 	slli	a2, a2, 48
+	andi	a1, a1, 1
 	srli	a2, a2, 48
 	add	a0, a0, a2
 	bnez	a1, .LBB3_2

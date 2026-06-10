@@ -11,9 +11,9 @@ func0000000000000003:
 func000000000000000f:
 	slli	a2, a2, 59
 	srli	a2, a2, 41
+	lui	a3, 129024
 	or	a0, a0, a2
-	lui	a2, 129024
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -28,9 +28,9 @@ func0000000000000002:
 func0000000000000000:
 	slli	a2, a2, 3
 	andi	a2, a2, 64
+	lui	a3, 128
 	or	a0, a0, a2
-	lui	a2, 128
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -53,24 +53,24 @@ func000000000000000e:
 func000000000000000d:
 	slli	a2, a2, 56
 	srli	a2, a2, 48
+	lui	a3, 4080
 	or	a0, a0, a2
-	lui	a2, 4080
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000b:
 	slli	a2, a2, 56
-	slli	a1, a1, 48
 	srli	a2, a2, 40
+	slli	a1, a1, 48
 	or	a0, a0, a2
 	srli	a1, a1, 48
 	or	a0, a0, a1
 	ret
 
 func000000000000000c:
-	slli	a2, a2, 3
 	li	a3, 31
+	slli	a2, a2, 3
 	slli	a3, a3, 11
 	addiw	a4, a3, 2016
 	and	a1, a1, a3
@@ -82,9 +82,9 @@ func000000000000000c:
 func0000000000000001:
 	slli	a2, a2, 57
 	srli	a2, a2, 46
+	lui	a3, 1984
 	or	a0, a0, a2
-	lui	a2, 1984
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

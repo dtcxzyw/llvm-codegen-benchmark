@@ -6,31 +6,31 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	sub	a0, a0, a1
 	andi	a2, a2, 1
+	sub	a0, a0, a1
 	sub	a0, a0, a2
 	srli	a0, a0, 63
 	ret
 
 func0000000000000008:
-	sub	a0, a0, a1
 	andi	a2, a2, 1
+	sub	a0, a0, a1
 	sub	a0, a0, a2
 	sltiu	a0, a0, 19
 	xori	a0, a0, 1
 	ret
 
 func000000000000000a:
-	sub	a0, a0, a1
 	andi	a2, a2, 1
+	sub	a0, a0, a1
 	sub	a0, a0, a2
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func0000000000000004:
-	sub	a0, a0, a1
 	andi	a2, a2, 1
+	sub	a0, a0, a1
 	sub	a0, a0, a2
 	sltiu	a0, a0, 3
 	ret

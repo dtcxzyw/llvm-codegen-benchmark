@@ -1,8 +1,8 @@
 func0000000000000088:
 	fmv.x.w	a1, fa0
-	lui	a2, 2048
 	slli	a1, a1, 41
 	srli	a1, a1, 41
+	lui	a2, 2048
 	or	a1, a1, a2
 	sllw	a0, a1, a0
 	lui	a1, 524288
@@ -11,9 +11,9 @@ func0000000000000088:
 
 func000000000000008c:
 	fmv.x.w	a1, fa0
-	lui	a2, 2048
 	slli	a1, a1, 41
 	srli	a1, a1, 41
+	lui	a2, 2048
 	or	a1, a1, a2
 	sllw	a0, a1, a0
 	lui	a1, 524288

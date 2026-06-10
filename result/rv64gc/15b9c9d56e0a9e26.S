@@ -1,13 +1,13 @@
 func0000000000000000:
-	addi	a0, a0, -1
 	lui	a1, 349525
+	addi	a0, a0, -1
 	addi	a1, a1, 1365
 	and	a0, a0, a1
 	ret
 
 func0000000000000003:
-	addi	a0, a0, 512
 	li	a1, 15
+	addi	a0, a0, 512
 	slli	a1, a1, 9
 	and	a0, a0, a1
 	ret

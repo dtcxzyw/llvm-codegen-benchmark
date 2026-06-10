@@ -11,8 +11,8 @@ func0000000000000001:
 func0000000000000015:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v10, v8
-	lui	a0, 59
 	vmadd.vv	v10, v9, v8
+	lui	a0, 59
 	vwmul.vx	v8, v10, a0
 	ret
 

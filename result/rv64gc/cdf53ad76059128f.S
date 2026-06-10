@@ -1,8 +1,8 @@
 func00000000000001bf:
-	xori	a3, a0, 255
 	slli	a2, a2, 48
-	mul	a1, a3, a1
+	xori	a3, a0, 255
 	srli	a2, a2, 48
+	mul	a1, a3, a1
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret

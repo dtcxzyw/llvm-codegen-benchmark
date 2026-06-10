@@ -15,20 +15,20 @@ func0000000000000042:
 func000000000000000e:
 	li	a2, 122
 	mul	a1, a1, a2
-	lui	a2, 305
 	addiw	a1, a1, -122
 	sh2add	a0, a1, a0
-	addi	a1, a2, 976
+	lui	a1, 305
+	addi	a1, a1, 976
 	add	a0, a0, a1
 	ret
 
 func0000000000000002:
 	li	a2, 122
 	mul	a1, a1, a2
-	lui	a2, 320
 	addiw	a1, a1, -122
 	sh2add	a0, a1, a0
-	addi	a1, a2, -928
+	lui	a1, 320
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 

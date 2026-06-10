@@ -6,11 +6,11 @@ func000000000000000b:
 	ret
 
 func0000000000000003:
+	lui	a3, 2032
+	addi	a3, a3, 127
 	or	a1, a1, a2
-	lui	a2, 2032
+	slli	a2, a3, 32
 	srli	a1, a1, 8
-	addi	a2, a2, 127
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	and	a1, a1, a2
 	mul	a0, a0, a1

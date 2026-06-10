@@ -1,6 +1,6 @@
 func0000000000000006:
-	zext.w	a0, a0
 	lui	a1, 142180
+	zext.w	a0, a0
 	addi	a1, a1, -833
 	mul	a0, a0, a1
 	srli	a0, a0, 38
@@ -8,8 +8,8 @@ func0000000000000006:
 	ret
 
 func0000000000000002:
-	zext.w	a0, a0
 	lui	a1, 458130
+	zext.w	a0, a0
 	addi	a1, a1, -635
 	mul	a0, a0, a1
 	srli	a0, a0, 48

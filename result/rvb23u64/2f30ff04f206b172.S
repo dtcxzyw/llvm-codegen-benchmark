@@ -22,8 +22,8 @@ func0000000000000084:
 
 func0000000000000286:
 	sext.w	a0, a0
-	addi	a1, a1, -24
 	sltiu	a2, a0, 14
+	addi	a1, a1, -24
 	czero.nez	a1, a1, a2
 	slti	a0, a0, 6
 	addi	a1, a1, 8

@@ -1,30 +1,30 @@
 func0000000000000005:
-	addi	a2, a2, -2
 	slli	a1, a1, 63
+	addi	a2, a2, -2
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000000:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000000d:
-	addi	a2, a2, 2
 	slli	a1, a1, 63
+	addi	a2, a2, 2
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000008:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -42,24 +42,24 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000000f:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000007:
-	addi	a2, a2, -1
 	slli	a1, a1, 63
+	addi	a2, a2, -1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -77,8 +77,8 @@ func000000000000000b:
 	ret
 
 func0000000000000001:
-	addi	a2, a2, 4
 	slli	a1, a1, 63
+	addi	a2, a2, 4
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	addw	a0, a0, a1

@@ -2,8 +2,8 @@ func000000000000028c:
 	lui	a1, 524032
 	lui	a2, 27392
 	and	a1, a1, a0
-	slli	a0, a0, 44
 	addi	a2, a2, 1
+	slli	a0, a0, 44
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -11,8 +11,8 @@ func000000000000028c:
 
 func0000000000000294:
 	slli	a1, a0, 48
-	andi	a0, a0, 254
 	srli	a1, a1, 57
+	andi	a0, a0, 254
 	sltiu	a1, a1, 125
 	sltiu	a0, a0, 250
 	or	a0, a0, a1
@@ -22,8 +22,8 @@ func0000000000000314:
 	lui	a1, 16
 	addi	a1, a1, -512
 	and	a1, a1, a0
-	andi	a0, a0, 254
 	sltiu	a1, a1, 1281
+	andi	a0, a0, 254
 	xori	a1, a1, 1
 	sltiu	a0, a0, 250
 	or	a0, a0, a1
@@ -52,10 +52,10 @@ func0000000000000318:
 
 func000000000000030c:
 	slli	a1, a0, 48
-	srliw	a0, a0, 16
 	srli	a1, a1, 48
-	addi	a0, a0, -3
+	srliw	a0, a0, 16
 	sltiu	a1, a1, 3
+	addi	a0, a0, -3
 	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1

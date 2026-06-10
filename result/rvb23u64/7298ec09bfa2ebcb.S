@@ -1,7 +1,7 @@
 func0000000000000001:
 	andi	a2, a2, 63
-	addiw	a1, a1, -1
 	addi	a2, a2, -42
+	addiw	a1, a1, -1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
@@ -48,10 +48,10 @@ func000000000000006c:
 	ret
 
 func0000000000000074:
-	andi	a2, a2, 896
 	lui	a3, 512
-	sltiu	a2, a2, 384
+	andi	a2, a2, 896
 	addi	a3, a3, 192
+	sltiu	a2, a2, 384
 	addw	a1, a1, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

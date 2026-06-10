@@ -1,7 +1,7 @@
 func0000000000000000:
-	lui	a0, 263313
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v12, v12, 1
+	lui	a0, 263313
 	addi	a0, a0, -37
 	fmv.w.x	fa5, a0
 	vmsne.vi	v0, v12, 0

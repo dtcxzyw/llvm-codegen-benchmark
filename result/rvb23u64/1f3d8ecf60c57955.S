@@ -1,7 +1,7 @@
 func0000000000000081:
-	sext.w	a0, a0
 	not	a1, a1
 	bexti	a1, a1, 14
+	sext.w	a0, a0
 	addiw	a1, a1, -2
 	xor	a0, a0, a1
 	seqz	a0, a0

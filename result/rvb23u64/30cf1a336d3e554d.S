@@ -1,6 +1,6 @@
 func0000000000000003:
-	bexti	a1, a1, 22
 	andi	a0, a0, 1
+	bexti	a1, a1, 22
 	slli	a0, a0, 11
 	or	a0, a0, a1
 	addiw	a0, a0, 512

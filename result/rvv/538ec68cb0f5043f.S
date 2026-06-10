@@ -23,8 +23,8 @@ func0000000000000326:
 func0000000000000301:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v8, -1
-	lui	a0, 8
 	vadd.vv	v8, v8, v10, v0.t
+	lui	a0, 8
 	addi	a0, a0, -1
 	vmseq.vx	v0, v8, a0
 	ret

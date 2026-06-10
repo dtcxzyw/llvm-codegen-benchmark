@@ -28,8 +28,8 @@ func0000000000000198:
 	ret
 
 func0000000000000018:
-	srai	a2, a2, 63
 	lui	a3, 976563
+	srai	a2, a2, 63
 	addi	a3, a3, -2048
 	and	a2, a2, a3
 	add	a0, a0, a1

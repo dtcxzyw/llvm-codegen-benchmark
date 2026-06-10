@@ -113,10 +113,10 @@ func0000000000000c61:
 	ret
 
 func00000000000005e1:
+	lui	a3, 1048544
 	add	a1, a1, a2
-	lui	a2, 1048544
-	addi	a2, a2, 1
-	addw	a1, a1, a2
+	addi	a3, a3, 1
+	addw	a1, a1, a3
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

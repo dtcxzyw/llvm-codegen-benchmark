@@ -1,9 +1,9 @@
 func000000000000000f:
 	slli	a2, a2, 3
 	andi	a1, a1, 1
+	lui	a3, 33280
 	or	a1, a1, a2
-	lui	a2, 33280
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	addiw	a0, a0, 4
 	ret
@@ -23,11 +23,11 @@ func0000000000000009:
 	bnez	a3, .LBB2_2
 	lui	a2, 262146
 .LBB2_2:
+	lui	a3, 2
 	slliw	a1, a1, 16
+	addi	a3, a3, -32
 	or	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, -32
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

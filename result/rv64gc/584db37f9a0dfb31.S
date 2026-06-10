@@ -3,13 +3,13 @@ func0000000000000030:
 	li	a3, 21
 	beq	a2, a3, .LBB0_2
 	li	a2, 8
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB0_2:
 	li	a2, 4
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func000000000000003f:

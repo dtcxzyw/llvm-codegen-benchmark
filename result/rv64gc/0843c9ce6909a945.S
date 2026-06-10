@@ -1,7 +1,7 @@
 func0000000000000294:
+	li	a2, 33
 	andi	a1, a0, 254
-	li	a0, 33
-	bltu	a1, a0, .LBB0_2
+	bltu	a1, a2, .LBB0_2
 	lui	a0, 262144
 	addi	a0, a0, 369
 	li	a2, 17
@@ -21,8 +21,8 @@ func0000000000000294:
 func0000000000000021:
 	andi	a0, a0, 7
 	addi	a1, a0, -1
-	seqz	a0, a0
 	snez	a1, a1
+	seqz	a0, a0
 	addi	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1

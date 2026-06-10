@@ -4,8 +4,8 @@ func00000000000000a9:
 	blt	a3, a2, .LBB0_2
 	li	a2, 2
 .LBB0_2:
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000080:
@@ -34,8 +34,8 @@ func00000000000000e9:
 	blt	a3, a2, .LBB3_2
 	li	a2, 2
 .LBB3_2:
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func00000000000000c0:

@@ -1,8 +1,8 @@
 func0000000000000018:
+	neg	a2, a2
 	remuw	a0, a0, a1
-	neg	a1, a2
 	zext.w	a0, a0
-	sll	a0, a0, a1
+	sll	a0, a0, a2
 	ret
 
 func000000000000001c:

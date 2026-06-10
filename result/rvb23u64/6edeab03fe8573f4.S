@@ -11,10 +11,10 @@ func0000000000000004:
 
 func0000000000000002:
 	lui	a0, 8187
-	fli.d	fa5, 1.0
 	slli	a0, a0, 37
-	fmv.d.x	fa4, a0
-	fmadd.d	fa5, fa0, fa4, fa5
+	fmv.d.x	fa5, a0
+	fli.d	fa4, 1.0
+	fmadd.d	fa5, fa0, fa5, fa4
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa5, fa4
 	ret
@@ -40,11 +40,11 @@ func0000000000000008:
 
 func000000000000000e:
 	lui	a0, 4105
+	lui	a1, 1040401
 	slli	a0, a0, 38
+	slli	a1, a1, 37
 	fmv.d.x	fa5, a0
-	lui	a0, 1040401
-	slli	a0, a0, 37
-	fmv.d.x	fa4, a0
+	fmv.d.x	fa4, a1
 	fmadd.d	fa5, fa0, fa4, fa5
 	feq.d	a0, fa5, fa5
 	ret

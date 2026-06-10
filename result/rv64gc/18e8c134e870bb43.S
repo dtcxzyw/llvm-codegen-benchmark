@@ -1,13 +1,13 @@
 func0000000000000026:
-	sext.w	a0, a0
 	subw	a1, a1, a2
+	sext.w	a0, a0
 	slt	a0, a0, a1
 	slli	a0, a0, 33
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	subw	a1, a1, a2
+	sext.w	a0, a0
 	bltu	a0, a1, .LBB1_2
 	li	a0, 16
 	ret

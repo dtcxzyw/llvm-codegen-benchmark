@@ -1,8 +1,8 @@
 func0000000000000000:
-	fadd.d	fa5, fa2, fa2
-	fli.d	fa4, 0.5
-	fsub.d	fa4, fa1, fa4
-	fmul.d	fa5, fa4, fa5
+	fli.d	fa5, 0.5
+	fadd.d	fa4, fa2, fa2
+	fsub.d	fa5, fa1, fa5
+	fmul.d	fa5, fa5, fa4
 	fdiv.d	fa0, fa5, fa0
 	ret
 

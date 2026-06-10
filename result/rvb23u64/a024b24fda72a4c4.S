@@ -1,15 +1,15 @@
 func0000000000000001:
-	zext.w	a1, a1
 	lui	a2, 15
 	addi	a2, a2, 31
+	zext.w	a1, a1
 	and	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000014:
-	zext.w	a1, a1
 	srliw	a0, a0, 6
+	zext.w	a1, a1
 	slli	a0, a0, 6
 	sltu	a0, a0, a1
 	ret
@@ -40,9 +40,9 @@ func0000000000000038:
 	ret
 
 func0000000000000018:
-	zext.w	a1, a1
 	lui	a2, 512
 	addi	a2, a2, -8
+	zext.w	a1, a1
 	and	a0, a0, a2
 	sltu	a0, a1, a0
 	ret
@@ -61,8 +61,8 @@ func0000000000000028:
 	ret
 
 func000000000000000c:
-	zext.w	a1, a1
 	slli	a0, a0, 44
+	zext.w	a1, a1
 	srli	a0, a0, 44
 	xor	a0, a0, a1
 	snez	a0, a0

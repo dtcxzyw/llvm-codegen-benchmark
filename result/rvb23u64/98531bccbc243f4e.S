@@ -1,6 +1,6 @@
 func0000000000000006:
-	andi	a1, a1, 1
 	lui	a3, 1048560
+	andi	a1, a1, 1
 	addi	a3, a3, 15
 	czero.eqz	a1, a3, a1
 	add	a1, a1, a2
@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 1
 	lui	a3, 1048575
+	andi	a1, a1, 1
 	addi	a3, a3, 56
 	czero.eqz	a1, a3, a1
 	add	a1, a1, a2

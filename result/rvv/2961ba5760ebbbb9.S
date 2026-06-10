@@ -8,9 +8,9 @@ func0000000000000002:
 	ret
 
 func0000000000000043:
-	lui	a0, 262144
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmseq.vi	v0, v10, 0
+	lui	a0, 262144
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0

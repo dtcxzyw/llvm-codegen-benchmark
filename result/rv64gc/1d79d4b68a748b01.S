@@ -1,10 +1,10 @@
 func000000000000000a:
+	lui	a2, 2
 	or	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -2047
+	addi	a1, a2, -2047
+	lui	a2, 349525
 	addw	a0, a0, a1
-	lui	a1, 349525
-	addi	a1, a1, 1366
+	addi	a1, a2, 1366
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srli	a0, a0, 32

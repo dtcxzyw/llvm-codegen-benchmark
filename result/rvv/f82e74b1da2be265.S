@@ -53,10 +53,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v12, v12, 29
 	lui	a0, 589831
 	bclri	a0, a0, 31
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v12, v12, 29
 	vandn.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
@@ -73,9 +73,9 @@ func000000000000000e:
 	ret
 
 func000000000000000c:
+	lui	a0, 8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 17
-	lui	a0, 8
 	vandn.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8

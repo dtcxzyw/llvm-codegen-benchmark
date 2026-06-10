@@ -1,10 +1,10 @@
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsub.vv	v10, v12, v10
 	li	a0, 16
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vsub.vv	v10, v12, v10
 	vadd.vi	v10, v10, -2
-	vmv.v.x	v12, a0
-	vmadd.vv	v8, v10, v12
+	vmadd.vv	v8, v10, v14
 	ret
 
 func00000000000000d5:

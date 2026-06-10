@@ -21,10 +21,10 @@ func000000000000003b:
 
 func000000000000007b:
 	add	a1, a1, a2
-	lui	a2, 3
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addi	a1, a2, -414
+	lui	a1, 3
+	addi	a1, a1, -414
 	add	a0, a0, a1
 	ret
 

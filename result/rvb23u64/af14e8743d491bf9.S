@@ -75,10 +75,10 @@ func000000000000000a:
 	ret
 
 func0000000000000018:
+	bseti	a2, zero, 35
 	sub	a0, a0, a1
-	bseti	a1, zero, 35
-	addi	a1, a1, -16
-	and	a0, a0, a1
+	addi	a2, a2, -16
+	and	a0, a0, a2
 	snez	a0, a0
 	ret
 

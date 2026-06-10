@@ -3,16 +3,16 @@ func000000000000001c:
 	beqz	a2, .LBB0_2
 	lui	a2, 1
 	addi	a2, a2, 560
+	add	a1, a1, a2
 	slli	a0, a0, 6
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB0_2:
 	lui	a2, 2
 	addi	a2, a2, 508
+	add	a1, a1, a2
 	slli	a0, a0, 6
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func000000000000001e:

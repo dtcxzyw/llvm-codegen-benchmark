@@ -28,8 +28,8 @@ func0000000000000508:
 func0000000000000108:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf8	v12, v8
-	li	a0, 34
 	vmsltu.vv	v9, v10, v12
+	li	a0, 34
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

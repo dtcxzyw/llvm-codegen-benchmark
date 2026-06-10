@@ -32,9 +32,9 @@ func000000000000000a:
 
 func0000000000000018:
 	lui	a2, 258048
+	lui	a3, 79063
 	and	a1, a1, a2
-	lui	a2, 79063
-	addi	a2, a2, -2048
+	addi	a2, a3, -2048
 	sltu	a0, a2, a0
 	lui	a2, 32768
 	czero.nez	a1, a1, a0

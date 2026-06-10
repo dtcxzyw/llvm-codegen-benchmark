@@ -8,11 +8,11 @@ func0000000000000021:
 	ret
 
 func00000000000000aa:
+	lui	a3, 21
 	andi	a0, a0, 1
+	addi	a3, a3, 384
 	sub	a1, a1, a2
-	lui	a2, 21
-	addi	a2, a2, 384
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
@@ -25,13 +25,13 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
+	lui	a3, 10
 	andi	a0, a0, 1
+	addi	a4, a3, -960
 	sub	a1, a1, a2
-	lui	a2, 10
-	addi	a3, a2, -960
-	czero.eqz	a0, a3, a0
+	czero.eqz	a0, a4, a0
 	addw	a0, a0, a1
-	addi	a1, a2, -963
+	addi	a1, a3, -963
 	slt	a0, a1, a0
 	ret
 

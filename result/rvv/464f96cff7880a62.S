@@ -34,8 +34,8 @@ func0000000000000081:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vx	v14, v12, a0
-	vmsltu.vv	v12, v8, v10
-	vmand.mm	v0, v14, v12
+	vmsltu.vv	v14, v8, v10
+	vmseq.vx	v8, v12, a0
+	vmand.mm	v0, v8, v14
 	ret
 

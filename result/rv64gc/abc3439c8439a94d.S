@@ -48,12 +48,12 @@ func0000000000000008:
 	ret
 
 func0000000000000011:
+	li	a3, 1
+	slli	a3, a3, 34
 	sub	a2, a2, a1
-	li	a1, 1
-	slli	a1, a1, 34
-	addi	a1, a1, -4
-	and	a1, a1, a2
-	xor	a0, a0, a1
+	addi	a3, a3, -4
+	and	a2, a2, a3
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

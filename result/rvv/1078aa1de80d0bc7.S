@@ -7,10 +7,10 @@ func0000000000000000:
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
-	lui	a0, 66109
-	slli	a0, a0, 34
 	vsra.vi	v8, v8, 18
 	vadd.vv	v8, v8, v10
+	lui	a0, 66109
+	slli	a0, a0, 34
 	vfcvt.f.x.v	v8, v8
 	fmv.d.x	fa5, a0
 	vfdiv.vf	v8, v8, fa5

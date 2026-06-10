@@ -60,8 +60,8 @@ func0000000000000033:
 	ret
 
 func0000000000000010:
-	zext.w	a1, a1
 	li	a2, -24
+	zext.w	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -16

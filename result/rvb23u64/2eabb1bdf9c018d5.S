@@ -1,7 +1,7 @@
 func0000000000000b61:
 	sh2add	a1, a2, a1
-	addi	a1, a1, -32
 	addi	a0, a0, 16
+	addi	a1, a1, -32
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

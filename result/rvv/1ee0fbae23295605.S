@@ -20,9 +20,9 @@ func000000000000001a:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrdiv.vf	v8, v8, fa5
+	vfabs.v	v8, v8
 	lui	a0, 96684
 	addi	a0, a0, -491
-	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret
@@ -31,9 +31,9 @@ func000000000000001c:
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrdiv.vf	v8, v8, fa5
+	vfabs.v	v8, v8
 	lui	a0, 423228
 	addi	a0, a0, 540
-	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret

@@ -6,9 +6,9 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	srli	a1, a0, 8
-	lui	a2, 16
-	addi	a2, a2, -256
+	lui	a1, 16
+	srli	a2, a0, 8
+	addi	a1, a1, -256
 	and	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1

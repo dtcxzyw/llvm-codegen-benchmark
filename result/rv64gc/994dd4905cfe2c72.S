@@ -1,11 +1,11 @@
 func0000000000000030:
 	slli	a1, a1, 32
+	li	a2, 1
 	srli	a1, a1, 32
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -3
-	add	a0, a0, a1
+	addi	a2, a2, -3
+	add	a0, a0, a2
 	ret
 
 func000000000000003c:
@@ -17,10 +17,10 @@ func000000000000003c:
 
 func0000000000000054:
 	sext.w	a1, a1
+	lui	a2, 131071
 	add	a0, a0, a1
-	lui	a1, 131071
-	slli	a1, a1, 3
-	add	a0, a0, a1
+	slli	a2, a2, 3
+	add	a0, a0, a2
 	ret
 
 func0000000000000034:

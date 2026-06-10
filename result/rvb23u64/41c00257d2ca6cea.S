@@ -24,9 +24,9 @@ func0000000000000040:
 	sltiu	a1, a1, 3
 	neg	a1, a1
 	andi	a1, a1, 12
+	lui	a2, 15
 	add	a0, a0, a1
-	lui	a1, 15
-	addi	a1, a1, 1279
+	addi	a1, a2, 1279
 	mulw	a0, a0, a1
 	ret
 

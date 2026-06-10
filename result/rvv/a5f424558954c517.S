@@ -3,9 +3,9 @@ func0000000000000001:
 	vmv1r.v	v10, v0
 	lui	a0, 1048392
 	vmv.v.x	v11, a0
+	vmv1r.v	v0, v9
 	li	a0, -29
 	slli	a0, a0, 7
-	vmv1r.v	v0, v9
 	vmerge.vxm	v9, v11, a0, v0
 	vmv1r.v	v0, v10
 	vmerge.vim	v9, v9, -16, v0

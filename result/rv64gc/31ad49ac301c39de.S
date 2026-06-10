@@ -1,7 +1,7 @@
 func0000000000000001:
+	li	a2, 2
 	srli	a1, a1, 3
 	sext.w	a1, a1
-	li	a2, 2
 	bne	a1, a2, .LBB0_2
 	lui	a0, 1048573
 	addi	a0, a0, -625

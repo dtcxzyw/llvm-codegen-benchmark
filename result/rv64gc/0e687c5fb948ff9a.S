@@ -10,9 +10,9 @@ func0000000000000029:
 
 func0000000000000020:
 	slli	a2, a2, 1
+	lui	a3, 559241
 	addw	a1, a1, a2
-	lui	a2, 559241
-	addi	a2, a2, -1911
+	addi	a2, a3, -1911
 	mul	a2, a1, a2
 	srli	a2, a2, 32
 	add	a1, a1, a2

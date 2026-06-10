@@ -17,8 +17,8 @@ func0000000000000012:
 	ret
 
 func000000000000001a:
-	zext.b	a2, a2
 	sh3add	a0, a1, a0
+	zext.b	a2, a2
 	sh3add	a0, a2, a0
 	ret
 

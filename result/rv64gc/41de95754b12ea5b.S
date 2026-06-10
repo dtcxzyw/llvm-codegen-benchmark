@@ -1,6 +1,6 @@
 func0000000000000022:
-	srli	a1, a1, 1
 	lui	a2, 349525
+	srli	a1, a1, 1
 	sext.w	a1, a1
 	addi	a2, a2, 1366
 	mul	a1, a1, a2
@@ -13,9 +13,9 @@ func0000000000000022:
 	ret
 
 func0000000000000000:
-	srli	a2, a1, 2
-	slli	a1, a1, 30
-	srli	a1, a1, 63
+	slli	a2, a1, 30
+	srli	a1, a1, 2
+	srli	a2, a2, 63
 	addw	a1, a1, a2
 	slli	a1, a1, 1
 	andi	a1, a1, -4

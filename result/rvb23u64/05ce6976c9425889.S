@@ -6,9 +6,9 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
+	lui	a1, 32
 	bset	a0, zero, a0
 	sext.w	a0, a0
-	lui	a1, 32
 	min	a0, a0, a1
 	ret
 

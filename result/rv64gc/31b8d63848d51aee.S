@@ -124,9 +124,9 @@ func0000000000000071:
 
 func0000000000000055:
 	slli	a2, a2, 24
+	lui	a3, 1046528
 	or	a1, a1, a2
-	lui	a2, 1046528
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

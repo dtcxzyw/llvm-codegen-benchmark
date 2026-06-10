@@ -1,8 +1,8 @@
 func0000000000000006:
-	srliw	a1, a0, 31
-	andi	a0, a0, 1023
-	addi	a0, a0, -1021
-	czero.nez	a0, a0, a1
+	andi	a1, a0, 1023
+	srliw	a0, a0, 31
+	addi	a1, a1, -1021
+	czero.nez	a0, a1, a0
 	addi	a0, a0, 1021
 	ret
 

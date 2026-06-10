@@ -1,16 +1,16 @@
 func000000000000092c:
 	sub	a3, a1, a2
-	xor	a1, a1, a2
 	sltu	a0, a3, a0
+	xor	a1, a1, a2
 	xori	a0, a0, 1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000128:
+	li	a3, 4
 	sub	a1, a1, a2
-	li	a2, 4
-	maxu	a0, a0, a2
+	maxu	a0, a0, a3
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

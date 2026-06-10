@@ -1,21 +1,21 @@
 func0000000000000299:
-	slli	a2, a2, 32
 	slli	a1, a1, 32
-	srli	a2, a2, 32
+	slli	a2, a2, 32
 	srli	a1, a1, 32
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	srli	a2, a2, 32
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000e99:
-	sext.w	a2, a2
 	sext.w	a1, a1
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	sext.w	a2, a2
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000d08:
@@ -48,10 +48,10 @@ func0000000000000318:
 
 func00000000000000a8:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
-	srli	a1, a1, 32
+	slli	a1, a1, 32
 	sltu	a2, a2, a0
+	srli	a1, a1, 32
 	xori	a2, a2, 1
 	sltu	a0, a1, a0
 	and	a0, a0, a2

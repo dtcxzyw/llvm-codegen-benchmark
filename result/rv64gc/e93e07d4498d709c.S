@@ -1,8 +1,8 @@
 func0000000000000002:
 	fmv.d.x	fa5, zero
-	slli	a0, a0, 63
 	flt.d	a1, fa0, fa5
 	neg	a1, a1
+	slli	a0, a0, 63
 	ori	a1, a1, 1
 	srai	a0, a0, 63
 	and	a0, a0, a1
@@ -23,11 +23,11 @@ func000000000000000c:
 
 func0000000000000004:
 	fmv.d.x	fa5, zero
-	li	a1, 2
+	flt.d	a1, fa5, fa0
+	li	a2, 2
 	slli	a0, a0, 63
-	flt.d	a2, fa5, fa0
-	sub	a1, a1, a2
+	sub	a2, a2, a1
 	srai	a0, a0, 63
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

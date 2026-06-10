@@ -11,9 +11,9 @@ func0000000000000026:
 	ret
 
 func00000000000000c4:
+	lui	a0, 675749
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 4
-	lui	a0, 675749
 	addi	a0, a0, -91
 	slli	a1, a0, 36
 	add	a0, a0, a1
@@ -27,9 +27,9 @@ func0000000000000001:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vrsub.vi	v8, v8, 0
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 11
-	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8
 	ret
 

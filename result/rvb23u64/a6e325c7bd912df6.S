@@ -1,6 +1,6 @@
 func0000000000000010:
-	zext.b	a2, a2
 	lui	a3, 1048571
+	zext.b	a2, a2
 	addi	a3, a3, 512
 	czero.eqz	a2, a3, a2
 	add	a1, a1, a2
@@ -48,9 +48,9 @@ func000000000000001b:
 
 func000000000000001e:
 	zext.b	a2, a2
+	addi	a2, a2, -2
 	li	a3, 968
 	slli	a0, a0, 6
-	addi	a2, a2, -2
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

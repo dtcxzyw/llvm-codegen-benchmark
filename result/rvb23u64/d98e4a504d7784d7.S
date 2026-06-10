@@ -8,17 +8,17 @@ func00000000000000a1:
 	ret
 
 func00000000000000a8:
+	lui	a2, 838861
+	addi	a2, a2, -819
 	sub	a0, a0, a1
-	lui	a1, 838861
-	addi	a1, a1, -819
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	li	a2, -127
+	slli	a1, a2, 32
 	srai	a0, a0, 2
-	srli	a2, a2, 1
+	add	a1, a1, a2
 	mul	a0, a0, a1
+	li	a1, -127
 	addi	a0, a0, -1
-	andn	a0, a0, a2
+	srli	a1, a1, 1
+	andn	a0, a0, a1
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
 	ret

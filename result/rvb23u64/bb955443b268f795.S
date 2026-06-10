@@ -5,12 +5,12 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	lui	a1, 838848
-	lui	a2, 13107
+	lui	a1, 13107
+	slli	a1, a1, 6
+	lui	a2, 838848
 	and	a1, a1, a0
-	slli	a2, a2, 6
 	and	a0, a0, a2
-	srli	a0, a0, 18
+	srli	a1, a1, 18
 	or	a0, a0, a1
 	ret
 

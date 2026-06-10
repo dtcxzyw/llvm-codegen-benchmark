@@ -8,16 +8,16 @@ func000000000000001c:
 	ret
 
 func000000000000000f:
+	li	a2, -2
 	or	a0, a0, a1
-	li	a1, -2
-	zext.w	a1, a1
-	andn	a0, a0, a1
+	zext.w	a2, a2
+	andn	a0, a0, a2
 	ret
 
 func000000000000000e:
 	zext.b	a2, a2
-	or	a0, a0, a1
 	slli	a2, a2, 40
+	or	a0, a0, a1
 	or	a0, a0, a2
 	lui	a1, 1044480
 	and	a0, a0, a1

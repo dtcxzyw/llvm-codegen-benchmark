@@ -1,8 +1,8 @@
 func00000000000000a6:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 599186
 	vadd.vv	v8, v10, v8
+	lui	a0, 599186
 	addi	a0, a0, 1171
 	vmulh.vx	v10, v8, a0
 	vadd.vv	v10, v10, v8
@@ -15,33 +15,33 @@ func00000000000000a6:
 	ret
 
 func00000000000000ac:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
 	lui	a0, 20972
 	addi	a0, a0, -1968
-	vmv.v.x	v12, a0
-	lui	a0, 796918
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	lui	a0, 796918
 	addi	a0, a0, -983
-	vmacc.vx	v12, a0, v8
+	vmacc.vx	v14, a0, v8
 	lui	a0, 10486
-	vror.vi	v8, v12, 2
+	vror.vi	v8, v14, 2
 	addi	a0, a0, -984
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func00000000000000a1:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
 	lui	a0, 20972
 	addi	a0, a0, -1968
-	vmv.v.x	v12, a0
-	lui	a0, 796918
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	lui	a0, 796918
 	addi	a0, a0, -983
-	vmacc.vx	v12, a0, v8
+	vmacc.vx	v14, a0, v8
 	lui	a0, 2621
-	vror.vi	v8, v12, 4
+	vror.vi	v8, v14, 4
 	addi	a0, a0, 1802
 	vmsleu.vx	v0, v8, a0
 	ret
@@ -49,8 +49,8 @@ func00000000000000a1:
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 599186
 	vadd.vv	v8, v10, v8
+	lui	a0, 599186
 	addi	a0, a0, 1171
 	vmulh.vx	v10, v8, a0
 	vadd.vv	v10, v10, v8
@@ -65,8 +65,8 @@ func0000000000000006:
 func00000000000000a8:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 599186
 	vadd.vv	v8, v10, v8
+	lui	a0, 599186
 	addi	a0, a0, 1171
 	vmulh.vx	v10, v8, a0
 	vadd.vv	v10, v10, v8
@@ -87,17 +87,17 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vv	v10, v10, v12
 	lui	a0, 174763
 	addi	a0, a0, -1366
-	vmv.v.x	v12, a0
-	lui	a0, 699051
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
+	lui	a0, 699051
 	addi	a0, a0, -1365
-	vmacc.vx	v12, a0, v8
+	vmacc.vx	v14, a0, v8
 	lui	a0, 349525
 	addi	a0, a0, 1364
-	vmsleu.vx	v0, v12, a0
+	vmsleu.vx	v0, v14, a0
 	ret
 

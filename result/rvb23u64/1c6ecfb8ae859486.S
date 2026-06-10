@@ -9,9 +9,9 @@ func000000000000000d:
 
 func0000000000000008:
 	srli	a2, a2, 38
+	lui	a3, 40960
 	or	a1, a1, a2
-	lui	a2, 40960
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	bseti	a0, a0, 22
 	ret

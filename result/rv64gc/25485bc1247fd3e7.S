@@ -10,8 +10,8 @@ func00000000000000c6:
 func0000000000000d08:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
-	sltiu	a0, a0, 10
 	sub	a3, a3, a2
+	sltiu	a0, a0, 10
 	sltu	a1, a3, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000424:
 
 func00000000000004ca:
 	li	a3, -2
-	srli	a0, a0, 63
 	sub	a3, a3, a2
+	srli	a0, a0, 63
 	slt	a1, a1, a3
 	xori	a0, a0, 1
 	or	a0, a0, a1

@@ -2,21 +2,21 @@ func000000000000003f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, 5
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
 .LBB0_2:
 	li	a2, 9
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
 
 func000000000000003b:
 	andi	a2, a2, 1
-	slli	a0, a0, 4
 	addi	a2, a2, -1
+	slli	a0, a0, 4
 	andi	a2, a2, 8
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -32,10 +32,10 @@ func0000000000000030:
 .LBB2_2:
 	addi	a2, a2, 336
 .LBB2_3:
-	add	a1, a1, a2
-	slli	a2, a0, 3
+	slli	a3, a0, 3
 	slli	a0, a0, 5
-	add	a0, a0, a2
+	add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, -40
 	ret
@@ -44,21 +44,21 @@ func000000000000002a:
 	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
 	li	a2, -4
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, -2
 	ret
 .LBB3_2:
 	li	a2, -2
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, -2
 	ret
 
 func000000000000002f:
 	andi	a2, a2, 1
-	slli	a0, a0, 5
 	addi	a2, a2, -1
+	slli	a0, a0, 5
 	andi	a2, a2, -32
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -79,15 +79,15 @@ func0000000000000000:
 	bnez	a2, .LBB6_2
 	lui	a2, 189
 	addi	a2, a2, -176
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, -5
 	ret
 .LBB6_2:
 	lui	a2, 378
 	addi	a2, a2, -352
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, -5
 	ret
 
@@ -104,14 +104,14 @@ func000000000000000f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB8_2
 	li	a2, -80
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 .LBB8_2:
 	li	a2, -96
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 
@@ -120,16 +120,16 @@ func0000000000000033:
 	lui	a2, 1
 	bnez	a3, .LBB9_2
 	addi	a2, a2, -2032
+	add	a1, a1, a2
 	slli	a0, a0, 3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
 .LBB9_2:
 	addi	a2, a2, -2024
+	add	a1, a1, a2
 	slli	a0, a0, 3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret
 

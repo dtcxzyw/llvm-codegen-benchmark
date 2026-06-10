@@ -18,9 +18,9 @@ func0000000000000024:
 
 func0000000000000022:
 	fdiv.s	fa5, fa0, fa1
-	fli.s	fa4, 1.0
-	flt.s	a0, fa5, fa4
 	fmv.w.x	fa4, zero
+	fli.s	fa3, 1.0
+	flt.s	a0, fa5, fa3
 	flt.s	a1, fa5, fa4
 	and	a0, a0, a1
 	ret

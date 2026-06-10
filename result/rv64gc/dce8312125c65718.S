@@ -7,20 +7,20 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	slli	a1, a0, 56
-	andi	a0, a0, 31
-	srli	a1, a1, 63
-	addi	a0, a0, -27
-	snez	a0, a0
+	andi	a1, a0, 31
+	slli	a0, a0, 56
+	addi	a1, a1, -27
+	srli	a0, a0, 63
+	snez	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	sext.w	a1, a0
-	li	a2, 1
-	snez	a1, a1
-	slli	a2, a2, 32
-	and	a0, a0, a2
+	li	a1, 1
+	slli	a1, a1, 32
+	sext.w	a2, a0
+	and	a0, a0, a1
+	snez	a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

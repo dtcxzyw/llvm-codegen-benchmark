@@ -1,7 +1,7 @@
 func00000000000000e1:
-	zext.b	a1, a1
 	lui	a2, 16
 	addi	a3, a2, -256
+	zext.b	a1, a1
 	and	a0, a0, a3
 	or	a0, a0, a1
 	addi	a2, a2, -1
@@ -11,9 +11,9 @@ func00000000000000e1:
 
 func0000000000000021:
 	lui	a2, 16
-	zext.b	a0, a0
 	addi	a3, a2, -256
 	and	a1, a1, a3
+	zext.b	a0, a0
 	or	a0, a0, a1
 	addi	a2, a2, -1
 	xor	a0, a0, a2

@@ -33,10 +33,10 @@ func00000000000001e1:
 
 func00000000000000a6:
 	slli	a2, a2, 63
-	add	a0, a0, a1
-	lui	a1, 3
 	srai	a2, a2, 63
 	andi	a2, a2, -34
+	add	a0, a0, a1
+	lui	a1, 3
 	addw	a0, a0, a2
 	addi	a1, a1, 1487
 	slt	a0, a0, a1

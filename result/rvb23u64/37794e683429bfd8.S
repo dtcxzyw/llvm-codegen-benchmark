@@ -6,17 +6,17 @@ func0000000000000038:
 	ret
 
 func0000000000000004:
+	li	a1, 168
 	addi	a0, a0, -39
 	sltiu	a0, a0, 2
-	li	a1, 168
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 8
 	ret
 
 func0000000000000024:
+	li	a1, 168
 	addi	a0, a0, -39
 	sltiu	a0, a0, 2
-	li	a1, 168
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 8
 	ret
@@ -53,9 +53,9 @@ func0000000000000061:
 	ret
 
 func0000000000000014:
+	li	a1, 3
 	addi	a0, a0, 1
 	sltiu	a0, a0, 9
-	li	a1, 3
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 3
 	ret

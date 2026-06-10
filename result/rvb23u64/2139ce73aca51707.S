@@ -5,10 +5,10 @@ func000000000000003e:
 	ret
 
 func0000000000000012:
+	lui	a3, 313
 	sh2add	a0, a1, a0
-	lui	a1, 313
 	sh2add	a0, a2, a0
-	addi	a1, a1, -124
+	addi	a1, a3, -124
 	add	a0, a0, a1
 	ret
 

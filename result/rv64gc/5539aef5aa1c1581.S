@@ -1,8 +1,8 @@
 func0000000000000026:
 	sext.w	a3, a2
 	and	a2, a2, a1
-	lui	a4, 1
 	sext.w	a2, a2
+	lui	a4, 1
 	seqz	a2, a2
 	slt	a3, a3, a4
 	and	a2, a2, a3

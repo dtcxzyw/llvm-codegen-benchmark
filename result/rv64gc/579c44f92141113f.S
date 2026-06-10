@@ -32,15 +32,15 @@ func0000000000000181:
 func000000000000002a:
 	slli	a0, a0, 56
 	andi	a1, a1, 64
-	seqz	a1, a1
 	srli	a0, a0, 63
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
-	zext.b	a0, a0
 	andi	a1, a1, 96
+	zext.b	a0, a0
 	addi	a1, a1, -32
 	seqz	a1, a1
 	sltiu	a0, a0, 2

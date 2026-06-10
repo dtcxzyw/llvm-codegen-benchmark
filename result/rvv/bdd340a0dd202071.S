@@ -29,10 +29,10 @@ func0000000000000181:
 
 func0000000000000084:
 	lui	a0, 262144
+	addi	a1, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
-	addi	a0, a0, -1
-	vmsltu.vx	v10, v8, a0
+	vmsltu.vx	v10, v8, a1
 	vmxor.mm	v0, v12, v10
 	ret
 

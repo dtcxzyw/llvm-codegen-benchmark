@@ -3,9 +3,9 @@ func0000000000000141:
 	vmv1r.v	v12, v0
 	vmsgt.vi	v0, v10, -1
 	vmv.v.i	v10, 0
-	lui	a0, 524288
 	vmerge.vim	v10, v10, -1, v0
 	vmv1r.v	v0, v12
+	lui	a0, 524288
 	vadd.vx	v8, v10, a0, v0.t
 	vmseq.vx	v0, v8, a0
 	ret
@@ -42,11 +42,11 @@ func00000000000000d8:
 
 func00000000000000c1:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v12, v10, 2
-	vmseq.vi	v10, v8, 1
-	vmandn.mm	v8, v10, v0
-	vmand.mm	v9, v12, v0
-	vmor.mm	v0, v9, v8
+	vmseq.vi	v12, v8, 1
+	vmsle.vi	v8, v10, 2
+	vmandn.mm	v9, v12, v0
+	vmand.mm	v8, v8, v0
+	vmor.mm	v0, v8, v9
 	ret
 
 func0000000000000038:
@@ -78,9 +78,9 @@ func00000000000000ca:
 	ret
 
 func000000000000018a:
+	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 99
 	vmseq.vx	v0, v10, a0
 	lui	a0, 524288
 	addi	a0, a0, -1

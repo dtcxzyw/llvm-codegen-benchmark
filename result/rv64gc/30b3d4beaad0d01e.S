@@ -7,9 +7,9 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
+	li	a2, 4
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 4
 	bne	a1, a2, .LBB1_2
 	li	a0, 256
 	ret

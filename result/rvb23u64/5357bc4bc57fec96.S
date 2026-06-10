@@ -7,8 +7,8 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
-	sltiu	a0, a0, 2
 	li	a2, 1
+	sltiu	a0, a0, 2
 	andn	a1, a2, a1
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 1

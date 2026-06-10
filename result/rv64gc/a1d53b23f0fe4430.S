@@ -30,8 +30,8 @@ func0000000000000008:
 
 func000000000000000e:
 	slli	a2, a2, 63
-	slli	a0, a0, 2
 	srai	a2, a2, 63
+	slli	a0, a0, 2
 	andi	a2, a2, 136
 	add	a0, a0, a1
 	add	a0, a0, a2

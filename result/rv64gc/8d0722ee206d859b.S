@@ -1,6 +1,6 @@
 func000000000000018c:
-	sext.w	a1, a1
 	slli	a2, a2, 48
+	sext.w	a1, a1
 	srli	a2, a2, 48
 	xori	a2, a2, 1
 	xori	a1, a1, 40
@@ -48,11 +48,11 @@ func0000000000000024:
 
 func000000000000002c:
 	lui	a3, 16
-	sext.w	a1, a1
 	addi	a3, a3, -1
-	snez	a1, a1
 	and	a2, a2, a3
+	sext.w	a1, a1
 	xor	a2, a2, a3
+	snez	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -1,50 +1,50 @@
 func0000000000000042:
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa5, fa2
-	flt.s	a1, fa0, fa1
+	flt.s	a0, fa0, fa1
+	flt.s	a1, fa5, fa2
 	and	a0, a0, a1
 	ret
 
 func0000000000000044:
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa5, fa2
-	flt.s	a1, fa1, fa0
+	flt.s	a0, fa1, fa0
+	flt.s	a1, fa5, fa2
 	and	a0, a0, a1
 	ret
 
 func000000000000005b:
 	fmv.w.x	fa5, zero
-	fle.s	a0, fa2, fa5
-	flt.s	a1, fa1, fa0
+	flt.s	a0, fa1, fa0
+	fle.s	a1, fa2, fa5
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func000000000000004c:
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa5, fa2
-	fle.s	a1, fa1, fa0
+	fle.s	a0, fa1, fa0
+	flt.s	a1, fa5, fa2
 	and	a0, a0, a1
 	ret
 
 func000000000000002a:
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa2, fa5
-	fle.s	a1, fa0, fa1
+	fle.s	a0, fa0, fa1
+	flt.s	a1, fa2, fa5
 	and	a0, a0, a1
 	ret
 
 func0000000000000024:
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa2, fa5
-	flt.s	a1, fa1, fa0
+	flt.s	a0, fa1, fa0
+	flt.s	a1, fa2, fa5
 	and	a0, a0, a1
 	ret
 
 func00000000000000c2:
 	fmv.w.x	fa5, zero
-	fle.s	a0, fa5, fa2
-	flt.s	a1, fa0, fa1
+	flt.s	a0, fa0, fa1
+	fle.s	a1, fa5, fa2
 	and	a0, a0, a1
 	ret
 

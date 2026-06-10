@@ -1,9 +1,9 @@
 func000000000000000c:
 	andi	a1, a1, 3
 	slli	a1, a1, 3
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, 240
+	addi	a1, a2, 240
 	add	a0, a0, a1
 	ret
 

@@ -68,8 +68,8 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	li	a0, 2047
 	slli	a0, a0, 52

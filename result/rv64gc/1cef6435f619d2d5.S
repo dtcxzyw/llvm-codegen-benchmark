@@ -15,8 +15,8 @@ func00000000000000f0:
 	ret
 
 func00000000000000fc:
-	slli	a2, a2, 4
 	lui	a3, 786432
+	slli	a2, a2, 4
 	srli	a3, a3, 27
 	and	a1, a1, a3
 	add	a0, a0, a2

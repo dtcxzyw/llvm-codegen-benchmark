@@ -1,16 +1,16 @@
 func000000000000001d:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v9, v10, 0
-	fmv.w.x	fa5, zero
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmflt.vf	v8, v8, fa5
 	vmorn.mm	v0, v9, v8
 	ret
 
 func0000000000000017:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v9, v10, 4
-	fmv.w.x	fa5, zero
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmfne.vf	v8, v8, fa5
 	vmor.mm	v0, v8, v9

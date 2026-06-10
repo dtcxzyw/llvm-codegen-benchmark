@@ -25,33 +25,33 @@ func0000000000000380:
 
 func00000000000003df:
 	add	a1, a1, a2
-	lui	a2, 233
 	sh2add	a0, a0, a1
-	addi	a1, a2, -1792
+	lui	a1, 233
+	addi	a1, a1, -1792
 	add	a0, a0, a1
 	ret
 
 func0000000000000310:
 	add	a1, a1, a2
-	lui	a2, 233
 	sh2add	a0, a0, a1
-	addi	a1, a2, -1792
+	lui	a1, 233
+	addi	a1, a1, -1792
 	add	a0, a0, a1
 	ret
 
 func00000000000003dc:
 	add	a1, a1, a2
-	lui	a2, 233
 	sh2add	a0, a0, a1
-	addi	a1, a2, -1792
+	lui	a1, 233
+	addi	a1, a1, -1792
 	add	a0, a0, a1
 	ret
 
 func0000000000000313:
 	add	a1, a1, a2
-	lui	a2, 233
 	sh2add	a0, a0, a1
-	addi	a1, a2, -1792
+	lui	a1, 233
+	addi	a1, a1, -1792
 	add	a0, a0, a1
 	ret
 

@@ -29,9 +29,9 @@ func0000000000001821:
 	ret
 
 func0000000000002021:
-	sext.w	a2, a0
-	li	a3, 4
-	beq	a2, a3, .LBB2_2
+	li	a2, 4
+	sext.w	a3, a0
+	beq	a3, a2, .LBB2_2
 	addiw	a0, a0, -5
 	seqz	a0, a0
 	ret

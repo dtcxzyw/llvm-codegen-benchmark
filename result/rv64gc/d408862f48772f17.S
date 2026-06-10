@@ -3,10 +3,10 @@ func0000000000000021:
 	srli	a0, a2, 1
 	ret
 .LBB0_2:
-	srli	a1, a1, 3
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a2, a0, 32
+	srli	a1, a1, 3
 	add	a0, a0, a2
 	mul	a0, a1, a0
 	ret

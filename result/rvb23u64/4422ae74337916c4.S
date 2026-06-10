@@ -20,10 +20,10 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
+	lui	a3, 524288
 	subw	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1
-	xor	a1, a1, a2
+	addiw	a3, a3, -1
+	xor	a1, a1, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

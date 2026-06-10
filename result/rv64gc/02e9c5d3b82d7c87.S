@@ -4,8 +4,8 @@ func00000000000000ac:
 	ret
 
 func00000000000000a4:
-	sext.w	a0, a0
 	li	a1, 104
+	sext.w	a0, a0
 	mul	a0, a0, a1
 	addi	a0, a0, 16
 	sltiu	a0, a0, 1025

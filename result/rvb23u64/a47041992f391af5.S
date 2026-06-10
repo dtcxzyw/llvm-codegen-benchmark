@@ -9,9 +9,9 @@ func0000000000000021:
 
 func000000000000004a:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	addi	a3, a3, -1
 	add	a2, a2, a3
+	srliw	a1, a1, 31
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -20,9 +20,9 @@ func000000000000004a:
 
 func0000000000000046:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	addi	a3, a3, -1
 	add	a2, a2, a3
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -59,10 +59,10 @@ func0000000000000061:
 	ret
 
 func000000000000006a:
-	sext.w	a1, a1
-	addi	a2, a2, 1
 	lui	a3, 262144
+	sext.w	a1, a1
 	addi	a3, a3, -1
+	addi	a2, a2, 1
 	slt	a1, a3, a1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

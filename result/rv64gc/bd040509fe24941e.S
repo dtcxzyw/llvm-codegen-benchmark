@@ -3,8 +3,8 @@ func0000000000000044:
 	bnez	a0, .LBB0_2
 	fmv.s	fa1, fa2
 .LBB0_2:
-	fsub.s	fa5, fa1, fa0
 	lui	a0, 280576
+	fsub.s	fa5, fa1, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -14,9 +14,9 @@ func0000000000000022:
 	bnez	a0, .LBB1_2
 	fmv.s	fa1, fa2
 .LBB1_2:
-	fsub.s	fa5, fa1, fa0
 	lui	a0, 241713
 	addi	a0, a0, 623
+	fsub.s	fa5, fa1, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -61,8 +61,8 @@ func0000000000000028:
 	bnez	a0, .LBB6_2
 	fmv.s	fa1, fa2
 .LBB6_2:
-	fsub.s	fa5, fa1, fa0
 	lui	a0, 1046528
+	fsub.s	fa5, fa1, fa0
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa5, fa4
 	ret

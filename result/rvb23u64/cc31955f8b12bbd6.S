@@ -45,8 +45,8 @@ func000000000000003f:
 	ret
 
 func0000000000000030:
-	zext.b	a1, a1
 	slli	a0, a0, 40
+	zext.b	a1, a1
 	srli	a0, a0, 47
 	or	a0, a0, a1
 	ret

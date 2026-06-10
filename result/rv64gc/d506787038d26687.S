@@ -1,7 +1,7 @@
 func000000000000000c:
 	slli	a1, a1, 41
-	lui	a2, 2048
 	srli	a1, a1, 41
+	lui	a2, 2048
 	or	a1, a1, a2
 	addi	a0, a0, -94
 	sllw	a0, a1, a0
@@ -23,8 +23,8 @@ func000000000000001e:
 
 func000000000000001f:
 	slli	a1, a1, 52
-	lui	a2, 1
 	srli	a1, a1, 52
+	lui	a2, 1
 	or	a1, a1, a2
 	addi	a0, a0, 3
 	sllw	a0, a1, a0

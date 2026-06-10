@@ -19,15 +19,15 @@ func000000000000000a:
 	lui	a2, 1048571
 	bnez	a3, .LBB2_2
 	addi	a2, a2, 129
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
 .LBB2_2:
 	addi	a2, a2, 227
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -36,15 +36,15 @@ func0000000000000018:
 	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
 	li	a2, 16
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
 .LBB3_2:
 	li	a2, 40
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	slli	a0, a0, 32
 	srli	a0, a0, 32
 	ret
@@ -60,13 +60,13 @@ func0000000000000009:
 	andi	a2, a2, 1
 	bnez	a2, .LBB5_2
 	li	a2, 32
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB5_2:
 	li	a2, 64
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func000000000000000b:

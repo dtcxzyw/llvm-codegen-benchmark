@@ -15,13 +15,13 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
 	li	a0, 32
-	vor.vv	v8, v8, v12
-	vmv.v.x	v10, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vzext.vf2	v14, v10
+	vor.vv	v8, v8, v14
 	li	a0, 16
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v10, v12, a0, v0
 	vor.vv	v8, v8, v10
 	ret
 

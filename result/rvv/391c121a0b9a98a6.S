@@ -15,10 +15,10 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	lui	a0, 2
-	addi	a0, a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
+	lui	a0, 2
+	addi	a0, a0, 1
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vor.vx	v9, v8, a0
 	vmerge.vvm	v8, v9, v8, v0

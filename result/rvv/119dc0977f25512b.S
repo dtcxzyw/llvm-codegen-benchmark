@@ -6,8 +6,8 @@ func0000000000000000:
 	addi	a0, a0, -1661
 	fmv.w.x	fa5, a0
 	lui	a0, 252464
-	addi	a0, a0, -1661
 	vfmul.vf	v8, v8, fa5
+	addi	a0, a0, -1661
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret

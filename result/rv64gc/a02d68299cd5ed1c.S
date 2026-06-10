@@ -8,8 +8,8 @@ func000000000000006f:
 
 func000000000000006c:
 	slli	a2, a2, 8
-	zext.b	a1, a1
 	or	a0, a0, a2
+	zext.b	a1, a1
 	lui	a2, 400520
 	or	a0, a0, a1
 	addi	a1, a2, 1607
@@ -34,8 +34,8 @@ func000000000000007d:
 
 func000000000000004c:
 	slli	a2, a2, 16
-	zext.b	a1, a1
 	or	a0, a0, a2
+	zext.b	a1, a1
 	lui	a2, 1048552
 	or	a0, a0, a1
 	addi	a1, a2, -1697

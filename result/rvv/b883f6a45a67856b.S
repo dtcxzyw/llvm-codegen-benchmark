@@ -1,9 +1,9 @@
 func00000000000000cc:
 	lui	a0, 1048568
 	addi	a1, a0, 1262
-	addi	a0, a0, 767
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vx	v10, v8, a1
+	addi	a0, a0, 767
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v8, v11, v10
 	vmand.mm	v0, v8, v0

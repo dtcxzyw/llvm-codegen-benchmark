@@ -26,9 +26,9 @@ func000000000000002e:
 	ret
 
 func0000000000000055:
+	lui	a3, 3
 	sub	a1, a1, a2
-	lui	a2, 3
-	addi	a2, a2, -703
+	addi	a2, a3, -703
 	mul	a1, a1, a2
 	lui	a2, 32
 	add	a0, a0, a2
@@ -37,10 +37,10 @@ func0000000000000055:
 
 func000000000000005d:
 	sub	a1, a1, a2
-	lui	a2, 1045149
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
-	addi	a1, a2, 1384
+	lui	a1, 1045149
+	addi	a1, a1, 1384
 	add	a0, a0, a1
 	ret
 

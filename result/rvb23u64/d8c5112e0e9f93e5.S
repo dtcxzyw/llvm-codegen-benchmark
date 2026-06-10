@@ -6,8 +6,8 @@ func000000000000000e:
 	ret
 
 func0000000000000030:
-	andi	a2, a2, 1
 	sh3add	a0, a1, a0
+	andi	a2, a2, 1
 	sh3add	a0, a2, a0
 	addi	a0, a0, -8
 	ret

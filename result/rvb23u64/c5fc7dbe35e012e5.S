@@ -1,6 +1,6 @@
 func0000000000000098:
-	sext.w	a1, a1
 	slli	a2, a2, 3
+	sext.w	a1, a1
 	srli	a2, a2, 35
 	xor	a1, a1, a2
 	snez	a1, a1

@@ -7,15 +7,15 @@ func0000000000002094:
 	ret
 
 func0000000000000598:
-	sext.w	a0, a0
 	addiw	a1, a1, -1
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000058c:
-	sext.w	a0, a0
 	addiw	a1, a1, -4
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
@@ -46,22 +46,22 @@ func0000000000000426:
 	ret
 
 func000000000000042c:
-	sext.w	a0, a0
 	addiw	a1, a1, -1
+	sext.w	a0, a0
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000581:
-	sext.w	a0, a0
 	addiw	a1, a1, -1
+	sext.w	a0, a0
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000424:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	sltiu	a0, a0, 7
 	czero.nez	a0, a0, a1
 	ret

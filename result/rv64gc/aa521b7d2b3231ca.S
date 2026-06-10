@@ -7,9 +7,9 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
+	li	a1, 2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 2
 	bltu	a0, a1, .LBB1_2
 	lui	a0, 3
 	ret
@@ -18,9 +18,9 @@ func0000000000000014:
 	ret
 
 func0000000000000008:
+	li	a1, 101
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 101
 	bltu	a1, a0, .LBB2_2
 	lui	a0, 1
 	addi	a0, a0, 1025
@@ -53,19 +53,19 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
+	li	a1, 4
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	sgtz	a0, a0
-	li	a1, 4
 	sub	a0, a1, a0
 	ret
 
 func0000000000000018:
+	lui	a1, 229376
 	slli	a0, a0, 48
 	srli	a0, a0, 58
 	sltiu	a0, a0, 31
 	addi	a0, a0, -1
-	lui	a1, 229376
 	and	a0, a0, a1
 	ret
 

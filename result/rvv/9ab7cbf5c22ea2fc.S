@@ -1,7 +1,7 @@
 func0000000000000028:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 14
-	li	a0, 32
 	vsra.vx	v10, v10, a0
 	vsext.vf2	v12, v8
 	vmsltu.vv	v0, v12, v10
@@ -35,18 +35,18 @@ func000000000000002a:
 	ret
 
 func0000000000000006:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 29
-	li	a0, 32
 	vsra.vx	v10, v10, a0
 	vsext.vf2	v12, v8
 	vmslt.vv	v0, v10, v12
 	ret
 
 func0000000000000001:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 30
-	li	a0, 32
 	vsra.vx	v10, v10, a0
 	vsext.vf2	v12, v8
 	vmseq.vv	v0, v10, v12

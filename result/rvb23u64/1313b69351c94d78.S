@@ -7,14 +7,14 @@ func0000000000000148:
 	sub	a0, a0, a1
 	srli	a0, a0, 1
 	add	a0, a0, a1
-	li	a1, -1
 	srli	a0, a0, 2
 	addi	a0, a0, -1
 	clz	a0, a0
+	li	a1, -1
+	li	a2, -33
 	srl	a0, a1, a0
-	li	a1, -33
-	srli	a1, a1, 5
-	sltu	a0, a1, a0
+	srli	a2, a2, 5
+	sltu	a0, a2, a0
 	ret
 
 .LCPI1_0:
@@ -26,13 +26,13 @@ func0000000000000158:
 	sub	a0, a0, a1
 	srli	a0, a0, 1
 	add	a0, a0, a1
-	li	a1, -1
 	srli	a0, a0, 2
 	addi	a0, a0, -1
 	clz	a0, a0
+	li	a1, -1
+	li	a2, -9
 	srl	a0, a1, a0
-	li	a1, -9
-	srli	a1, a1, 3
-	sltu	a0, a1, a0
+	srli	a2, a2, 3
+	sltu	a0, a2, a0
 	ret
 

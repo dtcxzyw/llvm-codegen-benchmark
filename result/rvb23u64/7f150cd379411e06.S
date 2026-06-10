@@ -24,8 +24,8 @@ func0000000000000001:
 
 func0000000000000038:
 	li	a3, -1
-	srli	a1, a1, 32
 	add.uw	a2, a3, a2
+	srli	a1, a1, 32
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -72,18 +72,18 @@ func000000000000002a:
 
 func000000000000004a:
 	li	a3, -1
-	srli	a1, a1, 63
 	srli	a3, a3, 1
 	add	a2, a2, a3
+	srli	a1, a1, 63
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000064:
-	addi	a2, a2, 1
 	lui	a3, 244
 	addi	a3, a3, 576
+	addi	a2, a2, 1
 	sltu	a1, a1, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
@@ -121,9 +121,9 @@ func0000000000000041:
 	ret
 
 func0000000000000004:
-	addi	a2, a2, 1
 	lui	a3, 2048
 	addi	a3, a3, 1
+	addi	a2, a2, 1
 	sltu	a1, a1, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

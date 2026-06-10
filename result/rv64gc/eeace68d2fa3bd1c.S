@@ -1,6 +1,6 @@
 func00000000000000e1:
-	lui	a3, 1048560
 	lui	a2, 16
+	lui	a3, 1048560
 	addi	a2, a2, -16
 	addi	a3, a3, 15
 	bgeu	a2, a1, .LBB0_2

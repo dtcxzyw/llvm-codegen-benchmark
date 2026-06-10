@@ -17,8 +17,8 @@ func0000000000000009:
 	ret
 
 func000000000000000d:
-	subw	a1, a1, a0
 	li	a2, 1
+	subw	a1, a1, a0
 	slli	a2, a2, 11
 	blt	a1, a2, .LBB2_2
 	mv	a1, a2

@@ -34,8 +34,8 @@ func000000000000000b:
 	ret
 
 func0000000000000337:
-	sext.w	a2, a0
 	li	a1, 16
+	sext.w	a2, a0
 	blt	a2, a1, .LBB3_2
 	slliw	a1, a0, 1
 .LBB3_2:
@@ -43,9 +43,9 @@ func0000000000000337:
 	ret
 
 func0000000000000137:
-	sext.w	a1, a0
-	li	a2, 50
-	bge	a1, a2, .LBB4_2
+	li	a1, 50
+	sext.w	a2, a0
+	bge	a2, a1, .LBB4_2
 	li	a0, 100
 	slli	a0, a0, 4
 	ret

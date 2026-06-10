@@ -8,10 +8,10 @@ func000000000000001d:
 
 func000000000000001f:
 	slli	a1, a1, 26
+	lui	a3, 262143
 	add	a1, a1, a2
-	lui	a2, 262143
-	slli	a2, a2, 14
-	and	a1, a1, a2
+	slli	a3, a3, 14
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -23,12 +23,12 @@ func000000000000000b:
 	ret
 
 func0000000000000011:
+	lui	a3, 524288
 	slli	a1, a1, 32
+	addi	a3, a3, -1
 	add	a1, a1, a2
-	lui	a2, 524288
-	addi	a2, a2, -1
-	slli	a2, a2, 32
-	and	a1, a1, a2
+	slli	a3, a3, 32
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

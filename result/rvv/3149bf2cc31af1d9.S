@@ -37,8 +37,8 @@ func0000000000000002:
 	lui	a0, 42950
 	addi	a0, a0, -1339
 	vmulhu.vx	v12, v12, a0
-	lui	a0, 12
 	vsrl.vi	v12, v12, 7
+	lui	a0, 12
 	addi	a0, a0, 848
 	vnmsub.vx	v12, a0, v10
 	vadd.vv	v8, v8, v12

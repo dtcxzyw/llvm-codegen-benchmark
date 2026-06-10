@@ -9,20 +9,20 @@ func0000000000000042:
 
 func0000000000000282:
 	sext.h	a1, a0
-	slli	a0, a0, 48
 	slti	a1, a1, 128
+	slli	a0, a0, 48
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000048:
-	zext.h	a0, a0
 	lui	a1, 16
-	lui	a2, 8
+	zext.h	a0, a0
 	addi	a1, a1, -2
-	addi	a2, a2, 1
+	lui	a2, 8
 	xor	a1, a1, a0
+	addi	a2, a2, 1
 	seqz	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1

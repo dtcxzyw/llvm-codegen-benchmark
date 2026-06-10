@@ -48,8 +48,8 @@ func0000000000000040:
 
 func0000000000000033:
 	li	a3, 535
-	slli	a2, a2, 32
 	slli	a3, a3, 36
+	slli	a2, a2, 32
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -83,9 +83,9 @@ func000000000000003e:
 func000000000000004c:
 	sext.w	a2, a2
 	slli	a0, a0, 2
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	lui	a1, 320
-	slli	a2, a2, 2
 	add	a0, a0, a2
 	addi	a1, a1, -928
 	add	a0, a0, a1

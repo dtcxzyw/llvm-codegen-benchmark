@@ -15,8 +15,8 @@ func000000000000002a:
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	sgtz	a1, a1
 	addiw	a0, a0, 1
+	sgtz	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -13,18 +13,18 @@ func0000000000000000:
 	ret
 
 func0000000000000014:
+	lui	a3, 1048332
+	addi	a3, a3, -576
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 1048332
-	addi	a2, a2, -576
-	mul	a0, a0, a2
 	sub	a0, a0, a1
 	ret
 
 func0000000000000015:
+	lui	a3, 3
+	addi	a3, a3, -1965
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 3
-	addi	a2, a2, -1965
-	mul	a0, a0, a2
 	sub	a0, a0, a1
 	ret
 

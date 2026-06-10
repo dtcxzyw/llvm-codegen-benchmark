@@ -1,9 +1,9 @@
 func0000000000000000:
-	sext.w	a2, a0
-	slli	a0, a1, 33
-	srli	a0, a0, 33
-	bltu	a0, a2, .LBB0_2
-	mv	a0, a2
+	slli	a2, a1, 33
+	sext.w	a1, a0
+	srli	a0, a2, 33
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
 	ret
 

@@ -21,8 +21,8 @@ func0000000000000004:
 func0000000000000005:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vim	v16, v16, 0, v0
-	li	a0, 997
 	vfmul.vv	v8, v8, v16
+	li	a0, 997
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5

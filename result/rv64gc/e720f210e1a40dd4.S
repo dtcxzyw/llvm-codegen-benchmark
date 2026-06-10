@@ -25,9 +25,9 @@ func000000000000001f:
 
 func000000000000000d:
 	lui	a3, 8
+	and	a2, a2, a3
 	or	a0, a0, a1
 	li	a1, 31
-	and	a2, a2, a3
 	or	a0, a0, a2
 	slli	a1, a1, 10
 	or	a0, a0, a1

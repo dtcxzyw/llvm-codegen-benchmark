@@ -52,11 +52,11 @@ func00000000000000ec:
 
 func00000000000000f0:
 	li	a3, 138
-	add	a0, a0, a2
-	lui	a2, 3
 	mul	a1, a1, a3
-	add	a0, a0, a1
-	addi	a1, a2, -334
+	lui	a3, 3
+	add	a0, a0, a2
+	addi	a2, a3, -334
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

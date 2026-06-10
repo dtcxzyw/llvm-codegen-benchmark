@@ -23,10 +23,10 @@ func0000000000000013:
 	ret
 
 func0000000000000083:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv1r.v	v10, v0
 	lui	a0, 16
 	addi	a0, a0, 255
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmsgtu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v8, 0

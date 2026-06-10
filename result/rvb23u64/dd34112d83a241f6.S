@@ -47,10 +47,10 @@ func000000000000002c:
 	ret
 
 func0000000000000074:
-	zext.b	a2, a2
 	lui	a3, 8
-	sltiu	a2, a2, 3
+	zext.b	a2, a2
 	addi	a3, a3, -1
+	sltiu	a2, a2, 3
 	addw	a1, a1, a3
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2

@@ -46,10 +46,10 @@ func0000000000001801:
 	ret
 
 func0000000000000001:
+	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vnsrl.wi	v10, v8, 0
-	li	a0, 63
 	vadd.vx	v8, v10, a0
 	vmseq.vv	v0, v8, v12
 	ret

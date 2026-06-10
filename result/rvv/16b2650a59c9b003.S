@@ -24,12 +24,11 @@ func0000000000000008:
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 
+.LCPI3_0:
+	.quad	-62162121600000000
 func000000000000002a:
-	lui	a0, 935504
-	addi	a0, a0, -985
-	slli	a0, a0, 14
-	addi	a0, a0, -927
-	slli	a0, a0, 13
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
 	lui	a0, 140

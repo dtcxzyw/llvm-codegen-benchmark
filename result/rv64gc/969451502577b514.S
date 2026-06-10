@@ -8,11 +8,11 @@ func0000000000000065:
 
 func000000000000006f:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a1, a1, 4
+	zext.b	a0, a0
+	lui	a2, 4096
 	add	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -816
+	addi	a1, a2, -816
 	add	a0, a0, a1
 	ret
 
@@ -26,11 +26,11 @@ func000000000000006d:
 
 func0000000000000067:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a1, a1, 16
+	zext.b	a0, a0
+	lui	a2, 1045508
 	or	a0, a0, a1
-	lui	a1, 1045508
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	add	a0, a0, a1
 	ret
 

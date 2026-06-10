@@ -3,8 +3,8 @@ func000000000000060e:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vadd.vx	v10, v8, a0
-	li	a0, -1
 	vmerge.vvm	v8, v10, v8, v0
+	li	a0, -1
 	slli	a0, a0, 48
 	vand.vx	v8, v8, a0
 	ret

@@ -1,10 +1,10 @@
 func0000000000000005:
-	fmv.x.w	a0, fa0
-	lui	a1, 154
-	slli	a0, a0, 33
-	srli	a0, a0, 56
-	addi	a0, a0, -150
-	addi	a1, a1, 521
+	lui	a0, 154
+	fmv.x.w	a1, fa0
+	slli	a1, a1, 33
+	srli	a1, a1, 56
+	addi	a1, a1, -150
+	addi	a0, a0, 521
 	mul	a0, a0, a1
 	ret
 

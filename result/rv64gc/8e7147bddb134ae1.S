@@ -1,8 +1,8 @@
 func0000000000000025:
 	li	a2, -61
+	lui	a3, 19
 	sub	a2, a2, a1
-	lui	a1, 19
-	addi	a1, a1, 1089
+	addi	a1, a3, 1089
 	mul	a1, a2, a1
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 14

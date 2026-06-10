@@ -1,7 +1,7 @@
 func0000000000000004:
+	lui	a2, 112755
 	or	a0, a0, a1
-	lui	a1, 112755
-	addi	a1, a1, 1427
+	addi	a1, a2, 1427
 	mulw	a0, a0, a1
 	ret
 
@@ -12,9 +12,9 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
+	lui	a2, 269413
 	or	a0, a0, a1
-	lui	a1, 269413
-	addi	a1, a1, -403
+	addi	a1, a2, -403
 	mulw	a0, a0, a1
 	ret
 

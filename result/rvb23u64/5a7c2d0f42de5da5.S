@@ -7,9 +7,9 @@ func0000000000000007:
 	ret
 
 func0000000000000002:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 797452
 	addi	a1, a1, 165
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	andn	a0, a1, a0

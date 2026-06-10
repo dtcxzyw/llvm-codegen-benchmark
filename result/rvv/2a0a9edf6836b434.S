@@ -20,11 +20,11 @@ func0000000000000021:
 	ret
 
 func00000000000000c1:
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vsll.vi	v12, v12, 13
 	lui	a0, 63488
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vx	v0, v10, a0
+	vsll.vi	v10, v12, 13
 	lui	a0, 458752
-	vor.vx	v8, v12, a0, v0.t
+	vor.vx	v8, v10, a0, v0.t
 	ret
 

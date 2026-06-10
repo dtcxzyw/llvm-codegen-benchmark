@@ -10,13 +10,15 @@ func00000000000003c6:
 
 func00000000000003cc:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v14, v12
-	vwsll.vi	v12, v14, 8
+	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v10, v12, v10
-	vmsne.vi	v12, v10, 0
+	vmsne.vi	v12, v8, 0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwsll.vi	v8, v13, 8
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vor.vv	v8, v8, v10
 	vmsne.vi	v10, v8, 0
-	vmand.mm	v0, v10, v12
+	vmand.mm	v0, v12, v10
 	ret
 
 func0000000000000386:

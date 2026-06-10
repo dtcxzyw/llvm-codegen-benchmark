@@ -14,12 +14,12 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
+	lui	a2, 61681
 	add	a0, a0, a1
-	lui	a1, 61681
-	addi	a1, a1, -241
+	addi	a1, a2, -241
+	lui	a2, 4112
 	and	a0, a0, a1
-	lui	a1, 4112
-	addi	a1, a1, 257
+	addi	a1, a2, 257
 	mulw	a0, a0, a1
 	ret
 

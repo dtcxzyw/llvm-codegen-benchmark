@@ -1,7 +1,7 @@
 func0000000000000024:
-	lui	a0, 244
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsub.vv	v8, v8, v10, v0.t
+	lui	a0, 244
 	addi	a0, a0, 576
 	vmsltu.vx	v0, v8, a0
 	ret

@@ -20,18 +20,18 @@ func000000000000001e:
 	beq	a2, a3, .LBB1_2
 	lui	a2, 1
 	addi	a2, a2, -1392
-	add	a1, a1, a2
-	slli	a2, a0, 3
+	slli	a3, a0, 3
 	slli	a0, a0, 7
-	add	a0, a0, a2
+	add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 8
-	add	a1, a1, a2
-	slli	a2, a0, 3
+	slli	a3, a0, 3
 	slli	a0, a0, 7
-	add	a0, a0, a2
+	add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

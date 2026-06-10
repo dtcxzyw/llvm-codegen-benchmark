@@ -6,8 +6,8 @@ func0000000000000008:
 
 func0000000000000000:
 	add	a0, a0, a1
-	li	a1, 1
 	addi	a0, a0, 6
+	li	a1, 1
 	slli	a0, a0, 32
 	slli	a1, a1, 33
 	add	a0, a0, a1
@@ -21,8 +21,8 @@ func0000000000000005:
 
 func0000000000000080:
 	add	a0, a0, a1
-	li	a1, 9
 	addi	a0, a0, 1408
+	li	a1, 9
 	slli	a0, a0, 9
 	slli	a1, a1, 11
 	add	a0, a0, a1

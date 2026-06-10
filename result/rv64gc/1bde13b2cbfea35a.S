@@ -24,12 +24,12 @@ func00000000000000a1:
 
 func0000000000000147:
 	li	a2, -1
-	slt	a1, a1, a0
 	slli	a2, a2, 63
 	addi	a2, a2, 7
-	and	a0, a0, a2
-	sgtz	a0, a0
-	not	a1, a1
+	and	a2, a2, a0
+	slt	a0, a1, a0
+	sgtz	a1, a2
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

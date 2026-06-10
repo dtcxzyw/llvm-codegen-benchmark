@@ -18,23 +18,23 @@ func0000000000000081:
 	ret
 
 func0000000000000101:
+	lui	a3, 16
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
-	lui	a1, 16
 	addw	a0, a0, a2
-	addi	a1, a1, -1
-	xor	a0, a0, a1
+	addi	a3, a3, -1
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 
 func0000000000000001:
+	negw	a2, a2
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	sext.w	a0, a0
-	negw	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

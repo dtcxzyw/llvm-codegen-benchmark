@@ -16,8 +16,8 @@ func000000000000000b:
 
 func000000000000000f:
 	andi	a1, a1, 1
-	slli.uw	a2, a2, 24
 	li	a3, -1
+	slli.uw	a2, a2, 24
 	slli	a3, a3, 56
 	czero.nez	a1, a3, a1
 	or	a0, a0, a2

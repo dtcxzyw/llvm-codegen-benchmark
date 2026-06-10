@@ -12,12 +12,12 @@ func0000000000000087:
 
 func000000000000031b:
 	sext.w	a1, a1
-	li	a2, 2
-	slti	a3, a1, 27
+	slti	a2, a1, 27
+	li	a3, 2
 	slti	a1, a1, 10
-	sub	a2, a2, a3
+	sub	a3, a3, a2
 	addi	a1, a1, -1
-	and	a1, a1, a2
+	and	a1, a1, a3
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret

@@ -14,9 +14,9 @@ func0000000000000001:
 
 func0000000000000000:
 	li	a2, 255
+	li	a3, 254
 	sllw	a1, a2, a1
-	li	a2, 254
-	srlw	a0, a2, a0
+	srlw	a0, a3, a0
 	and	a0, a0, a1
 	ret
 

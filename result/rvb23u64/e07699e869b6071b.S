@@ -1,6 +1,6 @@
 func00000000000000c1:
-	srai	a1, a1, 63
 	lui	a2, 244
+	srai	a1, a1, 63
 	addi	a2, a2, 576
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -23,8 +23,8 @@ func00000000000004ca:
 	ret
 
 func00000000000000c8:
-	srai	a1, a1, 63
 	lui	a2, 976563
+	srai	a1, a1, 63
 	addi	a2, a2, -2048
 	and	a1, a1, a2
 	lui	a2, 976562

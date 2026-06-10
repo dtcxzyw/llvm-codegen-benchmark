@@ -6,8 +6,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	zext.b	a0, a0
 	li	a1, 2
+	zext.b	a0, a0
 	bltu	a0, a1, .LBB1_2
 	fmv.w.x	fa0, zero
 .LBB1_2:

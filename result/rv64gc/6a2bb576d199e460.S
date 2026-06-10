@@ -27,9 +27,9 @@ func000000000000007a:
 	slli	a2, a2, 6
 	add	a1, a1, a2
 	lui	a2, 1048574
+	lui	a3, 1048352
 	addw	a1, a1, a2
-	lui	a2, 1048352
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

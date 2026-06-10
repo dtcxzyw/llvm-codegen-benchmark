@@ -32,12 +32,11 @@ func0000000000000021:
 	subw	a0, a0, a1
 	ret
 
+.LCPI6_0:
+	.quad	1000000000000000000
 func0000000000000011:
-	lui	a2, 227374
-	addi	a2, a2, -1329
-	slli	a2, a2, 12
-	addi	a2, a2, -1575
-	slli	a2, a2, 18
+	lui	a2, %hi(.LCPI6_0)
+	ld	a2, %lo(.LCPI6_0)(a2)
 	sltu	a1, a1, a2
 	subw	a0, a0, a1
 	ret
@@ -53,12 +52,11 @@ func0000000000000029:
 	subw	a0, a0, a1
 	ret
 
+.LCPI9_0:
+	.quad	1000000000000000
 func0000000000000051:
-	lui	a2, 1819
-	addi	a2, a2, -43
-	slli	a2, a2, 12
-	addi	a2, a2, -1651
-	slli	a2, a2, 15
+	lui	a2, %hi(.LCPI9_0)
+	ld	a2, %lo(.LCPI9_0)(a2)
 	sltu	a1, a1, a2
 	subw	a0, a0, a1
 	ret

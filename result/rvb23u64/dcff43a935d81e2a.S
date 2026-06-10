@@ -6,8 +6,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	srli	a1, a1, 5
 	addiw	a0, a0, -1
+	srli	a1, a1, 5
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -40,8 +40,8 @@ func00000000000000cc:
 
 func000000000000030c:
 	sext.w	a0, a0
-	srli	a1, a1, 1
 	sltiu	a0, a0, 3
+	srli	a1, a1, 1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -85,11 +85,11 @@ func00000000000000c1:
 	ret
 
 func0000000000000301:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 58
-	sltiu	a0, a0, 2
 	addi	a1, a1, -55
+	sltiu	a0, a0, 2
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

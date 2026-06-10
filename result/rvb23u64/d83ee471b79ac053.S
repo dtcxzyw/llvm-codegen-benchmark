@@ -6,17 +6,17 @@ func0000000000000026:
 
 func000000000000002a:
 	andi	a0, a0, 1
+	lui	a2, 1048400
 	subw	a1, a1, a0
-	lui	a0, 1048400
-	addi	a0, a0, 1427
+	addi	a0, a2, 1427
 	slt	a0, a0, a1
 	ret
 
 func00000000000000aa:
 	andi	a0, a0, 1
+	lui	a2, 1048400
 	subw	a1, a1, a0
-	lui	a0, 1048400
-	addi	a0, a0, 1427
+	addi	a0, a2, 1427
 	slt	a0, a0, a1
 	ret
 

@@ -15,10 +15,10 @@ func000000000000002c:
 	ret
 
 func000000000000002a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v12, v10, 1
 	lui	a0, 8
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmseq.vi	v12, v10, 1
 	vmsgt.vx	v13, v8, a0
 	vmand.mm	v0, v13, v12
 	vmerge.vvm	v8, v10, v8, v0

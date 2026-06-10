@@ -23,21 +23,21 @@ func000000000000000d:
 
 func0000000000000014:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v12, v10, -1
-	vmand.mm	v0, v12, v0
-	vmv.v.i	v10, 8
-	vmerge.vim	v10, v10, 12, v0
+	vmv.v.i	v12, 8
+	vmsgt.vi	v14, v10, -1
+	vmand.mm	v0, v14, v0
+	vmerge.vim	v10, v12, 12, v0
 	vor.vv	v8, v10, v8
 	ret
 
 func0000000000000015:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v12, v10, -1
 	lui	a0, 176
-	vmand.mm	v0, v12, v0
-	vmv.v.x	v10, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vmsgt.vi	v14, v10, -1
+	vmand.mm	v0, v14, v0
 	addi	a0, a0, 16
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v10, v12, a0, v0
 	vor.vv	v8, v10, v8
 	ret
 

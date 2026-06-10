@@ -19,8 +19,8 @@ func0000000000000004:
 	ret
 
 func000000000000000f:
-	addi	a0, a0, 7
 	lui	a1, 8192
+	addi	a0, a0, 7
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	ret
@@ -41,8 +41,8 @@ func0000000000000005:
 	ret
 
 func000000000000000b:
-	addi	a0, a0, 23
 	lui	a1, 524288
+	addi	a0, a0, 23
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	ret

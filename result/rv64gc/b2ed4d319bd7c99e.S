@@ -1,6 +1,6 @@
 func0000000000000005:
-	slliw	a1, a1, 16
 	slli	a0, a0, 48
+	slliw	a1, a1, 16
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret
@@ -14,15 +14,15 @@ func0000000000000006:
 	ret
 
 func000000000000001f:
-	slliw	a1, a1, 21
 	slli	a0, a0, 48
+	slliw	a1, a1, 21
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret
 
 func0000000000000017:
-	slliw	a1, a1, 16
 	slli	a0, a0, 48
+	slliw	a1, a1, 16
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret
@@ -36,22 +36,22 @@ func000000000000001e:
 	ret
 
 func000000000000001d:
-	slliw	a1, a1, 24
 	slli	a0, a0, 48
+	slliw	a1, a1, 24
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	slliw	a1, a1, 20
 	slli	a0, a0, 48
+	slliw	a1, a1, 20
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret
 
 func000000000000000d:
-	slliw	a1, a1, 16
 	slli	a0, a0, 48
+	slliw	a1, a1, 16
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret

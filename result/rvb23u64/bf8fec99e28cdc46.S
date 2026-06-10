@@ -1,6 +1,6 @@
 func0000000000000005:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -8,8 +8,8 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -17,8 +17,8 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -26,8 +26,8 @@ func000000000000000d:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	neg	a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

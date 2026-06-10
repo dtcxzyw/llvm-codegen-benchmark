@@ -7,8 +7,8 @@ func000000000000000e:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 3
 	lui	a2, 4096
+	slli	a1, a1, 3
 	addi	a2, a2, -1
 	sllw	a1, a2, a1
 	not	a1, a1

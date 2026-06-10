@@ -68,10 +68,10 @@ func000000000000001e:
 
 func000000000000005e:
 	slli	a1, a1, 4
+	lui	a2, 256
 	add	a0, a0, a1
-	lui	a1, 256
-	addi	a1, a1, 24
-	add	a0, a0, a1
+	addi	a2, a2, 24
+	add	a0, a0, a2
 	ret
 
 func0000000000000070:

@@ -6,24 +6,24 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	snez	a0, a0
 	addiw	a1, a1, -3
+	snez	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000304:
 	lui	a2, 1
-	sraiw	a1, a1, 12
 	addi	a2, a2, 1
+	sraiw	a1, a1, 12
 	sltu	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000301:
-	sext.w	a1, a1
 	lui	a2, 1
+	sext.w	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a0, a2
 	seqz	a1, a1

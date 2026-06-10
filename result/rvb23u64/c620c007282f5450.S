@@ -3,13 +3,13 @@
 func0000000000000001:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	andi	a0, a0, 1
 	mulh	a3, a2, a3
 	srli	a4, a3, 63
 	srai	a3, a3, 1
 	add	a3, a3, a4
 	slli	a4, a3, 3
 	add	a2, a2, a3
+	andi	a0, a0, 1
 	sub	a2, a2, a4
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

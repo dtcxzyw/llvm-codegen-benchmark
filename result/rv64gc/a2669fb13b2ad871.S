@@ -37,8 +37,8 @@ func0000000000000801:
 	ret
 
 func0000000000000806:
-	sext.w	a2, a2
 	lui	a3, 976562
+	sext.w	a2, a2
 	addi	a3, a3, 2047
 	sltu	a2, a3, a2
 	add	a1, a1, a2
@@ -46,8 +46,8 @@ func0000000000000806:
 	ret
 
 func000000000000080a:
-	sext.w	a2, a2
 	lui	a3, 976562
+	sext.w	a2, a2
 	addi	a3, a3, 2047
 	sltu	a2, a3, a2
 	add	a1, a1, a2

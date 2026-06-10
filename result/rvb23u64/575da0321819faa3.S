@@ -6,8 +6,8 @@ func000000000000001b:
 
 func000000000000001f:
 	slli	a2, a2, 33
-	srli	a2, a2, 33
 	sh2add	a0, a1, a0
+	srli	a2, a2, 33
 	sh2add	a0, a2, a0
 	ret
 

@@ -28,8 +28,8 @@ func0000000000000010:
 	ret
 
 func0000000000000613:
-	addi	a2, a1, 8
 	sh1add	a0, a0, a0
+	addi	a2, a1, 8
 	czero.eqz	a1, a2, a1
 	slli	a0, a0, 4
 	add	a0, a0, a1

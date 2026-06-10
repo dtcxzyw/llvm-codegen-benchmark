@@ -1,10 +1,10 @@
 func0000000000000007:
+	li	a0, 32
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsll.vi	v10, v10, 3
-	li	a0, 32
-	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v9
-	vor.vv	v8, v8, v10
+	vand.vx	v9, v10, a0
+	vor.vv	v8, v8, v9
 	vor.vi	v8, v8, 2
 	ret
 

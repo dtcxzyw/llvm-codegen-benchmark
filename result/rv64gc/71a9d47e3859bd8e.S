@@ -1,7 +1,7 @@
 func000000000000012a:
-	srai	a1, a1, 4
 	srli	a2, a0, 63
 	add	a0, a0, a2
+	srai	a1, a1, 4
 	srai	a0, a0, 1
 	add	a0, a0, a1
 	srli	a0, a0, 63
@@ -9,9 +9,9 @@ func000000000000012a:
 	ret
 
 func0000000000000134:
-	srai	a1, a1, 4
 	srli	a2, a0, 63
 	add	a0, a0, a2
+	srai	a1, a1, 4
 	srai	a0, a0, 1
 	add	a0, a0, a1
 	sltiu	a0, a0, 32
@@ -41,13 +41,13 @@ func00000000000000b4:
 func0000000000000026:
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	srai	a1, a1, 63
 	mulh	a0, a0, a2
-	srli	a2, a0, 63
-	srai	a0, a0, 13
-	add	a0, a0, a2
 	lui	a2, 961553
+	srli	a3, a0, 63
+	srai	a0, a0, 13
+	add	a0, a0, a3
 	addi	a2, a2, 721
+	srai	a1, a1, 63
 	slli	a2, a2, 12
 	add	a0, a0, a1
 	addi	a1, a2, -647
@@ -57,40 +57,40 @@ func0000000000000026:
 .LCPI5_0:
 	.quad	384307168202282325
 func00000000000001a8:
-	srai	a1, a1, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srai	a1, a1, 3
 	add	a2, a2, a3
-	lui	a3, %hi(.LCPI5_0)
-	ld	a3, %lo(.LCPI5_0)(a3)
 	mul	a1, a1, a2
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	srai	a0, a0, 2
 	add	a0, a0, a1
-	sltu	a0, a3, a0
+	sltu	a0, a2, a0
 	ret
 
 func00000000000001b1:
-	srai	a1, a1, 4
-	srai	a0, a0, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srai	a0, a0, 3
 	add	a2, a2, a3
 	mul	a0, a0, a2
+	srai	a1, a1, 4
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func00000000000001a1:
-	srai	a1, a1, 4
-	srai	a0, a0, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srai	a0, a0, 3
 	add	a2, a2, a3
 	mul	a0, a0, a2
+	srai	a1, a1, 4
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -101,8 +101,8 @@ func00000000000001a1:
 func0000000000000121:
 	lui	a2, %hi(.LCPI8_0)
 	ld	a2, %lo(.LCPI8_0)(a2)
-	srai	a1, a1, 3
 	mulh	a0, a0, a2
+	srai	a1, a1, 3
 	srli	a2, a0, 63
 	srai	a0, a0, 1
 	add	a0, a0, a2

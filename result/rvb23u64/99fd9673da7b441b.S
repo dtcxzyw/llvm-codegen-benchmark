@@ -1,10 +1,10 @@
 func0000000000000000:
 	or	a0, a0, a1
-	lui	a1, 20
 	andi	a0, a0, 1
+	lui	a1, 20
+	lui	a2, 262152
 	czero.nez	a0, a1, a0
-	lui	a1, 262152
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	or	a0, a0, a1
 	ret
 

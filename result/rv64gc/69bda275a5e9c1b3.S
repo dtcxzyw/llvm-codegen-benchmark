@@ -11,9 +11,9 @@ func0000000000000002:
 	ret
 
 func0000000000000009:
+	li	a2, 1000
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 1000
 	bgeu	a1, a2, .LBB1_2
 	li	a0, 3
 	ret
@@ -22,9 +22,9 @@ func0000000000000009:
 	ret
 
 func0000000000000003:
+	li	a2, 18
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 18
 	bne	a1, a2, .LBB2_2
 	li	a0, 7
 	ret

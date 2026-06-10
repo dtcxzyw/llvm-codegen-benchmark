@@ -3,18 +3,18 @@ func0000000000000005:
 	li	a3, 11
 	beq	a2, a3, .LBB0_2
 	li	a2, 208
+	lui	a3, 16
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 192
+	lui	a3, 16
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

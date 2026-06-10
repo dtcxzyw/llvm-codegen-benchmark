@@ -1,8 +1,8 @@
 func00000000000000f8:
-	slli	a1, a1, 56
 	li	a2, 1
-	srai	a1, a1, 56
+	slli	a1, a1, 56
 	slli	a2, a2, 32
+	srai	a1, a1, 56
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 46
@@ -13,10 +13,10 @@ func00000000000000f8:
 	ret
 
 func00000000000000f4:
-	slli	a1, a1, 56
 	li	a2, 1
-	srai	a1, a1, 56
+	slli	a1, a1, 56
 	slli	a2, a2, 32
+	srai	a1, a1, 56
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 46
@@ -27,10 +27,10 @@ func00000000000000f4:
 	ret
 
 func00000000000000ec:
-	slli	a1, a1, 56
 	li	a2, 1
-	srai	a1, a1, 56
+	slli	a1, a1, 56
 	slli	a2, a2, 32
+	srai	a1, a1, 56
 	addi	a2, a2, -48
 	add	a1, a1, a2
 	addi	a2, a2, 47
@@ -42,13 +42,13 @@ func00000000000000ec:
 .LCPI3_0:
 	.quad	1844674407370955161
 func0000000000000088:
-	slli	a1, a1, 56
 	li	a2, 1
-	lui	a3, %hi(.LCPI3_0)
-	srai	a1, a1, 56
+	slli	a1, a1, 56
 	slli	a2, a2, 32
-	ld	a3, %lo(.LCPI3_0)(a3)
+	srai	a1, a1, 56
+	lui	a3, %hi(.LCPI3_0)
 	addi	a2, a2, -48
+	ld	a3, %lo(.LCPI3_0)(a3)
 	add	a1, a1, a2
 	addi	a2, a2, 47
 	and	a1, a1, a2

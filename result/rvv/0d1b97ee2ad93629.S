@@ -23,9 +23,9 @@ func0000000000000006:
 func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
 	li	a0, 125
 	vmv.v.x	v12, a0
+	vmv1r.v	v0, v10
 	vmerge.vvm	v12, v12, v8, v0
 	vmv1r.v	v0, v11
 	vmerge.vvm	v8, v8, v12, v0

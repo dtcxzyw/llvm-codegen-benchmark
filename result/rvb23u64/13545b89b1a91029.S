@@ -79,11 +79,11 @@ func000000000000000a:
 
 func0000000000000788:
 	sh3add	a1, a1, a2
-	li	a2, -15
 	sub	a1, a1, a0
+	li	a0, -15
 	addi	a1, a1, 16
-	srli	a2, a2, 1
-	sltu	a0, a2, a1
+	srli	a0, a0, 1
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000701:

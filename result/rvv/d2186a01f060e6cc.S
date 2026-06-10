@@ -34,9 +34,9 @@ func000000000000000c:
 
 func0000000000000007:
 	fmv.d.x	fa5, zero
-	lui	a0, 16473
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vf	v0, v8, fa5
+	lui	a0, 16473
 	slli	a0, a0, 36
 	vmv.v.x	v16, a0
 	vmerge.vvm	v8, v16, v8, v0
@@ -57,19 +57,19 @@ func0000000000000003:
 	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v16, v8, fa5
-	vmnot.m	v0, v16
+	vmfge.vf	v24, v8, fa5
 	vmv.v.i	v16, 0
+	vmnot.m	v0, v24
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 
 func0000000000000006:
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v16, v8, fa5
-	vmfgt.vf	v17, v8, fa5
-	vmor.mm	v0, v17, v16
+	vmflt.vf	v24, v8, fa5
+	vmfgt.vf	v25, v8, fa5
 	vmv.v.i	v16, 0
+	vmor.mm	v0, v25, v24
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 

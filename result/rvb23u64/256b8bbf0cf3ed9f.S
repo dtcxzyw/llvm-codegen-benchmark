@@ -6,28 +6,28 @@ func0000000000000010:
 	ret
 
 func0000000000000080:
+	li	a3, -1000
+	zext.w	a3, a3
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, -1000
-	zext.w	a2, a2
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000007c:
+	lui	a3, 65536
+	addi	a3, a3, -225
+	slli	a3, a3, 4
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 65536
-	addi	a2, a2, -225
-	slli	a2, a2, 4
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
+	lui	a3, 262083
+	slli	a3, a3, 2
+	addi	a3, a3, -576
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 262083
-	slli	a2, a2, 2
-	addi	a2, a2, -576
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

@@ -1,9 +1,8 @@
 func000000000000018c:
-	zext.b	a1, a1
-	sext.w	a3, a2
-	lui	a4, 559241
-	addi	a4, a4, -1911
-	mul	a3, a3, a4
+	lui	a3, 559241
+	sext.w	a4, a2
+	addi	a3, a3, -1911
+	mul	a3, a4, a3
 	srli	a3, a3, 32
 	add	a3, a3, a2
 	srliw	a4, a3, 31
@@ -11,6 +10,7 @@ func000000000000018c:
 	add	a3, a3, a4
 	slli	a4, a3, 6
 	slli	a3, a3, 2
+	zext.b	a1, a1
 	sub	a3, a3, a4
 	addw	a2, a2, a3
 	xori	a1, a1, 3

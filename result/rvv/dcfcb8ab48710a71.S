@@ -4,8 +4,8 @@ func000000000000018c:
 	vmsne.vx	v11, v8, a0
 	li	a0, 289
 	vmand.mm	v10, v11, v10
-	vmand.mm	v10, v0, v10
 	vmsne.vx	v11, v8, a0
-	vmand.mm	v0, v11, v10
+	vmand.mm	v8, v0, v10
+	vmand.mm	v0, v11, v8
 	ret
 

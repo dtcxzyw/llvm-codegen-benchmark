@@ -1,8 +1,8 @@
 func0000000000000302:
 	zext.b	a0, a0
 	slli	a1, a1, 50
-	srli	a1, a1, 63
 	addi	a0, a0, -45
+	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -7,10 +7,10 @@ func0000000000000001:
 	ret
 
 func0000000000000061:
-	andi	a3, a0, 1
-	lui	a0, 1
-	addi	a0, a0, -295
-	beqz	a3, .LBB1_2
+	lui	a3, 1
+	andi	a4, a0, 1
+	addi	a0, a3, -295
+	beqz	a4, .LBB1_2
 	add	a1, a2, a0
 .LBB1_2:
 	xor	a0, a0, a1

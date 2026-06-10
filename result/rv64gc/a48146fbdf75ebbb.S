@@ -1,9 +1,9 @@
 func0000000000000041:
+	lui	a3, 748983
+	addi	a3, a3, -585
 	sub	a2, a2, a1
-	lui	a1, 748983
+	slli	a1, a3, 33
 	srai	a2, a2, 3
-	addi	a1, a1, -585
-	slli	a3, a1, 33
 	add	a1, a1, a3
 	mul	a1, a2, a1
 	bltu	a1, a0, .LBB0_2
@@ -13,11 +13,11 @@ func0000000000000041:
 	ret
 
 func0000000000000068:
+	lui	a3, 838861
+	addi	a3, a3, -819
 	sub	a2, a2, a1
-	lui	a1, 838861
+	slli	a1, a3, 32
 	srai	a2, a2, 3
-	addi	a1, a1, -819
-	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
 	bltu	a1, a0, .LBB1_2
@@ -28,11 +28,11 @@ func0000000000000068:
 	ret
 
 func0000000000000061:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a2, a2, a1
-	lui	a1, 699051
+	slli	a1, a3, 32
 	srai	a2, a2, 3
-	addi	a1, a1, -1365
-	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a2, a1
 	bltu	a0, a1, .LBB2_2

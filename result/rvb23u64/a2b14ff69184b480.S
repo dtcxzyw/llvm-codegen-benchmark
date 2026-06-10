@@ -19,9 +19,9 @@ func0000000000000005:
 	ret
 
 func0000000000000015:
+	lui	a2, 1
 	sub	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -96
+	addi	a1, a2, -96
 	mul	a0, a0, a1
 	add	a0, a0, a1
 	ret

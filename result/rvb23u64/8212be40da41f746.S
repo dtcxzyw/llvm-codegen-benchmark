@@ -1,14 +1,14 @@
 func0000000000000002:
-	bset	a0, zero, a0
 	lui	a1, 262145
 	slli	a1, a1, 2
+	bset	a0, zero, a0
 	addi	a1, a1, -511
 	and	a0, a0, a1
 	ret
 
 func0000000000000003:
-	bset	a0, zero, a0
 	lui	a1, 790527
+	bset	a0, zero, a0
 	slli.uw	a1, a1, 15
 	and	a0, a0, a1
 	ret

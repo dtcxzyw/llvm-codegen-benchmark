@@ -56,9 +56,9 @@ func000000000000000a:
 	ret
 
 func0000000000000009:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v8, v8, v16
-	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmnor.mm	v0, v17, v16

@@ -1,11 +1,11 @@
 func0000000000000050:
+	lui	a0, 238009
 	fadd.d	fa5, fa1, fa1
 	fmv.d.x	fa4, zero
-	lui	a0, 238009
-	feq.d	a1, fa5, fa4
 	slli	a0, a0, 32
-	fmv.d.x	fa5, a0
-	flt.d	a0, fa0, fa5
+	fmv.d.x	fa3, a0
+	feq.d	a0, fa5, fa4
+	flt.d	a1, fa0, fa3
 	or	a0, a0, a1
 	ret
 

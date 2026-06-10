@@ -9,9 +9,9 @@ func0000000000000003:
 func0000000000000002:
 	slli	a1, a1, 9
 	andi	a0, a0, 2
+	li	a2, 2
 	or	a0, a0, a1
-	li	a1, 2
-	bseti	a1, a1, 31
+	bseti	a1, a2, 31
 	and	a0, a0, a1
 	ret
 
@@ -24,10 +24,10 @@ func000000000000000f:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 32
 	li	a2, 31
-	slli	a1, a1, 6
+	andi	a1, a1, 32
 	slli	a2, a2, 7
+	slli	a1, a1, 6
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -45,10 +45,10 @@ func0000000000000318:
 	sext.w	a1, a1
 	lui	a3, 4032
 	and	a2, a2, a3
-	lui	a3, 3120
-	sltu	a2, a3, a2
 	lui	a3, 12
+	lui	a4, 3120
 	addi	a3, a3, 768
+	sltu	a2, a4, a2
 	sltu	a1, a3, a1
 	or	a1, a1, a2
 	or	a0, a0, a1
@@ -66,11 +66,11 @@ func0000000000000141:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	lui	a3, 16
+	sext.w	a1, a1
 	addi	a3, a3, -16
-	seqz	a1, a1
 	and	a2, a2, a3
+	seqz	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -79,11 +79,11 @@ func0000000000000034:
 func000000000000008c:
 	sext.w	a1, a1
 	lui	a3, 256
+	lui	a4, 262144
 	addi	a3, a3, -256
+	addi	a4, a4, -1
 	and	a2, a2, a3
-	lui	a3, 262144
-	addi	a3, a3, -1
-	sltu	a1, a1, a3
+	sltu	a1, a1, a4
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

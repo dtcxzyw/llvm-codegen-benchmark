@@ -6,8 +6,8 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	add.uw	a0, a2, a0
 	zext.h	a1, a1
+	add.uw	a0, a2, a0
 	or	a0, a0, a1
 	ret
 
@@ -19,37 +19,37 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
+	lui	a3, 16383
 	zext.w	a2, a2
+	slli	a3, a3, 36
 	or	a0, a0, a2
-	lui	a2, 16383
-	slli	a2, a2, 36
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
+	lui	a3, 16383
 	zext.w	a2, a2
+	slli	a3, a3, 36
 	or	a0, a0, a2
-	lui	a2, 16383
-	slli	a2, a2, 36
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
+	lui	a3, 1
 	sext.w	a2, a2
+	addi	a3, a3, -64
 	or	a0, a0, a2
-	lui	a2, 1
-	addi	a2, a2, -64
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000002:
+	lui	a3, 983039
+	slli	a3, a3, 16
 	add.uw	a0, a2, a0
-	lui	a2, 983039
-	slli	a2, a2, 16
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

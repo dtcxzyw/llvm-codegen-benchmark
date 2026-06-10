@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a3, 5
 	sext.w	a2, a1
-	lui	a1, 5
-	addi	a1, a1, -481
+	addi	a1, a3, -481
 	andi	a0, a0, 1
 	bge	a2, a1, .LBB0_3
 	beqz	a0, .LBB0_4
@@ -16,9 +16,9 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
+	lui	a3, 5
 	sext.w	a2, a1
-	lui	a1, 5
-	addi	a1, a1, -481
+	addi	a1, a3, -481
 	andi	a0, a0, 1
 	bge	a2, a1, .LBB1_3
 	beqz	a0, .LBB1_4

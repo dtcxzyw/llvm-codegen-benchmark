@@ -10,9 +10,9 @@ func0000000000000001:
 	ret
 
 func0000000000000046:
-	sext.w	a0, a0
 	subw	a1, a1, a2
 	srai	a2, a1, 63
+	sext.w	a0, a0
 	and	a1, a1, a2
 	slt	a0, a0, a1
 	ret

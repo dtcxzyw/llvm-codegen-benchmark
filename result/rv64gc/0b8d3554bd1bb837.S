@@ -8,8 +8,8 @@ func000000000000004a:
 
 func0000000000000008:
 	sraiw	a1, a1, 23
-	lui	a2, 307200
 	seqz	a1, a1
+	lui	a2, 307200
 	addw	a0, a0, a2
 	addi	a1, a1, -1
 	and	a0, a0, a1

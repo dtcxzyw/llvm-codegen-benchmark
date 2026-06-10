@@ -7,10 +7,10 @@ func0000000000000031:
 func0000000000000030:
 	li	a2, 7
 	slli	a2, a2, 10
+	li	a3, 3
 	and	a1, a1, a2
-	li	a2, 3
-	slli	a2, a2, 10
-	xor	a1, a1, a2
+	slli	a3, a3, 10
+	xor	a1, a1, a3
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

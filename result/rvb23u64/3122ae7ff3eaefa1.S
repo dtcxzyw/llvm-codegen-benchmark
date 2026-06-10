@@ -6,9 +6,9 @@ func000000000000000d:
 	ret
 
 func000000000000000e:
+	li	a1, -2
 	clz	a0, a0
 	not	a0, a0
-	li	a1, -2
 	rol	a0, a1, a0
 	ret
 
@@ -20,9 +20,9 @@ func0000000000000005:
 	ret
 
 func0000000000000006:
+	li	a1, -2
 	clz	a0, a0
 	not	a0, a0
-	li	a1, -2
 	rol	a0, a1, a0
 	ret
 

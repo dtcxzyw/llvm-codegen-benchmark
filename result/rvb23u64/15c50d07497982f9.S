@@ -7,10 +7,10 @@ func0000000000000006:
 
 func000000000000020a:
 	add	a1, a1, a2
-	lui	a2, 1
 	add	a0, a0, a1
+	lui	a1, 1
 	addiw	a0, a0, -48
-	addi	a1, a2, -2001
+	addi	a1, a1, -2001
 	slt	a0, a1, a0
 	ret
 
@@ -53,8 +53,8 @@ func000000000000060a:
 	add	a1, a1, a2
 	lui	a2, 48
 	add	a0, a0, a1
-	lui	a1, 12
 	addi	a2, a2, 16
+	lui	a1, 12
 	addw	a0, a0, a2
 	addi	a1, a1, 3
 	slt	a0, a1, a0
@@ -64,8 +64,8 @@ func00000000000002aa:
 	add	a1, a1, a2
 	lui	a2, 48
 	add	a0, a0, a1
-	lui	a1, 12
 	addi	a2, a2, 16
+	lui	a1, 12
 	addw	a0, a0, a2
 	addi	a1, a1, 3
 	slt	a0, a1, a0
@@ -160,10 +160,10 @@ func0000000000000608:
 
 func000000000000002a:
 	add	a1, a1, a2
-	lui	a2, 24
 	add	a0, a0, a1
+	lui	a1, 24
 	addiw	a0, a0, 2
-	addi	a1, a2, 1696
+	addi	a1, a1, 1696
 	slt	a0, a1, a0
 	ret
 

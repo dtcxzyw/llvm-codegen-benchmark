@@ -42,8 +42,8 @@ func0000000000000021:
 func0000000000000508:
 	sext.w	a0, a0
 	addiw	a1, a1, -58
-	sltiu	a1, a1, -10
 	sltiu	a0, a0, 16
+	sltiu	a1, a1, -10
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

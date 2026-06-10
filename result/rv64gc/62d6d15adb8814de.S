@@ -17,10 +17,10 @@ func0000000000000021:
 func000000000000010c:
 	sext.w	a0, a0
 	slli	a1, a1, 33
-	lui	a2, 8
 	srli	a1, a1, 33
-	sltiu	a0, a0, 2
+	lui	a2, 8
 	xor	a1, a1, a2
+	sltiu	a0, a0, 2
 	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

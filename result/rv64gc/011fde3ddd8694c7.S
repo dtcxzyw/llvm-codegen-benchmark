@@ -4,8 +4,8 @@ func0000000000000004:
 	blt	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
-	addiw	a0, a0, -1
 	lui	a1, 20972
+	addiw	a0, a0, -1
 	addi	a1, a1, -1967
 	sltu	a0, a0, a1
 	ret

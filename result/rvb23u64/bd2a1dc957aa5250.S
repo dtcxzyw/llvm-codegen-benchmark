@@ -22,19 +22,19 @@ func0000000000000010:
 func000000000000003f:
 	lui	a2, 16
 	addi	a2, a2, -10
+	lui	a3, 14
 	add	a1, a1, a2
-	lui	a2, 14
-	addi	a2, a2, -1792
-	and	a1, a1, a2
 	lui	a2, 5
+	addi	a3, a3, -1792
 	addi	a2, a2, 1792
+	and	a1, a1, a3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000030:
-	addi	a1, a1, 14
 	lui	a2, 16
+	addi	a1, a1, 14
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	add	a0, a0, a1

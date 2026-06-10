@@ -1,9 +1,9 @@
 func0000000000002908:
 	addiw	a1, a1, -1938
 	addiw	a0, a0, -1938
+	lui	a2, 1048575
 	minu	a0, a0, a1
-	lui	a1, 1048575
-	addi	a1, a1, 221
+	addi	a1, a2, 221
 	sltu	a0, a0, a1
 	ret
 

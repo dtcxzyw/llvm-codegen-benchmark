@@ -11,8 +11,8 @@ func000000000000002a:
 	sext.w	a1, a1
 	sext.w	a2, a0
 	srliw	a0, a0, 31
-	not	a0, a0
 	xor	a1, a1, a2
+	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -20,8 +20,8 @@ func000000000000002a:
 func000000000000018c:
 	sext.w	a1, a1
 	sext.w	a2, a0
-	addiw	a0, a0, -1
 	xor	a1, a1, a2
+	addiw	a0, a0, -1
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

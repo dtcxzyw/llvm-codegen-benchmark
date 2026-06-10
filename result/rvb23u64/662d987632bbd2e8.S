@@ -1,11 +1,11 @@
 func000000000000001c:
 	sext.w	a2, a2
 	lui	a3, 1
-	slli	a0, a0, 6
 	addi	a3, a3, -52
+	slli	a0, a0, 6
+	czero.nez	a2, a3, a2
 	add	a0, a0, a1
-	czero.nez	a1, a3, a2
-	add	a0, a0, a1
+	add	a0, a0, a2
 	li	a1, 1164
 	sh2add	a0, a1, a0
 	ret

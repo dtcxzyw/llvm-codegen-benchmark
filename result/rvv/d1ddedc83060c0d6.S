@@ -17,8 +17,8 @@ func0000000000000003:
 	li	a0, 7
 	slli	a0, a0, 60
 	vand.vx	v8, v8, a0
-	li	a0, 3
 	vor.vv	v8, v10, v8
+	li	a0, 3
 	slli	a0, a0, 57
 	vor.vx	v8, v8, a0
 	ret

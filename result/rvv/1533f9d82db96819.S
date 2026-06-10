@@ -1,7 +1,7 @@
 func0000000000000074:
-	li	a0, 55
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v10, 9
+	li	a0, 55
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vadd.vx	v9, v9, a0
 	vmerge.vvm	v8, v9, v8, v0

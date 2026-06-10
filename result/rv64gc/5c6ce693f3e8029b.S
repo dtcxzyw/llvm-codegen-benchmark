@@ -105,8 +105,8 @@ func000000000000002b:
 
 func000000000000000a:
 	slli	a1, a1, 2
-	slli	a0, a0, 2
 	add	a1, a1, a2
+	slli	a0, a0, 2
 	lui	a2, 320
 	add	a0, a0, a1
 	addi	a1, a2, -928
@@ -115,8 +115,8 @@ func000000000000000a:
 
 func000000000000000c:
 	slli	a1, a1, 2
-	slli	a0, a0, 2
 	add	a1, a1, a2
+	slli	a0, a0, 2
 	lui	a2, 320
 	add	a0, a0, a1
 	addi	a1, a2, -928

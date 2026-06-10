@@ -33,16 +33,16 @@ func0000000000000301:
 	vand.vx	v9, v8, a0
 	li	a0, -32
 	vand.vx	v8, v8, a0
-	li	a0, 96
 	vmsgtu.vi	v9, v9, 2
+	li	a0, 96
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret
 
 func0000000000000038:
+	li	a0, 64
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v9, v8, -16
-	li	a0, 64
 	vand.vi	v8, v8, 15
 	vmseq.vx	v9, v9, a0
 	vmsgtu.vi	v8, v8, 4

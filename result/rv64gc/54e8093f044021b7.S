@@ -34,8 +34,8 @@ func0000000000000020:
 	ret
 
 func0000000000000037:
-	add	a1, a1, a0
 	li	a2, -1
+	add	a1, a1, a0
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	neg	a0, a0
@@ -64,8 +64,8 @@ func0000000000000030:
 	ret
 
 func0000000000000032:
-	add	a1, a1, a0
 	li	a2, -1
+	add	a1, a1, a0
 	srli	a2, a2, 3
 	add	a1, a1, a2
 	neg	a0, a0

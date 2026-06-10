@@ -20,10 +20,10 @@ func0000000000000030:
 	ret
 
 func000000000000003f:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf8	v14, v12
 	li	a0, -1
 	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v14, v12
 	vadd.vx	v8, v8, a0
 	vmacc.vv	v8, v10, v14
 	ret

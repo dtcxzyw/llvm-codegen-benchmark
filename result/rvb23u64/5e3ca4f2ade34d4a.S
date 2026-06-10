@@ -12,8 +12,8 @@ func0000000000000546:
 
 func0000000000000541:
 	lui	a2, 244141
-	lui	a3, 804435
 	addi	a2, a2, -1537
+	lui	a3, 804435
 	slt	a2, a2, a1
 	addi	a3, a3, 1536
 	czero.eqz	a2, a3, a2

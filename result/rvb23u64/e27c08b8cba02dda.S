@@ -47,9 +47,9 @@ func0000000000000034:
 func000000000000007f:
 	slli	a1, a1, 32
 	sext.w	a0, a0
+	lui	a2, 3
 	or	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, -1802
+	addi	a1, a2, -1802
 	mul	a0, a0, a1
 	ret
 

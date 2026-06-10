@@ -27,12 +27,11 @@ func000000000000000a:
 .LBB3_2:
 	ret
 
+.LCPI4_0:
+	.quad	-62162121600000000
 func000000000000002a:
-	lui	a3, 935504
-	addi	a3, a3, -985
-	slli	a3, a3, 14
-	addi	a3, a3, -927
-	slli	a3, a3, 13
+	lui	a3, %hi(.LCPI4_0)
+	ld	a3, %lo(.LCPI4_0)(a3)
 	bge	a3, a1, .LBB4_2
 	lui	a0, 176
 	addi	a0, a0, -1428

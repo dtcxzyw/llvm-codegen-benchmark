@@ -9,8 +9,8 @@ func0000000000000038:
 func0000000000000032:
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v16, v16
-	lui	a0, 66109
 	vfabs.v	v16, v8, v0.t
+	lui	a0, 66109
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
 	vmflt.vf	v0, v16, fa5
@@ -35,8 +35,8 @@ func0000000000000022:
 func0000000000000035:
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v16, v16
-	li	a0, 683
 	vfabs.v	v16, v8, v0.t
+	li	a0, 683
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vmfle.vf	v8, v16, fa5
@@ -46,8 +46,8 @@ func0000000000000035:
 func0000000000000033:
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v16, v16
-	li	a0, 377
 	vfabs.v	v16, v8, v0.t
+	li	a0, 377
 	slli	a0, a0, 54
 	fmv.d.x	fa5, a0
 	vmfge.vf	v8, v16, fa5

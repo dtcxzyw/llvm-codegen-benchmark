@@ -1,8 +1,8 @@
 func0000000000000c74:
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -1
-	add	a1, a1, a2
+	addi	a3, a3, -1
+	add	a1, a1, a3
 	lui	a2, 512
 	srli	a1, a1, 12
 	add	a0, a0, a2
@@ -10,10 +10,10 @@ func0000000000000c74:
 	ret
 
 func0000000000000074:
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -1
-	add	a1, a1, a2
+	addi	a3, a3, -1
+	add	a1, a1, a3
 	lui	a2, 512
 	srli	a1, a1, 12
 	add	a0, a0, a2

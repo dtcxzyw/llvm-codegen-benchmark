@@ -1,8 +1,8 @@
 func0000000000000004:
+	li	a1, -57
 	zext.b	a0, a0
 	addi	a0, a0, -33
 	sltiu	a0, a0, 94
-	li	a1, -57
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 64
 	ret

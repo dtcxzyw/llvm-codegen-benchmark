@@ -1,7 +1,7 @@
 func00000000000000a8:
 	add	a2, a2, a0
-	sltu	a0, a0, a2
 	sltu	a1, a1, a2
+	sltu	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

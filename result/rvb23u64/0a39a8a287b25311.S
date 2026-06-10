@@ -7,16 +7,16 @@ func0000000000000031:
 func0000000000000004:
 	addi	a1, a1, -14
 	seqz	a1, a1
+	lui	a2, 1048063
 	or	a0, a0, a1
-	lui	a1, 1048063
-	addi	a1, a1, 1535
+	addi	a1, a2, 1535
 	and	a0, a0, a1
 	ret
 
 func0000000000000005:
-	seqz	a1, a1
 	lui	a2, 262144
 	addi	a2, a2, -2
+	seqz	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

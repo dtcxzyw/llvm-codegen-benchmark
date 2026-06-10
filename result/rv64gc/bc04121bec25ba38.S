@@ -11,8 +11,8 @@ func000000000000000c:
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	li	a1, 1033
-	slli	a1, a1, 52
 	fmul.d	fa5, fa0, fa5
+	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa4, fa5
 	and	a0, a0, a1
@@ -33,8 +33,8 @@ func000000000000000a:
 	slli	a1, a1, 38
 	fmv.d.x	fa5, a1
 	li	a1, 1023
-	slli	a1, a1, 52
 	fmul.d	fa5, fa0, fa5
+	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4
 	and	a0, a0, a1

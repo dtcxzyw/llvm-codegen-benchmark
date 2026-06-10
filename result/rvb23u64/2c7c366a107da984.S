@@ -15,15 +15,15 @@ func0000000000000058:
 	ret
 
 func0000000000000302:
-	bexti	a1, a1, 11
 	slli	a0, a0, 48
+	bexti	a1, a1, 11
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000102:
-	zext.h	a0, a0
 	andi	a1, a1, 63
+	zext.h	a0, a0
 	addi	a1, a1, -15
 	seqz	a1, a1
 	sltiu	a0, a0, 10
@@ -31,10 +31,10 @@ func0000000000000102:
 	ret
 
 func0000000000000048:
-	zext.h	a0, a0
 	lui	a2, 16
 	addi	a2, a2, -2
 	and	a1, a1, a2
+	zext.h	a0, a0
 	addi	a1, a1, -10
 	seqz	a1, a1
 	sltiu	a0, a0, 173
@@ -53,8 +53,8 @@ func0000000000000318:
 func0000000000000502:
 	zext.h	a0, a0
 	andi	a1, a1, 14
-	seqz	a1, a1
 	addi	a0, a0, -64
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

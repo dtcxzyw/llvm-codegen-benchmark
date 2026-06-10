@@ -8,8 +8,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 260096
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB1_2
@@ -18,9 +18,9 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 988319
 	addi	a0, a0, 714
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa0, a0
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB2_2
@@ -48,8 +48,8 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 260096
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa0, a0
 	fle.s	a0, fa0, fa5
 	bnez	a0, .LBB5_2

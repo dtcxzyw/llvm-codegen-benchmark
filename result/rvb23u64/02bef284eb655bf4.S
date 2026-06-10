@@ -1,8 +1,8 @@
 func000000000000002f:
 	rev8	a2, a2
 	srli	a2, a2, 32
-	add	a1, a1, a2
 	sh2add	a0, a0, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	ret
 

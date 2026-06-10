@@ -23,8 +23,8 @@ func0000000000000000:
 	ret
 
 func00000000000000ff:
-	addi	a2, a2, 67
 	lui	a3, 524288
+	addi	a2, a2, 67
 	srli	a3, a3, 28
 	and	a2, a2, a3
 	add	a1, a1, a2
@@ -33,8 +33,8 @@ func00000000000000ff:
 	ret
 
 func00000000000000fe:
-	addi	a2, a2, 67
 	lui	a3, 524288
+	addi	a2, a2, 67
 	srli	a3, a3, 28
 	and	a2, a2, a3
 	add	a1, a1, a2

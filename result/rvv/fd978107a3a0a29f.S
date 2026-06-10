@@ -1,17 +1,17 @@
 func000000000000000f:
+	li	a0, 40
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmul.vv	v10, v8, v9
 	vwsll.vi	v8, v10, 2
-	li	a0, 40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000003f:
+	li	a0, 96
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmul.vv	v10, v8, v9
 	vwsll.vi	v8, v10, 2
-	li	a0, 96
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	ret

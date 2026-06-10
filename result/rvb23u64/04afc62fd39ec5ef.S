@@ -78,8 +78,8 @@ func00000000000000e6:
 	ret
 
 func000000000000006c:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret

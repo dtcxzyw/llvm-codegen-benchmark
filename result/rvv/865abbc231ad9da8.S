@@ -10,8 +10,8 @@ func000000000000008a:
 func00000000000002a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
-	li	a0, -1
 	vsub.vv	v8, v10, v8
+	li	a0, -1
 	srli	a1, a0, 4
 	vsub.vx	v8, v8, a1
 	slli	a0, a0, 60
@@ -42,8 +42,8 @@ func0000000000000321:
 func0000000000000208:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 5
-	li	a0, -1
 	vsub.vv	v8, v10, v8
+	li	a0, -1
 	srli	a1, a0, 3
 	vsub.vx	v8, v8, a1
 	slli	a0, a0, 61

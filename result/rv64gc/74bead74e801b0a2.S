@@ -10,8 +10,8 @@ func000000000000000d:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
 	srli	a1, a1, 3
+	andi	a0, a0, 1
 	andi	a1, a1, -8
 	addiw	a1, a1, 8
 	addi	a0, a0, -1
@@ -29,8 +29,8 @@ func000000000000000a:
 	ret
 
 func0000000000000003:
-	andi	a0, a0, 1
 	srli	a1, a1, 24
+	andi	a0, a0, 1
 	andi	a1, a1, 1792
 	addi	a1, a1, 256
 	addi	a0, a0, -1

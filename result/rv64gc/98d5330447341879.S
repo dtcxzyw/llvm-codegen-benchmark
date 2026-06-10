@@ -18,8 +18,8 @@ func0000000000000034:
 	beqz	a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
-	sext.w	a0, a0
 	lui	a1, 1
+	sext.w	a0, a0
 	addi	a1, a1, -515
 	sltu	a0, a0, a1
 	ret
@@ -28,8 +28,8 @@ func0000000000000038:
 	beqz	a2, .LBB3_2
 	mv	a0, a1
 .LBB3_2:
-	sext.w	a0, a0
 	lui	a1, 12
+	sext.w	a0, a0
 	addi	a1, a1, 848
 	sltu	a0, a1, a0
 	ret

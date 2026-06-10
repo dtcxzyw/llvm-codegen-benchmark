@@ -11,8 +11,8 @@ func0000000000000081:
 	ret
 
 func00000000000000ca:
-	slli	a0, a0, 56
 	slli	a2, a2, 56
+	slli	a0, a0, 56
 	srai	a2, a2, 56
 	srai	a0, a0, 56
 	bgtz	a2, .LBB1_2

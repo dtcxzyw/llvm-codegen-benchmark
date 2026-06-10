@@ -20,8 +20,8 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
-	sext.w	a1, a1
 	lui	a2, 16
+	sext.w	a1, a1
 	sub	a2, a2, a0
 	minu	a0, a2, a1
 	ret
@@ -42,15 +42,15 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	zext.w	a1, a1
 	li	a2, 16
+	zext.w	a1, a1
 	sub	a2, a2, a0
 	minu	a0, a2, a1
 	ret
 
 func000000000000000a:
-	sext.w	a1, a1
 	li	a2, 19
+	sext.w	a1, a1
 	sub	a2, a2, a0
 	minu	a0, a2, a1
 	ret

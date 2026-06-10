@@ -9,9 +9,9 @@ func0000000000000000:
 
 func0000000000000002:
 	zext.b	a1, a1
+	lui	a2, 713924
 	addw	a0, a0, a1
-	lui	a1, 713924
-	addi	a1, a1, 349
+	addi	a1, a2, 349
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1

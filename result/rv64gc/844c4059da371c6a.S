@@ -1,6 +1,6 @@
 func0000000000000021:
-	srli	a0, a0, 3
 	lui	a1, 978671
+	srli	a0, a0, 3
 	addi	a1, a1, -273
 	mul	a0, a0, a1
 	addiw	a0, a0, -1
@@ -21,8 +21,8 @@ func0000000000000000:
 	ret
 
 func0000000000000020:
-	srli	a0, a0, 3
 	lui	a1, 699051
+	srli	a0, a0, 3
 	addi	a1, a1, -1365
 	mul	a0, a0, a1
 	addi	a0, a0, -1
@@ -31,8 +31,8 @@ func0000000000000020:
 	ret
 
 func0000000000000023:
-	srli	a0, a0, 3
 	lui	a1, 233017
+	srli	a0, a0, 3
 	addi	a1, a1, -455
 	mul	a0, a0, a1
 	addiw	a0, a0, -1

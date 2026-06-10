@@ -16,9 +16,9 @@ func000000000000000a:
 	ret
 
 func0000000000000002:
+	lui	a2, 976562
 	add	a0, a0, a1
-	lui	a1, 976562
-	addi	a1, a1, 2047
+	addi	a1, a2, 2047
 	add.uw	a0, a1, a0
 	srai	a1, a0, 63
 	srli	a1, a1, 62

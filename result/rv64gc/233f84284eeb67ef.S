@@ -9,17 +9,17 @@ func0000000000000018:
 	mul	a0, a0, a1
 	lui	a1, 104858
 	addi	a1, a1, -1639
+	lui	a2, 209715
 	addw	a0, a0, a1
-	lui	a1, 209715
-	addi	a1, a1, 818
+	addi	a1, a2, 818
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000014:
-	sext.w	a1, a0
-	lui	a2, 67109
-	addi	a2, a2, -557
-	mul	a1, a1, a2
+	lui	a1, 67109
+	sext.w	a2, a0
+	addi	a1, a1, -557
+	mul	a1, a2, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 38
 	add	a1, a1, a2
@@ -30,10 +30,10 @@ func0000000000000014:
 	ret
 
 func000000000000000c:
-	sext.w	a1, a0
-	lui	a2, 174763
-	addi	a2, a2, -1365
-	mul	a1, a1, a2
+	lui	a1, 174763
+	sext.w	a2, a0
+	addi	a1, a1, -1365
+	mul	a1, a2, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 33
 	add	a1, a1, a2

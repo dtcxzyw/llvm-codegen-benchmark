@@ -39,12 +39,12 @@ func00000000000000aa:
 	ret
 
 func000000000000006d:
-	fli.s	fa5, inf
 	lui	a1, 847872
-	flt.s	a2, fa1, fa5
 	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
-	andn	a1, a2, a1
+	fli.s	fa4, inf
+	flt.s	a1, fa1, fa4
+	flt.s	a2, fa0, fa5
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

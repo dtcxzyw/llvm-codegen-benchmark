@@ -43,8 +43,8 @@ func00000000000000c4:
 
 func00000000000000c1:
 	li	a2, 5
-	addi	a0, a0, -1
 	bseti	a2, a2, 63
+	addi	a0, a0, -1
 	slt	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -67,9 +67,9 @@ func0000000000000146:
 	ret
 
 func0000000000000154:
-	slti	a1, a1, 1
 	lui	a2, 88
 	addi	a2, a2, -448
+	slti	a1, a1, 1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -81,10 +81,10 @@ func000000000000010c:
 	ret
 
 func0000000000000318:
+	lui	a2, 16
 	minu	a0, a1, a0
-	lui	a1, 16
-	addi	a1, a1, -16
-	sltu	a0, a1, a0
+	addi	a2, a2, -16
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000028:
@@ -148,8 +148,8 @@ func0000000000000086:
 	ret
 
 func0000000000000148:
-	srli	a1, a1, 63
 	srli	a0, a0, 60
+	srli	a1, a1, 63
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

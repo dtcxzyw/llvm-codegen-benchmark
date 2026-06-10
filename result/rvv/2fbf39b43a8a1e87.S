@@ -58,21 +58,21 @@ func000000000000054a:
 	ret
 
 func0000000000000181:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	li	a0, 16
 	vmsne.vv	v14, v10, v12
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
 
 func0000000000000084:
+	lui	a0, 2
+	addi	a1, a0, 1808
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 2
 	vmsltu.vx	v12, v10, a0
-	addi	a0, a0, 1808
-	vmsltu.vx	v10, v8, a0
+	vmsltu.vx	v10, v8, a1
 	vmand.mm	v0, v10, v12
 	ret
 
@@ -93,21 +93,21 @@ func0000000000000f06:
 	ret
 
 func000000000000018c:
+	lui	a0, 5
+	addi	a0, a0, -480
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 5
 	vmsne.vi	v12, v10, 1
-	addi	a0, a0, -480
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
 
 func0000000000000548:
+	lui	a0, 4096
+	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 4096
 	vmsgt.vi	v12, v10, 0
-	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -217,9 +217,9 @@ func00000000000000c1:
 	ret
 
 func0000000000000581:
+	li	a0, 334
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 334
 	vmseq.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v12, v10
@@ -252,9 +252,9 @@ func000000000000002c:
 	ret
 
 func0000000000000088:
+	li	a0, 1025
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 1025
 	vmsltu.vx	v12, v10, a0
 	vmsgtu.vi	v10, v8, 3
 	vmand.mm	v0, v10, v12
@@ -309,32 +309,32 @@ func000000000000042a:
 	ret
 
 func0000000000000484:
+	lui	a0, 24414
+	addi	a0, a0, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 24414
 	vmsleu.vi	v12, v10, 9
-	addi	a0, a0, 256
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
 
 func0000000000000c21:
+	lui	a0, 524304
+	addi	a0, a0, -256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
-	lui	a0, 524304
 	vmseq.vi	v12, v10, 0
-	addi	a0, a0, -256
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
 
 func0000000000000554:
+	lui	a0, 16
+	addi	a1, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 16
 	vmsltu.vx	v12, v10, a0
-	addi	a0, a0, -1
-	vmsgt.vx	v10, v8, a0
+	vmsgt.vx	v10, v8, a1
 	vmand.mm	v0, v12, v10
 	ret
 

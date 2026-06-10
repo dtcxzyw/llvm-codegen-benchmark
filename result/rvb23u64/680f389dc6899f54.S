@@ -34,17 +34,17 @@ func0000000000000086:
 	ret
 
 func0000000000000084:
+	bseti	a2, zero, 35
 	sub	a1, a1, a0
-	bseti	a0, zero, 35
-	addi	a0, a0, -16
-	and	a0, a0, a1
-	seqz	a0, a0
+	addi	a2, a2, -16
+	and	a1, a1, a2
+	seqz	a0, a1
 	ret
 
 func0000000000000094:
+	bseti	a2, zero, 34
 	sub	a1, a1, a0
-	bseti	a0, zero, 34
-	addi	a0, a0, -1024
+	addi	a0, a2, -1024
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -32,8 +32,8 @@ func0000000000000050:
 
 func0000000000000018:
 	slli	a2, a2, 48
-	lui	a3, 1048572
 	srai	a2, a2, 48
+	lui	a3, 1048572
 	slt	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

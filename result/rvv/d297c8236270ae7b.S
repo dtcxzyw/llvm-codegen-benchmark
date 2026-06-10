@@ -10,8 +10,8 @@ func0000000000000041:
 
 func000000000000006c:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 7
 	vmv.v.i	v12, 1
+	vand.vi	v10, v10, 7
 	vsll.vv	v10, v12, v10
 	vand.vv	v8, v10, v8
 	vmsne.vi	v0, v8, 0
@@ -19,8 +19,8 @@ func000000000000006c:
 
 func0000000000000061:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 7
 	vmv.v.i	v12, 1
+	vand.vi	v10, v10, 7
 	vsll.vv	v10, v12, v10
 	vand.vv	v8, v10, v8
 	vmseq.vi	v0, v8, 0

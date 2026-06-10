@@ -1,6 +1,6 @@
 func000000000000002a:
-	add	a1, a1, a3
 	add	a0, a0, a2
+	add	a1, a1, a3
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	seqz	a0, a0

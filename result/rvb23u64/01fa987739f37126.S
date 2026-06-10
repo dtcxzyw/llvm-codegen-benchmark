@@ -33,16 +33,16 @@ func000000000000002c:
 func0000000000000101:
 	zext.b	a0, a0
 	not	a1, a1
-	bexti	a1, a1, 40
 	sltiu	a0, a0, 25
+	bexti	a1, a1, 40
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000181:
-	zext.b	a0, a0
 	bseti	a2, zero, 35
 	addi	a2, a2, -16
+	zext.b	a0, a0
 	and	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0

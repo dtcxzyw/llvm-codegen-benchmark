@@ -12,10 +12,10 @@ func0000000000000055:
 
 func0000000000000000:
 	sext.w	a2, a2
+	lui	a3, 3072
 	add	a1, a1, a2
-	lui	a2, 3072
-	addi	a2, a2, 5
-	mul	a1, a1, a2
+	addi	a3, a3, 5
+	mul	a1, a1, a3
 	lui	a2, 1039
 	add	a0, a0, a1
 	addi	a1, a2, 505

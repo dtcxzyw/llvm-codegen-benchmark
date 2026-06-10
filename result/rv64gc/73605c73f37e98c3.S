@@ -15,8 +15,8 @@ func0000000000000029:
 	ret
 
 func0000000000000018:
-	sext.w	a1, a1
 	lui	a2, 1048568
+	sext.w	a1, a1
 	addi	a2, a2, 1262
 	slt	a1, a1, a2
 	neg	a1, a1
@@ -25,8 +25,8 @@ func0000000000000018:
 	ret
 
 func0000000000000051:
-	sext.w	a1, a1
 	li	a2, 2
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB3_2
 	lui	a0, 294912
 .LBB3_2:
@@ -35,8 +35,8 @@ func0000000000000051:
 
 func0000000000000061:
 	sext.w	a1, a1
-	li	a2, 8
 	sltiu	a1, a1, 57
+	li	a2, 8
 	subw	a2, a2, a0
 	addi	a0, a1, -1
 	and	a0, a0, a2

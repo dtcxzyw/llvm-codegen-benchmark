@@ -70,15 +70,15 @@ func000000000000001f:
 	ret
 
 func0000000000000011:
-	slliw	a1, a1, 30
 	slli	a0, a0, 58
+	slliw	a1, a1, 30
 	srli	a0, a0, 34
 	or	a0, a0, a1
 	ret
 
 func0000000000000025:
-	slliw	a1, a1, 31
 	slli	a0, a0, 56
+	slliw	a1, a1, 31
 	srli	a0, a0, 33
 	or	a0, a0, a1
 	ret

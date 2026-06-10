@@ -1,6 +1,6 @@
 func0000000000000421:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -1
 	seqz	a1, a1
 	seqz	a0, a0
@@ -30,8 +30,8 @@ func0000000000000084:
 	ret
 
 func0000000000000494:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -137
 	sltiu	a1, a1, 32
 	sltiu	a0, a0, 71

@@ -35,10 +35,10 @@ func00000000000001de:
 	ret
 
 func000000000000009a:
+	li	a3, -1
+	slli	a3, a3, 32
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	orn	a1, a1, a2
+	orn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 
@@ -50,10 +50,10 @@ func0000000000000110:
 	ret
 
 func00000000000000da:
+	li	a3, -1
+	slli	a3, a3, 32
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	orn	a1, a1, a2
+	orn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 

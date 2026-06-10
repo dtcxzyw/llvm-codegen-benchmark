@@ -12,8 +12,8 @@ func0000000000000042:
 func0000000000000114:
 	li	a0, 63
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmsgt.vi	v8, v8, -1
 	vmsltu.vx	v9, v9, a0
+	vmsgt.vi	v8, v8, -1
 	vmor.mm	v0, v8, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 0
@@ -24,8 +24,8 @@ func0000000000000114:
 func000000000000010c:
 	li	a0, 63
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmsle.vi	v8, v8, -4
 	vmsltu.vx	v9, v9, a0
+	vmsle.vi	v8, v8, -4
 	vmor.mm	v0, v8, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, -1

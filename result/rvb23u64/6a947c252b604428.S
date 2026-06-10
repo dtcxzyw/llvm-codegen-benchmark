@@ -5,10 +5,10 @@ func000000000000003c:
 	ret
 
 func000000000000000c:
+	lui	a3, 16
 	add	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -8
-	and	a1, a1, a2
+	addi	a3, a3, -8
+	and	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

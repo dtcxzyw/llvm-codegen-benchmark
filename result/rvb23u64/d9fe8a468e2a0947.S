@@ -19,8 +19,8 @@ func00000000000003e6:
 func0000000000000066:
 	sext.w	a1, a0
 	addi	a0, a0, 1
-	slli.uw	a0, a0, 3
 	slti	a1, a1, -1
+	slli.uw	a0, a0, 3
 	neg	a1, a1
 	or	a0, a0, a1
 	ret

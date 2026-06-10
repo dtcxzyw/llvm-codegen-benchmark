@@ -7,11 +7,11 @@ func000000000000000b:
 	ret
 
 func0000000000000003:
-	addi	a0, a0, 8
 	lui	a1, 2
+	addi	a0, a0, 8
 	slli	a0, a0, 32
-	addi	a1, a1, -1
 	srli	a0, a0, 32
+	addi	a1, a1, -1
 	add	a0, a0, a1
 	lui	a1, 1048575
 	and	a0, a0, a1
@@ -35,8 +35,8 @@ func0000000000000001:
 	ret
 
 func000000000000001f:
-	addi	a0, a0, 15
 	lui	a1, 524288
+	addi	a0, a0, 15
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	ret

@@ -29,18 +29,18 @@ func0000000000000011:
 func0000000000000030:
 	slli	a1, a1, 28
 	slli	a0, a0, 24
+	lui	a2, 978671
 	add	a0, a0, a1
-	lui	a1, 978671
-	addi	a1, a1, -273
+	addi	a1, a2, -273
 	addw	a0, a0, a1
 	ret
 
 func00000000000000f5:
 	slli	a1, a1, 12
 	slli	a0, a0, 8
+	lui	a2, 1048575
 	add	a0, a0, a1
-	lui	a1, 1048575
-	addi	a1, a1, -273
+	addi	a1, a2, -273
 	addw	a0, a0, a1
 	ret
 
@@ -60,9 +60,9 @@ func00000000000000ff:
 func0000000000000050:
 	slli	a1, a1, 24
 	slli	a0, a0, 16
+	lui	a2, 648056
 	add	a0, a0, a1
-	lui	a1, 648056
-	addi	a1, a1, -1607
+	addi	a1, a2, -1607
 	addw	a0, a0, a1
 	ret
 
@@ -75,9 +75,9 @@ func00000000000000d4:
 func00000000000000cc:
 	slli	a1, a1, 8
 	slli	a0, a0, 12
+	lui	a2, 112
 	add	a0, a0, a1
-	lui	a1, 112
-	addi	a1, a1, 456
+	addi	a1, a2, 456
 	addw	a0, a0, a1
 	ret
 

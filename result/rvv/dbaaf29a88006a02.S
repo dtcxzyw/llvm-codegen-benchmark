@@ -1,7 +1,7 @@
 func0000000000000081:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
-	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v14, -1
 	vmerge.vvm	v8, v14, v8, v0

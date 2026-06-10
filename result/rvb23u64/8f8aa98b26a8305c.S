@@ -13,13 +13,13 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
+	lui	a3, 838861
 	or	a1, a1, a2
-	lui	a2, 838861
+	addi	a2, a3, -820
 	or	a0, a0, a1
-	addi	a1, a2, -820
+	slli	a1, a2, 32
 	slli	a0, a0, 2
-	slli	a2, a1, 32
-	add.uw	a1, a1, a2
+	add.uw	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

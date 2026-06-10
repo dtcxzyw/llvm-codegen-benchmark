@@ -1,9 +1,9 @@
 func0000000000000014:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v8, v8, 16
-	lui	a0, 912092
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 912092
 	addi	a0, a0, -260
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -31,8 +31,8 @@ func0000000000000019:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
 	vsll.vi	v8, v8, 8
-	li	a0, -3
 	vor.vv	v8, v8, v12
+	li	a0, -3
 	slli	a0, a0, 10
 	vadd.vx	v8, v8, a0
 	ret

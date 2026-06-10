@@ -23,10 +23,10 @@ func000000000000018a:
 	ret
 
 func00000000000001a1:
-	sext.w	a0, a0
 	lui	a2, 1048575
 	addi	a2, a2, 496
 	mulw	a1, a1, a2
+	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -151,9 +151,9 @@ func000000000000002a:
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	li	a2, -10
 	mulw	a1, a1, a2
+	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

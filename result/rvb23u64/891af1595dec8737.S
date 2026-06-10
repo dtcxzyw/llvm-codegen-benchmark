@@ -1,7 +1,7 @@
 func000000000000000f:
-	zext.w	a1, a0
-	lui	a2, 322639
-	addi	a2, a2, -945
+	lui	a1, 322639
+	zext.w	a2, a0
+	addi	a1, a1, -945
 	mul	a1, a1, a2
 	srli	a1, a1, 35
 	sh1add	a2, a1, a1
@@ -12,9 +12,9 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	zext.w	a1, a0
-	lui	a2, 335544
-	addi	a2, a2, 1311
+	lui	a1, 335544
+	zext.w	a2, a0
+	addi	a1, a1, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	sh2add	a1, a1, a1
@@ -25,9 +25,9 @@ func000000000000000d:
 	ret
 
 func000000000000000a:
-	zext.w	a1, a0
-	lui	a2, 213722
-	addi	a2, a2, 2035
+	lui	a1, 213722
+	zext.w	a2, a0
+	addi	a1, a1, 2035
 	mul	a1, a1, a2
 	srli	a1, a1, 37
 	li	a2, 157
@@ -37,9 +37,9 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	zext.w	a1, a0
-	lui	a2, 486296
-	addi	a2, a2, 475
+	lui	a1, 486296
+	zext.w	a2, a0
+	addi	a1, a1, 475
 	mul	a1, a1, a2
 	srli	a1, a1, 38
 	li	a2, 138

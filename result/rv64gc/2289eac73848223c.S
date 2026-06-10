@@ -8,10 +8,10 @@ func00000000000000fc:
 
 func00000000000000f0:
 	slli	a2, a2, 1
+	lui	a3, 1048573
 	add	a1, a1, a2
-	lui	a2, 1048573
-	addi	a2, a2, -1
-	mul	a1, a1, a2
+	addi	a3, a3, -1
+	mul	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

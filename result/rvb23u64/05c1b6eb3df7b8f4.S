@@ -5,8 +5,8 @@ func0000000000000067:
 	ret
 
 func000000000000000c:
-	sext.w	a1, a1
 	lui	a2, 32885
+	sext.w	a1, a1
 	addi	a2, a2, -1200
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -31,8 +31,8 @@ func000000000000000d:
 	ret
 
 func0000000000000008:
-	sext.w	a1, a1
 	li	a2, -2
+	sext.w	a1, a1
 	zext.w	a2, a2
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

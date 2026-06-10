@@ -1,24 +1,24 @@
 func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmv.v.i	v10, 7
-	vmacc.vv	v10, v8, v12
-	vand.vi	v8, v10, -8
+	vmv.v.i	v12, 7
+	vsext.vf2	v14, v10
+	vmacc.vv	v12, v8, v14
+	vand.vi	v8, v12, -8
 	ret
 
 func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmv.v.i	v10, 15
-	vmacc.vv	v10, v8, v12
-	vand.vi	v8, v10, -16
+	vmv.v.i	v12, 15
+	vsext.vf2	v14, v10
+	vmacc.vv	v12, v8, v14
+	vand.vi	v8, v12, -16
 	ret
 
 func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmv.v.i	v10, 7
-	vmacc.vv	v10, v8, v12
-	vand.vi	v8, v10, -8
+	vmv.v.i	v12, 7
+	vsext.vf2	v14, v10
+	vmacc.vv	v12, v8, v14
+	vand.vi	v8, v12, -8
 	ret
 

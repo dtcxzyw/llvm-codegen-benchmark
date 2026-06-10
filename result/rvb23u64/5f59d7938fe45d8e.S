@@ -7,15 +7,15 @@ func000000000000202c:
 	ret
 
 func000000000000014a:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	sext.w	a0, a0
 	max	a0, a1, a0
 	sgtz	a0, a0
 	ret
 
 func000000000000054a:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	sext.w	a0, a0
 	slti	a1, a1, 61
 	slti	a0, a0, 181
 	and	a0, a0, a1

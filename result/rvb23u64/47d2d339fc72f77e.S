@@ -1,6 +1,6 @@
 func000000000000000a:
-	andi	a2, a2, 1
 	li	a3, -1
+	andi	a2, a2, 1
 	slli.uw	a3, a3, 31
 	czero.nez	a2, a3, a2
 	bseti	a2, a2, 63
@@ -37,17 +37,17 @@ func0000000000000026:
 	andi	a2, a2, 1
 	lui	a3, 21
 	addi	a3, a3, 384
+	lui	a4, 770428
 	czero.eqz	a2, a3, a2
-	lui	a3, 770428
-	addi	a3, a3, 512
+	addi	a3, a4, 512
 	add.uw	a2, a3, a2
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret
 
 func0000000000000078:
-	andi	a2, a2, 1
 	lui	a3, 9
+	andi	a2, a2, 1
 	addi	a3, a3, -340
 	or	a2, a2, a3
 	sub	a0, a0, a1

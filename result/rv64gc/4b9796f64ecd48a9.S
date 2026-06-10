@@ -8,12 +8,12 @@ func0000000000000021:
 	ret
 
 func00000000000000aa:
-	sub	a1, a1, a2
+	lui	a3, 21
 	slli	a0, a0, 63
-	lui	a2, 21
 	srai	a0, a0, 63
-	addi	a2, a2, 384
-	and	a0, a0, a2
+	addi	a3, a3, 384
+	sub	a1, a1, a2
+	and	a0, a0, a3
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
@@ -26,14 +26,14 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
-	sub	a1, a1, a2
+	lui	a3, 10
 	slli	a0, a0, 63
-	lui	a2, 10
 	srai	a0, a0, 63
-	addi	a3, a2, -960
-	and	a0, a0, a3
+	addi	a4, a3, -960
+	sub	a1, a1, a2
+	and	a0, a0, a4
 	addw	a0, a0, a1
-	addi	a1, a2, -963
+	addi	a1, a3, -963
 	slt	a0, a1, a0
 	ret
 

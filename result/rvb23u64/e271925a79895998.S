@@ -26,16 +26,16 @@ func00000000000002f4:
 	ret
 
 func00000000000002aa:
+	lui	a2, 1048400
 	addw	a0, a0, a1
-	lui	a1, 1048400
-	lui	a2, 1048540
-	addi	a1, a1, 1427
-	addi	a2, a2, 1360
+	addi	a1, a2, 1427
 	slt	a1, a1, a0
+	lui	a2, 1048540
+	lui	a3, 176
+	addi	a2, a2, 1360
+	addi	a3, a3, -1428
 	czero.nez	a1, a2, a1
-	lui	a2, 176
-	addi	a2, a2, -1428
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

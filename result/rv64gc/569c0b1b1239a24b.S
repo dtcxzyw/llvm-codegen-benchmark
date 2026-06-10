@@ -5,15 +5,15 @@ func0000000000000001:
 	ret
 
 func0000000000000028:
-	addi	a0, a0, 6
 	lui	a1, 5461
+	addi	a0, a0, 6
 	addi	a1, a1, 1365
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000034:
-	addi	a0, a0, 3
 	lui	a1, 1
+	addi	a0, a0, 3
 	addi	a1, a1, -1
 	sltu	a0, a0, a1
 	ret
@@ -27,10 +27,10 @@ func0000000000000014:
 func0000000000000004:
 	lui	a1, 1
 	addi	a1, a1, -1
+	lui	a2, 512
 	or	a0, a0, a1
-	lui	a1, 512
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000018:
@@ -42,8 +42,8 @@ func0000000000000018:
 	ret
 
 func0000000000000038:
-	addi	a0, a0, 31
 	lui	a1, 16
+	addi	a0, a0, 31
 	sltu	a0, a1, a0
 	ret
 

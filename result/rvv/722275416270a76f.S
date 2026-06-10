@@ -18,9 +18,9 @@ func000000000000000c:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
+	vmfge.vf	v0, v8, fa5
 	lui	a0, 522240
 	addi	a0, a0, -1
-	vmfge.vf	v0, v8, fa5
 	vmv.v.x	v12, a0
 	vmerge.vvm	v8, v12, v8, v0
 	ret
@@ -28,8 +28,8 @@ func000000000000000c:
 func000000000000000e:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
-	fli.s	fa5, 1.0
 	vmfeq.vv	v0, v8, v8
+	fli.s	fa5, 1.0
 	vfmv.v.f	v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret

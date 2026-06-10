@@ -1,7 +1,7 @@
 func000000000000000c:
-	slli	a1, a1, 32
 	lui	a2, 524296
 	addi	a2, a2, 1
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 47
@@ -10,38 +10,37 @@ func000000000000000c:
 	sext.w	a0, a0
 	ret
 
+.LCPI1_0:
+	.quad	50539024867131392
 func0000000000000000:
-	zext.w	a2, a1
-	lui	a3, 359
-	addi	a3, a3, 415
-	slli	a3, a3, 12
-	addi	a3, a3, 865
-	slli	a3, a3, 23
-	mulhu	a2, a2, a3
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	zext.w	a3, a1
+	mulhu	a2, a3, a2
 	li	a3, 365
-	sub	a1, a1, a1
 	mul	a2, a2, a3
+	sub	a1, a1, a1
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 
 func0000000000000005:
-	slli	a2, a1, 32
-	lui	a3, 699051
-	sub	a1, a1, a1
-	addi	a3, a3, -1365
-	slli	a3, a3, 32
-	mulhu	a2, a2, a3
+	lui	a2, 699051
+	addi	a2, a2, -1365
+	slli	a3, a1, 32
+	slli	a2, a2, 32
+	mulhu	a2, a3, a2
 	srli	a2, a2, 35
 	sh1add	a2, a2, a2
+	sub	a1, a1, a1
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 
 func000000000000000f:
-	zext.w	a1, a1
 	lui	a2, 335544
+	zext.w	a1, a1
 	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a1, a1, 37
@@ -52,9 +51,9 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	slli	a1, a1, 32
 	lui	a2, 699051
 	addi	a2, a2, -1365
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 35
@@ -64,10 +63,10 @@ func000000000000000d:
 	ret
 
 func0000000000000008:
-	zext.w	a1, a1
 	lui	a2, 527767
 	slli.uw	a2, a2, 1
 	addi	a2, a2, -553
+	zext.w	a1, a1
 	slli	a2, a2, 20
 	mulhu	a1, a1, a2
 	lui	a2, 1

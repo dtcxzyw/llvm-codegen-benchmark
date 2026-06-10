@@ -6,18 +6,20 @@ func000000000000030c:
 	li	a1, -54
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a1
-	vmsleu.vi	v10, v10, -7
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsleu.vi	v8, v10, -7
+	vmor.mm	v0, v11, v8
 	ret
 
 func000000000000008c:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vi	v10, v10, -3
-	vmsleu.vi	v10, v10, -3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsleu.vi	v8, v10, -3
+	vmor.mm	v0, v11, v8
 	ret
 

@@ -1,14 +1,14 @@
 func0000000000000010:
-	zext.h	a0, a0
 	or	a1, a1, a2
+	zext.h	a0, a0
 	sltiu	a0, a0, 1024
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000002:
-	zext.h	a0, a0
 	or	a1, a1, a2
+	zext.h	a0, a0
 	addi	a0, a0, -1792
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -37,8 +37,8 @@ func0000000000000030:
 	ret
 
 func0000000000000008:
-	zext.h	a0, a0
 	or	a1, a1, a2
+	zext.h	a0, a0
 	sltiu	a0, a0, 256
 	or	a0, a0, a1
 	ret

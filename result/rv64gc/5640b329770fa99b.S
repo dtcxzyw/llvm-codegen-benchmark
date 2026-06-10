@@ -37,10 +37,10 @@ func0000000000000301:
 	bltz	a2, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 1
-	xor	a0, a0, a1
+	srli	a2, a2, 1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

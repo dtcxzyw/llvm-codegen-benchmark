@@ -1,8 +1,8 @@
 func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v10, 0
-	li	a0, -1
 	vmax.vv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v10, v10, a0
 	li	a0, 32
@@ -13,8 +13,8 @@ func000000000000000a:
 func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v10, 0
-	li	a0, -1
 	vmax.vv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v10, v10, a0
 	li	a0, 32
@@ -25,8 +25,8 @@ func000000000000000b:
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v10, 0
-	li	a0, -1
 	vmax.vv	v10, v10, v12
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v10, v10, a0
 	li	a0, 32

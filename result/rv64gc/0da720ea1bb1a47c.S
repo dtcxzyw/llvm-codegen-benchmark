@@ -1,21 +1,21 @@
 func0000000000000002:
-	neg	a0, a0
 	lui	a1, 24
+	neg	a0, a0
 	addi	a1, a1, 1696
 	srlw	a0, a1, a0
 	ret
 
 func0000000000000006:
 	li	a1, 122
+	lui	a2, 16384
 	sub	a1, a1, a0
-	lui	a0, 16384
-	addi	a0, a0, -1
-	srlw	a0, a0, a1
+	addi	a2, a2, -1
+	srlw	a0, a2, a1
 	ret
 
 func0000000000000000:
-	neg	a0, a0
 	li	a1, -1
+	neg	a0, a0
 	srlw	a0, a1, a0
 	ret
 

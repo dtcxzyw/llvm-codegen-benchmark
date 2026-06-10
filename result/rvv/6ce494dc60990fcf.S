@@ -22,8 +22,8 @@ func00000000000000f4:
 func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 1
-	lui	a0, 1048088
 	vsub.vv	v8, v10, v8
+	lui	a0, 1048088
 	addi	a0, a0, -1153
 	srli	a0, a0, 1
 	vmsgt.vx	v0, v8, a0

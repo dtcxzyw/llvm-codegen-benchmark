@@ -1,10 +1,10 @@
 func0000000000000002:
 	lui	a0, 273376
+	lui	a1, 272384
 	fmv.w.x	fa5, a0
-	lui	a0, 272384
-	fmv.w.x	fa4, a0
-	lui	a0, 274400
+	fmv.w.x	fa4, a1
 	fmadd.s	fa5, fa1, fa4, fa5
+	lui	a0, 274400
 	fadd.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
@@ -12,9 +12,9 @@ func0000000000000002:
 
 func0000000000000004:
 	lui	a0, 260096
+	lui	a1, 786432
 	fmv.w.x	fa5, a0
-	lui	a0, 786432
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmadd.s	fa5, fa1, fa4, fa5
 	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa4, zero

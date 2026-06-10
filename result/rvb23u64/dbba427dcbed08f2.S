@@ -1,6 +1,6 @@
 func0000000000000004:
-	addi	a0, a0, -12
 	lui	a1, 699051
+	addi	a0, a0, -12
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	slli	a2, a0, 32
@@ -12,8 +12,8 @@ func0000000000000004:
 	ret
 
 func000000000000000e:
-	addi	a0, a0, 1
 	lui	a1, 67109
+	addi	a0, a0, 1
 	zext.w	a2, a0
 	addi	a1, a1, -557
 	mul	a1, a1, a2
@@ -24,8 +24,8 @@ func000000000000000e:
 	ret
 
 func000000000000000f:
-	addi	a0, a0, 1
 	lui	a1, 233017
+	addi	a0, a0, 1
 	zext.w	a2, a0
 	addi	a1, a1, -455
 	mul	a1, a1, a2
@@ -36,8 +36,8 @@ func000000000000000f:
 	ret
 
 func0000000000000007:
-	addi	a0, a0, -1
 	lui	a1, 699051
+	addi	a0, a0, -1
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	slli	a2, a0, 32
@@ -61,8 +61,8 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	addi	a0, a0, 1
 	lui	a1, 762601
+	addi	a0, a0, 1
 	addi	a1, a1, -1117
 	slli	a1, a1, 32
 	slli	a2, a0, 32

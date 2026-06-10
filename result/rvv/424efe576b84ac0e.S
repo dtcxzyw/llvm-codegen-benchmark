@@ -4,8 +4,8 @@ func000000000000020a:
 	vadd.vx	v10, v10, a0
 	li	a0, 10
 	vmacc.vx	v10, a0, v12
-	lui	a0, 1
 	vadd.vv	v8, v10, v8
+	lui	a0, 1
 	addi	a0, a0, -2001
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -18,8 +18,8 @@ func000000000000060a:
 	lui	a0, 1048573
 	addi	a0, a0, -1
 	vmacc.vx	v10, a0, v12
-	lui	a0, 12
 	vadd.vv	v8, v8, v10
+	lui	a0, 12
 	addi	a0, a0, 3
 	vmsgt.vx	v0, v8, a0
 	ret

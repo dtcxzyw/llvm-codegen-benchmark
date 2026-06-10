@@ -27,10 +27,10 @@ func000000000000018c:
 
 func0000000000000101:
 	zext.b	a2, a2
-	andi	a1, a1, 3
 	sltiu	a2, a2, 7
-	addi	a1, a1, -3
+	andi	a1, a1, 3
 	xori	a2, a2, 1
+	addi	a1, a1, -3
 	and	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1

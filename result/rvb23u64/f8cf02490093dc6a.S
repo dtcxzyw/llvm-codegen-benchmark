@@ -11,11 +11,11 @@ func0000000000000004:
 
 func0000000000000155:
 	lui	a3, 2
+	lui	a4, 1048572
 	addi	a3, a3, 1441
+	addi	a4, a4, 315
 	mul	a2, a2, a3
-	lui	a3, 1048572
-	addi	a3, a3, 315
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 1024
@@ -23,11 +23,11 @@ func0000000000000155:
 
 func0000000000000000:
 	lui	a3, 2
+	lui	a4, 1048572
 	addi	a3, a3, 1441
+	addi	a4, a4, 315
 	mul	a2, a2, a3
-	lui	a3, 1048572
-	addi	a3, a3, 315
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 1024
@@ -35,9 +35,9 @@ func0000000000000000:
 
 func0000000000000355:
 	li	a3, 298
+	li	a4, -100
 	mul	a2, a2, a3
-	li	a3, -100
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, -1160
@@ -51,30 +51,30 @@ func00000000000003f4:
 	sh1add	a3, a1, a1
 	sh1add	a1, a3, a1
 	lui	a3, 1047932
-	addi	a3, a3, -1692
 	sh2add	a1, a1, a2
-	add	a0, a0, a3
+	addi	a2, a3, -1692
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000003ff:
+	li	a3, 150
+	mul	a1, a1, a3
 	sh1add	a3, a2, a2
 	slli	a2, a2, 5
 	sub	a2, a2, a3
-	li	a3, 150
-	mul	a1, a1, a3
-	add	a1, a1, a2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 128
 	ret
 
 func0000000000000140:
 	lui	a3, 1048574
+	lui	a4, 1
 	addi	a3, a3, 819
+	addi	a4, a4, -1650
 	mul	a2, a2, a3
-	lui	a3, 1
-	addi	a3, a3, -1650
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 1024
@@ -93,8 +93,8 @@ func00000000000003ea:
 
 func00000000000003d5:
 	sh2add	a2, a2, a2
-	sh2add	a1, a1, a1
 	sh2add	a2, a2, a2
+	sh2add	a1, a1, a1
 	sh1add	a1, a2, a1
 	sh1add	a0, a1, a0
 	li	a1, -1332
@@ -108,16 +108,16 @@ func0000000000000375:
 	sh1add	a3, a1, a1
 	sh1add	a1, a3, a1
 	lui	a3, 7
-	addi	a3, a3, 1708
 	sh2add	a1, a1, a2
-	add	a0, a0, a3
+	addi	a2, a3, 1708
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000003d7:
 	sh2add	a2, a2, a2
-	sh2add	a1, a1, a1
 	sh2add	a2, a2, a2
+	sh2add	a1, a1, a1
 	sh1add	a1, a2, a1
 	sh1add	a0, a1, a0
 	li	a1, -1332
@@ -126,26 +126,26 @@ func00000000000003d7:
 	ret
 
 func0000000000000001:
-	slli	a3, a1, 1
-	slli	a1, a1, 8
-	sub	a1, a1, a3
 	lui	a3, 16
 	addi	a3, a3, -1020
 	mul	a2, a2, a3
+	slli	a3, a1, 1
+	slli	a1, a1, 8
+	sub	a1, a1, a3
 	lui	a3, 1045556
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a1, a3, -1023
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func00000000000000c0:
 	lui	a3, 65462
+	lui	a4, 112
 	addi	a3, a3, -2031
+	addi	a4, a4, 1572
 	mul	a2, a2, a3
-	lui	a3, 112
-	addi	a3, a3, 1572
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	lui	a3, 32896
 	add	a1, a1, a2
 	add	a0, a0, a3
@@ -166,11 +166,11 @@ func00000000000003fa:
 
 func00000000000003fe:
 	lui	a3, 1
+	lui	a4, 1023
 	addi	a3, a3, -500
+	addi	a4, a4, 1081
 	mul	a2, a2, a3
-	lui	a3, 1023
-	addi	a3, a3, 1081
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	lui	a3, 514
 	add	a1, a1, a2
 	add	a0, a0, a3
@@ -179,11 +179,11 @@ func00000000000003fe:
 
 func0000000000000330:
 	lui	a3, 7
+	lui	a4, 16378
 	addi	a3, a3, 128
+	addi	a4, a4, 460
 	mul	a2, a2, a3
-	lui	a3, 16378
-	addi	a3, a3, 460
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	lui	a3, 8224
 	add	a1, a1, a2
 	add	a0, a0, a3
@@ -192,11 +192,11 @@ func0000000000000330:
 
 func0000000000000157:
 	lui	a3, 1048574
+	lui	a4, 1048571
 	addi	a3, a3, -1527
+	addi	a4, a4, 1399
 	mul	a2, a2, a3
-	lui	a3, 1048571
-	addi	a3, a3, 1399
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	lui	a3, 8224
 	add	a1, a1, a2
 	add	a0, a0, a3
@@ -205,11 +205,11 @@ func0000000000000157:
 
 func00000000000001dd:
 	lui	a3, 1048571
+	lui	a4, 28
 	addi	a3, a3, 1744
+	addi	a4, a4, 512
 	mul	a2, a2, a3
-	lui	a3, 28
-	addi	a3, a3, 512
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	lui	a3, 8224
 	add	a1, a1, a2
 	add	a0, a0, a3

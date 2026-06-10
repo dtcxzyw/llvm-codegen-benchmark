@@ -15,8 +15,8 @@ func0000000000000007:
 
 func0000000000000009:
 	or	a1, a1, a2
-	lui	a2, 508
 	slli	a1, a1, 14
+	lui	a2, 508
 	or	a0, a0, a1
 	addi	a1, a2, 127
 	and	a0, a0, a1

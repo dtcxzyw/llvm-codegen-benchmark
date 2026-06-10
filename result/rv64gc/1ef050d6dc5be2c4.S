@@ -56,10 +56,10 @@ func0000000000000044:
 	.quad	0x3fefae147ae147ae
 func0000000000000043:
 	fdiv.d	fa5, fa0, fa1
+	fmv.d.x	fa4, zero
 	lui	a0, %hi(.LCPI5_0)
+	fmax.d	fa5, fa5, fa4
 	fld	fa4, %lo(.LCPI5_0)(a0)
-	fmv.d.x	fa3, zero
-	fmax.d	fa5, fa5, fa3
 	flt.d	a0, fa5, fa4
 	ret
 

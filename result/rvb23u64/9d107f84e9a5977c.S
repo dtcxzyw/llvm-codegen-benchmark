@@ -1,8 +1,8 @@
 func0000000000000021:
 	li	a1, 1
+	lui	a2, 699051
 	sub	a1, a1, a0
-	lui	a0, 699051
-	addi	a0, a0, -1365
+	addi	a0, a2, -1365
 	mulw	a0, a1, a0
 	lui	a1, 349525
 	addi	a1, a1, 1366
@@ -11,9 +11,9 @@ func0000000000000021:
 
 func0000000000000001:
 	li	a1, 2
+	lui	a2, 699051
 	sub	a1, a1, a0
-	lui	a0, 699051
-	addi	a0, a0, -1365
+	addi	a0, a2, -1365
 	mulw	a0, a1, a0
 	lui	a1, 349525
 	addi	a1, a1, 1366
@@ -21,8 +21,8 @@ func0000000000000001:
 	ret
 
 func000000000000002c:
-	neg	a0, a0
 	lui	a1, 944962
+	neg	a0, a0
 	addi	a1, a1, -939
 	mulw	a0, a0, a1
 	lui	a1, 4145

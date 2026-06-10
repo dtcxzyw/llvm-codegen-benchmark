@@ -6,8 +6,8 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 16
 	vmulhu.vx	v8, v10, a0
-	lui	a0, 244141
 	vsrl.vi	v8, v8, 13
+	lui	a0, 244141
 	addi	a0, a0, -1536
 	vnmsub.vx	v8, a0, v10
 	ret

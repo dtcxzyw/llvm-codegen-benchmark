@@ -5,9 +5,9 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
+	lui	a3, 4096
 	srlw	a1, a1, a2
-	lui	a2, 4096
-	addi	a2, a2, -512
+	addi	a2, a3, -512
 	and	a1, a1, a2
 	subw	a0, a1, a0
 	ret

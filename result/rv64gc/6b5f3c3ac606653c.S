@@ -1,7 +1,7 @@
 func00000000000000a9:
-	slli	a3, a0, 1
 	sub	a1, a1, a2
-	sub	a1, a1, a3
+	slli	a2, a0, 1
+	sub	a1, a1, a2
 	srli	a2, a1, 63
 	add	a1, a1, a2
 	srai	a1, a1, 1
@@ -9,9 +9,9 @@ func00000000000000a9:
 	ret
 
 func0000000000000000:
-	slli	a3, a0, 1
 	sub	a1, a1, a2
-	sub	a1, a1, a3
+	slli	a2, a0, 1
+	sub	a1, a1, a2
 	srli	a2, a1, 63
 	add	a1, a1, a2
 	srai	a1, a1, 1
@@ -19,9 +19,9 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	slli	a3, a0, 2
 	sub	a1, a1, a2
-	sub	a1, a1, a3
+	slli	a2, a0, 2
+	sub	a1, a1, a2
 	srai	a2, a1, 63
 	srli	a2, a2, 62
 	add	a1, a1, a2

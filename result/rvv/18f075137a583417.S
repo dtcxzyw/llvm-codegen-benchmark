@@ -1,8 +1,8 @@
 func0000000000000017:
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vzext.vf2	v10, v8
-	vmv.v.i	v8, -1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, -1
+	vzext.vf2	v12, v8
+	vsll.vv	v8, v10, v12
 	vadd.vi	v8, v8, 1
 	ret
 
@@ -16,9 +16,9 @@ func0000000000000010:
 
 func0000000000000015:
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vzext.vf2	v10, v8
-	vmv.v.i	v8, -1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, -1
+	vzext.vf2	v12, v8
+	vsll.vv	v8, v10, v12
 	vadd.vi	v8, v8, 1
 	ret
 

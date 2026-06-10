@@ -17,10 +17,10 @@ func0000000000000064:
 	ret
 
 func0000000000000068:
-	slli	a1, a1, 48
 	li	a2, 1
-	srli	a1, a1, 48
+	slli	a1, a1, 48
 	slli	a2, a2, 32
+	srli	a1, a1, 48
 	addi	a2, a2, -16
 	add	a1, a1, a2
 	addi	a2, a2, 15

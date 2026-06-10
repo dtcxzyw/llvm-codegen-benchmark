@@ -1,8 +1,8 @@
 func0000000000000161:
-	srliw	a2, a1, 2
-	srli	a1, a1, 2
-	slli	a1, a1, 34
-	seqz	a1, a1
+	srli	a2, a1, 2
+	slli	a2, a2, 34
+	srliw	a1, a1, 2
+	seqz	a2, a2
 	add	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1
@@ -10,10 +10,10 @@ func0000000000000161:
 	ret
 
 func0000000000000061:
-	srliw	a2, a1, 6
-	srli	a1, a1, 6
-	slli	a1, a1, 38
-	seqz	a1, a1
+	srli	a2, a1, 6
+	slli	a2, a2, 38
+	srliw	a1, a1, 6
+	seqz	a2, a2
 	add	a1, a1, a2
 	addiw	a0, a0, 1
 	xor	a0, a0, a1

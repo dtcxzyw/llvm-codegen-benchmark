@@ -19,14 +19,13 @@ func000000000000003a:
 	vnsrl.wi	v8, v10, 2
 	ret
 
+.LCPI3_0:
+	.quad	196742565691928
 func000000000000003b:
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	lui	a0, 732923
-	slli.uw	a0, a0, 1
-	addi	a0, a0, 1403
-	slli	a0, a0, 15
-	addi	a0, a0, 536
 	vmul.vx	v10, v10, a0
 	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -60,14 +59,13 @@ func0000000000000012:
 	vmulhu.vx	v8, v8, a0
 	ret
 
+.LCPI7_0:
+	.quad	196742565691928
 func0000000000000023:
+	lui	a0, %hi(.LCPI7_0)
+	ld	a0, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	lui	a0, 732923
-	slli.uw	a0, a0, 1
-	addi	a0, a0, 1403
-	slli	a0, a0, 15
-	addi	a0, a0, 536
 	vmul.vx	v10, v10, a0
 	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma

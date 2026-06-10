@@ -1,7 +1,7 @@
 func0000000000000003:
+	lui	a0, 4096
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 24
-	lui	a0, 4096
 	vand.vx	v10, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vandn.vx	v8, v8, a0
@@ -10,9 +10,9 @@ func0000000000000003:
 	ret
 
 func000000000000000f:
+	lui	a0, 240
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 16
-	lui	a0, 240
 	vand.vx	v10, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vandn.vx	v8, v8, a0

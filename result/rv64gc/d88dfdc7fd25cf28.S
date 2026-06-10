@@ -1,7 +1,7 @@
 func00000000000000ff:
-	addi	a2, a2, 7
 	li	a3, 1
 	slli	a3, a3, 33
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -36,12 +36,12 @@ func0000000000000040:
 
 func0000000000000070:
 	li	a3, 1
-	slli	a0, a0, 3
 	slli	a3, a3, 32
 	addi	a3, a3, -2
 	add	a2, a2, a3
 	addi	a3, a3, 1
 	and	a2, a2, a3
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	slli	a2, a2, 3
 	add	a0, a0, a2

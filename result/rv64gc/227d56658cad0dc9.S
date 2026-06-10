@@ -1,19 +1,19 @@
 func000000000000002c:
 	zext.b	a2, a2
-	sltiu	a1, a1, -1
 	addi	a2, a2, -127
+	sltiu	a1, a1, -1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
 
 func000000000000018c:
-	zext.b	a2, a2
 	li	a3, -1
-	addi	a2, a2, -3
+	zext.b	a2, a2
 	slli	a3, a3, 63
-	snez	a2, a2
+	addi	a2, a2, -3
 	addi	a3, a3, 2
+	snez	a2, a2
 	xor	a1, a1, a3
 	snez	a1, a1
 	and	a0, a0, a2

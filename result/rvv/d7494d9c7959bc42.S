@@ -3,11 +3,11 @@
 func0000000000000015:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vmerge.vim	v12, v12, -1, v0
 	vadd.vv	v12, v8, v12
+	lui	a0, %hi(.LCPI0_0)
 	vsra.vi	v8, v10, 3
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vmadd.vx	v8, a0, v12
 	ret
 

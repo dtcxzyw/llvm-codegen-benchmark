@@ -5,8 +5,8 @@ func0000000000000000:
 	fld	fa4, 8(a0)
 	fdiv.d	fa5, fa0, fa5
 	li	a0, 1025
-	slli	a0, a0, 52
 	fmul.d	fa5, fa5, fa4
+	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fmul.d	fa0, fa5, fa4
 	ret

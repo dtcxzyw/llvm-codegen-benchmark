@@ -18,8 +18,8 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	andi	a1, a1, 15
 	li	a2, 1
+	andi	a1, a1, 15
 	beq	a1, a2, .LBB2_2
 	li	a1, 15
 	andi	a0, a0, 15
@@ -33,9 +33,9 @@ func0000000000000034:
 
 func000000000000002c:
 	andi	a1, a1, 7
-	slli	a0, a0, 52
 	addi	a1, a1, -6
 	seqz	a1, a1
+	slli	a0, a0, 52
 	addi	a1, a1, 5
 	srli	a0, a0, 52
 	xor	a0, a0, a1

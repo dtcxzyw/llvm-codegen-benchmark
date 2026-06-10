@@ -134,8 +134,8 @@ func00000000000000d8:
 	ret
 
 func0000000000000018:
-	sext.w	a1, a1
 	lui	a3, 786432
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	xor	a1, a1, a2
 	snez	a1, a1

@@ -14,9 +14,9 @@ func0000000000000018:
 	ret
 
 func0000000000000010:
+	lui	a2, 522240
 	add	a0, a0, a1
-	lui	a1, 522240
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a2, a2, 1
+	or	a0, a0, a2
 	ret
 

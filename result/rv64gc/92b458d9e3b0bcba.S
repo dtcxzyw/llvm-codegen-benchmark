@@ -1,7 +1,7 @@
 func000000000000010c:
-	sext.w	a0, a0
 	slli	a1, a1, 36
 	srli	a1, a1, 48
+	sext.w	a0, a0
 	sltiu	a1, a1, 17
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -9,9 +9,9 @@ func000000000000010c:
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	lui	a2, 65536
 	addi	a2, a2, -16
+	sext.w	a0, a0
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

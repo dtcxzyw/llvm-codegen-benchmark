@@ -32,10 +32,10 @@ func0000000000000007:
 .LCPI3_0:
 	.quad	0x402921fb54442d18
 func0000000000000005:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmfle.vf	v9, v16, fa5
 	vmorn.mm	v8, v8, v9
 	vmor.mm	v0, v8, v0

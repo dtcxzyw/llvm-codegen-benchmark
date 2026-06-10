@@ -39,8 +39,8 @@ func0000000000000481:
 	li	a0, -19
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	li	a0, 18
 	vmsleu.vi	v12, v10, 1
+	li	a0, 18
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

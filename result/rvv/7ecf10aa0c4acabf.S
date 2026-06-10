@@ -7,15 +7,15 @@ func00000000000000a1:
 	vmulh.vx	v12, v10, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
-	lui	a0, 21
-	addi	a0, a0, 384
 	vsrl.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
+	lui	a0, 21
+	addi	a0, a0, 384
 	vnmsub.vx	v12, a0, v10
-	li	a0, 59
 	vadd.vv	v8, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	li	a0, 59
 	vsub.vx	v8, v10, a0
 	lui	a0, 978671
 	addi	a0, a0, -273
@@ -35,15 +35,15 @@ func00000000000000ac:
 	vmulh.vx	v12, v10, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
-	lui	a0, 21
-	addi	a0, a0, 384
 	vsrl.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
+	lui	a0, 21
+	addi	a0, a0, 384
 	vnmsub.vx	v12, a0, v10
-	li	a0, 59
 	vadd.vv	v8, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	li	a0, 59
 	vsub.vx	v8, v10, a0
 	lui	a0, 978671
 	addi	a0, a0, -273

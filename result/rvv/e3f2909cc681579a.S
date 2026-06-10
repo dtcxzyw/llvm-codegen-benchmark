@@ -48,8 +48,8 @@ func000000000000000a:
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	li	a0, -2
 	vsrl.vi	v8, v10, 1
+	li	a0, -2
 	zext.w	a0, a0
 	vadd.vx	v8, v8, a0
 	ret

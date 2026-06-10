@@ -1,6 +1,6 @@
 func0000000000000404:
-	add.uw	a0, a2, a0
 	slli	a1, a1, 32
+	add.uw	a0, a2, a0
 	lui	a2, 2441
 	add	a0, a0, a1
 	addi	a1, a2, 1664

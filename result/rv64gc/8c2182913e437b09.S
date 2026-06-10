@@ -22,11 +22,12 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	lui	a2, 14
-	bne	a0, a2, .LBB4_2
-	li	a1, 15
-.LBB4_2:
+	mv	a2, a0
+	lui	a3, 14
 	mv	a0, a1
+	bne	a2, a3, .LBB4_2
+	li	a0, 15
+.LBB4_2:
 	ret
 
 func0000000000000048:

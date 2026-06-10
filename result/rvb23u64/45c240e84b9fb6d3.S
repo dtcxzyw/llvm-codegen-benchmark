@@ -22,8 +22,8 @@ func000000000000002c:
 
 func0000000000000301:
 	andi	a1, a1, 248
-	lui	a2, 3
 	sltiu	a1, a1, 9
+	lui	a2, 3
 	xori	a1, a1, 1
 	and	a0, a0, a2
 	czero.nez	a0, a1, a0
@@ -72,16 +72,16 @@ func0000000000000081:
 	ret
 
 func0000000000000194:
-	bexti	a1, a1, 26
 	zext.b	a0, a0
+	bexti	a1, a1, 26
 	sltiu	a0, a0, 51
 	and	a0, a0, a1
 	ret
 
 func000000000000028c:
-	andi	a1, a1, 508
 	andi	a0, a0, 7
 	addi	a0, a0, -7
+	andi	a1, a1, 508
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret

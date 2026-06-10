@@ -1,9 +1,9 @@
 func0000000000000010:
 	li	a2, -2
-	zext.w	a1, a1
 	zext.w	a2, a2
 	sltu	a0, a2, a0
 	lui	a2, 65536
+	zext.w	a1, a1
 	addi	a2, a2, -1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -16,9 +16,9 @@ func0000000000000002:
 	ret
 
 func0000000000000011:
-	zext.w	a1, a1
 	lui	a2, 73
 	addi	a2, a2, 992
+	zext.w	a1, a1
 	sltu	a0, a0, a2
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -27,8 +27,8 @@ func0000000000000011:
 
 func0000000000000030:
 	lui	a2, 1
-	zext.w	a1, a1
 	sltu	a0, a2, a0
+	zext.w	a1, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1

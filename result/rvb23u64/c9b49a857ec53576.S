@@ -1,7 +1,7 @@
 func0000000000000055:
-	sext.w	a3, a2
-	lui	a4, 940744
-	addi	a4, a4, 507
+	lui	a3, 940744
+	sext.w	a4, a2
+	addi	a3, a3, 507
 	mul	a3, a3, a4
 	srli	a3, a3, 32
 	add	a2, a2, a3

@@ -9,9 +9,9 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
+	li	a3, 13
+	mul	a0, a0, a3
 	xor	a1, a1, a2
-	li	a2, 13
-	mul	a0, a0, a2
 	xor	a0, a0, a1
 	ret
 

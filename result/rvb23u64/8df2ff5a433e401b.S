@@ -1,8 +1,8 @@
 func0000000000000004:
-	fli.d	fa5, 1.0
 	lui	a0, 66133
-	fmax.d	fa5, fa0, fa5
+	fli.d	fa5, 1.0
 	slli	a0, a0, 34
+	fmax.d	fa5, fa0, fa5
 	fmv.d.x	fa4, a0
 	fdiv.d	fa0, fa5, fa4
 	ret

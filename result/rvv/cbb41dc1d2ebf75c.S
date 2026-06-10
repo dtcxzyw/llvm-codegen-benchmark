@@ -1,9 +1,9 @@
 func0000000000000426:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 4
 	li	a0, -1
 	slli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
+	vsrl.vi	v10, v10, 4
 	lui	a0, 427198
 	addi	a0, a0, -1517
 	slli	a0, a0, 32
@@ -14,10 +14,10 @@ func0000000000000426:
 	ret
 
 func0000000000000424:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 5
 	bseti	a0, zero, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
+	vsrl.vi	v10, v10, 5
 	lui	a0, 748983
 	addi	a0, a0, -585
 	slli	a0, a0, 32

@@ -1,6 +1,6 @@
 func0000000000000002:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB0_2
 	fmv.d	fa4, fa1
@@ -10,8 +10,8 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	beqz	a0, .LBB1_2
 	fneg.d	fa1, fa5
 .LBB1_2:
@@ -20,8 +20,8 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB2_2
 	fmv.d	fa4, fa1
@@ -31,8 +31,8 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB3_2
 	fmv.d	fa4, fa1
@@ -43,8 +43,8 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB4_2
 	fmv.d	fa4, fa1

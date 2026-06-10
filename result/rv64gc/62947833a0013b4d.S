@@ -15,17 +15,17 @@ func00000000000001e4:
 	ret
 
 func0000000000000004:
+	lui	a3, 244
 	add	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
+	addi	a2, a3, 576
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000086:
+	lui	a3, 14648
 	add	a1, a1, a2
-	lui	a2, 14648
-	addi	a2, a2, 1792
+	addi	a2, a3, 1792
 	mul	a1, a1, a2
 	slt	a0, a0, a1
 	ret

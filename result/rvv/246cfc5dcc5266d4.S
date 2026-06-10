@@ -26,9 +26,9 @@ func0000000000000061:
 	ret
 
 func0000000000000021:
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 1048560
 	vsrl.vi	v9, v9, 3
 	vandn.vx	v9, v9, a0
 	vadd.vi	v8, v8, -1
@@ -36,9 +36,9 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
+	lui	a0, 1048560
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 1048560
 	vsrl.vi	v9, v9, 3
 	vandn.vx	v9, v9, a0
 	vadd.vi	v8, v8, 1

@@ -4,8 +4,8 @@ func0000000000000045:
 	vmul.vx	v12, v10, a0
 	lui	a0, 713032
 	addi	a0, a0, -1311
-	vsra.vi	v12, v12, 2
 	vmulh.vx	v10, v10, a0
+	vsra.vi	v12, v12, 2
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v14, v10, 31
 	vadd.vv	v8, v10, v8
@@ -19,8 +19,8 @@ func0000000000000041:
 	vmul.vx	v12, v10, a0
 	lui	a0, 713032
 	addi	a0, a0, -1311
-	vsra.vi	v12, v12, 2
 	vmulh.vx	v10, v10, a0
+	vsra.vi	v12, v12, 2
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v14, v10, 31
 	vadd.vv	v8, v10, v8
@@ -34,8 +34,8 @@ func0000000000000040:
 	vmul.vx	v12, v10, a0
 	lui	a0, 713032
 	addi	a0, a0, -1311
-	vsra.vi	v12, v12, 2
 	vmulh.vx	v10, v10, a0
+	vsra.vi	v12, v12, 2
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v14, v10, 31
 	vadd.vv	v8, v10, v8

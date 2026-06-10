@@ -1,6 +1,6 @@
 func0000000000000181:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	bexti	a2, a2, 16
 	xor	a1, a1, a2
 	binvi	a0, a0, 17

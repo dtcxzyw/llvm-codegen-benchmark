@@ -1,14 +1,14 @@
 func0000000000000030:
-	slli	a1, a1, 48
 	lui	a2, 2432
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 17
 	ret
 
 func0000000000000070:
-	slli	a1, a1, 48
 	lui	a2, 2432
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 16
@@ -42,8 +42,8 @@ func000000000000003c:
 	ret
 
 func000000000000007f:
-	slli	a1, a1, 48
 	lui	a2, 7856
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 294

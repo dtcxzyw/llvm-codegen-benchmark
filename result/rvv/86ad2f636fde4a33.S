@@ -1,10 +1,10 @@
 func0000000000000008:
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vfneg.v	v24, v8
 	vmv1r.v	v17, v0
 	vmv1r.v	v0, v16
-	vfneg.v	v24, v8
-	lui	a0, 1015981
 	vmerge.vvm	v8, v24, v8, v0
+	lui	a0, 1015981
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
 	vmfeq.vf	v16, v8, fa5
@@ -13,9 +13,9 @@ func0000000000000008:
 
 func0000000000000004:
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vfneg.v	v24, v8
 	vmv1r.v	v17, v0
 	vmv1r.v	v0, v16
-	vfneg.v	v24, v8
 	vmerge.vvm	v8, v24, v8, v0
 	fmv.d.x	fa5, zero
 	vmfgt.vf	v16, v8, fa5

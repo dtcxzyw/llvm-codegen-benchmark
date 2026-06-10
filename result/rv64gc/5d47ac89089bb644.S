@@ -26,8 +26,8 @@ func0000000000000021:
 
 func0000000000000024:
 	lui	a3, 1048572
-	or	a0, a0, a1
 	and	a2, a2, a3
+	or	a0, a0, a1
 	sext.w	a2, a2
 	sext.w	a0, a0
 	sltu	a0, a0, a2

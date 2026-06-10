@@ -18,29 +18,29 @@ func0000000000000034:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	slli	a1, a1, 35
+	sext.w	a0, a0
 	srli	a1, a1, 35
 	slt	a0, a1, a0
 	ret
 
 func000000000000012a:
-	sext.w	a0, a0
 	slli	a1, a1, 40
+	sext.w	a0, a0
 	srli	a1, a1, 40
 	slt	a0, a1, a0
 	ret
 
 func0000000000000126:
-	sext.w	a0, a0
 	slli	a1, a1, 40
+	sext.w	a0, a0
 	srli	a1, a1, 40
 	slt	a0, a0, a1
 	ret
 
 func0000000000000121:
-	sext.w	a0, a0
 	slli	a1, a1, 35
+	sext.w	a0, a0
 	srli	a1, a1, 35
 	xor	a0, a0, a1
 	seqz	a0, a0

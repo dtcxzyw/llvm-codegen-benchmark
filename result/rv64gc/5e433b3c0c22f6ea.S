@@ -16,10 +16,10 @@ func0000000000000021:
 
 func0000000000000028:
 	slli	a0, a0, 48
-	andi	a1, a1, 63
 	srli	a0, a0, 48
-	seqz	a1, a1
+	andi	a1, a1, 63
 	sltiu	a0, a0, 17
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

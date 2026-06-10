@@ -1,6 +1,6 @@
 func000000000000000a:
-	sub	a2, a0, a2
 	addi	a1, a1, 30
+	sub	a2, a0, a2
 	slti	a2, a2, 31
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
@@ -8,8 +8,8 @@ func000000000000000a:
 	ret
 
 func000000000000006a:
-	sub	a2, a0, a2
 	addi	a1, a1, 12
+	sub	a2, a0, a2
 	slti	a2, a2, 13
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
@@ -24,8 +24,8 @@ func0000000000000061:
 	ret
 
 func0000000000000068:
-	sub	a2, a0, a2
 	addi	a1, a1, 19
+	sub	a2, a0, a2
 	sltiu	a2, a2, 19
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2

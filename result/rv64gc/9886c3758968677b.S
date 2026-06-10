@@ -1,30 +1,30 @@
 func0000000000000001:
-	add	a1, a1, a2
+	lui	a3, 1048555
 	slli	a0, a0, 63
-	lui	a2, 1048555
 	srai	a0, a0, 63
-	addi	a2, a2, -384
-	and	a0, a0, a2
+	addi	a3, a3, -384
+	add	a1, a1, a2
+	and	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func0000000000000005:
-	add	a1, a1, a2
+	lui	a3, 1048555
 	slli	a0, a0, 63
-	lui	a2, 1048555
 	srai	a0, a0, 63
-	addi	a2, a2, -384
-	and	a0, a0, a2
+	addi	a3, a3, -384
+	add	a1, a1, a2
+	and	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func000000000000000d:
-	add	a1, a1, a2
+	lui	a3, 804435
 	slli	a0, a0, 63
-	lui	a2, 804435
 	srai	a0, a0, 63
-	addi	a2, a2, 1536
-	and	a0, a0, a2
+	addi	a3, a3, 1536
+	add	a1, a1, a2
+	and	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v8, v8, 1
 	vmv.v.i	v10, 1
+	vsra.vi	v8, v8, 1
 	vsll.vv	v8, v10, v8
 	ret
 
@@ -14,10 +14,10 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v8, v8, 3
 	li	a0, 16
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsra.vi	v8, v8, 3
 	vsll.vv	v8, v10, v8
 	ret
 

@@ -36,11 +36,11 @@ func0000000000000006:
 func0000000000000007:
 	lui	a1, 1
 	addi	a1, a1, -1
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
+	slli	a2, a2, 33
 	srli	a0, a0, 4
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	ret
 

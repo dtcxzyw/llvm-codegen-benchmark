@@ -1,7 +1,7 @@
 func0000000000000002:
+	fli.s	fa5, 0.5
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	fli.s	fa5, 0.5
 	fneg.s	fa5, fa5
 	vfmul.vf	v8, v8, fa5
 	fli.s	fa5, 2.0
@@ -19,9 +19,9 @@ func0000000000000004:
 	ret
 
 func000000000000000b:
+	lui	a0, 276464
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 276464
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	fli.s	fa5, -1.0
@@ -30,9 +30,9 @@ func000000000000000b:
 	ret
 
 func000000000000000d:
+	lui	a0, 276464
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 276464
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	fli.s	fa5, 256.0
@@ -41,9 +41,9 @@ func000000000000000d:
 	ret
 
 func000000000000000c:
+	lui	a0, 282624
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 282624
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero

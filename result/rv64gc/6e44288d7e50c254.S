@@ -29,8 +29,8 @@ func0000000000000018:
 
 func00000000000000a9:
 	addw	a1, a1, a2
-	lui	a2, 1048575
 	slti	a1, a1, 3
+	lui	a2, 1048575
 	add	a0, a0, a1
 	addi	a1, a2, -620
 	addw	a0, a0, a1

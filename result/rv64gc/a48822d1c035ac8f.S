@@ -5,10 +5,10 @@ func0000000000000001:
 	slli	a2, a1, 14
 	slli	a1, a1, 48
 	srli	a1, a1, 50
+	lui	a3, 16
 	or	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	addi	a3, a3, -1
+	and	a1, a1, a3
 	sltiu	a1, a1, 1093
 	and	a0, a0, a1
 	ret
@@ -19,8 +19,8 @@ func0000000000000014:
 	srli	a2, a2, 50
 	addi	a3, a3, 1147
 	mul	a2, a2, a3
-	li	a3, 100
 	srli	a2, a2, 17
+	li	a3, 100
 	mul	a2, a2, a3
 	lui	a3, 16
 	sub	a1, a1, a2
@@ -34,8 +34,8 @@ func000000000000000c:
 	lui	a2, 1048573
 	addi	a2, a2, -195
 	mul	a1, a1, a2
-	lui	a2, 1
 	slli	a1, a1, 48
+	lui	a2, 1
 	srli	a1, a1, 48
 	addi	a2, a2, -976
 	sltu	a1, a2, a1

@@ -28,19 +28,19 @@ func000000000000000c:
 
 func000000000000000f:
 	sext.w	a1, a1
+	lui	a2, 3
 	or	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, -1802
+	addi	a1, a2, -1802
 	mul	a0, a0, a1
 	ret
 
 func000000000000000e:
+	lui	a2, 16
+	addi	a2, a2, 1
 	sext.w	a1, a1
+	bseti	a2, a2, 32
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 1
-	bseti	a1, a1, 32
-	bseti	a1, a1, 48
+	bseti	a1, a2, 48
 	mul	a0, a0, a1
 	ret
 

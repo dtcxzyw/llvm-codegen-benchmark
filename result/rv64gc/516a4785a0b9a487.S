@@ -8,8 +8,8 @@ func000000000000003c:
 	ret
 
 func0000000000000030:
-	zext.b	a1, a1
 	li	a2, 88
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2047
@@ -43,8 +43,8 @@ func0000000000000070:
 	ret
 
 func000000000000007c:
-	zext.b	a1, a1
 	li	a2, 568
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1224

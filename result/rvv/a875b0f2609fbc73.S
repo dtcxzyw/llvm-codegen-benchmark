@@ -1,11 +1,11 @@
 func000000000000000c:
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v8, 0
-	vnsrl.wx	v8, v10, a0
+	vnsrl.wx	v12, v10, a0
+	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
-	vnsrl.wi	v8, v8, 0
-	vnsrl.wi	v9, v12, 0
+	vnsrl.wi	v8, v12, 0
+	vnsrl.wi	v9, v10, 0
 	vmsne.vv	v0, v8, v9
 	ret
 

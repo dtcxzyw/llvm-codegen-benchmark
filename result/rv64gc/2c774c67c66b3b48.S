@@ -1,6 +1,6 @@
 func0000000000000004:
-	fsub.d	fa5, fa1, fa2
 	li	a0, 2045
+	fsub.d	fa5, fa1, fa2
 	slli	a0, a0, 51
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5

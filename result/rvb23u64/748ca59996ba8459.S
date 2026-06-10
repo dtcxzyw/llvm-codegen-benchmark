@@ -1,8 +1,8 @@
 func000000000000001d:
-	zext.b	a1, a1
 	sh2add	a0, a0, a0
-	slli	a1, a1, 6
+	zext.b	a1, a1
 	sh3add	a0, a0, a0
+	slli	a1, a1, 6
 	sh1add	a0, a0, a1
 	sext.w	a0, a0
 	ret
@@ -16,17 +16,17 @@ func000000000000003f:
 	ret
 
 func000000000000007f:
-	zext.b	a1, a1
 	sh1add	a0, a0, a0
+	zext.b	a1, a1
 	sh1add	a0, a0, a1
 	slliw	a0, a0, 3
 	ret
 
 func0000000000000035:
-	zext.b	a1, a1
 	li	a2, -100
-	slli	a1, a1, 6
 	mul	a0, a0, a2
+	zext.b	a1, a1
+	slli	a1, a1, 6
 	addw	a0, a0, a1
 	ret
 

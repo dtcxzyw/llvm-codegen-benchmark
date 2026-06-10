@@ -1,12 +1,12 @@
 func000000000000000f:
-	slli	a0, a0, 1
 	li	a1, 1024
+	slli	a0, a0, 1
 	sub	a0, a1, a0
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 1
 	li	a1, 126
+	slli	a0, a0, 1
 	sub	a0, a1, a0
 	ret
 

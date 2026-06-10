@@ -2,9 +2,9 @@ func0000000000000000:
 	slliw	a2, a2, 16
 	or	a0, a0, a2
 	lui	a2, 2048
+	lui	a3, 1792
 	and	a1, a1, a2
-	lui	a2, 1792
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -21,8 +21,8 @@ func000000000000000b:
 	or	a0, a0, a2
 	lui	a2, 16
 	addi	a2, a2, -256
-	and	a1, a1, a2
 	andi	a0, a0, -256
+	and	a1, a1, a2
 	bclri	a0, a0, 24
 	or	a0, a0, a1
 	ret

@@ -19,8 +19,8 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	addi	a0, a0, 143
 	lui	a1, 512
+	addi	a0, a0, 143
 	addi	a1, a1, -8
 	and	a0, a0, a1
 	sh2add	a0, a0, a0

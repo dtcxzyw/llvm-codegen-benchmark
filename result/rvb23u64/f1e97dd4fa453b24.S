@@ -10,8 +10,8 @@ func00000000000000e4:
 
 func00000000000000c4:
 	sub	a1, a1, a2
-	bseti	a2, zero, 63
 	srai	a1, a1, 3
+	bseti	a2, zero, 63
 	sub	a1, a1, a0
 	xnor	a0, a0, a2
 	sltu	a0, a0, a1

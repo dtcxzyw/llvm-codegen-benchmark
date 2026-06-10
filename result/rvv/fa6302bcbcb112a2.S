@@ -26,10 +26,10 @@ func00000000000001e1:
 	ret
 
 func00000000000001e6:
+	li	a0, 48
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
 	vwsll.vi	v10, v12, 3
-	li	a0, 48
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10

@@ -5,9 +5,9 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
+	li	a0, 19
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 19
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

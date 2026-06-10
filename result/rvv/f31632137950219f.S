@@ -22,9 +22,9 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
+	li	a0, 760
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmv1r.v	v11, v0
-	li	a0, 760
 	vmsgtu.vx	v0, v10, a0
 	li	a0, 256
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -36,9 +36,9 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
+	li	a0, 256
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmv1r.v	v11, v0
-	li	a0, 256
 	vmsltu.vx	v0, v10, a0
 	li	a0, 16
 	vsetvli	zero, zero, e32, m2, ta, ma

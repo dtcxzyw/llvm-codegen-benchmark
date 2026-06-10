@@ -1,8 +1,8 @@
 func0000000000000001:
-	andi	a1, a1, 1
+	li	a3, -1025
 	add	a0, a0, a2
-	li	a2, -1025
-	sh2add	a0, a2, a0
+	sh2add	a0, a3, a0
+	andi	a1, a1, 1
 	sext.w	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
@@ -22,10 +22,10 @@ func0000000000000005:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 1
+	lui	a3, 1048560
 	add	a0, a0, a2
-	lui	a2, 1048560
-	addw	a0, a0, a2
+	andi	a1, a1, 1
+	addw	a0, a0, a3
 	czero.eqz	a0, a0, a1
 	ret
 

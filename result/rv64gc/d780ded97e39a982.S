@@ -16,10 +16,10 @@ func00000000000001f0:
 
 func0000000000000020:
 	slli	a1, a1, 2
-	lui	a2, 5
 	addi	a1, a1, -4
-	addi	a2, a2, 1536
+	lui	a2, 5
 	slli	a1, a1, 32
+	addi	a2, a2, 1536
 	srli	a1, a1, 32
 	add	a0, a0, a2
 	add	a0, a0, a1

@@ -9,12 +9,12 @@ func0000000000000065:
 	ret
 
 func0000000000000004:
-	slli	a1, a0, 1
-	slli	a2, a0, 3
-	add	a1, a1, a2
-	srliw	a1, a1, 9
-	li	a2, -48
-	mul	a1, a1, a2
+	li	a1, -48
+	slli	a2, a0, 1
+	slli	a3, a0, 3
+	add	a2, a2, a3
+	srliw	a2, a2, 9
+	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 
@@ -76,9 +76,9 @@ func0000000000000045:
 
 func0000000000000000:
 	lui	a1, 1
-	lui	a2, 524288
 	addi	a1, a1, 1147
 	mul	a1, a0, a1
+	lui	a2, 524288
 	srliw	a1, a1, 19
 	addi	a2, a2, -100
 	mul	a1, a1, a2

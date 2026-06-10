@@ -8,8 +8,8 @@ func0000000000000002:
 	ret
 
 func0000000000000012:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 784384
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB1_2
@@ -18,8 +18,8 @@ func0000000000000012:
 	ret
 
 func0000000000000014:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB2_2
@@ -28,8 +28,8 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB3_2

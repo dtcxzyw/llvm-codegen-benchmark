@@ -1,7 +1,7 @@
 func0000000000000002:
-	fsub.s	fa0, fa0, fa1
 	lui	a0, 263313
 	addi	a0, a0, -37
+	fsub.s	fa0, fa0, fa1
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa0, fa5
 	beqz	a0, .LBB0_2
@@ -13,8 +13,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fsub.s	fa0, fa0, fa1
 	lui	a0, 258048
+	fsub.s	fa0, fa0, fa1
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa0
 	beqz	a0, .LBB1_2

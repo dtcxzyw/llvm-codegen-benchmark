@@ -20,18 +20,18 @@ func000000000000000c:
 	li	a0, 96
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vx	v8, v8, a0
-	vmv.v.x	v9, a0
 	vmand.mm	v0, v0, v8
+	vmv.v.x	v8, a0
 	li	a0, 104
-	vmerge.vxm	v8, v9, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000008:
 	li	a0, -128
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
-	li	a0, 96
 	vmand.mm	v0, v8, v0
+	li	a0, 96
 	vmv.v.x	v8, a0
 	li	a0, 104
 	vmerge.vxm	v8, v8, a0, v0

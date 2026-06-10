@@ -10,10 +10,10 @@ func0000000000000020:
 func000000000000003e:
 	li	a3, 255
 	andn	a2, a3, a2
-	lui	a3, 8
 	mul	a1, a1, a2
+	lui	a2, 8
 	add	a0, a0, a1
-	addi	a1, a3, 129
+	addi	a1, a2, 129
 	mulw	a0, a0, a1
 	ret
 

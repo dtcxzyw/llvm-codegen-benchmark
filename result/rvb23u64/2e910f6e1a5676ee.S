@@ -57,10 +57,10 @@ func00000000000000a7:
 func00000000000000e4:
 	srli	a6, a4, 32
 	slli	a5, a5, 32
-	slli	a4, a4, 32
 	or	a5, a5, a6
-	or	a2, a2, a4
+	slli	a4, a4, 32
 	or	a3, a3, a5
+	or	a2, a2, a4
 	sltu	a0, a2, a0
 	xor	a2, a3, a1
 	czero.nez	a0, a0, a2
@@ -71,10 +71,10 @@ func00000000000000e4:
 func00000000000000e9:
 	srli	a6, a4, 32
 	slli	a5, a5, 32
-	slli	a4, a4, 32
 	or	a5, a5, a6
-	or	a2, a2, a4
+	slli	a4, a4, 32
 	or	a3, a3, a5
+	or	a2, a2, a4
 	sltu	a0, a2, a0
 	xor	a2, a3, a1
 	czero.nez	a0, a0, a2
@@ -93,9 +93,9 @@ func00000000000000ac:
 
 func00000000000000e1:
 	srli	a6, a4, 63
+	sh1add	a5, a5, a6
 	sh1add	a2, a4, a2
-	sh1add	a4, a5, a6
-	or	a3, a3, a4
+	or	a3, a3, a5
 	xor	a0, a0, a2
 	xor	a1, a1, a3
 	or	a0, a0, a1

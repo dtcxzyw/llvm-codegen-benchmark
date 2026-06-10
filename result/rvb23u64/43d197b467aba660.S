@@ -12,8 +12,8 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	binvi	a1, a1, 63
 	lui	a2, 1048568
+	binvi	a1, a1, 63
 	xnor	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0

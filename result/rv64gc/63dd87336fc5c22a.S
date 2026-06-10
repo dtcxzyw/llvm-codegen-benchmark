@@ -1,10 +1,10 @@
 func0000000000000144:
-	sext.w	a2, a0
+	lui	a2, 524288
 	subw	a1, a1, a0
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	sltu	a0, a1, a0
-	sgtz	a1, a2
+	sext.w	a0, a0
+	addiw	a2, a2, -1
+	sltu	a1, a1, a2
+	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 

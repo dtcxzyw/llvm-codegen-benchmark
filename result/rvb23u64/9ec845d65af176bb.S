@@ -1,6 +1,6 @@
 func0000000000000001:
-	srliw	a0, a0, 3
 	li	a1, 128
+	srliw	a0, a0, 3
 	sub	a0, a1, a0
 	ret
 

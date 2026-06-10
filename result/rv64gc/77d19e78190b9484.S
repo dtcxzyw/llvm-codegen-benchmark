@@ -1,6 +1,6 @@
 func0000000000000028:
-	seqz	a2, a0
 	srli	a1, a1, 19
+	seqz	a2, a0
 	snez	a1, a1
 	and	a2, a2, a1
 	lui	a1, 128

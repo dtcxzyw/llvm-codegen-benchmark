@@ -1,6 +1,6 @@
 func0000000000000018:
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
@@ -39,8 +39,8 @@ func000000000000003f:
 	ret
 
 func000000000000001b:
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

@@ -11,9 +11,9 @@ func000000000000007f:
 
 func000000000000001c:
 	slli	a2, a2, 48
+	srli	a2, a2, 48
 	add	a0, a0, a1
 	lui	a1, 3
-	srli	a2, a2, 48
 	sub	a0, a0, a2
 	addi	a1, a1, -800
 	add	a0, a0, a1

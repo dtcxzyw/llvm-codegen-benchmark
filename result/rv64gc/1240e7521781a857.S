@@ -6,8 +6,8 @@ func000000000000007f:
 .LBB0_2:
 	slli	a2, a2, 8
 	slliw	a1, a1, 16
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func000000000000007b:
@@ -18,8 +18,8 @@ func000000000000007b:
 .LBB1_2:
 	slli	a2, a2, 16
 	slliw	a1, a1, 24
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func000000000000002f:
@@ -42,8 +42,8 @@ func000000000000003f:
 .LBB3_2:
 	slli	a2, a2, 8
 	slliw	a1, a1, 16
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func000000000000003b:
@@ -54,7 +54,7 @@ func000000000000003b:
 .LBB4_2:
 	slli	a2, a2, 16
 	slliw	a1, a1, 24
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 

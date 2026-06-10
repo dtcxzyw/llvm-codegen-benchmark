@@ -1,6 +1,6 @@
 func0000000000000002:
-	slli	a2, a2, 49
 	lui	a3, 1048560
+	slli	a2, a2, 49
 	srli	a3, a3, 15
 	and	a1, a1, a3
 	or	a0, a0, a2
@@ -8,10 +8,10 @@ func0000000000000002:
 	ret
 
 func000000000000001f:
-	slli	a2, a2, 32
 	lui	a3, 917506
 	addi	a3, a3, -1
 	slli	a3, a3, 19
+	slli	a2, a2, 32
 	addi	a3, a3, 7
 	and	a1, a1, a3
 	or	a0, a0, a2

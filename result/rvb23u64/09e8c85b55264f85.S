@@ -1,7 +1,7 @@
 func0000000000000014:
+	li	a1, 7
 	andi	a0, a0, 224
 	sltiu	a0, a0, 160
-	li	a1, 7
 	czero.nez	a0, a1, a0
 	addiw	a0, a0, 48
 	ret

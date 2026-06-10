@@ -8,8 +8,8 @@ func00000000000000d4:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 64
 	li	a1, 73
+	andi	a0, a0, 64
 	czero.eqz	a0, a1, a0
 	ori	a0, a0, 420
 	bseti	a0, a0, 15

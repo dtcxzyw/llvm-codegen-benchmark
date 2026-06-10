@@ -5,15 +5,15 @@ func0000000000000032:
 	ret
 
 func000000000000007b:
-	sext.w	a2, a2
 	sh1add	a0, a1, a0
+	sext.w	a2, a2
 	sh1add	a0, a2, a0
 	addi	a0, a0, 500
 	ret
 
 func000000000000007f:
-	sext.w	a2, a2
 	sh1add	a0, a1, a0
+	sext.w	a2, a2
 	sh1add	a0, a2, a0
 	addi	a0, a0, 500
 	ret

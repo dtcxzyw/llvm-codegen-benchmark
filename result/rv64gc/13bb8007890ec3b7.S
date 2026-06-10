@@ -1,8 +1,8 @@
 func000000000000002a:
-	srli	a2, a1, 63
-	add	a1, a1, a2
-	andi	a1, a1, -2
 	li	a2, 2
+	srli	a3, a1, 63
+	add	a1, a1, a3
+	andi	a1, a1, -2
 	blt	a2, a1, .LBB0_2
 	li	a1, 2
 .LBB0_2:

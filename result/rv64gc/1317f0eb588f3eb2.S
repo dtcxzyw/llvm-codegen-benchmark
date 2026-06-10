@@ -1,6 +1,6 @@
 func000000000000001f:
-	sext.w	a1, a1
 	li	a2, -1
+	sext.w	a1, a1
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	mul	a0, a1, a0
@@ -46,8 +46,8 @@ func000000000000000f:
 	ret
 
 func000000000000001c:
-	sext.w	a1, a1
 	li	a2, -1
+	sext.w	a1, a1
 	srli	a2, a2, 2
 	add	a1, a1, a2
 	mul	a0, a1, a0

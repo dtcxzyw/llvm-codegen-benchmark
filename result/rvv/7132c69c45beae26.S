@@ -10,10 +10,10 @@ func000000000000000c:
 
 func000000000000000e:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vand.vi	v8, v10, 15
-	vmv.v.i	v9, 1
-	vsll.vv	v8, v9, v8
+	vmv.v.i	v10, 1
+	vnsrl.wi	v11, v8, 0
+	vand.vi	v8, v11, 15
+	vsll.vv	v8, v10, v8
 	ret
 
 func0000000000000008:
@@ -29,17 +29,17 @@ func0000000000000008:
 func000000000000000f:
 	li	a0, 32
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.x	v8, a0
-	vand.vi	v9, v10, 7
-	vsll.vv	v8, v8, v9
+	vmv.v.x	v10, a0
+	vnsrl.wi	v11, v8, 0
+	vand.vi	v8, v11, 7
+	vsll.vv	v8, v10, v8
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vand.vi	v8, v10, 15
-	vmv.v.i	v9, -1
-	vsll.vv	v8, v9, v8
+	vmv.v.i	v10, -1
+	vnsrl.wi	v11, v8, 0
+	vand.vi	v8, v11, 15
+	vsll.vv	v8, v10, v8
 	ret
 

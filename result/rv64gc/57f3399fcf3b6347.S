@@ -26,8 +26,8 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	slliw	a1, a1, 4
 	lui	a2, 524288
+	slliw	a1, a1, 4
 	addiw	a2, a2, -40
 	slt	a1, a1, a2
 	and	a0, a0, a1

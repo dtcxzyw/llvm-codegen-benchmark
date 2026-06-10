@@ -18,9 +18,9 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
+	lui	a3, 16
 	sub	a2, a1, a2
-	lui	a1, 16
-	addi	a1, a1, -1
+	addi	a1, a3, -1
 	bltu	a2, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

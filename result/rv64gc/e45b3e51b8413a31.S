@@ -25,17 +25,16 @@ func000000000000002a:
 	mul	a0, a0, a1
 	ret
 
+.LCPI2_0:
+	.quad	100000000000000000
 func0000000000000068:
 	lui	a1, 5960
 	addi	a1, a1, 1903
 	slli	a1, a1, 12
 	addi	a1, a1, -1049
 	bgeu	a1, a0, .LBB2_2
-	lui	a0, 45475
-	addi	a0, a0, -1085
-	slli	a0, a0, 12
-	addi	a0, a0, -315
-	slli	a0, a0, 17
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
 	ret
 .LBB2_2:
 	lui	a1, 244
@@ -45,12 +44,12 @@ func0000000000000068:
 
 func0000000000000061:
 	slli	a1, a0, 1
-	slli	a2, a0, 2
-	addi	a0, a0, -6
-	add	a1, a1, a2
-	seqz	a0, a0
-	addi	a0, a0, -1
-	and	a0, a0, a1
+	addi	a2, a0, -6
+	slli	a0, a0, 2
+	seqz	a2, a2
+	add	a0, a0, a1
+	addi	a2, a2, -1
+	and	a0, a0, a2
 	ret
 
 .LCPI4_0:
@@ -59,17 +58,17 @@ func0000000000000048:
 	lui	a1, %hi(.LCPI4_0)
 	ld	a1, %lo(.LCPI4_0)(a1)
 	slli	a2, a0, 2
-	slli	a3, a0, 3
-	add	a2, a2, a3
-	sltu	a0, a1, a0
-	neg	a0, a0
-	or	a0, a0, a2
+	sltu	a1, a1, a0
+	slli	a0, a0, 3
+	add	a0, a0, a2
+	neg	a1, a1
+	or	a0, a0, a1
 	ret
 
 func0000000000000008:
 	li	a1, 44
-	lui	a2, 95325
 	mul	a1, a0, a1
+	lui	a2, 95325
 	addi	a2, a2, 372
 	slli	a3, a2, 30
 	add	a2, a2, a3

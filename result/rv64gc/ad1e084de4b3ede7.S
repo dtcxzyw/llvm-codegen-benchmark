@@ -8,8 +8,8 @@ func000000000000000f:
 	ret
 
 func000000000000000b:
-	sext.w	a0, a0
 	li	a1, 1
+	sext.w	a0, a0
 	beq	a0, a1, .LBB1_2
 	li	a0, 12
 	ret
@@ -18,10 +18,10 @@ func000000000000000b:
 	ret
 
 func000000000000000a:
-	sext.w	a1, a0
-	li	a2, 1
-	slli	a0, a2, 32
-	beq	a1, a2, .LBB2_2
+	li	a1, 1
+	sext.w	a2, a0
+	slli	a0, a1, 32
+	beq	a2, a1, .LBB2_2
 	addi	a0, a0, -18
 	ret
 .LBB2_2:

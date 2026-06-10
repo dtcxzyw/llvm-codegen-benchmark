@@ -1,6 +1,6 @@
 func0000000000000004:
-	srli	a1, a1, 1
 	lui	a2, 349525
+	srli	a1, a1, 1
 	addi	a2, a2, 1365
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -8,8 +8,8 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	srli	a1, a1, 2
 	lui	a2, 209715
+	srli	a1, a1, 2
 	addi	a2, a2, 819
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -24,8 +24,8 @@ func0000000000000002:
 	ret
 
 func0000000000000005:
-	srli	a1, a1, 1
 	lui	a2, 279620
+	srli	a1, a1, 1
 	addi	a2, a2, 1092
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000005:
 	ret
 
 func000000000000000e:
-	srli	a1, a1, 2
 	lui	a2, 12336
+	srli	a1, a1, 2
 	addi	a2, a2, 771
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -42,8 +42,8 @@ func000000000000000e:
 	ret
 
 func000000000000000f:
-	srli	a1, a1, 2
 	lui	a2, 197379
+	srli	a1, a1, 2
 	addi	a2, a2, 48
 	and	a1, a1, a2
 	add	a0, a0, a1

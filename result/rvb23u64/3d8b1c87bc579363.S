@@ -1,26 +1,26 @@
 func000000000000030f:
-	sext.w	a1, a0
-	slliw	a0, a0, 2
-	addi	a0, a0, -16
-	czero.eqz	a0, a0, a1
+	slliw	a1, a0, 2
+	sext.w	a0, a0
+	addi	a1, a1, -16
+	czero.eqz	a0, a1, a0
 	slli	a0, a0, 4
 	addi	a0, a0, 256
 	ret
 
 func000000000000010f:
-	sext.w	a1, a0
-	slliw	a0, a0, 1
-	addi	a0, a0, -1
-	czero.eqz	a0, a0, a1
+	slliw	a1, a0, 1
+	sext.w	a0, a0
+	addi	a1, a1, -1
+	czero.eqz	a0, a1, a0
 	slli	a0, a0, 3
 	addi	a0, a0, 8
 	ret
 
 func000000000000000b:
-	sext.w	a1, a0
-	slli	a0, a0, 1
-	addi	a0, a0, -16
-	czero.eqz	a0, a0, a1
+	slli	a1, a0, 1
+	sext.w	a0, a0
+	addi	a1, a1, -16
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, 16
 	slli.uw	a0, a0, 3
 	ret

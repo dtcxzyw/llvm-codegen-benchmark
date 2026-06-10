@@ -4,8 +4,8 @@ func00000000000001e1:
 	li	a0, -1
 	srli	a0, a0, 3
 	vand.vx	v10, v10, a0
-	li	a0, -13
 	vadd.vi	v10, v10, 1
+	li	a0, -13
 	srli	a0, a0, 2
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
@@ -17,8 +17,8 @@ func0000000000000061:
 	li	a0, -1
 	srli	a0, a0, 2
 	vand.vx	v10, v10, a0
-	li	a0, -15
 	vadd.vi	v10, v10, 1
+	li	a0, -15
 	srli	a0, a0, 1
 	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10

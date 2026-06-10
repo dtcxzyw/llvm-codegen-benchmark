@@ -5,16 +5,16 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	li	a0, -34
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsext.vf2	v8, v10, v0.t
+	li	a0, -34
 	vmseq.vx	v0, v8, a0
 	ret
 
 func0000000000000018:
-	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsext.vf2	v8, v10, v0.t
+	lui	a0, 524288
 	addiw	a0, a0, -512
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -32,9 +32,9 @@ func000000000000000a:
 	ret
 
 func0000000000000014:
-	li	a0, 1352
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vsext.vf2	v8, v10, v0.t
+	li	a0, 1352
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -14,9 +14,9 @@ func000000000000002c:
 
 func000000000000002e:
 	sh2add	a2, a2, a2
+	andi	a0, a0, 1
 	sh3add	a1, a2, a1
 	addi	a1, a1, 33
-	andi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 

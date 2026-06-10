@@ -1,7 +1,7 @@
 func0000000000000010:
 	li	a3, 64
-	slli	a1, a1, 32
 	sub	a3, a3, a2
+	slli	a1, a1, 32
 	sll	a0, a0, a3
 	srli	a1, a1, 32
 	or	a0, a0, a1

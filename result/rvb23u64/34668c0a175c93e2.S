@@ -20,9 +20,9 @@ func0000000000000000:
 	mulh	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 4
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -344
+	addi	a1, a2, -344
 	mul	a0, a0, a1
 	ret
 

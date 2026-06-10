@@ -19,8 +19,8 @@ func0000000000000005:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v12, v12, v16
 	fmv.w.x	fa5, zero
-	lui	a0, 763953
 	vmfle.vf	v16, v12, fa5
+	lui	a0, 763953
 	addi	a0, a0, 623
 	vmnot.m	v0, v16
 	vmv.v.x	v12, a0

@@ -26,8 +26,8 @@ func00000000000001ff:
 	ret
 
 func0000000000000193:
-	slli	a2, a2, 3
 	slli	a1, a1, 4
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -12
@@ -54,8 +54,8 @@ func00000000000000de:
 	ret
 
 func000000000000019c:
-	slli	a2, a2, 2
 	slli	a1, a1, 7
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 22
@@ -76,8 +76,8 @@ func000000000000009c:
 	ret
 
 func00000000000000ff:
-	add	a0, a0, a1
 	slli	a2, a2, 4
+	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 2047
 	addi	a0, a0, 1797

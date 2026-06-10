@@ -9,8 +9,8 @@ func000000000000001b:
 	ret
 
 func0000000000000013:
-	neg	a1, a1
 	slli	a0, a0, 32
+	neg	a1, a1
 	srli	a0, a0, 32
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1

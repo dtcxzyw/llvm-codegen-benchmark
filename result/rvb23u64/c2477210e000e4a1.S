@@ -50,11 +50,11 @@ func0000000000000c06:
 	lui	a3, 281475
 	slli	a3, a3, 3
 	addi	a3, a3, -765
+	li	a4, -1
 	sltu	a2, a3, a2
-	li	a3, -1
-	srli	a3, a3, 1
+	srli	a4, a4, 1
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
+	czero.eqz	a2, a4, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 63

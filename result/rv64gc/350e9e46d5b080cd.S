@@ -20,10 +20,10 @@ func0000000000000018:
 func0000000000000008:
 	lui	a1, 16
 	addi	a1, a1, -32
+	lui	a2, 31
 	and	a0, a0, a1
-	lui	a1, 31
-	addi	a1, a1, -32
-	add	a0, a0, a1
+	addi	a2, a2, -32
+	add	a0, a0, a2
 	srli	a0, a0, 9
 	ret
 

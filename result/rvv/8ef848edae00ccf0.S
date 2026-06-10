@@ -1,7 +1,7 @@
 func000000000000018a:
+	li	a0, 768
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 4
-	li	a0, 768
 	vmsne.vi	v12, v10, 0
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v8, v0, v12

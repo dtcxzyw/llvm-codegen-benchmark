@@ -18,13 +18,13 @@ func0000000000000282:
 	ret
 
 func0000000000000048:
-	slli	a0, a0, 48
 	lui	a1, 16
-	lui	a2, 8
+	slli	a0, a0, 48
 	srli	a0, a0, 48
 	addi	a1, a1, -2
-	addi	a2, a2, 1
+	lui	a2, 8
 	xor	a1, a1, a0
+	addi	a2, a2, 1
 	seqz	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1

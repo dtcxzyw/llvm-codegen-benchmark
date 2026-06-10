@@ -8,9 +8,9 @@ func0000000000000028:
 	ret
 
 func0000000000000078:
+	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v12, v10, v10
-	li	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vx	v8, v8, a0
@@ -63,9 +63,9 @@ func00000000000003e1:
 	ret
 
 func0000000000000008:
+	li	a0, -32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v12, v10, 4
-	li	a0, -32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vx	v8, v8, a0
@@ -73,9 +73,9 @@ func0000000000000008:
 	ret
 
 func00000000000000f8:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v12, v10, 3
-	li	a0, 64
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vx	v8, v8, a0
@@ -110,9 +110,9 @@ func0000000000000161:
 	ret
 
 func0000000000000278:
+	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v12, v10, 4
-	li	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vx	v8, v8, a0
@@ -129,9 +129,9 @@ func00000000000003f8:
 	ret
 
 func0000000000000178:
+	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v12, v10, 4
-	li	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vx	v8, v8, a0

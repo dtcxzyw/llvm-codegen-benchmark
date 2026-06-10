@@ -70,8 +70,8 @@ func0000000000000741:
 
 func00000000000007e1:
 	slli	a2, a2, 3
-	slli	a1, a1, 3
 	add	a2, a2, a0
+	slli	a1, a1, 3
 	addi	a2, a2, 8
 	add	a0, a0, a1
 	xor	a0, a0, a2
@@ -86,8 +86,8 @@ func0000000000000004:
 	ret
 
 func00000000000005e1:
-	add	a2, a2, a0
 	slli	a1, a1, 3
+	add	a2, a2, a0
 	addi	a2, a2, 8
 	add	a0, a0, a1
 	xor	a0, a0, a2
@@ -117,8 +117,8 @@ func0000000000000568:
 
 func0000000000000104:
 	slli	a2, a2, 3
-	slli	a1, a1, 3
 	add	a2, a2, a0
+	slli	a1, a1, 3
 	addi	a2, a2, 8
 	add	a0, a0, a1
 	sltu	a0, a2, a0
@@ -166,8 +166,8 @@ func000000000000076c:
 
 func0000000000000001:
 	slli	a2, a2, 3
-	slli	a1, a1, 3
 	add	a2, a2, a0
+	slli	a1, a1, 3
 	addi	a2, a2, 8
 	add	a0, a0, a1
 	xor	a0, a0, a2
@@ -176,8 +176,8 @@ func0000000000000001:
 
 func00000000000001c4:
 	slli	a2, a2, 2
-	slli	a1, a1, 2
 	add	a2, a2, a0
+	slli	a1, a1, 2
 	addi	a2, a2, -4
 	add	a0, a0, a1
 	sltu	a0, a2, a0
@@ -185,8 +185,8 @@ func00000000000001c4:
 
 func0000000000000144:
 	slli	a2, a2, 2
-	slli	a1, a1, 2
 	add	a2, a2, a0
+	slli	a1, a1, 2
 	addi	a2, a2, -4
 	add	a0, a0, a1
 	sltu	a0, a2, a0
@@ -217,8 +217,8 @@ func0000000000000008:
 
 func0000000000000009:
 	slli	a2, a2, 3
-	slli	a1, a1, 3
 	add	a2, a2, a0
+	slli	a1, a1, 3
 	addi	a2, a2, 8
 	add	a0, a0, a1
 	sltu	a0, a2, a0
@@ -234,16 +234,16 @@ func00000000000007e8:
 
 func0000000000000764:
 	slli	a2, a2, 2
-	slli	a1, a1, 2
 	add	a2, a2, a0
+	slli	a1, a1, 2
 	addi	a2, a2, 4
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
 
 func0000000000000541:
-	add	a2, a2, a0
 	slli	a1, a1, 2
+	add	a2, a2, a0
 	addi	a2, a2, -4
 	add	a0, a0, a1
 	xor	a0, a0, a2
@@ -252,8 +252,8 @@ func0000000000000541:
 
 func0000000000000744:
 	slli	a2, a2, 4
-	slli	a1, a1, 4
 	add	a2, a2, a0
+	slli	a1, a1, 4
 	addi	a2, a2, -16
 	add	a0, a0, a1
 	sltu	a0, a2, a0

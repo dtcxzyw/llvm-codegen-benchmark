@@ -1,12 +1,11 @@
+.LCPI0_0:
+	.quad	1000000000000000000
 func0000000000000004:
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	sext.b	a1, a1
 	add	a0, a0, a1
-	lui	a1, 227374
-	addi	a1, a1, -1329
-	slli	a1, a1, 12
-	addi	a1, a1, -1575
-	slli	a1, a1, 18
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
 .LCPI1_0:

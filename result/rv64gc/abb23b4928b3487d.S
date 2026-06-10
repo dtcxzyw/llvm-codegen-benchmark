@@ -1,6 +1,6 @@
 func0000000000000010:
-	sraiw	a2, a2, 16
 	lui	a3, 9310
+	sraiw	a2, a2, 16
 	addi	a3, a3, 474
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000050:
 	ret
 
 func0000000000000004:
-	sraiw	a2, a2, 27
 	lui	a3, 1048564
+	sraiw	a2, a2, 27
 	addi	a3, a3, -4
 	mul	a2, a2, a3
 	add	a0, a0, a1

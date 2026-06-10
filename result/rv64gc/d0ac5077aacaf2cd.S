@@ -27,8 +27,8 @@ func0000000000000061:
 
 func0000000000000066:
 	mv	a1, a0
-	sext.w	a2, a0
 	li	a0, 16
+	sext.w	a2, a1
 	blt	a2, a0, .LBB3_2
 	slliw	a0, a1, 1
 .LBB3_2:
@@ -45,8 +45,8 @@ func0000000000000026:
 
 func000000000000002a:
 	mv	a1, a0
-	sext.w	a2, a0
 	lui	a0, 244
+	sext.w	a2, a1
 	addi	a0, a0, 576
 	blt	a0, a2, .LBB5_2
 	slliw	a0, a1, 1

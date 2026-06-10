@@ -7,9 +7,9 @@ func0000000000000058:
 	ret
 
 func0000000000000194:
+	li	a0, 44
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v12, v10, v8
-	li	a0, 44
 	vmsgt.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8

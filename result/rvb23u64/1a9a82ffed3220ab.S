@@ -41,8 +41,8 @@ func0000000000000010:
 	addi	a3, a2, 7
 	addw	a1, a1, a3
 	lui	a3, 16
-	addi	a3, a3, -1
 	sltu	a1, a1, a2
+	addi	a3, a3, -1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a1

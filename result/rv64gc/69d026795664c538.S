@@ -25,8 +25,8 @@ func0000000000000050:
 func00000000000000f0:
 	addi	a2, a2, 263
 	lui	a3, 524288
-	slli	a1, a1, 1
 	srli	a3, a3, 26
+	slli	a1, a1, 1
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

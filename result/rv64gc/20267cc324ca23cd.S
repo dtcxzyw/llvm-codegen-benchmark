@@ -3,8 +3,8 @@ func0000000000000012:
 	ret
 
 func0000000000000022:
-	fsub.d	fa4, fa0, fa1
 	lui	a0, 32973
+	fsub.d	fa4, fa0, fa1
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
 	flt.d	a0, fa4, fa5

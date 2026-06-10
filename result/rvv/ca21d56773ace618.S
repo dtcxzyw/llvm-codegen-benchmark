@@ -63,9 +63,9 @@ func0000000000000108:
 	ret
 
 func0000000000000084:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 32
 	vmsltu.vx	v10, v9, a0
 	vmsltu.vv	v8, v8, v9
 	vmand.mm	v0, v10, v8
@@ -88,9 +88,9 @@ func000000000000010a:
 	ret
 
 func0000000000000024:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 64
 	vmsltu.vx	v10, v9, a0
 	vmseq.vv	v8, v8, v9
 	vmand.mm	v0, v10, v8
@@ -105,9 +105,9 @@ func00000000000000c6:
 	ret
 
 func0000000000000144:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 64
 	vmsltu.vx	v10, v9, a0
 	vmslt.vv	v8, v9, v8
 	vmand.mm	v0, v10, v8

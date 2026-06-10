@@ -68,8 +68,8 @@ func000000000000002e:
 	ret
 
 func0000000000000068:
-	slli	a0, a0, 1
 	bseti	a1, zero, 34
+	slli	a0, a0, 1
 	addi	a0, a0, 2
 	andi	a0, a0, -4
 	addi	a1, a1, -8

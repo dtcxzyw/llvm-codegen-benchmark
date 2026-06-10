@@ -1,8 +1,8 @@
 func0000000000001084:
 	zext.b	a0, a0
 	addiw	a1, a1, -48
-	sltiu	a1, a1, 10
 	addi	a0, a0, -45
+	sltiu	a1, a1, 10
 	sltiu	a0, a0, 2
 	or	a0, a0, a1
 	ret

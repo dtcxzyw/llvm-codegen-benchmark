@@ -1,19 +1,19 @@
 func000000000000008a:
 	srai	a1, a1, 1
+	li	a2, 1
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 62
-	add	a0, a0, a1
+	slli	a2, a2, 62
+	add	a0, a0, a2
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
 
 func00000000000002a8:
 	srai	a1, a1, 3
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 4
-	sub	a0, a0, a1
+	srli	a2, a2, 4
+	sub	a0, a0, a2
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret

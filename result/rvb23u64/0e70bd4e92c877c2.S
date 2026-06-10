@@ -21,8 +21,9 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
+	slli	a2, a2, 5
+	add	a1, a1, a2
 	srli	a0, a0, 6
-	sh2add	a0, a2, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, -32
 	ret

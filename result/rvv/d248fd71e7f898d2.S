@@ -11,17 +11,17 @@ func0000000000000003:
 	ret
 
 func0000000000000011:
+	li	a0, 760
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmv1r.v	v10, v0
-	li	a0, 760
 	vmsgtu.vx	v0, v8, a0
 	li	a0, 256
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.x	v8, a0
 	li	a0, 266
 	vmerge.vxm	v8, v8, a0, v0
-	li	a0, 33
 	vmv1r.v	v0, v10
+	li	a0, 33
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

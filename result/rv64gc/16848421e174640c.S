@@ -34,9 +34,9 @@ func0000000000000015:
 	ret
 
 func0000000000000011:
+	li	a3, 3
 	add	a1, a1, a2
-	li	a2, 3
-	sllw	a0, a2, a0
+	sllw	a0, a3, a0
 	addw	a0, a0, a1
 	ret
 

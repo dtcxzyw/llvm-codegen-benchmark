@@ -1,6 +1,6 @@
 func000000000000000a:
-	sext.h	a0, a0
 	lui	a1, 4
+	sext.h	a0, a0
 	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret

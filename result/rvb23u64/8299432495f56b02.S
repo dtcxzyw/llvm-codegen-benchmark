@@ -8,12 +8,12 @@ func000000000000003d:
 	ret
 
 func000000000000003f:
+	lui	a3, 262144
 	slli	a2, a2, 32
+	addi	a3, a3, -1
 	or	a1, a1, a2
-	lui	a2, 262144
-	addi	a2, a2, -1
-	slli	a2, a2, 17
-	and	a1, a1, a2
+	slli	a3, a3, 17
+	and	a1, a1, a3
 	slli	a0, a0, 47
 	or	a0, a0, a1
 	ret
@@ -36,12 +36,12 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
+	lui	a3, 1044735
 	slli	a2, a2, 12
+	slli	a3, a3, 20
 	or	a1, a1, a2
-	lui	a2, 1044735
-	slli	a2, a2, 20
-	srli	a2, a2, 32
-	and	a1, a1, a2
+	srli	a3, a3, 32
+	and	a1, a1, a3
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret

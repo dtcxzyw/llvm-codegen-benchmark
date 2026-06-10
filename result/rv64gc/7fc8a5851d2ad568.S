@@ -8,8 +8,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	addi	a1, a1, -5
 	slli	a0, a0, 63
+	addi	a1, a1, -5
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	li	a1, 255
@@ -17,8 +17,8 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	addi	a1, a1, -6
 	slli	a0, a0, 63
+	addi	a1, a1, -6
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	li	a1, 1

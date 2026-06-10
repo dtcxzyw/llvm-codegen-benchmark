@@ -1,6 +1,7 @@
 func0000000000000004:
-	addi	a1, a0, -1
+	mv	a1, a0
 	li	a0, 5
+	addi	a1, a1, -1
 	bgeu	a1, a0, .LBB0_2
 	li	a0, 1
 .LBB0_2:

@@ -15,8 +15,8 @@ func000000000000003f:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, 1
 	lui	a3, 976563
+	andi	a1, a1, 1
 	addi	a3, a3, -2048
 	czero.eqz	a1, a3, a1
 	sh2add	a1, a2, a1

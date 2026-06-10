@@ -1,22 +1,22 @@
 func0000000000000001:
-	slli	a1, a0, 32
-	lui	a2, 266041
-	srli	a1, a1, 32
-	slli	a2, a2, 2
-	addi	a2, a2, 1413
-	slli	a2, a2, 22
-	mulhu	a1, a1, a2
+	lui	a1, 266041
+	slli	a1, a1, 2
+	slli	a2, a0, 32
+	addi	a1, a1, 1413
+	srli	a2, a2, 32
+	slli	a1, a1, 22
+	mulhu	a1, a2, a1
 	li	a2, 1009
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 
 func0000000000000003:
-	slli	a1, a0, 32
-	lui	a2, 559241
-	addi	a2, a2, -1911
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 559241
+	addi	a1, a1, -1911
+	slli	a2, a0, 32
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 37
 	slli	a2, a1, 6
 	slli	a1, a1, 2
@@ -38,10 +38,10 @@ func0000000000000007:
 
 func0000000000000005:
 	lui	a1, 65551
-	lui	a2, 16
 	slli	a1, a1, 3
 	addi	a1, a1, 113
 	mul	a1, a0, a1
+	lui	a2, 16
 	srli	a1, a1, 47
 	addi	a2, a2, -15
 	mul	a1, a1, a2

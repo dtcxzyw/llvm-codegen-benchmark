@@ -30,9 +30,9 @@ func00000000000001f4:
 	ret
 
 func0000000000000185:
-	slli.uw	a1, a1, 20
 	li	a2, 1072
 	sh2add	a0, a2, a0
+	slli.uw	a1, a1, 20
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

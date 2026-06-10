@@ -1,6 +1,6 @@
 func0000000000000020:
-	sext.w	a2, a2
 	lui	a3, 16
+	sext.w	a2, a2
 	addi	a3, a3, -2
 	sltu	a2, a2, a3
 	or	a1, a1, a2

@@ -28,12 +28,11 @@ func0000000000000008:
 	xori	a0, a0, 1
 	ret
 
+.LCPI7_0:
+	.quad	19073486328125
 func0000000000000074:
-	lui	a1, 284217
-	slli	a1, a1, 2
-	addi	a1, a1, 1545
-	slli	a1, a1, 12
-	addi	a1, a1, 317
+	lui	a1, %hi(.LCPI7_0)
+	ld	a1, %lo(.LCPI7_0)(a1)
 	sltu	a0, a0, a1
 	ret
 

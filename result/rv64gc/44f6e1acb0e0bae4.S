@@ -26,8 +26,8 @@ func000000000000000c:
 	ret
 
 func000000000000000e:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	feq.d	a0, fa0, fa0
 	bnez	a0, .LBB2_3
@@ -37,8 +37,8 @@ func000000000000000e:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	li	a0, 2047
 	slli	a0, a0, 52

@@ -6,9 +6,9 @@ func000000000000001e:
 
 func000000000000003c:
 	zext.b	a1, a1
+	lui	a2, 35
 	add	a0, a0, a1
-	lui	a1, 35
-	addi	a1, a1, -435
+	addi	a1, a2, -435
 	add	a0, a0, a1
 	ret
 

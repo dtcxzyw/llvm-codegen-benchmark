@@ -53,9 +53,9 @@ func0000000000000084:
 	ret
 
 func00000000000000c6:
+	li	a3, 2
 	max	a1, a1, a2
-	li	a2, 2
-	bseti	a2, a2, 63
+	bseti	a2, a3, 63
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

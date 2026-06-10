@@ -93,17 +93,17 @@ func000000000000002b:
 
 func000000000000000a:
 	sh2add	a1, a1, a2
-	lui	a2, 320
 	sh2add	a0, a0, a1
-	addi	a1, a2, -928
+	lui	a1, 320
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
 	sh2add	a1, a1, a2
-	lui	a2, 320
 	sh2add	a0, a0, a1
-	addi	a1, a2, -928
+	lui	a1, 320
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 

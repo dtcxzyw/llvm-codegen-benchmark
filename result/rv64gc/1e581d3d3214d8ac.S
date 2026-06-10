@@ -29,8 +29,8 @@ func00000000000000cc:
 	ret
 
 func0000000000000181:
-	snez	a1, a1
 	addi	a0, a0, -1
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -76,8 +76,8 @@ func000000000000014c:
 	ret
 
 func0000000000000028:
-	seqz	a1, a1
 	sltiu	a0, a0, 12
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -95,15 +95,15 @@ func0000000000000194:
 	ret
 
 func0000000000000188:
-	snez	a1, a1
 	sltiu	a0, a0, 5
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002a:
-	seqz	a1, a1
 	slti	a0, a0, 2
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -121,8 +121,8 @@ func0000000000000081:
 	ret
 
 func0000000000000198:
-	snez	a1, a1
 	sltiu	a0, a0, 2
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -134,8 +134,8 @@ func0000000000000034:
 	ret
 
 func0000000000000186:
-	snez	a1, a1
 	lui	a2, 4
+	snez	a1, a1
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret

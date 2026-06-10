@@ -1,13 +1,13 @@
 func0000000000000024:
-	addi	a1, a1, -40
 	sltiu	a0, a0, 40
+	addi	a1, a1, -40
 	neg	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000006a:
-	addi	a1, a1, 1
 	srli	a0, a0, 63
+	addi	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -19,57 +19,57 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	addi	a1, a1, -39
 	addi	a0, a0, -40
 	snez	a0, a0
+	addi	a1, a1, -39
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000004:
-	addi	a1, a1, -16
 	sltiu	a0, a0, 4
+	addi	a1, a1, -16
 	neg	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000021:
-	addi	a1, a1, -3
 	addi	a0, a0, -4
 	snez	a0, a0
+	addi	a1, a1, -3
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000026:
-	lui	a2, 8
-	addi	a2, a2, -1
-	bge	a0, a2, .LBB6_2
-	addi	a2, a1, 1
+	mv	a2, a0
+	lui	a0, 8
+	addi	a0, a0, -1
+	bge	a2, a0, .LBB6_2
+	addi	a0, a1, 1
 .LBB6_2:
-	mv	a0, a2
 	ret
 
 func0000000000000061:
-	addi	a1, a1, 765
 	addi	a0, a0, -4
 	snez	a0, a0
+	addi	a1, a1, 765
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000008:
-	li	a2, 231
-	bgeu	a2, a0, .LBB8_2
-	addi	a2, a1, -25
+	mv	a2, a0
+	li	a0, 231
+	bgeu	a0, a2, .LBB8_2
+	addi	a0, a1, -25
 .LBB8_2:
-	mv	a0, a2
 	ret
 
 func0000000000000028:
-	addi	a1, a1, -12
 	srli	a0, a0, 12
 	sltiu	a0, a0, 5
+	addi	a1, a1, -12
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

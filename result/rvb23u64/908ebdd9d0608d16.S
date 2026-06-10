@@ -12,8 +12,8 @@ func000000000000001f:
 
 func0000000000000016:
 	slli	a1, a1, 32
-	add.uw	a1, a2, a1
 	sh1add	a0, a0, a0
+	add.uw	a1, a2, a1
 	sh2add	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func000000000000000a:
+	lui	a1, 227328
 	fcvt.s.w	fa5, a0
-	lui	a0, 227328
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa5, fa5, fa4
 	fle.s	a0, fa0, fa5
 	bnez	a0, .LBB0_2
@@ -10,9 +10,9 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
+	lui	a1, 227328
 	fcvt.s.w	fa5, a0
-	lui	a0, 227328
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa5, fa5, fa4
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB1_2
@@ -21,9 +21,9 @@ func000000000000000c:
 	ret
 
 func0000000000000002:
+	lui	a1, 196608
 	fcvt.s.w	fa5, a0
-	lui	a0, 196608
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa5, fa5, fa4
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB2_2
@@ -32,9 +32,9 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
+	lui	a1, 49152
 	fcvt.s.w	fa5, a0
-	lui	a0, 49152
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa5, fa5, fa4
 	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB3_2

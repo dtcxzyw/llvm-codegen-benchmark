@@ -7,10 +7,10 @@ func0000000000000000:
 
 func000000000000000f:
 	mul	a0, a0, a1
-	lui	a1, 256
-	add	a0, a0, a1
 	lui	a1, 262144
+	lui	a2, 256
 	addi	a1, a1, -1
+	add	a0, a0, a2
 	slli	a1, a1, 21
 	and	a0, a0, a1
 	ret
@@ -30,13 +30,13 @@ func0000000000000005:
 func000000000000000e:
 	mul	a0, a0, a1
 	lui	a1, 522248
-	lui	a2, 524296
 	addi	a1, a1, -128
+	slli	a2, a1, 32
+	lui	a3, 524296
+	add	a1, a1, a2
+	slli	a2, a3, 32
 	add	a0, a0, a1
-	slli	a1, a1, 32
-	add	a0, a0, a1
-	slli	a1, a2, 32
-	add.uw	a1, a2, a1
+	add.uw	a1, a3, a2
 	and	a0, a0, a1
 	ret
 

@@ -1,10 +1,10 @@
 func000000000000008c:
 	zext.b	a1, a1
 	zext.b	a0, a0
-	sltiu	a2, a0, 5
-	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	sltiu	a0, a0, 5
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 
 func000000000000002c:

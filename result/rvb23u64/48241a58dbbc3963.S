@@ -47,9 +47,9 @@ func0000000000000034:
 func0000000000000014:
 	srliw	a1, a1, 9
 	slli	a1, a1, 9
+	lui	a2, 244141
 	or	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	sltu	a0, a0, a1
 	ret
 

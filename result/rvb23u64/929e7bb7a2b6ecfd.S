@@ -7,9 +7,9 @@ func000000000000007b:
 	ret
 
 func0000000000000040:
-	sub	a2, a2, a0
 	lui	a3, 1
 	addi	a3, a3, 904
+	sub	a2, a2, a0
 	sub	a3, a3, a1
 	minu	a1, a3, a2
 	add	a0, a0, a1
@@ -64,32 +64,32 @@ func0000000000000029:
 	ret
 
 func000000000000005c:
-	sub	a2, a2, a0
 	li	a3, 2
+	sub	a2, a2, a0
 	sub	a3, a3, a1
 	minu	a1, a3, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000018:
-	sub	a2, a2, a0
 	lui	a3, 1
+	sub	a2, a2, a0
 	sub	a3, a3, a1
 	minu	a1, a3, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000058:
-	sub	a2, a2, a0
 	li	a3, 64
+	sub	a2, a2, a0
 	sub	a3, a3, a1
 	minu	a1, a3, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	sub	a2, a2, a0
 	li	a3, 16
+	sub	a2, a2, a0
 	sub	a3, a3, a1
 	minu	a1, a3, a2
 	add	a0, a0, a1

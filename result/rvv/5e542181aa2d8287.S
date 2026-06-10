@@ -14,8 +14,8 @@ func0000000000000003:
 	lui	a0, 1036757
 	addi	a0, a0, 1811
 	vmacc.vx	v10, a0, v8
-	lui	a0, 524287
 	vsrl.vi	v8, v10, 8
+	lui	a0, 524287
 	slli	a0, a0, 25
 	vand.vx	v8, v8, a0
 	ret

@@ -13,10 +13,10 @@ func0000000000000000:
 	vmv1r.v	v11, v0
 	lui	a0, 3
 	bseti	a1, a0, 43
-	addi	a0, a0, 8
 	vmv.v.x	v12, a1
-	bseti	a0, a0, 43
 	vmv1r.v	v0, v10
+	addi	a0, a0, 8
+	bseti	a0, a0, 43
 	vmerge.vxm	v12, v12, a0, v0
 	vmv1r.v	v0, v11
 	vor.vv	v8, v8, v12, v0.t

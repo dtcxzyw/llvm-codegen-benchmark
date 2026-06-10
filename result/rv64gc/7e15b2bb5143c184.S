@@ -8,11 +8,11 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	sraiw	a3, a2, 31
-	srliw	a3, a3, 26
-	add	a2, a2, a3
-	sraiw	a2, a2, 6
 	mul	a0, a0, a1
-	addw	a0, a0, a2
+	sraiw	a1, a2, 31
+	srliw	a1, a1, 26
+	add	a1, a1, a2
+	sraiw	a1, a1, 6
+	addw	a0, a0, a1
 	ret
 

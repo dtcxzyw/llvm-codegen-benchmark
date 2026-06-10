@@ -8,9 +8,9 @@ func000000000000000c:
 	ret
 
 func000000000000001c:
-	andi	a1, a1, 1
 	li	a3, 64
 	sub	a3, a3, a2
+	andi	a1, a1, 1
 	addi	a2, a3, -60
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 60
@@ -18,10 +18,10 @@ func000000000000001c:
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 1
 	li	a3, 30
 	sub	a3, a3, a2
 	zext.w	a3, a3
+	andi	a1, a1, 1
 	addi	a3, a3, -30
 	czero.nez	a1, a3, a1
 	addi	a1, a1, 30

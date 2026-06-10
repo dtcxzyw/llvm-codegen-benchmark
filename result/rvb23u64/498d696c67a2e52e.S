@@ -36,8 +36,8 @@ func0000000000000101:
 func0000000000000034:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	srli	a0, a0, 32
 	xor	a1, a1, a2
+	srli	a0, a0, 32
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -62,8 +62,8 @@ func0000000000000d04:
 func0000000000000834:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	srli	a0, a0, 32
 	xor	a1, a1, a2
+	srli	a0, a0, 32
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

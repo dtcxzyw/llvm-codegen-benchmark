@@ -1,20 +1,20 @@
 func0000000000000002:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf8	v10, v8
 	lui	a0, 32
 	addi	a0, a0, 517
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vzext.vf8	v10, v8
 	vmv.v.x	v8, a0
 	vsrl.vv	v8, v8, v10
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf8	v10, v8
 	lui	a0, 96
 	addi	a0, a0, 1540
-	vmv.v.x	v8, a0
-	vsrl.vv	v8, v8, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
+	vzext.vf8	v12, v8
+	vsrl.vv	v8, v10, v12
 	ret
 

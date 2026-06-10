@@ -1,8 +1,8 @@
 func0000000000000002:
-	fli.d	fa5, 1.0
 	li	a0, 971
-	fmin.d	fa5, fa0, fa5
+	fli.d	fa5, 1.0
 	slli	a0, a0, 52
+	fmin.d	fa5, fa0, fa5
 	fmv.d.x	fa4, a0
 	fmul.d	fa0, fa5, fa4
 	ret
@@ -15,8 +15,8 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	fmv.d	fa5, fa0
 	fmv.d.x	fa4, zero
+	fmv.d	fa5, fa0
 	fle.d	a0, fa0, fa4
 	fli.d	fa0, 1.5
 	bnez	a0, .LBB2_2

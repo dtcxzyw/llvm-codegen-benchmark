@@ -6,10 +6,10 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v10, v10, 13
 	lui	a0, 1044188
 	addi	a0, a0, -265
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v10, v10, 13
 	vrsub.vx	v8, v8, a0
 	vxor.vv	v8, v8, v10
 	ret

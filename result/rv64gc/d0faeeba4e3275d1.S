@@ -1,7 +1,7 @@
 func00000000000000ea:
 	andi	a1, a1, 1
-	andi	a0, a0, 31
 	addi	a1, a1, -1
+	andi	a0, a0, 31
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	sgtz	a0, a0
@@ -9,8 +9,8 @@ func00000000000000ea:
 
 func000000000000004a:
 	andi	a1, a1, 1
-	andi	a0, a0, 31
 	addi	a1, a1, -1
+	andi	a0, a0, 31
 	and	a1, a1, a2
 	subw	a0, a0, a1
 	sgtz	a0, a0

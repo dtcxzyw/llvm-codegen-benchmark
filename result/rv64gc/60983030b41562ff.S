@@ -1,11 +1,11 @@
 func000000000000003f:
-	li	a0, 1092
-	sub	a0, a0, a1
-	lui	a1, 45475
-	addi	a1, a1, -1085
-	slli	a1, a1, 12
-	addi	a1, a1, -315
-	sll	a0, a1, a0
+	lui	a0, 45475
+	addi	a0, a0, -1085
+	li	a2, 1092
+	slli	a0, a0, 12
+	sub	a2, a2, a1
+	addi	a0, a0, -315
+	sll	a0, a0, a2
 	ret
 
 func000000000000002d:

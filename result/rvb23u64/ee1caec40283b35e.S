@@ -4,11 +4,11 @@ func0000000000000635:
 	sltu	a3, a3, a2
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
-	lui	a3, 983055
 	or	a1, a1, a2
 	add	a0, a0, a1
+	lui	a1, 983055
 	slli	a0, a0, 16
-	slli	a3, a3, 4
-	add	a0, a0, a3
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	ret
 

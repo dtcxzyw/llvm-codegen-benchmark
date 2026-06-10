@@ -1,9 +1,9 @@
 func000000000000000a:
 	fli.d	fa5, -1.0
-	lui	a1, 15621
 	fadd.d	fa5, fa0, fa5
-	slli	a1, a1, 36
+	lui	a1, 15621
 	fabs.d	fa5, fa5
+	slli	a1, a1, 36
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4
 	and	a0, a0, a1

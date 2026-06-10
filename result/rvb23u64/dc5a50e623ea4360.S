@@ -1,54 +1,54 @@
 func0000000000000000:
+	lui	a1, 986895
 	rev8	a0, a0
-	lui	a1, 61681
-	srli	a2, a0, 36
-	addi	a1, a1, -241
+	addi	a1, a1, 240
+	srli	a2, a0, 28
 	and	a1, a1, a2
-	lui	a2, 986895
-	srli	a0, a0, 28
-	addi	a2, a2, 240
+	lui	a2, 61681
+	srli	a0, a0, 36
+	addi	a2, a2, -241
 	and	a0, a0, a2
-	lui	a2, 209715
-	addi	a2, a2, 819
-	sext.w	a0, a0
+	sext.w	a1, a1
 	or	a0, a0, a1
-	srli	a1, a0, 2
-	and	a0, a0, a2
-	and	a1, a1, a2
-	lui	a2, 349525
-	addi	a2, a2, 1365
+	lui	a1, 209715
+	srli	a2, a0, 2
+	addi	a1, a1, 819
+	and	a2, a2, a1
+	and	a0, a0, a1
 	slliw	a0, a0, 2
-	or	a0, a0, a1
-	srli	a1, a0, 1
-	and	a0, a0, a2
+	lui	a1, 349525
+	or	a0, a0, a2
+	addi	a1, a1, 1365
+	srli	a2, a0, 1
+	and	a0, a0, a1
 	and	a1, a1, a2
 	slliw	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
+	lui	a1, 986895
 	rev8	a0, a0
-	lui	a1, 61681
-	srli	a2, a0, 36
-	addi	a1, a1, -241
+	addi	a1, a1, 240
+	srli	a2, a0, 28
 	and	a1, a1, a2
-	lui	a2, 986895
-	srli	a0, a0, 28
-	addi	a2, a2, 240
+	lui	a2, 61681
+	srli	a0, a0, 36
+	addi	a2, a2, -241
 	and	a0, a0, a2
-	lui	a2, 209715
-	addi	a2, a2, 819
-	sext.w	a0, a0
+	sext.w	a1, a1
 	or	a0, a0, a1
-	srli	a1, a0, 2
-	and	a0, a0, a2
-	and	a1, a1, a2
-	lui	a2, 349525
-	addi	a2, a2, 1365
+	lui	a1, 209715
+	srli	a2, a0, 2
+	addi	a1, a1, 819
+	and	a2, a2, a1
+	and	a0, a0, a1
 	slliw	a0, a0, 2
-	or	a0, a0, a1
-	srli	a1, a0, 1
-	and	a0, a0, a2
+	lui	a1, 349525
+	or	a0, a0, a2
+	addi	a1, a1, 1365
+	srli	a2, a0, 1
+	and	a0, a0, a1
 	and	a1, a1, a2
 	slliw	a0, a0, 1
 	or	a0, a0, a1

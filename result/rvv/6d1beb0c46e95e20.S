@@ -1,8 +1,8 @@
 func000000000000003c:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v12, v12, 12
 	lui	a0, 1
 	addi	a0, a0, -64
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsll.vi	v12, v12, 12
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v10, v8, v10

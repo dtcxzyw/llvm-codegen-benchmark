@@ -1,8 +1,8 @@
 func00000000000000f5:
+	li	a3, 90
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 90
 	slli	a1, a1, 4
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

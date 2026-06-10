@@ -11,9 +11,9 @@ func0000000000000062:
 	vle64.v	v24, (a0)
 	vmflt.vv	v7, v24, v16
 	vmflt.vv	v6, v16, v24
-	vmor.mm	v24, v6, v7
-	vmflt.vv	v25, v8, v16
-	vmand.mm	v0, v25, v24
+	vmflt.vv	v24, v8, v16
+	vmor.mm	v8, v6, v7
+	vmand.mm	v0, v24, v8
 	ret
 
 func0000000000000024:

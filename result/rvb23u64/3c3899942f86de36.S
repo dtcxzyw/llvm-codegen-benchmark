@@ -20,8 +20,8 @@ func000000000000000e:
 	slli	a2, a2, 29
 	bseti	a3, zero, 32
 	sub	a2, a2, a3
-	srai	a2, a2, 32
 	sh3add	a0, a1, a0
+	srai	a2, a2, 32
 	sh3add	a0, a2, a0
 	ret
 

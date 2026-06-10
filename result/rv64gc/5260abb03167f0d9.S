@@ -2,12 +2,12 @@ func0000000000006302:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a0, a0, a3
-	and	a1, a1, a3
 	and	a2, a2, a3
-	lui	a3, 14
-	xor	a2, a2, a3
-	snez	a1, a1
+	lui	a4, 14
+	and	a1, a1, a3
+	xor	a2, a2, a4
 	snez	a2, a2
+	snez	a1, a1
 	and	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -48,8 +48,8 @@ func0000000000002102:
 	and	a1, a1, a4
 	and	a2, a2, a4
 	addi	a4, a3, -49
-	addi	a3, a3, -7
 	sltu	a2, a2, a4
+	addi	a3, a3, -7
 	sltu	a1, a1, a3
 	addi	a0, a0, -13
 	and	a1, a1, a2

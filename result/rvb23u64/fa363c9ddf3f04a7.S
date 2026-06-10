@@ -1,34 +1,34 @@
 func0000000000008090:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	lui	a3, 1
 	addi	a4, a3, -816
-	seqz	a1, a1
 	addi	a3, a3, -1640
 	sltu	a2, a4, a2
 	sltu	a0, a3, a0
+	seqz	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000c082:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
-	snez	a2, a2
 	addi	a1, a1, -128
 	addi	a0, a0, -4
 	seqz	a1, a1
 	seqz	a0, a0
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000004202:
+	zext.h	a2, a2
 	zext.h	a0, a0
 	zext.h	a1, a1
-	zext.h	a2, a2
 	sltiu	a2, a2, 26
 	sltiu	a1, a1, 10
 	addi	a0, a0, -95
@@ -38,21 +38,21 @@ func0000000000004202:
 	ret
 
 func0000000000001202:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	addi	a2, a2, -31
-	sltiu	a1, a1, 256
 	addi	a0, a0, -31
 	seqz	a2, a2
 	seqz	a0, a0
+	sltiu	a1, a1, 256
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000004208:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	sltiu	a2, a2, 71
 	sltiu	a1, a1, 8
@@ -62,8 +62,8 @@ func0000000000004208:
 	ret
 
 func0000000000004210:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	sltiu	a2, a2, 49
 	sltiu	a1, a1, 7
@@ -73,31 +73,31 @@ func0000000000004210:
 	ret
 
 func0000000000004082:
-	zext.h	a0, a0
-	zext.h	a1, a1
-	zext.h	a2, a2
 	lui	a3, 4
+	zext.h	a1, a1
 	addi	a3, a3, -1280
 	xor	a1, a1, a3
 	lui	a3, 2
-	sltiu	a2, a2, 31
+	zext.h	a0, a0
 	addi	a3, a3, 784
+	zext.h	a2, a2
 	xor	a0, a0, a3
 	seqz	a1, a1
 	seqz	a0, a0
+	sltiu	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000004088:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	lui	a3, 2
 	sltiu	a2, a2, 5
 	addi	a3, a3, 12
-	sltiu	a0, a0, 4
 	xor	a1, a1, a3
+	sltiu	a0, a0, 4
 	seqz	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1

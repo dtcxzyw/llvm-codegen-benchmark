@@ -1,6 +1,6 @@
 func0000000000000084:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -48
 	sltiu	a1, a1, 10
 	sltiu	a0, a0, 26
@@ -18,8 +18,8 @@ func000000000000008c:
 	ret
 
 func0000000000000484:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -3
 	sltiu	a1, a1, 10
 	sltiu	a0, a0, 2

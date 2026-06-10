@@ -20,9 +20,9 @@ func0000000000000042:
 	ret
 
 func0000000000000022:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v12, v8
-	fmv.w.x	fa5, zero
 	vmflt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret

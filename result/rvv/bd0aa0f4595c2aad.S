@@ -1,10 +1,10 @@
 func00000000000000ff:
-	li	a0, 63
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
 	lui	a0, 1
 	addi	a0, a0, -496
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
+	li	a0, 63
+	vand.vx	v12, v12, a0
 	li	a0, 60
 	vmacc.vx	v10, a0, v12
 	vadd.vv	v8, v10, v8

@@ -8,9 +8,9 @@ func0000000000000000:
 	ret
 
 func0000000000000054:
+	li	a3, -400
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, -400
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	li	a1, 365
 	mulw	a0, a0, a1
@@ -18,8 +18,8 @@ func0000000000000054:
 
 func0000000000000045:
 	slli	a3, a2, 6
-	add	a0, a0, a1
 	sub	a3, a3, a2
+	add	a0, a0, a1
 	add	a0, a0, a3
 	slli	a1, a0, 1
 	slli	a0, a0, 6
@@ -35,9 +35,9 @@ func0000000000000055:
 	ret
 
 func0000000000000010:
+	li	a3, -1000
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, -1000
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	li	a1, 41
 	mulw	a0, a0, a1

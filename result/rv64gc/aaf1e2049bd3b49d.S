@@ -1,6 +1,6 @@
 func0000000000000086:
-	srli	a1, a1, 8
 	li	a2, 125
+	srli	a1, a1, 8
 	bltu	a1, a2, .LBB0_2
 	li	a1, 4
 	li	a2, 128

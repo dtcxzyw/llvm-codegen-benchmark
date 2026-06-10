@@ -1,6 +1,6 @@
 func000000000000000a:
-	sh2add	a0, a0, a0
 	lui	a1, 877240
+	sh2add	a0, a0, a0
 	addi	a0, a0, 2
 	addi	a1, a1, 215
 	slli	a1, a1, 32

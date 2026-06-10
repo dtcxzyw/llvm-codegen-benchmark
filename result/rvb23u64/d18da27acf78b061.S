@@ -1,36 +1,36 @@
 func0000000000000010:
+	li	a3, -19
+	mul	a0, a0, a3
+	lui	a3, 1048538
 	sub	a1, a1, a2
-	li	a2, -19
-	mul	a0, a0, a2
-	lui	a2, 1048538
+	srli	a3, a3, 12
+	add	a1, a1, a3
 	add	a0, a0, a1
-	srli	a2, a2, 12
-	add	a0, a0, a2
 	ret
 
 func0000000000000055:
+	li	a3, -19
+	mul	a0, a0, a3
+	lui	a3, 1048538
 	sub	a1, a1, a2
-	li	a2, -19
-	mul	a0, a0, a2
-	lui	a2, 1048538
+	srli	a3, a3, 12
+	add	a1, a1, a3
 	add	a0, a0, a1
-	srli	a2, a2, 12
-	add	a0, a0, a2
 	ret
 
 func0000000000000075:
+	li	a3, -19
+	mul	a0, a0, a3
+	lui	a3, 1048538
 	sub	a1, a1, a2
-	li	a2, -19
-	mul	a0, a0, a2
-	lui	a2, 1048538
+	srli	a3, a3, 11
+	add	a1, a1, a3
 	add	a0, a0, a1
-	srli	a2, a2, 11
-	add	a0, a0, a2
 	ret
 
 func0000000000000030:
-	sub	a1, a1, a2
 	sh3add	a0, a0, a0
+	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret

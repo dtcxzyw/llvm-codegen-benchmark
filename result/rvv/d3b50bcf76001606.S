@@ -9,12 +9,12 @@ func0000000000000000:
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
-	fld	fa3, %lo(.LCPI0_2)(a0)
 	vfmacc.vf	v24, fa5, v16
-	vfmacc.vf	v24, fa4, v8
-	vfadd.vf	v8, v24, fa3
+	lui	a0, %hi(.LCPI0_1)
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfmacc.vf	v24, fa5, v8
+	lui	a0, %hi(.LCPI0_2)
+	fld	fa5, %lo(.LCPI0_2)(a0)
+	vfadd.vf	v8, v24, fa5
 	ret
 

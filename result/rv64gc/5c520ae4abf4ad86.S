@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 3
 	li	a1, 64
+	slli	a0, a0, 3
 	sub	a1, a1, a0
 	slli	a0, a1, 32
 	srli	a0, a0, 32

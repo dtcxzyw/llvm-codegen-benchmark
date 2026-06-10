@@ -6,9 +6,9 @@ func000000000000000f:
 	ret
 
 func0000000000000000:
+	lui	a2, 286655
 	add	a0, a0, a1
-	lui	a1, 286655
-	addi	a1, a1, -1725
+	addi	a1, a2, -1725
 	mulw	a0, a0, a1
 	ret
 
@@ -20,16 +20,16 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
+	lui	a2, 13
 	add	a0, a0, a1
-	lui	a1, 13
-	addi	a1, a1, -657
+	addi	a1, a2, -657
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000001:
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -1431
+	addi	a1, a2, -1431
 	mulw	a0, a0, a1
 	ret
 

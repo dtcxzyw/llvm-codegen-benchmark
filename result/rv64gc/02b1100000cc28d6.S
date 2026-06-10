@@ -17,11 +17,11 @@ func0000000000000010:
 	ret
 
 func0000000000000004:
-	add	a2, a2, a1
 	srli	a3, a1, 48
-	slli	a1, a1, 16
-	or	a1, a1, a3
-	xor	a1, a1, a2
+	slli	a4, a1, 16
+	add	a1, a1, a2
+	or	a3, a3, a4
+	xor	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

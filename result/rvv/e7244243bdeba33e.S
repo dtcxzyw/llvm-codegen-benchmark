@@ -1,7 +1,7 @@
 func00000000000000e1:
+	li	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsra.vi	v11, v10, 31
-	li	a0, 1
 	vsrl.vi	v11, v11, 23
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 9
@@ -13,9 +13,9 @@ func00000000000000e1:
 	ret
 
 func00000000000000ec:
+	li	a0, 1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsra.vi	v11, v10, 31
-	li	a0, 1
 	vsrl.vi	v11, v11, 27
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 5

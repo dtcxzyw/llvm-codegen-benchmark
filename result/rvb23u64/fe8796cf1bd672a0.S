@@ -1,6 +1,6 @@
 func0000000000000028:
-	czero.eqz	a1, a1, a2
 	bseti	a3, zero, 11
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a1, a0
@@ -90,11 +90,11 @@ func0000000000000141:
 	lui	a3, 281475
 	slli	a3, a3, 3
 	addi	a3, a3, -765
+	li	a4, -1
 	slt	a2, a3, a2
-	li	a3, -1
-	srli	a3, a3, 1
+	srli	a4, a4, 1
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
+	czero.eqz	a2, a4, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -104,11 +104,11 @@ func0000000000000306:
 	lui	a3, 281475
 	slli	a3, a3, 3
 	addi	a3, a3, -765
+	li	a4, -1
 	sltu	a2, a3, a2
-	li	a3, -1
-	srli	a3, a3, 1
+	srli	a4, a4, 1
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
+	czero.eqz	a2, a4, a2
 	or	a1, a1, a2
 	slt	a0, a0, a1
 	ret
@@ -141,10 +141,10 @@ func0000000000000301:
 	ret
 
 func00000000000000c1:
-	slti	a2, a2, 1
 	li	a3, -1
-	czero.nez	a1, a1, a2
+	slti	a2, a2, 1
 	srli	a3, a3, 1
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1

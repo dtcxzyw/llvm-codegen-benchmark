@@ -1,8 +1,8 @@
 func0000000000000308:
-	slli	a0, a0, 32
 	li	a1, 1
-	srli	a0, a0, 32
+	slli	a0, a0, 32
 	slli	a1, a1, 34
+	srli	a0, a0, 32
 	addi	a1, a1, -12
 	add	a0, a0, a1
 	srli	a0, a0, 2
@@ -12,8 +12,8 @@ func0000000000000308:
 	ret
 
 func0000000000000301:
-	slli	a0, a0, 32
 	lui	a1, 524288
+	slli	a0, a0, 32
 	srli	a0, a0, 32
 	srli	a1, a1, 29
 	add	a0, a0, a1
@@ -23,8 +23,8 @@ func0000000000000301:
 	ret
 
 func000000000000030a:
-	slli	a0, a0, 32
 	lui	a1, 524288
+	slli	a0, a0, 32
 	srli	a0, a0, 32
 	srli	a1, a1, 29
 	add	a0, a0, a1

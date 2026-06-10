@@ -7,16 +7,16 @@ func0000000000000055:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 3
 	addi	a0, a0, 7
+	slli	a1, a1, 3
 	andi	a0, a0, -8
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func00000000000000cc:
-	slli	a1, a1, 3
 	addi	a0, a0, 7
+	slli	a1, a1, 3
 	andi	a0, a0, -8
 	add	a0, a0, a1
 	addi	a0, a0, 16

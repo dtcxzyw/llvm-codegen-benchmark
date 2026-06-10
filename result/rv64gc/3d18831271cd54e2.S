@@ -167,8 +167,8 @@ func0000000000000318:
 func0000000000000284:
 	srliw	a1, a1, 14
 	beqz	a1, .LBB13_2
-	sext.w	a2, a2
 	lui	a0, 3
+	sext.w	a2, a2
 	addi	a0, a0, 1946
 	sltu	a0, a2, a0
 	addi	a0, a0, -1
@@ -179,8 +179,8 @@ func0000000000000284:
 func00000000000000c4:
 	srliw	a1, a1, 14
 	beqz	a1, .LBB14_2
-	sext.w	a2, a2
 	lui	a0, 1048574
+	sext.w	a2, a2
 	addi	a0, a0, -516
 	slt	a0, a2, a0
 	addi	a0, a0, -1

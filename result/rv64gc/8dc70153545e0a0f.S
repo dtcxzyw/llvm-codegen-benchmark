@@ -1,16 +1,16 @@
 func0000000000000488:
-	sext.w	a0, a0
-	srli	a2, a1, 8
-	lui	a3, 16
+	lui	a2, 16
+	srli	a3, a1, 8
+	addi	a2, a2, -256
+	and	a3, a3, a2
 	srliw	a4, a1, 24
-	addi	a3, a3, -256
-	and	a2, a2, a3
-	and	a3, a3, a1
+	and	a2, a2, a1
+	slli	a2, a2, 8
 	slliw	a1, a1, 24
-	or	a2, a2, a4
-	slli	a3, a3, 8
-	or	a1, a1, a3
+	or	a3, a3, a4
 	or	a1, a1, a2
+	or	a1, a1, a3
+	sext.w	a0, a0
 	sltiu	a1, a1, 8
 	not	a1, a1
 	sltiu	a0, a0, 16
@@ -18,20 +18,20 @@ func0000000000000488:
 	ret
 
 func0000000000000428:
+	lui	a2, 16
+	srli	a3, a1, 8
+	addi	a2, a2, -256
 	sext.w	a0, a0
-	srli	a2, a1, 8
-	lui	a3, 16
+	and	a3, a3, a2
 	srliw	a4, a1, 24
-	addi	a3, a3, -256
-	and	a2, a2, a3
-	and	a3, a3, a1
+	and	a2, a2, a1
+	slli	a2, a2, 8
 	slliw	a1, a1, 24
-	or	a2, a2, a4
-	lui	a4, 4
-	slli	a3, a3, 8
-	or	a1, a1, a3
+	or	a3, a3, a4
 	or	a1, a1, a2
-	sltu	a1, a4, a1
+	or	a1, a1, a3
+	lui	a2, 4
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

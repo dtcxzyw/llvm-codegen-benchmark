@@ -31,12 +31,12 @@ func000000000000001b:
 	ret
 
 func0000000000000004:
-	srli	a2, a2, 1
+	li	a3, -1
 	add	a0, a0, a1
-	li	a1, -1
+	srli	a2, a2, 1
+	slli	a3, a3, 63
 	add	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a1, a1, 63
+	addi	a1, a3, 63
 	and	a0, a0, a1
 	ret
 

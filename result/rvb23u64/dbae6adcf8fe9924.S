@@ -39,8 +39,8 @@ func000000000000003b:
 	ret
 
 func000000000000003f:
-	andi	a1, a1, -2
 	sh1add	a0, a0, a0
+	andi	a1, a1, -2
 	sh2add	a0, a0, a1
 	addi	a0, a0, 100
 	ret

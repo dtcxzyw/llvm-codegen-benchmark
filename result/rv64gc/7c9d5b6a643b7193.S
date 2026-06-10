@@ -49,8 +49,8 @@ func0000000000000281:
 
 func000000000000018c:
 	andi	a2, a2, 31
-	xor	a0, a0, a1
 	addi	a2, a2, -16
+	xor	a0, a0, a1
 	snez	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -117,8 +117,8 @@ func0000000000000141:
 
 func00000000000000e1:
 	lui	a3, 8192
-	slt	a0, a1, a0
 	and	a2, a2, a3
+	slt	a0, a1, a0
 	seqz	a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1

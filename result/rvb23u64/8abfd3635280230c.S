@@ -46,10 +46,10 @@ func0000000000000178:
 	ret
 
 func000000000000007a:
+	li	a3, -1
+	slli	a3, a3, 32
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	orn	a1, a1, a2
+	orn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 
@@ -69,18 +69,18 @@ func0000000000000140:
 	ret
 
 func0000000000000040:
+	li	a3, -1
+	slli	a3, a3, 32
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	orn	a1, a1, a2
+	orn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000006a:
+	li	a3, -1
+	slli	a3, a3, 32
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	orn	a1, a1, a2
+	orn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 

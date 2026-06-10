@@ -18,8 +18,8 @@ func0000000000000004:
 	addi	a1, a0, -1945
 	vmerge.vxm	v10, v10, a1, v0
 	addi	a1, a0, -1851
-	addi	a0, a0, -1855
 	vmv.v.x	v12, a1
+	addi	a0, a0, -1855
 	vmerge.vxm	v12, v12, a0, v0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsleu.vi	v0, v8, 4

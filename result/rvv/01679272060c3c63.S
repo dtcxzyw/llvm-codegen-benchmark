@@ -1,7 +1,7 @@
 func0000000000000028:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrev8.v	v8, v8
-	li	a0, 31
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -12,17 +12,17 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vrev8.v	v8, v8
 	lui	a0, 520192
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vrev8.v	v8, v8
 	vmsgt.vx	v0, v8, a0
 	ret
 
 func0000000000000038:
+	li	a0, 112
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrev8.v	v8, v8
-	li	a0, 112
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -40,17 +40,17 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vrev8.v	v8, v8
 	lui	a0, 16
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vrev8.v	v8, v8
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000034:
+	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrev8.v	v8, v8
-	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	ret
 

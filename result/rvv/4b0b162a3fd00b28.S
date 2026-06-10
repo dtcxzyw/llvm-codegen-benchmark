@@ -5,8 +5,8 @@ func0000000000000042:
 	addi	a0, a0, 1981
 	fmv.w.x	fa5, a0
 	lui	a0, 260096
-	addi	a0, a0, -17
 	vfmax.vf	v8, v8, fa5
+	addi	a0, a0, -17
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret

@@ -1,9 +1,9 @@
 func0000000000000064:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 4
@@ -11,11 +11,11 @@ func0000000000000064:
 	ret
 
 func0000000000000068:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 5
@@ -23,11 +23,11 @@ func0000000000000068:
 	ret
 
 func0000000000000061:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 2
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 4
@@ -36,11 +36,11 @@ func0000000000000061:
 	ret
 
 func0000000000000024:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 32
@@ -48,11 +48,11 @@ func0000000000000024:
 	ret
 
 func000000000000006c:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 5
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 3
@@ -74,11 +74,11 @@ func0000000000000065:
 	ret
 
 func0000000000000021:
+	lui	a3, 838861
+	addi	a3, a3, -819
 	sub	a1, a1, a2
-	lui	a2, 838861
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -819
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 32
@@ -87,11 +87,11 @@ func0000000000000021:
 	ret
 
 func0000000000000066:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 4
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 32
@@ -109,11 +109,11 @@ func0000000000000048:
 	ret
 
 func000000000000006b:
+	lui	a3, 748983
+	addi	a3, a3, -585
 	sub	a1, a1, a2
-	lui	a2, 748983
+	slli	a2, a3, 33
 	srai	a1, a1, 5
-	addi	a2, a2, -585
-	slli	a3, a2, 33
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 32

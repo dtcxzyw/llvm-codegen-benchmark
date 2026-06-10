@@ -18,8 +18,8 @@ func0000000000000005:
 
 func0000000000000023:
 	srliw	a2, a2, 18
-	slli	a1, a1, 63
 	snez	a2, a2
+	slli	a1, a1, 63
 	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2

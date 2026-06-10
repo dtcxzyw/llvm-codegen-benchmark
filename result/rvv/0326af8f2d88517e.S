@@ -17,9 +17,9 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
+	lui	a0, 847872
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vfwcvt.f.x.v	v16, v12
-	lui	a0, 847872
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v16
 	fmv.w.x	fa5, a0
@@ -28,9 +28,9 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
+	lui	a0, 323584
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vfwcvt.f.x.v	v16, v12
-	lui	a0, 323584
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v16
 	fmv.w.x	fa5, a0

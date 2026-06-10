@@ -17,8 +17,8 @@ func0000000000000002:
 	lui	a0, %hi(.promoted_doubles.func0000000000000002)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000002)
 	fld	fa4, 0(a0)
-	fld	fa0, 8(a0)
 	fli.d	fa3, 3.0
+	fld	fa0, 8(a0)
 	fmadd.d	fa5, fa5, fa3, fa4
 	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB1_2

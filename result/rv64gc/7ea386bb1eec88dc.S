@@ -12,13 +12,13 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
+	li	a2, 1
 	sub	a1, a1, a0
-	li	a0, 1
+	slli	a2, a2, 36
 	addi	a1, a1, 16
-	slli	a0, a0, 36
-	addi	a0, a0, -16
-	and	a0, a0, a1
-	snez	a0, a0
+	addi	a2, a2, -16
+	and	a1, a1, a2
+	snez	a0, a1
 	ret
 
 func0000000000000001:

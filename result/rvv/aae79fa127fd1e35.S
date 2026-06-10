@@ -1,8 +1,8 @@
 func00000000000000e1:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
 	lui	a0, 349525
 	addi	a0, a0, 1366
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v12, v10, 0
 	vmulh.vx	v10, v12, a0
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v12, v10, v11

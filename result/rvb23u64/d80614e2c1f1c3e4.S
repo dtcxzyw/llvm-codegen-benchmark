@@ -1,6 +1,6 @@
 func000000000000006f:
-	addi	a1, a1, 55
 	lui	a2, 524288
+	addi	a1, a1, 55
 	srli	a2, a2, 28
 	and	a1, a1, a2
 	slli.uw	a0, a0, 4

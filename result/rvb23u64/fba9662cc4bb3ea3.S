@@ -1,6 +1,6 @@
 func0000000000000002:
-	addi	a1, a1, -1
 	lui	a2, 349525
+	addi	a1, a1, -1
 	addi	a2, a2, 1365
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -31,8 +31,8 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	addi	a1, a1, 7
 	lui	a2, 8192
+	addi	a1, a1, 7
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -81,8 +81,8 @@ func0000000000000009:
 	ret
 
 func000000000000000e:
-	addi	a1, a1, 75
 	lui	a2, 262144
+	addi	a1, a1, 75
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	addw	a0, a0, a1

@@ -17,19 +17,19 @@ func0000000000000054:
 func0000000000000050:
 	addi	a2, a2, 7
 	li	a3, -15
-	slli	a1, a1, 3
 	srli	a3, a3, 1
+	slli	a1, a1, 3
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func00000000000000ff:
-	addi	a2, a2, 7
 	li	a3, 1
-	slli	a1, a1, 3
+	addi	a2, a2, 7
 	slli	a3, a3, 35
 	addi	a3, a3, -8
+	slli	a1, a1, 3
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

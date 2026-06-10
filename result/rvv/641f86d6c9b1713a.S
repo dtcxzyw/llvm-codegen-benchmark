@@ -6,11 +6,11 @@ func0000000000000008:
 	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 40
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 5
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 40
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 
 func000000000000000b:
@@ -21,10 +21,10 @@ func000000000000000b:
 	addi	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 20
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v10, v8, 4
-	vmv.v.x	v8, a1
-	vmacc.vx	v8, a1, v10
+	li	a0, 20
+	vmv.v.x	v8, a0
+	vmacc.vx	v8, a0, v10
 	ret
 

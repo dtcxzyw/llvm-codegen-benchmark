@@ -1,8 +1,8 @@
 func0000000000000015:
-	sext.w	a1, a1
 	li	a2, -24
-	sh1add	a1, a1, a1
 	mul	a0, a0, a2
+	sext.w	a1, a1
+	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	ret
 

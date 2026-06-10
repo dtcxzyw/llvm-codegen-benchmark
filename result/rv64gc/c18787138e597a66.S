@@ -1,6 +1,6 @@
 func00000000000000e4:
-	zext.b	a0, a0
 	li	a2, 160
+	zext.b	a0, a0
 	bltu	a0, a2, .LBB0_2
 	addi	a0, a1, 55
 	ret
@@ -9,8 +9,8 @@ func00000000000000e4:
 	ret
 
 func0000000000000024:
-	zext.b	a0, a0
 	li	a2, 8
+	zext.b	a0, a0
 	bltu	a0, a2, .LBB1_2
 	addi	a0, a1, -29
 	ret

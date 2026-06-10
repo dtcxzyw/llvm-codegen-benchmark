@@ -5,8 +5,8 @@ func0000000000000181:
 	ret
 
 func000000000000002c:
-	srli	a1, a1, 2
 	addi	a0, a0, -4
+	srli	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -49,8 +49,8 @@ func00000000000000c1:
 	ret
 
 func000000000000010c:
-	srli	a1, a1, 3
 	sltiu	a0, a0, 3
+	srli	a1, a1, 3
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -72,8 +72,8 @@ func0000000000000141:
 	ret
 
 func0000000000000101:
-	andi	a1, a1, 3
 	sltiu	a0, a0, 256
+	andi	a1, a1, 3
 	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret

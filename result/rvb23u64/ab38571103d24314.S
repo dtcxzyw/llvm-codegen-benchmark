@@ -15,11 +15,11 @@ func0000000000000002:
 
 func0000000000000001:
 	andi	a0, a0, 1
-	slliw	a1, a1, 20
 	li	a2, -2048
+	lui	a3, 1040385
 	czero.nez	a0, a2, a0
-	lui	a2, 1040385
-	addi	a2, a2, -1473
+	addi	a2, a3, -1473
+	slliw	a1, a1, 20
 	add	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 19

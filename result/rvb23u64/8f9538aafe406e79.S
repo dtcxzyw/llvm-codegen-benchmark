@@ -1,6 +1,6 @@
 func0000000000000588:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	zext.b	a2, a2
 	seqz	a2, a2
 	sltiu	a0, a0, 256

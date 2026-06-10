@@ -10,8 +10,8 @@ func000000000000004a:
 func0000000000000045:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
-	lui	a0, 225280
 	vmerge.vvm	v12, v16, v12, v0
+	lui	a0, 225280
 	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
 	vmfle.vv	v16, v8, v12
@@ -30,8 +30,8 @@ func0000000000000022:
 func0000000000000024:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
-	lui	a0, 259686
 	vmerge.vvm	v12, v16, v12, v0
+	lui	a0, 259686
 	addi	a0, a0, 1638
 	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
@@ -41,8 +41,8 @@ func0000000000000024:
 func0000000000000023:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
-	lui	a0, 259277
 	vmerge.vvm	v12, v16, v12, v0
+	lui	a0, 259277
 	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
@@ -53,8 +53,8 @@ func0000000000000023:
 func0000000000000025:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
-	lui	a0, 267776
 	vmerge.vvm	v12, v16, v12, v0
+	lui	a0, 267776
 	fmv.w.x	fa5, a0
 	vfmul.vf	v12, v12, fa5
 	vmfle.vv	v16, v8, v12

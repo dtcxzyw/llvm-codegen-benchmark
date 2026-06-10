@@ -1,8 +1,8 @@
 func0000000000000004:
+	lui	a2, 524288
 	subw	a1, a1, a0
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	sltu	a0, a1, a0
+	addiw	a2, a2, -1
+	sltu	a0, a1, a2
 	ret
 
 func000000000000000a:

@@ -1,8 +1,8 @@
 func000000000000000c:
-	lui	a3, 1
 	slli	a1, a1, 48
-	and	a2, a2, a3
+	lui	a3, 1
 	srli	a1, a1, 48
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -1,17 +1,17 @@
 func0000000000000003:
-	andi	a2, a2, 1
 	andi	a1, a1, 1
-	slli	a2, a2, 5
+	andi	a2, a2, 1
 	slli	a1, a1, 3
+	slli	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000000:
+	andi	a4, a2, 1
 	andi	a3, a1, 1
-	andi	a1, a2, 1
 	li	a2, 1
-	bnez	a1, .LBB1_3
+	bnez	a4, .LBB1_3
 	slli	a1, a2, 36
 	beqz	a3, .LBB1_4
 .LBB1_2:
@@ -29,10 +29,10 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	andi	a2, a2, 1
 	andi	a1, a1, 1
-	slli	a2, a2, 21
+	andi	a2, a2, 1
 	slli	a1, a1, 4
+	slli	a2, a2, 21
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -1,8 +1,8 @@
 func0000000000000214:
-	sext.w	a1, a1
-	sh2add	a3, a0, a0
-	sh1add	a2, a3, a2
 	lui	a3, 24
+	sh2add	a4, a0, a0
+	sh1add	a2, a4, a2
+	sext.w	a1, a1
 	addi	a3, a3, -1103
 	addiw	a2, a2, -48
 	sltu	a1, a1, a3

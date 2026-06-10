@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a0, 40975
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
-	lui	a0, 40975
 	vand.vv	v8, v8, v10
 	addi	a0, a0, 63
 	slli	a0, a0, 14

@@ -1,8 +1,8 @@
 func0000000000000142:
-	fadd.s	fa5, fa1, fa0
-	fcvt.s.wu	fa4, a0
-	flt.s	a0, fa0, fa4
-	flt.s	a1, fa4, fa5
+	fcvt.s.wu	fa5, a0
+	fadd.s	fa4, fa1, fa0
+	flt.s	a0, fa0, fa5
+	flt.s	a1, fa5, fa4
 	and	a0, a0, a1
 	ret
 

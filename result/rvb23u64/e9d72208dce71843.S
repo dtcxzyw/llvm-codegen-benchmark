@@ -3,9 +3,9 @@
 func0000000000000025:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	li	a4, 1000
-	mul	a2, a2, a4
 	mulh	a1, a1, a3
+	li	a3, 1000
+	mul	a2, a2, a3
 	srli	a3, a1, 63
 	srai	a1, a1, 7
 	add	a1, a1, a3
@@ -19,9 +19,9 @@ func0000000000000000:
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	lui	a4, 244
-	addi	a4, a4, 576
-	mul	a2, a2, a4
 	mulh	a1, a1, a3
+	addi	a3, a4, 576
+	mul	a2, a2, a3
 	srli	a3, a1, 63
 	srai	a1, a1, 7
 	add	a1, a1, a3

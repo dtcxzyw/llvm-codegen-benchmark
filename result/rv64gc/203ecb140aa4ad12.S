@@ -1,8 +1,8 @@
 func000000000000004c:
-	sraiw	a1, a0, 31
-	andi	a1, a1, -399
-	addw	a0, a0, a1
 	lui	a1, 335544
+	sraiw	a2, a0, 31
+	andi	a2, a2, -399
+	addw	a0, a0, a2
 	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a1, a0, 63
@@ -11,12 +11,12 @@ func000000000000004c:
 	ret
 
 func0000000000000054:
-	sext.w	a1, a0
-	slti	a1, a1, 361
-	addi	a1, a1, -1
-	andi	a1, a1, -360
-	addw	a0, a0, a1
 	lui	a1, 745654
+	sext.w	a2, a0
+	slti	a2, a2, 361
+	addi	a2, a2, -1
+	andi	a2, a2, -360
+	addw	a0, a0, a2
 	addi	a1, a1, 183
 	mul	a1, a0, a1
 	srli	a1, a1, 32

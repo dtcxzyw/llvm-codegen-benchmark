@@ -48,17 +48,17 @@ func0000000000000073:
 	andi	a1, a1, 1
 	bnez	a1, .LBB7_2
 	li	a1, 8
+	li	a2, 19
 	add	a0, a0, a1
-	li	a1, 19
-	slli	a1, a1, 8
-	add	a0, a0, a1
+	slli	a2, a2, 8
+	add	a0, a0, a2
 	ret
 .LBB7_2:
 	lui	a1, 1
 	addi	a1, a1, 24
+	li	a2, 19
 	add	a0, a0, a1
-	li	a1, 19
-	slli	a1, a1, 8
-	add	a0, a0, a1
+	slli	a2, a2, 8
+	add	a0, a0, a2
 	ret
 

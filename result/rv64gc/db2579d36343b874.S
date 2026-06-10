@@ -1,40 +1,40 @@
 func0000000000000002:
-	andi	a0, a0, 1
 	zext.b	a2, a2
+	andi	a0, a0, 1
 	snez	a2, a2
-	addi	a0, a0, -1
 	slli	a2, a2, 5
+	addi	a0, a0, -1
 	or	a1, a1, a2
 	andi	a0, a0, 128
 	or	a0, a0, a1
 	ret
 
 func0000000000000043:
-	andi	a0, a0, 1
 	zext.b	a2, a2
+	andi	a0, a0, 1
 	snez	a2, a2
-	addi	a0, a0, -1
 	slli	a2, a2, 3
+	addi	a0, a0, -1
 	or	a1, a1, a2
 	andi	a0, a0, 16
 	or	a0, a0, a1
 	ret
 
 func0000000000000003:
-	andi	a0, a0, 1
 	zext.b	a2, a2
 	snez	a2, a2
+	andi	a0, a0, 1
 	slli	a2, a2, 30
-	or	a1, a1, a2
-	lui	a2, 65536
 	addi	a0, a0, -1
-	and	a0, a0, a2
+	lui	a3, 65536
+	or	a1, a1, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	slli	a2, a2, 56
+	andi	a0, a0, 1
 	srli	a2, a2, 63
 	addi	a0, a0, -1
 	xori	a2, a2, 1
@@ -45,13 +45,13 @@ func000000000000000c:
 	ret
 
 func0000000000000042:
-	andi	a0, a0, 1
 	zext.b	a2, a2
-	lui	a3, 2
+	andi	a0, a0, 1
 	seqz	a2, a2
-	addi	a3, a3, 65
-	addi	a0, a0, -1
+	lui	a3, 2
 	addi	a2, a2, -1
+	addi	a0, a0, -1
+	addi	a3, a3, 65
 	andi	a0, a0, 65
 	and	a2, a2, a3
 	or	a0, a0, a1

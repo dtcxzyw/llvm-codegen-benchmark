@@ -22,8 +22,8 @@ func000000000000008c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vmsne.vi	v10, v8, 0
-	vmand.mm	v0, v10, v12
+	vmsne.vi	v12, v8, 0
+	vmsltu.vx	v8, v10, a0
+	vmand.mm	v0, v12, v8
 	ret
 

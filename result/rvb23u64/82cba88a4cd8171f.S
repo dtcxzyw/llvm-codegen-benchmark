@@ -1,11 +1,11 @@
 func0000000000000001:
 	li	a1, -2
+	li	a2, -16
 	sll	a0, a1, a0
-	li	a1, -16
-	zext.w	a1, a1
-	and	a0, a0, a1
-	addi	a1, a1, 14
-	xor	a0, a0, a1
+	zext.w	a2, a2
+	and	a0, a0, a2
+	addi	a2, a2, 14
+	xor	a0, a0, a2
 	ret
 
 .LCPI1_0:

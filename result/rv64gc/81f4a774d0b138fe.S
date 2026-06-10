@@ -15,11 +15,11 @@ func000000000000000f:
 	ret
 
 func0000000000000006:
-	slli	a0, a0, 32
-	srli	a1, a0, 29
-	srli	a0, a0, 27
-	add	a0, a0, a1
 	li	a1, 25
+	slli	a0, a0, 32
+	srli	a2, a0, 29
+	srli	a0, a0, 27
+	add	a0, a0, a2
 	slli	a1, a1, 35
 	or	a0, a0, a1
 	ret

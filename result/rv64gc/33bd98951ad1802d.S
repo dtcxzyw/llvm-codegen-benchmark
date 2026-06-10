@@ -1,6 +1,6 @@
 func0000000000000007:
-	andi	a1, a1, -4
 	sext.w	a0, a0
+	andi	a1, a1, -4
 	slli	a0, a0, 2
 	add	a0, a0, a1
 	ret
@@ -21,8 +21,8 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, -4
 	slli	a0, a0, 32
+	andi	a1, a1, -4
 	srli	a0, a0, 26
 	add	a0, a0, a1
 	ret

@@ -6,9 +6,9 @@ func000000000000001a:
 	ret
 
 func0000000000000030:
-	andi	a1, a1, -64
 	slli	a2, a0, 7
 	slli	a0, a0, 9
+	andi	a1, a1, -64
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -640
@@ -58,9 +58,9 @@ func000000000000003f:
 	ret
 
 func000000000000001e:
-	andi	a1, a1, -16
 	slli	a2, a0, 3
 	slli	a0, a0, 7
+	andi	a1, a1, -16
 	sub	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 512

@@ -8,8 +8,8 @@ func000000000000002a:
 
 func00000000000000f8:
 	sub	a1, a1, a2
-	li	a2, -9
 	srli	a1, a1, 2
+	li	a2, -9
 	add	a0, a0, a1
 	srli	a2, a2, 3
 	sltu	a0, a2, a0

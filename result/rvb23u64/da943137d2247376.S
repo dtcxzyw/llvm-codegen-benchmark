@@ -1,8 +1,8 @@
 func0000000000000018:
-	xor	a0, a0, a1
 	fli.d	fa5, inf
+	feq.d	a2, fa0, fa5
+	xor	a0, a0, a1
 	seqz	a0, a0
-	feq.d	a1, fa0, fa5
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

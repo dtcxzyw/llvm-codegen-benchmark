@@ -13,8 +13,8 @@ func0000000000000009:
 	ret
 
 func0000000000000011:
-	addi	a0, a0, -5
 	li	a1, 255
+	addi	a0, a0, -5
 	sllw	a0, a1, a0
 	slli	a0, a0, 2
 	ret

@@ -24,8 +24,8 @@ func0000000000000014:
 	vmv1r.v	v11, v0
 	li	a0, 256
 	vmv.v.x	v12, a0
-	li	a0, 511
 	vmv1r.v	v0, v10
+	li	a0, 511
 	vmerge.vxm	v12, v12, a0, v0
 	vmsltu.vv	v10, v12, v8
 	vmand.mm	v0, v10, v11

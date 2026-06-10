@@ -11,9 +11,9 @@ func0000000000000002:
 	vsll.vi	v8, v8, 2
 	li	a0, 17
 	vadd.vx	v10, v8, a0
-	li	a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
+	li	a0, 1
 	bseti	a0, a0, 32
 	vmul.vx	v8, v8, a0
 	ret

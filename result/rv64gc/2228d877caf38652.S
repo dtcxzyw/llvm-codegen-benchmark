@@ -1,8 +1,8 @@
 func000000000000000f:
-	andi	a0, a0, 1
 	lui	a3, 229376
-	slli	a1, a1, 63
+	andi	a0, a0, 1
 	add	a2, a2, a3
+	slli	a1, a1, 63
 	addi	a0, a0, -1
 	srai	a1, a1, 63
 	and	a0, a0, a2

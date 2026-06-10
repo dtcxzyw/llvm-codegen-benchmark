@@ -23,18 +23,18 @@ func00000000000004ca:
 	ret
 
 func0000000000000021:
+	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 100
 	vmsne.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 0
 	vmand.mm	v0, v12, v10
 	ret
 
 func0000000000000421:
+	li	a0, 40
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 40
 	vmseq.vx	v12, v10, a0
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v12, v10

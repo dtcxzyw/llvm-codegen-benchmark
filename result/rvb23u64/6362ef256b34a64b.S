@@ -22,10 +22,10 @@ func0000000000000004:
 func0000000000000003:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, 33005
-	slli	a0, a0, 35
 	fmul.d	fa5, fa1, fa5
+	lui	a0, 33005
 	fadd.d	fa5, fa0, fa5
+	slli	a0, a0, 35
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -44,10 +44,10 @@ func0000000000000001:
 func000000000000000c:
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	li	a0, -497
-	slli	a0, a0, 53
 	fmul.d	fa5, fa1, fa5
+	li	a0, -497
 	fadd.d	fa5, fa5, fa0
+	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
 	ret

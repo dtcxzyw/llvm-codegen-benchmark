@@ -9,8 +9,8 @@ func00000000000000aa:
 func00000000000000ea:
 	sh2add	a1, a2, a1
 	sext.w	a0, a0
-	add	a1, a1, a0
-	add	a0, a0, a0
+	add	a2, a0, a0
+	add	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

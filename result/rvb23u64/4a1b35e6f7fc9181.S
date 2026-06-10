@@ -1,8 +1,8 @@
 func0000000000000040:
+	li	a3, 16
 	sub	a0, a0, a1
-	li	a1, 16
 	sh2add	a0, a2, a0
-	bseti	a1, a1, 31
+	bseti	a1, a3, 31
 	add	a0, a0, a1
 	ret
 

@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	0x3fe999999999999a
 func0000000000000024:
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v8, v8
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a0)
 	vmfgt.vf	v16, v8, fa5
 	fli.d	fa5, 2.0
 	vmflt.vf	v17, v8, fa5
@@ -16,41 +16,41 @@ func0000000000000024:
 .LCPI1_1:
 	.quad	0x3feffffffffffff7
 func0000000000000035:
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v8, v8
+	lui	a0, %hi(.LCPI1_0)
+	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmfle.vf	v16, v8, fa5
-	vmnot.m	v16, v16
-	vmfge.vf	v17, v8, fa4
-	vmandn.mm	v0, v16, v17
+	lui	a0, %hi(.LCPI1_1)
+	fld	fa5, %lo(.LCPI1_1)(a0)
+	vmfge.vf	v17, v8, fa5
+	vmnot.m	v8, v16
+	vmandn.mm	v0, v8, v17
 	ret
 
 func0000000000000036:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v8
-	vfclass.v	v8, v8
 	li	a0, 126
-	vand.vx	v8, v8, a0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfclass.v	v16, v8
+	vfabs.v	v8, v8
+	vand.vx	v16, v16, a0
 	li	a0, 575
 	slli	a0, a0, 53
-	vmsne.vi	v24, v8, 0
 	fmv.d.x	fa5, a0
-	vmfge.vf	v8, v16, fa5
-	vmandn.mm	v0, v24, v8
+	vmsne.vi	v24, v16, 0
+	vmfge.vf	v16, v8, fa5
+	vmandn.mm	v0, v24, v16
 	ret
 
 .LCPI3_0:
 	.quad	0x4341c37937e08000
 func000000000000002c:
-	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v8, v8
-	fli.d	fa4, 1.0
-	vmfge.vf	v16, v8, fa4
+	fli.d	fa5, 1.0
+	vmfge.vf	v16, v8, fa5
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmflt.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret
@@ -58,15 +58,15 @@ func000000000000002c:
 .LCPI4_0:
 	.quad	0x3eb0c6f7a0b5ed8d
 func00000000000000d6:
+	li	a0, 126
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v8
+	vfclass.v	v16, v8
+	vfabs.v	v8, v8
+	vand.vx	v16, v16, a0
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	vfclass.v	v8, v8
-	li	a0, 126
-	vand.vx	v8, v8, a0
-	vmflt.vf	v24, v16, fa5
-	vmsne.vi	v16, v8, 0
-	vmandn.mm	v0, v16, v24
+	vmsne.vi	v24, v16, 0
+	vmflt.vf	v16, v8, fa5
+	vmandn.mm	v0, v24, v16
 	ret
 

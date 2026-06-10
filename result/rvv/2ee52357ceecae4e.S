@@ -1,7 +1,7 @@
 func0000000000000694:
+	li	a0, 25
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v14, v12
-	li	a0, 25
 	vor.vv	v10, v10, v14
 	vmsleu.vi	v12, v10, 11
 	vmsltu.vx	v10, v8, a0
@@ -20,8 +20,8 @@ func0000000000000421:
 func0000000000000318:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v14, v12
-	li	a0, 100
 	vor.vv	v10, v10, v14
+	li	a0, 100
 	vmsgtu.vx	v12, v10, a0
 	li	a0, 103
 	vmsgtu.vx	v10, v8, a0

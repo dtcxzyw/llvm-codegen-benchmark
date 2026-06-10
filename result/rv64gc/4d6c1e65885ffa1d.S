@@ -5,8 +5,8 @@ func0000000000000030:
 	lui	a2, 5
 	addi	a2, a2, 512
 .LBB0_2:
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
@@ -16,15 +16,15 @@ func000000000000002f:
 	li	a3, 25
 	beq	a2, a3, .LBB1_2
 	li	a2, 80
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	srli	a1, a1, 29
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 64
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	srli	a1, a1, 29
 	add	a0, a0, a1
 	ret

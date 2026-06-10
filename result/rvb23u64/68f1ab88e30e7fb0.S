@@ -15,20 +15,20 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	lui	a3, 272
 	sext.w	a2, a2
+	addi	a3, a3, -1
 	or	a0, a0, a1
-	lui	a1, 272
-	addi	a1, a1, -1
-	slt	a1, a1, a2
+	slt	a1, a3, a2
 	andn	a0, a1, a0
 	ret
 
 func0000000000000008:
-	andi	a1, a1, 1
 	sext.w	a2, a2
-	xori	a0, a0, 1
+	andi	a1, a1, 1
 	sltiu	a2, a2, 128
 	xori	a2, a2, 1
+	xori	a0, a0, 1
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -57,9 +57,9 @@ func0000000000000004:
 
 func0000000000000018:
 	sext.w	a2, a2
+	sltiu	a2, a2, 2
 	or	a0, a0, a1
-	sltiu	a1, a2, 2
-	xori	a1, a1, 1
+	xori	a1, a2, 1
 	or	a0, a0, a1
 	ret
 

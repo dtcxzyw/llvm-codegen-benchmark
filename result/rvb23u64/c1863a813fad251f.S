@@ -23,10 +23,10 @@ func000000000000005b:
 	ret
 
 func000000000000008a:
-	mul	a2, a2, a0
 	srli	a1, a1, 32
-	srli	a2, a2, 32
+	mul	a2, a2, a0
 	mul	a0, a0, a1
+	srli	a2, a2, 32
 	add	a0, a0, a2
 	ret
 

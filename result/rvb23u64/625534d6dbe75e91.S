@@ -11,23 +11,23 @@ func000000000000018c:
 
 func000000000000002c:
 	zext.h	a1, a1
-	andi	a2, a2, 896
 	addi	a1, a1, -2048
+	andi	a2, a2, 896
 	snez	a1, a1
 	czero.nez	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func000000000000008c:
-	zext.h	a1, a1
 	slli	a2, a2, 48
-	lui	a3, 1
+	zext.h	a1, a1
 	srli	a2, a2, 50
+	lui	a3, 1
+	lui	a4, 16
 	addi	a3, a3, -2045
+	addi	a4, a4, -5
 	xor	a2, a2, a3
-	lui	a3, 16
-	addi	a3, a3, -5
-	sltu	a1, a1, a3
+	sltu	a1, a1, a4
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

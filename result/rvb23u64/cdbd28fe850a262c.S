@@ -17,8 +17,8 @@ func0000000000000421:
 	ret
 
 func000000000000018c:
-	sext.w	a0, a0
 	zext.h	a2, a2
+	sext.w	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a0, a0
@@ -26,8 +26,8 @@ func000000000000018c:
 	ret
 
 func000000000000058c:
-	sext.w	a0, a0
 	andi	a2, a2, 768
+	sext.w	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
 	snez	a0, a0

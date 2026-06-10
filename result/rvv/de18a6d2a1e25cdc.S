@@ -1,25 +1,25 @@
 func00000000000000f4:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v10, v10, 0
 	li	a0, -1
 	srli	a0, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vrsub.vi	v10, v10, 0
 	vxor.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func000000000000002a:
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v10, v10, 0
-	bseti	a0, zero, 63
 	vrsub.vx	v8, v8, a0
 	vmslt.vv	v0, v10, v8
 	ret
 
 func0000000000000066:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v10, v10, 0
 	li	a0, -1
 	srli	a0, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vrsub.vi	v10, v10, 0
 	vxor.vx	v8, v8, a0
 	vmslt.vv	v0, v8, v10
 	ret
@@ -39,28 +39,28 @@ func0000000000000018:
 	ret
 
 func00000000000000aa:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v10, v10, 1
 	li	a0, 1
 	bseti	a0, a0, 63
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vrsub.vi	v10, v10, 1
 	vrsub.vx	v8, v8, a0
 	vmslt.vv	v0, v10, v8
 	ret
 
 func00000000000000a4:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v10, v10, 0
 	li	a0, -1
 	srli	a0, a0, 5
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vrsub.vi	v10, v10, 0
 	vrsub.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v10, v10, 0
 	li	a0, -1
 	srli	a0, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vrsub.vi	v10, v10, 0
 	vxor.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v10
 	ret

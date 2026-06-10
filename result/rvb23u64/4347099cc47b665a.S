@@ -1,12 +1,12 @@
 func0000000000000008:
-	sext.w	a1, a1
 	lui	a2, 335544
-	sraiw	a0, a0, 31
+	sext.w	a1, a1
 	addi	a2, a2, 1311
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 37
 	add	a1, a1, a2
+	sraiw	a0, a0, 31
 	add	a0, a0, a1
 	zext.b	a0, a0
 	li	a1, 205

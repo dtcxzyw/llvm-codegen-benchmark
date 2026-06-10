@@ -6,10 +6,10 @@ func0000000000000040:
 	ret
 
 func000000000000006a:
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	andn	a0, a1, a0
+	srli	a2, a2, 32
+	andn	a0, a2, a0
 	ret
 
 func0000000000000000:
@@ -45,10 +45,10 @@ func0000000000000041:
 	ret
 
 func0000000000000050:
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	andn	a0, a1, a0
+	srli	a2, a2, 32
+	andn	a0, a2, a0
 	ret
 
 func0000000000000009:

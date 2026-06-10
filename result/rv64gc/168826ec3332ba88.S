@@ -2,9 +2,9 @@ func0000000000000044:
 	slli	a2, a1, 3
 	slli	a1, a1, 4
 	add	a1, a1, a2
-	li	a2, -29
 	addi	a1, a1, 39
 	andi	a1, a1, -16
+	li	a2, -29
 	add	a0, a0, a1
 	srli	a2, a2, 1
 	sltu	a0, a0, a2

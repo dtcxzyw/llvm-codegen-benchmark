@@ -20,8 +20,8 @@ func00000000000001f8:
 
 func0000000000000048:
 	mv	a2, a0
-	sext.w	a3, a0
 	lui	a0, 2
+	sext.w	a3, a2
 	addw	a4, a1, a0
 	bgeu	a3, a4, .LBB2_2
 	subw	a0, a2, a1

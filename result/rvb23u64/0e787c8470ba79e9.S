@@ -6,8 +6,8 @@ func000000000000001d:
 	ret
 
 func000000000000001f:
-	slli.uw	a1, a1, 24
 	slli	a0, a0, 48
+	slli.uw	a1, a1, 24
 	srli	a0, a0, 40
 	or	a0, a0, a1
 	ret
@@ -26,22 +26,22 @@ func000000000000001c:
 	ret
 
 func0000000000000037:
-	slli	a1, a1, 48
 	sext.w	a0, a0
+	slli	a1, a1, 48
 	slli	a0, a0, 24
 	or	a0, a0, a1
 	ret
 
 func0000000000000017:
-	slli	a1, a1, 32
 	slli	a0, a0, 48
+	slli	a1, a1, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 
 func000000000000005f:
-	slli	a1, a1, 32
 	slli	a0, a0, 48
+	slli	a1, a1, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret

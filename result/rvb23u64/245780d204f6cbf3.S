@@ -1,19 +1,19 @@
 func0000000000000caa:
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa2
-	fle.d	a1, fa1, fa5
-	fle.d	a2, fa0, fa5
-	and	a1, a1, a2
+	fle.d	a0, fa1, fa5
+	fle.d	a1, fa0, fa5
+	fle.d	a2, fa5, fa2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000888:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
 	feq.d	a1, fa1, fa5
+	feq.d	a2, fa0, fa5
 	and	a0, a0, a1
-	feq.d	a1, fa0, fa5
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 .LCPI2_0:
@@ -23,9 +23,9 @@ func0000000000000aaa:
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fle.d	a0, fa2, fa5
 	fle.d	a1, fa1, fa5
+	fle.d	a2, fa0, fa5
 	and	a0, a0, a1
-	fle.d	a1, fa0, fa5
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000224:
@@ -36,19 +36,19 @@ func0000000000000224:
 	fld	fa3, 16(a0)
 	flt.d	a0, fa2, fa5
 	flt.d	a1, fa1, fa4
+	flt.d	a2, fa3, fa0
 	and	a0, a0, a1
-	flt.d	a1, fa3, fa0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000777:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
 	feq.d	a1, fa1, fa5
+	feq.d	a2, fa0, fa5
 	not	a1, a1
 	andn	a0, a1, a0
-	feq.d	a1, fa0, fa5
-	xori	a1, a1, 1
+	xori	a1, a2, 1
 	and	a0, a0, a1
 	ret
 
@@ -59,18 +59,18 @@ func0000000000000222:
 	fld	fa4, 8(a0)
 	flt.d	a0, fa2, fa5
 	flt.d	a1, fa1, fa4
+	flt.d	a2, fa0, fa5
 	and	a0, a0, a1
-	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000111:
 	feq.d	a0, fa2, fa2
 	feq.d	a1, fa1, fa1
+	feq.d	a2, fa0, fa0
 	not	a1, a1
 	andn	a0, a1, a0
-	feq.d	a1, fa0, fa0
-	xori	a1, a1, 1
+	xori	a1, a2, 1
 	and	a0, a0, a1
 	ret
 
@@ -80,19 +80,19 @@ func00000000000004a4:
 	fld	fa5, 0(a0)
 	fld	fa4, 8(a0)
 	flt.d	a0, fa5, fa2
-	fle.d	a1, fa1, fa4
-	flt.d	a2, fa5, fa0
-	and	a0, a0, a2
+	flt.d	a1, fa5, fa0
+	fle.d	a2, fa1, fa4
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000c22:
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa2
-	flt.d	a1, fa1, fa5
-	flt.d	a2, fa0, fa5
-	and	a1, a1, a2
+	flt.d	a0, fa1, fa5
+	flt.d	a1, fa0, fa5
+	fle.d	a2, fa5, fa2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 .LCPI9_0:
@@ -102,26 +102,26 @@ func0000000000000444:
 	fld	fa5, %lo(.LCPI9_0)(a0)
 	flt.d	a0, fa5, fa2
 	flt.d	a1, fa5, fa1
+	flt.d	a2, fa5, fa0
 	and	a0, a0, a1
-	flt.d	a1, fa5, fa0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000666:
 	fli.d	fa5, inf
 	flt.d	a0, fa2, fa5
 	flt.d	a1, fa1, fa5
+	flt.d	a2, fa0, fa5
 	and	a0, a0, a1
-	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000eee:
 	feq.d	a0, fa2, fa2
 	feq.d	a1, fa1, fa1
+	feq.d	a2, fa0, fa0
 	and	a0, a0, a1
-	feq.d	a1, fa0, fa0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 .promoted_doubles.func0000000000000224:

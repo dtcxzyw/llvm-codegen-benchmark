@@ -7,10 +7,10 @@ func0000000000000017:
 	ret
 
 func0000000000000005:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 219235
-	fabs.s	fa5, fa5
+	fcvt.s.d	fa5, fa0
 	addi	a0, a0, 1981
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -24,8 +24,8 @@ func0000000000000009:
 	ret
 
 func0000000000000012:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 212992
+	fcvt.s.d	fa5, fa0
 	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
@@ -40,10 +40,10 @@ func000000000000001d:
 	ret
 
 func0000000000000002:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 300866
-	fabs.s	fa5, fa5
+	fcvt.s.d	fa5, fa0
 	addi	a0, a0, 1024
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -56,8 +56,8 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 273536
+	fcvt.s.d	fa5, fa0
 	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
@@ -79,8 +79,8 @@ func0000000000000003:
 	ret
 
 func0000000000000015:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 212992
+	fcvt.s.d	fa5, fa0
 	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
@@ -88,17 +88,17 @@ func0000000000000015:
 	ret
 
 func0000000000000004:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 260803
-	fabs.s	fa5, fa5
+	fcvt.s.d	fa5, fa0
 	addi	a0, a0, -1802
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 
 func000000000000000c:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 273536
+	fcvt.s.d	fa5, fa0
 	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5

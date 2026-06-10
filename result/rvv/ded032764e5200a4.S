@@ -1,9 +1,9 @@
 func000000000000002c:
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmsne.vi	v10, v10, -1
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v10, v11
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsne.vi	v8, v10, -1
+	vmor.mm	v0, v8, v11
 	ret
 
 .LCPI1_0:
@@ -14,10 +14,11 @@ func0000000000000144:
 	li	a1, -58
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a1
-	vmsleu.vi	v10, v10, -11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v11, v8, a0
-	vmor.mm	v0, v10, v11
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsleu.vi	v8, v10, -11
+	vmor.mm	v0, v8, v11
 	ret
 
 .LCPI2_0:
@@ -28,10 +29,11 @@ func0000000000000108:
 	li	a1, -58
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a1
-	vmsleu.vi	v10, v10, -11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
-	vmor.mm	v0, v10, v11
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsleu.vi	v8, v10, -11
+	vmor.mm	v0, v8, v11
 	ret
 
 .LCPI3_0:
@@ -42,10 +44,11 @@ func0000000000000148:
 	li	a1, -58
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a1
-	vmsleu.vi	v10, v10, -11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v11, v8, a0
-	vmor.mm	v0, v10, v11
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsleu.vi	v8, v10, -11
+	vmor.mm	v0, v8, v11
 	ret
 
 func0000000000000024:
@@ -53,10 +56,11 @@ func0000000000000024:
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a0
 	li	a0, 255
-	vmsleu.vi	v10, v10, -11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v11, v8, a0
-	vmor.mm	v0, v10, v11
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsleu.vi	v8, v10, -11
+	vmor.mm	v0, v8, v11
 	ret
 
 .LCPI5_0:
@@ -67,9 +71,10 @@ func0000000000000104:
 	li	a1, -58
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a1
-	vmsleu.vi	v10, v10, -11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
-	vmor.mm	v0, v10, v11
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmsleu.vi	v8, v10, -11
+	vmor.mm	v0, v8, v11
 	ret
 

@@ -4,8 +4,8 @@ func0000000000000108:
 	vadd.vx	v9, v8, a0
 	li	a0, -48
 	vadd.vx	v8, v8, a0
-	li	a0, 69
 	vmsleu.vi	v9, v9, 3
+	li	a0, 69
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret

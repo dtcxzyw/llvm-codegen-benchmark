@@ -2,12 +2,12 @@
 	.quad	0x3fd3333333333333
 func0000000000000042:
 	fli.d	fa5, 1.0
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v0, v8, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
-	vmflt.vf	v0, v8, fa4
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a0)
+	vmflt.vf	v0, v8, fa5
 	ret
 
 func0000000000000022:
@@ -58,12 +58,12 @@ func000000000000004d:
 	.quad	0x4059190000000000
 func0000000000000024:
 	fmv.d.x	fa5, zero
-	lui	a0, %hi(.LCPI5_0)
-	fld	fa4, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v8, fa5
 	vmerge.vim	v8, v8, 0, v0
-	vmfgt.vf	v0, v8, fa4
+	lui	a0, %hi(.LCPI5_0)
+	fld	fa5, %lo(.LCPI5_0)(a0)
+	vmfgt.vf	v0, v8, fa5
 	ret
 
 .LCPI6_0:
@@ -71,11 +71,11 @@ func0000000000000024:
 func00000000000000ca:
 	lui	a0, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a0)
-	li	a0, -497
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v0, v8, fa5
-	slli	a0, a0, 53
 	vfmerge.vfm	v8, v8, fa5, v0
+	li	a0, -497
+	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret
@@ -92,9 +92,9 @@ func0000000000000023:
 
 func00000000000000a4:
 	fmv.d.x	fa5, zero
-	lui	a0, 2053
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v16, v8, fa5
+	lui	a0, 2053
 	slli	a0, a0, 39
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v17, v8, fa5
@@ -174,11 +174,11 @@ func000000000000004e:
 .LCPI16_0:
 	.quad	0x3feccccccccccccd
 func0000000000000084:
+	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfne.vf	v16, v8, fa5
 	lui	a0, %hi(.LCPI16_0)
 	fld	fa5, %lo(.LCPI16_0)(a0)
-	fmv.d.x	fa4, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfne.vf	v16, v8, fa4
 	vmfgt.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret

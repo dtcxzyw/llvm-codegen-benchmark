@@ -9,9 +9,9 @@ func0000000000000015:
 	ret
 
 func0000000000000007:
-	slli	a2, a1, 8
-	slli	a1, a1, 48
-	srli	a1, a1, 56
+	slli	a2, a1, 48
+	slli	a1, a1, 8
+	srli	a2, a2, 56
 	or	a1, a1, a2
 	slli	a1, a1, 48
 	srli	a1, a1, 40
@@ -19,9 +19,9 @@ func0000000000000007:
 	ret
 
 func0000000000000017:
-	slli	a2, a1, 8
-	slli	a1, a1, 48
-	srli	a1, a1, 56
+	slli	a2, a1, 48
+	slli	a1, a1, 8
+	srli	a2, a2, 56
 	or	a1, a1, a2
 	slli	a1, a1, 48
 	srli	a1, a1, 38

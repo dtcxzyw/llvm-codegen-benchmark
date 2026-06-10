@@ -2,9 +2,9 @@ func00000000000000a6:
 	li	a1, 1023
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
+	fmv.d.x	fa4, zero
 	fle.d	a1, fa0, fa5
-	fmv.d.x	fa5, zero
-	fle.d	a2, fa5, fa0
+	fle.d	a2, fa4, fa0
 	and	a1, a1, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -12,13 +12,13 @@ func00000000000000a6:
 
 func0000000000000084:
 	li	a1, 1023
-	fmv.d.x	fa5, zero
 	slli	a1, a1, 52
-	flt.d	a2, fa0, fa5
-	fmv.d.x	fa5, a1
-	flt.d	a1, fa5, fa0
-	or	a0, a0, a2
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a1
+	flt.d	a1, fa0, fa5
+	flt.d	a2, fa4, fa0
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func00000000000001a8:

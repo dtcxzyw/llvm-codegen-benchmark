@@ -1,13 +1,12 @@
+.LCPI0_0:
+	.quad	1000000000000000000
 func0000000000000d84:
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	addi	a2, a2, 1
 	xor	a1, a1, a2
-	lui	a2, 227374
-	addi	a2, a2, -1329
 	snez	a1, a1
-	slli	a2, a2, 12
-	addi	a2, a2, -1575
-	slli	a2, a2, 18
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret
 
@@ -81,8 +80,8 @@ func0000000000000c24:
 
 func0000000000000d88:
 	addi	a2, a2, 8
-	sltiu	a0, a0, 8
 	xor	a1, a1, a2
+	sltiu	a0, a0, 8
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -90,8 +89,8 @@ func0000000000000d88:
 
 func0000000000000181:
 	addi	a2, a2, 8
-	addi	a0, a0, -2
 	xor	a1, a1, a2
+	addi	a0, a0, -2
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1

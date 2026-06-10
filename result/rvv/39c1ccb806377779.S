@@ -8,9 +8,9 @@ func0000000000000008:
 	ret
 
 func0000000000000012:
+	lui	a0, 273536
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v16
-	lui	a0, 273536
 	vfmacc.vv	v16, v12, v12
 	vfmacc.vv	v16, v8, v8
 	fmv.w.x	fa5, a0
@@ -27,9 +27,9 @@ func0000000000000014:
 	ret
 
 func0000000000000013:
+	lui	a0, 165888
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v16
-	lui	a0, 165888
 	vfmacc.vv	v16, v12, v12
 	vfmacc.vv	v16, v8, v8
 	fmv.w.x	fa5, a0
@@ -47,9 +47,9 @@ func0000000000000018:
 	ret
 
 func000000000000001b:
+	lui	a0, 212992
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v16
-	lui	a0, 212992
 	vfmacc.vv	v16, v12, v12
 	vfmacc.vv	v16, v8, v8
 	fmv.w.x	fa5, a0
@@ -67,9 +67,9 @@ func0000000000000017:
 	ret
 
 func0000000000000015:
+	lui	a0, 165888
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v16
-	lui	a0, 165888
 	vfmacc.vv	v16, v12, v12
 	vfmacc.vv	v16, v8, v8
 	fmv.w.x	fa5, a0
@@ -78,11 +78,11 @@ func0000000000000015:
 	ret
 
 func0000000000000005:
+	lui	a0, 212332
+	addi	a0, a0, -107
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v16
-	lui	a0, 212332
 	vfmacc.vv	v16, v12, v12
-	addi	a0, a0, -107
 	vfmacc.vv	v16, v8, v8
 	fmv.w.x	fa5, a0
 	vmfle.vf	v8, v16, fa5
@@ -99,11 +99,11 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
+	lui	a0, 216273
+	addi	a0, a0, 1454
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v16
-	lui	a0, 216273
 	vfmacc.vv	v16, v12, v12
-	addi	a0, a0, 1454
 	vfmacc.vv	v16, v8, v8
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v16, fa5
@@ -119,9 +119,9 @@ func0000000000000007:
 	ret
 
 func000000000000001d:
+	lui	a0, 8704
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v16, v16, v16
-	lui	a0, 8704
 	vfmacc.vv	v16, v12, v12
 	vfmacc.vv	v16, v8, v8
 	fmv.w.x	fa5, a0

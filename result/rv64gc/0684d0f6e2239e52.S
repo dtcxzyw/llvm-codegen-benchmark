@@ -8,9 +8,9 @@ func0000000000000037:
 	ret
 
 func000000000000000b:
-	sext.w	a2, a1
-	li	a3, -1
-	beq	a2, a3, .LBB1_2
+	li	a2, -1
+	sext.w	a3, a1
+	beq	a3, a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
 	slli	a0, a0, 32
@@ -18,9 +18,9 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	sext.w	a2, a1
-	li	a3, -1
-	beq	a2, a3, .LBB2_2
+	li	a2, -1
+	sext.w	a3, a1
+	beq	a3, a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
 	sext.w	a0, a0
@@ -36,9 +36,9 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	sext.w	a2, a1
-	li	a3, -22
-	beq	a2, a3, .LBB4_2
+	li	a2, -22
+	sext.w	a3, a1
+	beq	a3, a2, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
 	slli	a0, a0, 48

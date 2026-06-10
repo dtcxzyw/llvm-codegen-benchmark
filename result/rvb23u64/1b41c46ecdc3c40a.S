@@ -6,11 +6,11 @@ func0000000000000000:
 	ret
 
 func000000000000001c:
+	lui	a3, 524288
 	sext.w	a2, a2
+	addiw	a3, a3, -4
 	add	a0, a0, a2
-	lui	a2, 524288
-	addiw	a2, a2, -4
-	and	a1, a1, a2
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

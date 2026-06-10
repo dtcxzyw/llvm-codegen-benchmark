@@ -9,8 +9,8 @@ func0000000000000086:
 func0000000000000186:
 	zext.b	a1, a1
 	sext.w	a2, a2
-	slt	a0, a0, a2
 	addi	a1, a1, -61
+	slt	a0, a0, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -18,17 +18,17 @@ func0000000000000186:
 func000000000000018a:
 	zext.b	a1, a1
 	sext.w	a2, a2
-	slt	a0, a2, a0
 	addi	a1, a1, -47
+	slt	a0, a2, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000008a:
-	slli	a0, a0, 56
 	sext.w	a2, a2
-	sltu	a1, a1, a2
+	slli	a0, a0, 56
 	srli	a0, a0, 63
+	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret

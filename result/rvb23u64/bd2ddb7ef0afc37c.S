@@ -1,9 +1,9 @@
 func0000000000000007:
-	slli	a0, a0, 8
-	lui	a1, 5
-	add	a0, a0, a1
 	lui	a1, 65536
+	slli	a0, a0, 8
+	lui	a2, 5
 	addi	a1, a1, -1
+	add	a0, a0, a2
 	slli	a1, a1, 12
 	and	a0, a0, a1
 	addi	a0, a0, 57
@@ -17,8 +17,8 @@ func000000000000001d:
 	ret
 
 func0000000000000019:
-	slli	a0, a0, 59
 	bseti	a1, zero, 60
+	slli	a0, a0, 59
 	add	a0, a0, a1
 	srli	a0, a0, 61
 	slli	a0, a0, 61
@@ -33,8 +33,8 @@ func0000000000000001:
 	ret
 
 func000000000000001f:
-	slli	a0, a0, 1
 	li	a1, 15
+	slli	a0, a0, 1
 	addi	a0, a0, 510
 	slli	a1, a1, 9
 	and	a0, a0, a1

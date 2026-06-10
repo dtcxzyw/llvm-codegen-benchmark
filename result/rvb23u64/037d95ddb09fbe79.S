@@ -55,8 +55,8 @@ func000000000000000a:
 	ret
 
 func0000000000000007:
-	slli	a0, a0, 30
 	bseti	a1, zero, 32
+	slli	a0, a0, 30
 	add	a0, a0, a1
 	srli	a0, a0, 32
 	ret

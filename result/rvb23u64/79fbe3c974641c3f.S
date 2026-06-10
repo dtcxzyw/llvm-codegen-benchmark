@@ -1,20 +1,20 @@
 func000000000000007f:
-	slli	a2, a2, 61
 	slli	a1, a1, 56
+	slli	a2, a2, 61
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000006f:
-	slli	a2, a2, 40
 	slli	a1, a1, 56
+	slli	a2, a2, 40
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000003b:
-	slli	a2, a2, 32
 	slli	a1, a1, 8
+	slli	a2, a2, 32
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -27,15 +27,15 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
-	slli	a2, a2, 54
 	slli	a1, a1, 49
+	slli	a2, a2, 54
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000002:
-	slli	a2, a2, 54
 	slli	a1, a1, 49
+	slli	a2, a2, 54
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -63,36 +63,36 @@ func0000000000000074:
 	ret
 
 func0000000000000010:
-	slli	a2, a2, 42
 	slli	a1, a1, 21
+	slli	a2, a2, 42
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000007b:
-	slli	a2, a2, 62
 	slli	a1, a1, 47
+	slli	a2, a2, 62
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000002c:
-	slli.uw	a2, a2, 1
 	slli	a1, a1, 32
+	slli.uw	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000000c:
-	slli.uw	a2, a2, 20
 	slli	a1, a1, 40
+	slli.uw	a2, a2, 20
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000003c:
-	slli.uw	a2, a2, 20
 	slli	a1, a1, 30
+	slli.uw	a2, a2, 20
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -105,8 +105,8 @@ func000000000000007e:
 	ret
 
 func0000000000000079:
-	slli	a2, a2, 63
 	slli	a1, a1, 62
+	slli	a2, a2, 63
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -119,8 +119,8 @@ func000000000000007d:
 	ret
 
 func0000000000000078:
-	slli	a2, a2, 56
 	slli	a1, a1, 48
+	slli	a2, a2, 56
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -7,8 +7,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	andi	a0, a0, -256
 	lui	a2, 32
+	andi	a0, a0, -256
 	addi	a2, a2, -1792
 	xor	a0, a0, a2
 	or	a0, a0, a1
@@ -17,10 +17,10 @@ func0000000000000181:
 	ret
 
 func0000000000000101:
-	srliw	a1, a1, 15
 	lui	a2, 16
-	snez	a1, a1
+	srliw	a1, a1, 15
 	and	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

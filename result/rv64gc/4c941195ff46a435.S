@@ -25,22 +25,22 @@ func0000000000000024:
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa0, fa5
 	beqz	a0, .LBB1_3
-	lui	a0, 292864
-	lui	a1, 260096
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa0
-	fmv.w.x	fa0, a0
-	beqz	a1, .LBB1_4
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa0
+	lui	a1, 292864
+	fmv.w.x	fa0, a1
+	beqz	a0, .LBB1_4
 .LBB1_2:
 	ret
 .LBB1_3:
 	fmv.s	fa5, fa0
-	lui	a0, 292864
-	lui	a1, 260096
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa0
-	fmv.w.x	fa0, a0
-	bnez	a1, .LBB1_2
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa0
+	lui	a1, 292864
+	fmv.w.x	fa0, a1
+	bnez	a0, .LBB1_2
 .LBB1_4:
 	fmul.s	fa0, fa5, fa0
 	ret

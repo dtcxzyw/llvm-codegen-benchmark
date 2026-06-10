@@ -3,8 +3,8 @@ func0000000000000021:
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 1023
 	vmseq.vi	v0, v10, 0
+	li	a0, 1023
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v10, a0
 	vmerge.vvm	v9, v10, v9, v0
@@ -15,8 +15,8 @@ func0000000000000028:
 	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 16
 	vmseq.vi	v0, v10, 0
+	lui	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v10, a0
 	vmerge.vvm	v9, v10, v9, v0

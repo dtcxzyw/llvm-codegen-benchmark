@@ -8,9 +8,9 @@ func0000000000000004:
 	ret
 
 func00000000000001f8:
+	lui	a3, 16
 	add	a2, a2, a1
-	lui	a1, 16
-	addi	a1, a1, -16
+	addi	a1, a3, -16
 	add	a2, a2, a1
 	bltu	a1, a2, .LBB1_2
 	mv	a0, a1

@@ -18,9 +18,9 @@ func0000000000000000:
 
 func0000000000000010:
 	sext.w	a2, a2
+	lui	a3, 244
 	add	a1, a1, a2
-	lui	a2, 244
-	addi	a2, a2, 576
+	addi	a2, a3, 576
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1

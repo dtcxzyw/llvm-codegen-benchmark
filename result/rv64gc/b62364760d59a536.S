@@ -42,8 +42,8 @@ func0000000000000008:
 func0000000000000005:
 	fsub.s	fa5, fa1, fa2
 	lui	a0, 242899
-	fsub.s	fa5, fa5, fa0
 	addi	a0, a0, -484
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1

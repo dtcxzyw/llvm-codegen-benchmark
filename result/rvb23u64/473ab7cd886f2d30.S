@@ -1,20 +1,20 @@
 .LCPI0_0:
 	.quad	-4466874330221494952
 func0000000000000020:
-	lui	a3, %hi(.LCPI0_0)
-	lui	a4, 274270
-	ld	a3, %lo(.LCPI0_0)(a3)
-	addi	a4, a4, 1339
-	slli	a4, a4, 1
-	mul	a1, a1, a4
+	lui	a3, 274270
+	addi	a3, a3, 1339
+	lui	a4, %hi(.LCPI0_0)
+	slli	a3, a3, 1
+	mul	a1, a1, a3
+	ld	a3, %lo(.LCPI0_0)(a4)
 	xor	a2, a2, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	not	a2, a2
 	sh3add	a3, a1, a1
+	not	a2, a2
 	sh1add	a1, a3, a1
 	add	a0, a0, a2
 	add	a0, a0, a1

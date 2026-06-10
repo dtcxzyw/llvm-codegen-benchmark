@@ -116,19 +116,19 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	seqz	a2, a2
 	srli	a1, a1, 59
-	and	a0, a0, a2
+	seqz	a2, a2
 	sltiu	a1, a1, 31
+	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000188:
-	snez	a2, a2
 	srli	a1, a1, 59
-	and	a0, a0, a2
+	snez	a2, a2
 	sltiu	a1, a1, 31
+	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

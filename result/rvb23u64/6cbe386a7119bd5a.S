@@ -9,10 +9,10 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	fmv.d	fa5, fa0
 	lui	a0, %hi(.promoted_doubles.func0000000000000002)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000002)
 	fld	fa4, 0(a0)
+	fmv.d	fa5, fa0
 	fld	fa0, 8(a0)
 	fdiv.d	fa5, fa4, fa5
 	flt.d	a0, fa5, fa0

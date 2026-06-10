@@ -12,11 +12,12 @@ func0000000000000002:
 
 func000000000000000e:
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmv1r.v	v7, v0
-	vmfeq.vv	v0, v16, v16
+	vmfeq.vv	v7, v16, v16
 	vmv.v.i	v24, 0
-	vmerge.vvm	v16, v24, v16, v0
+	vmv1r.v	v6, v0
 	vmv1r.v	v0, v7
+	vmerge.vvm	v16, v24, v16, v0
+	vmv1r.v	v0, v6
 	vmerge.vvm	v8, v8, v16, v0
 	ret
 

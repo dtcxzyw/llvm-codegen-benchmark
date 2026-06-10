@@ -32,10 +32,10 @@ func000000000000001b:
 	ret
 
 func0000000000000018:
+	bseti	a3, zero, 33
 	sh2add	a0, a1, a0
-	bseti	a1, zero, 33
-	addi	a1, a1, -4
-	and	a1, a1, a2
-	add	a0, a0, a1
+	addi	a3, a3, -4
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 

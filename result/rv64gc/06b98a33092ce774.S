@@ -39,9 +39,9 @@ func000000000000007c:
 func000000000000007f:
 	slli	a2, a2, 48
 	srli	a2, a2, 48
+	lui	a3, 17
 	addw	a1, a1, a2
-	lui	a2, 17
-	addi	a2, a2, -1864
+	addi	a2, a3, -1864
 	slli	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1

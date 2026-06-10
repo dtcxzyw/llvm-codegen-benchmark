@@ -23,10 +23,10 @@ func0000000000000041:
 	ret
 
 func00000000000000c1:
-	srli	a1, a1, 4
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srli	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a0, a0, 1
@@ -35,10 +35,10 @@ func00000000000000c1:
 	ret
 
 func0000000000000081:
-	srli	a1, a1, 4
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srli	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a0, a0, 1
@@ -47,10 +47,10 @@ func0000000000000081:
 	ret
 
 func00000000000000e1:
-	srli	a1, a1, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srli	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a0, a0, 1
@@ -59,22 +59,21 @@ func00000000000000e1:
 	ret
 
 func0000000000000084:
-	srli	a1, a1, 3
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srli	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a0, a0, -1
 	sltu	a0, a0, a1
 	ret
 
+.LCPI6_0:
+	.quad	36099303471055875
 func0000000000000001:
-	lui	a2, 262657
-	slli	a2, a2, 6
-	addi	a2, a2, 513
-	slli	a2, a2, 19
-	addi	a2, a2, 1027
+	lui	a2, %hi(.LCPI6_0)
+	ld	a2, %lo(.LCPI6_0)(a2)
 	mulhu	a2, a1, a2
 	sub	a1, a1, a2
 	srli	a1, a1, 1

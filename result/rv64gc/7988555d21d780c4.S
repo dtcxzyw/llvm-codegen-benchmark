@@ -1,8 +1,8 @@
 func0000000000000378:
 	slli	a3, a2, 2
 	slli	a2, a2, 3
-	slli	a1, a1, 32
 	add	a2, a2, a3
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a1, a0
@@ -27,8 +27,8 @@ func00000000000003f4:
 
 func0000000000000004:
 	li	a3, 1000
-	slli	a1, a1, 32
 	mul	a2, a2, a3
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a0, a1

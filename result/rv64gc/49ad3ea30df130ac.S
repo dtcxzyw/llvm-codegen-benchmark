@@ -1,6 +1,6 @@
 func0000000000000039:
-	addi	a2, a2, 8
 	slli	a1, a1, 48
+	addi	a2, a2, 8
 	srli	a1, a1, 48
 	sllw	a1, a1, a2
 	slli	a1, a1, 41
@@ -9,8 +9,8 @@ func0000000000000039:
 	ret
 
 func0000000000000035:
-	addi	a2, a2, 2
 	slli	a1, a1, 48
+	addi	a2, a2, 2
 	srli	a1, a1, 48
 	sllw	a1, a1, a2
 	lui	a2, 48

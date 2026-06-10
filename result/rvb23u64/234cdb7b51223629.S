@@ -24,13 +24,13 @@ func0000000000000104:
 	zext.h	a2, a1
 	lui	a3, 8
 	sltu	a2, a3, a2
-	lui	a3, 3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
+	lui	a1, 3
 	zext.h	a0, a0
-	addi	a3, a3, 1
-	sltu	a0, a0, a3
+	addi	a1, a1, 1
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000108:

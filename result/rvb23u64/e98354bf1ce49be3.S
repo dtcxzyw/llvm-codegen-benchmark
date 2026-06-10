@@ -38,8 +38,8 @@ func00000000000001ec:
 	ret
 
 func00000000000001e4:
-	andi	a2, a2, 1
 	lui	a3, 8
+	andi	a2, a2, 1
 	addi	a3, a3, 16
 	czero.nez	a2, a3, a2
 	add	a1, a1, a2

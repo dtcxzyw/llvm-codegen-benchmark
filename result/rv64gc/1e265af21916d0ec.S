@@ -1,7 +1,7 @@
 func0000000000000000:
+	li	a1, 512
 	srli	a0, a0, 10
 	sext.w	a0, a0
-	li	a1, 512
 	blt	a0, a1, .LBB0_2
 	li	a0, 512
 .LBB0_2:
@@ -14,9 +14,9 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
+	li	a1, 255
 	srli	a0, a0, 3
 	sext.w	a0, a0
-	li	a1, 255
 	blt	a0, a1, .LBB2_2
 	li	a0, 255
 .LBB2_2:

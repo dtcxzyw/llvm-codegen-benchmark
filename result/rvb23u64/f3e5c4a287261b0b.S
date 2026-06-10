@@ -7,11 +7,11 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	slli	a1, a0, 52
-	lui	a2, 8192
-	srli	a1, a1, 59
-	and	a0, a0, a2
-	or	a0, a0, a1
+	lui	a1, 8192
+	slli	a2, a0, 52
+	srli	a2, a2, 59
+	and	a0, a0, a1
+	or	a0, a0, a2
 	seqz	a0, a0
 	ret
 

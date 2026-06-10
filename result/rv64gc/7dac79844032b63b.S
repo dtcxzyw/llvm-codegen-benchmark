@@ -160,11 +160,11 @@ func0000000000000081:
 	ret
 
 func0000000000000086:
-	sext.w	a3, a2
-	lui	a4, 419430
-	addi	a4, a4, 1638
+	lui	a3, 419430
+	sext.w	a4, a2
+	addi	a3, a3, 1638
 	sext.w	a0, a0
-	bltu	a3, a4, .LBB15_2
+	bltu	a4, a3, .LBB15_2
 	mv	a1, a2
 .LBB15_2:
 	sext.w	a1, a1

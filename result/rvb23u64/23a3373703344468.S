@@ -9,8 +9,8 @@ func0000000000000018:
 	ret
 
 func000000000000001a:
-	fabs.s	fa5, fa2
 	lui	a0, 215040
+	fabs.s	fa5, fa2
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	beqz	a0, .LBB1_2
@@ -30,9 +30,9 @@ func0000000000000008:
 	ret
 
 func000000000000001b:
-	fabs.s	fa5, fa2
 	lui	a0, 205501
 	addi	a0, a0, -905
+	fabs.s	fa5, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB3_2
@@ -42,9 +42,9 @@ func000000000000001b:
 	ret
 
 func0000000000000012:
-	fabs.s	fa5, fa2
 	lui	a0, 205501
 	addi	a0, a0, -905
+	fabs.s	fa5, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	beqz	a0, .LBB4_2

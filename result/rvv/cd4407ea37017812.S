@@ -25,18 +25,18 @@ func0000000000000024:
 	ret
 
 func00000000000000ca:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v10
-	li	a0, 63
 	vsra.vx	v10, v12, a0
 	vandn.vv	v10, v14, v10
 	vmslt.vv	v0, v10, v8
 	ret
 
 func00000000000000c6:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v10
-	li	a0, 63
 	vsra.vx	v10, v12, a0
 	vandn.vv	v10, v14, v10
 	vmslt.vv	v0, v8, v10

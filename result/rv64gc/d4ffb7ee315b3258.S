@@ -24,8 +24,8 @@ func000000000000001d:
 	ret
 
 func0000000000000012:
-	srliw	a0, a0, 31
 	lui	a1, 524288
+	srliw	a0, a0, 31
 	addi	a1, a1, -1
 	addw	a0, a0, a1
 	ret

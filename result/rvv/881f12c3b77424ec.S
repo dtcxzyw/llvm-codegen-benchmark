@@ -31,19 +31,19 @@ func00000000000000ac:
 	ret
 
 func0000000000000128:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsleu.vv	v12, v10, v8
 	lui	a0, 4
 	addi	a0, a0, -1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsleu.vv	v12, v10, v8
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12
 	vmand.mm	v0, v0, v8
 	ret
 
 func0000000000000104:
+	li	a0, 17
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v12, v10, v8
-	li	a0, 17
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12
 	vmand.mm	v0, v0, v8

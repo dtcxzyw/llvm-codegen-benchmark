@@ -8,10 +8,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	zext.b	a2, a0
-	li	a3, 126
+	li	a2, 126
+	zext.b	a3, a0
 	mv	a0, a1
-	bgeu	a3, a2, .LBB1_2
+	bgeu	a2, a3, .LBB1_2
 	li	a0, 1
 .LBB1_2:
 	ret

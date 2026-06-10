@@ -1,8 +1,8 @@
 func00000000000004c1:
-	srli	a2, a2, 5
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	slli	a4, a3, 32
+	srli	a2, a2, 5
 	add	a3, a3, a4
 	mulw	a2, a2, a3
 	slli	a2, a2, 2

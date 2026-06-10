@@ -1,9 +1,9 @@
 func00000000000000a8:
 	sub	a1, a1, a2
-	li	a2, -127
 	srai	a1, a1, 2
-	srli	a2, a2, 1
+	li	a2, -127
 	add	a0, a0, a1
+	srli	a2, a2, 1
 	andn	a0, a0, a2
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
@@ -11,10 +11,10 @@ func00000000000000a8:
 
 func0000000000000088:
 	sub	a1, a1, a2
-	li	a2, -127
 	srai	a1, a1, 1
-	srli	a2, a2, 1
+	li	a2, -127
 	add	a0, a0, a1
+	srli	a2, a2, 1
 	andn	a0, a0, a2
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0

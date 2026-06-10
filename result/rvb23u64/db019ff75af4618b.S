@@ -19,8 +19,8 @@ func0000000000000043:
 func0000000000000071:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	slli	a1, a1, 4
 	sltiu	a0, a0, 256
+	slli	a1, a1, 4
 	xori	a0, a0, 1
 	sh3add	a0, a0, a1
 	addiw	a0, a0, 4
@@ -36,12 +36,12 @@ func0000000000000042:
 
 func0000000000000014:
 	sext.w	a0, a0
-	slli	a1, a1, 63
-	srai	a1, a1, 63
 	slti	a0, a0, 2
-	andi	a1, a1, 10
+	slli	a1, a1, 63
 	xori	a0, a0, 1
+	srai	a1, a1, 63
 	sh3add	a0, a0, a0
+	andi	a1, a1, 10
 	or	a0, a0, a1
 	addiw	a0, a0, 4
 	ret

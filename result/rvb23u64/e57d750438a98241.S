@@ -1,9 +1,9 @@
 func0000000000000000:
-	sh2add	a1, a0, a0
-	sh2add	a0, a1, a0
 	lui	a1, 699051
-	addi	a1, a1, -1365
+	sh2add	a2, a0, a0
+	sh2add	a0, a2, a0
 	slli	a0, a0, 2
+	addi	a1, a1, -1365
 	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
@@ -13,12 +13,12 @@ func0000000000000000:
 	ret
 
 func000000000000001b:
-	slli	a1, a0, 8
-	sub	a1, a1, a0
-	lui	a0, 277453
-	addi	a0, a0, -1361
-	zext.w	a1, a1
-	mul	a0, a0, a1
+	lui	a1, 277453
+	slli	a2, a0, 8
+	sub	a2, a2, a0
+	zext.w	a2, a2
+	addi	a0, a1, -1361
+	mul	a0, a0, a2
 	srli	a0, a0, 44
 	li	a1, 213
 	mul	a0, a0, a1

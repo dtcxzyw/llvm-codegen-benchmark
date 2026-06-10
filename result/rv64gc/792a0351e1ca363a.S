@@ -2,11 +2,11 @@ func0000000000000902:
 	add	a1, a1, a2
 	lui	a2, 560295
 	addi	a2, a2, -1024
+	li	a3, -1
 	xor	a1, a1, a2
-	li	a2, -1
-	slli	a2, a2, 32
+	slli	a3, a3, 32
 	seqz	a1, a1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -50,8 +50,8 @@ func000000000000004c:
 
 func0000000000000042:
 	add	a1, a1, a2
-	addi	a0, a0, 1
 	addi	a1, a1, 1
+	addi	a0, a0, 1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -88,18 +88,18 @@ func0000000000000210:
 	ret
 
 func0000000000000294:
+	lui	a3, 262144
 	add	a1, a1, a2
-	lui	a2, 262144
-	addi	a2, a2, -2
-	slt	a1, a2, a1
-	slt	a0, a2, a0
+	addi	a3, a3, -2
+	slt	a1, a3, a1
+	slt	a0, a3, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000918:
 	add	a1, a1, a2
-	lui	a2, 524288
 	addi	a1, a1, -253
+	lui	a2, 524288
 	snez	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1

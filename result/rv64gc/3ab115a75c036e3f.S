@@ -1,8 +1,8 @@
 func0000000000000008:
 	li	a2, 16
+	li	a3, -1
 	sub	a1, a2, a1
-	li	a2, -1
-	srli	a2, a2, 32
+	srli	a2, a3, 32
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:

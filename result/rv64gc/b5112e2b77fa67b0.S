@@ -1,11 +1,11 @@
 func0000000000000002:
 	andi	a1, a1, 1
 	andi	a0, a0, 1
+	addi	a1, a1, -1
 	slli	a0, a0, 1
+	andi	a1, a1, 1940
 	or	a0, a0, a2
 	li	a2, 1
-	addi	a1, a1, -1
-	andi	a1, a1, 1940
 	or	a0, a0, a1
 	slli	a2, a2, 11
 	or	a0, a0, a2

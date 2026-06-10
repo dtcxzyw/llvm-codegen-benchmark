@@ -17,8 +17,8 @@ func0000000000000004:
 func0000000000000002:
 	fli.s	fa5, -1.0
 	fadd.s	fa5, fa0, fa5
-	fli.s	fa4, 0.5
 	lui	a0, 246333
+	fli.s	fa4, 0.5
 	addi	a0, a0, 1802
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa0, a0

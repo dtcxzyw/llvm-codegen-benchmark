@@ -27,8 +27,8 @@ func0000000000000010:
 
 func000000000000003a:
 	li	a3, -2
-	slli	a1, a1, 2
 	subw	a3, a3, a2
+	slli	a1, a1, 2
 	add	a0, a0, a1
 	slli	a3, a3, 2
 	add	a0, a0, a3
@@ -60,8 +60,8 @@ func000000000000001e:
 
 func000000000000003e:
 	li	a3, -2
-	slli	a1, a1, 3
 	subw	a3, a3, a2
+	slli	a1, a1, 3
 	add	a0, a0, a1
 	slli	a3, a3, 3
 	add	a0, a0, a3

@@ -4,10 +4,10 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	bseti	a0, a0, 0
 	lui	a1, 131071
-	bseti	a0, a0, 21
+	bseti	a0, a0, 0
 	slli	a1, a1, 3
+	bseti	a0, a0, 21
 	addi	a1, a1, 509
 	and	a0, a0, a1
 	ret

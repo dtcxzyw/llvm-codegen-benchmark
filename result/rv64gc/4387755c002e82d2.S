@@ -1,8 +1,8 @@
 func0000000000000037:
 	slli	a2, a2, 8
 	slli	a1, a1, 63
-	lui	a3, 1048568
 	srai	a1, a1, 63
+	lui	a3, 1048568
 	and	a1, a1, a3
 	add	a0, a0, a2
 	addw	a0, a0, a1

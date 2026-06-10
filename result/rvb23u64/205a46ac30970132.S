@@ -1,6 +1,6 @@
 func00000000000004a8:
-	sext.w	a1, a1
 	li	a2, -100
+	sext.w	a1, a1
 	mul	a1, a1, a2
 	add.uw	a0, a0, a1
 	sltiu	a0, a0, 100
@@ -33,12 +33,12 @@ func00000000000003f4:
 	ret
 
 func00000000000007f8:
-	sext.w	a1, a1
 	lui	a2, 244
-	sext.w	a0, a0
+	sext.w	a1, a1
 	addi	a2, a2, 576
 	mul	a1, a1, a2
 	lui	a2, 2575
+	sext.w	a0, a0
 	addi	a2, a2, -325
 	add	a0, a0, a1
 	slli	a2, a2, 13
@@ -46,8 +46,8 @@ func00000000000007f8:
 	ret
 
 func00000000000006aa:
-	sext.w	a1, a1
 	lui	a2, 804435
+	sext.w	a1, a1
 	addi	a2, a2, 1536
 	mul	a1, a1, a2
 	sext.w	a0, a0

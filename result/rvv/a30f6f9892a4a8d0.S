@@ -17,9 +17,9 @@ func000000000000048c:
 	ret
 
 func0000000000000481:
+	li	a0, 80
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 7
-	li	a0, 80
 	vadd.vi	v10, v10, -1
 	vmsleu.vi	v12, v10, 3
 	vmseq.vx	v10, v8, a0

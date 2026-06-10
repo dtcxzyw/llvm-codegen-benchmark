@@ -28,8 +28,8 @@ func0000000000000026:
 
 func000000000000000a:
 	sext.w	a1, a1
-	li	a2, -3
 	slti	a1, a1, 16
+	li	a2, -3
 	addi	a1, a1, -1
 	slli	a2, a2, 33
 	and	a1, a1, a2

@@ -27,10 +27,10 @@ func000000000000048c:
 
 func0000000000000188:
 	slli	a1, a1, 48
-	lui	a2, 16
 	srli	a1, a1, 48
-	addi	a2, a2, -5
+	lui	a2, 16
 	addi	a1, a1, -2
+	addi	a2, a2, -5
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

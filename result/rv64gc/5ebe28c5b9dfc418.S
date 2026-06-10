@@ -1,29 +1,29 @@
 func0000000000000018:
-	add	a2, a2, a1
-	mv	a1, a0
-	bgeu	a2, a0, .LBB0_3
+	mv	a3, a0
+	add	a1, a1, a2
+	bgeu	a1, a0, .LBB0_3
 	li	a0, 6
-	bltu	a0, a1, .LBB0_4
+	bltu	a0, a3, .LBB0_4
 .LBB0_2:
 	ret
 .LBB0_3:
 	li	a0, 6
-	bgeu	a0, a2, .LBB0_2
+	bgeu	a0, a1, .LBB0_2
 .LBB0_4:
 	li	a0, 14
 	ret
 
 func00000000000000d8:
-	add	a2, a2, a1
-	mv	a1, a0
-	bgeu	a2, a0, .LBB1_3
+	mv	a3, a0
+	add	a1, a1, a2
+	bgeu	a1, a0, .LBB1_3
 	li	a0, 6
-	bltu	a0, a1, .LBB1_4
+	bltu	a0, a3, .LBB1_4
 .LBB1_2:
 	ret
 .LBB1_3:
 	li	a0, 6
-	bgeu	a0, a2, .LBB1_2
+	bgeu	a0, a1, .LBB1_2
 .LBB1_4:
 	li	a0, 14
 	ret

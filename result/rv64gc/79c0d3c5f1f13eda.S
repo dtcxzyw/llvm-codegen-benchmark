@@ -18,10 +18,10 @@ func0000000000000003:
 
 func0000000000000000:
 	slliw	a1, a1, 17
+	lui	a2, 16
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 3
-	xor	a0, a0, a1
+	addi	a2, a2, 3
+	xor	a0, a0, a2
 	ret
 
 func0000000000000011:

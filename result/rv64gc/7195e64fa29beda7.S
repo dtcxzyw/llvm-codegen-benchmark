@@ -8,8 +8,8 @@ func0000000000000003:
 	ret
 
 func0000000000000019:
-	sext.w	a0, a0
 	lui	a1, 104832
+	sext.w	a0, a0
 	addi	a1, a1, 816
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -40,8 +40,8 @@ func0000000000000011:
 	ret
 
 func0000000000000029:
-	sext.w	a0, a0
 	li	a1, 5
+	sext.w	a0, a0
 	bltu	a0, a1, .LBB5_2
 	li	a0, 48
 	ret
@@ -57,9 +57,9 @@ func0000000000000031:
 	ret
 
 func0000000000000009:
+	li	a1, 178
 	sext.w	a0, a0
 	sltiu	a0, a0, 4
-	li	a1, 178
 	sub	a0, a1, a0
 	ret
 

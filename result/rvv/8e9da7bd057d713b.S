@@ -2,18 +2,18 @@ func00000000000000ca:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmfle.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmfle.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 func0000000000000088:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmfeq.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmfeq.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 .LCPI2_0:
@@ -23,9 +23,9 @@ func00000000000000aa:
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmfle.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmfle.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 .LCPI3_0:
@@ -35,13 +35,13 @@ func00000000000000aa:
 func0000000000000024:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmfgt.vf	v17, v8, fa4
-	vmand.mm	v0, v16, v17
+	lui	a0, %hi(.LCPI3_1)
+	fld	fa5, %lo(.LCPI3_1)(a0)
+	vmfgt.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 .LCPI4_0:
@@ -51,36 +51,36 @@ func0000000000000087:
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmfne.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmfne.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 func0000000000000077:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmfne.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmfne.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 func00000000000000dd:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	vmandn.mm	v16, v0, v24
-	vmflt.vf	v17, v8, fa5
-	vmandn.mm	v0, v16, v17
+	vmflt.vf	v16, v8, fa5
+	vmandn.mm	v8, v0, v24
+	vmandn.mm	v0, v8, v16
 	ret
 
 func0000000000000044:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmfgt.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmfgt.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 .LCPI8_0:
@@ -90,17 +90,17 @@ func0000000000000022:
 	fld	fa5, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmflt.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmflt.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 func0000000000000011:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vv	v24, v16, v16
-	vmand.mm	v16, v0, v24
-	vmfne.vv	v17, v8, v8
-	vmand.mm	v0, v16, v17
+	vmfne.vv	v16, v8, v8
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 .LCPI10_0:
@@ -111,18 +111,18 @@ func0000000000000042:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v16, fa5
 	fli.d	fa5, 1.75
-	vmand.mm	v16, v0, v24
-	vmflt.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmflt.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 func00000000000000c2:
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v24, v16, fa5
-	vmand.mm	v16, v0, v24
-	vmflt.vf	v17, v8, fa5
-	vmand.mm	v0, v16, v17
+	vmflt.vf	v16, v8, fa5
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 
 .LCPI12_0:
@@ -132,13 +132,13 @@ func00000000000000c2:
 func0000000000000055:
 	lui	a0, %hi(.LCPI12_0)
 	fld	fa5, %lo(.LCPI12_0)(a0)
-	lui	a0, %hi(.LCPI12_1)
-	fld	fa4, %lo(.LCPI12_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	vmandn.mm	v16, v0, v24
-	vmfle.vf	v17, v8, fa4
-	vmandn.mm	v0, v16, v17
+	lui	a0, %hi(.LCPI12_1)
+	fld	fa5, %lo(.LCPI12_1)(a0)
+	vmfle.vf	v16, v8, fa5
+	vmandn.mm	v8, v0, v24
+	vmandn.mm	v0, v8, v16
 	ret
 
 func0000000000000066:
@@ -157,8 +157,8 @@ func0000000000000066:
 func00000000000000ee:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v24, v16, v16
-	vmand.mm	v16, v0, v24
-	vmfeq.vv	v17, v8, v8
-	vmand.mm	v0, v16, v17
+	vmfeq.vv	v16, v8, v8
+	vmand.mm	v8, v0, v24
+	vmand.mm	v0, v8, v16
 	ret
 

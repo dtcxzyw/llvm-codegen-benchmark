@@ -14,10 +14,10 @@ func0000000000000004:
 	ret
 
 func0000000000000013:
-	sltiu	a1, a1, -14
 	slli	a2, a0, 24
 	subw	a2, a2, a0
 	lui	a0, 57344
+	sltiu	a1, a1, -14
 	addi	a0, a0, -14
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

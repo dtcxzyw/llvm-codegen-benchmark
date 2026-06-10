@@ -21,8 +21,8 @@ func000000000000000d:
 	ret
 
 func0000000000000002:
-	sext.w	a1, a1
 	li	a2, 8
+	sext.w	a1, a1
 	beq	a1, a2, .LBB3_2
 	li	a1, 1
 	or	a0, a0, a1
@@ -41,8 +41,8 @@ func0000000000000011:
 	ret
 
 func0000000000000031:
-	sext.w	a1, a1
 	lui	a2, 32768
+	sext.w	a1, a1
 	addi	a2, a2, 15
 	bltu	a2, a1, .LBB5_2
 	li	a1, 8

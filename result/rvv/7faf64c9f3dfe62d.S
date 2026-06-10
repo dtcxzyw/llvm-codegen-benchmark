@@ -29,15 +29,14 @@ func000000000000000a:
 	vadd.vi	v8, v9, -15, v0.t
 	ret
 
+.LCPI4_0:
+	.quad	-62162121600000000
 func000000000000002a:
-	lui	a0, 176
-	lui	a1, 935504
-	addi	a1, a1, -985
-	slli	a1, a1, 14
-	addi	a1, a1, -927
-	slli	a1, a1, 13
+	lui	a0, %hi(.LCPI4_0)
+	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgt.vx	v0, v10, a1
+	vmsgt.vx	v0, v10, a0
+	lui	a0, 176
 	addi	a0, a0, -1428
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vadd.vx	v8, v9, a0, v0.t

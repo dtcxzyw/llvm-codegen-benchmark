@@ -1,16 +1,18 @@
 func0000000000000004:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v8, v10
 	li	a0, 88
-	vmv.v.x	v8, a0
-	vmacc.vx	v8, a0, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v8, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v8, v10
 	li	a0, 40
-	vmv.v.x	v8, a0
-	vmacc.vx	v8, a0, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v8, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 

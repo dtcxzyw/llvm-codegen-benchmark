@@ -18,8 +18,8 @@ func000000000000000a:
 
 func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v8, v8, 3
 	vmv.v.i	v10, 3
+	vsll.vi	v8, v8, 3
 	li	a0, 64
 	vrsub.vx	v8, v8, a0
 	vsrl.vv	v8, v10, v8

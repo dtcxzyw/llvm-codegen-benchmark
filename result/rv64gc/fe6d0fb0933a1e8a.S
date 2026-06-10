@@ -15,10 +15,10 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
-	seqz	a2, a2
 	lui	a3, 244141
+	sext.w	a1, a1
 	addi	a3, a3, -1536
+	seqz	a2, a2
 	xor	a1, a1, a3
 	snez	a1, a1
 	and	a0, a0, a2

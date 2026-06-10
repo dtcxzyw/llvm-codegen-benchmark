@@ -1,6 +1,6 @@
 func000000000000000f:
-	srli	a1, a1, 3
 	lui	a2, 4
+	srli	a1, a1, 3
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	slli	a0, a0, 4
@@ -15,8 +15,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	srli	a1, a1, 10
 	lui	a2, 240
+	srli	a1, a1, 10
 	addi	a2, a2, 15
 	and	a1, a1, a2
 	slli	a0, a0, 8

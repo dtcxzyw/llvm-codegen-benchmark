@@ -16,11 +16,11 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	srli	a1, a1, 5
 	li	a2, -1
 	slli	a2, a2, 63
 	xor	a0, a0, a2
 	seqz	a0, a0
+	srli	a1, a1, 5
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -34,16 +34,16 @@ func000000000000000c:
 	ret
 
 func0000000000000028:
-	srli	a1, a1, 29
 	srli	a0, a0, 61
 	seqz	a0, a0
+	srli	a1, a1, 29
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000008:
-	srli	a1, a1, 1
 	sltiu	a0, a0, 48
+	srli	a1, a1, 1
 	neg	a0, a0
 	and	a0, a0, a1
 	ret

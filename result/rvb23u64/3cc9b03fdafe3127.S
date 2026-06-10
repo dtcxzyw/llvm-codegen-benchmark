@@ -14,14 +14,14 @@ func000000000000001e:
 	ret
 
 func0000000000000005:
-	addi	a0, a0, 1
 	li	a1, -1
+	addi	a0, a0, 1
 	sll	a0, a1, a0
 	ret
 
 func000000000000001d:
-	addi	a0, a0, 7
 	li	a1, -1
+	addi	a0, a0, 7
 	sll	a0, a1, a0
 	ret
 
@@ -38,8 +38,8 @@ func0000000000000007:
 	ret
 
 func000000000000000d:
-	addi	a0, a0, 48
 	li	a1, -1
+	addi	a0, a0, 48
 	sll	a0, a1, a0
 	ret
 
@@ -50,14 +50,14 @@ func000000000000001f:
 	ret
 
 func000000000000000c:
-	addi	a0, a0, -1
 	li	a1, 2
+	addi	a0, a0, -1
 	sll	a0, a1, a0
 	ret
 
 func000000000000001c:
-	addi	a0, a0, 4
 	li	a1, 2
+	addi	a0, a0, 4
 	sll	a0, a1, a0
 	ret
 

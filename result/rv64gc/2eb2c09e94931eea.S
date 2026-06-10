@@ -10,8 +10,8 @@ func0000000000000302:
 
 func0000000000000042:
 	andi	a2, a2, 15
-	addiw	a1, a1, -4
 	addi	a2, a2, -6
+	addiw	a1, a1, -4
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
@@ -22,11 +22,11 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
-	sext.w	a1, a1
 	lui	a3, 4352
 	addi	a3, a3, -256
 	and	a2, a2, a3
 	lui	a3, 4096
+	sext.w	a1, a1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	snez	a1, a1

@@ -9,18 +9,18 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	sext.w	a2, a1
-	lui	a3, 688572
-	addi	a3, a3, -363
-	mul	a2, a2, a3
-	lui	a3, 1048568
+	lui	a2, 688572
+	sext.w	a3, a1
+	addi	a2, a2, -363
+	mul	a2, a3, a2
 	srli	a2, a2, 32
 	add	a1, a1, a2
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 13
 	add	a1, a1, a2
+	lui	a2, 1048568
 	addw	a0, a0, a1
-	addi	a1, a3, 1262
+	addi	a1, a2, 1262
 	blt	a1, a0, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

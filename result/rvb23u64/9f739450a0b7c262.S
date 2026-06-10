@@ -1,8 +1,8 @@
 func0000000000000004:
 	fdiv.s	fa5, fa0, fa1
-	andi	a0, a0, 1
 	fli.s	fa0, 1.0
 	flt.s	a1, fa0, fa5
+	andi	a0, a0, 1
 	fli.s	fa4, 1.0
 	beqz	a1, .LBB0_3
 	beqz	a0, .LBB0_4

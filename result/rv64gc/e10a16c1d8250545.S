@@ -54,26 +54,26 @@ func0000000000000018:
 	ret
 
 func0000000000000034:
+	li	a3, -7
 	sub	a1, a1, a2
-	li	a2, -7
-	srli	a2, a2, 1
-	and	a1, a1, a2
+	srli	a3, a3, 1
+	and	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000026:
+	li	a3, -3
 	sub	a1, a1, a2
-	li	a2, -3
-	srli	a2, a2, 1
-	and	a1, a1, a2
+	srli	a3, a3, 1
+	and	a1, a1, a3
 	slt	a0, a0, a1
 	ret
 
 func0000000000000024:
+	li	a3, -3
 	sub	a1, a1, a2
-	li	a2, -3
-	srli	a2, a2, 1
-	and	a1, a1, a2
+	srli	a3, a3, 1
+	and	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
 

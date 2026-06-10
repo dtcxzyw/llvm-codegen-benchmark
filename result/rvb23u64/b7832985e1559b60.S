@@ -6,10 +6,10 @@ func0000000000000021:
 	ret
 
 func0000000000000188:
-	bexti	a1, a0, 32
-	srliw	a0, a0, 1
-	slli	a0, a0, 1
-	czero.eqz	a0, a1, a0
+	srliw	a1, a0, 1
+	bexti	a0, a0, 32
+	slli	a1, a1, 1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -42,12 +42,12 @@ func0000000000000028:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a0
-	li	a2, -15
-	slti	a1, a1, 8
-	slli	a2, a2, 31
-	and	a0, a0, a2
-	czero.nez	a0, a1, a0
+	li	a1, -15
+	sext.w	a2, a0
+	slli	a1, a1, 31
+	slti	a2, a2, 8
+	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func000000000000014c:
@@ -66,12 +66,12 @@ func0000000000000081:
 
 func0000000000000184:
 	lui	a1, 65535
-	srliw	a2, a0, 16
 	slli	a1, a1, 20
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	snez	a0, a0
-	slli	a2, a2, 16
-	czero.nez	a0, a0, a2
+	and	a2, a0, a1
+	xor	a1, a1, a2
+	srliw	a0, a0, 16
+	snez	a1, a1
+	slli	a0, a0, 16
+	czero.nez	a0, a1, a0
 	ret
 

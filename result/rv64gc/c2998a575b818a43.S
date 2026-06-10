@@ -15,8 +15,8 @@ func0000000000000301:
 	ret
 
 func0000000000000618:
-	sext.w	a0, a0
 	li	a1, 5
+	sext.w	a0, a0
 	bgeu	a1, a0, .LBB2_2
 	li	a0, 2
 	ret
@@ -26,8 +26,8 @@ func0000000000000618:
 	ret
 
 func0000000000000514:
-	sext.w	a0, a0
 	li	a1, 42
+	sext.w	a0, a0
 	bgeu	a0, a1, .LBB3_2
 	li	a0, 2
 	ret
@@ -46,8 +46,8 @@ func000000000000028a:
 	ret
 
 func0000000000000201:
-	sext.w	a0, a0
 	li	a1, 5
+	sext.w	a0, a0
 	bne	a0, a1, .LBB5_2
 	lui	a0, 1
 	ret
@@ -57,8 +57,8 @@ func0000000000000201:
 	ret
 
 func0000000000000286:
-	sext.w	a0, a0
 	li	a1, 256
+	sext.w	a0, a0
 	bge	a0, a1, .LBB6_2
 	li	a0, 2
 	ret
@@ -69,8 +69,8 @@ func0000000000000286:
 	ret
 
 func0000000000000281:
-	sext.w	a0, a0
 	li	a1, 5
+	sext.w	a0, a0
 	bne	a0, a1, .LBB7_2
 	li	a0, 2
 	ret

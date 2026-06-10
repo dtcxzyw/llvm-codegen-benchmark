@@ -19,8 +19,8 @@ func0000000000000021:
 func0000000000000034:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 16
 	vsrl.vi	v8, v10, 9
+	lui	a0, 16
 	addi	a0, a0, -4
 	vand.vx	v8, v8, a0
 	li	a0, -36

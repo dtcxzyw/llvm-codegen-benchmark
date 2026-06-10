@@ -1,8 +1,8 @@
 func000000000000007f:
 	sh1add	a2, a2, a2
+	add	a0, a0, a1
 	slli	a2, a2, 34
 	srli	a2, a2, 35
-	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
@@ -25,9 +25,9 @@ func0000000000000000:
 
 func0000000000000008:
 	sh3add	a2, a2, a2
-	srliw	a2, a2, 1
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	srliw	a1, a2, 1
+	addw	a0, a0, a1
 	ret
 
 func000000000000006f:

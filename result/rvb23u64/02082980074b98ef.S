@@ -1,8 +1,8 @@
 func0000000000000021:
 	zext.h	a0, a0
 	andi	a1, a1, 16
-	seqz	a1, a1
 	addi	a0, a0, -24
+	seqz	a1, a1
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

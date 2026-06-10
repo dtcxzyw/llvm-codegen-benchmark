@@ -14,9 +14,9 @@ func0000000000000000:
 	srli	a1, a0, 1
 	andi	a1, a1, 85
 	sub	a0, a0, a1
-	andi	a1, a0, 51
-	srli	a0, a0, 2
+	srli	a1, a0, 2
 	andi	a0, a0, 51
+	andi	a1, a1, 51
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
@@ -40,9 +40,9 @@ func0000000000000001:
 	srli	a1, a0, 1
 	andi	a1, a1, 85
 	sub	a0, a0, a1
-	andi	a1, a0, 51
-	srli	a0, a0, 2
+	srli	a1, a0, 2
 	andi	a0, a0, 51
+	andi	a1, a1, 51
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1

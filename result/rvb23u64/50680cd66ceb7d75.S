@@ -1,7 +1,7 @@
 func0000000000000002:
-	fmv.w.x	fa5, a1
-	fmv.w.x	fa4, zero
-	flt.s	a1, fa5, fa4
+	fmv.w.x	fa5, zero
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa4, fa5
 	and	a0, a0, a1
 	ret
 
@@ -12,9 +12,9 @@ func000000000000000e:
 	ret
 
 func0000000000000008:
+	lui	a2, 274400
 	fmv.w.x	fa5, a1
-	lui	a1, 274400
-	fmv.w.x	fa4, a1
+	fmv.w.x	fa4, a2
 	feq.s	a1, fa5, fa4
 	and	a0, a0, a1
 	ret
@@ -27,9 +27,9 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
-	fmv.w.x	fa5, a1
-	fmv.w.x	fa4, zero
-	fle.s	a1, fa4, fa5
+	fmv.w.x	fa5, zero
+	fmv.w.x	fa4, a1
+	fle.s	a1, fa5, fa4
 	and	a0, a0, a1
 	ret
 

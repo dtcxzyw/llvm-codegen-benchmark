@@ -21,8 +21,8 @@ func0000000000000024:
 func00000000000000a4:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
-	lui	a0, 1048566
 	vwaddu.wv	v8, v8, v11
+	lui	a0, 1048566
 	addi	a0, a0, 1493
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -34,8 +34,8 @@ func00000000000000a4:
 func00000000000000a8:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
-	lui	a0, 1048274
 	vwaddu.wv	v8, v8, v11
+	lui	a0, 1048274
 	addi	a1, a0, -632
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a1

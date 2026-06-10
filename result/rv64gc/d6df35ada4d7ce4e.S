@@ -1,7 +1,7 @@
 func0000000000000077:
 	or	a1, a1, a2
-	lui	a2, 1034754
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
 	addi	a1, a2, 1024
 	addw	a0, a0, a1
@@ -17,8 +17,8 @@ func0000000000000000:
 
 func0000000000000034:
 	or	a1, a1, a2
-	lui	a2, 1048561
 	slli	a1, a1, 8
+	lui	a2, 1048561
 	add	a0, a0, a1
 	addi	a2, a2, -16
 	addw	a0, a0, a2
@@ -26,8 +26,8 @@ func0000000000000034:
 
 func0000000000000037:
 	or	a1, a1, a2
-	lui	a2, 1034754
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
 	addi	a1, a2, 1024
 	addw	a0, a0, a1
@@ -35,8 +35,8 @@ func0000000000000037:
 
 func0000000000000035:
 	or	a1, a1, a2
-	lui	a2, 1034754
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
 	addi	a1, a2, 1024
 	addw	a0, a0, a1

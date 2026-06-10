@@ -1,21 +1,21 @@
 func000000000000048c:
-	zext.b	a1, a0
-	slli	a0, a0, 56
-	srai	a0, a0, 56
-	addi	a1, a1, -32
-	addi	a0, a0, -14
-	sltiu	a0, a0, -5
-	snez	a1, a1
+	slli	a1, a0, 56
+	zext.b	a0, a0
+	srai	a1, a1, 56
+	addi	a1, a1, -14
+	addi	a0, a0, -32
+	sltiu	a1, a1, -5
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000484:
-	zext.b	a1, a0
-	slli	a0, a0, 56
-	srai	a0, a0, 56
-	addi	a0, a0, -48
-	sltiu	a0, a0, 10
-	sltiu	a1, a1, 58
+	slli	a1, a0, 56
+	srai	a1, a1, 56
+	zext.b	a0, a0
+	addi	a1, a1, -48
+	sltiu	a1, a1, 10
+	sltiu	a0, a0, 58
 	and	a0, a0, a1
 	ret
 

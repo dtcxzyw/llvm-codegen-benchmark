@@ -9,8 +9,8 @@ func00000000000000a4:
 	ret
 
 func00000000000000a8:
-	snez	a0, a0
 	sltiu	a1, a2, 100
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -24,13 +24,13 @@ func00000000000000ac:
 	.quad	542101086242752217
 func00000000000000b8:
 	lui	a1, %hi(.LCPI4_0)
-	lui	a3, 500149
 	ld	a1, %lo(.LCPI4_0)(a1)
+	lui	a3, 500149
 	slli	a3, a3, 25
 	addi	a3, a3, -1
+	xor	a4, a0, a1
 	sltu	a2, a3, a2
-	xor	a3, a0, a1
-	czero.nez	a2, a2, a3
+	czero.nez	a2, a2, a4
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret

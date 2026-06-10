@@ -19,9 +19,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	fadd.s	fa5, fa1, fa2
 	lui	a0, 797452
 	addi	a0, a0, 165
+	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	beqz	a0, .LBB2_2
@@ -30,9 +30,9 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fadd.s	fa5, fa1, fa2
 	lui	a0, 273164
 	addi	a0, a0, 165
+	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	beqz	a0, .LBB3_2

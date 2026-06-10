@@ -11,9 +11,9 @@ func0000000000000029:
 
 func0000000000000021:
 	lui	a0, 958698
+	addi	a0, a0, 235
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v10, v12, v10
-	addi	a0, a0, 235
 	vmulh.vx	v12, v10, a0
 	vadd.vv	v10, v12, v10
 	vsra.vi	v10, v10, 5

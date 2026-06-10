@@ -4,16 +4,16 @@ func000000000000000d:
 	ret
 
 func0000000000000001:
-	addi	a0, a0, -48
 	lui	a1, 524288
+	addi	a0, a0, -48
 	zext.w	a0, a0
 	addiw	a1, a1, -1
 	sub	a0, a1, a0
 	ret
 
 func0000000000000009:
-	addi	a0, a0, -48
 	lui	a1, 524288
+	addi	a0, a0, -48
 	zext.w	a0, a0
 	addiw	a1, a1, -1
 	sub	a0, a1, a0
@@ -30,8 +30,8 @@ func000000000000001d:
 	ret
 
 func000000000000001f:
-	addiw	a0, a0, 1
 	lui	a1, 2
+	addiw	a0, a0, 1
 	addi	a1, a1, 1808
 	sub	a0, a1, a0
 	ret

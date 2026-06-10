@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func000000000000001d:
-	addi	a0, a0, 2
 	li	a1, -1
+	addi	a0, a0, 2
 	sll	a0, a1, a0
 	ret
 

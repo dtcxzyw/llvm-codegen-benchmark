@@ -38,8 +38,8 @@ func0000000000000000:
 
 func000000000000007e:
 	sext.w	a2, a2
-	sext.w	a0, a0
 	sh1add	a2, a2, a2
+	sext.w	a0, a0
 	sh3add	a1, a2, a1
 	sh1add	a0, a0, a0
 	sh3add	a0, a0, a1

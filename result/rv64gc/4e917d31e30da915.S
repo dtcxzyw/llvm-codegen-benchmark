@@ -19,9 +19,9 @@ func000000000000000e:
 	ret
 
 func0000000000000006:
-	slli	a0, a0, 56
 	lui	a1, 30667
 	addi	a1, a1, 1329
+	slli	a0, a0, 56
 	slli	a1, a1, 8
 	mulhu	a0, a0, a1
 	srli	a0, a0, 27

@@ -15,8 +15,8 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
-	sraiw	a1, a1, 16
 	li	a2, 104
+	sraiw	a1, a1, 16
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

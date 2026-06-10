@@ -6,8 +6,8 @@ func0000000000000008:
 	ret
 
 func00000000000007f8:
-	addiw	a2, a2, 8
 	sext.w	a1, a1
+	addiw	a2, a2, 8
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
@@ -19,8 +19,8 @@ func00000000000006f8:
 	ret
 
 func00000000000003f8:
-	addiw	a2, a2, -8
 	sext.w	a1, a1
+	addiw	a2, a2, -8
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret

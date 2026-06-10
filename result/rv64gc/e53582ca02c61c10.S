@@ -9,8 +9,8 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	addiw	a0, a0, -48
 	li	a1, -1
+	addiw	a0, a0, -48
 	srli	a1, a1, 1
 	xor	a0, a0, a1
 	ret

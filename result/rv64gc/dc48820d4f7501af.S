@@ -1,7 +1,7 @@
 func0000000000000058:
 	lui	a2, 4
-	addiw	a0, a0, -9
 	and	a1, a1, a2
+	addiw	a0, a0, -9
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

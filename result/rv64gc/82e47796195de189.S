@@ -5,10 +5,10 @@ func0000000000000013:
 	ret
 
 func00000000000000d0:
+	lui	a3, 3
 	add	a0, a0, a2
-	lui	a2, 3
 	add	a0, a0, a1
-	addi	a1, a2, -1601
+	addi	a1, a3, -1601
 	add	a0, a0, a1
 	ret
 
@@ -42,16 +42,16 @@ func0000000000000010:
 	ret
 
 func00000000000000ff:
+	lui	a3, 178
 	add	a0, a0, a2
-	lui	a2, 178
 	add	a0, a0, a1
-	addi	a1, a2, 230
+	addi	a1, a3, 230
 	add	a0, a0, a1
 	ret
 
 func00000000000000ea:
-	slli	a0, a0, 2
 	slli	a1, a1, 2
+	slli	a0, a0, 2
 	add	a0, a0, a2
 	lui	a2, 305
 	add	a0, a0, a1
@@ -60,8 +60,8 @@ func00000000000000ea:
 	ret
 
 func00000000000000ec:
-	slli	a0, a0, 2
 	slli	a1, a1, 2
+	slli	a0, a0, 2
 	add	a0, a0, a2
 	lui	a2, 305
 	add	a0, a0, a1
@@ -70,8 +70,8 @@ func00000000000000ec:
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 2
 	slli	a1, a1, 2
+	slli	a0, a0, 2
 	add	a0, a0, a2
 	lui	a2, 320
 	add	a0, a0, a1
@@ -80,8 +80,8 @@ func000000000000002a:
 	ret
 
 func000000000000002c:
-	slli	a0, a0, 2
 	slli	a1, a1, 2
+	slli	a0, a0, 2
 	add	a0, a0, a2
 	lui	a2, 320
 	add	a0, a0, a1
@@ -90,9 +90,9 @@ func000000000000002c:
 	ret
 
 func00000000000000db:
+	slli	a1, a1, 2
 	slli	a0, a0, 2
 	add	a0, a0, a2
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 20
 	ret
@@ -110,9 +110,9 @@ func000000000000008f:
 	ret
 
 func00000000000000cf:
+	slli	a1, a1, 3
 	slli	a0, a0, 3
 	add	a0, a0, a2
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
@@ -124,25 +124,25 @@ func00000000000000fb:
 	ret
 
 func0000000000000092:
+	slli	a1, a1, 3
 	slli	a0, a0, 3
 	add	a0, a0, a2
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, -16
 	ret
 
 func0000000000000090:
+	slli	a1, a1, 2
 	slli	a0, a0, 2
 	add	a0, a0, a2
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
 
 func00000000000000ce:
+	slli	a1, a1, 2
 	slli	a0, a0, 2
 	add	a0, a0, a2
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
@@ -154,17 +154,17 @@ func00000000000000da:
 	ret
 
 func000000000000009c:
+	slli	a1, a1, 2
 	slli	a0, a0, 2
 	add	a0, a0, a2
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
 
 func00000000000000b0:
+	slli	a1, a1, 3
 	slli	a0, a0, 3
 	add	a0, a0, a2
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
 

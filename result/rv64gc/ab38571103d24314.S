@@ -7,8 +7,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	slli	a1, a1, 3
 	andi	a0, a0, 1
+	slli	a1, a1, 3
 	slli	a0, a0, 2
 	or	a0, a0, a1
 	addiw	a0, a0, 3
@@ -20,15 +20,15 @@ func0000000000000001:
 	bnez	a2, .LBB2_2
 	lui	a1, 1040384
 	addi	a1, a1, 575
-	lui	a2, 128
-	or	a0, a0, a2
+	or	a0, a0, a1
+	lui	a1, 128
 	or	a0, a0, a1
 	ret
 .LBB2_2:
 	lui	a1, 1040385
 	addi	a1, a1, -1473
-	lui	a2, 128
-	or	a0, a0, a2
+	or	a0, a0, a1
+	lui	a1, 128
 	or	a0, a0, a1
 	ret
 

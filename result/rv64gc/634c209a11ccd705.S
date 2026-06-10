@@ -1,15 +1,15 @@
 func0000000000000010:
-	and	a0, a0, a1
 	fmv.w.x	fa5, zero
-	feq.s	a1, fa0, fa5
-	or	a0, a0, a1
+	feq.s	a2, fa0, fa5
+	and	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000004:
+	lui	a2, 260096
+	fmv.w.x	fa5, a2
+	flt.s	a2, fa0, fa5
 	and	a0, a0, a1
-	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

@@ -9,10 +9,10 @@ func0000000000000042:
 	ret
 
 func00000000000000a5:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfsub.vv	v8, v8, v12
 	lui	a0, 988319
 	addi	a0, a0, 714
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vfsub.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0

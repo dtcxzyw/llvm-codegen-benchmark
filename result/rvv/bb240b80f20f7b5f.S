@@ -1,7 +1,7 @@
 func0000000000000002:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.x.v	v8, v8
-	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
 	vmerge.vim	v8, v8, 0, v0
 	ret
@@ -15,9 +15,9 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.x.v	v8, v8
-	fmv.w.x	fa5, zero
 	vmfgt.vf	v0, v8, fa5
 	vmerge.vim	v8, v8, 0, v0
 	ret

@@ -51,9 +51,9 @@ func0000000000000041:
 func0000000000000078:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	li	a0, -1
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
+	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -92,12 +92,12 @@ func0000000000000026:
 .LCPI11_0:
 	.quad	999999999999999999
 func0000000000000048:
-	lui	a0, %hi(.LCPI11_0)
-	ld	a0, %lo(.LCPI11_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	lui	a0, %hi(.LCPI11_0)
 	vadd.vv	v8, v8, v10
+	ld	a0, %lo(.LCPI11_0)(a0)
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -111,9 +111,9 @@ func0000000000000021:
 func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	li	a0, -1
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
+	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -126,16 +126,15 @@ func000000000000002a:
 	vmsgt.vi	v0, v8, 0
 	ret
 
+.LCPI15_0:
+	.quad	10000000000000000
 func0000000000000044:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	lui	a0, 9095
 	vmerge.vim	v10, v10, 1, v0
-	addi	a0, a0, -217
+	lui	a0, %hi(.LCPI15_0)
 	vadd.vv	v8, v8, v10
-	slli	a0, a0, 12
-	addi	a0, a0, -63
-	slli	a0, a0, 16
+	ld	a0, %lo(.LCPI15_0)(a0)
 	vmsltu.vx	v0, v8, a0
 	ret
 
@@ -150,9 +149,9 @@ func000000000000006c:
 func0000000000000068:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	li	a0, -2
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
+	li	a0, -2
 	zext.w	a0, a0
 	vmsgtu.vx	v0, v8, a0
 	ret

@@ -10,8 +10,8 @@ func0000000000000021:
 
 func0000000000000001:
 	andi	a1, a1, 1
-	lui	a3, 16
 	slli	a1, a1, 5
+	lui	a3, 16
 	srl	a1, a2, a1
 	addi	a3, a3, -1
 	and	a2, a1, a3

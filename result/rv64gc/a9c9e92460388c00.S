@@ -21,8 +21,8 @@ func0000000000000077:
 	ret
 
 func0000000000000017:
-	slli	a1, a1, 32
 	zext.b	a0, a0
+	slli	a1, a1, 32
 	slli	a0, a0, 24
 	or	a0, a0, a1
 	ret
@@ -35,8 +35,8 @@ func000000000000001d:
 	ret
 
 func000000000000005f:
-	slli	a1, a1, 40
 	zext.b	a0, a0
+	slli	a1, a1, 40
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
@@ -55,8 +55,8 @@ func0000000000000050:
 	ret
 
 func0000000000000037:
-	slli	a1, a1, 32
 	zext.b	a0, a0
+	slli	a1, a1, 32
 	slli	a0, a0, 16
 	or	a0, a0, a1
 	ret

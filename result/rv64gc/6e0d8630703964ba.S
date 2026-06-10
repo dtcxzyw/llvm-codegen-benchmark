@@ -21,12 +21,12 @@ func0000000000000007:
 
 func000000000000000e:
 	srli	a1, a1, 10
+	lui	a2, 3
 	add	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, 48
+	addi	a1, a2, 48
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	ret
 

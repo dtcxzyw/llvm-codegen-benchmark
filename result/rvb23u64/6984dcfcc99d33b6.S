@@ -1,22 +1,22 @@
 func000000000000002c:
 	lui	a0, %hi(.promoted_doubles.func000000000000002c)
 	addi	a0, a0, %lo(.promoted_doubles.func000000000000002c)
-	fld	fa5, 0(a0)
-	fld	fa4, 8(a0)
-	fcvt.d.s	fa3, fa0
-	fle.d	a0, fa5, fa3
-	flt.d	a1, fa3, fa4
+	fcvt.d.s	fa5, fa0
+	fld	fa4, 0(a0)
+	fld	fa3, 8(a0)
+	fle.d	a0, fa4, fa5
+	flt.d	a1, fa5, fa3
 	and	a0, a0, a1
 	ret
 
 func0000000000000035:
 	lui	a0, %hi(.promoted_doubles.func0000000000000035)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000035)
-	fld	fa5, 0(a0)
-	fld	fa4, 8(a0)
-	fcvt.d.s	fa3, fa0
-	fle.d	a0, fa3, fa5
-	fle.d	a1, fa4, fa3
+	fcvt.d.s	fa5, fa0
+	fld	fa4, 0(a0)
+	fld	fa3, 8(a0)
+	fle.d	a0, fa5, fa4
+	fle.d	a1, fa3, fa5
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -24,11 +24,11 @@ func0000000000000035:
 func0000000000000024:
 	lui	a0, %hi(.promoted_doubles.func0000000000000024)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000024)
-	fld	fa5, 0(a0)
-	fld	fa4, 8(a0)
-	fcvt.d.s	fa3, fa0
-	flt.d	a0, fa5, fa3
-	flt.d	a1, fa3, fa4
+	fcvt.d.s	fa5, fa0
+	fld	fa4, 0(a0)
+	fld	fa3, 8(a0)
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa5, fa3
 	and	a0, a0, a1
 	ret
 

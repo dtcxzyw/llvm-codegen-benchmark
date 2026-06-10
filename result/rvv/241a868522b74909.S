@@ -36,10 +36,11 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 4, e64, m2, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v13, 0
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmv.v.i	v13, 0
 	vwsub.vv	v10, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v8, v10
@@ -57,9 +58,9 @@ func00000000000000aa:
 func00000000000000b8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	lui	a0, 524288
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v12
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0

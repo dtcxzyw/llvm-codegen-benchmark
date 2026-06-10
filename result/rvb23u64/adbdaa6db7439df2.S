@@ -15,9 +15,9 @@ func0000000000000000:
 	ret
 
 func0000000000000030:
-	lui	a3, 1048512
-	and	a1, a1, a3
 	lui	a3, 64
+	lui	a4, 1048512
+	and	a1, a1, a4
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -52,9 +52,9 @@ func000000000000001d:
 func0000000000000020:
 	lui	a3, 1048575
 	and	a2, a2, a3
+	lui	a4, 6
 	and	a1, a1, a3
-	lui	a3, 6
-	addi	a3, a3, 1211
+	addi	a3, a4, 1211
 	add	a0, a0, a2
 	add	a1, a1, a3
 	addw	a0, a0, a1

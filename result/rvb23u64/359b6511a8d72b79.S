@@ -1,11 +1,11 @@
 func0000000000000000:
-	slli	a3, a2, 7
-	lui	a4, 5030
+	lui	a3, 5030
+	slli	a4, a2, 7
+	addi	a3, a3, -1875
+	slli	a3, a3, 7
 	xor	a0, a0, a1
-	addi	a1, a4, -1875
-	slli	a1, a1, 7
-	and	a1, a1, a3
+	and	a3, a3, a4
 	xor	a0, a0, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a3
 	ret
 

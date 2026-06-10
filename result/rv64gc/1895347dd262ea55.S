@@ -1,8 +1,8 @@
 func000000000000000f:
-	srli	a2, a2, 4
 	lui	a3, 838861
 	addi	a3, a3, -819
 	slli	a4, a3, 32
+	srli	a2, a2, 4
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	bltu	a2, a1, .LBB0_2

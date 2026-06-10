@@ -1,9 +1,9 @@
 func000000000000001c:
 	sext.w	a1, a1
 	slli	a1, a1, 3
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, 360
+	addi	a1, a2, 360
 	add	a0, a0, a1
 	ret
 

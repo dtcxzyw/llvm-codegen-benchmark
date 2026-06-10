@@ -1,7 +1,7 @@
 func000000000000000c:
-	zext.b	a2, a2
 	mul	a0, a0, a1
-	add	a0, a0, a2
+	zext.b	a1, a2
+	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 

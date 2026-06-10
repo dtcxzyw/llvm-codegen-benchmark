@@ -71,8 +71,8 @@ func0000000000000051:
 	ret
 
 func0000000000000023:
-	srli	a1, a1, 7
 	li	a2, 424
+	srli	a1, a1, 7
 	bgeu	a2, a1, .LBB9_2
 	li	a0, 107
 	ret

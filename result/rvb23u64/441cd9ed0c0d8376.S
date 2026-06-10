@@ -24,12 +24,11 @@ func0000000000000008:
 	addw	a0, a0, a1
 	ret
 
+.LCPI3_0:
+	.quad	196742565691928
 func000000000000006d:
-	lui	a2, 732923
-	slli.uw	a2, a2, 1
-	addi	a2, a2, 1403
-	slli	a2, a2, 15
-	addi	a2, a2, 536
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	mul	a1, a1, a2
 	srli	a1, a1, 48
 	addw	a0, a0, a1
@@ -60,12 +59,11 @@ func000000000000006f:
 	addw	a0, a0, a1
 	ret
 
+.LCPI7_0:
+	.quad	8922571613522624512
 func000000000000000f:
-	lui	a2, 15850
-	addi	a2, a2, -1347
-	slli	a2, a2, 13
-	addi	a2, a2, -1069
-	slli	a2, a2, 24
+	lui	a2, %hi(.LCPI7_0)
+	ld	a2, %lo(.LCPI7_0)(a2)
 	mul	a1, a1, a2
 	srli	a1, a1, 47
 	addw	a0, a0, a1

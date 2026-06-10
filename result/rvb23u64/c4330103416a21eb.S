@@ -1,12 +1,12 @@
 func0000000000000008:
+	li	a2, -17
 	sub	a0, a0, a1
-	li	a1, -17
-	li	a2, -2
-	srli	a1, a1, 2
-	bclri	a2, a2, 62
-	sltu	a1, a1, a0
-	czero.nez	a0, a0, a1
-	czero.eqz	a1, a2, a1
+	srli	a2, a2, 2
+	li	a1, -2
+	sltu	a2, a2, a0
+	bclri	a1, a1, 62
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

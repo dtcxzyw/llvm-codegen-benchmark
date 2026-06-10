@@ -13,8 +13,8 @@ func000000000000002b:
 
 func000000000000007f:
 	slli.uw	a2, a2, 4
-	sext.w	a1, a1
 	sh1add	a2, a2, a2
+	sext.w	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

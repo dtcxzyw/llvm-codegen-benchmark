@@ -7,10 +7,10 @@ func000000000000042c:
 	ret
 
 func0000000000000021:
+	lui	a3, 524288
+	addi	a3, a3, -2
+	and	a0, a0, a3
 	or	a1, a1, a2
-	lui	a2, 524288
-	addi	a2, a2, -2
-	and	a0, a0, a2
 	xori	a0, a0, 16
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -45,8 +45,8 @@ func000000000000058c:
 
 func0000000000000581:
 	or	a1, a1, a2
-	lui	a2, 64
 	sext.w	a1, a1
+	lui	a2, 64
 	snez	a1, a1
 	and	a0, a0, a2
 	czero.nez	a0, a1, a0

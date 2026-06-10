@@ -8,8 +8,8 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
-	sub	a1, a1, a0
 	li	a2, 1
+	sub	a1, a1, a0
 	slli	a2, a2, 11
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
@@ -27,8 +27,8 @@ func0000000000000014:
 	ret
 
 func000000000000000d:
-	sub	a1, a1, a0
 	li	a2, 1
+	sub	a1, a1, a0
 	slli	a2, a2, 11
 	bltu	a1, a2, .LBB3_2
 	mv	a1, a2
@@ -55,8 +55,8 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	sub	a1, a1, a0
 	li	a2, 1
+	sub	a1, a1, a0
 	slli	a2, a2, 11
 	bltu	a1, a2, .LBB6_2
 	mv	a1, a2

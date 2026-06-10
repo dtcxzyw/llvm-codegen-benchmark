@@ -42,10 +42,10 @@ func000000000000000b:
 func000000000000001b:
 	slli	a2, a2, 2
 	lui	a3, 4
+	addi	a3, a3, -256
 	add	a0, a0, a1
-	addi	a1, a3, -256
-	and	a1, a1, a2
+	and	a2, a2, a3
 	andi	a0, a0, 63
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

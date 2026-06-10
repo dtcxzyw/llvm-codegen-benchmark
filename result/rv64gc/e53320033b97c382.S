@@ -1,11 +1,11 @@
 func0000000000000008:
 	lui	a3, 4
-	li	a4, 1
 	addi	a3, a3, 423
-	slli	a4, a4, 33
 	mul	a2, a2, a3
-	addi	a4, a4, 5
-	mulhu	a3, a2, a4
+	li	a3, 1
+	slli	a3, a3, 33
+	addi	a3, a3, 5
+	mulhu	a3, a2, a3
 	sub	a4, a2, a3
 	srli	a4, a4, 1
 	add	a3, a3, a4
@@ -19,12 +19,12 @@ func0000000000000008:
 
 func0000000000000004:
 	lui	a3, 4
-	li	a4, 1
 	addi	a3, a3, 423
-	slli	a4, a4, 33
 	mul	a2, a2, a3
-	addi	a4, a4, 5
-	mulhu	a3, a2, a4
+	li	a3, 1
+	slli	a3, a3, 33
+	addi	a3, a3, 5
+	mulhu	a3, a2, a3
 	sub	a4, a2, a3
 	srli	a4, a4, 1
 	add	a3, a3, a4
@@ -38,12 +38,12 @@ func0000000000000004:
 
 func0000000000000028:
 	lui	a3, 4
-	li	a4, 1
 	addi	a3, a3, 423
-	slli	a4, a4, 33
 	mul	a2, a2, a3
-	addi	a4, a4, 5
-	mulhu	a3, a2, a4
+	li	a3, 1
+	slli	a3, a3, 33
+	addi	a3, a3, 5
+	mulhu	a3, a2, a3
 	sub	a4, a2, a3
 	srli	a4, a4, 1
 	add	a3, a3, a4
@@ -57,12 +57,12 @@ func0000000000000028:
 
 func0000000000000024:
 	lui	a3, 4
-	li	a4, 1
 	addi	a3, a3, 423
-	slli	a4, a4, 33
 	mul	a2, a2, a3
-	addi	a4, a4, 5
-	mulhu	a3, a2, a4
+	li	a3, 1
+	slli	a3, a3, 33
+	addi	a3, a3, 5
+	mulhu	a3, a2, a3
 	sub	a4, a2, a3
 	srli	a4, a4, 1
 	add	a3, a3, a4

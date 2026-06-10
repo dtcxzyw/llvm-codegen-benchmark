@@ -6,8 +6,8 @@ func0000000000000044:
 	ret
 
 func000000000000008c:
-	sext.w	a0, a0
 	srli	a1, a1, 3
+	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -15,8 +15,8 @@ func000000000000008c:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	srli	a1, a1, 2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

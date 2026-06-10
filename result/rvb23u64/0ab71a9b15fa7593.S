@@ -8,8 +8,8 @@ func000000000000008d:
 	ret
 
 func0000000000000089:
-	zext.w	a1, a1
 	srliw	a0, a0, 24
+	zext.w	a1, a1
 	sltiu	a0, a0, 7
 	czero.nez	a0, a1, a0
 	bset	a0, zero, a0
@@ -35,8 +35,8 @@ func00000000000000a9:
 	ret
 
 func00000000000000c9:
-	zext.w	a1, a1
 	srliw	a0, a0, 27
+	zext.w	a1, a1
 	sltiu	a0, a0, 7
 	czero.nez	a0, a1, a0
 	bset	a0, zero, a0
@@ -62,8 +62,8 @@ func00000000000000a8:
 	ret
 
 func0000000000000088:
-	zext.w	a1, a1
 	srliw	a0, a0, 27
+	zext.w	a1, a1
 	sltiu	a0, a0, 3
 	czero.nez	a0, a1, a0
 	bset	a0, zero, a0

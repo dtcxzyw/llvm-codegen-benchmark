@@ -2,8 +2,8 @@ func0000000000000021:
 	andi	a1, a1, 1
 	zext.b	a3, a0
 	addi	a3, a3, -47
-	czero.nez	a1, a2, a1
 	czero.eqz	a0, a0, a3
+	czero.nez	a1, a2, a1
 	zext.b	a0, a0
 	zext.b	a1, a1
 	xor	a0, a0, a1
@@ -24,8 +24,8 @@ func0000000000000026:
 	andi	a1, a1, 1
 	zext.b	a3, a0
 	addi	a3, a3, -47
-	czero.nez	a1, a2, a1
 	czero.eqz	a0, a0, a3
+	czero.nez	a1, a2, a1
 	sext.b	a0, a0
 	sext.b	a1, a1
 	slt	a0, a0, a1
@@ -35,8 +35,8 @@ func000000000000002a:
 	andi	a1, a1, 1
 	zext.b	a3, a0
 	addi	a3, a3, -47
-	czero.nez	a1, a2, a1
 	czero.eqz	a0, a0, a3
+	czero.nez	a1, a2, a1
 	sext.b	a0, a0
 	sext.b	a1, a1
 	slt	a0, a1, a0

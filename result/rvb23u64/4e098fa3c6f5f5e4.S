@@ -3,31 +3,31 @@
 func0000000000000000:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
+	mul	a0, a0, a3
 	sh3add	a2, a2, a2
 	xor	a1, a1, a2
-	mul	a0, a0, a3
 	xor	a0, a0, a1
 	ret
 
 func000000000000000f:
 	lui	a3, 18031
 	addi	a3, a3, 1117
+	lui	a4, 20384
 	mul	a2, a2, a3
-	lui	a3, 20384
-	addi	a3, a3, -73
-	xor	a0, a0, a2
+	addi	a3, a4, -73
 	mul	a1, a1, a3
+	xor	a0, a0, a2
 	xor	a0, a0, a1
 	ret
 
 func0000000000000005:
 	lui	a3, 18031
 	addi	a3, a3, 1117
+	lui	a4, 20384
 	mul	a2, a2, a3
-	lui	a3, 20384
-	addi	a3, a3, -73
-	xor	a0, a0, a2
+	addi	a3, a4, -73
 	mul	a1, a1, a3
+	xor	a0, a0, a2
 	xor	a0, a0, a1
 	ret
 

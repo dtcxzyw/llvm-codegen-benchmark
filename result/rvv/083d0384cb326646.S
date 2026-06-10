@@ -3,8 +3,8 @@ func0000000000000010:
 	vand.vi	v9, v9, 1
 	vand.vi	v8, v8, 1
 	vmsne.vi	v9, v9, 0
-	vmor.mm	v9, v0, v9
 	vmsne.vi	v8, v8, 0
+	vmor.mm	v9, v0, v9
 	vmor.mm	v0, v8, v9
 	ret
 
@@ -13,8 +13,8 @@ func0000000000000000:
 	vand.vi	v9, v9, 1
 	vand.vi	v8, v8, 1
 	vmsne.vi	v9, v9, 0
-	vmor.mm	v9, v0, v9
 	vmsne.vi	v8, v8, 0
+	vmor.mm	v9, v0, v9
 	vmor.mm	v0, v8, v9
 	ret
 
@@ -23,8 +23,8 @@ func0000000000000012:
 	vand.vi	v9, v9, 1
 	vand.vi	v8, v8, 1
 	vmsne.vi	v9, v9, 0
-	vmor.mm	v9, v0, v9
 	vmsne.vi	v8, v8, 0
+	vmor.mm	v9, v0, v9
 	vmor.mm	v0, v8, v9
 	ret
 
@@ -33,8 +33,8 @@ func0000000000000002:
 	vand.vi	v9, v9, 1
 	vand.vi	v8, v8, 1
 	vmsne.vi	v9, v9, 0
-	vmor.mm	v9, v0, v9
 	vmsne.vi	v8, v8, 0
+	vmor.mm	v9, v0, v9
 	vmor.mm	v0, v8, v9
 	ret
 

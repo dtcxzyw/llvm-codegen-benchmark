@@ -33,8 +33,8 @@ func0000000000000004:
 	.quad	0x40190a3d70a3d70a
 func0000000000000003:
 	fmv.d	fa5, fa0
-	andi	a0, a0, 1
 	fmv.d.x	fa4, zero
+	andi	a0, a0, 1
 	fmv.d	fa0, fa4
 	beqz	a0, .LBB2_3
 	lui	a0, %hi(.LCPI2_0)
@@ -72,8 +72,8 @@ func000000000000000e:
 
 func000000000000000c:
 	fmv.d	fa5, fa0
-	andi	a0, a0, 1
 	fmv.d.x	fa4, zero
+	andi	a0, a0, 1
 	fmv.d	fa0, fa4
 	beqz	a0, .LBB4_3
 	fle.d	a0, fa4, fa0

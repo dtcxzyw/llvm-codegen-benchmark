@@ -13,8 +13,8 @@ func0000000000000004:
 	ret
 
 func00000000000001e4:
-	addi	a1, a1, 7
 	bseti	a2, zero, 33
+	addi	a1, a1, 7
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	addi	a1, a1, 8

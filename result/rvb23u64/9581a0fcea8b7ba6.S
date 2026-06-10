@@ -36,8 +36,8 @@ func000000000000003c:
 	ret
 
 func000000000000007c:
-	srli	a1, a1, 1
 	bseti	a2, zero, 33
+	srli	a1, a1, 1
 	addi	a2, a2, -4
 	add	a1, a1, a2
 	and	a1, a1, a2

@@ -208,19 +208,19 @@ func0000000000000048:
 	ret
 
 func0000000000000181:
+	lui	a3, 8
 	add	a1, a1, a2
-	lui	a2, 8
-	addi	a2, a2, 7
-	add	a1, a1, a2
+	addi	a3, a3, 7
+	add	a1, a1, a3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000188:
+	lui	a3, 8
 	add	a1, a1, a2
-	lui	a2, 8
-	addi	a2, a2, 7
-	add	a1, a1, a2
+	addi	a3, a3, 7
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 

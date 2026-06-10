@@ -9,19 +9,19 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	sext.w	a3, a1
-	lui	a1, 128
-	addi	a4, a1, -2048
-	and	a2, a2, a4
+	lui	a3, 128
+	addi	a3, a3, -2048
+	and	a4, a2, a3
+	sext.w	a2, a1
 	lui	a1, 524288
-	beq	a2, a4, .LBB1_3
-	bgez	a3, .LBB1_4
+	beq	a4, a3, .LBB1_3
+	bgez	a2, .LBB1_4
 .LBB1_2:
 	mv	a0, a1
 	ret
 .LBB1_3:
 	addi	a1, a1, 64
-	bltz	a3, .LBB1_2
+	bltz	a2, .LBB1_2
 .LBB1_4:
 	ret
 

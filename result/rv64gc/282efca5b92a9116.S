@@ -7,11 +7,11 @@ func0000000000000029:
 	ret
 
 func0000000000000019:
-	sext.w	a3, a2
-	lui	a2, 524288
-	addiw	a4, a2, -9
-	blt	a3, a4, .LBB1_2
-	addi	a1, a2, -1
+	lui	a3, 524288
+	sext.w	a2, a2
+	addiw	a4, a3, -9
+	blt	a2, a4, .LBB1_2
+	addi	a1, a3, -1
 .LBB1_2:
 	subw	a0, a1, a0
 	ret

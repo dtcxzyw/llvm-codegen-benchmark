@@ -44,9 +44,9 @@ func000000000000003d:
 	ret
 
 func000000000000002c:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 32
 	vsrl.vi	v10, v10, 2
 	vsra.vx	v8, v8, a0
 	vsub.vv	v8, v8, v10
@@ -54,9 +54,9 @@ func000000000000002c:
 	ret
 
 func000000000000002f:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 32
 	vsrl.vi	v10, v10, 2
 	vsra.vx	v8, v8, a0
 	vsub.vv	v8, v8, v10
@@ -75,8 +75,8 @@ func000000000000003e:
 func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v8, v8, 3
 	vsrl.vi	v10, v10, 3
+	vsrl.vi	v8, v8, 3
 	vsub.vv	v8, v8, v10
 	li	a0, 32
 	vsll.vx	v8, v8, a0

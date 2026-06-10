@@ -24,9 +24,9 @@ func0000000000000006:
 	bnez	a0, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	sraiw	a0, a1, 31
-	lui	a1, 524288
-	addiw	a1, a1, -1
+	lui	a0, 524288
+	sraiw	a1, a1, 31
+	addiw	a0, a0, -1
 	xor	a0, a0, a1
 	ret
 

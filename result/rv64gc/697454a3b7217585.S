@@ -6,9 +6,9 @@ func0000000000000003:
 
 func0000000000000002:
 	li	a1, 1
+	lui	a2, 1048569
 	sll	a0, a1, a0
-	lui	a1, 1048569
-	addi	a1, a1, 63
+	addi	a1, a2, 63
 	and	a0, a0, a1
 	ret
 

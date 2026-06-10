@@ -1,7 +1,7 @@
 func0000000000000050:
+	li	a0, 169
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v12, v10, 10
-	li	a0, 169
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -10,9 +10,9 @@ func0000000000000050:
 	ret
 
 func0000000000000318:
+	li	a0, 36
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 36
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -41,10 +41,10 @@ func0000000000000302:
 	ret
 
 func0000000000000310:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsne.vi	v12, v10, 0
 	li	a0, -1
 	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsne.vi	v12, v10, 0
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma

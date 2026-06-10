@@ -16,18 +16,18 @@ func000000000000002f:
 func000000000000007f:
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
+	lui	a2, 56
 	add	a0, a0, a1
-	lui	a1, 56
-	addi	a1, a1, 4
-	add	a0, a0, a1
+	addi	a2, a2, 4
+	add	a0, a0, a2
 	ret
 
 func0000000000000073:
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
+	lui	a2, 48
 	add	a0, a0, a1
-	lui	a1, 48
-	addi	a1, a1, 512
+	addi	a1, a2, 512
 	add	a0, a0, a1
 	ret
 

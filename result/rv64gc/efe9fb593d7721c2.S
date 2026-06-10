@@ -6,9 +6,9 @@ func000000000000001f:
 	ret
 
 func0000000000000033:
+	li	a2, 816
 	slli	a1, a1, 59
 	srli	a1, a1, 63
-	li	a2, 816
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8

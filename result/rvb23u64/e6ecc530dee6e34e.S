@@ -72,8 +72,8 @@ func00000000000000d4:
 	srli	a1, a1, 63
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
-	lui	a1, 524288
 	or	a0, a0, a2
+	lui	a1, 524288
 	sext.w	a0, a0
 	addiw	a1, a1, -10
 	sltu	a0, a0, a1

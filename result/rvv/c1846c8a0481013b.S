@@ -75,9 +75,9 @@ func00000000000000aa:
 func00000000000000a6:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 16
-	lui	a0, 1048564
 	vsra.vi	v10, v10, 16
 	vadd.vv	v8, v8, v10
+	lui	a0, 1048564
 	addi	a0, a0, -1930
 	vmslt.vx	v0, v8, a0
 	ret

@@ -20,10 +20,10 @@ func0000000000000002:
 func0000000000000005:
 	fli.s	fa5, 1.0
 	fdiv.s	fa5, fa5, fa2
-	lui	a0, 260096
-	addi	a0, a0, 839
 	fmul.s	fa4, fa0, fa5
 	fmul.s	fa5, fa1, fa5
+	lui	a0, 260096
+	addi	a0, a0, 839
 	fadd.s	fa5, fa4, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4

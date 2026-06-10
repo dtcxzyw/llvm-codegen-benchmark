@@ -4,9 +4,9 @@ func00000000000000a4:
 	vadd.vx	v10, v10, a0
 	lui	a0, 425
 	addi	a0, a0, 847
+	vmul.vx	v12, v10, a0
 	vsub.vv	v8, v8, v10
-	vmul.vx	v10, v10, a0
-	vsra.vi	v10, v10, 19
+	vsra.vi	v10, v12, 19
 	vadd.vv	v8, v8, v10
 	ret
 
@@ -16,9 +16,9 @@ func00000000000000a5:
 	vadd.vx	v10, v10, a0
 	lui	a0, 425
 	addi	a0, a0, 847
+	vmul.vx	v12, v10, a0
 	vsub.vv	v8, v8, v10
-	vmul.vx	v10, v10, a0
-	vsra.vi	v10, v10, 19
+	vsra.vi	v10, v12, 19
 	vadd.vv	v8, v8, v10
 	ret
 

@@ -8,8 +8,8 @@ func000000000000003f:
 
 func0000000000000033:
 	slli	a1, a1, 58
-	li	a2, 140
 	srli	a1, a1, 61
+	li	a2, 140
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	li	a1, 1626
@@ -18,8 +18,8 @@ func0000000000000033:
 
 func0000000000000030:
 	slli	a1, a1, 58
-	li	a2, 140
 	srli	a1, a1, 61
+	li	a2, 140
 	mul	a1, a1, a2
 	lui	a2, 3
 	addi	a2, a2, 724

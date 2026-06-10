@@ -21,10 +21,10 @@ func0000000000000037:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 8
 	li	a2, 1
-	slli	a0, a0, 32
+	slli	a1, a1, 8
 	slli	a2, a2, 31
+	slli	a0, a0, 32
 	or	a1, a1, a2
 	srli	a0, a0, 32
 	mul	a0, a1, a0

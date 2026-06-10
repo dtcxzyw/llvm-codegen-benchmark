@@ -4,8 +4,8 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	lui	a1, 1
+	sext.w	a0, a0
 	addi	a1, a1, 1
 	slt	a0, a0, a1
 	ret

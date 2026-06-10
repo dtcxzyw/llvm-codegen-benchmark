@@ -1,7 +1,7 @@
 func0000000000000014:
+	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
-	bseti	a0, zero, 31
 	vmsltu.vx	v0, v10, a0
 	li	a0, 470
 	vsetvli	zero, zero, e16, mf2, ta, ma

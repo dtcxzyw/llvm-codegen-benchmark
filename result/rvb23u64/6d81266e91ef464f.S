@@ -6,10 +6,10 @@ func0000000000000009:
 	ret
 
 func000000000000000d:
-	addiw	a1, a1, -6
 	lui	a2, 1048320
-	slli	a0, a0, 32
+	addiw	a1, a1, -6
 	czero.eqz	a1, a2, a1
+	slli	a0, a0, 32
 	lui	a2, 79688
 	add	a0, a0, a1
 	addi	a2, a2, 1
@@ -17,8 +17,8 @@ func000000000000000d:
 	ret
 
 func0000000000000057:
-	srliw	a1, a1, 31
 	li	a2, -1
+	srliw	a1, a1, 31
 	slli	a2, a2, 56
 	czero.eqz	a1, a2, a1
 	slli	a0, a0, 24

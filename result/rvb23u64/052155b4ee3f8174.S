@@ -13,8 +13,8 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
-	srli	a2, a2, 3
 	slli	a1, a1, 43
+	srli	a2, a2, 3
 	srli	a1, a1, 43
 	mul	a1, a1, a2
 	add	a0, a0, a1

@@ -27,16 +27,16 @@ func00000000000000ac:
 .LCPI4_0:
 	.quad	542101086242752217
 func00000000000000b8:
+	lui	a3, %hi(.LCPI4_0)
+	ld	a3, %lo(.LCPI4_0)(a3)
+	lui	a4, 500149
+	slli	a4, a4, 25
 	or	a1, a1, a2
-	lui	a2, %hi(.LCPI4_0)
-	lui	a3, 500149
-	ld	a2, %lo(.LCPI4_0)(a2)
-	slli	a3, a3, 25
-	addi	a3, a3, -1
-	sltu	a0, a3, a0
-	xor	a3, a1, a2
-	czero.nez	a0, a0, a3
-	sltu	a1, a2, a1
+	addi	a4, a4, -1
+	xor	a2, a1, a3
+	sltu	a0, a4, a0
+	czero.nez	a0, a0, a2
+	sltu	a1, a3, a1
 	or	a0, a0, a1
 	ret
 
@@ -52,8 +52,8 @@ func00000000000000b4:
 
 func00000000000000aa:
 	or	a1, a1, a2
-	snez	a0, a0
 	sgtz	a2, a1
+	snez	a0, a0
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2

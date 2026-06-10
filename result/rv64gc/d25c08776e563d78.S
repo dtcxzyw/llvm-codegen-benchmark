@@ -1,6 +1,6 @@
 func000000000000000c:
-	srli	a0, a0, 56
 	lui	a1, 440584
+	srli	a0, a0, 56
 	addi	a1, a1, 985
 	mulw	a0, a0, a1
 	ret
@@ -11,21 +11,21 @@ func0000000000000010:
 	ret
 
 func0000000000000009:
-	srli	a0, a0, 32
 	li	a1, 1000
+	srli	a0, a0, 32
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000008:
-	srli	a0, a0, 32
 	lui	a1, 548541
+	srli	a0, a0, 32
 	addi	a1, a1, -1417
 	mulw	a0, a0, a1
 	ret
 
 func000000000000000f:
-	srli	a0, a0, 59
 	lui	a1, 2
+	srli	a0, a0, 59
 	addi	a1, a1, -1089
 	mul	a0, a0, a1
 	ret
@@ -43,34 +43,34 @@ func0000000000000000:
 	ret
 
 func000000000000000a:
-	srli	a0, a0, 32
 	li	a1, 100
+	srli	a0, a0, 32
 	mulw	a0, a0, a1
 	ret
 
 func000000000000000d:
-	srli	a0, a0, 32
 	li	a1, -100
+	srli	a0, a0, 32
 	mulw	a0, a0, a1
 	ret
 
 func0000000000000018:
-	srli	a0, a0, 32
 	lui	a1, 1
+	srli	a0, a0, 32
 	addi	a1, a1, -27
 	mulw	a0, a0, a1
 	ret
 
 func000000000000000b:
-	srli	a0, a0, 32
 	lui	a1, 1
+	srli	a0, a0, 32
 	addi	a1, a1, -496
 	mulw	a0, a0, a1
 	ret
 
 func000000000000000e:
-	srli	a0, a0, 40
 	lui	a1, 1
+	srli	a0, a0, 40
 	addi	a1, a1, 1147
 	mulw	a0, a0, a1
 	ret

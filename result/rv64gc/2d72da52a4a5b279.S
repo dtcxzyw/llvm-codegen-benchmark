@@ -1,7 +1,7 @@
 func0000000000000041:
 	zext.b	a0, a0
-	slliw	a1, a1, 3
 	seqz	a0, a0
+	slliw	a1, a1, 3
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -16,8 +16,8 @@ func0000000000000061:
 	ret
 
 func0000000000000068:
-	zext.b	a0, a0
 	li	a2, 13
+	zext.b	a0, a0
 	bgeu	a2, a0, .LBB2_2
 	lui	a0, 8
 	ret
@@ -27,8 +27,8 @@ func0000000000000068:
 
 func0000000000000001:
 	zext.b	a0, a0
-	slliw	a1, a1, 1
 	seqz	a0, a0
+	slliw	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

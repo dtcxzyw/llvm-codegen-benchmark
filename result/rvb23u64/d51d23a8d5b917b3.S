@@ -1,6 +1,6 @@
 func00000000000002a8:
-	sext.h	a3, a0
 	srliw	a2, a2, 16
+	sext.h	a3, a0
 	sgtz	a3, a3
 	czero.nez	a1, a1, a3
 	czero.eqz	a2, a2, a3

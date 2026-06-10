@@ -101,9 +101,9 @@ func0000000000000032:
 	ret
 
 func0000000000000020:
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, -1487
+	addi	a1, a2, -1487
 	add	a0, a0, a1
 	ret
 

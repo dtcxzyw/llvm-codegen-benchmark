@@ -13,10 +13,10 @@ func000000000000000c:
 	lui	a0, 4105
 	slli	a0, a0, 38
 	fmv.d.x	fa5, a0
-	li	a0, 511
-	slli	a0, a0, 53
 	fmul.d	fa5, fa1, fa5
+	li	a0, 511
 	fsub.d	fa5, fa5, fa0
+	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
 	ret

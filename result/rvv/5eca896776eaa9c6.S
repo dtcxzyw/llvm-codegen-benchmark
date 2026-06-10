@@ -10,11 +10,12 @@ func0000000000000003:
 	ret
 
 func0000000000000015:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, 0
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsgt.vi	v0, v10, 0
 	li	a0, 120
+	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vim	v9, v9, 1, v0
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v9, v8
@@ -23,11 +24,12 @@ func0000000000000015:
 	ret
 
 func0000000000000009:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v10, 1
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsleu.vi	v0, v10, 1
 	li	a0, -32
+	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vim	v9, v9, 1, v0
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v9, v8

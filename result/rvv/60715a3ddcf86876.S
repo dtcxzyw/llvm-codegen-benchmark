@@ -1,13 +1,13 @@
 func0000000000000000:
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmv1r.v	v10, v0
-	vmv1r.v	v0, v9
 	li	a0, -55
-	vmv.v.x	v9, a0
+	vmv.v.x	v11, a0
+	vmv1r.v	v0, v9
 	li	a0, -87
-	vmerge.vxm	v9, v9, a0, v0
-	li	a0, -48
+	vmerge.vxm	v9, v11, a0, v0
 	vmv1r.v	v0, v10
+	li	a0, -48
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v8, v9, v8
 	ret

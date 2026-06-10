@@ -30,9 +30,9 @@ func000000000000001c:
 
 func0000000000000034:
 	slli	a1, a1, 63
+	li	a2, 7
 	add	a0, a0, a1
-	li	a1, 7
-	slli	a1, a1, 59
-	add	a0, a0, a1
+	slli	a2, a2, 59
+	add	a0, a0, a2
 	ret
 

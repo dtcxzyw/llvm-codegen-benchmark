@@ -1,8 +1,8 @@
 func0000000000000003:
-	andi	a0, a0, 1
 	sub	a1, a1, a2
-	lui	a2, 335544
+	andi	a0, a0, 1
 	sub	a1, a1, a0
+	lui	a2, 335544
 	zext.w	a1, a1
 	addi	a2, a2, 1311
 	mul	a1, a1, a2
@@ -11,8 +11,8 @@ func0000000000000003:
 	ret
 
 func0000000000000043:
-	andi	a0, a0, 1
 	sub	a1, a1, a2
+	andi	a0, a0, 1
 	lui	a2, 699051
 	sub	a1, a1, a0
 	addi	a2, a2, -1365

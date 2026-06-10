@@ -30,13 +30,13 @@ func0000000000000045:
 	lui	a2, 1048571
 	bltu	a3, a4, .LBB3_2
 	addi	a2, a2, 129
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB3_2:
 	addi	a2, a2, 227
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func00000000000000c0:
@@ -88,13 +88,13 @@ func000000000000008c:
 	li	a3, 1
 	bltu	a3, a2, .LBB9_2
 	li	a2, 2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB9_2:
 	li	a2, 8
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000060:
@@ -112,8 +112,8 @@ func0000000000000080:
 	bltu	a4, a3, .LBB11_2
 	lui	a2, 3
 .LBB11_2:
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000085:
@@ -122,13 +122,13 @@ func0000000000000085:
 	bltu	a3, a2, .LBB12_2
 	lui	a2, 1048571
 	addi	a2, a2, 976
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB12_2:
 	lui	a2, 1048564
 	addi	a2, a2, -1328
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 

@@ -1,9 +1,9 @@
 func000000000000003d:
+	lui	a3, 804435
 	andi	a0, a0, 1
+	addi	a3, a3, 1536
 	add	a1, a1, a2
-	lui	a2, 804435
-	addi	a2, a2, 1536
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	ret
 

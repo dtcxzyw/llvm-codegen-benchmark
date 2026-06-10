@@ -14,10 +14,10 @@ func0000000000000282:
 	ret
 
 func0000000000000048:
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vmseq.vi	v10, v8, -2
 	lui	a0, 1048568
 	addi	a0, a0, 1
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vmseq.vi	v10, v8, -2
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -32,9 +32,9 @@ func0000000000000202:
 	ret
 
 func0000000000000050:
+	li	a0, 45
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmseq.vi	v10, v8, 4
-	li	a0, 45
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

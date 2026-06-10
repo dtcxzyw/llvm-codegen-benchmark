@@ -13,11 +13,11 @@ func000000000000004c:
 	ret
 
 func0000000000000102:
-	addiw	a1, a1, -1440
 	lui	a2, 1
-	sltiu	a1, a1, 25
 	addi	a2, a2, -1791
+	addiw	a1, a1, -1440
 	xor	a0, a0, a2
+	sltiu	a1, a1, 25
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -78,10 +78,10 @@ func0000000000000848:
 	ret
 
 func0000000000000114:
-	addiw	a1, a1, -1
 	li	a2, -1
-	sltiu	a1, a1, 8
+	addiw	a1, a1, -1
 	srli	a2, a2, 32
+	sltiu	a1, a1, 8
 	slt	a0, a2, a0
 	or	a0, a0, a1
 	ret

@@ -1,17 +1,17 @@
 func0000000000000048:
 	fdiv.d	fa5, fa0, fa1
-	fli.d	fa4, 1.0
-	flt.d	a0, fa4, fa5
 	fmv.d.x	fa4, zero
+	fli.d	fa3, 1.0
+	flt.d	a0, fa3, fa5
 	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
 func0000000000000084:
 	fdiv.d	fa5, fa0, fa1
-	fli.d	fa4, -1.0
-	flt.d	a0, fa5, fa4
 	fmv.d.x	fa4, zero
+	fli.d	fa3, -1.0
+	flt.d	a0, fa5, fa3
 	flt.d	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
@@ -23,8 +23,8 @@ func0000000000000082:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa4, %lo(.LCPI2_0)(a0)
 	feq.d	a0, fa5, fa5
-	xori	a0, a0, 1
 	flt.d	a1, fa4, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -34,9 +34,9 @@ func0000000000000028:
 	fdiv.d	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa4, %lo(.LCPI3_0)(a0)
-	flt.d	a0, fa4, fa5
-	feq.d	a1, fa5, fa5
-	xori	a1, a1, 1
+	feq.d	a0, fa5, fa5
+	flt.d	a1, fa4, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -45,8 +45,8 @@ func0000000000000086:
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	fli.d	fa4, 1.0
-	xori	a0, a0, 1
 	flt.d	a1, fa4, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -54,11 +54,11 @@ func0000000000000086:
 	.quad	0x4202a05f20000000
 func0000000000000094:
 	fdiv.d	fa5, fa0, fa1
+	fmv.d.x	fa4, zero
 	lui	a0, %hi(.LCPI5_0)
-	fld	fa4, %lo(.LCPI5_0)(a0)
-	fmv.d.x	fa3, zero
-	fle.d	a0, fa5, fa3
-	flt.d	a1, fa4, fa5
+	fld	fa3, %lo(.LCPI5_0)(a0)
+	fle.d	a0, fa5, fa4
+	flt.d	a1, fa3, fa5
 	or	a0, a0, a1
 	ret
 

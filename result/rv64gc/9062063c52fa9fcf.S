@@ -1,11 +1,11 @@
 func0000000000000000:
 	slliw	a2, a2, 16
+	lui	a3, 1046784
 	or	a0, a0, a2
 	lui	a2, 2048
+	addi	a3, a3, -1
 	and	a1, a1, a2
-	lui	a2, 1046784
-	addi	a2, a2, -1
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -19,12 +19,12 @@ func000000000000000f:
 
 func000000000000000b:
 	slliw	a2, a2, 24
+	lui	a3, 16
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
 	lui	a2, 1044480
+	addi	a3, a3, -256
 	addi	a2, a2, -256
+	and	a1, a1, a3
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

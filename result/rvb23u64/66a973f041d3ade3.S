@@ -15,8 +15,8 @@ func0000000000000308:
 
 func0000000000001042:
 	addi	a2, a2, 1
-	addi	a0, a0, 1
 	xor	a1, a1, a2
+	addi	a0, a0, 1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -71,8 +71,8 @@ func0000000000000242:
 
 func0000000000000042:
 	addi	a2, a2, 1
-	addi	a0, a0, -1
 	xor	a1, a1, a2
+	addi	a0, a0, -1
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -80,8 +80,8 @@ func0000000000000042:
 
 func0000000000001312:
 	addi	a2, a2, 1
-	binvi	a1, a1, 63
 	sltu	a0, a2, a0
+	binvi	a1, a1, 63
 	xori	a0, a0, 1
 	snez	a1, a1
 	or	a0, a0, a1
@@ -97,11 +97,11 @@ func0000000000000210:
 
 func0000000000000d50:
 	addi	a2, a2, -1
+	li	a3, -3
 	sltu	a1, a1, a2
-	li	a2, -3
-	srli	a2, a2, 1
+	srli	a3, a3, 1
 	xori	a1, a1, 1
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

@@ -2,18 +2,18 @@ func0000000000000003:
 	lui	a1, 1033135
 	addi	a1, a1, 1535
 	srli	a1, a1, 1
+	lui	a2, 7720
 	minu	a0, a0, a1
-	lui	a1, 7720
-	addi	a1, a1, 1280
+	addi	a1, a2, 1280
 	add	a0, a0, a1
 	ret
 
 func0000000000000007:
 	li	a1, 128
+	bseti	a2, zero, 37
 	minu	a0, a0, a1
-	bseti	a1, zero, 37
-	addi	a1, a1, -32
-	add	a0, a0, a1
+	addi	a2, a2, -32
+	add	a0, a0, a2
 	ret
 
 func0000000000000001:

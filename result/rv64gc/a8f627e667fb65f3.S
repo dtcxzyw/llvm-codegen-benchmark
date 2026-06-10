@@ -3,44 +3,44 @@ func000000000000003f:
 	li	a2, 64
 	beqz	a0, .LBB0_2
 	srli	a2, a0, 1
-	lui	a3, 349525
-	lui	a4, 209715
-	lui	a5, 61681
 	or	a0, a0, a2
-	addi	a2, a3, 1365
-	addi	a3, a4, 819
-	addi	a4, a5, -241
-	srli	a5, a0, 2
-	or	a0, a0, a5
-	slli	a5, a2, 32
-	add	a2, a2, a5
-	slli	a5, a3, 32
-	add	a3, a3, a5
-	slli	a5, a4, 32
-	add	a4, a4, a5
-	srli	a5, a0, 4
-	or	a0, a0, a5
-	srli	a5, a0, 8
-	or	a0, a0, a5
-	srli	a5, a0, 16
-	or	a0, a0, a5
-	srli	a5, a0, 32
-	or	a0, a0, a5
-	not	a0, a0
-	srli	a5, a0, 1
-	and	a2, a2, a5
-	sub	a0, a0, a2
-	and	a2, a0, a3
-	srli	a0, a0, 2
-	and	a0, a0, a3
-	lui	a3, 4112
-	addi	a3, a3, 257
-	add	a0, a0, a2
+	srli	a2, a0, 2
+	or	a0, a0, a2
 	srli	a2, a0, 4
-	add	a0, a0, a2
-	slli	a2, a3, 32
-	and	a0, a0, a4
-	add	a2, a2, a3
+	or	a0, a0, a2
+	srli	a2, a0, 8
+	lui	a3, 349525
+	or	a0, a0, a2
+	lui	a2, 209715
+	srli	a4, a0, 16
+	addi	a3, a3, 1365
+	or	a0, a0, a4
+	addi	a2, a2, 819
+	srli	a4, a0, 32
+	slli	a5, a3, 32
+	or	a0, a0, a4
+	slli	a4, a2, 32
+	not	a0, a0
+	add	a3, a3, a5
+	srli	a5, a0, 1
+	add	a2, a2, a4
+	and	a3, a3, a5
+	lui	a4, 61681
+	sub	a0, a0, a3
+	and	a3, a0, a2
+	srli	a0, a0, 2
+	and	a0, a0, a2
+	lui	a2, 4112
+	addi	a4, a4, -241
+	add	a0, a0, a3
+	addi	a2, a2, 257
+	srli	a3, a0, 4
+	add	a0, a0, a3
+	slli	a3, a4, 32
+	add	a3, a3, a4
+	slli	a4, a2, 32
+	and	a0, a0, a3
+	add	a2, a2, a4
 	mul	a2, a0, a2
 	srli	a2, a2, 56
 .LBB0_2:

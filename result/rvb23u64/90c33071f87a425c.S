@@ -11,8 +11,8 @@ func0000000000000055:
 	ret
 
 func0000000000000057:
-	add	a0, a0, a1
 	slli	a2, a2, 22
+	add	a0, a0, a1
 	slli	a0, a0, 10
 	addw	a0, a0, a2
 	ret

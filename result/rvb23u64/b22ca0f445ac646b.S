@@ -9,8 +9,8 @@ func000000000000018c:
 	ret
 
 func000000000000014c:
-	zext.b	a1, a1
 	srliw	a2, a2, 31
+	zext.b	a1, a1
 	xori	a2, a2, 1
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2

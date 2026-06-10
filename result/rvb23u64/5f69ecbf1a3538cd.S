@@ -1,9 +1,9 @@
 func0000000000000009:
-	sext.w	a2, a1
-	lui	a3, 73
-	czero.eqz	a1, a1, a2
-	addi	a3, a3, 992
-	czero.nez	a2, a3, a2
+	lui	a2, 73
+	sext.w	a3, a1
+	addi	a2, a2, 992
+	czero.eqz	a1, a1, a3
+	czero.nez	a2, a2, a3
 	or	a1, a1, a2
 	zext.w	a1, a1
 	sub	a0, a1, a0

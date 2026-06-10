@@ -15,13 +15,13 @@ func000000000000003b:
 	ret
 
 func000000000000003e:
-	andi	a2, a2, 1
 	lui	a3, 2
+	sh1add	a4, a0, a0
+	andi	a2, a2, 1
 	addi	a3, a3, -984
 	czero.eqz	a2, a3, a2
-	sh1add	a3, a0, a0
+	sh2add	a0, a4, a0
 	add	a1, a1, a2
-	sh2add	a0, a3, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 136
 	ret

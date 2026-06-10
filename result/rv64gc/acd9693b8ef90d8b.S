@@ -3,10 +3,10 @@ func000000000000018c:
 	ret
 
 func0000000000000021:
-	slli	a1, a1, 32
 	slli	a0, a0, 32
-	srli	a1, a1, 32
+	slli	a1, a1, 32
 	srli	a0, a0, 32
+	srli	a1, a1, 32
 	xori	a0, a0, 2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -20,10 +20,10 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 41
 	zext.b	a0, a0
-	snez	a1, a1
+	slli	a1, a1, 41
 	addi	a0, a0, -255
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

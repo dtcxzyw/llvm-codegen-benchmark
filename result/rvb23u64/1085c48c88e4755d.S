@@ -11,9 +11,9 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
+	li	a1, 12
 	zext.b	a0, a0
 	sltiu	a0, a0, 3
-	li	a1, 12
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, -3
 	ret
@@ -25,9 +25,9 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
+	li	a1, 39
 	sext.b	a0, a0
 	slti	a0, a0, 10
-	li	a1, 39
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 48
 	ret

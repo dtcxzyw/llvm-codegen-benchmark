@@ -8,14 +8,14 @@ func0000000000000048:
 func0000000000000024:
 	lui	a0, %hi(.promoted_doubles.func0000000000000024)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000024)
-	fld	fa4, 0(a0)
-	fld	fa5, 8(a0)
-	fsub.d	fa3, fa0, fa1
-	flt.d	a0, fa3, fa4
-	bnez	a0, .LBB1_2
-	fmv.d	fa3, fa4
-.LBB1_2:
+	fsub.d	fa5, fa0, fa1
+	fld	fa3, 0(a0)
+	fld	fa4, 8(a0)
 	flt.d	a0, fa5, fa3
+	bnez	a0, .LBB1_2
+	fmv.d	fa5, fa3
+.LBB1_2:
+	flt.d	a0, fa4, fa5
 	ret
 
 func00000000000000e5:

@@ -63,8 +63,8 @@ func0000000000000026:
 	ret
 
 func0000000000000078:
-	andi	a2, a2, 1
 	lui	a3, 9
+	andi	a2, a2, 1
 	addi	a3, a3, -340
 	or	a2, a2, a3
 	sub	a0, a0, a1

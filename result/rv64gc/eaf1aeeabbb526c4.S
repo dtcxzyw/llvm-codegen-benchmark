@@ -64,11 +64,11 @@ func0000000000000146:
 	ret
 
 func00000000000000ca:
-	sext.w	a3, a1
-	lui	a4, 4096
-	addi	a4, a4, -1
+	lui	a3, 4096
+	sext.w	a4, a1
+	addi	a3, a3, -1
 	sext.w	a0, a0
-	blt	a3, a4, .LBB6_2
+	blt	a4, a3, .LBB6_2
 	mv	a1, a2
 .LBB6_2:
 	sext.w	a1, a1
@@ -76,11 +76,11 @@ func00000000000000ca:
 	ret
 
 func0000000000000181:
-	sext.w	a3, a1
-	lui	a4, 524288
-	addiw	a4, a4, -1
+	lui	a3, 524288
+	sext.w	a4, a1
+	addiw	a3, a3, -1
 	sext.w	a0, a0
-	beq	a3, a4, .LBB7_2
+	beq	a4, a3, .LBB7_2
 	mv	a2, a1
 .LBB7_2:
 	sext.w	a2, a2

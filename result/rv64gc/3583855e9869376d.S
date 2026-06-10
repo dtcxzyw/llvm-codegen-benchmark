@@ -64,11 +64,11 @@ func0000000000000076:
 	fld	fa5, %lo(.LCPI6_0)(a1)
 	slli	a2, a2, 52
 	fmv.d.x	fa4, a2
-	flt.d	a1, fa0, fa4
-	feq.d	a2, fa1, fa5
-	xori	a2, a2, 1
+	feq.d	a1, fa1, fa5
+	flt.d	a2, fa0, fa4
+	xori	a1, a1, 1
+	and	a1, a1, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func0000000000000011:

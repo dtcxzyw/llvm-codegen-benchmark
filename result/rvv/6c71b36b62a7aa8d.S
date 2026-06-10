@@ -1,12 +1,12 @@
 func00000000000000ea:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf2	v10, v8
 	lui	a0, 924416
 	addi	a0, a0, -1564
-	vmv.v.x	v8, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v10, a0
+	vzext.vf2	v12, v8
 	lui	a0, 11481
 	addi	a0, a0, -1707
-	vmacc.vx	v8, a0, v10
-	vsra.vi	v8, v8, 19
+	vmacc.vx	v10, a0, v12
+	vsra.vi	v8, v10, 19
 	ret
 

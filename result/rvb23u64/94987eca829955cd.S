@@ -44,8 +44,8 @@ func0000000000000005:
 	fmul.s	fa5, fa2, fa1
 	fmul.s	fa4, fa0, fa1
 	lui	a0, 260096
-	fadd.s	fa5, fa4, fa5
 	addi	a0, a0, 839
+	fadd.s	fa5, fa4, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1

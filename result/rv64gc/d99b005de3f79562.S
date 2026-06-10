@@ -7,8 +7,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	slliw	a1, a1, 24
 	slli	a0, a0, 63
+	slliw	a1, a1, 24
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret

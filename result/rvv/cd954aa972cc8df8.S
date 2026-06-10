@@ -38,9 +38,9 @@ func0000000000000005:
 	ret
 
 func0000000000000018:
+	lui	a0, 675749
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 4
-	lui	a0, 675749
 	addi	a0, a0, -91
 	slli	a1, a0, 36
 	add	a0, a0, a1

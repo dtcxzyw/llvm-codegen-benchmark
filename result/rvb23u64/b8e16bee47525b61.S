@@ -9,8 +9,8 @@ func0000000000000181:
 
 func000000000000010c:
 	sext.w	a1, a1
-	bexti	a2, a2, 30
 	sltiu	a1, a1, 256
+	bexti	a2, a2, 30
 	xori	a1, a1, 1
 	czero.eqz	a2, a0, a2
 	and	a0, a0, a1

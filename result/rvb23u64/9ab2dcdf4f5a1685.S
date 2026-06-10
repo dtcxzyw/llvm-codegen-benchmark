@@ -15,8 +15,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, 62
 	li	a1, -2
+	andi	a0, a0, 62
 	rol	a0, a1, a0
 	ret
 

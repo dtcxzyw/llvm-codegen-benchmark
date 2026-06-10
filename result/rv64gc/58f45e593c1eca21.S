@@ -40,8 +40,8 @@ func0000000000000104:
 
 func0000000000000006:
 	srlw	a1, a1, a2
-	lui	a2, 16
 	andi	a1, a1, 2
+	lui	a2, 16
 	seqz	a1, a1
 	addi	a2, a2, 1
 	xor	a1, a1, a2

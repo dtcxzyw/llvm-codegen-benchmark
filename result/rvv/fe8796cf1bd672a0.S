@@ -122,18 +122,18 @@ func0000000000000088:
 func0000000000000314:
 	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v14, a0
 	vmsltu.vx	v0, v12, a0
-	vmv.v.x	v12, a0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000301:
 	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v14, a0
 	vmsltu.vx	v0, v12, a0
-	vmv.v.x	v12, a0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vmseq.vv	v0, v8, v10
 	ret
 

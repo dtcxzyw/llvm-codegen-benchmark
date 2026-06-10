@@ -17,11 +17,11 @@ func0000000000000101:
 	ret
 
 func0000000000000021:
+	li	a3, -2
+	zext.w	a3, a3
 	xor	a1, a1, a2
-	li	a2, -2
+	xor	a0, a0, a3
 	seqz	a1, a1
-	zext.w	a2, a2
-	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -1,6 +1,6 @@
 func000000000000000a:
-	add	a1, a1, a3
 	add	a0, a0, a2
+	add	a1, a1, a3
 	sltu	a2, a0, a2
 	add	a1, a1, a2
 	seqz	a0, a0
@@ -11,13 +11,13 @@ func000000000000000a:
 func000000000000000e:
 	add	a1, a1, a3
 	add	a0, a0, a2
-	li	a3, -1
 	sltu	a2, a0, a2
-	srli	a3, a3, 8
-	srli	a0, a0, 16
+	li	a3, -1
 	add	a1, a1, a2
+	srli	a3, a3, 8
 	add	a1, a1, a3
 	slli	a2, a1, 48
+	srli	a0, a0, 16
 	or	a0, a0, a2
 	srli	a1, a1, 16
 	ret

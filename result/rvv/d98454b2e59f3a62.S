@@ -42,9 +42,9 @@ func00000000000003ac:
 func00000000000000e8:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 1044480
 	vadd.vv	v9, v9, v9
 	vor.vv	v8, v8, v9
+	lui	a0, 1044480
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -52,9 +52,9 @@ func00000000000000e8:
 func0000000000000228:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 1044480
 	vsll.vi	v9, v9, 24
 	vor.vv	v8, v9, v8
+	lui	a0, 1044480
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

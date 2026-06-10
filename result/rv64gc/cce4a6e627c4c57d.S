@@ -8,8 +8,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	srli	a1, a1, 1
 	addiw	a0, a0, -35
+	srli	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -33,19 +33,19 @@ func0000000000000181:
 func0000000000000141:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	seqz	a1, a1
 	slti	a0, a0, 2
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	lui	a2, 768
+	sext.w	a0, a0
 	and	a1, a1, a2
 	lui	a2, 256
-	sltiu	a0, a0, 128
 	xor	a1, a1, a2
+	sltiu	a0, a0, 128
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
@@ -75,10 +75,10 @@ func000000000000008c:
 	ret
 
 func0000000000000038:
-	sext.w	a0, a0
 	li	a2, 31
 	slli	a2, a2, 8
 	and	a1, a1, a2
+	sext.w	a0, a0
 	sltiu	a1, a1, 257
 	not	a1, a1
 	seqz	a0, a0
@@ -87,8 +87,8 @@ func0000000000000038:
 
 func000000000000014c:
 	sext.w	a0, a0
-	srli	a1, a1, 2
 	slti	a0, a0, 2
+	srli	a1, a1, 2
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -110,15 +110,15 @@ func000000000000028c:
 
 func000000000000030c:
 	sext.w	a0, a0
-	srli	a1, a1, 14
 	sltiu	a0, a0, 2
+	srli	a1, a1, 14
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000034:
-	sext.w	a0, a0
 	slli	a1, a1, 33
+	sext.w	a0, a0
 	srli	a1, a1, 55
 	sltiu	a1, a1, 249
 	seqz	a0, a0
@@ -126,9 +126,9 @@ func0000000000000034:
 	ret
 
 func000000000000010c:
-	srli	a1, a1, 19
 	srliw	a0, a0, 16
 	sltiu	a0, a0, 17
+	srli	a1, a1, 19
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -150,8 +150,8 @@ func0000000000000198:
 	ret
 
 func0000000000000281:
-	sext.w	a0, a0
 	andi	a1, a1, 15
+	sext.w	a0, a0
 	addi	a1, a1, -8
 	seqz	a1, a1
 	sltiu	a0, a0, 113
@@ -166,8 +166,8 @@ func00000000000000c1:
 	ret
 
 func0000000000000098:
-	sext.w	a0, a0
 	andi	a1, a1, 496
+	sext.w	a0, a0
 	sltiu	a1, a1, 464
 	not	a1, a1
 	sltiu	a0, a0, -3
@@ -175,8 +175,8 @@ func0000000000000098:
 	ret
 
 func0000000000000298:
-	sext.w	a0, a0
 	lui	a2, 7168
+	sext.w	a0, a0
 	and	a1, a1, a2
 	lui	a2, 2560
 	sltu	a1, a2, a1
@@ -193,15 +193,15 @@ func0000000000000194:
 	ret
 
 func0000000000000314:
-	sext.w	a0, a0
 	lui	a2, 524288
-	lui	a3, 21094
+	sext.w	a0, a0
 	addiw	a2, a2, -1024
 	and	a1, a1, a2
-	addi	a2, a3, -1024
-	addi	a3, a3, -1025
-	sltu	a1, a1, a2
-	sltu	a0, a3, a0
+	lui	a2, 21094
+	addi	a3, a2, -1024
+	addi	a2, a2, -1025
+	sltu	a1, a1, a3
+	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret
 

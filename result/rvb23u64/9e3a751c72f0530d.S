@@ -1,6 +1,6 @@
 func0000000000000178:
-	zext.b	a2, a2
 	lui	a3, 524288
+	zext.b	a2, a2
 	addi	a3, a3, -1
 	divuw	a2, a3, a2
 	mulw	a0, a0, a1

@@ -12,10 +12,10 @@ func0000000000000001:
 func000000000000001f:
 	slliw	a2, a2, 8
 	or	a0, a0, a1
-	lui	a1, 916990
 	or	a0, a0, a2
-	lui	a2, 514
+	lui	a1, 916990
 	addi	a1, a1, -33
+	lui	a2, 514
 	and	a0, a0, a1
 	addi	a1, a2, 32
 	or	a0, a0, a1

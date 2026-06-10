@@ -1,8 +1,8 @@
 func000000000000042b:
 	li	a0, 256
-	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
+	lui	a1, 16
 	addi	a1, a1, -256
 	vmerge.vxm	v10, v10, a1, v0
 	vmseq.vx	v0, v8, a0
@@ -12,9 +12,9 @@ func000000000000042b:
 
 func000000000000042a:
 	li	a0, 256
-	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
+	lui	a1, 16
 	addi	a1, a1, -256
 	vmerge.vxm	v10, v10, a1, v0
 	vmseq.vx	v0, v8, a0
@@ -24,9 +24,9 @@ func000000000000042a:
 
 func0000000000000426:
 	li	a0, 256
-	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
+	lui	a1, 16
 	addi	a1, a1, -256
 	vmerge.vxm	v10, v10, a1, v0
 	vmseq.vx	v0, v8, a0
@@ -36,9 +36,9 @@ func0000000000000426:
 
 func0000000000000425:
 	li	a0, 256
-	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
+	lui	a1, 16
 	addi	a1, a1, -256
 	vmerge.vxm	v10, v10, a1, v0
 	vmseq.vx	v0, v8, a0

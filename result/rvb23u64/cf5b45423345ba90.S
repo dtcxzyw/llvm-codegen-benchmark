@@ -1,6 +1,6 @@
 func0000000000000021:
-	andi	a0, a0, 1
 	negw	a2, a2
+	andi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	sext.w	a0, a0
 	xor	a0, a0, a2
@@ -8,8 +8,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 1
 	negw	a2, a2
+	andi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	sext.w	a0, a0
 	xor	a0, a0, a2
@@ -17,8 +17,8 @@ func000000000000002c:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	negw	a2, a2
+	andi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	sext.w	a0, a0
 	xor	a0, a0, a2

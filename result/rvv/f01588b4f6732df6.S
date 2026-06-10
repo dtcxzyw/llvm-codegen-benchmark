@@ -1,7 +1,7 @@
 func00000000000002aa:
+	li	a0, -528
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
-	li	a0, -528
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, 10
@@ -12,9 +12,9 @@ func00000000000002aa:
 	ret
 
 func00000000000002a6:
+	li	a0, -528
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
-	li	a0, -528
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, 10
@@ -26,9 +26,9 @@ func00000000000002a6:
 	ret
 
 func00000000000002a4:
+	li	a0, -560
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsext.vf2	v11, v10
-	li	a0, -560
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, 10

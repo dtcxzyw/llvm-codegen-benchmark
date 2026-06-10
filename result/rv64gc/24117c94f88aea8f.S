@@ -1,6 +1,6 @@
 func000000000000000e:
-	sraiw	a2, a2, 5
 	slli	a1, a1, 32
+	sraiw	a2, a2, 5
 	srli	a1, a1, 30
 	add	a0, a0, a1
 	slli	a2, a2, 2
@@ -8,8 +8,8 @@ func000000000000000e:
 	ret
 
 func000000000000001e:
-	sraiw	a2, a2, 5
 	sext.w	a1, a1
+	sraiw	a2, a2, 5
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	slli	a2, a2, 2

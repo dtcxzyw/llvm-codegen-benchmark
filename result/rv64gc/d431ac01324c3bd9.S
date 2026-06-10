@@ -7,10 +7,10 @@ func000000000000000a:
 	and	a1, a1, a4
 	ret
 .LBB0_2:
-	srl	a2, a2, a0
-	not	a0, a0
+	not	a5, a0
 	slli	a3, a3, 1
-	sll	a0, a3, a0
+	srl	a0, a2, a0
+	sll	a2, a3, a5
 	or	a0, a0, a2
 	srai	a4, a4, 63
 	and	a1, a1, a4

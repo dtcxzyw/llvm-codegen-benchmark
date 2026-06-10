@@ -14,8 +14,8 @@ func000000000000002a:
 	ret
 
 func000000000000003f:
-	add	a0, a0, a2
 	lui	a1, 351844
+	add	a0, a0, a2
 	addi	a1, a1, -1143
 	mul	a0, a0, a1
 	ret

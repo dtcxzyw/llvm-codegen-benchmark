@@ -20,8 +20,8 @@ func0000000000000007:
 func000000000000000a:
 	fcvt.s.w	fa5, a0
 	lui	a0, 225916
-	fsub.s	fa5, fa0, fa5
 	addi	a0, a0, 1452
+	fsub.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret

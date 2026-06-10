@@ -25,8 +25,8 @@ func0000000000000061:
 	ret
 
 func0000000000000068:
-	addi	a1, a1, 3
 	bseti	a2, zero, 33
+	addi	a1, a1, 3
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	sltu	a0, a0, a1
@@ -73,8 +73,8 @@ func0000000000000074:
 	ret
 
 func0000000000000078:
-	addi	a1, a1, 143
 	lui	a2, 512
+	addi	a1, a1, 143
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	sltu	a0, a0, a1
@@ -146,10 +146,10 @@ func0000000000000005:
 
 func0000000000000046:
 	li	a2, -8
+	zext.w	a3, a2
 	add.uw	a1, a2, a1
-	zext.w	a2, a2
-	addi	a2, a2, 6
-	and	a1, a1, a2
+	addi	a3, a3, 6
+	and	a1, a1, a3
 	slt	a0, a1, a0
 	ret
 

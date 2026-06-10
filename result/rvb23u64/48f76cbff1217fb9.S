@@ -1,6 +1,6 @@
 func0000000000000007:
-	bset	a0, zero, a0
 	lui	a1, 135168
+	bset	a0, zero, a0
 	andi	a0, a0, 14
 	addi	a1, a1, -1026
 	xor	a0, a0, a1

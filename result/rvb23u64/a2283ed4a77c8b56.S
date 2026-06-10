@@ -10,16 +10,16 @@ func0000000000000054:
 	ret
 
 func00000000000000f0:
+	lui	a2, 244141
 	addw	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1537
+	addi	a1, a2, -1537
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000014:
+	lui	a2, 244
 	addw	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 575
+	addi	a1, a2, 575
 	slt	a0, a1, a0
 	ret
 
@@ -48,9 +48,9 @@ func0000000000000018:
 	ret
 
 func00000000000000c2:
+	lui	a2, 244141
 	addw	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -61,9 +61,9 @@ func000000000000000c:
 	ret
 
 func000000000000004c:
+	lui	a2, 176
 	addw	a0, a0, a1
-	lui	a1, 176
-	addi	a1, a1, -1733
+	addi	a1, a2, -1733
 	slt	a0, a0, a1
 	ret
 

@@ -23,8 +23,8 @@ func000000000000000c:
 	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vandn.vx	v8, v8, a0
-	li	a0, 28
 	vmseq.vi	v0, v8, 0
+	li	a0, 28
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0

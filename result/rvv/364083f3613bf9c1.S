@@ -16,8 +16,8 @@ func00000000000000c5:
 
 func000000000000014a:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsleu.vi	v0, v10, 8
 	vmv.v.i	v12, 6
+	vmsleu.vi	v0, v10, 8
 	vmerge.vim	v12, v12, 3, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
@@ -25,8 +25,8 @@ func000000000000014a:
 
 func0000000000000040:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsleu.vi	v0, v10, 8
 	vmv.v.i	v12, 6
+	vmsleu.vi	v0, v10, 8
 	vmerge.vim	v12, v12, 3, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12

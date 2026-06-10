@@ -8,8 +8,8 @@ func0000000000000000:
 	vfmul.vf	v12, v12, fa5
 	fmv.w.x	fa5, a0
 	lui	a0, 248381
-	addi	a0, a0, 1792
 	vfmul.vf	v8, v8, fa5
+	addi	a0, a0, 1792
 	fmv.w.x	fa5, a0
 	vfmadd.vf	v8, fa5, v12
 	ret

@@ -60,21 +60,21 @@ func0000000000000028:
 	ret
 
 func00000000000000e0:
-	sext.w	a1, a1
 	li	a3, -1216
-	sltiu	a1, a1, 20
+	sext.w	a1, a1
 	sh3add	a2, a3, a2
+	sltiu	a1, a1, 20
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 51
 	ret
 
 func0000000000000018:
-	sext.w	a1, a1
 	lui	a3, 10
+	sext.w	a1, a1
 	add	a2, a2, a3
-	lui	a3, 12
 	slti	a1, a1, 2
+	lui	a3, 12
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

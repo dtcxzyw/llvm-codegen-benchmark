@@ -9,8 +9,8 @@ func0000000000000007:
 	ret
 
 func0000000000000027:
-	addiw	a0, a0, 1
 	li	a1, 8
+	addiw	a0, a0, 1
 	blt	a1, a0, .LBB1_2
 	li	a0, 8
 .LBB1_2:

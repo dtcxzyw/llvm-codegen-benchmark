@@ -36,10 +36,10 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	zext.h	a0, a0
 	lui	a1, 16
 	addi	a1, a1, 1
 	bseti	a1, a1, 32
+	zext.h	a0, a0
 	bseti	a1, a1, 48
 	mul	a0, a0, a1
 	ret

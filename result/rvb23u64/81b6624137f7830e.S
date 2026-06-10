@@ -1,8 +1,8 @@
 func00000000000001e4:
-	srai	a2, a2, 2
 	lui	a3, 349525
 	addi	a3, a3, 1365
 	slli	a4, a3, 32
+	srai	a2, a2, 2
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	sext.w	a1, a1
@@ -11,10 +11,10 @@ func00000000000001e4:
 	ret
 
 func0000000000000164:
-	srai	a2, a2, 2
 	lui	a3, 349525
 	addi	a3, a3, 1365
 	slli	a4, a3, 32
+	srai	a2, a2, 2
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	add.uw	a1, a1, a2

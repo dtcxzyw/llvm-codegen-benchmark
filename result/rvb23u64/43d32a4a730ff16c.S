@@ -29,12 +29,12 @@ func00000000000001a6:
 	ret
 
 func00000000000001f4:
-	sext.w	a2, a0
-	lui	a3, 512
+	lui	a2, 512
+	addi	a2, a2, 192
+	sext.w	a3, a0
+	addw	a1, a1, a2
 	addiw	a0, a0, 32
-	addi	a3, a3, 192
-	sltiu	a2, a2, 384
-	addw	a1, a1, a3
+	sltiu	a2, a3, 384
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

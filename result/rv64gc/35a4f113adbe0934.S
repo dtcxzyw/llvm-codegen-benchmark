@@ -6,9 +6,9 @@ func0000000000000018:
 	ret
 
 func000000000000001a:
+	lui	a3, 1048575
 	sub	a0, a0, a2
-	lui	a2, 1048575
-	and	a1, a1, a2
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

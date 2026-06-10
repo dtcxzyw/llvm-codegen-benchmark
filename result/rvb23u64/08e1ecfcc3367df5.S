@@ -10,9 +10,9 @@ func0000000000000281:
 
 func0000000000000001:
 	li	a2, -1
-	li	a3, 11
 	srli	a2, a2, 1
 	add	a1, a1, a2
+	li	a3, 11
 	add	a0, a0, a2
 	minu	a1, a1, a3
 	minu	a0, a0, a3

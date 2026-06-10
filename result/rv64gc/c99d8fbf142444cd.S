@@ -62,11 +62,11 @@ func0000000000000141:
 
 func0000000000000184:
 	sext.w	a1, a1
-	sext.w	a2, a2
 	lui	a3, 16
+	sext.w	a2, a2
 	addi	a3, a3, -2
-	sltiu	a1, a1, -32
 	xor	a2, a2, a3
+	sltiu	a1, a1, -32
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -212,8 +212,8 @@ func000000000000018a:
 
 func0000000000000108:
 	sext.w	a1, a1
-	sext.w	a2, a2
 	lui	a3, 6
+	sext.w	a2, a2
 	addi	a3, a3, 299
 	sltu	a2, a3, a2
 	sltu	a1, a3, a1

@@ -9,8 +9,8 @@ func000000000000000f:
 func000000000000000b:
 	slli	a3, a1, 3
 	slli	a1, a1, 5
-	srli	a2, a2, 3
 	add	a1, a1, a3
+	srli	a2, a2, 3
 	add	a0, a0, a1
 	andi	a2, a2, -8
 	add	a0, a0, a2

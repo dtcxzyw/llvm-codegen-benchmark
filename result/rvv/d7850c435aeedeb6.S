@@ -1,10 +1,10 @@
 func0000000000000612:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v14, v12, 9
 	fmv.d.x	fa5, zero
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmflt.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v14
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmflt.vf	v14, v8, fa5
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vi	v8, v12, 9
+	vmor.mm	v0, v14, v8
 	ret
 
 .LCPI1_0:
@@ -12,20 +12,20 @@ func0000000000000612:
 func0000000000000212:
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v14, v12, 1
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmflt.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v14
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmflt.vf	v14, v8, fa5
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vi	v8, v12, 1
+	vmor.mm	v0, v14, v8
 	ret
 
 func0000000000000618:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v14, v12, 4
 	fmv.d.x	fa5, zero
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfeq.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v14
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmfeq.vf	v14, v8, fa5
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vi	v8, v12, 4
+	vmor.mm	v0, v14, v8
 	ret
 
 .LCPI3_0:
@@ -33,10 +33,10 @@ func0000000000000618:
 func000000000000021a:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v14, v12, 1
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfle.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v14
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmfle.vf	v14, v8, fa5
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vi	v8, v12, 1
+	vmor.mm	v0, v14, v8
 	ret
 

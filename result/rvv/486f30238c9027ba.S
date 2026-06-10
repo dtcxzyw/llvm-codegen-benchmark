@@ -12,12 +12,12 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 4, e64, m2, ta, mu
-	vadd.vv	v10, v8, v8
 	bseti	a0, zero, 56
-	vmv.v.x	v12, a0
-	vand.vx	v12, v10, a0, v0.t
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmv.v.x	v10, a0
+	vadd.vv	v12, v8, v8
+	vand.vx	v10, v12, a0, v0.t
 	vandn.vx	v8, v8, a0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v10, v8
 	ret
 

@@ -64,13 +64,13 @@ func000000000000002a:
 
 func0000000000000038:
 	or	a0, a0, a1
-	lui	a1, 2032
 	srliw	a0, a0, 1
-	addi	a1, a1, -192
+	lui	a1, 2032
 	sltiu	a0, a0, 1561
+	addi	a1, a1, -192
+	lui	a2, 16
 	czero.nez	a0, a1, a0
-	lui	a1, 16
-	addi	a1, a1, -64
+	addi	a1, a2, -64
 	add	a0, a0, a1
 	ret
 

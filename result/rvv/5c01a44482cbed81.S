@@ -5,11 +5,11 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmor.mm	v0, v0, v10
 	lui	a0, 192607
 	slli	a0, a0, 2
 	addi	a0, a0, 512
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmor.mm	v0, v0, v10
 	vmv.v.x	v10, a0
 	lui	a0, 6019
 	addi	a0, a0, 551

@@ -7,8 +7,8 @@ func000000000000001d:
 
 func0000000000000019:
 	li	a3, -9
-	srli	a0, a0, 3
 	srli	a3, a3, 3
+	srli	a0, a0, 3
 	and	a2, a2, a3
 	sub	a0, a0, a1
 	sub	a0, a0, a2

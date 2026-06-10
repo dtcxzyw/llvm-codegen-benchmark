@@ -7,43 +7,46 @@ func0000000000000003:
 	ret
 
 func0000000000000009:
-	srli	a1, a0, 9
-	lui	a2, 4096
+	lui	a1, 4096
+	srli	a2, a0, 9
+	addi	a1, a1, -32
 	slli	a0, a0, 17
-	addi	a2, a2, -32
+	lui	a3, 393216
 	and	a1, a1, a2
-	lui	a2, 393216
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	srli	a1, a0, 4
-	lui	a2, 16
+	lui	a1, 16
+	srli	a2, a0, 4
+	addi	a1, a1, -256
 	slli	a0, a0, 52
-	addi	a2, a2, -256
 	and	a1, a1, a2
 	srli	a0, a0, 36
 	or	a0, a0, a1
 	ret
 
+.LCPI3_0:
+	.quad	1080863974993432320
 func0000000000000005:
-	srli	a1, a0, 4
+	lui	a1, %hi(.LCPI3_0)
 	lui	a2, 61440
-	slli	a0, a0, 8
+	ld	a1, %lo(.LCPI3_0)(a1)
 	addi	a2, a2, 15
+	srli	a3, a0, 4
 	slli	a2, a2, 24
 	addi	a2, a2, 15
-	and	a1, a1, a2
-	slli	a2, a2, 8
-	and	a0, a0, a2
-	or	a0, a0, a1
+	slli	a0, a0, 8
+	and	a2, a2, a3
+	and	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000007:
-	bexti	a1, a0, 2
-	slli	a0, a0, 1
-	andi	a0, a0, 4
+	slli	a1, a0, 1
+	bexti	a0, a0, 2
+	andi	a1, a1, 4
 	or	a0, a0, a1
 	ret
 

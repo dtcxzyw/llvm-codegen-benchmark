@@ -1,11 +1,11 @@
 func0000000000000021:
+	lui	a3, 916990
 	or	a1, a1, a2
-	lui	a2, 916990
-	lui	a3, 279653
-	addi	a2, a2, -33
-	addi	a3, a3, -940
+	addi	a2, a3, -33
 	and	a2, a2, a1
+	lui	a3, 279653
 	sext.w	a2, a2
+	addi	a3, a3, -940
 	xor	a2, a2, a3
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

@@ -1,10 +1,10 @@
 func0000000000000014:
 	fli.d	fa5, -1.0
-	lui	a0, 15621
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
-	slli	a0, a0, 36
 	vfabs.v	v8, v8
+	lui	a0, 15621
+	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmor.mm	v0, v0, v16
@@ -12,11 +12,11 @@ func0000000000000014:
 
 func0000000000000036:
 	fli.d	fa5, -1.0
-	li	a0, 971
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
-	slli	a0, a0, 52
 	vfabs.v	v8, v8
+	li	a0, 971
+	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v16, v8, fa5
 	vmorn.mm	v0, v0, v16
@@ -24,11 +24,11 @@ func0000000000000036:
 
 func0000000000000016:
 	fli.d	fa5, -1.0
-	li	a0, 971
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
-	slli	a0, a0, 52
 	vfabs.v	v8, v8
+	li	a0, 971
+	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v16, v8, fa5
 	vmorn.mm	v0, v0, v16
@@ -41,12 +41,12 @@ func0000000000000016:
 func0000000000000004:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
 	vfabs.v	v8, v8
-	vmflt.vf	v16, v8, fa4
+	lui	a0, %hi(.LCPI3_1)
+	fld	fa5, %lo(.LCPI3_1)(a0)
+	vmflt.vf	v16, v8, fa5
 	vmor.mm	v0, v0, v16
 	ret
 

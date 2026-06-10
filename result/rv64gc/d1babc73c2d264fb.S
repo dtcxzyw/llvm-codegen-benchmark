@@ -2,24 +2,24 @@
 	.quad	0xbff921fb54442d18
 func0000000000000150:
 	li	a0, 971
-	lui	a1, %hi(.LCPI0_0)
 	slli	a0, a0, 52
-	fld	fa5, %lo(.LCPI0_0)(a1)
-	fmv.d.x	fa4, a0
-	fmul.d	fa4, fa2, fa4
-	fle.d	a0, fa1, fa4
-	feq.d	a1, fa0, fa5
+	fmv.d.x	fa5, a0
+	fmul.d	fa5, fa2, fa5
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa4, %lo(.LCPI0_0)(a0)
+	fle.d	a0, fa1, fa5
+	feq.d	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 
 func000000000000012a:
 	li	a0, 971
-	li	a1, 2047
 	slli	a0, a0, 52
-	slli	a1, a1, 52
 	fmv.d.x	fa5, a0
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa2, fa5
-	fmv.d.x	fa4, a1
 	flt.d	a0, fa1, fa4
 	flt.d	a1, fa4, fa1
 	fle.d	a2, fa0, fa5
@@ -30,12 +30,12 @@ func000000000000012a:
 
 func00000000000000b2:
 	li	a0, 971
-	li	a1, 2047
 	slli	a0, a0, 52
-	slli	a1, a1, 52
 	fmv.d.x	fa5, a0
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa2, fa5
-	fmv.d.x	fa4, a1
 	flt.d	a0, fa0, fa4
 	flt.d	a1, fa4, fa0
 	fle.d	a2, fa1, fa5

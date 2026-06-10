@@ -21,8 +21,8 @@ func0000000000000424:
 func000000000000058c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	li	a0, 23
 	vmsne.vv	v9, v10, v12
+	li	a0, 23
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

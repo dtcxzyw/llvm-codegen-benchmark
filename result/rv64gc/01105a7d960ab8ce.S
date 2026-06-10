@@ -1,6 +1,6 @@
 func0000000000000070:
-	add	a0, a0, a2
 	not	a1, a1
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -11,8 +11,8 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
-	add	a0, a0, a2
 	not	a1, a1
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -47,8 +47,8 @@ func0000000000000040:
 	ret
 
 func0000000000000074:
-	add	a0, a0, a2
 	not	a1, a1
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

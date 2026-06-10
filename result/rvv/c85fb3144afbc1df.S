@@ -1,8 +1,8 @@
 func00000000000000c4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 8
-	lui	a0, 4096
 	vsrl.vv	v10, v10, v12
+	lui	a0, 4096
 	addi	a0, a0, -512
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
@@ -12,8 +12,8 @@ func0000000000000044:
 	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vx	v12, v12, a0
-	lui	a0, 16
 	vsrl.vv	v10, v10, v12
+	lui	a0, 16
 	addi	a0, a0, -2
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8

@@ -26,15 +26,15 @@ func000000000000003d:
 	ret
 
 func000000000000007e:
-	slliw	a1, a1, 16
 	slli	a0, a0, 48
+	slliw	a1, a1, 16
 	srli	a0, a0, 40
 	or	a0, a0, a1
 	ret
 
 func0000000000000016:
-	slliw	a1, a1, 16
 	slli	a0, a0, 48
+	slliw	a1, a1, 16
 	srli	a0, a0, 40
 	or	a0, a0, a1
 	ret

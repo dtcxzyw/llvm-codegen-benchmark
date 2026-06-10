@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a1, a1, 1
 	not	a2, a2
+	andi	a1, a1, 1
 	bexti	a2, a2, 37
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2

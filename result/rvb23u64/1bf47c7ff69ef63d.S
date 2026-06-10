@@ -21,10 +21,10 @@ func0000000000000000:
 func00000000000000d5:
 	lui	a3, 1
 	addi	a3, a3, 383
+	lui	a4, 1048448
 	add	a2, a2, a3
-	lui	a3, 1048448
-	srli	a3, a3, 15
-	and	a2, a2, a3
+	srli	a4, a4, 15
+	and	a2, a2, a4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 31

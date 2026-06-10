@@ -1,9 +1,9 @@
 func0000000000000003:
 	addiw	a1, a1, -12
-	slli	a0, a0, 63
 	snez	a1, a1
-	srai	a0, a0, 63
+	slli	a0, a0, 63
 	addi	a1, a1, -1
+	srai	a0, a0, 63
 	andi	a1, a1, 12
 	andi	a0, a0, 3
 	or	a0, a0, a1

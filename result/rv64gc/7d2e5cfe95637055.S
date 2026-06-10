@@ -1,6 +1,6 @@
 func00000000000000f1:
-	sext.w	a0, a0
 	li	a2, 55
+	sext.w	a0, a0
 	bgeu	a2, a0, .LBB0_2
 	li	a0, 8
 	ret

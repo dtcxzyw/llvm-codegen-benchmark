@@ -6,10 +6,10 @@ func0000000000000008:
 	srl	a0, a1, a3
 	ret
 .LBB0_2:
-	srl	a0, a0, a2
 	slli	a1, a1, 1
-	not	a2, a3
-	sll	a1, a1, a2
+	not	a3, a3
+	srl	a0, a0, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -21,10 +21,10 @@ func000000000000000a:
 	srl	a0, a1, a3
 	ret
 .LBB1_2:
-	srl	a0, a0, a2
 	slli	a1, a1, 1
-	not	a2, a3
-	sll	a1, a1, a2
+	not	a3, a3
+	srl	a0, a0, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -36,10 +36,10 @@ func000000000000000b:
 	srl	a0, a1, a3
 	ret
 .LBB2_2:
-	srl	a0, a0, a2
 	slli	a1, a1, 1
-	not	a2, a3
-	sll	a1, a1, a2
+	not	a3, a3
+	srl	a0, a0, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

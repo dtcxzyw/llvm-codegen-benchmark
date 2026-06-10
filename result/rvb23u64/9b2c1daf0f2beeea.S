@@ -8,24 +8,24 @@ func0000000000000086:
 	ret
 
 func0000000000000001:
-	srli	a0, a0, 3
 	li	a1, -2
+	srli	a0, a0, 3
 	addiw	a0, a0, -4
+	lui	a2, 1048573
 	czero.eqz	a0, a1, a0
-	lui	a1, 1048573
-	addi	a1, a1, -627
+	addi	a1, a2, -627
 	add	a0, a0, a1
 	ret
 
 func0000000000000004:
-	srli	a0, a0, 3
 	lui	a1, 1044480
+	srli	a0, a0, 3
 	sext.w	a0, a0
-	addi	a1, a1, 16
 	sltiu	a0, a0, 33
+	addi	a1, a1, 16
+	lui	a2, 8192
 	czero.eqz	a0, a1, a0
-	lui	a1, 8192
-	addi	a1, a1, 20
-	add	a0, a0, a1
+	addi	a2, a2, 20
+	add	a0, a0, a2
 	ret
 

@@ -13,8 +13,8 @@ func00000000000000ca:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	fli.s	fa5, 1.0
-	lui	a0, 757019
 	vmfle.vf	v12, v8, fa5
+	lui	a0, 757019
 	addi	a0, a0, 1815
 	fmv.w.x	fa5, a0
 	vmfge.vf	v13, v8, fa5

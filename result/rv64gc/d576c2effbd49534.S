@@ -1,8 +1,8 @@
 func0000000000000014:
-	sext.w	a3, a0
-	li	a4, 2
+	li	a3, 2
+	sext.w	a4, a0
 	or	a0, a1, a2
-	bgeu	a3, a4, .LBB0_2
+	bgeu	a4, a3, .LBB0_2
 	andi	a0, a0, -3
 .LBB0_2:
 	ret

@@ -44,9 +44,9 @@ func0000000000000028:
 	blt	a1, a2, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
+	lui	a2, 2
 	subw	a1, a1, a0
-	lui	a0, 2
-	addi	a0, a0, -192
+	addi	a0, a2, -192
 	sltu	a0, a0, a1
 	ret
 

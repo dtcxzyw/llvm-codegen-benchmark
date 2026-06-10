@@ -4,18 +4,18 @@ func000000000000000c:
 	mul	a0, a0, a1
 	slliw	a1, a0, 31
 	srliw	a0, a0, 1
+	lui	a2, 104858
 	or	a0, a0, a1
-	lui	a1, 104858
-	addi	a1, a1, -1639
+	addi	a1, a2, -1639
 	sltu	a0, a1, a0
 	ret
 
 func00000000000000aa:
-	slli	a1, a0, 32
-	lui	a2, 335544
-	addi	a2, a2, 1311
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 335544
+	addi	a1, a1, 1311
+	slli	a2, a0, 32
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	srli	a1, a1, 37
 	li	a2, 100
 	mul	a1, a1, a2
@@ -30,18 +30,18 @@ func0000000000000001:
 	mul	a0, a0, a1
 	slliw	a1, a0, 28
 	srliw	a0, a0, 4
+	lui	a2, 105
 	or	a0, a0, a1
-	lui	a1, 105
-	addi	a1, a1, -583
+	addi	a1, a2, -583
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000006:
-	slli	a1, a0, 32
-	lui	a2, 858993
-	addi	a2, a2, 1881
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 858993
+	addi	a1, a1, 1881
+	slli	a2, a0, 32
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	lui	a2, 2
 	srli	a1, a1, 45
 	addi	a2, a2, 1808
@@ -52,11 +52,11 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
-	slli	a1, a0, 32
-	lui	a2, 858993
-	addi	a2, a2, 1881
-	slli	a2, a2, 32
-	mulhu	a1, a1, a2
+	lui	a1, 858993
+	addi	a1, a1, 1881
+	slli	a2, a0, 32
+	slli	a1, a1, 32
+	mulhu	a1, a2, a1
 	lui	a2, 2
 	srli	a1, a1, 45
 	addi	a2, a2, 1808

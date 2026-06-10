@@ -17,9 +17,9 @@ func0000000000000000:
 
 func0000000000000030:
 	andi	a1, a1, 510
+	lui	a2, 16382
 	add	a0, a0, a1
-	lui	a1, 16382
-	addi	a1, a1, -1527
+	addi	a1, a2, -1527
 	mul	a0, a0, a1
 	lui	a1, 8224
 	addw	a0, a0, a1
@@ -27,9 +27,9 @@ func0000000000000030:
 
 func000000000000003f:
 	andi	a1, a1, 510
+	lui	a2, 7
 	add	a0, a0, a1
-	lui	a1, 7
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	mul	a0, a0, a1
 	lui	a1, 8224
 	addw	a0, a0, a1
@@ -37,9 +37,9 @@ func000000000000003f:
 
 func0000000000000035:
 	andi	a1, a1, 510
+	lui	a2, 1048574
 	add	a0, a0, a1
-	lui	a1, 1048574
-	addi	a1, a1, -1527
+	addi	a1, a2, -1527
 	mul	a0, a0, a1
 	lui	a1, 8224
 	addw	a0, a0, a1

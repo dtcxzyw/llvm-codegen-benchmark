@@ -4,8 +4,8 @@ func000000000000000e:
 	ret
 
 func000000000000000f:
-	srli	a0, a0, 24
 	lui	a1, 4080
+	srli	a0, a0, 24
 	and	a0, a0, a1
 	ret
 

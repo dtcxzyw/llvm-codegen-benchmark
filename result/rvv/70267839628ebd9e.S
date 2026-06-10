@@ -21,9 +21,9 @@ func00000000000000a6:
 	ret
 
 func0000000000000026:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 28
-	li	a0, 32
 	vsra.vx	v12, v12, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10

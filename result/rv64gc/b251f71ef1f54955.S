@@ -1,6 +1,6 @@
 func0000000000000020:
-	addiw	a1, a1, -13
 	lui	a2, 174763
+	addiw	a1, a1, -13
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	srli	a2, a1, 63

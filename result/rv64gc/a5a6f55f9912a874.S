@@ -6,9 +6,9 @@ func000000000000003f:
 	ret
 
 func000000000000002f:
-	ori	a1, a1, 13
 	li	a2, 1
 	slli	a2, a2, 32
+	ori	a1, a1, 13
 	addi	a2, a2, -3
 	and	a1, a1, a2
 	add	a0, a0, a1

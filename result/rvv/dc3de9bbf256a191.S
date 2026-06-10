@@ -12,13 +12,13 @@ func0000000000000005:
 	lui	a0, 1048568
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vand.vx	v8, v8, a0
-	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf2	v10, v8
+	li	a0, 48
+	li	a1, 1023
 	vwsll.vx	v8, v10, a0
-	li	a0, 1023
-	slli	a0, a0, 52
+	slli	a1, a1, 52
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vx	v8, v8, a0
+	vor.vx	v8, v8, a1
 	ret
 

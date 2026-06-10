@@ -61,8 +61,8 @@ func0000000000000078:
 func0000000000000008:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 4096
 	vmul.vv	v8, v8, v12
+	lui	a0, 4096
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -136,8 +136,8 @@ func0000000000000081:
 func0000000000000074:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 7
 	vmul.vv	v8, v8, v12
+	lui	a0, 7
 	addi	a0, a0, 1328
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -145,8 +145,8 @@ func0000000000000074:
 func0000000000000048:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 174763
 	vmul.vv	v8, v8, v12
+	lui	a0, 174763
 	addi	a0, a0, -1366
 	vmsgtu.vx	v0, v8, a0
 	ret

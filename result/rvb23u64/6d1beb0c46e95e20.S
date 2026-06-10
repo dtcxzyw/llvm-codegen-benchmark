@@ -1,6 +1,6 @@
 func000000000000003c:
-	slliw	a2, a2, 12
 	lui	a3, 1
+	slliw	a2, a2, 12
 	addi	a3, a3, -64
 	and	a1, a1, a3
 	or	a0, a0, a2

@@ -1,8 +1,8 @@
 func0000000000000241:
 	mul	a3, a3, a0
 	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	not	a0, a0
 	slli	a0, a0, 26
@@ -11,9 +11,9 @@ func0000000000000241:
 
 func000000000000024c:
 	mul	a3, a3, a0
-	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	mulhu	a0, a0, a2
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	snez	a0, a0
 	ret

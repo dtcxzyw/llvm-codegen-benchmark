@@ -1,7 +1,7 @@
 func0000000000000003:
-	addi	a2, a2, -1
 	li	a3, 37
 	mul	a1, a1, a3
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 27
@@ -9,9 +9,9 @@ func0000000000000003:
 	ret
 
 func000000000000001f:
-	addiw	a2, a2, -1
 	li	a3, 37
 	mulw	a1, a1, a3
+	addiw	a2, a2, -1
 	and	a1, a1, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1
@@ -39,9 +39,9 @@ func0000000000000023:
 	ret
 
 func000000000000000b:
-	addi	a2, a2, -1
 	li	a3, 37
 	mul	a1, a1, a3
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 31

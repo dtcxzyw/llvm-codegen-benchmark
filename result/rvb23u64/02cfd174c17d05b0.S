@@ -25,8 +25,8 @@ func0000000000000008:
 
 func0000000000000004:
 	lui	a2, 2048
-	srli	a0, a0, 17
 	minu	a1, a1, a2
+	srli	a0, a0, 17
 	lui	a2, 2
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

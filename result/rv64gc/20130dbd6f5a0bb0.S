@@ -1,8 +1,8 @@
 func000000000000000f:
-	addi	a2, a2, 512
 	lui	a3, 129024
 	and	a1, a1, a3
 	li	a3, 15
+	addi	a2, a2, 512
 	slli	a3, a3, 9
 	and	a2, a2, a3
 	or	a0, a0, a1
@@ -11,8 +11,8 @@ func000000000000000f:
 
 func0000000000000003:
 	lui	a3, 129024
-	addi	a1, a1, 1
 	and	a2, a2, a3
+	addi	a1, a1, 1
 	or	a0, a0, a2
 	andi	a1, a1, 511
 	or	a0, a0, a1
@@ -35,10 +35,10 @@ func0000000000000007:
 	ret
 
 func000000000000000c:
-	addi	a2, a2, 128
 	lui	a3, 4080
 	and	a1, a1, a3
 	lui	a3, 4096
+	addi	a2, a2, 128
 	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a0, a0, a1
@@ -46,9 +46,9 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	lui	a3, 12288
-	and	a1, a1, a3
 	lui	a3, 98304
+	lui	a4, 12288
+	and	a1, a1, a4
 	add	a2, a2, a3
 	and	a2, a2, a3
 	or	a0, a0, a1

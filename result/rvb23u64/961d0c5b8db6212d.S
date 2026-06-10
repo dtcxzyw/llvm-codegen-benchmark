@@ -5,9 +5,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	fmv.x.d	a0, fa0
-	srli	a0, a0, 32
-	lui	a1, 524032
+	lui	a0, 524032
+	fmv.x.d	a1, fa0
+	srli	a1, a1, 32
 	and	a0, a0, a1
 	ret
 

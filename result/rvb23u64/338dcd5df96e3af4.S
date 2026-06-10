@@ -1,7 +1,7 @@
 func0000000000000038:
+	lui	a2, 1048555
 	subw	a0, a0, a1
-	lui	a1, 1048555
-	addi	a1, a1, -384
+	addi	a1, a2, -384
 	addw	a1, a1, a0
 	minu	a0, a1, a0
 	ret

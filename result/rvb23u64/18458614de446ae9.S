@@ -1,14 +1,14 @@
 func000000000000007b:
 	li	a4, 10
-	sh2add	a3, a3, a3
 	mulhu	a4, a2, a4
 	sh2add	a2, a2, a2
+	sh2add	a3, a3, a3
 	sh1add	a0, a2, a0
 	slli	a2, a2, 1
 	sh1add	a3, a3, a4
 	sltu	a0, a0, a2
-	add	a1, a1, a3
 	add	a0, a0, a1
+	add	a0, a0, a3
 	ret
 
 .LCPI1_0:

@@ -8,8 +8,8 @@ func0000000000000021:
 
 func000000000000002c:
 	lui	a2, 2
-	sext.w	a0, a0
 	and	a1, a1, a2
+	sext.w	a0, a0
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -17,9 +17,9 @@ func000000000000002c:
 
 func0000000000000028:
 	slli	a1, a1, 48
-	sraiw	a0, a0, 2
 	srli	a1, a1, 58
 	addi	a1, a1, -55
+	sraiw	a0, a0, 2
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

@@ -1,15 +1,15 @@
 func000000000000019d:
 	sext.w	a1, a1
 	slti	a1, a1, 1570
+	lui	a2, 1048540
 	addw	a0, a0, a1
-	lui	a1, 1048540
-	addi	a1, a1, 1359
+	addi	a1, a2, 1359
 	mul	a0, a0, a1
 	ret
 
 func0000000000000303:
-	sext.w	a1, a1
 	lui	a2, 1048509
+	sext.w	a1, a1
 	addi	a2, a2, 432
 	xor	a1, a1, a2
 	snez	a1, a1

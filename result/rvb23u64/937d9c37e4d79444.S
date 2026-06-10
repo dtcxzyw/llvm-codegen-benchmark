@@ -1,23 +1,23 @@
 func0000000000000021:
-	zext.b	a0, a0
 	li	a1, 9
-	addi	a2, a0, -120
+	zext.b	a0, a0
 	slli	a1, a1, 32
+	addi	a2, a0, -120
 	czero.nez	a1, a1, a2
-	bseti	a2, zero, 35
 	addi	a0, a0, -109
+	bseti	a2, zero, 35
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
 
 func0000000000000294:
+	li	a1, 2
 	zext.b	a0, a0
-	sltiu	a1, a0, 240
+	sltiu	a2, a0, 240
 	sltiu	a0, a0, 224
-	li	a2, 2
-	sub	a2, a2, a1
-	czero.nez	a0, a2, a0
+	sub	a1, a1, a2
+	czero.nez	a0, a1, a0
 	addi	a0, a0, 2
 	ret
 

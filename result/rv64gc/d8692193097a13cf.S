@@ -16,9 +16,9 @@ func00000000000000f4:
 	ret
 
 func00000000000000b4:
-	sext.w	a1, a0
-	li	a2, 161
-	bltu	a1, a2, .LBB2_2
+	li	a1, 161
+	sext.w	a2, a0
+	bltu	a2, a1, .LBB2_2
 	addiw	a0, a0, -160
 	ret
 .LBB2_2:
@@ -37,8 +37,8 @@ func000000000000008a:
 	ret
 
 func00000000000000c4:
-	slli	a0, a0, 32
 	li	a1, -383
+	slli	a0, a0, 32
 	srli	a0, a0, 32
 	slli	a1, a1, 23
 	add	a0, a0, a1
@@ -48,8 +48,8 @@ func00000000000000c4:
 	ret
 
 func0000000000000044:
-	slli	a0, a0, 32
 	li	a1, -383
+	slli	a0, a0, 32
 	srli	a0, a0, 32
 	slli	a1, a1, 23
 	add	a0, a0, a1

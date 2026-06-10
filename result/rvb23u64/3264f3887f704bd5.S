@@ -21,15 +21,15 @@ func0000000000000010:
 	ret
 
 func000000000000000c:
-	zext.w	a1, a1
 	li	a2, 1000
+	zext.w	a1, a1
 	mul	a1, a1, a2
 	sub	a0, a1, a0
 	ret
 
 func0000000000000005:
-	zext.w	a1, a1
 	lui	a2, 1048574
+	zext.w	a1, a1
 	addi	a2, a2, -1841
 	mul	a1, a1, a2
 	sub	a0, a1, a0

@@ -1,11 +1,11 @@
 func0000000000000002:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	add	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	sub	a0, a0, a1
-	addi	a1, a2, -1365
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mulhu	a0, a0, a1
+	add	a2, a2, a3
+	mulhu	a0, a0, a2
 	srli	a0, a0, 2
 	ret
 

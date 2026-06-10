@@ -62,10 +62,10 @@ func0000000000000034:
 	ret
 
 func0000000000000006:
-	sraiw	a1, a0, 31
-	xor	a0, a0, a1
-	subw	a0, a0, a1
 	lui	a1, 519168
+	sraiw	a2, a0, 31
+	xor	a0, a0, a2
+	subw	a0, a0, a2
 	slt	a0, a0, a1
 	ret
 

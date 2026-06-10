@@ -2,9 +2,9 @@ func0000000000000210:
 	sext.w	a2, a2
 	sext.w	a0, a0
 	sltu	a2, a0, a2
+	lui	a3, 131072
 	or	a1, a1, a2
-	lui	a2, 131072
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	or	a0, a0, a1
 	ret
 
@@ -33,13 +33,13 @@ func0000000000000602:
 	ret
 
 func000000000000050c:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
+	lui	a3, 786432
 	slt	a2, a2, a0
+	addi	a3, a3, 2
 	or	a1, a1, a2
-	lui	a2, 786432
-	addi	a2, a2, 2
-	slt	a0, a0, a2
+	slt	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -47,9 +47,9 @@ func0000000000000314:
 	sext.w	a2, a2
 	sext.w	a0, a0
 	slt	a2, a0, a2
+	bseti	a3, zero, 11
 	or	a1, a1, a2
-	bseti	a2, zero, 11
-	slt	a0, a2, a0
+	slt	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

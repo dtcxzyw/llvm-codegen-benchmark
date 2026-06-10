@@ -32,9 +32,9 @@ func0000000000000001:
 	mulh	a0, a0, a2
 	srli	a1, a0, 63
 	srai	a0, a0, 25
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 1808
+	addi	a1, a2, 1808
 	mul	a0, a0, a1
 	ret
 

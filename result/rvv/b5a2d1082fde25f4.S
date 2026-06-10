@@ -21,14 +21,14 @@ func000000000000003f:
 
 func000000000000001d:
 	lui	a0, 4
-	lui	a1, 16
 	addi	a0, a0, 576
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	addi	a0, a1, -1000
-	vmacc.vx	v10, a0, v8
-	addi	a1, a1, -8
-	vand.vx	v8, v10, a1
+	lui	a0, 16
+	addi	a1, a0, -1000
+	vmacc.vx	v10, a1, v8
+	addi	a0, a0, -8
+	vand.vx	v8, v10, a0
 	ret
 
 func0000000000000010:

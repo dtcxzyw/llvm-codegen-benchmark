@@ -18,8 +18,8 @@ func0000000000000000:
 
 func000000000000000c:
 	srliw	a2, a2, 5
-	slli	a2, a2, 5
 	sh2add	a0, a1, a0
+	slli	a2, a2, 5
 	sh2add	a0, a2, a0
 	ret
 
@@ -38,8 +38,8 @@ func0000000000000007:
 	ret
 
 func000000000000000b:
-	andi	a2, a2, 1
 	sh3add	a0, a1, a0
+	andi	a2, a2, 1
 	sh3add	a0, a2, a0
 	ret
 

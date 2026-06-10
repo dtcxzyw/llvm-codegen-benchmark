@@ -9,9 +9,9 @@ func00000000000000ca:
 
 func0000000000000021:
 	li	a0, -55
-	li	a1, -49
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
+	li	a1, -49
 	vmerge.vxm	v10, v10, a1, v0
 	vmseq.vx	v0, v8, a1
 	vmerge.vvm	v8, v8, v10, v0

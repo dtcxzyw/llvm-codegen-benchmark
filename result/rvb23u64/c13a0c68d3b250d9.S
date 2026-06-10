@@ -16,12 +16,12 @@ func000000000000003f:
 
 func000000000000000f:
 	slli	a1, a1, 48
-	zext.h	a0, a0
+	lui	a2, 1048297
 	srli	a1, a1, 32
+	zext.h	a0, a0
+	addi	a2, a2, 1403
 	or	a0, a0, a1
-	lui	a1, 1048297
-	addi	a1, a1, 1403
-	slli	a1, a1, 42
-	or	a0, a0, a1
+	slli	a2, a2, 42
+	or	a0, a0, a2
 	ret
 

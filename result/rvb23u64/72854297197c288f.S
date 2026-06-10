@@ -1,8 +1,8 @@
 func000000000000001f:
-	zext.b	a1, a1
 	li	a2, 783
-	slli	a1, a1, 40
+	zext.b	a1, a1
 	slli	a2, a2, 32
+	slli	a1, a1, 40
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 33

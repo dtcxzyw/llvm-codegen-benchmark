@@ -18,8 +18,8 @@ func00000000000001e1:
 
 func00000000000001ec:
 	zext.b	a2, a2
-	or	a0, a0, a1
 	slli	a2, a2, 8
+	or	a0, a0, a1
 	or	a0, a0, a2
 	sext.w	a0, a0
 	lui	a1, 131088
@@ -103,10 +103,10 @@ func00000000000003f4:
 
 func0000000000000198:
 	zext.b	a2, a2
-	or	a0, a0, a1
-	lui	a1, 1
 	slli	a2, a2, 8
+	or	a0, a0, a1
 	or	a0, a0, a2
+	lui	a1, 1
 	sext.w	a0, a0
 	addi	a1, a1, -24
 	sltu	a0, a1, a0
@@ -131,10 +131,10 @@ func0000000000000168:
 
 func00000000000003f8:
 	zext.b	a2, a2
-	or	a0, a0, a1
-	lui	a1, 16
 	slli	a2, a2, 18
+	or	a0, a0, a1
 	or	a0, a0, a2
+	lui	a1, 16
 	sext.w	a0, a0
 	addi	a1, a1, -561
 	sltu	a0, a1, a0
@@ -143,8 +143,8 @@ func00000000000003f8:
 func0000000000000161:
 	slli	a2, a2, 24
 	or	a0, a0, a1
-	lui	a1, 472728
 	or	a0, a0, a2
+	lui	a1, 472728
 	sext.w	a0, a0
 	addi	a1, a1, -1435
 	xor	a0, a0, a1

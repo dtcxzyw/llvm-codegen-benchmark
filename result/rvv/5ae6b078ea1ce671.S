@@ -47,12 +47,12 @@ func0000000000000015:
 func0000000000000040:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
-	lui	a1, %hi(.LCPI5_1)
-	ld	a1, %lo(.LCPI5_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI5_1)
 	vzext.vf2	v12, v10
-	vmacc.vx	v8, a1, v12
+	ld	a0, %lo(.LCPI5_1)(a0)
+	vmacc.vx	v8, a0, v12
 	ret
 
 func0000000000000037:

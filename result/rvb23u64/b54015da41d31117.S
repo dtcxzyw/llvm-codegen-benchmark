@@ -13,8 +13,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	sext.w	a1, a1
 	lui	a2, 9
+	sext.w	a1, a1
 	addi	a2, a2, -320
 	min	a1, a1, a2
 	subw	a0, a1, a0

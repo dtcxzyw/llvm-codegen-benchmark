@@ -4,8 +4,8 @@ func0000000000000884:
 	bltu	a4, a3, .LBB0_2
 	sub	a0, a1, a2
 .LBB0_2:
-	sext.w	a0, a0
 	lui	a1, 15
+	sext.w	a0, a0
 	addi	a1, a1, -1439
 	sltu	a0, a0, a1
 	ret
@@ -46,8 +46,8 @@ func00000000000000ca:
 	blt	a4, a3, .LBB4_2
 	sub	a0, a1, a2
 .LBB4_2:
-	sext.w	a0, a0
 	lui	a1, 4096
+	sext.w	a0, a0
 	addi	a1, a1, -1
 	slt	a0, a1, a0
 	ret

@@ -41,10 +41,10 @@ func0000000000000002:
 	ret
 
 func000000000000000f:
+	lui	a2, 16
 	sub	a1, a1, a0
-	lui	a0, 16
-	addi	a0, a0, -3
-	add	a0, a0, a1
+	addi	a2, a2, -3
+	add	a0, a1, a2
 	zext.h	a0, a0
 	ret
 

@@ -18,10 +18,10 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
+	li	a1, -48
 	sh2add	a0, a0, a0
 	slli	a0, a0, 33
 	srli	a0, a0, 41
-	li	a1, -48
 	mul	a0, a0, a1
 	ret
 
@@ -35,8 +35,8 @@ func000000000000001b:
 	ret
 
 func0000000000000000:
-	sh2add	a0, a0, a0
 	li	a1, 375
+	sh2add	a0, a0, a0
 	sh2add	a0, a0, a0
 	srli	a0, a0, 10
 	slli	a1, a1, 28

@@ -23,9 +23,9 @@ func00000000000000ca:
 	ret
 
 func00000000000000c1:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmerge.vim	v10, v10, 0, v0
-	lui	a0, 16
 	vmseq.vv	v12, v10, v8
 	vmslt.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8

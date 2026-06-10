@@ -1,7 +1,7 @@
 func000000000000001f:
+	lui	a0, 768
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 768
 	vwsll.vi	v10, v12, 18
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -11,9 +11,9 @@ func000000000000001f:
 	ret
 
 func000000000000001b:
+	li	a0, 1984
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 1984
 	vwsll.vi	v10, v12, 6
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v10, a0

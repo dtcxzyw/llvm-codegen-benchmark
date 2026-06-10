@@ -1,7 +1,7 @@
 func000000000000010c:
-	sext.w	a1, a1
 	addiw	a2, a2, -39
 	snez	a2, a2
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1

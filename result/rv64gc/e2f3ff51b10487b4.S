@@ -1,7 +1,7 @@
 func000000000000018c:
 	addiw	a2, a0, -32
-	addiw	a0, a0, -64
 	snez	a2, a2
+	addiw	a0, a0, -64
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

@@ -29,10 +29,10 @@ func0000000000000007:
 func0000000000000015:
 	subw	a0, a0, a1
 	negw	a1, a0
+	lui	a2, 1048552
 	max	a0, a0, a1
-	lui	a1, 1048552
-	addi	a1, a1, -8
-	addw	a0, a0, a1
+	addi	a2, a2, -8
+	addw	a0, a0, a2
 	ret
 
 func000000000000001f:

@@ -3,8 +3,8 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, 1
 	li	a2, -257
+	andi	a1, a1, 1
 	zext.w	a2, a2
 	andn	a0, a0, a2
 	bseti	a2, zero, 32

@@ -13,9 +13,9 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
+	li	a0, 42
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	li	a0, 42
 	vmerge.vxm	v8, v8, a0, v0
 	vmslt.vv	v0, v12, v8
 	ret

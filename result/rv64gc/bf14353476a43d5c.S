@@ -7,8 +7,8 @@ func0000000000000014:
 
 func0000000000000050:
 	sub	a1, a1, a2
-	lui	a2, 524288
 	slli	a1, a1, 2
+	lui	a2, 524288
 	add	a0, a0, a1
 	addi	a2, a2, -16
 	sub	a0, a0, a2

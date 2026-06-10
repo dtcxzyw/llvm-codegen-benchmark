@@ -1,7 +1,7 @@
 func0000000000000010:
-	slli	a1, a1, 16
 	lui	a2, 4096
 	addi	a2, a2, -1
+	slli	a1, a1, 16
 	or	a0, a0, a2
 	addw	a0, a0, a1
 	ret

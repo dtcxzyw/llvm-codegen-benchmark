@@ -1,7 +1,7 @@
 func00000000000000ea:
-	slli	a0, a0, 48
 	lui	a1, 11481
 	addi	a1, a1, -1707
+	slli	a0, a0, 48
 	slli	a1, a1, 16
 	mulhu	a0, a0, a1
 	lui	a1, 924416

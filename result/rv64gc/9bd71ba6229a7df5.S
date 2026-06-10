@@ -31,9 +31,9 @@ func0000000000000189:
 
 func0000000000000088:
 	addi	a1, a1, -4
-	sltu	a1, a0, a1
-	sltiu	a0, a0, 5
-	not	a0, a0
+	sltiu	a2, a0, 5
+	sltu	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

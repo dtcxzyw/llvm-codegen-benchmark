@@ -54,9 +54,9 @@ func00000000000001aa:
 	ret
 
 func0000000000000004:
+	lui	a3, 59
 	subw	a2, a2, a1
-	lui	a1, 59
-	addi	a1, a1, -1663
+	addi	a1, a3, -1663
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

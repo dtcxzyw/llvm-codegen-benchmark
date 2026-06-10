@@ -34,12 +34,12 @@ func000000000000003c:
 	ret
 
 func0000000000000070:
-	zext.b	a2, a2
+	lui	a3, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
-	add	a0, a0, a2
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	zext.b	a1, a2
+	slli	a3, a3, 3
+	add	a0, a0, a1
+	addi	a1, a3, -1607
 	add	a0, a0, a1
 	ret
 

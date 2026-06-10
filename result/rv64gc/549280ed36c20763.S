@@ -24,8 +24,8 @@ func00000000000000e4:
 	ret
 
 func00000000000000d9:
-	slli	a1, a1, 16
 	lui	a2, 256
+	slli	a1, a1, 16
 	addi	a2, a2, -1
 	or	a1, a1, a2
 	sltu	a0, a1, a0
@@ -85,16 +85,16 @@ func00000000000000ea:
 	ret
 
 func00000000000000c4:
-	slli	a1, a1, 8
 	lui	a2, 16
+	slli	a1, a1, 8
 	addi	a2, a2, -1
 	or	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
 func00000000000000c8:
-	slli	a1, a1, 8
 	lui	a2, 16
+	slli	a1, a1, 8
 	addi	a2, a2, -1
 	or	a1, a1, a2
 	sltu	a0, a0, a1

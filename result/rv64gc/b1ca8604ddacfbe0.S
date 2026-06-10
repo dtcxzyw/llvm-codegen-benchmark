@@ -11,10 +11,10 @@ func0000000000000020:
 	ret
 
 func0000000000000000:
-	addi	a0, a0, -536
 	lui	a1, 790465
 	addi	a1, a1, -63
 	slli	a2, a1, 36
+	addi	a0, a0, -536
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 5
@@ -48,10 +48,10 @@ func000000000000006f:
 	ret
 
 func000000000000006b:
-	addi	a0, a0, 59
 	lui	a1, 559241
 	addi	a1, a1, -1911
 	slli	a2, a1, 32
+	addi	a0, a0, 59
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 5

@@ -19,11 +19,11 @@ func0000000000000005:
 	ret
 
 func0000000000000012:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vfcvt.f.xu.v	v10, v10
 	li	a0, 485
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vfmul.vf	v10, v10, fa5
 	vmflt.vv	v0, v10, v8
 	ret
@@ -49,11 +49,11 @@ func0000000000000003:
 	ret
 
 func0000000000000013:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vfcvt.f.xu.v	v10, v10
 	lui	a0, 8185
 	slli	a0, a0, 37
 	fmv.d.x	fa5, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfcvt.f.xu.v	v10, v10
 	vfmul.vf	v10, v10, fa5
 	vmfle.vv	v12, v8, v10
 	vmnot.m	v0, v12

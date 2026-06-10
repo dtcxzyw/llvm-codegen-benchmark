@@ -1,8 +1,8 @@
 func0000000000000010:
 	srli	a3, a2, 32
-	andi	a0, a0, 1
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 4
 	srl	a0, a1, a0
@@ -10,9 +10,9 @@ func0000000000000010:
 
 func0000000000000030:
 	srli	a3, a2, 16
-	andi	a0, a0, 1
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	slli	a0, a0, 3
 	srl	a0, a1, a0

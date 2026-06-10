@@ -7,13 +7,13 @@ func0000000000000001:
 	ret
 
 func0000000000000048:
-	zext.b	a2, a2
+	li	a3, 1
 	sub	a0, a0, a1
-	li	a1, 1
-	sub	a0, a0, a2
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	sltu	a0, a1, a0
+	zext.b	a1, a2
+	slli	a3, a3, 32
+	sub	a0, a0, a1
+	addi	a3, a3, -2
+	sltu	a0, a3, a0
 	ret
 
 func0000000000000058:
@@ -25,13 +25,13 @@ func0000000000000058:
 	ret
 
 func0000000000000188:
-	zext.b	a2, a2
+	li	a3, 1
 	sub	a0, a0, a1
-	li	a1, 1
-	sub	a0, a0, a2
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	sltu	a0, a1, a0
+	zext.b	a1, a2
+	slli	a3, a3, 32
+	sub	a0, a0, a1
+	addi	a3, a3, -2
+	sltu	a0, a3, a0
 	ret
 
 func00000000000001a4:

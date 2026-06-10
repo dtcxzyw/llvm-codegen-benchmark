@@ -47,9 +47,9 @@ func00000000000000a6:
 	ret
 
 func00000000000000a1:
+	li	a0, 20
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 20
 	vadd.vx	v9, v9, a0
 	vmseq.vi	v9, v9, 0
 	vmseq.vi	v8, v8, 0
@@ -57,9 +57,9 @@ func00000000000000a1:
 	ret
 
 func00000000000004a1:
+	li	a0, 20
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 20
 	vadd.vx	v9, v9, a0
 	vmseq.vi	v9, v9, 0
 	vmseq.vi	v8, v8, 0

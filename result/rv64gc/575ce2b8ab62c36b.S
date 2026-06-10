@@ -4,11 +4,11 @@ func0000000000000000:
 	or	a1, a1, a3
 	lui	a3, 434334
 	add	a1, a1, a2
-	srliw	a2, a0, 12
+	addi	a2, a3, 1639
+	srliw	a3, a0, 12
 	slliw	a0, a0, 20
-	addi	a3, a3, 1639
-	addw	a1, a1, a3
-	or	a0, a0, a2
+	addw	a1, a1, a2
+	or	a0, a0, a3
 	xor	a0, a0, a1
 	ret
 

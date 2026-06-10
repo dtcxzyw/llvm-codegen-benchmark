@@ -1,12 +1,12 @@
 func0000000000000000:
-	slliw	a0, a0, 3
 	li	a1, 1
+	slliw	a0, a0, 3
 	max	a0, a0, a1
 	ret
 
 func0000000000000016:
-	slliw	a0, a0, 2
 	li	a1, 16
+	slliw	a0, a0, 2
 	max	a0, a0, a1
 	ret
 
@@ -16,8 +16,8 @@ func0000000000000010:
 	ret
 
 func0000000000000002:
-	slliw	a0, a0, 2
 	li	a1, 1
+	slliw	a0, a0, 2
 	max	a0, a0, a1
 	ret
 

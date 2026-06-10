@@ -1,6 +1,6 @@
 func000000000000018c:
-	sext.w	a0, a0
 	andi	a1, a1, -5
+	sext.w	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
@@ -13,8 +13,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	not	a1, a1
+	sext.w	a0, a0
 	bexti	a1, a1, 33
 	czero.eqz	a0, a1, a0
 	ret
@@ -59,8 +59,8 @@ func0000000000000028:
 
 func0000000000000281:
 	slli	a1, a1, 1
-	addiw	a0, a0, -8
 	srli	a1, a1, 33
+	addiw	a0, a0, -8
 	sltiu	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1

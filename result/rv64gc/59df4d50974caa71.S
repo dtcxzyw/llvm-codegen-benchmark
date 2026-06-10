@@ -22,8 +22,8 @@ func0000000000000000:
 	ret
 
 func000000000000003f:
-	slli	a0, a0, 9
 	lui	a1, 18
+	slli	a0, a0, 9
 	addi	a1, a1, -2048
 	addw	a0, a0, a1
 	ret
@@ -48,14 +48,14 @@ func0000000000000035:
 	ret
 
 func0000000000000005:
-	slli	a0, a0, 8
 	lui	a1, 16
+	slli	a0, a0, 8
 	addw	a0, a0, a1
 	ret
 
 func0000000000000010:
-	slli	a0, a0, 8
 	lui	a1, 1047553
+	slli	a0, a0, 8
 	addi	a1, a1, -2048
 	addw	a0, a0, a1
 	ret
@@ -90,8 +90,8 @@ func0000000000000020:
 	ret
 
 func0000000000000013:
-	slli	a0, a0, 9
 	lui	a1, 320
+	slli	a0, a0, 9
 	addw	a0, a0, a1
 	ret
 

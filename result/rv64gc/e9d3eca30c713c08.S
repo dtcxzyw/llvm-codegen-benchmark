@@ -18,9 +18,9 @@ func0000000000000084:
 	add	a1, a1, a2
 	lui	a2, 1034738
 	addi	a2, a2, 1552
+	lui	a3, 256
 	addw	a1, a1, a2
-	lui	a2, 256
-	addi	a2, a2, 528
+	addi	a2, a3, 528
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -48,9 +48,9 @@ func000000000000000a:
 	ret
 
 func00000000000000ac:
+	lui	a3, 13838
 	addw	a1, a1, a2
-	lui	a2, 13838
-	addi	a2, a2, -1281
+	addi	a2, a3, -1281
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1

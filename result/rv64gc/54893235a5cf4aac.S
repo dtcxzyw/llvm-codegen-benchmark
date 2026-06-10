@@ -15,10 +15,10 @@ func0000000000001084:
 	ret
 
 func0000000000001088:
-	addiw	a1, a1, -5
 	srliw	a0, a0, 6
-	sltiu	a1, a1, 2
+	addiw	a1, a1, -5
 	sltiu	a0, a0, 1001
+	sltiu	a1, a1, 2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -48,9 +48,9 @@ func0000000000000081:
 	ret
 
 func0000000000000021:
-	not	a1, a1
 	lui	a2, 524288
 	addi	a2, a2, -1
+	not	a1, a1
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	sext.w	a0, a0

@@ -15,35 +15,35 @@ func000000000000002f:
 	ret
 
 func000000000000006f:
+	li	a3, 1
+	slli	a3, a3, 37
 	slli	a1, a1, 5
+	addi	a3, a3, -32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 37
-	addi	a1, a1, -32
-	and	a1, a1, a2
-	add	a0, a0, a1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 
 func000000000000003f:
 	slli	a2, a2, 20
-	add	a0, a0, a1
 	srli	a2, a2, 58
-	slli	a1, a2, 5
+	slli	a3, a2, 5
 	slli	a2, a2, 8
-	sub	a2, a2, a1
+	add	a0, a0, a1
+	sub	a2, a2, a3
 	add	a0, a0, a2
 	addi	a0, a0, 72
 	ret
 
 func0000000000000060:
+	li	a3, 1
+	slli	a3, a3, 33
 	slli	a1, a1, 2
+	addi	a3, a3, -4
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
-	addi	a1, a1, -4
-	and	a1, a1, a2
-	add	a0, a0, a1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	addi	a0, a0, -4
 	ret
 

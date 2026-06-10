@@ -11,8 +11,8 @@ func000000000000007d:
 	ret
 
 func0000000000000006:
-	slli	a1, a1, 42
 	slli	a0, a0, 32
+	slli	a1, a1, 42
 	srli	a0, a0, 11
 	or	a0, a0, a1
 	ret
@@ -31,8 +31,8 @@ func000000000000001c:
 	ret
 
 func0000000000000007:
-	slli	a1, a1, 33
 	slli	a0, a0, 32
+	slli	a1, a1, 33
 	srli	a0, a0, 31
 	or	a0, a0, a1
 	ret
@@ -64,8 +64,8 @@ func000000000000003d:
 	ret
 
 func0000000000000016:
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	srli	a0, a0, 16
 	or	a0, a0, a1
 	ret

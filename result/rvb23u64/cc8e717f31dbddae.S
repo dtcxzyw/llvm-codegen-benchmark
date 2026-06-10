@@ -15,13 +15,13 @@ func000000000000002f:
 
 func000000000000006f:
 	slli	a2, a2, 30
-	sh2add	a0, a0, a0
 	srai	a3, a2, 23
 	srai	a2, a2, 19
-	slli	a0, a0, 4
+	sh2add	a0, a0, a0
 	sub	a2, a2, a3
+	add	a1, a1, a2
+	slli	a0, a0, 4
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a0, a0, 160
 	ret
 

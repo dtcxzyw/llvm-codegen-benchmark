@@ -1,8 +1,8 @@
 func000000000000008c:
 	zext.h	a0, a0
 	addi	a1, a1, 128
-	sltiu	a1, a1, 256
 	addi	a0, a0, -8
+	sltiu	a1, a1, 256
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

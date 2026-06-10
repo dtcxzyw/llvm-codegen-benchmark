@@ -17,8 +17,8 @@ func00000000000000a8:
 	ret
 
 func0000000000000090:
-	addiw	a2, a2, 5
 	srliw	a1, a1, 24
+	addiw	a2, a2, 5
 	sltiu	a1, a1, 5
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

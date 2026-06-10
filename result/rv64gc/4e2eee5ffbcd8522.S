@@ -1,6 +1,6 @@
 func000000000000002c:
-	neg	a2, a2
 	srli	a1, a1, 32
+	neg	a2, a2
 	add	a0, a0, a1
 	srl	a0, a0, a2
 	ret

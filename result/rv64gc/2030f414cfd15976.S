@@ -1,6 +1,6 @@
 func0000000000000001:
-	srli	a1, a0, 4
-	lui	a2, 15
+	lui	a1, 15
+	srli	a2, a0, 4
 	slli	a0, a0, 52
 	and	a1, a1, a2
 	srli	a0, a0, 52

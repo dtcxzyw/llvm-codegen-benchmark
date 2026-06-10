@@ -1,32 +1,32 @@
 func0000000000000004:
+	seqz	a3, a1
 	sub	a2, a2, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	add	a0, a0, a1
+	addi	a3, a3, -1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func0000000000000085:
+	seqz	a3, a1
 	sub	a2, a2, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	add	a0, a0, a1
+	addi	a3, a3, -1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func0000000000000018:
+	srli	a3, a1, 63
 	sub	a2, a2, a1
-	srli	a1, a1, 63
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	add	a0, a0, a1
+	addi	a3, a3, -1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func0000000000000005:
+	seqz	a3, a1
 	sub	a2, a2, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
-	and	a1, a1, a2
-	add	a0, a0, a1
+	addi	a3, a3, -1
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 

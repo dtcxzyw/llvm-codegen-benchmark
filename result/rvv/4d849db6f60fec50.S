@@ -17,10 +17,10 @@ func0000000000000002:
 
 func000000000000000c:
 	fmv.d.x	fa5, zero
-	lui	a0, 66301
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v0
+	lui	a0, 66301
 	slli	a0, a0, 34
 	vmerge.vxm	v8, v8, a0, v0
 	ret

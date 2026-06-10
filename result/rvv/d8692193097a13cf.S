@@ -15,13 +15,13 @@ func00000000000000f4:
 	ret
 
 func00000000000000b4:
-	li	a0, -160
-	li	a1, 161
+	li	a0, 161
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vx	v0, v8, a1
-	li	a1, 160
+	vmsltu.vx	v0, v8, a0
+	li	a0, -160
 	vadd.vx	v10, v8, a0
-	vrsub.vx	v10, v8, a1, v0.t
+	li	a0, 160
+	vrsub.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
 

@@ -52,9 +52,9 @@ func0000000000000042:
 	vzext.vf2	v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v8, v8, 8
-	lui	a0, 419527
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
+	lui	a0, 419527
 	addi	a0, a0, -159
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v10, v8, a0
@@ -66,9 +66,9 @@ func0000000000000254:
 	vzext.vf2	v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v8, v8, 6
-	lui	a0, 272
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
+	lui	a0, 272
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgt.vx	v10, v8, a0

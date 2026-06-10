@@ -41,9 +41,9 @@ func000000000000003e:
 	ret
 
 func000000000000001e:
+	lui	a2, 30
 	add	a0, a0, a1
-	lui	a1, 30
-	addi	a1, a1, -1214
+	addi	a1, a2, -1214
 	mul	a2, a0, a1
 	mulhu	a0, a0, a1
 	slli	a0, a0, 13

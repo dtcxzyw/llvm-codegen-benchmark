@@ -21,8 +21,8 @@ func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vmseq.vi	v0, v12, 0
-	lui	a0, 230
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 230
 	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -32,8 +32,8 @@ func0000000000000038:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vmseq.vi	v0, v12, 0
-	li	a0, 45
 	vmerge.vvm	v8, v10, v8, v0
+	li	a0, 45
 	slli	a0, a0, 26
 	vmsgtu.vx	v0, v8, a0
 	ret

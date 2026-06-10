@@ -1,6 +1,6 @@
 func000000000000030c:
-	slli	a0, a0, 1
 	li	a3, -1
+	slli	a0, a0, 1
 	srli	a3, a3, 1
 	addi	a2, a2, 16
 	bgeu	a0, a3, .LBB0_3
@@ -15,8 +15,8 @@ func000000000000030c:
 	ret
 
 func000000000000030e:
-	slli	a0, a0, 1
 	li	a3, -1
+	slli	a0, a0, 1
 	srli	a3, a3, 4
 	addi	a2, a2, 16
 	bgeu	a0, a3, .LBB1_3
@@ -31,8 +31,8 @@ func000000000000030e:
 	ret
 
 func000000000000020c:
-	slli	a0, a0, 1
 	li	a3, -1
+	slli	a0, a0, 1
 	srli	a3, a3, 1
 	addi	a2, a2, -64
 	bgeu	a0, a3, .LBB2_3

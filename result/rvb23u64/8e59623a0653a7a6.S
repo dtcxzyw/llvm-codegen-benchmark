@@ -51,20 +51,20 @@ func0000000000000581:
 
 func0000000000000508:
 	add	a1, a1, a2
-	li	a2, -31
 	sub	a1, a1, a0
+	li	a0, -31
 	addi	a1, a1, -16
-	srli	a2, a2, 1
-	sltu	a0, a2, a1
+	srli	a0, a0, 1
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000588:
 	sh3add	a1, a2, a1
-	li	a2, -15
 	sub	a1, a1, a0
+	li	a0, -15
 	addi	a1, a1, 8
-	srli	a2, a2, 1
-	sltu	a0, a2, a1
+	srli	a0, a0, 1
+	sltu	a0, a0, a1
 	ret
 
 func000000000000058a:

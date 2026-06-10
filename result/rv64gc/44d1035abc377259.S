@@ -1,7 +1,7 @@
 func0000000000000043:
-	sext.w	a2, a2
 	slli	a3, a1, 3
 	slli	a1, a1, 6
+	sext.w	a2, a2
 	sub	a1, a1, a3
 	add	a0, a0, a1
 	slli	a2, a2, 4
@@ -19,12 +19,12 @@ func000000000000003f:
 	ret
 
 func000000000000007f:
-	sext.w	a2, a2
 	li	a3, 328
 	mul	a1, a1, a3
-	add	a0, a0, a1
+	sext.w	a2, a2
 	slli	a2, a2, 3
 	add	a0, a0, a2
+	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 

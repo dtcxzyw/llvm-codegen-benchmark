@@ -21,8 +21,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	andi	a1, a1, 1
 	li	a3, -1
+	andi	a1, a1, 1
 	sll	a2, a3, a2
 	not	a2, a2
 	addi	a1, a1, -1
@@ -31,8 +31,8 @@ func0000000000000028:
 	ret
 
 func000000000000002a:
-	andi	a1, a1, 1
 	li	a3, -1
+	andi	a1, a1, 1
 	sll	a2, a3, a2
 	not	a2, a2
 	addi	a1, a1, -1
@@ -41,8 +41,8 @@ func000000000000002a:
 	ret
 
 func0000000000000027:
-	andi	a1, a1, 1
 	li	a3, -1
+	andi	a1, a1, 1
 	sll	a2, a3, a2
 	not	a2, a2
 	addi	a1, a1, -1

@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.w	a0, a0
 	li	a1, 3
+	sext.w	a0, a0
 	bne	a0, a1, .LBB0_2
 	lui	a0, 258048
 	fmv.w.x	fa5, a0

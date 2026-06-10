@@ -4,10 +4,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	srliw	a1, a0, 16
-	lui	a2, 17
-	addi	a2, a2, 11
-	czero.eqz	a1, a2, a1
+	lui	a1, 17
+	srliw	a2, a0, 16
+	addi	a1, a1, 11
+	czero.eqz	a1, a1, a2
 	xor	a0, a0, a1
 	ret
 

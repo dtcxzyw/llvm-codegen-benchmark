@@ -29,17 +29,17 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
+	li	a0, 115
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 115
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
 
 func0000000000000184:
+	li	a0, 56
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 56
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -55,9 +55,9 @@ func0000000000000024:
 	ret
 
 func0000000000000038:
+	li	a0, 50
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 1
-	li	a0, 50
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -172,9 +172,9 @@ func0000000000000301:
 	ret
 
 func0000000000000284:
+	li	a0, 65
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, 1
-	li	a0, 65
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -209,9 +209,9 @@ func000000000000014c:
 	ret
 
 func0000000000000306:
+	li	a0, 513
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v12, v10, 4
-	li	a0, 513
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -224,18 +224,18 @@ func0000000000000144:
 	ret
 
 func0000000000000028:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 0
-	lui	a0, 16
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
 
 func0000000000000288:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v12, v10, 1
 	lui	a0, 1
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vi	v12, v10, 1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -335,9 +335,9 @@ func0000000000000098:
 	ret
 
 func0000000000000086:
+	li	a0, 2008
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, 6
-	li	a0, 2008
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -350,18 +350,18 @@ func0000000000000318:
 	ret
 
 func0000000000000154:
+	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v10, 0
-	li	a0, 99
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
 
 func0000000000000148:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v12, v10, 0
 	lui	a0, 4096
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgt.vi	v12, v10, 0
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

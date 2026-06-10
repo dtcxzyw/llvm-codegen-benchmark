@@ -11,8 +11,8 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	fadd.d	fa5, fa0, fa1
 	li	a0, -497
+	fadd.d	fa5, fa0, fa1
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmax.d	fa0, fa5, fa4

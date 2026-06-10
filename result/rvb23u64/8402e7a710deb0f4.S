@@ -8,8 +8,8 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	andi	a1, a1, 1
 	sext.w	a0, a0
+	andi	a1, a1, 1
 	max	a0, a0, zero
 	czero.eqz	a0, a0, a1
 	ret

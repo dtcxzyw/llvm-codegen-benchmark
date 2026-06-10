@@ -4,11 +4,12 @@ func0000000000001058:
 	lui	a0, 6
 	addi	a0, a0, -983
 	vmul.vx	v10, v12, a0
-	li	a0, 655
-	vror.vi	v10, v10, 2
-	vmsleu.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsne.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vror.vi	v8, v10, 2
+	li	a0, 655
+	vmsleu.vx	v8, v8, a0
+	vmor.mm	v0, v11, v8
 	ret
 

@@ -9,8 +9,8 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	addi	a0, a0, 42
 	li	a1, -109
+	addi	a0, a0, 42
 	slli	a2, a0, 56
 	srai	a2, a2, 56
 	mul	a1, a2, a1

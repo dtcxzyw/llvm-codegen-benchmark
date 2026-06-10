@@ -24,10 +24,10 @@ func0000000000000035:
 	zext.h	a1, a1
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
+	lui	a2, 981163
 	sh2add	a0, a1, a0
-	lui	a1, 981163
-	slli	a1, a1, 3
-	addi	a1, a1, 384
+	slli	a2, a2, 3
+	addi	a1, a2, 384
 	add	a0, a0, a1
 	ret
 

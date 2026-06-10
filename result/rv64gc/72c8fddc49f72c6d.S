@@ -23,9 +23,9 @@ func000000000000000c:
 	bltu	a1, a2, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
+	lui	a2, 9
 	add	a0, a0, a1
-	lui	a1, 9
-	addi	a1, a1, -624
+	addi	a1, a2, -624
 	add	a0, a0, a1
 	ret
 
@@ -35,9 +35,9 @@ func0000000000000000:
 	bltu	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 688
+	addi	a1, a2, 688
 	add	a0, a0, a1
 	ret
 

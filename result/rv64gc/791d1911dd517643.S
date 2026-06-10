@@ -9,22 +9,22 @@ func0000000000000181:
 func000000000000018c:
 	li	a1, 15
 	slli	a1, a1, 10
-	and	a1, a1, a0
-	andi	a0, a0, 504
-	addi	a0, a0, -8
-	snez	a1, a1
+	andi	a2, a0, 504
+	and	a0, a0, a1
+	addi	a2, a2, -8
 	snez	a0, a0
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	zext.b	a1, a0
-	li	a2, 15
-	addi	a1, a1, -34
-	slli	a2, a2, 8
-	seqz	a1, a1
-	and	a0, a0, a2
+	li	a1, 15
+	slli	a1, a1, 8
+	zext.b	a2, a0
+	and	a0, a0, a1
+	addi	a1, a2, -34
 	addi	a0, a0, -512
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -26,11 +26,11 @@ func00000000000000a5:
 func00000000000000a7:
 	add	a1, a1, a2
 	li	a2, 94
-	zext.b	a0, a0
 	mul	a1, a1, a2
 	lui	a2, 14
-	add	a0, a0, a1
-	addi	a1, a2, -161
+	zext.b	a0, a0
+	addi	a2, a2, -161
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

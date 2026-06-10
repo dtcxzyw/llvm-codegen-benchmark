@@ -7,8 +7,8 @@ func000000000000030f:
 
 func000000000000020f:
 	srli	a2, a2, 8
-	andi	a1, a1, 1
 	sltiu	a2, a2, 257
+	andi	a1, a1, 1
 	xori	a2, a2, 1
 	add	a0, a0, a1
 	addw	a0, a0, a2

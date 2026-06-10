@@ -12,14 +12,14 @@ func0000000000000035:
 	li	a2, 298
 	mul	a1, a1, a2
 	lui	a2, 1048575
-	add	a0, a0, a1
-	addi	a1, a2, -544
+	addi	a2, a2, -544
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000003f:
-	zext.b	a1, a1
 	li	a2, 29
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 128
@@ -39,8 +39,8 @@ func0000000000000075:
 	li	a2, 100
 	mul	a1, a1, a2
 	lui	a2, 1048575
-	add	a0, a0, a1
-	addi	a1, a2, -1232
+	addi	a2, a2, -1232
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -75,15 +75,15 @@ func000000000000007f:
 	li	a2, 52
 	mul	a1, a1, a2
 	lui	a2, 8
-	add	a0, a0, a1
-	addi	a1, a2, 76
+	addi	a2, a2, 76
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 56
 	lui	a2, 65536
 	addi	a2, a2, -691
+	slli	a1, a1, 56
 	slli	a2, a2, 8
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

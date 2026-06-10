@@ -4,8 +4,8 @@ func0000000000000095:
 	lui	a0, 596523
 	addi	a0, a0, 965
 	vmulhu.vx	v10, v10, a0
-	lui	a0, 1048575
 	vsrl.vi	v10, v10, 11
+	lui	a0, 1048575
 	addi	a0, a0, 496
 	vwmaccsu.vx	v8, a0, v10
 	ret
@@ -16,8 +16,8 @@ func000000000000005f:
 	lui	a0, 596523
 	addi	a0, a0, 965
 	vmulhu.vx	v10, v10, a0
-	lui	a0, 1048575
 	vsrl.vi	v10, v10, 11
+	lui	a0, 1048575
 	addi	a0, a0, 496
 	vwmaccu.vx	v8, a0, v10
 	ret

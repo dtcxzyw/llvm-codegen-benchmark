@@ -48,8 +48,8 @@ func0000000000000518:
 	ret
 
 func0000000000000318:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	max	a2, a2, zero
 	slt	a1, a1, a2
 	or	a0, a0, a1
@@ -71,8 +71,8 @@ func0000000000000604:
 func0000000000000598:
 	sext.w	a2, a2
 	sext.w	a3, a1
-	srliw	a1, a1, 31
 	slt	a2, a3, a2
+	srliw	a1, a1, 31
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2

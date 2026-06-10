@@ -13,8 +13,8 @@ func0000000000000000:
 	addi	a0, sp, 64
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vse32.v	v8, (a0)
-	flw	fa0, 124(sp)
 	lui	a0, 277312
+	flw	fa0, 124(sp)
 	fmv.w.x	fs0, a0
 	fmv.s	fa1, fs0
 	call	fmodf
@@ -109,8 +109,8 @@ func0000000000000000:
 	vfmv.f.s	fa0, v8
 	fmv.s	fa1, fs0
 	call	fmodf
-	fsw	fa0, 144(sp)
 	addi	a0, sp, 128
+	fsw	fa0, 144(sp)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vle32.v	v8, (a0)
 	addi	sp, s0, -272

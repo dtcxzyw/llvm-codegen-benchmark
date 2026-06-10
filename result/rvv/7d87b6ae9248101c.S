@@ -1,10 +1,11 @@
 func00000000000000a4:
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vmseq.vi	v0, v8, 0
+	vmseq.vi	v10, v8, 0
+	vmv.v.i	v12, 0
+	vmerge.vim	v12, v12, 1, v0
+	vmv1r.v	v0, v10
 	lui	a0, 272
-	vor.vx	v8, v10, a0, v0.t
+	vor.vx	v8, v12, a0, v0.t
 	lui	a0, 1048304
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 2

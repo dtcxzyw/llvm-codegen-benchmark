@@ -5,8 +5,8 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	zext.h	a0, a0
 	lui	a1, 16
+	zext.h	a0, a0
 	addi	a1, a1, -257
 	xor	a0, a0, a1
 	seqz	a0, a0

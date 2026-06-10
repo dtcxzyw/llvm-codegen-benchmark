@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, -769
 	andi	a0, a0, 1
+	andi	a1, a1, -769
 	slli	a0, a0, 9
 	or	a0, a0, a1
 	ret

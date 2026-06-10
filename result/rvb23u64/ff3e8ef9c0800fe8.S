@@ -10,8 +10,8 @@ func0000000000000141:
 
 func0000000000000144:
 	add	a2, a0, a1
-	sltiu	a1, a1, 3
 	addi	a2, a2, -3
+	sltiu	a1, a1, 3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000001:
 
 func0000000000000004:
 	add	a2, a0, a1
-	sltiu	a1, a1, 61
 	addi	a2, a2, -57
+	sltiu	a1, a1, 61
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

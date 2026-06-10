@@ -1,18 +1,18 @@
 func000000000000001e:
 	slli	a2, a2, 16
 	zext.b	a1, a1
+	lui	a3, 1044480
 	or	a0, a0, a2
-	lui	a2, 1044480
-	or	a1, a1, a2
+	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
 	slli	a2, a2, 16
 	zext.b	a0, a0
+	lui	a3, 1044480
 	or	a1, a1, a2
-	lui	a2, 1044480
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -26,8 +26,8 @@ func0000000000000000:
 
 func0000000000000007:
 	slliw	a2, a2, 27
-	andi	a1, a1, 7
 	or	a0, a0, a2
+	andi	a1, a1, 7
 	li	a2, 31
 	or	a0, a0, a1
 	slli	a2, a2, 11
@@ -45,28 +45,28 @@ func000000000000001f:
 func0000000000000002:
 	slli	a2, a2, 8
 	andi	a1, a1, 128
+	lui	a3, 786432
 	or	a0, a0, a2
-	lui	a2, 786432
-	or	a1, a1, a2
+	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000017:
+	lui	a3, 16
 	slliw	a2, a2, 24
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ori	a0, a0, 240
 	ret
 
 func0000000000000016:
+	lui	a3, 16
 	slliw	a2, a2, 24
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ori	a0, a0, 240
 	bseti	a0, a0, 24
@@ -74,18 +74,18 @@ func0000000000000016:
 
 func000000000000001c:
 	slliw	a2, a2, 16
+	lui	a3, 260080
 	or	a0, a0, a2
-	lui	a2, 260080
-	andn	a1, a1, a2
+	andn	a1, a1, a3
 	or	a0, a0, a1
 	bseti	a0, a0, 22
 	ret
 
 func0000000000000014:
 	slliw	a2, a2, 24
+	lui	a3, 260080
 	or	a0, a0, a2
-	lui	a2, 260080
-	andn	a1, a1, a2
+	andn	a1, a1, a3
 	or	a0, a0, a1
 	bseti	a0, a0, 22
 	ret
@@ -93,9 +93,9 @@ func0000000000000014:
 func000000000000000e:
 	slli	a2, a2, 16
 	zext.b	a1, a1
+	lui	a3, 1044480
 	or	a0, a0, a2
-	lui	a2, 1044480
-	or	a1, a1, a2
+	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

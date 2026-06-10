@@ -22,16 +22,16 @@ func0000000000000007:
 func0000000000000006:
 	lui	a2, 16
 	addi	a2, a2, -129
+	lui	a3, 9
 	and	a1, a1, a2
-	lui	a2, 9
-	addi	a2, a2, -1024
+	addi	a2, a3, -1024
 	xor	a1, a1, a2
 	lui	a2, 1021476
+	lui	a3, 32959
 	addi	a2, a2, 1600
+	addi	a3, a3, -64
 	czero.eqz	a1, a2, a1
-	lui	a2, 32959
-	addi	a2, a2, -64
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

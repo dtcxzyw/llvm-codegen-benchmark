@@ -1,9 +1,9 @@
 func000000000000026f:
-	sraiw	a2, a0, 31
 	sh1add	a1, a1, a1
+	sraiw	a2, a0, 31
 	andi	a2, a2, 60
-	add	a0, a0, a2
 	sh2add	a1, a1, a1
+	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	sext.w	a0, a0
 	ret
@@ -19,13 +19,13 @@ func0000000000000260:
 	ret
 
 func0000000000000264:
-	sraiw	a2, a1, 31
-	li	a3, -10
-	mul	a0, a0, a3
-	lui	a3, 1
-	addi	a3, a3, -496
+	li	a2, -10
+	mul	a0, a0, a2
+	lui	a2, 1
+	sraiw	a3, a1, 31
+	addi	a2, a2, -496
 	and	a2, a2, a3
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 

@@ -37,9 +37,9 @@ func00000000000001f7:
 
 func00000000000001ff:
 	slli	a2, a2, 43
-	sext.w	a1, a1
 	add	a0, a0, a2
 	lui	a2, 24578
+	sext.w	a1, a1
 	bseti	a2, a2, 54
 	add	a0, a0, a1
 	bseti	a1, a2, 62

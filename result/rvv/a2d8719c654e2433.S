@@ -121,9 +121,9 @@ func00000000000004c4:
 	ret
 
 func0000000000000084:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, 1
-	lui	a0, 16
 	vmsltu.vx	v14, v12, a0
 	vmsltu.vv	v12, v8, v10
 	vmand.mm	v0, v14, v12

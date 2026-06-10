@@ -6,9 +6,9 @@ func000000000000000c:
 
 func000000000000002c:
 	slli	a1, a1, 1
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 360
+	addi	a1, a2, 360
 	add	a0, a0, a1
 	ret
 
@@ -20,9 +20,9 @@ func000000000000003f:
 
 func000000000000000e:
 	slli	a1, a1, 7
+	lui	a2, 3
 	add	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, -1928
+	addi	a1, a2, -1928
 	add	a0, a0, a1
 	ret
 

@@ -9,9 +9,9 @@ func0000000000000066:
 	ret
 
 func0000000000000244:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 6
-	li	a0, 64
 	vadd.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12
@@ -20,9 +20,9 @@ func0000000000000244:
 	ret
 
 func0000000000000044:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 6
-	li	a0, 64
 	vadd.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12
@@ -71,9 +71,9 @@ func000000000000022a:
 	ret
 
 func00000000000002ea:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 2
-	li	a0, 64
 	vadd.vi	v12, v10, -3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12

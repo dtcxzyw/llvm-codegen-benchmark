@@ -1,6 +1,6 @@
 func0000000000000034:
-	srai	a1, a1, 1
 	li	a2, 1178
+	srai	a1, a1, 1
 	sh2add	a1, a2, a1
 	sltu	a0, a1, a0
 	ret

@@ -6,9 +6,9 @@ func0000000000000028:
 	ret
 
 func0000000000000024:
+	lui	a3, 781
 	sub	a1, a1, a2
-	lui	a2, 781
-	addi	a2, a2, 1024
+	addi	a2, a3, 1024
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

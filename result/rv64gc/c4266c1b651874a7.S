@@ -26,9 +26,9 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
+	lui	a2, 1
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	lui	a2, 1
 	bgeu	a2, a1, .LBB3_2
 	lui	a0, 1
 .LBB3_2:

@@ -3,8 +3,8 @@ func0000000000000003:
 	vmv1r.v	v10, v0
 	li	a0, -39
 	vmv.v.x	v11, a0
-	li	a0, -30
 	vmv1r.v	v0, v9
+	li	a0, -30
 	vmerge.vxm	v9, v11, a0, v0
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v8, v9, v0

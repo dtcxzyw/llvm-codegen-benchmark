@@ -1,7 +1,7 @@
 func00000000000000ca:
-	slt	a1, a1, a0
-	srli	a0, a0, 63
-	not	a0, a0
+	srli	a2, a0, 63
+	slt	a0, a1, a0
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -85,9 +85,9 @@ func0000000000000186:
 	ret
 
 func000000000000008a:
-	sltu	a1, a1, a0
-	srli	a0, a0, 63
-	not	a0, a0
+	srli	a2, a0, 63
+	sltu	a0, a1, a0
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -107,9 +107,9 @@ func000000000000016a:
 	ret
 
 func0000000000000084:
-	sltu	a1, a1, a0
 	lui	a2, 1
 	addi	a2, a2, 1
+	sltu	a1, a1, a0
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

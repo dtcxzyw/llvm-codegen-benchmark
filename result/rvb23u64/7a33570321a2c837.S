@@ -22,8 +22,8 @@ func0000000000000189:
 
 func000000000000002c:
 	andi	a2, a2, 7
-	xor	a0, a0, a1
 	addi	a2, a2, -1
+	xor	a0, a0, a1
 	seqz	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

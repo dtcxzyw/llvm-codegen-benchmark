@@ -26,8 +26,8 @@ func00000000000000aa:
 func0000000000000006:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v10, 1
-	li	a0, 101
 	vmslt.vv	v0, v12, v8
+	li	a0, 101
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

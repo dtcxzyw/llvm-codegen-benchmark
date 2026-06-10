@@ -4,8 +4,8 @@ func0000000000000004:
 	mv	a0, a1
 	ret
 .LBB0_2:
-	srli	a2, a2, 3
 	lui	a0, 457999
+	srli	a2, a2, 3
 	addi	a0, a0, -1177
 	mulw	a0, a2, a0
 	ret

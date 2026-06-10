@@ -1,6 +1,6 @@
 func00000000000000d4:
-	addi	a1, a1, 2
 	lui	a2, 16
+	addi	a1, a1, 2
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
@@ -8,8 +8,8 @@ func00000000000000d4:
 	ret
 
 func00000000000000d8:
-	addi	a1, a1, 14
 	lui	a2, 16
+	addi	a1, a1, 14
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2

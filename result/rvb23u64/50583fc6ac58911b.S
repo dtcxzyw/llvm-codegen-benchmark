@@ -1,7 +1,7 @@
 func0000000000000184:
-	zext.h	a2, a2
 	zext.h	a1, a1
 	zext.h	a0, a0
+	zext.h	a2, a2
 	sltu	a0, a0, a1
 	czero.eqz	a0, a0, a2
 	ret

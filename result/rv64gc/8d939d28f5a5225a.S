@@ -1,12 +1,12 @@
 func000000000000001f:
 	sext.w	a1, a1
+	lui	a2, 1024
 	add	a0, a0, a1
 	lui	a1, 256
+	addi	a2, a2, -1
 	add	a0, a0, a1
-	lui	a1, 1024
-	addi	a1, a1, -1
-	slli	a1, a1, 21
-	and	a0, a0, a1
+	slli	a2, a2, 21
+	and	a0, a0, a2
 	ret
 
 func000000000000000f:
@@ -20,11 +20,11 @@ func000000000000000f:
 func0000000000000004:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
+	slli	a2, a2, 63
 	addi	a0, a0, -2
-	addi	a1, a1, 63
+	addi	a1, a2, 63
 	and	a0, a0, a1
 	ret
 

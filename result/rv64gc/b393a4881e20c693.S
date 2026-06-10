@@ -5,9 +5,9 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
+	neg	a2, a2
 	sub	a0, a0, a1
-	neg	a1, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

@@ -17,10 +17,10 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	sext.w	a3, a0
-	lui	a4, 8
-	addi	a4, a4, -1
-	slt	a3, a4, a3
+	lui	a3, 8
+	sext.w	a4, a0
+	addi	a3, a3, -1
+	slt	a3, a3, a4
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

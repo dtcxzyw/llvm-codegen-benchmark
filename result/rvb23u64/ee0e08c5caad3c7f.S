@@ -30,9 +30,9 @@ func0000000000000006:
 	zext.h	a2, a2
 	lui	a3, 1
 	addi	a3, a3, 769
+	lui	a4, 1048575
 	xor	a2, a2, a3
-	lui	a3, 1048575
-	addi	a3, a3, -757
+	addi	a3, a4, -757
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2

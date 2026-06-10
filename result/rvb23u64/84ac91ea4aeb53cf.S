@@ -23,9 +23,9 @@ func0000000000000003:
 func000000000000001e:
 	zext.b	a1, a1
 	slliw	a0, a0, 6
+	lui	a2, 14
 	or	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	or	a0, a0, a1
 	ret
 

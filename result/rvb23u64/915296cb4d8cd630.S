@@ -7,13 +7,13 @@ func0000000000000610:
 	ret
 
 func0000000000000310:
-	cpop	a1, a0
-	lui	a2, 2
-	addi	a1, a1, -1
-	addi	a2, a2, 1808
-	snez	a1, a1
-	sltu	a0, a2, a0
-	or	a0, a0, a1
+	lui	a1, 2
+	cpop	a2, a0
+	addi	a2, a2, -1
+	addi	a1, a1, 1808
+	snez	a2, a2
+	sltu	a0, a1, a0
+	or	a0, a0, a2
 	ret
 
 func0000000000000628:

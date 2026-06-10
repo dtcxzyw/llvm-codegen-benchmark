@@ -1,8 +1,8 @@
 func0000000000000009:
-	srliw	a1, a0, 19
-	slli	a0, a0, 13
-	or	a0, a0, a1
 	lui	a1, 648056
+	srliw	a2, a0, 19
+	slli	a0, a0, 13
+	or	a0, a0, a2
 	addi	a1, a1, -1615
 	mul	a0, a0, a1
 	srliw	a1, a0, 31
@@ -11,10 +11,10 @@ func0000000000000009:
 	ret
 
 func0000000000000000:
-	srliw	a1, a0, 11
-	slli	a0, a0, 21
-	or	a0, a0, a1
 	lui	a1, 838115
+	srliw	a2, a0, 11
+	slli	a0, a0, 21
+	or	a0, a0, a2
 	addi	a1, a1, -687
 	mul	a0, a0, a1
 	srliw	a1, a0, 17

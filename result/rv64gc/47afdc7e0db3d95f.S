@@ -1,6 +1,6 @@
 func0000000000000075:
-	andi	a3, a0, 1
 	slli	a2, a2, 48
+	andi	a3, a0, 1
 	add	a1, a1, a3
 	srli	a2, a2, 48
 	sltu	a1, a2, a1
@@ -9,8 +9,8 @@ func0000000000000075:
 	ret
 
 func0000000000000045:
-	andi	a3, a0, 1
 	slli	a2, a2, 48
+	andi	a3, a0, 1
 	add	a1, a1, a3
 	srli	a2, a2, 48
 	sltu	a1, a2, a1

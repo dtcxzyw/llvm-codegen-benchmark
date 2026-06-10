@@ -10,8 +10,8 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
-	sext.w	a1, a1
 	andi	a2, a2, 18
+	sext.w	a1, a1
 	addi	a2, a2, -18
 	seqz	a2, a2
 	snez	a1, a1

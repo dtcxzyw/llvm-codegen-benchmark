@@ -1,14 +1,14 @@
 func000000000000007a:
+	li	a3, -256
 	add	a0, a0, a1
-	li	a1, -256
-	orn	a1, a1, a2
+	orn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000006a:
+	li	a3, -256
 	add	a0, a0, a1
-	li	a1, -256
-	orn	a1, a1, a2
+	orn	a1, a3, a2
 	add	a0, a0, a1
 	ret
 

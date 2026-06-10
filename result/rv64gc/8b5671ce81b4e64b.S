@@ -1,7 +1,7 @@
 func0000000000000108:
+	li	a2, 16
 	srliw	a1, a0, 16
-	li	a0, 16
-	bltu	a0, a1, .LBB0_2
+	bltu	a2, a1, .LBB0_2
 	li	a0, 4
 	beqz	a1, .LBB0_3
 	j	.LBB0_4
@@ -14,9 +14,9 @@ func0000000000000108:
 	ret
 
 func00000000000000ca:
+	li	a2, 27
 	sext.w	a1, a0
-	li	a0, 27
-	blt	a1, a0, .LBB1_2
+	blt	a1, a2, .LBB1_2
 	li	a0, 13
 	li	a2, 9
 	bge	a2, a1, .LBB1_3
@@ -31,8 +31,9 @@ func00000000000000ca:
 	ret
 
 func00000000000000c6:
-	sext.w	a1, a0
+	mv	a1, a0
 	li	a0, 10
+	sext.w	a1, a1
 	blt	a1, a0, .LBB2_3
 	li	a2, 100
 	bge	a1, a2, .LBB2_4

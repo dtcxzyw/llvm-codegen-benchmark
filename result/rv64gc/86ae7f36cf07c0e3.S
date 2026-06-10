@@ -82,13 +82,13 @@ func000000000000000a:
 	ret
 
 func0000000000000002:
-	andi	a1, a1, 1
 	lui	a3, 32
+	andi	a1, a1, 1
 	addi	a3, a3, 64
-	add	a2, a2, a3
-	lui	a3, 1048544
 	addi	a1, a1, -1
-	and	a1, a1, a3
+	lui	a4, 1048544
+	add	a2, a2, a3
+	and	a1, a1, a4
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

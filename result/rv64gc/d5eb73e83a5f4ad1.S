@@ -1,8 +1,8 @@
 func0000000000000001:
-	li	a2, 2
 	slli	a0, a0, 48
-	sllw	a1, a2, a1
+	li	a2, 2
 	seqz	a0, a0
+	sllw	a1, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

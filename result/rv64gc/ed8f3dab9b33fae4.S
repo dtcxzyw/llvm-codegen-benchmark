@@ -20,8 +20,8 @@ func0000000000000302:
 
 func0000000000000042:
 	andi	a2, a2, 12
-	addi	a1, a1, -132
 	addi	a2, a2, -12
+	addi	a1, a1, -132
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2

@@ -20,8 +20,8 @@ func0000000000000013:
 	ret
 
 func0000000000000002:
-	fadd.s	fa5, fa1, fa2
 	lui	a0, 786432
+	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, zero

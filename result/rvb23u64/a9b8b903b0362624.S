@@ -38,15 +38,15 @@ func0000000000000066:
 	ret
 
 func0000000000000006:
-	sext.h	a1, a1
 	lui	a2, 1048568
+	sext.h	a1, a1
 	addw	a0, a0, a2
 	slt	a0, a0, a1
 	ret
 
 func000000000000000b:
-	sext.h	a1, a1
 	lui	a2, 1048568
+	sext.h	a1, a1
 	addw	a0, a0, a2
 	slt	a0, a0, a1
 	xori	a0, a0, 1

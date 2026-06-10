@@ -1,7 +1,7 @@
 func0000000000000007:
 	fmv.d.x	fa5, zero
-	feq.d	a2, fa0, fa5
 	and	a1, a1, a0
+	feq.d	a2, fa0, fa5
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -36,8 +36,8 @@ func0000000000000001:
 
 func000000000000000d:
 	fmv.d.x	fa5, zero
-	flt.d	a2, fa0, fa5
 	and	a1, a1, a0
+	flt.d	a2, fa0, fa5
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret

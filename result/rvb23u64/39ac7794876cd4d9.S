@@ -8,8 +8,8 @@ func0000000000000018:
 	ret
 
 func0000000000000000:
-	andi	a2, a2, -8
 	lui	a3, 244141
+	andi	a2, a2, -8
 	addi	a3, a3, -1560
 	sub	a3, a3, a2
 	minu	a1, a1, a3

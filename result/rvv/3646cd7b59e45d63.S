@@ -3,12 +3,12 @@
 func0000000000000208:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vwaddu.wv	v8, v8, v11
-	li	a1, -48
+	li	a0, -48
+	lui	a1, %hi(.LCPI0_0)
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v8, a1
+	vadd.vx	v8, v8, a0
+	ld	a0, %lo(.LCPI0_0)(a1)
 	vmsgtu.vx	v0, v8, a0
 	ret
 
@@ -25,8 +25,8 @@ func0000000000000206:
 func000000000000020a:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
-	li	a0, -48
 	vwaddu.wv	v8, v8, v11
+	li	a0, -48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 524288

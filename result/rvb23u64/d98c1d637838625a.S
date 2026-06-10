@@ -45,10 +45,10 @@ func0000000000000621:
 
 func0000000000000081:
 	seqz	a1, a1
+	li	a2, -1
 	or	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	xor	a0, a0, a1
+	srli	a2, a2, 32
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

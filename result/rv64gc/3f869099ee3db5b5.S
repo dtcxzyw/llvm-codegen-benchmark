@@ -1,10 +1,11 @@
 func000000000000006a:
-	lui	a2, 6
-	addi	a2, a2, 973
-	bge	a2, a0, .LBB0_2
-	li	a1, 255
-.LBB0_2:
+	mv	a2, a0
+	lui	a0, 6
+	addi	a3, a0, 973
 	mv	a0, a1
+	bge	a3, a2, .LBB0_2
+	li	a0, 255
+.LBB0_2:
 	ret
 
 func0000000000000046:

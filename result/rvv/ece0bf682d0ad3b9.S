@@ -1,8 +1,8 @@
 func0000000000000001:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
 	li	a0, 5
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	vzext.vf2	v12, v10
 	vsrl.vv	v8, v8, v12
 	li	a0, 32
 	vsll.vx	v8, v8, a0
@@ -15,8 +15,8 @@ func0000000000000041:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf2	v12, v10
 	vmul.vx	v8, v8, a0
+	vzext.vf2	v12, v10
 	vsrl.vv	v8, v8, v12
 	li	a0, 32
 	vsll.vx	v8, v8, a0

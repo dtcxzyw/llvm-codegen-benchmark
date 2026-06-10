@@ -1,6 +1,6 @@
 func000000000000000b:
-	slliw	a2, a2, 16
 	zext.b	a1, a1
+	slliw	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

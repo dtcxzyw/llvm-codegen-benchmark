@@ -7,19 +7,19 @@ func0000000000000105:
 
 func000000000000082c:
 	add	a2, a2, a1
-	xor	a1, a1, a0
-	xor	a0, a0, a2
-	snez	a0, a0
-	seqz	a1, a1
+	xor	a2, a2, a0
+	xor	a0, a0, a1
+	snez	a1, a2
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000c2c:
 	add	a2, a2, a1
-	xor	a1, a1, a0
-	xor	a0, a0, a2
-	snez	a0, a0
-	seqz	a1, a1
+	xor	a2, a2, a0
+	xor	a0, a0, a1
+	snez	a1, a2
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -64,11 +64,11 @@ func0000000000000c89:
 
 func0000000000000889:
 	sh1add	a2, a2, a2
+	sltu	a3, a0, a1
 	slli	a2, a2, 4
-	add	a2, a2, a1
-	sltu	a2, a0, a2
+	add	a1, a1, a2
 	sltu	a0, a0, a1
-	andn	a0, a2, a0
+	andn	a0, a0, a3
 	ret
 
 func0000000000000888:

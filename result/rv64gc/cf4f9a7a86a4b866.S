@@ -1,8 +1,8 @@
 func000000000000000f:
 	li	a3, 15
-	slliw	a0, a0, 13
 	slli	a3, a3, 9
 	add	a2, a2, a3
+	slliw	a0, a0, 13
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -38,8 +38,8 @@ func0000000000000033:
 
 func0000000000000002:
 	addi	a2, a2, 1
-	slliw	a1, a1, 12
 	slli	a2, a2, 52
+	slliw	a1, a1, 12
 	srli	a2, a2, 52
 	or	a0, a0, a1
 	or	a0, a0, a2

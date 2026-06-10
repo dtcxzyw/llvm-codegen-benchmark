@@ -8,8 +8,8 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	srli	a1, a1, 1
 	li	a2, 13
+	srli	a1, a1, 1
 	slli	a2, a2, 33
 	slli	a1, a1, 33
 	mulhu	a1, a1, a2

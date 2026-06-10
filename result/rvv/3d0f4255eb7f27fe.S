@@ -8,9 +8,9 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
+	li	a0, 126
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 126
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	vnsrl.wi	v8, v9, 0

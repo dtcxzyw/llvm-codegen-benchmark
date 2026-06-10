@@ -4,9 +4,9 @@ func0000000000000002:
 	mul	a1, a1, a0
 	srli	a1, a1, 16
 	add	a0, a0, a1
-	bexti	a1, a0, 15
-	slli	a0, a0, 48
-	srai	a0, a0, 53
+	slli	a1, a0, 48
+	bexti	a0, a0, 15
+	srai	a1, a1, 53
 	add	a0, a0, a1
 	ret
 

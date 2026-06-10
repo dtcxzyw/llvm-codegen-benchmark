@@ -6,9 +6,9 @@ func0000000000000021:
 	ret
 
 func0000000000000014:
-	andi	a2, a1, 254
-	li	a3, 10
-	bltu	a2, a3, .LBB1_2
+	li	a2, 10
+	andi	a3, a1, 254
+	bltu	a3, a2, .LBB1_2
 	addiw	a0, a1, 55
 .LBB1_2:
 	ret

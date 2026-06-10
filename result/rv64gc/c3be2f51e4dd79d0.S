@@ -1,11 +1,11 @@
 func0000000000000108:
-	fmadd.d	fa5, fa0, fa0, fa1
 	li	a0, 1023
+	fmadd.d	fa5, fa0, fa0, fa1
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
+	fmv.d.x	fa3, zero
 	flt.d	a0, fa4, fa5
-	fmv.d.x	fa4, zero
-	feq.d	a1, fa5, fa4
+	feq.d	a1, fa5, fa3
 	or	a0, a0, a1
 	ret
 

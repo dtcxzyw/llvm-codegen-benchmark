@@ -11,14 +11,14 @@ func0000000000000001:
 	ret
 
 func0000000000000028:
-	bseti	a1, a0, 63
-	li	a2, -17
-	srli	a2, a2, 2
-	sltu	a0, a2, a0
+	li	a1, -17
+	srli	a1, a1, 2
 	li	a2, -2
+	sltu	a1, a1, a0
+	bseti	a0, a0, 63
 	bclri	a2, a2, 62
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
+	czero.nez	a0, a0, a1
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

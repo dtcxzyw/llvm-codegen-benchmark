@@ -18,8 +18,8 @@ func0000000000000005:
 	ret
 
 func000000000000000d:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	mulw	a0, a0, a1

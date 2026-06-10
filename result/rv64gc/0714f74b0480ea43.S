@@ -1,9 +1,9 @@
 func0000000000000000:
-	andi	a2, a2, 1
 	lui	a3, 153
-	addi	a2, a2, -1
 	addi	a3, a3, 139
+	andi	a2, a2, 1
 	slli	a3, a3, 12
+	addi	a2, a2, -1
 	addi	a3, a3, 223
 	and	a2, a2, a3
 	xor	a0, a0, a1

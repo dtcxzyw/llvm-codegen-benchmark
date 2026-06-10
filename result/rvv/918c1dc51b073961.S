@@ -18,9 +18,9 @@ func000000000000008a:
 	ret
 
 func000000000000018c:
+	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v9, v10, 0
-	li	a0, 16
 	vmand.mm	v9, v9, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vx	v8, v8, a0
@@ -41,11 +41,11 @@ func0000000000000181:
 func000000000000002c:
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmsne.vi	v8, v8, 0
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v9, v10, a0
 	vmand.mm	v9, v9, v0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v9, v8
 	ret
 

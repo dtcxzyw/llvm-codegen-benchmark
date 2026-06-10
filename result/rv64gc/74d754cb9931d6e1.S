@@ -2,12 +2,12 @@
 	.quad	0x3ff1c28f5c28f5c3
 func0000000000000004:
 	fdiv.d	fa5, fa0, fa1
-	lui	a1, %hi(.LCPI0_0)
-	fld	fa4, %lo(.LCPI0_0)(a1)
 	li	a1, 1023
 	slli	a1, a1, 52
-	fmv.d.x	fa3, a1
-	fadd.d	fa5, fa5, fa3
+	fmv.d.x	fa4, a1
+	fadd.d	fa5, fa5, fa4
+	lui	a1, %hi(.LCPI0_0)
+	fld	fa4, %lo(.LCPI0_0)(a1)
 	flt.d	a1, fa4, fa5
 	not	a0, a0
 	and	a0, a0, a1

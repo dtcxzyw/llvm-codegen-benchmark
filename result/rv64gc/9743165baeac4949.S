@@ -1,22 +1,22 @@
 func0000000000000013:
-	sext.w	a2, a1
-	li	a1, 1
-	bne	a2, a1, .LBB0_2
-	li	a1, 4
+	li	a2, 1
+	sext.w	a1, a1
+	bne	a1, a2, .LBB0_2
+	li	a2, 4
 .LBB0_2:
 	slliw	a0, a0, 3
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ori	a0, a0, 1
 	ret
 
 func0000000000000012:
-	sext.w	a2, a1
-	li	a1, 1
-	bne	a2, a1, .LBB1_2
-	li	a1, 4
+	li	a2, 1
+	sext.w	a1, a1
+	bne	a1, a2, .LBB1_2
+	li	a2, 4
 .LBB1_2:
 	slliw	a0, a0, 3
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ori	a0, a0, 3
 	ret
 

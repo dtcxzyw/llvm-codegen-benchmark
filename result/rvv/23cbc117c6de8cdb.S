@@ -44,10 +44,10 @@ func000000000000000e:
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v10, v10, 7
 	li	a0, 63
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vand.vi	v10, v10, 7
 	vmadd.vv	v8, v10, v12
 	ret
 

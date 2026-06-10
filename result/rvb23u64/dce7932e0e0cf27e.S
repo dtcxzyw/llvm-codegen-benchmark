@@ -1,8 +1,8 @@
 func0000000000000002:
+	lui	a2, 65279
 	add	a0, a0, a1
-	lui	a1, 65279
-	addi	a1, a1, 16
-	min	a0, a0, a1
+	addi	a2, a2, 16
+	min	a0, a0, a2
 	ret
 
 func0000000000000000:

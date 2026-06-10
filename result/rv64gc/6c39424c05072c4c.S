@@ -34,12 +34,12 @@ func0000000000000194:
 	ret
 
 func000000000000010c:
+	li	a3, 1
 	add	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 36
 	sub	a1, a1, a0
-	slli	a2, a2, 36
-	addi	a2, a2, -16
-	and	a1, a1, a2
+	addi	a3, a3, -16
+	and	a1, a1, a3
 	snez	a0, a1
 	ret
 

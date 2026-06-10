@@ -42,8 +42,8 @@ func0000000000000298:
 	lui	a0, 98304
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 2560
 	vmseq.vi	v12, v10, 0
+	lui	a0, 2560
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

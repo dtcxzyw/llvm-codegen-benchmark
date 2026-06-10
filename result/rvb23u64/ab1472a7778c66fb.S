@@ -1,6 +1,6 @@
 func0000000000000002:
-	fcvt.s.d	fa4, fa0
 	fmv.w.x	fa5, zero
+	fcvt.s.d	fa4, fa0
 	flt.s	a1, fa4, fa5
 	andi	a0, a0, 1
 	beqz	a1, .LBB0_3

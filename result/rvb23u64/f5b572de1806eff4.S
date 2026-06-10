@@ -42,8 +42,8 @@ func000000000000001a:
 	slli	a1, a1, 35
 	fmv.d.x	fa5, a1
 	lui	a1, 1016013
-	slli	a1, a1, 35
 	fadd.d	fa5, fa0, fa5
+	slli	a1, a1, 35
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4
 	xori	a1, a1, 1

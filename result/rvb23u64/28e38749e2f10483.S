@@ -4,9 +4,9 @@ func00000000000001e4:
 	addi	a3, a3, 1365
 	addi	a4, a4, -1365
 	slli	a5, a3, 32
+	slli	a6, a4, 32
 	add	a3, a3, a5
-	slli	a5, a4, 32
-	add	a4, a4, a5
+	add	a4, a4, a6
 	srai	a2, a2, 3
 	srai	a1, a1, 2
 	mul	a2, a2, a3

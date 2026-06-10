@@ -16,13 +16,13 @@ func0000000000000004:
 	lui	a1, 4096
 	bnez	a3, .LBB1_2
 	addi	a1, a1, 65
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ori	a0, a0, 258
 	ret
 .LBB1_2:
 	addi	a1, a1, 1
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ori	a0, a0, 258
 	ret

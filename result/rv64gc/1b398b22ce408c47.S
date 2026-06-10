@@ -1,6 +1,6 @@
 func000000000000002c:
-	flt.d	a0, fa1, fa2
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa1, fa2
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -8,11 +8,11 @@ func000000000000002c:
 func0000000000000022:
 	lui	a0, %hi(.promoted_doubles.func0000000000000022)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000022)
-	fld	fa5, 0(a0)
-	fld	fa4, 8(a0)
-	fsub.d	fa3, fa1, fa2
-	flt.d	a0, fa3, fa5
-	flt.d	a1, fa0, fa4
+	fsub.d	fa5, fa1, fa2
+	fld	fa4, 0(a0)
+	fld	fa3, 8(a0)
+	flt.d	a0, fa5, fa4
+	flt.d	a1, fa0, fa3
 	and	a0, a0, a1
 	ret
 
@@ -32,9 +32,9 @@ func00000000000000bd:
 func000000000000004d:
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	flt.d	a0, fa2, fa1
-	flt.d	a1, fa0, fa5
-	not	a1, a1
+	flt.d	a0, fa0, fa5
+	flt.d	a1, fa2, fa1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -47,8 +47,8 @@ func0000000000000088:
 	ret
 
 func0000000000000044:
-	fsub.d	fa5, fa1, fa2
 	li	a0, 125
+	fsub.d	fa5, fa1, fa2
 	slli	a0, a0, 55
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
@@ -59,14 +59,14 @@ func0000000000000044:
 .LCPI6_0:
 	.quad	0x3ff004189374bc6a
 func0000000000000047:
-	lui	a0, %hi(.LCPI6_0)
-	li	a1, 1023
-	fld	fa5, %lo(.LCPI6_0)(a0)
-	slli	a1, a1, 52
-	fmv.d.x	fa4, a1
+	li	a0, 1023
+	fsub.d	fa5, fa1, fa2
+	slli	a0, a0, 52
+	lui	a1, %hi(.LCPI6_0)
+	fmv.d.x	fa4, a0
+	fld	fa3, %lo(.LCPI6_0)(a1)
 	feq.d	a0, fa0, fa4
-	fsub.d	fa4, fa1, fa2
-	flt.d	a1, fa5, fa4
+	flt.d	a1, fa3, fa5
 	not	a0, a0
 	and	a0, a0, a1
 	ret

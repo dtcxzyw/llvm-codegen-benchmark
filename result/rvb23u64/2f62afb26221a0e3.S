@@ -22,9 +22,9 @@ func0000000000000005:
 	ret
 
 func0000000000000010:
-	srli	a0, a0, 4
 	lui	a1, 427198
 	addi	a1, a1, -1517
+	srli	a0, a0, 4
 	slli	a1, a1, 32
 	mul	a0, a0, a1
 	bseti	a1, zero, 32
@@ -42,9 +42,9 @@ func000000000000001d:
 	ret
 
 func0000000000000012:
-	srli	a0, a0, 3
 	lui	a1, 699051
 	addi	a1, a1, -1365
+	srli	a0, a0, 3
 	slli	a1, a1, 32
 	mul	a0, a0, a1
 	bseti	a1, zero, 32

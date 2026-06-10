@@ -1,7 +1,7 @@
 func0000000000000001:
 	sub	a0, a0, a1
-	li	a1, -63
 	slli	a0, a0, 1
+	li	a1, -63
 	srli	a0, a0, 1
 	srli	a1, a1, 1
 	xor	a0, a0, a1

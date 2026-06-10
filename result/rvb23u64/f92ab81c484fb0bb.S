@@ -72,11 +72,11 @@ func000000000000014a:
 
 func0000000000000088:
 	lui	a2, 917536
+	lui	a3, 917504
 	srli	a2, a2, 17
+	srli	a3, a3, 17
 	sltu	a1, a1, a2
-	lui	a2, 917504
-	srli	a2, a2, 17
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	xor	a0, a0, a1
 	ret
 

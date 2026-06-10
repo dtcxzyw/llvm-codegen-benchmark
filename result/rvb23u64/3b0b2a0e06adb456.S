@@ -40,8 +40,8 @@ func0000000000000003:
 	ret
 
 func0000000000000010:
-	slli	a0, a0, 16
 	lui	a1, 786432
+	slli	a0, a0, 16
 	addi	a1, a1, 16
 	or	a0, a0, a1
 	ret

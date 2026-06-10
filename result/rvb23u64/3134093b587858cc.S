@@ -10,8 +10,8 @@ func0000000000000030:
 	ret
 
 func000000000000004c:
-	sub	a0, a0, a2
 	sext.w	a1, a1
+	sub	a0, a0, a2
 	sh2add	a0, a1, a0
 	ret
 

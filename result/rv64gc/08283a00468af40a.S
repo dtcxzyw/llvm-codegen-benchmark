@@ -1,7 +1,7 @@
 func0000000000000161:
 	addi	a1, a1, -1
-	li	a2, 1
 	slli	a1, a1, 32
+	li	a2, 1
 	srli	a1, a1, 32
 	sll	a0, a2, a0
 	xor	a0, a0, a1

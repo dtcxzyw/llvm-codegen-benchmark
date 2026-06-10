@@ -27,16 +27,16 @@ func000000000000002c:
 	ret
 
 func0000000000000021:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
 	lui	a0, 174763
 	addi	a0, a0, -1368
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v10, a0
+	vnsrl.wi	v11, v8, 0
 	lui	a0, 699051
 	addi	a0, a0, -1365
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v10, a0, v11
 	lui	a0, 43691
-	vror.vi	v8, v8, 3
+	vror.vi	v8, v10, 3
 	addi	a0, a0, -1366
 	vmsleu.vx	v0, v8, a0
 	ret

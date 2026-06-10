@@ -26,10 +26,10 @@ func00000000000000a7:
 	ret
 
 func0000000000000009:
-	addiw	a2, a2, 1
 	lui	a3, 7699
-	czero.eqz	a1, a1, a2
+	addiw	a2, a2, 1
 	addi	a3, a3, 896
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add.uw	a0, a1, a0

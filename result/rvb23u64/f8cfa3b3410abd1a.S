@@ -78,8 +78,8 @@ func000000000000002a:
 	ret
 
 func0000000000000106:
-	zext.h	a2, a2
 	lui	a3, 16
+	zext.h	a2, a2
 	addi	a3, a3, -258
 	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
@@ -90,8 +90,8 @@ func0000000000000106:
 	ret
 
 func0000000000000101:
-	zext.h	a2, a2
 	lui	a3, 16
+	zext.h	a2, a2
 	addi	a3, a3, -258
 	sltu	a2, a3, a2
 	czero.nez	a1, a1, a2
@@ -112,8 +112,8 @@ func0000000000000081:
 	ret
 
 func000000000000008a:
-	zext.h	a2, a2
 	lui	a3, 8
+	zext.h	a2, a2
 	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
@@ -169,10 +169,10 @@ func00000000000000d4:
 	srli	a2, a2, 63
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
-	lui	a2, 524288
 	or	a0, a0, a1
+	lui	a1, 524288
 	sext.w	a0, a0
-	addiw	a2, a2, -10
-	sltu	a0, a0, a2
+	addiw	a1, a1, -10
+	sltu	a0, a0, a1
 	ret
 

@@ -1,9 +1,9 @@
 func0000000000000009:
 	or	a1, a1, a2
 	lui	a2, 1048558
+	lui	a3, 14
 	andn	a1, a1, a2
-	lui	a2, 14
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -17,8 +17,8 @@ func000000000000000f:
 func0000000000000003:
 	lui	a3, 3072
 	or	a0, a0, a1
-	and	a2, a2, a3
 	bclri	a0, a0, 22
+	and	a2, a2, a3
 	bclri	a0, a0, 23
 	or	a0, a0, a2
 	ret

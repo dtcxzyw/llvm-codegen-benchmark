@@ -1,9 +1,9 @@
 func0000000000000018:
-	addi	a1, a1, 127
 	li	a2, 1
-	slli	a0, a0, 32
+	addi	a1, a1, 127
 	slli	a2, a2, 36
 	addi	a2, a2, -128
+	slli	a0, a0, 32
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	mul	a0, a1, a0

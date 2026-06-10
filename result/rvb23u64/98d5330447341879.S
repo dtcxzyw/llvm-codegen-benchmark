@@ -17,20 +17,20 @@ func0000000000000026:
 func0000000000000034:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
-	lui	a2, 1
 	or	a0, a0, a1
+	lui	a1, 1
 	sext.w	a0, a0
-	addi	a1, a2, -515
+	addi	a1, a1, -515
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000038:
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
-	lui	a2, 12
 	or	a0, a0, a1
+	lui	a1, 12
 	sext.w	a0, a0
-	addi	a1, a2, 848
+	addi	a1, a1, 848
 	sltu	a0, a1, a0
 	ret
 

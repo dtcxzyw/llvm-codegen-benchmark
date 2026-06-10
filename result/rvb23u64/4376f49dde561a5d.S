@@ -21,8 +21,8 @@ func00000000000001e8:
 	ret
 
 func00000000000001f4:
-	zext.w	a2, a2
 	lui	a3, 244141
+	zext.w	a2, a2
 	addi	a3, a3, -1536
 	mul	a2, a2, a3
 	add.uw	a1, a1, a2

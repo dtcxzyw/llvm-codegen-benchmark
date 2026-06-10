@@ -7,43 +7,43 @@ func00000000000000c0:
 	ret
 
 func0000000000000000:
-	add	a0, a0, a2
 	slli	a1, a1, 3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
 
 func00000000000000f0:
-	add	a0, a0, a2
 	slli	a1, a1, 2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1096
 	ret
 
 func0000000000000020:
-	add	a0, a0, a2
 	slli	a1, a1, 3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
 func0000000000000030:
-	add	a0, a0, a2
 	slli	a1, a1, 4
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 112
 	ret
 
 func0000000000000078:
-	add	a0, a0, a2
 	slli	a1, a1, 2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret
 
 func0000000000000048:
-	add	a0, a0, a2
 	slli	a1, a1, 2
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret

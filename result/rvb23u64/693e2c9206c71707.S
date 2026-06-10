@@ -7,11 +7,11 @@ func0000000000000001:
 	ret
 
 func00000000000001e1:
-	sext.w	a2, a0
-	lui	a3, 8
-	addw	a1, a1, a3
-	czero.eqz	a0, a0, a2
-	czero.nez	a1, a1, a2
+	lui	a2, 8
+	sext.w	a3, a0
+	addw	a1, a1, a2
+	czero.eqz	a0, a0, a3
+	czero.nez	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

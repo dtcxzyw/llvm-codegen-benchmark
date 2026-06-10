@@ -1,9 +1,9 @@
 func00000000000000a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 3
-	li	a0, -127
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -127
 	srli	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vandn.vx	v8, v8, a0
@@ -14,9 +14,9 @@ func00000000000000a8:
 func0000000000000088:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 3
-	li	a0, -127
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -127
 	srli	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vandn.vx	v8, v8, a0
@@ -27,9 +27,9 @@ func0000000000000088:
 func00000000000001e1:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 2
-	lui	a0, 16383
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 16383
 	slli	a0, a0, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v8, a0

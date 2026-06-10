@@ -9,9 +9,9 @@ func0000000000000002:
 func0000000000000000:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	lui	a2, 804435
 	add	a0, a0, a1
-	lui	a1, 804435
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	bltu	a1, a0, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

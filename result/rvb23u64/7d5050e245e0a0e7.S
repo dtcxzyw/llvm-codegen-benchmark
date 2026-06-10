@@ -1,8 +1,8 @@
 func00000000000000f0:
 	sh2add	a1, a1, a1
+	lui	a2, 838115
 	add	a0, a0, a1
-	lui	a1, 838115
-	addi	a1, a1, -687
+	addi	a1, a2, -687
 	mulw	a0, a0, a1
 	ret
 
@@ -28,9 +28,9 @@ func00000000000000c0:
 
 func00000000000000b0:
 	sh2add	a1, a1, a1
+	lui	a2, 838115
 	add	a0, a0, a1
-	lui	a1, 838115
-	addi	a1, a1, -687
+	addi	a1, a2, -687
 	mulw	a0, a0, a1
 	ret
 

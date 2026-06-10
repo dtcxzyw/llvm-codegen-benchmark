@@ -39,9 +39,9 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
-	sext.w	a2, a0
-	li	a3, 256
-	bltu	a2, a3, .LBB3_2
+	li	a2, 256
+	sext.w	a3, a0
+	bltu	a3, a2, .LBB3_2
 	andi	a1, a1, 1
 	addi	a1, a1, -1
 	zext.b	a0, a1

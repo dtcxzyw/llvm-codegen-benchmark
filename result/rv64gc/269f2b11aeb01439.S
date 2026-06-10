@@ -23,11 +23,11 @@ func0000000000000002:
 	ret
 
 func0000000000000005:
+	li	a2, 1
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a1, a1, 8
-	slli	a0, a0, 40
-	addi	a0, a0, -1280
+	slli	a2, a2, 40
+	slli	a0, a1, 8
+	addi	a1, a2, -1280
 	add	a0, a0, a1
 	ret
 

@@ -15,8 +15,8 @@ func000000000000007b:
 	ret
 
 func0000000000000079:
-	addi	a1, a1, 3
 	lui	a2, 718
+	addi	a1, a1, 3
 	addi	a2, a2, -1183
 	mul	a1, a1, a2
 	srli	a1, a1, 32

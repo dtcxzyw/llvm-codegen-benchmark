@@ -22,9 +22,9 @@ func0000000000000181:
 
 func0000000000000186:
 	lui	a3, 8
-	srli	a0, a0, 63
 	addi	a3, a3, -1
 	xor	a2, a2, a3
+	srli	a0, a0, 63
 	and	a1, a1, a0
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

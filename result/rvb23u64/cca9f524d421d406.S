@@ -67,8 +67,8 @@ func00000000000000a4:
 
 func0000000000000078:
 	feq.d	a0, fa2, fa1
-	xori	a0, a0, 1
 	feq.d	a1, fa0, fa1
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

@@ -12,10 +12,10 @@ func0000000000000001:
 func000000000000000c:
 	andi	a1, a1, 1
 	lui	a2, 526336
+	lui	a3, 524288
 	czero.nez	a1, a2, a1
-	lui	a2, 524288
-	addiw	a2, a2, -1
-	add	a1, a1, a2
+	addiw	a3, a3, -1
+	add	a1, a1, a3
 	and	a0, a0, a1
 	addi	a0, a0, -102
 	snez	a0, a0
@@ -40,9 +40,9 @@ func0000000000000004:
 func0000000000000018:
 	andi	a1, a1, 1
 	lui	a2, 12
+	lui	a3, 4
 	czero.eqz	a1, a2, a1
-	lui	a2, 4
-	addi	a2, a2, -193
+	addi	a2, a3, -193
 	or	a1, a1, a2
 	and	a0, a0, a1
 	sltiu	a0, a0, 257

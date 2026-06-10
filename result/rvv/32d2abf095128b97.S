@@ -20,14 +20,15 @@ func0000000000000014:
 
 func0000000000000006:
 	vsetivli	zero, 16, e64, m8, ta, mu
-	vmv1r.v	v16, v0
-	vfclass.v	v24, v8
+	vfclass.v	v16, v8
 	li	a0, 126
-	vand.vx	v24, v24, a0
-	vmsne.vi	v0, v24, 0
+	vand.vx	v24, v16, a0
+	vmsne.vi	v16, v24, 0
 	vmv.v.i	v24, 0
-	vfabs.v	v24, v8, v0.t
+	vmv1r.v	v17, v0
 	vmv1r.v	v0, v16
+	vfabs.v	v24, v8, v0.t
+	vmv1r.v	v0, v17
 	vmerge.vim	v8, v24, 0, v0
 	ret
 

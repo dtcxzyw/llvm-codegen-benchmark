@@ -18,11 +18,11 @@ func0000000000000006:
 
 func0000000000000004:
 	lui	a1, 256
-	sltiu	a2, a0, 1024
-	minu	a0, a0, a1
-	lui	a1, 1
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
+	minu	a1, a0, a1
+	sltiu	a0, a0, 1024
+	lui	a2, 1
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 

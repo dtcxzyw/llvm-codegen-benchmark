@@ -17,9 +17,9 @@ func0000000000000020:
 	ret
 
 func0000000000000060:
+	lui	a1, 1048575
 	addi	a0, a0, -2048
 	addiw	a0, a0, -2015
-	lui	a1, 1048575
 	and	a0, a0, a1
 	ret
 

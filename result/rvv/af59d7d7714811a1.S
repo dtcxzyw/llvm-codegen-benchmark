@@ -9,8 +9,8 @@ func0000000000000081:
 func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 4
-	li	a0, 255
 	vadd.vv	v8, v8, v10
+	li	a0, 255
 	vand.vx	v8, v8, a0
 	li	a0, 95
 	vmseq.vx	v0, v8, a0
@@ -19,8 +19,8 @@ func0000000000000001:
 func0000000000000181:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, -2048
 	vadd.vv	v8, v10, v8
+	li	a0, -2048
 	vand.vx	v8, v8, a0
 	li	a0, 27
 	slli	a0, a0, 11

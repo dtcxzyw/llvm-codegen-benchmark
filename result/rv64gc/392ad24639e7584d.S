@@ -1,9 +1,9 @@
 func00000000000001ec:
 	sext.w	a2, a2
 	slli	a0, a0, 2
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	lui	a1, 305
-	slli	a2, a2, 2
 	add	a0, a0, a2
 	addi	a1, a1, 1028
 	add	a0, a0, a1
@@ -12,9 +12,9 @@ func00000000000001ec:
 func000000000000012c:
 	sext.w	a2, a2
 	slli	a0, a0, 2
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	lui	a1, 320
-	slli	a2, a2, 2
 	add	a0, a0, a2
 	addi	a1, a1, -876
 	add	a0, a0, a1

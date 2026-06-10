@@ -1,8 +1,8 @@
 func00000000000000ca:
-	slli	a0, a0, 48
 	slli	a1, a1, 48
-	slli	a2, a2, 48
+	slli	a0, a0, 48
 	srai	a0, a0, 48
+	slli	a2, a2, 48
 	srai	a1, a1, 48
 	srai	a2, a2, 48
 	slt	a2, a2, a1

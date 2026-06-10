@@ -12,8 +12,8 @@ func0000000000000001:
 	bnez	a1, .LBB1_2
 	lui	a2, 2048
 .LBB1_2:
-	or	a0, a0, a2
 	lui	a1, 1044002
+	or	a0, a0, a2
 	addi	a1, a1, 514
 	and	a0, a0, a1
 	ret

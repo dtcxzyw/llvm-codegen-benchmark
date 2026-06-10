@@ -8,10 +8,10 @@ func0000000000000000:
 func0000000000000003:
 	srliw	a2, a1, 20
 	slliw	a1, a1, 12
-	or	a1, a1, a2
-	srliw	a2, a0, 25
+	srliw	a3, a0, 25
 	slliw	a0, a0, 7
-	or	a0, a0, a2
+	or	a1, a1, a2
+	or	a0, a0, a3
 	xor	a0, a0, a1
 	ret
 

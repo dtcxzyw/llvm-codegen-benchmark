@@ -27,8 +27,8 @@ func0000000000000004:
 	lui	a0, 254362
 	addi	a0, a0, -1638
 	fmv.w.x	fa5, a0
-	lui	a0, 265984
 	fmul.s	fa4, fa0, fa5
+	lui	a0, 265984
 	fmul.s	fa5, fa4, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5

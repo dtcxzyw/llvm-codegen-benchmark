@@ -18,29 +18,29 @@ func000000000000001d:
 	ret
 
 func000000000000001f:
+	lui	a1, 16
 	zext.b	a0, a0
 	slli	a0, a0, 16
-	lui	a1, 16
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 28
 	lui	a1, 978671
+	slli	a0, a0, 28
 	addi	a1, a1, -273
 	addw	a0, a0, a1
 	ret
 
 func000000000000000e:
+	lui	a1, 260096
 	zext.b	a0, a0
 	slli	a0, a0, 23
-	lui	a1, 260096
 	addw	a0, a0, a1
 	ret
 
 func0000000000000008:
-	slli	a0, a0, 24
 	lui	a1, 999728
+	slli	a0, a0, 24
 	addw	a0, a0, a1
 	ret
 

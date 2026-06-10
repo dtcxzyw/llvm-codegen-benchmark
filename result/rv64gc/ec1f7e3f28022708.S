@@ -1,7 +1,7 @@
 func000000000000000f:
+	lui	a2, 5
 	addw	a0, a0, a1
-	lui	a1, 5
-	addi	a1, a1, -315
+	addi	a1, a2, -315
 	mul	a1, a0, a1
 	srli	a1, a1, 18
 	slli	a1, a1, 50
@@ -12,9 +12,9 @@ func000000000000000f:
 
 func000000000000000c:
 	addw	a0, a0, a1
-	lui	a1, 186416
-	slli	a2, a0, 48
-	mulhu	a1, a2, a1
+	slli	a1, a0, 48
+	lui	a2, 186416
+	mulhu	a1, a1, a2
 	srli	a1, a1, 22
 	li	a2, 360
 	mul	a1, a1, a2

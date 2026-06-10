@@ -29,9 +29,9 @@ func000000000000001f:
 	ret
 
 func0000000000000006:
+	lui	a0, 512
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
-	lui	a0, 512
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
 	vzext.vf2	v12, v10
@@ -49,9 +49,9 @@ func0000000000000017:
 	ret
 
 func000000000000001e:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
-	lui	a0, 16
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
 	vzext.vf2	v12, v10
@@ -59,9 +59,9 @@ func000000000000001e:
 	ret
 
 func000000000000001c:
+	lui	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 12
-	lui	a0, 1
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v12
 	vzext.vf2	v12, v10

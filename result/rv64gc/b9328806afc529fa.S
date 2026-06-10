@@ -5,8 +5,8 @@ func0000000000000005:
 
 func0000000000000003:
 	sub	a0, a0, a1
-	li	a1, -33
 	slli	a0, a0, 29
+	li	a1, -33
 	srai	a0, a0, 32
 	srli	a1, a1, 5
 	add	a0, a0, a1

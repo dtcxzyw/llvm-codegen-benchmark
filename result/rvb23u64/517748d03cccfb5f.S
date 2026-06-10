@@ -1,9 +1,9 @@
 func0000000000000141:
-	sext.w	a1, a0
-	slti	a1, a1, -4
-	xori	a1, a1, 1
-	sh2add	a0, a1, a0
 	lui	a1, 748983
+	sext.w	a2, a0
+	slti	a2, a2, -4
+	xori	a2, a2, 1
+	sh2add	a0, a2, a0
 	addi	a1, a1, -585
 	mulw	a0, a0, a1
 	lui	a1, 149797
@@ -12,31 +12,30 @@ func0000000000000141:
 	ret
 
 func0000000000000101:
-	sext.w	a1, a0
-	lui	a2, 804435
-	addi	a2, a2, 1536
-	addw	a0, a0, a2
-	lui	a2, 429094
-	minu	a0, a0, a1
+	lui	a1, 804435
+	sext.w	a2, a0
+	addi	a1, a1, 1536
+	addw	a0, a0, a1
+	lui	a1, 429094
+	minu	a0, a0, a2
+	addi	a1, a1, 313
+	mul	a0, a0, a1
 	lui	a1, 1
-	addi	a2, a2, 313
-	mul	a0, a0, a2
 	roriw	a0, a0, 6
 	addi	a1, a1, 199
 	sltu	a0, a0, a1
 	ret
 
+.LCPI2_0:
+	.quad	2635249153617166336
 func0000000000000558:
-	sext.w	a1, a0
-	lui	a2, 293
-	slti	a1, a1, -4
-	addi	a2, a2, -1755
-	xori	a1, a1, 1
-	slli	a2, a2, 12
-	sh2add	a0, a1, a0
-	addi	a1, a2, -1755
+	lui	a1, %hi(.LCPI2_0)
+	sext.w	a2, a0
+	slti	a2, a2, -4
+	xori	a2, a2, 1
+	ld	a1, %lo(.LCPI2_0)(a1)
+	sh2add	a0, a2, a0
 	zext.w	a2, a0
-	slli	a1, a1, 29
 	mulhu	a1, a2, a1
 	slli	a2, a1, 3
 	add	a0, a0, a1
@@ -46,11 +45,11 @@ func0000000000000558:
 	ret
 
 func0000000000000541:
-	sext.w	a1, a0
-	slti	a1, a1, -4
-	xori	a1, a1, 1
-	sh2add	a0, a1, a0
 	lui	a1, 748983
+	sext.w	a2, a0
+	slti	a2, a2, -4
+	xori	a2, a2, 1
+	sh2add	a0, a2, a0
 	addi	a1, a1, -585
 	mulw	a0, a0, a1
 	lui	a1, 149797

@@ -24,9 +24,9 @@ func000000000000000a:
 	lui	a0, 16473
 	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
+	vfmul.vf	v8, v8, fa5
 	lui	a0, 4101
 	slli	a0, a0, 38
-	vfmul.vf	v8, v8, fa5
 	fmv.d.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret
@@ -37,9 +37,9 @@ func000000000000000c:
 	lui	a0, 4105
 	slli	a0, a0, 38
 	fmv.d.x	fa5, a0
+	vfmul.vf	v8, v8, fa5
 	lui	a0, 4113
 	slli	a0, a0, 38
-	vfmul.vf	v8, v8, fa5
 	fmv.d.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret

@@ -17,8 +17,8 @@ func0000000000000026:
 	mv	a1, a2
 .LBB1_2:
 	sext.w	a0, a1
-	addiw	a1, a1, -6
 	slti	a0, a0, 7
+	addiw	a1, a1, -6
 	addiw	a0, a0, -1
 	and	a0, a0, a1
 	ret

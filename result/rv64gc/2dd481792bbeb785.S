@@ -2,9 +2,9 @@
 	.quad	0xbfb999999999999a
 func0000000000000000:
 	fdiv.d	fa5, fa1, fa2
+	fsub.d	fa5, fa5, fa0
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
-	fsub.d	fa5, fa5, fa0
 	fadd.d	fa0, fa5, fa4
 	ret
 

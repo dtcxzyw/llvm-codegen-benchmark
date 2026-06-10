@@ -1,12 +1,12 @@
 func0000000000000003:
-	srli	a0, a0, 4
 	lui	a1, 65536
+	srli	a0, a0, 4
 	minu	a0, a0, a1
 	ret
 
 func000000000000000b:
-	srli	a0, a0, 6
 	lui	a1, 65536
+	srli	a0, a0, 6
 	minu	a0, a0, a1
 	ret
 

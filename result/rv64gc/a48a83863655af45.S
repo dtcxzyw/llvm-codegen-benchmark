@@ -38,8 +38,8 @@ func000000000000000d:
 	andi	a3, a0, 1
 	mv	a0, a1
 	beqz	a3, .LBB4_2
-	add	a0, a0, a2
 	lui	a1, 1034754
+	add	a0, a0, a2
 	addi	a1, a1, 1024
 	addw	a0, a0, a1
 .LBB4_2:

@@ -26,8 +26,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fabs.d	fa5, fa0
 	lui	a0, 32941
+	fabs.d	fa5, fa0
 	slli	a0, a0, 35
 	fmv.d.x	fa0, a0
 	flt.d	a0, fa0, fa5

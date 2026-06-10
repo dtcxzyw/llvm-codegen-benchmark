@@ -1,6 +1,6 @@
 func0000000000000003:
-	andi	a1, a1, 1
 	srli	a2, a2, 6
+	andi	a1, a1, 1
 	ori	a2, a2, -2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 2
@@ -10,9 +10,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	andi	a1, a1, 1
 	slli	a2, a2, 39
 	srli	a2, a2, 62
+	andi	a1, a1, 1
 	addi	a2, a2, -2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 2

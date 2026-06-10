@@ -22,10 +22,10 @@ func0000000000000081:
 func0000000000000098:
 	li	a1, 2047
 	slli	a1, a1, 52
+	li	a2, 521
 	and	a0, a0, a1
-	li	a1, 521
-	slli	a1, a1, 53
-	sltu	a0, a1, a0
+	slli	a2, a2, 53
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000094:

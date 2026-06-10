@@ -4,9 +4,9 @@ func0000000000000000:
 	srliw	a0, a0, 3
 	beqz	a0, .LBB0_2
 	neg	a1, a0
+	lui	a2, 30667
 	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
+	addi	a1, a2, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI0_0)
@@ -24,9 +24,9 @@ func0000000000000006:
 	srliw	a0, a0, 3
 	beqz	a0, .LBB1_2
 	neg	a1, a0
+	lui	a2, 30667
 	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
+	addi	a1, a2, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI1_0)
@@ -44,9 +44,9 @@ func0000000000000002:
 	srliw	a0, a0, 3
 	beqz	a0, .LBB2_2
 	neg	a1, a0
+	lui	a2, 30667
 	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
+	addi	a1, a2, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI2_0)

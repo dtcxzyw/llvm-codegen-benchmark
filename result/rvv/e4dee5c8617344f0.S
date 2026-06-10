@@ -1,8 +1,9 @@
 func0000000000000000:
-	vsetivli	zero, 4, e32, m1, ta, mu
-	vnsrl.wi	v10, v8, 0
 	li	a0, 32
-	vmv.v.x	v8, a0
-	vsll.vi	v8, v10, 3, v0.t
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vmv.v.x	v10, a0
+	vnsrl.wi	v11, v8, 0
+	vsll.vi	v10, v11, 3, v0.t
+	vmv.v.v	v8, v10
 	ret
 

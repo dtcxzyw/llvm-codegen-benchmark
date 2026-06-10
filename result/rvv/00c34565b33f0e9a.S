@@ -29,8 +29,8 @@ func000000000000001f:
 func0000000000000018:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
-	li	a0, 40
 	vwaddu.wv	v8, v8, v11
+	li	a0, 40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
 	bseti	a0, zero, 47

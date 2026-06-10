@@ -61,9 +61,9 @@ func0000000000000057:
 
 func00000000000000fe:
 	zext.b	a2, a2
+	lui	a3, 1024
 	add	a1, a1, a2
-	lui	a2, 1024
-	addi	a2, a2, -1212
+	addi	a2, a3, -1212
 	mul	a1, a1, a2
 	lui	a2, 514
 	add	a0, a0, a2

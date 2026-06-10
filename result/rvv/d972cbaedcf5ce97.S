@@ -20,8 +20,8 @@ func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v14, v12, 0
 	vmseq.vi	v12, v10, 0
-	lui	a0, 268352
 	vmand.mm	v0, v14, v12
+	lui	a0, 268352
 	addi	a0, a0, 1170
 	vmerge.vxm	v8, v8, a0, v0
 	ret

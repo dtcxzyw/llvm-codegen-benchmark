@@ -1,7 +1,7 @@
 func0000000000000004:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a2, a2, a0
 	srli	a1, a1, 32
 	add	a1, a1, a2
@@ -10,8 +10,8 @@ func0000000000000004:
 
 func00000000000001e4:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a2, a2, a0
 	srli	a1, a1, 32
 	add	a1, a1, a2

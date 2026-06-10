@@ -20,9 +20,9 @@ func0000000000000210:
 
 func0000000000000213:
 	lui	a2, 2
-	li	a3, 126
 	addi	a2, a2, 1
 	sltu	a2, a1, a2
+	li	a3, 126
 	czero.nez	a2, a3, a2
 	sltiu	a1, a1, 513
 	addi	a2, a2, 56
@@ -33,10 +33,10 @@ func0000000000000213:
 
 func0000000000000a51:
 	lui	a2, 2
-	lui	a3, 1
 	addi	a2, a2, 1
-	addi	a3, a3, -64
+	lui	a3, 1
 	sltu	a2, a1, a2
+	addi	a3, a3, -64
 	czero.nez	a2, a3, a2
 	sltiu	a1, a1, 513
 	addiw	a2, a2, 56
@@ -47,10 +47,10 @@ func0000000000000a51:
 
 func0000000000000a53:
 	lui	a2, 2
-	lui	a3, 1
 	addi	a2, a2, 1
-	addi	a3, a3, -64
+	lui	a3, 1
 	sltu	a2, a1, a2
+	addi	a3, a3, -64
 	czero.nez	a2, a3, a2
 	sltiu	a1, a1, 513
 	addiw	a2, a2, 56
@@ -60,12 +60,12 @@ func0000000000000a53:
 	ret
 
 func0000000000000a20:
-	srli	a2, a1, 21
-	lui	a3, 511
-	czero.eqz	a2, a3, a2
+	lui	a2, 511
+	srli	a3, a1, 21
+	czero.eqz	a2, a2, a3
 	lui	a3, 1
-	srli	a1, a1, 30
 	add	a2, a2, a3
+	srli	a1, a1, 30
 	lui	a3, 262144
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

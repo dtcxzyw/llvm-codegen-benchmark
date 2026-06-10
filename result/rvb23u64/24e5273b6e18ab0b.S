@@ -17,8 +17,8 @@ func000000000000001f:
 	ret
 
 func000000000000000c:
-	srai	a1, a1, 32
 	lui	a2, 44
+	srai	a1, a1, 32
 	addi	a2, a2, 64
 	mul	a1, a1, a2
 	lui	a2, 7

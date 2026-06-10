@@ -73,8 +73,8 @@ func0000000000000005:
 	ret
 
 func0000000000000051:
-	sext.w	a2, a2
 	lui	a3, 3503
+	sext.w	a2, a2
 	addi	a3, a3, 619
 	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2

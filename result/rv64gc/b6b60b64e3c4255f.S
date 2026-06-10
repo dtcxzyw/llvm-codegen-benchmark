@@ -15,11 +15,11 @@ func000000000000002c:
 	ret
 
 func0000000000000034:
+	lui	a2, 1
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	lui	a2, 1
-	seqz	a1, a1
 	addi	a2, a2, -97
+	seqz	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -72,8 +72,8 @@ func000000000000018c:
 func0000000000000028:
 	sext.w	a0, a0
 	andi	a1, a1, 15
-	seqz	a1, a1
 	sltiu	a0, a0, 9
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

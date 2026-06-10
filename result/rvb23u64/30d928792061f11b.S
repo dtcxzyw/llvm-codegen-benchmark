@@ -25,8 +25,8 @@ func0000000000000010:
 func000000000000000e:
 	bseti	a3, zero, 32
 	sub	a2, a2, a3
-	srai	a2, a2, 32
 	sh3add	a0, a1, a0
+	srai	a2, a2, 32
 	sh3add	a0, a2, a0
 	ret
 

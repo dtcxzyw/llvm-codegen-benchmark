@@ -39,22 +39,22 @@ func000000000000004f:
 
 func0000000000000014:
 	addiw	a2, a2, -3
-	lui	a3, 1047552
-	andi	a1, a1, 1
 	seqz	a2, a2
-	slli	a1, a1, 22
+	andi	a1, a1, 1
 	addi	a2, a2, -1
+	lui	a3, 1047552
+	slli	a1, a1, 22
 	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func000000000000001d:
-	andi	a1, a1, 1
 	addiw	a2, a2, -3
-	lui	a3, 1024
+	andi	a1, a1, 1
 	snez	a2, a2
 	addi	a1, a1, -1
+	lui	a3, 1024
 	slli	a2, a2, 22
 	and	a1, a1, a3
 	add	a1, a1, a2

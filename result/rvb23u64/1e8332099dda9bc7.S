@@ -8,11 +8,11 @@ func0000000000000046:
 	ret
 
 func0000000000000061:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	sext.w	a0, a0
@@ -21,11 +21,11 @@ func0000000000000061:
 	ret
 
 func0000000000000028:
+	lui	a3, 838861
+	addi	a3, a3, -819
 	sub	a1, a1, a2
-	lui	a2, 838861
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -819
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -33,11 +33,11 @@ func0000000000000028:
 	ret
 
 func0000000000000034:
+	lui	a3, 838861
+	addi	a3, a3, -819
 	sub	a1, a1, a2
-	lui	a2, 838861
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -819
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -45,11 +45,11 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
+	lui	a3, 838861
+	addi	a3, a3, -819
 	sub	a1, a1, a2
-	lui	a2, 838861
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -819
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -93,11 +93,11 @@ func0000000000000064:
 	ret
 
 func0000000000000021:
+	lui	a3, 618391
+	addi	a3, a3, -105
 	sub	a1, a1, a2
-	lui	a2, 618391
+	slli	a2, a3, 36
 	srai	a1, a1, 3
-	addi	a2, a2, -105
-	slli	a3, a2, 36
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -120,11 +120,11 @@ func0000000000000008:
 	ret
 
 func000000000000002c:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -160,11 +160,11 @@ func0000000000000086:
 	ret
 
 func0000000000000038:
+	lui	a3, 978671
+	addi	a3, a3, -273
 	sub	a1, a1, a2
-	lui	a2, 978671
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -273
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -172,11 +172,11 @@ func0000000000000038:
 	ret
 
 func000000000000002a:
+	lui	a3, 838861
+	addi	a3, a3, -819
 	sub	a1, a1, a2
-	lui	a2, 838861
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -819
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -184,11 +184,11 @@ func000000000000002a:
 	ret
 
 func000000000000006a:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	sext.w	a0, a0
@@ -196,11 +196,11 @@ func000000000000006a:
 	ret
 
 func0000000000000067:
+	lui	a3, 957395
+	addi	a3, a3, 1959
 	sub	a1, a1, a2
-	lui	a2, 957395
+	slli	a2, a3, 33
 	srai	a1, a1, 3
-	addi	a2, a2, 1959
-	slli	a3, a2, 33
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	sext.w	a0, a0
@@ -209,11 +209,11 @@ func0000000000000067:
 	ret
 
 func0000000000000066:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	sext.w	a0, a0
@@ -221,11 +221,11 @@ func0000000000000066:
 	ret
 
 func0000000000000026:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 1
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0
@@ -233,11 +233,11 @@ func0000000000000026:
 	ret
 
 func0000000000000025:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a1, a1, a2
-	lui	a2, 699051
+	slli	a2, a3, 32
 	srai	a1, a1, 3
-	addi	a2, a2, -1365
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	zext.w	a0, a0

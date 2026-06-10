@@ -12,9 +12,9 @@ func0000000000000001:
 	ret
 
 func0000000000000038:
-	lui	a0, 149797
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, 4, v0.t
+	lui	a0, 149797
 	addi	a0, a0, -1755
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10
@@ -27,9 +27,9 @@ func0000000000000038:
 	ret
 
 func0000000000000021:
-	lui	a0, 748983
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, 4, v0.t
+	lui	a0, 748983
 	addi	a0, a0, -585
 	vmul.vx	v8, v8, a0
 	lui	a0, 149797

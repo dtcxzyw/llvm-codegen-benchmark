@@ -13,9 +13,9 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
+	li	a1, 3
 	addi	a0, a0, 7
 	srliw	a0, a0, 3
-	li	a1, 3
 	bltu	a1, a0, .LBB2_2
 	li	a0, 3
 .LBB2_2:

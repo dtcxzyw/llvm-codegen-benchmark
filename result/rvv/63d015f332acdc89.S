@@ -1,7 +1,7 @@
 func0000000000000013:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vi	v10, v10, 2
-	li	a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -40,9 +40,9 @@ func000000000000001d:
 	ret
 
 func0000000000000015:
+	li	a0, 48
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vi	v10, v10, 1
-	li	a0, 48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

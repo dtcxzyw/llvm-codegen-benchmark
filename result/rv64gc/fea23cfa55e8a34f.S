@@ -31,8 +31,8 @@ func000000000000007d:
 
 func0000000000000040:
 	add	a0, a0, a1
-	li	a1, 1461
 	addi	a0, a0, 1900
+	li	a1, 1461
 	mul	a0, a0, a1
 	lui	a1, 1712
 	addi	a1, a1, 448

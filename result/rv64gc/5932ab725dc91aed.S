@@ -13,9 +13,9 @@ func0000000000000008:
 	ret
 
 func0000000000000026:
-	srai	a1, a0, 63
-	lui	a2, 244
-	addi	a2, a2, 576
+	lui	a1, 244
+	srai	a2, a0, 63
+	addi	a1, a1, 576
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
@@ -45,9 +45,9 @@ func0000000000000004:
 
 func000000000000000a:
 	lui	a1, 244
-	lui	a2, 12
 	addi	a1, a1, 575
 	slt	a1, a1, a0
+	lui	a2, 12
 	neg	a1, a1
 	addi	a2, a2, -576
 	and	a1, a1, a2

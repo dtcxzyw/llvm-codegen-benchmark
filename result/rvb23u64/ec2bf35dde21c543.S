@@ -47,25 +47,25 @@ func0000000000000001:
 	li	a2, 1619
 	mul	a1, a1, a2
 	lui	a2, 8
-	add	a0, a0, a1
-	addi	a1, a2, -1431
+	addi	a2, a2, -1431
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000003f:
 	sh1add	a2, a1, a1
 	slli	a1, a1, 7
-	sub	a1, a1, a2
 	add	a0, a0, a1
+	sub	a0, a0, a2
 	addiw	a0, a0, 22
 	ret
 
 func000000000000003d:
 	sh1add	a2, a1, a1
 	sh1add	a1, a2, a1
-	lui	a2, 1047932
 	sh2add	a0, a1, a0
-	addi	a1, a2, -1692
+	lui	a1, 1047932
+	addi	a1, a1, -1692
 	addw	a0, a0, a1
 	ret
 
@@ -78,9 +78,9 @@ func0000000000000030:
 func000000000000003a:
 	slli	a2, a0, 7
 	slli	a0, a0, 15
+	lui	a3, 8
 	add	a0, a0, a2
-	lui	a2, 8
-	add	a1, a1, a2
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

@@ -5,9 +5,9 @@ func0000000000000034:
 	li	a0, -1
 	fmv.w.x	fa1, a0
 .LBB0_2:
-	fadd.s	fa5, fa1, fa0
 	lui	a0, 273164
 	addi	a0, a0, 165
+	fadd.s	fa5, fa1, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -19,9 +19,9 @@ func0000000000000032:
 	li	a0, -1
 	fmv.w.x	fa1, a0
 .LBB1_2:
-	fadd.s	fa5, fa1, fa0
 	lui	a0, 797452
 	addi	a0, a0, 165
+	fadd.s	fa5, fa1, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

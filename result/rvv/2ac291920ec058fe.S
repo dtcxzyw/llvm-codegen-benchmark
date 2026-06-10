@@ -12,15 +12,15 @@ func0000000000000001:
 func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v10, v0
-	vmv1r.v	v0, v8
 	lui	a0, 262172
 	addi	a0, a0, 128
-	vmv.v.x	v8, a0
+	vmv.v.x	v12, a0
+	vmv1r.v	v0, v8
 	lui	a0, 262144
 	addi	a0, a0, 128
-	vmerge.vxm	v8, v8, a0, v0
-	lui	a0, 8
+	vmerge.vxm	v8, v12, a0, v0
 	vmv1r.v	v0, v10
+	lui	a0, 8
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

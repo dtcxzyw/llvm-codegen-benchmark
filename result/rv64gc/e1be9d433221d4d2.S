@@ -25,10 +25,10 @@ func000000000000002a:
 	ret
 
 func000000000000001e:
+	lui	a3, 4096
 	or	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 4096
-	add	a0, a0, a1
+	add	a0, a0, a3
 	srliw	a0, a0, 6
 	ret
 

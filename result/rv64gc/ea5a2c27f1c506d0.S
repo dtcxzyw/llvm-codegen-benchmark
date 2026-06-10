@@ -12,16 +12,16 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	andi	a3, a0, 1
-	andi	a2, a2, 1
+	andi	a3, a2, 1
+	andi	a2, a0, 1
 	lui	a0, 1
-	bnez	a2, .LBB1_2
+	bnez	a3, .LBB1_2
 	addi	a0, a0, 384
-	bnez	a3, .LBB1_3
+	bnez	a2, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	addi	a0, a0, 334
-	beqz	a3, .LBB1_4
+	beqz	a2, .LBB1_4
 .LBB1_3:
 	li	a0, 17
 	slli	a0, a0, 8
@@ -30,8 +30,8 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	andi	a0, a0, 1
 	andi	a2, a2, 1
+	andi	a0, a0, 1
 	addi	a2, a2, -1
 	ori	a2, a2, -4
 	addi	a0, a0, -1

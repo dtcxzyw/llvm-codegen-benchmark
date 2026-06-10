@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func000000000000003c:
-	addi	a2, a2, 23
 	bseti	a3, zero, 33
+	addi	a2, a2, 23
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	sub	a0, a1, a0

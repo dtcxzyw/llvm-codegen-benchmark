@@ -16,9 +16,9 @@ func0000000000000007:
 
 func0000000000000000:
 	srli	a2, a2, 10
+	andi	a2, a2, 1020
 	or	a0, a0, a1
 	lui	a1, 786432
-	andi	a2, a2, 1020
 	or	a0, a0, a2
 	addi	a1, a1, 1024
 	or	a0, a0, a1

@@ -62,8 +62,8 @@ func0000000000000143:
 	ret
 
 func000000000000006a:
-	not	a2, a2
 	li	a3, -1
+	not	a2, a2
 	slli	a3, a3, 32
 	or	a2, a2, a3
 	add	a0, a0, a1
@@ -72,9 +72,9 @@ func000000000000006a:
 
 func000000000000007b:
 	slli	a2, a2, 32
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	lui	a1, 1
-	srli	a2, a2, 32
 	sub	a0, a0, a2
 	addi	a1, a1, 368
 	add	a0, a0, a1

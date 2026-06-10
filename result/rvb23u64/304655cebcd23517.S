@@ -1,20 +1,20 @@
 func0000000000000000:
-	zext.w	a1, a1
 	bclri	a0, a0, 20
+	zext.w	a1, a1
 	bclri	a0, a0, 21
 	or	a0, a0, a1
 	ret
 
 func0000000000000002:
-	sext.w	a1, a1
 	bclri	a0, a0, 20
+	sext.w	a1, a1
 	bclri	a0, a0, 21
 	or	a0, a0, a1
 	ret
 
 func0000000000000003:
-	sext.w	a1, a1
 	lui	a2, 130048
+	sext.w	a1, a1
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

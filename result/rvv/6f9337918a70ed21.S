@@ -12,9 +12,9 @@ func000000000000008a:
 	lui	a0, 1048320
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vandn.vx	v10, v10, a0
+	vadd.vv	v8, v8, v10
 	lui	a0, 244
 	addi	a0, a0, 575
-	vadd.vv	v8, v8, v10
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 12
 	addi	a0, a0, -576

@@ -5,8 +5,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	subw	a0, a0, a2
 	sext.w	a1, a1
+	subw	a0, a0, a2
 	min	a0, a0, a1
 	ret
 

@@ -112,10 +112,10 @@ func0000000000000264:
 func0000000000000205:
 	sext.w	a2, a2
 	slli	a2, a2, 2
+	lui	a3, 1048544
 	add	a1, a1, a2
-	lui	a2, 1048544
-	addi	a2, a2, 4
-	add	a1, a1, a2
+	addi	a3, a3, 4
+	add	a1, a1, a3
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret

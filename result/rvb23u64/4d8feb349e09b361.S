@@ -1,6 +1,6 @@
 func0000000000000037:
-	slli	a0, a0, 48
 	lui	a1, 1
+	slli	a0, a0, 48
 	srli	a0, a0, 50
 	addi	a1, a1, -767
 	mul	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000037:
 	ret
 
 func0000000000000025:
-	slli	a0, a0, 48
 	lui	a1, 1
+	slli	a0, a0, 48
 	srli	a0, a0, 50
 	addi	a1, a1, 1147
 	mul	a0, a0, a1
@@ -19,9 +19,9 @@ func0000000000000025:
 	ret
 
 func0000000000000011:
-	slli	a1, a0, 48
-	lui	a2, 194192
-	mulhu	a1, a1, a2
+	lui	a1, 194192
+	slli	a2, a0, 48
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	sub	a0, a0, a1
 	slli	a0, a0, 48
@@ -32,9 +32,9 @@ func0000000000000011:
 	ret
 
 func0000000000000027:
+	li	a1, 839
 	slli	a0, a0, 48
 	srli	a0, a0, 52
-	li	a1, 839
 	mul	a0, a0, a1
 	srli	a0, a0, 19
 	addiw	a0, a0, 48

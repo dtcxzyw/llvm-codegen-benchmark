@@ -13,11 +13,11 @@ func0000000000000010:
 
 func0000000000000014:
 	fmv.w.x	fa5, zero
-	lui	a0, 260096
-	fle.s	a1, fa2, fa5
-	fmv.w.x	fa5, a0
+	fle.s	a0, fa2, fa5
+	lui	a1, 260096
+	fmv.w.x	fa5, a1
 	fmv.s	fa4, fa5
-	bnez	a1, .LBB1_2
+	bnez	a0, .LBB1_2
 	fmv.s	fa4, fa1
 .LBB1_2:
 	fmadd.s	fa0, fa0, fa4, fa5

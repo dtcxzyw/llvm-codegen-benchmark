@@ -8,8 +8,8 @@ func0000000000000010:
 
 func0000000000000008:
 	fmul.d	fa5, fa1, fa1
-	li	a1, 1023
 	fmadd.d	fa5, fa0, fa0, fa5
+	li	a1, 1023
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa4, fa5

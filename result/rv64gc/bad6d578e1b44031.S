@@ -24,12 +24,12 @@ func0000000000000011:
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 20
 	lui	a1, 1046528
+	slli	a0, a0, 20
+	lui	a2, 425989
 	addw	a0, a0, a1
-	lui	a1, 425989
-	addi	a1, a1, 19
-	or	a0, a0, a1
+	addi	a2, a2, 19
+	or	a0, a0, a2
 	ret
 
 func000000000000001b:
@@ -38,16 +38,16 @@ func000000000000001b:
 	ret
 
 func000000000000001a:
+	lui	a1, 69632
 	slli	a0, a0, 1
 	addiw	a0, a0, -1
-	lui	a1, 69632
 	or	a0, a0, a1
 	ret
 
 func000000000000000a:
+	lui	a1, 69632
 	slli	a0, a0, 1
 	addiw	a0, a0, -1
-	lui	a1, 69632
 	or	a0, a0, a1
 	ret
 

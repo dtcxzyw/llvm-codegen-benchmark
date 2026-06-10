@@ -22,9 +22,9 @@ func0000000000000004:
 	mul	a0, a0, a1
 	lui	a1, 804435
 	addi	a1, a1, 1536
+	lui	a2, 560295
 	addw	a0, a0, a1
-	lui	a1, 560295
-	addi	a1, a1, -1023
+	addi	a1, a2, -1023
 	sltu	a0, a0, a1
 	ret
 

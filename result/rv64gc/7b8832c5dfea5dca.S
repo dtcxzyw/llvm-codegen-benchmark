@@ -6,10 +6,10 @@ func0000000000000061:
 	seqz	a0, a0
 	ret
 .LBB0_2:
-	srl	a0, a0, a2
-	not	a2, a2
+	not	a3, a2
 	slli	a1, a1, 1
-	sll	a1, a1, a2
+	srl	a0, a0, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	andi	a0, a0, 8
 	seqz	a0, a0
@@ -23,10 +23,10 @@ func0000000000000041:
 	seqz	a0, a0
 	ret
 .LBB1_2:
-	srl	a0, a0, a2
-	not	a2, a2
+	not	a3, a2
 	slli	a1, a1, 1
-	sll	a1, a1, a2
+	srl	a0, a0, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	seqz	a0, a0
@@ -39,10 +39,10 @@ func000000000000004c:
 	andi	a0, a0, 1
 	ret
 .LBB2_2:
-	srl	a0, a0, a2
-	not	a2, a2
+	not	a3, a2
 	slli	a1, a1, 1
-	sll	a1, a1, a2
+	srl	a0, a0, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret
@@ -58,10 +58,10 @@ func0000000000000021:
 	seqz	a0, a0
 	ret
 .LBB3_2:
-	srl	a0, a0, a2
-	not	a2, a2
+	not	a5, a2
 	slli	a1, a1, 1
-	sll	a1, a1, a2
+	srl	a0, a0, a2
+	sll	a1, a1, a5
 	or	a0, a0, a1
 	srai	a4, a4, 63
 	and	a3, a3, a4
@@ -76,10 +76,10 @@ func000000000000006c:
 	andi	a0, a0, 1
 	ret
 .LBB4_2:
-	srl	a0, a0, a2
-	not	a2, a2
+	not	a3, a2
 	slli	a1, a1, 1
-	sll	a1, a1, a2
+	srl	a0, a0, a2
+	sll	a1, a1, a3
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	ret

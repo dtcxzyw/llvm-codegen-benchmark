@@ -53,8 +53,8 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	addiw	a1, a1, 1
 	li	a2, 1
+	addiw	a1, a1, 1
 	slli	a2, a2, 11
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB5_2

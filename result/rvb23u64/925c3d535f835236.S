@@ -6,16 +6,16 @@ func0000000000000181:
 	ret
 
 func000000000000002c:
-	srli	a1, a1, 4
 	addiw	a0, a0, -18
+	srli	a1, a1, 4
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000030c:
 	sext.w	a0, a0
-	andi	a1, a1, 60
 	sltiu	a0, a0, 8
+	andi	a1, a1, 60
 	xori	a0, a0, 1
 	czero.eqz	a0, a0, a1
 	ret

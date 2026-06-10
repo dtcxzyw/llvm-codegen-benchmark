@@ -12,8 +12,8 @@ func0000000000000003:
 	andi	a2, a0, 1
 	mv	a0, a1
 	beqz	a2, .LBB1_2
-	addi	a0, a0, 7
 	lui	a1, 32
+	addi	a0, a0, 7
 	addi	a1, a1, -8
 	and	a0, a0, a1
 .LBB1_2:

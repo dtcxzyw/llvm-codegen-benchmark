@@ -8,16 +8,16 @@ func000000000000000f:
 func0000000000000003:
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
+	lui	a2, 150
 	add	a0, a0, a1
-	lui	a1, 150
-	addi	a1, a1, 768
+	addi	a1, a2, 768
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
-	slli	a1, a1, 1
 	li	a2, 1
 	slli	a2, a2, 35
+	slli	a1, a1, 1
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1

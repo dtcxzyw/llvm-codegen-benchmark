@@ -1,7 +1,7 @@
 func0000000000000007:
-	slli	a1, a1, 40
 	lui	a2, 123738
 	addi	a2, a2, 1981
+	slli	a1, a1, 40
 	slli	a2, a2, 24
 	mulhu	a1, a1, a2
 	srliw	a1, a1, 17
@@ -10,9 +10,9 @@ func0000000000000007:
 
 func0000000000000004:
 	lui	a2, 1048560
+	lui	a3, 400520
 	and	a1, a1, a2
-	lui	a2, 400520
-	addi	a2, a2, 1607
+	addi	a2, a3, 1607
 	mul	a1, a1, a2
 	srliw	a1, a1, 28
 	sh3add	a0, a1, a0

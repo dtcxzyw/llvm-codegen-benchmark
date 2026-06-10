@@ -23,16 +23,16 @@ func000000000000002c:
 func0000000000000181:
 	zext.b	a0, a0
 	bseti	a2, zero, 11
-	and	a1, a1, a2
 	addi	a0, a0, -46
+	and	a1, a1, a2
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
 
 func000000000000018c:
 	zext.b	a0, a0
-	srli	a1, a1, 11
 	addi	a0, a0, -46
+	srli	a1, a1, 11
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -22,10 +22,10 @@ func0000000000000028:
 	ret
 
 func000000000000010c:
-	sub	a2, a0, a2
 	li	a3, -7
-	xor	a0, a0, a1
+	sub	a2, a0, a2
 	srli	a3, a3, 1
+	xor	a0, a0, a1
 	sltu	a1, a3, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -48,8 +48,8 @@ func0000000000000285:
 
 func000000000000018c:
 	sub	a2, a0, a2
-	xor	a0, a0, a1
 	addi	a2, a2, -4
+	xor	a0, a0, a1
 	snez	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

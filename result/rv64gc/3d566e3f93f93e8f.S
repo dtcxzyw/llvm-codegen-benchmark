@@ -32,12 +32,12 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	andi	a2, a0, 1
-	lui	a0, 1048574
-	addi	a0, a0, 1150
+	lui	a2, 1048574
+	andi	a3, a0, 1
+	addi	a0, a2, 1150
 	and	a0, a0, a1
 	lui	a1, 2
-	bnez	a2, .LBB3_2
+	bnez	a3, .LBB3_2
 	addi	a1, a1, -1471
 	or	a0, a0, a1
 	addi	a0, a0, 128

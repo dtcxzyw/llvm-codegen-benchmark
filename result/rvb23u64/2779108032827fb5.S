@@ -6,9 +6,9 @@ func000000000000000b:
 	ret
 
 func000000000000000a:
+	bseti	a1, zero, 31
 	sext.w	a0, a0
 	slli	a0, a0, 31
-	bseti	a1, zero, 31
 	add	a0, a0, a1
 	srai	a0, a0, 32
 	ret

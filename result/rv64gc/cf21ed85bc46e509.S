@@ -7,8 +7,8 @@ func0000000000000009:
 	srli	a1, a0, 9
 	mulhu	a1, a1, a2
 	lui	a2, 244141
-	addi	a2, a2, -1536
 	srli	a1, a1, 11
+	addi	a2, a2, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a0
 	sub	a0, a0, a1
@@ -43,12 +43,12 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
+	lui	a2, 526344
+	addi	a2, a2, 129
+	slli	a3, a2, 32
 	sub	a0, a0, a1
-	lui	a1, 526344
-	addi	a1, a1, 129
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mulhu	a0, a0, a1
+	add	a2, a2, a3
+	mulhu	a0, a0, a2
 	srli	a0, a0, 7
 	slli	a1, a0, 8
 	sub	a0, a0, a1

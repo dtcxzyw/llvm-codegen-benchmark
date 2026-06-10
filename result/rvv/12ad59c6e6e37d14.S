@@ -9,9 +9,9 @@ func00000000000000e1:
 	ret
 
 func00000000000000e4:
-	bseti	a0, zero, 62
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vor.vi	v10, v10, 4, v0.t
+	bseti	a0, zero, 62
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, mu

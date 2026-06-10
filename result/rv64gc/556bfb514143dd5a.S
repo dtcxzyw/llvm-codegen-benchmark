@@ -12,16 +12,16 @@ func0000000000000021:
 
 func000000000000010c:
 	sext.w	a0, a0
-	srli	a1, a1, 13
 	sltiu	a0, a0, 2
+	srli	a1, a1, 13
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	slli	a0, a0, 13
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	andi	a1, a1, 6
+	sext.w	a0, a0
 	addi	a1, a1, -6
 	snez	a1, a1
 	sltiu	a0, a0, 4
@@ -34,9 +34,9 @@ func0000000000000101:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	li	a2, 21
 	slli	a2, a2, 10
+	sext.w	a0, a0
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

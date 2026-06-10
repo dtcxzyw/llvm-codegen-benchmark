@@ -1,6 +1,6 @@
 func000000000000000b:
-	not	a1, a1
 	li	a2, 63
+	not	a1, a1
 	slli	a2, a2, 32
 	or	a1, a1, a2
 	srli	a1, a1, 6
@@ -8,8 +8,8 @@ func000000000000000b:
 	ret
 
 func000000000000000a:
-	not	a1, a1
 	li	a2, 7
+	not	a1, a1
 	slli	a2, a2, 32
 	or	a1, a1, a2
 	srli	a1, a1, 3
@@ -19,8 +19,8 @@ func000000000000000a:
 	ret
 
 func0000000000000010:
-	not	a1, a1
 	li	a2, 31
+	not	a1, a1
 	slli	a2, a2, 32
 	or	a1, a1, a2
 	srli	a1, a1, 5

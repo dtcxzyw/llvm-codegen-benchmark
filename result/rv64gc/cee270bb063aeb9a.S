@@ -137,8 +137,8 @@ func0000000000000028:
 	ret
 
 func0000000000000023:
-	sext.w	a2, a2
 	lui	a3, 2
+	sext.w	a2, a2
 	addi	a3, a3, 1808
 	bgeu	a3, a2, .LBB17_2
 	li	a1, 1023
@@ -165,8 +165,8 @@ func0000000000000050:
 	ret
 
 func0000000000000021:
-	sext.w	a2, a2
 	lui	a3, 878478
+	sext.w	a2, a2
 	addi	a3, a3, 1991
 	bgeu	a3, a2, .LBB20_2
 	li	a1, -306

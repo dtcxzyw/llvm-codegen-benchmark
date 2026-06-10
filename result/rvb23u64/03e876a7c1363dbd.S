@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	zext.h	a0, a0
 	lui	a1, 4
+	zext.h	a0, a0
 	addi	a1, a1, -358
 	sltu	a0, a0, a1
 	ret

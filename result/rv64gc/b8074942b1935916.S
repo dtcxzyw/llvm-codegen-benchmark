@@ -1,9 +1,9 @@
 func0000000000000108:
 	lui	a2, 16
 	addi	a2, a2, -1
-	and	a0, a0, a2
 	and	a1, a1, a2
 	addi	a1, a1, -2048
+	and	a0, a0, a2
 	addi	a1, a1, -52
 	sltiu	a1, a1, 900
 	sltiu	a0, a0, 100
@@ -25,8 +25,8 @@ func0000000000000102:
 func0000000000000908:
 	lui	a2, 16
 	addi	a2, a2, -1
-	and	a0, a0, a2
 	and	a1, a1, a2
+	and	a0, a0, a2
 	addi	a1, a1, -97
 	sltiu	a1, a1, 6
 	sltiu	a0, a0, 10
@@ -48,8 +48,8 @@ func0000000000000902:
 func0000000000000048:
 	lui	a2, 16
 	addi	a2, a2, -1
-	and	a0, a0, a2
 	and	a1, a1, a2
+	and	a0, a0, a2
 	addi	a1, a1, -7
 	sltiu	a1, a1, -2
 	seqz	a0, a0

@@ -1,8 +1,8 @@
 func0000000000000188:
-	sext.w	a0, a0
 	li	a2, 3
 	slli	a2, a2, 11
 	and	a1, a1, a2
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 3

@@ -8,11 +8,11 @@ func0000000000000285:
 
 func0000000000000615:
 	sext.w	a2, a2
+	lui	a3, 1048572
 	sltiu	a2, a2, 2
+	addi	a3, a3, 5
 	czero.nez	a1, a1, a2
-	lui	a2, 1048572
-	addi	a2, a2, 5
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

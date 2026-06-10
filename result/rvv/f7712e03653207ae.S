@@ -10,8 +10,8 @@ func0000000000000001:
 func000000000000000b:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vv	v12, v10, v8
-	li	a0, -2000
 	vmand.mm	v0, v12, v0
+	li	a0, -2000
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
@@ -19,8 +19,8 @@ func000000000000000b:
 func000000000000000a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v12, v10, v8
-	vmv.v.i	v8, 0
 	vmand.mm	v0, v12, v0
+	vmv.v.i	v8, 0
 	li	a0, 60
 	vmerge.vxm	v8, v8, a0, v0
 	ret

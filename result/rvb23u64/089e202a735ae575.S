@@ -1,7 +1,7 @@
 func0000000000000024:
+	li	a2, 1
 	add.uw	a0, a1, a0
-	li	a1, 1
-	bseti	a1, a1, 62
+	bseti	a1, a2, 62
 	sltu	a0, a0, a1
 	ret
 
@@ -11,9 +11,9 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
+	li	a2, 1
 	add.uw	a0, a1, a0
-	li	a1, 1
-	bseti	a1, a1, 62
+	bseti	a1, a2, 62
 	slt	a0, a0, a1
 	ret
 

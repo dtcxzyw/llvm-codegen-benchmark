@@ -71,8 +71,8 @@ func0000000000000011:
 	ret
 
 func0000000000000014:
-	slli	a0, a0, 12
 	lui	a1, 2560
+	slli	a0, a0, 12
 	addi	a1, a1, 1280
 	sltu	a0, a0, a1
 	ret

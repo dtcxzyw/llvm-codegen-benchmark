@@ -3,8 +3,8 @@ func0000000000000004:
 	beq	a2, a3, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
-	addi	a0, a0, 15
 	li	a1, -31
+	addi	a0, a0, 15
 	srli	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -39,8 +39,8 @@ func0000000000000053:
 	bltu	a2, a3, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
-	addi	a0, a0, 32
 	li	a1, -127
+	addi	a0, a0, 32
 	srli	a1, a1, 1
 	and	a0, a0, a1
 	ret

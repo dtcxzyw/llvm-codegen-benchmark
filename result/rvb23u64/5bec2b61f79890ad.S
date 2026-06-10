@@ -51,18 +51,18 @@ func0000000000000087:
 	ret
 
 func00000000000000d4:
+	lui	a3, 1034754
 	add	a1, a1, a2
-	lui	a2, 1034754
-	addi	a2, a2, 1024
+	addi	a2, a3, 1024
 	add	a1, a1, a2
 	srliw	a1, a1, 11
 	sh1add	a0, a1, a0
 	ret
 
 func0000000000000074:
+	lui	a3, 1034754
 	add	a1, a1, a2
-	lui	a2, 1034754
-	addi	a2, a2, 1024
+	addi	a2, a3, 1024
 	add	a1, a1, a2
 	srliw	a1, a1, 11
 	sh1add	a0, a1, a0

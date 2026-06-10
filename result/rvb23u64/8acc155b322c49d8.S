@@ -13,8 +13,8 @@ func000000000000000f:
 	ret
 
 func000000000000001f:
-	sext.w	a2, a2
 	lui	a3, 1
+	sext.w	a2, a2
 	addi	a3, a3, -608
 	mul	a2, a2, a3
 	add	a0, a0, a1

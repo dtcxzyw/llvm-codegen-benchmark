@@ -98,8 +98,8 @@ func0000000000000005:
 	ret
 
 func000000000000000b:
-	slliw	a2, a2, 1
 	lui	a3, 1048568
+	slliw	a2, a2, 1
 	addi	a3, a3, 254
 	and	a2, a2, a3
 	or	a0, a0, a1
@@ -127,9 +127,9 @@ func000000000000001d:
 func000000000000000f:
 	slli	a2, a2, 6
 	lui	a3, 28672
+	and	a2, a2, a3
 	or	a0, a0, a1
 	lui	a1, 985096
-	and	a2, a2, a3
 	or	a0, a0, a2
 	addi	a1, a1, 128
 	or	a0, a0, a1

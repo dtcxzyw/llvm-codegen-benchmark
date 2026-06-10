@@ -1,8 +1,8 @@
 func0000000000000f08:
+	lui	a3, 32
 	add	a1, a1, a2
-	lui	a2, 32
-	addi	a2, a2, -31
-	bltu	a2, a1, .LBB0_2
+	addi	a3, a3, -31
+	bltu	a3, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
 	lui	a1, 16

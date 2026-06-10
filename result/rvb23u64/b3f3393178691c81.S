@@ -8,9 +8,9 @@ func0000000000000005:
 
 func0000000000000048:
 	andi	a2, a2, -2048
-	bclri	a2, a2, 11
 	sh3add	a0, a1, a0
-	sltu	a0, a2, a0
+	bclri	a1, a2, 11
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000064:
@@ -28,8 +28,8 @@ func0000000000000041:
 	ret
 
 func0000000000000068:
-	andi	a2, a2, -8
 	slli	a1, a1, 4
+	andi	a2, a2, -8
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret

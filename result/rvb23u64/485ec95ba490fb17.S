@@ -18,8 +18,8 @@ func0000000000000181:
 	ret
 
 func0000000000000141:
-	bset	a1, zero, a1
 	andi	a0, a0, -2
+	bset	a1, zero, a1
 	addiw	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	ret

@@ -47,9 +47,9 @@ func0000000000000052:
 	ret
 
 func0000000000001ac2:
+	li	a0, 50
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 1
-	li	a0, 50
 	vmsle.vv	v12, v8, v10
 	vmseq.vx	v8, v10, a0
 	vmor.mm	v0, v8, v12

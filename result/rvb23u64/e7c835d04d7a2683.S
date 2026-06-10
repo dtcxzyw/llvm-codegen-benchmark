@@ -1,20 +1,20 @@
 func0000000000000004:
-	srliw	a1, a1, 24
 	li	a2, 256
+	srliw	a1, a1, 24
 	sub	a2, a2, a0
 	mulw	a0, a2, a1
 	ret
 
 func000000000000000f:
-	srliw	a1, a1, 7
 	li	a2, 32
+	srliw	a1, a1, 7
 	sub	a2, a2, a0
 	mulw	a0, a2, a1
 	ret
 
 func000000000000001f:
-	srliw	a1, a1, 7
 	li	a2, 32
+	srliw	a1, a1, 7
 	sub	a2, a2, a0
 	mulw	a0, a2, a1
 	ret

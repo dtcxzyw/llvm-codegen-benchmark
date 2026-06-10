@@ -1,8 +1,8 @@
 func0000000000000001:
-	srai	a1, a0, 63
-	srli	a1, a1, 52
-	add	a0, a0, a1
 	lui	a1, 1048575
+	srai	a2, a0, 63
+	srli	a2, a2, 52
+	add	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
@@ -28,9 +28,9 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	srli	a0, a0, 3
 	lui	a1, 748983
 	addi	a1, a1, -585
+	srli	a0, a0, 3
 	slli	a1, a1, 32
 	mul	a0, a0, a1
 	ret

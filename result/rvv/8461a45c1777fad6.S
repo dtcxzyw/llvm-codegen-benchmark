@@ -22,10 +22,10 @@ func0000000000000018:
 	ret
 
 func000000000000001c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v10, v10, 8
 	li	a0, -1
 	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v10, v10, 8
 	vand.vx	v10, v10, a0
 	vzext.vf2	v12, v8
 	vsll.vv	v8, v12, v10

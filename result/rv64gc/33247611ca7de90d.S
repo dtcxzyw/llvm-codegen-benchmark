@@ -13,8 +13,8 @@ func000000000000002c:
 	ret
 
 func00000000000001a1:
-	neg	a0, a0
 	lui	a1, 1
+	neg	a0, a0
 	addi	a1, a1, -64
 	and	a0, a0, a1
 	seqz	a0, a0

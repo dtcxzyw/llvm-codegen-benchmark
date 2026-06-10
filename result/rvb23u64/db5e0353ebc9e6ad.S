@@ -1,13 +1,13 @@
 func000000000000004d:
-	fadd.s	fa5, fa0, fa1
 	lui	a0, 743523
-	lui	a1, 219235
+	fadd.s	fa5, fa0, fa1
 	addi	a0, a0, 1981
-	addi	a1, a1, 1981
+	lui	a1, 219235
 	fmv.w.x	fa4, a0
+	addi	a0, a1, 1981
+	fmv.w.x	fa3, a0
 	flt.s	a0, fa5, fa4
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa5
+	flt.s	a1, fa3, fa5
 	andn	a0, a1, a0
 	ret
 
@@ -22,22 +22,22 @@ func0000000000000024:
 
 func00000000000000db:
 	fadd.s	fa5, fa0, fa1
-	fli.s	fa4, 1.0
-	flt.s	a0, fa4, fa5
 	fmv.w.x	fa4, zero
+	fli.s	fa3, 1.0
+	flt.s	a0, fa3, fa5
 	flt.s	a1, fa5, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000042:
-	fadd.s	fa5, fa0, fa1
 	lui	a0, 283576
-	lui	a1, 281862
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
+	lui	a0, 281862
+	fmv.w.x	fa3, a0
 	flt.s	a0, fa5, fa4
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa5
+	flt.s	a1, fa3, fa5
 	and	a0, a0, a1
 	ret
 

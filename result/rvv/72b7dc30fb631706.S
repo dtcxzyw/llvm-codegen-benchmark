@@ -62,9 +62,9 @@ func000000000000010c:
 	ret
 
 func00000000000000a1:
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vv	v14, v10, v12
-	bseti	a0, zero, 63
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -77,19 +77,19 @@ func0000000000000146:
 	ret
 
 func00000000000000f8:
+	li	a0, 29
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vv	v14, v10, v12
-	li	a0, 29
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func00000000000000ca:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmslt.vv	v14, v10, v12
 	lui	a0, 1048544
 	addi	a0, a0, -1
 	srli	a0, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmslt.vv	v14, v10, v12
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -109,26 +109,26 @@ func0000000000000106:
 	ret
 
 func0000000000000108:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v14, v12, v10
 	li	a0, -1
 	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vv	v14, v12, v10
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func000000000000014a:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v14, v12, v10
-	li	a0, 63
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
 
 func000000000000010a:
+	li	a0, 19
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v12, v10
-	li	a0, 19
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -190,9 +190,9 @@ func00000000000000e6:
 	ret
 
 func0000000000000024:
+	li	a0, 19
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vv	v14, v10, v12
-	li	a0, 19
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -212,10 +212,10 @@ func0000000000000101:
 	ret
 
 func0000000000000028:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vv	v14, v10, v12
 	li	a0, -1
 	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vv	v14, v10, v12
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -249,9 +249,9 @@ func000000000000028c:
 	ret
 
 func0000000000000298:
+	li	a0, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v10, v12
-	li	a0, 62
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -264,9 +264,9 @@ func0000000000000121:
 	ret
 
 func0000000000000104:
+	lui	a0, 258048
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v12, v10
-	lui	a0, 258048
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

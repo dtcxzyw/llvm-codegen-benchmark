@@ -7,18 +7,18 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
+	li	a1, -7
 	zext.h	a0, a0
 	sltiu	a0, a0, 6
-	li	a1, -7
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 1
 	ret
 
 func000000000000000a:
+	lui	a1, 1048568
 	sext.h	a0, a0
 	sgtz	a0, a0
 	neg	a0, a0
-	lui	a1, 1048568
 	xor	a0, a0, a1
 	ret
 
@@ -30,13 +30,13 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	zext.h	a0, a0
 	li	a1, -128
+	zext.h	a0, a0
 	sltiu	a0, a0, 53
+	lui	a2, 4
 	czero.eqz	a0, a1, a0
-	lui	a1, 4
-	addi	a1, a1, -10
-	add	a0, a0, a1
+	addi	a2, a2, -10
+	add	a0, a0, a2
 	ret
 
 func000000000000000c:

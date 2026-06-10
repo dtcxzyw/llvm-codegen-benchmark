@@ -20,8 +20,8 @@ func0000000000000000:
 
 func0000000000000015:
 	lui	a3, 1048575
-	sext.w	a1, a1
 	srli	a3, a3, 9
+	sext.w	a1, a1
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

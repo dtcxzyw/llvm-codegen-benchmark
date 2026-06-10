@@ -1,7 +1,7 @@
 func0000000000000012:
-	fabs.s	fa5, fa2
 	lui	a0, 232731
 	addi	a0, a0, 1815
+	fabs.s	fa5, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB0_2
@@ -36,9 +36,9 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	fabs.s	fa5, fa2
 	lui	a0, 260193
 	addi	a0, a0, -1390
+	fabs.s	fa5, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB4_2

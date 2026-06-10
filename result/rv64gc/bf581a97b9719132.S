@@ -3,8 +3,8 @@ func0000000000000000:
 	bgtz	a2, .LBB0_2
 	li	a2, 1
 .LBB0_2:
-	sub	a0, a0, a1
-	subw	a0, a0, a2
+	add	a1, a1, a2
+	subw	a0, a0, a1
 	ret
 
 func0000000000000001:

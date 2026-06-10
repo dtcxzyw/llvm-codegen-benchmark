@@ -9,8 +9,8 @@ func0000000000000000:
 	and	a0, a0, a2
 	ret
 .LBB0_2:
-	not	a0, a0
 	lui	a1, 524288
+	not	a0, a0
 	addiw	a1, a1, -1
 	srl	a1, a1, a0
 	srai	a0, a3, 63
@@ -53,13 +53,13 @@ func0000000000000001:
 	ret
 
 func0000000000000002:
-	addi	a1, a0, -64
-	li	a2, 1
-	srli	a1, a1, 63
-	sll	a2, a2, a0
-	neg	a0, a1
-	addi	a1, a1, -1
-	and	a0, a0, a2
+	li	a1, 1
+	addi	a2, a0, -64
+	srli	a2, a2, 63
+	neg	a3, a2
+	sll	a1, a1, a0
+	addi	a2, a2, -1
+	and	a0, a3, a1
 	and	a1, a1, a2
 	ret
 

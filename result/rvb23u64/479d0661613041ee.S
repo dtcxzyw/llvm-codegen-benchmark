@@ -1,8 +1,8 @@
 func000000000000000f:
 	sext.w	a2, a2
+	lui	a3, 1048560
 	or	a1, a1, a2
-	lui	a2, 1048560
-	addi	a2, a2, 255
+	addi	a2, a3, 255
 	and	a1, a1, a2
 	sext.w	a0, a0
 	or	a0, a0, a1
@@ -10,10 +10,10 @@ func000000000000000f:
 
 func000000000000000d:
 	sext.w	a2, a2
+	lui	a3, 32767
 	or	a1, a1, a2
-	lui	a2, 32767
-	slli	a2, a2, 5
-	andn	a1, a1, a2
+	slli	a3, a3, 5
+	andn	a1, a1, a3
 	add.uw	a0, a0, a1
 	ret
 

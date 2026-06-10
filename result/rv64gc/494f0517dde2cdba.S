@@ -20,10 +20,10 @@ func0000000000000041:
 	lui	a2, 524288
 	addi	a2, a2, -1
 	slli	a2, a2, 32
+	li	a3, 2047
 	and	a1, a1, a2
-	li	a2, 2047
-	slli	a2, a2, 52
-	xor	a1, a1, a2
+	slli	a3, a3, 52
+	xor	a1, a1, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -32,10 +32,10 @@ func0000000000000001:
 	li	a2, 1
 	slli	a2, a2, 41
 	addi	a2, a2, -1024
+	li	a3, 3
 	and	a1, a1, a2
-	li	a2, 3
-	slli	a2, a2, 10
-	xor	a1, a1, a2
+	slli	a3, a3, 10
+	xor	a1, a1, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

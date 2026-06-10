@@ -1,10 +1,10 @@
 func000000000000002c:
-	slli	a0, a0, 48
 	lui	a3, 256
+	slli	a0, a0, 48
+	srli	a0, a0, 48
 	addi	a3, a3, -256
 	and	a2, a2, a3
 	li	a3, 11
-	srli	a0, a0, 48
 	slli	a3, a3, 8
 	addi	a0, a0, -629
 	xor	a2, a2, a3
@@ -15,24 +15,24 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	slli	a0, a0, 48
 	zext.b	a2, a2
+	slli	a0, a0, 48
 	srli	a0, a0, 48
 	snez	a2, a2
-	and	a1, a1, a2
 	addi	a0, a0, -629
+	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 48
 	li	a3, 15
+	slli	a0, a0, 48
 	slli	a3, a3, 8
-	srli	a0, a0, 63
 	and	a2, a2, a3
-	not	a0, a0
+	srli	a0, a0, 63
 	addi	a2, a2, -2048
+	not	a0, a0
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	fmv.x.w	a1, fa0
+	andi	a0, a0, 1
 	lui	a2, 522240
 	and	a1, a1, a2
 	lui	a2, 219136

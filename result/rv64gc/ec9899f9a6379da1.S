@@ -1,7 +1,7 @@
 func0000000000000024:
-	addiw	a1, a0, -65
-	li	a2, 26
-	bltu	a1, a2, .LBB0_2
+	li	a1, 26
+	addiw	a2, a0, -65
+	bltu	a2, a1, .LBB0_2
 	lui	a0, 272
 	ret
 .LBB0_2:
@@ -9,9 +9,9 @@ func0000000000000024:
 	ret
 
 func0000000000000064:
-	addiw	a1, a0, -65
-	li	a2, 26
-	bltu	a1, a2, .LBB1_2
+	li	a1, 26
+	addiw	a2, a0, -65
+	bltu	a2, a1, .LBB1_2
 	lui	a0, 272
 	ret
 .LBB1_2:

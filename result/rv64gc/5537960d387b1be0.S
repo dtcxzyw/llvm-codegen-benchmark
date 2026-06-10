@@ -70,8 +70,9 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	sext.w	a2, a0
+	mv	a2, a0
 	li	a0, 4
+	sext.w	a2, a2
 	bltu	a0, a2, .LBB5_2
 	andi	a0, a1, 1
 	addi	a0, a0, 1

@@ -1,8 +1,8 @@
 func000000000000026d:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, 0
 	lui	a0, 1048400
 	addi	a0, a0, 1733
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgt.vi	v0, v10, 0
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048540
 	addi	a0, a0, 1359
@@ -11,10 +11,10 @@ func000000000000026d:
 	ret
 
 func000000000000026c:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, 0
 	lui	a0, 1048400
 	addi	a0, a0, 1733
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgt.vi	v0, v10, 0
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048540
 	addi	a0, a0, 1359

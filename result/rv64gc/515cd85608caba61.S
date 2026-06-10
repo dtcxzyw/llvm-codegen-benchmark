@@ -7,8 +7,8 @@ func0000000000000288:
 	ret
 
 func00000000000002aa:
-	fabs.s	fa5, fa1
 	lui	a0, 212992
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	fle.s	a1, fa0, fa4
@@ -25,60 +25,60 @@ func0000000000000088:
 	ret
 
 func0000000000000132:
+	lui	a0, 522240
+	fmv.w.x	fa5, a0
 	fclass.s	a0, fa1
-	lui	a1, 522240
-	andi	a0, a0, 897
-	fmv.w.x	fa5, a1
-	snez	a0, a0
 	flt.s	a1, fa0, fa5
 	flt.s	a2, fa5, fa0
+	andi	a0, a0, 897
 	or	a1, a1, a2
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000242:
-	fabs.s	fa5, fa1
 	lui	a0, 2048
-	feq.s	a1, fa0, fa0
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
-	flt.s	a0, fa5, fa4
-	xori	a1, a1, 1
+	feq.s	a0, fa0, fa0
+	flt.s	a1, fa5, fa4
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000110:
+	lui	a0, 522240
+	fmv.w.x	fa5, a0
 	fclass.s	a0, fa1
-	lui	a1, 522240
-	andi	a0, a0, 129
-	fmv.w.x	fa5, a1
-	snez	a0, a0
 	feq.s	a1, fa0, fa5
+	andi	a0, a0, 129
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000044:
 	fabs.s	fa5, fa1
 	lui	a0, 219235
-	fmin.s	fa5, fa5, fa0
 	addi	a0, a0, 1981
+	fmin.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 
 func00000000000000f0:
+	lui	a0, 522240
+	fmv.w.x	fa5, a0
 	fclass.s	a0, fa1
-	lui	a1, 522240
-	andi	a0, a0, 894
-	fmv.w.x	fa5, a1
-	snez	a0, a0
 	feq.s	a1, fa0, fa5
+	andi	a0, a0, 894
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func00000000000000aa:
-	fabs.s	fa5, fa1
 	lui	a0, 223232
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	fle.s	a1, fa0, fa4
@@ -87,20 +87,20 @@ func00000000000000aa:
 	ret
 
 func0000000000000310:
+	lui	a0, 522240
+	fmv.w.x	fa5, a0
 	fclass.s	a0, fa1
-	lui	a1, 522240
-	andi	a0, a0, 129
-	fmv.w.x	fa5, a1
-	snez	a0, a0
 	feq.s	a1, fa0, fa5
+	andi	a0, a0, 129
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000244:
 	fabs.s	fa5, fa1
 	lui	a0, 219235
-	fmin.s	fa5, fa0, fa5
 	addi	a0, a0, 1981
+	fmin.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -114,13 +114,13 @@ func0000000000000198:
 	ret
 
 func0000000000000284:
-	fabs.s	fa5, fa1
 	lui	a0, 219235
 	addi	a0, a0, 1981
+	fabs.s	fa5, fa1
 	fmv.w.x	fa4, a0
+	fmv.w.x	fa3, zero
 	flt.s	a0, fa4, fa5
-	fmv.w.x	fa5, zero
-	flt.s	a1, fa0, fa5
+	flt.s	a1, fa0, fa3
 	or	a0, a0, a1
 	ret
 

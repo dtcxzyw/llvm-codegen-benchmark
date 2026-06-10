@@ -6,31 +6,31 @@ func00000000000001ff:
 	ret
 
 func000000000000005f:
-	slliw	a2, a2, 2
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
-	sh2add	a0, a2, a0
+	slliw	a1, a2, 2
+	sh2add	a0, a1, a0
+	sh2add	a0, a1, a0
 	ret
 
 func00000000000000ff:
-	slliw	a2, a2, 2
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
-	sh2add	a0, a2, a0
+	slliw	a1, a2, 2
+	sh2add	a0, a1, a0
+	sh2add	a0, a1, a0
 	ret
 
 func00000000000000df:
-	slliw	a2, a2, 2
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
-	sh2add	a0, a2, a0
+	slliw	a1, a2, 2
+	sh2add	a0, a1, a0
+	sh2add	a0, a1, a0
 	ret
 
 func000000000000007f:
-	slliw	a2, a2, 2
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
-	sh2add	a0, a2, a0
+	slliw	a1, a2, 2
+	sh2add	a0, a1, a0
+	sh2add	a0, a1, a0
 	ret
 
 func000000000000006f:

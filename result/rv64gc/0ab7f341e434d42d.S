@@ -17,8 +17,8 @@ func000000000000000d:
 func000000000000000f:
 	slli	a2, a2, 7
 	lui	a3, 65028
-	slliw	a1, a1, 14
 	addi	a3, a3, -128
+	slliw	a1, a1, 14
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

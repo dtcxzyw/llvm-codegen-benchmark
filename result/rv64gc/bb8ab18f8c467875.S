@@ -4,8 +4,8 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	srli	a0, a0, 1
 	lui	a1, 2048
+	srli	a0, a0, 1
 	addi	a1, a1, -128
 	and	a0, a0, a1
 	ret

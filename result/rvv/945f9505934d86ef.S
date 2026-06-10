@@ -9,9 +9,9 @@ func0000000000000004:
 func0000000000000000:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v12, v10, v11
-	lui	a0, 2575
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12
+	lui	a0, 2575
 	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmacc.vx	v8, a0, v10

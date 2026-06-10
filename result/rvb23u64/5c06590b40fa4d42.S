@@ -21,8 +21,8 @@ func0000000000000019:
 
 func0000000000000011:
 	zext.h	a2, a2
-	lui	a3, 4
 	sltiu	a2, a2, 10
+	lui	a3, 4
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
@@ -31,8 +31,8 @@ func0000000000000011:
 
 func0000000000000014:
 	sext.h	a2, a2
-	lui	a3, 524288
 	slti	a2, a2, 32
+	lui	a3, 524288
 	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2

@@ -22,11 +22,11 @@ func000000000000008a:
 	ret
 
 func0000000000000146:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	slti	a2, a2, 20
 	neg	a2, a2
 	and	a1, a1, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a0, a1, a0
 	ret

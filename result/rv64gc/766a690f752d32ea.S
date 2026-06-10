@@ -17,11 +17,11 @@ func000000000000000f:
 
 func0000000000000003:
 	lui	a3, 240
-	or	a0, a0, a1
-	lui	a1, 60160
 	addi	a3, a3, 1
 	slli	a3, a3, 12
 	addi	a3, a3, -1
+	or	a0, a0, a1
+	lui	a1, 60160
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

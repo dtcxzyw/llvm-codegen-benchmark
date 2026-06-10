@@ -1,58 +1,58 @@
 func0000000000000009:
-	sub	a2, a2, a0
-	slli	a0, a1, 1
+	slli	a3, a1, 1
 	slli	a1, a1, 3
-	add	a0, a0, a1
-	sltu	a0, a2, a0
+	sub	a2, a2, a0
+	add	a1, a1, a3
+	sltu	a0, a2, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000184:
-	sub	a2, a2, a0
-	slli	a0, a1, 10
+	slli	a3, a1, 10
 	slli	a1, a1, 13
-	add	a0, a0, a1
-	sltu	a0, a2, a0
+	sub	a2, a2, a0
+	add	a1, a1, a3
+	sltu	a0, a2, a1
 	ret
 
 func0000000000000084:
-	sub	a2, a2, a0
-	slli	a0, a1, 3
+	slli	a3, a1, 3
 	slli	a1, a1, 5
-	add	a0, a0, a1
-	sltu	a0, a2, a0
+	sub	a2, a2, a0
+	add	a1, a1, a3
+	sltu	a0, a2, a1
 	ret
 
 func0000000000000104:
-	sub	a2, a2, a0
-	slli	a0, a1, 2
+	slli	a3, a1, 2
 	slli	a1, a1, 3
-	add	a0, a0, a1
-	sltu	a0, a2, a0
+	sub	a2, a2, a0
+	add	a1, a1, a3
+	sltu	a0, a2, a1
 	ret
 
 func0000000000000081:
-	sub	a2, a2, a0
-	slli	a0, a1, 2
+	slli	a3, a1, 2
 	slli	a1, a1, 3
-	add	a0, a0, a1
-	xor	a0, a0, a2
-	seqz	a0, a0
+	sub	a2, a2, a0
+	add	a1, a1, a3
+	xor	a1, a1, a2
+	seqz	a0, a1
 	ret
 
 func0000000000000004:
+	slli	a3, a1, 1
 	sub	a2, a2, a0
-	slli	a0, a1, 1
-	add	a0, a0, a1
-	sltu	a0, a2, a0
+	add	a1, a1, a3
+	sltu	a0, a2, a1
 	ret
 
 func0000000000000185:
-	sub	a2, a2, a0
-	slli	a0, a1, 3
+	slli	a3, a1, 3
 	slli	a1, a1, 4
-	add	a0, a0, a1
-	sltu	a0, a0, a2
+	sub	a2, a2, a0
+	add	a1, a1, a3
+	sltu	a0, a1, a2
 	xori	a0, a0, 1
 	ret
 

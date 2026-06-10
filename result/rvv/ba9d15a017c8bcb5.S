@@ -3,12 +3,12 @@
 func0000000000000042:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vv	v8, v8, v16
-	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, 4105
 	slli	a0, a0, 38
-	fmv.d.x	fa4, a0
-	vfmax.vf	v8, v8, fa4
+	fmv.d.x	fa5, a0
+	vfmax.vf	v8, v8, fa5
+	lui	a0, %hi(.LCPI0_0)
+	fld	fa5, %lo(.LCPI0_0)(a0)
 	vfmin.vf	v8, v8, fa5
 	ret
 

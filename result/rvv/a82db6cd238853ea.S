@@ -72,8 +72,8 @@ func0000000000000038:
 	addi	a0, a0, -511
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 63
 	vmseq.vi	v12, v10, 0
+	li	a0, 63
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
@@ -93,22 +93,21 @@ func0000000000000184:
 	addi	a0, a0, 771
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, -20
 	vmsne.vi	v12, v10, 0
+	li	a0, -20
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
 
+.LCPI10_0:
+	.quad	-3307330977390599
 func0000000000000198:
-	li	a0, -47
-	slli	a0, a0, 33
-	addi	a0, a0, -127
-	slli	a0, a0, 13
-	addi	a0, a0, -7
+	lui	a0, %hi(.LCPI10_0)
+	ld	a0, %lo(.LCPI10_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 63
 	vmsne.vi	v12, v10, 0
+	li	a0, 63
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

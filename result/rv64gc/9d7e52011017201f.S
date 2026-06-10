@@ -45,16 +45,16 @@ func0000000000000003:
 	lui	a0, 524288
 	bnez	a2, .LBB5_2
 	addi	a0, a0, -1
+	lui	a2, 1047844
 	add	a0, a0, a1
-	lui	a1, 1047844
-	addi	a1, a1, -1731
+	addi	a1, a2, -1731
 	addw	a0, a0, a1
 	ret
 .LBB5_2:
 	addi	a0, a0, 2
+	lui	a2, 1047844
 	add	a0, a0, a1
-	lui	a1, 1047844
-	addi	a1, a1, -1731
+	addi	a1, a2, -1731
 	addw	a0, a0, a1
 	ret
 

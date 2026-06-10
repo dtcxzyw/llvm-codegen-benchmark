@@ -14,8 +14,8 @@ func000000000000000f:
 	vmv1r.v	v0, v10
 	li	a0, 32
 	vadd.vx	v8, v8, a0, v0.t
-	li	a0, 16
 	vmv1r.v	v0, v11
+	li	a0, 16
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 

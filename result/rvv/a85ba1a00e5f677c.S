@@ -3,8 +3,8 @@ func00000000000003a4:
 	vsll.vi	v10, v10, 18
 	lui	a0, 448
 	vand.vx	v10, v10, a0
-	lui	a0, 1048304
 	vor.vv	v8, v8, v10
+	lui	a0, 1048304
 	vadd.vx	v8, v8, a0
 	lui	a0, 1048320
 	vmsltu.vx	v0, v8, a0
@@ -33,8 +33,8 @@ func00000000000001a4:
 	vsll.vi	v10, v10, 18
 	lui	a0, 448
 	vand.vx	v10, v10, a0
-	lui	a0, 1048560
 	vor.vv	v8, v8, v10
+	lui	a0, 1048560
 	vadd.vx	v8, v8, a0
 	lui	a0, 256
 	vmsltu.vx	v0, v8, a0

@@ -8,8 +8,8 @@ func00000000000006e6:
 
 func000000000000006a:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vi	v8, v8, -3
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -3
 	vmslt.vv	v0, v8, v10
 	ret
 
@@ -31,8 +31,8 @@ func00000000000002a6:
 
 func0000000000000061:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 

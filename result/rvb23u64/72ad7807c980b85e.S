@@ -1,6 +1,6 @@
 func0000000000000021:
-	andi	a1, a1, 1
 	li	a3, -1
+	andi	a1, a1, 1
 	sllw	a2, a3, a2
 	czero.nez	a1, a2, a1
 	and	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000021:
 	ret
 
 func0000000000000061:
-	andi	a1, a1, 1
 	bset	a2, zero, a2
+	andi	a1, a1, 1
 	addi	a2, a2, -128
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 128
@@ -33,8 +33,8 @@ func0000000000000001:
 	ret
 
 func000000000000006c:
-	andi	a1, a1, 1
 	bset	a2, zero, a2
+	andi	a1, a1, 1
 	addi	a2, a2, -128
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 128

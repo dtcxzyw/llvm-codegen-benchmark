@@ -7,8 +7,8 @@ func0000000000000118:
 
 func0000000000000b02:
 	addi	a2, a2, -1
-	addi	a1, a1, -7
 	xor	a0, a0, a2
+	addi	a1, a1, -7
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1

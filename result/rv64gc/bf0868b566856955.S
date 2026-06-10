@@ -15,8 +15,8 @@ func0000000000000021:
 func0000000000000001:
 	li	a2, -1
 	slli	a3, a2, 62
-	slli	a2, a2, 63
 	addi	a3, a3, -1
+	slli	a2, a2, 63
 	and	a1, a1, a3
 	or	a0, a0, a2
 	xor	a0, a0, a1

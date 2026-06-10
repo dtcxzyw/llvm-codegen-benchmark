@@ -1,10 +1,10 @@
 func0000000000000004:
 	addw	a0, a0, a1
-	lui	a1, 2
-	slli	a2, a0, 48
-	addi	a1, a1, -1513
-	srai	a2, a2, 48
-	mul	a1, a2, a1
+	slli	a1, a0, 48
+	lui	a2, 2
+	srai	a1, a1, 48
+	addi	a2, a2, -1513
+	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 20
 	add	a1, a1, a2
@@ -14,9 +14,9 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 1147
+	addi	a1, a2, 1147
 	mul	a1, a0, a1
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 19

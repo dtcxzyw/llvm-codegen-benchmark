@@ -19,10 +19,10 @@ func0000000000000007:
 
 func0000000000000003:
 	srli	a2, a2, 1
+	lui	a3, 524288
 	add	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -2
-	and	a1, a1, a2
+	addiw	a3, a3, -2
+	and	a1, a1, a3
 	sh2add	a0, a1, a0
 	ret
 

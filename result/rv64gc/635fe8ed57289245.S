@@ -9,10 +9,10 @@ func0000000000000000:
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	slli	a1, a1, 1
-	or	a1, a1, a2
-	srli	a2, a0, 57
+	srli	a3, a0, 57
 	slli	a0, a0, 7
-	or	a0, a0, a2
+	or	a1, a1, a2
+	or	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -27,10 +27,10 @@ func000000000000004c:
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	slli	a1, a1, 1
-	or	a1, a1, a2
-	srli	a2, a0, 57
+	srli	a3, a0, 57
 	slli	a0, a0, 7
-	or	a0, a0, a2
+	or	a1, a1, a2
+	or	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

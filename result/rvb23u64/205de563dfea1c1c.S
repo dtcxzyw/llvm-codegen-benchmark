@@ -56,8 +56,8 @@ func0000000000000308:
 
 func0000000000000310:
 	zext.h	a0, a0
-	snez	a1, a1
 	sltiu	a0, a0, 63
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

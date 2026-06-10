@@ -79,9 +79,9 @@ func0000000000000204:
 	ret
 
 func0000000000000208:
+	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 1
-	li	a0, 16
 	vsub.vv	v10, v10, v12
 	vadd.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8

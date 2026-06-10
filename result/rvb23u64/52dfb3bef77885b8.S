@@ -1,7 +1,7 @@
 func000000000000004c:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	negw	a1, a1
+	andi	a0, a0, 1
 	min	a2, a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -10,9 +10,9 @@ func000000000000004c:
 	ret
 
 func000000000000004a:
-	andi	a0, a0, 1
 	sext.w	a2, a2
 	negw	a1, a1
+	andi	a0, a0, 1
 	min	a2, a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

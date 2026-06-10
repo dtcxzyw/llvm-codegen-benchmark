@@ -4,14 +4,14 @@ func000000000000004f:
 	bltu	a2, a3, .LBB0_2
 	li	a2, 124
 	slli	a1, a1, 7
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 60
 	slli	a1, a1, 7
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func000000000000001b:

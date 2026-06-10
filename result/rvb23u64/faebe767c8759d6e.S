@@ -1,6 +1,6 @@
 func000000000000003b:
-	sext.w	a0, a0
 	bseti	a1, zero, 38
+	sext.w	a0, a0
 	addi	a1, a1, -129
 	add	a0, a0, a1
 	srli	a0, a0, 6

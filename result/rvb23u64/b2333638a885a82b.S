@@ -1,6 +1,6 @@
 func0000000000000006:
-	andi	a0, a0, 1
 	addi	a2, a2, -49
+	andi	a0, a0, 1
 	zext.w	a2, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
-	andi	a0, a0, 1
 	addi	a2, a2, -1
+	andi	a0, a0, 1
 	zext.w	a2, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

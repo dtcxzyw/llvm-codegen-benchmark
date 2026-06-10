@@ -10,9 +10,9 @@ func0000000000000002:
 
 func0000000000000003:
 	li	a1, 1
+	lui	a2, 31
 	sll	a0, a1, a0
-	lui	a1, 31
-	addi	a1, a1, 780
+	addi	a1, a2, 780
 	and	a0, a0, a1
 	ret
 
@@ -24,10 +24,10 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	lui	a1, 1
-	sll	a0, a1, a0
 	li	a1, -1
+	lui	a2, 1
 	slli	a1, a1, 32
+	sll	a0, a2, a0
 	srli	a1, a1, 20
 	and	a0, a0, a1
 	ret

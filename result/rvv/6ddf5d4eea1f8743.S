@@ -19,8 +19,8 @@ func0000000000000199:
 func00000000000000a9:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, 15
-	lui	a0, 16
 	vadd.vi	v8, v8, -6, v0.t
+	lui	a0, 16
 	addi	a0, a0, -1
 	vrsub.vx	v8, v8, a0
 	ret
@@ -30,8 +30,8 @@ func00000000000000a0:
 	addi	a0, a0, -2048
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v8, a0
-	lui	a0, 976563
 	vminu.vv	v8, v10, v8
+	lui	a0, 976563
 	addi	a0, a0, -2048
 	vrsub.vx	v8, v8, a0
 	ret

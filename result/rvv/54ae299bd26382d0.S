@@ -7,21 +7,32 @@
 .LCPI0_3:
 	.quad	0x40040d931b28620d
 func0000000000000000:
+	addi	sp, sp, -16
+	csrr	a0, vlenb
+	slli	a0, a0, 3
+	sub	sp, sp, a0
+	addi	a0, sp, 16
+	vs8r.v	v8, (a0)
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
-	lui	a0, %hi(.LCPI0_2)
-	fld	fa3, %lo(.LCPI0_2)(a0)
-	lui	a0, %hi(.LCPI0_3)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmv.v.f	v24, fa5
+	lui	a0, %hi(.LCPI0_2)
+	fld	fa5, %lo(.LCPI0_2)(a0)
+	vfmv.v.f	v0, fa5
+	lui	a0, %hi(.LCPI0_3)
 	fld	fa5, %lo(.LCPI0_3)(a0)
-	vfmv.v.f	v0, fa3
-	vfmacc.vf	v24, fa4, v16
+	vfmv.v.f	v8, fa5
+	lui	a0, %hi(.LCPI0_1)
+	fld	fa5, %lo(.LCPI0_1)(a0)
+	vfmacc.vf	v24, fa5, v16
 	vfmacc.vv	v0, v16, v24
-	vfmv.v.f	v24, fa5
-	vfmacc.vv	v24, v16, v0
-	vfmul.vv	v8, v8, v24
+	vfmacc.vv	v8, v16, v0
+	addi	a0, sp, 16
+	vl8r.v	v16, (a0)
+	vfmul.vv	v8, v16, v8
+	csrr	a0, vlenb
+	sh3add	sp, a0, sp
+	addi	sp, sp, 16
 	ret
 

@@ -12,9 +12,9 @@ func000000000000002c:
 	lui	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	vmsne.vi	v12, v10, 0
 	li	a0, 27
 	slli	a0, a0, 11
-	vmsne.vi	v12, v10, 0
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v8, v12, v10
 	vmand.mm	v0, v0, v8

@@ -4,10 +4,10 @@ func0000000000000464:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	srai	a2, a2, 3
+	mul	a2, a2, a3
 	sub	a0, a0, a1
-	mul	a1, a2, a3
-	addi	a1, a1, -1
+	addi	a2, a2, -1
 	srai	a0, a0, 3
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 

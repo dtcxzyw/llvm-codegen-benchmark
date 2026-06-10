@@ -9,9 +9,9 @@ func000000000000002c:
 	ret
 
 func000000000000014f:
+	li	a2, 152
 	sext.w	a1, a1
 	sgtz	a1, a1
-	li	a2, 152
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 72

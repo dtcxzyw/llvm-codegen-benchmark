@@ -1,9 +1,9 @@
 func0000000000000118:
-	andi	a1, a1, -8
 	lui	a2, 1048560
+	andi	a1, a1, -8
 	addi	a3, a2, -17
-	addi	a2, a2, 23
 	add	a1, a1, a3
+	addi	a2, a2, 23
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -18,8 +18,8 @@ func0000000000000b02:
 	ret
 
 func0000000000000208:
-	andi	a1, a1, -4
 	lui	a2, 1048568
+	andi	a1, a1, -4
 	addi	a3, a2, -1
 	add	a1, a1, a3
 	lui	a3, 1
@@ -30,8 +30,8 @@ func0000000000000208:
 
 func0000000000000918:
 	andi	a1, a1, 2047
-	lui	a2, 524288
 	addi	a1, a1, -1150
+	lui	a2, 524288
 	snez	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1

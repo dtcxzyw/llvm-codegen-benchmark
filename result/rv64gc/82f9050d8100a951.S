@@ -1,6 +1,6 @@
 func0000000000000429:
-	sext.w	a1, a1
 	srai	a2, a2, 2
+	sext.w	a1, a1
 	sltu	a0, a2, a0
 	not	a0, a0
 	seqz	a1, a1
@@ -8,8 +8,8 @@ func0000000000000429:
 	ret
 
 func000000000000042c:
-	sext.w	a1, a1
 	srai	a2, a2, 2
+	sext.w	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	seqz	a1, a1
@@ -35,8 +35,8 @@ func0000000000000421:
 
 func0000000000000425:
 	srai	a2, a2, 3
-	addiw	a1, a1, -3
 	sltu	a0, a0, a2
+	addiw	a1, a1, -3
 	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1

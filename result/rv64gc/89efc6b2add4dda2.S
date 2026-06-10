@@ -6,12 +6,12 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	srli	a1, a0, 12
-	lui	a2, 16
-	addi	a2, a2, -256
+	lui	a1, 16
+	addi	a1, a1, -256
+	srli	a2, a0, 12
+	addiw	a3, a1, 255
 	and	a1, a1, a2
-	addiw	a2, a2, 255
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

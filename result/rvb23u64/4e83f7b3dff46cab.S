@@ -1,22 +1,22 @@
 func000000000000001a:
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	minu	a0, a0, a1
+	addi	a2, a2, -1
+	minu	a0, a0, a2
 	ret
 
 func0000000000000002:
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	minu	a0, a0, a1
+	addi	a2, a2, -1
+	minu	a0, a0, a2
 	ret
 
 func000000000000000a:
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	minu	a0, a0, a1
+	addi	a2, a2, -1
+	minu	a0, a0, a2
 	ret
 
 func000000000000001b:

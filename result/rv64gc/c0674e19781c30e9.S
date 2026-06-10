@@ -1,6 +1,6 @@
 func0000000000000007:
-	sext.w	a0, a0
 	li	a1, 2
+	sext.w	a0, a0
 	bltu	a0, a1, .LBB0_2
 	li	a0, 2
 .LBB0_2:
@@ -12,8 +12,8 @@ func0000000000000007:
 .LCPI1_0:
 	.quad	5871781006564002453
 func0000000000000006:
-	sext.w	a0, a0
 	li	a1, 2
+	sext.w	a0, a0
 	bltu	a0, a1, .LBB1_2
 	li	a0, 2
 .LBB1_2:

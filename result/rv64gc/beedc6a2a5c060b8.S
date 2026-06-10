@@ -1,21 +1,21 @@
 func0000000000000038:
 	add	a0, a0, a1
-	lui	a1, 1048555
-	srliw	a2, a0, 7
-	sltiu	a2, a2, 675
-	addi	a2, a2, -1
-	addi	a1, a1, -384
+	srliw	a1, a0, 7
+	sltiu	a1, a1, 675
+	lui	a2, 1048555
+	addi	a1, a1, -1
+	addi	a2, a2, -384
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000b8:
 	add	a0, a0, a1
-	lui	a1, 1048555
-	srliw	a2, a0, 7
-	sltiu	a2, a2, 675
-	addi	a2, a2, -1
-	addi	a1, a1, -384
+	srliw	a1, a0, 7
+	sltiu	a1, a1, 675
+	lui	a2, 1048555
+	addi	a1, a1, -1
+	addi	a2, a2, -384
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -28,11 +28,11 @@ func0000000000000026:
 	ret
 
 func00000000000001b8:
+	lui	a2, 244141
 	addw	a0, a0, a1
-	lui	a1, 244141
-	lui	a2, 804435
-	addi	a1, a1, -1537
+	addi	a1, a2, -1537
 	sltu	a1, a1, a0
+	lui	a2, 804435
 	neg	a1, a1
 	addi	a2, a2, 1536
 	and	a1, a1, a2
@@ -40,11 +40,11 @@ func00000000000001b8:
 	ret
 
 func000000000000002a:
+	lui	a2, 244
 	addw	a0, a0, a1
-	lui	a1, 244
-	lui	a2, 1048332
-	addi	a1, a1, 575
+	addi	a1, a2, 575
 	slt	a1, a1, a0
+	lui	a2, 1048332
 	neg	a1, a1
 	addi	a2, a2, -576
 	and	a1, a1, a2
@@ -83,11 +83,11 @@ func00000000000000aa:
 	ret
 
 func0000000000000008:
+	lui	a2, 244
 	addw	a0, a0, a1
-	lui	a1, 244
-	lui	a2, 1048332
-	addi	a1, a1, 575
+	addi	a1, a2, 575
 	sltu	a1, a1, a0
+	lui	a2, 1048332
 	neg	a1, a1
 	addi	a2, a2, -576
 	and	a1, a1, a2

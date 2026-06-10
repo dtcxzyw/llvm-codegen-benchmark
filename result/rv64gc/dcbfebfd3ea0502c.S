@@ -1,6 +1,6 @@
 func0000000000000001:
-	addi	a1, a1, 1
 	slli	a0, a0, 63
+	addi	a1, a1, 1
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	addi	a0, a0, -1
@@ -19,8 +19,8 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	addi	a1, a1, 2
 	slli	a0, a0, 63
+	addi	a1, a1, 2
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	sltiu	a0, a0, 2

@@ -7,12 +7,12 @@ func0000000000000003:
 	ret
 
 func000000000000000b:
-	srli	a1, a0, 2
-	lui	a2, 12336
+	lui	a1, 12336
+	srli	a2, a0, 2
+	addi	a1, a1, 771
 	srli	a0, a0, 6
-	addi	a2, a2, 771
-	and	a1, a1, a2
-	and	a0, a0, a2
-	add	a0, a0, a1
+	and	a2, a2, a1
+	and	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

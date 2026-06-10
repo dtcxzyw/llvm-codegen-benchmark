@@ -94,9 +94,9 @@ func0000000000000025:
 func0000000000000037:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
-	lui	a0, 930062
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 930062
 	addi	a0, a0, -1681
 	slli	a0, a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -116,9 +116,9 @@ func0000000000000077:
 func000000000000006d:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
-	li	a0, -98
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, -98
 	zext.w	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsub.vx	v8, v8, a0

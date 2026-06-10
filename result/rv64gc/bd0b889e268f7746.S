@@ -31,11 +31,11 @@ func00000000000000a6:
 	ret
 
 func00000000000001b8:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
+	addi	a2, a2, -16
+	sltu	a1, a2, a0
 	lui	a2, 1048560
-	addi	a1, a1, -16
-	sltu	a1, a1, a0
 	neg	a1, a1
 	addi	a2, a2, 15
 	and	a1, a1, a2
@@ -43,11 +43,11 @@ func00000000000001b8:
 	ret
 
 func000000000000008a:
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	lui	a2, 12
-	addi	a1, a1, 575
+	addi	a1, a2, 575
 	slt	a1, a1, a0
+	lui	a2, 12
 	neg	a1, a1
 	addi	a2, a2, -576
 	and	a1, a1, a2

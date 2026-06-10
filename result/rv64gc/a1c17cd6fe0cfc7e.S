@@ -21,11 +21,11 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 7
 	lui	a2, 16
-	seqz	a1, a1
 	addi	a2, a2, -256
+	andi	a1, a1, 7
 	and	a0, a0, a2
+	seqz	a1, a1
 	sltiu	a0, a0, 1025
 	and	a0, a0, a1
 	ret

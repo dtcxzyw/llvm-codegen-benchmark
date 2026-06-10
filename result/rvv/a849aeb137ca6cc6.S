@@ -20,9 +20,9 @@ func00000000000000e8:
 	addi	a0, a0, 1387
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulhu.vx	v11, v10, a0
+	vsrl.vi	v11, v11, 12
 	lui	a0, 5
 	addi	a0, a0, -1409
-	vsrl.vi	v11, v11, 12
 	vnmsub.vx	v11, a0, v10
 	lui	a0, 2
 	addi	a0, a0, -1989

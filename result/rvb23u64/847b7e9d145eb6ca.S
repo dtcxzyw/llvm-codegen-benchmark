@@ -15,10 +15,10 @@ func00000000000001e1:
 func00000000000003a1:
 	zext.b	a2, a2
 	add	a0, a0, a1
-	li	a1, 31
 	add	a0, a0, a2
-	li	a2, 27
+	li	a1, 31
 	slli	a1, a1, 11
+	li	a2, 27
 	and	a0, a0, a1
 	slli	a2, a2, 11
 	xor	a0, a0, a2

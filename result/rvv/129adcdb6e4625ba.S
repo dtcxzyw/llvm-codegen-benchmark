@@ -4,9 +4,9 @@ func0000000000000004:
 	vfmv.v.f	v24, fa5
 	fli.d	fa5, 2.0
 	vfmadd.vf	v16, fa5, v24
+	vfmul.vv	v16, v16, v16
 	vfmacc.vf	v24, fa5, v8
-	vfmul.vv	v8, v16, v16
-	vfmadd.vv	v24, v24, v8
+	vfmadd.vv	v24, v24, v16
 	fli.d	fa5, 1.0
 	vmfgt.vf	v0, v24, fa5
 	ret
@@ -17,9 +17,9 @@ func0000000000000008:
 	vfmv.v.f	v24, fa5
 	fli.d	fa5, 2.0
 	vfmadd.vf	v16, fa5, v24
+	vfmul.vv	v16, v16, v16
 	vfmacc.vf	v24, fa5, v8
-	vfmul.vv	v8, v16, v16
-	vfmadd.vv	v24, v24, v8
+	vfmadd.vv	v24, v24, v16
 	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v24, fa5
 	ret
@@ -30,9 +30,9 @@ func0000000000000003:
 	vfmv.v.f	v24, fa5
 	fli.d	fa5, 2.0
 	vfmadd.vf	v16, fa5, v24
+	vfmul.vv	v16, v16, v16
 	vfmacc.vf	v24, fa5, v8
-	vfmul.vv	v8, v16, v16
-	vfmadd.vv	v24, v24, v8
+	vfmadd.vv	v24, v24, v16
 	fli.d	fa5, 1.0
 	vmfge.vf	v8, v24, fa5
 	vmnot.m	v0, v8
@@ -44,9 +44,9 @@ func0000000000000064:
 	vfmv.v.f	v24, fa5
 	fli.d	fa5, 2.0
 	vfmadd.vf	v16, fa5, v24
+	vfmul.vv	v16, v16, v16
 	vfmacc.vf	v24, fa5, v8
-	vfmul.vv	v8, v16, v16
-	vfmadd.vv	v24, v24, v8
+	vfmadd.vv	v24, v24, v16
 	fli.d	fa5, 1.0
 	vmfgt.vf	v0, v24, fa5
 	ret

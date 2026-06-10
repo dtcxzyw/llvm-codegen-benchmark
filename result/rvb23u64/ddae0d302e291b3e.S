@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000002:
-	not	a0, a0
 	li	a1, -2
+	not	a0, a0
 	rol	a0, a1, a0
 	ret
 

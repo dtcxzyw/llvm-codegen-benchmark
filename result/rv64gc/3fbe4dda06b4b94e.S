@@ -44,10 +44,10 @@ func0000000000000025:
 	ret
 
 func0000000000000041:
+	not	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a2
 	seqz	a0, a0
-	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -95,9 +95,9 @@ func0000000000000049:
 	ret
 
 func0000000000000004:
+	not	a1, a1
 	addi	a0, a0, -1
 	sltu	a0, a0, a2
-	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -108,9 +108,9 @@ func0000000000000001:
 	ret
 
 func0000000000000064:
+	not	a1, a1
 	addi	a0, a0, 8
 	sltu	a0, a0, a2
-	not	a1, a1
 	and	a0, a0, a1
 	ret
 

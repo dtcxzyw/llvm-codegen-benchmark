@@ -1,8 +1,8 @@
 func000000000000000f:
-	zext.b	a1, a1
 	lui	a2, 1048574
-	slli	a1, a1, 9
+	zext.b	a1, a1
 	addi	a2, a2, 511
+	slli	a1, a1, 9
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -16,8 +16,8 @@ func0000000000000007:
 	ret
 
 func000000000000000d:
-	slliw	a1, a1, 31
 	slli	a0, a0, 33
+	slliw	a1, a1, 31
 	srli	a0, a0, 33
 	or	a0, a0, a1
 	ret
@@ -29,8 +29,8 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	slliw	a1, a1, 31
 	slli	a0, a0, 33
+	slliw	a1, a1, 31
 	srli	a0, a0, 33
 	or	a0, a0, a1
 	ret
@@ -51,8 +51,8 @@ func000000000000000e:
 	ret
 
 func0000000000000004:
-	slliw	a1, a1, 24
 	lui	a2, 520192
+	slliw	a1, a1, 24
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000000:
 	slli	a3, a2, 5
 	sub	a2, a2, a1
-	sext.w	a0, a0
 	sub	a3, a3, a2
+	sext.w	a0, a0
 	slli	a1, a3, 5
 	sub	a3, a3, a0
 	sub	a0, a1, a3
@@ -25,9 +25,9 @@ func0000000000000050:
 	slli	a2, a2, 6
 	sub	a2, a2, a3
 	lui	a3, 244
-	addi	a3, a3, 576
 	add	a1, a1, a2
-	mul	a1, a1, a3
+	addi	a2, a3, 576
+	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1
 	ret

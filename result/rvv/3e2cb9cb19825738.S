@@ -1,7 +1,7 @@
 func0000000000000074:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
@@ -14,22 +14,22 @@ func000000000000005e:
 	ret
 
 func00000000000000a6:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vv	v24, v8, v16
 	fli.d	fa5, inf
-	vmflt.vf	v16, v8, fa5
-	vmfgt.vf	v17, v8, fa5
-	vmor.mm	v8, v17, v16
-	vmand.mm	v0, v8, v24
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v24, v8, fa5
+	vmfgt.vf	v25, v8, fa5
+	vmfle.vv	v26, v8, v16
+	vmor.mm	v8, v25, v24
+	vmand.mm	v0, v8, v26
 	ret
 
 func000000000000003d:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vv	v24, v16, v8
 	fmv.d.x	fa5, zero
-	vmflt.vf	v16, v8, fa5
-	vmnot.m	v8, v16
-	vmandn.mm	v0, v8, v24
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v24, v8, fa5
+	vmfle.vv	v25, v16, v8
+	vmnot.m	v8, v24
+	vmandn.mm	v0, v8, v25
 	ret
 
 .LCPI4_0:
@@ -44,33 +44,33 @@ func0000000000000044:
 	ret
 
 func0000000000000024:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
 
 func0000000000000087:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfne.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
 
 func0000000000000084:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
 
 func000000000000002c:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfge.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret

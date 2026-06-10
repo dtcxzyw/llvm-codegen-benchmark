@@ -1,16 +1,16 @@
 func00000000000000ca:
-	sext.w	a2, a0
-	li	a3, 1000
+	li	a2, 1000
+	sext.w	a3, a0
+	subw	a2, a2, a1
 	srliw	a0, a0, 31
-	subw	a3, a3, a1
-	slt	a1, a2, a3
+	slt	a1, a3, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000004cc:
-	sext.w	a0, a0
 	li	a2, 1
+	sext.w	a0, a0
 	subw	a2, a2, a1
 	xor	a2, a2, a0
 	snez	a1, a2

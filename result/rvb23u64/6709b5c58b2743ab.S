@@ -16,15 +16,15 @@ func0000000000000081:
 	ret
 
 func0000000000000028:
-	andi	a1, a1, 3
 	addi	a0, a0, -5
+	andi	a1, a1, 3
 	sltiu	a0, a0, -4
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000421:
-	xori	a1, a1, 2047
 	slli	a0, a0, 12
+	xori	a1, a1, 2047
 	srli	a0, a0, 12
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -39,8 +39,8 @@ func0000000000000481:
 	ret
 
 func000000000000018c:
-	andi	a1, a1, 3
 	addi	a0, a0, -1
+	andi	a1, a1, 3
 	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	ret

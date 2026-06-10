@@ -1,8 +1,8 @@
 func00000000000000d4:
 	sext.w	a1, a1
 	srli	a2, a2, 2
-	srli	a0, a0, 4
 	sext.w	a2, a2
+	srli	a0, a0, 4
 	slt	a1, a1, a2
 	sltiu	a0, a0, 625
 	and	a0, a0, a1

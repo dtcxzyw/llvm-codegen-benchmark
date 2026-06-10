@@ -1,7 +1,7 @@
 func0000000000000005:
+	addi	a1, a1, -90
 	andi	a0, a0, 1
 	slli	a2, a2, 8
-	addi	a1, a1, -90
 	czero.nez	a0, a1, a0
 	add	a0, a0, a2
 	addiw	a0, a0, 90
@@ -15,8 +15,8 @@ func0000000000000007:
 	ret
 
 func000000000000000e:
-	andi	a0, a0, 1
 	slli	a2, a2, 16
+	andi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	addw	a0, a0, a2
 	ret
@@ -30,17 +30,17 @@ func000000000000000c:
 	ret
 
 func000000000000000d:
-	andi	a0, a0, 1
 	addi	a1, a1, -1
+	andi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	sh1add	a0, a2, a0
 	addiw	a0, a0, 1
 	ret
 
 func000000000000000f:
+	addi	a1, a1, -19
 	andi	a0, a0, 1
 	slli	a2, a2, 5
-	addi	a1, a1, -19
 	czero.nez	a0, a1, a0
 	add	a0, a0, a2
 	addiw	a0, a0, 19

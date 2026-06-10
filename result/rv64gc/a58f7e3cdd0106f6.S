@@ -14,11 +14,11 @@ func000000000000088c:
 	ret
 
 func0000000000000888:
+	li	a3, 1
 	addi	a2, a2, -16
+	slli	a3, a3, 11
 	sltu	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 11
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	and	a0, a0, a1
 	ret
 
@@ -48,8 +48,8 @@ func0000000000000d8c:
 
 func000000000000098c:
 	addi	a2, a2, -4
-	addi	a0, a0, -12
 	xor	a1, a1, a2
+	addi	a0, a0, -12
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

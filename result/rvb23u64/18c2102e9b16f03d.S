@@ -1,9 +1,9 @@
 func0000000000000000:
 	add	a0, a0, a1
-	lui	a1, 877240
 	sh2add	a0, a0, a0
-	addi	a1, a1, 215
+	lui	a1, 877240
 	addi	a0, a0, 2
+	addi	a1, a1, 215
 	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
@@ -15,8 +15,8 @@ func000000000000002a:
 	li	a1, 153
 	mul	a0, a0, a1
 	lui	a1, 838861
-	addi	a1, a1, -819
 	addi	a0, a0, 2
+	addi	a1, a1, -819
 	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000026:
 	add	a0, a0, a1
 	li	a1, -137
 	mul	a0, a0, a1
-	lui	a1, 142180
 	addi	a0, a0, 136
+	lui	a1, 142180
 	zext.w	a0, a0
 	addi	a1, a1, -833
 	mul	a0, a0, a1

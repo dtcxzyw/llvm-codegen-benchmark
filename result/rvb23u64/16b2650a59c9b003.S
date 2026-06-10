@@ -21,15 +21,14 @@ func0000000000000008:
 	or	a0, a0, a2
 	ret
 
+.LCPI3_0:
+	.quad	-62162121600000000
 func000000000000002a:
-	lui	a3, 140
-	addi	a3, a3, -68
-	addw	a2, a2, a3
-	lui	a3, 935504
-	addi	a3, a3, -985
-	slli	a3, a3, 14
-	addi	a3, a3, -927
-	slli	a3, a3, 13
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
+	lui	a4, 140
+	addi	a4, a4, -68
+	addw	a2, a2, a4
 	slt	a1, a3, a1
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

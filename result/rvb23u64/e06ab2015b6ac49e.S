@@ -20,10 +20,10 @@ func000000000000002a:
 	ret
 
 func0000000000000022:
+	lui	a3, 4112
 	add	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 4112
-	add	a0, a0, a1
+	add	a0, a0, a3
 	sraiw	a0, a0, 17
 	ret
 

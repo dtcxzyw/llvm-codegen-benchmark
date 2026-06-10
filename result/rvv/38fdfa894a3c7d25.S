@@ -65,10 +65,10 @@ func0000000000000007:
 
 func000000000000000d:
 	lui	a0, 1048568
+	addi	a1, a0, 254
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	addi	a0, a0, 254
-	vand.vx	v10, v10, a0
+	vand.vx	v10, v10, a1
 	vor.vv	v10, v10, v12
 	vsll.vi	v8, v8, 8
 	vor.vv	v8, v10, v8

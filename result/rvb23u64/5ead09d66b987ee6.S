@@ -1,7 +1,7 @@
 func0000000000000226:
-	slli	a3, a0, 4
 	sub	a1, a1, a2
-	sub	a1, a1, a3
+	slli	a2, a0, 4
+	sub	a1, a1, a2
 	srai	a1, a1, 4
 	slt	a0, a1, a0
 	ret

@@ -18,11 +18,11 @@ func0000000000000004:
 
 func0000000000000020:
 	lui	a2, 947030
+	lui	a3, 249451
 	addi	a2, a2, 1353
+	addi	a3, a3, -856
 	xor	a1, a1, a2
-	lui	a2, 249451
-	addi	a2, a2, -856
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

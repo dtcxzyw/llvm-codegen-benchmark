@@ -1,8 +1,8 @@
 func0000000000000003:
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vsll.vi	v12, v12, 10
 	li	a0, 3
 	slli	a0, a0, 10
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vsll.vi	v12, v12, 10
 	vand.vx	v12, v12, a0
 	vand.vi	v10, v10, 15
 	vor.vv	v10, v12, v10

@@ -21,8 +21,8 @@ func0000000000000016:
 func0000000000000018:
 	slli	a2, a2, 20
 	or	a0, a0, a1
-	lui	a1, 16
 	or	a0, a0, a2
+	lui	a1, 16
 	srli	a0, a0, 8
 	addi	a1, a1, -256
 	and	a0, a0, a1

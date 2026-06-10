@@ -14,8 +14,8 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	andi	a0, a0, 1
 	slti	a1, a1, 1
+	andi	a0, a0, 1
 	neg	a1, a1
 	ori	a1, a1, 1
 	addi	a0, a0, -1
@@ -49,8 +49,8 @@ func0000000000000018:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	slti	a1, a1, 1
+	andi	a0, a0, 1
 	neg	a1, a1
 	ori	a1, a1, 1
 	addi	a0, a0, -1
@@ -58,8 +58,8 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
-	andi	a2, a0, 1
 	li	a3, 40
+	andi	a2, a0, 1
 	lui	a0, 1
 	bltu	a1, a3, .LBB5_2
 	addi	a0, a0, 384

@@ -8,8 +8,8 @@ func000000000000000f:
 
 func000000000000000a:
 	lui	a3, 4088
-	andi	a1, a1, 16
 	addi	a3, a3, -1809
+	andi	a1, a1, 16
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

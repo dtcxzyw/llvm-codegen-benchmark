@@ -1,8 +1,8 @@
 func0000000000000010:
 	andi	a2, a2, 1
+	lui	a3, 13
 	sub	a1, a1, a2
-	lui	a2, 13
-	addi	a2, a2, -657
+	addi	a2, a3, -657
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

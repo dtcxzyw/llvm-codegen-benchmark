@@ -72,8 +72,8 @@ func0000000000000028:
 
 func0000000000000021:
 	li	a3, -3
-	binvi	a1, a1, 0
 	srli	a3, a3, 1
+	binvi	a1, a1, 0
 	xnor	a2, a2, a3
 	binvi	a1, a1, 63
 	or	a1, a1, a2

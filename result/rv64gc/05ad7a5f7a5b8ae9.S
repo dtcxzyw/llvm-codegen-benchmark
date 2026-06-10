@@ -6,9 +6,9 @@ func0000000000000008:
 	ret
 
 func000000000000002a:
-	addi	a1, a0, -54
-	slti	a0, a0, 55
-	addi	a0, a0, -1
+	slti	a1, a0, 55
+	addi	a0, a0, -54
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 
@@ -22,24 +22,24 @@ func000000000000000a:
 
 func0000000000000006:
 	li	a1, -1
-	srli	a2, a1, 1
-	slli	a1, a1, 63
-	sub	a2, a0, a2
-	addi	a1, a1, 5
-	slt	a0, a0, a1
-	neg	a0, a0
-	and	a0, a0, a2
+	slli	a2, a1, 63
+	addi	a2, a2, 5
+	srli	a1, a1, 1
+	slt	a2, a0, a2
+	sub	a0, a0, a1
+	neg	a1, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000038:
-	lui	a1, 16
-	addi	a1, a1, -16
-	bgeu	a1, a0, .LBB4_2
-	lui	a1, 1048560
-	addi	a1, a1, 15
-	add	a1, a1, a0
+	mv	a1, a0
+	lui	a0, 16
+	addi	a0, a0, -16
+	bgeu	a0, a1, .LBB4_2
+	lui	a0, 1048560
+	addi	a0, a0, 15
+	add	a0, a0, a1
 .LBB4_2:
-	mv	a0, a1
 	ret
 
 func000000000000004c:
@@ -67,12 +67,12 @@ func0000000000000064:
 	ret
 
 func0000000000000046:
-	addi	a1, a0, 1
-	li	a2, -1
-	slli	a2, a2, 63
-	addi	a2, a2, 2
-	slt	a0, a0, a2
-	neg	a0, a0
+	li	a1, -1
+	slli	a1, a1, 63
+	addi	a1, a1, 2
+	slt	a1, a0, a1
+	addi	a0, a0, 1
+	neg	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -97,18 +97,18 @@ func0000000000000078:
 	ret
 
 func0000000000000066:
-	addi	a1, a0, 1
-	lui	a2, 512
-	addi	a2, a2, -1
-	slt	a0, a0, a2
-	neg	a0, a0
+	lui	a1, 512
+	addi	a1, a1, -1
+	slt	a1, a0, a1
+	addi	a0, a0, 1
+	neg	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000074:
-	addi	a1, a0, 2
-	sltiu	a0, a0, 3
-	neg	a0, a0
+	sltiu	a1, a0, 3
+	addi	a0, a0, 2
+	neg	a1, a1
 	and	a0, a0, a1
 	ret
 

@@ -7,11 +7,11 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	sext.w	a2, a0
-	slli	a0, a1, 38
-	srli	a0, a0, 38
-	bltu	a0, a2, .LBB1_2
-	mv	a0, a2
+	slli	a2, a1, 38
+	sext.w	a1, a0
+	srli	a0, a2, 38
+	bltu	a0, a1, .LBB1_2
+	mv	a0, a1
 .LBB1_2:
 	ret
 

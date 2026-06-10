@@ -17,8 +17,8 @@ func0000000000000003:
 
 func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, -16
 	vmv.v.i	v10, 4
+	vadd.vi	v8, v8, -16
 	vssubu.vv	v8, v10, v8
 	ret
 

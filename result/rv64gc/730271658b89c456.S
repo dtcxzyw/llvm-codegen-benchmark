@@ -1,28 +1,28 @@
 func0000000000000068:
-	slli	a1, a1, 2
 	srli	a0, a0, 60
-	addi	a1, a1, 8
+	slli	a1, a1, 2
 	seqz	a0, a0
+	addi	a1, a1, 8
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000008:
-	slli	a1, a1, 2
 	li	a2, -1
-	addi	a1, a1, 4
 	slli	a2, a2, 62
 	addi	a2, a2, -4
+	slli	a1, a1, 2
 	sltu	a0, a2, a0
+	addi	a1, a1, 4
 	neg	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000168:
-	slli	a1, a1, 2
 	srli	a0, a0, 58
-	addi	a1, a1, 16
+	slli	a1, a1, 2
 	seqz	a0, a0
+	addi	a1, a1, 16
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret

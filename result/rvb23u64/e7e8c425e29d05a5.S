@@ -9,14 +9,14 @@ func000000000000000e:
 	ret
 
 func0000000000000000:
-	xori	a0, a0, 63
 	li	a1, 2
+	xori	a0, a0, 63
 	sll	a0, a1, a0
 	ret
 
 func000000000000000c:
-	xori	a0, a0, 63
 	li	a1, 2
+	xori	a0, a0, 63
 	sll	a0, a1, a0
 	ret
 

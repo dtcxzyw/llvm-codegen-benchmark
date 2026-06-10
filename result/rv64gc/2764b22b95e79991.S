@@ -8,10 +8,10 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	sext.w	a3, a0
-	lui	a0, 262144
-	addi	a0, a0, -1
-	beqz	a3, .LBB1_2
+	lui	a3, 262144
+	sext.w	a4, a0
+	addi	a0, a3, -1
+	beqz	a4, .LBB1_2
 	addi	a0, a0, 129
 	or	a0, a0, a2
 	ret

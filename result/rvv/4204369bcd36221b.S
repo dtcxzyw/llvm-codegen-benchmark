@@ -4,8 +4,8 @@ func0000000000000038:
 	vand.vx	v14, v12, a0
 	li	a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v12, v14
 	vmul.vx	v10, v10, a0
+	vzext.vf8	v12, v14
 	vsll.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
 	ret
@@ -16,8 +16,8 @@ func000000000000003e:
 	vand.vx	v14, v12, a0
 	li	a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v12, v14
 	vmul.vx	v10, v10, a0
+	vzext.vf8	v12, v14
 	vsll.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
 	ret
@@ -28,8 +28,8 @@ func0000000000000008:
 	vand.vx	v14, v12, a0
 	li	a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v12, v14
 	vmul.vx	v10, v10, a0
+	vzext.vf8	v12, v14
 	vsll.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
 	ret

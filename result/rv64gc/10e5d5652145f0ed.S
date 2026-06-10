@@ -15,18 +15,18 @@ func00000000000000a6:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	zext.b	a1, a1
 	addi	a1, a1, -92
+	sext.w	a0, a0
 	seqz	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func00000000000000ac:
-	sext.w	a0, a0
 	zext.b	a1, a1
 	addi	a1, a1, -63
+	sext.w	a0, a0
 	seqz	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -66,8 +66,8 @@ func00000000000000aa:
 	ret
 
 func000000000000060c:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	snez	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

@@ -1,11 +1,11 @@
 func0000000000000058:
 	lui	a1, 1
-	andi	a2, a0, 577
 	addi	a1, a1, -2032
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	seqz	a0, a0
-	snez	a1, a2
+	and	a2, a0, a1
+	xor	a1, a1, a2
+	andi	a0, a0, 577
+	seqz	a1, a1
+	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
@@ -54,16 +54,16 @@ func0000000000000070:
 	ret
 
 func0000000000000618:
-	zext.b	a1, a0
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a0, a0, a2
+	lui	a1, 16
+	addi	a1, a1, -256
 	lui	a2, 3
-	sltiu	a1, a1, 21
-	xori	a1, a1, 1
+	and	a1, a1, a0
+	zext.b	a0, a0
 	addi	a2, a2, 768
-	xor	a0, a0, a2
-	snez	a0, a0
+	sltiu	a0, a0, 21
+	xor	a1, a1, a2
+	xori	a0, a0, 1
+	snez	a1, a1
 	or	a0, a0, a1
 	ret
 

@@ -20,8 +20,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000075:
-	andi	a1, a1, 1
 	slliw	a2, a2, 6
+	andi	a1, a1, 1
 	addi	a2, a2, -64
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 64
@@ -30,8 +30,8 @@ func0000000000000075:
 	ret
 
 func0000000000000074:
-	andi	a1, a1, 1
 	slliw	a2, a2, 6
+	andi	a1, a1, 1
 	addi	a2, a2, -64
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 64
@@ -39,8 +39,8 @@ func0000000000000074:
 	ret
 
 func00000000000000f4:
-	andi	a1, a1, 1
 	slliw	a2, a2, 1
+	andi	a1, a1, 1
 	addi	a2, a2, -4
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 4

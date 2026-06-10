@@ -31,9 +31,9 @@ func000000000000060a:
 func000000000000000a:
 	slli	a3, a2, 1
 	slli	a2, a2, 3
+	add	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 1
-	add	a2, a2, a3
 	addw	a0, a0, a2
 	addi	a1, a1, -2001
 	slt	a0, a1, a0
@@ -67,10 +67,10 @@ func00000000000002aa:
 
 func0000000000000004:
 	lui	a3, 2
-	add	a0, a0, a1
-	lui	a1, 20
 	addi	a3, a3, 1808
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 20
 	addw	a0, a0, a2
 	addi	a1, a1, -1717
 	sltu	a0, a0, a1
@@ -106,9 +106,9 @@ func0000000000000226:
 func000000000000020a:
 	slli	a3, a2, 2
 	slli	a2, a2, 6
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 21
-	sub	a2, a2, a3
 	addw	a0, a0, a2
 	addi	a1, a1, 383
 	slt	a0, a1, a0
@@ -135,9 +135,9 @@ func00000000000002ac:
 
 func00000000000007f4:
 	li	a3, 100
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 2
-	mul	a2, a2, a3
 	addw	a0, a0, a2
 	addi	a1, a1, 1809
 	sltu	a0, a0, a1
@@ -180,19 +180,19 @@ func00000000000006a4:
 
 func0000000000000224:
 	li	a3, -192
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 2
-	mul	a2, a2, a3
 	addw	a0, a0, a2
 	addi	a1, a1, -323
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000221:
-	sext.w	a0, a0
 	slli	a3, a2, 2
 	slli	a2, a2, 6
 	sub	a2, a2, a3
+	sext.w	a0, a0
 	subw	a2, a2, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

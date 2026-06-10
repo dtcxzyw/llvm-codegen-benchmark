@@ -11,9 +11,9 @@ func000000000000001e:
 
 func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v12, 7
 	vsrl.vi	v10, v10, 3
 	vand.vi	v10, v10, 7
-	vmv.v.i	v12, 7
 	vmacc.vv	v12, v8, v10
 	vsrl.vi	v8, v12, 3
 	ret

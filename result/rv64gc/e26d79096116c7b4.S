@@ -24,8 +24,8 @@ func0000000000000004:
 	ret
 
 func0000000000000013:
-	zext.b	a1, a1
 	li	a2, 3
+	zext.b	a1, a1
 	bgeu	a1, a2, .LBB3_2
 	li	a0, 7
 	ret

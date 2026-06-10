@@ -1,9 +1,9 @@
 func0000000000000061:
+	lui	a0, 4080
+	addi	a0, a0, 511
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v14, v12
 	vor.vv	v8, v8, v10
-	lui	a0, 4080
-	addi	a0, a0, 511
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v14
 	vmseq.vi	v0, v8, 0

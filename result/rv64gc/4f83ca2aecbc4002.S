@@ -1,8 +1,8 @@
 func0000000000000030:
 	andi	a2, a2, 3
+	slli	a2, a2, 3
 	sub	a0, a0, a1
 	lui	a1, 1048572
-	slli	a2, a2, 3
 	sub	a0, a0, a2
 	addi	a1, a1, -240
 	add	a0, a0, a1

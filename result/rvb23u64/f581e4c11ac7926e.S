@@ -34,9 +34,9 @@ func0000000000000070:
 	ret
 
 func000000000000002b:
-	neg	a2, a2
 	sh3add	a0, a1, a0
-	sh3add.uw	a0, a2, a0
+	neg	a1, a2
+	sh3add.uw	a0, a1, a0
 	ret
 
 func0000000000000000:
@@ -53,9 +53,9 @@ func000000000000003f:
 	ret
 
 func000000000000003b:
-	negw	a2, a2
 	sh1add	a0, a1, a0
-	sh1add	a0, a2, a0
+	negw	a1, a2
+	sh1add	a0, a1, a0
 	ret
 
 func0000000000000030:

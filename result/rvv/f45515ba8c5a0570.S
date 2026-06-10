@@ -1,7 +1,7 @@
 func000000000000032a:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 1
@@ -11,22 +11,22 @@ func000000000000032a:
 	ret
 
 func0000000000000334:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 63
-	vsra.vi	v8, v8, 4
 	vsrl.vx	v12, v10, a0
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 1
+	vsra.vi	v8, v8, 4
 	vadd.vv	v8, v10, v8
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
 
 func000000000000012a:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 1
@@ -36,9 +36,9 @@ func000000000000012a:
 	ret
 
 func0000000000000134:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 1

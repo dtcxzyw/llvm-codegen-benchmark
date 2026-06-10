@@ -17,11 +17,11 @@ func000000000000002c:
 	ret
 
 func0000000000000186:
-	slli	a1, a0, 56
-	andi	a0, a0, 240
-	addi	a0, a0, -224
-	snez	a0, a0
-	srli	a1, a1, 63
+	andi	a1, a0, 240
+	slli	a0, a0, 56
+	addi	a1, a1, -224
+	snez	a1, a1
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -60,8 +60,8 @@ func000000000000002a:
 func000000000000018a:
 	slli	a1, a0, 56
 	andi	a0, a0, 120
-	snez	a0, a0
 	srli	a1, a1, 63
+	snez	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret

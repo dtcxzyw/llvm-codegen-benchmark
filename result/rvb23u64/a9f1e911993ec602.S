@@ -17,12 +17,12 @@ func0000000000000004:
 	ret
 
 func0000000000000064:
-	slliw	a1, a0, 16
+	lui	a1, 1048560
+	slliw	a2, a0, 16
 	srliw	a0, a0, 15
-	lui	a2, 1048560
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
+	czero.eqz	a1, a1, a0
+	czero.nez	a0, a2, a0
+	or	a0, a0, a1
 	ret
 
 func0000000000000024:
@@ -47,12 +47,12 @@ func000000000000000a:
 	ret
 
 func0000000000000026:
-	sext.w	a1, a0
-	slliw	a0, a0, 1
-	lui	a2, 262144
-	addi	a2, a2, -1
-	slt	a1, a1, a2
+	lui	a1, 262144
+	sext.w	a2, a0
+	addi	a1, a1, -1
+	slt	a1, a2, a1
 	lui	a2, 524288
+	slliw	a0, a0, 1
 	addiw	a2, a2, -1
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
@@ -60,12 +60,12 @@ func0000000000000026:
 	ret
 
 func0000000000000066:
-	sext.w	a1, a0
-	slliw	a0, a0, 1
-	lui	a2, 262144
-	addi	a2, a2, -1
-	slt	a1, a1, a2
+	lui	a1, 262144
+	sext.w	a2, a0
+	addi	a1, a1, -1
+	slt	a1, a2, a1
 	lui	a2, 524288
+	slliw	a0, a0, 1
 	addiw	a2, a2, -1
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

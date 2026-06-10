@@ -1,6 +1,6 @@
 func000000000000002c:
-	srli	a2, a2, 2
 	slli	a1, a1, 32
+	srli	a2, a2, 2
 	srli	a1, a1, 32
 	sub	a1, a1, a2
 	slli	a1, a1, 2
@@ -8,8 +8,8 @@ func000000000000002c:
 	ret
 
 func000000000000002f:
-	srli	a2, a2, 2
 	slli	a1, a1, 32
+	srli	a2, a2, 2
 	srli	a1, a1, 32
 	sub	a1, a1, a2
 	slli	a1, a1, 2
@@ -17,8 +17,8 @@ func000000000000002f:
 	ret
 
 func0000000000000026:
-	srli	a2, a2, 2
 	slli	a1, a1, 32
+	srli	a2, a2, 2
 	srli	a1, a1, 32
 	sub	a1, a1, a2
 	slli	a1, a1, 2

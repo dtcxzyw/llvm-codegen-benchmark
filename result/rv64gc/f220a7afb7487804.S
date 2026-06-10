@@ -18,8 +18,8 @@ func0000000000000055:
 	ret
 
 func00000000000000c0:
-	slli	a0, a0, 2
 	lui	a1, 12
+	slli	a0, a0, 2
 	addi	a1, a1, 388
 	addw	a0, a0, a1
 	ret

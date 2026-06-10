@@ -32,9 +32,9 @@ func000000000000010c:
 	ret
 
 func0000000000000104:
+	lui	a0, 4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v12, 2
-	lui	a0, 4
 	vmsltu.vv	v14, v12, v10
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14

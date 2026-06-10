@@ -31,8 +31,8 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	neg	a0, a0
 	li	a1, -256
+	neg	a0, a0
 	sllw	a0, a1, a0
 	lui	a1, 4080
 	and	a0, a0, a1

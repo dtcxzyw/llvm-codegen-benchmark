@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	max	a1, a1, a2
 	lui	a2, 524288
@@ -12,9 +12,9 @@ func0000000000000001:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a0, a0
 	max	a1, a1, a2
 	sltiu	a0, a0, 15
 	addi	a1, a1, -16

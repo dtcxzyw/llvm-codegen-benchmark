@@ -51,8 +51,8 @@ func0000000000000005:
 	ret
 
 func0000000000000023:
-	srli	a1, a1, 7
 	li	a2, 424
+	srli	a1, a1, 7
 	bgeu	a2, a1, .LBB5_2
 	lui	a0, 25
 	addi	a0, a0, 1600

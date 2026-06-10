@@ -1,6 +1,6 @@
 func0000000000000005:
-	sext.w	a0, a0
 	li	a1, -128
+	sext.w	a0, a0
 	max	a0, a0, a1
 	sh1add	a0, a0, a0
 	sh3add	a0, a0, a0
@@ -8,8 +8,8 @@ func0000000000000005:
 	ret
 
 func000000000000000f:
-	sext.w	a0, a0
 	li	a1, 1
+	sext.w	a0, a0
 	max	a0, a0, a1
 	addi	a0, a0, 4
 	slli	a1, a0, 5

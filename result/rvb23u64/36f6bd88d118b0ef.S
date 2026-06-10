@@ -7,9 +7,9 @@ func0000000000000020:
 
 func000000000000002e:
 	sraiw	a1, a1, 1
+	lui	a2, 338
 	add	a0, a0, a1
-	lui	a1, 338
-	addi	a1, a1, -160
+	addi	a1, a2, -160
 	add	a0, a0, a1
 	ret
 

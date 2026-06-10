@@ -1,6 +1,6 @@
 func0000000000000026:
-	srai	a1, a1, 63
 	lui	a2, 488281
+	srai	a1, a1, 63
 	addi	a2, a2, 1024
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -35,10 +35,10 @@ func000000000000002a:
 func0000000000000028:
 	lui	a2, 16
 	addi	a2, a2, -16
+	lui	a3, 983055
 	sltu	a1, a2, a1
-	lui	a2, 983055
-	slli	a2, a2, 4
-	czero.eqz	a1, a2, a1
+	slli	a3, a3, 4
+	czero.eqz	a1, a3, a1
 	add	a0, a0, a1
 	ret
 

@@ -6,8 +6,8 @@ func000000000000003f:
 	ret
 
 func000000000000002f:
-	slli	a2, a2, 10
 	zext.b	a1, a1
+	slli	a2, a2, 10
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -36,8 +36,8 @@ func000000000000003d:
 	ret
 
 func000000000000003b:
-	slli	a2, a2, 11
 	zext.b	a1, a1
+	slli	a2, a2, 11
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -51,15 +51,15 @@ func000000000000001f:
 	ret
 
 func000000000000001b:
-	slli	a2, a2, 8
 	zext.b	a1, a1
+	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000000a:
-	slli	a2, a2, 8
 	zext.b	a1, a1
+	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

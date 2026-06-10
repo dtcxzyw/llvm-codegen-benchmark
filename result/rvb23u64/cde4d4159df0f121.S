@@ -9,8 +9,8 @@ func0000000000000029:
 	ret
 
 func0000000000000c21:
-	zext.b	a1, a1
 	addi	a2, a2, 1
+	zext.b	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	seqz	a1, a1
@@ -18,8 +18,8 @@ func0000000000000c21:
 	ret
 
 func0000000000000c85:
-	zext.b	a1, a1
 	addi	a2, a2, 6
+	zext.b	a1, a1
 	sltu	a0, a0, a2
 	xori	a0, a0, 1
 	sltiu	a1, a1, 254

@@ -33,12 +33,11 @@ func0000000000000008:
 	vadd.vv	v8, v8, v9
 	ret
 
+.LCPI3_0:
+	.quad	196742565691928
 func000000000000006d:
-	lui	a0, 732923
-	slli.uw	a0, a0, 1
-	addi	a0, a0, 1403
-	slli	a0, a0, 15
-	addi	a0, a0, 536
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	li	a0, 48
@@ -79,12 +78,11 @@ func000000000000006f:
 	vadd.vv	v8, v8, v9
 	ret
 
+.LCPI7_0:
+	.quad	8922571613522624512
 func000000000000000f:
-	lui	a0, 15850
-	addi	a0, a0, -1347
-	slli	a0, a0, 13
-	addi	a0, a0, -1069
-	slli	a0, a0, 24
+	lui	a0, %hi(.LCPI7_0)
+	ld	a0, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	li	a0, 47

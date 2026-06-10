@@ -1,7 +1,7 @@
 func000000000000002c:
 	andi	a2, a2, 31
-	xor	a0, a0, a1
 	addi	a2, a2, -11
+	xor	a0, a0, a1
 	snez	a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

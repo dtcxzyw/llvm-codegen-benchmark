@@ -12,19 +12,20 @@ func0000000000000101:
 	ret
 
 func0000000000000298:
-	li	a2, 64
-	bltu	a0, a2, .LBB1_3
-	lui	a2, 65536
-	addi	a2, a2, 63
-	bltu	a2, a0, .LBB1_4
-.LBB1_2:
+	mv	a2, a0
+	li	a3, 64
 	mv	a0, a1
+	bltu	a2, a3, .LBB1_3
+	lui	a1, 65536
+	addi	a1, a1, 63
+	bltu	a1, a2, .LBB1_4
+.LBB1_2:
 	ret
 .LBB1_3:
-	li	a1, 1
-	lui	a2, 65536
-	addi	a2, a2, 63
-	bgeu	a2, a0, .LBB1_2
+	li	a0, 1
+	lui	a1, 65536
+	addi	a1, a1, 63
+	bgeu	a1, a2, .LBB1_2
 .LBB1_4:
 	lui	a0, 1024
 	ret

@@ -9,10 +9,10 @@ func0000000000000010:
 	ret
 
 func000000000000003a:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v12, v12, 3
 	bseti	a0, zero, 33
 	addi	a0, a0, -4
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v12, v12, 3
 	vand.vx	v12, v12, a0
 	vsub.vv	v8, v10, v8
 	vsub.vv	v8, v8, v12

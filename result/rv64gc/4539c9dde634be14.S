@@ -1,6 +1,6 @@
 func0000000000000126:
-	addiw	a1, a1, -2
 	lui	a2, 174763
+	addiw	a1, a1, -2
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	srli	a2, a1, 63
@@ -11,8 +11,8 @@ func0000000000000126:
 	ret
 
 func0000000000000066:
-	addiw	a1, a1, 12
 	lui	a2, 349525
+	addiw	a1, a1, 12
 	addi	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a2, a1, 63
@@ -23,8 +23,8 @@ func0000000000000066:
 	ret
 
 func0000000000000061:
-	addiw	a1, a1, -16
 	lui	a2, 174763
+	addiw	a1, a1, -16
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	srli	a2, a1, 63

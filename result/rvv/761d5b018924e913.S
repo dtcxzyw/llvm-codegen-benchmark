@@ -9,9 +9,9 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
+	fli.s	fa5, 0.5
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v8, v8, v12
-	fli.s	fa5, 0.5
 	fneg.s	fa5, fa5
 	vfadd.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero

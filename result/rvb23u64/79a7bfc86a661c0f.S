@@ -10,9 +10,9 @@ func00000000000001c1:
 
 func00000000000001e1:
 	sh1add	a1, a1, a1
+	addi	a0, a0, -2
 	sh3add	a1, a1, a2
 	addi	a1, a1, 440
-	addi	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	ret
 

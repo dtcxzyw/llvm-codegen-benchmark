@@ -16,19 +16,19 @@ func0000000000000004:
 	.quad	19342813113834067
 func0000000000000008:
 	lui	a1, %hi(.LCPI1_0)
-	lui	a2, 8801
 	ld	a1, %lo(.LCPI1_0)(a1)
+	srli	a2, a0, 9
+	mulhu	a1, a2, a1
+	lui	a2, 8801
 	slli	a2, a2, 8
 	addi	a2, a2, -1751
 	slli	a2, a2, 16
-	sltu	a2, a2, a0
-	srli	a0, a0, 9
-	mulhu	a0, a0, a1
-	lui	a1, 148
-	addi	a1, a1, -1408
-	srli	a0, a0, 11
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
+	sltu	a0, a2, a0
+	lui	a2, 148
+	srli	a1, a1, 11
+	addi	a2, a2, -1408
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 

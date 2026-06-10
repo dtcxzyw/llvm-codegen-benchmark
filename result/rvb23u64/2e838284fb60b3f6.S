@@ -1,6 +1,6 @@
 func00000000000001ea:
-	sext.h	a0, a0
 	sext.h	a1, a1
+	sext.h	a0, a0
 	slt	a0, a1, a0
 	sh2add	a0, a0, a2
 	addi	a0, a0, 2

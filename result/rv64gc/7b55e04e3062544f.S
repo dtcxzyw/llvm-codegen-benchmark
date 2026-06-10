@@ -17,15 +17,15 @@ func000000000000007f:
 	ret
 
 func000000000000001c:
+	lui	a3, 1
+	addi	a3, a3, 1992
+	mul	a2, a2, a3
 	zext.b	a0, a0
 	slli	a3, a0, 4
 	slli	a0, a0, 7
 	sub	a0, a0, a3
-	lui	a3, 1
-	addi	a3, a3, 1992
-	mul	a2, a2, a3
-	add	a1, a1, a2
 	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 2047
 	addi	a0, a0, 449
 	ret
@@ -39,12 +39,12 @@ func000000000000004f:
 	ret
 
 func000000000000006f:
-	zext.b	a0, a0
 	li	a3, 1596
 	mul	a2, a2, a3
-	add	a1, a1, a2
+	zext.b	a0, a0
 	slli	a0, a0, 1
 	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 338
 	ret
 

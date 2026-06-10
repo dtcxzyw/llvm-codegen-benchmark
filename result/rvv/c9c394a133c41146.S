@@ -2,8 +2,8 @@ func000000000000000f:
 	li	a0, 254
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	li	a0, 255
 	vadd.vv	v8, v8, v12
+	li	a0, 255
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	ret
@@ -28,10 +28,10 @@ func0000000000000005:
 
 func000000000000000c:
 	lui	a0, 786432
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v8, v8, -8
 	srli	a0, a0, 27
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
+	vand.vi	v8, v8, -8
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret

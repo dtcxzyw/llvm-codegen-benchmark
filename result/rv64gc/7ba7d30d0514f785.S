@@ -24,19 +24,19 @@ func0000000000000006:
 	ret
 
 func0000000000000086:
+	lui	a3, 1048332
+	addi	a3, a3, -576
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	lui	a2, 1048332
-	addi	a2, a2, -576
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 31
 	ret
 
 func00000000000002a6:
+	lui	a3, 1048332
+	addi	a3, a3, -576
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	lui	a2, 1048332
-	addi	a2, a2, -576
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 31
 	ret

@@ -4,14 +4,14 @@ func0000000000000037:
 	ret
 
 func0000000000000035:
-	addi	a0, a0, -1
 	li	a1, -1
+	addi	a0, a0, -1
 	sllw	a0, a1, a0
 	ret
 
 func0000000000000001:
-	addi	a0, a0, 1
 	li	a1, -1
+	addi	a0, a0, 1
 	sllw	a0, a1, a0
 	ret
 
@@ -31,14 +31,14 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	addi	a0, a0, -5
 	li	a1, 4
+	addi	a0, a0, -5
 	sllw	a0, a1, a0
 	ret
 
 func0000000000000007:
-	addi	a0, a0, -5
 	li	a1, 2
+	addi	a0, a0, -5
 	sllw	a0, a1, a0
 	ret
 
@@ -48,8 +48,8 @@ func0000000000000022:
 	ret
 
 func0000000000000021:
-	addi	a0, a0, 1
 	li	a1, -1
+	addi	a0, a0, 1
 	sllw	a0, a1, a0
 	ret
 
@@ -74,8 +74,8 @@ func0000000000000016:
 	ret
 
 func0000000000000005:
-	addi	a0, a0, -31
 	li	a1, -1
+	addi	a0, a0, -31
 	sllw	a0, a1, a0
 	ret
 

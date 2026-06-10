@@ -1,7 +1,7 @@
 func0000000000000004:
 	add	a1, a1, a2
-	li	a2, -1
 	sltiu	a1, a1, 2
+	li	a2, -1
 	srl	a0, a2, a0
 	addi	a1, a1, -1
 	and	a0, a0, a1

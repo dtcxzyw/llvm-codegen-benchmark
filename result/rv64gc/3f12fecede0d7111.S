@@ -2,9 +2,9 @@ func0000000000000003:
 	andi	a1, a1, -64
 	slli	a0, a0, 33
 	srli	a0, a0, 31
+	lui	a2, 225
 	add	a0, a0, a1
-	lui	a1, 225
-	addi	a1, a1, 1280
+	addi	a1, a2, 1280
 	add	a0, a0, a1
 	ret
 
@@ -12,9 +12,9 @@ func000000000000000f:
 	andi	a1, a1, -64
 	slli	a0, a0, 33
 	srli	a0, a0, 31
+	lui	a2, 341
 	add	a0, a0, a1
-	lui	a1, 341
-	addi	a1, a1, 640
+	addi	a1, a2, 640
 	add	a0, a0, a1
 	ret
 
@@ -26,8 +26,8 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, -16
 	slli	a0, a0, 35
+	andi	a1, a1, -16
 	srli	a0, a0, 35
 	add	a0, a0, a1
 	addi	a0, a0, -23

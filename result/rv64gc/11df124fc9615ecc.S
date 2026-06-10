@@ -11,15 +11,15 @@ func0000000000000104:
 	ret
 
 func0000000000000008:
-	sext.w	a1, a1
 	not	a0, a0
+	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000108:
-	sext.w	a1, a1
 	not	a0, a0
+	sext.w	a1, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret

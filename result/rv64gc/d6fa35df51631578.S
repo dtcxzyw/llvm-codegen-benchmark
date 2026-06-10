@@ -17,22 +17,22 @@ func00000000000002ff:
 	ret
 
 func0000000000000343:
+	li	a3, -24
+	mul	a0, a0, a3
 	slli	a3, a2, 3
 	slli	a2, a2, 4
 	add	a2, a2, a3
-	li	a3, -24
 	add	a1, a1, a2
-	mul	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, -8
 	ret
 
 func00000000000000c3:
 	slli	a2, a2, 7
-	add	a1, a1, a2
-	slli	a2, a0, 1
+	slli	a3, a0, 1
 	slli	a0, a0, 4
-	add	a0, a0, a2
+	add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 7
 	ret

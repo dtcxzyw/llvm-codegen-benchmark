@@ -40,8 +40,8 @@ func000000000000003d:
 	ret
 
 func0000000000000015:
-	andi	a2, a2, 1020
 	lui	a3, 1048575
+	andi	a2, a2, 1020
 	addi	a3, a3, -588
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -49,8 +49,8 @@ func0000000000000015:
 	ret
 
 func000000000000001d:
-	zext.b	a2, a2
 	lui	a3, 1048552
+	zext.b	a2, a2
 	addi	a3, a3, 1840
 	mul	a2, a2, a3
 	add	a0, a0, a1

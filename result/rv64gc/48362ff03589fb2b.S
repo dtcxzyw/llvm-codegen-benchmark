@@ -39,13 +39,13 @@ func000000000000000d:
 	andi	a2, a2, 1
 	bnez	a2, .LBB5_2
 	li	a2, 20
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB5_2:
 	li	a2, 13
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000005:

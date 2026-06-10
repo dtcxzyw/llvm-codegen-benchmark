@@ -6,11 +6,11 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
+	lui	a3, 2048
 	sub	a2, a2, a1
-	lui	a1, 2048
-	addi	a1, a1, -4
-	and	a1, a1, a2
-	add	a0, a0, a1
+	addi	a3, a3, -4
+	and	a2, a2, a3
+	add	a0, a0, a2
 	ret
 
 func0000000000000017:

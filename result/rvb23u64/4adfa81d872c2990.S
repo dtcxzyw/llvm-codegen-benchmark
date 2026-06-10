@@ -4,9 +4,9 @@ func0000000000000005:
 	ret
 
 func0000000000000015:
+	bseti	a1, zero, 47
 	slli	a0, a0, 48
 	srai	a0, a0, 16
-	bseti	a1, zero, 47
 	add	a0, a0, a1
 	ret
 
@@ -16,8 +16,8 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	slli	a0, a0, 29
 	li	a1, -33
+	slli	a0, a0, 29
 	srai	a0, a0, 32
 	srli	a1, a1, 5
 	add	a0, a0, a1

@@ -8,12 +8,12 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	andi	a2, a1, 1024
-	lui	a3, 921600
+	lui	a2, 921600
+	andi	a3, a1, 1024
+	addi	a2, a2, -1026
+	czero.nez	a0, a0, a3
 	bclri	a1, a1, 28
-	addi	a3, a3, -1026
-	czero.nez	a0, a0, a2
-	czero.eqz	a2, a3, a2
+	czero.eqz	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

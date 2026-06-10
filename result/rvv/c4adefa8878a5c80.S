@@ -1,7 +1,7 @@
 func0000000000000426:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 2
 	vmv.v.i	v12, 0
+	vmseq.vi	v0, v10, 2
 	vmerge.vim	v12, v12, 1, v0
 	vmseq.vi	v0, v10, 1
 	vsll.vi	v10, v12, 4
@@ -11,8 +11,8 @@ func0000000000000426:
 
 func0000000000000421:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 12
 	vmv.v.i	v12, 0
+	vmseq.vi	v0, v10, 12
 	vmerge.vim	v12, v12, 1, v0
 	vmseq.vi	v0, v10, 3
 	vadd.vi	v10, v12, 1
@@ -22,8 +22,8 @@ func0000000000000421:
 
 func0000000000000434:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 12
 	vmv.v.i	v12, 0
+	vmseq.vi	v0, v10, 12
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vi	v12, v12, 1
 	vmsne.vi	v14, v10, 3
@@ -34,10 +34,10 @@ func0000000000000434:
 func000000000000042c:
 	li	a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 0
 	vmseq.vx	v0, v10, a0
-	li	a0, 35
+	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
+	li	a0, 35
 	vmseq.vx	v0, v10, a0
 	vadd.vv	v10, v12, v12
 	vmerge.vim	v10, v10, 1, v0
@@ -45,10 +45,10 @@ func000000000000042c:
 	ret
 
 func0000000000000424:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 2
 	li	a0, 32
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vmseq.vi	v0, v10, 2
 	li	a0, 24
 	vmerge.vxm	v12, v12, a0, v0
 	vmseq.vi	v0, v10, 1
@@ -58,11 +58,11 @@ func0000000000000424:
 	ret
 
 func0000000000000438:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 2
 	lui	a0, 48
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vmseq.vi	v0, v10, 2
 	lui	a0, 16
 	addi	a0, a0, -1
 	vmerge.vxm	v12, v12, a0, v0
@@ -73,11 +73,11 @@ func0000000000000438:
 	ret
 
 func0000000000000428:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 2
 	lui	a0, 48
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vmseq.vi	v0, v10, 2
 	lui	a0, 16
 	addi	a0, a0, -1
 	vmerge.vxm	v12, v12, a0, v0
@@ -88,10 +88,10 @@ func0000000000000428:
 	ret
 
 func000000000000042a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 2
 	lui	a0, 16
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vmseq.vi	v0, v10, 2
 	lui	a0, 8
 	vmerge.vxm	v12, v12, a0, v0
 	vmseq.vi	v0, v10, 0

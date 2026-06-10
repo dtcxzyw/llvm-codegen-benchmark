@@ -1,11 +1,11 @@
 .LCPI0_0:
 	.quad	0x40efffe000000000
 func0000000000000002:
+	fli.d	fa5, 0.5
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vfadd.vf	v8, v8, fa5
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	fli.d	fa4, 0.5
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfadd.vf	v8, v8, fa4
 	vfmin.vf	v8, v8, fa5
 	ret
 
@@ -22,9 +22,9 @@ func0000000000000004:
 
 func000000000000000c:
 	fli.d	fa5, 0.5
-	li	a0, -497
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
+	li	a0, -497
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	vfmax.vf	v8, v8, fa5

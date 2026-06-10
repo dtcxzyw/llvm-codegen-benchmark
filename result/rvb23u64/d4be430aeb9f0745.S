@@ -9,11 +9,11 @@ func000000000000008a:
 	ret
 
 func0000000000000088:
+	lui	a3, 748983
+	addi	a3, a3, -585
 	sub	a1, a1, a2
-	lui	a2, 748983
+	slli	a2, a3, 33
 	srli	a1, a1, 3
-	addi	a2, a2, -585
-	slli	a3, a2, 33
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	sraiw	a1, a1, 2

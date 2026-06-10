@@ -13,8 +13,8 @@ func0000000000000001:
 .LCPI1_0:
 	.quad	0x3ee4f8b588e368f1
 func0000000000000018:
-	andi	a0, a0, 7
 	li	a1, 4
+	andi	a0, a0, 7
 	bltu	a1, a0, .LBB1_2
 	fli.d	fa0, 1.0
 	ret

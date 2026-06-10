@@ -5,9 +5,9 @@ func0000000000000003:
 
 func0000000000000001:
 	lui	a1, 260096
+	li	a2, 383
 	or	a0, a0, a1
-	li	a1, 383
-	slli	a1, a1, 23
-	and	a0, a0, a1
+	slli	a2, a2, 23
+	and	a0, a0, a2
 	ret
 

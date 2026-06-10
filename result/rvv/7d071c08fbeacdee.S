@@ -31,15 +31,15 @@ func0000000000000066:
 
 func000000000000006d:
 	fli.d	fa5, inf
-	li	a0, -497
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
+	li	a0, -497
 	slli	a0, a0, 53
-	vmor.mm	v16, v25, v24
 	fmv.d.x	fa5, a0
-	vmflt.vf	v17, v8, fa5
-	vmandn.mm	v8, v16, v17
+	vmflt.vf	v16, v8, fa5
+	vmor.mm	v8, v25, v24
+	vmandn.mm	v8, v8, v16
 	vmand.mm	v0, v0, v8
 	ret
 
@@ -49,9 +49,9 @@ func0000000000000065:
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
 	fli.d	fa5, -1.0
-	vmor.mm	v16, v25, v24
-	vmfle.vf	v17, v8, fa5
-	vmandn.mm	v8, v16, v17
+	vmfle.vf	v16, v8, fa5
+	vmor.mm	v8, v25, v24
+	vmandn.mm	v8, v8, v16
 	vmand.mm	v0, v0, v8
 	ret
 

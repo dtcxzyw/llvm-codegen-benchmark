@@ -1,6 +1,6 @@
 func00000000000000d0:
-	srai	a3, a2, 63
 	mul	a1, a1, a2
+	srai	a3, a2, 63
 	srli	a3, a3, 62
 	add	a2, a2, a3
 	sh3add	a0, a1, a0
@@ -10,8 +10,8 @@ func00000000000000d0:
 	ret
 
 func000000000000005b:
-	srai	a3, a1, 63
 	mul	a2, a2, a1
+	srai	a3, a1, 63
 	srli	a3, a3, 62
 	add	a1, a1, a3
 	sh3add	a0, a2, a0
@@ -21,8 +21,8 @@ func000000000000005b:
 	ret
 
 func00000000000000db:
-	srai	a3, a1, 63
 	mul	a2, a2, a1
+	srai	a3, a1, 63
 	srli	a3, a3, 62
 	add	a1, a1, a3
 	sh3add	a0, a2, a0
@@ -32,8 +32,8 @@ func00000000000000db:
 	ret
 
 func0000000000000050:
-	srai	a3, a2, 63
 	mul	a1, a1, a2
+	srai	a3, a2, 63
 	srli	a3, a3, 61
 	add	a2, a2, a3
 	sh2add	a0, a1, a0

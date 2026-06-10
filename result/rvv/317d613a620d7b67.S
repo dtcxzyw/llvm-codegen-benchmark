@@ -27,10 +27,10 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv1r.v	v9, v0
 	lui	a0, 524288
 	addiw	a0, a0, -512
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v9, v0
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v10, 0
@@ -51,9 +51,9 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
-	bseti	a0, zero, 32
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v10, 0

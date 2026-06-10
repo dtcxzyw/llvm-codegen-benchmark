@@ -10,8 +10,8 @@ func0000000000000021:
 func0000000000000364:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 12
-	lui	a0, 1048352
 	vadd.vv	v8, v10, v8
+	lui	a0, 1048352
 	vadd.vx	v8, v8, a0
 	bseti	a0, zero, 11
 	vmsltu.vx	v0, v8, a0
@@ -30,8 +30,8 @@ func0000000000000344:
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
-	li	a0, -256
 	vadd.vv	v8, v10, v8
+	li	a0, -256
 	vadd.vx	v8, v8, a0
 	li	a0, 128
 	vmsltu.vx	v0, v8, a0

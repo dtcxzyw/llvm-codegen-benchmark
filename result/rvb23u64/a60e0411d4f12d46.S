@@ -20,9 +20,9 @@ func0000000000000045:
 
 func0000000000000000:
 	slli	a1, a1, 6
+	lui	a2, 180574
 	add	a0, a0, a1
-	lui	a1, 180574
-	addi	a1, a1, 2041
+	addi	a1, a2, 2041
 	addw	a0, a0, a1
 	ret
 

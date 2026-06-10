@@ -22,8 +22,8 @@ func0000000000000081:
 	lui	a0, 32768
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, -258
 	vmseq.vi	v9, v10, 0
+	li	a0, -258
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -33,8 +33,8 @@ func0000000000000101:
 	lui	a0, 32768
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 770
 	vmseq.vi	v9, v10, 0
+	li	a0, 770
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

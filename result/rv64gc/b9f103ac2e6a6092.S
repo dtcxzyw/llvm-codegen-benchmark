@@ -7,8 +7,8 @@ func0000000000000421:
 
 func0000000000000481:
 	lui	a2, 1048568
-	zext.b	a0, a0
 	add	a1, a1, a2
+	zext.b	a0, a0
 	sltiu	a1, a1, 1793
 	seqz	a0, a0
 	and	a0, a0, a1

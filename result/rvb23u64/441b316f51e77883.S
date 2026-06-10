@@ -37,8 +37,8 @@ func00000000000010c1:
 	ret
 
 func0000000000002cea:
-	sext.w	a0, a0
 	slt	a3, a1, a2
+	sext.w	a0, a0
 	slt	a1, a2, a1
 	sgtz	a0, a0
 	czero.nez	a2, a3, a0
@@ -48,8 +48,8 @@ func0000000000002cea:
 	ret
 
 func0000000000002ce1:
-	sext.w	a0, a0
 	slt	a3, a1, a2
+	sext.w	a0, a0
 	slt	a1, a2, a1
 	czero.eqz	a2, a3, a0
 	czero.nez	a0, a1, a0
@@ -58,8 +58,8 @@ func0000000000002ce1:
 	ret
 
 func0000000000001d61:
-	sext.w	a0, a0
 	slt	a3, a2, a1
+	sext.w	a0, a0
 	slt	a1, a1, a2
 	czero.eqz	a2, a3, a0
 	czero.nez	a0, a1, a0
@@ -68,8 +68,8 @@ func0000000000001d61:
 	ret
 
 func00000000000028ca:
-	sext.w	a0, a0
 	slt	a3, a2, a1
+	sext.w	a0, a0
 	slt	a1, a1, a2
 	sgtz	a0, a0
 	czero.nez	a2, a3, a0

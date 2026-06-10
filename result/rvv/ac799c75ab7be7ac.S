@@ -6,8 +6,8 @@ func0000000000000034:
 	li	a0, -1
 	vmerge.vxm	v12, v12, a0, v0
 	lui	a0, 273164
-	addi	a0, a0, 165
 	vfadd.vv	v8, v12, v8
+	addi	a0, a0, 165
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -20,8 +20,8 @@ func0000000000000032:
 	li	a0, -1
 	vmerge.vxm	v12, v12, a0, v0
 	lui	a0, 797452
-	addi	a0, a0, 165
 	vfadd.vv	v8, v12, v8
+	addi	a0, a0, 165
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret

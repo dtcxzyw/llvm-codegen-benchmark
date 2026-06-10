@@ -20,9 +20,9 @@ func0000000000000003:
 
 func0000000000000001:
 	slli	a0, a0, 8
-	srli	a1, a0, 5
-	neg	a0, a1
-	seqz	a1, a1
+	srli	a0, a0, 5
+	seqz	a1, a0
+	neg	a0, a0
 	addi	a1, a1, -1
 	ret
 

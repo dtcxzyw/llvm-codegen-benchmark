@@ -17,8 +17,8 @@ func000000000000000d:
 	ret
 
 func0000000000000004:
-	fadd.s	fa5, fa1, fa2
 	lui	a0, 272128
+	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB2_2

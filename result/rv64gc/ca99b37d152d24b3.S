@@ -1,6 +1,6 @@
 func000000000000004c:
-	srliw	a1, a1, 2
 	li	a2, 1457
+	srliw	a1, a1, 2
 	bltu	a1, a2, .LBB0_2
 	li	a1, 193
 	addw	a0, a0, a1
@@ -11,8 +11,8 @@ func000000000000004c:
 	ret
 
 func0000000000000044:
-	sext.w	a1, a1
 	li	a2, 1530
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB1_2
 	li	a1, 247
 	addw	a0, a0, a1
@@ -23,8 +23,8 @@ func0000000000000044:
 	ret
 
 func000000000000014c:
-	sext.w	a1, a1
 	li	a2, 182
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB2_2
 	li	a1, 197
 	addw	a0, a0, a1
@@ -46,8 +46,8 @@ func0000000000000014:
 	ret
 
 func0000000000000148:
-	sext.w	a1, a1
 	li	a2, 62
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB4_2
 	li	a1, 193
 	addw	a0, a0, a1

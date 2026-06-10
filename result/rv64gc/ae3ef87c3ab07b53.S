@@ -11,8 +11,8 @@ func0000000000000000:
 	ret
 
 func000000000000001e:
-	addi	a0, a0, 1
 	li	a1, 25
+	addi	a0, a0, 1
 	slli	a1, a1, 34
 	slli	a0, a0, 32
 	mulhu	a0, a0, a1

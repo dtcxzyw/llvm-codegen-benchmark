@@ -24,24 +24,24 @@ func000000000000000a:
 
 func0000000000000021:
 	sext.w	a0, a0
-	sraiw	a1, a1, 1
 	seqz	a0, a0
+	sraiw	a1, a1, 1
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
 
 func000000000000002a:
 	sext.w	a0, a0
-	sraiw	a1, a1, 16
 	sgtz	a0, a0
+	sraiw	a1, a1, 16
 	neg	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
 	sext.w	a0, a0
-	sraiw	a1, a1, 16
 	sltiu	a0, a0, -1
+	sraiw	a1, a1, 16
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret

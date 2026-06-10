@@ -1,8 +1,8 @@
 func00000000000001e8:
 	slliw	a2, a2, 8
 	or	a1, a1, a0
-	srliw	a0, a0, 16
 	or	a1, a1, a2
+	srliw	a0, a0, 16
 	lui	a2, 272
 	sltiu	a0, a0, 17
 	addi	a2, a2, -1
@@ -14,8 +14,8 @@ func00000000000001e8:
 func00000000000001f8:
 	slliw	a2, a2, 6
 	or	a1, a1, a0
-	srliw	a0, a0, 16
 	or	a1, a1, a2
+	srliw	a0, a0, 16
 	lui	a2, 16
 	sltiu	a0, a0, 17
 	addi	a2, a2, -3

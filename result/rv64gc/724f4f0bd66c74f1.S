@@ -10,10 +10,10 @@ func0000000000000018:
 	addi	a3, a3, 1
 	slli	a3, a3, 32
 	addi	a3, a3, -1
+	li	a4, 1
 	and	a2, a2, a3
-	li	a3, 1
-	slli	a3, a3, 48
-	xor	a2, a2, a3
+	slli	a4, a4, 48
+	xor	a2, a2, a4
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

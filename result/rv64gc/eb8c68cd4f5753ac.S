@@ -5,16 +5,16 @@ func0000000000000008:
 	ret
 
 func0000000000000084:
-	sext.w	a2, a0
-	add	a0, a0, a1
-	addiw	a0, a0, -96
-	sltu	a0, a2, a0
+	add	a1, a1, a0
+	sext.w	a0, a0
+	addiw	a1, a1, -96
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000006:
-	sext.w	a2, a0
-	add	a0, a0, a1
-	addiw	a0, a0, -1
-	slt	a0, a2, a0
+	add	a1, a1, a0
+	sext.w	a0, a0
+	addiw	a1, a1, -1
+	slt	a0, a0, a1
 	ret
 

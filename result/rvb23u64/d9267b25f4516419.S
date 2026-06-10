@@ -1,6 +1,6 @@
 func0000000000000021:
+	bexti	a2, a2, 20
 	subw	a0, a0, a1
-	bexti	a1, a2, 20
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 

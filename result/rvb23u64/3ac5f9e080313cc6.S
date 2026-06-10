@@ -2,10 +2,10 @@ func000000000000000f:
 	srli	a1, a1, 21
 	add	a0, a0, a1
 	lui	a1, 256
+	lui	a2, 1047552
 	add	a0, a0, a1
-	lui	a1, 1047552
-	srli	a1, a1, 1
-	and	a0, a0, a1
+	srli	a2, a2, 1
+	and	a0, a0, a2
 	ret
 
 func0000000000000005:

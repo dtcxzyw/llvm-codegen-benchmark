@@ -1,6 +1,6 @@
 func0000000000000000:
-	addi	a0, a0, 4
 	lui	a1, 2048
+	addi	a0, a0, 4
 	and	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000001:
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	seqz	a0, a0
+	xori	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -16,15 +16,15 @@ func000000000000000a:
 
 func0000000000000004:
 	sext.w	a0, a0
-	xori	a1, a1, 31
 	sltiu	a0, a0, 2
+	xori	a1, a1, 31
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000008:
-	srliw	a0, a0, 28
 	li	a2, 2
+	srliw	a0, a0, 28
 	bgeu	a2, a0, .LBB3_2
 	li	a0, 15
 	ret

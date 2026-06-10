@@ -18,12 +18,12 @@ func0000000000000021:
 	ret
 
 func0000000000000064:
-	li	a2, 1
-	bgeu	a2, a0, .LBB2_2
-	li	a2, 64
-	sub	a2, a2, a1
+	mv	a2, a0
+	li	a0, 1
+	bgeu	a0, a2, .LBB2_2
+	li	a0, 64
+	sub	a0, a0, a1
 .LBB2_2:
-	mv	a0, a2
 	ret
 
 func0000000000000001:

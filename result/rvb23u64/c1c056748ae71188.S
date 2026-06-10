@@ -50,8 +50,8 @@ func0000000000000018:
 
 func0000000000000008:
 	slliw	a2, a2, 5
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh2add	a0, a0, a1
 	ret
 

@@ -11,8 +11,8 @@ func0000000000000009:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sltu	a1, a1, a2
-	li	a2, -1
 	xori	a1, a1, 1
+	li	a2, -1
 	and	a0, a0, a1
 	slli	a2, a2, 63
 	sub	a0, a2, a0

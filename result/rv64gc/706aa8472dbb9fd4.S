@@ -1,15 +1,15 @@
 .LCPI0_0:
 	.quad	4835703278458516699
 func0000000000000006:
-	sgtz	a1, a0
-	lui	a2, %hi(.LCPI0_0)
-	neg	a1, a1
-	ld	a2, %lo(.LCPI0_0)(a2)
-	and	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 575
-	add	a0, a0, a1
-	mulhu	a0, a0, a2
+	lui	a1, %hi(.LCPI0_0)
+	sgtz	a2, a0
+	ld	a1, %lo(.LCPI0_0)(a1)
+	neg	a2, a2
+	lui	a3, 244
+	and	a0, a0, a2
+	addi	a2, a3, 575
+	add	a0, a0, a2
+	mulhu	a0, a0, a1
 	srli	a0, a0, 18
 	ret
 

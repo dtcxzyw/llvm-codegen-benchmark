@@ -35,8 +35,8 @@ func00000000000000ac:
 	ret
 
 func0000000000000021:
-	srliw	a0, a0, 6
 	lui	a1, 524288
+	srliw	a0, a0, 6
 	addiw	a1, a1, -128
 	add	a0, a0, a1
 	addi	a0, a0, 126
@@ -45,12 +45,12 @@ func0000000000000021:
 	ret
 
 func0000000000000078:
-	srli	a0, a0, 10
 	lui	a1, 13
+	srli	a0, a0, 10
 	addi	a1, a1, 1984
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -64
+	addi	a1, a2, -64
 	and	a0, a0, a1
 	sltiu	a0, a0, 192
 	xori	a0, a0, 1

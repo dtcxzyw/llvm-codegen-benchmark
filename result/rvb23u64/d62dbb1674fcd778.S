@@ -7,10 +7,10 @@ func00000000000000c1:
 	ret
 
 func00000000000004c6:
-	sext.w	a2, a0
-	mulw	a0, a1, a0
-	slti	a0, a0, 250
-	slti	a1, a2, 8
+	mulw	a1, a1, a0
+	sext.w	a0, a0
+	slti	a1, a1, 250
+	slti	a0, a0, 8
 	or	a0, a0, a1
 	ret
 

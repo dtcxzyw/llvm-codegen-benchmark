@@ -1,6 +1,6 @@
 func00000000000001c4:
-	sltiu	a0, a0, 5
 	addi	a2, a2, -28
+	sltiu	a0, a0, 5
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, 28

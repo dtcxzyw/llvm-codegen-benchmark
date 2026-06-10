@@ -14,10 +14,10 @@ func0000000000000010:
 	ret
 
 func0000000000000014:
-	bset	a1, zero, a0
-	li	a2, 8
-	addi	a1, a1, -1
-	sub	a2, a2, a0
-	sllw	a0, a1, a2
+	li	a1, 8
+	bset	a2, zero, a0
+	addi	a2, a2, -1
+	sub	a1, a1, a0
+	sllw	a0, a2, a1
 	ret
 

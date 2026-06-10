@@ -1,9 +1,9 @@
 func0000000000000048:
 	slli	a1, a1, 48
-	slli	a0, a0, 48
 	srli	a1, a1, 48
-	srli	a0, a0, 61
+	slli	a0, a0, 48
 	addi	a1, a1, -1
+	srli	a0, a0, 61
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -96,8 +96,8 @@ func0000000000000130:
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
-	sltiu	a1, a1, 10
 	sltiu	a0, a0, 97
+	sltiu	a1, a1, 10
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -113,8 +113,8 @@ func000000000000030c:
 func0000000000000328:
 	lui	a2, 16
 	addi	a2, a2, -1
-	and	a0, a0, a2
 	and	a1, a1, a2
+	and	a0, a0, a2
 	addi	a1, a1, -768
 	snez	a1, a1
 	sltiu	a0, a0, 768
@@ -124,10 +124,10 @@ func0000000000000328:
 func0000000000000202:
 	lui	a2, 16
 	addi	a2, a2, -1
+	lui	a3, 1
 	and	a0, a0, a2
 	and	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, -816
+	addi	a2, a3, -816
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -136,11 +136,11 @@ func0000000000000202:
 func000000000000004c:
 	slli	a0, a0, 48
 	slli	a1, a1, 48
-	lui	a2, 10
+	srai	a0, a0, 48
 	srli	a1, a1, 48
+	lui	a2, 10
 	xor	a1, a1, a2
 	lui	a2, 1048569
-	srai	a0, a0, 48
 	seqz	a1, a1
 	slt	a0, a0, a2
 	or	a0, a0, a1
@@ -149,8 +149,8 @@ func000000000000004c:
 func0000000000000054:
 	slli	a0, a0, 48
 	slli	a1, a1, 48
-	seqz	a1, a1
 	srli	a0, a0, 63
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -160,8 +160,8 @@ func0000000000000310:
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 768
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -169,10 +169,10 @@ func0000000000000310:
 func0000000000000308:
 	lui	a2, 16
 	addi	a3, a2, -1
-	addi	a2, a2, -173
 	and	a0, a0, a3
 	and	a1, a1, a3
 	addi	a1, a1, -222
+	addi	a2, a2, -173
 	snez	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
@@ -211,12 +211,12 @@ func0000000000000314:
 func0000000000000118:
 	lui	a2, 16
 	addi	a2, a2, -1
+	lui	a3, 1
 	and	a0, a0, a2
+	addi	a3, a3, 73
 	and	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, 73
+	xor	a0, a0, a3
 	sltiu	a1, a1, 3
-	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -226,19 +226,19 @@ func0000000000000502:
 	addi	a2, a2, -1
 	and	a0, a0, a2
 	and	a1, a1, a2
-	sltiu	a1, a1, 2
 	addi	a0, a0, -64
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000110:
-	slli	a1, a1, 48
 	slli	a0, a0, 48
-	srli	a1, a1, 60
+	slli	a1, a1, 48
 	srli	a0, a0, 61
-	sltiu	a1, a1, 13
+	srli	a1, a1, 60
 	sltiu	a0, a0, 7
+	sltiu	a1, a1, 13
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

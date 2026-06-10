@@ -1,8 +1,8 @@
 func0000000000000000:
+	li	a2, -189
 	add	a0, a0, a1
-	li	a1, -189
-	srli	a1, a1, 2
-	add	a0, a0, a1
+	srli	a2, a2, 2
+	add	a0, a0, a2
 	ret
 
 func0000000000000015:
@@ -71,9 +71,9 @@ func0000000000000030:
 	ret
 
 func0000000000000014:
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	bseti	a1, a1, 31
+	bseti	a1, a2, 31
 	add	a0, a0, a1
 	ret
 
@@ -93,16 +93,16 @@ func000000000000002f:
 	ret
 
 func0000000000000005:
+	lui	a2, 4096
 	add	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	ret
 
 func0000000000000011:
+	lui	a2, 4096
 	add	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, -2
-	add	a0, a0, a1
+	addi	a2, a2, -2
+	add	a0, a0, a2
 	ret
 

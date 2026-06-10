@@ -1,7 +1,7 @@
 func0000000000000145:
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v14, v10, 0
-	bseti	a0, zero, 63
 	vand.vv	v12, v12, v14
 	vadd.vv	v8, v8, v12
 	vrsub.vx	v10, v10, a0
@@ -9,9 +9,9 @@ func0000000000000145:
 	ret
 
 func0000000000000048:
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v14, v10, 0
-	bseti	a0, zero, 63
 	vand.vv	v12, v12, v14
 	vadd.vv	v8, v12, v8
 	vrsub.vx	v10, v10, a0

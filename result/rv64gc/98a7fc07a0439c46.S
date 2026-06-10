@@ -27,17 +27,17 @@ func0000000000000075:
 	ret
 
 func00000000000000f8:
-	sext.w	a2, a2
 	srliw	a1, a1, 3
+	sext.w	a2, a2
 	slli	a1, a1, 3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 
 func00000000000000f5:
-	sext.w	a2, a2
 	lui	a3, 524288
 	addiw	a3, a3, -2
+	sext.w	a2, a2
 	and	a1, a1, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
@@ -62,11 +62,11 @@ func000000000000006c:
 	ret
 
 func0000000000000078:
-	slli	a2, a2, 32
 	li	a3, 1
-	srli	a2, a2, 32
 	slli	a3, a3, 35
+	slli	a2, a2, 32
 	addi	a3, a3, -8
+	srli	a2, a2, 32
 	and	a1, a1, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1

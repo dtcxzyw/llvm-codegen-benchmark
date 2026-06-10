@@ -7,13 +7,13 @@ func000000000000004d:
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
-	li	a1, 32
 	vmul.vx	v10, v10, a0
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vsra.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI0_1)
-	ld	a0, %lo(.LCPI0_1)(a0)
-	vsll.vx	v10, v10, a1
-	vsra.vx	v10, v10, a1
 	vsra.vi	v8, v8, 3
+	ld	a0, %lo(.LCPI0_1)(a0)
 	vmadd.vx	v8, a0, v10
 	ret
 
@@ -26,13 +26,13 @@ func000000000000004f:
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 3
-	li	a1, 32
 	vmul.vx	v10, v10, a0
+	li	a0, 32
+	vsll.vx	v10, v10, a0
+	vsra.vx	v10, v10, a0
 	lui	a0, %hi(.LCPI1_1)
-	ld	a0, %lo(.LCPI1_1)(a0)
-	vsll.vx	v10, v10, a1
-	vsra.vx	v10, v10, a1
 	vsra.vi	v8, v8, 3
+	ld	a0, %lo(.LCPI1_1)(a0)
 	vmadd.vx	v8, a0, v10
 	ret
 
@@ -41,19 +41,19 @@ func000000000000004f:
 func000000000000000f:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v10, v10, a0
-	li	a0, 32
-	vsra.vi	v8, v8, 5
-	vsrl.vx	v12, v10, a1
-	lui	a1, 349525
-	addi	a1, a1, 1365
+	li	a0, 63
+	vsrl.vx	v12, v10, a0
 	vsra.vi	v10, v10, 4
 	vadd.vv	v10, v10, v12
+	li	a0, 32
 	vsll.vx	v10, v10, a0
 	vsra.vx	v10, v10, a0
-	slli	a0, a1, 32
+	vsra.vi	v8, v8, 5
+	lui	a0, 349525
+	addi	a0, a0, 1365
+	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v8, a0, v10
 	ret

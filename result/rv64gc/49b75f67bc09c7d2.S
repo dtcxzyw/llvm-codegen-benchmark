@@ -20,9 +20,9 @@ func000000000000000a:
 
 func000000000000000b:
 	srliw	a3, a2, 31
-	slli	a0, a0, 2
 	addw	a2, a2, a3
 	slli	a2, a2, 1
+	slli	a0, a0, 2
 	andi	a2, a2, -4
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -30,9 +30,9 @@ func000000000000000b:
 
 func0000000000000000:
 	srliw	a3, a2, 31
-	slli	a0, a0, 3
 	addw	a2, a2, a3
 	slli	a2, a2, 2
+	slli	a0, a0, 3
 	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2

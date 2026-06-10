@@ -1,6 +1,6 @@
 func00000000000014e1:
-	sltiu	a2, a2, 7
 	sext.w	a1, a1
+	sltiu	a2, a2, 7
 	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	xor	a0, a0, a1
@@ -16,8 +16,8 @@ func00000000000001e1:
 	ret
 
 func0000000000001861:
-	sltiu	a2, a2, 16
 	zext.w	a1, a1
+	sltiu	a2, a2, 16
 	addi	a1, a1, -14
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 14

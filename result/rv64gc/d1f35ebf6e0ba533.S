@@ -1,8 +1,8 @@
 func0000000000000043:
 	lui	a3, 1
-	slli	a0, a0, 3
 	addi	a3, a3, 260
 	mul	a2, a2, a3
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 4
@@ -10,9 +10,9 @@ func0000000000000043:
 
 func0000000000000042:
 	lui	a3, 1
-	slli	a0, a0, 3
 	addi	a3, a3, 260
 	mul	a2, a2, a3
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 4

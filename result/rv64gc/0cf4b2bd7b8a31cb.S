@@ -6,8 +6,8 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	srli	a1, a1, 1
 	lui	a2, 87381
+	srli	a1, a1, 1
 	addi	a2, a2, 1365
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -36,8 +36,8 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	slliw	a0, a0, 16
 	lui	a2, 524288
+	slliw	a0, a0, 16
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

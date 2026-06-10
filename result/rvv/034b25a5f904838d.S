@@ -8,9 +8,9 @@ func0000000000000008:
 
 func000000000000000c:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 4
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 4
-	vmerge.vim	v12, v12, 2, v0
+	vmerge.vim	v12, v14, 2, v0
 	vor.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
 	ret

@@ -4,9 +4,9 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
+	lui	a1, 1024
 	addiw	a0, a0, 31
 	andi	a0, a0, -32
-	lui	a1, 1024
 	sltu	a0, a1, a0
 	ret
 

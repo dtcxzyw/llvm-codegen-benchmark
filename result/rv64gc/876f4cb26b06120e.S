@@ -8,8 +8,8 @@ func000000000000030c:
 func000000000000050a:
 	slli	a2, a0, 56
 	zext.b	a0, a0
-	sltu	a0, a0, a1
 	srli	a2, a2, 63
+	sltu	a0, a0, a1
 	not	a1, a2
 	and	a0, a0, a1
 	ret

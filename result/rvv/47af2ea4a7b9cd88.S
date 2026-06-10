@@ -4,21 +4,21 @@ func0000000000000028:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf4	v12, v10
 	vsra.vi	v8, v8, 7
 	vmul.vx	v8, v8, a0
+	vzext.vf4	v12, v10
 	vmsltu.vv	v0, v12, v8
 	ret
 
 func0000000000000024:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vzext.vf4	v12, v10
-	vsra.vi	v8, v8, 3
 	lui	a0, 1028016
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v8, v8, 3
 	addi	a0, a0, -1285
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
+	vzext.vf4	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
 

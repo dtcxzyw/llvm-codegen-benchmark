@@ -42,9 +42,9 @@ func0000000000000000:
 func0000000000000040:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnot.v	v11, v11
-	vadd.vv	v10, v10, v11
-	vnsrl.wi	v11, v8, 0
+	vnsrl.wi	v12, v8, 0
 	vadd.vv	v8, v10, v11
+	vadd.vv	v8, v8, v12
 	ret
 
 func0000000000000045:

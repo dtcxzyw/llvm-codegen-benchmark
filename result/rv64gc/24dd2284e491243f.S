@@ -1,6 +1,6 @@
 func0000000000000042:
-	sext.w	a2, a2
 	lui	a3, 262144
+	sext.w	a2, a2
 	and	a3, a3, a0
 	seqz	a3, a3
 	seqz	a2, a2

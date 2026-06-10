@@ -32,9 +32,9 @@ func0000000000000000:
 	add	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -2
+	lui	a3, 150
 	and	a1, a1, a2
-	lui	a2, 150
-	addi	a2, a2, 768
+	addi	a2, a3, 768
 	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1

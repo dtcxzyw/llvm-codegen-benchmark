@@ -38,9 +38,9 @@ func000000000000000a:
 
 func0000000000000005:
 	andi	a1, a1, 1
+	lui	a2, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	ret
 
@@ -54,9 +54,9 @@ func0000000000000004:
 
 func000000000000000f:
 	andi	a1, a1, 1
+	lui	a2, 351844
 	add	a0, a0, a1
-	lui	a1, 351844
-	addi	a1, a1, -1143
+	addi	a1, a2, -1143
 	mul	a0, a0, a1
 	ret
 

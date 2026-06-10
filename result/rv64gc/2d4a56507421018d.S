@@ -6,9 +6,9 @@ func0000000000000006:
 	ret
 
 func0000000000000026:
-	sext.w	a2, a1
-	lui	a3, 1
-	bge	a2, a3, .LBB1_2
+	lui	a2, 1
+	sext.w	a3, a1
+	bge	a3, a2, .LBB1_2
 	slliw	a0, a1, 1
 .LBB1_2:
 	ret
@@ -49,9 +49,9 @@ func000000000000004a:
 	ret
 
 func0000000000000078:
-	sext.w	a2, a1
-	li	a3, 2
-	bgeu	a3, a2, .LBB7_2
+	li	a2, 2
+	sext.w	a3, a1
+	bgeu	a2, a3, .LBB7_2
 	slliw	a0, a1, 9
 .LBB7_2:
 	ret

@@ -17,8 +17,8 @@ func000000000000000f:
 func000000000000000e:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsll.vi	v10, v10, 11
-	lui	a0, 128
 	vor.vv	v8, v8, v10
+	lui	a0, 128
 	addi	a0, a0, 3
 	vor.vx	v8, v8, a0, v0.t
 	ret

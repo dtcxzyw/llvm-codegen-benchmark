@@ -16,9 +16,9 @@ func0000000000000201:
 	ret
 
 func000000000000140c:
+	not	a2, a2
 	add	a0, a0, a1
-	not	a1, a2
-	sraiw	a1, a1, 31
+	sraiw	a1, a2, 31
 	add	a0, a0, a1
 	addiw	a0, a0, -4
 	snez	a0, a0

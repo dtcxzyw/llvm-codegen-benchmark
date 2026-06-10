@@ -1,10 +1,10 @@
 func000000000000007b:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
 	li	a0, 128
-	vmv.v.x	v10, a0
-	vmacc.vv	v10, v8, v12
-	vsrl.vi	v8, v10, 8
-	vadd.vv	v8, v8, v10
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vzext.vf4	v14, v10
+	vmacc.vv	v12, v8, v14
+	vsrl.vi	v8, v12, 8
+	vadd.vv	v8, v8, v12
 	ret
 

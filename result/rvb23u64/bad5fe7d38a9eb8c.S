@@ -3,8 +3,8 @@ func0000000000000006:
 	mul	a0, a0, a1
 	lui	a1, 266305
 	slli	a1, a1, 2
-	zext.w	a0, a0
 	addi	a1, a1, 261
+	zext.w	a0, a0
 	slli	a1, a1, 26
 	mulhu	a0, a0, a1
 	ret

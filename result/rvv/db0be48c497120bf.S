@@ -1,17 +1,17 @@
 func0000000000000044:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
 
 func000000000000008c:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vv	v24, v16, v8
 	li	a0, -497
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vv	v24, v16, v8
 	vmfge.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
@@ -32,19 +32,19 @@ func00000000000000aa:
 	ret
 
 func0000000000000082:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vv	v24, v16, v8
 	lui	a0, 65941
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfeq.vv	v24, v16, v8
 	vmflt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
 
 func0000000000000022:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v16, v8
-	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
@@ -66,43 +66,43 @@ func000000000000002a:
 	ret
 
 func00000000000000d4:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v24, v16, v8
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v16, v8, fa5
 	vmandn.mm	v0, v16, v24
 	ret
 
 func0000000000000086:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfeq.vv	v24, v16, v8
 	fli.d	fa5, inf
-	vmflt.vf	v16, v8, fa5
-	vmfgt.vf	v17, v8, fa5
-	vmor.mm	v8, v17, v16
-	vmand.mm	v0, v8, v24
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vf	v24, v8, fa5
+	vmfgt.vf	v25, v8, fa5
+	vmfeq.vv	v26, v16, v8
+	vmor.mm	v8, v25, v24
+	vmand.mm	v0, v8, v26
 	ret
 
 func00000000000000cc:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vv	v24, v8, v16
-	fmv.d.x	fa5, zero
 	vmfge.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
 
 func00000000000000a2:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vv	v24, v16, v8
-	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
 	vmand.mm	v0, v16, v24
 	ret
 
 func0000000000000057:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vv	v24, v16, v8
-	fmv.d.x	fa5, zero
 	vmfne.vf	v16, v8, fa5
 	vmandn.mm	v0, v16, v24
 	ret

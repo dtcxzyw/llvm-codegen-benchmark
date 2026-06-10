@@ -12,9 +12,9 @@ func000000000000000c:
 
 func000000000000000d:
 	andi	a1, a1, 1
+	lui	a2, 524288
 	sll	a0, a0, a1
-	lui	a1, 524288
-	addi	a1, a1, 64
+	addi	a1, a2, 64
 	add	a0, a0, a1
 	ret
 

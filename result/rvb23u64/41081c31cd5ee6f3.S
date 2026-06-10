@@ -11,9 +11,9 @@ func000000000000036c:
 func0000000000000264:
 	fclass.d	a1, fa1
 	fli.d	fa5, inf
-	andi	a1, a1, 897
 	flt.d	a2, fa0, fa5
 	flt.d	a3, fa5, fa0
+	andi	a1, a1, 897
 	snez	a1, a1
 	or	a2, a2, a3
 	xori	a2, a2, 1
@@ -24,11 +24,11 @@ func0000000000000264:
 func0000000000000090:
 	lui	a1, %hi(.promoted_doubles.func0000000000000090)
 	addi	a1, a1, %lo(.promoted_doubles.func0000000000000090)
-	fld	fa5, 0(a1)
-	fld	fa4, 8(a1)
-	fabs.d	fa3, fa1
-	flt.d	a1, fa3, fa5
-	flt.d	a2, fa4, fa0
+	fabs.d	fa5, fa1
+	fld	fa4, 0(a1)
+	fld	fa3, 8(a1)
+	flt.d	a1, fa5, fa4
+	flt.d	a2, fa3, fa0
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -36,26 +36,26 @@ func0000000000000090:
 func00000000000001e0:
 	fclass.d	a1, fa1
 	fli.d	fa5, inf
-	andi	a1, a1, 894
 	feq.d	a2, fa0, fa5
+	andi	a1, a1, 894
 	snez	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000220:
-	fclass.d	a1, fa1
 	fmv.d.x	fa5, zero
-	andi	a1, a1, 129
+	fclass.d	a1, fa1
 	feq.d	a2, fa0, fa5
+	andi	a1, a1, 129
 	snez	a1, a1
-	or	a0, a0, a2
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000374:
-	fabs.d	fa5, fa1
 	li	a1, 971
+	fabs.d	fa5, fa1
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4

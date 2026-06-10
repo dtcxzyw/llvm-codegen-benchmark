@@ -84,19 +84,19 @@ func0000000000000006:
 	ret
 
 func0000000000000098:
+	li	a2, 1
+	slli	a2, a2, 37
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 37
-	addi	a1, a1, -512
+	addi	a1, a2, -512
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000094:
+	li	a2, 1
+	slli	a2, a2, 37
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 37
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

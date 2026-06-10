@@ -8,10 +8,10 @@ func0000000000000001:
 
 func0000000000000000:
 	lui	a0, 231424
+	lui	a1, 755712
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vx	v8, v8, a0
-	lui	a0, 755712
-	fmv.w.x	fa5, a0
+	fmv.w.x	fa5, a1
 	vfadd.vf	v8, v8, fa5
 	ret
 

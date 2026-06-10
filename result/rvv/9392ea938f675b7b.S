@@ -175,17 +175,17 @@ func0000000000000084:
 	ret
 
 func0000000000000094:
+	li	a0, 99
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v10, v12
-	li	a0, 99
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
 
 func00000000000000e8:
+	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vv	v14, v10, v12
-	li	a0, 64
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -226,9 +226,9 @@ func000000000000008a:
 	ret
 
 func0000000000000101:
+	lui	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v12, v10
-	lui	a0, 64
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -255,9 +255,9 @@ func0000000000000085:
 	ret
 
 func0000000000000088:
+	li	a0, 1024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v10, v12
-	li	a0, 1024
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -348,10 +348,10 @@ func0000000000000089:
 	ret
 
 func0000000000000024:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vv	v14, v10, v12
 	lui	a0, 1
 	addi	a0, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vv	v14, v10, v12
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -364,17 +364,17 @@ func00000000000000ca:
 	ret
 
 func0000000000000124:
+	li	a0, 100
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vv	v14, v12, v10
-	li	a0, 100
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
 
 func00000000000000d4:
+	li	a0, 18
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vv	v14, v10, v12
-	li	a0, 18
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -387,9 +387,9 @@ func0000000000000321:
 	ret
 
 func0000000000000128:
+	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vv	v14, v12, v10
-	li	a0, 128
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -402,9 +402,9 @@ func000000000000012a:
 	ret
 
 func0000000000000288:
+	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v10, v12
-	bseti	a0, zero, 11
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -438,25 +438,25 @@ func0000000000000194:
 	ret
 
 func00000000000000b4:
+	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vv	v14, v10, v12
-	li	a0, 31
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
 
 func0000000000000034:
+	bseti	a0, zero, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vv	v14, v10, v12
-	bseti	a0, zero, 62
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
 
 func0000000000000104:
+	bseti	a0, zero, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v14, v12, v10
-	bseti	a0, zero, 48
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret

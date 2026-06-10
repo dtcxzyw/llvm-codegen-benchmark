@@ -1,6 +1,6 @@
 func0000000000000006:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -8,8 +8,8 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -18,8 +18,8 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -48,8 +48,8 @@ func0000000000000061:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -79,8 +79,8 @@ func0000000000000046:
 	ret
 
 func0000000000000074:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -88,8 +88,8 @@ func0000000000000074:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0
@@ -118,8 +118,8 @@ func000000000000000a:
 	ret
 
 func0000000000000014:
-	andi	a0, a0, 1
 	sext.w	a2, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	sext.w	a0, a0

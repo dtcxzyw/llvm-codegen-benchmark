@@ -1,7 +1,7 @@
 func0000000000000010:
 	sext.w	a2, a2
-	andi	a1, a1, -8
 	seqz	a2, a2
+	andi	a1, a1, -8
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -9,8 +9,8 @@ func0000000000000010:
 
 func000000000000001c:
 	addiw	a2, a2, -1
-	andi	a0, a0, -8
 	seqz	a2, a2
+	andi	a0, a0, -8
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -30,13 +30,13 @@ func0000000000000087:
 
 func000000000000001f:
 	addiw	a2, a2, -2
+	li	a3, 1
 	seqz	a2, a2
+	slli	a3, a3, 35
 	slli	a2, a2, 3
+	addi	a3, a3, -8
 	add	a0, a0, a2
-	li	a2, 1
-	slli	a2, a2, 35
-	addi	a2, a2, -8
-	and	a1, a1, a2
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

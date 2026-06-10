@@ -17,9 +17,9 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	lui	a0, 524288
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmsleu.vi	v0, v8, 8
+	lui	a0, 524288
 	addiw	a1, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v10, a1

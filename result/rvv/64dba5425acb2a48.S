@@ -7,9 +7,9 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
+	lui	a0, 69905
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v8, 30
-	lui	a0, 69905
 	vor.vv	v8, v10, v8
 	addi	a0, a0, 273
 	slli	a1, a0, 32

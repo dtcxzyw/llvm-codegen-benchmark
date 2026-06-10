@@ -7,9 +7,9 @@ func0000000000000244:
 	ret
 
 func0000000000000108:
-	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vv	v8, v8, v12
+	fli.s	fa5, 1.0
 	vmfgt.vf	v12, v8, fa5
 	fmv.w.x	fa5, zero
 	vmfeq.vf	v13, v8, fa5

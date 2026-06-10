@@ -1,8 +1,8 @@
 func0000000000000030:
 	li	a2, -80
+	li	a3, -160
 	mul	a1, a1, a2
-	li	a2, -160
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

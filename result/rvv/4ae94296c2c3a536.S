@@ -41,9 +41,9 @@ func000000000000014a:
 	ret
 
 func0000000000000086:
+	li	a0, -19
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsle.vi	v12, v10, 2
-	li	a0, -19
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

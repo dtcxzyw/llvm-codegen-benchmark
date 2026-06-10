@@ -8,45 +8,45 @@ func000000000000000f:
 
 func000000000000001f:
 	zext.b	a2, a2
+	lui	a3, 1045520
 	slli	a2, a2, 20
+	addi	a3, a3, -1
 	or	a0, a0, a2
-	lui	a2, 1045520
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000003:
 	slliw	a2, a2, 29
+	lui	a3, 2048
 	or	a0, a0, a2
-	lui	a2, 2048
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000001b:
+	lui	a3, 16
 	slliw	a2, a2, 31
+	addi	a3, a3, -64
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -64
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000c:
 	zext.b	a2, a2
 	slli	a2, a2, 23
+	lui	a3, 1048064
 	or	a0, a0, a2
-	lui	a2, 1048064
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func000000000000000a:
 	slliw	a2, a2, 24
+	lui	a3, 524288
 	or	a0, a0, a2
-	lui	a2, 524288
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -59,11 +59,11 @@ func000000000000000b:
 
 func000000000000000e:
 	zext.b	a2, a2
+	lui	a3, 788496
 	slli	a2, a2, 16
+	addi	a3, a3, -1
 	or	a0, a0, a2
-	lui	a2, 788496
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

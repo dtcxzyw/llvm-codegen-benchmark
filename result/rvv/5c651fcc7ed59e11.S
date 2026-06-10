@@ -8,9 +8,9 @@ func000000000000001f:
 	ret
 
 func0000000000000010:
+	lui	a0, 1047552
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 3
-	lui	a0, 1047552
 	vmseq.vi	v0, v12, 3
 	vadd.vx	v12, v10, a0
 	vmerge.vvm	v10, v12, v10, v0
@@ -18,9 +18,9 @@ func0000000000000010:
 	ret
 
 func0000000000000014:
+	lui	a0, 1047552
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 3
-	lui	a0, 1047552
 	vmseq.vi	v0, v12, 3
 	vadd.vx	v12, v10, a0
 	vmerge.vvm	v10, v12, v10, v0
@@ -28,9 +28,9 @@ func0000000000000014:
 	ret
 
 func0000000000000015:
+	lui	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 3
-	lui	a0, 1024
 	vmseq.vi	v0, v12, 3
 	vadd.vx	v12, v10, a0
 	vmerge.vvm	v10, v12, v10, v0
@@ -38,9 +38,9 @@ func0000000000000015:
 	ret
 
 func000000000000001d:
+	lui	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v12, v12, 3
-	lui	a0, 1024
 	vmseq.vi	v0, v12, 3
 	vadd.vx	v12, v10, a0
 	vmerge.vvm	v10, v12, v10, v0

@@ -17,8 +17,8 @@ func0000000000000021:
 func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	lui	a0, 464631
 	vor.vv	v8, v8, v12
+	lui	a0, 464631
 	addi	a0, a0, -1690
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10

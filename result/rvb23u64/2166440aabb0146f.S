@@ -5,9 +5,9 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
+	li	a3, 1
 	or	a1, a1, a2
-	li	a2, 1
-	bseti	a2, a2, 62
+	bseti	a2, a3, 62
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret

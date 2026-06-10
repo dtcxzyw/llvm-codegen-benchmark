@@ -1,13 +1,14 @@
 func0000000000000000:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vfwcvt.f.x.v	v12, v10
 	lui	a0, 4103
 	slli	a0, a0, 38
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vfwcvt.f.x.v	v14, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v10, a0
+	vfmacc.vv	v12, v8, v14
 	li	a0, -1
-	vfmacc.vv	v10, v8, v12
 	slli	a0, a0, 32
-	vand.vx	v8, v10, a0
+	vand.vx	v8, v12, a0
 	ret
 

@@ -1,8 +1,8 @@
 func000000000000003e:
+	li	a0, 39
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v10, v8, -1
 	vwsll.vi	v8, v10, 2
-	li	a0, 39
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3

@@ -42,8 +42,8 @@ func0000000000000181:
 func0000000000000148:
 	zext.b	a0, a0
 	sext.w	a1, a1
-	sgtz	a1, a1
 	sltiu	a0, a0, 3
+	sgtz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

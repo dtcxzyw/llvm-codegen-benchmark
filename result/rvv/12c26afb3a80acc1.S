@@ -35,9 +35,9 @@ func000000000000005b:
 	.quad	0x4341c37937e08000
 func0000000000000061:
 	lui	a0, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfadd.vv	v12, v12, v16
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmfge.vf	v0, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0

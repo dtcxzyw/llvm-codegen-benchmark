@@ -1,10 +1,10 @@
 func0000000000000181:
 	andi	a2, a2, 3
+	lui	a3, 4
 	slli	a2, a2, 3
+	addi	a3, a3, 272
 	add	a0, a0, a2
-	lui	a2, 4
-	addi	a2, a2, 272
-	add	a1, a1, a2
+	add	a1, a1, a3
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -59,18 +59,18 @@ func0000000000000168:
 func0000000000000008:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	lui	a3, 1
 	add	a0, a0, a2
-	lui	a2, 1
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 
 func00000000000001e8:
+	lui	a3, 16
 	andi	a2, a2, 1016
+	addi	a3, a3, -8
 	add	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -8
-	add	a1, a1, a2
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 

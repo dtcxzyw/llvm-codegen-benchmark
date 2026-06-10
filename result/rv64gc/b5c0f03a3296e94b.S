@@ -46,8 +46,8 @@ func0000000000000016:
 	ret
 
 func0000000000000000:
-	srli	a1, a1, 2
 	li	a2, 416
+	srli	a1, a1, 2
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

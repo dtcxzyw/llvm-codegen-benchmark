@@ -19,8 +19,8 @@ func0000000000000044:
 func0000000000000148:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
-	sltiu	a0, a0, 1001
 	fle.d	a1, fa0, fa5
+	sltiu	a0, a0, 1001
 	not	a0, a0
 	and	a0, a0, a1
 	ret

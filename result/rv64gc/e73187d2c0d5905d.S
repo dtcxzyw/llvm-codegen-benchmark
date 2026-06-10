@@ -7,34 +7,34 @@ func0000000000000001:
 	ret
 
 func0000000000000068:
-	slli	a1, a0, 3
-	srli	a0, a0, 61
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 61
+	seqz	a1, a1
+	slli	a0, a0, 3
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000008:
-	slli	a1, a0, 2
-	srli	a0, a0, 62
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 62
+	seqz	a1, a1
+	slli	a0, a0, 2
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000048:
-	slli	a1, a0, 2
-	srli	a0, a0, 62
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 62
+	seqz	a1, a1
+	slli	a0, a0, 2
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000028:
-	slli	a1, a0, 2
-	srli	a0, a0, 62
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 62
+	seqz	a1, a1
+	slli	a0, a0, 2
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
@@ -57,18 +57,18 @@ func0000000000000078:
 	ret
 
 func0000000000000018:
-	slli	a1, a0, 4
-	srli	a0, a0, 60
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 60
+	seqz	a1, a1
+	slli	a0, a0, 4
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000058:
-	slli	a1, a0, 3
-	srli	a0, a0, 61
-	seqz	a0, a0
-	addi	a0, a0, -1
+	srli	a1, a0, 61
+	seqz	a1, a1
+	slli	a0, a0, 3
+	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
 
@@ -100,9 +100,9 @@ func000000000000002a:
 	ret
 
 func0000000000000004:
-	slli	a1, a0, 2
-	sltiu	a0, a0, 1024
-	addi	a0, a0, -1
+	sltiu	a1, a0, 1024
+	slli	a0, a0, 2
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
 

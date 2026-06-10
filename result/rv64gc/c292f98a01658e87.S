@@ -22,9 +22,9 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	sext.w	a2, a1
-	li	a3, -1
-	beq	a2, a3, .LBB3_2
+	li	a2, -1
+	sext.w	a3, a1
+	beq	a3, a2, .LBB3_2
 	li	a0, 9
 	subw	a0, a0, a1
 .LBB3_2:
@@ -54,16 +54,16 @@ func0000000000000026:
 	ret
 
 func0000000000000078:
-	sext.w	a2, a1
-	li	a3, 1022
-	bltu	a3, a2, .LBB7_2
+	li	a2, 1022
+	sext.w	a3, a1
+	bltu	a2, a3, .LBB7_2
 	xori	a0, a1, 1023
 .LBB7_2:
 	ret
 
 func0000000000000038:
-	sext.w	a3, a1
 	li	a2, 1
+	sext.w	a3, a1
 	bltu	a2, a3, .LBB8_2
 	subw	a0, a2, a1
 .LBB8_2:

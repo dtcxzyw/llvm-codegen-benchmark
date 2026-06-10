@@ -1,6 +1,6 @@
 func0000000000000048:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -142
 	seqz	a1, a1
 	sltiu	a0, a0, 127
@@ -18,8 +18,8 @@ func0000000000000108:
 func0000000000000102:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 26
 	addi	a0, a0, -95
+	sltiu	a1, a1, 26
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -27,8 +27,8 @@ func0000000000000102:
 func0000000000000302:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	snez	a1, a1
 	addi	a0, a0, -95
+	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -36,15 +36,15 @@ func0000000000000302:
 func0000000000000110:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 18
 	sltiu	a0, a0, 127
+	sltiu	a1, a1, 18
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000058:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -11
 	seqz	a1, a1
 	snez	a0, a0
@@ -54,15 +54,15 @@ func0000000000000058:
 func0000000000000130:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 2
 	sltiu	a0, a0, 32
+	sltiu	a1, a1, 2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000042:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -9
 	seqz	a1, a1
 	seqz	a0, a0
@@ -70,8 +70,8 @@ func0000000000000042:
 	ret
 
 func0000000000000068:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -9
 	seqz	a1, a1
 	sltiu	a0, a0, 2
@@ -96,16 +96,16 @@ func0000000000000210:
 
 func000000000000010c:
 	slli	a0, a0, 56
-	zext.b	a1, a1
 	srai	a0, a0, 56
+	zext.b	a1, a1
 	sltiu	a1, a1, 2
 	slti	a0, a0, -64
 	or	a0, a0, a1
 	ret
 
 func0000000000000308:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a1, a1, -2
 	snez	a1, a1
 	sltiu	a0, a0, 254
@@ -115,15 +115,15 @@ func0000000000000308:
 func0000000000000310:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	snez	a1, a1
 	sltiu	a0, a0, 65
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000202:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1
 	seqz	a0, a0
@@ -141,8 +141,8 @@ func0000000000000330:
 	ret
 
 func0000000000000208:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 32
 	xori	a1, a1, 1
 	sltiu	a0, a0, 32
@@ -152,15 +152,15 @@ func0000000000000208:
 func0000000000000118:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 2
 	addi	a0, a0, -16
+	sltiu	a1, a1, 2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000298:
-	zext.b	a0, a0
 	slli	a1, a1, 56
+	zext.b	a0, a0
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -170,15 +170,15 @@ func0000000000000298:
 func0000000000000182:
 	zext.b	a0, a0
 	slli	a1, a1, 56
-	srli	a1, a1, 63
 	addi	a0, a0, -32
+	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000060c:
-	slli	a0, a0, 56
 	zext.b	a1, a1
+	slli	a0, a0, 56
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
 	srli	a0, a0, 63
@@ -186,8 +186,8 @@ func000000000000060c:
 	ret
 
 func0000000000000218:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 8
 	xori	a1, a1, 1
 	snez	a0, a0
@@ -207,8 +207,8 @@ func0000000000000050:
 func0000000000000114:
 	slli	a0, a0, 56
 	zext.b	a1, a1
-	sltiu	a1, a1, 244
 	srli	a0, a0, 63
+	sltiu	a1, a1, 244
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -224,8 +224,8 @@ func000000000000018c:
 	ret
 
 func000000000000004c:
-	slli	a0, a0, 56
 	zext.b	a1, a1
+	slli	a0, a0, 56
 	addi	a1, a1, -8
 	seqz	a1, a1
 	srli	a0, a0, 63
@@ -235,8 +235,8 @@ func000000000000004c:
 func0000000000000054:
 	slli	a0, a0, 56
 	zext.b	a1, a1
-	seqz	a1, a1
 	srli	a0, a0, 63
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -251,8 +251,8 @@ func0000000000000610:
 	ret
 
 func0000000000000282:
-	zext.b	a0, a0
 	slli	a1, a1, 56
+	zext.b	a0, a0
 	srli	a1, a1, 63
 	xori	a1, a1, 1
 	seqz	a0, a0
@@ -260,8 +260,8 @@ func0000000000000282:
 	ret
 
 func0000000000000228:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 161
 	xori	a1, a1, 1
 	sltiu	a0, a0, 168
@@ -278,8 +278,8 @@ func0000000000000630:
 	ret
 
 func0000000000000608:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	sltiu	a1, a1, 8
 	xori	a1, a1, 1
 	sltiu	a0, a0, 245
@@ -295,9 +295,9 @@ func0000000000000128:
 	ret
 
 func00000000000002a8:
-	zext.b	a0, a0
 	slli	a1, a1, 56
 	srai	a1, a1, 56
+	zext.b	a0, a0
 	slti	a1, a1, 2
 	xori	a1, a1, 1
 	sltiu	a0, a0, 3
@@ -333,8 +333,8 @@ func0000000000000618:
 	ret
 
 func0000000000000290:
-	zext.b	a0, a0
 	slli	a1, a1, 56
+	zext.b	a0, a0
 	srai	a1, a1, 56
 	slti	a1, a1, 39
 	sltiu	a0, a0, 39
@@ -345,8 +345,8 @@ func0000000000000290:
 func0000000000000502:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a1, a1, 180
 	addi	a0, a0, -127
+	sltiu	a1, a1, 180
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

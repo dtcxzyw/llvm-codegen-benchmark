@@ -1,6 +1,6 @@
 func0000000000000051:
-	andi	a1, a1, 1
 	sltiu	a2, a2, 128
+	andi	a1, a1, 1
 	not	a2, a2
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
@@ -8,10 +8,10 @@ func0000000000000051:
 	ret
 
 func0000000000000010:
-	andi	a1, a1, 1
 	srli	a2, a2, 32
 	snez	a2, a2
 	slli	a2, a2, 3
+	andi	a1, a1, 1
 	addiw	a2, a2, 4
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
@@ -19,12 +19,12 @@ func0000000000000010:
 	ret
 
 func0000000000000013:
-	andi	a1, a1, 1
 	lui	a3, 2
 	addi	a3, a3, 1
 	sltu	a2, a2, a3
 	li	a3, 126
 	czero.nez	a2, a3, a2
+	andi	a1, a1, 1
 	addi	a2, a2, 56
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
@@ -32,13 +32,13 @@ func0000000000000013:
 	ret
 
 func0000000000000053:
-	andi	a1, a1, 1
 	lui	a3, 2
 	addi	a3, a3, 1
+	lui	a4, 1
 	sltu	a2, a2, a3
-	lui	a3, 1
-	addi	a3, a3, -64
+	addi	a3, a4, -64
 	czero.nez	a2, a3, a2
+	andi	a1, a1, 1
 	addiw	a2, a2, 56
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

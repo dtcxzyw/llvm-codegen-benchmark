@@ -12,10 +12,10 @@ func0000000000000ca1:
 func0000000000000c04:
 	li	a0, 73
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v12, v12, a0
+	vsrl.vi	v12, v12, 6
 	vadd.vv	v8, v8, v10
-	vadd.vx	v10, v12, a0
-	vsrl.vi	v10, v10, 6
-	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	ret

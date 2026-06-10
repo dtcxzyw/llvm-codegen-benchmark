@@ -17,8 +17,8 @@ func000000000000002f:
 
 func000000000000002e:
 	li	a3, 920
-	slli	a0, a0, 3
 	mul	a2, a2, a3
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 40
@@ -26,9 +26,9 @@ func000000000000002e:
 
 func000000000000003f:
 	lui	a3, 3
-	slli	a0, a0, 3
 	addi	a3, a3, 1360
 	mul	a2, a2, a3
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 80
@@ -56,10 +56,10 @@ func0000000000000003:
 
 func0000000000000002:
 	slli	a2, a2, 7
-	add	a1, a1, a2
-	slli	a2, a0, 3
+	slli	a3, a0, 3
 	slli	a0, a0, 4
-	add	a0, a0, a2
+	add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, -120
 	ret

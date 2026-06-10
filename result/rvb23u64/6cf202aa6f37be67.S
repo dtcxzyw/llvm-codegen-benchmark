@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a2, 21
 	sub	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mulw	a0, a0, a1
 	ret
 

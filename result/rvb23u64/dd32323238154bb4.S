@@ -5,8 +5,8 @@ func000000000000002f:
 	ret
 
 func0000000000000020:
-	sext.w	a2, a2
 	andi	a1, a1, -2048
+	sext.w	a2, a2
 	bclri	a1, a1, 11
 	add	a1, a1, a2
 	add.uw	a0, a0, a1

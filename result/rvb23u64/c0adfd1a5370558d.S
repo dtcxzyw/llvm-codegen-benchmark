@@ -14,9 +14,9 @@ func000000000000002c:
 	ret
 
 func0000000000000088:
-	zext.h	a0, a0
 	sext.w	a1, a1
 	li	a2, 1
+	zext.h	a0, a0
 	maxu	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

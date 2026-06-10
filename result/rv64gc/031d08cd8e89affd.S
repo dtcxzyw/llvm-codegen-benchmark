@@ -1,8 +1,8 @@
 func00000000000000f0:
-	slli	a2, a2, 3
 	li	a3, 1
-	addi	a2, a2, 127
+	slli	a2, a2, 3
 	slli	a3, a3, 36
+	addi	a2, a2, 127
 	addi	a3, a3, -128
 	and	a2, a2, a3
 	add	a0, a0, a1
@@ -52,10 +52,10 @@ func0000000000000050:
 	ret
 
 func00000000000000fc:
-	slli	a2, a2, 2
 	li	a3, 1
-	addi	a2, a2, 7
+	slli	a2, a2, 2
 	slli	a3, a3, 35
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a0, a0, a1

@@ -1,6 +1,6 @@
 func000000000000002f:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, 2
 	add	a0, a0, a1
@@ -8,8 +8,8 @@ func000000000000002f:
 	ret
 
 func000000000000003e:
-	andi	a0, a0, 1
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -4
 	add	a0, a0, a1
@@ -17,8 +17,8 @@ func000000000000003e:
 	ret
 
 func000000000000003f:
-	andi	a0, a0, 1
 	slli	a3, a2, 3
+	andi	a0, a0, 1
 	slli	a2, a2, 5
 	add	a2, a2, a3
 	addi	a0, a0, -1
@@ -29,8 +29,8 @@ func000000000000003f:
 	ret
 
 func000000000000002b:
-	andi	a0, a0, 1
 	slli	a3, a2, 3
+	andi	a0, a0, 1
 	slli	a2, a2, 5
 	add	a2, a2, a3
 	addi	a0, a0, -1
@@ -41,9 +41,9 @@ func000000000000002b:
 	ret
 
 func0000000000000003:
-	andi	a0, a0, 1
 	li	a3, 104
 	mul	a2, a2, a3
+	andi	a0, a0, 1
 	add	a1, a1, a2
 	bnez	a0, .LBB4_2
 	li	a0, 52

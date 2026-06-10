@@ -31,10 +31,10 @@ func00000000000000ec:
 	mul	a0, a0, a1
 	lui	a1, 1048064
 	srli	a1, a1, 12
+	li	a2, 1
 	and	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 51
-	xor	a0, a0, a1
+	slli	a2, a2, 51
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 

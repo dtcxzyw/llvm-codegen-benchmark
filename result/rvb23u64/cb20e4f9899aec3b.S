@@ -1,7 +1,7 @@
 func0000000000000007:
 	seqz	a2, a2
-	andi	a1, a1, 1
 	slli	a2, a2, 6
+	andi	a1, a1, 1
 	or	a0, a0, a2
 	slli	a1, a1, 14
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000007:
 
 func0000000000000004:
 	seqz	a2, a2
-	andi	a1, a1, 1
 	slli	a2, a2, 10
+	andi	a1, a1, 1
 	or	a0, a0, a2
 	slli	a1, a1, 2
 	or	a0, a0, a1
@@ -27,12 +27,12 @@ func0000000000000006:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 1
 	snez	a2, a2
+	andi	a0, a0, 1
 	slli	a2, a2, 61
+	bseti	a3, zero, 63
 	or	a1, a1, a2
-	bseti	a2, zero, 63
-	czero.nez	a0, a2, a0
+	czero.nez	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

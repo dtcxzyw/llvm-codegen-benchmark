@@ -1,6 +1,6 @@
 func0000000000000246:
-	slli	a2, a2, 1
 	li	a3, -1
+	slli	a2, a2, 1
 	srli	a3, a3, 1
 	andi	a0, a0, 1
 	bgeu	a2, a3, .LBB0_3

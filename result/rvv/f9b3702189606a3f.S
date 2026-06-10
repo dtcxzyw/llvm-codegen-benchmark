@@ -6,9 +6,9 @@ func00000000000001b6:
 	fli.s	fa5, -1.0
 	vmfgt.vf	v12, v8, fa5
 	fli.s	fa5, 256.0
-	vmnot.m	v12, v12
 	vmflt.vf	v13, v8, fa5
-	vmorn.mm	v0, v12, v13
+	vmnot.m	v8, v12
+	vmorn.mm	v0, v8, v13
 	ret
 
 func00000000000000a6:
@@ -17,9 +17,9 @@ func00000000000000a6:
 	vfmul.vf	v8, v8, fa5
 	vmfge.vf	v12, v8, fa5
 	fli.s	fa5, 8.0
-	vmnot.m	v12, v12
 	vmfle.vf	v13, v8, fa5
-	vmorn.mm	v0, v12, v13
+	vmnot.m	v8, v12
+	vmorn.mm	v0, v8, v13
 	ret
 
 func0000000000000110:

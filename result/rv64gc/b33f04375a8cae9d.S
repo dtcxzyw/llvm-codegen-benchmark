@@ -8,10 +8,10 @@ func0000000000000000:
 	mv	a1, a3
 	ret
 .LBB0_2:
-	srl	a0, a0, a2
-	not	a2, a2
+	not	a4, a2
 	slli	a3, a3, 1
-	sll	a2, a3, a2
+	srl	a0, a0, a2
+	sll	a2, a3, a4
 	or	a0, a0, a2
 	ret
 

@@ -8,16 +8,16 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	sext.w	a3, a0
-	andi	a1, a1, 1
+	andi	a3, a1, 1
+	sext.w	a1, a0
 	ori	a0, a2, 32
-	beqz	a1, .LBB1_3
-	bnez	a3, .LBB1_4
+	beqz	a3, .LBB1_3
+	bnez	a1, .LBB1_4
 .LBB1_2:
 	ret
 .LBB1_3:
 	mv	a2, a0
-	beqz	a3, .LBB1_2
+	beqz	a1, .LBB1_2
 .LBB1_4:
 	mv	a0, a2
 	ret

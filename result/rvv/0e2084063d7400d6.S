@@ -1,7 +1,7 @@
 func0000000000000028:
+	li	a0, -65
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vi	v9, v9, 11
-	li	a0, -65
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret
@@ -35,9 +35,9 @@ func0000000000000181:
 	ret
 
 func0000000000000081:
+	li	a0, -104
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsleu.vi	v9, v9, 1
-	li	a0, -104
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret

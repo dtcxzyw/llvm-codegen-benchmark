@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a2, 838115
 	xor	a0, a0, a1
-	lui	a1, 838115
-	addi	a1, a1, -687
+	addi	a1, a2, -687
 	mul	a0, a0, a1
 	lui	a1, 112755
 	roriw	a0, a0, 17
@@ -10,9 +10,9 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
+	lui	a2, 838115
 	xor	a0, a0, a1
-	lui	a1, 838115
-	addi	a1, a1, -687
+	addi	a1, a2, -687
 	mul	a0, a0, a1
 	lui	a1, 112755
 	roriw	a0, a0, 17

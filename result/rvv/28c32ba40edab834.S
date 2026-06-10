@@ -41,9 +41,9 @@ func0000000000000002:
 
 func000000000000000c:
 	fli.d	fa5, 1.0
-	li	a0, -481
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfadd.vf	v8, v8, fa5, v0.t
+	li	a0, -481
 	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
@@ -53,10 +53,10 @@ func0000000000000005:
 	lui	a0, 33005
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
-	lui	a0, 32941
-	slli	a0, a0, 35
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfadd.vf	v8, v8, fa5, v0.t
+	lui	a0, 32941
+	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16

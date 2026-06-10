@@ -1,7 +1,7 @@
 func0000000000000055:
+	lui	a3, 163
 	add	a1, a1, a2
-	lui	a2, 163
-	addi	a2, a2, -1005
+	addi	a2, a3, -1005
 	mul	a1, a1, a2
 	lui	a2, 256
 	add	a0, a0, a2
@@ -9,9 +9,9 @@ func0000000000000055:
 	ret
 
 func0000000000000011:
+	lui	a3, 10
 	add	a1, a1, a2
-	lui	a2, 10
-	addi	a2, a2, -946
+	addi	a2, a3, -946
 	mul	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -85
@@ -20,9 +20,9 @@ func0000000000000011:
 	ret
 
 func0000000000000040:
+	lui	a3, 163
 	add	a1, a1, a2
-	lui	a2, 163
-	addi	a2, a2, -1005
+	addi	a2, a3, -1005
 	mul	a1, a1, a2
 	lui	a2, 256
 	add	a0, a0, a2
@@ -30,9 +30,9 @@ func0000000000000040:
 	ret
 
 func0000000000000000:
+	lui	a3, 163
 	add	a1, a1, a2
-	lui	a2, 163
-	addi	a2, a2, -1005
+	addi	a2, a3, -1005
 	mul	a1, a1, a2
 	lui	a2, 256
 	add	a0, a0, a2

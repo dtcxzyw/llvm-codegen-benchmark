@@ -13,15 +13,15 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	srliw	a1, a1, 16
 	li	a2, 1
+	srliw	a1, a1, 16
 	sllw	a0, a2, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000002:
-	srliw	a1, a1, 4
 	li	a2, 4
+	srliw	a1, a1, 4
 	sllw	a0, a2, a0
 	and	a0, a0, a1
 	ret

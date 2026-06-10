@@ -11,9 +11,9 @@ func0000000000000005:
 
 func0000000000000031:
 	snez	a2, a2
+	lui	a3, 1048571
 	or	a1, a1, a2
-	lui	a2, 1048571
-	addi	a2, a2, -137
+	addi	a2, a3, -137
 	andi	a1, a1, 1
 	and	a0, a0, a2
 	sh3add	a0, a1, a0

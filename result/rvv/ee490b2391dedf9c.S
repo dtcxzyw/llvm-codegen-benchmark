@@ -99,9 +99,9 @@ func000000000000002c:
 	ret
 
 func0000000000000114:
+	li	a0, 255
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, 255
 	vmsltu.vv	v12, v8, v14
 	vmsgtu.vx	v8, v10, a0
 	vmor.mm	v0, v12, v8

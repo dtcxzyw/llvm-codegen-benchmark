@@ -1,25 +1,25 @@
 func0000000000000007:
-	slli	a1, a0, 56
-	srli	a1, a1, 57
-	or	a0, a0, a1
-	slli	a1, a0, 56
-	srli	a1, a1, 58
-	or	a0, a0, a1
-	slli	a1, a0, 56
-	srli	a1, a1, 60
-	or	a0, a0, a1
-	not	a0, a0
-	srli	a1, a0, 1
-	andi	a1, a1, 85
-	sub	a0, a0, a1
-	andi	a1, a0, 51
-	srli	a0, a0, 2
-	andi	a0, a0, 51
-	add	a0, a0, a1
-	srli	a1, a0, 4
-	add	a0, a0, a1
-	andi	a0, a0, 15
 	li	a1, 8
+	slli	a2, a0, 56
+	srli	a2, a2, 57
+	or	a0, a0, a2
+	slli	a2, a0, 56
+	srli	a2, a2, 58
+	or	a0, a0, a2
+	slli	a2, a0, 56
+	srli	a2, a2, 60
+	or	a0, a0, a2
+	not	a0, a0
+	srli	a2, a0, 1
+	andi	a2, a2, 85
+	sub	a0, a0, a2
+	srli	a2, a0, 2
+	andi	a0, a0, 51
+	andi	a2, a2, 51
+	add	a0, a0, a2
+	srli	a2, a0, 4
+	add	a0, a0, a2
+	andi	a0, a0, 15
 	sub	a0, a1, a0
 	ret
 
@@ -39,9 +39,9 @@ func0000000000000001:
 	srli	a1, a0, 1
 	andi	a1, a1, 85
 	sub	a0, a0, a1
-	andi	a1, a0, 51
-	srli	a0, a0, 2
+	srli	a1, a0, 2
 	andi	a0, a0, 51
+	andi	a1, a1, 51
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1

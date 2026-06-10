@@ -5,32 +5,32 @@ func000000000000004b:
 	ret
 
 func0000000000000008:
-	addw	a0, a0, a2
 	addiw	a1, a1, -1
+	addw	a0, a0, a2
 	min	a0, a0, a1
 	ret
 
 func0000000000000001:
-	addw	a0, a0, a2
 	addiw	a1, a1, -1
+	addw	a0, a0, a2
 	min	a0, a0, a1
 	ret
 
 func0000000000000009:
-	addw	a0, a0, a2
 	addiw	a1, a1, -1
+	addw	a0, a0, a2
 	min	a0, a0, a1
 	ret
 
 func0000000000000000:
-	addw	a0, a0, a2
 	addiw	a1, a1, -1
+	addw	a0, a0, a2
 	min	a0, a0, a1
 	ret
 
 func000000000000006a:
-	addw	a0, a0, a2
 	addiw	a1, a1, -1
+	addw	a0, a0, a2
 	min	a0, a0, a1
 	ret
 

@@ -8,10 +8,10 @@ func0000000000000024:
 
 func0000000000000081:
 	lui	a3, 488281
+	addi	a3, a3, 1023
+	add	a2, a2, a3
 	xor	a0, a0, a1
-	addi	a1, a3, 1023
-	add	a1, a1, a2
-	sltiu	a1, a1, -2
+	sltiu	a1, a2, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

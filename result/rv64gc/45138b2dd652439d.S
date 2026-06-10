@@ -1,7 +1,7 @@
 func0000000000000007:
 	lui	a1, 52429
-	slli	a2, a0, 48
 	slli	a1, a1, 4
+	slli	a2, a0, 48
 	mulhu	a1, a2, a1
 	srli	a1, a1, 19
 	slli	a2, a1, 1

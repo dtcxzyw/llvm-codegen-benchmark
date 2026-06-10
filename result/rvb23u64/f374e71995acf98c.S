@@ -31,10 +31,10 @@ func0000000000000022:
 	addi	a0, a0, -1638
 	fmv.w.x	fa5, a0
 	fmul.s	fa5, fa1, fa5
-	fli.s	fa4, 1.0
-	flt.s	a0, fa5, fa4
-	fmv.w.x	fa5, zero
-	flt.s	a1, fa0, fa5
+	fmv.w.x	fa4, zero
+	fli.s	fa3, 1.0
+	flt.s	a0, fa5, fa3
+	flt.s	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 

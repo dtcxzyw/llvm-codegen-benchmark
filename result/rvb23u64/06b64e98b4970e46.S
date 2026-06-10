@@ -1,9 +1,9 @@
 func0000000000000102:
-	sext.w	a1, a1
 	andi	a2, a2, -2048
 	lui	a3, 2
 	bclri	a2, a2, 11
 	addi	a3, a3, 1
+	sext.w	a1, a1
 	sltu	a2, a2, a3
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

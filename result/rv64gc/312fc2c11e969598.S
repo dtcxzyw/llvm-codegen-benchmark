@@ -22,11 +22,11 @@ func0000000000000004:
 
 func0000000000000014:
 	slli	a1, a1, 3
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
+	slli	a2, a2, 63
 	addi	a0, a0, -1
-	addi	a1, a1, 63
+	addi	a1, a2, 63
 	and	a0, a0, a1
 	ret
 
@@ -48,10 +48,10 @@ func000000000000003f:
 
 func0000000000000010:
 	slli	a1, a1, 2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	lui	a1, 1048575
 	and	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func0000000000000013:
 	sltu	a2, a1, a2
 	neg	a2, a2
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 5
+	srli	a2, a3, 5
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:

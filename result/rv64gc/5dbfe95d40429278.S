@@ -81,9 +81,9 @@ func000000000000014c:
 
 func0000000000000181:
 	neg	a2, a2
+	lui	a3, 1
 	xor	a1, a1, a2
-	lui	a2, 1
-	xor	a0, a0, a2
+	xor	a0, a0, a3
 	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -112,9 +112,9 @@ func0000000000000084:
 	ret
 
 func0000000000000d8c:
+	lui	a3, 10
 	add	a1, a1, a2
-	lui	a2, 10
-	addi	a2, a2, -960
+	addi	a2, a3, -960
 	xor	a1, a1, a2
 	xor	a0, a0, a2
 	snez	a1, a1

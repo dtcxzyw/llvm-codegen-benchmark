@@ -3,8 +3,8 @@ func0000000000000042:
 	slli	a1, a1, 32
 	addi	a1, a1, -3
 	and	a1, a1, a0
-	addi	a0, a0, -20
 	addi	a1, a1, -25
+	addi	a0, a0, -20
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -12,8 +12,8 @@ func0000000000000042:
 
 func0000000000001842:
 	andi	a1, a0, 30
-	addi	a0, a0, -30
 	addi	a1, a1, -28
+	addi	a0, a0, -30
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

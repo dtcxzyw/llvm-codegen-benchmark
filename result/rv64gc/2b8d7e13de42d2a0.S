@@ -15,12 +15,12 @@ func0000000000000002:
 	slli	a1, a1, 2
 	bnez	a3, .LBB1_2
 	li	a2, 120
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, -8
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000021:
-	sext.w	a2, a0
-	li	a3, 1
-	bne	a2, a3, .LBB0_2
+	li	a2, 1
+	sext.w	a3, a0
+	bne	a3, a2, .LBB0_2
 	andi	a0, a1, 12
 .LBB0_2:
 	sext.w	a0, a0
@@ -18,9 +18,9 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	sext.w	a2, a0
-	li	a3, 3
-	bne	a2, a3, .LBB2_2
+	li	a2, 3
+	sext.w	a3, a0
+	bne	a3, a2, .LBB2_2
 	andi	a0, a1, 2
 .LBB2_2:
 	sext.w	a0, a0

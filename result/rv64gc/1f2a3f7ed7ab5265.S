@@ -29,10 +29,10 @@ func0000000000000000:
 
 func000000000000000c:
 	or	a1, a1, a2
-	lui	a2, 1044464
 	or	a0, a0, a1
+	lui	a1, 1044464
 	slliw	a0, a0, 1
-	addi	a1, a2, -258
+	addi	a1, a1, -258
 	and	a0, a0, a1
 	ret
 

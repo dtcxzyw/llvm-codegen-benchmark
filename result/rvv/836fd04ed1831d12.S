@@ -1,9 +1,9 @@
 func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v10, 12
 	vmseq.vi	v0, v9, -8
-	vmerge.vim	v10, v8, 0, v0
-	vmv.v.i	v11, 12
-	vwsll.vv	v8, v11, v10
+	vmerge.vim	v11, v8, 0, v0
+	vwsll.vv	v8, v10, v11
 	ret
 
 func000000000000000e:

@@ -14,17 +14,17 @@ func0000000000000008:
 	ret
 
 func000000000000001f:
-	srli	a0, a0, 1
 	li	a1, 1
-	addi	a0, a0, 4
+	srli	a0, a0, 1
 	slli	a1, a1, 34
+	addi	a0, a0, 4
 	addi	a1, a1, -4
 	and	a0, a0, a1
 	ret
 
 func000000000000000f:
-	addi	a0, a0, 2
 	li	a1, -31
+	addi	a0, a0, 2
 	srli	a1, a1, 1
 	and	a0, a0, a1
 	ret

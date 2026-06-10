@@ -10,8 +10,8 @@ func0000000000000004:
 	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 277312
 	fmv.w.x	fa5, a0
-	lui	a0, 276672
 	vfrsub.vf	v8, v8, fa5
+	lui	a0, 276672
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -21,8 +21,8 @@ func000000000000000c:
 	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 277312
 	fmv.w.x	fa5, a0
-	lui	a0, 270080
 	vfrsub.vf	v8, v8, fa5
+	lui	a0, 270080
 	fmv.w.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret
@@ -32,8 +32,8 @@ func000000000000000a:
 	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 277312
 	fmv.w.x	fa5, a0
-	lui	a0, 274784
 	vfrsub.vf	v8, v8, fa5
+	lui	a0, 274784
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

@@ -23,9 +23,9 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	zext.w	a3, a2
-	lui	a4, 233017
-	addi	a4, a4, -455
+	lui	a3, 233017
+	zext.w	a4, a2
+	addi	a3, a3, -455
 	mul	a3, a3, a4
 	srli	a3, a3, 35
 	sh3add	a3, a3, a3
@@ -37,14 +37,13 @@ func0000000000000014:
 	or	a0, a0, a1
 	ret
 
+.LCPI3_0:
+	.quad	2635249153617166336
 func0000000000000018:
-	zext.w	a3, a2
-	lui	a4, 293
-	addi	a4, a4, -1755
-	slli	a4, a4, 12
-	addi	a4, a4, -1755
-	slli	a4, a4, 29
-	mulhu	a3, a3, a4
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
+	zext.w	a4, a2
+	mulhu	a3, a4, a3
 	slli	a4, a3, 3
 	add	a2, a2, a3
 	subw	a2, a2, a4

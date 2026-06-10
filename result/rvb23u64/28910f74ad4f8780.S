@@ -32,8 +32,8 @@ func000000000000108c:
 
 func0000000000001498:
 	srai	a2, a2, 2
-	sltiu	a0, a0, 769
 	not	a2, a2
+	sltiu	a0, a0, 769
 	sltu	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

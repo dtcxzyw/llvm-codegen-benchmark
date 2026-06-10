@@ -1,7 +1,7 @@
 func000000000000002c:
 	zext.b	a2, a2
-	snez	a1, a1
 	addi	a2, a2, -12
+	snez	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -33,8 +33,8 @@ func000000000000008c:
 
 func000000000000010c:
 	zext.b	a2, a2
-	snez	a1, a1
 	sltiu	a2, a2, 4
+	snez	a1, a1
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

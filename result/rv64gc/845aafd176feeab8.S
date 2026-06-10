@@ -45,8 +45,8 @@ func0000000000000019:
 
 func000000000000000d:
 	sext.w	a1, a1
-	slli	a0, a0, 49
 	sgtz	a1, a1
+	slli	a0, a0, 49
 	slli	a1, a1, 15
 	srli	a0, a0, 49
 	or	a0, a0, a1

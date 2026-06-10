@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.h	a1, a1
 	lui	a2, 6
+	sext.h	a1, a1
 	addi	a2, a2, -1593
 	mul	a1, a1, a2
 	srli	a2, a1, 63
@@ -11,8 +11,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	sext.h	a1, a1
 	lui	a2, 1
+	sext.h	a1, a1
 	addi	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a2, a1, 63

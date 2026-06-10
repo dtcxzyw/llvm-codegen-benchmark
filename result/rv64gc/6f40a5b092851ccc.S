@@ -1,9 +1,9 @@
 func0000000000000026:
 	slli	a2, a2, 48
 	slli	a1, a1, 48
-	slli	a0, a0, 48
 	srai	a2, a2, 48
 	srai	a1, a1, 48
+	slli	a0, a0, 48
 	add	a1, a1, a2
 	srai	a0, a0, 48
 	slt	a0, a1, a0
@@ -12,9 +12,9 @@ func0000000000000026:
 func0000000000000027:
 	slli	a2, a2, 48
 	slli	a1, a1, 48
-	slli	a0, a0, 48
 	srai	a2, a2, 48
 	srai	a1, a1, 48
+	slli	a0, a0, 48
 	add	a1, a1, a2
 	srai	a0, a0, 48
 	slt	a0, a0, a1
@@ -24,9 +24,9 @@ func0000000000000027:
 func000000000000002a:
 	slli	a2, a2, 48
 	slli	a1, a1, 48
-	slli	a0, a0, 48
 	srai	a2, a2, 48
 	srai	a1, a1, 48
+	slli	a0, a0, 48
 	add	a1, a1, a2
 	srai	a0, a0, 48
 	slt	a0, a0, a1

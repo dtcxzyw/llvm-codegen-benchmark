@@ -41,8 +41,8 @@ func0000000000000018:
 	ret
 
 func0000000000000028:
-	sext.w	a2, a2
 	lui	a3, 520192
+	sext.w	a2, a2
 	addi	a3, a3, -1
 	slt	a2, a3, a2
 	or	a0, a0, a1

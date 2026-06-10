@@ -14,9 +14,9 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
+	lui	a3, 3
 	srlw	a1, a1, a2
-	lui	a2, 3
-	addi	a2, a2, 63
+	addi	a2, a3, 63
 	xor	a1, a1, a2
 	snez	a1, a1
 	xori	a0, a0, 1

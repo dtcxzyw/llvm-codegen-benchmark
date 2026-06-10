@@ -4,8 +4,8 @@ func0000000000000002:
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	li	a1, 125
-	slli	a1, a1, 55
 	fmul.d	fa5, fa0, fa5
+	slli	a1, a1, 55
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4
 	or	a0, a0, a1

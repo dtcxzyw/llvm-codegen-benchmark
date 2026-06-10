@@ -29,8 +29,8 @@ func000000000000014a:
 	ret
 
 func000000000000002c:
-	seqz	a1, a1
 	addi	a0, a0, -3
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -42,8 +42,8 @@ func00000000000000c6:
 
 func000000000000008a:
 	li	a2, -1
-	slti	a0, a0, 5
 	slli	a2, a2, 32
+	slti	a0, a0, 5
 	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -109,8 +109,8 @@ func0000000000000184:
 	ret
 
 func0000000000000028:
-	seqz	a1, a1
 	sltiu	a0, a0, 64
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -148,8 +148,8 @@ func0000000000000094:
 	ret
 
 func0000000000000038:
-	seqz	a1, a1
 	sltiu	a0, a0, 2
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -161,8 +161,8 @@ func0000000000000024:
 	ret
 
 func0000000000000088:
-	sltiu	a1, a1, 40
 	srli	a0, a0, 12
+	sltiu	a1, a1, 40
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -181,22 +181,22 @@ func0000000000000301:
 	ret
 
 func00000000000000ca:
-	slti	a1, a1, 1
 	srli	a0, a0, 63
+	slti	a1, a1, 1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000188:
-	snez	a1, a1
 	sltiu	a0, a0, 16
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func00000000000000c8:
-	slti	a1, a1, 6
 	srli	a0, a0, 31
+	slti	a1, a1, 6
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -235,8 +235,8 @@ func0000000000000231:
 	ret
 
 func0000000000000098:
-	sltiu	a1, a1, 256
 	sltiu	a0, a0, 7
+	sltiu	a1, a1, 256
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -256,8 +256,8 @@ func0000000000000144:
 	ret
 
 func0000000000000284:
-	sltiu	a1, a1, 5
 	srli	a0, a0, 32
+	sltiu	a1, a1, 5
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -292,9 +292,9 @@ func0000000000000101:
 
 func000000000000028c:
 	li	a2, 2047
-	addi	a0, a0, -7
 	slli	a2, a2, 52
 	addi	a2, a2, 1
+	addi	a0, a0, -7
 	sltu	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -307,8 +307,8 @@ func0000000000000118:
 	ret
 
 func0000000000000198:
-	snez	a1, a1
 	sltiu	a0, a0, 10
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

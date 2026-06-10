@@ -1,8 +1,8 @@
 func000000000000000a:
 	srai	a1, a1, 3
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 4
+	srli	a1, a2, 4
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
@@ -10,9 +10,9 @@ func000000000000000a:
 
 func000000000000000e:
 	srai	a1, a1, 3
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 4
+	srli	a1, a2, 4
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -20,9 +20,9 @@ func000000000000000e:
 
 func0000000000000008:
 	srai	a1, a1, 1
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 2
+	srli	a1, a2, 2
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:

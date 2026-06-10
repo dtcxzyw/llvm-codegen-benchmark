@@ -1,7 +1,7 @@
 func000000000000001b:
-	srliw	a2, a2, 23
 	li	a3, 1680
 	mul	a1, a1, a3
+	srliw	a2, a2, 23
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -15,8 +15,8 @@ func0000000000000010:
 	ret
 
 func000000000000001f:
-	srliw	a2, a2, 3
 	slli	a1, a1, 5
+	srliw	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

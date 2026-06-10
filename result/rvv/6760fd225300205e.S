@@ -7,9 +7,9 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	lui	a0, 32
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	lui	a0, 32
 	addi	a0, a0, -16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -17,9 +17,9 @@ func000000000000000c:
 	ret
 
 func000000000000000e:
-	lui	a0, 32
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
+	lui	a0, 32
 	addi	a0, a0, -16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v10, a0

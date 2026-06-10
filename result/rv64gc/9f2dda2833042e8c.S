@@ -13,20 +13,20 @@ func0000000000000001:
 
 func000000000000004a:
 	lui	a1, 4096
+	lui	a2, 8192
 	addw	a0, a0, a1
-	lui	a1, 8192
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	neg	a0, a0
 	andi	a0, a0, 20
 	ret
 
 func0000000000000004:
+	li	a1, 127
 	addi	a0, a0, -2048
-	addiw	a1, a0, -1479
-	li	a2, 127
+	addiw	a2, a0, -1479
 	lui	a0, 1
-	bltu	a1, a2, .LBB3_2
+	bltu	a2, a1, .LBB3_2
 	addi	a0, a0, -432
 	ret
 .LBB3_2:
@@ -34,8 +34,8 @@ func0000000000000004:
 	ret
 
 func0000000000000024:
-	addiw	a0, a0, -3
 	li	a1, 2
+	addiw	a0, a0, -3
 	bltu	a0, a1, .LBB4_2
 	li	a0, 16
 	ret
@@ -62,8 +62,8 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	li	a1, 2
+	sext.w	a0, a0
 	beq	a0, a1, .LBB7_2
 	li	a0, 16
 	ret

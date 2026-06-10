@@ -12,8 +12,8 @@ func00000000000000a1:
 	ret
 
 func0000000000000066:
-	slli	a1, a1, 31
 	li	a2, -1
+	slli	a1, a1, 31
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	srai	a1, a1, 32
@@ -22,8 +22,8 @@ func0000000000000066:
 	ret
 
 func0000000000000021:
-	slli	a1, a1, 26
 	li	a2, 1
+	slli	a1, a1, 26
 	slli	a2, a2, 33
 	add	a1, a1, a2
 	srai	a1, a1, 32

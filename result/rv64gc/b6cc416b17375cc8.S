@@ -1,8 +1,8 @@
 func0000000000000005:
 	slliw	a1, a1, 8
+	lui	a2, 34767
 	or	a0, a0, a1
-	lui	a1, 34767
-	addi	a1, a1, 98
+	addi	a1, a2, 98
 	xor	a0, a0, a1
 	ret
 
@@ -14,9 +14,9 @@ func0000000000000007:
 
 func0000000000000001:
 	slliw	a1, a1, 31
+	lui	a2, 1414
 	or	a0, a0, a1
-	lui	a1, 1414
-	addi	a1, a1, -401
+	addi	a1, a2, -401
 	xor	a0, a0, a1
 	ret
 
@@ -28,9 +28,9 @@ func0000000000000006:
 
 func0000000000000000:
 	slliw	a1, a1, 2
+	lui	a2, 349525
 	or	a0, a0, a1
-	lui	a1, 349525
-	addi	a1, a1, 1365
+	addi	a1, a2, 1365
 	xor	a0, a0, a1
 	ret
 

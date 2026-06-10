@@ -1,17 +1,17 @@
 func0000000000000004:
-	fmv.s	fa5, fa0
+	fmv.w.x	fa5, zero
 	andi	a0, a0, 1
-	fmv.w.x	fa0, zero
 	bnez	a0, .LBB0_2
-	fmax.s	fa0, fa5, fa0
+	fmax.s	fa5, fa0, fa5
 .LBB0_2:
+	fmv.s	fa0, fa5
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	lui	a1, 522240
 	addi	a1, a1, -1
 	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	fmv.w.x	fa4, zero
 	fle.s	a0, fa4, fa0

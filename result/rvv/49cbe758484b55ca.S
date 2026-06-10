@@ -6,11 +6,11 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v12, v0
-	fmv.w.x	fa5, zero
-	lui	a0, 522240
 	vmfge.vf	v0, v8, fa5
+	lui	a0, 522240
 	addi	a0, a0, -1
 	vmv.v.x	v16, a0
 	vmerge.vvm	v8, v16, v8, v0

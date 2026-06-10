@@ -1,7 +1,7 @@
 func0000000000000005:
 	addi	a1, a1, -1
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a1, a0
@@ -25,8 +25,8 @@ func0000000000000065:
 	ret
 
 func00000000000000d5:
-	addiw	a1, a1, 1
 	slli	a0, a0, 32
+	addiw	a1, a1, 1
 	srli	a0, a0, 32
 	sub	a0, a1, a0
 	slli	a0, a0, 1
@@ -34,8 +34,8 @@ func00000000000000d5:
 
 func0000000000000085:
 	addi	a1, a1, 1
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a1, a0
@@ -44,8 +44,8 @@ func0000000000000085:
 
 func00000000000000c5:
 	addi	a1, a1, 1
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a1, a0
@@ -54,8 +54,8 @@ func00000000000000c5:
 
 func0000000000000045:
 	addi	a1, a1, 1
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a1, a0

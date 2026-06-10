@@ -8,8 +8,8 @@ func0000000000000013:
 
 func0000000000000083:
 	sext.w	a1, a1
-	slli	a0, a0, 32
 	sltiu	a1, a1, 9
+	slli	a0, a0, 32
 	xori	a1, a1, 1
 	srli	a0, a0, 32
 	sll	a0, a0, a1

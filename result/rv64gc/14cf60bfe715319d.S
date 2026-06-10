@@ -10,8 +10,8 @@ func0000000000000602:
 	lui	a3, 48
 	and	a2, a2, a3
 	lui	a3, 32
-	seqz	a0, a0
 	xor	a2, a2, a3
+	seqz	a0, a0
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -35,8 +35,8 @@ func0000000000000082:
 
 func0000000000000604:
 	zext.b	a2, a2
-	seqz	a1, a1
 	addi	a2, a2, -14
+	seqz	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

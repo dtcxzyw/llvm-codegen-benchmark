@@ -23,13 +23,13 @@ func00000000000000b7:
 
 func0000000000000042:
 	lui	a0, 66301
-	fmv.d.x	fa5, zero
 	slli	a0, a0, 34
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
+	fmv.d.x	fa5, zero
+	vmflt.vf	v16, v8, fa5
 	lui	a0, 983805
 	slli	a0, a0, 34
-	vmflt.vf	v16, v8, fa5
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17

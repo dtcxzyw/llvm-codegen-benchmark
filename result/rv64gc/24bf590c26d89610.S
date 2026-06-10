@@ -50,8 +50,8 @@ func0000000000000034:
 
 func0000000000000020:
 	li	a2, 85
-	slli	a0, a0, 56
 	mul	a1, a1, a2
+	slli	a0, a0, 56
 	srai	a0, a0, 56
 	add	a0, a0, a1
 	addiw	a0, a0, -1

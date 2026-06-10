@@ -1,6 +1,6 @@
 func0000000000000003:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	czero.nez	a1, a1, a0
 	or	a0, a0, a1
 	sgtz	a1, a0
@@ -9,8 +9,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	sext.w	a0, a0
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	czero.nez	a1, a1, a0
 	or	a0, a0, a1
 	sgtz	a1, a0

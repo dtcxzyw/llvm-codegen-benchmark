@@ -83,10 +83,10 @@ func00000000000000e1:
 
 func00000000000000f8:
 	sext.w	a1, a1
+	li	a2, 3
 	sub	a1, a1, a0
-	li	a0, 3
-	slli	a0, a0, 10
-	sltu	a0, a0, a1
+	slli	a2, a2, 10
+	sltu	a0, a2, a1
 	ret
 
 func00000000000000a6:

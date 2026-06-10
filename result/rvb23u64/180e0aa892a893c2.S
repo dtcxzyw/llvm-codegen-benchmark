@@ -6,14 +6,14 @@ func0000000000000000:
 
 func000000000000000f:
 	zext.h	a2, a2
+	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	sh2add	a1, a2, a2
-	sh3add	a0, a1, a0
+	sh3add	a0, a2, a0
 	ret
 
 func000000000000000b:
-	add	a0, a0, a1
 	slli	a2, a2, 48
+	add	a0, a0, a1
 	srli	a2, a2, 42
 	add	a0, a0, a2
 	ret
@@ -39,8 +39,8 @@ func000000000000001b:
 	ret
 
 func0000000000000008:
-	zext.h	a2, a2
 	sh2add	a0, a1, a0
+	zext.h	a2, a2
 	add	a0, a0, a2
 	ret
 
@@ -51,8 +51,8 @@ func000000000000000c:
 	ret
 
 func0000000000000018:
-	zext.h	a2, a2
 	sh1add	a0, a1, a0
+	zext.h	a2, a2
 	sh1add	a0, a2, a0
 	ret
 

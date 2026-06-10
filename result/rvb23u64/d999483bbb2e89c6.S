@@ -20,10 +20,10 @@ func0000000000000003:
 
 func0000000000000007:
 	bseti	a2, zero, 31
+	lui	a3, 131071
 	add	a1, a1, a2
-	lui	a2, 131071
-	slli	a2, a2, 20
-	and	a1, a1, a2
+	slli	a3, a3, 20
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -40,8 +40,8 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	addi	a1, a1, 112
 	bseti	a2, zero, 37
+	addi	a1, a1, 112
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	or	a0, a0, a1

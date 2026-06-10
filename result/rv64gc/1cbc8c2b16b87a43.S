@@ -25,8 +25,8 @@ func000000000000007c:
 	li	a2, 488
 	mul	a1, a1, a2
 	lui	a2, 218
-	add	a0, a0, a1
-	addi	a1, a2, -376
+	addi	a2, a2, -376
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -34,8 +34,8 @@ func00000000000000fc:
 	li	a2, 488
 	mul	a1, a1, a2
 	lui	a2, 218
-	add	a0, a0, a1
-	addi	a1, a2, 600
+	addi	a2, a2, 600
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -43,8 +43,8 @@ func00000000000000ff:
 	li	a2, 122
 	mul	a1, a1, a2
 	lui	a2, 178
-	add	a0, a0, a1
-	addi	a1, a2, 350
+	addi	a2, a2, 350
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

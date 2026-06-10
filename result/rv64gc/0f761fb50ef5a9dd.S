@@ -1,6 +1,6 @@
 func000000000000214a:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sraiw	a1, a1, 31
 	slt	a0, a2, a0
 	seqz	a1, a1
@@ -8,8 +8,8 @@ func000000000000214a:
 	ret
 
 func000000000000014a:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sraiw	a1, a1, 31
 	slt	a0, a2, a0
 	seqz	a1, a1

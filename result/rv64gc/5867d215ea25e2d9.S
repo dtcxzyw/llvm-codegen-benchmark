@@ -72,10 +72,10 @@ func0000000000000018:
 	ret
 
 func0000000000000046:
-	slli	a1, a0, 1
-	slli	a0, a0, 2
-	addw	a0, a0, a1
 	lui	a1, 524288
+	slli	a2, a0, 1
+	slli	a0, a0, 2
+	addw	a0, a0, a2
 	addiw	a1, a1, -6
 	slt	a0, a0, a1
 	ret

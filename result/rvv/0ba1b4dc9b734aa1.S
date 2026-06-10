@@ -1,7 +1,7 @@
 func0000000000000294:
+	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v12, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vsrl.vi	v14, v10, 16
 	vmerge.vvm	v10, v14, v10, v0
@@ -22,9 +22,9 @@ func0000000000000298:
 	ret
 
 func0000000000000084:
+	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v12, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v10, a0
 	vsrl.vi	v14, v10, 16
 	vmerge.vvm	v10, v14, v10, v0
@@ -45,9 +45,9 @@ func0000000000000088:
 	ret
 
 func0000000000000094:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v12, v0
-	bseti	a0, zero, 32
 	vmsltu.vx	v0, v10, a0
 	li	a0, 32
 	vsrl.vx	v14, v10, a0

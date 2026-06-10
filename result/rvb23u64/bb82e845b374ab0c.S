@@ -1,7 +1,7 @@
 func000000000000000a:
-	sext.w	a1, a1
 	li	a2, 1178
 	sh2add	a0, a2, a0
+	sext.w	a1, a1
 	divu	a0, a0, a1
 	ret
 

@@ -28,8 +28,8 @@ func00000000000000da:
 
 func0000000000000000:
 	lui	a3, 393216
-	slliw	a1, a1, 16
 	addw	a2, a2, a3
+	slliw	a1, a1, 16
 	lui	a3, 512
 	or	a1, a1, a2
 	addw	a0, a0, a3

@@ -15,10 +15,10 @@ func0000000000000380:
 	ret
 
 func00000000000003c0:
+	lui	a0, 5142
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 6
 	vadd.vv	v8, v10, v8
-	lui	a0, 5142
 	vadd.vv	v8, v8, v12
 	addi	a0, a0, 175
 	slli	a0, a0, 13
@@ -27,10 +27,10 @@ func00000000000003c0:
 	ret
 
 func00000000000001df:
+	lui	a0, 5142
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 6
 	vadd.vv	v8, v10, v8
-	lui	a0, 5142
 	vadd.vv	v8, v8, v12
 	addi	a0, a0, 175
 	slli	a0, a0, 13
@@ -39,10 +39,10 @@ func00000000000001df:
 	ret
 
 func0000000000000000:
+	lui	a0, 5142
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 6
 	vadd.vv	v8, v10, v8
-	lui	a0, 5142
 	vadd.vv	v8, v8, v12
 	addi	a0, a0, 175
 	slli	a0, a0, 13

@@ -47,11 +47,11 @@ func00000000000001e1:
 	ret
 
 func0000000000000006:
-	sext.w	a3, a0
-	lui	a0, 356
-	li	a4, 2
-	addi	a0, a0, 572
-	blt	a3, a4, .LBB5_2
+	lui	a3, 356
+	sext.w	a4, a0
+	li	a5, 2
+	addi	a0, a3, 572
+	blt	a4, a5, .LBB5_2
 	addw	a0, a0, a2
 	ret
 .LBB5_2:

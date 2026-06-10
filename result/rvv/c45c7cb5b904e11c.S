@@ -6,10 +6,10 @@ func00000000000000a8:
 	ret
 
 func00000000000000a5:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v12, 0
 	li	a0, 30
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v14, a0
+	vmsgt.vi	v0, v12, 0
 	vmerge.vvm	v12, v14, v12, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12

@@ -1,6 +1,6 @@
 func0000000000000e94:
-	sext.w	a0, a0
 	srli	a2, a2, 40
+	sext.w	a0, a0
 	add	a1, a1, a2
 	srli	a1, a1, 24
 	sltiu	a0, a0, 255

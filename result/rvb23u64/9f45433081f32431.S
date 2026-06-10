@@ -28,8 +28,8 @@ func0000000000000021:
 	ret
 
 func000000000000008c:
-	zext.h	a2, a2
 	lui	a3, 4
+	zext.h	a2, a2
 	addi	a3, a3, -383
 	sltu	a2, a2, a3
 	czero.eqz	a1, a2, a1

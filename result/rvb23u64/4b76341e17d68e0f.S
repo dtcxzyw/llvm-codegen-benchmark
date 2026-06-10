@@ -22,14 +22,14 @@ func000000000000006b:
 func000000000000007a:
 	srli	a3, a2, 1
 	sh1add	a2, a2, a2
-	sh1add	a0, a0, a0
 	neg	a3, a3
+	sh1add	a0, a0, a0
 	slli	a2, a2, 5
-	slli	a0, a0, 5
+	sh1add	a3, a3, a3
 	add	a1, a1, a2
-	sh1add	a2, a3, a3
-	slli	a2, a2, 5
+	slli	a0, a0, 5
+	slli	a3, a3, 5
 	add	a0, a0, a1
-	add	a0, a0, a2
+	add	a0, a0, a3
 	ret
 

@@ -19,15 +19,15 @@ func0000000000000017:
 func000000000000001c:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, -1
-	vmerge.vim	v10, v10, 4, v0
 	vsll.vi	v8, v8, 2
+	vmerge.vim	v10, v10, 4, v0
 	vadd.vv	v8, v8, v10
 	ret
 
 func000000000000004f:
+	li	a0, 19
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v12, 3
-	li	a0, 19
 	vmerge.vxm	v8, v8, a0, v0
 	vsll.vi	v10, v10, 5
 	vadd.vv	v8, v8, v10

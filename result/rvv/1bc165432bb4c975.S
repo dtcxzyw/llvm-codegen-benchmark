@@ -11,12 +11,12 @@ func0000000000000020:
 	ret
 
 func0000000000000018:
+	lui	a0, 4
+	addi	a0, a0, 417
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 4
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vand.vi	v8, v8, 1
-	addi	a0, a0, 417
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vx	v9, v10, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -25,9 +25,9 @@ func0000000000000018:
 	ret
 
 func0000000000000004:
+	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 64
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -50,9 +50,9 @@ func0000000000000028:
 	ret
 
 func0000000000000030:
+	li	a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 40
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e64, m2, ta, ma

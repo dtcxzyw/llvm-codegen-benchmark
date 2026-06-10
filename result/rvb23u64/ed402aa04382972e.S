@@ -7,27 +7,27 @@ func0000000000000001:
 	ret
 
 func0000000000000027:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 
 func000000000000002a:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	slt	a0, a1, a0
 	ret
 
 func0000000000000008:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000004:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	sltu	a0, a0, a1
 	ret
 

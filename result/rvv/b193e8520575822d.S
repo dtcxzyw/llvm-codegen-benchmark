@@ -15,9 +15,9 @@ func0000000000000044:
 	ret
 
 func000000000000005b:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v20, v12, v8
+	fmv.w.x	fa5, zero
 	vmfle.vf	v8, v16, fa5
 	vmnot.m	v9, v20
 	vmandn.mm	v0, v9, v8
@@ -65,9 +65,9 @@ func0000000000000022:
 	ret
 
 func000000000000003d:
-	lui	a0, 272128
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v20, v8, v12
+	lui	a0, 272128
 	fmv.w.x	fa5, a0
 	vmfge.vf	v8, v16, fa5
 	vmnot.m	v9, v20

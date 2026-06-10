@@ -5,15 +5,15 @@ func0000000000000007:
 	li	a0, 512
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vor.vx	v8, v8, a0, v0.t
-	lui	a0, 32
 	vmv1r.v	v0, v11
+	lui	a0, 32
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000004:
+	li	a0, 77
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv1r.v	v11, v0
-	li	a0, 77
 	vmseq.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vor.vi	v8, v8, 5, v0.t

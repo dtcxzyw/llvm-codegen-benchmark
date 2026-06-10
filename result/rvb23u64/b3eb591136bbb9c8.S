@@ -1,25 +1,25 @@
 func0000000000000021:
 	lui	a1, 2
-	lui	a2, 349525
 	addi	a1, a1, -2047
-	addi	a2, a2, 1366
+	lui	a2, 349525
 	addw	a0, a0, a1
-	mul	a2, a2, a0
-	srli	a1, a2, 63
-	srli	a2, a2, 32
+	addi	a1, a2, 1366
+	mul	a1, a1, a0
+	srli	a2, a1, 63
+	srli	a1, a1, 32
 	add	a1, a1, a2
-	lui	a2, 8517
 	sh1add	a1, a1, a1
 	sub	a0, a0, a1
+	lui	a1, 8517
 	addiw	a0, a0, -1
-	addi	a1, a2, 381
+	addi	a1, a1, 381
 	czero.nez	a0, a1, a0
 	bseti	a0, a0, 30
 	ret
 
 func0000000000000006:
-	addiw	a0, a0, 700
 	lui	a1, 599186
+	addiw	a0, a0, 700
 	addi	a1, a1, 1171
 	mul	a1, a1, a0
 	srli	a1, a1, 32
@@ -52,15 +52,15 @@ func0000000000000001:
 
 func0000000000000026:
 	lui	a1, 596
-	lui	a2, 599186
 	addi	a1, a1, -627
-	addi	a2, a2, 1171
+	lui	a2, 599186
 	addw	a0, a0, a1
-	mul	a2, a2, a0
-	srli	a2, a2, 32
-	add	a2, a2, a0
-	srliw	a1, a2, 31
-	sraiw	a2, a2, 2
+	addi	a1, a2, 1171
+	mul	a1, a1, a0
+	srli	a1, a1, 32
+	add	a1, a1, a0
+	srliw	a2, a1, 31
+	sraiw	a1, a1, 2
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	sub	a1, a1, a2

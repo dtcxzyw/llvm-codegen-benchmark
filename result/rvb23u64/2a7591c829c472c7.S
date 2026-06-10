@@ -1,6 +1,6 @@
 func0000000000001861:
-	zext.b	a1, a1
 	addiw	a2, a2, 1
+	zext.b	a1, a1
 	addi	a2, a2, -9
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 9

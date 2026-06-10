@@ -9,34 +9,34 @@ func000000000000000f:
 	ret
 
 func000000000000001f:
-	sext.w	a2, a2
 	li	a3, -1
-	slli	a0, a0, 32
 	slli	a3, a3, 32
+	sext.w	a2, a2
 	addi	a3, a3, 31
 	slli	a3, a3, 27
+	slli	a0, a0, 32
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000013:
-	sext.w	a2, a2
 	li	a3, 1
-	slli	a0, a0, 34
+	sext.w	a2, a2
 	slli	a3, a3, 34
 	addi	a3, a3, -16
+	slli	a0, a0, 34
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000019:
-	sext.w	a2, a2
 	lui	a3, 256
-	slli	a0, a0, 40
+	sext.w	a2, a2
 	addi	a3, a3, -1
 	slli	a3, a3, 20
+	slli	a0, a0, 40
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

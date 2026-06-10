@@ -6,16 +6,16 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
+	lui	a2, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	ret
 
 func0000000000000001:
+	lui	a2, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mul	a0, a0, a1
 	ret
 
@@ -72,12 +72,12 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
+	lui	a2, 4112
+	addi	a2, a2, 257
+	slli	a3, a2, 32
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a1, a1, 257
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mul	a0, a0, a1
+	add	a2, a2, a3
+	mul	a0, a0, a2
 	ret
 
 func000000000000000a:
@@ -88,9 +88,9 @@ func000000000000000a:
 	ret
 
 func000000000000000d:
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 576
+	addi	a1, a2, 576
 	mul	a0, a0, a1
 	ret
 

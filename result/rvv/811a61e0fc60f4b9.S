@@ -50,9 +50,9 @@ func0000000000000006:
 	ret
 
 func000000000000000d:
+	li	a0, 34
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 10
-	li	a0, 34
 	vsrl.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

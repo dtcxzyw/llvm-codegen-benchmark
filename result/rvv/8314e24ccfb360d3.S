@@ -22,10 +22,10 @@ func0000000000000044:
 func000000000000002e:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v12, v16
-	vmerge.vvm	v12, v16, v12, v0
-	vmfeq.vv	v16, v12, v12
+	vmfeq.vv	v20, v8, v8
+	vmerge.vvm	v8, v16, v12, v0
 	vmfeq.vv	v12, v8, v8
-	vmand.mm	v0, v16, v12
+	vmand.mm	v0, v12, v20
 	ret
 
 func0000000000000024:

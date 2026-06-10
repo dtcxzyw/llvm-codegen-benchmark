@@ -26,14 +26,14 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
 	lui	a2, 458752
+	andi	a0, a0, 1
 	addi	a2, a2, -1
-	and	a1, a1, a2
-	lui	a2, 397312
+	lui	a3, 397312
 	addi	a0, a0, -1
-	addi	a2, a2, -1026
-	and	a0, a0, a2
+	addi	a3, a3, -1026
+	and	a1, a1, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	lui	a1, 524288
 	or	a0, a0, a1

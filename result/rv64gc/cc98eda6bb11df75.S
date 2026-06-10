@@ -20,12 +20,12 @@ func0000000000000000:
 
 func00000000000001aa:
 	li	a3, 298
-	add	a0, a0, a1
-	lui	a1, 1048575
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, -544
+	lui	a3, 1048575
 	add	a0, a0, a1
+	addi	a1, a3, -544
+	add	a0, a0, a1
+	add	a0, a0, a2
 	sraiw	a0, a0, 8
 	ret
 

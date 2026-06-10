@@ -20,9 +20,9 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	andi	a1, a1, -512
 	srli	a0, a0, 61
 	seqz	a0, a0
+	andi	a1, a1, -512
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret

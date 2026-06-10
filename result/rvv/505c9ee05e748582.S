@@ -76,8 +76,8 @@ func0000000000000202:
 	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vandn.vx	v10, v10, a0
-	li	a0, 64
 	vmseq.vi	v12, v10, 0
+	li	a0, 64
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret

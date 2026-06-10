@@ -7,9 +7,9 @@ func0000000000000000:
 
 func0000000000000007:
 	slli	a1, a1, 1
+	lui	a2, 1
 	maxu	a0, a1, a0
-	lui	a1, 1
-	addi	a1, a1, -2008
+	addi	a1, a2, -2008
 	mul	a0, a0, a1
 	ret
 

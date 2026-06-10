@@ -5,8 +5,8 @@ func0000000000000085:
 	addi	a0, a0, -712
 	ret
 .LBB0_2:
-	addi	a0, a0, -1075
 	lui	a1, 77
+	addi	a0, a0, -1075
 	addi	a1, a1, 260
 	mulw	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func0000000000000084:
 	addi	a0, a0, 1788
 	ret
 .LBB1_2:
-	addi	a0, a0, -1077
 	lui	a1, 1048397
+	addi	a0, a0, -1077
 	addi	a1, a1, 261
 	mulw	a0, a0, a1
 	ret
@@ -41,8 +41,8 @@ func0000000000000087:
 	addi	a0, a0, -599
 	ret
 .LBB3_2:
-	addi	a0, a0, -152
 	lui	a1, 19
+	addi	a0, a0, -152
 	addi	a1, a1, 1089
 	mulw	a0, a0, a1
 	ret

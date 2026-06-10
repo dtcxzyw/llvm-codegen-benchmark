@@ -39,9 +39,9 @@ func000000000000000c:
 
 func0000000000000005:
 	fmv.w.x	fa5, zero
-	lui	a0, 792017
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v20, v16, fa5
+	lui	a0, 792017
 	addi	a0, a0, -939
 	vmnot.m	v0, v20
 	vmv.v.x	v16, a0

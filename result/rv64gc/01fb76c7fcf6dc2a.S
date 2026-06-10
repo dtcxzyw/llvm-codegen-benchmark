@@ -9,11 +9,11 @@ func0000000000000021:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a1, a1, a3
+	lui	a4, 8
 	and	a2, a2, a3
-	lui	a3, 8
-	addi	a3, a3, -1
-	xor	a2, a2, a3
-	xor	a1, a1, a3
+	addi	a4, a4, -1
+	xor	a2, a2, a4
+	xor	a1, a1, a4
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2

@@ -1,7 +1,7 @@
 func000000000000000a:
 	lui	a3, 2048
-	slliw	a1, a1, 8
 	and	a2, a2, a3
+	slliw	a1, a1, 8
 	lui	a3, 2096
 	or	a1, a1, a2
 	and	a0, a0, a3
@@ -17,10 +17,10 @@ func000000000000000f:
 	ret
 
 func0000000000000003:
-	slliw	a2, a2, 24
 	lui	a3, 4080
 	and	a1, a1, a3
 	lui	a3, 16
+	slliw	a2, a2, 24
 	addi	a3, a3, -256
 	or	a1, a1, a2
 	and	a0, a0, a3
@@ -37,10 +37,10 @@ func000000000000000b:
 	ret
 
 func0000000000000007:
-	slliw	a2, a2, 24
 	lui	a3, 4080
 	and	a1, a1, a3
 	lui	a3, 16
+	slliw	a2, a2, 24
 	addi	a3, a3, -256
 	or	a1, a1, a2
 	and	a0, a0, a3

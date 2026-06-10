@@ -28,8 +28,8 @@ func0000000000000065:
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	lui	a0, 1048409
 	vsrl.vi	v10, v10, 21
+	lui	a0, 1048409
 	addi	a0, a0, 131
 	vmacc.vx	v8, a0, v10
 	ret
@@ -38,8 +38,8 @@ func000000000000006c:
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	lui	a0, 115
 	vsrl.vi	v10, v10, 21
+	lui	a0, 115
 	addi	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret

@@ -7,18 +7,18 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
+	li	a1, 4
 	srli	a0, a0, 4
 	addiw	a0, a0, 8
-	li	a1, 4
 	blt	a1, a0, .LBB1_2
 	li	a0, 4
 .LBB1_2:
 	ret
 
 func0000000000000022:
+	li	a1, 2
 	srli	a0, a0, 2
 	sext.w	a0, a0
-	li	a1, 2
 	blt	a1, a0, .LBB2_2
 	li	a0, 2
 .LBB2_2:

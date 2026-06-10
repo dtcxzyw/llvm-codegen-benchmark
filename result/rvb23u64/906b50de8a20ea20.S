@@ -11,9 +11,9 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
+	li	a1, 126
 	sext.w	a0, a0
 	sltiu	a0, a0, 16
-	li	a1, 126
 	czero.nez	a0, a1, a0
 	addiw	a0, a0, -128
 	ret

@@ -114,9 +114,9 @@ func00000000000000a1:
 	ret
 
 func000000000000000c:
+	lui	a3, 1048428
 	sub	a2, a2, a1
-	lui	a1, 1048428
-	addi	a1, a1, 1408
+	addi	a1, a3, 1408
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

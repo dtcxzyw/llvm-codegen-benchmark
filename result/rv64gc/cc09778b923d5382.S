@@ -100,8 +100,8 @@ func00000000000000a0:
 
 func0000000000000228:
 	slli	a1, a1, 56
-	zext.b	a2, a2
 	srai	a1, a1, 56
+	zext.b	a2, a2
 	sltiu	a2, a2, 28
 	slti	a1, a1, 72
 	xori	a1, a1, 1

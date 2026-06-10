@@ -55,10 +55,10 @@ func0000000000000001:
 .LCPI8_0:
 	.quad	0x3fa999999999999a
 func000000000000000c:
+	fmul.d	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
-	fmul.d	fa4, fa0, fa1
-	fle.d	a0, fa5, fa4
+	fld	fa4, %lo(.LCPI8_0)(a0)
+	fle.d	a0, fa4, fa5
 	ret
 
 func000000000000000a:

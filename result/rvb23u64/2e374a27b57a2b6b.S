@@ -12,18 +12,18 @@ func000000000000001d:
 
 func000000000000001f:
 	lui	a1, 254
+	lui	a2, 24578
 	and	a0, a0, a1
-	lui	a1, 24578
-	bseti	a1, a1, 54
+	bseti	a1, a2, 54
 	slli	a0, a0, 43
 	bseti	a1, a1, 62
 	add	a0, a0, a1
 	ret
 
 func0000000000000008:
+	bseti	a1, zero, 35
 	andi	a0, a0, -8
 	slli	a0, a0, 32
-	bseti	a1, zero, 35
 	add	a0, a0, a1
 	ret
 

@@ -28,17 +28,17 @@ func0000000000000004:
 
 func0000000000000010:
 	add	a0, a0, a1
-	li	a1, 31
 	slli	a0, a0, 3
+	li	a1, 31
 	addi	a0, a0, 1024
 	slli	a1, a1, 11
 	and	a0, a0, a1
 	ret
 
 func000000000000003f:
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, -1713
+	addi	a1, a2, -1713
 	add	a0, a0, a1
 	slli	a0, a0, 4
 	lui	a1, 112

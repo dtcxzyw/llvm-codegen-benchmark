@@ -1,6 +1,6 @@
 func0000000000000034:
-	sext.w	a0, a0
 	cpopw	a1, a1
+	sext.w	a0, a0
 	sltiu	a1, a1, 2
 	czero.nez	a0, a1, a0
 	ret

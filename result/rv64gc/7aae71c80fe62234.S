@@ -9,15 +9,15 @@ func0000000000000061:
 
 func0000000000000041:
 	sext.w	a0, a0
-	slliw	a1, a1, 1
 	sltiu	a0, a0, -1
+	slliw	a1, a1, 1
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000066:
-	sext.w	a0, a0
 	li	a2, 18
+	sext.w	a0, a0
 	bge	a0, a2, .LBB2_2
 	li	a0, 16
 	ret
@@ -26,8 +26,8 @@ func0000000000000066:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	li	a2, 15
+	sext.w	a0, a0
 	bgeu	a0, a2, .LBB3_2
 	li	a0, 16
 	ret
@@ -37,15 +37,15 @@ func0000000000000024:
 
 func0000000000000001:
 	sext.w	a0, a0
-	slliw	a1, a1, 1
 	seqz	a0, a0
+	slliw	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	li	a2, 15
+	sext.w	a0, a0
 	bgeu	a0, a2, .LBB5_2
 	li	a0, 16
 	ret
@@ -54,8 +54,9 @@ func0000000000000004:
 	ret
 
 func0000000000000074:
-	sext.w	a2, a0
+	mv	a2, a0
 	li	a0, 16
+	sext.w	a2, a2
 	bgeu	a0, a2, .LBB6_2
 	slliw	a0, a1, 1
 .LBB6_2:
@@ -63,15 +64,15 @@ func0000000000000074:
 
 func0000000000000021:
 	sext.w	a0, a0
-	slliw	a1, a1, 1
 	seqz	a0, a0
+	slliw	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000034:
-	sext.w	a0, a0
 	li	a2, 15
+	sext.w	a0, a0
 	bgeu	a0, a2, .LBB8_2
 	li	a0, 16
 	ret
@@ -80,8 +81,8 @@ func0000000000000034:
 	ret
 
 func0000000000000068:
-	sext.w	a0, a0
 	lui	a2, 2
+	sext.w	a0, a0
 	addi	a2, a2, 1808
 	bgeu	a2, a0, .LBB9_2
 	lui	a0, 256
@@ -93,15 +94,15 @@ func0000000000000068:
 
 func0000000000000064:
 	sext.w	a0, a0
-	slliw	a1, a1, 1
 	sltiu	a0, a0, 3
+	slliw	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
 	lui	a2, 2048
+	sext.w	a0, a0
 	addi	a2, a2, -2
 	bge	a2, a0, .LBB11_2
 	lui	a0, 524288
@@ -112,15 +113,15 @@ func000000000000000a:
 	ret
 
 func0000000000000026:
-	slliw	a1, a1, 2
 	srliw	a0, a0, 31
+	slliw	a1, a1, 2
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000058:
-	sext.w	a0, a0
 	li	a2, 255
+	sext.w	a0, a0
 	bgeu	a2, a0, .LBB13_2
 	lui	a0, 1044480
 	ret
@@ -129,8 +130,8 @@ func0000000000000058:
 	ret
 
 func0000000000000078:
-	sext.w	a0, a0
 	li	a2, 255
+	sext.w	a0, a0
 	bgeu	a2, a0, .LBB14_2
 	lui	a0, 4080
 	ret

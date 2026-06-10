@@ -6,8 +6,8 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	zext.h	a0, a0
 	lui	a1, 3
+	zext.h	a0, a0
 	sltiu	a0, a0, 2
 	addi	a1, a1, -48
 	czero.nez	a0, a1, a0
@@ -15,13 +15,13 @@ func0000000000000014:
 	ret
 
 func0000000000000008:
-	zext.h	a0, a0
 	lui	a1, 7
+	zext.h	a0, a0
 	sltiu	a0, a0, 102
 	addi	a1, a1, -154
+	lui	a2, 1
 	czero.nez	a0, a1, a0
-	lui	a1, 1
-	addi	a1, a1, 1025
+	addi	a1, a2, 1025
 	add	a0, a0, a1
 	ret
 
@@ -47,17 +47,17 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
+	li	a1, 4
 	sext.h	a0, a0
 	sgtz	a0, a0
-	li	a1, 4
 	sub	a0, a1, a0
 	ret
 
 func0000000000000018:
+	lui	a1, 229376
 	slli	a0, a0, 48
 	srli	a0, a0, 58
 	sltiu	a0, a0, 31
-	lui	a1, 229376
 	czero.nez	a0, a1, a0
 	ret
 

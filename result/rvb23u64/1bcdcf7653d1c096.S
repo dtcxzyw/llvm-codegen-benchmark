@@ -8,8 +8,8 @@ func00000000000000df:
 	ret
 
 func00000000000000ff:
-	addi	a0, a0, 1
 	sh1add	a2, a2, a2
+	addi	a0, a0, 1
 	sh2add	a0, a2, a0
 	sh2add	a0, a0, a1
 	addi	a0, a0, 12
@@ -23,9 +23,9 @@ func00000000000000bf:
 	ret
 
 func000000000000009e:
-	addi	a0, a0, -1
 	li	a3, 820
 	mul	a2, a2, a3
+	addi	a0, a0, -1
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
 	addi	a0, a0, 20
@@ -49,9 +49,9 @@ func0000000000000010:
 	ret
 
 func000000000000003c:
-	slli	a0, a0, 5
 	li	a3, 1096
 	mul	a2, a2, a3
+	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 40
@@ -65,10 +65,10 @@ func000000000000001c:
 	ret
 
 func00000000000000de:
-	addi	a0, a0, -1
 	sh3add	a3, a2, a2
 	sh1add	a2, a3, a2
 	sh3add	a1, a2, a1
+	addi	a0, a0, -1
 	sh3add	a0, a0, a1
 	addi	a0, a0, 80
 	ret

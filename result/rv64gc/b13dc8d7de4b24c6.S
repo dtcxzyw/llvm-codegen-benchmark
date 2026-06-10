@@ -16,8 +16,8 @@ func0000000000000104:
 	ret
 
 func00000000000005e1:
-	sext.w	a2, a2
 	slli	a1, a1, 32
+	sext.w	a2, a2
 	srli	a1, a1, 32
 	mul	a1, a1, a2
 	or	a0, a0, a1
@@ -25,8 +25,8 @@ func00000000000005e1:
 	ret
 
 func00000000000005f8:
-	sext.w	a2, a2
 	slli	a1, a1, 32
+	sext.w	a2, a2
 	srli	a1, a1, 32
 	mul	a1, a1, a2
 	add	a0, a0, a1

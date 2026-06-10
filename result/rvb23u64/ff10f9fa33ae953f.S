@@ -9,8 +9,8 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	bclri	a0, a0, 21
 	lui	a2, 512
+	bclri	a0, a0, 21
 	orn	a1, a2, a1
 	addw	a0, a0, a1
 	ret

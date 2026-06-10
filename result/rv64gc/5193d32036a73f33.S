@@ -27,8 +27,8 @@ func0000000000000015:
 	ret
 
 func0000000000000017:
-	slli	a2, a2, 4
 	li	a3, 9
+	slli	a2, a2, 4
 	slli	a3, a3, 10
 	add	a2, a2, a3
 	lui	a3, 1008

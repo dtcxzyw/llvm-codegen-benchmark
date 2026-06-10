@@ -45,9 +45,9 @@ func0000000000000007:
 func000000000000000e:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vim	v16, v16, 0, v0
-	vmfeq.vv	v24, v16, v16
-	vmfeq.vv	v16, v8, v8
-	vmand.mm	v0, v16, v24
+	vmfeq.vv	v24, v8, v8
+	vmfeq.vv	v8, v16, v16
+	vmand.mm	v0, v24, v8
 	ret
 
 func000000000000000c:

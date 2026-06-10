@@ -16,9 +16,9 @@ func0000000000000084:
 	sub	a1, a1, a2
 	lui	a2, 3
 	addi	a2, a2, -1775
+	lui	a3, 5
 	addw	a1, a1, a2
-	lui	a2, 5
-	addi	a2, a2, 546
+	addi	a2, a3, 546
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

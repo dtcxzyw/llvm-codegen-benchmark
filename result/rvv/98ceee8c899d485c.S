@@ -4,10 +4,10 @@ func0000000000000002:
 	li	a0, 1049
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
-	li	a0, 485
-	slli	a0, a0, 53
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmadd.vf	v16, fa5, v8
+	li	a0, 485
+	slli	a0, a0, 53
 	fmv.d.x	fa5, a0
 	vfmul.vf	v8, v16, fa5
 	ret

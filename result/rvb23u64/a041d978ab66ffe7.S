@@ -30,8 +30,8 @@ func000000000000002c:
 	ret
 
 func000000000000006c:
-	sext.w	a1, a1
 	lui	a2, 524288
+	sext.w	a1, a1
 	addiw	a2, a2, -2
 	xor	a1, a1, a2
 	snez	a1, a1

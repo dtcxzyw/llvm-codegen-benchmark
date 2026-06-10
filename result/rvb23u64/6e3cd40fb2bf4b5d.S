@@ -1,9 +1,9 @@
 func0000000000000001:
 	add	a1, a1, a2
-	lui	a2, 877240
 	sh2add	a1, a1, a1
-	addi	a2, a2, 215
+	lui	a2, 877240
 	addi	a1, a1, 2
+	addi	a2, a2, 215
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -16,8 +16,8 @@ func00000000000000a9:
 	li	a2, 153
 	mul	a1, a1, a2
 	lui	a2, 838861
-	addi	a2, a2, -819
 	addi	a1, a1, 2
+	addi	a2, a2, -819
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -29,8 +29,8 @@ func0000000000000098:
 	add	a1, a1, a2
 	li	a2, -137
 	mul	a1, a1, a2
-	lui	a2, 142180
 	addi	a1, a1, 136
+	lui	a2, 142180
 	zext.w	a1, a1
 	addi	a2, a2, -833
 	mul	a1, a1, a2
@@ -42,8 +42,8 @@ func0000000000000099:
 	add	a1, a1, a2
 	li	a2, -137
 	mul	a1, a1, a2
-	lui	a2, 142180
 	addi	a1, a1, 136
+	lui	a2, 142180
 	zext.w	a1, a1
 	addi	a2, a2, -833
 	mul	a1, a1, a2
@@ -52,9 +52,9 @@ func0000000000000099:
 	ret
 
 func00000000000000a8:
+	lui	a3, 9
 	add	a1, a1, a2
-	lui	a2, 9
-	addi	a2, a2, -339
+	addi	a2, a3, -339
 	mul	a1, a1, a2
 	lui	a2, 42054
 	addi	a2, a2, -1284

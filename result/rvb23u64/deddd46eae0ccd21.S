@@ -11,11 +11,11 @@ func0000000000000000:
 	ret
 
 func0000000000000008:
+	lui	a3, 1046001
+	addi	a3, a3, 325
+	slli	a3, a3, 13
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 1046001
-	addi	a2, a2, 325
-	slli	a2, a2, 13
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	srli	a1, a0, 32
 	xor	a0, a0, a1

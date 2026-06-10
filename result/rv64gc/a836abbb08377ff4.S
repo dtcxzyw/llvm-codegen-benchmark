@@ -18,11 +18,11 @@ func0000000000000319:
 	ret
 
 func0000000000000084:
-	not	a3, a0
-	lui	a4, 838861
-	addi	a4, a4, -820
-	xor	a2, a2, a4
-	or	a2, a2, a3
+	lui	a3, 838861
+	addi	a3, a3, -820
+	not	a4, a0
+	xor	a2, a2, a3
+	or	a2, a2, a4
 	sext.w	a2, a2
 	beqz	a2, .LBB2_2
 	mv	a1, a0

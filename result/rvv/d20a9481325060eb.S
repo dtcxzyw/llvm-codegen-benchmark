@@ -21,8 +21,8 @@ func0000000000000000:
 	vwaddu.wv	v8, v8, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
-	lui	a0, 12
 	vsrl.vi	v10, v10, 12
+	lui	a0, 12
 	addi	a0, a0, 1961
 	vnmsac.vx	v8, a0, v10
 	ret

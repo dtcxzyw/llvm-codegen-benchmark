@@ -12,8 +12,8 @@ func0000000000000026:
 	ret
 
 func0000000000000028:
-	zext.b	a3, a0
 	zext.b	a1, a1
+	zext.b	a3, a0
 	slli	a0, a2, 1
 	bltu	a1, a3, .LBB1_2
 	addi	a0, a0, 2
@@ -34,8 +34,8 @@ func0000000000000034:
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 56
 	slli	a1, a1, 56
+	slli	a0, a0, 56
 	srai	a3, a0, 56
 	srai	a1, a1, 56
 	slli	a0, a2, 1

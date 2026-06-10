@@ -1,9 +1,9 @@
 func0000000000000010:
 	rev8	a1, a1
 	srli	a1, a1, 32
+	lui	a2, 8
 	sub	a1, a1, a0
-	lui	a0, 8
-	addi	a0, a0, 4
+	addi	a0, a2, 4
 	addw	a0, a0, a1
 	ret
 

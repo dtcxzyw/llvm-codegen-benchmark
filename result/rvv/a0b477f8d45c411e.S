@@ -6,17 +6,17 @@ func0000000000000042:
 	ret
 
 func0000000000000310:
+	li	a0, 20
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vv	v9, v8, v9
-	li	a0, 20
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
 
 func0000000000000110:
+	li	a0, 99
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsltu.vv	v9, v8, v9
-	li	a0, 99
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret

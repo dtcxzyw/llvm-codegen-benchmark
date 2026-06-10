@@ -30,32 +30,34 @@ func000000000000000a:
 	ret
 
 func000000000000000e:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
 	lui	a0, 319552
-	vwsll.vi	v10, v12, 19
 	addi	a0, a0, 1024
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v14, v10
+	vwsll.vi	v10, v14, 19
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	vmv.v.x	v10, a0
 	lui	a0, 385088
 	addi	a0, a0, 1024
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v10, v12, a0, v0
 	vor.vv	v8, v8, v10
 	ret
 
 func000000000000001e:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
 	lui	a0, 319552
-	vwsll.vi	v10, v12, 5
 	addi	a0, a0, 1024
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v14, v10
+	vwsll.vi	v10, v14, 5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v10, v8
-	vmv.v.x	v10, a0
 	lui	a0, 385088
 	addi	a0, a0, 1024
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v10, v12, a0, v0
 	vor.vv	v8, v8, v10
 	ret
 

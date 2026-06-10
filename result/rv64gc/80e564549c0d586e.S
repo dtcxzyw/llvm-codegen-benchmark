@@ -4,9 +4,9 @@ func0000000000000001:
 	blt	a0, a1, .LBB0_2
 	mv	a0, a1
 .LBB0_2:
+	lui	a1, 258048
 	fcvt.s.w	fa5, a0
-	lui	a0, 258048
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa0, fa5, fa4
 	ret
 
@@ -16,10 +16,10 @@ func0000000000000000:
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
+	lui	a1, 252805
+	addi	a1, a1, 492
 	fcvt.s.w	fa5, a0
-	lui	a0, 252805
-	addi	a0, a0, 492
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa0, fa5, fa4
 	ret
 

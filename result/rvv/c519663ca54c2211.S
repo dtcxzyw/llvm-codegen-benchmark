@@ -15,13 +15,13 @@ func000000000000000f:
 	ret
 
 func0000000000000015:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v10, v9
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnot.v	v11, v8
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vsext.vf4	v8, v11
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vnot.v	v10, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vzext.vf2	v11, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vsext.vf4	v8, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v8, v8, v11
 	ret
 

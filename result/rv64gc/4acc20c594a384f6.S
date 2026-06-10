@@ -1,19 +1,19 @@
 func0000000000000001:
 	lui	a2, 48
+	lui	a3, 16
 	and	a1, a1, a2
-	lui	a2, 16
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000021:
 	li	a2, 3
+	lui	a3, 527864
 	slli	a2, a2, 10
+	addi	a3, a3, 272
 	and	a1, a1, a2
-	lui	a2, 527864
-	addi	a2, a2, 272
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
@@ -29,9 +29,9 @@ func000000000000002c:
 
 func0000000000000034:
 	lui	a2, 448
+	lui	a3, 48
 	and	a1, a1, a2
-	lui	a2, 48
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -53,15 +53,15 @@ func000000000000000c:
 
 func0000000000000028:
 	lui	a2, 1048560
+	lui	a3, 16
 	addi	a2, a2, 255
+	addi	a3, a3, -256
 	and	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a0, a0, a2
-	lui	a2, 8192
+	and	a0, a0, a3
 	or	a0, a0, a1
+	lui	a1, 8192
 	sext.w	a0, a0
-	addi	a2, a2, -2
-	sltu	a0, a2, a0
+	addi	a1, a1, -2
+	sltu	a0, a1, a0
 	ret
 

@@ -1,16 +1,16 @@
 func0000000000000007:
-	andi	a0, a0, 1
-	slli	a1, a1, 6
 	li	a2, 15
+	andi	a0, a0, 1
 	slli	a2, a2, 8
+	slli	a1, a1, 6
 	czero.eqz	a0, a2, a0
 	addw	a0, a0, a1
 	ret
 
 func0000000000000004:
 	andi	a0, a0, 1
-	slli	a1, a1, 23
 	lui	a2, 122880
+	slli	a1, a1, 23
 	czero.eqz	a0, a2, a0
 	addw	a0, a0, a1
 	ret

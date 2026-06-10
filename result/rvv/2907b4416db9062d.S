@@ -1,15 +1,15 @@
 func000000000000004c:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v8, v12
-	fmv.w.x	fa5, zero
 	vmfge.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
 
 func000000000000002c:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v12, v8
-	fmv.w.x	fa5, zero
 	vmfge.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
@@ -29,17 +29,17 @@ func00000000000000ed:
 	ret
 
 func0000000000000042:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v8, v12
-	fmv.w.x	fa5, zero
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
 
 func0000000000000022:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v12, v8
-	fmv.w.x	fa5, zero
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret
@@ -61,9 +61,9 @@ func0000000000000078:
 	ret
 
 func0000000000000024:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v12, v8
-	fmv.w.x	fa5, zero
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
 	ret

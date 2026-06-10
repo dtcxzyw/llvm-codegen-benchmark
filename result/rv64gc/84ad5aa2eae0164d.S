@@ -7,8 +7,8 @@ func0000000000000030:
 
 func0000000000000000:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 28
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 28
 	add	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000000:
 
 func000000000000000f:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -48,8 +48,8 @@ func0000000000000010:
 
 func000000000000003c:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	slli	a2, a2, 3
+	sext.w	a1, a1
 	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -65,8 +65,8 @@ func000000000000002f:
 
 func0000000000000003:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -82,8 +82,8 @@ func000000000000002c:
 
 func0000000000000033:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	slli	a2, a2, 1
+	sext.w	a1, a1
 	add	a0, a0, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1
@@ -99,8 +99,8 @@ func0000000000000020:
 
 func000000000000000c:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 30
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 30
 	add	a0, a0, a1
@@ -108,8 +108,8 @@ func000000000000000c:
 
 func000000000000001c:
 	slli	a2, a2, 32
-	sext.w	a1, a1
 	srli	a2, a2, 27
+	sext.w	a1, a1
 	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1

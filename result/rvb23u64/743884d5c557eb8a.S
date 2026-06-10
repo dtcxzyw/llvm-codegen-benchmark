@@ -8,8 +8,8 @@ func00000000000000c1:
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	andi	a2, a2, 1
 	seqz	a2, a2
 	sltu	a0, a1, a0
@@ -17,22 +17,22 @@ func0000000000000101:
 	ret
 
 func00000000000000ac:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	andi	a2, a2, 12
-	snez	a2, a2
 	sltu	a0, a1, a0
+	snez	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000002c:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	bexti	a2, a2, 2
 	xor	a0, a0, a1
+	bexti	a1, a2, 2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000008c:

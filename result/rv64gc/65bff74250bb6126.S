@@ -1,16 +1,16 @@
 .LCPI0_0:
 	.quad	384307168202282325
 func000000000000000b:
-	seqz	a3, a2
+	lui	a3, %hi(.LCPI0_0)
+	seqz	a4, a2
+	ld	a3, %lo(.LCPI0_0)(a3)
 	add	a2, a2, a2
-	or	a3, a3, a2
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	slli	a1, a1, 63
+	or	a2, a2, a4
 	srai	a1, a1, 63
-	or	a1, a1, a3
-	bltu	a1, a2, .LBB0_2
-	mv	a1, a2
+	or	a1, a1, a2
+	bltu	a1, a3, .LBB0_2
+	mv	a1, a3
 .LBB0_2:
 	slli	a2, a1, 3
 	slli	a1, a1, 4
@@ -23,8 +23,8 @@ func0000000000000003:
 	add	a2, a2, a2
 	slli	a1, a1, 63
 	or	a2, a2, a3
-	li	a3, -1
 	srai	a1, a1, 63
+	li	a3, -1
 	or	a1, a1, a2
 	srli	a2, a3, 1
 	bltu	a1, a2, .LBB1_2
@@ -38,8 +38,8 @@ func0000000000000008:
 	add	a2, a2, a2
 	slli	a1, a1, 63
 	or	a2, a2, a3
-	li	a3, -1
 	srai	a1, a1, 63
+	li	a3, -1
 	or	a1, a1, a2
 	srli	a2, a3, 4
 	bltu	a1, a2, .LBB2_2

@@ -17,10 +17,10 @@ func000000000000030c:
 	ret
 
 func0000000000000050:
+	li	a0, 63
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	vnsrl.wi	v10, v8, 0
-	li	a0, 63
 	vmsgtu.vx	v8, v10, a0
 	vmseq.vv	v9, v10, v12
 	vmor.mm	v0, v8, v9

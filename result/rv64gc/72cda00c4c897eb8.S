@@ -1,6 +1,6 @@
 func0000000000000002:
-	slli	a1, a1, 28
 	li	a2, -1
+	slli	a1, a1, 28
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	srai	a1, a1, 32

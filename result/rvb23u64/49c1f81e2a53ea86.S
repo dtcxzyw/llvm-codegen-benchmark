@@ -5,11 +5,11 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	fcvt.w.s	a0, fa0, rtz
-	lui	a1, 65536
-	bclri	a0, a0, 29
-	bclri	a0, a0, 30
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	lui	a0, 65536
+	fcvt.w.s	a1, fa0, rtz
+	bclri	a1, a1, 29
+	bclri	a1, a1, 30
+	addi	a0, a0, -1
+	slt	a0, a0, a1
 	ret
 

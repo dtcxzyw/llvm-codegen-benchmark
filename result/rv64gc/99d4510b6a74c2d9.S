@@ -7,8 +7,8 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 14
 	li	a2, 8
+	andi	a1, a1, 14
 	bne	a1, a2, .LBB1_2
 	li	a0, 10
 .LBB1_2:

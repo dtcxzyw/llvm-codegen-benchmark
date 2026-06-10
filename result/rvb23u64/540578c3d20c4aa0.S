@@ -1,10 +1,10 @@
 func0000000000003c89:
-	addi	a2, a1, 32
-	addi	a1, a1, 416
+	addi	a2, a1, 416
+	addi	a1, a1, 32
 	sltu	a2, a0, a2
 	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	xori	a1, a2, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000003d04:

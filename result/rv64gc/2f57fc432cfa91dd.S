@@ -1,9 +1,9 @@
 func0000000000000008:
 	sub	a1, a1, a0
-	lui	a2, 16
 	srli	a0, a1, 1
+	lui	a1, 16
 	sext.w	a0, a0
-	addi	a1, a2, -1
+	addi	a1, a1, -1
 	blt	a1, a0, .LBB0_2
 	mv	a0, a1
 .LBB0_2:

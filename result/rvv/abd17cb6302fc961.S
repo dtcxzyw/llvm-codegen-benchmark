@@ -6,14 +6,13 @@ func000000000000006e:
 	vadd.vv	v8, v8, v9
 	ret
 
+.LCPI1_0:
+	.quad	196742565691928
 func00000000000000ed:
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v9
-	lui	a0, 732923
-	slli.uw	a0, a0, 1
-	addi	a0, a0, 1403
-	slli	a0, a0, 15
-	addi	a0, a0, 536
 	vmul.vx	v10, v10, a0
 	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -52,14 +51,13 @@ func00000000000000ef:
 	vadd.vv	v8, v8, v9
 	ret
 
+.LCPI5_0:
+	.quad	196742565691928
 func000000000000008d:
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v9
-	lui	a0, 732923
-	slli.uw	a0, a0, 1
-	addi	a0, a0, 1403
-	slli	a0, a0, 15
-	addi	a0, a0, 536
 	vmul.vx	v10, v10, a0
 	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma

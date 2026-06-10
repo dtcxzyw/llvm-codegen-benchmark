@@ -1,15 +1,15 @@
 func0000000000000007:
-	slli	a1, a0, 48
-	li	a2, 839
-	srli	a1, a1, 52
-	mul	a1, a1, a2
+	li	a1, 839
+	slli	a2, a0, 48
+	srli	a2, a2, 52
+	mul	a1, a2, a1
 	lui	a2, 2
-	addi	a2, a2, 1808
 	srli	a1, a1, 19
+	addi	a2, a2, 1808
 	mul	a1, a1, a2
-	lui	a2, 83888
 	sub	a0, a0, a1
 	slli	a1, a0, 48
+	lui	a2, 83888
 	mulhu	a1, a1, a2
 	srli	a1, a1, 19
 	li	a2, 100

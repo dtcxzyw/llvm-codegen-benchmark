@@ -14,8 +14,8 @@ func000000000000012a:
 
 func0000000000000c08:
 	add	a1, a1, a2
-	lui	a2, 1221
 	srli	a1, a1, 1
+	lui	a2, 1221
 	addw	a0, a0, a1
 	addi	a1, a2, -1216
 	sltu	a0, a1, a0

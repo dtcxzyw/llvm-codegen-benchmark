@@ -21,10 +21,10 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 1
 	lui	a0, 1046528
-	fli.s	fa5, 128.0
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v8, a0
+	fli.s	fa5, 128.0
 	fneg.s	fa5, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret

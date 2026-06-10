@@ -38,12 +38,12 @@ func0000000000000010:
 	ret
 
 func0000000000000020:
-	slli	a1, a1, 1
 	bseti	a2, zero, 33
+	slli	a1, a1, 1
 	addi	a2, a2, -248
+	lui	a3, 48
 	and	a1, a1, a2
-	lui	a2, 48
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -63,8 +63,8 @@ func000000000000003c:
 	ret
 
 func000000000000002b:
-	slli	a1, a1, 4
 	bseti	a2, zero, 35
+	slli	a1, a1, 4
 	addi	a2, a2, -32
 	and	a1, a1, a2
 	add	a0, a0, a1

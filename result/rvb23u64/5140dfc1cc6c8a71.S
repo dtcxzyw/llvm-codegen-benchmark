@@ -24,9 +24,9 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, -974
+	addi	a1, a2, -974
 	addw	a0, a0, a1
 	ret
 

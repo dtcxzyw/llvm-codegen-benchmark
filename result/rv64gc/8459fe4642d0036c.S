@@ -4,9 +4,9 @@ func0000000000000030:
 	ret
 
 func0000000000000000:
+	lui	a2, 524288
 	add	a0, a0, a1
-	lui	a1, 524288
-	addi	a1, a1, -64
+	addi	a1, a2, -64
 	sub	a0, a0, a1
 	ret
 

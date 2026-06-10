@@ -5,10 +5,10 @@ func00000000000000e4:
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
-	lui	a1, 299593
-	addi	a1, a1, 585
 	vmv.v.x	v12, a0
-	slli	a0, a1, 33
+	lui	a0, 299593
+	addi	a0, a0, 585
+	slli	a1, a0, 33
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
 	vmsltu.vv	v0, v12, v8
@@ -21,10 +21,10 @@ func00000000000000a4:
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
-	lui	a1, 209715
-	addi	a1, a1, 819
 	vmv.v.x	v12, a0
-	slli	a0, a1, 32
+	lui	a0, 209715
+	addi	a0, a0, 819
+	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
 	vmsltu.vv	v0, v12, v8
@@ -37,10 +37,10 @@ func00000000000000a8:
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
-	lui	a1, 209715
-	addi	a1, a1, 819
 	vmv.v.x	v12, a0
-	slli	a0, a1, 32
+	lui	a0, 209715
+	addi	a0, a0, 819
+	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
 	vmsltu.vv	v0, v8, v12
@@ -53,10 +53,10 @@ func00000000000000f4:
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 2
-	lui	a1, 349525
-	addi	a1, a1, 1365
 	vmv.v.x	v12, a0
-	slli	a0, a1, 32
+	lui	a0, 349525
+	addi	a0, a0, 1365
+	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
 	vmsltu.vv	v0, v12, v8

@@ -1,8 +1,8 @@
 func0000000000000003:
-	srliw	a2, a2, 31
 	lui	a3, 524288
-	slli	a2, a2, 31
+	srliw	a2, a2, 31
 	addiw	a3, a3, -2
+	slli	a2, a2, 31
 	and	a1, a1, a3
 	or	a1, a1, a2
 	srli	a1, a1, 1

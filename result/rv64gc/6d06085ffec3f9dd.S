@@ -1,9 +1,9 @@
 func0000000000000007:
 	lui	a1, 512
-	addi	a2, a1, -1
-	add	a0, a0, a2
 	lui	a2, 524288
+	addi	a3, a1, -1
 	addiw	a2, a2, -1
+	add	a0, a0, a3
 	slli	a2, a2, 21
 	and	a0, a0, a2
 	bltu	a1, a0, .LBB0_2
@@ -12,8 +12,8 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	addi	a0, a0, 7
 	lui	a1, 8
+	addi	a0, a0, 7
 	andi	a0, a0, -8
 	addi	a1, a1, -40
 	bltu	a1, a0, .LBB1_2
@@ -41,26 +41,26 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
+	li	a1, 256
 	addi	a0, a0, 23
 	andi	a0, a0, -16
-	li	a1, 256
 	bltu	a1, a0, .LBB4_2
 	li	a0, 256
 .LBB4_2:
 	ret
 
 func0000000000000000:
+	li	a1, 24
 	addi	a0, a0, 7
 	andi	a0, a0, -8
-	li	a1, 24
 	bltu	a1, a0, .LBB5_2
 	li	a0, 24
 .LBB5_2:
 	ret
 
 func0000000000000002:
-	addi	a0, a0, 1
 	li	a1, -9
+	addi	a0, a0, 1
 	srli	a1, a1, 3
 	and	a0, a0, a1
 	li	a1, 2

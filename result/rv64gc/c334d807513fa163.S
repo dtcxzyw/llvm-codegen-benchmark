@@ -9,12 +9,12 @@ func0000000000000064:
 	ret
 
 func0000000000000078:
-	sext.w	a0, a0
 	andi	a1, a1, 1
-	slli	a1, a1, 3
+	sext.w	a0, a0
 	sltiu	a0, a0, 16
-	or	a1, a1, a2
+	slli	a1, a1, 3
 	xori	a0, a0, 1
+	or	a1, a1, a2
 	slli	a0, a0, 2
 	or	a0, a0, a1
 	ret

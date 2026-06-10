@@ -18,15 +18,16 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
+	lui	a0, 1
+	addi	a0, a0, -496
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv1r.v	v12, v0
+	vmsgt.vx	v12, v10, a0
+	vmv1r.v	v13, v0
+	vmv1r.v	v0, v12
 	lui	a0, 1048575
-	lui	a1, 1
-	addi	a1, a1, -496
-	vmsgt.vx	v0, v10, a1
 	addi	a0, a0, 496
 	vadd.vx	v10, v10, a0, v0.t
-	vmv1r.v	v0, v12
+	vmv1r.v	v0, v13
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 

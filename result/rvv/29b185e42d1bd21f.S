@@ -1,40 +1,40 @@
 func0000000000000007:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v9, v8
 	li	a0, 20
-	vmv.v.x	v8, a0
-	vwsubu.vv	v10, v8, v9
+	vsetivli	zero, 4, e16, mf2, ta, ma
+	vmv.v.x	v9, a0
+	vzext.vf2	v10, v8
+	vwsubu.vv	v11, v9, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v8, v10
+	vzext.vf2	v8, v11
 	ret
 
 func000000000000000f:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v9, v8
 	li	a0, 64
-	vmv.v.x	v8, a0
-	vwsubu.vv	v10, v8, v9
+	vsetivli	zero, 4, e16, mf2, ta, ma
+	vmv.v.x	v9, a0
+	vzext.vf2	v10, v8
+	vwsubu.vv	v11, v9, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v8, v10
+	vzext.vf2	v8, v11
 	ret
 
 func000000000000000a:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v9, v8
 	li	a0, 23
-	vmv.v.x	v8, a0
-	vwsubu.vv	v10, v8, v9
+	vsetivli	zero, 4, e16, mf2, ta, ma
+	vmv.v.x	v9, a0
+	vzext.vf2	v10, v8
+	vwsubu.vv	v11, v9, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v8, v10
+	vzext.vf2	v8, v11
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vzext.vf2	v9, v8
 	li	a0, 128
-	vmv.v.x	v8, a0
-	vwsubu.vv	v10, v8, v9
+	vsetivli	zero, 4, e16, mf2, ta, ma
+	vmv.v.x	v9, a0
+	vzext.vf2	v10, v8
+	vwsubu.vv	v11, v9, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v8, v10
+	vzext.vf2	v8, v11
 	ret
 

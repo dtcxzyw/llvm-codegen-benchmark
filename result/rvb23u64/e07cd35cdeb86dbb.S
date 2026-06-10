@@ -1,6 +1,6 @@
 func00000000000000c4:
-	sext.w	a0, a0
 	add	a1, a1, a2
+	sext.w	a0, a0
 	lui	a2, 52429
 	addiw	a1, a1, -48
 	addi	a2, a2, -820

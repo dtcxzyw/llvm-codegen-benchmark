@@ -1,8 +1,8 @@
 func0000000000000184:
-	addi	a1, a1, 3
 	lui	a2, 32
-	addiw	a0, a0, 3
+	addi	a1, a1, 3
 	addi	a2, a2, -4
+	addiw	a0, a0, 3
 	and	a1, a1, a2
 	andi	a0, a0, -4
 	sltu	a0, a0, a1

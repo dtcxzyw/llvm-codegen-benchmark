@@ -5,9 +5,9 @@ func0000000000000001:
 
 func0000000000000008:
 	li	a1, 4
+	li	a2, -1
 	maxu	a0, a0, a1
-	li	a1, -1
-	bclri	a1, a1, 62
+	bclri	a1, a2, 62
 	add	a0, a0, a1
 	srli	a0, a0, 62
 	sltiu	a0, a0, 3

@@ -1,7 +1,7 @@
 func000000000000003b:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v20, v12, v8
+	fmv.w.x	fa5, zero
 	vmfge.vf	v8, v16, fa5
 	vmnot.m	v9, v20
 	vmorn.mm	v0, v9, v8

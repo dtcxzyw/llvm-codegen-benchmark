@@ -1,6 +1,6 @@
 func000000000000001c:
-	andi	a0, a0, 1
 	slli	a2, a2, 44
+	andi	a0, a0, 1
 	lui	a3, 256
 	srli	a2, a2, 44
 	czero.nez	a0, a3, a0

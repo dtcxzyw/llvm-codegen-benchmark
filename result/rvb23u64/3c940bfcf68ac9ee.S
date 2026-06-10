@@ -1,7 +1,7 @@
 func0000000000000000:
 	andi	a1, a1, 1
-	sub	a2, a2, a0
 	lui	a3, 16
+	sub	a2, a2, a0
 	addi	a3, a3, -1
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1

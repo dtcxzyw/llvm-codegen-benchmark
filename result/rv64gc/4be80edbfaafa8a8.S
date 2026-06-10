@@ -1,7 +1,7 @@
 func000000000000003d:
-	slli	a2, a2, 43
 	lui	a3, 163
 	addi	a3, a3, -1005
+	slli	a2, a2, 43
 	slli	a3, a3, 21
 	mulhu	a2, a2, a3
 	sub	a0, a1, a0

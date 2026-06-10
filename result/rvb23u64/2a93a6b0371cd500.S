@@ -1,6 +1,6 @@
 func0000000000000068:
-	addi	a0, a0, -6
 	sub	a2, a2, a1
+	addi	a0, a0, -6
 	sltu	a0, a0, a2
 	ret
 
@@ -13,8 +13,8 @@ func0000000000000008:
 	ret
 
 func0000000000000028:
-	addi	a0, a0, -12
 	sub	a2, a2, a1
+	addi	a0, a0, -12
 	sltu	a0, a0, a2
 	ret
 

@@ -1,16 +1,16 @@
 func00000000000000ef:
 	sext.w	a2, a2
-	zext.b	a0, a0
 	slli	a2, a2, 5
+	zext.b	a0, a0
 	add	a1, a1, a2
 	sh1add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
 
 func000000000000006f:
-	zext.b	a0, a0
 	slli.uw	a2, a2, 4
 	sh3add	a2, a2, a2
+	zext.b	a0, a0
 	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 72
@@ -41,10 +41,10 @@ func000000000000001c:
 	ret
 
 func000000000000007f:
-	zext.b	a0, a0
 	slli.uw	a2, a2, 3
 	sh1add	a2, a2, a2
 	sh2add	a2, a2, a2
+	zext.b	a0, a0
 	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 40
@@ -52,10 +52,10 @@ func000000000000007f:
 
 func00000000000000ff:
 	sext.w	a2, a2
-	zext.b	a0, a0
 	sh1add	a2, a2, a2
 	sh2add	a2, a2, a2
 	sh3add	a1, a2, a1
+	zext.b	a0, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 40
 	ret

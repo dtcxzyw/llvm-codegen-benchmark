@@ -10,9 +10,9 @@ func000000000000001f:
 	ret
 
 func0000000000000010:
+	lui	a0, 524288
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vsrl.vi	v12, v12, 7
-	lui	a0, 524288
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v8, v8, v13

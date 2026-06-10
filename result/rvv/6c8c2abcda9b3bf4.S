@@ -10,10 +10,10 @@ func0000000000000015:
 	ret
 
 func0000000000000010:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
 	vadd.vv	v8, v8, v8
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -25,10 +25,10 @@ func0000000000000010:
 func0000000000000000:
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	li	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v10, v10, a1
 	vmulh.vx	v8, v8, a0
+	li	a0, 32
+	vsll.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v8, a0
 	vsra.vi	v8, v8, 18

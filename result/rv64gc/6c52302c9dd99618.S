@@ -4,8 +4,8 @@ func0000000000000007:
 	bltu	a2, a3, .LBB0_2
 	li	a2, 1024
 .LBB0_2:
-	sub	a1, a1, a0
-	subw	a0, a2, a1
+	sub	a2, a2, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000005:
@@ -14,8 +14,8 @@ func0000000000000005:
 	bltu	a2, a3, .LBB1_2
 	li	a2, 1024
 .LBB1_2:
-	sub	a1, a1, a0
-	subw	a0, a2, a1
+	sub	a2, a2, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000000:
@@ -24,8 +24,8 @@ func0000000000000000:
 	bltu	a2, a3, .LBB2_2
 	lui	a2, 2560
 .LBB2_2:
-	sub	a1, a1, a0
-	subw	a0, a2, a1
+	sub	a2, a2, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000003:
@@ -34,7 +34,7 @@ func0000000000000003:
 	bltu	a2, a3, .LBB3_2
 	lui	a2, 2560
 .LBB3_2:
-	sub	a1, a1, a0
-	subw	a0, a2, a1
+	sub	a2, a2, a1
+	addw	a0, a0, a2
 	ret
 

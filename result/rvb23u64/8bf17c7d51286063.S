@@ -18,8 +18,8 @@ func0000000000000100:
 	ld	a4, %lo(.LCPI1_0)(a4)
 	zext.w	a3, a3
 	mul	a2, a2, a3
-	srli	a2, a2, 32
 	mul	a1, a1, a4
+	srli	a2, a2, 32
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -37,10 +37,10 @@ func00000000000001e0:
 func0000000000000180:
 	lui	a3, 298023
 	addi	a3, a3, 917
+	slli	a4, a3, 32
 	mul	a2, a2, a3
-	slli	a3, a3, 32
+	mul	a1, a1, a4
 	srli	a2, a2, 32
-	mul	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

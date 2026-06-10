@@ -1,52 +1,52 @@
 func000000000000000b:
 	andi	a1, a1, -64
 	slli	a0, a0, 2
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -96
+	addi	a1, a2, -96
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
 	andi	a1, a1, -64
 	slli	a0, a0, 2
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -132
+	addi	a1, a2, -132
 	add	a0, a0, a1
 	ret
 
 func0000000000000008:
 	andi	a1, a1, -64
 	slli	a0, a0, 2
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addi	a1, a1, -132
+	addi	a1, a2, -132
 	add	a0, a0, a1
 	ret
 
 func0000000000000038:
 	andi	a1, a1, -64
 	slli	a0, a0, 2
+	lui	a2, 100
 	add	a0, a0, a1
-	lui	a1, 100
-	addi	a1, a1, -1408
+	addi	a1, a2, -1408
 	add	a0, a0, a1
 	ret
 
 func000000000000003b:
 	andi	a1, a1, -64
 	slli	a0, a0, 3
+	lui	a2, 238
 	add	a0, a0, a1
-	lui	a1, 238
-	addi	a1, a1, -636
+	addi	a1, a2, -636
 	add	a0, a0, a1
 	ret
 
 func000000000000003f:
-	andi	a1, a1, -2
 	slli	a2, a0, 2
 	slli	a0, a0, 3
+	andi	a1, a1, -2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 100

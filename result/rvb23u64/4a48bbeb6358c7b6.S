@@ -8,9 +8,9 @@ func0000000000000050:
 func000000000000028c:
 	li	a3, -1
 	srli	a3, a3, 2
+	bseti	a4, zero, 61
 	slt	a2, a2, a3
-	bseti	a3, zero, 61
-	slt	a1, a1, a3
+	slt	a1, a1, a4
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

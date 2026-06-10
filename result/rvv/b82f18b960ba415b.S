@@ -47,9 +47,9 @@ func0000000000000026:
 	ret
 
 func000000000000000a:
-	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vrsub.vi	v8, v10, -5, v0.t
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret

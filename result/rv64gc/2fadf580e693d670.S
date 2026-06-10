@@ -1,9 +1,9 @@
 func000000000000002c:
 	lui	a3, 16
 	addi	a3, a3, -1
-	and	a0, a0, a3
 	and	a2, a2, a3
 	and	a1, a1, a3
+	and	a0, a0, a3
 	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
@@ -13,9 +13,9 @@ func000000000000002c:
 func0000000000000024:
 	lui	a3, 16
 	addi	a3, a3, -1
-	and	a0, a0, a3
 	and	a2, a2, a3
 	and	a1, a1, a3
+	and	a0, a0, a3
 	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 8
@@ -48,8 +48,8 @@ func0000000000000101:
 	and	a0, a0, a3
 	and	a1, a1, a3
 	and	a2, a2, a3
-	sltu	a1, a2, a1
 	addi	a0, a0, -1
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -71,8 +71,8 @@ func0000000000000088:
 	and	a0, a0, a3
 	and	a2, a2, a3
 	and	a1, a1, a3
-	sltu	a1, a1, a2
 	sltiu	a0, a0, 25
+	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret

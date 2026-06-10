@@ -15,9 +15,9 @@ func000000000000018f:
 	ret
 
 func000000000000014f:
+	li	a2, 88
 	not	a1, a1
 	srli	a1, a1, 63
-	li	a2, 88
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8

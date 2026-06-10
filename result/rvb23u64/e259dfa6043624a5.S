@@ -47,9 +47,9 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
+	li	a1, -7
 	zext.b	a0, a0
 	sltiu	a0, a0, 10
-	li	a1, -7
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 55
 	ret

@@ -14,8 +14,8 @@ func0000000000000001:
 	vmv1r.v	v11, v0
 	li	a0, 20
 	vmv.v.x	v12, a0
-	li	a0, 16
 	vmv1r.v	v0, v10
+	li	a0, 16
 	vmerge.vxm	v12, v12, a0, v0
 	vmseq.vv	v10, v8, v12
 	vmor.mm	v0, v10, v11

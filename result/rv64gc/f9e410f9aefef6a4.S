@@ -20,8 +20,8 @@ func00000000000000ef:
 
 func000000000000007f:
 	slli	a2, a2, 32
-	sext.w	a0, a0
 	srli	a2, a2, 30
+	sext.w	a0, a0
 	add	a1, a1, a2
 	add	a0, a0, a2
 	add	a0, a0, a1

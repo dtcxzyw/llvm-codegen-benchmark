@@ -16,24 +16,24 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	sext.w	a1, a1
 	li	a2, -121
+	sext.w	a1, a1
 	bne	a1, a2, .LBB2_2
 	li	a0, -76
 .LBB2_2:
 	ret
 
 func000000000000000a:
-	addiw	a1, a1, 1
 	li	a2, 1
+	addiw	a1, a1, 1
 	bge	a2, a1, .LBB3_2
 	li	a0, 1
 .LBB3_2:
 	ret
 
 func0000000000000024:
-	addiw	a1, a1, -128
 	li	a2, -96
+	addiw	a1, a1, -128
 	bgeu	a1, a2, .LBB4_2
 	li	a0, 63
 .LBB4_2:

@@ -1,8 +1,8 @@
 func0000000000000092:
 	mul	a5, a2, a5
 	mulhu	a2, a2, a4
-	add	a2, a2, a5
 	mul	a3, a3, a4
+	add	a2, a2, a5
 	add	a2, a2, a3
 	add	a0, a0, a2
 	sltu	a0, a0, a2

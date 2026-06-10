@@ -9,23 +9,23 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
+	li	a1, 128
 	addi	a0, a0, -1
 	andi	a0, a0, 7
-	li	a1, 128
 	srlw	a0, a1, a0
 	ret
 
 func0000000000000007:
+	li	a1, 128
 	addi	a0, a0, 1
 	andi	a0, a0, 7
-	li	a1, 128
 	srlw	a0, a1, a0
 	ret
 
 func0000000000000002:
+	li	a1, 255
 	andi	a0, a0, 7
 	xori	a0, a0, 4
-	li	a1, 255
 	srlw	a0, a1, a0
 	ret
 

@@ -1,16 +1,16 @@
 func00000000000001c1:
-	sext.w	a0, a0
 	li	a2, 32
 	sub	a2, a2, a1
+	sext.w	a0, a0
 	zext.w	a2, a2
 	czero.eqz	a0, a2, a0
 	bset	a0, zero, a0
 	ret
 
 func00000000000001c4:
-	sext.w	a0, a0
 	li	a2, 33
 	sub	a2, a2, a1
+	sext.w	a0, a0
 	bset	a1, zero, a2
 	sltiu	a0, a0, 3
 	addi	a1, a1, -64

@@ -10,15 +10,16 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsleu.vi	v0, v8, 1
 	lui	a0, 253133
 	addi	a0, a0, -819
-	vsetvli	zero, zero, e32, m4, ta, ma
-	vmv.v.x	v8, a0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmv.v.x	v12, a0
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vmsleu.vi	v0, v8, 1
 	lui	a0, 255181
 	addi	a0, a0, -819
-	vmerge.vxm	v8, v8, a0, v0
+	vsetvli	zero, zero, e32, m4, ta, ma
+	vmerge.vxm	v8, v12, a0, v0
 	ret
 
 func0000000000000018:

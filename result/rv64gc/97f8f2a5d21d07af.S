@@ -7,10 +7,10 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	sext.w	a3, a2
-	lui	a4, 528416
-	addi	a4, a4, 1033
-	mul	a3, a3, a4
+	lui	a3, 528416
+	sext.w	a4, a2
+	addi	a3, a3, 1033
+	mul	a3, a4, a3
 	srli	a3, a3, 32
 	add	a2, a2, a3
 	srliw	a3, a2, 31
@@ -21,8 +21,8 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	sext.w	a2, a2
 	lui	a3, 873813
+	sext.w	a2, a2
 	addi	a3, a3, 1365
 	mul	a2, a2, a3
 	srli	a3, a2, 63

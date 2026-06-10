@@ -1,7 +1,7 @@
 func0000000000000017:
+	lui	a0, 1048064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
-	lui	a0, 1048064
 	vsrl.vi	v10, v10, 2
 	vandn.vx	v10, v10, a0
 	vzext.vf2	v12, v8
@@ -9,12 +9,12 @@ func0000000000000017:
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vor.vv	v10, v10, v12
 	lui	a0, 2032
-	vsrl.vi	v10, v10, 8
 	addi	a0, a0, 127
 	slli	a1, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vor.vv	v10, v10, v12
+	vsrl.vi	v10, v10, 8
 	add	a0, a0, a1
 	vand.vx	v10, v10, a0
 	vzext.vf2	v12, v8

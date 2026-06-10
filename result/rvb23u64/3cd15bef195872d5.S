@@ -30,11 +30,11 @@ func0000000000000049:
 
 func0000000000000042:
 	lui	a2, 33
+	lui	a3, 9
 	addi	a2, a2, 936
+	addi	a3, a3, -940
 	czero.eqz	a1, a2, a1
-	lui	a2, 9
-	addi	a2, a2, -940
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

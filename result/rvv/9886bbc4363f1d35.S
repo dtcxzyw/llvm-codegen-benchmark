@@ -40,9 +40,9 @@ func0000000000000001:
 
 func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf4	v10, v8
-	vmv.v.i	v11, -3
-	vwmulsu.vv	v8, v11, v10
+	vmv.v.i	v10, -3
+	vzext.vf4	v11, v8
+	vwmulsu.vv	v8, v10, v11
 	ret
 
 .LCPI6_0:

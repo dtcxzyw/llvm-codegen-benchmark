@@ -1,7 +1,7 @@
 func000000000000000f:
-	slli	a2, a2, 8
 	lui	a3, 524288
 	addi	a3, a3, -1
+	slli	a2, a2, 8
 	slli	a3, a3, 32
 	and	a2, a2, a3
 	or	a0, a0, a1

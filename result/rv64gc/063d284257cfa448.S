@@ -33,10 +33,10 @@ func0000000000000002:
 	lui	a0, 32973
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
-	lui	a0, 1016013
-	slli	a0, a0, 35
 	fadd.d	fa5, fa1, fa5
+	lui	a0, 1016013
 	fsub.d	fa5, fa5, fa0
+	slli	a0, a0, 35
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
 	ret

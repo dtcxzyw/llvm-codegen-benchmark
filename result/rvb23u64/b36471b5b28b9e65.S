@@ -1,6 +1,6 @@
 func0000000000000908:
-	sext.w	a1, a1
 	addiw	a2, a2, -65
+	sext.w	a1, a1
 	sltiu	a2, a2, 26
 	or	a0, a0, a2
 	sltiu	a1, a1, 10
@@ -8,8 +8,8 @@ func0000000000000908:
 	ret
 
 func0000000000000108:
-	sext.w	a1, a1
 	addiw	a2, a2, -10
+	sext.w	a1, a1
 	sltiu	a2, a2, -9
 	or	a0, a0, a2
 	sltiu	a1, a1, -8
@@ -18,8 +18,8 @@ func0000000000000108:
 
 func0000000000000118:
 	lui	a3, 786432
-	addiw	a1, a1, -12
 	addw	a2, a2, a3
+	addiw	a1, a1, -12
 	addi	a3, a3, 1
 	snez	a1, a1
 	sltu	a2, a2, a3

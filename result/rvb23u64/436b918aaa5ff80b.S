@@ -1,7 +1,7 @@
 func0000000000000561:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	slti	a2, a2, 2
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1
 	addiw	a0, a0, 1
@@ -20,8 +20,8 @@ func00000000000000e1:
 
 func0000000000000441:
 	sext.w	a2, a2
-	addi	a1, a1, -1
 	sltiu	a2, a2, 7
+	addi	a1, a1, -1
 	czero.nez	a1, a1, a2
 	addiw	a1, a1, 1
 	addiw	a0, a0, 1

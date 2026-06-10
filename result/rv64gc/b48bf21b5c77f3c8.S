@@ -35,9 +35,9 @@ func00000000000000b0:
 
 func0000000000000204:
 	li	a3, -1
-	seqz	a1, a1
 	slli	a3, a3, 63
 	addi	a3, a3, 8
+	seqz	a1, a1
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

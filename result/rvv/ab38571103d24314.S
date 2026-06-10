@@ -16,11 +16,11 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v8, v8, 20
 	lui	a0, 1040384
 	addi	a0, a0, 575
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsll.vi	v8, v8, 20
 	lui	a0, 1040385
 	addi	a0, a0, -1473
 	vmerge.vxm	v10, v10, a0, v0

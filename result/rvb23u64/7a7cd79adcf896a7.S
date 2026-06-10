@@ -10,9 +10,9 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	addiw	a1, a1, 16
 	srli	a0, a0, 32
 	seqz	a0, a0
+	addiw	a1, a1, 16
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
@@ -24,8 +24,8 @@ func0000000000000024:
 	ret
 
 func0000000000000038:
-	addiw	a1, a1, -20
 	srli	a0, a0, 12
+	addiw	a1, a1, -20
 	sltiu	a0, a0, 5
 	czero.nez	a0, a1, a0
 	ret

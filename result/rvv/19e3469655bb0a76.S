@@ -7,9 +7,9 @@ func0000000000000042:
 	ret
 
 func0000000000002308:
+	li	a0, -27
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, -27
 	vadd.vx	v10, v10, a0
 	vmsleu.vi	v12, v10, -3
 	vmsne.vi	v10, v8, 12

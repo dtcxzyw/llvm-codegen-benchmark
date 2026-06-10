@@ -15,19 +15,19 @@ func0000000000000021:
 
 func0000000000000308:
 	sltiu	a2, a2, 512
-	sltiu	a1, a1, 128
 	xori	a2, a2, 1
+	sltiu	a1, a1, 128
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func000000000000002a:
+	lui	a3, 122070
 	seqz	a2, a2
+	addi	a3, a3, 1279
 	and	a0, a0, a2
-	lui	a2, 122070
-	addi	a2, a2, 1279
-	slt	a1, a2, a1
+	slt	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

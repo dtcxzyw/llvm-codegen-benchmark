@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000005:
-	sraiw	a0, a0, 16
 	li	a1, 104
+	sraiw	a0, a0, 16
 	mul	a0, a0, a1
 	ret
 

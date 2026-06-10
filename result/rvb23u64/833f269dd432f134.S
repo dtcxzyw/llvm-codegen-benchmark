@@ -20,10 +20,10 @@ func0000000000000028:
 	ret
 
 func0000000000000025:
-	seqz	a2, a1
 	sltu	a0, a1, a0
+	seqz	a1, a1
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000024:

@@ -37,8 +37,8 @@ func0000000000000602:
 
 func0000000000000202:
 	lui	a3, 524288
-	seqz	a0, a0
 	addi	a3, a3, 1
+	seqz	a0, a0
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

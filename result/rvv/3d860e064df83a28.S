@@ -20,10 +20,10 @@ func0000000000000024:
 	ret
 
 func0000000000000034:
-	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmv1r.v	v11, v8
 	li	a0, 65
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsltu.vx	v0, v9, a0
+	vmv1r.v	v11, v8
 	li	a0, -48
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vadd.vx	v11, v10, a0, v0.t

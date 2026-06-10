@@ -16,8 +16,8 @@ func0000000000000014:
 
 func0000000000000016:
 	lui	a3, 917504
-	orn	a2, a3, a2
 	sh2add	a0, a1, a0
-	sh2add	a0, a2, a0
+	orn	a1, a3, a2
+	sh2add	a0, a1, a0
 	ret
 

@@ -11,10 +11,10 @@ func0000000000000061:
 	ret
 
 func0000000000000068:
-	srai	a1, a1, 3
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srai	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 5
@@ -22,10 +22,10 @@ func0000000000000068:
 	ret
 
 func0000000000000064:
-	srai	a1, a1, 3
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srai	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 5
@@ -55,10 +55,10 @@ func0000000000000044:
 	ret
 
 func0000000000000066:
-	srai	a1, a1, 4
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	srai	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 32
@@ -75,10 +75,10 @@ func0000000000000024:
 	ret
 
 func000000000000006c:
-	srai	a1, a1, 2
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srai	a1, a1, 2
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	srai	a0, a0, 2

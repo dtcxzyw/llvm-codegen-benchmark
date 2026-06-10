@@ -1,7 +1,7 @@
 func0000000000000000:
 	andi	a0, a0, 1
-	lui	a2, 2
 	addi	a0, a0, -1
+	lui	a2, 2
 	and	a0, a0, a2
 	lui	a2, 1047560
 	or	a0, a0, a1

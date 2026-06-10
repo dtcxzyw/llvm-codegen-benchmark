@@ -6,8 +6,8 @@ func0000000000000024:
 	ret
 
 func0000000000000004:
-	addi	a1, a1, -1
 	lui	a2, 1048064
+	addi	a1, a1, -1
 	orn	a0, a0, a2
 	sltu	a0, a0, a1
 	ret

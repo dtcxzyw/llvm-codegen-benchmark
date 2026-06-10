@@ -1,14 +1,14 @@
 func0000000000000004:
-	sext.w	a1, a1
 	andi	a2, a2, 1
 	bseti	a3, zero, 53
+	sext.w	a1, a1
 	czero.nez	a2, a3, a2
 	bseti	a3, zero, 59
+	lui	a4, 262147
 	czero.eqz	a1, a3, a1
-	lui	a3, 262147
-	slli	a3, a3, 6
+	slli	a4, a4, 6
 	or	a0, a0, a2
-	or	a1, a1, a3
+	or	a1, a1, a4
 	or	a0, a0, a1
 	ret
 

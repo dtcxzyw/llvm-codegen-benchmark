@@ -22,8 +22,8 @@ func0000000000000004:
 	ret
 
 func0000000000000026:
-	ori	a0, a0, 1
 	lui	a1, 524288
+	ori	a0, a0, 1
 	sext.w	a0, a0
 	addi	a1, a1, 513
 	slt	a0, a0, a1

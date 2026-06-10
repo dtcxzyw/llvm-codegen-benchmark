@@ -1,22 +1,22 @@
 func0000000000000061:
-	li	a3, 16
-	sub	a3, a3, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	srlw	a1, a1, a3
-	and	a0, a0, a2
+	lui	a3, 16
+	li	a4, 16
+	addi	a3, a3, -1
+	sub	a4, a4, a2
+	and	a1, a1, a3
+	srlw	a1, a1, a4
+	and	a0, a0, a3
 	sub	a0, a1, a0
 	ret
 
 func0000000000000021:
-	li	a3, 16
-	sub	a3, a3, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	and	a1, a1, a2
-	srlw	a1, a1, a3
-	and	a0, a0, a2
+	lui	a3, 16
+	li	a4, 16
+	addi	a3, a3, -1
+	sub	a4, a4, a2
+	and	a1, a1, a3
+	srlw	a1, a1, a4
+	and	a0, a0, a3
 	sub	a0, a1, a0
 	ret
 

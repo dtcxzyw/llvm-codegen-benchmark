@@ -155,8 +155,8 @@ func0000000000000084:
 func0000000000000544:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 244141
 	vmsgt.vi	v9, v10, -1
+	lui	a0, 244141
 	addi	a0, a0, -1536
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0

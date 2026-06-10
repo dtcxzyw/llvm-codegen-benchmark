@@ -1,9 +1,9 @@
 func000000000000008c:
 	slli	a0, a0, 48
-	addi	a1, a1, 128
 	srli	a0, a0, 48
-	sltiu	a1, a1, 256
+	addi	a1, a1, 128
 	addi	a0, a0, -8
+	sltiu	a1, a1, 256
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

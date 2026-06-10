@@ -9,16 +9,16 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
+	lui	a2, 158
 	subw	a0, a0, a1
-	lui	a1, 158
-	addi	a1, a1, 839
+	addi	a1, a2, 839
 	xor	a0, a0, a1
 	ret
 
 func0000000000000002:
+	lui	a2, 11
 	subw	a0, a0, a1
-	lui	a1, 11
-	addi	a1, a1, 351
+	addi	a1, a2, 351
 	xor	a0, a0, a1
 	ret
 

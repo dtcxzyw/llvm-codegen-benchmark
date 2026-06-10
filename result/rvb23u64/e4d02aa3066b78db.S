@@ -1,9 +1,9 @@
 func0000000000000118:
-	sext.w	a1, a1
 	zext.h	a2, a2
+	sext.w	a1, a1
+	sltiu	a3, a2, 97
 	sltu	a1, a2, a1
-	sltiu	a2, a2, 97
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	and	a0, a0, a1
 	ret
 

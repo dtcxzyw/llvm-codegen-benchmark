@@ -1,6 +1,6 @@
 func0000000000000350:
-	add	a2, a2, a0
 	lui	a3, 16
+	add	a2, a2, a0
 	addi	a3, a3, -16
 	sltu	a2, a3, a2
 	lui	a3, 983055

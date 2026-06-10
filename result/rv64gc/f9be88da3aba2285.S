@@ -6,9 +6,9 @@ func0000000000000014:
 func000000000000000f:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	lui	a2, 244141
 	sub	a1, a1, a0
-	lui	a0, 244141
-	addi	a0, a0, -1536
+	addi	a0, a2, -1536
 	mul	a0, a1, a0
 	ret
 

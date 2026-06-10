@@ -1,8 +1,8 @@
 func000000000000000b:
-	addiw	a2, a2, -136
 	lui	a3, 4033
-	seqz	a2, a2
+	addiw	a2, a2, -136
 	and	a1, a1, a3
+	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

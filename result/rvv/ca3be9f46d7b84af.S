@@ -10,9 +10,9 @@ func0000000000000004:
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v10, v10, a0
+	vadd.vv	v8, v10, v8
 	lui	a0, 1046001
 	addi	a0, a0, 325
-	vadd.vv	v8, v10, v8
 	slli	a0, a0, 13
 	vmul.vx	v8, v8, a0
 	ret

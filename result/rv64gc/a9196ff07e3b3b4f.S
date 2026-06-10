@@ -41,8 +41,8 @@ func0000000000000081:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a2, 31
 	srliw	a1, a1, 31
+	srliw	a2, a2, 31
 	not	a1, a1
 	and	a1, a1, a2
 	addi	a1, a1, -1
@@ -64,9 +64,9 @@ func000000000000018c:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 319488
+	lui	a4, 311296
 	xor	a2, a2, a3
-	lui	a3, 311296
-	xor	a1, a1, a3
+	xor	a1, a1, a4
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
@@ -97,8 +97,8 @@ func000000000000008c:
 	ret
 
 func0000000000000144:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	slti	a2, a2, 2
 	xori	a2, a2, 1
 	sltiu	a1, a1, 2
@@ -109,8 +109,8 @@ func0000000000000144:
 	ret
 
 func0000000000000141:
-	srliw	a2, a2, 31
 	addiw	a1, a1, -1
+	srliw	a2, a2, 31
 	snez	a1, a1
 	or	a1, a1, a2
 	bnez	a1, .LBB10_2

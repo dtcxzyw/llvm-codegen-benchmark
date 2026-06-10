@@ -6,8 +6,8 @@ func000000000000002f:
 	ret
 
 func0000000000000020:
-	zext.h	a2, a2
 	sh2add	a0, a1, a0
+	zext.h	a2, a2
 	add	a0, a0, a2
 	addi	a0, a0, -1
 	ret
@@ -101,15 +101,15 @@ func000000000000002e:
 	ret
 
 func0000000000000060:
-	zext.h	a2, a2
 	sh1add	a0, a1, a0
+	zext.h	a2, a2
 	sh1add	a0, a2, a0
 	addi	a0, a0, -2
 	ret
 
 func0000000000000063:
-	zext.h	a2, a2
 	sh1add	a0, a1, a0
+	zext.h	a2, a2
 	sh1add	a0, a2, a0
 	addi	a0, a0, 2
 	ret

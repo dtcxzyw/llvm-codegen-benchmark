@@ -1,6 +1,6 @@
 func0000000000000002:
-	sraiw	a0, a0, 13
 	li	a1, 1
+	sraiw	a0, a0, 13
 	sub	a1, a1, a0
 	lui	a0, 335544
 	zext.w	a1, a1

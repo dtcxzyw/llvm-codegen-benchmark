@@ -1,7 +1,7 @@
 func000000000000000b:
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v10, v0
-	bseti	a0, zero, 63
 	vmseq.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v12, v8, -1, v0
@@ -12,9 +12,9 @@ func000000000000000b:
 	ret
 
 func0000000000000043:
+	li	a0, 1023
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v10, v0
-	li	a0, 1023
 	vmsgtu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v12, v8, 1, v0

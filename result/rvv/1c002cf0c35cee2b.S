@@ -30,12 +30,11 @@ func000000000000000a:
 	vmerge.vim	v8, v8, -1, v0
 	ret
 
+.LCPI4_0:
+	.quad	1000000000000000000
 func0000000000000004:
-	lui	a0, 227374
-	addi	a0, a0, -1329
-	slli	a0, a0, 12
-	addi	a0, a0, -1575
-	slli	a0, a0, 18
+	lui	a0, %hi(.LCPI4_0)
+	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

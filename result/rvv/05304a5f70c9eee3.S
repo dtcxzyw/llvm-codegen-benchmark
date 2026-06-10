@@ -84,11 +84,11 @@ func00000000000003aa:
 func000000000000038a:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, 19
 	vwsll.vi	v12, v14, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
+	li	a0, 19
 	slli	a0, a0, 11
 	vmsgt.vx	v0, v8, a0
 	ret

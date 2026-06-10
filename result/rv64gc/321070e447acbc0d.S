@@ -1,8 +1,8 @@
 func0000000000000024:
-	andi	a1, a0, 240
-	li	a2, 32
+	li	a1, 32
+	andi	a2, a0, 240
 	zext.b	a0, a0
-	beq	a1, a2, .LBB0_2
+	beq	a2, a1, .LBB0_2
 	li	a1, 2
 	sltiu	a0, a0, 16
 	addi	a0, a0, -1

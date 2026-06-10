@@ -1,8 +1,8 @@
 func000000000000000d:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v8, -1
-	vmv.v.i	v11, 0
-	vwsubu.vv	v8, v11, v10
+	vmv.v.i	v10, 0
+	vadd.vi	v11, v8, -1
+	vwsubu.vv	v8, v10, v11
 	ret
 
 func0000000000000001:
@@ -27,24 +27,24 @@ func0000000000000009:
 
 func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v8, -2
-	vmv.v.i	v11, 0
-	vwsubu.vv	v8, v11, v10
+	vmv.v.i	v10, 0
+	vadd.vi	v11, v8, -2
+	vwsubu.vv	v8, v10, v11
 	ret
 
 func000000000000001d:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v8, 1
-	vmv.v.i	v11, 0
-	vwsubu.vv	v8, v11, v10
+	vmv.v.i	v10, 0
+	vadd.vi	v11, v8, 1
+	vwsubu.vv	v8, v10, v11
 	ret
 
 func000000000000001f:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v8, 1
 	lui	a0, 2
 	addi	a0, a0, 1808
-	vmv.v.x	v11, a0
-	vwsubu.vv	v8, v11, v10
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.x	v10, a0
+	vadd.vi	v11, v8, 1
+	vwsubu.vv	v8, v10, v11
 	ret
 

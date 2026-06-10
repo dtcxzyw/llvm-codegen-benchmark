@@ -7,11 +7,11 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	andi	a2, a0, 1
-	lui	a0, 1048544
-	srli	a0, a0, 15
+	lui	a2, 1048544
+	andi	a3, a0, 1
+	srli	a0, a2, 15
 	and	a0, a0, a1
-	bnez	a2, .LBB1_2
+	bnez	a3, .LBB1_2
 	li	a1, 24
 	add	a0, a0, a1
 	ret

@@ -49,9 +49,9 @@ func0000000000000003:
 	ret
 
 func0000000000000009:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v12, v12, v16
-	fmv.w.x	fa5, zero
 	vfmul.vv	v8, v8, v12
 	vmflt.vf	v12, v8, fa5
 	vmfgt.vf	v13, v8, fa5

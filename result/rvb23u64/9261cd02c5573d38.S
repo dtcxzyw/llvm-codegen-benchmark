@@ -7,10 +7,10 @@ func0000000000000026:
 
 func000000000000002a:
 	zext.h	a1, a1
+	lui	a2, 8
 	subw	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func0000000000000021:

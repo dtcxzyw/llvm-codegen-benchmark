@@ -1,8 +1,8 @@
 func000000000000000f:
-	sext.w	a2, a1
-	snez	a2, a2
-	sub	a1, a1, a2
 	li	a2, 47
+	sext.w	a3, a1
+	snez	a3, a3
+	sub	a1, a1, a3
 	slli	a1, a1, 32
 	slli	a2, a2, 35
 	mulhu	a1, a1, a2

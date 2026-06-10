@@ -1,8 +1,8 @@
 func0000000000000000:
 	rori	a0, a0, 33
+	lui	a2, 339406
 	add	a0, a0, a1
-	lui	a1, 339406
-	addi	a1, a1, 1833
+	addi	a1, a2, 1833
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
 	ret

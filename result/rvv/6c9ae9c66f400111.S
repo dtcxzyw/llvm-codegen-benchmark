@@ -6,26 +6,26 @@ func0000000000000018:
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vmand.mm	v10, v0, v10
 	li	a0, 17
+	vsetivli	zero, 16, e16, m2, ta, ma
 	vmseq.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmand.mm	v8, v0, v10
+	vmor.mm	v0, v11, v8
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vmand.mm	v10, v0, v10
 	lui	a0, 1048572
+	vsetivli	zero, 16, e16, m2, ta, ma
 	vmslt.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmand.mm	v8, v0, v10
+	vmor.mm	v0, v11, v8
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vmand.mm	v10, v0, v10
 	li	a0, 173
+	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmand.mm	v8, v0, v10
+	vmor.mm	v0, v11, v8
 	ret
 

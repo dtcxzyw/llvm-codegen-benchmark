@@ -11,8 +11,8 @@ func0000000000000025:
 
 func000000000000000d:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v0, v9, 0
 	vmv.v.i	v10, 0
+	vmseq.vi	v0, v9, 0
 	vmerge.vim	v11, v8, 0, v0
 	vwsubu.vv	v8, v10, v11
 	ret

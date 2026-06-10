@@ -1,7 +1,7 @@
 func0000000000000021:
 	zext.h	a1, a1
-	li	a2, -39
 	sltiu	a1, a1, 10
+	li	a2, -39
 	czero.nez	a1, a2, a1
 	zext.h	a0, a0
 	add	a0, a0, a1

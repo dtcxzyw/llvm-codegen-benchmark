@@ -1,7 +1,7 @@
 func0000000000000000:
-	neg	a1, a0
-	sltiu	a0, a0, 2
+	sltiu	a1, a0, 2
 	neg	a0, a0
+	neg	a1, a1
 	or	a0, a0, a1
 	ret
 

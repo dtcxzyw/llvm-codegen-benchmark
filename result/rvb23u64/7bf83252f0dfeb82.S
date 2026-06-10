@@ -102,15 +102,15 @@ func0000000000000010:
 	ret
 
 func0000000000000022:
-	sext.w	a2, a1
-	lui	a3, 1048544
-	addi	a3, a3, -1
-	sltu	a2, a3, a2
-	lui	a3, 16
+	lui	a2, 1048544
+	sext.w	a3, a1
+	addi	a2, a2, -1
+	sltu	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 16
 	or	a0, a0, a1
-	addi	a3, a3, 1
-	addw	a0, a0, a3
+	addi	a2, a2, 1
+	addw	a0, a0, a2
 	ret
 

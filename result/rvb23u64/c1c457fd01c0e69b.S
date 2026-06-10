@@ -1,27 +1,27 @@
 func0000000000000007:
-	andi	a0, a0, 1
 	sub	a1, a1, a2
+	andi	a0, a0, 1
 	slli	a1, a1, 32
 	czero.nez	a0, a1, a0
 	ret
 
 func000000000000000f:
-	andi	a0, a0, 1
 	sub	a1, a1, a2
+	andi	a0, a0, 1
 	slli	a1, a1, 32
 	czero.nez	a0, a1, a0
 	ret
 
 func000000000000000a:
-	andi	a0, a0, 1
 	sub	a1, a1, a2
+	andi	a0, a0, 1
 	slli	a1, a1, 32
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	sub	a1, a1, a2
+	andi	a0, a0, 1
 	slli	a1, a1, 32
 	czero.nez	a0, a1, a0
 	ret

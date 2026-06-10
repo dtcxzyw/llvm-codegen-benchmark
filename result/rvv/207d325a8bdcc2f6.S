@@ -20,8 +20,8 @@ func0000000000000078:
 func0000000000000028:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 1
 	vadd.vi	v10, v10, 8
+	lui	a0, 1
 	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10

@@ -12,8 +12,8 @@ func000000000000054a:
 
 func000000000000014c:
 	sub	a1, a0, a1
-	addi	a0, a0, -2
 	srli	a1, a1, 63
+	addi	a0, a0, -2
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1

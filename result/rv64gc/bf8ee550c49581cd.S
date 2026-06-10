@@ -10,8 +10,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	sext.w	a1, a1
 	lui	a2, 16
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	andi	a0, a0, 1
 	bltu	a1, a2, .LBB1_2

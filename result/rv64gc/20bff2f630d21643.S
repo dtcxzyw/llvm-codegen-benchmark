@@ -1,7 +1,7 @@
 func00000000000000a6:
+	li	a3, 1000
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	li	a2, 1000
-	mul	a0, a0, a2
 	slt	a0, a0, a1
 	ret
 
@@ -50,17 +50,17 @@ func0000000000000008:
 	ret
 
 func0000000000000105:
+	li	a3, 50
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	li	a2, 50
-	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 
 func0000000000000005:
+	li	a3, 50
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	li	a2, 50
-	mul	a0, a0, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
@@ -75,9 +75,9 @@ func0000000000000021:
 	ret
 
 func00000000000000cc:
+	li	a3, 52
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	li	a2, 52
-	mul	a0, a0, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

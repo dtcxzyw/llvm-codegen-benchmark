@@ -15,10 +15,10 @@ func0000000000000001:
 
 func0000000000000034:
 	lui	a2, 1048575
+	lui	a3, 4
 	and	a1, a1, a2
-	lui	a2, 4
-	addi	a2, a2, 1
-	bgeu	a1, a2, .LBB2_2
+	addi	a3, a3, 1
+	bgeu	a1, a3, .LBB2_2
 	li	a0, 12
 	ret
 .LBB2_2:

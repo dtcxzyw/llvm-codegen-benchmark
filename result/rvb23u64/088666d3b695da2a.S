@@ -1,14 +1,14 @@
 func0000000000000000:
-	zext.w	a3, a2
-	lui	a4, 351844
-	add	a1, a1, a2
-	lui	a2, 24414
-	addi	a4, a4, -1143
-	addi	a2, a2, 256
+	lui	a3, 351844
+	zext.w	a4, a2
+	addi	a3, a3, -1143
 	mul	a3, a3, a4
+	lui	a4, 24414
 	srli	a3, a3, 57
-	mul	a2, a2, a3
+	addi	a4, a4, 256
+	mul	a3, a3, a4
+	add	a1, a1, a2
 	add	a0, a0, a1
-	subw	a0, a0, a2
+	subw	a0, a0, a3
 	ret
 

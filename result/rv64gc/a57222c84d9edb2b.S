@@ -16,8 +16,8 @@ func0000000000000058:
 
 func0000000000000302:
 	andi	a1, a1, -3
-	addiw	a0, a0, -15
 	addiw	a1, a1, -1
+	addiw	a0, a0, -15
 	snez	a1, a1
 	seqz	a0, a0
 	xor	a0, a0, a1

@@ -25,8 +25,8 @@ func0000000000000988:
 
 func0000000000000761:
 	sh3add.uw	a1, a2, a1
-	addi	a1, a1, 8
 	addi	a0, a0, -8
+	addi	a1, a1, 8
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

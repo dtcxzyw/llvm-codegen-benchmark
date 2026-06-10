@@ -12,8 +12,8 @@ func0000000000000000:
 	li	a0, 511
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, 65279
 	vsrl.vi	v8, v8, 9
+	lui	a0, 65279
 	addi	a0, a0, 16
 	vminu.vx	v8, v8, a0
 	ret

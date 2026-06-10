@@ -4,26 +4,26 @@ func000000000000001f:
 	ret
 
 func000000000000001e:
-	slli	a0, a0, 1
 	li	a1, 2
+	slli	a0, a0, 1
 	sll	a0, a1, a0
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 3
 	li	a1, -1
+	slli	a0, a0, 3
 	sll	a0, a1, a0
 	ret
 
 func0000000000000005:
-	slli	a0, a0, 3
 	li	a1, -1
+	slli	a0, a0, 3
 	sll	a0, a1, a0
 	ret
 
 func0000000000000016:
-	slli	a0, a0, 1
 	li	a1, 3
+	slli	a0, a0, 1
 	sll	a0, a1, a0
 	ret
 

@@ -1,11 +1,11 @@
 func0000000000000084:
 	fmv.s	fa5, fa0
 	fmv.w.x	fa4, zero
-	lui	a0, 260096
-	feq.s	a1, fa1, fa4
-	fmv.w.x	fa0, a0
+	feq.s	a0, fa1, fa4
+	lui	a1, 260096
+	fmv.w.x	fa0, a1
 	fmv.s	fa4, fa0
-	beqz	a1, .LBB0_3
+	beqz	a0, .LBB0_3
 	fdiv.s	fa5, fa5, fa4
 	flt.s	a0, fa0, fa5
 	beqz	a0, .LBB0_4

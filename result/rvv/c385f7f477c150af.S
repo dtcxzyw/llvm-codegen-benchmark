@@ -13,12 +13,13 @@ func000000000000000b:
 	ret
 
 func0000000000000009:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vv	v10, v8, v9
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v10, v9
+	vmv1r.v	v11, v8
 	li	a0, -132
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vor.vv	v10, v11, v10
 	vwaddu.wv	v8, v8, v10
 	ret
 

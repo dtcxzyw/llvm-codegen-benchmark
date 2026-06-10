@@ -16,11 +16,11 @@ func000000000000000d:
 	ret
 
 func0000000000000030:
-	addi	a0, a0, -1
-	slli	a1, a0, 32
-	slli	a0, a0, 33
-	add	a0, a0, a1
 	li	a1, 39
+	addi	a0, a0, -1
+	slli	a2, a0, 32
+	slli	a0, a0, 33
+	add	a0, a0, a2
 	slli	a1, a1, 29
 	add	a0, a0, a1
 	ret
@@ -35,8 +35,8 @@ func000000000000000f:
 	ret
 
 func000000000000007d:
-	addiw	a0, a0, 1
 	li	a1, 216
+	addiw	a0, a0, 1
 	mul	a0, a0, a1
 	addi	a0, a0, -216
 	ret

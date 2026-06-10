@@ -22,17 +22,17 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	max	a1, a1, zero
 	slt	a0, a1, a0
 	xori	a0, a0, 1
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, -2
+	sext.w	a0, a0
 	max	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

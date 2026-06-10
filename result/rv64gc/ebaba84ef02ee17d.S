@@ -3,11 +3,11 @@
 func000000000000002a:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	andi	a0, a0, 1
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 13
 	add	a1, a1, a2
+	andi	a0, a0, 1
 	lui	a2, 1048400
 	subw	a1, a1, a0
 	addi	a0, a2, 1427
@@ -15,8 +15,8 @@ func000000000000002a:
 	ret
 
 func0000000000000201:
-	srli	a1, a1, 2
 	lui	a2, 699051
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	andi	a0, a0, 1
@@ -25,8 +25,8 @@ func0000000000000201:
 	ret
 
 func000000000000022a:
-	srli	a1, a1, 3
 	lui	a2, 748983
+	srli	a1, a1, 3
 	addi	a2, a2, -585
 	mul	a1, a1, a2
 	andi	a0, a0, 1
@@ -35,8 +35,8 @@ func000000000000022a:
 	ret
 
 func0000000000000221:
-	srli	a1, a1, 3
 	lui	a2, 748983
+	srli	a1, a1, 3
 	addi	a2, a2, -585
 	mulw	a1, a1, a2
 	andi	a0, a0, 1

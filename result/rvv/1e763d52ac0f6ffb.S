@@ -26,8 +26,8 @@ func0000000000000015:
 	lui	a0, 69
 	addi	a0, a0, -1149
 	vmulhu.vx	v12, v12, a0
-	lui	a0, 244141
 	vsrl.vi	v12, v12, 7
+	lui	a0, 244141
 	addi	a0, a0, -1536
 	vnmsub.vx	v12, a0, v10
 	vmsleu.vv	v0, v12, v8

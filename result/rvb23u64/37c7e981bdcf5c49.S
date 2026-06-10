@@ -20,14 +20,14 @@ func0000000000000005:
 .LCPI2_0:
 	.quad	0x4004e020fbf6c69a
 func0000000000000003:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, 4101
 	slli	a0, a0, 38
-	fmv.d.x	fa4, a0
-	fmul.d	fa4, fa1, fa4
-	fadd.d	fa5, fa0, fa5
-	fle.d	a0, fa4, fa5
+	fmv.d.x	fa5, a0
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa4, %lo(.LCPI2_0)(a0)
+	fmul.d	fa5, fa1, fa5
+	fadd.d	fa4, fa0, fa4
+	fle.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 

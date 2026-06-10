@@ -20,8 +20,8 @@ func0000000000000d18:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
-	li	a0, 384
 	vmsltu.vv	v11, v8, v12
+	li	a0, 384
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8
@@ -58,9 +58,9 @@ func0000000000000d98:
 	li	a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
+	vmsltu.vv	v11, v8, v12
 	lui	a0, 320757
 	addi	a0, a0, 842
-	vmsltu.vv	v11, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8

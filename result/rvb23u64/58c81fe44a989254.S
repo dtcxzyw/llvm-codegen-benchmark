@@ -72,8 +72,8 @@ func0000000000000036:
 	ret
 
 func0000000000000004:
-	not	a2, a2
 	sh3add	a0, a1, a0
+	not	a2, a2
 	sh3add	a0, a2, a0
 	ret
 

@@ -1,14 +1,14 @@
 func0000000000000001:
-	zext.b	a0, a0
 	slli	a1, a1, 56
+	zext.b	a0, a0
 	srli	a1, a1, 48
 	or	a0, a0, a1
 	ret
 
 func0000000000000000:
 	lui	a2, 1
-	slli	a1, a1, 60
 	addi	a2, a2, 511
+	slli	a1, a1, 60
 	and	a0, a0, a2
 	srli	a1, a1, 51
 	or	a0, a0, a1

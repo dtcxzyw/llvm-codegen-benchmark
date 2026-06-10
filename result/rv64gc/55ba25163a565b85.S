@@ -13,9 +13,9 @@ func0000000000000005:
 
 func0000000000000010:
 	srai	a2, a2, 3
-	lui	a3, 838861
 	mul	a1, a2, a1
-	addi	a2, a3, -819
+	lui	a2, 838861
+	addi	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -37,9 +37,9 @@ func0000000000000000:
 
 func0000000000000015:
 	srai	a2, a2, 4
-	lui	a3, 699051
 	mul	a1, a2, a1
-	addi	a2, a3, -1365
+	lui	a2, 699051
+	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2

@@ -1,8 +1,8 @@
 func00000000000004e6:
-	srli	a1, a1, 3
 	lui	a2, 748983
 	addi	a2, a2, -585
 	slli	a3, a2, 33
+	srli	a1, a1, 3
 	add	a2, a2, a3
 	mulw	a1, a1, a2
 	addi	a0, a0, 1
@@ -10,10 +10,10 @@ func00000000000004e6:
 	ret
 
 func00000000000004a1:
-	srli	a1, a1, 3
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srli	a1, a1, 3
 	add	a2, a2, a3
 	mulw	a1, a1, a2
 	addi	a0, a0, 1
@@ -46,10 +46,10 @@ func00000000000000a1:
 	ret
 
 func00000000000004c1:
-	srli	a1, a1, 3
 	lui	a2, 838861
 	addi	a2, a2, -819
 	slli	a3, a2, 32
+	srli	a1, a1, 3
 	add	a2, a2, a3
 	mulw	a1, a1, a2
 	addi	a0, a0, 1

@@ -1,7 +1,7 @@
 func000000000000014c:
 	sext.w	a2, a2
-	addiw	a1, a1, -772
 	slti	a2, a2, 4
+	addiw	a1, a1, -772
 	xori	a2, a2, 1
 	snez	a1, a1
 	or	a1, a1, a2

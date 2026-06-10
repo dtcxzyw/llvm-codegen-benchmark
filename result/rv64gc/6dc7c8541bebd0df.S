@@ -1,8 +1,8 @@
 func0000000000000021:
-	sraiw	a2, a1, 31
-	xor	a1, a1, a2
-	subw	a1, a1, a2
 	li	a2, 16
+	sraiw	a3, a1, 31
+	xor	a1, a1, a3
+	subw	a1, a1, a3
 	bne	a1, a2, .LBB0_2
 	li	a0, 8
 .LBB0_2:
@@ -20,20 +20,20 @@ func0000000000000001:
 	ret
 
 func0000000000000034:
-	sraiw	a2, a1, 31
-	xor	a1, a1, a2
-	subw	a1, a1, a2
 	li	a2, 10
+	sraiw	a3, a1, 31
+	xor	a1, a1, a3
+	subw	a1, a1, a3
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 1
 .LBB2_2:
 	ret
 
 func0000000000000038:
-	sraiw	a2, a1, 31
-	xor	a1, a1, a2
-	subw	a1, a1, a2
 	li	a2, 47
+	sraiw	a3, a1, 31
+	xor	a1, a1, a3
+	subw	a1, a1, a3
 	bgeu	a2, a1, .LBB3_2
 	li	a0, 2
 .LBB3_2:

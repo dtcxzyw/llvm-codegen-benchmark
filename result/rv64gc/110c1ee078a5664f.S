@@ -73,10 +73,10 @@ func00000000000001ec:
 func00000000000001e1:
 	zext.b	a1, a1
 	slli	a1, a1, 32
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	xor	a0, a0, a1
+	slli	a2, a2, 32
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

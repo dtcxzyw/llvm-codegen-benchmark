@@ -1,11 +1,11 @@
 func0000000000000008:
-	andi	a3, a1, 1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	sltu	a1, a1, a2
+	li	a3, 1
+	slli	a3, a3, 32
+	addi	a3, a3, -2
+	andi	a4, a1, 1
+	sltu	a1, a3, a2
 	and	a1, a1, a0
-	bnez	a3, .LBB0_2
+	bnez	a4, .LBB0_2
 	li	a0, -32
 	bnez	a1, .LBB0_3
 	j	.LBB0_4

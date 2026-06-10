@@ -1,6 +1,6 @@
 func0000000000000074:
-	zext.b	a0, a0
 	li	a1, 3
+	zext.b	a0, a0
 	minu	a0, a0, a1
 	addiw	a0, a0, 4
 	ret

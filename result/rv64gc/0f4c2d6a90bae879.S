@@ -19,10 +19,10 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
 	lui	a3, 344254
 	addi	a3, a3, 1024
 	mul	a2, a2, a3
+	sext.w	a0, a0
 	subw	a2, a2, a1
 	xor	a0, a0, a2
 	snez	a0, a0
@@ -38,10 +38,10 @@ func0000000000000006:
 
 func000000000000000a:
 	lui	a3, 804435
-	add	a0, a0, a1
-	lui	a1, 244141
 	addi	a3, a3, 1536
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 244141
 	addw	a0, a0, a2
 	addi	a1, a1, -1536
 	slt	a0, a1, a0

@@ -1,7 +1,7 @@
 func0000000000000002:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 2
-	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -19,9 +19,9 @@ func0000000000000000:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
-	csrwi	vxrm, 2
 	vsrl.vx	v10, v8, a0
 	vsra.vi	v8, v8, 2
+	csrwi	vxrm, 2
 	vaadd.vv	v8, v8, v10
 	lui	a0, 524288
 	vandn.vx	v8, v8, a0

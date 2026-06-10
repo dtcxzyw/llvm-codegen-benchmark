@@ -21,11 +21,11 @@ func00000000000003ff:
 
 func00000000000001d5:
 	lui	a3, 1048368
+	lui	a4, 298
 	addi	a3, a3, -524
+	addi	a4, a4, -66
 	mul	a2, a2, a3
-	lui	a3, 298
-	addi	a3, a3, -66
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	lui	a3, 1043808
 	addi	a3, a3, 1056
 	add	a0, a0, a2

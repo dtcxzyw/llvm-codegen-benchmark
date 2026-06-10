@@ -41,8 +41,8 @@ func0000000000000015:
 
 func000000000000003f:
 	sh1add	a1, a1, a1
-	lui	a2, 917504
 	slli	a1, a1, 3
+	lui	a2, 917504
 	addi	a1, a1, 39
 	srli	a2, a2, 26
 	and	a1, a1, a2

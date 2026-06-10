@@ -10,9 +10,9 @@ func0000000000000005:
 
 func0000000000000007:
 	slli	a1, a1, 24
+	lui	a2, 235216
 	or	a0, a0, a1
-	lui	a1, 235216
-	addi	a1, a1, -328
+	addi	a1, a2, -328
 	xor	a0, a0, a1
 	ret
 
@@ -36,9 +36,9 @@ func0000000000000000:
 
 func0000000000000006:
 	slli	a1, a1, 16
+	lui	a2, 65541
 	or	a0, a0, a1
-	lui	a1, 65541
-	addi	a1, a1, 768
+	addi	a1, a2, 768
 	xor	a0, a0, a1
 	ret
 

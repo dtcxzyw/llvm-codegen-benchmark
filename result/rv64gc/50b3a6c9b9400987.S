@@ -6,9 +6,9 @@ func000000000000003a:
 	ret
 
 func000000000000007a:
+	sext.w	a2, a2
 	slli	a3, a0, 3
 	slli	a0, a0, 5
-	sext.w	a2, a2
 	add	a0, a0, a3
 	slli	a3, a2, 3
 	slli	a2, a2, 5
@@ -19,8 +19,8 @@ func000000000000007a:
 	ret
 
 func0000000000000060:
-	slli	a0, a0, 2
 	sext.w	a2, a2
+	slli	a0, a0, 2
 	add	a0, a0, a1
 	slli	a2, a2, 2
 	add	a0, a0, a2
@@ -36,8 +36,8 @@ func0000000000000000:
 	ret
 
 func0000000000000040:
-	add	a0, a0, a1
 	sext.w	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 

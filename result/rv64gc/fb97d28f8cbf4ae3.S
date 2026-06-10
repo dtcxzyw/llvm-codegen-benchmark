@@ -14,11 +14,11 @@ func0000000000000000:
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 24
 	add	a1, a1, a2
-	lui	a2, 599186
-	addi	a2, a2, 1171
 	sraiw	a1, a1, 8
+	lui	a2, 599186
 	addw	a0, a0, a1
-	mul	a1, a0, a2
+	addi	a1, a2, 1171
+	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
 	srliw	a2, a1, 31

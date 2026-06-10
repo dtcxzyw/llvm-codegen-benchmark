@@ -33,8 +33,8 @@ func000000000000000c:
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 32
 	lui	a2, 1048574
+	slli	a1, a1, 32
 	srli	a1, a1, 32
 	addi	a2, a2, -1841
 	mul	a1, a1, a2
@@ -42,15 +42,15 @@ func0000000000000005:
 	ret
 
 func000000000000001f:
-	sext.w	a1, a1
 	li	a2, 216
+	sext.w	a1, a1
 	mul	a1, a1, a2
 	sub	a0, a1, a0
 	ret
 
 func000000000000001d:
-	sext.w	a1, a1
 	li	a2, 216
+	sext.w	a1, a1
 	mul	a1, a1, a2
 	sub	a0, a1, a0
 	ret

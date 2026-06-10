@@ -1,9 +1,9 @@
 func0000000000000021:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	andi	a1, a1, 1
 	addi	a0, a0, -2048
 	seqz	a0, a0
+	andi	a1, a1, 1
 	slli	a0, a0, 2
 	sub	a0, a0, a1
 	addi	a0, a0, 2

@@ -17,10 +17,10 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
-	slt	a2, a0, a1
-	not	a0, a0
-	add	a0, a0, a1
-	czero.eqz	a0, a0, a2
+	not	a2, a0
+	slt	a0, a0, a1
+	add	a1, a1, a2
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, 1
 	ret
 
@@ -29,26 +29,26 @@ func0000000000000045:
 	ret
 
 func0000000000000048:
-	sltu	a2, a1, a0
-	not	a1, a1
-	add	a0, a0, a1
-	czero.eqz	a0, a0, a2
+	not	a2, a1
+	sltu	a1, a1, a0
+	add	a0, a0, a2
+	czero.eqz	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
 func0000000000000008:
-	sltu	a2, a1, a0
-	not	a1, a1
-	add	a0, a0, a1
-	czero.eqz	a0, a0, a2
+	not	a2, a1
+	sltu	a1, a1, a0
+	add	a0, a0, a2
+	czero.eqz	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
 func0000000000000004:
-	sltu	a2, a0, a1
-	not	a0, a0
-	add	a0, a0, a1
-	czero.eqz	a0, a0, a2
+	not	a2, a0
+	sltu	a0, a0, a1
+	add	a1, a1, a2
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, 1
 	ret
 

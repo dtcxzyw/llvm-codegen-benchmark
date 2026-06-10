@@ -3,8 +3,8 @@ func0000000000000015:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, -55
-	vsll.vi	v10, v10, 4
 	vmerge.vxm	v12, v12, a0, v0
+	vsll.vi	v10, v10, 4
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v12, v8
 	ret
@@ -12,9 +12,9 @@ func0000000000000015:
 func000000000000001d:
 	lui	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vsll.vi	v10, v10, 22
 	vadd.vx	v12, v8, a0
 	vmerge.vvm	v8, v12, v8, v0
-	vsll.vi	v10, v10, 22
 	vadd.vv	v8, v8, v10
 	ret
 
@@ -30,8 +30,8 @@ func0000000000000010:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 201
-	vsll.vi	v10, v10, 4
 	vmerge.vxm	v12, v12, a0, v0
+	vsll.vi	v10, v10, 4
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v12, v8
 	ret

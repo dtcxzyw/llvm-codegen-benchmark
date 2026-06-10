@@ -8,8 +8,8 @@ func0000000000000002:
 
 func0000000000000006:
 	slli	a1, a1, 12
-	li	a2, 1075
 	srli	a1, a1, 12
+	li	a2, 1075
 	bseti	a1, a1, 52
 	sub	a2, a2, a0
 	srl	a0, a1, a2
@@ -17,8 +17,8 @@ func0000000000000006:
 
 func000000000000000e:
 	slli	a1, a1, 12
-	li	a2, 1063
 	srli	a1, a1, 12
+	li	a2, 1063
 	bseti	a1, a1, 52
 	sub	a2, a2, a0
 	srl	a0, a1, a2

@@ -1,12 +1,12 @@
 func0000000000000155:
 	li	a3, 100
-	slli	a0, a0, 2
 	mul	a2, a2, a3
+	slli	a0, a0, 2
 	lui	a3, 1048509
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a1, a3, 432
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000000:
@@ -30,9 +30,9 @@ func00000000000003ff:
 
 func0000000000000030:
 	lui	a3, 65536
-	slli	a0, a0, 11
 	addi	a3, a3, -1357
 	mul	a2, a2, a3
+	slli	a0, a0, 11
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 2047

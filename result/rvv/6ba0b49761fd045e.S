@@ -1,8 +1,8 @@
 func0000000000000025:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v14, v12, 0
 	lui	a0, 6
 	addi	a0, a0, -1593
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vnsrl.wi	v14, v12, 0
 	vmulh.vx	v12, v14, a0
 	vsra.vi	v12, v12, 7
 	vsrl.vi	v13, v12, 15
@@ -14,10 +14,10 @@ func0000000000000025:
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v14, v12, 0
 	lui	a0, 1
 	addi	a0, a0, 1147
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vnsrl.wi	v14, v12, 0
 	vmulh.vx	v12, v14, a0
 	vsra.vi	v12, v12, 5
 	vsrl.vi	v13, v12, 15

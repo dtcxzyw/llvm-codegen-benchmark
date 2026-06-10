@@ -1,6 +1,6 @@
 func000000000000000d:
-	andi	a2, a2, 1
 	lui	a3, 1048574
+	andi	a2, a2, 1
 	addi	a3, a3, 1
 	czero.nez	a2, a3, a2
 	add	a1, a1, a2
@@ -10,8 +10,8 @@ func000000000000000d:
 	ret
 
 func0000000000000005:
-	andi	a2, a2, 1
 	lui	a3, 1048574
+	andi	a2, a2, 1
 	addi	a3, a3, 1
 	czero.nez	a2, a3, a2
 	add	a1, a1, a2

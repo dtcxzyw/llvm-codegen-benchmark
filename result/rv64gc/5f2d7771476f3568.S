@@ -9,12 +9,12 @@ func000000000000000f:
 	ret
 
 func000000000000000a:
-	srliw	a1, a0, 18
-	lui	a2, 21
+	lui	a1, 21
+	srliw	a2, a0, 18
+	slli	a2, a2, 1
+	addi	a1, a1, 384
+	mul	a1, a2, a1
 	slli	a0, a0, 47
-	slli	a1, a1, 1
-	addi	a2, a2, 384
-	mul	a1, a1, a2
 	srli	a0, a0, 47
 	addw	a0, a0, a1
 	ret

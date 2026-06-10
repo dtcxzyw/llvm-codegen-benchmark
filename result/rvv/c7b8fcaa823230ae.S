@@ -59,10 +59,10 @@ func0000000000000404:
 	ret
 
 func0000000000000c01:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	li	a0, -2
 	zext.w	a0, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v10, v10, 2
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0

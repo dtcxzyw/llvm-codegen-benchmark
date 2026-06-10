@@ -26,11 +26,11 @@ func000000000000048c:
 	ret
 
 func0000000000000501:
-	addiw	a1, a1, -54
 	lui	a2, 104858
-	sltiu	a1, a1, -6
 	addi	a2, a2, -1639
+	addiw	a1, a1, -54
 	xor	a0, a0, a2
+	sltiu	a1, a1, -6
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -71,9 +71,9 @@ func0000000000000488:
 func0000000000000481:
 	lui	a2, 244
 	addi	a2, a2, 575
+	lui	a3, 488
 	addw	a1, a1, a2
-	lui	a2, 488
-	addi	a2, a2, 1151
+	addi	a2, a3, 1151
 	sltu	a1, a1, a2
 	czero.nez	a0, a1, a0
 	ret

@@ -7,9 +7,9 @@ func0000000000000005:
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	lui	a0, 1048332
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
+	lui	a0, 1048332
 	addi	a0, a0, -576
 	vmacc.vx	v8, a0, v10
 	ret
@@ -36,12 +36,12 @@ func0000000000000000:
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v12, v10, a0
-	li	a0, 63
 	vadd.vv	v10, v12, v10
+	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	lui	a0, 1
 	vsra.vi	v10, v10, 6
 	vadd.vv	v10, v10, v12
+	lui	a0, 1
 	addi	a0, a0, -496
 	vmacc.vx	v8, a0, v10
 	ret

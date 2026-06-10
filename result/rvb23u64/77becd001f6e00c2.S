@@ -8,8 +8,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	zext.h	a1, a0
-	li	a2, 1041
+	li	a1, 1041
+	zext.h	a2, a0
 	mul	a1, a1, a2
 	srli	a1, a1, 16
 	sub	a0, a0, a1

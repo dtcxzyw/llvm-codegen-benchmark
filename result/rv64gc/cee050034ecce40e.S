@@ -1,8 +1,8 @@
 func0000000000000000:
+	li	a1, 1023
+	slli	a1, a1, 52
 	fcvt.d.w	fa5, a0
-	li	a0, 1023
-	slli	a0, a0, 52
-	fmv.d.x	fa4, a0
+	fmv.d.x	fa4, a1
 	fdiv.d	fa0, fa4, fa5
 	ret
 
@@ -10,16 +10,16 @@ func0000000000000000:
 	.quad	0x43e69eec5d27e300
 func0000000000000001:
 	lui	a1, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.d.l	fa4, a0
-	fdiv.d	fa0, fa5, fa4
+	fcvt.d.l	fa5, a0
+	fld	fa4, %lo(.LCPI1_0)(a1)
+	fdiv.d	fa0, fa4, fa5
 	ret
 
 func0000000000000003:
+	li	a1, 1023
+	slli	a1, a1, 52
 	fcvt.d.l	fa5, a0
-	li	a0, 1023
-	slli	a0, a0, 52
-	fmv.d.x	fa4, a0
+	fmv.d.x	fa4, a1
 	fdiv.d	fa0, fa4, fa5
 	ret
 
@@ -27,8 +27,8 @@ func0000000000000003:
 	.quad	0x3fd3333333333333
 func0000000000000002:
 	lui	a1, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a1)
-	fcvt.d.w	fa4, a0
-	fdiv.d	fa0, fa5, fa4
+	fcvt.d.w	fa5, a0
+	fld	fa4, %lo(.LCPI3_0)(a1)
+	fdiv.d	fa0, fa4, fa5
 	ret
 

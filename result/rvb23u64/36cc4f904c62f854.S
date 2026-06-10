@@ -29,9 +29,9 @@ func0000000000000004:
 	ret
 
 func0000000000000028:
+	lui	a2, 244141
 	add	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1537
+	addi	a1, a2, -1537
 	sltu	a0, a1, a0
 	li	a1, -9
 	czero.nez	a0, a1, a0

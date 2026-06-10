@@ -11,11 +11,11 @@ func000000000000000d:
 func0000000000000000:
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	lui	a2, %hi(.LCPI1_1)
-	ld	a2, %lo(.LCPI1_1)(a2)
 	zext.w	a0, a0
 	mul	a0, a0, a1
-	add	a0, a0, a2
+	lui	a1, %hi(.LCPI1_1)
+	ld	a1, %lo(.LCPI1_1)(a1)
+	add	a0, a0, a1
 	ret
 
 func000000000000000f:
@@ -32,16 +32,16 @@ func000000000000001f:
 	ret
 
 func0000000000000010:
-	sh1add	a0, a0, a0
 	li	a1, 39
+	sh1add	a0, a0, a0
 	slli	a0, a0, 32
 	slli	a1, a1, 29
 	add	a0, a0, a1
 	ret
 
 func0000000000000015:
-	sext.w	a0, a0
 	lui	a1, 1048540
+	sext.w	a0, a0
 	addi	a1, a1, 1359
 	mul	a0, a0, a1
 	add	a0, a0, a1

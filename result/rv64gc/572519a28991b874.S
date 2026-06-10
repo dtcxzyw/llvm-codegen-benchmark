@@ -9,11 +9,11 @@ func000000000000001f:
 	ret
 
 func0000000000000019:
-	addi	a1, a1, 23
 	li	a2, 1
-	slli	a0, a0, 32
+	addi	a1, a1, 23
 	slli	a2, a2, 33
 	addi	a2, a2, -4
+	slli	a0, a0, 32
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	sub	a0, a0, a1

@@ -23,8 +23,8 @@ func000000000000050c:
 func0000000000000438:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	lui	a0, 1
 	vwaddu.wv	v10, v10, v12
+	lui	a0, 1
 	addi	a0, a0, -1021
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v9, v10, a0

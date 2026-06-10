@@ -16,9 +16,9 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	sext.w	a1, a1
 	lui	a3, 524288
 	addiw	a3, a3, -8
+	sext.w	a1, a1
 	and	a2, a2, a3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

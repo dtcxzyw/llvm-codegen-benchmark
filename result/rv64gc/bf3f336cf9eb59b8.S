@@ -24,8 +24,8 @@ func00000000000000d5:
 
 func0000000000000015:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	addi	a2, a2, -1
 	srli	a1, a1, 32
 	mul	a1, a2, a1
@@ -34,8 +34,8 @@ func0000000000000015:
 
 func000000000000001a:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	addi	a2, a2, -1
 	srli	a1, a1, 32
 	mul	a1, a2, a1
@@ -44,8 +44,8 @@ func000000000000001a:
 
 func0000000000000038:
 	slli	a2, a2, 32
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	addi	a2, a2, 1
 	srli	a1, a1, 32
 	mul	a1, a2, a1

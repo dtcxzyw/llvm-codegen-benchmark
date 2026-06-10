@@ -9,11 +9,11 @@ func00000000000000a5:
 
 func0000000000000009:
 	li	a3, -1
-	slli	a0, a0, 32
 	slli	a3, a3, 63
 	xor	a2, a2, a3
 	seqz	a2, a2
 	addi	a2, a2, -1
+	slli	a0, a0, 32
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	sub	a0, a0, a1

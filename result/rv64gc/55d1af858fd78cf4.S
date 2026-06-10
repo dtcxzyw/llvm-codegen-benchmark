@@ -28,8 +28,8 @@ func0000000000000028:
 	li	a1, 3
 	sub	a1, a1, a2
 .LBB2_2:
-	sext.w	a1, a1
 	lui	a0, 244141
+	sext.w	a1, a1
 	addi	a0, a0, -1537
 	sltu	a0, a0, a1
 	addi	a0, a0, 9

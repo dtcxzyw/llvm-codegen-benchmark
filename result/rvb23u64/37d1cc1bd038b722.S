@@ -20,8 +20,8 @@ func0000000000000073:
 	ret
 
 func0000000000000043:
-	andi	a1, a1, 31
 	li	a2, 232
+	andi	a1, a1, 31
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 488

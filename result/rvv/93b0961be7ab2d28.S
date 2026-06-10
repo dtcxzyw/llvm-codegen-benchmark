@@ -21,8 +21,8 @@ func000000000000007b:
 func0000000000000073:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v14, v8
-	vsll.vi	v8, v12, 8
 	li	a0, 32
+	vsll.vi	v8, v12, 8
 	vsll.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	vsetvli	zero, zero, e32, m1, ta, ma

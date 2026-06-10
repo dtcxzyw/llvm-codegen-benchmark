@@ -7,11 +7,11 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
-	li	a0, 30
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vx	v12, v12, a0
-	vsetvli	zero, zero, e16, m2, ta, ma
+	vsetivli	zero, 16, e16, m2, ta, ma
 	vmseq.vv	v13, v8, v10
-	vmand.mm	v0, v13, v12
+	li	a0, 30
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vmseq.vx	v8, v12, a0
+	vmand.mm	v0, v13, v8
 	ret
 

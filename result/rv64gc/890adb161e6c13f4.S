@@ -8,11 +8,11 @@ func0000000000000043:
 
 func0000000000000042:
 	sext.w	a1, a1
-	li	a2, 255
 	seqz	a1, a1
+	li	a2, 255
+	addi	a1, a1, -1
 	slli	a3, a2, 32
 	slli	a2, a2, 24
-	addi	a1, a1, -1
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -20,10 +20,10 @@ func0000000000000042:
 
 func0000000000000002:
 	sext.w	a1, a1
-	lui	a2, 4080
 	seqz	a1, a1
 	addi	a1, a1, -1
 	srliw	a1, a1, 24
+	lui	a2, 4080
 	slli	a1, a1, 24
 	or	a0, a0, a2
 	or	a0, a0, a1

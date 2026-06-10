@@ -23,17 +23,17 @@ func0000000000000001:
 
 func0000000000000000:
 	subw	a0, a0, a1
-	addiw	a1, a0, 6
-	slti	a0, a0, -5
-	addiw	a0, a0, -1
+	slti	a1, a0, -5
+	addiw	a0, a0, 6
+	addiw	a1, a1, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000008:
 	subw	a0, a0, a1
-	addiw	a1, a0, 8
-	slti	a0, a0, -7
-	addiw	a0, a0, -1
+	slti	a1, a0, -7
+	addiw	a0, a0, 8
+	addiw	a1, a1, -1
 	and	a0, a0, a1
 	ret
 

@@ -3,13 +3,13 @@ func0000000000000009:
 	addi	a0, a0, -128
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, 2048
-	addi	a1, a1, 128
-	bseti	a1, a1, 39
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 8
-	bseti	a0, a1, 55
+	lui	a0, 2048
+	addi	a0, a0, 128
+	bseti	a0, a0, 39
+	bseti	a0, a0, 55
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	ret
@@ -19,12 +19,12 @@ func0000000000000001:
 	addi	a0, a0, 1542
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, 61681
-	addi	a1, a1, -241
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	slli	a0, a1, 32
 	vsrl.vi	v10, v10, 4
+	lui	a0, 61681
+	addi	a0, a0, -241
+	slli	a1, a0, 32
 	add	a0, a0, a1
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8

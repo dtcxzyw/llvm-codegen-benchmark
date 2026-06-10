@@ -1,6 +1,6 @@
 func000000000000001f:
-	addi	a1, a1, 1
 	lui	a2, 699051
+	addi	a1, a1, 1
 	addi	a2, a2, -1365
 	slli	a2, a2, 32
 	slli	a3, a1, 32
@@ -11,14 +11,13 @@ func000000000000001f:
 	sh2add	a0, a1, a0
 	ret
 
+.LCPI1_0:
+	.quad	145249953365622784
 func000000000000000f:
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	addi	a1, a1, -109
-	lui	a2, 258
 	zext.w	a3, a1
-	addi	a2, a2, 65
-	slli	a2, a2, 12
-	addi	a2, a2, -2031
-	slli	a2, a2, 25
 	mulhu	a2, a3, a2
 	slli	a3, a2, 7
 	add	a1, a1, a2
@@ -27,11 +26,11 @@ func000000000000000f:
 	ret
 
 func0000000000000004:
-	addi	a1, a1, -28
 	lui	a2, 430185
-	zext.w	a3, a1
 	slli	a2, a2, 2
+	addi	a1, a1, -28
 	addi	a2, a2, 421
+	zext.w	a3, a1
 	slli	a2, a2, 26
 	mulhu	a2, a3, a2
 	li	a3, 39
@@ -43,8 +42,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	addi	a1, a1, 2
 	lui	a2, 699051
+	addi	a1, a1, 2
 	addi	a2, a2, -1365
 	slli	a2, a2, 32
 	slli	a3, a1, 32

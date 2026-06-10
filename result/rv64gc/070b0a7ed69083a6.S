@@ -21,16 +21,16 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	xori	a1, a1, 1
 	lui	a2, 1048560
 	addi	a2, a2, -1
+	xori	a1, a1, 1
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000000a:
-	xori	a1, a1, 1
 	srli	a0, a0, 63
+	xori	a1, a1, 1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

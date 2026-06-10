@@ -27,8 +27,8 @@ func0000000000000040:
 	ret
 
 func0000000000000030:
-	srai	a1, a1, 32
 	srli	a0, a0, 2
+	srai	a1, a1, 32
 	sext.w	a0, a0
 	blt	a0, a1, .LBB3_2
 	mv	a0, a1

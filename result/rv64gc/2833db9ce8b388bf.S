@@ -1,6 +1,6 @@
 func0000000000000014:
-	slli	a1, a0, 1
 	li	a2, 4
+	slli	a1, a0, 1
 	bltu	a2, a1, .LBB0_2
 	li	a1, 4
 .LBB0_2:
@@ -8,8 +8,8 @@ func0000000000000014:
 	ret
 
 func0000000000000016:
-	slli	a1, a0, 1
 	li	a2, 4
+	slli	a1, a0, 1
 	bltu	a2, a1, .LBB1_2
 	li	a1, 4
 .LBB1_2:

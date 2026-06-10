@@ -9,9 +9,9 @@ func0000000000000000:
 	mulh	a0, a2, a0
 	srli	a1, a0, 63
 	srai	a0, a0, 13
+	lui	a3, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a3, 384
 	mul	a0, a0, a1
 	sub	a0, a2, a0
 .LBB0_2:

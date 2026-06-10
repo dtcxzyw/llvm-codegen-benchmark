@@ -1,9 +1,9 @@
 func000000000000003c:
-	slli	a2, a1, 3
-	slli	a1, a1, 5
-	add	a1, a1, a2
 	li	a2, 1
+	slli	a3, a1, 3
+	slli	a1, a1, 5
 	slli	a2, a2, 32
+	add	a1, a1, a3
 	addi	a2, a2, -1920
 	add	a1, a1, a2
 	addi	a2, a2, 1912

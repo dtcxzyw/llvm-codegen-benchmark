@@ -32,11 +32,11 @@ func0000000000000002:
 
 func0000000000000001:
 	slli	a2, a2, 63
+	li	a3, 1
 	srli	a2, a2, 51
+	slli	a3, a3, 11
 	or	a0, a0, a2
-	li	a2, 1
-	slli	a2, a2, 11
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

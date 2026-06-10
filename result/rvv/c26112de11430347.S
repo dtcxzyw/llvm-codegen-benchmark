@@ -40,18 +40,18 @@ func00000000000001a5:
 	ret
 
 func0000000000000021:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 6
-	li	a0, 32
 	vadd.vi	v10, v10, 2
 	vsra.vx	v8, v8, a0
 	vmseq.vv	v0, v10, v8
 	ret
 
 func00000000000001aa:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 2
-	li	a0, 32
 	vadd.vi	v10, v10, -1
 	vsra.vx	v8, v8, a0
 	vmslt.vv	v0, v8, v10

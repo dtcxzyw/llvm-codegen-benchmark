@@ -8,9 +8,9 @@ func0000000000000003:
 func0000000000000000:
 	or	a0, a0, a1
 	lui	a1, 1044480
+	lui	a2, 123738
 	and	a0, a0, a1
-	lui	a1, 123738
-	addi	a1, a1, 1981
+	addi	a1, a2, 1981
 	mul	a0, a0, a1
 	ret
 

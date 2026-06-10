@@ -18,28 +18,28 @@ func00000000000000ff:
 
 func0000000000000012:
 	add	a1, a1, a2
-	lui	a2, 12
 	addi	a1, a1, -224
 	sh2add	a0, a1, a0
-	addi	a1, a2, 1024
+	lui	a1, 12
+	addi	a1, a1, 1024
 	add	a0, a0, a1
 	ret
 
 func0000000000000032:
 	add	a1, a1, a2
-	lui	a2, 12
 	addi	a1, a1, 224
 	sh2add	a0, a1, a0
-	addi	a1, a2, 1024
+	lui	a1, 12
+	addi	a1, a1, 1024
 	add	a0, a0, a1
 	ret
 
 func000000000000001c:
 	add	a1, a1, a2
-	lui	a2, 74
 	addi	a1, a1, -1
 	sh3add	a0, a1, a0
-	addi	a1, a2, -88
+	lui	a1, 74
+	addi	a1, a1, -88
 	add	a0, a0, a1
 	ret
 

@@ -14,10 +14,10 @@ func0000000000000024:
 func0000000000000034:
 	li	a2, -8
 	zext.w	a2, a2
+	li	a3, -2
 	or	a1, a1, a2
-	li	a2, -2
-	zext.w	a2, a2
-	sltu	a1, a1, a2
+	zext.w	a3, a3
+	sltu	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

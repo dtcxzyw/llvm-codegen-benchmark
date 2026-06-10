@@ -11,9 +11,9 @@ func0000000000000108:
 	lui	a0, 1040384
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vandn.vx	v11, v11, a0
-	lui	a0, 30
 	vadd.vv	v10, v10, v11
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 30
 	addi	a0, a0, -96
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0

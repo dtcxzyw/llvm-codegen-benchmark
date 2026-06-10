@@ -16,9 +16,9 @@ func000000000000000e:
 func000000000000000c:
 	andi	a1, a1, 240
 	slli	a1, a1, 11
+	lui	a2, 65536
 	or	a0, a0, a1
-	lui	a1, 65536
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a2, a2, 1
+	or	a0, a0, a2
 	ret
 

@@ -2,13 +2,13 @@ func0000000000000884:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	sub	a1, a1, a2
-	lui	a2, 15
-	sltu	a3, a4, a3
-	czero.nez	a1, a1, a3
-	czero.eqz	a0, a0, a3
+	sltu	a2, a4, a3
+	czero.nez	a1, a1, a2
+	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
+	lui	a1, 15
 	sext.w	a0, a0
-	addi	a1, a2, -1439
+	addi	a1, a1, -1439
 	sltu	a0, a0, a1
 	ret
 
@@ -52,13 +52,13 @@ func00000000000000ca:
 	sext.w	a3, a2
 	sext.w	a4, a1
 	sub	a1, a1, a2
-	lui	a2, 4096
-	slt	a3, a4, a3
-	czero.nez	a1, a1, a3
-	czero.eqz	a0, a0, a3
+	slt	a2, a4, a3
+	czero.nez	a1, a1, a2
+	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
+	lui	a1, 4096
 	sext.w	a0, a0
-	addi	a2, a2, -1
-	slt	a0, a2, a0
+	addi	a1, a1, -1
+	slt	a0, a1, a0
 	ret
 

@@ -12,9 +12,9 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
+	mv	a1, a0
 	lui	a2, 4
 	addi	a2, a2, -1384
-	mv	a1, a0
 	bgeu	a0, a2, .LBB1_3
 	blez	a1, .LBB1_4
 .LBB1_2:
@@ -27,8 +27,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	lui	a2, 256
 	mv	a1, a0
+	lui	a2, 256
 	bgeu	a0, a2, .LBB2_3
 	li	a2, 1024
 	bltu	a1, a2, .LBB2_4

@@ -34,13 +34,13 @@ func00000000000000bb:
 	ret
 
 func0000000000000030:
+	li	a2, 1
 	slli	a1, a1, 8
 	slli	a0, a0, 2
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	add	a0, a0, a1
+	addi	a2, a2, -2
+	add	a0, a0, a2
 	ret
 
 func00000000000000ff:

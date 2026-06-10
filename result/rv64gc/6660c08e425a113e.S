@@ -6,10 +6,10 @@ func0000000000000000:
 	fld	fa0, 8(a0)
 	ret
 .LBB0_2:
+	li	a1, -1025
+	slli	a1, a1, 52
 	fld	fa5, 0(a0)
-	li	a0, -1025
-	slli	a0, a0, 52
-	fmv.d.x	fa4, a0
+	fmv.d.x	fa4, a1
 	fmadd.d	fa0, fa0, fa5, fa4
 	ret
 

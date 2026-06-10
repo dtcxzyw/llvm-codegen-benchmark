@@ -103,20 +103,20 @@ func000000000000002c:
 	ret
 
 func0000000000000144:
+	li	a0, -17
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, -17
 	vmslt.vv	v9, v12, v9
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
 
 func0000000000000c2c:
+	li	a0, 27
+	slli	a0, a0, 11
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 27
 	vmseq.vv	v9, v9, v12
-	slli	a0, a0, 11
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret

@@ -1,6 +1,6 @@
 func0000000000000001:
-	slliw	a0, a0, 2
 	lui	a1, 322639
+	slliw	a0, a0, 2
 	addi	a1, a1, -945
 	mul	a1, a0, a1
 	srli	a2, a1, 63
@@ -12,8 +12,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	slliw	a0, a0, 8
 	lui	a1, 541201
+	slliw	a0, a0, 8
 	addi	a1, a1, -1981
 	mul	a1, a0, a1
 	srli	a1, a1, 32

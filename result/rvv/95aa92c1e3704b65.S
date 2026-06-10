@@ -1,11 +1,13 @@
 func0000000000003284:
+	li	a0, -48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, 1
-	li	a0, -48
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vadd.vx	v10, v10, a0
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vv	v11, v12, v8
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vadd.vx	v8, v10, a0
-	vmsleu.vi	v8, v8, 9
+	vmsleu.vi	v8, v10, 9
 	vmand.mm	v0, v8, v11
 	ret
 

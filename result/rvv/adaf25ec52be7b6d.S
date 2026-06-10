@@ -31,11 +31,11 @@ func0000000000000003:
 	lui	a0, 257229
 	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
-	lui	a0, 260301
-	addi	a0, a0, -819
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v16, v16, fa5
+	lui	a0, 260301
 	vfmadd.vv	v16, v8, v12
+	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	vmfge.vf	v8, v16, fa5
 	vmnot.m	v0, v8
@@ -45,11 +45,11 @@ func0000000000000005:
 	lui	a0, 257229
 	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
-	lui	a0, 777421
-	addi	a0, a0, -819
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v16, v16, fa5
+	lui	a0, 777421
 	vfmadd.vv	v16, v8, v12
+	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	vmfle.vf	v8, v16, fa5
 	vmnot.m	v0, v8

@@ -73,8 +73,8 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	addi	a1, a1, -1
 	li	a2, 43
+	addi	a1, a1, -1
 	slli	a2, a2, 36
 	slli	a1, a1, 32
 	mulhu	a1, a1, a2

@@ -1,7 +1,7 @@
 func0000000000000024:
 	slli	a1, a1, 48
-	lui	a2, 16
 	srli	a1, a1, 48
+	lui	a2, 16
 	addi	a1, a1, -256
 	addi	a2, a2, -511
 	sltu	a1, a1, a2

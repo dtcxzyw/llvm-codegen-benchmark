@@ -79,9 +79,9 @@ func0000000000000035:
 	ret
 
 func0000000000000037:
+	lui	a2, 16
 	sub	a1, a1, a0
-	lui	a0, 16
-	addi	a0, a0, 7
+	addi	a0, a2, 7
 	addw	a0, a0, a1
 	ret
 

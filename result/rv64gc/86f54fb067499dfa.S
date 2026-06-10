@@ -41,10 +41,10 @@ func0000000000000014:
 	ret
 
 func0000000000000002:
+	lui	a3, 1048574
 	add	a0, a0, a2
-	sub	a1, a1, a0
-	lui	a0, 1048574
-	addw	a0, a0, a1
+	sub	a0, a1, a0
+	addw	a0, a0, a3
 	ret
 
 func0000000000000005:

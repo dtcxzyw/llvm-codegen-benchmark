@@ -16,12 +16,12 @@ func0000000000000005:
 func000000000000000f:
 	li	a2, -1
 	srli	a2, a2, 8
+	li	a3, 1
 	and	a1, a1, a2
 	and	a0, a0, a2
-	li	a2, 1
-	slli	a2, a2, 58
+	slli	a3, a3, 58
 	sub	a0, a1, a0
-	addi	a2, a2, 4
-	add	a0, a0, a2
+	addi	a3, a3, 4
+	add	a0, a0, a3
 	ret
 

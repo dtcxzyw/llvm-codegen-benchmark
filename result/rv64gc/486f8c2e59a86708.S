@@ -81,8 +81,8 @@ func0000000000000033:
 func000000000000000c:
 	slli	a2, a2, 8
 	li	a3, 1
-	slli	a1, a1, 19
 	slli	a3, a3, 59
+	slli	a1, a1, 19
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

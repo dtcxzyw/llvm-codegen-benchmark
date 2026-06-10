@@ -1,7 +1,7 @@
 func0000000000000012:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
-	bseti	a0, zero, 32
 	vmsltu.vx	v0, v10, a0
 	li	a0, 32
 	vsrl.vx	v12, v10, a0
@@ -13,9 +13,9 @@ func0000000000000012:
 	ret
 
 func0000000000000052:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v9, v0
-	bseti	a0, zero, 32
 	vmsltu.vx	v0, v10, a0
 	li	a0, 32
 	vsrl.vx	v12, v10, a0

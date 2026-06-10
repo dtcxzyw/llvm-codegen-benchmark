@@ -5,9 +5,9 @@ func0000000000000004:
 	ret
 
 func0000000000000021:
-	srli	a1, a1, 2
 	li	a2, 56
 	bseti	a2, a2, 63
+	srli	a1, a1, 2
 	xor	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret

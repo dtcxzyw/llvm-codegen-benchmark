@@ -1,7 +1,7 @@
 func000000000000018c:
-	bexti	a1, a1, 3
 	andi	a0, a0, -2
 	addiw	a0, a0, -178
+	bexti	a1, a1, 3
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

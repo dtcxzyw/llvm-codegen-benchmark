@@ -43,10 +43,10 @@ func000000000000008c:
 
 func0000000000000181:
 	li	a3, -1
-	addi	a1, a1, -2
 	slli	a3, a3, 63
-	seqz	a1, a1
+	addi	a1, a1, -2
 	xor	a2, a2, a3
+	seqz	a1, a1
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

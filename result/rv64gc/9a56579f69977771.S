@@ -17,8 +17,8 @@ func0000000000000002:
 	blt	a1, a0, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	addiw	a0, a0, 8
 	lui	a1, 233017
+	addiw	a0, a0, 8
 	addi	a1, a1, -455
 	mul	a0, a0, a1
 	srli	a1, a0, 63

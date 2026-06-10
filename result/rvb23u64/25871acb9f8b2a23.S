@@ -20,8 +20,8 @@ func000000000000000e:
 
 func000000000000000c:
 	lui	a2, 32897
-	slli	a1, a1, 48
 	slli	a2, a2, 5
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	sext.w	a1, a1
 	lui	a2, 1044480
@@ -31,8 +31,8 @@ func000000000000000c:
 
 func000000000000000d:
 	lui	a2, 32897
-	slli	a1, a1, 48
 	slli	a2, a2, 5
+	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	sext.w	a1, a1
 	lui	a2, 1044480

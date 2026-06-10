@@ -1,10 +1,10 @@
 func000000000000000f:
-	srli	a2, a2, 4
 	lui	a3, 3840
-	slli	a1, a1, 4
 	addi	a3, a3, 240
+	srli	a2, a2, 4
 	slli	a4, a3, 32
 	add	a3, a3, a4
+	slli	a1, a1, 4
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

@@ -3,8 +3,8 @@ func000000000000000f:
 	bgtz	a2, .LBB0_2
 	li	a2, 1
 .LBB0_2:
-	mul	a0, a1, a0
-	mulw	a0, a0, a2
+	mul	a1, a1, a2
+	mulw	a0, a1, a0
 	ret
 
 func0000000000000000:
@@ -12,8 +12,8 @@ func0000000000000000:
 	bgtz	a2, .LBB1_2
 	li	a2, 1
 .LBB1_2:
-	mul	a0, a1, a0
-	mulw	a0, a2, a0
+	mul	a1, a2, a1
+	mulw	a0, a1, a0
 	ret
 
 func0000000000000001:
@@ -21,7 +21,7 @@ func0000000000000001:
 	bgtz	a2, .LBB2_2
 	li	a2, 1
 .LBB2_2:
-	mul	a0, a0, a1
-	mulw	a0, a0, a2
+	mul	a1, a2, a1
+	mulw	a0, a0, a1
 	ret
 

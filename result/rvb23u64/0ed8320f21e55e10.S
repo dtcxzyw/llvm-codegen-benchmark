@@ -1,8 +1,8 @@
 func0000000000000021:
 	lui	a2, 15
-	srliw	a0, a0, 31
 	and	a1, a1, a2
 	binvi	a1, a1, 13
+	srliw	a0, a0, 31
 	binvi	a1, a1, 15
 	slli	a0, a0, 31
 	or	a0, a0, a1
@@ -30,10 +30,10 @@ func0000000000000301:
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 7
 	lui	a2, 393216
 	and	a0, a0, a2
 	xor	a0, a0, a2
+	andi	a1, a1, 7
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret

@@ -19,8 +19,8 @@ func0000000000000081:
 	ret
 
 func0000000000000024:
-	zext.h	a1, a1
 	sext.w	a2, a2
+	zext.h	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 120
@@ -38,9 +38,9 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
-	zext.h	a1, a1
 	sext.w	a2, a2
 	snez	a2, a2
+	zext.h	a1, a1
 	and	a0, a0, a2
 	czero.eqz	a0, a0, a1
 	ret

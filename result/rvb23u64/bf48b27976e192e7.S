@@ -1,6 +1,6 @@
 func0000000000000025:
-	sext.w	a0, a0
 	addiw	a2, a2, 8
+	sext.w	a0, a0
 	slli	a1, a1, 48
 	sltu	a0, a0, a2
 	seqz	a1, a1
@@ -18,25 +18,25 @@ func0000000000000105:
 	ret
 
 func0000000000000026:
+	li	a3, 27
 	zext.h	a1, a1
+	slli	a3, a3, 11
+	xor	a1, a1, a3
 	sext.w	a0, a0
 	addiw	a2, a2, 1
 	slt	a0, a2, a0
-	li	a2, 27
-	slli	a2, a2, 11
-	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000042a:
+	lui	a3, 14
 	zext.h	a1, a1
+	addi	a3, a3, -1024
+	xor	a1, a1, a3
 	sext.w	a0, a0
 	addiw	a2, a2, -1
 	slt	a0, a0, a2
-	lui	a2, 14
-	addi	a2, a2, -1024
-	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

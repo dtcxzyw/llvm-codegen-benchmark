@@ -16,8 +16,8 @@ func0000000000000024:
 
 func0000000000000034:
 	slli	a1, a1, 35
-	lui	a2, 14
 	srli	a1, a1, 63
+	lui	a2, 14
 	addi	a1, a1, -1
 	and	a0, a0, a2
 	and	a0, a0, a1
@@ -46,8 +46,8 @@ func000000000000002c:
 	ret
 
 func0000000000000038:
-	andi	a1, a1, 1536
 	li	a2, 512
+	andi	a1, a1, 1536
 	beq	a1, a2, .LBB4_2
 	lui	a1, 4
 	addi	a1, a1, -193

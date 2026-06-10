@@ -3,9 +3,9 @@
 func0000000000000001:
 	and	a0, a0, a1
 	neg	a1, a0
+	lui	a2, 30667
 	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
+	addi	a1, a2, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI0_0)
@@ -19,9 +19,9 @@ func0000000000000001:
 func0000000000000003:
 	and	a0, a0, a1
 	neg	a1, a0
+	lui	a2, 30667
 	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
+	addi	a1, a2, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI1_0)
@@ -37,9 +37,9 @@ func0000000000000000:
 	sext.w	a1, a0
 	beqz	a1, .LBB2_2
 	neg	a1, a0
+	lui	a2, 30667
 	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
+	addi	a1, a2, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI2_0)
@@ -58,9 +58,9 @@ func0000000000000002:
 	sext.w	a1, a0
 	beqz	a1, .LBB3_2
 	neg	a1, a0
+	lui	a2, 30667
 	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
+	addi	a1, a2, 1329
 	mul	a0, a0, a1
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI3_0)

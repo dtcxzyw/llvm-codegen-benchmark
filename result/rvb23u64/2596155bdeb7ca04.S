@@ -15,8 +15,8 @@ func000000000000000c:
 
 func0000000000000008:
 	srli	a2, a1, 3
-	srli	a1, a1, 6
 	andi	a2, a2, -8
+	srli	a1, a1, 6
 	slli	a2, a2, 2
 	sh3add	a1, a1, a2
 	add	a0, a0, a1

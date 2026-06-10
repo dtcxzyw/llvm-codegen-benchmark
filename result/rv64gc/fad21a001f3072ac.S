@@ -1,8 +1,7 @@
 func00000000000000f4:
-	mv	a2, a0
 	slli	a1, a1, 8
+	or	a1, a1, a0
 	lui	a0, 8
-	or	a1, a1, a2
 	sext.w	a1, a1
 	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB0_2
@@ -61,12 +60,12 @@ func00000000000000a1:
 
 func0000000000000006:
 	slli	a1, a1, 8
-	li	a2, 5
 	or	a0, a0, a1
-	sext.w	a1, a0
-	slli	a2, a2, 9
+	li	a1, 5
+	sext.w	a2, a0
+	slli	a1, a1, 9
 	lui	a0, 10
-	blt	a1, a2, .LBB5_2
+	blt	a2, a1, .LBB5_2
 	addi	a0, a0, 1697
 	ret
 .LBB5_2:

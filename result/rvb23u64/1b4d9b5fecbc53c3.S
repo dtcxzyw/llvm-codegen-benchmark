@@ -15,10 +15,10 @@ func000000000000002f:
 func000000000000003a:
 	slli	a1, a1, 48
 	slli	a0, a0, 42
+	lui	a2, 4095
 	or	a0, a0, a1
-	lui	a1, 4095
-	slli	a1, a1, 39
-	or	a0, a0, a1
+	slli	a2, a2, 39
+	or	a0, a0, a2
 	ret
 
 func000000000000003b:

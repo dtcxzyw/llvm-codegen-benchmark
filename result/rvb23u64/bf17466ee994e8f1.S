@@ -16,8 +16,8 @@ func0000000000000008:
 
 func0000000000000002:
 	sext.w	a2, a2
-	xori	a0, a0, 1
 	binvi	a2, a2, 12
+	xori	a0, a0, 1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

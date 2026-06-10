@@ -7,8 +7,8 @@ func0000000000000003:
 
 func0000000000000009:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vctz.v	v10, v10
 	vsll.vi	v8, v8, 6
+	vctz.v	v10, v10
 	vor.vv	v8, v8, v10
 	ret
 
@@ -42,8 +42,8 @@ func000000000000001f:
 
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vctz.v	v10, v10
 	vsll.vi	v8, v8, 6
+	vctz.v	v10, v10
 	vor.vv	v8, v8, v10
 	ret
 

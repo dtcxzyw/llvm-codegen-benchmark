@@ -104,39 +104,39 @@ func0000000000000000:
 	vl4r.v	v8, (a0)
 	vsetivli	zero, 1, e32, m2, ta, ma
 	vslidedown.vi	v8, v8, 7
-	vfmv.f.s	fa0, v8
 	csrr	a0, vlenb
 	sh2add	a0, a0, sp
 	addi	a0, a0, 304
-	vl4r.v	v8, (a0)
-	vslidedown.vi	v8, v8, 7
-	vfmv.f.s	fa1, v8
+	vl4r.v	v12, (a0)
+	vslidedown.vi	v10, v12, 7
+	vfmv.f.s	fa0, v8
+	vfmv.f.s	fa1, v10
 	call	fmodf
 	fsw	fa0, 220(sp)
 	addi	a0, sp, 304
 	vl4r.v	v8, (a0)
 	vsetivli	zero, 1, e32, m2, ta, ma
 	vslidedown.vi	v8, v8, 6
-	vfmv.f.s	fa0, v8
 	csrr	a0, vlenb
 	sh2add	a0, a0, sp
 	addi	a0, a0, 304
-	vl4r.v	v8, (a0)
-	vslidedown.vi	v8, v8, 6
-	vfmv.f.s	fa1, v8
+	vl4r.v	v12, (a0)
+	vslidedown.vi	v10, v12, 6
+	vfmv.f.s	fa0, v8
+	vfmv.f.s	fa1, v10
 	call	fmodf
 	fsw	fa0, 216(sp)
 	addi	a0, sp, 304
 	vl4r.v	v8, (a0)
 	vsetivli	zero, 1, e32, m2, ta, ma
 	vslidedown.vi	v8, v8, 5
-	vfmv.f.s	fa0, v8
 	csrr	a0, vlenb
 	sh2add	a0, a0, sp
 	addi	a0, a0, 304
-	vl4r.v	v8, (a0)
-	vslidedown.vi	v8, v8, 5
-	vfmv.f.s	fa1, v8
+	vl4r.v	v12, (a0)
+	vslidedown.vi	v10, v12, 5
+	vfmv.f.s	fa0, v8
+	vfmv.f.s	fa1, v10
 	call	fmodf
 	fsw	fa0, 212(sp)
 	addi	a0, sp, 304
@@ -151,8 +151,8 @@ func0000000000000000:
 	vfmv.f.s	fa0, v8
 	vfmv.f.s	fa1, v10
 	call	fmodf
-	fsw	fa0, 208(sp)
 	addi	a0, sp, 192
+	fsw	fa0, 208(sp)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vle32.v	v8, (a0)
 	addi	sp, s0, -320

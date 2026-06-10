@@ -35,9 +35,9 @@ func00000000000003e1:
 	ret
 
 func0000000000000021:
+	li	a0, 35
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vadd.vi	v12, v10, 2
-	li	a0, 35
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v10, v12
 	vadd.vx	v8, v8, a0

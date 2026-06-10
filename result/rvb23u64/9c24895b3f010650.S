@@ -1,15 +1,15 @@
 func000000000000000d:
 	andi	a0, a0, 1
-	srli	a1, a1, 52
 	li	a2, 514
+	srli	a1, a1, 52
 	czero.nez	a0, a2, a0
 	add	a0, a0, a1
 	addi	a0, a0, -1536
 	ret
 
 func0000000000000010:
-	srli	a1, a1, 5
 	li	a2, -2
+	srli	a1, a1, 5
 	orn	a0, a2, a0
 	addw	a0, a0, a1
 	ret

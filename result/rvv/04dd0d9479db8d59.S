@@ -17,9 +17,9 @@ func0000000000000282:
 	ret
 
 func0000000000000054:
+	bseti	a0, zero, 36
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v10, v8, 0
-	bseti	a0, zero, 36
 	vmsgt.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -56,10 +56,10 @@ func0000000000000202:
 	ret
 
 func000000000000004c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v10, v8, 0
 	li	a0, 24
 	bseti	a0, a0, 63
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vi	v10, v8, 0
 	vmslt.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

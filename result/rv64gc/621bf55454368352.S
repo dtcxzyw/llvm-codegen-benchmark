@@ -20,9 +20,9 @@ func00000000000004c6:
 	ret
 
 func0000000000000884:
-	srliw	a2, a1, 23
-	li	a3, 383
-	bgeu	a2, a3, .LBB2_2
+	li	a2, 383
+	srliw	a3, a1, 23
+	bgeu	a3, a2, .LBB2_2
 	lui	a0, 784384
 	sub	a0, a0, a1
 .LBB2_2:

@@ -34,8 +34,8 @@ func0000000000000003:
 	mv	a0, a1
 	ret
 .LBB3_2:
-	addi	a2, a2, 3
 	lui	a0, 32
+	addi	a2, a2, 3
 	addi	a0, a0, -4
 	and	a0, a0, a2
 	ret

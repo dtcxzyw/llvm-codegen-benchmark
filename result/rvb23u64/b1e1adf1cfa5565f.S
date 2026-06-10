@@ -34,8 +34,8 @@ func00000000000001ff:
 	li	a2, 491
 	mul	a1, a1, a2
 	lui	a2, 1
-	add	a0, a0, a1
-	addi	a1, a2, 1666
+	addi	a2, a2, 1666
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

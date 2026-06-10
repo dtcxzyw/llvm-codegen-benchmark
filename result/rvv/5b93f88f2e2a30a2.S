@@ -4,8 +4,8 @@ func0000000000000063:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 52429
-	addi	a0, a0, -820
 	vror.vi	v10, v10, 2
+	addi	a0, a0, -820
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -18,8 +18,8 @@ func0000000000000061:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	lui	a0, 2131
-	addi	a0, a0, 1032
 	vror.vi	v10, v10, 2
+	addi	a0, a0, 1032
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0

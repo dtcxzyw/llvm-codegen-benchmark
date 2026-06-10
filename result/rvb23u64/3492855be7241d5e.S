@@ -8,9 +8,9 @@ func0000000000000000:
 
 func000000000000000f:
 	lui	a3, 4
-	zext.h	a1, a1
 	addi	a3, a3, 1873
 	add	a2, a2, a3
+	zext.h	a1, a1
 	zext.h	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

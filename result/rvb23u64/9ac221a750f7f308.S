@@ -7,8 +7,8 @@ func0000000000000008:
 
 func000000000000000a:
 	li	a2, 27
-	srli	a0, a0, 12
 	slli	a2, a2, 11
+	srli	a0, a0, 12
 	xor	a1, a1, a2
 	addi	a0, a0, -15
 	czero.eqz	a0, a0, a1

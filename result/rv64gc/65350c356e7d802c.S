@@ -10,8 +10,8 @@ func000000000000018c:
 	li	a3, -1
 	srli	a3, a3, 1
 	xor	a2, a2, a3
-	xor	a1, a1, a3
 	snez	a2, a2
+	xor	a1, a1, a3
 	and	a0, a0, a2
 	snez	a1, a1
 	and	a0, a0, a1
@@ -26,8 +26,8 @@ func000000000000002c:
 
 func000000000000014a:
 	srli	a2, a2, 63
-	srli	a1, a1, 63
 	not	a2, a2
+	srli	a1, a1, 63
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -126,11 +126,11 @@ func000000000000008a:
 
 func0000000000000144:
 	srli	a2, a2, 63
+	lui	a3, 244
 	not	a2, a2
+	addi	a3, a3, 576
 	and	a0, a0, a2
-	lui	a2, 244
-	addi	a2, a2, 576
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

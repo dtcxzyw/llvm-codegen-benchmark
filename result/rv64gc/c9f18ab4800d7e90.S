@@ -1,27 +1,27 @@
 func0000000000000294:
-	sext.w	a2, a2
 	lui	a4, 1
-	addi	a3, a4, 1
-	bltu	a2, a3, .LBB0_2
-	li	a3, 1
-	slli	a3, a3, 11
+	sext.w	a3, a2
+	addi	a2, a4, 1
+	bltu	a3, a2, .LBB0_2
+	li	a2, 1
+	slli	a2, a2, 11
 	addi	a4, a4, -2047
 	andi	a0, a0, 1
-	bltu	a2, a4, .LBB0_3
+	bltu	a3, a4, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a3, 1024
+	li	a2, 1024
 	addi	a4, a4, -2047
 	andi	a0, a0, 1
-	bgeu	a2, a4, .LBB0_4
+	bgeu	a3, a4, .LBB0_4
 .LBB0_3:
-	li	a3, 384
+	li	a2, 384
 .LBB0_4:
 	beqz	a0, .LBB0_6
 	mv	a0, a1
 	ret
 .LBB0_6:
-	mv	a0, a3
+	mv	a0, a2
 	ret
 
 func0000000000000021:

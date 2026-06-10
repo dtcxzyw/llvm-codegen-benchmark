@@ -1,18 +1,18 @@
 func0000000000000021:
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	snez	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, 5
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000028:
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addi	a1, a1, -193
 	seqz	a1, a1
+	sext.w	a0, a0
 	addiw	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
@@ -46,10 +46,10 @@ func0000000000000038:
 	ret
 
 func0000000000000114:
-	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a2, a1, 48
 	li	a3, 10
+	sext.w	a0, a0
 	lui	a1, 1
 	bgeu	a3, a2, .LBB4_2
 	addi	a1, a1, 224

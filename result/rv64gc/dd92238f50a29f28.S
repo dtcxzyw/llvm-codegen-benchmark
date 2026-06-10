@@ -43,8 +43,8 @@ func0000000000000040:
 
 func00000000000000ff:
 	li	a3, 104
-	slli	a0, a0, 2
 	mul	a2, a2, a3
+	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 4
@@ -52,8 +52,8 @@ func00000000000000ff:
 
 func00000000000000fe:
 	li	a3, 104
-	slli	a0, a0, 2
 	mul	a2, a2, a3
+	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 4

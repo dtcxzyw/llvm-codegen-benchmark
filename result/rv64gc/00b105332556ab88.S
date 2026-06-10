@@ -27,9 +27,9 @@ func000000000000000d:
 
 func0000000000000011:
 	sext.w	a1, a1
-	slli	a0, a0, 1
 	sltiu	a1, a1, 2
 	not	a1, a1
+	slli	a0, a0, 1
 	slli	a1, a1, 63
 	srli	a0, a0, 1
 	or	a0, a0, a1

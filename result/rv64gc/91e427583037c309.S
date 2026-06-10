@@ -33,10 +33,10 @@ func00000000000000f4:
 func0000000000000044:
 	addi	a1, a1, 39
 	andi	a1, a1, -16
+	li	a2, -29
 	add	a0, a0, a1
-	li	a1, -29
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
+	srli	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000041:
@@ -49,10 +49,10 @@ func0000000000000041:
 func00000000000001c8:
 	addi	a1, a1, 15
 	andi	a1, a1, -16
+	li	a2, -31
 	add	a0, a0, a1
-	li	a1, -31
-	srli	a1, a1, 1
-	sltu	a0, a1, a0
+	srli	a2, a2, 1
+	sltu	a0, a2, a0
 	ret
 
 func000000000000000a:
@@ -113,10 +113,10 @@ func0000000000000061:
 func0000000000000004:
 	addi	a1, a1, 17
 	andi	a1, a1, -8
+	lui	a2, 64
 	add	a0, a0, a1
-	lui	a1, 64
-	addi	a1, a1, -7
-	sltu	a0, a0, a1
+	addi	a2, a2, -7
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000ec:
@@ -134,10 +134,10 @@ func00000000000000ec:
 	.quad	1844674407370955161
 func0000000000000088:
 	li	a2, 1
-	lui	a3, %hi(.LCPI14_0)
 	slli	a2, a2, 32
-	ld	a3, %lo(.LCPI14_0)(a3)
+	lui	a3, %hi(.LCPI14_0)
 	addi	a2, a2, -48
+	ld	a3, %lo(.LCPI14_0)(a3)
 	add	a1, a1, a2
 	addi	a2, a2, 47
 	and	a1, a1, a2
@@ -155,16 +155,16 @@ func0000000000000006:
 func0000000000000148:
 	addi	a1, a1, 15
 	andi	a1, a1, -16
+	li	a2, -31
 	add	a0, a0, a1
-	li	a1, -31
-	srli	a1, a1, 1
-	sltu	a0, a1, a0
+	srli	a2, a2, 1
+	sltu	a0, a2, a0
 	ret
 
 func00000000000001f8:
-	addi	a1, a1, 23
 	li	a2, 1
 	slli	a2, a2, 33
+	addi	a1, a1, 23
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -175,9 +175,9 @@ func00000000000001f8:
 func0000000000000028:
 	addi	a1, a1, 7
 	andi	a1, a1, -8
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -176
+	addi	a1, a2, -176
 	sltu	a0, a1, a0
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000010:
-	srliw	a1, a0, 31
-	srli	a0, a0, 15
-	andi	a0, a0, 126
+	srli	a1, a0, 15
+	srliw	a0, a0, 31
+	andi	a1, a1, 126
 	or	a0, a0, a1
 	addiw	a0, a0, -128
 	ret

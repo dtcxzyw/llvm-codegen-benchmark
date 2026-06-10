@@ -27,8 +27,8 @@ func000000000000001f:
 	ret
 
 func0000000000000018:
-	addi	a1, a1, 2
 	bseti	a2, zero, 33
+	addi	a1, a1, 2
 	addi	a2, a2, -4
 	and	a1, a1, a2
 	sub	a0, a0, a1

@@ -1,8 +1,8 @@
 func0000000000000001:
 	zext.b	a1, a1
+	lui	a2, 670492
 	or	a0, a0, a1
-	lui	a1, 670492
-	addi	a1, a1, -1338
+	addi	a1, a2, -1338
 	xor	a0, a0, a1
 	ret
 

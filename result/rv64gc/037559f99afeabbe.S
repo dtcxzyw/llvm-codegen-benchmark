@@ -24,9 +24,9 @@ func0000000000000054:
 	ret
 
 func0000000000000000:
+	li	a3, 246
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 246
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	slliw	a0, a0, 8
 	ret
@@ -58,10 +58,10 @@ func0000000000000001:
 	ret
 
 func0000000000000010:
+	lui	a3, 524288
+	addi	a3, a3, -100
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 524288
-	addi	a2, a2, -100
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	slliw	a0, a0, 1
 	ret

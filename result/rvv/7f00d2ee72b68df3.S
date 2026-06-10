@@ -12,30 +12,32 @@ func0000000000000101:
 	vmseq.vi	v0, v8, 1
 	ret
 
+.LCPI2_0:
+	.quad	-34359737848001
 func0000000000000008:
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vmacc.vv	v12, v10, v8
 	li	a0, -125
 	slli	a0, a0, 26
-	addi	a1, a0, 127
 	addi	a0, a0, 125
-	slli	a1, a1, 12
-	addi	a1, a1, -193
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v12, a1
-	vmacc.vv	v12, v10, v8
 	slli	a0, a0, 12
 	vmsltu.vx	v0, v12, a0
 	ret
 
+.LCPI3_0:
+	.quad	-34359737848001
 func00000000000000a8:
+	lui	a0, %hi(.LCPI3_0)
+	ld	a0, %lo(.LCPI3_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vmacc.vv	v12, v10, v8
 	li	a0, -125
 	slli	a0, a0, 26
-	addi	a1, a0, 127
 	addi	a0, a0, 125
-	slli	a1, a1, 12
-	addi	a1, a1, -193
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v12, a1
-	vmacc.vv	v12, v10, v8
 	slli	a0, a0, 12
 	vmsltu.vx	v0, v12, a0
 	ret
@@ -63,8 +65,8 @@ func00000000000000a4:
 	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	li	a0, -1
 	vmacc.vv	v12, v10, v8
+	li	a0, -1
 	slli	a0, a0, 32
 	vmsltu.vx	v0, v12, a0
 	ret
@@ -114,8 +116,8 @@ func0000000000000088:
 func0000000000000094:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 2
-	lui	a0, 4
 	vmacc.vv	v12, v10, v8
+	lui	a0, 4
 	addi	a0, a0, 1
 	vmsltu.vx	v0, v12, a0
 	ret

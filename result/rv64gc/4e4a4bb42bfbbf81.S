@@ -6,9 +6,9 @@ func0000000000000044:
 	add	a0, a0, a2
 	sltu	a1, a0, a2
 	neg	a1, a1
+	li	a2, -1
 	or	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 3
+	srli	a1, a2, 3
 	bltu	a0, a1, .LBB0_4
 	mv	a0, a1
 .LBB0_4:
@@ -22,9 +22,9 @@ func0000000000000004:
 	add	a0, a0, a2
 	sltu	a1, a0, a2
 	neg	a1, a1
+	li	a2, -1
 	or	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 2
+	srli	a1, a2, 2
 	bltu	a0, a1, .LBB1_4
 	mv	a0, a1
 .LBB1_4:

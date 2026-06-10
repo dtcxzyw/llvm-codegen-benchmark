@@ -32,12 +32,12 @@ func0000000000000006:
 	ret
 
 func0000000000000028:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	slti	a1, a1, 2
 	addi	a1, a1, -1
-	andi	a1, a1, 10
 	sh3add	a0, a0, a0
+	andi	a1, a1, 10
 	or	a0, a0, a1
 	addiw	a0, a0, 4
 	ret

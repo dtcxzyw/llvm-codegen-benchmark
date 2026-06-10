@@ -24,12 +24,12 @@ func0000000000000028:
 	ret
 
 func0000000000000188:
-	sext.w	a2, a0
 	sext.w	a1, a1
-	srliw	a0, a0, 2
-	xor	a0, a0, a1
-	snez	a0, a0
-	sltiu	a1, a2, 4
-	andn	a0, a0, a1
+	srliw	a2, a0, 2
+	sext.w	a0, a0
+	xor	a1, a1, a2
+	snez	a1, a1
+	sltiu	a0, a0, 4
+	andn	a0, a1, a0
 	ret
 

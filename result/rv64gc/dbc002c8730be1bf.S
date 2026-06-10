@@ -11,8 +11,8 @@ func000000000000002c:
 	ret
 
 func0000000000000101:
-	sltiu	a1, a1, 2
 	addiw	a2, a0, -4
+	sltiu	a1, a1, 2
 	snez	a2, a2
 	or	a1, a1, a2
 	bnez	a1, .LBB1_2
@@ -30,8 +30,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	snez	a1, a1
 	addiw	a2, a0, -320
+	snez	a1, a1
 	seqz	a2, a2
 	and	a1, a1, a2
 	beqz	a1, .LBB3_2

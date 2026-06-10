@@ -2,9 +2,9 @@ func0000000000000002:
 	lui	a0, 303153
 	addi	a0, a0, 620
 	fmv.w.x	fa5, a0
-	lui	a0, 280480
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmin.vf	v8, v8, fa5
+	lui	a0, 280480
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret
@@ -22,9 +22,9 @@ func0000000000000005:
 
 func000000000000000a:
 	fli.s	fa5, 1.0
-	lui	a0, 273536
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmin.vf	v8, v8, fa5
+	lui	a0, 273536
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret

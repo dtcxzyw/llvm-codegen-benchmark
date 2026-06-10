@@ -7,17 +7,17 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	sext.w	a3, a1
-	andi	a2, a2, 1
+	andi	a3, a2, 1
+	sext.w	a2, a1
 	lui	a1, 64
-	bnez	a2, .LBB1_3
-	bnez	a3, .LBB1_4
+	bnez	a3, .LBB1_3
+	bnez	a2, .LBB1_4
 .LBB1_2:
 	mv	a0, a1
 	ret
 .LBB1_3:
 	addi	a1, a1, 1024
-	beqz	a3, .LBB1_2
+	beqz	a2, .LBB1_2
 .LBB1_4:
 	ret
 

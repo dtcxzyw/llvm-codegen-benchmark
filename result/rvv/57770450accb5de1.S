@@ -16,51 +16,51 @@ func0000000000000088:
 	ret
 
 func000000000000014a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, 0
 	li	a0, 16
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vmsgt.vi	v0, v10, 0
 	vmerge.vvm	v10, v12, v10, v0
 	vmslt.vv	v0, v10, v8
 	ret
 
 func0000000000000146:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, 0
 	vmv.v.i	v12, 15
+	vmsgt.vi	v0, v10, 0
 	vmerge.vvm	v10, v12, v10, v0
 	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000144:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, 0
 	vmv.v.i	v12, -1
+	vmsgt.vi	v0, v10, 0
 	vmerge.vvm	v10, v12, v10, v0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func000000000000008c:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v10, 2
 	vmv.v.i	v12, 0
+	vmsleu.vi	v0, v10, 2
 	vmerge.vvm	v10, v12, v10, v0
 	vmsne.vv	v0, v8, v10
 	ret
 
 func0000000000000086:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v10, 2
 	vmv.v.i	v12, 1
+	vmsleu.vi	v0, v10, 2
 	vmerge.vvm	v10, v12, v10, v0
 	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000141:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v10, -1
 	li	a0, 1024
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	vmsgt.vi	v0, v10, -1
 	vmerge.vvm	v10, v12, v10, v0
 	vmseq.vv	v0, v8, v10
 	ret

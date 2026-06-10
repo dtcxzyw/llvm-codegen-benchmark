@@ -1,19 +1,19 @@
 func0000000000000146:
-	andi	a0, a0, 1
 	sext.w	a1, a1
-	sext.w	a2, a2
+	andi	a0, a0, 1
 	lui	a3, 8
+	sext.w	a2, a2
 	addi	a4, a3, -1
-	slt	a1, a1, a3
 	slt	a2, a4, a2
+	slt	a1, a1, a3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	addiw	a2, a2, -6
 	seqz	a2, a2
 	snez	a1, a1
@@ -23,8 +23,8 @@ func000000000000002c:
 	ret
 
 func0000000000000084:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	sext.w	a2, a2
 	sltiu	a2, a2, 256
 	sltiu	a1, a1, 252
@@ -34,8 +34,8 @@ func0000000000000084:
 	ret
 
 func0000000000000181:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	addiw	a2, a2, -768
 	snez	a2, a2
 	seqz	a1, a1
@@ -45,8 +45,8 @@ func0000000000000181:
 	ret
 
 func0000000000000024:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	addiw	a2, a2, -6
 	seqz	a2, a2
 	sltiu	a1, a1, 2
@@ -56,11 +56,11 @@ func0000000000000024:
 	ret
 
 func0000000000000188:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	sext.w	a2, a2
-	sltiu	a2, a2, -1
 	sltiu	a1, a1, 128
+	sltiu	a2, a2, -1
 	xori	a1, a1, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -68,8 +68,8 @@ func0000000000000188:
 	ret
 
 func00000000000000c6:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	sext.w	a2, a2
 	slti	a2, a2, 1
 	slti	a1, a1, 15
@@ -79,8 +79,8 @@ func00000000000000c6:
 	ret
 
 func000000000000014a:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	sext.w	a2, a2
 	slti	a2, a2, 2
 	slti	a1, a1, 16
@@ -91,8 +91,8 @@ func000000000000014a:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 1
 	addiw	a2, a2, -3
+	andi	a0, a0, 1
 	addiw	a1, a1, -2
 	seqz	a2, a2
 	seqz	a1, a1
@@ -102,20 +102,20 @@ func0000000000000021:
 	ret
 
 func0000000000000144:
+	sext.w	a2, a2
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	sext.w	a2, a2
 	slti	a2, a2, 8
-	sltiu	a1, a1, 6
 	xori	a2, a2, 1
+	sltiu	a1, a1, 6
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000014c:
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
 	sext.w	a2, a2
 	sgtz	a2, a2
 	snez	a1, a1

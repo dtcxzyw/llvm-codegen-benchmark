@@ -5,36 +5,36 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
+	li	a1, 543
+	slli	a1, a1, 53
 	fmv.d.x	fa5, a0
-	li	a0, 543
-	slli	a0, a0, 53
-	fmv.d.x	fa4, a0
+	fmv.d.x	fa4, a1
 	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
 func0000000000000003:
+	li	a1, -481
+	slli	a1, a1, 53
 	fmv.d.x	fa5, a0
-	li	a0, -481
-	slli	a0, a0, 53
-	fmv.d.x	fa4, a0
+	fmv.d.x	fa4, a1
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 
 func0000000000000002:
+	li	a1, 1087
+	slli	a1, a1, 52
 	fmv.d.x	fa5, a0
-	li	a0, 1087
-	slli	a0, a0, 52
-	fmv.d.x	fa4, a0
+	fmv.d.x	fa4, a1
 	flt.d	a0, fa5, fa4
 	ret
 
 func0000000000000009:
-	fmv.d.x	fa5, a0
-	fmv.d.x	fa4, zero
-	flt.d	a0, fa5, fa4
-	flt.d	a1, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -61,10 +61,10 @@ func000000000000000e:
 	ret
 
 func0000000000000006:
-	fmv.d.x	fa5, a0
-	fmv.d.x	fa4, zero
-	flt.d	a0, fa5, fa4
-	flt.d	a1, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
@@ -76,21 +76,21 @@ func0000000000000005:
 	ret
 
 func000000000000000b:
-	fmv.d.x	fa5, a0
-	fmv.d.x	fa4, zero
-	flt.d	a0, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 
 func000000000000000c:
-	fmv.d.x	fa5, a0
-	fmv.d.x	fa4, zero
-	fle.d	a0, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a0
+	fle.d	a0, fa5, fa4
 	ret
 
 func000000000000000a:
-	fmv.d.x	fa5, a0
-	fmv.d.x	fa4, zero
-	fle.d	a0, fa5, fa4
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a0
+	fle.d	a0, fa4, fa5
 	ret
 

@@ -66,9 +66,9 @@ func0000000000000026:
 	ret
 
 func000000000000010a:
+	lui	a3, 16
 	sltu	a1, a2, a1
-	lui	a2, 16
-	slt	a0, a2, a0
+	slt	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

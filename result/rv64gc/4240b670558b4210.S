@@ -28,8 +28,8 @@ func0000000000000318:
 	ret
 
 func0000000000000050:
-	seqz	a1, a1
 	sltiu	a0, a0, 2
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -61,8 +61,8 @@ func000000000000004c:
 	ret
 
 func0000000000000054:
-	seqz	a1, a1
 	srli	a0, a0, 63
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -100,15 +100,15 @@ func0000000000000218:
 	ret
 
 func0000000000000070:
-	seqz	a1, a1
 	sltiu	a0, a0, 6
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000310:
-	snez	a1, a1
 	sltiu	a0, a0, 16
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

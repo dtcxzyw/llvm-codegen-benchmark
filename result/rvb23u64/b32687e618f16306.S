@@ -9,9 +9,9 @@ func0000000000000006:
 func000000000000001f:
 	slli	a1, a1, 2
 	andi	a1, a1, 4
+	lui	a2, 1
 	or	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -1366
+	addi	a1, a2, -1366
 	mulw	a0, a0, a1
 	ret
 

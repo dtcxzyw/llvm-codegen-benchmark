@@ -1,10 +1,10 @@
 func0000000000000318:
 	lui	a3, 16
 	addi	a3, a3, -1
-	and	a1, a1, a3
 	and	a2, a2, a3
-	lui	a3, 14
-	xor	a2, a2, a3
+	lui	a4, 14
+	and	a1, a1, a3
+	xor	a2, a2, a4
 	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
@@ -34,9 +34,9 @@ func0000000000000058:
 	ret
 
 func0000000000000042:
-	xori	a2, a2, 46
 	lui	a3, 4
 	addi	a3, a3, 265
+	xori	a2, a2, 46
 	xor	a1, a1, a3
 	or	a1, a1, a2
 	slli	a1, a1, 48
@@ -60,9 +60,9 @@ func0000000000000108:
 func0000000000000308:
 	lui	a3, 16
 	addi	a4, a3, -1
-	addi	a3, a3, -2
 	and	a1, a1, a4
 	and	a2, a2, a4
+	addi	a3, a3, -2
 	snez	a2, a2
 	sltu	a1, a1, a3
 	and	a1, a1, a2

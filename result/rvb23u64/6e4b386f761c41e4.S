@@ -14,29 +14,29 @@ func000000000000001f:
 	ret
 
 func0000000000000009:
+	lui	a3, 2
 	slliw	a2, a2, 16
+	addi	a3, a3, -32
 	or	a0, a0, a2
-	lui	a2, 2
-	addi	a2, a2, -32
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000003:
+	lui	a3, 16
 	slliw	a2, a2, 23
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000013:
+	lui	a3, 16
 	slliw	a2, a2, 24
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

@@ -86,9 +86,9 @@ func0000000000002961:
 	ret
 
 func0000000000003141:
+	slt	a1, a2, a1
 	sext.w	a0, a0
 	snez	a0, a0
-	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

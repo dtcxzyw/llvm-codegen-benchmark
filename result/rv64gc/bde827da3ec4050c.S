@@ -1,10 +1,10 @@
 func00000000000000ef:
-	srai	a3, a1, 2
-	lui	a4, 699051
-	addi	a4, a4, -1365
-	slli	a5, a4, 32
-	add	a4, a4, a5
-	mul	a3, a3, a4
+	lui	a3, 699051
+	addi	a3, a3, -1365
+	slli	a4, a3, 32
+	srai	a5, a1, 2
+	add	a3, a3, a4
+	mul	a3, a5, a3
 	sub	a2, a2, a3
 	bltu	a2, a3, .LBB0_2
 	mv	a3, a2

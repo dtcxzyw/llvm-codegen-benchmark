@@ -11,12 +11,12 @@ func0000000000000040:
 	li	a3, 254
 	bltu	a2, a3, .LBB1_2
 	li	a2, 5
-	sub	a0, a0, a1
-	subw	a0, a0, a2
+	add	a1, a1, a2
+	subw	a0, a0, a1
 	ret
 .LBB1_2:
 	li	a2, 1
-	sub	a0, a0, a1
-	subw	a0, a0, a2
+	add	a1, a1, a2
+	subw	a0, a0, a1
 	ret
 

@@ -18,17 +18,17 @@ func0000000000000108:
 func0000000000000194:
 	sub	a2, a2, a1
 	sub	a0, a0, a1
-	slti	a1, a2, 8
 	slti	a0, a0, -7
+	slti	a1, a2, 8
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func000000000000028c:
 	sub	a2, a2, a1
+	slti	a2, a2, -7
 	sub	a0, a0, a1
-	slti	a1, a2, -7
-	xori	a1, a1, 1
+	xori	a1, a2, 1
 	slti	a0, a0, 8
 	or	a0, a0, a1
 	ret

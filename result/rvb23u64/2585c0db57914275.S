@@ -1,7 +1,7 @@
 func0000000000000031:
 	lui	a2, 256
-	lui	a3, 1048064
 	add	a1, a1, a2
+	lui	a3, 1048064
 	and	a1, a1, a3
 	add	a0, a0, a2
 	sub	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000031:
 
 func0000000000000011:
 	lui	a2, 256
-	lui	a3, 1048064
 	add	a1, a1, a2
+	lui	a3, 1048064
 	and	a1, a1, a3
 	add	a0, a0, a2
 	sub	a0, a0, a1
@@ -28,8 +28,8 @@ func0000000000000000:
 
 func0000000000000030:
 	lui	a2, 256
-	lui	a3, 1048064
 	add	a1, a1, a2
+	lui	a3, 1048064
 	and	a1, a1, a3
 	add	a0, a0, a2
 	sub	a0, a0, a1
@@ -38,12 +38,12 @@ func0000000000000030:
 func0000000000000015:
 	lui	a2, 1048500
 	srli	a2, a2, 13
+	lui	a3, 1048538
 	add	a1, a1, a2
 	addi	a2, a2, 37
+	srli	a3, a3, 12
 	and	a1, a1, a2
-	lui	a2, 1048538
-	srli	a2, a2, 12
-	add	a0, a0, a2
+	add	a0, a0, a3
 	sub	a0, a0, a1
 	ret
 

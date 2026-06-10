@@ -51,9 +51,9 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
+	li	a0, 504
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 15
-	li	a0, 504
 	vand.vx	v10, v10, a0
 	li	a0, 32
 	vmerge.vxm	v10, v10, a0, v0

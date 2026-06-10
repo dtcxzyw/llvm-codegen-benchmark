@@ -6,11 +6,11 @@ func0000000000000078:
 	ret
 
 func0000000000000026:
+	lui	a3, 16
 	andi	a2, a2, -64
+	addi	a3, a3, -64
 	addw	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -64
-	and	a1, a1, a2
+	and	a1, a1, a3
 	slt	a0, a0, a1
 	ret
 
@@ -48,8 +48,8 @@ func000000000000000a:
 
 func0000000000000074:
 	lui	a3, 1048544
-	slli	a1, a1, 47
 	andn	a2, a2, a3
+	slli	a1, a1, 47
 	addw	a0, a0, a2
 	srli	a1, a1, 47
 	sltu	a0, a0, a1

@@ -16,8 +16,8 @@ func0000000000000001:
 	lui	a0, 16
 	addi	a1, a0, -2
 	vmv.v.x	v10, a1
-	addi	a0, a0, -4
 	vmv1r.v	v0, v8
+	addi	a0, a0, -4
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vi	v12, v10, -2
 	vmv1r.v	v0, v9

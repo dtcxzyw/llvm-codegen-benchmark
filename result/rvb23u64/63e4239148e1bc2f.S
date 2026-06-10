@@ -1,10 +1,10 @@
 func0000000000000008:
 	sraiw	a2, a1, 31
+	sraiw	a3, a0, 31
 	srliw	a2, a2, 29
+	srliw	a3, a3, 29
 	add	a1, a1, a2
-	sraiw	a2, a0, 31
-	srliw	a2, a2, 29
-	add	a0, a0, a2
+	add	a0, a0, a3
 	sraiw	a1, a1, 3
 	sraiw	a0, a0, 3
 	sltu	a0, a1, a0
@@ -12,11 +12,11 @@ func0000000000000008:
 
 func000000000000000c:
 	sraiw	a2, a1, 31
+	sraiw	a3, a0, 31
 	srliw	a2, a2, 28
+	srliw	a3, a3, 28
 	add	a1, a1, a2
-	sraiw	a2, a0, 31
-	srliw	a2, a2, 28
-	add	a0, a0, a2
+	add	a0, a0, a3
 	sraiw	a1, a1, 4
 	sraiw	a0, a0, 4
 	xor	a0, a0, a1
@@ -25,11 +25,11 @@ func000000000000000c:
 
 func0000000000000006:
 	sraiw	a2, a1, 31
+	sraiw	a3, a0, 31
 	srliw	a2, a2, 28
+	srliw	a3, a3, 28
 	add	a1, a1, a2
-	sraiw	a2, a0, 31
-	srliw	a2, a2, 28
-	add	a0, a0, a2
+	add	a0, a0, a3
 	sraiw	a1, a1, 4
 	sraiw	a0, a0, 4
 	slt	a0, a0, a1
@@ -37,11 +37,11 @@ func0000000000000006:
 
 func000000000000000a:
 	sraiw	a2, a1, 31
+	sraiw	a3, a0, 31
 	srliw	a2, a2, 28
+	srliw	a3, a3, 28
 	add	a1, a1, a2
-	sraiw	a2, a0, 31
-	srliw	a2, a2, 28
-	add	a0, a0, a2
+	add	a0, a0, a3
 	sraiw	a1, a1, 4
 	sraiw	a0, a0, 4
 	slt	a0, a1, a0
@@ -49,11 +49,11 @@ func000000000000000a:
 
 func0000000000000001:
 	sraiw	a2, a1, 31
+	sraiw	a3, a0, 31
 	srliw	a2, a2, 27
+	srliw	a3, a3, 27
 	add	a1, a1, a2
-	sraiw	a2, a0, 31
-	srliw	a2, a2, 27
-	add	a0, a0, a2
+	add	a0, a0, a3
 	sraiw	a1, a1, 5
 	sraiw	a0, a0, 5
 	xor	a0, a0, a1

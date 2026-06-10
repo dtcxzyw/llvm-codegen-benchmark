@@ -8,10 +8,10 @@ func0000000000000006:
 	or	a0, a0, a3
 	ret
 .LBB0_2:
-	sll	a3, a3, a4
-	not	a4, a4
+	not	a7, a4
 	srli	a2, a2, 1
-	srl	a2, a2, a4
+	sll	a3, a3, a4
+	srl	a2, a2, a7
 	or	a2, a2, a3
 	srai	a5, a5, 63
 	and	a3, a5, a6
@@ -29,10 +29,10 @@ func0000000000000000:
 	or	a0, a0, a3
 	ret
 .LBB1_2:
-	sll	a3, a3, a4
-	not	a4, a4
+	not	a7, a4
 	srli	a2, a2, 1
-	srl	a2, a2, a4
+	sll	a3, a3, a4
+	srl	a2, a2, a7
 	or	a2, a2, a3
 	srai	a5, a5, 63
 	and	a3, a5, a6
@@ -50,10 +50,10 @@ func0000000000000004:
 	or	a0, a0, a3
 	ret
 .LBB2_2:
-	sll	a3, a3, a4
-	not	a4, a4
+	not	a7, a4
 	srli	a2, a2, 1
-	srl	a2, a2, a4
+	sll	a3, a3, a4
+	srl	a2, a2, a7
 	or	a2, a2, a3
 	srai	a5, a5, 63
 	and	a3, a5, a6

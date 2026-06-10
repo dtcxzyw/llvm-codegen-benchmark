@@ -6,11 +6,11 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
+	li	a3, 15
 	zext.b	a2, a2
+	slli	a3, a3, 8
 	add	a0, a0, a2
-	li	a2, 15
-	slli	a2, a2, 8
-	and	a1, a1, a2
+	and	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

@@ -41,10 +41,11 @@ func0000000000000011:
 	ret
 
 func0000000000000019:
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vmv.v.i	v9, 4
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 1
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vmv.v.i	v9, 4
 	vmerge.vim	v9, v9, 12, v0
 	vor.vv	v8, v8, v9
 	ret

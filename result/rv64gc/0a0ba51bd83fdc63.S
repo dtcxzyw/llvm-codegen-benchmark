@@ -5,8 +5,8 @@ func0000000000000141:
 	ret
 
 func0000000000000184:
-	xori	a2, a2, 1
 	sext.w	a1, a1
+	xori	a2, a2, 1
 	seqz	a3, a1
 	sltiu	a1, a1, 8
 	and	a2, a2, a3

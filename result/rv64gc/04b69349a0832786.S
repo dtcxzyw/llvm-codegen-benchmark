@@ -1,7 +1,7 @@
 func0000000000000004:
-	fcvt.w.s	a0, fa0, rtz
-	slli	a0, a0, 30
-	lui	a1, 262144
+	lui	a0, 262144
+	fcvt.w.s	a1, fa0, rtz
+	slli	a1, a1, 30
 	addw	a0, a0, a1
 	ret
 

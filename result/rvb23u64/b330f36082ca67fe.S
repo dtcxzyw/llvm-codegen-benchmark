@@ -54,8 +54,8 @@ func000000000000028c:
 	ret
 
 func0000000000000118:
-	sltiu	a1, a1, -4
 	addi	a0, a0, -9
+	sltiu	a1, a1, -4
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

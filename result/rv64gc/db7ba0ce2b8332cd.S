@@ -1,10 +1,10 @@
 func0000000000000240:
-	srai	a2, a1, 3
-	lui	a3, 699051
-	addi	a3, a3, -1365
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	mul	a2, a2, a3
+	lui	a2, 699051
+	addi	a2, a2, -1365
+	slli	a3, a2, 32
+	srai	a4, a1, 3
+	add	a2, a2, a3
+	mul	a2, a4, a2
 	li	a3, 4
 	bltu	a2, a3, .LBB0_2
 	li	a2, -48

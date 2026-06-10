@@ -8,9 +8,9 @@ func000000000000001d:
 func000000000000000d:
 	srliw	a1, a1, 29
 	slli	a0, a0, 2
+	lui	a2, 2
 	or	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -2047
+	addi	a1, a2, -2047
 	addw	a0, a0, a1
 	ret
 

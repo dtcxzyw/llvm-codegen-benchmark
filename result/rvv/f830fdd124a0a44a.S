@@ -15,8 +15,8 @@ func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v11, v0
 	vmv.v.i	v12, 5
-	li	a0, 20
 	vmv1r.v	v0, v10
+	li	a0, 20
 	vmerge.vxm	v12, v12, a0, v0
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 10, v0

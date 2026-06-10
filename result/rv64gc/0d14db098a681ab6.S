@@ -15,8 +15,8 @@ func0000000000000002:
 	ret
 
 func0000000000000029:
-	andi	a1, a1, 14
 	li	a2, 6
+	andi	a1, a1, 14
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 1
 .LBB2_2:

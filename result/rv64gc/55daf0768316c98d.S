@@ -1,34 +1,34 @@
 func0000000000000007:
+	lui	a1, 258048
 	addi	a0, a0, 1
 	fcvt.s.wu	fa5, a0
-	lui	a0, 258048
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa0, fa5, fa4
 	ret
 
 func0000000000000000:
+	lui	a1, 273536
 	addi	a0, a0, 1
 	fcvt.s.wu	fa5, a0
-	lui	a0, 273536
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa0, fa5, fa4
 	ret
 
 func0000000000000002:
+	lui	a1, 253460
 	addi	a0, a0, -1
+	addi	a1, a1, 1966
 	fcvt.s.wu	fa5, a0
-	lui	a0, 253460
-	addi	a0, a0, 1966
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa0, fa5, fa4
 	ret
 
 func0000000000000003:
+	lui	a1, 265361
 	addi	a0, a0, -1
+	addi	a1, a1, -37
 	fcvt.s.wu	fa5, a0
-	lui	a0, 265361
-	addi	a0, a0, -37
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa0, fa5, fa4
 	ret
 

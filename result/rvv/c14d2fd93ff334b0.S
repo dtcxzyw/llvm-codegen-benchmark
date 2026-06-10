@@ -2,8 +2,8 @@ func0000000000000021:
 	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 40960
 	vmseq.vi	v9, v10, 0
+	lui	a0, 40960
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v8, v9, v8
@@ -23,8 +23,8 @@ func0000000000000181:
 func0000000000000081:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 7
-	lui	a0, 262144
 	vmseq.vi	v9, v10, 0
+	lui	a0, 262144
 	addi	a0, a0, -55
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0

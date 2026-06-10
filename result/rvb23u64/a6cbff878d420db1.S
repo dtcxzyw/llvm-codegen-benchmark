@@ -71,10 +71,10 @@ func00000000000000c3:
 	ret
 
 func0000000000000022:
-	sext.w	a1, a0
-	lui	a2, 16
-	addi	a2, a2, -1
-	sltu	a1, a1, a2
+	lui	a1, 16
+	sext.w	a2, a0
+	addi	a1, a1, -1
+	sltu	a1, a2, a1
 	addw	a0, a0, a1
 	ret
 

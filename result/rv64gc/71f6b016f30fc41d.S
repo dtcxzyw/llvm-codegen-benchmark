@@ -8,13 +8,13 @@ func0000000000000118:
 	ret
 
 func0000000000000110:
-	sext.w	a1, a1
 	lui	a3, 1048552
-	lui	a4, 2
-	sltu	a1, a4, a1
+	sext.w	a1, a1
 	addi	a4, a3, -1697
-	addi	a3, a3, -1696
 	addw	a2, a2, a4
+	lui	a4, 2
+	addi	a3, a3, -1696
+	sltu	a1, a4, a1
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

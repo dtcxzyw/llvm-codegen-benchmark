@@ -24,9 +24,9 @@ func0000000000000000:
 
 func0000000000000003:
 	lui	a3, 4095
+	slli	a3, a3, 28
 	or	a0, a0, a1
 	lui	a1, 256
-	slli	a3, a3, 28
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

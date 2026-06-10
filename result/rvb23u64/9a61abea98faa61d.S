@@ -33,8 +33,8 @@ func0000000000000308:
 	ret
 
 func0000000000000218:
-	bexti	a1, a1, 5
 	sltiu	a0, a0, 8
+	bexti	a1, a1, 5
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func0000000000000002:
-	fcvt.s.d	fa5, fa2
 	lui	a0, 255294
 	addi	a0, a0, -1086
+	fcvt.s.d	fa5, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB0_2

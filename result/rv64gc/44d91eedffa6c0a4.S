@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a3, 838115
 	add	a1, a1, a2
-	lui	a2, 838115
-	addi	a2, a2, -687
+	addi	a2, a3, -687
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	mulw	a0, a0, a2
@@ -17,12 +17,12 @@ func00000000000000fe:
 
 func0000000000000054:
 	add	a1, a1, a2
-	lui	a2, 21
-	sub	a0, a1, a0
-	slli	a1, a1, 3
+	slli	a2, a1, 3
 	sub	a1, a1, a0
-	addi	a0, a2, 384
-	mulw	a0, a1, a0
+	lui	a0, 21
+	sub	a2, a2, a1
+	addi	a0, a0, 384
+	mulw	a0, a2, a0
 	ret
 
 func00000000000000ff:
@@ -34,10 +34,10 @@ func00000000000000ff:
 	ret
 
 func00000000000000c1:
+	lui	a3, 1048573
 	add	a1, a1, a2
-	lui	a2, 1048573
-	addi	a2, a2, -1
-	mul	a1, a1, a2
+	addi	a3, a3, -1
+	mul	a1, a1, a3
 	lui	a2, 1
 	add	a0, a0, a1
 	addi	a1, a2, -1366

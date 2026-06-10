@@ -15,12 +15,14 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	slli	a1, a0, 1
+	mv	a1, a0
 	li	a0, 0
+	slli	a1, a1, 1
 	ret
 
 func0000000000000006:
-	slli	a1, a0, 1
+	mv	a1, a0
 	li	a0, 0
+	slli	a1, a1, 1
 	ret
 

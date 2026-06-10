@@ -15,8 +15,8 @@ func0000000000000021:
 	ret
 
 func000000000000008c:
-	srli	a1, a1, 8
 	srli	a0, a0, 32
+	srli	a1, a1, 8
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -55,22 +55,22 @@ func0000000000000821:
 	ret
 
 func0000000000000c2c:
-	andi	a1, a1, 2047
 	li	a2, -513
-	addi	a1, a1, -1022
+	andi	a1, a1, 2047
 	slli	a2, a2, 53
-	seqz	a1, a1
+	addi	a1, a1, -1022
 	xor	a0, a0, a2
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000098c:
-	slli	a1, a1, 57
 	li	a2, 5
-	srli	a1, a1, 63
 	slli	a2, a2, 41
+	slli	a1, a1, 57
 	xor	a0, a0, a2
+	srli	a1, a1, 63
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -84,10 +84,10 @@ func0000000000000024:
 	ret
 
 func0000000000000038:
-	srli	a1, a1, 1
 	li	a2, -1
 	slli	a2, a2, 63
 	xor	a0, a0, a2
+	srli	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

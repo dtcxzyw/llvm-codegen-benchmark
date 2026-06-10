@@ -1,6 +1,6 @@
 func000000000000008a:
-	srli	a1, a1, 4
 	lui	a2, 838861
+	srli	a1, a1, 4
 	addi	a2, a2, -819
 	mulw	a1, a1, a2
 	sgtz	a1, a1
@@ -8,10 +8,10 @@ func000000000000008a:
 	ret
 
 func0000000000000088:
-	srli	a1, a1, 3
 	lui	a2, 748983
 	addi	a2, a2, -585
 	slli	a3, a2, 33
+	srli	a1, a1, 3
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	sraiw	a1, a1, 2

@@ -1,8 +1,8 @@
 func0000000000000006:
-	sext.w	a1, a0
-	lui	a2, 419430
-	addi	a2, a2, 1639
-	mul	a1, a1, a2
+	lui	a1, 419430
+	sext.w	a2, a0
+	addi	a1, a1, 1639
+	mul	a1, a2, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 35
 	add	a1, a1, a2
@@ -29,9 +29,9 @@ func0000000000000001:
 	mul	a0, a0, a1
 	lui	a1, 174763
 	addi	a1, a1, -1366
+	lui	a2, 349525
 	addw	a0, a0, a1
-	lui	a1, 349525
-	addi	a1, a1, 1365
+	addi	a1, a2, 1365
 	bltu	a0, a1, .LBB2_2
 	li	a0, 122
 	ret

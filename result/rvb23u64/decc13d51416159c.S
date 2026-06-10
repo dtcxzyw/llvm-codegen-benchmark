@@ -17,9 +17,9 @@ func0000000000000062:
 	ret
 
 func0000000000000042:
+	lui	a3, 349525
 	addw	a1, a1, a2
-	lui	a2, 349525
-	addi	a2, a2, 1366
+	addi	a2, a3, 1366
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 32

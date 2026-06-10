@@ -23,9 +23,9 @@ func0000000000000006:
 	ret
 
 func000000000000000e:
+	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 16
 	vrsub.vx	v8, v8, a0
 	vminu.vv	v8, v8, v12
 	ret
@@ -48,17 +48,17 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
+	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 16
 	vrsub.vx	v8, v8, a0
 	vminu.vv	v8, v8, v12
 	ret
 
 func000000000000000a:
+	li	a0, 19
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 19
 	vrsub.vx	v8, v8, a0
 	vminu.vv	v8, v8, v12
 	ret

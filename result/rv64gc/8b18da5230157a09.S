@@ -6,8 +6,8 @@ func0000000000000002:
 	ret
 
 func000000000000000a:
-	srai	a0, a0, 48
 	li	a1, -5
+	srai	a0, a0, 48
 	blt	a1, a0, .LBB1_2
 	li	a0, -5
 .LBB1_2:

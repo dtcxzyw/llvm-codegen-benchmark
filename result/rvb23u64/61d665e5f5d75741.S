@@ -39,8 +39,8 @@ func0000000000000026:
 	ret
 
 func00000000000000ea:
-	sext.w	a3, a0
 	sext.w	a2, a2
+	sext.w	a3, a0
 	slt	a2, a2, a3
 	xori	a2, a2, 1
 	and	a1, a1, a2

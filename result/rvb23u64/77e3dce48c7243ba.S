@@ -10,9 +10,9 @@ func0000000000000004:
 	zext.h	a2, a2
 	li	a3, -9
 	slli	a3, a3, 11
+	lui	a4, 1048572
 	add	a2, a2, a3
-	lui	a3, 1048572
-	addi	a3, a3, -2047
+	addi	a3, a4, -2047
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

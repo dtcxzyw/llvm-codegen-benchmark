@@ -8,8 +8,8 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	lui	a1, 244141
+	sext.w	a0, a0
 	max	a2, a0, zero
 	addi	a1, a1, -1536
 	czero.nez	a1, a1, a0

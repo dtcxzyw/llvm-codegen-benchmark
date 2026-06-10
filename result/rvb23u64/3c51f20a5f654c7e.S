@@ -17,9 +17,9 @@ func000000000000018c:
 func000000000000008c:
 	zext.b	a0, a0
 	zext.b	a1, a1
-	sltu	a1, a1, a0
-	addi	a0, a0, -10
-	snez	a0, a0
+	addi	a2, a0, -10
+	sltu	a0, a1, a0
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 

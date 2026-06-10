@@ -15,8 +15,8 @@ func000000000000042a:
 	ret
 
 func000000000000056a:
-	sext.w	a0, a0
 	srai	a2, a2, 4
+	sext.w	a0, a0
 	slt	a1, a2, a1
 	xori	a1, a1, 1
 	sgtz	a0, a0

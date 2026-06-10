@@ -1,7 +1,7 @@
 func000000000000000f:
 	slli	a2, a2, 16
-	lui	a3, 496
 	neg	a2, a2
+	lui	a3, 496
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -18,9 +18,9 @@ func0000000000000003:
 
 func000000000000000e:
 	sh1add	a2, a2, a2
+	or	a0, a0, a1
 	slli	a2, a2, 62
 	srli	a2, a2, 49
-	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 

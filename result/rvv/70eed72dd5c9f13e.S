@@ -3,8 +3,8 @@ func0000000000000002:
 	vfncvt.f.f.w	v16, v8
 	lui	a0, 799552
 	fmv.w.x	fa5, a0
-	lui	a0, 277312
 	vmflt.vf	v0, v16, fa5
+	lui	a0, 277312
 	fmv.w.x	fa5, a0
 	vfadd.vf	v16, v16, fa5, v0.t
 	vmv.v.v	v8, v16
@@ -15,8 +15,8 @@ func0000000000000004:
 	vfncvt.f.f.w	v16, v8
 	lui	a0, 271168
 	fmv.w.x	fa5, a0
-	lui	a0, 797504
 	vmfgt.vf	v0, v16, fa5
+	lui	a0, 797504
 	fmv.w.x	fa5, a0
 	vfadd.vf	v16, v16, fa5, v0.t
 	vmv.v.v	v8, v16

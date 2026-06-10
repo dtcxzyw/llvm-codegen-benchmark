@@ -1,9 +1,9 @@
 func0000000000000022:
 	lui	a0, 273536
 	fmv.w.x	fa5, a0
-	lui	a0, 797824
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmin.vf	v8, v8, fa5
+	lui	a0, 797824
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
@@ -19,8 +19,8 @@ func0000000000000042:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmax.vf	v8, v8, fa5
 	fli.s	fa5, 1.0
-	lui	a0, 212992
 	vmflt.vf	v0, v8, fa5
+	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
@@ -29,12 +29,12 @@ func0000000000000042:
 func00000000000000c4:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmv.v.i	v12, 0
 	vmfge.vf	v0, v8, fa5
-	fli.s	fa5, 1.0
-	lui	a0, 274400
+	vmv.v.i	v12, 0
 	vmerge.vvm	v8, v12, v8, v0
+	fli.s	fa5, 1.0
 	vmfgt.vf	v0, v8, fa5
+	lui	a0, 274400
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
@@ -43,9 +43,9 @@ func00000000000000c4:
 func00000000000000aa:
 	lui	a0, 273216
 	fmv.w.x	fa5, a0
-	lui	a0, 797504
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmin.vf	v8, v8, fa5
+	lui	a0, 797504
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
@@ -58,9 +58,9 @@ func0000000000000044:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmax.vf	v8, v8, fa5
 	fli.s	fa5, 1.0
+	vmfgt.vf	v0, v8, fa5
 	lui	a0, 255387
 	addi	a0, a0, 976
-	vmfgt.vf	v0, v8, fa5
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0

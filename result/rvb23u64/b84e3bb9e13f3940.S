@@ -1,11 +1,11 @@
 func000000000000000e:
-	andi	a1, a1, 1
 	zext.b	a2, a2
-	lui	a3, 2
 	addi	a2, a2, -6
-	addi	a1, a1, -1
+	lui	a3, 2
+	andi	a1, a1, 1
 	czero.eqz	a2, a3, a2
 	ori	a2, a2, 560
+	addi	a1, a1, -1
 	bseti	a2, a2, 14
 	andi	a1, a1, 8
 	sllw	a1, a2, a1

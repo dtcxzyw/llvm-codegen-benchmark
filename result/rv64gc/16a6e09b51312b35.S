@@ -41,9 +41,10 @@ func0000000000000018:
 	ret
 
 func0000000000000005:
-	bltu	a2, a0, .LBB7_2
-	mv	a1, a0
-.LBB7_2:
+	mv	a3, a0
 	mv	a0, a1
+	bltu	a2, a3, .LBB7_2
+	mv	a0, a3
+.LBB7_2:
 	ret
 

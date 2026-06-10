@@ -8,14 +8,14 @@ func0000000000000318:
 	ret
 
 func0000000000000198:
-	sext.w	a1, a1
 	lui	a2, 1048568
-	addi	a3, a2, 1262
-	addi	a2, a2, 767
-	slt	a3, a1, a3
-	xor	a1, a1, a2
-	snez	a1, a1
-	and	a1, a1, a3
+	sext.w	a1, a1
+	addi	a3, a2, 767
+	addi	a2, a2, 1262
+	xor	a3, a3, a1
+	slt	a1, a1, a2
+	snez	a2, a3
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

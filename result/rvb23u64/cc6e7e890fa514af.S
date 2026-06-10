@@ -1,9 +1,9 @@
 func0000000000000000:
 	lui	a3, 332005
 	addi	a3, a3, 639
+	lui	a4, 434334
 	xor	a2, a2, a3
-	lui	a3, 434334
-	addi	a3, a3, 1639
+	addi	a3, a4, 1639
 	roriw	a2, a2, 16
 	add	a1, a1, a3
 	addw	a1, a1, a2

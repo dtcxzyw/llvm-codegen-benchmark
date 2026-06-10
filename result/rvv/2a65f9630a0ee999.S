@@ -6,10 +6,10 @@ func0000000000000001:
 	ret
 
 func0000000000000019:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsll.vi	v10, v8, 7
 	lui	a0, 8
 	addi	a0, a0, -256
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsll.vi	v10, v8, 7
 	vand.vx	v10, v10, a0
 	vsll.vi	v8, v8, 29
 	vor.vv	v8, v10, v8

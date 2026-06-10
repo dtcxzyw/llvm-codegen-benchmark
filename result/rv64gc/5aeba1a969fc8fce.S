@@ -6,10 +6,10 @@ func0000000000000000:
 	ret
 
 func0000000000000006:
-	slli	a1, a0, 1
-	slli	a0, a0, 3
-	add	a0, a0, a1
 	lui	a1, 5
+	slli	a2, a0, 1
+	slli	a0, a0, 3
+	add	a0, a0, a2
 	bltu	a1, a0, .LBB1_2
 	lui	a0, 5
 .LBB1_2:

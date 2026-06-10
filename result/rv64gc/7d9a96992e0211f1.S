@@ -9,9 +9,9 @@ func000000000000000c:
 
 func0000000000000010:
 	lui	a3, 3
+	lui	a4, 1048575
 	and	a2, a2, a3
-	lui	a3, 1048575
-	and	a1, a1, a3
+	and	a1, a1, a4
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret

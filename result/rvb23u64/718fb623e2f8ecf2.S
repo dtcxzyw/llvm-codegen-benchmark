@@ -1,6 +1,6 @@
 func0000000000000101:
-	sext.w	a0, a0
 	li	a2, -1
+	sext.w	a0, a0
 	sllw	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -20,8 +20,8 @@ func00000000000001e1:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	bset	a1, zero, a1
+	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

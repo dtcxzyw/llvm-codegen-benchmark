@@ -7,11 +7,11 @@ func00000000000000f5:
 
 func00000000000000e5:
 	sh2add	a2, a1, a1
-	zext.b	a0, a0
 	sh2add	a1, a2, a1
 	lui	a2, 1048554
-	add	a0, a0, a1
-	addi	a1, a2, -1441
+	zext.b	a0, a0
+	addi	a2, a2, -1441
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

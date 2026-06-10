@@ -1,6 +1,6 @@
 func00000000000000b0:
-	slli.uw	a2, a2, 4
 	slli	a1, a1, 8
+	slli.uw	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 24
@@ -13,8 +13,8 @@ func00000000000000fb:
 	ret
 
 func0000000000000030:
-	slli.uw	a2, a2, 4
 	slli	a1, a1, 4
+	slli.uw	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 80

@@ -8,8 +8,8 @@ func0000000000000002:
 
 func0000000000000043:
 	slli	a1, a1, 48
-	lui	a2, 131072
 	snez	a1, a1
+	lui	a2, 131072
 	slli	a1, a1, 30
 	or	a0, a0, a2
 	or	a0, a0, a1

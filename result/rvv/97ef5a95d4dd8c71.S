@@ -6,8 +6,8 @@ func0000000000000002:
 	vmerge.vxm	v11, v8, a0, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v11
-	li	a0, 29
 	vmv1r.v	v0, v10
+	li	a0, 29
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -18,8 +18,8 @@ func0000000000000003:
 	vmerge.vim	v11, v8, 13, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v11
-	li	a0, 24
 	vmv1r.v	v0, v10
+	li	a0, 24
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

@@ -25,18 +25,18 @@ func0000000000000007:
 	ret
 
 func0000000000000013:
-	sext.w	a2, a2
 	lui	a3, 524288
 	addiw	a3, a3, -1
+	sext.w	a2, a2
 	add	a1, a1, a3
 	and	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
 
 func000000000000001f:
-	sext.w	a2, a2
 	lui	a3, 256
 	addi	a3, a3, -1
+	sext.w	a2, a2
 	add	a1, a1, a3
 	and	a1, a1, a2
 	sh3add	a0, a1, a0

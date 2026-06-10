@@ -1,9 +1,9 @@
 func000000000000088c:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v14, 1
 	lui	a0, 28672
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
-	vsll.vv	v10, v14, v12
+	vmv.v.i	v10, 1
+	vsll.vv	v10, v10, v12
 	vmerge.vim	v10, v10, 1, v0
 	vmsne.vv	v0, v8, v10
 	ret

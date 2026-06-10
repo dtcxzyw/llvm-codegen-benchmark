@@ -27,8 +27,8 @@ func0000000000000114:
 	ret
 
 func0000000000000102:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sltu	a3, a1, a0
 	xor	a0, a0, a1
 	and	a2, a2, a3
@@ -37,8 +37,8 @@ func0000000000000102:
 	ret
 
 func0000000000000182:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	slt	a3, a1, a0
 	xor	a0, a0, a1
 	and	a2, a2, a3

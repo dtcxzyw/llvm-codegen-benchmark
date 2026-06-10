@@ -309,12 +309,11 @@ func0000000000000304:
 	vmand.mm	v0, v8, v9
 	ret
 
+.LCPI37_0:
+	.quad	47223664828696
 func0000000000000106:
-	lui	a0, 351844
-	addi	a0, a0, -1143
-	slli	a0, a0, 12
-	addi	a0, a0, -989
-	slli	a0, a0, 3
+	lui	a0, %hi(.LCPI37_0)
+	ld	a0, %lo(.LCPI37_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v9, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

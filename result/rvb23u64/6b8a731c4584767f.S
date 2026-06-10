@@ -7,9 +7,9 @@ func0000000000000006:
 
 func0000000000000004:
 	zext.b	a1, a1
+	lui	a2, 11921
 	or	a0, a0, a1
-	lui	a1, 11921
-	addi	a1, a1, -291
+	addi	a1, a2, -291
 	mulw	a0, a0, a1
 	ret
 

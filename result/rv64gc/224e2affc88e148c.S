@@ -1,7 +1,7 @@
 func0000000000000001:
+	and	a1, a1, a2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	and	a1, a1, a2
 	addi	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -15,8 +15,8 @@ func000000000000000c:
 	ret
 
 func0000000000000006:
-	slli	a0, a0, 48
 	and	a1, a1, a2
+	slli	a0, a0, 48
 	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
@@ -30,17 +30,17 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
+	and	a1, a1, a2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	and	a1, a1, a2
 	sltiu	a0, a0, 32
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000000a:
-	slli	a0, a0, 48
 	and	a1, a1, a2
+	slli	a0, a0, 48
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	and	a0, a0, a1

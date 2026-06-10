@@ -46,13 +46,13 @@ func000000000000001f:
 .LCPI4_0:
 	.quad	-4658895280553007687
 func000000000000003c:
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
-	li	a1, 32
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v8, v8, a1
+	vsll.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI4_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	ld	a0, %lo(.LCPI4_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret
@@ -60,13 +60,13 @@ func000000000000003c:
 .LCPI5_0:
 	.quad	-4658895280553007687
 func000000000000001c:
-	lui	a0, %hi(.LCPI5_0)
-	ld	a0, %lo(.LCPI5_0)(a0)
-	li	a1, 32
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v8, v8, a1
+	vsll.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI5_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret
@@ -74,13 +74,13 @@ func000000000000001c:
 .LCPI6_0:
 	.quad	-4658895280553007687
 func0000000000000034:
-	lui	a0, %hi(.LCPI6_0)
-	ld	a0, %lo(.LCPI6_0)(a0)
-	li	a1, 32
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v8, v8, a1
+	vsll.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI6_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret
@@ -88,13 +88,13 @@ func0000000000000034:
 .LCPI7_0:
 	.quad	-4658895280553007687
 func0000000000000024:
-	lui	a0, %hi(.LCPI7_0)
-	ld	a0, %lo(.LCPI7_0)(a0)
-	li	a1, 32
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vx	v8, v8, a1
+	vsll.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI7_0)
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	ld	a0, %lo(.LCPI7_0)(a0)
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret
@@ -103,18 +103,18 @@ func000000000000003f:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
-	lui	a0, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 3
 	addi	a0, a0, -1802
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	ret
 
 func000000000000003e:
+	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 8
-	lui	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
 	addi	a0, a0, 1

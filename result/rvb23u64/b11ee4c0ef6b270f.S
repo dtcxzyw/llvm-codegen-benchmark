@@ -11,9 +11,9 @@ func000000000000000a:
 	ret
 
 func000000000000004a:
+	bseti	a1, zero, 11
 	bset	a0, zero, a0
 	sext.w	a0, a0
-	bseti	a1, zero, 11
 	slt	a0, a1, a0
 	ret
 
@@ -32,9 +32,9 @@ func0000000000000004:
 
 func0000000000000014:
 	li	a1, 2
+	lui	a2, 1
 	sllw	a0, a1, a0
-	lui	a1, 1
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 

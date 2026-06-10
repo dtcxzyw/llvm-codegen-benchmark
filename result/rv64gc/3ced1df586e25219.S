@@ -146,27 +146,27 @@ func000000000000000e:
 	ret
 
 func0000000000000016:
-	fmadd.d	fa5, fa0, fa1, fa2
-	fmv.d.x	fa4, zero
-	flt.d	a0, fa5, fa4
-	flt.d	a1, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmadd.d	fa4, fa0, fa1, fa2
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
 func0000000000000019:
-	fmadd.d	fa5, fa0, fa1, fa2
-	fmv.d.x	fa4, zero
-	flt.d	a0, fa5, fa4
-	flt.d	a1, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmadd.d	fa4, fa0, fa1, fa2
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func0000000000000009:
-	fmadd.d	fa5, fa0, fa1, fa2
-	fmv.d.x	fa4, zero
-	flt.d	a0, fa5, fa4
-	flt.d	a1, fa4, fa5
+	fmv.d.x	fa5, zero
+	fmadd.d	fa4, fa0, fa1, fa2
+	flt.d	a0, fa4, fa5
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

@@ -3,8 +3,8 @@ func0000000000000004:
 	bnez	a0, .LBB0_2
 	fmv.d	fa1, fa2
 .LBB0_2:
-	fmul.d	fa5, fa0, fa1
 	lui	a0, 16457
+	fmul.d	fa5, fa0, fa1
 	slli	a0, a0, 36
 	fmv.d.x	fa4, a0
 	fmul.d	fa0, fa5, fa4

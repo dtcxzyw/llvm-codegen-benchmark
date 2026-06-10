@@ -22,8 +22,8 @@ func0000000000000021:
 	ret
 
 func000000000000014c:
-	srliw	a1, a1, 31
 	addiw	a0, a0, -43
+	srliw	a1, a1, 31
 	snez	a0, a0
 	xor	a0, a0, a1
 	xori	a0, a0, 1

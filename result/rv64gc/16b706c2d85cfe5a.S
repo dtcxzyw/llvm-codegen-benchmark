@@ -98,8 +98,8 @@ func0000000000000088:
 	ret
 
 func00000000000000a6:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	slt	a0, a0, a1
 	xori	a0, a0, 1
@@ -144,16 +144,16 @@ func0000000000000086:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	xor	a0, a0, a1
 	snez	a0, a0

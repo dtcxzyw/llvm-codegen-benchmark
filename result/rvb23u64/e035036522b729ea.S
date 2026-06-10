@@ -13,8 +13,8 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	srli	a0, a0, 9
 	lui	a1, 16
+	srli	a0, a0, 9
 	addi	a1, a1, -4
 	and	a0, a0, a1
 	addi	a0, a0, -36

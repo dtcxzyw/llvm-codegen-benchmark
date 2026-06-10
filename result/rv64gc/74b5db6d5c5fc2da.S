@@ -10,8 +10,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	andi	a1, a1, 3
 	li	a2, 2
+	andi	a1, a1, 3
 	beq	a1, a2, .LBB1_2
 	lui	a1, 921600
 	addi	a1, a1, -1

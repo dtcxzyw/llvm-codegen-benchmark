@@ -6,8 +6,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	zext.b	a1, a1
 	li	a2, 2
+	zext.b	a1, a1
 	beq	a1, a2, .LBB1_2
 	li	a1, 52
 	sub	a0, a1, a0

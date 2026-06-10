@@ -1,9 +1,9 @@
 func000000000000010c:
-	sext.w	a2, a0
 	sext.w	a1, a1
-	addiw	a0, a0, -1
-	sltu	a0, a1, a0
-	czero.eqz	a0, a0, a2
+	addiw	a2, a0, -1
+	sext.w	a0, a0
+	sltu	a1, a1, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000004ca:

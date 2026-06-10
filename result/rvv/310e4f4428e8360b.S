@@ -24,10 +24,10 @@ func0000000000000000:
 	ret
 
 func00000000000000f0:
+	lui	a0, 10126
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 6
 	vadd.vv	v8, v10, v8
-	lui	a0, 10126
 	vadd.vv	v8, v12, v8
 	addi	a0, a0, -537
 	slli	a0, a0, 12
@@ -36,10 +36,10 @@ func00000000000000f0:
 	ret
 
 func000000000000007f:
+	lui	a0, 10126
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 6
 	vadd.vv	v8, v10, v8
-	lui	a0, 10126
 	vadd.vv	v8, v12, v8
 	addi	a0, a0, -537
 	slli	a0, a0, 12

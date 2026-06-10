@@ -12,12 +12,12 @@ func0000000000000009:
 	ret
 
 func000000000000000c:
-	slli	a1, a1, 18
 	li	a2, 1
+	slli	a1, a1, 18
 	slli	a2, a2, 45
+	lui	a3, 512
 	and	a1, a1, a2
-	lui	a2, 512
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

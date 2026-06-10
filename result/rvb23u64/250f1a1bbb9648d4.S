@@ -18,9 +18,9 @@ func0000000000000002:
 	ld	a1, %lo(.LCPI1_0)(a1)
 	lui	a2, 699051
 	addi	a2, a2, -1366
+	slli	a3, a2, 32
 	add	a0, a0, a1
-	slli	a1, a2, 32
-	add.uw	a1, a2, a1
+	add.uw	a1, a2, a3
 	sltu	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000001:
-	slli	a2, a2, 2
 	mul	a0, a0, a1
+	slli	a2, a2, 2
 	addw	a0, a0, a2
 	ori	a0, a0, 1
 	ret

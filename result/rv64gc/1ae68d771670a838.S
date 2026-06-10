@@ -7,12 +7,12 @@ func0000000000000001:
 func0000000000000018:
 	fmv.x.d	a0, fa0
 	li	a1, 1023
+	lui	a2, 510464
 	slli	a1, a1, 53
+	addi	a2, a2, -1
 	and	a0, a0, a1
-	lui	a1, 510464
-	addi	a1, a1, -1
-	slli	a1, a1, 32
-	sltu	a0, a1, a0
+	slli	a2, a2, 32
+	sltu	a0, a2, a0
 	ret
 
 func000000000000000c:

@@ -29,8 +29,8 @@ func0000000000000124:
 	vand.vx	v16, v16, a0
 	li	a0, -481
 	slli	a0, a0, 53
-	vmsne.vi	v24, v16, 0
 	fmv.d.x	fa5, a0
+	vmsne.vi	v24, v16, 0
 	vmflt.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
 	ret
@@ -39,8 +39,8 @@ func0000000000000134:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v8
 	li	a0, 897
-	fli.d	fa5, -1.0
 	vand.vx	v16, v16, a0
+	fli.d	fa5, -1.0
 	vmsne.vi	v24, v16, 0
 	vmfle.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
@@ -49,10 +49,10 @@ func0000000000000134:
 .LCPI4_0:
 	.quad	0x3eb0c6f7a0000000
 func0000000000000144:
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v8
+	lui	a0, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a0)
 	vmfle.vf	v24, v16, fa5
 	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
@@ -75,8 +75,8 @@ func0000000000000104:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v8
 	li	a0, 129
-	fli.d	fa5, 0.5
 	vand.vx	v16, v16, a0
+	fli.d	fa5, 0.5
 	vmsne.vi	v24, v16, 0
 	vmflt.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24

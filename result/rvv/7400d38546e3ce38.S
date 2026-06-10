@@ -1,21 +1,21 @@
 func0000000000000441:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000401:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 
@@ -37,57 +37,57 @@ func0000000000000041:
 
 func0000000000000741:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000108:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, 0
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, 0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000128:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, 0
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, 0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000141:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000006a1:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, 0
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8
 	ret
 
 func0000000000000241:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000006c1:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 
 func00000000000007e9:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -7
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -7
 	vmsleu.vv	v0, v8, v10
 	ret
 
@@ -117,15 +117,15 @@ func00000000000002e6:
 
 func0000000000000144:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000461:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vi	v8, v8, -2
 	vsub.vv	v10, v12, v10
+	vrsub.vi	v8, v8, -2
 	vmseq.vv	v0, v8, v10
 	ret
 

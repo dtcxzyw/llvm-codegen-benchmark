@@ -15,22 +15,22 @@ func0000000000000000:
 
 func000000000000000f:
 	lui	a3, 18031
+	lui	a4, 4724
 	addi	a3, a3, 1117
+	addi	a4, a4, 159
 	mul	a2, a2, a3
-	lui	a3, 4724
-	addi	a3, a3, 159
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	xor	a1, a1, a2
 	xor	a0, a0, a1
 	ret
 
 func0000000000000005:
 	lui	a3, 18031
+	lui	a4, 4724
 	addi	a3, a3, 1117
+	addi	a4, a4, 159
 	mul	a2, a2, a3
-	lui	a3, 4724
-	addi	a3, a3, 159
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	xor	a1, a1, a2
 	xor	a0, a0, a1
 	ret

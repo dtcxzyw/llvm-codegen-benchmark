@@ -35,19 +35,19 @@ func0000000000000086:
 	ret
 
 func0000000000000084:
+	li	a2, 1
+	slli	a2, a2, 35
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 35
-	addi	a0, a0, -16
-	and	a0, a0, a1
-	seqz	a0, a0
+	addi	a2, a2, -16
+	and	a1, a1, a2
+	seqz	a0, a1
 	ret
 
 func0000000000000094:
+	li	a2, 1
+	slli	a2, a2, 34
 	sub	a1, a1, a0
-	li	a0, 1
-	slli	a0, a0, 34
-	addi	a0, a0, -1024
+	addi	a0, a2, -1024
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

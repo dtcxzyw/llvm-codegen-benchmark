@@ -71,9 +71,9 @@ func000000000000007f:
 
 func00000000000000f0:
 	slli	a1, a1, 2
+	lui	a2, 87
 	add	a0, a0, a1
-	lui	a1, 87
-	addi	a1, a1, 840
+	addi	a1, a2, 840
 	add	a0, a0, a1
 	ret
 

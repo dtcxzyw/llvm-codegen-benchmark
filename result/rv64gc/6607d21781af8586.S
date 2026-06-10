@@ -1,6 +1,6 @@
 func0000000000000008:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 32
@@ -25,8 +25,8 @@ func0000000000000001:
 	ret
 
 func0000000000000048:
-	addi	a2, a2, -99
 	slli	a1, a1, 63
+	addi	a2, a2, -99
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a1, a1, 32
@@ -35,8 +35,8 @@ func0000000000000048:
 	ret
 
 func00000000000000e1:
-	addiw	a2, a2, 1
 	slli	a1, a1, 63
+	addiw	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	xor	a0, a0, a1

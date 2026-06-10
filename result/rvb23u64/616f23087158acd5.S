@@ -1,8 +1,8 @@
 func000000000000000f:
 	mul	a1, a1, a2
-	lui	a2, 158
 	sh2add.uw	a0, a1, a0
-	addi	a1, a2, -816
+	lui	a1, 158
+	addi	a1, a1, -816
 	add	a0, a0, a1
 	ret
 

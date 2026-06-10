@@ -1,8 +1,8 @@
 func0000000000000045:
 	li	a3, 3
-	andi	a1, a1, 1
 	slli	a3, a3, 32
 	xor	a2, a2, a3
+	andi	a1, a1, 1
 	seqz	a2, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -51,8 +51,8 @@ func0000000000000205:
 
 func000000000000020f:
 	srli	a2, a2, 8
-	andi	a1, a1, 1
 	sltiu	a2, a2, 257
+	andi	a1, a1, 1
 	xori	a2, a2, 1
 	add	a0, a0, a1
 	addw	a0, a0, a2

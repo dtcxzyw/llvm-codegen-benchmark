@@ -23,8 +23,8 @@ func000000000000000a:
 	ret
 
 func0000000000000061:
-	addi	a2, a2, 7
 	lui	a3, 1048560
+	addi	a2, a2, 7
 	srli	a3, a3, 13
 	and	a2, a2, a3
 	xor	a1, a1, a2

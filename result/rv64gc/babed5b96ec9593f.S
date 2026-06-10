@@ -1,6 +1,6 @@
 func0000000000000001:
-	addiw	a0, a0, -1
 	slli	a1, a1, 63
+	addiw	a0, a0, -1
 	srai	a1, a1, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -16,9 +16,9 @@ func00000000000000a1:
 
 func00000000000000a4:
 	lui	a2, 48
+	lui	a3, 1048560
 	and	a1, a1, a2
-	lui	a2, 1048560
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	srliw	a0, a0, 20
 	seqz	a0, a0

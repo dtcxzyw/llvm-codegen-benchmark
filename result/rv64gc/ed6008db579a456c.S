@@ -84,9 +84,9 @@ func0000000000000010:
 
 func000000000000002b:
 	mul	a2, a2, a0
-	add	a1, a1, a2
 	slli	a0, a0, 2
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func000000000000001b:
@@ -119,9 +119,9 @@ func0000000000000002:
 
 func0000000000000003:
 	mul	a2, a0, a2
-	add	a1, a1, a2
 	slli	a0, a0, 2
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func000000000000003b:

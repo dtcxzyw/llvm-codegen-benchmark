@@ -25,8 +25,8 @@ func0000000000000000:
 func00000000000000ff:
 	addi	a2, a2, 67
 	lui	a3, 524288
-	slli	a0, a0, 2
 	srli	a3, a3, 28
+	slli	a0, a0, 2
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -36,8 +36,8 @@ func00000000000000ff:
 func00000000000000fe:
 	addi	a2, a2, 67
 	lui	a3, 524288
-	slli	a0, a0, 2
 	srli	a3, a3, 28
+	slli	a0, a0, 2
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

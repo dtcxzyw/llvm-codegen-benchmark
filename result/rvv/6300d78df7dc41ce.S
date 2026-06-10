@@ -1,7 +1,7 @@
 func00000000000001e1:
+	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 255
 	vmseq.vx	v0, v9, a0
 	vadd.vi	v9, v12, 1
 	vmerge.vvm	v8, v9, v8, v0

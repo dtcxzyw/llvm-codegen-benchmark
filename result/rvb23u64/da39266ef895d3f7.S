@@ -16,12 +16,12 @@ func0000000000000084:
 	ret
 
 func000000000000008a:
-	slli	a1, a0, 56
-	zext.b	a0, a0
-	addi	a0, a0, -16
-	sltiu	a0, a0, -2
-	srli	a1, a1, 63
-	andn	a0, a0, a1
+	zext.b	a1, a0
+	slli	a0, a0, 56
+	addi	a1, a1, -16
+	sltiu	a1, a1, -2
+	srli	a0, a0, 63
+	andn	a0, a1, a0
 	ret
 
 func0000000000000088:

@@ -1,7 +1,7 @@
 func000000000000003f:
 	lui	a3, 262144
-	slli	a1, a1, 3
 	addi	a3, a3, -8
+	slli	a1, a1, 3
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -24,9 +24,9 @@ func0000000000000000:
 
 func000000000000000c:
 	li	a3, -1
-	slli	a1, a1, 53
 	slli	a3, a3, 32
 	srli	a3, a3, 8
+	slli	a1, a1, 53
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

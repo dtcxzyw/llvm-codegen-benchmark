@@ -87,17 +87,17 @@ func000000000000000a:
 
 func000000000000000e:
 	slli.uw	a1, a1, 29
+	lui	a2, 4095
 	or	a0, a0, a1
-	lui	a1, 4095
-	slli	a1, a1, 39
-	or	a0, a0, a1
+	slli	a2, a2, 39
+	or	a0, a0, a2
 	ret
 
 func000000000000001a:
 	slli	a1, a1, 63
+	lui	a2, 4095
 	or	a0, a0, a1
-	lui	a1, 4095
-	slli	a1, a1, 39
-	or	a0, a0, a1
+	slli	a2, a2, 39
+	or	a0, a0, a2
 	ret
 

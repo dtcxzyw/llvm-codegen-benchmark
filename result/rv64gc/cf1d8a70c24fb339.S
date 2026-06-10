@@ -50,8 +50,8 @@ func000000000000000d:
 
 func000000000000000e:
 	fmul.s	fa5, fa1, fa2
-	feq.s	a0, fa5, fa5
-	feq.s	a1, fa0, fa0
+	feq.s	a0, fa0, fa0
+	feq.s	a1, fa5, fa5
 	and	a0, a0, a1
 	ret
 

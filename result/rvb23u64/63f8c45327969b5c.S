@@ -1,6 +1,6 @@
 func000000000000002a:
-	sext.w	a1, a1
 	li	a2, -1
+	sext.w	a1, a1
 	srli	a2, a2, 4
 	sub	a2, a2, a1
 	slt	a0, a2, a0

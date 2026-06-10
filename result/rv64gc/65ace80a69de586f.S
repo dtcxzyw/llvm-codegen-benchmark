@@ -6,9 +6,9 @@ func0000000000000019:
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 13
+	lui	a4, 21
 	add	a2, a2, a3
-	lui	a3, 21
-	addi	a3, a3, 384
+	addi	a3, a4, 384
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	bltz	a1, .LBB0_2
@@ -24,9 +24,9 @@ func000000000000001b:
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 13
+	lui	a4, 21
 	add	a2, a2, a3
-	lui	a3, 21
-	addi	a3, a3, 384
+	addi	a3, a4, 384
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	bltz	a1, .LBB1_2
@@ -40,11 +40,11 @@ func0000000000000018:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	mulh	a2, a1, a2
-	srli	a3, a2, 63
-	srai	a2, a2, 28
-	add	a2, a2, a3
 	lui	a3, 477
+	srli	a4, a2, 63
+	srai	a2, a2, 28
 	addi	a3, a3, -667
+	add	a2, a2, a4
 	slli	a3, a3, 11
 	mul	a2, a2, a3
 	sub	a1, a1, a2

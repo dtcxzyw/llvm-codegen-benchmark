@@ -20,12 +20,11 @@ func0000000000000002:
 	seqz	a0, a0
 	ret
 
+.LCPI4_0:
+	.quad	8446744073709551616
 func000000000000000a:
-	lui	a2, 960284
-	addi	a2, a2, -1545
-	slli.uw	a2, a2, 12
-	addi	a2, a2, -317
-	slli	a2, a2, 19
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

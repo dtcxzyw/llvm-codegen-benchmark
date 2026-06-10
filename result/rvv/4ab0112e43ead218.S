@@ -13,9 +13,9 @@ func000000000000005c:
 	ret
 
 func000000000000003f:
+	li	a0, 136
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf4	v14, v12
-	li	a0, 136
 	vadd.vx	v8, v8, a0
 	vmacc.vv	v8, v10, v14
 	ret

@@ -16,8 +16,8 @@ func0000000000000060:
 
 func00000000000000af:
 	sext.w	a2, a1
-	li	a3, 94
 	slti	a2, a2, 159
+	li	a3, 94
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

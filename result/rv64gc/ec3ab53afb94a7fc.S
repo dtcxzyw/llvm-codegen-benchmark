@@ -7,6 +7,8 @@ func0000000000000003:
 	or	a0, a0, a1
 	ret
 
+.LCPI1_0:
+	.quad	-42331734548481
 func0000000000000002:
 	andi	a2, a1, 8
 	lui	a1, 131072
@@ -14,11 +16,8 @@ func0000000000000002:
 	li	a1, 65
 	slli	a1, a1, 29
 .LBB1_2:
-	lui	a2, 969727
-	slli	a2, a2, 4
-	addi	a2, a2, -1
-	slli	a2, a2, 13
-	addi	a2, a2, -1
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

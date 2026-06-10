@@ -16,10 +16,10 @@ func0000000000000184:
 
 func0000000000000024:
 	or	a1, a1, a2
-	lui	a2, 524288
 	or	a0, a0, a1
-	add	a0, a0, a2
-	addi	a2, a2, 1
-	sltu	a0, a0, a2
+	lui	a1, 524288
+	add	a0, a0, a1
+	addi	a1, a1, 1
+	sltu	a0, a0, a1
 	ret
 

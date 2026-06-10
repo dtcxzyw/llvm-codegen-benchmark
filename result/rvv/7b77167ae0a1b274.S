@@ -11,8 +11,8 @@ func0000000000000015:
 func0000000000000000:
 	li	a0, 769
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vi	v8, v8, 12, v0.t
 	vmv.v.x	v10, a0
+	vadd.vi	v8, v8, 12, v0.t
 	lui	a0, 15
 	addi	a0, a0, 1279
 	vmadd.vx	v8, a0, v10

@@ -42,8 +42,8 @@ func000000000000006b:
 
 func00000000000000fc:
 	sext.w	a2, a2
-	sext.w	a0, a0
 	slli	a2, a2, 4
+	sext.w	a0, a0
 	add	a1, a1, a2
 	slli	a0, a0, 4
 	add	a0, a0, a1

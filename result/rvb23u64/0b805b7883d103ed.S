@@ -19,8 +19,8 @@ func0000000000000010:
 	ret
 
 func0000000000000020:
-	slli	a0, a0, 16
 	lui	a1, 16
+	slli	a0, a0, 16
 	addw	a0, a0, a1
 	ret
 
@@ -45,8 +45,8 @@ func0000000000000030:
 	ret
 
 func0000000000000032:
-	slli	a0, a0, 14
 	lui	a1, 4
+	slli	a0, a0, 14
 	addw	a0, a0, a1
 	ret
 
@@ -66,8 +66,8 @@ func0000000000000039:
 	ret
 
 func0000000000000038:
-	slli	a0, a0, 12
 	lui	a1, 1
+	slli	a0, a0, 12
 	addw	a0, a0, a1
 	ret
 

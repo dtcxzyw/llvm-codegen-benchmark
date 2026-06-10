@@ -10,9 +10,9 @@ func0000000000000007:
 func0000000000000003:
 	zext.w	a2, a2
 	bclri	a1, a1, 32
+	bseti	a3, zero, 32
 	or	a1, a1, a2
-	bseti	a2, zero, 32
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

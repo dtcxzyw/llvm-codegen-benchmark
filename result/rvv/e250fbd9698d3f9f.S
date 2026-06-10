@@ -1,7 +1,7 @@
 func0000000000000007:
+	lui	a0, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 838861
 	addi	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -21,8 +21,8 @@ func0000000000000003:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v8, v8, v10
 	vmulhu.vx	v10, v8, a0
-	lui	a0, 488
 	vsrl.vi	v10, v10, 19
+	lui	a0, 488
 	addi	a0, a0, 1152
 	vnmsub.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -14,8 +14,8 @@ func00000000000000bd:
 	ret
 
 func000000000000004c:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	flt.d	a0, fa5, fa0
 	ret
@@ -24,8 +24,8 @@ func000000000000004c:
 	ret
 
 func0000000000000042:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	flt.d	a0, fa5, fa0
 	ret

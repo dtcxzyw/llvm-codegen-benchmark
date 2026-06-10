@@ -1,6 +1,6 @@
 func000000000000007b:
-	add	a3, a3, a5
 	add	a4, a4, a2
+	add	a3, a3, a5
 	sltu	a2, a4, a2
 	add	a0, a0, a4
 	add	a1, a1, a3
@@ -13,8 +13,8 @@ func000000000000007b:
 	ret
 
 func0000000000000072:
-	add	a3, a3, a5
 	add	a4, a4, a2
+	add	a3, a3, a5
 	sltu	a2, a4, a2
 	add	a0, a0, a4
 	add	a1, a1, a3
@@ -24,8 +24,8 @@ func0000000000000072:
 	ret
 
 func0000000000000002:
-	add	a3, a3, a5
 	add	a4, a4, a2
+	add	a3, a3, a5
 	sltu	a2, a4, a2
 	add	a1, a1, a3
 	add	a4, a4, a0
@@ -35,8 +35,8 @@ func0000000000000002:
 	ret
 
 func0000000000000052:
-	add	a3, a3, a5
 	add	a4, a4, a2
+	add	a3, a3, a5
 	sltu	a2, a4, a2
 	add	a0, a0, a4
 	add	a1, a1, a3
@@ -46,8 +46,8 @@ func0000000000000052:
 	ret
 
 func0000000000000000:
-	add	a3, a3, a5
 	add	a4, a4, a2
+	add	a3, a3, a5
 	sltu	a2, a4, a2
 	add	a0, a0, a4
 	add	a1, a1, a3
@@ -60,8 +60,8 @@ func0000000000000000:
 	ret
 
 func0000000000000078:
-	add	a3, a3, a5
 	add	a4, a4, a2
+	add	a3, a3, a5
 	sltu	a2, a4, a2
 	add	a0, a0, a4
 	add	a1, a1, a3

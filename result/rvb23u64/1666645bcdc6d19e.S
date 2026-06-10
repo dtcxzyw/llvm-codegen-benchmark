@@ -1,16 +1,16 @@
 func000000000000000a:
-	sext.w	a1, a1
-	lui	a2, %hi(.promoted_doubles.func000000000000000a)
-	addi	a2, a2, %lo(.promoted_doubles.func000000000000000a)
-	fld	fa5, 0(a2)
-	fld	fa4, 8(a2)
 	li	a2, 1
+	sext.w	a1, a1
 	maxu	a1, a1, a2
 	lui	a2, 1048572
 	sub	a1, a1, a0
-	addi	a0, a2, 66
-	add	a0, a0, a1
-	fcvt.d.w	fa3, a0
+	lui	a0, %hi(.promoted_doubles.func000000000000000a)
+	addi	a0, a0, %lo(.promoted_doubles.func000000000000000a)
+	addi	a2, a2, 66
+	add	a1, a1, a2
+	fld	fa5, 0(a0)
+	fld	fa4, 8(a0)
+	fcvt.d.w	fa3, a1
 	fmadd.d	fa0, fa3, fa5, fa4
 	ret
 

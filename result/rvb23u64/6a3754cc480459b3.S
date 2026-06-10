@@ -8,12 +8,12 @@ func000000000000018f:
 	ret
 
 func0000000000000040:
+	lui	a3, 256
 	add	a0, a0, a1
-	lui	a1, 256
-	srli	a3, a0, 24
-	addi	a1, a1, -1
-	czero.eqz	a2, a2, a3
-	czero.nez	a1, a1, a3
+	srli	a1, a0, 24
+	addi	a3, a3, -1
+	czero.eqz	a2, a2, a1
+	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret

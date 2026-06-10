@@ -32,12 +32,11 @@ func0000000000000008:
 	and	a0, a0, a1
 	ret
 
+.LCPI6_0:
+	.quad	1000000000000000000
 func0000000000000004:
-	lui	a2, 227374
-	addi	a2, a2, -1329
-	slli	a2, a2, 12
-	addi	a2, a2, -1575
-	slli	a2, a2, 18
+	lui	a2, %hi(.LCPI6_0)
+	ld	a2, %lo(.LCPI6_0)(a2)
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

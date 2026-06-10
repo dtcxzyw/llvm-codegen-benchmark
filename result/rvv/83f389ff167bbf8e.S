@@ -49,8 +49,8 @@ func000000000000005b:
 func0000000000000018:
 	li	a0, 42
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v10, v10, 21
 	vsll.vx	v12, v12, a0
+	vsll.vi	v10, v10, 21
 	vor.vv	v10, v10, v12
 	vzext.vf2	v12, v8
 	vor.vv	v8, v10, v12
@@ -93,9 +93,9 @@ func0000000000000077:
 	ret
 
 func0000000000000070:
+	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 24
-	li	a0, 48
 	vsll.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vzext.vf2	v12, v8
@@ -103,9 +103,9 @@ func0000000000000070:
 	ret
 
 func0000000000000072:
+	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 24
-	li	a0, 48
 	vsll.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vzext.vf2	v12, v8
@@ -115,8 +115,8 @@ func0000000000000072:
 func000000000000005a:
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v10, v10, 24
 	vsll.vx	v12, v12, a0
+	vsll.vi	v10, v10, 24
 	vor.vv	v10, v10, v12
 	vzext.vf2	v12, v8
 	vor.vv	v8, v10, v12
@@ -125,8 +125,8 @@ func000000000000005a:
 func0000000000000058:
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v10, v10, 16
 	vsll.vx	v12, v12, a0
+	vsll.vi	v10, v10, 16
 	vor.vv	v10, v10, v12
 	vzext.vf2	v12, v8
 	vor.vv	v8, v10, v12

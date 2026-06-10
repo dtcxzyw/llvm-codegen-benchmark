@@ -16,8 +16,8 @@ func0000000000000013:
 	ret
 
 func0000000000000010:
-	zext.h	a1, a1
 	lui	a2, 6
+	zext.h	a1, a1
 	addi	a2, a2, 289
 	xor	a1, a1, a2
 	snez	a1, a1

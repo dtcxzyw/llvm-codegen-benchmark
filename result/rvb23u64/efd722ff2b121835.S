@@ -1,6 +1,6 @@
 func00000000000004c1:
-	slli	a3, a0, 1
 	srliw	a2, a2, 31
+	slli	a3, a0, 1
 	addi	a3, a3, 1
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2

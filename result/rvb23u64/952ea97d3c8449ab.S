@@ -12,9 +12,9 @@ func0000000000000021:
 
 func0000000000000181:
 	li	a3, -1
-	xor	a0, a0, a1
 	srli	a3, a3, 1
 	xor	a2, a2, a3
+	xor	a0, a0, a1
 	snez	a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

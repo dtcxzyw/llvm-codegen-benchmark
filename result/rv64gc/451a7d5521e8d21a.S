@@ -9,8 +9,8 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	srliw	a0, a0, 1
 	lui	a1, 8
+	srliw	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

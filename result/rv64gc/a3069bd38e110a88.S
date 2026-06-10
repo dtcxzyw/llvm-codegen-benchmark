@@ -1,11 +1,11 @@
 func0000000000000208:
-	sext.w	a2, a2
+	li	a3, 1
 	sub	a0, a0, a1
-	li	a1, 1
+	sext.w	a2, a2
+	slli	a3, a3, 32
 	sub	a0, a0, a2
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	sltu	a0, a1, a0
+	addi	a3, a3, -2
+	sltu	a0, a3, a0
 	ret
 
 func0000000000000204:
@@ -84,9 +84,9 @@ func000000000000000a:
 
 func0000000000000008:
 	slli	a2, a2, 32
+	srli	a2, a2, 32
 	sub	a0, a0, a1
 	lui	a1, 524288
-	srli	a2, a2, 32
 	sub	a0, a0, a2
 	addiw	a1, a1, -2
 	sltu	a0, a1, a0

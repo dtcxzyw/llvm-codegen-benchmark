@@ -1,7 +1,7 @@
 func000000000000000f:
+	lui	a1, 8192
 	srliw	a0, a0, 25
 	slli	a0, a0, 25
-	lui	a1, 8192
 	add	a0, a0, a1
 	ret
 

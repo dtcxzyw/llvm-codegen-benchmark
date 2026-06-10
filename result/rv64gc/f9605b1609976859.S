@@ -17,27 +17,27 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	andi	a3, a0, 1
-	andi	a1, a1, 1
+	andi	a3, a1, 1
+	andi	a1, a0, 1
 	lui	a0, 512
-	beqz	a1, .LBB1_3
-	bnez	a3, .LBB1_4
+	beqz	a3, .LBB1_3
+	bnez	a1, .LBB1_4
 .LBB1_2:
 	ret
 .LBB1_3:
 	addiw	a2, a2, -3
 	seqz	a0, a2
 	slli	a0, a0, 36
-	beqz	a3, .LBB1_2
+	beqz	a1, .LBB1_2
 .LBB1_4:
 	li	a0, 512
 	ret
 
 func000000000000000a:
 	mv	a3, a0
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	li	a4, 1
+	andi	a1, a1, 1
 	lui	a0, 1048575
 	blt	a4, a2, .LBB2_2
 	addi	a0, a0, 2007

@@ -13,37 +13,37 @@ func0000000000000010:
 	ret
 
 func0000000000000000:
+	li	a3, 246
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 246
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000074:
+	li	a3, 246
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 246
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000030:
+	li	a3, 246
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 246
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func00000000000000d4:
+	li	a3, 156
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 156
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000078:
+	li	a3, 246
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 246
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

@@ -23,10 +23,10 @@ func0000000000000073:
 func0000000000000072:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v16, v16, v8
+	fmv.d.x	fa5, zero
+	vmfeq.vf	v24, v8, fa5
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	fmv.d.x	fa4, zero
-	vmfeq.vf	v24, v8, fa4
 	vmflt.vf	v8, v16, fa5
 	vmor.mm	v0, v24, v8
 	ret
@@ -52,9 +52,9 @@ func000000000000007a:
 	ret
 
 func0000000000000044:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vv	v16, v16, v8
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v24, v8, fa5
 	vmfgt.vf	v8, v16, fa5
 	vmand.mm	v0, v24, v8

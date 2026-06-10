@@ -7,17 +7,17 @@ func0000000000000310:
 
 func0000000000000318:
 	andi	a1, a0, -2
-	addiw	a0, a0, -4
 	addiw	a1, a1, -6
+	addiw	a0, a0, -4
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000058:
-	sext.w	a1, a0
-	andi	a0, a0, 15
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	andi	a1, a0, 15
+	sext.w	a0, a0
+	seqz	a1, a1
+	czero.eqz	a0, a1, a0
 	ret
 

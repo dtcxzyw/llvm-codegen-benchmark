@@ -6,8 +6,8 @@ func0000000000000187:
 	ret
 
 func0000000000000086:
-	sext.w	a1, a1
 	lui	a3, 1048568
+	sext.w	a1, a1
 	add	a2, a2, a3
 	czero.eqz	a1, a2, a1
 	sh2add	a0, a1, a0

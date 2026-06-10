@@ -48,8 +48,8 @@ func0000000000000001:
 	bgtz	a2, .LBB5_2
 	li	a2, 1
 .LBB5_2:
-	sub	a0, a1, a0
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	subw	a0, a1, a0
 	ret
 
 func0000000000000005:
@@ -57,8 +57,8 @@ func0000000000000005:
 	bgtz	a2, .LBB6_2
 	li	a2, 1
 .LBB6_2:
-	sub	a0, a1, a0
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	subw	a0, a1, a0
 	ret
 
 func0000000000000010:
@@ -67,7 +67,7 @@ func0000000000000010:
 	blt	a3, a2, .LBB7_2
 	li	a2, 211
 .LBB7_2:
-	sub	a0, a1, a0
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	subw	a0, a1, a0
 	ret
 

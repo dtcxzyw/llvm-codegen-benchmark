@@ -1,9 +1,9 @@
 func000000000000000a:
 	li	a2, -57
 	slli	a2, a2, 54
+	lui	a3, 548541
 	add	a1, a1, a2
-	lui	a2, 548541
-	addi	a2, a2, -1401
+	addi	a2, a3, -1401
 	srli	a1, a1, 32
 	zext.w	a2, a2
 	mul	a1, a1, a2
@@ -13,11 +13,11 @@ func000000000000000a:
 func0000000000000000:
 	li	a2, -57
 	slli	a2, a2, 54
+	lui	a3, 967569
 	add	a1, a1, a2
-	lui	a2, 967569
-	slli	a2, a2, 3
+	slli	a3, a3, 3
 	srli	a1, a1, 32
-	addi	a2, a2, 1615
+	addi	a2, a3, 1615
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

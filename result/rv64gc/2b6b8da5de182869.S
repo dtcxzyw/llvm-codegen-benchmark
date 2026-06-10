@@ -6,8 +6,8 @@ func0000000000000004:
 	ret
 
 func00000000000000a8:
-	slli	a0, a0, 1
 	li	a1, -9
+	slli	a0, a0, 1
 	srli	a1, a1, 3
 	sub	a0, a0, a1
 	srli	a0, a0, 61
@@ -15,8 +15,8 @@ func00000000000000a8:
 	ret
 
 func0000000000000028:
-	slli	a0, a0, 2
 	li	a1, -1
+	slli	a0, a0, 2
 	srli	a2, a1, 1
 	slli	a1, a1, 63
 	add	a0, a0, a2
@@ -36,14 +36,14 @@ func0000000000000008:
 	ret
 
 func0000000000000108:
-	slli	a0, a0, 3
 	li	a1, -21
+	li	a2, -1
+	slli	a0, a0, 3
 	srli	a1, a1, 1
+	slli	a2, a2, 63
 	sub	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	addi	a1, a1, 3
-	sltu	a0, a0, a1
+	addi	a2, a2, 3
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000001:

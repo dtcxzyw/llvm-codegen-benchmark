@@ -1,6 +1,6 @@
 func0000000000000003:
-	andi	a0, a0, 1
 	andi	a2, a2, 128
+	andi	a0, a0, 1
 	srli	a1, a1, 63
 	slli	a1, a1, 63
 	addi	a0, a0, -1
@@ -10,8 +10,8 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	andi	a3, a0, 1
 	slli	a2, a2, 32
+	andi	a3, a0, 1
 	srli	a2, a2, 32
 	andi	a0, a1, 2032
 	or	a0, a0, a2

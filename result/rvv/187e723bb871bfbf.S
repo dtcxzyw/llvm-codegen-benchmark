@@ -1,7 +1,7 @@
 func000000000000000a:
+	lui	a0, 2048
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 4
-	lui	a0, 2048
 	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 8
 	vor.vv	v10, v10, v12
@@ -9,9 +9,9 @@ func000000000000000a:
 	ret
 
 func000000000000000f:
+	li	a0, 192
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 10
-	li	a0, 192
 	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 3
 	vor.vv	v10, v12, v10
@@ -28,10 +28,10 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v12, v12, 8
 	lui	a0, 16
 	addi	a0, a0, -256
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v12, v12, 8
 	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 16
 	vor.vv	v10, v12, v10

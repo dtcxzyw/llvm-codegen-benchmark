@@ -1,6 +1,7 @@
 func0000000000000019:
-	slli	a2, a0, 8
+	mv	a2, a0
 	mul	a0, a0, a1
+	slli	a2, a2, 8
 	bltu	a0, a2, .LBB0_2
 	mv	a0, a2
 .LBB0_2:

@@ -19,12 +19,12 @@ func000000000000001f:
 
 func0000000000000080:
 	slli	a2, a2, 48
+	srli	a2, a2, 48
+	sltiu	a2, a2, 5
 	slli	a3, a1, 3
 	slli	a1, a1, 7
-	srli	a2, a2, 48
-	add	a1, a1, a3
-	sltiu	a2, a2, 5
 	neg	a2, a2
+	add	a1, a1, a3
 	andi	a2, a2, -136
 	add	a0, a0, a1
 	add	a0, a0, a2

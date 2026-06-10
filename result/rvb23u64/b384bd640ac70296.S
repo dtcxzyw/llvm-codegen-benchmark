@@ -11,9 +11,9 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
+	li	a3, 6
 	xor	a0, a0, a2
-	li	a2, 6
-	andn	a1, a2, a1
+	andn	a1, a3, a1
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

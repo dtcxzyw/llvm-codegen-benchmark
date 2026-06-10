@@ -1,8 +1,8 @@
 func0000000000000001:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v0, v10, 0
 	lui	a0, 5122
 	addi	a0, a0, -505
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmseq.vi	v0, v10, 0
 	slli	a0, a0, 17
 	addi	a0, a0, -1213
 	vsetvli	zero, zero, e64, m2, ta, ma

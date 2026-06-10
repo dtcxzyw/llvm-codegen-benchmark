@@ -1,7 +1,7 @@
 func000000000000000e:
-	andi	a1, a1, 1
 	li	a3, -3
 	slli	a3, a3, 32
+	andi	a1, a1, 1
 	add	a2, a2, a3
 	srai	a2, a2, 32
 	addi	a1, a1, -1
@@ -11,9 +11,9 @@ func000000000000000e:
 	ret
 
 func0000000000000006:
-	andi	a1, a1, 1
 	li	a3, 1
 	slli	a3, a3, 32
+	andi	a1, a1, 1
 	add	a2, a2, a3
 	srai	a2, a2, 32
 	addi	a1, a1, -1

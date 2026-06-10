@@ -33,18 +33,18 @@ func0000000000000174:
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	andi	a1, a1, 6
 	snez	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000121:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0

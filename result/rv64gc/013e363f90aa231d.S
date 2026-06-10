@@ -30,8 +30,8 @@ func0000000000000009:
 	ret
 
 func0000000000000008:
-	sltu	a0, a0, a2
 	not	a1, a1
+	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

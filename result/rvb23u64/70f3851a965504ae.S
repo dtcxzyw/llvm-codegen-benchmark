@@ -10,8 +10,8 @@ func000000000000018c:
 
 func0000000000000181:
 	zext.b	a0, a0
-	bexti	a1, a1, 15
 	addi	a0, a0, -1
+	bexti	a1, a1, 15
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret
@@ -26,8 +26,8 @@ func0000000000000021:
 
 func000000000000002c:
 	zext.b	a0, a0
-	srliw	a1, a1, 31
 	addi	a0, a0, -1
+	srliw	a1, a1, 31
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

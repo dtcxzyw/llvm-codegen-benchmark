@@ -1,6 +1,6 @@
 func000000000000002a:
-	slli	a0, a0, 48
 	slli	a1, a1, 48
+	slli	a0, a0, 48
 	srai	a3, a0, 48
 	srai	a1, a1, 48
 	slli	a0, a2, 1

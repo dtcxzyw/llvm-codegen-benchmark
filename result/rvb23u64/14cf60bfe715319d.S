@@ -8,9 +8,9 @@ func0000000000000098:
 
 func0000000000000602:
 	lui	a3, 48
-	seqz	a0, a0
 	and	a2, a2, a3
 	binvi	a2, a2, 17
+	seqz	a0, a0
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -34,8 +34,8 @@ func0000000000000082:
 
 func0000000000000604:
 	zext.b	a2, a2
-	seqz	a1, a1
 	addi	a2, a2, -14
+	seqz	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

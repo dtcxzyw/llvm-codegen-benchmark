@@ -6,8 +6,8 @@ func0000000000000008:
 	ret
 
 func0000000000000061:
-	sext.w	a0, a0
 	sh2add	a1, a1, a1
+	sext.w	a0, a0
 	addiw	a1, a1, -6
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -22,10 +22,10 @@ func0000000000000004:
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	sh1add	a2, a1, a1
 	sh1add	a1, a2, a1
 	slli	a1, a1, 1
+	sext.w	a0, a0
 	addiw	a1, a1, 2
 	xor	a0, a0, a1
 	seqz	a0, a0

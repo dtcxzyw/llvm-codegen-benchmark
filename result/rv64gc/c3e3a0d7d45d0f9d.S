@@ -1,6 +1,6 @@
 func0000000000000034:
-	srliw	a0, a0, 3
 	lui	a1, 36864
+	srliw	a0, a0, 3
 	addi	a1, a1, -1
 	mul	a0, a0, a1
 	srli	a0, a0, 51
@@ -9,9 +9,9 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	slli	a0, a0, 32
 	lui	a1, 322639
 	addi	a1, a1, -945
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 34
@@ -20,9 +20,9 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	slli	a0, a0, 32
 	lui	a1, 838861
 	addi	a1, a1, -819
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 36

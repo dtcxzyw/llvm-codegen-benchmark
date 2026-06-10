@@ -15,12 +15,12 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	sext.w	a2, a0
-	sext.w	a0, a1
-	seqz	a1, a0
-	add	a0, a0, a1
-	bltu	a0, a2, .LBB1_2
-	mv	a0, a2
+	sext.w	a2, a1
+	seqz	a3, a2
+	sext.w	a1, a0
+	add	a0, a2, a3
+	bltu	a0, a1, .LBB1_2
+	mv	a0, a1
 .LBB1_2:
 	ret
 

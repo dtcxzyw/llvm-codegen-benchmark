@@ -7,10 +7,10 @@ func00000000000000ec:
 	ret
 
 func000000000000030c:
-	sext.w	a0, a0
 	lui	a2, 32
 	addi	a2, a2, -1
 	and	a1, a1, a2
+	sext.w	a0, a0
 	xor	a2, a2, a1
 	snez	a2, a2
 	sltu	a0, a0, a1
@@ -18,10 +18,10 @@ func000000000000030c:
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
 	lui	a2, 32
 	addi	a2, a2, -1
 	and	a1, a1, a2
+	sext.w	a0, a0
 	xor	a2, a2, a1
 	snez	a2, a2
 	sltu	a0, a0, a1
@@ -29,8 +29,8 @@ func000000000000010c:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	slli	a1, a1, 49
+	sext.w	a0, a0
 	srli	a1, a1, 49
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -46,8 +46,8 @@ func000000000000018c:
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
 	slli	a1, a1, 44
+	sext.w	a0, a0
 	srli	a1, a1, 44
 	slt	a0, a1, a0
 	czero.eqz	a0, a0, a1

@@ -8,9 +8,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	lui	a0, 8176
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmseq.vi	v0, v10, 0
+	lui	a0, 8176
 	vand.vx	v10, v12, a0
 	lui	a0, 786930
 	addi	a0, a0, -1

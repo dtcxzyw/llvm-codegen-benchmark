@@ -3,14 +3,14 @@ func000000000000001f:
 	beq	a2, a3, .LBB0_2
 	li	a2, 8
 	slli	a1, a1, 4
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 4
 	slli	a1, a1, 4
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func000000000000001b:
@@ -34,12 +34,12 @@ func000000000000001b:
 	ret
 
 func0000000000000010:
-	seqz	a2, a2
 	li	a3, 704
-	addi	a2, a2, -1
 	mul	a1, a1, a3
+	seqz	a2, a2
+	addi	a2, a2, -1
 	andi	a2, a2, 704
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 

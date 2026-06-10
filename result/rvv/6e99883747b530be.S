@@ -1,9 +1,10 @@
 func0000000000000000:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vfcvt.f.x.v	v10, v8
 	fli.d	fa5, 4.0
-	vfmv.v.f	v8, fa5
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vfmv.v.f	v10, fa5
+	vfcvt.f.x.v	v8, v8
 	fli.d	fa5, 1.25
-	vfmacc.vf	v8, fa5, v10
+	vfmacc.vf	v10, fa5, v8
+	vmv.v.v	v8, v10
 	ret
 

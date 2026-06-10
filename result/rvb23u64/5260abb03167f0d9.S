@@ -1,9 +1,9 @@
 func0000000000006302:
-	zext.h	a0, a0
-	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 14
+	zext.h	a0, a0
 	xor	a2, a2, a3
+	zext.h	a1, a1
 	snez	a2, a2
 	czero.eqz	a1, a2, a1
 	seqz	a0, a0
@@ -11,9 +11,9 @@ func0000000000006302:
 	ret
 
 func0000000000006042:
+	zext.h	a2, a2
 	zext.h	a0, a0
 	zext.h	a1, a1
-	zext.h	a2, a2
 	snez	a2, a2
 	czero.nez	a1, a2, a1
 	seqz	a0, a0
@@ -21,8 +21,8 @@ func0000000000006042:
 	ret
 
 func0000000000002108:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	lui	a3, 16
 	addi	a4, a3, -71
@@ -35,15 +35,15 @@ func0000000000002108:
 	ret
 
 func0000000000002102:
-	zext.h	a0, a0
 	zext.h	a1, a1
-	zext.h	a2, a2
+	zext.h	a0, a0
 	lui	a3, 16
+	zext.h	a2, a2
 	addi	a4, a3, -49
-	addi	a3, a3, -7
-	addi	a0, a0, -13
 	sltu	a2, a2, a4
+	addi	a3, a3, -7
 	sltu	a1, a1, a3
+	addi	a0, a0, -13
 	and	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1

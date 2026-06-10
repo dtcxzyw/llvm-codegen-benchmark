@@ -15,8 +15,8 @@ func00000000000000ff:
 	ret
 
 func000000000000007f:
-	slli	a1, a1, 4
 	bseti	a2, zero, 36
+	slli	a1, a1, 4
 	addi	a2, a2, -16
 	add	a1, a1, a2
 	srli	a1, a1, 4
@@ -44,8 +44,8 @@ func0000000000000070:
 	ret
 
 func00000000000000bf:
-	slli	a1, a1, 4
 	bseti	a2, zero, 36
+	slli	a1, a1, 4
 	addi	a2, a2, -16
 	add	a1, a1, a2
 	srli	a1, a1, 4

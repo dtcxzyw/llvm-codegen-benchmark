@@ -14,8 +14,8 @@ func0000000000000024:
 func0000000000000304:
 	li	a2, -137
 	mul	a1, a1, a2
-	lui	a2, 142180
 	addi	a1, a1, 136
+	lui	a2, 142180
 	zext.w	a1, a1
 	addi	a2, a2, -833
 	mul	a1, a1, a2
@@ -27,8 +27,8 @@ func0000000000000304:
 func0000000000000324:
 	li	a2, -137
 	mul	a1, a1, a2
-	lui	a2, 142180
 	addi	a1, a1, 136
+	lui	a2, 142180
 	zext.w	a1, a1
 	addi	a2, a2, -833
 	mul	a1, a1, a2

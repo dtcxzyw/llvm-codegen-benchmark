@@ -7,8 +7,8 @@ func0000000000000021:
 
 func000000000000002a:
 	zext.h	a1, a1
-	srliw	a0, a0, 31
 	addi	a1, a1, -10
+	srliw	a0, a0, 31
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -37,8 +37,8 @@ func000000000000008a:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	sext.w	a0, a0
 	sltiu	a1, a1, 513
 	czero.nez	a0, a1, a0
 	ret

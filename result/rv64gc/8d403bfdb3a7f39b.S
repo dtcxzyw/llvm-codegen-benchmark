@@ -52,8 +52,8 @@ func0000000000000081:
 
 func0000000000000001:
 	sub	a2, a2, a1
-	li	a1, -1
 	slli	a2, a2, 2
+	li	a1, -1
 	add	a0, a0, a2
 	srli	a1, a1, 5
 	xor	a0, a0, a1
@@ -62,8 +62,8 @@ func0000000000000001:
 
 func0000000000000088:
 	sub	a2, a2, a1
-	li	a1, -127
 	slli	a2, a2, 3
+	li	a1, -127
 	add	a0, a0, a2
 	srli	a1, a1, 1
 	sltu	a0, a1, a0

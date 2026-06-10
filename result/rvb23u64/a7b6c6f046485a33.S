@@ -9,18 +9,18 @@ func0000000000000208:
 
 func00000000000003b8:
 	sext.w	a1, a1
+	lui	a2, 1048544
 	add	a0, a0, a1
-	lui	a1, 1048544
-	addi	a1, a1, 30
-	add	a1, a1, a0
-	minu	a0, a1, a0
+	addi	a2, a2, 30
+	add	a2, a2, a0
+	minu	a0, a2, a0
 	ret
 
 func00000000000001b8:
+	li	a2, -1
 	add.uw	a0, a1, a0
-	li	a1, -1
-	srli	a1, a1, 3
-	sub	a1, a0, a1
+	srli	a2, a2, 3
+	sub	a1, a0, a2
 	minu	a0, a1, a0
 	ret
 

@@ -1,11 +1,11 @@
 func0000000000000021:
-	sext.w	a3, a0
 	and	a1, a1, a2
 	sext.w	a1, a1
-	seqz	a2, a3
-	negw	a0, a0
-	xor	a0, a0, a1
+	negw	a2, a0
+	sext.w	a0, a0
+	xor	a1, a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 

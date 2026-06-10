@@ -32,8 +32,8 @@ func000000000000058c:
 
 func0000000000000184:
 	lui	a2, 1536
-	addiw	a0, a0, -583
 	and	a1, a1, a2
+	addiw	a0, a0, -583
 	snez	a1, a1
 	sltiu	a0, a0, -2
 	and	a0, a0, a1
@@ -48,27 +48,27 @@ func0000000000000581:
 	ret
 
 func0000000000000081:
-	addiw	a1, a1, -6
 	andi	a0, a0, -3
-	sltiu	a1, a1, -5
+	addiw	a1, a1, -6
 	addiw	a0, a0, -1
+	sltiu	a1, a1, -5
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000008c:
-	addiw	a1, a1, -1
 	andi	a0, a0, 15
-	sltiu	a1, a1, 2
+	addiw	a1, a1, -1
 	addi	a0, a0, -9
+	sltiu	a1, a1, 2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000424:
 	andi	a1, a1, 124
-	addiw	a0, a0, -31
 	addi	a1, a1, -32
+	addiw	a0, a0, -31
 	seqz	a1, a1
 	sltiu	a0, a0, 6
 	and	a0, a0, a1

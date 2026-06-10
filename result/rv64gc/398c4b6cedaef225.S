@@ -21,8 +21,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	fmul.s	fa5, fa0, fa1
 	lui	a1, 274432
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	and	a0, a0, a1

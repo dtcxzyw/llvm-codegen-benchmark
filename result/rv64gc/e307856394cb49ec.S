@@ -1,6 +1,6 @@
 func0000000000000210:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	sltu	a1, a1, a2
@@ -8,8 +8,8 @@ func0000000000000210:
 	ret
 
 func0000000000004058:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a1
 	xor	a1, a1, a2
@@ -19,8 +19,8 @@ func0000000000004058:
 	ret
 
 func0000000000001058:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a2
 	xor	a1, a1, a2
@@ -30,8 +30,8 @@ func0000000000001058:
 	ret
 
 func0000000000004042:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a2
 	xor	a1, a1, a2
@@ -41,8 +41,8 @@ func0000000000004042:
 	ret
 
 func000000000000028c:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	slt	a0, a2, a0
 	slt	a1, a1, a2
@@ -50,8 +50,8 @@ func000000000000028c:
 	ret
 
 func0000000000004108:
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltu	a2, a2, a1
 	sltu	a0, a0, a1

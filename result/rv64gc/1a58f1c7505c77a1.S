@@ -14,9 +14,9 @@ func000000000000000c:
 	srliw	a2, a2, 25
 	add	a2, a2, a1
 	andi	a2, a2, -128
+	lui	a3, 18
 	subw	a1, a1, a2
-	lui	a2, 18
-	addi	a2, a2, 992
+	addi	a2, a3, 992
 	slli	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1

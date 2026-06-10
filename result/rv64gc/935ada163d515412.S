@@ -15,10 +15,10 @@ func0000000000000034:
 	ret
 
 func000000000000004a:
+	li	a1, 1
 	addi	a0, a0, 1
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	li	a1, 1
 	blt	a1, a0, .LBB2_2
 	li	a0, 39
 	ret

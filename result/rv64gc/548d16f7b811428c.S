@@ -1,32 +1,32 @@
 func000000000000000a:
 	mul	a3, a0, a3
 	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
 func0000000000000012:
 	mul	a3, a0, a3
 	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
 func0000000000000002:
 	mul	a3, a0, a3
 	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
 func000000000000001b:
 	mul	a3, a0, a3
 	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
@@ -69,18 +69,18 @@ func0000000000000018:
 func000000000000000e:
 	mul	a3, a0, a3
 	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
 func000000000000001a:
 	mul	a3, a0, a3
-	mulhu	a4, a0, a2
 	mul	a1, a1, a2
+	mulhu	a4, a0, a2
 	mul	a0, a0, a2
-	add	a3, a3, a4
 	add	a1, a1, a3
+	add	a1, a1, a4
 	slli	a1, a1, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1

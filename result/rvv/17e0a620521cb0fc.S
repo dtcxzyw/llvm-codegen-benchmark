@@ -9,9 +9,9 @@ func0000000000000318:
 	ret
 
 func0000000000000118:
+	li	a0, 1564
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, -5
-	li	a0, 1564
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12
 	vmand.mm	v0, v0, v8

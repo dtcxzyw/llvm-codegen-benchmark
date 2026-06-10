@@ -7,8 +7,8 @@ func000000000000003f:
 	ret
 
 func0000000000000004:
-	slliw	a2, a2, 26
 	lui	a3, 1015808
+	slliw	a2, a2, 26
 	addw	a1, a1, a3
 	or	a1, a1, a2
 	or	a0, a0, a1
@@ -67,8 +67,8 @@ func0000000000000032:
 	ret
 
 func0000000000000030:
-	slliw	a2, a2, 21
 	lui	a3, 1048544
+	slliw	a2, a2, 21
 	addw	a1, a1, a3
 	or	a1, a1, a2
 	or	a0, a0, a1

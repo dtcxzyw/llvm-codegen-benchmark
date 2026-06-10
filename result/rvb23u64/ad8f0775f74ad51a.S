@@ -32,10 +32,10 @@ func000000000000001f:
 
 func0000000000000014:
 	sext.w	a1, a1
-	negw	a2, a1
-	max	a1, a1, a2
 	lui	a2, 1048552
+	negw	a3, a1
 	addi	a2, a2, -8
+	max	a1, a1, a3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

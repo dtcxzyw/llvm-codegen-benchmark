@@ -1,10 +1,10 @@
 func0000000000000000:
+	lui	a3, 40975
+	addi	a3, a3, 63
 	or	a1, a1, a2
-	lui	a2, 40975
+	slli	a3, a3, 14
 	and	a0, a0, a1
-	addi	a1, a2, 63
-	slli	a1, a1, 14
-	addi	a1, a1, -1213
+	addi	a1, a3, -1213
 	and	a0, a0, a1
 	ret
 

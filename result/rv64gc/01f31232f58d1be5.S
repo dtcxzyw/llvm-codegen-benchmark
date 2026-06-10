@@ -1,19 +1,19 @@
 func000000000000010c:
 	slli	a2, a2, 48
-	xor	a0, a0, a1
 	srli	a2, a2, 48
-	sltiu	a1, a2, 51
-	xori	a1, a1, 1
+	sltiu	a2, a2, 51
+	xor	a0, a0, a1
+	xori	a1, a2, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
 	slli	a2, a2, 48
-	xor	a0, a0, a1
 	srli	a2, a2, 48
-	addi	a1, a2, -63
-	seqz	a1, a1
+	addi	a2, a2, -63
+	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

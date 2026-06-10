@@ -1,10 +1,10 @@
 func0000000000000206:
 	add	a1, a1, a2
-	li	a2, 3
 	sh3add	a0, a1, a0
+	li	a1, 3
 	sext.w	a0, a0
-	slli	a2, a2, 10
-	slt	a0, a0, a2
+	slli	a1, a1, 10
+	slt	a0, a0, a1
 	ret
 
 func0000000000000004:
@@ -24,10 +24,10 @@ func000000000000000a:
 
 func000000000000008a:
 	add	a1, a1, a2
-	lui	a2, 1048574
 	sh1add	a0, a1, a0
+	lui	a1, 1048574
 	sext.w	a0, a0
-	addi	a1, a2, -1808
+	addi	a1, a1, -1808
 	slt	a0, a1, a0
 	ret
 

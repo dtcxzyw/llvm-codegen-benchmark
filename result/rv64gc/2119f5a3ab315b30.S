@@ -12,9 +12,9 @@ func0000000000000108:
 func0000000000000124:
 	lui	a3, 16
 	addi	a3, a3, -1
-	and	a1, a1, a3
 	and	a2, a2, a3
 	and	a0, a0, a3
+	and	a1, a1, a3
 	sltu	a2, a0, a2
 	xori	a2, a2, 1
 	sltu	a0, a0, a1
@@ -24,8 +24,8 @@ func0000000000000124:
 func00000000000000eb:
 	slli	a1, a1, 48
 	slli	a0, a0, 48
-	slli	a2, a2, 48
 	srai	a1, a1, 48
+	slli	a2, a2, 48
 	srai	a0, a0, 48
 	srai	a2, a2, 48
 	slt	a2, a2, a0
@@ -46,9 +46,9 @@ func00000000000000ea:
 	slli	a1, a1, 48
 	slli	a0, a0, 48
 	slli	a2, a2, 48
-	srai	a1, a1, 48
 	srai	a0, a0, 48
 	srai	a2, a2, 48
+	srai	a1, a1, 48
 	slt	a2, a2, a0
 	xori	a2, a2, 1
 	slt	a0, a1, a0
@@ -58,9 +58,9 @@ func00000000000000ea:
 func00000000000000a8:
 	lui	a3, 16
 	addi	a3, a3, -1
-	and	a1, a1, a3
 	and	a0, a0, a3
 	and	a2, a2, a3
+	and	a1, a1, a3
 	sltu	a2, a2, a0
 	xori	a2, a2, 1
 	sltu	a0, a1, a0
@@ -70,9 +70,9 @@ func00000000000000a8:
 func00000000000000a4:
 	lui	a3, 16
 	addi	a3, a3, -1
-	and	a1, a1, a3
 	and	a0, a0, a3
 	and	a2, a2, a3
+	and	a1, a1, a3
 	sltu	a2, a2, a0
 	xori	a2, a2, 1
 	sltu	a0, a0, a1
@@ -83,12 +83,12 @@ func0000000000000089:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a1, a1, a3
-	and	a2, a2, a3
 	and	a0, a0, a3
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	and	a2, a2, a3
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func00000000000000a9:

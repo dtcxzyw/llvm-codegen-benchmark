@@ -1,32 +1,35 @@
 func000000000000000e:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 23
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv.v.i	v10, 1
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v11, v8, 23
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v10, 0
+	vnsrl.wi	v8, v11, 0
 	vand.vi	v8, v8, 7
-	vmv.v.i	v9, 1
-	vsll.vv	v8, v9, v8
+	vsll.vv	v8, v10, v8
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv.v.i	v10, 8
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v11, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v10, 0
+	vnsrl.wi	v8, v11, 0
 	vsrl.vi	v8, v8, 3
 	vand.vi	v8, v8, 7
-	vmv.v.i	v9, 8
-	vsll.vv	v8, v9, v8
+	vsll.vv	v8, v10, v8
 	ret
 
 func000000000000000f:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv.v.i	v10, 8
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v11, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v10, 0
+	vnsrl.wi	v8, v11, 0
 	vsrl.vi	v8, v8, 4
 	vand.vi	v8, v8, 3
-	vmv.v.i	v9, 8
-	vsll.vv	v8, v9, v8
+	vsll.vv	v8, v10, v8
 	ret
 

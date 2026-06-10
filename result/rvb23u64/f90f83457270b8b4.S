@@ -20,8 +20,8 @@ func000000000000001b:
 	ret
 
 func0000000000000013:
-	bclri	a0, a0, 31
 	lui	a1, 1048064
+	bclri	a0, a0, 31
 	addw	a0, a0, a1
 	ret
 

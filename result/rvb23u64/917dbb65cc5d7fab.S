@@ -6,8 +6,8 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	sext.h	a0, a0
 	lui	a1, 618
+	sext.h	a0, a0
 	addi	a1, a1, -317
 	mulw	a0, a0, a1
 	ret

@@ -41,8 +41,8 @@ func0000000000000009:
 	ret
 
 func0000000000000018:
-	andi	a2, a2, 1
 	lui	a3, 29
+	andi	a2, a2, 1
 	addi	a3, a3, 1216
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2

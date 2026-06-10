@@ -60,8 +60,8 @@ func0000000000000006:
 
 func0000000000000078:
 	sext.w	a1, a1
-	li	a2, 7
 	sltiu	a1, a1, 3
+	li	a2, 7
 	neg	a1, a1
 	slli	a2, a2, 9
 	and	a1, a1, a2
@@ -69,8 +69,8 @@ func0000000000000078:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	lui	a2, 3503
+	sext.w	a1, a1
 	addi	a2, a2, 619
 	sltu	a1, a1, a2
 	addi	a1, a1, -1

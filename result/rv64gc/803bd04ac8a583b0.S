@@ -1,11 +1,11 @@
 func0000000000000065:
 	slli	a2, a2, 49
-	srli	a1, a2, 49
+	lui	a1, 1048572
+	srli	a3, a2, 49
 	seqz	a2, a2
-	add	a1, a1, a2
-	lui	a2, 1048572
-	addi	a2, a2, 66
-	sub	a0, a0, a2
-	subw	a0, a1, a0
+	addi	a1, a1, 66
+	add	a2, a2, a3
+	sub	a0, a0, a1
+	subw	a0, a2, a0
 	ret
 

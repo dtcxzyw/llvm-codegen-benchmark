@@ -33,10 +33,10 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	sext.w	a0, a0
-	negw	a1, a0
-	max	a0, a0, a1
 	lui	a1, 1048575
+	sext.w	a0, a0
+	negw	a2, a0
+	max	a0, a0, a2
 	addi	a1, a1, 496
 	mulw	a0, a0, a1
 	ret

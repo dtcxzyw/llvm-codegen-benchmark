@@ -27,22 +27,22 @@ func000000000000008c:
 
 func0000000000000101:
 	li	a2, -1
-	andi	a0, a0, 4
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	addi	a2, a2, 1
+	andi	a0, a0, 4
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000184:
-	slli	a1, a1, 61
 	li	a2, -1
-	srli	a1, a1, 63
+	slli	a1, a1, 61
 	srli	a3, a2, 11
 	add	a0, a0, a3
 	srli	a2, a2, 10
+	srli	a1, a1, 63
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

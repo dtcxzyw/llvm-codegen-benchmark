@@ -23,13 +23,13 @@ func0000000000000074:
 	ret
 
 func0000000000000064:
-	zext.b	a2, a2
+	li	a3, -1
 	or	a0, a0, a1
-	li	a1, -1
-	or	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a1, a1, 7
-	sltu	a0, a0, a1
+	zext.b	a1, a2
+	slli	a3, a3, 63
+	or	a0, a0, a1
+	addi	a3, a3, 7
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000078:

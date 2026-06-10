@@ -1,6 +1,6 @@
 func0000000000000043:
-	snez	a0, a0
 	lui	a2, 1048575
+	snez	a0, a0
 	srli	a2, a2, 11
 	and	a1, a1, a2
 	slli	a0, a0, 53

@@ -41,17 +41,17 @@ func0000000000000047:
 	ret
 
 func0000000000000057:
-	sext.w	a2, a1
-	li	a1, 3
-	bge	a2, a1, .LBB5_2
-	li	a1, 1
+	li	a2, 3
+	sext.w	a1, a1
+	bge	a1, a2, .LBB5_2
+	li	a2, 1
 .LBB5_2:
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000044:
-	sext.w	a1, a1
 	li	a2, 2
+	sext.w	a1, a1
 	bltu	a2, a1, .LBB6_2
 	li	a1, 264
 	add	a0, a0, a1
@@ -63,8 +63,8 @@ func0000000000000044:
 	ret
 
 func0000000000000027:
-	sext.w	a1, a1
 	li	a2, 254
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB7_2
 	li	a1, 5
 	add	a0, a0, a1

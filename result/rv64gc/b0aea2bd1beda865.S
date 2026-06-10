@@ -6,15 +6,14 @@ func0000000000000078:
 	srli	a0, a0, 3
 	ret
 
+.LCPI1_0:
+	.quad	116444736000000000
 func0000000000000002:
 	lui	a1, 2441
 	addi	a1, a1, 1664
 	mul	a0, a0, a1
-	lui	a1, 211812
-	addi	a1, a1, -1061
-	slli	a1, a1, 12
-	addi	a1, a1, -1411
-	slli	a1, a1, 15
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
 	add	a0, a0, a1
 	srli	a0, a0, 32
 	ret

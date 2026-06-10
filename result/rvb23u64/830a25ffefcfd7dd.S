@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -255
 	snez	a1, a1
 	seqz	a0, a0
@@ -39,17 +39,17 @@ func0000000000000026:
 	ret
 
 func000000000000002a:
-	zext.b	a1, a1
 	sext.w	a0, a0
 	slti	a0, a0, 3
+	zext.b	a1, a1
 	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:
 	zext.b	a1, a1
-	addiw	a0, a0, -127
 	sltiu	a1, a1, 21
+	addiw	a0, a0, -127
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1

@@ -1,11 +1,11 @@
 func0000000000000005:
 	lui	a0, 1048568
-	lui	a1, 1048572
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vandn.vx	v10, v10, a0
-	addi	a0, a1, -64
-	vadd.vx	v10, v10, a0
-	addi	a0, a1, -63
+	lui	a0, 1048572
+	addi	a1, a0, -64
+	vadd.vx	v10, v10, a1
+	addi	a0, a0, -63
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v8, v10
 	ret

@@ -16,16 +16,16 @@ func0000000000000022:
 	bltu	a4, a3, .LBB1_2
 	lui	a2, 524288
 .LBB1_2:
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000023:
 	slli	a2, a2, 48
-	lui	a3, 3904
 	srli	a2, a2, 48
 	sltiu	a2, a2, 5
 	addi	a2, a2, -1
+	lui	a3, 3904
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -39,7 +39,7 @@ func0000000000000004:
 	beq	a3, a4, .LBB3_2
 	lui	a2, 2
 .LBB3_2:
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 

@@ -5,8 +5,8 @@ func0000000000000031:
 	ret
 
 func0000000000000005:
-	sext.w	a0, a0
 	lui	a1, 524512
+	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	addiw	a0, a0, 4

@@ -1,6 +1,6 @@
 func0000000000000004:
-	fmadd.d	fa5, fa0, fa1, fa2
 	li	a0, 511
+	fmadd.d	fa5, fa0, fa1, fa2
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -9,8 +9,8 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	fmadd.d	fa5, fa0, fa1, fa2
 	li	a0, -513
+	fmadd.d	fa5, fa0, fa1, fa2
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -20,8 +20,8 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	fmadd.d	fa5, fa0, fa1, fa2
 	li	a0, 511
+	fmadd.d	fa5, fa0, fa1, fa2
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -31,8 +31,8 @@ func0000000000000007:
 	ret
 
 func0000000000000002:
-	fmadd.d	fa5, fa0, fa1, fa2
 	li	a0, 511
+	fmadd.d	fa5, fa0, fa1, fa2
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -48,8 +48,8 @@ func0000000000000012:
 	ret
 
 func0000000000000017:
-	fmadd.d	fa5, fa0, fa1, fa2
 	li	a0, 511
+	fmadd.d	fa5, fa0, fa1, fa2
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4

@@ -34,11 +34,11 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
+	li	a3, -127
 	add	a0, a0, a1
-	li	a1, -127
 	sh3add	a0, a2, a0
-	srli	a1, a1, 1
-	andn	a0, a0, a1
+	srli	a3, a3, 1
+	andn	a0, a0, a3
 	ret
 
 func000000000000003f:

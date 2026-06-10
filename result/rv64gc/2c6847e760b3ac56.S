@@ -1,6 +1,6 @@
 func0000000000000006:
-	sraiw	a1, a1, 13
 	lui	a2, 335544
+	sraiw	a1, a1, 13
 	addi	a2, a2, 1311
 	mul	a2, a1, a2
 	srli	a3, a2, 63

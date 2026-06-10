@@ -69,21 +69,21 @@ func00000000000001f8:
 	ret
 
 func0000000000000108:
-	andi	a2, a2, 1
+	lui	a3, 2384
 	add	a0, a0, a1
-	lui	a1, 2384
+	andi	a2, a2, 1
+	addi	a1, a3, 761
 	add	a0, a0, a2
-	addi	a1, a1, 761
 	slli	a1, a1, 9
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000101:
-	andi	a2, a2, 1
+	lui	a3, 2384
 	add	a0, a0, a1
-	lui	a1, 2384
+	andi	a2, a2, 1
+	addi	a1, a3, 761
 	add	a0, a0, a2
-	addi	a1, a1, 761
 	slli	a1, a1, 9
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -26,8 +26,8 @@ func0000000000000010:
 	ret
 
 func0000000000000042:
-	addiw	a0, a0, -1
 	li	a1, 63
+	addiw	a0, a0, -1
 	bne	a0, a1, .LBB3_2
 	li	a0, 112
 .LBB3_2:

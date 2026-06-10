@@ -5,10 +5,10 @@ func0000000000000055:
 	ret
 
 func00000000000000d5:
+	lui	a3, 24
+	addi	a3, a3, 8
+	mul	a0, a0, a3
 	sh3add	a1, a2, a1
-	lui	a2, 24
-	addi	a2, a2, 8
-	mul	a0, a0, a2
 	subw	a0, a0, a1
 	ret
 

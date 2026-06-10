@@ -1,8 +1,8 @@
 func0000000000000002:
 	slliw	a0, a0, 4
+	lui	a2, 986895
 	xor	a0, a0, a1
-	lui	a1, 986895
-	addi	a1, a1, 240
+	addi	a1, a2, 240
 	and	a0, a0, a1
 	ret
 

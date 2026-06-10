@@ -26,9 +26,9 @@ func0000000000000008:
 	ret
 
 func0000000000000081:
+	lui	a2, 14648
 	add	a0, a0, a1
-	lui	a1, 14648
-	addi	a1, a1, 1792
+	addi	a1, a2, 1792
 	mul	a0, a0, a1
 	binvi	a0, a0, 63
 	seqz	a0, a0
@@ -57,8 +57,8 @@ func0000000000000181:
 
 func000000000000000a:
 	add	a0, a0, a1
-	lui	a1, 524288
 	sh3add	a0, a0, a0
+	lui	a1, 524288
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

@@ -1,8 +1,8 @@
 func0000000000000001:
-	srliw	a1, a0, 8
-	lui	a2, 4581
-	addi	a2, a2, 1223
-	mul	a1, a1, a2
+	lui	a1, 4581
+	srliw	a2, a0, 8
+	addi	a1, a1, 1223
+	mul	a1, a2, a1
 	lui	a2, 14648
 	srli	a1, a1, 42
 	addi	a2, a2, 1792

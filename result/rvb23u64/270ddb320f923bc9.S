@@ -1,7 +1,7 @@
 func0000000000000005:
 	addiw	a2, a1, -105
-	addiw	a1, a1, -32
 	seqz	a2, a2
+	addiw	a1, a1, -32
 	and	a0, a0, a2
 	addi	a1, a1, -304
 	czero.nez	a0, a1, a0

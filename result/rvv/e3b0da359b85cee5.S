@@ -3,11 +3,10 @@ func0000000000000001:
 	vnsrl.wi	v9, v12, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v10, v10, 1
+	vmsne.vi	v12, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vv	v8, v8, v9
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsne.vi	v9, v10, 0
-	vmand.mm	v0, v8, v9
+	vmand.mm	v0, v8, v12
 	ret
 
 func0000000000000009:
@@ -15,10 +14,9 @@ func0000000000000009:
 	vnsrl.wi	v9, v12, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v10, v10, 1
+	vmsne.vi	v12, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vv	v8, v9, v8
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsne.vi	v9, v10, 0
-	vmand.mm	v0, v8, v9
+	vmand.mm	v0, v8, v12
 	ret
 

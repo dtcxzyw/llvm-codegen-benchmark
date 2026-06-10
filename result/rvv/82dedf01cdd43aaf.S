@@ -1,13 +1,13 @@
 func00000000000001ba:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v12, v8
 	lui	a0, 8
-	vmv.v.x	v8, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
 	addi	a1, a0, -129
-	vmacc.vx	v8, a1, v10
+	vmacc.vx	v12, a1, v10
 	addi	a0, a0, 128
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vwmaccu.vx	v8, a0, v12
+	vwmaccu.vx	v12, a0, v8
+	vmv2r.v	v8, v12
 	ret
 
 func00000000000001ff:

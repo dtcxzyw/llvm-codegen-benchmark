@@ -1,6 +1,6 @@
 func00000000000000a4:
-	addiw	a2, a2, -8
 	lui	a3, 8
+	addiw	a2, a2, -8
 	addi	a3, a3, 8
 	bltu	a2, a3, .LBB0_2
 	lui	a0, 1047553
@@ -9,8 +9,8 @@ func00000000000000a4:
 	ret
 
 func0000000000000084:
-	addiw	a2, a2, -8
 	lui	a3, 4
+	addiw	a2, a2, -8
 	addi	a3, a3, 4
 	bltu	a2, a3, .LBB1_2
 	lui	a0, 1047553

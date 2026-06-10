@@ -17,20 +17,20 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	sext.w	a1, a1
 	andi	a3, a2, 1
-	lui	a2, 1048573
+	sext.w	a2, a1
+	lui	a1, 1048573
 	bnez	a3, .LBB1_2
-	addi	a3, a2, -629
+	addi	a3, a1, -629
 	li	a4, 2
-	beq	a1, a4, .LBB1_3
+	beq	a2, a4, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addi	a3, a2, -627
+	addi	a3, a1, -627
 	li	a4, 2
-	bne	a1, a4, .LBB1_4
+	bne	a2, a4, .LBB1_4
 .LBB1_3:
-	addi	a3, a2, -625
+	addi	a3, a1, -625
 .LBB1_4:
 	slli	a3, a3, 5
 	add	a0, a0, a3

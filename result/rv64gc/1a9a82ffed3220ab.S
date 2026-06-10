@@ -7,8 +7,8 @@ func0000000000000003:
 	ret
 
 func0000000000000049:
-	addiw	a1, a1, -3
 	li	a2, 2
+	addiw	a1, a1, -3
 	bgeu	a1, a2, .LBB1_2
 	li	a0, 1
 .LBB1_2:
@@ -16,8 +16,8 @@ func0000000000000049:
 	ret
 
 func0000000000000011:
-	addiw	a1, a1, -7
 	li	a2, -4
+	addiw	a1, a1, -7
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 8
 .LBB2_2:
@@ -25,8 +25,8 @@ func0000000000000011:
 	ret
 
 func0000000000000009:
-	addiw	a1, a1, 1
 	li	a2, 16
+	addiw	a1, a1, 1
 	bgeu	a1, a2, .LBB3_2
 	li	a0, 4
 .LBB3_2:
@@ -34,8 +34,8 @@ func0000000000000009:
 	ret
 
 func0000000000000002:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	bne	a1, a2, .LBB4_2
 	li	a0, 2
 .LBB4_2:

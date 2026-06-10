@@ -27,9 +27,9 @@ func00000000000004c6:
 	ret
 
 func0000000000000484:
-	srliw	a2, a1, 23
-	li	a3, 383
-	bltu	a2, a3, .LBB3_2
+	li	a2, 383
+	srliw	a3, a1, 23
+	bltu	a3, a2, .LBB3_2
 	lui	a0, 264192
 	add	a0, a0, a1
 .LBB3_2:
@@ -38,9 +38,9 @@ func0000000000000484:
 	ret
 
 func0000000000000084:
-	srliw	a2, a1, 23
-	li	a3, 383
-	bltu	a2, a3, .LBB4_2
+	li	a2, 383
+	srliw	a3, a1, 23
+	bltu	a3, a2, .LBB4_2
 	lui	a0, 264192
 	add	a0, a0, a1
 .LBB4_2:

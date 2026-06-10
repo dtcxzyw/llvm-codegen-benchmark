@@ -5,8 +5,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fmul.d	fa5, fa0, fa1
 	lui	a0, 4105
+	fmul.d	fa5, fa0, fa1
 	slli	a0, a0, 38
 	fmv.d.x	fa4, a0
 	fmax.d	fa0, fa5, fa4

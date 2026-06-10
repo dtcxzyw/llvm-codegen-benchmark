@@ -1,9 +1,9 @@
 func000000000000354c:
-	sext.w	a3, a0
 	bset	a2, zero, a2
 	sext.w	a2, a2
-	addw	a0, a0, a1
-	slt	a0, a2, a0
-	czero.eqz	a0, a0, a3
+	addw	a1, a1, a0
+	sext.w	a0, a0
+	slt	a1, a2, a1
+	czero.eqz	a0, a1, a0
 	ret
 

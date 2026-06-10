@@ -43,8 +43,8 @@ func0000000000000002:
 
 func000000000000002a:
 	sh2add	a2, a2, a2
-	slli	a2, a2, 4
 	sub	a1, a1, a0
+	slli	a2, a2, 4
 	add	a1, a1, a2
 	addi	a0, a1, -80
 	ret

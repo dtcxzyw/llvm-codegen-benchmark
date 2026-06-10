@@ -17,8 +17,8 @@ func0000000000000021:
 
 func0000000000000081:
 	slli	a2, a2, 48
-	xor	a0, a0, a1
 	srli	a2, a2, 48
+	xor	a0, a0, a1
 	sltiu	a1, a2, 173
 	seqz	a0, a0
 	and	a0, a0, a1

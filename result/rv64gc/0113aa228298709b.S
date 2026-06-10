@@ -24,8 +24,8 @@ func000000000000003c:
 
 func0000000000000038:
 	zext.b	a2, a2
-	or	a0, a0, a1
 	slli	a2, a2, 8
+	or	a0, a0, a1
 	or	a0, a0, a2
 	lui	a1, 16
 	add	a0, a0, a1

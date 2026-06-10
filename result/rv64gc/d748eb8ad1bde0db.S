@@ -6,8 +6,8 @@ func000000000000016b:
 	ret
 
 func00000000000001f0:
-	sext.w	a1, a1
 	li	a2, 88
+	sext.w	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2047
@@ -69,9 +69,9 @@ func00000000000000c3:
 	ret
 
 func0000000000000043:
+	li	a2, -24
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	li	a2, -24
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -8

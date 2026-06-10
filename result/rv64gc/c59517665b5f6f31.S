@@ -1,7 +1,7 @@
 func000000000000001f:
 	or	a0, a0, a1
-	lui	a1, 4641
 	sext.w	a0, a0
+	lui	a1, 4641
 	slli	a0, a0, 24
 	slli	a1, a1, 36
 	or	a0, a0, a1

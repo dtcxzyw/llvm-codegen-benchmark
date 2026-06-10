@@ -39,9 +39,9 @@ func000000000000001e:
 	vzext.vf2	v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v8, v8, 6
-	lui	a0, 14
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
+	lui	a0, 14
 	addi	a0, a0, -1024
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vx	v8, v8, a0

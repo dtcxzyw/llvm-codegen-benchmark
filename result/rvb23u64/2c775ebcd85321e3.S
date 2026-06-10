@@ -1,8 +1,8 @@
 func0000000000000042:
-	not	a1, a1
 	andi	a0, a0, 254
-	bexti	a1, a1, 11
+	not	a1, a1
 	addi	a0, a0, -56
+	bexti	a1, a1, 11
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

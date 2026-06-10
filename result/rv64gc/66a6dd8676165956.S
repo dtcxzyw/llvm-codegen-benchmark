@@ -17,25 +17,25 @@ func0000000000000010:
 	andi	a2, a2, 1
 	bnez	a2, .LBB2_2
 	li	a2, -30
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a2, -22
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func000000000000003f:
 	andi	a2, a2, 1
 	bnez	a2, .LBB3_2
 	li	a2, 144
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB3_2:
 	li	a2, 192
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 

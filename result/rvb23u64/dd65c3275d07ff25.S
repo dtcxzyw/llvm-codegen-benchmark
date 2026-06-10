@@ -1,6 +1,6 @@
 func0000000000000007:
-	andi	a0, a0, 15
 	lui	a1, 16
+	andi	a0, a0, 15
 	addi	a1, a1, -1
 	sllw	a0, a1, a0
 	ret

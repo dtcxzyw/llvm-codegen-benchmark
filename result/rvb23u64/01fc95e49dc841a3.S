@@ -6,9 +6,9 @@ func0000000000000005:
 	ret
 
 func0000000000000014:
-	zext.w	a1, a1
 	slli	a2, a0, 32
 	slli	a0, a0, 63
+	zext.w	a1, a1
 	sub	a0, a0, a2
 	sub	a0, a0, a1
 	slli	a0, a0, 1
@@ -74,20 +74,20 @@ func0000000000000024:
 func000000000000003f:
 	sext.w	a1, a1
 	slli	a0, a0, 32
+	lui	a2, 3
 	or	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, -1802
+	addi	a1, a2, -1802
 	mul	a0, a0, a1
 	ret
 
 func000000000000003e:
+	lui	a2, 16
 	sext.w	a1, a1
+	addi	a2, a2, 1
 	slli	a0, a0, 8
+	bseti	a2, a2, 32
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 1
-	bseti	a1, a1, 32
-	bseti	a1, a1, 48
+	bseti	a1, a2, 48
 	mul	a0, a0, a1
 	ret
 

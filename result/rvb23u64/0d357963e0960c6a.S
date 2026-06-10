@@ -12,19 +12,19 @@ func000000000000012a:
 	ret
 
 func0000000000000001:
+	lui	a3, 1221
 	addw	a1, a1, a2
-	lui	a2, 1221
-	addi	a2, a2, -1216
+	addi	a2, a3, -1216
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000000a:
+	li	a3, 19
 	addw	a1, a1, a2
-	li	a2, 19
-	slli	a2, a2, 11
-	slt	a1, a2, a1
+	slli	a3, a3, 11
+	slt	a1, a3, a1
 	and	a0, a0, a1
 	ret
 

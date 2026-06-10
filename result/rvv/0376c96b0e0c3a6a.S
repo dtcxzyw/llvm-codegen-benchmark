@@ -32,8 +32,8 @@ func0000000000000007:
 func0000000000000004:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
-	lui	a0, 400520
 	vwaddu.wv	v8, v8, v11
+	lui	a0, 400520
 	addi	a0, a0, 1607
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0

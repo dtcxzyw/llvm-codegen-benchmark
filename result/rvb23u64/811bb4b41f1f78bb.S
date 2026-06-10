@@ -87,26 +87,26 @@ func000000000000001b:
 
 func0000000000000012:
 	sext.w	a2, a2
+	li	a3, -223
 	sltiu	a2, a2, 2
 	and	a1, a1, a2
-	li	a2, -223
-	slli	a2, a2, 24
-	czero.nez	a1, a2, a1
 	lui	a2, 1044480
+	slli	a3, a3, 24
 	addi	a2, a2, 2
+	czero.nez	a1, a3, a1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000032:
 	sext.w	a2, a2
+	li	a3, -223
 	snez	a2, a2
 	and	a1, a1, a2
-	li	a2, -223
-	slli	a2, a2, 24
-	czero.nez	a1, a2, a1
 	lui	a2, 1044480
+	slli	a3, a3, 24
 	addi	a2, a2, 2
+	czero.nez	a1, a3, a1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

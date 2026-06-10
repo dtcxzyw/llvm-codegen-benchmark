@@ -94,8 +94,8 @@ func000000000000008a:
 	lui	a0, 8
 	addi	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
-	lui	a0, 524288
 	vsll.vi	v8, v8, 16
+	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmerge.vxm	v8, v8, a0, v0
 	ret

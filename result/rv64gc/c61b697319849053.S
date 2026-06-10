@@ -14,9 +14,9 @@ func0000000000000031:
 	mul	a1, a1, a2
 	lui	a2, 1
 	add	a0, a0, a1
+	addi	a1, a2, -1366
+	mul	a0, a0, a1
 	lui	a1, 131051
-	addi	a2, a2, -1366
-	mul	a0, a0, a2
 	addi	a1, a1, -1376
 	addw	a0, a0, a1
 	ret
@@ -53,10 +53,10 @@ func0000000000000013:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
 	add	a1, a1, a2
-	lui	a2, 1
 	add	a0, a0, a1
+	lui	a1, 1
 	addi	a0, a0, -48
-	addi	a1, a2, -496
+	addi	a1, a1, -496
 	mulw	a0, a0, a1
 	ret
 

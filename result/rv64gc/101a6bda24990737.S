@@ -1,7 +1,7 @@
 func000000000000006f:
 	slli	a1, a1, 32
-	slli	a0, a0, 32
 	srli	a1, a1, 31
+	slli	a0, a0, 32
 	addi	a1, a1, 2
 	srli	a0, a0, 32
 	mul	a0, a1, a0
@@ -9,8 +9,8 @@ func000000000000006f:
 
 func000000000000006c:
 	slli	a1, a1, 32
-	slli	a0, a0, 32
 	srli	a1, a1, 31
+	slli	a0, a0, 32
 	addi	a1, a1, 2
 	srli	a0, a0, 32
 	mul	a0, a1, a0
@@ -42,8 +42,8 @@ func00000000000000f7:
 
 func00000000000000ef:
 	sext.w	a1, a1
-	slli	a0, a0, 32
 	slli	a1, a1, 3
+	slli	a0, a0, 32
 	addi	a1, a1, 8
 	srli	a0, a0, 32
 	mul	a0, a1, a0

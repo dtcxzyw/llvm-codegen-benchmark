@@ -42,10 +42,10 @@ func0000000000000060:
 
 func0000000000000180:
 	lui	a3, 112
-	add	a0, a0, a1
-	lui	a1, 32896
 	addi	a3, a3, 1572
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 32896
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 20
@@ -53,10 +53,10 @@ func0000000000000180:
 
 func00000000000001f4:
 	lui	a3, 1023
-	add	a0, a0, a1
-	lui	a1, 514
 	addi	a3, a3, 1712
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 514
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 14
@@ -64,10 +64,10 @@ func00000000000001f4:
 
 func00000000000001fc:
 	lui	a3, 1023
-	add	a0, a0, a1
-	lui	a1, 514
 	addi	a3, a3, 1081
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 514
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 14
@@ -85,10 +85,10 @@ func0000000000000080:
 
 func0000000000000100:
 	lui	a3, 2
-	add	a0, a0, a1
-	lui	a1, 8
 	addi	a3, a3, 1425
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 16
@@ -96,10 +96,10 @@ func0000000000000100:
 
 func00000000000000ae:
 	lui	a3, 1048571
-	add	a0, a0, a1
-	lui	a1, 8224
 	addi	a3, a3, 1399
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 8224
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 18
@@ -107,10 +107,10 @@ func00000000000000ae:
 
 func00000000000000ea:
 	lui	a3, 1048570
-	add	a0, a0, a1
-	lui	a1, 8224
 	addi	a3, a3, 460
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 8224
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 18
@@ -118,10 +118,10 @@ func00000000000000ea:
 
 func00000000000001ba:
 	lui	a3, 28
-	add	a0, a0, a1
-	lui	a1, 8224
 	addi	a3, a3, 512
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 8224
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 18

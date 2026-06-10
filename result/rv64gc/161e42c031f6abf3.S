@@ -62,8 +62,8 @@ func0000000000000053:
 	ret
 
 func0000000000000050:
-	andi	a1, a1, 1
 	srli	a3, a2, 21
+	andi	a1, a1, 1
 	lui	a2, 1
 	bnez	a3, .LBB4_3
 	lui	a3, 262144

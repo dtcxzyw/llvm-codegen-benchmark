@@ -24,8 +24,8 @@ func0000000000000008:
 	ret
 
 func0000000000000003:
-	fmul.d	fa5, fa0, fa1
 	li	a0, 1023
+	fmul.d	fa5, fa0, fa1
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
@@ -40,8 +40,8 @@ func0000000000000005:
 	ret
 
 func0000000000000009:
-	fmul.d	fa5, fa0, fa1
 	li	a0, 2047
+	fmul.d	fa5, fa0, fa1
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
@@ -59,15 +59,15 @@ func0000000000000001:
 .LCPI8_0:
 	.quad	0x3fa999999999999a
 func000000000000000c:
+	fmul.d	fa5, fa0, fa1
 	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
-	fmul.d	fa4, fa0, fa1
-	fle.d	a0, fa5, fa4
+	fld	fa4, %lo(.LCPI8_0)(a0)
+	fle.d	a0, fa4, fa5
 	ret
 
 func000000000000000a:
-	fmul.d	fa5, fa0, fa1
 	li	a0, 1023
+	fmul.d	fa5, fa0, fa1
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa5, fa4

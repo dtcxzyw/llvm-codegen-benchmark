@@ -37,8 +37,8 @@ func0000000000000058:
 
 func0000000000000055:
 	zext.b	a1, a1
-	li	a2, -5
 	addi	a1, a1, -1
+	li	a2, -5
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 8
 	zext.b	a0, a0

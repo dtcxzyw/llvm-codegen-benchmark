@@ -1,6 +1,6 @@
 func0000000000000018:
-	neg	a0, a0
 	li	a1, 10
+	neg	a0, a0
 	sllw	a0, a1, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -21,8 +21,8 @@ func000000000000000f:
 	ret
 
 func000000000000001c:
-	neg	a0, a0
 	li	a1, 1
+	neg	a0, a0
 	sllw	a0, a1, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32

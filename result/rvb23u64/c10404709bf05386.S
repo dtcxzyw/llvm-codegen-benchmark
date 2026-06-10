@@ -4,8 +4,8 @@ func0000000000000004:
 	mulhu	a3, a0, a2
 	mul	a0, a0, a2
 	add	a1, a1, a3
-	srli	a0, a0, 16
 	slli	a2, a1, 48
+	srli	a0, a0, 16
 	or	a0, a0, a2
 	srli	a1, a1, 16
 	ret

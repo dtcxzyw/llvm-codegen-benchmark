@@ -1,9 +1,9 @@
 func0000000000000008:
 	lui	a3, 1048565
 	addi	a3, a3, 1024
+	lui	a4, 3
 	addw	a2, a2, a3
-	lui	a3, 3
-	addi	a3, a3, -1116
+	addi	a3, a4, -1116
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	or	a0, a0, a2
@@ -12,9 +12,9 @@ func0000000000000008:
 func0000000000000048:
 	lui	a3, 1048565
 	addi	a3, a3, 1024
+	lui	a4, 3
 	addw	a2, a2, a3
-	lui	a3, 3
-	addi	a3, a3, -1116
+	addi	a3, a4, -1116
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	or	a0, a0, a2

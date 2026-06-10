@@ -1,6 +1,6 @@
 func0000000000000009:
-	sext.w	a0, a0
 	li	a2, 15
+	sext.w	a0, a0
 	bgeu	a0, a2, .LBB0_2
 	li	a0, 16
 	ret
@@ -10,8 +10,8 @@ func0000000000000009:
 
 func0000000000000002:
 	sext.w	a0, a0
-	slli	a1, a1, 2
 	seqz	a0, a0
+	slli	a1, a1, 2
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	slli	a0, a0, 32
@@ -19,8 +19,8 @@ func0000000000000002:
 	ret
 
 func0000000000000014:
-	sext.w	a0, a0
 	lui	a2, 2048
+	sext.w	a0, a0
 	addi	a2, a2, -2
 	bge	a2, a0, .LBB2_2
 	lui	a1, 524288

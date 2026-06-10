@@ -19,8 +19,8 @@ func0000000000000098:
 func0000000000000202:
 	li	a0, 19
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vand.vi	v8, v8, -2
 	vmsltu.vx	v9, v9, a0
+	vand.vi	v8, v8, -2
 	li	a0, 82
 	vmor.mm	v9, v0, v9
 	vmseq.vx	v8, v8, a0

@@ -1,6 +1,6 @@
 func00000000000000a8:
-	sext.w	a2, a2
 	lui	a3, 1027482
+	sext.w	a2, a2
 	addi	a3, a3, 1024
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -8,8 +8,8 @@ func00000000000000a8:
 	ret
 
 func0000000000000088:
-	sext.w	a2, a2
 	lui	a3, 1027482
+	sext.w	a2, a2
 	addi	a3, a3, 1024
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -17,8 +17,8 @@ func0000000000000088:
 	ret
 
 func00000000000000a6:
-	sext.w	a2, a2
 	lui	a3, 244
+	sext.w	a2, a2
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -26,8 +26,8 @@ func00000000000000a6:
 	ret
 
 func00000000000000aa:
-	sext.w	a2, a2
 	lui	a3, 244
+	sext.w	a2, a2
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -35,8 +35,8 @@ func00000000000000aa:
 	ret
 
 func000000000000008a:
-	sext.w	a2, a2
 	lui	a3, 244
+	sext.w	a2, a2
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -44,8 +44,8 @@ func000000000000008a:
 	ret
 
 func0000000000000081:
-	sext.w	a2, a2
 	lui	a3, 244
+	sext.w	a2, a2
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -54,8 +54,8 @@ func0000000000000081:
 	ret
 
 func000000000000008c:
-	sext.w	a2, a2
 	lui	a3, 244
+	sext.w	a2, a2
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -64,8 +64,8 @@ func000000000000008c:
 	ret
 
 func0000000000000086:
-	sext.w	a2, a2
 	lui	a3, 244
+	sext.w	a2, a2
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -73,8 +73,8 @@ func0000000000000086:
 	ret
 
 func000000000000008b:
-	sext.w	a2, a2
 	lui	a3, 244
+	sext.w	a2, a2
 	addi	a3, a3, 576
 	mul	a2, a2, a3
 	add	a1, a1, a2

@@ -5,13 +5,13 @@
 func0000000000000000:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	lui	a1, %hi(.LCPI0_1)
-	ld	a1, %lo(.LCPI0_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vxor.vv	v10, v8, v10
+	lui	a1, %hi(.LCPI0_1)
 	vmv.v.x	v8, a0
+	ld	a0, %lo(.LCPI0_1)(a1)
 	vror.vi	v10, v10, 37
-	vmacc.vx	v8, a1, v10
+	vmacc.vx	v8, a0, v10
 	ret
 
 .LCPI1_0:
@@ -21,12 +21,12 @@ func0000000000000000:
 func0000000000000010:
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	lui	a1, %hi(.LCPI1_1)
-	ld	a1, %lo(.LCPI1_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vxor.vv	v10, v8, v10
+	lui	a1, %hi(.LCPI1_1)
 	vmv.v.x	v8, a0
+	ld	a0, %lo(.LCPI1_1)(a1)
 	vror.vi	v10, v10, 37
-	vmacc.vx	v8, a1, v10
+	vmacc.vx	v8, a0, v10
 	ret
 

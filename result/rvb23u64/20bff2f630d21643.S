@@ -1,31 +1,31 @@
 func00000000000000a6:
+	li	a3, 1000
+	mul	a0, a0, a3
 	sub	a1, a1, a2
-	li	a2, 1000
-	mul	a0, a0, a2
 	slt	a0, a0, a1
 	ret
 
 func0000000000000064:
-	sub	a1, a1, a2
 	sh1add	a0, a0, a0
+	sub	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000168:
-	sub	a1, a1, a2
 	sh1add	a0, a0, a0
+	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
 func00000000000001e8:
-	sub	a1, a1, a2
 	sh1add	a0, a0, a0
+	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000068:
-	sub	a1, a1, a2
 	sh1add	a0, a0, a0
+	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

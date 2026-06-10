@@ -58,8 +58,8 @@ func0000000000000015:
 	li	a2, 1000
 	mul	a1, a1, a2
 	lui	a2, 1048563
-	add	a0, a0, a1
-	addi	a1, a2, -80
+	addi	a2, a2, -80
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -115,9 +115,9 @@ func000000000000001d:
 	mul	a1, a1, a2
 	lui	a2, 930062
 	addi	a2, a2, -1681
-	add	a0, a0, a1
 	slli	a2, a2, 7
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000005:

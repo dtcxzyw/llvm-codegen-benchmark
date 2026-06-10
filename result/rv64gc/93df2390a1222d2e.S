@@ -25,8 +25,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a1
 	li	a2, 11
+	sext.w	a1, a1
 	beq	a1, a2, .LBB3_2
 	li	a1, -4
 	add	a0, a0, a1
@@ -52,8 +52,8 @@ func0000000000000005:
 	ret
 
 func0000000000000022:
-	sext.w	a1, a1
 	li	a2, 23
+	sext.w	a1, a1
 	bltu	a2, a1, .LBB6_2
 	li	a1, -8
 	add	a0, a0, a1
@@ -64,8 +64,8 @@ func0000000000000022:
 	ret
 
 func0000000000000021:
-	srliw	a1, a1, 2
 	li	a2, 1874
+	srliw	a1, a1, 2
 	bltu	a2, a1, .LBB7_2
 	li	a1, -13
 	add	a0, a0, a1

@@ -1,7 +1,7 @@
 func0000000000000005:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v12, v12, 15
 	vmv.v.i	v14, -1
+	vand.vi	v12, v12, 15
 	vsll.vv	v12, v14, v12
 	vandn.vv	v10, v10, v12
 	vadd.vv	v8, v8, v10
@@ -9,8 +9,8 @@ func0000000000000005:
 
 func0000000000000007:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v12, v12, 15
 	vmv.v.i	v14, -1
+	vand.vi	v12, v12, 15
 	vsll.vv	v12, v14, v12
 	vandn.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8

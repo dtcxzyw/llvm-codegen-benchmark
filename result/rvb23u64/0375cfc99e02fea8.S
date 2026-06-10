@@ -18,10 +18,10 @@ func000000000000028e:
 	ret
 
 func0000000000000118:
-	sltu	a2, a2, a0
-	xor	a0, a0, a1
-	snez	a0, a0
-	or	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a2, a0
+	snez	a1, a1
+	or	a0, a0, a1
 	ret
 
 func00000000000001d4:
@@ -144,10 +144,10 @@ func000000000000028c:
 	ret
 
 func000000000000020a:
-	sltu	a2, a0, a2
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a1, a1, a0
+	sltu	a0, a0, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000230:

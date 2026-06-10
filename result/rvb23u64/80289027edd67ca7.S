@@ -39,8 +39,8 @@ func0000000000000024:
 
 func00000000000000b2:
 	flt.s	a0, fa2, fa0
-	xori	a0, a0, 1
 	flt.s	a1, fa0, fa1
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 

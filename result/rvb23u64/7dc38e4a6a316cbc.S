@@ -33,16 +33,16 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
+	li	a1, 3
 	sext.w	a0, a0
 	sltiu	a0, a0, -16
-	li	a1, 3
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 1
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
 	li	a1, 3
+	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 1
 	ret

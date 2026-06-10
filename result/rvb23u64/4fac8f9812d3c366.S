@@ -13,14 +13,14 @@ func000000000000007f:
 	ret
 
 func000000000000001e:
+	slli.uw	a2, a2, 2
 	add	a0, a0, a1
-	slli.uw	a1, a2, 2
-	sub	a0, a0, a1
+	sub	a0, a0, a2
 	ret
 
 func0000000000000033:
-	slli.uw	a2, a2, 3
 	sh1add	a1, a1, a1
+	slli.uw	a2, a2, 3
 	sh1add	a2, a2, a2
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
@@ -34,9 +34,9 @@ func0000000000000070:
 	ret
 
 func0000000000000010:
+	slli.uw	a2, a2, 17
 	add	a0, a0, a1
-	slli.uw	a1, a2, 17
-	sub	a0, a0, a1
+	sub	a0, a0, a2
 	ret
 
 func000000000000003f:

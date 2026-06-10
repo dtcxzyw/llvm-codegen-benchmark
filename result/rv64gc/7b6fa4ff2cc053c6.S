@@ -28,10 +28,10 @@ func0000000000000006:
 	bltu	a1, a2, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
+	lui	a2, 524288
 	sub	a1, a1, a0
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a1, a2
 	ret
 
 func0000000000000024:

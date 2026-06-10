@@ -1,7 +1,7 @@
 func0000000000000000:
-	slli	a2, a1, 15
-	lui	a3, 30691
-	slli	a3, a3, 5
+	lui	a2, 30691
+	slli	a3, a1, 15
+	slli	a2, a2, 5
 	and	a2, a2, a3
 	xor	a0, a0, a1
 	xor	a0, a0, a2

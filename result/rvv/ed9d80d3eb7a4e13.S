@@ -15,8 +15,8 @@ func00000000000000c4:
 	vadd.vx	v10, v10, a0
 	vmsleu.vi	v0, v10, 2
 	vmv.v.i	v10, 1
-	li	a0, 64
 	vsll.vv	v8, v10, v8
+	li	a0, 64
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

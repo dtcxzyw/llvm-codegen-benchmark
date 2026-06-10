@@ -12,9 +12,9 @@ func0000000000000221:
 	ret
 
 func0000000000000021:
-	srli	a2, a1, 2
-	slli	a1, a1, 30
-	srli	a1, a1, 63
+	slli	a2, a1, 30
+	srli	a1, a1, 2
+	srli	a2, a2, 63
 	add	a1, a1, a2
 	sraiw	a1, a1, 1
 	xor	a0, a0, a1

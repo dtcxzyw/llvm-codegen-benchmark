@@ -8,19 +8,19 @@ func00000000000000e1:
 	ret
 
 func0000000000000085:
-	seqz	a2, a1
 	addi	a0, a0, -1
 	sltu	a0, a1, a0
+	seqz	a1, a1
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func00000000000000a5:
-	seqz	a2, a1
 	addi	a0, a0, -1
 	sltu	a0, a1, a0
+	seqz	a1, a1
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func00000000000000c4:

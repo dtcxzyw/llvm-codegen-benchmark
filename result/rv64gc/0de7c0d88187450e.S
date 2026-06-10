@@ -1,6 +1,6 @@
 func000000000000008a:
-	srli	a2, a2, 3
 	lui	a3, 699051
+	srli	a2, a2, 3
 	addi	a3, a3, -1365
 	mulw	a2, a2, a3
 	li	a3, 2

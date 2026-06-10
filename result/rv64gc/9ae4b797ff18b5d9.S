@@ -11,11 +11,11 @@ func000000000000000e:
 	or	a0, a0, a2
 	ret
 .LBB0_2:
-	sll	a7, a3, a4
-	srli	a3, a2, 1
+	srli	a7, a2, 1
 	not	a5, a5
-	srl	a3, a3, a5
-	or	a3, a7, a3
+	sll	a3, a3, a4
+	srl	a5, a7, a5
+	or	a3, a3, a5
 	sll	a2, a2, a4
 	srai	a4, a6, 63
 	and	a2, a2, a4
@@ -36,11 +36,11 @@ func0000000000000008:
 	or	a0, a0, a2
 	ret
 .LBB1_2:
-	sll	a7, a3, a4
-	srli	a3, a2, 1
+	srli	a7, a2, 1
 	not	a5, a5
-	srl	a3, a3, a5
-	or	a3, a7, a3
+	sll	a3, a3, a4
+	srl	a5, a7, a5
+	or	a3, a3, a5
 	sll	a2, a2, a4
 	srai	a4, a6, 63
 	and	a2, a2, a4
@@ -61,11 +61,11 @@ func000000000000000c:
 	or	a0, a0, a2
 	ret
 .LBB2_2:
-	sll	a7, a3, a4
-	srli	a3, a2, 1
+	srli	a7, a2, 1
 	not	a5, a5
-	srl	a3, a3, a5
-	or	a3, a7, a3
+	sll	a3, a3, a4
+	srl	a5, a7, a5
+	or	a3, a3, a5
 	sll	a2, a2, a4
 	srai	a4, a6, 63
 	and	a2, a2, a4

@@ -7,8 +7,8 @@ func00000000000001e1:
 	ret
 
 func0000000000000020:
-	addw	a2, a2, a0
 	lui	a3, 16
+	addw	a2, a2, a0
 	sltu	a2, a3, a2
 	subw	a0, a0, a1
 	neg	a1, a2
@@ -16,8 +16,8 @@ func0000000000000020:
 	ret
 
 func0000000000000121:
-	addw	a2, a2, a0
 	lui	a3, 32
+	addw	a2, a2, a0
 	sltu	a2, a3, a2
 	subw	a0, a0, a1
 	neg	a1, a2

@@ -30,11 +30,11 @@ func0000000000000010:
 
 func0000000000000051:
 	sext.w	a1, a1
-	lui	a2, 2040
 	sltiu	a1, a1, 2
+	lui	a2, 2040
+	lui	a3, 8
 	czero.eqz	a1, a2, a1
-	lui	a2, 8
-	sub	a0, a0, a2
+	sub	a0, a0, a3
 	subw	a0, a1, a0
 	ret
 

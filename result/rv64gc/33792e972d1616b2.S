@@ -1,9 +1,9 @@
 func0000000000000000:
 	andi	a2, a2, 15
-	sllw	a3, a1, a2
-	neg	a2, a2
-	srlw	a1, a1, a2
-	or	a1, a1, a3
+	neg	a3, a2
+	sllw	a2, a1, a2
+	srlw	a1, a1, a3
+	or	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

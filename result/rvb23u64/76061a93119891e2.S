@@ -1,6 +1,6 @@
 func0000000000000484:
-	zext.b	a3, a0
 	addiw	a2, a2, -48
+	zext.b	a3, a0
 	sltiu	a2, a2, 10
 	sltiu	a3, a3, 58
 	and	a2, a2, a3

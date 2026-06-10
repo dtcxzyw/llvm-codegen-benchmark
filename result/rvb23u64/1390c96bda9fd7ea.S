@@ -5,9 +5,9 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	fadd.s	fa5, fa0, fa1
 	lui	a0, 219235
 	addi	a0, a0, 1981
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -34,9 +34,9 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	fadd.s	fa5, fa0, fa1
 	lui	a0, 797452
 	addi	a0, a0, 165
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

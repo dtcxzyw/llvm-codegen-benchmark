@@ -19,9 +19,9 @@ func0000000000000005:
 
 func0000000000000015:
 	slliw	a1, a1, 1
+	lui	a2, 6
 	add	a0, a0, a1
-	lui	a1, 6
-	addi	a1, a1, -810
+	addi	a1, a2, -810
 	add	a0, a0, a1
 	ret
 

@@ -33,10 +33,10 @@ func0000000000000181:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v8, v8, a0
 	lui	a0, 14
-	vmv.v.i	v10, 3
 	vmseq.vx	v0, v8, a0
-	lui	a0, 4
+	vmv.v.i	v10, 3
 	vmerge.vim	v10, v10, 1, v0
+	lui	a0, 4
 	vmseq.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 2, v0
 	ret

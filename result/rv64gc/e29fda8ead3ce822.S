@@ -1,7 +1,7 @@
 func0000000000000003:
 	srliw	a2, a2, 16
-	slli	a1, a1, 49
 	slli	a2, a2, 16
+	slli	a1, a1, 49
 	or	a0, a0, a2
 	srli	a1, a1, 48
 	or	a0, a0, a1
@@ -72,10 +72,10 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	slli	a2, a2, 52
 	srli	a1, a1, 52
-	srli	a2, a2, 12
+	slli	a2, a2, 52
 	slli	a1, a1, 52
+	srli	a2, a2, 12
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -91,10 +91,10 @@ func000000000000000e:
 	ret
 
 func000000000000000c:
-	slli	a2, a2, 60
 	lui	a3, 256
-	srli	a2, a2, 48
+	slli	a2, a2, 60
 	and	a1, a1, a3
+	srli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

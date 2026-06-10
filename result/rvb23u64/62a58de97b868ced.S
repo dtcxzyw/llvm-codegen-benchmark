@@ -5,10 +5,11 @@ func00000000000000de:
 	ret
 
 func000000000000007f:
+	slli	a2, a2, 5
 	li	a3, 2
+	add	a0, a0, a2
 	sub	a3, a3, a1
-	sh2add	a1, a2, a3
-	sh3add	a0, a1, a0
+	sh3add	a0, a3, a0
 	ret
 
 func00000000000000be:
@@ -65,18 +66,19 @@ func000000000000003b:
 	ret
 
 func0000000000000002:
+	slli	a2, a2, 4
 	li	a3, 1
+	add	a0, a0, a2
 	sub	a3, a3, a1
-	sh3add	a1, a2, a3
-	sh1add	a0, a1, a0
+	sh1add	a0, a3, a0
 	ret
 
 func00000000000000ff:
 	slli	a2, a2, 10
+	li	a3, 256
 	add	a0, a0, a2
-	li	a2, 256
-	sub	a2, a2, a1
-	sh2add	a0, a2, a0
+	sub	a3, a3, a1
+	sh2add	a0, a3, a0
 	ret
 
 func000000000000004a:

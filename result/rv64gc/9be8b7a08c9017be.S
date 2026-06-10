@@ -6,12 +6,12 @@ func0000000000000424:
 	ret
 
 func0000000000000024:
-	li	a2, -1
-	srli	a2, a2, 1
-	sub	a1, a1, a2
 	lui	a2, 1048088
+	li	a3, -1
 	addi	a2, a2, -1155
+	srli	a3, a3, 1
 	srli	a2, a2, 1
+	sub	a1, a1, a3
 	not	a2, a2
 	sltu	a1, a1, a2
 	seqz	a0, a0

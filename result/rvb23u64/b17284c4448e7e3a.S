@@ -77,8 +77,8 @@ func00000000000000ff:
 	ret
 
 func000000000000006b:
-	slli	a2, a2, 5
 	sh2add	a0, a1, a0
+	slli	a2, a2, 5
 	add	a0, a0, a2
 	addi	a0, a0, 16
 	ret
@@ -162,8 +162,8 @@ func000000000000006a:
 	ret
 
 func000000000000007b:
-	slli	a2, a2, 5
 	sh3add	a0, a1, a0
+	slli	a2, a2, 5
 	add	a0, a0, a2
 	addi	a0, a0, 32
 	ret
@@ -187,15 +187,15 @@ func00000000000000ec:
 	ret
 
 func00000000000000f0:
-	slli	a2, a2, 4
 	sh3add	a0, a1, a0
+	slli	a2, a2, 4
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 
 func00000000000000bf:
-	slli	a2, a2, 4
 	sh2add	a0, a1, a0
+	slli	a2, a2, 4
 	add	a0, a0, a2
 	addi	a0, a0, 4
 	ret

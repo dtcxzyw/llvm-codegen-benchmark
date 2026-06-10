@@ -1,10 +1,10 @@
 func0000000000000005:
-	addiw	a0, a0, -184
 	lui	a1, 1048064
+	addiw	a0, a0, -184
+	lui	a2, 1024
 	czero.eqz	a0, a1, a0
-	lui	a1, 1024
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	ret
 
 func0000000000000007:
@@ -30,9 +30,9 @@ func0000000000000031:
 	ret
 
 func000000000000002b:
+	li	a1, -16
 	sext.w	a0, a0
 	slti	a0, a0, 3
-	li	a1, -16
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 2047
 	addi	a0, a0, 832
@@ -46,9 +46,9 @@ func0000000000000051:
 	ret
 
 func0000000000000063:
+	li	a1, -165
 	sext.w	a0, a0
 	sltiu	a0, a0, 301
-	li	a1, -165
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 482
 	ret

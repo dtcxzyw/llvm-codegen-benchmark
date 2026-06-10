@@ -1,8 +1,8 @@
 func0000000000000034:
 	sext.w	a1, a1
 	li	a3, -1
-	sll	a2, a3, a2
 	sltiu	a1, a1, 64
+	sll	a2, a3, a2
 	neg	a1, a1
 	and	a1, a1, a2
 	not	a1, a1
@@ -12,8 +12,8 @@ func0000000000000034:
 func0000000000000064:
 	sext.w	a1, a1
 	li	a3, 1
-	sll	a2, a3, a2
 	sltiu	a1, a1, 32
+	sll	a2, a3, a2
 	neg	a1, a1
 	and	a1, a1, a2
 	not	a1, a1
@@ -23,8 +23,8 @@ func0000000000000064:
 func0000000000000024:
 	sext.w	a1, a1
 	li	a3, -1
-	sll	a2, a3, a2
 	sltiu	a1, a1, 6
+	sll	a2, a3, a2
 	neg	a1, a1
 	and	a1, a1, a2
 	not	a1, a1

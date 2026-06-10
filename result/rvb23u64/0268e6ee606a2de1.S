@@ -24,8 +24,8 @@ func0000000000000021:
 
 func000000000000008c:
 	sext.w	a1, a1
-	addiw	a0, a0, -16
 	sltiu	a1, a1, 9
+	addiw	a0, a0, -16
 	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -50,8 +50,8 @@ func0000000000000181:
 
 func0000000000000026:
 	sext.w	a1, a1
-	srliw	a0, a0, 31
 	binvi	a1, a1, 16
+	srliw	a0, a0, 31
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

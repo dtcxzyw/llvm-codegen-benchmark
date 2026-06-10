@@ -1,7 +1,7 @@
 func00000000000000a8:
 	sext.w	a1, a1
-	ori	a2, a2, 2
 	sgtz	a1, a1
+	ori	a2, a2, 2
 	neg	a1, a1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -9,17 +9,17 @@ func00000000000000a8:
 
 func0000000000000085:
 	sext.w	a1, a1
-	ori	a2, a2, 1
 	snez	a1, a1
+	ori	a2, a2, 1
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000084:
-	ori	a2, a2, 4
 	addiw	a1, a1, -1
 	snez	a1, a1
+	ori	a2, a2, 4
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000084:
 
 func00000000000000d1:
 	sext.w	a1, a1
-	ori	a2, a2, 1
 	sltiu	a1, a1, 256
+	ori	a2, a2, 1
 	neg	a1, a1
 	and	a1, a1, a2
 	addw	a0, a0, a1

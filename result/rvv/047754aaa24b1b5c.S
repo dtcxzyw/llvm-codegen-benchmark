@@ -30,8 +30,8 @@ func0000000000000021:
 func0000000000000024:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 7
-	lui	a0, 1
 	vmseq.vi	v9, v10, 0
+	lui	a0, 1
 	addi	a0, a0, 1
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmsltu.vx	v8, v8, a0
@@ -43,8 +43,8 @@ func000000000000018c:
 	addi	a0, a0, -2047
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 24
 	vmsne.vi	v9, v10, 0
+	li	a0, 24
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

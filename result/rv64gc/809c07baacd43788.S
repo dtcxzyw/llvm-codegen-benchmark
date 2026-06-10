@@ -1,7 +1,7 @@
 func0000000000000003:
-	srli	a0, a0, 8
 	lui	a1, 65793
 	slli	a1, a1, 5
+	srli	a0, a0, 8
 	addi	a1, a1, 514
 	mul	a0, a0, a1
 	lui	a1, 33858
@@ -12,8 +12,8 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	srli	a0, a0, 16
 	lui	a1, 123738
+	srli	a0, a0, 16
 	addi	a1, a1, 1981
 	mul	a0, a0, a1
 	slli	a0, a0, 32

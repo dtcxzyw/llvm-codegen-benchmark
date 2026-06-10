@@ -6,13 +6,13 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
+	li	a3, 1
 	sub	a2, a2, a1
-	li	a1, 1
+	slli	a3, a3, 33
 	srli	a2, a2, 2
-	slli	a1, a1, 33
-	addi	a1, a1, -4
-	and	a1, a1, a2
-	sltu	a0, a0, a1
+	addi	a3, a3, -4
+	and	a2, a2, a3
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000021:

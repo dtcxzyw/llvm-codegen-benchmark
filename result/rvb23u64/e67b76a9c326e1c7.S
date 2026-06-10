@@ -1,9 +1,9 @@
 func0000000000000001:
+	li	a3, 31
 	andi	a2, a2, 768
+	slli	a3, a3, 8
 	or	a0, a0, a2
-	li	a2, 31
-	slli	a2, a2, 8
-	and	a1, a1, a2
+	and	a1, a1, a3
 	xor	a0, a0, a1
 	ret
 

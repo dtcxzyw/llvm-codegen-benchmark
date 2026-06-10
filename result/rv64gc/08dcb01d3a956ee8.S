@@ -1,8 +1,8 @@
 func0000000000000021:
-	sext.w	a0, a0
 	sext.w	a3, a1
 	seqz	a3, a3
 	and	a3, a3, a2
+	sext.w	a0, a0
 	lui	a2, 524288
 	bnez	a3, .LBB0_2
 	mv	a2, a1

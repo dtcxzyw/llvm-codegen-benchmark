@@ -17,9 +17,9 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 988319
 	addi	a0, a0, 714
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa0, a0
 	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB2_2

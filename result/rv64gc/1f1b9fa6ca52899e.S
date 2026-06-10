@@ -9,8 +9,8 @@ func0000000000000061:
 
 func0000000000000361:
 	addi	a1, a1, 7
-	lui	a2, 1048560
 	srli	a1, a1, 3
+	lui	a2, 1048560
 	addi	a1, a1, 7
 	srli	a2, a2, 13
 	and	a1, a1, a2

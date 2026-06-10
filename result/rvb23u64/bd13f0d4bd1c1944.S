@@ -5,10 +5,10 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
+	lui	a3, 1048568
 	subw	a2, a2, a1
-	lui	a1, 1048568
-	addi	a1, a1, -1
-	slt	a1, a1, a2
+	addi	a3, a3, -1
+	slt	a1, a3, a2
 	and	a0, a0, a1
 	ret
 

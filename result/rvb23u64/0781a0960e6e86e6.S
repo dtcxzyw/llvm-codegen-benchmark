@@ -1,7 +1,7 @@
 func0000000000000542:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	zext.b	a2, a2
+	sext.w	a0, a0
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
 	seqz	a0, a0
@@ -9,10 +9,10 @@ func0000000000000542:
 	ret
 
 func0000000000000042:
-	sext.w	a0, a0
 	zext.b	a2, a2
-	addiw	a1, a1, -127
+	sext.w	a0, a0
 	xor	a0, a0, a2
+	addiw	a1, a1, -127
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1

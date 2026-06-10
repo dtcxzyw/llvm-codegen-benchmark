@@ -6,10 +6,10 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
+	lui	a2, 2048
 	sub	a0, a0, a1
-	lui	a1, 2048
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	li	a1, 4
 	sub	a0, a1, a0
 	ret

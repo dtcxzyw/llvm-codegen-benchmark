@@ -26,10 +26,10 @@ func0000000000000000:
 	ret
 
 func000000000000003f:
+	lui	a3, 524288
 	add	a1, a1, a2
-	lui	a2, 524288
-	srli	a2, a2, 28
-	and	a1, a1, a2
+	srli	a3, a3, 28
+	and	a1, a1, a3
 	sh3add	a0, a0, a1
 	ret
 

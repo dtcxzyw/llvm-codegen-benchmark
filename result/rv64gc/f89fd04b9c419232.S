@@ -23,11 +23,11 @@ func0000000000000014:
 	ret
 
 func0000000000000015:
-	fmv.s	fa5, fa0
-	fabs.s	fa0, fa1
-	fle.s	a0, fa0, fa5
+	fabs.s	fa5, fa1
+	fle.s	a0, fa5, fa0
 	bnez	a0, .LBB3_2
-	fmv.s	fa0, fa5
+	fmv.s	fa5, fa0
 .LBB3_2:
+	fmv.s	fa0, fa5
 	ret
 

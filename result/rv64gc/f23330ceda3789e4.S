@@ -27,9 +27,9 @@ func000000000000003f:
 	ret
 
 func000000000000002f:
+	lui	a3, 16
 	add	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -256
+	addi	a2, a3, -256
 	and	a1, a1, a2
 	slli	a1, a1, 32
 	or	a0, a0, a1

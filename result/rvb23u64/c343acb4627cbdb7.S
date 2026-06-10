@@ -1,7 +1,7 @@
 func0000000000000084:
 	andi	a2, a2, 1
-	srliw	a1, a1, 11
 	li	a3, 2
+	srliw	a1, a1, 11
 	sub	a3, a3, a2
 	czero.eqz	a1, a3, a1
 	addi	a1, a1, 2
@@ -10,8 +10,8 @@ func0000000000000084:
 
 func0000000000000086:
 	andi	a2, a2, 1
-	srliw	a1, a1, 11
 	li	a3, 2
+	srliw	a1, a1, 11
 	sub	a3, a3, a2
 	czero.eqz	a1, a3, a1
 	addi	a1, a1, 2

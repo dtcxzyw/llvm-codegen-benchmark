@@ -23,8 +23,8 @@ func000000000000002b:
 
 func0000000000000010:
 	slliw	a2, a2, 4
-	sext.w	a1, a1
 	slli	a2, a2, 1
+	sext.w	a1, a1
 	add	a0, a0, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1

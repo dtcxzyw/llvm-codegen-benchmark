@@ -5,13 +5,13 @@ func0000000000000010:
 	addi	a3, a3, -1807
 	beq	a2, a3, .LBB0_2
 	li	a2, 16
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB0_2:
 	li	a2, 24
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func000000000000001f:
@@ -21,13 +21,13 @@ func000000000000001f:
 	addi	a3, a3, -1807
 	beq	a2, a3, .LBB1_2
 	li	a2, 16
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB1_2:
 	li	a2, 24
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func000000000000001c:
@@ -57,15 +57,15 @@ func000000000000008c:
 	lui	a2, 2
 	bltu	a4, a3, .LBB4_2
 	addi	a2, a2, -1304
+	add	a1, a1, a2
 	slli	a0, a0, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB4_2:
 	addi	a2, a2, -1274
+	add	a1, a1, a2
 	slli	a0, a0, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func00000000000000a0:

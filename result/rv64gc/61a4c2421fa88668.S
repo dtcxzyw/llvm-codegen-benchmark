@@ -1,9 +1,9 @@
 func0000000000000001:
-	fmv.x.d	a0, fa0
-	li	a1, 3
-	slli	a0, a0, 1
-	srli	a0, a0, 1
-	slli	a1, a1, 60
+	li	a0, 3
+	fmv.x.d	a1, fa0
+	slli	a1, a1, 1
+	srli	a1, a1, 1
+	slli	a0, a0, 60
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

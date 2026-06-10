@@ -20,9 +20,9 @@ func0000000000000061:
 	ret
 
 func0000000000000018:
-	bclri	a0, a0, 63
 	lui	a1, 524288
 	addi	a1, a1, -1
+	bclri	a0, a0, 63
 	slli	a1, a1, 32
 	sltu	a0, a1, a0
 	ret

@@ -13,8 +13,8 @@ func000000000000001b:
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
-	lui	a0, 93207
 	vsrl.vi	v10, v10, 3
+	lui	a0, 93207
 	addi	a0, a0, -1001
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 2

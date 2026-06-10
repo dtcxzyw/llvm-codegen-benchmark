@@ -114,8 +114,8 @@ func0000000000000421:
 
 func000000000000010c:
 	sub	a1, a1, a2
-	sltiu	a0, a0, 401
 	addi	a1, a1, -400
+	sltiu	a0, a0, 401
 	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

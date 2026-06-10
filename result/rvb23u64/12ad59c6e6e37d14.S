@@ -9,8 +9,8 @@ func00000000000000e1:
 
 func00000000000000e4:
 	andi	a1, a1, 1
-	srli	a0, a0, 62
 	slli	a1, a1, 2
+	srli	a0, a0, 62
 	or	a1, a1, a2
 	seqz	a0, a0
 	sh1add	a0, a0, a1

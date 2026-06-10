@@ -22,25 +22,25 @@ func0000000000000044:
 
 func000000000000004c:
 	lui	a3, 131072
+	li	a4, 5
 	addi	a3, a3, -1
+	slli	a4, a4, 29
 	xor	a2, a2, a3
-	li	a3, 5
-	slli	a3, a3, 29
-	addi	a3, a3, -1
+	addi	a4, a4, -1
 	seqz	a2, a2
-	xor	a0, a0, a3
+	xor	a0, a0, a4
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000030c:
+	li	a3, 5
+	slli	a3, a3, 29
+	addi	a3, a3, -1
+	xor	a0, a0, a3
 	snez	a2, a2
 	or	a1, a1, a2
-	li	a2, 5
-	slli	a2, a2, 29
-	addi	a2, a2, -1
-	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -94,11 +94,11 @@ func0000000000000186:
 	li	a3, 255
 	slli	a3, a3, 24
 	addi	a3, a3, 1
+	li	a4, 1
 	slt	a2, a2, a3
-	li	a3, 1
-	slli	a3, a3, 32
+	slli	a4, a4, 32
 	or	a1, a1, a2
-	slt	a0, a0, a3
+	slt	a0, a0, a4
 	and	a0, a0, a1
 	ret
 
@@ -115,8 +115,8 @@ func0000000000000194:
 func0000000000000210:
 	lui	a3, %hi(.LCPI13_0)
 	ld	a3, %lo(.LCPI13_0)(a3)
-	sltiu	a1, a1, 2
 	sltu	a2, a3, a2
+	sltiu	a1, a1, 2
 	or	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1

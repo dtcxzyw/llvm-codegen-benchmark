@@ -34,21 +34,21 @@ func0000000000000006:
 func0000000000000014:
 	sext.w	a1, a1
 	sext.w	a0, a0
+	lui	a2, 1048534
 	sltu	a0, a0, a1
-	lui	a1, 1048534
-	addi	a1, a1, -768
+	addi	a1, a2, -768
+	lui	a2, 21
 	czero.eqz	a0, a1, a0
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	add	a0, a0, a1
 	ret
 
 func0000000000000005:
 	sext.w	a0, a0
 	sext.w	a1, a1
+	lui	a2, 61681
 	sltu	a0, a1, a0
-	lui	a1, 61681
-	addi	a1, a1, -241
+	addi	a1, a2, -241
 	czero.eqz	a0, a1, a0
 	ret
 

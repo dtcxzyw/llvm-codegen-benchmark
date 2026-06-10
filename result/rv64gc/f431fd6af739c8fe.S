@@ -12,8 +12,8 @@ func0000000000000050:
 
 func0000000000000048:
 	srli	a2, a2, 32
-	lui	a3, 1048575
 	snez	a2, a2
+	lui	a3, 1048575
 	addi	a2, a2, -1
 	addi	a3, a3, 56
 	and	a2, a2, a3

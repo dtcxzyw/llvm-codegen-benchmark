@@ -1,6 +1,6 @@
 func000000000000000f:
-	andi	a0, a0, 31
 	li	a1, 26
+	andi	a0, a0, 31
 	mul	a1, a0, a1
 	srli	a1, a1, 8
 	slli	a2, a1, 1

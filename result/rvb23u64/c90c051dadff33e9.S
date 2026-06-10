@@ -20,8 +20,8 @@ func0000000000000021:
 	ret
 
 func0000000000000038:
-	sext.w	a1, a1
 	lui	a3, 1536
+	sext.w	a1, a1
 	and	a2, a2, a3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -40,8 +40,8 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
 	slli	a2, a2, 34
+	sext.w	a1, a1
 	srli	a2, a2, 34
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

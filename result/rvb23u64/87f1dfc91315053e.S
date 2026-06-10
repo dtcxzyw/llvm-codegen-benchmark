@@ -1,9 +1,9 @@
 func0000000000000001:
-	andi	a1, a0, 1
+	lui	a1, 536420
+	andi	a2, a0, 1
+	addi	a1, a1, -1160
 	srliw	a0, a0, 1
-	lui	a2, 536420
-	addi	a2, a2, -1160
-	czero.eqz	a1, a2, a1
+	czero.eqz	a1, a1, a2
 	xor	a0, a0, a1
 	ret
 

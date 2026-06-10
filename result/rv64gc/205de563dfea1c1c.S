@@ -62,8 +62,8 @@ func0000000000000308:
 func0000000000000310:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	snez	a1, a1
 	sltiu	a0, a0, 63
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	ctz	a0, a0
 	li	a1, -1
+	ctz	a0, a0
 	add.uw	a0, a1, a0
 	ret
 

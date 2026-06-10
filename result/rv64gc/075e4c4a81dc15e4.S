@@ -1,13 +1,13 @@
 func0000000000000002:
-	zext.b	a0, a0
 	and	a1, a1, a2
+	zext.b	a0, a0
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000018:
-	zext.b	a0, a0
 	and	a1, a1, a2
+	zext.b	a0, a0
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -28,9 +28,9 @@ func0000000000000010:
 	ret
 
 func0000000000000014:
+	and	a1, a1, a2
 	slli	a0, a0, 56
 	srai	a0, a0, 56
-	and	a1, a1, a2
 	slti	a0, a0, 97
 	xori	a0, a0, 1
 	or	a0, a0, a1

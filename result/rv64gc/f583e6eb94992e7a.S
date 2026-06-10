@@ -38,16 +38,16 @@ func0000000000000024:
 
 func0000000000000038:
 	andi	a1, a1, 248
-	sltiu	a0, a0, 4
 	addi	a1, a1, -240
+	sltiu	a0, a0, 4
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000010c:
-	srli	a1, a1, 3
 	sltiu	a0, a0, 8
+	srli	a1, a1, 3
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -70,8 +70,8 @@ func0000000000000034:
 
 func0000000000000028:
 	andi	a1, a1, 240
-	sltiu	a0, a0, 3
 	addi	a1, a1, -224
+	sltiu	a0, a0, 3
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

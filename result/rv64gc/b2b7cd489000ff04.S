@@ -22,8 +22,8 @@ func00000000000000b8:
 
 func0000000000000008:
 	add	a0, a0, a1
-	lui	a1, 10923
 	addiw	a0, a0, 1
+	lui	a1, 10923
 	andi	a0, a0, -2
 	addi	a1, a1, -1366
 	sltu	a0, a1, a0

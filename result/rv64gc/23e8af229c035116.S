@@ -9,8 +9,8 @@ func000000000000002c:
 
 func000000000000014f:
 	sext.w	a2, a2
-	andi	a1, a1, 1
 	slti	a2, a2, 6
+	andi	a1, a1, 1
 	xori	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -29,8 +29,8 @@ func000000000000002f:
 func000000000000010f:
 	sext.w	a2, a2
 	lui	a3, 24
-	andi	a1, a1, 1
 	addi	a3, a3, 1695
+	andi	a1, a1, 1
 	sltu	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -51,18 +51,18 @@ func00000000000000ff:
 
 func00000000000000f5:
 	lui	a3, 2
-	slli	a0, a0, 13
 	addi	a3, a3, -1922
 	mul	a2, a2, a3
+	slli	a0, a0, 13
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func00000000000000d5:
 	lui	a3, 1
-	slli	a0, a0, 13
 	addi	a3, a3, 337
 	mul	a2, a2, a3
+	slli	a0, a0, 13
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

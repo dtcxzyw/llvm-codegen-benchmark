@@ -5,9 +5,9 @@ func0000000000000004:
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vf	v8, v8, fa5
+	vfabs.v	v8, v8
 	lui	a0, 32901
 	slli	a0, a0, 35
-	vfabs.v	v8, v8
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -21,9 +21,9 @@ func0000000000000002:
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vf	v8, v8, fa5
+	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_1)(a0)
-	vfabs.v	v8, v8
 	vmflt.vf	v0, v8, fa5
 	ret
 
@@ -61,9 +61,9 @@ func0000000000000005:
 	fmv.d.x	fa5, a0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vf	v8, v8, fa5
+	vfabs.v	v8, v8
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	vfabs.v	v8, v8
 	vmfle.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret

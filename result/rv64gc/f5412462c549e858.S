@@ -50,8 +50,8 @@ func00000000000001c0:
 
 func0000000000000030:
 	addi	a2, a2, -3
-	slli	a0, a0, 3
 	slli	a2, a2, 32
+	slli	a0, a0, 3
 	srli	a2, a2, 29
 	add	a0, a0, a1
 	add	a0, a0, a2

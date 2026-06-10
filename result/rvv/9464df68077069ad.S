@@ -156,9 +156,9 @@ func0000000000000094:
 	lui	a0, %hi(.LCPI20_0)
 	ld	a0, %lo(.LCPI20_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v14, v12, a0
-	vmsltu.vv	v12, v8, v10
-	vmand.mm	v0, v12, v14
+	vmsltu.vv	v14, v8, v10
+	vmsltu.vx	v8, v12, a0
+	vmand.mm	v0, v14, v8
 	ret
 
 func0000000000000286:

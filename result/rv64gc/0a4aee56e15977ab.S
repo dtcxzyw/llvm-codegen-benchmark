@@ -1,8 +1,8 @@
 func0000000000000005:
 	andi	a1, a1, 1
+	lui	a2, 1
 	sub	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 620
+	addi	a1, a2, 620
 	addw	a0, a0, a1
 	ret
 

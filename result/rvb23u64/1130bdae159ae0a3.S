@@ -16,8 +16,8 @@ func0000000000000004:
 	li	a3, -1250
 	sh3add	a2, a3, a2
 	lui	a3, 1048574
-	addi	a3, a3, -1807
 	sext.w	a2, a2
+	addi	a3, a3, -1807
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

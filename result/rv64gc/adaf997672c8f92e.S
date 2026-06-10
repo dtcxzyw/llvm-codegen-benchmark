@@ -9,8 +9,8 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	fmv.s	fa5, fa0
 	fmv.w.x	fa4, zero
+	fmv.s	fa5, fa0
 	fle.s	a0, fa0, fa4
 	lui	a1, 260096
 	fmv.w.x	fa0, a1

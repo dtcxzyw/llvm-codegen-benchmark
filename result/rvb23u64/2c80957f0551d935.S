@@ -38,15 +38,15 @@ func000000000000002c:
 	ret
 
 func00000000000000f0:
-	addi	a2, a2, -3
 	sh3add	a0, a1, a0
+	addi	a2, a2, -3
 	sh3add.uw	a0, a2, a0
 	addi	a0, a0, 8
 	ret
 
 func00000000000000ff:
-	addi	a2, a2, 1
 	lui	a3, 32
+	addi	a2, a2, 1
 	addi	a3, a3, -2
 	and	a2, a2, a3
 	add	a0, a0, a1

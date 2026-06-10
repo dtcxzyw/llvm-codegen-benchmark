@@ -8,9 +8,9 @@ func000000000000006b:
 
 func000000000000007b:
 	sh1add	a3, a2, a2
+	sh1add	a4, a1, a1
 	sh2add	a2, a3, a2
-	sh1add	a3, a1, a1
-	sh2add	a1, a3, a1
+	sh2add	a1, a4, a1
 	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

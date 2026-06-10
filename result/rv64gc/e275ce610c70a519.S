@@ -4,10 +4,10 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
+	lui	a2, 10240
 	or	a0, a0, a1
-	lui	a1, 10240
-	addi	a1, a1, 7
-	or	a0, a0, a1
+	addi	a2, a2, 7
+	or	a0, a0, a2
 	ret
 
 func0000000000000008:

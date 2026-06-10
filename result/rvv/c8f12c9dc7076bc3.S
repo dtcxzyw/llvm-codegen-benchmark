@@ -12,16 +12,15 @@ func000000000000001d:
 	ret
 
 func000000000000001f:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vzext.vf2	v10, v8
 	bseti	a0, zero, 33
 	addi	a0, a0, -2
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
+	vzext.vf2	v9, v8
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vand.vx	v8, v10, a0
 	vadd.vi	v8, v8, 2
 	ret
 

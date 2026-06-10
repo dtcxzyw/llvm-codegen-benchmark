@@ -1,8 +1,8 @@
 func0000000000000042:
 	sext.w	a1, a1
 	andi	a2, a2, 8
-	seqz	a2, a2
 	seqz	a1, a1
+	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -37,12 +37,12 @@ func0000000000000318:
 
 func0000000000000118:
 	sext.w	a1, a1
-	zext.b	a2, a2
 	lui	a3, 786432
-	addi	a2, a2, -12
+	zext.b	a2, a2
 	addi	a3, a3, 1
-	snez	a2, a2
+	addi	a2, a2, -12
 	sltu	a1, a1, a3
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -50,8 +50,8 @@ func0000000000000118:
 func0000000000000102:
 	sext.w	a1, a1
 	andi	a2, a2, 256
-	seqz	a2, a2
 	sltiu	a1, a1, -6
+	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

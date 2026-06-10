@@ -1,8 +1,8 @@
 func0000000000000184:
 	sext.w	a1, a1
 	li	a3, 32
-	sub	a3, a3, a2
 	seqz	a1, a1
+	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3
 	mulw	a0, a1, a0

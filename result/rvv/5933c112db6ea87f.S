@@ -14,9 +14,9 @@ func0000000000000061:
 func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
-	lui	a0, 262144
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
+	lui	a0, 262144
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v8, v10, a0

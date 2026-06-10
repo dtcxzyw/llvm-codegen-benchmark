@@ -24,11 +24,11 @@ func0000000000000224:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vmflt.vv	v0, v16, v24
-	lui	a0, 4101
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v8, v16
-	slli	a0, a0, 38
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, 4101
+	slli	a0, a0, 38
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -60,12 +60,12 @@ func0000000000000ac4:
 func0000000000000444:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	lui	a0, %hi(.LCPI5_0)
 	vmflt.vv	v0, v24, v16
-	fld	fa5, %lo(.LCPI5_0)(a0)
 	vmerge.vvm	v16, v24, v16, v0
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
+	lui	a0, %hi(.LCPI5_0)
+	fld	fa5, %lo(.LCPI5_0)(a0)
 	vmfgt.vf	v0, v8, fa5
 	ret
 

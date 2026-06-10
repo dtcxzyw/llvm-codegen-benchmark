@@ -4,8 +4,8 @@ func0000000000000000:
 	vmacc.vx	v12, a0, v10
 	lui	a0, 713032
 	addi	a0, a0, -1311
-	vadd.vv	v8, v12, v8
 	vmulh.vx	v10, v10, a0
+	vadd.vv	v8, v12, v8
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
@@ -18,8 +18,8 @@ func0000000000000080:
 	vmacc.vx	v12, a0, v10
 	lui	a0, 713032
 	addi	a0, a0, -1311
-	vadd.vv	v8, v12, v8
 	vmulh.vx	v10, v10, a0
+	vadd.vv	v8, v12, v8
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
@@ -32,8 +32,8 @@ func00000000000000a5:
 	vmacc.vx	v12, a0, v10
 	lui	a0, 335544
 	addi	a0, a0, 1311
-	vadd.vv	v8, v12, v8
 	vmulh.vx	v10, v10, a0
+	vadd.vv	v8, v12, v8
 	vsra.vi	v10, v10, 7
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12

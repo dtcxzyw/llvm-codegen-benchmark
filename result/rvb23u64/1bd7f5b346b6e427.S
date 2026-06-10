@@ -1,33 +1,33 @@
 func0000000000000184:
-	zext.h	a0, a0
 	addiw	a1, a1, -65
+	zext.h	a0, a0
 	sltiu	a1, a1, 26
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000584:
-	zext.h	a0, a0
 	addiw	a1, a1, -65
+	zext.h	a0, a0
 	sltiu	a1, a1, 26
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000084:
+	lui	a2, 16
 	zext.h	a0, a0
 	addiw	a1, a1, -1024
-	lui	a2, 16
-	sltiu	a1, a1, -2047
 	addi	a2, a2, -511
+	sltiu	a1, a1, -2047
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000484:
+	lui	a2, 16
 	zext.h	a0, a0
 	addiw	a1, a1, -512
-	lui	a2, 16
-	sltiu	a1, a1, -1023
 	addi	a2, a2, -255
+	sltiu	a1, a1, -1023
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -53,8 +53,8 @@ func0000000000000421:
 func0000000000000024:
 	zext.h	a0, a0
 	addiw	a1, a1, -185
-	sltiu	a1, a1, 3
 	addi	a0, a0, -2
+	sltiu	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -62,15 +62,15 @@ func0000000000000024:
 func0000000000000424:
 	zext.h	a0, a0
 	addiw	a1, a1, -2
-	sltiu	a1, a1, 3
 	addi	a0, a0, -362
+	sltiu	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000141:
-	zext.h	a0, a0
 	addiw	a1, a1, -3
+	zext.h	a0, a0
 	sgtz	a1, a1
 	czero.nez	a0, a1, a0
 	ret
@@ -78,15 +78,15 @@ func0000000000000141:
 func0000000000000081:
 	zext.h	a0, a0
 	addiw	a1, a1, -13
-	sltiu	a1, a1, 2
 	addi	a0, a0, -3
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000042c:
-	zext.h	a0, a0
 	addiw	a1, a1, -1
+	zext.h	a0, a0
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret

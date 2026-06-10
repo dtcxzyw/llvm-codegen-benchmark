@@ -1,29 +1,29 @@
 func0000000000000000:
-	slli	a3, a0, 6
 	add	a1, a1, a2
-	lui	a2, 648056
-	add	a1, a1, a3
-	addi	a2, a2, -1607
+	slli	a2, a0, 6
+	lui	a3, 648056
+	add	a1, a1, a2
+	addi	a2, a3, -1607
 	add.uw	a1, a2, a1
 	xor	a0, a0, a1
 	ret
 
 func0000000000000010:
-	slli	a3, a0, 6
 	add	a1, a1, a2
-	lui	a2, 648056
-	add	a1, a1, a3
-	addi	a2, a2, -1607
+	slli	a2, a0, 6
+	lui	a3, 648056
+	add	a1, a1, a2
+	addi	a2, a3, -1607
 	add.uw	a1, a2, a1
 	xor	a0, a0, a1
 	ret
 
 func00000000000000c0:
-	slli	a3, a0, 6
 	add	a1, a1, a2
-	lui	a2, 648056
-	add	a1, a1, a3
-	addi	a2, a2, -1607
+	slli	a2, a0, 6
+	lui	a3, 648056
+	add	a1, a1, a2
+	addi	a2, a3, -1607
 	add.uw	a1, a2, a1
 	xor	a0, a0, a1
 	ret
@@ -41,11 +41,11 @@ func0000000000000030:
 	ret
 
 func00000000000000df:
-	slli	a3, a0, 6
 	add	a1, a1, a2
-	lui	a2, 648056
-	add	a1, a1, a3
-	addi	a2, a2, -1607
+	slli	a2, a0, 6
+	lui	a3, 648056
+	add	a1, a1, a2
+	addi	a2, a3, -1607
 	add.uw	a1, a2, a1
 	xor	a0, a0, a1
 	ret

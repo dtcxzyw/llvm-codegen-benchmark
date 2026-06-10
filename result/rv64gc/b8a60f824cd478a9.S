@@ -25,16 +25,15 @@ func0000000000000020:
 	srli	a0, a0, 3
 	ret
 
+.LCPI3_0:
+	.quad	62168256000000000
 func0000000000000000:
 	lui	a2, 244
 	addi	a2, a2, 576
 	mul	a1, a1, a2
-	lui	a2, 56542
-	addi	a2, a2, -1231
-	slli	a2, a2, 13
-	add	a0, a0, a1
-	addi	a1, a2, -417
-	slli	a1, a1, 15
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
+	add	a0, a0, a2
 	add	a0, a0, a1
 	srli	a0, a0, 8
 	ret

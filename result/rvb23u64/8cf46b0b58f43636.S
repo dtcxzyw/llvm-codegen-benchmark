@@ -9,8 +9,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	slliw	a0, a0, 2
 	lui	a1, 1032192
+	slliw	a0, a0, 2
 	and	a0, a0, a1
 	ret
 

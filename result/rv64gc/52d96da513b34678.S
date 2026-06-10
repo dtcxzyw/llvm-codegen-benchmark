@@ -8,8 +8,8 @@ func000000000000000f:
 	srli	a4, a4, 1
 	add	a3, a3, a4
 	lui	a4, 16
-	addi	a4, a4, -15
 	srli	a3, a3, 15
+	addi	a4, a4, -15
 	mul	a3, a3, a4
 	add	a0, a0, a1
 	sub	a3, a3, a2

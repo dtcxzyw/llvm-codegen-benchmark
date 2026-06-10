@@ -11,10 +11,9 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	mv	a2, a0
 	zext.b	a1, a1
+	or	a1, a1, a0
 	lui	a0, 8
-	or	a1, a1, a2
 	sext.w	a1, a1
 	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB1_2
@@ -23,10 +22,9 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	mv	a2, a0
 	zext.b	a1, a1
+	or	a1, a1, a0
 	lui	a0, 8
-	or	a1, a1, a2
 	sext.w	a1, a1
 	addi	a2, a0, 1132
 	bgeu	a1, a2, .LBB2_2

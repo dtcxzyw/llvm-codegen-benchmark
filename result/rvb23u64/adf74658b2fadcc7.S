@@ -1,11 +1,11 @@
 func000000000000000b:
 	slli	a2, a2, 32
 	srliw	a1, a1, 16
+	lui	a3, 16
 	slli	a1, a1, 16
+	addi	a3, a3, -2
 	or	a1, a1, a2
-	lui	a2, 16
-	addi	a2, a2, -2
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -22,8 +22,8 @@ func0000000000000003:
 func000000000000000f:
 	slli	a2, a2, 16
 	lui	a3, 16
-	zext.b	a0, a0
 	addi	a3, a3, -256
+	zext.b	a0, a0
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -38,9 +38,9 @@ func0000000000000002:
 
 func000000000000000e:
 	lui	a3, 64
+	and	a2, a2, a3
 	slli	a1, a1, 21
 	bclri	a0, a0, 18
-	and	a2, a2, a3
 	or	a1, a1, a2
 	bclri	a0, a0, 21
 	or	a0, a0, a1

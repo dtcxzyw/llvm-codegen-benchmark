@@ -1,6 +1,6 @@
 func000000000000000c:
-	srli	a1, a1, 12
 	lui	a2, 28
+	srli	a1, a1, 12
 	addi	a2, a2, 512
 	slli	a1, a1, 59
 	mulhu	a1, a1, a2
@@ -33,8 +33,8 @@ func000000000000000d:
 	ret
 
 func000000000000000a:
-	srliw	a1, a1, 18
 	lui	a2, 21
+	srliw	a1, a1, 18
 	slli	a1, a1, 1
 	addi	a2, a2, 384
 	mul	a1, a1, a2
@@ -42,19 +42,19 @@ func000000000000000a:
 	ret
 
 func0000000000000000:
-	srli	a1, a1, 10
 	lui	a2, 240
+	srli	a1, a1, 10
 	addi	a2, a2, 15
+	lui	a3, 4096
 	and	a1, a1, a2
-	lui	a2, 4096
-	addi	a2, a2, -10
-	mul	a1, a1, a2
+	addi	a3, a3, -10
+	mul	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 
 func0000000000000005:
-	srli	a1, a1, 6
 	lui	a2, 1048571
+	srli	a1, a1, 6
 	andi	a1, a1, 1020
 	addi	a2, a2, 1399
 	mul	a1, a1, a2

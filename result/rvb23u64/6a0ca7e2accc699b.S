@@ -1,8 +1,8 @@
 func000000000000000f:
-	andi	a1, a1, 3
 	li	a2, 783
-	slli	a1, a1, 40
+	andi	a1, a1, 3
 	slli	a2, a2, 32
+	slli	a1, a1, 40
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret

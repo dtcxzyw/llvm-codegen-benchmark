@@ -1,7 +1,7 @@
 func00000000000007e1:
 	sub	a2, a1, a0
-	addi	a1, a1, 1
 	addi	a2, a2, 17
+	addi	a1, a1, 1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func00000000000007e1:
 
 func0000000000000001:
 	sub	a2, a1, a0
-	addi	a1, a1, 13
 	addi	a2, a2, 21
+	addi	a1, a1, 13
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1

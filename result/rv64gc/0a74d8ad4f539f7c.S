@@ -1,10 +1,10 @@
 func0000000000000006:
 	sub	a2, a2, a1
-	seqz	a1, a2
-	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
-	div	a1, a2, a1
+	li	a1, -1
+	seqz	a3, a2
+	add	a2, a2, a3
+	srli	a1, a1, 1
+	div	a1, a1, a2
 	slt	a0, a1, a0
 	ret
 

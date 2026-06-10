@@ -27,9 +27,9 @@ func0000000000000026:
 	bnez	a0, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	sraiw	a0, a1, 31
-	lui	a2, 1
-	addi	a2, a2, -496
+	lui	a0, 1
+	sraiw	a2, a1, 31
+	addi	a0, a0, -496
 	and	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -50,10 +50,10 @@ func000000000000002a:
 	bnez	a0, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
-	sext.w	a0, a1
-	lui	a2, 523342
-	addi	a2, a2, -1428
-	slt	a0, a2, a0
+	lui	a0, 523342
+	sext.w	a2, a1
+	addi	a0, a0, -1428
+	slt	a0, a0, a2
 	lui	a2, 525234
 	neg	a0, a0
 	addi	a2, a2, 1427

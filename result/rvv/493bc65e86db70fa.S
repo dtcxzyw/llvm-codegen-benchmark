@@ -1,7 +1,7 @@
 func000000000000001f:
+	li	a0, 40
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v11, v10
-	li	a0, 40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -16,9 +16,9 @@ func000000000000000f:
 	vzext.vf2	v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vi	v8, v8, 16
-	lui	a0, 1048297
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
+	lui	a0, 1048297
 	addi	a0, a0, 1403
 	slli	a0, a0, 42
 	vsetvli	zero, zero, e64, m2, ta, ma

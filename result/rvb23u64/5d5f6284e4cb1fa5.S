@@ -49,12 +49,11 @@ func000000000000001f:
 	addiw	a0, a0, 8
 	ret
 
+.LCPI6_0:
+	.quad	10000000000000000
 func0000000000000145:
-	lui	a3, 9095
-	addi	a3, a3, -217
-	slli	a3, a3, 12
-	addi	a3, a3, -63
-	slli	a3, a3, 16
+	lui	a3, %hi(.LCPI6_0)
+	ld	a3, %lo(.LCPI6_0)(a3)
 	sltu	a2, a2, a3
 	xori	a2, a2, 17
 	add	a0, a0, a1

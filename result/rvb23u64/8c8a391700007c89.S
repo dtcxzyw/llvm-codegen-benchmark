@@ -1,6 +1,6 @@
 func0000000000000ce1:
-	sext.w	a1, a1
 	lui	a2, 104832
+	sext.w	a1, a1
 	addi	a2, a2, 816
 	xor	a1, a1, a2
 	snez	a1, a1
@@ -9,8 +9,8 @@ func0000000000000ce1:
 	ret
 
 func00000000000001e1:
-	addiw	a1, a1, -12
 	li	a2, 15
+	addiw	a1, a1, -12
 	slli	a2, a2, 8
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 256

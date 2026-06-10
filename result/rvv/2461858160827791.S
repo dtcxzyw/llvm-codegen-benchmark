@@ -22,8 +22,8 @@ func000000000000002c:
 	li	a0, 1023
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 31
 	vmsne.vi	v9, v10, 0
+	li	a0, 31
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

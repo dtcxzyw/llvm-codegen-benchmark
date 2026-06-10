@@ -56,8 +56,8 @@ func0000000000000094:
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 32
 	vmseq.vi	v12, v10, 0
+	li	a0, 32
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret
@@ -67,9 +67,9 @@ func00000000000000c1:
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
+	vmseq.vi	v12, v10, 0
 	bseti	a0, zero, 32
 	bseti	a0, a0, 63
-	vmseq.vi	v12, v10, 0
 	vmslt.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret
@@ -116,8 +116,8 @@ func000000000000010c:
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 1048575
 	vmsne.vi	v12, v10, 0
+	lui	a0, 1048575
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v12, v10
 	ret

@@ -1,7 +1,7 @@
 func000000000000002a:
 	sext.w	a2, a2
-	addiw	a1, a1, 1
 	sgtz	a2, a2
+	addiw	a1, a1, 1
 	and	a0, a0, a2
 	addi	a1, a1, -4
 	czero.eqz	a0, a1, a0
@@ -19,8 +19,8 @@ func0000000000000029:
 
 func000000000000002b:
 	srliw	a2, a2, 31
-	addiw	a1, a1, 9
 	xori	a2, a2, 1
+	addiw	a1, a1, 9
 	and	a0, a0, a2
 	addi	a1, a1, -8
 	czero.eqz	a0, a1, a0

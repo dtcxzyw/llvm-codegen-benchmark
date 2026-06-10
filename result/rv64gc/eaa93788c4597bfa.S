@@ -36,9 +36,9 @@ func0000000000000019:
 	ret
 
 func0000000000000018:
-	sext.w	a2, a0
-	li	a3, 6
-	bge	a2, a3, .LBB5_2
+	li	a2, 6
+	sext.w	a3, a0
+	bge	a3, a2, .LBB5_2
 	li	a1, 1
 .LBB5_2:
 	addw	a0, a0, a1
@@ -52,9 +52,9 @@ func000000000000001a:
 	ret
 
 func0000000000000020:
-	srliw	a2, a0, 10
-	li	a3, 124
-	bgeu	a3, a2, .LBB7_2
+	li	a2, 124
+	srliw	a3, a0, 10
+	bgeu	a2, a3, .LBB7_2
 	lui	a1, 4
 	addi	a1, a1, -384
 .LBB7_2:

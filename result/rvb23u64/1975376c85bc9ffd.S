@@ -1,7 +1,7 @@
 func0000000000002608:
+	zext.h	a2, a2
 	zext.h	a0, a0
 	zext.h	a1, a1
-	zext.h	a2, a2
 	sltiu	a2, a2, 10
 	sltiu	a1, a1, 97
 	sltiu	a0, a0, 6
@@ -11,8 +11,8 @@ func0000000000002608:
 	ret
 
 func0000000000002108:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	sltiu	a2, a2, 71
 	sltiu	a1, a1, 8

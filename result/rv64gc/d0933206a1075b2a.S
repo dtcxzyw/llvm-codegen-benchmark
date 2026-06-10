@@ -6,8 +6,8 @@ func0000000000000000:
 	fmv.d.x	fa0, a0
 	ret
 .LBB0_2:
-	fmul.d	fa5, fa0, fa0
 	li	a0, 1
+	fmul.d	fa5, fa0, fa0
 	slli	a0, a0, 62
 	fmv.d.x	fa4, a0
 	fdiv.d	fa0, fa4, fa5

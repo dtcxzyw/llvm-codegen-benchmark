@@ -15,18 +15,18 @@ func0000000000000038:
 func000000000000003a:
 	addiw	a2, a2, -122
 	sh2add	a1, a2, a1
-	lui	a2, 305
 	sh2add	a0, a0, a1
-	addi	a1, a2, 976
+	lui	a1, 305
+	addi	a1, a1, 976
 	add	a0, a0, a1
 	ret
 
 func000000000000000a:
 	addiw	a2, a2, -122
 	sh2add	a1, a2, a1
-	lui	a2, 320
 	sh2add	a0, a0, a1
-	addi	a1, a2, -928
+	lui	a1, 320
+	addi	a1, a1, -928
 	add	a0, a0, a1
 	ret
 

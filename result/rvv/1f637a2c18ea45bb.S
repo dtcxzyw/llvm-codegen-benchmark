@@ -22,9 +22,9 @@ func000000000000000b:
 	ret
 
 func0000000000000001:
+	li	a0, -1023
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, -1023
 	vand.vi	v10, v12, 1
 	vand.vx	v9, v9, a0
 	vor.vv	v9, v9, v10
@@ -32,9 +32,9 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
+	li	a0, -1023
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, -1023
 	vand.vi	v10, v12, 1
 	vand.vx	v9, v9, a0
 	vor.vv	v9, v10, v9
@@ -42,10 +42,10 @@ func000000000000000d:
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
 	lui	a0, 1048575
 	addi	a1, a0, 3
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vnsrl.wi	v12, v10, 0
 	vand.vx	v10, v12, a1
 	vand.vx	v9, v9, a0
 	vor.vv	v9, v9, v10

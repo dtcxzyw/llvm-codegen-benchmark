@@ -1,14 +1,14 @@
 func000000000000001f:
-	slli	a1, a1, 3
 	lui	a2, 1023
+	slli	a1, a1, 3
 	and	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 6
 	ret
 
 func000000000000001e:
-	slli	a1, a1, 5
 	lui	a2, 1048560
+	slli	a1, a1, 5
 	and	a0, a0, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 9

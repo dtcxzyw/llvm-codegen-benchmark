@@ -1,6 +1,6 @@
 func0000000000000000:
-	fcvt.d.l	fa5, a0
-	fadd.d	fa4, fa0, fa1
-	fsub.d	fa0, fa4, fa5
+	fadd.d	fa5, fa0, fa1
+	fcvt.d.l	fa4, a0
+	fsub.d	fa0, fa5, fa4
 	ret
 

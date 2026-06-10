@@ -7,10 +7,10 @@ func0000000000000016:
 	ret
 
 func0000000000000000:
+	lui	a2, 512
 	sub	a0, a0, a1
-	lui	a1, 512
-	addi	a1, a1, -4
-	add	a0, a0, a1
+	addi	a2, a2, -4
+	add	a0, a0, a2
 	srliw	a0, a0, 2
 	ret
 

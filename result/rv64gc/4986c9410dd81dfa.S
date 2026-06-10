@@ -6,9 +6,9 @@ func0000000000000181:
 
 func0000000000000021:
 	lui	a2, 2048
+	lui	a3, 8
 	and	a1, a1, a2
-	lui	a2, 8
-	and	a0, a0, a2
+	and	a0, a0, a3
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -16,9 +16,9 @@ func0000000000000021:
 
 func000000000000018c:
 	lui	a2, 1
+	lui	a3, 4
 	and	a1, a1, a2
-	lui	a2, 4
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	snez	a0, a0
 	ret
@@ -46,8 +46,8 @@ func0000000000000034:
 	lui	a2, 16
 	addi	a2, a2, -16
 	addiw	a3, a2, 15
-	and	a0, a0, a2
 	and	a1, a1, a3
+	and	a0, a0, a2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -62,10 +62,10 @@ func000000000000028c:
 	ret
 
 func0000000000000294:
-	andi	a1, a1, 896
 	lui	a2, 15
-	sltiu	a1, a1, 384
+	andi	a1, a1, 896
 	and	a0, a0, a2
+	sltiu	a1, a1, 384
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

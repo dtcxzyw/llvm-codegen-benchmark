@@ -1,7 +1,7 @@
 func0000000000000006:
+	lui	a0, 4112
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v10, v8
-	lui	a0, 4112
 	addi	a0, a0, 257
 	slli	a1, a0, 32
 	add	a0, a0, a1

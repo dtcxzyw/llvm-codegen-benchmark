@@ -1,8 +1,8 @@
 func0000000000000008:
 	li	a3, 1
+	li	a4, 15
 	sll	a2, a3, a2
-	li	a3, 15
-	sll	a1, a3, a1
+	sll	a1, a4, a1
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -10,9 +10,9 @@ func0000000000000008:
 
 func0000000000000007:
 	li	a3, -1
+	li	a4, 1
 	sll	a2, a3, a2
-	li	a3, 1
-	sll	a0, a3, a0
+	sll	a0, a4, a0
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -20,9 +20,9 @@ func0000000000000007:
 
 func0000000000000006:
 	li	a3, -1
+	li	a4, 1
 	sll	a2, a3, a2
-	li	a3, 1
-	sll	a0, a3, a0
+	sll	a0, a4, a0
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -30,9 +30,9 @@ func0000000000000006:
 
 func0000000000000005:
 	li	a3, -1
+	li	a4, -2
 	sll	a2, a3, a2
-	li	a3, -2
-	sll	a1, a3, a1
+	sll	a1, a4, a1
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

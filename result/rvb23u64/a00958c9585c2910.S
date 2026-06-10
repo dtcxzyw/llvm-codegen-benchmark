@@ -7,9 +7,9 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	sext.h	a2, a1
-	lui	a3, 1048569
-	addi	a3, a3, -1911
+	lui	a2, 1048569
+	sext.h	a3, a1
+	addi	a2, a2, -1911
 	mul	a2, a2, a3
 	srli	a2, a2, 16
 	add	a1, a1, a2

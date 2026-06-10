@@ -1,12 +1,12 @@
 func0000000000000000:
-	add	a2, a2, a1
 	srli	a3, a1, 37
-	slli	a1, a1, 27
-	or	a1, a1, a3
-	srli	a3, a2, 52
-	slli	a2, a2, 12
-	or	a2, a2, a3
+	slli	a4, a1, 27
+	add	a1, a1, a2
+	or	a3, a3, a4
+	srli	a2, a1, 52
+	slli	a1, a1, 12
+	or	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 

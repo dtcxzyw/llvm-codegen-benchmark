@@ -1,10 +1,10 @@
 func00000000000001c2:
 	slli	a2, a2, 6
+	li	a3, 31
 	or	a1, a1, a2
-	li	a2, 31
-	slli	a2, a2, 11
-	and	a1, a1, a2
+	slli	a3, a3, 11
 	li	a2, 27
+	and	a1, a1, a3
 	slli	a2, a2, 11
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -25,10 +25,10 @@ func0000000000000042:
 
 func0000000000000002:
 	slli	a2, a2, 1
+	li	a3, 5
 	or	a1, a1, a2
-	li	a2, 5
-	slli	a2, a2, 10
-	and	a1, a1, a2
+	slli	a3, a3, 10
+	and	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

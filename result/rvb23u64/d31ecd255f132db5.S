@@ -10,10 +10,10 @@ func0000000000000004:
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	lui	a2, 1048572
+	lui	a3, 8
 	add	a1, a1, a2
-	lui	a2, 8
-	addi	a2, a2, 1
-	sltu	a1, a1, a2
+	addi	a3, a3, 1
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000003:
-	zext.b	a1, a1
 	sext.w	a0, a0
+	zext.b	a1, a1
 	addi	a0, a0, -9
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 9
@@ -35,9 +35,9 @@ func0000000000000011:
 
 func0000000000000015:
 	sext.b	a1, a1
-	sext.w	a0, a0
 	li	a2, -1
 	sgtz	a1, a1
+	sext.w	a0, a0
 	srli	a2, a2, 32
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1

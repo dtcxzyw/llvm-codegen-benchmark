@@ -10,8 +10,8 @@ func000000000000000f:
 
 func000000000000001f:
 	xori	a2, a2, 1
-	slli	a0, a0, 2
 	sext.w	a2, a2
+	slli	a0, a0, 2
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2

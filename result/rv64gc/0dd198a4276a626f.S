@@ -18,8 +18,8 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
-	srli	a1, a1, 12
 	slli	a0, a0, 48
+	srli	a1, a1, 12
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -34,8 +34,8 @@ func000000000000002c:
 
 func0000000000000184:
 	slli	a0, a0, 48
-	slli	a1, a1, 50
 	srli	a0, a0, 48
+	slli	a1, a1, 50
 	srli	a1, a1, 63
 	sltiu	a0, a0, 100
 	and	a0, a0, a1
@@ -43,8 +43,8 @@ func0000000000000184:
 
 func0000000000000024:
 	slli	a0, a0, 48
-	andi	a1, a1, 7
 	srli	a0, a0, 48
+	andi	a1, a1, 7
 	seqz	a1, a1
 	sltiu	a0, a0, 173
 	and	a0, a0, a1
@@ -62,21 +62,21 @@ func0000000000000081:
 
 func000000000000010c:
 	slli	a0, a0, 48
-	andi	a1, a1, 15
 	srli	a0, a0, 48
+	andi	a1, a1, 15
 	addi	a1, a1, -15
-	snez	a1, a1
 	sltiu	a0, a0, 8
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000002a:
-	slli	a0, a0, 48
 	li	a2, 1
+	slli	a0, a0, 48
 	slli	a2, a2, 11
-	srli	a0, a0, 63
 	and	a1, a1, a2
+	srli	a0, a0, 63
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -100,20 +100,20 @@ func0000000000000198:
 
 func0000000000000141:
 	slli	a0, a0, 48
-	andi	a1, a1, 128
 	srai	a0, a0, 48
-	seqz	a1, a1
+	andi	a1, a1, 128
 	slti	a0, a0, 2
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000028:
 	li	a2, 1
-	slli	a0, a0, 48
 	slli	a2, a2, 11
-	srli	a0, a0, 62
+	slli	a0, a0, 48
 	and	a1, a1, a2
+	srli	a0, a0, 62
 	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -122,9 +122,9 @@ func0000000000000028:
 func0000000000000101:
 	slli	a0, a0, 48
 	lui	a2, 28672
+	srli	a0, a0, 48
 	and	a1, a1, a2
 	lui	a2, 16384
-	srli	a0, a0, 48
 	xor	a1, a1, a2
 	sltiu	a0, a0, 14
 	seqz	a1, a1
@@ -134,11 +134,11 @@ func0000000000000101:
 
 func000000000000008c:
 	slli	a0, a0, 48
-	andi	a1, a1, 7
 	lui	a2, 8
 	srli	a0, a0, 48
-	snez	a1, a1
+	andi	a1, a1, 7
 	addi	a2, a2, 1
+	snez	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -153,10 +153,10 @@ func00000000000000c1:
 
 func000000000000018a:
 	slli	a0, a0, 48
-	slli	a1, a1, 55
 	srai	a0, a0, 48
-	srli	a1, a1, 63
+	slli	a1, a1, 55
 	slti	a0, a0, 11
+	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

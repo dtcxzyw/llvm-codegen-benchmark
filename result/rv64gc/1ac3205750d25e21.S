@@ -38,9 +38,9 @@ func000000000000002a:
 
 func000000000000003e:
 	li	a3, 1
-	andi	a0, a0, -64
 	slli	a3, a3, 33
 	addi	a3, a3, -64
+	andi	a0, a0, -64
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -5,10 +5,10 @@ func0000000000000302:
 	ret
 
 func0000000000000318:
-	andi	a1, a1, 254
 	li	a2, 1
-	xori	a1, a1, 12
+	andi	a1, a1, 254
 	slli	a2, a2, 39
+	xori	a1, a1, 12
 	and	a0, a0, a2
 	or	a0, a0, a1
 	snez	a0, a0

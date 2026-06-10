@@ -1,6 +1,6 @@
 func0000000000000005:
-	addi	a0, a0, 1
 	lui	a1, 5
+	addi	a0, a0, 1
 	sext.h	a2, a0
 	addi	a1, a1, -1755
 	mul	a1, a1, a2
@@ -14,8 +14,8 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	addi	a0, a0, -64
 	lui	a1, 4
+	addi	a0, a0, -64
 	sext.h	a2, a0
 	addi	a1, a1, 877
 	mul	a1, a1, a2

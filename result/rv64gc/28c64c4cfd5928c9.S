@@ -16,26 +16,26 @@ func0000000000000010:
 	.quad	0x3f1a36e2eb1c432d
 func0000000000000004:
 	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	fabs.d	fa4, fa0
-	flt.d	a1, fa4, fa5
+	fabs.d	fa5, fa0
+	fld	fa4, %lo(.LCPI2_0)(a1)
+	flt.d	a1, fa5, fa4
 	or	a0, a0, a1
 	ret
 
 .LCPI3_0:
 	.quad	0x3eb0c6f7a0000000
 func0000000000000016:
+	fabs.d	fa5, fa0
 	lui	a1, %hi(.LCPI3_0)
-	fld	fa5, %lo(.LCPI3_0)(a1)
-	fabs.d	fa4, fa0
-	flt.d	a1, fa5, fa4
+	fld	fa4, %lo(.LCPI3_0)(a1)
+	flt.d	a1, fa4, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000014:
-	fabs.d	fa5, fa0
 	lui	a1, 15621
+	fabs.d	fa5, fa0
 	slli	a1, a1, 36
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4
@@ -57,8 +57,8 @@ func000000000000000c:
 	ret
 
 func000000000000001a:
-	fabs.d	fa5, fa0
 	li	a1, 1023
+	fabs.d	fa5, fa0
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4
@@ -67,8 +67,8 @@ func000000000000001a:
 	ret
 
 func0000000000000008:
-	fabs.d	fa5, fa0
 	lui	a1, 8201
+	fabs.d	fa5, fa0
 	slli	a1, a1, 37
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa4, fa5
@@ -78,17 +78,17 @@ func0000000000000008:
 .LCPI9_0:
 	.quad	0x47efffffe0000000
 func000000000000000a:
+	fabs.d	fa5, fa0
 	lui	a1, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a1)
-	fabs.d	fa4, fa0
-	fle.d	a1, fa4, fa5
+	fld	fa4, %lo(.LCPI9_0)(a1)
+	fle.d	a1, fa5, fa4
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
-	fabs.d	fa5, fa0
 	li	a1, 897
+	fabs.d	fa5, fa0
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa4, fa5
@@ -97,8 +97,8 @@ func0000000000000006:
 	ret
 
 func0000000000000024:
-	fabs.d	fa5, fa0
 	li	a1, 1
+	fabs.d	fa5, fa0
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4
@@ -109,15 +109,15 @@ func0000000000000024:
 	.quad	0x471a36e2d0e56042
 func0000000000000028:
 	lui	a1, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a1)
-	fabs.d	fa4, fa0
-	flt.d	a1, fa5, fa4
+	fabs.d	fa5, fa0
+	fld	fa4, %lo(.LCPI12_0)(a1)
+	flt.d	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000036:
-	fabs.d	fa5, fa0
 	li	a1, 971
+	fabs.d	fa5, fa0
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa4, fa5
@@ -126,8 +126,8 @@ func0000000000000036:
 	ret
 
 func000000000000002a:
-	fabs.d	fa5, fa0
 	li	a1, 971
+	fabs.d	fa5, fa0
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4

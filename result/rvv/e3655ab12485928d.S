@@ -74,8 +74,8 @@ func0000000000000066:
 func0000000000000028:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -3
-	lui	a0, 2
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 2
 	addi	a0, a0, 1807
 	vmsgtu.vx	v0, v8, a0
 	ret

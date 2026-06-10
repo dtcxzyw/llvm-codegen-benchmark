@@ -47,18 +47,18 @@ func00000000000000aa:
 	ret
 
 func00000000000000c8:
-	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
+	li	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func00000000000000ea:
-	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.wv	v10, v10, v12
+	li	a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10

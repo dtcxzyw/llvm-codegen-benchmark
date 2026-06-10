@@ -2,9 +2,9 @@ func000000000000000b:
 	li	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmaxu.vx	v8, v8, a0
+	vmul.vv	v8, v8, v8
 	lui	a0, 24390
 	addi	a0, a0, -1440
-	vmul.vv	v8, v8, v8
 	vminu.vx	v8, v8, a0
 	lui	a0, 24
 	addi	a0, a0, 1696

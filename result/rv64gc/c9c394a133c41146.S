@@ -23,8 +23,8 @@ func0000000000000005:
 
 func000000000000000c:
 	lui	a3, 786432
-	andi	a0, a0, -8
 	srli	a3, a3, 27
+	andi	a0, a0, -8
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

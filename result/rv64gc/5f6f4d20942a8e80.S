@@ -41,8 +41,8 @@ func0000000000000008:
 	slli	a1, a2, 33
 	srli	a1, a1, 33
 .LBB4_2:
-	sext.w	a1, a1
 	lui	a0, 158203
+	sext.w	a1, a1
 	addi	a0, a0, 512
 	sltu	a0, a0, a1
 	ret

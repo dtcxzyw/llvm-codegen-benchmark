@@ -16,29 +16,29 @@ func0000000000000020:
 
 func00000000000000a8:
 	lui	a1, 244141
-	lui	a2, 804435
 	addi	a1, a1, -1537
-	addi	a2, a2, 1536
+	lui	a2, 804435
 	slt	a1, a1, a0
+	lui	a3, 1048332
 	neg	a1, a1
+	addi	a2, a2, 1536
+	addi	a3, a3, -576
 	and	a1, a1, a2
-	lui	a2, 1048332
-	addi	a2, a2, -576
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
 func00000000000000a9:
 	lui	a1, 244141
-	lui	a2, 804435
 	addi	a1, a1, -1537
-	addi	a2, a2, 1536
+	lui	a2, 804435
 	slt	a1, a1, a0
+	lui	a3, 243896
 	neg	a1, a1
+	addi	a2, a2, 1536
+	addi	a3, a3, 1984
 	and	a1, a1, a2
-	lui	a2, 243896
-	addi	a2, a2, 1984
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

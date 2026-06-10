@@ -1,11 +1,11 @@
 func0000000000000014:
 	srli	a2, a1, 24
 	seqz	a2, a2
+	lui	a3, 6144
 	and	a0, a0, a2
-	lui	a2, 6144
-	addi	a2, a2, -1
+	addi	a3, a3, -1
 	neg	a0, a0
-	and	a1, a1, a2
+	and	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

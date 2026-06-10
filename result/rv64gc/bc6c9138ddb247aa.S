@@ -10,19 +10,19 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	zext.b	a3, a1
-	zext.b	a2, a2
+	zext.b	a3, a2
 	li	a4, 86
+	zext.b	a2, a1
 	lui	a1, 7
-	beq	a2, a4, .LBB1_2
+	beq	a3, a4, .LBB1_2
 	addi	a1, a1, -1851
-	li	a2, 5
-	bgeu	a3, a2, .LBB1_3
+	li	a3, 5
+	bgeu	a2, a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	addi	a1, a1, -1855
-	li	a2, 5
-	bltu	a3, a2, .LBB1_4
+	li	a3, 5
+	bltu	a2, a3, .LBB1_4
 .LBB1_3:
 	mv	a1, a0
 .LBB1_4:

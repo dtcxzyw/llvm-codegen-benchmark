@@ -14,9 +14,9 @@ func00000000000001f0:
 	ret
 
 func00000000000001ff:
+	sext.w	a1, a1
 	add	a2, a2, a0
 	add	a0, a0, a2
-	sext.w	a1, a1
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret

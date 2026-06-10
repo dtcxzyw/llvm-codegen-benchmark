@@ -5,8 +5,8 @@ func0000000000000022:
 	addi	a0, a0, -1
 	fmv.w.x	fa5, a0
 	vmflt.vf	v16, v12, fa5
-	vmand.mm	v12, v0, v16
-	vmflt.vf	v13, v8, fa5
-	vmand.mm	v0, v12, v13
+	vmflt.vf	v12, v8, fa5
+	vmand.mm	v8, v0, v16
+	vmand.mm	v0, v8, v12
 	ret
 

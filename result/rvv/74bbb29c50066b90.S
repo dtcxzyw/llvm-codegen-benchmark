@@ -29,9 +29,9 @@ func0000000000000000:
 	ret
 
 func0000000000000028:
-	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, 128
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -84,40 +84,40 @@ func0000000000000034:
 	ret
 
 func0000000000000038:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, -1
 	srli	a0, a0, 32
 	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000030:
-	li	a0, -2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, -2
 	zext.w	a0, a0
 	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000017:
-	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	li	a0, -1
 	srli	a0, a0, 32
 	vadd.vx	v8, v8, a0
 	ret
 
 func000000000000003c:
-	lui	a0, 8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	lui	a0, 8
 	vadd.vx	v8, v8, a0
 	ret
 
 func0000000000000008:
-	lui	a0, 8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
+	lui	a0, 8
 	addi	a0, a0, 448
 	vadd.vx	v8, v8, a0
 	ret

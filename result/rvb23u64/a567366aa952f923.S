@@ -1,9 +1,9 @@
 func000000000000003f:
 	slli	a2, a2, 12
 	slli	a1, a1, 6
+	lui	a3, 512
 	or	a1, a1, a2
-	lui	a2, 512
-	addi	a2, a2, -64
+	addi	a2, a3, -64
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
@@ -11,9 +11,9 @@ func000000000000003f:
 func0000000000000009:
 	slli	a2, a2, 22
 	slli	a1, a1, 8
+	lui	a3, 130056
 	or	a1, a1, a2
-	lui	a2, 130056
-	addi	a2, a2, -256
+	addi	a2, a3, -256
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

@@ -15,8 +15,8 @@ func000000000000001b:
 	ret
 
 func0000000000000003:
-	zext.w	a2, a2
 	li	a3, 16
+	zext.w	a2, a2
 	sub	a3, a3, a1
 	minu	a1, a3, a2
 	add	a0, a0, a1

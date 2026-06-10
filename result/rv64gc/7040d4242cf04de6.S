@@ -1,6 +1,6 @@
 func0000000000001102:
-	zext.b	a1, a1
 	addi	a2, a2, -36
+	zext.b	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	sltiu	a1, a1, 254
@@ -8,8 +8,8 @@ func0000000000001102:
 	ret
 
 func0000000000001058:
-	zext.b	a0, a0
 	addi	a2, a2, -1
+	zext.b	a0, a0
 	xor	a1, a1, a2
 	addi	a0, a0, -34
 	seqz	a1, a1
@@ -18,8 +18,8 @@ func0000000000001058:
 	ret
 
 func0000000000001902:
-	zext.b	a1, a1
 	addi	a2, a2, 48
+	zext.b	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	sltiu	a1, a1, 245

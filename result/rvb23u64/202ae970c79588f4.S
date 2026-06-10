@@ -9,16 +9,16 @@ func0000000000000000:
 	ret
 
 func000000000000001c:
-	sext.w	a1, a1
 	lui	a2, 12
+	sext.w	a1, a1
 	addi	a2, a2, 1024
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
-	zext.w	a1, a1
 	lui	a2, 3072
+	zext.w	a1, a1
 	addi	a2, a2, 5
 	mul	a1, a1, a2
 	add	a0, a0, a1

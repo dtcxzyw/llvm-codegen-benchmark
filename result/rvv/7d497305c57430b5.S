@@ -24,9 +24,9 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -3
-	li	a0, 16
 	vmsne.vi	v9, v10, 1
 	vmand.mm	v9, v0, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -35,9 +35,9 @@ func000000000000018c:
 	ret
 
 func000000000000002c:
+	li	a0, 42
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 6
-	li	a0, 42
 	vmseq.vi	v9, v10, 0
 	vmand.mm	v9, v0, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma

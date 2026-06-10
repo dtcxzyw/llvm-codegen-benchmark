@@ -24,12 +24,12 @@ func000000000000001d:
 	ret
 
 func000000000000000d:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vi	v10, v8, 1
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v10, v8
 	vmv.v.i	v8, -4
-	li	a0, 4
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vadd.vi	v10, v10, 1
+	li	a0, 4
 	vwmaccus.vx	v8, a0, v10
 	ret
 

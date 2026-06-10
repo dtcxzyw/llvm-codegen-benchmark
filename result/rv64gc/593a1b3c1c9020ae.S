@@ -1,8 +1,8 @@
 func0000000000000043:
 	slli	a2, a2, 32
-	li	a3, 376
 	srli	a2, a2, 32
 	neg	a2, a2
+	li	a3, 376
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -19,16 +19,16 @@ func000000000000006b:
 
 func000000000000006f:
 	slli	a2, a2, 32
+	srli	a3, a2, 29
+	sub	a1, a1, a3
 	slli	a3, a0, 3
+	srli	a2, a2, 32
 	slli	a0, a0, 4
+	neg	a2, a2
 	add	a0, a0, a3
-	srli	a3, a2, 32
-	srli	a2, a2, 29
-	neg	a3, a3
-	sub	a1, a1, a2
-	slli	a3, a3, 4
+	slli	a2, a2, 4
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 

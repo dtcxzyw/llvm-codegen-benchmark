@@ -93,16 +93,15 @@ func0000000000000046:
 	and	a0, a0, a1
 	ret
 
+.LCPI16_0:
+	.quad	2147483647000001
 func0000000000000054:
-	lui	a2, 15625
-	slli	a2, a2, 11
-	addi	a2, a2, -61
-	slli	a2, a2, 14
-	addi	a2, a2, -575
+	lui	a2, %hi(.LCPI16_0)
+	ld	a2, %lo(.LCPI16_0)(a2)
+	lui	a3, 524288
 	sltu	a0, a0, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1
-	czero.nez	a2, a2, a0
+	addiw	a3, a3, -1
+	czero.nez	a2, a3, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret

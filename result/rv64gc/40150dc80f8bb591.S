@@ -1,12 +1,12 @@
 func0000000000000008:
 	sub	a1, a0, a1
+	lui	a2, 298
 	sltu	a0, a0, a1
+	addi	a2, a2, 95
 	addi	a0, a0, -1
+	slli	a2, a2, 13
 	and	a0, a0, a1
-	lui	a1, 298
-	addi	a1, a1, 95
-	slli	a1, a1, 13
-	addi	a1, a1, 1023
+	addi	a1, a2, 1023
 	sltu	a0, a1, a0
 	ret
 
@@ -14,9 +14,9 @@ func0000000000000004:
 	sub	a1, a0, a1
 	sltu	a0, a0, a1
 	addi	a0, a0, -1
+	lui	a2, 3662
 	and	a0, a0, a1
-	lui	a1, 3662
-	addi	a1, a1, 449
+	addi	a1, a2, 449
 	sltu	a0, a0, a1
 	ret
 
@@ -77,9 +77,9 @@ func0000000000000028:
 	sub	a1, a0, a1
 	sltu	a0, a0, a1
 	addi	a0, a0, -1
+	lui	a2, 12
 	and	a0, a0, a1
-	lui	a1, 12
-	addi	a1, a1, 848
+	addi	a1, a2, 848
 	sltu	a0, a1, a0
 	ret
 

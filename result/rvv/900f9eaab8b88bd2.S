@@ -20,11 +20,11 @@ func0000000000000033:
 
 func0000000000000024:
 	fmv.d.x	fa5, zero
-	lui	a0, 32973
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v0, v16, fa5
-	slli	a0, a0, 35
 	vfneg.v	v16, v16, v0.t
+	lui	a0, 32973
+	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v16, fa5
 	vmerge.vvm	v8, v16, v8, v0

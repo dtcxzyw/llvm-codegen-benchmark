@@ -46,9 +46,9 @@ func00000000000006a8:
 
 func00000000000006f4:
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 16
 	sltiu	a0, a0, 17
@@ -56,9 +56,9 @@ func00000000000006f4:
 
 func00000000000006f8:
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
-	lui	a1, 1034754
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	add	a0, a0, a1
 	srliw	a0, a0, 20
 	snez	a0, a0

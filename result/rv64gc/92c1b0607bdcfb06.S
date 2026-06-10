@@ -19,8 +19,8 @@ func0000000000000040:
 
 func00000000000001bf:
 	slli	a1, a1, 32
-	slli	a0, a0, 3
 	srli	a1, a1, 29
+	slli	a0, a0, 3
 	add	a2, a2, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -29,8 +29,8 @@ func00000000000001bf:
 
 func00000000000001bc:
 	slli	a1, a1, 32
-	slli	a0, a0, 3
 	srli	a1, a1, 29
+	slli	a0, a0, 3
 	add	a2, a2, a1
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -9,10 +9,10 @@ func0000000000000005:
 	ret
 
 func000000000000000f:
-	andi	a3, a0, 1
-	lui	a0, 16
-	addi	a0, a0, -55
-	bnez	a3, .LBB1_2
+	lui	a3, 16
+	andi	a4, a0, 1
+	addi	a0, a3, -55
+	bnez	a4, .LBB1_2
 	zext.b	a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 7

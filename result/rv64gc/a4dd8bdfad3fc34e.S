@@ -6,11 +6,11 @@ func000000000000006c:
 	mul	a1, a1, a2
 	mulhu	a0, a0, a2
 	lui	a2, 1046192
-	addi	a2, a2, -761
 	add	a0, a0, a1
+	addi	a1, a2, -761
 	srli	a0, a0, 32
-	slli	a2, a2, 10
-	mul	a0, a0, a2
+	slli	a1, a1, 10
+	mul	a0, a0, a1
 	ret
 
 .LCPI1_0:
@@ -20,10 +20,10 @@ func000000000000006f:
 	ld	a2, %lo(.LCPI1_0)(a2)
 	mul	a1, a1, a2
 	mulhu	a0, a0, a2
-	lui	a2, 175922
 	add	a0, a0, a1
+	lui	a1, 175922
 	srli	a0, a0, 32
-	addi	a1, a2, -571
+	addi	a1, a1, -571
 	mul	a0, a0, a1
 	ret
 
@@ -35,8 +35,8 @@ func000000000000004c:
 	mul	a1, a1, a2
 	mulhu	a0, a0, a2
 	li	a2, 1
-	slli	a2, a2, 32
 	add	a0, a0, a1
+	slli	a2, a2, 32
 	srli	a0, a0, 9
 	addi	a1, a2, -1000
 	mul	a0, a0, a1

@@ -57,9 +57,9 @@ func000000000000006c:
 
 func0000000000000044:
 	lui	a2, 1048064
+	lui	a3, 512
 	and	a1, a1, a2
-	lui	a2, 512
-	add	a0, a0, a2
+	add	a0, a0, a3
 	sltu	a0, a0, a1
 	ret
 
@@ -179,9 +179,9 @@ func0000000000000029:
 	ret
 
 func000000000000006a:
-	andi	a1, a1, -64
 	li	a2, -127
 	srli	a2, a2, 1
+	andi	a1, a1, -64
 	sub	a0, a0, a2
 	slt	a0, a1, a0
 	ret

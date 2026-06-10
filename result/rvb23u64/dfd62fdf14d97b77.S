@@ -1,6 +1,6 @@
 func000000000000000f:
-	addi	a0, a0, 1
 	lui	a1, 43691
+	addi	a0, a0, 1
 	slli	a1, a1, 4
 	slli	a2, a0, 48
 	mulhu	a1, a2, a1

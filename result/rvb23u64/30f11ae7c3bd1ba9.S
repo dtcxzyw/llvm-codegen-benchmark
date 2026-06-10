@@ -15,8 +15,8 @@ func0000000000000001:
 
 func000000000000000a:
 	sext.w	a1, a0
-	srliw	a0, a0, 31
 	sgtz	a1, a1
+	srliw	a0, a0, 31
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
@@ -31,8 +31,8 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	sext.w	a0, a0
 	li	a1, 256
+	sext.w	a0, a0
 	minu	a0, a0, a1
 	srli	a0, a0, 1
 	ret

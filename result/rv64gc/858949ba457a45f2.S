@@ -1,7 +1,7 @@
 func000000000000000f:
-	srliw	a2, a2, 24
 	mul	a0, a0, a1
-	mulw	a0, a0, a2
+	srliw	a1, a2, 24
+	mulw	a0, a0, a1
 	ret
 
 func0000000000000000:
@@ -17,8 +17,8 @@ func0000000000000009:
 	ret
 
 func000000000000000c:
-	srliw	a2, a2, 3
 	mul	a0, a0, a1
-	mulw	a0, a0, a2
+	srliw	a1, a2, 3
+	mulw	a0, a0, a1
 	ret
 

@@ -23,9 +23,9 @@ func000000000000002c:
 func0000000000000104:
 	lui	a3, 16
 	addi	a4, a3, -1
-	addi	a3, a3, -8
 	and	a1, a1, a4
 	and	a2, a2, a4
+	addi	a3, a3, -8
 	sltiu	a2, a2, 71
 	sltu	a1, a1, a3
 	xori	a2, a2, 1

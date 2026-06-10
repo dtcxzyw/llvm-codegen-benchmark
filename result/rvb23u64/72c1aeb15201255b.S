@@ -6,10 +6,10 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
-	andi	a2, a2, 1
 	slli	a1, a1, 63
-	add	a0, a0, a2
+	andi	a2, a2, 1
 	srai	a1, a1, 63
+	add	a0, a0, a2
 	andi	a1, a1, 6
 	add	a0, a0, a1
 	ret

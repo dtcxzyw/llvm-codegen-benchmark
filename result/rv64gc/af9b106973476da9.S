@@ -51,9 +51,9 @@ func000000000000000e:
 
 func0000000000000001:
 	slliw	a1, a1, 23
+	lui	a2, 2
 	or	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 181
+	addi	a1, a2, 181
 	or	a0, a0, a1
 	ret
 

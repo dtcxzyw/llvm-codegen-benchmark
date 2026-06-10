@@ -1,18 +1,18 @@
 func0000000000000002:
-	fsub.d	fa5, fa0, fa1
 	lui	a0, 66109
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 34
 	fmv.d.x	fa4, a0
 	li	a0, 1023
-	slli	a0, a0, 52
 	fmul.d	fa5, fa5, fa4
+	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
 	ret
 
 func0000000000000003:
-	fsub.d	fa5, fa0, fa1
 	li	a0, 511
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -22,8 +22,8 @@ func0000000000000003:
 	ret
 
 func0000000000000008:
-	fsub.d	fa5, fa0, fa1
 	li	a0, 511
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -39,8 +39,8 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	fsub.d	fa5, fa0, fa1
 	li	a0, 511
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -50,8 +50,8 @@ func0000000000000007:
 	ret
 
 func0000000000000009:
-	fsub.d	fa5, fa0, fa1
 	li	a0, 511
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -63,8 +63,8 @@ func0000000000000009:
 	ret
 
 func0000000000000001:
-	fsub.d	fa5, fa0, fa1
 	li	a0, 511
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -73,8 +73,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	fsub.d	fa5, fa0, fa1
 	li	a0, 511
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4

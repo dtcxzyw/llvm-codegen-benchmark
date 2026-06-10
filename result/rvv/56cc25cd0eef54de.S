@@ -47,8 +47,8 @@ func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	bseti	a0, zero, 63
-	li	a1, -3
 	vmseq.vx	v0, v8, a0
+	li	a1, -3
 	srli	a1, a1, 1
 	vmv.v.x	v8, a1
 	vmerge.vxm	v8, v8, a0, v0

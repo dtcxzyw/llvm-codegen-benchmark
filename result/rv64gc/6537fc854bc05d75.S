@@ -8,8 +8,8 @@ func000000000000000f:
 	srli	a2, a2, 1
 	add	a1, a1, a2
 	lui	a2, 512
-	addi	a2, a2, -9
 	srli	a1, a1, 20
+	addi	a2, a2, -9
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	li	a1, 1000

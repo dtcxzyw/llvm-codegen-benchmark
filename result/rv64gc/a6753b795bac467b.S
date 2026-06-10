@@ -5,9 +5,9 @@ func0000000000000003:
 	li	a2, 1
 	slli	a2, a2, 61
 .LBB0_2:
+	lui	a3, 1536
 	or	a0, a0, a2
-	lui	a2, 1536
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -21,8 +21,8 @@ func0000000000000002:
 
 func0000000000000000:
 	slli	a2, a2, 63
-	andi	a1, a1, -256
 	srai	a2, a2, 63
+	andi	a1, a1, -256
 	andi	a2, a2, 6
 	or	a0, a0, a1
 	or	a0, a0, a2

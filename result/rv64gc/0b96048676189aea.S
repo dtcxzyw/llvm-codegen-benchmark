@@ -7,16 +7,16 @@
 func0000000000000001:
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	lui	a3, %hi(.LCPI0_1)
-	ld	a3, %lo(.LCPI0_1)(a3)
 	mul	a1, a1, a2
-	lui	a2, %hi(.LCPI0_2)
-	ld	a2, %lo(.LCPI0_2)(a2)
-	add	a1, a1, a3
-	slli	a3, a1, 60
+	lui	a2, %hi(.LCPI0_1)
+	ld	a2, %lo(.LCPI0_1)(a2)
+	lui	a3, %hi(.LCPI0_2)
+	ld	a3, %lo(.LCPI0_2)(a3)
+	add	a1, a1, a2
+	slli	a2, a1, 60
 	srli	a1, a1, 4
-	or	a1, a1, a3
-	sltu	a1, a1, a2
+	or	a1, a1, a2
+	sltu	a1, a1, a3
 	and	a0, a0, a1
 	ret
 
@@ -28,9 +28,9 @@ func0000000000000008:
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 25
+	lui	a4, 21094
 	add	a2, a2, a3
-	lui	a3, 21094
-	addi	a3, a3, -1024
+	addi	a3, a4, -1024
 	mul	a2, a2, a3
 	lui	a3, 15820
 	sub	a1, a1, a2
@@ -47,9 +47,9 @@ func000000000000000a:
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 26
+	lui	a4, 244141
 	add	a2, a2, a3
-	lui	a3, 244141
-	addi	a3, a3, -1536
+	addi	a3, a4, -1536
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	sgtz	a1, a1
@@ -64,9 +64,9 @@ func0000000000000006:
 	mulh	a2, a1, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 26
+	lui	a4, 244141
 	add	a2, a2, a3
-	lui	a3, 244141
-	addi	a3, a3, -1536
+	addi	a3, a4, -1536
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	srli	a1, a1, 63

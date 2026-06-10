@@ -1,6 +1,6 @@
 func000000000000002c:
-	sext.w	a1, a1
 	sext.b	a2, a2
+	sext.w	a1, a1
 	neg	a2, a2
 	xor	a1, a1, a2
 	snez	a1, a1

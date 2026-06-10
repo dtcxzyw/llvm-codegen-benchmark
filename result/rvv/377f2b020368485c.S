@@ -27,9 +27,9 @@ func0000000000000035:
 	ret
 
 func0000000000000004:
+	li	a0, 72
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
-	li	a0, 72
 	vadd.vx	v8, v8, a0
 	vmacc.vv	v8, v10, v14
 	ret
@@ -42,10 +42,10 @@ func0000000000000010:
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsext.vf2	v14, v12
 	lui	a0, 2
 	addi	a0, a0, -40
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsext.vf2	v14, v12
 	vadd.vx	v8, v8, a0
 	vmacc.vv	v8, v10, v14
 	ret

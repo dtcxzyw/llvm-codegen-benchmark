@@ -27,8 +27,8 @@ func0000000000000003:
 
 func0000000000000031:
 	sext.w	a1, a1
-	andi	a2, a2, 15
 	li	a3, 9
+	andi	a2, a2, 15
 	slli	a3, a3, 8
 	sltu	a1, a3, a1
 	addi	a2, a2, -9
@@ -39,8 +39,8 @@ func0000000000000031:
 
 func0000000000000015:
 	sext.w	a1, a1
-	andi	a2, a2, 511
 	lui	a3, 8
+	andi	a2, a2, 511
 	addi	a3, a3, -641
 	slt	a1, a3, a1
 	addi	a2, a2, -8

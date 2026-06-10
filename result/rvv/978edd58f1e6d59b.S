@@ -8,11 +8,11 @@ func0000000000000000:
 
 func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 0
-	vand.vi	v9, v10, 2
-	vmerge.vim	v8, v8, -1, v0
-	vadd.vv	v8, v8, v9
+	vmv.v.i	v10, 0
+	vnsrl.wi	v11, v8, 0
+	vand.vi	v8, v11, 2
+	vmerge.vim	v9, v10, -1, v0
+	vadd.vv	v8, v9, v8
 	li	a0, 37
 	vadd.vx	v8, v8, a0
 	ret

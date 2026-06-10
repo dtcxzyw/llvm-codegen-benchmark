@@ -9,8 +9,8 @@ func000000000000007a:
 func0000000000000028:
 	sh1add	a2, a1, a1
 	slli	a1, a1, 5
-	sub	a1, a1, a2
 	add	a0, a0, a1
+	sub	a0, a0, a2
 	srliw	a0, a0, 8
 	ret
 

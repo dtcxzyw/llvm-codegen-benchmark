@@ -1,7 +1,7 @@
 func00000000000000cc:
 	zext.b	a1, a1
-	sext.w	a2, a2
 	lui	a3, 16
+	sext.w	a2, a2
 	addi	a3, a3, 8
 	slt	a2, a2, a3
 	snez	a1, a1
@@ -21,8 +21,8 @@ func0000000000000021:
 
 func00000000000000c1:
 	zext.b	a1, a1
-	srliw	a2, a2, 31
 	addi	a1, a1, -3
+	srliw	a2, a2, 31
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -38,9 +38,9 @@ func0000000000000181:
 	ret
 
 func000000000000002c:
-	zext.b	a1, a1
 	sext.w	a2, a2
 	lui	a3, 1
+	zext.b	a1, a1
 	xor	a2, a2, a3
 	seqz	a2, a2
 	snez	a1, a1

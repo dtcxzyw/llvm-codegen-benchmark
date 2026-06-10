@@ -1,8 +1,8 @@
 func0000000000000029:
 	srliw	a3, a2, 31
-	addiw	a2, a2, 1
 	xori	a3, a3, 1
 	and	a1, a1, a3
+	addiw	a2, a2, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -10,9 +10,9 @@ func0000000000000029:
 
 func000000000000002b:
 	srliw	a3, a2, 31
-	addiw	a2, a2, 1
 	xori	a3, a3, 1
 	and	a1, a1, a3
+	addiw	a2, a2, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -20,9 +20,9 @@ func000000000000002b:
 
 func0000000000000028:
 	srliw	a3, a2, 31
-	addiw	a2, a2, 1
 	xori	a3, a3, 1
 	and	a1, a1, a3
+	addiw	a2, a2, 1
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

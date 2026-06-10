@@ -2,10 +2,10 @@ func0000000000000102:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, 1
 	lui	a0, 11
-	vmand.mm	v10, v12, v0
 	addi	a0, a0, -956
-	vmseq.vx	v11, v8, a0
-	vmand.mm	v0, v10, v11
+	vmseq.vx	v10, v8, a0
+	vmand.mm	v8, v12, v0
+	vmand.mm	v0, v8, v10
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret

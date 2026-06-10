@@ -1,7 +1,7 @@
 func0000000000000006:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	li	a0, 63
 	vclz.v	v8, v8
 	vxor.vx	v8, v8, a0
 	vmv.v.i	v10, 1

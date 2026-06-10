@@ -5,17 +5,17 @@ func0000000000000061:
 	ret
 
 func0000000000000008:
-	slli	a1, a1, 3
 	srli	a0, a0, 61
 	seqz	a0, a0
+	slli	a1, a1, 3
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000048:
-	slli	a1, a1, 3
 	srli	a0, a0, 61
 	seqz	a0, a0
+	slli	a1, a1, 3
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret

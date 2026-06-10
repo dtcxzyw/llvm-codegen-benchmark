@@ -1,7 +1,7 @@
 func0000000000000048:
 	addi	a2, a2, 1
-	srli	a0, a0, 12
 	seqz	a2, a2
+	srli	a0, a0, 12
 	and	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000048:
 
 func0000000000000302:
 	addi	a2, a2, -36
-	addi	a1, a1, -36
 	snez	a2, a2
+	addi	a1, a1, -36
 	and	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -25,8 +25,8 @@ func0000000000000058:
 
 func0000000000000310:
 	addi	a2, a2, -2
-	sltiu	a1, a1, 128
 	snez	a2, a2
+	sltiu	a1, a1, 128
 	and	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

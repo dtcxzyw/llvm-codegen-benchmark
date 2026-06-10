@@ -9,8 +9,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	zext.b	a1, a1
 	li	a2, 60
+	zext.b	a1, a1
 	beq	a1, a2, .LBB1_2
 	li	a1, 5
 	bgeu	a0, a1, .LBB1_3

@@ -13,11 +13,11 @@ func0000000000000008:
 	ret
 
 func0000000000000007:
+	li	a3, 11
 	or	a0, a0, a1
-	li	a1, 11
 	add.uw	a0, a2, a0
-	slli	a1, a1, 33
-	or	a0, a0, a1
+	slli	a3, a3, 33
+	or	a0, a0, a3
 	ret
 
 func0000000000000000:

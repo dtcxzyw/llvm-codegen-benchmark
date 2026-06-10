@@ -1,11 +1,11 @@
 func000000000000000a:
 	lui	a3, 2048
-	slliw	a1, a1, 8
 	and	a2, a2, a3
-	lui	a3, 34767
+	slliw	a1, a1, 8
 	or	a0, a0, a1
+	lui	a1, 34767
 	or	a0, a0, a2
-	addi	a1, a3, 98
+	addi	a1, a1, 98
 	xor	a0, a0, a1
 	ret
 

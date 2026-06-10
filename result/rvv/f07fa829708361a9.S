@@ -1,25 +1,25 @@
 func0000000000000001:
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmand.mm	v16, v0, v16
 	vmfne.vv	v17, v8, v8
-	vmandn.mm	v0, v17, v16
+	vmand.mm	v8, v0, v16
+	vmandn.mm	v0, v17, v8
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmand.mm	v16, v0, v16
 	fmv.d.x	fa5, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v17, v8, fa5
-	vmandn.mm	v0, v17, v16
+	vmand.mm	v8, v0, v16
+	vmandn.mm	v0, v17, v8
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmand.mm	v16, v0, v16
 	lui	a0, 983805
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v17, v8, fa5
-	vmor.mm	v0, v16, v17
+	vmand.mm	v8, v0, v16
+	vmor.mm	v0, v8, v17
 	ret
 

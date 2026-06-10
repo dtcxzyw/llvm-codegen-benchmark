@@ -1,8 +1,8 @@
 func00000000000001ec:
 	zext.b	a2, a2
+	slli	a2, a2, 24
 	or	a0, a0, a1
 	li	a1, -1
-	slli	a2, a2, 24
 	or	a0, a0, a2
 	srli	a1, a1, 32
 	xor	a0, a0, a1

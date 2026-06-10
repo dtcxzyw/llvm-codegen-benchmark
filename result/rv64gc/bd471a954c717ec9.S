@@ -1,7 +1,7 @@
 func0000000000000043:
+	li	a2, 45
 	zext.b	a1, a0
-	li	a0, 45
-	beq	a1, a0, .LBB0_2
+	beq	a1, a2, .LBB0_2
 	lui	a0, 4096
 	addi	a0, a0, 128
 	li	a2, 114
@@ -17,10 +17,10 @@ func0000000000000043:
 	ret
 
 func0000000000000042:
-	zext.b	a1, a0
-	li	a2, 114
+	li	a1, 114
+	zext.b	a2, a0
 	lui	a0, 4096
-	bne	a1, a2, .LBB1_2
+	bne	a2, a1, .LBB1_2
 	addi	a0, a0, 256
 .LBB1_2:
 	ret

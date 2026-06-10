@@ -24,8 +24,8 @@ func000000000000208c:
 
 func000000000000008c:
 	lui	a3, 1
-	addiw	a1, a1, -1
 	add	a2, a2, a3
+	addiw	a1, a1, -1
 	sltu	a0, a2, a0
 	snez	a1, a1
 	and	a0, a0, a1

@@ -15,10 +15,10 @@ func0000000000000042:
 
 func0000000000000294:
 	lui	a2, 65535
-	li	a3, 1
 	slli	a2, a2, 4
-	slli	a3, a3, 31
+	li	a3, 1
 	and	a1, a1, a2
+	slli	a3, a3, 31
 	and	a0, a0, a2
 	xor	a1, a1, a3
 	xor	a0, a0, a3

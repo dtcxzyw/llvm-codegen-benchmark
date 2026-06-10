@@ -1,9 +1,9 @@
 func0000000000000002:
-	andi	a2, a0, 1
-	srliw	a0, a1, 31
-	add	a0, a0, a1
-	sraiw	a0, a0, 1
-	bnez	a2, .LBB0_2
+	srliw	a2, a1, 31
+	andi	a3, a0, 1
+	add	a1, a1, a2
+	sraiw	a0, a1, 1
+	bnez	a3, .LBB0_2
 	neg	a0, a0
 .LBB0_2:
 	ret

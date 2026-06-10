@@ -1,39 +1,41 @@
 func0000000000000002:
-	fmv.d	fa5, fa0
 	li	a1, -1025
 	slli	a1, a1, 52
-	fmv.d.x	fa0, a1
-	flt.d	a1, fa5, fa0
+	fmv.d.x	fa5, a1
+	flt.d	a1, fa0, fa5
 	andi	a0, a0, 1
 	beqz	a1, .LBB0_3
 	beqz	a0, .LBB0_4
 .LBB0_2:
+	fmv.d	fa0, fa5
 	ret
 .LBB0_3:
-	fmv.d	fa0, fa5
+	fmv.d	fa5, fa0
 	bnez	a0, .LBB0_2
 .LBB0_4:
 	li	a0, 1023
 	slli	a0, a0, 52
-	fmv.d.x	fa0, a0
+	fmv.d.x	fa5, a0
+	fmv.d	fa0, fa5
 	ret
 
 func0000000000000004:
-	fmv.d	fa5, fa0
 	lui	a1, %hi(.promoted_doubles.func0000000000000004)
 	addi	a1, a1, %lo(.promoted_doubles.func0000000000000004)
-	fld	fa0, 0(a1)
-	flt.d	a2, fa0, fa5
+	fld	fa5, 0(a1)
+	flt.d	a2, fa5, fa0
 	andi	a0, a0, 1
 	beqz	a2, .LBB1_3
 	beqz	a0, .LBB1_4
 .LBB1_2:
+	fmv.d	fa0, fa5
 	ret
 .LBB1_3:
-	fmv.d	fa0, fa5
+	fmv.d	fa5, fa0
 	bnez	a0, .LBB1_2
 .LBB1_4:
-	fld	fa0, 8(a1)
+	fld	fa5, 8(a1)
+	fmv.d	fa0, fa5
 	ret
 
 func000000000000000a:

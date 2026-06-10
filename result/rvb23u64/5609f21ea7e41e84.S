@@ -1,8 +1,8 @@
 func0000000000000021:
-	sext.w	a1, a0
-	li	a2, -1
-	sllw	a0, a2, a0
-	czero.eqz	a0, a0, a1
+	li	a1, -1
+	sext.w	a2, a0
+	sllw	a0, a1, a0
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000061:
@@ -39,8 +39,8 @@ func0000000000000048:
 
 func000000000000004a:
 	sext.w	a1, a0
-	bset	a0, zero, a0
 	slti	a1, a1, 32
+	bset	a0, zero, a0
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret

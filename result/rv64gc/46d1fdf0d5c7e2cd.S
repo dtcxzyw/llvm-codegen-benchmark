@@ -69,13 +69,13 @@ func0000000000000281:
 	ret
 
 func0000000000000026:
-	addiw	a1, a0, -13
-	lui	a2, 524288
-	seqz	a1, a1
-	addi	a2, a2, 1
-	slli	a2, a2, 32
-	slt	a0, a0, a2
-	and	a0, a0, a1
+	lui	a1, 524288
+	addi	a1, a1, 1
+	addiw	a2, a0, -13
+	slli	a1, a1, 32
+	seqz	a2, a2
+	slt	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000158:
@@ -95,11 +95,11 @@ func0000000000000301:
 	ret
 
 func0000000000000198:
-	sext.w	a1, a0
-	lui	a2, 16
-	srli	a0, a0, 32
-	addi	a2, a2, -257
+	lui	a1, 16
+	sext.w	a2, a0
+	addi	a1, a1, -257
 	xor	a1, a1, a2
+	srli	a0, a0, 32
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

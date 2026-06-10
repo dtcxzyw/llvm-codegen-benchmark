@@ -1,6 +1,6 @@
 func000000000000007a:
-	slli	a0, a0, 10
 	lui	a1, 16
+	slli	a0, a0, 10
 	add	a0, a0, a1
 	srliw	a0, a0, 18
 	ret
@@ -22,16 +22,16 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 3
 	lui	a1, 4096
+	slli	a0, a0, 3
 	addi	a1, a1, -24
 	add	a0, a0, a1
 	srliw	a0, a0, 16
 	ret
 
 func0000000000000068:
-	slli	a0, a0, 3
 	lui	a1, 16
+	slli	a0, a0, 3
 	addi	a1, a1, -8
 	add	a0, a0, a1
 	srliw	a0, a0, 8

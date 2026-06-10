@@ -24,11 +24,11 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
+	lui	a2, 2575
+	addi	a2, a2, -325
 	subw	a0, a0, a1
-	lui	a1, 2575
-	addi	a1, a1, -325
-	slli	a1, a1, 13
-	mul	a0, a0, a1
+	slli	a2, a2, 13
+	mul	a0, a0, a2
 	ret
 
 .LCPI5_0:

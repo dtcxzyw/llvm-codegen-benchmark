@@ -59,13 +59,12 @@ func0000000000000e84:
 	ret
 
 func00000000000004c8:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v10, -1
-	lui	a0, 2
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
 	vmerge.vvm	v8, v9, v8, v0
+	lui	a0, 2
 	addi	a0, a0, 1807
 	vmsgtu.vx	v0, v8, a0
 	ret

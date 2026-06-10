@@ -11,8 +11,8 @@ func000000000000008a:
 	ret
 
 func0000000000000010:
-	add	a0, a0, a2
 	slli	a1, a1, 3
+	add	a0, a0, a2
 	lui	a2, 3
 	add	a0, a0, a1
 	addi	a1, a2, 224
@@ -20,18 +20,18 @@ func0000000000000010:
 	ret
 
 func00000000000000ea:
+	slli	a1, a1, 2
 	slli	a0, a0, 2
 	add	a0, a0, a2
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func00000000000000d0:
-	add	a0, a0, a2
-	slli	a2, a1, 3
+	slli	a3, a1, 3
 	slli	a1, a1, 4
-	add	a1, a1, a2
+	add	a0, a0, a2
+	add	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret

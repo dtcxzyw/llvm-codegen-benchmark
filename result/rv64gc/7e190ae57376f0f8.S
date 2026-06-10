@@ -13,17 +13,17 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	srliw	a1, a1, 24
 	li	a2, 3
+	srliw	a1, a1, 24
 	bltu	a1, a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
 	ret
 
 func0000000000000001:
-	sext.w	a2, a1
-	li	a3, -1
-	beq	a2, a3, .LBB3_2
+	li	a2, -1
+	sext.w	a3, a1
+	beq	a3, a2, .LBB3_2
 	srliw	a0, a1, 2
 .LBB3_2:
 	ret

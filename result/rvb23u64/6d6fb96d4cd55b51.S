@@ -1,6 +1,6 @@
 func0000000000000007:
-	andi	a0, a0, 1
 	zext.b	a2, a2
+	andi	a0, a0, 1
 	slli	a2, a2, 3
 	or	a1, a1, a2
 	lui	a2, 262144
@@ -10,8 +10,8 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	andi	a0, a0, 1
 	slliw	a2, a2, 24
+	andi	a0, a0, 1
 	or	a1, a1, a2
 	czero.eqz	a0, a1, a0
 	ret

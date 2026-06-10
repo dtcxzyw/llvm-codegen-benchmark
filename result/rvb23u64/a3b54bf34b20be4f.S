@@ -15,16 +15,16 @@ func0000000000000000:
 
 func000000000000000f:
 	slli	a2, a2, 32
+	lui	a3, 786432
 	or	a1, a1, a2
-	lui	a2, 786432
-	bclri	a2, a2, 61
+	bclri	a2, a3, 61
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000000b:
-	slli	a2, a2, 59
 	li	a3, 31
+	slli	a2, a2, 59
 	slli	a3, a3, 27
 	andn	a1, a1, a3
 	or	a0, a0, a2
@@ -63,12 +63,12 @@ func0000000000000003:
 	ret
 
 func0000000000000009:
-	slli	a2, a2, 2
 	lui	a3, 699051
+	addi	a3, a3, -1366
+	slli	a2, a2, 2
+	slli	a4, a3, 32
 	or	a1, a1, a2
-	addi	a2, a3, -1366
-	slli	a3, a2, 32
-	add.uw	a2, a2, a3
+	add.uw	a2, a3, a4
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

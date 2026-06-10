@@ -51,8 +51,8 @@ func000000000000001b:
 func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 2
-	lui	a0, 648056
 	vmerge.vvm	v8, v10, v8, v0
+	lui	a0, 648056
 	addi	a0, a0, -1615
 	vmul.vx	v8, v8, a0
 	ret

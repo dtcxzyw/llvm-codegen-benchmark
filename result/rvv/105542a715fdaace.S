@@ -1,11 +1,10 @@
 func0000000000000021:
 	li	a0, 16
-	vsetivli	zero, 4, e16, mf2, ta, ma
-	vmv.v.i	v10, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v0, v8, a0
-	li	a0, 58
 	vsetvli	zero, zero, e16, mf2, ta, ma
+	vmv.v.i	v10, 0
+	li	a0, 58
 	vmerge.vxm	v10, v10, a0, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 0

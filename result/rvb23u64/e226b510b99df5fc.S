@@ -16,8 +16,8 @@ func000000000000348c:
 
 func0000000000003181:
 	addi	a2, a2, 328
-	addiw	a1, a1, -1
 	xor	a0, a0, a2
+	addiw	a1, a1, -1
 	snez	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -25,8 +25,8 @@ func0000000000003181:
 
 func0000000000003d8c:
 	addi	a2, a2, 72
-	addiw	a1, a1, -2
 	xor	a0, a0, a2
+	addiw	a1, a1, -2
 	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
@@ -34,8 +34,8 @@ func0000000000003d8c:
 
 func0000000000003184:
 	addi	a2, a2, 4
-	addiw	a1, a1, -48
 	xor	a0, a0, a2
+	addiw	a1, a1, -48
 	snez	a0, a0
 	sltiu	a1, a1, 10
 	and	a0, a0, a1
@@ -51,8 +51,8 @@ func0000000000003084:
 
 func000000000000358c:
 	addi	a2, a2, 1
-	addiw	a1, a1, -1
 	xor	a0, a0, a2
+	addiw	a1, a1, -1
 	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1

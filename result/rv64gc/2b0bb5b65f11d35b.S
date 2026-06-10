@@ -17,8 +17,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	addiw	a1, a1, 64
 	andi	a0, a0, -64
+	addiw	a1, a1, 64
 	sext.w	a0, a0
 	bltu	a1, a0, .LBB2_2
 	mv	a0, a1

@@ -47,42 +47,42 @@ func0000000000000020:
 
 func00000000000000ff:
 	li	a3, 488
-	add	a0, a0, a1
-	lui	a1, 15
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, -1904
+	lui	a3, 15
 	add	a0, a0, a1
+	addi	a1, a3, -1904
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func00000000000000fc:
 	li	a3, 488
-	add	a0, a0, a1
-	lui	a1, 15
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, -1904
+	lui	a3, 15
 	add	a0, a0, a1
+	addi	a1, a3, -1904
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func00000000000000c3:
 	li	a3, 488
-	add	a0, a0, a1
-	lui	a1, 15
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, -1904
+	lui	a3, 15
 	add	a0, a0, a1
+	addi	a1, a3, -1904
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func00000000000000cf:
 	li	a3, 122
-	add	a0, a0, a1
-	lui	a1, 4
 	mul	a2, a2, a3
-	add	a0, a0, a2
-	addi	a1, a1, -1500
+	lui	a3, 4
 	add	a0, a0, a1
+	addi	a1, a3, -1500
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000040:

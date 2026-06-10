@@ -15,22 +15,22 @@ func00000000000002ad:
 func0000000000000610:
 	sext.w	a3, a2
 	li	a4, 4
+	seqz	a3, a3
 	sub	a4, a4, a2
-	seqz	a2, a3
-	addi	a2, a2, -1
-	and	a2, a2, a4
+	addi	a3, a3, -1
+	and	a3, a3, a4
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	ret
 
 func000000000000061c:
 	sext.w	a3, a2
 	li	a4, 4
+	seqz	a3, a3
 	sub	a4, a4, a2
-	seqz	a2, a3
-	addi	a2, a2, -1
-	and	a2, a2, a4
+	addi	a3, a3, -1
+	and	a3, a3, a4
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	addw	a0, a0, a3
 	ret
 

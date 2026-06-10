@@ -1,7 +1,7 @@
 func0000000000000018:
 	andi	a1, a1, 1
-	slli	a0, a0, 47
 	czero.nez	a1, a2, a1
+	slli	a0, a0, 47
 	sext.w	a1, a1
 	srli	a0, a0, 47
 	sltu	a0, a1, a0
@@ -9,8 +9,8 @@ func0000000000000018:
 
 func0000000000000008:
 	andi	a1, a1, 1
-	slli	a0, a0, 47
 	czero.nez	a1, a2, a1
+	slli	a0, a0, 47
 	sext.w	a1, a1
 	srli	a0, a0, 47
 	sltu	a0, a1, a0

@@ -32,30 +32,30 @@ func0000000000000085:
 	ret
 
 func0000000000000010:
-	sext.w	a2, a0
-	lui	a3, 524288
-	addi	a3, a3, 2
-	add	a1, a1, a3
-	lui	a3, 1047844
-	sltiu	a2, a2, 3
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
+	lui	a2, 524288
+	sext.w	a3, a0
+	addi	a2, a2, 2
+	sltiu	a3, a3, 3
+	add	a1, a1, a2
+	czero.nez	a0, a0, a3
+	czero.eqz	a1, a1, a3
+	lui	a2, 1047844
 	or	a0, a0, a1
-	addi	a1, a3, -1728
+	addi	a1, a2, -1728
 	addw	a0, a0, a1
 	ret
 
 func0000000000000013:
-	sext.w	a2, a0
-	lui	a3, 524288
-	addi	a3, a3, 2
-	add	a1, a1, a3
-	lui	a3, 1047844
-	sltiu	a2, a2, 3
-	czero.nez	a0, a0, a2
-	czero.eqz	a1, a1, a2
+	lui	a2, 524288
+	sext.w	a3, a0
+	addi	a2, a2, 2
+	sltiu	a3, a3, 3
+	add	a1, a1, a2
+	czero.nez	a0, a0, a3
+	czero.eqz	a1, a1, a3
+	lui	a2, 1047844
 	or	a0, a0, a1
-	addi	a1, a3, -1731
+	addi	a1, a2, -1731
 	addw	a0, a0, a1
 	ret
 

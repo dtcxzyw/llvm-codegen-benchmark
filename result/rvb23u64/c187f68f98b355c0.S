@@ -6,20 +6,20 @@ func000000000000002f:
 	ret
 
 func000000000000000f:
-	add.uw	a0, a2, a0
 	andi	a1, a1, 1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	add.uw	a0, a2, a0
 	andi	a1, a1, 1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
 func0000000000000001:
-	add.uw	a0, a2, a0
 	andi	a1, a1, 1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -31,8 +31,8 @@ func0000000000000020:
 	ret
 
 func0000000000000004:
-	add.uw	a0, a2, a0
 	andi	a1, a1, 1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 

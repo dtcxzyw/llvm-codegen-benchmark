@@ -33,8 +33,8 @@ func0000000000000037:
 	ret
 
 func0000000000000010:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -45,8 +45,8 @@ func000000000000002f:
 	ret
 
 func000000000000001f:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -65,8 +65,8 @@ func0000000000000035:
 	ret
 
 func0000000000000015:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 
@@ -93,8 +93,8 @@ func0000000000000025:
 	ret
 
 func0000000000000017:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	add	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000003:
-	srai	a1, a1, 4
 	li	a2, 50
+	srai	a1, a1, 4
 	bltu	a1, a2, .LBB0_2
 	li	a1, 50
 .LBB0_2:
@@ -9,8 +9,8 @@ func0000000000000003:
 	ret
 
 func000000000000000b:
-	srai	a1, a1, 3
 	li	a2, 8
+	srai	a1, a1, 3
 	bltu	a1, a2, .LBB1_2
 	li	a1, 8
 .LBB1_2:

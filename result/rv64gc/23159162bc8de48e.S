@@ -20,10 +20,10 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	srli	a1, a1, 3
 	lui	a2, 1
-	slli	a1, a1, 11
+	srli	a1, a1, 3
 	addi	a2, a2, -64
+	slli	a1, a1, 11
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -43,10 +43,10 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	slli	a1, a1, 1
 	li	a2, 1
-	andi	a1, a1, 4
+	slli	a1, a1, 1
 	slli	a2, a2, 11
+	andi	a1, a1, 4
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

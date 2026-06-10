@@ -1,7 +1,7 @@
 func0000000000000003:
+	li	a0, -128
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, -128
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v10, v12, 0
 	vadd.vv	v10, v10, v10
@@ -11,9 +11,9 @@ func0000000000000003:
 	ret
 
 func000000000000003c:
+	li	a0, 16
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 16
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v10, v12, 0
 	vsll.vi	v10, v10, 4
@@ -23,9 +23,9 @@ func000000000000003c:
 	ret
 
 func0000000000000000:
+	li	a0, 64
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	li	a0, 64
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v10, v12, 0
 	vadd.vv	v10, v10, v10

@@ -1,7 +1,7 @@
 func00000000000000f1:
+	li	a0, 55
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v9, v9, 3
-	li	a0, 55
 	vmsgtu.vx	v0, v8, a0
 	vadd.vi	v8, v9, 1
 	vmerge.vim	v10, v8, 8, v0

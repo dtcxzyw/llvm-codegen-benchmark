@@ -9,8 +9,8 @@ func00000000000004ca:
 func000000000000008a:
 	sext.w	a2, a0
 	subw	a0, a0, a1
-	sltiu	a0, a0, 60
 	slti	a1, a2, 60
+	sltiu	a0, a0, 60
 	not	a1, a1
 	and	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func000000000000008a:
 func00000000000000c8:
 	sext.w	a2, a0
 	sub	a0, a0, a1
-	srliw	a0, a0, 31
 	sltiu	a1, a2, 3
+	srliw	a0, a0, 31
 	not	a1, a1
 	and	a0, a0, a1
 	ret

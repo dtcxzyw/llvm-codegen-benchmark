@@ -1,6 +1,6 @@
 func0000000000000000:
-	xori	a1, a1, 8
 	lui	a2, 548541
+	xori	a1, a1, 8
 	addi	a2, a2, -1429
 	mul	a1, a1, a2
 	lui	a2, 797483

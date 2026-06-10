@@ -5,8 +5,8 @@ func0000000000000015:
 	ld	a1, %lo(.LCPI0_0)(a1)
 	srli	a2, a0, 3
 	mulhu	a1, a2, a1
-	li	a2, 1000
 	srli	a1, a1, 4
+	li	a2, 1000
 	mul	a1, a1, a2
 	lui	a2, 244
 	sub	a0, a0, a1

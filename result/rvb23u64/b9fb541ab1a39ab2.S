@@ -20,9 +20,9 @@ func0000000000000018:
 	ret
 
 func0000000000000013:
-	zext.b	a2, a1
-	slliw	a1, a1, 24
-	or	a0, a0, a1
+	slliw	a2, a1, 24
+	zext.b	a1, a1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 

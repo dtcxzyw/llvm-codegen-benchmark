@@ -45,9 +45,9 @@ func0000000000000028:
 func0000000000000009:
 	lui	a2, 15
 	addi	a2, a2, -1440
+	lui	a3, 1048561
 	maxu	a1, a1, a2
-	lui	a2, 1048561
-	addi	a2, a2, 1440
+	addi	a2, a3, 1440
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

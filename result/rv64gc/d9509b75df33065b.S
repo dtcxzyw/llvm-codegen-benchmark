@@ -40,8 +40,8 @@ func000000000000008c:
 
 func000000000000014c:
 	sext.w	a2, a2
-	snez	a1, a1
 	slti	a2, a2, 2
+	snez	a1, a1
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

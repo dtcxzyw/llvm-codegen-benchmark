@@ -53,8 +53,8 @@ func0000000000000588:
 
 func0000000000000101:
 	zext.w	a2, a2
-	sltiu	a1, a1, 2
 	xor	a0, a0, a2
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -83,11 +83,11 @@ func000000000000028c:
 	ret
 
 func0000000000000694:
+	lui	a3, 16
 	sext.w	a2, a2
+	addi	a3, a3, -1
 	sltu	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -1
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

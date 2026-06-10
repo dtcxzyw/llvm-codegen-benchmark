@@ -1,6 +1,6 @@
 func000000000000000b:
-	slliw	a2, a2, 24
 	zext.h	a1, a1
+	slliw	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -29,8 +29,8 @@ func000000000000000d:
 	ret
 
 func000000000000003b:
-	slliw	a2, a2, 26
 	zext.h	a1, a1
+	slliw	a2, a2, 26
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

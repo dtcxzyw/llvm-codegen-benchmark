@@ -9,8 +9,8 @@ func00000000000000a4:
 func00000000000001e4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 2
-	bseti	a0, zero, 35
 	vadd.vi	v10, v10, 7
+	bseti	a0, zero, 35
 	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
@@ -19,8 +19,8 @@ func00000000000001e4:
 func00000000000000e4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
-	li	a0, -4
 	vadd.vi	v10, v10, 3
+	li	a0, -4
 	zext.w	a0, a0
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10

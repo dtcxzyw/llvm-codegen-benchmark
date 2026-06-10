@@ -1,10 +1,10 @@
 func0000000000000005:
 	fli.s	fa5, 1.0
-	lui	a0, 232731
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v16, fa5
-	addi	a0, a0, 1815
+	lui	a0, 232731
 	vfmacc.vv	v16, v12, v8
+	addi	a0, a0, 1815
 	fmv.w.x	fa5, a0
 	vmfle.vf	v8, v16, fa5
 	vmnot.m	v0, v8
@@ -21,11 +21,11 @@ func0000000000000008:
 
 func0000000000000002:
 	fli.s	fa5, 1.0
-	lui	a0, 239665
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v16, fa5
-	addi	a0, a0, 623
+	lui	a0, 239665
 	vfmacc.vv	v16, v12, v8
+	addi	a0, a0, 623
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v16, fa5
 	ret

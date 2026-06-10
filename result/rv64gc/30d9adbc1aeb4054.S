@@ -10,8 +10,8 @@ func0000000000000042:
 func00000000000001d7:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	zext.b	a0, a0
 	add	a1, a1, a2
+	zext.b	a0, a0
 	add	a0, a0, a1
 	slli	a1, a0, 1
 	slli	a0, a0, 3
@@ -22,8 +22,8 @@ func00000000000001d7:
 func0000000000000040:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	zext.b	a0, a0
 	add	a1, a1, a2
+	zext.b	a0, a0
 	add	a0, a0, a1
 	slli	a1, a0, 1
 	slli	a0, a0, 3
@@ -34,8 +34,8 @@ func0000000000000040:
 func0000000000000043:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	zext.b	a0, a0
 	add	a1, a1, a2
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	li	a1, 100
@@ -44,8 +44,8 @@ func0000000000000043:
 
 func0000000000000195:
 	li	a2, 21
-	zext.b	a0, a0
 	mul	a1, a1, a2
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -161
 	slli	a1, a0, 2
@@ -56,8 +56,8 @@ func0000000000000195:
 func00000000000000c3:
 	slli	a2, a1, 1
 	slli	a1, a1, 3
-	zext.b	a0, a0
 	add	a1, a1, a2
+	zext.b	a0, a0
 	add	a0, a0, a1
 	addi	a0, a0, -48
 	li	a1, 100

@@ -1,30 +1,30 @@
 func0000000000000007:
-	slliw	a2, a2, 16
 	slli	a1, a1, 63
+	slliw	a2, a2, 16
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	slliw	a2, a2, 31
 	slli	a1, a1, 63
+	slliw	a2, a2, 31
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000000:
-	slliw	a2, a2, 16
 	slli	a1, a1, 63
+	slliw	a2, a2, 16
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000005:
-	slliw	a2, a2, 24
 	slli	a1, a1, 63
+	slliw	a2, a2, 24
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -42,8 +42,8 @@ func0000000000000003:
 	ret
 
 func0000000000000006:
-	slliw	a2, a2, 1
 	slli	a1, a1, 63
+	slliw	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	or	a0, a0, a1

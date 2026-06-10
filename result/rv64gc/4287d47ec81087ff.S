@@ -1,6 +1,6 @@
 func0000000000000187:
-	sext.w	a0, a0
 	slli	a3, a2, 3
+	sext.w	a0, a0
 	slli	a2, a2, 5
 	add	a2, a2, a3
 	seqz	a0, a0
@@ -11,8 +11,8 @@ func0000000000000187:
 	ret
 
 func0000000000000107:
-	sext.w	a0, a0
 	slli	a3, a2, 3
+	sext.w	a0, a0
 	slli	a2, a2, 6
 	sub	a2, a2, a3
 	seqz	a0, a0

@@ -13,11 +13,12 @@ func000000000000002b:
 	ret
 
 func0000000000000050:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v11, v0
+	vmv.v.i	v12, 12
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vi	v0, v10, 12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v12, 12
 	vmerge.vim	v12, v12, 8, v0
 	vmv.v.i	v14, 8
 	vmv1r.v	v0, v11

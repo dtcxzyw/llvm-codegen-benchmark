@@ -1,7 +1,7 @@
 func0000000000000128:
 	sub	a1, a1, a2
-	slli	a0, a0, 32
 	srai	a1, a1, 5
+	slli	a0, a0, 32
 	addi	a1, a1, -1
 	srli	a0, a0, 32
 	sltu	a0, a0, a1
@@ -18,8 +18,8 @@ func00000000000001a1:
 
 func0000000000000121:
 	sub	a1, a1, a2
-	slli	a0, a0, 32
 	srai	a1, a1, 3
+	slli	a0, a0, 32
 	addi	a1, a1, -1
 	srli	a0, a0, 32
 	xor	a0, a0, a1
@@ -28,8 +28,8 @@ func0000000000000121:
 
 func0000000000000124:
 	sub	a1, a1, a2
-	slli	a0, a0, 32
 	srai	a1, a1, 2
+	slli	a0, a0, 32
 	addi	a1, a1, -1
 	srli	a0, a0, 32
 	sltu	a0, a1, a0
@@ -37,8 +37,8 @@ func0000000000000124:
 
 func0000000000000125:
 	sub	a1, a1, a2
-	slli	a0, a0, 32
 	srai	a1, a1, 3
+	slli	a0, a0, 32
 	addi	a1, a1, -1
 	srli	a0, a0, 32
 	sltu	a0, a0, a1

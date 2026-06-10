@@ -6,8 +6,8 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	li	a1, 2
+	sext.w	a0, a0
 	bltu	a0, a1, .LBB1_2
 	fmv.d.x	fa0, zero
 .LBB1_2:
@@ -21,8 +21,8 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	sext.w	a0, a0
 	li	a1, 4
+	sext.w	a0, a0
 	bltu	a0, a1, .LBB3_2
 	fmv.d.x	fa0, zero
 .LBB3_2:

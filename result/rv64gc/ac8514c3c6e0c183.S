@@ -1,6 +1,6 @@
 func0000000000000008:
-	zext.b	a1, a1
 	slli	a0, a0, 58
+	zext.b	a1, a1
 	srli	a0, a0, 54
 	or	a0, a0, a1
 	ret
@@ -20,17 +20,17 @@ func000000000000000f:
 	ret
 
 func0000000000000009:
-	zext.b	a1, a1
-	slliw	a0, a0, 3
 	lui	a2, 786448
+	slliw	a0, a0, 3
 	addi	a2, a2, -8
+	zext.b	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	zext.b	a1, a1
 	slli	a0, a0, 56
+	zext.b	a1, a1
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret

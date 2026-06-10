@@ -1,7 +1,7 @@
 func0000000000000019:
-	sext.w	a3, a0
 	add	a1, a1, a2
-	slti	a2, a3, 128
+	sext.w	a2, a0
+	slti	a2, a2, 128
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
@@ -18,9 +18,9 @@ func0000000000000004:
 	ret
 
 func00000000000001a9:
-	sext.w	a3, a0
 	add	a1, a1, a2
-	slti	a2, a3, 15
+	sext.w	a2, a0
+	slti	a2, a2, 15
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
@@ -28,9 +28,9 @@ func00000000000001a9:
 	ret
 
 func00000000000001a8:
-	sext.w	a3, a0
 	add	a1, a1, a2
-	slti	a2, a3, 15
+	sext.w	a2, a0
+	slti	a2, a2, 15
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1

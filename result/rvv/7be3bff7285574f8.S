@@ -1,9 +1,10 @@
 func0000000000000034:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
-	vmv.v.i	v8, 12
+	vmv.v.i	v12, 12
+	vsub.vv	v8, v10, v8
 	li	a0, 12
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000008:
@@ -15,67 +16,74 @@ func0000000000000008:
 	ret
 
 func0000000000000035:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	lui	a0, 66962
 	addi	a0, a0, -352
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
 	lui	a0, 1
 	addi	a0, a0, -96
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	li	a0, 36
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
 	li	a0, 12
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func000000000000000a:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	li	a0, 48
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
 	li	a0, 24
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func000000000000000b:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	li	a0, 48
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
 	li	a0, 24
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func000000000000003b:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	li	a0, 208
-	vmv.v.x	v8, a0
-	vmacc.vx	v8, a0, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func000000000000003f:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	li	a0, 368
-	vmv.v.x	v8, a0
-	vmacc.vx	v8, a0, v10
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v10, v10, v8
 	lui	a0, 732
 	addi	a0, a0, 1728
-	vmv.v.x	v8, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsub.vv	v8, v10, v8
 	lui	a0, 244
 	addi	a0, a0, 576
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v12, a0, v8
+	vmv.v.v	v8, v12
 	ret
 

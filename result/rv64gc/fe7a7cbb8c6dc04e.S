@@ -1,8 +1,8 @@
 func000000000000002c:
 	li	a2, 1
-	andi	a0, a0, 250
 	slli	a2, a2, 52
 	and	a1, a1, a2
+	andi	a0, a0, 250
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -24,9 +24,9 @@ func000000000000018c:
 
 func0000000000000021:
 	li	a2, 1
-	andi	a0, a0, 2
 	slli	a2, a2, 40
 	and	a1, a1, a2
+	andi	a0, a0, 2
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

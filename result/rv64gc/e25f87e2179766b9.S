@@ -1,22 +1,22 @@
 .LCPI0_0:
 	.quad	0x3fffffe000000000
 func0000000000000054:
+	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a0)
-	fmv.d.x	fa4, zero
-	fle.d	a0, fa1, fa4
+	fld	fa4, %lo(.LCPI0_0)(a0)
+	fle.d	a0, fa1, fa5
+	flt.d	a1, fa4, fa0
 	not	a0, a0
-	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 
 func0000000000000075:
-	fmv.d.x	fa5, zero
 	li	a0, 1021
-	feq.d	a1, fa1, fa5
+	fmv.d.x	fa5, zero
 	slli	a0, a0, 52
-	fmv.d.x	fa5, a0
-	fle.d	a0, fa0, fa5
+	fmv.d.x	fa4, a0
+	feq.d	a0, fa1, fa5
+	fle.d	a1, fa0, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -24,22 +24,22 @@ func0000000000000075:
 .LCPI2_0:
 	.quad	0x3fb999999999999a
 func0000000000000032:
+	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
-	fmv.d.x	fa4, zero
-	fle.d	a0, fa4, fa1
+	fld	fa4, %lo(.LCPI2_0)(a0)
+	fle.d	a0, fa5, fa1
+	flt.d	a1, fa0, fa4
 	not	a0, a0
-	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 
 func0000000000000073:
-	fmv.d.x	fa5, zero
 	li	a0, 2045
-	feq.d	a1, fa1, fa5
 	slli	a0, a0, 51
 	fmv.d.x	fa5, a0
+	fmv.d.x	fa4, zero
 	fle.d	a0, fa5, fa0
+	feq.d	a1, fa1, fa4
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -47,32 +47,32 @@ func0000000000000073:
 .LCPI4_0:
 	.quad	0x3f1a36e2eb1c432d
 func0000000000000072:
+	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
-	fmv.d.x	fa4, zero
-	feq.d	a0, fa1, fa4
-	flt.d	a1, fa0, fa5
+	fld	fa4, %lo(.LCPI4_0)(a0)
+	feq.d	a0, fa1, fa5
+	flt.d	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 
 func000000000000007c:
-	fmv.d.x	fa5, zero
 	li	a0, 2045
-	feq.d	a1, fa1, fa5
+	fmv.d.x	fa5, zero
 	slli	a0, a0, 51
-	not	a1, a1
-	fmv.d.x	fa5, a0
-	fle.d	a0, fa5, fa0
+	fmv.d.x	fa4, a0
+	feq.d	a0, fa1, fa5
+	fle.d	a1, fa4, fa0
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000007a:
-	fmv.d.x	fa5, zero
 	li	a0, 1
-	feq.d	a1, fa1, fa5
+	fmv.d.x	fa5, zero
 	slli	a0, a0, 62
-	fmv.d.x	fa5, a0
-	fle.d	a0, fa0, fa5
+	fmv.d.x	fa4, a0
+	feq.d	a0, fa1, fa5
+	fle.d	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 
@@ -92,30 +92,30 @@ func0000000000000044:
 	ret
 
 func0000000000000074:
-	fmv.d.x	fa5, zero
 	li	a0, 1023
-	feq.d	a1, fa1, fa5
+	fmv.d.x	fa5, zero
 	slli	a0, a0, 52
-	not	a1, a1
-	fmv.d.x	fa5, a0
-	flt.d	a0, fa5, fa0
+	fmv.d.x	fa4, a0
+	feq.d	a0, fa1, fa5
+	flt.d	a1, fa4, fa0
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func00000000000000ee:
 	feq.d	a0, fa1, fa1
-	xori	a0, a0, 1
 	feq.d	a1, fa0, fa0
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000042:
-	fmv.d.x	fa5, zero
 	li	a0, 1023
-	flt.d	a1, fa5, fa1
+	fmv.d.x	fa5, zero
 	slli	a0, a0, 52
-	fmv.d.x	fa5, a0
-	flt.d	a0, fa0, fa5
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa1
+	flt.d	a1, fa0, fa4
 	and	a0, a0, a1
 	ret
 

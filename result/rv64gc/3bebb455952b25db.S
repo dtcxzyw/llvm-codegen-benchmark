@@ -9,8 +9,8 @@ func0000000000000008:
 	ret
 
 func0000000000000003:
-	srliw	a0, a0, 10
 	li	a1, -5
+	srliw	a0, a0, 10
 	slli	a1, a1, 11
 	add	a0, a0, a1
 	ret
@@ -21,8 +21,8 @@ func000000000000000f:
 	ret
 
 func0000000000000011:
-	srliw	a0, a0, 10
 	li	a1, -5
+	srliw	a0, a0, 10
 	slli	a1, a1, 11
 	add	a0, a0, a1
 	ret
@@ -58,8 +58,8 @@ func000000000000000d:
 	ret
 
 func000000000000000b:
-	srliw	a0, a0, 10
 	lui	a1, 1048573
+	srliw	a0, a0, 10
 	addi	a1, a1, 1984
 	add	a0, a0, a1
 	ret

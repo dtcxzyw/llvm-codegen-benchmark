@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
-	andi	a0, a0, 1
 	addiw	a1, a1, -17
+	andi	a0, a0, 1
 	addi	a1, a1, 18
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, -18

@@ -5,8 +5,8 @@ func000000000000000a:
 	ret
 
 func000000000000002a:
-	sext.w	a0, a0
 	subw	a1, a1, a2
+	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
 

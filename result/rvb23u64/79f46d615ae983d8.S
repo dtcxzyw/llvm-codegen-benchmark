@@ -66,10 +66,10 @@ func0000000000000008:
 	ret
 
 func0000000000000281:
-	sext.w	a0, a0
 	li	a3, -20
 	sub	a3, a3, a2
 	mulw	a1, a3, a1
+	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

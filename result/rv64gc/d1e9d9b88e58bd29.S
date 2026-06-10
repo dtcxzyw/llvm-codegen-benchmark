@@ -8,8 +8,8 @@ func0000000000000018:
 	ret
 
 func0000000000000060:
-	add	a0, a0, a2
 	slli	a1, a1, 11
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 1
@@ -17,8 +17,8 @@ func0000000000000060:
 	ret
 
 func00000000000001fe:
-	add	a0, a0, a2
 	slli	a1, a1, 1
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 512
 	srliw	a0, a0, 10

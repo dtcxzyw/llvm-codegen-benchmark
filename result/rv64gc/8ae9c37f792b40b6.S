@@ -32,8 +32,8 @@ func00000000000001f4:
 	ret
 
 func00000000000003e1:
-	addi	a1, a1, 511
 	lui	a2, 262144
+	addi	a1, a1, 511
 	addi	a2, a2, -512
 	and	a1, a1, a2
 	addi	a0, a0, 1

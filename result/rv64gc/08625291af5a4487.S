@@ -26,22 +26,22 @@ func0000000000000012:
 	ret
 
 func0000000000000037:
-	addiw	a1, a1, 16
 	slli	a0, a0, 32
+	addiw	a1, a1, 16
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
 
 func000000000000003b:
-	addiw	a1, a1, 16
 	slli	a0, a0, 32
+	addiw	a1, a1, 16
 	srli	a0, a0, 32
 	mul	a0, a0, a1
 	ret
 
 func000000000000001b:
-	addiw	a1, a1, 24
 	slli	a0, a0, 32
+	addiw	a1, a1, 24
 	srli	a0, a0, 32
 	mul	a0, a0, a1
 	ret

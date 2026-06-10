@@ -6,8 +6,8 @@ func0000000000000018:
 	ret
 
 func000000000000001e:
-	srli	a1, a1, 27
 	li	a2, 1712
+	srli	a1, a1, 27
 	sh3add	a1, a2, a1
 	mul	a0, a0, a1
 	srli	a0, a0, 26

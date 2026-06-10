@@ -8,9 +8,9 @@ func0000000000000005:
 
 func0000000000000000:
 	li	a1, 7
+	lui	a2, 21
 	sub	a1, a1, a0
-	lui	a0, 21
-	addi	a0, a0, 384
+	addi	a0, a2, 384
 	mulw	a0, a1, a0
 	ret
 

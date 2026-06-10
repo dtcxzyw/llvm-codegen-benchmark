@@ -23,10 +23,10 @@ func000000000000000f:
 	ret
 
 func000000000000001f:
+	lui	a3, 524288
 	add	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -4
-	and	a1, a1, a2
+	addiw	a3, a3, -4
+	and	a1, a1, a3
 	lui	a2, 56
 	slli	a1, a1, 2
 	add	a0, a0, a2
@@ -34,10 +34,10 @@ func000000000000001f:
 	ret
 
 func0000000000000013:
+	lui	a3, 524288
 	add	a1, a1, a2
-	lui	a2, 524288
-	addiw	a2, a2, -4
-	and	a1, a1, a2
+	addiw	a3, a3, -4
+	and	a1, a1, a3
 	lui	a2, 48
 	slli	a1, a1, 2
 	add	a0, a0, a2
@@ -62,8 +62,8 @@ func000000000000005f:
 
 func000000000000003f:
 	add	a1, a1, a2
-	lui	a2, 2
 	andi	a1, a1, 31
+	lui	a2, 2
 	add	a0, a0, a1
 	addi	a1, a2, -96
 	add	a0, a0, a1

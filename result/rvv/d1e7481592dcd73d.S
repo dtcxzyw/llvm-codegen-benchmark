@@ -31,9 +31,9 @@ func0000000000000046:
 	ret
 
 func0000000000000044:
+	li	a0, 120
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 4
-	li	a0, 120
 	vmseq.vi	v9, v10, 0
 	vmor.mm	v9, v0, v9
 	vsetvli	zero, zero, e32, m1, ta, ma

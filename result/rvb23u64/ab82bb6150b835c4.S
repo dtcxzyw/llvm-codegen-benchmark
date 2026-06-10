@@ -5,9 +5,9 @@ func0000000000000003:
 	ret
 
 func0000000000000011:
+	li	a1, -10
 	zext.h	a0, a0
 	sltiu	a0, a0, 761
-	li	a1, -10
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 299
 	ret

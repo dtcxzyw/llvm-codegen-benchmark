@@ -1,16 +1,16 @@
 func000000000000000f:
+	li	a3, 85
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 85
 	zext.b	a1, a1
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
 func000000000000007f:
+	li	a3, 100
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, 100
 	zext.b	a1, a1
-	mul	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

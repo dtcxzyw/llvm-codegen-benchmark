@@ -9,11 +9,11 @@ func0000000000000028:
 
 func0000000000000071:
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfne.vv	v24, v16, v8
-	vmfne.vv	v25, v16, v16
-	vmfne.vv	v16, v8, v8
-	vmor.mm	v8, v16, v25
-	vmandn.mm	v9, v24, v8
+	vmfne.vv	v24, v16, v16
+	vmfne.vv	v25, v8, v8
+	vmfne.vv	v26, v16, v8
+	vmor.mm	v8, v25, v24
+	vmandn.mm	v9, v26, v8
 	vmand.mm	v8, v0, v8
 	vmor.mm	v0, v8, v9
 	ret

@@ -6,8 +6,8 @@ func000000000000000f:
 	ret
 
 func000000000000000e:
-	srli	a2, a2, 7
 	li	a3, 15
+	srli	a2, a2, 7
 	slli	a3, a3, 8
 	and	a2, a2, a3
 	or	a0, a0, a1

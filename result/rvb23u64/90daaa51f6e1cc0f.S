@@ -33,8 +33,8 @@ func0000000000000009:
 
 func0000000000000011:
 	zext.h	a1, a1
-	lui	a2, 1047040
 	sltiu	a1, a1, 13
+	lui	a2, 1047040
 	czero.eqz	a1, a2, a1
 	lui	a2, 525824
 	add	a1, a1, a2

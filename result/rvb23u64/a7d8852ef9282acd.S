@@ -4,8 +4,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	bclri	a0, a0, 30
 	lui	a1, 655360
+	bclri	a0, a0, 30
 	xnor	a0, a0, a1
 	ret
 

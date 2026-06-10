@@ -35,8 +35,8 @@ func0000000000000025:
 	ret
 
 func0000000000000024:
-	addiw	a0, a0, -1
 	lui	a1, 335544
+	addiw	a0, a0, -1
 	addi	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a1, a0, 63

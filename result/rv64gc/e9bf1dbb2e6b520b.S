@@ -8,18 +8,18 @@ func0000000000000006:
 	ret
 
 func0000000000000005:
-	sext.w	a2, a1
-	li	a3, -1
-	bne	a2, a3, .LBB1_2
+	li	a2, -1
+	sext.w	a3, a1
+	bne	a3, a2, .LBB1_2
 	li	a1, 1
 .LBB1_2:
 	subw	a0, a1, a0
 	ret
 
 func0000000000000004:
-	sext.w	a2, a1
-	li	a3, 31
-	bne	a2, a3, .LBB2_2
+	li	a2, 31
+	sext.w	a3, a1
+	bne	a3, a2, .LBB2_2
 	li	a1, 30
 .LBB2_2:
 	subw	a0, a1, a0
@@ -42,9 +42,9 @@ func0000000000000019:
 	ret
 
 func0000000000000007:
-	sext.w	a2, a1
-	li	a3, 6
-	bne	a2, a3, .LBB5_2
+	li	a2, 6
+	sext.w	a3, a1
+	bne	a3, a2, .LBB5_2
 	li	a1, 5
 .LBB5_2:
 	subw	a0, a1, a0

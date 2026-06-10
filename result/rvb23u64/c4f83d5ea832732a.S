@@ -1,8 +1,8 @@
 func0000000000000018:
 	andi	a2, a2, 128
+	slli	a2, a2, 32
 	or	a0, a0, a1
 	lui	a1, 514
-	slli	a2, a2, 32
 	or	a0, a0, a2
 	addi	a1, a1, -1912
 	or	a0, a0, a1

@@ -14,27 +14,27 @@ func0000000000000009:
 	ret
 
 func0000000000000002:
-	lui	a0, 260096
-	lui	a1, 797452
-	addi	a1, a1, 165
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
-	fmv.w.x	fa0, a0
-	bnez	a1, .LBB1_2
+	lui	a0, 797452
+	addi	a0, a0, 165
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa0, fa5
+	lui	a1, 260096
+	fmv.w.x	fa0, a1
+	bnez	a0, .LBB1_2
 	fdiv.s	fa0, fa0, fa1
 .LBB1_2:
 	ret
 
 func0000000000000008:
-	fmv.s	fa5, fa0
-	fmv.w.x	fa0, zero
-	feq.s	a0, fa5, fa0
+	fmv.w.x	fa5, zero
+	feq.s	a0, fa0, fa5
 	bnez	a0, .LBB2_2
 	lui	a0, 254512
 	addi	a0, a0, -1661
 	fmv.w.x	fa5, a0
-	fdiv.s	fa0, fa5, fa1
+	fdiv.s	fa5, fa5, fa1
 .LBB2_2:
+	fmv.s	fa0, fa5
 	ret
 
 func000000000000000b:

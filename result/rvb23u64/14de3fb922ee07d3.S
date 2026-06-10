@@ -1,8 +1,8 @@
 func0000000000000074:
 	zext.h	a1, a1
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 2003
+	addi	a1, a2, 2003
 	sltu	a0, a0, a1
 	ret
 
@@ -27,8 +27,8 @@ func0000000000000078:
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -36,10 +36,10 @@ func0000000000000001:
 
 func0000000000000064:
 	zext.h	a1, a1
+	lui	a2, 12
 	addw	a0, a0, a1
-	lui	a1, 12
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000026:
@@ -50,10 +50,10 @@ func0000000000000026:
 
 func00000000000000c8:
 	zext.h	a1, a1
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -4
-	sltu	a0, a1, a0
+	addi	a2, a2, -4
+	sltu	a0, a2, a0
 	ret
 
 func0000000000000006:
@@ -90,8 +90,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -118,8 +118,8 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

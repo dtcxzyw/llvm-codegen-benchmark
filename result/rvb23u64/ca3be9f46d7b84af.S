@@ -6,12 +6,12 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
+	lui	a2, 1046001
 	srai	a1, a1, 63
+	addi	a2, a2, 325
 	add	a0, a0, a1
-	lui	a1, 1046001
-	addi	a1, a1, 325
-	slli	a1, a1, 13
-	mul	a0, a0, a1
+	slli	a2, a2, 13
+	mul	a0, a0, a2
 	ret
 
 func0000000000000000:

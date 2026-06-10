@@ -3,8 +3,8 @@ func0000000000000042:
 	addi	a2, a2, 1
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 
 func0000000000000002:
@@ -12,29 +12,29 @@ func0000000000000002:
 	addi	a2, a2, 4
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 
 func0000000000000003:
+	li	a4, 4
 	sub	a2, a2, a3
-	li	a3, 4
-	bseti	a3, a3, 58
+	bseti	a3, a4, 58
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 
 func0000000000000000:
+	lui	a4, 1048574
 	sub	a2, a2, a3
-	lui	a3, 1048574
-	srli	a3, a3, 12
-	add	a2, a2, a3
+	srli	a4, a4, 12
+	add	a2, a2, a4
 	mul	a1, a1, a2
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 

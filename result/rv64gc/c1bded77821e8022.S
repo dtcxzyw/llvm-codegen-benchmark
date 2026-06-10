@@ -17,8 +17,8 @@ func0000000000000a8a:
 
 func0000000000000a81:
 	srai	a2, a2, 4
-	slli	a1, a1, 5
 	add	a0, a0, a2
+	slli	a1, a1, 5
 	li	a2, -1
 	add	a0, a0, a1
 	srli	a2, a2, 5
@@ -28,8 +28,8 @@ func0000000000000a81:
 
 func0000000000000881:
 	srai	a2, a2, 4
-	slli	a1, a1, 2
 	add	a0, a0, a2
+	slli	a1, a1, 2
 	li	a2, -1
 	add	a0, a0, a1
 	srli	a2, a2, 5

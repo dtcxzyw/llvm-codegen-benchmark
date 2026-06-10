@@ -23,8 +23,8 @@ func0000000000000001:
 	li	a2, 1000
 	mul	a1, a1, a2
 	lui	a2, 804435
-	add	a0, a0, a1
-	addi	a1, a2, 1536
+	addi	a2, a2, 1536
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

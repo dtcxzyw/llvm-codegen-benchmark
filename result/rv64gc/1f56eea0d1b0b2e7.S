@@ -6,10 +6,10 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
+	lui	a3, 32767
 	sub	a2, a2, a1
-	lui	a1, 32767
-	slli	a1, a1, 5
-	bltu	a2, a1, .LBB1_2
+	slli	a3, a3, 5
+	bltu	a2, a3, .LBB1_2
 	li	a0, 31
 .LBB1_2:
 	ret

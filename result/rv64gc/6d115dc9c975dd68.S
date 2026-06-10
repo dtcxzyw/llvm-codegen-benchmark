@@ -18,9 +18,9 @@ func0000000000000114:
 	ret
 
 func0000000000000018:
-	sext.w	a0, a0
 	slli	a2, a1, 1
 	neg	a1, a1
+	sext.w	a0, a0
 	subw	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

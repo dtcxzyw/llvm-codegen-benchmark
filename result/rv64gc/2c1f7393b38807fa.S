@@ -35,27 +35,27 @@ func0000000000000206:
 	ret
 
 func000000000000018a:
-	sext.w	a0, a0
 	sext.w	a2, a2
 	slti	a2, a2, 4
 	addi	a2, a2, -1
-	and	a1, a1, a2
-	sext.w	a1, a1
-	blt	a1, a0, .LBB2_2
-	mv	a1, a0
+	and	a2, a2, a1
+	sext.w	a1, a0
+	sext.w	a0, a2
+	blt	a0, a1, .LBB2_2
+	mv	a0, a1
 .LBB2_2:
-	sgtz	a0, a1
+	sgtz	a0, a0
 	ret
 
 func0000000000000186:
-	sext.w	a0, a0
 	srliw	a2, a2, 31
 	addi	a2, a2, -1
-	and	a1, a1, a2
-	sext.w	a1, a1
-	blt	a1, a0, .LBB3_2
-	mv	a1, a0
+	and	a2, a2, a1
+	sext.w	a1, a0
+	sext.w	a0, a2
+	blt	a0, a1, .LBB3_2
+	mv	a0, a1
 .LBB3_2:
-	slti	a0, a1, 1
+	slti	a0, a0, 1
 	ret
 

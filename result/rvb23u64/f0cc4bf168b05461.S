@@ -5,9 +5,9 @@ func000000000000001d:
 	ret
 
 func000000000000001f:
+	lui	a1, 16
 	andi	a0, a0, 15
 	slli	a0, a0, 16
-	lui	a1, 16
 	add	a0, a0, a1
 	ret
 

@@ -1,8 +1,8 @@
 func000000000000000a:
+	li	a3, 4
 	add	a0, a0, a2
 	sub	a0, a1, a0
-	li	a1, 4
-	blt	a0, a1, .LBB0_2
+	blt	a0, a3, .LBB0_2
 	li	a0, 4
 .LBB0_2:
 	ret

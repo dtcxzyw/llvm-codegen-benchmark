@@ -20,9 +20,9 @@ func0000000000000009:
 	ret
 
 func0000000000000011:
+	li	a1, 2
 	addi	a0, a0, 1
 	srliw	a0, a0, 1
-	li	a1, 2
 	bltu	a1, a0, .LBB3_2
 	li	a0, 2
 .LBB3_2:

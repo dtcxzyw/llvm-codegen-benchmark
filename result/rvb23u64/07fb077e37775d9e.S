@@ -1,10 +1,10 @@
 func0000000000000008:
-	fmv.d	fa5, fa0
-	fmv.d.x	fa0, zero
-	feq.d	a0, fa5, fa0
+	fmv.d.x	fa5, zero
+	feq.d	a0, fa0, fa5
 	bnez	a0, .LBB0_2
-	fdiv.d	fa0, fa1, fa5
+	fdiv.d	fa5, fa1, fa0
 .LBB0_2:
+	fmv.d	fa0, fa5
 	ret
 
 .LCPI1_0:

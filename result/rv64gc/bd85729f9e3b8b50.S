@@ -7,11 +7,11 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	slliw	a2, a2, 16
+	lui	a3, 1048560
 	xor	a0, a0, a1
-	lui	a1, 1048560
-	and	a0, a0, a1
-	xor	a0, a0, a2
+	slliw	a1, a2, 16
+	and	a0, a0, a3
+	xor	a0, a0, a1
 	ret
 
 func0000000000000003:

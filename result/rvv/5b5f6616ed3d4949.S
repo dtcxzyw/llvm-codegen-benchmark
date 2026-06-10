@@ -1,10 +1,10 @@
 func000000000000000a:
 	fli.d	fa5, -1.0
-	lui	a0, 15621
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v8, v8, fa5
-	slli	a0, a0, 36
 	vfabs.v	v8, v8
+	lui	a0, 15621
+	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5
 	vmand.mm	v0, v0, v16

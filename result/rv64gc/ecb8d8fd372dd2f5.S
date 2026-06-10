@@ -1,8 +1,8 @@
 func00000000000001a8:
-	srai	a2, a2, 4
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	slli	a4, a3, 32
+	srai	a2, a2, 4
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	srai	a1, a1, 2
@@ -11,13 +11,13 @@ func00000000000001a8:
 	ret
 
 func00000000000001a1:
-	srai	a2, a2, 3
-	srai	a1, a1, 3
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	slli	a4, a3, 32
+	srai	a1, a1, 3
 	add	a3, a3, a4
 	mul	a1, a1, a3
+	srai	a2, a2, 3
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -43,10 +43,10 @@ func0000000000000021:
 func0000000000000128:
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
-	srai	a2, a2, 4
 	mulh	a1, a1, a3
 	srli	a3, a1, 63
 	srai	a1, a1, 1
+	srai	a2, a2, 4
 	add	a1, a1, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1

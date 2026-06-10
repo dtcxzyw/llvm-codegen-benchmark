@@ -24,9 +24,9 @@ func000000000000000c:
 
 func0000000000000002:
 	fmv.s	fa5, fa0
+	lui	a1, 196608
 	fcvt.s.w	fa4, a0
-	lui	a0, 196608
-	fmv.w.x	fa3, a0
+	fmv.w.x	fa3, a1
 	fmul.s	fa0, fa4, fa3
 	fmul.s	fa5, fa5, fa3
 	flt.s	a0, fa0, fa5

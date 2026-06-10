@@ -1,6 +1,6 @@
 func000000000000000e:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 231424
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	lui	a1, 260096
 	fmul.s	fa5, fa5, fa4
@@ -11,8 +11,8 @@ func000000000000000e:
 	ret
 
 func0000000000000010:
-	fadd.s	fa5, fa0, fa1
 	lui	a1, 258048
+	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	lui	a1, 260096
 	fmul.s	fa5, fa5, fa4

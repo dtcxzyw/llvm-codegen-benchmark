@@ -2,8 +2,8 @@ func0000000000000024:
 	li	a3, -16
 	sub	a3, a3, a2
 	li	a2, -1
-	srli	a2, a2, 4
 	sltu	a1, a1, a3
+	srli	a2, a2, 4
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

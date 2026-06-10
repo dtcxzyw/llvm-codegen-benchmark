@@ -1,6 +1,6 @@
 func000000000000000d:
-	andi	a1, a1, 63
 	slli	a0, a0, 48
+	andi	a1, a1, 63
 	srli	a0, a0, 48
 	sub	a0, a1, a0
 	ret

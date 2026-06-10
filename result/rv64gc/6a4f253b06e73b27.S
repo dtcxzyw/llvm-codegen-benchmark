@@ -29,9 +29,9 @@ func000000000000009a:
 	ret
 
 func0000000000000012:
+	slli	a1, a1, 5
 	slli	a0, a0, 5
 	add	a0, a0, a2
-	slli	a1, a1, 5
 	sub	a0, a0, a1
 	addi	a0, a0, -32
 	ret

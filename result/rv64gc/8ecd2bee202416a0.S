@@ -12,9 +12,9 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
+	lui	a2, 442489
 	xor	a0, a0, a1
-	lui	a1, 442489
-	addi	a1, a1, -1691
+	addi	a1, a2, -1691
 	mul	a0, a0, a1
 	addi	a0, a0, 1
 	ret

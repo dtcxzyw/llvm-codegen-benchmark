@@ -2,13 +2,13 @@
 	.quad	0x3fd34413509f79fb
 func0000000000000072:
 	lui	a1, %hi(.LCPI0_0)
-	fld	fa5, %lo(.LCPI0_0)(a1)
-	fcvt.d.w	fa4, a0
-	fmadd.d	fa5, fa4, fa5, fa1
+	fcvt.d.w	fa5, a0
+	fld	fa4, %lo(.LCPI0_0)(a1)
+	fmadd.d	fa5, fa5, fa4, fa1
 	fmv.d.x	fa4, zero
-	flt.d	a0, fa5, fa4
-	feq.d	a1, fa5, fa0
-	xori	a1, a1, 1
+	feq.d	a0, fa5, fa0
+	flt.d	a1, fa5, fa4
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

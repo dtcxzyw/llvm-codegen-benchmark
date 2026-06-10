@@ -1,9 +1,9 @@
 func00000000000001fe:
 	lui	a3, 160
-	add	a0, a0, a1
-	lui	a1, 256
 	addi	a3, a3, -1177
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 256
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srli	a0, a0, 21

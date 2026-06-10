@@ -10,11 +10,11 @@ func0000000000000144:
 	ret
 
 func000000000000008c:
-	sext.w	a2, a0
-	or	a0, a0, a1
-	srliw	a0, a0, 30
-	seqz	a0, a0
-	snez	a1, a2
+	or	a1, a1, a0
+	sext.w	a0, a0
+	srliw	a1, a1, 30
+	seqz	a1, a1
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 

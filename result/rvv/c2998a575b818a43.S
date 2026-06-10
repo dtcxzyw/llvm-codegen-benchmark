@@ -27,10 +27,10 @@ func0000000000000618:
 func0000000000000514:
 	li	a0, 45
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, 0
 	vmsltu.vx	v0, v8, a0
-	li	a0, 42
+	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	li	a0, 42
 	vmsltu.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 2, v0
 	ret
@@ -56,12 +56,12 @@ func0000000000000201:
 
 func0000000000000286:
 	lui	a0, 16
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, 0
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
-	li	a0, 256
+	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
+	li	a0, 256
 	vmslt.vx	v0, v8, a0
 	vmerge.vim	v8, v10, 2, v0
 	ret

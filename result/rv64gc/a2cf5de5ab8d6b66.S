@@ -7,9 +7,9 @@ func000000000000002c:
 	add	a1, a1, a2
 	slliw	a2, a1, 30
 	srliw	a1, a1, 2
+	lui	a3, 10486
 	or	a1, a1, a2
-	lui	a2, 10486
-	addi	a2, a2, -984
+	addi	a2, a3, -984
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

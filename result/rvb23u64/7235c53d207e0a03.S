@@ -1,7 +1,7 @@
 func0000000000000001:
-	zext.w	a2, a2
 	lui	a3, 847033
 	slli.uw	a3, a3, 3
+	zext.w	a2, a2
 	addi	a3, a3, -1744
 	mul	a2, a2, a3
 	add	a1, a1, a2
@@ -28,8 +28,8 @@ func00000000000007e1:
 	ret
 
 func0000000000000aaa:
-	sext.w	a2, a2
 	lui	a3, 1033928
+	sext.w	a2, a2
 	addi	a3, a3, -1792
 	mul	a2, a2, a3
 	add	a0, a0, a1

@@ -1,6 +1,6 @@
 func0000000000000021:
-	snez	a0, a0
 	andi	a1, a1, 1
+	snez	a0, a0
 	addi	a1, a1, -1
 	andi	a1, a1, 256
 	slli	a0, a0, 12
@@ -8,8 +8,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	andi	a1, a1, 1
 	binvi	a0, a0, 33
+	andi	a1, a1, 1
 	seqz	a0, a0
 	sh2add	a0, a0, a1
 	addiw	a0, a0, 2

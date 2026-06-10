@@ -8,11 +8,11 @@ func00000000000001ec:
 	ret
 
 func00000000000001f5:
+	lui	a0, 49
+	addi	a0, a0, 196
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 49
 	vwsll.vi	v10, v12, 2
-	addi	a0, a0, 196
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsleu.vv	v0, v10, v8
@@ -55,10 +55,10 @@ func00000000000001b5:
 	ret
 
 func00000000000001e8:
+	li	a0, 16
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v10
 	vwsll.vi	v10, v12, 2
-	li	a0, 16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10

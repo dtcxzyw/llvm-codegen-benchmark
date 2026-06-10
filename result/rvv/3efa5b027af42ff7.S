@@ -1,9 +1,9 @@
 func0000000000000000:
+	lui	a0, 307200
+	fmv.w.x	fa5, a0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
-	lui	a0, 307200
 	vfabs.v	v10, v8
-	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v10, fa5
 	vfcvt.rtz.x.f.v	v10, v8, v0.t
 	vfcvt.f.x.v	v10, v10, v0.t

@@ -7,8 +7,8 @@ func000000000000002b:
 
 func00000000000000ab:
 	sext.w	a2, a2
-	slli	a1, a1, 48
 	slli	a2, a2, 5
+	slli	a1, a1, 48
 	sub	a0, a0, a2
 	srli	a1, a1, 43
 	add	a0, a0, a1

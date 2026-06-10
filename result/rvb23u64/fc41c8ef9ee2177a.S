@@ -11,15 +11,15 @@ func000000000000000c:
 	snez	a1, a1
 	and	a0, a0, a1
 	lui	a1, 1044477
+	lui	a2, 8195
 	czero.nez	a0, a1, a0
-	lui	a1, 8195
-	addi	a1, a1, 45
+	addi	a1, a2, 45
 	add	a0, a0, a1
 	ret
 
 func0000000000000004:
-	zext.h	a1, a1
 	lui	a2, 16
+	zext.h	a1, a1
 	addi	a2, a2, -2
 	sltu	a1, a1, a2
 	and	a0, a0, a1

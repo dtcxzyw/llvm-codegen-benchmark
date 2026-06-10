@@ -10,8 +10,8 @@ func0000000000000008:
 	ret
 
 func0000000000000009:
-	addiw	a1, a1, -1
 	li	a2, 2
+	addiw	a1, a1, -1
 	bltu	a1, a2, .LBB1_2
 	li	a1, 128
 	or	a0, a0, a1

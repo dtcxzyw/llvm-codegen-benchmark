@@ -1,8 +1,8 @@
 func000000000000005e:
+	lui	a3, 1
 	add	a0, a0, a1
-	lui	a1, 1
 	add	a0, a0, a2
-	addi	a1, a1, 164
+	addi	a1, a3, 164
 	add	a0, a0, a1
 	ret
 

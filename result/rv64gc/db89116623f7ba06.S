@@ -16,27 +16,27 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
+	li	a2, 128
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 128
 	bgeu	a1, a2, .LBB2_2
 	li	a0, 1
 .LBB2_2:
 	ret
 
 func000000000000000a:
+	li	a2, 5
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	li	a2, 5
 	bge	a2, a1, .LBB3_2
 	li	a0, 15
 .LBB3_2:
 	ret
 
 func0000000000000008:
+	li	a2, 776
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 776
 	bgeu	a2, a1, .LBB4_2
 	li	a0, 760
 .LBB4_2:

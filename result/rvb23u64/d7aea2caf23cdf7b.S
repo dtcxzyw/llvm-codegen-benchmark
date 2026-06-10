@@ -17,10 +17,10 @@ func0000000000000004:
 
 func000000000000000a:
 	slli	a1, a1, 63
-	lui	a2, 524288
 	srai	a1, a1, 63
-	addiw	a2, a2, -1
+	lui	a2, 524288
 	andi	a1, a1, 12
+	addiw	a2, a2, -1
 	slt	a0, a2, a0
 	addi	a1, a1, -11
 	czero.nez	a0, a1, a0

@@ -14,10 +14,10 @@ func000000000000018c:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
 	lui	a3, 4097
 	addi	a3, a3, -2048
 	and	a2, a2, a3
+	sext.w	a1, a1
 	seqz	a2, a2
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1

@@ -13,10 +13,10 @@ func0000000000000034:
 	ret
 
 func0000000000000074:
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -32
-	and	a0, a0, a1
+	addi	a2, a2, -32
+	and	a0, a0, a2
 	sltiu	a0, a0, 96
 	li	a1, -100
 	czero.nez	a0, a1, a0

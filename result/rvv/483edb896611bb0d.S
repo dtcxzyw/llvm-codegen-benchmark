@@ -21,21 +21,21 @@ func0000000000000002:
 	ret
 
 func0000000000000011:
-	li	a0, -1
-	lui	a1, 73
-	srli	a0, a0, 32
-	addi	a1, a1, 992
+	lui	a0, 73
+	addi	a0, a0, 992
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmsltu.vx	v0, v8, a1
-	vmv.v.x	v8, a1
+	vmsltu.vx	v0, v8, a0
+	vmv.v.x	v8, a0
+	li	a0, -1
+	srli	a0, a0, 32
 	vand.vx	v8, v10, a0, v0.t
 	ret
 
 func0000000000000030:
 	lui	a0, 1
-	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
+	li	a1, -1
 	srli	a1, a1, 32
 	vand.vx	v8, v10, a1
 	vmerge.vxm	v8, v8, a0, v0

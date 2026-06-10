@@ -77,8 +77,8 @@ func00000000000002e4:
 
 func00000000000003f8:
 	zext.b	a1, a1
-	slliw	a0, a0, 16
 	slliw	a1, a1, 8
+	slliw	a0, a0, 16
 	or	a0, a0, a1
 	lui	a1, 16
 	sltu	a0, a1, a0

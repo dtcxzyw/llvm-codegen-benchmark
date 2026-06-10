@@ -39,9 +39,9 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
+	lui	a2, 262144
 	add	a0, a0, a1
-	lui	a1, 262144
-	addi	a1, a1, -64
+	addi	a1, a2, -64
 	and	a0, a0, a1
 	snez	a0, a0
 	ret

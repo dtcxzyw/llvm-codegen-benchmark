@@ -25,10 +25,10 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 1
 	lui	a1, 265361
 	addi	a1, a1, -37
 	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	beqz	a0, .LBB2_2
 	fadd.s	fa0, fa0, fa5
 .LBB2_2:

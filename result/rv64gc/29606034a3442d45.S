@@ -96,8 +96,8 @@ func0000000000000201:
 	ret
 
 func0000000000000208:
-	addi	a0, a0, 15
 	lui	a1, 65535
+	addi	a0, a0, 15
 	slli	a1, a1, 12
 	and	a0, a0, a1
 	snez	a0, a0

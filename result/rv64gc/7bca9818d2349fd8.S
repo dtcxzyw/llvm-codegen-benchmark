@@ -18,8 +18,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000021:
-	srli	a1, a1, 24
 	lui	a2, 16
+	srli	a1, a1, 24
 	addi	a3, a2, -256
 	and	a1, a1, a3
 	or	a0, a0, a1

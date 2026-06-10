@@ -36,11 +36,11 @@ func000000000000003f:
 
 func000000000000002f:
 	slli	a2, a2, 48
-	slli	a1, a1, 32
 	srli	a2, a2, 48
-	srli	a1, a1, 27
 	addi	a2, a2, -13
+	slli	a1, a1, 32
 	snez	a2, a2
+	srli	a1, a1, 27
 	slli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2

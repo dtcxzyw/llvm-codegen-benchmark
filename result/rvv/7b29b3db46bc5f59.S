@@ -1,7 +1,7 @@
 func0000000000000007:
+	lui	a0, 1016
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 15
-	lui	a0, 1016
 	vand.vx	v10, v10, a0
 	vandn.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
@@ -18,9 +18,9 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
+	li	a0, -128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 3
-	li	a0, -128
 	vand.vx	v10, v10, a0
 	vand.vi	v8, v8, 7
 	vor.vv	v8, v10, v8

@@ -22,8 +22,8 @@ func00000000000000f4:
 	ret
 
 func0000000000000084:
-	andi	a1, a1, 1
 	sext.w	a2, a2
+	andi	a1, a1, 1
 	addi	a2, a2, -10
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 10

@@ -16,8 +16,8 @@ func0000000000000024:
 func0000000000000028:
 	or	a0, a0, a2
 	or	a1, a1, a3
-	snez	a1, a1
 	sltiu	a0, a0, 100
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -39,9 +39,9 @@ func0000000000000038:
 	sltu	a0, a4, a1
 	ret
 .LBB4_2:
-	or	a0, a0, a2
 	lui	a1, 500149
 	slli	a1, a1, 25
+	or	a0, a0, a2
 	addi	a1, a1, -1
 	sltu	a0, a1, a0
 	ret

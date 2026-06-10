@@ -10,8 +10,8 @@ func0000000000000015:
 
 func000000000000003f:
 	lui	a3, 58787
-	slli	a2, a2, 43
 	slli	a3, a3, 12
+	slli	a2, a2, 43
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -19,8 +19,8 @@ func000000000000003f:
 
 func0000000000000035:
 	lui	a3, 136657
-	slli	a2, a2, 43
 	slli	a3, a3, 9
+	slli	a2, a2, 43
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -42,8 +42,8 @@ func0000000000000010:
 	slli	a4, a3, 32
 	add	a3, a3, a4
 	bseti	a4, zero, 56
-	addi	a4, a4, -10
 	and	a2, a2, a3
+	addi	a4, a4, -10
 	mul	a2, a2, a4
 	add	a0, a0, a1
 	add	a0, a0, a2

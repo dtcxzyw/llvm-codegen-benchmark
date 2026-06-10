@@ -4,9 +4,9 @@ func000000000000002c:
 	addi	a3, a3, 240
 	addi	a4, a4, 15
 	slli	a5, a3, 32
+	slli	a6, a4, 32
 	add	a3, a3, a5
-	slli	a5, a4, 32
-	add	a4, a4, a5
+	add	a4, a4, a6
 	and	a2, a2, a3
 	and	a1, a1, a4
 	or	a1, a1, a2
@@ -20,9 +20,9 @@ func0000000000000028:
 	addi	a3, a3, 1365
 	addi	a4, a4, -1366
 	slli	a5, a3, 32
+	slli	a6, a4, 32
 	add	a3, a3, a5
-	slli	a5, a4, 32
-	add.uw	a4, a4, a5
+	add.uw	a4, a4, a6
 	and	a2, a2, a3
 	and	a1, a1, a4
 	or	a1, a1, a2
@@ -35,9 +35,9 @@ func0000000000000024:
 	addi	a3, a3, 1365
 	addi	a4, a4, -1366
 	slli	a5, a3, 32
+	slli	a6, a4, 32
 	add	a3, a3, a5
-	slli	a5, a4, 32
-	add.uw	a4, a4, a5
+	add.uw	a4, a4, a6
 	and	a2, a2, a3
 	and	a1, a1, a4
 	or	a1, a1, a2

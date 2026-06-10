@@ -15,8 +15,8 @@ func0000000000000003:
 	slli	a2, a2, 21
 	or	a2, a2, a3
 	li	a3, 1
-	slli	a3, a3, 59
 	xor	a1, a1, a2
+	slli	a3, a3, 59
 	xor	a3, a3, a1
 	slli	a1, a1, 16
 	srli	a3, a3, 48

@@ -21,7 +21,7 @@ func0000000000000002:
 	bltu	a3, a2, .LBB2_2
 	mv	a3, a2
 .LBB2_2:
-	sub	a0, a0, a1
+	sub	a3, a3, a1
 	add	a0, a0, a3
 	ret
 

@@ -35,10 +35,10 @@ func0000000000000018:
 	ret
 
 func0000000000000010:
+	lui	a3, 1
+	addi	a3, a3, 904
 	sub	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, 904
-	sub	a0, a2, a0
+	sub	a0, a3, a0
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
@@ -100,36 +100,36 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
+	li	a3, 14
 	sub	a1, a1, a2
-	li	a2, 14
-	sub	a0, a2, a0
+	sub	a0, a3, a0
 	bltu	a0, a1, .LBB11_2
 	mv	a0, a1
 .LBB11_2:
 	ret
 
 func0000000000000017:
+	li	a3, 2
 	sub	a1, a1, a2
-	li	a2, 2
-	sub	a0, a2, a0
+	sub	a0, a3, a0
 	bltu	a0, a1, .LBB12_2
 	mv	a0, a1
 .LBB12_2:
 	ret
 
 func0000000000000016:
+	li	a3, 64
 	sub	a1, a1, a2
-	li	a2, 64
-	sub	a0, a2, a0
+	sub	a0, a3, a0
 	bltu	a0, a1, .LBB13_2
 	mv	a0, a1
 .LBB13_2:
 	ret
 
 func0000000000000002:
+	li	a3, 3
 	sub	a1, a1, a2
-	li	a2, 3
-	sub	a0, a2, a0
+	sub	a0, a3, a0
 	bltu	a0, a1, .LBB14_2
 	mv	a0, a1
 .LBB14_2:

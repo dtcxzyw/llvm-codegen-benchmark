@@ -1,9 +1,9 @@
 func0000000000000021:
+	lui	a2, 838861
+	addi	a2, a2, -819
 	sub	a1, a1, a0
-	lui	a0, 838861
+	slli	a0, a2, 32
 	srli	a1, a1, 3
-	addi	a0, a0, -819
-	slli	a2, a0, 32
 	add	a0, a0, a2
 	mul	a0, a1, a0
 	addiw	a0, a0, -11
@@ -11,11 +11,11 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
+	lui	a2, 838861
+	addi	a2, a2, -819
 	sub	a1, a1, a0
-	lui	a0, 838861
+	slli	a0, a2, 32
 	srli	a1, a1, 3
-	addi	a0, a0, -819
-	slli	a2, a0, 32
 	add	a0, a0, a2
 	mul	a0, a1, a0
 	slli	a0, a0, 32
@@ -26,24 +26,24 @@ func0000000000000034:
 .LCPI2_0:
 	.quad	3353953467947191203
 func0000000000000028:
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
 	sub	a1, a1, a0
-	lui	a0, %hi(.LCPI2_0)
-	ld	a0, %lo(.LCPI2_0)(a0)
-	li	a2, -1
 	srai	a1, a1, 4
-	slli	a2, a2, 63
-	mul	a0, a1, a0
-	addi	a1, a2, 63
-	and	a0, a0, a1
-	sltu	a0, a2, a0
+	mul	a0, a1, a2
+	li	a1, -1
+	slli	a1, a1, 63
+	addi	a2, a1, 63
+	and	a0, a0, a2
+	sltu	a0, a1, a0
 	ret
 
 func000000000000002c:
+	lui	a2, 699051
+	addi	a2, a2, -1365
 	sub	a1, a1, a0
-	lui	a0, 699051
+	slli	a0, a2, 32
 	srli	a1, a1, 2
-	addi	a0, a0, -1365
-	slli	a2, a0, 32
 	add	a0, a0, a2
 	mulw	a0, a1, a0
 	snez	a0, a0

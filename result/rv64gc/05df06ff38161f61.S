@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -8,9 +8,9 @@ func0000000000000021:
 
 func000000000000002a:
 	slli	a1, a1, 48
-	srliw	a0, a0, 31
 	srli	a1, a1, 48
 	addi	a1, a1, -10
+	srliw	a0, a0, 31
 	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -34,16 +34,16 @@ func0000000000000026:
 
 func000000000000008a:
 	slli	a1, a1, 48
-	srliw	a0, a0, 31
 	srli	a1, a1, 48
+	srliw	a0, a0, 31
 	sltiu	a1, a1, 10
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000081:
-	sext.w	a0, a0
 	slli	a1, a1, 48
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	sltiu	a1, a1, 513
 	seqz	a0, a0

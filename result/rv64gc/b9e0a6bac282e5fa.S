@@ -1,8 +1,8 @@
 func0000000000000302:
-	slli	a2, a2, 53
 	addi	a1, a1, -1048
-	srli	a2, a2, 63
+	slli	a2, a2, 53
 	xor	a0, a0, a1
+	srli	a2, a2, 63
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret

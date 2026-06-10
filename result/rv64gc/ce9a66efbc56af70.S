@@ -1,6 +1,6 @@
 func0000000000000001:
-	addiw	a1, a1, 1
 	slli	a0, a0, 32
+	addiw	a1, a1, 1
 	srli	a0, a0, 32
 	mul	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func000000000000000d:
 	ret
 
 func0000000000000009:
-	addiw	a1, a1, 2
 	slli	a0, a0, 32
+	addiw	a1, a1, 2
 	srli	a0, a0, 32
 	mul	a0, a0, a1
 	ret

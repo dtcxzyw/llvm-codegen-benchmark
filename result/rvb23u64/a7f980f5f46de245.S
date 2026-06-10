@@ -1,5 +1,4 @@
 func0000000000000003:
-	andi	a0, a0, 1
 	slli	a2, a1, 48
 	lui	a3, 149808
 	mulhu	a2, a2, a3
@@ -12,6 +11,7 @@ func0000000000000003:
 	slli	a3, a2, 3
 	add	a1, a1, a2
 	sub	a1, a1, a3
+	andi	a0, a0, 1
 	addi	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret

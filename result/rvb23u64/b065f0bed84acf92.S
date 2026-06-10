@@ -11,8 +11,8 @@ func0000000000000014:
 	ret
 
 func000000000000000c:
-	bexti	a0, a0, 23
 	li	a1, -6
+	bexti	a0, a0, 23
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 7
 	ret

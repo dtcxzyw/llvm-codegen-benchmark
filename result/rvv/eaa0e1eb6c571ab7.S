@@ -7,11 +7,11 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
+	lui	a0, 4101
+	slli	a0, a0, 38
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.f.x.v	v10, v10
-	lui	a0, 4101
 	vfmul.vv	v8, v8, v10
-	slli	a0, a0, 38
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -32,11 +32,11 @@ func000000000000000e:
 	ret
 
 func000000000000000a:
+	lui	a0, 8289
+	slli	a0, a0, 37
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.f.x.v	v10, v10
-	lui	a0, 8289
 	vfmul.vv	v8, v8, v10
-	slli	a0, a0, 37
 	fmv.d.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

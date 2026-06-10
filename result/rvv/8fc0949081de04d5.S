@@ -27,8 +27,8 @@ func0000000000000021:
 func000000000000000a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.rtz.x.f.v	v10, v10
-	lui	a0, 2575
 	vadd.vv	v8, v8, v10
+	lui	a0, 2575
 	addi	a0, a0, -325
 	slli	a0, a0, 13
 	vmsgt.vx	v0, v8, a0
@@ -37,8 +37,8 @@ func000000000000000a:
 func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.rtz.x.f.v	v10, v10
-	lui	a0, 244
 	vadd.vv	v8, v8, v10
+	lui	a0, 244
 	addi	a0, a0, 575
 	vmsgt.vx	v0, v8, a0
 	ret

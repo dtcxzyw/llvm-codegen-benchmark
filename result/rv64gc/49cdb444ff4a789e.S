@@ -1,24 +1,24 @@
 func000000000000000d:
-	neg	a0, a0
 	li	a1, -1
+	neg	a0, a0
 	sll	a0, a1, a0
 	ret
 
 func000000000000000e:
-	neg	a0, a0
 	li	a1, 1
+	neg	a0, a0
 	sll	a0, a1, a0
 	ret
 
 func000000000000000f:
-	neg	a0, a0
 	li	a1, 1
+	neg	a0, a0
 	sll	a0, a1, a0
 	ret
 
 func000000000000000c:
-	neg	a0, a0
 	li	a1, 12
+	neg	a0, a0
 	sll	a0, a1, a0
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000000:
-	neg	a2, a2
 	sh1add	a1, a1, a1
+	neg	a2, a2
 	sh3add	a0, a1, a0
 	sh1add	a1, a2, a2
 	sh3add	a0, a1, a0
@@ -18,15 +18,15 @@ func000000000000001c:
 
 func0000000000000010:
 	sh2add	a1, a1, a1
-	slli	a1, a1, 4
 	sub	a0, a0, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
 
 func000000000000001e:
 	sh2add	a1, a1, a1
-	slli	a1, a1, 4
 	sub	a0, a0, a2
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
 

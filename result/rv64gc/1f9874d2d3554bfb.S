@@ -7,8 +7,8 @@ func000000000000068c:
 
 func000000000000028c:
 	slli	a2, a2, 32
-	addi	a0, a0, -25
 	srli	a2, a2, 32
+	addi	a0, a0, -25
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -50,9 +50,9 @@ func00000000000004c1:
 func0000000000000021:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	lui	a3, 1
 	xor	a1, a1, a2
-	lui	a2, 1
-	xor	a0, a0, a2
+	xor	a0, a0, a3
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

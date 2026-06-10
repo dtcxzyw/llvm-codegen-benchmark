@@ -29,8 +29,8 @@ func0000000000000034:
 	ret
 
 func0000000000000019:
-	zext.h	a2, a2
 	slli	a1, a1, 49
+	zext.h	a2, a2
 	srli	a1, a1, 49
 	sltu	a1, a1, a2
 	xori	a1, a1, 1

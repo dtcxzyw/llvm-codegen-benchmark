@@ -7,9 +7,9 @@ func0000000000000429:
 	ret
 
 func000000000000042c:
-	sext.w	a1, a1
 	srai	a2, a2, 2
 	xor	a0, a0, a2
+	sext.w	a1, a1
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret

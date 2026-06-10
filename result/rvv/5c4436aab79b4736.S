@@ -9,8 +9,8 @@ func000000000000009b:
 func0000000000000098:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsle.vi	v0, v8, 2
-	lui	a0, 75
 	vadd.vi	v8, v8, 12, v0.t
+	lui	a0, 75
 	addi	a0, a0, -1199
 	vmul.vx	v8, v8, a0
 	ret

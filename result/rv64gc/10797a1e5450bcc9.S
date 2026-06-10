@@ -2,9 +2,9 @@ func0000000000000000:
 	lui	a2, 4880
 	addi	a2, a2, 1823
 	add	a1, a1, a2
-	lui	a2, 336014
 	mul	a0, a1, a0
-	addi	a1, a2, -755
+	lui	a1, 336014
+	addi	a1, a1, -755
 	add	a0, a0, a1
 	slli	a0, a0, 33
 	srli	a0, a0, 33

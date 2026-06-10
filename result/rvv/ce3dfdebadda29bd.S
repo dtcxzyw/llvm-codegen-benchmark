@@ -3,17 +3,17 @@
 func0000000000000003:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
-	lui	a1, 52111
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
-	addi	a0, a1, 1061
 	vsub.vv	v12, v8, v10
 	vsrl.vi	v12, v12, 1
 	vadd.vv	v10, v12, v10
 	vsrl.vi	v10, v10, 27
-	vmul.vx	v10, v10, a0
+	lui	a0, 52111
+	addi	a1, a0, 1061
+	vmul.vx	v10, v10, a1
 	vsub.vv	v8, v10, v8
-	addi	a0, a1, 1060
+	addi	a0, a0, 1060
 	vadd.vx	v8, v8, a0
 	ret
 
@@ -25,8 +25,8 @@ func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 9
 	vmulhu.vx	v10, v10, a0
-	lui	a0, 244141
 	vsrl.vi	v10, v10, 11
+	lui	a0, 244141
 	addi	a0, a0, -1536
 	vmul.vx	v10, v10, a0
 	vsub.vv	v8, v10, v8

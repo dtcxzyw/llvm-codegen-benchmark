@@ -1,6 +1,6 @@
 func0000000000000181:
-	zext.h	a1, a1
 	addiw	a0, a0, -6
+	zext.h	a1, a1
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
@@ -14,11 +14,11 @@ func0000000000000021:
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
 	slli	a1, a1, 33
+	sext.w	a0, a0
 	srli	a1, a1, 33
-	sltiu	a0, a0, 2
 	binvi	a1, a1, 15
+	sltiu	a0, a0, 2
 	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1

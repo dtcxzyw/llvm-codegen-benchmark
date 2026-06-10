@@ -39,8 +39,8 @@ func000000000000000c:
 	ret
 
 func000000000000001c:
-	sext.w	a2, a2
 	sh1add	a1, a1, a1
+	sext.w	a2, a2
 	sh2add	a0, a1, a0
 	sh1add	a1, a2, a2
 	sh2add	a0, a1, a0
@@ -69,8 +69,8 @@ func0000000000000012:
 	ret
 
 func0000000000000017:
-	sext.w	a2, a2
 	sh2add	a0, a1, a0
+	sext.w	a2, a2
 	sh2add	a0, a2, a0
 	ret
 
@@ -78,9 +78,9 @@ func0000000000000003:
 	sh1add	a1, a1, a1
 	slli.uw	a2, a2, 7
 	slli	a1, a1, 7
+	sh1add	a2, a2, a2
 	add	a0, a0, a1
-	sh1add	a1, a2, a2
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000013:

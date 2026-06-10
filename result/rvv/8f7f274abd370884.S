@@ -1,8 +1,8 @@
 func0000000000000002:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 275266
 	vfabs.v	v8, v8
+	lui	a0, 275266
 	addi	a0, a0, -1638
 	fmv.w.x	fa5, a0
 	vmflt.vf	v12, v8, fa5
@@ -12,8 +12,8 @@ func0000000000000002:
 func0000000000000004:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 275262
 	vfabs.v	v8, v8
+	lui	a0, 275262
 	addi	a0, a0, 1638
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
@@ -23,8 +23,8 @@ func0000000000000004:
 func000000000000001d:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 212992
 	vfabs.v	v8, v8
+	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vmflt.vf	v12, v8, fa5
 	vmandn.mm	v0, v0, v12
@@ -43,8 +43,8 @@ func0000000000000006:
 func0000000000000012:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 263206
 	vfabs.v	v8, v8
+	lui	a0, 263206
 	addi	a0, a0, -992
 	fmv.w.x	fa5, a0
 	vmflt.vf	v12, v8, fa5
@@ -54,8 +54,8 @@ func0000000000000012:
 func0000000000000014:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	lui	a0, 253287
 	vfabs.v	v8, v8
+	lui	a0, 253287
 	addi	a0, a0, 1872
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5

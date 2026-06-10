@@ -12,10 +12,10 @@ func0000000000000130:
 	ret
 
 func0000000000000030:
+	lui	a3, 313
 	add	a0, a0, a1
-	lui	a1, 313
 	sh2add.uw	a0, a2, a0
-	addi	a1, a1, -768
+	addi	a1, a3, -768
 	add	a0, a0, a1
 	ret
 

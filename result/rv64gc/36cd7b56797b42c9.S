@@ -12,8 +12,8 @@ func0000000000000005:
 	bgtz	a2, .LBB1_2
 	li	a2, 1
 .LBB1_2:
-	add	a0, a0, a1
-	subw	a0, a0, a2
+	sub	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000001:

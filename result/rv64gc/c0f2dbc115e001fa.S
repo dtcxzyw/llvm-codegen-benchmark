@@ -83,10 +83,10 @@ func00000000000000c1:
 
 func000000000000002a:
 	srli	a1, a1, 3
+	li	a2, -49
 	sub	a0, a0, a1
-	li	a1, -49
-	srli	a1, a1, 3
-	slt	a0, a1, a0
+	srli	a2, a2, 3
+	slt	a0, a2, a0
 	ret
 
 .LCPI14_0:

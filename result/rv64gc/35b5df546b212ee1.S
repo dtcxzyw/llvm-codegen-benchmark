@@ -6,9 +6,9 @@ func000000000000000a:
 	ret
 
 func0000000000000064:
-	zext.b	a1, a0
-	li	a2, 30
-	bltu	a1, a2, .LBB1_2
+	li	a1, 30
+	zext.b	a2, a0
+	bltu	a2, a1, .LBB1_2
 	li	a0, 120
 	ret
 .LBB1_2:

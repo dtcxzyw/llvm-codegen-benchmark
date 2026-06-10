@@ -1,8 +1,8 @@
 func0000000000000006:
+	lui	a2, 2
 	or	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a2, a2, 1
+	or	a0, a0, a2
 	ret
 
 func000000000000000c:
@@ -23,17 +23,17 @@ func0000000000000000:
 	ret
 
 func000000000000000d:
+	li	a2, 31
 	or	a0, a0, a1
-	li	a1, 31
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 
 func0000000000000005:
+	li	a2, 31
 	or	a0, a0, a1
-	li	a1, 31
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 
 func0000000000000009:
@@ -42,9 +42,9 @@ func0000000000000009:
 	ret
 
 func000000000000000e:
+	li	a2, -9
 	or	a0, a0, a1
-	li	a1, -9
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 

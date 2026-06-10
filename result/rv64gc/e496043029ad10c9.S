@@ -5,9 +5,9 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
+	xori	a1, a1, 1
 	subw	a0, a0, a2
 	slti	a0, a0, 1
-	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

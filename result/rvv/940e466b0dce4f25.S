@@ -1,57 +1,63 @@
 func0000000000000c2c:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 1
-	vmseq.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsne.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vmsne.vi	v12, v8, 0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vv	v8, v11, v10
+	vmor.mm	v0, v12, v8
 	ret
 
 func0000000000000c21:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 1
-	vmseq.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vmseq.vi	v12, v8, 0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vv	v8, v11, v10
+	vmor.mm	v0, v12, v8
 	ret
 
 func0000000000000c88:
+	li	a0, 127
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 1
-	li	a0, 127
-	vmsltu.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmsgtu.vx	v12, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsltu.vv	v8, v11, v10
+	vmor.mm	v0, v12, v8
 	ret
 
 func0000000000000081:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 1
-	vmsltu.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vmseq.vi	v12, v8, 0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsltu.vv	v8, v11, v10
+	vmor.mm	v0, v12, v8
 	ret
 
 func0000000000000d61:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 1
-	vmsle.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vi	v11, v8, 0
-	vmor.mm	v0, v11, v10
+	vmseq.vi	v12, v8, 0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsle.vv	v8, v10, v11
+	vmor.mm	v0, v12, v8
 	ret
 
 func0000000000000434:
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, -1
-	bseti	a0, zero, 32
-	vmseq.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsltu.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmsltu.vx	v12, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmseq.vv	v8, v11, v10
+	vmor.mm	v0, v12, v8
 	ret
 
 .LCPI6_0:
@@ -62,9 +68,10 @@ func000000000000054c:
 	li	a1, -48
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v11, v11, a1
-	vmslt.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsne.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
+	vmsne.vx	v12, v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmslt.vv	v8, v10, v11
+	vmor.mm	v0, v12, v8
 	ret
 

@@ -45,8 +45,8 @@ func0000000000000013:
 func0000000000000050:
 	andi	a1, a1, 1
 	zext.b	a2, a2
-	li	a3, 2
 	sltiu	a2, a2, 240
+	li	a3, 2
 	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3

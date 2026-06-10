@@ -15,8 +15,8 @@ func0000000000000000:
 	ret
 
 func0000000000000007:
-	ori	a0, a0, 3
 	lui	a1, 718
+	ori	a0, a0, 3
 	sext.w	a0, a0
 	addi	a1, a1, -1183
 	mul	a0, a0, a1

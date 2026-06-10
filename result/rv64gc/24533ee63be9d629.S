@@ -15,8 +15,8 @@ func00000000000000f8:
 	ret
 
 func00000000000000bc:
-	sext.w	a2, a2
 	slli	a1, a1, 32
+	sext.w	a2, a2
 	srli	a1, a1, 32
 	mul	a1, a2, a1
 	slli	a1, a1, 3

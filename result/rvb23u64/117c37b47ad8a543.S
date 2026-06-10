@@ -6,13 +6,13 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	slli	a1, a0, 56
+	lui	a1, 16
+	slli	a2, a0, 56
 	zext.b	a0, a0
-	lui	a2, 16
-	srli	a1, a1, 63
-	addi	a2, a2, -3
-	czero.eqz	a2, a2, a1
-	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	srli	a2, a2, 63
+	addi	a1, a1, -3
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
+	or	a0, a0, a1
 	ret
 

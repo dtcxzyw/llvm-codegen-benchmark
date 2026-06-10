@@ -1,6 +1,6 @@
 func000000000000000c:
-	addi	a1, a1, 1
 	lui	a2, 2593
+	addi	a1, a1, 1
 	zext.w	a1, a1
 	addi	a2, a2, -1065
 	mul	a1, a1, a2
@@ -8,8 +8,8 @@ func000000000000000c:
 	ret
 
 func000000000000003c:
-	addiw	a1, a1, -1
 	li	a2, 1000
+	addiw	a1, a1, -1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

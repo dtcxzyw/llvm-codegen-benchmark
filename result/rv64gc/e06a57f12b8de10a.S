@@ -6,8 +6,8 @@ func0000000000000008:
 	ret
 
 func000000000000000b:
-	fsub.d	fa5, fa0, fa1
 	li	a1, 1023
+	fsub.d	fa5, fa0, fa1
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa4, fa5
@@ -21,8 +21,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	fsub.d	fa5, fa0, fa1
 	li	a1, 1023
+	fsub.d	fa5, fa0, fa1
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4
@@ -37,8 +37,8 @@ func000000000000000c:
 	ret
 
 func0000000000000007:
-	fsub.d	fa5, fa0, fa1
 	li	a1, 1023
+	fsub.d	fa5, fa0, fa1
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	feq.d	a1, fa5, fa4
@@ -47,8 +47,8 @@ func0000000000000007:
 	ret
 
 func000000000000000d:
-	fsub.d	fa5, fa0, fa1
 	li	a1, 903
+	fsub.d	fa5, fa0, fa1
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa5, fa4

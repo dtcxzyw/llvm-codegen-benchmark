@@ -29,17 +29,17 @@ func0000000000000281:
 func0000000000000181:
 	lui	a2, 65535
 	slli	a2, a2, 35
+	lui	a3, 32767
 	and	a1, a1, a2
-	lui	a2, 32767
-	slli	a2, a2, 36
-	xor	a1, a1, a2
+	slli	a3, a3, 36
+	xor	a1, a1, a3
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000014c:
-	srli	a1, a1, 24
 	slti	a0, a0, 32
+	srli	a1, a1, 24
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -61,23 +61,23 @@ func0000000000000081:
 
 func0000000000000301:
 	li	a2, -1665
-	sltiu	a0, a0, 2
 	srli	a2, a2, 3
+	sltiu	a0, a0, 2
 	andn	a1, a1, a2
 	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret
 
 func000000000000030c:
-	srli	a1, a1, 32
 	sltiu	a0, a0, 4
+	srli	a1, a1, 32
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000010c:
-	sext.w	a1, a1
 	sltiu	a0, a0, 2
+	sext.w	a1, a1
 	xori	a0, a0, 1
 	czero.eqz	a0, a0, a1
 	ret
@@ -103,14 +103,14 @@ func0000000000000141:
 	ret
 
 func0000000000000094:
-	srliw	a1, a1, 3
 	lui	a2, 4
+	srliw	a1, a1, 3
+	lui	a3, 1
 	slli	a1, a1, 3
 	addi	a2, a2, -2047
+	addi	a3, a3, 1
 	sltu	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, 1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret
 

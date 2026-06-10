@@ -9,11 +9,11 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	sext.w	a2, a0
-	li	a3, 1
-	slli	a3, a3, 32
-	xor	a1, a1, a3
-	or	a1, a1, a2
+	li	a2, 1
+	slli	a2, a2, 32
+	sext.w	a3, a0
+	xor	a1, a1, a2
+	or	a1, a1, a3
 	bnez	a1, .LBB1_2
 	li	a0, 1
 .LBB1_2:

@@ -9,9 +9,9 @@ func000000000000007b:
 	ret
 
 func0000000000000040:
-	sub	a2, a2, a0
 	lui	a3, 1
 	addi	a3, a3, 904
+	sub	a2, a2, a0
 	sub	a1, a3, a1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2
@@ -81,8 +81,8 @@ func0000000000000029:
 	ret
 
 func000000000000005c:
-	sub	a2, a2, a0
 	li	a3, 2
+	sub	a2, a2, a0
 	sub	a1, a3, a1
 	bltu	a1, a2, .LBB8_2
 	mv	a1, a2
@@ -91,8 +91,8 @@ func000000000000005c:
 	ret
 
 func0000000000000018:
-	sub	a2, a2, a0
 	lui	a3, 1
+	sub	a2, a2, a0
 	sub	a1, a3, a1
 	bltu	a1, a2, .LBB9_2
 	mv	a1, a2
@@ -101,8 +101,8 @@ func0000000000000018:
 	ret
 
 func0000000000000058:
-	sub	a2, a2, a0
 	li	a3, 64
+	sub	a2, a2, a0
 	sub	a1, a3, a1
 	bltu	a1, a2, .LBB10_2
 	mv	a1, a2
@@ -111,8 +111,8 @@ func0000000000000058:
 	ret
 
 func0000000000000000:
-	sub	a2, a2, a0
 	li	a3, 16
+	sub	a2, a2, a0
 	sub	a1, a3, a1
 	bltu	a1, a2, .LBB11_2
 	mv	a1, a2

@@ -12,12 +12,12 @@ func0000000000000108:
 
 func0000000000002908:
 	li	a0, -65
-	li	a1, 26
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vx	v9, v9, a0
 	vadd.vx	v8, v8, a0
-	vmsltu.vx	v9, v9, a1
-	vmsltu.vx	v8, v8, a1
+	li	a0, 26
+	vmsltu.vx	v9, v9, a0
+	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
 

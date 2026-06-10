@@ -30,11 +30,11 @@ func0000000000000885:
 
 func0000000000000948:
 	sext.w	a2, a0
-	sext.w	a3, a1
 	sub	a0, a0, a1
+	sext.w	a1, a1
 	srliw	a0, a0, 31
 	xori	a0, a0, 1
-	sltu	a1, a3, a2
+	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

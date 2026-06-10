@@ -50,9 +50,9 @@ func000000000000008c:
 	ret
 
 func000000000000010c:
+	li	a0, 31
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vi	v10, v10, 1
-	li	a0, 31
 	vmsne.vi	v12, v10, 0
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10

@@ -8,27 +8,27 @@ func00000000000000ff:
 func00000000000000fc:
 	zext.b	a1, a1
 	slli	a1, a1, 2
+	lui	a2, 43
 	add	a0, a0, a1
-	lui	a1, 43
-	addi	a1, a1, 1016
+	addi	a1, a2, 1016
 	add	a0, a0, a1
 	ret
 
 func00000000000000f3:
 	zext.b	a1, a1
 	slli	a1, a1, 2
+	lui	a2, 87
 	add	a0, a0, a1
-	lui	a1, 87
-	addi	a1, a1, 888
+	addi	a1, a2, 888
 	add	a0, a0, a1
 	ret
 
 func00000000000000f0:
 	zext.b	a1, a1
 	slli	a1, a1, 2
+	lui	a2, 87
 	add	a0, a0, a1
-	lui	a1, 87
-	addi	a1, a1, 840
+	addi	a1, a2, 840
 	add	a0, a0, a1
 	ret
 

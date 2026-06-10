@@ -14,9 +14,9 @@ func0000000000000030:
 	ret
 
 func0000000000000017:
+	li	a0, 36
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -2
-	li	a0, 36
 	vadd.vx	v10, v10, a0
 	vadd.vi	v8, v8, 12
 	vmul.vv	v8, v8, v10

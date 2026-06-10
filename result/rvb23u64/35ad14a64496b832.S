@@ -1,7 +1,7 @@
 func0000000000000001:
-	zext.b	a0, a0
 	andi	a1, a1, 1
 	lui	a2, 1
+	zext.b	a0, a0
 	czero.nez	a1, a2, a1
 	add	a1, a1, a2
 	bseti	a2, zero, 11
@@ -11,9 +11,9 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	sext.b	a0, a0
 	andi	a1, a1, 1
 	li	a2, 6
+	sext.b	a0, a0
 	czero.nez	a1, a2, a1
 	slti	a0, a0, 65
 	addi	a1, a1, -13
@@ -22,9 +22,9 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	zext.b	a0, a0
 	andi	a1, a1, 1
 	li	a2, 5
+	zext.b	a0, a0
 	czero.nez	a1, a2, a1
 	sltiu	a0, a0, 2
 	addi	a1, a1, 4

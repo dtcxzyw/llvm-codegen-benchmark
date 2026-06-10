@@ -1,6 +1,6 @@
 func0000000000000000:
-	slliw	a0, a0, 8
 	lui	a1, 1044480
+	slliw	a0, a0, 8
 	and	a0, a0, a1
 	ret
 

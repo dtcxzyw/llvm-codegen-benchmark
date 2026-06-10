@@ -51,9 +51,9 @@ func0000000000000004:
 
 func0000000000000008:
 	andi	a1, a1, 1
+	lui	a2, 123768
 	add	a0, a0, a1
-	lui	a1, 123768
-	addi	a1, a1, -1615
+	addi	a1, a2, -1615
 	mulw	a0, a0, a1
 	ret
 

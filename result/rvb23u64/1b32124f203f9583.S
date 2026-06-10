@@ -1,6 +1,6 @@
 func0000000000000104:
-	fabs.d	fa5, fa2
 	lui	a0, 238009
+	fabs.d	fa5, fa2
 	slli	a0, a0, 32
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
@@ -9,8 +9,8 @@ func0000000000000104:
 	ret
 
 func0000000000000050:
-	fabs.d	fa5, fa2
 	lui	a0, 238009
+	fabs.d	fa5, fa2
 	slli	a0, a0, 32
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
@@ -19,8 +19,8 @@ func0000000000000050:
 	ret
 
 func0000000000000044:
-	fabs.d	fa5, fa2
 	lui	a0, 477297
+	fabs.d	fa5, fa2
 	slli	a0, a0, 31
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4
@@ -29,8 +29,8 @@ func0000000000000044:
 	ret
 
 func0000000000000150:
-	fabs.d	fa5, fa2
 	lui	a0, 32973
+	fabs.d	fa5, fa2
 	slli	a0, a0, 35
 	fmv.d.x	fa4, a0
 	feq.d	a0, fa5, fa4

@@ -1,26 +1,28 @@
+.LCPI0_0:
+	.quad	-34359737848001
 func0000000000000008:
 	sext.w	a1, a1
-	li	a2, -125
 	mul	a0, a0, a1
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	li	a2, -125
 	slli	a2, a2, 26
-	addi	a1, a2, 127
 	addi	a2, a2, 125
-	slli	a1, a1, 12
-	addi	a1, a1, -193
 	add	a0, a0, a1
 	slli	a2, a2, 12
 	sltu	a0, a0, a2
 	ret
 
+.LCPI1_0:
+	.quad	-34359737848001
 func00000000000000a8:
 	sext.w	a1, a1
-	li	a2, -125
 	mul	a0, a0, a1
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	li	a2, -125
 	slli	a2, a2, 26
-	addi	a1, a2, 127
 	addi	a2, a2, 125
-	slli	a1, a1, 12
-	addi	a1, a1, -193
 	add	a0, a0, a1
 	slli	a2, a2, 12
 	sltu	a0, a0, a2

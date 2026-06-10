@@ -1,6 +1,6 @@
 func0000000000000004:
-	zext.h	a0, a0
 	and	a1, a1, a2
+	zext.h	a0, a0
 	sltiu	a0, a0, 49
 	or	a0, a0, a1
 	ret

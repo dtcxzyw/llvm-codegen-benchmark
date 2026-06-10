@@ -26,14 +26,14 @@ func000000000000001f:
 	ret
 
 func0000000000000015:
-	bset	a0, zero, a0
 	lui	a1, 8192
+	bset	a0, zero, a0
 	sub	a0, a1, a0
 	ret
 
 func000000000000001a:
-	bset	a0, zero, a0
 	li	a1, -1
+	bset	a0, zero, a0
 	add.uw	a0, a1, a0
 	ret
 

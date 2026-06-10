@@ -9,15 +9,15 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
-	sext.w	a1, a1
 	lui	a3, 32
-	addi	a3, a3, -4
-	and	a2, a2, a3
+	addi	a4, a3, -4
+	sext.w	a3, a1
+	and	a1, a2, a4
 	sext.w	a0, a0
-	bltu	a2, a1, .LBB1_2
-	mv	a2, a1
+	bltu	a1, a3, .LBB1_2
+	mv	a1, a3
 .LBB1_2:
-	sltu	a0, a0, a2
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000001:

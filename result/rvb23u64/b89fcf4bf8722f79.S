@@ -1,6 +1,6 @@
 func000000000000000f:
-	addi	a2, a2, 512
 	li	a3, 15
+	addi	a2, a2, 512
 	slli	a3, a3, 9
 	and	a2, a2, a3
 	or	a0, a0, a1
@@ -29,8 +29,8 @@ func0000000000000007:
 	ret
 
 func000000000000000c:
-	addi	a2, a2, 128
 	lui	a3, 4096
+	addi	a2, a2, 128
 	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a0, a0, a1

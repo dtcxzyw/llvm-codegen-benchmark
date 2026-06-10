@@ -7,8 +7,8 @@ func000000000000001f:
 	ret
 
 func0000000000000017:
-	slliw	a1, a1, 24
 	zext.b	a0, a0
+	slliw	a1, a1, 24
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
@@ -36,8 +36,8 @@ func000000000000005f:
 	ret
 
 func0000000000000007:
-	slliw	a1, a1, 25
 	zext.b	a0, a0
+	slliw	a1, a1, 25
 	slliw	a0, a0, 9
 	or	a0, a0, a1
 	ret
@@ -66,8 +66,8 @@ func000000000000001e:
 	ret
 
 func0000000000000006:
-	slliw	a1, a1, 26
 	zext.b	a0, a0
+	slliw	a1, a1, 26
 	slliw	a0, a0, 20
 	or	a0, a0, a1
 	ret
@@ -87,8 +87,8 @@ func000000000000003e:
 	ret
 
 func0000000000000016:
-	slliw	a1, a1, 24
 	zext.b	a0, a0
+	slliw	a1, a1, 24
 	slliw	a0, a0, 20
 	or	a0, a0, a1
 	ret

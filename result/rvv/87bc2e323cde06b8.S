@@ -3,8 +3,8 @@ func0000000000000014:
 	addi	a0, a0, -945
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
-	li	a0, 26
 	vsrl.vi	v10, v10, 3
+	li	a0, 26
 	vnmsub.vx	v10, a0, v8
 	li	a0, 22
 	vmsltu.vx	v0, v10, a0
@@ -18,8 +18,8 @@ func0000000000000001:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	lui	a0, 2621
-	addi	a0, a0, 1802
 	vror.vi	v8, v8, 4
+	addi	a0, a0, 1802
 	vmsleu.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0

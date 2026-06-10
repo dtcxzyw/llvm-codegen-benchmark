@@ -2,10 +2,10 @@ func0000000000000021:
 	zext.b	a1, a1
 	zext.b	a0, a0
 	zext.b	a2, a2
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -45,9 +45,9 @@ func0000000000000089:
 	zext.b	a1, a1
 	zext.b	a0, a0
 	zext.b	a2, a2
-	sltiu	a2, a2, 7
 	sltu	a0, a0, a1
+	sltiu	a1, a2, 7
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 

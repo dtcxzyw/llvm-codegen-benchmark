@@ -7,8 +7,8 @@ func0000000000000302:
 
 func0000000000000042:
 	andi	a1, a0, 3
-	addi	a0, a0, -4
 	addi	a1, a1, -2
+	addi	a0, a0, -4
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -67,8 +67,8 @@ func0000000000000328:
 
 func0000000000000070:
 	zext.b	a1, a0
-	sltiu	a0, a0, 256
 	addi	a1, a1, -255
+	sltiu	a0, a0, 256
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -117,8 +117,8 @@ func0000000000000310:
 
 func0000000000000202:
 	sraiw	a1, a0, 1
-	srli	a0, a0, 32
 	addi	a1, a1, 1
+	srli	a0, a0, 32
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

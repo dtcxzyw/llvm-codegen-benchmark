@@ -45,10 +45,10 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	slliw	a1, a1, 16
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	lui	a2, 525312
+	slliw	a1, a1, 16
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

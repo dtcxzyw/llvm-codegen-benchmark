@@ -1,15 +1,15 @@
 func0000000000000c38:
 	add	a1, a1, a2
-	addiw	a0, a0, 1
 	srli	a1, a1, 31
+	addiw	a0, a0, 1
 	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	neg	a2, a2
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -17,8 +17,8 @@ func000000000000002c:
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
 	neg	a2, a2
+	sext.w	a0, a0
 	xor	a1, a1, a2
 	sltiu	a0, a0, 6
 	snez	a1, a1

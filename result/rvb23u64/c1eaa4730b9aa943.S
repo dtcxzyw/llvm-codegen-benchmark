@@ -13,10 +13,10 @@ func00000000000000a8:
 
 func00000000000000a4:
 	slli	a1, a1, 32
+	li	a2, -11
 	add.uw	a0, a0, a1
-	li	a1, -11
-	zext.w	a1, a1
-	sltu	a0, a0, a1
+	zext.w	a2, a2
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000ac:

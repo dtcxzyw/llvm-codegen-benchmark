@@ -8,8 +8,8 @@ func000000000000007f:
 
 func000000000000006f:
 	slli	a2, a2, 32
-	slli	a0, a0, 32
 	srli	a2, a2, 32
+	slli	a0, a0, 32
 	add	a1, a1, a2
 	srli	a0, a0, 32
 	add	a0, a0, a1
@@ -18,8 +18,8 @@ func000000000000006f:
 
 func000000000000006a:
 	slli	a2, a2, 34
-	slli	a0, a0, 32
 	srli	a2, a2, 33
+	slli	a0, a0, 32
 	add	a1, a1, a2
 	srli	a0, a0, 31
 	add	a0, a0, a1

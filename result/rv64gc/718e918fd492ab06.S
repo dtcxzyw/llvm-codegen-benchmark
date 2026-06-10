@@ -1,8 +1,8 @@
 func0000000000000074:
 	addiw	a1, a1, -24
-	slli	a0, a0, 48
 	seqz	a1, a1
 	addi	a1, a1, -1
+	slli	a0, a0, 48
 	andi	a1, a1, 60
 	srli	a0, a0, 48
 	sltu	a0, a1, a0
@@ -10,8 +10,8 @@ func0000000000000074:
 
 func0000000000000058:
 	sext.w	a1, a1
-	slli	a0, a0, 48
 	snez	a1, a1
+	slli	a0, a0, 48
 	addi	a1, a1, 1
 	srli	a0, a0, 48
 	sltu	a0, a0, a1
@@ -19,8 +19,8 @@ func0000000000000058:
 
 func0000000000000061:
 	addiw	a1, a1, -28
-	slli	a0, a0, 48
 	snez	a1, a1
+	slli	a0, a0, 48
 	addi	a1, a1, 7
 	srli	a0, a0, 48
 	xor	a0, a0, a1
@@ -30,9 +30,9 @@ func0000000000000061:
 func0000000000000041:
 	addiw	a1, a1, -38
 	lui	a2, 1
-	slli	a0, a0, 48
 	seqz	a1, a1
 	addi	a2, a2, -452
+	slli	a0, a0, 48
 	or	a1, a1, a2
 	srli	a0, a0, 48
 	xor	a0, a0, a1
@@ -53,8 +53,8 @@ func0000000000000054:
 
 func000000000000004c:
 	sext.w	a1, a1
-	slli	a0, a0, 48
 	snez	a1, a1
+	slli	a0, a0, 48
 	addi	a1, a1, 1
 	srli	a0, a0, 48
 	xor	a0, a0, a1

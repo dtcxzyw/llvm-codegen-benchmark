@@ -1,9 +1,9 @@
 func0000000000000044:
-	fmul.s	fa5, fa0, fa2
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
+	fmul.s	fa4, fa0, fa2
 	fmul.s	fa3, fa0, fa1
-	flt.s	a0, fa4, fa5
-	flt.s	a1, fa4, fa3
+	flt.s	a0, fa5, fa4
+	flt.s	a1, fa5, fa3
 	and	a0, a0, a1
 	ret
 

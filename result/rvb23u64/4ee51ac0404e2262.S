@@ -1,6 +1,6 @@
 func0000000000000061:
-	zext.b	a0, a0
 	andi	a1, a1, 1
+	zext.b	a0, a0
 	snez	a0, a0
 	slli	a1, a1, 2
 	or	a1, a1, a2
@@ -9,8 +9,8 @@ func0000000000000061:
 	ret
 
 func0000000000000041:
-	zext.b	a0, a0
 	andi	a1, a1, 1
+	zext.b	a0, a0
 	lui	a3, 49152
 	snez	a0, a0
 	czero.eqz	a1, a3, a1

@@ -22,8 +22,8 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	sext.w	a3, a0
 	sext.w	a2, a2
+	sext.w	a3, a0
 	sext.w	a1, a1
 	bge	a2, a3, .LBB1_3
 	bge	a2, a1, .LBB1_4

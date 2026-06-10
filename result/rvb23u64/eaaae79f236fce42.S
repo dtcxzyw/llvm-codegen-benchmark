@@ -76,12 +76,12 @@ func0000000000000055:
 	ret
 
 func0000000000000017:
+	lui	a3, 930062
 	add.uw	a1, a2, a1
-	lui	a2, 930062
+	addi	a2, a3, -1681
 	add	a0, a0, a1
-	addi	a1, a2, -1681
-	slli	a1, a1, 7
-	add	a0, a0, a1
+	slli	a2, a2, 7
+	add	a0, a0, a2
 	ret
 
 func0000000000000034:

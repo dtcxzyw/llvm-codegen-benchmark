@@ -29,12 +29,12 @@ func0000000000000005:
 	ret
 
 func0000000000000034:
-	srai	a2, a2, 1
 	lui	a3, 699051
-	srai	a1, a1, 1
 	addi	a3, a3, -1365
+	srai	a2, a2, 1
 	slli	a4, a3, 32
 	add	a3, a3, a4
+	srai	a1, a1, 1
 	mul	a2, a2, a3
 	mul	a1, a1, a3
 	add	a1, a1, a2
@@ -43,9 +43,9 @@ func0000000000000034:
 
 func0000000000000004:
 	srli	a3, a2, 63
+	srli	a4, a1, 63
 	add	a2, a2, a3
-	srli	a3, a1, 63
-	add	a1, a1, a3
+	add	a1, a1, a4
 	srai	a2, a2, 1
 	srai	a1, a1, 1
 	add	a1, a1, a2

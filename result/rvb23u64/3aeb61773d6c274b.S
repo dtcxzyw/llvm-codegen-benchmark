@@ -29,10 +29,10 @@ func000000000000007b:
 	ret
 
 func0000000000000060:
+	lui	a3, 610
 	add	a0, a0, a2
-	lui	a2, 610
 	add.uw	a0, a1, a0
-	addi	a1, a2, 1452
+	addi	a1, a3, 1452
 	add	a0, a0, a1
 	ret
 
@@ -45,9 +45,9 @@ func000000000000006f:
 	ret
 
 func0000000000000070:
+	sext.w	a1, a1
 	slli	a0, a0, 7
 	add	a0, a0, a2
-	sext.w	a1, a1
 	sh1add	a0, a1, a0
 	addi	a0, a0, 1024
 	ret

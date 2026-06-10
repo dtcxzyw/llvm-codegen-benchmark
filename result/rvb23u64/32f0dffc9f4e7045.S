@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	andi	a1, a1, 1
+	andi	a0, a0, 1
 	fli.d	fa5, -1.0
 	beqz	a1, .LBB0_3
 	fli.d	fa0, 1.0

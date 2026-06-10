@@ -1,8 +1,8 @@
 func000000000000003f:
-	li	a3, 2
 	sh2add	a1, a1, a1
-	sub	a3, a3, a2
+	li	a3, 2
 	sh2add	a0, a1, a0
+	sub	a3, a3, a2
 	sh2add	a0, a3, a0
 	ret
 

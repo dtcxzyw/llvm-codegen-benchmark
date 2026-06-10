@@ -33,9 +33,9 @@ func0000000000000005:
 func000000000000000c:
 	srli	a1, a1, 15
 	andi	a1, a1, 510
+	lui	a2, 16382
 	add	a0, a0, a1
-	lui	a1, 16382
-	addi	a1, a1, -1527
+	addi	a1, a2, -1527
 	mulw	a0, a0, a1
 	ret
 

@@ -1,7 +1,7 @@
 func000000000000003f:
 	addi	a2, a2, 1
-	add	a0, a0, a1
 	slli	a2, a2, 32
+	add	a0, a0, a1
 	srli	a2, a2, 31
 	add	a0, a0, a2
 	addi	a0, a0, 1
@@ -17,8 +17,8 @@ func0000000000000000:
 	ret
 
 func00000000000001c0:
-	add	a0, a0, a1
 	sext.w	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 6
 	ret
@@ -34,8 +34,8 @@ func00000000000001e0:
 func000000000000002f:
 	addi	a2, a2, 1
 	slli	a1, a1, 5
-	add	a0, a0, a1
 	slli	a2, a2, 32
+	add	a0, a0, a1
 	srli	a2, a2, 27
 	add	a0, a0, a2
 	addi	a0, a0, 8
@@ -60,21 +60,21 @@ func000000000000003e:
 	ret
 
 func00000000000000c0:
-	add	a0, a0, a1
 	sext.w	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func00000000000001fc:
-	add	a0, a0, a1
 	sext.w	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 36
 	ret
 
 func00000000000001ef:
-	add	a0, a0, a1
 	sext.w	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 2
 	ret

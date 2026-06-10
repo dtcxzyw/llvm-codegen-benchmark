@@ -20,10 +20,10 @@ func000000000000003e:
 
 func00000000000001c0:
 	sh1add	a1, a1, a1
+	lui	a2, 4
+	addi	a2, a2, 1900
 	slliw	a1, a1, 2
-	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, 1900
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

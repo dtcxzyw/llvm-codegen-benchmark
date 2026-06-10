@@ -83,8 +83,8 @@ func0000000000000041:
 
 func000000000000014f:
 	sext.w	a2, a2
-	li	a3, -100
 	sltiu	a2, a2, 96
+	li	a3, -100
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

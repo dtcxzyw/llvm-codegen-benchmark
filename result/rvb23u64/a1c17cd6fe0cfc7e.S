@@ -19,10 +19,10 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 7
 	lui	a2, 16
 	addi	a2, a2, -256
 	and	a0, a0, a2
+	andi	a1, a1, 7
 	sltiu	a0, a0, 1025
 	czero.nez	a0, a0, a1
 	ret

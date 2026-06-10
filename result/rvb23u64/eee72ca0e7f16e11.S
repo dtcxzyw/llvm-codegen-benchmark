@@ -1,6 +1,6 @@
 func000000000000000a:
-	andi	a0, a0, 1
 	li	a3, 64
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -10,8 +10,8 @@ func000000000000000a:
 	ret
 
 func000000000000002a:
-	andi	a0, a0, 1
 	li	a3, 1
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -22,8 +22,8 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	andi	a0, a0, 1
 	li	a3, 116
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -33,8 +33,8 @@ func0000000000000021:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	li	a3, 1
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -44,8 +44,8 @@ func0000000000000001:
 	ret
 
 func000000000000002c:
-	andi	a0, a0, 1
 	neg	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
@@ -54,8 +54,8 @@ func000000000000002c:
 	ret
 
 func0000000000000026:
-	andi	a0, a0, 1
 	neg	a2, a2
+	andi	a0, a0, 1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
@@ -64,8 +64,8 @@ func0000000000000026:
 	ret
 
 func0000000000000028:
-	andi	a0, a0, 1
 	li	a3, 3
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -76,8 +76,8 @@ func0000000000000028:
 	ret
 
 func0000000000000038:
-	andi	a0, a0, 1
 	li	a3, 3
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -88,21 +88,21 @@ func0000000000000038:
 	ret
 
 func0000000000000048:
-	andi	a0, a0, 1
 	lui	a3, 524288
+	andi	a0, a0, 1
 	sub	a3, a3, a2
-	lui	a2, 158203
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
 	or	a0, a0, a1
+	lui	a1, 158203
 	sext.w	a0, a0
-	addi	a1, a2, 512
+	addi	a1, a1, 512
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000078:
-	andi	a0, a0, 1
 	lui	a3, 32
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -113,8 +113,8 @@ func0000000000000078:
 	ret
 
 func0000000000000046:
-	andi	a0, a0, 1
 	lui	a3, 524288
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
@@ -123,8 +123,8 @@ func0000000000000046:
 	ret
 
 func0000000000000044:
-	andi	a0, a0, 1
 	lui	a3, 524288
+	andi	a0, a0, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0

@@ -1,12 +1,11 @@
 func000000000000000d:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v10, v9
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vsrl.vi	v11, v8, 3
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vsrl.vi	v8, v8, 3
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v10, v9
+	vzext.vf2	v11, v8
 	vwsll.vi	v8, v10, 5
-	vzext.vf2	v10, v11
-	vwaddu.wv	v8, v8, v10
+	vwaddu.wv	v8, v8, v11
 	ret
 
 func0000000000000007:

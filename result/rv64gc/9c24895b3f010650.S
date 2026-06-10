@@ -11,8 +11,8 @@ func000000000000000d:
 	ret
 
 func0000000000000010:
-	srli	a1, a1, 5
 	not	a0, a0
+	srli	a1, a1, 5
 	ori	a0, a0, -2
 	addw	a0, a0, a1
 	ret

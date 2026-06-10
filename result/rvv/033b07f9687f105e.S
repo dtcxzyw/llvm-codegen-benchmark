@@ -3,8 +3,8 @@ func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfrdiv.vf	v12, v12, fa5
 	lui	a0, 292864
-	addi	a0, a0, -256
 	vfrsub.vf	v16, v12, fa5
+	addi	a0, a0, -256
 	fmv.w.x	fa5, a0
 	vfmul.vf	v16, v16, fa5
 	vfmacc.vv	v16, v8, v12

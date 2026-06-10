@@ -31,32 +31,32 @@ func000000000000004c:
 func0000000000000044:
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	lui	a1, 24
-	addi	a1, a1, 1696
-	flt.d	a2, fa0, fa5
-	sltu	a0, a0, a1
-	and	a0, a0, a2
+	flt.d	a1, fa0, fa5
+	lui	a2, 24
+	addi	a2, a2, 1696
+	sltu	a0, a0, a2
+	and	a0, a0, a1
 	ret
 
 func0000000000000068:
-	srli	a0, a0, 63
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func00000000000000a8:
-	srli	a0, a0, 63
 	fmv.d.x	fa5, zero
-	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
+	srli	a0, a0, 63
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func00000000000000c4:
-	snez	a0, a0
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -70,8 +70,8 @@ func000000000000010c:
 func0000000000000024:
 	feq.d	a1, fa0, fa0
 	li	a2, -7
-	xori	a1, a1, 1
 	slli	a2, a2, 48
+	xori	a1, a1, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -87,12 +87,12 @@ func00000000000000cc:
 
 func00000000000000ac:
 	li	a1, 1023
-	lui	a2, 2
 	slli	a1, a1, 52
-	addi	a2, a2, 1807
 	fmv.d.x	fa5, a1
-	xor	a0, a0, a2
 	fle.d	a1, fa0, fa5
+	lui	a2, 2
+	addi	a2, a2, 1807
+	xor	a0, a0, a2
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1

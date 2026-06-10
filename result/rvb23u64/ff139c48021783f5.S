@@ -7,8 +7,8 @@ func000000000000008f:
 	ret
 
 func000000000000001f:
-	addiw	a0, a0, -2
 	li	a1, 24
+	addiw	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	addiw	a0, a0, 64
 	ret

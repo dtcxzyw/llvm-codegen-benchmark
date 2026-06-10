@@ -39,10 +39,10 @@ func0000000000000008:
 	ret
 
 func0000000000000030:
-	slli	a1, a0, 33
-	slli	a0, a0, 35
-	add	a0, a0, a1
 	li	a1, 9
+	slli	a2, a0, 33
+	slli	a0, a0, 35
+	add	a0, a0, a2
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	ret

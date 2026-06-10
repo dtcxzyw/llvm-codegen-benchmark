@@ -30,8 +30,8 @@ func000000000000007c:
 
 func000000000000001c:
 	addw	a1, a1, a2
-	lui	a2, 2
 	slli	a1, a1, 4
+	lui	a2, 2
 	add	a0, a0, a1
 	addi	a1, a2, -368
 	add	a0, a0, a1
@@ -72,8 +72,8 @@ func000000000000003f:
 
 func000000000000001f:
 	addw	a1, a1, a2
-	lui	a2, 5
 	slli	a1, a1, 1
+	lui	a2, 5
 	add	a0, a0, a1
 	addi	a1, a2, 922
 	add	a0, a0, a1

@@ -19,14 +19,14 @@ func00000000000000ac:
 	add	a1, a1, a2
 	lui	a2, 796918
 	add	a0, a0, a1
+	addi	a1, a2, -983
+	mul	a0, a0, a1
 	lui	a1, 20972
-	addi	a2, a2, -983
-	mul	a0, a0, a2
-	lui	a2, 10486
 	addi	a1, a1, -1968
 	add	a0, a0, a1
 	slliw	a1, a0, 30
 	srliw	a0, a0, 2
+	lui	a2, 10486
 	or	a0, a0, a1
 	addi	a1, a2, -984
 	sltu	a0, a1, a0
@@ -36,14 +36,14 @@ func00000000000000a1:
 	add	a1, a1, a2
 	lui	a2, 796918
 	add	a0, a0, a1
+	addi	a1, a2, -983
+	mul	a0, a0, a1
 	lui	a1, 20972
-	addi	a2, a2, -983
-	mul	a0, a0, a2
-	lui	a2, 2621
 	addi	a1, a1, -1968
 	add	a0, a0, a1
 	slliw	a1, a0, 28
 	srliw	a0, a0, 4
+	lui	a2, 2621
 	or	a0, a0, a1
 	addi	a1, a2, 1803
 	sltu	a0, a0, a1
@@ -95,11 +95,11 @@ func0000000000000021:
 	add	a1, a1, a2
 	lui	a2, 699051
 	add	a0, a0, a1
+	addi	a1, a2, -1365
+	mul	a0, a0, a1
 	lui	a1, 174763
-	addi	a2, a2, -1365
-	mul	a0, a0, a2
-	lui	a2, 349525
 	addi	a1, a1, -1366
+	lui	a2, 349525
 	addw	a0, a0, a1
 	addi	a1, a2, 1365
 	sltu	a0, a0, a1

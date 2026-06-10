@@ -8,15 +8,15 @@ func0000000000000024:
 
 func00000000000000a6:
 	fclass.d	a0, fa2
-	andi	a0, a0, 126
 	fle.d	a1, fa0, fa1
+	andi	a0, a0, 126
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000006a:
 	fclass.d	a0, fa2
-	andi	a0, a0, 126
 	fle.d	a1, fa0, fa1
+	andi	a0, a0, 126
 	czero.eqz	a0, a1, a0
 	ret
 

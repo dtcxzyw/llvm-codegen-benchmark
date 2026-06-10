@@ -13,8 +13,8 @@ func0000000000000008:
 	vsext.vf2	v12, v11
 	vmul.vv	v8, v8, v12
 	vsext.vf2	v12, v10
-	li	a0, -1
 	vmul.vv	v8, v8, v12
+	li	a0, -1
 	srli	a0, a0, 6
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -79,8 +79,8 @@ func00000000000000a1:
 	vsext.vf2	v14, v10
 	vmseq.vi	v10, v8, 0
 	vmseq.vi	v8, v12, 0
-	vmor.mm	v8, v10, v8
 	vmseq.vi	v9, v14, 0
+	vmor.mm	v8, v10, v8
 	vmor.mm	v0, v8, v9
 	ret
 
@@ -107,8 +107,8 @@ func000000000000008a:
 	vsext.vf2	v12, v11
 	vmul.vv	v8, v8, v12
 	vsext.vf2	v12, v10
-	lui	a0, 524288
 	vmul.vv	v8, v8, v12
+	lui	a0, 524288
 	addiw	a0, a0, -2
 	vmsgt.vx	v0, v8, a0
 	ret

@@ -12,8 +12,8 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	sext.w	a1, a1
 	li	a2, 1
+	sext.w	a1, a1
 	beq	a1, a2, .LBB1_2
 	lui	a1, 2
 	or	a0, a0, a1

@@ -5,8 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	xori	a0, a0, 48
 	lui	a1, 16
+	xori	a0, a0, 48
 	zext.b	a0, a0
 	addi	a1, a1, -10
 	add	a0, a0, a1

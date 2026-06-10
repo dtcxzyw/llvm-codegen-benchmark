@@ -1,6 +1,6 @@
 func0000000000000015:
-	srli	a0, a0, 23
 	lui	a1, 39457
+	srli	a0, a0, 23
 	addi	a1, a1, -1792
 	slli	a0, a0, 56
 	mulhu	a0, a0, a1

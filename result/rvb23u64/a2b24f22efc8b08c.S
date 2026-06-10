@@ -16,9 +16,9 @@ func000000000000002f:
 
 func0000000000000025:
 	zext.b	a2, a2
+	lui	a3, 1034754
 	or	a1, a1, a2
-	lui	a2, 1034754
-	addi	a2, a2, 1024
+	addi	a2, a3, 1024
 	zext.h	a1, a1
 	add	a0, a0, a2
 	addw	a0, a0, a1
@@ -26,9 +26,9 @@ func0000000000000025:
 
 func0000000000000027:
 	zext.b	a2, a2
+	lui	a3, 1034754
 	or	a1, a1, a2
-	lui	a2, 1034754
-	addi	a2, a2, 1024
+	addi	a2, a3, 1024
 	zext.h	a1, a1
 	add	a0, a0, a2
 	addw	a0, a0, a1

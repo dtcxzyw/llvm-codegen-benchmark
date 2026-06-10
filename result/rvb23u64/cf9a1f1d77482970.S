@@ -1,6 +1,6 @@
 func0000000000000001:
-	andi	a0, a0, 4
 	li	a1, 1024
+	andi	a0, a0, 4
 	czero.eqz	a0, a1, a0
 	bseti	a0, a0, 27
 	ret

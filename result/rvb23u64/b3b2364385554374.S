@@ -43,12 +43,12 @@ func0000000000000187:
 func0000000000000085:
 	sext.w	a2, a2
 	lui	a3, 409600
-	slli	a0, a0, 63
 	xor	a2, a2, a3
-	srai	a0, a0, 63
+	slli	a0, a0, 63
 	snez	a2, a2
-	andi	a0, a0, -10
+	srai	a0, a0, 63
 	addi	a2, a2, -1
+	andi	a0, a0, -10
 	andi	a2, a2, 10
 	add	a0, a0, a1
 	addw	a0, a0, a2

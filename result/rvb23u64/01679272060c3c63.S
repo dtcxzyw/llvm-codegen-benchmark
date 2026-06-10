@@ -12,8 +12,8 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	rev8	a0, a0
 	lui	a1, 520192
+	rev8	a0, a0
 	srai	a0, a0, 32
 	addi	a1, a1, -1
 	slt	a0, a1, a0

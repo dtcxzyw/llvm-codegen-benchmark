@@ -7,9 +7,9 @@ func0000000000000044:
 func0000000000000062:
 	flt.d	a0, fa2, fa1
 	flt.d	a1, fa1, fa2
+	flt.d	a2, fa0, fa1
 	or	a0, a0, a1
-	flt.d	a1, fa0, fa1
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000024:

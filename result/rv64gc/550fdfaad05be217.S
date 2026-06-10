@@ -91,8 +91,8 @@ func000000000000014d:
 	ret
 
 func0000000000000080:
-	sext.w	a1, a1
 	li	a2, -13
+	sext.w	a1, a1
 	slli	a2, a2, 8
 	sltu	a1, a1, a2
 	add	a0, a0, a1

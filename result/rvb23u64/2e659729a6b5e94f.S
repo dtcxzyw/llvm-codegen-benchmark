@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func000000000000006a:
-	srliw	a1, a1, 19
 	li	a2, -100
+	srliw	a1, a1, 19
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	zext.w	a0, a0

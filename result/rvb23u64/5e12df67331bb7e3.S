@@ -10,10 +10,10 @@ func0000000000000282:
 func0000000000000042:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	seqz	a2, a1
 	xor	a0, a0, a1
+	seqz	a1, a1
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func00000000000001cc:
@@ -28,10 +28,10 @@ func00000000000001cc:
 func000000000000004c:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	slti	a2, a1, 5
 	xor	a0, a0, a1
+	slti	a1, a1, 5
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000020c:
@@ -43,11 +43,11 @@ func000000000000020c:
 	ret
 
 func0000000000000294:
+	lui	a2, 16
 	sext.w	a0, a0
 	sext.w	a1, a1
-	lui	a2, 16
-	slt	a0, a1, a0
 	addi	a2, a2, -1
+	slt	a0, a1, a0
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

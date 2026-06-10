@@ -18,8 +18,8 @@ func000000000000002a:
 
 func000000000000006a:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vxor.vi	v10, v10, 7
 	vmv.v.i	v12, 1
+	vxor.vi	v10, v10, 7
 	vsll.vv	v10, v12, v10
 	vmslt.vv	v0, v8, v10
 	ret

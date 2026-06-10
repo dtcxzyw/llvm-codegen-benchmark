@@ -1,19 +1,19 @@
 func0000000000000148:
+	li	a3, 1
 	slli	a2, a2, 32
+	slli	a3, a3, 32
 	or	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 32
-	addi	a2, a2, -11
-	sltu	a1, a1, a2
+	addi	a3, a3, -11
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func00000000000001c2:
 	slli	a2, a2, 16
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	xor	a1, a1, a2
+	srli	a3, a3, 32
+	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

@@ -82,9 +82,9 @@ func0000000000000009:
 	ret
 
 func000000000000002b:
-	sext.w	a1, a1
 	lui	a3, 1
 	addi	a3, a3, -1
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	slt	a1, a2, a1
 	xori	a1, a1, 1
@@ -92,9 +92,9 @@ func000000000000002b:
 	ret
 
 func000000000000000b:
-	sext.w	a1, a1
 	lui	a3, 1
 	addi	a3, a3, -1
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	slt	a1, a2, a1
 	xori	a1, a1, 1

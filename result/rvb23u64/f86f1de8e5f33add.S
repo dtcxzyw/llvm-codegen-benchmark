@@ -19,8 +19,8 @@ func00000000000007a4:
 func0000000000000724:
 	slli	a2, a2, 6
 	or	a0, a0, a1
-	lui	a1, 1048304
 	or	a0, a0, a2
+	lui	a1, 1048304
 	addw	a0, a0, a1
 	lui	a1, 1048320
 	sltu	a0, a0, a1

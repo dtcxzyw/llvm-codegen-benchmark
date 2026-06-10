@@ -47,17 +47,17 @@ func000000000000009a:
 	ret
 
 func0000000000000012:
+	slli	a1, a1, 5
 	slli	a0, a0, 5
 	add	a0, a0, a2
-	slli	a1, a1, 5
 	sub	a0, a0, a1
 	addi	a0, a0, -32
 	ret
 
 func0000000000000092:
+	slli	a1, a1, 5
 	slli	a0, a0, 5
 	add	a0, a0, a2
-	slli	a1, a1, 5
 	sub	a0, a0, a1
 	addi	a0, a0, -56
 	ret
@@ -82,10 +82,10 @@ func0000000000000010:
 	ret
 
 func00000000000000c0:
+	li	a3, 1800
 	add	a0, a0, a2
 	sub	a0, a0, a1
-	li	a1, 1800
-	sh2add	a0, a1, a0
+	sh2add	a0, a3, a0
 	ret
 
 func0000000000000030:

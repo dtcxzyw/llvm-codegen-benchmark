@@ -1,6 +1,6 @@
 func0000000000000d84:
-	bset	a1, zero, a1
 	lui	a2, 25056
+	bset	a1, zero, a1
 	addi	a2, a2, 1823
 	and	a1, a1, a2
 	snez	a1, a1
@@ -9,9 +9,9 @@ func0000000000000d84:
 	ret
 
 func0000000000000984:
+	lui	a2, 32
 	sext.w	a0, a0
 	bset	a1, zero, a1
-	lui	a2, 32
 	addi	a2, a2, -48
 	and	a1, a1, a2
 	sltiu	a0, a0, 6

@@ -139,13 +139,13 @@ func0000000000000264:
 
 func0000000000000318:
 	slli	a2, a2, 8
-	zext.b	a1, a1
 	or	a0, a0, a2
-	lui	a2, 1
+	zext.b	a1, a1
 	or	a0, a0, a1
+	lui	a1, 1
 	sext.w	a0, a0
-	addi	a2, a2, -24
-	sltu	a0, a2, a0
+	addi	a1, a1, -24
+	sltu	a0, a1, a0
 	ret
 
 func00000000000003ec:
@@ -159,12 +159,12 @@ func00000000000003ec:
 
 func00000000000003f8:
 	slli	a2, a2, 12
-	zext.b	a1, a1
 	or	a0, a0, a2
-	lui	a2, 16
+	zext.b	a1, a1
 	or	a0, a0, a1
+	lui	a1, 16
 	sext.w	a0, a0
-	addi	a1, a2, -561
+	addi	a1, a1, -561
 	sltu	a0, a1, a0
 	ret
 

@@ -8,8 +8,8 @@ func0000000000000144:
 
 func0000000000000d8c:
 	addi	a2, a2, 1
-	addi	a1, a1, -9
 	xor	a0, a0, a2
+	addi	a1, a1, -9
 	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
@@ -59,8 +59,8 @@ func0000000000000e85:
 
 func0000000000000989:
 	addi	a2, a2, -16
-	addi	a1, a1, -1
 	sltu	a0, a2, a0
+	addi	a1, a1, -1
 	not	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1

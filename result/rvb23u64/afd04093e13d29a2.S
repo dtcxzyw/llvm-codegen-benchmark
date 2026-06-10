@@ -1,6 +1,6 @@
 func00000000000000ea:
-	andi	a0, a0, 1
 	addi	a2, a2, 28
+	andi	a0, a0, 1
 	andi	a2, a2, 31
 	czero.nez	a0, a1, a0
 	addw	a0, a0, a2
@@ -8,8 +8,8 @@ func00000000000000ea:
 	ret
 
 func00000000000000ca:
-	andi	a0, a0, 1
 	addi	a2, a2, 28
+	andi	a0, a0, 1
 	andi	a2, a2, 31
 	czero.nez	a0, a1, a0
 	addw	a0, a0, a2

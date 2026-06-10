@@ -5,9 +5,9 @@ func0000000000000001:
 	ret
 .LBB0_2:
 	slli	a2, a2, 48
-	lui	a0, 1
 	srli	a2, a2, 48
 	addi	a2, a2, -8
+	lui	a0, 1
 	seqz	a1, a2
 	addi	a0, a0, 1230
 	or	a0, a0, a1

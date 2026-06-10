@@ -17,9 +17,9 @@ func0000000000000000:
 	ret
 
 func0000000000000009:
-	sext.w	a3, a0
 	sub	a1, a1, a2
-	sgtz	a2, a3
+	sext.w	a2, a0
+	sgtz	a2, a2
 	neg	a2, a2
 	and	a0, a0, a2
 	addw	a0, a0, a1

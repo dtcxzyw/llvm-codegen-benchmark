@@ -7,8 +7,8 @@ func0000000000000000:
 	addi	a0, a0, 655
 	fmv.w.x	fa5, a0
 	lui	a0, 781353
-	addi	a0, a0, -164
 	vfmacc.vf	v16, fa5, v12
+	addi	a0, a0, -164
 	fmv.w.x	fa5, a0
 	vfmadd.vf	v8, fa5, v16
 	ret

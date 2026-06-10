@@ -37,8 +37,8 @@ func000000000000007f:
 func0000000000000078:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, -1
 	vmadd.vv	v14, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vadd.vx	v8, v14, a0
 	ret
@@ -46,8 +46,8 @@ func0000000000000078:
 func0000000000000050:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, -1
 	vmadd.vv	v14, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vadd.vx	v8, v14, a0
 	ret
@@ -55,8 +55,8 @@ func0000000000000050:
 func0000000000000070:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, -2
 	vmadd.vv	v14, v10, v8
+	li	a0, -2
 	zext.w	a0, a0
 	vadd.vx	v8, v14, a0
 	ret
@@ -64,8 +64,8 @@ func0000000000000070:
 func0000000000000057:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	li	a0, -1
 	vmadd.vv	v14, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vadd.vx	v8, v14, a0
 	ret
@@ -124,8 +124,8 @@ func0000000000000040:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 8
 	vmadd.vv	v14, v10, v8
+	lui	a0, 8
 	addi	a0, a0, 448
 	vadd.vx	v8, v14, a0
 	ret

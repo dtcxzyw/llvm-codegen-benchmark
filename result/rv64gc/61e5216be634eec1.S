@@ -1,12 +1,12 @@
 func00000000000000ac:
 	li	a1, 1023
-	fmv.d.x	fa5, zero
 	slli	a1, a1, 52
-	fle.d	a2, fa5, fa0
-	fmv.d.x	fa5, a1
-	fle.d	a1, fa0, fa5
-	and	a0, a0, a2
+	fmv.d.x	fa5, zero
+	fmv.d.x	fa4, a1
+	fle.d	a1, fa5, fa0
+	fle.d	a2, fa0, fa4
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func000000000000002c:

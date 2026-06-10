@@ -21,27 +21,27 @@ func000000000000028a:
 
 func0000000000000684:
 	slli	a0, a0, 2
+	lui	a2, 29
 	add	a0, a0, a1
-	lui	a1, 29
-	addi	a1, a1, 288
+	addi	a1, a2, 288
 	add	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret
 
 func0000000000000204:
 	slli	a1, a1, 2
+	lui	a2, 44
 	add	a0, a0, a1
-	lui	a1, 44
-	addi	a1, a1, -1616
+	addi	a1, a2, -1616
 	add	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret
 
 func0000000000000084:
 	slli	a0, a0, 2
+	lui	a2, 29
 	add	a0, a0, a1
-	lui	a1, 29
-	addi	a1, a1, 288
+	addi	a1, a2, 288
 	add	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret

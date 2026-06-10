@@ -25,10 +25,10 @@ func000000000000000f:
 	ret
 
 func0000000000000010:
+	bseti	a3, zero, 35
 	sub	a1, a1, a2
-	bseti	a2, zero, 35
-	addi	a2, a2, -16
-	and	a1, a1, a2
+	addi	a3, a3, -16
+	and	a1, a1, a3
 	add	a0, a0, a1
 	addi	a0, a0, -16
 	ret

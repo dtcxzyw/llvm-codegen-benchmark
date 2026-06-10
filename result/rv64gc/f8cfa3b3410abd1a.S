@@ -167,8 +167,8 @@ func00000000000000d4:
 	bltz	a2, .LBB16_2
 	mv	a0, a1
 .LBB16_2:
-	sext.w	a0, a0
 	lui	a1, 524288
+	sext.w	a0, a0
 	addiw	a1, a1, -10
 	sltu	a0, a0, a1
 	ret

@@ -6,10 +6,10 @@ func000000000000000e:
 	ret
 
 func0000000000000007:
+	lui	a3, 1034768
 	or	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 1034768
-	add	a0, a0, a1
+	add	a0, a0, a3
 	ret
 
 func0000000000000004:

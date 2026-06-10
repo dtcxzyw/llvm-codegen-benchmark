@@ -10,11 +10,11 @@ func0000000000000058:
 	ret
 
 func0000000000000042:
-	sext.w	a3, a0
-	lui	a4, 16384
-	xor	a0, a3, a4
+	lui	a3, 16384
+	sext.w	a4, a0
+	xor	a0, a4, a3
 	seqz	a0, a0
-	beq	a3, a4, .LBB1_2
+	beq	a4, a3, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
 	lui	a2, 20480

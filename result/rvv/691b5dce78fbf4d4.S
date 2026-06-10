@@ -25,8 +25,8 @@ func000000000000001d:
 	slli	a1, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a1
-	li	a1, 32
 	vadd.vv	v10, v10, v12
+	li	a1, 32
 	vsll.vx	v10, v10, a1
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8

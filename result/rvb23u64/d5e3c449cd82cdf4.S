@@ -11,8 +11,8 @@ func0000000000000584:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 2
 	addiw	a0, a0, -9
+	andi	a1, a1, 2
 	sltiu	a0, a0, 3
 	czero.nez	a0, a0, a1
 	ret

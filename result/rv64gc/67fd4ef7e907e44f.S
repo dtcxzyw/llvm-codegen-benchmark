@@ -37,43 +37,43 @@ func000000000000004c:
 	ret
 
 func00000000000001e4:
-	slli	a2, a2, 8
+	li	a3, -1
 	or	a0, a0, a1
-	li	a1, -1
+	slli	a2, a2, 8
+	slli	a3, a3, 63
 	or	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a1, a1, 7
-	sltu	a0, a0, a1
+	addi	a3, a3, 7
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000164:
-	slli	a2, a2, 32
+	li	a3, -1
 	or	a0, a0, a1
-	li	a1, -1
+	slli	a2, a2, 32
+	slli	a3, a3, 63
 	or	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a1, a1, 7
-	sltu	a0, a0, a1
+	addi	a3, a3, 7
+	sltu	a0, a0, a3
 	ret
 
 func00000000000001e6:
-	slli	a2, a2, 8
+	li	a3, -1
 	or	a0, a0, a1
-	li	a1, -1
+	slli	a2, a2, 8
+	slli	a3, a3, 63
 	or	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a1, a1, 7
-	slt	a0, a0, a1
+	addi	a3, a3, 7
+	slt	a0, a0, a3
 	ret
 
 func0000000000000166:
-	slli	a2, a2, 16
+	li	a3, -1
 	or	a0, a0, a1
-	li	a1, -1
+	slli	a2, a2, 16
+	slli	a3, a3, 63
 	or	a0, a0, a2
-	slli	a1, a1, 63
-	addi	a1, a1, 7
-	slt	a0, a0, a1
+	addi	a3, a3, 7
+	slt	a0, a0, a3
 	ret
 
 func00000000000001f8:

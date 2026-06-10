@@ -64,8 +64,8 @@ func0000000000000002:
 
 func0000000000000020:
 	slli	a2, a2, 32
-	addi	a1, a1, 1
 	srli	a2, a2, 32
+	addi	a1, a1, 1
 	mul	a1, a1, a2
 	slli	a2, a1, 3
 	slli	a1, a1, 4

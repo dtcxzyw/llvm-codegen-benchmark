@@ -1,6 +1,6 @@
 func0000000000000014:
-	andi	a1, a1, 1
 	andi	a2, a2, 32
+	andi	a1, a1, 1
 	addiw	a2, a2, -64
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 64
@@ -30,8 +30,8 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 1
 	bclri	a2, a2, 63
+	andi	a1, a1, 1
 	addi	a2, a2, -23
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 23
@@ -40,8 +40,8 @@ func000000000000000c:
 	ret
 
 func0000000000000018:
-	andi	a1, a1, 1
 	bclri	a2, a2, 63
+	andi	a1, a1, 1
 	addi	a2, a2, -23
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 23

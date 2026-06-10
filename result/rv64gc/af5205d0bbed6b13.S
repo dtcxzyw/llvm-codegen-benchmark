@@ -1,12 +1,12 @@
 func000000000000003e:
-	neg	a0, a0
 	li	a1, 1
+	neg	a0, a0
 	sllw	a0, a1, a0
 	ret
 
 func000000000000003c:
-	neg	a0, a0
 	li	a1, 10
+	neg	a0, a0
 	sllw	a0, a1, a0
 	ret
 
@@ -18,14 +18,14 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	neg	a0, a0
 	li	a1, 1
+	neg	a0, a0
 	sllw	a0, a1, a0
 	ret
 
 func000000000000000f:
-	xori	a0, a0, 7
 	li	a1, 1
+	xori	a0, a0, 7
 	sllw	a0, a1, a0
 	ret
 
@@ -44,8 +44,8 @@ func000000000000003d:
 	ret
 
 func000000000000000d:
-	neg	a0, a0
 	li	a1, -1
+	neg	a0, a0
 	sllw	a0, a1, a0
 	ret
 

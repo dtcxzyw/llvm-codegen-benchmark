@@ -7,9 +7,9 @@ func0000000000000000:
 	ret
 
 func00000000000000fc:
-	addi	a2, a2, 3
 	li	a3, 1
 	slli	a3, a3, 33
+	addi	a2, a2, 3
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a0, a0, a1

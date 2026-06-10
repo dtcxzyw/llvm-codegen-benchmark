@@ -22,9 +22,9 @@ func000000000000001a:
 	zext.h	a2, a2
 	mul	a1, a1, a2
 	lui	a2, 67109
-	addi	a2, a2, -557
 	addw	a0, a0, a1
-	mul	a0, a0, a2
+	addi	a1, a2, -557
+	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 40
 	add	a0, a0, a1

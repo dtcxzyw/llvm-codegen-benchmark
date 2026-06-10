@@ -24,8 +24,8 @@ func0000000000000008:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero
-	lui	a0, 522240
 	vmfeq.vf	v0, v8, fa5
+	lui	a0, 522240
 	addi	a0, a0, -1
 	vmerge.vxm	v8, v8, a0, v0
 	ret

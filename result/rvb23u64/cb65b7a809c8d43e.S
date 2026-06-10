@@ -1,21 +1,21 @@
 func000000000000001b:
+	li	a1, 128
 	addi	a0, a0, 7
 	srliw	a0, a0, 3
-	li	a1, 128
 	sub	a0, a1, a0
 	ret
 
 func0000000000000019:
+	li	a1, 128
 	addi	a0, a0, 7
 	srliw	a0, a0, 3
-	li	a1, 128
 	sub	a0, a1, a0
 	ret
 
 func0000000000000009:
+	li	a1, 17
 	addi	a0, a0, -262
 	srliw	a0, a0, 2
-	li	a1, 17
 	sub	a0, a1, a0
 	ret
 
@@ -26,9 +26,9 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
+	li	a1, 8
 	addi	a0, a0, 7
 	srliw	a0, a0, 3
-	li	a1, 8
 	sub	a0, a1, a0
 	ret
 

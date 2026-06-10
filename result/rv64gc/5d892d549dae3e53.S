@@ -1,6 +1,6 @@
 func0000000000000000:
-	srli	a0, a0, 10
 	li	a1, -5
+	srli	a0, a0, 10
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	ret
@@ -11,8 +11,8 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	srliw	a0, a0, 19
 	li	a1, 1
+	srliw	a0, a0, 19
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	ret
@@ -23,8 +23,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	srliw	a0, a0, 16
 	lui	a1, 1
+	srliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
 

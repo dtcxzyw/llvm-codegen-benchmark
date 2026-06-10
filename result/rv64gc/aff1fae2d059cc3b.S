@@ -1,16 +1,16 @@
 func0000000000000007:
 	srliw	a1, a1, 6
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -864
+	addi	a1, a2, -864
 	addw	a0, a0, a1
 	ret
 
 func000000000000000d:
 	srliw	a0, a0, 6
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -864
+	addi	a1, a2, -864
 	addw	a0, a0, a1
 	ret
 

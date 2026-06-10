@@ -1,10 +1,10 @@
 func0000000000000154:
 	sraiw	a3, a2, 31
+	sraiw	a4, a1, 31
 	xor	a2, a2, a3
+	xor	a1, a1, a4
 	subw	a2, a2, a3
-	sraiw	a3, a1, 31
-	xor	a1, a1, a3
-	subw	a1, a1, a3
+	subw	a1, a1, a4
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2
@@ -14,11 +14,11 @@ func0000000000000154:
 
 func0000000000000141:
 	sraiw	a3, a2, 31
+	sraiw	a4, a1, 31
 	xor	a2, a2, a3
+	xor	a1, a1, a4
 	subw	a2, a2, a3
-	sraiw	a3, a1, 31
-	xor	a1, a1, a3
-	subw	a1, a1, a3
+	subw	a1, a1, a4
 	sext.w	a0, a0
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a2

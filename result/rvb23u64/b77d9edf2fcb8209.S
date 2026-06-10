@@ -27,8 +27,8 @@ func0000000000000021:
 	ret
 
 func000000000000004a:
-	bset	a0, zero, a0
 	lui	a1, 524288
+	bset	a0, zero, a0
 	addi	a1, a1, 3
 	and	a0, a0, a1
 	sext.w	a0, a0

@@ -7,12 +7,12 @@ func0000000000000001:
 
 func0000000000000003:
 	andi	a1, a1, 223
+	lui	a2, 916990
 	or	a0, a0, a1
-	lui	a1, 916990
-	addi	a1, a1, -33
+	addi	a1, a2, -33
+	lui	a2, 514
 	and	a0, a0, a1
-	lui	a1, 514
-	addi	a1, a1, 32
+	addi	a1, a2, 32
 	or	a0, a0, a1
 	ret
 

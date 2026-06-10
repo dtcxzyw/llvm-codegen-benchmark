@@ -1,7 +1,7 @@
 func00000000000002b4:
+	li	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, 1
 	vmin.vx	v10, v8, a0
 	vmax.vx	v8, v8, a0
 	vsub.vv	v8, v8, v10
@@ -9,9 +9,9 @@ func00000000000002b4:
 	ret
 
 func00000000000002b8:
+	li	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, 1
 	vmin.vx	v10, v8, a0
 	vmax.vx	v8, v8, a0
 	vsub.vv	v8, v8, v10
@@ -20,9 +20,9 @@ func00000000000002b8:
 	ret
 
 func00000000000000b8:
+	li	a0, 1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, 1
 	vmin.vx	v10, v8, a0
 	vmax.vx	v8, v8, a0
 	vsub.vv	v8, v8, v10

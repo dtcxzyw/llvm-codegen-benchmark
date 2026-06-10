@@ -1,7 +1,7 @@
 func0000000000000007:
-	sext.w	a1, a1
 	andi	a2, a2, 1
 	li	a3, 2
+	sext.w	a1, a1
 	sub	a3, a3, a2
 	czero.eqz	a1, a3, a1
 	sh3add	a0, a1, a0

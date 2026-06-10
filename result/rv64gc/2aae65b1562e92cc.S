@@ -1,6 +1,6 @@
 func0000000000000021:
-	sext.w	a0, a0
 	lui	a3, 768
+	sext.w	a0, a0
 	and	a2, a2, a3
 	snez	a0, a0
 	or	a1, a1, a2
@@ -9,10 +9,10 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	sext.w	a0, a0
 	andi	a2, a2, 1
-	or	a1, a1, a2
+	sext.w	a0, a0
 	sltiu	a0, a0, 32
+	or	a1, a1, a2
 	neg	a0, a0
 	and	a0, a0, a1
 	ret

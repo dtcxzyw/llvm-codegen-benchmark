@@ -8,8 +8,8 @@ func000000000000002c:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a2, 31
 	srliw	a1, a1, 31
+	srliw	a2, a2, 31
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -18,8 +18,8 @@ func00000000000000ca:
 func000000000000002a:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	seqz	a2, a2
 	slti	a1, a1, 2
+	seqz	a2, a2
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -62,8 +62,8 @@ func000000000000018c:
 	ret
 
 func0000000000000314:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	sltiu	a2, a2, 97
 	xori	a2, a2, 1
 	sltiu	a1, a1, 98
@@ -83,8 +83,8 @@ func0000000000000181:
 func0000000000000038:
 	sext.w	a1, a1
 	sext.w	a2, a2
-	seqz	a2, a2
 	sltiu	a1, a1, 3
+	seqz	a2, a2
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

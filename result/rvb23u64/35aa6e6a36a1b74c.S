@@ -15,8 +15,8 @@ func0000000000000025:
 	bnez	a0, .LBB1_2
 	fmv.d	fa5, fa1
 .LBB1_2:
-	fmul.d	fa5, fa0, fa5
 	li	a0, 997
+	fmul.d	fa5, fa0, fa5
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa5, fa4

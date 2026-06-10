@@ -1,10 +1,10 @@
 func000000000000000f:
-	addi	a0, a0, 227
-	slli	a1, a0, 1
-	slli	a0, a0, 4
-	add	a0, a0, a1
-	addi	a0, a0, 15
 	lui	a1, 1023
+	addi	a0, a0, 227
+	slli	a2, a0, 1
+	slli	a0, a0, 4
+	add	a0, a0, a2
+	addi	a0, a0, 15
 	and	a0, a0, a1
 	ret
 

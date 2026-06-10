@@ -1,7 +1,7 @@
 func0000000000000006:
 	mv	a1, a0
-	addiw	a0, a0, 1
 	li	a2, 3
+	addiw	a0, a0, 1
 	bge	a0, a2, .LBB0_2
 	addiw	a0, a1, 13
 .LBB0_2:
@@ -9,8 +9,8 @@ func0000000000000006:
 
 func000000000000000a:
 	mv	a1, a0
-	addiw	a0, a0, -10
 	li	a2, 72
+	addiw	a0, a0, -10
 	bge	a2, a0, .LBB1_2
 	addiw	a0, a1, -11
 .LBB1_2:
@@ -39,10 +39,10 @@ func0000000000000064:
 
 func0000000000000008:
 	mv	a1, a0
+	li	a2, 26
 	addiw	a0, a0, 97
-	srliw	a2, a0, 11
-	li	a3, 26
-	bgeu	a3, a2, .LBB4_2
+	srliw	a3, a0, 11
+	bgeu	a2, a3, .LBB4_2
 	addi	a0, a1, 2047
 	addiw	a0, a0, 98
 .LBB4_2:

@@ -16,19 +16,19 @@ func000000000000001b:
 
 func000000000000000f:
 	andi	a1, a1, 1
+	li	a3, -1
 	slli.uw	a2, a2, 8
+	slli	a3, a3, 40
 	or	a0, a0, a2
-	li	a2, -1
-	slli	a2, a2, 40
-	czero.nez	a1, a2, a1
+	czero.nez	a1, a3, a1
 	or	a0, a0, a1
 	ret
 
 func000000000000000b:
 	andi	a1, a1, 1
 	slli	a2, a2, 32
-	or	a0, a0, a2
 	addi	a1, a1, -1
+	or	a0, a0, a2
 	andi	a1, a1, 8
 	or	a0, a0, a1
 	ret

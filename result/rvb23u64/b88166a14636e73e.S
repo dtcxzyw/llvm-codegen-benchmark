@@ -1,6 +1,6 @@
 func000000000000003f:
-	addi	a2, a2, 3
 	bseti	a3, zero, 33
+	addi	a2, a2, 3
 	addi	a3, a3, -8
 	addi	a4, a3, 4
 	and	a1, a1, a3
@@ -34,8 +34,8 @@ func0000000000000000:
 func0000000000000030:
 	addi	a2, a2, 7
 	lui	a3, 32
-	andi	a1, a1, -8
 	addi	a3, a3, -8
+	andi	a1, a1, -8
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -52,8 +52,8 @@ func0000000000000010:
 func000000000000003e:
 	addi	a2, a2, 63
 	bseti	a3, zero, 34
-	andi	a1, a1, -64
 	addi	a3, a3, -64
+	andi	a1, a1, -64
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

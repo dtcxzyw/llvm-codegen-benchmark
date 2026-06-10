@@ -15,9 +15,9 @@ func0000000000000038:
 func000000000000003a:
 	addiw	a2, a2, -122
 	slli	a0, a0, 2
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	lui	a1, 305
-	slli	a2, a2, 2
 	add	a0, a0, a2
 	addi	a1, a1, 976
 	add	a0, a0, a1
@@ -26,9 +26,9 @@ func000000000000003a:
 func000000000000000a:
 	addiw	a2, a2, -122
 	slli	a0, a0, 2
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	lui	a1, 320
-	slli	a2, a2, 2
 	add	a0, a0, a2
 	addi	a1, a1, -928
 	add	a0, a0, a1

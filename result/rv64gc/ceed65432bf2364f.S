@@ -1,6 +1,6 @@
 func0000000000000022:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 273536
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 264192
 	fmin.s	fa5, fa5, fa4
@@ -9,8 +9,8 @@ func0000000000000022:
 	ret
 
 func00000000000000ca:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 784384
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 260096
 	fmax.s	fa5, fa5, fa4
@@ -19,8 +19,8 @@ func00000000000000ca:
 	ret
 
 func00000000000000c4:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 2048
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 522240
 	addi	a0, a0, -1
@@ -30,8 +30,8 @@ func00000000000000c4:
 	ret
 
 func0000000000000024:
-	fmul.s	fa5, fa0, fa1
 	lui	a0, 260096
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	lui	a0, 784384
 	fmin.s	fa5, fa5, fa4

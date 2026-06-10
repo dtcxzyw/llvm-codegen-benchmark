@@ -35,8 +35,8 @@ func000000000000030c:
 func0000000000000050:
 	zext.b	a1, a0
 	andi	a0, a0, 1
-	seqz	a0, a0
 	sltiu	a1, a1, 22
+	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000141:
 	sext.w	a1, a1
 	lui	a3, 16
-	and	a2, a2, a3
 	slti	a1, a1, 3
+	and	a2, a2, a3
 	xori	a1, a1, 1
 	czero.nez	a1, a1, a2
 	and	a0, a0, a1

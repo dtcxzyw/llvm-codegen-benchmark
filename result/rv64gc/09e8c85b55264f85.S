@@ -1,6 +1,6 @@
 func0000000000000014:
-	andi	a0, a0, 224
 	li	a1, 160
+	andi	a0, a0, 224
 	bltu	a0, a1, .LBB0_2
 	li	a0, 55
 	ret

@@ -38,8 +38,8 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	negw	a0, a0
 	li	a1, -1
+	negw	a0, a0
 	add.uw	a0, a1, a0
 	ret
 

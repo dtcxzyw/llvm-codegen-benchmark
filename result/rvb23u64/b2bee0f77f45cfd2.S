@@ -2,8 +2,8 @@ func0000000000000010:
 	andi	a2, a2, 1
 	li	a3, 24
 	czero.eqz	a2, a3, a2
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 96
 	ret
@@ -18,8 +18,8 @@ func000000000000001a:
 
 func000000000000001b:
 	bexti	a2, a2, 13
-	slli	a0, a0, 5
 	neg	a2, a2
+	slli	a0, a0, 5
 	andi	a2, a2, -32
 	add	a0, a0, a1
 	add	a0, a0, a2

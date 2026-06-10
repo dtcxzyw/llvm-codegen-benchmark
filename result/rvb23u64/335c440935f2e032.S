@@ -37,8 +37,8 @@ func000000000000000a:
 	ret
 
 func0000000000000061:
-	andi	a0, a0, 1
 	lui	a2, 16
+	andi	a0, a0, 1
 	sub	a2, a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -47,8 +47,8 @@ func0000000000000061:
 	ret
 
 func0000000000000078:
-	andi	a0, a0, 1
 	lui	a2, 16
+	andi	a0, a0, 1
 	sub	a2, a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -59,8 +59,8 @@ func0000000000000078:
 	ret
 
 func0000000000000074:
-	andi	a0, a0, 1
 	lui	a2, 16
+	andi	a0, a0, 1
 	sub	a2, a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
@@ -79,8 +79,8 @@ func0000000000000034:
 	ret
 
 func0000000000000038:
-	andi	a0, a0, 1
 	lui	a2, 16
+	andi	a0, a0, 1
 	sub	a2, a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

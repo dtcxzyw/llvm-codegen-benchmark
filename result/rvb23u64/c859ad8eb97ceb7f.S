@@ -1,7 +1,7 @@
 func0000000000000061:
-	andi	a2, a2, 512
 	sh3add	a0, a1, a0
-	czero.eqz	a0, a0, a2
+	andi	a1, a2, 512
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000041:

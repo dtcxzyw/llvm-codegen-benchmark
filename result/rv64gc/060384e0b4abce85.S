@@ -9,11 +9,11 @@ func0000000000000186:
 	ret
 
 func0000000000000104:
-	sext.w	a2, a0
-	sext.w	a3, a1
-	sltiu	a3, a3, -2
-	xori	a3, a3, 1
+	sext.w	a2, a1
+	sext.w	a3, a0
 	sltiu	a2, a2, -2
+	xori	a2, a2, 1
+	sltiu	a3, a3, -2
 	and	a2, a2, a3
 	bnez	a2, .LBB1_2
 	mv	a0, a1
@@ -53,9 +53,9 @@ func0000000000000141:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a0, 31
-	srliw	a3, a1, 31
-	not	a3, a3
+	srliw	a2, a1, 31
+	srliw	a3, a0, 31
+	not	a2, a2
 	and	a2, a2, a3
 	bnez	a2, .LBB5_2
 	mv	a0, a1

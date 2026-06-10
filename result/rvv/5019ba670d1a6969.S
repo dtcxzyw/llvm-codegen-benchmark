@@ -3,9 +3,9 @@ func00000000000003a4:
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	li	a0, -127
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v13
+	li	a0, -127
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, 33
@@ -17,9 +17,9 @@ func0000000000000184:
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 1048552
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v13
+	lui	a0, 1048552
 	addi	a1, a0, -1697
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a1
@@ -44,9 +44,9 @@ func00000000000001a4:
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
-	lui	a0, 507110
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v13
+	lui	a0, 507110
 	addi	a0, a0, -1082
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0

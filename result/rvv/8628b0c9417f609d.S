@@ -17,9 +17,9 @@ func000000000000000c:
 	ret
 
 func000000000000000d:
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	fmv.w.x	fa5, zero
 	vmflt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	vfneg.v	v12, v8

@@ -5,8 +5,8 @@ func000000000000018c:
 	vmv.v.i	v10, 0
 	lui	a0, 335544
 	addi	a0, a0, 1311
-	vmerge.vim	v10, v10, 1, v0
 	vmulhu.vx	v8, v8, a0
+	vmerge.vim	v10, v10, 1, v0
 	vsrl.vi	v8, v8, 7
 	vadd.vv	v8, v8, v10
 	li	a0, 400
@@ -22,10 +22,10 @@ func000000000000050c:
 	lui	a0, 235184
 	addi	a0, a0, 1725
 	vmulhu.vx	v8, v8, a0
-	lui	a0, 36
 	vmerge.vim	v10, v10, 1, v0
 	vsrl.vi	v8, v8, 15
 	vadd.vv	v8, v8, v10
+	lui	a0, 36
 	addi	a0, a0, -1359
 	vmul.vx	v8, v8, a0
 	ret

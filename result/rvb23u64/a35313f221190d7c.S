@@ -14,12 +14,12 @@ func0000000000000024:
 	ret
 
 func0000000000000008:
+	lui	a2, 24414
 	addw	a0, a0, a1
-	lui	a1, 24414
-	addi	a1, a1, 255
+	addi	a1, a2, 255
+	lui	a2, 1024162
 	sltu	a0, a1, a0
-	lui	a1, 1024162
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -69,10 +69,10 @@ func0000000000000021:
 	ret
 
 func0000000000000014:
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	xori	a0, a0, 1
 	slli	a0, a0, 1
 	addi	a0, a0, 2

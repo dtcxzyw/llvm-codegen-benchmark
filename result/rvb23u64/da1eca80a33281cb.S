@@ -4,8 +4,8 @@ func000000000000000f:
 	ret
 
 func0000000000000001:
-	ori	a0, a0, 1
 	lui	a1, 1048575
+	ori	a0, a0, 1
 	add.uw	a0, a0, a1
 	ret
 

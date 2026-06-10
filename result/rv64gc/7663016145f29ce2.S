@@ -71,10 +71,10 @@ func0000000000000012:
 
 func0000000000000005:
 	seqz	a1, a1
+	lui	a2, 1048572
 	sub	a0, a0, a1
-	lui	a1, 1048572
-	addi	a1, a1, 2
-	add	a0, a0, a1
+	addi	a2, a2, 2
+	add	a0, a0, a2
 	ret
 
 func000000000000001b:
@@ -137,8 +137,8 @@ func0000000000000018:
 	ret
 
 func0000000000000021:
-	srli	a1, a1, 34
 	li	a2, 124
+	srli	a1, a1, 34
 	bltu	a2, a1, .LBB17_2
 	lui	a1, 509272
 	addi	a1, a1, 384

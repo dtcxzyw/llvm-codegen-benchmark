@@ -14,9 +14,9 @@ func0000000000000010:
 
 func0000000000000018:
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv.v.i	v11, 1
 	vmsle.vi	v0, v10, -1
-	vmv.v.i	v10, 1
-	vmerge.vvm	v9, v10, v9, v0
+	vmerge.vvm	v9, v11, v9, v0
 	vadd.vv	v8, v9, v8
 	ret
 

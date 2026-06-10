@@ -1,43 +1,43 @@
 func0000000000000000:
-	srli	a3, a2, 8
-	lui	a4, 16
-	srliw	a5, a1, 27
-	slli	a1, a1, 5
-	or	a1, a1, a5
+	lui	a3, 16
+	srli	a4, a2, 8
+	addi	a3, a3, -256
+	and	a4, a4, a3
 	srliw	a5, a2, 24
-	addi	a4, a4, -256
-	and	a3, a3, a4
-	and	a4, a4, a2
+	and	a3, a3, a2
+	slli	a3, a3, 8
 	slli	a2, a2, 24
-	add	a0, a0, a1
-	lui	a1, 370728
-	addi	a1, a1, -1639
-	or	a3, a3, a5
-	slli	a4, a4, 8
-	or	a2, a2, a4
+	or	a4, a4, a5
 	or	a2, a2, a3
+	srliw	a3, a1, 27
+	slli	a1, a1, 5
+	or	a1, a1, a3
+	lui	a3, 370728
+	add	a0, a0, a1
+	addi	a1, a3, -1639
+	or	a2, a2, a4
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 
 func0000000000000080:
-	srli	a3, a2, 8
-	lui	a4, 16
-	srliw	a5, a1, 2
-	slli	a1, a1, 30
-	or	a1, a1, a5
+	lui	a3, 16
+	srli	a4, a2, 8
+	addi	a3, a3, -256
+	and	a4, a4, a3
 	srliw	a5, a2, 24
-	addi	a4, a4, -256
-	and	a3, a3, a4
-	and	a4, a4, a2
+	and	a3, a3, a2
+	slli	a3, a3, 8
 	slli	a2, a2, 24
-	add	a0, a0, a1
-	lui	a1, 370728
-	addi	a1, a1, -1639
-	or	a3, a3, a5
-	slli	a4, a4, 8
-	or	a2, a2, a4
+	or	a4, a4, a5
 	or	a2, a2, a3
+	srliw	a3, a1, 2
+	slli	a1, a1, 30
+	or	a1, a1, a3
+	lui	a3, 370728
+	add	a0, a0, a1
+	addi	a1, a3, -1639
+	or	a2, a2, a4
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

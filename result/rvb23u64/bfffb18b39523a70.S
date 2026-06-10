@@ -1,7 +1,7 @@
 func000000000000000f:
-	srli	a2, a2, 6
 	li	a3, -57
 	srli	a3, a3, 3
+	srli	a2, a2, 6
 	and	a1, a1, a3
 	sh3add	a1, a2, a1
 	add	a0, a0, a1

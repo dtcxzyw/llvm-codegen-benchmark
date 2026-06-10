@@ -1,8 +1,8 @@
 func000000000000003b:
 	fmadd.s	fa5, fa0, fa0, fa1
 	lui	a0, 205501
-	fabs.s	fa5, fa5
 	addi	a0, a0, -905
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1

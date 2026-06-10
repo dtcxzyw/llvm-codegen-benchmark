@@ -10,8 +10,8 @@ func00000000000000a6:
 func0000000000000026:
 	sext.w	a1, a0
 	addiw	a0, a0, 1
-	slli	a0, a0, 2
 	slti	a1, a1, -1
+	slli	a0, a0, 2
 	neg	a1, a1
 	or	a0, a0, a1
 	ret

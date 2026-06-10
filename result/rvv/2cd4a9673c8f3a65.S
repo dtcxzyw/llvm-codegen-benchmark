@@ -1,8 +1,8 @@
 func0000000000000ee1:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vmv.v.i	v10, 1
-	vsll.vv	v12, v10, v12
+	vmv.v.i	v12, 1
+	vnsrl.wi	v13, v10, 0
+	vsll.vv	v12, v12, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vi	v8, v8, 1
@@ -11,9 +11,9 @@ func0000000000000ee1:
 
 func00000000000006e1:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vmv.v.i	v10, 1
-	vsll.vv	v12, v10, v12
+	vmv.v.i	v12, 1
+	vnsrl.wi	v13, v10, 0
+	vsll.vv	v12, v12, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vi	v8, v8, 1
@@ -22,9 +22,9 @@ func00000000000006e1:
 
 func0000000000000261:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vmv.v.i	v10, 1
-	vsll.vv	v12, v10, v12
+	vmv.v.i	v12, 1
+	vnsrl.wi	v13, v10, 0
+	vsll.vv	v12, v12, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v10, v12
 	vadd.vi	v8, v8, 1

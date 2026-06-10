@@ -127,8 +127,8 @@ func0000000000000010:
 	ret
 
 func0000000000000011:
-	sext.w	a2, a2
 	lui	a3, 2
+	sext.w	a2, a2
 	addi	a3, a3, -32
 	bltu	a3, a2, .LBB14_2
 	mv	a0, a1

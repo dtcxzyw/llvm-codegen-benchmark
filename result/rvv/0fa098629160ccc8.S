@@ -1,7 +1,7 @@
 func0000000000000081:
+	li	a0, 18
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v10, v8, 11
-	li	a0, 18
 	vmseq.vx	v11, v8, a0
 	vmandn.mm	v8, v10, v11
 	vmand.mm	v9, v0, v11

@@ -34,21 +34,21 @@ func000000000000001f:
 
 func0000000000000005:
 	li	a0, 36
+	lui	a1, 67400
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v10, v8, a0
-	lui	a0, 67400
-	addi	a0, a0, 1
+	addi	a1, a1, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vx	v8, v10, a0
+	vor.vx	v8, v10, a1
 	ret
 
 func000000000000003f:
 	li	a0, 36
+	lui	a1, 67592
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v10, v8, a0
-	lui	a0, 67592
-	addi	a0, a0, 2
+	addi	a1, a1, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vx	v8, v10, a0
+	vor.vx	v8, v10, a1
 	ret
 

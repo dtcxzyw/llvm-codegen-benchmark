@@ -1,7 +1,7 @@
 func0000000000000004:
-	addiw	a1, a1, 2
 	srliw	a2, a0, 31
 	add	a0, a0, a2
+	addiw	a1, a1, 2
 	sraiw	a0, a0, 1
 	blt	a1, a0, .LBB0_2
 	mv	a0, a1

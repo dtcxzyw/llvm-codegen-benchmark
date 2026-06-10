@@ -8,13 +8,13 @@ func00000000000000e9:
 	ret
 
 func00000000000000d4:
-	li	a0, 64
-	lui	a1, 1
-	addi	a2, a1, -64
-	addi	a1, a1, 64
+	lui	a0, 1
+	addi	a1, a0, -64
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vmsgt.vx	v0, v8, a2
-	vmv.v.x	v10, a1
+	vmsgt.vx	v0, v8, a1
+	addi	a0, a0, 64
+	vmv.v.x	v10, a0
+	li	a0, 64
 	vadd.vx	v10, v8, a0, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
@@ -57,11 +57,11 @@ func0000000000000055:
 	ret
 
 func0000000000000069:
-	li	a0, -258
-	li	a1, 264
+	li	a0, 264
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vmsltu.vx	v0, v8, a1
+	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v10, 0
+	li	a0, -258
 	vadd.vx	v10, v8, a0, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10

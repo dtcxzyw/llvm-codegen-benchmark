@@ -1,6 +1,6 @@
 func000000000000000f:
-	addi	a0, a0, 4
 	lui	a1, 439805
+	addi	a0, a0, 4
 	zext.w	a2, a0
 	addi	a1, a1, -1429
 	mul	a1, a1, a2
@@ -14,8 +14,8 @@ func000000000000000f:
 	ret
 
 func0000000000000003:
-	addi	a0, a0, 2
 	lui	a1, 699051
+	addi	a0, a0, 2
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	slli	a2, a0, 32

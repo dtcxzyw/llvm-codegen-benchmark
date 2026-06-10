@@ -7,8 +7,8 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	andi	a1, a1, 1
 	li	a3, 15
+	andi	a1, a1, 1
 	slli	a3, a3, 33
 	czero.nez	a1, a3, a1
 	add	a0, a0, a2
@@ -16,8 +16,8 @@ func000000000000000c:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, 1
 	li	a3, -1
+	andi	a1, a1, 1
 	slli	a3, a3, 32
 	czero.nez	a1, a3, a1
 	add	a0, a0, a2

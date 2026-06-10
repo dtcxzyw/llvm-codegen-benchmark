@@ -77,9 +77,9 @@ func000000000000003d:
 
 func000000000000003e:
 	slli	a2, a2, 32
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	li	a1, -1
-	srli	a2, a2, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -101,12 +101,12 @@ func0000000000000075:
 	ret
 
 func0000000000000074:
-	sext.w	a2, a2
+	li	a3, -1
 	add	a0, a0, a1
-	li	a1, -1
+	sext.w	a2, a2
+	slli	a3, a3, 32
 	add	a0, a0, a2
-	slli	a1, a1, 32
-	addi	a1, a1, 179
+	addi	a1, a3, 179
 	add	a0, a0, a1
 	ret
 

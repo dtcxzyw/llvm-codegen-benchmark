@@ -47,9 +47,9 @@ func0000000000000024:
 	ret
 
 func0000000000000101:
+	li	a0, 18
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vi	v9, v9, 6
-	li	a0, 18
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v8, v8, v9
 	vmand.mm	v0, v8, v0

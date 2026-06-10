@@ -4,9 +4,9 @@ func0000000000000003:
 	lui	a0, 6
 	addi	a0, a0, 560
 	vmv.v.x	v10, a0
+	vmv1r.v	v0, v8
 	lui	a0, 4
 	addi	a0, a0, 560
-	vmv1r.v	v0, v8
 	vmerge.vxm	v10, v10, a0, v0
 	vsll.vi	v12, v10, 8
 	vmv1r.v	v0, v9

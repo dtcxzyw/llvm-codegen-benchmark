@@ -1,7 +1,7 @@
 func0000000000000006:
+	li	a3, -127
 	add	a1, a1, a2
-	li	a2, -127
-	srli	a2, a2, 1
+	srli	a2, a3, 1
 	andi	a0, a0, 1
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2

@@ -1,7 +1,7 @@
 func0000000000000000:
+	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	fli.d	fa5, 1.0
 	vfmv.v.f	v0, fa5
 	fli.d	fa5, 2.0
 	vfmacc.vf	v0, fa5, v24

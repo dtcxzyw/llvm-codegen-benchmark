@@ -1,10 +1,11 @@
 func0000000000000003:
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmseq.vi	v0, v12, 0
 	bseti	a0, zero, 11
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmseq.vi	v0, v12, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.x	v12, a0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vor.vv	v8, v8, v10
 	ret
 
@@ -42,12 +43,13 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmsgt.vi	v0, v12, -1
 	li	a0, 68
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmsgt.vi	v0, v12, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.x	v12, a0
-	vmerge.vvm	v10, v12, v10, v0
+	vmerge.vvm	v10, v14, v10, v0
 	vor.vv	v8, v10, v8
 	ret
 

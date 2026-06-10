@@ -8,8 +8,8 @@ func000000000000003f:
 
 func000000000000001c:
 	lui	a3, 131072
-	slli	a1, a1, 32
 	addi	a3, a3, -4
+	slli	a1, a1, 32
 	and	a2, a2, a3
 	srli	a1, a1, 32
 	mul	a1, a2, a1

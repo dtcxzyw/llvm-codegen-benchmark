@@ -64,9 +64,9 @@ func0000000000000055:
 
 func0000000000000000:
 	zext.b	a1, a1
+	lui	a2, 13
 	add	a0, a0, a1
-	lui	a1, 13
-	addi	a1, a1, -403
+	addi	a1, a2, -403
 	mul	a0, a0, a1
 	lui	a1, 6
 	addi	a1, a1, -1857

@@ -1,8 +1,8 @@
 func000000000000000f:
-	zext.b	a0, a0
 	li	a1, 1
-	slli	a0, a0, 4
+	zext.b	a0, a0
 	slli	a1, a1, 36
+	slli	a0, a0, 4
 	addi	a1, a1, -48
 	add	a0, a0, a1
 	ret

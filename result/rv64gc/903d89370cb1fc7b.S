@@ -9,10 +9,10 @@ func0000000000000041:
 func0000000000000001:
 	slli	a1, a1, 1
 	srli	a1, a1, 1
+	li	a2, 1
 	srl	a0, a1, a0
-	li	a1, 1
-	slli	a1, a1, 35
-	and	a0, a0, a1
+	slli	a2, a2, 35
+	and	a0, a0, a2
 	seqz	a0, a0
 	ret
 

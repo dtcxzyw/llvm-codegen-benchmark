@@ -1,8 +1,8 @@
 func0000000000000000:
+	bseti	a3, zero, 11
 	or	a0, a0, a1
-	bseti	a1, zero, 11
 	andi	a0, a0, 1
-	and	a1, a1, a2
-	czero.nez	a0, a1, a0
+	and	a2, a2, a3
+	czero.nez	a0, a2, a0
 	ret
 

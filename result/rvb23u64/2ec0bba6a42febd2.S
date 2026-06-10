@@ -36,9 +36,9 @@ func00000000000003c2:
 func0000000000000042:
 	zext.b	a2, a2
 	slliw	a1, a1, 8
+	lui	a3, 419527
 	or	a1, a1, a2
-	lui	a2, 419527
-	addi	a2, a2, -159
+	addi	a2, a3, -159
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -47,10 +47,10 @@ func0000000000000042:
 func0000000000000254:
 	zext.b	a2, a2
 	slliw	a1, a1, 6
+	lui	a3, 272
 	or	a1, a1, a2
-	lui	a2, 272
-	addi	a2, a2, -1
-	slt	a1, a2, a1
+	addi	a3, a3, -1
+	slt	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

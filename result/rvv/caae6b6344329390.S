@@ -1,8 +1,8 @@
 func000000000000001f:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vwsll.vi	v12, v10, 10
 	lui	a0, 256
 	addi	a0, a0, -1024
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vwsll.vi	v12, v10, 10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v12, a0
 	lui	a0, 16
@@ -11,9 +11,9 @@ func000000000000001f:
 	ret
 
 func000000000000001b:
+	lui	a0, 8176
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsll.vi	v12, v10, 10
-	lui	a0, 8176
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v10, v12, a0
 	lui	a0, 1044464

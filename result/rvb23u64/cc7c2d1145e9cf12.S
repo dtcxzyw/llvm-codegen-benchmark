@@ -19,8 +19,8 @@ func0000000000000061:
 	ret
 
 func0000000000000181:
-	addi	a2, a0, 296
 	addi	a1, a1, 2047
+	addi	a2, a0, 296
 	addi	a1, a1, 1537
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

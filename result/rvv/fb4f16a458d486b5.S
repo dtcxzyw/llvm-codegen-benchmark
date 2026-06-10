@@ -45,25 +45,25 @@ func000000000000000e:
 	ret
 
 func0000000000000006:
+	li	a0, 49
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
-	li	a0, 49
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 
 func0000000000000000:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
-	li	a0, 63
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
 
 func000000000000000d:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
-	li	a0, 32
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

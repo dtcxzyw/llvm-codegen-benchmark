@@ -1,7 +1,7 @@
 func000000000000036c:
 	slli	a2, a2, 8
-	zext.b	a1, a1
 	or	a0, a0, a2
+	zext.b	a1, a1
 	li	a2, -1
 	or	a0, a0, a1
 	srli	a2, a2, 32
@@ -27,8 +27,8 @@ func0000000000000374:
 
 func0000000000000364:
 	slli	a2, a2, 8
-	zext.b	a1, a1
 	or	a0, a0, a2
+	zext.b	a1, a1
 	li	a2, 7
 	or	a0, a0, a1
 	bseti	a1, a2, 63
@@ -37,8 +37,8 @@ func0000000000000364:
 
 func0000000000000264:
 	slli	a2, a2, 32
-	zext.b	a1, a1
 	or	a0, a0, a2
+	zext.b	a1, a1
 	li	a2, 7
 	or	a0, a0, a1
 	bseti	a1, a2, 63
@@ -47,8 +47,8 @@ func0000000000000264:
 
 func0000000000000378:
 	slli	a2, a2, 16
-	zext.b	a1, a1
 	or	a0, a0, a2
+	zext.b	a1, a1
 	lui	a2, 4
 	or	a0, a0, a1
 	addi	a2, a2, -12

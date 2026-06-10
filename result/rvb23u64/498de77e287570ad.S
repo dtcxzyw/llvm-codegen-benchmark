@@ -1,7 +1,7 @@
 func0000000000000004:
-	fadd.s	fa5, fa0, fa0
 	lui	a0, 205501
 	addi	a0, a0, -905
+	fadd.s	fa5, fa0, fa0
 	fmv.w.x	fa4, a0
 	fmax.s	fa0, fa5, fa4
 	ret

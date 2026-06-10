@@ -12,12 +12,12 @@ func00000000000000ac:
 
 func00000000000000c1:
 	slli	a1, a1, 48
-	zext.h	a0, a0
 	srli	a1, a1, 40
+	zext.h	a0, a0
+	li	a2, 7
 	or	a0, a0, a1
-	li	a1, 7
-	slli	a1, a1, 9
-	xor	a0, a0, a1
+	slli	a2, a2, 9
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 

@@ -1,16 +1,16 @@
 func00000000000004ca:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vv	v14, v10, v8
-	vmsgt.vi	v8, v12, 2
-	vmand.mm	v0, v14, v8
+	vmsgt.vi	v14, v12, 2
+	vmsle.vv	v12, v10, v8
+	vmand.mm	v0, v12, v14
 	ret
 
 func00000000000000ca:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vv	v14, v10, v8
 	lui	a0, 524288
 	addi	a0, a0, -1
-	vmsltu.vx	v8, v12, a0
-	vmand.mm	v0, v14, v8
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsltu.vx	v14, v12, a0
+	vmsle.vv	v12, v10, v8
+	vmand.mm	v0, v12, v14
 	ret
 

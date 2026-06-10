@@ -7,8 +7,8 @@ func00000000000001fa:
 
 func00000000000000ff:
 	zext.w	a3, a2
-	slli	a0, a0, 4
 	sh2add.uw	a2, a2, a3
+	slli	a0, a0, 4
 	slli	a2, a2, 10
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -31,8 +31,8 @@ func00000000000001ff:
 	sh1add	a2, a3, a2
 	sh1add	a3, a0, a0
 	slli	a2, a2, 7
-	add	a1, a1, a2
 	sh1add	a0, a3, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 512
 	ret

@@ -6,8 +6,8 @@ func000000000000002c:
 
 func0000000000000021:
 	or	a0, a0, a1
-	lui	a1, 16
 	slli	a0, a0, 48
+	lui	a1, 16
 	srli	a0, a0, 48
 	addi	a1, a1, -219
 	xor	a0, a0, a1

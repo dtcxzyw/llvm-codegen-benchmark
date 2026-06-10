@@ -18,9 +18,9 @@ func000000000000000e:
 
 func00000000000000ae:
 	slli	a1, a1, 4
+	lui	a2, 256
 	add	a0, a0, a1
-	lui	a1, 256
-	addi	a1, a1, 32
+	addi	a1, a2, 32
 	add	a0, a0, a1
 	ret
 

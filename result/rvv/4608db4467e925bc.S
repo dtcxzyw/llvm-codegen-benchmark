@@ -17,9 +17,9 @@ func0000000000000004:
 func000000000000001f:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 16
-	lui	a0, 4080
 	vor.vv	v10, v12, v10
 	vadd.vv	v8, v8, v10
+	lui	a0, 4080
 	addi	a0, a0, 255
 	vand.vx	v8, v8, a0
 	ret

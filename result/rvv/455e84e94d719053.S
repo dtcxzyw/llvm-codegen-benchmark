@@ -10,10 +10,10 @@ func0000000000000121:
 	ret
 
 func000000000000012a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v10, 8
 	lui	a0, 233017
 	addi	a0, a0, -455
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v10, v10, 8
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
@@ -23,10 +23,10 @@ func000000000000012a:
 	ret
 
 func0000000000000126:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v10, v10, 8
 	lui	a0, 233017
 	addi	a0, a0, -455
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v10, v10, 8
 	vmulh.vx	v10, v10, a0
 	vsra.vi	v10, v10, 1
 	vsrl.vi	v12, v10, 31
@@ -43,11 +43,11 @@ func0000000000000006:
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vmulh.vx	v10, v10, a0
-	lui	a0, 604
 	vsra.vi	v10, v10, 7
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
+	lui	a0, 604
 	addi	a0, a0, -1351
 	vmslt.vx	v0, v8, a0
 	ret

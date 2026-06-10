@@ -8,8 +8,8 @@ func0000000000000000:
 	lui	a4, %hi(.LCPI0_1)
 	ld	a4, %lo(.LCPI0_1)(a4)
 	mul	a2, a2, a3
-	add	a0, a0, a2
 	mul	a1, a1, a4
+	add	a0, a0, a2
 	add	a0, a0, a1
 	srli	a0, a0, 37
 	ret
@@ -18,8 +18,8 @@ func00000000000001fe:
 	li	a3, 150
 	mul	a2, a2, a3
 	li	a3, 77
-	add	a0, a0, a2
 	mul	a1, a1, a3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	srli	a0, a0, 8
 	ret
@@ -27,13 +27,13 @@ func00000000000001fe:
 func0000000000000088:
 	lui	a3, 1009952
 	addi	a3, a3, 779
+	lui	a4, 1046001
 	slli	a3, a3, 14
+	addi	a4, a4, 325
 	mul	a2, a2, a3
-	lui	a3, 1046001
-	addi	a3, a3, 325
-	slli	a3, a3, 13
+	slli	a4, a4, 13
+	mul	a0, a0, a4
 	add	a1, a1, a2
-	mul	a0, a0, a3
 	add	a0, a0, a1
 	srli	a0, a0, 32
 	ret
@@ -41,11 +41,11 @@ func0000000000000088:
 func00000000000001ea:
 	lui	a3, 1
 	addi	a3, a3, 1697
+	lui	a4, 2
 	mul	a2, a2, a3
-	lui	a3, 2
-	addi	a3, a3, 1841
-	add	a0, a0, a2
+	addi	a3, a4, 1841
 	mul	a1, a1, a3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	srli	a0, a0, 18
 	ret
@@ -53,11 +53,11 @@ func00000000000001ea:
 func00000000000000aa:
 	lui	a3, 1
 	addi	a3, a3, 1697
+	lui	a4, 2
 	mul	a2, a2, a3
-	lui	a3, 2
-	addi	a3, a3, 1841
-	add	a1, a1, a2
+	addi	a3, a4, 1841
 	mul	a0, a0, a3
+	add	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 11
 	ret

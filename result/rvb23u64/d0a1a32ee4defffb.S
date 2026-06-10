@@ -16,10 +16,10 @@ func0000000000000002:
 func000000000000000a:
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
-	fli.s	fa5, 1.0
 	lui	a0, 259949
-	fmin.s	fa5, fa0, fa5
+	fli.s	fa5, 1.0
 	addi	a0, a0, 1488
+	fmin.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	fmul.s	fa0, fa5, fa4
 	ret
@@ -28,16 +28,16 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	fmv.s	fa5, fa0
-	andi	a0, a0, 1
 	lui	a1, 212992
-	fmv.w.x	fa0, a1
+	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	lui	a0, 277312
 	fmv.w.x	fa4, a0
-	fmax.s	fa5, fa5, fa4
-	fmul.s	fa0, fa5, fa0
+	fmax.s	fa4, fa0, fa4
+	fmul.s	fa5, fa4, fa5
 .LBB2_2:
+	fmv.s	fa0, fa5
 	ret
 
 func000000000000000c:

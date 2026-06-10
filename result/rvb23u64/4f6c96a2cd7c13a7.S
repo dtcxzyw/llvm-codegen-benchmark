@@ -18,8 +18,8 @@ func0000000000000003:
 func000000000000000f:
 	srli	a2, a2, 4
 	lui	a3, 16
-	slliw	a1, a1, 26
 	addi	a3, a3, -64
+	slliw	a1, a1, 26
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -37,8 +37,8 @@ func0000000000000000:
 func0000000000000006:
 	srli	a2, a2, 8
 	li	a3, 15
-	slliw	a1, a1, 6
 	slli	a3, a3, 8
+	slliw	a1, a1, 6
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

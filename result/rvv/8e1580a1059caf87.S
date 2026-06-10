@@ -11,13 +11,15 @@ func0000000000000481:
 	ret
 
 func0000000000000121:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, -1
-	li	a0, 63
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vand.vx	v10, v10, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsleu.vv	v11, v8, v12
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vand.vx	v8, v10, a0
-	vmseq.vi	v8, v8, 0
+	vmseq.vi	v8, v10, 0
 	vmand.mm	v0, v8, v11
 	ret
 

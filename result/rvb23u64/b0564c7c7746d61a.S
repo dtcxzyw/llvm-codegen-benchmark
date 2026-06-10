@@ -1,8 +1,8 @@
 func00000000000001e1:
 	slli	a2, a2, 6
+	lui	a3, 448
 	or	a0, a0, a2
-	lui	a2, 448
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	sext.w	a0, a0
 	lui	a1, 272
@@ -12,22 +12,22 @@ func00000000000001e1:
 
 func00000000000001ec:
 	slli	a2, a2, 6
+	lui	a3, 448
 	or	a0, a0, a2
-	lui	a2, 448
-	and	a1, a1, a2
-	lui	a2, 272
+	and	a1, a1, a3
 	or	a0, a0, a1
+	lui	a1, 272
 	sext.w	a0, a0
-	addi	a2, a2, 1
-	xor	a0, a0, a2
+	addi	a1, a1, 1
+	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func00000000000001f4:
 	slli	a2, a2, 6
+	lui	a3, 448
 	or	a0, a0, a2
-	lui	a2, 448
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	srliw	a0, a0, 16
 	sltiu	a0, a0, 17
@@ -35,12 +35,12 @@ func00000000000001f4:
 
 func00000000000001f8:
 	slli	a2, a2, 12
-	andi	a1, a1, 48
 	or	a0, a0, a2
-	lui	a2, 16
+	andi	a1, a1, 48
 	or	a0, a0, a1
+	lui	a1, 16
 	sext.w	a0, a0
-	addi	a1, a2, -561
+	addi	a1, a1, -561
 	sltu	a0, a1, a0
 	ret
 

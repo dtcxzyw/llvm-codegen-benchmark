@@ -19,9 +19,9 @@ func0000000000000006:
 func0000000000000007:
 	andi	a2, a2, 1
 	slli	a2, a2, 1
+	lui	a3, 1040384
 	or	a0, a0, a2
-	lui	a2, 1040384
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	bseti	a0, a0, 11
 	ret

@@ -1,6 +1,6 @@
 func0000000000000141:
-	zext.b	a0, a0
 	sext.w	a1, a1
+	zext.b	a0, a0
 	sgtz	a1, a1
 	czero.nez	a0, a1, a0
 	ret
@@ -15,22 +15,22 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	zext.b	a0, a0
 	addiw	a1, a1, -1
+	zext.b	a0, a0
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000014c:
-	zext.b	a0, a0
 	sext.w	a1, a1
+	zext.b	a0, a0
 	sgtz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000181:
-	zext.b	a0, a0
 	sext.w	a1, a1
+	zext.b	a0, a0
 	snez	a1, a1
 	czero.nez	a0, a1, a0
 	ret
@@ -44,8 +44,8 @@ func0000000000000148:
 	ret
 
 func000000000000010c:
-	zext.b	a0, a0
 	sraiw	a1, a1, 1
+	zext.b	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret

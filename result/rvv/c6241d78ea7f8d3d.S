@@ -52,9 +52,9 @@ func0000000000000308:
 	ret
 
 func0000000000000050:
+	li	a0, 1023
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmseq.vi	v12, v10, 3
-	li	a0, 1023
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8

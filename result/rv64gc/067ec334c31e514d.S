@@ -1,7 +1,7 @@
 func0000000000000281:
+	li	a2, 2
 	addi	a1, a1, -3
 	zext.b	a1, a1
-	li	a2, 2
 	bgeu	a1, a2, .LBB0_3
 	addi	a0, a0, -3
 	zext.b	a0, a0
@@ -22,9 +22,9 @@ func0000000000000281:
 	ret
 
 func0000000000000081:
+	li	a2, 18
 	addi	a1, a1, -16
 	zext.b	a1, a1
-	li	a2, 18
 	bgeu	a1, a2, .LBB1_3
 	addi	a0, a0, -16
 	zext.b	a0, a0
@@ -45,9 +45,9 @@ func0000000000000081:
 	ret
 
 func0000000000000201:
+	li	a2, 18
 	addi	a1, a1, -16
 	zext.b	a1, a1
-	li	a2, 18
 	bgeu	a1, a2, .LBB2_3
 	addi	a0, a0, -16
 	zext.b	a0, a0

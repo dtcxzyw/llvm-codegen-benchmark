@@ -25,9 +25,9 @@ func000000000000002c:
 	ret
 
 func00000000000000c4:
+	li	a0, 26
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsle.vi	v9, v9, -1
-	li	a0, 26
 	vmor.mm	v9, v9, v0
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

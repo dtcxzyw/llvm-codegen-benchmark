@@ -18,16 +18,16 @@ func00000000000000e8:
 	ret
 
 func0000000000000118:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000158:
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0

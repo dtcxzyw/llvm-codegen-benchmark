@@ -10,7 +10,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	andi	a1, a0, 1
+	mv	a1, a0
 	li	a0, 0
+	andi	a1, a1, 1
 	ret
 

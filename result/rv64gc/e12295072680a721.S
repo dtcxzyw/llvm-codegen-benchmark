@@ -7,9 +7,9 @@ func00000000000007e1:
 	ret
 
 func00000000000005e1:
+	slli	a2, a2, 4
 	sext.w	a3, a0
-	slli	a0, a2, 4
-	add	a0, a0, a1
+	add	a0, a1, a2
 	beqz	a3, .LBB1_2
 	li	a1, 8
 	add	a0, a0, a1
@@ -20,9 +20,9 @@ func00000000000005e1:
 	ret
 
 func0000000000000541:
+	slli	a2, a2, 7
 	sext.w	a3, a0
-	slli	a0, a2, 7
-	add	a0, a0, a1
+	add	a0, a1, a2
 	beqz	a3, .LBB2_2
 	li	a1, -32
 	add	a0, a0, a1

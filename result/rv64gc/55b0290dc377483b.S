@@ -18,10 +18,10 @@ func0000000000000011:
 	ret
 
 func0000000000000010:
-	sext.w	a3, a2
-	lui	a4, 244
-	addi	a4, a4, 576
-	bne	a3, a4, .LBB2_2
+	lui	a3, 244
+	sext.w	a4, a2
+	addi	a3, a3, 576
+	bne	a4, a3, .LBB2_2
 	lui	a2, 24
 	addi	a2, a2, 1696
 .LBB2_2:

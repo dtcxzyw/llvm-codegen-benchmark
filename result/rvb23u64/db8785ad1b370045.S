@@ -45,10 +45,10 @@ func0000000000000021:
 	ret
 
 func0000000000000146:
-	sext.w	a3, a2
-	lui	a4, 1
-	addi	a4, a4, -496
-	slt	a3, a4, a3
+	lui	a3, 1
+	sext.w	a4, a2
+	addi	a3, a3, -496
+	slt	a3, a3, a4
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2

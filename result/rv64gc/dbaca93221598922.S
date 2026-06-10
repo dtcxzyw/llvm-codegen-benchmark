@@ -1,21 +1,21 @@
 func000000000000000d:
+	li	a3, -31
+	slli	a3, a3, 32
+	addi	a3, a3, -1
 	or	a1, a1, a2
-	li	a2, -31
-	slli	a2, a2, 32
-	addi	a2, a2, -1
-	srli	a2, a2, 5
-	and	a1, a1, a2
+	srli	a3, a3, 5
+	and	a1, a1, a3
 	slli	a0, a0, 59
 	or	a0, a0, a1
 	ret
 
 func000000000000000f:
+	li	a3, 3
 	or	a1, a1, a2
-	li	a2, 3
+	slli	a3, a3, 34
+	addi	a3, a3, -1
 	slli	a0, a0, 62
-	slli	a2, a2, 34
-	addi	a2, a2, -1
-	and	a1, a1, a2
+	and	a1, a1, a3
 	srli	a0, a0, 28
 	or	a0, a0, a1
 	ret

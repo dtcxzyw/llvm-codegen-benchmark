@@ -19,8 +19,8 @@ func0000000000000021:
 	ret
 
 func0000000000000041:
-	bexti	a1, a1, 17
 	li	a2, -1
+	bexti	a1, a1, 17
 	srli	a2, a2, 1
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1

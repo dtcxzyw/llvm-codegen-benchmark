@@ -25,9 +25,9 @@ func000000000000000c:
 
 func000000000000000f:
 	andi	a2, a2, 1984
+	lui	a3, 4096
 	or	a0, a0, a2
-	lui	a2, 4096
-	add	a1, a1, a2
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 

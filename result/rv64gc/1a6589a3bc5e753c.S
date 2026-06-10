@@ -1,18 +1,18 @@
 func000000000000004c:
 	li	a2, 1
+	lui	a3, 32
 	sll	a1, a2, a1
-	lui	a2, 32
-	addi	a2, a2, -48
+	addi	a2, a3, -48
 	and	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 
 func00000000000000cc:
-	li	a2, 1
-	sll	a1, a2, a1
 	lui	a2, 262127
+	li	a3, 1
 	slli	a2, a2, 5
+	sll	a1, a3, a1
 	addi	a2, a2, -162
 	and	a1, a1, a2
 	snez	a1, a1

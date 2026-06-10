@@ -6,12 +6,12 @@ func0000000000000688:
 	ret
 
 func0000000000000684:
-	cpop	a1, a0
-	lui	a2, 524288
-	sltiu	a1, a1, 2
-	addiw	a2, a2, -1
-	sltu	a0, a0, a2
-	and	a0, a0, a1
+	lui	a1, 524288
+	cpop	a2, a0
+	addiw	a1, a1, -1
+	sltiu	a2, a2, 2
+	sltu	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func000000000000068a:

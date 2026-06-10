@@ -12,13 +12,13 @@ func0000000000000001:
 	fmv.w.x	fa5, a0
 	lui	a0, 252587
 	addi	a0, a0, -1365
-	fmul.s	fa5, fa2, fa5
 	fmv.w.x	fa4, a0
 	lui	a0, 254635
+	fmul.s	fa5, fa2, fa5
 	addi	a0, a0, -1365
+	fmv.w.x	fa3, a0
 	fmadd.s	fa5, fa0, fa4, fa5
-	fmv.w.x	fa4, a0
-	fmul.s	fa4, fa1, fa4
+	fmul.s	fa4, fa1, fa3
 	fadd.s	fa0, fa5, fa4
 	ret
 

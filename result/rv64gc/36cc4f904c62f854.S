@@ -29,9 +29,9 @@ func0000000000000004:
 	ret
 
 func0000000000000028:
+	lui	a2, 244141
 	add	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1537
+	addi	a1, a2, -1537
 	bltu	a1, a0, .LBB4_2
 	li	a0, 1
 	ret

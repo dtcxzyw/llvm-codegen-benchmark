@@ -81,10 +81,10 @@ func0000000000000047:
 func00000000000000a4:
 	fmv.w.x	fa5, zero
 	lui	a0, 267264
-	fle.s	a1, fa0, fa5
-	fmv.w.x	fa5, a0
-	not	a0, a1
-	flt.s	a1, fa5, fa0
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa0, fa5
+	flt.s	a1, fa4, fa0
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -130,9 +130,9 @@ func000000000000008d:
 	lui	a0, 522240
 	addi	a0, a0, -1
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	feq.s	a0, fa0, fa5
-	fmv.w.x	fa5, zero
-	flt.s	a1, fa0, fa5
+	flt.s	a1, fa0, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

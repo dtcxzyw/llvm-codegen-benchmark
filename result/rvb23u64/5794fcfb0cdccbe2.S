@@ -1,16 +1,16 @@
 func000000000000018c:
-	zext.b	a0, a0
 	sext.w	a1, a1
 	negw	a2, a2
 	xor	a1, a1, a2
+	zext.b	a0, a0
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000146:
-	slli	a0, a0, 56
 	addw	a1, a1, a2
 	lui	a2, 488281
+	slli	a0, a0, 56
 	addi	a2, a2, 1021
 	slt	a1, a2, a1
 	srli	a0, a0, 63
@@ -18,9 +18,9 @@ func0000000000000146:
 	ret
 
 func000000000000014a:
-	slli	a0, a0, 56
 	addw	a1, a1, a2
 	lui	a2, 244141
+	slli	a0, a0, 56
 	addi	a2, a2, -1537
 	slt	a1, a2, a1
 	srli	a0, a0, 63

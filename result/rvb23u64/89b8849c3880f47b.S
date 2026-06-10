@@ -15,9 +15,9 @@ func000000000000000c:
 
 func0000000000000002:
 	lui	a0, 276464
-	fli.s	fa5, 0.5
-	fmv.w.x	fa4, a0
-	fmadd.s	fa5, fa0, fa4, fa5
+	fmv.w.x	fa5, a0
+	fli.s	fa4, 0.5
+	fmadd.s	fa5, fa0, fa5, fa4
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa5, fa4
 	ret
@@ -41,9 +41,9 @@ func000000000000000d:
 
 func000000000000000e:
 	lui	a0, 266752
+	lui	a1, 790784
 	fmv.w.x	fa5, a0
-	lui	a0, 790784
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmadd.s	fa5, fa0, fa4, fa5
 	feq.s	a0, fa5, fa5
 	ret

@@ -6,8 +6,8 @@ func000000000000001d:
 	ret
 
 func000000000000001f:
-	zext.h	a0, a0
 	bseti	a1, zero, 33
+	zext.h	a0, a0
 	addi	a1, a1, -2
 	add	a0, a0, a1
 	srli	a0, a0, 1

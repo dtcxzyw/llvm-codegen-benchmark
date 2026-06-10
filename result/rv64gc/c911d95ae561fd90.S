@@ -7,13 +7,13 @@ func0000000000000010:
 	ret
 
 func000000000000001f:
+	li	a2, 24
 	slli	a1, a1, 48
-	srli	a2, a1, 48
-	li	a1, 24
-	beq	a2, a1, .LBB1_2
-	li	a1, 20
+	srli	a1, a1, 48
+	beq	a1, a2, .LBB1_2
+	li	a2, 20
 .LBB1_2:
-	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 

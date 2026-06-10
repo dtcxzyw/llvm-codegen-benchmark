@@ -26,8 +26,8 @@ func0000000000000048:
 	ret
 
 func0000000000000041:
-	andi	a0, a0, -16
 	li	a2, -17
+	andi	a0, a0, -16
 	sub	a2, a2, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -43,8 +43,8 @@ func0000000000000088:
 	ret
 
 func00000000000000c1:
-	andi	a0, a0, -16
 	li	a2, -16
+	andi	a0, a0, -16
 	sub	a2, a2, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

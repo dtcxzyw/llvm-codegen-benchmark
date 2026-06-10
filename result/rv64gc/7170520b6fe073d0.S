@@ -15,16 +15,16 @@ func0000000000000001:
 	ret
 
 func0000000000000006:
-	andi	a3, a0, 1
-	slli	a2, a2, 56
+	slli	a3, a2, 56
+	andi	a2, a0, 1
 	lui	a0, 512
-	bgez	a2, .LBB1_3
-	beqz	a3, .LBB1_4
+	bgez	a3, .LBB1_3
+	beqz	a2, .LBB1_4
 .LBB1_2:
 	ret
 .LBB1_3:
 	lui	a0, 256
-	bnez	a3, .LBB1_2
+	bnez	a2, .LBB1_2
 .LBB1_4:
 	mv	a0, a1
 	ret

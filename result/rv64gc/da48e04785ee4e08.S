@@ -8,12 +8,12 @@ func0000000000000005:
 	ret
 
 func0000000000000015:
+	lui	a3, 1048555
 	andi	a0, a0, 1
-	sub	a1, a1, a2
-	lui	a2, 1048555
 	addi	a0, a0, -1
-	addi	a2, a2, -384
-	and	a0, a0, a2
+	addi	a3, a3, -384
+	sub	a1, a1, a2
+	and	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

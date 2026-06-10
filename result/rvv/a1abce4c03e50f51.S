@@ -1,7 +1,7 @@
 func000000000000002a:
+	lui	a0, 261632
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vi	v12, v10, -1
-	lui	a0, 261632
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

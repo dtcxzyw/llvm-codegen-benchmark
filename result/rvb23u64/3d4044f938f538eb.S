@@ -71,19 +71,19 @@ func0000000000000055:
 
 func0000000000000054:
 	sh2add	a2, a2, a2
-	sh2add	a2, a2, a2
-	slli	a2, a2, 4
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a1, a2, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	slliw	a0, a0, 16
 	ret
 
 func00000000000000fc:
 	sh2add	a2, a2, a2
-	sh2add	a2, a2, a2
-	slli	a2, a2, 4
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a1, a2, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
 	slliw	a0, a0, 16
 	ret
 

@@ -18,8 +18,8 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	sext.w	a3, a0
 	andi	a5, a1, 1
+	sext.w	a3, a0
 	li	a4, 16
 	li	a1, 16
 	beqz	a5, .LBB2_3

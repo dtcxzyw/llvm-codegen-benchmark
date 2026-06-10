@@ -28,17 +28,16 @@ func000000000000000c:
 	subw	a0, a0, a1
 	ret
 
+.LCPI2_0:
+	.quad	2635249153617166336
 func0000000000000005:
+	lui	a3, %hi(.LCPI2_0)
 	add	a1, a1, a2
-	lui	a2, 293
+	ld	a2, %lo(.LCPI2_0)(a3)
 	add	a0, a0, a1
-	addi	a1, a2, -1755
-	slli	a2, a0, 32
-	slli	a1, a1, 12
-	srli	a2, a2, 32
-	addi	a1, a1, -1755
-	slli	a1, a1, 29
-	mulhu	a1, a2, a1
+	slli	a1, a0, 32
+	srli	a1, a1, 32
+	mulhu	a1, a1, a2
 	slli	a2, a1, 3
 	sub	a1, a1, a2
 	addw	a0, a0, a1

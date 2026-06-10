@@ -1,21 +1,21 @@
 func0000000000000021:
 	slli	a2, a2, 32
-	andi	a1, a1, -33
 	srli	a2, a2, 32
-	sext.w	a1, a1
+	andi	a1, a1, -33
 	xor	a0, a0, a2
+	sext.w	a1, a1
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func000000000000050c:
+	lui	a3, 57344
+	and	a1, a1, a3
+	lui	a3, 40960
+	xor	a1, a1, a3
 	sext.w	a2, a2
 	sltu	a0, a2, a0
-	lui	a2, 57344
-	and	a1, a1, a2
-	lui	a2, 40960
-	xor	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -40,8 +40,8 @@ func000000000000042c:
 
 func0000000000000281:
 	slli	a2, a2, 32
-	andi	a1, a1, 16
 	srli	a2, a2, 32
+	andi	a1, a1, 16
 	sltu	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -49,9 +49,9 @@ func0000000000000281:
 
 func000000000000032c:
 	slli	a2, a2, 32
-	slli	a1, a1, 34
 	srli	a2, a2, 32
 	sltu	a0, a0, a2
+	slli	a1, a1, 34
 	xori	a0, a0, 1
 	srli	a1, a1, 63
 	or	a0, a0, a1

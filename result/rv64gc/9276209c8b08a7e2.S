@@ -20,23 +20,23 @@ func0000000000000013:
 	andi	a1, a1, -64
 	sext.w	a0, a0
 	slli	a0, a0, 2
+	lui	a2, 150
 	add	a0, a0, a1
-	lui	a1, 150
-	addi	a1, a1, 768
+	addi	a1, a2, 768
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
-	andi	a1, a1, -4
 	slli	a0, a0, 32
+	andi	a1, a1, -4
 	srli	a0, a0, 29
 	add	a0, a0, a1
 	addi	a0, a0, 552
 	ret
 
 func000000000000001c:
-	andi	a1, a1, -3
 	sext.w	a0, a0
+	andi	a1, a1, -3
 	slli	a0, a0, 3
 	add	a0, a0, a1
 	addi	a0, a0, 552

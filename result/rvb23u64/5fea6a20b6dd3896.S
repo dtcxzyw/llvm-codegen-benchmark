@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a2, 244141
 	sub	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	mul	a0, a0, a1
 	ret
 
@@ -12,9 +12,9 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
+	lui	a2, 163
 	sub	a0, a0, a1
-	lui	a1, 163
-	addi	a1, a1, -1005
+	addi	a1, a2, -1005
 	mul	a0, a0, a1
 	ret
 
@@ -43,9 +43,9 @@ func000000000000000b:
 	ret
 
 func000000000000000e:
+	lui	a2, 31
 	sub	a0, a0, a1
-	lui	a1, 31
-	addi	a1, a1, -1976
+	addi	a1, a2, -1976
 	mul	a0, a0, a1
 	ret
 

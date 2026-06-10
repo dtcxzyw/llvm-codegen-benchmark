@@ -12,14 +12,14 @@ func0000000000000008:
 	slliw	a1, a2, 24
 	bnez	a3, .LBB1_2
 	li	a2, 992
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB1_2:
 	lui	a2, 524288
 	addi	a2, a2, 992
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func000000000000001e:
@@ -30,7 +30,7 @@ func000000000000001e:
 	bnez	a3, .LBB2_2
 	lui	a2, 516
 .LBB2_2:
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -50,7 +50,7 @@ func000000000000000f:
 	bnez	a3, .LBB4_2
 	lui	a2, 557056
 .LBB4_2:
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

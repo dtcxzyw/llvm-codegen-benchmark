@@ -1,6 +1,6 @@
 func0000000000000061:
-	zext.b	a2, a2
 	sext.w	a1, a1
+	zext.b	a2, a2
 	addi	a1, a1, -9
 	czero.eqz	a1, a1, a2
 	addi	a1, a1, 9

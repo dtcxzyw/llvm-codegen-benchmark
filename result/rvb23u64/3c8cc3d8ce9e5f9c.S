@@ -1,20 +1,20 @@
 func0000000000000003:
-	addi	a0, a0, 3
 	li	a1, 8
+	addi	a0, a0, 3
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
 	ret
 
 func0000000000000000:
-	addi	a0, a0, 1
 	li	a1, 2
+	addi	a0, a0, 1
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
 	ret
 
 func0000000000000002:
-	addi	a0, a0, 1
 	li	a1, 1
+	addi	a0, a0, 1
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
 	ret
@@ -34,29 +34,29 @@ func000000000000001f:
 	ret
 
 func000000000000000b:
-	addi	a0, a0, -50
 	li	a1, 50
+	addi	a0, a0, -50
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
 	ret
 
 func0000000000000008:
-	addi	a0, a0, 23
 	lui	a1, 2
+	addi	a0, a0, 23
 	maxu	a0, a0, a1
 	slli	a0, a0, 32
 	ret
 
 func000000000000000c:
-	addi	a0, a0, 3
 	li	a1, 8
+	addi	a0, a0, 3
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
 	ret
 
 func0000000000000004:
-	addi	a0, a0, 3
 	li	a1, 8
+	addi	a0, a0, 3
 	maxu	a0, a0, a1
 	slli	a0, a0, 3
 	ret

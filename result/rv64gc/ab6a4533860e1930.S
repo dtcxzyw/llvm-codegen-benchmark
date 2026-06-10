@@ -1,7 +1,7 @@
 func000000000000002a:
-	srai	a3, a2, 4
-	srai	a2, a2, 63
-	srli	a2, a2, 58
+	srai	a3, a2, 63
+	srai	a2, a2, 4
+	srli	a3, a3, 58
 	add	a2, a2, a3
 	srai	a2, a2, 6
 	slli	a2, a2, 3

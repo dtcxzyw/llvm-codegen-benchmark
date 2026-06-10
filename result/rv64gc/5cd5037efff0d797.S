@@ -13,8 +13,8 @@ func0000000000000185:
 	bltu	a2, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
-	slli	a0, a0, 16
 	lui	a1, 983055
+	slli	a0, a0, 16
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret

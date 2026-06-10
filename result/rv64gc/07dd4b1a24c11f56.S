@@ -7,11 +7,11 @@ func0000000000000000:
 
 func0000000000000005:
 	mul	a1, a1, a2
-	li	a2, 1
 	mul	a0, a1, a0
-	slli	a2, a2, 34
-	addi	a2, a2, -4
-	and	a0, a0, a2
+	li	a1, 1
+	slli	a1, a1, 34
+	addi	a1, a1, -4
+	and	a0, a0, a1
 	ret
 
 func000000000000000f:

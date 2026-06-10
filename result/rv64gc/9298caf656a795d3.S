@@ -16,8 +16,8 @@ func0000000000000004:
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	lui	a0, 32973
-	slli	a0, a0, 35
 	fmul.d	fa5, fa1, fa5
+	slli	a0, a0, 35
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
 	bnez	a0, .LBB1_2

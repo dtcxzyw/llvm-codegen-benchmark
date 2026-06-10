@@ -1,8 +1,8 @@
 func0000000000000001:
 	srliw	a1, a1, 4
+	lui	a2, 209715
 	sub	a1, a1, a0
-	lui	a0, 209715
-	addi	a0, a0, 819
+	addi	a0, a2, 819
 	and	a0, a0, a1
 	ret
 

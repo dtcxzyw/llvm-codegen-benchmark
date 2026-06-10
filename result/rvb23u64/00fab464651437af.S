@@ -1,6 +1,6 @@
 func000000000000003d:
-	slli	a0, a0, 2
 	li	a1, 28
+	slli	a0, a0, 2
 	sub	a0, a1, a0
 	ret
 

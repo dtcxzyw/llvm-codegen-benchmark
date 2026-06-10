@@ -35,10 +35,10 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
+	lui	a2, 262144
 	sub	a1, a1, a0
-	lui	a0, 262144
-	addi	a0, a0, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a1, a2
 	srli	a0, a0, 30
 	ret
 

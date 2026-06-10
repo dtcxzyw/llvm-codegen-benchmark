@@ -1,8 +1,8 @@
 func0000000000000028:
-	li	a2, 52
 	srli	a0, a0, 12
-	sub	a2, a2, a1
+	li	a2, 52
 	sltiu	a0, a0, 5
+	sub	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret

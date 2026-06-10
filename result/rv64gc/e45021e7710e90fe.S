@@ -61,9 +61,9 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 1
 	sext.w	a2, a2
 	snez	a2, a2
+	andi	a1, a1, 1
 	addi	a2, a2, -1
 	ori	a2, a2, -10
 	addi	a1, a1, -1

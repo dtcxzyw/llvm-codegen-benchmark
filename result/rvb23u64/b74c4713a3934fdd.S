@@ -6,18 +6,18 @@ func0000000000000001:
 	mulh	a1, a0, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 13
+	lui	a3, 21
 	add	a1, a1, a2
-	lui	a2, 21
-	addi	a2, a2, 384
+	addi	a2, a3, 384
 	mul	a1, a1, a2
 	lui	a2, 559241
-	addi	a2, a2, -1911
 	sub	a0, a0, a1
-	mul	a2, a2, a0
-	srli	a2, a2, 32
-	add	a2, a2, a0
-	srliw	a1, a2, 31
-	sraiw	a2, a2, 5
+	addi	a1, a2, -1911
+	mul	a1, a1, a0
+	srli	a1, a1, 32
+	add	a1, a1, a0
+	srliw	a2, a1, 31
+	sraiw	a1, a1, 5
 	add	a1, a1, a2
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1

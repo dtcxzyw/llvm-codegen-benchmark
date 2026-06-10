@@ -13,30 +13,32 @@ func0000000000000101:
 	seqz	a0, a0
 	ret
 
+.LCPI2_0:
+	.quad	-34359737848001
 func0000000000000008:
 	mul	a0, a0, a1
-	li	a1, -125
-	slli	a1, a1, 26
-	addi	a2, a1, 127
-	addi	a1, a1, 125
+	lui	a1, %hi(.LCPI2_0)
+	ld	a1, %lo(.LCPI2_0)(a1)
+	li	a2, -125
+	slli	a2, a2, 26
+	addi	a2, a2, 125
+	add	a0, a0, a1
 	slli	a2, a2, 12
-	addi	a2, a2, -193
-	add	a0, a0, a2
-	slli	a1, a1, 12
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
+.LCPI3_0:
+	.quad	-34359737848001
 func00000000000000a8:
 	mul	a0, a0, a1
-	li	a1, -125
-	slli	a1, a1, 26
-	addi	a2, a1, 127
-	addi	a1, a1, 125
+	lui	a1, %hi(.LCPI3_0)
+	ld	a1, %lo(.LCPI3_0)(a1)
+	li	a2, -125
+	slli	a2, a2, 26
+	addi	a2, a2, 125
+	add	a0, a0, a1
 	slli	a2, a2, 12
-	addi	a2, a2, -193
-	add	a0, a0, a2
-	slli	a1, a1, 12
-	sltu	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000104:

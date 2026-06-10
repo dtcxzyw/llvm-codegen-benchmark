@@ -33,10 +33,10 @@ func0000000000000028:
 func000000000000002c:
 	li	a1, 2047
 	slli	a1, a1, 52
+	li	a2, 1023
 	and	a0, a0, a1
-	li	a1, 1023
-	slli	a1, a1, 52
-	xor	a0, a0, a1
+	slli	a2, a2, 52
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 

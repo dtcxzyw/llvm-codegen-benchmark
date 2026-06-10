@@ -1,6 +1,6 @@
 func000000000000004a:
-	addiw	a0, a0, 2
 	srliw	a1, a1, 31
+	addiw	a0, a0, 2
 	neg	a1, a1
 	or	a0, a0, a1
 	ret

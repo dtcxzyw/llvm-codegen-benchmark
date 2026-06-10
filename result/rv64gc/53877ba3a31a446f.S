@@ -8,8 +8,8 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	srli	a0, a0, 15
 	li	a1, 1
+	srli	a0, a0, 15
 	slli	a1, a1, 47
 	or	a0, a0, a1
 	ret

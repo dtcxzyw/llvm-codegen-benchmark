@@ -12,10 +12,10 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	andi	a2, a2, 56
 	lui	a3, 1046576
 	addi	a3, a3, 771
 	slli	a3, a3, 30
+	andi	a2, a2, 56
 	andn	a1, a1, a3
 	sll	a1, a1, a2
 	or	a0, a0, a1

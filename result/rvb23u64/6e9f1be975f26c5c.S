@@ -16,11 +16,11 @@ func00000000000000a1:
 
 func0000000000000008:
 	add	a1, a1, a2
-	lui	a2, 2
 	add	a0, a0, a1
+	lui	a1, 2
 	addi	a0, a0, 1
-	addi	a2, a2, -3
-	sltu	a0, a2, a0
+	addi	a1, a1, -3
+	sltu	a0, a1, a0
 	ret
 
 func0000000000000004:
@@ -34,11 +34,11 @@ func0000000000000004:
 
 func00000000000007e6:
 	add	a1, a1, a2
-	lui	a2, 16
 	add	a0, a0, a1
+	lui	a1, 16
 	addi	a0, a0, 8
-	addi	a2, a2, 7
-	slt	a0, a0, a2
+	addi	a1, a1, 7
+	slt	a0, a0, a1
 	ret
 
 func0000000000000788:
@@ -51,19 +51,19 @@ func0000000000000788:
 
 func0000000000000604:
 	add	a1, a1, a2
-	lui	a2, 64
 	add	a0, a0, a1
+	lui	a1, 64
 	addi	a0, a0, 16
-	addi	a2, a2, -7
-	sltu	a0, a0, a2
+	addi	a1, a1, -7
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000608:
 	add	a1, a1, a2
-	lui	a2, 51
 	add	a0, a0, a1
+	lui	a1, 51
 	addi	a0, a0, 20
-	addi	a1, a2, 811
+	addi	a1, a1, 811
 	sltu	a0, a1, a0
 	ret
 
@@ -77,10 +77,10 @@ func0000000000000001:
 
 func0000000000000784:
 	add	a1, a1, a2
-	lui	a2, 1048575
 	add	a0, a0, a1
+	lui	a1, 1048575
 	addi	a0, a0, 176
-	addi	a1, a2, 2047
+	addi	a1, a1, 2047
 	sltu	a0, a0, a1
 	ret
 
@@ -129,12 +129,12 @@ func00000000000007e4:
 
 func0000000000000204:
 	add	a1, a1, a2
-	lui	a2, 1048575
 	add	a0, a0, a1
 	addi	a0, a0, -2048
+	lui	a1, 1048575
 	addi	a0, a0, -2047
-	addi	a2, a2, -1
-	sltu	a0, a0, a2
+	addi	a1, a1, -1
+	sltu	a0, a0, a1
 	ret
 
 func000000000000070c:

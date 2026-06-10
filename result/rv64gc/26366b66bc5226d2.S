@@ -20,9 +20,9 @@ func0000000000000001:
 	ret
 
 func000000000000000b:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	srai	a2, a1, 63
+	sext.w	a0, a0
 	and	a1, a1, a2
 	slt	a0, a0, a1
 	xori	a0, a0, 1

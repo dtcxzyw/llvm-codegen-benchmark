@@ -11,10 +11,10 @@ func0000000000000005:
 
 func0000000000000007:
 	fmv.d.x	fa5, zero
-	feq.d	a2, fa0, fa5
-	xori	a2, a2, 1
 	or	a0, a0, a1
-	or	a0, a0, a2
+	feq.d	a1, fa0, fa5
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 .LCPI2_0:
@@ -54,9 +54,9 @@ func0000000000000002:
 
 func0000000000000001:
 	feq.d	a2, fa0, fa0
-	xori	a2, a2, 1
 	or	a0, a0, a1
-	or	a0, a0, a2
+	xori	a1, a2, 1
+	or	a0, a0, a1
 	ret
 
 func000000000000000a:

@@ -8,16 +8,16 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 5
 	bseti	a2, zero, 33
+	slli	a1, a1, 5
 	addi	a2, a2, -2
 	sll	a1, a2, a1
 	andn	a0, a0, a1
 	ret
 
 func0000000000000002:
-	slli	a1, a1, 5
 	li	a2, -1
+	slli	a1, a1, 5
 	srli	a2, a2, 32
 	sll	a1, a2, a1
 	andn	a0, a0, a1

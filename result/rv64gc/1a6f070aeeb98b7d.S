@@ -11,8 +11,8 @@ func000000000000000f:
 	ret
 
 func0000000000000005:
-	slli	a0, a0, 32
 	lui	a1, 209712
+	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 
@@ -32,8 +32,8 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 63
 	li	a1, 2047
+	slli	a0, a0, 63
 	slli	a1, a1, 52
 	or	a0, a0, a1
 	ret

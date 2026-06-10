@@ -34,10 +34,10 @@ func00000000000001e4:
 	ret
 
 func0000000000000004:
+	lui	a3, 64
 	add	a1, a1, a2
-	lui	a2, 64
-	addi	a2, a2, -1
-	add	a1, a1, a2
+	addi	a3, a3, -1
+	add	a1, a1, a3
 	lui	a2, 1048512
 	and	a1, a1, a2
 	sltu	a0, a0, a1

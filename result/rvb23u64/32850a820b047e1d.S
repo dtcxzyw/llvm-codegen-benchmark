@@ -1,11 +1,11 @@
 func00000000000000f0:
-	andi	a0, a0, 1
 	li	a3, -256
+	andi	a0, a0, 1
 	czero.nez	a0, a3, a0
-	lui	a3, 4
 	add	a0, a0, a2
 	sh3add	a0, a1, a0
-	addi	a1, a3, 1328
+	lui	a1, 4
+	addi	a1, a1, 1328
 	add	a0, a0, a1
 	ret
 

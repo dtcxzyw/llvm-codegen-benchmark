@@ -1,7 +1,7 @@
 func0000000000000161:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 2
 	vmv.v.i	v12, -2
+	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -14,8 +14,8 @@ func0000000000000161:
 
 func0000000000000141:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v10, 3
 	vmv.v.i	v12, -2
+	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32

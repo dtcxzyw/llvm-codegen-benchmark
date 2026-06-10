@@ -9,8 +9,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
 	sraiw	a2, a1, 31
+	andi	a0, a0, 1
 	xor	a1, a1, a2
 	subw	a1, a1, a2
 	addi	a0, a0, -1

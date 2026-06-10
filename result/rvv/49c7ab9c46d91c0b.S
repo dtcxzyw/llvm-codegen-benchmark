@@ -48,10 +48,10 @@ func0000000000000048:
 	ret
 
 func0000000000000104:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmfeq.vv	v14, v10, v12
 	li	a0, -7
 	slli	a0, a0, 48
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmfeq.vv	v14, v10, v12
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret

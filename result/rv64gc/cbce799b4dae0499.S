@@ -1,6 +1,6 @@
 func0000000000000040:
-	srli	a2, a2, 2
 	lui	a3, 699051
+	srli	a2, a2, 2
 	addi	a3, a3, -1365
 	mul	a2, a2, a3
 	add	a0, a0, a1
@@ -21,8 +21,8 @@ func0000000000000000:
 	ret
 
 func0000000000000045:
-	srli	a2, a2, 3
 	lui	a3, 699051
+	srli	a2, a2, 3
 	addi	a3, a3, -1365
 	mul	a2, a2, a3
 	add	a0, a0, a1

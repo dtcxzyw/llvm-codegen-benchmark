@@ -7,10 +7,10 @@ func000000000000006f:
 	ret
 
 func000000000000004f:
-	addiw	a2, a2, -18
 	slli	a1, a1, 32
-	seqz	a2, a2
+	addiw	a2, a2, -18
 	srli	a1, a1, 32
+	seqz	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -36,8 +36,8 @@ func000000000000032f:
 func000000000000022f:
 	sext.w	a2, a2
 	lui	a3, 24414
-	sext.w	a1, a1
 	addi	a3, a3, 255
+	sext.w	a1, a1
 	sltu	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

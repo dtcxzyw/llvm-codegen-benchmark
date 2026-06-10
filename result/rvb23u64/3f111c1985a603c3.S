@@ -1,6 +1,6 @@
 func00000000000000b4:
-	flt.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa2, fa1
 	flt.d	a1, fa5, fa0
 	xor	a0, a0, a1
 	xori	a0, a0, 1

@@ -1,6 +1,6 @@
 func00000000000001a4:
-	zext.h	a0, a0
 	addiw	a2, a2, 256
+	zext.h	a0, a0
 	addiw	a1, a1, -1
 	sltiu	a0, a0, 257
 	czero.nez	a2, a2, a0

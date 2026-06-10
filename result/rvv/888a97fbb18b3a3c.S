@@ -118,8 +118,8 @@ func0000000000000318:
 func0000000000000872:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v11
-	li	a0, 51
 	vmsleu.vv	v11, v12, v8
+	li	a0, 51
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8
@@ -191,8 +191,8 @@ func0000000000000942:
 func0000000000000928:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 387
 	vmsltu.vv	v9, v10, v12
+	li	a0, 387
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

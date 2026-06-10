@@ -1,8 +1,8 @@
 func0000000000000003:
-	neg	a2, a2
 	lui	a3, 648056
 	addi	a3, a3, -1607
 	mul	a1, a1, a3
+	neg	a2, a2
 	srlw	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 28
@@ -10,10 +10,10 @@ func0000000000000003:
 	ret
 
 func0000000000000000:
-	neg	a2, a2
 	lui	a3, 648048
 	addi	a3, a3, 1
 	mul	a1, a1, a3
+	neg	a2, a2
 	srlw	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 29

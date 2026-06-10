@@ -1,14 +1,14 @@
 func0000000000000000:
+	lui	a3, 699051
+	addi	a3, a3, -1365
+	slli	a4, a3, 32
+	add	a3, a3, a4
+	mulhu	a3, a0, a3
+	srli	a3, a3, 5
+	sh1add	a3, a3, a3
+	slli	a3, a3, 4
 	sub	a2, a2, a1
-	lui	a1, 699051
-	addi	a1, a1, -1365
-	slli	a3, a1, 32
-	add	a1, a1, a3
-	mulhu	a1, a0, a1
-	srli	a1, a1, 5
-	sh1add	a1, a1, a1
-	slli	a1, a1, 4
-	sub	a0, a1, a0
+	sub	a0, a3, a0
 	add	a0, a0, a2
 	ret
 

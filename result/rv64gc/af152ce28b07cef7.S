@@ -29,8 +29,8 @@ func0000000000000006:
 	ret
 
 func0000000000000028:
-	sext.w	a3, a0
 	sext.w	a1, a1
+	sext.w	a3, a0
 	srli	a0, a2, 1
 	bgeu	a1, a3, .LBB3_2
 	not	a0, a0
@@ -39,8 +39,8 @@ func0000000000000028:
 	ret
 
 func000000000000002a:
-	sext.w	a3, a0
 	sext.w	a1, a1
+	sext.w	a3, a0
 	srli	a0, a2, 1
 	bge	a1, a3, .LBB4_2
 	not	a0, a0
@@ -69,8 +69,8 @@ func0000000000000034:
 	ret
 
 func0000000000000038:
-	sext.w	a3, a0
 	sext.w	a1, a1
+	sext.w	a3, a0
 	srli	a0, a2, 1
 	bgeu	a1, a3, .LBB7_2
 	not	a0, a0

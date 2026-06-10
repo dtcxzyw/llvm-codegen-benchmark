@@ -1,15 +1,15 @@
 func0000000000000001:
-	addi	a1, a1, 1
 	srli	a0, a0, 32
+	addi	a1, a1, 1
 	slli	a0, a0, 32
 	add.uw	a0, a1, a0
 	ret
 
 func000000000000000f:
 	lui	a2, 256
+	lui	a3, 4080
 	addw	a1, a1, a2
-	lui	a2, 4080
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -20,8 +20,8 @@ func000000000000000e:
 	ret
 
 func0000000000000005:
-	addi	a1, a1, 1
 	srli	a0, a0, 32
+	addi	a1, a1, 1
 	slli	a0, a0, 32
 	add.uw	a0, a1, a0
 	ret
@@ -34,15 +34,15 @@ func0000000000000000:
 	ret
 
 func0000000000000009:
-	addi	a1, a1, 1
 	srli	a0, a0, 32
+	addi	a1, a1, 1
 	slli	a0, a0, 32
 	add.uw	a0, a1, a0
 	ret
 
 func0000000000000007:
-	addiw	a1, a1, -1
 	andi	a0, a0, -2048
+	addiw	a1, a1, -1
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	ret

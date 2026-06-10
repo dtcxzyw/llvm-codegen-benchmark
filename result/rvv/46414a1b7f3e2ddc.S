@@ -1,26 +1,22 @@
 func0000000000000024:
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv1r.v	v10, v9
-	vmv1r.v	v11, v8
-	vzext.vf4	v8, v10
 	li	a0, 26
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsltu.vx	v0, v11, a0
-	li	a0, 32
+	vmsltu.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, mu
+	vzext.vf4	v8, v10
+	li	a0, 32
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000026:
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv1r.v	v10, v9
-	vmv1r.v	v11, v8
+	vmsle.vi	v0, v8, -1
+	vsetvli	zero, zero, e32, m2, ta, mu
 	vzext.vf4	v8, v10
 	lui	a0, 15
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsle.vi	v0, v11, -1
 	addi	a0, a0, 1792
-	vsetvli	zero, zero, e32, m2, ta, mu
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

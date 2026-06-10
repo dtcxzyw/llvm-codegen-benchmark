@@ -92,10 +92,10 @@ func0000000000001864:
 
 func0000000000001004:
 	slli	a2, a2, 1
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, 16
-	add	a1, a1, a2
+	addi	a3, a3, 16
+	add	a1, a1, a3
 	addi	a0, a0, -2
 	sltu	a0, a0, a1
 	ret

@@ -65,11 +65,11 @@ func0000000000000011:
 	ret
 
 func000000000000001f:
+	li	a3, 31
 	add	a1, a1, a2
-	li	a2, 31
+	slli	a3, a3, 27
 	slli	a1, a1, 27
-	slli	a2, a2, 27
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

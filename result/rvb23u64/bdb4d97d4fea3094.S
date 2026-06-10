@@ -1,8 +1,8 @@
 func0000000000000043:
 	bseti	a3, zero, 33
+	bseti	a4, zero, 32
 	sll	a2, a3, a2
-	bseti	a3, zero, 32
-	sub	a1, a1, a3
+	sub	a1, a1, a4
 	add	a1, a1, a2
 	and	a0, a0, a1
 	ret

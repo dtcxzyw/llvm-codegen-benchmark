@@ -9,11 +9,11 @@ func00000000000000a1:
 
 func0000000000000004:
 	sh1add	a1, a2, a1
-	lui	a2, 64
 	add	a0, a0, a1
+	lui	a1, 64
 	addi	a0, a0, 4
-	addi	a2, a2, -7
-	sltu	a0, a0, a2
+	addi	a1, a1, -7
+	sltu	a0, a0, a1
 	ret
 
 func0000000000000021:

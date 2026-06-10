@@ -1,8 +1,8 @@
 func0000000000000002:
-	fmv.d	fa5, fa0
 	lui	a0, %hi(.promoted_doubles.func0000000000000002)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000002)
 	fld	fa4, 0(a0)
+	fmv.d	fa5, fa0
 	fld	fa0, 8(a0)
 	fdiv.d	fa5, fa5, fa4
 	flt.d	a0, fa5, fa0
@@ -12,10 +12,10 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fmv.d	fa5, fa0
 	lui	a0, %hi(.promoted_doubles.func0000000000000004)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000004)
 	fld	fa4, 0(a0)
+	fmv.d	fa5, fa0
 	fld	fa0, 8(a0)
 	fdiv.d	fa5, fa5, fa4
 	flt.d	a0, fa0, fa5

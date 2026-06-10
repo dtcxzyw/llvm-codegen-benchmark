@@ -25,9 +25,9 @@ func000000000000000a:
 	sext.w	a0, a0
 	sgtz	a1, a0
 	neg	a1, a1
-	and	a1, a1, a0
-	slti	a0, a0, 11
-	neg	a0, a0
+	slti	a2, a0, 11
+	and	a0, a0, a1
+	neg	a1, a2
 	and	a0, a0, a1
 	ret
 

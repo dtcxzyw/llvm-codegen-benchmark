@@ -1,15 +1,15 @@
 func0000000000000050:
-	flt.d	a0, fa1, fa2
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa1, fa2
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000098:
+	li	a0, 543
+	slli	a0, a0, 53
+	fmv.d.x	fa5, a0
 	flt.d	a0, fa2, fa1
-	li	a1, 543
-	slli	a1, a1, 53
-	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
@@ -26,17 +26,17 @@ func0000000000000066:
 	ret
 
 func0000000000000104:
+	lui	a0, 238009
+	slli	a0, a0, 32
+	fmv.d.x	fa5, a0
 	feq.d	a0, fa1, fa2
-	lui	a1, 238009
-	slli	a1, a1, 32
-	fmv.d.x	fa5, a1
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
 func0000000000000190:
-	fle.d	a0, fa2, fa1
 	fmv.d.x	fa5, zero
+	fle.d	a0, fa2, fa1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -51,8 +51,8 @@ func0000000000000044:
 	ret
 
 func00000000000000ae:
-	fle.d	a0, fa1, fa2
 	fmv.d.x	fa5, zero
+	fle.d	a0, fa1, fa2
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
@@ -74,21 +74,21 @@ func000000000000012a:
 	fmv.d.x	fa5, a0
 	flt.d	a0, fa2, fa5
 	flt.d	a1, fa5, fa2
+	fle.d	a2, fa0, fa1
 	or	a0, a0, a1
-	fle.d	a1, fa0, fa1
-	and	a0, a0, a1
+	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
 func00000000000000b2:
-	fle.d	a0, fa1, fa2
-	li	a1, 2047
-	slli	a1, a1, 52
-	fmv.d.x	fa5, a1
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
+	flt.d	a1, fa5, fa0
+	fle.d	a2, fa1, fa2
+	or	a0, a0, a1
+	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
@@ -102,21 +102,21 @@ func0000000000000154:
 	ret
 
 func00000000000000f2:
-	feq.d	a0, fa1, fa2
-	li	a1, 2047
-	slli	a1, a1, 52
-	fmv.d.x	fa5, a1
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
+	li	a0, 2047
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
+	flt.d	a1, fa5, fa0
+	feq.d	a2, fa1, fa2
+	or	a0, a0, a1
+	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
 func0000000000000042:
-	flt.d	a0, fa1, fa2
-	feq.d	a1, fa0, fa0
-	xori	a1, a1, 1
+	feq.d	a0, fa0, fa0
+	flt.d	a1, fa1, fa2
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -131,15 +131,15 @@ func0000000000000088:
 
 func000000000000007a:
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa2
-	flt.d	a1, fa0, fa1
+	flt.d	a0, fa0, fa1
+	fle.d	a1, fa5, fa2
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 
 func00000000000000ba:
-	fle.d	a0, fa1, fa2
 	fmv.d.x	fa5, zero
+	fle.d	a0, fa1, fa2
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1

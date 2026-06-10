@@ -9,8 +9,8 @@ func0000000000000058:
 
 func0000000000000b02:
 	sext.w	a2, a2
-	addi	a1, a1, -2
 	xor	a0, a0, a2
+	addi	a1, a1, -2
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1
@@ -60,9 +60,9 @@ func0000000000000852:
 
 func0000000000000062:
 	slli	a2, a2, 32
-	addi	a1, a1, -2
 	srli	a2, a2, 32
 	xor	a0, a0, a2
+	addi	a1, a1, -2
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -104,9 +104,9 @@ func0000000000000b08:
 
 func000000000000010a:
 	slli	a2, a2, 32
-	srli	a1, a1, 24
 	srli	a2, a2, 32
 	sltu	a0, a2, a0
+	srli	a1, a1, 24
 	xori	a0, a0, 1
 	seqz	a1, a1
 	or	a0, a0, a1

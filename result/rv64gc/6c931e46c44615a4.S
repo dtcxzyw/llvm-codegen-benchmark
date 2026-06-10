@@ -15,8 +15,8 @@ func000000000000003a:
 
 func000000000000001a:
 	slli	a2, a2, 30
-	srai	a1, a1, 30
 	srai	a2, a2, 32
+	srai	a1, a1, 30
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2

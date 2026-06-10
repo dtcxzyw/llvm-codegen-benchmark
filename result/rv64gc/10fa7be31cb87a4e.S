@@ -29,9 +29,9 @@ func00000000000000f5:
 
 func00000000000000fe:
 	zext.b	a2, a2
+	lui	a3, 1023
 	add	a1, a1, a2
-	lui	a2, 1023
-	addi	a2, a2, 1712
+	addi	a2, a3, 1712
 	mul	a1, a1, a2
 	lui	a2, 514
 	add	a0, a0, a2
@@ -40,9 +40,9 @@ func00000000000000fe:
 
 func00000000000000f0:
 	zext.b	a2, a2
+	lui	a3, 2
 	add	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, 1425
+	addi	a2, a3, 1425
 	mul	a1, a1, a2
 	lui	a2, 8
 	add	a0, a0, a2

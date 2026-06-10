@@ -12,11 +12,11 @@ func0000000000000003:
 	fmv.x.d	a1, fa0
 	lui	a2, 524288
 	addi	a2, a2, -1
+	li	a3, -31
 	slli	a2, a2, 32
+	slli	a3, a3, 52
 	and	a1, a1, a2
-	li	a2, -31
-	slli	a2, a2, 52
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

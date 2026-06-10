@@ -1,11 +1,10 @@
+.LCPI0_0:
+	.quad	-1297045497382436865
 func0000000000000000:
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	not	a1, a1
 	and	a0, a0, a1
-	lui	a1, 901119
-	slli	a1, a1, 7
-	addi	a1, a1, -513
-	slli	a1, a1, 24
-	addi	a1, a1, -1
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

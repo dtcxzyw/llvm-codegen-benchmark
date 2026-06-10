@@ -4,8 +4,8 @@ func0000000000000088:
 	vadd.vx	v10, v10, a0
 	li	a0, 32
 	vsra.vx	v10, v10, a0
-	lui	a0, 16
 	vadd.vv	v8, v10, v8
+	lui	a0, 16
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

@@ -1,6 +1,6 @@
 func0000000000000004:
-	sext.w	a0, a0
 	lui	a2, 16
+	sext.w	a0, a0
 	addi	a3, a2, -1
 	sltu	a0, a0, a3
 	czero.nez	a2, a2, a0

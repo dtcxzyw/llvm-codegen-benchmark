@@ -22,8 +22,8 @@ func000000000000000a:
 func0000000000000004:
 	fcvt.s.d	fa5, fa1
 	lui	a0, 302914
-	fmul.s	fa5, fa0, fa5
 	addi	a0, a0, 1024
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

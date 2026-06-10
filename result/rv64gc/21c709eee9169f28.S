@@ -1,8 +1,8 @@
 func0000000000000000:
+	li	a2, 1
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -53
+	addi	a1, a2, -53
 	add	a0, a0, a1
 	ret
 
@@ -27,25 +27,25 @@ func0000000000000035:
 	ret
 
 func0000000000000015:
+	li	a2, 1
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -1075
+	addi	a1, a2, -1075
 	add	a0, a0, a1
 	ret
 
 func0000000000000014:
+	lui	a2, 176
 	add	a0, a0, a1
-	lui	a1, 176
-	addi	a1, a1, -1428
+	addi	a1, a2, -1428
 	add	a0, a0, a1
 	ret
 
 func0000000000000010:
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 
 func000000000000003e:
@@ -84,10 +84,10 @@ func0000000000000033:
 	ret
 
 func000000000000001d:
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 
 func0000000000000039:
@@ -101,10 +101,10 @@ func0000000000000038:
 	ret
 
 func0000000000000003:
+	li	a2, 1
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -48
+	addi	a1, a2, -48
 	add	a0, a0, a1
 	ret
 
@@ -114,11 +114,11 @@ func0000000000000028:
 	ret
 
 func0000000000000020:
+	li	a2, 1
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	add	a0, a0, a1
+	addi	a2, a2, -2
+	add	a0, a0, a2
 	ret
 
 func0000000000000034:

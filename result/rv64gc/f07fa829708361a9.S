@@ -7,19 +7,19 @@ func0000000000000001:
 	ret
 
 func0000000000000002:
-	and	a0, a0, a1
 	fmv.d.x	fa5, zero
-	flt.d	a1, fa0, fa5
-	not	a0, a0
+	flt.d	a2, fa0, fa5
 	and	a0, a0, a1
+	not	a0, a0
+	and	a0, a0, a2
 	ret
 
 func0000000000000004:
+	lui	a2, 983805
+	slli	a2, a2, 34
+	fmv.d.x	fa5, a2
+	flt.d	a2, fa5, fa0
 	and	a0, a0, a1
-	lui	a1, 983805
-	slli	a1, a1, 34
-	fmv.d.x	fa5, a1
-	flt.d	a1, fa5, fa0
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

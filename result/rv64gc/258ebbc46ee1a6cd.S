@@ -27,9 +27,9 @@ func000000000000002c:
 	ret
 
 func0000000000000141:
-	sext.w	a2, a1
-	li	a3, 125
-	blt	a3, a2, .LBB3_2
+	li	a2, 125
+	sext.w	a3, a1
+	blt	a2, a3, .LBB3_2
 	mv	a0, a1
 .LBB3_2:
 	andi	a0, a0, 63
@@ -37,9 +37,9 @@ func0000000000000141:
 	ret
 
 func0000000000000301:
-	sext.w	a2, a1
-	li	a3, 1280
-	bltu	a3, a2, .LBB4_2
+	li	a2, 1280
+	sext.w	a3, a1
+	bltu	a2, a3, .LBB4_2
 	mv	a0, a1
 .LBB4_2:
 	andi	a0, a0, 63

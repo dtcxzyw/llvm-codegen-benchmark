@@ -8,8 +8,8 @@ func000000000000000b:
 
 func0000000000000025:
 	zext.b	a1, a1
-	li	a2, -7
 	sltiu	a1, a1, 10
+	li	a2, -7
 	czero.nez	a1, a2, a1
 	zext.b	a0, a0
 	add	a0, a0, a1

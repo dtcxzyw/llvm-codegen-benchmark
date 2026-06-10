@@ -1,13 +1,13 @@
 func000000000000012a:
-	sext.w	a1, a1
 	slli	a2, a2, 48
-	srai	a2, a2, 48
-	addw	a2, a2, a0
-	blt	a1, a2, .LBB0_2
-	mv	a2, a1
+	srai	a3, a2, 48
+	sext.w	a2, a1
+	addw	a1, a0, a3
+	blt	a2, a1, .LBB0_2
+	mv	a1, a2
 .LBB0_2:
-	subw	a2, a2, a0
-	slti	a0, a2, 128
+	subw	a1, a1, a0
+	slti	a0, a1, 128
 	xori	a0, a0, 1
 	ret
 

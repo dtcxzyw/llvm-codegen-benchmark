@@ -1,8 +1,8 @@
 func000000000000010c:
 	sub	a2, a2, a0
+	sltiu	a2, a2, 9
 	xor	a0, a0, a1
-	sltiu	a1, a2, 9
-	xori	a1, a1, 1
+	xori	a1, a2, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

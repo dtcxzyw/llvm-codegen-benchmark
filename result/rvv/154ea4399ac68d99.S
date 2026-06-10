@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.quad	9223372036854775
 func0000000000000042:
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	lui	a1, 244141
-	addi	a1, a1, -1537
+	lui	a0, 244141
+	lui	a1, %hi(.LCPI0_0)
+	addi	a0, a0, -1537
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vx	v12, v10, a1
+	vmseq.vx	v12, v10, a0
+	ld	a0, %lo(.LCPI0_0)(a1)
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	vsetvli	zero, zero, e8, mf4, ta, ma

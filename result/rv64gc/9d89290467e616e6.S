@@ -11,12 +11,12 @@ func00000000000001ca:
 
 func0000000000000080:
 	lui	a3, 36
-	srliw	a0, a0, 2
-	add	a0, a0, a1
-	lui	a1, 1048400
 	addi	a3, a3, -1359
-	addi	a1, a1, 1427
 	mul	a2, a2, a3
+	srliw	a0, a0, 2
+	lui	a3, 1048400
+	add	a0, a0, a1
+	addi	a1, a3, 1427
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

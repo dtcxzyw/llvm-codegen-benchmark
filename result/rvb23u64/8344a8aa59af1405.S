@@ -1,11 +1,11 @@
 func0000000000000012:
+	lui	a2, 1044485
+	slli	a2, a2, 38
+	fmv.d.x	fa5, a2
 	or	a0, a0, a1
-	lui	a1, 1044485
 	binvi	a0, a0, 63
-	slli	a1, a1, 38
-	fmv.d.x	fa5, a0
-	fmv.d.x	fa4, a1
-	fadd.d	fa4, fa0, fa4
-	flt.d	a0, fa4, fa5
+	fadd.d	fa5, fa0, fa5
+	fmv.d.x	fa4, a0
+	flt.d	a0, fa5, fa4
 	ret
 

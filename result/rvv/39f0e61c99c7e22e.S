@@ -42,12 +42,12 @@ func0000000000000005:
 func0000000000000001:
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
-	lui	a1, %hi(.LCPI5_1)
-	ld	a1, %lo(.LCPI5_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	vmseq.vv	v0, v12, v10
-	vmerge.vxm	v8, v8, a1, v0
+	lui	a0, %hi(.LCPI5_1)
+	ld	a0, %lo(.LCPI5_1)(a0)
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func0000000000000044:

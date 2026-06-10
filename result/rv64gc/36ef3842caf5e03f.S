@@ -1,7 +1,7 @@
 func0000000000000d01:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 256
 	xor	a0, a0, a2
+	sltiu	a1, a1, 256
 	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000d01:
 
 func0000000000000f01:
 	addi	a2, a2, 16
-	sltiu	a1, a1, 63
 	xor	a0, a0, a2
+	sltiu	a1, a1, 63
 	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -41,8 +41,8 @@ func0000000000000c88:
 
 func0000000000000101:
 	addi	a2, a2, 1
-	srli	a1, a1, 32
 	xor	a0, a0, a2
+	srli	a1, a1, 32
 	seqz	a0, a0
 	snez	a1, a1
 	or	a0, a0, a1
@@ -50,8 +50,8 @@ func0000000000000101:
 
 func0000000000000021:
 	addi	a2, a2, 2
-	addi	a1, a1, -4
 	xor	a0, a0, a2
+	addi	a1, a1, -4
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -59,42 +59,42 @@ func0000000000000021:
 
 func0000000000000c29:
 	addi	a2, a2, 1
-	addi	a1, a1, -4
 	sltu	a0, a2, a0
+	addi	a1, a1, -4
 	xori	a0, a0, 1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000c81:
+	li	a3, -1
 	addi	a2, a2, 19
+	slli	a3, a3, 32
 	xor	a0, a0, a2
-	li	a2, -1
-	slli	a2, a2, 32
+	addi	a3, a3, 1
 	seqz	a0, a0
-	addi	a2, a2, 1
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000081:
+	li	a3, -1
 	addi	a2, a2, 1
+	slli	a3, a3, 32
 	xor	a0, a0, a2
-	li	a2, -1
-	slli	a2, a2, 32
+	addi	a3, a3, 1
 	seqz	a0, a0
-	addi	a2, a2, 1
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000d41:
 	addi	a2, a2, 1
+	lui	a3, 524288
 	xor	a0, a0, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1
+	addiw	a3, a3, -1
 	seqz	a0, a0
-	slt	a1, a2, a1
+	slt	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

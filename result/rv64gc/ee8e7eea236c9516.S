@@ -1,7 +1,7 @@
 func00000000000000fa:
+	lui	a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 38
-	lui	a1, 16
 	add	a0, a0, a1
 	srli	a0, a0, 18
 	ret

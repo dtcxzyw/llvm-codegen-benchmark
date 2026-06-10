@@ -1,6 +1,6 @@
 func0000000000000946:
-	sext.w	a2, a0
 	bset	a1, zero, a1
+	sext.w	a2, a0
 	sext.w	a1, a1
 	slt	a1, a1, a2
 	srliw	a0, a0, 31
@@ -8,8 +8,8 @@ func0000000000000946:
 	ret
 
 func0000000000000966:
-	sext.w	a2, a0
 	bset	a1, zero, a1
+	sext.w	a2, a0
 	sext.w	a1, a1
 	slt	a1, a2, a1
 	xori	a1, a1, 1

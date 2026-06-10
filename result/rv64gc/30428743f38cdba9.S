@@ -24,19 +24,19 @@ func0000000000000d8c:
 	ret
 
 func0000000000000081:
-	addi	a2, a2, 1
 	andi	a1, a1, 12
-	sltu	a0, a2, a0
+	addi	a2, a2, 1
 	addi	a1, a1, -4
+	sltu	a0, a2, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000c81:
-	addi	a2, a2, 2
 	andi	a1, a1, 248
-	sltu	a0, a2, a0
+	addi	a2, a2, 2
 	addi	a1, a1, -216
+	sltu	a0, a2, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

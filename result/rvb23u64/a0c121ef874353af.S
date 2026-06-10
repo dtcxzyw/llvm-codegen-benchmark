@@ -23,8 +23,8 @@ func0000000000000009:
 	srli	a2, a0, 4
 	mulhu	a1, a2, a1
 	lui	a2, 1
-	addi	a2, a2, -496
 	srli	a1, a1, 3
+	addi	a2, a2, -496
 	mul	a1, a1, a2
 	sub	a0, a0, a0
 	sub	a0, a0, a1

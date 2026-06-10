@@ -34,8 +34,8 @@ func0000000000000318:
 	ret
 
 func0000000000000202:
-	sext.w	a1, a1
 	lui	a2, 524288
+	sext.w	a1, a1
 	addiw	a2, a2, -2
 	sltu	a1, a2, a1
 	seqz	a0, a0

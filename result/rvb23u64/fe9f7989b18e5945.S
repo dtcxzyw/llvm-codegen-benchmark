@@ -13,9 +13,9 @@ func0000000000000003:
 
 func0000000000000002:
 	andi	a1, a1, 1
+	lui	a2, 921600
 	or	a0, a0, a1
-	lui	a1, 921600
-	addi	a1, a1, -1026
+	addi	a1, a2, -1026
 	or	a0, a0, a1
 	ret
 

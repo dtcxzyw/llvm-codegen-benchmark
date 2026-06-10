@@ -21,8 +21,8 @@ func0000000000000004:
 func0000000000000007:
 	lui	a2, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a2)
-	not	a1, a1
 	feq.d	a2, fa0, fa5
+	not	a1, a1
 	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2

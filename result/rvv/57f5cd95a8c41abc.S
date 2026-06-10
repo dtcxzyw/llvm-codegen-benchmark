@@ -1,11 +1,11 @@
 func0000000000000035:
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
+	vmfle.vv	v24, v8, v16
+	vle64.v	v8, (a0)
 	fmv.d.x	fa5, zero
-	vmfle.vv	v7, v8, v16
-	vmfge.vf	v8, v24, fa5
-	vmnot.m	v9, v7
-	vmorn.mm	v0, v9, v8
+	vmfge.vf	v16, v8, fa5
+	vmnot.m	v8, v24
+	vmorn.mm	v0, v8, v16
 	ret
 
 func0000000000000094:
@@ -14,9 +14,9 @@ func0000000000000094:
 	fli.d	fa5, inf
 	vmflt.vf	v7, v24, fa5
 	vmfgt.vf	v6, v24, fa5
-	vmor.mm	v24, v6, v7
-	vmflt.vv	v25, v16, v8
-	vmorn.mm	v0, v25, v24
+	vmflt.vv	v24, v16, v8
+	vmor.mm	v8, v6, v7
+	vmorn.mm	v0, v24, v8
 	ret
 
 func000000000000008c:
@@ -78,12 +78,12 @@ func000000000000008a:
 
 func000000000000003d:
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
+	vmflt.vv	v24, v8, v16
+	vle64.v	v8, (a0)
 	fmv.d.x	fa5, zero
-	vmflt.vv	v7, v8, v16
-	vmfge.vf	v8, v24, fa5
-	vmnot.m	v9, v7
-	vmorn.mm	v0, v9, v8
+	vmfge.vf	v16, v8, fa5
+	vmnot.m	v8, v24
+	vmorn.mm	v0, v8, v16
 	ret
 
 func0000000000000012:

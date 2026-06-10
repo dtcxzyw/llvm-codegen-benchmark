@@ -34,9 +34,9 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
+	li	a2, -1
 	sub	a1, a0, a1
-	li	a0, -1
-	slli	a0, a0, 63
+	slli	a0, a2, 63
 	beq	a1, a0, .LBB5_2
 	li	a0, -3
 	srli	a0, a0, 1

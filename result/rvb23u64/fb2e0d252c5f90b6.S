@@ -19,8 +19,8 @@ func00000000000001e8:
 	ret
 
 func00000000000001e4:
-	andi	a2, a2, 511
 	slli	a1, a1, 10
+	andi	a2, a2, 511
 	srli	a1, a1, 10
 	add	a1, a1, a2
 	addi	a1, a1, 1

@@ -9,9 +9,9 @@ func0000000000000018:
 func0000000000000039:
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
-	li	a0, 9
 	vwaddu.wv	v8, v8, v11
 	vnsrl.wi	v10, v8, 0
+	li	a0, 9
 	slli	a0, a0, 10
 	vadd.vx	v8, v10, a0
 	ret

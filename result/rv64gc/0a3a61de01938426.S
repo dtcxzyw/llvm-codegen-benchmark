@@ -8,13 +8,13 @@ func0000000000000688:
 	ret
 
 func0000000000000684:
-	addi	a1, a0, -1
-	lui	a2, 524288
-	and	a1, a1, a0
-	addiw	a2, a2, -1
-	seqz	a1, a1
-	sltu	a0, a0, a2
-	and	a0, a0, a1
+	lui	a1, 524288
+	addi	a2, a0, -1
+	and	a2, a2, a0
+	addiw	a1, a1, -1
+	seqz	a2, a2
+	sltu	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func000000000000068a:
@@ -43,10 +43,10 @@ func0000000000000284:
 
 func0000000000000024:
 	addi	a1, a0, -1
-	srli	a2, a0, 32
-	xor	a0, a0, a1
-	sltu	a0, a1, a0
-	seqz	a1, a2
+	xor	a2, a0, a1
+	srli	a0, a0, 32
+	sltu	a1, a1, a2
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -61,10 +61,10 @@ func0000000000000428:
 
 func000000000000002a:
 	addi	a1, a0, -1
-	srli	a2, a0, 63
-	xor	a0, a0, a1
-	sltu	a0, a1, a0
-	not	a1, a2
+	xor	a2, a0, a1
+	srli	a0, a0, 63
+	sltu	a1, a1, a2
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

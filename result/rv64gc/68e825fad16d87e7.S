@@ -6,9 +6,9 @@ func00000000000001e1:
 	ret
 
 func00000000000001e4:
+	li	a2, 10
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a2, 10
 	bltu	a0, a2, .LBB1_2
 	li	a0, 2
 	add	a0, a0, a1
@@ -19,8 +19,8 @@ func00000000000001e4:
 	ret
 
 func0000000000000001:
-	slli	a0, a0, 48
 	li	a2, 27
+	slli	a0, a0, 48
 	srli	a0, a0, 48
 	slli	a2, a2, 11
 	beq	a0, a2, .LBB2_2

@@ -4,8 +4,8 @@ func00000000000001e1:
 	lui	a0, 16
 	addi	a0, a0, -16
 	vmsgtu.vx	v0, v10, a0
-	lui	a0, 1048560
 	vmv.v.i	v10, -1
+	lui	a0, 1048560
 	addi	a0, a0, 15
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10

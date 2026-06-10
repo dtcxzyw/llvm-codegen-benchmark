@@ -1,7 +1,7 @@
 func00000000000001a1:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 32
 	vsra.vx	v8, v8, a0
 	vmseq.vi	v10, v8, 0
 	vmseq.vi	v8, v12, 0

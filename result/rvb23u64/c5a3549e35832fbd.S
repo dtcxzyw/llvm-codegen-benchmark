@@ -1,14 +1,14 @@
 func00000000000000aa:
-	sext.w	a0, a0
 	lui	a2, 1048400
+	sext.w	a0, a0
 	addi	a2, a2, 1427
 	slt	a0, a2, a0
 	lui	a2, 1048540
+	lui	a3, 176
 	addi	a2, a2, 1360
+	addi	a3, a3, -1428
 	czero.nez	a0, a2, a0
-	lui	a2, 176
-	addi	a2, a2, -1428
-	add	a1, a1, a2
+	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

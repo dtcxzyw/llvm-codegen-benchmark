@@ -1,15 +1,15 @@
 func000000000000000f:
-	slli	a2, a2, 61
+	lui	a3, 786432
 	or	a0, a0, a1
-	lui	a1, 786432
-	and	a0, a0, a1
+	slli	a2, a2, 61
+	and	a0, a0, a3
 	or	a0, a0, a2
 	ret
 
 func000000000000000c:
 	or	a1, a1, a2
-	slli	a0, a0, 48
 	lui	a2, 1044480
+	slli	a0, a0, 48
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

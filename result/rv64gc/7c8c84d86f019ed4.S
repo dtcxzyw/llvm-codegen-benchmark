@@ -15,22 +15,22 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	andi	a1, a1, 1
-	sext.w	a2, a2
-	li	a4, 4
-	lui	a3, 1048573
-	beq	a2, a4, .LBB1_2
-	addi	a2, a3, -629
-	bnez	a1, .LBB1_3
+	sext.w	a4, a2
+	li	a5, 4
+	andi	a3, a1, 1
+	lui	a2, 1048573
+	beq	a4, a5, .LBB1_2
+	addi	a1, a2, -629
+	bnez	a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addi	a2, a3, -627
-	beqz	a1, .LBB1_4
+	addi	a1, a2, -627
+	beqz	a3, .LBB1_4
 .LBB1_3:
-	addi	a2, a3, -625
+	addi	a1, a2, -625
 .LBB1_4:
-	slli	a2, a2, 5
-	add	a0, a0, a2
+	slli	a1, a1, 5
+	add	a0, a0, a1
 	ret
 
 func0000000000000004:

@@ -100,13 +100,13 @@ func0000000000000010:
 	ret
 
 func000000000000002a:
-	srli	a1, a1, 63
 	lui	a2, 1048534
+	srli	a1, a1, 63
+	lui	a3, 1048565
 	addi	a2, a2, -1248
+	addi	a3, a3, -128
 	czero.eqz	a1, a2, a1
-	lui	a2, 1048565
-	addi	a2, a2, -128
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

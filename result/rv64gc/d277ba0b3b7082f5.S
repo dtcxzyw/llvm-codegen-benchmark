@@ -21,8 +21,8 @@ func000000000000004f:
 
 func000000000000006d:
 	add	a1, a1, a2
-	li	a2, -1
 	srli	a1, a1, 44
+	li	a2, -1
 	add	a0, a0, a1
 	slli	a2, a2, 42
 	add	a0, a0, a2
@@ -30,8 +30,8 @@ func000000000000006d:
 
 func000000000000006f:
 	add	a1, a1, a2
-	lui	a2, 1048574
 	srli	a1, a1, 51
+	lui	a2, 1048574
 	add	a0, a0, a1
 	srli	a2, a2, 12
 	add	a0, a0, a2

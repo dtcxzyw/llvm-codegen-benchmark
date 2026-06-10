@@ -8,8 +8,8 @@ func0000000000000708:
 
 func0000000000000074:
 	slli	a2, a2, 37
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
@@ -49,8 +49,8 @@ func00000000000002f4:
 
 func0000000000000478:
 	slli	a2, a2, 35
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a1, a0
@@ -58,8 +58,8 @@ func0000000000000478:
 
 func0000000000000278:
 	slli	a2, a2, 36
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a1, a0
@@ -74,8 +74,8 @@ func00000000000007f4:
 
 func0000000000000008:
 	slli	a2, a2, 39
-	slli	a1, a1, 32
 	srli	a2, a2, 32
+	slli	a1, a1, 32
 	add	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a1, a0

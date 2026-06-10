@@ -9,11 +9,11 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
-	sext.w	a2, a1
-	li	a3, 17
+	li	a2, 17
+	sext.w	a3, a1
+	min	a2, a3, a2
 	add	a0, a0, a1
 	lui	a1, 524288
-	min	a2, a2, a3
 	sub	a0, a0, a2
 	addiw	a1, a1, -16
 	and	a0, a0, a1
@@ -32,11 +32,11 @@ func00000000000000a1:
 	ret
 
 func00000000000000b8:
-	sext.w	a2, a1
-	li	a3, 17
+	li	a2, 17
+	sext.w	a3, a1
+	min	a2, a3, a2
 	add	a0, a0, a1
 	lui	a1, 524288
-	min	a2, a2, a3
 	sub	a0, a0, a2
 	addiw	a1, a1, -16
 	and	a0, a0, a1

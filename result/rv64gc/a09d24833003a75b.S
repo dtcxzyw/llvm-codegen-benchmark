@@ -1,9 +1,9 @@
 func0000000000000181:
 	lui	a3, 131072
-	seqz	a1, a1
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
+	seqz	a1, a1
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -11,10 +11,10 @@ func0000000000000181:
 
 func000000000000018c:
 	lui	a3, 131072
-	snez	a1, a1
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
+	snez	a1, a1
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -22,8 +22,8 @@ func000000000000018c:
 
 func0000000000000026:
 	andi	a2, a2, 2047
-	srli	a1, a1, 63
 	addi	a2, a2, -1054
+	srli	a1, a1, 63
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -31,10 +31,10 @@ func0000000000000026:
 
 func000000000000002c:
 	li	a3, 1
-	addi	a1, a1, -2
 	slli	a3, a3, 32
-	snez	a1, a1
+	addi	a1, a1, -2
 	and	a2, a2, a3
+	snez	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

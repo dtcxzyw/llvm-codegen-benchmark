@@ -19,10 +19,10 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	sext.w	a2, a1
-	lui	a3, 199729
-	addi	a3, a3, -975
-	mul	a2, a2, a3
+	lui	a2, 199729
+	sext.w	a3, a1
+	addi	a2, a2, -975
+	mul	a2, a3, a2
 	srli	a3, a2, 63
 	srai	a2, a2, 34
 	add	a2, a2, a3

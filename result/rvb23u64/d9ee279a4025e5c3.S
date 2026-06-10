@@ -1,14 +1,14 @@
 func000000000000000c:
-	andi	a1, a1, 1
 	li	a3, 32
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
 	mulw	a0, a1, a0
 	ret
 
 func000000000000000d:
-	andi	a1, a1, 1
 	li	a3, 31
+	andi	a1, a1, 1
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
 	addi	a1, a1, 1

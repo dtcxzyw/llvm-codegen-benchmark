@@ -1,7 +1,7 @@
 func0000000000000546:
-	slli	a0, a0, 48
 	zext.b	a2, a2
 	or	a1, a1, a2
+	slli	a0, a0, 48
 	sext.h	a1, a1
 	sgtz	a1, a1
 	srli	a0, a0, 63
@@ -17,10 +17,10 @@ func0000000000000421:
 	ret
 
 func0000000000000428:
-	zext.h	a0, a0
 	zext.b	a2, a2
 	or	a1, a1, a2
 	zext.h	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -3
 	seqz	a1, a1
 	sltiu	a0, a0, 4

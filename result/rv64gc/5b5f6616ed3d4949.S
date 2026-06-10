@@ -2,10 +2,10 @@ func000000000000000a:
 	li	a1, -1025
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
-	lui	a1, 15621
-	slli	a1, a1, 36
 	fadd.d	fa5, fa0, fa5
+	lui	a1, 15621
 	fabs.d	fa5, fa5
+	slli	a1, a1, 36
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa5, fa4
 	and	a0, a0, a1

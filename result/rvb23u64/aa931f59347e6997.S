@@ -3,9 +3,9 @@ func000000000000006f:
 	sh1add	a2, a2, a2
 	czero.nez	a1, a1, a3
 	czero.eqz	a0, a0, a3
+	sh2add	a2, a2, a2
 	or	a0, a0, a1
-	sh2add	a1, a2, a2
-	sh2add	a0, a1, a0
+	sh2add	a0, a2, a0
 	sext.w	a0, a0
 	ret
 
@@ -20,12 +20,12 @@ func0000000000000060:
 	ret
 
 func0000000000000064:
+	li	a3, -10
+	mul	a0, a0, a3
 	srliw	a3, a2, 31
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
-	li	a3, -10
 	or	a1, a1, a2
-	mul	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

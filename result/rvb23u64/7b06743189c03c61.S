@@ -4,8 +4,8 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	add.uw	a1, a2, a1
 	sh1add	a0, a0, a0
+	add.uw	a1, a2, a1
 	sh2add	a0, a0, a1
 	ret
 

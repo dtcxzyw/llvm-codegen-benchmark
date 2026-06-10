@@ -22,21 +22,21 @@ func0000000000000062:
 	ret
 
 func0000000000000052:
-	sext.w	a1, a1
 	lui	a2, 16
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	slt	a1, a2, a1
 	lui	a2, 48
+	lui	a3, 8
 	czero.eqz	a1, a2, a1
-	lui	a2, 8
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	srliw	a0, a0, 2
 	ret
 
 func000000000000000e:
-	sext.w	a1, a1
 	lui	a2, 128
+	sext.w	a1, a1
 	addi	a2, a2, 512
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1

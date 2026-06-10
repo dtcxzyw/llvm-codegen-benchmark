@@ -1,14 +1,14 @@
 func0000000000000184:
-	sext.w	a1, a1
 	li	a3, 32
+	sext.w	a1, a1
 	sub	a3, a3, a2
 	czero.eqz	a1, a3, a1
 	mulw	a0, a1, a0
 	ret
 
 func0000000000000185:
-	addiw	a1, a1, -1
 	li	a3, 31
+	addiw	a1, a1, -1
 	sub	a3, a3, a2
 	czero.eqz	a1, a3, a1
 	addi	a1, a1, 1

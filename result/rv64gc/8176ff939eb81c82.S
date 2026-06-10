@@ -1,8 +1,9 @@
 func0000000000000061:
-	bne	a0, a1, .LBB0_2
-	li	a2, 76
-.LBB0_2:
+	mv	a3, a0
 	mv	a0, a2
+	bne	a3, a1, .LBB0_2
+	li	a0, 76
+.LBB0_2:
 	ret
 
 func0000000000000001:

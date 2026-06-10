@@ -1,9 +1,9 @@
 func000000000000000f:
+	lui	a1, 1023
 	addi	a0, a0, 227
 	sh3add	a0, a0, a0
 	slli	a0, a0, 1
 	addi	a0, a0, 15
-	lui	a1, 1023
 	and	a0, a0, a1
 	ret
 

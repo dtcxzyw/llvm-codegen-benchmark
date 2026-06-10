@@ -8,10 +8,10 @@ func0000000000000000:
 	or	a1, a1, a3
 	ret
 .LBB0_2:
-	srl	a2, a2, a4
-	not	a4, a4
+	not	a7, a4
 	slli	a3, a3, 1
-	sll	a3, a3, a4
+	srl	a2, a2, a4
+	sll	a3, a3, a7
 	or	a2, a2, a3
 	srai	a5, a5, 63
 	and	a3, a5, a6

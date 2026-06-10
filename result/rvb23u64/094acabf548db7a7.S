@@ -2,10 +2,10 @@ func000000000000003c:
 	add	a1, a1, a2
 	lui	a2, 61681
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a2, a2, -241
-	and	a0, a0, a2
-	addi	a1, a1, 257
+	addi	a1, a2, -241
+	lui	a2, 4112
+	and	a0, a0, a1
+	addi	a1, a2, 257
 	mulw	a0, a0, a1
 	ret
 

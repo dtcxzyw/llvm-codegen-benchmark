@@ -43,8 +43,8 @@ func0000000000000021:
 func0000000000000088:
 	lui	a3, 4
 	addi	a4, a3, 332
-	addi	a3, a3, 333
 	sltu	a2, a2, a4
+	addi	a3, a3, 333
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

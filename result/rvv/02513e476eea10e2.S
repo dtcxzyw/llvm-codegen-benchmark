@@ -9,11 +9,11 @@ func0000000000000001:
 
 func000000000000000a:
 	li	a0, 24
-	fli.s	fa5, 4.0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
-	lui	a0, 265728
+	fli.s	fa5, 4.0
 	vfmv.v.f	v8, fa5
+	lui	a0, 265728
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 
@@ -35,9 +35,9 @@ func0000000000000006:
 
 func0000000000000014:
 	li	a0, 1024
-	fli.s	fa5, 256.0
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
+	fli.s	fa5, 256.0
 	vfmv.v.f	v8, fa5
 	fli.s	fa5, 16.0
 	vfmerge.vfm	v8, v8, fa5, v0

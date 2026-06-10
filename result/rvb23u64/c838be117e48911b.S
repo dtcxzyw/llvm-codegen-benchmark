@@ -13,9 +13,9 @@ func0000000000000004:
 	ret
 
 func0000000000000069:
-	sext.w	a1, a1
 	lui	a2, 12
 	addi	a2, a2, 672
+	sext.w	a1, a1
 	add	a0, a0, a2
 	sh2add	a1, a1, a0
 	sltu	a0, a0, a1

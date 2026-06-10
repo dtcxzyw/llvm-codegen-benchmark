@@ -3,8 +3,8 @@ func000000000000018c:
 	ret
 
 func0000000000000021:
-	zext.w	a1, a1
 	zext.w	a0, a0
+	zext.w	a1, a1
 	xori	a0, a0, 2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -18,10 +18,10 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 41
 	zext.b	a0, a0
-	srli	a1, a1, 41
+	slli	a1, a1, 41
 	addi	a0, a0, -255
+	srli	a1, a1, 41
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret

@@ -10,20 +10,20 @@ func0000000000000021:
 	ret
 
 func0000000000000318:
-	li	a2, 149
-	mv	a1, a0
-	bltu	a2, a0, .LBB1_2
-	li	a0, 51
+	li	a1, 149
+	bltu	a1, a0, .LBB1_2
+	li	a1, 51
 	li	a2, 249
-	bltu	a2, a1, .LBB1_3
+	bltu	a2, a0, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	li	a0, 40
+	li	a1, 40
 	li	a2, 249
-	bgeu	a2, a1, .LBB1_4
+	bgeu	a2, a0, .LBB1_4
 .LBB1_3:
-	li	a0, 28
+	li	a1, 28
 .LBB1_4:
+	mv	a0, a1
 	ret
 
 func0000000000000084:

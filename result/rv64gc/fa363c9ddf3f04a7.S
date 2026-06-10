@@ -1,15 +1,15 @@
 func0000000000008090:
 	lui	a3, 16
-	lui	a4, 1
 	addi	a3, a3, -1
 	and	a0, a0, a3
 	and	a1, a1, a3
 	and	a2, a2, a3
-	addi	a3, a4, -816
-	addi	a4, a4, -1640
-	sltu	a2, a3, a2
+	lui	a3, 1
+	addi	a4, a3, -816
+	addi	a3, a3, -1640
+	sltu	a2, a4, a2
+	sltu	a0, a3, a0
 	seqz	a1, a1
-	sltu	a0, a4, a0
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -20,11 +20,11 @@ func000000000000c082:
 	and	a0, a0, a3
 	and	a1, a1, a3
 	and	a2, a2, a3
-	snez	a2, a2
 	addi	a1, a1, -128
 	addi	a0, a0, -4
 	seqz	a1, a1
 	seqz	a0, a0
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -33,8 +33,8 @@ func0000000000004202:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a0, a0, a3
-	and	a1, a1, a3
 	and	a2, a2, a3
+	and	a1, a1, a3
 	sltiu	a2, a2, 26
 	sltiu	a1, a1, 10
 	addi	a0, a0, -95
@@ -50,10 +50,10 @@ func0000000000001202:
 	and	a1, a1, a3
 	and	a2, a2, a3
 	addi	a2, a2, -31
-	sltiu	a1, a1, 256
 	addi	a0, a0, -31
 	seqz	a2, a2
 	seqz	a0, a0
+	sltiu	a1, a1, 256
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -91,14 +91,14 @@ func0000000000004082:
 	and	a1, a1, a3
 	and	a2, a2, a3
 	lui	a3, 4
+	lui	a4, 2
 	addi	a3, a3, -1280
+	addi	a4, a4, 784
 	xor	a1, a1, a3
-	lui	a3, 2
-	addi	a3, a3, 784
-	sltiu	a2, a2, 31
-	xor	a0, a0, a3
+	xor	a0, a0, a4
 	seqz	a1, a1
 	seqz	a0, a0
+	sltiu	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -110,8 +110,8 @@ func0000000000004088:
 	and	a1, a1, a3
 	and	a2, a2, a3
 	lui	a3, 2
-	addi	a3, a3, 12
 	sltiu	a2, a2, 5
+	addi	a3, a3, 12
 	xor	a1, a1, a3
 	sltiu	a0, a0, 4
 	seqz	a1, a1

@@ -1,6 +1,6 @@
 func0000000000000002:
-	fsub.d	fa5, fa1, fa2
 	lui	a0, 131967
+	fsub.d	fa5, fa1, fa2
 	slli	a0, a0, 33
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
@@ -10,8 +10,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fsub.d	fa5, fa1, fa2
 	lui	a0, 131967
+	fsub.d	fa5, fa1, fa2
 	slli	a0, a0, 33
 	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4

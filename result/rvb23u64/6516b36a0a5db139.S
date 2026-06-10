@@ -38,9 +38,9 @@ func0000000000000181:
 	ret
 
 func0000000000000026:
+	bseti	a3, zero, 32
 	or	a1, a1, a2
-	bseti	a2, zero, 32
-	slt	a0, a0, a2
+	slt	a0, a0, a3
 	czero.nez	a0, a0, a1
 	ret
 

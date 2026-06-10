@@ -1,10 +1,12 @@
 func000000000000001f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmax.vx	v9, v9, zero
-	li	a0, 32
-	vwsll.vx	v10, v9, a0
+	vmax.vx	v12, v9, zero
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v12, v8
-	vor.vv	v8, v10, v12
+	vzext.vf2	v10, v8
+	li	a0, 32
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwsll.vx	v8, v12, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vor.vv	v8, v8, v10
 	ret
 

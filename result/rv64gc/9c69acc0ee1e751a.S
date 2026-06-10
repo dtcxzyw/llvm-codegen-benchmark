@@ -1,9 +1,9 @@
 func0000000000000002:
 	lui	a2, 349525
-	addi	a0, a0, 1
 	addi	a2, a2, 1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	addi	a0, a0, 1
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -14,10 +14,10 @@ func0000000000000002:
 func0000000000000010:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	li	a3, -15
+	srli	a3, a3, 1
 	sltu	a1, a2, a1
-	li	a2, -15
-	srli	a2, a2, 1
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

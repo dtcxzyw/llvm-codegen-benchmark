@@ -10,9 +10,9 @@ func0000000000000000:
 func000000000000007f:
 	lui	a2, 524288
 	addiw	a2, a2, -4
+	lui	a3, 88
 	and	a1, a1, a2
-	lui	a2, 88
-	addi	a2, a2, 512
+	addi	a2, a3, 512
 	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
@@ -21,9 +21,9 @@ func000000000000007f:
 func0000000000000073:
 	lui	a2, 524288
 	addiw	a2, a2, -4
+	lui	a3, 48
 	and	a1, a1, a2
-	lui	a2, 48
-	addi	a2, a2, 512
+	addi	a2, a3, 512
 	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1

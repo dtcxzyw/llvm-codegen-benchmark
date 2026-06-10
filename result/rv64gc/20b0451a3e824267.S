@@ -1,8 +1,8 @@
 func0000000000000061:
 	sext.w	a0, a0
 	li	a2, 32
-	subw	a2, a2, a1
 	seqz	a0, a0
+	subw	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret
@@ -16,8 +16,9 @@ func0000000000000021:
 	ret
 
 func0000000000000066:
-	sext.w	a2, a0
+	mv	a2, a0
 	li	a0, 2
+	sext.w	a2, a2
 	blt	a2, a0, .LBB2_2
 	li	a0, 34
 	subw	a0, a0, a1
@@ -51,8 +52,8 @@ func0000000000000001:
 func0000000000000064:
 	sext.w	a0, a0
 	li	a2, 32
-	subw	a2, a2, a1
 	sltiu	a0, a0, 2
+	subw	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret

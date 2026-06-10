@@ -24,11 +24,11 @@ func0000000000000062:
 	ret
 
 func0000000000000052:
-	sext.w	a2, a1
-	lui	a1, 16
-	addi	a3, a1, -1
+	lui	a2, 16
+	sext.w	a3, a1
+	addi	a2, a2, -1
 	lui	a1, 56
-	blt	a3, a2, .LBB3_2
+	blt	a2, a3, .LBB3_2
 	lui	a1, 8
 .LBB3_2:
 	add	a0, a0, a1
@@ -37,8 +37,8 @@ func0000000000000052:
 
 func000000000000000e:
 	sext.w	a1, a1
-	lui	a2, 128
 	seqz	a1, a1
+	lui	a2, 128
 	addi	a1, a1, -1
 	addi	a2, a2, 512
 	and	a1, a1, a2

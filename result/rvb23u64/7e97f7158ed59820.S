@@ -17,24 +17,24 @@ func00000000000007e1:
 	ret
 
 func0000000000000748:
-	sh3add	a2, a2, a0
 	lui	a3, 1
-	add	a2, a2, a3
+	sh3add	a2, a2, a0
 	sh3add	a0, a1, a0
+	add	a2, a2, a3
 	sltu	a0, a2, a0
 	ret
 
 func0000000000000768:
-	sh3add	a2, a2, a0
 	lui	a3, 1
-	add	a2, a2, a3
+	sh3add	a2, a2, a0
 	sh3add	a0, a1, a0
+	add	a2, a2, a3
 	sltu	a0, a2, a0
 	ret
 
 func0000000000000004:
-	add	a2, a2, a0
 	lui	a3, 150
+	add	a2, a2, a0
 	addi	a3, a3, 772
 	add	a2, a2, a3
 	add	a0, a0, a1
@@ -50,10 +50,10 @@ func0000000000000604:
 
 func0000000000000161:
 	sh3add	a2, a2, a2
-	sh3add	a2, a2, a0
-	addi	a2, a2, 8
-	add	a0, a0, a1
-	xor	a0, a0, a2
+	add	a1, a1, a0
+	sh3add	a0, a2, a0
+	addi	a0, a0, 8
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
@@ -75,8 +75,8 @@ func00000000000007c1:
 
 func0000000000000048:
 	sh2add	a2, a2, a0
-	addi	a2, a2, -4
 	sh2add	a0, a1, a0
+	addi	a2, a2, -4
 	sltu	a0, a2, a0
 	ret
 

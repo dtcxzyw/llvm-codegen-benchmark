@@ -7,19 +7,19 @@ func0000000000000081:
 	ret
 
 func000000000000018c:
-	addi	a1, a1, -1
 	andi	a0, a0, 15
-	snez	a1, a1
+	addi	a1, a1, -1
 	addi	a0, a0, -15
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000058c:
-	addi	a1, a1, -1
 	andi	a0, a0, 15
-	snez	a1, a1
+	addi	a1, a1, -1
 	addi	a0, a0, -15
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -33,10 +33,10 @@ func000000000000010c:
 	ret
 
 func000000000000048c:
-	bseti	a2, zero, 53
-	sub	a1, a1, a2
 	li	a2, -1
+	bseti	a3, zero, 53
 	slli	a2, a2, 54
+	sub	a1, a1, a3
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	srli	a0, a0, 2
@@ -44,10 +44,10 @@ func000000000000048c:
 	ret
 
 func0000000000000181:
-	addi	a1, a1, -1
 	andi	a0, a0, 240
-	snez	a1, a1
+	addi	a1, a1, -1
 	addi	a0, a0, -176
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

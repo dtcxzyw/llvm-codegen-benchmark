@@ -1,11 +1,11 @@
 func0000000000000000:
 	sh2add	a1, a1, a1
+	lui	a2, 352717
 	add	a0, a0, a1
-	lui	a1, 352717
-	addi	a1, a1, -741
+	addi	a1, a2, -741
 	add	a0, a0, a1
-	lui	a1, 207556
 	sh2add	a0, a0, a0
+	lui	a1, 207556
 	addi	a1, a1, -1257
 	addw	a0, a0, a1
 	ret

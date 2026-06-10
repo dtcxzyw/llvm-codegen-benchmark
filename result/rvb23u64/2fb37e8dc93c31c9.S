@@ -1,6 +1,6 @@
 func0000000000000044:
-	addi	a3, a0, -1
 	sh2add	a2, a2, a2
+	addi	a3, a0, -1
 	slli	a2, a2, 1
 	and	a2, a2, a3
 	sub	a1, a1, a2
@@ -8,8 +8,8 @@ func0000000000000044:
 	ret
 
 func0000000000000004:
-	addi	a3, a0, -1
 	sh2add	a2, a2, a2
+	addi	a3, a0, -1
 	slli	a2, a2, 1
 	and	a2, a2, a3
 	sub	a1, a1, a2

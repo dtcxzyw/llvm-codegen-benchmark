@@ -1,6 +1,6 @@
 func0000000000000019:
-	addiw	a0, a0, 1
 	lui	a1, 174763
+	addiw	a0, a0, 1
 	addi	a1, a1, -1365
 	mul	a1, a1, a0
 	srli	a2, a1, 63
@@ -17,15 +17,15 @@ func0000000000000019:
 
 func0000000000000099:
 	lui	a1, 596
-	lui	a2, 599186
 	addi	a1, a1, -627
-	addi	a2, a2, 1171
+	lui	a2, 599186
 	addw	a0, a0, a1
-	mul	a2, a2, a0
-	srli	a2, a2, 32
-	add	a2, a2, a0
-	srliw	a1, a2, 31
-	sraiw	a2, a2, 2
+	addi	a1, a2, 1171
+	mul	a1, a1, a0
+	srli	a1, a1, 32
+	add	a1, a1, a0
+	srliw	a2, a1, 31
+	sraiw	a1, a1, 2
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	sub	a1, a1, a2

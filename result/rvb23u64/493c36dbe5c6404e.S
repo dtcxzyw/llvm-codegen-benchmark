@@ -1,6 +1,6 @@
 func0000000000000000:
-	srli	a0, a0, 1
 	lui	a1, 42
+	srli	a0, a0, 1
 	addi	a1, a1, 768
 	mul	a0, a0, a1
 	ret
@@ -12,8 +12,8 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	srli	a0, a0, 32
 	lui	a1, 163151
+	srli	a0, a0, 32
 	addi	a1, a1, -1201
 	mul	a0, a0, a1
 	ret
@@ -24,8 +24,8 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	srli	a0, a0, 21
 	lui	a1, 1048332
+	srli	a0, a0, 21
 	addi	a1, a1, 1619
 	mul	a0, a0, a1
 	ret

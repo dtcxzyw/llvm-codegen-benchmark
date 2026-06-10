@@ -13,20 +13,20 @@ func000000000000002b:
 	ret
 
 func0000000000000050:
-	andi	a1, a1, 1
 	sext.w	a3, a2
 	li	a4, 13
-	li	a2, 8
+	andi	a2, a1, 1
+	li	a1, 8
 	bgeu	a3, a4, .LBB1_3
-	beqz	a1, .LBB1_4
+	beqz	a2, .LBB1_4
 .LBB1_2:
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 .LBB1_3:
-	li	a2, 12
-	bnez	a1, .LBB1_2
+	li	a1, 12
+	bnez	a2, .LBB1_2
 .LBB1_4:
-	li	a2, 8
-	add	a0, a0, a2
+	li	a1, 8
+	add	a0, a0, a1
 	ret
 

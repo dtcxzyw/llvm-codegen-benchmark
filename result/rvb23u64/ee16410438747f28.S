@@ -34,9 +34,9 @@ func0000000000000181:
 
 func0000000000000028:
 	slli	a2, a2, 2
-	srli	a0, a0, 62
 	srli	a2, a2, 2
 	xor	a1, a1, a2
+	srli	a0, a0, 62
 	seqz	a1, a1
 	sltiu	a0, a0, 3
 	andn	a0, a1, a0

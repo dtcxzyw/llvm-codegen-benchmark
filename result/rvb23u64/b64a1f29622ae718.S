@@ -1,6 +1,6 @@
 func0000000000000008:
-	sext.w	a2, a2
 	lui	a3, 8192
+	sext.w	a2, a2
 	addi	a3, a3, 512
 	xor	a2, a2, a3
 	seqz	a2, a2
@@ -41,9 +41,9 @@ func000000000000000b:
 func000000000000000e:
 	sext.w	a2, a2
 	li	a3, -120
+	czero.eqz	a2, a3, a2
 	or	a0, a0, a1
 	lui	a1, 1048064
-	czero.eqz	a2, a3, a2
 	addi	a2, a2, 225
 	or	a0, a0, a1
 	or	a0, a0, a2

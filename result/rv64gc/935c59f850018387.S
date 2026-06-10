@@ -16,11 +16,11 @@ func0000000000000006:
 	ret
 
 func0000000000000002:
-	sext.w	a0, a0
 	sext.w	a1, a1
-	addi	a2, a1, -1
-	slti	a1, a1, 2
+	slti	a2, a1, 2
 	addi	a1, a1, -1
+	addi	a2, a2, -1
+	sext.w	a0, a0
 	and	a1, a1, a2
 	blt	a0, a1, .LBB1_2
 	mv	a0, a1
@@ -45,9 +45,9 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	sext.w	a0, a0
 	sraiw	a2, a1, 31
 	or	a1, a1, a2
+	sext.w	a0, a0
 	addiw	a1, a1, 1
 	blt	a0, a1, .LBB3_2
 	mv	a0, a1

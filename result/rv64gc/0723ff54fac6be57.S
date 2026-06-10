@@ -3,9 +3,9 @@ func00000000000000a8:
 	addi	a2, a2, 496
 	mul	a1, a1, a2
 	lui	a2, 559241
-	addi	a2, a2, -1911
 	addw	a0, a0, a1
-	mul	a1, a0, a2
+	addi	a1, a2, -1911
+	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	srliw	a1, a0, 31
@@ -18,9 +18,9 @@ func00000000000000f8:
 	addi	a2, a2, 496
 	mul	a1, a1, a2
 	lui	a2, 559241
-	addi	a2, a2, -1911
 	addw	a0, a0, a1
-	mul	a1, a0, a2
+	addi	a1, a2, -1911
+	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	srliw	a1, a0, 31

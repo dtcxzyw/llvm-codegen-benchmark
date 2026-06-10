@@ -8,9 +8,9 @@ func0000000000000015:
 func0000000000000155:
 	slli	a2, a2, 13
 	slli	a1, a1, 13
+	lui	a3, 32
 	add	a0, a0, a2
-	lui	a2, 32
-	sub	a1, a1, a2
+	sub	a1, a1, a3
 	sub	a0, a0, a1
 	ret
 

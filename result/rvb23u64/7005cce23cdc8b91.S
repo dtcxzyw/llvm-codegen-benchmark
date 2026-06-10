@@ -1,21 +1,21 @@
 func0000000000001e06:
 	lui	a3, 1
-	sh1add	a1, a1, a1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	add	a0, a0, a2
+	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
+	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	srliw	a0, a0, 31
 	ret
 
 func0000000000001e18:
 	lui	a3, 1
-	sh1add	a1, a1, a1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	add	a0, a0, a2
+	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
+	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	srliw	a0, a0, 7
 	sltiu	a0, a0, 675
@@ -24,11 +24,11 @@ func0000000000001e18:
 
 func0000000000001e0a:
 	lui	a3, 1
-	sh1add	a1, a1, a1
 	addi	a3, a3, -496
 	mul	a2, a2, a3
-	add	a0, a0, a2
+	sh1add	a1, a1, a1
 	sh2add	a1, a1, a1
+	add	a0, a0, a2
 	sh2add	a0, a1, a0
 	srliw	a0, a0, 31
 	xori	a0, a0, 1
@@ -36,8 +36,8 @@ func0000000000001e0a:
 
 func0000000000000001:
 	sh1add	a2, a2, a2
-	sub	a1, a1, a2
 	sh1add	a0, a0, a0
+	sub	a1, a1, a2
 	sub	a1, a1, a0
 	addiw	a1, a1, -1
 	seqz	a0, a1
@@ -46,23 +46,23 @@ func0000000000000001:
 func000000000000008a:
 	lui	a3, 1048573
 	addi	a3, a3, -1
+	lui	a4, 1048564
 	mul	a2, a2, a3
-	lui	a3, 1048564
-	addi	a3, a3, -4
-	mul	a0, a0, a3
-	lui	a3, 12
+	addi	a4, a4, -4
+	mul	a0, a0, a4
 	add	a1, a1, a2
+	lui	a2, 12
 	addw	a0, a0, a1
-	addi	a3, a3, 3
-	slt	a0, a3, a0
+	addi	a2, a2, 3
+	slt	a0, a2, a0
 	ret
 
 func0000000000000aa6:
 	li	a3, 1461
 	mul	a2, a2, a3
 	li	a3, 365
-	add	a0, a0, a2
 	mul	a1, a1, a3
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, -4
 	ret
@@ -82,8 +82,8 @@ func0000000000001ff4:
 func0000000000001ea4:
 	li	a3, 1260
 	mul	a2, a2, a3
-	add	a0, a0, a2
 	sh2add	a1, a1, a1
+	add	a0, a0, a2
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
 	sltiu	a0, a0, 128
@@ -94,8 +94,8 @@ func0000000000000081:
 	addi	a3, a3, 1808
 	mul	a2, a2, a3
 	li	a3, -100
-	subw	a2, a2, a1
 	mulw	a0, a0, a3
+	subw	a2, a2, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
@@ -103,11 +103,11 @@ func0000000000000081:
 func0000000000000801:
 	sh1add	a2, a2, a2
 	sh2add	a2, a2, a2
+	lui	a3, 1048555
+	addi	a3, a3, -384
 	sh2add	a0, a2, a0
-	lui	a2, 1048555
-	addi	a2, a2, -384
+	mulw	a1, a1, a3
 	sext.w	a0, a0
-	mulw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

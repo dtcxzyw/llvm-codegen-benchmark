@@ -12,8 +12,8 @@ func0000000000000000:
 func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 2
-	bseti	a0, zero, 34
 	vadd.vi	v8, v8, 15
+	bseti	a0, zero, 34
 	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 0, v0
@@ -34,8 +34,8 @@ func000000000000000e:
 func000000000000000b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
-	li	a0, -1
 	vadd.vi	v8, v8, 3
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
@@ -44,8 +44,8 @@ func000000000000000b:
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
-	li	a0, -1
 	vadd.vi	v8, v8, 3
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
@@ -54,8 +54,8 @@ func0000000000000001:
 func0000000000000005:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
-	li	a0, -1
 	vadd.vi	v8, v8, 3
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
@@ -64,8 +64,8 @@ func0000000000000005:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8
-	li	a0, -1
 	vadd.vi	v8, v8, 3
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0

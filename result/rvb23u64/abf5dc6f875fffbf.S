@@ -1,7 +1,7 @@
 func0000000000000101:
 	sext.w	a1, a0
-	addiw	a0, a0, -4
 	sltiu	a1, a1, 2
+	addiw	a0, a0, -4
 	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
@@ -13,8 +13,8 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	lui	a1, 311296
+	sext.w	a0, a0
 	lui	a2, 348160
 	xor	a1, a1, a0
 	xor	a0, a0, a2

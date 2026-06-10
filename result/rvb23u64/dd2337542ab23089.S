@@ -19,21 +19,21 @@ func0000000000000604:
 
 func00000000000000b0:
 	li	a3, 3
-	slli	a1, a1, 48
 	slli	a3, a3, 11
-	snez	a1, a1
+	slli	a1, a1, 48
 	and	a2, a2, a3
+	snez	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000204:
-	zext.h	a1, a1
 	slli	a2, a2, 48
+	zext.h	a1, a1
 	srli	a2, a2, 53
-	sltiu	a1, a1, 31
 	addi	a2, a2, -472
+	sltiu	a1, a1, 31
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

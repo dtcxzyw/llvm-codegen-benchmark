@@ -24,9 +24,9 @@ func0000000000000008:
 	ret
 
 func0000000000000010:
+	lui	a3, 2
 	sub	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, 1808
+	addi	a2, a3, 1808
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -69,9 +69,9 @@ func0000000000000048:
 	ret
 
 func0000000000000030:
+	lui	a3, 1221
 	sub	a1, a1, a2
-	lui	a2, 1221
-	addi	a2, a2, -1217
+	addi	a2, a3, -1217
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -109,10 +109,10 @@ func0000000000000028:
 	ret
 
 func0000000000000054:
+	li	a3, -1
 	sub	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	slt	a1, a2, a1
+	srli	a3, a3, 32
+	slt	a1, a3, a1
 	or	a0, a0, a1
 	ret
 

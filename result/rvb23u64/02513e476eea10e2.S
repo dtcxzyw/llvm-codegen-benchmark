@@ -7,8 +7,8 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
 	li	a1, 24
+	sext.w	a0, a0
 	blt	a1, a0, .LBB1_2
 	fli.s	fa0, 4.0
 	ret
@@ -33,8 +33,8 @@ func0000000000000006:
 	ret
 
 func0000000000000014:
-	sext.w	a0, a0
 	li	a1, 1024
+	sext.w	a0, a0
 	fli.s	fa0, 16.0
 	bltu	a0, a1, .LBB4_2
 	fli.s	fa0, 256.0

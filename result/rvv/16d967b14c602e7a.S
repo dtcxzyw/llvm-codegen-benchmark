@@ -7,9 +7,9 @@ func0000000000000006:
 	ret
 
 func00000000000000a6:
-	li	a0, -128
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwadd.wv	v8, v8, v10
+	li	a0, -128
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	lui	a0, 8

@@ -1,7 +1,7 @@
 func0000000000000201:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsrl.vi	v10, v10, 4
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -13,9 +13,9 @@ func0000000000000201:
 	ret
 
 func000000000000028a:
+	lui	a0, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 838861
 	vsrl.vi	v10, v10, 3
 	addi	a0, a0, -819
 	slli	a1, a0, 32
@@ -41,32 +41,32 @@ func0000000000000281:
 	ret
 
 func0000000000000288:
+	lui	a0, 748983
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 748983
+	vsra.vi	v10, v10, 4
 	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
-	li	a1, -2
-	vsra.vi	v10, v10, 4
 	vmadd.vx	v10, a0, v8
-	zext.w	a1, a1
-	vand.vx	v8, v10, a1
+	li	a0, -2
+	zext.w	a0, a0
+	vand.vx	v8, v10, a0
 	vmsne.vi	v0, v8, 0
 	ret
 
 func0000000000000294:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
+	vsra.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, -4
-	vsra.vi	v10, v10, 3
 	vmadd.vx	v10, a0, v8
-	zext.w	a1, a1
-	vand.vx	v8, v10, a1
+	li	a0, -4
+	zext.w	a0, a0
+	vand.vx	v8, v10, a0
 	vmseq.vi	v0, v8, 0
 	ret
 

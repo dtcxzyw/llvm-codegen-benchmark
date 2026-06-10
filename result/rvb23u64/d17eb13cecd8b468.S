@@ -1,7 +1,7 @@
 func0000000000000d8c:
 	andi	a1, a0, 61
-	addi	a0, a0, -7
 	addi	a1, a1, -4
+	addi	a0, a0, -7
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

@@ -8,17 +8,17 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
+	not	a1, a1
 	addi	a0, a0, -1
 	sltu	a0, a0, a2
-	not	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000061:
+	not	a1, a1
 	addi	a0, a0, 776
 	xor	a0, a0, a2
 	seqz	a0, a0
-	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -38,9 +38,9 @@ func0000000000000041:
 	ret
 
 func0000000000000064:
+	not	a1, a1
 	addi	a0, a0, 1
 	sltu	a0, a0, a2
-	not	a1, a1
 	and	a0, a0, a1
 	ret
 

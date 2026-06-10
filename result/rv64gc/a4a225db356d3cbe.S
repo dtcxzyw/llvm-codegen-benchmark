@@ -1,29 +1,29 @@
 func000000000000000f:
-	slliw	a1, a1, 30
 	lui	a2, 524288
 	addi	a2, a2, -1
 	slli	a2, a2, 31
 	addi	a2, a2, -1
+	slliw	a1, a1, 30
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000001:
-	slli	a1, a1, 49
 	lui	a2, 1015809
-	srli	a1, a1, 32
 	slli	a2, a2, 20
+	slli	a1, a1, 49
 	addi	a2, a2, -1
+	srli	a1, a1, 32
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000009:
-	slli	a1, a1, 63
 	li	a2, -1
-	srli	a1, a1, 32
 	slli	a2, a2, 32
+	slli	a1, a1, 63
 	addi	a2, a2, -1
+	srli	a1, a1, 32
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

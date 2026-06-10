@@ -1,9 +1,10 @@
 func00000000000000d0:
 	li	a0, 448
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 3
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsll.vi	v10, v10, 3
 	vadd.vv	v8, v8, v10
 	ret
 
@@ -29,10 +30,11 @@ func0000000000000055:
 func00000000000000d5:
 	lui	a0, 4
 	addi	a0, a0, -1247
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 14
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vsll.vi	v10, v10, 14
 	vadd.vv	v8, v8, v10
 	ret
 

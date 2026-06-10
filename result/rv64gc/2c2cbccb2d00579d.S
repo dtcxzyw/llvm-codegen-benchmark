@@ -1,7 +1,7 @@
 func000000000000001f:
 	li	a2, 10
-	slli	a3, a1, 1
 	mulhu	a2, a1, a2
+	slli	a3, a1, 1
 	slli	a1, a1, 3
 	add	a1, a1, a3
 	add	a0, a0, a1
@@ -14,10 +14,10 @@ func000000000000001f:
 func000000000000000a:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	mulhu	a3, a1, a2
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	sltu	a1, a0, a1
-	add	a1, a1, a3
+	mul	a3, a1, a2
+	mulhu	a1, a1, a2
+	add	a0, a0, a3
+	sltu	a2, a0, a3
+	add	a1, a1, a2
 	ret
 

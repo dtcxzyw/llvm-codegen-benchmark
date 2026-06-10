@@ -1,7 +1,7 @@
 func0000000000000021:
 	slli	a3, a1, 32
-	xor	a0, a0, a1
 	srli	a3, a3, 32
+	xor	a0, a0, a1
 	xor	a2, a2, a3
 	sext.w	a0, a0
 	or	a0, a0, a2

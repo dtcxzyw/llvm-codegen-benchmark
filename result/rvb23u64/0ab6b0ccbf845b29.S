@@ -1,6 +1,6 @@
 func0000000000000084:
-	zext.h	a1, a1
 	lui	a2, 9
+	zext.h	a1, a1
 	lui	a3, 12
 	addi	a2, a2, 636
 	addi	a3, a3, 1588

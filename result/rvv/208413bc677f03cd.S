@@ -91,8 +91,8 @@ func00000000000000a1:
 func0000000000000281:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 21
 	vmsltu.vv	v9, v10, v12
+	li	a0, 21
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -119,8 +119,8 @@ func00000000000004ca:
 func000000000000018c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 16
 	vmsne.vv	v9, v10, v12
+	li	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -165,8 +165,8 @@ func0000000000000681:
 func0000000000000426:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 30
 	vmseq.vv	v9, v10, v12
+	li	a0, 30
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmslt.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -220,8 +220,8 @@ func0000000000000081:
 func00000000000004a4:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	lui	a0, 256
 	vmsleu.vv	v9, v10, v12
+	lui	a0, 256
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
@@ -285,8 +285,8 @@ func000000000000002a:
 func0000000000000101:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	lui	a0, 66560
 	vmsltu.vv	v9, v12, v10
+	lui	a0, 66560
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -367,8 +367,8 @@ func0000000000000118:
 func0000000000000501:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 16
 	vmsltu.vv	v9, v12, v10
+	li	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

@@ -5,9 +5,9 @@ func0000000000000006:
 	ret
 
 func0000000000000024:
-	addiw	a1, a0, 1
-	sltiu	a0, a0, 11
-	neg	a0, a0
+	sltiu	a1, a0, 11
+	addiw	a0, a0, 1
+	neg	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -21,11 +21,11 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	li	a1, 1
-	bgeu	a1, a0, .LBB3_2
-	addiw	a1, a0, -1
+	mv	a1, a0
+	li	a0, 1
+	bgeu	a0, a1, .LBB3_2
+	addiw	a0, a1, -1
 .LBB3_2:
-	mv	a0, a1
 	ret
 
 func0000000000000104:
@@ -38,16 +38,16 @@ func0000000000000104:
 	ret
 
 func000000000000002a:
-	addiw	a1, a0, -1
-	sgtz	a0, a0
-	neg	a0, a0
+	sgtz	a1, a0
+	addiw	a0, a0, -1
+	neg	a1, a1
 	and	a0, a0, a1
 	ret
 
 func00000000000001aa:
-	addiw	a1, a0, -1
-	sgtz	a0, a0
-	neg	a0, a0
+	sgtz	a1, a0
+	addiw	a0, a0, -1
+	neg	a1, a1
 	and	a0, a0, a1
 	ret
 

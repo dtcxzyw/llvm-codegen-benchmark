@@ -8,10 +8,10 @@ func0000000000000031:
 func000000000000003f:
 	slli	a1, a1, 16
 	slli	a0, a0, 32
+	lui	a2, 32769
 	or	a0, a0, a1
-	lui	a1, 32769
-	slli	a1, a1, 12
-	or	a0, a0, a1
+	slli	a2, a2, 12
+	or	a0, a0, a2
 	ret
 
 func0000000000000001:
@@ -39,10 +39,10 @@ func0000000000000039:
 func000000000000003b:
 	slli	a1, a1, 16
 	slli	a0, a0, 32
+	lui	a2, 69640
 	or	a0, a0, a1
-	lui	a1, 69640
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a2, a2, 1
+	or	a0, a0, a2
 	ret
 
 func0000000000000033:
@@ -55,10 +55,10 @@ func0000000000000033:
 func000000000000003a:
 	slli	a1, a1, 42
 	slli	a0, a0, 48
+	lui	a2, 4095
 	or	a0, a0, a1
-	lui	a1, 4095
-	slli	a1, a1, 39
-	or	a0, a0, a1
+	slli	a2, a2, 39
+	or	a0, a0, a2
 	ret
 
 func0000000000000021:

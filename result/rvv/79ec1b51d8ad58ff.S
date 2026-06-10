@@ -10,10 +10,11 @@ func000000000000000f:
 
 func0000000000000000:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vnot.v	v10, v8
-	vmv.v.i	v8, 3
+	vmv.v.i	v10, 3
+	vnot.v	v8, v8
 	li	a0, 3
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v10, a0, v8
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000005:

@@ -17,8 +17,8 @@ func000000000000006f:
 func0000000000000065:
 	sh2add	a1, a1, a1
 	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
 	sh2add	a1, a1, a1
+	ld	a2, %lo(.LCPI2_0)(a2)
 	srli	a0, a0, 32
 	sh2add	a0, a1, a0
 	add	a0, a0, a2

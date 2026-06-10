@@ -3,8 +3,8 @@ func0000000000000002:
 	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
 	lui	a0, 260096
-	fadd.s	fa5, fa1, fa5
 	fmv.w.x	fa4, a0
+	fadd.s	fa5, fa1, fa5
 	fadd.s	fa4, fa0, fa4
 	flt.s	a0, fa4, fa5
 	ret

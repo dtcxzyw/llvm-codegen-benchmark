@@ -1,8 +1,8 @@
 func0000000000000003:
-	addi	a2, a2, 512
 	lui	a3, 917504
 	and	a1, a1, a3
 	li	a3, 15
+	addi	a2, a2, 512
 	slli	a3, a3, 9
 	and	a2, a2, a3
 	or	a0, a0, a1

@@ -7,20 +7,20 @@ func0000000000000006:
 	ret
 
 func0000000000000003:
+	li	a3, 1023
 	srli	a2, a2, 18
+	slli	a3, a3, 34
 	or	a0, a0, a2
-	li	a2, 1023
-	slli	a2, a2, 34
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000004:
+	li	a3, 3
 	srli	a2, a2, 15
+	slli	a3, a3, 35
 	or	a1, a1, a2
-	li	a2, 3
-	slli	a2, a2, 35
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

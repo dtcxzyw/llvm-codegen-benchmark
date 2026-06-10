@@ -8,10 +8,10 @@ func0000000000000004:
 	lui	a2, 1
 	addi	a2, a2, 273
 	and	a1, a1, a2
-	lui	a2, 1048573
 	or	a0, a0, a1
+	lui	a1, 1048573
 	slli	a0, a0, 2
-	addi	a1, a2, -820
+	addi	a1, a1, -820
 	and	a0, a0, a1
 	ret
 

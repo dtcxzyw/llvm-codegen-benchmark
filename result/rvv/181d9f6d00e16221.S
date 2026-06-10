@@ -1,21 +1,21 @@
 .LCPI0_0:
 	.quad	4223091239536077
 func0000000000000046:
-	lui	a0, 16
-	lui	a1, %hi(.LCPI0_0)
-	addi	a2, a0, -16
-	ld	a1, %lo(.LCPI0_0)(a1)
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v0, v10, a2
-	vmerge.vvm	v8, v10, v8, v0
-	vmulhu.vx	v10, v12, a1
-	vsub.vv	v14, v12, v10
-	vsrl.vi	v14, v14, 1
-	vadd.vv	v10, v14, v10
-	vsrl.vi	v10, v10, 15
+	vmulhu.vx	v14, v12, a0
+	vsub.vv	v16, v12, v14
+	vsrl.vi	v16, v16, 1
+	vadd.vv	v14, v16, v14
+	lui	a0, 16
+	addi	a1, a0, -16
+	vmsgtu.vx	v0, v10, a1
+	vsrl.vi	v14, v14, 15
 	addi	a0, a0, -15
-	vnmsub.vx	v10, a0, v12
-	vsll.vi	v10, v10, 16
+	vnmsub.vx	v14, a0, v12
+	vmerge.vvm	v8, v10, v8, v0
+	vsll.vi	v10, v14, 16
 	vor.vv	v8, v10, v8
 	ret
 

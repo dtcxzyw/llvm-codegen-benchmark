@@ -15,8 +15,8 @@ func0000000000000020:
 	vnsrl.wx	v9, v10, a0
 	lui	a0, 4080
 	vand.vx	v9, v9, a0
-	lui	a0, 648056
 	vadd.vv	v8, v8, v9
+	lui	a0, 648056
 	addi	a0, a0, -1607
 	vadd.vx	v8, v8, a0
 	ret

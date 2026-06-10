@@ -27,9 +27,9 @@ func0000000000000066:
 	ret
 
 func0000000000000021:
+	li	a0, 360
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.rtz.x.f.v	v10, v10
-	li	a0, 360
 	vadd.vx	v8, v8, a0
 	vmseq.vv	v0, v8, v10
 	ret

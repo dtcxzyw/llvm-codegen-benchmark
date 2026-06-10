@@ -1,7 +1,7 @@
 func0000000000000001:
 	fcvt.s.d	fa5, fa0
-	lui	a4, 522240
-	fmv.x.w	a5, fa5
+	fmv.x.w	a4, fa5
+	lui	a5, 522240
 	and	a4, a4, a5
 	czero.eqz	a2, a2, a4
 	czero.nez	a0, a0, a4

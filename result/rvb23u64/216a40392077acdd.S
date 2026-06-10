@@ -13,11 +13,11 @@ func0000000000000005:
 	ret
 
 func000000000000000f:
+	lui	a3, 128
 	or	a1, a1, a2
-	lui	a2, 128
+	addi	a3, a3, -8
 	slli	a1, a1, 19
-	addi	a2, a2, -8
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

@@ -20,16 +20,16 @@ func00000000000000c4:
 	ret
 
 func00000000000000a4:
-	sext.w	a0, a0
 	li	a1, -1
+	sext.w	a0, a0
 	sll	a1, a1, a0
 	sltiu	a0, a0, 64
 	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000b4:
-	sext.w	a0, a0
 	li	a1, -1
+	sext.w	a0, a0
 	sll	a1, a1, a0
 	sltiu	a0, a0, 64
 	czero.eqz	a0, a1, a0

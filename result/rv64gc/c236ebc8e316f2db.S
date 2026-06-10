@@ -16,8 +16,8 @@ func0000000000000002:
 
 func0000000000000008:
 	mv	a3, a0
-	sext.w	a1, a1
 	srli	a0, a2, 1
+	sext.w	a1, a1
 	sext.w	a2, a0
 	andi	a3, a3, 1
 	bge	a1, a2, .LBB1_3

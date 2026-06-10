@@ -24,8 +24,8 @@ func0000000000000000:
 
 func00000000000000e0:
 	zext.h	a2, a2
-	zext.h	a0, a0
 	sh1add	a1, a2, a1
+	zext.h	a0, a0
 	sh1add	a0, a0, a1
 	li	a1, -1952
 	sh3add	a0, a1, a0
@@ -33,8 +33,8 @@ func00000000000000e0:
 
 func00000000000000f0:
 	zext.h	a2, a2
-	zext.h	a0, a0
 	sh1add	a1, a2, a1
+	zext.h	a0, a0
 	sh1add	a0, a0, a1
 	li	a1, -1952
 	sh3add	a0, a1, a0

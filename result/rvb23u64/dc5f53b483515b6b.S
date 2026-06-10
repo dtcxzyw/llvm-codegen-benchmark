@@ -40,24 +40,24 @@ func000000000000000c:
 
 func0000000000000015:
 	sh1add	a2, a2, a2
-	srli	a2, a2, 2
 	add	a0, a0, a1
+	srli	a2, a2, 2
 	add	a0, a0, a2
 	ret
 
 func0000000000000035:
 	sh1add	a2, a2, a2
+	add	a0, a0, a1
 	slli	a2, a2, 2
 	srli	a2, a2, 2
-	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func0000000000000010:
 	sh2add	a2, a2, a2
+	add	a0, a0, a1
 	slli	a2, a2, 3
 	srli	a2, a2, 1
-	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 

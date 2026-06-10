@@ -41,10 +41,10 @@ func0000000000000042:
 	ret
 
 func000000000000020a:
-	sltu	a2, a2, a0
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a1, a1, a0
+	sltu	a0, a2, a0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000052:
@@ -87,10 +87,10 @@ func000000000000004a:
 	ret
 
 func0000000000000112:
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 
 func0000000000000248:

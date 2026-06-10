@@ -8,8 +8,8 @@ func0000000000000888:
 
 func0000000000000885:
 	sub	a2, a1, a0
-	sltu	a0, a1, a0
 	srli	a2, a2, 16
+	sltu	a0, a1, a0
 	seqz	a1, a2
 	not	a0, a0
 	and	a0, a0, a1
@@ -40,11 +40,11 @@ func0000000000000904:
 	ret
 
 func0000000000000889:
-	sub	a2, a0, a1
-	lui	a3, 732
+	lui	a2, 732
+	sub	a3, a0, a1
+	addi	a2, a2, 1729
 	sltu	a0, a0, a1
-	addi	a1, a3, 1729
-	sltu	a1, a2, a1
+	sltu	a1, a3, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret

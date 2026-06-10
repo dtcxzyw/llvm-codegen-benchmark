@@ -1,9 +1,9 @@
 func0000000000000018:
+	lui	a3, 1043919
+	addi	a3, a3, -565
+	slli	a4, a3, 32
 	xor	a1, a1, a2
-	lui	a2, 1043919
-	addi	a2, a2, -565
-	slli	a3, a2, 32
-	add.uw	a2, a2, a3
+	add.uw	a2, a3, a4
 	xor	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1

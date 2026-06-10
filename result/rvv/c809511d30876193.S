@@ -25,9 +25,9 @@ func0000000000001084:
 	li	a0, -91
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vadd.vx	v8, v8, a0
-	li	a0, -26
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vi	v9, v10, -11
+	li	a0, -26
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

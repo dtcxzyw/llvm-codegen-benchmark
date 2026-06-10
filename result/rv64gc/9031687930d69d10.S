@@ -48,17 +48,17 @@ func00000000000000c6:
 
 func0000000000000101:
 	lui	a3, 49
-	seqz	a1, a1
 	addi	a3, a3, -1495
+	seqz	a1, a1
 	sltu	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000146:
-	lui	a3, 1048568
-	slt	a1, a1, a3
 	lui	a3, 8
+	lui	a4, 1048568
+	slt	a1, a1, a4
 	addi	a3, a3, -1
 	slt	a2, a3, a2
 	or	a0, a0, a1

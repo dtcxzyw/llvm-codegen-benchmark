@@ -9,8 +9,8 @@ func0000000000000094:
 	ret
 
 func0000000000000306:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	sltiu	a2, a2, 5
 	xori	a2, a2, 1
 	slti	a1, a1, 513
@@ -49,8 +49,8 @@ func0000000000000034:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a2, 31
 	srliw	a1, a1, 31
+	srliw	a2, a2, 31
 	not	a1, a1
 	and	a1, a1, a2
 	neg	a1, a1

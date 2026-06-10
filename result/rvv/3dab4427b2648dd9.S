@@ -9,16 +9,16 @@ func0000000000000004:
 
 func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vxor.vi	v10, v8, 1
-	vmv.v.i	v11, 1
-	vwsll.vv	v8, v11, v10
+	vmv.v.i	v10, 1
+	vxor.vi	v11, v8, 1
+	vwsll.vv	v8, v10, v11
 	ret
 
 func0000000000000006:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vxor.vi	v10, v8, 1
-	vmv.v.i	v11, 1
-	vwsll.vv	v8, v11, v10
+	vmv.v.i	v10, 1
+	vxor.vi	v11, v8, 1
+	vwsll.vv	v8, v10, v11
 	ret
 
 func0000000000000005:
@@ -33,8 +33,8 @@ func0000000000000005:
 
 func0000000000000007:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnot.v	v10, v8
-	vmv.v.i	v11, 1
-	vwsll.vv	v8, v11, v10
+	vmv.v.i	v10, 1
+	vnot.v	v11, v8
+	vwsll.vv	v8, v10, v11
 	ret
 

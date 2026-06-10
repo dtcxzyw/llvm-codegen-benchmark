@@ -20,10 +20,10 @@ func0000000000000101:
 	ret
 
 func0000000000000021:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vv	v14, v10, v12
 	li	a0, -2
 	zext.w	a0, a0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmseq.vv	v14, v10, v12
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v14, v10
 	ret

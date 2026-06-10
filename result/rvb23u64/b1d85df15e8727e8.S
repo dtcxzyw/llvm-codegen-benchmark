@@ -58,9 +58,9 @@ func00000000000001f8:
 func0000000000000108:
 	lui	a3, 1015808
 	srli	a3, a3, 1
+	lui	a4, 16384
 	and	a2, a2, a3
-	lui	a3, 16384
-	add	a1, a1, a3
+	add	a1, a1, a4
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

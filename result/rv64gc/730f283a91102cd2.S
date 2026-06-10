@@ -19,8 +19,8 @@ func0000000000000000:
 	li	a2, 365
 	mul	a1, a1, a2
 	lui	a2, 1048400
-	add	a0, a0, a1
-	addi	a1, a2, 1427
+	addi	a2, a2, 1427
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -34,12 +34,12 @@ func00000000000000c4:
 
 func0000000000000010:
 	add	a1, a1, a2
-	lui	a2, 524288
+	slli	a2, a1, 1
 	add	a0, a0, a1
-	slli	a1, a1, 1
-	add	a0, a0, a1
-	addi	a2, a2, -1
-	addw	a0, a0, a2
+	lui	a1, 524288
+	add	a0, a0, a2
+	addi	a1, a1, -1
+	addw	a0, a0, a1
 	ret
 
 func0000000000000050:
@@ -51,10 +51,10 @@ func0000000000000050:
 	ret
 
 func00000000000000cc:
+	lui	a3, 1048573
 	add	a1, a1, a2
-	lui	a2, 1048573
-	addi	a2, a2, -1
-	mul	a1, a1, a2
+	addi	a3, a3, -1
+	mul	a1, a1, a3
 	lui	a2, 48
 	addi	a2, a2, 16
 	add	a0, a0, a2
@@ -82,8 +82,8 @@ func00000000000000fd:
 	li	a2, 91
 	mul	a1, a1, a2
 	lui	a2, 1042437
-	add	a0, a0, a1
-	addi	a1, a2, 1192
+	addi	a2, a2, 1192
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 
@@ -105,9 +105,9 @@ func0000000000000040:
 	ret
 
 func00000000000000fe:
+	lui	a3, 1023
 	add	a1, a1, a2
-	lui	a2, 1023
-	addi	a2, a2, 1712
+	addi	a2, a3, 1712
 	mul	a1, a1, a2
 	lui	a2, 514
 	add	a0, a0, a2
@@ -115,9 +115,9 @@ func00000000000000fe:
 	ret
 
 func00000000000000f0:
+	lui	a3, 2
 	add	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, 1425
+	addi	a2, a3, 1425
 	mul	a1, a1, a2
 	lui	a2, 8
 	add	a0, a0, a2
@@ -125,9 +125,9 @@ func00000000000000f0:
 	ret
 
 func00000000000000e0:
+	lui	a3, 2
 	add	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, 1425
+	addi	a2, a3, 1425
 	mul	a1, a1, a2
 	lui	a2, 8
 	add	a0, a0, a2
@@ -135,9 +135,9 @@ func00000000000000e0:
 	ret
 
 func00000000000000c0:
+	lui	a3, 16379
 	add	a1, a1, a2
-	lui	a2, 16379
-	addi	a2, a2, 1399
+	addi	a2, a3, 1399
 	mul	a1, a1, a2
 	lui	a2, 8224
 	add	a0, a0, a2
@@ -145,9 +145,9 @@ func00000000000000c0:
 	ret
 
 func00000000000000d5:
+	lui	a3, 1048571
 	add	a1, a1, a2
-	lui	a2, 1048571
-	addi	a2, a2, 1399
+	addi	a2, a3, 1399
 	mul	a1, a1, a2
 	lui	a2, 8224
 	add	a0, a0, a2
@@ -155,9 +155,9 @@ func00000000000000d5:
 	ret
 
 func00000000000000dd:
+	lui	a3, 1048570
 	add	a1, a1, a2
-	lui	a2, 1048570
-	addi	a2, a2, 460
+	addi	a2, a3, 460
 	mul	a1, a1, a2
 	lui	a2, 8224
 	add	a0, a0, a2

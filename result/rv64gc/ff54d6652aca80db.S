@@ -19,8 +19,8 @@ func0000000000000284:
 	ret
 
 func00000000000001a4:
-	sub	a2, a0, a1
 	li	a3, 1
+	sub	a2, a0, a1
 	slli	a3, a3, 11
 	bltu	a2, a3, .LBB2_2
 	mv	a2, a3

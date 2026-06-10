@@ -14,10 +14,10 @@ func000000000000004a:
 
 func00000000000000db:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vv	v20, v16, v12
-	vmflt.vv	v16, v12, v8
-	vmnot.m	v8, v16
-	vmandn.mm	v0, v8, v20
+	vmflt.vv	v20, v12, v8
+	vmflt.vv	v8, v16, v12
+	vmnot.m	v9, v20
+	vmandn.mm	v0, v9, v8
 	ret
 
 func0000000000000044:

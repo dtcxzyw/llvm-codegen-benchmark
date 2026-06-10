@@ -10,12 +10,12 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
+	lui	a0, 32973
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 1
-	lui	a0, 32973
-	vmerge.vim	v10, v10, -1, v0
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
+	vmerge.vim	v10, v10, -1, v0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfle.vf	v0, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -34,12 +34,12 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
+	lui	a0, 32973
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 1
-	lui	a0, 32973
-	vmerge.vim	v10, v10, -1, v0
 	slli	a0, a0, 35
 	fmv.d.x	fa5, a0
+	vmerge.vim	v10, v10, -1, v0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmfgt.vf	v0, v12, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma

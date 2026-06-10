@@ -1,8 +1,8 @@
 func0000000000000000:
 	zext.b	a2, a2
-	zext.b	a1, a1
 	slli	a3, a2, 2
 	slli	a2, a2, 3
+	zext.b	a1, a1
 	add	a2, a2, a3
 	slli	a3, a1, 2
 	slli	a1, a1, 3
@@ -28,8 +28,8 @@ func000000000000003f:
 func000000000000001f:
 	zext.b	a2, a2
 	li	a3, 88
-	zext.b	a1, a1
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

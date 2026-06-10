@@ -20,13 +20,13 @@ func0000000000000031:
 	ret
 
 func0000000000000018:
-	slli	a1, a1, 33
-	slli	a0, a0, 1
 	lui	a2, 699051
+	slli	a1, a1, 33
+	addi	a2, a2, -1366
+	slli	a0, a0, 1
+	slli	a3, a2, 32
 	or	a0, a0, a1
-	addi	a1, a2, -1366
-	slli	a2, a1, 32
-	add.uw	a1, a1, a2
+	add.uw	a1, a2, a3
 	or	a0, a0, a1
 	ret
 

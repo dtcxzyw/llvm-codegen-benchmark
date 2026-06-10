@@ -16,9 +16,9 @@ func00000000000001a4:
 
 func0000000000000124:
 	or	a1, a1, a2
-	lui	a2, 1048304
 	or	a0, a0, a1
-	addw	a0, a0, a2
+	lui	a1, 1048304
+	addw	a0, a0, a1
 	lui	a1, 1048320
 	sltu	a0, a0, a1
 	ret
@@ -76,11 +76,11 @@ func0000000000000001:
 
 func0000000000000104:
 	or	a1, a1, a2
-	lui	a2, 1048560
 	or	a0, a0, a1
-	addw	a0, a0, a2
-	addi	a2, a2, 1
-	sltu	a0, a0, a2
+	lui	a1, 1048560
+	addw	a0, a0, a1
+	addi	a1, a1, 1
+	sltu	a0, a0, a1
 	ret
 
 func000000000000018a:

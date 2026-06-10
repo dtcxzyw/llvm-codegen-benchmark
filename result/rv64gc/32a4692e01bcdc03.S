@@ -1,25 +1,25 @@
 func0000000000000008:
-	li	a0, 1023
-	fmv.d.x	fa5, zero
-	slli	a0, a0, 52
-	feq.d	a1, fa0, fa5
-	fmv.d.x	fa5, a0
-	bnez	a1, .LBB0_2
-	fdiv.d	fa5, fa5, fa0
+	fmv.d.x	fa4, zero
+	fmv.d	fa5, fa0
+	feq.d	a0, fa0, fa4
+	li	a1, 1023
+	slli	a1, a1, 52
+	fmv.d.x	fa0, a1
+	bnez	a0, .LBB0_2
+	fdiv.d	fa0, fa0, fa5
 .LBB0_2:
-	fmv.d	fa0, fa5
 	ret
 
 func000000000000000a:
-	li	a0, 1023
-	fmv.d.x	fa5, zero
-	slli	a0, a0, 52
-	fle.d	a1, fa0, fa5
-	fmv.d.x	fa5, a0
-	bnez	a1, .LBB1_2
-	fdiv.d	fa5, fa5, fa0
+	fmv.d.x	fa4, zero
+	fmv.d	fa5, fa0
+	fle.d	a0, fa0, fa4
+	li	a1, 1023
+	slli	a1, a1, 52
+	fmv.d.x	fa0, a1
+	bnez	a0, .LBB1_2
+	fdiv.d	fa0, fa0, fa5
 .LBB1_2:
-	fmv.d	fa0, fa5
 	ret
 
 .LCPI2_0:

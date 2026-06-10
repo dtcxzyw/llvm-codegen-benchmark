@@ -31,11 +31,11 @@ func0000000000000102:
 
 func0000000000000058:
 	sext.w	a1, a1
-	sext.w	a2, a2
 	lui	a3, 131072
+	sext.w	a2, a2
 	addi	a3, a3, -1
-	binvi	a1, a1, 29
 	xor	a2, a2, a3
+	binvi	a1, a1, 29
 	seqz	a2, a2
 	snez	a1, a1
 	or	a1, a1, a2

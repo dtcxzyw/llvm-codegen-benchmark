@@ -1,23 +1,23 @@
 func000000000000000f:
 	lui	a3, 131072
 	addi	a3, a3, -1
+	lui	a4, 786432
 	slli	a3, a3, 32
+	addi	a4, a4, 1
 	and	a2, a2, a3
-	lui	a3, 786432
+	slli	a4, a4, 32
+	addi	a4, a4, -1
 	slli	a0, a0, 61
-	addi	a3, a3, 1
-	slli	a3, a3, 32
-	addi	a3, a3, -1
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000000b:
 	lui	a3, 16
+	addi	a3, a3, -256
 	zext.b	a1, a1
 	slli	a0, a0, 32
-	addi	a3, a3, -256
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -27,8 +27,8 @@ func000000000000000c:
 	lui	a3, 8
 	and	a2, a2, a3
 	lui	a3, 16
-	slli	a0, a0, 3
 	addi	a3, a3, -1024
+	slli	a0, a0, 3
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -56,10 +56,10 @@ func0000000000000009:
 
 func000000000000000d:
 	lui	a3, 524288
-	slli	a0, a0, 32
 	addiw	a3, a3, -1
 	addi	a4, a3, 1
 	and	a1, a1, a3
+	slli	a0, a0, 32
 	and	a2, a2, a4
 	or	a0, a0, a1
 	or	a0, a0, a2

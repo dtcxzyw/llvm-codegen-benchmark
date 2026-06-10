@@ -13,9 +13,9 @@ func0000000000000404:
 	lui	a3, 16
 	addi	a3, a3, -1
 	and	a1, a1, a3
+	lui	a4, 1
 	and	a2, a2, a3
-	lui	a3, 1
-	addi	a3, a3, -816
+	addi	a3, a4, -816
 	sltu	a2, a3, a2
 	seqz	a1, a1
 	or	a1, a1, a2

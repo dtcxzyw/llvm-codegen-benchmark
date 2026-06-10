@@ -2,8 +2,8 @@ func0000000000000002:
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfadd.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
-	lui	a0, 265361
 	vmflt.vf	v0, v8, fa5
+	lui	a0, 265361
 	addi	a0, a0, -37
 	fmv.w.x	fa5, a0
 	vfadd.vf	v8, v8, fa5, v0.t
@@ -20,12 +20,12 @@ func000000000000000d:
 	ret
 
 func0000000000000004:
+	lui	a0, 272128
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfadd.vv	v8, v8, v12
-	lui	a0, 272128
 	fmv.w.x	fa5, a0
-	lui	a0, 796416
 	vmfgt.vf	v0, v8, fa5
+	lui	a0, 796416
 	fmv.w.x	fa5, a0
 	vfadd.vf	v8, v8, fa5, v0.t
 	ret

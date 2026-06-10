@@ -25,9 +25,9 @@ func0000000000000fe1:
 
 func00000000000001e1:
 	addi	a2, a2, 1
-	li	a3, 88
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	li	a3, 88
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 88

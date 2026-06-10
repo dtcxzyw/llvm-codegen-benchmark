@@ -19,8 +19,8 @@ func0000000000000022:
 	srli	a2, a1, 63
 	add	a1, a1, a2
 	li	a2, -127
-	srli	a2, a2, 1
 	srai	a1, a1, 1
+	srli	a2, a2, 1
 	andn	a1, a1, a2
 	bseti	a2, zero, 63
 	sltu	a1, a2, a1

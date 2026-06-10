@@ -76,17 +76,17 @@ func0000000000000006:
 	ret
 
 func0000000000000098:
+	bseti	a2, zero, 37
 	sub	a0, a0, a1
-	bseti	a1, zero, 37
-	addi	a1, a1, -512
+	addi	a1, a2, -512
 	and	a0, a0, a1
 	snez	a0, a0
 	ret
 
 func0000000000000094:
+	bseti	a2, zero, 37
 	sub	a0, a0, a1
-	bseti	a1, zero, 37
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

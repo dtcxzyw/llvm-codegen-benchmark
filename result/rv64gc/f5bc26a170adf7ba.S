@@ -1,9 +1,9 @@
 func0000000000000016:
-	slli	a2, a1, 3
+	lui	a2, 699051
+	slli	a3, a1, 3
 	slli	a1, a1, 4
-	lui	a3, 699051
-	add	a1, a1, a2
-	addi	a2, a3, -1365
+	add	a1, a1, a3
+	addi	a2, a2, -1365
 	addi	a1, a1, -24
 	slli	a3, a2, 32
 	srli	a1, a1, 3

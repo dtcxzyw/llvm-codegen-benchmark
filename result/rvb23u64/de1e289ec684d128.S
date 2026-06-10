@@ -44,12 +44,12 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
+	lui	a2, 599
 	sub	a0, a0, a1
-	lui	a1, 599
-	addi	a1, a1, -1959
+	addi	a1, a2, -1959
+	lui	a2, 524288
 	addw	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -154
+	addiw	a1, a2, -154
 	sltu	a0, a0, a1
 	ret
 

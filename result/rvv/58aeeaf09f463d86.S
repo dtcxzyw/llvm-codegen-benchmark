@@ -15,22 +15,22 @@ func0000000000000001:
 	.quad	9187201950435737470
 func000000000000000a:
 	lui	a0, 522232
-	lui	a1, 152146
 	addi	a0, a0, -129
-	addi	a1, a1, 1317
-	slli	a2, a0, 32
-	add	a0, a0, a2
-	slli	a2, a1, 32
-	add	a1, a1, a2
+	slli	a1, a0, 32
+	add	a0, a0, a1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
-	vadd.vx	v8, v8, a1
-	lui	a1, 106914
-	addi	a1, a1, -1510
+	lui	a0, 152146
+	addi	a0, a0, 1317
+	slli	a1, a0, 32
+	add	a0, a0, a1
+	lui	a1, %hi(.LCPI1_0)
+	vadd.vx	v8, v8, a0
+	ld	a0, %lo(.LCPI1_0)(a1)
 	vand.vx	v8, v8, a0
-	slli	a0, a1, 32
+	lui	a0, 106914
+	addi	a0, a0, -1510
+	slli	a1, a0, 32
 	add	a0, a0, a1
 	vadd.vx	v8, v8, a0
 	ret
@@ -59,8 +59,8 @@ func000000000000000f:
 	addi	a0, a0, -8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
-	lui	a0, 524288
 	vadd.vi	v8, v8, 15
+	lui	a0, 524288
 	srli	a0, a0, 28
 	vand.vx	v8, v8, a0
 	vadd.vi	v8, v8, 8

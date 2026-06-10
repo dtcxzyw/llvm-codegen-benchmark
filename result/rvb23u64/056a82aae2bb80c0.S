@@ -1,14 +1,13 @@
+.LCPI0_0:
+	.quad	683212743594999808
 func0000000000000009:
+	lui	a1, %hi(.LCPI0_0)
 	sext.w	a0, a0
-	li	a1, 53
-	lui	a2, 303
-	maxu	a0, a0, a1
-	addi	a1, a2, 1669
+	li	a2, 53
+	ld	a1, %lo(.LCPI0_0)(a1)
+	maxu	a0, a0, a2
 	addi	a0, a0, -27
-	slli	a1, a1, 12
 	zext.w	a2, a0
-	addi	a1, a1, -1061
-	slli	a1, a1, 27
 	mulhu	a1, a2, a1
 	sh1add	a1, a1, a1
 	sh3add	a1, a1, a1
@@ -17,13 +16,13 @@ func0000000000000009:
 	ret
 
 func0000000000000008:
-	sext.w	a0, a0
 	li	a1, 25
-	lui	a2, 322639
+	sext.w	a0, a0
 	maxu	a0, a0, a1
-	addi	a1, a2, -945
 	addi	a0, a0, -13
+	lui	a1, 322639
 	zext.w	a2, a0
+	addi	a1, a1, -945
 	mul	a1, a1, a2
 	srli	a1, a1, 34
 	sh1add	a2, a1, a1

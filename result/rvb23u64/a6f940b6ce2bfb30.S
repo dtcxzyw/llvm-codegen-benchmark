@@ -1,8 +1,8 @@
 func000000000000000b:
 	andi	a1, a1, 8
 	lui	a2, 4
-	srliw	a0, a0, 2
 	czero.eqz	a1, a2, a1
+	srliw	a0, a0, 2
 	add	a0, a0, a1
 	addi	a2, a2, -1
 	add	a0, a0, a2

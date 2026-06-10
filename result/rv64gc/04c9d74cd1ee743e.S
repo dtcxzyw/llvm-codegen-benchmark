@@ -46,10 +46,10 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
+	sext.w	a3, a1
 	andi	a2, a0, 1
-	sext.w	a0, a1
 	lui	a1, 2
-	beqz	a0, .LBB4_2
+	beqz	a3, .LBB4_2
 	addi	a0, a1, 400
 	beqz	a2, .LBB4_3
 	j	.LBB4_4
@@ -62,17 +62,17 @@ func000000000000000c:
 	ret
 
 func0000000000000014:
-	andi	a2, a0, 1
-	sext.w	a1, a1
+	sext.w	a2, a1
 	li	a3, 13
+	andi	a1, a0, 1
 	li	a0, 8
-	bgeu	a1, a3, .LBB5_3
-	beqz	a2, .LBB5_4
+	bgeu	a2, a3, .LBB5_3
+	beqz	a1, .LBB5_4
 .LBB5_2:
 	ret
 .LBB5_3:
 	li	a0, 12
-	bnez	a2, .LBB5_2
+	bnez	a1, .LBB5_2
 .LBB5_4:
 	li	a0, 8
 	ret

@@ -11,9 +11,9 @@ func0000000000000021:
 
 func0000000000000028:
 	li	a2, 1
-	sltiu	a0, a0, 16
 	slli	a2, a2, 32
 	add	a1, a1, a2
+	sltiu	a0, a0, 16
 	srai	a1, a1, 32
 	neg	a0, a0
 	and	a0, a0, a1

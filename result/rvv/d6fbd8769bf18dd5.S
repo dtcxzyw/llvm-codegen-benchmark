@@ -2,18 +2,18 @@ func0000000000003184:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v8, 0
 	vmsne.vi	v13, v10, 0
-	vmand.mm	v12, v13, v12
-	vmsltu.vv	v13, v8, v10
-	vmand.mm	v0, v12, v13
+	vmsltu.vv	v14, v8, v10
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 
 func0000000000003188:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, -1
 	vmsne.vi	v13, v8, -1
-	vmand.mm	v12, v13, v12
-	vmsltu.vv	v13, v10, v8
-	vmand.mm	v0, v12, v13
+	vmsltu.vv	v14, v10, v8
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 
 .LCPI2_0:
@@ -24,9 +24,9 @@ func000000000000318c:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmsne.vx	v13, v8, a0
-	vmand.mm	v12, v13, v12
-	vmsne.vv	v13, v8, v10
-	vmand.mm	v0, v12, v13
+	vmsne.vv	v14, v8, v10
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 
 .LCPI3_0:
@@ -37,9 +37,9 @@ func0000000000003181:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmsne.vx	v13, v8, a0
-	vmand.mm	v12, v13, v12
-	vmseq.vv	v13, v8, v10
-	vmand.mm	v0, v12, v13
+	vmseq.vv	v14, v8, v10
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 
 .LCPI4_0:
@@ -50,9 +50,9 @@ func000000000000318b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmsne.vx	v13, v8, a0
-	vmand.mm	v12, v13, v12
-	vmsle.vv	v13, v10, v8
-	vmand.mm	v0, v12, v13
+	vmsle.vv	v14, v10, v8
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 
 .LCPI5_0:
@@ -63,9 +63,9 @@ func0000000000003187:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmsne.vx	v13, v8, a0
-	vmand.mm	v12, v13, v12
-	vmsle.vv	v13, v8, v10
-	vmand.mm	v0, v12, v13
+	vmsle.vv	v14, v8, v10
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 
 .LCPI6_0:
@@ -76,9 +76,9 @@ func000000000000318a:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmsne.vx	v13, v8, a0
-	vmand.mm	v12, v13, v12
-	vmslt.vv	v13, v10, v8
-	vmand.mm	v0, v12, v13
+	vmslt.vv	v14, v10, v8
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 
 .LCPI7_0:
@@ -89,8 +89,8 @@ func0000000000003186:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
 	vmsne.vx	v13, v8, a0
-	vmand.mm	v12, v13, v12
-	vmslt.vv	v13, v8, v10
-	vmand.mm	v0, v12, v13
+	vmslt.vv	v14, v8, v10
+	vmand.mm	v8, v13, v12
+	vmand.mm	v0, v8, v14
 	ret
 

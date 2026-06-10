@@ -3,8 +3,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	sext.w	a0, a0
 	addw	a1, a1, a2
+	sext.w	a0, a0
 	sltiu	a0, a0, 15
 	addi	a1, a1, -16
 	czero.nez	a0, a1, a0

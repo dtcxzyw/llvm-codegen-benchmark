@@ -15,10 +15,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	sext.w	a0, a0
 	andi	a2, a2, 1
 	xori	a2, a2, -365
 	add	a1, a1, a2
+	sext.w	a0, a0
 	addiw	a1, a1, 31
 	sltu	a0, a0, a1
 	ret

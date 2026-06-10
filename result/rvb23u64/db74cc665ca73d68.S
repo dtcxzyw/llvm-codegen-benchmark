@@ -1,7 +1,7 @@
 func0000000000000843:
-	sext.w	a0, a0
 	lui	a1, 244
 	lui	a2, 24
+	sext.w	a0, a0
 	addi	a1, a1, 575
 	addi	a2, a2, 1695
 	sltu	a1, a1, a0
@@ -11,9 +11,9 @@ func0000000000000843:
 	ret
 
 func00000000000018c3:
-	sext.w	a0, a0
 	lui	a1, 244
 	lui	a2, 24
+	sext.w	a0, a0
 	addi	a1, a1, 575
 	addi	a2, a2, 1695
 	sltu	a1, a1, a0
@@ -23,9 +23,9 @@ func00000000000018c3:
 	ret
 
 func0000000000000a53:
-	sext.w	a0, a0
 	lui	a1, 4096
 	lui	a2, 16
+	sext.w	a0, a0
 	addi	a1, a1, -1
 	addi	a2, a2, -1
 	slt	a1, a1, a0

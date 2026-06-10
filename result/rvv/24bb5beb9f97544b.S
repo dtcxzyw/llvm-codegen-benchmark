@@ -2,8 +2,8 @@ func00000000000000c2:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	fmv.w.x	fa5, zero
-	lui	a0, 522240
 	vmfge.vf	v0, v12, fa5
+	lui	a0, 522240
 	addi	a0, a0, -1
 	vmv.v.x	v20, a0
 	vmerge.vvm	v12, v20, v12, v0

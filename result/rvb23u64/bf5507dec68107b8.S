@@ -1,6 +1,6 @@
 func0000000000000002:
-	sext.w	a0, a0
 	li	a1, 2
+	sext.w	a0, a0
 	max	a0, a0, a1
 	addi	a0, a0, -1
 	li	a1, 60
@@ -8,8 +8,8 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	sext.w	a0, a0
 	li	a1, -1
+	sext.w	a0, a0
 	max	a0, a0, a1
 	lui	a1, 131072
 	addiw	a0, a0, 1
@@ -18,11 +18,11 @@ func0000000000000003:
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
 	li	a1, 19
+	sext.w	a0, a0
+	lui	a2, 122
 	max	a0, a0, a1
-	lui	a1, 122
-	addi	a1, a1, 287
+	addi	a1, a2, 287
 	min	a0, a0, a1
 	addi	a0, a0, 1
 	ret

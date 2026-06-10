@@ -1,8 +1,8 @@
 func0000000000000008:
 	slli	a1, a1, 63
-	slli	a0, a0, 47
 	srai	a1, a1, 63
 	and	a1, a1, a2
+	slli	a0, a0, 47
 	sext.w	a1, a1
 	srli	a0, a0, 47
 	sltu	a0, a1, a0
@@ -10,9 +10,9 @@ func0000000000000008:
 
 func0000000000000018:
 	slli	a1, a1, 63
-	slli	a0, a0, 47
 	srai	a1, a1, 63
 	and	a1, a1, a2
+	slli	a0, a0, 47
 	sext.w	a1, a1
 	srli	a0, a0, 47
 	sltu	a0, a1, a0
@@ -34,8 +34,8 @@ func0000000000000004:
 	bnez	a1, .LBB3_2
 	li	a2, 16
 .LBB3_2:
-	sext.w	a2, a2
 	andi	a0, a0, -4
+	sext.w	a2, a2
 	sext.w	a0, a0
 	sltu	a0, a0, a2
 	ret

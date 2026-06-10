@@ -15,9 +15,9 @@ func000000000000003f:
 func0000000000000033:
 	andi	a1, a1, 3
 	slli	a1, a1, 3
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, 248
+	addi	a1, a2, 248
 	add	a0, a0, a1
 	ret
 

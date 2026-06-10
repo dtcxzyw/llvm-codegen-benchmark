@@ -15,29 +15,29 @@ func0000000000000060:
 	ret
 
 func00000000000000af:
-	sext.w	a2, a1
-	li	a3, 158
-	blt	a3, a2, .LBB2_2
+	li	a2, 158
+	sext.w	a3, a1
+	blt	a2, a3, .LBB2_2
 	li	a2, 96
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a2, 2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 
 func00000000000000a0:
 	sext.w	a2, a1
 	bgtz	a2, .LBB3_2
 	li	a2, 6
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 .LBB3_2:
 	li	a2, 10
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	ret
 

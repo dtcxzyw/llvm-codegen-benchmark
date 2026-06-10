@@ -20,8 +20,8 @@ func0000000000000014:
 	lui	a0, 253460
 	addi	a0, a0, 1966
 	fmv.w.x	fa5, a0
-	lui	a0, 275360
 	fmadd.s	fa5, fa0, fa5, fa1
+	lui	a0, 275360
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -29,8 +29,8 @@ func0000000000000014:
 func000000000000000d:
 	lui	a0, 260608
 	fmv.w.x	fa5, a0
-	lui	a0, 260096
 	fmadd.s	fa5, fa0, fa5, fa1
+	lui	a0, 260096
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -39,8 +39,8 @@ func000000000000000d:
 func0000000000000004:
 	lui	a0, 260608
 	fmv.w.x	fa5, a0
-	lui	a0, 266752
 	fmadd.s	fa5, fa0, fa5, fa1
+	lui	a0, 266752
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -58,8 +58,8 @@ func0000000000000003:
 	addi	a0, a0, -37
 	fmv.w.x	fa5, a0
 	lui	a0, 265361
-	addi	a0, a0, -37
 	fmadd.s	fa5, fa0, fa5, fa1
+	addi	a0, a0, -37
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -110,8 +110,8 @@ func000000000000000a:
 
 func0000000000000018:
 	fmv.w.x	fa5, zero
-	lui	a0, 260096
 	fmadd.s	fa5, fa0, fa5, fa1
+	lui	a0, 260096
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa5, fa4
 	ret

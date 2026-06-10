@@ -1,7 +1,7 @@
 func0000000000000038:
+	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, -8
-	li	a0, 31
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

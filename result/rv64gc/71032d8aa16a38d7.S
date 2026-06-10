@@ -1,7 +1,7 @@
 func00000000000000cf:
 	lui	a3, 256
-	srli	a1, a1, 3
 	add	a2, a2, a3
+	srli	a1, a1, 3
 	srli	a2, a2, 21
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -9,8 +9,8 @@ func00000000000000cf:
 
 func00000000000000ca:
 	lui	a3, 524288
-	srli	a1, a1, 32
 	sub	a2, a2, a3
+	srli	a1, a1, 32
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2

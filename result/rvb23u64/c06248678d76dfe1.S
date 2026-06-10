@@ -4,8 +4,8 @@ func0000000000000007:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 27
 	bseti	a2, zero, 32
+	slli	a1, a1, 27
 	sub	a1, a1, a2
 	lui	a2, 44
 	srai	a1, a1, 32

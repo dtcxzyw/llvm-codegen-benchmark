@@ -12,8 +12,8 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	andi	a3, a1, 1
 	sext.w	a2, a2
+	andi	a3, a1, 1
 	sltiu	a1, a2, -1
 	and	a1, a1, a0
 	bnez	a3, .LBB1_2

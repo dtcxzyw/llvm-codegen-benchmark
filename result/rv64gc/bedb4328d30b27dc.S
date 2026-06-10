@@ -8,11 +8,11 @@ func0000000000000020:
 
 func0000000000000003:
 	li	a3, 1
+	li	a4, -1
 	slli	a3, a3, 33
+	slli	a4, a4, 32
 	sll	a2, a3, a2
-	li	a3, -1
-	slli	a3, a3, 32
-	add	a1, a1, a3
+	add	a1, a1, a4
 	add	a1, a1, a2
 	and	a0, a0, a1
 	ret

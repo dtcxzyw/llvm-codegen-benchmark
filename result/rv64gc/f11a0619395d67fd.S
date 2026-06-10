@@ -1,12 +1,12 @@
 func0000000000000038:
-	sext.w	a1, a1
-	sext.w	a3, a2
-	lui	a4, 32
-	addi	a4, a4, -1
+	lui	a3, 32
+	sext.w	a4, a2
+	addi	a3, a3, -1
 	xor	a3, a3, a4
 	seqz	a3, a3
 	addi	a3, a3, -1
 	and	a2, a2, a3
+	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	and	a0, a0, a1

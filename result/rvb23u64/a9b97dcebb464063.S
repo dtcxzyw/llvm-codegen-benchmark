@@ -26,11 +26,11 @@ func000000000000003b:
 
 func000000000000000c:
 	slli	a2, a2, 38
+	lui	a3, 65535
 	slli	a1, a1, 28
+	slli	a3, a3, 16
 	or	a1, a1, a2
-	lui	a2, 65535
-	slli	a2, a2, 16
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

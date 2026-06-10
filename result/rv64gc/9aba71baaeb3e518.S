@@ -46,10 +46,10 @@ func0000000000000021:
 	ret
 
 func000000000000000a:
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
 	lui	a1, 1
+	srai	a2, a0, 63
+	xor	a0, a0, a2
+	sub	a0, a0, a2
 	slt	a0, a1, a0
 	ret
 
@@ -62,21 +62,21 @@ func0000000000000074:
 	ret
 
 func0000000000000006:
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
 	lui	a1, 2384
+	srai	a2, a0, 63
+	xor	a0, a0, a2
 	addi	a1, a1, 761
+	sub	a0, a0, a2
 	slli	a1, a1, 9
 	slt	a0, a0, a1
 	ret
 
 func0000000000000014:
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
 	lui	a1, 298023
+	srai	a2, a0, 63
+	xor	a0, a0, a2
 	addi	a1, a1, 917
+	sub	a0, a0, a2
 	slli	a1, a1, 12
 	sltu	a0, a0, a1
 	ret

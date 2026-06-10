@@ -1,8 +1,8 @@
 func0000000000000006:
-	sext.w	a3, a2
-	lui	a4, 335544
-	addi	a4, a4, 1311
-	mul	a3, a3, a4
+	lui	a3, 335544
+	sext.w	a4, a2
+	addi	a3, a3, 1311
+	mul	a3, a4, a3
 	srli	a4, a3, 63
 	srai	a3, a3, 37
 	add	a3, a3, a4

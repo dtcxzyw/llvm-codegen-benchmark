@@ -1,6 +1,6 @@
 func0000000000000043:
-	fadd.s	fa4, fa0, fa1
 	lui	a1, 260096
+	fadd.s	fa4, fa0, fa1
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa4
 	bnez	a1, .LBB0_2
@@ -15,8 +15,8 @@ func0000000000000043:
 	ret
 
 func0000000000000044:
-	fadd.s	fa4, fa0, fa1
 	lui	a1, 260096
+	fadd.s	fa4, fa0, fa1
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa4
 	bnez	a1, .LBB1_2
@@ -31,8 +31,8 @@ func0000000000000044:
 	ret
 
 func000000000000004a:
-	fadd.s	fa4, fa0, fa1
 	lui	a1, 260096
+	fadd.s	fa4, fa0, fa1
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa4
 	bnez	a1, .LBB2_2
@@ -44,8 +44,8 @@ func000000000000004a:
 	ret
 
 func0000000000000042:
-	fadd.s	fa4, fa0, fa1
 	lui	a1, 260096
+	fadd.s	fa4, fa0, fa1
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa4
 	fmv.s	fa3, fa5

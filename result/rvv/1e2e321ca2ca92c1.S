@@ -11,14 +11,13 @@ func0000000000000008:
 	vmadd.vx	v8, a0, v10
 	ret
 
+.LCPI1_0:
+	.quad	4692019660866977792
 func0000000000000000:
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnot.v	v10, v10
-	lui	a0, 133355
-	addi	a0, a0, 899
-	slli	a0, a0, 12
-	addi	a0, a0, -663
-	slli	a0, a0, 21
 	vmadd.vx	v8, a0, v10
 	ret
 

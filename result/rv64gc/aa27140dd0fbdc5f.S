@@ -1,8 +1,8 @@
 func0000000000000005:
+	zext.b	a1, a1
 	andi	a2, a0, 1
-	zext.b	a0, a1
-	addi	a0, a0, -10
-	seqz	a0, a0
+	addi	a1, a1, -10
+	seqz	a0, a1
 	bnez	a2, .LBB0_2
 	li	a1, 10
 	or	a0, a0, a1

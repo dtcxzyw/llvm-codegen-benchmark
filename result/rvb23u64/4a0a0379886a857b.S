@@ -6,10 +6,10 @@ func0000000000000000:
 	ret
 
 func000000000000003c:
+	lui	a3, 1048544
 	add	a0, a0, a1
 	slli	a0, a0, 17
 	addw	a0, a0, a2
-	lui	a1, 1048544
-	and	a0, a0, a1
+	and	a0, a0, a3
 	ret
 

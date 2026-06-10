@@ -35,12 +35,12 @@ func0000000000000052:
 	ret
 
 func000000000000000e:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 0
 	lui	a0, 128
 	addi	a0, a0, 512
-	vmv.v.x	v10, a0
-	vmerge.vim	v10, v10, 0, v0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v12, a0
+	vmseq.vi	v0, v10, 0
+	vmerge.vim	v10, v12, 0, v0
 	csrwi	vxrm, 2
 	vaaddu.vv	v8, v8, v10
 	ret

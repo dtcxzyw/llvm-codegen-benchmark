@@ -19,8 +19,8 @@ func0000000000000004:
 	beqz	a2, .LBB2_2
 	lui	a3, 2
 .LBB2_2:
+	or	a1, a1, a3
 	or	a0, a0, a1
-	or	a0, a0, a3
 	ret
 
 func0000000000000007:
@@ -41,12 +41,12 @@ func0000000000000013:
 func0000000000000005:
 	beqz	a2, .LBB5_2
 	li	a2, 16
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB5_2:
 	li	a2, 1040
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 

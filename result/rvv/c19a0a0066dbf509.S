@@ -18,9 +18,9 @@ func000000000000002c:
 	ret
 
 func0000000000000421:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 16
 	vand.vx	v8, v8, a0
 	vmseq.vi	v10, v8, 0
 	vmand.mm	v0, v12, v10

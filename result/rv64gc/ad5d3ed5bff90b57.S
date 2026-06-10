@@ -36,10 +36,10 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 1
 	slli	a1, a1, 48
 	srli	a2, a1, 48
 	li	a3, 11
+	andi	a0, a0, 1
 	lui	a1, 4
 	bltu	a3, a2, .LBB3_2
 	lui	a1, 8

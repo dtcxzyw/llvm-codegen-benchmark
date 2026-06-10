@@ -10,8 +10,8 @@ func0000000000000042:
 	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
 	lui	a0, 522240
-	fmax.s	fa5, fa5, fa4
 	addi	a0, a0, -1
+	fmax.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

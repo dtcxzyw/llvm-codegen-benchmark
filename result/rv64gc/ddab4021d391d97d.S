@@ -17,8 +17,8 @@ func0000000000000081:
 	ret
 
 func00000000000008cc:
-	sext.w	a1, a1
 	lui	a3, 4096
+	sext.w	a1, a1
 	addw	a2, a2, a3
 	lui	a3, 8192
 	snez	a1, a1

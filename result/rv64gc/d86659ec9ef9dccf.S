@@ -43,8 +43,8 @@ func0000000000000186:
 
 func0000000000000084:
 	slli	a1, a1, 32
-	lui	a2, 1048332
 	srli	a1, a1, 32
+	lui	a2, 1048332
 	add	a0, a0, a1
 	addi	a1, a2, -577
 	add	a0, a0, a1

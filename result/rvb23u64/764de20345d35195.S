@@ -12,8 +12,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	fmv.d.x	fa5, zero
+	andi	a0, a0, 1
 	fmv.d	fa4, fa5
 	bnez	a0, .LBB1_2
 	fmv.d	fa4, fa1
@@ -27,8 +27,8 @@ func0000000000000005:
 	beqz	a0, .LBB2_2
 	fmv.d.x	fa1, zero
 .LBB2_2:
-	fmul.d	fa5, fa0, fa1
 	li	a0, 997
+	fmul.d	fa5, fa0, fa1
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa5, fa4

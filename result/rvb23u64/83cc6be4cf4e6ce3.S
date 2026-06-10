@@ -50,9 +50,9 @@ func0000000000000028:
 
 func0000000000000024:
 	sext.w	a1, a1
+	li	a2, 1
 	sub	a1, a1, a0
-	li	a0, 1
-	bseti	a0, a0, 63
+	bseti	a0, a2, 63
 	sltu	a0, a1, a0
 	ret
 
@@ -65,11 +65,11 @@ func0000000000000038:
 
 func0000000000000021:
 	sext.w	a1, a1
+	lui	a2, 524288
 	sub	a1, a1, a0
-	lui	a0, 524288
-	addiw	a0, a0, -3
-	xor	a0, a0, a1
-	seqz	a0, a0
+	addiw	a2, a2, -3
+	xor	a1, a1, a2
+	seqz	a0, a1
 	ret
 
 func0000000000000041:

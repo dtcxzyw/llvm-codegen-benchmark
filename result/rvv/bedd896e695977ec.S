@@ -1,9 +1,9 @@
 func0000000000000005:
 	lui	a0, 278192
 	fmv.w.x	fa5, a0
-	lui	a0, 277312
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
+	lui	a0, 277312
 	fmv.w.x	fa5, a0
 	vfadd.vf	v12, v12, fa5
 	vmfle.vv	v16, v8, v12
@@ -13,9 +13,9 @@ func0000000000000005:
 func0000000000000002:
 	lui	a0, 266752
 	fmv.w.x	fa5, a0
-	lui	a0, 790784
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
+	lui	a0, 790784
 	fmv.w.x	fa5, a0
 	vfadd.vf	v12, v12, fa5
 	vmflt.vv	v0, v8, v12
@@ -24,9 +24,9 @@ func0000000000000002:
 func0000000000000004:
 	lui	a0, 266752
 	fmv.w.x	fa5, a0
-	lui	a0, 266496
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
+	lui	a0, 266496
 	fmv.w.x	fa5, a0
 	vfadd.vf	v12, v12, fa5
 	vmflt.vv	v0, v12, v8

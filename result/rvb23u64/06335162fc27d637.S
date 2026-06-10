@@ -6,18 +6,18 @@ func0000000000000002:
 	ret
 
 func0000000000000048:
+	li	a3, -11
 	or	a1, a1, a2
-	li	a2, -11
-	zext.w	a2, a2
-	sltu	a1, a1, a2
+	zext.w	a3, a3
+	sltu	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000042:
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	xor	a1, a1, a2
+	srli	a3, a3, 32
+	xor	a1, a1, a3
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

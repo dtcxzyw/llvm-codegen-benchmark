@@ -18,11 +18,11 @@ func0000000000000026:
 
 func0000000000000024:
 	addiw	a1, a0, -1
-	srli	a2, a0, 32
-	xor	a0, a0, a1
-	sext.w	a0, a0
-	sltu	a0, a1, a0
-	seqz	a1, a2
+	xor	a2, a0, a1
+	sext.w	a2, a2
+	srli	a0, a0, 32
+	sltu	a1, a1, a2
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 

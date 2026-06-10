@@ -1,7 +1,7 @@
 func00000000000000a4:
-	bseti	a0, zero, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsub.wv	v8, v8, v10
+	bseti	a0, zero, 31
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	bseti	a0, zero, 32
@@ -16,9 +16,9 @@ func00000000000000a1:
 	ret
 
 func00000000000000a8:
-	li	a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsub.wv	v8, v8, v10
+	li	a0, -1
 	srli	a1, a0, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsub.vx	v8, v8, a1

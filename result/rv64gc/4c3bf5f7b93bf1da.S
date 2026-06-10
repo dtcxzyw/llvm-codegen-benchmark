@@ -20,12 +20,12 @@ func000000000000000f:
 	ret
 
 func0000000000000001:
-	add	a1, a1, a2
+	lui	a3, 524288
 	slli	a0, a0, 63
-	lui	a2, 524288
 	srai	a0, a0, 63
-	addiw	a2, a2, -85
-	and	a0, a0, a2
+	addiw	a3, a3, -85
+	add	a1, a1, a2
+	and	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

@@ -20,9 +20,9 @@ func000000000000004c:
 	ret
 
 func0000000000000002:
-	li	a0, 512
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
+	li	a0, 512
 	vadd.vx	v9, v10, a0
 	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -98,10 +98,10 @@ func00000000000000c3:
 	ret
 
 func0000000000000008:
-	lui	a0, 5
-	addi	a0, a0, 1124
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsleu.vi	v0, v9, 15
+	lui	a0, 5
+	addi	a0, a0, 1124
 	vadd.vx	v9, v10, a0
 	vmerge.vvm	v10, v9, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma

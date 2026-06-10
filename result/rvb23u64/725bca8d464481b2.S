@@ -10,8 +10,8 @@ func0000000000000007:
 	ret
 
 func0000000000000009:
-	slli	a0, a0, 2
 	lui	a1, 57005
+	slli	a0, a0, 2
 	slli	a1, a1, 20
 	add.uw	a0, a0, a1
 	ret

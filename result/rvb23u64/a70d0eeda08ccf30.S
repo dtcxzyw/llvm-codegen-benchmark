@@ -24,19 +24,19 @@ func0000000000000188:
 	ret
 
 func0000000000000208:
-	add	a1, a1, a0
 	bseti	a2, zero, 36
-	sltu	a0, a1, a0
+	add	a1, a1, a0
 	addi	a2, a2, -32
+	sltu	a0, a1, a0
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000102:
 	add	a0, a0, a1
-	sltu	a1, a0, a1
-	addi	a0, a0, 1
-	seqz	a0, a0
+	addi	a2, a0, 1
+	sltu	a0, a0, a1
+	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 

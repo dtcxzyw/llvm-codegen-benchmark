@@ -4,8 +4,8 @@ func0000000000000007:
 	vmseq.vi	v0, v10, 0
 	li	a0, 64
 	vor.vx	v8, v8, a0, v0.t
-	lui	a0, 4
 	vmv1r.v	v0, v12
+	lui	a0, 4
 	vor.vx	v8, v8, a0, v0.t
 	ret
 

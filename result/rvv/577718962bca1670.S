@@ -1,8 +1,8 @@
 func000000000000000e:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vrsub.vi	v10, v8, 0
-	vmv.v.i	v11, 1
-	vwsll.vv	v8, v11, v10
+	vmv.v.i	v10, 1
+	vrsub.vi	v11, v8, 0
+	vwsll.vv	v8, v10, v11
 	ret
 
 func000000000000001f:
@@ -68,14 +68,14 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vrsub.vi	v10, v8, 8
 	lui	a0, 66052
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v8, v10
 	addi	a0, a0, 128
 	slli	a1, a0, 28
 	add	a0, a0, a1
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vrsub.vi	v10, v8, 8
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v8, v10
 	vmv.v.x	v10, a0
 	vsll.vv	v8, v10, v8
 	ret

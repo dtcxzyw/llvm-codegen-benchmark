@@ -21,8 +21,8 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	zext.b	a0, a0
 	li	a1, 31
+	zext.b	a0, a0
 	bltu	a1, a0, .LBB3_2
 	lui	a0, 65536
 	addi	a0, a0, 353
@@ -33,8 +33,8 @@ func0000000000000008:
 	ret
 
 func0000000000000014:
-	zext.b	a0, a0
 	li	a1, 58
+	zext.b	a0, a0
 	bltu	a0, a1, .LBB4_2
 	li	a0, -55
 	ret
@@ -55,8 +55,8 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	zext.b	a0, a0
 	li	a1, 96
+	zext.b	a0, a0
 	bltu	a1, a0, .LBB7_2
 	li	a0, 11
 	ret

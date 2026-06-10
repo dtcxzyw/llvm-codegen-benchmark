@@ -36,8 +36,8 @@ func0000000000000081:
 	ret
 
 func0000000000000004:
-	sub	a1, a1, a2
 	sh1add	a0, a0, a0
+	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 

@@ -1,23 +1,23 @@
 func000000000000000c:
-	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
+	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfge.vf	v0, v8, fa5
 	ret
 
 func000000000000000a:
-	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
+	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfle.vf	v0, v8, fa5
 	ret
 
 func0000000000000007:
-	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
+	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfne.vf	v0, v8, fa5
 	ret
@@ -37,9 +37,9 @@ func0000000000000002:
 	ret
 
 func0000000000000005:
-	lui	a0, 1044489
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
+	lui	a0, 1044489
 	slli	a0, a0, 38
 	fmv.d.x	fa5, a0
 	vsetvli	zero, zero, e64, m8, ta, ma
@@ -48,9 +48,9 @@ func0000000000000005:
 	ret
 
 func0000000000000003:
-	lui	a0, 4105
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
+	lui	a0, 4105
 	slli	a0, a0, 38
 	fmv.d.x	fa5, a0
 	vsetvli	zero, zero, e64, m8, ta, ma

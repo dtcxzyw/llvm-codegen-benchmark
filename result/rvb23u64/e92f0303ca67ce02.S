@@ -9,8 +9,8 @@ func0000000000000302:
 
 func0000000000000042:
 	andi	a1, a0, -3
-	addiw	a0, a0, -13
 	addiw	a1, a1, -12
+	addiw	a0, a0, -13
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

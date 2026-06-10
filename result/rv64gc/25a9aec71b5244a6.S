@@ -1,6 +1,6 @@
 func000000000000001c:
-	andi	a0, a0, 1
 	srli	a2, a2, 32
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, 8
 	sllw	a0, a1, a0
@@ -8,8 +8,8 @@ func000000000000001c:
 	ret
 
 func000000000000003c:
-	andi	a0, a0, 1
 	srli	a2, a2, 32
+	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, 8
 	sllw	a0, a1, a0

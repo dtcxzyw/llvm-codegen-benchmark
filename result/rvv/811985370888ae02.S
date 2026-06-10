@@ -4,9 +4,9 @@ func0000000000000000:
 	lui	a0, 983613
 	slli	a0, a0, 34
 	fmv.d.x	fa5, a0
+	vfmul.vf	v24, v24, fa5
 	lui	a0, 66109
 	slli	a0, a0, 34
-	vfmul.vf	v24, v24, fa5
 	fmv.d.x	fa5, a0
 	vfmacc.vf	v24, fa5, v16
 	vfsub.vv	v8, v8, v24

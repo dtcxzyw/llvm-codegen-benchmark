@@ -28,10 +28,10 @@ func0000000000000188:
 func00000000000001a4:
 	zext.b	a2, a2
 	or	a0, a0, a1
-	lui	a1, 507110
 	or	a0, a0, a2
-	lui	a2, 49134
+	lui	a1, 507110
 	addi	a1, a1, -1082
+	lui	a2, 49134
 	addw	a0, a0, a1
 	addi	a1, a2, -778
 	sltu	a0, a0, a1

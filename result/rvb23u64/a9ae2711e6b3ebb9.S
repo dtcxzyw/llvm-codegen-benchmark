@@ -4,25 +4,25 @@ func0000000000000005:
 	ret
 
 func000000000000000e:
-	sext.w	a1, a1
 	lui	a2, 1048575
-	slli	a1, a1, 12
+	sext.w	a1, a1
 	zext.w	a2, a2
+	slli	a1, a1, 12
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000000d:
-	slli	a1, a1, 56
 	slli	a0, a0, 8
+	slli	a1, a1, 56
 	srli	a0, a0, 8
 	or	a0, a0, a1
 	ret
 
 func000000000000000f:
-	slli	a1, a1, 40
 	li	a2, 255
 	slli	a2, a2, 40
+	slli	a1, a1, 40
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -33,9 +33,9 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	slli	a1, a1, 49
 	lui	a2, 1048560
 	srli	a2, a2, 15
+	slli	a1, a1, 49
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -47,8 +47,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	slli	a1, a1, 32
 	andi	a0, a0, -2048
+	slli	a1, a1, 32
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	ret

@@ -2,8 +2,8 @@ func00000000000000fc:
 	lui	a3, 1048561
 	sh3add	a2, a2, a3
 	srliw	a2, a2, 5
-	slli	a2, a2, 5
 	sh2add	a0, a1, a0
+	slli	a2, a2, 5
 	sh2add	a0, a2, a0
 	ret
 

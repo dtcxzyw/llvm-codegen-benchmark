@@ -1,8 +1,8 @@
 func0000000000000001:
+	lui	a3, 524288
 	add	a1, a1, a2
-	lui	a2, 524288
-	addi	a2, a2, -8
-	add	a1, a1, a2
+	addi	a3, a3, -8
+	add	a1, a1, a3
 	sh1add	a0, a1, a0
 	addiw	a0, a0, 2
 	ret

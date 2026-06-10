@@ -32,17 +32,17 @@ func0000000000000094:
 
 func0000000000000047:
 	fmv.w.x	fa5, zero
+	flt.s	a2, fa0, fa5
 	slt	a0, a1, a0
-	flt.s	a1, fa0, fa5
 	not	a0, a0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000045:
 	fmv.w.x	fa5, zero
+	flt.s	a2, fa0, fa5
 	sltu	a0, a1, a0
-	flt.s	a1, fa0, fa5
 	not	a0, a0
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

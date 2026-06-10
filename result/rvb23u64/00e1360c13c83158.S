@@ -9,8 +9,8 @@ func0000000000000006:
 
 func0000000000000007:
 	li	a3, 3
-	andi	a1, a1, 8
 	slli	a3, a3, 11
+	andi	a1, a1, 8
 	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

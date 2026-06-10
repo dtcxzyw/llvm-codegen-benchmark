@@ -10,8 +10,9 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fcvt.d.s	fa5, fa0
+	fmv.s	fa5, fa0
 	fmv.d.x	fa0, zero
+	fcvt.d.s	fa5, fa5
 	flt.d	a0, fa0, fa5
 	bnez	a0, .LBB1_2
 	fmv.d	fa0, fa5

@@ -1,9 +1,9 @@
 func0000000000000005:
+	lui	a0, 32768
+	addi	a0, a0, -8
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	lui	a0, 32768
 	vsrl.vi	v10, v12, 5
-	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v9
 	vadd.vv	v8, v8, v10

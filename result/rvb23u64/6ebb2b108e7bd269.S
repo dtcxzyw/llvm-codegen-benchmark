@@ -10,8 +10,8 @@ func0000000000000124:
 	ret
 
 func0000000000000024:
-	fmadd.s	fa4, fa0, fa1, fa2
 	lui	a0, 791040
+	fmadd.s	fa4, fa0, fa1, fa2
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB1_2
@@ -34,8 +34,8 @@ func0000000000000044:
 	ret
 
 func0000000000000042:
-	fmadd.s	fa4, fa0, fa1, fa2
 	lui	a0, 260943
+	fmadd.s	fa4, fa0, fa1, fa2
 	addi	a0, a0, 1195
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa4

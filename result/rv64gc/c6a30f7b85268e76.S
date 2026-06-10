@@ -214,9 +214,9 @@ func00000000000000b8:
 	ret
 
 func000000000000000a:
+	lui	a2, 1048332
 	sub	a0, a0, a1
-	lui	a1, 1048332
-	addi	a1, a1, -576
+	addi	a1, a2, -576
 	add	a0, a0, a1
 	sgtz	a0, a0
 	ret

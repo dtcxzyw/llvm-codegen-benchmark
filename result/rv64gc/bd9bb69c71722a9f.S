@@ -1,6 +1,6 @@
 func0000000000000602:
-	slli	a0, a0, 48
 	andi	a2, a2, 1792
+	slli	a0, a0, 48
 	srli	a0, a0, 48
 	addi	a2, a2, -1792
 	snez	a2, a2
@@ -11,12 +11,12 @@ func0000000000000602:
 	ret
 
 func0000000000000082:
-	slli	a0, a0, 48
 	lui	a3, 16
+	slli	a0, a0, 48
+	srli	a0, a0, 48
 	addi	a3, a3, -3
 	and	a2, a2, a3
 	lui	a3, 1
-	srli	a0, a0, 48
 	addi	a3, a3, -1020
 	addi	a0, a0, -1282
 	xor	a2, a2, a3

@@ -1,7 +1,7 @@
 func0000000000000000:
 	fli.s	fa5, 3.0
-	lui	a0, 263313
 	fneg.s	fa5, fa5
+	lui	a0, 263313
 	addi	a0, a0, -37
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5

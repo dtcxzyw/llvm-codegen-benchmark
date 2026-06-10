@@ -12,9 +12,9 @@ func0000000000000448:
 
 func0000000000000654:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v12, -1
 	vmsle.vi	v0, v10, 1
-	vmv.v.i	v10, -1
-	vmerge.vim	v10, v10, 11, v0
+	vmerge.vim	v10, v12, 11, v0
 	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 11
 	vmv.v.i	v8, 0

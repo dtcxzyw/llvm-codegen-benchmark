@@ -51,19 +51,19 @@ func0000000000000084:
 	ret
 
 func0000000000000104:
+	lui	a2, 8
 	zext.h	a0, a0
 	zext.h	a1, a1
-	lui	a2, 8
+	addi	a3, a2, 1
 	sltu	a1, a2, a1
-	addi	a2, a2, 1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	xor	a0, a0, a1
 	ret
 
 func0000000000000088:
+	lui	a2, 8
 	zext.h	a0, a0
 	zext.h	a1, a1
-	lui	a2, 8
 	addi	a3, a2, 1
 	sltu	a1, a1, a3
 	sltu	a0, a2, a0

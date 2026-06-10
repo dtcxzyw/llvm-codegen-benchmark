@@ -30,10 +30,10 @@ func0000000000000041:
 
 func0000000000000054:
 	lui	a1, 524032
+	lui	a2, 27136
 	and	a0, a0, a1
-	lui	a1, 27136
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func000000000000004c:
@@ -62,9 +62,9 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
+	lui	a1, 522240
 	slli	a0, a0, 33
 	srli	a0, a0, 33
-	lui	a1, 522240
 	sltu	a0, a1, a0
 	ret
 
@@ -86,8 +86,8 @@ func0000000000000078:
 	ret
 
 func000000000000000a:
-	bclri	a0, a0, 29
 	lui	a1, 65536
+	bclri	a0, a0, 29
 	bclri	a0, a0, 30
 	sext.w	a0, a0
 	addi	a1, a1, -1

@@ -20,10 +20,10 @@ func00000000000000f4:
 	ret
 
 func00000000000000d8:
-	addi	a1, a1, 143
 	lui	a2, 512
-	slli	a0, a0, 32
+	addi	a1, a1, 143
 	addi	a2, a2, -8
+	slli	a0, a0, 32
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	sltu	a0, a0, a1
@@ -31,8 +31,8 @@ func00000000000000d8:
 
 func0000000000000014:
 	addi	a1, a1, -1
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sltu	a0, a1, a0
@@ -61,11 +61,11 @@ func00000000000000d4:
 	ret
 
 func00000000000000c1:
-	addi	a1, a1, 47
 	li	a2, 1
-	slli	a0, a0, 32
+	addi	a1, a1, 47
 	slli	a2, a2, 33
 	addi	a2, a2, -8
+	slli	a0, a0, 32
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	xor	a0, a0, a1

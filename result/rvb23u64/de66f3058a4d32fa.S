@@ -3,11 +3,11 @@ func0000000000000004:
 	maxu	a1, a1, a2
 	li	a2, -7
 	srli	a2, a2, 1
+	li	a3, -1
 	sltu	a0, a0, a2
-	li	a2, -1
-	srli	a2, a2, 2
+	srli	a3, a3, 2
 	czero.eqz	a1, a1, a0
-	czero.nez	a0, a2, a0
+	czero.nez	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

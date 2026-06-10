@@ -14,9 +14,9 @@ func000000000000002c:
 
 func000000000000000c:
 	andi	a2, a2, 1
+	lui	a3, 699051
 	sub	a1, a1, a2
-	lui	a2, 699051
-	addi	a2, a2, -1365
+	addi	a2, a3, -1365
 	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
@@ -30,8 +30,8 @@ func000000000000002d:
 	andi	a2, a2, 1
 	sub	a1, a1, a2
 	lui	a2, 235184
-	addi	a2, a2, 1725
 	zext.w	a1, a1
+	addi	a2, a2, 1725
 	mul	a1, a1, a2
 	srli	a1, a1, 47
 	add	a0, a0, a1

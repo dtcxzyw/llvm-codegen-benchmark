@@ -1,6 +1,6 @@
 func0000000000000021:
-	zext.b	a2, a0
 	li	a3, 2
+	zext.b	a2, a0
 	mv	a0, a1
 	beq	a2, a3, .LBB0_3
 	li	a1, 8

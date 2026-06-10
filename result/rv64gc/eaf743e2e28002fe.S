@@ -1,20 +1,20 @@
 func0000000000000501:
-	sext.w	a0, a0
-	sext.w	a1, a1
 	slli	a2, a2, 48
+	sext.w	a0, a0
 	srli	a2, a2, 48
-	sltiu	a1, a1, 2
+	sext.w	a1, a1
 	xori	a2, a2, 18
-	xori	a1, a1, 1
+	sltiu	a1, a1, 2
 	or	a0, a0, a2
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000421:
+	slli	a2, a2, 48
 	sext.w	a0, a0
 	sext.w	a1, a1
-	slli	a2, a2, 48
 	srli	a2, a2, 48
 	xori	a1, a1, 215
 	xori	a0, a0, 215
@@ -25,12 +25,12 @@ func0000000000000421:
 	ret
 
 func0000000000000424:
-	sext.w	a0, a0
-	sext.w	a1, a1
 	slli	a2, a2, 48
+	sext.w	a1, a1
 	srli	a2, a2, 48
-	xori	a1, a1, 1
 	xori	a2, a2, 58
+	xori	a1, a1, 1
+	sext.w	a0, a0
 	or	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 8

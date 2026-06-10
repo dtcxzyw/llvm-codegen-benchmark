@@ -1,9 +1,9 @@
 func0000000000000004:
+	lui	a0, 219235
+	addi	a0, a0, 1981
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v12
-	lui	a0, 219235
 	vfmacc.vv	v12, v8, v8
-	addi	a0, a0, 1981
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v12, fa5
 	ret
@@ -25,9 +25,9 @@ func0000000000000008:
 	ret
 
 func0000000000000002:
+	lui	a0, 280080
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v12
-	lui	a0, 280080
 	vfmacc.vv	v12, v8, v8
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v12, fa5
@@ -50,21 +50,21 @@ func0000000000000018:
 	ret
 
 func0000000000000012:
+	lui	a0, 232731
+	addi	a0, a0, 1815
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v12
-	lui	a0, 232731
 	vfmacc.vv	v12, v8, v8
-	addi	a0, a0, 1815
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v12, fa5
 	ret
 
 func0000000000000014:
+	lui	a0, 232731
+	addi	a0, a0, 1815
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v12
-	lui	a0, 232731
 	vfmacc.vv	v12, v8, v8
-	addi	a0, a0, 1815
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v12, fa5
 	ret

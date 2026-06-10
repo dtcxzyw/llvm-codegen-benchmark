@@ -1,7 +1,7 @@
 func0000000000000004:
 	not	a2, a2
-	slli	a1, a1, 3
 	slli	a2, a2, 3
+	slli	a1, a1, 3
 	add	a0, a0, a1
 	ori	a1, a2, -16
 	add	a0, a0, a1

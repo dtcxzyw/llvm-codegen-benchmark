@@ -1,6 +1,6 @@
 func00000000000001c1:
-	addi	a0, a0, 1
 	lui	a1, 159384
+	addi	a0, a0, 1
 	addi	a1, a1, -1835
 	mul	a0, a0, a1
 	lui	a1, 1049
@@ -10,8 +10,8 @@ func00000000000001c1:
 	ret
 
 func00000000000001e1:
-	addi	a0, a0, 1
 	lui	a1, 233017
+	addi	a0, a0, 1
 	addi	a1, a1, -455
 	mul	a0, a0, a1
 	lui	a1, 58254
@@ -21,8 +21,8 @@ func00000000000001e1:
 	ret
 
 func00000000000000e1:
-	addi	a0, a0, 1
 	lui	a1, 838861
+	addi	a0, a0, 1
 	addi	a1, a1, -819
 	mul	a0, a0, a1
 	lui	a1, 104858
@@ -32,8 +32,8 @@ func00000000000000e1:
 	ret
 
 func0000000000000181:
-	addi	a0, a0, 1
 	lui	a1, 762601
+	addi	a0, a0, 1
 	addi	a1, a1, -1117
 	mul	a0, a0, a1
 	lui	a1, 47663

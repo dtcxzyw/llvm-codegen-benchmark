@@ -5,8 +5,8 @@ func00000000000000a4:
 	ret
 
 func0000000000000024:
-	sraiw	a0, a0, 16
 	lui	a1, 1048575
+	sraiw	a0, a0, 16
 	addi	a0, a0, -1938
 	addi	a1, a1, 221
 	sltu	a0, a0, a1

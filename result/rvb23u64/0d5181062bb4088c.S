@@ -1,6 +1,6 @@
 func0000000000000061:
-	sext.w	a0, a0
 	andi	a1, a1, 1
+	sext.w	a0, a0
 	lui	a3, 256
 	czero.nez	a1, a3, a1
 	seqz	a0, a0

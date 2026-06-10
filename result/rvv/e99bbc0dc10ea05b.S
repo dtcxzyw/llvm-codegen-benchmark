@@ -13,8 +13,8 @@ func0000000000000003:
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
 	vmfge.vf	v7, v24, fa5
-	vmnot.m	v0, v7
 	vfneg.v	v24, v16
+	vmnot.m	v0, v7
 	vmerge.vvm	v16, v24, v16, v0
 	vfdiv.vv	v8, v8, v16
 	ret

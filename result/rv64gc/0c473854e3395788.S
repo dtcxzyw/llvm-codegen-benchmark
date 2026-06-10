@@ -1,7 +1,7 @@
 func0000000000000014:
+	fcvt.l.d	a2, fa0, rtz
 	mv	a1, a0
-	fcvt.l.d	a0, fa0, rtz
-	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 1
 	bge	a0, a1, .LBB0_3
 	lui	a1, 524288

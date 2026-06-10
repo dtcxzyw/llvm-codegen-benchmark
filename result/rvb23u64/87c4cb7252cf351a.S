@@ -1,8 +1,8 @@
 func0000000000000014:
 	lui	a3, 8
+	bseti	a4, zero, 31
 	add	a2, a2, a3
-	bseti	a3, zero, 31
-	add	a1, a1, a3
+	add	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

@@ -57,12 +57,12 @@ func0000000000000214:
 
 func0000000000000208:
 	add	a1, a1, a0
-	neg	a0, a0
 	addi	a1, a1, -1
+	neg	a0, a0
+	li	a2, -17
 	and	a0, a0, a1
-	li	a1, -17
-	srli	a1, a1, 2
-	sltu	a0, a1, a0
+	srli	a2, a2, 2
+	sltu	a0, a2, a0
 	ret
 
 func00000000000002f4:
@@ -75,32 +75,32 @@ func00000000000002f4:
 
 func00000000000002a4:
 	add	a1, a1, a0
-	neg	a0, a0
 	addi	a1, a1, -1
+	neg	a0, a0
+	lui	a2, 1
 	and	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func00000000000002a8:
 	add	a1, a1, a0
-	neg	a0, a0
 	addi	a1, a1, -1
+	neg	a0, a0
+	li	a2, 7
 	and	a0, a0, a1
-	li	a1, 7
-	slli	a1, a1, 60
-	sltu	a0, a1, a0
+	slli	a2, a2, 60
+	sltu	a0, a2, a0
 	ret
 
 func00000000000002b4:
 	add	a1, a1, a0
-	neg	a0, a0
 	addi	a1, a1, -1
+	neg	a0, a0
+	lui	a2, 1
 	and	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000004:

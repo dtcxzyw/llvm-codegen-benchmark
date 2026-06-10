@@ -20,9 +20,9 @@ func000000000000002c:
 	ret
 
 func0000000000000024:
+	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vv	v12, v10, v8
-	li	a0, 31
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -42,9 +42,9 @@ func00000000000000cc:
 	ret
 
 func0000000000000124:
+	bseti	a0, zero, 61
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vv	v12, v8, v10
-	bseti	a0, zero, 61
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -113,10 +113,10 @@ func000000000000016a:
 	ret
 
 func0000000000000084:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v12, v10, v8
 	lui	a0, 1
 	addi	a0, a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vv	v12, v10, v8
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

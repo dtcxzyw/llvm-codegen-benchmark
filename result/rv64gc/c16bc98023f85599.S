@@ -9,9 +9,9 @@ func00000000000007e4:
 
 func00000000000007e1:
 	slli	a2, a2, 32
-	slli	a1, a1, 2
 	srli	a2, a2, 30
 	add	a2, a2, a0
+	slli	a1, a1, 2
 	addi	a2, a2, 4
 	add	a0, a0, a1
 	xor	a0, a0, a2

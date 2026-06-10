@@ -1,9 +1,9 @@
 func0000000000000c2c:
-	sext.w	a3, a0
-	sh2add.uw	a0, a0, a2
-	xor	a0, a0, a1
-	seqz	a0, a0
-	sltiu	a1, a3, -1
+	sh2add.uw	a2, a0, a2
+	sext.w	a0, a0
+	xor	a1, a1, a2
+	seqz	a1, a1
+	sltiu	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
@@ -25,11 +25,11 @@ func0000000000000c88:
 	ret
 
 func0000000000000c24:
-	sext.w	a3, a0
-	sh2add.uw	a0, a0, a2
-	xor	a0, a0, a1
-	seqz	a0, a0
-	sltiu	a1, a3, -2
+	sh2add.uw	a2, a0, a2
+	sext.w	a0, a0
+	xor	a1, a1, a2
+	seqz	a1, a1
+	sltiu	a0, a0, -2
 	and	a0, a0, a1
 	ret
 

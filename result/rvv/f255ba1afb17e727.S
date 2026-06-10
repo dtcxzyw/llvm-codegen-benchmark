@@ -1,7 +1,7 @@
 func000000000000005e:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, 32
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -9,9 +9,9 @@ func000000000000005e:
 	ret
 
 func000000000000001e:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, 32
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
@@ -19,9 +19,9 @@ func000000000000001e:
 	ret
 
 func000000000000002e:
+	li	a0, 33
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	li	a0, 33
 	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1

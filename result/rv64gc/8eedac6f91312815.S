@@ -41,18 +41,18 @@ func0000000000000078:
 	sext.w	a2, a2
 	mul	a1, a1, a2
 	li	a2, -1
-	add	a0, a0, a1
 	srli	a2, a2, 32
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000050:
 	sext.w	a2, a2
 	mul	a1, a1, a2
 	li	a2, -1
-	add	a0, a0, a1
 	srli	a2, a2, 32
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000070:
@@ -60,18 +60,18 @@ func0000000000000070:
 	mul	a1, a1, a2
 	li	a2, 1
 	slli	a2, a2, 32
-	add	a0, a0, a1
 	addi	a2, a2, -2
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000057:
 	sext.w	a2, a2
 	mul	a1, a1, a2
 	li	a2, -1
-	add	a0, a0, a1
 	srli	a2, a2, 32
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000055:

@@ -15,8 +15,8 @@ func000000000000007b:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv1r.v	v12, v8
 	vsll.vi	v8, v10, 2
-	bseti	a0, zero, 35
 	vadd.vi	v8, v8, 11
+	bseti	a0, zero, 35
 	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -17,8 +17,8 @@ func00000000000001b1:
 func00000000000000b0:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	li	a0, 16
 	vmseq.vv	v0, v10, v12
+	li	a0, 16
 	vadd.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

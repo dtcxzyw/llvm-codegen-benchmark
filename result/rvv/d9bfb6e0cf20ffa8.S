@@ -29,8 +29,8 @@ func00000000000001aa:
 func000000000000008a:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vv	v8, v8, v10
-	lui	a0, 2
 	vrsub.vi	v8, v8, 1, v0.t
+	lui	a0, 2
 	addi	a0, a0, 1807
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -38,8 +38,8 @@ func000000000000008a:
 func000000000000000a:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vv	v8, v8, v10
-	lui	a0, 524288
 	vrsub.vi	v8, v8, 0, v0.t
+	lui	a0, 524288
 	addi	a0, a0, -3
 	vmsgt.vx	v0, v8, a0
 	ret

@@ -3,18 +3,18 @@ func0000000000000002:
 	ret
 
 func0000000000000008:
+	lui	a1, 321255
+	addi	a1, a1, -1240
 	fcvt.s.w	fa5, a0
-	lui	a0, 321255
-	addi	a0, a0, -1240
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	feq.s	a0, fa5, fa4
 	ret
 
 func0000000000000004:
+	lui	a1, 324432
+	addi	a1, a1, 1267
 	fcvt.s.w	fa5, a0
-	lui	a0, 324432
-	addi	a0, a0, 1267
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	flt.s	a0, fa4, fa5
 	ret
 

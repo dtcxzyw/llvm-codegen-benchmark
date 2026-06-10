@@ -15,8 +15,8 @@ func00000000000000c0:
 
 func00000000000000a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v0, v8, 0
 	vmv.v.i	v14, -1
+	vmsgt.vi	v0, v8, 0
 	vmerge.vvm	v12, v14, v12, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12

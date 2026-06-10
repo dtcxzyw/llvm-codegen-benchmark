@@ -11,13 +11,13 @@ func000000000000001f:
 func0000000000000010:
 	beqz	a2, .LBB1_2
 	li	a2, 1
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB1_2:
 	li	a2, 3
+	add	a1, a1, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000040:
@@ -35,12 +35,11 @@ func0000000000000017:
 	addi	a0, a0, 365
 	ret
 
+.LCPI4_0:
+	.quad	1553255926290448384
 func0000000000000045:
-	lui	a3, 88292
-	addi	a3, a3, 1545
-	slli	a3, a3, 12
-	addi	a3, a3, 317
-	slli	a3, a3, 20
+	lui	a3, %hi(.LCPI4_0)
+	ld	a3, %lo(.LCPI4_0)(a3)
 	sltu	a2, a2, a3
 	not	a2, a2
 	add	a0, a0, a1

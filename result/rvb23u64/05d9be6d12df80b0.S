@@ -22,8 +22,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 2
 	andi	a0, a0, -2045
+	slli	a1, a1, 2
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	ret

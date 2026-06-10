@@ -36,10 +36,10 @@ func0000000000000046:
 	ret
 
 func0000000000000068:
-	sext.w	a0, a0
-	addi	a1, a1, 5
 	lui	a2, 524288
+	sext.w	a0, a0
 	addiw	a2, a2, -17
+	addi	a1, a1, 5
 	sltu	a0, a2, a0
 	czero.nez	a0, a1, a0
 	ret

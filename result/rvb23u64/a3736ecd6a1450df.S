@@ -7,10 +7,10 @@ func0000000000000061:
 	ret
 
 func0000000000000001:
-	sext.w	a2, a0
-	lui	a3, 8
-	addi	a4, a3, 1301
-	addi	a3, a3, 1299
+	lui	a2, 8
+	sext.w	a3, a0
+	addi	a4, a2, 1301
+	addi	a2, a2, 1299
 	addw	a1, a1, a4
 	xor	a2, a2, a3
 	czero.nez	a1, a1, a2
@@ -78,22 +78,22 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	sext.w	a2, a0
-	lui	a3, 524288
-	addi	a3, a3, 2
-	sltiu	a2, a2, 3
-	addw	a1, a1, a3
+	lui	a2, 524288
+	sext.w	a3, a0
+	addi	a2, a2, 2
+	addw	a1, a1, a2
+	sltiu	a2, a3, 3
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000064:
-	sext.w	a2, a0
-	lui	a3, 1047844
-	addi	a3, a3, -1731
-	sltiu	a2, a2, 3
-	addw	a1, a1, a3
+	lui	a2, 1047844
+	sext.w	a3, a0
+	addi	a2, a2, -1731
+	addw	a1, a1, a2
+	sltiu	a2, a3, 3
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

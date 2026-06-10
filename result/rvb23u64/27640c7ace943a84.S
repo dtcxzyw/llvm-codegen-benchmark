@@ -8,11 +8,11 @@ func0000000000000024:
 	ret
 
 func0000000000000004:
-	andi	a1, a1, 1
 	lui	a3, 1032192
 	addi	a4, a3, -1
-	addi	a3, a3, 511
 	addw	a2, a2, a4
+	addi	a3, a3, 511
+	andi	a1, a1, 1
 	sltu	a2, a2, a3
 	czero.nez	a1, a0, a1
 	and	a0, a0, a2

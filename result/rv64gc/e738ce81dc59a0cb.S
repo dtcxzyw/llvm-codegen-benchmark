@@ -35,10 +35,10 @@ func0000000000000000:
 func00000000000000aa:
 	addi	a2, a2, 15
 	andi	a2, a2, -16
-	add	a1, a1, a2
-	slli	a2, a0, 3
+	slli	a3, a0, 3
 	slli	a0, a0, 5
-	add	a0, a0, a2
+	add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, -40
 	ret
@@ -55,8 +55,8 @@ func0000000000000043:
 func00000000000000ff:
 	addi	a2, a2, 387
 	lui	a3, 1048448
-	slli	a0, a0, 4
 	srli	a3, a3, 15
+	slli	a0, a0, 4
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

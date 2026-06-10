@@ -1,8 +1,8 @@
 func0000000000000020:
 	slli	a1, a1, 16
+	lui	a2, 269413
 	or	a0, a0, a1
-	lui	a1, 269413
-	addi	a1, a1, -403
+	addi	a1, a2, -403
 	mul	a0, a0, a1
 	lui	a1, 3
 	addi	a1, a1, 57
@@ -20,9 +20,9 @@ func000000000000007f:
 
 func0000000000000010:
 	slli	a1, a1, 8
+	lui	a2, 11921
 	or	a0, a0, a1
-	lui	a1, 11921
-	addi	a1, a1, -291
+	addi	a1, a2, -291
 	mul	a0, a0, a1
 	addiw	a0, a0, 1
 	ret

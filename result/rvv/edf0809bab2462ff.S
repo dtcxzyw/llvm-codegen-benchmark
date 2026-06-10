@@ -9,9 +9,9 @@ func0000000000000010:
 func0000000000000020:
 	li	a0, -1
 	srli	a1, a0, 3
-	slli	a0, a0, 61
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vx	v12, v12, a1
+	slli	a0, a0, 61
 	vmsltu.vx	v0, v12, a0
 	vmerge.vim	v10, v10, -1, v0
 	vadd.vv	v8, v10, v8

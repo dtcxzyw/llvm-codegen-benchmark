@@ -4,9 +4,9 @@ func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	lui	a0, 15
-	vmor.mm	v8, v0, v8
 	addi	a0, a0, 2047
 	vmsltu.vx	v9, v10, a0
+	vmor.mm	v8, v0, v8
 	vmand.mm	v8, v8, v9
 	vmandn.mm	v9, v0, v9
 	vmor.mm	v0, v8, v9
@@ -17,8 +17,8 @@ func0000000000000024:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	li	a0, 27
-	vmor.mm	v8, v0, v8
 	vmsltu.vx	v9, v10, a0
+	vmor.mm	v8, v0, v8
 	vmand.mm	v8, v8, v9
 	vmandn.mm	v9, v0, v9
 	vmor.mm	v0, v8, v9

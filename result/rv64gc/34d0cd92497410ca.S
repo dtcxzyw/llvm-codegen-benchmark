@@ -15,8 +15,8 @@ func0000000000000021:
 
 func000000000000018c:
 	andi	a2, a2, 31
-	xor	a0, a0, a1
 	addi	a2, a2, -27
+	xor	a0, a0, a1
 	snez	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

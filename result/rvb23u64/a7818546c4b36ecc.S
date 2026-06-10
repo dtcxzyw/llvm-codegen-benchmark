@@ -5,8 +5,8 @@ func0000000000000000:
 	slli	a0, a0, 37
 	fmv.d.x	fa5, a0
 	lui	a0, 8213
-	slli	a0, a0, 37
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 37
 	fmv.d.x	fa4, a0
 	fdiv.d	fa5, fa5, fa4
 	lui	a0, %hi(.LCPI0_0)

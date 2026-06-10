@@ -1,7 +1,7 @@
 func00000000000000e6:
 	feq.d	a1, fa0, fa1
-	xori	a1, a1, 1
 	srli	a0, a0, 63
+	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
@@ -27,9 +27,9 @@ func0000000000000148:
 	ret
 
 func0000000000000082:
+	flt.d	a1, fa0, fa1
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
-	flt.d	a1, fa0, fa1
 	and	a0, a0, a1
 	ret
 
@@ -40,8 +40,8 @@ func000000000000008c:
 	ret
 
 func0000000000000048:
-	sltiu	a0, a0, -2
 	feq.d	a1, fa0, fa1
+	sltiu	a0, a0, -2
 	and	a0, a0, a1
 	ret
 
@@ -54,9 +54,9 @@ func0000000000000104:
 	ret
 
 func00000000000000a8:
+	feq.d	a1, fa0, fa1
 	srli	a0, a0, 63
 	xori	a0, a0, 1
-	feq.d	a1, fa0, fa1
 	and	a0, a0, a1
 	ret
 

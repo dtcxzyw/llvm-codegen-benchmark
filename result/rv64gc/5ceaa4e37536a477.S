@@ -1,14 +1,14 @@
 func0000000000000002:
 	li	a0, 1023
-	li	a1, -513
 	slli	a0, a0, 52
-	fmv.d.x	fa5, a0
-	flt.d	a0, fa0, fa5
+	fmv.d.x	fa4, a0
+	fmv.d	fa5, fa0
+	flt.d	a0, fa0, fa4
+	li	a1, -513
 	slli	a1, a1, 53
-	fmv.d.x	fa5, a1
+	fmv.d.x	fa0, a1
 	bnez	a0, .LBB0_2
-	fmul.d	fa5, fa0, fa5
+	fmul.d	fa0, fa5, fa0
 .LBB0_2:
-	fmv.d	fa0, fa5
 	ret
 

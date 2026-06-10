@@ -24,10 +24,10 @@ func0000000000000181:
 	ret
 
 func0000000000000028:
-	sraiw	a1, a1, 5
 	sext.w	a0, a0
-	seqz	a1, a1
+	sraiw	a1, a1, 5
 	sltiu	a0, a0, 33
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

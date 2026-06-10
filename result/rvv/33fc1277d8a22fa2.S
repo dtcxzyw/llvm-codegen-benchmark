@@ -3,8 +3,8 @@ func000000000000001f:
 	vmv1r.v	v14, v8
 	li	a0, 32
 	vsrl.vx	v8, v12, a0
-	li	a0, -1
 	vadd.vv	v8, v8, v10
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -16,8 +16,8 @@ func000000000000001b:
 	vmv1r.v	v14, v8
 	li	a0, 32
 	vsrl.vx	v8, v12, a0
-	li	a0, -1
 	vadd.vv	v8, v8, v10
+	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

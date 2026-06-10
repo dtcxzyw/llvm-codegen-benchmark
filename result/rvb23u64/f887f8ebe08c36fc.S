@@ -6,9 +6,9 @@ func0000000000000181:
 
 func000000000000018c:
 	bexti	a1, a1, 2
+	lui	a2, 8192
 	czero.eqz	a0, a1, a0
-	lui	a1, 8192
-	addi	a1, a1, -493
+	addi	a1, a2, -493
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 513
 	ret

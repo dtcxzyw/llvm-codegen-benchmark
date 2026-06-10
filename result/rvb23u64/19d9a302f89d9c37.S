@@ -30,18 +30,18 @@ func00000000000000ee:
 
 func00000000000000ea:
 	slli	a2, a2, 8
+	lui	a3, 1046528
 	or	a1, a1, a2
-	lui	a2, 1046528
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	srliw	a0, a0, 24
 	ret
 
 func00000000000000aa:
 	slli	a2, a2, 24
+	lui	a3, 1046528
 	or	a1, a1, a2
-	lui	a2, 1046528
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	srliw	a0, a0, 24
 	ret

@@ -11,10 +11,10 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	li	a2, 15
-	xori	a1, a1, 1
+	sext.w	a1, a1
 	slli	a2, a2, 32
+	xori	a1, a1, 1
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	snez	a0, a0
@@ -52,10 +52,10 @@ func0000000000000024:
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	lui	a2, 16
-	snez	a1, a1
+	sext.w	a1, a1
 	addi	a2, a2, -1
+	snez	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	neg	a0, a0
@@ -71,8 +71,8 @@ func0000000000000084:
 	ret
 
 func000000000000018c:
-	snez	a1, a1
 	addiw	a0, a0, -2
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	bnez	a0, .LBB7_2

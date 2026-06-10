@@ -15,9 +15,9 @@ func000000000000001e:
 
 func0000000000000006:
 	li	a2, 32
+	li	a3, 8
 	sub	a2, a2, a1
-	li	a1, 8
-	sub	a1, a1, a0
-	minu	a0, a1, a2
+	sub	a3, a3, a0
+	minu	a0, a3, a2
 	ret
 

@@ -21,10 +21,10 @@ func000000000000002c:
 	ret
 
 func0000000000000081:
-	andi	a1, a1, 7
 	lui	a2, 262144
-	seqz	a1, a1
+	andi	a1, a1, 7
 	addi	a2, a2, -55
+	seqz	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

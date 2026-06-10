@@ -13,8 +13,8 @@ func0000000000000202:
 	sext.w	a4, a0
 	sext.w	a2, a2
 	subw	a0, a0, a1
-	sltu	a0, a2, a0
 	xor	a3, a3, a4
+	sltu	a0, a2, a0
 	seqz	a1, a3
 	or	a0, a0, a1
 	ret

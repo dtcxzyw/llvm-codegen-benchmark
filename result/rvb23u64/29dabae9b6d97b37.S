@@ -1,7 +1,7 @@
 func0000000000000007:
 	sext.w	a2, a2
-	andi	a1, a1, 192
 	snez	a2, a2
+	andi	a1, a1, 192
 	slli	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -16,10 +16,10 @@ func000000000000002b:
 	ret
 
 func0000000000000004:
-	sext.w	a2, a2
 	lui	a3, 851968
 	andn	a1, a1, a3
 	lui	a3, 135168
+	sext.w	a2, a2
 	addi	a3, a3, -1026
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a1

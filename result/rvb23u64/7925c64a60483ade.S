@@ -7,9 +7,9 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
+	lui	a3, 1047560
 	or	a1, a1, a2
-	lui	a2, 1047560
-	addi	a2, a2, -512
+	addi	a2, a3, -512
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ori	a0, a0, 5
@@ -24,9 +24,9 @@ func0000000000000006:
 	ret
 
 func0000000000000002:
+	lui	a3, 135168
 	or	a1, a1, a2
-	lui	a2, 135168
-	addi	a2, a2, -2048
+	addi	a2, a3, -2048
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ori	a0, a0, 176
@@ -36,9 +36,9 @@ func0000000000000002:
 func0000000000000001:
 	or	a1, a1, a2
 	lui	a2, 520191
+	lui	a3, 524288
 	and	a1, a1, a2
-	lui	a2, 524288
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

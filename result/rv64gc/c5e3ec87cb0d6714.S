@@ -1,10 +1,10 @@
 func0000000000000000:
-	fcvt.d.wu	fa5, a0
-	li	a0, 1055
-	slli	a0, a0, 52
-	fmv.d.x	fa4, a0
-	fmul.d	fa4, fa0, fa4
-	fsub.d	fa0, fa4, fa5
+	li	a1, 1055
+	slli	a1, a1, 52
+	fmv.d.x	fa5, a1
+	fmul.d	fa5, fa0, fa5
+	fcvt.d.wu	fa4, a0
+	fsub.d	fa0, fa5, fa4
 	ret
 
 .LCPI1_0:
@@ -12,8 +12,8 @@ func0000000000000000:
 func0000000000000001:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	fcvt.d.wu	fa4, a0
 	fmul.d	fa5, fa0, fa5
+	fcvt.d.wu	fa4, a0
 	fsub.d	fa0, fa5, fa4
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000092:
-	fmadd.s	fa5, fa0, fa1, fa2
 	lui	a0, 784384
+	fmadd.s	fa5, fa0, fa1, fa2
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB0_3

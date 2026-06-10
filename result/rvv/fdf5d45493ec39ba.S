@@ -12,8 +12,8 @@ func000000000000003f:
 func0000000000000004:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 13
-	vadd.vi	v8, v8, -9
 	vand.vi	v10, v10, 15
+	vadd.vi	v8, v8, -9
 	li	a0, -3
 	vmacc.vx	v8, a0, v10
 	ret

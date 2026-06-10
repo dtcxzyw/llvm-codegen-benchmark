@@ -1,6 +1,6 @@
 func000000000000000a:
-	sext.w	a0, a0
 	slli	a2, a2, 2
+	sext.w	a0, a0
 	add	a1, a1, a2
 	sgtz	a0, a0
 	addi	a1, a1, -4
@@ -21,10 +21,10 @@ func0000000000000061:
 func00000000000001e1:
 	slli	a3, a2, 5
 	slli	a2, a2, 7
-	addiw	a0, a0, -40
 	add	a2, a2, a3
-	snez	a0, a0
+	addiw	a0, a0, -40
 	add	a1, a1, a2
+	snez	a0, a0
 	addi	a1, a1, 56
 	addi	a0, a0, -1
 	and	a0, a0, a1
@@ -33,10 +33,10 @@ func00000000000001e1:
 func0000000000000161:
 	slli	a3, a2, 5
 	slli	a2, a2, 7
-	addiw	a0, a0, -2
 	add	a2, a2, a3
-	snez	a0, a0
+	addiw	a0, a0, -2
 	add	a1, a1, a2
+	snez	a0, a0
 	addi	a1, a1, 56
 	addi	a0, a0, -1
 	and	a0, a0, a1

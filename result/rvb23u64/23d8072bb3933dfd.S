@@ -30,10 +30,10 @@ func0000000000000013:
 	ret
 
 func0000000000000010:
-	slli	a1, a1, 16
 	sext.w	a0, a0
-	srli	a1, a1, 16
+	slli	a1, a1, 16
 	sh1add	a0, a0, a0
+	srli	a1, a1, 16
 	sh2add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

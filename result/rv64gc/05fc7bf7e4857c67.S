@@ -1,15 +1,15 @@
 func0000000000000003:
-	srliw	a0, a0, 5
 	lui	a1, 42950
+	srliw	a0, a0, 5
 	addi	a1, a1, -1339
 	mul	a0, a0, a1
 	srli	a0, a0, 39
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 32
 	lui	a1, 202135
 	addi	a1, a1, 543
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 36
@@ -34,8 +34,8 @@ func000000000000001a:
 	ret
 
 func0000000000000012:
-	srliw	a0, a0, 5
 	lui	a1, 42950
+	srliw	a0, a0, 5
 	addi	a1, a1, -1339
 	mul	a0, a0, a1
 	srli	a0, a0, 39

@@ -33,9 +33,9 @@ func00000000000001a0:
 	addi	a1, a1, -512
 	sh1add	a1, a1, a1
 	slli	a1, a1, 2
+	lui	a2, 4
 	add.uw	a0, a1, a0
-	lui	a1, 4
-	addi	a1, a1, 184
+	addi	a1, a2, 184
 	add	a0, a0, a1
 	ret
 

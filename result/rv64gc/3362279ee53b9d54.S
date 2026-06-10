@@ -16,8 +16,8 @@ func0000000000000378:
 
 func0000000000000084:
 	mul	a1, a1, a2
-	lui	a2, 64
 	srli	a1, a1, 3
+	lui	a2, 64
 	add	a0, a0, a1
 	addi	a2, a2, -7
 	sltu	a0, a0, a2

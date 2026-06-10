@@ -20,16 +20,16 @@ func0000000000000006:
 	ret
 
 func0000000000000324:
+	zext.b	a1, a1
 	sub	a0, a0, a2
 	addiw	a0, a0, -3
-	zext.b	a1, a1
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000004:
+	zext.b	a1, a1
 	sub	a0, a0, a2
 	addiw	a0, a0, -2
-	zext.b	a1, a1
 	sltu	a0, a0, a1
 	ret
 
@@ -41,9 +41,9 @@ func0000000000000204:
 	ret
 
 func0000000000000128:
+	zext.b	a1, a1
 	sub	a0, a0, a2
 	addiw	a0, a0, 4
-	zext.b	a1, a1
 	sltu	a0, a1, a0
 	ret
 

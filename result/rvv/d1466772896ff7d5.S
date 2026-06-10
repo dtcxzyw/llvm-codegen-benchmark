@@ -26,8 +26,8 @@ func000000000000002b:
 	addi	a0, a0, 1359
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	lui	a0, 367720
 	vsrl.vi	v10, v10, 2
+	lui	a0, 367720
 	addi	a0, a0, -807
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 7
@@ -39,8 +39,8 @@ func0000000000000023:
 	addi	a0, a0, 1359
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	lui	a0, 367720
 	vsrl.vi	v10, v10, 2
+	lui	a0, 367720
 	addi	a0, a0, -807
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 7

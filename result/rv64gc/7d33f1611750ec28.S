@@ -8,8 +8,8 @@ func0000000000000003:
 
 func000000000000000f:
 	slli	a2, a2, 32
-	srli	a1, a1, 3
 	srli	a2, a2, 29
+	srli	a1, a1, 3
 	add	a0, a0, a2
 	andi	a1, a1, -8
 	add	a0, a0, a1
@@ -25,8 +25,8 @@ func000000000000003f:
 
 func000000000000002f:
 	sext.w	a2, a2
-	srli	a1, a1, 29
 	slli	a2, a2, 3
+	srli	a1, a1, 29
 	add	a0, a0, a2
 	andi	a1, a1, -8
 	add	a0, a0, a1

@@ -1,8 +1,8 @@
 func000000000000002a:
-	sext.w	a2, a1
-	lui	a3, 16
-	addi	a3, a3, -1
-	slt	a2, a3, a2
+	lui	a2, 16
+	sext.w	a3, a1
+	addi	a2, a2, -1
+	slt	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1

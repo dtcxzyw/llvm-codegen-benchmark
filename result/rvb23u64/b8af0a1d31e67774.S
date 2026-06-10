@@ -28,9 +28,9 @@ func0000000000000019:
 
 func0000000000000030:
 	slli	a1, a1, 2
+	li	a2, 4
 	sub	a0, a1, a0
-	li	a1, 4
-	bseti	a1, a1, 58
+	bseti	a1, a2, 58
 	add	a0, a0, a1
 	ret
 

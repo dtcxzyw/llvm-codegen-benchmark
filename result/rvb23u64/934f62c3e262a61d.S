@@ -10,9 +10,9 @@ func0000000000000011:
 func0000000000000019:
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	bseti	a3, zero, 63
 	slt	a1, a1, a2
-	bseti	a2, zero, 63
-	xnor	a0, a0, a2
+	xnor	a0, a0, a3
 	czero.eqz	a0, a0, a1
 	addi	a0, a0, 1
 	ret
@@ -22,9 +22,9 @@ func0000000000000019:
 func000000000000001b:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
+	bseti	a3, zero, 63
 	slt	a1, a1, a2
-	bseti	a2, zero, 63
-	xnor	a0, a0, a2
+	xnor	a0, a0, a3
 	czero.eqz	a0, a0, a1
 	ret
 

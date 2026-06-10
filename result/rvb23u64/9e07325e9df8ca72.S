@@ -1,9 +1,9 @@
 func0000000000000003:
-	sext.w	a0, a0
 	li	a1, 256
+	sext.w	a0, a0
+	lui	a2, 139808
 	czero.eqz	a0, a1, a0
-	lui	a1, 139808
-	addi	a1, a1, 65
+	addi	a1, a2, 65
 	or	a0, a0, a1
 	ret
 

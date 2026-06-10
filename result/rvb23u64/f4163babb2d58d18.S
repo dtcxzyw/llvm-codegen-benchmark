@@ -36,9 +36,9 @@ func0000000000000029:
 	sext.w	a2, a2
 	lui	a3, 2048
 	addi	a3, a3, -2
+	lui	a4, 524288
 	slt	a2, a3, a2
-	lui	a3, 524288
-	addi	a3, a3, -256
+	addi	a3, a4, -256
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
@@ -55,8 +55,8 @@ func000000000000002a:
 	ret
 
 func000000000000002b:
-	sext.w	a2, a2
 	lui	a3, 8
+	sext.w	a2, a2
 	addi	a3, a3, -1
 	slt	a2, a3, a2
 	czero.nez	a1, a1, a2

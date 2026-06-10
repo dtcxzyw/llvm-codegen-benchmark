@@ -18,12 +18,12 @@ func00000000000000a8:
 	ret
 
 func00000000000000a4:
+	li	a2, 1
 	slli	a1, a1, 32
+	slli	a2, a2, 32
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -11
-	sltu	a0, a0, a1
+	addi	a2, a2, -11
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000081:
@@ -57,18 +57,18 @@ func00000000000000ac:
 func00000000000000f4:
 	slli	a1, a1, 32
 	srli	a1, a1, 3
+	lui	a2, 244141
 	or	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	sltu	a0, a0, a1
 	ret
 
 func00000000000000d4:
 	slli	a1, a1, 32
 	srli	a1, a1, 3
+	lui	a2, 244141
 	or	a0, a0, a1
-	lui	a1, 244141
-	addi	a1, a1, -1536
+	addi	a1, a2, -1536
 	sltu	a0, a0, a1
 	ret
 

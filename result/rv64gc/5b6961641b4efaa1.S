@@ -10,8 +10,8 @@ func0000000000000305:
 func0000000000000f04:
 	sext.w	a1, a1
 	addi	a2, a2, 8
-	sltu	a0, a0, a2
 	sltiu	a1, a1, 12
+	sltu	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -19,8 +19,8 @@ func0000000000000f04:
 func0000000000000d04:
 	sext.w	a1, a1
 	addi	a2, a2, 8
-	sltu	a0, a0, a2
 	sltiu	a1, a1, 12
+	sltu	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

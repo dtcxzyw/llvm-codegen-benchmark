@@ -12,8 +12,8 @@ func00000000000000c8:
 	sext.w	a1, a1
 	srli	a2, a0, 16
 	srliw	a0, a0, 16
-	slt	a0, a0, a1
 	slli	a2, a2, 48
+	slt	a0, a0, a1
 	snez	a1, a2
 	and	a0, a0, a1
 	ret

@@ -9,15 +9,15 @@ func0000000000000007:
 
 func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vrsub.vi	v10, v8, 8
-	vmv.v.i	v11, 0
-	vwsub.vv	v8, v11, v10
+	vmv.v.i	v10, 0
+	vrsub.vi	v11, v8, 8
+	vwsub.vv	v8, v10, v11
 	ret
 
 func0000000000000005:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vrsub.vi	v10, v8, 3
-	vmv.v.i	v11, 0
-	vwsub.vv	v8, v11, v10
+	vmv.v.i	v10, 0
+	vrsub.vi	v11, v8, 3
+	vwsub.vv	v8, v10, v11
 	ret
 

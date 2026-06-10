@@ -145,8 +145,8 @@ func0000000000000081:
 func00000000000001f8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	li	a0, 3
 	vadd.vi	v8, v8, -4
+	li	a0, 3
 	slli	a0, a0, 10
 	vmsgtu.vx	v0, v8, a0
 	ret

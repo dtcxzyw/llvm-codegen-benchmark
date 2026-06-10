@@ -1,9 +1,9 @@
 func0000000000000804:
-	sub	a3, a0, a1
-	lui	a4, 1
-	addi	a4, a4, 904
-	sub	a4, a4, a2
-	minu	a2, a4, a3
+	lui	a3, 1
+	addi	a3, a3, 904
+	sub	a4, a0, a1
+	sub	a3, a3, a2
+	minu	a2, a3, a4
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -18,19 +18,19 @@ func0000000000000c84:
 	ret
 
 func0000000000000304:
-	sub	a3, a0, a1
-	lui	a4, 1
-	sub	a4, a4, a2
-	minu	a2, a4, a3
+	lui	a3, 1
+	sub	a4, a0, a1
+	sub	a3, a3, a2
+	minu	a2, a3, a4
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000b04:
-	sub	a3, a0, a1
-	li	a4, 64
-	sub	a4, a4, a2
-	minu	a2, a4, a3
+	li	a3, 64
+	sub	a4, a0, a1
+	sub	a3, a3, a2
+	minu	a2, a3, a4
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

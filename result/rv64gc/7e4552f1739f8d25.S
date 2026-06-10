@@ -12,8 +12,8 @@ func000000000000003c:
 	ret
 
 func000000000000001f:
-	slli	a1, a1, 2
 	slli	a2, a2, 32
+	slli	a1, a1, 2
 	srli	a2, a2, 28
 	or	a1, a1, a2
 	add	a0, a0, a1

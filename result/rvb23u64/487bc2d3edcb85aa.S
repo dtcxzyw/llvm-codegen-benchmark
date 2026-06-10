@@ -6,11 +6,11 @@ func0000000000000015:
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 11
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	sh1add	a0, a0, a0
-	addi	a2, a2, -496
+	addi	a2, a3, -496
 	mul	a1, a1, a2
+	sh1add	a0, a0, a0
 	sh2add	a0, a0, a0
 	sh2add	a0, a0, a1
 	ret
@@ -23,11 +23,11 @@ func0000000000000010:
 	mulhsu	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 6
+	lui	a3, 1
 	add	a1, a1, a2
-	lui	a2, 1
-	sh1add	a0, a0, a0
-	addi	a2, a2, -496
+	addi	a2, a3, -496
 	mul	a1, a1, a2
+	sh1add	a0, a0, a0
 	sh2add	a0, a0, a0
 	sh2add	a0, a0, a1
 	ret
@@ -38,15 +38,15 @@ func0000000000000014:
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	mulhsu	a1, a1, a2
-	srli	a2, a1, 63
-	srai	a1, a1, 15
-	add	a1, a1, a2
 	lui	a2, 1048573
+	srli	a3, a1, 63
+	srai	a1, a1, 15
+	add	a1, a1, a3
+	lui	a3, 10
 	addi	a2, a2, 77
+	addi	a3, a3, -946
 	mul	a1, a1, a2
-	lui	a2, 10
-	addi	a2, a2, -946
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

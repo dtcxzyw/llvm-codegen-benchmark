@@ -1,6 +1,6 @@
 func0000000000000014:
-	srliw	a0, a0, 2
 	lui	a1, 1
+	srliw	a0, a0, 2
 	slli	a0, a0, 3
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
@@ -22,9 +22,9 @@ func0000000000000021:
 	ret
 
 func0000000000000018:
+	lui	a1, 256
 	slli	a0, a0, 10
 	srli	a0, a0, 10
-	lui	a1, 256
 	sltu	a0, a1, a0
 	ret
 

@@ -1,18 +1,18 @@
 func000000000000010c:
+	lui	a3, 1048575
 	zext.b	a0, a0
 	sext.w	a2, a2
-	lui	a3, 1048575
 	addi	a3, a3, 1
-	addi	a0, a0, -190
 	sltu	a2, a2, a3
+	addi	a0, a0, -190
 	or	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000004c:
-	zext.b	a0, a0
 	sext.w	a2, a2
+	zext.b	a0, a0
 	lui	a3, 62848
 	addi	a3, a3, 13
 	addi	a0, a0, -13

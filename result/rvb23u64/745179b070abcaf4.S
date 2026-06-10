@@ -11,8 +11,8 @@ func000000000000018f:
 	ret
 
 func000000000000018b:
-	snez	a2, a2
 	sh3add	a0, a1, a0
-	sh3add	a0, a2, a0
+	snez	a1, a2
+	sh3add	a0, a1, a0
 	ret
 

@@ -1,8 +1,8 @@
 func00000000000000c0:
 	zext.b	a2, a2
-	slli	a1, a1, 3
 	seqz	a2, a2
 	addi	a2, a2, -1
+	slli	a1, a1, 3
 	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -44,10 +44,10 @@ func000000000000006f:
 
 func000000000000001e:
 	zext.b	a2, a2
-	slli	a1, a1, 5
 	addi	a2, a2, -103
 	snez	a2, a2
 	addi	a2, a2, -1
+	slli	a1, a1, 5
 	andi	a2, a2, -32
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -97,14 +97,14 @@ func0000000000000013:
 	beqz	a2, .LBB8_2
 	li	a2, 12
 	slli	a1, a1, 4
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 .LBB8_2:
 	li	a2, 8
 	slli	a1, a1, 4
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000010:

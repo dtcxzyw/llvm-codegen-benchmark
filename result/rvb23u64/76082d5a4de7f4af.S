@@ -3,8 +3,8 @@
 func0000000000000a08:
 	sh2add	a1, a1, a1
 	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	zext.b	a0, a0
+	ld	a2, %lo(.LCPI0_0)(a2)
 	sh1add	a0, a1, a0
 	addi	a0, a0, -48
 	sltu	a0, a2, a0

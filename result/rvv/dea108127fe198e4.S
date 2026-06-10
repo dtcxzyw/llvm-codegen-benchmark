@@ -6,12 +6,12 @@ func0000000000000021:
 func0000000000000024:
 	li	a0, 499
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsne.vi	v10, v8, 0
-	vadd.vx	v8, v8, a0
+	vadd.vx	v10, v8, a0
+	vmsne.vi	v12, v8, 0
 	lui	a0, 64
 	addi	a0, a0, 1
-	vmsltu.vx	v11, v8, a0
-	vmand.mm	v0, v10, v11
+	vmsltu.vx	v8, v10, a0
+	vmand.mm	v0, v12, v8
 	ret
 
 func0000000000000028:

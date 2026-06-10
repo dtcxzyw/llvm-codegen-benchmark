@@ -23,8 +23,8 @@ func0000000000000108:
 
 func0000000000000008:
 	sub	a1, a1, a2
-	lui	a2, 1048575
 	addi	a1, a1, -2048
+	lui	a2, 1048575
 	addiw	a1, a1, -2048
 	addi	a2, a2, 1
 	sltu	a1, a1, a2

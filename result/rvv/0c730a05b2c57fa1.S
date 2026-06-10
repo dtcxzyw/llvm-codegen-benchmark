@@ -15,65 +15,72 @@ func000000000000000f:
 	ret
 
 func000000000000003f:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vwsll.vi	v12, v11, 11
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v12, v10
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwsll.vi	v14, v11, 11
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
+	vor.vv	v10, v14, v12
 	vor.vv	v8, v10, v8
 	ret
 
 func000000000000003b:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vwsll.vi	v12, v11, 15
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v12, v10
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwsll.vi	v14, v11, 15
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
+	vor.vv	v10, v14, v12
 	vor.vv	v8, v8, v10
 	ret
 
 func000000000000000a:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vwsll.vi	v12, v11, 8
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v12, v10
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwsll.vi	v14, v11, 8
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
+	vor.vv	v10, v14, v12
 	vor.vv	v8, v8, v10
 	ret
 
 func000000000000002f:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vwsll.vi	v12, v11, 12
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v12, v10
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwsll.vi	v14, v11, 12
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
+	vor.vv	v10, v14, v12
 	vor.vv	v8, v10, v8
 	ret
 
 func000000000000002e:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vwsll.vi	v12, v11, 8
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v12, v10
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwsll.vi	v14, v11, 8
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
+	vor.vv	v10, v14, v12
 	vor.vv	v8, v10, v8
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vwsll.vi	v12, v11, 12
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v12, v10
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwsll.vi	v14, v11, 12
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
+	vor.vv	v10, v14, v12
 	vor.vv	v8, v10, v8
 	ret
 
 func000000000000000b:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vwsll.vi	v12, v11, 8
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vzext.vf2	v12, v10
+	vsetvli	zero, zero, e8, m1, ta, ma
+	vwsll.vi	v14, v11, 8
 	vsetvli	zero, zero, e16, m2, ta, ma
-	vzext.vf2	v14, v10
-	vor.vv	v10, v12, v14
+	vor.vv	v10, v14, v12
 	vor.vv	v8, v10, v8
 	ret
 

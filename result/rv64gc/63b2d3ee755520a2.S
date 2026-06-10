@@ -1,7 +1,7 @@
 func0000000000000019:
-	sext.w	a3, a0
-	sext.w	a4, a2
-	slt	a3, a4, a3
+	sext.w	a3, a2
+	sext.w	a4, a0
+	slt	a3, a3, a4
 	or	a1, a1, a3
 	andi	a1, a1, 1
 	beqz	a1, .LBB0_2

@@ -29,8 +29,8 @@ func000000000000021b:
 	ret
 
 func0000000000000a51:
-	sext.w	a1, a1
 	lui	a3, 1
+	sext.w	a1, a1
 	addi	a3, a3, -2047
 	bltu	a1, a3, .LBB2_3
 	li	a3, 1025

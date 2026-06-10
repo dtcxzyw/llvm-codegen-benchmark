@@ -27,8 +27,8 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	srliw	a1, a1, 25
 	li	a2, 5
+	srliw	a1, a1, 25
 	bltu	a1, a2, .LBB4_2
 	li	a0, 119
 .LBB4_2:

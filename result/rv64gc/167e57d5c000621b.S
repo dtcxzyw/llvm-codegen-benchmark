@@ -8,9 +8,9 @@ func0000000000000084:
 
 func0000000000000082:
 	li	a3, 1
-	seqz	a0, a0
 	slli	a3, a3, 11
 	and	a2, a2, a3
+	seqz	a0, a0
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

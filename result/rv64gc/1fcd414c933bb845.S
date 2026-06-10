@@ -1,14 +1,14 @@
 func0000000000000004:
-	slli	a0, a0, 29
 	lui	a1, 131072
+	slli	a0, a0, 29
 	addw	a0, a0, a1
 	lui	a1, 786432
 	and	a0, a0, a1
 	ret
 
 func000000000000000f:
-	slli	a0, a0, 3
 	lui	a1, 65536
+	slli	a0, a0, 3
 	addi	a0, a0, 56
 	addi	a1, a1, -64
 	and	a0, a0, a1

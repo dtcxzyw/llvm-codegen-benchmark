@@ -20,10 +20,10 @@ func0000000000000181:
 	ret
 
 func0000000000000298:
-	srliw	a1, a1, 13
 	srliw	a2, a0, 11
-	sltiu	a1, a1, 7
+	srliw	a1, a1, 13
 	sltiu	a2, a2, 27
+	sltiu	a1, a1, 7
 	not	a2, a2
 	and	a1, a1, a2
 	neg	a1, a1

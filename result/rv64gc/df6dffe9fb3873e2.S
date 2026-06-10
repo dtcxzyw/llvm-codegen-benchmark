@@ -55,9 +55,9 @@ func0000000000000003:
 
 func0000000000000036:
 	slli	a1, a1, 3
+	lui	a2, 1048549
 	add	a0, a0, a1
-	lui	a1, 1048549
-	addi	a1, a1, 856
+	addi	a1, a2, 856
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

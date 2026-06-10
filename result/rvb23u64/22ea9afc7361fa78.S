@@ -36,36 +36,36 @@ func000000000000086c:
 
 func0000000000000864:
 	sh3add	a1, a2, a1
-	addi	a1, a1, 16
 	addi	a0, a0, 8
+	addi	a1, a1, 16
 	sltu	a0, a0, a1
 	ret
 
 func0000000000001fe4:
 	sh1add	a1, a2, a1
-	addi	a1, a1, 10
 	addi	a0, a0, 2
+	addi	a1, a1, 10
 	sltu	a0, a0, a1
 	ret
 
 func0000000000001804:
 	sh1add	a1, a2, a1
-	addi	a1, a1, 2
 	addi	a0, a0, 4
+	addi	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000804:
 	sh2add	a1, a2, a1
-	addi	a1, a1, -2
 	addi	a0, a0, 2
+	addi	a1, a1, -2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000001064:
 	sh2add	a1, a2, a1
-	addi	a1, a1, 4
 	addi	a0, a0, 64
+	addi	a1, a1, 4
 	sltu	a0, a0, a1
 	ret
 
@@ -79,8 +79,8 @@ func0000000000000004:
 
 func0000000000001864:
 	sh2add	a1, a2, a1
-	addi	a1, a1, 392
 	addi	a0, a0, 4
+	addi	a1, a1, 392
 	sltu	a0, a0, a1
 	ret
 
@@ -94,22 +94,22 @@ func0000000000001004:
 
 func0000000000000d68:
 	sh2add	a1, a2, a1
-	addi	a1, a1, -64
 	addi	a0, a0, 64
+	addi	a1, a1, -64
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000d64:
 	sh2add	a1, a2, a1
-	addi	a1, a1, -32
 	addi	a0, a0, 32
+	addi	a1, a1, -32
 	sltu	a0, a0, a1
 	ret
 
 func0000000000001fec:
 	sh3add	a1, a2, a1
-	addi	a1, a1, 24
 	addi	a0, a0, 8
+	addi	a1, a1, 24
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

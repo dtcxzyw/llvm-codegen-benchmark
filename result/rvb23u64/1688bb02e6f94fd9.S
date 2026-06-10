@@ -24,9 +24,9 @@ func0000000000000018:
 
 func000000000000001a:
 	andi	a2, a2, 223
+	slli	a2, a2, 13
 	or	a0, a0, a1
 	lui	a1, 450624
-	slli	a2, a2, 13
 	or	a0, a0, a2
 	addi	a1, a1, 1024
 	or	a0, a0, a1
@@ -107,9 +107,9 @@ func0000000000000014:
 
 func000000000000003d:
 	andi	a2, a2, 207
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	lui	a1, 768
-	slli	a2, a2, 16
 	or	a0, a0, a2
 	addi	a1, a1, 48
 	or	a0, a0, a1

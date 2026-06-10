@@ -1,6 +1,6 @@
 func0000000000000000:
-	andi	a0, a0, 1
 	fabs.d	fa5, fa1
+	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	fdiv.d	fa5, fa5, fa0
 	li	a0, 1023
@@ -18,8 +18,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	fabs.d	fa5, fa1
+	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	fdiv.d	fa5, fa5, fa0
 	li	a0, 1023

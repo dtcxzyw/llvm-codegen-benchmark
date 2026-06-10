@@ -1,14 +1,14 @@
 .LCPI0_0:
 	.quad	230584300921369395
 func0000000000000288:
-	slli	a3, a2, 2
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
+	slli	a4, a2, 2
 	slli	a2, a2, 3
-	lui	a4, %hi(.LCPI0_0)
-	ld	a4, %lo(.LCPI0_0)(a4)
-	add	a2, a2, a3
+	add	a2, a2, a4
 	add	a0, a0, a1
 	add	a0, a0, a2
-	sltu	a0, a4, a0
+	sltu	a0, a3, a0
 	ret
 
 func0000000000000281:
@@ -20,53 +20,53 @@ func0000000000000281:
 	ret
 
 func0000000000000204:
-	add	a0, a0, a1
 	slli	a2, a2, 2
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	sltiu	a0, a0, 32
 	ret
 
 func000000000000020a:
 	lui	a3, 804435
-	add	a0, a0, a1
-	lui	a1, 244141
 	addi	a3, a3, 1536
 	mul	a2, a2, a3
+	add	a0, a0, a1
+	lui	a1, 244141
 	add	a0, a0, a2
 	addi	a1, a1, -1537
 	slt	a0, a1, a0
 	ret
 
 func0000000000000001:
+	li	a3, -10
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	li	a2, -10
-	mul	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func0000000000000408:
+	lui	a3, 1046192
+	addi	a3, a3, -761
+	slli	a3, a3, 10
+	mul	a0, a0, a3
+	lui	a3, 2384
 	add	a1, a1, a2
-	lui	a2, 1046192
-	addi	a2, a2, -761
-	slli	a2, a2, 10
-	mul	a0, a0, a2
-	lui	a2, 2384
-	addi	a2, a2, 761
+	addi	a2, a3, 761
 	add	a0, a0, a1
 	slli	a2, a2, 9
 	sltu	a0, a2, a0
 	ret
 
 func0000000000000401:
+	lui	a3, 1046192
+	addi	a3, a3, -761
+	slli	a3, a3, 10
+	mul	a0, a0, a3
+	lui	a3, 2384
 	add	a1, a1, a2
-	lui	a2, 1046192
-	addi	a2, a2, -761
-	slli	a2, a2, 10
-	mul	a0, a0, a2
-	lui	a2, 2384
-	addi	a2, a2, 761
+	addi	a2, a3, 761
 	add	a0, a0, a1
 	slli	a2, a2, 9
 	xor	a0, a0, a2
@@ -74,11 +74,11 @@ func0000000000000401:
 	ret
 
 func000000000000040c:
+	lui	a3, 1046192
+	addi	a3, a3, -761
+	slli	a3, a3, 10
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 1046192
-	addi	a2, a2, -761
-	slli	a2, a2, 10
-	mul	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -104,20 +104,20 @@ func0000000000000206:
 	ret
 
 func00000000000002aa:
+	lui	a3, 1048332
+	addi	a3, a3, -576
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 1048332
-	addi	a2, a2, -576
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	slti	a0, a0, 100
 	xori	a0, a0, 1
 	ret
 
 func000000000000008a:
+	lui	a3, 804435
+	addi	a3, a3, 1536
+	mul	a0, a0, a3
 	add	a1, a1, a2
-	lui	a2, 804435
-	addi	a2, a2, 1536
-	mul	a0, a0, a2
 	add	a0, a0, a1
 	slti	a0, a0, 100
 	xori	a0, a0, 1

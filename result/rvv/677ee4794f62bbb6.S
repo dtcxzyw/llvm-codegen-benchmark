@@ -1,7 +1,7 @@
 func0000000000000009:
+	fli.s	fa5, inf
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v12, v12, v16
-	fli.s	fa5, inf
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmnor.mm	v0, v17, v16

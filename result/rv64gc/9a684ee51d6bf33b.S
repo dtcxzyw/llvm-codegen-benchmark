@@ -13,16 +13,16 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	addiw	a0, a0, 1
 	li	a1, 512
+	addiw	a0, a0, 1
 	blt	a0, a1, .LBB2_2
 	li	a0, 512
 .LBB2_2:
 	ret
 
 func0000000000000003:
-	sext.w	a0, a0
 	li	a1, 255
+	sext.w	a0, a0
 	blt	a0, a1, .LBB3_2
 	li	a0, 255
 .LBB3_2:

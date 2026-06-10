@@ -55,9 +55,9 @@ func000000000000014c:
 	ret
 
 func000000000000012c:
+	li	a0, -1024
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsleu.vv	v14, v12, v10
-	li	a0, -1024
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret

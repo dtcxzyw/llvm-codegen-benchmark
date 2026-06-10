@@ -1,6 +1,6 @@
 func0000000000000042:
-	addi	a1, a1, -59
 	lui	a2, 978671
+	addi	a1, a1, -59
 	addi	a2, a2, -273
 	mul	a1, a1, a2
 	lui	a2, 17476

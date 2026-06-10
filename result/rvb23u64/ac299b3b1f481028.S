@@ -28,8 +28,8 @@ func00000000000001f4:
 	ret
 
 func0000000000000188:
-	addi	a2, a2, 7
 	bseti	a3, zero, 33
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a1, a1, a2
@@ -74,8 +74,8 @@ func0000000000000048:
 	ret
 
 func00000000000001f8:
-	addi	a2, a2, 39
 	lui	a3, 524288
+	addi	a2, a2, 39
 	srli	a3, a3, 28
 	and	a2, a2, a3
 	add	a1, a1, a2
@@ -96,8 +96,8 @@ func000000000000000a:
 	ret
 
 func00000000000001e6:
-	addi	a2, a2, 3
 	lui	a3, 32
+	addi	a2, a2, 3
 	addi	a3, a3, -4
 	and	a2, a2, a3
 	add	a1, a1, a2
@@ -105,8 +105,8 @@ func00000000000001e6:
 	ret
 
 func00000000000001a8:
-	addi	a2, a2, 7
 	bseti	a3, zero, 33
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	add	a1, a1, a2

@@ -1,6 +1,6 @@
 func0000000000000018:
-	addi	a1, a1, 127
 	bseti	a2, zero, 36
+	addi	a1, a1, 127
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	zext.w	a0, a0

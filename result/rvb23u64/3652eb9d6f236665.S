@@ -1,6 +1,6 @@
 func0000000000000026:
-	not	a3, a0
 	srliw	a1, a1, 31
+	not	a3, a0
 	add	a2, a2, a3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

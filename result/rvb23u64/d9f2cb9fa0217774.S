@@ -1,7 +1,7 @@
 func0000000000000020:
-	addw	a3, a2, a0
-	lui	a4, 8
-	sltu	a3, a4, a3
+	lui	a3, 8
+	addw	a4, a2, a0
+	sltu	a3, a3, a4
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2

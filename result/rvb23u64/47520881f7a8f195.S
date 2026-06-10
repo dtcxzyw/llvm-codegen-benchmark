@@ -15,25 +15,25 @@ func000000000000002c:
 	ret
 
 func0000000000000146:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 771
+	sext.w	a0, a0
 	min	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 
 func0000000000000104:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 4
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 
 func0000000000000114:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	li	a2, 4
+	sext.w	a0, a0
 	minu	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -116,8 +116,8 @@ func0000000000000158:
 	ret
 
 func00000000000000ca:
-	sext.w	a0, a0
 	sext.w	a1, a1
+	sext.w	a0, a0
 	max	a1, a1, zero
 	slt	a0, a1, a0
 	ret

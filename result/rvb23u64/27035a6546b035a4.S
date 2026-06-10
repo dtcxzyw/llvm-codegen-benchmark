@@ -7,8 +7,8 @@ func0000000000000424:
 	ret
 
 func0000000000000421:
-	seqz	a0, a0
 	addiw	a1, a1, -1
+	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -42,15 +42,15 @@ func0000000000000434:
 
 func000000000000002a:
 	addi	a1, a1, 8
-	seqz	a0, a0
 	srliw	a1, a1, 31
+	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000021:
-	seqz	a0, a0
 	addiw	a1, a1, -1
+	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

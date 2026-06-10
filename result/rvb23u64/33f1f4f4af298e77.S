@@ -1,8 +1,8 @@
 func0000000000000004:
+	li	a2, -127
 	add.uw	a0, a1, a0
-	li	a1, -127
-	srli	a1, a1, 1
-	sub	a0, a1, a0
+	srli	a2, a2, 1
+	sub	a0, a2, a0
 	ret
 
 func000000000000001d:
@@ -57,10 +57,10 @@ func0000000000000011:
 	ret
 
 func000000000000000f:
+	li	a2, -7
 	add.uw	a0, a1, a0
-	li	a1, -7
-	srli	a1, a1, 1
-	sub	a0, a1, a0
+	srli	a2, a2, 1
+	sub	a0, a2, a0
 	ret
 
 func0000000000000018:

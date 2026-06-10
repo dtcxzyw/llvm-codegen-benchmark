@@ -8,8 +8,8 @@ func00000000000007e4:
 
 func00000000000007e1:
 	sh2add.uw	a2, a2, a0
-	addi	a2, a2, 4
 	sh2add	a0, a1, a0
+	addi	a2, a2, 4
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

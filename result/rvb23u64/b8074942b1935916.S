@@ -1,7 +1,7 @@
 func0000000000000108:
-	zext.h	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -2048
+	zext.h	a0, a0
 	addi	a1, a1, -52
 	sltiu	a1, a1, 900
 	sltiu	a0, a0, 100
@@ -19,8 +19,8 @@ func0000000000000102:
 	ret
 
 func0000000000000908:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -97
 	sltiu	a1, a1, 6
 	sltiu	a0, a0, 10
@@ -38,8 +38,8 @@ func0000000000000902:
 	ret
 
 func0000000000000048:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -7
 	sltiu	a1, a1, -2
 	seqz	a0, a0

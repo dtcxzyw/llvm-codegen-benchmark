@@ -8,11 +8,11 @@ func0000000000000842:
 	ret
 
 func0000000000000a28:
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
 	addi	a2, a1, -7
-	sltiu	a1, a1, 23
 	seqz	a2, a2
+	sltiu	a1, a1, 23
 	orn	a1, a2, a1
 	sltiu	a0, a0, 39
 	and	a0, a0, a1

@@ -8,18 +8,18 @@ func000000000000001f:
 func000000000000001e:
 	andi	a1, a1, 15
 	slli	a1, a1, 6
+	lui	a2, 14
 	or	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	or	a0, a0, a1
 	ret
 
 func000000000000001c:
 	andi	a1, a1, 1
 	slli	a1, a1, 16
+	li	a2, 3
 	or	a0, a0, a1
-	li	a1, 3
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 

@@ -24,8 +24,8 @@ func0000000000000010:
 	ret
 
 func0000000000000020:
-	sext.w	a1, a1
 	lui	a2, 128
+	sext.w	a1, a1
 	addi	a2, a2, -8
 	sltu	a1, a2, a1
 	add	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000020:
 	ret
 
 func0000000000000023:
-	sext.w	a1, a1
 	li	a2, -17
+	sext.w	a1, a1
 	bltu	a2, a1, .LBB4_2
 	li	a1, 8
 	add	a0, a0, a1

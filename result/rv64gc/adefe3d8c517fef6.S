@@ -5,11 +5,11 @@ func0000000000000026:
 	ret
 
 func0000000000000038:
-	srliw	a1, a0, 7
-	lui	a2, 1048555
-	sltiu	a1, a1, 675
-	addi	a1, a1, -1
-	addi	a2, a2, -384
+	lui	a1, 1048555
+	srliw	a2, a0, 7
+	sltiu	a2, a2, 675
+	addi	a2, a2, -1
+	addi	a1, a1, -384
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -54,9 +54,9 @@ func000000000000006a:
 	ret
 
 func0000000000000006:
-	sraiw	a1, a0, 31
-	lui	a2, 524288
-	addi	a2, a2, 1
+	lui	a1, 524288
+	sraiw	a2, a0, 31
+	addi	a1, a1, 1
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
@@ -102,10 +102,10 @@ func0000000000000064:
 	ret
 
 func0000000000000078:
-	sext.w	a1, a0
-	sltiu	a1, a1, 1281
-	addi	a1, a1, -1
-	lui	a2, 12
+	lui	a1, 12
+	sext.w	a2, a0
+	sltiu	a2, a2, 1281
+	addi	a2, a2, -1
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

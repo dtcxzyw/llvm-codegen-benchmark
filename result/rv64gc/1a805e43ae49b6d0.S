@@ -17,9 +17,10 @@ func0000000000000008:
 	ret
 
 func000000000000000c:
-	beq	a0, a2, .LBB3_2
-	mv	a1, a0
-.LBB3_2:
+	mv	a3, a0
 	mv	a0, a1
+	beq	a3, a2, .LBB3_2
+	mv	a0, a3
+.LBB3_2:
 	ret
 

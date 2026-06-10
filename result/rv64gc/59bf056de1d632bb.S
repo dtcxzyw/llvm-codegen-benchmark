@@ -20,8 +20,8 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	addi	a0, a0, -1231
 	li	a1, 21
+	addi	a0, a0, -1231
 	mul	a0, a0, a1
 	addi	a0, a0, -5
 	ret

@@ -33,10 +33,10 @@ func0000000000000007:
 func0000000000000003:
 	zext.b	a2, a2
 	slli	a0, a0, 63
-	or	a1, a1, a2
 	srai	a0, a0, 63
-	lui	a2, 1044480
-	and	a0, a0, a2
+	lui	a3, 1044480
+	or	a1, a1, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

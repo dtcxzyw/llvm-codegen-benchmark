@@ -1,7 +1,7 @@
 func0000000000000000:
+	lui	a0, 131586
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vandn.vv	v8, v8, v10
-	lui	a0, 131586
 	vsrl.vi	v8, v8, 2
 	addi	a0, a0, 32
 	slli	a1, a0, 32

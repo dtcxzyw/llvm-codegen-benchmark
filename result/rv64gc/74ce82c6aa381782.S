@@ -13,10 +13,10 @@ func0000000000000014:
 	seqz	a1, a1
 	addi	a2, a2, 496
 	addi	a1, a1, -1
-	and	a1, a1, a2
-	slli	a2, a0, 2
+	slli	a3, a0, 2
 	slli	a0, a0, 6
-	sub	a0, a0, a2
+	and	a1, a1, a2
+	sub	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

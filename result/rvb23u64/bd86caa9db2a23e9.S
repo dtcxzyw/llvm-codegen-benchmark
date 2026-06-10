@@ -17,8 +17,8 @@ func000000000000001d:
 	ret
 
 func000000000000000a:
-	fcvt.s.d	fa5, fa0
 	lui	a1, 273536
+	fcvt.s.d	fa5, fa0
 	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
@@ -26,8 +26,8 @@ func000000000000000a:
 	ret
 
 func0000000000000002:
-	fcvt.s.d	fa5, fa0
 	lui	a1, 212992
+	fcvt.s.d	fa5, fa0
 	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4

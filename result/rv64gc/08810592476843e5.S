@@ -9,9 +9,9 @@ func0000000000000001:
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000001)
 	fld	fa5, 0(a0)
 	fld	fa4, 8(a0)
+	fmadd.d	fa5, fa0, fa5, fa4
 	li	a0, 511
 	slli	a0, a0, 53
-	fmadd.d	fa5, fa0, fa5, fa4
 	fmv.d.x	fa4, a0
 	fadd.d	fa0, fa5, fa4
 	ret

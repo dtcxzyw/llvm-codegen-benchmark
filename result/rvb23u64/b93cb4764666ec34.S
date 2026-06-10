@@ -13,10 +13,10 @@ func00000000000000ca:
 	srliw	a2, a1, 31
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
-	lui	a2, 10
 	or	a0, a0, a1
+	lui	a1, 10
 	sext.w	a0, a0
-	addi	a1, a2, -963
+	addi	a1, a1, -963
 	slt	a0, a1, a0
 	ret
 

@@ -11,8 +11,8 @@ func000000000000008a:
 	ret
 
 func0000000000000010:
-	add	a0, a0, a2
 	addi	a1, a1, -1
+	add	a0, a0, a2
 	sh3add	a0, a1, a0
 	li	a1, 1565
 	sh3add	a0, a1, a0
@@ -26,8 +26,8 @@ func00000000000000ea:
 	ret
 
 func00000000000000d0:
-	add	a0, a0, a2
 	sh1add	a1, a1, a1
+	add	a0, a0, a2
 	sh3add	a0, a1, a0
 	addi	a0, a0, 16
 	ret

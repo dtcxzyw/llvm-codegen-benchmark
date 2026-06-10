@@ -89,9 +89,9 @@ func0000000000000015:
 	ret
 
 func000000000000003c:
+	lui	a0, 10126
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 6
-	lui	a0, 10126
 	vadd.vv	v8, v10, v8
 	addi	a0, a0, -537
 	slli	a0, a0, 12
@@ -100,9 +100,9 @@ func000000000000003c:
 	ret
 
 func000000000000001f:
+	lui	a0, 10126
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 6
-	lui	a0, 10126
 	vadd.vv	v8, v10, v8
 	addi	a0, a0, -537
 	slli	a0, a0, 12

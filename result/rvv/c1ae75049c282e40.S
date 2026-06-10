@@ -1,7 +1,7 @@
 func00000000000000ec:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsra.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -12,9 +12,9 @@ func00000000000000ec:
 	ret
 
 func00000000000000e1:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsra.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -25,9 +25,9 @@ func00000000000000e1:
 	ret
 
 func0000000000000028:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsra.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -38,9 +38,9 @@ func0000000000000028:
 	ret
 
 func00000000000000e8:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsra.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -51,23 +51,23 @@ func00000000000000e8:
 	ret
 
 func0000000000000064:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
+	vsra.vi	v10, v10, 2
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	li	a1, 60
-	vsra.vi	v10, v10, 2
 	vmul.vx	v10, v10, a0
-	vadd.vx	v8, v8, a1
+	li	a0, 60
+	vadd.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret
 
 func0000000000000024:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsra.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -78,9 +78,9 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
+	lui	a0, 838861
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 838861
 	vsra.vi	v10, v10, 5
 	addi	a0, a0, -819
 	slli	a1, a0, 32
@@ -104,9 +104,9 @@ func00000000000000a8:
 	ret
 
 func0000000000000068:
+	lui	a0, 748983
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 748983
 	vsra.vi	v10, v10, 4
 	addi	a0, a0, -585
 	slli	a1, a0, 33
@@ -143,9 +143,9 @@ func000000000000006a:
 	ret
 
 func0000000000000061:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsra.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
@@ -156,9 +156,9 @@ func0000000000000061:
 	ret
 
 func00000000000000e5:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 699051
 	vsra.vi	v10, v10, 5
 	addi	a0, a0, -1365
 	slli	a1, a0, 32

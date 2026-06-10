@@ -1,7 +1,7 @@
 func000000000000000c:
 	sext.w	a0, a0
-	not	a1, a1
 	seqz	a0, a0
+	not	a1, a1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -39,8 +39,8 @@ func000000000000000a:
 
 func0000000000000018:
 	sext.w	a0, a0
-	xori	a1, a1, 31
 	sltiu	a0, a0, 3
+	xori	a1, a1, 31
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

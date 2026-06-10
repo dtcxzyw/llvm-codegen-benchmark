@@ -1,12 +1,10 @@
 func0000000000000041:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v14, v8
-	vor.vv	v8, v10, v12
 	li	a0, 33
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vx	v0, v14, a0
-	li	a0, 64
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmseq.vx	v0, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vv	v8, v10, v12
+	li	a0, 64
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
@@ -20,44 +18,38 @@ func0000000000000001:
 	ret
 
 func0000000000000066:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v14, v8
-	vor.vv	v8, v10, v12
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsle.vi	v0, v14, -1
-	li	a0, 1024
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmsle.vi	v0, v8, -1
 	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vv	v8, v10, v12
+	li	a0, 1024
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v14, v8
-	vor.vv	v8, v10, v12
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsleu.vi	v0, v14, 2
-	li	a0, 1024
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmsleu.vi	v0, v8, 2
 	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vv	v8, v10, v12
+	li	a0, 1024
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000061:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv1r.v	v14, v8
-	vor.vv	v8, v10, v12
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vi	v0, v14, 0
-	bseti	a0, zero, 11
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vv	v8, v10, v12
+	bseti	a0, zero, 11
 	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func000000000000006a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
-	lui	a0, 585736
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsle.vi	v0, v8, -1
+	lui	a0, 585736
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0

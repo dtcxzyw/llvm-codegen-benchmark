@@ -21,10 +21,10 @@ func0000000000000001:
 
 func000000000000000d:
 	andi	a1, a1, 1
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, -2
-	mulw	a0, a0, a1
+	addi	a2, a2, -2
+	mulw	a0, a0, a2
 	ret
 
 func0000000000000000:

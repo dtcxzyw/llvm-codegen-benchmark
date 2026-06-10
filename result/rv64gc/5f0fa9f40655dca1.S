@@ -17,11 +17,11 @@ func0000000000000000:
 
 func0000000000000005:
 	slli	a1, a1, 63
+	lui	a3, 1048572
 	srai	a1, a1, 63
+	addi	a3, a3, 1
 	and	a1, a1, a2
-	lui	a2, 1048572
-	addi	a2, a2, 1
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
@@ -36,21 +36,21 @@ func000000000000000f:
 
 func000000000000000d:
 	slli	a1, a1, 63
+	lui	a3, 1048400
 	srai	a1, a1, 63
+	addi	a3, a3, 1733
 	and	a1, a1, a2
-	lui	a2, 1048400
-	addi	a2, a2, 1733
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 
 func000000000000000c:
 	slli	a1, a1, 63
+	lui	a3, 1048400
 	srai	a1, a1, 63
+	addi	a3, a3, 1733
 	and	a1, a1, a2
-	lui	a2, 1048400
-	addi	a2, a2, 1733
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

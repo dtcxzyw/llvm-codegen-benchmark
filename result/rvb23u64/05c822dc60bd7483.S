@@ -18,8 +18,8 @@ func0000000000000085:
 
 func0000000000000119:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	sub	a3, a3, a2
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a1
@@ -29,8 +29,8 @@ func0000000000000119:
 
 func0000000000000118:
 	lui	a3, 524288
-	srliw	a1, a1, 31
 	sub	a3, a3, a2
+	srliw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a3, a1
 	or	a0, a0, a1

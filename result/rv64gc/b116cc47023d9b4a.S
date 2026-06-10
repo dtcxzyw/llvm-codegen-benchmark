@@ -26,10 +26,10 @@ func0000000000000028:
 
 func00000000000000aa:
 	addiw	a1, a1, -1
+	lui	a2, 262144
 	add	a0, a0, a1
-	lui	a1, 262144
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func0000000000000026:

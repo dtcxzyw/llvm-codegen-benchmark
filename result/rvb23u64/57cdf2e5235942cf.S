@@ -1,6 +1,6 @@
 func0000000000000017:
-	addiw	a0, a0, -1
 	lui	a1, 335544
+	addiw	a0, a0, -1
 	negw	a2, a0
 	max	a0, a0, a2
 	zext.w	a2, a0

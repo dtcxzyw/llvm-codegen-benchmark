@@ -31,8 +31,8 @@ func0000000000000024:
 	ret
 
 func000000000000002a:
-	sext.w	a1, a1
 	lui	a3, 8192
+	sext.w	a1, a1
 	addi	a3, a3, -1
 	bge	a3, a1, .LBB4_2
 	ori	a0, a2, 128

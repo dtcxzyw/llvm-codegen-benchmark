@@ -1,6 +1,6 @@
 func0000000000000006:
-	sext.w	a1, a1
 	fcvt.w.d	a2, fa0, rtz
+	sext.w	a1, a1
 	sext.w	a0, a0
 	blt	a1, a2, .LBB0_2
 	mv	a1, a2
@@ -9,8 +9,8 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	sext.w	a1, a1
 	fcvt.w.d	a2, fa0, rtz
+	sext.w	a1, a1
 	sext.w	a0, a0
 	blt	a1, a2, .LBB1_2
 	mv	a1, a2
@@ -19,8 +19,8 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	sext.w	a1, a1
 	fcvt.w.d	a2, fa0, rtz
+	sext.w	a1, a1
 	sext.w	a0, a0
 	blt	a1, a2, .LBB2_2
 	mv	a1, a2

@@ -9,15 +9,15 @@ func000000000000002c:
 func0000000000000081:
 	zext.h	a0, a0
 	sext.w	a1, a1
-	sltiu	a1, a1, 4
 	addi	a0, a0, -6
+	sltiu	a1, a1, 4
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -263
 	seqz	a1, a1
 	seqz	a0, a0
@@ -35,8 +35,8 @@ func000000000000018c:
 func0000000000000181:
 	zext.h	a0, a0
 	addiw	a1, a1, -35
-	snez	a1, a1
 	addi	a0, a0, -772
+	snez	a1, a1
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

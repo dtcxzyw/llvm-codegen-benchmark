@@ -13,9 +13,9 @@ func0000000000000001:
 	vmv1r.v	v10, v0
 	vmseq.vi	v0, v8, -2
 	vmv.v.i	v8, 0
-	li	a0, -101
 	vmerge.vim	v8, v8, -1, v0
 	vmv1r.v	v0, v10
+	li	a0, -101
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 

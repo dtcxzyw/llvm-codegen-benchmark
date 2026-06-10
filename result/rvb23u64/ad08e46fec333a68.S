@@ -22,16 +22,16 @@ func0000000000000065:
 
 func000000000000006f:
 	sh1add	a2, a2, a2
-	add	a0, a0, a2
 	zext.b	a1, a1
-	addw	a0, a0, a1
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 
 func0000000000000000:
 	lui	a3, 427607
-	zext.b	a1, a1
 	addi	a3, a3, -916
 	mul	a2, a2, a3
+	zext.b	a1, a1
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

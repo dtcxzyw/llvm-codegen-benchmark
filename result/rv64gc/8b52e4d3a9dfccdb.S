@@ -17,10 +17,10 @@ func0000000000000004:
 	ret
 
 func00000000000001a1:
-	addi	a1, a0, 3
-	li	a2, 1
-	slli	a2, a2, 33
-	addi	a2, a2, -4
+	li	a1, 1
+	slli	a1, a1, 33
+	addi	a2, a0, 3
+	addi	a1, a1, -4
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -41,9 +41,9 @@ func000000000000002a:
 	ret
 
 func00000000000001aa:
-	addi	a1, a0, 63
-	lui	a2, 786432
-	srli	a2, a2, 24
+	lui	a1, 786432
+	addi	a2, a0, 63
+	srli	a1, a1, 24
 	and	a1, a1, a2
 	slt	a0, a0, a1
 	ret

@@ -41,11 +41,11 @@ func000000000000001d:
 	ret
 
 func000000000000000d:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vrsub.vi	v10, v8, 4
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v10, v8
 	vmv.v.i	v8, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
+	vrsub.vi	v10, v10, 4
 	vwaddu.wv	v8, v8, v10
 	ret
 

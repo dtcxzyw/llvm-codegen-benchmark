@@ -103,10 +103,10 @@ func0000000000000008:
 	ret
 
 func000000000000000f:
+	lui	a3, 4096
 	or	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 4096
-	addw	a0, a0, a1
+	addw	a0, a0, a3
 	ret
 
 func0000000000000014:

@@ -30,12 +30,12 @@ func000000000000000d:
 
 func0000000000000002:
 	li	a0, 33
+	li	a1, 31
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v10, v8, a0
-	li	a0, 31
-	slli	a0, a0, 29
+	slli	a1, a1, 29
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v10, a0
+	vadd.vx	v8, v10, a1
 	ret
 
 func000000000000001d:
@@ -47,12 +47,12 @@ func000000000000001d:
 
 func0000000000000000:
 	li	a0, 56
+	li	a1, -79
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v10, v8, a0
-	li	a0, -79
-	slli	a0, a0, 56
+	slli	a1, a1, 56
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v8, v10, a0
+	vadd.vx	v8, v10, a1
 	ret
 
 func0000000000000010:

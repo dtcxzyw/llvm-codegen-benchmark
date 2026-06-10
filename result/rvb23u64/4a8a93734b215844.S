@@ -99,10 +99,10 @@ func0000000000000104:
 	ret
 
 func000000000000012a:
+	lui	a2, 16
 	subw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 func00000000000001aa:

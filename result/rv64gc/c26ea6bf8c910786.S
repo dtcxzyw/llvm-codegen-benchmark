@@ -18,8 +18,8 @@ func0000000000000004:
 .LCPI1_0:
 	.quad	-1336720585051416783
 func0000000000000001:
-	addi	a0, a0, 1
 	li	a1, 273
+	addi	a0, a0, 1
 	bne	a0, a1, .LBB1_2
 	li	a0, 4
 	ret

@@ -3,8 +3,8 @@ func0000000000000004:
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	li	a0, 511
-	slli	a0, a0, 53
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 53
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa4, fa5
 	ret
@@ -14,8 +14,8 @@ func0000000000000003:
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	li	a0, 1023
-	slli	a0, a0, 52
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -51,8 +51,8 @@ func000000000000000c:
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	li	a0, 1033
-	slli	a0, a0, 52
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa4, fa5
 	ret
@@ -72,8 +72,8 @@ func000000000000000a:
 	slli	a0, a0, 36
 	fmv.d.x	fa5, a0
 	lui	a0, 4101
-	slli	a0, a0, 38
 	fmul.d	fa5, fa0, fa5
+	slli	a0, a0, 38
 	fmv.d.x	fa4, a0
 	fle.d	a0, fa5, fa4
 	ret
@@ -96,8 +96,8 @@ func0000000000000001:
 	ret
 
 func000000000000000d:
-	fadd.d	fa5, fa0, fa0
 	li	a0, 1
+	fadd.d	fa5, fa0, fa0
 	slli	a0, a0, 52
 	fmv.d.x	fa4, a0
 	flt.d	a0, fa5, fa4

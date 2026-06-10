@@ -7,10 +7,10 @@ func0000000000000005:
 
 func000000000000000e:
 	srli	a1, a1, 2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 3
-	minu	a0, a0, a1
+	srli	a2, a2, 3
+	minu	a0, a0, a2
 	ret
 
 func0000000000000006:
@@ -22,9 +22,9 @@ func0000000000000006:
 
 func0000000000000000:
 	srli	a1, a1, 1
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -13
-	minu	a0, a0, a1
+	addi	a2, a2, -13
+	minu	a0, a0, a2
 	ret
 

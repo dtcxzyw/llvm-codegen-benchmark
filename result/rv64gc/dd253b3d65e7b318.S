@@ -9,9 +9,9 @@ func0000000000000007:
 
 func0000000000000006:
 	sext.w	a1, a1
-	andi	a0, a0, 1
 	lui	a2, 921600
 	snez	a1, a1
+	andi	a0, a0, 1
 	addi	a2, a2, -1026
 	slli	a1, a1, 10
 	or	a0, a0, a2
@@ -19,8 +19,8 @@ func0000000000000006:
 	ret
 
 func0000000000000005:
-	sext.w	a1, a1
 	li	a2, 9
+	sext.w	a1, a1
 	beq	a1, a2, .LBB2_2
 	lui	a1, 4
 	addi	a1, a1, 16

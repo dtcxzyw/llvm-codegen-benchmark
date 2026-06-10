@@ -19,9 +19,9 @@ func000000000000000c:
 	mul	a0, a0, a1
 	lui	a1, 174763
 	addi	a1, a1, -1366
+	lui	a2, 349525
 	addw	a0, a0, a1
-	lui	a1, 349525
-	addi	a1, a1, 1364
+	addi	a1, a2, 1364
 	sltu	a0, a1, a0
 	ret
 
@@ -43,15 +43,15 @@ func0000000000000026:
 func0000000000000021:
 	mul	a0, a0, a1
 	lui	a1, 699051
-	lui	a2, 174763
 	addi	a1, a1, -1365
 	mul	a0, a0, a1
-	addi	a1, a2, -1366
-	add	a0, a0, a1
-	slliw	a1, a0, 31
+	lui	a1, 174763
+	addi	a2, a1, -1366
+	add	a0, a0, a2
+	slliw	a2, a0, 31
 	srliw	a0, a0, 1
-	or	a0, a0, a1
-	addi	a1, a2, -1365
+	or	a0, a0, a2
+	addi	a1, a1, -1365
 	sltu	a0, a0, a1
 	ret
 
@@ -65,9 +65,9 @@ func000000000000002c:
 	add	a0, a0, a1
 	slliw	a1, a0, 30
 	srliw	a0, a0, 2
+	lui	a2, 10486
 	or	a0, a0, a1
-	lui	a1, 10486
-	addi	a1, a1, -984
+	addi	a1, a2, -984
 	sltu	a0, a1, a0
 	ret
 

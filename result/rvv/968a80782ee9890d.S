@@ -7,8 +7,8 @@ func0000000000000004:
 	lui	a0, 7
 	addi	a0, a0, -139
 	vmulhu.vx	v9, v8, a0
-	li	a0, 588
 	vsrl.vi	v9, v9, 8
+	li	a0, 588
 	vnmsub.vx	v9, a0, v8
 	lui	a0, 1
 	addi	a0, a0, -1755
@@ -24,8 +24,8 @@ func000000000000000c:
 	lui	a0, 7
 	addi	a0, a0, -139
 	vmulhu.vx	v9, v8, a0
-	li	a0, 588
 	vsrl.vi	v9, v9, 8
+	li	a0, 588
 	vnmsub.vx	v9, a0, v8
 	lui	a0, 1
 	addi	a0, a0, -1755

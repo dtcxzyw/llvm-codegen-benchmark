@@ -23,16 +23,16 @@ func0000000000000007:
 	ret
 
 func000000000000001d:
+	lui	a2, 1048540
 	addw	a0, a0, a1
-	lui	a1, 1048540
-	addi	a1, a1, 1359
+	addi	a1, a2, 1359
 	mul	a0, a0, a1
 	ret
 
 func000000000000001f:
+	lui	a2, 244
 	addw	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 576
+	addi	a1, a2, 576
 	mul	a0, a0, a1
 	ret
 
@@ -43,10 +43,10 @@ func0000000000000001:
 	ret
 
 func000000000000000b:
+	lui	a2, 2575
 	add	a0, a0, a1
-	lui	a1, 2575
+	addi	a1, a2, -325
 	zext.w	a0, a0
-	addi	a1, a1, -325
 	slli	a1, a1, 13
 	mul	a0, a0, a1
 	ret

@@ -1,6 +1,6 @@
 func0000000000000000:
-	slli	a1, a1, 9
 	andi	a0, a0, -1792
+	slli	a1, a1, 9
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	srliw	a0, a0, 8

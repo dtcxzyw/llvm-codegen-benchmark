@@ -25,8 +25,8 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	not	a1, a1
 	li	a2, -1
+	not	a1, a1
 	slli	a2, a2, 32
 	or	a1, a1, a2
 	add	a0, a0, a1

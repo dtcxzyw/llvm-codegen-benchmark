@@ -1,8 +1,8 @@
 func0000000000000004:
 	sext.w	a2, a2
 	slli	a1, a1, 63
-	andi	a0, a0, -256
 	srai	a1, a1, 63
+	andi	a0, a0, -256
 	andi	a1, a1, 6
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -19,10 +19,10 @@ func0000000000000002:
 	slli	a2, a2, 32
 	srli	a2, a2, 19
 .LBB1_2:
+	lui	a3, 983039
+	slli	a3, a3, 16
 	or	a1, a1, a2
-	lui	a2, 983039
-	slli	a2, a2, 16
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

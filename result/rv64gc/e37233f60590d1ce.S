@@ -13,34 +13,34 @@ func0000000000000380:
 	ret
 
 func00000000000003c0:
-	slli	a2, a2, 6
+	lui	a3, 5142
 	add	a0, a0, a1
-	lui	a1, 5142
-	add	a0, a0, a2
-	addi	a1, a1, 175
+	addi	a1, a3, 175
+	slli	a2, a2, 6
 	slli	a1, a1, 13
+	add	a0, a0, a2
 	addi	a1, a1, 2041
 	add	a0, a0, a1
 	ret
 
 func00000000000001df:
-	slli	a2, a2, 6
+	lui	a3, 5142
 	add	a0, a0, a1
-	lui	a1, 5142
-	add	a0, a0, a2
-	addi	a1, a1, 175
+	addi	a1, a3, 175
+	slli	a2, a2, 6
 	slli	a1, a1, 13
+	add	a0, a0, a2
 	addi	a1, a1, 2041
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
-	slli	a2, a2, 6
+	lui	a3, 5142
 	add	a0, a0, a1
-	lui	a1, 5142
-	add	a0, a0, a2
-	addi	a1, a1, 175
+	addi	a1, a3, 175
+	slli	a2, a2, 6
 	slli	a1, a1, 13
+	add	a0, a0, a2
 	addi	a1, a1, 2041
 	add	a0, a0, a1
 	ret

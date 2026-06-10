@@ -1,6 +1,6 @@
 func000000000000000d:
-	fmul.s	fa5, fa0, fa1
 	lui	a1, 798688
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	xori	a1, a1, 1
@@ -37,8 +37,8 @@ func0000000000000007:
 	ret
 
 func000000000000000b:
-	fmul.s	fa5, fa0, fa1
 	lui	a1, 273536
+	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	xori	a1, a1, 1

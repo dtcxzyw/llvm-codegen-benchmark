@@ -19,10 +19,10 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv1r.v	v12, v0
 	li	a0, -17
 	srli	a0, a0, 2
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmsgtu.vx	v0, v10, a0
 	li	a0, -2
 	bclri	a0, a0, 62

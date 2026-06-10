@@ -7,8 +7,8 @@ func000000000000001d:
 	ret
 
 func0000000000000015:
-	slli	a1, a1, 43
 	lui	a2, 1048409
+	slli	a1, a1, 43
 	srli	a1, a1, 43
 	addi	a2, a2, 131
 	mul	a1, a1, a2
@@ -16,17 +16,17 @@ func0000000000000015:
 	ret
 
 func000000000000001f:
-	slli	a1, a1, 43
 	lui	a2, 163
 	addi	a2, a2, -1005
+	slli	a1, a1, 43
 	slli	a2, a2, 21
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000001c:
-	slli	a1, a1, 62
 	lui	a2, 49
+	slli	a1, a1, 62
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
 	ret

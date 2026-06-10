@@ -18,21 +18,21 @@ func000000000000001f:
 
 func000000000000003f:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a1, a1, 16
+	zext.b	a0, a0
+	lui	a2, 4096
 	or	a0, a0, a1
-	lui	a1, 4096
-	addi	a1, a1, 512
+	addi	a1, a2, 512
 	or	a0, a0, a1
 	ret
 
 func000000000000003e:
 	andi	a1, a1, 143
-	zext.b	a0, a0
 	slli	a1, a1, 6
+	zext.b	a0, a0
+	lui	a2, 14
 	or	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	or	a0, a0, a1
 	ret
 

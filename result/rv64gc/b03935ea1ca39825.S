@@ -8,8 +8,8 @@ func0000000000000000:
 
 func0000000000000002:
 	slli	a1, a1, 48
-	slli	a0, a0, 16
 	srli	a1, a1, 48
+	slli	a0, a0, 16
 	or	a0, a0, a1
 	lui	a1, 349525
 	srli	a0, a0, 1

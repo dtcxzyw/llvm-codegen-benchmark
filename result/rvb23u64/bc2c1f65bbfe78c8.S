@@ -1,6 +1,6 @@
 func000000000000000e:
-	andi	a0, a0, 7
 	li	a1, -2
+	andi	a0, a0, 7
 	rol	a0, a1, a0
 	ret
 
@@ -11,8 +11,8 @@ func000000000000000d:
 	ret
 
 func000000000000000c:
-	andi	a0, a0, 6
 	li	a1, 63
+	andi	a0, a0, 6
 	sll	a0, a1, a0
 	not	a0, a0
 	ret

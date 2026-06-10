@@ -1,7 +1,7 @@
 func0000000000000021:
+	li	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 7
-	li	a0, 256
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	vmseq.vi	v0, v8, 0

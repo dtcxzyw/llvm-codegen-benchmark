@@ -1,7 +1,7 @@
 func000000000000c084:
-	snez	a2, a2
 	seqz	a1, a1
 	seqz	a0, a0
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -16,11 +16,11 @@ func000000000000c082:
 	ret
 
 func000000000000c0b0:
-	seqz	a1, a1
 	lui	a3, 8
 	addi	a3, a3, 3
 	xor	a0, a0, a3
 	or	a0, a0, a2
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -59,8 +59,8 @@ func0000000000008410:
 	.quad	8789745728267363600
 func000000000000c630:
 	lui	a3, %hi(.LCPI6_0)
-	lui	a4, %hi(.LCPI6_1)
 	ld	a3, %lo(.LCPI6_0)(a3)
+	lui	a4, %hi(.LCPI6_1)
 	ld	a4, %lo(.LCPI6_1)(a4)
 	lui	a5, %hi(.LCPI6_2)
 	ld	a5, %lo(.LCPI6_2)(a5)
@@ -127,20 +127,20 @@ func0000000000008420:
 func00000000000010b0:
 	addi	a2, a2, -14
 	addi	a1, a1, -16
-	addi	a0, a0, -16
 	seqz	a2, a2
 	seqz	a1, a1
+	addi	a0, a0, -16
 	or	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000004088:
-	sltiu	a2, a2, 2
 	lui	a3, 1
-	sltiu	a0, a0, 3
+	sltiu	a2, a2, 2
 	addi	a3, a3, -1122
 	xor	a1, a1, a3
+	sltiu	a0, a0, 3
 	seqz	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -155,19 +155,19 @@ func000000000000c204:
 	ret
 
 func000000000000c420:
-	snez	a2, a2
 	sltiu	a1, a1, 2
 	sltiu	a0, a0, 64
 	and	a0, a0, a1
+	snez	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000001602:
-	seqz	a2, a2
-	snez	a1, a1
 	li	a3, 3
+	seqz	a2, a2
 	slli	a3, a3, 32
+	snez	a1, a1
 	xor	a0, a0, a3
 	seqz	a0, a0
 	or	a1, a1, a2
@@ -176,11 +176,11 @@ func0000000000001602:
 
 func000000000000108c:
 	seqz	a2, a2
+	lui	a3, 24
 	seqz	a1, a1
+	addi	a3, a3, 1697
 	or	a1, a1, a2
-	lui	a2, 24
-	addi	a2, a2, 1697
-	slt	a0, a0, a2
+	slt	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

@@ -26,10 +26,10 @@ func0000000000000188:
 
 func0000000000000184:
 	slli.uw	a1, a1, 5
+	li	a2, -31
 	add	a0, a0, a1
-	li	a1, -31
-	zext.w	a1, a1
-	sltu	a0, a0, a1
+	zext.w	a2, a2
+	sltu	a0, a0, a2
 	ret
 
 func00000000000001a1:
@@ -61,9 +61,9 @@ func00000000000001ec:
 
 func0000000000000104:
 	slli	a1, a1, 32
+	lui	a2, 2441
 	add	a0, a0, a1
-	lui	a1, 2441
-	addi	a1, a1, 1664
+	addi	a1, a2, 1664
 	sltu	a0, a0, a1
 	ret
 

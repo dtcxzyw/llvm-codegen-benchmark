@@ -13,15 +13,15 @@ func000000000000078a:
 	ret
 
 func00000000000002aa:
-	sext.w	a0, a0
 	slli	a1, a1, 4
+	sext.w	a0, a0
 	addiw	a1, a1, -10
 	slt	a0, a1, a0
 	ret
 
 func00000000000007aa:
-	sext.w	a0, a0
 	slli	a1, a1, 1
+	sext.w	a0, a0
 	addiw	a1, a1, 7
 	slt	a0, a1, a0
 	ret

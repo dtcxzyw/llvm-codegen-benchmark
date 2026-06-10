@@ -2,10 +2,10 @@ func000000000000001d:
 	slli	a1, a1, 36
 	slli	a0, a0, 28
 	srli	a0, a0, 28
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 38
-	add	a0, a0, a1
+	slli	a2, a2, 38
+	add	a0, a0, a2
 	ret
 
 func0000000000000019:

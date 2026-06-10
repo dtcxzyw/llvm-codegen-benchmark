@@ -29,8 +29,8 @@ func0000000000000002:
 	ret
 
 func000000000000001c:
-	srli	a0, a0, 2
 	li	a1, -20
+	srli	a0, a0, 2
 	add.uw	a0, a1, a0
 	ret
 

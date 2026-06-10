@@ -54,8 +54,8 @@ func000000000000008a:
 func000000000000002a:
 	sext.w	a2, a0
 	sext.w	a1, a1
-	srliw	a0, a0, 31
 	xor	a1, a1, a2
+	srliw	a0, a0, 31
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
@@ -98,9 +98,9 @@ func000000000000018c:
 func0000000000000108:
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sltu	a1, a1, a0
-	sltiu	a0, a0, 8
-	xori	a0, a0, 1
+	sltiu	a2, a0, 8
+	sltu	a0, a1, a0
+	xori	a1, a2, 1
 	and	a0, a0, a1
 	ret
 

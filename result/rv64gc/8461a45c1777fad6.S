@@ -1,17 +1,17 @@
 func0000000000000000:
-	addi	a1, a1, 57
 	slli	a0, a0, 32
+	addi	a1, a1, 57
 	srli	a0, a0, 32
 	sll	a0, a0, a1
 	ret
 
 func0000000000000018:
-	addi	a1, a1, -9
 	li	a2, 1
-	slli	a0, a0, 32
 	slli	a2, a2, 32
+	addi	a1, a1, -9
 	addi	a2, a2, -9
 	addi	a2, a2, 8
+	slli	a0, a0, 32
 	and	a1, a1, a2
 	srli	a0, a0, 32
 	sll	a0, a0, a1

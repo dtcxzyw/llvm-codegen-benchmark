@@ -1,7 +1,7 @@
 func0000000000000074:
+	li	a0, 1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 1
 	vwaddu.vx	v10, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -9,9 +9,9 @@ func0000000000000074:
 	ret
 
 func0000000000000061:
+	li	a0, 1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 1
 	vwaddu.vx	v10, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -19,11 +19,10 @@ func0000000000000061:
 	ret
 
 func000000000000002c:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v9
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v12, v9
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -31,9 +30,9 @@ func000000000000002c:
 	ret
 
 func0000000000000078:
+	li	a0, 20
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 20
 	vwaddu.vx	v10, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -41,12 +40,11 @@ func0000000000000078:
 	ret
 
 func0000000000000134:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v9
 	li	a0, -48
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v12, v9
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -54,11 +52,10 @@ func0000000000000134:
 	ret
 
 func0000000000000021:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v9
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v12, v9
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -66,11 +63,10 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v9
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v12, v9
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -78,9 +74,9 @@ func000000000000002a:
 	ret
 
 func0000000000000079:
+	li	a0, 1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 1
 	vwaddu.vx	v10, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -88,11 +84,10 @@ func0000000000000079:
 	ret
 
 func0000000000000026:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v9
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -3
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v12, v9
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -100,9 +95,9 @@ func0000000000000026:
 	ret
 
 func00000000000001f8:
+	li	a0, 10
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 10
 	vwaddu.vx	v10, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -110,9 +105,9 @@ func00000000000001f8:
 	ret
 
 func0000000000000174:
+	li	a0, 1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 1
 	vwaddu.vx	v10, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -120,11 +115,10 @@ func0000000000000174:
 	ret
 
 func00000000000000b8:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v9
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v12, v9
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -132,9 +126,9 @@ func00000000000000b8:
 	ret
 
 func0000000000000178:
+	li	a0, 2
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v12, v9
-	li	a0, 2
 	vwaddu.vx	v10, v12, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8
@@ -142,11 +136,10 @@ func0000000000000178:
 	ret
 
 func00000000000001a4:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v9
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsetvli	zero, zero, e16, m1, ta, ma
+	vzext.vf2	v12, v9
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v12, v8

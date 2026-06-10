@@ -8,8 +8,8 @@ func000000000000000c:
 
 func0000000000000000:
 	add	a1, a1, a2
-	lui	a2, 8192
 	slliw	a1, a1, 16
+	lui	a2, 8192
 	or	a0, a0, a1
 	addi	a1, a2, 66
 	or	a0, a0, a1

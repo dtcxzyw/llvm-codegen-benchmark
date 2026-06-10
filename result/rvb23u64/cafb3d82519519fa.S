@@ -1,6 +1,6 @@
 func0000000000000001:
-	zext.h	a0, a0
 	lui	a1, 16
+	zext.h	a0, a0
 	addi	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -31,8 +31,8 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	zext.h	a0, a0
 	lui	a1, 5
+	zext.h	a0, a0
 	addi	a1, a1, -1719
 	xor	a0, a0, a1
 	snez	a0, a0

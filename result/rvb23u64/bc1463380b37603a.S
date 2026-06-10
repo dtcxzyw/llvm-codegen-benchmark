@@ -1,8 +1,8 @@
 func00000000000000f5:
-	andi	a1, a1, 1
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	slli	a2, a2, 4
+	andi	a1, a1, 1
 	addi	a2, a2, 400
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1

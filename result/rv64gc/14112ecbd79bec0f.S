@@ -1,10 +1,10 @@
 func0000000000000001:
-	andi	a3, a0, 1
-	lui	a0, 1047808
-	addi	a0, a0, -1
+	lui	a3, 1047808
+	andi	a4, a0, 1
+	addi	a0, a3, -1
 	and	a0, a0, a2
 	lui	a2, 512
-	bnez	a3, .LBB0_2
+	bnez	a4, .LBB0_2
 	mv	a2, a1
 .LBB0_2:
 	or	a0, a0, a2

@@ -14,10 +14,10 @@ func000000000000000f:
 	ret
 
 func000000000000002b:
+	srliw	a2, a2, 6
 	add	a0, a0, a1
-	srliw	a1, a2, 6
-	slli	a1, a1, 3
-	add	a0, a0, a1
+	slli	a2, a2, 3
+	add	a0, a0, a2
 	ret
 
 func000000000000002f:

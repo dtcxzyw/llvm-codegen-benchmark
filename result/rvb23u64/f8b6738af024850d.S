@@ -1,6 +1,6 @@
 func000000000000001f:
-	slliw	a1, a1, 16
 	lui	a2, 8304
+	slliw	a1, a1, 16
 	andn	a0, a0, a2
 	or	a0, a0, a1
 	bseti	a0, a0, 25

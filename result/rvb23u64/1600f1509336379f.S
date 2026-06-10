@@ -10,20 +10,20 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
-	addi	a0, a0, -1
 	li	a1, -2
+	addi	a0, a0, -1
 	rol	a0, a1, a0
 	ret
 
 func0000000000000002:
-	addi	a0, a0, 1
 	li	a1, -2
+	addi	a0, a0, 1
 	rol	a0, a1, a0
 	ret
 
 func000000000000000c:
-	addi	a0, a0, -16
 	lui	a1, 32
+	addi	a0, a0, -16
 	andi	a0, a0, -16
 	addi	a1, a1, -2
 	sll	a0, a1, a0
@@ -31,8 +31,8 @@ func000000000000000c:
 	ret
 
 func000000000000000e:
-	addi	a0, a0, 1
 	li	a1, -2
+	addi	a0, a0, 1
 	rol	a0, a1, a0
 	ret
 

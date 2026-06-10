@@ -3,8 +3,8 @@ func0000000000000038:
 	mv	a0, a1
 	bnez	a3, .LBB0_2
 	srliw	a0, a2, 7
-	lui	a1, 1048555
 	sltiu	a0, a0, 675
+	lui	a1, 1048555
 	addi	a0, a0, -1
 	addi	a1, a1, -384
 	and	a0, a0, a1
@@ -26,10 +26,10 @@ func000000000000002a:
 	andi	a3, a0, 1
 	mv	a0, a1
 	bnez	a3, .LBB2_2
-	sext.w	a0, a2
-	lui	a1, 1
-	addi	a1, a1, -496
-	slt	a0, a1, a0
+	lui	a0, 1
+	sext.w	a1, a2
+	addi	a0, a0, -496
+	slt	a0, a0, a1
 	lui	a1, 1048575
 	neg	a0, a0
 	addi	a1, a1, 496

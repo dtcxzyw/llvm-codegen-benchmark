@@ -245,9 +245,9 @@ func0000000000000039:
 	ret
 
 func0000000000000018:
-	zext.b	a1, a1
 	lui	a2, 1048574
 	addi	a2, a2, -1809
+	zext.b	a1, a1
 	addw	a0, a0, a2
 	sltu	a0, a1, a0
 	ret

@@ -1,7 +1,7 @@
 func0000000000000088:
 	fmv.d.x	fa5, zero
-	feq.d	a0, fa2, fa5
-	feq.d	a1, fa0, fa1
+	feq.d	a0, fa0, fa1
+	feq.d	a1, fa2, fa5
 	and	a0, a0, a1
 	ret
 
@@ -25,8 +25,8 @@ func000000000000004c:
 
 func00000000000000c4:
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa2
-	flt.d	a1, fa1, fa0
+	flt.d	a0, fa1, fa0
+	fle.d	a1, fa5, fa2
 	and	a0, a0, a1
 	ret
 
@@ -51,15 +51,15 @@ func0000000000000042:
 
 func00000000000000c2:
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa2
-	flt.d	a1, fa0, fa1
+	flt.d	a0, fa0, fa1
+	fle.d	a1, fa5, fa2
 	and	a0, a0, a1
 	ret
 
 func000000000000002a:
 	fmv.d.x	fa5, zero
-	flt.d	a0, fa2, fa5
-	fle.d	a1, fa0, fa1
+	fle.d	a0, fa0, fa1
+	flt.d	a1, fa2, fa5
 	and	a0, a0, a1
 	ret
 

@@ -23,10 +23,10 @@ func0000000000000084:
 	ret
 
 func00000000000000cc:
-	sext.w	a2, a0
-	sub	a0, a0, a1
-	srliw	a0, a0, 31
-	czero.eqz	a0, a0, a2
+	sub	a1, a0, a1
+	sext.w	a0, a0
+	srliw	a1, a1, 31
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000ca:

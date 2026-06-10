@@ -1,7 +1,7 @@
 func000000000000006d:
+	li	a0, 511
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v12, 0
-	li	a0, 511
 	vand.vx	v10, v10, a0
 	lui	a0, 1048400
 	addi	a0, a0, 1733
@@ -11,9 +11,9 @@ func000000000000006d:
 	ret
 
 func000000000000006c:
+	li	a0, 511
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v12, 0
-	li	a0, 511
 	vand.vx	v10, v10, a0
 	lui	a0, 1048400
 	addi	a0, a0, 1733

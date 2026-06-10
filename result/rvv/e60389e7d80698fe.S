@@ -35,10 +35,10 @@ func0000000000000024:
 
 func0000000000000035:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfle.vv	v20, v16, v8
-	vmfle.vv	v16, v8, v12
-	vmnot.m	v8, v16
-	vmandn.mm	v0, v8, v20
+	vmfle.vv	v20, v8, v12
+	vmfle.vv	v12, v16, v8
+	vmnot.m	v8, v20
+	vmandn.mm	v0, v8, v12
 	ret
 
 func0000000000000088:
@@ -57,10 +57,10 @@ func0000000000000044:
 
 func00000000000000bd:
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vv	v20, v16, v8
-	vmflt.vv	v16, v8, v12
-	vmnot.m	v8, v16
-	vmandn.mm	v0, v8, v20
+	vmflt.vv	v20, v8, v12
+	vmflt.vv	v12, v16, v8
+	vmnot.m	v8, v20
+	vmandn.mm	v0, v8, v12
 	ret
 
 func000000000000004d:

@@ -11,9 +11,9 @@ func0000000000000014:
 	mul	a2, a0, a3
 	mulhu	a3, a0, a4
 	mul	a1, a1, a4
+	mul	a0, a0, a4
 	add	a2, a2, a3
 	add	a1, a1, a2
-	mul	a0, a0, a4
 	ret
 
 .LCPI1_0:
@@ -24,7 +24,7 @@ func000000000000001e:
 	or	a1, a1, a2
 	mul	a1, a1, a3
 	mulhu	a2, a0, a3
-	add	a1, a1, a2
 	mul	a0, a0, a3
+	add	a1, a1, a2
 	ret
 

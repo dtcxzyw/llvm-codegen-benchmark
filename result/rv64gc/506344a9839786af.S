@@ -1,7 +1,7 @@
 func0000000000000042:
 	sext.w	a2, a2
-	andi	a1, a1, 4
 	seqz	a2, a2
+	andi	a1, a1, 4
 	and	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -28,8 +28,8 @@ func0000000000000318:
 
 func0000000000000058:
 	sext.w	a2, a2
-	slli	a1, a1, 51
 	seqz	a2, a2
+	slli	a1, a1, 51
 	and	a0, a0, a2
 	srli	a1, a1, 63
 	or	a0, a0, a1

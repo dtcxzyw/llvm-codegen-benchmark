@@ -1,6 +1,7 @@
 func00000000000001e1:
-	sext.w	a2, a0
+	mv	a2, a0
 	li	a0, 1
+	sext.w	a2, a2
 	bgeu	a0, a2, .LBB0_2
 	neg	a0, a1
 	li	a1, -1

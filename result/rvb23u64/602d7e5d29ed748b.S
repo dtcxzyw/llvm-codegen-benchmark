@@ -1,6 +1,6 @@
 func000000000000000f:
-	andi	a2, a2, 1
 	sh3add	a0, a1, a0
+	andi	a2, a2, 1
 	sh2add	a0, a2, a0
 	ret
 

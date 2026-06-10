@@ -6,8 +6,8 @@ func0000000000000000:
 	ret
 
 func0000000000000010:
-	sub	a1, a1, a0
 	lui	a2, 262144
+	sub	a1, a1, a0
 	addi	a2, a2, -1
 	add	a1, a1, a2
 	lui	a2, 786432

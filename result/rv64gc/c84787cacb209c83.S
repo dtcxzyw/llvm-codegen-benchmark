@@ -14,8 +14,8 @@ func0000000000000021:
 
 func0000000000000114:
 	sub	a1, a1, a2
-	andi	a0, a0, 192
 	sltiu	a1, a1, 21
+	andi	a0, a0, 192
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -23,8 +23,8 @@ func0000000000000114:
 
 func0000000000000101:
 	sub	a1, a1, a2
-	andi	a0, a0, 8
 	sltiu	a1, a1, 4
+	andi	a0, a0, 8
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1

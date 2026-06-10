@@ -21,8 +21,8 @@ func000000000000005c:
 
 func00000000000000de:
 	sext.w	a2, a2
-	slli	a2, a2, 1
 	sh1add	a0, a1, a0
+	slli	a2, a2, 1
 	sub	a0, a0, a2
 	addi	a0, a0, 128
 	ret
@@ -48,8 +48,8 @@ func0000000000000050:
 
 func00000000000000d0:
 	sext.w	a2, a2
-	slli	a2, a2, 1
 	sh1add	a0, a1, a0
+	slli	a2, a2, 1
 	sub	a0, a0, a2
 	addi	a0, a0, 128
 	ret

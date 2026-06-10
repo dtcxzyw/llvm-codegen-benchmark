@@ -1,7 +1,7 @@
 func0000000000000000:
 	li	a3, 632
-	slli	a0, a0, 3
 	mul	a2, a2, a3
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 153
@@ -48,11 +48,11 @@ func00000000000003ff:
 
 func0000000000000155:
 	lui	a3, 1048573
+	addi	a3, a3, 702
+	mul	a1, a1, a3
 	slli	a0, a0, 13
 	add	a0, a0, a2
 	lui	a2, 32
-	addi	a3, a3, 702
-	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

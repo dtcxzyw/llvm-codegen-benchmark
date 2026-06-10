@@ -1,7 +1,7 @@
 func000000000000000d:
+	lui	a2, 1
 	sub	a1, a1, a0
-	lui	a0, 1
-	addi	a0, a0, 704
+	addi	a0, a2, 704
 	add	a0, a0, a1
 	slli	a0, a0, 48
 	srli	a0, a0, 48

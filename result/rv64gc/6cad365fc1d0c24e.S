@@ -1,7 +1,7 @@
 func0000000000000001:
 	add	a1, a1, a2
-	slli	a0, a0, 48
 	slli	a1, a1, 48
+	slli	a0, a0, 48
 	srli	a1, a1, 32
 	srli	a0, a0, 48
 	or	a0, a0, a1
@@ -17,16 +17,19 @@ func0000000000000019:
 	or	a0, a0, a1
 	ret
 
+.LCPI2_0:
+	.quad	1080863974993432320
 func000000000000001d:
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
+	lui	a4, 61440
+	addi	a4, a4, 15
 	add	a1, a1, a2
-	lui	a2, 61440
+	slli	a4, a4, 24
 	slli	a1, a1, 8
-	addi	a2, a2, 15
-	slli	a2, a2, 24
-	addi	a2, a2, 15
-	slli	a3, a2, 8
+	addi	a4, a4, 15
 	and	a1, a1, a3
-	and	a0, a0, a2
+	and	a0, a0, a4
 	or	a0, a0, a1
 	ret
 
@@ -40,9 +43,9 @@ func000000000000000b:
 
 func000000000000001f:
 	add	a1, a1, a2
-	slli	a0, a0, 48
 	slli	a1, a1, 15
 	srliw	a1, a1, 16
+	slli	a0, a0, 48
 	slli	a1, a1, 16
 	srli	a0, a0, 48
 	or	a0, a0, a1
@@ -50,8 +53,8 @@ func000000000000001f:
 
 func0000000000000011:
 	add	a1, a1, a2
-	srliw	a0, a0, 31
 	slli	a1, a1, 33
+	srliw	a0, a0, 31
 	srli	a1, a1, 1
 	slli	a0, a0, 31
 	or	a0, a0, a1

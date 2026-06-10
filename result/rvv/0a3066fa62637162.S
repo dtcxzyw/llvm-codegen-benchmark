@@ -1,17 +1,17 @@
 func000000000000018a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsne.vi	v18, v16, 2
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfle.vv	v16, v8, v12
-	vmorn.mm	v0, v18, v16
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmfle.vv	v18, v8, v12
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsne.vi	v8, v16, 2
+	vmorn.mm	v0, v8, v18
 	ret
 
 func0000000000000186:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsne.vi	v18, v16, 3
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfle.vv	v16, v12, v8
-	vmorn.mm	v0, v18, v16
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmfle.vv	v18, v12, v8
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsne.vi	v8, v16, 3
+	vmorn.mm	v0, v8, v18
 	ret
 
 func00000000000001c2:
@@ -31,11 +31,11 @@ func00000000000002c2:
 	ret
 
 func00000000000000da:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v18, v16, 0
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmflt.vv	v16, v8, v12
-	vmorn.mm	v0, v18, v16
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmflt.vv	v18, v8, v12
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsle.vi	v8, v16, 0
+	vmorn.mm	v0, v8, v18
 	ret
 
 func0000000000000108:
@@ -65,11 +65,11 @@ func0000000000000202:
 	ret
 
 func0000000000000030:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v18, v16, 0
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfeq.vv	v16, v8, v12
-	vmor.mm	v0, v16, v18
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmfeq.vv	v18, v8, v12
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vi	v8, v16, 0
+	vmor.mm	v0, v18, v8
 	ret
 
 func0000000000000102:
@@ -113,18 +113,18 @@ func00000000000002d8:
 	ret
 
 func0000000000000194:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsne.vi	v18, v16, 0
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfle.vv	v16, v8, v12
-	vmor.mm	v0, v16, v18
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmfle.vv	v18, v8, v12
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsne.vi	v8, v16, 0
+	vmor.mm	v0, v18, v8
 	ret
 
 func0000000000000036:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v18, v16, 0
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmflt.vv	v16, v12, v8
-	vmorn.mm	v0, v18, v16
+	vsetivli	zero, 8, e64, m4, ta, ma
+	vmflt.vv	v18, v12, v8
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vi	v8, v16, 0
+	vmorn.mm	v0, v8, v18
 	ret
 

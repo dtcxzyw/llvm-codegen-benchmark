@@ -11,11 +11,11 @@ func0000000000000021:
 	slli	a2, a2, 17
 	srli	a1, a1, 47
 	srli	a2, a2, 17
-	xor	a0, a0, a2
-	li	a2, -5
+	li	a3, -5
 	slli	a1, a1, 47
-	slli	a2, a2, 47
-	xor	a1, a1, a2
+	slli	a3, a3, 47
+	xor	a0, a0, a2
+	xor	a1, a1, a3
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

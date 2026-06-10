@@ -21,27 +21,27 @@ func0000000000000a53:
 
 func0000000000000529:
 	sext.w	a1, a1
-	lui	a2, 8
-	slti	a3, a1, 1240
-	addi	a4, a2, 1131
-	xori	a3, a3, 1
+	slti	a2, a1, 1240
+	xori	a2, a2, 1
+	lui	a3, 8
+	slli	a2, a2, 10
+	addi	a4, a3, 1131
+	addi	a2, a2, 107
 	slt	a1, a4, a1
-	slli	a3, a3, 10
-	addi	a3, a3, 107
-	czero.eqz	a2, a2, a1
-	czero.nez	a1, a3, a1
-	or	a1, a1, a2
+	czero.eqz	a3, a3, a1
+	czero.nez	a1, a2, a1
+	or	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 
 func00000000000000d1:
-	sext.w	a2, a1
-	addiw	a1, a1, -6
-	seqz	a1, a1
-	slli	a1, a1, 1
-	sltiu	a2, a2, 2
-	addi	a1, a1, -1
-	czero.nez	a1, a1, a2
+	addiw	a2, a1, -6
+	seqz	a2, a2
+	sext.w	a1, a1
+	slli	a2, a2, 1
+	sltiu	a1, a1, 2
+	addi	a2, a2, -1
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
@@ -80,12 +80,12 @@ func0000000000000a51:
 	ret
 
 func0000000000000084:
-	sext.w	a2, a1
-	addiw	a1, a1, -1
-	seqz	a1, a1
-	slli	a1, a1, 1
-	addi	a1, a1, -1
-	czero.eqz	a1, a1, a2
+	addiw	a2, a1, -1
+	seqz	a2, a2
+	slli	a2, a2, 1
+	sext.w	a1, a1
+	addi	a2, a2, -1
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 2
 	ret
@@ -96,9 +96,9 @@ func0000000000000528:
 	slti	a3, a1, 80
 	czero.eqz	a2, a2, a3
 	lui	a3, 1048575
+	addi	a2, a2, -1980
 	slti	a1, a1, 1980
 	addi	a3, a3, 216
-	addi	a2, a2, -1980
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3
@@ -106,13 +106,13 @@ func0000000000000528:
 	ret
 
 func00000000000000a0:
-	sext.w	a2, a1
-	addiw	a1, a1, -1
+	addiw	a2, a1, -1
 	li	a3, 3
-	czero.eqz	a1, a3, a1
-	sltiu	a2, a2, 2
-	addi	a1, a1, 2
-	czero.eqz	a1, a1, a2
+	sext.w	a1, a1
+	czero.eqz	a2, a3, a2
+	sltiu	a1, a1, 2
+	addi	a2, a2, 2
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
@@ -120,8 +120,8 @@ func00000000000000a0:
 func000000000000031b:
 	sext.w	a1, a1
 	slti	a2, a1, 100
-	slti	a1, a1, 10
 	li	a3, 2
+	slti	a1, a1, 10
 	sub	a3, a3, a2
 	czero.nez	a1, a3, a1
 	add	a0, a0, a1
@@ -139,13 +139,13 @@ func0000000000000a50:
 	ret
 
 func0000000000000a18:
-	sext.w	a2, a1
-	srliw	a1, a1, 16
-	seqz	a1, a1
-	xori	a1, a1, 3
-	slti	a2, a2, 256
-	addi	a1, a1, -1
-	czero.nez	a1, a1, a2
+	srliw	a2, a1, 16
+	seqz	a2, a2
+	sext.w	a1, a1
+	xori	a2, a2, 3
+	slti	a1, a1, 256
+	addi	a2, a2, -1
+	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret

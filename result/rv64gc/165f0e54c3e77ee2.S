@@ -11,9 +11,9 @@ func0000000000000005:
 func0000000000000000:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	lui	a2, 16
 	sub	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
+	addi	a1, a2, -1
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
@@ -42,9 +42,9 @@ func0000000000000006:
 func0000000000000002:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	lui	a2, 16
 	sub	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
+	addi	a1, a2, -1
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1
 .LBB4_2:

@@ -1,6 +1,6 @@
 func0000000000000002:
-	srli	a1, a1, 1
 	lui	a2, 349525
+	srli	a1, a1, 1
 	addi	a2, a2, 1364
 	and	a1, a1, a2
 	or	a0, a0, a1

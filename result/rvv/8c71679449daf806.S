@@ -28,9 +28,9 @@ func0000000000000024:
 	vfdiv.vv	v24, v8, v16
 	fli.d	fa5, 1.0
 	vmflt.vf	v0, v16, fa5
+	vmerge.vvm	v8, v24, v8, v0
 	lui	a0, 4109
 	slli	a0, a0, 38
-	vmerge.vvm	v8, v24, v8, v0
 	fmv.d.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret

@@ -1,7 +1,7 @@
 func000000000000014c:
 	sext.w	a2, a2
-	snez	a1, a1
 	slti	a2, a2, 3
+	snez	a1, a1
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -25,8 +25,8 @@ func000000000000002c:
 
 func0000000000000101:
 	sext.w	a2, a2
-	seqz	a1, a1
 	sltiu	a2, a2, 3
+	seqz	a1, a1
 	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

@@ -23,8 +23,8 @@ func000000000000000f:
 	ret
 
 func0000000000000004:
-	addi	a1, a1, -16
 	lui	a2, 32
+	addi	a1, a1, -16
 	addi	a2, a2, -2
 	sll	a1, a2, a1
 	not	a1, a1

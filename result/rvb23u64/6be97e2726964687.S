@@ -10,9 +10,9 @@ func0000000000000042:
 	ret
 
 func00000000000000a5:
-	fsub.s	fa4, fa0, fa1
 	lui	a0, 988319
 	addi	a0, a0, 714
+	fsub.s	fa4, fa0, fa1
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa4, fa5
 	bnez	a0, .LBB1_2

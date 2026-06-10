@@ -24,9 +24,9 @@ func0000000000000308:
 	ret
 
 func0000000000000302:
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 0
-	li	a0, 16
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

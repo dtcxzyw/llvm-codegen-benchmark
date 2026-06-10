@@ -5,22 +5,22 @@ func000000000000000f:
 	ret
 
 func000000000000001d:
+	lui	a3, 1024
 	sext.w	a2, a2
+	addi	a3, a3, -1
 	add	a1, a1, a2
-	lui	a2, 1024
-	addi	a2, a2, -1
-	slli	a2, a2, 12
-	and	a1, a1, a2
+	slli	a3, a3, 12
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 
 func000000000000001c:
+	lui	a3, 1024
 	sext.w	a2, a2
+	addi	a3, a3, -1
 	add	a1, a1, a2
-	lui	a2, 1024
-	addi	a2, a2, -1
-	slli	a2, a2, 12
-	and	a1, a1, a2
+	slli	a3, a3, 12
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 
@@ -50,10 +50,10 @@ func0000000000000004:
 func000000000000000c:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	lui	a3, 1048544
 	add	a1, a1, a2
-	lui	a2, 1048544
-	srli	a2, a2, 12
-	and	a1, a1, a2
+	srli	a3, a3, 12
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

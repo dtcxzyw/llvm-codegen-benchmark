@@ -1,6 +1,6 @@
 func000000000000002a:
-	andi	a1, a1, 15
 	li	a2, -1
+	andi	a1, a1, 15
 	srli	a2, a2, 1
 	xor	a1, a1, a2
 	slt	a0, a1, a0

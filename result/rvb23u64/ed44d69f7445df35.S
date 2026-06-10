@@ -10,12 +10,12 @@ func0000000000000000:
 .LCPI1_0:
 	.quad	0x3fb999999999999a
 func0000000000000002:
+	lui	a1, 1044489
 	fcvt.d.lu	fa5, a0
 	lui	a0, %hi(.LCPI1_0)
+	slli	a1, a1, 38
 	fld	fa4, %lo(.LCPI1_0)(a0)
-	lui	a0, 1044489
-	slli	a0, a0, 38
-	fmv.d.x	fa3, a0
+	fmv.d.x	fa3, a1
 	fmadd.d	fa0, fa5, fa4, fa3
 	ret
 

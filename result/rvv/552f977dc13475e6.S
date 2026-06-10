@@ -79,9 +79,9 @@ func0000000000000001:
 	ret
 
 func000000000000000a:
+	li	a0, -64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
-	li	a0, -64
 	vadd.vv	v12, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v12

@@ -34,14 +34,14 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	sext.w	a2, a1
-	lui	a3, 1048320
-	addi	a4, a3, -1
-	sltu	a2, a4, a2
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
+	lui	a2, 1048320
+	sext.w	a3, a1
+	addi	a4, a2, -1
+	sltu	a3, a4, a3
+	czero.nez	a1, a1, a3
+	czero.eqz	a0, a0, a3
 	or	a0, a0, a1
-	and	a0, a0, a3
+	and	a0, a0, a2
 	ret
 
 func000000000000000a:

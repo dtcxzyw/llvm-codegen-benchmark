@@ -1,12 +1,12 @@
 func00000000000000e1:
 	lui	a1, 32
-	slli	a2, a0, 16
 	addi	a1, a1, -31
-	sltu	a0, a1, a0
-	lui	a1, 983055
-	neg	a0, a0
-	slli	a1, a1, 5
-	and	a0, a0, a1
-	add	a0, a0, a2
+	sltu	a1, a1, a0
+	lui	a2, 983055
+	neg	a1, a1
+	slli	a2, a2, 5
+	slli	a0, a0, 16
+	and	a1, a1, a2
+	add	a0, a0, a1
 	ret
 

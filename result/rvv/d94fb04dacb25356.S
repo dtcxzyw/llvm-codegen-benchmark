@@ -25,9 +25,9 @@ func0000000000000041:
 	ret
 
 func0000000000000024:
-	li	a0, -87
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsleu.vi	v0, v10, 9
+	li	a0, -87
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0

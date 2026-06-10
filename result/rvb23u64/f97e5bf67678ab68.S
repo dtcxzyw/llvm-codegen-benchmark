@@ -1,7 +1,7 @@
 func0000000000000184:
 	zext.b	a0, a0
-	bexti	a1, a1, 11
 	addi	a0, a0, -58
+	bexti	a1, a1, 11
 	sltiu	a0, a0, -2
 	and	a0, a0, a1
 	ret

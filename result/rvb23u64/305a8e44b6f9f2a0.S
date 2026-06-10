@@ -11,11 +11,11 @@ func000000000000000d:
 	ret
 
 func0000000000000005:
+	lui	a3, 699051
+	addi	a3, a3, -1365
 	sub	a2, a2, a1
-	lui	a1, 699051
+	slli	a1, a3, 32
 	srai	a2, a2, 3
-	addi	a1, a1, -1365
-	slli	a3, a1, 32
 	add	a1, a1, a3
 	mul	a1, a1, a2
 	add.uw	a0, a0, a1

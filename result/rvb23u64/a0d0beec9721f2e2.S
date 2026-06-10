@@ -5,8 +5,8 @@ func0000000000000c28:
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	lui	a3, 16
-	addi	a3, a3, -16
 	or	a1, a1, a2
+	addi	a3, a3, -16
 	sltu	a2, a3, a1
 	slli	a1, a1, 16
 	czero.nez	a1, a1, a2

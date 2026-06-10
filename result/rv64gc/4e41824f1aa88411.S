@@ -27,8 +27,8 @@ func0000000000000018:
 	ret
 
 func0000000000000004:
-	add	a1, a1, a0
 	lui	a2, 1048512
+	add	a1, a1, a0
 	addi	a2, a2, 16
 	addw	a1, a1, a2
 	sext.w	a0, a0

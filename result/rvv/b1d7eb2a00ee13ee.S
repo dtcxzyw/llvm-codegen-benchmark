@@ -8,8 +8,8 @@ func0000000000000060:
 
 func0000000000000065:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v0, v10, 0
 	vmv.v.i	v12, -1
+	vmsle.vi	v0, v10, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12

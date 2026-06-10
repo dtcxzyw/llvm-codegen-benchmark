@@ -1,21 +1,21 @@
 func000000000000000b:
 	li	a2, -1025
-	or	a0, a0, a1
 	slli	a2, a2, 52
 	fmv.d.x	fa5, a2
-	flt.d	a1, fa5, fa0
-	xori	a1, a1, 1
+	flt.d	a2, fa5, fa0
+	or	a0, a0, a1
+	xori	a1, a2, 1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000000d:
 	li	a2, 1031
-	or	a0, a0, a1
 	slli	a2, a2, 52
 	fmv.d.x	fa5, a2
-	flt.d	a1, fa0, fa5
-	xori	a1, a1, 1
+	flt.d	a2, fa0, fa5
+	or	a0, a0, a1
+	xori	a1, a2, 1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

@@ -6,38 +6,38 @@ func0000000000000030:
 	ret
 
 func000000000000000d:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
 
 func0000000000000005:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
 
 func0000000000000000:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
 
 func0000000000000004:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
 
 func000000000000000f:
-	add.uw	a0, a2, a0
 	zext.w	a1, a1
+	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
 
 func000000000000001d:
-	add.uw	a0, a2, a0
 	sext.w	a1, a1
+	add.uw	a0, a2, a0
 	sub	a0, a0, a1
 	ret
 

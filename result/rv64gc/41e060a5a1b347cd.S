@@ -9,9 +9,9 @@ func0000000000000018:
 func0000000000000002:
 	lui	a1, 8
 	addi	a1, a1, -256
+	lui	a2, 6
 	and	a0, a0, a1
-	lui	a1, 6
-	addi	a1, a1, -768
+	addi	a1, a2, -768
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -32,18 +32,18 @@ func0000000000000003:
 	ret
 
 func0000000000000031:
-	sext.w	a3, a1
-	li	a1, 9
-	slli	a4, a1, 8
-	bltu	a4, a3, .LBB3_2
-	andi	a1, a2, 15
+	li	a3, 9
+	sext.w	a1, a1
+	slli	a4, a3, 8
+	bltu	a4, a1, .LBB3_2
+	andi	a3, a2, 15
 .LBB3_2:
-	or	a0, a0, a1
+	or	a0, a0, a3
 	ret
 
 func0000000000000015:
-	sext.w	a1, a1
 	lui	a3, 8
+	sext.w	a1, a1
 	addi	a3, a3, -641
 	bge	a3, a1, .LBB4_2
 	li	a1, 8

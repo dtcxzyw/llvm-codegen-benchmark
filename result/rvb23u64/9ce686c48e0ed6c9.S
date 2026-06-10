@@ -1,13 +1,13 @@
 func0000000000000070:
-	add	a0, a0, a1
 	sext.h	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 5
 	ret
 
 func000000000000007f:
-	add	a0, a0, a1
 	sext.h	a2, a2
+	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 5
 	ret

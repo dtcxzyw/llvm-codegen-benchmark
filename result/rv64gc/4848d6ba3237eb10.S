@@ -30,9 +30,9 @@ func000000000000002c:
 	ret
 
 func00000000000000ca:
-	slt	a1, a0, a1
-	srli	a0, a0, 63
-	not	a0, a0
+	srli	a2, a0, 63
+	slt	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -61,16 +61,16 @@ func0000000000000294:
 	ret
 
 func0000000000000108:
-	sltu	a1, a1, a0
-	srli	a0, a0, 11
-	snez	a0, a0
+	srli	a2, a0, 11
+	sltu	a0, a1, a0
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000088:
-	sltu	a1, a0, a1
-	srli	a0, a0, 12
-	snez	a0, a0
+	srli	a2, a0, 12
+	sltu	a0, a0, a1
+	snez	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -82,9 +82,9 @@ func000000000000018c:
 	ret
 
 func00000000000000c4:
-	slt	a1, a0, a1
-	srli	a0, a0, 31
-	seqz	a0, a0
+	srli	a2, a0, 31
+	slt	a0, a0, a1
+	seqz	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -96,9 +96,9 @@ func00000000000000aa:
 	ret
 
 func0000000000000298:
-	sltu	a1, a0, a1
-	sltiu	a0, a0, 2
-	not	a0, a0
+	sltiu	a2, a0, 2
+	sltu	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -153,9 +153,9 @@ func000000000000002a:
 	ret
 
 func000000000000030a:
-	sltu	a1, a1, a0
-	slti	a0, a0, 2
-	not	a0, a0
+	slti	a2, a0, 2
+	sltu	a0, a1, a0
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -173,9 +173,9 @@ func000000000000032c:
 	ret
 
 func000000000000028a:
-	sltu	a1, a0, a1
-	srli	a0, a0, 63
-	not	a0, a0
+	srli	a2, a0, 63
+	sltu	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

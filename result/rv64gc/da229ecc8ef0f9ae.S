@@ -35,33 +35,33 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
-	sext.w	a1, a1
 	lui	a2, 524288
+	sext.w	a1, a1
+	andi	a0, a0, 1
 	seqz	a1, a1
 	addi	a2, a2, 64
 	addi	a1, a1, -1
-	and	a1, a1, a2
-	lui	a2, 262144
 	addi	a0, a0, -1
-	addi	a2, a2, 256
+	lui	a3, 262144
 	andi	a0, a0, 16
-	or	a0, a0, a2
+	addi	a3, a3, 256
+	and	a1, a1, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000000005:
-	andi	a2, a0, 1
-	sext.w	a1, a1
+	sext.w	a2, a1
+	andi	a1, a0, 1
 	lui	a0, 8192
-	beqz	a1, .LBB3_2
+	beqz	a2, .LBB3_2
 	lui	a0, 155904
 .LBB3_2:
-	addi	a2, a2, -1
-	lui	a1, 131328
+	addi	a1, a1, -1
+	lui	a2, 131328
+	lui	a3, 262144
 	and	a1, a1, a2
-	lui	a2, 262144
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

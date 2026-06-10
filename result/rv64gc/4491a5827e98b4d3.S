@@ -39,10 +39,10 @@ func0000000000000004:
 
 func000000000000004a:
 	lui	a3, 4096
+	lui	a4, 8192
 	addw	a2, a2, a3
-	lui	a3, 8192
-	addi	a3, a3, -1
-	blt	a3, a2, .LBB5_2
+	addi	a4, a4, -1
+	blt	a4, a2, .LBB5_2
 	mv	a0, a1
 .LBB5_2:
 	ret

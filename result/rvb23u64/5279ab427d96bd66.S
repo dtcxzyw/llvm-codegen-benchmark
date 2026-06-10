@@ -1,10 +1,10 @@
 func0000000000000000:
 	sext.w	a1, a1
 	sext.w	a0, a0
+	li	a2, 5
 	min	a0, a0, a1
-	li	a1, 5
-	slli	a1, a1, 9
-	min	a0, a0, a1
+	slli	a2, a2, 9
+	min	a0, a0, a2
 	ret
 
 func0000000000000002:

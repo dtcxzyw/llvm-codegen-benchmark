@@ -1,7 +1,7 @@
 func0000000000000184:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v10, 18
-	li	a0, 32
 	vxor.vv	v10, v12, v10
 	vsll.vx	v8, v8, a0
 	vnot.v	v8, v8
@@ -9,9 +9,9 @@ func0000000000000184:
 	ret
 
 func0000000000000004:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v10, 18
-	li	a0, 32
 	vxor.vv	v10, v12, v10
 	vsll.vx	v8, v8, a0
 	vnot.v	v8, v8
@@ -19,9 +19,9 @@ func0000000000000004:
 	ret
 
 func0000000000000084:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v12, v10, 18
-	li	a0, 32
 	vxor.vv	v10, v12, v10
 	vsll.vx	v8, v8, a0
 	vnot.v	v8, v8

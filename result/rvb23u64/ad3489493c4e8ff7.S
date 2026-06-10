@@ -1,8 +1,8 @@
 func0000000000000021:
 	zext.h	a0, a0
-	andi	a1, a1, 1
 	addi	a0, a0, -2048
 	seqz	a0, a0
+	andi	a1, a1, 1
 	slli	a0, a0, 2
 	sub	a0, a0, a1
 	addi	a0, a0, 2
@@ -12,10 +12,10 @@ func0000000000000028:
 	zext.h	a0, a0
 	andi	a1, a1, 1
 	li	a2, -10
-	czero.nez	a1, a2, a1
 	sltiu	a0, a0, 830
-	addi	a1, a1, 266
+	czero.nez	a1, a2, a1
 	addi	a0, a0, -1
+	addi	a1, a1, 266
 	andi	a0, a0, 33
 	or	a0, a0, a1
 	ret

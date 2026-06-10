@@ -55,8 +55,8 @@ func0000000000000302:
 	ret
 
 func0000000000000282:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	slti	a2, a2, 8
 	xori	a2, a2, 1
 	seqz	a1, a1
@@ -74,9 +74,9 @@ func0000000000000108:
 	ret
 
 func0000000000000308:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	lui	a3, 576
+	sext.w	a1, a1
 	xor	a2, a2, a3
 	snez	a2, a2
 	sltiu	a1, a1, -4

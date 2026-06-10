@@ -1,6 +1,6 @@
 func000000000000003f:
-	addi	a2, a2, 7
 	bseti	a3, zero, 33
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	addi	a3, a3, 4
@@ -18,18 +18,18 @@ func000000000000000a:
 	ret
 
 func000000000000002f:
-	addi	a2, a2, 1
 	slli	a1, a1, 34
 	srli	a1, a1, 34
 	sh1add	a0, a1, a0
+	addi	a2, a2, 1
 	sh1add.uw	a0, a2, a0
 	ret
 
 func000000000000000f:
-	addi	a2, a2, 2
 	slli	a1, a1, 34
 	srli	a1, a1, 34
 	sh1add	a0, a1, a0
+	addi	a2, a2, 2
 	sh1add.uw	a0, a2, a0
 	ret
 

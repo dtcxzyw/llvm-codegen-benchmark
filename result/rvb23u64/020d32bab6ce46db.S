@@ -1,7 +1,7 @@
 func0000000000000009:
+	li	a3, 4
 	add	a1, a1, a2
-	li	a2, 4
-	min	a0, a0, a2
+	min	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

@@ -1,10 +1,10 @@
 func0000000000000000:
 	slli	a1, a5, 9
 	srli	a4, a4, 55
-	srli	a5, a5, 55
 	or	a1, a1, a4
-	add	a3, a3, a5
+	srli	a5, a5, 55
 	add	a1, a1, a2
+	add	a3, a3, a5
 	sltu	a2, a1, a2
 	add	a2, a2, a3
 	slli	a2, a2, 8
@@ -16,10 +16,10 @@ func0000000000000000:
 func000000000000000c:
 	slli	a1, a5, 8
 	srli	a4, a4, 56
-	srli	a5, a5, 56
 	or	a1, a1, a4
-	add	a3, a3, a5
+	srli	a5, a5, 56
 	add	a1, a1, a2
+	add	a3, a3, a5
 	sltu	a2, a1, a2
 	add	a2, a2, a3
 	slli	a2, a2, 8
@@ -31,10 +31,10 @@ func000000000000000c:
 func000000000000004c:
 	slli	a1, a5, 8
 	srli	a4, a4, 56
-	srli	a5, a5, 56
 	or	a1, a1, a4
-	add	a3, a3, a5
+	srli	a5, a5, 56
 	add	a1, a1, a2
+	add	a3, a3, a5
 	sltu	a2, a1, a2
 	add	a2, a2, a3
 	slli	a2, a2, 8
@@ -46,10 +46,10 @@ func000000000000004c:
 func000000000000006f:
 	slli	a1, a5, 8
 	srli	a4, a4, 56
-	srli	a5, a5, 56
 	or	a1, a1, a4
-	add	a3, a3, a5
+	srli	a5, a5, 56
 	add	a1, a1, a2
+	add	a3, a3, a5
 	sltu	a2, a1, a2
 	add	a2, a2, a3
 	slli	a2, a2, 8

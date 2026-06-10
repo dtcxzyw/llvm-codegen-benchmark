@@ -21,12 +21,12 @@ func0000000000000003:
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
 	vfmul.vf	v24, v24, fa5
 	vfadd.vv	v16, v24, v16
 	vfsub.vv	v8, v16, v8
-	vmfge.vf	v16, v8, fa4
+	lui	a0, %hi(.LCPI1_1)
+	fld	fa5, %lo(.LCPI1_1)(a0)
+	vmfge.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
 

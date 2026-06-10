@@ -11,8 +11,8 @@ func0000000000000000:
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 15
 	lui	a1, 524272
+	slli	a0, a0, 15
 	and	a0, a0, a1
 	lui	a1, 1046848
 	addw	a0, a0, a1

@@ -1,10 +1,10 @@
 func0000000000000546:
-	srai	a3, a0, 63
-	srli	a3, a3, 62
-	add	a3, a3, a0
-	andi	a3, a3, -4
-	slt	a0, a3, a0
 	slt	a1, a2, a1
+	srai	a2, a0, 63
+	srli	a2, a2, 62
+	add	a2, a2, a0
+	andi	a2, a2, -4
+	slt	a0, a2, a0
 	and	a0, a0, a1
 	ret
 

@@ -13,13 +13,12 @@ func0000000000000000:
 	addi	a0, a0, -1
 	ret
 
+.LCPI3_0:
+	.quad	8446744073709551616
 func0000000000000028:
+	lui	a2, %hi(.LCPI3_0)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	add	a0, a0, a1
-	lui	a1, 960284
-	addi	a1, a1, -1545
-	slli.uw	a1, a1, 12
-	addi	a1, a1, -317
-	slli	a1, a1, 19
-	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 

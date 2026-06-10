@@ -1,7 +1,7 @@
 func0000000000000000:
+	li	a2, 7
 	sra	a0, a0, a1
-	li	a1, 7
-	bseti	a1, a1, 35
+	bseti	a1, a2, 35
 	sh3add	a0, a0, a1
 	ret
 

@@ -13,8 +13,8 @@ func000000000000000a:
 	ret
 
 func0000000000000021:
-	addiw	a1, a0, -2
 	li	a2, -1
+	addiw	a1, a0, -2
 	beq	a1, a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:

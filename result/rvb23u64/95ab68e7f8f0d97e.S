@@ -6,9 +6,9 @@ func0000000000000044:
 	ret
 
 func000000000000006a:
-	srli	a1, a0, 63
-	sgtz	a0, a0
-	neg	a0, a0
+	sgtz	a1, a0
+	srli	a0, a0, 63
+	neg	a1, a1
 	or	a0, a0, a1
 	ret
 

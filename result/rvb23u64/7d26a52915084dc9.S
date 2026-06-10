@@ -1,7 +1,7 @@
 func0000000000000c28:
 	addi	a2, a2, 1
-	sltiu	a0, a0, 18
 	xor	a1, a1, a2
+	sltiu	a0, a0, 18
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
@@ -49,8 +49,8 @@ func000000000000002c:
 
 func0000000000000028:
 	addi	a2, a2, 4
-	sltiu	a0, a0, 4
 	xor	a1, a1, a2
+	sltiu	a0, a0, 4
 	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1

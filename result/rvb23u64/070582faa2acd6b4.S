@@ -1,9 +1,9 @@
 func0000000000000030:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	sh1add	a3, a2, a2
 	sh1add	a2, a3, a2
 	sh3add	a0, a2, a0
+	sext.w	a1, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
@@ -39,11 +39,11 @@ func000000000000002f:
 func0000000000000010:
 	zext.w	a2, a2
 	li	a3, 616
-	sext.w	a1, a1
 	mul	a2, a2, a3
+	sext.w	a1, a1
 	sh1add	a3, a1, a1
-	add	a0, a0, a2
 	sh1add	a1, a3, a1
+	add	a0, a0, a2
 	sh3add	a0, a1, a0
 	ret
 

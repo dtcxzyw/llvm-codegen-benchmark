@@ -7,8 +7,8 @@ func0000000000000006:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	li	a2, 64
+	sext.w	a1, a1
 	bltu	a1, a2, .LBB1_2
 	mv	a1, a0
 .LBB1_2:
@@ -31,9 +31,9 @@ func000000000000000a:
 	ret
 
 func0000000000000004:
-	sext.w	a2, a1
-	li	a3, 3
-	bgeu	a2, a3, .LBB4_2
+	li	a2, 3
+	sext.w	a3, a1
+	bgeu	a3, a2, .LBB4_2
 	slli	a0, a1, 32
 	srli	a0, a0, 32
 .LBB4_2:

@@ -19,10 +19,10 @@ func0000000000000002:
 
 func0000000000000004:
 	li	a1, 255
+	lui	a2, 1048560
 	sll	a0, a1, a0
-	lui	a1, 1048560
-	srli	a1, a1, 8
-	or	a0, a0, a1
+	srli	a2, a2, 8
+	or	a0, a0, a2
 	ret
 
 func0000000000000005:

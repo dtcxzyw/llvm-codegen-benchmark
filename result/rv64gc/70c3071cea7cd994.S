@@ -1,8 +1,8 @@
 func000000000000001d:
 	andi	a1, a1, 1
+	lui	a2, 1048540
 	addw	a0, a0, a1
-	lui	a1, 1048540
-	addi	a1, a1, 1359
+	addi	a1, a2, 1359
 	mul	a0, a0, a1
 	ret
 
@@ -17,8 +17,8 @@ func000000000000000b:
 	andi	a1, a1, 1
 	add	a0, a0, a1
 	lui	a1, 2575
-	addi	a1, a1, -325
 	slli	a0, a0, 32
+	addi	a1, a1, -325
 	srli	a0, a0, 32
 	slli	a1, a1, 13
 	mul	a0, a0, a1

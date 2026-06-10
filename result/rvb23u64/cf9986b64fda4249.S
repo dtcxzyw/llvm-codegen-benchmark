@@ -1,6 +1,6 @@
 func000000000000018c:
-	sext.w	a0, a0
 	andi	a1, a1, 247
+	sext.w	a0, a0
 	xori	a1, a1, 64
 	or	a0, a0, a1
 	snez	a0, a0
@@ -15,11 +15,11 @@ func0000000000000021:
 	ret
 
 func0000000000000301:
+	lui	a2, 1
 	sext.w	a0, a0
 	andi	a1, a1, 63
-	lui	a2, 1
-	seqz	a1, a1
 	addi	a2, a2, 1664
+	seqz	a1, a1
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

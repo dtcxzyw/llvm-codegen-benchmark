@@ -35,8 +35,8 @@ func000000000000000e:
 	ret
 
 func0000000000000003:
-	add	a1, a1, a2
 	sh2add	a0, a0, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
@@ -51,8 +51,8 @@ func000000000000000f:
 	ret
 
 func000000000000000b:
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

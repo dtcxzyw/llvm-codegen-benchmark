@@ -1,8 +1,8 @@
 func000000000000003a:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -13,9 +13,9 @@ func000000000000003a:
 
 func000000000000003b:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 1
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 1
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v8, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -26,9 +26,9 @@ func000000000000003b:
 
 func0000000000000020:
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v12, v10
-	vmv.v.i	v13, 6
-	vwsll.vv	v10, v13, v12
+	vmv.v.i	v12, 6
+	vzext.vf2	v13, v10
+	vwsll.vv	v10, v12, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v10, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -39,9 +39,9 @@ func0000000000000020:
 
 func0000000000000029:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vmv.v.i	v10, -1
-	vsll.vv	v10, v10, v12
+	vmv.v.i	v12, -1
+	vzext.vf4	v14, v10
+	vsll.vv	v10, v12, v14
 	vor.vv	v8, v10, v8
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0

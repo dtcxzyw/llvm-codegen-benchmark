@@ -31,8 +31,8 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	srliw	a0, a0, 16
 	li	a1, -10
+	srliw	a0, a0, 16
 	mul	a0, a0, a1
 	ret
 

@@ -1,27 +1,27 @@
 func0000000000000001:
+	lui	a3, 1048555
 	andi	a0, a0, 1
+	addi	a3, a3, -384
 	add	a1, a1, a2
-	lui	a2, 1048555
-	addi	a2, a2, -384
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	ret
 
 func0000000000000005:
+	lui	a3, 1048555
 	andi	a0, a0, 1
+	addi	a3, a3, -384
 	add	a1, a1, a2
-	lui	a2, 1048555
-	addi	a2, a2, -384
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	ret
 
 func000000000000000d:
+	lui	a3, 804435
 	andi	a0, a0, 1
+	addi	a3, a3, 1536
 	add	a1, a1, a2
-	lui	a2, 804435
-	addi	a2, a2, 1536
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	ret
 
@@ -64,8 +64,8 @@ func0000000000000008:
 
 func0000000000000003:
 	andi	a0, a0, 1
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 

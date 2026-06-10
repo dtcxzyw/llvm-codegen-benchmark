@@ -11,9 +11,9 @@ func0000000000000041:
 	ret
 
 func0000000000000064:
-	addi	a1, a1, 24
 	li	a2, 7
 	bseti	a2, a2, 63
+	addi	a1, a1, 24
 	sltu	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret

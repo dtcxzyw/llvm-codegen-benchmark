@@ -136,9 +136,9 @@ func0000000000000401:
 	ret
 
 func000000000000044a:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 3
-	li	a0, 32
 	vnsrl.wx	v10, v8, a0
 	vmslt.vv	v0, v12, v10
 	ret

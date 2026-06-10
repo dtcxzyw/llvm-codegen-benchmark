@@ -26,14 +26,14 @@ func0000000000000010:
 
 func0000000000000045:
 	zext.b	a2, a2
+	add	a0, a0, a1
+	sltiu	a1, a2, 127
+	lui	a2, 1048571
 	li	a3, -98
-	add	a0, a0, a1
-	lui	a1, 1048571
-	sltiu	a2, a2, 127
-	addi	a1, a1, 227
-	czero.nez	a2, a3, a2
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	addi	a2, a2, 227
+	czero.nez	a1, a3, a1
+	add	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 
 func00000000000000c0:
@@ -80,8 +80,8 @@ func0000000000000040:
 
 func000000000000008c:
 	zext.b	a2, a2
-	li	a3, -6
 	sltiu	a2, a2, 2
+	li	a3, -6
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -98,9 +98,9 @@ func0000000000000060:
 func0000000000000080:
 	zext.b	a2, a2
 	lui	a3, 253
+	sltiu	a2, a2, 6
 	add	a0, a0, a1
 	lui	a1, 3
-	sltiu	a2, a2, 6
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -109,9 +109,9 @@ func0000000000000080:
 func0000000000000085:
 	zext.b	a2, a2
 	lui	a3, 8
+	sltiu	a2, a2, 144
 	add	a0, a0, a1
 	lui	a1, 1048564
-	sltiu	a2, a2, 144
 	addi	a3, a3, -1792
 	addi	a1, a1, -1328
 	czero.eqz	a2, a3, a2

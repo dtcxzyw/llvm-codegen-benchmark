@@ -1,9 +1,9 @@
 func0000000000000014:
 	srli	a2, a1, 24
 	seqz	a2, a2
+	lui	a3, 1042432
 	and	a0, a0, a2
-	lui	a2, 1042432
-	andn	a1, a1, a2
+	andn	a1, a1, a3
 	czero.eqz	a0, a1, a0
 	ret
 

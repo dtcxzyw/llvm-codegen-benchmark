@@ -5,9 +5,9 @@ func000000000000000a:
 	mul	a4, a4, a0
 	slli	a0, a3, 32
 	srli	a2, a2, 32
-	srli	a3, a3, 32
 	or	a0, a0, a2
 	add	a1, a1, a5
+	srli	a3, a3, 32
 	add	a0, a0, a4
 	sltu	a2, a0, a4
 	add	a1, a1, a3

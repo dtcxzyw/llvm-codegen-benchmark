@@ -1,19 +1,19 @@
 .LCPI0_0:
 	.quad	2951479051793528259
 func0000000000000003:
-	srli	a2, a0, 62
-	li	a3, -1
-	slli	a4, a0, 2
-	sh2add	a2, a1, a2
+	li	a2, -1
+	srli	a3, a0, 62
+	srli	a2, a2, 4
+	sh2add	a3, a1, a3
+	lui	a4, %hi(.LCPI0_0)
+	slli	a5, a0, 2
+	ld	a4, %lo(.LCPI0_0)(a4)
+	srli	a5, a5, 4
 	srli	a1, a1, 58
-	srli	a3, a3, 4
 	and	a2, a2, a3
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
-	srli	a4, a4, 4
-	add	a1, a1, a4
+	add	a1, a1, a5
 	add	a1, a1, a2
-	mulhu	a2, a1, a3
+	mulhu	a2, a1, a4
 	srli	a2, a2, 2
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
@@ -33,32 +33,32 @@ func0000000000000002:
 	lui	a3, %hi(.LCPI1_1)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	ld	a3, %lo(.LCPI1_1)(a3)
-	mul	a6, a0, a2
+	mul	a7, a0, a2
 	mulhu	a5, a0, a3
-	mul	a4, a1, a3
-	mulhu	a7, a1, a3
-	add	a6, a6, a5
-	add	a4, a4, a6
-	sltu	a5, a6, a5
-	sltu	a4, a4, a6
+	mul	a6, a1, a3
+	mulhu	a4, a0, a2
+	mulhu	t0, a1, a3
 	mul	a3, a1, a2
+	add	a7, a7, a5
 	mulhu	a1, a1, a2
-	mulhu	a2, a0, a2
-	add	a2, a2, a5
-	lui	a5, %hi(.LCPI1_2)
-	ld	a5, %lo(.LCPI1_2)(a5)
-	add	a7, a7, a2
-	sltu	a2, a7, a2
-	add	a7, a7, a4
-	czero.nez	a4, a4, a7
-	add	a3, a3, a7
+	sltu	a2, a7, a5
+	add	a2, a2, a4
+	add	a6, a6, a7
+	sltu	a4, a6, a7
+	add	t0, t0, a2
+	add	a5, t0, a4
+	sltu	a2, t0, a2
+	czero.nez	a4, a4, a5
+	add	a3, a3, a5
 	or	a2, a2, a4
-	sltu	a4, a3, a7
+	sltu	a4, a3, a5
+	lui	a5, %hi(.LCPI1_2)
 	add	a1, a1, a4
+	ld	a4, %lo(.LCPI1_2)(a5)
 	add	a1, a1, a2
 	srli	a3, a3, 62
 	sh2add	a1, a1, a3
-	mul	a1, a1, a5
+	mul	a1, a1, a4
 	sub	a0, a0, a1
 	ret
 

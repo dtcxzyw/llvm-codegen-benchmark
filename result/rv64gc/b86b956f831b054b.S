@@ -1,8 +1,8 @@
 func00000000000001c1:
 	sext.w	a0, a0
 	li	a2, 32
-	sub	a2, a2, a1
 	seqz	a0, a0
+	sub	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	li	a1, 1
@@ -10,8 +10,8 @@ func00000000000001c1:
 	ret
 
 func00000000000001c4:
-	sext.w	a0, a0
 	li	a2, 3
+	sext.w	a0, a0
 	bgeu	a0, a2, .LBB1_2
 	li	a0, 64
 	ret
@@ -23,10 +23,10 @@ func00000000000001c4:
 	ret
 
 func00000000000000e4:
-	li	a2, 10
 	srliw	a0, a0, 16
-	sub	a2, a2, a1
+	li	a2, 10
 	seqz	a0, a0
+	sub	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	li	a1, 1

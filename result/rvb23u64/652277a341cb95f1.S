@@ -1,9 +1,9 @@
 func00000000000001e1:
 	zext.b	a1, a1
 	lui	a2, 15
+	slli	a1, a1, 6
 	and	a0, a0, a2
 	lui	a2, 14
-	slli	a1, a1, 6
 	or	a0, a0, a1
 	addi	a1, a2, -1024
 	xor	a0, a0, a1
@@ -42,8 +42,8 @@ func00000000000001f8:
 	ret
 
 func0000000000000024:
-	slliw	a1, a1, 30
 	lui	a2, 245760
+	slliw	a1, a1, 30
 	and	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -64,11 +64,11 @@ func00000000000000d8:
 
 func00000000000000c1:
 	zext.b	a1, a1
-	zext.h	a0, a0
 	slli	a1, a1, 8
+	zext.h	a0, a0
+	lui	a2, 8
 	or	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, 109
+	addi	a1, a2, 109
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

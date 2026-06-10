@@ -1,7 +1,7 @@
 func0000000000000054:
-	slli	a1, a1, 32
 	lui	a2, 596523
 	addi	a2, a2, 965
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	lui	a2, 65536
@@ -13,9 +13,9 @@ func0000000000000054:
 	ret
 
 func000000000000007c:
-	slli	a1, a1, 32
 	lui	a2, 596523
 	addi	a2, a2, 965
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	lui	a2, 65536

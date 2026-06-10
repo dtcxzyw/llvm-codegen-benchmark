@@ -1,7 +1,7 @@
 func0000000000000004:
+	li	a0, -21
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, -21
 	vadd.vx	v9, v9, a0
 	vzext.vf4	v10, v8
 	vmsltu.vv	v0, v9, v10
@@ -32,9 +32,9 @@ func0000000000000046:
 	ret
 
 func0000000000000026:
+	li	a0, -27
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, -27
 	vadd.vx	v9, v9, a0
 	vzext.vf4	v10, v8
 	vmslt.vv	v0, v9, v10

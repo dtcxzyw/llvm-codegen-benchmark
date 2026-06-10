@@ -51,9 +51,9 @@ func0000000000000015:
 func0000000000000067:
 	slli	a1, a1, 9
 	slli	a0, a0, 2
+	lui	a2, 11
 	add	a0, a0, a1
-	lui	a1, 11
-	addi	a1, a1, 112
+	addi	a1, a2, 112
 	addw	a0, a0, a1
 	ret
 

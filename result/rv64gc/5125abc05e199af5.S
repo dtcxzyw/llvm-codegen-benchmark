@@ -1,7 +1,7 @@
 func0000000000000021:
+	li	a3, 2
 	sext.w	a2, a0
-	li	a0, 2
-	bne	a2, a0, .LBB0_2
+	bne	a2, a3, .LBB0_2
 	lui	a0, 512
 	li	a1, 1
 	beq	a2, a1, .LBB0_3

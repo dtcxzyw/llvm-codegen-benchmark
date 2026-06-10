@@ -16,9 +16,9 @@ func0000000000000118:
 func0000000000000028:
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	lui	a2, 804435
 	add	a0, a0, a1
-	lui	a1, 804435
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	sltu	a0, a0, a1
 	ret
 

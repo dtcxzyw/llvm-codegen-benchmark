@@ -9,8 +9,8 @@ func000000000000028a:
 
 func0000000000000281:
 	slli	a2, a2, 32
-	slli	a1, a1, 3
 	srli	a2, a2, 32
+	slli	a1, a1, 3
 	sub	a2, a2, a0
 	neg	a0, a1
 	xor	a0, a0, a2

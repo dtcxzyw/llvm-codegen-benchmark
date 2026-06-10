@@ -1,6 +1,6 @@
 func000000000000007e:
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	lui	a2, 524288
 	srli	a1, a1, 32
 	sub	a0, a0, a2

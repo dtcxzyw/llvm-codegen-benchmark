@@ -6,11 +6,11 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
+	lui	a3, 962048
+	addi	a3, a3, 1
+	slli	a3, a3, 12
 	srl	a1, a1, a2
-	lui	a2, 962048
-	addi	a2, a2, 1
-	slli	a2, a2, 12
-	addi	a2, a2, 511
+	addi	a2, a3, 511
 	and	a1, a1, a2
 	slli	a0, a0, 13
 	or	a0, a0, a1

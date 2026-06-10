@@ -26,9 +26,9 @@ func000000000000007e:
 
 func000000000000000e:
 	andi	a2, a2, -32
-	slli	a0, a0, 5
 	addi	a2, a2, 1216
 	slli	a2, a2, 32
+	slli	a0, a0, 5
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2

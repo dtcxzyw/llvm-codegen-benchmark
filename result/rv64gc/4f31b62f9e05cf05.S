@@ -1,6 +1,6 @@
 func0000000000000002:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 276464
+	fcvt.s.d	fa5, fa0
 	fmv.w.x	fa4, a0
 	fmul.s	fa5, fa5, fa4
 	fmv.w.x	fa4, zero
@@ -8,8 +8,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	fcvt.s.d	fa5, fa0
 	lui	a0, 261120
+	fcvt.s.d	fa5, fa0
 	fmv.w.x	fa4, a0
 	lui	a0, 263168
 	fmul.s	fa5, fa5, fa4

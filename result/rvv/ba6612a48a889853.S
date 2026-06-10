@@ -1,18 +1,18 @@
 func0000000000000024:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsne.vi	v12, v12, -1
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v13, v10, v8
-	vmand.mm	v0, v12, v13
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsne.vi	v8, v12, -1
+	vmand.mm	v0, v8, v13
 	ret
 
 func0000000000000028:
-	lui	a0, 272
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsne.vx	v12, v12, a0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v13, v8, v10
-	vmand.mm	v0, v12, v13
+	lui	a0, 272
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsne.vx	v8, v12, a0
+	vmand.mm	v0, v8, v13
 	ret
 
 func0000000000000021:

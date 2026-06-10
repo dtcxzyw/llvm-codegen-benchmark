@@ -1,8 +1,8 @@
 func000000000000008c:
+	li	a1, -481
+	slli	a1, a1, 53
+	fmv.d.x	fa5, a1
 	feq.d	a1, fa0, fa1
-	li	a2, -481
-	slli	a2, a2, 53
-	fmv.d.x	fa5, a2
 	fle.d	a2, fa5, fa0
 	and	a0, a0, a1
 	and	a0, a0, a2

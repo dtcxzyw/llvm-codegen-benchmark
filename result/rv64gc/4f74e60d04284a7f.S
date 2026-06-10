@@ -14,8 +14,8 @@ func000000000000016b:
 	ret
 
 func000000000000016a:
-	sub	a0, a0, a2
 	not	a1, a1
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
@@ -28,10 +28,10 @@ func0000000000000168:
 	ret
 
 func0000000000000140:
+	lui	a3, 1048572
 	sub	a0, a0, a2
 	sub	a0, a0, a1
-	lui	a1, 1048572
-	add	a0, a0, a1
+	add	a0, a0, a3
 	ret
 
 func000000000000012b:

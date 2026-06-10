@@ -10,27 +10,27 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 4
+	srli	a1, a2, 4
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
 .LBB1_2:
 	ret
 
 func0000000000000000:
+	li	a2, -127
 	add	a0, a0, a1
-	li	a1, -127
-	srli	a1, a1, 1
+	srli	a1, a2, 1
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1
 .LBB2_2:
 	ret
 
 func0000000000000004:
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 1
+	srli	a1, a2, 1
 	bltu	a0, a1, .LBB3_2
 	mv	a0, a1
 .LBB3_2:

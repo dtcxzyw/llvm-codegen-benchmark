@@ -13,8 +13,8 @@ func00000000000003c3:
 
 func00000000000003f3:
 	li	a3, 688
-	slli	a0, a0, 5
 	mul	a2, a2, a3
+	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 156
@@ -48,9 +48,10 @@ func00000000000000cf:
 
 func000000000000037f:
 	add	a1, a1, a2
-	li	a2, 1025
-	sh2add	a0, a0, a2
-	sh2add	a0, a0, a1
+	slli	a0, a0, 4
+	add	a0, a0, a1
+	li	a1, 1025
+	sh2add	a0, a1, a0
 	ret
 
 func000000000000037c:

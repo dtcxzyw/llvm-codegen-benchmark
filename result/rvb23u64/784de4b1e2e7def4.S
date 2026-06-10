@@ -6,8 +6,8 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	fabs.d	fa5, fa0
 	lui	a0, 1015981
+	fabs.d	fa5, fa0
 	slli	a0, a0, 35
 	fmv.d.x	fa4, a0
 	fadd.d	fa5, fa5, fa4
@@ -15,8 +15,8 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	fabs.d	fa5, fa0
 	lui	a0, 1016013
+	fabs.d	fa5, fa0
 	slli	a0, a0, 35
 	fmv.d.x	fa4, a0
 	fadd.d	fa5, fa5, fa4

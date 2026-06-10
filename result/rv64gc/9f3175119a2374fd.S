@@ -1,7 +1,7 @@
 func0000000000000021:
 	lui	a2, 132
-	andi	a0, a0, 1024
 	and	a1, a1, a2
+	andi	a0, a0, 1024
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -9,10 +9,10 @@ func0000000000000021:
 
 func000000000000002c:
 	lui	a2, 16
-	andi	a0, a0, 15
 	addi	a2, a2, -256
-	addi	a0, a0, -4
+	andi	a0, a0, 15
 	and	a1, a1, a2
+	addi	a0, a0, -4
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

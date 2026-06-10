@@ -7,9 +7,9 @@ func0000000000000502:
 	ret
 
 func0000000000000110:
-	zext.b	a0, a0
 	sext.w	a1, a1
 	li	a2, 160
+	zext.b	a0, a0
 	minu	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -83,11 +83,11 @@ func0000000000000282:
 	ret
 
 func0000000000000602:
-	sext.w	a1, a1
 	zext.b	a0, a0
-	sltu	a1, a0, a1
-	addi	a0, a0, -5
-	seqz	a0, a0
+	sext.w	a1, a1
+	addi	a2, a0, -5
+	sltu	a0, a0, a1
+	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 

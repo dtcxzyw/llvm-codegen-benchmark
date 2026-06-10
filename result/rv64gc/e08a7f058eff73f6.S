@@ -1,11 +1,11 @@
 func0000000000000000:
-	addi	a1, a1, -127
+	li	a2, 515
+	slli	a2, a2, 53
 	fcvt.d.wu	fa5, a0
-	li	a0, 515
-	fcvt.d.wu	fa4, a1
-	slli	a0, a0, 53
-	fmv.d.x	fa3, a0
-	fmul.d	fa5, fa5, fa3
+	fmv.d.x	fa4, a2
+	addi	a0, a1, -127
+	fmul.d	fa5, fa5, fa4
+	fcvt.d.wu	fa4, a0
 	fdiv.d	fa0, fa5, fa4
 	ret
 
@@ -13,11 +13,11 @@ func0000000000000000:
 	.quad	0x40efffe000000000
 func0000000000000007:
 	lui	a2, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a2)
+	fcvt.d.wu	fa5, a0
+	fld	fa4, %lo(.LCPI1_0)(a2)
 	addi	a1, a1, -1
+	fmul.d	fa5, fa5, fa4
 	fcvt.d.wu	fa4, a1
-	fcvt.d.wu	fa3, a0
-	fmul.d	fa5, fa3, fa5
 	fdiv.d	fa0, fa5, fa4
 	ret
 
@@ -25,22 +25,22 @@ func0000000000000007:
 	.quad	0x40efffe000000000
 func0000000000000002:
 	lui	a2, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a2)
+	fcvt.d.wu	fa5, a0
+	fld	fa4, %lo(.LCPI2_0)(a2)
 	addi	a1, a1, -1
+	fmul.d	fa5, fa5, fa4
 	fcvt.d.wu	fa4, a1
-	fcvt.d.wu	fa3, a0
-	fmul.d	fa5, fa3, fa5
 	fdiv.d	fa0, fa5, fa4
 	ret
 
 func0000000000000003:
-	addi	a1, a1, -1
+	lui	a2, 131967
+	slli	a2, a2, 33
 	fcvt.d.wu	fa5, a0
-	lui	a0, 131967
+	fmv.d.x	fa4, a2
+	addi	a1, a1, -1
+	fmul.d	fa5, fa5, fa4
 	fcvt.d.wu	fa4, a1
-	slli	a0, a0, 33
-	fmv.d.x	fa3, a0
-	fmul.d	fa5, fa5, fa3
 	fdiv.d	fa0, fa5, fa4
 	ret
 

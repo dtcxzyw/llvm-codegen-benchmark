@@ -1,7 +1,7 @@
 func00000000000000c8:
+	li	a0, 257
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v8, 7
-	li	a0, 257
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmsltu.vx	v0, v9, a0
 	li	a0, 256

@@ -1,7 +1,7 @@
 func0000000000000002:
-	andi	a0, a0, 1
 	add	a2, a2, a1
 	srliw	a2, a2, 1
+	andi	a0, a0, 1
 	addiw	a2, a2, 1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
@@ -9,9 +9,9 @@ func0000000000000002:
 	ret
 
 func0000000000000019:
-	andi	a0, a0, 1
 	add	a2, a2, a1
 	srliw	a2, a2, 1
+	andi	a0, a0, 1
 	addi	a2, a2, -1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
@@ -19,9 +19,9 @@ func0000000000000019:
 	ret
 
 func000000000000001b:
-	andi	a0, a0, 1
 	add	a2, a2, a1
 	srliw	a2, a2, 1
+	andi	a0, a0, 1
 	addiw	a2, a2, 1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
@@ -29,9 +29,9 @@ func000000000000001b:
 	ret
 
 func0000000000000003:
-	andi	a0, a0, 1
 	add	a2, a2, a1
 	srliw	a2, a2, 1
+	andi	a0, a0, 1
 	addiw	a2, a2, 1
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0

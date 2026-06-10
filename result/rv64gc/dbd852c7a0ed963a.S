@@ -23,8 +23,8 @@ func000000000000001f:
 	ret
 
 func000000000000003e:
-	slli	a1, a1, 32
 	li	a2, 1
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	add	a1, a1, a2
 	mul	a0, a1, a0

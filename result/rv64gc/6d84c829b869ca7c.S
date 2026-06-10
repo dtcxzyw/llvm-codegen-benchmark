@@ -55,8 +55,8 @@ func000000000000198c:
 func000000000000310c:
 	sext.w	a1, a1
 	snez	a2, a2
-	snez	a0, a0
 	sltiu	a1, a1, 2
+	snez	a0, a0
 	xori	a1, a1, 1
 	and	a0, a0, a2
 	and	a0, a0, a1

@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	7922816251426433760
 func0000000000000003:
-	andi	a0, a0, 1
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a2, a2, a0
@@ -14,9 +14,9 @@ func0000000000000003:
 .LCPI1_0:
 	.quad	-5154464115860392886
 func0000000000000002:
-	andi	a0, a0, 1
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
+	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a2, a2, a0

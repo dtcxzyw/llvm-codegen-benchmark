@@ -15,8 +15,8 @@ func0000000000000012:
 	ret
 
 func000000000000004b:
-	addiw	a1, a1, 24
 	addi	a0, a0, -2
+	addiw	a1, a1, 24
 	zext.w	a0, a0
 	mul	a0, a0, a1
 	ret

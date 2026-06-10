@@ -14,9 +14,9 @@ func0000000000000021:
 	ret
 
 func00000000000000e1:
-	slli	a1, a1, 19
 	lui	a2, 128
 	addi	a2, a2, -8
+	slli	a1, a1, 19
 	and	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0

@@ -19,12 +19,12 @@ func0000000000000602:
 	ret
 
 func0000000000000202:
-	zext.h	a2, a2
 	slli	a1, a1, 48
-	sltiu	a2, a2, 31
+	zext.h	a2, a2
 	srli	a1, a1, 52
-	or	a0, a0, a2
+	sltiu	a2, a2, 31
 	addi	a1, a1, -561
+	or	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

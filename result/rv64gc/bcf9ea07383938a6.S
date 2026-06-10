@@ -1,9 +1,9 @@
 func0000000000000001:
+	lui	a2, 256573
 	add	a0, a0, a1
-	lui	a1, 256573
+	addi	a1, a2, 1802
 	fcvt.s.w	fa5, a0
-	addi	a0, a1, 1802
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmul.s	fa0, fa5, fa4
 	ret
 

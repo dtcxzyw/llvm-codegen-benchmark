@@ -1,16 +1,16 @@
 func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vsll.vi	v10, v10, 2
 	vmv.v.i	v11, 4
+	vsll.vi	v10, v10, 2
 	vandn.vv	v10, v11, v10
 	vwaddu.wv	v8, v8, v10
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vsll.vi	v10, v10, 29
 	lui	a0, 131072
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
+	vsll.vi	v10, v10, 29
 	vandn.vv	v10, v11, v10
 	vwaddu.wv	v8, v8, v10
 	ret

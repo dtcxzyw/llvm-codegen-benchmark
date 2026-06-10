@@ -1,37 +1,37 @@
 func000000000000004a:
 	lui	a3, 134
-	srli	a1, a1, 32
 	addi	a3, a3, -323
 	slli	a3, a3, 12
 	addi	a3, a3, -1401
 	mul	a2, a2, a3
+	srli	a1, a1, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func000000000000006f:
 	lui	a3, 163151
-	srli	a1, a1, 32
 	addi	a3, a3, -1201
 	mul	a2, a2, a3
+	srli	a1, a1, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 
 func000000000000003d:
-	srli	a2, a2, 3
 	lui	a3, 33
 	addi	a3, a3, 1489
 	mul	a1, a1, a3
+	srli	a2, a2, 3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000003f:
-	srli	a2, a2, 3
 	lui	a3, 163
 	addi	a3, a3, -1005
 	mul	a1, a1, a3
+	srli	a2, a2, 3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -55,8 +55,8 @@ func000000000000002a:
 
 func0000000000000010:
 	li	a3, 116
-	srli	a1, a1, 1
 	mul	a2, a2, a3
+	srli	a1, a1, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

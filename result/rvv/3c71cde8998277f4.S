@@ -1,8 +1,8 @@
 func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vor.vi	v10, v8, 4
-	vmv.v.i	v11, 1
-	vwsll.vv	v8, v11, v10
+	vmv.v.i	v10, 1
+	vor.vi	v11, v8, 4
+	vwsll.vv	v8, v10, v11
 	ret
 
 func000000000000000e:

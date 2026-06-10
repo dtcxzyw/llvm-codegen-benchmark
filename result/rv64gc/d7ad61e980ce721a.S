@@ -5,8 +5,8 @@ func0000000000000004:
 	ret
 
 func000000000000000a:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 260096
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret
@@ -21,8 +21,8 @@ func000000000000000c:
 	ret
 
 func0000000000000002:
-	fsub.s	fa5, fa0, fa1
 	lui	a0, 260096
+	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fmin.s	fa0, fa5, fa4
 	ret

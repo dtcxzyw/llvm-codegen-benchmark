@@ -1,6 +1,6 @@
 func000000000000002a:
-	zext.b	a1, a1
 	li	a2, -1
+	zext.b	a1, a1
 	srli	a2, a2, 1
 	xor	a1, a1, a2
 	slt	a0, a1, a0

@@ -7,8 +7,8 @@ func000000000000014a:
 	ret
 
 func0000000000000141:
-	sext.w	a0, a0
 	srliw	a1, a1, 31
+	sext.w	a0, a0
 	slli	a1, a1, 31
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -40,13 +40,13 @@ func000000000000018c:
 	ret
 
 func0000000000000101:
+	lui	a2, 427606
 	sext.w	a0, a0
 	sext.w	a1, a1
-	lui	a2, 427606
-	sltiu	a1, a1, 54
 	addi	a2, a2, 356
-	xori	a1, a1, 1
+	sltiu	a1, a1, 54
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -103,11 +103,11 @@ func0000000000000181:
 	ret
 
 func00000000000000cc:
-	sext.w	a0, a0
-	srliw	a1, a1, 31
 	lui	a2, 4096
+	sext.w	a0, a0
 	addi	a2, a2, 7
 	xor	a0, a0, a2
+	srliw	a1, a1, 31
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

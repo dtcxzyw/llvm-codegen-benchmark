@@ -1,6 +1,6 @@
 func0000000000000002:
-	sext.w	a0, a0
 	li	a1, 2
+	sext.w	a0, a0
 	bge	a1, a0, .LBB0_3
 	addi	a0, a0, -1
 	li	a1, 60
@@ -17,9 +17,9 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	sraiw	a1, a0, 31
-	or	a0, a0, a1
 	lui	a1, 131072
+	sraiw	a2, a0, 31
+	or	a0, a0, a2
 	addiw	a0, a0, 1
 	addi	a1, a1, -1
 	bltu	a0, a1, .LBB1_2
@@ -28,8 +28,8 @@ func0000000000000003:
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
 	li	a1, 19
+	sext.w	a0, a0
 	bge	a1, a0, .LBB2_3
 	lui	a1, 122
 	addi	a1, a1, 287

@@ -47,8 +47,8 @@ func000000000000000f:
 
 func000000000000000b:
 	slli	a2, a2, 7
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, -112
 	ret

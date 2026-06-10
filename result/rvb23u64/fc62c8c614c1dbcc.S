@@ -1,12 +1,12 @@
 func0000000000000190:
 	li	a3, 122
-	sext.w	a0, a0
 	mul	a2, a2, a3
+	sext.w	a0, a0
 	lui	a3, 200
 	add	a0, a0, a1
-	add	a0, a0, a2
 	addi	a1, a3, -702
 	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 
 func0000000000000000:

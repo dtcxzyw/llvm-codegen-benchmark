@@ -41,8 +41,8 @@ func00000000000000f1:
 
 func00000000000002f8:
 	zext.b	a1, a1
-	zext.b	a0, a0
 	slli	a1, a1, 8
+	zext.b	a0, a0
 	or	a0, a0, a1
 	lui	a1, 1
 	sltu	a0, a1, a0

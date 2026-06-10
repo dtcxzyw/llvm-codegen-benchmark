@@ -9,8 +9,8 @@ func0000000000000002:
 func0000000000000005:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vv	v16, v16, v16
-	li	a0, 997
 	vfmul.vv	v8, v16, v8
+	li	a0, 997
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
 	vmfle.vf	v16, v8, fa5

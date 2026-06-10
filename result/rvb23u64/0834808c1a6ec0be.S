@@ -29,10 +29,10 @@ func0000000000000140:
 
 func0000000000000100:
 	srai	a2, a2, 2
+	li	a3, -127
 	sh3add	a1, a1, a2
-	li	a2, -127
+	srli	a3, a3, 1
+	add	a0, a0, a3
 	add	a0, a0, a1
-	srli	a2, a2, 1
-	add	a0, a0, a2
 	ret
 

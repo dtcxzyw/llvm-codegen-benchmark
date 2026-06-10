@@ -1,23 +1,23 @@
 func0000000000000021:
-	addiw	a1, a1, -1
 	slli	a0, a0, 48
 	seqz	a0, a0
+	addiw	a1, a1, -1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000061:
-	addiw	a1, a1, 1
 	slli	a0, a0, 48
 	seqz	a0, a0
+	addiw	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000026:
+	li	a2, 7
 	slli	a0, a0, 48
 	srai	a0, a0, 48
-	li	a2, 7
 	bge	a0, a2, .LBB2_2
 	li	a0, 3
 	ret
@@ -29,17 +29,17 @@ func0000000000000001:
 	lui	a2, 16
 	addi	a2, a2, -1
 	and	a0, a0, a2
-	addiw	a1, a1, 4
 	xor	a0, a0, a2
 	seqz	a0, a0
+	addiw	a1, a1, 4
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000064:
+	li	a2, 9
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a2, 9
 	bgeu	a0, a2, .LBB4_2
 	li	a0, 16
 	ret
@@ -55,9 +55,9 @@ func000000000000006a:
 	ret
 
 func0000000000000028:
+	li	a2, 14
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a2, 14
 	bgeu	a2, a0, .LBB6_2
 	li	a0, 8
 	ret
@@ -68,8 +68,8 @@ func0000000000000028:
 func0000000000000024:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	addiw	a1, a1, -8
 	sltiu	a0, a0, 2
+	addiw	a1, a1, -8
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

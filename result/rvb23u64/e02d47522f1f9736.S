@@ -29,8 +29,8 @@ func0000000000000001:
 	ret
 
 func0000000000000174:
-	addi	a0, a0, 23
 	lui	a1, 524288
+	addi	a0, a0, 23
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	sltiu	a0, a0, 17

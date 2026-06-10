@@ -1,23 +1,23 @@
 func0000000000000031:
-	zext.b	a1, a1
-	sext.w	a3, a2
-	lui	a4, 559241
-	addi	a4, a4, -1911
-	addi	a1, a1, -3
-	mul	a3, a3, a4
-	snez	a1, a1
+	lui	a3, 559241
+	sext.w	a4, a2
+	addi	a3, a3, -1911
+	mul	a3, a4, a3
 	srli	a3, a3, 32
-	or	a0, a0, a1
+	zext.b	a1, a1
 	addw	a3, a3, a2
-	slli	a0, a0, 63
-	srliw	a1, a3, 31
+	srliw	a4, a3, 31
 	srli	a3, a3, 5
-	add	a1, a1, a3
-	slli	a3, a1, 6
-	slli	a1, a1, 2
-	sub	a1, a1, a3
-	addw	a1, a1, a2
+	addi	a1, a1, -3
+	add	a3, a3, a4
+	snez	a1, a1
+	slli	a4, a3, 6
+	slli	a3, a3, 2
+	or	a0, a0, a1
+	sub	a3, a3, a4
+	slli	a0, a0, 63
+	addw	a2, a2, a3
 	srai	a0, a0, 63
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

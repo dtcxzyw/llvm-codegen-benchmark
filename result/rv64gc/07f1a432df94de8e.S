@@ -2,18 +2,18 @@ func0000000000000000:
 	andi	a2, a2, 1
 	bnez	a2, .LBB0_2
 	li	a2, 1
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	add	a1, a1, a2
+	srli	a3, a3, 32
+	add	a1, a1, a3
 	and	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 8
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	add	a1, a1, a2
+	srli	a3, a3, 32
+	add	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.quad	2635249153387078803
 func00000000000001f4:
-	andi	a1, a1, 7
 	lui	a2, %hi(.LCPI0_0)
+	andi	a1, a1, 7
 	ld	a2, %lo(.LCPI0_0)(a2)
 	add	a0, a0, a1
 	slli	a0, a0, 32

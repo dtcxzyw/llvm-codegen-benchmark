@@ -54,8 +54,8 @@ func000000000000000c:
 
 func0000000000000011:
 	sltu	a1, a2, a1
-	sext.w	a0, a0
 	li	a2, -1
+	sext.w	a0, a0
 	srli	a2, a2, 32
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

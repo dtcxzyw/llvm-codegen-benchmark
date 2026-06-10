@@ -1,11 +1,11 @@
 func00000000000000c3:
 	sh1add	a3, a1, a1
-	slli	a0, a0, 4
 	sh1add	a1, a3, a1
 	lui	a3, 33
-	addi	a3, a3, -1964
 	sh3add	a1, a1, a2
-	add	a0, a0, a3
+	slli	a0, a0, 4
+	addi	a2, a3, -1964
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

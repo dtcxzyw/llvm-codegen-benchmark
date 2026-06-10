@@ -7,10 +7,10 @@ func0000000000000003:
 	lui	a2, 13
 .LBB0_3:
 	addi	a2, a2, 5
+	lui	a3, 1
+	addi	a3, a3, -2024
 	and	a0, a0, a2
-	lui	a2, 1
-	addi	a2, a2, -2024
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 
@@ -40,10 +40,10 @@ func0000000000000002:
 	lui	a2, 655352
 .LBB2_3:
 	addi	a2, a2, -253
+	lui	a3, 524288
+	addiw	a3, a3, -1021
 	and	a0, a0, a2
-	lui	a2, 524288
-	addiw	a2, a2, -1021
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

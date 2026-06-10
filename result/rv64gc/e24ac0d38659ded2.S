@@ -1,13 +1,13 @@
 func0000000000000000:
-	neg	a3, a2
-	slli	a4, a1, 3
+	slli	a3, a1, 3
 	slli	a1, a1, 4
+	neg	a4, a2
+	add	a1, a1, a3
+	slli	a4, a4, 4
 	slli	a2, a2, 3
-	add	a1, a1, a4
-	slli	a3, a3, 4
 	add	a0, a0, a1
-	sub	a3, a3, a2
-	add	a0, a0, a3
+	sub	a4, a4, a2
+	add	a0, a0, a4
 	ret
 
 func000000000000000e:

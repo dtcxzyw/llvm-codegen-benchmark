@@ -4,14 +4,14 @@ func0000000000000005:
 	bnez	a3, .LBB0_2
 	li	a2, 1
 	slli	a2, a2, 31
-	or	a0, a0, a1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 3
 	slli	a2, a2, 30
-	or	a0, a0, a1
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func0000000000000007:
@@ -31,13 +31,13 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	andi	a1, a1, 1
-	lui	a3, 1
-	addi	a1, a1, -1
-	and	a1, a1, a3
 	lui	a3, 240
 	addi	a3, a3, 1
+	andi	a1, a1, 1
 	slli	a3, a3, 12
+	addi	a1, a1, -1
+	lui	a4, 1
+	and	a1, a1, a4
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	or	a0, a0, a1

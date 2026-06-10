@@ -6,7 +6,7 @@ func0000000000000003:
 	bnez	a3, .LBB0_2
 	lui	a2, 2192
 .LBB0_2:
-	or	a0, a0, a2
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -30,23 +30,23 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	andi	a3, a1, 1
-	andi	a2, a2, 1
+	andi	a3, a2, 1
+	andi	a2, a1, 1
 	lui	a1, 131072
-	beqz	a2, .LBB3_3
-	lui	a2, 262144
-	beqz	a3, .LBB3_4
+	beqz	a3, .LBB3_3
+	lui	a3, 262144
+	beqz	a2, .LBB3_4
 .LBB3_2:
-	or	a1, a1, a2
+	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
 .LBB3_3:
 	li	a1, 6
-	lui	a2, 262144
-	bnez	a3, .LBB3_2
+	lui	a3, 262144
+	bnez	a2, .LBB3_2
 .LBB3_4:
-	li	a2, 2
-	or	a1, a1, a2
+	li	a3, 2
+	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

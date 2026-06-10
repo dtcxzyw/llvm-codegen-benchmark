@@ -1,8 +1,8 @@
 func0000000000000020:
 	lui	a2, 524032
+	lui	a3, 27392
 	and	a1, a1, a2
-	lui	a2, 27392
-	add	a0, a0, a2
+	add	a0, a0, a3
 	subw	a0, a0, a1
 	ret
 

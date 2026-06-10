@@ -10,15 +10,15 @@ func000000000000001f:
 	ret
 
 func000000000000001d:
+	li	a1, 20
 	sext.w	a0, a0
 	slli	a0, a0, 2
-	li	a1, 20
 	sub	a0, a1, a0
 	ret
 
 func000000000000000f:
-	slli.uw	a0, a0, 4
 	li	a1, -1424
+	slli.uw	a0, a0, 4
 	sub	a0, a1, a0
 	ret
 

@@ -1,6 +1,6 @@
 func000000000000002f:
-	zext.b	a1, a1
 	slli	a0, a0, 32
+	zext.b	a1, a1
 	srli	a0, a0, 32
 	mul	a0, a0, a1
 	addi	a0, a0, 16
@@ -14,8 +14,8 @@ func000000000000003f:
 	ret
 
 func000000000000000f:
-	zext.b	a1, a1
 	slli	a0, a0, 32
+	zext.b	a1, a1
 	srli	a0, a0, 32
 	mul	a0, a0, a1
 	addi	a0, a0, 7

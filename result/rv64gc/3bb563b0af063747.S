@@ -36,25 +36,25 @@ func0000000000000000:
 
 func00000000000000d0:
 	slli	a1, a1, 2
+	lui	a2, 15
 	add	a0, a0, a1
-	lui	a1, 15
-	addi	a1, a1, -1900
+	addi	a1, a2, -1900
 	add	a0, a0, a1
 	ret
 
 func00000000000000df:
 	slli	a1, a1, 2
+	lui	a2, 15
 	add	a0, a0, a1
-	lui	a1, 15
-	addi	a1, a1, -1900
+	addi	a1, a2, -1900
 	add	a0, a0, a1
 	ret
 
 func00000000000000d3:
 	slli	a1, a1, 2
+	lui	a2, 15
 	add	a0, a0, a1
-	lui	a1, 15
-	addi	a1, a1, -1900
+	addi	a1, a2, -1900
 	add	a0, a0, a1
 	ret
 

@@ -1,51 +1,55 @@
 func0000000000000010:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
 	li	a0, 51
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv.v.x	v10, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v11, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v10, 0
+	vnsrl.wi	v8, v11, 0
 	vadd.vi	v8, v8, -2
-	vmv.v.x	v9, a0
-	vsrl.vv	v8, v9, v8
+	vsrl.vv	v8, v10, v8
 	vand.vi	v8, v8, 1
 	vmsne.vi	v0, v8, 0
 	ret
 
 func0000000000000000:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
 	li	a0, -33
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv.v.x	v10, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v11, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v10, 0
+	vnsrl.wi	v8, v11, 0
 	vadd.vi	v8, v8, -1
-	vmv.v.x	v9, a0
-	vsrl.vv	v8, v9, v8
+	vsrl.vv	v8, v10, v8
 	vand.vi	v8, v8, 1
 	vmsne.vi	v0, v8, 0
 	ret
 
 func0000000000000030:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
 	li	a0, -93
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv.v.x	v10, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v11, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v10, 0
+	vnsrl.wi	v8, v11, 0
 	vadd.vi	v8, v8, -1
-	vmv.v.x	v9, a0
-	vsrl.vv	v8, v9, v8
+	vsrl.vv	v8, v10, v8
 	vand.vi	v8, v8, 1
 	vmsne.vi	v0, v8, 0
 	ret
 
 func0000000000000038:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
 	li	a0, -47
+	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv.v.x	v10, a0
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vnsrl.wi	v11, v8, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vnsrl.wi	v8, v10, 0
+	vnsrl.wi	v8, v11, 0
 	vadd.vi	v8, v8, -7
-	vmv.v.x	v9, a0
-	vsrl.vv	v8, v9, v8
+	vsrl.vv	v8, v10, v8
 	vand.vi	v8, v8, 1
 	vmsne.vi	v0, v8, 0
 	ret

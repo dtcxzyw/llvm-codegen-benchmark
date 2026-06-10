@@ -3,11 +3,11 @@ func0000000000000000:
 	vfcvt.f.xu.v	v10, v10
 	vfdiv.vv	v10, v8, v10
 	lui	a0, 767092
+	lui	a1, 233743
 	addi	a0, a0, -1517
+	addi	a1, a1, 857
 	vmv.v.x	v8, a0
-	lui	a0, 233743
-	addi	a0, a0, 857
-	fmv.w.x	fa5, a0
+	fmv.w.x	fa5, a1
 	vfmacc.vf	v8, fa5, v10
 	ret
 

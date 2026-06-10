@@ -23,9 +23,9 @@ func000000000000002c:
 	ret
 
 func0000000000000018:
+	li	a0, 255
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vsrl.vi	v10, v10, 3
-	li	a0, 255
 	vand.vx	v10, v10, a0
 	vzext.vf2	v12, v8
 	vmsltu.vv	v0, v12, v10

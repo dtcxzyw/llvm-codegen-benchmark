@@ -5,9 +5,9 @@ func000000000000000d:
 	addi	a0, a0, -16
 	ret
 .LBB0_2:
-	add	a0, a1, a2
-	lui	a1, 1048560
-	addi	a1, a1, 15
+	lui	a0, 1048560
+	add	a1, a1, a2
+	addi	a0, a0, 15
 	add	a0, a0, a1
 	ret
 

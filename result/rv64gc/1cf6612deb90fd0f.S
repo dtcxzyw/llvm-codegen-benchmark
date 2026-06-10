@@ -42,8 +42,8 @@ func000000000000000e:
 	ret
 
 func0000000000000004:
-	fadd.s	fa5, fa0, fa0
 	lui	a1, 847872
+	fadd.s	fa5, fa0, fa0
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	or	a0, a0, a1

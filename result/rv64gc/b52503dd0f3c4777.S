@@ -1,6 +1,6 @@
 func0000000000000010:
-	sub	a2, a2, a0
 	slli	a3, a1, 4
+	sub	a2, a2, a0
 	slli	a1, a1, 6
 	add	a1, a1, a3
 	add	a0, a0, a2

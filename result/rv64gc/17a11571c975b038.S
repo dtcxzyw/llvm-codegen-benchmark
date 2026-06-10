@@ -27,11 +27,11 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	addi	a1, a1, -1
-	blt	a1, a0, .LBB4_2
-	mv	a1, a0
+	mv	a2, a0
+	addi	a0, a1, -1
+	blt	a0, a2, .LBB4_2
+	mv	a0, a2
 .LBB4_2:
-	mv	a0, a1
 	ret
 
 func0000000000000006:

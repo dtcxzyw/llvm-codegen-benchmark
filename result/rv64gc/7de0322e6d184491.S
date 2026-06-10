@@ -83,10 +83,10 @@ func0000000000000029:
 	ret
 
 func0000000000000022:
-	sext.w	a3, a2
-	lui	a4, 1048544
-	addi	a4, a4, -1
-	bltu	a4, a3, .LBB10_2
+	lui	a3, 1048544
+	sext.w	a4, a2
+	addi	a3, a3, -1
+	bltu	a3, a4, .LBB10_2
 	mv	a1, a2
 .LBB10_2:
 	addw	a0, a0, a1

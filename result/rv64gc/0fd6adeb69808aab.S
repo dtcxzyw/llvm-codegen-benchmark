@@ -33,10 +33,10 @@ func0000000000000006:
 	ret
 
 func000000000000008a:
+	li	a2, 1
 	sub	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 62
-	add	a0, a0, a1
+	slli	a2, a2, 62
+	add	a0, a0, a2
 	srli	a0, a0, 63
 	xori	a0, a0, 1
 	ret
@@ -120,13 +120,13 @@ func00000000000000a4:
 	ret
 
 func0000000000000084:
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	slli	a2, a1, 32
-	slli	a1, a1, 33
-	add	a0, a0, a2
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	slli	a1, a2, 32
+	slli	a2, a2, 33
+	add	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func00000000000001a1:
@@ -147,19 +147,19 @@ func0000000000000018:
 	ret
 
 func00000000000000a8:
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 4
-	sub	a0, a0, a1
+	srli	a2, a2, 4
+	sub	a0, a0, a2
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret
 
 func0000000000000088:
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 4
-	sub	a0, a0, a1
+	srli	a2, a2, 4
+	sub	a0, a0, a2
 	srli	a0, a0, 60
 	sltiu	a0, a0, 15
 	ret

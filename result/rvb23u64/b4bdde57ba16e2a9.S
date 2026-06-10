@@ -7,12 +7,12 @@ func0000000000000080:
 	ret
 
 func0000000000000085:
-	srliw	a1, a0, 16
-	srli	a0, a0, 12
-	sltiu	a1, a1, 17
-	ori	a0, a0, -32
-	addi	a0, a0, 17
-	czero.eqz	a0, a0, a1
+	srli	a1, a0, 12
+	srliw	a0, a0, 16
+	ori	a1, a1, -32
+	sltiu	a0, a0, 17
+	addi	a1, a1, 17
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, -17
 	ret
 
@@ -25,12 +25,12 @@ func0000000000000087:
 	ret
 
 func0000000000000081:
-	srliw	a1, a0, 16
-	srli	a0, a0, 12
-	sltiu	a1, a1, 17
-	ori	a0, a0, -32
-	addi	a0, a0, 17
-	czero.eqz	a0, a0, a1
+	srli	a1, a0, 12
+	srliw	a0, a0, 16
+	ori	a1, a1, -32
+	sltiu	a0, a0, 17
+	addi	a1, a1, 17
+	czero.eqz	a0, a1, a0
 	addi	a0, a0, -17
 	ret
 

@@ -19,18 +19,18 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
+	fli.s	fa5, 0.5
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vv	v0, v10, v8
-	fli.s	fa5, 0.5
 	vfmv.v.f	v8, fa5
 	fneg.s	fa5, fa5
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret
 
 func000000000000000a:
+	fli.s	fa5, 0.5
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vv	v0, v10, v8
-	fli.s	fa5, 0.5
 	vfmv.v.f	v8, fa5
 	fneg.s	fa5, fa5
 	vfmerge.vfm	v8, v8, fa5, v0

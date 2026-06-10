@@ -292,9 +292,9 @@ func0000000000000144:
 
 func0000000000000089:
 	lui	a3, 732
+	addi	a3, a3, 1729
 	sltu	a0, a0, a1
-	addi	a1, a3, 1729
-	sltu	a1, a2, a1
+	sltu	a1, a2, a3
 	not	a0, a0
 	and	a0, a0, a1
 	ret

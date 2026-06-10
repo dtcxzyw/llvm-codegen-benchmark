@@ -10,8 +10,8 @@ func00000000000000a4:
 func00000000000001a4:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	li	a0, -127
 	vor.vv	v8, v8, v12
+	li	a0, -127
 	vadd.vx	v8, v8, a0
 	li	a0, 33
 	vmsltu.vx	v10, v8, a0

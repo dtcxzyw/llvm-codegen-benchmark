@@ -23,13 +23,13 @@ func0000000000000035:
 	beq	a2, a3, .LBB2_2
 	li	a2, 8
 	sext.w	a1, a1
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 .LBB2_2:
 	li	a2, 16
 	sext.w	a1, a1
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 

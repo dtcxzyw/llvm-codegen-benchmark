@@ -15,9 +15,9 @@ func000000000000000c:
 	ret
 
 func0000000000000004:
+	li	a2, 128
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 128
 	bltu	a1, a2, .LBB2_2
 	li	a0, 63
 .LBB2_2:

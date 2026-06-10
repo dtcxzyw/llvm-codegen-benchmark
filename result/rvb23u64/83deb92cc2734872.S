@@ -4,9 +4,9 @@ func0000000000000041:
 	mul	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 1025
-	slli	a1, a0, 14
-	slli	a0, a0, 48
-	srli	a0, a0, 50
+	slli	a1, a0, 48
+	slli	a0, a0, 14
+	srli	a1, a1, 50
 	or	a0, a0, a1
 	lui	a1, 1
 	zext.h	a0, a0
@@ -20,9 +20,9 @@ func00000000000000c1:
 	mul	a0, a0, a1
 	addi	a0, a0, 2047
 	addi	a0, a0, 1025
-	slli	a1, a0, 14
-	slli	a0, a0, 48
-	srli	a0, a0, 50
+	slli	a1, a0, 48
+	slli	a0, a0, 14
+	srli	a1, a1, 50
 	or	a0, a0, a1
 	lui	a1, 1
 	zext.h	a0, a0

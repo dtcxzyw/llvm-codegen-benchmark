@@ -1,13 +1,13 @@
 func0000000000000007:
+	fli.d	fa5, 1.5
 	lui	a0, %hi(.promoted_doubles.func0000000000000007)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000007)
-	fld	fa5, 0(a0)
-	fld	fa4, 8(a0)
-	fld	fa3, 16(a0)
-	fli.d	ft0, 1.5
-	fsub.d	fa2, fa2, ft0
-	fmadd.d	fa5, fa2, fa5, fa4
-	fmadd.d	fa5, fa1, fa3, fa5
+	fsub.d	fa5, fa2, fa5
+	fld	fa4, 0(a0)
+	fld	fa3, 8(a0)
+	fld	fa2, 16(a0)
+	fmadd.d	fa5, fa5, fa4, fa3
+	fmadd.d	fa5, fa1, fa2, fa5
 	feq.d	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret

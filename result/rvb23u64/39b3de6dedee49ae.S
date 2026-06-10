@@ -21,9 +21,9 @@ func0000000000000006:
 func0000000000000007:
 	slli	a1, a1, 54
 	srli	a1, a1, 59
+	lui	a2, 15
 	add	a0, a0, a1
-	lui	a1, 15
-	addi	a1, a1, 1024
+	addi	a1, a2, 1024
 	addw	a0, a0, a1
 	ret
 

@@ -23,9 +23,9 @@ func0000000000000012:
 	bnez	a0, .LBB2_2
 	fmv.s	fa0, fa1
 .LBB2_2:
-	fabs.s	fa5, fa0
 	lui	a0, 219235
 	addi	a0, a0, 1981
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -45,8 +45,8 @@ func000000000000000a:
 	bnez	a0, .LBB4_2
 	fmv.s	fa0, fa1
 .LBB4_2:
-	fabs.s	fa5, fa0
 	lui	a0, 273536
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret

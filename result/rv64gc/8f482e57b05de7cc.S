@@ -25,8 +25,8 @@ func00000000000000cb:
 func00000000000000eb:
 	sub	a1, a1, a2
 	slli	a0, a0, 32
-	lui	a2, 1
 	srli	a0, a0, 32
+	lui	a2, 1
 	add	a0, a0, a1
 	addi	a1, a2, 368
 	add	a0, a0, a1

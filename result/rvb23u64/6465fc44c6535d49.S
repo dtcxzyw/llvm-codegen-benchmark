@@ -8,23 +8,23 @@ func0000000000000005:
 	ret
 
 func0000000000000015:
-	sltu	a3, a0, a2
-	sub	a2, a0, a2
-	sub	a1, a1, a3
-	addi	a0, a2, 2
+	sub	a3, a0, a2
 	sltu	a2, a0, a2
+	addi	a0, a3, 2
+	sub	a1, a1, a2
+	sltu	a2, a0, a3
 	add	a1, a1, a2
 	ret
 
 func0000000000000004:
-	sltu	a3, a0, a2
+	li	a3, -255
+	sltu	a4, a0, a2
+	sub	a1, a1, a4
 	sub	a2, a0, a2
-	li	a4, -255
-	sub	a1, a1, a3
 	addi	a0, a2, -256
-	srli	a4, a4, 1
+	srli	a3, a3, 1
 	sltu	a2, a0, a2
-	add	a1, a1, a4
+	add	a1, a1, a3
 	add	a1, a1, a2
 	ret
 

@@ -23,8 +23,8 @@ func0000000000000039:
 
 func0000000000000021:
 	andi	a2, a2, -2
-	zext.w	a1, a1
 	sext.w	a2, a2
+	zext.w	a1, a1
 	xori	a2, a2, 2
 	xor	a0, a0, a1
 	or	a0, a0, a2
@@ -47,16 +47,16 @@ func000000000000002c:
 	ret
 
 func0000000000000194:
-	bexti	a2, a2, 30
 	zext.w	a1, a1
+	bexti	a2, a2, 30
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
 
 func0000000000000434:
 	andi	a2, a2, 14
-	sext.w	a1, a1
 	addi	a2, a2, -14
+	sext.w	a1, a1
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2

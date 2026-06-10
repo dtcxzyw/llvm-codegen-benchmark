@@ -1,12 +1,12 @@
 func0000000000000003:
-	slli	a0, a0, 5
 	lui	a1, 64
+	slli	a0, a0, 5
 	and	a0, a0, a1
 	ret
 
 func0000000000000002:
-	slliw	a0, a0, 16
 	lui	a1, 983024
+	slliw	a0, a0, 16
 	and	a0, a0, a1
 	ret
 

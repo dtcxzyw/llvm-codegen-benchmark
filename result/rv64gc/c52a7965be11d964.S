@@ -3,9 +3,9 @@ func0000000000000024:
 	slli	a0, a0, 48
 	srai	a1, a1, 48
 	srai	a0, a0, 48
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, -358
+	addi	a1, a2, -358
 	sltu	a0, a0, a1
 	ret
 
@@ -23,9 +23,9 @@ func0000000000000028:
 	slli	a0, a0, 48
 	srai	a1, a1, 48
 	srai	a0, a0, 48
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -1418
+	addi	a1, a2, -1418
 	sltu	a0, a1, a0
 	ret
 

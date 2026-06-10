@@ -2,9 +2,9 @@ func0000000000000084:
 	mul	a0, a0, a1
 	lui	a1, 61
 	addi	a1, a1, 143
+	lui	a2, 122
 	addw	a0, a0, a1
-	lui	a1, 122
-	addi	a1, a1, 287
+	addi	a1, a2, 287
 	sltu	a0, a0, a1
 	ret
 
@@ -12,10 +12,10 @@ func0000000000000004:
 	mul	a0, a0, a1
 	lui	a1, 32
 	addi	a1, a1, -1
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -1
-	sltu	a0, a0, a1
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 
 func0000000000000001:
@@ -55,10 +55,10 @@ func0000000000000006:
 func0000000000000024:
 	mul	a0, a0, a1
 	lui	a1, 1048320
+	lui	a2, 261888
 	addw	a0, a0, a1
-	lui	a1, 261888
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 
 func00000000000000a8:

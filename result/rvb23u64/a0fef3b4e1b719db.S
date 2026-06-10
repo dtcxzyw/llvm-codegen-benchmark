@@ -1,6 +1,6 @@
 func0000000000000061:
-	sltiu	a1, a1, 256
 	li	a3, -2
+	sltiu	a1, a1, 256
 	orn	a2, a3, a2
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
@@ -46,8 +46,8 @@ func0000000000000013:
 	ret
 
 func0000000000000051:
-	andi	a2, a2, 1
 	lui	a3, 1
+	andi	a2, a2, 1
 	addi	a3, a3, -64
 	czero.nez	a2, a3, a2
 	sltiu	a1, a1, 513
@@ -58,8 +58,8 @@ func0000000000000051:
 	ret
 
 func0000000000000053:
-	andi	a2, a2, 1
 	lui	a3, 1
+	andi	a2, a2, 1
 	addi	a3, a3, -64
 	czero.nez	a2, a3, a2
 	sltiu	a1, a1, 513
@@ -74,8 +74,8 @@ func0000000000000020:
 	lui	a3, 511
 	czero.nez	a2, a3, a2
 	lui	a3, 1
-	srli	a1, a1, 30
 	add	a2, a2, a3
+	srli	a1, a1, 30
 	lui	a3, 262144
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

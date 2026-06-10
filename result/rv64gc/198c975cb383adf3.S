@@ -1,8 +1,8 @@
 func0000000000000001:
-	andi	a3, a1, 1
 	sext.w	a2, a2
-	seqz	a1, a2
-	or	a0, a0, a1
+	seqz	a2, a2
+	andi	a3, a1, 1
+	or	a0, a0, a2
 	andi	a1, a0, 1
 	li	a0, 384
 	bnez	a3, .LBB0_2

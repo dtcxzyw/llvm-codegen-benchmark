@@ -17,8 +17,8 @@ func0000000000000008:
 func0000000000000002:
 	sext.w	a2, a2
 	lui	a3, 1
-	xori	a0, a0, 1
 	xor	a2, a2, a3
+	xori	a0, a0, 1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

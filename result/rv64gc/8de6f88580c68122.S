@@ -39,8 +39,8 @@ func00000000000000c6:
 	ret
 
 func00000000000000cc:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	slti	a2, a2, 128
 	xori	a2, a2, 1
 	snez	a1, a1

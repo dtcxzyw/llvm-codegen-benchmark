@@ -10,11 +10,11 @@ func0000000000000064:
 
 func0000000000000044:
 	lui	a2, 1048575
+	li	a3, -1
 	and	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 1
+	srli	a3, a3, 1
 	sub	a1, a1, a0
-	xor	a0, a0, a2
+	xor	a0, a0, a3
 	sltu	a0, a0, a1
 	ret
 

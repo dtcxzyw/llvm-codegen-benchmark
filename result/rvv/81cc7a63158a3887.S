@@ -77,8 +77,8 @@ func000000000000001c:
 func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnot.v	v8, v8
-	lui	a0, 24076
 	vadd.vv	v8, v10, v8
+	lui	a0, 24076
 	addi	a0, a0, 179
 	slli	a0, a0, 7
 	vadd.vx	v8, v8, a0

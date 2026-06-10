@@ -8,10 +8,10 @@ func0000000000000004:
 
 func0000000000000008:
 	fmv.w.x	fa5, zero
+	addi	a0, a0, -8
 	flt.s	a2, fa5, fa0
 	or	a1, a1, a2
 	andi	a1, a1, 1
-	addi	a0, a0, -8
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 8
 	ret

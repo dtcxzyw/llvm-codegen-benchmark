@@ -11,8 +11,8 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	zext.w	a1, a1
 	srli	a0, a0, 1
+	zext.w	a1, a1
 	slli.uw	a0, a0, 1
 	mul	a0, a0, a1
 	ret

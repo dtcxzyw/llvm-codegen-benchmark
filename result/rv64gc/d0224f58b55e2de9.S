@@ -1,7 +1,7 @@
 func00000000000006c8:
+	feq.s	a1, fa0, fa1
 	addi	a0, a0, -8
 	snez	a0, a0
-	feq.s	a1, fa0, fa1
 	and	a0, a0, a1
 	ret
 

@@ -10,11 +10,11 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
+	lui	a3, 16
 	srliw	a2, a2, 24
+	addi	a3, a3, -256
 	or	a0, a0, a2
-	lui	a2, 16
-	addi	a2, a2, -256
-	and	a1, a1, a2
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ori	a0, a0, 96
 	ret

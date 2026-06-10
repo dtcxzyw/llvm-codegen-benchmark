@@ -1,8 +1,8 @@
 func0000000000000003:
 	andi	a0, a0, 1
 	zext.b	a1, a1
-	seqz	a1, a1
 	addi	a0, a0, -1
+	seqz	a1, a1
 	andi	a0, a0, 32
 	or	a0, a0, a1
 	addi	a0, a0, 1
@@ -19,11 +19,11 @@ func0000000000000009:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 1
 	zext.b	a1, a1
+	andi	a0, a0, 1
 	sltiu	a1, a1, 16
-	addi	a0, a0, -1
 	addi	a1, a1, -1
+	addi	a0, a0, -1
 	andi	a1, a1, 3
 	andi	a0, a0, 9
 	or	a0, a0, a1

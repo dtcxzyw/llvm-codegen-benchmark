@@ -23,18 +23,18 @@ func0000000000000042:
 	ret
 
 func000000000000004c:
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 2
-	bseti	a0, zero, 63
 	vmslt.vv	v14, v8, v12
 	vmseq.vx	v8, v10, a0
 	vmor.mm	v0, v14, v8
 	ret
 
 func0000000000000182:
+	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 7
-	bseti	a0, zero, 63
 	vmslt.vv	v14, v10, v12
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14

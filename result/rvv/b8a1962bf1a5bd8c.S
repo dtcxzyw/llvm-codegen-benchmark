@@ -1,7 +1,7 @@
 func0000000000000e02:
-	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v9, v10, 11
+	li	a0, 16
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vx	v10, v8, a0
 	li	a0, 17
@@ -11,9 +11,9 @@ func0000000000000e02:
 	ret
 
 func0000000000000a02:
-	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v9, v10, 11
+	li	a0, 16
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vx	v10, v8, a0
 	li	a0, 17
@@ -23,9 +23,9 @@ func0000000000000a02:
 	ret
 
 func000000000000610c:
+	lui	a0, 1048572
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v9, v10, 0
-	lui	a0, 1048572
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v9, v10, v9

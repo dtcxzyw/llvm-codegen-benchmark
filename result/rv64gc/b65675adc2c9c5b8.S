@@ -69,18 +69,18 @@ func000000000000018c:
 
 func000000000000018a:
 	sext.w	a2, a0
-	srliw	a0, a0, 31
 	xor	a1, a1, a2
+	srliw	a0, a0, 31
 	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000106:
-	sext.w	a0, a0
 	lui	a2, 262144
-	sltu	a1, a0, a1
+	sext.w	a0, a0
 	addi	a2, a2, -1
+	sltu	a1, a0, a1
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret

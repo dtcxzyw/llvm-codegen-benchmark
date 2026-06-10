@@ -14,8 +14,8 @@ func0000000000000078:
 	lui	a0, 272
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v10, a0
-	lui	a0, 16
 	vor.vv	v8, v8, v10
+	lui	a0, 16
 	addi	a0, a0, -3
 	vmerge.vxm	v8, v8, a0, v0
 	ret

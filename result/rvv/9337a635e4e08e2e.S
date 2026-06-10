@@ -31,21 +31,21 @@ func0000000000000cca:
 	ret
 
 func00000000000000c6:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v12, v12, v8
 	lui	a0, 372529
-	vmslt.vv	v14, v12, v10
 	slli	a0, a0, 2
 	addi	a0, a0, 489
 	slli	a0, a0, 14
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v12, v12, v8
+	vmslt.vv	v14, v12, v10
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
 
 func0000000000000084:
+	li	a0, -119
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v12, v8, v12
-	li	a0, -119
 	vmsltu.vv	v14, v12, v10
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14

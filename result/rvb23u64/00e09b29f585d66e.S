@@ -14,9 +14,9 @@ func0000000000000002:
 	ret
 
 func0000000000000042:
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	bseti	a1, a1, 63
+	bseti	a1, a2, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

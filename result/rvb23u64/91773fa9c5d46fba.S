@@ -23,9 +23,9 @@ func0000000000000005:
 	ret
 
 func000000000000000c:
+	li	a3, -1
 	divu	a1, a1, a2
 	add	a0, a0, a1
-	li	a1, -1
-	add.uw	a0, a1, a0
+	add.uw	a0, a3, a0
 	ret
 

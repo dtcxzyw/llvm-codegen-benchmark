@@ -2,8 +2,8 @@ func0000000000000015:
 	zext.h	a2, a2
 	mul	a1, a1, a2
 	lui	a2, 244
-	add	a0, a0, a1
-	addi	a1, a2, 576
+	addi	a2, a2, 576
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

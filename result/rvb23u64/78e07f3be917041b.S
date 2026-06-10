@@ -8,12 +8,12 @@ func0000000000000061:
 func0000000000000001:
 	lui	a2, 540672
 	addi	a2, a2, 15
+	lui	a3, 67584
 	slli.uw	a2, a2, 13
+	addi	a3, a3, 1
 	and	a1, a1, a2
-	lui	a2, 67584
-	addi	a2, a2, 1
-	slli	a2, a2, 16
-	xor	a1, a1, a2
+	slli	a3, a3, 16
+	xor	a1, a1, a3
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret

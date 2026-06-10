@@ -39,7 +39,7 @@ func0000000000000000:
 	ld	a2, %lo(.LCPI3_1)(a2)
 	mul	a1, a0, a1
 	mulhu	a3, a0, a2
-	add	a1, a1, a3
 	mul	a0, a0, a2
+	add	a1, a1, a3
 	ret
 

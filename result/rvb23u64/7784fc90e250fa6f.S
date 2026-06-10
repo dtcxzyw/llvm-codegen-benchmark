@@ -36,10 +36,10 @@ func0000000000003188:
 	ret
 
 func000000000000042c:
+	li	a3, -2
+	bclri	a3, a3, 62
+	xor	a0, a0, a3
 	or	a1, a1, a2
-	li	a2, -2
-	bclri	a2, a2, 62
-	xor	a0, a0, a2
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
@@ -58,17 +58,17 @@ func0000000000000424:
 	ret
 
 func0000000000000481:
-	or	a0, a0, a2
 	srli	a1, a1, 16
+	or	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func000000000000114a:
 	lui	a3, 244
+	addi	a3, a3, 576
 	or	a0, a0, a1
-	addi	a1, a3, 576
-	sltu	a1, a2, a1
+	sltu	a1, a2, a3
 	srli	a0, a0, 63
 	andn	a0, a1, a0
 	ret

@@ -17,10 +17,10 @@ func0000000000000004:
 .LCPI2_0:
 	.quad	0x7fefffffffffffff
 func0000000000000002:
-	lui	a0, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
 	vfmin.vf	v16, v16, fa5
 	vfmul.vv	v8, v8, v16
 	ret

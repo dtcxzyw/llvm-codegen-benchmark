@@ -23,8 +23,8 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	sraiw	a2, a2, 1
 	srliw	a1, a1, 9
+	sraiw	a2, a2, 1
 	sltiu	a1, a1, 39
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1

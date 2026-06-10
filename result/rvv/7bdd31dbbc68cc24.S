@@ -13,9 +13,9 @@ func000000000000003b:
 	vzext.vf4	v14, v12
 	li	a0, 48
 	vwsll.vx	v12, v14, a0
-	li	a0, 56
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12
+	li	a0, 56
 	vsll.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -25,9 +25,9 @@ func000000000000002f:
 	vzext.vf4	v14, v12
 	li	a0, 56
 	vwsll.vx	v12, v14, a0
-	li	a0, 40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12
+	li	a0, 40
 	vsll.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -57,9 +57,9 @@ func0000000000000038:
 	vzext.vf4	v14, v12
 	li	a0, 48
 	vwsll.vx	v12, v14, a0
-	li	a0, 56
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12
+	li	a0, 56
 	vsll.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -69,9 +69,9 @@ func000000000000007e:
 	vzext.vf4	v14, v12
 	li	a0, 35
 	vwsll.vx	v12, v14, a0
-	li	a0, 42
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v12, v10
+	li	a0, 42
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -81,9 +81,9 @@ func0000000000000076:
 	vzext.vf4	v14, v12
 	li	a0, 42
 	vwsll.vx	v12, v14, a0
-	li	a0, 49
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v12, v10
+	li	a0, 49
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -93,9 +93,9 @@ func0000000000000070:
 	vzext.vf4	v14, v12
 	li	a0, 56
 	vwsll.vx	v12, v14, a0
-	li	a0, 63
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v12, v10
+	li	a0, 63
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -105,9 +105,9 @@ func000000000000003d:
 	vzext.vf4	v14, v12
 	li	a0, 48
 	vwsll.vx	v12, v14, a0
-	li	a0, 56
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v12, v10
+	li	a0, 56
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -117,9 +117,9 @@ func000000000000003c:
 	vzext.vf4	v14, v12
 	li	a0, 32
 	vwsll.vx	v12, v14, a0
-	li	a0, 40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
+	li	a0, 40
 	vsll.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -129,9 +129,9 @@ func000000000000000c:
 	vzext.vf4	v14, v12
 	li	a0, 58
 	vwsll.vx	v12, v14, a0
-	li	a0, 46
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12
+	li	a0, 46
 	vsll.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -141,9 +141,9 @@ func000000000000007c:
 	vzext.vf4	v14, v12
 	li	a0, 32
 	vwsll.vx	v12, v14, a0
-	li	a0, 40
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v8, v12
+	li	a0, 40
 	vsll.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -151,10 +151,12 @@ func000000000000007c:
 func0000000000000036:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v14, v12
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vsll.vi	v8, v8, 16
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vi	v12, v14, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
-	vsll.vi	v8, v8, 16
 	vor.vv	v8, v8, v10
 	ret
 

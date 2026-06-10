@@ -1,7 +1,7 @@
 func0000000000000181:
-	sext.w	a0, a0
 	fmv.x.w	a1, fa0
 	lui	a2, 520192
+	sext.w	a0, a0
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0
@@ -9,9 +9,9 @@ func0000000000000181:
 	ret
 
 func0000000000000301:
-	sext.w	a0, a0
 	fmv.x.w	a1, fa0
 	lui	a2, 520192
+	sext.w	a0, a0
 	and	a1, a1, a2
 	snez	a1, a1
 	seqz	a0, a0

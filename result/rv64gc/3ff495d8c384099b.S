@@ -17,11 +17,11 @@ func000000000000002f:
 
 func000000000000003b:
 	zext.b	a1, a1
-	slli	a0, a0, 32
 	slli	a1, a1, 16
+	slli	a0, a0, 32
+	lui	a2, 69640
 	or	a0, a0, a1
-	lui	a1, 69640
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a2, a2, 1
+	or	a0, a0, a2
 	ret
 

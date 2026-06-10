@@ -12,9 +12,9 @@ func0000000000000000:
 	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	lui	a2, 532544
+	lui	a3, 9280
 	add	a1, a1, a2
-	lui	a2, 9280
-	andn	a0, a0, a2
+	andn	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

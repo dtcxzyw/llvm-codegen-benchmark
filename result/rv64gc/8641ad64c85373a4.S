@@ -11,9 +11,9 @@ func000000000000000f:
 
 func000000000000000c:
 	sext.w	a0, a0
-	addi	a1, a0, -1
-	slti	a0, a0, 2
+	slti	a1, a0, 2
 	addi	a0, a0, -1
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	slli	a1, a0, 32
 	slli	a0, a0, 33
@@ -21,9 +21,9 @@ func000000000000000c:
 	ret
 
 func0000000000000003:
-	sraiw	a1, a0, 31
-	or	a0, a0, a1
 	li	a1, 867
+	sraiw	a2, a0, 31
+	or	a0, a0, a2
 	addi	a0, a0, 1
 	slli	a0, a0, 32
 	slli	a1, a1, 35

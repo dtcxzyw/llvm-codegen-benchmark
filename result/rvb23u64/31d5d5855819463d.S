@@ -7,16 +7,16 @@ func000000000000000e:
 	ret
 
 func000000000000000f:
-	addi	a1, a1, 65
 	lui	a2, 512
+	addi	a1, a1, 65
 	addi	a2, a2, -64
 	and	a1, a1, a2
 	mul	a0, a0, a1
 	ret
 
 func000000000000000c:
-	addi	a1, a1, 127
 	bseti	a2, zero, 36
+	addi	a1, a1, 127
 	addi	a2, a2, -128
 	and	a1, a1, a2
 	mul	a0, a0, a1
@@ -67,10 +67,10 @@ func0000000000000005:
 
 func0000000000000009:
 	li	a2, -8
+	zext.w	a3, a2
 	add.uw	a1, a2, a1
-	zext.w	a2, a2
-	addi	a2, a2, 6
-	and	a1, a1, a2
+	addi	a3, a3, 6
+	and	a1, a1, a3
 	mul	a0, a0, a1
 	ret
 

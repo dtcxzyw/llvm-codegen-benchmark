@@ -6,10 +6,10 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
+	bseti	a3, zero, 34
 	sub	a1, a1, a2
-	bseti	a2, zero, 34
-	addi	a2, a2, -8
-	and	a1, a1, a2
+	addi	a3, a3, -8
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

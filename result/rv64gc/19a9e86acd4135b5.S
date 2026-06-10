@@ -41,9 +41,9 @@ func0000000000000199:
 
 func0000000000000085:
 	slli	a2, a2, 32
-	srli	a1, a1, 16
 	srli	a2, a2, 32
 	sltu	a0, a2, a0
+	srli	a1, a1, 16
 	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -69,11 +69,11 @@ func0000000000000084:
 func0000000000000024:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	lui	a3, 1
 	xor	a1, a1, a2
-	lui	a2, 1
-	addi	a2, a2, 1
+	addi	a3, a3, 1
 	seqz	a1, a1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret
 
@@ -142,8 +142,8 @@ func0000000000000681:
 
 func0000000000000114:
 	slli	a2, a2, 32
-	sltiu	a1, a1, 3
 	srli	a2, a2, 32
+	sltiu	a1, a1, 3
 	sltu	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
@@ -174,8 +174,8 @@ func0000000000000194:
 
 func0000000000000298:
 	slli	a2, a2, 32
-	sltiu	a0, a0, 2
 	srli	a2, a2, 32
+	sltiu	a0, a0, 2
 	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
@@ -192,9 +192,9 @@ func000000000000018c:
 
 func0000000000000141:
 	slli	a2, a2, 32
-	slti	a1, a1, 2
 	srli	a2, a2, 32
 	xor	a0, a0, a2
+	slti	a1, a1, 2
 	seqz	a0, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1

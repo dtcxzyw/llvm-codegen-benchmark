@@ -6,8 +6,8 @@ func0000000000000010:
 	ret
 
 func000000000000001f:
-	srli	a2, a2, 1
 	lui	a3, 8
+	srli	a2, a2, 1
 	addi	a3, a3, -2
 	and	a2, a2, a3
 	add	a0, a0, a1

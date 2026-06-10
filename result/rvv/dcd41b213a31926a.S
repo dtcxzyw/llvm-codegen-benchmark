@@ -1,8 +1,8 @@
 func000000000000000d:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vi	v12, v12, 1
 	lui	a0, 524288
 	addi	a0, a0, -2
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vi	v12, v12, 1
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vadd.vv	v10, v10, v10

@@ -5,8 +5,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	andi	a1, a1, 4
 	sltiu	a0, a0, 2
+	andi	a1, a1, 4
 	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000034:
 	andi	a0, a0, 1
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	addi	a0, a0, -1
+	srli	a1, a1, 48
 	andi	a0, a0, 60
 	sltu	a0, a0, a1
 	ret
@@ -58,9 +58,9 @@ func000000000000002c:
 func0000000000000014:
 	andi	a0, a0, 1
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	addi	a0, a0, -1
 	lui	a2, 8
+	srli	a1, a1, 48
 	and	a0, a0, a2
 	sltu	a0, a0, a1
 	ret

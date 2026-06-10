@@ -1,8 +1,8 @@
 func0000000000000028:
+	li	a3, -31
 	sub	a2, a2, a1
-	li	a1, -31
-	srli	a1, a1, 1
-	sltu	a1, a1, a2
+	srli	a3, a3, 1
+	sltu	a1, a3, a2
 	andn	a0, a1, a0
 	ret
 

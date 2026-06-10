@@ -6,19 +6,19 @@ func0000000000000001:
 	ret
 
 func0000000000000009:
-	slli	a1, a1, 48
 	lui	a2, 1536
-	srli	a1, a1, 43
+	slli	a1, a1, 48
 	addi	a2, a2, 31
+	srli	a1, a1, 43
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000011:
-	slli	a1, a1, 1
 	li	a2, 15
-	andi	a1, a1, 240
+	slli	a1, a1, 1
 	slli	a2, a2, 8
+	andi	a1, a1, 240
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -31,10 +31,10 @@ func0000000000000005:
 	ret
 
 func0000000000000007:
-	slli	a1, a1, 62
 	lui	a2, 1048572
-	srli	a1, a1, 58
+	slli	a1, a1, 62
 	addi	a2, a2, -49
+	srli	a1, a1, 58
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

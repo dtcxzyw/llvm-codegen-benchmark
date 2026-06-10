@@ -1,10 +1,10 @@
 func0000000000000010:
-	addi	a2, a1, 1
-	li	a1, 2
-	bltu	a2, a1, .LBB0_2
-	slli	a1, a0, 1
+	li	a2, 2
+	addi	a1, a1, 1
+	bltu	a1, a2, .LBB0_2
+	slli	a2, a0, 1
 .LBB0_2:
-	mv	a0, a1
+	mv	a0, a2
 	ret
 
 func0000000000000004:
@@ -35,8 +35,8 @@ func0000000000000006:
 	ret
 
 func0000000000000011:
-	addi	a1, a1, -114
 	li	a2, 26
+	addi	a1, a1, -114
 	bgeu	a1, a2, .LBB4_2
 	li	a0, 44
 	ret

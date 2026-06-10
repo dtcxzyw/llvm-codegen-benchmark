@@ -10,9 +10,9 @@ func000000000000000c:
 
 func0000000000000004:
 	lui	a0, 268653
+	lui	a1, 792920
 	fmv.w.x	fa5, a0
-	lui	a0, 792920
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fmadd.s	fa5, fa0, fa4, fa5
 	fli.s	fa4, min
 	fmax.s	fa0, fa5, fa4

@@ -1,8 +1,8 @@
 func0000000000000007:
 	lui	a2, 524288
+	lui	a3, 65534
 	and	a1, a1, a2
-	lui	a2, 65534
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	lui	a1, 229376
 	addw	a0, a0, a1

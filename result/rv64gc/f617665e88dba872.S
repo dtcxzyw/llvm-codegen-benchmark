@@ -20,9 +20,9 @@ func0000000000000000:
 	and	a2, a2, a3
 	lui	a3, 1046536
 	addi	a3, a3, 255
+	lui	a4, 1048568
 	and	a1, a1, a3
-	lui	a3, 1048568
-	addi	a3, a3, 255
+	addi	a3, a4, 255
 	or	a1, a1, a2
 	and	a0, a0, a3
 	or	a0, a0, a1

@@ -1,8 +1,8 @@
 func0000000000000002:
 	li	a1, 255
+	lui	a2, 4112
 	srlw	a0, a1, a0
-	lui	a1, 4112
-	addi	a1, a1, 257
+	addi	a1, a2, 257
 	mulw	a0, a0, a1
 	ret
 

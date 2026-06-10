@@ -7,10 +7,10 @@ func00000000000000a3:
 	ret
 
 func0000000000000023:
-	srli	a1, a0, 29
-	seqz	a1, a1
-	sll	a0, a0, a1
 	lui	a1, 8
+	srli	a2, a0, 29
+	seqz	a2, a2
+	sll	a0, a0, a2
 	addi	a1, a1, -256
 	and	a0, a0, a1
 	ret

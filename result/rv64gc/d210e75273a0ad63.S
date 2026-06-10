@@ -105,15 +105,15 @@ func0000000000000c94:
 func0000000000000d14:
 	sext.w	a1, a1
 	addi	a2, a2, 1
-	sltu	a0, a2, a0
 	sltiu	a1, a1, 2
+	sltu	a0, a2, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	addi	a2, a2, 1
+	sext.w	a1, a1
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -144,8 +144,8 @@ func00000000000004c6:
 	ret
 
 func0000000000000025:
-	sext.w	a1, a1
 	addi	a2, a2, 16
+	sext.w	a1, a1
 	sltu	a0, a0, a2
 	not	a0, a0
 	seqz	a1, a1

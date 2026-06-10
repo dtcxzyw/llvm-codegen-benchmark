@@ -16,27 +16,27 @@ func000000000000000f:
 func0000000000000003:
 	andi	a1, a1, -64
 	slli	a0, a0, 2
+	lui	a2, 150
 	add	a0, a0, a1
-	lui	a1, 150
-	addi	a1, a1, 768
+	addi	a1, a2, 768
 	add	a0, a0, a1
 	ret
 
 func0000000000000002:
 	andi	a1, a1, -64
 	slli	a0, a0, 2
+	lui	a2, 150
 	add	a0, a0, a1
-	lui	a1, 150
-	addi	a1, a1, 768
+	addi	a1, a2, 768
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
 	andi	a1, a1, -64
 	slli	a0, a0, 2
+	lui	a2, 150
 	add	a0, a0, a1
-	lui	a1, 150
-	addi	a1, a1, 768
+	addi	a1, a2, 768
 	add	a0, a0, a1
 	ret
 

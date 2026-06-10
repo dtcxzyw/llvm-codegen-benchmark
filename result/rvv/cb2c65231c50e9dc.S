@@ -22,11 +22,11 @@ func00000000000000c4:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
-	vmv.v.i	v12, 0
-	lui	a0, 292864
 	vmfge.vf	v0, v8, fa5
-	addi	a0, a0, -256
+	vmv.v.i	v12, 0
 	vmerge.vvm	v8, v12, v8, v0
+	lui	a0, 292864
+	addi	a0, a0, -256
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret

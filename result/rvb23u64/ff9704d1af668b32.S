@@ -11,9 +11,9 @@ func0000000000000012:
 func0000000000000002:
 	fadd.d	fa5, fa1, fa2
 	fdiv.d	fa5, fa0, fa5
+	fabs.d	fa5, fa5
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a0)
-	fabs.d	fa5, fa5
 	flt.d	a0, fa5, fa4
 	ret
 

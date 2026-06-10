@@ -20,9 +20,9 @@ func0000000000000007:
 
 func0000000000000053:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v10, v10, -4
 	vmsleu.vi	v0, v8, 15
+	vand.vi	v8, v10, -4
 	li	a0, 16
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 

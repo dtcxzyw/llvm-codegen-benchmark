@@ -49,11 +49,11 @@ func0000000000000084:
 
 func0000000000000108:
 	lui	a3, 1048514
-	srliw	a1, a1, 11
 	addi	a4, a3, -1049
-	addi	a3, a3, -2048
-	sltiu	a1, a1, 125
+	srliw	a1, a1, 11
 	addw	a2, a2, a4
+	sltiu	a1, a1, 125
+	addi	a3, a3, -2048
 	xori	a1, a1, 1
 	sltu	a2, a2, a3
 	or	a0, a0, a1

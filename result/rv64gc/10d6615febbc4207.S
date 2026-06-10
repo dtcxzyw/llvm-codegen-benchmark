@@ -23,22 +23,22 @@ func000000000000000c:
 	ret
 
 func000000000000000f:
-	srli	a1, a1, 22
 	andi	a0, a0, 1
+	srli	a1, a1, 22
 	slli	a0, a0, 20
 	or	a0, a0, a1
 	ret
 
 func0000000000000006:
-	srli	a1, a1, 37
 	andi	a0, a0, 1
+	srli	a1, a1, 37
 	slli	a0, a0, 8
 	or	a0, a0, a1
 	ret
 
 func0000000000000007:
-	srli	a1, a1, 63
 	andi	a0, a0, 1
+	srli	a1, a1, 63
 	slli	a0, a0, 1
 	or	a0, a0, a1
 	ret

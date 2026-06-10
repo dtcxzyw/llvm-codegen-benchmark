@@ -5,16 +5,16 @@ func0000000000000000:
 	ret
 
 func000000000000000f:
+	li	a1, 32
 	slli	a0, a0, 3
 	andi	a0, a0, 24
-	li	a1, 32
 	sub	a0, a1, a0
 	ret
 
 func000000000000000d:
+	li	a1, 1
 	slli	a0, a0, 1
 	andi	a0, a0, 2
-	li	a1, 1
 	sub	a0, a1, a0
 	ret
 

@@ -18,8 +18,8 @@ func000000000000001f:
 	ret
 
 func000000000000000a:
-	srliw	a0, a0, 16
 	lui	a1, 16
+	srliw	a0, a0, 16
 	addi	a1, a1, -255
 	mul	a0, a0, a1
 	lui	a1, 2048

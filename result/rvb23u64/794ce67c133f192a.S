@@ -1,7 +1,7 @@
 func0000000000001081:
 	sub	a1, a1, a2
-	addiw	a0, a0, -12
 	addiw	a1, a1, -12
+	addiw	a0, a0, -12
 	sltiu	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -9,16 +9,16 @@ func0000000000001081:
 
 func0000000000001024:
 	sub	a1, a1, a2
-	addiw	a0, a0, -6
 	addiw	a1, a1, -8
+	addiw	a0, a0, -6
 	sltiu	a1, a1, 7
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	sext.w	a0, a0
 	subw	a1, a1, a2
+	sext.w	a0, a0
 	sltiu	a1, a1, -1
 	czero.eqz	a0, a1, a0
 	ret

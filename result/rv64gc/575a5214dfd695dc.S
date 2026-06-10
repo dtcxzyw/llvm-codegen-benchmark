@@ -9,9 +9,9 @@ func00000000000000aa:
 func00000000000000a8:
 	sext.w	a1, a1
 	slli	a1, a1, 2
+	li	a2, -7
 	sub	a1, a1, a0
-	li	a0, -7
-	srli	a0, a0, 1
-	sltu	a0, a0, a1
+	srli	a2, a2, 1
+	sltu	a0, a2, a1
 	ret
 

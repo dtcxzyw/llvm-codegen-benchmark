@@ -15,9 +15,9 @@ func0000000000000015:
 
 func000000000000001d:
 	andi	a2, a2, 1
+	addi	a2, a2, -1
 	lui	a3, 1024
 	slli	a1, a1, 22
-	addi	a2, a2, -1
 	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -25,8 +25,8 @@ func000000000000001d:
 
 func000000000000000c:
 	slli	a2, a2, 63
-	slli	a1, a1, 2
 	srai	a2, a2, 63
+	slli	a1, a1, 2
 	andi	a2, a2, 12
 	add	a0, a0, a1
 	addw	a0, a0, a2

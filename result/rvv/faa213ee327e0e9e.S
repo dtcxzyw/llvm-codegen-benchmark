@@ -45,8 +45,8 @@ func00000000000000a4:
 func0000000000000008:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	li	a0, -1
 	vadd.vi	v8, v8, -1
+	li	a0, -1
 	bclri	a0, a0, 41
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10

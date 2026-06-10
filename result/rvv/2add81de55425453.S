@@ -6,18 +6,18 @@ func000000000000001e:
 	ret
 
 func0000000000000018:
-	li	a0, 19
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	li	a0, 19
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 2
 	ret
 
 func000000000000001a:
-	lui	a0, 1034754
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
+	lui	a0, 1034754
 	addi	a0, a0, 1024
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0

@@ -1,8 +1,8 @@
 func0000000000000002:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfcvt.f.xu.v	v10, v10
 	vfadd.vv	v8, v8, v10
-	fmv.d.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
 	ret
 

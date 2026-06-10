@@ -16,8 +16,8 @@ func000000000000000b:
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 1
 	zext.w	a2, a2
+	andi	a1, a1, 1
 	addi	a2, a2, -16
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 16
@@ -26,8 +26,8 @@ func000000000000000f:
 	ret
 
 func000000000000001c:
-	andi	a1, a1, 1
 	sext.w	a2, a2
+	andi	a1, a1, 1
 	addi	a2, a2, -5
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 5

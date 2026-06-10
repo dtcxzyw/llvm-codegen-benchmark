@@ -3,8 +3,8 @@ func0000000000000001:
 	vsll.vi	v10, v10, 8
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	lui	a0, 1048562
 	vwaddu.wv	v10, v10, v9
+	lui	a0, 1048562
 	addi	a0, a0, 1024
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0

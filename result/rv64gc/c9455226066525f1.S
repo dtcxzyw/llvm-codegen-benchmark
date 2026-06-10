@@ -36,8 +36,8 @@ func000000000000000d:
 	li	a0, 51
 	ret
 .LBB4_2:
-	slli	a1, a1, 9
 	lui	a0, 1048574
+	slli	a1, a1, 9
 	addi	a0, a0, -1485
 	addw	a0, a0, a1
 	ret

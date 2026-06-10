@@ -7,8 +7,8 @@ func0000000000000055:
 
 func0000000000000037:
 	add	a1, a1, a2
-	lui	a2, 1034754
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
 	addi	a1, a2, 1024
 	addw	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000037:
 
 func0000000000000075:
 	add	a1, a1, a2
-	lui	a2, 1034754
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
 	addi	a1, a2, 1024
 	addw	a0, a0, a1
@@ -25,8 +25,8 @@ func0000000000000075:
 
 func00000000000000ff:
 	add	a1, a1, a2
-	lui	a2, 65536
 	slli	a1, a1, 4
+	lui	a2, 65536
 	add	a0, a0, a1
 	addi	a1, a2, -48
 	addw	a0, a0, a1
@@ -69,8 +69,8 @@ func0000000000000001:
 
 func0000000000000077:
 	add	a1, a1, a2
-	lui	a2, 1034754
 	slli	a1, a1, 10
+	lui	a2, 1034754
 	add	a0, a0, a1
 	addi	a1, a2, 1024
 	addw	a0, a0, a1
@@ -99,8 +99,8 @@ func00000000000000e8:
 
 func00000000000000f5:
 	add	a1, a1, a2
-	lui	a2, 1048350
 	slli	a1, a1, 6
+	lui	a2, 1048350
 	add	a0, a0, a1
 	addi	a1, a2, -128
 	addw	a0, a0, a1

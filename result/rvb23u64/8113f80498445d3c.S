@@ -1,7 +1,7 @@
 func0000000000000026:
 	srliw	a2, a2, 1
-	srliw	a1, a1, 31
 	addi	a2, a2, -1
+	srliw	a1, a1, 31
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000026:
 
 func0000000000000046:
 	srliw	a2, a2, 1
-	srliw	a1, a1, 31
 	addiw	a2, a2, 1
+	srliw	a1, a1, 31
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000066:
 	ret
 
 func000000000000004c:
-	sext.w	a1, a1
 	srliw	a2, a2, 1
+	sext.w	a1, a1
 	addiw	a2, a2, 1
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
@@ -36,8 +36,8 @@ func000000000000004c:
 	ret
 
 func000000000000006c:
-	sext.w	a1, a1
 	srliw	a2, a2, 1
+	sext.w	a1, a1
 	addiw	a2, a2, 1
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

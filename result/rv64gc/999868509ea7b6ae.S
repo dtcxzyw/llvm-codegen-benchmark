@@ -48,9 +48,9 @@ func000000000000001f:
 
 func000000000000000e:
 	andi	a2, a2, 7
+	lui	a3, 209715
 	add	a1, a1, a2
-	lui	a2, 209715
-	addi	a2, a2, 819
+	addi	a2, a3, 819
 	and	a1, a1, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 4

@@ -63,17 +63,17 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	sext.w	a0, a0
 	andi	a1, a1, 1
 	li	a2, 4
+	sext.w	a0, a0
 	sub	a2, a2, a1
 	sltu	a0, a0, a2
 	ret
 
 func0000000000000006:
-	sext.w	a0, a0
 	slli	a1, a1, 63
 	srai	a1, a1, 63
+	sext.w	a0, a0
 	andi	a1, a1, 6
 	slt	a0, a1, a0
 	ret

@@ -1,8 +1,8 @@
 func0000000000000061:
-	addi	a1, a1, 2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	addi	a1, a1, 2
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
 	srli	a1, a1, 1
@@ -12,10 +12,10 @@ func0000000000000061:
 	ret
 
 func0000000000000041:
-	addi	a1, a1, 2
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
+	addi	a1, a1, 2
 	add	a2, a2, a3
 	mulhu	a1, a1, a2
 	srli	a1, a1, 1
@@ -25,11 +25,11 @@ func0000000000000041:
 	ret
 
 func00000000000003c1:
-	addi	a1, a1, 80
 	lui	a2, 838861
-	srli	a1, a1, 4
 	addi	a2, a2, -819
+	addi	a1, a1, 80
 	slli	a3, a2, 32
+	srli	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a0, a0, 1
@@ -50,13 +50,12 @@ func00000000000001c1:
 	seqz	a0, a0
 	ret
 
+.LCPI4_0:
+	.quad	36099303471055875
 func0000000000000001:
+	lui	a2, %hi(.LCPI4_0)
+	ld	a2, %lo(.LCPI4_0)(a2)
 	addi	a1, a1, 1021
-	lui	a2, 262657
-	slli	a2, a2, 6
-	addi	a2, a2, 513
-	slli	a2, a2, 19
-	addi	a2, a2, 1027
 	mulhu	a2, a1, a2
 	sub	a1, a1, a2
 	srli	a1, a1, 1

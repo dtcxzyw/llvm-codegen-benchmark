@@ -8,18 +8,18 @@ func000000000000002a:
 	ret
 
 func0000000000000013:
-	sext.w	a0, a0
 	lui	a1, 74
+	sext.w	a0, a0
 	addi	a1, a1, 1895
 	minu	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 
 func0000000000000029:
-	srliw	a1, a0, 31
-	addiw	a0, a0, -5
-	addi	a0, a0, 2
-	czero.nez	a0, a0, a1
+	addiw	a1, a0, -5
+	srliw	a0, a0, 31
+	addi	a1, a1, 2
+	czero.nez	a0, a1, a0
 	addi	a0, a0, -2
 	ret
 

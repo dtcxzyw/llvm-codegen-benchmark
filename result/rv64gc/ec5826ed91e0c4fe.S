@@ -33,11 +33,11 @@ func0000000000000181:
 func0000000000000301:
 	lui	a2, 16
 	addi	a2, a2, -2
+	lui	a3, 2
 	and	a1, a1, a2
-	lui	a2, 2
-	addi	a2, a2, -1639
-	xor	a0, a0, a2
+	addi	a2, a3, -1639
 	sltiu	a1, a1, 6
+	xor	a0, a0, a2
 	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -82,8 +82,8 @@ func0000000000000281:
 	addi	a2, a2, -16
 	and	a1, a1, a2
 	lui	a2, 8
-	addi	a0, a0, -5
 	addi	a2, a2, 1712
+	addi	a0, a0, -5
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -91,8 +91,8 @@ func0000000000000281:
 
 func000000000000002a:
 	andi	a1, a1, 28
-	slti	a0, a0, 5
 	addi	a1, a1, -4
+	slti	a0, a0, 5
 	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1

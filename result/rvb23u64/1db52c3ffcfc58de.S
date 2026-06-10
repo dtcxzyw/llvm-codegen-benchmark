@@ -1,6 +1,6 @@
 func0000000000000055:
-	sext.b	a1, a1
 	sh2add	a0, a0, a0
+	sext.b	a1, a1
 	sh1add	a0, a0, a1
 	addi	a0, a0, -528
 	sh2add	a0, a0, a0
@@ -9,8 +9,8 @@ func0000000000000055:
 	ret
 
 func0000000000000013:
-	sext.b	a1, a1
 	sh2add	a0, a0, a0
+	sext.b	a1, a1
 	sh1add	a0, a0, a1
 	lui	a1, 1
 	addi	a0, a0, -48

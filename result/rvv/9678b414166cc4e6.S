@@ -4,9 +4,9 @@ func00000000000000e5:
 	vadd.vx	v12, v12, a0
 	lui	a0, 160
 	addi	a0, a0, -1177
-	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
-	vadd.vv	v8, v8, v12
+	vsra.vi	v10, v12, 21
+	vadd.vv	v8, v8, v10
 	ret
 
 func00000000000000a5:
@@ -15,9 +15,9 @@ func00000000000000a5:
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048409
 	addi	a0, a0, 131
-	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
-	vadd.vv	v8, v8, v12
+	vsra.vi	v10, v12, 21
+	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000081:
@@ -26,9 +26,9 @@ func0000000000000081:
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048332
 	addi	a0, a0, 1619
-	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
-	vadd.vv	v8, v8, v12
+	vsra.vi	v10, v12, 21
+	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000080:
@@ -37,9 +37,9 @@ func0000000000000080:
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048409
 	addi	a0, a0, 131
-	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
-	vadd.vv	v8, v8, v12
+	vsra.vi	v10, v12, 21
+	vadd.vv	v8, v8, v10
 	ret
 
 func00000000000000a1:
@@ -48,9 +48,9 @@ func00000000000000a1:
 	vadd.vx	v12, v12, a0
 	lui	a0, 163
 	addi	a0, a0, -1005
-	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
-	vadd.vv	v8, v8, v12
+	vsra.vi	v10, v12, 21
+	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000000:
@@ -59,9 +59,9 @@ func0000000000000000:
 	vadd.vx	v12, v12, a0
 	lui	a0, 115
 	addi	a0, a0, -744
-	vsra.vi	v12, v12, 21
 	vmacc.vx	v8, a0, v10
-	vadd.vv	v8, v8, v12
+	vsra.vi	v10, v12, 21
+	vadd.vv	v8, v8, v10
 	ret
 
 func0000000000000085:

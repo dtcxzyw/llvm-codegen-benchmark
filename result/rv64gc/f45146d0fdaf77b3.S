@@ -8,8 +8,8 @@ func0000000000000241:
 	ret
 
 func0000000000000008:
-	slli	a1, a1, 1
 	li	a2, 128
+	slli	a1, a1, 1
 	bltu	a2, a1, .LBB1_2
 	li	a1, 128
 .LBB1_2:
@@ -36,8 +36,8 @@ func0000000000000141:
 	ret
 
 func0000000000000041:
-	slli	a1, a1, 1
 	li	a2, 64
+	slli	a1, a1, 1
 	bltu	a2, a1, .LBB4_2
 	li	a1, 64
 .LBB4_2:

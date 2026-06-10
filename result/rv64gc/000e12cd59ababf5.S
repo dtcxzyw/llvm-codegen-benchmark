@@ -1,9 +1,9 @@
 func0000000000000007:
-	seqz	a1, a0
-	li	a2, 16
-	sub	a2, a2, a0
-	addi	a0, a1, -1
-	and	a0, a0, a2
+	li	a1, 16
+	seqz	a2, a0
+	sub	a1, a1, a0
+	addi	a0, a2, -1
+	and	a0, a0, a1
 	ret
 
 func0000000000000006:

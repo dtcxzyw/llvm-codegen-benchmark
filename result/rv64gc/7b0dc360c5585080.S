@@ -30,10 +30,10 @@ func0000000000000001:
 func0000000000000000:
 	slliw	a1, a1, 17
 	slliw	a0, a0, 2
+	lui	a2, 16
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 3
-	or	a0, a0, a1
+	addi	a2, a2, 3
+	or	a0, a0, a2
 	ret
 
 func0000000000000005:
@@ -53,10 +53,10 @@ func0000000000000033:
 func000000000000000e:
 	slli	a1, a1, 25
 	slli	a0, a0, 21
+	lui	a2, 528896
 	or	a0, a0, a1
-	lui	a1, 528896
-	addi	a1, a1, -1
-	or	a0, a0, a1
+	addi	a2, a2, -1
+	or	a0, a0, a2
 	ret
 
 func000000000000000c:
@@ -70,9 +70,9 @@ func000000000000000c:
 func0000000000000030:
 	slli	a1, a1, 15
 	slli	a0, a0, 8
+	lui	a2, 786432
 	or	a0, a0, a1
-	lui	a1, 786432
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	or	a0, a0, a1
 	ret
 
@@ -102,9 +102,9 @@ func0000000000000032:
 func0000000000000034:
 	slliw	a1, a1, 16
 	slliw	a0, a0, 8
+	lui	a2, 8192
 	or	a0, a0, a1
-	lui	a1, 8192
-	addi	a1, a1, 71
+	addi	a1, a2, 71
 	or	a0, a0, a1
 	ret
 

@@ -44,9 +44,9 @@ func000000000000000d:
 	ret
 
 func0000000000000020:
+	lui	a2, 648056
 	add	a0, a0, a1
-	lui	a1, 648056
-	addi	a1, a1, -1607
+	addi	a1, a2, -1607
 	addw	a0, a0, a1
 	ret
 
@@ -146,9 +146,9 @@ func000000000000002a:
 	ret
 
 func0000000000000015:
+	lui	a2, 176
 	add	a0, a0, a1
-	lui	a1, 176
-	addi	a1, a1, -1428
+	addi	a1, a2, -1428
 	addw	a0, a0, a1
 	ret
 

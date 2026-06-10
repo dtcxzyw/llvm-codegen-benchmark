@@ -13,8 +13,8 @@ func00000000000000ff:
 	ret
 
 func000000000000006a:
-	add	a0, a0, a1
 	slli	a2, a2, 2
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	addi	a0, a0, -2
 	ret
@@ -27,8 +27,8 @@ func00000000000000ef:
 	ret
 
 func00000000000000ce:
-	sh1add	a2, a2, a2
 	sh1add	a1, a1, a1
+	sh1add	a2, a2, a2
 	sh3add	a0, a1, a0
 	sh3add	a0, a2, a0
 	addi	a0, a0, -24
@@ -42,9 +42,9 @@ func000000000000006b:
 	ret
 
 func00000000000000f0:
+	sh1add	a2, a2, a2
 	sh1add	a0, a1, a0
-	sh1add	a1, a2, a2
-	sh2add	a0, a1, a0
+	sh2add	a0, a2, a0
 	addi	a0, a0, 8
 	ret
 
@@ -94,8 +94,8 @@ func0000000000000000:
 
 func000000000000003b:
 	li	a3, 1248
-	sh1add	a1, a1, a1
 	mul	a2, a2, a3
+	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	add	a0, a0, a2
 	addi	a0, a0, 8
@@ -151,15 +151,15 @@ func00000000000000ee:
 	ret
 
 func0000000000000060:
+	sh1add	a2, a2, a2
 	sh3add	a0, a1, a0
-	sh1add	a1, a2, a2
-	sh3add	a0, a1, a0
+	sh3add	a0, a2, a0
 	addi	a0, a0, 8
 	ret
 
 func000000000000002b:
-	add	a0, a0, a1
 	slli	a2, a2, 6
+	add	a0, a0, a1
 	sub	a0, a0, a2
 	addi	a0, a0, 64
 	ret

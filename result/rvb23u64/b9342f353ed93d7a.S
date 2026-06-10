@@ -6,11 +6,11 @@ func0000000000000118:
 	ret
 
 func0000000000000102:
-	addiw	a1, a1, -1440
 	lui	a2, 1
-	sltiu	a1, a1, 25
 	addi	a2, a2, -1791
+	addiw	a1, a1, -1440
 	xor	a0, a0, a2
+	sltiu	a1, a1, 25
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

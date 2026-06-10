@@ -1,34 +1,34 @@
 func000000000000058c:
+	li	a3, -1
 	or	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 32
-	xor	a1, a1, a2
+	srli	a3, a3, 32
+	xor	a1, a1, a3
 	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000188:
+	li	a3, -1
+	bclri	a3, a3, 48
 	or	a1, a1, a2
-	li	a2, -1
-	bclri	a2, a2, 48
-	sltu	a0, a2, a0
+	sltu	a0, a3, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000181:
+	lui	a3, 32767
+	slli	a3, a3, 36
+	xor	a0, a0, a3
 	or	a1, a1, a2
-	lui	a2, 32767
-	slli	a2, a2, 36
-	xor	a0, a0, a2
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000026:
+	li	a3, 2
+	bseti	a3, a3, 63
 	or	a1, a1, a2
-	li	a2, 2
-	bseti	a2, a2, 63
-	slt	a0, a0, a2
+	slt	a0, a0, a3
 	czero.nez	a0, a0, a1
 	ret
 

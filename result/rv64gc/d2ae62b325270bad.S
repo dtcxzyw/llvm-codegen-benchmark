@@ -22,9 +22,9 @@ func000000000000000f:
 func0000000000000003:
 	slli	a0, a0, 33
 	srli	a0, a0, 31
+	lui	a2, 225
 	add	a0, a0, a1
-	lui	a1, 225
-	addi	a1, a1, 1280
+	addi	a1, a2, 1280
 	add	a0, a0, a1
 	ret
 

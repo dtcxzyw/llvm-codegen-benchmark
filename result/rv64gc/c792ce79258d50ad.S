@@ -1,9 +1,9 @@
 func0000000000000007:
-	slli	a2, a1, 48
-	lui	a3, 322640
-	mulhu	a2, a2, a3
-	li	a3, 13
+	lui	a2, 322640
+	slli	a3, a1, 48
+	mulhu	a2, a3, a2
 	srli	a2, a2, 18
+	li	a3, 13
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	slli	a1, a1, 48

@@ -9,8 +9,8 @@ func0000000000001484:
 func0000000000000084:
 	lui	a2, 1048560
 	addi	a3, a2, 1
-	addi	a2, a2, 2
 	addw	a1, a1, a3
+	addi	a2, a2, 2
 	addw	a0, a0, a3
 	sltu	a1, a1, a2
 	sltu	a0, a0, a2
@@ -52,8 +52,8 @@ func0000000000001024:
 func0000000000000108:
 	lui	a2, 1048514
 	addi	a3, a2, -1049
-	addi	a2, a2, -2048
 	addw	a1, a1, a3
+	addi	a2, a2, -2048
 	addw	a0, a0, a3
 	sltu	a1, a1, a2
 	sltu	a0, a0, a2
@@ -70,8 +70,8 @@ func0000000000000484:
 
 func0000000000000081:
 	srliw	a1, a1, 12
-	addiw	a0, a0, -31
 	addi	a1, a1, -1
+	addiw	a0, a0, -31
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

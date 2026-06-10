@@ -1,7 +1,7 @@
 func0000000000000028:
-	li	a0, 48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, 0
+	li	a0, 48
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -11,9 +11,9 @@ func0000000000000028:
 	ret
 
 func00000000000000a8:
-	li	a0, 48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v10, 0
+	li	a0, 48
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -34,9 +34,9 @@ func00000000000000d2:
 	ret
 
 func0000000000000050:
-	li	a0, 55
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v10, 9
+	li	a0, 55
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vsetvli	zero, zero, e16, m1, ta, ma

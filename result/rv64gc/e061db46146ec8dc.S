@@ -34,8 +34,8 @@ func0000000000000073:
 	ret
 
 func0000000000000061:
-	slli	a0, a0, 16
 	lui	a1, 16
+	slli	a0, a0, 16
 	addi	a1, a1, 5
 	addw	a0, a0, a1
 	ret

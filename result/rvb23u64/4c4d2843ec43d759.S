@@ -1,12 +1,12 @@
 func00000000000001a8:
-	andi	a1, a1, 1
-	srli	a2, a2, 3
 	lui	a3, 699051
 	addi	a3, a3, -1365
 	slli	a4, a3, 32
+	srli	a2, a2, 3
 	add	a3, a3, a4
 	mul	a2, a2, a3
 	addi	a3, a2, 1
+	andi	a1, a1, 1
 	srli	a3, a3, 1
 	czero.eqz	a2, a2, a1
 	czero.nez	a1, a3, a1

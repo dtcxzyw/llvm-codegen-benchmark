@@ -54,11 +54,11 @@ func0000000000000108:
 
 func0000000000000114:
 	slli	a1, a0, 56
-	zext.b	a0, a0
 	srai	a1, a1, 56
+	zext.b	a0, a0
 	addi	a0, a0, -3
-	sltiu	a0, a0, 29
 	slti	a1, a1, 47
+	sltiu	a0, a0, 29
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

@@ -3,8 +3,8 @@ func0000000000000021:
 	sext.w	a1, a0
 	bnez	a2, .LBB0_2
 	addiw	a0, a0, -3
-	lui	a2, 1
 	seqz	a0, a0
+	lui	a2, 1
 	addi	a0, a0, -1
 	addi	a2, a2, -1
 	or	a0, a0, a2
@@ -159,24 +159,24 @@ func0000000000000294:
 	ret
 
 func0000000000000081:
-	andi	a3, a1, 1
-	sext.w	a1, a0
+	sext.w	a2, a0
 	li	a0, 10
-	lui	a2, 1
-	bltu	a1, a0, .LBB8_2
-	addi	a0, a2, -782
+	andi	a3, a1, 1
+	lui	a1, 1
+	bltu	a2, a0, .LBB8_2
+	addi	a0, a1, -782
 	bnez	a3, .LBB8_3
 	j	.LBB8_4
 .LBB8_2:
-	addi	a0, a2, -735
+	addi	a0, a1, -735
 	beqz	a3, .LBB8_4
 .LBB8_3:
-	addi	a0, a2, -819
+	addi	a0, a1, -819
 .LBB8_4:
 	li	a3, 5
-	beq	a1, a3, .LBB8_6
+	beq	a2, a3, .LBB8_6
 	ret
 .LBB8_6:
-	addi	a0, a2, -849
+	addi	a0, a1, -849
 	ret
 

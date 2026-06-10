@@ -11,8 +11,8 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	negw	a0, a0
 	li	a1, 3
+	negw	a0, a0
 	bge	a0, a1, .LBB1_3
 	blez	a0, .LBB1_4
 .LBB1_2:

@@ -35,9 +35,9 @@ func0000000000000000:
 
 func0000000000000025:
 	lui	a3, 4080
+	lui	a4, 16
 	and	a2, a2, a3
-	lui	a3, 16
-	addi	a3, a3, -256
+	addi	a3, a4, -256
 	add	a0, a0, a2
 	and	a1, a1, a3
 	addw	a0, a0, a1
@@ -45,9 +45,9 @@ func0000000000000025:
 
 func0000000000000020:
 	lui	a3, 4080
+	lui	a4, 16
 	and	a2, a2, a3
-	lui	a3, 16
-	addi	a3, a3, -256
+	addi	a3, a4, -256
 	add	a0, a0, a2
 	and	a1, a1, a3
 	addw	a0, a0, a1

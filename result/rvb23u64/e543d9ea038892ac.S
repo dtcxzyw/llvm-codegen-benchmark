@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.w	a0, a0
 	srli	a1, a1, 4
+	sext.w	a0, a0
 	andi	a1, a1, 256
 	czero.nez	a0, a1, a0
 	ret
@@ -31,8 +31,8 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
 	slli	a1, a1, 37
+	sext.w	a0, a0
 	srli	a1, a1, 48
 	czero.eqz	a0, a1, a0
 	ret

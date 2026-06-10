@@ -11,34 +11,34 @@ func00000000000000df:
 	ret
 
 func00000000000000f3:
-	slli	a2, a2, 2
 	sext.w	a1, a1
-	addi	a2, a2, 1
+	slli	a2, a2, 2
 	sh1add	a0, a1, a0
+	addi	a2, a2, 1
 	sh1add	a0, a2, a0
 	ret
 
 func00000000000000f0:
-	slli	a2, a2, 2
 	sext.w	a1, a1
-	addi	a2, a2, 2
+	slli	a2, a2, 2
 	sh1add	a0, a1, a0
+	addi	a2, a2, 2
 	sh1add	a0, a2, a0
 	ret
 
 func00000000000000ff:
-	slli	a2, a2, 5
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
+	slli	a2, a2, 5
 	add	a0, a0, a2
 	addi	a0, a0, 16
 	ret
 
 func0000000000000073:
-	slli	a2, a2, 2
 	sext.w	a1, a1
-	addi	a2, a2, 1
+	slli	a2, a2, 2
 	sh3add	a0, a1, a0
+	addi	a2, a2, 1
 	sh3add	a0, a2, a0
 	ret
 

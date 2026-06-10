@@ -18,10 +18,10 @@ func00000000000000a1:
 func00000000000000a8:
 	sext.w	a1, a1
 	sext.w	a0, a0
+	li	a2, -1
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 2
-	sub	a0, a0, a1
+	srli	a2, a2, 2
+	sub	a0, a0, a2
 	srli	a0, a0, 62
 	sltiu	a0, a0, 3
 	ret

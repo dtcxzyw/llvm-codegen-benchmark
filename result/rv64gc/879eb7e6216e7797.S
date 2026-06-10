@@ -34,37 +34,37 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	andi	a2, a0, 1
-	li	a0, 94
-	mul	a0, a1, a0
-	bnez	a2, .LBB2_2
-	li	a1, 9
+	li	a2, 94
+	mul	a1, a1, a2
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
+	li	a0, 9
 	addw	a0, a0, a1
 	ret
 .LBB2_2:
-	li	a1, 7
+	li	a0, 7
 	addw	a0, a0, a1
 	ret
 
 func0000000000000003:
-	andi	a2, a0, 1
-	li	a0, 94
-	mul	a0, a1, a0
-	bnez	a2, .LBB3_2
-	li	a1, 9
+	li	a2, 94
+	mul	a1, a1, a2
+	andi	a0, a0, 1
+	bnez	a0, .LBB3_2
+	li	a0, 9
 	addw	a0, a0, a1
 	ret
 .LBB3_2:
-	li	a1, 7
+	li	a0, 7
 	addw	a0, a0, a1
 	ret
 
 func0000000000000004:
 	lui	a2, 2
-	slli	a0, a0, 63
 	addi	a2, a2, -255
-	srai	a0, a0, 63
 	mul	a1, a1, a2
+	slli	a0, a0, 63
+	srai	a0, a0, 63
 	andi	a0, a0, 911
 	addw	a0, a0, a1
 	ret

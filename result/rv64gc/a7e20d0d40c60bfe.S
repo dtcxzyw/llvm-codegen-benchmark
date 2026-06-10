@@ -27,8 +27,8 @@ func000000000000018c:
 
 func000000000000002c:
 	andi	a1, a1, 31
-	andi	a0, a0, 7
 	addi	a1, a1, -27
+	andi	a0, a0, 7
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1

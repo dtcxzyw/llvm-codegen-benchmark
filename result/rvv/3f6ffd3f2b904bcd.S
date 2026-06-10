@@ -66,8 +66,8 @@ func0000000000000068:
 func0000000000000004:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
-	lui	a0, 9766
 	vsub.vv	v8, v8, v10
+	lui	a0, 9766
 	addi	a0, a0, -1536
 	vmsltu.vx	v0, v8, a0
 	ret

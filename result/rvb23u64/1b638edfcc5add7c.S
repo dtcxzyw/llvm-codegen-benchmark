@@ -25,8 +25,8 @@ func0000000000000061:
 	ret
 
 func0000000000000106:
-	sext.w	a2, a2
 	lui	a3, 4096
+	sext.w	a2, a2
 	addi	a4, a3, -1
 	sltu	a2, a2, a4
 	czero.nez	a3, a3, a2

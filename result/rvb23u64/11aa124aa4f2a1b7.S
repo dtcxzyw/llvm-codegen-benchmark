@@ -18,15 +18,15 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	bexti	a1, a1, 9
 	addi	a0, a0, -1
+	bexti	a1, a1, 9
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000010c:
-	srli	a1, a1, 2
 	sltiu	a0, a0, 10
+	srli	a1, a1, 2
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -74,17 +74,17 @@ func000000000000002a:
 	ret
 
 func0000000000000101:
-	andi	a1, a1, 4
 	li	a2, -2
 	zext.w	a2, a2
+	andi	a1, a1, 4
 	sltu	a0, a2, a0
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000141:
 	andi	a1, a1, -2
-	slti	a0, a0, 4
 	addiw	a1, a1, -2
+	slti	a0, a0, 4
 	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
@@ -98,8 +98,8 @@ func0000000000000188:
 	ret
 
 func0000000000000114:
-	andi	a1, a1, 192
 	sltiu	a0, a0, 21
+	andi	a1, a1, 192
 	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret
@@ -159,9 +159,9 @@ func0000000000000194:
 	ret
 
 func0000000000000034:
-	andi	a1, a1, 8
 	lui	a2, 1
 	addi	a2, a2, -2047
+	andi	a1, a1, 8
 	sltu	a0, a0, a2
 	czero.nez	a0, a0, a1
 	ret

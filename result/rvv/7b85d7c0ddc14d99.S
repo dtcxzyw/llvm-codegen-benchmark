@@ -11,18 +11,18 @@ func0000000000000208:
 
 func0000000000000201:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vmseq.vi	v0, v12, 0
-	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
+	vmerge.vim	v12, v14, 1, v0
 	vadd.vv	v8, v8, v10
 	vmseq.vv	v0, v8, v12
 	ret
 
 func000000000000140c:
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.i	v14, 0
 	vmsgt.vi	v0, v12, -1
-	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, -1, v0
+	vmerge.vim	v12, v14, -1, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	vmsne.vi	v0, v8, 4

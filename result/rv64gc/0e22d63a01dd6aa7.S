@@ -14,8 +14,8 @@ func000000000000018c:
 
 func000000000000008a:
 	srli	a2, a2, 32
-	srli	a0, a0, 63
 	seqz	a2, a2
+	srli	a0, a0, 63
 	and	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1

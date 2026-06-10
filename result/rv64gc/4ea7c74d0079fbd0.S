@@ -1,40 +1,40 @@
 func0000000000000cd4:
-	sext.w	a2, a0
+	li	a2, 1
+	sext.w	a3, a0
 	sext.w	a1, a1
-	li	a3, 1
-	sllw	a0, a3, a0
+	sllw	a0, a2, a0
 	slt	a0, a0, a1
-	sltiu	a1, a2, 9
+	sltiu	a1, a3, 9
 	and	a0, a0, a1
 	ret
 
 func0000000000000e94:
-	sext.w	a2, a0
+	li	a2, 1
+	sext.w	a3, a0
 	sext.w	a1, a1
-	li	a3, 1
-	sllw	a0, a3, a0
+	sllw	a0, a2, a0
 	sltu	a0, a0, a1
-	sltiu	a1, a2, 9
+	sltiu	a1, a3, 9
 	and	a0, a0, a1
 	ret
 
 func0000000000000884:
-	sext.w	a2, a0
+	li	a2, 1
+	sext.w	a3, a0
 	sext.w	a1, a1
-	li	a3, 1
-	sllw	a0, a3, a0
+	sllw	a0, a2, a0
 	sltu	a0, a0, a1
-	sltiu	a1, a2, 32
+	sltiu	a1, a3, 32
 	and	a0, a0, a1
 	ret
 
 func0000000000000c94:
-	sext.w	a2, a0
+	li	a2, 1
+	sext.w	a3, a0
 	sext.w	a1, a1
-	li	a3, 1
-	sllw	a0, a3, a0
+	sllw	a0, a2, a0
 	sltu	a0, a0, a1
-	sltiu	a1, a2, 25
+	sltiu	a1, a3, 25
 	and	a0, a0, a1
 	ret
 

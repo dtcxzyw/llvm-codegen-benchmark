@@ -13,8 +13,8 @@ func000000000000000f:
 	ret
 
 func0000000000000015:
-	zext.b	a1, a1
 	not	a0, a0
+	zext.b	a1, a1
 	sext.b	a0, a0
 	add	a0, a0, a1
 	ret

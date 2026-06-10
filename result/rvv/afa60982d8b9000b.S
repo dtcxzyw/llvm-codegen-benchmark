@@ -39,9 +39,9 @@ func000000000000058b:
 	ret
 
 func00000000000000c8:
+	lui	a0, 262144
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, 1
-	lui	a0, 262144
 	vmsltu.vv	v12, v8, v10
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10

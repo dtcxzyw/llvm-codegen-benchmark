@@ -7,8 +7,8 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	sext.w	a0, a0
 	li	a1, 32
+	sext.w	a0, a0
 	beq	a0, a1, .LBB1_2
 	li	a0, -1
 	slli	a0, a0, 52
@@ -19,8 +19,8 @@ func0000000000000005:
 	ret
 
 func000000000000001b:
-	sext.w	a0, a0
 	li	a1, 9
+	sext.w	a0, a0
 	blt	a0, a1, .LBB2_2
 	li	a0, 1
 	slli	a0, a0, 11

@@ -1,19 +1,19 @@
 func0000000000000013:
 	lui	a1, 16
 	addi	a1, a1, -2
+	lui	a2, 524296
 	add	a0, a0, a1
-	lui	a1, 524296
-	addi	a1, a1, 1
+	addi	a2, a2, 1
 	slli	a0, a0, 32
-	slli	a1, a1, 32
-	mulhu	a0, a0, a1
+	slli	a2, a2, 32
+	mulhu	a0, a0, a2
 	srli	a0, a0, 44
 	andi	a0, a0, -8
 	ret
 
 func000000000000001a:
-	addi	a0, a0, 3
 	lui	a1, 699051
+	addi	a0, a0, 3
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	slli	a0, a0, 32
@@ -24,11 +24,11 @@ func000000000000001a:
 	ret
 
 func0000000000000018:
-	addi	a0, a0, 127
 	lui	a1, 526344
+	addi	a0, a0, 127
 	addi	a1, a1, 129
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 15
 	sext.w	a0, a0
@@ -37,11 +37,11 @@ func0000000000000018:
 	ret
 
 func000000000000001b:
-	addi	a0, a0, 128
 	lui	a1, 1044496
+	addi	a0, a0, 128
 	addi	a1, a1, -255
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 24
 	sext.w	a0, a0
@@ -50,8 +50,8 @@ func000000000000001b:
 	ret
 
 func0000000000000002:
-	addi	a0, a0, 2
 	lui	a1, 699051
+	addi	a0, a0, 2
 	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	slli	a0, a0, 32
@@ -61,8 +61,8 @@ func0000000000000002:
 	ret
 
 func000000000000000b:
-	addi	a0, a0, -2
 	lui	a1, 838861
+	addi	a0, a0, -2
 	addi	a1, a1, -819
 	slli	a1, a1, 32
 	slli	a0, a0, 32
@@ -72,11 +72,11 @@ func000000000000000b:
 	ret
 
 func0000000000000000:
-	addi	a0, a0, 5
 	lui	a1, 838861
+	addi	a0, a0, 5
 	addi	a1, a1, -819
-	slli	a0, a0, 32
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 15
 	sext.w	a0, a0
@@ -85,8 +85,8 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	addi	a0, a0, -525
 	lui	a1, 526344
+	addi	a0, a0, -525
 	addi	a1, a1, 129
 	slli	a1, a1, 32
 	slli	a0, a0, 32
@@ -95,14 +95,13 @@ func0000000000000003:
 	andi	a0, a0, -2
 	ret
 
+.LCPI8_0:
+	.quad	2635249153617166336
 func0000000000000008:
+	lui	a1, %hi(.LCPI8_0)
+	ld	a1, %lo(.LCPI8_0)(a1)
 	addi	a0, a0, -1260
-	lui	a1, 293
 	zext.w	a0, a0
-	addi	a1, a1, -1755
-	slli	a1, a1, 12
-	addi	a1, a1, -1755
-	slli	a1, a1, 29
 	mulhu	a0, a0, a1
 	slliw	a0, a0, 16
 	ret

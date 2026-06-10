@@ -53,9 +53,9 @@ func0000000000000015:
 	ret
 
 func0000000000000009:
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
-	lui	a0, 16
 	vmsltu.vx	v0, v8, a0
 	li	a0, 16
 	vmv.v.x	v8, a0

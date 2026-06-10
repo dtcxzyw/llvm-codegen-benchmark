@@ -1,28 +1,28 @@
 func000000000000000a:
-	addi	a1, a1, -1
 	sgtz	a0, a0
+	addi	a1, a1, -1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000061:
-	addi	a1, a1, 1
 	addi	a0, a0, -1
 	seqz	a0, a0
+	addi	a1, a1, 1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000001:
-	addi	a1, a1, 16
 	seqz	a0, a0
+	addi	a1, a1, 16
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 
 func0000000000000046:
-	addi	a1, a1, 7
 	srli	a0, a0, 63
+	addi	a1, a1, 7
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -36,8 +36,8 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	addi	a1, a1, 52
 	srli	a0, a0, 63
+	addi	a1, a1, 52
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -50,16 +50,16 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	addi	a1, a1, 4
 	sltiu	a0, a0, -4
+	addi	a1, a1, 4
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
 
 func0000000000000068:
-	addi	a1, a1, 8
 	srli	a0, a0, 60
 	seqz	a0, a0
+	addi	a1, a1, 8
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
@@ -84,10 +84,10 @@ func000000000000002c:
 	ret
 
 func0000000000000048:
-	addi	a1, a1, 16
 	li	a2, -17
 	srli	a2, a2, 3
 	sltu	a0, a2, a0
+	addi	a1, a1, 16
 	neg	a0, a0
 	or	a0, a0, a1
 	ret
@@ -120,8 +120,8 @@ func000000000000002a:
 	ret
 
 func0000000000000024:
-	addi	a1, a1, -1
 	sltiu	a0, a0, 64
+	addi	a1, a1, -1
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

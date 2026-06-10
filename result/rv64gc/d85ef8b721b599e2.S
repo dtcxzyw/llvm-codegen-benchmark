@@ -25,8 +25,8 @@ func0000000000000002:
 	ret
 
 func000000000000001c:
-	addi	a1, a1, -1
 	li	a2, 13
+	addi	a1, a1, -1
 	slli	a2, a2, 34
 	slli	a1, a1, 33
 	mulhu	a1, a1, a2
@@ -34,8 +34,8 @@ func000000000000001c:
 	ret
 
 func000000000000003c:
-	addi	a1, a1, -1
 	li	a2, 13
+	addi	a1, a1, -1
 	slli	a2, a2, 35
 	slli	a1, a1, 32
 	mulhu	a1, a1, a2

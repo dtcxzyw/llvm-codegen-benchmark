@@ -1,15 +1,15 @@
 func0000000000000002:
+	lui	a0, 699051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	lui	a0, 699051
+	vsra.vi	v8, v8, 1
 	addi	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
-	lui	a1, 838861
-	vsra.vi	v8, v8, 1
-	addi	a1, a1, -819
 	vmul.vx	v8, v8, a0
-	slli	a0, a1, 32
+	lui	a0, 838861
+	addi	a0, a0, -819
+	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 3

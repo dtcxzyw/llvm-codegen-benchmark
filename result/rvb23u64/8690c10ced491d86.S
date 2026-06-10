@@ -4,8 +4,8 @@ func0000000000000008:
 	ret
 
 func0000000000000009:
-	andi	a0, a0, -8
 	li	a1, -1
+	andi	a0, a0, -8
 	sll	a0, a1, a0
 	ret
 

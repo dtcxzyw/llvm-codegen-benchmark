@@ -31,8 +31,8 @@ func0000000000000034:
 
 func0000000000000021:
 	slli	a2, a2, 63
-	or	a0, a0, a1
 	srai	a2, a2, 63
+	or	a0, a0, a1
 	andi	a2, a2, -2
 	sext.w	a0, a0
 	xor	a0, a0, a2

@@ -11,10 +11,10 @@ func0000000000000003:
 	ret
 
 func0000000000000007:
-	sext.w	a1, a1
 	li	a2, 1000
-	slli	a0, a0, 63
+	sext.w	a1, a1
 	mul	a1, a1, a2
+	slli	a0, a0, 63
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret

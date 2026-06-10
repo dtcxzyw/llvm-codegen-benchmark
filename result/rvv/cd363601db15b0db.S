@@ -30,17 +30,18 @@ func0000000000000050:
 	ret
 
 func0000000000000004:
-	lui	a0, 1048572
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v14, v8, a0
-	vmul.vv	v8, v8, v10
-	vmacc.vv	v8, v12, v14
+	vmul.vv	v10, v8, v10
+	lui	a0, 1048572
+	vadd.vx	v8, v8, a0
+	vmacc.vv	v10, v12, v8
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000044:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vi	v14, v10, -1
 	vmul.vv	v8, v8, v10
-	vmacc.vv	v8, v12, v14
+	vadd.vi	v10, v10, -1
+	vmacc.vv	v8, v12, v10
 	ret
 

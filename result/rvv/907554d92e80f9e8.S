@@ -14,13 +14,13 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	li	a0, 127
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vand.vx	v9, v9, a0
 	li	a0, 23
+	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsltu.vx	v0, v8, a0
+	li	a0, 127
+	vand.vx	v8, v9, a0
 	li	a0, 31
-	vmerge.vxm	v8, v9, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 
 func000000000000000c:

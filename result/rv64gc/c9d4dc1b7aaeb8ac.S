@@ -25,11 +25,11 @@ func00000000000000ee:
 func000000000000005e:
 	add	a1, a1, a2
 	addiw	a1, a1, -3
-	slli	a2, a1, 1
-	slli	a1, a1, 5
-	add	a1, a1, a2
 	lui	a2, 5
+	slli	a3, a1, 1
+	slli	a1, a1, 5
 	addi	a2, a2, 574
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

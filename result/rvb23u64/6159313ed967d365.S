@@ -8,8 +8,8 @@ func0000000000000060:
 
 func000000000000006f:
 	zext.b	a2, a2
-	zext.b	a0, a0
 	sh2add	a2, a2, a2
+	zext.b	a0, a0
 	sh3add	a1, a2, a1
 	sh2add	a0, a0, a0
 	sh3add	a0, a0, a1

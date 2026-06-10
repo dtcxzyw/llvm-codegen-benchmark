@@ -9,10 +9,10 @@ func0000000000000050:
 
 func0000000000000054:
 	li	a2, 1
-	li	a3, 3
 	bseti	a2, a2, 63
-	bseti	a3, a3, 63
+	li	a3, 3
 	xor	a2, a2, a1
+	bseti	a3, a3, 63
 	seqz	a2, a2
 	slt	a1, a3, a1
 	or	a1, a1, a2

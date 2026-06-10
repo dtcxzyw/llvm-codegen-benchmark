@@ -1,13 +1,13 @@
 func0000000000000001:
-	subw	a0, a0, a2
 	slli	a1, a1, 63
+	subw	a0, a0, a2
 	srai	a1, a1, 63
 	and	a0, a0, a1
 	ret
 
 func0000000000000000:
-	subw	a0, a0, a2
 	slli	a1, a1, 63
+	subw	a0, a0, a2
 	srai	a1, a1, 63
 	and	a0, a0, a1
 	ret

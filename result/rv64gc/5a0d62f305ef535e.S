@@ -1,7 +1,7 @@
 func0000000000000041:
 	sext.w	a0, a0
-	slli	a1, a1, 32
 	snez	a0, a0
+	slli	a1, a1, 32
 	srli	a1, a1, 32
 	slli	a0, a0, 23
 	or	a0, a0, a1
@@ -24,11 +24,11 @@ func0000000000000064:
 	ret
 
 func0000000000000074:
-	sext.w	a1, a1
 	srliw	a0, a0, 20
 	seqz	a0, a0
 	addi	a0, a0, -1
 	lui	a2, 1048064
+	sext.w	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

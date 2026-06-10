@@ -1,23 +1,26 @@
 func0000000000000001:
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 1
-	vadd.vi	v8, v10, 1, v0.t
+	vmv.v.i	v10, 1
+	vnsrl.wi	v11, v8, 0
+	vadd.vi	v10, v11, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func000000000000000d:
+	li	a0, -18
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vnsrl.wi	v10, v8, 0
+	vmv.v.x	v10, a0
+	vnsrl.wi	v11, v8, 0
 	li	a0, -17
-	li	a1, -18
-	vmv.v.x	v8, a1
-	vadd.vx	v8, v10, a0, v0.t
+	vadd.vx	v10, v11, a0, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func000000000000000f:
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 1
-	vadd.vi	v8, v10, 1, v0.t
+	vmv.v.i	v10, 1
+	vnsrl.wi	v11, v8, 0
+	vadd.vi	v10, v11, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
 

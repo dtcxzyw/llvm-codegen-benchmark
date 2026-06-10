@@ -17,9 +17,9 @@ func0000000000000000:
 	ret
 
 func0000000000000007:
+	li	a0, 48
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v9, v10, 4
-	li	a0, 48
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v9, v9, 0
 	vand.vx	v8, v8, a0

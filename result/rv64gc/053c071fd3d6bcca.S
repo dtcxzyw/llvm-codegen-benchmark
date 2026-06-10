@@ -29,17 +29,19 @@ func000000000000000a:
 	ret
 
 func0000000000000009:
-	bltu	a2, a0, .LBB5_2
-	mv	a1, a0
-.LBB5_2:
+	mv	a3, a0
 	mv	a0, a1
+	bltu	a2, a3, .LBB5_2
+	mv	a0, a3
+.LBB5_2:
 	ret
 
 func000000000000000b:
-	blt	a2, a0, .LBB6_2
-	mv	a1, a0
-.LBB6_2:
+	mv	a3, a0
 	mv	a0, a1
+	blt	a2, a3, .LBB6_2
+	mv	a0, a3
+.LBB6_2:
 	ret
 
 func0000000000000014:

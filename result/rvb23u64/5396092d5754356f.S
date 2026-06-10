@@ -1,6 +1,6 @@
 func0000000000000025:
-	andi	a1, a1, 1
 	negw	a2, a2
+	andi	a1, a1, 1
 	max	a2, a2, zero
 	czero.nez	a1, a2, a1
 	sub	a0, a0, a1
@@ -8,8 +8,8 @@ func0000000000000025:
 	ret
 
 func0000000000000005:
-	andi	a1, a1, 1
 	negw	a2, a2
+	andi	a1, a1, 1
 	max	a2, a2, zero
 	czero.nez	a1, a2, a1
 	sub	a0, a0, a1

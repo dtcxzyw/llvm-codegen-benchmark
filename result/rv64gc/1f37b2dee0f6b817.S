@@ -4,8 +4,8 @@ func0000000000000000:
 	or	a2, a2, a3
 	srliw	a3, a1, 31
 	slli	a1, a1, 1
-	or	a1, a1, a3
 	xor	a0, a0, a2
+	or	a1, a1, a3
 	xor	a0, a0, a1
 	srliw	a1, a0, 31
 	slliw	a0, a0, 1
@@ -18,8 +18,8 @@ func0000000000000007:
 	or	a2, a2, a3
 	srliw	a3, a1, 31
 	slli	a1, a1, 1
-	or	a1, a1, a3
 	xor	a0, a0, a2
+	or	a1, a1, a3
 	xor	a0, a0, a1
 	srliw	a1, a0, 31
 	slliw	a0, a0, 1

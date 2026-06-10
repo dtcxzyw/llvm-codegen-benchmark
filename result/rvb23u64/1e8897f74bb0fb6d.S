@@ -6,9 +6,9 @@ func000000000000001f:
 	ret
 
 func0000000000000000:
-	slli	a1, a1, 56
 	lui	a2, 91494
 	addi	a2, a2, 1969
+	slli	a1, a1, 56
 	slli	a2, a2, 8
 	mulhu	a1, a1, a2
 	addw	a0, a0, a1
@@ -42,22 +42,22 @@ func000000000000001d:
 	ret
 
 func000000000000000d:
-	zext.b	a1, a1
 	li	a2, 157
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000004:
-	zext.b	a1, a1
 	li	a2, -6
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 
 func0000000000000015:
-	zext.b	a1, a1
 	li	a2, -10
+	zext.b	a1, a1
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

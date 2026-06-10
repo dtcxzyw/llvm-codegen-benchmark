@@ -23,8 +23,8 @@ func0000000000000007:
 	beqz	a2, .LBB2_2
 	lui	a3, 40
 .LBB2_2:
-	or	a0, a0, a3
 	andi	a1, a1, 1
+	or	a0, a0, a3
 	slli	a1, a1, 16
 	or	a0, a0, a1
 	ret

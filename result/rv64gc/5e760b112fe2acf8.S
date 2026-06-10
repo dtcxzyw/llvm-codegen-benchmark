@@ -8,9 +8,9 @@ func000000000000000f:
 
 func0000000000000000:
 	andi	a2, a2, 1
+	addi	a2, a2, -1
 	lui	a3, 1024
 	slliw	a1, a1, 16
-	addi	a2, a2, -1
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -18,9 +18,9 @@ func0000000000000000:
 
 func0000000000000003:
 	andi	a2, a2, 1
+	addi	a2, a2, -1
 	lui	a3, 16384
 	slliw	a1, a1, 27
-	addi	a2, a2, -1
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

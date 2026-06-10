@@ -36,8 +36,8 @@ func00000000000000e5:
 func0000000000000020:
 	slli	a2, a1, 2
 	slli	a1, a1, 3
-	slli	a0, a0, 1
 	add	a1, a1, a2
+	slli	a0, a0, 1
 	lui	a2, 16
 	add	a0, a0, a1
 	addi	a2, a2, -28
@@ -46,10 +46,10 @@ func0000000000000020:
 
 func0000000000000075:
 	lui	a2, 1048573
-	slli	a0, a0, 3
 	addi	a2, a2, -1
 	mul	a1, a1, a2
 	lui	a2, 48
+	slli	a0, a0, 3
 	addi	a2, a2, 16
 	add	a0, a0, a2
 	addw	a0, a0, a1
@@ -85,8 +85,8 @@ func00000000000000cc:
 func0000000000000000:
 	slli	a2, a1, 5
 	slli	a1, a1, 6
-	slli	a0, a0, 3
 	add	a1, a1, a2
+	slli	a0, a0, 3
 	lui	a2, 101
 	add	a0, a0, a1
 	addi	a1, a2, -512

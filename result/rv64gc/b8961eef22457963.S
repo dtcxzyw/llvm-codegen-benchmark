@@ -12,10 +12,10 @@ func000000000000002a:
 	mulh	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 4
+	li	a4, 88
 	add	a2, a2, a3
-	li	a3, 88
-	mul	a0, a0, a3
-	mul	a2, a2, a3
+	mul	a0, a0, a4
+	mul	a2, a2, a4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -27,10 +27,10 @@ func0000000000000020:
 	mv	a2, a3
 .LBB1_2:
 	addi	a2, a2, 7
-	slli	a0, a0, 3
 	srai	a3, a2, 63
 	srli	a3, a3, 61
 	add	a2, a2, a3
+	slli	a0, a0, 3
 	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2

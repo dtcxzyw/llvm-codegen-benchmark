@@ -9,10 +9,10 @@ func000000000000008a:
 
 func00000000000002a8:
 	srai	a1, a1, 3
+	li	a2, -1
 	sub	a1, a1, a0
-	li	a0, -1
-	srli	a0, a0, 4
-	sub	a1, a1, a0
+	srli	a2, a2, 4
+	sub	a1, a1, a2
 	srli	a1, a1, 60
 	sltiu	a0, a1, 15
 	ret
@@ -40,10 +40,10 @@ func0000000000000321:
 
 func0000000000000208:
 	srai	a1, a1, 5
+	li	a2, -1
 	sub	a1, a1, a0
-	li	a0, -1
-	srli	a0, a0, 3
-	sub	a1, a1, a0
+	srli	a2, a2, 3
+	sub	a1, a1, a2
 	srli	a1, a1, 61
 	sltiu	a0, a1, 7
 	ret

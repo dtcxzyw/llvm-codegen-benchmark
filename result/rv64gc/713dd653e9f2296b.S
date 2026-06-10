@@ -1,6 +1,6 @@
 func0000000000000000:
-	ori	a0, a0, 1
 	lui	a1, 430944
+	ori	a0, a0, 1
 	addi	a1, a1, -1431
 	mulw	a0, a0, a1
 	ret

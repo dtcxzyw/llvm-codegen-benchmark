@@ -11,8 +11,8 @@ func0000000000000012:
 	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vor.vv	v10, v9, v10
 	vsll.vi	v11, v8, 16
+	vor.vv	v10, v9, v10
 	vwaddu.vv	v8, v11, v10
 	ret
 
@@ -30,8 +30,8 @@ func000000000000001f:
 	lui	a0, 112
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vor.vv	v10, v10, v9
 	vsll.vi	v11, v8, 8
+	vor.vv	v10, v10, v9
 	vwaddu.vv	v8, v11, v10
 	ret
 

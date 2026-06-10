@@ -13,10 +13,10 @@ func0000000000000319:
 	ret
 
 func0000000000000084:
-	vsetivli	zero, 4, e32, m1, ta, mu
-	vmseq.vi	v12, v8, -1
 	lui	a0, 838861
 	addi	a0, a0, -820
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vmseq.vi	v12, v8, -1
 	vmseq.vx	v9, v9, a0
 	vmand.mm	v0, v9, v12
 	vnsrl.wi	v8, v10, 0, v0.t

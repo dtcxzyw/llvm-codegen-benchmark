@@ -41,9 +41,9 @@ func000000000000000c:
 	ret
 
 func0000000000000078:
+	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vcpop.v	v8, v8
-	li	a0, 16
 	vmsgtu.vx	v0, v8, a0
 	ret
 

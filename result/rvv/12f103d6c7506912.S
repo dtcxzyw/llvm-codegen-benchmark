@@ -8,11 +8,11 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfcvt.f.x.v	v8, v8
 	lui	a0, 255181
 	addi	a0, a0, -819
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.x.v	v8, v8
 	lui	a0, 278532
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, a0
@@ -20,20 +20,20 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfcvt.f.x.v	v8, v8
 	lui	a0, 212976
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.x.v	v8, v8
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vfcvt.f.x.v	v8, v8
 	lui	a0, 196608
 	fmv.w.x	fa5, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vfcvt.f.x.v	v8, v8
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero
 	vmfge.vf	v0, v8, fa5

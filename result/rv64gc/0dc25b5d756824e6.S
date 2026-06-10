@@ -18,15 +18,15 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	slliw	a1, a1, 2
 	slli	a0, a0, 63
+	slliw	a1, a1, 2
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
 func0000000000000001:
-	slliw	a1, a1, 3
 	slli	a0, a0, 63
+	slliw	a1, a1, 3
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret

@@ -3,8 +3,8 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
-	addi	a0, a0, -4
 	li	a1, -1
+	addi	a0, a0, -4
 	srli	a1, a1, 1
 	sltu	a0, a0, a1
 	ret

@@ -7,21 +7,21 @@ func0000000000000181:
 	ret
 
 func0000000000000281:
-	zext.w	a2, a2
 	andi	a1, a1, 31
-	sltu	a0, a0, a2
+	zext.w	a2, a2
 	addi	a1, a1, -21
+	sltu	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000681:
+	lui	a3, 15
+	and	a1, a1, a3
+	lui	a3, 10
+	xor	a1, a1, a3
 	sext.w	a2, a2
 	sltu	a0, a0, a2
-	lui	a2, 15
-	and	a1, a1, a2
-	lui	a2, 10
-	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -42,10 +42,10 @@ func0000000000000581:
 	ret
 
 func0000000000000501:
-	sext.w	a2, a2
 	andi	a1, a1, 25
-	sltu	a0, a2, a0
+	sext.w	a2, a2
 	addi	a1, a1, -16
+	sltu	a0, a2, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

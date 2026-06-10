@@ -108,9 +108,9 @@ func00000000000000a4:
 	ret
 
 func0000000000000184:
+	lui	a2, 29
 	sub	a1, a1, a0
-	lui	a0, 29
-	addi	a0, a0, 288
+	addi	a0, a2, 288
 	add	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret

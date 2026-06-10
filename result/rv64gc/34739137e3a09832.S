@@ -1,7 +1,7 @@
 func0000000000000007:
 	xori	a1, a1, 128
-	lui	a2, 15
 	zext.b	a1, a1
+	lui	a2, 15
 	slli	a1, a1, 6
 	and	a0, a0, a2
 	or	a0, a0, a1

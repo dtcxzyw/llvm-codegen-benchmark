@@ -1,7 +1,7 @@
 func0000000000000328:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 5
 	sltu	a0, a2, a0
@@ -9,8 +9,8 @@ func0000000000000328:
 
 func0000000000000324:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 2
 	sltu	a0, a0, a2
@@ -18,8 +18,8 @@ func0000000000000324:
 
 func0000000000000028:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 2
 	sltu	a0, a2, a0
@@ -27,8 +27,8 @@ func0000000000000028:
 
 func0000000000000128:
 	addi	a2, a2, -1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 4
 	sltu	a0, a2, a0
@@ -36,8 +36,8 @@ func0000000000000128:
 
 func0000000000000124:
 	addi	a2, a2, -1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 4
 	sltu	a0, a0, a2
@@ -45,8 +45,8 @@ func0000000000000124:
 
 func0000000000000024:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 3
 	sltu	a0, a0, a2
@@ -54,8 +54,8 @@ func0000000000000024:
 
 func0000000000000228:
 	addi	a2, a2, 1
-	sub	a0, a0, a1
 	slli	a2, a2, 32
+	sub	a0, a0, a1
 	srli	a2, a2, 32
 	srai	a0, a0, 2
 	sltu	a0, a2, a0

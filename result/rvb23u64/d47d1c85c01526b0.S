@@ -42,8 +42,8 @@ func0000000000000070:
 	ret
 
 func000000000000003e:
-	add.uw	a1, a2, a1
 	sh1add	a0, a0, a0
+	add.uw	a1, a2, a1
 	sh2add	a0, a0, a1
 	addi	a0, a0, -12
 	ret

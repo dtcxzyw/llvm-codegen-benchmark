@@ -1,7 +1,7 @@
 func0000000000000010:
+	li	a2, 16
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 16
 	beq	a1, a2, .LBB0_2
 	li	a1, 8
 	add	a0, a0, a1
@@ -14,9 +14,9 @@ func0000000000000010:
 	ret
 
 func000000000000001f:
+	li	a2, 7
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 7
 	beq	a1, a2, .LBB1_2
 	li	a1, 76
 	add	a0, a0, a1

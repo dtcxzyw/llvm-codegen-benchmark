@@ -32,8 +32,8 @@ func0000000000000012:
 func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vmv1r.v	v10, v8
-	li	a0, 32
 	vadd.vi	v10, v9, -2, v0.t
+	li	a0, 32
 	vwsll.vx	v8, v10, a0
 	ret
 

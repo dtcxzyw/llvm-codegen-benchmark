@@ -81,10 +81,10 @@ func00000000000000f2:
 func0000000000000000:
 	li	a3, 1204
 	mul	a2, a2, a3
-	lui	a3, 8
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
-	addi	a1, a3, 1280
+	lui	a1, 8
+	addi	a1, a1, 1280
 	add	a0, a0, a1
 	ret
 

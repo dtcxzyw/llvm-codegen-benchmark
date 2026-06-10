@@ -1,6 +1,6 @@
 func0000000000000005:
-	slli	a0, a0, 33
 	lui	a1, 154
+	slli	a0, a0, 33
 	srli	a0, a0, 56
 	addi	a0, a0, -150
 	addi	a1, a1, 521
@@ -25,9 +25,9 @@ func0000000000000007:
 	ret
 
 func000000000000000d:
+	li	a1, -16
 	srli	a0, a0, 5
 	andi	a0, a0, 2040
-	li	a1, -16
 	sub	a0, a1, a0
 	ret
 

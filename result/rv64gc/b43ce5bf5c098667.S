@@ -1,11 +1,11 @@
 func000000000000000e:
-	sext.w	a3, a0
-	zext.b	a0, a2
-	slli	a0, a0, 8
-	zext.b	a1, a1
-	or	a0, a0, a1
-	blt	a0, a3, .LBB0_2
-	mv	a0, a3
+	zext.b	a2, a2
+	slli	a2, a2, 8
+	zext.b	a3, a1
+	sext.w	a1, a0
+	or	a0, a2, a3
+	blt	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
 	ret
 

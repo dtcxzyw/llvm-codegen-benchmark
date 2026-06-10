@@ -34,8 +34,8 @@ func000000000000000f:
 	vsrl.vi	v10, v10, 16
 	lui	a0, 1048560
 	vandn.vx	v10, v10, a0
-	lui	a0, 16
 	vadd.vv	v8, v10, v8
+	lui	a0, 16
 	addi	a0, a0, -15
 	vadd.vx	v8, v8, a0
 	ret
@@ -56,8 +56,8 @@ func000000000000000d:
 	vsrl.vi	v10, v10, 16
 	li	a0, 255
 	vand.vx	v10, v10, a0
-	lui	a0, 1048575
 	vadd.vv	v8, v10, v8
+	lui	a0, 1048575
 	addi	a0, a0, 2047
 	vadd.vx	v8, v8, a0
 	ret

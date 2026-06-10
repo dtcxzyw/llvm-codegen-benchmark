@@ -73,9 +73,9 @@ func0000000000000330:
 	lui	a0, 8216
 	addi	a0, a0, 289
 	vmulhu.vx	v12, v12, a0
+	vsrl.vi	v12, v12, 3
 	lui	a0, 8
 	addi	a0, a0, -96
-	vsrl.vi	v12, v12, 3
 	vnmsub.vx	v12, a0, v10
 	vmsgtu.vi	v10, v12, 3
 	vmsne.vi	v11, v8, 0

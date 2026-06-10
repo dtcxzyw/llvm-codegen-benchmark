@@ -7,8 +7,8 @@ func000000000000000e:
 
 func0000000000000052:
 	add	a1, a1, a2
-	lui	a2, 313
 	sh2add	a1, a1, a1
+	lui	a2, 313
 	addi	a2, a2, -128
 	slli	a1, a1, 7
 	add	a0, a0, a2

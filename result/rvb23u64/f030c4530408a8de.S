@@ -1,6 +1,6 @@
 func0000000000000008:
-	roriw	a1, a1, 1
 	lui	a2, 104858
+	roriw	a1, a1, 1
 	addi	a2, a2, -1638
 	sltu	a2, a1, a2
 	czero.nez	a0, a0, a2
@@ -10,8 +10,8 @@ func0000000000000008:
 	ret
 
 func0000000000000009:
-	roriw	a1, a1, 1
 	lui	a2, 104858
+	roriw	a1, a1, 1
 	addi	a2, a2, -1638
 	sltu	a2, a1, a2
 	czero.nez	a0, a0, a2

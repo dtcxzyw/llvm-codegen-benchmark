@@ -7,9 +7,9 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	andi	a2, a2, 768
 	li	a3, 3
 	slli	a3, a3, 10
+	andi	a2, a2, 768
 	and	a1, a1, a3
 	or	a1, a1, a2
 	slli	a1, a1, 8

@@ -1,7 +1,7 @@
 func00000000000001c8:
-	addi	a2, a2, 7
 	li	a3, 1
 	slli	a3, a3, 33
+	addi	a2, a2, 7
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	sub	a0, a0, a1
@@ -17,9 +17,9 @@ func0000000000000081:
 	ret
 
 func0000000000000188:
-	addi	a2, a2, 23
 	li	a3, 1
 	slli	a3, a3, 36
+	addi	a2, a2, 23
 	addi	a3, a3, -16
 	and	a2, a2, a3
 	sub	a0, a0, a1

@@ -1,16 +1,16 @@
 func0000000000000086:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 5
-	li	a0, 32
 	vadd.vv	v8, v8, v12
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10
 	ret
 
 func0000000000000286:
+	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 5
-	li	a0, 32
 	vadd.vv	v8, v8, v12
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v8, v10

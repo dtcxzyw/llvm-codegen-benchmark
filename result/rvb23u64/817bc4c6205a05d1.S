@@ -54,9 +54,9 @@ func000000000000002c:
 func0000000000000038:
 	addiw	a1, a1, -512
 	lui	a2, 12
+	lui	a3, 4
 	czero.nez	a1, a2, a1
-	lui	a2, 4
-	addi	a2, a2, -193
+	addi	a2, a3, -193
 	or	a1, a1, a2
 	and	a0, a0, a1
 	sltiu	a0, a0, 257

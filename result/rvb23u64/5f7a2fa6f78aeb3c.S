@@ -62,17 +62,17 @@ func0000000000000074:
 	ret
 
 func0000000000000026:
+	lui	a3, 21
 	sub	a1, a1, a2
-	lui	a2, 21
-	addi	a2, a2, 384
+	addi	a2, a3, 384
 	slt	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000002a:
+	lui	a3, 633
 	sub	a1, a1, a2
-	lui	a2, 633
-	addi	a2, a2, -768
+	addi	a2, a3, -768
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

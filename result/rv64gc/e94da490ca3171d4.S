@@ -22,8 +22,8 @@ func0000000000000013:
 	ret
 
 func0000000000000004:
-	zext.b	a1, a1
 	li	a2, 45
+	zext.b	a1, a1
 	beq	a1, a2, .LBB2_2
 	li	a1, 16
 	or	a0, a0, a1

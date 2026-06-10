@@ -8,12 +8,12 @@ func0000000000000688:
 	ret
 
 func00000000000006aa:
-	fabs.s	fa5, fa1
 	lui	a0, 212992
-	fabs.s	fa4, fa0
-	fmv.w.x	fa3, a0
-	fle.s	a0, fa5, fa3
-	fle.s	a1, fa4, fa3
+	fabs.s	fa5, fa1
+	fmv.w.x	fa4, a0
+	fabs.s	fa3, fa0
+	fle.s	a0, fa5, fa4
+	fle.s	a1, fa3, fa4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -53,12 +53,12 @@ func00000000000000f0:
 	ret
 
 func00000000000000aa:
-	fabs.s	fa5, fa1
 	lui	a0, 223232
-	fabs.s	fa4, fa0
-	fmv.w.x	fa3, a0
-	fle.s	a0, fa5, fa3
-	fle.s	a1, fa4, fa3
+	fabs.s	fa5, fa1
+	fmv.w.x	fa4, a0
+	fabs.s	fa3, fa0
+	fle.s	a0, fa5, fa4
+	fle.s	a1, fa3, fa4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

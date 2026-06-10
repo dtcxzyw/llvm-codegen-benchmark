@@ -1,7 +1,7 @@
 func0000000000000019:
+	li	a0, 16
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vbrev.v	v9, v9
-	li	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf2	v10, v9
 	vrsub.vx	v8, v8, a0

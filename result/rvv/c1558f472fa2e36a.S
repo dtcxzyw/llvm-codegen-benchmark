@@ -16,8 +16,8 @@ func0000000000000021:
 func00000000000000a8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	li	a0, -1
 	vsra.vi	v8, v8, 3
+	li	a0, -1
 	srli	a1, a0, 3
 	vsub.vx	v8, v8, a1
 	slli	a0, a0, 61
@@ -48,8 +48,8 @@ func00000000000000ac:
 func00000000000000b8:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	li	a0, -1
 	vsra.vi	v8, v8, 3
+	li	a0, -1
 	bclri	a1, a0, 59
 	vadd.vx	v8, v8, a1
 	slli	a0, a0, 59

@@ -19,8 +19,8 @@ func00000000000003e1:
 	ret
 
 func0000000000000201:
-	srli	a2, a2, 1
 	li	a3, -13
+	srli	a2, a2, 1
 	srli	a3, a3, 2
 	and	a2, a2, a3
 	add	a1, a1, a2

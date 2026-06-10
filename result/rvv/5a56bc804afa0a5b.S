@@ -1,8 +1,8 @@
 func0000000000000019:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v12, v8, 8
-	vmul.vv	v8, v8, v10
-	vminu.vv	v8, v8, v12
+	vmul.vv	v10, v8, v10
+	vsll.vi	v8, v8, 8
+	vminu.vv	v8, v10, v8
 	ret
 
 func0000000000000001:

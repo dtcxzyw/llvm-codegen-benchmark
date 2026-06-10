@@ -16,8 +16,8 @@ func0000000000000002:
 
 func000000000000000d:
 	srli	a2, a2, 1
-	slli	a0, a0, 32
 	srliw	a2, a2, 31
+	slli	a0, a0, 32
 	slli	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2

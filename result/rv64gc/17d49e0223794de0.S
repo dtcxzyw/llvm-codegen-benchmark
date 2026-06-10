@@ -4,16 +4,16 @@ func0000000000000004:
 	fld	fa5, 0(a1)
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_3
-	fld	fa4, 8(a1)
 	flt.d	a0, fa5, fa0
+	fld	fa4, 8(a1)
 	beqz	a0, .LBB0_4
 .LBB0_2:
 	fmul.d	fa0, fa5, fa4
 	ret
 .LBB0_3:
 	fmv.d.x	fa0, zero
-	fld	fa4, 8(a1)
 	flt.d	a0, fa5, fa0
+	fld	fa4, 8(a1)
 	bnez	a0, .LBB0_2
 .LBB0_4:
 	fmul.d	fa0, fa0, fa4

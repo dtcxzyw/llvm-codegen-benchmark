@@ -12,10 +12,10 @@ func0000000000000141:
 	ret
 
 func0000000000000061:
+	lui	a3, 32
 	add	a0, a0, a1
 	srl	a0, a0, a2
-	lui	a1, 32
-	and	a0, a0, a1
+	and	a0, a0, a3
 	seqz	a0, a0
 	ret
 

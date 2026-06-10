@@ -47,8 +47,8 @@ func0000000000000081:
 
 func0000000000000001:
 	sub	a2, a2, a1
-	li	a1, -1
 	sh2add	a0, a2, a0
+	li	a1, -1
 	srli	a1, a1, 5
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -56,8 +56,8 @@ func0000000000000001:
 
 func0000000000000088:
 	sub	a2, a2, a1
-	li	a1, -127
 	sh3add	a0, a2, a0
+	li	a1, -127
 	srli	a1, a1, 1
 	sltu	a0, a1, a0
 	ret

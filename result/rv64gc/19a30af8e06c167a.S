@@ -8,9 +8,9 @@ func0000000000000854:
 	ret
 
 func0000000000000b16:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	slliw	a2, a2, 1
+	sext.w	a0, a0
+	sext.w	a1, a1
 	slt	a0, a0, a2
 	xori	a0, a0, 1
 	snez	a1, a1
@@ -18,9 +18,9 @@ func0000000000000b16:
 	ret
 
 func0000000000000302:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	slliw	a2, a2, 5
+	sext.w	a0, a0
+	sext.w	a1, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	snez	a1, a1

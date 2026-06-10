@@ -1,7 +1,7 @@
 func000000000000048c:
 	addiw	a2, a2, -91
-	addi	a0, a0, -95
 	sltiu	a2, a2, -26
+	addi	a0, a0, -95
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -9,8 +9,8 @@ func000000000000048c:
 
 func000000000000008c:
 	addiw	a2, a2, -58
-	addi	a0, a0, -95
 	sltiu	a2, a2, -10
+	addi	a0, a0, -95
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

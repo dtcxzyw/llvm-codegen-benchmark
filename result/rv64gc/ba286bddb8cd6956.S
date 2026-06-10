@@ -1,10 +1,10 @@
 func000000000000000c:
 	lui	a3, 3840
+	lui	a4, 240
 	addi	a3, a3, 240
+	addi	a4, a4, 15
 	and	a2, a2, a3
-	lui	a3, 240
-	addi	a3, a3, 15
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 32
@@ -28,11 +28,11 @@ func0000000000000008:
 
 func000000000000000e:
 	lui	a3, 139810
+	lui	a4, 629146
 	addi	a3, a3, 546
+	addi	a4, a4, -1639
 	and	a2, a2, a3
-	lui	a3, 629146
-	addi	a3, a3, -1639
-	and	a1, a1, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	or	a0, a0, a1
 	slli	a0, a0, 32

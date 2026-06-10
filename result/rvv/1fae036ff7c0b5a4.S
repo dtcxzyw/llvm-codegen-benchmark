@@ -1,45 +1,45 @@
 func0000000000000021:
+	lui	a0, 782271
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 782271
+	vsrl.vi	v10, v10, 3
 	addi	a0, a0, -65
 	slli	a1, a0, 36
 	add	a0, a0, a1
-	li	a1, -1
-	vsrl.vi	v10, v10, 3
 	vmul.vx	v10, v10, a0
-	srli	a1, a1, 32
-	vand.vx	v10, v10, a1
+	li	a0, -1
+	srli	a0, a0, 32
+	vand.vx	v10, v10, a0
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000034:
+	lui	a0, 618391
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 618391
+	vsrl.vi	v10, v10, 3
 	addi	a0, a0, -105
 	slli	a1, a0, 36
 	add	a0, a0, a1
-	li	a1, -1
-	vsrl.vi	v10, v10, 3
 	vmul.vx	v10, v10, a0
-	srli	a1, a1, 32
-	vand.vx	v10, v10, a1
+	li	a0, -1
+	srli	a0, a0, 32
+	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 
 func0000000000000024:
+	lui	a0, 748983
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 748983
+	vsrl.vi	v10, v10, 3
 	addi	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
-	li	a1, -1
-	vsrl.vi	v10, v10, 3
 	vmul.vx	v10, v10, a0
-	srli	a1, a1, 32
-	vand.vx	v10, v10, a1
+	li	a0, -1
+	srli	a0, a0, 32
+	vand.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
 
@@ -59,9 +59,9 @@ func0000000000000028:
 	ret
 
 func000000000000002c:
+	lui	a0, 748983
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	lui	a0, 748983
 	vsrl.vi	v10, v10, 4
 	addi	a0, a0, -585
 	slli	a1, a0, 33

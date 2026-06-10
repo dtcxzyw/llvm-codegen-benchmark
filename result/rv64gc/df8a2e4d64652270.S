@@ -11,8 +11,8 @@ func0000000000000024:
 	li	a0, 1023
 	slli	a0, a0, 52
 	fmv.d.x	fa5, a0
-	fmin.d	fa5, fa1, fa5
 	fmv.d.x	fa4, zero
+	fmin.d	fa5, fa1, fa5
 	fmax.d	fa4, fa0, fa4
 	fsub.d	fa0, fa4, fa5
 	ret

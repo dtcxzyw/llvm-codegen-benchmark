@@ -1,6 +1,6 @@
 func0000000000000000:
-	zext.h	a0, a0
 	lui	a1, 548541
+	zext.h	a0, a0
 	addi	a1, a1, -1417
 	mul	a0, a0, a1
 	lui	a1, 148020
@@ -15,8 +15,8 @@ func000000000000000f:
 	ret
 
 func000000000000003d:
-	andi	a0, a0, 2047
 	lui	a1, 77
+	andi	a0, a0, 2047
 	addi	a0, a0, -1075
 	addi	a1, a1, 261
 	mulw	a0, a0, a1

@@ -31,8 +31,8 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
-	addiw	a0, a0, 1
 	lui	a1, 67109
+	addiw	a0, a0, 1
 	addi	a1, a1, -557
 	mul	a1, a1, a0
 	srli	a2, a1, 63
@@ -45,8 +45,8 @@ func000000000000002a:
 	ret
 
 func0000000000000026:
-	addiw	a0, a0, -1
 	lui	a1, 174763
+	addiw	a0, a0, -1
 	addi	a1, a1, -1365
 	mul	a1, a1, a0
 	srli	a2, a1, 63
@@ -59,8 +59,8 @@ func0000000000000026:
 	ret
 
 func0000000000000006:
-	addiw	a0, a0, 700
 	lui	a1, 599186
+	addiw	a0, a0, 700
 	addi	a1, a1, 1171
 	mul	a1, a1, a0
 	srli	a1, a1, 32
@@ -75,8 +75,8 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	addiw	a0, a0, 4
 	lui	a1, 524288
+	addiw	a0, a0, 4
 	addi	a1, a1, 3
 	and	a0, a0, a1
 	sgtz	a0, a0
@@ -93,8 +93,8 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	addi	a0, a0, 78
 	lui	a1, 796918
+	addi	a0, a0, 78
 	addi	a1, a1, -983
 	mul	a0, a0, a1
 	lui	a1, 20972

@@ -1,6 +1,6 @@
 func0000000000000002:
-	sraiw	a0, a0, 8
 	li	a1, 255
+	sraiw	a0, a0, 8
 	blt	a0, a1, .LBB0_2
 	li	a0, 255
 .LBB0_2:
@@ -10,8 +10,8 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	sraiw	a0, a0, 23
 	li	a1, 127
+	sraiw	a0, a0, 23
 	bge	a0, a1, .LBB1_3
 	li	a1, -128
 	bge	a1, a0, .LBB1_4

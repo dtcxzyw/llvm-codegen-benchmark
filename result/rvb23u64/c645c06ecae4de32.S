@@ -8,8 +8,8 @@ func0000000000000007:
 
 func0000000000000002:
 	lui	a1, 1016
-	lui	a2, 1048568
-	and	a3, a0, a1
+	and	a2, a0, a1
+	lui	a3, 1048568
 	add	a2, a2, a3
 	andn	a0, a0, a1
 	or	a0, a0, a2
@@ -22,8 +22,8 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	bclri	a0, a0, 63
 	li	a1, -31
+	bclri	a0, a0, 63
 	slli	a1, a1, 52
 	add	a0, a0, a1
 	ret

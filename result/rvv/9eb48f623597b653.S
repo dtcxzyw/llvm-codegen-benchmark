@@ -15,9 +15,9 @@ func0000000000000204:
 	addi	a0, a0, 1117
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
+	vmsleu.vi	v12, v10, 1
 	lui	a0, 1
 	addi	a0, a0, -1122
-	vmsleu.vi	v12, v10, 1
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8

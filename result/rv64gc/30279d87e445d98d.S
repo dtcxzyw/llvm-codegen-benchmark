@@ -5,10 +5,10 @@ func00000000000000c4:
 	ret
 
 func0000000000000089:
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func00000000000000a9:
@@ -137,10 +137,10 @@ func0000000000000189:
 	ret
 
 func00000000000000cb:
-	slt	a2, a0, a2
-	slt	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	slt	a1, a0, a1
+	slt	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func00000000000000a4:
@@ -151,10 +151,10 @@ func00000000000000a4:
 	ret
 
 func0000000000000105:
-	sltu	a2, a2, a0
-	sltu	a0, a1, a0
-	not	a0, a0
-	and	a0, a0, a2
+	sltu	a1, a1, a0
+	sltu	a0, a2, a0
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func00000000000000d4:
@@ -164,17 +164,17 @@ func00000000000000d4:
 	ret
 
 func0000000000000299:
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000101:
-	sltu	a2, a2, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a2, a0
+	seqz	a1, a1
+	and	a0, a0, a1
 	ret
 
 func00000000000000ca:
@@ -184,31 +184,31 @@ func00000000000000ca:
 	ret
 
 func00000000000000c7:
-	slt	a2, a0, a2
-	slt	a0, a1, a0
-	not	a0, a0
-	and	a0, a0, a2
+	slt	a1, a1, a0
+	slt	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000141:
-	slt	a2, a2, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	slt	a0, a2, a0
+	seqz	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000109:
-	sltu	a2, a2, a0
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	sltu	a1, a0, a1
+	sltu	a0, a2, a0
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func000000000000008b:
-	sltu	a2, a0, a2
-	slt	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	slt	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 
 func0000000000000104:
@@ -237,9 +237,9 @@ func0000000000000294:
 	ret
 
 func000000000000008c:
-	sltu	a2, a0, a2
-	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	xor	a1, a1, a0
+	sltu	a0, a0, a2
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 

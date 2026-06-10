@@ -1,7 +1,7 @@
 func000000000000000a:
-	sext.w	a3, a0
-	sext.w	a4, a1
-	slt	a3, a4, a3
+	sext.w	a3, a1
+	sext.w	a4, a0
+	slt	a3, a3, a4
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
@@ -9,8 +9,8 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	sext.w	a3, a0
-	sext.w	a4, a1
+	sext.w	a3, a1
+	sext.w	a4, a0
 	xor	a3, a3, a4
 	seqz	a3, a3
 	and	a2, a2, a3
@@ -40,9 +40,9 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	sext.w	a3, a0
-	sext.w	a4, a1
-	slt	a3, a4, a3
+	sext.w	a3, a1
+	sext.w	a4, a0
+	slt	a3, a3, a4
 	xori	a3, a3, 1
 	and	a2, a2, a3
 	czero.nez	a1, a1, a2

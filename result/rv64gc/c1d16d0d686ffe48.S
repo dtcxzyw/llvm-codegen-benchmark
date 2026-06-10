@@ -1,11 +1,11 @@
 func000000000000000c:
-	srli	a1, a0, 23
-	slli	a0, a0, 41
-	addi	a1, a1, -94
-	srli	a0, a0, 41
-	lui	a2, 2048
-	or	a0, a0, a2
-	sllw	a0, a0, a1
+	lui	a1, 2048
+	slli	a2, a0, 41
+	srli	a0, a0, 23
+	srli	a2, a2, 41
+	addi	a0, a0, -94
+	or	a1, a1, a2
+	sllw	a0, a1, a0
 	ret
 
 func000000000000001e:

@@ -6,11 +6,11 @@ func00000000000000a4:
 	ret
 
 func0000000000000004:
+	li	a3, -1
 	sub	a0, a0, a1
-	li	a1, -1
 	add.uw	a0, a2, a0
-	srli	a1, a1, 32
-	sltu	a0, a0, a1
+	srli	a3, a3, 32
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000001:

@@ -1,10 +1,10 @@
 func0000000000000194:
 	sext.w	a1, a1
 	bseti	a2, zero, 60
+	li	a3, -1
 	czero.nez	a1, a2, a1
-	li	a2, -1
-	srli	a2, a2, 4
-	or	a1, a1, a2
+	srli	a3, a3, 4
+	or	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 
@@ -15,12 +15,12 @@ func0000000000000028:
 	ret
 
 func0000000000000301:
-	sext.w	a1, a1
 	lui	a2, 122
+	sext.w	a1, a1
 	addi	a2, a2, 288
+	lui	a3, 244
 	sltu	a1, a2, a1
-	lui	a2, 244
-	addi	a2, a2, 576
+	addi	a2, a3, 576
 	czero.eqz	a1, a2, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -42,8 +42,8 @@ func0000000000000024:
 	ret
 
 func0000000000000034:
-	sext.w	a1, a1
 	lui	a2, 8192
+	sext.w	a1, a1
 	addi	a2, a2, 19
 	xor	a1, a1, a2
 	snez	a1, a1

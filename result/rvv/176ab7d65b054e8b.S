@@ -83,10 +83,10 @@ func0000000000000146:
 	ret
 
 func0000000000000084:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
 	lui	a0, 2
 	addi	a1, a0, 1808
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
 	vmsltu.vx	v9, v9, a1
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -145,9 +145,9 @@ func0000000000000108:
 	slli	a0, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
+	vmsne.vi	v9, v10, 0
 	lui	a0, 4096
 	addi	a0, a0, -1
-	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -170,10 +170,10 @@ func000000000000014c:
 	ret
 
 func0000000000000088:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
 	lui	a0, 16
 	addi	a0, a0, -1473
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
 	vmsgtu.vx	v9, v9, a0
 	vmsleu.vi	v8, v8, 1
 	vmand.mm	v0, v9, v8
@@ -191,28 +191,28 @@ func0000000000000148:
 	ret
 
 func000000000000008a:
+	lui	a0, 16
+	addi	a0, a0, 256
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 16
 	vmsgt.vi	v9, v9, 0
-	addi	a0, a0, 256
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret
 
 func0000000000000198:
+	li	a0, 50
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 50
 	vmsgtu.vx	v9, v9, a0
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v0, v9, v8
 	ret
 
 func0000000000000144:
+	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 64
 	vmsgt.vi	v9, v9, 0
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -246,9 +246,9 @@ func0000000000000028:
 	ret
 
 func00000000000000c4:
+	li	a0, 17
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 17
 	vmsltu.vx	v9, v9, a0
 	vmsle.vi	v8, v8, 8
 	vmand.mm	v0, v9, v8
@@ -286,9 +286,9 @@ func0000000000000081:
 	ret
 
 func000000000000010c:
+	li	a0, 59
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 59
 	vmsgtu.vx	v9, v9, a0
 	vmsne.vi	v8, v8, 6
 	vmand.mm	v0, v8, v9
@@ -355,8 +355,8 @@ func0000000000000104:
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	li	a0, 24
 	vmsne.vi	v9, v10, 0
+	li	a0, 24
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

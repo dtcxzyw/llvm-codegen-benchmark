@@ -1,8 +1,8 @@
 func0000000000000001:
-	li	a1, -2
-	sll	a0, a1, a0
 	li	a1, 1
+	li	a2, -2
 	slli	a1, a1, 32
+	sll	a0, a2, a0
 	addi	a1, a1, -16
 	and	a0, a0, a1
 	addi	a1, a1, 14
@@ -21,12 +21,12 @@ func0000000000000000:
 
 func0000000000000003:
 	li	a1, 1
+	lui	a2, 510
 	sll	a0, a1, a0
-	lui	a1, 510
-	addi	a1, a1, 1
+	addi	a2, a2, 1
 	not	a0, a0
-	slli	a1, a1, 35
-	and	a0, a0, a1
+	slli	a2, a2, 35
+	and	a0, a0, a2
 	ret
 
 func0000000000000002:

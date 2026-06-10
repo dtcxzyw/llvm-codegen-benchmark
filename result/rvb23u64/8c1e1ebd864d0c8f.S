@@ -1,10 +1,10 @@
 func00000000000000a6:
 	sext.w	a1, a1
 	sext.w	a0, a0
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -1
-	slt	a0, a0, a1
+	addi	a2, a2, -1
+	slt	a0, a0, a2
 	ret
 
 func0000000000000024:
@@ -17,10 +17,10 @@ func0000000000000024:
 func00000000000000aa:
 	sext.w	a1, a1
 	sext.w	a0, a0
+	lui	a2, 262144
 	add	a0, a0, a1
-	lui	a1, 262144
-	addi	a1, a1, -1
-	slt	a0, a1, a0
+	addi	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 
 .LCPI3_0:

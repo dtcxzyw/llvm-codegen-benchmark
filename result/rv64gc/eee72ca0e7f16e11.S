@@ -85,8 +85,8 @@ func0000000000000048:
 	lui	a1, 524288
 	sub	a1, a1, a2
 .LBB8_2:
-	sext.w	a1, a1
 	lui	a0, 158203
+	sext.w	a1, a1
 	addi	a0, a0, 512
 	sltu	a0, a0, a1
 	ret

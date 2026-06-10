@@ -4,8 +4,8 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	srliw	a0, a0, 9
 	lui	a1, 260096
+	srliw	a0, a0, 9
 	or	a0, a0, a1
 	ret
 

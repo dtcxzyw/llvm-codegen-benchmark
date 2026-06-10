@@ -20,9 +20,9 @@ func000000000000002a:
 	ret
 
 func0000000000000088:
+	li	a0, 2047
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vv	v14, v12, v10
-	li	a0, 2047
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v14, v10
 	ret
@@ -77,9 +77,9 @@ func0000000000000086:
 	ret
 
 func0000000000000108:
+	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vv	v14, v10, v12
-	li	a0, 63
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v14, v10
 	ret

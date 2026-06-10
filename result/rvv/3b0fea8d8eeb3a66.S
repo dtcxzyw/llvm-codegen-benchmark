@@ -41,9 +41,9 @@ func0000000000000038:
 	ret
 
 func0000000000000018:
+	li	a0, 305
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	li	a0, 305
 	vmerge.vxm	v8, v8, a0, v0
 	vmsltu.vv	v0, v12, v8
 	ret

@@ -1,8 +1,8 @@
 func0000000000000000:
-	andi	a3, a0, 1
-	add	a0, a1, a2
-	srliw	a0, a0, 1
-	bnez	a3, .LBB0_2
+	add	a3, a1, a2
+	andi	a4, a0, 1
+	srliw	a0, a3, 1
+	bnez	a4, .LBB0_2
 	subw	a0, a1, a0
 	ret
 .LBB0_2:

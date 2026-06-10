@@ -7,11 +7,11 @@ func000000000000018c:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
 	lui	a3, 244
+	sext.w	a1, a1
 	addi	a3, a3, 575
-	snez	a1, a1
 	xor	a2, a2, a3
+	snez	a1, a1
 	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -36,14 +36,14 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
-	sext.w	a1, a1
 	li	a3, -1
 	srli	a3, a3, 32
 	xor	a2, a2, a3
 	lui	a3, 16
+	sext.w	a1, a1
 	addi	a3, a3, -1
-	xor	a1, a1, a3
 	seqz	a2, a2
+	xor	a1, a1, a3
 	or	a0, a0, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -52,8 +52,8 @@ func0000000000000021:
 func000000000000018a:
 	sext.w	a1, a1
 	sltiu	a2, a2, -1
-	or	a0, a0, a2
 	slti	a1, a1, 4
+	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -64,8 +64,8 @@ func0000000000000181:
 	lui	a3, %hi(.LCPI6_0)
 	ld	a3, %lo(.LCPI6_0)(a3)
 	sext.w	a1, a1
-	seqz	a1, a1
 	xor	a2, a2, a3
+	seqz	a1, a1
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -74,15 +74,15 @@ func0000000000000181:
 func0000000000000188:
 	sext.w	a1, a1
 	snez	a2, a2
-	or	a0, a0, a2
 	sltiu	a1, a1, 16
+	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	addi	a2, a2, -1
+	sext.w	a1, a1
 	snez	a2, a2
 	or	a0, a0, a2
 	sltiu	a1, a1, 2

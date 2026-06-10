@@ -21,14 +21,14 @@ func0000000000000042:
 	ret
 
 func0000000000000002:
-	sext.w	a0, a0
 	lui	a2, 589824
+	sext.w	a0, a0
 	andn	a1, a1, a2
 	lui	a2, 397312
 	addi	a2, a2, -1026
+	lui	a3, 524288
 	czero.eqz	a0, a2, a0
-	lui	a2, 524288
-	or	a1, a1, a2
+	or	a1, a1, a3
 	or	a0, a0, a1
 	ret
 

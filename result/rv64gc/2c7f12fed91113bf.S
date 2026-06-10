@@ -39,10 +39,10 @@ func000000000000008c:
 	lui	a2, 1047846
 	addi	a2, a2, -545
 	slli	a2, a2, 38
+	lui	a3, 1026701
 	add	a1, a1, a2
-	lui	a2, 1026701
-	slli	a2, a2, 26
-	sltu	a1, a1, a2
+	slli	a3, a3, 26
+	sltu	a1, a1, a3
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

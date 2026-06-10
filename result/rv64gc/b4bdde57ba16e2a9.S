@@ -8,9 +8,9 @@ func0000000000000080:
 	ret
 
 func0000000000000085:
-	srliw	a1, a0, 16
-	li	a2, 16
-	bgeu	a2, a1, .LBB1_2
+	li	a1, 16
+	srliw	a2, a0, 16
+	bgeu	a1, a2, .LBB1_2
 	li	a0, -17
 	ret
 .LBB1_2:
@@ -28,9 +28,9 @@ func0000000000000087:
 	ret
 
 func0000000000000081:
-	srliw	a1, a0, 16
-	li	a2, 16
-	bgeu	a2, a1, .LBB3_2
+	li	a1, 16
+	srliw	a2, a0, 16
+	bgeu	a1, a2, .LBB3_2
 	li	a0, -17
 	ret
 .LBB3_2:

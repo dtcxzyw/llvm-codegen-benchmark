@@ -1,12 +1,12 @@
 .LCPI0_0:
 	.quad	230584300921369395
 func0000000000000032:
-	srai	a1, a1, 3
 	lui	a2, 838861
-	srai	a0, a0, 3
 	addi	a2, a2, -819
+	srai	a1, a1, 3
 	slli	a3, a2, 32
 	add	a3, a3, a2
+	srai	a0, a0, 3
 	mul	a2, a1, a3
 	mul	a0, a0, a3
 	mv	a1, a0
@@ -30,12 +30,12 @@ func0000000000000032:
 .LCPI1_0:
 	.quad	384307168202282325
 func0000000000000036:
-	srai	a1, a1, 3
 	lui	a2, 699051
-	srai	a0, a0, 3
 	addi	a2, a2, -1365
+	srai	a1, a1, 3
 	slli	a3, a2, 32
 	add	a3, a3, a2
+	srai	a0, a0, 3
 	mul	a2, a1, a3
 	mul	a0, a0, a3
 	mv	a1, a0

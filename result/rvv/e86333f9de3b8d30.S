@@ -23,9 +23,9 @@ func0000000000000003:
 	ret
 
 func000000000000003f:
+	lui	a0, 262144
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 30
-	lui	a0, 262144
 	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 24
 	vor.vv	v10, v10, v12
@@ -108,9 +108,9 @@ func000000000000002f:
 	ret
 
 func000000000000000c:
+	bseti	a0, zero, 46
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 31
-	bseti	a0, zero, 46
 	vand.vx	v12, v12, a0
 	vadd.vv	v10, v10, v10
 	vor.vv	v10, v12, v10

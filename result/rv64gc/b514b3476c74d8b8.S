@@ -7,9 +7,9 @@ func00000000000003c6:
 	ret
 
 func00000000000003cc:
-	sext.w	a0, a0
 	zext.b	a2, a2
 	slliw	a1, a1, 8
+	sext.w	a0, a0
 	or	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0

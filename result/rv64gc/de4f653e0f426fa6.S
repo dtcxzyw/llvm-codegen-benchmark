@@ -13,8 +13,8 @@ func0000000000000004:
 	slli	a1, a1, 52
 	fmv.d.x	fa5, a1
 	li	a1, 1
-	slli	a1, a1, 62
 	fmul.d	fa5, fa0, fa5
+	slli	a1, a1, 62
 	fmv.d.x	fa4, a1
 	flt.d	a1, fa4, fa5
 	xori	a0, a0, 1

@@ -10,9 +10,9 @@ func000000000000000f:
 	ret
 
 func000000000000001f:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
-	li	a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -22,9 +22,9 @@ func000000000000001f:
 	ret
 
 func000000000000001b:
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
-	li	a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -34,9 +34,9 @@ func000000000000001b:
 	ret
 
 func000000000000000b:
+	li	a0, 48
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
-	li	a0, 48
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

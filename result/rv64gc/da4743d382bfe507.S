@@ -9,8 +9,8 @@ func0000000000000184:
 	ret
 
 func000000000000018c:
-	sext.w	a2, a2
 	slli	a1, a1, 48
+	sext.w	a2, a2
 	srli	a1, a1, 48
 	or	a1, a1, a2
 	snez	a1, a1
@@ -20,8 +20,8 @@ func000000000000018c:
 func0000000000000024:
 	slli	a1, a1, 48
 	sext.w	a2, a2
-	lui	a3, 16
 	srli	a1, a1, 48
+	lui	a3, 16
 	seqz	a2, a2
 	addi	a3, a3, -10
 	sltu	a1, a1, a3

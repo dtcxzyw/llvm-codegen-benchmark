@@ -1,10 +1,10 @@
 func0000000000000008:
-	sub	a0, a0, a1
-	li	a1, -131
-	srli	a1, a1, 1
+	li	a2, -131
 	sub	a0, a0, a1
 	li	a1, -1
+	srli	a2, a2, 1
 	slli	a1, a1, 63
+	sub	a0, a0, a2
 	addi	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
@@ -42,9 +42,9 @@ func000000000000000a:
 	ret
 
 func0000000000000006:
+	lui	a2, 1048575
 	sub	a0, a0, a1
-	lui	a1, 1048575
-	addi	a1, a1, -904
+	addi	a1, a2, -904
 	add	a0, a0, a1
 	srli	a0, a0, 63
 	ret

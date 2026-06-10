@@ -6,8 +6,8 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	sext.w	a0, a0
 	lui	a1, 600
+	sext.w	a0, a0
 	addi	a1, a1, 1005
 	sltu	a0, a0, a1
 	li	a1, -30
@@ -16,12 +16,12 @@ func0000000000000014:
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
 	bseti	a1, zero, 60
+	sext.w	a0, a0
+	li	a2, -1
 	czero.nez	a0, a1, a0
-	li	a1, -1
-	srli	a1, a1, 4
-	or	a0, a0, a1
+	srli	a2, a2, 4
+	or	a0, a0, a2
 	ret
 
 func0000000000000006:
@@ -30,9 +30,9 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
+	lui	a1, 256
 	sext.w	a0, a0
 	sgtz	a0, a0
-	lui	a1, 256
 	czero.nez	a0, a1, a0
 	bseti	a0, a0, 21
 	ret
@@ -44,8 +44,8 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	sext.w	a0, a0
 	lui	a1, 1048320
+	sext.w	a0, a0
 	sltiu	a0, a0, 128
 	czero.eqz	a0, a1, a0
 	lui	a1, 512

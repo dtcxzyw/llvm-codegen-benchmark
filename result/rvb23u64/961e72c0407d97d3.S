@@ -8,10 +8,10 @@ func0000000000000001:
 func0000000000000000:
 	lui	a2, 65535
 	slli	a2, a2, 28
+	li	a3, -1
 	and	a1, a1, a2
-	li	a2, -1
-	srli	a2, a2, 24
-	or	a1, a1, a2
+	srli	a3, a3, 24
+	or	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

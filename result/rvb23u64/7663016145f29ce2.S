@@ -58,10 +58,10 @@ func0000000000000012:
 
 func0000000000000005:
 	seqz	a1, a1
+	lui	a2, 1048572
 	sub	a0, a0, a1
-	lui	a1, 1048572
-	addi	a1, a1, 2
-	add	a0, a0, a1
+	addi	a2, a2, 2
+	add	a0, a0, a2
 	ret
 
 func000000000000001b:
@@ -116,14 +116,14 @@ func0000000000000018:
 	ret
 
 func0000000000000021:
-	srli	a1, a1, 34
 	li	a2, -1
+	srli	a1, a1, 34
+	lui	a3, 509272
 	sltiu	a1, a1, 125
 	slli	a2, a2, 32
+	addi	a3, a3, 384
 	czero.nez	a1, a2, a1
-	lui	a2, 509272
-	addi	a2, a2, 384
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 

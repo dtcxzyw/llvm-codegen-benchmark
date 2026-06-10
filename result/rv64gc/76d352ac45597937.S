@@ -7,9 +7,9 @@ func0000000000000036:
 
 func0000000000000014:
 	srliw	a2, a2, 13
+	lui	a3, 1048575
 	add	a1, a1, a2
-	lui	a2, 1048575
-	addi	a2, a2, -98
+	addi	a2, a3, -98
 	addw	a1, a1, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1

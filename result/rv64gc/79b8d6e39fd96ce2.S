@@ -4,13 +4,13 @@ func00000000000000a8:
 	mv	a1, a2
 .LBB0_2:
 	lui	a0, 16
-	slli	a2, a1, 16
 	addi	a0, a0, -16
 	sltu	a0, a0, a1
-	lui	a1, 983055
+	lui	a2, 983055
 	neg	a0, a0
-	slli	a1, a1, 4
-	and	a0, a0, a1
-	add	a0, a0, a2
+	slli	a2, a2, 4
+	slli	a1, a1, 16
+	and	a0, a0, a2
+	add	a0, a0, a1
 	ret
 

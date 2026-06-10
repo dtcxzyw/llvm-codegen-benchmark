@@ -21,11 +21,11 @@ func00000000000000ee:
 
 func0000000000000048:
 	lui	a0, 784384
-	lui	a1, 260096
 	fmv.w.x	fa5, a0
+	lui	a0, 260096
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa1, fa5
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
+	flt.s	a1, fa4, fa0
 	or	a0, a0, a1
 	ret
 
@@ -46,8 +46,8 @@ func000000000000007a:
 	ret
 
 func0000000000000088:
-	fmax.s	fa5, fa0, fa1
 	lui	a0, 260096
+	fmax.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -55,9 +55,9 @@ func0000000000000088:
 func0000000000000090:
 	lui	a0, 260096
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	flt.s	a0, fa5, fa1
-	fmv.w.x	fa5, zero
-	feq.s	a1, fa0, fa5
+	feq.s	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 
@@ -70,18 +70,18 @@ func00000000000001dc:
 func0000000000000050:
 	lui	a0, 131072
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	flt.s	a0, fa1, fa5
-	fmv.w.x	fa5, zero
-	feq.s	a1, fa0, fa5
+	feq.s	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 
 func0000000000000056:
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
-	flt.s	a0, fa1, fa5
-	flt.s	a1, fa5, fa0
-	xori	a1, a1, 1
+	flt.s	a0, fa5, fa0
+	flt.s	a1, fa1, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -95,9 +95,9 @@ func0000000000000066:
 
 func000000000000008e:
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa5, fa1
-	feq.s	a1, fa0, fa5
-	xori	a1, a1, 1
+	feq.s	a0, fa0, fa5
+	flt.s	a1, fa5, fa1
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -105,10 +105,10 @@ func0000000000000170:
 	lui	a0, 198807
 	addi	a0, a0, 95
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, zero
 	flt.s	a0, fa5, fa1
-	fmv.w.x	fa5, zero
+	feq.s	a1, fa0, fa4
 	xori	a0, a0, 1
-	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 
@@ -124,15 +124,15 @@ func00000000000001ba:
 
 func0000000000000124:
 	lui	a0, 522240
-	lui	a1, 913408
 	fmv.w.x	fa5, a0
+	lui	a0, 913408
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa1, fa5
-	flt.s	a2, fa5, fa1
-	fmv.w.x	fa5, a1
-	or	a0, a0, a2
-	xori	a0, a0, 1
-	flt.s	a1, fa0, fa5
+	flt.s	a1, fa5, fa1
+	flt.s	a2, fa0, fa4
 	or	a0, a0, a1
+	xori	a0, a0, 1
+	or	a0, a0, a2
 	ret
 
 func00000000000000aa:
@@ -150,19 +150,19 @@ func0000000000000132:
 	flt.s	a0, fa1, fa5
 	flt.s	a1, fa5, fa1
 	flt.s	a2, fa0, fa5
+	flt.s	a3, fa5, fa0
 	or	a0, a0, a1
-	flt.s	a1, fa5, fa0
-	or	a1, a1, a2
-	and	a0, a0, a1
+	or	a2, a2, a3
+	and	a0, a0, a2
 	xori	a0, a0, 1
 	ret
 
 func0000000000000042:
 	lui	a0, 2048
-	feq.s	a1, fa0, fa0
 	fmv.w.x	fa5, a0
-	flt.s	a0, fa1, fa5
-	xori	a1, a1, 1
+	feq.s	a0, fa0, fa0
+	flt.s	a1, fa1, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -174,25 +174,25 @@ func0000000000000154:
 
 func0000000000000108:
 	lui	a0, 522240
-	lui	a1, 325632
 	fmv.w.x	fa5, a0
+	lui	a0, 325632
+	fmv.w.x	fa4, a0
 	feq.s	a0, fa1, fa5
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
+	flt.s	a1, fa4, fa0
 	or	a0, a0, a1
 	ret
 
 func0000000000000134:
 	lui	a0, 522240
-	lui	a1, 798736
 	fmv.w.x	fa5, a0
+	lui	a0, 798736
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa1, fa5
-	flt.s	a2, fa5, fa1
-	fmv.w.x	fa5, a1
-	or	a0, a0, a2
-	xori	a0, a0, 1
-	fle.s	a1, fa0, fa5
+	flt.s	a1, fa5, fa1
+	fle.s	a2, fa0, fa4
 	or	a0, a0, a1
+	xori	a0, a0, 1
+	or	a0, a0, a2
 	ret
 
 func00000000000000a6:
@@ -207,12 +207,12 @@ func00000000000000a6:
 
 func000000000000006a:
 	lui	a0, 508811
-	lui	a1, 260096
 	addi	a0, a0, -1499
+	lui	a1, 260096
 	fmv.w.x	fa5, a0
+	fmv.w.x	fa4, a1
 	fle.s	a0, fa5, fa1
-	fmv.w.x	fa5, a1
-	fle.s	a1, fa0, fa5
+	fle.s	a1, fa0, fa4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -221,8 +221,8 @@ func00000000000000f0:
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
 	feq.s	a0, fa1, fa5
-	xori	a0, a0, 1
 	feq.s	a1, fa0, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
@@ -236,11 +236,11 @@ func00000000000000e2:
 
 func0000000000000084:
 	lui	a0, 277312
-	lui	a1, 799552
 	fmv.w.x	fa5, a0
+	lui	a0, 799552
+	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa1
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
+	flt.s	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 
@@ -252,8 +252,8 @@ func0000000000000114:
 	ret
 
 func0000000000000198:
-	fmax.s	fa5, fa0, fa1
 	lui	a0, 273536
+	fmax.s	fa5, fa0, fa1
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	ret

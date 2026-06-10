@@ -26,8 +26,8 @@ func0000000000000003:
 
 func00000000000001e3:
 	sub	a1, a1, a2
-	li	a2, 13
 	addi	a1, a1, 1
+	li	a2, 13
 	slli	a1, a1, 32
 	slli	a2, a2, 34
 	mulhu	a1, a1, a2
@@ -36,8 +36,8 @@ func00000000000001e3:
 
 func0000000000000060:
 	sub	a1, a1, a2
-	li	a2, 13
 	addi	a1, a1, 1
+	li	a2, 13
 	slli	a1, a1, 32
 	slli	a2, a2, 34
 	mulhu	a1, a1, a2

@@ -1,7 +1,7 @@
 func0000000000000061:
-	andi	a1, a0, 224
-	li	a2, 224
-	bne	a1, a2, .LBB0_2
+	li	a1, 224
+	andi	a2, a0, 224
+	bne	a2, a1, .LBB0_2
 	li	a0, 8
 	ret
 .LBB0_2:
@@ -11,9 +11,9 @@ func0000000000000061:
 	ret
 
 func0000000000000041:
-	andi	a1, a0, 6
-	li	a2, 6
-	bne	a1, a2, .LBB1_2
+	li	a1, 6
+	andi	a2, a0, 6
+	bne	a2, a1, .LBB1_2
 	li	a0, 4
 	ret
 .LBB1_2:

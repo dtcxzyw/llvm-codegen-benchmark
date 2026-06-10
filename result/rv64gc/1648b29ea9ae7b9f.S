@@ -1,6 +1,6 @@
 func00000000000000ca:
-	slli	a0, a0, 56
 	slli	a2, a2, 56
+	slli	a0, a0, 56
 	srai	a2, a2, 56
 	srai	a0, a0, 56
 	bgtz	a2, .LBB0_2
@@ -24,11 +24,11 @@ func0000000000000021:
 	ret
 
 func0000000000000081:
-	zext.b	a0, a0
 	zext.b	a2, a2
 	sltiu	a2, a2, 10
 	addi	a2, a2, -1
 	and	a1, a1, a2
+	zext.b	a0, a0
 	zext.b	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

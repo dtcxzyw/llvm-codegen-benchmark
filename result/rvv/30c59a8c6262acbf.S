@@ -4,8 +4,8 @@ func000000000000000b:
 	lui	a0, 1048571
 	addi	a0, a0, -1365
 	vmulhu.vx	v8, v10, a0
-	li	a0, 96
 	vsrl.vi	v8, v8, 6
+	li	a0, 96
 	vnmsub.vx	v8, a0, v10
 	li	a0, 32
 	vadd.vx	v8, v8, a0

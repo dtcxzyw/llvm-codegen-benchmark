@@ -8,18 +8,18 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	zext.b	a3, a1
-	andi	a2, a2, 1
+	andi	a3, a2, 1
+	zext.b	a2, a1
 	lui	a1, 7
-	bnez	a2, .LBB1_2
+	bnez	a3, .LBB1_2
 	addi	a1, a1, -1851
-	li	a2, 5
-	bgeu	a3, a2, .LBB1_3
+	li	a3, 5
+	bgeu	a2, a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
 	addi	a1, a1, -1855
-	li	a2, 5
-	bltu	a3, a2, .LBB1_4
+	li	a3, 5
+	bltu	a2, a3, .LBB1_4
 .LBB1_3:
 	mv	a1, a0
 .LBB1_4:

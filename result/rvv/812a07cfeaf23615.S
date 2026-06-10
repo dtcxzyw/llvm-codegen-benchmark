@@ -37,8 +37,8 @@ func00000000000000d5:
 func0000000000000050:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, -1
-	li	a0, -1
 	vmadd.vv	v12, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vadd.vx	v8, v12, a0
 	ret
@@ -46,8 +46,8 @@ func0000000000000050:
 func0000000000000057:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, -1
-	li	a0, -1
 	vmadd.vv	v12, v10, v8
+	li	a0, -1
 	srli	a0, a0, 32
 	vadd.vx	v8, v12, a0
 	ret

@@ -8,10 +8,10 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	andi	a3, a0, 1
-	sub	a0, a2, a1
-	srai	a0, a0, 3
-	bnez	a3, .LBB1_2
+	sub	a2, a2, a1
+	andi	a1, a0, 1
+	srai	a0, a2, 3
+	bnez	a1, .LBB1_2
 	li	a1, 4
 	sltu	a0, a0, a1
 	ret
@@ -21,10 +21,10 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	andi	a3, a0, 1
-	sub	a0, a2, a1
-	srai	a0, a0, 3
-	bnez	a3, .LBB2_2
+	sub	a2, a2, a1
+	andi	a1, a0, 1
+	srai	a0, a2, 3
+	bnez	a1, .LBB2_2
 	li	a1, 4
 	sltu	a0, a1, a0
 	ret

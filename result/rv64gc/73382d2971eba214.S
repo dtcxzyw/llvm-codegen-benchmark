@@ -16,8 +16,8 @@ func0000000000000181:
 
 func000000000000018c:
 	andi	a1, a0, 7
-	andi	a0, a0, 6
 	addi	a1, a1, -3
+	andi	a0, a0, 6
 	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1

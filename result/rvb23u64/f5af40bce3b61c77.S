@@ -62,12 +62,12 @@ func0000000000000021:
 func0000000000000019:
 	lui	a2, 1048575
 	addi	a2, a2, 496
+	lui	a3, 211
 	slt	a1, a1, a2
-	lui	a2, 211
-	addi	a2, a2, -256
-	czero.eqz	a1, a2, a1
 	lui	a2, 9
+	addi	a3, a3, -256
 	addi	a2, a2, -864
+	czero.eqz	a1, a3, a1
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -123,9 +123,9 @@ func0000000000000023:
 
 func0000000000000030:
 	bseti	a2, zero, 11
+	lui	a3, 11
 	czero.eqz	a1, a2, a1
-	lui	a2, 11
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 

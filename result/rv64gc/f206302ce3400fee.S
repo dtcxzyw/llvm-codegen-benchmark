@@ -32,17 +32,17 @@ func000000000000000f:
 	ret
 
 func0000000000000009:
+	lui	a1, 786688
 	slli	a0, a0, 33
 	srli	a0, a0, 33
-	lui	a1, 786688
 	addw	a0, a0, a1
 	ret
 
 func0000000000000008:
 	lui	a1, 1044480
+	lui	a2, 648056
 	and	a0, a0, a1
-	lui	a1, 648056
-	addi	a1, a1, -1607
+	addi	a1, a2, -1607
 	addw	a0, a0, a1
 	ret
 

@@ -21,8 +21,8 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	mv	a3, a1
+	andi	a0, a0, 1
 	bge	a1, a2, .LBB2_3
 	beqz	a0, .LBB2_4
 .LBB2_2:
@@ -36,8 +36,8 @@ func0000000000000001:
 	ret
 
 func0000000000000008:
-	andi	a0, a0, 1
 	mv	a3, a1
+	andi	a0, a0, 1
 	bge	a1, a2, .LBB3_3
 	beqz	a0, .LBB3_4
 .LBB3_2:

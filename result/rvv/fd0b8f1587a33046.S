@@ -1,8 +1,8 @@
 func000000000000003e:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, 1
+	vnsrl.wi	v11, v8, 0
+	vsll.vv	v8, v10, v11
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -12,9 +12,9 @@ func000000000000003e:
 
 func0000000000000004:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, -1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, -1
+	vnsrl.wi	v11, v8, 0
+	vsll.vv	v8, v10, v11
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -24,9 +24,9 @@ func0000000000000004:
 
 func0000000000000028:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, 1
+	vnsrl.wi	v11, v8, 0
+	vsll.vv	v8, v10, v11
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -36,9 +36,9 @@ func0000000000000028:
 
 func0000000000000024:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, -1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, -1
+	vnsrl.wi	v11, v8, 0
+	vsll.vv	v8, v10, v11
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -48,9 +48,9 @@ func0000000000000024:
 
 func000000000000000c:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, 1
+	vnsrl.wi	v11, v8, 0
+	vsll.vv	v8, v10, v11
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -60,9 +60,9 @@ func000000000000000c:
 
 func0000000000000014:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, -1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, -1
+	vnsrl.wi	v11, v8, 0
+	vsll.vv	v8, v10, v11
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
@@ -72,9 +72,9 @@ func0000000000000014:
 
 func0000000000000008:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 1
-	vsll.vv	v8, v8, v10
+	vmv.v.i	v10, 1
+	vnsrl.wi	v11, v8, 0
+	vsll.vv	v8, v10, v11
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma

@@ -1,7 +1,7 @@
 func0000000000000021:
+	li	a1, 2
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 2
 	bne	a0, a1, .LBB0_2
 	li	a0, 16
 	ret
@@ -13,9 +13,9 @@ func0000000000000021:
 	ret
 
 func0000000000000084:
+	li	a1, 1000
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	li	a1, 1000
 	bgeu	a0, a1, .LBB1_2
 	li	a0, 3
 	ret
@@ -26,9 +26,9 @@ func0000000000000084:
 	ret
 
 func0000000000000108:
+	li	a2, 10
 	slli	a0, a0, 48
 	srli	a1, a0, 48
-	li	a2, 10
 	lui	a0, 15
 	bgeu	a2, a1, .LBB2_3
 	li	a2, 12
@@ -45,16 +45,16 @@ func0000000000000108:
 	ret
 
 func0000000000000028:
+	li	a1, 7
 	slli	a0, a0, 48
-	srli	a1, a0, 48
-	li	a2, 7
-	beq	a1, a2, .LBB3_2
+	srli	a2, a0, 48
+	beq	a2, a1, .LBB3_2
 	li	a0, 512
-	bltu	a2, a1, .LBB3_3
+	bltu	a1, a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
 	li	a0, 768
-	bgeu	a2, a1, .LBB3_4
+	bgeu	a1, a2, .LBB3_4
 .LBB3_3:
 	li	a0, 3
 	slli	a0, a0, 10

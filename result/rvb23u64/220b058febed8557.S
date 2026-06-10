@@ -8,8 +8,8 @@ func0000000000000007:
 
 func0000000000000011:
 	sext.w	a1, a1
-	li	a2, 7
 	sltiu	a1, a1, 6
+	li	a2, 7
 	czero.nez	a1, a2, a1
 	zext.b	a0, a0
 	add	a0, a0, a1
@@ -17,10 +17,10 @@ func0000000000000011:
 	ret
 
 func0000000000000005:
-	addiw	a1, a1, 1
 	lui	a2, 128
-	seqz	a1, a1
+	addiw	a1, a1, 1
 	addi	a2, a2, -8
+	seqz	a1, a1
 	and	a0, a0, a2
 	sh1add	a0, a1, a0
 	addi	a0, a0, -10

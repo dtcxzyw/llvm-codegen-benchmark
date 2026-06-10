@@ -1,34 +1,34 @@
 func000000000000003b:
-	slliw	a2, a2, 16
 	slliw	a1, a1, 8
+	slliw	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000010:
-	slliw	a2, a2, 24
 	slliw	a1, a1, 8
+	slliw	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000022:
-	slliw	a2, a2, 24
 	slliw	a1, a1, 16
+	slliw	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000039:
-	slliw	a2, a2, 16
 	slliw	a1, a1, 15
+	slliw	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000033:
-	slliw	a2, a2, 24
 	slliw	a1, a1, 8
+	slliw	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -58,15 +58,15 @@ func000000000000007f:
 	ret
 
 func0000000000000031:
-	slliw	a2, a2, 21
 	slliw	a1, a1, 16
+	slliw	a2, a2, 21
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000038:
-	slliw	a2, a2, 16
 	slliw	a1, a1, 8
+	slliw	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -87,29 +87,29 @@ func000000000000007e:
 	ret
 
 func000000000000007c:
-	slliw	a2, a2, 16
 	slliw	a1, a1, 8
+	slliw	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000078:
-	slliw	a2, a2, 24
 	slliw	a1, a1, 16
+	slliw	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func0000000000000079:
-	slliw	a2, a2, 24
 	slliw	a1, a1, 8
+	slliw	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func000000000000006e:
-	slliw	a2, a2, 16
 	slliw	a1, a1, 24
+	slliw	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

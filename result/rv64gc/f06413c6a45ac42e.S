@@ -51,12 +51,12 @@ func000000000000001a:
 func0000000000000015:
 	andi	a1, a1, 1
 	addiw	a2, a2, -3
-	lui	a3, 1024
+	seqz	a2, a2
 	addi	a1, a1, -1
+	addi	a2, a2, -1
+	lui	a3, 1024
 	and	a1, a1, a3
 	lui	a3, 1047552
-	seqz	a2, a2
-	addi	a2, a2, -1
 	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -72,8 +72,8 @@ func000000000000004f:
 	ret
 
 func000000000000014f:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	addi	a2, a2, -1
 	andi	a2, a2, 94
 	li	a3, 78

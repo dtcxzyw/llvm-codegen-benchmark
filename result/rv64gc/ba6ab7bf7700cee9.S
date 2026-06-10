@@ -17,8 +17,8 @@ func00000000000001e1:
 	ret
 
 func0000000000000005:
-	addi	a2, a2, 5
 	lui	a3, 2
+	addi	a2, a2, 5
 	addi	a3, a3, -1638
 	mul	a2, a2, a3
 	srliw	a2, a2, 16

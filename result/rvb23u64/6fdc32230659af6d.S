@@ -1,7 +1,7 @@
 func0000000000000014:
-	andi	a1, a1, 1
 	li	a3, 1
 	bseti	a3, a3, 39
+	andi	a1, a1, 1
 	sltu	a0, a0, a3
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2

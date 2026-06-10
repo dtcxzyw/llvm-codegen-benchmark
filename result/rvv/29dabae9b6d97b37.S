@@ -10,22 +10,22 @@ func0000000000000007:
 	ret
 
 func000000000000002b:
+	li	a0, 120
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v12, 0
-	li	a0, 120
 	vand.vx	v10, v10, a0
 	vor.vi	v10, v10, 4, v0.t
 	vor.vv	v8, v10, v8
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v12, 0
 	lui	a0, 921600
 	addi	a0, a0, -1026
-	vmv.v.x	v12, a0
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv.v.x	v14, a0
+	vmseq.vi	v0, v12, 0
 	lui	a0, 786432
-	vmerge.vxm	v12, v12, a0, v0
+	vmerge.vxm	v12, v14, a0, v0
 	lui	a0, 851968
 	vandn.vx	v10, v10, a0
 	vor.vv	v10, v12, v10

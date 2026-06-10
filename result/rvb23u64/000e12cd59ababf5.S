@@ -15,10 +15,10 @@ func0000000000000006:
 	ret
 
 func0000000000000005:
-	addi	a1, a0, -10
-	addi	a0, a0, -9
-	czero.eqz	a0, a0, a1
 	li	a1, -9
+	addi	a2, a0, -10
+	addi	a0, a0, -9
+	czero.eqz	a0, a0, a2
 	sub	a0, a1, a0
 	ret
 

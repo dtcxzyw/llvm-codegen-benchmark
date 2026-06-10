@@ -75,8 +75,8 @@ func0000000000000028:
 
 func0000000000000001:
 	addiw	a1, a1, -2
-	lui	a2, 16
 	snez	a1, a1
+	lui	a2, 16
 	addi	a1, a1, -1
 	addi	a2, a2, -2
 	and	a1, a1, a2

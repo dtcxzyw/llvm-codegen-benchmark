@@ -19,8 +19,8 @@ func0000000000000010:
 	ret
 
 func000000000000003c:
-	addi	a2, a2, 63
 	bseti	a3, zero, 34
+	addi	a2, a2, 63
 	addi	a3, a3, -64
 	and	a2, a2, a3
 	sub	a0, a1, a0

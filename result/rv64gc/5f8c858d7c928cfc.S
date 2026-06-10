@@ -1,10 +1,10 @@
 func0000000000000001:
+	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a3, a1
-	andi	a1, a2, -64
-	bltu	a3, a0, .LBB0_2
-	mv	a0, a3
+	andi	a2, a2, -64
+	bltu	a1, a0, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

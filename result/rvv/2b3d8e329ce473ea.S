@@ -17,14 +17,14 @@ func0000000000000086:
 
 func0000000000000208:
 	li	a0, 80
-	lui	a1, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v12, a0
-	addi	a0, a1, 32
 	vmerge.vvm	v8, v10, v8, v0
-	vadd.vx	v8, v8, a0
-	addi	a1, a1, 16
-	vmsltu.vx	v0, v8, a1
+	lui	a0, 524288
+	addi	a1, a0, 32
+	vadd.vx	v8, v8, a1
+	addi	a0, a0, 16
+	vmsltu.vx	v0, v8, a0
 	ret
 
 func0000000000000081:
@@ -39,8 +39,8 @@ func0000000000000084:
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v0, v12, a0
-	li	a0, -32
 	vmerge.vvm	v8, v10, v8, v0
+	li	a0, -32
 	vadd.vx	v8, v8, a0
 	li	a0, 95
 	vmsltu.vx	v0, v8, a0
@@ -58,8 +58,8 @@ func0000000000000304:
 	li	a0, 69
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v0, v12, a0
-	li	a0, -2038
 	vmerge.vvm	v8, v10, v8, v0
+	li	a0, -2038
 	vadd.vx	v8, v8, a0
 	li	a0, -68
 	vmsltu.vx	v0, v8, a0

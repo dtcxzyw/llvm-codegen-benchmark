@@ -31,8 +31,8 @@ func000000000000007f:
 
 func000000000000004e:
 	andi	a1, a1, 247
-	slli	a0, a0, 25
 	slli	a1, a1, 21
+	slli	a0, a0, 25
 	or	a0, a0, a1
 	lui	a1, 519680
 	orn	a0, a0, a1
@@ -40,8 +40,8 @@ func000000000000004e:
 
 func000000000000007b:
 	andi	a1, a1, 247
-	slliw	a0, a0, 25
 	slli	a1, a1, 21
+	slliw	a0, a0, 25
 	or	a0, a0, a1
 	lui	a1, 1043968
 	orn	a0, a0, a1
@@ -58,11 +58,11 @@ func000000000000000c:
 
 func0000000000000030:
 	zext.b	a1, a1
-	slli	a0, a0, 8
 	slli	a1, a1, 15
+	slli	a0, a0, 8
+	lui	a2, 786432
 	or	a0, a0, a1
-	lui	a1, 786432
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	or	a0, a0, a1
 	ret
 

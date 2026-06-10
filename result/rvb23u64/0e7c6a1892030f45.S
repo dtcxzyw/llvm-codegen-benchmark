@@ -6,10 +6,10 @@ func0000000000000025:
 
 func000000000000000f:
 	zext.w	a0, a0
+	lui	a2, 512
 	add.uw	a0, a1, a0
-	lui	a1, 512
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	ret
 
 func000000000000001f:
@@ -52,9 +52,9 @@ func0000000000000015:
 
 func000000000000002d:
 	sext.w	a1, a1
+	li	a2, -179
 	add.uw	a0, a0, a1
-	li	a1, -179
-	zext.w	a1, a1
-	sub	a0, a0, a1
+	zext.w	a2, a2
+	sub	a0, a0, a2
 	ret
 

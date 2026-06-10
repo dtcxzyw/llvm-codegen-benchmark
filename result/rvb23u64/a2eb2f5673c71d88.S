@@ -12,10 +12,10 @@ func000000000000000a:
 	ret
 
 func000000000000006f:
-	addi	a0, a0, 12
 	lui	a1, 699051
 	addi	a1, a1, -1365
 	slli	a2, a1, 32
+	addi	a0, a0, 12
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
@@ -25,10 +25,10 @@ func000000000000006f:
 	ret
 
 func000000000000006d:
-	addi	a0, a0, 12
 	lui	a1, 699051
 	addi	a1, a1, -1365
 	slli	a2, a1, 32
+	addi	a0, a0, 12
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 4
@@ -43,17 +43,17 @@ func000000000000006d:
 .LCPI3_1:
 	.quad	-6313183731941900
 func000000000000000d:
-	lui	a1, 1048340
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
-	addi	a1, a1, -1077
-	srli	a1, a1, 1
-	sub	a0, a0, a1
-	mulhu	a0, a0, a2
-	lui	a1, %hi(.LCPI3_1)
-	ld	a1, %lo(.LCPI3_1)(a1)
+	lui	a1, %hi(.LCPI3_0)
+	lui	a2, 1048340
+	ld	a1, %lo(.LCPI3_0)(a1)
+	addi	a2, a2, -1077
+	srli	a2, a2, 1
+	sub	a0, a0, a2
+	mulhu	a0, a0, a1
 	srli	a0, a0, 15
+	lui	a1, %hi(.LCPI3_1)
 	sh2add	a0, a0, a0
+	ld	a1, %lo(.LCPI3_1)(a1)
 	sh2add	a0, a0, a0
 	sh2add	a0, a0, a1
 	ret

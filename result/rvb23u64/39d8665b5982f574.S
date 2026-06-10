@@ -1,6 +1,6 @@
 func0000000000000030:
-	addi	a2, a2, 127
 	bseti	a3, zero, 36
+	addi	a2, a2, 127
 	addi	a3, a3, -128
 	and	a2, a2, a3
 	mul	a1, a1, a2

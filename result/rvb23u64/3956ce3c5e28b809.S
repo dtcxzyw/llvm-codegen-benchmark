@@ -41,8 +41,8 @@ func0000000000000028:
 	ret
 
 func0000000000000306:
-	sltu	a1, a1, a0
 	lui	a2, 262144
+	sltu	a1, a1, a0
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -60,10 +60,10 @@ func0000000000000104:
 	ret
 
 func0000000000000088:
-	sltu	a1, a0, a1
-	srli	a0, a0, 8
-	sltiu	a0, a0, 31
-	andn	a0, a1, a0
+	srli	a2, a0, 8
+	sltu	a0, a0, a1
+	sltiu	a1, a2, 31
+	andn	a0, a0, a1
 	ret
 
 func000000000000008a:

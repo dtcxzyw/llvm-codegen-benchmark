@@ -5,15 +5,15 @@ func00000000000000ff:
 	ret
 
 func0000000000000054:
-	add	a0, a0, a2
 	slli	a1, a1, 5
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret
 
 func0000000000000010:
-	add	a0, a0, a2
 	slli	a1, a1, 4
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, 20
 	ret
@@ -25,8 +25,8 @@ func00000000000000f0:
 	ret
 
 func0000000000000075:
-	add	a0, a0, a2
 	slli	a1, a1, 4
+	add	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	ret

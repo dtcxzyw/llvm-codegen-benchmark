@@ -1,6 +1,6 @@
 func0000000000000004:
-	andi	a0, a0, 1
 	fmv.w.x	fa5, zero
+	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	fmv.s	fa0, fa5
 .LBB0_2:
@@ -31,10 +31,10 @@ func0000000000000002:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, 1
 	lui	a1, 522240
 	addi	a1, a1, -1
 	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	beqz	a0, .LBB3_3
 	feq.s	a0, fa0, fa5
 	bnez	a0, .LBB3_4

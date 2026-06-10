@@ -1,8 +1,8 @@
 func0000000000000014:
 	fmv.x.w	a1, fa0
-	lui	a2, 231424
 	srliw	a1, a1, 23
 	sltiu	a1, a1, 113
+	lui	a2, 231424
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

@@ -6,8 +6,8 @@ func0000000000000005:
 	ret
 
 func000000000000001f:
-	zext.b	a0, a0
 	li	a1, 8
+	zext.b	a0, a0
 	sub	a1, a1, a0
 	bset	a0, zero, a1
 	ret
@@ -20,8 +20,8 @@ func000000000000000d:
 	ret
 
 func0000000000000006:
-	zext.b	a0, a0
 	li	a1, 32
+	zext.b	a0, a0
 	sub	a1, a1, a0
 	bset	a0, zero, a1
 	ret
@@ -34,15 +34,15 @@ func000000000000001d:
 	ret
 
 func0000000000000007:
-	zext.b	a0, a0
 	li	a1, 16
+	zext.b	a0, a0
 	sub	a1, a1, a0
 	bset	a0, zero, a1
 	ret
 
 func000000000000000c:
-	neg	a0, a0
 	lui	a1, 1044480
+	neg	a0, a0
 	sllw	a0, a1, a0
 	ret
 

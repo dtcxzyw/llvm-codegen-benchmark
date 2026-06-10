@@ -3,13 +3,13 @@ func0000000000000005:
 	li	a3, 11
 	beq	a2, a3, .LBB0_2
 	li	a2, 208
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB0_2:
 	li	a2, 192
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000007:
@@ -19,8 +19,8 @@ func0000000000000007:
 	beq	a3, a4, .LBB1_2
 	lui	a2, 786432
 .LBB1_2:
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000004:
@@ -28,14 +28,14 @@ func0000000000000004:
 	li	a3, 2
 	beq	a2, a3, .LBB2_2
 	li	a2, 992
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 .LBB2_2:
 	lui	a2, 524288
 	addi	a2, a2, 992
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000006:
@@ -45,8 +45,8 @@ func0000000000000006:
 	beq	a3, a4, .LBB3_2
 	lui	a2, 516
 .LBB3_2:
+	or	a1, a1, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	ret
 
 func0000000000000033:

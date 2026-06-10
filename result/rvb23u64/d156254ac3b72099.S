@@ -18,14 +18,14 @@ func0000000000000001:
 	ret
 
 func000000000000001f:
-	neg	a0, a0
 	li	a1, 32
+	neg	a0, a0
 	sll	a0, a1, a0
 	ret
 
 func000000000000000d:
-	not	a0, a0
 	li	a1, -1
+	not	a0, a0
 	sll	a0, a1, a0
 	ret
 

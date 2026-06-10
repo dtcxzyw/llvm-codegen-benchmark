@@ -1,8 +1,8 @@
 func0000000000000081:
-	sext.w	a2, a0
-	add	a0, a0, a1
-	andi	a0, a0, 63
-	xor	a0, a0, a2
+	add	a1, a1, a0
+	sext.w	a0, a0
+	andi	a1, a1, 63
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 

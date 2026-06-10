@@ -1,8 +1,8 @@
 func000000000000018e:
 	fmv.d.x	fa5, zero
-	fle.d	a1, fa5, fa1
-	feq.d	a2, fa0, fa5
-	not	a2, a2
+	feq.d	a1, fa0, fa5
+	fle.d	a2, fa5, fa1
+	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

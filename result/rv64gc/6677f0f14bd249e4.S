@@ -1,25 +1,25 @@
 func0000000000000014:
-	sext.w	a1, a0
-	li	a2, 48
-	bgeu	a1, a2, .LBB0_2
+	li	a1, 48
+	sext.w	a2, a0
+	bgeu	a2, a1, .LBB0_2
 	andi	a0, a0, 15
 .LBB0_2:
 	ret
 
 func0000000000000008:
-	sext.w	a1, a0
-	lui	a2, 1048320
-	addi	a2, a2, -1
-	bgeu	a2, a1, .LBB1_2
+	lui	a1, 1048320
+	sext.w	a2, a0
+	addi	a1, a1, -1
+	bgeu	a1, a2, .LBB1_2
 	slli	a0, a0, 44
 	srli	a0, a0, 44
 .LBB1_2:
 	ret
 
 func0000000000000018:
-	srliw	a1, a0, 10
-	li	a2, 2
-	bgeu	a2, a1, .LBB2_2
+	li	a1, 2
+	srliw	a2, a0, 10
+	bgeu	a1, a2, .LBB2_2
 	lui	a1, 1
 	addi	a1, a1, -8
 	and	a0, a0, a1

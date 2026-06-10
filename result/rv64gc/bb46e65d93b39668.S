@@ -16,27 +16,27 @@ func0000000000000017:
 	ret
 
 func000000000000000f:
+	li	a3, 1
 	sub	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 32
 	srli	a1, a1, 4
-	slli	a2, a2, 32
-	addi	a2, a2, -2
-	add	a1, a1, a2
-	addi	a2, a2, 1
-	and	a1, a1, a2
+	addi	a3, a3, -2
+	add	a1, a1, a3
+	addi	a3, a3, 1
+	and	a1, a1, a3
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
 
 func000000000000001b:
+	li	a3, 1
 	sub	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 32
 	srli	a1, a1, 1
-	slli	a2, a2, 32
-	addi	a2, a2, -2
-	add	a1, a1, a2
-	addi	a2, a2, 1
-	and	a1, a1, a2
+	addi	a3, a3, -2
+	add	a1, a1, a3
+	addi	a3, a3, 1
+	and	a1, a1, a3
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	ret

@@ -9,8 +9,8 @@ func0000000000000002:
 	ret
 
 func0000000000000030:
-	andi	a0, a0, 1
 	srliw	a1, a1, 7
+	andi	a0, a0, 1
 	sltiu	a1, a1, 675
 	xori	a1, a1, 1
 	addi	a0, a0, -1

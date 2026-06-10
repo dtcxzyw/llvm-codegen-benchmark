@@ -56,9 +56,9 @@ func0000000000000054:
 
 func0000000000000114:
 	lui	a2, 262144
-	slli	a0, a0, 32
 	addi	a2, a2, -1
 	add	a1, a1, a2
+	slli	a0, a0, 32
 	srli	a1, a1, 30
 	srli	a0, a0, 32
 	sltu	a0, a1, a0

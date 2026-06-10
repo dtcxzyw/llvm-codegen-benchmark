@@ -1,6 +1,6 @@
 func0000000000000318:
-	snez	a2, a2
 	addi	a1, a1, -27
+	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -9,10 +9,10 @@ func0000000000000318:
 func0000000000000118:
 	li	a3, -1
 	slli	a3, a3, 63
-	addi	a4, a3, 2
-	addi	a3, a3, 3
-	sltu	a2, a2, a4
-	xor	a1, a1, a3
+	addi	a4, a3, 3
+	addi	a3, a3, 2
+	xor	a1, a1, a4
+	sltu	a2, a2, a3
 	snez	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -42,10 +42,10 @@ func0000000000000042:
 	ret
 
 func0000000000000310:
-	snez	a2, a2
 	li	a3, -3
 	slli	a3, a3, 48
 	addi	a3, a3, -1
+	snez	a2, a2
 	sltu	a1, a3, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -63,8 +63,8 @@ func0000000000000314:
 	ret
 
 func0000000000000114:
-	sltiu	a2, a2, 17
 	srli	a1, a1, 63
+	sltiu	a2, a2, 17
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -79,8 +79,8 @@ func0000000000000294:
 	ret
 
 func0000000000000528:
-	sltiu	a2, a2, 100
 	srli	a1, a1, 4
+	sltiu	a2, a2, 100
 	sltiu	a1, a1, 1875
 	and	a1, a1, a2
 	or	a0, a0, a1

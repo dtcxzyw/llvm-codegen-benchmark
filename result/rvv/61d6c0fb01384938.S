@@ -1,7 +1,7 @@
 func00000000000000a8:
+	li	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 1
 	vsra.vi	v10, v10, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.vx	v12, v8, a0
@@ -10,9 +10,9 @@ func00000000000000a8:
 	ret
 
 func00000000000000a4:
+	li	a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	li	a0, 1
 	vsra.vi	v10, v10, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.vx	v12, v8, a0

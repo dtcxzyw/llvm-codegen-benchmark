@@ -3,9 +3,9 @@ func0000000000000408:
 	bltu	a3, a2, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, 1808
+	addi	a1, a2, 1808
 	sltu	a0, a1, a0
 	ret
 
@@ -30,18 +30,17 @@ func00000000000000a1:
 	ret
 
 .LCPI3_0:
+	.quad	1000000000000000000
+.LCPI3_1:
 	.quad	5000000000000000000
 func0000000000000208:
-	lui	a3, 227374
-	addi	a3, a3, -1329
-	slli	a3, a3, 12
-	addi	a3, a3, -1575
-	slli	a3, a3, 18
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
 	bltu	a2, a3, .LBB3_2
 	mv	a1, a2
 .LBB3_2:
-	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
+	lui	a2, %hi(.LCPI3_1)
+	ld	a2, %lo(.LCPI3_1)(a2)
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
@@ -50,9 +49,9 @@ func000000000000032a:
 	bltz	a2, .LBB4_2
 	mv	a1, a2
 .LBB4_2:
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 575
+	addi	a1, a2, 575
 	slt	a0, a1, a0
 	ret
 
@@ -83,9 +82,9 @@ func0000000000000338:
 	bltz	a2, .LBB7_2
 	mv	a1, a2
 .LBB7_2:
+	lui	a2, 36
 	add	a0, a0, a1
-	lui	a1, 36
-	addi	a1, a1, -1359
+	addi	a1, a2, -1359
 	sltu	a0, a1, a0
 	ret
 

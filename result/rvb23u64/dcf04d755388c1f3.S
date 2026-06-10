@@ -10,17 +10,17 @@ func0000000000000042:
 	sext.w	a2, a2
 	sext.w	a0, a0
 	slli	a2, a2, 7
-	add	a1, a1, a2
 	sh1add	a0, a0, a0
+	add	a1, a1, a2
 	sh3add	a0, a0, a1
 	addi	a0, a0, -120
 	ret
 
 func000000000000003e:
-	sext.w	a0, a0
 	slli.uw	a2, a2, 3
 	sh2add	a3, a2, a2
 	sh1add	a2, a3, a2
+	sext.w	a0, a0
 	add	a1, a1, a2
 	sh2add	a0, a0, a1
 	addi	a0, a0, 52

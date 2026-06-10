@@ -1,7 +1,7 @@
 func00000000000001c8:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfne.vv	v10, v12, v16
-	fmv.d.x	fa5, zero
 	vmflt.vf	v11, v12, fa5
 	vmand.mm	v0, v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -11,9 +11,9 @@ func00000000000001c8:
 	ret
 
 func00000000000001c9:
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfne.vv	v10, v12, v16
-	fmv.d.x	fa5, zero
 	vmflt.vf	v11, v12, fa5
 	vmand.mm	v0, v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma

@@ -1,7 +1,7 @@
 func0000000000000000:
 	slli	a2, a2, 63
-	slli	a1, a1, 3
 	srai	a2, a2, 63
+	slli	a1, a1, 3
 	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -9,8 +9,8 @@ func0000000000000000:
 
 func000000000000000a:
 	slli	a2, a2, 63
-	slli	a1, a1, 3
 	srai	a2, a2, 63
+	slli	a1, a1, 3
 	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -64,20 +64,20 @@ func000000000000000c:
 	bnez	a2, .LBB5_2
 	li	a2, 8
 	slli	a1, a1, 3
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 .LBB5_2:
 	li	a2, -8
 	slli	a1, a1, 3
-	add	a0, a0, a1
 	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func000000000000000e:
 	slli	a2, a2, 63
-	slli	a1, a1, 3
 	srai	a2, a2, 63
+	slli	a1, a1, 3
 	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -85,8 +85,8 @@ func000000000000000e:
 
 func0000000000000008:
 	andi	a2, a2, 1
-	slli	a1, a1, 3
 	addi	a2, a2, -1
+	slli	a1, a1, 3
 	andi	a2, a2, 8
 	add	a0, a0, a1
 	add	a0, a0, a2

@@ -19,8 +19,8 @@ func0000000000000000:
 	lui	a0, 175448
 	addi	a0, a0, 43
 	vmulhu.vx	v8, v10, a0
-	lui	a0, 16
 	vsrl.vi	v8, v8, 8
+	lui	a0, 16
 	addi	a0, a0, -12
 	vmul.vx	v8, v8, a0
 	ret

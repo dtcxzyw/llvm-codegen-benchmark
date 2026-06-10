@@ -4,9 +4,9 @@ func0000000000000037:
 	addi	a2, a2, -1365
 	addi	a3, a3, 1365
 	slli	a4, a2, 32
+	slli	a5, a3, 32
 	add	a2, a2, a4
-	slli	a4, a3, 32
-	add	a3, a3, a4
+	add	a3, a3, a5
 	srai	a1, a1, 4
 	srai	a0, a0, 3
 	mul	a1, a1, a2
@@ -21,9 +21,9 @@ func0000000000000035:
 	addi	a2, a2, -1365
 	addi	a3, a3, 1365
 	slli	a4, a2, 32
+	slli	a5, a3, 32
 	add	a2, a2, a4
-	slli	a4, a3, 32
-	add	a3, a3, a4
+	add	a3, a3, a5
 	srai	a1, a1, 3
 	srai	a0, a0, 3
 	mul	a1, a1, a2

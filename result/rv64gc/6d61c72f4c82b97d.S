@@ -7,40 +7,40 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	addi	a2, a2, -40
 	slli	a1, a1, 63
+	addi	a2, a2, -40
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000c:
-	addi	a2, a2, 1
 	slli	a1, a1, 63
+	addi	a2, a2, 1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000007:
-	addi	a2, a2, -1
 	slli	a1, a1, 63
+	addi	a2, a2, -1
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func0000000000000005:
-	addi	a2, a2, -365
 	slli	a1, a1, 63
+	addi	a2, a2, -365
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 
 func000000000000000d:
-	addi	a2, a2, 12
 	slli	a1, a1, 63
+	addi	a2, a2, 12
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	add	a0, a0, a1

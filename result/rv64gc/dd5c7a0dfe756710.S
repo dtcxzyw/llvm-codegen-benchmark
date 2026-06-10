@@ -8,10 +8,10 @@ func000000000000002c:
 
 func000000000000018c:
 	lui	a3, 16
-	snez	a1, a1
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
+	snez	a1, a1
 	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

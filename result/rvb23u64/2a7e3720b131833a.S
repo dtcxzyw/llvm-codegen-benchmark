@@ -13,19 +13,19 @@ func0000000000000000:
 	ret
 
 func000000000000007b:
+	lui	a3, 1048574
 	add	a1, a1, a2
-	lui	a2, 1048574
-	srli	a2, a2, 12
-	add	a1, a1, a2
+	srli	a3, a3, 12
+	add	a1, a1, a3
 	srli	a1, a1, 51
 	add	a0, a0, a1
 	ret
 
 func000000000000003b:
+	lui	a3, 1048538
 	add	a1, a1, a2
-	lui	a2, 1048538
-	srli	a2, a2, 12
-	add	a1, a1, a2
+	srli	a3, a3, 12
+	add	a1, a1, a3
 	srli	a1, a1, 51
 	add	a0, a0, a1
 	ret

@@ -31,9 +31,9 @@ func00000000000007f4:
 	ret
 
 func000000000000020a:
+	li	a0, -30
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v12, v10
-	li	a0, -30
 	vadd.vx	v10, v10, a0
 	vsll.vi	v8, v8, 2
 	vmslt.vv	v0, v10, v8

@@ -1,23 +1,23 @@
 func0000000000000002:
 	li	a1, -57
+	lui	a2, 134
 	slli	a1, a1, 54
+	addi	a2, a2, -323
 	add	a0, a0, a1
-	lui	a1, 134
-	addi	a1, a1, -323
-	slli	a1, a1, 12
+	slli	a2, a2, 12
 	srli	a0, a0, 32
-	addi	a1, a1, -1401
+	addi	a1, a2, -1401
 	mul	a0, a0, a1
 	ret
 
 func0000000000000000:
 	li	a1, -57
 	slli	a1, a1, 54
+	lui	a2, 967569
 	add	a0, a0, a1
-	lui	a1, 967569
-	slli	a1, a1, 3
+	slli	a2, a2, 3
 	srli	a0, a0, 32
-	addi	a1, a1, 1615
+	addi	a1, a2, 1615
 	mul	a0, a0, a1
 	ret
 
@@ -60,9 +60,9 @@ func0000000000000003:
 
 func000000000000000b:
 	addi	a0, a0, -36
-	andi	a1, a0, -4
-	slli	a0, a0, 2
-	andi	a0, a0, -16
+	slli	a1, a0, 2
+	andi	a0, a0, -4
+	andi	a1, a1, -16
 	add	a0, a0, a1
 	ret
 

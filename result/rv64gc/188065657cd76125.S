@@ -10,8 +10,8 @@ func000000000000004a:
 	lui	a1, 8
 	add	a0, a0, a1
 	lui	a1, 16
-	addi	a1, a1, -255
 	srliw	a0, a0, 16
+	addi	a1, a1, -255
 	mul	a0, a0, a1
 	lui	a1, 2048
 	addw	a0, a0, a1

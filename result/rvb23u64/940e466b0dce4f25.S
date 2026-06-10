@@ -45,8 +45,8 @@ func0000000000000d61:
 func0000000000000434:
 	sext.w	a1, a1
 	addiw	a2, a2, -1
-	srli	a0, a0, 32
 	xor	a1, a1, a2
+	srli	a0, a0, 32
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -57,10 +57,10 @@ func0000000000000434:
 func000000000000054c:
 	lui	a3, %hi(.LCPI6_0)
 	ld	a3, %lo(.LCPI6_0)(a3)
+	xor	a0, a0, a3
 	sext.w	a1, a1
 	addiw	a2, a2, -48
 	slt	a1, a1, a2
-	xor	a0, a0, a3
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

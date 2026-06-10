@@ -40,8 +40,8 @@ func000000000000006f:
 
 func0000000000000010:
 	lui	a3, 524288
-	sext.w	a0, a0
 	addi	a3, a3, -1
+	sext.w	a0, a0
 	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

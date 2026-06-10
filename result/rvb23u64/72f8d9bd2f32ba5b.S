@@ -11,8 +11,8 @@ func0000000000000310:
 func0000000000000302:
 	sext.w	a2, a2
 	lui	a3, 272
-	seqz	a0, a0
 	xor	a2, a2, a3
+	seqz	a0, a0
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

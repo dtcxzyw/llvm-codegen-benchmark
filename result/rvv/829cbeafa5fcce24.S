@@ -31,9 +31,9 @@ func00000000000001a4:
 	ret
 
 func0000000000000164:
+	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 2
-	li	a0, 32
 	vsra.vx	v10, v10, a0
 	vsub.vv	v10, v10, v12
 	vmsltu.vv	v0, v8, v10

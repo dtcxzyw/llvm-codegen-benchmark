@@ -1,7 +1,7 @@
 func000000000000014a:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	vmv.v.i	v12, 1
+	vsra.vi	v10, v10, 3
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	slli	a1, a0, 32

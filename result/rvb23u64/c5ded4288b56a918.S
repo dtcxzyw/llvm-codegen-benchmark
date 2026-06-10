@@ -1,6 +1,6 @@
 func0000000000000007:
-	addi	a0, a0, 63
 	lui	a1, 1048544
+	addi	a0, a0, 63
 	srli	a1, a1, 11
 	and	a0, a0, a1
 	addi	a0, a0, 5
@@ -19,8 +19,8 @@ func0000000000000003:
 	ret
 
 func0000000000000005:
-	addi	a0, a0, 1
 	li	a1, 3
+	addi	a0, a0, 1
 	slli	a1, a1, 32
 	add.uw	a0, a0, a1
 	ret

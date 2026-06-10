@@ -1,8 +1,8 @@
 func0000000000000014:
+	li	a2, -3
 	sub	a1, a1, a0
-	li	a0, -3
-	srli	a0, a0, 1
-	xor	a0, a0, a1
-	sltiu	a0, a0, 2
+	srli	a2, a2, 1
+	xor	a1, a1, a2
+	sltiu	a0, a1, 2
 	ret
 

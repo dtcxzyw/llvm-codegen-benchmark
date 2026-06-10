@@ -17,9 +17,9 @@ func0000000000000404:
 	ret
 
 func0000000000000604:
+	li	a0, 128
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	li	a0, 128
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8
@@ -53,9 +53,9 @@ func0000000000000620:
 	ret
 
 func0000000000000204:
+	li	a0, 66
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsleu.vi	v12, v10, 1
-	li	a0, 66
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8

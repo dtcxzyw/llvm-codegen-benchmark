@@ -44,16 +44,15 @@ func0000000000000008:
 	sltu	a0, a1, a0
 	ret
 
+.LCPI5_0:
+	.quad	100000000000000000
 func0000000000000028:
 	andi	a0, a0, 1
 	bnez	a0, .LBB5_2
 	mv	a1, a2
 .LBB5_2:
-	lui	a0, 45475
-	addi	a0, a0, -1085
-	slli	a0, a0, 12
-	addi	a0, a0, -315
-	slli	a0, a0, 17
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
 	sltu	a0, a1, a0
 	ret
 

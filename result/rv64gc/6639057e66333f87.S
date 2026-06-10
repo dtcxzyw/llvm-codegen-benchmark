@@ -4,8 +4,8 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	addi	a0, a0, -8
 	lui	a1, 1048448
+	addi	a0, a0, -8
 	and	a0, a0, a1
 	ret
 

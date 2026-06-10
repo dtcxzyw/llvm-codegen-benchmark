@@ -1,8 +1,8 @@
 func0000000000000061:
 	addi	a1, a1, 6
+	lui	a2, 1048569
 	xor	a0, a0, a1
-	lui	a1, 1048569
-	addi	a1, a1, -256
+	addi	a1, a2, -256
 	czero.eqz	a0, a1, a0
 	ret
 

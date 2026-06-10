@@ -109,9 +109,9 @@ func0000000000000008:
 
 func000000000000001d:
 	li	a0, 32
-	lui	a1, 1806
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
+	lui	a1, 1806
 	addi	a1, a1, -1401
 	slli	a1, a1, 39
 	vadd.vx	v8, v8, a1

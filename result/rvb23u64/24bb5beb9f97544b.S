@@ -1,8 +1,8 @@
 func00000000000000c2:
-	andi	a0, a0, 1
 	lui	a1, 522240
 	addi	a1, a1, -1
 	fmv.w.x	fa5, a1
+	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	fmv.w.x	fa4, zero
 	fle.s	a0, fa4, fa1

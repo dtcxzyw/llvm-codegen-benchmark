@@ -6,10 +6,10 @@ func00000000000000c1:
 	ret
 
 func00000000000001c1:
-	addi	a1, a1, -64
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -64
+	addi	a1, a1, -64
 	addi	a2, a2, 63
 	and	a1, a1, a2
 	srl	a0, a0, a1
@@ -37,10 +37,10 @@ func000000000000004c:
 	ret
 
 func00000000000001cc:
-	addi	a1, a1, -65
 	li	a2, 1
 	slli	a2, a2, 32
 	addi	a2, a2, -65
+	addi	a1, a1, -65
 	addi	a2, a2, 64
 	and	a1, a1, a2
 	srl	a0, a0, a1

@@ -29,9 +29,9 @@ func0000000000000014:
 	ret
 
 func000000000000001e:
+	lui	a0, 209715
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 209715
 	addi	a0, a0, 819
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -41,9 +41,9 @@ func000000000000001e:
 	ret
 
 func0000000000000016:
+	lui	a0, 209715
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	lui	a0, 209715
 	addi	a0, a0, 819
 	slli	a1, a0, 32
 	add	a0, a0, a1

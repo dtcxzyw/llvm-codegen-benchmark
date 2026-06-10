@@ -156,8 +156,8 @@ func00000000000006aa:
 	ret
 
 func00000000000004a1:
-	sext.w	a0, a0
 	add	a1, a1, a2
+	sext.w	a0, a0
 	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -3,9 +3,9 @@ func00000000000000c4:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
 	fli.s	fa5, 128.0
-	lui	a0, 274400
 	fneg.s	fa5, fa5
 	vfmax.vf	v8, v8, fa5
+	lui	a0, 274400
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -27,8 +27,8 @@ func0000000000000022:
 	vfadd.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero
 	lui	a0, 778480
-	addi	a0, a0, -1482
 	vfmin.vf	v8, v8, fa5
+	addi	a0, a0, -1482
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret

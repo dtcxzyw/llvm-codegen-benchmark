@@ -6,9 +6,9 @@ func00000000000004a6:
 	ret
 
 func00000000000000aa:
+	lui	a3, 1048400
 	addw	a1, a1, a2
-	lui	a2, 1048400
-	addi	a2, a2, 1427
+	addi	a2, a3, 1427
 	blt	a2, a1, .LBB1_2
 	lui	a0, 140
 	addi	a0, a0, -68

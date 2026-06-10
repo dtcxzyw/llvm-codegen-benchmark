@@ -1,7 +1,7 @@
 func0000000000000108:
+	bset	a1, zero, a1
 	subw	a2, a2, a0
-	bset	a0, zero, a1
-	sext.w	a0, a0
-	sltu	a0, a0, a2
+	sext.w	a1, a1
+	sltu	a0, a1, a2
 	ret
 

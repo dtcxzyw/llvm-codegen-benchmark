@@ -1,8 +1,8 @@
 func0000000000000130:
 	sext.w	a2, a2
 	li	a3, 568
-	slli	a0, a0, 5
 	mul	a2, a2, a3
+	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 56
@@ -19,8 +19,8 @@ func00000000000001ff:
 
 func0000000000000033:
 	slli.uw	a2, a2, 5
-	slli	a0, a0, 4
 	sh1add	a2, a2, a2
+	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 40

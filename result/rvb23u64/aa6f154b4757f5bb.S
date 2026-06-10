@@ -8,9 +8,9 @@ func000000000000001f:
 func0000000000000010:
 	srli	a1, a1, 3
 	andi	a1, a1, 508
+	lui	a2, 5
 	add	a0, a0, a1
-	lui	a1, 5
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	add	a0, a0, a1
 	ret
 

@@ -2,9 +2,9 @@ func0000000000000002:
 	lui	a2, 6
 	addi	a2, a2, -983
 	mul	a1, a1, a2
-	slli	a2, a1, 12
-	slli	a1, a1, 48
-	srli	a1, a1, 52
+	slli	a2, a1, 48
+	slli	a1, a1, 12
+	srli	a2, a2, 52
 	or	a1, a1, a2
 	zext.h	a1, a1
 	sltiu	a1, a1, 164
@@ -15,9 +15,9 @@ func0000000000000018:
 	lui	a2, 6
 	addi	a2, a2, -983
 	mul	a1, a1, a2
-	slli	a2, a1, 14
-	slli	a1, a1, 48
-	srli	a1, a1, 50
+	slli	a2, a1, 48
+	slli	a1, a1, 14
+	srli	a2, a2, 50
 	or	a1, a1, a2
 	zext.h	a1, a1
 	sltiu	a1, a1, 656

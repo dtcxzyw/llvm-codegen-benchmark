@@ -43,9 +43,9 @@ func000000000000005b:
 func000000000000000b:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
+	lui	a3, 1
 	sub	a2, a2, a1
-	lui	a1, 1
-	addi	a1, a1, -1064
+	addi	a1, a3, -1064
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, 24

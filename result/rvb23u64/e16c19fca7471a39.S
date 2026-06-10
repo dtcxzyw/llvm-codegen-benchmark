@@ -1,8 +1,8 @@
 func000000000000005e:
+	li	a3, 1065
 	add	a0, a0, a1
 	add	a0, a0, a2
-	li	a1, 1065
-	sh2add	a0, a1, a0
+	sh2add	a0, a3, a0
 	ret
 
 func00000000000000fe:

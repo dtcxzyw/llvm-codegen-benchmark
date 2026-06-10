@@ -11,12 +11,11 @@ func0000000000000003:
 	vadd.vv	v8, v10, v10
 	ret
 
+.LCPI1_0:
+	.quad	18032007892189201
 func0000000000000000:
-	lui	a0, 4100
-	addi	a0, a0, 17
-	bseti	a0, a0, 34
-	bseti	a0, a0, 44
-	bseti	a0, a0, 54
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10

@@ -9,8 +9,8 @@ func0000000000000005:
 	ret
 
 func000000000000000e:
-	srliw	a0, a0, 10
 	li	a1, -1288
+	srliw	a0, a0, 10
 	sh3add	a0, a1, a0
 	ret
 

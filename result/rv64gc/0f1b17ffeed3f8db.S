@@ -10,14 +10,14 @@ func0000000000000004:
 	andi	a2, a2, 1
 	bnez	a2, .LBB1_2
 	li	a2, -9
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	sltiu	a0, a0, 7
 	ret
 .LBB1_2:
 	li	a2, -7
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a1, a1, a2
+	addw	a0, a0, a1
 	sltiu	a0, a0, 7
 	ret
 

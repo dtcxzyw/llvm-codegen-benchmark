@@ -89,9 +89,9 @@ func00000000000000c8:
 	ret
 
 func0000000000000084:
+	li	a0, 100
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v9, 0
-	li	a0, 100
 	vmerge.vxm	v8, v8, a0, v0
 	vnsrl.wi	v9, v10, 0
 	vmsltu.vv	v0, v8, v9

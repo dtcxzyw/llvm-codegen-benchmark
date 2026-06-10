@@ -8,11 +8,11 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v8, v8, 2
 	lui	a0, 8
 	addi	a0, a0, -1
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsrl.vi	v8, v8, 2
 	lui	a0, 4
 	addi	a0, a0, -1
 	vmerge.vxm	v10, v10, a0, v0
@@ -20,11 +20,11 @@ func0000000000000003:
 	ret
 
 func0000000000000006:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v8, v8, 1
 	lui	a0, 5859
 	addi	a0, a0, 1536
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsrl.vi	v8, v8, 1
 	lui	a0, 32959
 	addi	a0, a0, -64
 	vmerge.vxm	v10, v10, a0, v0
@@ -32,20 +32,20 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v8, v8, 23
 	li	a0, -127
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsrl.vi	v8, v8, 23
 	li	a0, -111
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v8, v8, 1
 	li	a0, 193
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
+	vsrl.vi	v8, v8, 1
 	li	a0, 129
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8

@@ -18,8 +18,8 @@ func0000000000000021:
 	lui	a0, 15
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 14
 	vor.vv	v8, v8, v10
+	lui	a0, 14
 	addi	a0, a0, -1024
 	vmseq.vx	v0, v8, a0
 	ret
@@ -70,8 +70,8 @@ func0000000000000028:
 	addi	a0, a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 8192
 	vor.vv	v8, v8, v10
+	lui	a0, 8192
 	addi	a0, a0, -2
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -108,8 +108,8 @@ func000000000000002a:
 	li	a0, 63
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 272
 	vor.vv	v8, v10, v8
+	lui	a0, 272
 	addi	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret

@@ -1,6 +1,6 @@
 func0000000000000041:
-	slli	a1, a1, 48
 	lui	a2, 4
+	slli	a1, a1, 48
 	srai	a1, a1, 48
 	addi	a2, a2, -358
 	sub	a1, a2, a1
@@ -13,8 +13,8 @@ func0000000000000041:
 	ret
 
 func0000000000000046:
-	slli	a1, a1, 48
 	li	a2, 184
+	slli	a1, a1, 48
 	srai	a1, a1, 48
 	sub	a1, a2, a1
 	li	a2, 25

@@ -5,11 +5,11 @@ func000000000000003f:
 	ret
 
 func000000000000000c:
+	lui	a3, 1
 	add	a0, a0, a1
-	lui	a1, 1
 	add.uw	a0, a2, a0
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	addi	a3, a3, -1
+	add	a0, a0, a3
 	ret
 
 func0000000000000044:

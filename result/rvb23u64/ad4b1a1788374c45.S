@@ -29,8 +29,8 @@ func0000000000000008:
 	ret
 
 func000000000000000a:
-	addi	a0, a0, 64
 	li	a1, 191
+	addi	a0, a0, 64
 	mul	a0, a0, a1
 	addi	a0, a0, 64
 	ret

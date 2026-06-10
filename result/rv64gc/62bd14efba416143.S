@@ -6,19 +6,19 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	slli	a1, a0, 48
-	slli	a0, a0, 16
-	srli	a1, a1, 48
-	or	a0, a0, a1
 	lui	a1, 32272
+	slli	a2, a0, 48
+	srli	a2, a2, 48
+	slli	a0, a0, 16
+	or	a0, a0, a2
 	addi	a1, a1, -2017
 	and	a0, a0, a1
 	ret
 
 func0000000000000000:
-	slli	a0, a0, 48
 	lui	a1, 123768
 	addi	a1, a1, -1615
+	slli	a0, a0, 48
 	slli	a1, a1, 16
 	mulhu	a0, a0, a1
 	slli	a0, a0, 34

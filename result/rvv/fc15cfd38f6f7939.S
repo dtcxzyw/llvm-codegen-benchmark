@@ -1,13 +1,14 @@
 func0000000000000021:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vi	v12, v12, -5
 	lui	a0, 26
-	vmseq.vi	v0, v12, 0
 	addi	a0, a0, 1024
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v9, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vand.vi	v12, v12, -5
+	vmseq.vi	v0, v12, 0
 	lui	a0, 10
 	addi	a0, a0, 1024
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vxm	v9, v9, a0, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v10, 0

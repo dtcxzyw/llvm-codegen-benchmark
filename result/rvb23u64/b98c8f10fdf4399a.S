@@ -1,6 +1,6 @@
 func0000000000000001:
-	sext.w	a0, a0
 	addiw	a2, a2, -1
+	sext.w	a0, a0
 	minu	a0, a0, a2
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
@@ -8,8 +8,8 @@ func0000000000000001:
 	ret
 
 func0000000000000009:
-	sext.w	a0, a0
 	addiw	a2, a2, 1
+	sext.w	a0, a0
 	minu	a0, a2, a0
 	addiw	a1, a1, 2
 	sltu	a0, a0, a1

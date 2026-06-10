@@ -1,7 +1,7 @@
 func0000000000000085:
-	li	a0, 2047
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 0
+	li	a0, 2047
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v8, v10, a0
 	li	a0, -1076

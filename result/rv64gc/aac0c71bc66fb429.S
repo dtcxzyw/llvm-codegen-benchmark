@@ -9,10 +9,10 @@ func0000000000000028:
 	ret
 
 func00000000000000a8:
-	srai	a0, a0, 4
 	lui	a1, 986895
 	addi	a1, a1, 241
 	slli	a2, a1, 32
+	srai	a0, a0, 4
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	slli	a1, a0, 1

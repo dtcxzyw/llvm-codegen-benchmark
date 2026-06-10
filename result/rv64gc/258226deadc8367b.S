@@ -16,8 +16,8 @@ func0000000000000148:
 	zext.b	a2, a2
 	slli	a1, a1, 8
 	or	a1, a1, a2
-	lui	a2, 15
 	slli	a1, a1, 48
+	lui	a2, 15
 	srli	a1, a1, 48
 	addi	a2, a2, -1439
 	sltu	a1, a1, a2

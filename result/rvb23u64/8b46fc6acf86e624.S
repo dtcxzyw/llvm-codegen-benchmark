@@ -1,7 +1,7 @@
 func0000000000000009:
 	andi	a2, a2, 1
-	srliw	a1, a1, 24
 	slli	a2, a2, 4
+	srliw	a1, a1, 24
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000009:
 	ret
 
 func0000000000000003:
-	sext.w	a1, a1
 	andi	a2, a2, 1
+	sext.w	a1, a1
 	slli	a2, a2, 4
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
@@ -31,8 +31,8 @@ func0000000000000031:
 
 func0000000000000029:
 	andi	a2, a2, 1
-	srliw	a1, a1, 22
 	addiw	a2, a2, 2
+	srliw	a1, a1, 22
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

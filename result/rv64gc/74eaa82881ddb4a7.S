@@ -7,12 +7,12 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	addi	a0, a0, 170
-	slli	a1, a0, 3
-	slli	a0, a0, 4
-	add	a0, a0, a1
-	addi	a0, a0, 15
 	lui	a1, 1048575
+	addi	a0, a0, 170
+	slli	a2, a0, 3
+	slli	a0, a0, 4
+	add	a0, a0, a2
+	addi	a0, a0, 15
 	and	a0, a0, a1
 	ret
 

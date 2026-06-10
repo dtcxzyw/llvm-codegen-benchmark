@@ -19,8 +19,8 @@ func0000000000000102:
 func0000000000000308:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, -1
-	li	a0, 59
 	vmsltu.vv	v11, v12, v8
+	li	a0, 59
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsne.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8
@@ -38,8 +38,8 @@ func0000000000000042:
 func0000000000000302:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
-	li	a0, 92
 	vmseq.vv	v11, v12, v8
+	li	a0, 92
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsne.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8
@@ -48,8 +48,8 @@ func0000000000000302:
 func0000000000000310:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 3
-	li	a0, 37
 	vmsltu.vv	v11, v8, v12
+	li	a0, 37
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsne.vx	v8, v10, a0
 	vmor.mm	v0, v11, v8

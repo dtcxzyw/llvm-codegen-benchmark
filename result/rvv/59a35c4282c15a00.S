@@ -1,8 +1,8 @@
 func0000000000000000:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv4r.v	v24, v8
-	lui	a0, 8209
 	vfwcvt.f.f.v	v8, v24
+	lui	a0, 8209
 	slli	a0, a0, 37
 	fmv.d.x	fa5, a0
 	vsetvli	zero, zero, e64, m8, ta, ma

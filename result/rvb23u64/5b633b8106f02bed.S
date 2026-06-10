@@ -1,6 +1,6 @@
 func0000000000000004:
-	rev8	a0, a0
 	bseti	a1, zero, 62
+	rev8	a0, a0
 	add	a0, a0, a1
 	ret
 

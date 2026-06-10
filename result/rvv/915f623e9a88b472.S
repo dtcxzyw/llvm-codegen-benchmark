@@ -17,8 +17,8 @@ func0000000000000004:
 func0000000000000308:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vi	v10, v10, 0
-	lui	a0, 244141
 	vnsrl.wv	v11, v8, v10
+	lui	a0, 244141
 	addi	a0, a0, -1537
 	vmsgtu.vx	v0, v11, a0
 	ret
@@ -26,8 +26,8 @@ func0000000000000308:
 func0000000000000318:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vrsub.vi	v10, v10, 0
-	lui	a0, 24414
 	vnsrl.wv	v11, v8, v10
+	lui	a0, 24414
 	addi	a0, a0, 255
 	vmsgtu.vx	v0, v11, a0
 	ret

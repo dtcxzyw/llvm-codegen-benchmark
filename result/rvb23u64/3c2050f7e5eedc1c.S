@@ -1,7 +1,7 @@
 func0000000000000005:
-	ctz	a1, a0
-	li	a2, -1
-	sll	a1, a2, a1
+	li	a1, -1
+	ctz	a2, a0
+	sll	a1, a1, a2
 	xor	a0, a0, a1
 	ret
 

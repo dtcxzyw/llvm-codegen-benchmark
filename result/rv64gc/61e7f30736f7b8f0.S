@@ -31,9 +31,9 @@ func00000000000000ea:
 	slli	a1, a1, 56
 	slli	a0, a0, 56
 	slli	a2, a2, 56
-	srai	a1, a1, 56
 	srai	a0, a0, 56
 	srai	a2, a2, 56
+	srai	a1, a1, 56
 	slt	a2, a2, a0
 	xori	a2, a2, 1
 	slt	a0, a1, a0
@@ -41,9 +41,9 @@ func00000000000000ea:
 	ret
 
 func00000000000000a8:
-	zext.b	a1, a1
-	zext.b	a0, a0
 	zext.b	a2, a2
+	zext.b	a0, a0
+	zext.b	a1, a1
 	sltu	a2, a2, a0
 	xori	a2, a2, 1
 	sltu	a0, a1, a0
@@ -53,8 +53,8 @@ func00000000000000a8:
 func00000000000000eb:
 	slli	a1, a1, 56
 	slli	a0, a0, 56
-	slli	a2, a2, 56
 	srai	a1, a1, 56
+	slli	a2, a2, 56
 	srai	a0, a0, 56
 	srai	a2, a2, 56
 	slt	a2, a2, a0

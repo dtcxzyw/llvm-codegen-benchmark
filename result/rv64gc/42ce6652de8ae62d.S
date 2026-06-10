@@ -35,10 +35,10 @@ func000000000000000a:
 
 func0000000000000002:
 	lui	a2, 1
+	li	a3, -1
 	sll	a1, a2, a1
-	li	a2, -1
-	srli	a2, a2, 32
-	add	a1, a1, a2
+	srli	a3, a3, 32
+	add	a1, a1, a3
 	and	a0, a0, a1
 	ret
 

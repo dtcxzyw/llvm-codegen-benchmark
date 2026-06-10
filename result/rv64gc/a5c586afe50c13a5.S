@@ -16,10 +16,10 @@ func0000000000000028:
 	ret
 
 func0000000000000021:
+	zext.b	a3, a1
 	zext.b	a2, a0
-	zext.b	a0, a1
 	lui	a1, 699325
-	beqz	a0, .LBB1_2
+	beqz	a3, .LBB1_2
 	addi	a0, a1, -1022
 	li	a3, 255
 	beq	a2, a3, .LBB1_3

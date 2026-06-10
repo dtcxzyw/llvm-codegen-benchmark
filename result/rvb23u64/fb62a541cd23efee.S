@@ -15,10 +15,10 @@ func0000000000000184:
 	ret
 
 func0000000000000541:
-	addi	a1, a1, -1
 	lui	a2, 4096
-	seqz	a1, a1
+	addi	a1, a1, -1
 	addi	a2, a2, -1
+	seqz	a1, a1
 	slt	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -40,9 +40,9 @@ func0000000000000108:
 
 func0000000000000024:
 	li	a2, -1
-	binvi	a0, a0, 63
 	srli	a2, a2, 1
 	add	a1, a1, a2
+	binvi	a0, a0, 63
 	sltiu	a1, a1, 2
 	seqz	a0, a0
 	or	a0, a0, a1

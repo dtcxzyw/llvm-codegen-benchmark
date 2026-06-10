@@ -1,6 +1,6 @@
 func0000000000000301:
-	sext.w	a0, a0
 	addi	a1, a1, -4
+	sext.w	a0, a0
 	snez	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -20,8 +20,8 @@ func0000000000000307:
 	ret
 
 func0000000000000041:
-	sext.w	a0, a0
 	binvi	a1, a1, 63
+	sext.w	a0, a0
 	seqz	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

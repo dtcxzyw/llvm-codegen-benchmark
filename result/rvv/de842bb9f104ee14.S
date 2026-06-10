@@ -1,16 +1,16 @@
 func0000000000000c01:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, -1, v0
+	vmerge.vim	v10, v12, -1, v0
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000c08:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	li	a0, 255
 	vmsgtu.vx	v0, v8, a0
@@ -18,38 +18,38 @@ func0000000000000c08:
 
 func0000000000000c78:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	li	a0, -1
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
+	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
 
 func0000000000000c61:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vor.vv	v8, v8, v10
 	vmseq.vi	v0, v8, 0
 	ret
 
 func0000000000000c74:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vmsleu.vi	v0, v8, 2
 	ret
 
 func0000000000000101:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmseq.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, -1, v0
+	vmerge.vim	v10, v12, -1, v0
 	vmseq.vv	v0, v8, v10
 	ret
 
@@ -67,19 +67,19 @@ func0000000000001874:
 
 func0000000000000c21:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, -1, v0
+	vmerge.vim	v10, v12, -1, v0
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000c28:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	li	a0, -1
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
+	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -102,9 +102,9 @@ func0000000000000c68:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	li	a0, -2
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
+	li	a0, -2
 	zext.w	a0, a0
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -123,18 +123,18 @@ func0000000000000a2a:
 
 func0000000000000c04:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vmsleu.vi	v0, v8, 1
 	ret
 
 func0000000000000c26:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	li	a0, 65
 	vmslt.vx	v0, v8, a0
@@ -142,18 +142,18 @@ func0000000000000c26:
 
 func0000000000000104:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmseq.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vmsleu.vi	v0, v8, 7
 	ret
 
 func000000000000046c:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsleu.vi	v0, v10, 7
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vor.vv	v8, v8, v10
 	vmsne.vi	v0, v8, 0
 	ret
@@ -171,44 +171,44 @@ func000000000000086c:
 
 func0000000000000c44:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 7
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vmsleu.vi	v0, v8, 1
 	ret
 
 func0000000000000a01:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsgt.vi	v0, v10, -1
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, -1, v0
+	vmerge.vim	v10, v12, -1, v0
 	vmseq.vv	v0, v8, v10
 	ret
 
 func0000000000000c2a:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, 1
 	ret
 
 func0000000000000c6c:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vor.vv	v8, v8, v10
 	vmsne.vi	v0, v8, 0
 	ret
 
 func0000000000000474:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsleu.vi	v0, v10, 4
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vmsleu.vi	v0, v8, 10
 	ret
@@ -226,18 +226,18 @@ func0000000000000a61:
 
 func0000000000000a06:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsgt.vi	v0, v10, 1
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	vmsle.vi	v0, v8, 1
 	ret
 
 func0000000000000c0a:
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	vmsne.vi	v0, v10, 0
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vadd.vv	v8, v8, v10
 	li	a0, 29
 	vmsgt.vx	v0, v8, a0

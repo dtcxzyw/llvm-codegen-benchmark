@@ -1,7 +1,7 @@
 func0000000000000206:
 	add	a1, a1, a2
-	li	a2, 3
 	slli	a1, a1, 3
+	li	a2, 3
 	addw	a0, a0, a1
 	slli	a2, a2, 10
 	slt	a0, a0, a2
@@ -24,8 +24,8 @@ func000000000000000a:
 
 func000000000000008a:
 	add	a1, a1, a2
-	lui	a2, 1048574
 	slli	a1, a1, 1
+	lui	a2, 1048574
 	addw	a0, a0, a1
 	addi	a1, a2, -1808
 	slt	a0, a1, a0

@@ -14,8 +14,8 @@ func0000000000000008:
 	bnez	a0, .LBB1_2
 	mv	a1, a2
 .LBB1_2:
-	slli	a1, a1, 4
 	li	a0, -3
+	slli	a1, a1, 4
 	srli	a0, a0, 1
 	sltu	a0, a0, a1
 	ret

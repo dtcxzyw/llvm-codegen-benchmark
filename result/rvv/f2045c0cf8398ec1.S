@@ -1,8 +1,8 @@
 func000000000000001f:
+	li	a0, 32
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v9, v8
 	vwsll.vi	v8, v9, 2
-	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -10,10 +10,10 @@ func000000000000001f:
 	ret
 
 func000000000000001b:
+	li	a0, -200
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v9, v8
 	vwsll.vi	v8, v9, 1
-	li	a0, -200
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -21,10 +21,10 @@ func000000000000001b:
 	ret
 
 func000000000000003f:
+	li	a0, 80
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vzext.vf2	v9, v8
 	vwsll.vi	v8, v9, 3
-	li	a0, 80
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma

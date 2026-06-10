@@ -1,5 +1,4 @@
 func0000000000000318:
-	zext.b	a1, a1
 	lui	a3, 978671
 	addi	a3, a3, -273
 	mul	a2, a2, a3
@@ -10,6 +9,7 @@ func0000000000000318:
 	srliw	a2, a2, 2
 	or	a2, a2, a3
 	lui	a3, 17476
+	zext.b	a1, a1
 	addi	a3, a3, 1092
 	addi	a1, a1, -5
 	sltu	a2, a3, a2

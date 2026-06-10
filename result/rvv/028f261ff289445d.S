@@ -110,9 +110,9 @@ func0000000000000048:
 
 func00000000000000a2:
 	fmv.w.x	fa5, zero
-	lui	a0, 260803
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v0, v12, fa5
+	lui	a0, 260803
 	addi	a0, a0, -1802
 	vmerge.vxm	v12, v12, a0, v0
 	vmflt.vv	v0, v8, v12

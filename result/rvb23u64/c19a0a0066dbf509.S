@@ -12,8 +12,8 @@ func000000000000002c:
 	ret
 
 func0000000000000421:
-	sext.w	a1, a1
 	andi	a0, a0, 16
+	sext.w	a1, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret

@@ -19,12 +19,12 @@ func00000000000000f0:
 	ret
 
 func00000000000000fc:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsll.vi	v12, v12, 4
 	lui	a0, 786432
 	srli	a0, a0, 27
-	vadd.vv	v8, v12, v8
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v12, v12, 4
 	vand.vx	v10, v10, a0
+	vadd.vv	v8, v12, v8
 	vadd.vv	v8, v8, v10
 	li	a0, 144
 	vadd.vx	v8, v8, a0

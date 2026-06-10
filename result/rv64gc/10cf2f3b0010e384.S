@@ -35,24 +35,24 @@ func000000000000003f:
 	ret
 
 func000000000000000b:
-	srli	a1, a1, 3
 	li	a2, 168
+	srli	a1, a1, 3
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
 
 func000000000000003c:
-	srli	a1, a1, 3
 	li	a2, 352
+	srli	a1, a1, 3
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
 
 func0000000000000008:
-	srli	a1, a1, 3
 	li	a2, 616
+	srli	a1, a1, 3
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 16

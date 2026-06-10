@@ -8,12 +8,11 @@ func0000000000000078:
 	vnsrl.wi	v8, v10, 3
 	ret
 
+.LCPI1_0:
+	.quad	116444736000000000
 func0000000000000002:
-	lui	a0, 211812
-	addi	a0, a0, -1061
-	slli	a0, a0, 12
-	addi	a0, a0, -1411
-	slli	a0, a0, 15
+	lui	a0, %hi(.LCPI1_0)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	lui	a0, 2441
@@ -50,11 +49,11 @@ func000000000000002a:
 .LCPI4_0:
 	.quad	6364136223846793005
 func0000000000000003:
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
-	li	a1, 105
+	li	a0, 105
+	lui	a1, %hi(.LCPI4_0)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a1
+	vmv.v.x	v10, a0
+	ld	a0, %lo(.LCPI4_0)(a1)
 	vmacc.vx	v10, a0, v8
 	li	a0, 59
 	vsetvli	zero, zero, e32, m1, ta, ma

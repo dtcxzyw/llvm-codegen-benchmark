@@ -5,8 +5,8 @@ func000000000000000b:
 	ret
 
 func000000000000000d:
-	sub	a2, a2, a0
 	srli	a1, a1, 2
+	sub	a2, a2, a0
 	minu	a0, a2, a1
 	ret
 

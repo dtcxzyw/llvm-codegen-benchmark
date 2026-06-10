@@ -1,7 +1,7 @@
 func0000000000000010:
 	addi	a2, a2, 21
-	sext.w	a1, a1
 	slli	a2, a2, 32
+	sext.w	a1, a1
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -19,8 +19,8 @@ func000000000000000f:
 
 func000000000000005f:
 	addi	a2, a2, 33
-	sext.w	a1, a1
 	slli	a2, a2, 32
+	sext.w	a1, a1
 	srli	a2, a2, 30
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -30,8 +30,8 @@ func00000000000000ef:
 	sext.w	a2, a2
 	slli	a1, a1, 32
 	add	a0, a0, a2
-	lui	a2, 2
 	srli	a1, a1, 32
+	lui	a2, 2
 	add	a0, a0, a1
 	addi	a2, a2, -8
 	add	a0, a0, a2

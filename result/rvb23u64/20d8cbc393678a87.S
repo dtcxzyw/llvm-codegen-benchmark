@@ -1,10 +1,10 @@
 func0000000000000002:
 	fmv.d.x	fa5, zero
-	li	a0, -12
-	flt.d	a1, fa0, fa5
-	czero.nez	a0, a0, a1
-	lui	a1, 143
-	addi	a1, a1, -1328
+	flt.d	a0, fa0, fa5
+	li	a1, -12
+	lui	a2, 143
+	czero.nez	a0, a1, a0
+	addi	a1, a2, -1328
 	add	a0, a0, a1
 	ret
 
@@ -24,12 +24,12 @@ func0000000000000008:
 
 func0000000000000003:
 	fli.d	fa5, 4.0
-	lui	a0, 1020016
-	fle.d	a1, fa5, fa0
-	addi	a0, a0, -785
-	czero.eqz	a0, a0, a1
-	lui	a1, 476760
-	addi	a1, a1, -1932
+	fle.d	a0, fa5, fa0
+	lui	a1, 1020016
+	addi	a1, a1, -785
+	lui	a2, 476760
+	czero.eqz	a0, a1, a0
+	addi	a1, a2, -1932
 	add	a0, a0, a1
 	ret
 

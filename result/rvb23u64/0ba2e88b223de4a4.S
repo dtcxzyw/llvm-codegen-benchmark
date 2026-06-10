@@ -26,13 +26,13 @@ func0000000000000024:
 	ret
 
 func0000000000000021:
-	sext.w	a0, a0
 	lui	a2, 804435
+	sext.w	a0, a0
+	lui	a3, 244141
 	addi	a2, a2, 1537
+	addi	a3, a3, -1536
 	add	a1, a1, a2
-	lui	a2, 244141
-	addi	a2, a2, -1536
-	xor	a0, a0, a2
+	xor	a0, a0, a3
 	czero.nez	a0, a1, a0
 	ret
 
@@ -44,11 +44,11 @@ func0000000000000038:
 	ret
 
 func000000000000002c:
+	li	a2, -1
 	addi	a1, a1, -1
 	addiw	a0, a0, -64
-	li	a2, -1
-	czero.eqz	a1, a1, a0
 	srli	a2, a2, 1
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

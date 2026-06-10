@@ -1,10 +1,10 @@
 func000000000000001f:
 	zext.b	a2, a2
 	lui	a3, 262144
+	addi	a2, a2, -12
 	slli	a1, a1, 8
 	or	a0, a0, a1
 	lui	a1, 524288
-	addi	a2, a2, -12
 	czero.eqz	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -12,9 +12,9 @@ func000000000000001f:
 
 func000000000000001c:
 	zext.b	a2, a2
-	slliw	a1, a1, 23
 	addi	a2, a2, -2
 	seqz	a2, a2
+	slliw	a1, a1, 23
 	slliw	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -22,9 +22,9 @@ func000000000000001c:
 
 func000000000000001a:
 	zext.b	a2, a2
-	slliw	a1, a1, 24
 	addi	a2, a2, -2
 	seqz	a2, a2
+	slliw	a1, a1, 24
 	slliw	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -32,8 +32,8 @@ func000000000000001a:
 
 func0000000000000013:
 	zext.b	a2, a2
-	slliw	a1, a1, 5
 	snez	a2, a2
+	slliw	a1, a1, 5
 	slli	a2, a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -41,8 +41,8 @@ func0000000000000013:
 
 func0000000000000012:
 	zext.b	a2, a2
-	slliw	a1, a1, 2
 	snez	a2, a2
+	slliw	a1, a1, 2
 	slli	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2

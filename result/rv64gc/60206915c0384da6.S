@@ -13,19 +13,19 @@ func0000000000000014:
 	ret
 
 func0000000000000001:
+	li	a3, 1
 	srai	a2, a2, 63
+	slli	a3, a3, 56
 	add	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 56
-	and	a0, a0, a2
+	and	a0, a0, a3
 	add	a0, a0, a1
 	ret
 
 func0000000000000000:
 	srai	a2, a2, 4
+	lui	a3, 15
 	add	a0, a0, a2
-	lui	a2, 15
-	and	a1, a1, a2
+	and	a1, a1, a3
 	add	a0, a0, a1
 	ret
 

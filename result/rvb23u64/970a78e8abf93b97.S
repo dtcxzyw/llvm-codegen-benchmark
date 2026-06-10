@@ -5,16 +5,16 @@ func0000000000000001:
 	ret
 
 func00000000000000c1:
-	addi	a0, a0, 63
 	bseti	a1, zero, 33
+	addi	a0, a0, 63
 	addi	a1, a1, -64
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 
 func00000000000000d1:
-	addi	a0, a0, 63
 	bseti	a1, zero, 33
+	addi	a0, a0, 63
 	addi	a1, a1, -64
 	and	a0, a0, a1
 	seqz	a0, a0
@@ -34,9 +34,9 @@ func0000000000000058:
 	ret
 
 func0000000000000018:
+	lui	a1, 8
 	addi	a0, a0, 62
 	andi	a0, a0, -64
-	lui	a1, 8
 	sltu	a0, a1, a0
 	ret
 

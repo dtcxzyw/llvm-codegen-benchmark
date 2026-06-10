@@ -1,7 +1,7 @@
 func000000000000003f:
 	slli	a1, a1, 2
-	srli	a2, a2, 1
 	andi	a1, a1, -8
+	srli	a2, a2, 1
 	add	a0, a0, a1
 	andi	a2, a2, -8
 	add	a0, a0, a2
@@ -12,10 +12,10 @@ func000000000000001f:
 	slli	a1, a1, 2
 	srli	a2, a2, 3
 	andi	a1, a1, -8
-	add	a0, a0, a1
-	lui	a1, 1048064
 	andi	a2, a2, -8
-	add	a1, a1, a2
+	lui	a3, 1048064
 	add	a0, a0, a1
+	add	a2, a2, a3
+	add	a0, a0, a2
 	ret
 

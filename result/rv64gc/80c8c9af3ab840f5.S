@@ -1,8 +1,8 @@
 func000000000000003e:
+	slliw	a2, a2, 19
 	andi	a3, a0, 1
-	slliw	a0, a2, 19
-	slliw	a1, a1, 5
-	or	a0, a0, a1
+	slliw	a0, a1, 5
+	or	a0, a0, a2
 	bnez	a3, .LBB0_2
 	lui	a1, 319552
 	addi	a1, a1, 1024
@@ -33,10 +33,10 @@ func000000000000002d:
 	ret
 
 func000000000000000f:
+	slliw	a2, a2, 20
 	andi	a3, a0, 1
-	slliw	a0, a2, 20
-	slliw	a1, a1, 15
-	or	a0, a0, a1
+	slliw	a0, a1, 15
+	or	a0, a0, a2
 	lui	a1, 176
 	beqz	a3, .LBB3_2
 	addi	a1, a1, 16

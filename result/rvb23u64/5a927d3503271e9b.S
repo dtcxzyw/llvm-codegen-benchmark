@@ -8,10 +8,10 @@ func0000000000000021:
 func0000000000000006:
 	zext.w	a2, a2
 	srli	a3, a1, 63
-	czero.eqz	a3, a3, a1
 	sltu	a0, a0, a2
+	czero.eqz	a2, a3, a1
 	czero.nez	a0, a0, a1
-	or	a0, a0, a3
+	or	a0, a0, a2
 	ret
 
 func0000000000000001:

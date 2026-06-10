@@ -4,14 +4,14 @@ func0000000000000000:
 	ret
 
 func000000000000003d:
-	slli	a0, a0, 3
 	li	a1, 64
+	slli	a0, a0, 3
 	subw	a0, a1, a0
 	ret
 
 func000000000000003f:
-	slli	a0, a0, 3
 	li	a1, 128
+	slli	a0, a0, 3
 	subw	a0, a1, a0
 	ret
 
@@ -21,38 +21,38 @@ func0000000000000003:
 	ret
 
 func000000000000002f:
-	slli	a0, a0, 3
 	li	a1, 24
+	slli	a0, a0, 3
 	subw	a0, a1, a0
 	ret
 
 func0000000000000035:
-	slli	a0, a0, 4
 	li	a1, 128
+	slli	a0, a0, 4
 	subw	a0, a1, a0
 	ret
 
 func000000000000000d:
-	slli	a0, a0, 8
 	li	a1, 1280
+	slli	a0, a0, 8
 	subw	a0, a1, a0
 	ret
 
 func0000000000000001:
-	slli	a0, a0, 6
 	li	a1, 1535
+	slli	a0, a0, 6
 	subw	a0, a1, a0
 	ret
 
 func0000000000000009:
-	slli	a0, a0, 1
 	li	a1, 7
+	slli	a0, a0, 1
 	subw	a0, a1, a0
 	ret
 
 func0000000000000010:
-	slli	a0, a0, 3
 	li	a1, 32
+	slli	a0, a0, 3
 	subw	a0, a1, a0
 	ret
 

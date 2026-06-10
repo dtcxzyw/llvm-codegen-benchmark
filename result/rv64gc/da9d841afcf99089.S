@@ -22,8 +22,8 @@ func0000000000000021:
 
 func000000000000018c:
 	zext.b	a2, a2
-	xor	a0, a0, a1
 	addi	a2, a2, -17
+	xor	a0, a0, a1
 	snez	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -31,8 +31,8 @@ func000000000000018c:
 
 func0000000000000029:
 	zext.b	a2, a2
-	sltu	a0, a0, a1
 	addi	a2, a2, -1
+	sltu	a0, a0, a1
 	seqz	a1, a2
 	not	a0, a0
 	and	a0, a0, a1
@@ -95,8 +95,8 @@ func0000000000000184:
 
 func0000000000000187:
 	zext.b	a2, a2
-	slt	a0, a1, a0
 	addi	a2, a2, -2
+	slt	a0, a1, a0
 	snez	a1, a2
 	not	a0, a0
 	and	a0, a0, a1

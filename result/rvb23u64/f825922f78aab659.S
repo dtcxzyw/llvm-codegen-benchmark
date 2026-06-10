@@ -4,8 +4,8 @@ func000000000000000a:
 	ret
 
 func00000000000000a7:
-	sltiu	a1, a1, 23
 	srli	a0, a0, 3
+	sltiu	a1, a1, 23
 	addi	a0, a0, -4
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 4

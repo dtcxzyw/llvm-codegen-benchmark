@@ -1,8 +1,8 @@
 func000000000000002b:
-	srai	a1, a1, 4
 	lui	a2, 748983
 	addi	a2, a2, -585
 	slli	a3, a2, 33
+	srai	a1, a1, 4
 	add	a2, a2, a3
 	mul	a1, a1, a2
 	addi	a1, a1, 63

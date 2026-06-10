@@ -40,8 +40,8 @@ func0000000000000021:
 func000000000000004a:
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 1
-	lui	a0, 524288
 	vsll.vv	v8, v10, v8
+	lui	a0, 524288
 	addi	a0, a0, 3
 	vand.vx	v8, v8, a0
 	vmsgt.vi	v0, v8, 0

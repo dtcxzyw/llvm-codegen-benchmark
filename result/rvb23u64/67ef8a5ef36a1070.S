@@ -35,8 +35,8 @@ func0000000000000003:
 
 func000000000000001b:
 	addi	a1, a1, 7
-	andi	a1, a1, -8
 	sh1add	a0, a0, a0
+	andi	a1, a1, -8
 	sh3add	a0, a0, a1
 	addi	a0, a0, 4
 	ret

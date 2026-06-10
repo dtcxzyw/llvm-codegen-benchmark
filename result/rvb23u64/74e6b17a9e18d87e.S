@@ -1,7 +1,7 @@
 func0000000000000042:
 	andi	a1, a1, 31
-	addi	a0, a0, -20
 	addi	a1, a1, -27
+	addi	a0, a0, -20
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1

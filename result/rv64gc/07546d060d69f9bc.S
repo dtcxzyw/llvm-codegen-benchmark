@@ -7,9 +7,9 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
+	lui	a2, 3592
 	or	a0, a0, a1
-	lui	a1, 3592
-	addi	a1, a1, 128
+	addi	a1, a2, 128
 	or	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -17,8 +17,8 @@ func0000000000000006:
 
 func0000000000000001:
 	or	a0, a0, a1
-	li	a1, 1
 	slli	a0, a0, 32
+	li	a1, 1
 	srli	a0, a0, 32
 	slli	a1, a1, 32
 	or	a0, a0, a1
@@ -26,8 +26,8 @@ func0000000000000001:
 
 func0000000000000005:
 	or	a0, a0, a1
-	li	a1, 19
 	slli	a0, a0, 32
+	li	a1, 19
 	srli	a0, a0, 32
 	slli	a1, a1, 48
 	or	a0, a0, a1

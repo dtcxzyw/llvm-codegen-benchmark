@@ -30,12 +30,12 @@ func0000000000000188:
 
 func0000000000000184:
 	slli	a1, a1, 32
+	li	a2, 1
 	srli	a1, a1, 27
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -31
-	sltu	a0, a0, a1
+	addi	a2, a2, -31
+	sltu	a0, a0, a2
 	ret
 
 func00000000000001a1:
@@ -69,9 +69,9 @@ func00000000000001ec:
 
 func0000000000000104:
 	slli	a1, a1, 32
+	lui	a2, 2441
 	add	a0, a0, a1
-	lui	a1, 2441
-	addi	a1, a1, 1664
+	addi	a1, a2, 1664
 	sltu	a0, a0, a1
 	ret
 
@@ -86,10 +86,10 @@ func000000000000018a:
 func00000000000001f8:
 	slli	a1, a1, 32
 	srli	a1, a1, 30
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -32
-	sltu	a0, a1, a0
+	addi	a2, a2, -32
+	sltu	a0, a2, a0
 	ret
 
 func000000000000018c:

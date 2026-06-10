@@ -1,7 +1,7 @@
 func000000000000042c:
-	sext.w	a0, a0
 	zext.b	a2, a2
 	or	a1, a1, a2
+	sext.w	a0, a0
 	addiw	a1, a1, -2
 	seqz	a1, a1
 	snez	a0, a0
@@ -9,11 +9,11 @@ func000000000000042c:
 	ret
 
 func0000000000000488:
-	sext.w	a0, a0
 	zext.b	a2, a2
+	sext.w	a0, a0
 	or	a1, a1, a2
-	sltiu	a0, a0, 8
 	sext.w	a1, a1
+	sltiu	a0, a0, 8
 	sltiu	a1, a1, 16
 	not	a0, a0
 	and	a0, a0, a1

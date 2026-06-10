@@ -59,8 +59,8 @@ func00000000000000ac:
 	ret
 
 func0000000000000001:
-	sext.w	a0, a0
 	slli	a1, a1, 35
+	sext.w	a0, a0
 	srai	a1, a1, 51
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -73,8 +73,8 @@ func0000000000000024:
 	ret
 
 func000000000000000a:
-	sext.w	a0, a0
 	slli	a1, a1, 52
+	sext.w	a0, a0
 	srai	a1, a1, 56
 	slt	a0, a0, a1
 	ret

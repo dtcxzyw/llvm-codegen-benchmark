@@ -8,11 +8,11 @@ func000000000000003c:
 .LBB0_2:
 	addi	a2, a2, 336
 .LBB0_3:
-	add	a0, a0, a2
 	sext.w	a1, a1
-	slli	a2, a1, 3
+	slli	a3, a1, 3
 	slli	a1, a1, 5
-	add	a1, a1, a2
+	add	a0, a0, a2
+	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
 
@@ -43,10 +43,10 @@ func000000000000015f:
 
 func000000000000014f:
 	sext.w	a2, a2
-	slli	a1, a1, 32
 	slti	a2, a2, 2
-	srli	a1, a1, 30
+	slli	a1, a1, 32
 	xori	a2, a2, 1
+	srli	a1, a1, 30
 	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -57,16 +57,16 @@ func0000000000000110:
 	li	a3, 2
 	bltu	a3, a2, .LBB4_2
 	li	a2, 1536
+	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 .LBB4_2:
 	lui	a2, 5
 	addi	a2, a2, 1536
+	add	a0, a0, a2
 	sext.w	a1, a1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	ret
 
 func0000000000000030:
@@ -83,16 +83,16 @@ func0000000000000100:
 	li	a3, 2
 	bltu	a3, a2, .LBB6_2
 	li	a2, 64
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 .LBB6_2:
 	li	a2, 21
 	slli	a2, a2, 10
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
@@ -102,15 +102,15 @@ func000000000000008f:
 	li	a3, 254
 	bltu	a2, a3, .LBB7_2
 	li	a2, 5
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 .LBB7_2:
 	li	a2, 1
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

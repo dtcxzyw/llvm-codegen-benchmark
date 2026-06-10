@@ -1,8 +1,8 @@
 func0000000000000108:
+	lui	a3, 32768
 	add	a0, a0, a1
 	srl	a0, a0, a2
-	lui	a1, 32768
-	sltu	a0, a1, a0
+	sltu	a0, a3, a0
 	ret
 
 func0000000000000101:
@@ -25,21 +25,21 @@ func0000000000000141:
 	ret
 
 func0000000000000104:
+	li	a3, 1
 	add	a0, a0, a1
-	li	a1, 1
+	slli	a3, a3, 41
 	srl	a0, a0, a2
-	slli	a1, a1, 41
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a3, a3, 1
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000004:
+	li	a3, 1
 	add	a0, a0, a1
-	li	a1, 1
+	slli	a3, a3, 41
 	srl	a0, a0, a2
-	slli	a1, a1, 41
-	addi	a1, a1, 1
-	sltu	a0, a0, a1
+	addi	a3, a3, 1
+	sltu	a0, a0, a3
 	ret
 
 func0000000000000144:

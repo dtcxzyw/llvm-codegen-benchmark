@@ -1,7 +1,7 @@
 func0000000000000821:
-	sext.w	a0, a0
 	bset	a2, zero, a2
 	and	a1, a1, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
 	seqz	a0, a0
@@ -25,9 +25,9 @@ func0000000000000d8c:
 	ret
 
 func0000000000000c21:
-	sext.w	a0, a0
 	bset	a2, zero, a2
 	and	a1, a1, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	seqz	a1, a1
 	seqz	a0, a0
@@ -35,9 +35,9 @@ func0000000000000c21:
 	ret
 
 func0000000000000d81:
-	sext.w	a0, a0
 	bset	a2, zero, a2
 	and	a1, a1, a2
+	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
 	seqz	a0, a0

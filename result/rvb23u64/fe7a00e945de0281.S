@@ -5,15 +5,15 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	andi	a0, a0, 1
 	li	a1, -12
+	andi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	addi	a0, a0, -44
 	ret
 
 func0000000000000001:
-	andi	a0, a0, 1
 	li	a1, 48
+	andi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	addiw	a0, a0, -64
 	ret

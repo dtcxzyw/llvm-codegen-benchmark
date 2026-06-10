@@ -18,9 +18,9 @@ func00000000000005f4:
 
 func00000000000010a1:
 	sext.w	a2, a2
+	sltiu	a2, a2, 3
 	add	a0, a0, a1
-	sltiu	a1, a2, 3
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	lui	a1, 1048568
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -116,8 +116,8 @@ func00000000000021e1:
 	ret
 
 func0000000000003001:
-	sext.w	a2, a2
 	lui	a3, 1048509
+	sext.w	a2, a2
 	addi	a3, a3, 432
 	xor	a2, a2, a3
 	snez	a2, a2

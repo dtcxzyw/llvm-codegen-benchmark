@@ -8,8 +8,8 @@ func000000000000000c:
 	ret
 
 func000000000000000a:
-	bclri	a0, a0, 29
 	lui	a1, 65536
+	bclri	a0, a0, 29
 	bclri	a0, a0, 30
 	sext.w	a0, a0
 	addi	a1, a1, -1

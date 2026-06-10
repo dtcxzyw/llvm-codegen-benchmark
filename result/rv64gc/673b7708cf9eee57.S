@@ -1,6 +1,6 @@
 func0000000000000002:
-	andi	a0, a0, 1
 	slli	a2, a2, 5
+	andi	a0, a0, 1
 	add	a1, a1, a2
 	addi	a1, a1, -32
 	addi	a0, a0, -1
@@ -8,10 +8,10 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	andi	a0, a0, 1
 	slli	a3, a2, 3
 	slli	a2, a2, 5
 	add	a2, a2, a3
+	andi	a0, a0, 1
 	add	a1, a1, a2
 	addi	a1, a1, 40
 	addi	a0, a0, -1
@@ -19,9 +19,9 @@ func0000000000000006:
 	ret
 
 func0000000000000007:
-	andi	a0, a0, 1
 	li	a3, 600
 	mul	a2, a2, a3
+	andi	a0, a0, 1
 	add	a1, a1, a2
 	addi	a1, a1, -600
 	addi	a0, a0, -1
@@ -29,8 +29,8 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	andi	a0, a0, 1
 	slli	a2, a2, 5
+	andi	a0, a0, 1
 	add	a1, a1, a2
 	addi	a1, a1, -32
 	addi	a0, a0, -1
@@ -38,8 +38,8 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	andi	a0, a0, 1
 	slli	a2, a2, 4
+	andi	a0, a0, 1
 	add	a1, a1, a2
 	addi	a1, a1, -16
 	addi	a0, a0, -1

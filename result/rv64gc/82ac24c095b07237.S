@@ -39,14 +39,14 @@ func0000000000000045:
 	lui	a0, 49152
 	fmv.w.x	fa5, a0
 	lui	a0, 219648
-	fmul.s	fa5, fa2, fa5
-	fmv.w.x	fa4, a0
-	fmul.s	fa4, fa1, fa4
-	flt.s	a0, fa5, fa4
+	fmv.w.x	fa3, a0
+	fmul.s	fa4, fa2, fa5
+	fmul.s	fa5, fa1, fa3
+	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB3_2
-	fmv.s	fa4, fa5
+	fmv.s	fa5, fa4
 .LBB3_2:
-	fle.s	a0, fa0, fa4
+	fle.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 

@@ -19,8 +19,8 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	fmul.s	fa5, fa1, fa2
 	lui	a0, 274400
+	fmul.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	fli.s	fa5, inf
@@ -31,9 +31,9 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	fmul.s	fa5, fa1, fa2
 	lui	a0, 797452
 	addi	a0, a0, 165
+	fmul.s	fa5, fa1, fa2
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	beqz	a0, .LBB3_2

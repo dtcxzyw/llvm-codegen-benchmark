@@ -17,8 +17,8 @@ func0000000000000009:
 func0000000000000007:
 	lui	a2, 10
 	add	a1, a1, a2
-	lui	a2, 16382
 	addi	a0, a0, 4
+	lui	a2, 16382
 	slli	a0, a0, 51
 	and	a1, a1, a2
 	srli	a0, a0, 51
@@ -36,12 +36,12 @@ func0000000000000005:
 	ret
 
 func000000000000000b:
-	addi	a1, a1, 48
 	lui	a2, 3
 	add	a0, a0, a2
 	lui	a2, 16
-	zext.b	a1, a1
+	addi	a1, a1, 48
 	addi	a2, a2, -256
+	zext.b	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

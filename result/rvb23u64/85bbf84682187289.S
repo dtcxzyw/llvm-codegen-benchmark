@@ -1,18 +1,18 @@
 func0000000000000001:
+	lui	a3, 1048555
 	andi	a0, a0, 1
+	addi	a3, a3, -384
 	sub	a1, a1, a2
-	lui	a2, 1048555
-	addi	a2, a2, -384
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	ret
 
 func0000000000000004:
+	lui	a3, 524288
 	andi	a0, a0, 1
+	addi	a3, a3, -85
 	sub	a1, a1, a2
-	lui	a2, 524288
-	addi	a2, a2, -85
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	ret
 

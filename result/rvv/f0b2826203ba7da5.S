@@ -1,7 +1,7 @@
 func0000000000000077:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vclz.v	v9, v9
 	vsrl.vi	v8, v8, 24
+	vclz.v	v9, v9
 	vsub.vv	v8, v8, v9
 	li	a0, 32
 	vadd.vx	v10, v8, a0

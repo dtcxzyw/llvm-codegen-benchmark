@@ -5,9 +5,9 @@ func0000000000000005:
 	blt	a0, a2, .LBB0_2
 	li	a1, 4
 .LBB0_2:
+	li	a2, -7
 	sub	a0, a0, a1
-	li	a1, -7
-	srli	a1, a1, 1
-	and	a0, a0, a1
+	srli	a2, a2, 1
+	and	a0, a0, a2
 	ret
 

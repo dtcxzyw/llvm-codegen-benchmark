@@ -1,54 +1,54 @@
 func0000000000000193:
-	sext.w	a2, a2
+	lui	a3, 335544
 	add	a0, a0, a1
-	lui	a1, 335544
-	slti	a2, a2, 1570
+	addi	a1, a3, 1311
 	slli	a0, a0, 32
-	addi	a1, a1, 1311
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
+	sext.w	a2, a2
+	slti	a1, a2, 1570
 	srli	a0, a0, 39
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000303:
-	sext.w	a2, a2
+	lui	a3, 838861
 	add	a0, a0, a1
-	lui	a1, 838861
-	snez	a2, a2
+	addi	a1, a3, -819
 	slli	a0, a0, 32
-	addi	a1, a1, -819
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
+	sext.w	a2, a2
+	snez	a1, a2
 	srli	a0, a0, 36
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000183:
-	sext.w	a2, a2
+	lui	a3, 699051
 	add	a0, a0, a1
-	lui	a1, 699051
-	slti	a2, a2, -11
+	addi	a1, a3, -1365
 	slli	a0, a0, 32
-	addi	a1, a1, -1365
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
+	sext.w	a2, a2
+	slti	a1, a2, -11
 	srli	a0, a0, 35
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000513:
-	sext.w	a2, a2
-	lui	a3, 1048540
+	lui	a3, 235184
 	add	a0, a0, a1
-	lui	a1, 235184
-	addi	a3, a3, 1359
+	addi	a1, a3, 1725
 	slli	a0, a0, 32
-	addi	a1, a1, 1725
-	sltu	a2, a2, a3
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
+	lui	a1, 1048540
+	sext.w	a2, a2
+	addi	a1, a1, 1359
+	sltu	a1, a2, a1
 	srli	a0, a0, 47
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 

@@ -1,8 +1,8 @@
 func0000000000000024:
-	andi	a1, a1, 1
 	srliw	a0, a0, 24
-	slli	a1, a1, 4
+	andi	a1, a1, 1
 	seqz	a0, a0
+	slli	a1, a1, 4
 	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret
@@ -10,8 +10,8 @@ func0000000000000024:
 func0000000000000021:
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	slli	a1, a1, 4
 	seqz	a0, a0
+	slli	a1, a1, 4
 	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret
@@ -47,10 +47,10 @@ func000000000000002c:
 
 func0000000000000038:
 	sext.w	a0, a0
-	andi	a1, a1, 1
-	slli	a1, a1, 4
 	sltiu	a0, a0, 256
+	andi	a1, a1, 1
 	xori	a0, a0, 1
+	slli	a1, a1, 4
 	slli	a0, a0, 3
 	or	a0, a0, a1
 	ret
@@ -77,10 +77,10 @@ func0000000000000034:
 func000000000000000a:
 	sext.w	a0, a0
 	slli	a1, a1, 63
-	srai	a1, a1, 63
 	slti	a0, a0, 2
-	andi	a1, a1, 14
+	srai	a1, a1, 63
 	addi	a0, a0, -1
+	andi	a1, a1, 14
 	andi	a0, a0, 9
 	or	a0, a0, a1
 	ret

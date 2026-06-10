@@ -1,6 +1,6 @@
 func0000000000000019:
-	sext.w	a0, a0
 	clz	a3, a2
+	sext.w	a0, a0
 	clz	a1, a1
 	czero.eqz	a3, a3, a2
 	addi	a1, a1, 64

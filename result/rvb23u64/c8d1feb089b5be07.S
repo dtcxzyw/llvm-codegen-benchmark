@@ -1,6 +1,6 @@
 func000000000000001b:
-	srli	a1, a1, 2
 	bseti	a2, zero, 35
+	srli	a1, a1, 2
 	addi	a2, a2, -8
 	add	a1, a1, a2
 	srli	a1, a1, 3

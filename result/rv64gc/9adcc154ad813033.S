@@ -21,8 +21,8 @@ func0000000000000042:
 func000000000000030c:
 	sext.w	a2, a2
 	sext.w	a3, a1
-	srliw	a1, a1, 31
 	xor	a2, a2, a3
+	srliw	a1, a1, 31
 	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

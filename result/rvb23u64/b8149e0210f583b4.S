@@ -20,8 +20,8 @@ func000000000000004c:
 	ret
 
 func0000000000000201:
-	zext.b	a0, a0
 	sltiu	a1, a1, 16
+	zext.b	a0, a0
 	xori	a1, a1, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

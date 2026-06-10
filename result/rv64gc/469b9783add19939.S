@@ -1,50 +1,50 @@
 func0000000000000004:
-	srli	a1, a0, 1
-	lui	a2, 349525
-	addi	a2, a2, 1365
-	and	a1, a1, a2
-	and	a0, a0, a2
-	add	a0, a0, a1
+	lui	a1, 349525
+	srli	a2, a0, 1
+	addi	a1, a1, 1365
+	and	a2, a2, a1
+	and	a0, a0, a1
+	add	a0, a0, a2
 	srli	a0, a0, 2
 	ret
 
 func0000000000000006:
-	srli	a1, a0, 2
-	lui	a2, 209715
-	addi	a2, a2, 819
-	and	a1, a1, a2
-	and	a0, a0, a2
-	add	a0, a0, a1
+	lui	a1, 209715
+	srli	a2, a0, 2
+	addi	a1, a1, 819
+	and	a2, a2, a1
+	and	a0, a0, a1
+	add	a0, a0, a2
 	srli	a0, a0, 4
 	ret
 
 func0000000000000005:
-	srli	a1, a0, 1
-	lui	a2, 279620
-	addi	a2, a2, 1092
-	and	a1, a1, a2
-	and	a0, a0, a2
-	add	a0, a0, a1
+	lui	a1, 279620
+	srli	a2, a0, 1
+	addi	a1, a1, 1092
+	and	a2, a2, a1
+	and	a0, a0, a1
+	add	a0, a0, a2
 	srli	a0, a0, 2
 	ret
 
 func000000000000000f:
-	srli	a1, a0, 2
-	lui	a2, 197379
-	addi	a2, a2, 48
-	and	a1, a1, a2
-	and	a0, a0, a2
-	add	a0, a0, a1
+	lui	a1, 197379
+	srli	a2, a0, 2
+	addi	a1, a1, 48
+	and	a2, a2, a1
+	and	a0, a0, a1
+	add	a0, a0, a2
 	srli	a0, a0, 4
 	ret
 
 func000000000000000e:
-	srli	a1, a0, 2
-	lui	a2, 197379
-	addi	a2, a2, 48
-	and	a1, a1, a2
-	and	a0, a0, a2
-	add	a0, a0, a1
+	lui	a1, 197379
+	srli	a2, a0, 2
+	addi	a1, a1, 48
+	and	a2, a2, a1
+	and	a0, a0, a1
+	add	a0, a0, a2
 	srli	a0, a0, 12
 	ret
 

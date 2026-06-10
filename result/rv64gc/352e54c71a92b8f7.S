@@ -8,9 +8,9 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
+	slli	a2, a2, 50
 	andi	a3, a0, 1
-	slli	a0, a2, 50
-	srli	a0, a0, 50
+	srli	a0, a2, 50
 	beqz	a3, .LBB1_2
 	li	a1, 4
 .LBB1_2:

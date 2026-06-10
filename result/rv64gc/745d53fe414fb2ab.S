@@ -4,9 +4,9 @@ func0000000000000008:
 	mul	a0, a0, a1
 	srliw	a1, a0, 2
 	slliw	a0, a0, 30
+	lui	a2, 10486
 	or	a0, a0, a1
-	lui	a1, 10486
-	addi	a1, a1, -984
+	addi	a1, a2, -984
 	sltu	a0, a1, a0
 	ret
 
@@ -16,9 +16,9 @@ func0000000000000004:
 	mul	a0, a0, a1
 	srliw	a1, a0, 1
 	slliw	a0, a0, 31
+	lui	a2, 104858
 	or	a0, a0, a1
-	lui	a1, 104858
-	addi	a1, a1, -1638
+	addi	a1, a2, -1638
 	sltu	a0, a0, a1
 	ret
 

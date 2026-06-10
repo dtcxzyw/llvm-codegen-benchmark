@@ -126,12 +126,11 @@ func0000000000000046:
 	vnsrl.wi	v8, v10, 0, v0.t
 	ret
 
+.LCPI16_0:
+	.quad	2147483647000001
 func0000000000000054:
-	lui	a0, 15625
-	slli	a0, a0, 11
-	addi	a0, a0, -61
-	slli	a0, a0, 14
-	addi	a0, a0, -575
+	lui	a0, %hi(.LCPI16_0)
+	ld	a0, %lo(.LCPI16_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	lui	a0, 524288

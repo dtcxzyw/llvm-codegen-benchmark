@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	82351536043346212
 func000000000000001a:
-	srai	a0, a0, 4
 	lui	a3, 748983
 	addi	a3, a3, -585
 	slli	a4, a3, 33
+	srai	a0, a0, 4
 	add	a3, a3, a4
 	mul	a0, a0, a3
 	mv	a3, a0

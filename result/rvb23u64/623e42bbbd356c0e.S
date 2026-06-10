@@ -30,8 +30,8 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	srliw	a0, a0, 10
 	li	a1, 2040
+	srliw	a0, a0, 10
 	sh3add	a0, a1, a0
 	ret
 

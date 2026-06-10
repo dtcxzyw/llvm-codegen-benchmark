@@ -3,10 +3,10 @@ func0000000000000007:
 	addi	a0, a0, -381
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
-	lui	a0, 2
-	addi	a0, a0, 197
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 18
+	lui	a0, 2
+	addi	a0, a0, 197
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v11, v8, 7
 	li	a0, 1000
@@ -20,10 +20,10 @@ func0000000000000005:
 	addi	a0, a0, 627
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
-	lui	a0, 1048569
-	addi	a0, a0, -1911
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 14
+	lui	a0, 1048569
+	addi	a0, a0, -1911
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v11, v8, 5
 	li	a0, 60
@@ -37,10 +37,10 @@ func0000000000000001:
 	addi	a0, a0, 627
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
-	lui	a0, 1048569
-	addi	a0, a0, -1911
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 14
+	lui	a0, 1048569
+	addi	a0, a0, -1911
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v11, v8, 5
 	li	a0, 60

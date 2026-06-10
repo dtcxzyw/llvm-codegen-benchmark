@@ -46,8 +46,8 @@ func000000000000000a:
 	li	a0, 1
 	sub	a1, a0, a1
 .LBB5_2:
-	sext.w	a1, a1
 	lui	a0, 2
+	sext.w	a1, a1
 	addi	a0, a0, 1807
 	slt	a0, a0, a1
 	ret

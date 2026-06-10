@@ -29,10 +29,10 @@ func00000000000000ca:
 	ret
 
 func0000000000000021:
+	li	a3, -1
+	slli	a3, a3, 63
 	or	a1, a1, a2
-	li	a2, -1
-	slli	a2, a2, 63
-	xor	a0, a0, a2
+	xor	a0, a0, a3
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -45,11 +45,11 @@ func0000000000000181:
 	ret
 
 func0000000000000026:
+	li	a3, 1
 	or	a1, a1, a2
-	li	a2, 1
+	slli	a3, a3, 32
 	seqz	a1, a1
-	slli	a2, a2, 32
-	slt	a0, a0, a2
+	slt	a0, a0, a3
 	and	a0, a0, a1
 	ret
 

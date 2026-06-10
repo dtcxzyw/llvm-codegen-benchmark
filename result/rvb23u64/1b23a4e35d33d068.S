@@ -1,6 +1,6 @@
 func0000000000000022:
-	sext.w	a1, a1
 	li	a2, -127
+	sext.w	a1, a1
 	srli	a2, a2, 1
 	andn	a1, a1, a2
 	bseti	a2, zero, 63

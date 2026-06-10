@@ -34,10 +34,10 @@ func0000000000000007:
 	ret
 
 func0000000000000011:
+	lui	a2, 2
 	sub	a0, a0, a1
-	lui	a1, 2
-	addi	a1, a1, -1
-	minu	a0, a0, a1
+	addi	a2, a2, -1
+	minu	a0, a0, a2
 	addi	a0, a0, -1
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000048:
+	li	a0, 32
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmseq.vv	v9, v9, v10
-	li	a0, 32
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret

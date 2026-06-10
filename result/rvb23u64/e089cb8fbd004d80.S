@@ -6,9 +6,9 @@ func000000000000000f:
 	ret
 
 func0000000000000002:
-	slliw	a2, a0, 8
-	lui	a3, 1044496
-	addi	a3, a3, -256
+	lui	a2, 1044496
+	slliw	a3, a0, 8
+	addi	a2, a2, -256
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
