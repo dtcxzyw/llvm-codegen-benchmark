@@ -1,6 +1,6 @@
 func0000000000000a41:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -13,8 +13,8 @@ func0000000000000a41:
 	ret
 
 func0000000000000a4c:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -27,8 +27,8 @@ func0000000000000a4c:
 	ret
 
 func0000000000000a48:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6

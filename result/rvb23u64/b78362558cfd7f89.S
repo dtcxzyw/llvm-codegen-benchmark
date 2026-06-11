@@ -1,8 +1,8 @@
 func0000000000000000:
-	not	a6, a4
-	slli	a5, a3, 1
+	not	a5, a4
+	slli	a6, a3, 1
 	srl	a2, a2, a4
-	sll	a5, a5, a6
+	sll	a5, a6, a5
 	or	a2, a2, a5
 	addi	a5, a4, -64
 	srli	a5, a5, 63

@@ -4,31 +4,31 @@ func0000000000000001:
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	mul	a0, a0, a1
-	lui	a6, 4080
+	lui	a1, 4080
 	lui	a2, 16
 	addi	a2, a2, -256
-	srliw	a7, a0, 24
-	and	a4, a0, a6
+	srliw	a3, a0, 24
+	and	a4, a0, a1
 	srli	a5, a0, 24
-	slli	a1, a0, 56
-	and	a6, a5, a6
-	srli	a3, a0, 40
-	slli	a7, a7, 32
+	slli	a6, a0, 56
+	and	a1, a1, a5
+	srli	a5, a0, 40
+	slli	a3, a3, 32
 	slli	a4, a4, 24
-	and	a3, a3, a2
+	and	a5, a5, a2
 	and	a2, a2, a0
-	or	a4, a4, a7
-	srli	a5, a0, 8
+	or	a3, a3, a4
+	srli	a4, a0, 8
 	slli	a2, a2, 40
-	or	a1, a1, a2
-	srliw	a2, a5, 24
+	or	a2, a6, a2
+	srliw	a4, a4, 24
 	srli	a0, a0, 56
-	slli	a2, a2, 24
-	or	a0, a0, a3
-	or	a2, a2, a6
+	slli	a4, a4, 24
+	or	a0, a0, a5
 	or	a1, a1, a4
-	or	a0, a0, a2
+	or	a2, a2, a3
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 
 func0000000000000000:
@@ -43,11 +43,11 @@ func0000000000000000:
 	and	a2, a2, a1
 	lui	a5, 4080
 	or	a2, a2, a3
-	li	a6, 255
-	srli	a3, a0, 8
-	slli	a6, a6, 24
+	li	a3, 255
+	srli	a6, a0, 8
+	slli	a3, a3, 24
 	and	a4, a4, a5
-	and	a3, a3, a6
+	and	a3, a6, a3
 	or	a3, a3, a4
 	srliw	a4, a0, 24
 	slli	a4, a4, 32
@@ -75,11 +75,11 @@ func0000000000000003:
 	and	a2, a2, a1
 	lui	a5, 4080
 	or	a2, a2, a3
-	li	a6, 255
-	srli	a3, a0, 8
-	slli	a6, a6, 24
+	li	a3, 255
+	srli	a6, a0, 8
+	slli	a3, a3, 24
 	and	a4, a4, a5
-	and	a3, a3, a6
+	and	a3, a6, a3
 	or	a3, a3, a4
 	srliw	a4, a0, 24
 	slli	a4, a4, 32
@@ -101,30 +101,30 @@ func0000000000000007:
 	lui	a1, %hi(.LCPI3_0)
 	ld	a1, %lo(.LCPI3_0)(a1)
 	mul	a0, a0, a1
-	lui	a6, 4080
+	lui	a1, 4080
 	lui	a2, 16
 	addi	a2, a2, -256
-	srliw	a7, a0, 24
-	and	a4, a0, a6
+	srliw	a3, a0, 24
+	and	a4, a0, a1
 	srli	a5, a0, 24
-	slli	a1, a0, 56
-	and	a6, a5, a6
-	srli	a3, a0, 40
-	slli	a7, a7, 32
+	slli	a6, a0, 56
+	and	a1, a1, a5
+	srli	a5, a0, 40
+	slli	a3, a3, 32
 	slli	a4, a4, 24
-	and	a3, a3, a2
+	and	a5, a5, a2
 	and	a2, a2, a0
-	or	a4, a4, a7
-	srli	a5, a0, 8
+	or	a3, a3, a4
+	srli	a4, a0, 8
 	slli	a2, a2, 40
-	or	a1, a1, a2
-	srliw	a2, a5, 24
+	or	a2, a6, a2
+	srliw	a4, a4, 24
 	srli	a0, a0, 56
-	slli	a2, a2, 24
-	or	a0, a0, a3
-	or	a2, a2, a6
+	slli	a4, a4, 24
+	or	a0, a0, a5
 	or	a1, a1, a4
-	or	a0, a0, a2
+	or	a2, a2, a3
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 

@@ -16,12 +16,12 @@ func0000000000000042:
 	srli	a5, a2, 32
 	slli	a6, a4, 32
 	or	a2, a2, a5
-	slli	a7, a3, 32
+	slli	a5, a3, 32
 	not	a2, a2
 	add	a4, a4, a6
-	srli	a5, a2, 1
-	add	a3, a3, a7
-	and	a4, a4, a5
+	srli	a6, a2, 1
+	add	a3, a3, a5
+	and	a4, a6, a4
 	lui	a5, 61681
 	sub	a2, a2, a4
 	and	a4, a2, a3
@@ -64,12 +64,12 @@ func0000000000000002:
 	srli	a5, a2, 32
 	slli	a6, a4, 32
 	or	a2, a2, a5
-	slli	a7, a3, 32
+	slli	a5, a3, 32
 	not	a2, a2
 	add	a4, a4, a6
-	srli	a5, a2, 1
-	add	a3, a3, a7
-	and	a4, a4, a5
+	srli	a6, a2, 1
+	add	a3, a3, a5
+	and	a4, a6, a4
 	lui	a5, 61681
 	sub	a2, a2, a4
 	and	a4, a2, a3
@@ -112,12 +112,12 @@ func00000000000000c2:
 	srli	a5, a2, 32
 	slli	a6, a4, 32
 	or	a2, a2, a5
-	slli	a7, a3, 32
+	slli	a5, a3, 32
 	not	a2, a2
 	add	a4, a4, a6
-	srli	a5, a2, 1
-	add	a3, a3, a7
-	and	a4, a4, a5
+	srli	a6, a2, 1
+	add	a3, a3, a5
+	and	a4, a6, a4
 	lui	a5, 61681
 	sub	a2, a2, a4
 	and	a4, a2, a3

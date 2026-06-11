@@ -2,8 +2,8 @@ func000000000000000a:
 	srli	a4, a4, 32
 	zext.w	a5, a5
 	slli	a4, a4, 32
-	mul	a6, a4, a1
-	mulhu	a1, a4, a0
+	mul	a1, a1, a4
+	mulhu	a6, a4, a0
 	mul	a5, a5, a0
 	mul	a4, a4, a0
 	slli	a0, a3, 32

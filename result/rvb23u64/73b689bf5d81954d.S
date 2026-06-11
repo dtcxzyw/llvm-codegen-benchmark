@@ -1,6 +1,6 @@
 func000000000000000a:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -12,8 +12,8 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -25,8 +25,8 @@ func0000000000000008:
 	ret
 
 func000000000000000f:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -38,8 +38,8 @@ func000000000000000f:
 	ret
 
 func0000000000000000:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -51,8 +51,8 @@ func0000000000000000:
 	ret
 
 func0000000000000005:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -65,8 +65,8 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -78,8 +78,8 @@ func0000000000000004:
 	ret
 
 func000000000000000e:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6
@@ -92,8 +92,8 @@ func000000000000000e:
 	ret
 
 func000000000000000d:
-	mul	a6, a2, a5
-	mulhu	a5, a2, a4
+	mul	a5, a5, a2
+	mulhu	a6, a2, a4
 	mul	a3, a3, a4
 	mul	a2, a2, a4
 	add	a5, a5, a6

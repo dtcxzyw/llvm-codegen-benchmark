@@ -7,16 +7,16 @@ func0000000000000000:
 	addi	a2, a3, 819
 	slli	a3, a5, 32
 	slli	a4, a2, 32
-	add	a6, a5, a3
-	add	a7, a2, a4
+	add	a5, a5, a3
+	add	a2, a2, a4
 	lui	a3, 61681
 	lui	a4, 4112
 	addi	a3, a3, -241
-	addi	a4, a4, 257
-	slli	a5, a3, 32
-	slli	a2, a4, 32
-	add	a3, a3, a5
-	add	a4, a4, a2
+	addi	a6, a4, 257
+	slli	a4, a3, 32
+	slli	a7, a6, 32
+	add	a4, a4, a3
+	add	a3, a6, a7
 	bnez	a1, .LBB0_4
 	srli	a1, a0, 1
 	or	a0, a0, a1
@@ -32,16 +32,16 @@ func0000000000000000:
 	or	a0, a0, a1
 	not	a0, a0
 	srli	a1, a0, 1
-	and	a1, a1, a6
+	and	a1, a1, a5
 	sub	a0, a0, a1
 	srli	a1, a0, 2
-	and	a0, a0, a7
-	and	a1, a1, a7
+	and	a0, a0, a2
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
-	and	a0, a0, a3
-	mul	a0, a0, a4
+	and	a0, a0, a4
+	mul	a0, a0, a3
 	srli	a0, a0, 56
 	addi	a0, a0, 64
 	li	a1, 0
@@ -65,16 +65,16 @@ func0000000000000000:
 	or	a0, a0, a1
 	not	a0, a0
 	srli	a1, a0, 1
-	and	a1, a1, a6
+	and	a1, a1, a5
 	sub	a0, a0, a1
 	srli	a1, a0, 2
-	and	a0, a0, a7
-	and	a1, a1, a7
+	and	a0, a0, a2
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
-	and	a0, a0, a3
-	mul	a0, a0, a4
+	and	a0, a0, a4
+	mul	a0, a0, a3
 	srli	a0, a0, 56
 	li	a1, 0
 	ret
@@ -86,16 +86,16 @@ func0000000000000001:
 	addi	a2, a3, 819
 	slli	a3, a5, 32
 	slli	a4, a2, 32
-	add	a6, a5, a3
-	add	a7, a2, a4
+	add	a5, a5, a3
+	add	a2, a2, a4
 	lui	a3, 61681
 	lui	a4, 4112
 	addi	a3, a3, -241
-	addi	a4, a4, 257
-	slli	a5, a3, 32
-	slli	a2, a4, 32
-	add	a3, a3, a5
-	add	a4, a4, a2
+	addi	a6, a4, 257
+	slli	a4, a3, 32
+	slli	a7, a6, 32
+	add	a4, a4, a3
+	add	a3, a6, a7
 	bnez	a1, .LBB1_2
 	srli	a1, a0, 1
 	or	a0, a0, a1
@@ -111,16 +111,16 @@ func0000000000000001:
 	or	a0, a0, a1
 	not	a0, a0
 	srli	a1, a0, 1
-	and	a1, a1, a6
+	and	a1, a1, a5
 	sub	a0, a0, a1
 	srli	a1, a0, 2
-	and	a0, a0, a7
-	and	a1, a1, a7
+	and	a0, a0, a2
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
-	and	a0, a0, a3
-	mul	a0, a0, a4
+	and	a0, a0, a4
+	mul	a0, a0, a3
 	srli	a0, a0, 56
 	addi	a0, a0, 64
 	li	a1, 0
@@ -140,16 +140,16 @@ func0000000000000001:
 	or	a0, a0, a1
 	not	a0, a0
 	srli	a1, a0, 1
-	and	a1, a1, a6
+	and	a1, a1, a5
 	sub	a0, a0, a1
 	srli	a1, a0, 2
-	and	a0, a0, a7
-	and	a1, a1, a7
+	and	a0, a0, a2
+	and	a1, a1, a2
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
-	and	a0, a0, a3
-	mul	a0, a0, a4
+	and	a0, a0, a4
+	mul	a0, a0, a3
 	srli	a0, a0, 56
 	li	a1, 0
 	ret

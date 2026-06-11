@@ -4,26 +4,26 @@ func0000000000000086:
 	addi	a3, a3, -256
 	and	a4, a4, a3
 	srli	a5, a2, 56
-	or	a6, a4, a5
+	or	a4, a4, a5
 	srli	a5, a2, 24
-	srli	a4, a2, 8
+	srli	a6, a2, 8
 	lui	a7, 4080
-	srliw	a4, a4, 24
+	srliw	a6, a6, 24
 	and	a5, a5, a7
-	slli	a4, a4, 24
-	or	t0, a4, a5
-	and	a5, a2, a7
-	slli	a5, a5, 24
-	srliw	a4, a2, 24
-	slli	a4, a4, 32
+	slli	a6, a6, 24
+	or	a5, a6, a5
+	and	a6, a2, a7
+	slli	a6, a6, 24
+	srliw	a7, a2, 24
+	slli	a7, a7, 32
 	and	a3, a3, a2
 	slli	a3, a3, 40
 	slli	a2, a2, 56
+	or	a6, a6, a7
+	or	a2, a2, a3
 	or	a4, a4, a5
-	or	a2, a2, a3
-	or	a3, t0, a6
+	or	a2, a2, a6
 	or	a2, a2, a4
-	or	a2, a2, a3
 	add	a1, a1, a2
 	slt	a0, a1, a0
 	ret
@@ -34,26 +34,26 @@ func0000000000000008:
 	addi	a3, a3, -256
 	and	a4, a4, a3
 	srli	a5, a2, 56
-	or	a6, a4, a5
+	or	a4, a4, a5
 	srli	a5, a2, 24
-	srli	a4, a2, 8
+	srli	a6, a2, 8
 	lui	a7, 4080
-	srliw	a4, a4, 24
+	srliw	a6, a6, 24
 	and	a5, a5, a7
-	slli	a4, a4, 24
-	or	t0, a4, a5
-	and	a5, a2, a7
-	slli	a5, a5, 24
-	srliw	a4, a2, 24
-	slli	a4, a4, 32
+	slli	a6, a6, 24
+	or	a5, a6, a5
+	and	a6, a2, a7
+	slli	a6, a6, 24
+	srliw	a7, a2, 24
+	slli	a7, a7, 32
 	and	a3, a3, a2
 	slli	a3, a3, 40
 	slli	a2, a2, 56
+	or	a6, a6, a7
+	or	a2, a2, a3
 	or	a4, a4, a5
-	or	a2, a2, a3
-	or	a3, t0, a6
+	or	a2, a2, a6
 	or	a2, a2, a4
-	or	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -64,26 +64,26 @@ func0000000000000088:
 	addi	a3, a3, -256
 	and	a4, a4, a3
 	srli	a5, a2, 56
-	or	a6, a4, a5
+	or	a4, a4, a5
 	srli	a5, a2, 24
-	srli	a4, a2, 8
+	srli	a6, a2, 8
 	lui	a7, 4080
-	srliw	a4, a4, 24
+	srliw	a6, a6, 24
 	and	a5, a5, a7
-	slli	a4, a4, 24
-	or	t0, a4, a5
-	and	a5, a2, a7
-	slli	a5, a5, 24
-	srliw	a4, a2, 24
-	slli	a4, a4, 32
+	slli	a6, a6, 24
+	or	a5, a6, a5
+	and	a6, a2, a7
+	slli	a6, a6, 24
+	srliw	a7, a2, 24
+	slli	a7, a7, 32
 	and	a3, a3, a2
 	slli	a3, a3, 40
 	slli	a2, a2, 56
+	or	a6, a6, a7
+	or	a2, a2, a3
 	or	a4, a4, a5
-	or	a2, a2, a3
-	or	a3, t0, a6
+	or	a2, a2, a6
 	or	a2, a2, a4
-	or	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
@@ -94,26 +94,26 @@ func0000000000000084:
 	addi	a3, a3, -256
 	and	a4, a4, a3
 	srli	a5, a2, 56
-	or	a6, a4, a5
+	or	a4, a4, a5
 	srli	a5, a2, 24
-	srli	a4, a2, 8
+	srli	a6, a2, 8
 	lui	a7, 4080
-	srliw	a4, a4, 24
+	srliw	a6, a6, 24
 	and	a5, a5, a7
-	slli	a4, a4, 24
-	or	t0, a4, a5
-	and	a5, a2, a7
-	slli	a5, a5, 24
-	srliw	a4, a2, 24
-	slli	a4, a4, 32
+	slli	a6, a6, 24
+	or	a5, a6, a5
+	and	a6, a2, a7
+	slli	a6, a6, 24
+	srliw	a7, a2, 24
+	slli	a7, a7, 32
 	and	a3, a3, a2
 	slli	a3, a3, 40
 	slli	a2, a2, 56
+	or	a6, a6, a7
+	or	a2, a2, a3
 	or	a4, a4, a5
-	or	a2, a2, a3
-	or	a3, t0, a6
+	or	a2, a2, a6
 	or	a2, a2, a4
-	or	a2, a2, a3
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

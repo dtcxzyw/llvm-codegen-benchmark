@@ -19,17 +19,17 @@ func000000000000000a:
 	or	a2, a2, a4
 	slli	a5, a5, 32
 	slli	a4, a0, 32
-	mulhu	a6, a0, a5
+	mulhu	a5, a0, a5
 	sub	a0, a4, a0
 	slli	a1, a1, 32
 	srli	a3, a3, 32
 	sub	a1, a0, a1
-	neg	a5, a4
+	neg	a6, a4
 	sub	a0, a2, a4
-	sltu	a2, a0, a5
+	sltu	a2, a0, a6
 	add	a1, a1, a3
 	add	a1, a1, a2
-	add	a1, a1, a6
+	add	a1, a1, a5
 	ret
 
 func000000000000000f:

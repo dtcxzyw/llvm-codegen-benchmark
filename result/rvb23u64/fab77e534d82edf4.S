@@ -1,8 +1,8 @@
 func0000000000000006:
-	not	a6, a4
-	srli	a5, a2, 1
+	not	a5, a4
+	srli	a6, a2, 1
 	sll	a3, a3, a4
-	srl	a5, a5, a6
+	srl	a5, a6, a5
 	or	a3, a3, a5
 	addi	a5, a4, -64
 	srli	a5, a5, 63
@@ -16,10 +16,10 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
-	not	a6, a4
-	srli	a5, a2, 1
+	not	a5, a4
+	srli	a6, a2, 1
 	sll	a3, a3, a4
-	srl	a5, a5, a6
+	srl	a5, a6, a5
 	or	a3, a3, a5
 	addi	a5, a4, -64
 	srli	a5, a5, 63
@@ -33,10 +33,10 @@ func0000000000000000:
 	ret
 
 func0000000000000004:
-	not	a6, a4
-	srli	a5, a2, 1
+	not	a5, a4
+	srli	a6, a2, 1
 	sll	a3, a3, a4
-	srl	a5, a5, a6
+	srl	a5, a6, a5
 	or	a3, a3, a5
 	addi	a5, a4, -64
 	srli	a5, a5, 63

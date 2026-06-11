@@ -16,12 +16,12 @@ func000000000000003f:
 	ret
 
 func0000000000000017:
-	li	a6, -1
-	slli	a7, a5, 32
-	bclri	a4, a6, 32
+	li	a4, -1
+	slli	a6, a5, 32
+	bclri	a4, a4, 32
 	mulhsu	a4, a4, a5
 	sub	a5, a2, a5
-	sub	a5, a5, a7
+	sub	a5, a5, a6
 	sltu	a2, a5, a2
 	add	a3, a3, a2
 	add	a2, a0, a5

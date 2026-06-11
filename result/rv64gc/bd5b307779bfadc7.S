@@ -3,20 +3,20 @@ func0000000000000019:
 	beqz	a3, .LBB0_3
 	lui	a3, 349525
 	lui	a4, 209715
-	addi	a3, a3, 1365
-	addi	a5, a4, 819
-	slli	a4, a3, 32
-	slli	a6, a5, 32
-	add	a7, a3, a4
-	add	t0, a5, a6
-	lui	a5, 61681
-	lui	a4, 4112
-	addi	a5, a5, -241
-	addi	a6, a4, 257
-	slli	a4, a5, 32
-	slli	a3, a6, 32
+	addi	a6, a3, 1365
+	addi	a3, a4, 819
+	slli	a4, a6, 32
+	slli	a5, a3, 32
+	add	a6, a6, a4
+	add	a3, a3, a5
+	lui	a4, 61681
+	lui	a5, 4112
+	addi	a4, a4, -241
+	addi	a7, a5, 257
+	slli	a5, a4, 32
+	slli	t0, a7, 32
 	add	a5, a5, a4
-	add	a6, a6, a3
+	add	a4, a7, t0
 	bnez	a2, .LBB0_4
 	srli	a2, a1, 1
 	or	a1, a1, a2
@@ -32,16 +32,16 @@ func0000000000000019:
 	or	a1, a1, a2
 	not	a1, a1
 	srli	a2, a1, 1
-	and	a2, a2, a7
+	and	a2, a2, a6
 	sub	a1, a1, a2
 	srli	a2, a1, 2
-	and	a1, a1, t0
-	and	a2, a2, t0
+	and	a1, a1, a3
+	and	a2, a2, a3
 	add	a1, a1, a2
 	srli	a2, a1, 4
 	add	a1, a1, a2
 	and	a1, a1, a5
-	mul	a1, a1, a6
+	mul	a1, a1, a4
 	srli	a1, a1, 56
 	addi	a1, a1, 64
 	slli	a0, a0, 49
@@ -73,16 +73,16 @@ func0000000000000019:
 	or	a1, a1, a2
 	not	a1, a1
 	srli	a2, a1, 1
-	and	a2, a2, a7
+	and	a2, a2, a6
 	sub	a1, a1, a2
 	srli	a2, a1, 2
-	and	a1, a1, t0
-	and	a2, a2, t0
+	and	a1, a1, a3
+	and	a2, a2, a3
 	add	a1, a1, a2
 	srli	a2, a1, 4
 	add	a1, a1, a2
 	and	a1, a1, a5
-	mul	a1, a1, a6
+	mul	a1, a1, a4
 	srli	a1, a1, 56
 	slli	a0, a0, 49
 	srli	a2, a0, 49

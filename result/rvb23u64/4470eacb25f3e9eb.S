@@ -1,8 +1,8 @@
 func000000000000000a:
 	srli	a4, a5, 32
 	slli	a5, a5, 32
-	mul	a6, a5, a1
-	mulhu	a1, a5, a0
+	mul	a1, a1, a5
+	mulhu	a6, a5, a0
 	mul	a4, a4, a0
 	mul	a5, a5, a0
 	slli	a0, a3, 32

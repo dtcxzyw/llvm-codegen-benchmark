@@ -10,14 +10,14 @@ func000000000000001f:
 	mulhu	a4, a5, a4
 	mulhu	a3, a1, a3
 	srli	a4, a4, 47
-	lui	a6, 16
-	sub	a5, a1, a3
-	addi	a6, a6, -15
-	srli	a5, a5, 1
-	add	a3, a3, a5
-	mul	a4, a4, a6
+	lui	a5, 16
+	sub	a6, a1, a3
+	addi	a5, a5, -15
+	srli	a6, a6, 1
+	add	a3, a3, a6
+	mul	a4, a4, a5
 	srli	a3, a3, 15
-	mul	a3, a3, a6
+	mul	a3, a3, a5
 	subw	a2, a2, a4
 	sub	a0, a0, a1
 	add	a0, a0, a2

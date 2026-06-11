@@ -19,17 +19,17 @@ func0000000000000017:
 	li	a4, -1
 	slli	a4, a4, 32
 	addi	a4, a4, -1
-	mulhsu	a6, a4, a5
-	slli	a4, a5, 32
+	mulhsu	a4, a4, a5
+	slli	a6, a5, 32
 	sub	a5, a2, a5
-	sub	a5, a5, a4
+	sub	a5, a5, a6
 	sltu	a2, a5, a2
 	add	a3, a3, a2
 	add	a2, a0, a5
 	add	a1, a1, a3
 	sltu	a0, a2, a0
 	add	a0, a0, a1
-	add	a1, a0, a6
+	add	a1, a0, a4
 	mv	a0, a2
 	ret
 
