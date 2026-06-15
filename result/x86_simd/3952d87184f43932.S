@@ -96,19 +96,19 @@ func0000000000000000:
 	.byte	4
 	.byte	2
 .LCPI1_3:
+	.byte	32
 	.byte	16
 	.byte	8
 	.byte	4
 	.byte	2
-	.byte	1
 	.byte	0
 	.byte	0
 	.byte	0
+	.byte	32
 	.byte	16
 	.byte	8
 	.byte	4
 	.byte	2
-	.byte	1
 	.byte	0
 	.byte	0
 	.byte	0
@@ -139,11 +139,11 @@ func0000000000000000:
 	.byte	4
 	.byte	2
 .LCPI1_5:
+	.byte	32
 	.byte	16
 	.byte	8
 	.byte	4
 	.byte	2
-	.byte	1
 	.byte	0
 	.byte	0
 	.byte	0
@@ -154,9 +154,9 @@ func0000000000000001:
 	vpmullw	.LCPI1_1(%rip), %ymm1, %ymm1
 	vpsrlw	$8, %ymm1, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vgf2p8affineqb	$0, .LCPI1_4(%rip){1to2}, %xmm1, %xmm1
-	vgf2p8affineqb	$0, .LCPI1_5(%rip){1to2}, %xmm1, %xmm2
-	vpaddb	%xmm1, %xmm2, %xmm1
+	vgf2p8affineqb	$0, .LCPI1_4(%rip){1to2}, %xmm1, %xmm2
+	vgf2p8affineqb	$0, .LCPI1_5(%rip){1to2}, %xmm1, %xmm1
+	vpaddb	%xmm2, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

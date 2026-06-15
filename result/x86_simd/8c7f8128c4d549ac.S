@@ -112,9 +112,6 @@ func0000000000000001:
 	.byte	4
 	.byte	2
 .LCPI1_2:
-	.byte	0
-	.byte	0
-	.byte	128
 	.byte	64
 	.byte	32
 	.byte	16
@@ -122,29 +119,32 @@ func0000000000000001:
 	.byte	4
 	.byte	0
 	.byte	0
-	.byte	128
+	.byte	0
 	.byte	64
 	.byte	32
 	.byte	16
 	.byte	8
 	.byte	4
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI1_3:
+	.byte	0
+	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
 	.byte	16
 	.byte	8
 	.byte	4
-	.byte	2
-	.byte	1
 	.byte	0
 	.byte	0
-	.byte	0
+	.byte	128
+	.byte	64
+	.byte	32
 	.byte	16
 	.byte	8
 	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	0
 .LCPI1_4:
 	.byte	0
 	.byte	128
@@ -155,6 +155,15 @@ func0000000000000001:
 	.byte	4
 	.byte	2
 .LCPI1_5:
+	.byte	64
+	.byte	32
+	.byte	16
+	.byte	8
+	.byte	4
+	.byte	0
+	.byte	0
+	.byte	0
+.LCPI1_6:
 	.byte	0
 	.byte	0
 	.byte	128
@@ -163,15 +172,6 @@ func0000000000000001:
 	.byte	16
 	.byte	8
 	.byte	4
-.LCPI1_6:
-	.byte	16
-	.byte	8
-	.byte	4
-	.byte	2
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	0
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpmovqb	%ymm0, %xmm0
@@ -182,8 +182,8 @@ func0000000000000005:
 	vpsubb	%xmm1, %xmm0, %xmm2
 	vgf2p8affineqb	$0, .LCPI1_4(%rip){1to2}, %xmm2, %xmm2
 	vpaddb	%xmm1, %xmm2, %xmm1
-	vgf2p8affineqb	$0, .LCPI1_5(%rip){1to2}, %xmm1, %xmm1
-	vgf2p8affineqb	$0, .LCPI1_6(%rip){1to2}, %xmm1, %xmm2
+	vgf2p8affineqb	$0, .LCPI1_5(%rip){1to2}, %xmm1, %xmm2
+	vgf2p8affineqb	$0, .LCPI1_6(%rip){1to2}, %xmm1, %xmm1
 	vpsubb	%xmm2, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
