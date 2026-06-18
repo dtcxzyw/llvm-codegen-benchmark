@@ -5,7 +5,8 @@ func0000000000000004:
 	fmov	d2, x8
 	fmadd	d0, d0, d1, d2
 	fmov	d1, #1.00000000
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, gt
 	ret
 
 .LCPI1_0:

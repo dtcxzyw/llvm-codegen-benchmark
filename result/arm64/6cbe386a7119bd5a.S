@@ -1,7 +1,8 @@
 func0000000000000004:
 	fmov	d1, #1.00000000
 	fdiv	d0, d1, d0
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, gt
 	ret
 
 .LCPI1_0:
@@ -32,12 +33,14 @@ func0000000000000008:
 func000000000000000a:
 	fmov	d1, #1.00000000
 	fdiv	d0, d1, d0
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, ls
 	ret
 
 func000000000000000c:
 	fmov	d1, #1.00000000
 	fdiv	d0, d1, d0
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, ge
 	ret
 

@@ -7,7 +7,8 @@ func00000000000000ca:
 	fadd	d0, d0, d1
 	fmov	d1, x8
 	mov	x8, #-4476578029606273024
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, ge
 	fmov	d1, x8
 	fcmp	d0, d1
 	fcsel	d0, d1, d0, ls
@@ -19,7 +20,8 @@ func0000000000000024:
 	fmov	d1, #1.00000000
 	adrp	x8, .LCPI1_0
 	fadd	d0, d0, d1
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, mi
 	ldr	d1, [x8, :lo12:.LCPI1_0]
 	fcmp	d0, d1
 	fcsel	d0, d1, d0, gt

@@ -1,7 +1,8 @@
 func0000000000000022:
 	fmul	d0, d0, d1
 	fmov	d1, #-1.00000000
-	fmaxnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, mi
 	fmov	d1, #1.00000000
 	fcmp	d0, d1
 	cset	w0, mi
@@ -13,7 +14,8 @@ func0000000000000042:
 	movk	x8, #16863, lsl #48
 	fmov	d1, x8
 	mov	x8, #-4476578029606273024
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, gt
 	fmov	d1, x8
 	fcmp	d0, d1
 	cset	w0, mi
@@ -24,7 +26,8 @@ func0000000000000045:
 	mov	x8, #4636737291354636288
 	fmov	d1, x8
 	mov	x8, #-4582131145872769024
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, gt
 	fmov	d1, x8
 	fcmp	d0, d1
 	cset	w0, hi
@@ -35,7 +38,8 @@ func0000000000000043:
 	mov	x8, #4636737291354636288
 	fmov	d1, x8
 	mov	x8, #4641240890982006784
-	fminnm	d0, d0, d1
+	fcmp	d0, d1
+	fcsel	d0, d1, d0, gt
 	fmov	d1, x8
 	fcmp	d0, d1
 	cset	w0, lt

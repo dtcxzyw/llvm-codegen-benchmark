@@ -2,7 +2,8 @@ func0000000000000042:
 	fmov	s1, #0.50000000
 	fmul	s0, s0, s1
 	fmov	s1, #1.00000000
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, gt
 	fmov	s1, #-1.00000000
 	fcmp	s0, s1
 	cset	w0, mi
@@ -34,7 +35,8 @@ func0000000000000024:
 	fadd	s0, s0, s0
 	movk	w8, #15820, lsl #16
 	fmov	s1, w8
-	fmaxnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, mi
 	fmov	s1, #2.00000000
 	fcmp	s0, s1
 	cset	w0, gt
@@ -61,7 +63,8 @@ func0000000000000047:
 	fmov	s1, w8
 	fmul	s0, s0, s1
 	fmov	s1, #1.00000000
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, gt
 	fcmp	s0, #0.0
 	cset	w0, ne
 	ret
@@ -85,7 +88,8 @@ func0000000000000044:
 	mov	w8, #1132396544
 	fmov	s1, w8
 	fmul	s0, s0, s1
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, gt
 	fcmp	s0, #0.0
 	cset	w0, gt
 	ret

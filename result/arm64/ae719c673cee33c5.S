@@ -5,7 +5,8 @@ func0000000000000042:
 	fmov	s1, w8
 	mov	w8, #49317
 	movk	w8, #49840, lsl #16
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, gt
 	fmov	s1, w8
 	fcmp	s0, s1
 	cset	w0, mi

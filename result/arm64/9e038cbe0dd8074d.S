@@ -12,7 +12,8 @@ func0000000000000004:
 	movk	w8, #17072, lsl #16
 	fadd	s0, s1, s0
 	fmov	s1, w8
-	fminnm	s0, s0, s1
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, gt
 	ret
 
 func0000000000000008:
