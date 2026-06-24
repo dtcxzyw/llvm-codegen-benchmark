@@ -27,8 +27,7 @@ func000000000000000a:
 	ret
 
 func00000000000000aa:
-	add	x8, x1, x2, lsl #8
-	cmp	x8, #0
+	cmn	x1, x2, lsl #8
 	cset	w8, gt
 	and	w0, w0, w8
 	ret

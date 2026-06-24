@@ -1,6 +1,5 @@
 func0000000000000241:
-	sub	x8, x0, x1, asr #3
-	cmp	x8, #0
+	cmp	x0, x1, asr #3
 	cset	w0, eq
 	ret
 
@@ -19,8 +18,7 @@ func0000000000000204:
 	ret
 
 func00000000000002c1:
-	sub	x8, x0, x1, asr #3
-	cmp	x8, #0
+	cmp	x0, x1, asr #3
 	cset	w0, eq
 	ret
 

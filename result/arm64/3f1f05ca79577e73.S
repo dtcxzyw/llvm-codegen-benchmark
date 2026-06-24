@@ -132,8 +132,7 @@ func00000000000002a6:
 
 func0000000000000221:
 	sub	x8, x1, x2
-	add	x8, x0, x8, asr #2
-	cmp	x8, #0
+	cmn	x0, x8, asr #2
 	cset	w0, eq
 	ret
 

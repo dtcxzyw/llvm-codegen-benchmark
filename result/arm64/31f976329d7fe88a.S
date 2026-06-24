@@ -9,8 +9,7 @@ func0000000000000081:
 func0000000000000001:
 	sub	x8, x0, x1
 	lsl	x9, x8, #6
-	sub	x8, x9, x8, lsl #3
-	cmp	x8, #0
+	cmp	x9, x8, lsl #3
 	cset	w0, eq
 	ret
 

@@ -127,8 +127,7 @@ func00000000000002a6:
 	ret
 
 func0000000000000221:
-	add	x8, x0, x1, asr #2
-	cmp	x8, #0
+	cmn	x0, x1, asr #2
 	cset	w0, eq
 	ret
 

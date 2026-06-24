@@ -50,8 +50,7 @@ func0000000000000006:
 	ret
 
 func0000000000000021:
-	add	x8, x0, x1, lsl #12
-	cmp	x8, #0
+	cmn	x0, x1, lsl #12
 	cset	w0, eq
 	ret
 

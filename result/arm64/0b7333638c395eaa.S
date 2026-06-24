@@ -49,8 +49,7 @@ func0000000000000046:
 
 func000000000000000c:
 	lsl	x8, x0, #3
-	sub	x8, x8, x0, lsl #5
-	cmp	x8, #0
+	cmp	x8, x0, lsl #5
 	cset	w0, ne
 	ret
 

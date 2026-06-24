@@ -1,7 +1,6 @@
 func0000000000000029:
-	add	w8, w1, w2, lsl #4
+	adds	w8, w1, w2, lsl #4
 	add	w9, w8, #15
-	cmp	w8, #0
 	csel	w8, w9, w8, mi
 	add	w0, w0, w8, asr #4
 	ret
@@ -18,9 +17,8 @@ func0000000000000020:
 	ret
 
 func0000000000000028:
-	add	w8, w1, w2, lsl #3
+	adds	w8, w1, w2, lsl #3
 	add	w9, w8, #7
-	cmp	w8, #0
 	csel	w8, w9, w8, mi
 	add	w0, w0, w8, asr #3
 	ret

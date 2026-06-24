@@ -1,7 +1,6 @@
 func00000000000002aa:
 	sub	w8, w1, w2
-	add	w8, w0, w8, lsl #5
-	cmp	w8, #0
+	cmn	w0, w8, lsl #5
 	cset	w0, gt
 	ret
 

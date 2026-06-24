@@ -9,8 +9,7 @@ func00000000000000a8:
 
 func0000000000000001:
 	sub	w8, w1, w2
-	add	w8, w0, w8, lsl #4
-	cmp	w8, #0
+	cmn	w0, w8, lsl #4
 	cset	w0, eq
 	ret
 

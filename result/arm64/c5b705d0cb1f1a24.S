@@ -13,8 +13,7 @@ func000000000000002a:
 	cmp	w0, #0
 	and	w9, w1, #0x1
 	csel	w8, w8, w0, mi
-	add	w8, w9, w8, asr #5
-	cmp	w8, #0
+	cmn	w9, w8, asr #5
 	cset	w0, gt
 	ret
 

@@ -1,7 +1,6 @@
 func000000000000000c:
 	mul	w8, w1, w0
-	add	w8, w8, w8, lsl #1
-	cmp	w8, #0
+	cmn	w8, w8, lsl #1
 	cset	w0, ne
 	ret
 

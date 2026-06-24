@@ -6,8 +6,7 @@ func000000000000008a:
 
 func000000000000002a:
 	lsl	w8, w1, #3
-	add	w8, w0, w8, asr #8
-	cmp	w8, #0
+	cmn	w0, w8, asr #8
 	cset	w0, gt
 	ret
 

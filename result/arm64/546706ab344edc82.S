@@ -9,14 +9,12 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	add	x8, x0, x1, lsl #7
-	cmp	x8, #0
+	cmn	x0, x1, lsl #7
 	cset	w0, eq
 	ret
 
 func000000000000000c:
-	add	x8, x0, x1, lsl #3
-	cmp	x8, #0
+	cmn	x0, x1, lsl #3
 	cset	w0, ne
 	ret
 

@@ -19,8 +19,7 @@ func00000000000000a1:
 	ret
 
 func0000000000000001:
-	add	w8, w0, w1, lsl #4
-	cmp	w8, #0
+	cmn	w0, w1, lsl #4
 	cset	w0, eq
 	ret
 

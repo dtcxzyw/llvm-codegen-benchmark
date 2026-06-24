@@ -57,8 +57,7 @@ func0000000000000184:
 	ret
 
 func00000000000000aa:
-	add	w8, w0, w1, lsl #5
-	cmp	w8, #0
+	cmn	w0, w1, lsl #5
 	cset	w0, gt
 	ret
 

@@ -108,8 +108,7 @@ func000000000000002a:
 	smulh	x8, x1, x8
 	asr	x9, x8, #26
 	add	x8, x9, x8, lsr #63
-	add	x8, x8, x0, asr #61
-	cmp	x8, #0
+	cmn	x8, x0, asr #61
 	cset	w0, gt
 	ret
 

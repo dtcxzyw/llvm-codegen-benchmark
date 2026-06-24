@@ -69,8 +69,7 @@ func0000000000000008:
 
 func00000000000000aa:
 	sub	x8, x1, x2
-	add	x8, x0, x8, lsl #3
-	cmp	x8, #0
+	cmn	x0, x8, lsl #3
 	cset	w0, gt
 	ret
 

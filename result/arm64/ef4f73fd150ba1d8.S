@@ -19,8 +19,7 @@ func000000000000000c:
 
 func000000000000008c:
 	mov	w8, w1
-	add	x8, x0, x8, lsl #7
-	cmp	x8, #0
+	cmn	x0, x8, lsl #7
 	cset	w0, ne
 	ret
 
