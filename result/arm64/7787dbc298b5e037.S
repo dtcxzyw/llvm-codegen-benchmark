@@ -24,8 +24,8 @@ func0000000000000008:
 	ret
 
 func0000000000000028:
-	cmp	x0, #4
-	sbcs	xzr, x1, xzr
+	cmp	x1, #0
+	ccmp	x0, #4, #2, eq
 	cset	w0, lo
 	ret
 

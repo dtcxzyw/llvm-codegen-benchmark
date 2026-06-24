@@ -7,20 +7,20 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	orr	x9, x0, x2
 	orr	x8, x1, x3
-	cmp	x9, #10
-	sbcs	xzr, x8, xzr
+	orr	x9, x0, x2
+	cmp	x8, #0
+	ccmp	x9, #10, #2, eq
 	cset	w0, lo
 	ret
 
 func0000000000000028:
-	mov	w8, #99
+	orr	x8, x1, x3
 	orr	x9, x0, x2
-	orr	x10, x1, x3
-	cmp	x8, x9
-	ngcs	xzr, x10
-	cset	w0, lo
+	cmp	x8, #0
+	mov	w8, #99
+	ccmp	x9, x8, #2, eq
+	cset	w0, hi
 	ret
 
 func000000000000002c:
@@ -46,13 +46,13 @@ func0000000000000038:
 	ret
 
 func0000000000000034:
-	mov	x8, #2313682944
+	orr	x8, x1, x3
 	orr	x9, x0, x2
-	orr	x10, x1, x3
+	cmp	x8, #0
+	mov	x8, #2313682944
 	movk	x8, #8964, lsl #32
 	movk	x8, #35527, lsl #48
-	cmp	x9, x8
-	sbcs	xzr, x10, xzr
+	ccmp	x9, x8, #2, eq
 	cset	w0, lo
 	ret
 

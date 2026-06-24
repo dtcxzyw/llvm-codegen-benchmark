@@ -1,8 +1,7 @@
 func0000000000000004:
-	mov	x8, #-9223372036854775808
-	cmp	x0, x8
-	sbcs	xzr, x1, xzr
-	cset	w0, lo
+	cmp	x1, #0
+	ccmn	x0, #1, #4, eq
+	cset	w0, gt
 	ret
 
 func000000000000000a:
@@ -33,15 +32,14 @@ func0000000000000014:
 
 func0000000000000008:
 	mov	w8, #99
-	cmp	x8, x0
-	ngcs	xzr, x1
-	cset	w0, lo
+	cmp	x1, #0
+	ccmp	x0, x8, #2, eq
+	cset	w0, hi
 	ret
 
 func0000000000000018:
-	mov	w8, #9
-	cmp	x8, x0
-	ngcs	xzr, x1
-	cset	w0, lo
+	cmp	x1, #0
+	ccmp	x0, #9, #2, eq
+	cset	w0, hi
 	ret
 

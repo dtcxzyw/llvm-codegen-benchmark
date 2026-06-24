@@ -5,16 +5,16 @@ func00000000000000a1:
 	ret
 
 func00000000000000a4:
-	cmp	x0, #10
-	sbcs	xzr, x1, xzr
+	cmp	x1, #0
+	ccmp	x0, #10, #2, eq
 	cset	w0, lo
 	ret
 
 func00000000000000a8:
 	mov	w8, #99
-	cmp	x8, x0
-	ngcs	xzr, x1
-	cset	w0, lo
+	cmp	x1, #0
+	ccmp	x0, x8, #2, eq
+	cset	w0, hi
 	ret
 
 func00000000000000ac:
@@ -37,10 +37,10 @@ func00000000000000b8:
 
 func00000000000000b4:
 	mov	x8, #2313682944
+	cmp	x1, #0
 	movk	x8, #8964, lsl #32
 	movk	x8, #35527, lsl #48
-	cmp	x0, x8
-	sbcs	xzr, x1, xzr
+	ccmp	x0, x8, #2, eq
 	cset	w0, lo
 	ret
 

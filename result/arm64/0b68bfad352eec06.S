@@ -1,6 +1,6 @@
 func0000000000000004:
-	cmp	x2, #9
-	sbcs	xzr, x3, xzr
+	cmp	x3, #0
+	ccmp	x2, #9, #2, eq
 	cset	w8, lo
 	and	w0, w8, w0
 	ret

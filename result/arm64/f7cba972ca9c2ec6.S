@@ -1,8 +1,8 @@
 func0000000000000024:
 	cmp	x0, #9
 	mov	w8, #5
-	sbcs	xzr, x1, xzr
-	csel	x0, x0, x8, lo
+	ccmp	x1, #0, #0, lo
+	csel	x0, x0, x8, eq
 	ret
 
 func0000000000000044:

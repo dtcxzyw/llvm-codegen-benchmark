@@ -7,17 +7,17 @@ func00000000000000a1:
 
 func00000000000000a4:
 	orr	x8, x2, x1
-	cmp	x0, #10
-	sbcs	xzr, x8, xzr
+	cmp	x8, #0
+	ccmp	x0, #10, #2, eq
 	cset	w0, lo
 	ret
 
 func00000000000000a8:
+	orr	x8, x2, x1
+	cmp	x8, #0
 	mov	w8, #99
-	orr	x9, x2, x1
-	cmp	x8, x0
-	ngcs	xzr, x9
-	cset	w0, lo
+	ccmp	x0, x8, #2, eq
+	cset	w0, hi
 	ret
 
 func00000000000000ac:
@@ -41,12 +41,12 @@ func00000000000000b8:
 	ret
 
 func00000000000000b4:
+	orr	x8, x2, x1
+	cmp	x8, #0
 	mov	x8, #2313682944
-	orr	x9, x2, x1
 	movk	x8, #8964, lsl #32
 	movk	x8, #35527, lsl #48
-	cmp	x0, x8
-	sbcs	xzr, x9, xzr
+	ccmp	x0, x8, #2, eq
 	cset	w0, lo
 	ret
 
