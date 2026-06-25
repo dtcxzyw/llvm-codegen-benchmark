@@ -23,8 +23,8 @@ func0000000000000014:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	leal	-1(%rdi), %eax
-	xorb	%al, %dil
-	cmpb	%al, %dil
+	blsmskl	%edi, %ecx
+	cmpb	%al, %cl
 	seta	%al
 	retq
 

@@ -41,8 +41,7 @@ func0000000000000003:
 	.zero	4,128
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0
-	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm0, %xmm0
+	vgf2p8affineqb	$192, .LCPI1_2(%rip){1to2}, %xmm0, %xmm0
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0
 	retq
 
