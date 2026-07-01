@@ -50,9 +50,8 @@ func000000000000000c:
 func000000000000000e:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k2
-	vcmpordpd	%zmm2, %zmm1, %k3
+	vcmpordpd	%zmm0, %zmm0, %k2
+	vcmpordpd	%zmm1, %zmm1, %k3
 	vmovapd	%zmm1, %zmm1 {%k3} {z}
 	vmovapd	%zmm0, %zmm0 {%k2} {z}
 	vsubpd	%zmm3, %zmm0, %zmm0 {%k1}

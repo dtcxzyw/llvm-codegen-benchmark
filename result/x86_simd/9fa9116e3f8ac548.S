@@ -9,8 +9,8 @@ func000000000000002e:
 	vcmpltpd	%zmm3, %zmm1, %k2
 	vaddpd	%zmm2, %zmm1, %zmm1 {%k2}
 	vaddpd	%zmm2, %zmm0, %zmm0 {%k1}
-	vcmpordpd	%zmm3, %zmm0, %k0
-	vcmpordpd	%zmm3, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -26,8 +26,8 @@ func0000000000000021:
 	vcmpltpd	%zmm3, %zmm1, %k2
 	vaddpd	%zmm2, %zmm1, %zmm1 {%k2}
 	vaddpd	%zmm2, %zmm0, %zmm0 {%k1}
-	vcmpunordpd	%zmm3, %zmm0, %k0
-	vcmpunordpd	%zmm3, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

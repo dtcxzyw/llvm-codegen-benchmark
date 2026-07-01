@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000e2:
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm3, %k1
-	vcmpordpd	%zmm4, %zmm2, %k2
 	vmovapd	%zmm2, %zmm2 {%k2} {z}
 	vmovapd	%zmm3, %zmm3 {%k1} {z}
 	vaddpd	%zmm1, %zmm3, %zmm1
@@ -31,15 +31,14 @@ func0000000000000044:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e1:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm3, %k1
-	vcmpordpd	%zmm4, %zmm2, %k2
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vmovapd	%zmm2, %zmm2 {%k2} {z}
 	vmovapd	%zmm3, %zmm3 {%k1} {z}
 	vaddpd	%zmm1, %zmm3, %zmm1
 	vaddpd	%zmm0, %zmm2, %zmm0
-	vcmpunordpd	%zmm4, %zmm0, %k0
-	vcmpunordpd	%zmm4, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -47,15 +46,14 @@ func00000000000000e1:
 
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ee:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm3, %k1
-	vcmpordpd	%zmm4, %zmm2, %k2
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vmovapd	%zmm2, %zmm2 {%k2} {z}
 	vmovapd	%zmm3, %zmm3 {%k1} {z}
 	vaddpd	%zmm3, %zmm1, %zmm1
 	vaddpd	%zmm2, %zmm0, %zmm0
-	vcmpordpd	%zmm4, %zmm0, %k0
-	vcmpordpd	%zmm4, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -70,8 +68,8 @@ func00000000000000ce:
 	vmovapd	%zmm3, %zmm3 {%k1} {z}
 	vaddpd	%zmm3, %zmm1, %zmm1
 	vaddpd	%zmm2, %zmm0, %zmm0
-	vcmpordpd	%zmm4, %zmm0, %k0
-	vcmpordpd	%zmm4, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

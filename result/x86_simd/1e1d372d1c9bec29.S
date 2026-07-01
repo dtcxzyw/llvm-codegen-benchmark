@@ -77,16 +77,15 @@ func0000000000000222:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000111:
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpunordpd	%zmm6, %zmm4, %k0
-	vcmpunordpd	%zmm6, %zmm5, %k1
+	vcmpunordpd	%zmm4, %zmm4, %k0
+	vcmpunordpd	%zmm5, %zmm5, %k1
 	kunpckbw	%k0, %k1, %k0
-	vcmpunordpd	%zmm6, %zmm2, %k1
-	vcmpunordpd	%zmm6, %zmm3, %k2
+	vcmpunordpd	%zmm2, %zmm2, %k1
+	vcmpunordpd	%zmm3, %zmm3, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
-	vcmpunordpd	%zmm6, %zmm0, %k1
-	vcmpunordpd	%zmm6, %zmm1, %k2
+	vcmpunordpd	%zmm0, %zmm0, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0

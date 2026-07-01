@@ -113,8 +113,7 @@ func000000000000002e:
 	vpmovb2m	%xmm0, %k0
 	vbroadcastss	.LCPI7_0(%rip), %zmm0
 	vmaxps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

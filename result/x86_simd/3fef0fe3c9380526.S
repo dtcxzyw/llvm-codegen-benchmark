@@ -24,8 +24,7 @@ func0000000000000004:
 	.zero	16,7
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq

@@ -76,8 +76,7 @@ func000000000000000c:
 func0000000000000001:
 	vaddps	%zmm1, %zmm0, %zmm0
 	vmulps	.LCPI6_0(%rip){1to16}, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k0
+	vcmpunordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

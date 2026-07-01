@@ -28,13 +28,12 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ee:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
-	vcmpordpd	%zmm4, %zmm0, %k1
-	vcmpordpd	%zmm4, %zmm1, %k2
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	vmovapd	%zmm1, %zmm1 {%k2} {z}
 	vmulpd	%zmm3, %zmm1, %zmm1
 	vmovapd	%zmm0, %zmm0 {%k1} {z}

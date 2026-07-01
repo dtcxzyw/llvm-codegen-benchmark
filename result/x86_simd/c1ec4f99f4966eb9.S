@@ -39,12 +39,11 @@ func0000000000000044:
 func0000000000000011:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordpd	%zmm0, %zmm3, %k1
-	vcmpunordpd	%zmm0, %zmm4, %k2
+	vcmpunordpd	%zmm3, %zmm3, %k1
+	vcmpunordpd	%zmm4, %zmm4, %k2
 	kunpckbw	%k1, %k2, %k1
-	vcmpunordpd	%zmm0, %zmm1, %k2
-	vcmpunordpd	%zmm0, %zmm2, %k3
+	vcmpunordpd	%zmm1, %zmm1, %k2
+	vcmpunordpd	%zmm2, %zmm2, %k3
 	kunpckbw	%k2, %k3, %k2
 	kandw	%k2, %k1, %k1
 	kandnw	%k0, %k2, %k0

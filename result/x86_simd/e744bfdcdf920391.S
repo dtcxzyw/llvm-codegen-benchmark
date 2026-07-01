@@ -3,8 +3,7 @@
 func00000000000000b0:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordps	%ymm0, %ymm2, %k1
+	vcmpunordps	%ymm2, %ymm2, %k1
 	vptestmd	%ymm1, %ymm1, %k2
 	korb	%k1, %k2, %k1
 	korb	%k0, %k1, %k0

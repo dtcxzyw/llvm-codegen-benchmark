@@ -80,9 +80,8 @@ func00000000000000aa:
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ee:
 	vaddps	%zmm2, %zmm1, %zmm1
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%zmm2, %zmm0, %k1
-	vcmpordps	%zmm2, %zmm1, %k0 {%k1}
+	vcmpordps	%zmm0, %zmm0, %k1
+	vcmpordps	%zmm1, %zmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

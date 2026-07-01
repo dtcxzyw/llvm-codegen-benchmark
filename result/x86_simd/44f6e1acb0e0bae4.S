@@ -37,9 +37,8 @@ func000000000000000c:
 func000000000000000e:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordpd	%zmm0, %zmm1, %k1
-	vcmpordpd	%zmm0, %zmm2, %k2
+	vcmpordpd	%zmm1, %zmm1, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vmovapd	%zmm2, %zmm2 {%k2} {z}
 	vmovapd	%zmm1, %zmm0 {%k1} {z}
 	knotw	%k0, %k1

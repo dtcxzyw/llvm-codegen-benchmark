@@ -3,8 +3,7 @@
 func0000000000000001:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordps	%ymm0, %ymm1, %k0 {%k1}
+	vcmpunordps	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -24,8 +23,7 @@ func0000000000000008:
 func000000000000000e:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordps	%ymm0, %ymm1, %k0 {%k1}
+	vcmpordps	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

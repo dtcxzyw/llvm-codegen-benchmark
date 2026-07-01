@@ -45,15 +45,15 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ee:
+	vcmpordpd	%zmm1, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k2
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm1, %k1
-	vcmpordpd	%zmm2, %zmm0, %k2
 	vmovapd	%zmm0, %zmm0 {%k2} {z}
 	vmovapd	%zmm1, %zmm1 {%k1} {z}
 	vmulpd	%zmm2, %zmm1, %zmm1
 	vmulpd	%zmm2, %zmm0, %zmm0
-	vcmpordpd	%zmm2, %zmm0, %k0
-	vcmpordpd	%zmm2, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

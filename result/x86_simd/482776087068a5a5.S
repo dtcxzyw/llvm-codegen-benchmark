@@ -19,9 +19,8 @@ func000000000000000e:
 	vaddpd	%zmm2, %zmm2, %zmm2
 	vdivpd	%zmm2, %zmm0, %zmm0
 	vdivpd	%zmm3, %zmm1, %zmm1
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm1, %k1
-	vcmpordpd	%zmm2, %zmm0, %k2
+	vcmpordpd	%zmm1, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k2
 	vmovapd	%zmm0, %zmm0 {%k2} {z}
 	vmovapd	%zmm1, %zmm1 {%k1} {z}
 	retq

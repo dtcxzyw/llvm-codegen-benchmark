@@ -54,8 +54,7 @@ func000000000000000b:
 func0000000000000001:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k0 {%k1}
+	vcmpunordps	%zmm0, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

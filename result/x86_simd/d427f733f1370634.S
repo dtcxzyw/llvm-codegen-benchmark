@@ -37,9 +37,8 @@ func0000000000000002:
 func000000000000000e:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordpd	%zmm0, %zmm1, %k2
-	vcmpordpd	%zmm0, %zmm2, %k3
+	vcmpordpd	%zmm1, %zmm1, %k2
+	vcmpordpd	%zmm2, %zmm2, %k3
 	vmovapd	%zmm2, %zmm2 {%k3} {z}
 	vmovapd	%zmm1, %zmm0 {%k2} {z}
 	vbroadcastsd	.LCPI2_0(%rip), %zmm1

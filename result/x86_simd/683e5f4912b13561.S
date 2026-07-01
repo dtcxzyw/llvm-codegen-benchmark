@@ -44,8 +44,7 @@ func000000000000000e:
 	vpmovb2m	%xmm0, %k1
 	vbroadcastss	.LCPI3_0(%rip), %zmm0
 	vsubps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k0 {%k1}
+	vcmpordps	%zmm0, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

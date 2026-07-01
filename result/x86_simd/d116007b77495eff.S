@@ -95,9 +95,8 @@ func000000000000002a:
 
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000000e5:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmpnlepd	%zmm2, %zmm0, %k0
@@ -109,9 +108,8 @@ func00000000000000e5:
 
 	.prefalign	4, .Lfunc_end8, nop
 func00000000000000e3:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmpnlepd	%zmm0, %zmm2, %k0
@@ -123,9 +121,8 @@ func00000000000000e3:
 
 	.prefalign	4, .Lfunc_end9, nop
 func00000000000000ed:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmpnltpd	%zmm2, %zmm0, %k0
@@ -137,9 +134,8 @@ func00000000000000ed:
 
 	.prefalign	4, .Lfunc_end10, nop
 func00000000000000ec:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmplepd	%zmm0, %zmm2, %k0

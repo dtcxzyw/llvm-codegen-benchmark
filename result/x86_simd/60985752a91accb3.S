@@ -101,9 +101,8 @@ func00000000000000e5:
 	vbroadcastsd	.LCPI5_0(%rip), %zmm4
 	vmulpd	%zmm4, %zmm3, %zmm3
 	vmulpd	%zmm4, %zmm2, %zmm2
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmpnlepd	%zmm2, %zmm0, %k0
@@ -120,9 +119,8 @@ func00000000000000ec:
 	vbroadcastsd	.LCPI6_0(%rip), %zmm4
 	vmulpd	%zmm4, %zmm3, %zmm3
 	vmulpd	%zmm4, %zmm2, %zmm2
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmplepd	%zmm0, %zmm2, %k0
@@ -139,9 +137,8 @@ func00000000000000e3:
 	vbroadcastsd	.LCPI7_0(%rip), %zmm4
 	vmulpd	%zmm4, %zmm3, %zmm3
 	vmulpd	%zmm4, %zmm2, %zmm2
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm2, %k1
-	vcmpordpd	%zmm4, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmpnlepd	%zmm0, %zmm2, %k0

@@ -31,9 +31,8 @@ func0000000000000104:
 	vcmpltpd	%zmm1, %zmm0, %k1
 	vcmpltpd	%zmm2, %zmm0, %k2
 	kunpckbw	%k1, %k2, %k1
-	vxorpd	%xmm0, %xmm0, %xmm0
-	vcmpunordpd	%zmm0, %zmm1, %k2
-	vcmpunordpd	%zmm0, %zmm2, %k3
+	vcmpunordpd	%zmm1, %zmm1, %k2
+	vcmpunordpd	%zmm2, %zmm2, %k3
 	kunpckbw	%k2, %k3, %k2
 	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0

@@ -78,10 +78,9 @@ func0000000000000001:
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordps	%zmm0, %zmm2, %k2 {%k1}
 	kandnw	%k0, %k1, %k0
-	korw	%k0, %k2, %k0
+	vcmpunordps	%zmm2, %zmm2, %k1 {%k1}
+	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -92,10 +91,9 @@ func000000000000000e:
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordps	%zmm0, %zmm2, %k2 {%k1}
 	kandnw	%k0, %k1, %k0
-	korw	%k0, %k2, %k0
+	vcmpordps	%zmm2, %zmm2, %k1 {%k1}
+	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

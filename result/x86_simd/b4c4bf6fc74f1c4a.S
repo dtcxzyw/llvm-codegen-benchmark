@@ -23,8 +23,7 @@ func0000000000000004:
 func000000000000000e:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordps	%zmm0, %zmm2, %k2
+	vcmpordps	%zmm2, %zmm2, %k2
 	vmovaps	%zmm2, %zmm0 {%k2} {z}
 	vmovaps	%zmm1, %zmm0 {%k1}
 	retq

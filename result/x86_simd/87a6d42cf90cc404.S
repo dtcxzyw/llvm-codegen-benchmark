@@ -25,9 +25,8 @@ func0000000000000004:
 func0000000000000001:
 	vsubpd	%zmm2, %zmm0, %zmm0
 	vsubpd	%zmm3, %zmm1, %zmm1
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm1, %k1
-	vcmpunordpd	%zmm2, %zmm0, %k2
+	vcmpunordpd	%zmm1, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k2
 	vbroadcastsd	.LCPI2_0(%rip), %zmm2
 	vmovapd	%zmm2, %zmm0 {%k2}
 	vmovapd	%zmm2, %zmm1 {%k1}

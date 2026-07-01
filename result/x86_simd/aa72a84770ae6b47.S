@@ -3,8 +3,7 @@
 func0000000000000021:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vminps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k0
+	vcmpunordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

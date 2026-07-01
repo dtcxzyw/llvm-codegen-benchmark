@@ -66,8 +66,7 @@ func0000000000000006:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000002:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	vmovdqu8	.LCPI6_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq
@@ -86,8 +85,7 @@ func0000000000000018:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000001c:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	vmovdqu8	.LCPI8_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq

@@ -18,8 +18,7 @@ func0000000000000014:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000001c:
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpordpd	%zmm1, %zmm0, %k0
+	vcmpordpd	%zmm0, %zmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
@@ -101,8 +100,7 @@ func0000000000000016:
 
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000002:
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpunordpd	%zmm1, %zmm0, %k0
+	vcmpunordpd	%zmm0, %zmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

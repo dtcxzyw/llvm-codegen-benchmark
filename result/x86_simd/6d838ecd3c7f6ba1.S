@@ -60,9 +60,8 @@ func000000000000000e:
 	vmovapd	%zmm0, %zmm1 {%k1}
 	kshiftrw	$8, %k1, %k1
 	vmovapd	%zmm0, %zmm2 {%k1}
-	vxorpd	%xmm0, %xmm0, %xmm0
-	vcmpordpd	%zmm0, %zmm2, %k1
-	vcmpordpd	%zmm0, %zmm1, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	vmovapd	%zmm1, %zmm0 {%k2} {z}
 	vmovapd	%zmm2, %zmm1 {%k1} {z}
 	retq

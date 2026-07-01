@@ -36,8 +36,7 @@ func0000000000000088:
 func0000000000000044:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vcmpltps	.LCPI2_0(%rip){1to16}, %zmm0, %k1
 	korw	%k0, %k1, %k0
@@ -82,8 +81,7 @@ func0000000000000298:
 func0000000000000050:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vcmpeqps	.LCPI5_0(%rip){1to16}, %zmm0, %k1
 	korw	%k0, %k1, %k0

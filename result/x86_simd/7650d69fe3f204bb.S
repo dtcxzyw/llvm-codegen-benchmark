@@ -66,13 +66,12 @@ func00000000000001a5:
 func000000000000002e:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm3, %k1
-	vcmpunordpd	%zmm2, %zmm4, %k2
+	vcmpunordpd	%zmm3, %zmm3, %k1
+	vcmpunordpd	%zmm4, %zmm4, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
-	vcmpordpd	%zmm2, %zmm0, %k1
-	vcmpordpd	%zmm2, %zmm1, %k2
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -123,9 +122,8 @@ func00000000000000c6:
 func0000000000000026:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm3, %k1
-	vcmpunordpd	%zmm2, %zmm4, %k2
+	vcmpunordpd	%zmm3, %zmm3, %k1
+	vcmpunordpd	%zmm4, %zmm4, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI6_0(%rip), %zmm2
@@ -162,9 +160,8 @@ func00000000000000cc:
 func000000000000002c:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordpd	%zmm0, %zmm3, %k1
-	vcmpunordpd	%zmm0, %zmm4, %k2
+	vcmpunordpd	%zmm3, %zmm3, %k1
+	vcmpunordpd	%zmm4, %zmm4, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI8_0(%rip), %zmm0

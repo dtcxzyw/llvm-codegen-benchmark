@@ -115,9 +115,8 @@ func0000000000000003:
 func000000000000000e:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm1, %k0
-	vcmpordpd	%zmm4, %zmm2, %k1
+	vcmpordpd	%zmm1, %zmm1, %k0
+	vcmpordpd	%zmm2, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
@@ -128,9 +127,8 @@ func000000000000000e:
 func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm1, %k0
-	vcmpunordpd	%zmm4, %zmm2, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k0
+	vcmpunordpd	%zmm2, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

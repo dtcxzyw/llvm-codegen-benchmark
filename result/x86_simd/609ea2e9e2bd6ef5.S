@@ -74,8 +74,7 @@ func0000000000000121:
 	.long	33
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000021:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm1, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k0
 	vpcmpeqd	.LCPI6_0(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

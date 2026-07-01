@@ -88,9 +88,8 @@ func0000000000000090:
 
 	.prefalign	4, .Lfunc_end8, nop
 func00000000000001dc:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%zmm2, %zmm1, %k0
-	vcmpordps	%zmm2, %zmm0, %k1
+	vcmpordps	%zmm1, %zmm1, %k0
+	vcmpordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -206,8 +205,7 @@ func0000000000000132:
 	.prefalign	4, .Lfunc_end18, nop
 func0000000000000042:
 	vcmpltps	.LCPI18_0(%rip){1to16}, %zmm1, %k0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -290,7 +288,7 @@ func00000000000000f0:
 func00000000000000e2:
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%zmm2, %zmm1, %k0
-	vcmpunordps	%zmm2, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

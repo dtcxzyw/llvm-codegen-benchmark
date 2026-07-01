@@ -66,11 +66,11 @@ func000000000000008c:
 	.long	0x7fc00000
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000013:
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpunordps	%zmm3, %zmm2, %k1
+	vcmpunordps	%zmm2, %zmm2, %k1
+	vxorps	%xmm2, %xmm2, %xmm2
 	vbroadcastss	.LCPI5_0(%rip), %zmm1 {%k1}
 	vmulps	%zmm1, %zmm0, %zmm0
-	vcmpnleps	%zmm0, %zmm3, %k0
+	vcmpnleps	%zmm0, %zmm2, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -21,8 +21,7 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%zmm2, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vaddps	%zmm1, %zmm1, %zmm0
 	retq

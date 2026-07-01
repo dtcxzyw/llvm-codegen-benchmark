@@ -152,9 +152,8 @@ func000000000000005e:
 	vcmpnlepd	%zmm2, %zmm0, %k0
 	vcmpnlepd	%zmm3, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k1
-	vcmpordpd	%zmm2, %zmm1, %k2
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -194,9 +193,8 @@ func000000000000003e:
 	vcmpnlepd	%zmm0, %zmm2, %k0
 	vcmpnlepd	%zmm1, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k1
-	vcmpordpd	%zmm2, %zmm1, %k2
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0

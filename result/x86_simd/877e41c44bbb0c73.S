@@ -58,9 +58,8 @@ func0000000000000001:
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k1
-	vcmpunordpd	%zmm4, %zmm3, %k2
+	vcmpunordpd	%zmm2, %zmm2, %k1
+	vcmpunordpd	%zmm3, %zmm3, %k2
 	kunpckbw	%k1, %k2, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k2 {%k1}
 	kandnw	%k0, %k1, %k0

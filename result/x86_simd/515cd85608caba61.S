@@ -66,8 +66,7 @@ func0000000000000132:
 func0000000000000242:
 	vandps	.LCPI4_0(%rip){1to16}, %zmm1, %zmm1
 	vcmpltps	.LCPI4_1(%rip){1to16}, %zmm1, %k0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

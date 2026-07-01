@@ -80,9 +80,8 @@ func000000000000000e:
 	vbroadcastsd	.LCPI4_1(%rip), %zmm3
 	vfmadd213pd	%zmm2, %zmm3, %zmm1
 	vfmadd213pd	%zmm2, %zmm3, %zmm0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k0
-	vcmpordpd	%zmm2, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

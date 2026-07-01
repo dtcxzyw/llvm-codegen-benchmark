@@ -253,8 +253,7 @@ func0000000000000074:
 	.long	0x3f800000
 	.prefalign	4, .Lfunc_end22, nop
 func000000000000007e:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	vcmpneqps	.LCPI22_0(%rip){1to16}, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

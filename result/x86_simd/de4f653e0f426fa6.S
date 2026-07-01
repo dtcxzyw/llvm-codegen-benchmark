@@ -47,9 +47,8 @@ func000000000000000e:
 	vbroadcastsd	.LCPI2_0(%rip), %zmm0
 	vmulpd	%zmm0, %zmm2, %zmm2
 	vmulpd	%zmm0, %zmm1, %zmm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpordpd	%zmm1, %zmm0, %k1
-	vcmpordpd	%zmm1, %zmm2, %k2
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
 	knotw	%k0, %k0
 	korw	%k1, %k0, %k0

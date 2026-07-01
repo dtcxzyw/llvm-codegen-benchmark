@@ -15,8 +15,7 @@ func0000000000000066:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000042:
 	vmulps	%zmm2, %zmm1, %zmm1
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpunordps	%zmm2, %zmm1, %k0
+	vcmpunordps	%zmm1, %zmm1, %k0
 	vcmpltps	.LCPI1_0(%rip){1to16}, %zmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0

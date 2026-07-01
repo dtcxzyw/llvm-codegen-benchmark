@@ -84,8 +84,7 @@ func000000000000010c:
 	.quad	-1970324836974592
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000024:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%ymm2, %ymm1, %k1
+	vcmpunordpd	%ymm1, %ymm1, %k1
 	vpcmpltuq	.LCPI8_0(%rip){1to4}, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

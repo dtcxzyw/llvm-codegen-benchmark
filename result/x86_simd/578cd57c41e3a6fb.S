@@ -32,8 +32,7 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpunordps	%ymm3, %ymm2, %k1
+	vcmpunordps	%ymm2, %ymm2, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 

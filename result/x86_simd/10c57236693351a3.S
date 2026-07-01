@@ -45,8 +45,8 @@ func0000000000000001:
 	vmulpd	%zmm4, %zmm3, %zmm3
 	vaddpd	%zmm3, %zmm1, %zmm1
 	vaddpd	%zmm2, %zmm0, %zmm0
-	vcmpunordpd	%zmm4, %zmm0, %k0
-	vcmpunordpd	%zmm4, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

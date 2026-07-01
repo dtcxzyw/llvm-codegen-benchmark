@@ -119,8 +119,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000000e:
 	vaddps	.LCPI10_0(%rip){1to16}, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k0
+	vcmpordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -14,8 +14,7 @@ func0000000000000101:
 	.long	2
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000001cc:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k1
+	vcmpordpd	%zmm0, %zmm0, %k1
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

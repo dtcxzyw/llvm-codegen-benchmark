@@ -50,8 +50,7 @@ func000000000000000e:
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpordps	%zmm3, %zmm2, %k1
+	vcmpordps	%zmm2, %zmm2, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k2 {%k1}
 	kandnw	%k0, %k1, %k0
 	korw	%k0, %k2, %k0
@@ -81,8 +80,7 @@ func0000000000000001:
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpunordps	%zmm3, %zmm2, %k1
+	vcmpunordps	%zmm2, %zmm2, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k2 {%k1}
 	kandnw	%k0, %k1, %k0
 	korw	%k0, %k2, %k0

@@ -44,8 +44,7 @@ func0000000000000002:
 	.long	0x80000000
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000e:
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpordps	%zmm3, %zmm2, %k1
+	vcmpordps	%zmm2, %zmm2, %k1
 	vmovaps	%zmm0, %zmm1 {%k1}
 	vxorps	.LCPI4_0(%rip){1to16}, %zmm1, %zmm0
 	retq

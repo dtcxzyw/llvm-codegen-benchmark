@@ -12,8 +12,7 @@ func0000000000000005:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vdivpd	%ymm0, %ymm1, %ymm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpunordpd	%ymm1, %ymm0, %k0
+	vcmpunordpd	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

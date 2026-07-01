@@ -35,8 +35,7 @@ func0000000000000006:
 	.quad	20
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpunordpd	%ymm1, %ymm0, %k1
+	vcmpunordpd	%ymm0, %ymm0, %k1
 	vpbroadcastq	.LCPI3_0(%rip), %ymm0 {%k1} {z}
 	retq
 

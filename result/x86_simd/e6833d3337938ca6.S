@@ -109,9 +109,8 @@ func0000000000000072:
 
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000000e5:
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpordpd	%zmm6, %zmm4, %k1
-	vcmpordpd	%zmm6, %zmm5, %k2
+	vcmpordpd	%zmm4, %zmm4, %k1
+	vcmpordpd	%zmm5, %zmm5, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmpnlepd	%zmm0, %zmm2, %k0
@@ -123,9 +122,8 @@ func00000000000000e5:
 
 	.prefalign	4, .Lfunc_end8, nop
 func00000000000000e3:
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpordpd	%zmm6, %zmm4, %k1
-	vcmpordpd	%zmm6, %zmm5, %k2
+	vcmpordpd	%zmm4, %zmm4, %k1
+	vcmpordpd	%zmm5, %zmm5, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
 	vcmpnlepd	%zmm2, %zmm0, %k0

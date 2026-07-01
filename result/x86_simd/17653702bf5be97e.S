@@ -37,16 +37,14 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%ymm1, %ymm0, %k0
+	vcmpunordps	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000e:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%ymm1, %ymm0, %k0
+	vcmpordps	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

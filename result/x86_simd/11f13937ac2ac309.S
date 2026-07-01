@@ -140,9 +140,8 @@ func000000000000000e:
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm2, %zmm4 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordpd	%zmm0, %zmm3, %k0
-	vcmpordpd	%zmm0, %zmm4, %k1
+	vcmpordpd	%zmm3, %zmm3, %k0
+	vcmpordpd	%zmm4, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -155,9 +154,8 @@ func0000000000000001:
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm2, %zmm4 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordpd	%zmm0, %zmm3, %k0
-	vcmpunordpd	%zmm0, %zmm4, %k1
+	vcmpunordpd	%zmm3, %zmm3, %k0
+	vcmpunordpd	%zmm4, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

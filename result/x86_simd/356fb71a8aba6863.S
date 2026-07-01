@@ -15,8 +15,7 @@ func0000000000000002:
 func0000000000000001:
 	vmulps	%zmm2, %zmm1, %zmm1
 	vsubps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	vbroadcastss	.LCPI1_0(%rip), %zmm0 {%k1}
 	retq
 

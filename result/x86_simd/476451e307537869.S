@@ -53,8 +53,7 @@ func0000000000000002:
 	.quad	0x7ff8000000000000
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpunordps	%zmm3, %zmm2, %k1
+	vcmpunordps	%zmm2, %zmm2, %k1
 	vbroadcastsd	.LCPI4_0(%rip), %zmm2
 	vmovapd	%zmm2, %zmm0 {%k1}
 	kshiftrw	$8, %k1, %k1

@@ -36,9 +36,9 @@ func0000000000000024:
 func00000000000000e5:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k1
-	vcmpordpd	%zmm2, %zmm1, %k2
 	vmovapd	%zmm1, %zmm1 {%k2} {z}
 	vmovapd	%zmm0, %zmm0 {%k1} {z}
 	vcmpnlepd	%zmm2, %zmm0, %k0
@@ -52,9 +52,9 @@ func00000000000000e5:
 func00000000000000ec:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k1
-	vcmpordpd	%zmm2, %zmm1, %k2
 	vmovapd	%zmm1, %zmm1 {%k2} {z}
 	vmovapd	%zmm0, %zmm0 {%k1} {z}
 	vcmplepd	%zmm0, %zmm2, %k0
@@ -68,9 +68,9 @@ func00000000000000ec:
 func00000000000000ea:
 	vsubpd	%zmm3, %zmm1, %zmm1
 	vsubpd	%zmm2, %zmm0, %zmm0
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k1
-	vcmpordpd	%zmm2, %zmm1, %k2
 	vmovapd	%zmm1, %zmm1 {%k2} {z}
 	vmovapd	%zmm0, %zmm0 {%k1} {z}
 	vcmplepd	%zmm2, %zmm0, %k0

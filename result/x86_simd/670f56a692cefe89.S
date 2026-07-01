@@ -19,9 +19,8 @@ func0000000000000002:
 func000000000000000e:
 	vpsllw	$7, %xmm2, %xmm2
 	vpxor	%xmm5, %xmm5, %xmm5
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpunordpd	%zmm6, %zmm3, %k0
-	vcmpunordpd	%zmm6, %zmm4, %k1
+	vcmpunordpd	%zmm3, %zmm3, %k0
+	vcmpunordpd	%zmm4, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm2, %xmm5, %k0 {%k1}
 	knotw	%k0, %k1

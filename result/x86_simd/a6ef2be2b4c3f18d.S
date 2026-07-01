@@ -26,8 +26,7 @@ func0000000000000017:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
 	vpcmpeqq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%xmm1, %xmm0, %k1
+	vcmpunordps	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -36,8 +35,7 @@ func0000000000000011:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000001e:
 	vptestnmq	%ymm1, %ymm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpordps	%xmm1, %xmm0, %k1
+	vcmpordps	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

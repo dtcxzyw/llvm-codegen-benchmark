@@ -129,9 +129,8 @@ func0000000000000001:
 	vaddpd	%zmm2, %zmm0, %zmm0
 	vmulpd	%zmm1, %zmm1, %zmm1
 	vaddpd	%zmm3, %zmm1, %zmm1
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k0
-	vcmpunordpd	%zmm2, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

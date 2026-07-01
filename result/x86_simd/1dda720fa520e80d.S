@@ -87,8 +87,7 @@ func0000000000000005:
 	.long	0x3f000000
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000000e:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	vbroadcastss	.LCPI7_0(%rip), %zmm0 {%k1} {z}
 	retq
 

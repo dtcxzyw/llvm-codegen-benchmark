@@ -60,8 +60,7 @@ func0000000000000008:
 	.long	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%ymm1, %ymm0, %k1
+	vcmpunordps	%ymm0, %ymm0, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm0
 	vpbroadcastd	.LCPI6_1(%rip), %ymm0 {%k1}
 	retq
@@ -108,8 +107,7 @@ func000000000000000d:
 	.long	2
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000000e:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%ymm1, %ymm0, %k1
+	vcmpordps	%ymm0, %ymm0, %k1
 	vpbroadcastd	.LCPI10_0(%rip), %ymm0
 	vpbroadcastd	.LCPI10_1(%rip), %ymm0 {%k1}
 	retq

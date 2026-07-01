@@ -109,9 +109,8 @@ func00000000000000c2:
 	vcmpneq_oqpd	%zmm6, %zmm3, %k0
 	vcmpneq_oqpd	%zmm6, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k0
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpunordpd	%zmm3, %zmm1, %k1
-	vcmpunordpd	%zmm3, %zmm2, %k2
+	vcmpunordpd	%zmm1, %zmm1, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}

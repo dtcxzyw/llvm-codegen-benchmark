@@ -75,13 +75,12 @@ func0000000000000001:
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordpd	%zmm0, %zmm2, %k2
-	vcmpunordpd	%zmm0, %zmm3, %k3
+	vcmpunordpd	%zmm2, %zmm2, %k2
+	vcmpunordpd	%zmm3, %zmm3, %k3
 	kunpckbw	%k2, %k3, %k2
-	kandw	%k1, %k2, %k2
 	kandnw	%k0, %k1, %k0
-	korw	%k0, %k2, %k0
+	kandw	%k1, %k2, %k1
+	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -92,13 +91,12 @@ func000000000000000e:
 	vpmovb2m	%xmm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordpd	%zmm0, %zmm2, %k2
-	vcmpordpd	%zmm0, %zmm3, %k3
+	vcmpordpd	%zmm2, %zmm2, %k2
+	vcmpordpd	%zmm3, %zmm3, %k3
 	kunpckbw	%k2, %k3, %k2
-	kandw	%k1, %k2, %k2
 	kandnw	%k0, %k1, %k0
-	korw	%k0, %k2, %k0
+	kandw	%k1, %k2, %k1
+	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -39,9 +39,8 @@ func0000000000000077:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000011:
 	vsubps	%zmm2, %zmm1, %zmm1
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpunordps	%zmm2, %zmm1, %k0
-	vcmpunordps	%zmm2, %zmm0, %k1
+	vcmpunordps	%zmm1, %zmm1, %k0
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

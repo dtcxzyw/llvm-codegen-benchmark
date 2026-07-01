@@ -73,8 +73,7 @@ func000000000000000b:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000001:
 	vsubps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k0
+	vcmpunordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -82,8 +81,7 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000000e:
 	vsubps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k0
+	vcmpordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

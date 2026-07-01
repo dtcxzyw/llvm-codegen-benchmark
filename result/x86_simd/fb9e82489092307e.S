@@ -77,8 +77,7 @@ func0000000000000087:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000007e:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%zmm2, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	vcmpneqps	%zmm1, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

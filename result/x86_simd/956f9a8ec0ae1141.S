@@ -58,9 +58,8 @@ func0000000000000044:
 func0000000000000082:
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vsubpd	%zmm4, %zmm2, %zmm2
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI3_0(%rip), %zmm2
 	vcmpltpd	%zmm0, %zmm2, %k1
@@ -91,12 +90,12 @@ func0000000000000066:
 func00000000000000e2:
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vsubpd	%zmm4, %zmm2, %zmm2
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vcmpneqpd	%zmm4, %zmm0, %k1
-	vcmpneqpd	%zmm4, %zmm1, %k2
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpneqpd	%zmm2, %zmm0, %k1
+	vcmpneqpd	%zmm2, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -123,12 +122,12 @@ func00000000000000f0:
 func000000000000002e:
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vsubpd	%zmm4, %zmm2, %zmm2
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vcmpneqpd	%zmm4, %zmm0, %k1
-	vcmpneqpd	%zmm4, %zmm1, %k2
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpneqpd	%zmm2, %zmm0, %k1
+	vcmpneqpd	%zmm2, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -141,9 +140,8 @@ func000000000000002e:
 func00000000000000c2:
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vsubpd	%zmm4, %zmm2, %zmm2
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI8_0(%rip), %zmm2
 	vcmpneq_oqpd	%zmm2, %zmm0, %k1

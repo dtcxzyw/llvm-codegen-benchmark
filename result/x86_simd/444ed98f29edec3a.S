@@ -97,18 +97,16 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000001:
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpunordpd	%zmm6, %zmm5, %k1
-	vcmpunordpd	%zmm6, %zmm4, %k2
+	vcmpunordpd	%zmm5, %zmm5, %k1
+	vcmpunordpd	%zmm4, %zmm4, %k2
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000000e:
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpordpd	%zmm6, %zmm5, %k1
-	vcmpordpd	%zmm6, %zmm4, %k2
+	vcmpordpd	%zmm5, %zmm5, %k1
+	vcmpordpd	%zmm4, %zmm4, %k2
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vblendmpd	%zmm1, %zmm3, %zmm1 {%k1}
 	retq

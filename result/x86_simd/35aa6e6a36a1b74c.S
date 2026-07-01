@@ -37,13 +37,13 @@ func0000000000000021:
 	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpltpd	%zmm4, %zmm3, %k1
 	vcmpltpd	%zmm4, %zmm2, %k2
-	vbroadcastsd	.LCPI2_0(%rip), %zmm5
-	vmovapd	%zmm5, %zmm2 {%k2}
-	vmovapd	%zmm5, %zmm3 {%k1}
+	vbroadcastsd	.LCPI2_0(%rip), %zmm4
+	vmovapd	%zmm4, %zmm2 {%k2}
+	vmovapd	%zmm4, %zmm3 {%k1}
 	vmulpd	%zmm1, %zmm3, %zmm1
 	vmulpd	%zmm0, %zmm2, %zmm0
-	vcmpunordpd	%zmm4, %zmm0, %k0
-	vcmpunordpd	%zmm4, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -51,9 +51,9 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm3, %k1
-	vcmpordpd	%zmm4, %zmm2, %k2
 	vmovapd	%zmm2, %zmm2 {%k2} {z}
 	vmovapd	%zmm3, %zmm3 {%k1} {z}
 	vmulpd	%zmm3, %zmm1, %zmm1
@@ -74,8 +74,8 @@ func00000000000000ae:
 	vmovapd	%zmm3, %zmm3 {%k1} {z}
 	vmulpd	%zmm3, %zmm1, %zmm1
 	vmulpd	%zmm2, %zmm0, %zmm0
-	vcmpordpd	%zmm4, %zmm0, %k0
-	vcmpordpd	%zmm4, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

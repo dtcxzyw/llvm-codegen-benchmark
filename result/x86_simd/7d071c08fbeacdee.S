@@ -24,8 +24,8 @@ func00000000000000ce:
 	vcmplepd	%zmm3, %zmm6, %k0
 	vcmplepd	%zmm4, %zmm6, %k1
 	kunpckbw	%k0, %k1, %k0
-	vcmpordpd	%zmm6, %zmm1, %k1
-	vcmpordpd	%zmm6, %zmm2, %k2
+	vcmpordpd	%zmm1, %zmm1, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}

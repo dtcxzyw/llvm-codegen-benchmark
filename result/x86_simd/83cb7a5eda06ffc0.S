@@ -17,8 +17,7 @@ func0000000000000002:
 	.long	0x3f800000
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%zmm2, %zmm1, %k1
+	vcmpordps	%zmm1, %zmm1, %k1
 	vbroadcastss	.LCPI2_0(%rip), %zmm2
 	vmovaps	%zmm1, %zmm2 {%k1}
 	vsubps	%zmm2, %zmm0, %zmm0

@@ -22,8 +22,7 @@ func0000000000000001:
 	vextractf64x4	$1, %zmm0, %ymm1
 	vcvtps2pd	%ymm1, %zmm1
 	vcvtps2pd	%ymm0, %zmm2
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpunordps	%zmm3, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	vbroadcastsd	.LCPI1_0(%rip), %zmm0
 	vmovapd	%zmm0, %zmm2 {%k1}
 	kshiftrw	$8, %k1, %k1

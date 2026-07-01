@@ -5,9 +5,8 @@
 func0000000000000042:
 	vmulpd	%zmm3, %zmm1, %zmm1
 	vmulpd	%zmm2, %zmm0, %zmm0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k0
-	vcmpunordpd	%zmm2, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI0_0(%rip), %zmm2
 	vcmpltpd	%zmm2, %zmm0, %k1
@@ -47,9 +46,8 @@ func0000000000000028:
 	vcmpltpd	%zmm0, %zmm2, %k0
 	vcmpltpd	%zmm1, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k1
-	vcmpunordpd	%zmm2, %zmm1, %k2
+	vcmpunordpd	%zmm0, %zmm0, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0

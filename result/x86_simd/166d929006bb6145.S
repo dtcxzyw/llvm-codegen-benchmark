@@ -85,8 +85,7 @@ func0000000000000082:
 	vcmpltpd	%zmm2, %zmm3, %k0
 	vcmpltpd	%zmm1, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

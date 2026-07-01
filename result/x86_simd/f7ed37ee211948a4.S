@@ -3,9 +3,8 @@
 	.zero	16,2
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpunordpd	%zmm3, %zmm0, %k0
-	vcmpunordpd	%zmm3, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
@@ -16,9 +15,8 @@ func00000000000000c1:
 	.zero	16,3
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpunordpd	%zmm3, %zmm1, %k0
-	vcmpunordpd	%zmm3, %zmm2, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k0
+	vcmpunordpd	%zmm2, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpltub	.LCPI1_0(%rip), %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
@@ -29,9 +27,8 @@ func0000000000000024:
 	.zero	16,7
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpunordpd	%zmm3, %zmm1, %k0
-	vcmpunordpd	%zmm3, %zmm2, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k0
+	vcmpunordpd	%zmm2, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpeqb	.LCPI2_0(%rip), %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

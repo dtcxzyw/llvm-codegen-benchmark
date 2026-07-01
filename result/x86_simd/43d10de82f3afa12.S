@@ -50,9 +50,8 @@ func00000000000000c8:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
-	vxorpd	%xmm3, %xmm3, %xmm3
 	vpcmpgtq	%ymm0, %ymm1, %k1
-	vcmpunordpd	%ymm3, %ymm2, %k0 {%k1}
+	vcmpunordpd	%ymm2, %ymm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

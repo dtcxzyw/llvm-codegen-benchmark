@@ -167,13 +167,12 @@ func0000000000000022:
 func0000000000000011:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpunordpd	%zmm6, %zmm3, %k0
-	vcmpunordpd	%zmm6, %zmm4, %k1
+	vcmpunordpd	%zmm3, %zmm3, %k0
+	vcmpunordpd	%zmm4, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}
-	vcmpunordpd	%zmm6, %zmm1, %k1
-	vcmpunordpd	%zmm6, %zmm2, %k2
+	vcmpunordpd	%zmm1, %zmm1, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -264,13 +263,12 @@ func0000000000000066:
 func00000000000000ee:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm5, %xmm5, %xmm5
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpordpd	%zmm6, %zmm3, %k0
-	vcmpordpd	%zmm6, %zmm4, %k1
+	vcmpordpd	%zmm3, %zmm3, %k0
+	vcmpordpd	%zmm4, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}
-	vcmpordpd	%zmm6, %zmm1, %k1
-	vcmpordpd	%zmm6, %zmm2, %k2
+	vcmpordpd	%zmm1, %zmm1, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
 	kandw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0

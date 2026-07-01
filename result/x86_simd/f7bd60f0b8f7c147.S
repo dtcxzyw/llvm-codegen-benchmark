@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpordpd	%zmm6, %zmm2, %k1
-	vcmpordpd	%zmm6, %zmm3, %k2
+	vcmpordpd	%zmm2, %zmm2, %k1
+	vcmpordpd	%zmm3, %zmm3, %k2
 	vmovapd	%zmm3, %zmm5 {%k2}
 	vmovapd	%zmm2, %zmm4 {%k1}
 	vmulpd	%zmm0, %zmm4, %zmm0

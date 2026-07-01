@@ -79,8 +79,7 @@ func000000000000000a:
 func000000000000000e:
 	vcvtdq2pd	%ymm1, %zmm1
 	vdivpd	%zmm0, %zmm1, %zmm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpordpd	%zmm1, %zmm0, %k0
+	vcmpordpd	%zmm0, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -15,8 +15,7 @@ func0000000000000004:
 func000000000000000e:
 	vbroadcastss	.LCPI1_0(%rip), %zmm1
 	vsubps	%zmm0, %zmm1, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	vmovaps	%zmm0, %zmm0 {%k1} {z}
 	retq
 

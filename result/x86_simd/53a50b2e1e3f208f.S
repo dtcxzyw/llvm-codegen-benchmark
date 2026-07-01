@@ -48,9 +48,8 @@ func00000000000000e4:
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm2, %zmm4 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordpd	%zmm0, %zmm3, %k1
-	vcmpordpd	%zmm0, %zmm4, %k2
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm4, %zmm4, %k2
 	vmovapd	%zmm4, %zmm0 {%k2} {z}
 	vmovapd	%zmm3, %zmm1 {%k1} {z}
 	vbroadcastsd	.LCPI2_0(%rip), %zmm2
@@ -70,9 +69,8 @@ func00000000000000e2:
 	kshiftrw	$8, %k1, %k2
 	vmovapd	%zmm2, %zmm4 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordpd	%zmm0, %zmm3, %k1
-	vcmpordpd	%zmm0, %zmm4, %k2
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm4, %zmm4, %k2
 	vmovapd	%zmm4, %zmm0 {%k2} {z}
 	vmovapd	%zmm3, %zmm1 {%k1} {z}
 	vbroadcastsd	.LCPI3_0(%rip), %zmm2

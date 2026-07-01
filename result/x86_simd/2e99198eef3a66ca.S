@@ -15,8 +15,7 @@ func0000000000000010:
 func000000000000005c:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -26,8 +25,7 @@ func000000000000005c:
 func000000000000001c:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

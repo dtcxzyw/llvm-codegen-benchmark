@@ -30,9 +30,8 @@ func000000000000000c:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm3, %k1
-	vcmpordpd	%zmm4, %zmm2, %k2
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vsubpd	%zmm2, %zmm0, %zmm0 {%k2}
 	vsubpd	%zmm3, %zmm1, %zmm1 {%k1}
 	retq

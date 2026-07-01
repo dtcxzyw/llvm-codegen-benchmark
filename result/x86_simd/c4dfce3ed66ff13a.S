@@ -44,8 +44,7 @@ func0000000000000007:
 func000000000000000e:
 	vsubps	%zmm2, %zmm1, %zmm1
 	vdivps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k0
+	vcmpordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

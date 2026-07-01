@@ -133,9 +133,8 @@ func0000000000000001:
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vmulpd	%zmm3, %zmm1, %zmm1
 	vmulpd	%zmm2, %zmm0, %zmm0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k0
-	vcmpunordpd	%zmm2, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -147,9 +146,8 @@ func000000000000000e:
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vmulpd	%zmm3, %zmm1, %zmm1
 	vmulpd	%zmm2, %zmm0, %zmm0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k0
-	vcmpordpd	%zmm2, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

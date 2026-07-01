@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpunordps	%ymm2, %ymm1, %k1
-	vcmpunordps	%ymm2, %ymm0, %k0 {%k1}
+	vcmpunordps	%ymm1, %ymm1, %k1
+	vcmpunordps	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -21,9 +20,8 @@ func0000000000000088:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ee:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%ymm2, %ymm1, %k1
-	vcmpordps	%ymm2, %ymm0, %k0 {%k1}
+	vcmpordps	%ymm1, %ymm1, %k1
+	vcmpordps	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

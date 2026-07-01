@@ -41,8 +41,7 @@ func0000000000000018:
 	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000002:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%ymm1, %ymm0, %ymm0
+	vcmpunordps	%ymm0, %ymm0, %ymm0
 	vandps	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
@@ -70,8 +69,7 @@ func0000000000000010:
 	.long	1
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000001c:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%ymm1, %ymm0, %ymm0
+	vcmpordps	%ymm0, %ymm0, %ymm0
 	vandps	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

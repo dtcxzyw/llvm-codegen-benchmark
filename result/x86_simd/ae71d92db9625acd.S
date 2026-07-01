@@ -64,8 +64,8 @@ func000000000000002e:
 	vcmpltpd	%zmm4, %zmm2, %k2
 	vmovapd	%zmm0, %zmm2 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
-	vcmpordpd	%zmm4, %zmm3, %k1
-	vcmpordpd	%zmm4, %zmm2, %k2
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vmovapd	%zmm2, %zmm0 {%k2} {z}
 	vmovapd	%zmm3, %zmm1 {%k1} {z}
 	retq

@@ -57,8 +57,7 @@ func000000000000000c:
 	.long	0x3f000000
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000e:
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	vmovaps	%zmm0, %zmm0 {%k1} {z}
 	vmulps	.LCPI5_0(%rip){1to16}, %zmm0, %zmm0
 	retq

@@ -151,8 +151,7 @@ func000000000000007e:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vcmpneqps	.LCPI12_0(%rip){1to16}, %zmm2, %k1 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordps	%zmm0, %zmm1, %k0 {%k1}
+	vcmpordps	%zmm1, %zmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -161,9 +160,8 @@ func000000000000007e:
 func00000000000000ee:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordps	%zmm0, %zmm2, %k1 {%k1}
-	vcmpordps	%zmm0, %zmm1, %k0 {%k1}
+	vcmpordps	%zmm2, %zmm2, %k1 {%k1}
+	vcmpordps	%zmm1, %zmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

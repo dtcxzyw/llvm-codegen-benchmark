@@ -105,8 +105,7 @@ func0000000000000018:
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000000e:
 	vfmadd213ps	%zmm2, %zmm1, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k0
+	vcmpordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -215,8 +214,7 @@ func000000000000000d:
 	.prefalign	4, .Lfunc_end23, nop
 func0000000000000011:
 	vfmadd213ps	%zmm2, %zmm1, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k0
+	vcmpunordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -224,8 +222,7 @@ func0000000000000011:
 	.prefalign	4, .Lfunc_end24, nop
 func0000000000000001:
 	vfmadd213ps	%zmm2, %zmm1, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k0
+	vcmpunordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

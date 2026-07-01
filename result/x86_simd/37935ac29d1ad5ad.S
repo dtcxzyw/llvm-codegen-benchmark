@@ -85,8 +85,7 @@ func0000000000000014:
 func0000000000000001:
 	vcvtuqq2ps	%ymm1, %xmm1
 	vdivps	%xmm1, %xmm0, %xmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%xmm1, %xmm0, %xmm0
+	vcmpunordps	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 

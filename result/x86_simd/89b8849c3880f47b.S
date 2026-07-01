@@ -74,8 +74,7 @@ func000000000000000d:
 func000000000000000e:
 	vbroadcastss	.LCPI5_0(%rip), %zmm1
 	vfmadd213ps	.LCPI5_1(%rip){1to16}, %zmm0, %zmm1
-	vxorps	%xmm0, %xmm0, %xmm0
-	vcmpordps	%zmm0, %zmm1, %k0
+	vcmpordps	%zmm1, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

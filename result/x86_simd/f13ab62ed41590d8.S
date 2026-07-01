@@ -64,9 +64,8 @@ func0000000000000084:
 func0000000000000042:
 	vaddpd	%zmm3, %zmm1, %zmm1
 	vaddpd	%zmm2, %zmm0, %zmm0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k0
-	vcmpunordpd	%zmm2, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI3_0(%rip), %zmm2
 	vcmpltpd	%zmm2, %zmm0, %k1

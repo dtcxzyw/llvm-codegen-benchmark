@@ -162,9 +162,8 @@ func0000000000000024:
 func00000000000000ee:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vxorps	%xmm4, %xmm4, %xmm4
-	vcmpordps	%zmm4, %zmm1, %k1
-	vcmpordps	%zmm4, %zmm2, %k1 {%k1}
+	vcmpordps	%zmm1, %zmm1, %k1
+	vcmpordps	%zmm2, %zmm2, %k1 {%k1}
 	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

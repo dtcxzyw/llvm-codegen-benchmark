@@ -35,8 +35,7 @@ func0000000000000081:
 	.zero	16,3
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000024:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpunordps	%zmm2, %zmm1, %k1
+	vcmpunordps	%zmm1, %zmm1, %k1
 	vpcmpltub	.LCPI3_0(%rip), %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

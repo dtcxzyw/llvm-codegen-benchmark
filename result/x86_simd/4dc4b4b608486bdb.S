@@ -46,8 +46,7 @@ func000000000000000c:
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000e:
 	vmulps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	vmovaps	%zmm0, %zmm0 {%k1} {z}
 	retq
 

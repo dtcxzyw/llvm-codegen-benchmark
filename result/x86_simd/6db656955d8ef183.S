@@ -74,8 +74,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000001:
 	vdivps	.LCPI6_0(%rip){1to16}, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k0
+	vcmpunordps	%zmm0, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

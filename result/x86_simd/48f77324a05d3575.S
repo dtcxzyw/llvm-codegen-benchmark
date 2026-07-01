@@ -53,8 +53,7 @@ func0000000000000170:
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000dc:
 	vpcmpgtd	%ymm1, %ymm2, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpordps	%ymm1, %ymm0, %k1
+	vcmpordps	%ymm0, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

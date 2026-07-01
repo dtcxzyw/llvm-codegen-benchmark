@@ -66,9 +66,8 @@ func0000000000000001:
 	kshiftrw	$8, %k1, %k2
 	vaddpd	%zmm2, %zmm4, %zmm2 {%k2}
 	vaddpd	%zmm1, %zmm3, %zmm1 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordpd	%zmm0, %zmm1, %k0
-	vcmpunordpd	%zmm0, %zmm2, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k0
+	vcmpunordpd	%zmm2, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

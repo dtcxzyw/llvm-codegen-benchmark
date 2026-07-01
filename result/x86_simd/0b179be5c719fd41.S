@@ -73,9 +73,8 @@ func00000000000000d1:
 	vcmpnltpd	%zmm4, %zmm2, %k0
 	vcmpnltpd	%zmm4, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k1
-	vcmpunordpd	%zmm2, %zmm1, %k2
+	vcmpunordpd	%zmm0, %zmm0, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -128,12 +127,11 @@ func0000000000000022:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000011:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vcmpunordpd	%zmm4, %zmm0, %k1
-	vcmpunordpd	%zmm4, %zmm1, %k2
+	vcmpunordpd	%zmm0, %zmm0, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -237,9 +235,8 @@ func00000000000000aa:
 	.quad	0x38aa95a5c0000000
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000014:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI15_0(%rip), %zmm2
 	vcmpltpd	%zmm0, %zmm2, %k1
@@ -332,12 +329,11 @@ func00000000000000c8:
 
 	.prefalign	4, .Lfunc_end21, nop
 func000000000000001e:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vcmpordpd	%zmm4, %zmm0, %k1
-	vcmpordpd	%zmm4, %zmm1, %k2
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -383,9 +379,8 @@ func0000000000000087:
 	.quad	0x3eb0c6f7a0b5ed8d
 	.prefalign	4, .Lfunc_end24, nop
 func000000000000001a:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI24_0(%rip), %zmm2
 	vcmplepd	%zmm2, %zmm0, %k1
@@ -460,12 +455,12 @@ func00000000000000a2:
 
 	.prefalign	4, .Lfunc_end29, nop
 func0000000000000018:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
-	vcmpeqpd	%zmm4, %zmm0, %k1
-	vcmpeqpd	%zmm4, %zmm1, %k2
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpeqpd	%zmm2, %zmm0, %k1
+	vcmpeqpd	%zmm2, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -476,9 +471,8 @@ func0000000000000018:
 	.quad	0x7ff0000000000000
 	.prefalign	4, .Lfunc_end30, nop
 func0000000000000017:
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpunordpd	%zmm4, %zmm2, %k0
-	vcmpunordpd	%zmm4, %zmm3, %k1
+	vcmpunordpd	%zmm2, %zmm2, %k0
+	vcmpunordpd	%zmm3, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI30_0(%rip), %zmm2
 	vcmpneqpd	%zmm2, %zmm0, %k1

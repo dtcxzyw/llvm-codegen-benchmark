@@ -48,8 +48,7 @@ func000000000000000e:
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm1
-	vxorps	%xmm0, %xmm0, %xmm0
-	vcmpordps	%zmm0, %zmm1, %k1
+	vcmpordps	%zmm1, %zmm1, %k1
 	vbroadcastss	.LCPI4_0(%rip), %zmm0
 	vmovaps	%zmm1, %zmm0 {%k1}
 	retq

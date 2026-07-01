@@ -98,8 +98,7 @@ func0000000000000002:
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$7, %xmm1, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpunordps	%zmm0, %zmm2, %k1 {%k1}
+	vcmpunordps	%zmm2, %zmm2, %k1 {%k1}
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

@@ -76,8 +76,8 @@ func000000000000000e:
 	vaddpd	%zmm4, %zmm3, %zmm3
 	vaddpd	%zmm3, %zmm1, %zmm1
 	vaddpd	%zmm2, %zmm0, %zmm0
-	vcmpordpd	%zmm4, %zmm0, %k0
-	vcmpordpd	%zmm4, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k0
+	vcmpordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

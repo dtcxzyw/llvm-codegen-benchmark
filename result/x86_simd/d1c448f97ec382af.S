@@ -69,9 +69,8 @@ func0000000000000082:
 	vcmpltpd	%zmm2, %zmm0, %k1
 	vcmpltpd	%zmm2, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k2
-	vcmpunordpd	%zmm2, %zmm1, %k3
+	vcmpunordpd	%zmm0, %zmm0, %k2
+	vcmpunordpd	%zmm1, %zmm1, %k3
 	kunpckbw	%k2, %k3, %k2
 	korw	%k0, %k2, %k0
 	korw	%k1, %k0, %k0
@@ -89,9 +88,8 @@ func0000000000000102:
 	vcmpltpd	%zmm0, %zmm2, %k1
 	vcmpltpd	%zmm1, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k2
-	vcmpunordpd	%zmm2, %zmm1, %k3
+	vcmpunordpd	%zmm0, %zmm0, %k2
+	vcmpunordpd	%zmm1, %zmm1, %k3
 	kunpckbw	%k2, %k3, %k2
 	korw	%k0, %k2, %k0
 	korw	%k1, %k0, %k0
@@ -127,9 +125,8 @@ func0000000000000104:
 func0000000000000044:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k1
-	vcmpunordpd	%zmm2, %zmm1, %k2
+	vcmpunordpd	%zmm0, %zmm0, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k0, %k1, %k0
 	vbroadcastsd	.LCPI6_0(%rip), %zmm2

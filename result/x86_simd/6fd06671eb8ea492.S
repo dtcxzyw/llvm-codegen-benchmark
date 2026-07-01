@@ -52,9 +52,8 @@ func000000000000000e:
 	vpxor	%xmm5, %xmm5, %xmm5
 	vaddpd	%zmm4, %zmm2, %zmm2
 	vaddpd	%zmm3, %zmm1, %zmm1
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpordpd	%zmm3, %zmm1, %k0
-	vcmpordpd	%zmm3, %zmm2, %k1
+	vcmpordpd	%zmm1, %zmm1, %k0
+	vcmpordpd	%zmm2, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0

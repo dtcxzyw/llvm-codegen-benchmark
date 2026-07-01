@@ -29,8 +29,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vsubps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	vbroadcastss	.LCPI3_0(%rip), %zmm0 {%k1}
 	retq
 

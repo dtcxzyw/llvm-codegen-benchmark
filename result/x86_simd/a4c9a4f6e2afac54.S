@@ -128,8 +128,7 @@ func000000000000000e:
 	vcvtpd2ps	%zmm1, %ymm0
 	vcvtpd2ps	%zmm2, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k0 {%k1}
+	vcmpordps	%zmm0, %zmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

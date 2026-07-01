@@ -130,7 +130,7 @@ func00000000000000e4:
 	vcmpltpd	%zmm0, %zmm3, %k0
 	vcmpltpd	%zmm1, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k1
-	vcmpordps	%zmm3, %zmm2, %k0 {%k1}
+	vcmpordps	%zmm2, %zmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -48,8 +48,8 @@ func0000000000000021:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmaxpd	%zmm1, %zmm2, %zmm1
 	vmaxpd	%zmm0, %zmm2, %zmm0
-	vcmpunordpd	%zmm2, %zmm0, %k0
-	vcmpunordpd	%zmm2, %zmm1, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k0
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

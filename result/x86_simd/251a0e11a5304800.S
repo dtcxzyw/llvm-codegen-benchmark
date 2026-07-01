@@ -3,8 +3,7 @@
 func0000000000000142:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtq	%ymm2, %ymm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpunordpd	%ymm1, %ymm0, %k1
+	vcmpunordpd	%ymm0, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

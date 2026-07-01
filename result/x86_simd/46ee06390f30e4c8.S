@@ -227,8 +227,7 @@ func000000000000004a:
 
 	.prefalign	4, .Lfunc_end21, nop
 func00000000000000c1:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm0, %k1
+	vcmpunordpd	%zmm0, %zmm0, %k1
 	vptestmd	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -323,8 +322,7 @@ func000000000000004c:
 	.long	2
 	.prefalign	4, .Lfunc_end30, nop
 func0000000000000028:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpunordpd	%zmm2, %zmm1, %k1
+	vcmpunordpd	%zmm1, %zmm1, %k1
 	vpcmpnleud	.LCPI30_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

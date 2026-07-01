@@ -160,9 +160,9 @@ func000000000000002e:
 	vpmovb2m	%xmm0, %k0
 	vpxor	%xmm0, %xmm0, %xmm0
 	vmaxpd	%zmm2, %zmm0, %zmm2
-	vmaxpd	%zmm1, %zmm0, %zmm1
-	vcmpordpd	%zmm0, %zmm1, %k1
-	vcmpordpd	%zmm0, %zmm2, %k2
+	vmaxpd	%zmm1, %zmm0, %zmm0
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	kunpckbw	%k1, %k2, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0

@@ -111,9 +111,8 @@ func000000000000000a:
 	.quad	0xbfe0000000000000
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000000e:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm1, %k1
-	vcmpordpd	%zmm2, %zmm0, %k2
+	vcmpordpd	%zmm1, %zmm1, %k1
+	vcmpordpd	%zmm0, %zmm0, %k2
 	vbroadcastsd	.LCPI7_0(%rip), %zmm2
 	vbroadcastsd	.LCPI7_1(%rip), %zmm1
 	vblendmpd	%zmm2, %zmm1, %zmm0 {%k2}

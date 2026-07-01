@@ -52,14 +52,13 @@ func0000000000000002:
 func000000000000000e:
 	vpsllw	$7, %xmm2, %xmm2
 	vpmovb2m	%xmm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vsubpd	%zmm4, %zmm1, %zmm4
+	vsubpd	%zmm4, %zmm1, %zmm2
 	kshiftrw	$8, %k1, %k2
-	vmovapd	%zmm1, %zmm4 {%k2}
+	vmovapd	%zmm1, %zmm2 {%k2}
 	vsubpd	%zmm3, %zmm0, %zmm1
 	vmovapd	%zmm0, %zmm1 {%k1}
-	vcmpordpd	%zmm2, %zmm1, %k0
-	vcmpordpd	%zmm2, %zmm4, %k1
+	vcmpordpd	%zmm1, %zmm1, %k0
+	vcmpordpd	%zmm2, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

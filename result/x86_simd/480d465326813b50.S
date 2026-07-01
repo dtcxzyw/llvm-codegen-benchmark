@@ -6,8 +6,7 @@ func000000000000001c:
 	vcvtpd2ps	%zmm1, %ymm0
 	vcvtpd2ps	%zmm2, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
+	vcmpordps	%zmm0, %zmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -136,8 +135,7 @@ func0000000000000002:
 	vcvtpd2ps	%zmm1, %ymm0
 	vcvtpd2ps	%zmm2, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpunordps	%zmm0, %zmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

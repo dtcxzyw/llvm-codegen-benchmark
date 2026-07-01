@@ -28,9 +28,8 @@ func0000000000000002:
 	.quad	0x3f91df46a2529d39
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmpordpd	%zmm2, %zmm0, %k1
-	vcmpordpd	%zmm2, %zmm1, %k2
+	vcmpordpd	%zmm0, %zmm0, %k1
+	vcmpordpd	%zmm1, %zmm1, %k2
 	vmovapd	%zmm1, %zmm1 {%k2} {z}
 	vmovapd	%zmm0, %zmm0 {%k1} {z}
 	vbroadcastsd	.LCPI2_0(%rip), %zmm2

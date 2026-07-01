@@ -44,9 +44,8 @@ func000000000000000a:
 func000000000000000e:
 	vaddpd	%zmm4, %zmm2, %zmm2
 	vaddpd	%zmm5, %zmm3, %zmm3
-	vxorpd	%xmm4, %xmm4, %xmm4
-	vcmpordpd	%zmm4, %zmm3, %k1
-	vcmpordpd	%zmm4, %zmm2, %k2
+	vcmpordpd	%zmm3, %zmm3, %k1
+	vcmpordpd	%zmm2, %zmm2, %k2
 	vbroadcastsd	.LCPI3_0(%rip), %zmm2
 	vblendmpd	%zmm0, %zmm2, %zmm0 {%k2}
 	vmovapd	%zmm1, %zmm2 {%k1}

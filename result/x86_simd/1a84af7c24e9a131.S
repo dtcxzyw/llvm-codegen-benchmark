@@ -32,8 +32,7 @@ func0000000000000022:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000018:
-	vxorps	%xmm3, %xmm3, %xmm3
-	vcmpunordps	%zmm3, %zmm2, %k0
+	vcmpunordps	%zmm2, %zmm2, %k0
 	vcmpeqps	%zmm1, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0

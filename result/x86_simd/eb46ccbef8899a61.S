@@ -5,8 +5,7 @@
 func0000000000000001:
 	vcvtqq2pd	%ymm1, %ymm1
 	vsubpd	%ymm1, %ymm0, %ymm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpunordpd	%ymm1, %ymm0, %k1
+	vcmpunordpd	%ymm0, %ymm0, %k1
 	vbroadcastsd	.LCPI0_0(%rip), %ymm0 {%k1}
 	retq
 
