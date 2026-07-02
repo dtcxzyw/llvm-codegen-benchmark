@@ -5,8 +5,7 @@ func0000000000000006:
 	vpmovw2m	%xmm1, %k0
 	knotb	%k0, %k1
 	vmovdqa32	%ymm2, %ymm1 {%k1} {z}
-	vpmovd2m	%ymm0, %k1
-	vmovdqa32	%ymm1, %ymm0 {%k1}
+	vblendvps	%ymm0, %ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

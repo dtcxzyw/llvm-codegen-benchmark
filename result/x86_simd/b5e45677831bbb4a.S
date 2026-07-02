@@ -81,8 +81,7 @@ func000000000000004a:
 func0000000000000006:
 	vpsrlq	$16, %ymm2, %ymm2
 	vpmovqd	%ymm2, %xmm2
-	vpmovd2m	%xmm1, %k1
-	vmovdqa32	%xmm0, %xmm2 {%k1}
+	vblendvps	%xmm1, %xmm0, %xmm2, %xmm2
 	vmovdqa	%xmm2, %xmm0
 	vzeroupper
 	retq

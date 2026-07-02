@@ -78,8 +78,7 @@ func000000000000002a:
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1}
 	vpbroadcastd	.LCPI3_2(%rip), %ymm2
 	vpbroadcastd	.LCPI3_3(%rip), %ymm2 {%k1}
-	vpmovd2m	%ymm0, %k1
-	vmovdqa32	%ymm2, %ymm1 {%k1}
+	vblendvps	%ymm0, %ymm2, %ymm1, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
 

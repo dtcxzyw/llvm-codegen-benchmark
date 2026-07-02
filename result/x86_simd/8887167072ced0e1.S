@@ -4,8 +4,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c6:
 	vpmovqd	%ymm1, %xmm1
-	vpmovd2m	%xmm1, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm1, %xmm0, %xmm1, %xmm1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm0
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -16,8 +15,7 @@ func00000000000000c6:
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c8:
 	vpmovqd	%ymm1, %xmm1
-	vpmovd2m	%xmm1, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm1, %xmm0, %xmm1, %xmm1
 	vpcmpnleud	.LCPI1_0(%rip){1to4}, %xmm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -28,8 +26,7 @@ func00000000000000c8:
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c1:
 	vpmovqd	%ymm1, %xmm1
-	vpmovd2m	%xmm1, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm1, %xmm0, %xmm1, %xmm1
 	vpbroadcastd	.LCPI2_0(%rip), %xmm0
 	vpcmpeqd	%xmm0, %xmm1, %xmm0
 	vzeroupper
@@ -38,9 +35,8 @@ func00000000000000c1:
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000cc:
 	vpmovqd	%ymm1, %xmm1
-	vpmovd2m	%xmm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm1, %xmm0, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm1, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
@@ -49,9 +45,8 @@ func00000000000000cc:
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000008c1:
 	vpmovqd	%ymm1, %xmm1
-	vpmovd2m	%xmm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm1, %xmm0, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm1, %xmm0
 	vzeroupper
 	retq

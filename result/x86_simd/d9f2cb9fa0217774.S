@@ -32,8 +32,7 @@ func0000000000000028:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000099:
 	vpaddd	%ymm0, %ymm2, %ymm3
-	vpmovd2m	%ymm3, %k1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vblendvps	%ymm3, %ymm1, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm2, %ymm0
 	retq
 

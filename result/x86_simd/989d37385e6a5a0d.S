@@ -12,9 +12,8 @@ func0000000000000000:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$7, %xmm1, %xmm0
-	vpmovb2m	%xmm0, %k2
 	vpord	.LCPI0_2(%rip){1to4}, %xmm2, %xmm1
-	vmovdqu8	%xmm2, %xmm1 {%k2}
+	vpblendvb	%xmm0, %xmm2, %xmm1, %xmm1
 	vpord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq
@@ -32,9 +31,8 @@ func0000000000000003:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$7, %xmm1, %xmm0
-	vpmovb2m	%xmm0, %k2
 	vpord	.LCPI1_2(%rip){1to4}, %xmm2, %xmm1
-	vmovdqu8	%xmm2, %xmm1 {%k2}
+	vpblendvb	%xmm0, %xmm2, %xmm1, %xmm1
 	vpord	.LCPI1_3(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq
@@ -52,9 +50,8 @@ func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpsllw	$7, %xmm1, %xmm0
-	vpmovb2m	%xmm0, %k2
 	vpord	.LCPI2_2(%rip){1to4}, %xmm2, %xmm1
-	vmovdqu8	%xmm2, %xmm1 {%k2}
+	vpblendvb	%xmm0, %xmm2, %xmm1, %xmm1
 	vpord	.LCPI2_3(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq

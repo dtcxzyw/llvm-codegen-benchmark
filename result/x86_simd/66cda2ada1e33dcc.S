@@ -65,8 +65,7 @@ func00000000000000c1:
 func0000000000000026:
 	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm1 {%k1} {z}
-	vpmovd2m	%ymm0, %k1
-	vmovdqa32	%ymm1, %ymm0 {%k1}
+	vblendvps	%ymm0, %ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

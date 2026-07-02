@@ -23,8 +23,7 @@ func000000000000000c:
 	.long	127
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
-	vpmovd2m	%ymm0, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm0, %ymm0, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	retq
 

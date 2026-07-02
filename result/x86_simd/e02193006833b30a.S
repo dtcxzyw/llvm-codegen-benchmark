@@ -8,8 +8,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpgtd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm0
 	vpbroadcastq	.LCPI0_2(%rip), %ymm0 {%k1}
@@ -24,8 +23,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpnleud	.LCPI1_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm0
 	vpbroadcastq	.LCPI1_2(%rip), %ymm0 {%k1}
@@ -40,8 +38,7 @@ func0000000000000018:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpnleud	.LCPI2_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm0
 	vpbroadcastq	.LCPI2_2(%rip), %ymm0 {%k1}
@@ -54,8 +51,7 @@ func0000000000000008:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpneqd	.LCPI3_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1} {z}
 	retq

@@ -3,8 +3,7 @@
 	.long	6
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c1:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm2
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0 {%k1}
 	retq

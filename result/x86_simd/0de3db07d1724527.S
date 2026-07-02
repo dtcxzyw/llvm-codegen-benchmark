@@ -63,8 +63,7 @@
 	.byte	8
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpmovdb	%ymm1, %xmm0
 	vpmovzxbw	%xmm0, %ymm1
 	vpmullw	.LCPI0_0(%rip), %ymm1, %ymm1

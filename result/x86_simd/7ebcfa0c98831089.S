@@ -46,8 +46,7 @@ func0000000000000006:
 	vmovq	%rcx, %xmm1
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
 

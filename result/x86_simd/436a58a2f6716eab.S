@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm2, %xmm1, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -64,8 +63,7 @@ func0000000000000068:
 
 	.prefalign	4, .Lfunc_end6, nop
 func00000000000001a1:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm2, %xmm1, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

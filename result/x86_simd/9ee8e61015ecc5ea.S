@@ -64,8 +64,7 @@ func0000000000000058:
 func0000000000000198:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm2
 	vpcmpneqd	.LCPI4_0(%rip){1to8}, %ymm2, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

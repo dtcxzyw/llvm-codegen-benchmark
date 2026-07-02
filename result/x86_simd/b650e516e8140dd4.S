@@ -5,8 +5,7 @@
 func0000000000000026:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1} {z}
-	vpmovd2m	%ymm0, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm0, %ymm0, %ymm1, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
 

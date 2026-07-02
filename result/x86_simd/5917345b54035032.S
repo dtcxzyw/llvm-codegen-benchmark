@@ -21,8 +21,7 @@ func0000000000000002:
 	vpbroadcastb	.LCPI1_1(%rip), %xmm2
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpblendvb	%xmm0, %xmm2, %xmm1, %xmm1
 	vmovdqa	%xmm1, %xmm0
 	retq
 

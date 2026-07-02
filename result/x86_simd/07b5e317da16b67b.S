@@ -32,15 +32,13 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
-	vpmovb2m	%xmm1, %k1
-	vmovdqu8	%xmm0, %xmm1 {%k1}
+	vpblendvb	%xmm1, %xmm0, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
-	vpmovb2m	%xmm1, %k1
-	vmovdqu8	%xmm0, %xmm1 {%k1}
+	vpblendvb	%xmm1, %xmm0, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm0
 	retq
 

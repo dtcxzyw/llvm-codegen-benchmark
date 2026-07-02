@@ -9,8 +9,7 @@
 func00000000000010d4:
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm2 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm2, %ymm2
 	vpcmpltud	.LCPI0_2(%rip){1to8}, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -38,8 +38,7 @@ func000000000000000a:
 func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpmovq2m	%ymm2, %k1
-	vmovdqa64	%ymm1, %ymm2 {%k1}
+	vblendvpd	%ymm2, %ymm1, %ymm2, %ymm2
 	knotw	%k0, %k1
 	vmovdqa64	%ymm2, %ymm0 {%k1} {z}
 	retq

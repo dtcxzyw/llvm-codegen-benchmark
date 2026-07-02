@@ -37,8 +37,7 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
-	vpmovb2m	%xmm2, %k1
-	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vpblendvb	%xmm2, %xmm1, %xmm0, %xmm0
 	retq
 
 .LCPI6_0:

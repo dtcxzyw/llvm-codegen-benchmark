@@ -6,8 +6,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1
@@ -19,8 +18,7 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

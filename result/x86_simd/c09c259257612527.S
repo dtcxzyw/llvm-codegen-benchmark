@@ -3,8 +3,7 @@
 	.long	1900
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000037:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm2, %xmm0, %xmm1, %xmm1
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
@@ -89,8 +88,7 @@ func0000000000000032:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000033:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm2, %xmm0, %xmm1, %xmm1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -98,8 +96,7 @@ func0000000000000033:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000034:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm2, %xmm0, %xmm1, %xmm1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -109,8 +106,7 @@ func0000000000000034:
 	.long	3
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000030:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm2, %xmm0, %xmm1, %xmm1
 	vpaddd	.LCPI10_0(%rip){1to4}, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq

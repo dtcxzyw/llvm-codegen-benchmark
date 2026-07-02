@@ -15,8 +15,7 @@ func000000000000000c:
 	vpblendmb	%xmm1, %xmm2, %xmm1 {%k1}
 	vpord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm2
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpblendvb	%xmm0, %xmm2, %xmm1, %xmm1
 	vmovdqa	%xmm1, %xmm0
 	retq
 
@@ -36,8 +35,7 @@ func0000000000000008:
 	vpblendmb	%xmm1, %xmm2, %xmm1 {%k1}
 	vpord	.LCPI1_3(%rip){1to4}, %xmm1, %xmm2
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpblendvb	%xmm0, %xmm2, %xmm1, %xmm1
 	vmovdqa	%xmm1, %xmm0
 	retq
 
@@ -57,8 +55,7 @@ func000000000000000e:
 	vpblendmb	%xmm1, %xmm2, %xmm1 {%k1}
 	vpord	.LCPI2_3(%rip){1to4}, %xmm1, %xmm2
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpblendvb	%xmm0, %xmm2, %xmm1, %xmm1
 	vmovdqa	%xmm1, %xmm0
 	retq
 

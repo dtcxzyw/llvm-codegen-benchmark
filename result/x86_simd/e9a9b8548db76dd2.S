@@ -102,8 +102,7 @@ func0000000000000006:
 	vpmovw2m	%xmm2, %k0
 	knotb	%k0, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2 {%k1} {z}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm2 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm2, %ymm2
 	vmovdqa	%ymm2, %ymm0
 	retq
 

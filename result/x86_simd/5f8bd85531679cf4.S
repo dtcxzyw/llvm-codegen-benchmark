@@ -6,8 +6,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpbroadcastb	.LCPI0_1(%rip), %xmm0
 	vpcmpgtb	%xmm2, %xmm0, %xmm0
 	retq
@@ -17,8 +16,7 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpnleub	.LCPI1_0(%rip), %xmm2, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
@@ -28,8 +26,7 @@ func0000000000000018:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpltub	.LCPI2_0(%rip), %xmm2, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
@@ -39,8 +36,7 @@ func0000000000000014:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpeqb	.LCPI3_0(%rip), %xmm2, %xmm0
 	retq
 
@@ -49,8 +45,7 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpeqb	.LCPI4_0(%rip), %xmm2, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	retq
@@ -60,8 +55,7 @@ func000000000000000c:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpltub	.LCPI5_0(%rip), %xmm2, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
@@ -69,8 +63,7 @@ func0000000000000004:
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vpcmpgtb	%xmm0, %xmm2, %xmm0
 	retq
@@ -80,8 +73,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpnleub	.LCPI7_0(%rip), %xmm2, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

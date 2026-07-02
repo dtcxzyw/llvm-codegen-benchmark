@@ -45,8 +45,7 @@ func0000000000000026:
 	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm2, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm2
 	vpbroadcastd	.LCPI3_2(%rip), %ymm2 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm2, %ymm0 {%k1}
+	vblendvps	%ymm1, %ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI4_0:
@@ -58,8 +57,7 @@ func000000000000002a:
 	vptestnmd	%ymm2, %ymm2, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %ymm2
 	vpbroadcastd	.LCPI4_1(%rip), %ymm2 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm2 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm2, %ymm2
 	vmovdqa	%ymm2, %ymm0
 	retq
 
@@ -154,8 +152,7 @@ func0000000000000286:
 	vpcmpltud	%ymm3, %ymm2, %k1
 	vpbroadcastd	.LCPI11_1(%rip), %ymm2
 	vmovdqa32	%ymm3, %ymm2 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm2, %ymm0 {%k1}
+	vblendvps	%ymm1, %ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI12_0:

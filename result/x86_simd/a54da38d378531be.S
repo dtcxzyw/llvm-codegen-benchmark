@@ -3,8 +3,7 @@
 	.long	24
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c8:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -14,8 +13,7 @@ func00000000000000c8:
 	.long	24
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000c1:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -23,8 +21,7 @@ func00000000000000c1:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000cc:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

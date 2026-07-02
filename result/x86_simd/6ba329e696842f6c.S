@@ -11,8 +11,7 @@ func0000000000000cd4:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpsubd	%ymm2, %ymm0, %ymm3 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm3 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm3, %ymm3
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm3, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

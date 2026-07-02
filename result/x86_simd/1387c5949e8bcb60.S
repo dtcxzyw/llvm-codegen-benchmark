@@ -5,8 +5,7 @@
 	.long	26
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm0
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpmuludq	%ymm2, %ymm0, %ymm0

@@ -21,8 +21,7 @@ func0000000000000004:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
-	vpmovd2m	%xmm1, %k1
-	vmovdqa32	%xmm1, %xmm0 {%k1}
+	vblendvps	%xmm1, %xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

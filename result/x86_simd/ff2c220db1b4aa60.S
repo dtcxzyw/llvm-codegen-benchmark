@@ -12,8 +12,7 @@ func0000000000000021:
 	.long	11
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000d4:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm1
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -46,8 +45,7 @@ func000000000000002c:
 
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c1:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm1
 	vptestnmd	%ymm1, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -101,8 +99,7 @@ func000000000000014a:
 	.long	191
 	.prefalign	4, .Lfunc_end9, nop
 func00000000000000c4:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm1
 	vpcmpltud	.LCPI9_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -122,8 +119,7 @@ func000000000000008a:
 
 	.prefalign	4, .Lfunc_end11, nop
 func00000000000000cc:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm1
 	vptestmd	%ymm1, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -271,8 +267,7 @@ func000000000000008c:
 	.long	1
 	.prefalign	4, .Lfunc_end24, nop
 func00000000000000c6:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm1
 	vpcmpltd	.LCPI24_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -342,8 +337,7 @@ func0000000000000144:
 	.long	16
 	.prefalign	4, .Lfunc_end30, nop
 func00000000000000d8:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm1
 	vpcmpnleud	.LCPI30_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -353,8 +347,7 @@ func00000000000000d8:
 	.long	648000000
 	.prefalign	4, .Lfunc_end31, nop
 func0000000000000148:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm1, %ymm0 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI31_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -436,8 +429,7 @@ func0000000000000114:
 	.long	63
 	.prefalign	4, .Lfunc_end38, nop
 func00000000000000c8:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm1
 	vpcmpnleud	.LCPI38_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

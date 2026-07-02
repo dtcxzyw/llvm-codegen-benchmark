@@ -31,8 +31,7 @@ func00000000000001f8:
 func00000000000001c6:
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -55,8 +54,7 @@ func000000000000008a:
 func0000000000000186:
 	vpmulld	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
 

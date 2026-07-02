@@ -32,8 +32,7 @@ func0000000000000108:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpeqb	%xmm0, %xmm2, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
@@ -44,8 +43,7 @@ func000000000000018c:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000084:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpltub	.LCPI3_0(%rip), %xmm2, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

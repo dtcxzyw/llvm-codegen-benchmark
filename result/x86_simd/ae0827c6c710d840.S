@@ -11,8 +11,7 @@ func000000000000019b:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpsubd	%ymm2, %ymm0, %ymm3 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm3 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm3, %ymm3
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0
 	vpsubd	%ymm3, %ymm0, %ymm0
 	retq

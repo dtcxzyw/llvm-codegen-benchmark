@@ -10,9 +10,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpsllw	$7, %xmm2, %xmm2
-	vpmovb2m	%xmm2, %k1
 	vpternlogd	$248, .LCPI0_2(%rip){1to4}, %xmm1, %xmm0
 	vpord	.LCPI0_3(%rip){1to4}, %xmm0, %xmm1
-	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vpblendvb	%xmm2, %xmm1, %xmm0, %xmm0
 	retq
 

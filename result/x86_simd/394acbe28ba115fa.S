@@ -6,8 +6,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpsllw	$7, %xmm1, %xmm1
-	vpmovb2m	%xmm1, %k1
 	vpternlogd	$206, .LCPI0_1(%rip){1to4}, %xmm0, %xmm2
-	vmovdqu8	%xmm2, %xmm0 {%k1}
+	vpblendvb	%xmm1, %xmm2, %xmm0, %xmm0
 	retq
 

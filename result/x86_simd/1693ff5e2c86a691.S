@@ -9,8 +9,7 @@
 func0000000000000219:
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm2 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm2, %ymm2
 	vpaddd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm0
 	retq
 
@@ -24,8 +23,7 @@ func0000000000000219:
 func000000000000021b:
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm2 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm2, %ymm2
 	vpaddd	.LCPI1_2(%rip){1to8}, %ymm2, %ymm0
 	retq
 

@@ -18,8 +18,7 @@ func0000000000000002:
 	.long	274877907
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm1, %ymm0 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpmuludq	%ymm2, %ymm1, %ymm1

@@ -9,9 +9,8 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
-	vpmovq2m	%ymm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vpcmpgtq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -21,8 +20,7 @@ func00000000000000ca:
 	.quad	9007199254740992
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000d4:
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -112,8 +110,7 @@ func0000000000000038:
 
 	.prefalign	4, .Lfunc_end10, nop
 func00000000000000c1:
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

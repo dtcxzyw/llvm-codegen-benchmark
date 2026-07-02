@@ -48,16 +48,14 @@ func00000000000000a7:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000032:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm2, %xmm0, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000052:
-	vpmovd2m	%xmm2, %k1
-	vmovdqa32	%xmm1, %xmm0 {%k1}
+	vblendvps	%xmm2, %xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	retq

@@ -11,8 +11,7 @@ func0000000000000020:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm0
 	vzeroupper
 	retq
@@ -29,8 +28,7 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000019:
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm0
 	vzeroupper
 	retq
@@ -57,8 +55,7 @@ func0000000000000028:
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000001b:
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm0
 	vzeroupper
 	retq

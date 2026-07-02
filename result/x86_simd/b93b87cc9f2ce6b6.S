@@ -1,15 +1,13 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpslld	$6, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpslld	$17, %ymm1, %ymm0
 	retq
 

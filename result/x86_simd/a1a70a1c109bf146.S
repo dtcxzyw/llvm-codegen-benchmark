@@ -44,8 +44,7 @@ func0000000000000014:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
+	vblendvps	%xmm0, %xmm0, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm0
 	retq
 

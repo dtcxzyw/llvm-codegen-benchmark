@@ -4,8 +4,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpgtd	.LCPI0_0(%rip){1to4}, %xmm2, %k0
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
@@ -16,8 +15,7 @@ func0000000000000014:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vmovdqa32	%xmm1, %xmm2 {%k1}
+	vblendvps	%xmm0, %xmm1, %xmm2, %xmm2
 	vpcmpnleud	.LCPI1_0(%rip){1to4}, %xmm2, %k0
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0

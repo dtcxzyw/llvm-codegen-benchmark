@@ -5,8 +5,7 @@
 func0000000000000086:
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vblendvpd	%ymm1, %ymm0, %ymm1, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq
 

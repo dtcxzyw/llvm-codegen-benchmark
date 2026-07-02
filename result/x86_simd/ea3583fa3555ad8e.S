@@ -23,8 +23,7 @@ func0000000000000005:
 	.long	2147483647
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000019:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpxord	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	retq
 
@@ -86,8 +85,7 @@ func0000000000000020:
 	.long	6
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000001b:
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm1
 	vpbroadcastd	.LCPI8_0(%rip), %ymm0
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

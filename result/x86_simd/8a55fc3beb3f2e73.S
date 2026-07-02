@@ -3,8 +3,7 @@
 	.long	4294967291
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000032a:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm2
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -15,8 +14,7 @@ func000000000000032a:
 	.long	4294967291
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000326:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm2
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -73,8 +71,7 @@ func00000000000000e1:
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000030a:
-	vpmovd2m	%ymm2, %k1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm2
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0

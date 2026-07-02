@@ -6,8 +6,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000026:
 	vpord	.LCPI0_1(%rip){1to4}, %xmm0, %xmm2
-	vpmovb2m	%xmm1, %k1
-	vmovdqu8	%xmm0, %xmm2 {%k1}
+	vpblendvb	%xmm1, %xmm0, %xmm2, %xmm2
 	vmovdqa	%xmm2, %xmm0
 	retq
 

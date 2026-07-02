@@ -69,7 +69,6 @@ func000000000000000a:
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2
 	vpbroadcastq	.LCPI4_1(%rip), %ymm2 {%k1}
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm2, %ymm0 {%k1}
+	vblendvpd	%ymm1, %ymm2, %ymm0, %ymm0
 	retq
 

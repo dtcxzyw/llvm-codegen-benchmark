@@ -32,8 +32,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm2 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm2, %xmm2
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm2, %xmm0
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
 	retq

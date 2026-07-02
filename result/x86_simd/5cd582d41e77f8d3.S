@@ -9,8 +9,7 @@ func0000000000000066:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpsubd	%ymm3, %ymm0, %ymm2 {%k1}
-	vpmovd2m	%ymm1, %k1
-	vmovdqa32	%ymm0, %ymm2 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm2, %ymm2
 	vmovdqa	%ymm2, %ymm0
 	retq
 

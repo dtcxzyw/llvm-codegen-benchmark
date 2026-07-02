@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	vpmovb2m	%xmm0, %k1
-	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vpblendvb	%xmm0, %xmm1, %xmm0, %xmm0
 	retq
 
 .LCPI1_0:

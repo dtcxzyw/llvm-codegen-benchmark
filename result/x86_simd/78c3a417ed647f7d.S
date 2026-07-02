@@ -22,8 +22,7 @@ func0000000000000146:
 	vpcmpgtq	%ymm3, %ymm2, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vpbroadcastq	.LCPI1_1(%rip), %ymm2 {%k1}
-	vpmovq2m	%ymm1, %k1
-	vmovdqa64	%ymm2, %ymm0 {%k1}
+	vblendvpd	%ymm1, %ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:
