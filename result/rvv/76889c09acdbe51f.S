@@ -1,10 +1,9 @@
 func0000000000000005:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 0
-	vmseq.vi	v10, v8, 0
-	vmerge.vim	v8, v12, 1, v0
-	vor.vi	v12, v8, 4
-	vmv1r.v	v0, v10
-	vmerge.vvm	v8, v12, v8, v0
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vmsne.vi	v0, v8, 0
+	vor.vi	v10, v10, 4, v0.t
+	vmv.v.v	v8, v10
 	ret
 

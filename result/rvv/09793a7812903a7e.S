@@ -6,22 +6,20 @@ func000000000000156a:
 	ret
 
 func0000000000003081:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 0
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsne.vi	v0, v10, 0
 	vsub.vv	v10, v8, v10
-	vadd.vi	v10, v10, 8
-	vmerge.vvm	v8, v10, v8, v0
+	vadd.vi	v8, v10, 8, v0.t
 	li	a0, 16
 	vmseq.vx	v0, v8, a0
 	ret
 
 func000000000000108a:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 0
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsne.vi	v0, v10, 0
 	vsub.vv	v10, v8, v10
 	li	a0, 16
-	vadd.vx	v10, v10, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vadd.vx	v8, v10, a0, v0.t
 	vmsgt.vi	v0, v8, 0
 	ret
 

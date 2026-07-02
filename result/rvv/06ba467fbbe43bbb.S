@@ -50,10 +50,9 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v12, 0
-	vor.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsne.vi	v0, v12, 0
+	vor.vv	v8, v8, v10, v0.t
 	ret
 
 func0000000000000028:

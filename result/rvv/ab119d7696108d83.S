@@ -45,14 +45,12 @@ func0000000000000023:
 
 func0000000000000006:
 	lui	a0, 32
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v12, v10, 0
-	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vor.vx	v12, v8, a0
+	vmerge.vvm	v8, v12, v8, v0
+	vmsne.vi	v0, v10, 0
 	lui	a0, 64
-	vor.vx	v10, v8, a0
-	vmv1r.v	v0, v12
-	vmerge.vvm	v8, v10, v8, v0
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000060:

@@ -4,13 +4,13 @@ func0000000000000021:
 	vmv.v.x	v12, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v10, v8, -5
-	vmseq.vi	v8, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vim	v9, v12, 0, v0
+	vmerge.vim	v8, v12, 0, v0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsne.vi	v0, v10, 0
 	lui	a0, 1
-	vor.vx	v10, v9, a0
-	vmv1r.v	v0, v8
-	vmerge.vvm	v8, v10, v9, v0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vor.vx	v8, v8, a0, v0.t
 	ret
 
 func000000000000002c:

@@ -13,7 +13,7 @@ func000000000000000c:
 	vnsrl.wi	v9, v10, 0
 	lui	a0, 512
 	vand.vx	v10, v9, a0
-	vmseq.vi	v0, v10, 0
-	vmerge.vvm	v8, v8, v9, v0
+	vmsne.vi	v0, v10, 0
+	vmerge.vvm	v8, v9, v8, v0
 	ret
 

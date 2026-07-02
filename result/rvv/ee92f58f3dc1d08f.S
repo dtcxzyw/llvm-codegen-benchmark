@@ -1,9 +1,8 @@
 func00000000000000e1:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v8, 0
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsne.vi	v0, v8, 0
 	vsll.vi	v8, v10, 3
-	vor.vi	v10, v8, 7
-	vmerge.vvm	v8, v10, v8, v0
+	vor.vi	v8, v8, 7, v0.t
 	ret
 
 func0000000000000081:

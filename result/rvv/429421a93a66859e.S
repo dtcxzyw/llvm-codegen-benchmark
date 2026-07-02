@@ -103,16 +103,14 @@ func0000000000000060:
 
 func0000000000000030:
 	bseti	a0, zero, 63
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vx	v0, v12, a0
-	vadd.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsne.vx	v0, v12, a0
+	vadd.vv	v8, v8, v10, v0.t
 	ret
 
 func0000000000000031:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v12, 0
-	vadd.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsne.vi	v0, v12, 0
+	vadd.vv	v8, v8, v10, v0.t
 	ret
 

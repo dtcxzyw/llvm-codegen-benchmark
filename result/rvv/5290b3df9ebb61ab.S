@@ -48,11 +48,10 @@ func0000000000000010:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 9
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v0, v12, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsne.vi	v0, v12, 0
+	vsetvli	zero, zero, e64, m2, ta, mu
 	vor.vv	v8, v10, v8
 	bseti	a0, zero, 63
-	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vor.vx	v8, v8, a0, v0.t
 	ret
 

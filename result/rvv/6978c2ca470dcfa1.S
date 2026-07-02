@@ -46,12 +46,11 @@ func000000000000001a:
 	ret
 
 func00000000000000c5:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v12, 3
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsne.vi	v0, v12, 3
 	vadd.vv	v8, v8, v10
 	lui	a0, 1024
-	vadd.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vadd.vx	v8, v8, a0, v0.t
 	ret
 
 func00000000000000a5:

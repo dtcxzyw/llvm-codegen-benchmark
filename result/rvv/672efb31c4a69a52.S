@@ -9,12 +9,10 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsne.vi	v0, v12, 0
 	fli.d	fa5, 1.0
-	vsetivli	zero, 8, e64, m4, ta, ma
-	vfrdiv.vf	v16, v8, fa5
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmseq.vi	v0, v12, 0
-	vsetvli	zero, zero, e64, m4, ta, ma
-	vmerge.vvm	v8, v16, v8, v0
+	vsetvli	zero, zero, e64, m4, ta, mu
+	vfrdiv.vf	v8, v8, fa5, v0.t
 	ret
 

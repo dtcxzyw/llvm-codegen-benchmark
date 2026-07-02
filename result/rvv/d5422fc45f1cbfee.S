@@ -12,14 +12,13 @@ func0000000000000063:
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v9, v10, 0
 	li	a0, 256
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vor.vx	v8, v8, a0, v0.t
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsne.vi	v0, v10, 0
+	li	a0, 512
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vor.vx	v8, v8, a0, v0.t
-	li	a0, 512
-	vor.vx	v10, v8, a0
-	vmv1r.v	v0, v9
-	vmerge.vvm	v8, v10, v8, v0
 	ret
 

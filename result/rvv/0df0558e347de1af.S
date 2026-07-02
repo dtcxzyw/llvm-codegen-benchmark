@@ -31,15 +31,13 @@ func0000000000000013:
 	ret
 
 func0000000000000005:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 0
-	vmseq.vi	v10, v8, 3
-	vmerge.vim	v8, v12, 1, v0
-	vsll.vi	v8, v8, 22
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vmsne.vi	v0, v8, 3
+	vsll.vi	v8, v10, 22
 	lui	a0, 1047552
-	vadd.vx	v12, v8, a0
-	vmv1r.v	v0, v10
-	vmerge.vvm	v8, v12, v8, v0
+	vadd.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000011:

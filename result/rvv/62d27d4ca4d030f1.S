@@ -10,10 +10,9 @@ func0000000000000005:
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vand.vi	v12, v12, 3
-	vmseq.vi	v0, v12, 3
-	vsub.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
+	vmsne.vi	v0, v12, 3
+	vsub.vv	v8, v8, v10, v0.t
 	ret
 

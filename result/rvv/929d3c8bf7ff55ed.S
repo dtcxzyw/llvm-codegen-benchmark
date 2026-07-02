@@ -13,12 +13,11 @@ func0000000000000187:
 
 func0000000000000084:
 	li	a0, 192
-	vsetivli	zero, 4, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmerge.vxm	v8, v8, a0, v0
-	vmseq.vi	v0, v10, 0
+	vmsne.vi	v0, v10, 0
 	vadd.vv	v10, v10, v8
 	li	a0, -192
-	vadd.vx	v10, v10, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vadd.vx	v8, v10, a0, v0.t
 	ret
 

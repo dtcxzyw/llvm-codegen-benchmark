@@ -14,10 +14,9 @@ func0000000000000088:
 
 func0000000000000084:
 	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmseq.vi	v0, v10, 2
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v10, v8, 2
-	vmerge.vvm	v8, v10, v8, v0
+	vmsne.vi	v0, v10, 2
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vadd.vi	v8, v8, 2, v0.t
 	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	ret

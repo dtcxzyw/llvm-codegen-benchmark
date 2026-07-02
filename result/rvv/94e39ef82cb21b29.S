@@ -13,26 +13,22 @@ func00000000000000b4:
 	ret
 
 func0000000000000021:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vi	v0, v8, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vi	v8, v12, 1
-	vor.vi	v9, v8, 2
-	vmerge.vvm	v8, v9, v8, v0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsne.vi	v0, v8, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vnsrl.wi	v8, v10, 0
+	vand.vi	v8, v8, 1
+	vor.vi	v8, v8, 2, v0.t
 	ret
 
 func00000000000000e1:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmseq.vi	v0, v8, 0
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsne.vi	v0, v8, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vnsrl.wi	v8, v10, 0
 	bseti	a0, zero, 11
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vx	v8, v12, a0
-	vor.vi	v9, v8, 6
-	vmerge.vvm	v8, v9, v8, v0
+	vand.vx	v8, v8, a0
+	vor.vi	v8, v8, 6, v0.t
 	ret
 
 func00000000000000f4:

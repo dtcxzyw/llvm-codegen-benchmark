@@ -3,10 +3,10 @@ func000000000000000c:
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
 	li	a0, 27
-	vmseq.vx	v0, v8, a0
+	vmsne.vx	v0, v8, a0
 	lui	a0, 8
-	vor.vx	v8, v10, a0
-	vmerge.vvm	v8, v8, v10, v0
+	vor.vx	v10, v10, a0, v0.t
+	vmv.v.v	v8, v10
 	ret
 
 func0000000000000061:

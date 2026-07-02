@@ -1,9 +1,8 @@
 func0000000000000002:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vsll.vi	v10, v9, 4
-	vmerge.vvm	v9, v10, v9, v0
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vsll.vi	v9, v9, 4, v0.t
 	vor.vv	v8, v9, v8
 	ret
 
@@ -19,10 +18,9 @@ func00000000000000c8:
 
 func00000000000000c2:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v0, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vsll.vi	v10, v9, 8
-	vmerge.vvm	v9, v10, v9, v0
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vsll.vi	v9, v9, 8, v0.t
 	vor.vv	v8, v9, v8
 	ret
 

@@ -33,10 +33,9 @@ func0000000000000004:
 	ret
 
 func0000000000000007:
-	vsetivli	zero, 16, e16, m2, ta, ma
-	vmseq.vi	v0, v10, 10
-	vadd.vi	v10, v8, 10
-	vmerge.vvm	v8, v10, v8, v0
+	vsetivli	zero, 16, e16, m2, ta, mu
+	vmsne.vi	v0, v10, 10
+	vadd.vi	v8, v8, 10, v0.t
 	ret
 
 func0000000000000023:

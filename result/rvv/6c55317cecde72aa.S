@@ -84,10 +84,9 @@ func000000000000000c:
 
 func0000000000000019:
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmseq.vi	v0, v10, 0
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vi	v10, v8, 4
-	vmerge.vvm	v8, v10, v8, v0
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m2, ta, mu
+	vor.vi	v8, v8, 4, v0.t
 	ret
 
 func0000000000000014:

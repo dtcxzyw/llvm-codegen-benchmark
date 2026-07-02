@@ -69,14 +69,14 @@ func0000000000000021:
 	ret
 
 func0000000000000004:
-	li	a0, 75
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmseq.vx	v10, v10, a0
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv2r.v	v12, v8
-	vsetvli	zero, zero, e32, m2, ta, mu
 	vadd.vi	v12, v8, -2, v0.t
-	vmv1r.v	v0, v10
-	vmerge.vvm	v8, v12, v8, v0
+	li	a0, 75
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmsne.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmerge.vvm	v8, v8, v12, v0
 	ret
 
 func0000000000000028:

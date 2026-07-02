@@ -22,13 +22,12 @@ func0000000000000042:
 
 func0000000000000203:
 	li	a0, 128
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vx	v0, v10, a0
 	vmv.v.x	v12, a0
 	li	a0, 64
 	vmerge.vxm	v12, v12, a0, v0
-	vmseq.vi	v0, v10, 0
-	vor.vv	v10, v8, v12
-	vmerge.vvm	v8, v10, v8, v0
+	vmsne.vi	v0, v10, 0
+	vor.vv	v8, v8, v12, v0.t
 	ret
 

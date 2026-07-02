@@ -8,12 +8,11 @@ func0000000000000184:
 	ret
 
 func0000000000000185:
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsne.vi	v0, v10, 1
 	li	a0, 32
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vrsub.vx	v12, v12, a0
-	vmseq.vi	v0, v10, 1
-	vmul.vv	v10, v8, v12
-	vmerge.vvm	v8, v10, v8, v0
+	vrsub.vx	v10, v12, a0
+	vmul.vv	v8, v8, v10, v0.t
 	ret
 
 func0000000000000198:

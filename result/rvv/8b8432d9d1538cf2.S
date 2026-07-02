@@ -55,11 +55,10 @@ func0000000000000028:
 
 func0000000000000033:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v0, v10, 0
+	vmsne.vi	v0, v10, 0
 	li	a0, 20
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vadd.vx	v8, v8, a0, v0.t
 	ret
 
 func0000000000000060:
@@ -112,10 +111,9 @@ func0000000000000018:
 
 func0000000000000030:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v0, v10, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v10, v8, 2
-	vmerge.vvm	v8, v10, v8, v0
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vadd.vi	v8, v8, 2, v0.t
 	ret
 
 func000000000000002b:
@@ -162,10 +160,9 @@ func0000000000000010:
 
 func0000000000000031:
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vi	v0, v10, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vi	v10, v8, 8
-	vmerge.vvm	v8, v10, v8, v0
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vadd.vi	v8, v8, 8, v0.t
 	ret
 
 func0000000000000050:

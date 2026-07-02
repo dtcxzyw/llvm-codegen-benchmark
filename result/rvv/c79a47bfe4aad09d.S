@@ -1,10 +1,9 @@
 func0000000000000043:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v11, v0
-	vmseq.vi	v0, v10, 0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vi	v12, v8, 2
-	vmerge.vvm	v8, v12, v8, v0
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vor.vi	v8, v8, 2, v0.t
 	vor.vi	v12, v8, 4
 	vmv1r.v	v0, v11
 	vmerge.vvm	v8, v12, v8, v0
@@ -13,12 +12,11 @@ func0000000000000043:
 func0000000000000042:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v11, v0
-	vmseq.vi	v0, v10, 0
+	vmsne.vi	v0, v10, 0
 	li	a0, 255
 	slli	a1, a0, 32
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vx	v12, v8, a1
-	vmerge.vvm	v8, v12, v8, v0
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vor.vx	v8, v8, a1, v0.t
 	slli	a0, a0, 24
 	vor.vx	v12, v8, a0
 	vmv1r.v	v0, v11
@@ -28,12 +26,11 @@ func0000000000000042:
 func0000000000000002:
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v11, v0
-	vmseq.vi	v0, v10, 0
+	vmsne.vi	v0, v10, 0
 	li	a0, 255
 	slli	a0, a0, 24
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vx	v12, v8, a0
-	vmerge.vvm	v8, v12, v8, v0
+	vsetvli	zero, zero, e64, m2, ta, mu
+	vor.vx	v8, v8, a0, v0.t
 	lui	a0, 4080
 	vor.vx	v12, v8, a0
 	vmv1r.v	v0, v11

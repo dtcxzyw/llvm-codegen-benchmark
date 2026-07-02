@@ -7,16 +7,14 @@ func0000000000000026:
 	ret
 
 func0000000000000021:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v0, v9, 0
-	vor.vi	v9, v8, 4
-	vmerge.vvm	v8, v9, v8, v0
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsne.vi	v0, v9, 0
+	vor.vi	v8, v8, 4, v0.t
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v0, v9, 0
-	vor.vi	v9, v8, 14
-	vmerge.vvm	v8, v9, v8, v0
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsne.vi	v0, v9, 0
+	vor.vi	v8, v8, 14, v0.t
 	ret
 

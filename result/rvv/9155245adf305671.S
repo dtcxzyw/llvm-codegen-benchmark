@@ -11,10 +11,10 @@ func0000000000000010:
 
 func000000000000001f:
 	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmseq.vi	v0, v10, 0
+	vmsne.vi	v0, v10, 0
 	vsetvli	zero, zero, e64, m2, ta, mu
-	vadd.vi	v10, v8, 7
-	vadd.vi	v10, v8, 1, v0.t
+	vadd.vi	v10, v8, 1
+	vadd.vi	v10, v8, 7, v0.t
 	vmv.v.v	v8, v10
 	ret
 

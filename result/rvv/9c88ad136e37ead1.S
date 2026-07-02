@@ -3,12 +3,12 @@ func0000000000000041:
 	vmv.v.i	v12, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v10, v8, -5
-	vmseq.vi	v8, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vim	v9, v12, 1, v0
-	vor.vi	v10, v9, 2
-	vmv1r.v	v0, v8
-	vmerge.vvm	v8, v10, v9, v0
+	vmerge.vim	v8, v12, 1, v0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vor.vi	v8, v8, 2, v0.t
 	ret
 
 func000000000000004c:

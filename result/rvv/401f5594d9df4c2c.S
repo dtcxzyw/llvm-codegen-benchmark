@@ -34,9 +34,9 @@ func000000000000002c:
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vmseq.vi	v0, v8, 4
-	vor.vi	v8, v10, 10
-	vor.vi	v8, v10, 8, v0.t
+	vmsne.vi	v0, v8, 4
+	vor.vi	v8, v10, 8
+	vor.vi	v8, v10, 10, v0.t
 	ret
 
 func0000000000000038:
