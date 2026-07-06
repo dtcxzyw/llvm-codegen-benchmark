@@ -17,9 +17,8 @@ func0000000000000006:
 	ret
 
 func0000000000000001:
-	eor	x8, x0, x2
-	orr	x8, x8, x1
-	cmp	x8, #0
+	cmp	x0, x2
+	ccmp	x1, #0, #0, eq
 	cset	w0, eq
 	ret
 
@@ -48,9 +47,8 @@ func000000000000002a:
 	ret
 
 func0000000000000021:
-	eor	x8, x0, x2
-	orr	x8, x8, x1
-	cmp	x8, #0
+	cmp	x0, x2
+	ccmp	x1, #0, #0, eq
 	cset	w0, eq
 	ret
 

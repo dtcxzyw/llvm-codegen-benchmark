@@ -21,11 +21,11 @@ func0000000000000041:
 	ret
 
 func0000000000000001:
-	adds	x8, x0, x2
-	adc	x9, x1, x3
-	eor	x9, x9, #0x8000000000000000
-	orr	x8, x8, x9
-	cmp	x8, #0
+	adds	x9, x0, x2
+	mov	x8, #-9223372036854775808
+	adc	x10, x1, x3
+	cmp	x9, #0
+	ccmp	x10, x8, #0, eq
 	cset	w0, eq
 	ret
 

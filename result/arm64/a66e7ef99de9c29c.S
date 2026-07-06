@@ -1,8 +1,7 @@
 func00000000000000e1:
-	eor	w8, w1, #0x1
-	and	w8, w8, #0xff
-	orr	w8, w0, w8
-	cmp	w8, #0
+	and	w8, w1, #0xff
+	cmp	w0, #0
+	ccmp	w8, #1, #0, eq
 	cset	w0, eq
 	ret
 

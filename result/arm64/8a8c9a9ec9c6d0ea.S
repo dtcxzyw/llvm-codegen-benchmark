@@ -12,9 +12,8 @@ func0000000000000006:
 	ret
 
 func000000000000000c:
-	eor	x8, x1, x2
-	orr	x8, x0, x8
-	cmp	x8, #0
+	cmp	x0, #0
+	ccmp	x1, x2, #0, eq
 	cset	w0, ne
 	ret
 

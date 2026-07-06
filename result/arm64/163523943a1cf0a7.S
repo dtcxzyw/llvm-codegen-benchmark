@@ -54,11 +54,9 @@ func0000000000000034:
 	ret
 
 func0000000000000061:
-	mov	w8, #1
-	bic	w8, w8, w0
-	orr	w8, w1, w8
-	cmp	w8, #0
-	cset	w0, eq
+	cmp	w1, #0
+	cset	w8, eq
+	and	w0, w8, w0
 	ret
 
 func0000000000000046:
