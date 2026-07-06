@@ -10,7 +10,7 @@ func0000000000000015:
 	divq	%rcx
 	vmovq	%rax, %xmm5
 	vmovq	%xmm3, %rcx
-	vmovq	%xmm4, %rax
+	vmovd	%xmm4, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
@@ -21,7 +21,7 @@ func0000000000000015:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rcx
-	vmovq	%xmm2, %rax
+	vmovd	%xmm2, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm1
@@ -43,7 +43,7 @@ func0000000000000018:
 	divq	%rcx
 	vmovq	%rax, %xmm5
 	vmovq	%xmm3, %rcx
-	vmovq	%xmm4, %rax
+	vmovd	%xmm4, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
@@ -54,7 +54,7 @@ func0000000000000018:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rcx
-	vmovq	%xmm2, %rax
+	vmovd	%xmm2, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm1
@@ -76,7 +76,7 @@ func0000000000000008:
 	divq	%rcx
 	vmovq	%rax, %xmm5
 	vmovq	%xmm3, %rcx
-	vmovq	%xmm4, %rax
+	vmovd	%xmm4, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
@@ -87,7 +87,7 @@ func0000000000000008:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rcx
-	vmovq	%xmm2, %rax
+	vmovd	%xmm2, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm1
@@ -109,7 +109,7 @@ func0000000000000004:
 	divq	%rcx
 	vmovq	%rax, %xmm5
 	vmovq	%xmm3, %rcx
-	vmovq	%xmm4, %rax
+	vmovd	%xmm4, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
@@ -120,7 +120,7 @@ func0000000000000004:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rcx
-	vmovq	%xmm2, %rax
+	vmovd	%xmm2, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm1
@@ -142,7 +142,7 @@ func0000000000000041:
 	divq	%rcx
 	vmovq	%rax, %xmm5
 	vmovq	%xmm3, %rcx
-	vmovq	%xmm4, %rax
+	vmovd	%xmm4, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
@@ -153,7 +153,7 @@ func0000000000000041:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rcx
-	vmovq	%xmm2, %rax
+	vmovd	%xmm2, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm1
@@ -175,7 +175,7 @@ func0000000000000014:
 	divq	%rcx
 	vmovq	%rax, %xmm5
 	vmovq	%xmm3, %rcx
-	vmovq	%xmm4, %rax
+	vmovd	%xmm4, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
@@ -186,7 +186,7 @@ func0000000000000014:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rcx
-	vmovq	%xmm2, %rax
+	vmovd	%xmm2, %eax
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm1

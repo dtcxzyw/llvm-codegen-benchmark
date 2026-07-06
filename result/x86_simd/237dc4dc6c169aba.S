@@ -8,7 +8,7 @@ func0000000000000001:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vmovq	%xmm1, %rcx
+	vmovd	%xmm1, %ecx
 	movq	$-1, %rax
 	xorl	%edx, %edx
 	divq	%rcx
@@ -19,7 +19,7 @@ func0000000000000001:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm2
-	vmovq	%xmm0, %rcx
+	vmovd	%xmm0, %ecx
 	movq	$-1, %rax
 	xorl	%edx, %edx
 	divq	%rcx

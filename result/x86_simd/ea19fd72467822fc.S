@@ -48,7 +48,7 @@ func0000000000000003:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm4
-	vmovq	%xmm2, %rax
+	vmovd	%xmm2, %eax
 	vmovq	%xmm3, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
@@ -59,7 +59,7 @@ func0000000000000003:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rax
+	vmovd	%xmm1, %eax
 	vmovq	%xmm0, %rcx
 	xorl	%edx, %edx
 	divq	%rcx

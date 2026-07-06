@@ -28,7 +28,7 @@ func0000000000000000:
 	xorl	%edx, %edx
 	divq	%r8
 	vmovq	%rax, %xmm1
-	vmovq	%xmm0, %r8
+	vmovd	%xmm0, %r8d
 	movq	%rdi, %rax
 	xorl	%edx, %edx
 	divq	%r8
@@ -39,7 +39,7 @@ func0000000000000000:
 	xorl	%edx, %edx
 	divq	%rdi
 	vmovq	%rax, %xmm1
-	vmovq	%xmm2, %rsi
+	vmovd	%xmm2, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi

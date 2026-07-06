@@ -10,7 +10,7 @@ func0000000000000000:
 	cqto
 	idivq	%rcx
 	vmovq	%rdx, %xmm4
-	vmovq	%xmm2, %rcx
+	vmovd	%xmm2, %ecx
 	vmovq	%xmm3, %rax
 	cqto
 	idivq	%rcx
@@ -21,7 +21,7 @@ func0000000000000000:
 	cqto
 	idivq	%rcx
 	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rcx
+	vmovd	%xmm1, %ecx
 	vmovq	%xmm0, %rax
 	cqto
 	idivq	%rcx

@@ -11,7 +11,7 @@ func0000000000000000:
 	idivq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rax
-	vmovq	%xmm3, %rcx
+	vmovd	%xmm3, %ecx
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm1
@@ -22,7 +22,7 @@ func0000000000000000:
 	idivq	%rcx
 	vmovq	%rax, %xmm3
 	vmovq	%xmm0, %rax
-	vmovq	%xmm2, %rcx
+	vmovd	%xmm2, %ecx
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm0
@@ -42,7 +42,7 @@ func0000000000000002:
 	idivq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm1, %rax
-	vmovq	%xmm3, %rcx
+	vmovd	%xmm3, %ecx
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm1
@@ -53,7 +53,7 @@ func0000000000000002:
 	idivq	%rcx
 	vmovq	%rax, %xmm3
 	vmovq	%xmm0, %rax
-	vmovq	%xmm2, %rcx
+	vmovd	%xmm2, %ecx
 	cqto
 	idivq	%rcx
 	vmovq	%rax, %xmm0

@@ -9,7 +9,7 @@ func0000000000000004:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rsi
+	vmovd	%xmm2, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -20,7 +20,7 @@ func0000000000000004:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rsi
+	vmovd	%xmm1, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -42,7 +42,7 @@ func0000000000000006:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rsi
+	vmovd	%xmm2, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -53,7 +53,7 @@ func0000000000000006:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rsi
+	vmovd	%xmm1, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -74,7 +74,7 @@ func0000000000000044:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rcx
+	vmovd	%xmm2, %ecx
 	movq	$-1, %rax
 	xorl	%edx, %edx
 	divq	%rcx
@@ -85,7 +85,7 @@ func0000000000000044:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rcx
+	vmovd	%xmm1, %ecx
 	movq	$-1, %rax
 	xorl	%edx, %edx
 	divq	%rcx
@@ -106,7 +106,7 @@ func000000000000004c:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rcx
+	vmovd	%xmm2, %ecx
 	movq	$-1, %rax
 	xorl	%edx, %edx
 	divq	%rcx
@@ -117,7 +117,7 @@ func000000000000004c:
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rcx
+	vmovd	%xmm1, %ecx
 	movq	$-1, %rax
 	xorl	%edx, %edx
 	divq	%rcx
@@ -139,7 +139,7 @@ func0000000000000046:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rsi
+	vmovd	%xmm2, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -150,7 +150,7 @@ func0000000000000046:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rsi
+	vmovd	%xmm1, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -172,7 +172,7 @@ func000000000000004a:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rsi
+	vmovd	%xmm2, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
@@ -183,7 +183,7 @@ func000000000000004a:
 	xorl	%edx, %edx
 	divq	%rsi
 	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rsi
+	vmovd	%xmm1, %esi
 	movq	%rcx, %rax
 	xorl	%edx, %edx
 	divq	%rsi

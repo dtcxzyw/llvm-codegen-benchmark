@@ -13,7 +13,7 @@ func0000000000000008:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm2, %rax
-	vmovq	%xmm3, %rcx
+	vmovd	%xmm3, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm2
@@ -24,7 +24,7 @@ func0000000000000008:
 	divq	%rcx
 	vmovq	%rax, %xmm3
 	vmovq	%xmm1, %rax
-	vmovq	%xmm0, %rcx
+	vmovd	%xmm0, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm0
@@ -46,7 +46,7 @@ func0000000000000012:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm2, %rax
-	vmovq	%xmm3, %rcx
+	vmovd	%xmm3, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm2
@@ -57,7 +57,7 @@ func0000000000000012:
 	divq	%rcx
 	vmovq	%rax, %xmm3
 	vmovq	%xmm1, %rax
-	vmovq	%xmm0, %rcx
+	vmovd	%xmm0, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm0
@@ -79,7 +79,7 @@ func0000000000000000:
 	divq	%rcx
 	vmovq	%rax, %xmm4
 	vmovq	%xmm2, %rax
-	vmovq	%xmm3, %rcx
+	vmovd	%xmm3, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm2
@@ -90,7 +90,7 @@ func0000000000000000:
 	divq	%rcx
 	vmovq	%rax, %xmm3
 	vmovq	%xmm1, %rax
-	vmovq	%xmm0, %rcx
+	vmovd	%xmm0, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm0
