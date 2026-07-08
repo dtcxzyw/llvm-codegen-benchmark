@@ -1,10 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	testq	%rdi, %rdi
-	movq	$-1, %rax
-	cmovnsq	%rdi, %rax
-	testb	$3, %al
+	movl	%edi, %eax
+	sarq	$63, %rdi
+	orl	%eax, %edi
+	testb	$3, %dil
 	sete	%al
 	retq
 

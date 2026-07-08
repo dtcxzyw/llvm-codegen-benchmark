@@ -1,7 +1,6 @@
 func000000000000000a:
-	mov	x8, #-1
 	cmp	x0, #1
-	adc	x0, xzr, x8
+	ngc	x0, xzr
 	ret
 
 func000000000000001b:

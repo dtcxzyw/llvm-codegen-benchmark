@@ -64,8 +64,7 @@ func0000000000000061:
 	ret
 
 func0000000000000008:
-	cmn	w2, #1
-	csinv	w8, w2, wzr, gt
+	orr	w8, w2, w2, asr #31
 	add	w8, w1, w8
 	cmp	w8, w0
 	cset	w0, hi

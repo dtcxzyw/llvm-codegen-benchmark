@@ -10,9 +10,9 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
-	testq	%rdi, %rdi
-	movq	$-1, %rcx
-	cmovnsq	%rdi, %rcx
+	movq	%rdi, %rcx
+	sarq	$63, %rcx
+	orq	%rdi, %rcx
 	addq	$3, %rcx
 	movabsq	$9223372036854775804, %rax
 	andq	%rcx, %rax

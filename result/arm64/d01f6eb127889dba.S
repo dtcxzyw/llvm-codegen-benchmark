@@ -2,8 +2,7 @@ func0000000000000004:
 	adds	x8, x2, x0
 	cinc	x9, x1, hs
 	subs	x0, x8, #1
-	mov	x8, #-1
-	adc	x1, x9, x8
+	sbc	x1, x9, xzr
 	ret
 
 func000000000000000c:

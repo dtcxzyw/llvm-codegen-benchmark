@@ -15,9 +15,8 @@ func000000000000000c:
 	ret
 
 func0000000000000003:
-	cmn	w0, #1
+	orr	w9, w0, w0, asr #31
 	mov	w8, #6936
-	csinv	w9, w0, wzr, gt
 	add	w9, w9, #1
 	umull	x0, w9, w8
 	ret

@@ -20,9 +20,9 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vcvttss2si	%xmm0, %ecx
-	testl	%ecx, %ecx
-	movl	$-1, %eax
-	cmovnsl	%ecx, %eax
+	movl	%ecx, %eax
+	sarl	$31, %eax
+	orl	%ecx, %eax
 	incl	%eax
 	retq
 

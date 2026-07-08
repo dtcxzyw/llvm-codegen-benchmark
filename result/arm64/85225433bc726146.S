@@ -16,8 +16,7 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	cmn	x1, #1
-	csinv	x8, x1, xzr, gt
+	orr	x8, x1, x1, asr #63
 	add	x0, x8, x0
 	ret
 

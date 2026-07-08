@@ -13,8 +13,7 @@ func000000000000008a:
 	sub	w9, w1, #1
 	cmp	w0, w9
 	csel	w9, w0, w9, lt
-	cmn	w8, #1
-	csinv	w8, w8, wzr, gt
+	orr	w8, w8, w8, asr #31
 	cmp	w8, w9
 	cset	w0, gt
 	ret

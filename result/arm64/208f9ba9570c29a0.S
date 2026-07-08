@@ -1,7 +1,6 @@
 func0000000000000000:
 	mul	x8, x0, x1
-	cmn	x8, #1
-	csinv	x0, x8, xzr, gt
+	orr	x0, x8, x8, asr #63
 	ret
 
 func0000000000000002:

@@ -1,30 +1,30 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	1907652675
+.LCPI0_1:
+	.quad	175921860
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vmovdqa64	%ymm1, %ymm2 {%k1}
-	vextracti128	$1, %ymm2, %xmm0
-	vpextrq	$1, %xmm0, %rdx
-	shrq	$5, %rdx
-	movabsq	$755578637259143235, %rax
-	mulxq	%rax, %rcx, %rcx
-	vmovq	%rcx, %xmm1
-	vmovq	%xmm0, %rdx
-	shrq	$5, %rdx
-	mulxq	%rax, %rcx, %rcx
-	vmovq	%rcx, %xmm0
-	vpunpcklqdq	%xmm1, %xmm0, %xmm0
-	vpextrq	$1, %xmm2, %rdx
-	shrq	$5, %rdx
-	mulxq	%rax, %rcx, %rcx
-	vmovq	%rcx, %xmm1
-	vmovq	%xmm2, %rdx
-	shrq	$5, %rdx
-	mulxq	%rax, %rax, %rax
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1
-	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vpsrlq	$37, %ymm2, %ymm0
+	vpbroadcastq	.LCPI0_0(%rip), %ymm1
+	vpmuldq	%ymm1, %ymm0, %ymm3
+	vpsrlq	$5, %ymm2, %ymm2
+	vpmuludq	%ymm1, %ymm2, %ymm1
+	vpsrlq	$32, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm3, %ymm1
+	vpsrlq	$32, %ymm1, %ymm3
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpblendd	$170, %ymm4, %ymm1, %ymm1
+	vpbroadcastq	.LCPI0_1(%rip), %ymm4
+	vpmuludq	%ymm4, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsrlq	$32, %ymm1, %ymm1
+	vpmuldq	%ymm4, %ymm0, %ymm0
+	vpaddq	%ymm3, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$7, %ymm0, %ymm0
 	retq
 

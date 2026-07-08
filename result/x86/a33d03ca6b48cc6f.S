@@ -48,8 +48,9 @@ func0000000000000010:
 func0000000000000002:
 	addl	%edx, %esi
 	subl	%esi, %edi
-	movl	$-1, %eax
-	cmovnsl	%edi, %eax
+	movl	%edi, %eax
+	sarl	$31, %eax
+	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

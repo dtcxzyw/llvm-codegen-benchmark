@@ -25,9 +25,9 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
-	testq	%rsi, %rsi
-	movq	$-1, %rax
-	cmovnsq	%rsi, %rax
+	movq	%rsi, %rax
+	sarq	$63, %rax
+	orq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
 

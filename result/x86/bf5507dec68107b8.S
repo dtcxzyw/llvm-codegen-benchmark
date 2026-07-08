@@ -12,9 +12,9 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
-	testl	%edi, %edi
-	movl	$-1, %ecx
-	cmovnsl	%edi, %ecx
+	movl	%edi, %ecx
+	sarl	$31, %ecx
+	orl	%edi, %ecx
 	incl	%ecx
 	cmpl	$536870911, %ecx
 	movl	$536870911, %eax

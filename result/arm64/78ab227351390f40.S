@@ -3,8 +3,7 @@ func0000000000000005:
 	adds	x9, x0, x2
 	adc	x10, x1, x3
 	adds	x0, x9, x8
-	mov	x8, #-1
-	adc	x1, x10, x8
+	sbc	x1, x10, xzr
 	ret
 
 func000000000000000f:

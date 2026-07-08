@@ -33,9 +33,9 @@ func0000000000000084:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000041:
-	testl	%esi, %esi
-	movl	$-1, %eax
-	cmovnsl	%esi, %eax
+	movl	%esi, %eax
+	sarl	$31, %eax
+	orl	%esi, %eax
 	incl	%eax
 	cmpl	%eax, %edi
 	sete	%al

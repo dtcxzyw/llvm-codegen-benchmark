@@ -32,43 +32,33 @@
 	.byte	128
 	.byte	128
 	.byte	128
+.LCPI0_1:
+	.quad	554189329
+.LCPI0_2:
+	.quad	138547332
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm1
 	vpsrlq	$8, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrq	$1, %xmm1, %rdx
-	movabsq	$595056260442243601, %rax
-	mulxq	%rax, %rcx, %rcx
-	movq	%rcx, %rsi
-	shlq	$5, %rsi
-	subq	%rsi, %rcx
-	addq	%rdx, %rcx
-	vmovq	%rcx, %xmm2
-	vmovq	%xmm1, %rdx
-	mulxq	%rax, %rcx, %rcx
-	movq	%rcx, %rsi
-	shlq	$5, %rsi
-	subq	%rsi, %rcx
-	addq	%rdx, %rcx
-	vmovq	%rcx, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1
-	vpextrq	$1, %xmm0, %rdx
-	mulxq	%rax, %rcx, %rcx
-	movq	%rcx, %rsi
-	shlq	$5, %rsi
-	subq	%rsi, %rcx
-	addq	%rdx, %rcx
-	vmovq	%rcx, %xmm2
-	vmovq	%xmm0, %rdx
-	mulxq	%rax, %rax, %rax
-	movq	%rax, %rcx
-	shlq	$5, %rcx
-	subq	%rcx, %rax
-	addq	%rdx, %rax
-	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsrlq	$32, %ymm0, %ymm1
+	vpbroadcastq	.LCPI0_1(%rip), %ymm2
+	vpmuldq	%ymm2, %ymm1, %ymm3
+	vpmuludq	%ymm2, %ymm0, %ymm2
+	vpsrlq	$32, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm3, %ymm2
+	vpsrlq	$32, %ymm2, %ymm3
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpblendd	$170, %ymm4, %ymm2, %ymm2
+	vpbroadcastq	.LCPI0_2(%rip), %ymm4
+	vpmuludq	%ymm4, %ymm0, %ymm5
+	vpaddq	%ymm2, %ymm5, %ymm2
+	vpsrlq	$32, %ymm2, %ymm2
+	vpmuldq	%ymm4, %ymm1, %ymm1
+	vpaddq	%ymm3, %ymm1, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpsllq	$5, %ymm1, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 

@@ -1,9 +1,8 @@
 func0000000000000004:
-	adds	x9, x2, x0
-	mov	x8, #-1
-	adc	x10, x3, x1
-	subs	x0, x9, #1
-	adc	x1, x10, x8
+	adds	x8, x2, x0
+	adc	x9, x3, x1
+	subs	x0, x8, #1
+	sbc	x1, x9, xzr
 	ret
 
 func000000000000000c:
@@ -15,11 +14,10 @@ func000000000000000c:
 	ret
 
 func0000000000000005:
-	adds	x9, x2, x0
-	mov	x8, #-1
-	adc	x10, x3, x1
-	subs	x0, x9, #1
-	adc	x1, x10, x8
+	adds	x8, x2, x0
+	adc	x9, x3, x1
+	subs	x0, x8, #1
+	sbc	x1, x9, xzr
 	ret
 
 func000000000000000a:

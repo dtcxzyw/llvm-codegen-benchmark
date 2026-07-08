@@ -7,15 +7,13 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	cmn	x1, #1
-	csinv	x8, x1, xzr, gt
+	orr	x8, x1, x1, asr #63
 	cmp	x8, x0
 	cset	w0, gt
 	ret
 
 func0000000000000014:
-	cmn	x1, #1
-	csinv	x8, x1, xzr, gt
+	orr	x8, x1, x1, asr #63
 	cmp	x8, x0
 	cset	w0, lo
 	ret

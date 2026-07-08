@@ -38,9 +38,9 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vcvttss2si	%xmm0, %eax
-	testl	%eax, %eax
-	movl	$-1, %ecx
-	cmovnsl	%eax, %ecx
+	movl	%eax, %ecx
+	sarl	$31, %ecx
+	orl	%eax, %ecx
 	cmpl	%esi, %edi
 	cmovll	%edi, %esi
 	cmpl	%esi, %ecx

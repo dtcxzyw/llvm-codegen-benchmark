@@ -9,10 +9,9 @@ func0000000000000068:
 
 func000000000000000a:
 	fcvtzs	w8, s0
+	orr	w9, w0, w0, asr #31
 	cmp	w8, w1
 	csel	w8, w8, w1, lt
-	cmn	w0, #1
-	csinv	w9, w0, wzr, gt
 	cmp	w9, w8
 	cset	w0, gt
 	ret

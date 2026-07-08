@@ -174,44 +174,34 @@ func00000000000000a4:
 	retq
 
 .LCPI13_0:
+	.quad	3461425495
+.LCPI13_1:
+	.quad	407226528
+.LCPI13_2:
 	.quad	-1460000715399
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000026:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rax
-	movabsq	$1749024623285053783, %rcx
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$13, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm2, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$13, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$13, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$13, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vpsraq	$32, %ymm1, %ymm2
+	vpbroadcastq	.LCPI13_0(%rip), %ymm3
+	vpmullq	%ymm3, %ymm2, %ymm4
+	vpmuludq	%ymm3, %ymm1, %ymm3
+	vpsrlq	$32, %ymm3, %ymm3
+	vpaddq	%ymm3, %ymm4, %ymm3
+	vpsraq	$32, %ymm3, %ymm4
+	vpxor	%xmm5, %xmm5, %xmm5
+	vpblendd	$170, %ymm5, %ymm3, %ymm3
+	vpbroadcastq	.LCPI13_1(%rip), %ymm5
+	vpmuludq	%ymm5, %ymm1, %ymm1
+	vpaddq	%ymm3, %ymm1, %ymm1
+	vpsrlq	$32, %ymm1, %ymm1
+	vpmuldq	%ymm5, %ymm2, %ymm2
+	vpaddq	%ymm4, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsrlq	$63, %ymm1, %ymm2
+	vpsraq	$13, %ymm1, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpltq	.LCPI13_0(%rip){1to4}, %ymm0, %k0
+	vpcmpltq	.LCPI13_2(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -257,44 +247,34 @@ func0000000000000028:
 	retq
 
 .LCPI17_0:
+	.quad	3813930959
+.LCPI17_1:
+	.quad	549755813
+.LCPI17_2:
 	.quad	1000000
 	.prefalign	4, .Lfunc_end17, nop
 func0000000000000008:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rax
-	movabsq	$2361183241434822607, %rcx
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$7, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm2, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$7, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$7, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$7, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vpsraq	$32, %ymm1, %ymm2
+	vpbroadcastq	.LCPI17_0(%rip), %ymm3
+	vpmullq	%ymm3, %ymm2, %ymm4
+	vpmuludq	%ymm3, %ymm1, %ymm3
+	vpsrlq	$32, %ymm3, %ymm3
+	vpaddq	%ymm3, %ymm4, %ymm3
+	vpsraq	$32, %ymm3, %ymm4
+	vpxor	%xmm5, %xmm5, %xmm5
+	vpblendd	$170, %ymm5, %ymm3, %ymm3
+	vpbroadcastq	.LCPI17_1(%rip), %ymm5
+	vpmuludq	%ymm5, %ymm1, %ymm1
+	vpaddq	%ymm3, %ymm1, %ymm1
+	vpsrlq	$32, %ymm1, %ymm1
+	vpmuldq	%ymm5, %ymm2, %ymm2
+	vpaddq	%ymm4, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsrlq	$63, %ymm1, %ymm2
+	vpsraq	$7, %ymm1, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpnleuq	.LCPI17_0(%rip){1to4}, %ymm0, %k0
+	vpcmpnleuq	.LCPI17_2(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -313,83 +293,62 @@ func0000000000000086:
 	vzeroupper
 	retq
 
+.LCPI19_0:
+	.quad	613566757
+.LCPI19_1:
+	.quad	1227133513
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000001:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rax
-	movabsq	$5270498306774157605, %rcx
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	%rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm2, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	%rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	%rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	%rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpsraq	$32, %ymm1, %ymm2
+	vpbroadcastq	.LCPI19_0(%rip), %ymm3
+	vpmuldq	%ymm3, %ymm2, %ymm4
+	vpmuludq	%ymm3, %ymm1, %ymm3
+	vpsrlq	$32, %ymm3, %ymm3
+	vpaddq	%ymm3, %ymm4, %ymm3
+	vpsraq	$32, %ymm3, %ymm4
+	vpxor	%xmm5, %xmm5, %xmm5
+	vpblendd	$170, %ymm5, %ymm3, %ymm3
+	vpbroadcastq	.LCPI19_1(%rip), %ymm6
+	vpmuludq	%ymm6, %ymm1, %ymm1
+	vpaddq	%ymm3, %ymm1, %ymm1
+	vpsraq	$32, %ymm1, %ymm1
+	vpmuldq	%ymm6, %ymm2, %ymm2
+	vpaddq	%ymm4, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsrlq	$63, %ymm1, %ymm2
+	vpsraq	$1, %ymm1, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpsubq	%ymm0, %ymm5, %ymm0
 	vpcmpeqq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI20_0:
+	.quad	3619042523
+.LCPI20_1:
+	.quad	1125899906
 	.prefalign	4, .Lfunc_end20, nop
 func000000000000000a:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rax
-	movabsq	$4835703278458516699, %rcx
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$18, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm2, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$18, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$18, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rax
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$18, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vpsraq	$32, %ymm1, %ymm2
+	vpbroadcastq	.LCPI20_0(%rip), %ymm3
+	vpmullq	%ymm3, %ymm2, %ymm4
+	vpmuludq	%ymm3, %ymm1, %ymm3
+	vpsrlq	$32, %ymm3, %ymm3
+	vpaddq	%ymm3, %ymm4, %ymm3
+	vpsraq	$32, %ymm3, %ymm4
+	vpxor	%xmm5, %xmm5, %xmm5
+	vpblendd	$170, %ymm5, %ymm3, %ymm3
+	vpbroadcastq	.LCPI20_1(%rip), %ymm5
+	vpmuludq	%ymm5, %ymm1, %ymm1
+	vpaddq	%ymm3, %ymm1, %ymm1
+	vpsraq	$32, %ymm1, %ymm1
+	vpmuldq	%ymm5, %ymm2, %ymm2
+	vpaddq	%ymm4, %ymm2, %ymm2
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpsrlq	$63, %ymm1, %ymm2
+	vpsraq	$18, %ymm1, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpgtq	%ymm1, %ymm0, %k0

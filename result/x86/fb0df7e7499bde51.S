@@ -2,9 +2,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	movslq	%esi, %rcx
-	testq	%rdi, %rdi
-	movq	$-1, %rax
-	cmovnsq	%rdi, %rax
+	movq	%rdi, %rax
+	sarq	$63, %rax
+	orq	%rdi, %rax
 	addq	%rcx, %rax
 	retq
 

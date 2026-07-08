@@ -1,7 +1,6 @@
 func0000000000000013:
 	sub	w8, w0, w1
-	cmn	w8, #1
-	csinv	w8, w8, wzr, gt
+	orr	w8, w8, w8, asr #31
 	add	w0, w8, #1
 	ret
 

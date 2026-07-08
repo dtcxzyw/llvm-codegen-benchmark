@@ -48,7 +48,8 @@ func0000000000000019:
 func0000000000000002:
 	leal	(%rsi,%rdx), %ecx
 	subl	%edi, %ecx
-	movl	$-1, %eax
-	cmovnsl	%ecx, %eax
+	movl	%ecx, %eax
+	sarl	$31, %eax
+	orl	%ecx, %eax
 	retq
 

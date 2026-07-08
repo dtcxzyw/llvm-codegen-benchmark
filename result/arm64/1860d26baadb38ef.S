@@ -1,13 +1,11 @@
 func000000000000000a:
-	mov	x8, #-1
 	cmp	x0, #1
-	adc	x0, x1, x8
+	sbc	x0, x1, xzr
 	ret
 
 func0000000000000002:
-	mov	x8, #-1
 	cmp	x0, #1
-	adc	x0, x1, x8
+	sbc	x0, x1, xzr
 	ret
 
 func000000000000001b:
@@ -43,8 +41,7 @@ func000000000000001a:
 	ret
 
 func0000000000000003:
-	mov	x8, #-1
 	cmp	x0, #1
-	adc	x0, x1, x8
+	sbc	x0, x1, xzr
 	ret
 

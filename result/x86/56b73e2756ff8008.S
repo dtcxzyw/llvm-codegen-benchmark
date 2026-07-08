@@ -51,9 +51,9 @@ func0000000000000041:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
-	testl	%esi, %esi
-	movl	$-1, %eax
-	cmovnsl	%esi, %eax
+	movl	%esi, %eax
+	sarl	$31, %eax
+	orl	%esi, %eax
 	incl	%eax
 	cmpl	%eax, %edi
 	setg	%al
@@ -71,9 +71,9 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000001:
-	testl	%esi, %esi
-	movl	$-1, %eax
-	cmovnsl	%esi, %eax
+	movl	%esi, %eax
+	sarl	$31, %eax
+	orl	%esi, %eax
 	addl	$2, %eax
 	cmpl	%eax, %edi
 	sete	%al

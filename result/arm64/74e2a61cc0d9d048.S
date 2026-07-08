@@ -31,8 +31,7 @@ func000000000000000c:
 	ret
 
 func0000000000000000:
-	cmn	w0, #1
-	csinv	w8, w0, wzr, gt
+	orr	w8, w0, w0, asr #31
 	add	w0, w8, #1
 	ret
 

@@ -1,9 +1,8 @@
 func0000000000000084:
-	adds	x9, x2, x0
-	mov	x8, #-1
-	adc	x10, x3, x1
-	cmp	x9, #1
-	adcs	xzr, x10, x8
+	adds	x8, x2, x0
+	adc	x9, x3, x1
+	cmp	x8, #1
+	sbcs	xzr, x9, xzr
 	cset	w0, eq
 	ret
 

@@ -14,53 +14,37 @@ func0000000000000028:
 	vzeroupper
 	retq
 
+.LCPI1_0:
+	.quad	1493901669
+.LCPI1_1:
+	.quad	-1307163960
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrq	$1, %xmm1, %rcx
-	movabsq	$-5614226457215950491, %rsi
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$9, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$9, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vpextrq	$1, %xmm0, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$9, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm0, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$9, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsraq	$32, %ymm0, %ymm1
+	vpbroadcastq	.LCPI1_0(%rip), %ymm3
+	vpmuldq	%ymm3, %ymm1, %ymm4
+	vpmuludq	%ymm3, %ymm0, %ymm3
+	vpsrlq	$32, %ymm3, %ymm3
+	vpaddq	%ymm3, %ymm4, %ymm3
+	vpsraq	$32, %ymm3, %ymm4
+	vpxor	%xmm5, %xmm5, %xmm5
+	vpblendd	$170, %ymm5, %ymm3, %ymm3
+	vpblendd	$170, %ymm5, %ymm0, %ymm5
+	vpbroadcastq	.LCPI1_1(%rip), %ymm6
+	vpmullq	%ymm6, %ymm5, %ymm5
+	vpaddq	%ymm3, %ymm5, %ymm3
+	vpsraq	$32, %ymm3, %ymm3
+	vpmuldq	%ymm6, %ymm1, %ymm1
+	vpaddq	%ymm4, %ymm1, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm3, %ymm0, %ymm0
+	vpsrlq	$63, %ymm0, %ymm1
+	vpsraq	$9, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

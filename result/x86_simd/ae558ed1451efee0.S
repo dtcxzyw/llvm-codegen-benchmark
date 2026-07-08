@@ -1,58 +1,55 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	2694535763
+.LCPI0_1:
+	.quad	4503599
+.LCPI0_2:
+	.quad	1000000000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rax
+	vextracti128	$1, %ymm1, %xmm3
+	vpextrq	$1, %xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm4
+	vmovq	%xmm2, %rax
+	vmovq	%xmm3, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm2
+	vpunpcklqdq	%xmm4, %xmm2, %xmm2
+	vpextrq	$1, %xmm0, %rax
+	vpextrq	$1, %xmm1, %rcx
+	xorl	%edx, %edx
+	divq	%rcx
+	vmovq	%rax, %xmm3
 	vmovq	%xmm0, %rax
 	vmovq	%xmm1, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
-	movq	%rax, %rcx
-	vpextrq	$1, %xmm0, %rax
-	vpextrq	$1, %xmm1, %rsi
-	xorl	%edx, %edx
-	divq	%rsi
-	movq	%rax, %rsi
-	vextracti128	$1, %ymm0, %xmm0
-	vmovq	%xmm0, %rax
-	vextracti128	$1, %ymm1, %xmm1
-	vmovq	%xmm1, %rdi
-	xorl	%edx, %edx
-	divq	%rdi
-	movq	%rax, %rdi
-	vpextrq	$1, %xmm0, %rax
-	vpextrq	$1, %xmm1, %r8
-	xorl	%edx, %edx
-	divq	%r8
-	movq	%rax, %rdx
-	shrq	$9, %rdx
-	movabsq	$19342813113834067, %r8
-	mulxq	%r8, %rdx, %rdx
-	shrq	$11, %rdx
-	imulq	$1000000000, %rdx, %rdx
-	subq	%rdx, %rax
 	vmovq	%rax, %xmm0
-	movq	%rdi, %rdx
-	shrq	$9, %rdx
-	mulxq	%r8, %rax, %rax
-	shrq	$11, %rax
-	imulq	$1000000000, %rax, %rax
-	subq	%rax, %rdi
-	vmovq	%rdi, %xmm1
-	vpunpcklqdq	%xmm0, %xmm1, %xmm0
-	movq	%rsi, %rdx
-	shrq	$9, %rdx
-	mulxq	%r8, %rax, %rax
-	shrq	$11, %rax
-	imulq	$1000000000, %rax, %rax
-	subq	%rax, %rsi
-	vmovq	%rsi, %xmm1
-	movq	%rcx, %rdx
-	shrq	$9, %rdx
-	mulxq	%r8, %rax, %rax
-	shrq	$11, %rax
-	imulq	$1000000000, %rax, %rax
-	subq	%rax, %rcx
-	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm1, %xmm2, %xmm1
-	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vpunpcklqdq	%xmm3, %xmm0, %xmm0
+	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vpsrlq	$41, %ymm0, %ymm1
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2
+	vpmuludq	%ymm2, %ymm1, %ymm3
+	vpsrlq	$9, %ymm0, %ymm4
+	vpmuludq	%ymm2, %ymm4, %ymm2
+	vpsrlq	$32, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm3, %ymm2
+	vpsrlq	$32, %ymm2, %ymm3
+	vpxor	%xmm5, %xmm5, %xmm5
+	vpblendd	$170, %ymm5, %ymm2, %ymm2
+	vpbroadcastq	.LCPI0_1(%rip), %ymm5
+	vpmuludq	%ymm5, %ymm4, %ymm4
+	vpaddq	%ymm2, %ymm4, %ymm2
+	vpsrlq	$32, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm3, %ymm2
+	vpmadd52luq	%ymm5, %ymm1, %ymm2
+	vpsrlq	$11, %ymm2, %ymm1
+	vpmullq	.LCPI0_2(%rip){1to4}, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 

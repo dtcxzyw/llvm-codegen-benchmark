@@ -33,9 +33,8 @@ func0000000000000185:
 	ret
 
 func0000000000000045:
-	mov	w8, #-1
 	cmp	w1, #3
-	sbc	w0, w0, w8
+	cinc	w0, w0, hs
 	ret
 
 func00000000000000c1:

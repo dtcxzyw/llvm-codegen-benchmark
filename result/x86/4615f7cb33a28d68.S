@@ -21,9 +21,9 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
-	testl	%edx, %edx
-	movl	$-1, %eax
-	cmovnsl	%edx, %eax
+	movl	%edx, %eax
+	sarl	$31, %eax
+	orl	%edx, %eax
 	addl	%esi, %edi
 	cmpl	%eax, %edi
 	setg	%al

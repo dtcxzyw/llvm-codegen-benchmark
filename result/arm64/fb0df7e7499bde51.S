@@ -1,6 +1,5 @@
 func0000000000000001:
-	cmn	x0, #1
-	csinv	x8, x0, xzr, gt
+	orr	x8, x0, x0, asr #63
 	add	x0, x8, w1, sxtw
 	ret
 

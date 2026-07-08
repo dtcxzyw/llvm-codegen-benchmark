@@ -11,8 +11,9 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
 	subq	%rsi, %rdi
-	movq	$-1, %rax
-	cmovnsq	%rdi, %rax
+	movq	%rdi, %rax
+	sarq	$63, %rax
+	orq	%rdi, %rax
 	incq	%rax
 	retq
 

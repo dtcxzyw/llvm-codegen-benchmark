@@ -8,25 +8,22 @@ func0000000000000024:
 	ret
 
 func0000000000000004:
-	mov	x8, #-1
 	cmp	x0, #1
-	adcs	xzr, x1, x8
+	sbcs	xzr, x1, xzr
 	cset	w0, eq
 	ret
 
 func0000000000000034:
-	mov	x8, #-1
 	cmp	x0, #1
-	adcs	xzr, x1, x8
+	sbcs	xzr, x1, xzr
 	cset	w0, eq
 	ret
 
 func0000000000000028:
-	mov	x8, #-1
-	subs	x9, x0, #12
-	adc	x10, x1, x8
-	cmn	x9, #9
-	sbcs	xzr, x10, x8
+	subs	x8, x0, #12
+	sbc	x9, x1, xzr
+	cmn	x8, #9
+	adcs	xzr, x9, xzr
 	cset	w0, lo
 	ret
 

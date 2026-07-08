@@ -17,7 +17,7 @@ func0000000000000000:
 	sext.w	a2, a1
 	srai	a3, a2, 63
 	sext.w	a1, a0
-	and	a0, a3, a2
+	and	a0, a2, a3
 	blt	a1, a0, .LBB1_2
 	mv	a0, a1
 .LBB1_2:

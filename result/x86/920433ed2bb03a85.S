@@ -38,8 +38,9 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001a:
 	subl	%edi, %esi
-	incl	%esi
-	movl	$-1, %eax
-	cmovnsl	%esi, %eax
+	leal	1(%rsi), %ecx
+	movl	%ecx, %eax
+	sarl	$31, %eax
+	orl	%ecx, %eax
 	retq
 

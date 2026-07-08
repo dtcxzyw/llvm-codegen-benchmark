@@ -127,9 +127,9 @@ func0000000000000068:
 
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000001:
-	testl	%esi, %esi
-	movl	$-1, %eax
-	cmovnsl	%esi, %eax
+	movl	%esi, %eax
+	sarl	$31, %eax
+	orl	%esi, %eax
 	cmpq	%rax, %rdi
 	sete	%al
 	retq

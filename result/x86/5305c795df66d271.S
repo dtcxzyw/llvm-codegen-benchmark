@@ -9,9 +9,9 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
-	testl	%edi, %edi
-	movl	$-1, %eax
-	cmovnsl	%edi, %eax
+	movl	%edi, %eax
+	sarl	$31, %eax
+	orl	%edi, %eax
 	cltq
 	retq
 

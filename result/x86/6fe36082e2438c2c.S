@@ -25,9 +25,9 @@ func000000000000000b:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000f:
-	testl	%esi, %esi
-	movl	$-1, %eax
-	cmovnsl	%esi, %eax
+	movl	%esi, %eax
+	sarl	$31, %eax
+	orl	%esi, %eax
 	leal	1(%rax,%rdi), %eax
 	retq
 

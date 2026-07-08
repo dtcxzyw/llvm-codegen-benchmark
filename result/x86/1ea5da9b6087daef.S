@@ -14,8 +14,9 @@ func0000000000000002:
 	addl	%esi, %edi
 	movl	$-2, %ecx
 	subl	%edi, %ecx
-	movl	$-1, %eax
-	cmovnsl	%ecx, %eax
+	movl	%ecx, %eax
+	sarl	$31, %eax
+	orl	%ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

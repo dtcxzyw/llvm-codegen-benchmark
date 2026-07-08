@@ -18,9 +18,9 @@ func000000000000000a:
 	cmpl	%edi, %eax
 	cmovll	%eax, %edi
 	vcvttss2si	%xmm0, %eax
-	testl	%eax, %eax
-	movl	$-1, %ecx
-	cmovnsl	%eax, %ecx
+	movl	%eax, %ecx
+	sarl	$31, %ecx
+	orl	%eax, %ecx
 	cmpl	%edi, %ecx
 	setg	%al
 	retq

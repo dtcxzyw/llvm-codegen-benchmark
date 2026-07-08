@@ -14,8 +14,7 @@ func0000000000000010:
 
 func000000000000008d:
 	cmp	w2, w1
-	mov	w8, #-1
-	sbc	w0, w0, w8
+	cinc	w0, w0, hs
 	ret
 
 func00000000000000c8:

@@ -1,8 +1,7 @@
 func0000000000000005:
 	mvn	x8, x2
 	adds	x0, x0, x8
-	mov	x8, #-1
-	adc	x1, x1, x8
+	sbc	x1, x1, xzr
 	ret
 
 func0000000000000015:

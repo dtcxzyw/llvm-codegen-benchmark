@@ -1,5 +1,11 @@
 	.att_syntax
 .LCPI0_0:
+	.quad	3303820997
+.LCPI0_1:
+	.quad	1321528398
+.LCPI0_2:
+	.quad	26
+.LCPI0_3:
 	.byte	65
 	.byte	65
 	.byte	65
@@ -18,45 +24,27 @@
 	.zero	1
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrq	$1, %xmm1, %rdx
-	movabsq	$5675921253449092805, %rax
-	mulxq	%rax, %rcx, %rcx
-	shrq	$3, %rcx
-	leaq	(%rcx,%rcx,4), %rsi
-	leaq	(%rsi,%rsi,4), %rsi
-	addq	%rcx, %rsi
-	subq	%rsi, %rdx
-	vmovq	%rdx, %xmm2
-	vmovq	%xmm1, %rdx
-	mulxq	%rax, %rcx, %rcx
-	shrq	$3, %rcx
-	leaq	(%rcx,%rcx,4), %rsi
-	leaq	(%rsi,%rsi,4), %rsi
-	addq	%rcx, %rsi
-	subq	%rsi, %rdx
-	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm2, %xmm1, %xmm1
-	vpextrq	$1, %xmm0, %rdx
-	mulxq	%rax, %rcx, %rcx
-	shrq	$3, %rcx
-	leaq	(%rcx,%rcx,4), %rsi
-	leaq	(%rsi,%rsi,4), %rsi
-	addq	%rcx, %rsi
-	subq	%rsi, %rdx
-	vmovq	%rdx, %xmm2
-	vmovq	%xmm0, %rdx
-	mulxq	%rax, %rax, %rax
-	shrq	$3, %rax
-	leaq	(%rax,%rax,4), %rcx
-	leaq	(%rcx,%rcx,4), %rcx
-	addq	%rax, %rcx
-	subq	%rcx, %rdx
-	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm2, %xmm0, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpsrlq	$32, %ymm0, %ymm1
+	vpbroadcastq	.LCPI0_0(%rip), %ymm2
+	vpmuludq	%ymm2, %ymm1, %ymm3
+	vpmuludq	%ymm2, %ymm0, %ymm2
+	vpsrlq	$32, %ymm2, %ymm2
+	vpaddq	%ymm2, %ymm3, %ymm2
+	vpsrlq	$32, %ymm2, %ymm3
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpblendd	$170, %ymm4, %ymm2, %ymm2
+	vpbroadcastq	.LCPI0_1(%rip), %ymm4
+	vpmuludq	%ymm4, %ymm0, %ymm5
+	vpaddq	%ymm2, %ymm5, %ymm2
+	vpsrlq	$32, %ymm2, %ymm2
+	vpmuludq	%ymm4, %ymm1, %ymm1
+	vpaddq	%ymm3, %ymm1, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpsrlq	$3, %ymm1, %ymm1
+	vpmullq	.LCPI0_2(%rip){1to4}, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
-	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI0_3(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 

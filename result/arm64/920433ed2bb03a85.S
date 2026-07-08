@@ -24,10 +24,8 @@ func0000000000000002:
 	ret
 
 func000000000000001a:
-	sub	w9, w1, w0
-	mov	w8, #-1
-	add	w10, w9, #1
-	cmn	w10, #1
-	csinc	w0, w8, w9, le
+	sub	w8, w1, w0
+	add	w8, w8, #1
+	orr	w0, w8, w8, asr #31
 	ret
 

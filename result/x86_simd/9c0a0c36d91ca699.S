@@ -1,51 +1,33 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	4248034439
+.LCPI0_1:
+	.quad	1667999861
+.LCPI0_2:
+	.quad	86400000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000040:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrq	$1, %xmm3, %rcx
-	movabsq	$7164004856975580295, %rsi
-	movq	%rcx, %rax
-	imulq	%rsi
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$25, %rdx
-	addq	%rax, %rdx
-	imulq	$86400000, %rdx, %rax
-	subq	%rax, %rcx
-	vmovq	%rcx, %xmm4
-	vmovq	%xmm3, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$25, %rdx
-	addq	%rax, %rdx
-	imulq	$86400000, %rdx, %rax
-	subq	%rax, %rcx
-	vmovq	%rcx, %xmm3
-	vpunpcklqdq	%xmm4, %xmm3, %xmm3
-	vpextrq	$1, %xmm2, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$25, %rdx
-	addq	%rax, %rdx
-	imulq	$86400000, %rdx, %rax
-	subq	%rax, %rcx
-	vmovq	%rcx, %xmm4
-	vmovq	%xmm2, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$25, %rdx
-	addq	%rax, %rdx
-	imulq	$86400000, %rdx, %rax
-	subq	%rax, %rcx
-	vmovq	%rcx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vpsraq	$32, %ymm2, %ymm3
+	vpbroadcastq	.LCPI0_0(%rip), %ymm4
+	vpmullq	%ymm4, %ymm3, %ymm5
+	vpmuludq	%ymm4, %ymm2, %ymm4
+	vpsrlq	$32, %ymm4, %ymm4
+	vpaddq	%ymm4, %ymm5, %ymm4
+	vpsraq	$32, %ymm4, %ymm5
+	vpxor	%xmm6, %xmm6, %xmm6
+	vpblendd	$170, %ymm6, %ymm4, %ymm4
+	vpbroadcastq	.LCPI0_1(%rip), %ymm6
+	vpmuludq	%ymm6, %ymm2, %ymm7
+	vpaddq	%ymm4, %ymm7, %ymm4
+	vpsraq	$32, %ymm4, %ymm4
+	vpmuldq	%ymm6, %ymm3, %ymm3
+	vpaddq	%ymm5, %ymm3, %ymm3
+	vpaddq	%ymm4, %ymm3, %ymm3
+	vpsrlq	$63, %ymm3, %ymm4
+	vpsraq	$25, %ymm3, %ymm3
+	vpaddq	%ymm4, %ymm3, %ymm3
+	vpmullq	.LCPI0_2(%rip){1to4}, %ymm3, %ymm3
+	vpsubq	%ymm3, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
