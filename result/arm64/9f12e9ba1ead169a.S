@@ -1,10 +1,9 @@
 func0000000000000000:
+	mov	x9, #1968111616
 	tst	w0, #0x1
-	mov	w9, #51029
+	movk	x9, #14492, lsl #32
 	csel	w8, w1, w2, ne
-	movk	w9, #5001, lsl #16
-	lsr	w8, w8, #2
-	umull	x8, w8, w9
-	lsr	x0, x8, #42
+	movk	x9, #1, lsl #48
+	umulh	x0, x8, x9
 	ret
 

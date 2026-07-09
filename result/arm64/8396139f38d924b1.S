@@ -1,10 +1,10 @@
 func0000000000000003:
-	lsr	w8, w0, #2
-	mov	w9, #51029
-	movk	w9, #5001, lsl #16
-	umull	x8, w8, w9
+	mov	x8, #1968111616
+	mov	w9, w0
+	movk	x8, #14492, lsl #32
+	movk	x8, #1, lsl #48
+	umulh	x8, x9, x8
 	mov	w9, #12211
-	lsr	x8, x8, #42
 	mul	w0, w8, w9
 	ret
 

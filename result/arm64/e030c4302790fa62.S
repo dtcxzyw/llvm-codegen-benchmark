@@ -60,12 +60,12 @@ func0000000000000058:
 	ret
 
 func0000000000000330:
-	lsr	w8, w1, #5
-	mov	w9, #33057
-	movk	w9, #513, lsl #16
-	umull	x8, w8, w9
+	mov	x8, #551157760
+	mov	w9, w1
+	movk	x8, #385, lsl #32
+	movk	x8, #2, lsl #48
+	umulh	x8, x9, x8
 	mov	w9, #32672
-	lsr	x8, x8, #35
 	msub	w8, w8, w9, w1
 	cmp	w8, #3
 	ccmp	w0, #0, #0, ls

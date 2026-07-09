@@ -29,9 +29,9 @@ func0000000000000008:
 func000000000000000a:
 	addl	%edx, %esi
 	subl	%esi, %edi
-	shrl	$3, %edi
-	imulq	$613566757, %rdi, %rax
-	shrq	$32, %rax
+	movabsq	$329406144202145792, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

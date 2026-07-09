@@ -48,10 +48,9 @@ func0000000000000065:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000002f:
-	addl	$-128, %esi
-	shrl	$2, %esi
-	imulq	$1745256553, %rsi, %rax
-	shrq	$39, %rax
+	leal	-128(%rsi), %edx
+	movabsq	$14640273076256768, %rax
+	mulxq	%rax, %rax, %rax
 	movl	%eax, %ecx
 	shll	$7, %eax
 	leal	(%rax,%rcx,2), %eax
@@ -60,10 +59,9 @@ func000000000000002f:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000f:
-	addl	$-65536, %esi
-	shrl	$2, %esi
-	imulq	$1745256553, %rsi, %rax
-	shrq	$39, %rax
+	leal	-65536(%rsi), %edx
+	movabsq	$14640273076256768, %rax
+	mulxq	%rax, %rax, %rax
 	movl	%eax, %ecx
 	shll	$7, %eax
 	leal	(%rax,%rcx,2), %eax

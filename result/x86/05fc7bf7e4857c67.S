@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	shrl	$5, %edi
-	imulq	$175921861, %rdi, %rax
-	shrq	$39, %rax
+	movl	%edi, %edx
+	movabsq	$184467440762880, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -29,9 +29,9 @@ func000000000000001a:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000012:
-	shrl	$5, %edi
-	imulq	$175921861, %rdi, %rax
-	shrq	$39, %rax
+	movabsq	$184467440762880, %rax
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

@@ -44,10 +44,8 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000008:
-	leal	-10234(%rdi), %ecx
-	shrl	%ecx
-	movl	$2164392969, %eax
-	imulq	%rcx, %rax
-	shrq	$38, %rax
+	leal	-10234(%rdi), %edx
+	movabsq	$72624976682811392, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 

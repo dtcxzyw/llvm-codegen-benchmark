@@ -50,12 +50,11 @@ func0000000000000018:
 	ret
 
 func0000000000000008:
+	mov	x9, #285212672
 	mov	w8, #-10234
-	mov	w9, #1033
+	movk	x9, #1032, lsl #32
 	add	w8, w0, w8
-	movk	w9, #33026, lsl #16
-	lsr	w8, w8, #1
-	umull	x8, w8, w9
-	lsr	x0, x8, #38
+	movk	x9, #258, lsl #48
+	umulh	x0, x8, x9
 	ret
 

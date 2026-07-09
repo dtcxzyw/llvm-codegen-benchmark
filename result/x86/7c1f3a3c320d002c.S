@@ -34,10 +34,9 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
-	addl	%edx, %esi
-	shrl	$9, %esi
-	imulq	$281475, %rsi, %rax
-	shrq	$39, %rax
+	addl	%esi, %edx
+	movabsq	$18446744076, %rax
+	mulxq	%rax, %rax, %rax
 	addl	%edi, %eax
 	retq
 

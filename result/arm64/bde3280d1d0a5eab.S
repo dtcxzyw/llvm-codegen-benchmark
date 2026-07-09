@@ -1,9 +1,10 @@
 func0000000000000000:
-	lsr	w8, w0, #2
-	mov	w9, #8319
-	movk	w9, #14699, lsl #16
-	umull	x8, w8, w9
-	add	x0, x0, x8, lsr #43
+	mov	x8, #66387968
+	mov	w9, w0
+	movk	x8, #52057, lsl #32
+	movk	x8, #1, lsl #48
+	umulh	x8, x9, x8
+	add	w0, w8, w0
 	ret
 
 func0000000000000003:
@@ -14,10 +15,11 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	lsr	w8, w0, #2
-	mov	w9, #8319
-	movk	w9, #14699, lsl #16
-	umull	x8, w8, w9
-	add	x0, x0, x8, lsr #43
+	mov	x8, #66387968
+	mov	w9, w0
+	movk	x8, #52057, lsl #32
+	movk	x8, #1, lsl #48
+	umulh	x8, x9, x8
+	add	w0, w8, w0
 	ret
 

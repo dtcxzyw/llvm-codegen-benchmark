@@ -2,10 +2,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	leaq	(%rsi,%rdx), %rax
-	movl	%edi, %ecx
-	shrl	$9, %ecx
-	imulq	$281475, %rcx, %rcx
-	shrq	$39, %rcx
+	movl	%edi, %edx
+	movabsq	$18446744076, %rcx
+	mulxq	%rcx, %rcx, %rcx
 	imull	$1000000000, %ecx, %ecx
 	subl	%ecx, %edi
 	movl	%edi, %edx

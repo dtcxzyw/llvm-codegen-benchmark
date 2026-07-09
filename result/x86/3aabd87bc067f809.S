@@ -17,17 +17,17 @@ func0000000000000015:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	movl	%edx, %eax
-	shrl	$2, %eax
-	imulq	$613566757, %rax, %rax
-	shrq	$32, %rax
-	leal	(%rax,%rax,8), %ecx
-	leal	(%rcx,%rcx,2), %ecx
-	addl	%eax, %ecx
-	movl	%edx, %eax
-	subl	%ecx, %eax
-	subl	%edx, %eax
+	movl	%edx, %edx
+	movabsq	$658812288404291584, %rcx
+	mulxq	%rcx, %rcx, %rcx
+	leal	(%rcx,%rcx,8), %edx
+	leal	(%rdx,%rdx,2), %edx
+	addl	%ecx, %edx
+	movl	%eax, %ecx
+	subl	%edx, %ecx
+	subl	%eax, %ecx
 	addl	%esi, %edi
-	leal	-4(%rax,%rdi), %eax
+	leal	-4(%rcx,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

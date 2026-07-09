@@ -14,9 +14,9 @@ func0000000000000000:
 func0000000000000002:
 	movq	%rdi, %rax
 	shrq	$32, %rax
-	shrq	$37, %rdi
-	imulq	$175921861, %rdi, %rcx
-	shrq	$39, %rcx
+	movabsq	$184467440762880, %rcx
+	movq	%rax, %rdx
+	mulxq	%rcx, %rcx, %rcx
 	imull	$100000, %ecx, %ecx
 	subl	%ecx, %eax
 	retq

@@ -8,13 +8,13 @@ func0000000000000019:
 	ret
 
 func000000000000001b:
-	lsl	w8, w1, #8
-	mov	w9, #27671
-	movk	w9, #5825, lsl #16
-	sub	w8, w8, w1
-	lsr	w8, w8, #3
-	umull	x8, w8, w9
-	add	x0, x0, x8, lsr #34
+	mov	x8, #3061841920
+	lsl	w9, w1, #8
+	movk	x8, #2912, lsl #32
+	movk	x8, #182, lsl #48
+	sub	w9, w9, w1
+	umulh	x8, x9, x8
+	add	w0, w0, w8
 	ret
 
 func0000000000000009:

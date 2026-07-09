@@ -11,10 +11,9 @@ func000000000000001e:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	leal	(%rsi,%rsi,4), %eax
-	leal	(%rdi,%rax,2), %eax
-	shrl	$5, %eax
-	imulq	$159072863, %rax, %rax
-	shrq	$32, %rax
+	leal	(%rdi,%rax,2), %edx
+	movabsq	$21350398237343744, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -35,10 +34,9 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
-	imull	$1000000, %esi, %eax
-	addl	%edi, %eax
-	shrl	$9, %eax
-	imulq	$281475, %rax, %rax
-	shrq	$39, %rax
+	imull	$1000000, %esi, %edx
+	addl	%edi, %edx
+	movabsq	$18446744076, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 

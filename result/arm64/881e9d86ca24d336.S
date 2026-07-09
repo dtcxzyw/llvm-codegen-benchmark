@@ -28,13 +28,13 @@ func0000000000000006:
 
 func0000000000000000:
 	mov	w8, #13824
-	mov	w9, #19331
+	mov	x9, #64012
 	movk	w8, #50277, lsl #16
-	movk	w9, #4, lsl #16
+	movk	x9, #19330, lsl #16
 	add	w8, w1, w8
-	lsr	w8, w8, #9
-	umull	x8, w8, w9
-	add	x8, x0, x8, lsr #39
+	movk	x9, #4, lsl #32
+	umulh	x8, x8, x9
+	add	w8, w0, w8
 	add	w0, w8, #1
 	ret
 

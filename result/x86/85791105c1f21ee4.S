@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001b:
-	movl	%edi, %eax
-	shrl	$3, %eax
-	imulq	$349051311, %rax, %rax
-	shrq	$39, %rax
+	movl	%edi, %edx
+	movabsq	$1464027307573248, %rax
+	mulxq	%rax, %rax, %rax
 	imull	$12600, %eax, %eax
 	subl	%eax, %edi
 	imull	$3329, %edi, %eax

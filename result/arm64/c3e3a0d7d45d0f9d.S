@@ -1,9 +1,10 @@
 func0000000000000034:
-	lsr	w8, w0, #3
-	mov	w9, #150994943
-	umull	x8, w8, w9
-	mov	w9, #-5
-	add	x8, x9, x8, lsr #51
+	mov	x8, #64416
+	mov	w9, w0
+	movk	x8, #65535, lsl #16
+	movk	x8, #35, lsl #32
+	umulh	x8, x9, x8
+	sub	w8, w8, #5
 	cmp	w8, #5
 	cset	w0, lo
 	ret

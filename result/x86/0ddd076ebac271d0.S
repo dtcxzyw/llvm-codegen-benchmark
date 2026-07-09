@@ -30,12 +30,10 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000002f:
-	addl	$-10234, %edi
-	shrl	$2, %edi
-	imulq	$1090717717, %rdi, %rax
-	shrq	$32, %rax
-	shll	$4, %eax
-	andl	$-65536, %eax
+	leal	-10234(%rdi), %edx
+	movabsq	$285925105008640, %rax
+	mulxq	%rax, %rax, %rax
+	shll	$16, %eax
 	addl	$7602176, %eax
 	retq
 

@@ -9,10 +9,9 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	shrl	$3, %edi
-	movabsq	$141012904443904, %rcx
-	imulq	%rdi, %rcx
-	movabsq	$-72057594037927936, %rax
-	andq	%rcx, %rax
+	movl	%edi, %edx
+	movabsq	$4512412934864896, %rax
+	mulxq	%rax, %rax, %rax
+	shlq	$56, %rax
 	retq
 

@@ -1,12 +1,11 @@
 func0000000000000028:
 	mov	w8, #50511
-	mov	w9, #31961
+	mov	x9, #1814036480
 	movk	w8, #65533, lsl #16
-	movk	w9, #22982, lsl #16
+	movk	x9, #58174, lsl #32
 	madd	w8, w1, w8, w0
-	lsr	w8, w8, #2
-	umull	x8, w8, w9
-	lsr	x0, x8, #39
+	movk	x9, #44, lsl #48
+	umulh	x0, x8, x9
 	ret
 
 func0000000000000000:

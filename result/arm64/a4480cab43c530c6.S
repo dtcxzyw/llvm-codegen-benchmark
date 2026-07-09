@@ -44,24 +44,22 @@ func0000000000000065:
 	ret
 
 func000000000000002f:
-	sub	w8, w1, #128
-	mov	w9, #32873
-	lsr	w8, w8, #2
-	movk	w9, #26630, lsl #16
-	umull	x8, w8, w9
+	mov	x8, #874512384
+	sub	w9, w1, #128
+	movk	x8, #832, lsl #32
+	movk	x8, #52, lsl #48
+	umulh	x8, x9, x8
 	mov	w9, #130
-	lsr	x8, x8, #39
 	madd	w0, w8, w9, w0
 	ret
 
 func000000000000000f:
-	sub	w8, w1, #16, lsl #12
-	mov	w9, #32873
-	lsr	w8, w8, #2
-	movk	w9, #26630, lsl #16
-	umull	x8, w8, w9
+	mov	x8, #874512384
+	sub	w9, w1, #16, lsl #12
+	movk	x8, #832, lsl #32
+	movk	x8, #52, lsl #48
+	umulh	x8, x9, x8
 	mov	w9, #130
-	lsr	x8, x8, #39
 	madd	w0, w8, w9, w0
 	ret
 

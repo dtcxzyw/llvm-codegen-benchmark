@@ -9,12 +9,11 @@ func000000000000001e:
 
 func000000000000000a:
 	mov	w8, #10
-	mov	w9, #16991
+	mov	x9, #4139778048
 	madd	w8, w1, w8, w0
-	movk	w9, #2427, lsl #16
-	lsr	w8, w8, #5
-	umull	x8, w8, w9
-	lsr	x0, x8, #32
+	movk	x9, #55826, lsl #32
+	movk	x9, #75, lsl #48
+	umulh	x0, x8, x9
 	ret
 
 func0000000000000000:
@@ -39,12 +38,11 @@ func0000000000000008:
 
 func0000000000000018:
 	mov	w8, #16960
-	mov	w9, #19331
+	mov	x9, #64012
 	movk	w8, #15, lsl #16
-	movk	w9, #4, lsl #16
+	movk	x9, #19330, lsl #16
 	madd	w8, w1, w8, w0
-	lsr	w8, w8, #9
-	umull	x8, w8, w9
-	lsr	x0, x8, #39
+	movk	x9, #4, lsl #32
+	umulh	x0, x8, x9
 	ret
 

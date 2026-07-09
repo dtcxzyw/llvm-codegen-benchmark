@@ -22,10 +22,9 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	movq	%rdi, %rax
-	movl	%eax, %ecx
-	shrl	$8, %ecx
-	imulq	$18764999, %rcx, %rcx
-	shrq	$42, %rcx
+	movabsq	$307445734592, %rcx
+	movq	%rdi, %rdx
+	mulxq	%rcx, %rcx, %rcx
 	imull	$60000000, %ecx, %ecx
 	subl	%ecx, %eax
 	retq

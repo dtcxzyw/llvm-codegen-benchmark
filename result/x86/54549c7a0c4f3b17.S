@@ -16,10 +16,9 @@ func000000000000000e:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
-	leal	23(%rdi,%rsi), %eax
-	shrl	$2, %eax
-	imulq	$613566757, %rax, %rax
-	shrq	$32, %rax
+	leal	23(%rdi,%rsi), %edx
+	movabsq	$658812288404291584, %rax
+	mulxq	%rax, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

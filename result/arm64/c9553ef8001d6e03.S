@@ -10,14 +10,13 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	lsr	x8, x0, #37
-	mov	w9, #23237
-	lsr	x10, x0, #32
-	movk	w9, #2684, lsl #16
-	umull	x8, w8, w9
-	mov	w9, #34464
-	movk	w9, #1, lsl #16
-	lsr	x8, x8, #39
-	msub	w0, w8, w9, w10
+	mov	x9, #32768
+	lsr	x8, x0, #32
+	mov	w10, #34464
+	movk	x9, #44103, lsl #16
+	movk	w10, #1, lsl #16
+	movk	x9, #42949, lsl #32
+	umulh	x9, x8, x9
+	msub	w0, w9, w10, w8
 	ret
 

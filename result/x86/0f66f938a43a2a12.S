@@ -7,9 +7,9 @@ func000000000000000f:
 	shrq	$37, %rcx
 	imull	$60, %ecx, %eax
 	subl	%eax, %esi
-	shrl	$9, %edi
-	imulq	$281475, %rdi, %rax
-	shrq	$39, %rax
+	movl	%edi, %edx
+	movabsq	$18446744076, %rax
+	mulxq	%rax, %rax, %rax
 	addl	%esi, %eax
 	imull	$103, %eax, %ecx
 	shrl	$9, %ecx

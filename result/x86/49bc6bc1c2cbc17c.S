@@ -29,10 +29,10 @@ func0000000000000000:
 	movl	%edx, %eax
 	imulq	$274877907, %rax, %rcx
 	shrq	$38, %rcx
-	addl	%edi, %ecx
-	shrl	$9, %esi
-	imulq	$281475, %rsi, %rax
-	shrq	$39, %rax
+	movl	%esi, %edx
+	movabsq	$18446744076, %rax
+	mulxq	%rax, %rax, %rax
+	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
 
