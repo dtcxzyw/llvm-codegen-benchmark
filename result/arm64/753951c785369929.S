@@ -7,8 +7,8 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	bic	w8, w0, w0, asr #31
-	neg	w0, w8
+	neg	w8, w0
+	bic	w0, w8, w0, asr #31
 	ret
 
 func0000000000000003:

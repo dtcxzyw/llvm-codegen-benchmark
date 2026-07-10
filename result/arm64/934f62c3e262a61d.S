@@ -26,7 +26,7 @@ func000000000000001b:
 	ret
 
 func0000000000000018:
-	and	x8, x0, x1, asr #63
-	neg	x0, x8
+	neg	x8, x0
+	and	x0, x8, x1, asr #63
 	ret
 
