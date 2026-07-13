@@ -1,20 +1,18 @@
 func0000000000000000:
 	zext.b	a2, a0
-	neg	a3, a1
+	slli	a0, a0, 8
+	or	a0, a0, a2
 	andi	a1, a1, 7
-	andi	a3, a3, 7
 	sll	a0, a0, a1
-	srl	a1, a2, a3
-	or	a0, a0, a1
+	srli	a0, a0, 8
 	ret
 
 func0000000000000001:
 	zext.b	a2, a0
-	neg	a3, a1
+	slli	a0, a0, 8
+	or	a0, a0, a2
 	andi	a1, a1, 7
-	andi	a3, a3, 7
 	sll	a0, a0, a1
-	srl	a1, a2, a3
-	or	a0, a0, a1
+	srli	a0, a0, 8
 	ret
 

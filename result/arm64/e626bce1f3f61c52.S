@@ -1,20 +1,14 @@
 func0000000000000000:
-	neg	w8, w1
-	and	w9, w0, #0xffff
-	and	w10, w1, #0xf
-	and	w8, w8, #0xf
-	lsl	w10, w0, w10
-	lsr	w8, w9, w8
-	orr	w0, w10, w8
+	bfi	w0, w0, #16, #16
+	and	w8, w1, #0xf
+	lsl	w8, w0, w8
+	lsr	w0, w8, #16
 	ret
 
 func0000000000000001:
-	neg	w8, w1
-	and	w9, w0, #0xffff
-	and	w10, w1, #0xf
-	and	w8, w8, #0xf
-	lsl	w10, w0, w10
-	lsr	w8, w9, w8
-	orr	w0, w10, w8
+	bfi	w0, w0, #16, #16
+	and	w8, w1, #0xf
+	lsl	w8, w0, w8
+	lsr	w0, w8, #16
 	ret
 
