@@ -6,7 +6,7 @@ func0000000000000000:
 	shlq	$3, %rsi
 	xorl	%edx, %edx
 	divq	%rsi
-	movabsq	$9223372036854775804, %rcx
+	movabsq	$2305843009213693948, %rcx
 	andq	%rcx, %rax
 	retq
 

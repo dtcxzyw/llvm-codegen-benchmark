@@ -5,10 +5,6 @@ func0000000000000000:
 	shlq	$5, %rsi
 	xorl	%edx, %edx
 	divq	%rsi
-	leaq	3(%rax), %rcx
-	testq	%rax, %rax
-	cmovnsq	%rax, %rcx
-	andq	$-4, %rcx
-	subq	%rcx, %rax
+	andl	$3, %eax
 	retq
 

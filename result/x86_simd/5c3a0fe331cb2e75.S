@@ -1,6 +1,6 @@
 	.att_syntax
 .LCPI0_0:
-	.quad	-4
+	.quad	3
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpsllq	$5, %ymm1, %ymm1
@@ -29,10 +29,6 @@ func0000000000000000:
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpsraq	$63, %ymm0, %ymm1
-	vpsrlq	$62, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm1
-	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpandq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 

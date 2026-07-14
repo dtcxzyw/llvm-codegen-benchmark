@@ -7,10 +7,6 @@ func0000000000000002:
 	subq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	leaq	3(%rax), %rcx
-	testq	%rax, %rax
-	cmovnsq	%rax, %rcx
-	andq	$-4, %rcx
-	subq	%rcx, %rax
+	andl	$3, %eax
 	retq
 

@@ -28,9 +28,6 @@ func0000000000000000:
 	vmovq	%rax, %xmm0
 	vpunpcklqdq	%xmm3, %xmm0, %xmm0
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpsraq	$63, %ymm0, %ymm1
-	vpsrlq	$62, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsraq	$2, %ymm0, %ymm0
+	vpsrlq	$2, %ymm0, %ymm0
 	retq
 
