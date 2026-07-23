@@ -23,10 +23,9 @@ func0000000000000026:
 	ret
 
 func000000000000000a:
-	mov	x8, #281449206906880
+	mov	x8, #25769803776
 	cmp	w1, #15
-	movk	x8, #65535, lsl #48
-	add	x8, x0, x8
+	sub	x8, x0, x8
 	csel	x0, x8, x0, gt
 	ret
 

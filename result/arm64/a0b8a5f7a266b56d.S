@@ -20,12 +20,11 @@ func00000000000000aa:
 	ret
 
 func00000000000001a8:
-	mov	x9, #-65536
 	add	x8, x1, x2
+	mov	x9, #4293984256
 	mov	w10, #65520
-	movk	x9, #15, lsl #16
+	sub	x9, x0, x9
 	cmp	x8, x10
-	add	x9, x0, x9
 	csel	x0, x9, x0, hi
 	ret
 

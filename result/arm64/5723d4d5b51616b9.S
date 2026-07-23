@@ -40,8 +40,8 @@ func000000000000001d:
 
 func000000000000001f:
 	lsr	x8, x0, #2
-	mov	w9, #-3
+	mov	x9, #-4294967293
 	add	x8, x8, x0, lsr #3
-	add	x0, x8, x9
+	sub	x0, x8, x9
 	ret
 

@@ -5,10 +5,9 @@ func0000000000000061:
 	ret
 
 func0000000000000001:
-	mov	x8, #-61440
+	mov	x8, #4294963200
 	cmp	x1, #0
-	movk	x8, #0, lsl #16
-	add	x8, x0, x8
+	sub	x8, x0, x8
 	csel	x0, x0, x8, eq
 	ret
 

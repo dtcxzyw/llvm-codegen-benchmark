@@ -21,9 +21,8 @@ func000000000000000d:
 	ret
 
 func0000000000000009:
-	mov	x8, #8589869056
-	movk	x8, #65409
-	add	x8, x0, x8
+	mov	x8, #-8589934465
+	sub	x8, x0, x8
 	lsr	x0, x8, #1
 	ret
 

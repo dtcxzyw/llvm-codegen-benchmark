@@ -86,9 +86,8 @@ func0000000000000048:
 	ret
 
 func0000000000000004:
-	mov	x8, #1
-	movk	x8, #64, lsl #48
-	add	x8, x0, x8
+	mov	x8, #-18014398509481985
+	sub	x8, x0, x8
 	lsr	x8, x8, #63
 	eor	w0, w8, #0x1
 	ret

@@ -34,10 +34,9 @@ func0000000000000ff4:
 	ret
 
 func0000000000000561:
-	mov	w9, #2
 	add	w8, w1, w2
-	movk	w9, #65534, lsl #16
-	add	w8, w8, w9
+	mov	w9, #131070
+	sub	w8, w8, w9
 	cmp	x0, x8
 	cset	w0, eq
 	ret

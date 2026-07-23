@@ -36,9 +36,8 @@ func0000000000000005:
 
 func000000000000003c:
 	add	w8, w1, w2
-	mov	w9, #8
+	mov	w9, #262136
 	add	w8, w8, w0
-	movk	w9, #65532, lsl #16
-	add	w0, w8, w9
+	sub	w0, w8, w9
 	ret
 

@@ -1,19 +1,17 @@
 func0000000000000000:
 	add	x8, x1, x2
-	mov	x9, #-61440
+	mov	x9, #4294963200
 	and	x8, x8, #0xfffffffffffff000
-	movk	x9, #0, lsl #16
 	sub	x8, x8, x0
-	add	x0, x8, x9
+	sub	x0, x8, x9
 	ret
 
 func0000000000000010:
 	add	x8, x1, x2
-	mov	x9, #-61440
+	mov	x9, #4294963200
 	and	x8, x8, #0xfffffffffffff000
-	movk	x9, #0, lsl #16
 	sub	x8, x8, x0
-	add	x0, x8, x9
+	sub	x0, x8, x9
 	ret
 
 func0000000000000035:

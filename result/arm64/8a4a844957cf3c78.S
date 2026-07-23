@@ -14,10 +14,9 @@ func000000000000000a:
 
 func0000000000000004:
 	mov	w8, #2147483647
-	mov	w9, #2
+	mov	w9, #2147483646
 	add	w8, w0, w8
-	movk	w9, #32768, lsl #16
-	add	w9, w0, w9
+	sub	w9, w0, w9
 	cmp	w8, #3
 	csel	w0, w9, w8, lo
 	ret

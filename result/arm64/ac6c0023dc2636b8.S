@@ -21,9 +21,8 @@ func000000000000001a:
 	ret
 
 func0000000000000008:
-	mov	w8, #65281
-	movk	w8, #2047, lsl #16
-	add	w8, w1, w8
+	mov	w8, #-134217473
+	sub	w8, w1, w8
 	mul	w8, w0, w8
 	lsr	w0, w8, #10
 	ret

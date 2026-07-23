@@ -1,9 +1,8 @@
 func0000000000000000:
-	mov	x9, #-61440
 	sub	x8, x1, x2
+	mov	x9, #4294963200
 	tst	w0, #0x1
-	movk	x9, #0, lsl #16
-	add	x9, x8, x9
+	sub	x9, x8, x9
 	csel	x0, x8, x9, ne
 	ret
 

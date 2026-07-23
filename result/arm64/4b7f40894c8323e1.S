@@ -6,19 +6,17 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	mov	x8, #1
+	mov	x8, #-16384001
 	add	x9, x1, x0
-	movk	x8, #250, lsl #16
-	movk	x8, #4, lsl #32
-	add	x0, x9, x8
+	movk	x8, #65531, lsl #32
+	sub	x0, x9, x8
 	ret
 
 func000000000000000f:
-	mov	x8, #1
+	mov	x8, #-335544321
 	add	x9, x1, x0
-	movk	x8, #5120, lsl #16
-	movk	x8, #2944, lsl #32
-	add	x0, x9, x8
+	movk	x8, #62591, lsl #32
+	sub	x0, x9, x8
 	ret
 
 func000000000000000c:

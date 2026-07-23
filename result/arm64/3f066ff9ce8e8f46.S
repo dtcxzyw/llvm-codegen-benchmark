@@ -1,8 +1,7 @@
 func0000000000000005:
-	mov	x8, #-65536
+	mov	x8, #31129600
 	orr	x9, x1, x0
-	movk	x8, #65061, lsl #16
-	add	x8, x2, x8
+	sub	x8, x2, x8
 	orr	x0, x9, x8
 	ret
 

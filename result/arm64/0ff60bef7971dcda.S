@@ -6,10 +6,9 @@ func000000000000000e:
 
 func0000000000000007:
 	orr	x8, x0, x1
-	mov	x9, #-65536
+	mov	x9, #56557568
 	add	x8, x2, x8
-	movk	x9, #64673, lsl #16
-	add	x0, x8, x9
+	sub	x0, x8, x9
 	ret
 
 func0000000000000004:

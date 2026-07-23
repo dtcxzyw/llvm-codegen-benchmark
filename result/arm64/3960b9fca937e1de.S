@@ -163,10 +163,9 @@ func0000000000000029:
 	ret
 
 func000000000000006a:
-	mov	x8, #64
+	mov	x8, #9223372036854775744
 	and	x9, x1, #0xffffffffffffffc0
-	movk	x8, #32768, lsl #48
-	add	x8, x0, x8
+	sub	x8, x0, x8
 	cmp	x8, x9
 	cset	w0, gt
 	ret

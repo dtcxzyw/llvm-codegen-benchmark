@@ -12,9 +12,8 @@ func000000000000000c:
 
 func000000000000000d:
 	and	x8, x1, #0x1
-	mov	x9, #-65472
+	mov	x9, #2147483584
 	lsl	x8, x0, x8
-	movk	x9, #32768, lsl #16
-	add	x0, x8, x9
+	sub	x0, x8, x9
 	ret
 

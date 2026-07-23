@@ -43,10 +43,9 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	mov	w8, #256
+	mov	w8, #524032
 	add	w9, w1, w0
-	movk	w8, #65528, lsl #16
-	add	w0, w9, w8
+	sub	w0, w9, w8
 	ret
 
 func0000000000000008:

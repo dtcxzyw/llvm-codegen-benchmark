@@ -1,8 +1,7 @@
 func00000000000001d2:
-	mov	x8, #281462091808768
+	mov	x8, #12884901888
 	cmp	x1, #4
-	movk	x8, #65535, lsl #48
-	add	x8, x2, x8
+	sub	x8, x2, x8
 	asr	x8, x8, #32
 	csel	x8, xzr, x8, lo
 	add	x0, x0, x8, lsl #3

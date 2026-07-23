@@ -24,9 +24,8 @@ func000000000000000f:
 
 func0000000000000010:
 	mov	w8, w1
-	mov	x9, #-65472
+	mov	x9, #2147483584
 	lsl	x8, x8, x0
-	movk	x9, #32768, lsl #16
-	add	x0, x8, x9
+	sub	x0, x8, x9
 	ret
 

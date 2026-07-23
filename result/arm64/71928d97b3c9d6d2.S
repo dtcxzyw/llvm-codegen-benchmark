@@ -7,10 +7,9 @@ func0000000000000026:
 	ret
 
 func0000000000000001:
-	mov	w8, #65279
+	mov	w8, #16843009
 	eor	w9, w1, #0x80808080
-	movk	w8, #65278, lsl #16
-	add	w8, w0, w8
+	sub	w8, w0, w8
 	tst	w8, w9
 	cset	w0, eq
 	ret

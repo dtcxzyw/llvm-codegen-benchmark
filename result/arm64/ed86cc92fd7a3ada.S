@@ -1,8 +1,7 @@
 func000000000000054a:
-	mov	x8, #281462091808768
+	mov	x8, #12884901888
 	cmp	w0, #2
-	movk	x8, #65535, lsl #48
-	add	x8, x2, x8
+	sub	x8, x2, x8
 	asr	x8, x8, #32
 	ccmp	x1, x8, #4, gt
 	cset	w0, gt

@@ -9,11 +9,10 @@ func00000000000000a6:
 
 func00000000000000a8:
 	lsl	x8, x0, #16
-	mov	x9, #-65536
+	mov	x9, #4293984256
 	mov	w10, #65520
-	movk	x9, #15, lsl #16
 	cmp	x0, x10
-	add	x9, x8, x9
+	sub	x9, x8, x9
 	csel	x0, x9, x8, hi
 	ret
 

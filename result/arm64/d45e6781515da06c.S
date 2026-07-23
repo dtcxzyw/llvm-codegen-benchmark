@@ -59,12 +59,11 @@ func0000000000001842:
 	ret
 
 func0000000000000118:
-	mov	x8, #-65472
+	mov	x8, #2147483584
 	and	w9, w0, #0xff
-	movk	x8, #32768, lsl #16
+	sub	x8, x1, x8
 	cmp	w9, #159
 	mov	x9, #-2147483648
-	add	x8, x1, x8
 	ccmp	x8, x9, #0, eq
 	cset	w0, lo
 	ret

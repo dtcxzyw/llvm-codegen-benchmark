@@ -11,11 +11,10 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	mov	x8, #-61440
 	and	x9, x1, #0xfffffffffffff000
-	movk	x8, #0, lsl #16
+	mov	x8, #4294963200
 	sub	x9, x0, x9
-	add	x0, x9, x8
+	sub	x0, x9, x8
 	ret
 
 func0000000000000008:

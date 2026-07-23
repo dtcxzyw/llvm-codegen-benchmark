@@ -1,10 +1,10 @@
 func00000000000002a8:
 	sub	x8, x0, x1
 	mov	x9, #6148914691236517205
-	mov	x10, #8
+	mov	x10, #2305843009213693944
 	asr	x8, x8, #3
 	movk	x9, #21846
-	movk	x10, #57344, lsl #48
+	neg	x10, x10
 	madd	x8, x8, x9, x10
 	lsr	x8, x8, #61
 	cmp	x8, #7

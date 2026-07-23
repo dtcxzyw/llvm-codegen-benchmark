@@ -1,9 +1,9 @@
 func00000000000002a8:
 	asr	x8, x0, #3
 	mov	x9, #6148914691236517205
-	mov	x10, #8
+	mov	x10, #2305843009213693944
 	movk	x9, #21846
-	movk	x10, #57344, lsl #48
+	neg	x10, x10
 	madd	x8, x8, x9, x10
 	lsr	x8, x8, #61
 	cmp	x8, #7
@@ -27,12 +27,11 @@ func0000000000000201:
 func0000000000000088:
 	mov	w8, #32767
 	cmp	x0, #0
-	mov	x9, #32768
+	mov	x9, #2305843009213661184
 	add	x8, x0, x8
-	movk	x9, #57344, lsl #48
 	csel	x8, x8, x0, mi
 	and	x8, x8, #0xffffffffffff8000
-	add	x8, x8, x9
+	sub	x8, x8, x9
 	lsr	x8, x8, #61
 	cmp	x8, #7
 	cset	w0, lo

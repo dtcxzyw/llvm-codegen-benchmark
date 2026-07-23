@@ -23,10 +23,10 @@ func0000000000000084:
 	ret
 
 func0000000000000008:
-	mov	w8, w1
-	mov	x9, #2
-	movk	x9, #57344, lsl #48
-	madd	x8, x0, x8, x9
+	mov	x8, #2305843009213693950
+	mov	w9, w1
+	neg	x8, x8
+	madd	x8, x0, x9, x8
 	lsr	x8, x8, #61
 	cmp	x8, #7
 	cset	w0, lo

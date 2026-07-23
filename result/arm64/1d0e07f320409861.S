@@ -19,9 +19,8 @@ func000000000000001e:
 
 func000000000000001b:
 	add	x8, x0, x1, lsl #10
-	mov	x9, #-65536
-	movk	x9, #64673, lsl #16
-	add	x0, x8, x9
+	mov	x9, #56557568
+	sub	x0, x8, x9
 	ret
 
 func000000000000000b:

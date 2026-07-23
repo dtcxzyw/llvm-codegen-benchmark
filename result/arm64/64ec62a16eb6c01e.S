@@ -56,9 +56,8 @@ func0000000000000008:
 
 func000000000000000a:
 	add	w8, w1, w2, lsr #7
-	mov	w9, #2
-	movk	w9, #65280, lsl #16
-	add	w8, w8, w9
+	mov	w9, #16777214
+	sub	w8, w8, w9
 	cmp	w8, w0
 	cset	w0, gt
 	ret

@@ -16,10 +16,9 @@ func0000000000000086:
 
 func0000000000000208:
 	cmp	x2, #80
-	mov	x9, #-65520
+	mov	x9, #2147483632
 	csel	x8, x0, x1, lo
-	movk	x9, #32768, lsl #16
-	add	x8, x8, x9
+	sub	x8, x8, x9
 	mov	x9, #-2147483633
 	add	x8, x8, #16
 	cmp	x8, x9

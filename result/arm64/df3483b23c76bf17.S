@@ -180,11 +180,10 @@ func00000000000001b0:
 	ret
 
 func0000000000000130:
-	mov	x8, #-65472
+	mov	x8, #2147483584
 	cmp	x0, #253
 	mov	x9, #-2147483648
-	movk	x8, #32768, lsl #16
-	add	x8, x1, x8
+	sub	x8, x1, x8
 	ccmp	x8, x9, #0, ls
 	cset	w0, lo
 	ret

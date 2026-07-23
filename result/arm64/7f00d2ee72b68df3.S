@@ -88,8 +88,8 @@ func0000000000000021:
 	ret
 
 func0000000000000088:
-	mov	x8, #2
-	movk	x8, #57344, lsl #48
+	mov	x8, #2305843009213693950
+	neg	x8, x8
 	madd	x8, x0, x1, x8
 	lsr	x8, x8, #61
 	cmp	x8, #7

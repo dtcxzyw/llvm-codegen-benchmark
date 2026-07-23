@@ -12,9 +12,8 @@ func00000000000000c0:
 	ret
 
 func00000000000000c1:
-	mov	w8, #1
+	mov	w8, #-50331649
 	sub	w9, w1, w0
-	movk	w8, #768, lsl #16
-	add	w0, w9, w8
+	sub	w0, w9, w8
 	ret
 

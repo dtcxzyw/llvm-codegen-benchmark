@@ -50,10 +50,9 @@ func0000000000000048:
 	ret
 
 func0000000000000188:
-	mov	w8, #4
+	mov	w8, #2147483644
 	mov	w9, #-2147483645
-	movk	w8, #32768, lsl #16
-	add	w8, w2, w8
+	sub	w8, w2, w8
 	add	w8, w8, #4
 	cmp	w8, w9
 	ccmp	w0, w1, #8, hi

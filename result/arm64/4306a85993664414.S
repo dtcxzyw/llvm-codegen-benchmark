@@ -98,9 +98,8 @@ func0000000000000264:
 
 func0000000000000205:
 	add	x8, x1, w2, uxtw #2
-	mov	x9, #-65532
-	movk	x9, #65534, lsl #16
-	add	x8, x8, x9
+	mov	x9, #131068
+	sub	x8, x8, x9
 	cmp	x8, x0
 	cset	w0, ls
 	ret

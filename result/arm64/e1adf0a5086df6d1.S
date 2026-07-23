@@ -15,10 +15,9 @@ func0000000000000088:
 	ret
 
 func0000000000000188:
-	mov	x8, #-61440
+	mov	x8, #2147479552
 	sub	x9, x0, x1
-	movk	x8, #32768, lsl #16
-	add	x8, x9, x8
+	sub	x8, x9, x8
 	mov	x9, #-2147483648
 	cmp	x8, x9
 	cset	w0, lo

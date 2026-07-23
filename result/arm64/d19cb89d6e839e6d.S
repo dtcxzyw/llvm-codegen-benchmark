@@ -7,8 +7,7 @@ func0000000000000385:
 	add	x9, x8, x9
 	cmp	x0, x10
 	csel	x8, x9, x8, hi
-	mov	x9, #-65536
-	movk	x9, #15, lsl #16
-	add	x0, x8, x9
+	mov	x9, #4293984256
+	sub	x0, x8, x9
 	ret
 

@@ -24,10 +24,9 @@ func0000000000000001:
 
 func000000000000003d:
 	sub	x8, x1, x2
-	mov	x9, #-65534
+	mov	x9, #2147483646
 	add	x8, x8, x0
-	movk	x9, #32768, lsl #16
-	add	x0, x8, x9
+	sub	x0, x8, x9
 	ret
 
 func0000000000000020:

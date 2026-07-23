@@ -76,10 +76,9 @@ func0000000000000061:
 	ret
 
 func0000000000000046:
-	mov	w8, #1
+	mov	w8, #-2139095041
 	cmp	w1, #0
-	movk	w8, #32640, lsl #16
-	add	w8, w1, w8
+	sub	w8, w1, w8
 	csel	w0, w0, w8, mi
 	ret
 

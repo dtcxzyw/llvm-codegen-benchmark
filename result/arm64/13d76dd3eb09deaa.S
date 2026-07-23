@@ -12,10 +12,8 @@ func0000000000000000:
 
 func000000000000000c:
 	mov	x8, #72340172838076673
-	mov	x9, #-72340172838076674
-	mul	x8, x1, x8
-	movk	x9, #65279
-	eor	x8, x8, x0
-	add	x0, x8, x9
+	mul	x9, x1, x8
+	eor	x9, x9, x0
+	sub	x0, x9, x8
 	ret
 
