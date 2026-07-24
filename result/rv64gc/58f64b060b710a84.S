@@ -22,14 +22,24 @@ func0000000000000054:
 
 func0000000000000042:
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa5, fa0
+	beqz	a0, .LBB1_3
 	li	a0, 1
 	slli	a0, a0, 52
-	fmax.d	fa5, fa0, fa5
-	fmv.d.x	fa0, a0
-	flt.d	a0, fa5, fa0
-	bnez	a0, .LBB1_2
-	fmv.d	fa0, fa5
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
+	beqz	a0, .LBB1_4
 .LBB1_2:
+	fmv.d	fa0, fa5
+	ret
+.LBB1_3:
+	fmv.d	fa0, fa5
+	li	a0, 1
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa0, fa5
+	bnez	a0, .LBB1_2
+.LBB1_4:
 	ret
 
 .LCPI2_0:
@@ -49,14 +59,24 @@ func00000000000000c4:
 
 func0000000000000044:
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa5, fa0
+	beqz	a0, .LBB3_3
 	li	a0, 1023
 	slli	a0, a0, 52
-	fmax.d	fa5, fa0, fa5
-	fmv.d.x	fa0, a0
-	flt.d	a0, fa0, fa5
-	bnez	a0, .LBB3_2
-	fmv.d	fa0, fa5
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa5, fa0
+	beqz	a0, .LBB3_4
 .LBB3_2:
+	fmv.d	fa0, fa5
+	ret
+.LBB3_3:
+	fmv.d	fa0, fa5
+	li	a0, 1023
+	slli	a0, a0, 52
+	fmv.d.x	fa5, a0
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB3_2
+.LBB3_4:
 	ret
 
 func0000000000000052:

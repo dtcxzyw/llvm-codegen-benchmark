@@ -3,7 +3,8 @@ func0000000000000004:
 	vmv.v.i	v12, 0
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, zero
-	vfmax.vf	v8, v8, fa5
+	vmfgt.vf	v0, v8, fa5
+	vmerge.vvm	v8, v12, v8, v0
 	ret
 
 func000000000000000a:

@@ -53,10 +53,17 @@ func00000000000000cc:
 
 func0000000000000042:
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa1, fa5
+	flt.s	a0, fa5, fa1
+	beqz	a0, .LBB4_3
+	flt.s	a0, fa0, fa1
+	beqz	a0, .LBB4_4
+.LBB4_2:
+	ret
+.LBB4_3:
+	fmv.s	fa1, fa5
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB4_2
-	fmv.s	fa0, fa5
-.LBB4_2:
+.LBB4_4:
+	fmv.s	fa0, fa1
 	ret
 

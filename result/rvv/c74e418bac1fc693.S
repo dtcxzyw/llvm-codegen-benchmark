@@ -1,7 +1,13 @@
 func0000000000000004:
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, mu
-	vfmax.vf	v8, v16, fa5, v0.t
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmfgt.vf	v7, v16, fa5
+	vmv.v.i	v24, 0
+	vmv1r.v	v6, v0
+	vmv1r.v	v0, v7
+	vmerge.vvm	v16, v24, v16, v0
+	vmv1r.v	v0, v6
+	vmerge.vvm	v8, v8, v16, v0
 	ret
 
 func0000000000000002:

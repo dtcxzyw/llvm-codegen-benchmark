@@ -1,15 +1,25 @@
 func0000000000000024:
 	flt.d	a1, fa0, fa1
+	beqz	a1, .LBB0_4
+	fmv.d.x	fa5, zero
+	flt.d	a1, fa5, fa0
 	andi	a0, a0, 1
-	bnez	a1, .LBB0_2
-	fmv.d	fa0, fa1
+	beqz	a1, .LBB0_5
 .LBB0_2:
-	bnez	a0, .LBB0_4
-	fli.d	fa0, 1.0
+	beqz	a0, .LBB0_6
+.LBB0_3:
 	ret
 .LBB0_4:
+	fmv.d	fa0, fa1
 	fmv.d.x	fa5, zero
-	fmax.d	fa0, fa0, fa5
+	flt.d	a1, fa5, fa1
+	andi	a0, a0, 1
+	bnez	a1, .LBB0_2
+.LBB0_5:
+	fmv.d	fa0, fa5
+	bnez	a0, .LBB0_3
+.LBB0_6:
+	fli.d	fa0, 1.0
 	ret
 
 .LCPI1_0:

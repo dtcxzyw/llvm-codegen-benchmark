@@ -1,11 +1,18 @@
 func0000000000000422:
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa2, fa5
-	flt.s	a0, fa5, fa1
-	bnez	a0, .LBB0_2
-	fmv.s	fa1, fa5
+	flt.s	a0, fa5, fa2
+	beqz	a0, .LBB0_3
+	flt.s	a0, fa2, fa1
+	beqz	a0, .LBB0_4
 .LBB0_2:
 	flt.s	a0, fa1, fa0
+	ret
+.LBB0_3:
+	fmv.s	fa2, fa5
+	flt.s	a0, fa5, fa1
+	bnez	a0, .LBB0_2
+.LBB0_4:
+	flt.s	a0, fa2, fa0
 	ret
 
 func0000000000000244:

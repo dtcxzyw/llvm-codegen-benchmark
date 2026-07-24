@@ -12,14 +12,21 @@ func0000000000000002:
 
 func0000000000000004:
 	fmv.d.x	fa5, zero
-	fmax.d	fa5, fa0, fa5
+	flt.d	a1, fa5, fa0
 	andi	a0, a0, 1
+	beqz	a1, .LBB1_3
+	beqz	a0, .LBB1_4
+.LBB1_2:
+	fsub.d	fa0, fa0, fa1
+	ret
+.LBB1_3:
+	fmv.d	fa0, fa5
 	bnez	a0, .LBB1_2
+.LBB1_4:
 	li	a0, 1023
 	slli	a0, a0, 52
 	fmv.d.x	fa1, a0
-.LBB1_2:
-	fsub.d	fa0, fa5, fa1
+	fsub.d	fa0, fa0, fa1
 	ret
 
 func000000000000000c:

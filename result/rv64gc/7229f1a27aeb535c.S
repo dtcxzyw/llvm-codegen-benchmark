@@ -43,12 +43,18 @@ func0000000000000022:
 	ret
 
 func0000000000000042:
-	fmv.w.x	fa4, zero
-	fmax.s	fa5, fa0, fa4
+	fmv.w.x	fa5, zero
+	flt.s	a1, fa5, fa0
 	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	fmv.s	fa1, fa4
+	beqz	a1, .LBB3_3
+	beqz	a0, .LBB3_4
 .LBB3_2:
-	flt.s	a0, fa5, fa1
+	flt.s	a0, fa0, fa1
+	ret
+.LBB3_3:
+	fmv.s	fa0, fa5
+	bnez	a0, .LBB3_2
+.LBB3_4:
+	flt.s	a0, fa0, fa5
 	ret
 

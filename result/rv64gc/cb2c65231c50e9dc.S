@@ -10,9 +10,12 @@ func0000000000000023:
 func0000000000000042:
 	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
+	flt.s	a0, fa4, fa5
+	bnez	a0, .LBB1_2
+	fmv.s	fa5, fa4
+.LBB1_2:
 	lui	a0, 522240
 	addi	a0, a0, -1
-	fmax.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -42,8 +45,11 @@ func0000000000000024:
 func0000000000000044:
 	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
+	flt.s	a0, fa4, fa5
+	bnez	a0, .LBB4_2
+	fmv.s	fa5, fa4
+.LBB4_2:
 	lui	a0, 260096
-	fmax.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

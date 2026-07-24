@@ -1,9 +1,12 @@
 func0000000000000042:
 	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa0
+	bnez	a0, .LBB0_2
+	fmv.s	fa0, fa5
+.LBB0_2:
 	lui	a0, 280480
-	fmax.s	fa5, fa0, fa5
-	fmv.w.x	fa4, a0
-	flt.s	a0, fa5, fa4
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa0, fa5
 	ret
 
 func0000000000000023:
@@ -85,14 +88,20 @@ func00000000000000c5:
 
 func0000000000000048:
 	fmv.w.x	fa5, zero
-	fmax.s	fa4, fa0, fa5
-	feq.s	a0, fa4, fa5
+	flt.s	a0, fa5, fa0
+	bnez	a0, .LBB9_2
+	fmv.s	fa0, fa5
+.LBB9_2:
+	feq.s	a0, fa0, fa5
 	ret
 
 func0000000000000047:
 	fmv.w.x	fa5, zero
-	fmax.s	fa4, fa0, fa5
-	feq.s	a0, fa4, fa5
+	flt.s	a0, fa5, fa0
+	bnez	a0, .LBB10_2
+	fmv.s	fa0, fa5
+.LBB10_2:
+	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 

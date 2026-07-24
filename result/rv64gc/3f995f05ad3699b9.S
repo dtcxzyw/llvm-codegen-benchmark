@@ -7,9 +7,12 @@ func0000000000000014:
 	ret
 
 func0000000000000004:
-	fabs.d	fa5, fa0
-	fmv.d.x	fa4, zero
-	fmax.d	fa0, fa5, fa4
+	fabs.d	fa0, fa0
+	fmv.d.x	fa5, zero
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB1_2
+	fmv.d	fa0, fa5
+.LBB1_2:
 	ret
 
 func0000000000000006:

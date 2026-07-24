@@ -23,11 +23,19 @@ func0000000000000022:
 
 func0000000000000044:
 	flt.s	a0, fa2, fa1
-	bnez	a0, .LBB2_2
-	fmv.s	fa1, fa2
-.LBB2_2:
+	beqz	a0, .LBB2_3
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa1, fa5
+	flt.s	a0, fa5, fa1
+	beqz	a0, .LBB2_4
+.LBB2_2:
+	fsub.s	fa0, fa1, fa0
+	ret
+.LBB2_3:
+	fmv.s	fa1, fa2
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa2
+	bnez	a0, .LBB2_2
+.LBB2_4:
 	fsub.s	fa0, fa5, fa0
 	ret
 
@@ -51,11 +59,19 @@ func000000000000002c:
 
 func0000000000000024:
 	flt.s	a0, fa1, fa2
-	bnez	a0, .LBB4_2
-	fmv.s	fa1, fa2
-.LBB4_2:
+	beqz	a0, .LBB4_3
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa1, fa5
+	flt.s	a0, fa5, fa1
+	beqz	a0, .LBB4_4
+.LBB4_2:
+	fsub.s	fa0, fa1, fa0
+	ret
+.LBB4_3:
+	fmv.s	fa1, fa2
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa2
+	bnez	a0, .LBB4_2
+.LBB4_4:
 	fsub.s	fa0, fa5, fa0
 	ret
 

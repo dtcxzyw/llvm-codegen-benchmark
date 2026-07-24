@@ -1,7 +1,10 @@
 func0000000000000004:
 	fmv.w.x	fa5, zero
-	fcvt.s.d	fa4, fa0
-	fmax.s	fa0, fa4, fa5
+	fcvt.s.d	fa0, fa0
+	flt.s	a0, fa5, fa0
+	bnez	a0, .LBB0_2
+	fmv.s	fa0, fa5
+.LBB0_2:
 	ret
 
 func000000000000000c:

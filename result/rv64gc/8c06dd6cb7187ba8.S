@@ -1,8 +1,11 @@
 func0000000000000048:
-	fsub.d	fa5, fa0, fa1
-	fmv.d.x	fa4, zero
-	fmax.d	fa5, fa5, fa4
-	feq.d	a0, fa5, fa4
+	fsub.d	fa4, fa0, fa1
+	fmv.d.x	fa5, zero
+	flt.d	a0, fa5, fa4
+	bnez	a0, .LBB0_2
+	fmv.d	fa4, fa5
+.LBB0_2:
+	feq.d	a0, fa4, fa5
 	ret
 
 func0000000000000024:

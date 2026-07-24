@@ -31,9 +31,11 @@ func000000000000000a:
 
 func0000000000000004:
 	fmv.w.x	fa5, zero
-	lui	a0, 292864
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmax.vf	v8, v8, fa5
+	vmfgt.vf	v0, v8, fa5
+	vmv.v.i	v12, 0
+	vmerge.vvm	v8, v12, v8, v0
+	lui	a0, 292864
 	addi	a0, a0, -256
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5

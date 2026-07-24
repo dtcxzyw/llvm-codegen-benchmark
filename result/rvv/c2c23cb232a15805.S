@@ -27,14 +27,18 @@ func0000000000000018:
 func0000000000000008:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmax.vf	v16, v16, fa5
+	vmfgt.vf	v0, v16, fa5
+	vmv.v.i	v20, 0
+	vmerge.vvm	v16, v20, v16, v0
 	vfmadd.vv	v8, v16, v12
 	ret
 
 func0000000000000004:
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmin.vf	v16, v16, fa5
+	vmflt.vf	v0, v16, fa5
+	vmv.v.i	v20, 0
+	vmerge.vvm	v16, v20, v16, v0
 	vfmadd.vv	v8, v16, v12
 	ret
 

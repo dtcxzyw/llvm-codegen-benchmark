@@ -1,7 +1,10 @@
 func0000000000000042:
 	fdiv.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
-	fmax.d	fa5, fa5, fa4
+	flt.d	a0, fa4, fa5
+	bnez	a0, .LBB0_2
+	fmv.d	fa5, fa4
+.LBB0_2:
 	fli.d	fa4, 1.0
 	flt.d	a0, fa5, fa4
 	ret
@@ -39,7 +42,10 @@ func00000000000000e5:
 func0000000000000044:
 	fdiv.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
-	fmax.d	fa5, fa5, fa4
+	flt.d	a0, fa4, fa5
+	bnez	a0, .LBB4_2
+	fmv.d	fa5, fa4
+.LBB4_2:
 	fli.d	fa4, 1.0
 	flt.d	a0, fa4, fa5
 	ret
@@ -49,10 +55,14 @@ func0000000000000044:
 func0000000000000043:
 	fdiv.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
+	flt.d	a0, fa4, fa5
+	bnez	a0, .LBB5_2
+	fmv.d	fa5, fa4
+.LBB5_2:
 	lui	a0, %hi(.LCPI5_0)
-	fmax.d	fa5, fa5, fa4
 	fld	fa4, %lo(.LCPI5_0)(a0)
-	flt.d	a0, fa5, fa4
+	fle.d	a0, fa4, fa5
+	xori	a0, a0, 1
 	ret
 
 func00000000000000e4:

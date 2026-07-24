@@ -12,6 +12,8 @@ func0000000000000004:
 	vfmv.v.f	v24, fa5
 	vfdiv.vv	v24, v8, v16, v0.t
 	fmv.d.x	fa5, zero
-	vfmax.vf	v8, v24, fa5
+	vmfgt.vf	v0, v24, fa5
+	vmv.v.i	v8, 0
+	vmerge.vvm	v8, v8, v24, v0
 	ret
 

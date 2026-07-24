@@ -24,14 +24,20 @@ func0000000000000018:
 
 func0000000000000008:
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa2, fa5
-	fmadd.s	fa0, fa5, fa0, fa1
+	flt.s	a0, fa5, fa2
+	bnez	a0, .LBB3_2
+	fmv.s	fa2, fa5
+.LBB3_2:
+	fmadd.s	fa0, fa2, fa0, fa1
 	ret
 
 func0000000000000004:
 	fmv.w.x	fa5, zero
-	fmin.s	fa5, fa2, fa5
-	fmadd.s	fa0, fa0, fa5, fa1
+	flt.s	a0, fa2, fa5
+	bnez	a0, .LBB4_2
+	fmv.s	fa2, fa5
+.LBB4_2:
+	fmadd.s	fa0, fa0, fa2, fa1
 	ret
 
 func000000000000000a:

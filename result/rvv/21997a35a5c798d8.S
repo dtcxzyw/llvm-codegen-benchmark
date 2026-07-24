@@ -1,14 +1,16 @@
 func0000000000000024:
-	vsetivli	zero, 16, e64, m8, ta, mu
-	vmv8r.v	v24, v8
-	vmv1r.v	v7, v0
-	fli.d	fa5, 1.0
-	vfmv.v.f	v8, fa5
-	vmflt.vv	v0, v24, v16
-	vmerge.vvm	v16, v16, v24, v0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
+	vmflt.vv	v0, v8, v16
+	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
-	vmv1r.v	v0, v7
-	vfmax.vf	v8, v16, fa5, v0.t
+	vmfgt.vf	v0, v8, fa5
+	vmv.v.i	v16, 0
+	fli.d	fa5, 1.0
+	vmerge.vvm	v8, v16, v8, v0
+	vfmv.v.f	v16, fa5
+	vmv1r.v	v0, v24
+	vmerge.vvm	v8, v16, v8, v0
 	ret
 
 .LCPI1_0:

@@ -36,7 +36,10 @@ func0000000000000024:
 func0000000000000044:
 	fmul.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
-	fmax.s	fa5, fa5, fa4
+	flt.s	a0, fa4, fa5
+	bnez	a0, .LBB4_2
+	fmv.s	fa5, fa4
+.LBB4_2:
 	fli.s	fa4, 1.0
 	flt.s	a0, fa4, fa5
 	ret

@@ -7,14 +7,20 @@ func0000000000000042:
 
 func0000000000000022:
 	fmv.w.x	fa5, zero
-	fmin.s	fa5, fa1, fa5
-	flt.s	a0, fa5, fa0
+	flt.s	a0, fa1, fa5
+	bnez	a0, .LBB1_2
+	fmv.s	fa1, fa5
+.LBB1_2:
+	flt.s	a0, fa1, fa0
 	ret
 
 func0000000000000044:
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa1, fa5
-	flt.s	a0, fa0, fa5
+	flt.s	a0, fa5, fa1
+	bnez	a0, .LBB2_2
+	fmv.s	fa1, fa5
+.LBB2_2:
+	flt.s	a0, fa0, fa1
 	ret
 
 func0000000000000024:
@@ -42,19 +48,28 @@ func00000000000000c2:
 
 func000000000000004a:
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa1, fa5
-	fle.s	a0, fa5, fa0
+	flt.s	a0, fa5, fa1
+	bnez	a0, .LBB6_2
+	fmv.s	fa1, fa5
+.LBB6_2:
+	fle.s	a0, fa1, fa0
 	ret
 
 func000000000000004c:
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa1, fa5
-	fle.s	a0, fa0, fa5
+	flt.s	a0, fa5, fa1
+	bnez	a0, .LBB7_2
+	fmv.s	fa1, fa5
+.LBB7_2:
+	fle.s	a0, fa0, fa1
 	ret
 
 func000000000000002a:
 	fmv.w.x	fa5, zero
-	fmin.s	fa5, fa1, fa5
-	fle.s	a0, fa5, fa0
+	flt.s	a0, fa1, fa5
+	bnez	a0, .LBB8_2
+	fmv.s	fa1, fa5
+.LBB8_2:
+	fle.s	a0, fa1, fa0
 	ret
 

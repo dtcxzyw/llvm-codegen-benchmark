@@ -11,8 +11,10 @@ func0000000000000042:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
+	vmfgt.vf	v0, v8, fa5
+	vmv.v.i	v12, 0
+	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 522240
-	vfmax.vf	v8, v8, fa5
 	addi	a0, a0, -1
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
@@ -44,7 +46,9 @@ func0000000000000044:
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
-	vfmax.vf	v8, v8, fa5
+	vmfgt.vf	v0, v8, fa5
+	vmv.v.i	v12, 0
+	vmerge.vvm	v8, v12, v8, v0
 	fli.s	fa5, 1.0
 	vmfgt.vf	v0, v8, fa5
 	ret

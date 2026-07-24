@@ -1,8 +1,8 @@
 func0000000000000004:
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmax.vf	v16, v16, fa5
-	vfsub.vv	v8, v8, v16
+	vsetivli	zero, 16, e64, m8, ta, mu
+	vmfgt.vf	v0, v16, fa5
+	vfsub.vv	v8, v8, v16, v0.t
 	ret
 
 func0000000000000002:

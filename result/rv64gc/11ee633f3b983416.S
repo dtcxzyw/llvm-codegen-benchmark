@@ -30,11 +30,14 @@ func000000000000000a:
 
 func0000000000000004:
 	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa0
+	bnez	a0, .LBB3_2
+	fmv.s	fa0, fa5
+.LBB3_2:
 	lui	a0, 292864
 	addi	a0, a0, -256
-	fmax.s	fa5, fa0, fa5
-	fmv.w.x	fa4, a0
-	fmul.s	fa0, fa5, fa4
+	fmv.w.x	fa5, a0
+	fmul.s	fa0, fa0, fa5
 	ret
 
 func000000000000000c:

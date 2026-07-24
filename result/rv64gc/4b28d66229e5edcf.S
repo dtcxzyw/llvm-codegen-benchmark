@@ -1,10 +1,18 @@
 func0000000000000024:
 	flt.d	a0, fa1, fa2
-	bnez	a0, .LBB0_2
-	fmv.d	fa1, fa2
-.LBB0_2:
+	beqz	a0, .LBB0_3
 	fmv.d.x	fa5, zero
-	fmax.d	fa5, fa1, fa5
+	flt.d	a0, fa5, fa1
+	beqz	a0, .LBB0_4
+.LBB0_2:
+	fmul.d	fa0, fa0, fa1
+	ret
+.LBB0_3:
+	fmv.d	fa1, fa2
+	fmv.d.x	fa5, zero
+	flt.d	a0, fa5, fa2
+	bnez	a0, .LBB0_2
+.LBB0_4:
 	fmul.d	fa0, fa0, fa5
 	ret
 

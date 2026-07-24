@@ -21,11 +21,19 @@ func0000000000000042:
 
 func0000000000000044:
 	flt.s	a0, fa1, fa0
-	bnez	a0, .LBB2_2
-	fmv.s	fa0, fa1
-.LBB2_2:
+	beqz	a0, .LBB2_3
 	fmv.w.x	fa5, zero
-	fmax.s	fa0, fa0, fa5
+	flt.s	a0, fa5, fa0
+	beqz	a0, .LBB2_4
+.LBB2_2:
+	ret
+.LBB2_3:
+	fmv.s	fa0, fa1
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa1
+	bnez	a0, .LBB2_2
+.LBB2_4:
+	fmv.s	fa0, fa5
 	ret
 
 func0000000000000024:

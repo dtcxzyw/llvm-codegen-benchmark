@@ -67,15 +67,26 @@ func00000000000000aa:
 
 func0000000000000044:
 	fmv.w.x	fa5, zero
-	fmax.s	fa4, fa0, fa5
+	flt.s	a0, fa5, fa0
+	beqz	a0, .LBB4_3
 	fli.s	fa5, 1.0
-	flt.s	a0, fa5, fa4
-	bnez	a0, .LBB4_2
-	fmv.s	fa5, fa4
+	flt.s	a0, fa5, fa0
+	beqz	a0, .LBB4_4
 .LBB4_2:
 	lui	a0, 255387
 	addi	a0, a0, 976
 	fmv.w.x	fa4, a0
 	fmul.s	fa0, fa5, fa4
+	ret
+.LBB4_3:
+	fmv.s	fa0, fa5
+	fli.s	fa5, 1.0
+	flt.s	a0, fa5, fa0
+	bnez	a0, .LBB4_2
+.LBB4_4:
+	lui	a0, 255387
+	addi	a0, a0, 976
+	fmv.w.x	fa4, a0
+	fmul.s	fa0, fa0, fa4
 	ret
 

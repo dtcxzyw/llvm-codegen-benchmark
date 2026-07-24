@@ -1,11 +1,18 @@
 func0000000000000004:
-	andi	a0, a0, 1
-	fli.d	fa5, min
-	bnez	a0, .LBB0_2
 	fabs.d	fa5, fa0
 	fmv.d.x	fa4, zero
-	fmax.d	fa5, fa5, fa4
+	flt.d	a1, fa4, fa5
+	andi	a0, a0, 1
+	beqz	a1, .LBB0_3
+	fli.d	fa0, min
+	beqz	a0, .LBB0_4
 .LBB0_2:
+	ret
+.LBB0_3:
+	fmv.d	fa5, fa4
+	fli.d	fa0, min
+	bnez	a0, .LBB0_2
+.LBB0_4:
 	fmv.d	fa0, fa5
 	ret
 

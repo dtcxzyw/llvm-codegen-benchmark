@@ -7,10 +7,13 @@ func0000000000000022:
 
 func0000000000000024:
 	fmv.d.x	fa5, zero
+	flt.d	a0, fa5, fa0
 	fli.d	fa4, 1.0
 	fmin.d	fa4, fa1, fa4
-	fmax.d	fa5, fa0, fa5
-	fsub.d	fa0, fa5, fa4
+	bnez	a0, .LBB1_2
+	fmv.d	fa0, fa5
+.LBB1_2:
+	fsub.d	fa0, fa0, fa4
 	ret
 
 func00000000000000cc:

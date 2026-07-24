@@ -18,6 +18,8 @@ func0000000000000024:
 	fli.d	fa5, 1.0
 	vfmin.vf	v8, v8, fa5
 	fmv.d.x	fa5, zero
-	vfmax.vf	v8, v8, fa5
+	vmfgt.vf	v0, v8, fa5
+	vmv.v.i	v16, 0
+	vmerge.vvm	v8, v16, v8, v0
 	ret
 

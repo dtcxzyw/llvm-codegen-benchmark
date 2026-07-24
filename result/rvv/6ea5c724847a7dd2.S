@@ -3,7 +3,9 @@ func0000000000000004:
 	vle64.v	v24, (a0)
 	vfsub.vv	v16, v16, v24
 	fmv.d.x	fa5, zero
-	vfmax.vf	v16, v16, fa5
+	vmfgt.vf	v0, v16, fa5
+	vmv.v.i	v24, 0
+	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vv	v8, v16, v8
 	ret
 

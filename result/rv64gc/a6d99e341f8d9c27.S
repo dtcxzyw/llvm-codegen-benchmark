@@ -10,8 +10,11 @@ func00000000000000e2:
 
 func0000000000000044:
 	fmv.d.x	fa5, zero
-	fmax.d	fa4, fa1, fa5
-	fadd.d	fa4, fa0, fa4
+	flt.d	a0, fa5, fa1
+	bnez	a0, .LBB1_2
+	fmv.d	fa1, fa5
+.LBB1_2:
+	fadd.d	fa4, fa0, fa1
 	flt.d	a0, fa5, fa4
 	ret
 

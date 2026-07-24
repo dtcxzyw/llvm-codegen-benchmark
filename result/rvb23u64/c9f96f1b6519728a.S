@@ -1,8 +1,11 @@
 func0000000000000042:
 	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
+	flt.s	a0, fa4, fa5
+	bnez	a0, .LBB0_2
+	fmv.s	fa5, fa4
+.LBB0_2:
 	lui	a0, 280480
-	fmax.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -27,10 +30,13 @@ func0000000000000024:
 	ret
 
 func0000000000000047:
-	fsub.s	fa5, fa0, fa1
-	fmv.w.x	fa4, zero
-	fmax.s	fa5, fa5, fa4
-	feq.s	a0, fa5, fa4
+	fsub.s	fa4, fa0, fa1
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa4
+	bnez	a0, .LBB3_2
+	fmv.s	fa4, fa5
+.LBB3_2:
+	feq.s	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 

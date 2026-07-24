@@ -3,7 +3,9 @@ func0000000000000014:
 	vle64.v	v24, (a0)
 	vfmacc.vv	v24, v16, v8
 	fmv.d.x	fa5, zero
-	vfmax.vf	v8, v24, fa5
+	vmfgt.vf	v0, v24, fa5
+	vmv.v.i	v8, 0
+	vmerge.vvm	v8, v8, v24, v0
 	ret
 
 .LCPI1_0:
