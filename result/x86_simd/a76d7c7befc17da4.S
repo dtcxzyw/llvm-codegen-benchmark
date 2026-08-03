@@ -17,14 +17,13 @@ func0000000000000042:
 	.quad	0x3ff0000000000000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
-	vbroadcastsd	.LCPI1_0(%rip), %zmm3
-	vmaxpd	%zmm1, %zmm3, %zmm2
-	vmaxpd	%zmm0, %zmm3, %zmm3
-	vbroadcastsd	.LCPI1_1(%rip), %zmm4
-	vcmpltpd	%zmm1, %zmm4, %k1
-	vcmpltpd	%zmm0, %zmm4, %k2
-	vmovapd	%zmm4, %zmm3 {%k2}
-	vmovapd	%zmm4, %zmm2 {%k1}
+	vbroadcastsd	.LCPI1_0(%rip), %zmm4
+	vbroadcastsd	.LCPI1_1(%rip), %zmm2
+	vcmpnltpd	%zmm1, %zmm2, %k1
+	vcmpnltpd	%zmm0, %zmm2, %k2
+	vmovapd	%zmm2, %zmm3
+	vmaxpd	%zmm0, %zmm4, %zmm3 {%k2}
+	vmaxpd	%zmm1, %zmm4, %zmm2 {%k1}
 	vmovapd	%zmm3, %zmm0
 	vmovapd	%zmm2, %zmm1
 	retq

@@ -6,11 +6,10 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000242:
 	vbroadcastss	.LCPI0_0(%rip), %zmm2
-	vmaxps	%zmm1, %zmm2, %zmm2
 	vbroadcastss	.LCPI0_1(%rip), %zmm3
-	vcmpltps	%zmm1, %zmm3, %k1
-	vmovaps	%zmm3, %zmm2 {%k1}
-	vcmpltps	%zmm0, %zmm2, %k0
+	vcmpnltps	%zmm1, %zmm3, %k1
+	vmaxps	%zmm1, %zmm2, %zmm3 {%k1}
+	vcmpltps	%zmm0, %zmm3, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -22,11 +21,10 @@ func0000000000000242:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000244:
 	vbroadcastss	.LCPI1_0(%rip), %zmm2
-	vmaxps	%zmm1, %zmm2, %zmm2
 	vbroadcastss	.LCPI1_1(%rip), %zmm3
-	vcmpltps	%zmm1, %zmm3, %k1
-	vmovaps	%zmm3, %zmm2 {%k1}
-	vcmpltps	%zmm2, %zmm0, %k0
+	vcmpnltps	%zmm1, %zmm3, %k1
+	vmaxps	%zmm1, %zmm2, %zmm3 {%k1}
+	vcmpltps	%zmm3, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -51,11 +49,10 @@ func0000000000000424:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000243:
 	vbroadcastss	.LCPI3_0(%rip), %zmm2
-	vmaxps	%zmm1, %zmm2, %zmm2
 	vbroadcastss	.LCPI3_1(%rip), %zmm3
-	vcmpltps	%zmm1, %zmm3, %k1
-	vmovaps	%zmm3, %zmm2 {%k1}
-	vcmpnleps	%zmm2, %zmm0, %k0
+	vcmpnltps	%zmm1, %zmm3, %k1
+	vmaxps	%zmm1, %zmm2, %zmm3 {%k1}
+	vcmpnleps	%zmm3, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

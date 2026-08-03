@@ -22,15 +22,16 @@ func000000000000000c:
 	retq
 
 .LCPI2_0:
-	.long	0x42c80000
-.LCPI2_1:
 	.long	0xc2c80000
+.LCPI2_1:
+	.long	0x42c80000
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vminps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm0
-	vbroadcastss	.LCPI2_1(%rip), %zmm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
+	vbroadcastss	.LCPI2_0(%rip), %zmm0
+	vminps	.LCPI2_1(%rip){1to16}, %zmm1, %zmm0 {%k1}
 	retq
 
 .LCPI3_0:

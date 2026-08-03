@@ -7,10 +7,10 @@
 func0000000000000092:
 	vfmadd213ps	%zmm2, %zmm1, %zmm0
 	vbroadcastss	.LCPI0_0(%rip), %zmm1
-	vcmpltps	%zmm1, %zmm0, %k1
+	vcmpnltps	%zmm1, %zmm0, %k1
 	vbroadcastss	.LCPI0_1(%rip), %zmm2
-	vminps	%zmm0, %zmm2, %zmm0
-	vmovaps	%zmm1, %zmm0 {%k1}
+	vminps	%zmm0, %zmm2, %zmm1 {%k1}
+	vmovaps	%zmm1, %zmm0
 	retq
 
 .LCPI1_0:

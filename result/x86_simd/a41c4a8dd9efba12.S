@@ -2,10 +2,11 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
-	vmaxps	%zmm2, %zmm0, %zmm0
-	vmovaps	%zmm1, %zmm0 {%k1}
+	vmaxps	%zmm2, %zmm0, %zmm1 {%k1}
+	vmovaps	%zmm1, %zmm0
 	retq
 
 .LCPI1_0:
@@ -13,9 +14,10 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm0, %k1
 	vbroadcastss	.LCPI1_0(%rip), %zmm0
-	vminps	%zmm2, %zmm0, %zmm0
-	vmovaps	%zmm1, %zmm0 {%k1}
+	vminps	%zmm2, %zmm0, %zmm1 {%k1}
+	vmovaps	%zmm1, %zmm0
 	retq
 

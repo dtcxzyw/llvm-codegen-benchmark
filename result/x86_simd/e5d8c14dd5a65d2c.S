@@ -14,11 +14,10 @@ func0000000000000042:
 	.long	0x3f800000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000024:
-	vmulps	%zmm1, %zmm0, %zmm0
-	vbroadcastss	.LCPI1_0(%rip), %zmm1
-	vcmpltps	%zmm0, %zmm1, %k1
+	vmulps	%zmm1, %zmm0, %zmm1
+	vbroadcastss	.LCPI1_0(%rip), %zmm0
+	vcmpnltps	%zmm1, %zmm0, %k1
 	vxorps	%xmm2, %xmm2, %xmm2
-	vmaxps	%zmm0, %zmm2, %zmm0
-	vmovaps	%zmm1, %zmm0 {%k1}
+	vmaxps	%zmm1, %zmm2, %zmm0 {%k1}
 	retq
 
