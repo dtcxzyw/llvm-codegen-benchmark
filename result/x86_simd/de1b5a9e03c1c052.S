@@ -29,11 +29,11 @@ func0000000000000424:
 	.quad	32767
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000586:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmq	%ymm2, %ymm2, %k0
-	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpneqq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	korw	%k0, %k1, %k1
-	vpcmpgtq	%ymm0, %ymm2, %k0 {%k1}
+	vpcmpgtq	%ymm0, %ymm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

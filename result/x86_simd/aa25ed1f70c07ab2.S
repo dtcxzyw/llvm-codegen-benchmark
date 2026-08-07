@@ -44,8 +44,7 @@ func0000000000000006:
 func000000000000000a:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtq	%ymm3, %ymm1, %k1
+	vpcmpgtq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm2, %k1 {%k1}
 	vpbroadcastq	.LCPI3_0(%rip), %ymm0
 	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1}

@@ -73,8 +73,8 @@ func00000000000000c1:
 
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000000ca:
-	vpmovd2m	%ymm0, %k1
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpmovd2m	%ymm0, %k1
 	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
 	vpcmpgtd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -94,8 +94,8 @@ func00000000000000cc:
 
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000002a:
-	vptestnmd	%ymm0, %ymm0, %k1
 	vpxor	%xmm3, %xmm3, %xmm3
+	vptestnmd	%ymm0, %ymm0, %k1
 	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
 	vpcmpgtd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

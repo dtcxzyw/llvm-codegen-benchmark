@@ -95,8 +95,7 @@ func00000000000000ec:
 func000000000000008a:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpltpd	%zmm1, %zmm2, %k0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpcmpgtd	%ymm2, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -150,8 +149,7 @@ func000000000000010c:
 func000000000000010a:
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpeqpd	%zmm2, %zmm1, %k0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpcmpgtd	%ymm2, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

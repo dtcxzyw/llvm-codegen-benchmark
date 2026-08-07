@@ -5,8 +5,7 @@ func00000000000008ca:
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpcmpnltd	%xmm4, %xmm0, %k1
 	vpaddq	%ymm2, %ymm1, %ymm3 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpcmpgtq	%ymm0, %ymm3, %k0
+	vpcmpgtq	%ymm4, %ymm3, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

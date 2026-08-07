@@ -15,8 +15,7 @@ func000000000000022a:
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpnltpd	%zmm2, %zmm3, %k1
 	vpmulld	%ymm1, %ymm0, %ymm0 {%k1}
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpcmpgtd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -41,8 +40,7 @@ func000000000000012a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vmovdqa32	%ymm2, %ymm1 {%k1}
 	vpmulld	%ymm1, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpcmpgtd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -24,10 +24,10 @@ func000000000000008a:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000081:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestmq	%ymm2, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
 	vmovdqa64	%ymm1, %ymm1 {%k1} {z}
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpsubq	%ymm0, %ymm3, %ymm0
 	vpcmpeqq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

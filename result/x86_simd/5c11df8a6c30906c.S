@@ -3,9 +3,9 @@
 	.long	128
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm3, %ymm0 {%k1}
 	retq
 
 .LCPI1_0:
@@ -34,8 +34,8 @@ func0000000000000074:
 	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmd	.LCPI3_0(%rip){1to8}, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpsubd	%ymm1, %ymm3, %ymm0 {%k1}
 	retq
 

@@ -68,8 +68,8 @@ func0000000000000386:
 
 	.prefalign	4, .Lfunc_end6, nop
 func00000000000003a1:
-	vpslld	$8, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpslld	$8, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpsubd	%ymm1, %ymm3, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0

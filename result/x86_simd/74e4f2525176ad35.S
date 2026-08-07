@@ -1,155 +1,41 @@
 	.att_syntax
 .LCPI0_0:
+	.quad	0x40e0000000000000
+.LCPI0_1:
 	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpextrd	$1, %xmm0, %ecx
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %ecx
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %ecx
-	movl	$32768, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
+	vcvtdq2pd	%ymm0, %zmm0
+	vbroadcastsd	.LCPI0_0(%rip), %zmm1
+	vdivpd	%zmm0, %zmm1, %zmm0
+	vcvttpd2dq	%zmm0, %ymm0
+	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI1_0:
+	.quad	0x4076800000000000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpextrd	$1, %xmm0, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vcvtdq2pd	%ymm0, %zmm0
+	vbroadcastsd	.LCPI1_0(%rip), %zmm1
+	vdivpd	%zmm0, %zmm1, %zmm0
+	vcvttpd2dq	%zmm0, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI2_0:
+	.quad	0x4076800000000000
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpextrd	$1, %xmm0, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %ecx
-	movl	$360, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
+	vcvtdq2pd	%ymm0, %zmm0
+	vbroadcastsd	.LCPI2_0(%rip), %zmm1
+	vdivpd	%zmm0, %zmm1, %zmm0
+	vcvttpd2dq	%zmm0, %ymm0
+	vxorpd	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -27,8 +27,8 @@ func0000000000003081:
 	.long	16
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000108a:
-	vptestmd	%ymm1, %ymm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vptestmd	%ymm1, %ymm1, %k1
 	vpsubd	%ymm1, %ymm0, %ymm1
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	vpcmpgtd	%ymm2, %ymm0, %k0

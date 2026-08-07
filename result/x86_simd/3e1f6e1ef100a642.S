@@ -2,8 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000003d:
 	vpmovzxbq	%xmm2, %ymm2
-	vpsllq	$8, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpsllq	$8, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm3, %ymm0
@@ -12,8 +12,8 @@ func000000000000003d:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000003c:
 	vpmovzxbq	%xmm2, %ymm2
-	vpsllq	$8, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpsllq	$8, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm3, %ymm0

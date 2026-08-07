@@ -1,142 +1,36 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
-	vpmovdw	%ymm1, %xmm2
-	vpextrw	$1, %xmm0, %ecx
-	vpextrw	$1, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divw	%si
-	vmovd	%eax, %xmm1
-	vpinsrw	$1, %ecx, %xmm1, %xmm1
-	vpextrw	$2, %xmm0, %ecx
-	vpextrw	$2, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$2, %eax, %xmm1, %xmm1
-	vpextrw	$3, %xmm0, %ecx
-	vpextrw	$3, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$3, %eax, %xmm1, %xmm1
-	vpextrw	$4, %xmm0, %ecx
-	vpextrw	$4, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$4, %eax, %xmm1, %xmm1
-	vpextrw	$5, %xmm0, %ecx
-	vpextrw	$5, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$5, %eax, %xmm1, %xmm1
-	vpextrw	$6, %xmm0, %ecx
-	vpextrw	$6, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$6, %eax, %xmm1, %xmm1
-	vpextrw	$7, %xmm0, %ecx
-	vpextrw	$7, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$7, %eax, %xmm1, %xmm0
+	vcvtudq2ps	%ymm1, %ymm1
+	vpmovzxwd	%xmm0, %ymm0
+	vcvtdq2ps	%ymm0, %ymm0
+	vdivps	%ymm0, %ymm1, %ymm0
+	vcvttps2dq	%ymm0, %ymm0
+	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	vpmovdw	%ymm1, %xmm2
-	vpextrw	$1, %xmm0, %ecx
-	vpextrw	$1, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divw	%si
-	vmovd	%eax, %xmm1
-	vpinsrw	$1, %ecx, %xmm1, %xmm1
-	vpextrw	$2, %xmm0, %ecx
-	vpextrw	$2, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$2, %eax, %xmm1, %xmm1
-	vpextrw	$3, %xmm0, %ecx
-	vpextrw	$3, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$3, %eax, %xmm1, %xmm1
-	vpextrw	$4, %xmm0, %ecx
-	vpextrw	$4, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$4, %eax, %xmm1, %xmm1
-	vpextrw	$5, %xmm0, %ecx
-	vpextrw	$5, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$5, %eax, %xmm1, %xmm1
-	vpextrw	$6, %xmm0, %ecx
-	vpextrw	$6, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$6, %eax, %xmm1, %xmm1
-	vpextrw	$7, %xmm0, %ecx
-	vpextrw	$7, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$7, %eax, %xmm1, %xmm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpblendw	$170, %ymm2, %ymm1, %ymm1
+	vcvtdq2ps	%ymm1, %ymm1
+	vpmovzxwd	%xmm0, %ymm0
+	vcvtdq2ps	%ymm0, %ymm0
+	vdivps	%ymm0, %ymm1, %ymm0
+	vcvttps2dq	%ymm0, %ymm0
+	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
-	vpmovdw	%ymm1, %xmm2
-	vpextrw	$1, %xmm0, %ecx
-	vpextrw	$1, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divw	%si
-	vmovd	%eax, %xmm1
-	vpinsrw	$1, %ecx, %xmm1, %xmm1
-	vpextrw	$2, %xmm0, %ecx
-	vpextrw	$2, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$2, %eax, %xmm1, %xmm1
-	vpextrw	$3, %xmm0, %ecx
-	vpextrw	$3, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$3, %eax, %xmm1, %xmm1
-	vpextrw	$4, %xmm0, %ecx
-	vpextrw	$4, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$4, %eax, %xmm1, %xmm1
-	vpextrw	$5, %xmm0, %ecx
-	vpextrw	$5, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$5, %eax, %xmm1, %xmm1
-	vpextrw	$6, %xmm0, %ecx
-	vpextrw	$6, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$6, %eax, %xmm1, %xmm1
-	vpextrw	$7, %xmm0, %ecx
-	vpextrw	$7, %xmm2, %eax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$7, %eax, %xmm1, %xmm0
+	vcvtudq2ps	%ymm1, %ymm1
+	vpmovzxwd	%xmm0, %ymm0
+	vcvtdq2ps	%ymm0, %ymm0
+	vdivps	%ymm0, %ymm1, %ymm0
+	vcvttps2dq	%ymm0, %ymm0
+	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
 

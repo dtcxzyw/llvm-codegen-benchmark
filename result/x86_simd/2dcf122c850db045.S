@@ -5,6 +5,7 @@ func0000000000000002:
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vcvtdq2ps	%ymm2, %ymm2
 	vdivps	%ymm1, %ymm0, %ymm0
-	vfmadd213ps	%ymm3, %ymm2, %ymm0
+	vfmadd231ps	%ymm0, %ymm2, %ymm3
+	vmovaps	%ymm3, %ymm0
 	retq
 

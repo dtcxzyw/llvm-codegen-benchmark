@@ -3,9 +3,9 @@
 func0000000000000002:
 	vcvtudq2ps	%ymm2, %ymm2
 	vmulps	%ymm2, %ymm0, %ymm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpsubd	%ymm1, %ymm3, %ymm0
-	vcvtdq2ps	%ymm0, %ymm0
-	vfmadd213ps	%ymm3, %ymm2, %ymm0
+	vxorps	%xmm0, %xmm0, %xmm0
+	vpsubd	%ymm1, %ymm0, %ymm1
+	vcvtdq2ps	%ymm1, %ymm1
+	vfmadd231ps	%ymm1, %ymm2, %ymm0
 	retq
 

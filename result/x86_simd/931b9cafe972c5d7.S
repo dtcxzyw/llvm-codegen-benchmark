@@ -13,8 +13,8 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpsllq	$32, %ymm0, %ymm0
-	vporq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
+	vporq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

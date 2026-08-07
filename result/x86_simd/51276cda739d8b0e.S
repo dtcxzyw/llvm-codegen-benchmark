@@ -4,51 +4,12 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vextracti128	$1, %ymm0, %xmm2
-	vpextrd	$1, %xmm2, %ecx
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %esi
-	vmovd	%xmm3, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	vpextrd	$2, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	vpextrd	$3, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm2
-	vpextrd	$1, %xmm0, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm0, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm0, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vcvtudq2pd	%ymm0, %zmm2
+	vcvtudq2pd	%ymm1, %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
+	vpmulld	%ymm0, %ymm2, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -59,51 +20,12 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vextracti128	$1, %ymm0, %xmm2
-	vpextrd	$1, %xmm2, %ecx
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %esi
-	vmovd	%xmm3, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	vpextrd	$2, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	vpextrd	$3, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm2
-	vpextrd	$1, %xmm0, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm0, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm0, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vcvtudq2pd	%ymm0, %zmm2
+	vcvtudq2pd	%ymm1, %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
+	vpmulld	%ymm0, %ymm2, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -113,51 +35,12 @@ func0000000000000021:
 func0000000000000061:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrd	$1, %xmm2, %eax
-	vextracti128	$1, %ymm0, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %eax
-	vmovd	%xmm3, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %eax
-	vpextrd	$2, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %eax
-	vpextrd	$3, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm2
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm0, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vcvtudq2pd	%ymm1, %zmm2
+	vcvtudq2pd	%ymm0, %zmm3
+	vdivpd	%zmm3, %zmm2, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
+	vpmulld	%ymm0, %ymm2, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -168,51 +51,12 @@ func0000000000000061:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vextracti128	$1, %ymm0, %xmm2
-	vpextrd	$1, %xmm2, %ecx
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %esi
-	vmovd	%xmm3, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	vpextrd	$2, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	vpextrd	$3, %xmm3, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm2
-	vpextrd	$1, %xmm0, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm0, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm0, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vcvtudq2pd	%ymm0, %zmm2
+	vcvtudq2pd	%ymm1, %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
+	vpmulld	%ymm0, %ymm2, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vptestmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -222,51 +66,12 @@ func000000000000000c:
 func000000000000002c:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrd	$1, %xmm2, %eax
-	vextracti128	$1, %ymm0, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %eax
-	vmovd	%xmm3, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %eax
-	vpextrd	$2, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %eax
-	vpextrd	$3, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm2
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm0, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vcvtudq2pd	%ymm1, %zmm2
+	vcvtudq2pd	%ymm0, %zmm3
+	vdivpd	%zmm3, %zmm2, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
+	vpmulld	%ymm0, %ymm2, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vptestmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

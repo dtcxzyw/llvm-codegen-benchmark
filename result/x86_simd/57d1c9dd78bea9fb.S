@@ -136,10 +136,10 @@ func0000000000000046:
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000066:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpcmpgtd	%ymm4, %ymm1, %k1
-	vpsubd	%ymm3, %ymm2, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpeqd	%ymm4, %ymm4, %ymm4
+	vpcmpgtd	%ymm3, %ymm1, %k1
+	vpsubd	%ymm4, %ymm2, %ymm0 {%k1}
 	retq
 
 .LCPI16_0:

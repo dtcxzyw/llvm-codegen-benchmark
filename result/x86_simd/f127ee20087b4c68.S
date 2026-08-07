@@ -3,27 +3,12 @@
 func0000000000000000:
 	vpmovqd	%ymm1, %xmm1
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpextrd	$1, %xmm0, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm2, %xmm0
+	vcvtudq2pd	%xmm0, %ymm2
+	vcvtudq2pd	%xmm1, %ymm3
+	vdivpd	%ymm2, %ymm3, %ymm2
+	vcvttpd2udq	%ymm2, %xmm2
+	vpmulld	%xmm0, %xmm2, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -31,27 +16,12 @@ func0000000000000000:
 func0000000000000002:
 	vpmovqd	%ymm1, %xmm1
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpextrd	$1, %xmm0, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm0, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm2, %xmm0
+	vcvtudq2pd	%xmm0, %ymm2
+	vcvtudq2pd	%xmm1, %ymm3
+	vdivpd	%ymm2, %ymm3, %ymm2
+	vcvttpd2udq	%ymm2, %xmm2
+	vpmulld	%xmm0, %xmm2, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

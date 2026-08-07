@@ -26,12 +26,12 @@ func0000000000000c26:
 	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000301:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovd2m	%ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpbroadcastd	.LCPI2_0(%rip), %ymm3
-	vmovdqa32	%ymm1, %ymm3 {%k1}
-	vpsubd	%ymm0, %ymm2, %ymm0
-	vpcmpeqd	%ymm0, %ymm3, %k0
+	vpbroadcastd	.LCPI2_0(%rip), %ymm2
+	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vpsubd	%ymm0, %ymm3, %ymm0
+	vpcmpeqd	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -123,9 +123,9 @@ func0000000000000058:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000018:
+	vxorpd	%xmm4, %xmm4, %xmm4
 	vcmpunordpd	%zmm0, %zmm0, %k1
 	vcmpunordpd	%zmm1, %zmm1, %k2
-	vxorpd	%xmm4, %xmm4, %xmm4
 	vmovapd	%zmm1, %zmm3 {%k2}
 	vmovapd	%zmm0, %zmm2 {%k1}
 	vcmpeqpd	%zmm4, %zmm2, %k0

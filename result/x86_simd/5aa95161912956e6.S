@@ -1,28 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpmovqd	%ymm2, %xmm3
-	vpextrd	$1, %xmm0, %eax
-	vpextrd	$1, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %eax
-	vmovd	%xmm2, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %eax
-	vpextrd	$2, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %eax
-	vpextrd	$3, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
+	vpmovqd	%ymm2, %xmm2
+	vcvtudq2pd	%xmm0, %ymm0
+	vcvtudq2pd	%xmm2, %ymm2
+	vdivpd	%ymm2, %ymm0, %ymm0
+	vcvttpd2udq	%ymm0, %xmm0
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
@@ -31,28 +14,11 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	vpmovqd	%ymm2, %xmm3
-	vpextrd	$1, %xmm0, %eax
-	vpextrd	$1, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %eax
-	vmovd	%xmm2, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %eax
-	vpextrd	$2, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %eax
-	vpextrd	$3, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
+	vpmovqd	%ymm2, %xmm2
+	vcvtudq2pd	%xmm0, %ymm0
+	vcvtudq2pd	%xmm2, %ymm2
+	vdivpd	%ymm2, %ymm0, %ymm0
+	vcvttpd2udq	%ymm0, %xmm0
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0

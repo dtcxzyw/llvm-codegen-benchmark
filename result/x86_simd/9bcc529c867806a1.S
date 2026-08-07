@@ -6,8 +6,7 @@ func0000000000000010:
 	vcmpltpd	%zmm2, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpsllw	$7, %xmm0, %xmm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -19,8 +18,7 @@ func0000000000000008:
 	vcmpltpd	%zmm3, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpsllw	$7, %xmm0, %xmm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -32,8 +30,7 @@ func000000000000001c:
 	vcmpneqpd	%zmm3, %zmm2, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpsllw	$7, %xmm0, %xmm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -60,8 +57,7 @@ func0000000000000030:
 	vcmplepd	%zmm2, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k1
 	vpsllw	$7, %xmm0, %xmm0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

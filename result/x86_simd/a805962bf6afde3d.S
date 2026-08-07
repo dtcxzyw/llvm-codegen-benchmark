@@ -124,20 +124,20 @@ func0000000000000005:
 	.quad	3294967296
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
-	vpsrlq	$18, %ymm1, %ymm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpblendd	$170, %ymm3, %ymm2, %ymm4
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpsrlq	$18, %ymm1, %ymm3
+	vpblendd	$170, %ymm2, %ymm3, %ymm4
 	vpbroadcastq	.LCPI4_0(%rip), %ymm5
-	vpmuludq	%ymm5, %ymm2, %ymm2
-	vpsrlq	$32, %ymm2, %ymm2
-	vpsrlq	$50, %ymm1, %ymm1
-	vpmadd52luq	%ymm5, %ymm1, %ymm2
-	vpblendd	$170, %ymm3, %ymm2, %ymm3
-	vpbroadcastq	.LCPI4_1(%rip), %ymm5
-	vpmadd52luq	%ymm5, %ymm4, %ymm3
+	vpmuludq	%ymm5, %ymm3, %ymm3
 	vpsrlq	$32, %ymm3, %ymm3
+	vpsrlq	$50, %ymm1, %ymm1
+	vpmadd52luq	%ymm5, %ymm1, %ymm3
+	vpblendd	$170, %ymm2, %ymm3, %ymm2
+	vpbroadcastq	.LCPI4_1(%rip), %ymm5
+	vpmadd52luq	%ymm5, %ymm4, %ymm2
 	vpsrlq	$32, %ymm2, %ymm2
-	vpaddq	%ymm3, %ymm2, %ymm2
+	vpsrlq	$32, %ymm3, %ymm3
+	vpaddq	%ymm2, %ymm3, %ymm2
 	vpmadd52luq	%ymm5, %ymm1, %ymm2
 	vpsrlq	$24, %ymm2, %ymm1
 	vpmadd52luq	.LCPI4_2(%rip){1to4}, %ymm1, %ymm0

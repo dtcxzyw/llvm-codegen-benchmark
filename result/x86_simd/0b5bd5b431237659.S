@@ -3,28 +3,13 @@
 func0000000000000000:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpmovqd	%ymm0, %xmm2
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm0
-	vpinsrd	$1, %ecx, %xmm0, %xmm0
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm0, %xmm0
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm0, %xmm0
+	vpmovqd	%ymm0, %xmm0
+	vcvtdq2pd	%xmm1, %ymm2
+	vcvtdq2pd	%xmm0, %ymm3
+	vdivpd	%ymm2, %ymm3, %ymm2
+	vcvttpd2dq	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -32,28 +17,13 @@ func0000000000000000:
 func0000000000000004:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpmovqd	%ymm0, %xmm2
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm0
-	vpinsrd	$1, %ecx, %xmm0, %xmm0
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm0, %xmm0
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm0, %xmm0
+	vpmovqd	%ymm0, %xmm0
+	vcvtdq2pd	%xmm1, %ymm2
+	vcvtdq2pd	%xmm0, %ymm3
+	vdivpd	%ymm2, %ymm3, %ymm2
+	vcvttpd2dq	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -62,27 +32,12 @@ func0000000000000005:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm2
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm0
-	vpinsrd	$1, %ecx, %xmm0, %xmm0
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm0, %xmm0
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm0, %xmm0
+	vcvtdq2pd	%xmm1, %ymm3
+	vcvtqq2pd	%ymm0, %ymm0
+	vdivpd	%ymm3, %ymm0, %ymm0
+	vcvttpd2dq	%ymm0, %xmm0
+	vpmulld	%xmm1, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
 
@@ -91,27 +46,12 @@ func0000000000000007:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm2
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm0
-	vpinsrd	$1, %ecx, %xmm0, %xmm0
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm0, %xmm0
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm0, %xmm0
+	vcvtdq2pd	%xmm1, %ymm3
+	vcvtqq2pd	%ymm0, %ymm0
+	vdivpd	%ymm3, %ymm0, %ymm0
+	vcvttpd2dq	%ymm0, %xmm0
+	vpmulld	%xmm1, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
 
@@ -120,27 +60,12 @@ func000000000000000f:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm2
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm0
-	vpinsrd	$1, %ecx, %xmm0, %xmm0
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm0, %xmm0
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm0, %xmm0
+	vcvtdq2pd	%xmm1, %ymm3
+	vcvtqq2pd	%ymm0, %ymm0
+	vdivpd	%ymm3, %ymm0, %ymm0
+	vcvttpd2dq	%ymm0, %xmm0
+	vpmulld	%xmm1, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
 
@@ -148,28 +73,13 @@ func000000000000000f:
 func000000000000000c:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpmovqd	%ymm0, %xmm2
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm0
-	vpinsrd	$1, %ecx, %xmm0, %xmm0
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm0, %xmm0
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm2, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm0, %xmm0
+	vpmovqd	%ymm0, %xmm0
+	vcvtdq2pd	%xmm1, %ymm2
+	vcvtdq2pd	%xmm0, %ymm3
+	vdivpd	%ymm2, %ymm3, %ymm2
+	vcvttpd2dq	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

@@ -1,16 +1,16 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000032:
-	vpmovd2m	%ymm0, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpmovd2m	%ymm0, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	vpmaxsd	%ymm2, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000033:
-	vpmovd2m	%ymm0, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpmovd2m	%ymm0, %k1
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	vpmaxsd	%ymm2, %ymm0, %ymm0
 	retq

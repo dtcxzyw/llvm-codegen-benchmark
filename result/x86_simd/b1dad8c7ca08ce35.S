@@ -5,9 +5,9 @@
 	.quad	-9223372036854775808
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
+	vpxor	%xmm1, %xmm1, %xmm1
 	vpsllq	$61, %ymm0, %ymm0
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpandq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	retq

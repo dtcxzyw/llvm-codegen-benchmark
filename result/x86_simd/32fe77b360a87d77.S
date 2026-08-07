@@ -35,8 +35,7 @@ func0000000000000181:
 func0000000000000021:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpblendd	$170, %ymm4, %ymm2, %ymm2
+	vpblendd	$170, %ymm3, %ymm2, %ymm2
 	vpcmpeqd	.LCPI2_0(%rip){1to4}, %xmm1, %k1
 	vpcmpeqq	.LCPI2_1(%rip){1to4}, %ymm2, %k1 {%k1}
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}

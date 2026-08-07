@@ -64,9 +64,8 @@ func000000000000014a:
 func00000000000000ca:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpcmpgtq	%ymm4, %ymm1, %k1
-	vpcmpgtq	%ymm2, %ymm4, %k1 {%k1}
+	vpcmpgtq	%ymm3, %ymm1, %k1
+	vpcmpgtq	%ymm2, %ymm3, %k1 {%k1}
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -76,9 +75,8 @@ func00000000000000ca:
 func0000000000000146:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
 	vpmovq2m	%ymm1, %k1
-	vpcmpgtq	%ymm4, %ymm2, %k1 {%k1}
+	vpcmpgtq	%ymm3, %ymm2, %k1 {%k1}
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

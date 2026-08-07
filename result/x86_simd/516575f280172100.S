@@ -17,8 +17,7 @@ func0000000000000021:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm2, %xmm3, %xmm2
 	vpcmpeqd	%xmm2, %xmm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpblendd	$170, %ymm1, %ymm0, %ymm0
+	vpblendd	$170, %ymm3, %ymm0, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

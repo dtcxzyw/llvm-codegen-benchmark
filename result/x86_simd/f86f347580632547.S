@@ -7,27 +7,12 @@ func0000000000000008:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm0, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm0, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm0, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm2, %xmm0
+	vcvtudq2pd	%xmm1, %ymm2
+	vcvtudq2pd	%xmm0, %ymm3
+	vdivpd	%ymm2, %ymm3, %ymm2
+	vcvttpd2udq	%ymm2, %xmm2
+	vpmulld	%xmm1, %xmm2, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

@@ -68,8 +68,7 @@ func0000000000000005:
 	kunpckbw	%k0, %k1, %k1
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpcmpgtb	%xmm0, %xmm4, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -144,8 +143,7 @@ func0000000000000008:
 	kunpckbw	%k0, %k1, %k1
 	vpand	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpcmpgtb	%xmm0, %xmm4, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

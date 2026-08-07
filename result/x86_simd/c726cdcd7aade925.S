@@ -1,49 +1,16 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x40f0000000000000
+.LCPI0_1:
+	.long	65536
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vextracti128	$1, %ymm0, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %esi
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm2, %xmm1
-	vpextrd	$1, %xmm0, %ecx
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm0, %esi
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm0, %ecx
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm2, %xmm2
-	vpextrd	$3, %xmm0, %ecx
-	movl	$65536, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm2, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vcvtudq2pd	%ymm0, %zmm1
+	vbroadcastsd	.LCPI0_0(%rip), %zmm2
+	vdivpd	%zmm1, %zmm2, %zmm1
+	vcvttpd2udq	%zmm1, %ymm1
+	vpmulld	%ymm0, %ymm1, %ymm0
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

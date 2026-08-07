@@ -6,8 +6,7 @@ func0000000000000008:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpsubq	%ymm1, %ymm0, %ymm1 {%k1}
+	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
 	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -20,8 +19,7 @@ func000000000000002a:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpsubq	%ymm1, %ymm0, %ymm1 {%k1}
+	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
 	vpcmpgtq	.LCPI1_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -34,8 +32,7 @@ func0000000000000026:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpsubq	%ymm1, %ymm0, %ymm1 {%k1}
+	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
 	vpcmpltq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -156,8 +153,7 @@ func0000000000000004:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpsubq	%ymm1, %ymm0, %ymm1 {%k1}
+	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
 	vpcmpltuq	.LCPI10_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -170,8 +166,7 @@ func0000000000000014:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpsubq	%ymm1, %ymm0, %ymm1 {%k1}
+	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
 	vpcmpltuq	.LCPI11_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

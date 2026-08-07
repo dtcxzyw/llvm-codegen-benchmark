@@ -35,8 +35,8 @@ func000000000000000d:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpmovzxbd	%xmm1, %ymm1
-	vpslld	$8, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpslld	$8, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpsubd	%ymm0, %ymm2, %ymm0
 	retq

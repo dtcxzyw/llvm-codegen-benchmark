@@ -29,8 +29,7 @@ func000000000000014c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm2, %xmm3, %xmm2
 	vpcmpneqd	%xmm2, %xmm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtq	%ymm1, %ymm0, %k0 {%k1}
+	vpcmpgtq	%ymm3, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

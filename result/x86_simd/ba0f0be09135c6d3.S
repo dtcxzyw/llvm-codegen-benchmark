@@ -75,10 +75,10 @@ func0000000000000386:
 	.prefalign	4, .Lfunc_end6, nop
 func00000000000003a1:
 	vpmovzxbd	%xmm2, %ymm2
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm2, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpsubd	%ymm1, %ymm3, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -77,9 +77,9 @@ func00000000000028c6:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k0
 	vpmovd2m	%ymm0, %k1
+	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k2 {%k1}
 	kandnb	%k0, %k1, %k0
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k1 {%k1}
-	korb	%k0, %k1, %k0
+	korb	%k0, %k2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -89,9 +89,9 @@ func00000000000028c1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vpmovd2m	%ymm1, %k2
-	vptestmd	%ymm0, %ymm0, %k0 {%k1}
-	vptestnmd	%ymm0, %ymm0, %k1 {%k2}
-	korb	%k0, %k1, %k0
+	vptestnmd	%ymm0, %ymm0, %k0 {%k2}
+	vptestmd	%ymm0, %ymm0, %k1 {%k1}
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

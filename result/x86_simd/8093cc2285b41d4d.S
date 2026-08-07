@@ -3,27 +3,12 @@
 func0000000000000088:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm0, %xmm2, %xmm2
-	vpextrd	$1, %xmm2, %eax
-	vpextrd	$1, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %eax
-	vmovd	%xmm0, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm2, %eax
-	vpextrd	$2, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm2, %eax
-	vpextrd	$3, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm0
+	vcvtudq2pd	%xmm2, %ymm3
+	vcvtudq2pd	%xmm0, %ymm4
+	vdivpd	%ymm4, %ymm3, %ymm3
+	vcvttpd2udq	%ymm3, %xmm3
+	vpmulld	%xmm0, %xmm3, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnleud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -34,27 +19,12 @@ func0000000000000088:
 func0000000000000008:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm0, %xmm2, %xmm2
-	vpextrd	$1, %xmm2, %eax
-	vpextrd	$1, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %eax
-	vmovd	%xmm0, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm2, %eax
-	vpextrd	$2, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm2, %eax
-	vpextrd	$3, %xmm0, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm0
+	vcvtudq2pd	%xmm2, %ymm3
+	vcvtudq2pd	%xmm0, %ymm4
+	vdivpd	%ymm4, %ymm3, %ymm3
+	vcvttpd2udq	%ymm3, %xmm3
+	vpmulld	%xmm0, %xmm3, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnleud	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0

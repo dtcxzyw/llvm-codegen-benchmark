@@ -5,8 +5,8 @@
 	.long	6
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
-	vptestmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vptestmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1
 	vpmaxsd	%ymm2, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0

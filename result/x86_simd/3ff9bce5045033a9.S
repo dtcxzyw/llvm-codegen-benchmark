@@ -5,8 +5,8 @@
 func0000000000000054:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
+	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	korb	%k1, %k0, %k1
 	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
@@ -19,8 +19,8 @@ func0000000000000054:
 func0000000000000314:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vptestmd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
+	vptestmd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	korb	%k0, %k1, %k1
 	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

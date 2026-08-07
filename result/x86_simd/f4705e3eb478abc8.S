@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000054:
-	vpsllq	$5, %ymm2, %ymm2
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpsllq	$5, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpsubq	%ymm0, %ymm3, %ymm0

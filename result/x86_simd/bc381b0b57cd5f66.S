@@ -7,8 +7,7 @@ func000000000000002a:
 	vmovdqa	%ymm1, %ymm0
 	vpternlogq	$15, %ymm1, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm1 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpcmpgtq	%ymm3, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -16,8 +16,7 @@ func0000000000000009:
 func0000000000000005:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpblendw	$136, %ymm4, %ymm2, %ymm2
+	vpblendw	$136, %ymm3, %ymm2, %ymm2
 	vpcmpleuq	%ymm1, %ymm2, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0

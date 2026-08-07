@@ -1,59 +1,47 @@
 	.att_syntax
+.LCPI0_0:
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+.LCPI0_1:
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpmovqb	%ymm1, %xmm1
-	vpextrb	$1, %xmm0, %ecx
-	vpextrb	$1, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movl	%eax, %ecx
-	vmovd	%xmm0, %edx
-	vmovd	%xmm1, %eax
-	movzbl	%al, %eax
-	divb	%dl
-	movl	%eax, %edx
-	vpextrb	$2, %xmm0, %esi
-	vpextrb	$2, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%sil
-	movl	%eax, %esi
-	vpextrb	$3, %xmm0, %edi
-	vpextrb	$3, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%dil
-	vmovd	%edx, %xmm0
-	vpinsrb	$1, %ecx, %xmm0, %xmm0
-	vpinsrb	$2, %esi, %xmm0, %xmm0
-	vpinsrb	$3, %eax, %xmm0, %xmm0
+	vpmovzxbd	%xmm0, %xmm0
+	vcvtdq2ps	%xmm0, %xmm0
+	vpmovqd	%ymm1, %xmm1
+	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
+	vcvtdq2ps	%xmm1, %xmm1
+	vdivps	%xmm0, %xmm1, %xmm0
+	vcvttps2dq	%xmm0, %xmm0
+	vpmovdb	%xmm0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	vpmovqb	%ymm1, %xmm1
-	vpextrb	$1, %xmm0, %ecx
-	vpextrb	$1, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movl	%eax, %ecx
-	vmovd	%xmm0, %edx
-	vmovd	%xmm1, %eax
-	movzbl	%al, %eax
-	divb	%dl
-	movl	%eax, %edx
-	vpextrb	$2, %xmm0, %esi
-	vpextrb	$2, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%sil
-	movl	%eax, %esi
-	vpextrb	$3, %xmm0, %edi
-	vpextrb	$3, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%dil
-	vmovd	%edx, %xmm0
-	vpinsrb	$1, %ecx, %xmm0, %xmm0
-	vpinsrb	$2, %esi, %xmm0, %xmm0
-	vpinsrb	$3, %eax, %xmm0, %xmm0
+	vcvtuqq2ps	%ymm1, %xmm1
+	vpmovzxbd	%xmm0, %xmm0
+	vcvtdq2ps	%xmm0, %xmm0
+	vdivps	%xmm0, %xmm1, %xmm0
+	vcvttps2dq	%xmm0, %xmm0
+	vpmovdb	%xmm0, %xmm0
 	vzeroupper
 	retq
 

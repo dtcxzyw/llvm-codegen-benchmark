@@ -5,8 +5,7 @@ func00000000000001f4:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
 	vpsubq	%ymm4, %ymm2, %ymm2
-	vpxor	%xmm5, %xmm5, %xmm5
-	vpblendd	$170, %ymm5, %ymm2, %ymm2
+	vpblendd	$170, %ymm3, %ymm2, %ymm2
 	vpsubq	%ymm4, %ymm1, %ymm1
 	vpcmpltuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}

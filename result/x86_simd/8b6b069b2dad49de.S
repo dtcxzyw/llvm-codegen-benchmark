@@ -57,8 +57,7 @@ func000000000000014a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%xmm3, %xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpcmpgtq	%ymm3, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -59,8 +59,8 @@ func000000000000014a:
 func000000000000018a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
-	vptestmd	%ymm2, %ymm2, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
+	vptestmd	%ymm2, %ymm2, %k1
 	knotb	%k0, %k0
 	korb	%k1, %k0, %k1
 	vpcmpgtd	%ymm1, %ymm0, %k0 {%k1}

@@ -1,54 +1,17 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpextrb	$1, %xmm1, %ecx
-	vpextrb	$1, %xmm0, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %ecx
-	vmovd	%xmm1, %edx
-	vmovd	%xmm0, %eax
-	movzbl	%al, %eax
-	divb	%dl
-	movzbl	%ah, %eax
-	vmovd	%eax, %xmm2
-	vpinsrb	$1, %ecx, %xmm2, %xmm2
-	vpextrb	$2, %xmm1, %ecx
-	vpextrb	$2, %xmm0, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$2, %eax, %xmm2, %xmm2
-	vpextrb	$3, %xmm1, %ecx
-	vpextrb	$3, %xmm0, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$3, %eax, %xmm2, %xmm2
-	vpextrb	$4, %xmm1, %ecx
-	vpextrb	$4, %xmm0, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$4, %eax, %xmm2, %xmm2
-	vpextrb	$5, %xmm1, %ecx
-	vpextrb	$5, %xmm0, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$5, %eax, %xmm2, %xmm2
-	vpextrb	$6, %xmm1, %ecx
-	vpextrb	$6, %xmm0, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$6, %eax, %xmm2, %xmm2
-	vpextrb	$7, %xmm1, %ecx
-	vpextrb	$7, %xmm0, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$7, %eax, %xmm2, %xmm0
+	vpmovzxbd	%xmm1, %ymm2
+	vcvtdq2ps	%ymm2, %ymm2
+	vpmovzxbd	%xmm0, %ymm3
+	vcvtdq2ps	%ymm3, %ymm3
+	vdivps	%ymm2, %ymm3, %ymm2
+	vcvttps2dq	%ymm2, %ymm2
+	vpmovdw	%ymm2, %xmm2
+	vpmovzxbw	%xmm1, %xmm1
+	vpmullw	%xmm1, %xmm2, %xmm1
+	vpmovwb	%xmm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
 	retq
 

@@ -1,52 +1,14 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x41b7d78400000000
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001e:
 	vpmovzxbd	%xmm2, %ymm2
 	vpslld	$8, %ymm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2
-	vextracti128	$1, %ymm2, %xmm0
-	vpextrd	$1, %xmm0, %ecx
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm1
-	vpinsrd	$1, %ecx, %xmm1, %xmm1
-	vpextrd	$2, %xmm0, %ecx
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm1, %xmm1
-	vpextrd	$3, %xmm0, %ecx
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm1, %xmm0
-	vpextrd	$1, %xmm2, %ecx
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm1
-	vpinsrd	$1, %ecx, %xmm1, %xmm1
-	vpextrd	$2, %xmm2, %ecx
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm1, %xmm1
-	vpextrd	$3, %xmm2, %ecx
-	movl	$400000000, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm1, %xmm1
-	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vcvtudq2pd	%ymm2, %zmm0
+	vbroadcastsd	.LCPI0_0(%rip), %zmm1
+	vdivpd	%zmm0, %zmm1, %zmm0
+	vcvttpd2udq	%zmm0, %ymm0
 	retq
 

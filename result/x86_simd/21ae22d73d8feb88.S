@@ -14,8 +14,8 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	vpminuq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
+	vpaddq	%ymm0, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
@@ -34,8 +34,8 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
 	vpminuq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
-	vpsllq	$32, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
+	vpsllq	$32, %ymm0, %ymm0
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

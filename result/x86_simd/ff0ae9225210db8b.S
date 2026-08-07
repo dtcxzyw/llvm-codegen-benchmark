@@ -15,8 +15,7 @@ func0000000000000030:
 func000000000000014e:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpneqpd	%zmm1, %zmm0, %k1
+	vcmpneqpd	%zmm2, %zmm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -112,8 +112,7 @@ func0000000000000082:
 func00000000000000ad:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpnltpd	%zmm1, %zmm0, %k0 {%k1}
+	vcmpnltpd	%zmm2, %zmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -205,9 +204,8 @@ func0000000000000064:
 
 	.prefalign	4, .Lfunc_end19, nop
 func00000000000000ea:
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpgtd	%ymm2, %ymm0, %k1
 	vcmpneqpd	%zmm2, %zmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

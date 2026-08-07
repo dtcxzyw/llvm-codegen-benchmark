@@ -539,10 +539,10 @@ func0000000000002981:
 
 	.prefalign	4, .Lfunc_end46, nop
 func0000000000000586:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmd	%ymm2, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1 {%k1}
-	vpcmpgtd	%ymm0, %ymm2, %k0 {%k1}
+	vpcmpgtd	%ymm0, %ymm3, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

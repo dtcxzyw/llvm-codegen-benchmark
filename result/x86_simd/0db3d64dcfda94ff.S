@@ -1,93 +1,23 @@
 	.att_syntax
+.LCPI0_0:
+	.long	0x43800000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	vpextrw	$1, %xmm0, %ecx
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%si
-	vmovd	%eax, %xmm1
-	vpinsrw	$1, %ecx, %xmm1, %xmm1
-	vpextrw	$2, %xmm0, %ecx
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$2, %eax, %xmm1, %xmm1
-	vpextrw	$3, %xmm0, %ecx
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$3, %eax, %xmm1, %xmm1
-	vpextrw	$4, %xmm0, %ecx
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$4, %eax, %xmm1, %xmm1
-	vpextrw	$5, %xmm0, %ecx
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$5, %eax, %xmm1, %xmm1
-	vpextrw	$6, %xmm0, %ecx
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$6, %eax, %xmm1, %xmm1
-	vpextrw	$7, %xmm0, %ecx
-	movw	$256, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vpmovzxwd	%xmm0, %ymm0
+	vcvtdq2ps	%ymm0, %ymm0
+	vbroadcastss	.LCPI0_0(%rip), %ymm1
+	vdivps	%ymm0, %ymm1, %ymm0
+	vcvttps2dq	%ymm0, %ymm0
 	retq
 
+.LCPI1_0:
+	.long	0x47000000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	vpextrw	$1, %xmm0, %ecx
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%si
-	vmovd	%eax, %xmm1
-	vpinsrw	$1, %ecx, %xmm1, %xmm1
-	vpextrw	$2, %xmm0, %ecx
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$2, %eax, %xmm1, %xmm1
-	vpextrw	$3, %xmm0, %ecx
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$3, %eax, %xmm1, %xmm1
-	vpextrw	$4, %xmm0, %ecx
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$4, %eax, %xmm1, %xmm1
-	vpextrw	$5, %xmm0, %ecx
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$5, %eax, %xmm1, %xmm1
-	vpextrw	$6, %xmm0, %ecx
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$6, %eax, %xmm1, %xmm1
-	vpextrw	$7, %xmm0, %ecx
-	movw	$-32768, %ax
-	xorl	%edx, %edx
-	divw	%cx
-	vpinsrw	$7, %eax, %xmm1, %xmm0
 	vpmovzxwd	%xmm0, %ymm0
+	vcvtdq2ps	%ymm0, %ymm0
+	vbroadcastss	.LCPI1_0(%rip), %ymm1
+	vdivps	%ymm0, %ymm1, %ymm0
+	vcvttps2dq	%ymm0, %ymm0
 	retq
 

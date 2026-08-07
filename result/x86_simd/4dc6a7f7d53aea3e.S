@@ -5,7 +5,6 @@ func0000000000000002:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpmovzxdq	%xmm2, %ymm2
-	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovzxdq	%xmm1, %ymm0
 	vpsubq	%ymm2, %ymm3, %ymm0 {%k1}
 	retq

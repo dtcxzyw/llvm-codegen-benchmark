@@ -163,8 +163,7 @@ func000000000000014a:
 	vpcmpeqd	%xmm4, %xmm4, %xmm4
 	vpcmpgtd	%xmm4, %xmm2, %k1
 	vpcmpgtd	%xmm1, %xmm3, %k1 {%k1}
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtq	%ymm1, %ymm0, %k0 {%k1}
+	vpcmpgtq	%ymm3, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

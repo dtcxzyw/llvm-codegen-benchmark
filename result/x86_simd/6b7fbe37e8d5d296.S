@@ -1,51 +1,12 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000a21:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0
@@ -55,51 +16,12 @@ func0000000000000a21:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000a01:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0
@@ -109,51 +31,12 @@ func0000000000000a01:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000a0a:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -164,51 +47,12 @@ func0000000000000a0a:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000a2a:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -219,51 +63,12 @@ func0000000000000a2a:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000c0a:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -276,51 +81,12 @@ func0000000000000c0a:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000161:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
@@ -332,51 +98,12 @@ func0000000000000161:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000c21:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
@@ -387,51 +114,12 @@ func0000000000000c21:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000c2a:
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrd	$1, %xmm3, %eax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrd	$1, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm3, %eax
-	vmovd	%xmm4, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm5
-	vpinsrd	$1, %ecx, %xmm5, %xmm5
-	vpextrd	$2, %xmm3, %eax
-	vpextrd	$2, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm5, %xmm5
-	vpextrd	$3, %xmm3, %eax
-	vpextrd	$3, %xmm4, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm5, %xmm3
-	vpextrd	$1, %xmm1, %eax
-	vpextrd	$1, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm1, %eax
-	vmovd	%xmm2, %esi
-	cltd
-	idivl	%esi
-	vmovd	%edx, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm1, %eax
-	vpextrd	$2, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %edx, %xmm4, %xmm4
-	vpextrd	$3, %xmm1, %eax
-	vpextrd	$3, %xmm2, %ecx
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %edx, %xmm4, %xmm1
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
+	vcvtdq2pd	%ymm2, %zmm3
+	vcvtdq2pd	%ymm1, %zmm4
+	vdivpd	%zmm3, %zmm4, %zmm3
+	vcvttpd2dq	%zmm3, %ymm3
+	vpmulld	%ymm2, %ymm3, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

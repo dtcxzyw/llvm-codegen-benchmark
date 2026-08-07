@@ -22,11 +22,11 @@
 func0000000000000081:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2 {%k1} {z}
-	vpxor	%xmm3, %xmm3, %xmm3
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3 {%k1} {z}
 	vpcmpneqb	.LCPI0_1(%rip), %xmm1, %k1
-	vmovdqa32	%ymm2, %ymm1 {%k1} {z}
-	vpsubd	%ymm0, %ymm3, %ymm0
+	vmovdqa32	%ymm3, %ymm1 {%k1} {z}
+	vpsubd	%ymm0, %ymm2, %ymm0
 	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

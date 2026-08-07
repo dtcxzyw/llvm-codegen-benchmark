@@ -30,10 +30,10 @@ func0000000000000b0c:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000006046:
 	vpcmpneqq	.LCPI2_0(%rip){1to4}, %ymm2, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmq	%ymm1, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
 	korw	%k0, %k1, %k1
-	vpcmpgtq	%ymm0, %ymm1, %k0 {%k1}
+	vpcmpgtq	%ymm0, %ymm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

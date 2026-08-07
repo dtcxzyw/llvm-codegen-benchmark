@@ -4,27 +4,12 @@ func0000000000000108:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm2
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpextrd	$1, %xmm2, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm2, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm2, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm1
+	vcvtudq2pd	%xmm2, %ymm3
+	vcvtudq2pd	%xmm1, %ymm4
+	vdivpd	%ymm3, %ymm4, %ymm3
+	vcvttpd2udq	%ymm3, %xmm3
+	vpmulld	%xmm2, %xmm3, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpnleud	%xmm0, %xmm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -36,27 +21,12 @@ func0000000000000008:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm2
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpextrd	$1, %xmm2, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm2, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm2, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm1
+	vcvtudq2pd	%xmm2, %ymm3
+	vcvtudq2pd	%xmm1, %ymm4
+	vdivpd	%ymm3, %ymm4, %ymm3
+	vcvttpd2udq	%ymm3, %xmm3
+	vpmulld	%xmm2, %xmm3, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpnleud	%xmm0, %xmm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -68,27 +38,12 @@ func0000000000000118:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm2
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpextrd	$1, %xmm2, %ecx
-	vpextrd	$1, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%edx, %ecx
-	vmovd	%xmm2, %esi
-	vmovd	%xmm1, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%edx, %xmm3
-	vpinsrd	$1, %ecx, %xmm3, %xmm3
-	vpextrd	$2, %xmm2, %ecx
-	vpextrd	$2, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %edx, %xmm3, %xmm3
-	vpextrd	$3, %xmm2, %ecx
-	vpextrd	$3, %xmm1, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %edx, %xmm3, %xmm1
+	vcvtudq2pd	%xmm2, %ymm3
+	vcvtudq2pd	%xmm1, %ymm4
+	vdivpd	%ymm3, %ymm4, %ymm3
+	vcvttpd2udq	%ymm3, %xmm3
+	vpmulld	%xmm2, %xmm3, %xmm2
+	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpcmpnleud	%xmm0, %xmm1, %k0
 	vpmovm2d	%k0, %xmm0

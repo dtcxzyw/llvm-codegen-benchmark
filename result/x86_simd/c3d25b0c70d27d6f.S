@@ -47,8 +47,8 @@ func0000000000000007:
 func0000000000000001:
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
-	vpslld	$2, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
+	vpslld	$2, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
@@ -75,8 +75,8 @@ func0000000000000001:
 func0000000000000005:
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0
-	vpslld	$6, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
+	vpslld	$6, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

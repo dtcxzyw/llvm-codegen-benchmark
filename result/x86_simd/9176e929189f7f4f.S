@@ -1,28 +1,13 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x41c0000000000000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpmovqd	%ymm0, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	movl	$536870912, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %esi
-	movl	$536870912, %eax
-	xorl	%edx, %edx
-	idivl	%esi
-	vmovd	%eax, %xmm0
-	vpinsrd	$1, %ecx, %xmm0, %xmm0
-	vpextrd	$2, %xmm1, %ecx
-	movl	$536870912, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm0, %xmm0
-	vpextrd	$3, %xmm1, %ecx
-	movl	$536870912, %eax
-	xorl	%edx, %edx
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm0, %xmm0
+	vpmovqd	%ymm0, %xmm0
+	vcvtdq2pd	%xmm0, %ymm0
+	vbroadcastsd	.LCPI0_0(%rip), %ymm1
+	vdivpd	%ymm0, %ymm1, %ymm0
+	vcvttpd2dq	%ymm0, %xmm0
 	vzeroupper
 	retq
 

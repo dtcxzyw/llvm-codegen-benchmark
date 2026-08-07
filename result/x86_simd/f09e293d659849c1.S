@@ -77,7 +77,6 @@ func0000000000000294:
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtd	%xmm0, %xmm2, %k1
 	korw	%k1, %k0, %k0
-	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtq	%ymm0, %ymm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0

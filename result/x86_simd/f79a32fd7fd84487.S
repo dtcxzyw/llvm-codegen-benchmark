@@ -27,8 +27,7 @@ func0000000000000146:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtq	%ymm3, %ymm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vpcmpgtd	%xmm1, %xmm3, %xmm0
 	vzeroupper
 	retq
 

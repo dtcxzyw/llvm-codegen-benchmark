@@ -35,11 +35,11 @@ func0000000000000a06:
 	.long	2
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000621:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm2 {%k1} {z}
-	vpsubd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm0, %ymm2, %k0
+	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k1} {z}
+	vpsubd	%ymm0, %ymm2, %ymm0
+	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -61,11 +61,11 @@ func0000000000000081:
 	.long	2
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000601:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpbroadcastd	.LCPI4_0(%rip), %ymm2 {%k1} {z}
-	vpsubd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm0, %ymm2, %k0
+	vpbroadcastd	.LCPI4_0(%rip), %ymm1 {%k1} {z}
+	vpsubd	%ymm0, %ymm2, %ymm0
+	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -153,12 +153,12 @@ func0000000000000306:
 	.long	4294967264
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000008a:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmd	%ymm1, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpbroadcastd	.LCPI10_0(%rip), %ymm2
-	vpbroadcastd	.LCPI10_1(%rip), %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpbroadcastd	.LCPI10_0(%rip), %ymm1
+	vpbroadcastd	.LCPI10_1(%rip), %ymm1 {%k1}
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

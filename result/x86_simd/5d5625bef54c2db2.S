@@ -16,17 +16,16 @@ func000000000000010a:
 	vpsrlq	$32, %ymm2, %ymm3
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendd	$170, %ymm4, %ymm2, %ymm2
-	vpbroadcastq	.LCPI0_1(%rip), %ymm4
-	vpmuludq	%ymm4, %ymm0, %ymm0
+	vpbroadcastq	.LCPI0_1(%rip), %ymm5
+	vpmuludq	%ymm5, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpsrlq	$32, %ymm0, %ymm0
-	vpmuludq	%ymm4, %ymm1, %ymm1
+	vpmuludq	%ymm5, %ymm1, %ymm1
 	vpaddq	%ymm3, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %xmm0
+	vpcmpgtd	%xmm4, %xmm0, %xmm0
 	vzeroupper
 	retq
 

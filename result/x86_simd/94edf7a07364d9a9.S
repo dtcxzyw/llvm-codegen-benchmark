@@ -38,8 +38,8 @@ func000000000000001b:
 	.quad	-8
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000001a:
-	vpsrlq	$1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
+	vpsrlq	$1, %ymm0, %ymm0
 	vpblendd	$170, %ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpandq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0

@@ -227,8 +227,8 @@ func000000000000002c:
 func0000000000000186:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
-	vptestmd	%ymm2, %ymm2, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
+	vptestmd	%ymm2, %ymm2, %k1
 	korb	%k1, %k0, %k1
 	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

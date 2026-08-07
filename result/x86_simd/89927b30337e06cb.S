@@ -1,51 +1,35 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x41dfffffff400000
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000004a:
-	vpmovqd	%ymm1, %xmm2
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm1
-	vpinsrd	$1, %ecx, %xmm1, %xmm1
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm1, %xmm1
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm1, %xmm1
+	vcvtuqq2pd	%ymm1, %ymm1
+	vbroadcastsd	.LCPI0_0(%rip), %ymm2
+	vdivpd	%ymm1, %ymm2, %ymm1
+	vcvttpd2udq	%ymm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rcx
-	vextracti128	$1, %ymm0, %xmm3
-	vpextrq	$1, %xmm3, %rax
+	vextracti128	$1, %ymm0, %xmm2
+	vpextrq	$1, %xmm2, %rax
+	vextracti128	$1, %ymm1, %xmm3
+	vpextrq	$1, %xmm3, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm4
-	vmovd	%xmm2, %ecx
-	vmovq	%xmm3, %rax
+	vmovq	%xmm2, %rax
+	vmovd	%xmm3, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm2
 	vpunpcklqdq	%xmm4, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rcx
 	vpextrq	$1, %xmm0, %rax
+	vpextrq	$1, %xmm1, %rcx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm3
-	vmovd	%xmm1, %ecx
 	vmovq	%xmm0, %rax
+	vmovd	%xmm1, %ecx
 	xorl	%edx, %edx
 	divq	%rcx
 	vmovq	%rax, %xmm0

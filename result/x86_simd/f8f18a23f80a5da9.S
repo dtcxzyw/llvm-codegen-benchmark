@@ -2,9 +2,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	vpslld	$4, %ymm2, %ymm2
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestmd	%ymm1, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
+	vpsubd	%ymm2, %ymm3, %ymm0 {%k1}
 	retq
 
 .LCPI1_0:

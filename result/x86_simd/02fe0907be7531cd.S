@@ -1,27 +1,14 @@
 	.att_syntax
+.LCPI0_0:
+	.long	0x41000000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	movb	$8, %al
-	movzbl	%al, %ecx
-	vpextrb	$1, %xmm0, %edx
-	movl	%ecx, %eax
-	divb	%dl
-	movl	%eax, %edx
-	vmovd	%xmm0, %esi
-	movl	%ecx, %eax
-	divb	%sil
-	movl	%eax, %esi
-	vpextrb	$2, %xmm0, %edi
-	movl	%ecx, %eax
-	divb	%dil
-	movl	%eax, %edi
-	vpextrb	$3, %xmm0, %r8d
-	movl	%ecx, %eax
-	divb	%r8b
-	vmovd	%esi, %xmm0
-	vpinsrb	$1, %edx, %xmm0, %xmm0
-	vpinsrb	$2, %edi, %xmm0, %xmm0
-	vpinsrb	$3, %eax, %xmm0, %xmm0
+	vpmovzxbd	%xmm0, %xmm0
+	vcvtdq2ps	%xmm0, %xmm0
+	vbroadcastss	.LCPI0_0(%rip), %xmm1
+	vdivps	%xmm0, %xmm1, %xmm0
+	vcvttps2dq	%xmm0, %xmm0
+	vpmovdb	%xmm0, %xmm0
 	vpmovzxbq	%xmm0, %ymm0
 	retq
 

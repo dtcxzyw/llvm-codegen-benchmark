@@ -32,8 +32,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltd	%xmm3, %xmm1, %k1
+	vpcmpnltd	%xmm2, %xmm1, %k1
 	vpsubq	%ymm0, %ymm2, %ymm0 {%k1}
 	retq
 

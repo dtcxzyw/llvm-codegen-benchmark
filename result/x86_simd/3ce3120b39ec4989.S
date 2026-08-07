@@ -124,8 +124,7 @@ func0000000000000126:
 	vptestnmq	%ymm1, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vpcmpgtd	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
 

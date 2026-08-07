@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmq	%ymm1, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubq	%ymm0, %ymm1, %ymm0 {%k1} {z}
+	vpsubq	%ymm0, %ymm2, %ymm0 {%k1} {z}
 	retq
 
 .LCPI1_0:
@@ -20,8 +20,8 @@ func0000000000000051:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmq	%ymm1, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubq	%ymm0, %ymm1, %ymm0 {%k1} {z}
+	vpsubq	%ymm0, %ymm2, %ymm0 {%k1} {z}
 	retq
 

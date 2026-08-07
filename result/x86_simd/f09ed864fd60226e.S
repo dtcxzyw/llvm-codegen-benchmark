@@ -1,109 +1,72 @@
 	.att_syntax
+.LCPI0_0:
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+.LCPI0_1:
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpmovdb	%ymm1, %xmm1
-	vpextrb	$1, %xmm0, %ecx
-	vpextrb	$1, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %ecx
-	vmovd	%xmm0, %edx
-	vmovd	%xmm1, %eax
-	movzbl	%al, %eax
-	divb	%dl
-	movzbl	%ah, %eax
-	vmovd	%eax, %xmm2
-	vpinsrb	$1, %ecx, %xmm2, %xmm2
-	vpextrb	$2, %xmm0, %ecx
-	vpextrb	$2, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$2, %eax, %xmm2, %xmm2
-	vpextrb	$3, %xmm0, %ecx
-	vpextrb	$3, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$3, %eax, %xmm2, %xmm2
-	vpextrb	$4, %xmm0, %ecx
-	vpextrb	$4, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$4, %eax, %xmm2, %xmm2
-	vpextrb	$5, %xmm0, %ecx
-	vpextrb	$5, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$5, %eax, %xmm2, %xmm2
-	vpextrb	$6, %xmm0, %ecx
-	vpextrb	$6, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$6, %eax, %xmm2, %xmm2
-	vpextrb	$7, %xmm0, %ecx
-	vpextrb	$7, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$7, %eax, %xmm2, %xmm0
+	vpmovdb	%ymm1, %xmm2
+	vpmovzxbd	%xmm0, %ymm3
+	vcvtdq2ps	%ymm3, %ymm3
+	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
+	vcvtdq2ps	%ymm1, %ymm1
+	vdivps	%ymm3, %ymm1, %ymm1
+	vcvttps2dq	%ymm1, %ymm1
+	vpmovdw	%ymm1, %xmm1
+	vpmovzxbw	%xmm0, %xmm0
+	vpmullw	%xmm0, %xmm1, %xmm0
+	vpmovwb	%xmm0, %xmm0
+	vpsubb	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	vpmovdb	%ymm1, %xmm1
-	vpextrb	$1, %xmm0, %ecx
-	vpextrb	$1, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %ecx
-	vmovd	%xmm0, %edx
-	vmovd	%xmm1, %eax
-	movzbl	%al, %eax
-	divb	%dl
-	movzbl	%ah, %eax
-	vmovd	%eax, %xmm2
-	vpinsrb	$1, %ecx, %xmm2, %xmm2
-	vpextrb	$2, %xmm0, %ecx
-	vpextrb	$2, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$2, %eax, %xmm2, %xmm2
-	vpextrb	$3, %xmm0, %ecx
-	vpextrb	$3, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$3, %eax, %xmm2, %xmm2
-	vpextrb	$4, %xmm0, %ecx
-	vpextrb	$4, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$4, %eax, %xmm2, %xmm2
-	vpextrb	$5, %xmm0, %ecx
-	vpextrb	$5, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$5, %eax, %xmm2, %xmm2
-	vpextrb	$6, %xmm0, %ecx
-	vpextrb	$6, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$6, %eax, %xmm2, %xmm2
-	vpextrb	$7, %xmm0, %ecx
-	vpextrb	$7, %xmm1, %eax
-	movzbl	%al, %eax
-	divb	%cl
-	movzbl	%ah, %eax
-	vpinsrb	$7, %eax, %xmm2, %xmm0
+	vpmovdb	%ymm1, %xmm2
+	vcvtudq2ps	%ymm1, %ymm1
+	vpmovzxbd	%xmm0, %ymm3
+	vcvtdq2ps	%ymm3, %ymm3
+	vdivps	%ymm3, %ymm1, %ymm1
+	vcvttps2dq	%ymm1, %ymm1
+	vpmovdw	%ymm1, %xmm1
+	vpmovzxbw	%xmm0, %xmm0
+	vpmullw	%xmm0, %xmm1, %xmm0
+	vpmovwb	%xmm0, %xmm0
+	vpsubb	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
 

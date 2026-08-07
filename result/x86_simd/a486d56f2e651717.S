@@ -5,11 +5,11 @@
 	.long	31
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000056a:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
-	vpcmpgtd	%ymm2, %ymm0, %k0
+	vpcmpgtd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -20,11 +20,11 @@ func000000000000056a:
 	.long	31
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000054a:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
-	vpcmpgtd	%ymm2, %ymm0, %k0
+	vpcmpgtd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -22,7 +22,6 @@ func0000000000000018:
 func000000000000001a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendd	$170, %ymm3, %ymm2, %ymm2
-	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm1, %k1
 	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
 	retq

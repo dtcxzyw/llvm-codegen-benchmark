@@ -617,8 +617,7 @@ func0000000000000034:
 	.prefalign	4, .Lfunc_end29, nop
 func000000000000014a:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm0, %k1
+	vpcmpgtb	%xmm2, %xmm0, %k1
 	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

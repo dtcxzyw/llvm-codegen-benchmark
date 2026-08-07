@@ -24,9 +24,8 @@ func0000000000000012:
 	vpmovw2m	%xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k1}
-	vpxor	%xmm2, %xmm2, %xmm2
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpltpd	%zmm3, %zmm0, %k1
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vcmpltpd	%zmm2, %zmm0, %k1
 	vpsubd	%ymm1, %ymm2, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

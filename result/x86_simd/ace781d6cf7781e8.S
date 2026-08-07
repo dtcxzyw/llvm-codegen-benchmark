@@ -1,50 +1,12 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x41dfffffffc00000
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000cb:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI0_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpcmpnltd	%ymm2, %ymm0, %k0
 	vpmovd2m	%ymm1, %k1
 	korb	%k1, %k0, %k0
@@ -53,110 +15,34 @@ func00000000000000cb:
 	retq
 
 .LCPI1_0:
+	.quad	0x41dfffffffc00000
+.LCPI1_1:
 	.long	536870911
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000010a:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI1_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm0, %k0
-	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
+	vpcmpnleud	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI2_0:
+	.quad	0x41dfffffffc00000
+.LCPI2_1:
 	.long	536870911
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000318:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI2_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpcmpnleud	%ymm2, %ymm0, %k0
-	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
+	vpcmpnleud	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

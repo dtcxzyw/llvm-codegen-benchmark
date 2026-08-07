@@ -11,24 +11,24 @@ func000000000000001f:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000001d:
-	vpsllq	$4, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpsllq	$4, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
-	vpsllq	$32, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpsllq	$32, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
-	vpsllq	$32, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpsllq	$32, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
@@ -55,8 +55,8 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
-	vpsllq	$32, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpsllq	$32, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpsubq	%ymm0, %ymm2, %ymm0
 	retq

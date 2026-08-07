@@ -1,42 +1,27 @@
 	.att_syntax
 .LCPI0_0:
-	.quad	5
+	.quad	0x41dfffffff400000
 .LCPI0_1:
+	.quad	5
+.LCPI0_2:
 	.quad	2
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
-	vpextrd	$1, %xmm1, %ecx
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	movl	$2147483645, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm1
+	vcvtudq2pd	%xmm1, %ymm1
+	vbroadcastsd	.LCPI0_0(%rip), %ymm2
+	vdivpd	%ymm1, %ymm2, %ymm1
+	vcvttpd2udq	%ymm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
+	vxorpd	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm0, %ymm3
 	vpsllq	$2, %ymm3, %ymm4
 	vpaddq	%ymm3, %ymm4, %ymm4
 	vpsrlq	$32, %ymm4, %ymm4
 	vpsrlq	$32, %ymm0, %ymm5
-	vpmadd52luq	.LCPI0_0(%rip){1to4}, %ymm5, %ymm4
+	vpmadd52luq	.LCPI0_1(%rip){1to4}, %ymm5, %ymm4
 	vpsrlq	$32, %ymm4, %ymm6
 	vpblendd	$170, %ymm2, %ymm4, %ymm2
-	vpbroadcastq	.LCPI0_1(%rip), %ymm4
+	vpbroadcastq	.LCPI0_2(%rip), %ymm4
 	vpmadd52luq	%ymm4, %ymm3, %ymm2
 	vpsrlq	$32, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm6, %ymm2

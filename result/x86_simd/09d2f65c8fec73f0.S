@@ -271,8 +271,7 @@ func0000000000000026:
 	.prefalign	4, .Lfunc_end26, nop
 func000000000000014a:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtq	%ymm3, %ymm0, %k1
+	vpcmpgtq	%ymm2, %ymm0, %k1
 	vpcmpgtd	%xmm2, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

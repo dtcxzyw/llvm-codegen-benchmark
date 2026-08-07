@@ -159,11 +159,11 @@ func000000000000630c:
 
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000b14:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmd	%ymm2, %ymm2, %k0
-	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k0
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpcmpgtd	%ymm3, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

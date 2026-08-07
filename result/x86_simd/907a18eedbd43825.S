@@ -86,8 +86,7 @@ func000000000000018c:
 func000000000000014a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpcmpgtq	%ymm2, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

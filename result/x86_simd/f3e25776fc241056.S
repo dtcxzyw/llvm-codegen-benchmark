@@ -5,11 +5,10 @@ func000000000000004a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
 	vpsrlq	$1, %ymm1, %ymm0
-	vmovdqa	%ymm0, %ymm2
-	vpternlogq	$15, %ymm0, %ymm0, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm0 {%k1}
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vmovdqa	%ymm0, %ymm3
+	vpternlogq	$15, %ymm0, %ymm0, %ymm3
+	vpaddq	%ymm3, %ymm1, %ymm0 {%k1}
+	vpcmpgtq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

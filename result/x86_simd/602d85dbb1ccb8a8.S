@@ -2,81 +2,30 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
+	vcvtdq2pd	%xmm1, %ymm1
+	vcvtdq2pd	%xmm0, %ymm0
+	vdivpd	%ymm1, %ymm0, %ymm0
+	vcvttpd2dq	%ymm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
+	vcvtdq2pd	%xmm1, %ymm1
+	vcvtdq2pd	%xmm0, %ymm0
+	vdivpd	%ymm1, %ymm0, %ymm0
+	vcvttpd2dq	%ymm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpextrd	$1, %xmm1, %ecx
-	vpextrd	$1, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm1, %esi
-	vmovd	%xmm0, %eax
-	cltd
-	idivl	%esi
-	vmovd	%eax, %xmm2
-	vpinsrd	$1, %ecx, %xmm2, %xmm2
-	vpextrd	$2, %xmm1, %ecx
-	vpextrd	$2, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$2, %eax, %xmm2, %xmm2
-	vpextrd	$3, %xmm1, %ecx
-	vpextrd	$3, %xmm0, %eax
-	cltd
-	idivl	%ecx
-	vpinsrd	$3, %eax, %xmm2, %xmm0
+	vcvtdq2pd	%xmm1, %ymm1
+	vcvtdq2pd	%xmm0, %ymm0
+	vdivpd	%ymm1, %ymm0, %ymm0
+	vcvttpd2dq	%ymm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 

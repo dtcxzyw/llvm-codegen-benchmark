@@ -28,9 +28,9 @@ func0000000000000003:
 	.long	3221225472
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
+	vpxor	%xmm1, %xmm1, %xmm1
 	vpslld	$29, %ymm0, %ymm0
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

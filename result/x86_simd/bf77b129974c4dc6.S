@@ -441,10 +441,10 @@ func000000000000048a:
 
 	.prefalign	4, .Lfunc_end33, nop
 func000000000000302a:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestmd	%ymm2, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmd	%ymm1, %ymm1, %k1 {%k1}
-	vpcmpgtd	%ymm2, %ymm0, %k0 {%k1}
+	vpcmpgtd	%ymm3, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

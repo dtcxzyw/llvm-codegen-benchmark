@@ -22,12 +22,12 @@ func0000000000000081:
 	.long	4294967264
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpbroadcastd	.LCPI1_1(%rip), %ymm2
-	vpbroadcastd	.LCPI1_2(%rip), %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpbroadcastd	.LCPI1_1(%rip), %ymm1
+	vpbroadcastd	.LCPI1_2(%rip), %ymm1 {%k1}
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

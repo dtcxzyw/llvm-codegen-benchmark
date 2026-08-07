@@ -224,7 +224,6 @@ func000000000000014a:
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtd	%xmm0, %xmm2, %k1 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

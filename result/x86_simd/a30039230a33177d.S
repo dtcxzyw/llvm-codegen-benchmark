@@ -35,8 +35,7 @@ func000000000000000a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtq	%ymm3, %ymm2, %k0
+	vpcmpgtq	%ymm0, %ymm2, %k0
 	vpcmpgtd	%xmm1, %xmm0, %k2 {%k1}
 	kandnw	%k0, %k1, %k0
 	korw	%k0, %k2, %k0

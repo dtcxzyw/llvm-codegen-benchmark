@@ -1,85 +1,32 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
-	vpmovqd	%ymm2, %xmm3
 	vpmulld	%xmm1, %xmm0, %xmm0
-	vpextrd	$1, %xmm0, %eax
-	vpextrd	$1, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %eax
-	vmovd	%xmm2, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm1
-	vpinsrd	$1, %ecx, %xmm1, %xmm1
-	vpextrd	$2, %xmm0, %eax
-	vpextrd	$2, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm1, %xmm1
-	vpextrd	$3, %xmm0, %eax
-	vpextrd	$3, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm1, %xmm0
+	vcvtudq2pd	%xmm0, %ymm0
+	vcvtuqq2pd	%ymm2, %ymm1
+	vdivpd	%ymm1, %ymm0, %ymm0
+	vcvttpd2udq	%ymm0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	vpmovqd	%ymm2, %xmm3
+	vpmovqd	%ymm2, %xmm2
 	vpmulld	%xmm1, %xmm0, %xmm0
-	vpextrd	$1, %xmm0, %eax
-	vpextrd	$1, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %eax
-	vmovd	%xmm2, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm1
-	vpinsrd	$1, %ecx, %xmm1, %xmm1
-	vpextrd	$2, %xmm0, %eax
-	vpextrd	$2, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm1, %xmm1
-	vpextrd	$3, %xmm0, %eax
-	vpextrd	$3, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm1, %xmm0
+	vcvtudq2pd	%xmm0, %ymm0
+	vcvtudq2pd	%xmm2, %ymm1
+	vdivpd	%ymm1, %ymm0, %ymm0
+	vcvttpd2udq	%ymm0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000001e:
-	vpmovqd	%ymm2, %xmm3
 	vpmulld	%xmm1, %xmm0, %xmm0
-	vpextrd	$1, %xmm0, %eax
-	vpextrd	$1, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm0, %eax
-	vmovd	%xmm2, %esi
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm1
-	vpinsrd	$1, %ecx, %xmm1, %xmm1
-	vpextrd	$2, %xmm0, %eax
-	vpextrd	$2, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm1, %xmm1
-	vpextrd	$3, %xmm0, %eax
-	vpextrd	$3, %xmm3, %ecx
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm1, %xmm0
+	vcvtudq2pd	%xmm0, %ymm0
+	vcvtuqq2pd	%ymm2, %ymm1
+	vdivpd	%ymm1, %ymm0, %ymm0
+	vcvttpd2udq	%ymm0, %xmm0
 	vzeroupper
 	retq
 

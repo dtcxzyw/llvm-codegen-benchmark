@@ -1,258 +1,68 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x41dfffffffc00000
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000002a:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI0_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI1_0:
+	.quad	0x41dfffffffc00000
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI1_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI2_0:
+	.quad	0x41dfffffffc00000
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000006a:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI2_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI3_0:
+	.quad	0x41dfffffffc00000
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000078:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI3_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI4_0:
+	.quad	0x41dfffffffc00000
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrd	$1, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm3, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm3, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm3
-	vpextrd	$1, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	movl	%eax, %ecx
-	vmovd	%xmm2, %esi
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	vmovd	%eax, %xmm4
-	vpinsrd	$1, %ecx, %xmm4, %xmm4
-	vpextrd	$2, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$2, %eax, %xmm4, %xmm4
-	vpextrd	$3, %xmm2, %ecx
-	movl	$2147483647, %eax
-	xorl	%edx, %edx
-	divl	%ecx
-	vpinsrd	$3, %eax, %xmm4, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
+	vcvtudq2pd	%ymm2, %zmm2
+	vbroadcastsd	.LCPI4_0(%rip), %zmm3
+	vdivpd	%zmm2, %zmm3, %zmm2
+	vcvttpd2udq	%zmm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

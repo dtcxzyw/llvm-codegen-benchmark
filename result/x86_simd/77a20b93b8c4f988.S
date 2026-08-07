@@ -6,8 +6,7 @@ func0000000000000002:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpblendw	$136, %ymm0, %ymm2, %ymm0
+	vpblendw	$136, %ymm3, %ymm2, %ymm0
 	vpor	%ymm1, %ymm0, %ymm0
 	vporq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq

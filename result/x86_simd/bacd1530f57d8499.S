@@ -83,8 +83,8 @@ func0000000000000038:
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
-	vptestmd	%ymm1, %ymm1, %k1
 	vpxor	%xmm3, %xmm3, %xmm3
+	vptestmd	%ymm1, %ymm1, %k1
 	vmovdqa32	%ymm2, %ymm2 {%k1} {z}
 	vpcmpgtd	%ymm3, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm2 {%k1}

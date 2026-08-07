@@ -29,9 +29,8 @@ func0000000000000006:
 	vpsrlq	$32, %ymm5, %ymm5
 	vpaddq	%ymm5, %ymm6, %ymm5
 	vpsraq	$32, %ymm5, %ymm6
-	vpxor	%xmm7, %xmm7, %xmm7
-	vpblendd	$170, %ymm7, %ymm5, %ymm5
-	vpblendd	$170, %ymm7, %ymm2, %ymm7
+	vpblendd	$170, %ymm3, %ymm5, %ymm5
+	vpblendd	$170, %ymm3, %ymm2, %ymm7
 	vpbroadcastq	.LCPI1_1(%rip), %ymm8
 	vpmullq	%ymm8, %ymm7, %ymm7
 	vpaddq	%ymm5, %ymm7, %ymm5

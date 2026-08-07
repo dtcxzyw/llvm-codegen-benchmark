@@ -19,8 +19,8 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
-	vptestmq	%ymm1, %ymm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vptestmq	%ymm1, %ymm1, %k1
 	vpminsq	%ymm1, %ymm0, %ymm0 {%k1}
 	vpcmpgtq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

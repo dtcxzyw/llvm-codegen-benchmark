@@ -38,8 +38,8 @@ func0000000000000526:
 	.long	2
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000036a:
-	vpmovd2m	%ymm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpmovd2m	%ymm1, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	vpcmpgtd	%ymm2, %ymm0, %k1
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0 {%k1}

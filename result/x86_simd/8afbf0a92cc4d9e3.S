@@ -62,8 +62,8 @@ func0000000000002042:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000b14:
-	vptestnmd	%ymm0, %ymm0, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vptestnmd	%ymm0, %ymm0, %k1
 	vptestmd	%ymm1, %ymm1, %k0 {%k1}
 	vpcmpgtd	%ymm2, %ymm0, %k1
 	korb	%k0, %k1, %k0

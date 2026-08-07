@@ -108,7 +108,6 @@ func0000000000000502:
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtd	%xmm0, %xmm2, %k1
 	korw	%k1, %k0, %k0
-	vpxor	%xmm0, %xmm0, %xmm0
 	vpblendd	$170, %ymm1, %ymm0, %ymm0
 	vpcmpeqq	.LCPI6_0(%rip){1to4}, %ymm0, %k1
 	korw	%k0, %k1, %k0

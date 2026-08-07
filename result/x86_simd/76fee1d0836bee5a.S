@@ -75,8 +75,7 @@ func0000000000000141:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %k1
 	vmovdqu16	%xmm0, %xmm1 {%k1}
-	vpxor	%xmm0, %xmm0, %xmm0
-	vpcmpeqw	%xmm0, %xmm1, %xmm0
+	vpcmpeqw	%xmm3, %xmm1, %xmm0
 	vzeroupper
 	retq
 

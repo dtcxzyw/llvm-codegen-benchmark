@@ -26,8 +26,8 @@ func00000000000001a8:
 	.quad	1152921504606846975
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a8:
-	vpsrlq	$5, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
+	vpsrlq	$5, %ymm1, %ymm1
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
 	vpsrlq	$32, %ymm0, %ymm0
 	vpmuldq	%ymm1, %ymm0, %ymm0

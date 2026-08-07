@@ -52,8 +52,7 @@ func0000000000000184:
 func0000000000000141:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpcmpgtq	%ymm4, %ymm2, %k1
+	vpcmpgtq	%ymm3, %ymm2, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k1 {%k1}
 	vpcmpeqd	.LCPI4_0(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
@@ -116,8 +115,7 @@ func000000000000014c:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtq	%ymm3, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%xmm0, %xmm2, %k1 {%k1}
+	vpcmpgtd	%xmm0, %xmm3, %k1 {%k1}
 	vptestmd	%xmm1, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

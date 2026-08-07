@@ -5,8 +5,7 @@
 func0000000000000188:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpblendw	$17, %ymm2, %ymm4, %ymm2
+	vpblendw	$17, %ymm2, %ymm3, %ymm2
 	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vptestmq	%ymm2, %ymm2, %k1 {%k1}
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
