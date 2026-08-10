@@ -14,33 +14,17 @@ func0000000000000000:
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
-.LCPI1_0:
-	.short	5
-	.short	5
-	.short	5
-	.short	5
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0
+	vpsllw	$2, %xmm0, %xmm1
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 
-.LCPI2_0:
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
-	vpmullw	.LCPI2_0(%rip), %xmm0, %xmm0
+	vpsllw	$8, %xmm0, %xmm1
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0
 	retq
 

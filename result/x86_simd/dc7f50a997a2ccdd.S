@@ -9,22 +9,14 @@
 	.zero	2
 	.zero	2
 .LCPI0_1:
-	.short	255
-	.short	255
-	.short	255
-	.short	255
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-.LCPI0_2:
 	.short	31
 	.short	31
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpmovqw	%ymm0, %xmm0
-	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
-	vpmullw	.LCPI0_1(%rip), %xmm0, %xmm0
+	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
+	vpsllw	$8, %xmm0, %xmm1
+	vpsubw	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -48,8 +40,9 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpmovqw	%ymm0, %xmm0
-	vpand	.LCPI1_0(%rip), %xmm0, %xmm0
-	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0
+	vpand	.LCPI1_0(%rip), %xmm0, %xmm1
+	vpsllw	$8, %xmm0, %xmm0
+	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

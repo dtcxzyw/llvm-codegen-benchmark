@@ -1,120 +1,172 @@
 	.att_syntax
 .LCPI0_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_1:
-	.short	1
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	vpmovqb	%ymm0, %xmm0
-	vpmovzxbw	%xmm0, %ymm0
-	vpbroadcastw	.LCPI0_1(%rip), %ymm1
-	vpsllvw	%ymm0, %ymm1, %ymm0
-	vpmovwb	%ymm0, %xmm0
+	vmovq	.LCPI0_1(%rip), %xmm1
+	vpshufb	%xmm0, %xmm1, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI1_0:
-	.short	255
-	.short	255
-	.short	255
-	.short	255
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
+	.byte	255
+	.byte	254
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI1_1:
-	.short	255
+	.byte	255
+	.byte	254
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
 	vpmovqb	%ymm0, %xmm0
-	vpmovzxbw	%xmm0, %ymm0
-	vpbroadcastw	.LCPI1_1(%rip), %ymm1
-	vpsllvw	%ymm0, %ymm1, %ymm0
-	vpmovwb	%ymm0, %xmm0
+	vmovq	.LCPI1_1(%rip), %xmm1
+	vpshufb	%xmm0, %xmm1, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI2_0:
-	.short	255
-	.short	255
-	.short	255
-	.short	255
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
+	.byte	255
+	.byte	254
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI2_1:
-	.short	255
+	.byte	255
+	.byte	254
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vpmovqb	%ymm0, %xmm0
-	vpmovzxbw	%xmm0, %ymm0
-	vpbroadcastw	.LCPI2_1(%rip), %ymm1
-	vpsllvw	%ymm0, %ymm1, %ymm0
-	vpmovwb	%ymm0, %xmm0
+	vmovq	.LCPI2_1(%rip), %xmm1
+	vpshufb	%xmm0, %xmm1, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI3_0:
-	.short	63
-	.short	63
-	.short	63
-	.short	63
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
+	.byte	63
+	.byte	126
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI3_1:
-	.short	63
+	.byte	63
+	.byte	126
+	.byte	252
+	.byte	248
+	.byte	240
+	.byte	224
+	.byte	192
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpmovqb	%ymm0, %xmm0
-	vpmovzxbw	%xmm0, %ymm0
-	vpbroadcastw	.LCPI3_1(%rip), %ymm1
-	vpsllvw	%ymm0, %ymm1, %ymm0
-	vpmovwb	%ymm0, %xmm0
+	vmovq	.LCPI3_1(%rip), %xmm1
+	vpshufb	%xmm0, %xmm1, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq

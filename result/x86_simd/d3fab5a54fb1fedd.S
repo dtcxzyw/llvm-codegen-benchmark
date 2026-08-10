@@ -17,32 +17,45 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.short	207
-	.short	207
-	.short	207
-	.short	207
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
+	.byte	207
+	.byte	103
+	.byte	51
+	.byte	25
+	.byte	12
+	.byte	6
+	.byte	3
+	.byte	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_2:
-	.short	207
+	.byte	207
+	.byte	103
+	.byte	51
+	.byte	25
+	.byte	12
+	.byte	6
+	.byte	3
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
 	vpmovqb	%ymm0, %xmm0
 	vpaddb	.LCPI0_0(%rip), %xmm0, %xmm0
-	vpmovzxbw	%xmm0, %ymm0
-	vpbroadcastw	.LCPI0_2(%rip), %ymm1
-	vpsrlvw	%ymm0, %ymm1, %ymm0
-	vpmovwb	%ymm0, %xmm0
+	vmovq	.LCPI0_2(%rip), %xmm1
+	vpshufb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

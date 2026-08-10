@@ -15,19 +15,11 @@ func000000000000000a:
 	vzeroupper
 	retq
 
-.LCPI1_0:
-	.short	257
-	.short	257
-	.short	257
-	.short	257
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovqw	%ymm0, %xmm0
-	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0
+	vpsllw	$8, %xmm0, %xmm1
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -63,19 +55,11 @@ func000000000000000b:
 	vzeroupper
 	retq
 
-.LCPI4_0:
-	.short	3
-	.short	3
-	.short	3
-	.short	3
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000f:
 	vpmovqw	%ymm0, %xmm0
-	vpmullw	.LCPI4_0(%rip), %xmm0, %xmm0
+	vpaddw	%xmm0, %xmm0, %xmm1
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

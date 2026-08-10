@@ -8,15 +8,6 @@
 	.zero	2
 	.zero	2
 	.zero	2
-.LCPI0_1:
-	.short	7
-	.short	7
-	.short	7
-	.short	7
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	vpslld	$31, %xmm0, %xmm0
@@ -27,8 +18,9 @@ func000000000000001f:
 	vpsrlw	$1, %xmm2, %xmm2
 	vpaddw	%xmm1, %xmm2, %xmm1
 	vpsrlw	$2, %xmm1, %xmm1
-	vpmullw	.LCPI0_1(%rip), %xmm1, %xmm1
-	vpsubw	%xmm1, %xmm0, %xmm0
+	vpsllw	$3, %xmm1, %xmm2
+	vpsubw	%xmm2, %xmm1, %xmm1
+	vpaddw	%xmm1, %xmm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0 {%k1} {z}
