@@ -3,9 +3,9 @@ func0000000000000024:
 	bnez	a0, .LBB0_2
 	mv	a1, a2
 .LBB0_2:
-	addi	a0, a1, -71
-	zext.b	a0, a0
-	sltiu	a0, a0, 250
+	zext.b	a0, a1
+	addi	a0, a0, -71
+	sltiu	a0, a0, -6
 	ret
 
 func0000000000000004:
@@ -23,9 +23,9 @@ func0000000000000034:
 	bnez	a0, .LBB2_2
 	mv	a1, a2
 .LBB2_2:
-	addi	a1, a1, -3
 	zext.b	a0, a1
-	sltiu	a0, a0, 254
+	addi	a0, a0, -3
+	sltiu	a0, a0, -2
 	ret
 
 func0000000000000001:

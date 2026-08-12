@@ -3,9 +3,9 @@ func0000000000000024:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	addi	a0, a0, -71
 	zext.b	a0, a0
-	sltiu	a0, a0, 250
+	addi	a0, a0, -71
+	sltiu	a0, a0, -6
 	ret
 
 func0000000000000004:
@@ -23,9 +23,9 @@ func0000000000000034:
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
-	addi	a0, a0, -3
 	zext.b	a0, a0
-	sltiu	a0, a0, 254
+	addi	a0, a0, -3
+	sltiu	a0, a0, -2
 	ret
 
 func0000000000000001:
