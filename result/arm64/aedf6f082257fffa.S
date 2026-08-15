@@ -43,8 +43,8 @@ func0000000000001204:
 	ret
 
 func0000000000000210:
-	sub	w8, w0, #14, lsl #12
-	lsr	w8, w8, #8
+	lsr	w8, w0, #8
+	sub	w8, w8, #224
 	cmp	w8, #25
 	cset	w8, lo
 	tst	w0, #0xffff0000

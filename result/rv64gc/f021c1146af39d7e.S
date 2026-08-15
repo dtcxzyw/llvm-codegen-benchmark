@@ -31,9 +31,8 @@ func00000000000000b4:
 	lui	a2, 448
 	and	a1, a1, a2
 	or	a0, a0, a1
-	lui	a1, 1048562
-	add	a0, a0, a1
 	srliw	a0, a0, 13
+	addi	a0, a0, -7
 	sltiu	a0, a0, 129
 	ret
 

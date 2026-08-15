@@ -59,9 +59,9 @@ func0000000000000114:
 	ret
 
 func0000000000000208:
-	addi	a1, a0, -160
+	srliw	a1, a0, 5
 	srliw	a0, a0, 13
-	srliw	a1, a1, 5
+	addi	a1, a1, -5
 	sltiu	a0, a0, 7
 	sltiu	a1, a1, 1723
 	xori	a0, a0, 1
@@ -69,9 +69,9 @@ func0000000000000208:
 	ret
 
 func0000000000000928:
-	lui	a1, 1048562
-	add	a1, a1, a0
-	srliw	a1, a1, 4
+	srliw	a1, a0, 4
+	addi	a1, a1, -2048
+	addi	a1, a1, -1536
 	srliw	a0, a0, 11
 	sltiu	a1, a1, 477
 	sltiu	a0, a0, 27

@@ -1,11 +1,10 @@
 func000000000000048c:
-	mov	w8, #-11904
-	mov	w9, #12351
-	add	w8, w0, w8
-	cmp	w0, w9
-	mov	w9, #1893
-	lsr	w8, w8, #4
-	ccmp	w8, w9, #2, ne
+	lsr	w9, w0, #4
+	mov	w8, #12351
+	cmp	w0, w8
+	mov	w8, #1893
+	sub	w9, w9, #744
+	ccmp	w9, w8, #2, ne
 	cset	w0, lo
 	ret
 

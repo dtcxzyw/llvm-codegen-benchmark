@@ -1,9 +1,8 @@
 func0000000000000c08:
-	mov	w8, #-44032
-	mov	w9, #12351
-	add	w8, w1, w8
-	cmp	w1, w9
-	lsr	w8, w8, #2
+	mov	w8, #12351
+	mov	w9, #-11008
+	cmp	w1, w8
+	add	w8, w9, w1, lsr #2
 	cset	w9, ne
 	and	w9, w9, w0
 	cmp	w8, #2793
@@ -11,11 +10,10 @@ func0000000000000c08:
 	ret
 
 func0000000000000c48:
-	mov	w8, #-44032
-	mov	w9, #12351
-	add	w8, w1, w8
-	cmp	w1, w9
-	lsr	w8, w8, #2
+	mov	w8, #12351
+	mov	w9, #-11008
+	cmp	w1, w8
+	add	w8, w9, w1, lsr #2
 	cset	w9, ne
 	and	w9, w9, w0
 	cmp	w8, #2793

@@ -28,8 +28,8 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	sub	w8, w0, #32
-	lsr	w8, w8, #5
+	lsr	w8, w0, #5
+	sub	w8, w8, #1
 	cmp	w8, #1727
 	cset	w0, lo
 	ret

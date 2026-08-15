@@ -135,10 +135,9 @@ func0000000000000034:
 	ret
 
 func0000000000000104:
-	mov	w8, #-13312
-	add	w9, w0, w1
-	add	w8, w9, w8
+	add	w8, w0, w1
 	lsr	w8, w8, #6
+	sub	w8, w8, #208
 	cmp	w8, #103
 	cset	w0, lo
 	ret

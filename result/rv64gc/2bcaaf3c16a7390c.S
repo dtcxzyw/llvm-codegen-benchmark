@@ -19,11 +19,9 @@ func00000000000001a4:
 	ret
 
 func00000000000000a4:
-	lui	a1, 1048562
-	andi	a0, a0, 14
-	slli	a0, a0, 12
-	add	a0, a0, a1
-	srliw	a0, a0, 13
+	slli	a0, a0, 60
+	srli	a0, a0, 61
+	addi	a0, a0, -7
 	sltiu	a0, a0, 129
 	ret
 

@@ -284,9 +284,8 @@ func0000000000000202:
 	ret
 
 func0000000000000d28:
-	lui	a2, 1048562
-	add	a1, a1, a2
 	srliw	a1, a1, 13
+	addi	a1, a1, -7
 	srliw	a0, a0, 11
 	sltiu	a1, a1, 129
 	sltiu	a0, a0, 27
@@ -294,9 +293,8 @@ func0000000000000d28:
 	ret
 
 func0000000000000d08:
-	lui	a2, 1048562
-	add	a1, a1, a2
 	srliw	a1, a1, 13
+	addi	a1, a1, -7
 	srliw	a0, a0, 11
 	sltiu	a1, a1, 129
 	sltiu	a0, a0, 27

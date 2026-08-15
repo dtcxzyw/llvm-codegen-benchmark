@@ -1,9 +1,7 @@
 func0000000000000108:
-	lui	a3, 1048573
-	addi	a3, a3, 384
-	sext.w	a0, a0
-	add	a2, a2, a3
 	srliw	a2, a2, 4
+	sext.w	a0, a0
+	addi	a2, a2, -744
 	lui	a3, 3
 	sltiu	a2, a2, 1893
 	addi	a3, a3, -1116
@@ -13,11 +11,9 @@ func0000000000000108:
 	ret
 
 func0000000000000908:
-	lui	a3, 1048573
-	addi	a3, a3, 384
-	sext.w	a0, a0
-	add	a2, a2, a3
 	srliw	a2, a2, 4
+	sext.w	a0, a0
+	addi	a2, a2, -744
 	lui	a3, 3
 	sltiu	a2, a2, 1893
 	addi	a3, a3, -1116

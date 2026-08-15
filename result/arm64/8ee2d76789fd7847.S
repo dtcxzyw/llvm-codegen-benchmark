@@ -20,11 +20,10 @@ func0000000000000148:
 	ret
 
 func0000000000000108:
-	mov	w9, #17408
+	mov	w9, #62528
 	add	w8, w1, w2
-	movk	w9, #64671, lsl #16
-	add	w8, w8, w9
-	lsr	w8, w8, #4
+	movk	w9, #65481, lsl #16
+	add	w8, w9, w8, lsr #4
 	cmp	w8, #477
 	cset	w8, lo
 	orr	w8, w0, w8
@@ -42,9 +41,8 @@ func000000000000000c:
 
 func0000000000000208:
 	add	w8, w1, w2
-	mov	w9, #-19968
-	add	w8, w8, w9
 	lsr	w8, w8, #9
+	sub	w8, w8, #39
 	cmp	w8, #41
 	cset	w8, lo
 	orr	w8, w0, w8

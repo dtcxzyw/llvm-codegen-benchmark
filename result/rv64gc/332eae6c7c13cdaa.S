@@ -38,11 +38,11 @@ func00000000000000a4:
 
 func0000000000000084:
 	slli	a1, a1, 10
-	lui	a2, 1034740
 	add	a0, a0, a1
-	addi	a1, a2, 1024
-	add	a0, a0, a1
+	lui	a1, 1047711
 	srliw	a0, a0, 4
+	addi	a1, a1, 1088
+	add	a0, a0, a1
 	sltiu	a0, a0, 477
 	ret
 
@@ -75,11 +75,9 @@ func00000000000000ac:
 
 func0000000000000104:
 	slli	a1, a1, 4
-	li	a2, -13
 	add	a0, a0, a1
-	slli	a2, a2, 10
-	add	a0, a0, a2
 	srliw	a0, a0, 6
+	addi	a0, a0, -208
 	sltiu	a0, a0, 103
 	ret
 

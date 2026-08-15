@@ -126,11 +126,9 @@ func0000000000000034:
 	ret
 
 func0000000000000104:
-	li	a2, -13
 	add	a0, a0, a1
-	slli	a2, a2, 10
-	add	a0, a0, a2
 	srliw	a0, a0, 6
+	addi	a0, a0, -208
 	sltiu	a0, a0, 103
 	ret
 

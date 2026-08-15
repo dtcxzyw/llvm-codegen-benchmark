@@ -9,11 +9,11 @@ func0000000000000108:
 	ret
 
 func0000000000000908:
-	sub	w9, w0, #160
+	lsr	w9, w0, #5
 	mov	w8, #8192
 	sub	w10, w0, #14, lsl #12
-	lsr	w9, w9, #5
 	movk	w8, #16, lsl #16
+	sub	w9, w9, #5
 	cmp	w9, #1723
 	ccmp	w10, w8, #0, hs
 	cset	w0, lo

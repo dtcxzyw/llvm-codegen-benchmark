@@ -8,12 +8,11 @@ func0000000000000084:
 	ret
 
 func000000000000108c:
-	mov	w9, #17408
+	mov	w9, #62528
 	add	w8, w1, w2
-	movk	w9, #64671, lsl #16
-	add	w8, w8, w9
+	movk	w9, #65481, lsl #16
+	add	w8, w9, w8, lsr #4
 	mov	w9, #65279
-	lsr	w8, w8, #4
 	cmp	w0, w9
 	mov	w9, #511
 	ccmp	w8, w9, #2, ne

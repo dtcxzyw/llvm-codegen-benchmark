@@ -1,14 +1,13 @@
 func0000000000000184:
-	lui	a3, 1048562
-	add	a2, a2, a3
-	lui	a3, 16
 	sext.w	a1, a1
-	addi	a3, a3, -2
 	srliw	a2, a2, 13
-	xor	a1, a1, a3
+	lui	a3, 16
+	addi	a2, a2, -7
+	addi	a3, a3, -2
 	sltiu	a2, a2, 129
+	xor	a1, a1, a3
 	snez	a1, a1
-	and	a1, a1, a2
+	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

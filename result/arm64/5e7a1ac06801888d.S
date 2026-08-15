@@ -147,9 +147,8 @@ func000000000000010a:
 	ret
 
 func0000000000000024:
-	lsl	w8, w0, #8
-	sub	w8, w8, #256
-	lsr	w8, w8, #8
+	and	w8, w0, #0xffffff
+	sub	w8, w8, #1
 	cmp	w8, #255
 	cset	w0, lo
 	ret

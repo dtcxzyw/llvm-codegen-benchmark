@@ -38,10 +38,9 @@ func00000000000000a4:
 
 func0000000000000084:
 	add	w8, w0, w1, lsl #10
-	mov	w9, #17408
-	movk	w9, #64671, lsl #16
-	add	w8, w8, w9
-	lsr	w8, w8, #4
+	mov	w9, #62528
+	movk	w9, #65481, lsl #16
+	add	w8, w9, w8, lsr #4
 	cmp	w8, #477
 	cset	w0, lo
 	ret
@@ -72,9 +71,8 @@ func00000000000000ac:
 
 func0000000000000104:
 	add	w8, w0, w1, lsl #4
-	mov	w9, #-13312
-	add	w8, w8, w9
 	lsr	w8, w8, #6
+	sub	w8, w8, #208
 	cmp	w8, #103
 	cset	w0, lo
 	ret

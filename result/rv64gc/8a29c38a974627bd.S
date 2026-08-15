@@ -25,8 +25,8 @@ func0000000000000034:
 	ret
 
 func0000000000000024:
-	addi	a0, a0, -32
 	srliw	a0, a0, 5
+	addi	a0, a0, -1
 	sltiu	a0, a0, 1727
 	ret
 

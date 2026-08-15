@@ -150,9 +150,9 @@ func000000000000010a:
 	ret
 
 func0000000000000024:
-	slli	a0, a0, 8
-	addi	a0, a0, -256
-	srliw	a0, a0, 8
+	slli	a0, a0, 40
+	srli	a0, a0, 40
+	addi	a0, a0, -1
 	sltiu	a0, a0, 255
 	ret
 

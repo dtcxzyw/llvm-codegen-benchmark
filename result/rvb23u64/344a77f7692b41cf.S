@@ -7,15 +7,15 @@ func0000000000000084:
 	ret
 
 func000000000000108c:
-	lui	a3, 1034740
 	add	a1, a1, a2
-	addi	a2, a3, 1024
-	add	a1, a1, a2
-	lui	a2, 16
 	sext.w	a0, a0
-	addi	a2, a2, -257
 	srliw	a1, a1, 4
-	xor	a0, a0, a2
+	lui	a2, 1047711
+	lui	a3, 16
+	addi	a2, a2, 1088
+	addi	a3, a3, -257
+	add	a1, a1, a2
+	xor	a0, a0, a3
 	sltiu	a1, a1, 511
 	snez	a0, a0
 	and	a0, a0, a1

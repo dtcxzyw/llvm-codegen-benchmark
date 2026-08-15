@@ -32,9 +32,8 @@ func000000000000002c:
 	ret
 
 func0000000000000028:
-	lui	a2, 1048064
-	add	a1, a1, a2
 	srli	a1, a1, 21
+	addi	a1, a1, -1
 	seqz	a0, a0
 	sltiu	a1, a1, 1023
 	or	a0, a0, a1

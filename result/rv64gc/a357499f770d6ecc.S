@@ -1,8 +1,6 @@
 func0000000000000048:
-	lui	a3, 1048573
-	addi	a3, a3, 384
-	add	a2, a2, a3
 	srliw	a2, a2, 4
+	addi	a2, a2, -744
 	sltiu	a2, a2, 1893
 	and	a1, a1, a2
 	or	a0, a0, a1

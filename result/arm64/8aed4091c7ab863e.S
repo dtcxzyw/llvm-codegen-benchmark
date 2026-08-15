@@ -31,10 +31,10 @@ func000000000000002c:
 	ret
 
 func0000000000000028:
-	sub	x9, x1, #512, lsl #12
+	lsr	x9, x1, #21
 	mov	w8, #1023
 	cmp	x0, #0
-	lsr	x9, x9, #21
+	sub	x9, x9, #1
 	ccmp	x9, x8, #0, ne
 	cset	w0, lo
 	ret

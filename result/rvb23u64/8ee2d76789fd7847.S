@@ -17,11 +17,11 @@ func0000000000000148:
 	ret
 
 func0000000000000108:
-	lui	a3, 1034740
 	add	a1, a1, a2
-	addi	a2, a3, 1024
-	add	a1, a1, a2
+	lui	a2, 1047711
 	srliw	a1, a1, 4
+	addi	a2, a2, 1088
+	add	a1, a1, a2
 	sltiu	a1, a1, 477
 	or	a0, a0, a1
 	ret
@@ -34,11 +34,9 @@ func000000000000000c:
 	ret
 
 func0000000000000208:
-	lui	a3, 1048571
-	add	a1, a1, a2
-	addi	a2, a3, 512
 	add	a1, a1, a2
 	srliw	a1, a1, 9
+	addi	a1, a1, -39
 	sltiu	a1, a1, 41
 	or	a0, a0, a1
 	ret

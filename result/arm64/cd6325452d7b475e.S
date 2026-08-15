@@ -52,19 +52,19 @@ func0000000000000114:
 	ret
 
 func0000000000000208:
-	sub	w8, w0, #160
+	lsr	w8, w0, #5
 	lsr	w9, w0, #13
-	lsr	w8, w8, #5
+	sub	w8, w8, #5
 	cmp	w8, #1723
 	ccmp	w9, #6, #2, hs
 	cset	w0, hi
 	ret
 
 func0000000000000928:
-	sub	w9, w0, #14, lsl #12
+	lsr	w9, w0, #4
 	lsr	w10, w0, #11
 	mov	w8, #477
-	lsr	w9, w9, #4
+	sub	w9, w9, #3584
 	cmp	w10, #27
 	ccmp	w9, w8, #0, hs
 	cset	w0, lo

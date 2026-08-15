@@ -1,8 +1,7 @@
 func0000000000000084:
-	lui	a3, 1048562
 	sext.w	a1, a1
-	add	a2, a2, a3
 	srliw	a2, a2, 13
+	addi	a2, a2, -7
 	sltiu	a1, a1, -32
 	sltiu	a2, a2, 129
 	and	a0, a0, a1

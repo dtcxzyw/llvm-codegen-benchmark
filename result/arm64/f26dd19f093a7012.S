@@ -12,13 +12,12 @@ func0000000000002910:
 	ret
 
 func0000000000002108:
-	mov	w9, #17408
+	mov	w9, #62528
 	add	w8, w1, w2
-	movk	w9, #64671, lsl #16
-	add	w8, w8, w9
-	lsr	w9, w0, #11
-	lsr	w8, w8, #4
-	cmp	w9, #27
+	lsr	w10, w0, #11
+	movk	w9, #65481, lsl #16
+	add	w8, w9, w8, lsr #4
+	cmp	w10, #27
 	mov	w9, #477
 	ccmp	w8, w9, #0, hs
 	cset	w0, lo
@@ -38,11 +37,9 @@ func0000000000002908:
 	ret
 
 func0000000000002848:
-	mov	w9, #9216
 	add	w8, w1, w2
-	movk	w9, #64672, lsl #16
-	add	w8, w8, w9
-	lsr	w8, w8, #10
+	mov	w9, #-55287
+	add	w8, w9, w8, lsr #10
 	cmp	w8, #13
 	mov	w8, #65536
 	ccmp	w0, w8, #4, hs

@@ -14,11 +14,11 @@ func0000000000002910:
 	ret
 
 func0000000000002108:
-	lui	a3, 1034740
 	add	a1, a1, a2
-	addi	a2, a3, 1024
-	add	a1, a1, a2
+	lui	a2, 1047711
 	srliw	a1, a1, 4
+	addi	a2, a2, 1088
+	add	a1, a1, a2
 	srliw	a0, a0, 11
 	sltiu	a1, a1, 477
 	sltiu	a0, a0, 27
@@ -39,13 +39,13 @@ func0000000000002908:
 
 func0000000000002848:
 	add	a1, a1, a2
-	lui	a2, 1034754
 	sext.w	a0, a0
-	addi	a2, a2, 1024
-	add	a1, a1, a2
-	lui	a2, 16
 	srliw	a1, a1, 10
-	xor	a0, a0, a2
+	lui	a2, 1048563
+	addi	a2, a2, -2039
+	lui	a3, 16
+	add	a1, a1, a2
+	xor	a0, a0, a3
 	sltiu	a1, a1, 13
 	seqz	a0, a0
 	or	a0, a0, a1

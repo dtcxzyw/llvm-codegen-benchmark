@@ -1,6 +1,6 @@
 func0000000000000010:
-	sub	w8, w1, #160
-	lsr	w8, w8, #5
+	lsr	w8, w1, #5
+	sub	w8, w8, #5
 	cmp	w8, #1723
 	cset	w8, lo
 	orr	w8, w8, w0

@@ -93,8 +93,8 @@ func000000000000000c:
 	ret
 
 func0000000000000008:
-	sub	x8, x1, #512, lsl #12
-	lsr	x8, x8, #21
+	lsr	x8, x1, #21
+	sub	x8, x8, #1
 	cmp	x8, #1023
 	cset	w8, lo
 	orr	w8, w0, w8

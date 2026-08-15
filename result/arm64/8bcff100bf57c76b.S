@@ -1,7 +1,7 @@
 func0000000000000410:
-	sub	w8, w0, #160
+	lsr	w8, w0, #5
 	lsr	w9, w0, #13
-	lsr	w8, w8, #5
+	sub	w8, w8, #5
 	cmp	w8, #1723
 	ccmp	w9, #6, #2, hs
 	cset	w0, hi

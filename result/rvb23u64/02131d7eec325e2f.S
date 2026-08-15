@@ -23,13 +23,12 @@ func000000000000008c:
 func0000000000000184:
 	lui	a1, 16
 	addi	a1, a1, -2
-	lui	a2, 1048562
-	add	a2, a2, a0
-	and	a0, a0, a1
-	xor	a0, a0, a1
-	srliw	a1, a2, 13
-	snez	a0, a0
-	sltiu	a1, a1, 129
+	and	a2, a0, a1
+	srliw	a0, a0, 13
+	xor	a1, a1, a2
+	addi	a0, a0, -7
+	snez	a1, a1
+	sltiu	a0, a0, 129
 	and	a0, a0, a1
 	ret
 

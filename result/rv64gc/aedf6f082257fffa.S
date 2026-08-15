@@ -35,10 +35,9 @@ func0000000000001204:
 	ret
 
 func0000000000000210:
-	lui	a2, 1048562
-	add	a2, a2, a0
+	srliw	a2, a0, 8
 	srliw	a0, a0, 16
-	srliw	a2, a2, 8
+	addi	a2, a2, -224
 	snez	a0, a0
 	sltiu	a2, a2, 25
 	or	a0, a0, a1

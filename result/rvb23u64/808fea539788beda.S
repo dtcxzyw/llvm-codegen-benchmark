@@ -1,7 +1,6 @@
 func0000000000000918:
-	li	a3, -1488
-	sh3add	a2, a3, a2
 	srliw	a2, a2, 4
+	addi	a2, a2, -744
 	zext.b	a1, a1
 	sltiu	a2, a2, 1893
 	and	a0, a0, a2

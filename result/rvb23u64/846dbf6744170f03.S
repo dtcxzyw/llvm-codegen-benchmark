@@ -9,11 +9,10 @@ func0000000000000108:
 	ret
 
 func0000000000000908:
-	lui	a1, 1048562
-	add	a1, a1, a0
-	addi	a0, a0, -160
-	srliw	a1, a1, 13
+	srliw	a1, a0, 13
 	srliw	a0, a0, 5
+	addi	a1, a1, -7
+	addi	a0, a0, -5
 	sltiu	a1, a1, 129
 	sltiu	a0, a0, 1723
 	or	a0, a0, a1

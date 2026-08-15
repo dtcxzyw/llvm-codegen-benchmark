@@ -1,9 +1,8 @@
 func0000000000000408:
 	lsr	w8, w2, #4
-	mov	w9, #-44032
-	add	w9, w1, w9
+	mov	w9, #-11008
 	cmp	w8, #1893
-	lsr	w8, w9, #2
+	add	w8, w9, w1, lsr #2
 	cset	w9, lo
 	and	w9, w0, w9
 	cmp	w8, #2793
@@ -12,10 +11,9 @@ func0000000000000408:
 
 func0000000000000448:
 	lsr	w8, w2, #4
-	mov	w9, #-44032
-	add	w9, w1, w9
+	mov	w9, #-11008
 	cmp	w8, #1893
-	lsr	w8, w9, #2
+	add	w8, w9, w1, lsr #2
 	cset	w9, lo
 	and	w9, w0, w9
 	cmp	w8, #2793

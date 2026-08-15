@@ -21,8 +21,8 @@ func0000000000000038:
 	ret
 
 func0000000000000094:
-	addi	a0, a0, -1024
 	srliw	a0, a0, 10
+	addi	a0, a0, -1
 	sltiu	a0, a0, 3
 	ret
 

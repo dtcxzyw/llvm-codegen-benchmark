@@ -1,7 +1,6 @@
 func0000000000000918:
-	mov	w8, #-11904
-	add	w8, w2, w8
-	lsr	w8, w8, #4
+	lsr	w8, w2, #4
+	sub	w8, w8, #744
 	cmp	w8, #1893
 	cset	w8, lo
 	tst	w1, #0xff
