@@ -1,11 +1,12 @@
 	.att_syntax
 .LCPI0_0:
-	.quad	32512
+	.long	32512
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	vpslld	$8, %xmm1, %xmm1
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpternlogq	$248, .LCPI0_0(%rip){1to4}, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -18,12 +19,13 @@ func0000000000000005:
 	retq
 
 .LCPI2_0:
-	.quad	1920
+	.long	1920
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpslld	$7, %xmm1, %xmm1
+	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpternlogq	$248, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:

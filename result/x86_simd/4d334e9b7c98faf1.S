@@ -1,11 +1,11 @@
 	.att_syntax
 .LCPI0_0:
-	.quad	32512
+	.long	32512
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	vpslld	$8, %xmm0, %xmm0
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
-	vpandq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

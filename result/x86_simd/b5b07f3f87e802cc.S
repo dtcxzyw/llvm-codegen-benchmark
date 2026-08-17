@@ -1,13 +1,23 @@
 	.att_syntax
 .LCPI0_0:
-	.long	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
 .LCPI0_1:
 	.long	4278190080
+.LCPI0_2:
+	.short	248
+	.short	248
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpsllw	$3, %xmm1, %xmm1
+	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
-	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$254, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 
@@ -21,14 +31,24 @@ func000000000000000e:
 	retq
 
 .LCPI2_0:
-	.long	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
 .LCPI2_1:
 	.long	8
+.LCPI2_2:
+	.short	256
+	.short	256
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vpsllw	$5, %xmm1, %xmm1
+	vpandd	.LCPI2_2(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$254, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0
 	retq
 

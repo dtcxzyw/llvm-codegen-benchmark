@@ -74,12 +74,23 @@ func000000000000000d:
 	retq
 
 .LCPI5_0:
-	.long	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+	.short	256
+.LCPI5_1:
+	.short	256
+	.short	256
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpsllw	$5, %xmm1, %xmm1
+	vpandd	.LCPI5_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
-	vpternlogd	$248, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI6_0:

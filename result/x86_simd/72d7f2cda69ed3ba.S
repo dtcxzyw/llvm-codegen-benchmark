@@ -10,12 +10,22 @@ func000000000000000f:
 	retq
 
 .LCPI1_0:
-	.long	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+	.short	248
+.LCPI1_1:
+	.short	248
+	.short	248
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	vpsllw	$3, %xmm2, %xmm2
+	vpandd	.LCPI1_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	retq
 
@@ -77,12 +87,22 @@ func0000000000000003:
 	retq
 
 .LCPI5_0:
-	.long	896
+	.short	896
+	.short	896
+	.short	896
+	.short	896
+	.short	896
+	.short	896
+	.short	896
+	.short	896
+.LCPI5_1:
+	.short	896
+	.short	896
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000001f:
 	vpsllw	$7, %xmm2, %xmm2
+	vpandd	.LCPI5_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpandd	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	retq
 
@@ -117,12 +137,22 @@ func000000000000000b:
 	retq
 
 .LCPI9_0:
-	.long	4096
+	.short	4096
+	.short	4096
+	.short	4096
+	.short	4096
+	.short	4096
+	.short	4096
+	.short	4096
+	.short	4096
+.LCPI9_1:
+	.short	4096
+	.short	4096
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000001c:
 	vpsllw	$12, %xmm2, %xmm2
+	vpandd	.LCPI9_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpandd	.LCPI9_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
 	retq
 

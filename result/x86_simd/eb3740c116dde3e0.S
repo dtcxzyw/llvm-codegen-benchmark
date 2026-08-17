@@ -1,32 +1,32 @@
 	.att_syntax
 .LCPI0_0:
-	.quad	258048
+	.long	258048
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	vpslld	$12, %xmm2, %xmm2
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogq	$248, .LCPI0_0(%rip){1to4}, %ymm2, %ymm0
+	vpternlogq	$254, %ymm1, %ymm2, %ymm0
 	retq
 
 .LCPI1_0:
-	.quad	1920
+	.long	1920
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
 	vpslld	$7, %xmm2, %xmm2
+	vpandd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogq	$248, .LCPI1_0(%rip){1to4}, %ymm2, %ymm0
+	vpternlogq	$254, %ymm1, %ymm2, %ymm0
 	retq
 
 .LCPI2_0:
-	.quad	61440
+	.long	61440
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	vpslld	$12, %xmm2, %xmm2
+	vpandd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxdq	%xmm2, %ymm2
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogq	$248, .LCPI2_0(%rip){1to4}, %ymm2, %ymm0
+	vpternlogq	$254, %ymm1, %ymm2, %ymm0
 	retq
 
 .LCPI3_0:
