@@ -4,7 +4,7 @@ func0000000000000028:
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
 	bzhiq	%rdi, %rsi, %rcx
-	addq	%rcx, %rcx
-	subq	%rcx, %rax
+	negq	%rcx
+	leaq	(%rax,%rcx,2), %rax
 	retq
 

@@ -8,25 +8,25 @@ func00000000000000aa:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	testl	%edi, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018a:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	testl	%edi, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000010a:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	testl	%edi, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 
@@ -39,17 +39,17 @@ func00000000000001aa:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	cmpl	$70, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	cmpl	$70, %eax
 	setae	%al
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	cmpl	$4, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	cmpl	$4, %eax
 	setl	%al
 	retq
 
@@ -62,25 +62,25 @@ func00000000000001ca:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000008a:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	testl	%edi, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 
 	.prefalign	4, .Lfunc_end9, nop
 func00000000000001a4:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	cmpl	$4, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	cmpl	$4, %eax
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end10, nop
 func00000000000000a4:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	cmpl	$2, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	cmpl	$2, %eax
 	setb	%al
 	retq
 
@@ -100,33 +100,33 @@ func0000000000000181:
 
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000184:
-	shll	$2, %esi
-	subl	%esi, %edi
-	cmpl	$4, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,4), %eax
+	cmpl	$4, %eax
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end14, nop
 func00000000000001a6:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	cmpl	$1024, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	cmpl	$1024, %eax
 	setl	%al
 	retq
 
 	.prefalign	4, .Lfunc_end15, nop
 func00000000000000a6:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	cmpl	$2, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	cmpl	$2, %eax
 	setl	%al
 	retq
 
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000004:
-	shll	$3, %esi
-	subl	%esi, %edi
-	cmpl	$65, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,8), %eax
+	cmpl	$65, %eax
 	setb	%al
 	retq
 
@@ -161,9 +161,9 @@ func0000000000000026:
 
 	.prefalign	4, .Lfunc_end21, nop
 func00000000000000a1:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	cmpl	$1, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	cmpl	$1, %eax
 	sete	%al
 	retq
 

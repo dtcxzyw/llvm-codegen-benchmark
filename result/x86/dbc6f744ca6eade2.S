@@ -36,9 +36,9 @@ func000000000000003d:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000060:
-	shlq	$2, %rdi
-	subq	%rdi, %rsi
-	andq	$-4, %rsi
-	leaq	4(%rsi), %rax
+	negq	%rdi
+	leaq	(%rsi,%rdi,4), %rax
+	andq	$-4, %rax
+	addq	$4, %rax
 	retq
 

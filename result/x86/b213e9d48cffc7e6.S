@@ -3,9 +3,9 @@
 func0000000000000104:
 	leaq	-1(%rsi), %rax
 	andq	%rdx, %rax
-	addq	%rax, %rax
-	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
+	negq	%rax
+	leaq	(%rsi,%rax,2), %rax
+	cmpq	%rdi, %rax
 	setb	%al
 	retq
 

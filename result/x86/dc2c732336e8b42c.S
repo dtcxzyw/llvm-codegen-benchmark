@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	movq	%rdi, %rax
-	shlq	$3, %rdx
-	subq	%rdx, %rax
+	negq	%rdx
+	leaq	(%rdi,%rdx,8), %rax
 	shlq	$3, %rsi
 	subq	%rsi, %rax
 	retq
@@ -18,18 +17,16 @@ func000000000000001a:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000004a:
-	movq	%rdi, %rax
-	subq	%rdx, %rax
-	addq	%rsi, %rsi
-	subq	%rsi, %rax
+	subq	%rdx, %rdi
+	negq	%rsi
+	leaq	(%rdi,%rsi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000050:
-	movq	%rdi, %rax
-	subq	%rdx, %rax
-	shlq	$2, %rsi
-	subq	%rsi, %rax
+	subq	%rdx, %rdi
+	negq	%rsi
+	leaq	(%rdi,%rsi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

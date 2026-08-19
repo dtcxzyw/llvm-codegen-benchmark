@@ -32,16 +32,14 @@ func0000000000000010:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000001a:
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	leaq	-16(%rdi), %rax
+	negq	%rsi
+	leaq	-16(%rdi,%rsi,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	leaq	-16(%rdi), %rax
+	negq	%rsi
+	leaq	-16(%rdi,%rsi,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop
@@ -96,9 +94,8 @@ func0000000000000020:
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000018:
-	shlq	$2, %rsi
-	subq	%rsi, %rdi
-	leaq	-2(%rdi), %rax
+	negq	%rsi
+	leaq	-2(%rdi,%rsi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end16, nop

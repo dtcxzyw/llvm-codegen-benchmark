@@ -8,17 +8,15 @@ func000000000000001f:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
-	movl	%edi, %eax
-	movzwl	%si, %ecx
-	addl	%ecx, %ecx
-	subl	%ecx, %eax
+	movzwl	%si, %eax
+	negl	%eax
+	leal	(%rdi,%rax,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000e:
-	movl	%edi, %eax
-	movzwl	%si, %ecx
-	addl	%ecx, %ecx
-	subl	%ecx, %eax
+	movzwl	%si, %eax
+	negl	%eax
+	leal	(%rdi,%rax,2), %eax
 	retq
 

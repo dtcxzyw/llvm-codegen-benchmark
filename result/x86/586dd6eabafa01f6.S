@@ -9,16 +9,15 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
-	shll	$2, %esi
-	subl	%esi, %edi
-	leaq	(,%rdi,4), %rax
+	negl	%esi
+	leal	(%rdi,%rsi,4), %eax
+	shlq	$2, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
-	movl	%edi, %eax
-	addl	%esi, %esi
-	subl	%esi, %eax
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
 	shlq	$32, %rax
 	retq
 

@@ -7,8 +7,7 @@ func0000000000000025:
 	subq	%rsi, %rax
 	cqto
 	idivq	%rcx
-	shlq	$2, %rax
-	subq	%rax, %rdi
-	movq	%rdi, %rax
+	negq	%rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 

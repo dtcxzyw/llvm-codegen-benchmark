@@ -87,16 +87,16 @@ func000000000000003b:
 
 	.prefalign	4, .Lfunc_end12, nop
 func000000000000006a:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	leaq	-4(%rsi,%rdi,2), %rax
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	leaq	-4(%rax,%rdi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end13, nop
 func000000000000006b:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	leaq	-4(%rsi,%rdi,2), %rax
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	leaq	-4(%rax,%rdi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end14, nop

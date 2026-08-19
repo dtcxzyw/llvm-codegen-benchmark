@@ -33,10 +33,10 @@ func00000000000000ae:
 
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ac:
-	shlq	$2, %rdx
-	subq	%rdx, %rdi
-	movl	%esi, %eax
-	leaq	4(%rdi,%rax,4), %rax
+	negq	%rdx
+	leaq	(%rdi,%rdx,4), %rax
+	movl	%esi, %ecx
+	leaq	4(%rax,%rcx,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

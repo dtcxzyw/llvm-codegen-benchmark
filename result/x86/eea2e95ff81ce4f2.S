@@ -10,18 +10,16 @@ func0000000000000364:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000161:
-	shlq	$3, %rsi
 	negq	%rsi
-	leaq	8(%rdi,%rsi), %rax
+	leaq	8(%rdi,%rsi,8), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000368:
-	shlq	$2, %rsi
 	negq	%rsi
-	leaq	32(%rdi,%rsi), %rax
+	leaq	32(%rdi,%rsi,4), %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq

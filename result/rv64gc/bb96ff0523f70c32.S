@@ -8,10 +8,10 @@ func0000000000000038:
 	ret
 
 func00000000000000f4:
-	srai	a0, a0, 1
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
-	sltiu	a0, a0, 17
+	srai	a1, a0, 1
+	srai	a0, a0, 63
+	xor	a1, a1, a0
+	sub	a1, a1, a0
+	sltiu	a0, a1, 17
 	ret
 

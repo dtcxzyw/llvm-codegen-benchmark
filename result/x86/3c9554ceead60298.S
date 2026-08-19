@@ -13,16 +13,14 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
-	movq	%rdi, %rax
-	shlq	$2, %rsi
-	subq	%rsi, %rax
+	negq	%rsi
+	leaq	(%rdi,%rsi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
-	movq	%rdi, %rax
-	shlq	$3, %rsi
-	subq	%rsi, %rax
+	negq	%rsi
+	leaq	(%rdi,%rsi,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

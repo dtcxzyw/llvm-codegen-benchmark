@@ -2,12 +2,12 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000002b8:
 	movzbl	%dl, %eax
-	addl	%eax, %eax
-	subl	%eax, %esi
-	movl	%esi, %eax
 	negl	%eax
-	cmovsl	%esi, %eax
-	cmpl	%eax, %edi
+	leal	(%rsi,%rax,2), %eax
+	movl	%eax, %ecx
+	negl	%ecx
+	cmovsl	%eax, %ecx
+	cmpl	%ecx, %edi
 	seta	%al
 	retq
 

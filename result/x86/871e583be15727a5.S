@@ -20,9 +20,9 @@ func0000000000000010:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000013:
 	andl	$1, %edx
-	shll	$3, %edx
-	subl	%edx, %esi
-	andl	$-8, %esi
-	leaq	(%rsi,%rdi), %rax
+	negl	%edx
+	leal	(%rsi,%rdx,8), %eax
+	andl	$-8, %eax
+	addq	%rdi, %rax
 	retq
 

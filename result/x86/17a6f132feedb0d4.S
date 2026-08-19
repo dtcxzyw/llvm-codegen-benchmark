@@ -5,7 +5,7 @@ func0000000000000009:
 	cmpq	$2, %rsi
 	movl	$1, %eax
 	cmovgeq	%rsi, %rax
-	shlq	$3, %rdi
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	(%rax,%rdi,8), %rax
 	retq
 

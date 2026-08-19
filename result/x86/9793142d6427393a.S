@@ -1,17 +1,17 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
-	addl	%edx, %edx
-	subl	%edx, %esi
-	cmpq	%rsi, %rdi
+	negl	%edx
+	leal	(%rsi,%rdx,2), %eax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	addl	%edx, %edx
-	subl	%edx, %esi
-	cmpq	%rsi, %rdi
+	negl	%edx
+	leal	(%rsi,%rdx,2), %eax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 

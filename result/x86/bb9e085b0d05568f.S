@@ -2,9 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001a:
 	andq	$-4, %rsi
-	shlq	$2, %rdi
-	subq	%rdi, %rsi
-	leaq	-16(%rsi), %rax
+	negq	%rdi
+	leaq	-16(%rsi,%rdi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

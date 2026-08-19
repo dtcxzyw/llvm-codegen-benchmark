@@ -1,28 +1,24 @@
 func0000000000000025:
 	sub	x8, x2, x1
-	asr	x8, x8, #3
-	cmp	x8, x0
-	cset	w0, ls
+	cmp	x0, x8, asr #3
+	cset	w0, hs
 	ret
 
 func0000000000000021:
 	sub	x8, x2, x1
-	asr	x8, x8, #3
-	cmp	x8, x0
+	cmp	x0, x8, asr #3
 	cset	w0, eq
 	ret
 
 func0000000000000028:
 	sub	x8, x2, x1
-	asr	x8, x8, #3
-	cmp	x8, x0
-	cset	w0, hi
+	cmp	x0, x8, asr #3
+	cset	w0, lo
 	ret
 
 func0000000000000024:
 	sub	x8, x2, x1
-	asr	x8, x8, #5
-	cmp	x8, x0
-	cset	w0, lo
+	cmp	x0, x8, asr #5
+	cset	w0, hi
 	ret
 

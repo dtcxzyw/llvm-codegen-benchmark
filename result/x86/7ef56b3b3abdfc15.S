@@ -19,9 +19,9 @@ func00000000000000c8:
 func0000000000000048:
 	movabsq	$2305843009213693440, %rax
 	andq	%rdx, %rax
-	shlq	$3, %rax
-	subq	%rax, %rsi
-	cmpq	%rdi, %rsi
+	negq	%rax
+	leaq	(%rsi,%rax,8), %rax
+	cmpq	%rdi, %rax
 	seta	%al
 	retq
 

@@ -13,6 +13,6 @@ func000000000000003f:
 	shrl	$2, %eax
 	leal	(,%rax,8), %edx
 	subl	%edx, %eax
-	leal	1(%rcx,%rax), %eax
+	leal	1(%rax,%rcx), %eax
 	retq
 

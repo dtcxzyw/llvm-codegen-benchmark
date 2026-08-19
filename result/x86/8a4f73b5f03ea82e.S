@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	shll	$3, %edi
-	movl	$-332, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	-332(,%rdi,8), %eax
 	cltq
 	retq
 

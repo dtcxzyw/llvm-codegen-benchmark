@@ -2,11 +2,10 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
 	cmpl	$100, %edi
-	movl	$100, %ecx
-	cmovbl	%edi, %ecx
-	addl	%ecx, %ecx
-	movl	$200, %eax
-	subl	%ecx, %eax
+	movl	$100, %eax
+	cmovbl	%edi, %eax
+	negl	%eax
+	leal	200(,%rax,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

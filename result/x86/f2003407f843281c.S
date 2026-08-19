@@ -8,7 +8,7 @@ func0000000000000005:
 	cmpq	%rax, %rsi
 	cmovlq	%rsi, %rax
 	andq	$-4, %rax
-	shlq	$2, %rdi
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	(%rax,%rdi,4), %rax
 	retq
 

@@ -3,17 +3,15 @@
 func0000000000000010:
 	decl	%esi
 	movslq	%esi, %rax
-	shlq	$3, %rax
-	subq	%rax, %rdi
-	leaq	-8(%rdi), %rax
+	negq	%rax
+	leaq	-8(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000050:
-	movq	%rdi, %rax
-	movslq	%esi, %rcx
-	shlq	$3, %rcx
-	subq	%rcx, %rax
+	movslq	%esi, %rax
+	negq	%rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -26,19 +24,17 @@ func000000000000001b:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000005a:
-	movq	%rdi, %rax
-	movslq	%esi, %rcx
-	shlq	$3, %rcx
-	subq	%rcx, %rax
+	movslq	%esi, %rax
+	negq	%rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001a:
 	incl	%esi
 	movslq	%esi, %rax
-	shlq	$3, %rax
-	subq	%rax, %rdi
-	leaq	-8(%rdi), %rax
+	negq	%rax
+	leaq	-8(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

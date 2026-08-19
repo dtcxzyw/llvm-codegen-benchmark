@@ -1,7 +1,7 @@
 func0000000000000028:
-	asr	x8, x1, #5
-	cmp	x8, w2, uxtw
-	cset	w8, hi
+	mov	w8, w2
+	cmp	x8, x1, asr #5
+	cset	w8, lo
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

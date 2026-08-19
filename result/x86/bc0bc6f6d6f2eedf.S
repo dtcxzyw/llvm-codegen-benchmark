@@ -15,29 +15,25 @@ func0000000000000035:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000015:
-	shlq	$2, %rsi
-	subq	%rsi, %rdi
-	leaq	4(%rdi), %rax
+	negq	%rsi
+	leaq	4(%rdi,%rsi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	leaq	8(%rdi), %rax
+	negq	%rsi
+	leaq	8(%rdi,%rsi,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000010:
-	addq	%rsi, %rsi
-	subq	%rsi, %rdi
-	leaq	-2(%rdi), %rax
+	negq	%rsi
+	leaq	-2(%rdi,%rsi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000030:
-	shlq	$2, %rsi
-	subq	%rsi, %rdi
-	leaq	4(%rdi), %rax
+	negq	%rsi
+	leaq	4(%rdi,%rsi,4), %rax
 	retq
 

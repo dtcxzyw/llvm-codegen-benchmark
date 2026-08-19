@@ -10,18 +10,18 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a4:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	cmpq	$8, %rsi
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	$8, %rax
 	setb	%al
 	orb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000084:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	cmpq	$8, %rsi
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	$8, %rax
 	setb	%al
 	orb	%dil, %al
 	retq

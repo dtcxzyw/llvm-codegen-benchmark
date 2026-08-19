@@ -87,9 +87,9 @@ func000000000000002a:
 
 	.prefalign	4, .Lfunc_end12, nop
 func000000000000001b:
-	shlq	$3, %rdx
-	subq	%rdx, %rsi
-	leaq	(%rsi,%rdi,8), %rax
+	negq	%rdx
+	leaq	(%rsi,%rdx,8), %rax
+	leaq	(%rax,%rdi,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end13, nop

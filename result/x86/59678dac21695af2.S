@@ -8,25 +8,25 @@ func000000000000036a:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000366:
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	cmpq	$8, %rdi
+	negq	%rsi
+	leaq	(%rdi,%rsi,8), %rax
+	cmpq	$8, %rax
 	setl	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000168:
-	shlq	$2, %rsi
-	subq	%rsi, %rdi
-	cmpq	$61, %rdi
+	negq	%rsi
+	leaq	(%rdi,%rsi,4), %rax
+	cmpq	$61, %rax
 	setae	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000014a:
-	addq	%rsi, %rsi
-	subq	%rsi, %rdi
-	cmpq	$8, %rdi
+	negq	%rsi
+	leaq	(%rdi,%rsi,2), %rax
+	cmpq	$8, %rax
 	setge	%al
 	retq
 

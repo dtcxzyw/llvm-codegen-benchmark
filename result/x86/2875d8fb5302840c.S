@@ -9,9 +9,9 @@ func00000000000000aa:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
-	addl	%edx, %edx
-	subl	%edx, %esi
-	testl	%esi, %esi
+	negl	%edx
+	leal	(%rsi,%rdx,2), %eax
+	testl	%eax, %eax
 	setg	%al
 	andb	%dil, %al
 	retq

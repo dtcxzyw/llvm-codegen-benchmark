@@ -1,36 +1,32 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001f8:
-	shll	$3, %esi
-	movl	$32, %eax
-	subl	%esi, %eax
+	negl	%esi
+	leal	32(,%rsi,8), %eax
 	cmpl	%eax, %edi
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
-	shll	$3, %esi
-	movl	$32, %eax
-	subl	%esi, %eax
+	negl	%esi
+	leal	32(,%rsi,8), %eax
 	cmpl	%eax, %edi
 	setg	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000001aa:
-	shll	$3, %esi
-	movl	$32, %eax
-	subl	%esi, %eax
+	negl	%esi
+	leal	32(,%rsi,8), %eax
 	cmpl	%eax, %edi
 	setg	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a6:
-	addl	%esi, %esi
-	movl	$-2147483648, %eax
-	subl	%esi, %eax
+	negl	%esi
+	leal	-2147483648(,%rsi,2), %eax
 	cmpl	%eax, %edi
 	setl	%al
 	retq
@@ -45,9 +41,8 @@ func00000000000000ea:
 
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000aa:
-	addl	%esi, %esi
-	movl	$1024, %eax
-	subl	%esi, %eax
+	negl	%esi
+	leal	1024(,%rsi,2), %eax
 	cmpl	%eax, %edi
 	setg	%al
 	retq

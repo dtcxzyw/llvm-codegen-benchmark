@@ -2,9 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	movslq	%esi, %rax
-	shlq	$2, %rax
-	subq	%rax, %rdi
-	leaq	2504(%rdi), %rax
+	negq	%rax
+	leaq	2504(%rdi,%rax,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

@@ -1,41 +1,35 @@
 func0000000000000021:
-	asr	x8, x2, #1
-	cmp	x1, x8
+	cmp	x1, x2, asr #1
 	cset	w8, eq
 	and	w0, w0, w8
 	ret
 
 func0000000000000024:
-	asr	x8, x2, #3
-	cmp	x1, x8
+	cmp	x1, x2, asr #3
 	cset	w8, lo
 	and	w0, w0, w8
 	ret
 
 func0000000000000026:
-	asr	x8, x2, #32
-	cmp	x1, x8
+	cmp	x1, x2, asr #32
 	cset	w8, lt
 	and	w0, w0, w8
 	ret
 
 func000000000000002a:
-	asr	x8, x2, #32
-	cmp	x1, x8
+	cmp	x1, x2, asr #32
 	cset	w8, gt
 	and	w0, w0, w8
 	ret
 
 func000000000000002c:
-	asr	x8, x2, #2
-	cmp	x1, x8
+	cmp	x1, x2, asr #2
 	cset	w8, ne
 	and	w0, w0, w8
 	ret
 
 func000000000000002b:
-	asr	x8, x2, #32
-	cmp	x1, x8
+	cmp	x1, x2, asr #32
 	cset	w8, ge
 	and	w0, w0, w8
 	ret

@@ -1,5 +1,5 @@
 func0000000000000094:
-	asr	x8, x2, #3
+	lsr	x8, x2, #3
 	mov	w9, #28087
 	movk	w9, #46811, lsl #16
 	mul	w8, w8, w9
@@ -9,7 +9,7 @@ func0000000000000094:
 	ret
 
 func0000000000000086:
-	asr	x8, x2, #3
+	lsr	x8, x2, #3
 	mov	w9, #43691
 	movk	w9, #43690, lsl #16
 	mul	w8, w8, w9
@@ -19,7 +19,7 @@ func0000000000000086:
 	ret
 
 func0000000000000084:
-	asr	x8, x2, #3
+	lsr	x8, x2, #3
 	mov	w9, #35747
 	movk	w9, #47662, lsl #16
 	mul	w8, w8, w9

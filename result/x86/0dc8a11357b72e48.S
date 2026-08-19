@@ -50,10 +50,9 @@ func0000000000000012:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000032:
-	movq	%rdi, %rax
 	addq	%rdx, %rsi
-	shlq	$3, %rsi
-	subq	%rsi, %rax
+	negq	%rsi
+	leaq	(%rdi,%rsi,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop

@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	andq	$-16, %rdi
-	leaq	16(%rdi), %rax
+	negq	%rsi
+	leaq	(%rdi,%rsi,8), %rax
+	andq	$-16, %rax
+	addq	$16, %rax
 	retq
 

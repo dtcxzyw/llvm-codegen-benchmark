@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000003d:
-	shlq	$2, %rdi
-	movl	$28, %eax
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	28(,%rdi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

@@ -2,33 +2,29 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000040:
 	movslq	%esi, %rax
-	shlq	$2, %rax
-	subq	%rax, %rdi
-	leaq	2508(%rdi), %rax
+	negq	%rax
+	leaq	2508(%rdi,%rax,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000007b:
 	movslq	%esi, %rax
-	shlq	$2, %rax
-	subq	%rax, %rdi
-	leaq	20(%rdi), %rax
+	negq	%rax
+	leaq	20(%rdi,%rax,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000006b:
 	movslq	%esi, %rax
-	shlq	$2, %rax
-	subq	%rax, %rdi
-	leaq	-12(%rdi), %rax
+	negq	%rax
+	leaq	-12(%rdi,%rax,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000006a:
 	movslq	%esi, %rax
-	shlq	$3, %rax
-	subq	%rax, %rdi
-	leaq	-72(%rdi), %rax
+	negq	%rax
+	leaq	-72(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

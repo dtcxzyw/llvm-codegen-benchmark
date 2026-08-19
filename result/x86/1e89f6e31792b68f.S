@@ -15,9 +15,9 @@ func00000000000001aa:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000e0:
-	shlq	$2, %rdx
-	subq	%rdx, %rsi
-	leaq	1028(%rsi,%rdi,4), %rax
+	negq	%rdx
+	leaq	(%rsi,%rdx,4), %rax
+	leaq	1028(%rax,%rdi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

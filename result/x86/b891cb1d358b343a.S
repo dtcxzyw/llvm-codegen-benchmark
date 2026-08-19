@@ -8,44 +8,38 @@ func000000000000001a:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	shll	$3, %edi
-	movl	$40, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	40(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000001f:
-	shll	$3, %edi
-	movl	$32, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	32(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000001b:
-	shll	$3, %edi
-	movl	$64, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	64(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
-	shll	$3, %edi
-	movl	$64, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	64(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000003:
-	shll	$3, %edi
-	movl	$128, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	128(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
-	shll	$3, %edi
-	movl	$64, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	64(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop
@@ -57,8 +51,7 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000000b:
-	addl	%edi, %edi
-	movl	$686, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	686(,%rdi,2), %eax
 	retq
 

@@ -58,9 +58,8 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000035:
-	shll	$3, %edi
-	movl	$112, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	112(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop

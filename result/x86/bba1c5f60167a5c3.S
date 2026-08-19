@@ -9,8 +9,8 @@ func000000000000001a:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	movslq	%edx, %rax
-	shlq	$3, %rax
-	subq	%rax, %rsi
-	leaq	(%rsi,%rdi), %rax
+	negq	%rax
+	leaq	(%rsi,%rax,8), %rax
+	addq	%rdi, %rax
 	retq
 

@@ -3,8 +3,7 @@
 func0000000000000110:
 	movzwl	%dx, %eax
 	addq	%rsi, %rax
-	shlq	$3, %rax
-	subq	%rax, %rdi
-	leaq	-8(%rdi), %rax
+	negq	%rax
+	leaq	-8(%rdi,%rax,8), %rax
 	retq
 

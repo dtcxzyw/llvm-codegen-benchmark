@@ -23,10 +23,9 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
-	movq	%rdi, %rax
 	shrq	$3, %rsi
-	movslq	%esi, %rcx
-	shlq	$3, %rcx
-	subq	%rcx, %rax
+	movslq	%esi, %rax
+	negq	%rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
 

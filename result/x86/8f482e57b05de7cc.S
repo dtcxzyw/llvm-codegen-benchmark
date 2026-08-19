@@ -1,10 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000fb:
-	shlq	$3, %rdx
-	subq	%rdx, %rsi
-	movl	%edi, %eax
-	leaq	16(%rsi,%rax), %rax
+	negq	%rdx
+	leaq	(%rsi,%rdx,8), %rax
+	movl	%edi, %ecx
+	leaq	16(%rcx,%rax), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

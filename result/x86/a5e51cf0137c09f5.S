@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000057:
-	addl	%esi, %esi
 	shll	$5, %edi
-	subl	%esi, %edi
-	leal	31(%rdi), %eax
+	negl	%esi
+	leal	31(%rdi,%rsi,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

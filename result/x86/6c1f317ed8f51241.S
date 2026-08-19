@@ -21,12 +21,11 @@ func0000000000000016:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
-	movq	%rdi, %rax
-	movl	%edx, %ecx
+	movl	%edx, %eax
 	testb	$1, %sil
-	movl	$11, %edx
-	cmoveq	%rcx, %rdx
-	shlq	$3, %rdx
-	subq	%rdx, %rax
+	movl	$11, %ecx
+	cmoveq	%rax, %rcx
+	negq	%rcx
+	leaq	(%rdi,%rcx,8), %rax
 	retq
 

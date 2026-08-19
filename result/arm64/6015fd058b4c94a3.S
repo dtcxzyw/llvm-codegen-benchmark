@@ -1,5 +1,5 @@
 func00000000000000ec:
-	asr	x8, x2, #4
+	lsr	x8, x2, #4
 	mov	w9, #28087
 	movk	w9, #46811, lsl #16
 	mul	w8, w8, w9

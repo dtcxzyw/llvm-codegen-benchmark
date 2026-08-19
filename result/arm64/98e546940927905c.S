@@ -1,5 +1,5 @@
 func00000000000010ca:
-	asr	x8, x1, #3
+	lsr	x8, x1, #3
 	mov	w9, #52429
 	movk	w9, #52428, lsl #16
 	mul	w8, w8, w9
@@ -11,7 +11,7 @@ func00000000000010ca:
 	ret
 
 func000000000000114a:
-	asr	x8, x1, #3
+	lsr	x8, x1, #3
 	mov	w9, #43691
 	cmp	w0, #0
 	movk	w9, #43690, lsl #16

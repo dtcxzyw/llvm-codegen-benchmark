@@ -3,9 +3,9 @@
 func0000000000000010:
 	incl	%edx
 	movslq	%edx, %rax
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	leaq	(%rdi,%rax,8), %rax
+	negq	%rsi
+	leaq	(%rdi,%rsi,8), %rcx
+	leaq	(%rcx,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -26,9 +26,9 @@ func000000000000004a:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000058:
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	movslq	%edx, %rax
-	leaq	8(%rdi,%rax,8), %rax
+	negq	%rsi
+	leaq	(%rdi,%rsi,8), %rax
+	movslq	%edx, %rcx
+	leaq	8(%rax,%rcx,8), %rax
 	retq
 

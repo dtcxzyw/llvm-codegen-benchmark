@@ -1,6 +1,6 @@
 func00000000000010ca:
 	lui	a2, 838861
-	srai	a1, a1, 3
+	srli	a1, a1, 3
 	addi	a2, a2, -819
 	mulw	a1, a1, a2
 	sext.w	a0, a0
@@ -14,7 +14,7 @@ func00000000000010ca:
 
 func000000000000114a:
 	lui	a2, 699051
-	srai	a1, a1, 3
+	srli	a1, a1, 3
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
 	sext.w	a0, a0

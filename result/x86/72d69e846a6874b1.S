@@ -22,15 +22,13 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
-	movq	%rdi, %rax
-	addl	%esi, %esi
-	subl	%esi, %eax
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000030:
-	movq	%rdi, %rax
-	addl	%esi, %esi
-	subl	%esi, %eax
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
 	retq
 

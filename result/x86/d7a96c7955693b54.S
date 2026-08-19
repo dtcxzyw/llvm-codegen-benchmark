@@ -25,17 +25,15 @@ func0000000000000040:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000019:
-	movq	%rsi, %rax
-	shrq	$32, %rax
-	shll	$2, %edi
-	subl	%edi, %eax
+	shrq	$32, %rsi
+	negl	%edi
+	leal	(%rsi,%rdi,4), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000018:
-	movq	%rsi, %rax
-	shrq	$32, %rax
-	addl	%edi, %edi
-	subl	%edi, %eax
+	shrq	$32, %rsi
+	negl	%edi
+	leal	(%rsi,%rdi,2), %eax
 	retq
 

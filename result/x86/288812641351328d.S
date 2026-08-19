@@ -1,15 +1,15 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000009:
-	leaq	255(%rsi), %rcx
+	leaq	255(%rsi), %rax
 	testq	%rsi, %rsi
-	cmovnsq	%rsi, %rcx
-	sarq	$8, %rcx
-	andq	$-8, %rcx
-	cmpq	$2, %rcx
-	movl	$1, %eax
-	cmovgeq	%rcx, %rax
-	shlq	$3, %rdi
-	subq	%rdi, %rax
+	cmovnsq	%rsi, %rax
+	sarq	$8, %rax
+	andq	$-8, %rax
+	cmpq	$2, %rax
+	movl	$1, %ecx
+	cmovgeq	%rax, %rcx
+	negq	%rdi
+	leaq	(%rcx,%rdi,8), %rax
 	retq
 

@@ -9,10 +9,10 @@ func00000000000003c8:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000341:
-	shlq	$3, %rdx
-	subq	%rdx, %rdi
+	negq	%rdx
+	leaq	(%rdi,%rdx,8), %rax
 	addq	$-8, %rsi
-	cmpq	%rsi, %rdi
+	cmpq	%rsi, %rax
 	sete	%al
 	retq
 

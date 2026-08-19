@@ -8,10 +8,9 @@ func000000000000001d:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
-	movl	%edi, %eax
-	addl	%edx, %edx
-	orl	%esi, %eax
-	subl	%edx, %eax
+	orl	%esi, %edi
+	negl	%edx
+	leal	(%rdi,%rdx,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

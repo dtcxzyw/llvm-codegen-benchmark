@@ -1,12 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000022:
-	movq	%rdi, %rax
 	addq	$511, %rsi
-	movabsq	$2305843009213693440, %rcx
-	andq	%rsi, %rcx
-	shlq	$3, %rcx
-	subq	%rcx, %rax
+	movabsq	$2305843009213693440, %rax
+	andq	%rsi, %rax
+	negq	%rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

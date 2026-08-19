@@ -10,8 +10,8 @@ func0000000000000034:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000035:
 	movzbl	%dl, %eax
-	addl	%eax, %eax
-	subl	%eax, %esi
-	leal	(%rsi,%rdi), %eax
+	negl	%eax
+	leal	(%rsi,%rax,2), %eax
+	addl	%edi, %eax
 	retq
 

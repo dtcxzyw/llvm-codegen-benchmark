@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ec:
-	sarq	$4, %rdx
+	shrq	$4, %rdx
 	imull	$-1227133513, %edx, %eax
 	andl	$2147483647, %eax
 	incq	%rsi

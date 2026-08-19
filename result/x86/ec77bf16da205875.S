@@ -7,8 +7,7 @@ func0000000000000049:
 	leaq	(%rdx,%rcx), %rax
 	cqto
 	idivq	%rsi
-	shlq	$3, %rax
-	subq	%rax, %rcx
-	movq	%rcx, %rax
+	negq	%rax
+	leaq	(%rcx,%rax,8), %rax
 	retq
 

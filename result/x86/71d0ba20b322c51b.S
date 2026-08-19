@@ -38,11 +38,11 @@ func0000000000000306:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000308:
-	shlq	$3, %rdx
-	subq	%rdx, %rsi
-	subq	%rdi, %rsi
-	movabsq	$9223372036854775800, %rax
-	cmpq	%rax, %rsi
+	negq	%rdx
+	leaq	(%rsi,%rdx,8), %rax
+	subq	%rdi, %rax
+	movabsq	$9223372036854775800, %rcx
+	cmpq	%rcx, %rax
 	seta	%al
 	retq
 

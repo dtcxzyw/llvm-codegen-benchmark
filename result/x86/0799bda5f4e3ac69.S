@@ -4,8 +4,8 @@ func00000000000000e8:
 	negb	%sil
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	addq	%rdi, %rdi
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	(%rax,%rdi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -14,7 +14,7 @@ func0000000000000068:
 	subb	%sil, %al
 	movl	$1, %ecx
 	shlxq	%rax, %rcx, %rax
-	addq	%rdi, %rdi
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	(%rax,%rdi,2), %rax
 	retq
 

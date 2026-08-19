@@ -10,27 +10,27 @@ func000000000000068a:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000606:
-	shll	$2, %edx
-	subl	%edx, %esi
-	addl	%edi, %esi
-	testl	%esi, %esi
+	negl	%edx
+	leal	(%rsi,%rdx,4), %eax
+	addl	%edi, %eax
+	testl	%eax, %eax
 	setle	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000002aa:
-	shll	$3, %edx
-	subl	%edx, %esi
-	addl	%edi, %esi
-	cmpl	$8, %esi
+	negl	%edx
+	leal	(%rsi,%rdx,8), %eax
+	addl	%edi, %eax
+	cmpl	$8, %eax
 	setge	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
-	addl	%edx, %edx
-	subl	%edx, %esi
-	leal	(%rsi,%rdi), %eax
+	negl	%edx
+	leal	(%rsi,%rdx,2), %eax
+	addl	%edi, %eax
 	shrl	$31, %eax
 	retq
 

@@ -134,10 +134,10 @@ func0000000000000164:
 
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000348:
-	shlq	$2, %rdx
-	subq	%rdx, %rsi
+	negq	%rdx
+	leaq	(%rsi,%rdx,4), %rax
 	addq	$-64, %rdi
-	cmpq	%rsi, %rdi
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
 

@@ -72,17 +72,17 @@ func0000000000000041:
 
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000048:
-	shlq	$3, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rsi, %rdi
+	negq	%rdx
+	leaq	(%rsi,%rdx,8), %rax
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop
 func00000000000000c8:
-	shlq	$3, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rsi, %rdi
+	negq	%rdx
+	leaq	(%rsi,%rdx,8), %rax
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
 

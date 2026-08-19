@@ -36,10 +36,9 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
-	movl	%edi, %eax
-	movzwl	%si, %ecx
-	shll	$2, %ecx
-	subl	%ecx, %eax
+	movzwl	%si, %eax
+	negl	%eax
+	leal	(%rdi,%rax,4), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

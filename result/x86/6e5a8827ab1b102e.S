@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000195:
-	shll	$3, %edx
-	subl	%edx, %esi
-	leal	348(%rsi,%rdi), %eax
+	negl	%edx
+	leal	(%rsi,%rdx,8), %eax
+	leal	348(%rdi,%rax), %eax
 	retq
 

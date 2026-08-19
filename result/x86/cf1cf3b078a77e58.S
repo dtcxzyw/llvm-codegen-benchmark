@@ -2,8 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	imulq	%rdx, %rsi
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	leaq	-128(%rdi), %rax
+	negq	%rsi
+	leaq	-128(%rdi,%rsi,8), %rax
 	retq
 

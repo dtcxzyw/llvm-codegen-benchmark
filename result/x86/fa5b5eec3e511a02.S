@@ -17,12 +17,11 @@ func0000000000000016:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
-	movq	%rdi, %rax
 	shlq	$30, %rsi
-	movabsq	$-4294967296, %rcx
-	addq	%rsi, %rcx
-	sarq	$32, %rcx
-	shlq	$2, %rcx
-	subq	%rcx, %rax
+	movabsq	$-4294967296, %rax
+	addq	%rsi, %rax
+	sarq	$32, %rax
+	negq	%rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 

@@ -1,12 +1,13 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
+	leal	(%rdi,%rsi), %eax
 	leal	7(%rdi,%rsi), %edx
-	movabsq	$2635249153617166336, %rax
-	mulxq	%rax, %rax, %rax
-	leal	(,%rax,8), %ecx
-	subl	%ecx, %eax
-	addl	%edx, %eax
+	movabsq	$2635249153617166336, %rcx
+	mulxq	%rcx, %rcx, %rcx
+	leal	(,%rcx,8), %edx
+	subl	%edx, %ecx
+	leal	7(%rcx,%rax), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

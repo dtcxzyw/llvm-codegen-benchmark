@@ -9,19 +9,17 @@ func0000000000000601:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000204:
-	addq	%rsi, %rsi
-	subq	%rsi, %rdi
-	addq	$16, %rdi
-	cmpq	$8, %rdi
+	negq	%rsi
+	leaq	16(%rdi,%rsi,2), %rax
+	cmpq	$8, %rax
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
-	addq	%rsi, %rsi
-	subq	%rsi, %rdi
-	addq	$-2, %rdi
-	cmpq	$30, %rdi
+	negq	%rsi
+	leaq	-2(%rdi,%rsi,2), %rax
+	cmpq	$30, %rax
 	setb	%al
 	retq
 

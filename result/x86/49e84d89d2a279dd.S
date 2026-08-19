@@ -58,7 +58,7 @@ func0000000000000054:
 	addl	%edx, %esi
 	leal	(,%rdi,8), %eax
 	subl	%eax, %edi
-	leal	4(%rsi,%rdi), %eax
+	leal	4(%rdi,%rsi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop

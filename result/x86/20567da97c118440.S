@@ -2,11 +2,11 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000028:
 	addq	%rdx, %rdx
-	leaq	(%rdx,%rdx,4), %rcx
-	andq	%rsi, %rcx
-	addq	%rcx, %rcx
-	movl	$1, %eax
-	shlxq	%rdi, %rax, %rax
-	subq	%rcx, %rax
+	leaq	(%rdx,%rdx,4), %rax
+	andq	%rsi, %rax
+	movl	$1, %ecx
+	shlxq	%rdi, %rcx, %rcx
+	negq	%rax
+	leaq	(%rcx,%rax,2), %rax
 	retq
 

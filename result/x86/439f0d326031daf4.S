@@ -1,16 +1,14 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
-	addq	%rdi, %rdi
-	movl	$126, %eax
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	126(,%rdi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000f:
-	addq	%rdi, %rdi
-	movl	$129, %eax
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	129(,%rdi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -40,22 +38,19 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000004:
-	shlq	$2, %rdi
-	movl	$1244, %eax
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	1244(,%rdi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000000b:
-	addq	%rdi, %rdi
-	movl	$6, %eax
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	6(,%rdi,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000001:
-	shlq	$3, %rdi
-	movl	$64, %eax
-	subq	%rdi, %rax
+	negq	%rdi
+	leaq	64(,%rdi,8), %rax
 	retq
 

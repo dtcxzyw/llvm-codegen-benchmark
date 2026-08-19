@@ -29,9 +29,8 @@ func0000000000000031:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000003c:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	leal	-2(%rdi), %eax
+	negl	%esi
+	leal	-2(%rdi,%rsi,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
@@ -50,16 +49,14 @@ func0000000000000010:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000014:
-	shll	$3, %esi
-	subl	%esi, %edi
-	leal	-8(%rdi), %eax
+	negl	%esi
+	leal	-8(%rdi,%rsi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000005:
-	shll	$3, %esi
-	subl	%esi, %edi
-	leal	8(%rdi), %eax
+	negl	%esi
+	leal	8(%rdi,%rsi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end9, nop

@@ -20,10 +20,9 @@ func0000000000000035:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
-	movl	%edi, %eax
-	addl	%esi, %esi
-	shll	$5, %eax
-	subl	%esi, %eax
+	shll	$5, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

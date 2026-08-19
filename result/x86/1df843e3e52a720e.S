@@ -3,7 +3,7 @@
 func0000000000000000:
 	movl	%edx, %eax
 	shlxq	%rdi, %rax, %rax
-	addq	%rsi, %rsi
-	subq	%rsi, %rax
+	negq	%rsi
+	leaq	(%rax,%rsi,2), %rax
 	retq
 

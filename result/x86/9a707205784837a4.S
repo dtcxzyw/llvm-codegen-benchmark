@@ -42,17 +42,15 @@ func000000000000003c:
 func000000000000001c:
 	movabsq	$2305843009213693950, %rax
 	andq	%rsi, %rax
-	shlq	$3, %rax
-	subq	%rax, %rdi
-	leaq	16(%rdi), %rax
+	negq	%rax
+	leaq	16(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000018:
 	movabsq	$2305843009213693950, %rax
 	andq	%rsi, %rax
-	shlq	$3, %rax
-	subq	%rax, %rdi
-	leaq	-8(%rdi), %rax
+	negq	%rax
+	leaq	-8(%rdi,%rax,8), %rax
 	retq
 

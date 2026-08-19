@@ -2,10 +2,10 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	imulq	%rsi, %rdx
-	shlq	$3, %rdx
-	subq	%rdx, %rdi
+	negq	%rdx
+	leaq	(%rdi,%rdx,8), %rax
 	shlq	$5, %rsi
-	cmpq	%rsi, %rdi
+	cmpq	%rsi, %rax
 	setl	%al
 	retq
 

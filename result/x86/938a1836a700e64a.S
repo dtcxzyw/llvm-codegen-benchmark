@@ -2,9 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	andb	$1, %dil
-	addl	%esi, %esi
-	movl	$3, %ecx
-	subl	%esi, %ecx
+	negl	%esi
+	leal	3(,%rsi,2), %ecx
 	xorl	%eax, %eax
 	cmpb	$1, %dil
 	sbbl	%eax, %eax

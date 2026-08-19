@@ -8,9 +8,8 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
-	shll	$3, %edi
-	movl	$16, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	16(,%rdi,8), %eax
 	cltq
 	retq
 
@@ -37,9 +36,8 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
-	addl	%edi, %edi
-	movl	$16, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	16(,%rdi,2), %eax
 	cltq
 	retq
 

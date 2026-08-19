@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000008:
-	addq	%rsi, %rsi
-	movl	$32, %eax
-	subq	%rsi, %rax
+	negq	%rsi
+	leaq	32(,%rsi,2), %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq

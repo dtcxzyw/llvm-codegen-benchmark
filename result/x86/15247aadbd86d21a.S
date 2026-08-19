@@ -18,10 +18,10 @@ func000000000000006f:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000002b:
-	shlq	$3, %rdx
-	subq	%rdx, %rdi
-	movl	%esi, %eax
-	leaq	(%rdi,%rax,8), %rax
+	negq	%rdx
+	leaq	(%rdi,%rdx,8), %rax
+	movl	%esi, %ecx
+	leaq	(%rax,%rcx,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

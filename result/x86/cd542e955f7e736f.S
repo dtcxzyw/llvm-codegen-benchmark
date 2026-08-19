@@ -8,15 +8,15 @@ func000000000000000c:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	addq	%rdx, %rdx
 	shlxq	%rsi, %rdi, %rax
-	subq	%rdx, %rax
+	negq	%rdx
+	leaq	(%rax,%rdx,2), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000030:
-	addq	%rdx, %rdx
 	shlxq	%rsi, %rdi, %rax
-	subq	%rdx, %rax
+	negq	%rdx
+	leaq	(%rax,%rdx,2), %rax
 	retq
 

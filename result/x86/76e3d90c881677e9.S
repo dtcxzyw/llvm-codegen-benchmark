@@ -29,17 +29,17 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c1:
-	shlq	$2, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	negq	%rdx
+	leaq	(%rsi,%rdx,4), %rax
+	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000041:
-	shlq	$3, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	negq	%rdx
+	leaq	(%rsi,%rdx,8), %rax
+	cmpq	%rdi, %rax
 	sete	%al
 	retq
 
@@ -166,9 +166,9 @@ func0000000000000104:
 
 	.prefalign	4, .Lfunc_end22, nop
 func000000000000008c:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	%rdi, %rax
 	setne	%al
 	retq
 

@@ -1,25 +1,25 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000104:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rsi, %rdi
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	%rax, %rdi
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000101:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rsi, %rdi
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
-	shlq	$3, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rsi, %rdi
+	negq	%rdx
+	leaq	(%rsi,%rdx,8), %rax
+	cmpq	%rax, %rdi
 	setb	%al
 	retq
 
@@ -33,17 +33,17 @@ func0000000000000084:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000108:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rsi, %rdi
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	cmpq	%rsi, %rdi
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
 

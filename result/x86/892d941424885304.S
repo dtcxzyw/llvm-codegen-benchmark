@@ -30,9 +30,8 @@ func000000000000003c:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000001a:
 	movl	%esi, %eax
-	shlq	$3, %rax
-	subq	%rax, %rdi
-	leaq	-56(%rdi), %rax
+	negq	%rax
+	leaq	-56(%rdi,%rax,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

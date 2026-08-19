@@ -1,12 +1,10 @@
 func0000000000000024:
-	asr	x8, x1, #2
-	cmp	x0, x8
+	cmp	x0, x1, asr #2
 	cset	w0, lo
 	ret
 
 func0000000000000025:
-	asr	x8, x1, #3
-	cmp	x0, x8
+	cmp	x0, x1, asr #3
 	cset	w0, ls
 	ret
 

@@ -74,9 +74,9 @@ func0000000000000040:
 
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000006a:
-	addq	%rdx, %rdx
-	subq	%rdx, %rsi
-	leaq	-4(%rsi,%rdi), %rax
+	negq	%rdx
+	leaq	(%rsi,%rdx,2), %rax
+	leaq	-4(%rdi,%rax), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop

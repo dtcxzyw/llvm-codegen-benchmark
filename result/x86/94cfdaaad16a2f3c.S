@@ -16,25 +16,22 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
-	movl	%edi, %eax
-	movzwl	%si, %ecx
-	addl	%ecx, %ecx
-	subl	%ecx, %eax
+	movzwl	%si, %eax
+	negl	%eax
+	leal	(%rdi,%rax,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
-	movl	%edi, %eax
-	movswl	%si, %ecx
-	addl	%ecx, %ecx
-	subl	%ecx, %eax
+	movswl	%si, %eax
+	negl	%eax
+	leal	(%rdi,%rax,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
-	movl	%edi, %eax
-	movzwl	%si, %ecx
-	addl	%ecx, %ecx
-	subl	%ecx, %eax
+	movzwl	%si, %eax
+	negl	%eax
+	leal	(%rdi,%rax,2), %eax
 	retq
 

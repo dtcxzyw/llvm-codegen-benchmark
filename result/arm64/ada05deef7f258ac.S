@@ -1,7 +1,6 @@
 func000000000000002a:
-	asr	w8, w2, #16
-	cmp	w8, w1
-	cset	w8, gt
+	cmp	w1, w2, asr #16
+	cset	w8, lt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
@@ -14,9 +13,8 @@ func000000000000000a:
 	ret
 
 func0000000000000026:
-	asr	w8, w2, #16
-	cmp	w8, w1
-	cset	w8, lt
+	cmp	w1, w2, asr #16
+	cset	w8, gt
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

@@ -17,9 +17,9 @@ func000000000000005b:
 func000000000000001a:
 	shrq	$2, %rdx
 	movslq	%edx, %rax
-	shlq	$2, %rax
-	subq	%rax, %rsi
-	leaq	(%rsi,%rdi,4), %rax
+	negq	%rax
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rax,%rdi,4), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -33,16 +33,16 @@ func0000000000000050:
 func0000000000000010:
 	shrq	$3, %rdx
 	movslq	%edx, %rax
-	shlq	$3, %rax
-	subq	%rax, %rsi
-	leaq	(%rsi,%rdi,8), %rax
+	negq	%rax
+	leaq	(%rsi,%rax,8), %rax
+	leaq	(%rax,%rdi,8), %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000058:
 	movslq	%edx, %rax
-	shlq	$2, %rax
-	subq	%rax, %rsi
-	leaq	(%rsi,%rdi), %rax
+	negq	%rax
+	leaq	(%rsi,%rax,4), %rax
+	addq	%rdi, %rax
 	retq
 

@@ -5,9 +5,8 @@ func0000000000000005:
 	movq	%rsi, %rax
 	cqto
 	idivq	%rcx
-	shlq	$2, %rax
 	andq	$-4, %rdi
-	subq	%rax, %rdi
-	movq	%rdi, %rax
+	negq	%rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 

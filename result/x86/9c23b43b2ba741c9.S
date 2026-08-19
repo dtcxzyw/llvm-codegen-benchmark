@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
-	shll	$3, %edi
-	movl	$512, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	512(,%rdi,8), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -15,9 +14,8 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
-	addl	%edi, %edi
-	movl	$26, %eax
-	subl	%edi, %eax
+	negl	%edi
+	leal	26(,%rdi,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

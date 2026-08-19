@@ -1,18 +1,16 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000f:
-	movzwl	%di, %ecx
-	addl	%ecx, %ecx
-	movl	$1024, %eax
-	subl	%ecx, %eax
+	movzwl	%di, %eax
+	negl	%eax
+	leal	1024(,%rax,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
-	movzwl	%di, %ecx
-	addl	%ecx, %ecx
-	movl	$126, %eax
-	subl	%ecx, %eax
+	movzwl	%di, %eax
+	negl	%eax
+	leal	126(,%rax,2), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

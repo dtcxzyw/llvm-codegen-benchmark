@@ -53,8 +53,7 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
 	andl	$1, %esi
-	addl	%edi, %edi
-	subl	%edi, %esi
-	leal	1(%rsi), %eax
+	negl	%edi
+	leal	1(%rsi,%rdi,2), %eax
 	retq
 

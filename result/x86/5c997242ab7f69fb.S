@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000018a:
-	addl	%esi, %esi
-	subl	%esi, %edi
-	testl	%edi, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,2), %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 
@@ -17,9 +17,9 @@ func00000000000000aa:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000008a:
-	shll	$2, %esi
-	subl	%esi, %edi
-	testl	%edi, %edi
+	negl	%esi
+	leal	(%rdi,%rsi,4), %eax
+	testl	%eax, %eax
 	setg	%al
 	retq
 

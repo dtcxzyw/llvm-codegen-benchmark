@@ -29,10 +29,10 @@ func0000000000000364:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000341:
 	movl	%edx, %eax
-	shlq	$3, %rax
-	subq	%rax, %rsi
+	negq	%rax
+	leaq	(%rsi,%rax,8), %rax
 	addq	$-8, %rdi
-	cmpq	%rsi, %rdi
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 

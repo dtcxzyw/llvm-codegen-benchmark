@@ -22,9 +22,8 @@ func000000000000003c:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000007f:
-	addl	%esi, %esi
-	movl	$60, %eax
-	subl	%esi, %eax
+	negl	%esi
+	leal	60(,%rsi,2), %eax
 	addq	%rdi, %rax
 	retq
 
