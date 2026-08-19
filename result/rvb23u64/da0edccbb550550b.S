@@ -6,10 +6,9 @@ func000000000000001a:
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	ori	a0, a0, 1
-	neg	a2, a0
-	czero.eqz	a2, a2, a1
+	czero.eqz	a2, a0, a1
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	sub	a0, a0, a2
 	ret
 
 func0000000000000012:
@@ -18,10 +17,9 @@ func0000000000000012:
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	ori	a0, a0, 1
-	neg	a2, a0
-	czero.eqz	a2, a2, a1
+	czero.eqz	a2, a0, a1
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	sub	a0, a0, a2
 	ret
 
 func0000000000000014:
@@ -32,9 +30,8 @@ func0000000000000014:
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	ori	a0, a0, 1
-	neg	a2, a0
-	czero.eqz	a2, a2, a1
+	czero.eqz	a2, a0, a1
 	czero.nez	a0, a0, a1
-	or	a0, a0, a2
+	sub	a0, a0, a2
 	ret
 

@@ -1,9 +1,8 @@
 func0000000000000015:
 	addiw	a2, a2, -1
-	neg	a3, a1
-	czero.eqz	a3, a3, a2
+	czero.eqz	a3, a1, a2
 	czero.nez	a1, a1, a2
-	or	a1, a1, a3
+	sub	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 
@@ -26,11 +25,10 @@ func0000000000000010:
 	ret
 
 func00000000000000a0:
-	neg	a3, a1
 	srliw	a2, a2, 31
+	czero.eqz	a3, a1, a2
 	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
+	sub	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 
@@ -47,10 +45,9 @@ func0000000000000014:
 	sext.w	a2, a2
 	lui	a3, 524288
 	xor	a2, a2, a3
-	neg	a3, a1
-	czero.nez	a3, a3, a2
+	czero.nez	a3, a1, a2
 	czero.eqz	a1, a1, a2
-	or	a1, a1, a3
+	sub	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 
