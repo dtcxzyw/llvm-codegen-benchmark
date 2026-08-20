@@ -8,6 +8,6 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vcvttps2dq	%xmm0, %xmm0
-	vcvtdq2ps	%xmm0, %xmm0
+	vcvtudq2ps	%xmm0, %xmm0
 	retq
 
