@@ -20,13 +20,13 @@ func0000000000000019:
 	ret
 
 func0000000000000015:
-	li	a1, -128
+	lui	a1, 24
 	sext.w	a0, a0
 	slti	a0, a0, 49
-	lui	a2, 24
-	czero.eqz	a0, a1, a0
-	addi	a1, a2, 408
-	add	a0, a0, a1
+	xori	a0, a0, 1
+	slli	a0, a0, 7
+	addi	a1, a1, 280
+	or	a0, a0, a1
 	ret
 
 func000000000000000d:

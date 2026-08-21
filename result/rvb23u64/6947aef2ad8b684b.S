@@ -139,13 +139,12 @@ func0000000000000006:
 	ret
 
 func0000000000000020:
-	lui	a2, 8192
 	sext.w	a1, a1
+	lui	a2, 8192
 	sltu	a1, a2, a1
-	lui	a2, 1046528
-	lui	a3, 4096
-	czero.nez	a1, a2, a1
-	add	a0, a0, a3
+	lui	a2, 2048
+	slli	a1, a1, 23
+	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 

@@ -15,9 +15,8 @@ func0000000000000003:
 	seqz	a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 1
-	lui	a1, 1048448
-	czero.nez	a0, a1, a0
-	lui	a1, 998656
+	slli	a0, a0, 19
+	lui	a1, 998528
 	add	a0, a0, a1
 	ret
 

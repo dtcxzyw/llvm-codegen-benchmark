@@ -21,9 +21,9 @@ func000000000000000b:
 	slt	a1, a1, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
-	lui	a1, 262144
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 29
+	slli	a0, a0, 30
+	binvi	a0, a0, 29
+	binvi	a0, a0, 30
 	ret
 
 func0000000000000001:

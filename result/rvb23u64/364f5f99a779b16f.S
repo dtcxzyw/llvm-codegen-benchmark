@@ -10,9 +10,8 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	li	a1, 256
 	andi	a0, a0, 1
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 8
 	bseti	a0, a0, 24
 	ret
 

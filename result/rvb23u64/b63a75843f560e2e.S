@@ -9,13 +9,13 @@ func0000000000000007:
 func0000000000000002:
 	andi	a1, a1, 1
 	lui	a3, 589823
-	bseti	a4, zero, 44
-	czero.nez	a1, a4, a1
 	bclri	a3, a3, 31
+	lui	a4, 60162
+	slli	a1, a1, 44
+	bseti	a4, a4, 44
 	andn	a2, a2, a3
-	or	a0, a0, a1
-	or	a0, a0, a2
-	lui	a1, 60162
+	xor	a1, a1, a4
+	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

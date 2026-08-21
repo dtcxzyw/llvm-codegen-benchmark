@@ -46,9 +46,10 @@ func0000000000000009:
 	flt.d	a0, fa0, fa5
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
-	li	a1, 2
-	czero.eqz	a0, a1, a0
-	bseti	a0, a0, 63
+	xori	a0, a0, 1
+	slli	a0, a0, 1
+	binvi	a0, a0, 1
+	binvi	a0, a0, 63
 	ret
 
 func0000000000000007:

@@ -7,14 +7,11 @@ func0000000000000001:
 	ret
 
 func0000000000000003:
-	bseti	a2, zero, 59
-	slli	a1, a1, 14
 	andi	a0, a0, 1
+	slli	a1, a1, 14
+	xori	a0, a0, -3
 	srli	a1, a1, 5
-	czero.nez	a0, a2, a0
-	li	a2, -1
+	slli	a0, a0, 59
 	or	a0, a0, a1
-	slli	a2, a2, 61
-	or	a0, a0, a2
 	ret
 

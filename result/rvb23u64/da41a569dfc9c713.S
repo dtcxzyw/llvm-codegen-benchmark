@@ -15,11 +15,10 @@ func0000000000000004:
 	ret
 
 func0000000000000006:
-	lui	a1, 1048320
-	sext.b	a0, a0
+	lui	a1, 256
+	slli	a0, a0, 56
 	srli	a0, a0, 63
-	czero.nez	a0, a1, a0
-	lui	a1, 512
+	slli	a0, a0, 20
 	add	a0, a0, a1
 	ret
 

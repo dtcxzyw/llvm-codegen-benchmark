@@ -64,11 +64,10 @@ func0000000000000013:
 	ret
 
 func0000000000000050:
-	lui	a1, 1040384
 	sext.w	a0, a0
 	sltiu	a0, a0, 16
-	czero.nez	a0, a1, a0
-	add	a0, a0, a1
+	ori	a0, a0, -2
+	slli	a0, a0, 25
 	ret
 
 func000000000000001b:
@@ -76,8 +75,8 @@ func000000000000001b:
 	sext.w	a0, a0
 	addi	a1, a1, 1
 	slt	a0, a0, a1
-	lui	a1, 64
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 14
+	slli	a0, a0, 18
+	binvi	a0, a0, 14
+	binvi	a0, a0, 18
 	ret
 

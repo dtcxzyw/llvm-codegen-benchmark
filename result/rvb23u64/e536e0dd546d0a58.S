@@ -32,15 +32,16 @@ func0000000000000041:
 	ret
 
 func00000000000002a1:
-	sext.w	a0, a0
 	srliw	a1, a1, 31
+	sext.w	a0, a0
+	xori	a1, a1, 1
+	slli	a1, a1, 29
 	seqz	a0, a0
-	lui	a2, 131072
+	binvi	a1, a1, 27
 	addi	a0, a0, -1
-	czero.eqz	a1, a2, a1
+	binvi	a1, a1, 29
 	andi	a0, a0, 576
 	or	a0, a0, a1
-	bseti	a0, a0, 27
 	ret
 
 func0000000000000066:

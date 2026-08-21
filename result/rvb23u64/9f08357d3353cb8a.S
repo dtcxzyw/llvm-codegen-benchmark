@@ -18,11 +18,9 @@ func0000000000000019:
 
 func0000000000000008:
 	flt.s	a1, fa1, fa0
-	lui	a2, 1040384
-	czero.nez	a1, a2, a1
-	lui	a2, 12288
-	add	a1, a1, a2
+	slli	a1, a1, 25
 	or	a0, a0, a1
+	bseti	a0, a0, 24
 	ret
 
 func0000000000000017:

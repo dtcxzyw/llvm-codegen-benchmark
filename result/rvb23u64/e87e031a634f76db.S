@@ -36,12 +36,12 @@ func0000000000000002:
 
 func000000000000000f:
 	andi	a2, a2, 1
-	bseti	a3, zero, 31
+	slli	a2, a2, 31
+	binvi	a2, a2, 27
 	slli	a1, a1, 37
-	czero.nez	a2, a3, a2
+	binvi	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2
-	bseti	a0, a0, 27
 	ret
 
 func000000000000000b:

@@ -8,12 +8,12 @@ func000000000000000f:
 
 func000000000000000e:
 	andi	a1, a1, 1
+	slli	a1, a1, 22
 	slliw	a2, a2, 10
-	lui	a3, 1024
-	czero.nez	a1, a3, a1
+	binvi	a1, a1, 21
+	binvi	a1, a1, 22
 	or	a0, a0, a2
 	or	a0, a0, a1
-	bseti	a0, a0, 21
 	ret
 
 func0000000000000002:
@@ -70,12 +70,12 @@ func0000000000000001:
 
 func0000000000000009:
 	andi	a2, a2, 1
-	lui	a3, 2
+	slli	a2, a2, 13
+	binvi	a2, a2, 13
 	slliw	a1, a1, 16
-	czero.nez	a2, a3, a2
+	binvi	a2, a2, 30
 	or	a0, a0, a1
 	or	a0, a0, a2
-	bseti	a0, a0, 30
 	ret
 
 func000000000000000b:

@@ -116,15 +116,14 @@ func0000000000000018:
 	ret
 
 func0000000000000021:
-	li	a2, -1
 	srli	a1, a1, 34
-	lui	a3, 509272
 	sltiu	a1, a1, 125
-	slli	a2, a2, 32
-	addi	a3, a3, 384
-	czero.nez	a1, a2, a1
-	add	a0, a0, a3
-	add	a0, a0, a1
+	lui	a2, 509272
+	xori	a1, a1, 1
+	addi	a2, a2, 384
+	slli	a1, a1, 32
+	add	a0, a0, a2
+	sub	a0, a0, a1
 	ret
 
 func0000000000000051:

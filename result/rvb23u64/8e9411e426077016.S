@@ -1,9 +1,9 @@
 func0000000000000008:
 	sext.w	a2, a2
 	sltiu	a2, a2, 128
-	lui	a3, 1048320
-	czero.eqz	a2, a3, a2
-	lui	a3, 512
+	xori	a2, a2, 1
+	slli	a2, a2, 20
+	lui	a3, 256
 	andi	a0, a0, 1
 	add	a2, a2, a3
 	czero.nez	a1, a1, a0

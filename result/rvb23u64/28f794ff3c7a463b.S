@@ -26,10 +26,9 @@ func0000000000000006:
 
 func0000000000000008:
 	andi	a1, a1, 1
-	li	a2, 1024
-	czero.nez	a1, a2, a1
-	ori	a1, a1, 320
-	bseti	a1, a1, 14
+	slli	a1, a1, 10
+	xori	a1, a1, 1344
+	binvi	a1, a1, 14
 	sltu	a0, a1, a0
 	ret
 

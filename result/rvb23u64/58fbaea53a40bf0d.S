@@ -6,8 +6,8 @@ func0000000000000002:
 
 func0000000000000007:
 	feq.s	a0, fa0, fa1
-	lui	a1, 1
-	czero.nez	a0, a1, a0
+	xori	a0, a0, 1
+	slli	a0, a0, 12
 	ori	a0, a0, 10
 	bseti	a0, a0, 15
 	ret

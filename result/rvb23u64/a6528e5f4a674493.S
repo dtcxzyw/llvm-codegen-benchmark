@@ -28,11 +28,10 @@ func0000000000000004:
 func000000000000000a:
 	add	a0, a0, a1
 	srli	a0, a0, 63
-	li	a1, 2
-	li	a2, -1
-	czero.nez	a0, a1, a0
-	srli	a2, a2, 1
-	add	a0, a0, a2
+	li	a1, -1
+	xori	a0, a0, 1
+	srli	a1, a1, 1
+	sh1add	a0, a0, a1
 	ret
 
 func0000000000000078:

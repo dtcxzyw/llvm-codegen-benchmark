@@ -19,14 +19,12 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	andi	a1, a1, 1
+	lui	a3, 1048573
 	andi	a2, a2, 1
-	li	a3, -2
-	lui	a4, 1048573
-	czero.nez	a2, a3, a2
-	addi	a3, a4, -627
-	add	a2, a2, a3
-	addi	a3, a4, -625
+	addi	a4, a3, -629
+	sh1add	a2, a2, a4
+	andi	a1, a1, 1
+	addi	a3, a3, -625
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3

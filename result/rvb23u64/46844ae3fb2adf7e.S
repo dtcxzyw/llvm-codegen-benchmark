@@ -42,10 +42,10 @@ func0000000000000004:
 
 func0000000000000006:
 	srliw	a1, a1, 31
-	lui	a2, 32
-	czero.nez	a1, a2, a1
-	add	a1, a1, a2
-	and	a0, a0, a1
+	slli	a1, a1, 17
+	lui	a2, 64
+	sub	a2, a2, a1
+	and	a0, a0, a2
 	ret
 
 func0000000000000014:

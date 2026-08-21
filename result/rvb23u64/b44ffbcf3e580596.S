@@ -4,10 +4,8 @@ func0000000000000042:
 	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
-	lui	a1, 262144
-	czero.nez	a0, a1, a0
-	lui	a1, 524288
-	or	a0, a0, a1
+	not	a0, a0
+	slli	a0, a0, 30
 	ret
 
 func0000000000000318:

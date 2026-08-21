@@ -66,12 +66,11 @@ func000000000000002a:
 
 func0000000000000038:
 	andi	a2, a2, 1
-	lui	a3, 32
-	lui	a4, 16
-	czero.nez	a2, a3, a2
-	addi	a3, a4, -256
+	slli	a2, a2, 17
+	lui	a3, 1048528
+	xnor	a2, a2, a3
 	sext.w	a1, a1
-	or	a2, a2, a3
+	addi	a2, a2, -255
 	czero.eqz	a1, a2, a1
 	sext.w	a0, a0
 	addiw	a1, a1, 255
@@ -80,12 +79,11 @@ func0000000000000038:
 
 func0000000000000028:
 	andi	a2, a2, 1
-	lui	a3, 32
-	lui	a4, 16
-	czero.nez	a2, a3, a2
-	addi	a3, a4, -256
+	slli	a2, a2, 17
+	lui	a3, 1048528
+	xnor	a2, a2, a3
 	sext.w	a1, a1
-	or	a2, a2, a3
+	addi	a2, a2, -255
 	czero.eqz	a1, a2, a1
 	sext.w	a0, a0
 	addiw	a1, a1, 255

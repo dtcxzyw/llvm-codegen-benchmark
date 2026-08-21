@@ -11,14 +11,12 @@ func0000000000000003:
 func0000000000000000:
 	andi	a2, a2, 1
 	andi	a0, a0, 1
-	lui	a3, 4096
-	czero.nez	a2, a3, a2
 	lui	a3, 16384
-	or	a1, a1, a2
+	xori	a2, a2, 49
 	czero.nez	a0, a3, a0
+	slli	a2, a2, 24
 	or	a0, a0, a1
-	bseti	a0, a0, 28
-	bseti	a0, a0, 29
+	or	a0, a0, a2
 	ret
 
 func0000000000000001:

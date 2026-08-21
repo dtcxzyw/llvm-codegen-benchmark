@@ -117,11 +117,11 @@ func0000000000000053:
 
 func000000000000002a:
 	sext.w	a1, a1
-	lui	a2, 1048468
 	slti	a1, a1, 9
-	li	a3, -64
-	addi	a2, a2, 608
-	czero.eqz	a1, a3, a1
+	lui	a2, 1048468
+	xori	a1, a1, 1
+	addi	a2, a2, 544
+	slli	a1, a1, 6
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

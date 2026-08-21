@@ -30,13 +30,13 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	li	a1, -128
+	lui	a1, 4
 	zext.h	a0, a0
 	sltiu	a0, a0, 53
-	lui	a2, 4
-	czero.eqz	a0, a1, a0
-	addi	a2, a2, -10
-	add	a0, a0, a2
+	xori	a0, a0, 1
+	slli	a0, a0, 7
+	addi	a1, a1, -138
+	or	a0, a0, a1
 	ret
 
 func000000000000000c:

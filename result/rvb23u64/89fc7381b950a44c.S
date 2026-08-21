@@ -1,13 +1,12 @@
 func0000000000000021:
+	lui	a2, 419424
 	sext.w	a0, a0
 	andi	a1, a1, 1
-	li	a2, 64
-	czero.nez	a1, a2, a1
-	lui	a2, 419424
 	snez	a0, a0
-	addi	a2, a2, 129
+	slli	a1, a1, 6
+	addi	a2, a2, 193
+	xor	a1, a1, a2
 	slli	a0, a0, 10
-	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
@@ -44,9 +43,8 @@ func0000000000000001:
 
 func0000000000000026:
 	andi	a1, a1, 1
-	li	a2, 64
 	not	a0, a0
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 6
 	srliw	a0, a0, 31
 	sh3add	a0, a0, a1
 	lui	a1, 524288

@@ -13,20 +13,17 @@ func0000000000000061:
 
 func0000000000000068:
 	andi	a1, a1, 1
-	li	a2, -256
-	czero.nez	a1, a2, a1
-	addi	a1, a1, 2047
-	addi	a1, a1, 512
+	slli	a1, a1, 8
+	ori	a1, a1, 255
+	bseti	a1, a1, 11
 	sltu	a0, a1, a0
 	ret
 
 func0000000000000065:
 	andi	a1, a1, 1
-	li	a2, -256
-	lui	a3, 1
-	czero.nez	a1, a2, a1
-	addi	a2, a3, 510
-	add	a1, a1, a2
+	slli	a1, a1, 8
+	ori	a1, a1, 254
+	bseti	a1, a1, 12
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret

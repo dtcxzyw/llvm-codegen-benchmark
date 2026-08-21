@@ -15,20 +15,19 @@ func0000000000000001:
 
 func0000000000000000:
 	andi	a0, a0, 1
-	lui	a2, 16384
 	slli	a1, a1, 9
-	czero.nez	a0, a2, a0
+	slli	a0, a0, 26
+	lui	a2, 32768
 	addiw	a1, a1, -512
-	add	a0, a0, a2
+	sub	a0, a2, a0
 	or	a0, a0, a1
 	ret
 
 func000000000000001a:
 	andi	a0, a0, 1
 	slli	a1, a1, 1
-	lui	a2, 1044480
-	czero.nez	a0, a2, a0
-	lui	a2, 16384
+	slli	a0, a0, 24
+	lui	a2, 12288
 	addiw	a1, a1, -2
 	add	a0, a0, a2
 	or	a0, a0, a1

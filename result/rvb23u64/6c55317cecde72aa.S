@@ -55,12 +55,11 @@ func0000000000000011:
 	ret
 
 func000000000000000c:
-	sext.b	a1, a1
+	slli	a1, a1, 56
 	srli	a1, a1, 63
-	li	a2, -2048
-	czero.nez	a1, a2, a1
-	lui	a2, 1
-	add	a1, a1, a2
+	slli	a1, a1, 11
+	addi	a1, a1, 2047
+	addi	a1, a1, 1
 	or	a0, a0, a1
 	ret
 

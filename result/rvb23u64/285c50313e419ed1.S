@@ -1,11 +1,10 @@
 func0000000000000006:
-	li	a0, -4
+	li	a0, -1
 	fmv.x.d	a1, fa0
+	slli	a0, a0, 55
 	srli	a1, a1, 63
-	bseti	a2, zero, 55
-	czero.nez	a0, a0, a1
-	addi	a2, a2, -6
-	sub	a0, a0, a2
+	addi	a0, a0, 2
+	sh2add	a0, a1, a0
 	ret
 
 func000000000000000a:

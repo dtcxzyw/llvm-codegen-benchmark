@@ -13,9 +13,8 @@ func000000000000000c:
 	srli	a1, a1, 23
 	or	a0, a0, a1
 	andi	a0, a0, 1
-	lui	a1, 1046528
-	czero.nez	a0, a1, a0
-	lui	a1, 2688
-	add	a0, a0, a1
+	slli	a0, a0, 23
+	bseti	a0, a0, 19
+	bseti	a0, a0, 21
 	ret
 

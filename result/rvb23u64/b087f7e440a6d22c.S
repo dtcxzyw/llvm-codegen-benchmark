@@ -3,10 +3,9 @@ func0000000000000002:
 	and	a2, a2, a3
 	seqz	a2, a2
 	and	a1, a1, a2
-	lui	a2, 512
-	czero.nez	a1, a2, a1
+	xori	a1, a1, 3
+	slli	a1, a1, 21
 	or	a0, a0, a1
-	bseti	a0, a0, 22
 	ret
 
 func0000000000000018:
@@ -14,10 +13,9 @@ func0000000000000018:
 	and	a2, a2, a3
 	snez	a2, a2
 	and	a1, a1, a2
-	lui	a2, 512
-	czero.nez	a1, a2, a1
+	xori	a1, a1, 3
+	slli	a1, a1, 21
 	or	a0, a0, a1
-	bseti	a0, a0, 22
 	ret
 
 func0000000000000003:

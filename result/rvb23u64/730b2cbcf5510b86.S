@@ -34,9 +34,8 @@ func000000000000002c:
 	sext.w	a0, a0
 	seqz	a1, a1
 	czero.eqz	a0, a1, a0
-	lui	a1, 512
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 22
+	xori	a0, a0, 3
+	slli	a0, a0, 21
 	ret
 
 func0000000000000181:

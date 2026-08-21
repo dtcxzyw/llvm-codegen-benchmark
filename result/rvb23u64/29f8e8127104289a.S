@@ -35,16 +35,15 @@ func0000000000000011:
 	ret
 
 func0000000000000029:
+	lui	a2, 65857
 	srliw	a1, a1, 1
-	lui	a2, 1015808
-	sltiu	a1, a1, 1571
 	andi	a0, a0, 1
-	czero.nez	a1, a2, a1
+	sltiu	a1, a1, 1571
 	slli	a0, a0, 13
-	lui	a2, 98625
+	addi	a2, a2, 161
+	slli	a1, a1, 27
+	or	a0, a0, a2
 	or	a0, a0, a1
-	addi	a1, a2, 161
-	add	a0, a0, a1
 	ret
 
 func0000000000000014:

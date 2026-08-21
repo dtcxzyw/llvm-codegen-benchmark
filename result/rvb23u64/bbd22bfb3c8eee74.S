@@ -34,14 +34,15 @@ func0000000000000005:
 	ret
 
 func000000000000002b:
-	andi	a1, a1, 1
 	srliw	a2, a2, 31
-	lui	a3, 131072
-	czero.eqz	a2, a3, a2
+	andi	a1, a1, 1
+	xori	a2, a2, 1
+	slli	a2, a2, 29
 	addi	a1, a1, -1
+	binvi	a2, a2, 27
 	andi	a1, a1, 576
-	or	a0, a0, a2
+	binvi	a2, a2, 29
 	or	a0, a0, a1
-	bseti	a0, a0, 27
+	or	a0, a0, a2
 	ret
 

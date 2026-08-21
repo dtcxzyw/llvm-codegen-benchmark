@@ -96,9 +96,8 @@ func0000000000000006:
 func0000000000000074:
 	addw	a0, a0, a1
 	sltiu	a0, a0, 1048
-	lui	a1, 131072
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 30
+	xori	a0, a0, 3
+	slli	a0, a0, 29
 	ret
 
 func0000000000000028:

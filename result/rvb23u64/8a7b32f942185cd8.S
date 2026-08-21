@@ -6,8 +6,7 @@ func0000000000000003:
 
 func0000000000000000:
 	andi	a1, a1, 1
-	lui	a2, 1
-	czero.eqz	a1, a2, a1
+	slli	a1, a1, 12
 	lui	a2, 6
 	or	a0, a0, a1
 	addi	a1, a2, 1636
@@ -24,11 +23,11 @@ func0000000000000002:
 
 func0000000000000001:
 	andi	a1, a1, 1
-	bseti	a2, zero, 35
-	czero.nez	a1, a2, a1
-	lui	a2, 9217
+	slli	a1, a1, 35
+	binvi	a1, a1, 29
+	binvi	a1, a1, 35
 	or	a0, a0, a1
-	slli	a2, a2, 17
-	or	a0, a0, a2
+	bseti	a0, a0, 39
+	bseti	a0, a0, 42
 	ret
 

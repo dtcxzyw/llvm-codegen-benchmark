@@ -35,10 +35,9 @@ func0000000000000015:
 	srliw	a2, a2, 31
 	xori	a2, a2, 1
 	and	a1, a1, a2
-	li	a2, 16
-	lui	a3, 176
-	czero.eqz	a1, a2, a1
-	or	a0, a0, a3
+	lui	a2, 176
+	slli	a1, a1, 4
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

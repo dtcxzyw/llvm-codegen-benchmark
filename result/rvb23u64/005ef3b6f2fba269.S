@@ -6,9 +6,9 @@ func0000000000000003:
 	ret
 
 func0000000000000019:
-	lui	a1, 4
-	bexti	a0, a0, 20
-	czero.eqz	a0, a1, a0
+	lui	a1, 256
+	and	a0, a0, a1
+	srli	a0, a0, 6
 	lui	a1, 524336
 	or	a0, a0, a1
 	ret

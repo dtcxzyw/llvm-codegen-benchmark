@@ -1,11 +1,9 @@
 func0000000000000005:
 	andi	a2, a2, 1
-	li	a3, 4
-	czero.nez	a2, a3, a2
-	lui	a3, 8
+	sh2add	a1, a2, a1
+	lui	a2, 8
+	addi	a2, a2, -7
 	sub	a2, a2, a1
-	addi	a3, a3, -11
-	add	a2, a2, a3
 	sltu	a0, a2, a0
 	xori	a0, a0, 1
 	ret

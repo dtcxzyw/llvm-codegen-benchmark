@@ -11,8 +11,8 @@ func000000000000000c:
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
+	slli	a0, a0, 32
 	bseti	a1, zero, 32
-	czero.eqz	a0, a1, a0
 	add	a0, a0, a1
 	ret
 

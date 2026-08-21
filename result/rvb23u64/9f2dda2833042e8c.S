@@ -22,13 +22,12 @@ func000000000000004a:
 	ret
 
 func0000000000000004:
-	li	a1, 64
 	addi	a0, a0, -2048
 	addiw	a0, a0, -1479
 	sltiu	a0, a0, 127
-	czero.nez	a0, a1, a0
-	ori	a0, a0, 1552
-	bseti	a0, a0, 11
+	slli	a0, a0, 6
+	xori	a0, a0, 1616
+	binvi	a0, a0, 11
 	ret
 
 func0000000000000024:

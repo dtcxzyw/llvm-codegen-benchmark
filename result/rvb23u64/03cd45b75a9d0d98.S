@@ -7,12 +7,11 @@ func0000000000000000:
 
 func0000000000000006:
 	andi	a2, a2, 1
-	lui	a3, 128
-	czero.nez	a2, a3, a2
-	lui	a3, 127104
-	add	a2, a2, a3
+	slli	a2, a2, 19
+	lui	a3, 127232
+	sub	a3, a3, a2
 	addw	a0, a0, a1
-	or	a0, a0, a2
+	or	a0, a0, a3
 	ret
 
 func0000000000000001:

@@ -40,12 +40,11 @@ func0000000000000004:
 	ret
 
 func0000000000000014:
-	bseti	a2, zero, 54
+	li	a2, 203
 	andi	a1, a1, 1
-	li	a3, 203
-	czero.eqz	a1, a2, a1
-	slli	a3, a3, 49
-	or	a1, a1, a3
+	slli	a2, a2, 49
+	slli	a1, a1, 54
+	or	a1, a1, a2
 	li	a2, 251
 	srli	a0, a0, 31
 	slli	a2, a2, 49

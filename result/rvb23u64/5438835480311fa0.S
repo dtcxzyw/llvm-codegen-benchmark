@@ -1,10 +1,10 @@
 func0000000000000014:
 	andi	a1, a1, 1
-	lui	a3, 2
-	czero.nez	a1, a3, a1
-	ori	a1, a1, 560
+	lui	a3, 6
+	slli	a1, a1, 13
+	addi	a3, a3, 560
 	andi	a2, a2, 6
-	bseti	a1, a1, 14
+	xor	a1, a1, a3
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1

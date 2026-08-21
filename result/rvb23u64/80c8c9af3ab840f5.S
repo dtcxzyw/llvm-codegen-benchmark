@@ -1,13 +1,12 @@
 func000000000000003e:
 	slliw	a2, a2, 19
 	andi	a0, a0, 1
-	lui	a3, 983040
-	czero.nez	a0, a3, a0
-	lui	a3, 385088
 	slliw	a1, a1, 5
+	lui	a3, 319552
+	slli	a0, a0, 28
 	addi	a3, a3, 1024
 	or	a1, a1, a2
-	add	a0, a0, a3
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
@@ -33,8 +32,7 @@ func000000000000000f:
 	slliw	a2, a2, 20
 	andi	a0, a0, 1
 	slliw	a1, a1, 15
-	li	a3, 16
-	czero.eqz	a0, a3, a0
+	slli	a0, a0, 4
 	lui	a3, 176
 	or	a1, a1, a2
 	or	a0, a0, a3

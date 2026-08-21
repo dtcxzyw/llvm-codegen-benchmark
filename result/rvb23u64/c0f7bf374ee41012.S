@@ -13,9 +13,8 @@ func0000000000000006:
 func0000000000000001:
 	sext.w	a2, a0
 	andi	a1, a1, 1
-	lui	a3, 1048320
-	czero.nez	a1, a3, a1
-	lui	a3, 512
+	slli	a1, a1, 20
+	lui	a3, 256
 	add	a1, a1, a3
 	binvi	a2, a2, 20
 	czero.eqz	a0, a0, a2

@@ -10,14 +10,12 @@ func0000000000000007:
 	ret
 
 func0000000000000006:
+	lui	a3, 1048573
 	andi	a2, a2, 1
-	li	a3, -2
-	lui	a4, 1048573
-	czero.nez	a2, a3, a2
-	addi	a3, a4, -627
-	add	a2, a2, a3
+	addi	a4, a3, -629
+	sh1add	a2, a2, a4
 	addiw	a1, a1, -2
-	addi	a3, a4, -625
+	addi	a3, a3, -625
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

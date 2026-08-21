@@ -28,8 +28,7 @@ func000000000000002a:
 	seqz	a1, a1
 	srliw	a0, a0, 31
 	andn	a0, a1, a0
-	li	a1, 16
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 4
 	lui	a1, 176
 	or	a0, a0, a1
 	ret

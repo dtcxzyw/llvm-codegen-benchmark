@@ -107,13 +107,12 @@ func000000000000002c:
 
 func0000000000000294:
 	srliw	a2, a2, 1
-	lui	a3, 1015808
 	sltiu	a2, a2, 1571
-	czero.nez	a2, a3, a2
-	lui	a3, 98625
+	lui	a3, 65857
+	slli	a2, a2, 27
 	addi	a3, a3, 161
 	srliw	a1, a1, 1
-	add	a2, a2, a3
+	or	a2, a2, a3
 	sltiu	a1, a1, 1561
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1

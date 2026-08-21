@@ -23,9 +23,7 @@ func0000000000000002:
 	ret
 
 func0000000000000000:
-	lui	a1, 1040384
-	andi	a0, a0, 1
-	czero.nez	a0, a1, a0
-	add	a0, a0, a1
+	ori	a0, a0, -2
+	slli	a0, a0, 25
 	ret
 

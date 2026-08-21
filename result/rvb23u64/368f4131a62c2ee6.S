@@ -33,12 +33,12 @@ func0000000000000005:
 
 func0000000000000004:
 	andi	a2, a2, 1
-	li	a3, 64
-	czero.nez	a2, a3, a2
+	slli	a2, a2, 6
+	xori	a2, a2, 65
+	binvi	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
-	ori	a0, a0, 259
-	bseti	a0, a0, 24
+	ori	a0, a0, 258
 	ret
 
 func0000000000000003:

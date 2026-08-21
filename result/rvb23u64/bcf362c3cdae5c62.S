@@ -75,12 +75,13 @@ func0000000000000029:
 
 func0000000000000014:
 	srliw	a1, a1, 31
-	li	a2, 64
-	lui	a3, 49424
-	czero.eqz	a1, a2, a1
-	andn	a0, a0, a3
+	xori	a1, a1, 1
+	slli	a1, a1, 6
+	binvi	a1, a1, 6
+	lui	a2, 49424
+	binvi	a1, a1, 26
+	andn	a0, a0, a2
 	or	a0, a0, a1
-	bseti	a0, a0, 26
 	ret
 
 func000000000000000d:

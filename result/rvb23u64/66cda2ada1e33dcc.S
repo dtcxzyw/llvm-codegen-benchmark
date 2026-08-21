@@ -1,10 +1,10 @@
 func0000000000000101:
-	sext.w	a2, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 128
-	lui	a3, 1048320
-	czero.eqz	a1, a3, a1
-	lui	a3, 512
+	sext.w	a2, a0
+	xori	a1, a1, 1
+	slli	a1, a1, 20
+	lui	a3, 256
 	add	a1, a1, a3
 	binvi	a2, a2, 20
 	czero.eqz	a0, a0, a2

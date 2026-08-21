@@ -73,9 +73,9 @@ func0000000000000015:
 
 func000000000000000d:
 	srli	a1, a1, 63
-	lui	a2, 786432
-	czero.nez	a1, a2, a1
-	add	a1, a1, a2
+	lui	a2, 524288
+	slli	a1, a1, 30
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

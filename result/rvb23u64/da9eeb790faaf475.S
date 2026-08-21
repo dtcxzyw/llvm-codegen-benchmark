@@ -13,10 +13,8 @@ func000000000000000c:
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
-	bseti	a1, zero, 11
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 12
-	bseti	a0, a0, 14
+	xori	a0, a0, 11
+	slli	a0, a0, 11
 	ret
 
 func0000000000000008:
@@ -24,10 +22,8 @@ func0000000000000008:
 	lui	a2, 8
 	sltu	a1, a2, a1
 	and	a0, a0, a1
-	bseti	a1, zero, 11
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 12
-	bseti	a0, a0, 14
+	xori	a0, a0, 11
+	slli	a0, a0, 11
 	ret
 
 func0000000000000001:

@@ -35,9 +35,9 @@ func0000000000000006:
 	sext.w	a1, a1
 	slti	a1, a1, 85
 	and	a0, a0, a1
-	lui	a1, 262144
-	czero.nez	a0, a1, a0
-	bseti	a0, a0, 29
+	slli	a0, a0, 30
+	binvi	a0, a0, 29
+	binvi	a0, a0, 30
 	ret
 
 func0000000000000004:

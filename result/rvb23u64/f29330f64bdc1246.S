@@ -6,11 +6,10 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	li	a1, 2
+	lui	a1, 16
 	andi	a0, a0, 1
-	lui	a2, 16
-	czero.nez	a0, a1, a0
-	addi	a2, a2, -6
-	add	a0, a0, a2
+	slli	a0, a0, 1
+	addi	a1, a1, -4
+	sub	a0, a1, a0
 	ret
 

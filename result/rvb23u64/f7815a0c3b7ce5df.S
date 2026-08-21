@@ -20,12 +20,13 @@ func000000000000000e:
 func0000000000000009:
 	andi	a2, a2, 1
 	lui	a3, 2
-	czero.nez	a2, a3, a2
-	slliw	a1, a1, 16
+	slli	a2, a2, 13
 	addi	a3, a3, -32
-	or	a1, a1, a2
+	binvi	a2, a2, 13
+	slliw	a1, a1, 16
 	and	a0, a0, a3
+	binvi	a2, a2, 30
 	or	a0, a0, a1
-	bseti	a0, a0, 30
+	or	a0, a0, a2
 	ret
 

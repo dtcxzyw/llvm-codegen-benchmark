@@ -8,15 +8,13 @@ func000000000000001f:
 	ret
 
 func000000000000000f:
-	andi	a1, a1, 1
 	zext.b	a2, a2
+	li	a3, -2
 	slli	a2, a2, 8
-	lui	a3, 262144
-	czero.nez	a1, a3, a1
-	lui	a3, 524288
-	or	a0, a0, a1
-	or	a2, a2, a3
+	orn	a1, a3, a1
+	slli	a1, a1, 30
 	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 
 func000000000000000e:

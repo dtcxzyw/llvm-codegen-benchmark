@@ -1,11 +1,11 @@
 func0000000000000061:
-	andi	a1, a1, 1
-	lui	a2, 2
+	lui	a2, 6
 	sext.w	a0, a0
-	czero.nez	a1, a2, a1
+	andi	a1, a1, 1
 	snez	a0, a0
-	ori	a1, a1, 560
-	bseti	a1, a1, 14
+	slli	a1, a1, 13
+	addi	a2, a2, 560
+	xor	a1, a1, a2
 	slli	a0, a0, 3
 	sllw	a0, a1, a0
 	ret

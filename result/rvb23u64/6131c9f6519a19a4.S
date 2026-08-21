@@ -42,10 +42,9 @@ func0000000000000003:
 
 func000000000000000c:
 	andi	a0, a0, 1
-	li	a2, 8
-	czero.nez	a0, a2, a0
+	xori	a0, a0, 259
+	slli	a0, a0, 3
 	add	a0, a0, a1
-	addi	a0, a0, 2047
-	addi	a0, a0, 25
+	addi	a0, a0, 8
 	ret
 

@@ -47,11 +47,11 @@ func0000000000000019:
 
 func000000000000000d:
 	srli	a1, a1, 63
-	lui	a2, 786432
 	slli	a0, a0, 40
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 30
 	srli	a0, a0, 40
 	or	a0, a0, a1
-	add	a0, a0, a2
+	lui	a1, 524288
+	or	a0, a0, a1
 	ret
 

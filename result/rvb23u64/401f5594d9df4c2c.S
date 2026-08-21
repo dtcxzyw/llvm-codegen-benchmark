@@ -43,16 +43,15 @@ func0000000000000038:
 	ret
 
 func0000000000000034:
+	lui	a2, 65857
 	andi	a1, a1, 1
-	lui	a2, 1015808
 	srliw	a0, a0, 1
-	czero.nez	a1, a2, a1
+	slli	a1, a1, 27
 	sltiu	a0, a0, 1561
+	addi	a2, a2, 161
 	slli	a0, a0, 13
-	lui	a2, 98625
+	or	a1, a1, a2
 	or	a0, a0, a1
-	addi	a1, a2, 161
-	add	a0, a0, a1
 	ret
 
 func000000000000000a:

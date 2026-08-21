@@ -1,9 +1,8 @@
 func0000000000000001:
+	li	a2, 27
 	andi	a1, a1, 1
-	li	a2, 2
-	czero.eqz	a1, a2, a1
-	li	a2, 1728
-	sh2add	a1, a2, a1
+	slli	a2, a2, 8
+	sh1add	a1, a1, a2
 	lui	a2, 2
 	zext.h	a0, a0
 	addi	a2, a2, -1279

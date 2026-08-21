@@ -22,11 +22,11 @@ func0000000000000003:
 func0000000000000001:
 	andi	a1, a1, 1
 	andi	a0, a0, 1
-	lui	a3, 16
 	slli	a1, a1, 9
-	czero.nez	a0, a3, a0
+	slli	a0, a0, 16
+	lui	a3, 32
 	or	a1, a1, a2
-	add	a0, a0, a3
+	sub	a0, a3, a0
 	or	a0, a0, a1
 	ret
 

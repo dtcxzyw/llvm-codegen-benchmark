@@ -8,10 +8,9 @@ func0000000000000028:
 
 func0000000000000021:
 	andi	a2, a2, 1
-	li	a3, 1024
-	czero.nez	a2, a3, a2
+	xori	a2, a2, 9
+	slli	a2, a2, 10
 	or	a1, a1, a2
-	bseti	a1, a1, 13
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
