@@ -13,9 +13,8 @@ func0000000000000001:
 	ret
 
 func0000000000000014:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v8, v0
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000019:

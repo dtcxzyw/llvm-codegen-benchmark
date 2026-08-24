@@ -1,9 +1,8 @@
 func0000000000000021:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v9, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v8, v8, 6
-	vmand.mm	v0, v9, v8
+	vmseq.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmseq.vi	v0, v8, 6, v0.t
 	ret
 
 func0000000000000026:
@@ -18,10 +17,9 @@ func00000000000000c1:
 	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmslt.vx	v9, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmslt.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000081:
@@ -44,45 +42,40 @@ func000000000000010a:
 
 func0000000000000101:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vi	v9, v10, 4
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsgtu.vi	v0, v10, 4
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func00000000000000c8:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsle.vi	v9, v10, -1
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgtu.vi	v8, v8, 4
-	vmand.mm	v0, v9, v8
+	vmsle.vi	v0, v10, -1
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsgtu.vi	v0, v8, 4, v0.t
 	ret
 
 func000000000000010c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vi	v9, v10, 2
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsgtu.vi	v0, v10, 2
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 
 func000000000000002c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v9, v10, 0
+	vmseq.vi	v0, v10, 0
 	li	a0, 128
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vx	v8, v8, a0
-	vmand.mm	v0, v9, v8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsne.vx	v0, v8, a0, v0.t
 	ret
 
 func0000000000000084:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v9, v10, a0
+	vmsltu.vx	v0, v10, a0
 	li	a0, 24
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vx	v8, v8, a0
-	vmand.mm	v0, v9, v8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vx	v0, v8, a0, v0.t
 	ret
 
 func0000000000000088:

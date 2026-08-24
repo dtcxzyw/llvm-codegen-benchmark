@@ -4,10 +4,9 @@ func0000000000000e94:
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v10, v10, v12
 	lui	a0, 4096
-	vmsltu.vx	v9, v10, a0
+	vmsltu.vx	v0, v10, a0
 	li	a0, 255
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vx	v8, v8, a0
-	vmand.mm	v0, v8, v9
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vx	v0, v8, a0, v0.t
 	ret
 

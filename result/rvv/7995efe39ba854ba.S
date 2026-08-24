@@ -8,35 +8,31 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	vmsgt.vi	v9, v9, 0
-	vmand.mm	v8, v0, v8
-	vmand.mm	v0, v9, v8
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vmand.mm	v0, v0, v8
+	vnsrl.wi	v8, v10, 0
+	vmsgt.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	vmsleu.vi	v9, v9, 12
-	vmand.mm	v8, v0, v8
-	vmand.mm	v0, v9, v8
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vmand.mm	v0, v0, v8
+	vnsrl.wi	v8, v10, 0
+	vmsleu.vi	v0, v8, 12, v0.t
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	vmsne.vi	v9, v9, 0
-	vmand.mm	v8, v0, v8
-	vmand.mm	v0, v8, v9
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vmand.mm	v0, v0, v8
+	vnsrl.wi	v8, v10, 0
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	vmseq.vi	v9, v9, 2
-	vmand.mm	v8, v0, v8
-	vmand.mm	v0, v9, v8
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vmand.mm	v0, v0, v8
+	vnsrl.wi	v8, v10, 0
+	vmseq.vi	v0, v8, 2, v0.t
 	ret
 
 func0000000000000008:

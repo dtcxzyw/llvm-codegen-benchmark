@@ -1,9 +1,8 @@
 func000000000000002c:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v12, v10, 0
-	vand.vi	v9, v9, 1
-	vmseq.vv	v8, v8, v12
-	vmsne.vi	v9, v9, 0
-	vmand.mm	v0, v9, v8
+	vmseq.vv	v0, v8, v12
+	vand.vi	v8, v9, 1
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 

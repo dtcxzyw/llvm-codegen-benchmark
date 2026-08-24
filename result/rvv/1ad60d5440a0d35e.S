@@ -2,22 +2,20 @@ func0000000000002042:
 	lui	a0, 2
 	addi	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v9, v9, 0
-	vmand.mm	v9, v9, v12
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
 	vmseq.vi	v8, v8, 2
-	vmor.mm	v0, v8, v9
+	vmseq.vi	v0, v9, 0, v0.t
+	vmor.mm	v0, v8, v0
 	ret
 
 func0000000000002048:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v9, v9, 0
-	vmand.mm	v9, v9, v12
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
 	vmsleu.vi	v8, v8, 1
-	vmor.mm	v0, v8, v9
+	vmseq.vi	v0, v9, 0, v0.t
+	vmor.mm	v0, v8, v0
 	ret
 

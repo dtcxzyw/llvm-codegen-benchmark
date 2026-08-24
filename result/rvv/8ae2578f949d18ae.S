@@ -31,10 +31,9 @@ func0000000000000107:
 func0000000000000088:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vv	v8, v9, v8
-	vmand.mm	v0, v12, v8
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vv	v0, v9, v8, v0.t
 	ret
 
 func0000000000000028:
@@ -56,10 +55,9 @@ func0000000000000081:
 func0000000000000084:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vv	v8, v8, v9
-	vmand.mm	v0, v12, v8
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vv	v0, v8, v9, v0.t
 	ret
 
 func0000000000000086:
@@ -74,10 +72,9 @@ func0000000000000086:
 
 func000000000000002a:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v12, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmslt.vv	v8, v9, v8
-	vmand.mm	v0, v12, v8
+	vmseq.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmslt.vv	v0, v9, v8, v0.t
 	ret
 
 func0000000000000181:

@@ -6,10 +6,9 @@ func000000000000008c:
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
 	vadd.vi	v9, v9, -10
-	vmsleu.vi	v9, v9, 3
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v8, v9
+	vmsleu.vi	v0, v9, 3
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000184:
@@ -19,10 +18,10 @@ func0000000000000184:
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
-	vadd.vi	v9, v9, -10
-	vmsleu.vi	v9, v9, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsne.vi	v0, v8, 0
+	vsetvli	zero, zero, e8, mf4, ta, mu
+	vadd.vi	v8, v9, -10
+	vmsleu.vi	v0, v8, 3, v0.t
 	ret
 

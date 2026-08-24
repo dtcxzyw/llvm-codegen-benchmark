@@ -1,16 +1,18 @@
 func0000000000000001:
-	vsetivli	zero, 16, e8, m1, ta, ma
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmv1r.v	v10, v0
 	vand.vi	v9, v9, 7
-	vmseq.vi	v9, v9, 7
-	vmand.mm	v8, v9, v8
-	vmand.mm	v0, v8, v0
+	vmv1r.v	v0, v8
+	vmseq.vi	v8, v9, 7, v0.t
+	vmand.mm	v0, v8, v10
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 16, e8, m1, ta, ma
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmv1r.v	v10, v0
 	vand.vi	v9, v9, 15
-	vmsne.vi	v9, v9, 15
-	vmand.mm	v8, v8, v9
-	vmand.mm	v0, v8, v0
+	vmv1r.v	v0, v8
+	vmsne.vi	v8, v9, 15, v0.t
+	vmand.mm	v0, v8, v10
 	ret
 

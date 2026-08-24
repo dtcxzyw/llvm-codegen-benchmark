@@ -6,10 +6,9 @@ func0000000000000984:
 	slli	a0, a0, 2
 	addi	a0, a0, -511
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
+	vmsne.vi	v0, v10, 0
 	li	a0, 64
-	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmsltu.vx	v8, v8, a0
-	vmand.mm	v0, v8, v9
+	vsetvli	zero, zero, e8, mf4, ta, mu
+	vmsltu.vx	v0, v8, a0, v0.t
 	ret
 

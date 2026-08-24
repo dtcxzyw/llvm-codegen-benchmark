@@ -1,56 +1,50 @@
 func0000000000000054:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v13, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmflt.vf	v8, v12, fa5
-	vmand.mm	v0, v13, v8
+	vmsltu.vv	v0, v8, v10
+	fmv.w.x	fa5, zero
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmflt.vf	v0, v12, fa5, v0.t
 	ret
 
 func00000000000000f4:
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vv	v0, v8, v10
 	lui	a0, 822397
 	addi	a0, a0, -416
 	fmv.w.x	fa5, a0
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v13, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmfne.vf	v8, v12, fa5
-	vmand.mm	v0, v13, v8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmfne.vf	v0, v12, fa5, v0.t
 	ret
 
 func0000000000000046:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmslt.vv	v13, v8, v10
+	vmslt.vv	v0, v8, v10
 	fli.s	fa5, 0.5
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmflt.vf	v8, v12, fa5
-	vmand.mm	v0, v13, v8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmflt.vf	v0, v12, fa5, v0.t
 	ret
 
 func0000000000000094:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v13, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmfgt.vf	v8, v12, fa5
-	vmand.mm	v0, v13, v8
+	vmsltu.vv	v0, v8, v10
+	fmv.w.x	fa5, zero
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmfgt.vf	v0, v12, fa5, v0.t
 	ret
 
 func0000000000000047:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsle.vv	v13, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmflt.vf	v8, v12, fa5
-	vmand.mm	v0, v13, v8
+	vmsle.vv	v0, v8, v10
+	fmv.w.x	fa5, zero
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmflt.vf	v0, v12, fa5, v0.t
 	ret
 
 func0000000000000045:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsleu.vv	v13, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmflt.vf	v8, v12, fa5
-	vmand.mm	v0, v13, v8
+	vmsleu.vv	v0, v8, v10
+	fmv.w.x	fa5, zero
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmflt.vf	v0, v12, fa5, v0.t
 	ret
 

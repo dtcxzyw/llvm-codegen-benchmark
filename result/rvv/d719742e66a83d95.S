@@ -3,11 +3,10 @@ func000000000000000c:
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	vsetvli	zero, zero, e8, mf4, ta, ma
+	vsetvli	zero, zero, e8, mf4, ta, mu
 	vnsrl.wi	v8, v8, 0
 	li	a0, 99
-	vmsne.vx	v8, v8, a0
-	vmand.mm	v0, v8, v0
+	vmsne.vx	v0, v8, a0, v0.t
 	ret
 
 func0000000000000001:
@@ -15,10 +14,9 @@ func0000000000000001:
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	vsetvli	zero, zero, e8, mf4, ta, ma
+	vsetvli	zero, zero, e8, mf4, ta, mu
 	vnsrl.wi	v8, v8, 0
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v8, v0
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000004:
@@ -34,10 +32,9 @@ func0000000000000008:
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	vsetvli	zero, zero, e8, mf4, ta, ma
+	vsetvli	zero, zero, e8, mf4, ta, mu
 	vnsrl.wi	v8, v8, 0
-	vmsgtu.vi	v8, v8, 2
-	vmand.mm	v0, v8, v0
+	vmsgtu.vi	v0, v8, 2, v0.t
 	ret
 
 func000000000000000a:
@@ -45,9 +42,8 @@ func000000000000000a:
 	vnsrl.wi	v10, v8, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	vsetvli	zero, zero, e8, mf4, ta, ma
+	vsetvli	zero, zero, e8, mf4, ta, mu
 	vnsrl.wi	v8, v8, 0
-	vmsgt.vi	v8, v8, 2
-	vmand.mm	v0, v8, v0
+	vmsgt.vi	v0, v8, 2, v0.t
 	ret
 

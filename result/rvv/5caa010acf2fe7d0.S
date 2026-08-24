@@ -50,19 +50,17 @@ func0000000000000101:
 func0000000000000108:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vv	v8, v9, v8
-	vmand.mm	v0, v12, v8
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vv	v0, v9, v8, v0.t
 	ret
 
 func0000000000000104:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vv	v8, v8, v9
-	vmand.mm	v0, v12, v8
+	vmsltu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vv	v0, v8, v9, v0.t
 	ret
 
 func0000000000000081:

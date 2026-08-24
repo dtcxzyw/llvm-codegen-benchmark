@@ -1,8 +1,7 @@
 func0000000000000000:
-	vsetivli	zero, 4, e8, mf4, ta, ma
+	vsetivli	zero, 4, e8, mf4, ta, mu
 	vand.vi	v10, v10, 1
-	vmsne.vi	v10, v10, 0
-	vmand.mm	v0, v0, v10
+	vmsne.vi	v0, v10, 0, v0.t
 	lui	a0, 1
 	addi	a0, a0, 770
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -10,10 +9,9 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	vsetivli	zero, 4, e8, mf4, ta, ma
+	vsetivli	zero, 4, e8, mf4, ta, mu
 	vand.vi	v10, v10, 1
-	vmsne.vi	v10, v10, 0
-	vmand.mm	v0, v0, v10
+	vmsne.vi	v0, v10, 0, v0.t
 	li	a0, 544
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0

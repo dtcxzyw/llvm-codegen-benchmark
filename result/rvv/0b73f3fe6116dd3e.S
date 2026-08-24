@@ -16,11 +16,10 @@ func0000000000000034:
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vi	v12, v12, 1
-	vmsltu.vv	v11, v8, v12
+	vmsltu.vv	v0, v8, v12
 	li	a0, 22
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vx	v8, v10, a0
-	vmand.mm	v0, v8, v11
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vmsne.vx	v0, v10, a0, v0.t
 	ret
 
 func0000000000000024:

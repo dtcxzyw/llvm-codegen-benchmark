@@ -8,9 +8,8 @@ func0000000000000001:
 
 func0000000000000004:
 	li	a0, -18
-	vsetivli	zero, 16, e8, m1, ta, ma
+	vsetivli	zero, 16, e8, m1, ta, mu
 	vand.vx	v8, v8, a0
-	vmsleu.vi	v8, v8, 5
-	vmand.mm	v0, v0, v8
+	vmsleu.vi	v0, v8, 5, v0.t
 	ret
 

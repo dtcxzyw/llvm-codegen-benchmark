@@ -31,11 +31,10 @@ func0000000000000028:
 
 func0000000000000088:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v13, v8, v10
+	vmsltu.vv	v0, v8, v10
 	lui	a0, 244
 	addi	a0, a0, 576
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vx	v8, v12, a0
-	vmand.mm	v0, v8, v13
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vx	v0, v12, a0, v0.t
 	ret
 

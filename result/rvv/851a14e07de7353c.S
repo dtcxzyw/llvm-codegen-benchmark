@@ -1,8 +1,7 @@
 func0000000000000002:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vand.vi	v9, v9, 1
-	vmandn.mm	v8, v0, v8
-	vmsne.vi	v9, v9, 0
-	vmand.mm	v0, v8, v9
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmandn.mm	v0, v0, v8
+	vand.vi	v8, v9, 1
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 

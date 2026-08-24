@@ -8,9 +8,8 @@ func0000000000000021:
 
 func000000000000002c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsne.vv	v13, v10, v8
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vi	v8, v12, -1
-	vmand.mm	v0, v8, v13
+	vmsne.vv	v0, v10, v8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsne.vi	v0, v12, -1, v0.t
 	ret
 

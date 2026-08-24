@@ -5,11 +5,10 @@ func0000000000000d84:
 	lui	a0, 25056
 	addi	a0, a0, 1823
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
+	vmsne.vi	v0, v10, 0
 	lui	a0, 8
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsltu.vx	v8, v8, a0
-	vmand.mm	v0, v8, v9
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsltu.vx	v0, v8, a0, v0.t
 	ret
 
 func0000000000000984:
@@ -19,9 +18,8 @@ func0000000000000984:
 	lui	a0, 32
 	addi	a0, a0, -48
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsleu.vi	v8, v8, 5
-	vmand.mm	v0, v8, v9
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsleu.vi	v0, v8, 5, v0.t
 	ret
 

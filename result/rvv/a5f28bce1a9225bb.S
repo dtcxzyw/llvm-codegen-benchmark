@@ -15,10 +15,9 @@ func000000000000002a:
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgt.vi	v8, v8, 11
-	vmand.mm	v0, v9, v8
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsgt.vi	v0, v8, 11, v0.t
 	ret
 
 func0000000000000038:
@@ -26,11 +25,10 @@ func0000000000000038:
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
+	vmsne.vi	v0, v10, 0
 	li	a0, -53
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgtu.vx	v8, v8, a0
-	vmand.mm	v0, v9, v8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsgtu.vx	v0, v8, a0, v0.t
 	ret
 
 func0000000000000034:

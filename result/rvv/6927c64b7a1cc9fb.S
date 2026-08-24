@@ -1,20 +1,18 @@
 func0000000000000004:
-	li	a0, -55
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vadd.vx	v9, v9, a0
+	vsetivli	zero, 16, e8, m1, ta, mu
 	vand.vi	v8, v8, 1
-	vmsleu.vi	v9, v9, 1
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsne.vi	v0, v8, 0
+	li	a0, -55
+	vadd.vx	v8, v9, a0
+	vmsleu.vi	v0, v8, 1, v0.t
 	ret
 
 func0000000000000044:
-	li	a0, -48
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vadd.vx	v9, v9, a0
+	vsetivli	zero, 16, e8, m1, ta, mu
 	vand.vi	v8, v8, 1
-	vmsleu.vi	v9, v9, 9
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsne.vi	v0, v8, 0
+	li	a0, -48
+	vadd.vx	v8, v9, a0
+	vmsleu.vi	v0, v8, 9, v0.t
 	ret
 

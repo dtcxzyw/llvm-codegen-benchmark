@@ -12,14 +12,12 @@ func000000000000000c:
 
 func0000000000000008:
 	li	a0, -65
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsgtu.vx	v8, v8, a0
-	vmand.mm	v0, v0, v8
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsgtu.vx	v0, v8, a0, v0.t
 	ret
 
 func0000000000000004:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsleu.vi	v8, v8, 5
-	vmand.mm	v0, v0, v8
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsleu.vi	v0, v8, 5, v0.t
 	ret
 

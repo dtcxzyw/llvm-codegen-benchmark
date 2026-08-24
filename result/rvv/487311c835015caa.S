@@ -4,11 +4,10 @@ func000000000000048c:
 	li	a0, -14
 	vwadd.vx	v10, v9, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsleu.vi	v9, v10, -6
+	vmsleu.vi	v0, v10, -6
 	li	a0, 32
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vx	v8, v8, a0
-	vmand.mm	v0, v8, v9
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vmsne.vx	v0, v8, a0, v0.t
 	ret
 
 func0000000000000484:
@@ -17,11 +16,10 @@ func0000000000000484:
 	li	a0, -48
 	vwadd.vx	v10, v9, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsleu.vi	v9, v10, 9
+	vmsleu.vi	v0, v10, 9
 	li	a0, 58
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsltu.vx	v8, v8, a0
-	vmand.mm	v0, v8, v9
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vmsltu.vx	v0, v8, a0, v0.t
 	ret
 
 func000000000000048a:
@@ -30,10 +28,9 @@ func000000000000048a:
 	li	a0, -97
 	vwadd.vx	v10, v9, a0
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsleu.vi	v9, v10, 5
+	vmsleu.vi	v0, v10, 5
 	li	a0, 86
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsgt.vx	v8, v8, a0
-	vmand.mm	v0, v8, v9
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vmsgt.vx	v0, v8, a0, v0.t
 	ret
 

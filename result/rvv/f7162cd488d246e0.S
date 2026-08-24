@@ -2,13 +2,10 @@ func0000000000000024:
 	li	a0, -222
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vand.vi	v10, v10, 1
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsleu.vi	v11, v8, 2
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vi	v8, v10, 0
-	vmand.mm	v0, v11, v8
+	vmsleu.vi	v0, v8, 2
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vand.vi	v8, v10, 1
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000184:
@@ -16,16 +13,13 @@ func0000000000000184:
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
+	lui	a0, 524287
+	addi	a0, a0, -2
+	vmsltu.vx	v0, v8, a0
 	li	a0, -33
-	lui	a1, 524287
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vand.vx	v10, v10, a0
-	addi	a1, a1, -2
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsltu.vx	v11, v8, a1
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vand.vx	v8, v10, a0
 	li	a0, 83
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vx	v8, v10, a0
-	vmand.mm	v0, v11, v8
+	vmsne.vx	v0, v8, a0, v0.t
 	ret
 

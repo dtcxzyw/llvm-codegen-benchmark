@@ -6,17 +6,15 @@ func0000000000000021:
 	ret
 
 func000000000000000c:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v10, v8, 0
-	vmsne.vi	v8, v10, 2
-	vmand.mm	v0, v0, v8
+	vmsne.vi	v0, v10, 2, v0.t
 	ret
 
 func0000000000000008:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, -9
-	vmsleu.vi	v8, v8, -3
-	vmand.mm	v0, v0, v8
+	vmsleu.vi	v0, v8, -3, v0.t
 	ret
 

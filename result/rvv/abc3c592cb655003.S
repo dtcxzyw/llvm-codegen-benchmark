@@ -4,9 +4,8 @@ func0000000000001e98:
 	vor.vv	v10, v10, v12
 	lui	a0, 13
 	addi	a0, a0, 2047
-	vmsgtu.vx	v9, v10, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsleu.vi	v8, v8, 13
-	vmand.mm	v0, v9, v8
+	vmsgtu.vx	v0, v10, a0
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vmsleu.vi	v0, v8, 13, v0.t
 	ret
 

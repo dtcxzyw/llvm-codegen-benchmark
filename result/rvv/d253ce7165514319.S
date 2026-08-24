@@ -1,30 +1,26 @@
 func0000000000000021:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v9, v9, 11
-	vmseq.vi	v8, v8, 7
-	vmand.mm	v0, v8, v9
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmseq.vi	v0, v9, 11
+	vmseq.vi	v0, v8, 7, v0.t
 	ret
 
 func00000000000000c6:
 	li	a0, 32
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmslt.vx	v9, v9, a0
-	vmslt.vx	v8, v8, a0
-	vmand.mm	v0, v9, v8
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmslt.vx	v0, v8, a0
+	vmslt.vx	v0, v9, a0, v0.t
 	ret
 
 func0000000000000084:
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsleu.vi	v0, v8, 2
 	li	a0, 22
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsltu.vx	v9, v9, a0
-	vmsleu.vi	v8, v8, 2
-	vmand.mm	v0, v9, v8
+	vmsltu.vx	v0, v9, a0, v0.t
 	ret
 
 func000000000000002c:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmseq.vi	v9, v9, 0
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v8, v9
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmseq.vi	v0, v9, 0
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 

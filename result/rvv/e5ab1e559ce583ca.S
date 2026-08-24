@@ -78,11 +78,10 @@ func0000000000000146:
 
 func000000000000018a:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmslt.vv	v13, v10, v8
+	vmslt.vv	v0, v10, v8
 	li	a0, 64
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vx	v8, v12, a0
-	vmand.mm	v0, v8, v13
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsne.vx	v0, v12, a0, v0.t
 	ret
 
 func0000000000000026:

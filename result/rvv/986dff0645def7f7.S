@@ -1,7 +1,6 @@
 func0000000000000004:
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsltu.vv	v8, v8, v9
-	vmand.mm	v0, v0, v8
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmsltu.vv	v0, v8, v9, v0.t
 	ret
 
 func0000000000000001:

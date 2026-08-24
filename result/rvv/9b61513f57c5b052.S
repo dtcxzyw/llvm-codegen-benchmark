@@ -11,10 +11,9 @@ func0000000000000294:
 
 func0000000000000026:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsne.vi	v9, v10, 0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsle.vi	v8, v8, 3
-	vmand.mm	v0, v9, v8
+	vmsne.vi	v0, v10, 0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsle.vi	v0, v8, 3, v0.t
 	vmv.v.i	v8, 4
 	vmerge.vim	v8, v8, -3, v0
 	ret

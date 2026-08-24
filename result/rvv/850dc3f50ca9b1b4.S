@@ -24,10 +24,9 @@ func0000000000000031:
 func0000000000000028:
 	li	a0, 21
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v11, v8, a0
-	vsetvli	zero, zero, e16, mf2, ta, ma
-	vmsne.vi	v8, v10, 0
-	vmand.mm	v0, v8, v11
+	vmsltu.vx	v0, v8, a0
+	vsetvli	zero, zero, e16, mf2, ta, mu
+	vmsne.vi	v0, v10, 0, v0.t
 	ret
 
 func0000000000000021:

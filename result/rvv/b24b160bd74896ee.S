@@ -10,9 +10,8 @@ func0000000000000021:
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vror.vi	v10, v10, 1
-	vmsleu.vx	v9, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v8, v9
+	vmsleu.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 

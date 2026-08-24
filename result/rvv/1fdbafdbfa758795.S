@@ -65,11 +65,10 @@ func0000000000000028:
 	ret
 
 func000000000000002c:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v9, v10, 0
-	vmsne.vi	v8, v8, 0
-	vmsne.vi	v9, v9, 0
-	vmand.mm	v0, v8, v9
+	vmsne.vi	v0, v9, 0
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 
 func000000000000010a:

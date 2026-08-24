@@ -20,19 +20,17 @@ func00000000000000cd:
 
 func0000000000000042:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vv	v9, v10, v12
+	vmsltu.vv	v0, v10, v12
 	fli.s	fa5, 1.0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmflt.vf	v8, v8, fa5
-	vmand.mm	v0, v8, v9
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmflt.vf	v0, v8, fa5, v0.t
 	ret
 
 func00000000000000c8:
-	fmv.w.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsne.vv	v9, v10, v12
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmfeq.vf	v8, v8, fa5
-	vmand.mm	v0, v8, v9
+	vmsne.vv	v0, v10, v12
+	fmv.w.x	fa5, zero
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmfeq.vf	v0, v8, fa5, v0.t
 	ret
 

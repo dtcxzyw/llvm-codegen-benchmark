@@ -1,17 +1,15 @@
 func000000000000002c:
-	li	a0, 126
-	vsetivli	zero, 8, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, mu
 	vnsrl.wi	v9, v10, 0
-	vmseq.vx	v9, v9, a0
-	vmsne.vx	v8, v8, a0
-	vmand.mm	v0, v8, v9
+	li	a0, 126
+	vmseq.vx	v0, v9, a0
+	vmsne.vx	v0, v8, a0, v0.t
 	ret
 
 func000000000000018c:
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vnsrl.wi	v9, v10, 0
-	vmsne.vi	v9, v9, 0
-	vmsne.vi	v8, v8, 3
-	vmand.mm	v0, v9, v8
+	vsetivli	zero, 8, e16, m1, ta, mu
+	vmsne.vi	v0, v8, 3
+	vnsrl.wi	v8, v10, 0
+	vmsne.vi	v0, v8, 0, v0.t
 	ret
 

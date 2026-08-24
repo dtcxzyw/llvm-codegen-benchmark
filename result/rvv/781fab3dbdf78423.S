@@ -10,9 +10,8 @@ func000000000000010a:
 
 func000000000000010c:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vi	v11, v8, 2
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vi	v8, v10, 2
-	vmand.mm	v0, v11, v8
+	vmsgtu.vi	v0, v8, 2
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmsne.vi	v0, v10, 2, v0.t
 	ret
 

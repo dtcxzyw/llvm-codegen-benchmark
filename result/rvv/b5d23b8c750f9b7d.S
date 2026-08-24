@@ -5,25 +5,22 @@ func0000000000000021:
 	vand.vx	v10, v10, a0
 	li	a0, -3
 	slli	a0, a0, 49
-	vmseq.vx	v9, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmseq.vx	v0, v10, a0
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000424:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsleu.vi	v9, v10, 8
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsleu.vi	v0, v10, 8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000428:
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vi	v9, v10, 8
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsgtu.vi	v0, v10, 8
+	vsetvli	zero, zero, e32, m1, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 

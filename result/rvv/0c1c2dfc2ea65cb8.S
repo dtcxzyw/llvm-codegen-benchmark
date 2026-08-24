@@ -1,17 +1,15 @@
 func0000000000000081:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vv	v9, v12, v10
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsleu.vv	v0, v12, v10
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000141:
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vv	v9, v10, v12
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmseq.vi	v8, v8, 0
-	vmand.mm	v0, v9, v8
+	vmsle.vv	v0, v10, v12
+	vsetvli	zero, zero, e8, mf2, ta, mu
+	vmseq.vi	v0, v8, 0, v0.t
 	ret
 
 func0000000000000101:

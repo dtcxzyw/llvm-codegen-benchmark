@@ -1,9 +1,8 @@
 func000000000000000c:
 	li	a0, 128
-	vsetivli	zero, 8, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, mu
 	vand.vx	v8, v8, a0
-	vmsne.vi	v8, v8, 0
-	vmand.mm	v0, v8, v0
+	vmsne.vi	v0, v8, 0, v0.t
 	lui	a0, 4096
 	addi	a0, a0, 45
 	vsetvli	zero, zero, e32, m2, ta, ma

@@ -1,8 +1,7 @@
 func0000000000000021:
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, mu
 	vsext.vf2	v11, v10
 	vnsrl.wi	v10, v8, 0
-	vmseq.vv	v8, v10, v11
-	vmand.mm	v0, v0, v8
+	vmseq.vv	v0, v10, v11, v0.t
 	ret
 
