@@ -8,8 +8,8 @@ func000000000000000f:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	shrl	$2, %esi
-	andl	$1, %esi
-	leal	(%rsi,%rdi,2), %eax
+	leal	(%rdi,%rdi), %eax
+	btl	$2, %esi
+	adcl	$0, %eax
 	retq
 

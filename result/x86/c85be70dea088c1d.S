@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testw	%si, %si
-	setne	%al
-	orl	%edi, %eax
+	movl	%edi, %eax
+	cmpw	$1, %si
+	sbbl	$-1, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -33,9 +32,8 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000061:
-	xorl	%eax, %eax
+	movl	%edi, %eax
 	cmpw	$2, %si
-	setae	%al
-	orl	%edi, %eax
+	sbbl	$-1, %eax
 	retq
 

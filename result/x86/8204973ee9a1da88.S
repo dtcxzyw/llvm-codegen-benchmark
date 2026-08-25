@@ -25,9 +25,8 @@ func0000000000000035:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000029:
-	xorl	%eax, %eax
+	movl	%edi, %eax
 	vucomisd	%xmm0, %xmm1
-	setae	%al
-	orl	%edi, %eax
+	sbbl	$-1, %eax
 	retq
 

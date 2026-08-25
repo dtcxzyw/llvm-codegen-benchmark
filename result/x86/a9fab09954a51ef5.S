@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	shrb	%dl
-	andb	$1, %dl
-	movzbl	%dl, %eax
-	orl	%esi, %edi
+	movl	%esi, %eax
+	btl	$1, %edx
+	adcw	$0, %ax
 	orl	%edi, %eax
 	retq
 

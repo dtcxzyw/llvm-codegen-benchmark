@@ -25,10 +25,10 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
-	movzwl	%di, %eax
-	cmpl	$512, %eax
-	setb	%al
-	orb	$4, %al
+	movzwl	%di, %ecx
+	xorl	%eax, %eax
+	cmpl	$512, %ecx
+	adcb	$4, %al
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

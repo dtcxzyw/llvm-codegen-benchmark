@@ -1,18 +1,20 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
+	movl	%edi, %eax
 	decb	%dl
-	shrxl	%edx, %esi, %eax
-	andl	$1, %eax
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	btl	%ecx, %esi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000d:
+	movl	%edi, %eax
 	incb	%dl
-	shrxl	%edx, %esi, %eax
-	andl	$1, %eax
-	orl	%edi, %eax
+	movzbl	%dl, %ecx
+	btl	%ecx, %esi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

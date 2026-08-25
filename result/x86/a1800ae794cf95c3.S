@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	movl	%edi, %eax
-	shrl	$6, %edi
-	andl	$1, %edi
-	leal	(%rdi,%rax,2), %eax
+	leal	(%rdi,%rdi), %eax
+	btl	$6, %edi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

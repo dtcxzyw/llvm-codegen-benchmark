@@ -27,9 +27,9 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testl	$-33554432, %esi
-	setne	%al
-	orq	%rdi, %rax
+	movq	%rdi, %rax
+	andl	$-33554432, %esi
+	cmpq	$1, %rsi
+	sbbq	$-1, %rax
 	retq
 

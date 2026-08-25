@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001c:
-	testb	%dl, %dl
-	sete	%al
-	orb	$2, %al
+	xorl	%eax, %eax
+	cmpb	$1, %dl
+	adcb	$2, %al
 	shlxq	%rax, %rsi, %rax
 	addq	%rdi, %rax
 	retq

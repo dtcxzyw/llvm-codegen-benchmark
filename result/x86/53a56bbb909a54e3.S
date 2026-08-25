@@ -10,12 +10,11 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	setne	%al
 	notb	%dil
-	movzbl	%dil, %ecx
-	andl	$1, %ecx
-	leaq	(%rax,%rcx,2), %rax
+	movzbl	%dil, %eax
+	andl	$1, %eax
+	addl	%eax, %eax
+	cmpl	$1, %esi
+	sbbq	$-1, %rax
 	retq
 

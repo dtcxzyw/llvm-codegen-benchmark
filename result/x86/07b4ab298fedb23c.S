@@ -22,9 +22,9 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000025:
+	movl	%edi, %eax
 	cmpl	%edx, %esi
-	setae	%al
-	orb	%dil, %al
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

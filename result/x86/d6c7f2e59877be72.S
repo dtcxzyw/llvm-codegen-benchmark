@@ -9,17 +9,15 @@ func000000000000000b:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000063:
-	testl	%edx, %edx
-	setne	%al
-	orb	%sil, %al
-	orb	%dil, %al
+	cmpl	$1, %edx
+	sbbb	$-1, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000023:
 	cmpl	$5, %edx
-	setb	%al
-	orb	%sil, %al
-	orb	%dil, %al
+	adcb	$0, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 

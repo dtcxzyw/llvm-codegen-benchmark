@@ -38,10 +38,9 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
-	shrl	$30, %esi
-	andl	$1, %esi
 	andl	$2, %edi
-	orl	%esi, %edi
+	btl	$30, %esi
+	adcl	$0, %edi
 	cmpl	$3, %edi
 	setne	%al
 	retq

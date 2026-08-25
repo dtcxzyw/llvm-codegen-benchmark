@@ -1,10 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
-	testb	$2, %sil
-	sete	%al
-	andb	$-2, %dil
-	orb	%dil, %al
+	movl	%edi, %eax
+	andl	$2, %esi
+	andb	$-2, %al
+	cmpq	$1, %rsi
+	adcb	$0, %al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

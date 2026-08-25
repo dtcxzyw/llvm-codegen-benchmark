@@ -11,8 +11,9 @@ func000000000000000a:
 func0000000000000008:
 	vmovq	%xmm0, %rax
 	shrq	$32, %rax
-	setne	%al
-	orb	$2, %al
+	cmpq	$1, %rax
+	movb	$2, %al
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

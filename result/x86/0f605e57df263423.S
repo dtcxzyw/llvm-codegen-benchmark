@@ -10,37 +10,33 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
-	shrl	$29, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	cmpl	%edi, %edx
+	btl	$29, %edx
+	adcl	$0, %esi
+	cmpl	%edi, %esi
 	setg	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000027:
-	shrl	$29, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	cmpl	%edi, %edx
+	btl	$29, %edx
+	adcl	$0, %esi
+	cmpl	%edi, %esi
 	setle	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
-	shrl	$29, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	cmpl	%edi, %edx
+	btl	$29, %edx
+	adcl	$0, %esi
+	cmpl	%edi, %esi
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
-	shrl	$30, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	cmpl	%edi, %edx
+	btl	$30, %edx
+	adcl	$0, %esi
+	cmpl	%edi, %esi
 	setne	%al
 	retq
 

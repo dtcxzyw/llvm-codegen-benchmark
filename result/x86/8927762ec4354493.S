@@ -15,13 +15,11 @@ func0000000000000295:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000043:
 	xorl	%eax, %eax
-	testl	%esi, %esi
-	sete	%al
-	xorl	%ecx, %ecx
 	cmpl	$-1, %edi
-	sete	%cl
-	shll	$5, %ecx
-	leal	17(%rax,%rcx), %eax
+	sete	%al
+	shll	$5, %eax
+	cmpl	$1, %esi
+	adcl	$17, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

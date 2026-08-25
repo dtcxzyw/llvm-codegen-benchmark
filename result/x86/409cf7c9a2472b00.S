@@ -30,9 +30,9 @@ func000000000000000e:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
-	shrl	$2, %esi
-	andl	$1, %esi
-	leal	(%rsi,%rdi), %eax
+	movl	%edi, %eax
+	btl	$2, %esi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

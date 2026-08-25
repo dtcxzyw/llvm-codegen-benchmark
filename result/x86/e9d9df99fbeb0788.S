@@ -23,9 +23,9 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
+	xorl	%eax, %eax
 	cmpb	%sil, %dil
-	setb	%al
-	orb	$2, %al
+	adcb	$2, %al
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

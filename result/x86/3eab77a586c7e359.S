@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000187:
-	xorl	%eax, %eax
-	cmpb	$4, %sil
-	setae	%al
 	andl	$2, %edi
-	leal	1(%rax,%rdi), %eax
+	cmpb	$4, %sil
+	sbbl	$-1, %edi
+	leal	1(%rdi), %eax
 	retq
 

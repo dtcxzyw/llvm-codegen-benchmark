@@ -9,8 +9,8 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	btq	$51, %rdi
-	setae	%al
-	orb	$4, %al
+	movb	$4, %al
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

@@ -1,11 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	shrl	$22, %esi
-	andl	$1, %esi
 	andl	$1, %edi
 	shll	$11, %edi
-	leal	512(%rsi,%rdi), %eax
+	btl	$22, %esi
+	adcl	$0, %edi
+	leal	512(%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

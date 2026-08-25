@@ -46,11 +46,9 @@ func0000000000000621:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000062a:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	setne	%al
-	orl	%edi, %eax
-	cmpl	$-2, %eax
+	cmpl	$1, %esi
+	sbbl	$-1, %edi
+	cmpl	$-2, %edi
 	setge	%al
 	retq
 
@@ -84,11 +82,9 @@ func000000000000050c:
 
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000062c:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	setne	%al
-	orl	%edi, %eax
-	cmpl	$3, %eax
+	cmpl	$1, %esi
+	sbbl	$-1, %edi
+	cmpl	$3, %edi
 	setne	%al
 	retq
 

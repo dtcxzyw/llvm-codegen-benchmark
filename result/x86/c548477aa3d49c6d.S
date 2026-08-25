@@ -20,9 +20,8 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
 	movl	%edi, %eax
-	shrl	%eax
-	andl	$1, %eax
-	andl	$4, %edi
-	orl	%edi, %eax
+	andl	$4, %eax
+	btl	$1, %edi
+	adcl	$0, %eax
 	retq
 

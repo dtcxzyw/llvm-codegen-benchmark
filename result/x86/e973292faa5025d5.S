@@ -1,11 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testq	$-5, %rsi
-	setne	%al
-	andl	$-2, %edi
-	orl	%edi, %eax
+	movl	%edi, %eax
+	andq	$-5, %rsi
+	andl	$-2, %eax
+	cmpq	$1, %rsi
+	sbbl	$-1, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -20,11 +20,11 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
-	xorl	%eax, %eax
-	testl	$1073741824, %esi
-	sete	%al
-	andl	$1073741822, %edi
-	orl	%edi, %eax
+	movl	%edi, %eax
+	andl	$1073741824, %esi
+	andl	$1073741822, %eax
+	cmpq	$1, %rsi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

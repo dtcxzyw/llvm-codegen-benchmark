@@ -28,10 +28,8 @@ func0000000000000020:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000063:
-	xorl	%eax, %eax
-	testb	%dl, %dl
-	setne	%al
-	orl	%esi, %eax
-	orl	%edi, %eax
+	cmpb	$1, %dl
+	sbbl	$-1, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 

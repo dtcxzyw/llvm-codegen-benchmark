@@ -8,8 +8,8 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
+	xorl	%eax, %eax
 	btl	%esi, %edi
-	setb	%al
-	orb	$48, %al
+	adcb	$48, %al
 	retq
 

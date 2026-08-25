@@ -1,16 +1,16 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
-	testb	%sil, %sil
-	setne	%al
-	orb	%dil, %al
+	movl	%edi, %eax
+	cmpb	$1, %sil
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
-	testb	%sil, %sil
-	sete	%al
-	orb	%dil, %al
+	movl	%edi, %eax
+	cmpb	$1, %sil
+	adcb	$0, %al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -36,15 +36,15 @@ func0000000000000030:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
+	movl	%edi, %eax
 	cmpb	$8, %sil
-	setae	%al
-	orb	%dil, %al
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000011:
+	movl	%edi, %eax
 	cmpb	$32, %sil
-	setb	%al
-	orb	%dil, %al
+	adcb	$0, %al
 	retq
 

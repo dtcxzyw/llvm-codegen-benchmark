@@ -10,10 +10,9 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
-	shrl	$16, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	cmpl	%edx, %edi
+	btl	$16, %edx
+	adcl	$0, %esi
+	cmpl	%esi, %edi
 	setg	%al
 	retq
 
@@ -73,10 +72,9 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000061:
-	shrl	$2, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	cmpl	%edx, %edi
+	btl	$2, %edx
+	adcl	$0, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 

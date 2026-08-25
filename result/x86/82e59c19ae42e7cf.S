@@ -4,10 +4,9 @@ func0000000000000605:
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	setne	%al
-	xorl	%ecx, %ecx
-	testl	%esi, %esi
-	setne	%cl
-	leal	(%rcx,%rax,4), %eax
+	shll	$2, %eax
+	cmpl	$1, %esi
+	sbbl	$-1, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

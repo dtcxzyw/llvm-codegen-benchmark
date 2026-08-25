@@ -19,10 +19,9 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
-	shrl	$30, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	cmpl	$3, %edx
+	btl	$30, %edx
+	adcl	$0, %esi
+	cmpl	$3, %esi
 	sete	%al
 	orb	%dil, %al
 	retq

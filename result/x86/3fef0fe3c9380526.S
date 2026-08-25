@@ -67,10 +67,10 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000003:
+	xorl	%eax, %eax
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
-	setb	%al
-	orb	$2, %al
+	adcb	$2, %al
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop

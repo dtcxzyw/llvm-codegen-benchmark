@@ -22,8 +22,8 @@ func0000000000000009:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
-	shrq	$43, %rdi
-	andl	$1, %edi
-	leal	4(%rdi), %eax
+	xorl	%eax, %eax
+	btq	$43, %rdi
+	adcl	$4, %eax
 	retq
 

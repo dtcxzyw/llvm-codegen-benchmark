@@ -13,12 +13,10 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
-	shrb	$2, %dl
-	andb	$1, %dl
 	andb	$1, %sil
 	leal	(%rsi,%rsi), %eax
-	orb	%dl, %al
-	addb	%dil, %al
+	btl	$2, %edx
+	adcb	%dil, %al
 	addb	$2, %al
 	retq
 

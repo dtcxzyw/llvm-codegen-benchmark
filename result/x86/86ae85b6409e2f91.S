@@ -41,10 +41,9 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000011:
+	movl	%edi, %eax
 	movabsq	$1844674407370955162, %rcx
-	xorl	%eax, %eax
 	cmpq	%rcx, %rsi
-	setb	%al
-	orl	%edi, %eax
+	adcl	$0, %eax
 	retq
 

@@ -11,11 +11,10 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
-	xorl	%eax, %eax
-	testl	$32752, %edx
-	sete	%al
-	orl	%esi, %eax
-	orl	%edi, %eax
+	andl	$32752, %edx
+	cmpl	$1, %edx
+	adcl	$0, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -39,10 +38,8 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000063:
-	xorl	%eax, %eax
-	testw	%dx, %dx
-	setne	%al
-	orl	%esi, %eax
-	orl	%edi, %eax
+	cmpw	$1, %dx
+	sbbl	$-1, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 

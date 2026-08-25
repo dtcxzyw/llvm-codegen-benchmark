@@ -18,10 +18,10 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
-	shrl	$3, %esi
-	andl	$1, %esi
-	shrl	%edi
-	andl	$256, %edi
-	leal	(%rdi,%rsi), %eax
+	movl	%edi, %eax
+	shrl	%eax
+	andl	$256, %eax
+	btl	$3, %esi
+	adcl	$0, %eax
 	retq
 

@@ -1,11 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
-	testl	%esi, %esi
-	sete	%al
-	movslq	%edi, %rcx
-	orb	$2, %al
-	shlxq	%rax, %rcx, %rax
+	movslq	%edi, %rax
+	xorl	%ecx, %ecx
+	cmpl	$1, %esi
+	adcb	$2, %cl
+	shlxq	%rcx, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

@@ -31,9 +31,9 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
-	testl	%edi, %edi
-	sete	%al
-	orb	$-14, %al
+	xorl	%eax, %eax
+	cmpl	$1, %edi
+	adcb	$-14, %al
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

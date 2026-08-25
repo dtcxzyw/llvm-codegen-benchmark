@@ -1,12 +1,12 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testl	$-7, %esi
-	setne	%al
+	andl	$-7, %esi
 	notb	%dil
-	movzbl	%dil, %ecx
-	andl	$1, %ecx
-	leal	(%rax,%rcx,2), %eax
+	movzbl	%dil, %eax
+	andl	$1, %eax
+	addl	%eax, %eax
+	cmpl	$1, %esi
+	sbbl	$-1, %eax
 	retq
 

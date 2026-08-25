@@ -68,9 +68,8 @@ func000000000000000c:
 func0000000000000013:
 	shll	$24, %edx
 	leal	(%rdx,%rdi), %eax
-	shrl	$15, %esi
-	andl	$1, %esi
-	orl	%esi, %eax
+	btl	$15, %esi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop

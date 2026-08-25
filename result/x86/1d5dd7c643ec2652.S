@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000011:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	sete	%al
-	leaq	(%rax,%rdi,2), %rax
+	leaq	(%rdi,%rdi), %rax
+	cmpl	$1, %esi
+	adcq	$0, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -27,17 +26,15 @@ func0000000000000015:
 
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c7:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	setne	%al
-	leaq	(%rax,%rdi,2), %rax
+	leaq	(%rdi,%rdi), %rax
+	cmpl	$1, %esi
+	sbbq	$-1, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	sete	%al
-	leaq	(%rax,%rdi,8), %rax
+	leaq	(,%rdi,8), %rax
+	cmpl	$1, %esi
+	adcq	$0, %rax
 	retq
 

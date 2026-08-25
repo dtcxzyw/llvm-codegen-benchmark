@@ -1,22 +1,20 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000063:
-	testl	%edx, %edx
-	setne	%cl
 	notb	%sil
 	andb	$1, %sil
 	leal	(%rsi,%rsi), %eax
-	orb	%cl, %al
+	cmpl	$1, %edx
+	sbbb	$-1, %al
 	orb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
-	cmpl	$5, %edx
-	setb	%cl
 	andb	$1, %sil
 	leal	(%rsi,%rsi), %eax
-	orb	%cl, %al
+	cmpl	$5, %edx
+	adcb	$0, %al
 	orb	%dil, %al
 	retq
 

@@ -1,16 +1,16 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	shrxq	%rdx, %rsi, %rax
-	andl	$1, %eax
-	leal	(%rax,%rdi,2), %eax
+	leal	(%rdi,%rdi), %eax
+	btq	%rdx, %rsi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	shrxq	%rdx, %rsi, %rax
-	andl	$1, %eax
-	leal	(%rax,%rdi,2), %eax
+	leal	(%rdi,%rdi), %eax
+	btq	%rdx, %rsi
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

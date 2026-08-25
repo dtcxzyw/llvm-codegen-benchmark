@@ -34,8 +34,8 @@ func000000000000002b:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000020:
 	cmpl	$9, %esi
-	setae	%al
-	orb	$2, %al
+	movb	$2, %al
+	sbbb	$-1, %al
 	shlxl	%eax, %edi, %eax
 	retq
 

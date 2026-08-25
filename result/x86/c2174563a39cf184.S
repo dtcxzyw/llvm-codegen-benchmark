@@ -2,17 +2,15 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000043:
 	cmpb	$8, %dl
-	setae	%al
-	orb	%sil, %al
-	orb	%dil, %al
+	sbbb	$-1, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
-	testb	%dl, %dl
-	sete	%al
-	orb	%sil, %al
-	orb	%dil, %al
+	cmpb	$1, %dl
+	adcb	$0, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -33,9 +31,8 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000063:
-	testb	%dl, %dl
-	setne	%al
-	orb	%sil, %al
-	orb	%dil, %al
+	cmpb	$1, %dl
+	sbbb	$-1, %sil
+	leal	(%rsi,%rdi), %eax
 	retq
 

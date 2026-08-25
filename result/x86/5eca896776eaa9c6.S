@@ -19,11 +19,10 @@ func0000000000000015:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
+	movl	%edi, %eax
+	andb	$-32, %al
 	cmpl	$2, %esi
-	setb	%al
-	andb	$-32, %dil
-	orb	%dil, %al
-	addb	$3, %al
+	adcb	$3, %al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

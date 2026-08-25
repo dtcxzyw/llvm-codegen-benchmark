@@ -19,11 +19,9 @@ func000000000000000b:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000063:
-	xorl	%ecx, %ecx
-	testl	%edx, %edx
-	setne	%cl
 	leal	(%rdi,%rsi), %eax
-	orl	%ecx, %eax
+	cmpl	$1, %edx
+	sbbl	$-1, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

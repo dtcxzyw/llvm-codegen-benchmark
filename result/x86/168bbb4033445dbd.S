@@ -12,22 +12,20 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000003:
-	shrl	$22, %edx
-	andl	$1, %edx
-	leal	(%rdx,%rsi), %ecx
-	leal	512(%rdx,%rsi), %eax
+	btl	$22, %edx
+	adcl	$0, %esi
+	leal	512(%rsi), %eax
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovnel	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
-	shrl	%edx
-	andl	$1, %edx
-	leal	(%rdx,%rsi), %ecx
-	movl	%ecx, %eax
+	btl	$1, %edx
+	adcl	$0, %esi
+	movl	%esi, %eax
 	orl	$-520094722, %eax
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovnel	%esi, %eax
 	retq
 

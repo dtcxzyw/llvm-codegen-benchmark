@@ -17,10 +17,9 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testb	%sil, %sil
-	setne	%al
-	orq	%rdi, %rax
+	movq	%rdi, %rax
+	cmpb	$1, %sil
+	sbbq	$-1, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -41,9 +40,8 @@ func0000000000000030:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000011:
-	xorl	%eax, %eax
+	movq	%rdi, %rax
 	cmpb	$-2, %sil
-	setb	%al
-	orq	%rdi, %rax
+	adcq	$0, %rax
 	retq
 

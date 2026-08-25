@@ -24,10 +24,9 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
-	xorl	%eax, %eax
-	cmpl	%edx, %esi
-	seta	%al
-	orl	%edi, %eax
+	movl	%edi, %eax
+	cmpl	%esi, %edx
+	adcl	$0, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
@@ -47,9 +46,8 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000024:
-	xorl	%eax, %eax
+	movl	%edi, %eax
 	cmpl	%edx, %esi
-	setb	%al
-	orl	%edi, %eax
+	adcl	$0, %eax
 	retq
 

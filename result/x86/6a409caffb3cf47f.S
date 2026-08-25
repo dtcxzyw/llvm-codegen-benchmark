@@ -2,9 +2,10 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
 	notl	%esi
-	testb	$-16, %sil
-	sete	%al
-	orb	$2, %al
+	andl	$240, %esi
+	xorl	%eax, %eax
+	cmpl	$1, %esi
+	adcb	$2, %al
 	movzbl	%al, %ecx
 	testb	$1, %dil
 	movl	$1, %eax

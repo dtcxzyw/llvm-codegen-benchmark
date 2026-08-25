@@ -17,9 +17,9 @@ func0000000000000013:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
-	shrl	$17, %edx
-	andl	$1, %edx
-	leal	(%rdx,%rsi), %eax
+	movl	%esi, %eax
+	btl	$17, %edx
+	adcl	$0, %eax
 	orl	%edi, %eax
 	retq
 

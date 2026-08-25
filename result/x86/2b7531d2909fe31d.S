@@ -25,9 +25,9 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000031:
-	testw	%si, %si
-	setne	%al
-	andb	$4, %dil
-	orb	%dil, %al
+	movl	%edi, %eax
+	andb	$4, %al
+	cmpw	$1, %si
+	sbbb	$-1, %al
 	retq
 

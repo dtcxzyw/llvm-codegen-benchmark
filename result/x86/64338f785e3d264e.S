@@ -2,14 +2,14 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000061:
 	cmpq	$40, %rdi
-	setae	%al
-	orb	$48, %al
+	movb	$48, %al
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000031:
-	testq	%rdi, %rdi
-	setne	%al
-	orb	$2, %al
+	cmpq	$1, %rdi
+	movb	$2, %al
+	sbbb	$-1, %al
 	retq
 

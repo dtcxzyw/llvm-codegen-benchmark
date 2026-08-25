@@ -15,9 +15,9 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000031:
-	testl	%esi, %esi
-	setne	%al
-	orb	%dil, %al
+	movl	%edi, %eax
+	cmpl	$1, %esi
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -50,9 +50,9 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000011:
+	movl	%edi, %eax
 	cmpl	$5, %esi
-	setb	%al
-	orb	%dil, %al
+	adcb	$0, %al
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop
@@ -64,23 +64,23 @@ func0000000000000060:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000051:
+	movl	%edi, %eax
 	cmpl	$65536, %esi
-	setb	%al
-	orb	%dil, %al
+	adcb	$0, %al
 	retq
 
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000061:
+	movl	%edi, %eax
 	cmpl	$3, %esi
-	setae	%al
-	orb	%dil, %al
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000021:
+	movl	%edi, %eax
 	cmpl	$2, %esi
-	setae	%al
-	orb	%dil, %al
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end12, nop

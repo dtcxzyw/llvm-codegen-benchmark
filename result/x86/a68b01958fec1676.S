@@ -17,18 +17,16 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	sete	%al
-	orq	%rdi, %rax
+	movq	%rdi, %rax
+	cmpl	$1, %esi
+	adcq	$0, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	setne	%al
-	orq	%rdi, %rax
+	movq	%rdi, %rax
+	cmpl	$1, %esi
+	sbbq	$-1, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

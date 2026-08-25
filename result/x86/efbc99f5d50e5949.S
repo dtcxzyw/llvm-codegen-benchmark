@@ -1,25 +1,21 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000063:
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	setne	%al
-	leal	(%rsi,%rax), %ecx
-	leal	2048(%rsi,%rax), %eax
+	cmpl	$1, %edx
+	sbbl	$-1, %esi
+	leal	2048(%rsi), %eax
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovnel	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
-	xorl	%ecx, %ecx
-	testl	%edx, %edx
-	setne	%cl
-	orl	%esi, %ecx
-	movl	%ecx, %eax
+	cmpl	$1, %edx
+	sbbl	$-1, %esi
+	movl	%esi, %eax
 	orl	$-520094722, %eax
 	testb	$1, %dil
-	cmovnel	%ecx, %eax
+	cmovnel	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

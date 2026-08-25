@@ -13,13 +13,11 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000b:
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	sete	%al
-	leal	(%rsi,%rax), %ecx
-	leal	2(%rsi,%rax), %eax
+	cmpl	$1, %edx
+	adcl	$0, %esi
+	leal	2(%rsi), %eax
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovel	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

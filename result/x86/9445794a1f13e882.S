@@ -10,10 +10,11 @@ func0000000000000030:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000031:
-	testl	$528, %esi
-	setne	%al
-	andb	$-2, %dil
-	orb	%dil, %al
+	movl	%edi, %eax
+	andl	$528, %esi
+	andb	$-2, %al
+	cmpl	$1, %esi
+	sbbb	$-1, %al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -26,9 +27,10 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
-	testb	$32, %sil
-	sete	%al
-	andb	$-2, %dil
-	orb	%dil, %al
+	movl	%edi, %eax
+	andl	$32, %esi
+	andb	$-2, %al
+	cmpl	$1, %esi
+	adcb	$0, %al
 	retq
 

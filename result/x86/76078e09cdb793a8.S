@@ -10,10 +10,9 @@ func000000000000000f:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000009:
-	shrl	$10, %edx
-	andl	$1, %edx
-	orl	%esi, %edx
-	leal	(%rdi,%rdx,4), %eax
+	btl	$10, %edx
+	adcl	$0, %esi
+	leal	(%rdi,%rsi,4), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

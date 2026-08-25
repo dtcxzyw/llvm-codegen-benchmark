@@ -11,11 +11,9 @@ func0000000000000521:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000621:
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	setne	%al
-	orl	%esi, %eax
-	cmpl	%eax, %edi
+	cmpl	$1, %edx
+	sbbl	$-1, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 

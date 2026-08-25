@@ -9,10 +9,9 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
-	xorl	%eax, %eax
+	movq	%rdi, %rax
 	cmpq	$64, %rsi
-	setae	%al
-	orq	%rdi, %rax
+	sbbq	$-1, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -40,10 +39,9 @@ func0000000000000029:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000031:
-	xorl	%eax, %eax
-	testq	%rsi, %rsi
-	setne	%al
-	orq	%rdi, %rax
+	movq	%rdi, %rax
+	cmpq	$1, %rsi
+	sbbq	$-1, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
@@ -73,9 +71,8 @@ func0000000000000010:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000011:
-	xorl	%eax, %eax
+	movq	%rdi, %rax
 	cmpq	$8, %rsi
-	setb	%al
-	orq	%rdi, %rax
+	adcq	$0, %rax
 	retq
 
