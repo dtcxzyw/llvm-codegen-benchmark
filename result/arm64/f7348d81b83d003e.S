@@ -1,7 +1,6 @@
 func00000000000000f0:
-	ubfiz	x8, x1, #7, #32
-	add	x9, x0, x8
-	add	x0, x9, x8
+	mov	w8, w1
+	add	x0, x0, x8, lsl #8
 	ret
 
 func00000000000000ff:
