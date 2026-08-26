@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
-	shlq	%rsi
-	testq	%rsi, %rsi
+	addq	%rsi, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq

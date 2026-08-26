@@ -29,8 +29,7 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000001:
-	shlq	%rsi
-	testq	%rsi, %rsi
+	addq	%rsi, %rsi
 	sete	%al
 	notb	%dil
 	andb	%dil, %al

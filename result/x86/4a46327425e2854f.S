@@ -11,8 +11,7 @@ func0000000000000318:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000302:
-	shlq	%rdx
-	testq	%rdx, %rdx
+	addq	%rdx, %rdx
 	setne	%cl
 	testq	%rsi, %rsi
 	sete	%al

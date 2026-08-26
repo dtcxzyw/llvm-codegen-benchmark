@@ -307,8 +307,7 @@ func0000000000000019:
 	movabsq	$9218868437227405312, %rcx
 	cmpq	%rcx, %rax
 	sete	%cl
-	shlq	%rax
-	testq	%rax, %rax
+	addq	%rax, %rax
 	sete	%al
 	orb	%cl, %al
 	retq

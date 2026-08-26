@@ -20,8 +20,7 @@ func0000000000000181:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
-	shlq	%rdx
-	testq	%rdx, %rdx
+	addq	%rdx, %rdx
 	setne	%cl
 	cmpq	%rsi, %rdi
 	setne	%al

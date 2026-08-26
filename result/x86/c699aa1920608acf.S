@@ -8,8 +8,7 @@ func0000000000000041:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
-	shlq	%rdi
-	testq	%rdi, %rdi
+	addq	%rdi, %rdi
 	setne	%al
 	retq
 

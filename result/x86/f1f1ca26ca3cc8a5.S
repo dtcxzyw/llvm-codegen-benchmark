@@ -45,15 +45,13 @@ func0000000000000009:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
-	shlq	%rdi
-	testq	%rdi, %rdi
+	addq	%rdi, %rdi
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000007:
-	shlq	%rdi
-	testq	%rdi, %rdi
+	addq	%rdi, %rdi
 	setne	%al
 	retq
 

@@ -2,8 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
 	subq	%rdi, %rsi
-	shlq	%rsi
-	testq	%rsi, %rsi
+	addq	%rsi, %rsi
 	sete	%al
 	retq
 

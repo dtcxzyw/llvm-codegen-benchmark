@@ -72,8 +72,7 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
-	shlq	%rsi
-	testq	%rsi, %rsi
+	addq	%rsi, %rsi
 	sete	%cl
 	testb	%dil, %dil
 	setns	%al
@@ -104,8 +103,7 @@ func000000000000030a:
 
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000018a:
-	shlq	%rsi
-	testq	%rsi, %rsi
+	addq	%rsi, %rsi
 	setne	%cl
 	testb	%dil, %dil
 	setns	%al

@@ -22,16 +22,14 @@ func000000000000001a:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000010:
-	shlq	%rsi
-	testq	%rsi, %rsi
+	addq	%rsi, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000e:
-	shlq	%rsi
-	testq	%rsi, %rsi
+	addq	%rsi, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq
