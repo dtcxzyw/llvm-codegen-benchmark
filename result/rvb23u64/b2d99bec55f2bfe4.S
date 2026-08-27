@@ -10,12 +10,11 @@ func0000000000000101:
 
 func0000000000000021:
 	zext.h	a2, a2
-	zext.b	a1, a1
 	addi	a2, a2, -118
+	zext.b	a1, a1
 	seqz	a2, a2
-	addi	a1, a1, -75
 	and	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 75
+	czero.nez	a0, a0, a1
 	ret
 

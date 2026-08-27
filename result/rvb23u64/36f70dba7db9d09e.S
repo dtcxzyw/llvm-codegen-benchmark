@@ -13,11 +13,11 @@ func0000000000000b02:
 
 func0000000000006310:
 	addiw	a2, a2, -5
-	addiw	a1, a1, -12
+	sext.w	a1, a1
 	snez	a2, a2
-	snez	a1, a1
+	xori	a1, a1, 12
 	srliw	a0, a0, 24
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -77,22 +77,23 @@ func0000000000000842:
 	ret
 
 func000000000000630c:
-	addiw	a1, a1, -3
+	sext.w	a1, a1
 	sext.w	a0, a0
 	sext.w	a2, a2
-	snez	a1, a1
-	czero.eqz	a1, a1, a2
+	snez	a2, a2
+	xori	a1, a1, 3
+	czero.eqz	a1, a2, a1
 	slti	a0, a0, 22
 	or	a0, a0, a1
 	ret
 
 func0000000000006042:
 	addiw	a2, a2, -62
-	addiw	a1, a1, -30
+	sext.w	a1, a1
 	snez	a2, a2
-	seqz	a1, a1
+	xori	a1, a1, 30
 	addiw	a0, a0, -10
-	and	a1, a1, a2
+	czero.nez	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -100,35 +101,35 @@ func0000000000006042:
 func0000000000002308:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	lui	a3, 3
 	srliw	a2, a2, 4
-	addi	a4, a3, 63
+	lui	a3, 3
 	sltiu	a2, a2, 1893
+	addi	a4, a3, 63
 	xor	a1, a1, a4
-	snez	a1, a1
 	addi	a3, a3, -1116
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	sltu	a0, a0, a3
 	or	a0, a0, a1
 	ret
 
 func0000000000006318:
-	addiw	a1, a1, -256
+	sext.w	a1, a1
 	sext.w	a0, a0
 	sext.w	a2, a2
-	snez	a1, a1
-	czero.eqz	a1, a1, a2
+	snez	a2, a2
+	xori	a1, a1, 256
+	czero.eqz	a1, a2, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000002318:
 	sext.w	a2, a2
-	addiw	a1, a1, -8
+	sext.w	a1, a1
 	sltiu	a2, a2, -2
-	snez	a1, a1
+	xori	a1, a1, 8
 	addiw	a0, a0, -12
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -170,11 +171,11 @@ func0000000000000854:
 
 func0000000000006302:
 	addiw	a2, a2, -13
-	addiw	a1, a1, -13
+	sext.w	a1, a1
 	snez	a2, a2
-	snez	a1, a1
+	xori	a1, a1, 13
 	addiw	a0, a0, -25
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -210,12 +211,12 @@ func0000000000000848:
 	ret
 
 func0000000000002048:
-	sext.w	a2, a2
+	sext.w	a1, a1
 	sext.w	a0, a0
-	addiw	a1, a1, -8
+	sext.w	a2, a2
 	sltiu	a2, a2, 13
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 8
+	czero.nez	a1, a2, a1
 	sltiu	a0, a0, 9
 	or	a0, a0, a1
 	ret

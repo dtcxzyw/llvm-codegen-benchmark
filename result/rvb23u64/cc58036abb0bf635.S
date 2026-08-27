@@ -14,9 +14,9 @@ func0000000000000104:
 func0000000000000102:
 	fmv.d.x	fa5, zero
 	flt.d	a2, fa5, fa0
-	addiw	a1, a1, -2
-	seqz	a1, a1
-	and	a1, a1, a2
+	sext.w	a1, a1
+	xori	a1, a1, 2
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

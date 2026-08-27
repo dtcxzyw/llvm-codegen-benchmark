@@ -1,11 +1,11 @@
 func000000000000018c:
 	andi	a2, a1, -2
-	addiw	a1, a1, -238
+	sext.w	a1, a1
 	addiw	a2, a2, -236
-	snez	a1, a1
 	snez	a2, a2
+	xori	a1, a1, 238
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func000000000000002c:

@@ -30,12 +30,11 @@ func0000000000000101:
 
 func000000000000002c:
 	andi	a2, a2, 248
+	addi	a2, a2, -240
 	sub	a0, a0, a1
-	addi	a1, a2, -240
-	addi	a0, a0, -3
-	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	seqz	a1, a2
+	xori	a0, a0, 3
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000028:

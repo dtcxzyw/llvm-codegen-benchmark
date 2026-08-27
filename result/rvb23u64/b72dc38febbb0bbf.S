@@ -1,9 +1,9 @@
 func0000000000000014:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
-	addiw	a0, a0, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	not	a0, a0
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000006c:
@@ -95,9 +95,9 @@ func00000000000000cc:
 func000000000000001a:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
-	addiw	a0, a0, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	not	a0, a0
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000a7:
@@ -111,17 +111,17 @@ func00000000000000a7:
 func0000000000000018:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	addiw	a0, a0, -1
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000016:
 	fli.s	fa5, inf
 	flt.s	a1, fa0, fa5
-	addiw	a0, a0, -5
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 5
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000a2:
@@ -145,8 +145,8 @@ func000000000000001c:
 	lui	a1, 272736
 	fmv.w.x	fa5, a1
 	fle.s	a1, fa5, fa0
-	addiw	a0, a0, -5
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 5
+	czero.nez	a0, a1, a0
 	ret
 

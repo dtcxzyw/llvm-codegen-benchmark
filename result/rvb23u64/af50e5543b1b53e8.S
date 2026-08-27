@@ -6,14 +6,13 @@ func000000000000048c:
 	ret
 
 func000000000000008c:
+	lui	a2, 262144
 	zext.h	a0, a0
 	addiw	a1, a1, -1
-	lui	a2, 262144
 	addi	a2, a2, -1
-	addi	a0, a0, -1
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000058c:

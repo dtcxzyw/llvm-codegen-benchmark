@@ -58,9 +58,10 @@ func0000000000000084:
 	ret
 
 func000000000000018c:
-	addiw	a0, a0, -2
-	snez	a0, a0
-	czero.eqz	a0, a0, a1
+	sext.w	a0, a0
+	snez	a1, a1
+	xori	a0, a0, 2
+	czero.eqz	a0, a1, a0
 	li	a1, -3
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 8

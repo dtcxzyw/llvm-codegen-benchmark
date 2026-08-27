@@ -22,11 +22,9 @@ func0000000000000081:
 	lui	a2, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a2)
 	flt.d	a2, fa5, fa0
-	sext.w	a1, a1
-	sext.w	a0, a0
 	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	sext.w	a0, a0
+	czero.nez	a0, a2, a0
 	ret
 
 .LCPI3_0:
@@ -35,11 +33,9 @@ func000000000000004c:
 	lui	a2, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a2)
 	flt.d	a2, fa0, fa5
-	sext.w	a1, a1
-	sext.w	a0, a0
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	sext.w	a0, a0
+	czero.eqz	a0, a2, a0
 	ret
 
 .LCPI4_0:
@@ -57,11 +53,9 @@ func0000000000000106:
 func0000000000000041:
 	fli.d	fa5, 1.0
 	flt.d	a2, fa0, fa5
-	sext.w	a1, a1
-	sext.w	a0, a0
 	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	sext.w	a0, a0
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000146:

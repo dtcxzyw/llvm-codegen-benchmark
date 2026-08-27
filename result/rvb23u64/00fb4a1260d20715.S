@@ -9,10 +9,9 @@ func0000000000000021:
 
 func00000000000000c1:
 	sext.w	a2, a2
-	addi	a1, a1, -4
 	slti	a2, a2, 1401
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 4
+	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
@@ -22,8 +21,7 @@ func00000000000000cc:
 	addi	a3, a3, -1663
 	slti	a2, a2, 4
 	xor	a1, a1, a3
-	snez	a1, a1
-	and	a0, a0, a2
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

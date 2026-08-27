@@ -18,10 +18,9 @@ func0000000000000301:
 	ld	a2, %lo(.LCPI2_0)(a2)
 	zext.b	a1, a1
 	sltiu	a1, a1, 6
-	xor	a0, a0, a2
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000008c:
@@ -48,10 +47,9 @@ func0000000000000024:
 
 func000000000000028c:
 	zext.b	a1, a1
-	addi	a0, a0, -3
 	sltiu	a1, a1, 3
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 3
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000c1:
@@ -80,10 +78,10 @@ func000000000000010c:
 	ret
 
 func0000000000000181:
-	addi	a0, a0, -1
 	zext.b	a1, a1
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -93,21 +91,19 @@ func000000000000018c:
 	ret
 
 func0000000000000184:
-	zext.b	a1, a1
 	li	a2, 1
-	addi	a1, a1, -3
+	zext.b	a1, a1
 	bseti	a2, a2, 63
-	snez	a1, a1
 	sltu	a0, a0, a2
-	and	a0, a0, a1
+	xori	a1, a1, 3
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000034:
 	zext.b	a1, a1
-	addi	a1, a1, -1
-	seqz	a1, a1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	xori	a1, a1, 1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002a:
@@ -128,10 +124,9 @@ func0000000000000088:
 func0000000000000101:
 	zext.b	a1, a1
 	sltiu	a1, a1, 2
-	addi	a0, a0, -16
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 16
+	czero.nez	a0, a1, a0
 	ret
 
 .LCPI18_0:
@@ -141,10 +136,9 @@ func0000000000000141:
 	ld	a2, %lo(.LCPI18_0)(a2)
 	sext.b	a1, a1
 	slti	a1, a1, 54
-	xor	a0, a0, a2
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000194:

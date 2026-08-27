@@ -1,12 +1,11 @@
 func0000000000000281:
-	slli	a2, a2, 48
 	sext.w	a1, a1
-	srli	a2, a2, 58
+	slli	a2, a2, 48
 	sext.w	a0, a0
-	addi	a2, a2, -54
-	seqz	a2, a2
+	srli	a2, a2, 58
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 54
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -83,14 +82,13 @@ func000000000000002c:
 	ret
 
 func00000000000000c1:
-	slli	a2, a2, 48
 	sext.w	a1, a1
-	srli	a2, a2, 58
+	slli	a2, a2, 48
 	sext.w	a0, a0
-	addi	a2, a2, -54
-	seqz	a2, a2
+	srli	a2, a2, 58
 	slt	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 54
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000030c:

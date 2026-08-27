@@ -15,12 +15,11 @@ func000000000000002c:
 	ret
 
 func0000000000000186:
-	andi	a1, a0, 240
-	slli	a0, a0, 56
-	addi	a1, a1, -224
-	snez	a1, a1
-	srli	a0, a0, 63
-	and	a0, a0, a1
+	slli	a1, a0, 56
+	andi	a0, a0, 240
+	srli	a1, a1, 63
+	xori	a0, a0, 224
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000028:
@@ -35,13 +34,12 @@ func0000000000000026:
 	ret
 
 func000000000000018c:
-	zext.b	a1, a0
-	andi	a0, a0, 254
-	addi	a0, a0, -192
-	addi	a1, a1, -194
-	snez	a0, a0
+	andi	a1, a0, 254
+	zext.b	a0, a0
+	addi	a1, a1, -192
 	snez	a1, a1
-	and	a0, a0, a1
+	xori	a0, a0, 194
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000024:

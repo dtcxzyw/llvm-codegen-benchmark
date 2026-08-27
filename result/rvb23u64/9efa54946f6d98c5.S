@@ -19,13 +19,11 @@ func0000000000000144:
 	ret
 
 func0000000000000024:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	zext.h	a2, a2
 	addi	a2, a2, -118
 	xor	a0, a0, a1
 	sltiu	a1, a2, 5
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	czero.nez	a0, a1, a0
 	ret
 

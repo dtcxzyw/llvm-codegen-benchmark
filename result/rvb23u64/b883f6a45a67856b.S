@@ -5,8 +5,7 @@ func00000000000000cc:
 	addi	a2, a2, 767
 	slt	a3, a1, a3
 	xor	a1, a1, a2
-	snez	a1, a1
-	and	a0, a0, a3
+	czero.eqz	a1, a3, a1
 	and	a0, a0, a1
 	ret
 
@@ -38,12 +37,11 @@ func0000000000000188:
 
 func000000000000030c:
 	sext.w	a1, a1
-	lui	a2, 272
-	sltiu	a3, a1, 48
-	xor	a1, a1, a2
-	xori	a2, a3, 1
-	snez	a1, a1
-	and	a1, a1, a2
+	sltiu	a2, a1, 48
+	binvi	a1, a1, 16
+	xori	a2, a2, 1
+	binvi	a1, a1, 20
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

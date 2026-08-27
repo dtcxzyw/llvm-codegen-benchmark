@@ -19,13 +19,12 @@ func0000000000000084:
 	ret
 
 func000000000000008c:
-	zext.b	a1, a1
 	zext.b	a2, a2
+	zext.b	a1, a1
 	addi	a2, a2, -91
-	addi	a1, a1, -95
 	sltiu	a2, a2, -26
-	snez	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 95
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

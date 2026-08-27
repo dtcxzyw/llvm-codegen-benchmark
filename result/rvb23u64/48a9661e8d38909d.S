@@ -30,14 +30,12 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	li	a2, 1
 	zext.h	a1, a1
-	bseti	a2, a2, 63
 	addi	a1, a1, -5
-	xor	a0, a0, a2
+	binvi	a0, a0, 0
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 63
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000014c:
@@ -48,12 +46,10 @@ func000000000000014c:
 
 func0000000000000184:
 	lui	a2, 16
-	zext.h	a1, a1
 	addi	a2, a2, -1
-	xor	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, -19
-	and	a0, a0, a1
+	andn	a1, a2, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000188:
@@ -95,10 +91,9 @@ func0000000000000024:
 
 func000000000000008c:
 	zext.h	a1, a1
-	addi	a0, a0, -1
 	sltiu	a1, a1, 120
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000028:
@@ -118,9 +113,8 @@ func0000000000000158:
 
 func0000000000000141:
 	sext.h	a1, a1
-	addi	a0, a0, -1
 	sgtz	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 

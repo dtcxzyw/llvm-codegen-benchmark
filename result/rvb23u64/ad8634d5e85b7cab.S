@@ -1,12 +1,11 @@
 func0000000000000118:
+	lui	a2, 16
 	zext.h	a0, a0
 	zext.h	a1, a1
-	lui	a2, 16
 	addi	a2, a2, -5
-	addi	a0, a0, -7
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 7
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000058:

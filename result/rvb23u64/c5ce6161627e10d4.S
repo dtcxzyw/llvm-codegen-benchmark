@@ -20,10 +20,9 @@ func0000000000000081:
 
 func0000000000000424:
 	andi	a1, a0, 6
-	addi	a1, a1, -2
 	addi	a0, a0, -2
-	seqz	a1, a1
 	sltiu	a0, a0, 3
-	and	a0, a0, a1
+	xori	a1, a1, 2
+	czero.nez	a0, a0, a1
 	ret
 

@@ -1,10 +1,10 @@
 func0000000000000318:
 	andi	a2, a1, 13
+	sext.w	a1, a1
 	addi	a2, a2, -5
-	addiw	a1, a1, -12
 	snez	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 12
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

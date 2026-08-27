@@ -27,10 +27,9 @@ func000000000000018a:
 func0000000000000101:
 	sext.w	a1, a1
 	sltiu	a1, a1, 4
-	addi	a0, a0, -6
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 6
+	czero.nez	a0, a1, a0
 	slli	a0, a0, 3
 	addi	a0, a0, 216
 	ret

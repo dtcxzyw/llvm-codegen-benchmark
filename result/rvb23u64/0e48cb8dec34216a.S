@@ -13,7 +13,7 @@ func000000000000010c:
 
 func000000000000002c:
 	xor	a1, a1, a2
-	snez	a1, a1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	czero.eqz	a0, a0, a1
 	ret
 

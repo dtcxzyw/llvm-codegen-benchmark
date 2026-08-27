@@ -18,11 +18,11 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
-	andi	a0, a0, 15
-	addi	a0, a0, -9
 	andi	a1, a1, 48
-	snez	a0, a0
-	czero.eqz	a0, a0, a1
+	andi	a0, a0, 15
+	snez	a1, a1
+	xori	a0, a0, 9
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002c:

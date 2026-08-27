@@ -1,8 +1,8 @@
 func0000000000000181:
-	zext.h	a2, a2
+	slli	a2, a2, 48
+	snez	a2, a2
 	xor	a0, a0, a1
-	seqz	a0, a0
-	czero.eqz	a0, a0, a2
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000021:
@@ -15,10 +15,9 @@ func0000000000000021:
 
 func0000000000000081:
 	zext.h	a2, a2
+	sltiu	a2, a2, 173
 	xor	a0, a0, a1
-	sltiu	a1, a2, 173
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000025:

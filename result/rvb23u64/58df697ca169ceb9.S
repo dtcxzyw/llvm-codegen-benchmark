@@ -7,11 +7,11 @@ func0000000000000d85:
 	ret
 
 func0000000000000d8c:
-	addi	a1, a1, 1
-	xor	a0, a0, a1
 	andi	a2, a2, 31
-	snez	a0, a0
-	czero.eqz	a0, a0, a2
+	addi	a1, a1, 1
+	snez	a2, a2
+	xor	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000d84:

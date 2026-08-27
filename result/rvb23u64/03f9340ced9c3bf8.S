@@ -83,16 +83,14 @@ func0000000000000108:
 	ret
 
 func000000000000008c:
+	lui	a2, 1048574
 	zext.h	a0, a0
 	zext.h	a1, a1
-	lui	a2, 1048574
-	lui	a3, 2
 	addi	a2, a2, -47
-	addi	a3, a3, 12
 	add	a1, a1, a2
-	xor	a0, a0, a3
+	xori	a0, a0, 12
 	sltiu	a1, a1, -5
-	snez	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 13
+	czero.eqz	a0, a1, a0
 	ret
 

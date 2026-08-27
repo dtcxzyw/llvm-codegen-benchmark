@@ -1,11 +1,10 @@
 func0000000000001c24:
 	bset	a2, zero, a2
-	sext.w	a2, a2
 	sext.w	a0, a0
-	xor	a1, a1, a2
-	seqz	a1, a1
+	sext.w	a2, a2
 	sltiu	a0, a0, 13
-	and	a0, a0, a1
+	xor	a1, a1, a2
+	czero.nez	a0, a0, a1
 	ret
 
 func00000000000010ac:

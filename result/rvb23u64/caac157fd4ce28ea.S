@@ -1,10 +1,9 @@
 func0000000000000424:
 	andi	a1, a1, 15
 	addi	a1, a1, -1
-	addi	a0, a0, -7
-	snez	a0, a0
 	sltiu	a1, a1, 7
-	and	a0, a0, a1
+	xori	a0, a0, 7
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000426:

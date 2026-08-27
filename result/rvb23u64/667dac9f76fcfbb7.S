@@ -15,19 +15,17 @@ func0000000000000d85:
 
 func0000000000000d8c:
 	addi	a2, a2, 3
-	xor	a2, a2, a0
-	xor	a0, a0, a1
-	snez	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xor	a1, a1, a0
+	snez	a1, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000d81:
 	addi	a2, a2, 320
 	xor	a2, a2, a0
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 

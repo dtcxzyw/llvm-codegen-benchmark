@@ -9,9 +9,8 @@ func0000000000000021:
 func000000000000002a:
 	xor	a1, a1, a2
 	sext.w	a0, a0
-	snez	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000081:

@@ -48,20 +48,18 @@ func0000000000000101:
 	addi	a1, a1, -2048
 	li	a2, 27
 	and	a1, a1, a0
-	slli	a2, a2, 11
 	srliw	a0, a0, 16
-	xor	a1, a1, a2
+	slli	a2, a2, 11
 	sltiu	a0, a0, 17
-	seqz	a1, a1
-	and	a0, a0, a1
+	xor	a1, a1, a2
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000141:
-	zext.b	a1, a0
-	sext.w	a0, a0
-	addi	a1, a1, -7
-	slti	a0, a0, 23
-	seqz	a1, a1
-	and	a0, a0, a1
+	sext.w	a1, a0
+	zext.b	a0, a0
+	slti	a1, a1, 23
+	xori	a0, a0, 7
+	czero.nez	a0, a1, a0
 	ret
 

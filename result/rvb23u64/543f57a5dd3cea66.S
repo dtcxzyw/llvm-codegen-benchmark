@@ -32,9 +32,9 @@ func0000000000000021:
 	ret
 
 func0000000000000821:
-	zext.b	a1, a1
-	addi	a1, a1, -255
-	snez	a1, a1
-	czero.nez	a0, a1, a0
+	li	a2, 255
+	seqz	a0, a0
+	andn	a1, a2, a1
+	czero.eqz	a0, a0, a1
 	ret
 

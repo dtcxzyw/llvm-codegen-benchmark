@@ -18,9 +18,9 @@ func0000000000000021:
 
 func000000000000002c:
 	andi	a2, a2, 1024
+	seqz	a2, a2
 	xor	a0, a0, a1
-	snez	a0, a0
-	czero.nez	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func00000000000000ca:

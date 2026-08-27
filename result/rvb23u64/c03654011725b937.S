@@ -19,11 +19,11 @@ func00000000000000e8:
 func000000000000002c:
 	zext.h	a2, a2
 	zext.h	a1, a1
+	sext.w	a0, a0
 	xor	a1, a1, a2
-	addiw	a0, a0, -3
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 3
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000168:
@@ -47,13 +47,11 @@ func0000000000000128:
 	ret
 
 func0000000000000034:
-	zext.h	a2, a2
-	zext.h	a1, a1
-	sext.w	a0, a0
 	xor	a1, a1, a2
-	seqz	a1, a1
+	sext.w	a0, a0
 	sltiu	a0, a0, 65
-	and	a0, a0, a1
+	zext.h	a1, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000101:

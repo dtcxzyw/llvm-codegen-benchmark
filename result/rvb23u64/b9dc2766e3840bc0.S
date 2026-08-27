@@ -26,9 +26,9 @@ func000000000000004c:
 	fabs.d	fa5, fa0
 	fld	fa4, %lo(.LCPI2_0)(a1)
 	flt.d	a1, fa5, fa4
-	addiw	a0, a0, -1
-	snez	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI3_0:

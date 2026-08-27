@@ -51,24 +51,23 @@ func0000000000001f01:
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	sext.w	a1, a1
+	sext.w	a0, a0
 	sltiu	a1, a1, 7
-	addiw	a0, a0, -224
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 224
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000001e81:
 	slli	a2, a2, 18
+	sext.w	a0, a0
 	or	a1, a1, a2
 	lui	a2, 16
-	sext.w	a0, a0
-	addi	a2, a2, -2
 	srliw	a1, a1, 16
-	xor	a0, a0, a2
+	addi	a2, a2, -2
 	sltiu	a1, a1, 17
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000001581:

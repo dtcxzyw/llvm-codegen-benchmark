@@ -34,10 +34,9 @@ func0000000000000301:
 	ld	a2, %lo(.LCPI4_0)(a2)
 	andi	a1, a1, 248
 	addi	a1, a1, -48
-	xor	a0, a0, a2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 .LCPI5_0:
@@ -47,10 +46,9 @@ func0000000000000701:
 	ld	a2, %lo(.LCPI5_0)(a2)
 	zext.b	a1, a1
 	addi	a1, a1, -57
-	xor	a0, a0, a2
 	sltiu	a1, a1, -9
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000488:

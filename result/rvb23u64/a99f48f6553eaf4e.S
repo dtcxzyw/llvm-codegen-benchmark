@@ -2,8 +2,8 @@ func000000000000014c:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a2, a1, a2
-	sltiu	a1, a1, -1
-	and	a1, a1, a2
+	not	a1, a1
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

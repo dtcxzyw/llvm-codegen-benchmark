@@ -48,10 +48,9 @@ func0000000000000184:
 func000000000000018c:
 	xor	a1, a1, a2
 	sext.w	a0, a0
-	binvi	a0, a0, 20
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 20
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008a:
@@ -68,38 +67,34 @@ func0000000000000024:
 	ret
 
 func000000000000002c:
-	lui	a3, 524288
-	sext.w	a0, a0
-	addiw	a3, a3, -1
 	xor	a1, a1, a2
-	xor	a0, a0, a3
+	sext.w	a0, a0
+	lui	a2, 524288
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xnor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000181:
 	xor	a1, a1, a2
-	addiw	a0, a0, -1
+	sext.w	a0, a0
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000014c:
 	sext.w	a2, a2
+	sgtz	a2, a2
 	xor	a0, a0, a1
-	sgtz	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000018a:
 	xor	a1, a1, a2
 	sext.w	a0, a0
-	snez	a1, a1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000104:
@@ -127,24 +122,23 @@ func000000000000002a:
 
 func0000000000000101:
 	sltu	a1, a2, a1
-	addiw	a0, a0, -5
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 5
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000081:
 	sltu	a1, a1, a2
-	addiw	a0, a0, -125
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 125
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000186:
 	xor	a1, a1, a2
 	sext.w	a0, a0
-	snez	a1, a1
 	slti	a0, a0, 3
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000085:
@@ -165,10 +159,9 @@ func0000000000000028:
 func0000000000000141:
 	sext.w	a2, a2
 	slti	a2, a2, 23
+	xori	a2, a2, 1
 	xor	a0, a0, a1
-	xori	a1, a2, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000094:
@@ -201,17 +194,15 @@ func000000000000010a:
 
 func00000000000000cc:
 	sext.w	a2, a2
+	slti	a2, a2, 1
 	xor	a0, a0, a1
-	slti	a1, a2, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000026:
 	xor	a1, a1, a2
 	sext.w	a0, a0
-	seqz	a1, a1
 	slti	a0, a0, 9
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 

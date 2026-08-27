@@ -26,9 +26,9 @@ func0000000000000194:
 	ret
 
 func000000000000018c:
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a0, a0
-	czero.eqz	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000024:
@@ -59,9 +59,9 @@ func000000000000018b:
 	ret
 
 func0000000000000181:
+	snez	a2, a2
 	xor	a0, a0, a1
-	seqz	a0, a0
-	czero.eqz	a0, a0, a2
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000034:
@@ -70,9 +70,9 @@ func0000000000000034:
 	ret
 
 func000000000000002c:
+	seqz	a2, a2
 	xor	a0, a0, a1
-	snez	a0, a0
-	czero.nez	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000018a:

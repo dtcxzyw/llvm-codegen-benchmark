@@ -14,9 +14,8 @@ func000000000000014a:
 func000000000000002a:
 	xor	a1, a1, a2
 	srli	a0, a0, 63
-	seqz	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000088:
@@ -54,8 +53,8 @@ func0000000000000021:
 
 func000000000000002c:
 	xor	a1, a1, a2
-	seqz	a1, a1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000144:

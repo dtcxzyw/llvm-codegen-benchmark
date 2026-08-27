@@ -7,11 +7,11 @@ func0000000000000084:
 	ret
 
 func0000000000000024:
+	sext.w	a1, a1
 	addiw	a2, a2, -1
-	addiw	a1, a1, -16
 	sltiu	a2, a2, 2
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 16
+	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
@@ -25,11 +25,11 @@ func0000000000000484:
 	ret
 
 func0000000000000424:
+	sext.w	a1, a1
 	addiw	a2, a2, -5
-	addiw	a1, a1, -7
 	sltiu	a2, a2, 2
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 7
+	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

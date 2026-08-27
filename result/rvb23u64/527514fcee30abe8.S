@@ -1,15 +1,16 @@
 func0000000000000181:
-	addiw	a0, a0, -28
+	sext.w	a0, a0
 	andi	a1, a1, 112
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	xori	a0, a0, 28
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000281:
+	sext.w	a0, a0
 	andi	a1, a1, 240
-	addiw	a0, a0, -8
 	sltiu	a1, a1, 113
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 8
+	czero.nez	a0, a1, a0
 	ret
 

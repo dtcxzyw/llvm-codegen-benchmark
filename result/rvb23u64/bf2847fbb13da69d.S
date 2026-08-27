@@ -5,10 +5,10 @@ func000000000000014c:
 	ret
 
 func000000000000002c:
-	addiw	a1, a1, -8
-	snez	a1, a1
+	sext.w	a1, a1
 	bexti	a0, a0, 13
-	and	a0, a0, a1
+	xori	a1, a1, 8
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000021:

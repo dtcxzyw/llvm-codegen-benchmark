@@ -8,8 +8,8 @@ func000000000000018c:
 func00000000000000cc:
 	sext.w	a1, a1
 	slti	a2, a1, 1024
-	sltiu	a1, a1, -1
-	and	a1, a1, a2
+	not	a1, a1
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

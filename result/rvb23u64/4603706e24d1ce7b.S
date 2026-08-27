@@ -26,8 +26,8 @@ func0000000000000121:
 
 func000000000000042c:
 	addi	a2, a2, 17
+	seqz	a1, a1
 	xor	a0, a0, a2
-	snez	a0, a0
-	czero.nez	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 

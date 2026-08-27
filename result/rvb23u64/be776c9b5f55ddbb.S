@@ -24,10 +24,9 @@ func0000000000000141:
 	addiw	a3, a3, -2
 	and	a1, a1, a3
 	sext.w	a2, a2
-	addi	a1, a1, -2
 	slt	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 2
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000008c:
@@ -37,11 +36,10 @@ func000000000000008c:
 	ret
 
 func0000000000000081:
-	andi	a1, a1, 240
 	sext.w	a2, a2
-	addi	a1, a1, -176
+	andi	a1, a1, 240
 	sltu	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 176
+	czero.nez	a0, a0, a1
 	ret
 

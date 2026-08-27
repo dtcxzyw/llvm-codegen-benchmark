@@ -18,10 +18,9 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	addi	a0, a0, -1
 	bexti	a1, a1, 9
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000010c:
@@ -83,11 +82,11 @@ func0000000000000101:
 
 func0000000000000141:
 	andi	a1, a1, -2
-	addiw	a1, a1, -2
+	sext.w	a1, a1
 	slti	a0, a0, 4
-	seqz	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	xori	a1, a1, 2
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000188:

@@ -25,19 +25,17 @@ func0000000000000108:
 
 func0000000000001508:
 	andi	a1, a1, -2
-	andi	a0, a0, -2
 	addi	a1, a1, -70
-	addi	a0, a0, -70
+	andi	a0, a0, -2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 70
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018c:
 	addi	a1, a1, -1
-	addi	a0, a0, -1
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 

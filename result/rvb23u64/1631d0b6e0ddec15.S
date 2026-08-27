@@ -3,8 +3,7 @@ func00000000000006c2:
 	flt.d	a2, fa0, fa5
 	addi	a1, a1, 1
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func00000000000006c8:
@@ -12,7 +11,6 @@ func00000000000006c8:
 	feq.d	a2, fa0, fa5
 	addi	a1, a1, 1
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 

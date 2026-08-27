@@ -1,10 +1,9 @@
 func0000000000000024:
 	zext.b	a1, a1
 	addi	a2, a2, 3
-	addi	a1, a1, -64
 	sltu	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 64
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -43,30 +42,27 @@ func0000000000000821:
 func0000000000000901:
 	addi	a2, a2, -1
 	zext.b	a0, a0
-	addi	a0, a0, -10
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 10
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d8c:
 	zext.b	a1, a1
 	addi	a2, a2, 1
-	xor	a0, a0, a2
 	addi	a1, a1, -41
-	snez	a0, a0
 	snez	a1, a1
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000c2c:
 	zext.b	a1, a1
 	addi	a2, a2, 1
-	xor	a0, a0, a2
 	addi	a1, a1, -48
-	snez	a0, a0
 	seqz	a1, a1
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000090c:
@@ -79,28 +75,25 @@ func000000000000090c:
 func0000000000000828:
 	zext.b	a1, a1
 	addi	a2, a2, -1
-	addi	a1, a1, -60
 	sltu	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 60
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000c24:
 	zext.b	a1, a1
 	addi	a2, a2, 1
-	addi	a1, a1, -92
 	sltu	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 92
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000881:
-	addi	a2, a2, -24
 	zext.b	a1, a1
-	xor	a0, a0, a2
-	seqz	a0, a0
+	addi	a2, a2, -24
 	sltiu	a1, a1, 11
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000829:
@@ -122,10 +115,9 @@ func0000000000000c8c:
 func0000000000000101:
 	addi	a2, a2, -1
 	zext.b	a0, a0
-	addi	a0, a0, -47
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 47
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000c21:
@@ -147,19 +139,17 @@ func0000000000000d81:
 	addi	a2, a2, 1
 	zext.b	a0, a0
 	xor	a1, a1, a2
-	addi	a0, a0, -32
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 32
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000181:
 	addi	a2, a2, 1
 	zext.b	a0, a0
 	xor	a1, a1, a2
-	addi	a0, a0, -32
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 32
+	czero.nez	a0, a1, a0
 	ret
 

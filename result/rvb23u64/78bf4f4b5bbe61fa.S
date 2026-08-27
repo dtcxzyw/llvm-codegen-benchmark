@@ -19,12 +19,11 @@ func0000000000001084:
 	ret
 
 func0000000000002024:
-	zext.b	a1, a1
 	zext.b	a0, a0
-	addi	a1, a1, -93
+	zext.b	a1, a1
 	addi	a0, a0, -89
-	seqz	a1, a1
 	sltiu	a0, a0, 5
-	and	a0, a0, a1
+	xori	a1, a1, 93
+	czero.nez	a0, a0, a1
 	ret
 

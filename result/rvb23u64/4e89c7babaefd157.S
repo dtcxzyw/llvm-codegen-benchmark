@@ -6,8 +6,8 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	xor	a1, a1, a0
-	snez	a1, a1
-	czero.eqz	a0, a1, a0
+	snez	a2, a0
+	xor	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 

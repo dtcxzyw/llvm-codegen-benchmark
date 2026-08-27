@@ -1,18 +1,16 @@
 func000000000000010c:
 	sub	a2, a1, a2
 	sltiu	a2, a2, 9
+	xori	a2, a2, 1
 	xor	a0, a0, a1
-	xori	a1, a2, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000014c:
 	sub	a2, a1, a2
+	sgtz	a2, a2
 	xor	a0, a0, a1
-	sgtz	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000105:
@@ -25,10 +23,9 @@ func0000000000000105:
 
 func0000000000000184:
 	sub	a2, a1, a2
+	sltiu	a2, a2, 9
 	xor	a0, a0, a1
-	sltiu	a1, a2, 9
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000144:
@@ -41,10 +38,9 @@ func0000000000000144:
 
 func000000000000008c:
 	sub	a2, a1, a2
+	sltiu	a2, a2, 9
 	xor	a0, a0, a1
-	sltiu	a1, a2, 9
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000134:
@@ -66,17 +62,15 @@ func0000000000000188:
 func000000000000002c:
 	sub	a2, a1, a2
 	addi	a2, a2, -144
+	seqz	a2, a2
 	xor	a0, a0, a1
-	seqz	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func00000000000000cc:
 	sub	a2, a1, a2
+	slti	a2, a2, 32
 	xor	a0, a0, a1
-	slti	a1, a2, 32
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 

@@ -17,13 +17,12 @@ func00000000000000c6:
 	ret
 
 func0000000000000181:
-	sext.w	a1, a1
-	sext.w	a0, a0
-	sltiu	a3, a0, -1
+	sext.w	a3, a0
+	sltiu	a3, a3, -1
 	xor	a0, a0, a1
 	and	a2, a2, a3
-	seqz	a0, a0
-	and	a0, a0, a2
+	sext.w	a0, a0
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000184:
@@ -37,13 +36,12 @@ func0000000000000184:
 	ret
 
 func000000000000018c:
-	sext.w	a1, a1
-	sext.w	a0, a0
-	snez	a3, a0
+	sext.w	a3, a0
+	snez	a3, a3
 	xor	a0, a0, a1
 	and	a2, a2, a3
-	snez	a0, a0
-	and	a0, a0, a2
+	sext.w	a0, a0
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000014a:

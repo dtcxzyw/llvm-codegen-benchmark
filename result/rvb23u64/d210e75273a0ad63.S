@@ -149,7 +149,7 @@ func0000000000000586:
 	sext.w	a1, a1
 	addi	a2, a2, 1
 	slt	a0, a2, a0
-	sltiu	a1, a1, -1
-	and	a0, a0, a1
+	not	a1, a1
+	czero.eqz	a0, a0, a1
 	ret
 

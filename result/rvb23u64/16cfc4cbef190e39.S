@@ -10,13 +10,12 @@ func000000000000010c:
 func000000000000018c:
 	li	a2, -33
 	zext.w	a2, a2
-	and	a2, a2, a1
-	addi	a1, a1, -36
-	addi	a2, a2, -64
-	snez	a1, a1
-	snez	a2, a2
-	and	a0, a0, a1
+	addi	a3, a1, -36
+	and	a1, a1, a2
+	snez	a2, a3
 	and	a0, a0, a2
+	xori	a1, a1, 64
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000181:

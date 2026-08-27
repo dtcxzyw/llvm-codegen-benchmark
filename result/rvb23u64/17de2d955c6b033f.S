@@ -13,10 +13,10 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	addi	a1, a1, -8
 	sext.w	a2, a2
-	seqz	a1, a1
-	czero.eqz	a1, a1, a2
+	snez	a2, a2
+	xori	a1, a1, 8
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

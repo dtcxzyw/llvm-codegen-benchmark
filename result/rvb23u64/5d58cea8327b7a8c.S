@@ -20,11 +20,10 @@ func0000000000000181:
 
 func000000000000018c:
 	andi	a1, a1, 254
-	andi	a0, a0, 254
 	addi	a1, a1, -12
-	addi	a0, a0, -12
+	andi	a0, a0, 254
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 12
+	czero.eqz	a0, a1, a0
 	ret
 

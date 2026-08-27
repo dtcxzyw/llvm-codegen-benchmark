@@ -7,10 +7,9 @@ func0000000000000029:
 
 func0000000000000101:
 	srli	a2, a1, 12
-	addi	a2, a2, -64
-	seqz	a2, a2
 	sltu	a0, a1, a0
-	and	a0, a0, a2
+	xori	a1, a2, 64
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000021:

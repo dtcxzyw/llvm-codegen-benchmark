@@ -27,11 +27,10 @@ func000000000000002c:
 func000000000000002a:
 	slli	a2, a2, 48
 	sext.w	a0, a0
-	srli	a2, a2, 58
 	sext.w	a1, a1
-	addi	a2, a2, -55
-	seqz	a2, a2
+	srli	a2, a2, 58
 	slt	a0, a1, a0
-	and	a0, a0, a2
+	xori	a1, a2, 55
+	czero.nez	a0, a0, a1
 	ret
 

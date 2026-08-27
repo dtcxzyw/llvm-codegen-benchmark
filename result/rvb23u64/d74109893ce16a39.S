@@ -1,8 +1,8 @@
 func0000000000000028:
 	xor	a1, a1, a2
-	snez	a1, a1
 	srli	a0, a0, 59
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -29,8 +29,7 @@ func0000000000000024:
 func0000000000000038:
 	xor	a1, a1, a2
 	sltiu	a0, a0, 11
-	snez	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 

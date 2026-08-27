@@ -1,10 +1,9 @@
 func000000000000002c:
 	fcvt.w.s	a1, fa0, rtz
-	addi	a1, a1, -1
 	addiw	a0, a0, -2
-	snez	a1, a1
 	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a1, a1, 1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000014a:

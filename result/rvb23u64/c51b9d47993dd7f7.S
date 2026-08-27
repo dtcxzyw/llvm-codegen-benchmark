@@ -8,9 +8,8 @@ func0000000000000021:
 
 func0000000000000981:
 	zext.b	a0, a0
-	addi	a0, a0, -3
 	bexti	a1, a1, 20
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 3
+	czero.nez	a0, a1, a0
 	ret
 

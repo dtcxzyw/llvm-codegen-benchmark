@@ -1,8 +1,9 @@
 func0000000000000426:
 	sext.w	a2, a2
 	sext.w	a1, a1
-	sltiu	a2, a2, -1
-	czero.nez	a1, a2, a1
+	seqz	a1, a1
+	not	a2, a2
+	czero.eqz	a1, a1, a2
 	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
@@ -74,11 +75,12 @@ func00000000000004cc:
 	ret
 
 func0000000000000424:
-	addiw	a2, a2, -2
+	sext.w	a2, a2
 	sext.w	a0, a0
 	sext.w	a1, a1
-	snez	a2, a2
-	czero.nez	a1, a2, a1
+	seqz	a1, a1
+	xori	a2, a2, 2
+	czero.eqz	a1, a1, a2
 	sltiu	a0, a0, -3
 	or	a0, a0, a1
 	ret

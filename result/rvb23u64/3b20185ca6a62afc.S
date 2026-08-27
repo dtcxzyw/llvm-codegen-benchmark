@@ -1,8 +1,7 @@
 func0000000000000181:
 	bexti	a2, a2, 3
 	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000021:

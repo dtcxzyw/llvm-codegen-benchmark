@@ -17,12 +17,12 @@ func0000000000000181:
 	ret
 
 func000000000000002c:
-	addiw	a2, a2, -1
+	sext.w	a2, a2
 	andi	a0, a0, 1
-	seqz	a2, a2
 	snez	a1, a1
+	xori	a2, a2, 1
 	czero.eqz	a0, a1, a0
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

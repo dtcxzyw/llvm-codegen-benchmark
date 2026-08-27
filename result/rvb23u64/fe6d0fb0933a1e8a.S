@@ -18,16 +18,17 @@ func000000000000002c:
 	lui	a3, 244141
 	sext.w	a1, a1
 	addi	a3, a3, -1536
+	seqz	a2, a2
 	xor	a1, a1, a3
-	snez	a1, a1
-	czero.nez	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	addiw	a1, a1, -20
-	seqz	a1, a1
-	czero.eqz	a1, a1, a2
+	sext.w	a1, a1
+	snez	a2, a2
+	xori	a1, a1, 20
+	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

@@ -23,7 +23,6 @@ func00000000000004c8:
 	feq.s	a2, fa0, fa5
 	addi	a1, a1, 1
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 

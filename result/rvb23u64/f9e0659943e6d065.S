@@ -1,17 +1,18 @@
 func000000000000002c:
-	addiw	a0, a0, -8
+	sext.w	a0, a0
 	andi	a1, a1, 48
-	snez	a0, a0
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	xori	a0, a0, 8
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000021:
 	zext.b	a1, a1
-	addiw	a0, a0, -35
+	sext.w	a0, a0
 	addi	a1, a1, -17
-	snez	a0, a0
 	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a0, a0, 35
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000081:

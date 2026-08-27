@@ -75,11 +75,9 @@ func00000000000000cc:
 func00000000000000ac:
 	fli.d	fa5, 1.0
 	fle.d	a1, fa0, fa5
-	lui	a2, 2
-	addi	a2, a2, 1807
-	xor	a0, a0, a2
+	xori	a0, a0, 1807
 	xori	a1, a1, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 13
+	czero.eqz	a0, a1, a0
 	ret
 

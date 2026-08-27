@@ -6,12 +6,11 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 7
 	sext.w	a0, a0
-	addi	a1, a1, -7
-	snez	a1, a1
+	li	a2, 7
 	sltiu	a0, a0, 7
-	and	a0, a0, a1
+	andn	a1, a2, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000026:

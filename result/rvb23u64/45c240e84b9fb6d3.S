@@ -79,10 +79,10 @@ func0000000000000194:
 	ret
 
 func000000000000028c:
-	andi	a0, a0, 7
-	addi	a0, a0, -7
 	andi	a1, a1, 508
-	snez	a0, a0
-	czero.nez	a0, a0, a1
+	li	a2, 7
+	seqz	a1, a1
+	andn	a0, a2, a0
+	czero.eqz	a0, a1, a0
 	ret
 

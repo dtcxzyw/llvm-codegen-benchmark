@@ -28,10 +28,9 @@ func0000000000000184:
 
 func0000000000000024:
 	andi	a1, a1, 240
-	addi	a1, a1, -224
-	seqz	a1, a1
 	sltiu	a0, a0, -76
-	and	a0, a0, a1
+	xori	a1, a1, 224
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000038:
@@ -57,10 +56,9 @@ func0000000000000188:
 
 func0000000000000034:
 	andi	a1, a1, 254
-	addi	a1, a1, -48
-	seqz	a1, a1
 	sltiu	a0, a0, 32
-	and	a0, a0, a1
+	xori	a1, a1, 48
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000028:

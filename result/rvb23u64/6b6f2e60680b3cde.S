@@ -8,19 +8,17 @@ func0000000000000144:
 
 func0000000000000d8c:
 	addi	a2, a2, 1
-	xor	a0, a0, a2
 	addi	a1, a1, -9
-	snez	a0, a0
 	snez	a1, a1
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000c8c:
 	addi	a2, a2, 1
-	xor	a0, a0, a2
-	snez	a0, a0
 	sltiu	a1, a1, 64
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 .LCPI3_0:
@@ -43,10 +41,9 @@ func0000000000000e84:
 
 func0000000000000e8c:
 	addi	a2, a2, 1
-	xor	a0, a0, a2
-	snez	a0, a0
 	sltiu	a1, a1, 14
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000e85:
@@ -77,17 +74,16 @@ func0000000000000c85:
 
 func000000000000098c:
 	addi	a2, a2, -1
+	snez	a1, a1
 	xor	a0, a0, a2
-	snez	a0, a0
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000ccc:
 	addi	a2, a2, 1
-	xor	a0, a0, a2
-	snez	a0, a0
 	slti	a1, a1, 1023
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000909:

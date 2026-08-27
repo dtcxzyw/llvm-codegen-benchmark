@@ -76,11 +76,11 @@ func0000000000000034:
 func0000000000000081:
 	sext.w	a1, a1
 	andi	a2, a2, -2
-	addiw	a2, a2, -2
+	sext.w	a2, a2
 	sltiu	a1, a1, 51
-	seqz	a2, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 2
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000010c:

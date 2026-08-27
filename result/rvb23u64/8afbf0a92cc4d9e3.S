@@ -14,32 +14,33 @@ func0000000000000842:
 
 func0000000000006310:
 	sext.w	a1, a1
-	addiw	a2, a0, -18
-	snez	a2, a2
+	sext.w	a2, a0
+	snez	a1, a1
+	xori	a2, a2, 18
 	srliw	a0, a0, 16
-	czero.eqz	a1, a2, a1
+	czero.eqz	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000000a82:
-	addiw	a2, a0, -3
 	sext.w	a1, a1
-	seqz	a2, a2
+	sext.w	a2, a0
 	sgtz	a1, a1
+	xori	a2, a2, 3
 	addiw	a0, a0, -4
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000002042:
 	sext.w	a1, a1
-	addiw	a2, a0, -12
+	sext.w	a2, a0
 	sltiu	a1, a1, 16
-	seqz	a2, a2
+	xori	a2, a2, 12
 	addiw	a0, a0, -1
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -54,41 +55,43 @@ func0000000000000b14:
 	ret
 
 func0000000000006042:
-	sext.w	a2, a0
-	addiw	a0, a0, -64
+	sext.w	a0, a0
 	sext.w	a1, a1
+	snez	a1, a1
+	xori	a2, a0, 64
+	czero.nez	a1, a1, a2
 	seqz	a0, a0
-	czero.eqz	a0, a0, a1
-	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000982:
-	addiw	a2, a0, -2
 	sext.w	a1, a1
-	seqz	a2, a2
+	sext.w	a2, a0
 	slti	a1, a1, 420
+	xori	a2, a2, 2
 	addiw	a0, a0, -1
-	and	a1, a1, a2
+	czero.nez	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 
 func0000000000002308:
 	sext.w	a2, a0
-	addiw	a1, a1, -192
+	sext.w	a1, a1
 	srliw	a0, a0, 11
-	snez	a1, a1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	xori	a1, a1, 192
+	czero.eqz	a0, a0, a1
 	sltiu	a1, a2, 128
 	or	a0, a0, a1
 	ret
 
 func0000000000000b0c:
-	addiw	a1, a1, -1
+	sext.w	a1, a1
 	sext.w	a2, a0
-	snez	a1, a1
-	czero.nez	a1, a1, a2
+	seqz	a2, a2
+	xori	a1, a1, 1
+	czero.eqz	a1, a2, a1
 	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret
@@ -126,13 +129,12 @@ func0000000000000b02:
 	ret
 
 func000000000000204c:
-	sext.w	a2, a0
+	sext.w	a0, a0
 	sext.w	a1, a1
-	addiw	a0, a0, -18
 	sltiu	a1, a1, 5
-	seqz	a0, a0
-	and	a0, a0, a1
-	slti	a1, a2, 11
+	xori	a2, a0, 18
+	czero.nez	a1, a1, a2
+	slti	a0, a0, 11
 	or	a0, a0, a1
 	ret
 
@@ -157,12 +159,12 @@ func000000000000518c:
 
 func000000000000504c:
 	lui	a2, 16
+	sext.w	a1, a1
 	sext.w	a3, a0
 	addi	a2, a2, -2
-	addiw	a1, a1, -3
 	slt	a2, a2, a3
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 3
+	czero.nez	a1, a2, a1
 	srliw	a0, a0, 31
 	or	a0, a0, a1
 	ret

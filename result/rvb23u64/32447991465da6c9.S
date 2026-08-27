@@ -21,10 +21,9 @@ func000000000000008c:
 func00000000000000c1:
 	slli	a2, a2, 48
 	srli	a2, a2, 58
-	addi	a2, a2, -54
-	seqz	a2, a2
 	slt	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 54
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:

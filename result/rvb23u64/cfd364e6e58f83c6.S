@@ -30,12 +30,11 @@ func000000000000014a:
 
 func000000000000018c:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	xor	a2, a2, a0
+	sext.w	a1, a1
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func00000000000000eb:

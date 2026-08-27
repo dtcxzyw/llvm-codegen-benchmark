@@ -33,41 +33,40 @@ func0000000000000042:
 
 func0000000000000318:
 	lui	a3, 7176
-	addiw	a1, a1, -256
+	sext.w	a1, a1
 	and	a2, a2, a3
-	snez	a1, a1
-	czero.eqz	a1, a1, a2
+	snez	a2, a2
+	xori	a1, a1, 256
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000118:
 	andi	a2, a2, 224
-	addi	a2, a2, -192
-	snez	a2, a2
 	srliw	a1, a1, 11
-	czero.nez	a1, a2, a1
+	seqz	a1, a1
+	xori	a2, a2, 192
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000308:
-	andi	a2, a2, 127
 	sext.w	a1, a1
-	addi	a2, a2, -7
-	snez	a2, a2
+	andi	a2, a2, 127
 	sltiu	a1, a1, -6
-	and	a1, a1, a2
+	xori	a2, a2, 7
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000282:
 	sext.w	a1, a1
-	andi	a2, a2, 7
 	lui	a3, 16
-	addi	a2, a2, -3
+	andi	a2, a2, 7
 	addi	a3, a3, -2
-	seqz	a2, a2
 	slt	a1, a3, a1
-	and	a1, a1, a2
+	xori	a2, a2, 3
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

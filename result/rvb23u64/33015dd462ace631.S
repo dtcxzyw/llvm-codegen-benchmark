@@ -20,13 +20,12 @@ func00000000000000cc:
 	ret
 
 func00000000000000c1:
-	sext.w	a1, a1
-	negw	a2, a2
+	neg	a2, a2
 	sext.w	a0, a0
 	xor	a1, a1, a2
 	slti	a0, a0, 128
-	seqz	a1, a1
-	and	a0, a0, a1
+	sext.w	a1, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func00000000000000ca:

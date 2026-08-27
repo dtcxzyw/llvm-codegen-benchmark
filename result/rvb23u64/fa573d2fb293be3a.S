@@ -7,23 +7,21 @@ func0000000000000181:
 	ret
 
 func0000000000000281:
-	andi	a1, a1, 31
 	zext.w	a2, a2
-	addi	a1, a1, -21
+	andi	a1, a1, 31
 	sltu	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 21
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000681:
 	lui	a3, 15
 	and	a1, a1, a3
-	lui	a3, 10
-	xor	a1, a1, a3
 	sext.w	a2, a2
+	binvi	a1, a1, 13
 	sltu	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	binvi	a1, a1, 15
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:
@@ -42,11 +40,10 @@ func0000000000000581:
 	ret
 
 func0000000000000501:
-	andi	a1, a1, 25
 	sext.w	a2, a2
-	addi	a1, a1, -16
+	andi	a1, a1, 25
 	sltu	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 16
+	czero.nez	a0, a0, a1
 	ret
 

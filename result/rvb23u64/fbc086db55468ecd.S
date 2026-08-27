@@ -80,9 +80,8 @@ func000000000000018c:
 
 func0000000000000101:
 	sltu	a1, a2, a1
-	addi	a0, a0, -1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000028c:
@@ -208,16 +207,14 @@ func0000000000000114:
 
 func0000000000000184:
 	xor	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000034:
 	xor	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000121:
@@ -314,8 +311,7 @@ func0000000000000314:
 
 func0000000000000026:
 	xor	a1, a1, a2
-	seqz	a1, a1
 	slti	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 

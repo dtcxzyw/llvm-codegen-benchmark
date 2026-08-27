@@ -1,9 +1,10 @@
 func000000000000002c:
 	or	a1, a1, a2
-	addiw	a0, a0, -1
+	sext.w	a0, a0
 	sext.w	a1, a1
-	snez	a0, a0
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000042c:
@@ -172,12 +173,12 @@ func000000000000018a:
 
 func0000000000000501:
 	or	a1, a1, a2
+	sext.w	a0, a0
 	lui	a2, 16
 	sext.w	a1, a1
 	addi	a2, a2, 1
-	addiw	a0, a0, -1
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 

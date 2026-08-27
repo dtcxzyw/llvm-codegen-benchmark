@@ -36,12 +36,11 @@ func000000000000002a:
 	ret
 
 func0000000000000024:
-	andi	a1, a1, 96
 	zext.b	a0, a0
-	addi	a1, a1, -32
-	seqz	a1, a1
+	andi	a1, a1, 96
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	xori	a1, a1, 32
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000028:

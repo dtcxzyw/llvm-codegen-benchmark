@@ -30,11 +30,10 @@ func000000000000094a:
 
 func00000000000000cc:
 	li	a3, -1
-	srli	a3, a3, 32
 	sub	a1, a1, a2
-	xor	a3, a3, a0
-	slt	a0, a0, a1
-	snez	a1, a3
-	and	a0, a0, a1
+	srli	a3, a3, 32
+	slt	a1, a0, a1
+	xor	a0, a0, a3
+	czero.eqz	a0, a1, a0
 	ret
 

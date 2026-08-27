@@ -25,10 +25,10 @@ func0000000000000421:
 func00000000000004c1:
 	or	a1, a1, a2
 	sext.w	a0, a0
-	addiw	a1, a1, -85
-	seqz	a1, a1
+	sext.w	a1, a1
 	slti	a0, a0, 5
-	and	a0, a0, a1
+	xori	a1, a1, 85
+	czero.nez	a0, a0, a1
 	ret
 
 func00000000000000ca:

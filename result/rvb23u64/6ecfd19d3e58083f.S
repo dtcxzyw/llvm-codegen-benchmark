@@ -1,9 +1,9 @@
 func000000000000018c:
 	snez	a2, a2
-	addiw	a0, a0, -32
+	sext.w	a0, a0
 	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 32
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000084:
@@ -24,19 +24,18 @@ func0000000000000181:
 func000000000000010c:
 	srli	a2, a2, 32
 	sext.w	a0, a0
-	lui	a3, 20480
-	xor	a0, a0, a3
 	snez	a2, a2
+	binvi	a0, a0, 24
 	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 26
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008c:
 	sltiu	a2, a2, 5
-	addiw	a0, a0, -1
+	sext.w	a0, a0
 	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 

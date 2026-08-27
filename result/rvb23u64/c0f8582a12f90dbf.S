@@ -9,10 +9,9 @@ func000000000000002c:
 	andi	a2, a2, 4
 	zext.b	a0, a0
 	seqz	a2, a2
-	addi	a0, a0, -36
 	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 36
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000184:

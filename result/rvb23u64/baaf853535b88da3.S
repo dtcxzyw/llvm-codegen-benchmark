@@ -17,20 +17,18 @@ func0000000000000d8c:
 	addi	a2, a2, 48
 	zext.h	a0, a0
 	xor	a1, a1, a2
-	addi	a0, a0, -23
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 23
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000881:
 	lui	a3, 14
 	zext.h	a0, a0
-	addi	a3, a3, -1024
-	xor	a0, a0, a3
 	addi	a2, a2, -2
+	addi	a3, a3, -1024
 	sltu	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a3
+	czero.nez	a0, a1, a0
 	ret
 

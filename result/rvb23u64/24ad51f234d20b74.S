@@ -6,11 +6,10 @@ func000000000000002c:
 	ret
 
 func00000000000000c1:
-	andi	a1, a1, 240
 	slli	a0, a0, 56
-	addi	a1, a1, -32
-	seqz	a1, a1
+	andi	a1, a1, 240
 	srli	a0, a0, 63
-	and	a0, a0, a1
+	xori	a1, a1, 32
+	czero.nez	a0, a0, a1
 	ret
 

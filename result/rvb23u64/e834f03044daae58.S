@@ -8,28 +8,29 @@ func000000000000008a:
 	ret
 
 func0000000000000081:
+	sext.w	a1, a1
 	sext.w	a2, a2
-	addiw	a1, a1, -8
 	sltiu	a2, a2, 9
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 8
+	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000002c:
-	addiw	a1, a1, -5
+	sext.w	a1, a1
 	sext.w	a2, a2
-	snez	a1, a1
-	czero.nez	a1, a1, a2
+	seqz	a2, a2
+	xori	a1, a1, 5
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
+	sext.w	a1, a1
 	addiw	a2, a2, -236
-	addiw	a1, a1, -238
 	snez	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 238
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

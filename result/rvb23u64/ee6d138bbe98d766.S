@@ -1,10 +1,9 @@
 func0000000000000d01:
-	andi	a1, a1, 252
 	addi	a2, a2, 1
-	addi	a1, a1, -220
+	andi	a1, a1, 252
 	sltu	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 220
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000098c:
@@ -16,11 +15,10 @@ func000000000000098c:
 	ret
 
 func0000000000000081:
-	andi	a1, a1, 12
 	addi	a2, a2, 15
-	addi	a1, a1, -4
+	andi	a1, a1, 12
 	sltu	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 4
+	czero.nez	a0, a0, a1
 	ret
 

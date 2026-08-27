@@ -1,9 +1,8 @@
 func0000000000000e8c:
 	addi	a3, a0, 1
+	sltu	a2, a3, a2
 	xor	a0, a0, a1
-	sltu	a1, a3, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000cc6:

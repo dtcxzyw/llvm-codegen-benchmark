@@ -1,19 +1,19 @@
 func0000000000001081:
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	addiw	a1, a1, -12
-	addiw	a0, a0, -12
 	sltiu	a1, a1, 3
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 12
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000001024:
 	sub	a1, a1, a2
+	sext.w	a0, a0
 	addiw	a1, a1, -8
-	addiw	a0, a0, -6
 	sltiu	a1, a1, 7
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 6
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:

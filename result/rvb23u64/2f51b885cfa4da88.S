@@ -8,8 +8,8 @@ func000000000000010a:
 func000000000000010c:
 	feq.d	a1, fa0, fa1
 	sext.w	a0, a0
-	sltiu	a0, a0, -1
-	and	a0, a0, a1
+	not	a0, a0
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000064:
@@ -20,9 +20,9 @@ func0000000000000064:
 
 func0000000000000018:
 	feq.d	a1, fa0, fa1
-	addiw	a0, a0, -1
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000086:
@@ -35,16 +35,16 @@ func0000000000000086:
 
 func000000000000008c:
 	flt.d	a1, fa1, fa0
-	addiw	a0, a0, -2
-	snez	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000012:
 	flt.d	a1, fa0, fa1
-	addiw	a0, a0, -5
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 5
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000104:
@@ -74,9 +74,9 @@ func000000000000004c:
 
 func0000000000000101:
 	feq.d	a1, fa0, fa1
-	addiw	a0, a0, -2
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 2
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000006a:

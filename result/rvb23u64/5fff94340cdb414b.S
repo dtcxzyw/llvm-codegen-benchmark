@@ -14,18 +14,16 @@ func0000000000000085:
 
 func0000000000000d8c:
 	addiw	a2, a2, -63
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000018c:
 	addiw	a2, a2, -1
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000088:
@@ -37,9 +35,8 @@ func0000000000000088:
 
 func000000000000048c:
 	addiw	a2, a2, -65
+	sltiu	a2, a2, 26
 	xor	a0, a0, a1
-	sltiu	a1, a2, 26
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 

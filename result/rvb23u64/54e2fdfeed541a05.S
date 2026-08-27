@@ -14,11 +14,10 @@ func0000000000000021:
 
 func0000000000000581:
 	or	a1, a1, a2
-	lui	a2, 524032
 	slli	a1, a1, 12
+	lui	a2, 524032
+	snez	a1, a1
 	xor	a0, a0, a2
-	srli	a1, a1, 12
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	czero.nez	a0, a1, a0
 	ret
 

@@ -1,9 +1,8 @@
 func000000000000008c:
 	sub	a2, a0, a1
+	sltiu	a2, a2, 2
 	xor	a0, a0, a1
-	sltiu	a1, a2, 2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func00000000000000c8:

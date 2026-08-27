@@ -17,12 +17,12 @@ func00000000000004ca:
 	ret
 
 func00000000000004c1:
-	sext.w	a0, a0
-	negw	a2, a1
+	sext.w	a2, a0
+	neg	a3, a1
 	sext.w	a1, a1
-	xor	a2, a2, a0
-	seqz	a2, a2
-	slt	a0, a1, a0
-	and	a0, a0, a2
+	xor	a0, a0, a3
+	slt	a1, a1, a2
+	sext.w	a0, a0
+	czero.nez	a0, a1, a0
 	ret
 

@@ -20,10 +20,9 @@ func0000000000000021:
 
 func00000000000000c1:
 	zext.b	a1, a1
-	addi	a1, a1, -3
 	srliw	a2, a2, 31
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 3
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

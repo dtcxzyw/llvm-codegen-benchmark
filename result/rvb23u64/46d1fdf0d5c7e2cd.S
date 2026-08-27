@@ -63,11 +63,11 @@ func0000000000000281:
 
 func0000000000000026:
 	bseti	a1, zero, 32
-	addiw	a2, a0, -13
+	sext.w	a2, a0
 	bseti	a1, a1, 63
-	seqz	a2, a2
 	slt	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 13
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000158:

@@ -12,10 +12,9 @@ func00000000000000c6:
 
 func000000000000018c:
 	xor	a2, a2, a0
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000104:
@@ -104,10 +103,9 @@ func00000000000000ea:
 
 func000000000000002c:
 	xor	a2, a2, a0
+	seqz	a2, a2
 	xor	a0, a0, a1
-	seqz	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000028b:
@@ -129,10 +127,9 @@ func00000000000000a9:
 	ret
 
 func00000000000000cc:
-	xor	a1, a1, a0
-	slt	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	slt	a2, a0, a2
+	xor	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000315:
@@ -172,10 +169,9 @@ func00000000000000d9:
 	ret
 
 func0000000000000081:
-	xor	a1, a1, a0
-	sltu	a0, a0, a2
-	seqz	a1, a1
-	and	a0, a0, a1
+	sltu	a2, a0, a2
+	xor	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func00000000000000c9:
@@ -198,10 +194,9 @@ func000000000000002b:
 	ret
 
 func0000000000000028:
-	xor	a2, a2, a0
-	seqz	a2, a2
-	sltu	a0, a1, a0
-	and	a0, a0, a2
+	sltu	a1, a1, a0
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000124:
@@ -245,10 +240,9 @@ func0000000000000105:
 	ret
 
 func0000000000000024:
-	xor	a2, a2, a0
-	seqz	a2, a2
-	sltu	a0, a0, a1
-	and	a0, a0, a2
+	sltu	a1, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000147:
@@ -268,9 +262,8 @@ func0000000000000284:
 	ret
 
 func000000000000008c:
-	xor	a1, a1, a0
-	sltu	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	sltu	a2, a0, a2
+	xor	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 

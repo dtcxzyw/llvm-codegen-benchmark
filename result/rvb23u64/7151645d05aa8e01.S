@@ -14,11 +14,10 @@ func000000000000002c:
 
 func000000000000008c:
 	zext.b	a2, a2
-	andi	a1, a1, 254
 	sltiu	a2, a2, 252
-	addi	a1, a1, -14
+	andi	a1, a1, 254
 	and	a0, a0, a2
-	snez	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 14
+	czero.eqz	a0, a0, a1
 	ret
 

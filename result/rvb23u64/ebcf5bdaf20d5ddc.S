@@ -48,16 +48,15 @@ func0000000000000581:
 func0000000000001184:
 	zext.h	a1, a1
 	zext.h	a0, a0
-	lui	a3, 16
 	zext.h	a2, a2
+	lui	a3, 16
 	addi	a4, a3, -10
-	sltu	a2, a2, a4
 	addi	a3, a3, -26
-	addi	a1, a1, -45
+	sltu	a2, a2, a4
 	sltu	a0, a0, a3
-	snez	a1, a1
 	and	a0, a0, a2
-	and	a0, a0, a1
+	xori	a1, a1, 45
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000002108:

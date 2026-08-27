@@ -1,10 +1,10 @@
 func0000000000000102:
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sltiu	a2, a2, 17
-	addiw	a0, a0, -2
 	and	a1, a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 2
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000030c:
@@ -34,11 +34,11 @@ func0000000000000318:
 
 func0000000000000118:
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sltiu	a2, a2, -10
-	addiw	a0, a0, -17
 	and	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 17
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018c:

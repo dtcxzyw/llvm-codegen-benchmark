@@ -26,25 +26,23 @@ func000000000000028c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	sext.w	a0, a0
 	andi	a2, a2, 1
+	sext.w	a0, a0
 	xor	a1, a1, a2
-	binvi	a0, a0, 17
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 17
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000002a:
 	sext.w	a1, a1
-	andi	a2, a2, 127
-	xor	a1, a1, a2
-	lui	a2, 8192
 	sext.w	a0, a0
-	addi	a2, a2, -1
-	seqz	a1, a1
-	slt	a0, a2, a0
-	and	a0, a0, a1
+	lui	a3, 8192
+	andi	a2, a2, 127
+	addi	a3, a3, -1
+	slt	a0, a3, a0
+	xor	a1, a1, a2
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000084:

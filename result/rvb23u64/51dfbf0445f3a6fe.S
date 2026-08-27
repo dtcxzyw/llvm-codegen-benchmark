@@ -36,9 +36,10 @@ func000000000000042c:
 	ret
 
 func000000000000002c:
-	addiw	a1, a1, 10
-	snez	a1, a1
-	czero.nez	a0, a1, a0
+	sext.w	a1, a1
+	seqz	a0, a0
+	xori	a1, a1, -10
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -60,15 +61,17 @@ func0000000000000584:
 	ret
 
 func0000000000000d8c:
-	addiw	a1, a1, -63
-	snez	a1, a1
-	czero.eqz	a0, a1, a0
+	sext.w	a1, a1
+	snez	a0, a0
+	xori	a1, a1, 63
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000058c:
-	addiw	a1, a1, -1
-	snez	a1, a1
-	czero.eqz	a0, a1, a0
+	sext.w	a1, a1
+	snez	a0, a0
+	xori	a1, a1, 1
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000028:

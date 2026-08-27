@@ -13,14 +13,13 @@ func0000000000000021:
 
 func0000000000000301:
 	li	a2, 15
-	slli	a2, a2, 9
 	sext.w	a0, a0
+	slli	a2, a2, 9
 	and	a1, a1, a2
-	addi	a1, a1, -512
 	sltiu	a0, a0, 52
-	seqz	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	xori	a1, a1, 512
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -66,14 +65,12 @@ func0000000000000194:
 func000000000000028c:
 	lui	a2, 64
 	addi	a2, a2, -256
-	li	a3, 3
 	and	a1, a1, a2
-	slli	a3, a3, 11
 	sext.w	a0, a0
-	xor	a1, a1, a3
-	snez	a1, a1
+	binvi	a1, a1, 11
 	sltiu	a0, a0, 5
-	and	a0, a0, a1
+	binvi	a1, a1, 12
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002c:

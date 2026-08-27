@@ -41,11 +41,10 @@ func0000000000000181:
 	ret
 
 func0000000000000026:
-	addi	a2, a2, -1054
 	srli	a1, a1, 63
-	seqz	a2, a2
+	xori	a2, a2, 1054
+	czero.nez	a1, a1, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func0000000000000081:

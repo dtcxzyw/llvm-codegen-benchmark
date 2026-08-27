@@ -30,14 +30,13 @@ func0000000000000421:
 	ret
 
 func0000000000000586:
-	addiw	a2, a2, -32
-	sext.w	a0, a0
 	zext.b	a1, a1
+	sext.w	a0, a0
+	addiw	a2, a2, -32
 	seqz	a2, a2
-	addi	a1, a1, -7
+	xori	a1, a1, 7
+	czero.eqz	a1, a2, a1
 	slti	a0, a0, 2
-	snez	a1, a1
-	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
@@ -57,11 +56,10 @@ func000000000000182a:
 	zext.b	a1, a1
 	sext.w	a0, a0
 	srliw	a2, a2, 31
-	addi	a1, a1, -1
 	sgtz	a0, a0
-	seqz	a1, a1
 	and	a0, a0, a2
-	and	a0, a0, a1
+	xori	a1, a1, 1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000003034:

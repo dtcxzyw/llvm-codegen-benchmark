@@ -1,9 +1,9 @@
 func0000000000000181:
+	sext.w	a1, a1
 	addiw	a2, a2, -1
-	addiw	a1, a1, -2
 	snez	a2, a2
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 2
+	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 

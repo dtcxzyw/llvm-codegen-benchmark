@@ -1,9 +1,9 @@
 func0000000000000058:
-	lui	a2, 4
-	addiw	a0, a0, -9
-	and	a1, a1, a2
-	snez	a0, a0
-	czero.nez	a0, a0, a1
+	sext.w	a0, a0
+	not	a1, a1
+	bexti	a1, a1, 14
+	xori	a0, a0, 9
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000318:

@@ -14,24 +14,21 @@ func0000000000000181:
 	li	a3, -1
 	srli	a3, a3, 1
 	xor	a2, a2, a3
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a1, a2
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func000000000000018c:
 	sltiu	a2, a2, -1
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000008c:
 	sltiu	a2, a2, 64
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000284:
@@ -57,14 +54,13 @@ func0000000000000084:
 func000000000000028c:
 	sltiu	a2, a2, 14
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000002c:
+	seqz	a2, a2
 	xor	a0, a0, a1
-	snez	a0, a0
-	czero.nez	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000285:
@@ -83,8 +79,7 @@ func0000000000000189:
 func0000000000000081:
 	sltiu	a2, a2, 17
 	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	czero.nez	a0, a2, a0
 	ret
 
 .LCPI13_0:
@@ -99,41 +94,36 @@ func0000000000000085:
 
 func000000000000010c:
 	sltiu	a2, a2, 8
+	xori	a2, a2, 1
 	xor	a0, a0, a1
-	xori	a1, a2, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000101:
 	sltiu	a2, a2, 2
+	xori	a2, a2, 1
 	xor	a0, a0, a1
-	xori	a1, a2, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000141:
 	srli	a2, a2, 63
+	xori	a2, a2, 1
 	xor	a0, a0, a1
-	xori	a1, a2, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func000000000000014c:
 	slti	a2, a2, 25
+	xori	a2, a2, 1
 	xor	a0, a0, a1
-	xori	a1, a2, 1
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func00000000000000cc:
 	slti	a2, a2, 1023
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000109:
@@ -146,7 +136,6 @@ func0000000000000109:
 func0000000000000281:
 	sltiu	a2, a2, 8
 	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	czero.nez	a0, a2, a0
 	ret
 

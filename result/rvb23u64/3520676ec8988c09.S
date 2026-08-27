@@ -20,12 +20,11 @@ func0000000000000058:
 	ret
 
 func0000000000000282:
-	andi	a1, a1, 7
 	sext.w	a0, a0
-	addi	a1, a1, -3
-	seqz	a1, a1
+	andi	a1, a1, 7
 	sgtz	a0, a0
-	and	a0, a0, a1
+	xori	a1, a1, 3
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000182:

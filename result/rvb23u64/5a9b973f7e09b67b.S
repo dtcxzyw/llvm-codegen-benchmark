@@ -7,10 +7,9 @@ func0000000000000021:
 
 func0000000000000024:
 	zext.b	a1, a1
-	addi	a1, a1, -14
 	zext.b	a0, a0
-	seqz	a1, a1
 	sltiu	a0, a0, 5
-	and	a0, a0, a1
+	xori	a1, a1, 14
+	czero.nez	a0, a0, a1
 	ret
 

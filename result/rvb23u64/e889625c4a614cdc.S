@@ -10,21 +10,20 @@ func0000000000000029:
 func0000000000000181:
 	bexti	a2, a2, 4
 	xor	a0, a0, a1
-	seqz	a0, a0
-	and	a0, a0, a2
+	czero.nez	a0, a2, a0
 	ret
 
 func000000000000018c:
-	bclri	a2, a2, 63
+	slli	a2, a2, 1
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a0, a0
-	czero.eqz	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 
 func000000000000002c:
 	andi	a2, a2, 1
+	seqz	a2, a2
 	xor	a0, a0, a1
-	snez	a0, a0
-	czero.nez	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 

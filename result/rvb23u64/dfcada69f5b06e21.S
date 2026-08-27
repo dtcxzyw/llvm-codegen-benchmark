@@ -1,10 +1,10 @@
 func0000000000000ccc:
 	sext.w	a1, a1
+	sext.w	a0, a0
 	addiw	a2, a2, 1
-	addiw	a0, a0, -1
 	slt	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000884:
@@ -107,11 +107,11 @@ func000000000000008c:
 func0000000000000981:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
+	sext.w	a0, a0
 	xor	a1, a1, a2
-	addiw	a0, a0, -7
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 7
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000894:
@@ -133,13 +133,12 @@ func0000000000000c2c:
 	ret
 
 func0000000000000d94:
-	sext.w	a1, a1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sext.w	a0, a0
 	xor	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	sext.w	a1, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func00000000000004c1:
@@ -151,15 +150,14 @@ func00000000000004c1:
 	ret
 
 func0000000000000e81:
-	li	a3, 27
-	sext.w	a0, a0
-	slli	a3, a3, 11
-	xor	a0, a0, a3
 	sext.w	a1, a1
+	sext.w	a0, a0
+	li	a3, 27
 	addiw	a2, a2, 1
+	slli	a3, a3, 11
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a3
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000141:
@@ -181,11 +179,11 @@ func0000000000000e88:
 
 func00000000000000c1:
 	sext.w	a1, a1
+	sext.w	a0, a0
 	addiw	a2, a2, 1
-	addiw	a0, a0, 1
 	slt	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	not	a0, a0
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000581:
@@ -263,11 +261,11 @@ func0000000000000104:
 func0000000000000d81:
 	sext.w	a1, a1
 	addiw	a2, a2, 1
+	sext.w	a0, a0
 	xor	a1, a1, a2
-	addiw	a0, a0, -7
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 7
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d8c:
@@ -324,11 +322,11 @@ func0000000000000081:
 
 func000000000000088c:
 	sext.w	a1, a1
+	sext.w	a0, a0
 	addiw	a2, a2, 1
-	addiw	a0, a0, -1
 	sltu	a1, a2, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000004c4:
@@ -403,12 +401,11 @@ func0000000000000cc8:
 	ret
 
 func0000000000000d84:
-	sext.w	a1, a1
-	addiw	a2, a2, 1
+	addi	a2, a2, 1
 	sext.w	a0, a0
 	xor	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, -2
-	and	a0, a0, a1
+	sext.w	a1, a1
+	czero.eqz	a0, a0, a1
 	ret
 

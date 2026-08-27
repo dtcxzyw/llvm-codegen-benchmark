@@ -68,17 +68,16 @@ func0000000000000546:
 func000000000000014c:
 	add	a1, a1, a2
 	sgtz	a1, a1
-	sltiu	a0, a0, -1
-	and	a0, a0, a1
+	not	a0, a0
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000181:
 	neg	a2, a2
 	xor	a1, a1, a2
-	binvi	a0, a0, 12
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 12
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000008c:
@@ -107,10 +106,9 @@ func0000000000000d8c:
 	add	a1, a1, a2
 	addi	a2, a3, -960
 	xor	a1, a1, a2
-	xor	a0, a0, a2
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000881:
@@ -129,10 +127,9 @@ func0000000000000421:
 
 func0000000000000586:
 	neg	a2, a2
-	xor	a1, a1, a2
-	snez	a1, a1
 	srli	a0, a0, 63
-	and	a0, a0, a1
+	xor	a1, a1, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000494:

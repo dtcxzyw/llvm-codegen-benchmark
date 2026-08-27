@@ -15,11 +15,10 @@ func0000000000000021:
 	ret
 
 func000000000000082c:
-	lui	a2, 128
+	not	a1, a1
+	bexti	a1, a1, 19
 	binvi	a0, a0, 33
-	and	a1, a1, a2
-	snez	a0, a0
-	czero.nez	a0, a0, a1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000d8c:
@@ -34,10 +33,10 @@ func0000000000000f01:
 	ret
 
 func0000000000000d81:
-	lui	a2, 393216
-	xor	a0, a0, a2
 	andi	a1, a1, 7
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	binvi	a0, a0, 29
+	snez	a1, a1
+	binvi	a0, a0, 30
+	czero.nez	a0, a1, a0
 	ret
 

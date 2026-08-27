@@ -9,26 +9,25 @@ func000000000000058c:
 func00000000000000cc:
 	sext.w	a0, a0
 	addiw	a1, a1, -20
-	sltiu	a2, a1, -1
 	slt	a0, a1, a0
-	and	a0, a0, a2
+	not	a1, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func00000000000004cc:
 	sext.w	a0, a0
 	addiw	a1, a1, 1
-	sltiu	a2, a1, -1
 	slt	a0, a1, a0
-	and	a0, a0, a2
+	not	a1, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000054c:
-	addiw	a1, a1, -64
 	sext.w	a0, a0
-	addiw	a2, a1, -1
-	snez	a2, a2
+	addiw	a1, a1, -64
 	slt	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a1, 1
+	czero.eqz	a0, a0, a1
 	ret
 
 func00000000000000ca:

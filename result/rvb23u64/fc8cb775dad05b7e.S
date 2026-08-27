@@ -1,13 +1,12 @@
 func0000000000000e81:
-	li	a3, 27
-	zext.h	a0, a0
-	slli	a3, a3, 11
-	xor	a0, a0, a3
 	sext.w	a1, a1
+	zext.h	a0, a0
+	li	a3, 27
 	addiw	a2, a2, 1
+	slli	a3, a3, 11
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a3
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000e8c:
@@ -31,10 +30,9 @@ func0000000000000881:
 	sext.w	a1, a1
 	zext.h	a0, a0
 	addiw	a2, a2, 1
-	addi	a0, a0, -538
 	sltu	a1, a2, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 538
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000544:

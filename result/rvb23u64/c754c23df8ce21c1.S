@@ -9,10 +9,9 @@ func0000000000000c21:
 
 func0000000000000c2c:
 	addi	a2, a1, 1
-	xor	a1, a1, a0
-	xor	a0, a0, a2
-	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xor	a2, a2, a0
+	snez	a2, a2
+	xor	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 

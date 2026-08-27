@@ -21,11 +21,10 @@ func000000000000048a:
 
 func00000000000004cc:
 	li	a2, -1
-	srli	a2, a2, 32
 	srai	a1, a1, 1
-	xor	a2, a2, a0
-	slt	a0, a0, a1
-	snez	a1, a2
-	and	a0, a0, a1
+	srli	a2, a2, 32
+	slt	a1, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 

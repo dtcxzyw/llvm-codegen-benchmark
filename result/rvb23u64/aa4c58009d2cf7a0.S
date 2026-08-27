@@ -34,10 +34,9 @@ func0000000000000544:
 func0000000000000581:
 	sub	a1, a1, a2
 	addiw	a1, a1, -2
-	addi	a0, a0, -2
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000146:

@@ -1,17 +1,17 @@
 func0000000000000181:
 	fli.s	fa5, 0.5
 	fle.s	a1, fa5, fa0
-	addiw	a0, a0, -3
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 3
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000041:
 	fli.s	fa5, 0.5
 	flt.s	a1, fa0, fa5
-	addiw	a0, a0, -3
-	seqz	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 3
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000081:
@@ -103,18 +103,18 @@ func00000000000000ec:
 func000000000000010c:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	addiw	a0, a0, -3
-	snez	a0, a0
-	and	a0, a0, a1
+	sext.w	a0, a0
+	xori	a0, a0, 3
+	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000a1:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
-	addiw	a0, a0, -1
+	sext.w	a0, a0
 	xori	a1, a1, 1
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000044:

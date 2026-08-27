@@ -24,9 +24,8 @@ func000000000000002c:
 func0000000000000026:
 	xor	a1, a1, a2
 	sext.w	a0, a0
-	seqz	a1, a1
 	slti	a0, a0, 1
-	and	a0, a0, a1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:

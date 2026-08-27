@@ -1,9 +1,9 @@
 func000000000000008c:
 	sext.w	a1, a1
-	addiw	a2, a2, -9
-	snez	a2, a2
+	sext.w	a2, a2
 	sltiu	a1, a1, -2
-	and	a1, a1, a2
+	xori	a2, a2, 9
+	czero.eqz	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

@@ -7,11 +7,11 @@ func0000000000000310:
 
 func0000000000000318:
 	andi	a1, a0, -2
+	sext.w	a0, a0
 	addiw	a1, a1, -6
-	addiw	a0, a0, -4
 	snez	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 4
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000058:

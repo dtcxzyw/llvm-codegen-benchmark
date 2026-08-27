@@ -1,27 +1,25 @@
 func0000000000000281:
-	andi	a1, a1, 15
 	sext.w	a0, a0
-	addi	a1, a1, -8
-	seqz	a1, a1
+	andi	a1, a1, 15
 	sltiu	a0, a0, 113
-	and	a0, a0, a1
+	xori	a1, a1, 8
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 15
-	addi	a1, a1, -1
 	sext.w	a0, a0
-	seqz	a1, a1
-	czero.eqz	a0, a1, a0
+	andi	a1, a1, 15
+	snez	a0, a0
+	xori	a1, a1, 1
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000081:
-	andi	a1, a1, 127
 	sext.w	a0, a0
-	addi	a1, a1, -1
-	seqz	a1, a1
+	andi	a1, a1, 127
 	sltiu	a0, a0, -2
-	and	a0, a0, a1
+	xori	a1, a1, 1
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002c:

@@ -1,9 +1,9 @@
 func000000000000058c:
-	addiw	a2, a2, -22
+	sext.w	a2, a2
 	snez	a0, a0
-	seqz	a2, a2
 	czero.eqz	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 22
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000118c:

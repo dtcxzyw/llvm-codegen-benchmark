@@ -25,29 +25,26 @@ func0000000000000426:
 func0000000000000184:
 	zext.h	a1, a1
 	addi	a2, a2, 1
-	addi	a1, a1, -61
 	sltu	a0, a2, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 61
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000984:
 	zext.h	a1, a1
 	addi	a2, a2, 1
-	addi	a1, a1, -61
 	sltu	a0, a2, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 61
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000824:
-	li	a3, 27
 	zext.h	a1, a1
-	slli	a3, a3, 11
-	xor	a1, a1, a3
+	li	a3, 27
 	addi	a2, a2, 1
+	slli	a3, a3, 11
 	sltu	a0, a2, a0
-	seqz	a1, a1
-	and	a0, a0, a1
+	xor	a1, a1, a3
+	czero.nez	a0, a0, a1
 	ret
 

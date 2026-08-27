@@ -9,23 +9,23 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	slli	a2, a2, 63
 	sext.w	a1, a1
-	srai	a2, a2, 63
-	xor	a1, a1, a2
+	slli	a2, a2, 63
 	sext.w	a0, a0
-	snez	a1, a1
-	czero.eqz	a0, a1, a0
+	srai	a2, a2, 63
+	snez	a0, a0
+	xor	a1, a1, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002c:
-	slli	a2, a2, 63
 	sext.w	a1, a1
-	srai	a2, a2, 63
-	xor	a1, a1, a2
+	slli	a2, a2, 63
 	sext.w	a0, a0
-	snez	a1, a1
-	czero.nez	a0, a1, a0
+	srai	a2, a2, 63
+	seqz	a0, a0
+	xor	a1, a1, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000e94:
@@ -46,13 +46,13 @@ func0000000000000d8c:
 	ret
 
 func0000000000000181:
-	slli	a2, a2, 63
 	sext.w	a1, a1
-	srai	a2, a2, 63
-	xor	a1, a1, a2
+	slli	a2, a2, 63
 	sext.w	a0, a0
-	seqz	a1, a1
-	czero.eqz	a0, a1, a0
+	srai	a2, a2, 63
+	snez	a0, a0
+	xor	a1, a1, a2
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000d08:

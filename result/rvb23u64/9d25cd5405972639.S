@@ -14,10 +14,9 @@ func0000000000000a31:
 
 func0000000000000c60:
 	addi	a2, a2, -60
-	addi	a1, a1, -62
 	snez	a2, a2
-	snez	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 62
+	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	ret
 

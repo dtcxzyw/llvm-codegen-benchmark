@@ -7,13 +7,12 @@ func0000000000000184:
 	ret
 
 func0000000000000081:
-	zext.h	a0, a0
 	zext.b	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -1
-	addi	a0, a0, -53
 	sltiu	a1, a1, 2
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 53
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000008c:
@@ -33,14 +32,12 @@ func0000000000000021:
 	ret
 
 func0000000000000024:
-	li	a2, 11
 	zext.h	a0, a0
 	zext.b	a1, a1
-	slli	a2, a2, 9
 	addi	a1, a1, -1
-	xor	a0, a0, a2
+	xori	a0, a0, 1536
 	sltiu	a1, a1, 254
-	seqz	a0, a0
-	and	a0, a0, a1
+	binvi	a0, a0, 12
+	czero.nez	a0, a1, a0
 	ret
 

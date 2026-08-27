@@ -22,11 +22,11 @@ func0000000000000021:
 	ret
 
 func0000000000000281:
-	addiw	a1, a1, -8
+	sext.w	a1, a1
 	srli	a0, a0, 32
-	seqz	a1, a1
 	sltiu	a0, a0, 3
-	and	a0, a0, a1
+	xori	a1, a1, 8
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000014c:

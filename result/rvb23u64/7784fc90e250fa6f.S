@@ -20,11 +20,10 @@ func000000000000058c:
 
 func0000000000001184:
 	sltiu	a2, a2, -10
-	addi	a1, a1, -32
 	sltiu	a0, a0, -26
-	snez	a1, a1
 	and	a0, a0, a2
-	and	a0, a0, a1
+	xori	a1, a1, 32
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000003188:

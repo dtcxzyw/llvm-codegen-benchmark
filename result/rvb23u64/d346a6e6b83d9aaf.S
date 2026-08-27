@@ -2,17 +2,16 @@ func000000000000108c:
 	sub	a1, a1, a2
 	sext.w	a0, a0
 	sltu	a1, a1, a0
-	sltiu	a0, a0, -1
-	and	a0, a0, a1
+	not	a0, a0
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000102a:
 	sub	a1, a1, a2
 	sext.w	a0, a0
-	xor	a1, a1, a0
-	seqz	a1, a1
-	sgtz	a0, a0
-	and	a0, a0, a1
+	sgtz	a2, a0
+	xor	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func000000000000108a:

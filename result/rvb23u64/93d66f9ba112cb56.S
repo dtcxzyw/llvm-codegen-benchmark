@@ -1,9 +1,9 @@
 func000000000000048c:
 	srai	a2, a2, 3
-	addiw	a0, a0, -8
+	sext.w	a0, a0
 	sltu	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 8
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000421:

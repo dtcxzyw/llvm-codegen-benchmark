@@ -21,10 +21,11 @@ func000000000000042c:
 func0000000000000181:
 	andi	a2, a2, 1
 	or	a1, a1, a2
-	addiw	a0, a0, -50
+	sext.w	a0, a0
 	sext.w	a1, a1
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	xori	a0, a0, 50
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -59,14 +60,13 @@ func0000000000000681:
 	lui	a3, 48
 	sext.w	a0, a0
 	and	a2, a2, a3
-	lui	a3, 16
 	or	a1, a1, a2
-	addi	a3, a3, -2
+	lui	a2, 16
 	srliw	a1, a1, 16
-	xor	a0, a0, a3
+	addi	a2, a2, -2
 	sltiu	a1, a1, 17
-	seqz	a0, a0
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000701:
@@ -74,9 +74,10 @@ func0000000000000701:
 	and	a2, a2, a3
 	or	a1, a1, a2
 	sext.w	a1, a1
-	addiw	a0, a0, -128
+	sext.w	a0, a0
 	srli	a1, a1, 11
-	seqz	a0, a0
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	xori	a0, a0, 128
+	czero.nez	a0, a1, a0
 	ret
 

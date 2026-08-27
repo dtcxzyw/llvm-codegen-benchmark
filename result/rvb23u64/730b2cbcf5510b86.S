@@ -39,11 +39,11 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 136
-	addi	a1, a1, -136
 	sext.w	a0, a0
-	seqz	a1, a1
-	czero.eqz	a0, a1, a0
+	li	a2, 136
+	snez	a0, a0
+	andn	a1, a2, a1
+	czero.nez	a0, a0, a1
 	addi	a0, a0, -1
 	andi	a0, a0, 3
 	ret

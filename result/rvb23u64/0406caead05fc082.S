@@ -25,22 +25,20 @@ func000000000000018c:
 	ret
 
 func0000000000000024:
+	lui	a2, 2
 	zext.h	a0, a0
 	andi	a1, a1, 31
-	lui	a2, 2
-	addi	a1, a1, -28
 	addi	a2, a2, -31
-	seqz	a1, a1
 	sltu	a0, a0, a2
-	and	a0, a0, a1
+	xori	a1, a1, 28
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002c:
 	zext.h	a0, a0
-	lui	a2, 1
-	addi	a0, a0, -3
-	and	a1, a1, a2
-	snez	a0, a0
-	czero.nez	a0, a0, a1
+	not	a1, a1
+	bexti	a1, a1, 12
+	xori	a0, a0, 3
+	czero.eqz	a0, a1, a0
 	ret
 

@@ -22,22 +22,22 @@ func00000000000018cc:
 	ret
 
 func0000000000000421:
+	sext.w	a1, a1
 	addiw	a2, a2, -63
-	addiw	a1, a1, -63
 	addiw	a0, a0, -63
-	snez	a1, a1
 	seqz	a0, a0
+	xori	a1, a1, 63
 	czero.nez	a2, a0, a2
-	and	a0, a0, a1
+	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
 
 func00000000000004ca:
-	addiw	a2, a2, -113
-	snez	a2, a2
+	sext.w	a2, a2
 	srliw	a1, a1, 31
+	xori	a2, a2, 113
 	srliw	a0, a0, 31
-	and	a1, a1, a2
+	czero.eqz	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

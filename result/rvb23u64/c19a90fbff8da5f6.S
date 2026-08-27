@@ -37,14 +37,13 @@ func000000000000030c:
 
 func0000000000000024:
 	lui	a2, 16
+	zext.b	a0, a0
 	addi	a3, a2, -4
 	and	a1, a1, a3
 	addi	a2, a2, -260
-	zext.b	a0, a0
-	xor	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, 44
-	and	a0, a0, a1
+	xor	a1, a1, a2
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000284:

@@ -1,21 +1,19 @@
 func000000000000002c:
 	zext.b	a2, a2
 	addi	a2, a2, -127
-	sltiu	a1, a1, -1
 	seqz	a2, a2
+	not	a1, a1
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func000000000000018c:
 	zext.b	a2, a2
-	li	a3, 2
 	addi	a2, a2, -3
-	bseti	a3, a3, 63
+	binvi	a1, a1, 1
 	snez	a2, a2
-	xor	a1, a1, a3
-	snez	a1, a1
-	and	a0, a0, a2
+	binvi	a1, a1, 63
+	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

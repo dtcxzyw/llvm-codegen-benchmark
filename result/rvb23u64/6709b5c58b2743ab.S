@@ -39,9 +39,9 @@ func0000000000000481:
 	ret
 
 func000000000000018c:
-	addi	a0, a0, -1
 	andi	a1, a1, 3
-	snez	a0, a0
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 

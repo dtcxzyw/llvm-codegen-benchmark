@@ -8,12 +8,11 @@ func000000000000018c:
 
 func0000000000000434:
 	or	a1, a1, a2
-	zext.b	a1, a1
 	zext.b	a0, a0
-	addi	a1, a1, -64
-	seqz	a1, a1
+	zext.b	a1, a1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	xori	a1, a1, 64
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000034:
@@ -26,12 +25,11 @@ func0000000000000034:
 
 func0000000000000424:
 	or	a1, a1, a2
-	zext.b	a1, a1
 	zext.b	a0, a0
-	addi	a1, a1, -7
-	seqz	a1, a1
+	zext.b	a1, a1
 	sltiu	a0, a0, 86
-	and	a0, a0, a1
+	xori	a1, a1, 7
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000084:

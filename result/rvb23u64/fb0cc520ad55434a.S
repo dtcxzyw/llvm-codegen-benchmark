@@ -26,13 +26,11 @@ func000000000000098c:
 
 func0000000000000d81:
 	lui	a2, 16
-	zext.h	a0, a0
-	addi	a2, a2, -1
 	addi	a1, a1, -15
-	xor	a0, a0, a2
+	addi	a2, a2, -1
 	snez	a1, a1
-	seqz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a2, a0
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d8c:

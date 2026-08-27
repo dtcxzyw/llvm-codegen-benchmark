@@ -6,10 +6,9 @@ func0000000000000105:
 
 func000000000000018c:
 	xor	a2, a2, a1
+	snez	a2, a2
 	xor	a0, a0, a1
-	snez	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func00000000000000a8:
@@ -40,10 +39,9 @@ func0000000000000129:
 
 func000000000000002c:
 	xor	a2, a2, a1
+	seqz	a2, a2
 	xor	a0, a0, a1
-	seqz	a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000104:

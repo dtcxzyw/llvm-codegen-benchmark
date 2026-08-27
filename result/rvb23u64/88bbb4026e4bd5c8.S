@@ -47,20 +47,20 @@ func0000000000000084:
 
 func0000000000000081:
 	zext.h	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -2
-	addiw	a0, a0, -64
 	sltiu	a1, a1, 8
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 64
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000024:
 	zext.h	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -17
-	addiw	a0, a0, -2
 	sltiu	a1, a1, 120
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 2
+	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000094:
@@ -74,17 +74,17 @@ func0000000000000094:
 
 func000000000000018c:
 	zext.h	a1, a1
-	addi	a1, a1, -40
 	sext.w	a0, a0
-	snez	a1, a1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	xori	a1, a1, 40
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000181:
 	zext.h	a1, a1
-	addi	a1, a1, -36
 	sext.w	a0, a0
-	seqz	a1, a1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	xori	a1, a1, 36
+	czero.nez	a0, a0, a1
 	ret
 

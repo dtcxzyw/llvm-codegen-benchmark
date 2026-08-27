@@ -21,12 +21,11 @@ func000000000000010c:
 
 func0000000000000101:
 	sext.w	a0, a0
-	andi	a1, a1, 6
-	addi	a1, a1, -6
 	sltiu	a0, a0, 4
-	seqz	a1, a1
+	li	a2, 6
 	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a1, a2, a1
+	czero.nez	a0, a0, a1
 	slli	a0, a0, 3
 	addi	a0, a0, 216
 	ret

@@ -110,11 +110,11 @@ func0000000000000e8c:
 
 func0000000000000c2c:
 	zext.w	a2, a2
-	addi	a1, a1, 1
-	xor	a1, a1, a2
 	sext.w	a0, a0
-	snez	a1, a1
-	czero.nez	a0, a1, a0
+	addi	a1, a1, 1
+	seqz	a0, a0
+	xor	a1, a1, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000008c:

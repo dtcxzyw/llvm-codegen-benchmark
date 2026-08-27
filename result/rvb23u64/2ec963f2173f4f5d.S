@@ -9,16 +9,14 @@ func0000000000000841:
 func0000000000000b0c:
 	lui	a3, 131072
 	addi	a3, a3, -1
-	li	a4, 5
 	xor	a2, a2, a3
-	slli	a4, a4, 29
+	li	a3, -5
 	seqz	a2, a2
-	addi	a4, a4, -1
 	snez	a1, a1
-	xor	a0, a0, a4
+	slli	a3, a3, 29
 	or	a1, a1, a2
-	snez	a0, a0
-	and	a0, a0, a1
+	xnor	a0, a0, a3
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000006046:

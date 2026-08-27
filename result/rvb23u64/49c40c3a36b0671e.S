@@ -1,9 +1,8 @@
 func0000000000006102:
-	addi	a2, a1, -1
-	snez	a2, a2
-	sltiu	a1, a1, 3
+	sltiu	a2, a1, 3
+	xori	a1, a1, 1
 	addi	a0, a0, -3
-	and	a1, a1, a2
+	czero.eqz	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -59,10 +59,9 @@ func0000000000000121:
 func0000000000000081:
 	slli	a2, a2, 31
 	srli	a2, a2, 31
-	binvi	a2, a2, 32
-	seqz	a2, a2
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	binvi	a1, a2, 32
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000010c:

@@ -8,10 +8,9 @@ func0000000000000021:
 
 func0000000000000181:
 	andi	a0, a0, 254
-	addi	a0, a0, -12
 	srliw	a1, a1, 31
-	seqz	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 12
+	czero.nez	a0, a1, a0
 	ret
 
 func000000000000002c:
@@ -25,11 +24,11 @@ func000000000000002c:
 
 func000000000000018c:
 	lui	a2, 65535
-	andi	a0, a0, 96
 	slli	a2, a2, 20
-	addi	a0, a0, -96
 	and	a1, a1, a2
-	snez	a0, a0
-	czero.eqz	a0, a0, a1
+	li	a2, 96
+	snez	a1, a1
+	andn	a0, a2, a0
+	czero.eqz	a0, a1, a0
 	ret
 

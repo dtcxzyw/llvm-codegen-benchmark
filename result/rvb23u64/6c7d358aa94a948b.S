@@ -9,9 +9,9 @@ func000000000000014a:
 func000000000000002a:
 	subw	a1, a1, a2
 	sext.w	a0, a0
-	sltiu	a1, a1, -1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	not	a1, a1
+	czero.eqz	a0, a0, a1
 	ret
 
 func00000000000004ca:
@@ -23,11 +23,11 @@ func00000000000004ca:
 	ret
 
 func0000000000000021:
-	sub	a1, a1, a2
-	addiw	a1, a1, -100
+	subw	a1, a1, a2
 	sext.w	a0, a0
-	snez	a1, a1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	xori	a1, a1, 100
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000421:

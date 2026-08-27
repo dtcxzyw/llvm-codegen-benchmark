@@ -15,11 +15,11 @@ func0000000000000308:
 
 func0000000000000058:
 	zext.b	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -92
-	addiw	a0, a0, -1
 	seqz	a1, a1
-	snez	a0, a0
-	and	a0, a0, a1
+	xori	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000050:

@@ -7,12 +7,11 @@ func0000000000000484:
 	ret
 
 func0000000000000084:
-	sext.w	a3, a2
 	srli	a1, a1, 32
-	xor	a2, a2, a3
+	sext.w	a3, a2
 	seqz	a1, a1
-	seqz	a2, a2
 	and	a0, a0, a1
-	and	a0, a0, a2
+	xor	a2, a2, a3
+	czero.nez	a0, a0, a2
 	ret
 

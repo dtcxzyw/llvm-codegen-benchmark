@@ -21,10 +21,9 @@ func0000000000000121:
 
 func0000000000000184:
 	zext.b	a2, a2
-	addi	a2, a2, -61
-	snez	a2, a2
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	xori	a1, a2, 61
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000024:
@@ -33,9 +32,8 @@ func0000000000000024:
 	li	a4, 27
 	and	a2, a2, a3
 	slli	a4, a4, 11
-	xor	a2, a2, a4
-	seqz	a2, a2
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	xor	a2, a2, a4
+	czero.nez	a0, a0, a2
 	ret
 

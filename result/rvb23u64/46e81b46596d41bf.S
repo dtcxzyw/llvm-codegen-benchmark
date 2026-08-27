@@ -19,13 +19,13 @@ func000000000000302c:
 	ret
 
 func0000000000000424:
-	addiw	a2, a2, -1
+	sext.w	a2, a2
 	sext.w	a0, a0
-	seqz	a2, a2
 	addiw	a1, a1, -1
 	sltiu	a0, a0, 2
+	xori	a2, a2, 1
 	czero.nez	a1, a0, a1
-	and	a0, a0, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

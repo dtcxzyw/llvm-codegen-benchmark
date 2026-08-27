@@ -8,12 +8,12 @@ func000000000000294c:
 	ret
 
 func000000000000302c:
+	sext.w	a1, a1
 	sext.w	a2, a2
-	addiw	a1, a1, -772
 	snez	a0, a0
-	seqz	a1, a1
 	czero.eqz	a0, a0, a2
-	and	a0, a0, a1
+	xori	a1, a1, 772
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000042c:
@@ -42,11 +42,11 @@ func000000000000058c:
 	ret
 
 func000000000000282c:
+	sext.w	a1, a1
 	sext.w	a2, a2
-	addiw	a1, a1, -2
 	sgtz	a2, a2
-	seqz	a1, a1
-	and	a1, a1, a2
+	xori	a1, a1, 2
+	czero.nez	a1, a2, a1
 	czero.eqz	a0, a1, a0
 	ret
 

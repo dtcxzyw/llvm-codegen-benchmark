@@ -35,24 +35,22 @@ func000000000000002c:
 func0000000000000024:
 	zext.b	a2, a2
 	sext.w	a1, a1
-	addi	a2, a2, -1
-	seqz	a2, a2
 	sltiu	a1, a1, 11
-	and	a1, a1, a2
+	xori	a2, a2, 1
+	czero.nez	a1, a1, a2
 	addi	a0, a0, -13
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 13
 	ret
 
 func0000000000000184:
-	sext.w	a1, a1
 	zext.b	a2, a2
 	lui	a3, 524287
-	addi	a2, a2, -83
+	sext.w	a1, a1
 	addi	a3, a3, -2
-	snez	a2, a2
 	sltu	a1, a1, a3
-	and	a1, a1, a2
+	xori	a2, a2, 83
+	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a1
 	ret
 

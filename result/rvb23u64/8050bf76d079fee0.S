@@ -1,10 +1,9 @@
 func00000000000004c1:
-	mul	a1, a1, a2
+	mulw	a1, a1, a2
 	sext.w	a0, a0
 	slti	a0, a0, 2
-	addiw	a1, a1, -32
-	seqz	a1, a1
-	and	a0, a0, a1
+	xori	a1, a1, 32
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000546:

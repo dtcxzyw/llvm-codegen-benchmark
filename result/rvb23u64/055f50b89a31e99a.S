@@ -27,7 +27,6 @@ func00000000000000c8:
 	fmv.w.x	fa5, zero
 	feq.s	a2, fa0, fa5
 	xor	a0, a0, a1
-	snez	a0, a0
-	and	a0, a0, a2
+	czero.eqz	a0, a2, a0
 	ret
 

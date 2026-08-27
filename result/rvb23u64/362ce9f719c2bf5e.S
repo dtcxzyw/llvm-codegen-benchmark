@@ -7,11 +7,10 @@ func00000000000004c4:
 	ret
 
 func000000000000054c:
-	slli	a2, a2, 3
 	sext.w	a1, a1
-	xor	a0, a0, a2
-	snez	a0, a0
+	slli	a2, a2, 3
 	sgtz	a1, a1
-	and	a0, a0, a1
+	xor	a0, a0, a2
+	czero.eqz	a0, a1, a0
 	ret
 

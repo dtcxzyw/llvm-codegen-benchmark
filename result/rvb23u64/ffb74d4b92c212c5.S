@@ -9,15 +9,14 @@ func0000000000000304:
 	ret
 
 func000000000000002c:
-	lui	a2, 131072
-	addi	a2, a2, -1
+	slli	a1, a1, 35
 	sext.w	a0, a0
-	and	a1, a1, a2
+	srli	a1, a1, 35
 	xor	a0, a0, a1
-	xor	a1, a1, a2
+	lui	a2, 917504
 	seqz	a0, a0
-	snez	a1, a1
-	and	a0, a0, a1
+	xnor	a1, a1, a2
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -29,13 +28,11 @@ func000000000000018c:
 	ret
 
 func000000000000030c:
-	lui	a2, 16
-	zext.h	a1, a1
-	addi	a2, a2, -1
 	sext.w	a0, a0
-	xor	a2, a2, a1
-	snez	a2, a2
+	zext.h	a1, a1
+	lui	a2, 1048560
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	xnor	a1, a1, a2
+	czero.eqz	a0, a0, a1
 	ret
 
