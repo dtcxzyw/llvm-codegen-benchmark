@@ -19,7 +19,7 @@ func0000000000000181:
 	sext.w	a1, a1
 	andi	a0, a0, 248
 	snez	a1, a1
-	xori	a0, a0, 32
+	addi	a0, a0, -32
 	czero.nez	a0, a1, a0
 	ret
 

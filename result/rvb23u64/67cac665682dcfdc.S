@@ -3,7 +3,7 @@ func0000000000006058:
 	sext.w	a0, a0
 	sext.w	a2, a2
 	snez	a2, a2
-	xori	a1, a1, 14
+	addi	a1, a1, -14
 	czero.nez	a1, a2, a1
 	snez	a0, a0
 	or	a0, a0, a1

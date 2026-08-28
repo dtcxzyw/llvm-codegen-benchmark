@@ -55,8 +55,7 @@ func000000000000018c:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa5, fa0
 	andi	a0, a0, -2
-	sext.w	a0, a0
-	xori	a0, a0, 8
+	addiw	a0, a0, -8
 	czero.eqz	a0, a1, a0
 	ret
 

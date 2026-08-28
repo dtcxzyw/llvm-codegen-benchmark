@@ -125,10 +125,9 @@ func0000000000000081:
 
 func000000000000014c:
 	sext.w	a2, a2
-	sext.w	a1, a1
 	sgtz	a2, a2
 	and	a0, a0, a2
-	not	a1, a1
+	addiw	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 

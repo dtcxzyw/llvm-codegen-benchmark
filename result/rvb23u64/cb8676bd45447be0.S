@@ -1,8 +1,9 @@
 func0000000000000024:
-	xor	a1, a1, a2
+	sext.w	a2, a2
 	sext.w	a0, a0
-	sltiu	a0, a0, 2
 	sext.w	a1, a1
+	xor	a1, a1, a2
+	sltiu	a0, a0, 2
 	czero.nez	a0, a0, a1
 	xori	a0, a0, 1
 	slli	a0, a0, 1

@@ -9,8 +9,8 @@ func000000000000318c:
 func0000000000000104:
 	andi	a2, a2, -4
 	addi	a1, a1, 4
+	addi	a2, a2, -4
 	sltu	a0, a1, a0
-	xori	a1, a2, 4
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 

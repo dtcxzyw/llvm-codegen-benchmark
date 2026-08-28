@@ -1,8 +1,9 @@
 func0000000000000021:
+	li	a2, -1
 	sltiu	a1, a1, -2
-	binvi	a0, a0, 62
+	slli	a2, a2, 62
 	xori	a1, a1, 1
-	binvi	a0, a0, 63
+	xor	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret
 

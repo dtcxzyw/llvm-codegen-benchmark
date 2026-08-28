@@ -12,8 +12,8 @@ func0000000000000184:
 	lui	a2, 524287
 	andi	a1, a1, 223
 	addi	a2, a2, -2
+	addi	a1, a1, -83
 	sltu	a0, a0, a2
-	xori	a1, a1, 83
 	czero.eqz	a0, a0, a1
 	ret
 

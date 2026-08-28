@@ -1,16 +1,17 @@
 func0000000000000318:
 	snez	a2, a2
-	xori	a1, a1, 27
+	addi	a1, a1, -27
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000118:
 	li	a3, 2
+	li	a4, 3
 	bseti	a3, a3, 63
-	xori	a1, a1, 3
+	bseti	a4, a4, 63
 	sltu	a2, a2, a3
-	binvi	a1, a1, 63
+	xor	a1, a1, a4
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -44,10 +45,10 @@ func0000000000000310:
 
 func0000000000000314:
 	li	a3, -1
+	slli	a4, a3, 62
 	bclri	a3, a3, 62
-	binvi	a2, a2, 62
+	xor	a2, a2, a4
 	slt	a1, a3, a1
-	binvi	a2, a2, 63
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret

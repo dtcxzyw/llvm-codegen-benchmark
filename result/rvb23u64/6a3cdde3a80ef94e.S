@@ -1,9 +1,8 @@
 func0000000000000081:
 	addiw	a2, a2, 8
-	sext.w	a0, a0
 	sltiu	a2, a2, 17
 	and	a1, a1, a2
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -40,19 +39,17 @@ func0000000000000284:
 
 func000000000000008c:
 	addiw	a2, a2, -13
-	sext.w	a0, a0
 	sltiu	a2, a2, 3
 	and	a1, a1, a2
-	xori	a0, a0, 2020
+	addiw	a0, a0, -2020
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000481:
 	addiw	a2, a2, -5
-	sext.w	a0, a0
 	sltiu	a2, a2, -2
 	and	a1, a1, a2
-	xori	a0, a0, 10
+	addiw	a0, a0, -10
 	czero.nez	a0, a1, a0
 	ret
 

@@ -23,10 +23,9 @@ func0000000000000181:
 
 func0000000000000194:
 	zext.b	a2, a2
-	sext.w	a0, a0
 	zext.b	a1, a1
 	sltu	a1, a1, a2
-	xori	a0, a0, 3
+	addiw	a0, a0, -3
 	czero.eqz	a0, a1, a0
 	ret
 

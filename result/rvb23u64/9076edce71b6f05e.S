@@ -21,15 +21,13 @@ func00000000000000a2:
 
 func000000000000001c:
 	fle.d	a1, fa1, fa0
-	sext.w	a0, a0
-	xori	a0, a0, 3
+	addiw	a0, a0, -3
 	czero.nez	a0, a1, a0
 	ret
 
 func000000000000001a:
 	fle.d	a1, fa0, fa1
-	sext.w	a0, a0
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 

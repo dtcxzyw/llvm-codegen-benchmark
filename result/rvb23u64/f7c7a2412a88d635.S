@@ -6,7 +6,7 @@ func00000000000000c4:
 	ret
 
 func000000000000010c:
-	xori	a2, a2, 1
+	addi	a2, a2, -1
 	sltu	a0, a1, a0
 	czero.eqz	a0, a0, a2
 	ret
@@ -20,7 +20,7 @@ func00000000000000a4:
 	ret
 
 func000000000000042c:
-	xori	a2, a2, 1
+	addi	a2, a2, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	czero.eqz	a0, a0, a2
@@ -28,8 +28,8 @@ func000000000000042c:
 
 func00000000000000cc:
 	lui	a3, 1048320
-	slt	a0, a0, a1
 	xor	a2, a2, a3
+	slt	a0, a0, a1
 	czero.eqz	a0, a0, a2
 	ret
 

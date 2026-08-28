@@ -9,8 +9,8 @@ func0000000000000429:
 func0000000000000521:
 	minu	a3, a1, a2
 	sltu	a1, a1, a2
-	xori	a1, a1, 1
 	xor	a0, a0, a3
+	xori	a1, a1, 1
 	czero.nez	a0, a1, a0
 	ret
 

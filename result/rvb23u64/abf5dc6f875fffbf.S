@@ -1,8 +1,8 @@
 func0000000000000101:
-	sext.w	a0, a0
-	sltiu	a1, a0, 2
+	sext.w	a1, a0
+	sltiu	a1, a1, 2
 	xori	a1, a1, 1
-	xori	a0, a0, 4
+	addiw	a0, a0, -4
 	czero.eqz	a0, a1, a0
 	ret
 

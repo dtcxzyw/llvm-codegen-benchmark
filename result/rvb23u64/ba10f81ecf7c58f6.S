@@ -14,7 +14,7 @@ func000000000000014c:
 	sub	a1, a0, a1
 	srli	a1, a1, 63
 	xori	a1, a1, 1
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	ret
 

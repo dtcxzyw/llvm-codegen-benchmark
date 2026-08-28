@@ -8,17 +8,17 @@ func0000000000000081:
 
 func000000000000018c:
 	addi	a1, a1, -1
-	li	a2, 15
+	andi	a0, a0, 15
 	snez	a1, a1
-	andn	a0, a2, a0
+	addi	a0, a0, -15
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000058c:
 	addi	a1, a1, -1
-	li	a2, 15
+	andi	a0, a0, 15
 	snez	a1, a1
-	andn	a0, a2, a0
+	addi	a0, a0, -15
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -45,7 +45,7 @@ func0000000000000181:
 	addi	a1, a1, -1
 	andi	a0, a0, 240
 	snez	a1, a1
-	xori	a0, a0, 176
+	addi	a0, a0, -176
 	czero.nez	a0, a1, a0
 	ret
 

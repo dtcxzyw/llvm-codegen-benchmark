@@ -1,16 +1,16 @@
 func0000000000000181:
 	fli.s	fa5, 0.5
 	fle.s	a1, fa5, fa0
-	li	a2, 3
-	andn	a0, a2, a0
+	andi	a0, a0, 3
+	addi	a0, a0, -3
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000041:
 	fli.s	fa5, 0.5
 	flt.s	a1, fa0, fa5
-	li	a2, 3
-	andn	a0, a2, a0
+	andi	a0, a0, 3
+	addi	a0, a0, -3
 	czero.nez	a0, a1, a0
 	ret
 

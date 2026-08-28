@@ -3,7 +3,7 @@ func00000000000000c1:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	xori	a0, a0, 115
+	addi	a0, a0, -115
 	czero.nez	a0, a1, a0
 	ret
 
@@ -12,17 +12,17 @@ func0000000000000141:
 	zext.b	a0, a0
 	sext.w	a2, a2
 	slt	a1, a2, a1
-	xori	a0, a0, 32
+	addi	a0, a0, -32
 	czero.nez	a0, a1, a0
 	ret
 
 func000000000000002c:
 	sext.w	a2, a2
 	sext.w	a1, a1
+	zext.b	a0, a0
 	xor	a1, a1, a2
-	li	a2, 255
 	seqz	a1, a1
-	andn	a0, a2, a0
+	addi	a0, a0, -255
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -31,7 +31,7 @@ func00000000000000cc:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	xori	a0, a0, 10
+	addi	a0, a0, -10
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -65,7 +65,7 @@ func0000000000000181:
 	zext.b	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 10
+	addi	a0, a0, -10
 	czero.nez	a0, a1, a0
 	ret
 
@@ -79,18 +79,20 @@ func0000000000000284:
 	ret
 
 func0000000000000026:
-	xor	a1, a1, a2
+	sext.w	a2, a2
 	slli	a0, a0, 56
-	srli	a0, a0, 63
 	sext.w	a1, a1
+	xor	a1, a1, a2
+	srli	a0, a0, 63
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000184:
-	xor	a1, a1, a2
+	sext.w	a2, a2
 	zext.b	a0, a0
-	sltiu	a0, a0, 64
 	sext.w	a1, a1
+	xor	a1, a1, a2
+	sltiu	a0, a0, 64
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -109,7 +111,7 @@ func000000000000018c:
 	zext.b	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -118,7 +120,7 @@ func0000000000000081:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	sltu	a1, a1, a2
-	xori	a0, a0, 13
+	addi	a0, a0, -13
 	czero.nez	a0, a1, a0
 	ret
 
@@ -144,7 +146,7 @@ func0000000000000281:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	sltu	a1, a1, a2
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -158,10 +160,11 @@ func00000000000000c8:
 	ret
 
 func0000000000000024:
-	xor	a1, a1, a2
+	sext.w	a2, a2
 	zext.b	a0, a0
-	sltiu	a0, a0, 13
 	sext.w	a1, a1
+	xor	a1, a1, a2
+	sltiu	a0, a0, 13
 	czero.nez	a0, a0, a1
 	ret
 
@@ -181,7 +184,7 @@ func0000000000000121:
 	zext.b	a0, a0
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
-	xori	a0, a0, 44
+	addi	a0, a0, -44
 	czero.nez	a0, a1, a0
 	ret
 

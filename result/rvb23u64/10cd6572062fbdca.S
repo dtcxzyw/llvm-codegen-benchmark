@@ -8,9 +8,8 @@ func000000000000108a:
 
 func0000000000000081:
 	addiw	a1, a1, -4
-	sext.w	a0, a0
 	sltiu	a1, a1, -2
-	not	a0, a0
+	addiw	a0, a0, 1
 	czero.nez	a0, a1, a0
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000184:
 func000000000000018c:
 	zext.b	a0, a0
 	bexti	a1, a1, 11
-	xori	a0, a0, 48
+	addi	a0, a0, -48
 	czero.eqz	a0, a1, a0
 	ret
 

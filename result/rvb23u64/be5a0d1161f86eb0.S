@@ -15,9 +15,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	bexti	a1, a1, 11
-	xori	a0, a0, 4
+	addiw	a0, a0, -4
 	czero.nez	a0, a1, a0
 	ret
 
@@ -31,9 +30,8 @@ func0000000000000028:
 
 func000000000000008c:
 	sraiw	a1, a1, 5
-	srliw	a0, a0, 6
 	seqz	a1, a1
-	slli	a0, a0, 6
+	sraiw	a0, a0, 6
 	czero.eqz	a0, a1, a0
 	ret
 

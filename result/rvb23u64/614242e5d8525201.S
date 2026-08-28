@@ -19,10 +19,10 @@ func000000000000018c:
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
-	sltiu	a1, a0, 33
+	sext.w	a1, a0
+	sltiu	a1, a1, 33
+	addiw	a0, a0, -64
 	xori	a1, a1, 1
-	xori	a0, a0, 64
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -35,9 +35,8 @@ func0000000000000188:
 	ret
 
 func0000000000000186:
-	sext.w	a1, a0
-	srliw	a0, a0, 31
-	xori	a1, a1, -61
-	czero.eqz	a0, a0, a1
+	srliw	a1, a0, 31
+	addiw	a0, a0, 61
+	czero.eqz	a0, a1, a0
 	ret
 

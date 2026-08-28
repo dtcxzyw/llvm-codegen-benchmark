@@ -4,7 +4,7 @@ func0000000000000e81:
 	addiw	a2, a2, 1
 	srli	a1, a1, 58
 	sltu	a0, a2, a0
-	xori	a1, a1, 54
+	addi	a1, a1, -54
 	czero.nez	a0, a0, a1
 	ret
 

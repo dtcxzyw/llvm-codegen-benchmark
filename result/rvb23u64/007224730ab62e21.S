@@ -17,7 +17,7 @@ func0000000000000d41:
 	addi	a2, a2, 1
 	zext.b	a0, a0
 	slt	a1, a2, a1
-	xori	a0, a0, 27
+	addi	a0, a0, -27
 	czero.nez	a0, a1, a0
 	ret
 

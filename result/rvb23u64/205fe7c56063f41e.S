@@ -8,9 +8,8 @@ func000000000000318a:
 
 func0000000000003181:
 	snez	a2, a2
-	sext.w	a0, a0
 	czero.eqz	a1, a2, a1
-	xori	a0, a0, 11
+	addiw	a0, a0, -11
 	czero.nez	a0, a1, a0
 	ret
 

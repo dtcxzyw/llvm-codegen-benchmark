@@ -10,7 +10,7 @@ func0000000000000014:
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	zext.b	a0, a0
-	xori	a0, a0, 8
+	addi	a0, a0, -8
 	czero.nez	a0, a1, a0
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000081:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
 	zext.b	a0, a0
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

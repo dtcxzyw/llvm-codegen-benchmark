@@ -20,7 +20,7 @@ func0000000000000024:
 	zext.h	a0, a0
 	addi	a1, a1, -17
 	sltiu	a1, a1, 173
-	xori	a0, a0, 5
+	addi	a0, a0, -5
 	czero.nez	a0, a1, a0
 	ret
 

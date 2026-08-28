@@ -16,10 +16,9 @@ func00000000000000ca:
 
 func000000000000010c:
 	addw	a1, a1, a0
-	sext.w	a0, a0
 	sltiu	a1, a1, 12
 	xori	a1, a1, 1
-	xori	a0, a0, 16
+	addiw	a0, a0, -16
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -58,10 +57,9 @@ func0000000000000146:
 
 func000000000000002c:
 	add	a1, a1, a0
-	sext.w	a0, a0
 	addiw	a1, a1, -8
 	seqz	a1, a1
-	not	a0, a0
+	addiw	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 

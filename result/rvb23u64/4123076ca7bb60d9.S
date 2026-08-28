@@ -23,8 +23,8 @@ func000000000000018c:
 func0000000000000024:
 	zext.b	a0, a0
 	zext.b	a1, a1
+	addi	a1, a1, -14
 	sltiu	a0, a0, 5
-	xori	a1, a1, 14
 	czero.nez	a0, a0, a1
 	ret
 
@@ -32,8 +32,8 @@ func0000000000000101:
 	zext.b	a0, a0
 	zext.b	a1, a1
 	sltiu	a0, a0, 11
+	addi	a1, a1, -1
 	xori	a0, a0, 1
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 

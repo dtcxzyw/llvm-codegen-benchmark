@@ -10,8 +10,8 @@ func0000000000000484:
 func0000000000000481:
 	sext.w	a0, a0
 	andi	a1, a1, 2047
+	addi	a1, a1, -1
 	sltiu	a0, a0, 4
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 

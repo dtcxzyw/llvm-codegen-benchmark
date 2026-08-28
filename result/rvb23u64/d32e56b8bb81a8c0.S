@@ -1,8 +1,7 @@
 func0000000000000014:
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
-	sext.w	a0, a0
-	not	a0, a0
+	addiw	a0, a0, 1
 	czero.nez	a0, a1, a0
 	ret
 
@@ -20,8 +19,7 @@ func0000000000000012:
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	flt.d	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
@@ -60,16 +58,14 @@ func00000000000000cd:
 func000000000000001c:
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa5, fa0
-	sext.w	a0, a0
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000018:
 	fli.d	fa5, 1.0
 	feq.d	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

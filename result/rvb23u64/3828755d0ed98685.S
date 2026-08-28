@@ -30,11 +30,10 @@ func0000000000000481:
 	ret
 
 func0000000000000081:
-	andi	a0, a0, -2
 	addiw	a1, a1, -1
-	sext.w	a0, a0
+	andi	a0, a0, -2
 	sltiu	a1, a1, 2
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -42,7 +41,7 @@ func000000000000048c:
 	addiw	a1, a1, -5
 	andi	a0, a0, 896
 	sltiu	a1, a1, -4
-	xori	a0, a0, 640
+	addi	a0, a0, -640
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -57,7 +56,7 @@ func0000000000000141:
 	addiw	a1, a1, -1
 	andi	a0, a0, 7
 	sgtz	a1, a1
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

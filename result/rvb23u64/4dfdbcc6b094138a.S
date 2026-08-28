@@ -1,8 +1,8 @@
 func0000000000000024:
-	zext.b	a2, a2
 	zext.b	a1, a1
+	zext.b	a2, a2
+	addi	a2, a2, -5
 	sltiu	a1, a1, 64
-	xori	a2, a2, 5
 	czero.nez	a1, a1, a2
 	addi	a0, a0, -2
 	czero.nez	a0, a0, a1

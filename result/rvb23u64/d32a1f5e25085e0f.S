@@ -194,9 +194,9 @@ func000000000000002b:
 	ret
 
 func0000000000000028:
-	sltu	a1, a1, a0
-	xor	a0, a0, a2
-	czero.nez	a0, a1, a0
+	xor	a2, a2, a0
+	sltu	a0, a1, a0
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000124:
@@ -240,9 +240,9 @@ func0000000000000105:
 	ret
 
 func0000000000000024:
-	sltu	a1, a0, a1
-	xor	a0, a0, a2
-	czero.nez	a0, a1, a0
+	xor	a2, a2, a0
+	sltu	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000147:

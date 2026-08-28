@@ -34,9 +34,9 @@ func0000000000000f01:
 
 func0000000000000d81:
 	andi	a1, a1, 7
-	binvi	a0, a0, 29
+	lui	a2, 393216
 	snez	a1, a1
-	binvi	a0, a0, 30
+	xor	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret
 

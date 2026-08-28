@@ -51,8 +51,8 @@ func0000000000000146:
 
 func0000000000000181:
 	sub	a2, a2, a1
+	addi	a2, a2, -8
 	snez	a0, a0
-	xori	a1, a2, 8
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 

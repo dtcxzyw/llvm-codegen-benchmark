@@ -8,8 +8,8 @@ func000000000000002c:
 func00000000000000c1:
 	slli	a0, a0, 56
 	andi	a1, a1, 240
+	addi	a1, a1, -32
 	srli	a0, a0, 63
-	xori	a1, a1, 32
 	czero.nez	a0, a0, a1
 	ret
 

@@ -40,12 +40,12 @@ func0000000000002108:
 	ret
 
 func0000000000006118:
-	sext.w	a2, a2
-	sext.w	a0, a0
 	sext.w	a1, a1
-	binvi	a2, a2, 18
+	sext.w	a0, a0
+	sext.w	a2, a2
+	lui	a3, 576
+	xor	a2, a2, a3
 	sltiu	a1, a1, -4
-	binvi	a2, a2, 21
 	czero.eqz	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1

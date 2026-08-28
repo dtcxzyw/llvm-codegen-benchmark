@@ -14,8 +14,8 @@ func0000000000000094:
 
 func0000000000000028:
 	srli	a0, a0, 62
+	addi	a1, a1, 1
 	snez	a0, a0
-	not	a1, a1
 	czero.eqz	a0, a0, a1
 	ret
 

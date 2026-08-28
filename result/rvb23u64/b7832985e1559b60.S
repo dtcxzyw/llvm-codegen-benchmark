@@ -6,10 +6,9 @@ func0000000000000021:
 	ret
 
 func0000000000000188:
-	srliw	a1, a0, 1
-	bexti	a0, a0, 32
-	slli	a1, a1, 1
-	czero.eqz	a0, a0, a1
+	bexti	a1, a0, 32
+	sraiw	a0, a0, 1
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -69,9 +68,8 @@ func0000000000000184:
 	slli	a1, a1, 20
 	and	a2, a0, a1
 	xor	a1, a1, a2
-	srliw	a0, a0, 16
 	snez	a1, a1
-	slli	a0, a0, 16
+	sraiw	a0, a0, 16
 	czero.nez	a0, a1, a0
 	ret
 

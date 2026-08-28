@@ -1,9 +1,9 @@
 func0000000000000021:
 	zext.b	a2, a2
+	zext.b	a1, a1
 	seqz	a2, a2
-	li	a3, 255
 	and	a0, a0, a2
-	andn	a1, a3, a1
+	addi	a1, a1, -255
 	czero.nez	a0, a0, a1
 	ret
 
@@ -50,7 +50,7 @@ func0000000000000081:
 	zext.b	a1, a1
 	sltiu	a2, a2, 6
 	and	a0, a0, a2
-	xori	a1, a1, 2
+	addi	a1, a1, -2
 	czero.nez	a0, a0, a1
 	ret
 

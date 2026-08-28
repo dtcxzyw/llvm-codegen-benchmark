@@ -45,7 +45,7 @@ func0000000000000081:
 	zext.h	a2, a2
 	addi	a3, a3, -2
 	sltu	a2, a2, a3
-	xori	a1, a1, 128
+	addi	a1, a1, -128
 	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret
@@ -56,7 +56,7 @@ func000000000000008c:
 	zext.h	a2, a2
 	addi	a3, a3, -10
 	sltu	a2, a2, a3
-	xori	a1, a1, 45
+	addi	a1, a1, -45
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret

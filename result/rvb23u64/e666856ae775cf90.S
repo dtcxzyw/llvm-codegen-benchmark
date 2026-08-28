@@ -22,11 +22,10 @@ func0000000000000101:
 	ret
 
 func0000000000000c28:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	sext.w	a2, a2
+	sext.w	a0, a0
 	sltu	a0, a0, a2
-	xori	a1, a1, 32
+	addiw	a1, a1, -32
 	czero.nez	a0, a0, a1
 	ret
 
@@ -58,9 +57,10 @@ func000000000000002c:
 
 func0000000000000081:
 	sext.w	a1, a1
+	sext.w	a0, a0
+	sext.w	a2, a2
 	xor	a0, a0, a2
 	sltiu	a1, a1, 7
-	sext.w	a0, a0
 	czero.nez	a0, a1, a0
 	ret
 

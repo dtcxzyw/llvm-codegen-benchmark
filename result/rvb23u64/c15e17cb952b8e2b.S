@@ -13,7 +13,7 @@ func000000000000018c:
 	zext.h	a0, a0
 	addi	a1, a1, -23
 	snez	a1, a1
-	xori	a0, a0, 24
+	addi	a0, a0, -24
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -27,12 +27,12 @@ func000000000000002c:
 	ret
 
 func0000000000000184:
-	li	a1, 255
-	slli	a2, a0, 48
-	srli	a2, a2, 56
-	sltiu	a2, a2, 255
-	andn	a0, a1, a0
-	czero.eqz	a0, a2, a0
+	slli	a1, a0, 48
+	zext.b	a0, a0
+	srli	a1, a1, 56
+	addi	a0, a0, -255
+	sltiu	a1, a1, 255
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000002a:

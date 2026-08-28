@@ -3,7 +3,7 @@ func0000000000000021:
 	addi	a2, a2, -4
 	seqz	a2, a2
 	and	a1, a1, a2
-	xori	a0, a0, 56
+	addi	a0, a0, -56
 	czero.nez	a0, a1, a0
 	ret
 

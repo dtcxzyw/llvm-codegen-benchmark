@@ -11,9 +11,9 @@ func000000000000010c:
 	ret
 
 func0000000000000081:
-	li	a3, 255
 	sltu	a1, a1, a2
-	andn	a0, a3, a0
+	zext.b	a0, a0
+	addi	a0, a0, -255
 	czero.nez	a0, a1, a0
 	ret
 
@@ -42,7 +42,7 @@ func0000000000000021:
 func0000000000000101:
 	sltu	a1, a2, a1
 	zext.b	a0, a0
-	xori	a0, a0, 220
+	addi	a0, a0, -220
 	czero.nez	a0, a1, a0
 	ret
 

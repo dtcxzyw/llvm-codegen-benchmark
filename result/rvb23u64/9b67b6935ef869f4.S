@@ -18,8 +18,8 @@ func0000000000000024:
 
 func000000000000002c:
 	xor	a0, a0, a1
-	snez	a0, a0
 	binvi	a1, a1, 63
+	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 

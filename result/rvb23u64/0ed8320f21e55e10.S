@@ -30,10 +30,11 @@ func0000000000000301:
 	ret
 
 func0000000000000181:
-	andi	a1, a1, 7
 	lui	a2, 393216
+	andi	a1, a1, 7
+	and	a0, a0, a2
 	snez	a1, a1
-	andn	a0, a2, a0
+	xor	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret
 

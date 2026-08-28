@@ -36,7 +36,7 @@ func0000000000000088:
 func000000000000010c:
 	addi	a1, a1, 1
 	sltu	a1, a1, a0
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 

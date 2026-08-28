@@ -18,11 +18,11 @@ func000000000000002c:
 	ret
 
 func00000000000000ec:
-	sext.w	a1, a1
+	sext.w	a3, a1
 	sext.w	a2, a2
-	slt	a2, a2, a1
+	slt	a2, a2, a3
 	xori	a2, a2, 1
-	xori	a1, a1, 4
+	addiw	a1, a1, -4
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret

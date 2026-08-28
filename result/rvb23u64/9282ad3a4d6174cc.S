@@ -78,8 +78,8 @@ func0000000000000118:
 	ret
 
 func000000000000002c:
-	snez	a0, a0
 	binvi	a1, a1, 63
+	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 

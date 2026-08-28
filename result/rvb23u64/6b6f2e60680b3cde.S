@@ -9,15 +9,15 @@ func0000000000000144:
 func0000000000000d8c:
 	addi	a2, a2, 1
 	addi	a1, a1, -9
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000c8c:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 64
 	xor	a0, a0, a2
+	sltiu	a1, a1, 64
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -41,8 +41,8 @@ func0000000000000e84:
 
 func0000000000000e8c:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 14
 	xor	a0, a0, a2
+	sltiu	a1, a1, 14
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -74,15 +74,15 @@ func0000000000000c85:
 
 func000000000000098c:
 	addi	a2, a2, -1
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000ccc:
 	addi	a2, a2, 1
-	slti	a1, a1, 1023
 	xor	a0, a0, a2
+	slti	a1, a1, 1023
 	czero.eqz	a0, a1, a0
 	ret
 

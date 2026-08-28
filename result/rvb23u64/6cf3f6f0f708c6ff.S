@@ -21,7 +21,7 @@ func000000000000018c:
 	andi	a1, a1, 48
 	andi	a0, a0, 15
 	snez	a1, a1
-	xori	a0, a0, 9
+	addi	a0, a0, -9
 	czero.eqz	a0, a1, a0
 	ret
 

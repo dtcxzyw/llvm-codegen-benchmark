@@ -17,7 +17,7 @@ func000000000000008c:
 	sltiu	a2, a2, 252
 	andi	a1, a1, 254
 	and	a0, a0, a2
-	xori	a1, a1, 14
+	addi	a1, a1, -14
 	czero.eqz	a0, a0, a1
 	ret
 

@@ -54,7 +54,7 @@ func0000000000000024:
 	zext.h	a0, a0
 	addiw	a1, a1, -185
 	sltiu	a1, a1, 3
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -62,7 +62,7 @@ func0000000000000424:
 	zext.h	a0, a0
 	addiw	a1, a1, -2
 	sltiu	a1, a1, 3
-	xori	a0, a0, 362
+	addi	a0, a0, -362
 	czero.nez	a0, a1, a0
 	ret
 
@@ -77,7 +77,7 @@ func0000000000000081:
 	zext.h	a0, a0
 	addiw	a1, a1, -13
 	sltiu	a1, a1, 2
-	xori	a0, a0, 3
+	addi	a0, a0, -3
 	czero.nez	a0, a1, a0
 	ret
 

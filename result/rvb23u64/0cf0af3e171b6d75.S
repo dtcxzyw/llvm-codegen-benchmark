@@ -59,7 +59,7 @@ func0000000000000141:
 	sext.w	a1, a0
 	zext.b	a0, a0
 	slti	a1, a1, 23
-	xori	a0, a0, 7
+	addi	a0, a0, -7
 	czero.nez	a0, a1, a0
 	ret
 

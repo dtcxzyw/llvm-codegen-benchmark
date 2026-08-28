@@ -36,9 +36,8 @@ func000000000000042c:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
+	addiw	a1, a1, 10
 	seqz	a0, a0
-	xori	a1, a1, -10
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -61,16 +60,14 @@ func0000000000000584:
 	ret
 
 func0000000000000d8c:
-	sext.w	a1, a1
+	addiw	a1, a1, -63
 	snez	a0, a0
-	xori	a1, a1, 63
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000058c:
-	sext.w	a1, a1
+	addiw	a1, a1, -1
 	snez	a0, a0
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 

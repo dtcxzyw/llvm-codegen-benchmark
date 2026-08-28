@@ -25,10 +25,9 @@ func0000000000000042:
 	ret
 
 func0000000000000182:
-	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 2
-	xori	a1, a1, 32
+	addiw	a1, a1, -32
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -67,11 +66,11 @@ func0000000000000108:
 	ret
 
 func0000000000000308:
-	sext.w	a2, a2
 	sext.w	a1, a1
-	binvi	a2, a2, 18
+	sext.w	a2, a2
+	lui	a3, 576
+	xor	a2, a2, a3
 	sltiu	a1, a1, -4
-	binvi	a2, a2, 21
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret

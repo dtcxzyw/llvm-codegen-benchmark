@@ -2,7 +2,7 @@ func0000000000000c8c:
 	addi	a2, a2, 8
 	zext.b	a1, a1
 	sltu	a0, a2, a0
-	xori	a1, a1, 144
+	addi	a1, a1, -144
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -31,11 +31,10 @@ func0000000000000c81:
 
 func0000000000000d8c:
 	addi	a2, a2, 16
-	andi	a1, a1, -2
 	xor	a0, a0, a2
-	sext.w	a1, a1
+	andi	a1, a1, -2
 	snez	a0, a0
-	xori	a1, a1, 2
+	addiw	a1, a1, -2
 	czero.eqz	a0, a0, a1
 	ret
 

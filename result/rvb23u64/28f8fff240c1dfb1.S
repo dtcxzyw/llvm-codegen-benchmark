@@ -15,10 +15,11 @@ func000000000000010c:
 
 func0000000000000184:
 	lui	a2, 16
-	srliw	a0, a0, 13
 	addi	a2, a2, -2
+	and	a1, a1, a2
+	srliw	a0, a0, 13
+	xor	a1, a1, a2
 	sltiu	a0, a0, 129
-	andn	a1, a2, a1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -32,10 +33,9 @@ func0000000000000021:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
 	not	a1, a1
 	bexti	a1, a1, 17
-	xori	a0, a0, 1280
+	addiw	a0, a0, -1280
 	czero.eqz	a0, a1, a0
 	ret
 

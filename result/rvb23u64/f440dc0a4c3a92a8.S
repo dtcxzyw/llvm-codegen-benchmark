@@ -11,7 +11,7 @@ func000000000000018c:
 	snez	a2, a2
 	andi	a1, a1, 258
 	and	a0, a0, a2
-	xori	a1, a1, 2
+	addi	a1, a1, -2
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -20,7 +20,7 @@ func000000000000008c:
 	sltiu	a2, a2, -3
 	andi	a1, a1, 1023
 	and	a0, a0, a2
-	xori	a1, a1, 129
+	addi	a1, a1, -129
 	czero.eqz	a0, a0, a1
 	ret
 

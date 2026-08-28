@@ -10,7 +10,7 @@ func000000000000002c:
 	zext.b	a0, a0
 	seqz	a2, a2
 	and	a1, a1, a2
-	xori	a0, a0, 36
+	addi	a0, a0, -36
 	czero.eqz	a0, a1, a0
 	ret
 

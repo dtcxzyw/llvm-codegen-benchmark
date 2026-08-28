@@ -12,9 +12,9 @@ func000000000000014a:
 	ret
 
 func0000000000000188:
+	addi	a2, a1, -1
 	sltu	a0, a1, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000010c:
@@ -24,7 +24,7 @@ func000000000000010c:
 
 func000000000000008c:
 	sltu	a1, a1, a0
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -42,13 +42,13 @@ func000000000000014c:
 func000000000000002c:
 	xor	a1, a1, a0
 	seqz	a1, a1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000cc:
 	slt	a1, a1, a0
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -80,9 +80,9 @@ func00000000000000b4:
 	ret
 
 func0000000000000184:
+	addi	a2, a1, 1
 	sltu	a0, a0, a1
-	not	a1, a1
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000016c:
@@ -119,9 +119,9 @@ func000000000000010a:
 func000000000000018a:
 	li	a2, -2
 	zext.w	a2, a2
+	xor	a2, a2, a1
 	slt	a0, a1, a0
-	xor	a1, a1, a2
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000181:
@@ -131,11 +131,12 @@ func0000000000000181:
 	ret
 
 func00000000000000ec:
-	bseti	a2, zero, 31
+	li	a2, -1
+	slli.uw	a2, a2, 31
 	slt	a1, a0, a1
-	bseti	a2, a2, 63
+	addi	a2, a2, -1
 	xori	a1, a1, 1
-	xnor	a0, a0, a2
+	xor	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -190,9 +191,9 @@ func0000000000000024:
 	ret
 
 func0000000000000186:
-	srli	a2, a0, 63
-	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	xor	a1, a1, a0
+	srli	a0, a0, 63
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000146:

@@ -44,11 +44,11 @@ func00000000000008ca:
 
 func0000000000001026:
 	srli	a1, a1, 2
-	sext.w	a2, a0
-	xor	a0, a0, a1
-	slti	a1, a2, 3
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	sext.w	a1, a1
+	xor	a1, a1, a0
+	slti	a0, a0, 3
+	czero.nez	a0, a0, a1
 	ret
 
 func00000000000000ca:

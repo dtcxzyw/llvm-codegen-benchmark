@@ -31,8 +31,8 @@ func000000000000018c:
 	ret
 
 func0000000000000024:
+	addi	a1, a1, -90
 	sltiu	a0, a0, 271
-	xori	a1, a1, 90
 	czero.nez	a0, a0, a1
 	li	a1, 10
 	czero.nez	a0, a1, a0

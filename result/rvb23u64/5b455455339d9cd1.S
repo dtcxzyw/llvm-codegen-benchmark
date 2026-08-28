@@ -43,10 +43,9 @@ func0000000000000084:
 
 func000000000000048c:
 	zext.h	a1, a1
-	sext.w	a0, a0
 	addi	a1, a1, -32
 	sltiu	a1, a1, 10
-	xori	a0, a0, 32
+	addiw	a0, a0, -32
 	czero.eqz	a0, a1, a0
 	ret
 

@@ -25,7 +25,7 @@ func0000000000000301:
 	sltiu	a1, a1, 3
 	andi	a0, a0, 224
 	xori	a1, a1, 1
-	xori	a0, a0, 96
+	addi	a0, a0, -96
 	czero.nez	a0, a1, a0
 	ret
 

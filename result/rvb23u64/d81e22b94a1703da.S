@@ -1,7 +1,7 @@
 func000000000000018c:
 	neg	a2, a2
-	snez	a0, a0
 	xor	a1, a1, a2
+	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -51,8 +51,8 @@ func0000000000000081:
 	lui	a3, %hi(.LCPI7_0)
 	ld	a3, %lo(.LCPI7_0)(a3)
 	add	a1, a1, a2
-	sltiu	a0, a0, 6
 	xor	a1, a1, a3
+	sltiu	a0, a0, 6
 	czero.nez	a0, a0, a1
 	ret
 
@@ -61,8 +61,8 @@ func0000000000000d8c:
 	addi	a3, a3, -960
 	add	a1, a1, a2
 	xor	a0, a0, a3
-	snez	a0, a0
 	xor	a1, a1, a3
+	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 

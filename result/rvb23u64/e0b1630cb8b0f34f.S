@@ -7,10 +7,9 @@ func000000000000018c:
 	ret
 
 func0000000000000141:
-	sext.w	a0, a0
 	sext.w	a1, a1
 	sgtz	a1, a1
-	xori	a0, a0, 455
+	addiw	a0, a0, -455
 	czero.nez	a0, a1, a0
 	neg	a0, a0
 	ret

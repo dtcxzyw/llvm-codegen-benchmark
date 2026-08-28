@@ -17,9 +17,9 @@ func0000000000000424:
 	czero.eqz	a0, a0, a2
 	zext.b	a1, a1
 	zext.b	a0, a0
+	addi	a2, a1, -47
 	sltu	a0, a0, a1
-	xori	a1, a1, 47
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000426:

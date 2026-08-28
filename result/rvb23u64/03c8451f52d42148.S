@@ -20,9 +20,9 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
+	binvi	a2, a1, 63
 	sltu	a0, a0, a1
-	binvi	a1, a1, 63
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000002c:

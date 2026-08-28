@@ -9,7 +9,7 @@ func0000000000000181:
 	snez	a2, a2
 	zext.h	a0, a0
 	and	a1, a1, a2
-	xori	a0, a0, 15
+	addi	a0, a0, -15
 	czero.nez	a0, a1, a0
 	ret
 

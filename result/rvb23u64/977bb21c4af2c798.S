@@ -31,10 +31,10 @@ func0000000000000104:
 	ret
 
 func000000000000008c:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	slliw	a1, a1, 3
-	sltu	a1, a1, a0
-	not	a0, a0
+	sltu	a1, a1, a2
+	addiw	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 

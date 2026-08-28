@@ -13,7 +13,7 @@ func000000000000302c:
 	sext.w	a2, a2
 	zext.b	a1, a1
 	snez	a2, a2
-	xori	a1, a1, 95
+	addi	a1, a1, -95
 	slli	a0, a0, 48
 	czero.nez	a1, a2, a1
 	snez	a0, a0

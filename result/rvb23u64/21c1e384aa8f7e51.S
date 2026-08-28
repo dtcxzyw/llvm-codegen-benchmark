@@ -1,8 +1,7 @@
 func000000000000002c:
-	sext.w	a2, a2
 	addiw	a3, a1, 1
 	seqz	a3, a3
-	not	a2, a2
+	addiw	a2, a2, 1
 	czero.eqz	a2, a3, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

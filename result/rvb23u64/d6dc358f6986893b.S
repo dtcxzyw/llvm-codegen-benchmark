@@ -59,10 +59,9 @@ func0000000000000028:
 
 func0000000000000281:
 	slli	a1, a1, 1
-	sext.w	a0, a0
 	srli	a1, a1, 33
 	sltiu	a1, a1, 3
-	xori	a0, a0, 8
+	addiw	a0, a0, -8
 	czero.nez	a0, a1, a0
 	ret
 

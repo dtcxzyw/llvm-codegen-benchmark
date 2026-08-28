@@ -12,10 +12,9 @@ func0000000000000104:
 
 func0000000000000041:
 	addiw	a2, a2, -35
-	sext.w	a0, a0
 	snez	a2, a2
 	andn	a1, a2, a1
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 

@@ -1,19 +1,17 @@
 func0000000000000d81:
 	andi	a2, a2, 1
 	or	a1, a1, a2
-	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000e8c:
 	andi	a2, a2, 1
-	sext.w	a0, a0
 	addw	a1, a1, a2
 	sltiu	a1, a1, 4
-	xori	a0, a0, 125
+	addiw	a0, a0, -125
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -114,9 +112,9 @@ func0000000000000f0c:
 func0000000000000024:
 	andi	a2, a2, 1
 	sext.w	a0, a0
-	addw	a1, a1, a2
+	add	a1, a1, a2
+	addiw	a1, a1, -5
 	sltiu	a0, a0, 4
-	xori	a1, a1, 5
 	czero.nez	a0, a0, a1
 	ret
 

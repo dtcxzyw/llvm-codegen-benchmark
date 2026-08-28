@@ -9,9 +9,8 @@ func0000000000000081:
 func0000000000000181:
 	and	a1, a1, a2
 	sext.w	a0, a0
-	sext.w	a1, a1
+	addiw	a1, a1, -108
 	snez	a0, a0
-	xori	a1, a1, 108
 	czero.nez	a0, a0, a1
 	ret
 
@@ -41,9 +40,8 @@ func0000000000000024:
 func00000000000000c1:
 	and	a1, a1, a2
 	sext.w	a0, a0
-	sext.w	a1, a1
+	addiw	a1, a1, -4
 	slti	a0, a0, 20
-	xori	a1, a1, 4
 	czero.nez	a0, a0, a1
 	ret
 

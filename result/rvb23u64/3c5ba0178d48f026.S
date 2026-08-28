@@ -18,10 +18,9 @@ func000000000000002c:
 func000000000000018c:
 	andi	a2, a2, 3
 	addi	a2, a2, -3
-	sext.w	a1, a1
 	snez	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 3
+	addiw	a1, a1, -3
 	czero.eqz	a0, a0, a1
 	ret
 

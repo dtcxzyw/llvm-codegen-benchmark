@@ -1,7 +1,7 @@
 func000000000000088c:
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -41,7 +41,7 @@ func000000000000090c:
 	lui	a3, 2
 	add	a2, a2, a3
 	sltu	a1, a1, a2
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -62,7 +62,7 @@ func0000000000000d81:
 func0000000000000881:
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	ret
 
@@ -75,8 +75,8 @@ func000000000000002c:
 
 func0000000000000d84:
 	addi	a2, a2, 1
-	sltiu	a0, a0, 2
 	xor	a1, a1, a2
+	sltiu	a0, a0, 2
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -108,8 +108,8 @@ func0000000000000024:
 	lui	a3, %hi(.LCPI15_0)
 	ld	a3, %lo(.LCPI15_0)(a3)
 	add	a2, a2, a3
-	sltiu	a0, a0, 5
 	xor	a1, a1, a2
+	sltiu	a0, a0, 5
 	czero.nez	a0, a0, a1
 	ret
 

@@ -3,7 +3,7 @@ func0000000000000021:
 	zext.h	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 130
+	addi	a1, a1, -130
 	czero.nez	a0, a0, a1
 	ret
 

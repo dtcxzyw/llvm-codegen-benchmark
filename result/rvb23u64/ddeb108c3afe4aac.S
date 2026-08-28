@@ -3,7 +3,7 @@ func0000000000000181:
 	zext.b	a1, a1
 	snez	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 10
+	addi	a1, a1, -10
 	czero.nez	a0, a0, a1
 	ret
 
@@ -80,7 +80,7 @@ func0000000000000081:
 	zext.b	a1, a1
 	sltiu	a2, a2, 513
 	and	a0, a0, a2
-	xori	a1, a1, 58
+	addi	a1, a1, -58
 	czero.nez	a0, a0, a1
 	ret
 

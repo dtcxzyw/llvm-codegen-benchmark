@@ -1,6 +1,6 @@
 func000000000000008c:
 	sltu	a2, a2, a1
-	not	a1, a1
+	addi	a1, a1, 1
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret

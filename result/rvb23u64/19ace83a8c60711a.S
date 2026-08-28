@@ -36,8 +36,8 @@ func000000000000002c:
 func000000000000018c:
 	zext.b	a2, a2
 	xor	a0, a0, a1
+	addi	a1, a2, -121
 	snez	a0, a0
-	xori	a1, a2, 121
 	czero.eqz	a0, a0, a1
 	ret
 

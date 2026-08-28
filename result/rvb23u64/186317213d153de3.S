@@ -28,25 +28,22 @@ func00000000000000cc:
 func00000000000000e1:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	sext.w	a0, a0
 	xori	a1, a1, 1
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000141:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000041:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -106,8 +103,7 @@ func000000000000001a:
 func0000000000000014:
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa0
-	sext.w	a0, a0
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -126,8 +122,7 @@ func0000000000000012:
 	addi	a1, a1, -819
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 3
+	addiw	a0, a0, -3
 	czero.nez	a0, a1, a0
 	ret
 
@@ -188,8 +183,7 @@ func0000000000000161:
 func000000000000018c:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa5, fa0
-	sext.w	a0, a0
-	xori	a0, a0, 8
+	addiw	a0, a0, -8
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -211,8 +205,7 @@ func0000000000000188:
 func000000000000001c:
 	fli.s	fa5, 1.0
 	fle.s	a1, fa5, fa0
-	sext.w	a0, a0
-	xori	a0, a0, 4
+	addiw	a0, a0, -4
 	czero.nez	a0, a1, a0
 	ret
 

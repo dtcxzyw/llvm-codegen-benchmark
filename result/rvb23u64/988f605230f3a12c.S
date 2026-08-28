@@ -13,10 +13,9 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	andi	a1, a1, 192
 	snez	a1, a1
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 

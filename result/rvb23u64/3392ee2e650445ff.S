@@ -31,9 +31,9 @@ func0000000000000147:
 
 func000000000000018c:
 	addw	a1, a1, a2
+	sext.w	a0, a0
 	xor	a0, a0, a1
 	sltiu	a1, a1, -1
-	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 

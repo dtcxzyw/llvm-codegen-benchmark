@@ -2,7 +2,7 @@ func000000000000048c:
 	addiw	a2, a2, -91
 	sltiu	a2, a2, -26
 	and	a1, a1, a2
-	xori	a0, a0, 95
+	addi	a0, a0, -95
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -10,7 +10,7 @@ func000000000000008c:
 	addiw	a2, a2, -58
 	sltiu	a2, a2, -10
 	and	a1, a1, a2
-	xori	a0, a0, 95
+	addi	a0, a0, -95
 	czero.eqz	a0, a1, a0
 	ret
 

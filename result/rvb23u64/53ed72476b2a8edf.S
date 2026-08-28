@@ -7,27 +7,24 @@ func0000000000002484:
 	ret
 
 func000000000000368c:
-	sext.w	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
+	addiw	a1, a1, -1
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000208c:
-	sext.w	a1, a1
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
-	xori	a1, a1, 63
+	addiw	a1, a1, -63
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000008c:
 	lui	a3, 1
-	sext.w	a1, a1
 	add	a2, a2, a3
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
+	addiw	a1, a1, -1
 	czero.eqz	a0, a0, a1
 	ret
 

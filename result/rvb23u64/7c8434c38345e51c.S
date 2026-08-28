@@ -40,8 +40,8 @@ func000000000000002a:
 	lui	a3, 8192
 	andi	a2, a2, 127
 	addi	a3, a3, -1
-	slt	a0, a3, a0
 	xor	a1, a1, a2
+	slt	a0, a3, a0
 	czero.nez	a0, a0, a1
 	ret
 

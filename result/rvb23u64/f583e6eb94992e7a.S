@@ -28,8 +28,8 @@ func0000000000000184:
 
 func0000000000000024:
 	andi	a1, a1, 240
+	addi	a1, a1, -224
 	sltiu	a0, a0, -76
-	xori	a1, a1, 224
 	czero.nez	a0, a0, a1
 	ret
 
@@ -56,8 +56,8 @@ func0000000000000188:
 
 func0000000000000034:
 	andi	a1, a1, 254
+	addi	a1, a1, -48
 	sltiu	a0, a0, 32
-	xori	a1, a1, 48
 	czero.nez	a0, a0, a1
 	ret
 

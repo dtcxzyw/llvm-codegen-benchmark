@@ -16,10 +16,9 @@ func0000000000000484:
 
 func000000000000048c:
 	andi	a1, a1, 7
-	sext.w	a0, a0
 	addi	a1, a1, -5
 	sltiu	a1, a1, -4
-	xori	a0, a0, 640
+	addiw	a0, a0, -640
 	czero.eqz	a0, a1, a0
 	ret
 

@@ -71,18 +71,18 @@ func0000000000000181:
 	sext.w	a0, a0
 	srliw	a2, a2, 17
 	xor	a0, a0, a1
+	addi	a2, a2, -1
 	snez	a0, a0
-	xori	a1, a2, 1
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000081:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 448
+	addi	a2, a2, -320
 	sltu	a0, a0, a1
-	xori	a1, a2, 320
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func00000000000000c1:
@@ -119,8 +119,8 @@ func0000000000000281:
 	li	a3, 27
 	sext.w	a0, a0
 	slli	a3, a3, 11
-	sltu	a0, a0, a1
 	xor	a2, a2, a3
+	sltu	a0, a0, a1
 	czero.nez	a0, a0, a2
 	ret
 
@@ -146,18 +146,18 @@ func0000000000000301:
 	addi	a3, a3, -256
 	sext.w	a1, a1
 	and	a2, a2, a3
+	addi	a2, a2, -256
 	sltu	a0, a1, a0
-	xori	a1, a2, 256
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000141:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	andi	a2, a2, 192
+	addi	a2, a2, -128
 	slt	a0, a1, a0
-	xori	a1, a2, 128
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000016c:

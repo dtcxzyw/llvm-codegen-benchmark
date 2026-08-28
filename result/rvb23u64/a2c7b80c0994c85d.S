@@ -39,10 +39,9 @@ func0000000000000084:
 	ret
 
 func0000000000000184:
-	sext.w	a2, a2
 	zext.h	a1, a1
+	addiw	a2, a2, -8
 	sltiu	a1, a1, 120
-	xori	a2, a2, 8
 	czero.eqz	a1, a1, a2
 	and	a0, a0, a1
 	ret
@@ -77,7 +76,7 @@ func0000000000000101:
 	zext.h	a1, a1
 	sltiu	a2, a2, 12
 	xori	a2, a2, 1
-	xori	a1, a1, 2
+	addi	a1, a1, -2
 	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret

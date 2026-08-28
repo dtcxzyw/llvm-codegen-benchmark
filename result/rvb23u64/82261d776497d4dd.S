@@ -6,8 +6,8 @@ func0000000000000484:
 	ret
 
 func000000000000028c:
+	addi	a1, a1, -1
 	sltiu	a0, a0, 63
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -49,8 +49,8 @@ func0000000000000508:
 
 func000000000000018c:
 	addi	a0, a0, -2
+	addi	a1, a1, -1
 	snez	a0, a0
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -67,8 +67,8 @@ func000000000000002c:
 	li	a2, -1
 	srli	a2, a2, 32
 	xor	a0, a0, a2
+	addi	a1, a1, -1
 	seqz	a0, a0
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -87,14 +87,14 @@ func0000000000000084:
 	ret
 
 func000000000000018a:
+	addi	a1, a1, 4
 	sgtz	a0, a0
-	xori	a1, a1, -4
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000058c:
+	addi	a1, a1, -1
 	snez	a0, a0
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -113,7 +113,7 @@ func0000000000000028:
 func0000000000000424:
 	addi	a1, a1, -2
 	sltiu	a1, a1, 3
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -175,14 +175,14 @@ func0000000000000188:
 
 func000000000000010c:
 	sltiu	a0, a0, 29
+	addi	a1, a1, -1
 	xori	a0, a0, 1
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002a:
+	addi	a1, a1, -63
 	sgtz	a0, a0
-	xori	a1, a1, 63
 	czero.nez	a0, a0, a1
 	ret
 

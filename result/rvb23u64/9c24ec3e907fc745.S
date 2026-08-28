@@ -11,10 +11,9 @@ func0000000000000842:
 func0000000000002102:
 	sext.w	a2, a2
 	sext.w	a1, a1
-	sext.w	a0, a0
 	minu	a1, a1, a2
 	sltiu	a1, a1, 2
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
@@ -31,12 +30,11 @@ func0000000000000b14:
 
 func0000000000002042:
 	sext.w	a2, a2
-	sext.w	a0, a0
 	addiw	a1, a1, -28
 	sltiu	a2, a2, 3
 	seqz	a1, a1
 	or	a1, a1, a2
-	xori	a0, a0, 3
+	addiw	a0, a0, -3
 	czero.nez	a0, a1, a0
 	ret
 

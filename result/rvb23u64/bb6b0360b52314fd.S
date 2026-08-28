@@ -14,7 +14,7 @@ func0000000000000084:
 func0000000000000081:
 	addiw	a1, a1, -100
 	sltiu	a1, a1, 900
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

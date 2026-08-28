@@ -9,7 +9,7 @@ func000000000000002c:
 func0000000000000181:
 	andi	a0, a0, 7
 	bexti	a1, a1, 1
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 

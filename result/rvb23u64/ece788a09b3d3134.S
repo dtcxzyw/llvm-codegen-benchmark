@@ -47,7 +47,7 @@ func000000000000014c:
 func00000000000000cc:
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa5, fa0
-	xori	a0, a0, 192
+	addi	a0, a0, -192
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -67,7 +67,7 @@ func00000000000000c6:
 func0000000000000018:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	ret
 

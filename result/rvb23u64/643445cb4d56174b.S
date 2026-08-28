@@ -13,8 +13,8 @@ func000000000000002a:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	max	a1, a1, a2
+	addi	a1, a1, -8
 	sgtz	a0, a0
-	xori	a1, a1, 8
 	czero.nez	a0, a0, a1
 	ret
 

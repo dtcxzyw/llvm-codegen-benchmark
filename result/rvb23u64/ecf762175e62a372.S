@@ -11,7 +11,7 @@ func000000000000018c:
 	addi	a1, a1, -256
 	andi	a0, a0, -72
 	snez	a1, a1
-	xori	a0, a0, 160
+	addi	a0, a0, -160
 	czero.eqz	a0, a1, a0
 	ret
 

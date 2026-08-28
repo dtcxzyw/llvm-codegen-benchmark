@@ -11,7 +11,7 @@ func000000000000018c:
 	and	a1, a1, a0
 	andi	a0, a0, 504
 	snez	a1, a1
-	xori	a0, a0, 8
+	addi	a0, a0, -8
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -22,7 +22,7 @@ func000000000000002c:
 	addi	a2, a2, -34
 	and	a0, a0, a1
 	seqz	a1, a2
-	xori	a0, a0, 512
+	addi	a0, a0, -512
 	czero.eqz	a0, a1, a0
 	ret
 

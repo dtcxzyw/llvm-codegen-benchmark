@@ -29,10 +29,9 @@ func0000000000000484:
 
 func0000000000000481:
 	addiw	a2, a2, -5
-	sext.w	a1, a1
 	sltiu	a2, a2, 2
 	and	a0, a0, a2
-	xori	a1, a1, 2
+	addiw	a1, a1, -2
 	czero.nez	a0, a0, a1
 	ret
 

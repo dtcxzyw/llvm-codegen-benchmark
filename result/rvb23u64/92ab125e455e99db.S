@@ -8,7 +8,7 @@ func0000000000000481:
 
 func0000000000000081:
 	sltiu	a0, a0, 3
-	xori	a1, a1, 4
+	addi	a1, a1, -4
 	czero.nez	a0, a0, a1
 	ret
 

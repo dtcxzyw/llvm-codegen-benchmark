@@ -6,7 +6,7 @@ func0000000000000d81:
 	ret
 
 func0000000000000024:
-	not	a2, a2
+	addi	a2, a2, 1
 	sltu	a0, a0, a1
 	czero.nez	a0, a0, a2
 	ret
@@ -26,7 +26,7 @@ func0000000000000101:
 	ret
 
 func0000000000000188:
-	xori	a2, a2, 1
+	addi	a2, a2, -1
 	sltu	a0, a1, a0
 	czero.eqz	a0, a0, a2
 	ret
@@ -48,8 +48,8 @@ func0000000000000089:
 
 func0000000000000104:
 	andi	a2, a2, -4
+	addi	a2, a2, -4
 	sltu	a0, a0, a1
-	xori	a1, a2, 4
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 

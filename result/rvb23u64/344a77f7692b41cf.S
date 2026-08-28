@@ -23,10 +23,10 @@ func000000000000108c:
 func000000000000148c:
 	addw	a1, a1, a2
 	lui	a2, 13838
-	srliw	a0, a0, 4
 	addi	a2, a2, -1281
-	sltiu	a0, a0, 511
+	srliw	a0, a0, 4
 	xor	a1, a1, a2
+	sltiu	a0, a0, 511
 	czero.eqz	a0, a0, a1
 	ret
 

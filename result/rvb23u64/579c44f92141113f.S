@@ -38,8 +38,8 @@ func000000000000002a:
 func0000000000000024:
 	zext.b	a0, a0
 	andi	a1, a1, 96
+	addi	a1, a1, -32
 	sltiu	a0, a0, 2
-	xori	a1, a1, 32
 	czero.nez	a0, a0, a1
 	ret
 

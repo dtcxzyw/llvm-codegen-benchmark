@@ -39,7 +39,7 @@ func0000000000000021:
 
 func00000000000000c1:
 	srli	a1, a1, 63
-	xori	a0, a0, 4
+	addi	a0, a0, -4
 	czero.nez	a0, a1, a0
 	ret
 
@@ -50,7 +50,7 @@ func000000000000002a:
 
 func000000000000018c:
 	snez	a1, a1
-	xori	a0, a0, 27
+	addi	a0, a0, -27
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -103,7 +103,7 @@ func0000000000000084:
 func0000000000000101:
 	sltiu	a1, a1, 21
 	xori	a1, a1, 1
-	xori	a0, a0, 5
+	addi	a0, a0, -5
 	czero.nez	a0, a1, a0
 	ret
 
@@ -120,8 +120,8 @@ func0000000000000284:
 	ret
 
 func0000000000000024:
+	addi	a1, a1, -1
 	sltiu	a0, a0, 9
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 
@@ -216,8 +216,8 @@ func0000000000000198:
 	ret
 
 func0000000000000026:
+	addi	a1, a1, -1054
 	srli	a0, a0, 63
-	xori	a1, a1, 1054
 	czero.nez	a0, a0, a1
 	ret
 
@@ -271,7 +271,7 @@ func0000000000000104:
 
 func0000000000000281:
 	sltiu	a1, a1, 3
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

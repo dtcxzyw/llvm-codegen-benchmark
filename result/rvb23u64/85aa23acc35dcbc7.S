@@ -29,8 +29,8 @@ func000000000000002a:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	srli	a2, a2, 58
+	addi	a2, a2, -55
 	slt	a0, a1, a0
-	xori	a1, a2, 55
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 

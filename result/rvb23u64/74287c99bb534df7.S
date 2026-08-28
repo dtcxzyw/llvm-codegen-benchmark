@@ -20,8 +20,8 @@ func000000000000018c:
 func0000000000000184:
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
-	sltu	a0, a0, a3
 	xor	a1, a1, a2
+	sltu	a0, a0, a3
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -77,7 +77,7 @@ func0000000000000194:
 
 func0000000000000081:
 	sltu	a1, a1, a2
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	ret
 

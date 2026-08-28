@@ -15,7 +15,7 @@ func000000000000002c:
 func00000000000000c1:
 	andi	a1, a1, 31
 	srliw	a0, a0, 31
-	xori	a1, a1, 24
+	addi	a1, a1, -24
 	czero.nez	a0, a0, a1
 	ret
 

@@ -17,11 +17,10 @@ func000000000000008c:
 
 func000000000000018c:
 	zext.b	a2, a2
-	andi	a1, a1, -5
 	snez	a2, a2
-	sext.w	a1, a1
+	andi	a1, a1, -5
 	and	a0, a0, a2
-	xori	a1, a1, 563
+	addiw	a1, a1, -563
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -29,9 +28,9 @@ func0000000000000101:
 	zext.b	a2, a2
 	sltiu	a2, a2, 7
 	xori	a2, a2, 1
-	li	a3, 3
+	andi	a1, a1, 3
 	and	a0, a0, a2
-	andn	a1, a3, a1
+	addi	a1, a1, -3
 	czero.nez	a0, a0, a1
 	ret
 

@@ -17,9 +17,9 @@ func0000000000000088:
 func000000000000058c:
 	sext.w	a1, a1
 	addi	a2, a0, -1
-	snez	a2, a2
 	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	snez	a1, a2
+	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000048c:
@@ -59,14 +59,14 @@ func0000000000000488:
 func000000000000010c:
 	zext.w	a1, a1
 	sltu	a1, a1, a0
-	xori	a0, a0, 3
+	addi	a0, a0, -3
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000018c:
 	zext.w	a1, a1
-	snez	a2, a0
-	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	xor	a1, a1, a0
+	snez	a0, a0
+	czero.eqz	a0, a0, a1
 	ret
 

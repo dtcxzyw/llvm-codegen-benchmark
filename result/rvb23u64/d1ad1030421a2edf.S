@@ -9,11 +9,10 @@ func0000000000000181:
 	ret
 
 func0000000000000021:
-	sext.w	a2, a2
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
+	addiw	a2, a2, -3
 	seqz	a1, a1
-	xori	a2, a2, 3
 	czero.eqz	a0, a1, a0
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
@@ -41,12 +40,11 @@ func000000000000018a:
 	ret
 
 func000000000000002a:
-	sext.w	a2, a2
 	sext.w	a1, a1
 	andi	a0, a0, 1
 	slti	a1, a1, 64
+	addiw	a2, a2, -7
 	xori	a1, a1, 1
-	xori	a2, a2, 7
 	czero.eqz	a0, a1, a0
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
@@ -78,11 +76,10 @@ func000000000000008c:
 	ret
 
 func000000000000018c:
-	sext.w	a2, a2
-	andi	a0, a0, 1
 	sext.w	a1, a1
+	andi	a0, a0, 1
+	addiw	a2, a2, -1
 	snez	a1, a1
-	xori	a2, a2, 1
 	czero.eqz	a0, a1, a0
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1

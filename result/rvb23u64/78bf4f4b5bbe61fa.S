@@ -22,8 +22,8 @@ func0000000000002024:
 	zext.b	a0, a0
 	zext.b	a1, a1
 	addi	a0, a0, -89
+	addi	a1, a1, -93
 	sltiu	a0, a0, 5
-	xori	a1, a1, 93
 	czero.nez	a0, a0, a1
 	ret
 

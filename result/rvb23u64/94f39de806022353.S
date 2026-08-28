@@ -1,9 +1,8 @@
 func000000000000018c:
 	sext.w	a2, a2
 	snez	a2, a2
-	srliw	a1, a1, 24
 	and	a0, a0, a2
-	slli	a1, a1, 24
+	sraiw	a1, a1, 24
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -12,7 +11,7 @@ func0000000000000181:
 	snez	a2, a2
 	andi	a1, a1, 252
 	and	a0, a0, a2
-	xori	a1, a1, 56
+	addi	a1, a1, -56
 	czero.nez	a0, a0, a1
 	ret
 

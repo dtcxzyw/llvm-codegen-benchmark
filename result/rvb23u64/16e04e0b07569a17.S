@@ -47,8 +47,8 @@ func000000000000018c:
 func0000000000000026:
 	slli	a0, a0, 56
 	bclri	a1, a1, 63
+	addi	a1, a1, -63
 	srli	a0, a0, 63
-	xori	a1, a1, 63
 	czero.nez	a0, a0, a1
 	ret
 

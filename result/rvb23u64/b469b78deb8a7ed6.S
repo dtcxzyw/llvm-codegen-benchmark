@@ -5,8 +5,7 @@ func000000000000008c:
 	ret
 
 func0000000000000184:
-	srliw	a1, a1, 10
-	slli	a1, a1, 10
+	sraiw	a1, a1, 10
 	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
@@ -24,9 +23,8 @@ func000000000000014c:
 	ret
 
 func0000000000000181:
-	sext.w	a1, a1
+	addiw	a1, a1, -256
 	snez	a0, a0
-	xori	a1, a1, 256
 	czero.nez	a0, a0, a1
 	ret
 

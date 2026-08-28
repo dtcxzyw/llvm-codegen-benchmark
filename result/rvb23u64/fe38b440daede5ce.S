@@ -1,17 +1,17 @@
 func0000000000000021:
 	andi	a2, a2, 31
 	seqz	a1, a1
+	addi	a2, a2, -5
 	and	a0, a0, a1
-	xori	a1, a2, 5
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000181:
 	andi	a2, a2, 31
 	snez	a1, a1
+	addi	a2, a2, -5
 	and	a0, a0, a1
-	xori	a1, a2, 5
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000002c:
@@ -24,9 +24,9 @@ func000000000000002c:
 func0000000000000081:
 	andi	a2, a2, 3
 	sltiu	a1, a1, 2
+	addi	a2, a2, -1
 	and	a0, a0, a1
-	xori	a1, a2, 1
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000034:

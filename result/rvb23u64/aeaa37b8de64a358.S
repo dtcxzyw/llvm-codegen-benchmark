@@ -1,8 +1,8 @@
 func000000000000018c:
-	li	a1, 255
-	bexti	a2, a0, 5
-	andn	a0, a1, a0
-	czero.eqz	a0, a2, a0
+	zext.b	a1, a0
+	bexti	a0, a0, 5
+	addi	a1, a1, -255
+	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000024:

@@ -23,8 +23,8 @@ func000000000000068c:
 func0000000000000024:
 	cpopw	a1, a1
 	sext.w	a0, a0
+	addi	a1, a1, -1
 	sltiu	a0, a0, 128
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 
@@ -55,8 +55,8 @@ func0000000000000288:
 func0000000000000026:
 	cpopw	a1, a1
 	sext.w	a0, a0
+	addi	a1, a1, -1
 	slti	a0, a0, 64
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 

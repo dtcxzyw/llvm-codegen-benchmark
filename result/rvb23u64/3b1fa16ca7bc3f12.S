@@ -10,8 +10,8 @@ func0000000000000084:
 	srli	a1, a1, 32
 	sext.w	a3, a2
 	seqz	a1, a1
-	and	a0, a0, a1
 	xor	a2, a2, a3
+	and	a0, a0, a1
 	czero.nez	a0, a0, a2
 	ret
 

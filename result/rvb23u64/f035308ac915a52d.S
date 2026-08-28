@@ -43,7 +43,7 @@ func000000000000010c:
 	lui	a3, 2
 	add	a2, a2, a3
 	sltu	a1, a1, a2
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -56,8 +56,8 @@ func0000000000000094:
 
 func0000000000000c81:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 8
 	xor	a0, a0, a2
+	sltiu	a1, a1, 8
 	czero.nez	a0, a1, a0
 	ret
 
@@ -77,7 +77,7 @@ func0000000000000e81:
 func00000000000004c1:
 	addi	a2, a2, 1
 	slt	a1, a2, a1
-	xori	a0, a0, 4
+	addi	a0, a0, -4
 	czero.nez	a0, a1, a0
 	ret
 
@@ -93,14 +93,14 @@ func000000000000018c:
 	addi	a2, a2, -1
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000d8c:
 	addi	a2, a2, 1
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -135,8 +135,8 @@ func0000000000000084:
 func0000000000000541:
 	addi	a2, a2, 1
 	slti	a1, a1, 2
-	xori	a1, a1, 1
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	czero.nez	a0, a1, a0
 	ret
 

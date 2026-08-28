@@ -25,8 +25,8 @@ func0000000000000024:
 	addi	a2, a2, -2
 	zext.h	a0, a0
 	and	a1, a1, a2
+	addi	a1, a1, -6
 	sltiu	a0, a0, 2
-	xori	a1, a1, 6
 	czero.nez	a0, a0, a1
 	ret
 

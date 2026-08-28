@@ -15,11 +15,12 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	addi	a2, a2, -3
-	xor	a0, a0, a1
-	snez	a1, a2
+	sext.w	a1, a1
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	addi	a2, a2, -3
+	snez	a2, a2
+	xor	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000184:
@@ -70,23 +71,26 @@ func0000000000000029:
 	ret
 
 func000000000000018c:
+	sext.w	a1, a1
+	sext.w	a0, a0
 	snez	a2, a2
 	xor	a0, a0, a1
-	sext.w	a0, a0
 	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000281:
+	sext.w	a1, a1
+	sext.w	a0, a0
 	sltiu	a2, a2, 1024
 	xor	a0, a0, a1
-	sext.w	a0, a0
 	czero.nez	a0, a2, a0
 	ret
 
 func000000000000028c:
+	sext.w	a1, a1
+	sext.w	a0, a0
 	sltiu	a2, a2, 1024
 	xor	a0, a0, a1
-	sext.w	a0, a0
 	czero.eqz	a0, a2, a0
 	ret
 
@@ -106,11 +110,12 @@ func0000000000000188:
 	ret
 
 func0000000000000101:
-	sltiu	a2, a2, 8
-	xor	a0, a0, a1
-	xori	a1, a2, 1
+	sext.w	a1, a1
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	sltiu	a2, a2, 8
+	xori	a2, a2, 1
+	xor	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000105:
@@ -123,11 +128,12 @@ func0000000000000105:
 	ret
 
 func000000000000010c:
-	sltiu	a2, a2, 512
-	xor	a0, a0, a1
-	xori	a1, a2, 1
+	sext.w	a1, a1
 	sext.w	a0, a0
-	czero.eqz	a0, a1, a0
+	sltiu	a2, a2, 512
+	xori	a2, a2, 1
+	xor	a0, a0, a1
+	czero.eqz	a0, a2, a0
 	ret
 
 func0000000000000085:
@@ -147,12 +153,13 @@ func0000000000000294:
 	ret
 
 func0000000000000081:
+	sext.w	a1, a1
 	lui	a3, 4883
-	addi	a3, a3, -768
-	xor	a0, a0, a1
-	sltu	a1, a2, a3
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	addi	a3, a3, -768
+	sltu	a2, a2, a3
+	xor	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000284:
@@ -191,9 +198,10 @@ func0000000000000158:
 	ret
 
 func000000000000002c:
+	sext.w	a1, a1
+	sext.w	a0, a0
 	seqz	a2, a2
 	xor	a0, a0, a1
-	sext.w	a0, a0
 	czero.eqz	a0, a2, a0
 	ret
 
@@ -281,12 +289,13 @@ func000000000000002a:
 	ret
 
 func0000000000000141:
+	sext.w	a1, a1
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	xor	a0, a0, a1
-	slt	a1, a3, a2
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	addiw	a3, a3, -1
+	slt	a2, a3, a2
+	xor	a0, a0, a1
+	czero.nez	a0, a2, a0
 	ret
 
 func0000000000000146:

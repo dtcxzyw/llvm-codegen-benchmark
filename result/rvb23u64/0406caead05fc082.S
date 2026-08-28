@@ -29,8 +29,8 @@ func0000000000000024:
 	zext.h	a0, a0
 	andi	a1, a1, 31
 	addi	a2, a2, -31
+	addi	a1, a1, -28
 	sltu	a0, a0, a2
-	xori	a1, a1, 28
 	czero.nez	a0, a0, a1
 	ret
 
@@ -38,7 +38,7 @@ func000000000000002c:
 	zext.h	a0, a0
 	not	a1, a1
 	bexti	a1, a1, 12
-	xori	a0, a0, 3
+	addi	a0, a0, -3
 	czero.eqz	a0, a1, a0
 	ret
 

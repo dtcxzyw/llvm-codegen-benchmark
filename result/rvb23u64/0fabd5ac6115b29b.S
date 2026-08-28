@@ -1,14 +1,13 @@
 func000000000000088c:
-	addi	a2, a0, 1
-	sltu	a1, a2, a1
-	not	a0, a0
+	addi	a0, a0, 1
+	sltu	a1, a0, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000ccc:
 	addi	a2, a0, 1
 	slt	a1, a2, a1
-	xori	a0, a0, 9
+	addi	a0, a0, -9
 	czero.eqz	a0, a1, a0
 	ret
 

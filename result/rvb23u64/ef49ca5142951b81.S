@@ -17,11 +17,11 @@ func000000000000018c:
 
 func0000000000000184:
 	lui	a2, 524288
+	andi	a1, a1, 7
 	addiw	a0, a0, -1
 	addiw	a2, a2, -2
-	li	a3, 7
+	addi	a1, a1, -7
 	sltu	a0, a0, a2
-	andn	a1, a3, a1
 	czero.eqz	a0, a0, a1
 	ret
 

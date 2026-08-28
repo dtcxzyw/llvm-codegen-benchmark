@@ -13,8 +13,8 @@ func000000000000068c:
 
 func0000000000000026:
 	cpopw	a1, a1
+	addi	a1, a1, -1
 	slti	a0, a0, 16
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 

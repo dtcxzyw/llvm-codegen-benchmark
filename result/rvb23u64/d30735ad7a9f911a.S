@@ -13,7 +13,7 @@ func000000000000002c:
 
 func000000000000018c:
 	bexti	a1, a1, 7
-	xori	a0, a0, 27
+	addi	a0, a0, -27
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -111,8 +111,8 @@ func0000000000000198:
 
 func0000000000000026:
 	andi	a1, a1, 2047
+	addi	a1, a1, -1054
 	srli	a0, a0, 63
-	xori	a1, a1, 1054
 	czero.nez	a0, a0, a1
 	ret
 
@@ -138,9 +138,8 @@ func00000000000000c1:
 	ret
 
 func000000000000018a:
-	sext.w	a1, a1
+	addiw	a1, a1, -6
 	sgtz	a0, a0
-	xori	a1, a1, 6
 	czero.eqz	a0, a0, a1
 	ret
 

@@ -29,11 +29,11 @@ func000000000000028a:
 	ret
 
 func000000000000002c:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	sext.w	a1, a1
-	xor	a1, a1, a0
+	xor	a1, a1, a2
 	seqz	a1, a1
-	not	a0, a0
+	addiw	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -46,18 +46,18 @@ func00000000000008ca:
 	ret
 
 func000000000000002a:
-	sext.w	a2, a0
-	xor	a0, a0, a1
-	sgtz	a1, a2
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	sext.w	a1, a1
+	xor	a1, a1, a0
+	sgtz	a0, a0
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000082a:
-	sext.w	a2, a0
-	xor	a0, a0, a1
-	sgtz	a1, a2
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	sext.w	a1, a1
+	xor	a1, a1, a0
+	sgtz	a0, a0
+	czero.nez	a0, a0, a1
 	ret
 

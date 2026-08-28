@@ -35,10 +35,11 @@ func0000000000000146:
 	ret
 
 func0000000000000021:
-	xor	a1, a1, a2
-	addiw	a0, a0, -5
-	seqz	a0, a0
+	sext.w	a2, a2
 	sext.w	a1, a1
+	addiw	a0, a0, -5
+	xor	a1, a1, a2
+	seqz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -90,10 +91,11 @@ func00000000000000c6:
 	ret
 
 func0000000000000026:
-	xor	a1, a1, a2
+	sext.w	a2, a2
 	sext.w	a0, a0
-	slti	a0, a0, 1
 	sext.w	a1, a1
+	xor	a1, a1, a2
+	slti	a0, a0, 1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -124,10 +126,11 @@ func0000000000000106:
 	ret
 
 func000000000000002c:
-	xor	a1, a1, a2
+	sext.w	a2, a2
 	sext.w	a0, a0
-	snez	a0, a0
 	sext.w	a1, a1
+	xor	a1, a1, a2
+	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 

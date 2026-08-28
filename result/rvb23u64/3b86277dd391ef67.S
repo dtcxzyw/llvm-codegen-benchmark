@@ -3,7 +3,7 @@ func0000000000000101:
 	zext.b	a0, a0
 	bseti	a2, zero, 63
 	sltu	a1, a2, a1
-	xori	a0, a0, 45
+	addi	a0, a0, -45
 	czero.nez	a0, a1, a0
 	ret
 

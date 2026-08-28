@@ -30,12 +30,12 @@ func0000000000000089:
 
 func0000000000000828:
 	sext.w	a1, a1
-	addi	a3, a0, 1
-	sext.w	a0, a0
-	xor	a2, a2, a3
-	sltu	a0, a1, a0
+	sext.w	a3, a0
 	sext.w	a2, a2
-	czero.nez	a0, a0, a2
+	addiw	a0, a0, 1
+	xor	a0, a0, a2
+	sltu	a1, a1, a3
+	czero.nez	a0, a1, a0
 	ret
 
 func00000000000004c6:

@@ -1,25 +1,27 @@
 func000000000000016c:
-	slli	a2, a2, 35
-	sext.w	a0, a0
 	li	a3, -7
-	srli	a2, a2, 35
+	sext.w	a0, a0
+	slli	a2, a2, 35
 	slli.uw	a3, a3, 29
-	slt	a0, a2, a0
+	srli	a2, a2, 35
 	addi	a3, a3, -1
+	slt	a0, a2, a0
+	and	a1, a1, a3
 	xori	a0, a0, 1
-	andn	a1, a3, a1
+	xor	a1, a1, a3
 	czero.eqz	a0, a0, a1
 	ret
 
 func00000000000000c1:
 	li	a3, -7
 	sext.w	a0, a0
-	slli	a2, a2, 35
 	slli.uw	a3, a3, 29
-	srli	a2, a2, 35
+	slli	a2, a2, 35
 	addi	a3, a3, -1
+	srli	a2, a2, 35
+	and	a1, a1, a3
 	slt	a0, a2, a0
-	andn	a1, a3, a1
+	xor	a1, a1, a3
 	czero.nez	a0, a0, a1
 	ret
 

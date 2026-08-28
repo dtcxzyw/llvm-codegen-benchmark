@@ -1,8 +1,8 @@
 func0000000000000424:
 	andi	a1, a1, 15
 	addi	a1, a1, -1
+	addi	a0, a0, -7
 	sltiu	a1, a1, 7
-	xori	a0, a0, 7
 	czero.eqz	a0, a1, a0
 	ret
 

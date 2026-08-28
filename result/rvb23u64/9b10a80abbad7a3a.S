@@ -15,7 +15,7 @@ func00000000000006c2:
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
 	flt.d	a1, fa0, fa5
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	ret
 

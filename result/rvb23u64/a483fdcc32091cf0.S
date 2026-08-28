@@ -15,7 +15,7 @@ func0000000000000842:
 	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
-	xori	a0, a0, 110
+	addi	a0, a0, -110
 	czero.nez	a0, a1, a0
 	ret
 

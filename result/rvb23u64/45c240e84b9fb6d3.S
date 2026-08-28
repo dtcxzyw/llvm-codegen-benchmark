@@ -80,9 +80,9 @@ func0000000000000194:
 
 func000000000000028c:
 	andi	a1, a1, 508
-	li	a2, 7
+	andi	a0, a0, 7
 	seqz	a1, a1
-	andn	a0, a2, a0
+	addi	a0, a0, -7
 	czero.eqz	a0, a1, a0
 	ret
 

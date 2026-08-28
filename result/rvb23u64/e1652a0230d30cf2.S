@@ -2,12 +2,11 @@ func0000000000000021:
 	lui	a2, 8
 	addi	a2, a2, -1057
 	mul	a1, a1, a2
-	sext.w	a0, a0
 	lui	a2, 1
 	zext.h	a1, a1
 	addi	a2, a2, -1981
 	sltu	a1, a1, a2
-	binvi	a0, a0, 11
+	addiw	a0, a0, -2048
 	czero.nez	a0, a1, a0
 	ret
 

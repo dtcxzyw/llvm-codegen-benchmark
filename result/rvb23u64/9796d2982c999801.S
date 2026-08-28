@@ -29,7 +29,7 @@ func000000000000014a:
 func000000000000098c:
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 48
+	addi	a0, a0, -48
 	czero.eqz	a0, a1, a0
 	ret
 

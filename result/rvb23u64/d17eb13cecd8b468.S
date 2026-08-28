@@ -2,7 +2,7 @@ func0000000000000d8c:
 	andi	a1, a0, 61
 	addi	a1, a1, -4
 	snez	a1, a1
-	xori	a0, a0, 7
+	addi	a0, a0, -7
 	czero.eqz	a0, a1, a0
 	ret
 

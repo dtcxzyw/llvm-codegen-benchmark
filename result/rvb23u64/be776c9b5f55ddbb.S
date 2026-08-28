@@ -25,7 +25,7 @@ func0000000000000141:
 	and	a1, a1, a3
 	sext.w	a2, a2
 	slt	a0, a2, a0
-	xori	a1, a1, 2
+	addi	a1, a1, -2
 	czero.nez	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func0000000000000081:
 	sext.w	a2, a2
 	andi	a1, a1, 240
 	sltu	a0, a0, a2
-	xori	a1, a1, 176
+	addi	a1, a1, -176
 	czero.nez	a0, a0, a1
 	ret
 

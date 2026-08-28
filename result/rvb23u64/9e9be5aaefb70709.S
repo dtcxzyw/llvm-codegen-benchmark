@@ -10,7 +10,7 @@ func0000000000000e81:
 	addi	a2, a2, 1
 	andi	a1, a1, 31
 	sltu	a0, a2, a0
-	xori	a1, a1, 21
+	addi	a1, a1, -21
 	czero.nez	a0, a0, a1
 	ret
 
@@ -19,7 +19,7 @@ func0000000000000d8c:
 	xor	a0, a0, a2
 	andi	a1, a1, 31
 	snez	a0, a0
-	xori	a1, a1, 16
+	addi	a1, a1, -16
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -34,7 +34,7 @@ func0000000000000e8c:
 	addi	a2, a2, 1
 	andi	a1, a1, 15
 	sltu	a0, a2, a0
-	xori	a1, a1, 8
+	addi	a1, a1, -8
 	czero.eqz	a0, a0, a1
 	ret
 

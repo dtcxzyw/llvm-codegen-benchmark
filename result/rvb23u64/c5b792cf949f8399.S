@@ -11,7 +11,7 @@ func0000000000000081:
 	zext.h	a0, a0
 	addi	a1, a1, -1
 	sltiu	a1, a1, 2
-	xori	a0, a0, 53
+	addi	a0, a0, -53
 	czero.nez	a0, a1, a0
 	ret
 
@@ -34,10 +34,11 @@ func0000000000000021:
 func0000000000000024:
 	zext.h	a0, a0
 	zext.b	a1, a1
+	li	a2, 11
 	addi	a1, a1, -1
-	xori	a0, a0, 1536
+	slli	a2, a2, 9
 	sltiu	a1, a1, 254
-	binvi	a0, a0, 12
+	xor	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret
 

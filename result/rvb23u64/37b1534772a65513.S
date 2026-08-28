@@ -24,8 +24,8 @@ func000000000000010c:
 func000000000000018c:
 	sub	a2, a2, a1
 	xor	a0, a0, a1
+	addi	a2, a2, -4
 	snez	a0, a0
-	xori	a1, a2, 4
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 

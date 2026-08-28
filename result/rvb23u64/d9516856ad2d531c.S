@@ -1,21 +1,20 @@
 func0000000000000042:
-	sext.w	a2, a2
 	sext.w	a1, a1
+	addiw	a2, a2, -1
 	seqz	a1, a1
-	xori	a2, a2, 1
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000054:
-	sext.w	a2, a2
 	sext.w	a1, a1
-	lui	a3, 272
-	li	a4, 27
-	addi	a3, a3, -1
-	slli	a4, a4, 11
-	slt	a1, a3, a1
-	xor	a2, a2, a4
+	sext.w	a2, a2
+	li	a3, 27
+	lui	a4, 272
+	slli	a3, a3, 11
+	addi	a4, a4, -1
+	xor	a2, a2, a3
+	slt	a1, a4, a1
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret

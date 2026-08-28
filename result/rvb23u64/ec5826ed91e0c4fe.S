@@ -1,7 +1,7 @@
 func000000000000002c:
 	andi	a1, a1, 2
 	seqz	a1, a1
-	xori	a0, a0, 4
+	addi	a0, a0, -4
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -48,8 +48,8 @@ func000000000000018a:
 func0000000000000034:
 	lui	a2, 15
 	and	a1, a1, a2
-	sltiu	a0, a0, 2
 	binvi	a1, a1, 15
+	sltiu	a0, a0, 2
 	czero.nez	a0, a0, a1
 	ret
 
@@ -74,7 +74,7 @@ func0000000000000281:
 	and	a1, a1, a2
 	addi	a2, a3, 1712
 	sltu	a1, a1, a2
-	xori	a0, a0, 5
+	addi	a0, a0, -5
 	czero.nez	a0, a1, a0
 	ret
 

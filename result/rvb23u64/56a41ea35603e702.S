@@ -26,19 +26,17 @@ func000000000000018a:
 func000000000000018c:
 	andi	a2, a2, 3
 	addi	a2, a2, -3
-	sext.w	a1, a1
 	snez	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 3
+	addiw	a1, a1, -3
 	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000002c:
 	andi	a2, a2, 16
-	sext.w	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	addiw	a1, a1, -1
 	czero.eqz	a0, a0, a1
 	ret
 

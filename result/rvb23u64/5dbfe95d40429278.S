@@ -68,7 +68,7 @@ func0000000000000546:
 func000000000000014c:
 	add	a1, a1, a2
 	sgtz	a1, a1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -127,8 +127,8 @@ func0000000000000421:
 
 func0000000000000586:
 	neg	a2, a2
-	srli	a0, a0, 63
 	xor	a1, a1, a2
+	srli	a0, a0, 63
 	czero.eqz	a0, a0, a1
 	ret
 

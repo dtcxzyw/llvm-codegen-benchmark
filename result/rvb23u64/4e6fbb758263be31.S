@@ -9,10 +9,11 @@ func0000000000000118:
 func0000000000000058:
 	sext.w	a2, a2
 	sext.w	a1, a1
+	lui	a3, 131072
 	xor	a2, a2, a1
-	lui	a3, 917504
+	addi	a3, a3, -1
 	seqz	a2, a2
-	xnor	a1, a1, a3
+	xor	a1, a1, a3
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

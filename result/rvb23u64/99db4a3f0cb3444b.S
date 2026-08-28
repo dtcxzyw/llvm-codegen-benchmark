@@ -1,6 +1,6 @@
 func00000000000000c8:
 	feq.s	a1, fa0, fa1
-	xori	a0, a0, 9
+	addi	a0, a0, -9
 	czero.eqz	a0, a1, a0
 	ret
 

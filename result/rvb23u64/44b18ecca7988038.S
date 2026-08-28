@@ -3,7 +3,7 @@ func00000000000004cc:
 	sext.w	a0, a0
 	andi	a1, a1, 252
 	slt	a0, a2, a0
-	xori	a1, a1, 220
+	addi	a1, a1, -220
 	czero.eqz	a0, a0, a1
 	ret
 

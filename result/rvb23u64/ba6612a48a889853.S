@@ -1,16 +1,15 @@
 func0000000000000024:
-	sext.w	a2, a2
+	addiw	a2, a2, 1
 	sltu	a0, a1, a0
-	not	a2, a2
 	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000028:
 	sext.w	a2, a2
-	binvi	a2, a2, 16
+	lui	a3, 272
+	xor	a2, a2, a3
 	sltu	a0, a0, a1
-	binvi	a1, a2, 20
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000021:

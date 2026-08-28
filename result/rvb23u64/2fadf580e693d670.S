@@ -8,10 +8,11 @@ func000000000000002c:
 	ret
 
 func0000000000000024:
-	xor	a1, a1, a2
+	zext.h	a2, a2
 	zext.h	a0, a0
-	sltiu	a0, a0, 8
 	zext.h	a1, a1
+	xor	a1, a1, a2
+	sltiu	a0, a0, 8
 	czero.nez	a0, a0, a1
 	ret
 
@@ -21,7 +22,7 @@ func0000000000000181:
 	zext.h	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 10
+	addi	a0, a0, -10
 	czero.nez	a0, a1, a0
 	ret
 
@@ -37,7 +38,7 @@ func0000000000000101:
 	zext.h	a0, a0
 	zext.h	a2, a2
 	sltu	a1, a2, a1
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

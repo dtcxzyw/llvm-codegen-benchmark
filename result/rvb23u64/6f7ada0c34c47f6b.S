@@ -3,8 +3,8 @@ func000000000000002a:
 	sext.w	a2, a0
 	srliw	a0, a0, 11
 	addi	a1, a1, -1
+	addi	a0, a0, -27
 	slt	a1, a1, a2
-	xori	a0, a0, 27
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -19,8 +19,8 @@ func0000000000000021:
 
 func0000000000000026:
 	andi	a1, a0, 254
+	addi	a1, a1, -6
 	srliw	a0, a0, 31
-	xori	a1, a1, 6
 	czero.eqz	a0, a0, a1
 	ret
 

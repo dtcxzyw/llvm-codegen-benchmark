@@ -4,7 +4,7 @@ func0000000000000181:
 	xor	a0, a0, a2
 	srliw	a1, a1, 17
 	snez	a0, a0
-	xori	a1, a1, 1
+	addi	a1, a1, -1
 	czero.nez	a0, a0, a1
 	ret
 

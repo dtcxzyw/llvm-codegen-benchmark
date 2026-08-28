@@ -1,7 +1,7 @@
 func000000000000208c:
 	addi	a2, a2, 1
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
+	addi	a1, a1, -1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -9,7 +9,7 @@ func000000000000158c:
 	addi	a2, a2, -1
 	xor	a0, a0, a2
 	snez	a0, a0
-	xori	a1, a1, 1
+	addi	a1, a1, -1
 	czero.eqz	a0, a0, a1
 	ret
 

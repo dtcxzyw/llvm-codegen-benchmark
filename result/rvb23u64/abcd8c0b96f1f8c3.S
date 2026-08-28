@@ -9,7 +9,7 @@ func0000000000000e8c:
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
-	xori	a0, a0, 25
+	addi	a0, a0, -25
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -32,8 +32,8 @@ func0000000000000d81:
 func0000000000000d84:
 	zext.w	a2, a2
 	addi	a1, a1, 1
-	sltiu	a0, a0, 2
 	xor	a1, a1, a2
+	sltiu	a0, a0, 2
 	czero.eqz	a0, a0, a1
 	ret
 

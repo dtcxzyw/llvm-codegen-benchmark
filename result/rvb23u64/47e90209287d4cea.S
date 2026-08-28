@@ -13,7 +13,7 @@ func0000000000000181:
 	roriw	a1, a1, 2
 	addi	a2, a2, 1093
 	sltu	a1, a1, a2
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	ret
 

@@ -1,8 +1,8 @@
 func0000000000000021:
-	zext.h	a1, a1
 	zext.b	a0, a0
+	zext.h	a1, a1
+	addi	a1, a1, -126
 	seqz	a0, a0
-	xori	a1, a1, 126
 	czero.eqz	a0, a0, a1
 	ret
 

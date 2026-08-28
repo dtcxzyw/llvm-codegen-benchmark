@@ -10,12 +10,13 @@ func0000000000000b0c:
 	lui	a3, 131072
 	addi	a3, a3, -1
 	xor	a2, a2, a3
-	li	a3, -5
+	li	a3, 5
 	seqz	a2, a2
-	snez	a1, a1
 	slli	a3, a3, 29
+	snez	a1, a1
+	addi	a3, a3, -1
 	or	a1, a1, a2
-	xnor	a0, a0, a3
+	xor	a0, a0, a3
 	czero.eqz	a0, a1, a0
 	ret
 

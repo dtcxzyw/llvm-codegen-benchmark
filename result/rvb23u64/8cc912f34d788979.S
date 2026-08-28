@@ -9,11 +9,10 @@ func00000000000000ca:
 
 func00000000000004cc:
 	li	a2, 1
-	sub	a2, a2, a1
-	sext.w	a1, a0
-	xor	a0, a0, a2
-	slti	a1, a1, 1
 	sext.w	a0, a0
-	czero.eqz	a0, a1, a0
+	subw	a2, a2, a1
+	xor	a2, a2, a0
+	slti	a0, a0, 1
+	czero.eqz	a0, a0, a2
 	ret
 

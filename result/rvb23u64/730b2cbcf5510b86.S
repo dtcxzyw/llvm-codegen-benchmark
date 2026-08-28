@@ -40,9 +40,9 @@ func000000000000002c:
 
 func0000000000000181:
 	sext.w	a0, a0
-	li	a2, 136
+	andi	a1, a1, 136
+	addi	a1, a1, -136
 	snez	a0, a0
-	andn	a1, a2, a1
 	czero.nez	a0, a0, a1
 	addi	a0, a0, -1
 	andi	a0, a0, 3

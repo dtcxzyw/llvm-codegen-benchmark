@@ -1,9 +1,8 @@
 func000000000000018c:
 	andi	a1, a0, 13
-	sext.w	a0, a0
 	addi	a1, a1, -5
 	snez	a1, a1
-	xori	a0, a0, 12
+	addiw	a0, a0, -12
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -99,18 +98,19 @@ func0000000000000194:
 	addi	a1, a1, -32
 	and	a1, a1, a0
 	srliw	a0, a0, 10
+	addi	a1, a1, -864
 	sltiu	a0, a0, 17
-	xori	a1, a1, 864
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000034:
 	lui	a1, 16
-	srliw	a2, a0, 16
 	addi	a1, a1, -2
-	sltiu	a2, a2, 17
-	andn	a0, a1, a0
-	czero.nez	a0, a2, a0
+	and	a2, a0, a1
+	srliw	a0, a0, 16
+	xor	a1, a1, a2
+	sltiu	a0, a0, 17
+	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000294:

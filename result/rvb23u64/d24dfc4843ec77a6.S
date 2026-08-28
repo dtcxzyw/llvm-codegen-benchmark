@@ -19,8 +19,7 @@ func00000000000000cd:
 
 func0000000000000014:
 	flt.s	a1, fa1, fa0
-	sext.w	a0, a0
-	xori	a0, a0, 64
+	addiw	a0, a0, -64
 	czero.nez	a0, a1, a0
 	ret
 
@@ -96,8 +95,7 @@ func00000000000000aa:
 
 func0000000000000012:
 	flt.s	a1, fa0, fa1
-	sext.w	a0, a0
-	binvi	a0, a0, 11
+	addiw	a0, a0, -2048
 	czero.nez	a0, a1, a0
 	ret
 

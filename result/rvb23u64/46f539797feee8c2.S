@@ -6,11 +6,12 @@ func000000000000014c:
 	ret
 
 func000000000000028c:
+	lui	a2, 16
 	zext.h	a0, a0
 	sext.w	a1, a1
-	lui	a2, 1048560
+	addi	a2, a2, -1
 	sltu	a1, a1, a0
-	xnor	a0, a0, a2
+	xor	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret
 

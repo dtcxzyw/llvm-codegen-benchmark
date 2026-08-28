@@ -122,9 +122,9 @@ func0000000000000028:
 	ret
 
 func0000000000000024:
-	sltiu	a2, a0, 8
-	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	xor	a1, a1, a0
+	sltiu	a0, a0, 8
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000002a:

@@ -45,9 +45,8 @@ func0000000000000408:
 	sext.w	a2, a2
 	sltiu	a2, a2, 4
 	xori	a2, a2, 1
-	srliw	a1, a1, 4
 	and	a0, a0, a2
-	slli	a1, a1, 4
+	sraiw	a1, a1, 4
 	czero.eqz	a0, a0, a1
 	ret
 

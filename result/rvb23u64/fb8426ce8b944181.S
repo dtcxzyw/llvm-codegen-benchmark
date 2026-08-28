@@ -9,9 +9,8 @@ func0000000000000304:
 	lui	a1, 1
 	zext.w	a2, a0
 	addi	a1, a1, 1
-	srliw	a0, a0, 12
 	sltu	a1, a2, a1
-	slli	a0, a0, 12
+	sraiw	a0, a0, 12
 	czero.nez	a0, a1, a0
 	ret
 

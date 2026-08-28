@@ -30,7 +30,7 @@ func0000000000000481:
 	zext.h	a0, a0
 	addi	a1, a1, -11
 	sltiu	a1, a1, 2
-	xori	a0, a0, 128
+	addi	a0, a0, -128
 	czero.nez	a0, a1, a0
 	ret
 

@@ -64,9 +64,9 @@ func00000000000000cc:
 func0000000000000141:
 	lui	a2, 15
 	and	a1, a1, a2
-	binvi	a1, a1, 13
+	lui	a2, 10
+	xor	a1, a1, a2
 	sgtz	a0, a0
-	binvi	a1, a1, 15
 	czero.nez	a0, a0, a1
 	ret
 

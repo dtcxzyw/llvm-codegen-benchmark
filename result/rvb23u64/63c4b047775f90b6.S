@@ -14,14 +14,13 @@ func0000000000000042:
 func0000000000000102:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	xori	a0, a0, 64
+	addi	a0, a0, -64
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000048:
-	sext.w	a1, a1
+	addiw	a1, a1, -64
 	sltiu	a0, a0, 64
-	xori	a1, a1, 64
 	czero.nez	a0, a0, a1
 	ret
 

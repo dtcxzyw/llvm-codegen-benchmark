@@ -13,8 +13,8 @@ func0000000000000c84:
 
 func0000000000000c8c:
 	addi	a2, a2, 264
-	sltu	a1, a2, a1
 	xor	a0, a0, a2
+	sltu	a1, a2, a1
 	czero.eqz	a0, a1, a0
 	ret
 

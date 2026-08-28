@@ -15,10 +15,10 @@ func000000000000016c:
 	ret
 
 func000000000000014c:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	addiw	a1, a1, -1
-	slt	a1, a0, a1
-	not	a0, a0
+	slt	a1, a2, a1
+	addiw	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -64,12 +64,11 @@ func000000000000014b:
 	ret
 
 func000000000000002a:
-	addi	a1, a1, -3
-	sext.w	a2, a0
-	xor	a0, a0, a1
-	sgtz	a1, a2
 	sext.w	a0, a0
-	czero.nez	a0, a1, a0
+	addiw	a1, a1, -3
+	xor	a1, a1, a0
+	sgtz	a0, a0
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000010a:

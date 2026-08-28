@@ -30,9 +30,9 @@ func0000000000000d81:
 	addiw	a2, a2, 1
 	sext.w	a0, a0
 	xor	a0, a0, a2
-	li	a2, 7
+	andi	a1, a1, 7
 	snez	a0, a0
-	andn	a1, a2, a1
+	addi	a1, a1, -7
 	czero.nez	a0, a0, a1
 	ret
 

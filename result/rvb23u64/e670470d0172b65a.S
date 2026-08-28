@@ -44,7 +44,7 @@ func000000000000108c:
 	sltiu	a2, a2, 230
 	sltiu	a1, a1, 246
 	and	a1, a1, a2
-	xori	a0, a0, 95
+	addi	a0, a0, -95
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -91,7 +91,7 @@ func0000000000003181:
 	zext.b	a1, a1
 	zext.b	a2, a2
 	snez	a2, a2
-	xori	a1, a1, 97
+	addi	a1, a1, -97
 	zext.b	a0, a0
 	czero.eqz	a1, a2, a1
 	czero.nez	a0, a1, a0
@@ -102,7 +102,7 @@ func000000000000118c:
 	zext.b	a0, a0
 	zext.b	a2, a2
 	addi	a0, a0, -14
-	xori	a1, a1, 8
+	addi	a1, a1, -8
 	snez	a0, a0
 	sltiu	a2, a2, 252
 	czero.eqz	a0, a0, a1
@@ -114,7 +114,7 @@ func0000000000003028:
 	zext.b	a0, a0
 	zext.b	a2, a2
 	snez	a2, a2
-	xori	a1, a1, 239
+	addi	a1, a1, -239
 	czero.nez	a1, a2, a1
 	sltiu	a0, a0, 4
 	andn	a0, a1, a0

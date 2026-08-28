@@ -1,8 +1,9 @@
 func0000000000000024:
-	xor	a1, a1, a2
+	zext.h	a2, a2
 	zext.b	a0, a0
-	sltiu	a0, a0, 16
 	zext.h	a1, a1
+	xor	a1, a1, a2
+	sltiu	a0, a0, 16
 	czero.nez	a0, a0, a1
 	ret
 

@@ -19,9 +19,9 @@ func000000000000088c:
 
 func000000000000018c:
 	addi	a1, a1, -96
-	snez	a2, a0
-	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	xor	a1, a1, a0
+	snez	a0, a0
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000008c:

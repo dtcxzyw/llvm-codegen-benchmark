@@ -12,16 +12,16 @@ func0000000000000541:
 	zext.b	a0, a0
 	slti	a1, a1, 2
 	xori	a1, a1, 1
-	xori	a0, a0, 10
+	addi	a0, a0, -10
 	czero.nez	a0, a1, a0
 	ret
 
 func000000000000018c:
-	neg	a2, a2
+	sext.w	a1, a1
 	zext.b	a0, a0
+	negw	a2, a2
 	xor	a1, a1, a2
 	snez	a0, a0
-	sext.w	a1, a1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -29,10 +29,10 @@ func0000000000000141:
 	addw	a1, a1, a2
 	sext.b	a0, a0
 	lui	a2, 52429
-	slti	a0, a0, 56
 	addi	a2, a2, -820
-	xori	a0, a0, 1
+	slti	a0, a0, 56
 	xor	a1, a1, a2
+	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret
 
@@ -55,10 +55,11 @@ func0000000000000421:
 func000000000000010c:
 	addw	a1, a1, a2
 	zext.b	a0, a0
-	sltiu	a0, a0, 5
 	lui	a2, 524288
+	addiw	a2, a2, -1
+	sltiu	a0, a0, 5
+	xor	a1, a1, a2
 	xori	a0, a0, 1
-	xnor	a1, a1, a2
 	czero.eqz	a0, a0, a1
 	ret
 

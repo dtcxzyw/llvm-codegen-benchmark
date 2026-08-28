@@ -105,14 +105,14 @@ func000000000000042c:
 	ret
 
 func0000000000000484:
-	zext.b	a2, a2
-	zext.b	a0, a0
 	zext.b	a1, a1
+	zext.b	a0, a0
+	zext.b	a2, a2
 	sltiu	a1, a1, 5
 	sltiu	a0, a0, 4
+	addi	a2, a2, -3
 	and	a0, a0, a1
-	xori	a1, a2, 3
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000428:

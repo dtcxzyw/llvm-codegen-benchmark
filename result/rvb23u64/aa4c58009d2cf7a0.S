@@ -35,7 +35,7 @@ func0000000000000581:
 	sub	a1, a1, a2
 	addiw	a1, a1, -2
 	snez	a1, a1
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 

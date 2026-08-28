@@ -10,8 +10,8 @@ func0000000000001d84:
 	sext.w	a2, a2
 	zext.b	a0, a0
 	addi	a1, a1, 1
-	sltiu	a0, a0, 3
 	xor	a1, a1, a2
+	sltiu	a0, a0, 3
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -37,7 +37,7 @@ func0000000000001e81:
 	zext.b	a0, a0
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
-	xori	a0, a0, 65
+	addi	a0, a0, -65
 	czero.nez	a0, a1, a0
 	ret
 
@@ -53,10 +53,10 @@ func0000000000000d8c:
 func0000000000000d81:
 	zext.w	a2, a2
 	addi	a1, a1, 1
+	zext.b	a0, a0
 	xor	a1, a1, a2
-	li	a2, 255
 	snez	a1, a1
-	andn	a0, a2, a0
+	addi	a0, a0, -255
 	czero.nez	a0, a1, a0
 	ret
 

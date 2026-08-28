@@ -6,9 +6,9 @@ func00000000000000cc:
 	ret
 
 func0000000000000194:
-	sext.w	a1, a1
-	sltiu	a2, a1, 6
-	xori	a1, a1, 3
+	sext.w	a2, a1
+	addiw	a1, a1, -3
+	sltiu	a2, a2, 6
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret

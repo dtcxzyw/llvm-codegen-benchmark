@@ -169,9 +169,8 @@ func0000000000000141:
 	ret
 
 func0000000000000028:
-	sext.w	a2, a2
+	addiw	a2, a2, 1
 	sltu	a0, a1, a0
-	not	a2, a2
 	czero.nez	a0, a0, a2
 	ret
 

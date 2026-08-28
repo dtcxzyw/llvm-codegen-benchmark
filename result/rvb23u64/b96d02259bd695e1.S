@@ -1,8 +1,8 @@
 func000000000000058a:
 	neg	a2, a2
 	sext.w	a0, a0
-	sgtz	a0, a0
 	xor	a1, a1, a2
+	sgtz	a0, a0
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -97,8 +97,8 @@ func0000000000000906:
 func0000000000000186:
 	neg	a2, a2
 	sext.w	a0, a0
-	slti	a0, a0, 3
 	xor	a1, a1, a2
+	slti	a0, a0, 3
 	czero.eqz	a0, a0, a1
 	ret
 

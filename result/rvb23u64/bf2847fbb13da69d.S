@@ -5,9 +5,8 @@ func000000000000014c:
 	ret
 
 func000000000000002c:
-	sext.w	a1, a1
+	addiw	a1, a1, -8
 	bexti	a0, a0, 13
-	xori	a1, a1, 8
 	czero.eqz	a0, a0, a1
 	ret
 

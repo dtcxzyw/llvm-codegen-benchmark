@@ -46,17 +46,15 @@ func0000000000000114:
 
 func0000000000000181:
 	xor	a1, a1, a2
-	sext.w	a0, a0
 	snez	a1, a1
-	xori	a0, a0, 58
+	addiw	a0, a0, -58
 	czero.nez	a0, a1, a0
 	ret
 
 func00000000000000c1:
 	sub	a1, a1, a2
-	sext.w	a0, a0
 	srli	a1, a1, 63
-	xori	a0, a0, 32
+	addiw	a0, a0, -32
 	czero.nez	a0, a1, a0
 	ret
 
@@ -174,17 +172,15 @@ func00000000000000d8:
 
 func000000000000008c:
 	sub	a1, a1, a2
-	sext.w	a0, a0
 	sltiu	a1, a1, 23
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000cc:
 	sub	a1, a1, a2
-	sext.w	a0, a0
 	srli	a1, a1, 63
-	xori	a0, a0, 64
+	addiw	a0, a0, -64
 	czero.eqz	a0, a1, a0
 	ret
 

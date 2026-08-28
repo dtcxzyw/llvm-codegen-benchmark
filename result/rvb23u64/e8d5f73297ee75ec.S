@@ -37,7 +37,7 @@ func0000000000006042:
 	addi	a1, a1, -2
 	zext.b	a0, a0
 	snez	a1, a1
-	xori	a2, a0, 3
+	addi	a2, a0, -3
 	addi	a0, a0, -2
 	czero.nez	a1, a1, a2
 	seqz	a0, a0

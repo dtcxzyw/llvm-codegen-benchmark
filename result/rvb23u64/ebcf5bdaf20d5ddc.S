@@ -54,8 +54,8 @@ func0000000000001184:
 	addi	a3, a3, -26
 	sltu	a2, a2, a4
 	sltu	a0, a0, a3
+	addi	a1, a1, -45
 	and	a0, a0, a2
-	xori	a1, a1, 45
 	czero.eqz	a0, a0, a1
 	ret
 

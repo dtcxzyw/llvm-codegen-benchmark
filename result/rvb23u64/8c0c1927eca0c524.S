@@ -7,23 +7,23 @@ func00000000000000ec:
 	ret
 
 func000000000000030c:
+	lui	a2, 32
+	addi	a2, a2, -1
 	sext.w	a0, a0
-	slli	a1, a1, 47
-	srli	a1, a1, 47
-	lui	a2, 1048544
+	and	a1, a1, a2
+	xor	a2, a2, a1
 	sltu	a0, a0, a1
-	xnor	a1, a1, a2
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000010c:
+	lui	a2, 32
+	addi	a2, a2, -1
 	sext.w	a0, a0
-	slli	a1, a1, 47
-	srli	a1, a1, 47
-	lui	a2, 1048544
+	and	a1, a1, a2
+	xor	a2, a2, a1
 	sltu	a0, a0, a1
-	xnor	a1, a1, a2
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func000000000000002c:

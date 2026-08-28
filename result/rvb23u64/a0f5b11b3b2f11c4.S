@@ -1,6 +1,6 @@
 func0000000000000318:
 	snez	a1, a1
-	xori	a0, a0, 36
+	addi	a0, a0, -36
 	czero.eqz	a0, a1, a0
 	ret
 

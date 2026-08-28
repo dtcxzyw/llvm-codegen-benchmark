@@ -16,8 +16,8 @@ func0000000000000d45:
 
 func0000000000000c24:
 	addi	a2, a2, 24
-	sltiu	a0, a0, -9
 	xor	a1, a1, a2
+	sltiu	a0, a0, -9
 	czero.nez	a0, a0, a1
 	ret
 
@@ -53,15 +53,15 @@ func0000000000000d85:
 
 func0000000000000d8c:
 	addi	a2, a2, 1
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000d4c:
 	addi	a2, a2, 24
-	sgtz	a1, a1
 	xor	a0, a0, a2
+	sgtz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -90,8 +90,8 @@ func0000000000000d05:
 func0000000000000d01:
 	addi	a2, a2, 1
 	sltiu	a1, a1, 6
-	xori	a1, a1, 1
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	czero.nez	a0, a1, a0
 	ret
 

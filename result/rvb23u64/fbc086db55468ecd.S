@@ -80,7 +80,7 @@ func000000000000018c:
 
 func0000000000000101:
 	sltu	a1, a2, a1
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

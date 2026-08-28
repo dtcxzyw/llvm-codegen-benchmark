@@ -10,7 +10,7 @@ func0000000000000584:
 func000000000000018c:
 	andi	a1, a1, 7
 	snez	a1, a1
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.eqz	a0, a1, a0
 	ret
 

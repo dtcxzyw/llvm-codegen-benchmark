@@ -1,11 +1,12 @@
 func0000000000000181:
 	li	a3, 7
-	zext.h	a1, a1
 	slli	a3, a3, 10
 	and	a2, a2, a3
-	xori	a1, a1, 1536
+	li	a3, 11
+	zext.h	a1, a1
+	slli	a3, a3, 9
 	snez	a2, a2
-	binvi	a1, a1, 12
+	xor	a1, a1, a3
 	czero.nez	a1, a2, a1
 	and	a0, a0, a1
 	ret

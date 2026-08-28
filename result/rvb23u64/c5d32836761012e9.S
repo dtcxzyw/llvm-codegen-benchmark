@@ -16,8 +16,8 @@ func00000000000008c4:
 
 func0000000000000c8c:
 	addi	a2, a2, 16
-	sltiu	a1, a1, 2
 	xor	a0, a0, a2
+	sltiu	a1, a1, 2
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -30,8 +30,8 @@ func00000000000000c4:
 
 func0000000000000c2c:
 	addi	a2, a2, 16
-	seqz	a1, a1
 	xor	a0, a0, a2
+	seqz	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -48,46 +48,46 @@ func0000000000000c21:
 func0000000000000d4c:
 	addi	a2, a2, 952
 	slti	a1, a1, 25
-	xori	a1, a1, 1
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000d8c:
 	addi	a2, a2, 72
 	addi	a1, a1, -12
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000981:
 	addi	a2, a2, -48
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d0c:
 	addi	a2, a2, 4
 	sltiu	a1, a1, 33
-	xori	a1, a1, 1
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000090c:
 	addi	a2, a2, -4
 	sltiu	a1, a1, 33
-	xori	a1, a1, 1
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000e81:
 	addi	a2, a2, 88
-	sltiu	a1, a1, 8
 	xor	a0, a0, a2
+	sltiu	a1, a1, 8
 	czero.nez	a0, a1, a0
 	ret
 

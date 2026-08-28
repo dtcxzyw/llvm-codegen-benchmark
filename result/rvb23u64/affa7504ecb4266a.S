@@ -9,11 +9,11 @@ func0000000000000427:
 	ret
 
 func000000000000042c:
-	addi	a2, a2, -1
 	zext.b	a1, a1
+	sext.w	a0, a0
+	addiw	a2, a2, -1
 	xor	a0, a0, a2
 	seqz	a1, a1
-	sext.w	a0, a0
 	czero.eqz	a0, a1, a0
 	ret
 

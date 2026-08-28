@@ -6,9 +6,8 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
-	srliw	a1, a1, 1
 	srli	a0, a0, 60
-	slli	a1, a1, 1
+	sraiw	a1, a1, 1
 	snez	a0, a0
 	czero.eqz	a0, a0, a1
 	ret

@@ -33,10 +33,9 @@ func0000000000000181:
 
 func0000000000000021:
 	sext.w	a2, a2
-	sext.w	a0, a0
 	seqz	a2, a2
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
@@ -67,10 +66,9 @@ func000000000000028c:
 
 func0000000000000081:
 	sext.w	a2, a2
-	sext.w	a0, a0
 	sltiu	a2, a2, 17
 	and	a1, a1, a2
-	xori	a0, a0, 2
+	addiw	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -186,10 +184,9 @@ func0000000000000084:
 
 func00000000000000c1:
 	sext.w	a2, a2
-	sext.w	a0, a0
 	slti	a2, a2, 127
 	and	a1, a1, a2
-	xori	a0, a0, 32
+	addiw	a0, a0, -32
 	czero.nez	a0, a1, a0
 	ret
 
@@ -214,10 +211,9 @@ func0000000000000144:
 
 func00000000000000cc:
 	sext.w	a2, a2
-	sext.w	a0, a0
 	slti	a2, a2, 8
 	and	a1, a1, a2
-	xori	a0, a0, 2020
+	addiw	a0, a0, -2020
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -298,10 +294,9 @@ func0000000000000154:
 func0000000000000301:
 	sext.w	a2, a2
 	sltiu	a2, a2, 128
-	sext.w	a0, a0
 	xori	a2, a2, 1
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

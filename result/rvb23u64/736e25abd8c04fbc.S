@@ -64,11 +64,11 @@ func000000000000002c:
 	ret
 
 func0000000000000028:
+	lui	a1, 272
 	sext.w	a0, a0
-	sltiu	a1, a0, 128
-	binvi	a0, a0, 16
-	xori	a1, a1, 1
-	binvi	a0, a0, 20
+	sltiu	a2, a0, 128
+	xor	a0, a0, a1
+	xori	a1, a2, 1
 	czero.eqz	a0, a1, a0
 	ret
 

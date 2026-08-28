@@ -7,7 +7,7 @@ func0000000000003184:
 
 func0000000000003188:
 	sltiu	a2, a1, -1
-	not	a3, a0
+	addi	a3, a0, 1
 	czero.eqz	a2, a2, a3
 	sltu	a0, a1, a0
 	and	a0, a0, a2

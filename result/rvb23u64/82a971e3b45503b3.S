@@ -8,11 +8,12 @@ func0000000000000108:
 
 func0000000000000c2c:
 	addi	a2, a2, 1
-	sext.w	a0, a0
 	xor	a1, a1, a2
 	lui	a2, 524288
+	sext.w	a0, a0
+	addiw	a2, a2, -1
 	seqz	a1, a1
-	xnor	a0, a0, a2
+	xor	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -37,18 +38,17 @@ func000000000000018c:
 
 func0000000000000d81:
 	addi	a2, a2, 504
-	sext.w	a0, a0
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d8c:
 	sext.w	a1, a1
 	addi	a2, a2, 48
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -87,8 +87,8 @@ func0000000000000d4c:
 	sext.w	a1, a1
 	addi	a2, a2, 256
 	slti	a1, a1, 6
-	xori	a1, a1, 1
 	xor	a0, a0, a2
+	xori	a1, a1, 1
 	czero.eqz	a0, a1, a0
 	ret
 

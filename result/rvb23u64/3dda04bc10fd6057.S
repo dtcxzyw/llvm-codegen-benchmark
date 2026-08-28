@@ -24,12 +24,11 @@ func0000000000000541:
 	ret
 
 func0000000000003181:
-	sext.w	a1, a1
 	addiw	a2, a2, -7
 	snez	a2, a2
-	xori	a1, a1, 7
+	addiw	a1, a1, -7
 	czero.eqz	a1, a2, a1
-	xori	a0, a0, 1
+	addi	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

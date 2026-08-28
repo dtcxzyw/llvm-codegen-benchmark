@@ -60,10 +60,11 @@ func000000000000008c:
 	zext.h	a1, a1
 	zext.h	a2, a2
 	lui	a3, 16
+	lui	a4, 2
 	addi	a3, a3, -5
-	xori	a1, a1, 12
+	addi	a4, a4, 12
 	sltu	a2, a2, a3
-	binvi	a1, a1, 13
+	xor	a1, a1, a4
 	czero.eqz	a1, a2, a1
 	and	a0, a0, a1
 	ret

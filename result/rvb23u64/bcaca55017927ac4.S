@@ -19,19 +19,17 @@ func0000000000000181:
 	slli	a3, a3, 27
 	and	a2, a2, a3
 	xor	a2, a2, a3
-	sext.w	a0, a0
 	snez	a2, a2
 	and	a1, a1, a2
-	xori	a0, a0, 13
+	addiw	a0, a0, -13
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000021:
 	sraiw	a2, a2, 31
-	sext.w	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 1116
+	addiw	a1, a1, -1116
 	czero.nez	a0, a0, a1
 	ret
 

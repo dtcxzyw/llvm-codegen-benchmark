@@ -1,26 +1,23 @@
 func0000000000000102:
-	sext.w	a1, a1
 	addiw	a2, a2, -1919
 	sltiu	a2, a2, 16
-	xori	a1, a1, 12
+	addiw	a1, a1, -12
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000048:
-	sext.w	a1, a1
 	addiw	a2, a2, -23
 	sltiu	a2, a2, 2
-	xori	a1, a1, 1
+	addiw	a1, a1, -1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 
 func0000000000000918:
-	sext.w	a1, a1
 	addiw	a2, a2, -14
 	sltiu	a2, a2, -4
-	xori	a1, a1, 9
+	addiw	a1, a1, -9
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

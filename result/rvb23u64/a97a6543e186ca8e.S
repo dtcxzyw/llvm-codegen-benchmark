@@ -9,10 +9,9 @@ func000000000000010c:
 
 func0000000000000021:
 	addiw	a1, a1, -3
-	sext.w	a0, a0
 	seqz	a1, a1
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.nez	a0, a1, a0
 	ret
 

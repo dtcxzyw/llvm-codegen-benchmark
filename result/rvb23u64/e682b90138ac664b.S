@@ -1,17 +1,16 @@
 func0000000000000281:
-	andi	a1, a1, -64
 	sext.w	a0, a0
-	sext.w	a1, a1
+	andi	a1, a1, -64
+	addiw	a1, a1, -448
 	sltiu	a0, a0, 3
-	xori	a1, a1, 448
 	czero.nez	a0, a0, a1
 	ret
 
 func000000000000008c:
 	srliw	a1, a1, 12
 	srliw	a0, a0, 16
+	addi	a1, a1, -1
 	sltiu	a0, a0, 255
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 

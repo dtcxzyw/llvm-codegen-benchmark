@@ -30,7 +30,7 @@ func0000000000006042:
 
 func0000000000000b10:
 	seqz	a2, a2
-	xori	a1, a1, 1
+	addi	a1, a1, -1
 	sltiu	a0, a0, 3
 	czero.eqz	a1, a2, a1
 	xori	a0, a0, 1
@@ -51,10 +51,10 @@ func0000000000006202:
 
 func0000000000006282:
 	li	a3, -1
+	slli	a4, a3, 62
+	xor	a2, a2, a4
 	bclri	a3, a3, 62
 	slt	a1, a3, a1
-	binvi	a2, a2, 62
-	binvi	a2, a2, 63
 	binvi	a0, a0, 31
 	czero.eqz	a1, a1, a2
 	seqz	a0, a0
@@ -80,7 +80,7 @@ func0000000000000842:
 
 func0000000000000b08:
 	seqz	a2, a2
-	xori	a1, a1, 35
+	addi	a1, a1, -35
 	srli	a0, a0, 32
 	czero.eqz	a1, a2, a1
 	seqz	a0, a0

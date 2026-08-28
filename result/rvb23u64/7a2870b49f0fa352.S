@@ -11,8 +11,7 @@ func0000000000000021:
 	ret
 
 func0000000000000141:
-	srliw	a2, a2, 31
-	slli	a2, a2, 31
+	sraiw	a2, a2, 31
 	slt	a0, a1, a0
 	czero.nez	a0, a0, a2
 	ret
@@ -59,9 +58,9 @@ func0000000000000121:
 func0000000000000081:
 	slli	a2, a2, 31
 	srli	a2, a2, 31
+	binvi	a2, a2, 32
 	sltu	a0, a0, a1
-	binvi	a1, a2, 32
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func000000000000010c:

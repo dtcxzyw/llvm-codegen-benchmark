@@ -47,8 +47,8 @@ func0000000000000285:
 func000000000000018c:
 	sub	a2, a0, a2
 	xor	a0, a0, a1
+	addi	a2, a2, -4
 	snez	a0, a0
-	xori	a1, a2, 4
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 

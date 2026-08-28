@@ -1,8 +1,9 @@
 func0000000000000c26:
-	xor	a1, a1, a2
-	slli	a0, a0, 56
-	srli	a0, a0, 63
 	sext.w	a1, a1
+	slli	a0, a0, 56
+	sext.w	a2, a2
+	xor	a1, a1, a2
+	srli	a0, a0, 63
 	czero.nez	a0, a0, a1
 	ret
 

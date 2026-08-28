@@ -16,7 +16,7 @@ func0000000000000188:
 func0000000000000181:
 	bexti	a2, a2, 25
 	and	a1, a1, a2
-	xori	a0, a0, 56
+	addi	a0, a0, -56
 	czero.nez	a0, a1, a0
 	ret
 

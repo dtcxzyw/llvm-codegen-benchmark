@@ -1,8 +1,8 @@
 func00000000000004c1:
-	mulw	a1, a1, a2
+	mul	a1, a1, a2
 	sext.w	a0, a0
 	slti	a0, a0, 2
-	xori	a1, a1, 32
+	addiw	a1, a1, -32
 	czero.nez	a0, a0, a1
 	ret
 

@@ -7,10 +7,10 @@ func000000000000014a:
 	ret
 
 func000000000000002a:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sext.w	a0, a0
+	addiw	a1, a1, 1
 	sgtz	a0, a0
-	not	a1, a1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -23,10 +23,10 @@ func00000000000004ca:
 	ret
 
 func0000000000000021:
-	subw	a1, a1, a2
+	sub	a1, a1, a2
 	sext.w	a0, a0
+	addiw	a1, a1, -100
 	seqz	a0, a0
-	xori	a1, a1, 100
 	czero.eqz	a0, a0, a1
 	ret
 

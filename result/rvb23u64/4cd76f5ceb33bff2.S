@@ -11,10 +11,9 @@ func000000000000010c:
 	ret
 
 func000000000000008c:
-	sext.w	a2, a2
+	addiw	a2, a2, -1
 	sltu	a0, a0, a1
-	xori	a1, a2, 1
-	czero.eqz	a0, a0, a1
+	czero.eqz	a0, a0, a2
 	ret
 
 func0000000000000184:
@@ -24,10 +23,9 @@ func0000000000000184:
 	ret
 
 func000000000000012c:
-	sext.w	a2, a2
+	addiw	a2, a2, 1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
-	not	a2, a2
 	czero.eqz	a0, a0, a2
 	ret
 

@@ -1,8 +1,8 @@
 func00000000000000cc:
-	sext.w	a0, a0
+	sext.w	a2, a0
 	zext.h	a1, a1
-	slt	a1, a0, a1
-	not	a0, a0
+	slt	a1, a2, a1
+	addiw	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 

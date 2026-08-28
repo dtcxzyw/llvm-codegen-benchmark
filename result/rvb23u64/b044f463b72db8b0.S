@@ -1,9 +1,10 @@
 func0000000000000021:
 	sext.w	a1, a1
+	lui	a3, 8
 	seqz	a2, a2
-	xori	a1, a1, 5
+	addi	a3, a3, 5
 	and	a0, a0, a2
-	binvi	a1, a1, 15
+	xor	a1, a1, a3
 	czero.nez	a0, a0, a1
 	ret
 

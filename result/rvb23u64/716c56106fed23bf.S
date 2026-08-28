@@ -16,10 +16,10 @@ func000000000000018c:
 
 func0000000000000021:
 	addiw	a2, a2, 1
+	zext.b	a1, a1
 	seqz	a2, a2
-	li	a3, 255
 	and	a0, a0, a2
-	andn	a1, a3, a1
+	addi	a1, a1, -255
 	czero.nez	a0, a0, a1
 	ret
 

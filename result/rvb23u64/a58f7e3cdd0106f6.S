@@ -29,8 +29,8 @@ func000000000000008c:
 
 func0000000000000d94:
 	addi	a2, a2, 184
-	sltiu	a0, a0, 19
 	xor	a1, a1, a2
+	sltiu	a0, a0, 19
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -45,14 +45,14 @@ func000000000000098c:
 	addi	a2, a2, -4
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 12
+	addi	a0, a0, -12
 	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000c24:
 	addi	a2, a2, 40
-	sltiu	a0, a0, 63
 	xor	a1, a1, a2
+	sltiu	a0, a0, 63
 	czero.nez	a0, a0, a1
 	ret
 

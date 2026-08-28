@@ -16,18 +16,20 @@ func000000000000002c:
 	ret
 
 func000000000000002a:
-	xor	a1, a1, a2
+	zext.b	a2, a2
 	sext.w	a0, a0
-	sgtz	a0, a0
 	zext.b	a1, a1
+	xor	a1, a1, a2
+	sgtz	a0, a0
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000026:
-	xor	a1, a1, a2
+	zext.b	a2, a2
 	sext.w	a0, a0
-	slti	a0, a0, 128
 	zext.b	a1, a1
+	xor	a1, a1, a2
+	slti	a0, a0, 128
 	czero.nez	a0, a0, a1
 	ret
 
@@ -69,10 +71,11 @@ func0000000000000101:
 	ret
 
 func0000000000000184:
-	xor	a1, a1, a2
+	zext.b	a2, a2
 	sext.w	a0, a0
-	sltiu	a0, a0, 2
 	zext.b	a1, a1
+	xor	a1, a1, a2
+	sltiu	a0, a0, 2
 	czero.eqz	a0, a0, a1
 	ret
 

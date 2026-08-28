@@ -53,10 +53,10 @@ func0000000000000081:
 
 func000000000000010c:
 	zext.h	a0, a0
+	andi	a1, a1, 15
 	sltiu	a0, a0, 8
-	li	a2, 15
+	addi	a1, a1, -15
 	xori	a0, a0, 1
-	andn	a1, a2, a1
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -103,8 +103,8 @@ func0000000000000101:
 	lui	a2, 28672
 	and	a1, a1, a2
 	sltiu	a0, a0, 14
-	xori	a0, a0, 1
 	binvi	a1, a1, 26
+	xori	a0, a0, 1
 	czero.nez	a0, a0, a1
 	ret
 

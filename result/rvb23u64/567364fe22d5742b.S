@@ -8,9 +8,10 @@ func0000000000000042:
 	ret
 
 func0000000000000302:
-	lui	a3, 1048568
+	lui	a3, 8
+	addi	a3, a3, -1
 	snez	a2, a2
-	xnor	a1, a1, a3
+	xor	a1, a1, a3
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

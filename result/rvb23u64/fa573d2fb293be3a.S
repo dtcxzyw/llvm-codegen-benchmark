@@ -10,17 +10,17 @@ func0000000000000281:
 	zext.w	a2, a2
 	andi	a1, a1, 31
 	sltu	a0, a0, a2
-	xori	a1, a1, 21
+	addi	a1, a1, -21
 	czero.nez	a0, a0, a1
 	ret
 
 func0000000000000681:
+	sext.w	a2, a2
 	lui	a3, 15
 	and	a1, a1, a3
-	sext.w	a2, a2
-	binvi	a1, a1, 13
+	lui	a3, 10
 	sltu	a0, a0, a2
-	binvi	a1, a1, 15
+	xor	a1, a1, a3
 	czero.nez	a0, a0, a1
 	ret
 
@@ -43,7 +43,7 @@ func0000000000000501:
 	sext.w	a2, a2
 	andi	a1, a1, 25
 	sltu	a0, a2, a0
-	xori	a1, a1, 16
+	addi	a1, a1, -16
 	czero.nez	a0, a0, a1
 	ret
 

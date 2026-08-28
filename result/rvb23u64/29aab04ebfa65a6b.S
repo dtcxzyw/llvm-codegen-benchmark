@@ -116,7 +116,7 @@ func0000000000000188:
 
 func0000000000000141:
 	sgtz	a1, a1
-	xori	a0, a0, -2
+	addi	a0, a0, 2
 	czero.nez	a0, a1, a0
 	ret
 
@@ -149,13 +149,13 @@ func0000000000000104:
 func000000000000030c:
 	sltiu	a1, a1, 63
 	xori	a1, a1, 1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
 func000000000000008c:
 	sltiu	a1, a1, -10
-	xori	a0, a0, 32
+	addi	a0, a0, -32
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -198,8 +198,8 @@ func000000000000002a:
 	ret
 
 func0000000000000024:
+	addi	a1, a1, -1
 	sltiu	a0, a0, 2
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 
@@ -207,7 +207,7 @@ func0000000000000101:
 	lui	a2, 1048560
 	addi	a2, a2, -1
 	sltu	a1, a2, a1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	ret
 

@@ -1,18 +1,16 @@
 func000000000000214a:
 	sext.w	a2, a2
 	sext.w	a0, a0
-	srliw	a1, a1, 31
 	slt	a0, a2, a0
-	slli	a1, a1, 31
+	sraiw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 
 func000000000000014a:
 	sext.w	a2, a2
 	sext.w	a0, a0
-	srliw	a1, a1, 31
 	slt	a0, a2, a0
-	slli	a1, a1, 31
+	sraiw	a1, a1, 31
 	czero.nez	a0, a0, a1
 	ret
 

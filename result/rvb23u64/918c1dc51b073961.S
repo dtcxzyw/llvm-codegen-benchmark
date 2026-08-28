@@ -1,9 +1,8 @@
 func0000000000000021:
 	addi	a2, a2, -8
-	sext.w	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 10
+	addiw	a1, a1, -10
 	czero.nez	a0, a0, a1
 	ret
 
@@ -17,10 +16,9 @@ func000000000000008a:
 	ret
 
 func000000000000018c:
-	sext.w	a1, a1
 	snez	a2, a2
 	and	a0, a0, a2
-	xori	a1, a1, 16
+	addiw	a1, a1, -16
 	czero.eqz	a0, a0, a1
 	ret
 

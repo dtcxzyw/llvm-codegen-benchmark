@@ -29,9 +29,9 @@ func0000000000000081:
 	add	a2, a2, a3
 	sh1add	a2, a2, a2
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
+	addiw	a1, a1, -2
 	sltiu	a0, a0, 3
-	xori	a1, a1, 2
 	czero.nez	a0, a0, a1
 	ret
 
@@ -45,9 +45,9 @@ func0000000000000024:
 	add	a2, a2, a3
 	sh1add	a2, a2, a2
 	sext.w	a0, a0
-	subw	a1, a1, a2
+	sub	a1, a1, a2
+	addiw	a1, a1, -1
 	sltiu	a0, a0, 17
-	xori	a1, a1, 1
 	czero.nez	a0, a0, a1
 	ret
 

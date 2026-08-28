@@ -33,8 +33,8 @@ func00000000000000ca:
 
 func0000000000000081:
 	and	a1, a1, a2
+	addi	a1, a1, -3
 	sltiu	a0, a0, 4
-	xori	a1, a1, 3
 	czero.nez	a0, a0, a1
 	ret
 

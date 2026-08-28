@@ -10,7 +10,7 @@ func0000000000000318:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
-	xori	a0, a0, 133
+	addi	a0, a0, -133
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -18,7 +18,7 @@ func0000000000000302:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
-	xori	a0, a0, 35
+	addi	a0, a0, -35
 	czero.nez	a0, a1, a0
 	ret
 
@@ -35,7 +35,7 @@ func0000000000000058:
 	zext.b	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
-	xori	a0, a0, 10
+	addi	a0, a0, -10
 	czero.eqz	a0, a1, a0
 	ret
 

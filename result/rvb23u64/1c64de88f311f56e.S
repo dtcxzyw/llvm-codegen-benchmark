@@ -3,7 +3,7 @@ func0000000000000141:
 	zext.b	a0, a0
 	slti	a1, a1, 2
 	xori	a1, a1, 1
-	xori	a0, a0, 48
+	addi	a0, a0, -48
 	czero.nez	a0, a1, a0
 	ret
 
@@ -59,7 +59,7 @@ func0000000000000101:
 	zext.b	a0, a0
 	sltiu	a1, a1, 20
 	xori	a1, a1, 1
-	xori	a0, a0, 62
+	addi	a0, a0, -62
 	czero.nez	a0, a1, a0
 	ret
 

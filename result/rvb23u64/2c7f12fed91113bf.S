@@ -1,13 +1,13 @@
 func000000000000002c:
+	addi	a1, a1, -1
 	seqz	a0, a0
-	xori	a1, a1, 1
 	czero.eqz	a0, a0, a1
 	ret
 
 func0000000000000188:
 	andi	a1, a1, -2
+	addi	a1, a1, -4
 	snez	a0, a0
-	xori	a1, a1, 4
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -19,8 +19,8 @@ func0000000000000101:
 
 func0000000000000184:
 	sext.w	a2, a1
-	snez	a0, a0
 	xor	a1, a1, a2
+	snez	a0, a0
 	czero.nez	a0, a0, a1
 	ret
 
@@ -42,8 +42,8 @@ func000000000000008c:
 	ret
 
 func000000000000042c:
+	addi	a1, a1, 16
 	seqz	a0, a0
-	xori	a1, a1, -16
 	czero.eqz	a0, a0, a1
 	ret
 

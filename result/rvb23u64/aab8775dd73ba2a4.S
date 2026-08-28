@@ -4,8 +4,8 @@ func0000000000000d84:
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	addi	a2, a2, 1
-	sltu	a0, a0, a3
 	xor	a1, a1, a2
+	sltu	a0, a0, a3
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -38,14 +38,14 @@ func0000000000000c8c:
 func0000000000000c81:
 	addi	a2, a2, 32
 	sltu	a1, a2, a1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.nez	a0, a1, a0
 	ret
 
 func0000000000000d94:
 	addi	a2, a2, 1
-	sltiu	a0, a0, 18
 	xor	a1, a1, a2
+	sltiu	a0, a0, 18
 	czero.eqz	a0, a0, a1
 	ret
 
@@ -65,8 +65,8 @@ func0000000000000d81:
 
 func0000000000000c24:
 	addi	a2, a2, 24
-	sltiu	a0, a0, 8
 	xor	a1, a1, a2
+	sltiu	a0, a0, 8
 	czero.nez	a0, a0, a1
 	ret
 
@@ -82,7 +82,7 @@ func0000000000000181:
 	addi	a2, a2, 8
 	xor	a1, a1, a2
 	snez	a1, a1
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.nez	a0, a1, a0
 	ret
 

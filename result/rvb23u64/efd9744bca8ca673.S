@@ -1,8 +1,9 @@
 func0000000000000181:
+	lui	a2, 8
 	zext.h	a0, a0
-	lui	a2, 1048568
+	addi	a2, a2, -1
 	bexti	a1, a1, 62
-	xnor	a0, a0, a2
+	xor	a0, a0, a2
 	czero.nez	a0, a1, a0
 	ret
 

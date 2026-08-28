@@ -30,11 +30,10 @@ func0000000000000088:
 	ret
 
 func0000000000000184:
-	sext.w	a1, a0
-	addiw	a0, a0, -23
-	sltiu	a0, a0, -3
-	xori	a1, a1, 6
-	czero.eqz	a0, a0, a1
+	addiw	a1, a0, -23
+	sltiu	a1, a1, -3
+	addiw	a0, a0, -6
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000488:
@@ -48,11 +47,10 @@ func0000000000000488:
 	ret
 
 func0000000000000584:
-	sext.w	a1, a0
-	addiw	a0, a0, -37
-	sltiu	a0, a0, -6
-	xori	a1, a1, 7
-	czero.eqz	a0, a0, a1
+	addiw	a1, a0, -37
+	sltiu	a1, a1, -6
+	addiw	a0, a0, -7
+	czero.eqz	a0, a1, a0
 	ret
 
 func0000000000000494:

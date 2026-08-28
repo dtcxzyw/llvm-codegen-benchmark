@@ -13,7 +13,7 @@ func0000000000001d81:
 	zext.b	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
-	xori	a0, a0, 4
+	addi	a0, a0, -4
 	czero.nez	a0, a1, a0
 	ret
 

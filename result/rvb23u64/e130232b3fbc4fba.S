@@ -17,16 +17,16 @@ func0000000000000021:
 func0000000000000181:
 	sext.w	a0, a0
 	zext.b	a1, a1
+	addi	a1, a1, -2
 	snez	a0, a0
-	xori	a1, a1, 2
 	czero.nez	a0, a0, a1
 	ret
 
 func000000000000018c:
 	sext.w	a0, a0
 	zext.b	a1, a1
+	addi	a1, a1, -18
 	snez	a0, a0
-	xori	a1, a1, 18
 	czero.eqz	a0, a0, a1
 	ret
 

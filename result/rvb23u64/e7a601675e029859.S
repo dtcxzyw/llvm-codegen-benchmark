@@ -15,7 +15,7 @@ func0000000000000024:
 func0000000000000181:
 	andi	a1, a1, 126
 	snez	a1, a1
-	xori	a0, a0, 63
+	addi	a0, a0, -63
 	czero.nez	a0, a1, a0
 	ret
 
@@ -29,7 +29,7 @@ func000000000000002c:
 	andi	a1, a1, 24
 	addi	a1, a1, -16
 	seqz	a1, a1
-	xori	a0, a0, 2
+	addi	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	ret
 

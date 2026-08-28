@@ -32,7 +32,7 @@ func000000000000002c:
 	add	a1, a1, a0
 	addi	a1, a1, -1024
 	seqz	a1, a1
-	xori	a0, a0, 1024
+	addi	a0, a0, -1024
 	czero.eqz	a0, a1, a0
 	ret
 

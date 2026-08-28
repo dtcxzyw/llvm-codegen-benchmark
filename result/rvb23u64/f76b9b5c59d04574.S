@@ -46,8 +46,8 @@ func0000000000000038:
 	ret
 
 func0000000000000026:
-	srli	a1, a0, 63
-	xori	a0, a0, -15
-	czero.eqz	a0, a1, a0
+	addi	a1, a0, 15
+	srli	a0, a0, 63
+	czero.eqz	a0, a0, a1
 	ret
 

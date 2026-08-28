@@ -54,8 +54,8 @@ func0000000000000101:
 	slli	a1, a1, 48
 	srli	a1, a1, 61
 	srli	a0, a0, 28
+	addi	a1, a1, -3
 	snez	a0, a0
-	xori	a1, a1, 3
 	czero.nez	a0, a0, a1
 	ret
 

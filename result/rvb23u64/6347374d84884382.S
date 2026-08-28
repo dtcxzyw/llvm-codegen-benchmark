@@ -16,20 +16,20 @@ func000000000000002c:
 	ret
 
 func0000000000000024:
-	sltiu	a2, a0, 31
-	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	xor	a1, a1, a0
+	sltiu	a0, a0, 31
+	czero.nez	a0, a0, a1
 	ret
 
 func000000000000014c:
 	slt	a1, a0, a1
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
 func00000000000000cc:
 	slt	a1, a1, a0
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -42,7 +42,7 @@ func0000000000000124:
 
 func000000000000008c:
 	sltu	a1, a1, a0
-	not	a0, a0
+	addi	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -72,9 +72,9 @@ func0000000000000028:
 	ret
 
 func0000000000000186:
-	srli	a2, a0, 63
-	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	xor	a1, a1, a0
+	srli	a0, a0, 63
+	czero.eqz	a0, a0, a1
 	ret
 
 func000000000000008a:

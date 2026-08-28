@@ -18,7 +18,7 @@ func0000000000000021:
 	feq.d	a1, fa0, fa0
 	zext.b	a0, a0
 	xori	a1, a1, 1
-	xori	a0, a0, 7
+	addi	a0, a0, -7
 	czero.nez	a0, a1, a0
 	ret
 

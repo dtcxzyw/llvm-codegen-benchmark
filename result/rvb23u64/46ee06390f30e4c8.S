@@ -140,8 +140,7 @@ func000000000000014a:
 func0000000000000014:
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
-	sext.w	a0, a0
-	xori	a0, a0, 4
+	addiw	a0, a0, -4
 	czero.nez	a0, a1, a0
 	ret
 
@@ -196,8 +195,7 @@ func0000000000000041:
 func00000000000000c6:
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
-	sext.w	a0, a0
-	not	a0, a0
+	addiw	a0, a0, 1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -215,8 +213,7 @@ func000000000000006a:
 func0000000000000101:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 5
+	addiw	a0, a0, -5
 	czero.nez	a0, a1, a0
 	ret
 
@@ -251,8 +248,7 @@ func000000000000004c:
 	lui	a1, %hi(.LCPI29_0)
 	fld	fa5, %lo(.LCPI29_0)(a1)
 	flt.d	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 1
+	addiw	a0, a0, -1
 	czero.eqz	a0, a1, a0
 	ret
 
@@ -297,8 +293,7 @@ func00000000000000cb:
 func0000000000000018:
 	fli.d	fa5, inf
 	feq.d	a1, fa0, fa5
-	sext.w	a0, a0
-	xori	a0, a0, 34
+	addiw	a0, a0, -34
 	czero.nez	a0, a1, a0
 	ret
 

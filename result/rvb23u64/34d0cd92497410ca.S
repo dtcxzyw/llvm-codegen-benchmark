@@ -41,10 +41,10 @@ func0000000000000081:
 	ret
 
 func0000000000000028:
-	li	a3, 511
+	andi	a2, a2, 511
+	addi	a2, a2, -511
 	sltu	a0, a1, a0
-	andn	a1, a3, a2
-	czero.nez	a0, a0, a1
+	czero.nez	a0, a0, a2
 	ret
 
 func0000000000000146:
@@ -75,9 +75,8 @@ func000000000000010c:
 	ret
 
 func0000000000000181:
-	srliw	a2, a2, 30
+	sraiw	a2, a2, 30
 	xor	a0, a0, a1
-	slli	a2, a2, 30
 	snez	a0, a0
 	czero.nez	a0, a0, a2
 	ret

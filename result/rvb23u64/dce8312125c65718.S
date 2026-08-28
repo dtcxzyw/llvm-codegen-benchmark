@@ -8,7 +8,7 @@ func000000000000002c:
 func000000000000018c:
 	andi	a1, a0, 31
 	bexti	a0, a0, 7
-	xori	a1, a1, 27
+	addi	a1, a1, -27
 	czero.eqz	a0, a0, a1
 	ret
 

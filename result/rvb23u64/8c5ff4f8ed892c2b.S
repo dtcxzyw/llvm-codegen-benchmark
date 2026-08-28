@@ -7,9 +7,8 @@ func0000000000000021:
 
 func0000000000000024:
 	zext.h	a0, a0
-	sext.w	a1, a1
+	addiw	a1, a1, -64
 	sltiu	a0, a0, 120
-	xori	a1, a1, 64
 	czero.nez	a0, a0, a1
 	ret
 

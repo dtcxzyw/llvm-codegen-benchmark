@@ -8,10 +8,9 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	sext.w	a0, a0
 	addi	a1, a1, 1
 	bexti	a1, a1, 1
-	xori	a0, a0, -35
+	addiw	a0, a0, 35
 	czero.nez	a0, a1, a0
 	ret
 
