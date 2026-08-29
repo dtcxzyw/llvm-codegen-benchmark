@@ -21,7 +21,8 @@ func0000000000000016:
 func0000000000000004:
 	leaq	(%rdi,%rdi), %rax
 	cmpq	$1, %rax
-	adcq	$0, %rax
+	movq	%rdi, %rax
+	adcq	%rdi, %rax
 	subq	%rdi, %rax
 	retq
 

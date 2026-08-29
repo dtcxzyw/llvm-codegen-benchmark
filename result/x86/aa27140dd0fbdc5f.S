@@ -11,9 +11,9 @@ func0000000000000005:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000011:
-	andl	$1, %edi
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
+	andl	$1, %eax
 	cmpb	$3, %sil
-	adcl	$0, %eax
+	adcl	%eax, %eax
 	retq
 

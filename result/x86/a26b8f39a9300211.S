@@ -11,9 +11,9 @@ func0000000000000048:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000081:
-	addq	%rsi, %rsi
-	cmpq	$1, %rsi
-	adcq	$0, %rsi
+	leaq	(%rsi,%rsi), %rax
+	cmpq	$1, %rax
+	adcq	%rsi, %rsi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq

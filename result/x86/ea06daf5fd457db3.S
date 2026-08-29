@@ -9,9 +9,10 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	leaq	(%rdi,%rdi), %rax
-	cmpq	$1, %rax
-	adcq	$0, %rax
+	movq	%rdi, %rax
+	leaq	(%rdi,%rdi), %rcx
+	cmpq	$1, %rcx
+	adcq	%rdi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

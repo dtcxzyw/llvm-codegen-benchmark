@@ -71,15 +71,15 @@ func00000000000000b1:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000047:
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
 	cmpl	%edx, %esi
-	adcl	$0, %eax
+	adcl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000041:
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
 	cmpl	%edx, %esi
-	adcl	$0, %eax
+	adcl	%edi, %eax
 	retq
 

@@ -16,9 +16,9 @@ func0000000000000017:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000041:
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
 	cmpl	$13, %esi
-	adcl	$0, %eax
+	adcl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -31,9 +31,9 @@ func00000000000000a1:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000013:
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
 	cmpl	$1, %esi
-	adcl	$0, %eax
+	adcl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

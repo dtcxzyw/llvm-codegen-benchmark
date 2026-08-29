@@ -24,9 +24,8 @@ func0000000000000011:
 	xorl	%eax, %eax
 	cmpl	$512, %esi
 	setae	%al
-	addl	%eax, %eax
 	btl	$18, %edi
-	adcl	$0, %eax
+	adcl	%eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

@@ -9,15 +9,15 @@ func00000000000000c3:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
 	cmpq	$1, %rsi
-	adcl	$0, %eax
+	adcl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000011:
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
 	cmpq	$1, %rsi
-	adcl	$0, %eax
+	adcl	%edi, %eax
 	retq
 
