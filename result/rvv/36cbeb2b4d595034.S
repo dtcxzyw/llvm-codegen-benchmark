@@ -1,11 +1,11 @@
 func0000000000000000:
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmv.v.i	v12, 0
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv.v.i	v16, 0
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vand.vi	v8, v8, 1
 	vmsne.vi	v0, v8, 0
-	vsetvli	zero, zero, e32, m4, ta, ma
-	vmerge.vim	v16, v12, 1, v0
-	vfwcvt.f.xu.v	v8, v16
+	fli.d	fa5, 1.0
+	vsetvli	zero, zero, e64, m8, ta, ma
+	vfmerge.vfm	v8, v16, fa5, v0
 	ret
 
