@@ -13,11 +13,10 @@ func0000000000000026:
 	vpslld	$6, %ymm2, %ymm0 {%k1}
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000004a:
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 
@@ -29,11 +28,10 @@ func0000000000000001:
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 
-.LCPI4_0:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000002a:
-	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpslld	$1, %ymm2, %ymm0 {%k1}
 	retq
 

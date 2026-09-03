@@ -26,8 +26,8 @@ func000000000000020a:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$39, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -72,8 +72,8 @@ func00000000000003ca:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$32, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -115,8 +115,8 @@ func000000000000018a:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$3, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -160,8 +160,8 @@ func000000000000010a:
 	vpmovzxdq	%xmm1, %ymm1
 	vpsllq	$32, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

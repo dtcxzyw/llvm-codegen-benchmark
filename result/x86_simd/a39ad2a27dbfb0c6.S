@@ -3,10 +3,10 @@
 	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000019:
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vmovdqa32	%ymm1, %ymm0 {%k1}
+	vpbroadcastd	.LCPI0_0(%rip), %ymm0 {%k1}
 	retq
 
 .LCPI1_0:

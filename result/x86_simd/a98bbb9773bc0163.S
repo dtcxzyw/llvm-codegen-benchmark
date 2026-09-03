@@ -1,28 +1,23 @@
 	.att_syntax
-.LCPI0_0:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000018c6:
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k0
+	vpcmpgtd	%ymm3, %ymm1, %k1
 	korb	%k1, %k0, %k1
-	vpcmpgtd	%ymm0, %ymm3, %k0 {%k1}
+	vpcmpled	%ymm3, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI1_0:
-	.long	1
-.LCPI1_1:
 	.long	8
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000018cc:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %k1
-	vpcmpltd	.LCPI1_0(%rip){1to8}, %ymm1, %k0 {%k1}
-	vpcmpneqd	.LCPI1_1(%rip){1to8}, %ymm0, %k1
+	vpcmpled	%ymm3, %ymm1, %k0 {%k1}
+	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -45,10 +40,10 @@ func0000000000000421:
 	.long	113
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000004ca:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovd2m	%ymm1, %k1
 	vpcmpneqd	.LCPI3_0(%rip){1to8}, %ymm2, %k0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

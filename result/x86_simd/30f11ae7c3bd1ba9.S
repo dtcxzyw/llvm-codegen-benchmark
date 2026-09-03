@@ -21,11 +21,10 @@ func0000000000000001:
 	vmovdqa	%ymm1, %ymm0
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsrld	$31, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0

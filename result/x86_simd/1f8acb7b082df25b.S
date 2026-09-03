@@ -376,8 +376,8 @@ func0000000000000019:
 	.zero	4,16
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000015:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vpandd	.LCPI7_2(%rip){1to4}, %xmm0, %xmm0
 	vpord	.LCPI7_3(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}

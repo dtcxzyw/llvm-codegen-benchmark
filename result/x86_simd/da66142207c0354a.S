@@ -94,8 +94,8 @@ func000000000000028a:
 	.long	2
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c1:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -321,26 +321,10 @@ func0000000000000101:
 	vzeroupper
 	retq
 
-.LCPI14_0:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000141:
-	vpcmpltb	.LCPI14_0(%rip), %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleb	%xmm2, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

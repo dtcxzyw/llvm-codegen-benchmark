@@ -4,8 +4,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
 	vptestnmd	.LCPI0_0(%rip){1to4}, %xmm1, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	kxorw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -41,8 +41,8 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000014c:
 	vptestmd	.LCPI3_0(%rip){1to4}, %xmm1, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	kxorw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

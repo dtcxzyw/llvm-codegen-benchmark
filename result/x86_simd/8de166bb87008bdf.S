@@ -54,9 +54,10 @@ func0000000000000034:
 	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
-	vpsubd	%ymm1, %ymm0, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %ymm0
-	vpcmpgtd	%ymm1, %ymm0, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq

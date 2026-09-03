@@ -45,11 +45,10 @@ func0000000000000019:
 	vpmulld	%ymm0, %ymm1, %ymm0
 	retq
 
-.LCPI6_0:
-	.long	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000029:
-	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
 	vpmulld	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 

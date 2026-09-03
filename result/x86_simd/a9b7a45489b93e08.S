@@ -11,10 +11,10 @@ func00000000000004ca:
 
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovd2m	%ymm1, %k1
 	vpaddd	%ymm1, %ymm2, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpcmpnltd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

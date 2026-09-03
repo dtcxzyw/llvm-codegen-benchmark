@@ -4,8 +4,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000024:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -146,8 +146,8 @@ func0000000000000048:
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000004:
 	vpaddq	.LCPI14_0(%rip){1to4}, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

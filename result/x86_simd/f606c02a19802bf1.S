@@ -57,8 +57,8 @@ func0000000000000038:
 	.quad	32
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000d4:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k0
 	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -69,8 +69,8 @@ func00000000000000d4:
 	.quad	1
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000d8:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k0
 	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0

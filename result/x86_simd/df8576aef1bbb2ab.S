@@ -18,8 +18,8 @@ func000000000000004a:
 	vcvtdq2pd	%ymm0, %zmm0
 	vdivpd	%zmm0, %zmm1, %zmm0
 	vcvttpd2dq	%zmm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

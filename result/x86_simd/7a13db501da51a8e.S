@@ -27,11 +27,10 @@ func0000000000000001:
 func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpsllw	$7, %xmm1, %xmm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%xmm4, %xmm4, %xmm4
-	vpcmpgtb	%xmm4, %xmm2, %k1
-	vpcmpgtb	%xmm1, %xmm3, %k1 {%k1}
-	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
+	vpmovb2m	%xmm1, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtb	%xmm0, %xmm1, %k1 {%k1}
+	vpcmpnltb	%xmm1, %xmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 

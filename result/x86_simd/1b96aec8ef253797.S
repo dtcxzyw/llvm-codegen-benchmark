@@ -48,8 +48,8 @@ func000000000000042c:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000096a:
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

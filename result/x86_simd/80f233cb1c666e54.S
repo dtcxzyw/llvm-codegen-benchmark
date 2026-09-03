@@ -146,7 +146,8 @@ func000000000000004a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpminuq	%ymm0, %ymm1, %ymm0
-	vpcmpgtq	%ymm2, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

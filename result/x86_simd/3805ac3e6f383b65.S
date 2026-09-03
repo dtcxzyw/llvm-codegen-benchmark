@@ -9,13 +9,12 @@ func0000000000000001:
 	retq
 
 .LCPI1_0:
-	.quad	1
-.LCPI1_1:
 	.long	2
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
-	vpcmpltq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
-	vorps	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k1
+	vorps	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq
 

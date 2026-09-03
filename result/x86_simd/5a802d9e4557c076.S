@@ -40,38 +40,35 @@ func0000000000000021:
 func00000000000000c1:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm2, %k1
 	kandnb	%k1, %k0, %k0
-	vpcmpeqd	%ymm1, %ymm0, %k1
+	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI4_0:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c6:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
-	vpbroadcastd	.LCPI4_0(%rip), %ymm1
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm2, %k1
 	kandnb	%k1, %k0, %k0
-	vpcmpgtd	%ymm0, %ymm1, %k1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI5_0:
-	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000cc:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
-	knotb	%k0, %k1
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm2, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm2, %k1
+	kandnb	%k1, %k0, %k0
 	vptestmd	%ymm0, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

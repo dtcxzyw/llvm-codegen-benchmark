@@ -10,24 +10,21 @@ func0000000000000014:
 	retq
 
 .LCPI1_0:
-	.long	1
-.LCPI1_1:
 	.long	0x3f800000
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000006c:
-	vpcmpltd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
-	vcmpgeps	.LCPI1_1(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vcmpgeps	.LCPI1_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000067:
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpneqps	%ymm2, %ymm0, %k1
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vcmpneqps	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

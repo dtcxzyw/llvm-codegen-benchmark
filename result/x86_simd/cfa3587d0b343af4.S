@@ -31,12 +31,11 @@ func0000000000000042:
 	vzeroupper
 	retq
 
-.LCPI3_0:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000028c:
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k0
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

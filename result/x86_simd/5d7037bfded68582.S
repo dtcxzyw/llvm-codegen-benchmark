@@ -379,16 +379,15 @@ func000000000000008c:
 
 .LCPI27_0:
 	.quad	-68
-.LCPI27_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end27, nop
 func000000000000020c:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
 	vpcmpltuq	.LCPI27_0(%rip){1to4}, %ymm2, %k1
-	vpcmpltq	.LCPI27_1(%rip){1to4}, %ymm0, %k2
-	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
+	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

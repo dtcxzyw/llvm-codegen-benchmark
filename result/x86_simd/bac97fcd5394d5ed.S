@@ -168,8 +168,8 @@ func0000000000000094:
 	.long	15
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000146:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpcmpltd	.LCPI16_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -256,11 +256,10 @@ func0000000000000284:
 	vzeroupper
 	retq
 
-.LCPI24_0:
-	.long	1
 	.prefalign	4, .Lfunc_end24, nop
 func00000000000000cc:
-	vpcmpltd	.LCPI24_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -433,8 +432,7 @@ func0000000000000114:
 	.prefalign	4, .Lfunc_end40, nop
 func00000000000000ca:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpgtd	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -611,8 +609,8 @@ func0000000000000294:
 	.long	2
 	.prefalign	4, .Lfunc_end56, nop
 func000000000000028a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpltud	.LCPI56_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -669,8 +667,8 @@ func00000000000000d8:
 	.long	1
 	.prefalign	4, .Lfunc_end61, nop
 func000000000000010a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpnleud	.LCPI61_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -165,8 +165,8 @@ func0000000000000019:
 	.long	2
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000014:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpbroadcastd	.LCPI9_0(%rip), %ymm1
 	vpbroadcastd	.LCPI9_1(%rip), %ymm1 {%k1}
 	vpor	%ymm0, %ymm1, %ymm0

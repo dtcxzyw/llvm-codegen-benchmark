@@ -109,19 +109,11 @@ func0000000000000024:
 	retq
 
 .LCPI8_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-.LCPI8_1:
 	.long	32
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000006:
-	vpcmpltw	.LCPI8_0(%rip), %xmm1, %k1
-	vorps	.LCPI8_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmplew	%xmm2, %xmm1, %k1
+	vorps	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 

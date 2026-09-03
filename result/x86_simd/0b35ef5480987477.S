@@ -182,8 +182,8 @@ func0000000000000084:
 func000000000000008a:
 	vpcmpltuq	.LCPI16_0(%rip){1to4}, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -201,10 +201,10 @@ func0000000000000146:
 
 	.prefalign	4, .Lfunc_end18, nop
 func000000000000002a:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmq	%ymm1, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpcmpnltq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -235,8 +235,7 @@ func000000000000014a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtq	%ymm2, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpcmpnltq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

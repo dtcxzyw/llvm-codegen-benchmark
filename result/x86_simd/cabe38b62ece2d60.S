@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000146:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm0, %ymm1, %k1
-	vpcmpgtd	%ymm3, %ymm2, %k0 {%k1}
+	vpcmpnltd	%ymm3, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -345,8 +345,8 @@ func00000000000000a4:
 
 	.prefalign	4, .Lfunc_end38, nop
 func000000000000008a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpltud	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -374,9 +374,9 @@ func00000000000000d4:
 
 	.prefalign	4, .Lfunc_end41, nop
 func000000000000014c:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpneqd	%ymm1, %ymm0, %k1
-	vpcmpgtd	%ymm3, %ymm2, %k0 {%k1}
+	vpcmpnltd	%ymm3, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -457,9 +457,9 @@ func00000000000002ac:
 
 	.prefalign	4, .Lfunc_end50, nop
 func0000000000000144:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltud	%ymm1, %ymm0, %k1
-	vpcmpgtd	%ymm3, %ymm2, %k0 {%k1}
+	vpcmpnltd	%ymm3, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -542,8 +542,8 @@ func0000000000000284:
 
 	.prefalign	4, .Lfunc_end59, nop
 func00000000000000aa:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpleud	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -680,8 +680,8 @@ func000000000000014b:
 
 	.prefalign	4, .Lfunc_end74, nop
 func000000000000028a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpltud	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -829,8 +829,8 @@ func0000000000000039:
 
 	.prefalign	4, .Lfunc_end90, nop
 func000000000000030a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpnleud	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

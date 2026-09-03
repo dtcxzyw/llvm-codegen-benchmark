@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -339,8 +339,8 @@ func0000000000000281:
 	.prefalign	4, .Lfunc_end18, nop
 func000000000000008a:
 	vpcmpltub	.LCPI18_0(%rip), %xmm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -565,8 +565,8 @@ func0000000000000094:
 	.long	3
 	.prefalign	4, .Lfunc_end29, nop
 func0000000000000144:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpcmpltud	.LCPI29_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

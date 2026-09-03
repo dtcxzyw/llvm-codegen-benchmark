@@ -160,8 +160,8 @@ func00000000000000cc:
 func000000000000000a:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -170,8 +170,8 @@ func000000000000000a:
 func000000000000004a:
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -366,13 +366,12 @@ func00000000000000aa:
 	vzeroupper
 	retq
 
-.LCPI35_0:
-	.long	1
 	.prefalign	4, .Lfunc_end35, nop
 func00000000000000a6:
 	vpslld	$6, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
-	vpcmpltd	.LCPI35_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

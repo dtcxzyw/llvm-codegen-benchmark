@@ -31,8 +31,7 @@ func000000000000000a:
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$7, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm2, %k1
+	vpcmpnltb	%xmm1, %xmm2, %k1
 	vpcmpgtb	%xmm0, %xmm1, %k1 {%k1}
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0

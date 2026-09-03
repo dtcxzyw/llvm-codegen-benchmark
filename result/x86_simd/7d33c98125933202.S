@@ -163,8 +163,8 @@ func0000000000000084:
 	.prefalign	4, .Lfunc_end15, nop
 func000000000000008a:
 	vpcmpltub	.LCPI15_0(%rip), %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
@@ -311,8 +311,8 @@ func0000000000000108:
 
 	.prefalign	4, .Lfunc_end29, nop
 func000000000000014c:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k0
 	vptestmb	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
@@ -353,8 +353,8 @@ func000000000000030c:
 	.prefalign	4, .Lfunc_end33, nop
 func000000000000002a:
 	vptestnmb	%xmm1, %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
@@ -384,8 +384,8 @@ func0000000000000098:
 	.prefalign	4, .Lfunc_end36, nop
 func000000000000018a:
 	vptestmb	%xmm1, %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

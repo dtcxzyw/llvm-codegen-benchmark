@@ -122,8 +122,8 @@ func0000000000000824:
 func0000000000000145:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm1, %k1
 	vpcmpleuq	%ymm0, %ymm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -291,8 +291,8 @@ func000000000000088c:
 func000000000000014c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm1, %k1
 	vpcmpneqq	%ymm0, %ymm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

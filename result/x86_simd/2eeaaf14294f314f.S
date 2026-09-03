@@ -19,21 +19,21 @@ func000000000000000a:
 	vpminsd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI2_0:
 	.long	19
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpminsd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

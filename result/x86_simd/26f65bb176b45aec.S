@@ -45,7 +45,8 @@ func0000000000000034:
 func0000000000000006:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddw	%ymm1, %ymm0, %ymm0
-	vpcmpgtw	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

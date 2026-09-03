@@ -107,8 +107,8 @@ func000000000000000a:
 	vpbroadcastw	.LCPI1_2(%rip), %ymm1
 	vmovdqu16	.LCPI1_1(%rip), %ymm1 {%k1}
 	vpaddw	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtw	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

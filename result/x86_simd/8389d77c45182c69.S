@@ -47,8 +47,8 @@ func0000000000000088:
 func000000000000002a:
 	vpcmpeqd	%ymm1, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

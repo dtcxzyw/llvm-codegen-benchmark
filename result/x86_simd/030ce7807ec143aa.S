@@ -344,12 +344,11 @@ func0000000000000186:
 	.short	32
 	.short	32
 	.short	32
-.LCPI24_1:
-	.long	1
 	.prefalign	4, .Lfunc_end24, nop
 func00000000000000c4:
-	vpcmpltuw	.LCPI24_0(%rip), %xmm0, %k1
-	vpcmpltd	.LCPI24_1(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpcmpltuw	.LCPI24_0(%rip), %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -382,12 +381,11 @@ func0000000000000301:
 	.short	31
 	.short	31
 	.short	31
-.LCPI26_1:
-	.long	1
 	.prefalign	4, .Lfunc_end26, nop
 func00000000000000c8:
-	vpcmpnleuw	.LCPI26_0(%rip), %xmm0, %k1
-	vpcmpltd	.LCPI26_1(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpcmpnleuw	.LCPI26_0(%rip), %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

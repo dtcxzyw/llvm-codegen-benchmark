@@ -1,11 +1,10 @@
 	.att_syntax
-.LCPI0_0:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpminsd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -141,8 +140,8 @@ func0000000000000998:
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000028c:
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k0
 	vpmovd2m	%ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -198,8 +197,8 @@ func0000000000000114:
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000282:
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k0
 	vptestnmd	%ymm0, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

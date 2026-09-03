@@ -73,18 +73,17 @@ func0000000000000302:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000314:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%xmm2, %xmm0, %k1
 	vptestmd	%xmm1, %xmm1, %k0 {%k1}
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 
-.LCPI8_0:
-	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000030c:
-	vpcmpltd	.LCPI8_0(%rip){1to4}, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm0, %k1
 	vptestmd	%xmm1, %xmm1, %k0 {%k1}
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0

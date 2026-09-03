@@ -34,8 +34,8 @@ func0000000000000084:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000008a:
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
 	vpcmpltub	.LCPI2_1(%rip), %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq

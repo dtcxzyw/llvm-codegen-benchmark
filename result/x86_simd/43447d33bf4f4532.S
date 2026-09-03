@@ -33,7 +33,8 @@ func000000000000010a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
-	vpcmpgtq	%ymm2, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

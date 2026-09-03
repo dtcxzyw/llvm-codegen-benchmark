@@ -39,10 +39,10 @@ func00000000000000ec:
 func00000000000000ca:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm1, %k1
-	vpcmpgtd	%ymm1, %ymm2, %k1 {%k1}
-	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpcmpgtd	%ymm1, %ymm2, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
+	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

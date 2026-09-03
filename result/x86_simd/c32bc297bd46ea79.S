@@ -269,14 +269,13 @@ func0000000000000081:
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI10_1:
-	.long	1
 	.prefalign	4, .Lfunc_end10, nop
 func00000000000000c1:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpxor	%xmm4, %xmm4, %xmm4
 	vpcmpeqb	.LCPI10_0(%rip), %xmm1, %k1
-	vpcmpltd	.LCPI10_1(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpled	%ymm4, %ymm2, %k1 {%k1}
 	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

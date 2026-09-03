@@ -7,8 +7,8 @@ func0000000000000054:
 	vpmovw2m	%xmm0, %k0
 	knotb	%k0, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

@@ -27,10 +27,10 @@ func0000000000000050:
 	.quad	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000028:
-	vpbroadcastq	.LCPI2_0(%rip), %ymm2
-	vpcmpgtq	%ymm1, %ymm2, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vmovdqa64	%ymm2, %ymm1 {%k1}
+	vpbroadcastq	.LCPI2_0(%rip), %ymm1 {%k1}
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -80,11 +80,12 @@ func0000000000000053:
 	.quad	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000029:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
-	vpbroadcastq	.LCPI6_0(%rip), %ymm1
-	vmovdqa64	%ymm2, %ymm1 {%k1}
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpbroadcastq	.LCPI6_0(%rip), %ymm2
+	vmovdqa64	%ymm1, %ymm2 {%k1}
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:

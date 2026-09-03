@@ -87,8 +87,8 @@ func0000000000000086:
 	.long	1024
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000141:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI7_0(%rip), %ymm2
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpcmpeqd	%ymm2, %ymm0, %k0

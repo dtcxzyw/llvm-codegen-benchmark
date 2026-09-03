@@ -22,26 +22,10 @@ func0000000000000001:
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 
-.LCPI1_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
-	vpcmpltw	.LCPI1_0(%rip), %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmplew	%ymm2, %ymm1, %k1
 	vpblendmw	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 

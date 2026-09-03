@@ -12,8 +12,8 @@ func00000000000000a0:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3
 	vmovdqa32	%ymm2, %ymm3 {%k1}
-	vpcmpeqd	%xmm4, %xmm4, %xmm4
-	vpcmpgtb	%xmm4, %xmm1, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltb	%xmm4, %xmm1, %k1
 	vpbroadcastd	.LCPI0_2(%rip), %ymm3 {%k1}
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm3, %ymm0

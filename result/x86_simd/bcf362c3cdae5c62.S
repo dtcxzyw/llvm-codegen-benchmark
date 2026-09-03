@@ -125,8 +125,8 @@ func0000000000000029:
 	.long	4092526591
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000014:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI9_0(%rip), %ymm1
 	vpbroadcastd	.LCPI9_1(%rip), %ymm1 {%k1}
 	vpternlogd	$236, .LCPI9_2(%rip){1to8}, %ymm1, %ymm0

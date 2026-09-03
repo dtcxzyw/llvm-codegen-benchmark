@@ -127,8 +127,8 @@ func00000000000000a8:
 	vpcmpeqb	.LCPI2_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2
 	vpbroadcastd	.LCPI2_2(%rip), %ymm2 {%k1}
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm1, %k1
 	vpbroadcastd	.LCPI2_3(%rip), %ymm2 {%k1}
 	vpaddd	%ymm0, %ymm2, %ymm0
 	retq

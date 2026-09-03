@@ -1,12 +1,11 @@
 	.att_syntax
 .LCPI0_0:
-	.long	1
-.LCPI0_1:
 	.long	4
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c6:
-	vpcmpltd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
-	vpbroadcastd	.LCPI0_1(%rip), %xmm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1 {%k1}
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -14,13 +13,12 @@ func00000000000000c6:
 	retq
 
 .LCPI1_0:
-	.long	1
-.LCPI1_1:
 	.long	4
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
-	vpcmpltd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
-	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1 {%k1}
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

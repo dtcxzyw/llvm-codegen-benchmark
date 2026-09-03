@@ -171,8 +171,8 @@ func0000000000000184:
 func000000000000014c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k0 {%k1}
 	vptestmb	%xmm1, %xmm1, %k1
 	kandb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

@@ -31,8 +31,8 @@ func0000000000000029:
 func000000000000002b:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltd	%ymm4, %ymm2, %k1
 	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm0 {%k1}

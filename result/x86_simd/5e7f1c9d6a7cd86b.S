@@ -15,11 +15,10 @@ func0000000000000018:
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000014:
-	vpcmpltd	.LCPI2_0(%rip){1to4}, %xmm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq

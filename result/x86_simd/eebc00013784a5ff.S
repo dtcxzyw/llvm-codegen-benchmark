@@ -39,7 +39,8 @@ func000000000000022a:
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

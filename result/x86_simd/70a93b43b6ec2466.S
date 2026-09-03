@@ -12,8 +12,8 @@ func0000000000000026:
 func000000000000002a:
 	vptestnmd	%xmm2, %xmm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

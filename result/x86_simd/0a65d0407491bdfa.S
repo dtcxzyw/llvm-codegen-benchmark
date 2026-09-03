@@ -33,12 +33,11 @@ func0000000000000318:
 
 .LCPI2_0:
 	.quad	1
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000130c:
 	vptestmq	.LCPI2_0(%rip){1to4}, %ymm1, %k0
-	vpcmpltd	.LCPI2_1(%rip){1to4}, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -192,12 +191,11 @@ func0000000000001b02:
 
 .LCPI11_0:
 	.quad	4294965247
-.LCPI11_1:
-	.long	1
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000030c:
 	vptestmq	.LCPI11_0(%rip){1to4}, %ymm1, %k0
-	vpcmpltd	.LCPI11_1(%rip){1to4}, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

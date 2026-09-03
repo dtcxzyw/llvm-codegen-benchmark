@@ -22,28 +22,26 @@ func0000000000000001:
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpmovzxwd	%xmm2, %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI3_0:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpmovzxwd	%xmm2, %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

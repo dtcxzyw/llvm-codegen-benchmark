@@ -438,8 +438,8 @@ func000000000000008c:
 	.short	1
 	.prefalign	4, .Lfunc_end16, nop
 func000000000000002a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtw	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%ymm2, %ymm0, %k1
 	vpcmpeqw	.LCPI16_0(%rip), %ymm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

@@ -1,11 +1,10 @@
 	.att_syntax
-.LCPI0_0:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -49,13 +48,12 @@ func00000000000000a1:
 	vzeroupper
 	retq
 
-.LCPI5_0:
-	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000086:
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -126,8 +124,8 @@ func00000000000000ac:
 func000000000000002a:
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

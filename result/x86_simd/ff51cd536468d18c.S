@@ -56,8 +56,8 @@ func0000000000000010:
 func0000000000000014:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtb	%xmm0, %xmm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltb	%xmm0, %xmm1, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

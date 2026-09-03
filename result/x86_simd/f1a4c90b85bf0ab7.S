@@ -85,14 +85,13 @@ func0000000000000058:
 	retq
 
 .LCPI6_0:
-	.long	1
-.LCPI6_1:
 	.quad	4294967296
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000182:
 	vpmovqd	%ymm0, %xmm1
-	vpcmpltd	.LCPI6_0(%rip){1to4}, %xmm1, %k0
-	vptestnmq	.LCPI6_1(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k0
+	vptestnmq	.LCPI6_0(%rip){1to4}, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

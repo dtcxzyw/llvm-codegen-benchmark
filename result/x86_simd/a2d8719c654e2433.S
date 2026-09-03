@@ -198,8 +198,8 @@ func0000000000000186:
 	.prefalign	4, .Lfunc_end17, nop
 func00000000000000ca:
 	vpaddd	.LCPI17_0(%rip){1to8}, %ymm2, %ymm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm2, %k1
 	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -86,8 +86,7 @@ func0000000000000014:
 	vpmovd2m	%xmm0, %k0
 	vpslld	$31, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm2, %k1
+	vpcmpnltq	%ymm1, %ymm2, %k1
 	vpcmpgtd	%xmm0, %xmm1, %k1 {%k1}
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0

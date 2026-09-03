@@ -45,19 +45,17 @@ func0000000000000002:
 	retq
 
 .LCPI3_0:
-	.long	1
-.LCPI3_1:
 	.quad	17179869184
-.LCPI3_2:
+.LCPI3_1:
 	.quad	34359738368
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm0, %k1
-	vpcmpltd	.LCPI3_0(%rip){1to4}, %xmm2, %k2
-	vorpd	.LCPI3_1(%rip){1to4}, %ymm1, %ymm1 {%k2}
-	vorpd	.LCPI3_2(%rip){1to4}, %ymm1, %ymm1 {%k1}
+	vpcmpled	%xmm3, %xmm2, %k2
+	vorpd	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1 {%k2}
+	vorpd	.LCPI3_1(%rip){1to4}, %ymm1, %ymm1 {%k1}
 	vmovapd	%ymm1, %ymm0
 	retq
 

@@ -63,12 +63,11 @@ func0000000000000108:
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vpslld	$3, %ymm1, %ymm1
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k0
 	vpmovd2m	%ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -77,12 +76,11 @@ func000000000000018c:
 
 .LCPI3_0:
 	.long	536870911
-.LCPI3_1:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000004c:
 	vptestnmd	.LCPI3_0(%rip){1to8}, %ymm1, %k0
-	vpcmpltd	.LCPI3_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

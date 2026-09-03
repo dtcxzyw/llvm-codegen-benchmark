@@ -51,8 +51,8 @@ func0000000000000026:
 func0000000000000146:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpgtq	%ymm0, %ymm2, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

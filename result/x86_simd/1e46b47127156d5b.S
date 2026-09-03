@@ -187,8 +187,8 @@ func00000000000000cc:
 	.prefalign	4, .Lfunc_end19, nop
 func00000000000000ca:
 	vpmovqd	%ymm2, %xmm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtd	%xmm3, %xmm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpcmpgtd	%xmm1, %xmm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

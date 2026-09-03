@@ -106,8 +106,8 @@ func0000000000000084:
 	.quad	1
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000146:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltq	%ymm3, %ymm2, %k1
 	vpbroadcastq	.LCPI9_0(%rip), %ymm1 {%k1}
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -189,13 +189,12 @@ func0000000000000301:
 	retq
 
 .LCPI16_0:
-	.quad	1
-.LCPI16_1:
 	.quad	9223372036854775807
 	.prefalign	4, .Lfunc_end16, nop
 func00000000000000c1:
-	vpcmpltq	.LCPI16_0(%rip){1to4}, %ymm2, %k1
-	vpbroadcastq	.LCPI16_1(%rip), %ymm1 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleq	%ymm3, %ymm2, %k1
+	vpbroadcastq	.LCPI16_0(%rip), %ymm1 {%k1}
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

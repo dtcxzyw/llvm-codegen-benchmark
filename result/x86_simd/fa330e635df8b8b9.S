@@ -17,8 +17,8 @@ func0000000000000081:
 	.quad	9223372036854775807
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000014b:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2
 	vmovdqa64	%ymm1, %ymm2 {%k1}
 	vpcmpnltq	%ymm2, %ymm0, %k0
@@ -30,8 +30,8 @@ func000000000000014b:
 	.quad	9223372036854775807
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000146:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2
 	vmovdqa64	%ymm1, %ymm2 {%k1}
 	vpcmpgtq	%ymm0, %ymm2, %k0

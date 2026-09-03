@@ -174,9 +174,9 @@ func000000000000008c:
 func000000000000018a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k1 {%k1}
-	vptestmd	%xmm2, %xmm2, %k0 {%k1}
+	vptestmd	%xmm2, %xmm2, %k1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

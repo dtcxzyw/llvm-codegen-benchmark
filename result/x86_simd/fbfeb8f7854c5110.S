@@ -29,20 +29,18 @@ func0000000000000008:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vmovdqu8	.LCPI3_0(%rip), %xmm0 {%k1}
 	retq
 
 .LCPI4_0:
 	.zero	16,1
-.LCPI4_1:
-	.byte	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
-	vpbroadcastb	.LCPI4_1(%rip), %xmm2
-	vpcmpgtb	%xmm1, %xmm2, %k1
-	vmovdqu8	%xmm2, %xmm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleb	%xmm2, %xmm1, %k1
+	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1}
 	retq
 
 .LCPI5_0:

@@ -3,8 +3,8 @@
 func0000000000000014:
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k0
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	korb	%k0, %k1, %k1
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

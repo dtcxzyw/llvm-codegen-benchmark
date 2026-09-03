@@ -24,13 +24,12 @@ func0000000000000301:
 	retq
 
 .LCPI2_0:
-	.long	1
-.LCPI2_1:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000181:
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
-	vmovdqu8	.LCPI2_1(%rip), %xmm1 {%k1} {z}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vmovdqu8	.LCPI2_0(%rip), %xmm1 {%k1} {z}
 	vpcmpeqb	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

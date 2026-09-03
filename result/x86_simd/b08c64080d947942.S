@@ -158,9 +158,9 @@ func0000000000000070:
 	.quad	1
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000004c:
-	vpbroadcastq	.LCPI9_0(%rip), %ymm1
-	vptestnmq	%ymm1, %ymm0, %k0
-	vpcmpgtq	%ymm0, %ymm1, %k1
+	vptestnmq	.LCPI9_0(%rip){1to4}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

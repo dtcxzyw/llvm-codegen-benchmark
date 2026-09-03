@@ -4,8 +4,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	vpaddd	%ymm2, %ymm1, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
 	retq
 

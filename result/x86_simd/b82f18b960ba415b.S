@@ -88,7 +88,8 @@ func0000000000000026:
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI6_0(%rip), %ymm0
 	vpsubq	%ymm2, %ymm0, %ymm1 {%k1}
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

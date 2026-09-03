@@ -6,8 +6,7 @@ func0000000000000028:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm1, %k1
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm2, %k2
+	vpcmpnltd	%xmm3, %xmm2, %k2
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1 {%k2}
 	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
@@ -80,8 +79,8 @@ func0000000000000010:
 func000000000000002b:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm2, %k2
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%xmm1, %xmm2, %k2
 	vpbroadcastq	.LCPI4_0(%rip), %ymm1
 	vpbroadcastq	.LCPI4_1(%rip), %ymm1 {%k2}
 	vpbroadcastq	.LCPI4_2(%rip), %ymm1 {%k1}

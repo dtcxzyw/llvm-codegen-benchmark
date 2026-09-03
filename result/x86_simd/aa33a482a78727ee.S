@@ -167,8 +167,8 @@ func0000000000000941:
 func000000000000014a:
 	vpmovqd	%ymm2, %xmm2
 	vpcmpgtd	%xmm2, %xmm0, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -199,8 +199,8 @@ func00000000000000c7:
 func0000000000000146:
 	vpmovqd	%ymm2, %xmm2
 	vpcmpgtd	%xmm0, %xmm2, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -97,8 +97,8 @@ func000000000000002a:
 	.zero	16,120
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000018a:
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	vptestmb	.LCPI8_0(%rip), %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq

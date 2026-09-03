@@ -239,10 +239,10 @@ func0000000000000098:
 func0000000000000214:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpltub	.LCPI16_0(%rip), %xmm2, %k1
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k2
-	korw	%k2, %k0, %k0
+	vpcmpnltb	%xmm1, %xmm0, %k2
+	korw	%k0, %k2, %k0
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

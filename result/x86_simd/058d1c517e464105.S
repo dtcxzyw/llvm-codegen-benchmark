@@ -384,8 +384,8 @@ func0000000000000186:
 	.quad	75
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000148:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpcmpnleuq	.LCPI19_0(%rip){1to4}, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -459,8 +459,8 @@ func000000000000010c:
 	.quad	6
 	.prefalign	4, .Lfunc_end23, nop
 func0000000000000154:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpcmpltuq	.LCPI23_0(%rip){1to4}, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

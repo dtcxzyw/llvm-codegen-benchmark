@@ -15,8 +15,8 @@ func000000000000002c:
 func00000000000000cc:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k0
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltd	%ymm4, %ymm2, %k0
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	korb	%k1, %k0, %k1
 	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}

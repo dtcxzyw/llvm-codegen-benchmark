@@ -174,12 +174,11 @@ func0000000000000141:
 	.short	2048
 	.short	2048
 	.short	2048
-.LCPI8_1:
-	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func00000000000000c1:
 	vptestnmw	.LCPI8_0(%rip), %xmm1, %k0
-	vpcmpltd	.LCPI8_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

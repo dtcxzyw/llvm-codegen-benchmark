@@ -25,13 +25,12 @@ func0000000000000001:
 	vpsrad	$1, %ymm2, %ymm0 {%k1}
 	retq
 
-.LCPI3_0:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vpsrld	$31, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpsrad	$1, %ymm2, %ymm0 {%k1}
 	retq
 

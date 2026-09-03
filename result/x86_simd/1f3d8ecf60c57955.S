@@ -38,12 +38,13 @@ func000000000000008a:
 	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000a2a:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpbroadcastd	.LCPI2_1(%rip), %ymm2
-	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpbroadcastd	.LCPI2_1(%rip), %ymm3
+	vmovdqa32	%ymm1, %ymm3 {%k1}
+	vpaddd	%ymm0, %ymm3, %ymm0
+	vpcmpnltd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

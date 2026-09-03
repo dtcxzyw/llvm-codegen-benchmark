@@ -43,8 +43,8 @@ func000000000000008c:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000014a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -60,8 +60,8 @@ func000000000000018c:
 
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000002a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpeqd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -85,17 +85,17 @@ func000000000000018b:
 
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000141:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm1, %ymm0, %k1
-	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
+	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000008a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpltud	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -179,20 +179,19 @@ func00000000000000c1:
 	vzeroupper
 	retq
 
-.LCPI20_0:
-	.long	1
 	.prefalign	4, .Lfunc_end20, nop
 func00000000000000c6:
+	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm0, %ymm1, %k1
-	vpcmpltd	.LCPI20_0(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpcmpled	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end21, nop
 func000000000000016a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpnltd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -276,12 +275,11 @@ func0000000000000108:
 	vzeroupper
 	retq
 
-.LCPI30_0:
-	.long	1
 	.prefalign	4, .Lfunc_end30, nop
 func00000000000000e6:
-	vpcmpled	%ymm0, %ymm1, %k1
-	vpcmpltd	.LCPI30_0(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpled	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

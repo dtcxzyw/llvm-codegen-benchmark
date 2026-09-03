@@ -113,8 +113,8 @@ func0000000000000005:
 	.long	16384
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000028:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI8_0(%rip), %ymm1
 	vpbroadcastd	.LCPI8_1(%rip), %ymm1 {%k1}
 	vpternlogd	$254, .LCPI8_2(%rip){1to8}, %ymm1, %ymm0

@@ -72,8 +72,8 @@ func000000000000000f:
 	.zero	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000053:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1}
 	vpmovzxbd	%xmm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

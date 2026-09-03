@@ -403,15 +403,14 @@ func000000000000030c:
 	.zero	1
 	.zero	1
 .LCPI13_1:
-	.long	1
-.LCPI13_2:
 	.byte	3
 	.prefalign	4, .Lfunc_end13, nop
 func00000000000000cc:
-	vpbroadcastb	.LCPI13_2(%rip), %xmm2
+	vpbroadcastb	.LCPI13_1(%rip), %xmm2
 	vpand	%xmm2, %xmm1, %xmm1
 	vpcmpneqb	%xmm2, %xmm1, %k1
-	vpcmpltd	.LCPI13_1(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

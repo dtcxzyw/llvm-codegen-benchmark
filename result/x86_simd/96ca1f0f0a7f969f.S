@@ -17,10 +17,10 @@ func0000000000000001:
 func000000000000000a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpmovqd	%ymm1, %xmm0
-	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpmovqd	%ymm1, %xmm1
+	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
+	vpcmpnltd	%xmm0, %xmm1, %k1
 	kandnw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

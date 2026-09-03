@@ -144,15 +144,14 @@ func0000000000005318:
 
 .LCPI10_0:
 	.long	2
-.LCPI10_1:
-	.long	1
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000630c:
 	vpcmpneqd	.LCPI10_0(%rip){1to8}, %ymm2, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmd	%ymm1, %ymm1, %k1
+	vpcmpled	%ymm2, %ymm0, %k2
+	korb	%k2, %k1, %k1
 	korb	%k0, %k1, %k0
-	vpcmpltd	.LCPI10_1(%rip){1to8}, %ymm0, %k1
-	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -171,16 +170,13 @@ func0000000000000b14:
 
 .LCPI12_0:
 	.long	2
-.LCPI12_1:
-	.long	1
 	.prefalign	4, .Lfunc_end12, nop
 func000000000000318c:
 	vpcmpltd	.LCPI12_0(%rip){1to8}, %ymm2, %k0
-	vpbroadcastd	.LCPI12_1(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
+	vpminsd	%ymm0, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
-	vpcmpgtd	%ymm0, %ymm2, %k1
-	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

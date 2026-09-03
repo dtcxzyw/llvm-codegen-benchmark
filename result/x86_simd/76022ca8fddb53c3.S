@@ -52,9 +52,10 @@ func000000000000000c:
 func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpsubb	%xmm0, %xmm1, %xmm1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsubb	%xmm2, %xmm1, %xmm1
+	vpcmpnltb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 

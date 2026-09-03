@@ -10,10 +10,11 @@ func0000000000000029:
 	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
-	vpbroadcastd	.LCPI1_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k1
-	vmovdqa32	%ymm1, %ymm3 {%k1}
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2
+	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vpaddd	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI2_0:
@@ -125,10 +126,11 @@ func0000000000000010:
 	.long	1
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000019:
-	vpbroadcastd	.LCPI15_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k1
-	vmovdqa32	%ymm1, %ymm3 {%k1}
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpbroadcastd	.LCPI15_0(%rip), %ymm2
+	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vpaddd	%ymm0, %ymm2, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end16, nop

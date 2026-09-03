@@ -35,8 +35,8 @@ func000000000000014c:
 
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ca:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpgtd	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -96,12 +96,11 @@ func0000000000000086:
 	vzeroupper
 	retq
 
-.LCPI11_0:
-	.long	1
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000326:
-	vpcmpnltud	%ymm2, %ymm1, %k1
-	vpcmpltd	.LCPI11_0(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm0, %k1
+	vpcmpnltud	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -184,8 +183,8 @@ func000000000000012c:
 
 	.prefalign	4, .Lfunc_end21, nop
 func000000000000018a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpneqd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -221,8 +220,8 @@ func00000000000000c6:
 
 	.prefalign	4, .Lfunc_end25, nop
 func000000000000030a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpnleud	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -436,8 +435,8 @@ func000000000000030c:
 
 	.prefalign	4, .Lfunc_end48, nop
 func000000000000002b:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpeqd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -463,12 +462,11 @@ func0000000000000121:
 	vzeroupper
 	retq
 
-.LCPI51_0:
-	.long	1
 	.prefalign	4, .Lfunc_end51, nop
 func0000000000000166:
-	vpcmpnltd	%ymm2, %ymm1, %k1
-	vpcmpltd	.LCPI51_0(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm0, %k1
+	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -693,8 +691,8 @@ func000000000000016c:
 
 	.prefalign	4, .Lfunc_end75, nop
 func00000000000000aa:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm0, %k1
 	vpcmpleud	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

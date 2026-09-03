@@ -5,11 +5,12 @@
 func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm1, %k1
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpcmpgtw	%xmm0, %xmm2, %k1 {%k1}
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0
-	vmovdqa32	%ymm3, %ymm0 {%k1}
+	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI1_0:

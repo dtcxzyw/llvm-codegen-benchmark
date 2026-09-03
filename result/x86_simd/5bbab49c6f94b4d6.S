@@ -1,14 +1,13 @@
 	.att_syntax
 .LCPI0_0:
 	.long	6
-.LCPI0_1:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000c6:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpgtd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
-	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm1, %k1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k1
+	vpcmpgtd	.LCPI0_0(%rip){1to8}, %ymm2, %k1 {%k1}
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -16,14 +15,13 @@ func00000000000000c6:
 
 .LCPI1_0:
 	.long	117440511
-.LCPI1_1:
-	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000086:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm2, %k1
-	vpcmpltd	.LCPI1_1(%rip){1to8}, %ymm1, %k1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k1
+	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm2, %k1 {%k1}
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

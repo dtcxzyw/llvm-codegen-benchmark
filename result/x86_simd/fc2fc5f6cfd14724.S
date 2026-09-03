@@ -52,13 +52,12 @@ func00000000000001e4:
 	vzeroupper
 	retq
 
-.LCPI5_0:
-	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000001e6:
 	vpslld	$8, %ymm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -241,8 +240,8 @@ func0000000000000006:
 func000000000000008a:
 	vpslld	$6, %ymm2, %ymm2
 	vpternlogd	$254, %ymm0, %ymm1, %ymm2
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

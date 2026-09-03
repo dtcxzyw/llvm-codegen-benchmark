@@ -30,8 +30,8 @@ func000000000000000c:
 	.byte	15
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	vpbroadcastb	.LCPI2_2(%rip), %xmm0
 	vmovdqu8	.LCPI2_1(%rip), %xmm0 {%k1}
 	retq

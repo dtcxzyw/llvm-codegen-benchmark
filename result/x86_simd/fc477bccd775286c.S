@@ -212,8 +212,8 @@ func00000000000000a8:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpeqd	.LCPI8_0(%rip){1to8}, %ymm2, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtb	%xmm0, %xmm1, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltb	%xmm0, %xmm1, %k2
 	korb	%k2, %k0, %k0
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

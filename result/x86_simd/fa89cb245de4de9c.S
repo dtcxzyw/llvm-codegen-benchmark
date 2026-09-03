@@ -21,15 +21,14 @@ func000000000000000c:
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpslld	$31, %xmm1, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpcmpltq	.LCPI2_0(%rip){1to4}, %ymm2, %k1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleq	%ymm0, %ymm2, %k1 {%k1}
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

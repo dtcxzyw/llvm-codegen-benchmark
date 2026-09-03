@@ -77,13 +77,12 @@ func0000000000000058:
 	vzeroupper
 	retq
 
-.LCPI7_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000020c:
 	vpmovzxdq	%xmm1, %ymm1
 	vpcmpnleuq	%ymm1, %ymm0, %k0
-	vpcmpltq	.LCPI7_0(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

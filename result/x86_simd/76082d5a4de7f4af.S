@@ -20,15 +20,14 @@ func0000000000000a08:
 	.quad	26
 .LCPI1_1:
 	.quad	-97
-.LCPI1_2:
-	.quad	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000a06:
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpmovzxbq	%xmm0, %ymm0
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
-	vpcmpltq	.LCPI1_2(%rip){1to4}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

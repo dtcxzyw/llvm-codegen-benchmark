@@ -27,15 +27,14 @@ func000000000000000a:
 
 .LCPI2_0:
 	.long	16
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vpblendmd	%ymm2, %ymm1, %ymm0 {%k1}
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	vmovdqa32	%ymm2, %ymm0 {%k1}
 	retq
 

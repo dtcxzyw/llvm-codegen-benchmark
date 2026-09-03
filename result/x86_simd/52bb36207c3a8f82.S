@@ -1,34 +1,31 @@
 	.att_syntax
 .LCPI0_0:
 	.long	400
-.LCPI0_1:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000199:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpaddd	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI1_0:
 	.long	4294821199
-.LCPI1_1:
-	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000099:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
-	vpcmpltd	.LCPI1_1(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpaddd	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:
 	.long	4294821199
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000098:
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpaddd	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 

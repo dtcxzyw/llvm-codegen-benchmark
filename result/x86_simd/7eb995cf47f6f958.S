@@ -4,8 +4,6 @@
 .LCPI0_1:
 	.long	6
 .LCPI0_2:
-	.long	1
-.LCPI0_3:
 	.long	5
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000019:
@@ -21,8 +19,9 @@ func0000000000000019:
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm0, %ymm0
-	vpcmpltd	.LCPI0_2(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI0_3(%rip), %ymm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 

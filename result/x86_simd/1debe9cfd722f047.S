@@ -50,8 +50,8 @@ func0000000000000021:
 func000000000000002a:
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpslld	$24, %ymm0, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

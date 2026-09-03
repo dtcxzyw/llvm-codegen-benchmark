@@ -40,8 +40,7 @@ func0000000000000058:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000194:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm0, %k1
+	vpcmpnltq	%ymm2, %ymm0, %k1
 	vpcmpgtq	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0

@@ -49,8 +49,8 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -91,12 +91,11 @@ func0000000000000068:
 	vzeroupper
 	retq
 
-.LCPI10_0:
-	.long	1
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000006:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI10_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -162,8 +162,8 @@ func0000000000000084:
 	.zero	16,10
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000014c:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtw	%ymm2, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%ymm2, %ymm1, %k0
 	vpcmpneqb	.LCPI9_0(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0

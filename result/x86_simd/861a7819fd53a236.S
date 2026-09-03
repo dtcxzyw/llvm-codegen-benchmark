@@ -32,7 +32,8 @@ func000000000000000a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm1, %ymm1
-	vpcmpgtd	%ymm3, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm1, %k1
 	vpcmpgtw	%xmm0, %xmm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

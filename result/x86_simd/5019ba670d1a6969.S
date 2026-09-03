@@ -71,8 +71,9 @@ func000000000000018a:
 	vpmovzxbd	%xmm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm0, %ymm2
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpaddd	%ymm0, %ymm2, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

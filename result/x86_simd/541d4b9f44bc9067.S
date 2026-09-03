@@ -12,13 +12,12 @@ func0000000000000210:
 
 .LCPI1_0:
 	.quad	8
-.LCPI1_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000010c:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm1, %k0
-	vpcmpltq	.LCPI1_1(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -125,13 +124,12 @@ func000000000000030c:
 
 .LCPI10_0:
 	.quad	3
-.LCPI10_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000018c:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpltq	.LCPI10_0(%rip){1to4}, %ymm1, %k0
-	vpcmpltq	.LCPI10_1(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -281,8 +279,8 @@ func0000000000001102:
 	.prefalign	4, .Lfunc_end22, nop
 func0000000000000054:
 	vpcmpeqq	%ymm2, %ymm1, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -326,7 +324,8 @@ func0000000000000b14:
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpneqq	%ymm2, %ymm1, %k0
-	vpcmpgtq	%ymm2, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

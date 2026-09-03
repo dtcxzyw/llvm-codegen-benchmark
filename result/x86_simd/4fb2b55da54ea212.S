@@ -48,13 +48,12 @@ func0000000000000061:
 	retq
 
 .LCPI4_0:
-	.long	1
-.LCPI4_1:
 	.long	2147483647
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000001a1:
-	vpcmpltd	.LCPI4_0(%rip){1to4}, %xmm1, %k1
-	vpbroadcastd	.LCPI4_1(%rip), %xmm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
+	vpbroadcastd	.LCPI4_0(%rip), %xmm1 {%k1}
 	vpmovzxdq	%xmm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

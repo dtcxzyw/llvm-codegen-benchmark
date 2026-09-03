@@ -57,8 +57,8 @@ func0000000000000002:
 	.long	2
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000015:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vandps	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vorps	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vzeroupper

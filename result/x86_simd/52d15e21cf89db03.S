@@ -93,8 +93,8 @@ func0000000000000001:
 func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm1, %k1
 	vpcmpgtw	%xmm0, %xmm2, %k0 {%k1}
 	knotb	%k0, %k1
 	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z}

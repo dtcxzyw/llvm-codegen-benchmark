@@ -22,11 +22,10 @@ func0000000000000014:
 	vzeroupper
 	retq
 
-.LCPI3_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
-	vpcmpltq	.LCPI3_0(%rip){1to4}, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleq	%ymm3, %ymm2, %k1
 	vpblendmd	%xmm0, %xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

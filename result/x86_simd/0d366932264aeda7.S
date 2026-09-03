@@ -7,8 +7,8 @@ func0000000000000014:
 	vpmovw2m	%xmm0, %k1
 	vpsllw	$15, %xmm1, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k2
 	kandnb	%k2, %k0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0

@@ -113,24 +113,25 @@ func0000000000000028:
 	retq
 
 .LCPI7_0:
-	.long	1
-.LCPI7_1:
 	.long	3
+.LCPI7_1:
+	.long	1
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000146:
-	vpbroadcastd	.LCPI7_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
-	vpbroadcastd	.LCPI7_1(%rip), %ymm1 {%k1} {z}
-	vpcmpgtd	%ymm0, %ymm2, %k1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vmovdqa	%ymm2, %ymm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpbroadcastd	.LCPI7_0(%rip), %ymm1 {%k1} {z}
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpbroadcastd	.LCPI7_1(%rip), %ymm0
+	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000014a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpcmpgtd	%ymm2, %ymm0, %ymm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpcmpgtd	%ymm1, %ymm0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0 {%k1}
 	retq
 

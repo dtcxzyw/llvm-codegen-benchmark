@@ -27,8 +27,8 @@ func000000000000000c:
 	.byte	63
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	vpbroadcastb	.LCPI2_1(%rip), %xmm1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0

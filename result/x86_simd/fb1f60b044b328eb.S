@@ -50,14 +50,13 @@ func0000000000000302:
 	retq
 
 .LCPI4_0:
-	.long	1
-.LCPI4_1:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
 	vpminsd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
-	vmovdqu8	.LCPI4_1(%rip), %xmm0 {%k1} {z}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq
 

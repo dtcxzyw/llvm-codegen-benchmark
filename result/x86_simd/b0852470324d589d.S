@@ -53,14 +53,13 @@ func0000000000002021:
 	.long	11
 .LCPI3_1:
 	.long	13
-.LCPI3_2:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000004c1:
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1
 	vpblendmd	.LCPI3_1(%rip){1to8}, %ymm2, %ymm1 {%k1}
-	vpcmpltd	.LCPI3_2(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm0, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	vpcmpeqd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

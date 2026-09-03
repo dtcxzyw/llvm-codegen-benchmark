@@ -100,8 +100,8 @@ func000000000000042a:
 	vpbroadcastb	.LCPI8_1(%rip), %xmm3
 	vpcmpeqb	%xmm3, %xmm1, %k1
 	vpcmpeqb	%xmm3, %xmm2, %k1 {%k1}
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 

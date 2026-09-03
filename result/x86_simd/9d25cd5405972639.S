@@ -2,8 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000650:
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtq	%ymm4, %ymm1, %k1
+	vpcmpnltq	%ymm3, %ymm1, %k1
 	vpcmpgtq	%ymm2, %ymm3, %k0 {%k1}
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0

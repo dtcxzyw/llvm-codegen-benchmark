@@ -20,34 +20,32 @@ func0000000000000082:
 
 .LCPI1_0:
 	.quad	536870911
-.LCPI1_1:
-	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000008c:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1
-	vpand	%ymm1, %ymm2, %ymm2
-	vpcmpeqq	%ymm1, %ymm2, %k1
-	vpcmpltd	.LCPI1_1(%rip){1to4}, %xmm0, %k2
-	korw	%k2, %k0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpbroadcastq	.LCPI1_0(%rip), %ymm3
+	vpand	%ymm3, %ymm2, %ymm2
+	vpcmpeqq	%ymm3, %ymm2, %k1
 	korw	%k1, %k0, %k0
+	vpcmpled	%xmm1, %xmm0, %k1
+	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI2_0:
 	.quad	2147483648
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000060c:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
 	vptestmq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
-	vpcmpltd	.LCPI2_1(%rip){1to4}, %xmm0, %k2
-	korw	%k2, %k0, %k0
-	korw	%k1, %k0, %k0
+	korw	%k0, %k1, %k0
+	vpcmpled	%xmm1, %xmm0, %k1
+	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

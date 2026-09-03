@@ -59,9 +59,9 @@ func0000000000000101:
 	.long	2147483647
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000146:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovd2m	%ymm1, %k1
-	vpcmpgtd	%ymm3, %ymm2, %k1 {%k1}
+	vpcmpnltd	%ymm3, %ymm2, %k1 {%k1}
 	vpbroadcastd	.LCPI5_0(%rip), %ymm0 {%k1}
 	retq
 

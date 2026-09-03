@@ -83,13 +83,12 @@ func000000000000054a:
 
 .LCPI7_0:
 	.long	9
-.LCPI7_1:
-	.long	1
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000004c6:
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpgtd	.LCPI7_0(%rip){1to8}, %ymm1, %k1
-	vpcmpltd	.LCPI7_1(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpgtd	.LCPI7_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

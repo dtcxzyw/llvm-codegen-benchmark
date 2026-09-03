@@ -10,7 +10,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000004ca:
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2
-	vpcmpgtd	%xmm1, %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm1, %k1
 	vpsubd	%xmm1, %xmm2, %xmm0 {%k1}
 	vpcmpgtd	.LCPI0_1(%rip){1to4}, %xmm0, %k1
 	vpbroadcastq	.LCPI0_2(%rip), %ymm0

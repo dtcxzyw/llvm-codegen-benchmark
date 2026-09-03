@@ -123,10 +123,10 @@ func000000000000018a:
 func0000000000000146:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm2, %k1
-	korw	%k1, %k0, %k0
-	vpmovq2m	%ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm2, %k1
+	vpmovq2m	%ymm1, %k2
+	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -191,10 +191,10 @@ func0000000000000026:
 func00000000000000ca:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
 	vpmovq2m	%ymm2, %k1
 	korw	%k1, %k0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k1
+	vpcmpnltq	%ymm0, %ymm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

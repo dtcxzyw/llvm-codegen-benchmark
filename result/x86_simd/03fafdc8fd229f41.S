@@ -39,12 +39,11 @@ func0000000000000108:
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 
-.LCPI4_0:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	vptestnmd	%ymm2, %ymm2, %k0
-	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	knotb	%k0, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
@@ -53,8 +52,8 @@ func0000000000000026:
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000002a:
 	vptestnmd	%ymm2, %ymm2, %k0
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	knotb	%k0, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}

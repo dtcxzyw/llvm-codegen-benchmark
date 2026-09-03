@@ -51,8 +51,8 @@ func0000000000000010:
 	.quad	12
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vpmovzxdq	%xmm0, %ymm0
 	vpbroadcastq	.LCPI5_0(%rip), %ymm0 {%k1}
 	retq
@@ -61,8 +61,8 @@ func0000000000000014:
 	.quad	12
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000015:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vpmovzxdq	%xmm0, %ymm0
 	vpbroadcastq	.LCPI6_0(%rip), %ymm0 {%k1}
 	retq

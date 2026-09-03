@@ -3,8 +3,6 @@
 	.long	4294967293
 .LCPI0_1:
 	.long	4294967294
-.LCPI0_2:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpsllw	$15, %xmm1, %xmm1
@@ -16,7 +14,8 @@ func0000000000000006:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vmovdqa32	%ymm2, %ymm1 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpltd	.LCPI0_2(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -37,8 +36,8 @@ func000000000000002a:
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k2}
 	vpbroadcastd	.LCPI1_2(%rip), %ymm1 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

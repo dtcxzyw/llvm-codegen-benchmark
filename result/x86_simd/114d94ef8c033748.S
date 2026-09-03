@@ -27,14 +27,13 @@ func000000000000000a:
 .LCPI2_0:
 	.long	4294967293
 .LCPI2_1:
-	.long	1
-.LCPI2_2:
 	.long	2147483647
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000a6:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI2_2(%rip), %ymm0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1}
 	retq
 

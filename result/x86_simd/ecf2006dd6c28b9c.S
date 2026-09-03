@@ -5,7 +5,8 @@
 func000000000000014a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0
 	vmovdqa32	%ymm2, %ymm0 {%k1}
 	retq
@@ -191,18 +192,16 @@ func000000000000028a:
 	retq
 
 .LCPI14_0:
-	.long	1
-.LCPI14_1:
 	.long	4
-.LCPI14_2:
+.LCPI14_1:
 	.long	3
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000146:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpcmpltd	.LCPI14_0(%rip){1to8}, %ymm0, %k1 {%k1}
-	vpbroadcastd	.LCPI14_1(%rip), %ymm0
-	vpbroadcastd	.LCPI14_2(%rip), %ymm0 {%k1}
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpgtd	%ymm2, %ymm1, %k1 {%k1}
+	vpbroadcastd	.LCPI14_0(%rip), %ymm0
+	vpbroadcastd	.LCPI14_1(%rip), %ymm0 {%k1}
 	retq
 
 .LCPI15_0:
@@ -213,8 +212,8 @@ func0000000000000146:
 	.long	720912
 	.prefalign	4, .Lfunc_end15, nop
 func000000000000002a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpeqd	.LCPI15_0(%rip){1to8}, %ymm1, %k1 {%k1}
 	vpbroadcastd	.LCPI15_1(%rip), %ymm0
 	vpbroadcastd	.LCPI15_2(%rip), %ymm0 {%k1}

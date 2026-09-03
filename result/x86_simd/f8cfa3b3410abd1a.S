@@ -100,13 +100,12 @@ func000000000000002a:
 
 .LCPI8_0:
 	.zero	16,254
-.LCPI8_1:
-	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000106:
 	vpcmpnleuw	.LCPI8_0(%rip), %xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vpcmpltd	.LCPI8_1(%rip){1to8}, %ymm1, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -169,13 +168,12 @@ func000000000000008a:
 	.short	7
 	.short	7
 	.short	7
-.LCPI12_1:
-	.long	1
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000086:
 	vpcmpltuw	.LCPI12_0(%rip), %xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vpcmpltd	.LCPI12_1(%rip){1to8}, %ymm1, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

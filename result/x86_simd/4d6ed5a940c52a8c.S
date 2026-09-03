@@ -33,9 +33,9 @@ func0000000000000148:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000149:
 	vpsubq	%ymm1, %ymm0, %ymm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltuq	%ymm1, %ymm0, %k1
-	vpcmpgtq	%ymm3, %ymm2, %k0 {%k1}
+	vpcmpnltq	%ymm3, %ymm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

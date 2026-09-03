@@ -43,8 +43,7 @@ func0000000000000081:
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ca:
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm1, %k1
+	vpcmpnltd	%ymm3, %ymm1, %k1
 	vpcmpgtd	%ymm2, %ymm3, %k0 {%k1}
 	knotb	%k0, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
@@ -109,10 +108,10 @@ func0000000000000144:
 	.long	1
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000141:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpbroadcastd	.LCPI10_0(%rip), %ymm4
 	vpcmpeqd	%ymm4, %ymm1, %k1
-	vpcmpgtd	%ymm3, %ymm2, %k1 {%k1}
+	vpcmpnltd	%ymm3, %ymm2, %k1 {%k1}
 	vmovdqa32	%ymm4, %ymm0 {%k1}
 	retq
 

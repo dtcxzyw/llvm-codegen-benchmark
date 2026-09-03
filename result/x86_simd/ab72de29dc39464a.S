@@ -223,10 +223,10 @@ func0000000000000090:
 func0000000000000614:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
 	vptestmd	.LCPI13_0(%rip){1to8}, %ymm2, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k2
-	korb	%k2, %k0, %k0
+	vpcmpnltd	%ymm1, %ymm0, %k2
+	korb	%k0, %k2, %k0
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -234,15 +234,14 @@ func0000000000000614:
 
 .LCPI14_0:
 	.long	768
-.LCPI14_1:
-	.long	1
 	.prefalign	4, .Lfunc_end14, nop
 func000000000000008c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
 	vptestnmd	.LCPI14_0(%rip){1to8}, %ymm2, %k1
-	vpcmpltd	.LCPI14_1(%rip){1to8}, %ymm0, %k2
-	korb	%k2, %k0, %k0
+	vpcmpled	%ymm1, %ymm0, %k2
+	korb	%k0, %k2, %k0
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

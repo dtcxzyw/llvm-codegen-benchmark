@@ -13,8 +13,8 @@
 	.short	2
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpord	.LCPI0_1(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu16	%xmm1, %xmm0 {%k1}
 	vzeroupper
@@ -147,23 +147,22 @@ func0000000000000019:
 	retq
 
 .LCPI6_0:
-	.long	1
-.LCPI6_2:
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
 	.short	32768
 	.short	32768
 .LCPI6_1:
 	.short	32768
 	.short	32768
-	.short	32768
-	.short	32768
-	.short	32768
-	.short	32768
-	.short	32768
-	.short	32768
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
-	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm1, %k1
-	vpord	.LCPI6_2(%rip){1to4}, %xmm0, %xmm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpord	.LCPI6_1(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu16	%xmm0, %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper

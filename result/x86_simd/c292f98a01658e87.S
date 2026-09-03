@@ -13,7 +13,8 @@ func000000000000002a:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
 	retq
 

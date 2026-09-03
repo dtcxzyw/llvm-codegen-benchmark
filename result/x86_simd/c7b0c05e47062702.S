@@ -22,8 +22,8 @@ func000000000000000a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpslld	$2, %ymm1, %ymm1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm1, %k1
 	vpcmpgtw	%xmm0, %xmm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

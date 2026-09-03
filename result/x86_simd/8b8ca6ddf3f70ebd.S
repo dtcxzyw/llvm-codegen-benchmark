@@ -32,8 +32,9 @@ func000000000000000a:
 	vpmovd2m	%xmm0, %k0
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpsrlvq	%ymm1, %ymm0, %ymm1
-	vpsubq	%ymm0, %ymm1, %ymm1
-	vpcmpgtq	%ymm0, %ymm1, %k1
+	vpsubq	%ymm0, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

@@ -27,14 +27,13 @@ func000000000000000a:
 
 .LCPI2_0:
 	.long	190
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000002a6:
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -234,14 +233,13 @@ func000000000000068a:
 
 .LCPI18_0:
 	.long	3
-.LCPI18_1:
-	.long	1
 	.prefalign	4, .Lfunc_end18, nop
 func0000000000000606:
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI18_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI18_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

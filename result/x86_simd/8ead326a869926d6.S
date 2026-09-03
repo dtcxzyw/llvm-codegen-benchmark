@@ -55,9 +55,9 @@ func000000000000000a:
 	vpslld	$31, %xmm2, %xmm1
 	vpmovd2m	%xmm1, %k2
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpblendmq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm2 {%k2}
-	vpaddq	%ymm2, %ymm0, %ymm0 {%k1}
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpbroadcastq	.LCPI2_0(%rip), %ymm1 {%k2}
+	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
+	vpcmpnltq	%ymm3, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

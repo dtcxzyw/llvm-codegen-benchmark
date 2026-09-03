@@ -210,8 +210,8 @@ func0000000000000028:
 	vpmovw2m	%xmm2, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2
 	vpbroadcastd	.LCPI6_1(%rip), %ymm2 {%k1}
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm1, %k1
 	vpbroadcastd	.LCPI6_2(%rip), %ymm2 {%k1}
 	vpaddd	%ymm0, %ymm2, %ymm0
 	retq

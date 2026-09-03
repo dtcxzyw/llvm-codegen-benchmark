@@ -3,8 +3,8 @@
 	.long	512
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%xmm2, %xmm0, %k1
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -245,8 +245,8 @@ func0000000000000101:
 	.long	4194304
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000014c:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%xmm2, %xmm0, %k1
 	vptestmd	.LCPI10_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

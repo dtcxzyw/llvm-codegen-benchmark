@@ -3,8 +3,8 @@
 	.zero	16,95
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000014c:
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	vpcmpneqb	.LCPI0_0(%rip), %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq

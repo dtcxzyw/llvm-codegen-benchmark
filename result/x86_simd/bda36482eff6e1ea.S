@@ -31,11 +31,11 @@ func0000000000001082:
 	.zero	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000001098:
-	vpbroadcastd	.LCPI1_0(%rip), %ymm3
-	vpcmpeqd	%ymm3, %ymm2, %k0
+	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm2, %k0
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
 	korb	%k0, %k1, %k0
-	vpcmpgtd	%ymm0, %ymm3, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -90,15 +90,14 @@ func0000000000001202:
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI3_1:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000160c:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmd	%ymm2, %ymm2, %k0
 	vpcmpneqb	.LCPI3_0(%rip), %xmm1, %k1
-	korb	%k0, %k1, %k0
-	vpcmpltd	.LCPI3_1(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	vpcmpled	%ymm3, %ymm0, %k2
+	korb	%k0, %k2, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -148,8 +147,6 @@ func000000000000c208:
 
 .LCPI7_0:
 	.long	11
-.LCPI7_2:
-	.long	1
 .LCPI7_1:
 	.byte	1
 	.byte	1
@@ -172,7 +169,8 @@ func0000000000008418:
 	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm2, %k0
 	vpcmpnleub	.LCPI7_1(%rip), %xmm1, %k1
 	korb	%k0, %k1, %k0
-	vpcmpltd	.LCPI7_2(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

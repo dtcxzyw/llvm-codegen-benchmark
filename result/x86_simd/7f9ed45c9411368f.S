@@ -47,16 +47,31 @@ func000000000000000a:
 	retq
 
 .LCPI1_0:
-	.long	1
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI1_1:
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
 	.zero	1
 	.zero	1
 	.zero	1
@@ -66,44 +81,43 @@ func000000000000000a:
 	.zero	1
 	.zero	1
 .LCPI1_2:
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI1_3:
 	.byte	43
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
-	vpbroadcastb	.LCPI1_3(%rip), %xmm0
-	vmovdqu8	.LCPI1_2(%rip), %xmm0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vpbroadcastb	.LCPI1_2(%rip), %xmm0
+	vmovdqu8	.LCPI1_1(%rip), %xmm0 {%k1}
 	vzeroupper
 	retq
 
 .LCPI2_0:
-	.long	1
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.byte	43
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI2_1:
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
-	.byte	43
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
+	.byte	45
 	.zero	1
 	.zero	1
 	.zero	1
@@ -113,30 +127,14 @@ func0000000000000026:
 	.zero	1
 	.zero	1
 .LCPI2_2:
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.byte	45
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI2_3:
 	.byte	43
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
-	vpbroadcastb	.LCPI2_3(%rip), %xmm0
-	vmovdqu8	.LCPI2_2(%rip), %xmm0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vpbroadcastb	.LCPI2_2(%rip), %xmm0
+	vmovdqu8	.LCPI2_1(%rip), %xmm0 {%k1}
 	vzeroupper
 	retq
 

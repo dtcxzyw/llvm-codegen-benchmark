@@ -88,17 +88,16 @@ func0000000000001404:
 	.quad	-2038
 .LCPI5_1:
 	.quad	-68
-.LCPI5_2:
-	.quad	1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000020c:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k0
 	vpaddq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm1
 	vpcmpltuq	.LCPI5_1(%rip){1to4}, %ymm1, %k1
-	vpcmpltq	.LCPI5_2(%rip){1to4}, %ymm0, %k2
-	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
+	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

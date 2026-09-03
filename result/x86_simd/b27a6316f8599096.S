@@ -112,11 +112,10 @@ func0000000000000007:
 	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 
-.LCPI13_0:
-	.long	1
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000018:
-	vpcmpltd	.LCPI13_0(%rip){1to4}, %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm2, %k1
 	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 

@@ -1,12 +1,11 @@
 	.att_syntax
 .LCPI0_0:
 	.quad	524288
-.LCPI0_1:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000cc:
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
-	vpcmpltd	.LCPI0_1(%rip){1to4}, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

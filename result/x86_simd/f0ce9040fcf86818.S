@@ -143,8 +143,8 @@ func000000000000014c:
 	vpbroadcastq	.LCPI11_0(%rip), %ymm2
 	vpand	%ymm2, %ymm1, %ymm1
 	vpcmpneqq	%ymm2, %ymm1, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

@@ -47,8 +47,6 @@ func0000000000000008:
 	vzeroupper
 	retq
 
-.LCPI3_0:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
@@ -57,7 +55,8 @@ func000000000000000c:
 	vcvtudq2pd	%ymm1, %zmm1
 	vdivpd	%zmm0, %zmm1, %zmm0
 	vcvttpd2udq	%zmm0, %ymm0
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

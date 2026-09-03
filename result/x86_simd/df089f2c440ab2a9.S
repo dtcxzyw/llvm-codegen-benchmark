@@ -3,8 +3,9 @@
 func000000000000000a:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm2, %k1 {%k1}
+	vpcmpnltq	%ymm3, %ymm2, %k1 {%k1}
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

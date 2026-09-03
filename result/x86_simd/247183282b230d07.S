@@ -96,8 +96,8 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtw	%ymm3, %ymm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltw	%ymm3, %ymm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

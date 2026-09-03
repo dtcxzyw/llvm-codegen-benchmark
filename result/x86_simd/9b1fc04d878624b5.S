@@ -9,16 +9,15 @@
 	.short	1
 	.short	1
 .LCPI0_1:
-	.long	1
-.LCPI0_2:
 	.short	1
 	.short	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
-	vpandd	.LCPI0_2(%rip){1to4}, %xmm1, %xmm1
+	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
 	vpsllvd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

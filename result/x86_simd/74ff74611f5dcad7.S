@@ -78,30 +78,25 @@ func000000000000a082:
 	vzeroupper
 	retq
 
-.LCPI6_0:
-	.long	1
-.LCPI6_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000630c:
-	vpcmpltd	.LCPI6_0(%rip){1to4}, %xmm2, %k0
-	vpbroadcastq	.LCPI6_1(%rip), %ymm2
-	vpcmpgtq	%ymm1, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm2, %k0
+	vpcmpleq	%ymm3, %ymm1, %k1
 	korw	%k0, %k1, %k0
-	vpcmpgtq	%ymm0, %ymm2, %k1
+	vpcmpleq	%ymm3, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI7_0:
-	.long	1
-.LCPI7_1:
 	.quad	4294967296
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000006204:
-	vpcmpltd	.LCPI7_0(%rip){1to4}, %xmm2, %k0
-	vpcmpltuq	.LCPI7_1(%rip){1to4}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm2, %k0
+	vpcmpltuq	.LCPI7_0(%rip){1to4}, %ymm1, %k1
 	korw	%k0, %k1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
 	korw	%k1, %k0, %k0

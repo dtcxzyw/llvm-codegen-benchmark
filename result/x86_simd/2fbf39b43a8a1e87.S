@@ -47,9 +47,9 @@ func000000000000002a:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000146:
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpxor	%xmm2, %xmm2, %xmm2
 	vpmovd2m	%ymm0, %k1
-	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
+	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -58,8 +58,7 @@ func0000000000000146:
 func00000000000000ca:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpgtd	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -69,8 +68,7 @@ func00000000000000ca:
 func000000000000054a:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -106,8 +104,7 @@ func0000000000000541:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0 {%k1}
+	vpcmpnltd	%ymm3, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -154,8 +151,7 @@ func0000000000000548:
 func000000000000014a:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -267,13 +263,12 @@ func000000000000048a:
 	vzeroupper
 	retq
 
-.LCPI23_0:
-	.long	1
 	.prefalign	4, .Lfunc_end23, nop
 func00000000000004c6:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpmaxsd	%ymm0, %ymm1, %ymm0
-	vpcmpltd	.LCPI23_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -375,8 +370,8 @@ func000000000000042c:
 	.prefalign	4, .Lfunc_end32, nop
 func0000000000000544:
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpcmpltud	.LCPI32_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

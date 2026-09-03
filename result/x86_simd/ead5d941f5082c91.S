@@ -3,12 +3,12 @@
 	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a4:
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1}
 	vpaddd	%ymm0, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:

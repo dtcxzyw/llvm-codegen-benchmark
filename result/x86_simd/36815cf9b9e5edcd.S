@@ -17,11 +17,11 @@ func0000000000000021:
 func000000000000002a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtw	%xmm0, %xmm1, %k2
+	vpcmpnltw	%xmm0, %xmm1, %k2
 	korb	%k2, %k0, %k0
-	korb	%k1, %k0, %k0
+	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -51,10 +51,10 @@ func000000000000018c:
 func000000000000018a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
 	vptestmd	%ymm2, %ymm2, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtw	%xmm0, %xmm1, %k2
-	korb	%k2, %k0, %k0
+	korb	%k0, %k1, %k0
+	vpcmpnltw	%xmm0, %xmm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

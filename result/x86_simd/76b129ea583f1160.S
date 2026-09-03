@@ -37,26 +37,25 @@ func000000000000000c:
 func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm1, %k1
 	kxorb	%k1, %k0, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1}
 	retq
 
 .LCPI3_0:
-	.long	1
-.LCPI3_1:
 	.long	4294967294
-.LCPI3_2:
+.LCPI3_1:
 	.long	2
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k1
 	kxorb	%k1, %k0, %k1
-	vpbroadcastd	.LCPI3_1(%rip), %ymm0
-	vpbroadcastd	.LCPI3_2(%rip), %ymm0 {%k1}
+	vpbroadcastd	.LCPI3_0(%rip), %ymm0
+	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1}
 	retq
 

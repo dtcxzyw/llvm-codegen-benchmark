@@ -13,8 +13,8 @@ func0000000000000001:
 	.long	1073741824
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vbroadcastss	.LCPI1_0(%rip), %ymm1
 	vandps	%ymm1, %ymm0, %ymm1 {%k1}
 	vmovaps	%ymm1, %ymm0

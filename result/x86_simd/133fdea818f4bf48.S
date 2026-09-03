@@ -17,17 +17,17 @@ func000000000000008c:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000ca:
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm0, %k1
 	vpcmpgtb	%xmm1, %xmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000146:
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
+	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtb	%xmm0, %xmm1, %k1
-	vpcmpgtb	%xmm3, %xmm2, %k0 {%k1}
+	vpcmpnltb	%xmm3, %xmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 

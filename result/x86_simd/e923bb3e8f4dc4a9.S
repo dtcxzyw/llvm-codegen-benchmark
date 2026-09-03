@@ -61,8 +61,9 @@ func0000000000000006:
 func000000000000000a:
 	vpsllw	$15, %xmm1, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm2, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpcmpgtw	%xmm3, %xmm4, %k1 {%k1}
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0

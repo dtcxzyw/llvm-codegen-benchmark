@@ -84,25 +84,23 @@ func00000000000001d8:
 	vzeroupper
 	retq
 
-.LCPI8_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000018e:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpleq	%ymm2, %ymm0, %k0
-	vpcmpltq	.LCPI8_0(%rip){1to4}, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleq	%ymm0, %ymm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI9_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end9, nop
 func00000000000002cc:
 	vpmovsxdq	%xmm2, %ymm2
 	vpcmpnltq	%ymm2, %ymm1, %k0
-	vpcmpltq	.LCPI9_0(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

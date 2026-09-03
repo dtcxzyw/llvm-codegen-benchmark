@@ -69,14 +69,13 @@ func0000000000000034:
 	vzeroupper
 	retq
 
-.LCPI6_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovzxdq	%xmm2, %ymm1 {%k1}
-	vpcmpltq	.LCPI6_0(%rip){1to4}, %ymm1, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -85,8 +84,8 @@ func0000000000000006:
 func000000000000000a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

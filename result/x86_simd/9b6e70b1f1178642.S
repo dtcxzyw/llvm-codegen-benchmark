@@ -7,7 +7,8 @@ func000000000000000a:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
-	vpcmpgtd	%ymm3, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm2, %k1
 	kandnb	%k1, %k0, %k1
 	vpcmpgtw	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
@@ -50,8 +51,8 @@ func000000000000002a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm2, %k1
 	korb	%k1, %k0, %k1
 	vpcmpgtw	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

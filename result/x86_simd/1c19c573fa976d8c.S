@@ -235,28 +235,12 @@ func00000000000000f4:
 	vzeroupper
 	retq
 
-.LCPI11_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end11, nop
 func00000000000000a6:
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
-	vpcmpltw	.LCPI11_0(%rip), %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmplew	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -18,8 +18,8 @@
 	.zero	1
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1}
 	vzeroupper

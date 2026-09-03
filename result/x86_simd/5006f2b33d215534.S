@@ -20,8 +20,8 @@
 	.short	65534
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtw	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%ymm1, %ymm0, %k1
 	vpbroadcastw	.LCPI0_1(%rip), %ymm1
 	vmovdqu16	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0

@@ -61,13 +61,12 @@ func0000000000000042:
 
 .LCPI2_0:
 	.long	7
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000030c:
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqd	%ymm1, %ymm0, %k0
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

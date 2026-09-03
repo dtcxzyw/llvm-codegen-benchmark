@@ -232,8 +232,8 @@ func0000000000000118:
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000054:
 	vptestnmb	%xmm1, %xmm1, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtw	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

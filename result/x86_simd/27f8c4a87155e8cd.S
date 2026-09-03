@@ -284,8 +284,8 @@ func0000000000000008:
 func000000000000000a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm1, %k2
 	vpbroadcastb	.LCPI4_3(%rip), %xmm0
 	vmovdqu8	.LCPI4_1(%rip), %xmm0 {%k2}
 	vmovdqu8	.LCPI4_2(%rip), %xmm0 {%k1}

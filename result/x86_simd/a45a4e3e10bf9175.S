@@ -134,24 +134,22 @@ func00000000000001c8:
 	vzeroupper
 	retq
 
-.LCPI5_0:
-	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000030c:
 	vpmovqd	%ymm2, %xmm2
-	vpcmpltd	.LCPI5_0(%rip){1to4}, %xmm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm2, %k0
 	vpcmpneqd	%xmm1, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI6_0:
-	.long	1
 	.prefalign	4, .Lfunc_end6, nop
 func00000000000001cc:
 	vpmovqd	%ymm2, %xmm2
-	vpcmpltd	.LCPI6_0(%rip){1to4}, %xmm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm2, %k0
 	vpcmpled	%xmm1, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0

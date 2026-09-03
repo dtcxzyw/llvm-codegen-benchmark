@@ -51,8 +51,8 @@ func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm2, %k0
 	vpcmpgtw	%xmm1, %xmm0, %k2 {%k1}
 	kandnb	%k0, %k1, %k0
 	korb	%k0, %k2, %k0

@@ -177,23 +177,21 @@ func000000000000000c:
 	vmovdqa	%ymm2, %ymm0
 	retq
 
-.LCPI17_0:
-	.long	1
 	.prefalign	4, .Lfunc_end17, nop
 func000000000000006a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpltd	.LCPI17_0(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm0, %k1
 	vpsubd	%ymm2, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI18_0:
-	.long	1
-.LCPI18_1:
 	.long	4294964963
 	.prefalign	4, .Lfunc_end18, nop
 func000000000000000a:
-	vpcmpltd	.LCPI18_0(%rip){1to8}, %ymm0, %k1
-	vpaddd	.LCPI18_1(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpaddd	.LCPI18_0(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI19_0:

@@ -159,14 +159,13 @@ func0000000000000486:
 .LCPI12_0:
 	.long	4294967291
 .LCPI12_1:
-	.long	1
-.LCPI12_2:
 	.long	4294967292
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000086:
 	vpaddd	.LCPI12_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpltd	.LCPI12_1(%rip){1to8}, %ymm0, %k1
-	vpcmpltud	.LCPI12_2(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpltud	.LCPI12_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -315,7 +314,8 @@ func000000000000014a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpor	%ymm1, %ymm0, %ymm0
-	vpcmpgtd	%ymm2, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

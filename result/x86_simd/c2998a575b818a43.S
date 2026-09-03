@@ -57,16 +57,16 @@ func0000000000000514:
 	retq
 
 .LCPI4_0:
-	.long	1
-.LCPI4_1:
 	.long	2
+.LCPI4_1:
+	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000028a:
 	vpsrld	$31, %ymm0, %ymm1
-	vpbroadcastd	.LCPI4_0(%rip), %ymm2
-	vpcmpgtd	%ymm0, %ymm2, %k1
-	vpbroadcastd	.LCPI4_1(%rip), %ymm0
-	vpandnd	%ymm2, %ymm1, %ymm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpbroadcastd	.LCPI4_0(%rip), %ymm0
+	vpandnd	.LCPI4_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI5_0:

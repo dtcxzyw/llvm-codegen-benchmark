@@ -16,8 +16,8 @@ func000000000000000a:
 	vpmovd2m	%xmm0, %k1
 	vpmovsxdq	%xmm2, %ymm0
 	vmovdqa64	%ymm1, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

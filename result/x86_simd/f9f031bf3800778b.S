@@ -273,29 +273,13 @@ func00000000000001f4:
 	vzeroupper
 	retq
 
-.LCPI12_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end12, nop
 func00000000000000a6:
 	vpmovzxbw	%xmm1, %ymm1
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
-	vpcmpltw	.LCPI12_0(%rip), %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmplew	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

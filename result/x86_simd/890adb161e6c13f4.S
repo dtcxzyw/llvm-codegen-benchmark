@@ -46,16 +46,15 @@ func0000000000000018:
 	retq
 
 .LCPI4_0:
-	.long	1
-.LCPI4_1:
 	.quad	17179869184
-.LCPI4_2:
+.LCPI4_1:
 	.quad	34359738368
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
-	vpcmpltd	.LCPI4_0(%rip){1to4}, %xmm1, %k1
-	vorpd	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
-	vorpd	.LCPI4_2(%rip){1to4}, %ymm0, %ymm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
+	vorpd	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vorpd	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

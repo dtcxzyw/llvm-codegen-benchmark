@@ -76,8 +76,8 @@ func0000000000000008:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm0
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1}
 	retq

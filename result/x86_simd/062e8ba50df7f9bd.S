@@ -12,13 +12,11 @@ func0000000000000081:
 
 .LCPI1_0:
 	.zero	16,1
-.LCPI1_1:
-	.byte	1
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000ca:
-	vpbroadcastb	.LCPI1_1(%rip), %xmm3
-	vpcmpgtb	%xmm2, %xmm3, %k1
-	vmovdqu8	%xmm3, %xmm1 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleb	%xmm3, %xmm2, %k1
+	vmovdqu8	.LCPI1_0(%rip), %xmm1 {%k1}
 	vpcmpgtb	%xmm0, %xmm1, %xmm0
 	retq
 

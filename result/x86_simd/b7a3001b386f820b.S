@@ -8,8 +8,9 @@ func00000000000000aa:
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vmovdqa32	%ymm0, %ymm2 {%k1}
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpaddd	%ymm2, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -103,17 +104,16 @@ func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpblendmd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm2 {%k1}
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpbroadcastd	.LCPI6_0(%rip), %ymm0 {%k1}
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI7_0:
 	.long	4294967294
-.LCPI7_1:
-	.long	1
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000026:
 	vpsllw	$15, %xmm0, %xmm0
@@ -122,7 +122,8 @@ func0000000000000026:
 	vpbroadcastd	.LCPI7_0(%rip), %ymm2
 	vmovdqa32	%ymm0, %ymm2 {%k1}
 	vpaddd	%ymm2, %ymm1, %ymm0
-	vpcmpltd	.LCPI7_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

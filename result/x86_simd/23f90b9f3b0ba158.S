@@ -83,9 +83,9 @@ func000000000000008c:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000014a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
-	vpcmpgtd	%ymm2, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -111,11 +111,10 @@ func0000000000000141:
 	vzeroupper
 	retq
 
-.LCPI11_0:
-	.long	1
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000026:
-	vpcmpltd	.LCPI11_0(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -264,8 +263,8 @@ func000000000000014c:
 	.long	1
 	.prefalign	4, .Lfunc_end25, nop
 func0000000000000148:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpcmpnleud	.LCPI25_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -283,12 +282,11 @@ func0000000000000281:
 	vzeroupper
 	retq
 
-.LCPI27_0:
-	.long	1
 	.prefalign	4, .Lfunc_end27, nop
 func00000000000000c6:
 	vpmaxsd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI27_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -297,8 +295,8 @@ func00000000000000c6:
 	.long	255
 	.prefalign	4, .Lfunc_end28, nop
 func000000000000030a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpnleud	.LCPI28_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -307,8 +305,7 @@ func000000000000030a:
 	.prefalign	4, .Lfunc_end29, nop
 func00000000000000ca:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpgtd	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -316,9 +313,9 @@ func00000000000000ca:
 
 	.prefalign	4, .Lfunc_end30, nop
 func0000000000000146:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpxor	%xmm2, %xmm2, %xmm2
 	vpmovd2m	%ymm0, %k1
-	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
+	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -71,13 +71,12 @@ func0000000000000298:
 	vzeroupper
 	retq
 
-.LCPI6_0:
-	.long	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000194:
 	vpsrld	$24, %ymm2, %ymm2
 	vpcmpgtd	%ymm0, %ymm2, %k0
-	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

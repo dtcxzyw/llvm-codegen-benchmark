@@ -81,8 +81,8 @@ func000000000000014c:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestmb	.LCPI2_0(%rip), %xmm2, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k1 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm1, %k1 {%k1}
 	kandb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

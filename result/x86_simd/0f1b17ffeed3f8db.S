@@ -70,8 +70,6 @@ func00000000000001e1:
 	.long	17
 .LCPI4_1:
 	.long	16
-.LCPI4_2:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a6:
 	vpsllw	$15, %xmm2, %xmm2
@@ -80,7 +78,8 @@ func00000000000000a6:
 	vpbroadcastd	.LCPI4_1(%rip), %ymm2 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpltd	.LCPI4_2(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

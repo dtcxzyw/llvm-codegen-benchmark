@@ -119,14 +119,12 @@ func00000000000000ca:
 
 .LCPI8_0:
 	.long	2
-.LCPI8_1:
-	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000146:
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpltd	.LCPI8_1(%rip){1to8}, %ymm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k0
+	vpcmpgtd	%ymm2, %ymm0, %k1
 	kxorb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

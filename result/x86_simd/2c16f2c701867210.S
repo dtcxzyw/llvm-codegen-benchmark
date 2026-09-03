@@ -72,12 +72,11 @@ func0000000000000008:
 	vzeroupper
 	retq
 
-.LCPI8_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000026:
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vpcmpltq	.LCPI8_0(%rip){1to4}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

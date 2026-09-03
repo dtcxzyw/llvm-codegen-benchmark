@@ -130,15 +130,13 @@ func000000000000042c:
 	retq
 
 .LCPI11_0:
-	.long	1
-.LCPI11_1:
 	.quad	32772547957449569
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000001941:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%xmm3, %xmm1, %k1
-	vpcmpltd	.LCPI11_0(%rip){1to4}, %xmm2, %k1 {%k1}
-	vpcmpeqq	.LCPI11_1(%rip){1to4}, %ymm0, %k0 {%k1}
+	vpcmpled	%xmm3, %xmm2, %k1 {%k1}
+	vpcmpeqq	.LCPI11_0(%rip){1to4}, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

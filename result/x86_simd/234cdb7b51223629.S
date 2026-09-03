@@ -63,8 +63,8 @@ func0000000000000084:
 func000000000000008a:
 	vpcmpltuw	.LCPI1_0(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtw	%ymm0, %ymm1, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltw	%ymm0, %ymm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

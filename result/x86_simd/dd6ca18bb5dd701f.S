@@ -1,6 +1,4 @@
 	.att_syntax
-.LCPI0_0:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
 	vpsllw	$15, %xmm0, %xmm0
@@ -9,7 +7,8 @@ func000000000000000c:
 	vcvtdq2pd	%ymm1, %zmm1
 	vdivpd	%zmm0, %zmm1, %zmm0
 	vcvttpd2dq	%zmm0, %ymm0
-	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

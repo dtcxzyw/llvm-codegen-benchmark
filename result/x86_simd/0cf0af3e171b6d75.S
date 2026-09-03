@@ -53,8 +53,8 @@ func00000000000000cc:
 	.long	10
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000d8:
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k1
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpgtd	.LCPI4_1(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

@@ -3,8 +3,7 @@
 func000000000000014a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendd	$170, %ymm3, %ymm2, %ymm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtd	%xmm3, %xmm0, %k1
+	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpcmpgtq	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -69,8 +68,7 @@ func000000000000028a:
 func000000000000002a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendd	$170, %ymm3, %ymm2, %ymm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtd	%xmm3, %xmm0, %k1
+	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpcmpeqq	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

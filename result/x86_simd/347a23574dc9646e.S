@@ -175,31 +175,30 @@ func0000000000000005:
 	retq
 
 .LCPI6_0:
-	.long	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	1
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI6_1:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-.LCPI6_2:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000018:
-	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm1, %k1
-	vpand	.LCPI6_1(%rip), %xmm0, %xmm0
-	vmovdqu8	.LCPI6_2(%rip), %xmm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpand	.LCPI6_0(%rip), %xmm0, %xmm0
+	vmovdqu8	.LCPI6_1(%rip), %xmm0 {%k1}
 	vzeroupper
 	retq
 

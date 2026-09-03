@@ -51,8 +51,8 @@ func0000000000000008:
 func0000000000000014:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm1, %k1
 	korw	%k0, %k1, %k0
 	knotw	%k0, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm0 {%k1} {z}

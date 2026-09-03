@@ -29,8 +29,8 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vpsubd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%xmm1, %xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0 {%k1}
 	retq

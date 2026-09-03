@@ -124,11 +124,12 @@ func0000000000000507:
 	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000321:
-	vpbroadcastd	.LCPI8_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vmovdqa32	%ymm2, %ymm3 {%k1}
-	vpaddd	%ymm1, %ymm3, %ymm1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpbroadcastd	.LCPI8_0(%rip), %ymm2
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vmovdqa32	%ymm3, %ymm2 {%k1}
+	vpaddd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

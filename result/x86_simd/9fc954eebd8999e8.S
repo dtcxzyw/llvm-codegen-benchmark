@@ -110,14 +110,13 @@ func000000000000004c:
 
 .LCPI8_0:
 	.quad	7
-.LCPI8_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000028c:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpgtq	.LCPI8_0(%rip){1to4}, %ymm0, %k0 {%k1}
-	vpcmpltq	.LCPI8_1(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

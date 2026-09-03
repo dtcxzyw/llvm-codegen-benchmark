@@ -187,14 +187,13 @@ func0000000000000c84:
 	vzeroupper
 	retq
 
-.LCPI17_0:
-	.long	1
 	.prefalign	4, .Lfunc_end17, nop
 func00000000000004c6:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpgtq	%ymm2, %ymm0, %k1
-	vpcmpltd	.LCPI17_0(%rip){1to4}, %xmm1, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

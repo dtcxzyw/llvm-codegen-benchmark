@@ -299,10 +299,11 @@ func0000000000000081:
 	.long	1
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpeqb	%xmm2, %xmm0, %k1
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpcmpeqb	%xmm1, %xmm0, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm1 {%k1} {z}
-	vpcmpgtb	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
 	vpbroadcastd	.LCPI6_1(%rip), %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

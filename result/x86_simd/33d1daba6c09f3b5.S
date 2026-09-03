@@ -336,13 +336,12 @@ func0000000000000021:
 
 .LCPI31_0:
 	.long	12
-.LCPI31_1:
-	.long	1
 	.prefalign	4, .Lfunc_end31, nop
 func0000000000000186:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpsubd	.LCPI31_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI31_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

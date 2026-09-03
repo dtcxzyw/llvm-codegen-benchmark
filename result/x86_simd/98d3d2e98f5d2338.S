@@ -1,19 +1,18 @@
 	.att_syntax
 .LCPI0_0:
-	.long	1
-.LCPI0_1:
 	.long	999
-.LCPI0_2:
+.LCPI0_1:
 	.quad	3
-.LCPI0_3:
+.LCPI0_2:
 	.quad	4
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
-	vpcmpltd	.LCPI0_0(%rip){1to4}, %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
-	vpcmpgtd	.LCPI0_1(%rip){1to4}, %xmm1, %k1
-	vpbroadcastq	.LCPI0_2(%rip), %ymm0
-	vpbroadcastq	.LCPI0_3(%rip), %ymm0 {%k1}
+	vpcmpgtd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
+	vpbroadcastq	.LCPI0_1(%rip), %ymm0
+	vpbroadcastq	.LCPI0_2(%rip), %ymm0 {%k1}
 	retq
 
 .LCPI1_0:

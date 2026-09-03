@@ -1,14 +1,13 @@
 	.att_syntax
 .LCPI0_0:
-	.long	1
-.LCPI0_1:
 	.long	274877907
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000c:
-	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpshufd	$245, %ymm1, %ymm0
-	vpbroadcastd	.LCPI0_1(%rip), %ymm2
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpmuludq	%ymm2, %ymm0, %ymm0
 	vpmuludq	%ymm2, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm1

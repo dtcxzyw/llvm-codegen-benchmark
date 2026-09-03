@@ -160,15 +160,14 @@ func0000000000000101:
 	.long	6
 .LCPI11_1:
 	.long	2
-.LCPI11_2:
-	.long	1
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000106:
 	vpandd	.LCPI11_0(%rip){1to8}, %ymm1, %ymm1
 	vpbroadcastd	.LCPI11_1(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI11_2(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

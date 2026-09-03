@@ -42,8 +42,8 @@ func0000000000000504:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000e8a:
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%xmm2, %xmm0, %k1
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

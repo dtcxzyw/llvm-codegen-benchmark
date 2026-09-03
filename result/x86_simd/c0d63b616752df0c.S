@@ -321,28 +321,12 @@ func000000000000000c:
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI9_1:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000006:
 	vpmovdb	%ymm0, %xmm0
 	vpaddb	.LCPI9_0(%rip), %xmm0, %xmm0
-	vpcmpltb	.LCPI9_1(%rip), %xmm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleb	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -422,7 +406,8 @@ func000000000000010a:
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
-	vpcmpgtb	%xmm1, %xmm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

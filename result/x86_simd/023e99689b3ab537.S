@@ -114,10 +114,10 @@ func0000000000000094:
 func000000000000014a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
-	vpcmpgtd	%ymm4, %ymm1, %k0 {%k1}
+	vpor	%ymm1, %ymm2, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
+	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -126,9 +126,9 @@ func000000000000014a:
 func000000000000018a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k1 {%k1}
-	vptestmd	%ymm2, %ymm2, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vptestmd	%ymm2, %ymm2, %k1 {%k1}
+	vpcmpnltd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -139,8 +139,8 @@ func000000000000018a:
 func0000000000000141:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltd	%ymm4, %ymm2, %k1
 	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
 	vpcmpeqd	.LCPI11_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
@@ -239,11 +239,10 @@ func00000000000000cc:
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000146:
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
-	vpcmpltd	.LCPI19_0(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpltd	.LCPI19_0(%rip){1to8}, %ymm1, %k1 {%k1}
+	vpcmpnltd	%ymm0, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -373,11 +372,10 @@ func00000000000000c6:
 	.prefalign	4, .Lfunc_end29, nop
 func00000000000000ca:
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpbroadcastd	.LCPI29_0(%rip), %ymm4
-	vpcmpgtd	%ymm2, %ymm4, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
-	vpcmpgtd	%ymm4, %ymm1, %k0 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpgtd	.LCPI29_0(%rip){1to8}, %ymm1, %k1 {%k1}
+	vpcmpled	%ymm0, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

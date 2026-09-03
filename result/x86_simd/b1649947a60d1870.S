@@ -11,15 +11,14 @@ func00000000000000ca:
 	retq
 
 .LCPI1_0:
-	.long	1
-.LCPI1_1:
 	.long	9999
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000004ca:
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpltd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vpcmpgtd	.LCPI1_1(%rip){1to8}, %ymm1, %k0
+	vpcmpgtd	.LCPI1_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

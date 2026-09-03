@@ -159,27 +159,11 @@ func000000000000004a:
 	vzeroupper
 	retq
 
-.LCPI9_0:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000046:
 	vpmovqb	%ymm0, %xmm0
-	vpcmpltb	.LCPI9_0(%rip), %xmm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleb	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

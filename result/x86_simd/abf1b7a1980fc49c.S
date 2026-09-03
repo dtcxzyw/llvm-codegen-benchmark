@@ -111,13 +111,12 @@ func0000000000000028:
 	retq
 
 .LCPI12_0:
-	.long	1
-.LCPI12_1:
 	.long	128
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000006:
-	vpcmpltd	.LCPI12_0(%rip){1to8}, %ymm1, %k1
-	vorps	.LCPI12_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vorps	.LCPI12_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI13_0:

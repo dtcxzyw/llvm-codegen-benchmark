@@ -29,8 +29,8 @@ func0000000000000201:
 func0000000000000281:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm2, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm2, %k1
 	korw	%k1, %k0, %k1
 	vptestnmb	%xmm0, %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
@@ -80,10 +80,10 @@ func000000000000030c:
 func000000000000004a:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	.LCPI6_0(%rip), %xmm2, %k1
 	korw	%k0, %k1, %k1
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k0 {%k1}
+	vpcmpnltb	%xmm1, %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 
@@ -171,10 +171,10 @@ func0000000000000058:
 func000000000000030a:
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpneqb	.LCPI13_0(%rip), %xmm2, %k1
 	korw	%k0, %k1, %k1
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k0 {%k1}
+	vpcmpnltb	%xmm1, %xmm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 

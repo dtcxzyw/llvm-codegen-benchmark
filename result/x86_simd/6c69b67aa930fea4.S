@@ -98,15 +98,14 @@ func0000000000000018:
 	retq
 
 .LCPI7_0:
-	.long	1
-.LCPI7_1:
 	.long	2
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpcmpltd	.LCPI7_0(%rip){1to8}, %ymm2, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm2, %k2
 	vmovdqa32	%ymm1, %ymm0 {%k2} {z}
-	vpbroadcastd	.LCPI7_1(%rip), %ymm0 {%k1}
+	vpbroadcastd	.LCPI7_0(%rip), %ymm0 {%k1}
 	retq
 

@@ -78,19 +78,19 @@ func0000000000000018:
 	retq
 
 .LCPI5_0:
-	.long	1
-.LCPI5_1:
 	.long	3
+.LCPI5_1:
+	.long	1
 .LCPI5_2:
 	.long	4
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpbroadcastd	.LCPI5_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k2
-	vpbroadcastd	.LCPI5_1(%rip), %ymm0
-	vmovdqa32	%ymm2, %ymm0 {%k2}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k2
+	vpbroadcastd	.LCPI5_0(%rip), %ymm0
+	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k2}
 	vpbroadcastd	.LCPI5_2(%rip), %ymm0 {%k1}
 	retq
 

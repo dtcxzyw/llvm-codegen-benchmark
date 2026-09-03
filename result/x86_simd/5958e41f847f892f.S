@@ -39,11 +39,11 @@ func0000000000000041:
 func000000000000028a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpcmpgtd	%ymm2, %ymm1, %ymm2
-	vpbroadcastd	.LCPI2_0(%rip), %ymm3
-	vpblendmd	.LCPI2_1(%rip){1to8}, %ymm3, %ymm1 {%k1}
-	vpcmpgtd	%ymm0, %ymm3, %k1
-	vpsrld	$31, %ymm2, %ymm1 {%k1}
+	vpcmpgtd	%ymm2, %ymm1, %ymm3
+	vpbroadcastd	.LCPI2_0(%rip), %ymm1
+	vpbroadcastd	.LCPI2_1(%rip), %ymm1 {%k1}
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpsrld	$31, %ymm3, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

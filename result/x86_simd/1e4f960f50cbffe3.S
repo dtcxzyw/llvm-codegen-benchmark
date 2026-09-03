@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000141:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%xmm2, %xmm1, %k1
 	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -135,8 +135,8 @@ func000000000000002a:
 
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000018a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vptestmw	%xmm1, %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -395,8 +395,8 @@ func0000000000000094:
 	.short	19
 	.prefalign	4, .Lfunc_end26, nop
 func000000000000010a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpnleuw	.LCPI26_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -459,8 +459,6 @@ func0000000000000281:
 	retq
 
 .LCPI31_0:
-	.long	1
-.LCPI31_1:
 	.short	31
 	.short	31
 	.short	31
@@ -471,26 +469,19 @@ func0000000000000281:
 	.short	31
 	.prefalign	4, .Lfunc_end31, nop
 func0000000000000106:
-	vpcmpltd	.LCPI31_0(%rip){1to8}, %ymm0, %k1
-	vpcmpnleuw	.LCPI31_1(%rip), %xmm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpnleuw	.LCPI31_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI32_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end32, nop
 func00000000000000ca:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
-	vpcmpltw	.LCPI32_0(%rip), %xmm1, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmplew	%xmm2, %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

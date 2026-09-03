@@ -94,8 +94,8 @@ func000000000000004a:
 	vpmovw2m	%xmm1, %k0
 	vptestnmd	%ymm2, %ymm2, %k1
 	korb	%k1, %k0, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	kandb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

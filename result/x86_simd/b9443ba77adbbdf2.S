@@ -133,8 +133,6 @@ func000000000000018c:
 	retq
 
 .LCPI5_0:
-	.zero	16,1
-.LCPI5_1:
 	.short	128
 	.short	128
 	.short	128
@@ -153,8 +151,9 @@ func000000000000018c:
 	.short	128
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c1:
-	vpcmpltb	.LCPI5_0(%rip), %xmm0, %k1
-	vptestnmw	.LCPI5_1(%rip), %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleb	%xmm2, %xmm0, %k1
+	vptestnmw	.LCPI5_0(%rip), %ymm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

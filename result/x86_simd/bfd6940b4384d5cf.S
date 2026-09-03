@@ -216,11 +216,12 @@ func0000000000000088:
 	.long	1
 	.prefalign	4, .Lfunc_end15, nop
 func00000000000000cc:
-	vpbroadcastd	.LCPI15_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vpcmpneqd	%ymm0, %ymm2, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpbroadcastd	.LCPI15_0(%rip), %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vmovdqa32	%ymm2, %ymm1 {%k1}
+	vpcmpneqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -229,11 +230,12 @@ func00000000000000cc:
 	.long	1
 	.prefalign	4, .Lfunc_end16, nop
 func00000000000000c1:
-	vpbroadcastd	.LCPI16_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vpcmpeqd	%ymm0, %ymm2, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpbroadcastd	.LCPI16_0(%rip), %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vmovdqa32	%ymm2, %ymm1 {%k1}
+	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

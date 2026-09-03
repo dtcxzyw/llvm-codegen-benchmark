@@ -78,8 +78,8 @@ func0000000000000434:
 func000000000000002a:
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
 	vptestnmq	%ymm0, %ymm0, %k0
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%xmm0, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

@@ -32,8 +32,8 @@ func000000000000018c:
 func000000000000018a:
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqd	.LCPI2_1(%rip){1to8}, %ymm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	kxorb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -47,8 +47,8 @@ func000000000000018a:
 func000000000000014c:
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqd	.LCPI3_1(%rip){1to8}, %ymm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	kxorb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -76,8 +76,8 @@ func0000000000000021:
 func000000000000002a:
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI5_1(%rip){1to8}, %ymm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	kxorb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -169,27 +169,11 @@ func000000000000002c:
 
 .LCPI9_0:
 	.long	256
-.LCPI9_1:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end9, nop
 func00000000000000cc:
 	vptestmd	.LCPI9_0(%rip){1to8}, %ymm1, %k0
-	vpcmpltb	.LCPI9_1(%rip), %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleb	%xmm1, %xmm0, %k1
 	kxorb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -197,27 +181,11 @@ func00000000000000cc:
 
 .LCPI10_0:
 	.long	256
-.LCPI10_1:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000026:
 	vptestnmd	.LCPI10_0(%rip){1to8}, %ymm1, %k0
-	vpcmpltb	.LCPI10_1(%rip), %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleb	%xmm1, %xmm0, %k1
 	kxorb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -115,16 +115,15 @@ func0000000000000094:
 	retq
 
 .LCPI9_0:
-	.long	1
-.LCPI9_1:
 	.long	2
+.LCPI9_1:
+	.long	1
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000014a:
-	vpbroadcastd	.LCPI9_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k1
-	vpbroadcastd	.LCPI9_1(%rip), %ymm2
-	vmovdqa32	%ymm3, %ymm2 {%k1}
 	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpbroadcastd	.LCPI9_0(%rip), %ymm2
+	vpbroadcastd	.LCPI9_1(%rip), %ymm2 {%k1}
 	vpcmpgtd	%ymm3, %ymm1, %k1
 	vmovdqa32	%ymm2, %ymm0 {%k1}
 	retq

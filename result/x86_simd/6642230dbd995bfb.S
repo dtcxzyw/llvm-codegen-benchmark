@@ -3,13 +3,12 @@
 	.quad	-257
 .LCPI0_1:
 	.quad	-256
-.LCPI0_2:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI0_1(%rip){1to4}, %ymm1, %k0
-	vpcmpltd	.LCPI0_2(%rip){1to4}, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

@@ -87,13 +87,12 @@ func0000000000000058:
 	.quad	-13
 .LCPI6_1:
 	.quad	-12
-.LCPI6_2:
-	.quad	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000188:
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI6_1(%rip){1to4}, %ymm1, %k0
-	vpcmpltq	.LCPI6_2(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

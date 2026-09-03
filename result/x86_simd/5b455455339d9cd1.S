@@ -190,8 +190,8 @@ func000000000000048c:
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000010a:
 	vpaddw	.LCPI6_0(%rip), %xmm1, %xmm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpltuw	.LCPI6_1(%rip), %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -117,12 +117,11 @@ func0000000000000003:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
-.LCPI12_0:
-	.long	1
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000014:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpltd	.LCPI12_0(%rip){1to4}, %xmm1, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpled	%xmm4, %xmm1, %k1
 	vpsubd	%xmm3, %xmm2, %xmm0 {%k1}
 	vpmovzxdq	%xmm0, %ymm0
 	retq

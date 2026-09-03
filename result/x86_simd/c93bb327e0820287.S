@@ -28,14 +28,13 @@ func0000000000000040:
 	retq
 
 .LCPI2_0:
-	.long	1
-.LCPI2_1:
 	.long	5
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000033:
-	vpcmpltd	.LCPI2_0(%rip){1to4}, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpbroadcastd	.LCPI2_1(%rip), %xmm1 {%k1}
+	vpbroadcastd	.LCPI2_0(%rip), %xmm1 {%k1}
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq

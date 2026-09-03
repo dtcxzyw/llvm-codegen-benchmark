@@ -62,16 +62,15 @@ func0000000000000484:
 .LCPI4_0:
 	.long	4294967287
 .LCPI4_1:
-	.long	1
-.LCPI4_2:
 	.long	4294967288
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c4:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm0
-	vpcmpltd	.LCPI4_1(%rip){1to8}, %ymm1, %k1 {%k1}
-	vpcmpltud	.LCPI4_2(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1 {%k1}
+	vpcmpltud	.LCPI4_1(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

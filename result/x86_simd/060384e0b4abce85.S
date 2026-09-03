@@ -38,17 +38,17 @@ func000000000000002c:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000141:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpeqd	%ymm2, %ymm1, %k1
-	vpcmpgtd	%ymm2, %ymm0, %k1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpcmpeqd	%ymm3, %ymm1, %k1
+	vpcmpnltd	%ymm2, %ymm0, %k1 {%k1}
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ca:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm1, %k1
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpcmpgtd	%ymm0, %ymm2, %k1 {%k1}
 	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
 	retq

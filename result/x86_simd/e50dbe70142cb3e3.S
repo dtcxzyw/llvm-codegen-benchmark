@@ -46,12 +46,11 @@ func000000000000028a:
 
 .LCPI4_0:
 	.long	6
-.LCPI4_1:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000c6:
-	vpcmpgtd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
-	vpcmpltd	.LCPI4_1(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpcmpgtd	.LCPI4_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

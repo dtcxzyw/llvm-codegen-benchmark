@@ -125,8 +125,8 @@ func0000000000000310:
 func0000000000000254:
 	vpmovqd	%ymm2, %xmm2
 	vpcmpnltud	%xmm2, %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

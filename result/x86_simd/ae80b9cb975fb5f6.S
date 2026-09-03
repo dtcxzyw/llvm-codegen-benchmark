@@ -48,8 +48,7 @@ func000000000000002a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k0
+	vpcmpnltq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -67,13 +67,12 @@ func0000000000000461:
 	retq
 
 .LCPI5_0:
-	.long	1
-.LCPI5_1:
 	.long	2147483647
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000361:
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
-	vpbroadcastd	.LCPI5_1(%rip), %ymm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpbroadcastd	.LCPI5_0(%rip), %ymm1 {%k1}
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm0, %k0

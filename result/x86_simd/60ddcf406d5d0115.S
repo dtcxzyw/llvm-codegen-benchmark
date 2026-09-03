@@ -131,12 +131,11 @@ func000000000000030c:
 
 .LCPI10_0:
 	.long	4
-.LCPI10_1:
-	.long	1
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000182:
 	vptestnmd	.LCPI10_0(%rip){1to8}, %ymm1, %k0
-	vpcmpltd	.LCPI10_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -456,13 +455,12 @@ func0000000000000630:
 	.long	4294967288
 .LCPI31_1:
 	.long	9
-.LCPI31_2:
-	.long	1
 	.prefalign	4, .Lfunc_end31, nop
 func000000000000018c:
 	vpandd	.LCPI31_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltd	.LCPI31_1(%rip){1to8}, %ymm1, %k0
-	vpcmpltd	.LCPI31_2(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

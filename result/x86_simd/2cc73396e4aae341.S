@@ -29,13 +29,12 @@ func0000000000000b02:
 	.quad	7
 .LCPI2_1:
 	.quad	11
-.LCPI2_2:
-	.quad	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000528c:
 	vpcmpgtq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
 	vpcmpgtq	.LCPI2_1(%rip){1to4}, %ymm1, %k0 {%k1}
-	vpcmpltq	.LCPI2_2(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

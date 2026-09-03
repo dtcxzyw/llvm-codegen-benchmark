@@ -152,8 +152,8 @@ func0000000000000a82:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
 	vpcmpeqd	%ymm0, %ymm2, %k0
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtb	%xmm0, %xmm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltb	%xmm0, %xmm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -54,8 +54,7 @@ func0000000000000101:
 func0000000000000141:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%xmm4, %xmm4, %xmm4
-	vpcmpgtw	%xmm4, %xmm2, %k1
+	vpcmpnltw	%xmm3, %xmm2, %k1
 	vpcmpgtw	%xmm1, %xmm3, %k1 {%k1}
 	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

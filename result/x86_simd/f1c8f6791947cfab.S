@@ -40,9 +40,9 @@ func0000000000000021:
 func000000000000028a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm2, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtw	%xmm0, %xmm1, %k2
+	vpcmpnltw	%xmm0, %xmm1, %k2
 	korb	%k2, %k0, %k0
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

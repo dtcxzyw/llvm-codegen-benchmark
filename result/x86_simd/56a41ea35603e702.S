@@ -35,9 +35,9 @@ func0000000000000188:
 func000000000000018a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k1 {%k1}
-	vptestmd	.LCPI2_0(%rip){1to8}, %ymm2, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vptestmd	.LCPI2_0(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpnltd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

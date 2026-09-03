@@ -43,9 +43,9 @@ func000000000000000a:
 	vpmovw2m	%xmm1, %k0
 	knotb	%k0, %k1
 	vmovdqa32	%ymm2, %ymm1 {%k1} {z}
+	vpxor	%xmm2, %xmm2, %xmm2
 	vpmulld	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpcmpnltd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

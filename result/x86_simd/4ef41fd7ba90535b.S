@@ -192,26 +192,10 @@ func0000000000000c08:
 	vzeroupper
 	retq
 
-.LCPI9_0:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000644:
-	vpcmpltb	.LCPI9_0(%rip), %xmm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleb	%xmm3, %xmm2, %k0
 	vpmovm2q	%k0, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	%ymm0, %ymm1, %k0

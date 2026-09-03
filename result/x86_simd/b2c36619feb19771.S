@@ -308,8 +308,8 @@ func000000000000002a:
 	.short	3
 	.prefalign	4, .Lfunc_end16, nop
 func000000000000008a:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
 	vpcmpltuw	.LCPI16_0(%rip), %ymm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

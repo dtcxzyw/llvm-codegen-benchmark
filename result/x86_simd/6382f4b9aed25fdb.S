@@ -133,26 +133,10 @@ func0000000000000038:
 	vzeroupper
 	retq
 
-.LCPI5_0:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000144:
-	vpcmpltb	.LCPI5_0(%rip), %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleb	%xmm3, %xmm2, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
 	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0

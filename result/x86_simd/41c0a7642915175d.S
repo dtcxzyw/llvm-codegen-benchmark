@@ -6,8 +6,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000014ca:
 	vpaddd	%ymm2, %ymm1, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
 	vpcmpgtd	.LCPI0_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -21,8 +22,9 @@ func00000000000014ca:
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000014c6:
 	vpaddd	%ymm2, %ymm1, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
 	vpcmpltd	.LCPI1_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

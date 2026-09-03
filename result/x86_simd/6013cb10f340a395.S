@@ -77,8 +77,8 @@ func0000000000000108:
 func0000000000000146:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm1, %k2
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2
 	vpblendmd	.LCPI3_1(%rip){1to8}, %ymm2, %ymm0 {%k2}
 	vpcmpltd	.LCPI3_2(%rip){1to8}, %ymm1, %k2

@@ -5,8 +5,8 @@
 	.zero	4,1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000501:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpord	.LCPI0_1(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vptestnmb	%xmm0, %xmm0, %k0

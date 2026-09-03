@@ -14,12 +14,12 @@ func0000000000000060:
 	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000065:
-	vpbroadcastd	.LCPI1_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vmovdqa32	%ymm2, %ymm3 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2 {%k1}
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm3, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:

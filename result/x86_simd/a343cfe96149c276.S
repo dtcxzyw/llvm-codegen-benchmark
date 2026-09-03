@@ -30,12 +30,11 @@ func0000000000000042:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000298:
 	vpsllw	$7, %xmm0, %xmm0
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm2, %k0
 	vptestmb	%xmm1, %xmm1, %k1
-	vpxor	%xmm1, %xmm1, %xmm1
 	korw	%k0, %k1, %k1
-	vpcmpgtb	%xmm0, %xmm1, %k0 {%k1}
+	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 

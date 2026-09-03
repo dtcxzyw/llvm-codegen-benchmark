@@ -5,8 +5,8 @@
 func00000000000002a4:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm2, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%xmm0, %xmm2, %k2
 	vpbroadcastd	.LCPI0_0(%rip), %xmm0
 	vmovdqa32	%xmm2, %xmm0 {%k2}
 	vpmovzxdq	%xmm0, %ymm0

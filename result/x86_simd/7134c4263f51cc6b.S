@@ -99,8 +99,9 @@ func000000000000030a:
 	.long	4
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000ca:
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2
-	vpcmpgtd	%ymm0, %ymm2, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm1
 	vmovdqa32	%ymm2, %ymm1 {%k1}
 	vpcmpgtd	%ymm2, %ymm0, %k1
@@ -434,8 +435,8 @@ func0000000000000081:
 	.long	6
 	.prefalign	4, .Lfunc_end25, nop
 func0000000000000144:
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k1
 	vpbroadcastd	.LCPI25_0(%rip), %ymm1
 	vpbroadcastd	.LCPI25_1(%rip), %ymm1 {%k1}
 	vpcmpltud	.LCPI25_2(%rip){1to8}, %ymm0, %k1

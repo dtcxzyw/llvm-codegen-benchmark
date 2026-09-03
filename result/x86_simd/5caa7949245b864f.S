@@ -17,16 +17,15 @@ func0000000000000108:
 
 .LCPI1_0:
 	.long	40
-.LCPI1_1:
-	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000186:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
-	vpcmpltd	.LCPI1_1(%rip){1to8}, %ymm1, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k2
 	korb	%k2, %k0, %k0
-	korb	%k1, %k0, %k0
+	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -197,9 +196,10 @@ func0000000000000318:
 func0000000000000141:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k1
 	korb	%k0, %k1, %k0
+	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpcmpeqd	%ymm0, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -278,16 +278,15 @@ func00000000000000d8:
 	vzeroupper
 	retq
 
-.LCPI20_0:
-	.long	1
 	.prefalign	4, .Lfunc_end20, nop
 func00000000000000c1:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpltd	.LCPI20_0(%rip){1to8}, %ymm2, %k1
-	vptestnmd	%ymm1, %ymm1, %k2
-	korb	%k2, %k0, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm2, %k1
 	korb	%k0, %k1, %k0
+	vptestnmd	%ymm1, %ymm1, %k1
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

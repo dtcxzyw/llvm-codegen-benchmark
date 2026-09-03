@@ -106,8 +106,8 @@ func0000000000000102:
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000298:
 	vptestmb	.LCPI7_0(%rip), %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

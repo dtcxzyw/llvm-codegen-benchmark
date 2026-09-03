@@ -61,15 +61,14 @@ func0000000000000118:
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 
-.LCPI5_0:
-	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000018c:
 	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpbroadcastd	.LCPI5_0(%rip), %ymm1
-	vpcmpgtd	%ymm2, %ymm1, %k1 {%k1}
-	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpmaxsd	%ymm0, %ymm2, %ymm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpgtw	%xmm1, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

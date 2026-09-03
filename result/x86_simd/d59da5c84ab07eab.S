@@ -71,15 +71,15 @@ func0000000000000045:
 	retq
 
 .LCPI5_0:
-	.long	1
-.LCPI5_1:
 	.long	2
+.LCPI5_1:
+	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000065:
-	vpbroadcastd	.LCPI5_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k1
-	vpbroadcastd	.LCPI5_1(%rip), %ymm2
-	vmovdqa32	%ymm3, %ymm2 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpbroadcastd	.LCPI5_0(%rip), %ymm2
+	vpbroadcastd	.LCPI5_1(%rip), %ymm2 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm0
 	retq

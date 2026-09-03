@@ -25,8 +25,8 @@
 	.short	2
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000015:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vpord	.LCPI0_3(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu16	%xmm1, %xmm0 {%k1}
@@ -170,36 +170,35 @@ func0000000000000019:
 	retq
 
 .LCPI5_0:
-	.long	1
-.LCPI5_3:
 	.short	32767
 	.short	32767
-.LCPI5_4:
-	.short	32768
-	.short	32768
+	.short	32767
+	.short	32767
+	.short	32767
+	.short	32767
+	.short	32767
+	.short	32767
 .LCPI5_1:
-	.short	32767
-	.short	32767
-	.short	32767
-	.short	32767
-	.short	32767
-	.short	32767
-	.short	32767
-	.short	32767
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
+	.short	32768
 .LCPI5_2:
-	.short	32768
-	.short	32768
-	.short	32768
-	.short	32768
-	.short	32768
-	.short	32768
+	.short	32767
+	.short	32767
+.LCPI5_3:
 	.short	32768
 	.short	32768
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000d:
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
-	vpandd	.LCPI5_3(%rip){1to4}, %xmm0, %xmm1
-	vpord	.LCPI5_4(%rip){1to4}, %xmm1, %xmm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpandd	.LCPI5_2(%rip){1to4}, %xmm0, %xmm1
+	vpord	.LCPI5_3(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu16	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000142:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k0
 	vcmpunordpd	%ymm0, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -11,10 +11,9 @@ func0000000000000142:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000014e:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpneqpd	%ymm1, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k0
+	vcmpneqpd	%ymm2, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -100,13 +99,11 @@ func0000000000000148:
 	vzeroupper
 	retq
 
-.LCPI9_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end9, nop
 func00000000000000d6:
-	vpcmpltq	.LCPI9_0(%rip){1to4}, %ymm1, %k0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vcmpnltpd	%ymm0, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k0
+	vcmpnltpd	%ymm0, %ymm2, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

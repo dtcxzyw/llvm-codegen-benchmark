@@ -555,28 +555,12 @@ func00000000000003f4:
 	.byte	46
 	.byte	15
 	.byte	47
-.LCPI11_1:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end11, nop
 func00000000000000a6:
 	vmovdqa	.LCPI11_0(%rip), %ymm2
 	vpermi2b	%ymm1, %ymm0, %ymm2
-	vpcmpltw	.LCPI11_1(%rip), %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmplew	%ymm0, %ymm2, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

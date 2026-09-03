@@ -7,12 +7,11 @@ func0000000000000099:
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 
-.LCPI1_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000018:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpltq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleq	%ymm3, %ymm0, %k1
 	vpaddq	%ymm2, %ymm1, %ymm2 {%k1}
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

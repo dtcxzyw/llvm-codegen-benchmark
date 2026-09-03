@@ -41,8 +41,8 @@ func0000000000000001:
 	.short	32768
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vmovdqu16	.LCPI1_0(%rip), %ymm0 {%k1}
 	retq

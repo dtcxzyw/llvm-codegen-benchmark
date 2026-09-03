@@ -56,8 +56,8 @@ func0000000000000081:
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c1:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k0
 	vptestnmb	%xmm0, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0

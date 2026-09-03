@@ -98,15 +98,14 @@ func0000000000000184:
 	retq
 
 .LCPI6_0:
-	.long	1
-.LCPI6_1:
 	.long	3
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000026:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpcmpltd	.LCPI6_0(%rip){1to8}, %ymm0, %k1 {%k1}
-	vptestnmd	.LCPI6_1(%rip){1to8}, %ymm2, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vptestnmd	.LCPI6_0(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpled	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

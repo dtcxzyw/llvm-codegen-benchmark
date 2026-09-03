@@ -491,13 +491,12 @@ func000000000000018c:
 	retq
 
 .LCPI36_0:
-	.long	1
-.LCPI36_1:
 	.quad	4294967294
 	.prefalign	4, .Lfunc_end36, nop
 func0000000000000106:
-	vpcmpltd	.LCPI36_0(%rip){1to4}, %xmm0, %k1
-	vptestmq	.LCPI36_1(%rip){1to4}, %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm0, %k1
+	vptestmq	.LCPI36_0(%rip){1to4}, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

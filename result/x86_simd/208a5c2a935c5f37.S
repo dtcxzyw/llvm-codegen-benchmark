@@ -53,8 +53,6 @@ func000000000000002a:
 	vzeroupper
 	retq
 
-.LCPI4_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	vpslld	$31, %xmm0, %xmm0
@@ -62,7 +60,7 @@ func0000000000000026:
 	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm1 {%k1}
-	vpcmpltq	.LCPI4_0(%rip){1to4}, %ymm1, %k0
+	vpcmpleq	%ymm3, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

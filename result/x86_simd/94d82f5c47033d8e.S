@@ -9,13 +9,12 @@ func0000000000000006:
 	retq
 
 .LCPI1_0:
-	.long	1
-.LCPI1_1:
 	.quad	2
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	vpcmpltd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
-	vpaddq	.LCPI1_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm1, %k1
+	vpaddq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:
@@ -81,13 +80,12 @@ func0000000000000014:
 	retq
 
 .LCPI9_0:
-	.long	1
-.LCPI9_1:
 	.quad	120
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000006a:
-	vpcmpltd	.LCPI9_0(%rip){1to4}, %xmm1, %k1
-	vpaddq	.LCPI9_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm1, %k1
+	vpaddq	.LCPI9_0(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	retq
 
 .LCPI10_0:

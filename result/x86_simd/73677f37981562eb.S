@@ -414,26 +414,10 @@ func00000000000000a2:
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
-.LCPI18_0:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end18, nop
 func0000000000000032:
-	vpcmpltb	.LCPI18_0(%rip), %xmm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleb	%xmm2, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq

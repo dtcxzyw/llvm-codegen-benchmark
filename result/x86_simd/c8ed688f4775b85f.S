@@ -39,13 +39,12 @@ func0000000000000008:
 
 .LCPI3_0:
 	.long	4294967292
-.LCPI3_1:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vpminud	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI3_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

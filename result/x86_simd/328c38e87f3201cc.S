@@ -23,8 +23,8 @@ func000000000000018f:
 	.long	4
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000af:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1}
 	vpaddd	%xmm1, %xmm0, %xmm0

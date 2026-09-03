@@ -51,13 +51,12 @@ func0000000000000854:
 	vzeroupper
 	retq
 
-.LCPI4_0:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000098c:
 	vpmulld	%ymm0, %ymm1, %ymm1
 	vpmovd2m	%ymm1, %k0
-	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -188,12 +188,11 @@ func0000000000000314:
 
 .LCPI8_0:
 	.quad	2147483647
-.LCPI8_1:
-	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000004c:
 	vptestnmq	.LCPI8_0(%rip){1to4}, %ymm1, %k0
-	vpcmpltd	.LCPI8_1(%rip){1to4}, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

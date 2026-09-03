@@ -22,12 +22,10 @@ func0000000000000001:
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
 	retq
 
-.LCPI3_0:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vpcmpled	%ymm2, %ymm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
 	retq
 

@@ -9,12 +9,11 @@ func000000000000302c:
 	vzeroupper
 	retq
 
-.LCPI1_0:
-	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000004c1:
 	vptestnmq	%ymm2, %ymm2, %k0
-	vpcmpltd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
 	vptestnmq	%ymm0, %ymm0, %k2
 	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0

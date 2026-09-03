@@ -150,9 +150,9 @@ func0000000000000184:
 
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000014c:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestmb	%xmm0, %xmm0, %k1
-	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
+	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -580,8 +580,8 @@ func0000000000000288:
 	.long	65537
 	.prefalign	4, .Lfunc_end27, nop
 func0000000000000146:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpcmpltd	.LCPI27_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

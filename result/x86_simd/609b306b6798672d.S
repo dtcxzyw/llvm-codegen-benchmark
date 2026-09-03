@@ -49,9 +49,9 @@ func000000000000018c:
 func000000000000002a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtb	%xmm0, %xmm1, %k1 {%k1}
-	vpcmpeqb	.LCPI4_0(%rip), %xmm2, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpeqb	.LCPI4_0(%rip), %xmm2, %k1 {%k1}
+	vpcmpnltb	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
 

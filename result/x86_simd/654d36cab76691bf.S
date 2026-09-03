@@ -95,8 +95,8 @@ func000000000000002c:
 func0000000000000141:
 	vpandd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI6_1(%rip){1to8}, %ymm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtw	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%xmm1, %xmm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

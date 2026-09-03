@@ -3,10 +3,10 @@
 	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000182c:
-	vpbroadcastd	.LCPI0_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
 	vptestnmd	%ymm1, %ymm1, %k1 {%k1}
-	vpcmpneqd	%ymm3, %ymm0, %k0 {%k1}
+	vpcmpneqd	.LCPI0_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -47,11 +47,10 @@ func000000000000308c:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000294a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpcmpgtd	%ymm4, %ymm1, %k1
-	vpcmpgtd	%ymm3, %ymm2, %k1 {%k1}
-	vpcmpgtd	%ymm4, %ymm0, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpminsd	%ymm0, %ymm1, %ymm0
+	vpcmpgtd	%ymm3, %ymm0, %k1
+	vpcmpnltd	%ymm3, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

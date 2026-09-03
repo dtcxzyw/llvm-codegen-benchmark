@@ -78,10 +78,10 @@ func000000000000002c:
 	.long	1
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000018a:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmd	.LCPI6_0(%rip){1to8}, %ymm2, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpcmpnltd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

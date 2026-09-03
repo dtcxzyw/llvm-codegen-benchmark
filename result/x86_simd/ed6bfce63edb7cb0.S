@@ -127,13 +127,12 @@ func0000000000000301:
 	retq
 
 .LCPI10_0:
-	.long	1
-.LCPI10_1:
 	.quad	1
 	.prefalign	4, .Lfunc_end10, nop
 func00000000000000cc:
-	vpcmpltd	.LCPI10_0(%rip){1to4}, %xmm0, %k1
-	vptestmq	.LCPI10_1(%rip){1to4}, %ymm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm0, %k1
+	vptestmq	.LCPI10_0(%rip){1to4}, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

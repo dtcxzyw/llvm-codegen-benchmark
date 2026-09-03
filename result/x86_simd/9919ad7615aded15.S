@@ -157,14 +157,13 @@ func00000000000001aa:
 	.long	7
 .LCPI8_1:
 	.long	4294967293
-.LCPI8_2:
-	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func00000000000000a6:
 	vpandd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI8_1(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI8_2(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

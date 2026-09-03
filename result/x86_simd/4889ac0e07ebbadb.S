@@ -137,12 +137,11 @@ func000000000000018c:
 	vpbroadcastd	.LCPI11_0(%rip), %ymm0 {%k1}
 	retq
 
-.LCPI12_0:
-	.long	1
 	.prefalign	4, .Lfunc_end12, nop
 func00000000000000c6:
-	vpmovd2m	%ymm1, %k1
-	vpcmpltd	.LCPI12_0(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpgtd	%ymm1, %ymm2, %k0 {%k1}
 	knotb	%k0, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq

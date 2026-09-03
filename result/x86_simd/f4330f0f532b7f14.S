@@ -46,13 +46,12 @@ func000000000000000c:
 	retq
 
 .LCPI5_0:
-	.long	1
-.LCPI5_1:
 	.quad	17179869184
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
-	vpcmpltd	.LCPI5_0(%rip){1to4}, %xmm1, %k1
-	vorpd	.LCPI5_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
+	vorpd	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI6_0:

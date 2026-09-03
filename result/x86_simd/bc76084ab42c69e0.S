@@ -16,8 +16,9 @@ func0000000000000001:
 func000000000000000a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1 {%k1}
+	vpcmpnltd	%ymm0, %ymm1, %k1 {%k1}
 	vpbroadcastd	.LCPI1_0(%rip), %ymm0
 	vmovdqa32	%ymm2, %ymm0 {%k1}
 	retq

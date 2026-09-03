@@ -67,15 +67,13 @@ func000000000000002c:
 	vzeroupper
 	retq
 
-.LCPI5_0:
-	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpsubd	%ymm2, %ymm0, %ymm1 {%k1}
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm1, %k0
+	vpcmpled	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

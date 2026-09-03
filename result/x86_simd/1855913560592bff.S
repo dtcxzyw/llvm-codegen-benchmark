@@ -47,10 +47,9 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
 	vpsllw	$7, %xmm1, %xmm1
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm1, %xmm2, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm2, %k1
+	vpcmpgtb	%xmm1, %xmm3, %k0 {%k1}
 	knotw	%k0, %k1
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
 	retq

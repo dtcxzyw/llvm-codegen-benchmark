@@ -25,12 +25,11 @@ func0000000000000024:
 
 .LCPI2_0:
 	.long	8192
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

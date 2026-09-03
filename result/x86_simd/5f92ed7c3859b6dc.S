@@ -230,13 +230,12 @@ func0000000000000090:
 	retq
 
 .LCPI20_0:
-	.long	1
-.LCPI20_1:
 	.long	0x3f800000
 	.prefalign	4, .Lfunc_end20, nop
 func00000000000000d6:
-	vpcmpltd	.LCPI20_0(%rip){1to8}, %ymm1, %k0
-	vcmpngtps	.LCPI20_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k0
+	vcmpngtps	.LCPI20_0(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

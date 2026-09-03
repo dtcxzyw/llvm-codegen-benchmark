@@ -35,11 +35,10 @@ func0000000000000008:
 	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1}
 	retq
 
-.LCPI4_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000a:
-	vpcmpltq	.LCPI4_0(%rip){1to4}, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq
 

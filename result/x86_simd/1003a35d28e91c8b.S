@@ -215,13 +215,13 @@ func000000000000028c:
 	vzeroupper
 	retq
 
-.LCPI15_0:
-	.long	1
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000182:
 	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpcmpltd	.LCPI15_0(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm0, %k1
+	vpcmpgtw	%xmm1, %xmm2, %k0 {%k1}
 	vptestnmd	%ymm0, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

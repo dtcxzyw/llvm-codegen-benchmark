@@ -161,8 +161,8 @@ func0000000000006041:
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000006281:
 	vpcmpneqd	.LCPI11_0(%rip){1to8}, %ymm2, %k0
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	korb	%k0, %k1, %k1
 	vptestnmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
@@ -229,15 +229,14 @@ func000000000000084c:
 	retq
 
 .LCPI16_0:
-	.long	1
-.LCPI16_1:
 	.long	2147483649
 	.prefalign	4, .Lfunc_end16, nop
 func000000000000098c:
 	vptestnmd	%ymm2, %ymm2, %k0
-	vpcmpltd	.LCPI16_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
 	korb	%k0, %k1, %k1
-	vpcmpneqd	.LCPI16_1(%rip){1to8}, %ymm0, %k0 {%k1}
+	vpcmpneqd	.LCPI16_0(%rip){1to8}, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

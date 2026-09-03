@@ -43,8 +43,9 @@ func0000000000000004:
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleb	%xmm0, %xmm1, %k1
 	vpbroadcastb	.LCPI2_1(%rip), %xmm0
-	vpcmpgtb	%xmm1, %xmm0, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	knotw	%k0, %k1

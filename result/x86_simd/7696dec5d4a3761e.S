@@ -93,15 +93,14 @@ func0000000000000006:
 	.long	2
 .LCPI5_1:
 	.long	1
-.LCPI5_2:
-	.quad	1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %xmm1
 	vpbroadcastd	.LCPI5_1(%rip), %xmm1 {%k1}
-	vpcmpltq	.LCPI5_2(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm0, %k1
 	vmovdqa32	%xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

@@ -1,13 +1,12 @@
 	.att_syntax
-.LCPI0_0:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -233,28 +232,26 @@ func0000000000000286:
 
 .LCPI17_0:
 	.long	4294967284
-.LCPI17_1:
-	.long	1
 	.prefalign	4, .Lfunc_end17, nop
 func0000000000000206:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI17_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI17_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
 .LCPI18_0:
 	.long	16
-.LCPI18_1:
-	.long	1
 	.prefalign	4, .Lfunc_end18, nop
 func0000000000000786:
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI18_0(%rip){1to8}, %ymm0, %ymm0
-	vpcmpltd	.LCPI18_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

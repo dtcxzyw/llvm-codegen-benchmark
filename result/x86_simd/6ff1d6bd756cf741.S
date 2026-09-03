@@ -14,8 +14,8 @@ func0000000000000081:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
 	vcmpgtpd	.LCPI1_0(%rip){1to8}, %zmm1, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -346,27 +346,11 @@ func0000000000000006:
 	.byte	12
 	.byte	15
 	.byte	14
-.LCPI6_1:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000026:
 	vpshufb	.LCPI6_0(%rip), %ymm0, %ymm0
-	vpcmpltw	.LCPI6_1(%rip), %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmplew	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

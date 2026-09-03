@@ -116,8 +116,8 @@ func0000000000000034:
 	.short	1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000018a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vptestmw	.LCPI5_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

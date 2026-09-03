@@ -38,8 +38,8 @@ func0000000000000042:
 func0000000000000054:
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm0, %xmm1
 	vpcmpeqb	.LCPI2_1(%rip), %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

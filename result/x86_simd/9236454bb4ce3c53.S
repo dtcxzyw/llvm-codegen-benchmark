@@ -23,8 +23,8 @@ func0000000000000021:
 func000000000000002a:
 	vptestmb	%xmm1, %xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k1} {z}
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0
 	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq

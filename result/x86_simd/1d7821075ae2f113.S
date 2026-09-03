@@ -99,8 +99,8 @@ func0000000000000006:
 func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtw	%ymm3, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltw	%ymm3, %ymm1, %k1
 	vpcmpgtb	%xmm0, %xmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

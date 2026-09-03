@@ -99,8 +99,8 @@ func0000000000000019:
 	.quad	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000029:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%xmm2, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpbroadcastq	.LCPI8_0(%rip), %ymm1 {%k1}
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -153,16 +153,15 @@ func000000000000002b:
 	retq
 
 .LCPI13_0:
-	.long	1
-.LCPI13_1:
 	.quad	6
-.LCPI13_2:
+.LCPI13_1:
 	.quad	11
 	.prefalign	4, .Lfunc_end13, nop
 func000000000000001b:
-	vpcmpltd	.LCPI13_0(%rip){1to4}, %xmm1, %k1
-	vpbroadcastq	.LCPI13_1(%rip), %ymm1
-	vpbroadcastq	.LCPI13_2(%rip), %ymm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
+	vpbroadcastq	.LCPI13_0(%rip), %ymm1
+	vpbroadcastq	.LCPI13_1(%rip), %ymm1 {%k1}
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 

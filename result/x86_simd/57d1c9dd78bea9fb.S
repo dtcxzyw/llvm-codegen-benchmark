@@ -1,12 +1,11 @@
 	.att_syntax
 .LCPI0_0:
-	.long	1
-.LCPI0_1:
 	.long	48
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
-	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
-	vpaddd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
+	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm0 {%k1}
 	retq
 
 .LCPI1_0:
@@ -71,13 +70,12 @@ func0000000000000038:
 	retq
 
 .LCPI8_0:
-	.long	1
-.LCPI8_1:
 	.long	48
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
-	vpcmpltd	.LCPI8_0(%rip){1to8}, %ymm1, %k1
-	vpaddd	.LCPI8_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
+	vpaddd	.LCPI8_0(%rip){1to8}, %ymm2, %ymm0 {%k1}
 	retq
 
 .LCPI9_0:
@@ -201,12 +199,11 @@ func000000000000006c:
 	vpsubd	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
 
-.LCPI23_0:
-	.long	1
 	.prefalign	4, .Lfunc_end23, nop
 func000000000000006a:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpltd	.LCPI23_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpled	%ymm4, %ymm1, %k1
 	vpsubd	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
 

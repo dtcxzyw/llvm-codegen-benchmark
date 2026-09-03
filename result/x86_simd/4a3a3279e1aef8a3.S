@@ -79,8 +79,8 @@ func000000000000018c:
 func000000000000014c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltd	%ymm4, %ymm2, %k1
 	vpcmpgtw	%xmm1, %xmm3, %k0 {%k1}
 	vptestmd	%ymm0, %ymm0, %k1
 	korb	%k1, %k0, %k0

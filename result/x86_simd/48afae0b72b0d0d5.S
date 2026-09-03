@@ -66,14 +66,13 @@ func0000000000000206:
 
 .LCPI5_0:
 	.quad	1000000
-.LCPI5_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000006:
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
-	vpcmpltq	.LCPI5_1(%rip){1to4}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

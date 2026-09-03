@@ -89,10 +89,10 @@ func000000000000018c:
 func000000000000002a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm0, %k1 {%k1}
-	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
+	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpnltw	%xmm1, %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

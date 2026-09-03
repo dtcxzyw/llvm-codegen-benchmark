@@ -11,8 +11,8 @@ func0000000000000145:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000140:
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtd	%xmm3, %xmm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%xmm3, %xmm2, %k0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0

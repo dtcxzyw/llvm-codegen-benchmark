@@ -7,8 +7,8 @@
 	.byte	15
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000a:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm1
 	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}
 	vpand	%xmm0, %xmm1, %xmm0

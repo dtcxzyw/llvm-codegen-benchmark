@@ -12,8 +12,7 @@ func0000000000000001:
 func000000000000000a:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtq	%ymm4, %ymm2, %k1
+	vpcmpnltq	%ymm3, %ymm2, %k1
 	vpcmpgtd	%xmm1, %xmm3, %k0 {%k1}
 	knotw	%k0, %k1
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}

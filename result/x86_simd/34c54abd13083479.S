@@ -19,13 +19,12 @@ func00000000000002d8:
 	.quad	0x7fffffffffffffff
 .LCPI1_1:
 	.quad	0x3cb0000000000000
-.LCPI1_2:
-	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000004d6:
 	vandpd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpngtpd	.LCPI1_1(%rip){1to8}, %zmm1, %k0
-	vpcmpltd	.LCPI1_2(%rip){1to8}, %ymm0, %k1
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -35,13 +34,12 @@ func00000000000004d6:
 	.quad	0x7fffffffffffffff
 .LCPI2_1:
 	.quad	0x3cb0000000000000
-.LCPI2_2:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000d6:
 	vandpd	.LCPI2_0(%rip){1to8}, %zmm1, %zmm1
 	vcmpngtpd	.LCPI2_1(%rip){1to8}, %zmm1, %k0
-	vpcmpltd	.LCPI2_2(%rip){1to8}, %ymm0, %k1
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -46,13 +46,12 @@ func0000000000000326:
 	retq
 
 .LCPI3_0:
-	.long	1
-.LCPI3_1:
 	.long	11
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000032a:
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI3_1(%rip), %ymm1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vpbroadcastd	.LCPI3_0(%rip), %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpaddd	%ymm0, %ymm2, %ymm0

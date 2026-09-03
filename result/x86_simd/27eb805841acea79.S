@@ -3,8 +3,8 @@
 func000000000000000a:
 	vpaddq	%ymm1, %ymm2, %ymm2
 	vpternlogq	$72, %ymm1, %ymm0, %ymm2
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm2, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

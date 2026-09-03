@@ -19,8 +19,6 @@ func0000000000000021:
 	.long	715827883
 .LCPI1_1:
 	.long	6
-.LCPI1_2:
-	.long	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -35,7 +33,8 @@ func0000000000000006:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI1_2(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

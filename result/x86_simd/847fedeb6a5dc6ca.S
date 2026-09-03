@@ -3,15 +3,14 @@
 	.long	4294967293
 .LCPI0_1:
 	.long	4294967294
-.LCPI0_2:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000306:
 	vpcmpgtd	%ymm1, %ymm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpltd	.LCPI0_2(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

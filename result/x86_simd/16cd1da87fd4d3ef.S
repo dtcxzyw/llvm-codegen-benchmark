@@ -285,10 +285,10 @@ func0000000000000304:
 func000000000000008a:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm1, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
-	vpcmpltud	.LCPI22_0(%rip){1to8}, %ymm2, %k0 {%k1}
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltd	%ymm4, %ymm1, %k1
+	vpcmpltud	.LCPI22_0(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

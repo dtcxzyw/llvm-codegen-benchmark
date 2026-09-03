@@ -8,14 +8,13 @@ func0000000000000001:
 	retq
 
 .LCPI1_0:
-	.long	1
-.LCPI1_1:
 	.long	64
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm1
-	vpcmpltd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
-	vpbroadcastd	.LCPI1_1(%rip), %xmm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
+	vpbroadcastd	.LCPI1_0(%rip), %xmm0 {%k1}
 	vzeroupper
 	retq
 
@@ -76,12 +75,11 @@ func0000000000000018:
 	vzeroupper
 	retq
 
-.LCPI7_0:
-	.long	1
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000004a:
 	vpmovqd	%ymm1, %xmm1
-	vpcmpltd	.LCPI7_0(%rip){1to4}, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

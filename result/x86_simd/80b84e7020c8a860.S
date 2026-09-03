@@ -80,8 +80,8 @@ func0000000000000028:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm0, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k2
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k2
 	vpbroadcastd	.LCPI4_0(%rip), %ymm0
 	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k2}
 	vpor	%ymm0, %ymm1, %ymm0

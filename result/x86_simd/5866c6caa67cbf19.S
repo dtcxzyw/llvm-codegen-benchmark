@@ -124,9 +124,9 @@ func0000000000000302:
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000104c:
 	vpmovqd	%ymm0, %xmm0
-	vpbroadcastd	.LCPI7_0(%rip), %xmm1
-	vpcmpgtd	%xmm0, %xmm1, %k0
-	vptestnmd	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k0
+	vptestnmd	.LCPI7_0(%rip){1to4}, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

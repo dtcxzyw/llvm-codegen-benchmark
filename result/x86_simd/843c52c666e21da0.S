@@ -29,8 +29,7 @@ func0000000000000010:
 func0000000000000014:
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm1, %k1
+	vpcmpnltq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm2, %k1 {%k1}
 	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
@@ -61,15 +60,14 @@ func0000000000000008:
 	retq
 
 .LCPI5_0:
-	.quad	1
-.LCPI5_1:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
 	vpslld	$31, %xmm0, %xmm0
-	vpmovd2m	%xmm0, %k1
-	vpcmpltq	.LCPI5_0(%rip){1to4}, %ymm1, %k1 {%k1}
-	vmovdqu8	.LCPI5_1(%rip), %xmm0 {%k1} {z}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k1
+	vpcmpgtd	%xmm0, %xmm2, %k1 {%k1}
+	vmovdqu8	.LCPI5_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq
 

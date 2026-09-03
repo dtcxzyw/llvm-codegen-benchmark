@@ -133,8 +133,8 @@ func000000000000010c:
 	.long	2048
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%xmm2, %xmm0, %k1
 	vptestnmd	.LCPI8_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

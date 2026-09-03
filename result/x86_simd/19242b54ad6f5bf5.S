@@ -12,8 +12,8 @@ func000000000000018c:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000014c:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
 	vptestmb	.LCPI1_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq

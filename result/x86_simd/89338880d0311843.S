@@ -315,8 +315,8 @@ func0000000000000024:
 	.prefalign	4, .Lfunc_end12, nop
 func000000000000002a:
 	vpandd	.LCPI12_2(%rip){1to4}, %xmm1, %xmm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpcmpeqw	.LCPI12_1(%rip), %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

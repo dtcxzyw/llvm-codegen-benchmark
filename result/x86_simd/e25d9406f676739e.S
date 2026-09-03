@@ -96,8 +96,8 @@ func0000000000000314:
 func0000000000000114:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm1, %k1
 	vpcmpltuq	.LCPI7_0(%rip){1to4}, %ymm2, %k1 {%k1}
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0

@@ -14,9 +14,9 @@ func00000000000000ca:
 func000000000000018a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1 {%k1}
-	vpcmpneqd	%ymm2, %ymm0, %k0 {%k1}
+	vpcmpneqd	%ymm2, %ymm0, %k1 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -49,10 +49,11 @@ func0000000000000026:
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000ea:
 	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1 {%k1}
-	vpcmpled	%ymm2, %ymm0, %k0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm2, %ymm0, %k1
+	vpcmpgtw	%xmm1, %xmm3, %k1 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

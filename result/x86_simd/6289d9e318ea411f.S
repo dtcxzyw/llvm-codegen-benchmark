@@ -75,8 +75,8 @@ func000000000000108a:
 	vmovdqa64	%ymm1, %ymm2 {%k1}
 	vpcmpltuq	.LCPI4_1(%rip){1to4}, %ymm2, %k1
 	vmovdqa64	%ymm0, %ymm2 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm2, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

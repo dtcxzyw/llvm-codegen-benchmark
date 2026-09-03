@@ -46,12 +46,11 @@ func000000000000002c:
 	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 
-.LCPI5_0:
-	.long	1
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpltd	.LCPI5_0(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm0, %k1
 	vpaddd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 

@@ -3,10 +3,10 @@
 	.quad	4611686018427387904
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000030a:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vblendvpd	%ymm2, %ymm0, %ymm1, %ymm1
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpcmpnltq	%ymm3, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

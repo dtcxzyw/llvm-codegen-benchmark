@@ -114,8 +114,6 @@ func0000000000000004:
 	retq
 
 .LCPI3_0:
-	.long	1
-.LCPI3_1:
 	.short	1
 	.short	1
 	.short	1
@@ -128,9 +126,10 @@ func0000000000000004:
 func0000000000000006:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpled	%ymm0, %ymm1, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vmovdqu16	.LCPI3_1(%rip), %xmm0 {%k1}
+	vmovdqu16	.LCPI3_0(%rip), %xmm0 {%k1}
 	knotb	%k0, %k1
 	vmovdqu16	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper

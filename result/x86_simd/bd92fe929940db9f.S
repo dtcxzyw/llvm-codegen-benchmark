@@ -266,8 +266,9 @@ func0000000000000081:
 func000000000000002a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	.LCPI11_0(%rip), %xmm0, %k1
-	vpcmpgtd	%ymm2, %ymm1, %k0 {%k1}
+	vpcmpnltd	%ymm2, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

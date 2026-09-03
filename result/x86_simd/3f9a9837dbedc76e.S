@@ -1,14 +1,13 @@
 	.att_syntax
 .LCPI0_0:
 	.long	32
-.LCPI0_1:
-	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000f06:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpnleud	%ymm1, %ymm0, %k0
-	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -32,8 +31,7 @@ func00000000000004ca:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpcmpnltd	%ymm2, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

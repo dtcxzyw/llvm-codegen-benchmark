@@ -1,13 +1,11 @@
 	.att_syntax
 .LCPI0_0:
 	.zero	16,1
-.LCPI0_1:
-	.byte	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000ca:
-	vpbroadcastb	.LCPI0_1(%rip), %xmm3
-	vpcmpgtb	%xmm2, %xmm3, %k1
-	vmovdqu8	%xmm3, %xmm1 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleb	%xmm3, %xmm2, %k1
+	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k1}
 	vpcmpgtb	%xmm1, %xmm0, %xmm0
 	retq
 

@@ -184,8 +184,8 @@ func0000000000000610:
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000054:
 	vptestnmb	.LCPI12_0(%rip), %xmm0, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

@@ -65,16 +65,15 @@ func0000000000000018:
 	retq
 
 .LCPI4_0:
-	.quad	1
-.LCPI4_1:
 	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpltq	.LCPI4_0(%rip){1to4}, %ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleq	%ymm0, %ymm1, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpbroadcastd	.LCPI4_1(%rip), %xmm1
+	vpbroadcastd	.LCPI4_0(%rip), %xmm1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	knotw	%k0, %k1
 	vmovdqa32	%xmm1, %xmm0 {%k1} {z}

@@ -28,14 +28,13 @@ func0000000000000008:
 	retq
 
 .LCPI3_0:
-	.quad	1
-.LCPI3_1:
 	.quad	30
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpltq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
-	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
+	vpbroadcastq	.LCPI3_0(%rip), %ymm0 {%k1}
 	retq
 
 .LCPI4_0:

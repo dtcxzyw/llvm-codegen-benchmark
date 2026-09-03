@@ -156,10 +156,10 @@ func00000000000000a1:
 func000000000000010a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpmovqd	%ymm2, %xmm0
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpmovqd	%ymm2, %xmm2
+	vpsubd	%xmm1, %xmm2, %xmm1
+	vpcmpnltd	%xmm0, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -170,8 +170,7 @@ func000000000000018a:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpmovqd	%ymm2, %xmm2
 	vpsubd	%xmm1, %xmm2, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%xmm2, %xmm1, %k1
+	vpcmpnltd	%xmm3, %xmm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

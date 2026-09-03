@@ -84,12 +84,11 @@ func0000000000000181:
 
 .LCPI8_0:
 	.long	1
-.LCPI8_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000026:
-	vpcmpeqd	.LCPI8_0(%rip){1to4}, %xmm1, %k1
-	vpcmpltq	.LCPI8_1(%rip){1to4}, %ymm0, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm0, %k1
+	vpcmpeqd	.LCPI8_0(%rip){1to4}, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -57,8 +57,6 @@ func000000000000002a:
 
 .LCPI3_0:
 	.long	954437177
-.LCPI3_1:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	vpshufd	$245, %ymm1, %ymm2
@@ -69,7 +67,8 @@ func0000000000000026:
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
 	vpsrld	$1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI3_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -22,8 +22,7 @@ func0000000000000030:
 func0000000000000050:
 	vpslld	$31, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtq	%ymm4, %ymm2, %k1
+	vpcmpnltq	%ymm3, %ymm2, %k1
 	vpcmpgtd	%xmm1, %xmm3, %k0 {%k1}
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0

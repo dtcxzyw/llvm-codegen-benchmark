@@ -40,15 +40,15 @@ func0000000000000015:
 	retq
 
 .LCPI3_0:
-	.long	1
-.LCPI3_1:
 	.long	5
+.LCPI3_1:
+	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
-	vpbroadcastd	.LCPI3_0(%rip), %xmm1
-	vpcmpgtd	%xmm0, %xmm1, %k1
-	vpbroadcastd	.LCPI3_1(%rip), %xmm0
-	vmovdqa32	%xmm1, %xmm0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%xmm1, %xmm0, %k1
+	vpbroadcastd	.LCPI3_0(%rip), %xmm0
+	vpbroadcastd	.LCPI3_1(%rip), %xmm0 {%k1}
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

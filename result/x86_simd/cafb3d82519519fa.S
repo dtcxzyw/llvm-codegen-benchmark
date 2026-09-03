@@ -17,19 +17,11 @@ func000000000000000a:
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000006:
 	vpmovqw	%ymm0, %xmm0
-	vpcmpltw	.LCPI2_0(%rip), %xmm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmplew	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

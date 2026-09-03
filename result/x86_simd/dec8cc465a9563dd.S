@@ -17,11 +17,10 @@ func00000000000000c4:
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000064:
-	vpcmpltd	.LCPI2_0(%rip){1to4}, %xmm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%xmm3, %xmm2, %k0
 	vpmovm2q	%k0, %ymm2
 	vpsrlq	$63, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1

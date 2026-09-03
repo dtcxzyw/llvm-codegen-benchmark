@@ -106,8 +106,8 @@ func000000000000000a:
 	vpand	%xmm2, %xmm1, %xmm1
 	vpsllw	$7, %xmm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtw	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltw	%ymm3, %ymm0, %k1
 	vpcmpgtb	%xmm1, %xmm2, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

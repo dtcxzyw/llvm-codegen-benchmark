@@ -104,7 +104,8 @@ func000000000000006a:
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000026:
 	vpbroadcastd	.LCPI9_0(%rip), %ymm2
-	vpcmpgtd	%ymm0, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm0, %k1
 	vpsubd	%ymm1, %ymm2, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq

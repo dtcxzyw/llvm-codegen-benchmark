@@ -190,8 +190,8 @@ func000000000000004c:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000054:
 	vptestnmw	.LCPI3_0(%rip), %ymm0, %k0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtw	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

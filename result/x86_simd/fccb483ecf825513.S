@@ -6,7 +6,8 @@ func000000000000002a:
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpcmpeqd	%ymm0, %ymm2, %k2
 	vmovdqa32	%ymm1, %ymm2 {%k2}
-	vpcmpgtd	%ymm0, %ymm2, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

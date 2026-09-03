@@ -3,8 +3,8 @@
 func000000000000014c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm2, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm2, %k0 {%k1}
 	vptestmb	%xmm0, %xmm0, %k1
 	kandb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -296,8 +296,8 @@ func0000000000000184:
 func0000000000000141:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltd	%ymm4, %ymm2, %k1
 	vpcmpgtw	%xmm1, %xmm3, %k0 {%k1}
 	vpcmpeqb	.LCPI10_0(%rip), %xmm0, %k1
 	kandb	%k0, %k1, %k0

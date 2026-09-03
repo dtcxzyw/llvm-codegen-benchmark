@@ -50,8 +50,8 @@ func0000000000000042:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000114:
 	vpcmpltub	.LCPI1_0(%rip), %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korb	%k0, %k1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0
 	vpbroadcastd	.LCPI1_2(%rip), %ymm0 {%k1}

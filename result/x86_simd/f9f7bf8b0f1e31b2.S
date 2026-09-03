@@ -25,9 +25,9 @@ func0000000000000421:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000042a:
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmw	%xmm1, %xmm1, %k1 {%k1}
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtw	%xmm1, %xmm0, %k0 {%k1}
+	vpcmpnltw	%xmm2, %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

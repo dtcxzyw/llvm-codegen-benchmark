@@ -5,8 +5,8 @@
 	.long	0x7f800000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k1
 	vbroadcastss	.LCPI0_0(%rip), %ymm0
 	vbroadcastss	.LCPI0_1(%rip), %ymm0 {%k1}
 	retq

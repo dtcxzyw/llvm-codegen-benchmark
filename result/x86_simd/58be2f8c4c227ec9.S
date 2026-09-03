@@ -198,8 +198,8 @@ func00000000000000a4:
 	.long	3
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000000a0:
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm2, %k1
 	vpbroadcastd	.LCPI7_0(%rip), %ymm2
 	vpbroadcastd	.LCPI7_1(%rip), %ymm2 {%k1}
 	vpaddd	%ymm1, %ymm0, %ymm0

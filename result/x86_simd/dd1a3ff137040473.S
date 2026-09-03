@@ -107,8 +107,8 @@ func0000000000000014:
 	.quad	5
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000a:
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtw	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%xmm1, %xmm0, %k1
 	vpbroadcastq	.LCPI6_0(%rip), %ymm0
 	vpbroadcastq	.LCPI6_1(%rip), %ymm0 {%k1}
 	retq

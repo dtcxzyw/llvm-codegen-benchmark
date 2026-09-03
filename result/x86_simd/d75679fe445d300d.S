@@ -28,26 +28,10 @@ func0000000000000006:
 	vpandn	%ymm0, %ymm1, %ymm0
 	retq
 
-.LCPI2_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
-	vpcmpltw	.LCPI2_0(%rip), %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmplew	%ymm2, %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
 

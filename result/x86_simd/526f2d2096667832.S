@@ -94,12 +94,11 @@ func0000000000000121:
 	vzeroupper
 	retq
 
-.LCPI10_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000026:
 	vpcmpeqq	%ymm0, %ymm1, %k0
-	vpcmpltq	.LCPI10_0(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -116,12 +115,11 @@ func00000000000000c8:
 	vzeroupper
 	retq
 
-.LCPI12_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000106:
 	vpcmpnleuq	%ymm0, %ymm1, %k0
-	vpcmpltq	.LCPI12_0(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

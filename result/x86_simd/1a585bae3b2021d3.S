@@ -10,11 +10,10 @@ func000000000000000c:
 	vzeroupper
 	retq
 
-.LCPI1_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	vpcmpltq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

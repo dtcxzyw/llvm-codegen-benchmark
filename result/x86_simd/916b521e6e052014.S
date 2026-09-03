@@ -29,14 +29,13 @@ func000000000000000c:
 	vpmovm2b	%k0, %xmm0
 	retq
 
-.LCPI3_0:
-	.zero	16,1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	knotw	%k0, %k1
-	vpcmpltb	.LCPI3_0(%rip), %xmm1, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleb	%xmm0, %xmm1, %k1
+	kandnw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
 
@@ -66,8 +65,8 @@ func0000000000000004:
 func000000000000000a:
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtb	%xmm0, %xmm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltb	%xmm0, %xmm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

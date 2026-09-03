@@ -90,8 +90,8 @@ func0000000000000020:
 	.long	4
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000028:
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm2, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpaddd	%ymm2, %ymm0, %ymm0
@@ -101,8 +101,8 @@ func0000000000000028:
 	.long	4
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000002a:
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltb	%xmm3, %xmm2, %k1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpaddd	%ymm0, %ymm2, %ymm0

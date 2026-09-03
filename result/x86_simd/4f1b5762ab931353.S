@@ -7,7 +7,8 @@ func0000000000000606:
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
 	vpsllvd	%ymm1, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

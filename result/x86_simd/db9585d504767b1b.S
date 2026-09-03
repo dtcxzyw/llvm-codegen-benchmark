@@ -604,10 +604,11 @@ func0000000000000159:
 	.long	2
 	.prefalign	4, .Lfunc_end40, nop
 func000000000000014a:
-	vpbroadcastd	.LCPI40_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
-	vpbroadcastd	.LCPI40_1(%rip), %ymm2 {%k1}
-	vpcmpgtd	%ymm2, %ymm0, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpbroadcastd	.LCPI40_0(%rip), %ymm1
+	vpbroadcastd	.LCPI40_1(%rip), %ymm1 {%k1}
+	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

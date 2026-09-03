@@ -1,13 +1,12 @@
 	.att_syntax
 .LCPI0_0:
-	.quad	1
-.LCPI0_1:
 	.quad	-2
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000a6:
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpcmpltq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
-	vpaddq	.LCPI0_1(%rip){1to4}, %ymm1, %ymm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm0, %k1
+	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

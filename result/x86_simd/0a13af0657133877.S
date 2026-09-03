@@ -21,8 +21,8 @@ func0000000000000001:
 func000000000000000a:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmaxuq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

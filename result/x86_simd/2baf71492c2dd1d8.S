@@ -12,7 +12,8 @@ func0000000000000a2a:
 	vpbroadcastd	.LCPI0_1(%rip), %ymm4
 	vmovdqa32	%ymm2, %ymm4 {%k1}
 	vpaddd	%ymm1, %ymm4, %ymm1
-	vpcmpgtd	%ymm2, %ymm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -39,12 +40,13 @@ func000000000000008c:
 func00000000000000aa:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
 	vptestnmd	%ymm2, %ymm2, %k2
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpbroadcastd	.LCPI2_0(%rip), %ymm2
-	vmovdqa32	%ymm0, %ymm2 {%k2}
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k0 {%k1}
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpbroadcastd	.LCPI2_0(%rip), %ymm3
+	vmovdqa32	%ymm2, %ymm3 {%k2}
+	vpaddd	%ymm3, %ymm1, %ymm1
+	vpcmpnltd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

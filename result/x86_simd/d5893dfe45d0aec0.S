@@ -217,8 +217,8 @@ func0000000000000186:
 	.long	40
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000141:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%xmm2, %xmm1, %k0
 	vpcmpeqd	.LCPI13_0(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -338,20 +338,12 @@ func0000000000000028:
 	retq
 
 .LCPI21_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-.LCPI21_1:
 	.long	403
 	.prefalign	4, .Lfunc_end21, nop
 func00000000000000cc:
-	vpcmpltw	.LCPI21_0(%rip), %xmm1, %k0
-	vpcmpneqd	.LCPI21_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmplew	%xmm2, %xmm1, %k0
+	vpcmpneqd	.LCPI21_0(%rip){1to8}, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

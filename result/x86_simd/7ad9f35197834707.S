@@ -30,8 +30,6 @@ func0000000000000302:
 
 .LCPI2_0:
 	.long	2
-.LCPI2_1:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	vcvtdq2pd	%ymm0, %zmm2
@@ -39,7 +37,8 @@ func000000000000018c:
 	vdivpd	%zmm2, %zmm1, %zmm1
 	vcvttpd2dq	%zmm1, %ymm1
 	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm1, %k0
-	vpcmpltd	.LCPI2_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -116,11 +116,12 @@ func0000000000000104:
 	.long	1
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000000c1:
-	vpbroadcastd	.LCPI7_0(%rip), %ymm2
-	vpcmpgtd	%ymm1, %ymm2, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vmovdqa32	%ymm1, %ymm2 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpbroadcastd	.LCPI7_0(%rip), %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vmovdqa32	%ymm2, %ymm1 {%k1}
 	vptestmd	%ymm0, %ymm0, %k1
-	vmovdqa32	%ymm2, %ymm0 {%k1} {z}
+	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
 	retq
 

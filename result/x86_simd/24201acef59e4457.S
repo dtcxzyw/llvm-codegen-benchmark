@@ -61,11 +61,10 @@ func0000000000000019:
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 
-.LCPI8_0:
-	.long	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000028:
-	vpcmpltd	.LCPI8_0(%rip){1to8}, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
 	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 

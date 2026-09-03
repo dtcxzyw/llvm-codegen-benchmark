@@ -131,8 +131,8 @@ func0000000000000161:
 
 	.prefalign	4, .Lfunc_end14, nop
 func000000000000002a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltq	%ymm3, %ymm0, %k1
 	vpcmpeqd	%xmm2, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -212,8 +212,8 @@ func000000000000014c:
 
 	.prefalign	4, .Lfunc_end23, nop
 func000000000000014a:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltq	%ymm3, %ymm0, %k1
 	vpcmpgtd	%xmm2, %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

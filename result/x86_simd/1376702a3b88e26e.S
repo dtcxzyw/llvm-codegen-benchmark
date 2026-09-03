@@ -160,8 +160,8 @@ func0000000000000018:
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000000a:
 	vpor	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtw	%ymm1, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -241,27 +241,11 @@ func0000000000000008:
 	vzeroupper
 	retq
 
-.LCPI13_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000026:
 	vpor	%ymm1, %ymm0, %ymm0
-	vpcmpltw	.LCPI13_0(%rip), %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmplew	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

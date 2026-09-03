@@ -61,21 +61,13 @@ func00000000000000e1:
 	retq
 
 .LCPI3_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-.LCPI3_1:
 	.long	4294966896
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a6:
-	vpcmpltw	.LCPI3_0(%rip), %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmplew	%xmm2, %xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1}
+	vpbroadcastd	.LCPI3_0(%rip), %ymm0 {%k1}
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 

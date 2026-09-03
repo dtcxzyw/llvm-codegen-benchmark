@@ -31,8 +31,8 @@ func0000000000000168:
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000ca:
 	vpmovsxdq	%xmm2, %ymm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm0, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltq	%ymm3, %ymm0, %k1
 	vpcmpgtq	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

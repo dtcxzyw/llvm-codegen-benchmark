@@ -50,13 +50,14 @@ func000000000000002c:
 func000000000000002a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vcvtdq2pd	%ymm1, %zmm3
-	vcvtdq2pd	%ymm0, %zmm4
-	vdivpd	%zmm4, %zmm3, %zmm3
-	vcvttpd2dq	%zmm3, %ymm3
-	vpmulld	%ymm0, %ymm3, %ymm0
+	vcvtdq2pd	%ymm1, %zmm2
+	vcvtdq2pd	%ymm0, %zmm3
+	vdivpd	%zmm3, %zmm2, %zmm2
+	vcvttpd2dq	%zmm2, %ymm2
+	vpmulld	%ymm0, %ymm2, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
-	vpcmpgtd	%ymm2, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

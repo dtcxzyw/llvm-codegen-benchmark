@@ -46,8 +46,8 @@ func000000000000000c:
 func000000000000000a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpeqd	%ymm4, %ymm4, %ymm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpnltd	%ymm4, %ymm2, %k1
 	vpcmpgtw	%xmm1, %xmm3, %k1 {%k1}
 	vmovdqu8	.LCPI1_0(%rip), %xmm0 {%k1}
 	vzeroupper

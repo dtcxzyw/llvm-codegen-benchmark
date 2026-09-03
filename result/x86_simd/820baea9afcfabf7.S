@@ -19,8 +19,8 @@ func0000000000000065:
 	.quad	1
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a5:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%xmm2, %xmm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm1 {%k1}
 	vpaddq	%ymm1, %ymm0, %ymm0

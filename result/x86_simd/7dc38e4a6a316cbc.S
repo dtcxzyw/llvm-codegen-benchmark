@@ -21,13 +21,12 @@ func0000000000000004:
 	retq
 
 .LCPI2_0:
-	.long	1
-.LCPI2_1:
 	.long	77
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1} {z}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vpbroadcastd	.LCPI2_0(%rip), %ymm0 {%k1} {z}
 	retq
 
 .LCPI3_0:
@@ -46,11 +45,11 @@ func0000000000000018:
 	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
-	vpbroadcastd	.LCPI4_0(%rip), %ymm1
-	vpcmpgtd	%ymm0, %ymm1, %k1
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vmovdqa	%ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	vpbroadcastd	.LCPI4_0(%rip), %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vmovdqa32	%ymm1, %ymm0 {%k1}
 	retq
 
 .LCPI5_0:

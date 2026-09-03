@@ -7,8 +7,8 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%xmm2, %xmm1, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%xmm2, %xmm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 

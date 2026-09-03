@@ -76,13 +76,12 @@ func0000000000000006:
 	retq
 
 .LCPI9_0:
-	.quad	1
-.LCPI9_1:
 	.quad	1000000
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000000a:
-	vpcmpltq	.LCPI9_0(%rip){1to4}, %ymm1, %k1
-	vpaddq	.LCPI9_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleq	%ymm3, %ymm1, %k1
+	vpaddq	.LCPI9_0(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	retq
 
 .LCPI10_0:
@@ -95,12 +94,11 @@ func0000000000000024:
 	vpaddq	.LCPI10_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	retq
 
-.LCPI11_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end11, nop
 func000000000000004a:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpltq	.LCPI11_0(%rip){1to4}, %ymm1, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpleq	%ymm4, %ymm1, %k1
 	vpsubq	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
 

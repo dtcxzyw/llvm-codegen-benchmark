@@ -66,10 +66,10 @@ func0000000000000108:
 func0000000000000146:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtq	%ymm0, %ymm2, %k1
-	korw	%k0, %k1, %k0
-	vpmovq2m	%ymm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltq	%ymm0, %ymm2, %k1
+	vpmovq2m	%ymm1, %k2
+	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -134,16 +134,15 @@ func0000000000000028:
 	retq
 
 .LCPI10_0:
-	.quad	1
-.LCPI10_1:
 	.quad	9223372036854775807
 	.prefalign	4, .Lfunc_end10, nop
 func00000000000000c1:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpltq	.LCPI10_0(%rip){1to4}, %ymm2, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpleq	%ymm0, %ymm2, %k1
 	korw	%k0, %k1, %k0
-	vpcmpeqq	.LCPI10_1(%rip){1to4}, %ymm1, %k1
+	vpcmpeqq	.LCPI10_0(%rip){1to4}, %ymm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

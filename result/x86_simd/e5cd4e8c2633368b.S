@@ -135,9 +135,9 @@ func0000000000000094:
 	vpmovw2m	%xmm1, %k0
 	vpandd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm1
 	vpcmpeqd	.LCPI7_1(%rip){1to8}, %ymm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k2
-	korb	%k2, %k0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k2
+	korb	%k0, %k2, %k0
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

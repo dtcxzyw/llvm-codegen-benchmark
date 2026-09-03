@@ -166,14 +166,13 @@ func000000000000012a:
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI7_1:
-	.long	1
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000126:
 	vpcmpeqb	.LCPI7_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpltd	.LCPI7_1(%rip){1to8}, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -294,8 +293,8 @@ func000000000000010a:
 	.long	1
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000a01:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	.LCPI12_0(%rip){1to8}, %ymm0, %k0

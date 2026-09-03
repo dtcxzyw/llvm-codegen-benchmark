@@ -16,14 +16,12 @@
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI0_1:
-	.byte	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpmovdb	%ymm1, %xmm1
-	vpbroadcastb	.LCPI0_1(%rip), %xmm2
-	vpcmpgtb	%xmm0, %xmm2, %k1
-	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleb	%xmm2, %xmm0, %k1
+	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq

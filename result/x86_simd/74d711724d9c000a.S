@@ -36,27 +36,11 @@ func0000000000000021:
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000026:
 	vptestnmw	%ymm1, %ymm1, %k0
-	vpcmpltw	.LCPI2_0(%rip), %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmplew	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -415,8 +399,8 @@ func0000000000000034:
 	.short	259
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000144:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtw	%ymm2, %ymm1, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltw	%ymm2, %ymm1, %k0
 	vpcmpltuw	.LCPI14_0(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0

@@ -17,7 +17,8 @@ func000000000000004a:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm0, %ymm0
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0
-	vpcmpgtd	%ymm3, %ymm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -27,7 +28,8 @@ func000000000000008a:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpternlogd	$254, %ymm1, %ymm0, %ymm2
-	vpcmpgtd	%ymm3, %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

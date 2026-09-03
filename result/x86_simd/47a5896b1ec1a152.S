@@ -40,8 +40,8 @@ func00000000000000c1:
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000cc:
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm0, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm0, %k0
 	vpcmpneqd	.LCPI3_1(%rip){1to8}, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

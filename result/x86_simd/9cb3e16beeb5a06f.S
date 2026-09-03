@@ -8,9 +8,10 @@ func000000000000002a:
 	vpmovw2m	%xmm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpblendmd	.LCPI0_0(%rip){1to8}, %ymm3, %ymm4 {%k1}
-	vpaddd	%ymm4, %ymm1, %ymm1
-	vpcmpgtd	%ymm3, %ymm1, %k1
+	vpbroadcastd	.LCPI0_0(%rip), %ymm3 {%k1}
+	vpaddd	%ymm3, %ymm1, %ymm1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm1, %k1
 	vpcmpgtw	%xmm0, %xmm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

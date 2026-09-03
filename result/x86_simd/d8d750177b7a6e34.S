@@ -30,13 +30,12 @@ func0000000000000002:
 	retq
 
 .LCPI3_0:
-	.quad	1
-.LCPI3_1:
 	.quad	-4611686018427387904
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
-	vpcmpltq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
-	vorpd	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k1
+	vorpd	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI4_0:

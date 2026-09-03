@@ -41,12 +41,11 @@ func0000000000000021:
 
 .LCPI4_0:
 	.long	11753
-.LCPI4_1:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000002a:
 	vpbroadcastd	.LCPI4_0(%rip), %ymm3
-	vpcmpltd	.LCPI4_1(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpcmpled	%ymm4, %ymm1, %k1
 	vpsubd	%ymm2, %ymm3, %ymm0 {%k1}
 	retq
 

@@ -71,12 +71,10 @@ func0000000000000064:
 	vpsubq	%ymm2, %ymm3, %ymm0 {%k1}
 	retq
 
-.LCPI8_0:
-	.quad	1
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000002a:
 	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpltq	.LCPI8_0(%rip){1to4}, %ymm1, %k1
+	vpcmpleq	%ymm3, %ymm1, %k1
 	vpsubq	%ymm2, %ymm3, %ymm0 {%k1}
 	retq
 

@@ -27,17 +27,14 @@ func000000000000018c:
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c6:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
-	vpbroadcastd	.LCPI2_0(%rip), %ymm1
-	vpcmpgtd	%ymm2, %ymm1, %k1
-	korb	%k1, %k0, %k0
-	vpcmpgtd	%ymm0, %ymm1, %k1
-	korb	%k1, %k0, %k0
+	vpminsd	%ymm0, %ymm2, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
+	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -57,16 +54,15 @@ func0000000000000024:
 	retq
 
 .LCPI4_0:
-	.long	1
-.LCPI4_1:
 	.long	31
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
-	knotb	%k0, %k1
-	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm2, %k0 {%k1}
-	vpcmpeqd	.LCPI4_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm2, %k1
+	kandnb	%k1, %k0, %k0
+	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

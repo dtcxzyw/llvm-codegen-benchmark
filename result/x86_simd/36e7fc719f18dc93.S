@@ -216,9 +216,9 @@ func00000000000008c6:
 	.prefalign	4, .Lfunc_end15, nop
 func00000000000008c8:
 	vpmovqd	%ymm1, %xmm1
-	vpbroadcastd	.LCPI15_0(%rip), %xmm2
-	vpcmpgtd	%xmm1, %xmm2, %k0
-	vpcmpnleud	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%xmm2, %xmm1, %k0
+	vpcmpnleud	.LCPI15_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

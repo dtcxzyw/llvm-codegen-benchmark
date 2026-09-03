@@ -46,8 +46,8 @@ func0000000000000046:
 func000000000000004a:
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpternlogd	$72, %ymm1, %ymm0, %ymm2
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

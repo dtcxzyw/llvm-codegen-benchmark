@@ -222,8 +222,8 @@ func000000000000002a:
 	vpcmpeqb	.LCPI5_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm1
 	vpbroadcastd	.LCPI5_2(%rip), %ymm1 {%k1}
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
 	vpbroadcastd	.LCPI5_3(%rip), %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

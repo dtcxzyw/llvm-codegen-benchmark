@@ -60,8 +60,8 @@ func000000000000000a:
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm2, %k1
 	vpcmpgtw	%xmm0, %xmm1, %k1 {%k1}
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

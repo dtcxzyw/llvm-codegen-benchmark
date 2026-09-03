@@ -88,12 +88,11 @@ func0000000000000054:
 	vpaddd	.LCPI9_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
 
-.LCPI10_0:
-	.long	1
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000002a:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpltd	.LCPI10_0(%rip){1to8}, %ymm1, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm1, %k1
 	vpaddd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 

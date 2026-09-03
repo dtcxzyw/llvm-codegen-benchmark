@@ -90,8 +90,8 @@ func0000000000000008:
 	.zero	16,1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtw	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltw	%ymm1, %ymm0, %k1
 	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1} {z}
 	vzeroupper
 	retq

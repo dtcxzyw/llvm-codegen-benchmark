@@ -20,24 +20,22 @@ func0000000000000185:
 	retq
 
 .LCPI2_0:
-	.long	1
-.LCPI2_1:
 	.long	4294248133
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000006d:
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm2, %k1
-	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI3_0:
-	.long	1
-.LCPI3_1:
 	.long	4294248133
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000006c:
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm2, %k1
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 

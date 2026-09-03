@@ -202,8 +202,6 @@ func000000000000028c:
 	retq
 
 .LCPI11_0:
-	.long	1
-.LCPI11_1:
 	.short	1
 	.short	1
 	.short	1
@@ -214,8 +212,9 @@ func000000000000028c:
 	.short	1
 	.prefalign	4, .Lfunc_end11, nop
 func00000000000000c1:
-	vpcmpltd	.LCPI11_0(%rip){1to8}, %ymm0, %k1
-	vptestnmw	.LCPI11_1(%rip), %xmm1, %k0 {%k1}
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm0, %k1
+	vptestnmw	.LCPI11_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

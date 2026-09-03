@@ -233,19 +233,11 @@ func000000000000008c:
 	vzeroupper
 	retq
 
-.LCPI19_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000106:
 	vpcmpnleud	%ymm2, %ymm1, %k0
-	vpcmpltw	.LCPI19_0(%rip), %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmplew	%xmm1, %xmm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

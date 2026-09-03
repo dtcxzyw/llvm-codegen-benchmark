@@ -67,8 +67,7 @@ func0000000000000008:
 func0000000000000014:
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpgtb	%xmm3, %xmm1, %k1
+	vpcmpnltb	%xmm2, %xmm1, %k1
 	vpcmpgtw	%xmm0, %xmm2, %k0 {%k1}
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0

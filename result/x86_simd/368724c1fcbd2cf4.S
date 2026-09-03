@@ -49,12 +49,11 @@ func0000000000000024:
 
 .LCPI4_0:
 	.long	64
-.LCPI4_1:
-	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000026:
 	vptestnmd	.LCPI4_0(%rip){1to8}, %ymm1, %k0
-	vpcmpltd	.LCPI4_1(%rip){1to8}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpled	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

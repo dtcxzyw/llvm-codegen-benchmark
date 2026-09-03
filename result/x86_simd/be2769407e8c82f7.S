@@ -124,13 +124,12 @@ func0000000000000c61:
 	retq
 
 .LCPI10_0:
-	.quad	1
-.LCPI10_1:
 	.quad	9223372036854775807
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000301:
-	vpcmpltq	.LCPI10_0(%rip){1to4}, %ymm2, %k1
-	vpbroadcastq	.LCPI10_1(%rip), %ymm1 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleq	%ymm3, %ymm2, %k1
+	vpbroadcastq	.LCPI10_0(%rip), %ymm1 {%k1}
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpeqq	%ymm1, %ymm0, %k0

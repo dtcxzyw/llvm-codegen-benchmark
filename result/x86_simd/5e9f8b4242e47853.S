@@ -137,8 +137,8 @@ func0000000000000028:
 func0000000000000014:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtb	%xmm0, %xmm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltb	%xmm0, %xmm1, %k1
 	korb	%k0, %k1, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm0
 	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k1}

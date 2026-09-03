@@ -256,14 +256,13 @@ func000000000000108c:
 	.quad	-68
 .LCPI19_1:
 	.quad	-12
-.LCPI19_2:
-	.quad	1
 	.prefalign	4, .Lfunc_end19, nop
 func000000000000420c:
 	vpcmpltuq	.LCPI19_0(%rip){1to4}, %ymm2, %k0
 	vpcmpltuq	.LCPI19_1(%rip){1to4}, %ymm1, %k1
 	korw	%k0, %k1, %k0
-	vpcmpltq	.LCPI19_2(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

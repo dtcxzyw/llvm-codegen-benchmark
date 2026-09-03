@@ -6,8 +6,7 @@ func000000000000000a:
 	vpcmpnltw	%xmm2, %xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpsubd	%ymm1, %ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpcmpnltd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -36,8 +35,6 @@ func0000000000000006:
 	vzeroupper
 	retq
 
-.LCPI3_0:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000026:
 	vpsllw	$15, %xmm0, %xmm0
@@ -45,7 +42,7 @@ func0000000000000026:
 	vpcmpnltw	%xmm2, %xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpsubd	%ymm1, %ymm0, %ymm1 {%k1}
-	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k0
+	vpcmpled	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

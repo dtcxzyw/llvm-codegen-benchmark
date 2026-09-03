@@ -173,28 +173,12 @@ func0000000000000018:
 	vzeroupper
 	retq
 
-.LCPI8_0:
-	.byte	1
-	.byte	1
-	.byte	1
-	.byte	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000086:
 	vpsrlq	$4, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
-	vpcmpltb	.LCPI8_0(%rip), %xmm0, %k0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleb	%xmm1, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

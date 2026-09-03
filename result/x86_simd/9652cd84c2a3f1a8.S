@@ -102,8 +102,8 @@ func0000000000000028:
 func000000000000002a:
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI4_1(%rip){1to8}, %ymm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

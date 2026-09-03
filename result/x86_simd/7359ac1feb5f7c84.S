@@ -71,11 +71,10 @@ func0000000000000030:
 	vpmovm2b	%k0, %xmm0
 	retq
 
-.LCPI6_0:
-	.zero	16,1
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
-	vpcmpltb	.LCPI6_0(%rip), %xmm2, %k0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpleb	%xmm3, %xmm2, %k0
 	vpor	%xmm1, %xmm0, %xmm0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

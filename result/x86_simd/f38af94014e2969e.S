@@ -33,8 +33,8 @@ func0000000000000004:
 func000000000000000a:
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%xmm0, %xmm1, %k1
 	korw	%k1, %k0, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0 {%k1} {z}
 	retq

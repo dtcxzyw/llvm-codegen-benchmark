@@ -81,21 +81,13 @@ func0000000000000009:
 	retq
 
 .LCPI5_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-.LCPI5_1:
 	.long	2
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
-	vpcmpltw	.LCPI5_0(%rip), %xmm2, %k1
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmplew	%xmm3, %xmm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
-	vpord	.LCPI5_1(%rip){1to8}, %ymm1, %ymm0
+	vpord	.LCPI5_0(%rip){1to8}, %ymm1, %ymm0
 	retq
 
 .LCPI6_0:

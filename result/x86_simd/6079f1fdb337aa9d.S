@@ -49,8 +49,7 @@ func000000000000002a:
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpsubd	%ymm2, %ymm0, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm1, %k0
+	vpcmpnltd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

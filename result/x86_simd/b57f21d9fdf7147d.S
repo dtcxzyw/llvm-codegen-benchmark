@@ -21,12 +21,13 @@ func0000000000000226:
 	.quad	1
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000052a:
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtq	%ymm2, %ymm1, %k1
-	vpbroadcastq	.LCPI1_0(%rip), %ymm1
-	vmovdqa64	%ymm2, %ymm1 {%k1}
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpgtq	%ymm2, %ymm0, %k0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltq	%ymm2, %ymm1, %k1
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpbroadcastq	.LCPI1_0(%rip), %ymm3
+	vmovdqa64	%ymm1, %ymm3 {%k1}
+	vpaddq	%ymm3, %ymm0, %ymm0
+	vpcmpnltq	%ymm2, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -101,10 +102,10 @@ func000000000000022c:
 	.quad	1
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000321:
-	vpbroadcastq	.LCPI6_0(%rip), %ymm2
-	vpcmpgtq	%ymm1, %ymm2, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpleq	%ymm2, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vmovdqa64	%ymm2, %ymm1 {%k1}
+	vpbroadcastq	.LCPI6_0(%rip), %ymm1 {%k1}
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

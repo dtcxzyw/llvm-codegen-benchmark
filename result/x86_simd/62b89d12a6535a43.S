@@ -15,11 +15,11 @@ func0000000000000081:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000008a:
+	vpxor	%xmm3, %xmm3, %xmm3
 	vptestmd	%ymm2, %ymm2, %k1
 	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
 	vpmulld	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtd	%ymm1, %ymm0, %k0
+	vpcmpnltd	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

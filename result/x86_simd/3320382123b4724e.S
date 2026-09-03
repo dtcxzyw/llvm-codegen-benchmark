@@ -27,8 +27,8 @@ func000000000000002c:
 func0000000000000146:
 	vpand	%ymm2, %ymm1, %ymm1
 	vpmovq2m	%ymm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k0 {%k1}
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -37,8 +37,7 @@ func0000000000000146:
 func00000000000000ca:
 	vpand	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtq	%ymm3, %ymm0, %k1
+	vpcmpnltq	%ymm2, %ymm0, %k1
 	vpcmpgtq	%ymm1, %ymm2, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

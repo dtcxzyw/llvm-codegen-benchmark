@@ -21,13 +21,11 @@ func0000000000000181:
 	vzeroupper
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000014a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm0, %k0
-	vpcmpltd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
+	vpcmpled	%ymm2, %ymm1, %k1
 	kxorb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

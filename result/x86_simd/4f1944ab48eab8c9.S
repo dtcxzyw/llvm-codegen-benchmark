@@ -65,10 +65,9 @@ func0000000000001021:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000194c:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpgtd	%ymm3, %ymm2, %k1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtd	%ymm2, %ymm1, %k1 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltd	%ymm3, %ymm2, %k1
+	vpcmpgtd	%ymm3, %ymm1, %k1 {%k1}
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

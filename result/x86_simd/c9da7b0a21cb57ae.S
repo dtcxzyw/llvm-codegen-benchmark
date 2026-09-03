@@ -199,15 +199,14 @@ func0000000000000034:
 	retq
 
 .LCPI8_0:
-	.long	1
-.LCPI8_1:
 	.long	3
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000026:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpcmpltd	.LCPI8_0(%rip){1to8}, %ymm1, %k1 {%k1}
-	vptestnmd	.LCPI8_1(%rip){1to8}, %ymm2, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vptestnmd	.LCPI8_0(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpled	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -230,15 +229,14 @@ func0000000000000024:
 	retq
 
 .LCPI10_0:
-	.long	1
-.LCPI10_1:
 	.long	2
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000186:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpcmpltd	.LCPI10_0(%rip){1to8}, %ymm1, %k1 {%k1}
-	vptestmd	.LCPI10_1(%rip){1to8}, %ymm2, %k0 {%k1}
+	vpxor	%xmm0, %xmm0, %xmm0
+	vptestmd	.LCPI10_0(%rip){1to8}, %ymm2, %k1 {%k1}
+	vpcmpled	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -75,8 +75,8 @@ func0000000000000048:
 func0000000000000298:
 	vpandd	.LCPI5_2(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqb	.LCPI5_1(%rip), %xmm1, %k0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtb	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltb	%xmm1, %xmm0, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

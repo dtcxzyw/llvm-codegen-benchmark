@@ -190,9 +190,9 @@ func0000000000000028:
 	.long	1
 	.prefalign	4, .Lfunc_end14, nop
 func000000000000014b:
-	vpbroadcastd	.LCPI14_0(%rip), %ymm3
-	vpcmpgtd	%ymm2, %ymm3, %k1
-	vmovdqa32	%ymm3, %ymm1 {%k1}
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpled	%ymm3, %ymm2, %k1
+	vpbroadcastd	.LCPI14_0(%rip), %ymm1 {%k1}
 	vpcmpnltd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

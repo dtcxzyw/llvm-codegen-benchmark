@@ -41,8 +41,8 @@ func000000000000108a:
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpcmpltud	.LCPI2_1(%rip){1to8}, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm2 {%k1}
-	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpcmpgtd	%ymm0, %ymm2, %k0
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpnltd	%ymm0, %ymm2, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

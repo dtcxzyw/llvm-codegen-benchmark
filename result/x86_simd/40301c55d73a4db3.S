@@ -111,8 +111,8 @@ func0000000000000054:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpeqq	.LCPI8_0(%rip){1to4}, %ymm2, %k0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -122,9 +122,9 @@ func0000000000000054:
 func0000000000000314:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
 	vptestmq	%ymm2, %ymm2, %k0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpcmpgtq	%ymm1, %ymm0, %k1
+	vpcmpnltq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -242,14 +242,13 @@ func0000000000000618:
 
 .LCPI18_0:
 	.quad	11
-.LCPI18_1:
-	.quad	1
 	.prefalign	4, .Lfunc_end18, nop
 func000000000000028c:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpgtq	.LCPI18_0(%rip){1to4}, %ymm2, %k0 {%k1}
-	vpcmpltq	.LCPI18_1(%rip){1to4}, %ymm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpleq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

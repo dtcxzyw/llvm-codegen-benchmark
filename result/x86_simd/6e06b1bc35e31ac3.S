@@ -273,8 +273,8 @@ func00000000000000d4:
 	.long	524288
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000144:
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpcmpgtd	%xmm1, %xmm0, %k1
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpnltd	%xmm1, %xmm0, %k1
 	vpbroadcastq	.LCPI14_0(%rip), %ymm1
 	vpbroadcastq	.LCPI14_1(%rip), %ymm1 {%k1}
 	vpcmpltud	.LCPI14_2(%rip){1to4}, %xmm0, %k1

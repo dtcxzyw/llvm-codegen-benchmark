@@ -227,20 +227,31 @@ func0000000000000019:
 	retq
 
 .LCPI4_0:
-	.long	1
-.LCPI4_3:
-	.zero	4,253
-.LCPI4_4:
-	.zero	4,2
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.byte	253
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI4_1:
-	.byte	253
-	.byte	253
-	.byte	253
-	.byte	253
-	.byte	253
-	.byte	253
-	.byte	253
-	.byte	253
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
 	.zero	1
 	.zero	1
 	.zero	1
@@ -250,27 +261,15 @@ func0000000000000019:
 	.zero	1
 	.zero	1
 .LCPI4_2:
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.zero	4,253
+.LCPI4_3:
+	.zero	4,2
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000d:
-	vpcmpltd	.LCPI4_0(%rip){1to8}, %ymm1, %k1
-	vpandd	.LCPI4_3(%rip){1to4}, %xmm0, %xmm1
-	vpord	.LCPI4_4(%rip){1to4}, %xmm1, %xmm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpled	%ymm2, %ymm1, %k1
+	vpandd	.LCPI4_2(%rip){1to4}, %xmm0, %xmm1
+	vpord	.LCPI4_3(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

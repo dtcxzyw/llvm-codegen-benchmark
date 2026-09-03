@@ -46,8 +46,8 @@ func0000000000000181:
 	.zero	16,64
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000002a:
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpcmpgtb	%xmm2, %xmm0, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltb	%xmm2, %xmm0, %k1
 	vptestnmb	.LCPI4_0(%rip), %xmm1, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	retq
