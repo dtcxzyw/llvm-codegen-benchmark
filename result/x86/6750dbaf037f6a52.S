@@ -16,7 +16,6 @@ func0000000000000230:
 	movq	%rdi, %rax
 	notq	%rax
 	shlq	$3, %rax
-	testq	%rax, %rax
 	sete	%cl
 	shrq	$61, %rdi
 	setne	%al

@@ -36,9 +36,8 @@ func000000000000044c:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000084:
-	shlq	$3, %rdx
 	xorl	%eax, %eax
-	testq	%rdx, %rdx
+	shlq	$3, %rdx
 	sete	%al
 	leaq	(%rsi,%rax,8), %rax
 	cmpq	%rdi, %rax

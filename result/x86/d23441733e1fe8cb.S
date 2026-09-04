@@ -87,7 +87,6 @@ func0000000000000004:
 func0000000000000181:
 	xorq	%rsi, %rdi
 	shlq	$3, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 

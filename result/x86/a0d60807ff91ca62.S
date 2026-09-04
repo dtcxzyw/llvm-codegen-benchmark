@@ -68,7 +68,6 @@ func00000000000001a8:
 func0000000000000081:
 	imulq	%rsi, %rdi
 	shlq	$2, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 

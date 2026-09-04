@@ -5,7 +5,6 @@ func0000000000000101:
 	addq	%rdi, %rax
 	notq	%rax
 	shlq	$2, %rax
-	testq	%rax, %rax
 	sete	%al
 	retq
 

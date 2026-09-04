@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	notb	%dl
-	andb	%sil, %dl
-	orb	%dil, %dl
+	andnl	%esi, %edx, %eax
+	orb	%al, %dil
 	sete	%al
 	retq
 

@@ -4,7 +4,6 @@ func0000000000000101:
 	addq	%rsi, %rdi
 	notq	%rdi
 	shlq	$2, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 

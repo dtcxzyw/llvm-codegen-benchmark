@@ -4,7 +4,6 @@ func0000000000000081:
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	shlq	$2, %rax
-	testq	%rax, %rax
 	sete	%al
 	retq
 

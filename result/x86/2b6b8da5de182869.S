@@ -50,7 +50,6 @@ func0000000000000108:
 func0000000000000001:
 	notq	%rdi
 	shlq	$2, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 

@@ -83,7 +83,6 @@ func0000000000000046:
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000011:
 	shlq	$2, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 

@@ -20,7 +20,6 @@ func0000000000000042:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000242:
 	shlq	$3, %rdx
-	testq	%rdx, %rdx
 	sete	%cl
 	cmpq	%rsi, %rdi
 	setae	%al

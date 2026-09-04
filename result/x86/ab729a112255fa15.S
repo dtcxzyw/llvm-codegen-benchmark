@@ -3,23 +3,18 @@
 func000000000000000e:
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	notb	%al
-	andb	%dil, %al
+	andnl	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notb	%al
-	andb	%dil, %al
+	bzhil	%esi, %edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
-	notb	%al
-	andb	%dil, %al
+	andnl	%edi, %eax, %eax
 	retq
 

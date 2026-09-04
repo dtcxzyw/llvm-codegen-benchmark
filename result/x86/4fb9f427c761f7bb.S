@@ -25,7 +25,6 @@ func000000000000002c:
 	cmpq	%rdi, %rdx
 	sete	%cl
 	shlq	$3, %rsi
-	testq	%rsi, %rsi
 	setne	%al
 	orb	%cl, %al
 	retq

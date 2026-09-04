@@ -3,47 +3,34 @@
 func000000000000000c:
 	movl	$510, %eax
 	shlxl	%esi, %eax, %eax
-	notb	%al
-	andb	%dil, %al
+	andnl	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	notb	%al
-	andb	%dil, %al
+	movl	%edi, %eax
+	btrl	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000f:
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	notb	%al
-	andb	%dil, %al
+	movl	%edi, %eax
+	btrl	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
-	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notb	%al
-	andb	%dil, %al
+	bzhil	%esi, %edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
-	movl	$1, %eax
-	shlxl	%esi, %eax, %eax
-	notb	%al
-	andb	%dil, %al
+	movl	%edi, %eax
+	btrl	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000005:
-	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notb	%al
-	andb	%dil, %al
+	bzhil	%esi, %edi, %eax
 	retq
 

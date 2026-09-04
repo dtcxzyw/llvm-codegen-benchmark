@@ -9,7 +9,6 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
 	shlq	$3, %rsi
-	testq	%rsi, %rsi
 	setne	%al
 	orb	%dil, %al
 	retq

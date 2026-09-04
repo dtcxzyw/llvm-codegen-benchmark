@@ -9,7 +9,6 @@ func0000000000000021:
 func0000000000000061:
 	notq	%rdi
 	shlq	$2, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 

@@ -19,7 +19,6 @@ func0000000000000008:
 func0000000000000081:
 	imulq	%rsi, %rdi
 	shlq	$2, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 
@@ -49,7 +48,6 @@ func0000000000000181:
 func0000000000000001:
 	imulq	%rsi, %rdi
 	shlq	$2, %rdi
-	testq	%rdi, %rdi
 	sete	%al
 	retq
 
