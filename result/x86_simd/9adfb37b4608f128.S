@@ -1,31 +1,23 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x3ff0000000000000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vextracti128	$1, %ymm0, %xmm3
-	vpextrq	$1, %xmm3, %rax
-	vextracti128	$1, %ymm2, %xmm4
-	vpextrq	$1, %xmm4, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm5
-	vmovq	%xmm3, %rax
-	vmovq	%xmm4, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm3
-	vpunpcklqdq	%xmm5, %xmm3, %xmm3
-	vpextrq	$1, %xmm0, %rax
-	vpextrq	$1, %xmm2, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm4
-	vmovq	%xmm0, %rax
-	vmovq	%xmm2, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm5
-	vpunpcklqdq	%xmm4, %xmm5, %xmm4
-	vinserti128	$1, %xmm3, %ymm4, %ymm3
+	vcvtuqq2pd	{ru-sae}, %zmm2, %zmm3
+	vbroadcastsd	.LCPI0_0(%rip), %zmm4
+	vdivpd	{rd-sae}, %zmm3, %zmm4, %zmm3
+	vcvtuqq2pd	{rd-sae}, %zmm0, %zmm4
+	vmulpd	{rd-sae}, %zmm3, %zmm4, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpmullq	%ymm2, %ymm4, %ymm4
+	vpsubq	%ymm4, %ymm0, %ymm4
+	vcvtuqq2pd	{rd-sae}, %zmm4, %zmm5
+	vmulpd	{rd-sae}, %zmm3, %zmm5, %zmm3
+	vcvtpd2uqq	{rd-sae}, %zmm3, %zmm3
+	vpmullq	%ymm2, %ymm3, %ymm3
+	vpsubq	%ymm3, %ymm4, %ymm3
+	vpcmpnltuq	%ymm2, %ymm3, %k1
+	vpsubq	%ymm2, %ymm3, %ymm3 {%k1}
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpminuq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0

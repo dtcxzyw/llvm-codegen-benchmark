@@ -1,90 +1,82 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x3ff0000000000000
+.LCPI0_1:
+	.quad	4096
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rcx
-	movl	$4096, %eax
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rcx
-	movl	$4096, %eax
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rcx
-	movl	$4096, %eax
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rcx
-	movl	$4096, %eax
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vcvtuqq2pd	{ru-sae}, %zmm1, %zmm2
+	vbroadcastsd	.LCPI0_0(%rip), %zmm3
+	vdivpd	{rd-sae}, %zmm2, %zmm3, %zmm2
+	vpbroadcastq	.LCPI0_1(%rip), %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm4
+	vmulpd	{rd-sae}, %zmm2, %zmm4, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpmullq	%ymm1, %ymm4, %ymm5
+	vpsubq	%ymm5, %ymm3, %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm5
+	vmulpd	{rd-sae}, %zmm2, %zmm5, %zmm2
+	vcvtpd2uqq	{rd-sae}, %zmm2, %zmm2
+	vpaddq	%ymm2, %ymm4, %ymm4
+	vpmullq	%ymm1, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm3, %ymm2
+	vpcmpnltuq	%ymm1, %ymm2, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm4, %ymm1
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq
 
+.LCPI1_0:
+	.quad	0x3ff0000000000000
+.LCPI1_1:
+	.quad	9223372036854775807
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rsi
-	movabsq	$9223372036854775807, %rcx
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rsi
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rsi
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rsi
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vcvtuqq2pd	{ru-sae}, %zmm1, %zmm2
+	vbroadcastsd	.LCPI1_0(%rip), %zmm3
+	vdivpd	{rd-sae}, %zmm2, %zmm3, %zmm2
+	vpbroadcastq	.LCPI1_1(%rip), %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm4
+	vmulpd	{rd-sae}, %zmm2, %zmm4, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpmullq	%ymm1, %ymm4, %ymm5
+	vpxor	%ymm3, %ymm5, %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm5
+	vmulpd	{rd-sae}, %zmm2, %zmm5, %zmm2
+	vcvtpd2uqq	{rd-sae}, %zmm2, %zmm2
+	vpaddq	%ymm2, %ymm4, %ymm4
+	vpmullq	%ymm1, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm3, %ymm2
+	vpcmpnltuq	%ymm1, %ymm2, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm4, %ymm1
 	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 
+.LCPI2_0:
+	.quad	0x3ff0000000000000
+.LCPI2_1:
+	.quad	9223372036854775807
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000003:
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rsi
-	movabsq	$9223372036854775807, %rcx
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rsi
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2
-	vpextrq	$1, %xmm1, %rsi
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm3
-	vmovq	%xmm1, %rsi
-	movq	%rcx, %rax
-	xorl	%edx, %edx
-	divq	%rsi
-	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vcvtuqq2pd	{ru-sae}, %zmm1, %zmm2
+	vbroadcastsd	.LCPI2_0(%rip), %zmm3
+	vdivpd	{rd-sae}, %zmm2, %zmm3, %zmm2
+	vpbroadcastq	.LCPI2_1(%rip), %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm4
+	vmulpd	{rd-sae}, %zmm2, %zmm4, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpmullq	%ymm1, %ymm4, %ymm5
+	vpxor	%ymm3, %ymm5, %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm5
+	vmulpd	{rd-sae}, %zmm2, %zmm5, %zmm2
+	vcvtpd2uqq	{rd-sae}, %zmm2, %zmm2
+	vpaddq	%ymm2, %ymm4, %ymm4
+	vpmullq	%ymm1, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm3, %ymm2
+	vpcmpnltuq	%ymm1, %ymm2, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm4, %ymm1
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq
 

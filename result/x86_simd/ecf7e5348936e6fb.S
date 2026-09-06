@@ -1,65 +1,61 @@
 	.att_syntax
+.LCPI0_0:
+	.quad	0x3ff0000000000000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	vpmovzxdq	%xmm1, %ymm1
-	vextracti128	$1, %ymm0, %xmm2
-	vpextrq	$1, %xmm2, %rax
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrq	$1, %xmm3, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm4
-	vmovq	%xmm2, %rax
-	vmovd	%xmm3, %ecx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2
-	vpextrq	$1, %xmm0, %rax
-	vpextrq	$1, %xmm1, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm3
-	vmovq	%xmm0, %rax
-	vmovd	%xmm1, %ecx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
+	vcvtuqq2pd	{ru-sae}, %zmm1, %zmm2
+	vbroadcastsd	.LCPI0_0(%rip), %zmm3
+	vdivpd	{rd-sae}, %zmm2, %zmm3, %zmm2
+	vpabsq	%ymm0, %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm4
+	vmulpd	{rd-sae}, %zmm2, %zmm4, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpmullq	%ymm1, %ymm4, %ymm5
+	vpsubq	%ymm5, %ymm3, %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm5
+	vmulpd	{rd-sae}, %zmm2, %zmm5, %zmm2
+	vcvtpd2uqq	{rd-sae}, %zmm2, %zmm2
+	vpaddq	%ymm2, %ymm4, %ymm4
+	vpmullq	%ymm1, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm3, %ymm2
+	vpcmpnltuq	%ymm1, %ymm2, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm4, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpmovq2m	%ymm0, %k1
+	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
+	vpmovqd	%ymm1, %xmm0
 	vzeroupper
 	retq
 
+.LCPI1_0:
+	.quad	0x3ff0000000000000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	vpmovzxdq	%xmm1, %ymm1
-	vextracti128	$1, %ymm0, %xmm2
-	vpextrq	$1, %xmm2, %rax
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrq	$1, %xmm3, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm4
-	vmovq	%xmm2, %rax
-	vmovd	%xmm3, %ecx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2
-	vpextrq	$1, %xmm0, %rax
-	vpextrq	$1, %xmm1, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm3
-	vmovq	%xmm0, %rax
-	vmovd	%xmm1, %ecx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
+	vcvtuqq2pd	{ru-sae}, %zmm1, %zmm2
+	vbroadcastsd	.LCPI1_0(%rip), %zmm3
+	vdivpd	{rd-sae}, %zmm2, %zmm3, %zmm2
+	vpabsq	%ymm0, %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm4
+	vmulpd	{rd-sae}, %zmm2, %zmm4, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpmullq	%ymm1, %ymm4, %ymm5
+	vpsubq	%ymm5, %ymm3, %ymm3
+	vcvtuqq2pd	{rd-sae}, %zmm3, %zmm5
+	vmulpd	{rd-sae}, %zmm2, %zmm5, %zmm2
+	vcvtpd2uqq	{rd-sae}, %zmm2, %zmm2
+	vpaddq	%ymm2, %ymm4, %ymm4
+	vpmullq	%ymm1, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm3, %ymm2
+	vpcmpnltuq	%ymm1, %ymm2, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm4, %ymm1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpmovq2m	%ymm0, %k1
+	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
+	vpmovqd	%ymm1, %xmm0
 	vzeroupper
 	retq
 

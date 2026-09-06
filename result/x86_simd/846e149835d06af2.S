@@ -1,60 +1,56 @@
 	.att_syntax
 .LCPI0_0:
+	.quad	0x3ff0000000000000
+.LCPI0_1:
 	.quad	4
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
-	vextracti128	$1, %ymm2, %xmm3
-	vpextrq	$1, %xmm3, %rax
-	vextracti128	$1, %ymm0, %xmm4
-	vpextrq	$1, %xmm4, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm5
-	vmovq	%xmm3, %rax
-	vmovq	%xmm4, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm3
-	vpunpcklqdq	%xmm5, %xmm3, %xmm3
-	vpextrq	$1, %xmm2, %rax
-	vpextrq	$1, %xmm0, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm4
-	vmovq	%xmm2, %rax
-	vmovq	%xmm0, %rcx
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2
-	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpsllq	$2, %ymm2, %ymm2
-	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vextracti128	$1, %ymm2, %xmm1
-	vpextrq	$1, %xmm1, %rcx
-	vextracti128	$1, %ymm0, %xmm3
-	vpextrq	$1, %xmm3, %rax
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm4
-	vmovq	%xmm1, %rcx
-	vmovq	%xmm3, %rax
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1
-	vpextrq	$1, %xmm2, %rcx
-	vpextrq	$1, %xmm0, %rax
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm3
-	vmovq	%xmm2, %rcx
-	vmovq	%xmm0, %rax
-	cqto
-	idivq	%rcx
-	vmovq	%rax, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	vpabsq	%ymm0, %ymm3
+	vcvtuqq2pd	{ru-sae}, %zmm3, %zmm4
+	vbroadcastsd	.LCPI0_0(%rip), %zmm5
+	vdivpd	{rd-sae}, %zmm4, %zmm5, %zmm4
+	vpabsq	%ymm2, %ymm6
+	vcvtuqq2pd	{rd-sae}, %zmm6, %zmm7
+	vmulpd	{rd-sae}, %zmm4, %zmm7, %zmm7
+	vcvtpd2uqq	{rd-sae}, %zmm7, %zmm7
+	vpmullq	%ymm3, %ymm7, %ymm8
+	vpsubq	%ymm8, %ymm6, %ymm6
+	vcvtuqq2pd	{rd-sae}, %zmm6, %zmm8
+	vmulpd	{rd-sae}, %zmm4, %zmm8, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpaddq	%ymm4, %ymm7, %ymm7
+	vpmullq	%ymm3, %ymm4, %ymm4
+	vpsubq	%ymm4, %ymm6, %ymm4
+	vpcmpnltuq	%ymm3, %ymm4, %k0
+	vpmovm2q	%k0, %ymm3
+	vpsubq	%ymm3, %ymm7, %ymm3
+	vpxor	%ymm0, %ymm2, %ymm2
+	vpmovq2m	%ymm2, %k1
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpsubq	%ymm3, %ymm2, %ymm3 {%k1}
+	vpsllq	$2, %ymm3, %ymm3
+	vpaddq	.LCPI0_1(%rip){1to4}, %ymm3, %ymm3
+	vpsubq	%ymm1, %ymm0, %ymm1
+	vpabsq	%ymm3, %ymm0
+	vcvtuqq2pd	{ru-sae}, %zmm0, %zmm4
+	vdivpd	{rd-sae}, %zmm4, %zmm5, %zmm4
+	vpabsq	%ymm1, %ymm5
+	vcvtuqq2pd	{rd-sae}, %zmm5, %zmm6
+	vmulpd	{rd-sae}, %zmm4, %zmm6, %zmm6
+	vcvtpd2uqq	{rd-sae}, %zmm6, %zmm6
+	vpmullq	%ymm0, %ymm6, %ymm7
+	vpsubq	%ymm7, %ymm5, %ymm5
+	vcvtuqq2pd	{rd-sae}, %zmm5, %zmm7
+	vmulpd	{rd-sae}, %zmm4, %zmm7, %zmm4
+	vcvtpd2uqq	{rd-sae}, %zmm4, %zmm4
+	vpmullq	%ymm0, %ymm4, %ymm7
+	vpsubq	%ymm7, %ymm5, %ymm5
+	vpcmpnltuq	%ymm0, %ymm5, %k0
+	vpmovm2q	%k0, %ymm0
+	vpaddq	%ymm4, %ymm6, %ymm4
+	vpsubq	%ymm0, %ymm4, %ymm0
+	vpxor	%ymm3, %ymm1, %ymm1
+	vpmovq2m	%ymm1, %k1
+	vpsubq	%ymm0, %ymm2, %ymm0 {%k1}
 	retq
 

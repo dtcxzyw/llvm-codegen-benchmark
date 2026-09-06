@@ -1,30 +1,11 @@
 	.att_syntax
 .LCPI0_0:
-	.byte	7
-	.byte	7
-	.byte	7
-	.byte	7
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
+	.quad	0x3ff0000000000000
 .LCPI0_1:
-	.byte	1
-	.byte	2
-	.byte	4
-	.byte	8
-	.byte	16
-	.byte	32
-	.byte	64
-	.byte	128
+	.byte	7
+	.byte	7
+	.byte	7
+	.byte	7
 	.zero	1
 	.zero	1
 	.zero	1
@@ -33,55 +14,66 @@
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI0_3:
-	.byte	1
-	.byte	2
-	.byte	4
-	.byte	8
-	.byte	16
-	.byte	32
-	.byte	64
-	.byte	128
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_2:
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI0_4:
+	.byte	1
+	.byte	2
+	.byte	4
+	.byte	8
+	.byte	16
+	.byte	32
+	.byte	64
+	.byte	128
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	0
+.LCPI0_3:
 	.zero	4,7
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000002:
-	vextracti128	$1, %ymm0, %xmm2
-	vpextrq	$1, %xmm2, %rax
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrq	$1, %xmm3, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm4
-	vmovq	%xmm2, %rax
-	vmovq	%xmm3, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm4, %xmm2, %xmm2
-	vpextrq	$1, %xmm0, %rax
-	vpextrq	$1, %xmm1, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm0, %rax
-	vmovq	%xmm1, %rcx
-	xorl	%edx, %edx
-	divq	%rcx
-	vmovq	%rdx, %xmm0
-	vpunpcklqdq	%xmm3, %xmm0, %xmm0
-	vinserti128	$1, %xmm2, %ymm0, %ymm0
+	vcvtuqq2pd	{ru-sae}, %zmm1, %zmm2
+	vbroadcastsd	.LCPI0_0(%rip), %zmm3
+	vdivpd	{rd-sae}, %zmm2, %zmm3, %zmm2
+	vcvtuqq2pd	{rd-sae}, %zmm0, %zmm3
+	vmulpd	{rd-sae}, %zmm2, %zmm3, %zmm3
+	vcvtpd2uqq	{rd-sae}, %zmm3, %zmm3
+	vpmullq	%ymm1, %ymm3, %ymm3
+	vpsubq	%ymm3, %ymm0, %ymm0
+	vcvtuqq2pd	{rd-sae}, %zmm0, %zmm3
+	vmulpd	{rd-sae}, %zmm2, %zmm3, %zmm2
+	vcvtpd2uqq	{rd-sae}, %zmm2, %zmm2
+	vpmullq	%ymm1, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
+	vpcmpnltuq	%ymm1, %ymm0, %k1
+	vpsubq	%ymm1, %ymm0, %ymm0 {%k1}
 	vpmovqb	%ymm0, %xmm0
-	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
-	vmovq	.LCPI0_3(%rip), %xmm1
+	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
+	vmovq	.LCPI0_4(%rip), %xmm1
 	vpshufb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
