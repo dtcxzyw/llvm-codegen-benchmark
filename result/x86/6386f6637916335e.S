@@ -6,6 +6,6 @@ func0000000000000016:
 	movb	$60, %cl
 	bzhiq	%rcx, %rsi, %rcx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

@@ -7,6 +7,6 @@ func0000000000000006:
 	movabsq	$-6148914691236517205, %rcx
 	imulq	%rsi, %rcx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

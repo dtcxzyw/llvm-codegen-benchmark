@@ -3,7 +3,7 @@
 func0000000000000000:
 	movq	%rsi, %rax
 	mulq	%rdx
-	seto	%al
+	setb	%al
 	orb	%dil, %al
 	retq
 

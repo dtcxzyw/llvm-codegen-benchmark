@@ -3,7 +3,7 @@
 func0000000000000010:
 	movq	%rsi, %rax
 	mulq	%rdx
-	seto	%cl
+	setb	%cl
 	cmpq	%rdi, %rax
 	seta	%al
 	orb	%cl, %al
@@ -13,7 +13,7 @@ func0000000000000010:
 func0000000000000012:
 	movq	%rsi, %rax
 	mulq	%rdx
-	seto	%cl
+	setb	%cl
 	cmpq	%rdi, %rax
 	setae	%al
 	orb	%cl, %al

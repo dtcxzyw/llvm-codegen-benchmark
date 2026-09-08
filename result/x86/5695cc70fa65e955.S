@@ -5,6 +5,6 @@ func0000000000000000:
 	movl	$1000000000, %ecx
 	mulq	%rcx
 	movq	$-1, %rcx
-	cmovoq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq
 

@@ -5,7 +5,7 @@ func0000000000000000:
 	movl	%esi, %edx
 	xorl	%ecx, %ecx
 	mulq	%rdx
-	setno	%cl
+	setae	%cl
 	movq	%rcx, %rax
 	retq
 

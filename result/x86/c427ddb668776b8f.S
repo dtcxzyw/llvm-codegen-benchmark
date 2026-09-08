@@ -4,7 +4,7 @@ func0000000000000000:
 	movq	%rsi, %rax
 	movl	%edx, %ecx
 	mulq	%rcx
-	seto	%al
+	setb	%al
 	orb	%dil, %al
 	retq
 

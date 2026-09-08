@@ -6,7 +6,7 @@ func0000000000000000:
 	movl	$1000000000, %ecx
 	mulq	%rcx
 	movq	$-1, %rcx
-	cmovoq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -16,6 +16,6 @@ func0000000000000002:
 	movl	$23, %ecx
 	mulq	%rcx
 	movq	$-1, %rcx
-	cmovoq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq
 

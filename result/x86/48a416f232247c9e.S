@@ -5,7 +5,7 @@ func0000000000000000:
 	movslq	%edi, %rax
 	movl	$24, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -14,6 +14,6 @@ func0000000000000002:
 	movslq	%edi, %rax
 	movl	$24, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

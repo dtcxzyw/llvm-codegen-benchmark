@@ -5,7 +5,7 @@ func0000000000000000:
 	sarq	%rax
 	movl	$1000000000, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -14,6 +14,6 @@ func0000000000000002:
 	sarq	$3, %rax
 	movl	$23, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

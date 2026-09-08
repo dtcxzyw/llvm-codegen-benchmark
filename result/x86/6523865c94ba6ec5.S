@@ -4,7 +4,7 @@ func0000000000000002:
 	movq	%rdi, %rax
 	shrq	$4, %rsi
 	mulq	%rsi
-	seto	%dl
+	setb	%dl
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -12,6 +12,6 @@ func0000000000000000:
 	movq	%rsi, %rax
 	shrq	$3, %rax
 	mulq	%rdi
-	seto	%dl
+	setb	%dl
 	retq
 

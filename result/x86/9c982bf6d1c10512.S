@@ -3,7 +3,7 @@
 func0000000000000006:
 	leaq	(%rsi,%rsi,2), %rax
 	mulq	%rdi
-	seto	%dl
+	setb	%dl
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -12,6 +12,6 @@ func0000000000000000:
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rcx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

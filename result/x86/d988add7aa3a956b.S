@@ -6,6 +6,6 @@ func0000000000000000:
 	cmovaq	%rdi, %rax
 	movl	$9, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

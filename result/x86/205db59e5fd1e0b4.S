@@ -4,7 +4,7 @@ func000000000000000e:
 	movl	%edi, %eax
 	leal	1(%rsi,%rdx), %ecx
 	mull	%ecx
-	seto	%al
+	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -12,6 +12,6 @@ func0000000000000008:
 	movl	%edi, %eax
 	leal	1(%rsi,%rdx), %ecx
 	mull	%ecx
-	seto	%al
+	setb	%al
 	retq
 

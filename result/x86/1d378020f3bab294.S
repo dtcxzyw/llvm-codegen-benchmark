@@ -5,7 +5,7 @@ func0000000000000004:
 	imulq	%rdx, %rax
 	mulq	%rdi
 	movq	$-1, %rcx
-	cmovoq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -14,6 +14,6 @@ func0000000000000006:
 	imulq	%rdx, %rsi
 	mulq	%rsi
 	movq	$-1, %rcx
-	cmovoq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq
 

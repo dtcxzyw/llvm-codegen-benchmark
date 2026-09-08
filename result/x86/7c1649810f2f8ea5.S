@@ -7,6 +7,6 @@ func0000000000000000:
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
 	mulq	%rdi
-	seto	%dl
+	setb	%dl
 	retq
 

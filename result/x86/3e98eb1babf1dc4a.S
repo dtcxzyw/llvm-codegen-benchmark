@@ -4,7 +4,7 @@ func0000000000000000:
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx
 	mulq	%rsi
-	setno	%cl
+	setae	%cl
 	movq	%rcx, %rax
 	retq
 

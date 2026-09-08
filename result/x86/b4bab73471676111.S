@@ -43,7 +43,7 @@ func000000000000004c:
 func0000000000000048:
 	movl	%esi, %eax
 	mulq	%rdi
-	seto	%al
+	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

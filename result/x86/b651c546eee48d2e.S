@@ -8,6 +8,6 @@ func0000000000000000:
 	orq	%rdx, %rax
 	mulq	%rdi
 	movq	$-1, %rcx
-	cmovoq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq
 

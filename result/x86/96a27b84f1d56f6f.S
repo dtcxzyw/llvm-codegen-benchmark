@@ -111,6 +111,6 @@ func00000000000000ec:
 func00000000000000f8:
 	movl	%edi, %eax
 	mull	%esi
-	seto	%al
+	setb	%al
 	retq
 

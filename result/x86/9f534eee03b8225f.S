@@ -6,7 +6,7 @@ func0000000000000002:
 	imulq	%rdi, %rax
 	movl	$56, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -21,6 +21,6 @@ func0000000000000000:
 	addq	%rcx, %rax
 	movl	$24, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

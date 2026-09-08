@@ -5,6 +5,6 @@ func0000000000000000:
 	sarq	$3, %rax
 	movl	$48, %ecx
 	mulq	%rcx
-	seto	%dl
+	setb	%dl
 	retq
 

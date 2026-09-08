@@ -3,6 +3,6 @@
 func0000000000000000:
 	movl	%edi, %eax
 	imull	%esi, %eax
-	seto	%dl
+	setb	%dl
 	retq
 

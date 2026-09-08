@@ -4,7 +4,7 @@ func0000000000000004:
 	movl	%edx, %eax
 	imulq	%rsi, %rax
 	mulq	%rdi
-	seto	%al
+	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -12,7 +12,7 @@ func0000000000000006:
 	movl	%edx, %eax
 	imulq	%rsi, %rax
 	mulq	%rdi
-	seto	%al
+	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -21,6 +21,6 @@ func000000000000000e:
 	movl	%edx, %ecx
 	imulq	%rsi, %rcx
 	mulq	%rcx
-	seto	%al
+	setb	%al
 	retq
 
