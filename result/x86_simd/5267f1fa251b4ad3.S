@@ -16,8 +16,7 @@ func0000000000000006:
 	vpslld	$8, %ymm3, %ymm4
 	vpsubd	%ymm4, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
-	vpmovd2m	%ymm2, %k1
-	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:

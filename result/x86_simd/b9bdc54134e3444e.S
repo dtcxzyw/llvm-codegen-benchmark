@@ -5,8 +5,7 @@
 	.long	12
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000366:
-	vpmovd2m	%ymm1, %k1
-	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm0
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
@@ -17,8 +16,7 @@ func0000000000000366:
 	.long	4
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000030a:
-	vpmovd2m	%ymm1, %k1
-	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm0
 	vpcmpgtd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
@@ -39,8 +37,7 @@ func0000000000000526:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000036a:
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpmovd2m	%ymm1, %k1
-	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
+	vblendvps	%ymm1, %ymm0, %ymm1, %ymm0
 	vpcmpgtd	%ymm2, %ymm0, %k1
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

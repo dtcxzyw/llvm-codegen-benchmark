@@ -61,8 +61,7 @@ func0000000000000011:
 	.long	7
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000d:
-	vpmovd2m	%ymm2, %k1
-	vpblendmd	%ymm1, %ymm2, %ymm1 {%k1}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm1
 	vpternlogd	$248, .LCPI2_0(%rip){1to8}, %ymm1, %ymm0
 	retq
 

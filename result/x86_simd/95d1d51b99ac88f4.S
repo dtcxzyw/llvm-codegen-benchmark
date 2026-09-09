@@ -7,8 +7,7 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000006:
-	vpmovq2m	%ymm2, %k1
-	vblendmpd	%ymm0, %ymm1, %ymm0 {%k1}
+	vblendvpd	%ymm2, %ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:

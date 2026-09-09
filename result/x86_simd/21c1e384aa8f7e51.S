@@ -18,7 +18,6 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000c6:
 	vpand	%ymm1, %ymm2, %ymm2
-	vpmovd2m	%ymm2, %k1
-	vpblendmd	%ymm0, %ymm1, %ymm0 {%k1}
+	vblendvps	%ymm2, %ymm0, %ymm1, %ymm0
 	retq
 

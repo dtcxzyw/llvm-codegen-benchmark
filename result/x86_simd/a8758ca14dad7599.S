@@ -5,8 +5,7 @@
 func000000000000001b:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpmovd2m	%ymm2, %k2
-	vpblendmd	%ymm1, %ymm2, %ymm0 {%k2}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 
@@ -16,8 +15,7 @@ func000000000000001b:
 func0000000000000018:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpmovd2m	%ymm2, %k2
-	vpblendmd	%ymm1, %ymm2, %ymm0 {%k2}
+	vblendvps	%ymm2, %ymm1, %ymm2, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 

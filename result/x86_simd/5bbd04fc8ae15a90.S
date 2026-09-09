@@ -30,8 +30,7 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000006:
-	vpmovq2m	%ymm2, %k1
-	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
+	vblendvpd	%ymm2, %ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:
