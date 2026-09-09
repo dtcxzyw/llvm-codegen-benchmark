@@ -8,10 +8,11 @@ func0000000000000002:
 	slli	a2, a1, 32
 	slli	a0, a0, 32
 	mulhu	a0, a2, a0
-	srli	a0, a0, 33
-	slli	a2, a0, 1
-	sub	a0, a1, a0
-	subw	a0, a0, a2
+	srli	a2, a0, 33
+	srli	a0, a0, 32
+	andi	a0, a0, -2
+	sub	a1, a1, a2
+	subw	a0, a1, a0
 	ret
 
 func0000000000000000:

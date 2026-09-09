@@ -30,10 +30,11 @@ func0000000000000007:
 	slli	a1, a1, 12
 	addi	a1, a1, -1365
 	mul	a1, a0, a1
-	srli	a1, a1, 33
-	slli	a2, a1, 1
-	sub	a0, a0, a1
-	subw	a0, a0, a2
+	srli	a2, a1, 33
+	srli	a1, a1, 32
+	andi	a1, a1, -2
+	sub	a0, a0, a2
+	subw	a0, a0, a1
 	ret
 
 func0000000000000005:

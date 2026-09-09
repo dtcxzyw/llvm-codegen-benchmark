@@ -22,8 +22,9 @@ func0000000000000001:
 	slli	a2, a1, 32
 	slli	a0, a0, 32
 	mulhu	a0, a2, a0
+	srli	a2, a0, 32
 	srli	a0, a0, 33
-	slli	a2, a0, 1
+	andi	a2, a2, -2
 	add	a0, a0, a2
 	subw	a1, a1, a0
 	xori	a0, a1, 3

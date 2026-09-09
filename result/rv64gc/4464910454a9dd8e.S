@@ -3,8 +3,9 @@ func0000000000000005:
 	slli	a2, a2, 4
 	slli	a3, a1, 48
 	mulhu	a2, a3, a2
+	srli	a3, a2, 16
 	srli	a2, a2, 17
-	slli	a3, a2, 1
+	andi	a3, a3, -2
 	sub	a1, a1, a2
 	lui	a2, 16
 	sub	a1, a1, a3
