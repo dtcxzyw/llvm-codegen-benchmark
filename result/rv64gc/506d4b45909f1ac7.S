@@ -6,11 +6,11 @@ func000000000000000f:
 	ret
 
 func0000000000000008:
-	li	a1, 1
+	li	a1, -1
 	srli	a0, a0, 3
 	slli	a0, a0, 35
 	slli	a1, a1, 35
-	add	a0, a0, a1
+	sub	a0, a0, a1
 	ret
 
 func000000000000000d:

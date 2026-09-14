@@ -7,11 +7,11 @@ func0000000000000057:
 
 func0000000000000040:
 	slli	a0, a0, 32
+	li	a2, -1
 	add	a0, a0, a1
-	bseti	a1, zero, 32
-	add	a0, a0, a1
-	srli	a0, a0, 32
-	slli	a0, a0, 32
+	slli	a2, a2, 32
+	sub	a0, a0, a2
+	and	a0, a0, a2
 	ret
 
 func0000000000000043:

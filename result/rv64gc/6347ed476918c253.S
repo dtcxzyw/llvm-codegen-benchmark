@@ -47,10 +47,7 @@ func0000000000000015:
 	addi	a2, a2, 325
 	slli	a2, a2, 13
 	mul	a1, a1, a2
-	lui	a2, 2575
-	addi	a2, a2, -325
-	slli	a2, a2, 13
-	add	a0, a0, a2
+	sub	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

@@ -1,9 +1,8 @@
 func0000000000000002:
 	li	a2, -1
 	slli	a2, a2, 33
-	bseti	a3, zero, 33
 	or	a1, a1, a2
-	add	a0, a0, a3
+	sub	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

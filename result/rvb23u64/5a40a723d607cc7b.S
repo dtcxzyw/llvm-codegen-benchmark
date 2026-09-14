@@ -2,11 +2,11 @@ func0000000000000008:
 	li	a1, 7
 	slli	a0, a0, 32
 	slli	a1, a1, 32
+	li	a2, -1
 	add	a0, a0, a1
-	srli	a0, a0, 35
-	slli	a0, a0, 35
-	bseti	a1, zero, 35
-	add	a0, a0, a1
+	slli	a2, a2, 35
+	and	a0, a0, a2
+	sub	a0, a0, a2
 	ret
 
 func000000000000001d:
@@ -48,10 +48,10 @@ func0000000000000010:
 	li	a1, 31
 	slli	a0, a0, 32
 	slli	a1, a1, 32
+	li	a2, -1
 	add	a0, a0, a1
-	srli	a0, a0, 37
-	slli	a0, a0, 37
-	bseti	a1, zero, 37
-	add	a0, a0, a1
+	slli	a2, a2, 37
+	and	a0, a0, a2
+	sub	a0, a0, a2
 	ret
 
