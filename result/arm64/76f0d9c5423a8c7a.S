@@ -1,13 +1,11 @@
 func0000000000000024:
-	cmp	w0, w1
-	csel	w8, wzr, w1, lo
-	sub	w0, w0, w8
+	subs	w8, w0, w1
+	csel	w0, w0, w8, lo
 	ret
 
 func0000000000000030:
-	cmp	w0, w1
-	csel	w8, wzr, w1, lt
-	sub	w0, w0, w8
+	subs	w8, w0, w1
+	csel	w0, w0, w8, lt
 	ret
 
 func0000000000000050:
@@ -29,20 +27,17 @@ func0000000000000041:
 	ret
 
 func0000000000000020:
-	cmp	w0, w1
-	csel	w8, wzr, w1, lo
-	sub	w0, w0, w8
+	subs	w8, w0, w1
+	csel	w0, w0, w8, lo
 	ret
 
 func0000000000000021:
-	cmp	w0, w1
-	csel	w8, wzr, w1, lo
-	sub	w0, w0, w8
+	subs	w8, w0, w1
+	csel	w0, w0, w8, lo
 	ret
 
 func0000000000000025:
-	cmp	w0, w1
-	csel	w8, wzr, w1, lo
-	sub	w0, w0, w8
+	subs	w8, w0, w1
+	csel	w0, w0, w8, lo
 	ret
 

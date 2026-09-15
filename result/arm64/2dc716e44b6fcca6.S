@@ -1,13 +1,11 @@
 func0000000000000012:
-	cmp	x0, x1
-	csel	x8, xzr, x1, lo
-	sub	x0, x0, x8
+	subs	x8, x0, x1
+	csel	x0, x0, x8, lo
 	ret
 
 func0000000000000019:
-	cmp	x0, x1
-	csel	x8, xzr, x1, lt
-	sub	x0, x0, x8
+	subs	x8, x0, x1
+	csel	x0, x0, x8, lt
 	ret
 
 func0000000000000022:
@@ -30,27 +28,23 @@ func0000000000000020:
 	ret
 
 func0000000000000004:
-	cmp	x0, x1
-	csel	x8, xzr, x1, eq
-	sub	x0, x0, x8
+	subs	x8, x0, x1
+	csel	x0, x0, x8, eq
 	ret
 
 func0000000000000011:
-	cmp	x0, x1
-	csel	x8, xzr, x1, lo
-	sub	x0, x0, x8
+	subs	x8, x0, x1
+	csel	x0, x0, x8, lo
 	ret
 
 func0000000000000010:
-	cmp	x0, x1
-	csel	x8, xzr, x1, lo
-	sub	x0, x0, x8
+	subs	x8, x0, x1
+	csel	x0, x0, x8, lo
 	ret
 
 func0000000000000018:
-	cmp	x0, x1
-	csel	x8, xzr, x1, lt
-	sub	x0, x0, x8
+	subs	x8, x0, x1
+	csel	x0, x0, x8, lt
 	ret
 
 func0000000000000024:
