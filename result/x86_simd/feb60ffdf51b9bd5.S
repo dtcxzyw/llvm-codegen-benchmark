@@ -45,9 +45,8 @@ func0000000000000063:
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2 {%k1}
 	vpcmpeqd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI3_0:

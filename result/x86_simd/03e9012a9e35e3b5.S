@@ -37,9 +37,8 @@ func000000000000004b:
 func000000000000007b:
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpbroadcastq	.LCPI2_1(%rip), %ymm1
-	vpmullq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
+	vpmullq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 

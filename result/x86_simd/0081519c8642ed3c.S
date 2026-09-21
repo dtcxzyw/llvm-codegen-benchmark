@@ -39,13 +39,11 @@ func0000000000000000:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
-.LCPI4_0:
-	.long	4
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpslld	$2, %xmm0, %xmm0
-	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -59,23 +57,19 @@ func000000000000007f:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
-.LCPI6_0:
-	.long	16
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000028:
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpslld	$4, %xmm0, %xmm0
-	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
-.LCPI7_0:
-	.long	8
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000060:
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpslld	$3, %xmm0, %xmm0
-	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -99,13 +93,11 @@ func0000000000000023:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
-.LCPI10_0:
-	.long	2
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000007:
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm0
-	vpaddd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

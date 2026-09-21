@@ -3,11 +3,10 @@
 	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000032:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
-	vpsllvd	%ymm0, %ymm1, %ymm0
+	vpbroadcastd	.LCPI0_0(%rip), %ymm2
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsllvd	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI1_0:
@@ -26,11 +25,10 @@ func0000000000000036:
 	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000017:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpbroadcastd	.LCPI2_0(%rip), %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
-	vpsllvd	%ymm0, %ymm1, %ymm0
+	vpbroadcastd	.LCPI2_0(%rip), %ymm2
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsllvd	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI3_0:

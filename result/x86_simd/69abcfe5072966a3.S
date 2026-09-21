@@ -15,12 +15,12 @@ func0000000000000015:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
-.LCPI2_0:
-	.quad	2
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000022:
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:
@@ -55,20 +55,20 @@ func000000000000003d:
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
-.LCPI7_0:
-	.quad	2
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000020:
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
-.LCPI8_0:
-	.quad	2
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000002:
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI9_0:
@@ -80,10 +80,11 @@ func000000000000002a:
 	retq
 
 .LCPI10_0:
-	.quad	4
+	.quad	3
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000035:
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
@@ -112,10 +113,11 @@ func0000000000000030:
 	retq
 
 .LCPI14_0:
-	.quad	2147483649
+	.quad	2147483648
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000014:
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	vpaddq	.LCPI14_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
@@ -127,12 +129,12 @@ func000000000000003a:
 	vpaddq	.LCPI15_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
-.LCPI16_0:
-	.quad	2
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000038:
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI16_0(%rip){1to4}, %ymm0, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI17_0:

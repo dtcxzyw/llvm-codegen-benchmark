@@ -4,7 +4,7 @@ func0000000000000000:
 	vand.vi	v9, v9, 1
 	vand.vi	v8, v8, 1
 	vmsne.vi	v9, v9, 0
-	vmsne.vi	v8, v8, 0
-	vmorn.mm	v0, v9, v8
+	vmseq.vi	v8, v8, 0
+	vmor.mm	v0, v8, v9
 	ret
 

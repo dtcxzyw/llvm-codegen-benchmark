@@ -27,11 +27,10 @@ func00000000000000d4:
 	.long	4294967266
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000054:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpbroadcastd	.LCPI2_0(%rip), %ymm2
-	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpmulld	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:

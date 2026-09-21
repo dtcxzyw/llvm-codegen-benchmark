@@ -6,9 +6,8 @@ func0000000000000000:
 	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpsubq	%ymm1, %ymm2, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm1 {%k1}
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 
@@ -19,9 +18,8 @@ func0000000000000040:
 	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpsubq	%ymm1, %ymm2, %ymm0
 	vpsrlq	$1, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm1 {%k1}
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
 

@@ -32,8 +32,7 @@ func0000000000000289:
 func000000000000031f:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0

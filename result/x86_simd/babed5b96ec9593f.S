@@ -164,9 +164,8 @@ func00000000000000a8:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000018:
 	vpandd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpcmpnleud	.LCPI8_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -179,9 +178,8 @@ func0000000000000018:
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000014:
 	vpandd	.LCPI9_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpcmpltud	.LCPI9_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

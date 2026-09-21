@@ -8,8 +8,7 @@ func00000000000000a4:
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$21, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -22,8 +21,7 @@ func00000000000000a5:
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$21, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

@@ -7,8 +7,7 @@ func00000000000000c1:
 	vpaddd	%xmm3, %xmm0, %xmm0
 	vpsrad	$3, %xmm0, %xmm0
 	vpcmpeqd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq

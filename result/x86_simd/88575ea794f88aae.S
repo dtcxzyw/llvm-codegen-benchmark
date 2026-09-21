@@ -11,12 +11,10 @@ func0000000000000000:
 	retq
 
 .LCPI1_0:
-	.long	4294967292
+	.long	3
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vpxord	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

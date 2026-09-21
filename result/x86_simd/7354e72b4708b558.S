@@ -51,8 +51,7 @@ func0000000000000024:
 	vpsrld	$31, %ymm1, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrad	$1, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

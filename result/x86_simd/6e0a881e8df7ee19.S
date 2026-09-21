@@ -190,15 +190,12 @@ func0000000000000055:
 	.short	0
 	.short	5
 	.short	0
-.LCPI6_1:
-	.short	5
-	.short	0
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000038:
 	vpmovzxbd	%xmm1, %ymm1
-	vpdpwssd	.LCPI6_1(%rip){1to8}, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpmaddwd	.LCPI6_0(%rip), %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI7_0:

@@ -65,9 +65,8 @@ func0000000000000090:
 func0000000000000005:
 	vpmovqd	%ymm2, %xmm2
 	vpmulld	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 

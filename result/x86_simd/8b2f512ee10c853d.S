@@ -3,8 +3,7 @@
 func0000000000000c0a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -94,8 +93,7 @@ func0000000000000178:
 func0000000000000c01:
 	vpbroadcastd	.LCPI7_0(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -120,8 +118,7 @@ func0000000000000c61:
 func0000000000000c74:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpltud	.LCPI9_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -143,8 +140,7 @@ func0000000000000a61:
 func0000000000000c2a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	%ymm2, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -253,8 +249,7 @@ func0000000000000a2a:
 func0000000000000c78:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI21_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -363,8 +358,7 @@ func0000000000000126:
 func0000000000000c26:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -400,8 +394,7 @@ func0000000000000c0c:
 func0000000000000c68:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI33_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -481,8 +474,7 @@ func0000000000000108:
 func0000000000000c04:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpltud	.LCPI39_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -507,8 +499,7 @@ func0000000000000c41:
 func0000000000000c08:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI41_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -596,8 +587,7 @@ func000000000000010a:
 func0000000000000c06:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -610,8 +600,7 @@ func0000000000000c06:
 func0000000000000c24:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpltud	.LCPI49_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -638,8 +627,8 @@ func0000000000001461:
 func0000000000000c38:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI51_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -32,9 +32,9 @@ func0000000000000185:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000010:
 	vptestnmd	%ymm2, %ymm2, %k1
-	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vmovdqa32	%ymm1, %ymm1 {%k1} {z}
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI4_0:
@@ -60,9 +60,9 @@ func0000000000000181:
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000014:
 	vptestnmd	%ymm2, %ymm2, %k1
-	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpxord	%ymm2, %ymm1, %ymm2 {%k1}
+	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:

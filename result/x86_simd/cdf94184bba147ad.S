@@ -48,8 +48,7 @@ func0000000000000184:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vptestmb	.LCPI1_0(%rip), %xmm2, %k1
-	vpaddd	%ymm0, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 

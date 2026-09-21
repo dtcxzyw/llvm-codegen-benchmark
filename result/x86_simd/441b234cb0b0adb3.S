@@ -10,8 +10,7 @@ func0000000000000311:
 	vpaddd	%ymm3, %ymm0, %ymm0
 	vpsrad	$3, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -61,8 +60,7 @@ func0000000000000301:
 	vpaddd	%ymm3, %ymm0, %ymm0
 	vpsrad	$9, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

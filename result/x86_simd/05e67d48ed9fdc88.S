@@ -42,17 +42,27 @@ func000000000000003f:
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
+.LCPI3_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI3_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
-	vpmovzxwd	%xmm1, %ymm1
 	vpmovzxwd	%xmm2, %ymm2
 	vpslld	$31, %ymm2, %ymm2
 	vpsrad	$31, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm0, %ymm0
-	vpslld	$31, %ymm1, %ymm1
-	vpsrad	$31, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpandd	.LCPI3_1(%rip){1to4}, %xmm1, %xmm1
+	vpmovzxwd	%xmm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

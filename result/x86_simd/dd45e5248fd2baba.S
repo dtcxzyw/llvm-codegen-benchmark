@@ -47,8 +47,7 @@ func0000000000000043:
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000063:
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -95,16 +94,14 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end14, nop
 func000000000000005b:
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000060:
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -118,8 +115,7 @@ func0000000000000040:
 	.prefalign	4, .Lfunc_end17, nop
 func0000000000000061:
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -132,8 +128,7 @@ func000000000000000b:
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000059:
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -146,16 +141,14 @@ func0000000000000033:
 	.prefalign	4, .Lfunc_end21, nop
 func000000000000003b:
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end22, nop
 func0000000000000039:
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -210,8 +203,7 @@ func00000000000000c0:
 	.prefalign	4, .Lfunc_end30, nop
 func0000000000000058:
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -225,8 +217,7 @@ func0000000000000049:
 	.prefalign	4, .Lfunc_end32, nop
 func0000000000000062:
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -239,8 +230,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end34, nop
 func0000000000000038:
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

@@ -145,10 +145,9 @@ func0000000000000075:
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000050:
 	vpmullq	.LCPI12_0(%rip){1to4}, %ymm2, %ymm2
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI13_0:

@@ -45,14 +45,11 @@ func0000000000000015:
 	.short	0
 	.short	3
 	.short	0
-.LCPI1_1:
-	.short	3
-	.short	0
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vpmovsxbd	%xmm1, %ymm1
-	vpdpwssd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpmaddwd	.LCPI1_0(%rip), %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

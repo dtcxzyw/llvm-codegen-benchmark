@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000201:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
@@ -132,8 +131,7 @@ func0000000000000268:
 
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000008:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnleud	%xmm1, %xmm0, %k0
@@ -213,8 +211,7 @@ func0000000000000624:
 
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000226:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
@@ -223,8 +220,7 @@ func0000000000000226:
 
 	.prefalign	4, .Lfunc_end20, nop
 func0000000000000006:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
@@ -233,8 +229,7 @@ func0000000000000006:
 
 	.prefalign	4, .Lfunc_end21, nop
 func0000000000000206:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
@@ -243,8 +238,7 @@ func0000000000000206:
 
 	.prefalign	4, .Lfunc_end22, nop
 func0000000000000401:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
@@ -253,8 +247,7 @@ func0000000000000401:
 
 	.prefalign	4, .Lfunc_end23, nop
 func0000000000000406:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
@@ -330,8 +323,7 @@ func0000000000000081:
 
 	.prefalign	4, .Lfunc_end30, nop
 func0000000000000601:
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0

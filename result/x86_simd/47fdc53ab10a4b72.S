@@ -36,10 +36,11 @@ func0000000000000051:
 	retq
 
 .LCPI4_0:
-	.long	13
+	.long	12
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000050:
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -53,20 +54,20 @@ func0000000000000010:
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
-.LCPI6_0:
-	.long	2
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000015:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:
-	.long	9
+	.long	8
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000011:
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -90,10 +91,11 @@ func0000000000000004:
 	retq
 
 .LCPI10_0:
-	.long	3
+	.long	2
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000005:
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI10_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -117,21 +119,21 @@ func00000000000000c0:
 	retq
 
 .LCPI13_0:
-	.long	6
+	.long	5
 	.prefalign	4, .Lfunc_end13, nop
 func00000000000000fc:
 	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI13_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI13_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
-.LCPI14_0:
-	.long	2
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000080:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI14_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI15_0:
@@ -143,13 +145,12 @@ func00000000000000fd:
 	vpaddd	.LCPI15_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
-.LCPI16_0:
-	.long	2
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000044:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI16_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI17_0:

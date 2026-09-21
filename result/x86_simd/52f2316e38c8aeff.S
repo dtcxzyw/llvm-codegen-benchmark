@@ -37,11 +37,10 @@ func00000000000000fc:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000044:
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -65,11 +64,10 @@ func00000000000000f8:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000080:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

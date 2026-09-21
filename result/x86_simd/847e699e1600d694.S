@@ -80,9 +80,8 @@ func000000000000001f:
 func000000000000000c:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpandd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogd	$108, .LCPI6_0(%rip){1to8}, %ymm2, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:

@@ -35,9 +35,8 @@ func00000000000000c1:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -50,8 +49,7 @@ func00000000000000c0:
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 

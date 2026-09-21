@@ -3,8 +3,7 @@
 	.long	64
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000186:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k0

@@ -18,9 +18,8 @@
 	.short	3
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000004:
-	vpaddw	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubw	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubw	%ymm0, %ymm1, %ymm0
 	vpcmpltuw	.LCPI0_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

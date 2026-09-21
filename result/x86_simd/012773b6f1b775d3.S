@@ -3,18 +3,16 @@
 func00000000000000a0:
 	vpaddd	%ymm2, %ymm1, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000050:
 	vpaddd	%ymm2, %ymm1, %ymm2
 	vpsubd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:

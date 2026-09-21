@@ -30,12 +30,13 @@ func00000000000000c0:
 	retq
 
 .LCPI3_0:
-	.long	6
+	.long	5
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000fc:
 	vpmovzxbd	%xmm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

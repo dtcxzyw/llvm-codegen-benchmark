@@ -20,18 +20,18 @@
 func0000000000000084:
 	vpcmpltub	.LCPI0_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsrld	$31, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000185:
 	vptestmb	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsrld	$31, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:
@@ -55,9 +55,9 @@ func0000000000000185:
 func0000000000000080:
 	vpcmpltub	.LCPI2_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsrld	$31, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:
@@ -90,9 +90,9 @@ func000000000000018f:
 func0000000000000020:
 	vptestnmb	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsrld	$31, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:

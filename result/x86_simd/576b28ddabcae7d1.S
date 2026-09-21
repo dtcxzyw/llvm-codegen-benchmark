@@ -27,8 +27,7 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000003c:
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -54,8 +53,7 @@ func0000000000000035:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000003:
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -63,8 +61,7 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000020:
 	vpmovdb	%ymm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

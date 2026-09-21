@@ -4,8 +4,8 @@ func0000000000000088:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsubq	%ymm3, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -92,8 +92,8 @@ func0000000000000040:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsubq	%ymm3, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI10_0:
@@ -112,8 +112,8 @@ func0000000000000054:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsubq	%ymm3, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end12, nop
@@ -121,8 +121,8 @@ func000000000000003c:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsubq	%ymm3, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end13, nop

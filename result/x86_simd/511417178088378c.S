@@ -4,9 +4,8 @@ func0000000000000001:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -26,9 +25,8 @@ func00000000000001e1:
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

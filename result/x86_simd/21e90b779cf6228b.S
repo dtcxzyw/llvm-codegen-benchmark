@@ -3,8 +3,7 @@
 func000000000000018c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
 	retq
@@ -29,8 +28,7 @@ func0000000000000141:
 func0000000000000185:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
 	retq
@@ -49,8 +47,7 @@ func000000000000014d:
 func0000000000000180:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
 	retq
@@ -75,8 +72,7 @@ func0000000000000021:
 func0000000000000184:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

@@ -27,8 +27,8 @@ func000000000000000c:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$6, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:
@@ -48,8 +48,8 @@ func000000000000006c:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpsrld	$2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:
@@ -68,8 +68,8 @@ func000000000000007d:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpsrld	$4, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI7_0:
@@ -88,8 +88,8 @@ func000000000000002c:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI9_0:

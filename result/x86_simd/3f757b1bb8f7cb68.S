@@ -132,8 +132,7 @@ func00000000000003f5:
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000388:
 	vpmovzxdq	%xmm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpnleuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -167,8 +166,7 @@ func00000000000001e8:
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000184:
 	vpmovzxdq	%xmm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0

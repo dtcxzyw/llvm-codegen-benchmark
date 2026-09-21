@@ -50,12 +50,11 @@ func0000000000000015:
 func000000000000000a:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	vpbroadcastq	.LCPI3_0(%rip), %ymm1
 	vpbroadcastq	.LCPI3_1(%rip), %ymm1 {%k1}
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI4_0:

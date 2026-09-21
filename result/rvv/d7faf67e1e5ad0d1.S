@@ -4,8 +4,8 @@ func000000000000000c:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsne.vv	v13, v8, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vi	v8, v12, 0
-	vmorn.mm	v0, v13, v8
+	vmseq.vi	v8, v12, 0
+	vmor.mm	v0, v8, v13
 	ret
 
 func0000000000000006:
@@ -14,7 +14,7 @@ func0000000000000006:
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmslt.vv	v13, v8, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vi	v8, v12, 0
-	vmorn.mm	v0, v13, v8
+	vmseq.vi	v8, v12, 0
+	vmor.mm	v0, v8, v13
 	ret
 

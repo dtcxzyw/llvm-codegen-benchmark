@@ -22,8 +22,7 @@ func000000000000003f:
 func0000000000000015:
 	vpmovzxbd	%xmm2, %ymm2
 	vpmulld	%ymm2, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

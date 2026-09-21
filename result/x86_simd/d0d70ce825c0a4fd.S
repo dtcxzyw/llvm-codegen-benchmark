@@ -61,10 +61,10 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpsllw	$15, %xmm1, %xmm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltw	%xmm3, %xmm1, %k1
-	vpaddd	%ymm2, %ymm0, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpmovw2m	%xmm1, %k0
+	knotb	%k0, %k1
+	vmovdqa32	%ymm2, %ymm1 {%k1} {z}
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

@@ -2,8 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000012:
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm0, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpminsd	%xmm1, %xmm0, %xmm0

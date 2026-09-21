@@ -22,8 +22,7 @@ func0000000000000300:
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm5, %ymm1
 	vpcmpeqq	%ymm3, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq

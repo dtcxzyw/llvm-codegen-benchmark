@@ -4,8 +4,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000408:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -43,8 +42,7 @@ func00000000000002a6:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000688:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -129,8 +127,7 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end10, nop
 func000000000000002a:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
@@ -170,8 +167,7 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000008:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI13_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -183,8 +179,7 @@ func0000000000000008:
 	.prefalign	4, .Lfunc_end14, nop
 func00000000000006aa:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	.LCPI14_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -196,8 +191,7 @@ func00000000000006aa:
 	.prefalign	4, .Lfunc_end15, nop
 func000000000000060a:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	.LCPI15_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -223,8 +217,7 @@ func0000000000000004:
 	.prefalign	4, .Lfunc_end17, nop
 func000000000000068a:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	.LCPI17_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

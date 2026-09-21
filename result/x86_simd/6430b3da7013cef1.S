@@ -21,9 +21,8 @@ func0000000000000000:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltd	%xmm3, %xmm1, %k1
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:

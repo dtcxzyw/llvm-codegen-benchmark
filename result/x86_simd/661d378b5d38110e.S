@@ -42,8 +42,7 @@ func0000000000000005:
 	.long	4294967292
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsrad	$31, %xmm0, %xmm1
 	vpsrld	$30, %xmm1, %xmm1

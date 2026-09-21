@@ -34,13 +34,13 @@ func0000000000000000:
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm0
 	retq
 
+.LCPI3_0:
+	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
-	vpslld	$31, %xmm0, %xmm0
-	vpsrad	$31, %xmm0, %xmm0
-	vpmovsxdq	%xmm0, %ymm0
-	vpsubq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpandd	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 

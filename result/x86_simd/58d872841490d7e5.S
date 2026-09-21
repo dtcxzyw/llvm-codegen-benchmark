@@ -19,9 +19,8 @@ func0000000000000005:
 func0000000000000031:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm0, %xmm0
-	vpaddb	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	retq
 

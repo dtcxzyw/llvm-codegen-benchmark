@@ -62,8 +62,7 @@ func0000000000000031:
 func0000000000000063:
 	vpbroadcastd	.LCPI7_0(%rip), %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -71,8 +70,7 @@ func0000000000000063:
 func0000000000000061:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%ymm1, %ymm0, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

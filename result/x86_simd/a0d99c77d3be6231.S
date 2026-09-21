@@ -13,9 +13,8 @@ func0000000000000005:
 func0000000000000000:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpaddd	%ymm0, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:
@@ -32,9 +31,8 @@ func000000000000000d:
 func0000000000000008:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpaddd	%ymm0, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
 .LCPI4_0:
@@ -54,9 +52,8 @@ func0000000000000004:
 func000000000000000c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpaddd	%ymm0, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

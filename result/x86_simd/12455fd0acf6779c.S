@@ -51,8 +51,7 @@ func000000000000008c:
 func0000000000000621:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -65,8 +64,7 @@ func0000000000000621:
 func000000000000062a:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	.LCPI5_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -111,8 +109,7 @@ func000000000000050c:
 func000000000000062c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpneqd	.LCPI9_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

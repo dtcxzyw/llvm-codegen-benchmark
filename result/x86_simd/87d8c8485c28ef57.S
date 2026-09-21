@@ -14,15 +14,16 @@ func0000000000000000:
 	retq
 
 .LCPI1_0:
-	.long	6
+	.long	5
 .LCPI1_1:
 	.long	7
 .LCPI1_2:
 	.long	2
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000057:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq

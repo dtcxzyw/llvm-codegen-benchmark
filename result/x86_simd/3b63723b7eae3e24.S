@@ -3,8 +3,8 @@
 	.quad	2147483647
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000014a:
-	vpaddq	%ymm1, %ymm0, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vmovdqa	%ymm0, %ymm2
+	vpternlogq	$15, %ymm0, %ymm0, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpminsq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpgtq	%ymm0, %ymm1, %k0

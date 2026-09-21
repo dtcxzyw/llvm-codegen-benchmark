@@ -2,14 +2,15 @@
 .LCPI0_0:
 	.quad	-9223372036854775807
 .LCPI0_1:
-	.quad	2
+	.quad	1
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000018c3:
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
+	vpandnq	.LCPI0_1(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	%ymm2, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:

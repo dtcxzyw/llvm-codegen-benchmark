@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovq2m	%ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -28,10 +27,9 @@ func00000000000000a1:
 	.quad	8189
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -233,8 +231,7 @@ func000000000000070c:
 
 	.prefalign	4, .Lfunc_end17, nop
 func0000000000000601:
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubq	%ymm0, %ymm2, %ymm0

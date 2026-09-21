@@ -35,21 +35,22 @@ func000000000000003f:
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
-.LCPI4_0:
-	.long	2
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
 .LCPI5_0:
-	.long	4294967201
+	.long	4294967200
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000020:
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

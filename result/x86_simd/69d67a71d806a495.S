@@ -24,9 +24,8 @@ func0000000000000208:
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000002a8:
 	vpsraq	$3, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm2, %ymm1
 	vpcmpnleuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

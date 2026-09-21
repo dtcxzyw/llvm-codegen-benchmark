@@ -68,15 +68,13 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
-	vpaddw	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
-	vpaddw	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq
 

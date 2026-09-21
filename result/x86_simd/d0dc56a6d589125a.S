@@ -11,8 +11,8 @@ func000000000000014d:
 func0000000000000180:
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	vpslld	$4, %ymm0, %ymm0
 	retq
 
@@ -20,8 +20,7 @@ func0000000000000180:
 func000000000000018f:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpslld	$3, %ymm0, %ymm0
 	retq
@@ -30,8 +29,7 @@ func000000000000018f:
 func0000000000000185:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpslld	$9, %ymm0, %ymm0
 	retq
@@ -60,8 +58,7 @@ func000000000000014c:
 func000000000000018c:
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpslld	$2, %ymm0, %ymm0
 	retq
@@ -124,8 +121,7 @@ func0000000000000020:
 func000000000000018e:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpslld	$28, %ymm0, %ymm0
 	retq

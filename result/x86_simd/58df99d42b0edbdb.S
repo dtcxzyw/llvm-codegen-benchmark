@@ -100,9 +100,8 @@ func000000000000018a:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000086:
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

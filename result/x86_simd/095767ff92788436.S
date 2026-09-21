@@ -36,11 +36,10 @@ func0000000000000015:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubq	%ymm1, %ymm2, %ymm1
-	vpand	%ymm1, %ymm0, %ymm0
+	vpsubq	%ymm1, %ymm2, %ymm2
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpand	%ymm2, %ymm0, %ymm0
 	retq
 

@@ -13,20 +13,18 @@ func000000000000002c:
 func0000000000000185:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018f:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:
@@ -111,10 +109,9 @@ func0000000000000024:
 func000000000000018d:
 	vpbroadcastd	.LCPI11_0(%rip), %ymm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI12_0:
@@ -141,10 +138,9 @@ func000000000000014f:
 func0000000000000180:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI15_0:
@@ -161,10 +157,9 @@ func000000000000008f:
 func000000000000018e:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI17_0:
@@ -219,20 +214,18 @@ func0000000000000100:
 func000000000000018c:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end23, nop
 func0000000000000184:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI24_0:

@@ -9,8 +9,7 @@ func0000000000000180:
 	vpbroadcastd	.LCPI0_1(%rip), %xmm2
 	vpcmpeqd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

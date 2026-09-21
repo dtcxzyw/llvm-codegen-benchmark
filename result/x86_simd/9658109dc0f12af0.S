@@ -109,11 +109,10 @@ func00000000000000de:
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000050:
 	vpslld	$2, %ymm2, %ymm3
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm3, %ymm1, %ymm1
+	vpaddd	%ymm3, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI10_0:

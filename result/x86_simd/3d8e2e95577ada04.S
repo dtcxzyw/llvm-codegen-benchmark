@@ -89,9 +89,8 @@ func0000000000000001:
 func0000000000000010:
 	vpmullq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI8_0:

@@ -46,8 +46,7 @@ func0000000000000014:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	%xmm3, %xmm2, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -110,8 +109,7 @@ func0000000000000010:
 func0000000000000085:
 	vpcmpnleub	.LCPI5_0(%rip), %xmm2, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm0 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

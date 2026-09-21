@@ -22,9 +22,8 @@ func000000000000005a:
 func0000000000000050:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -40,9 +39,8 @@ func000000000000005f:
 func0000000000000010:
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpabsd	%ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:

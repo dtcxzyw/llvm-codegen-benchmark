@@ -12,9 +12,9 @@ func000000000000008f:
 func0000000000000080:
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpsrlq	$63, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:

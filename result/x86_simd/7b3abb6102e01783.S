@@ -1,12 +1,12 @@
 	.att_syntax
+.LCPI0_0:
+	.long	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000104:
-	vpslld	$31, %xmm2, %xmm2
-	vpsrad	$31, %xmm2, %xmm2
-	vpmovsxdq	%xmm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm2
+	vpmovzxdq	%xmm2, %ymm2
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm2, %ymm1
 	vpcmpltuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

@@ -3,9 +3,8 @@
 func00000000000000c1:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpaddb	%xmm0, %xmm0, %xmm0
-	vpaddb	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubb	%xmm1, %xmm0, %xmm0
 	retq
 

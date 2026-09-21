@@ -43,9 +43,8 @@ func0000000000000140:
 	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm1, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm1
 	vpbroadcastq	.LCPI2_2(%rip), %ymm1 {%k1}
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

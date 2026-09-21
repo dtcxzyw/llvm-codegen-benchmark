@@ -5,7 +5,9 @@
 	.zero	4,2
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	vpaddb	%xmm0, %xmm0, %xmm0
+	vmovdqa	%xmm0, %xmm1
+	vpternlogq	$15, %xmm0, %xmm0, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
 	vpandnd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	retq
 

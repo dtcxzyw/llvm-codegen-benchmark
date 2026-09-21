@@ -36,9 +36,8 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000c:
-	vpand	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$120, %ymm2, %ymm1, %ymm3
+	vpsubd	%ymm3, %ymm0, %ymm0
 	retq
 

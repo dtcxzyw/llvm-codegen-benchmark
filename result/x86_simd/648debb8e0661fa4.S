@@ -46,10 +46,9 @@ func0000000000000187:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
-	vpaddd	%ymm0, %ymm2, %ymm2
 	vptestmb	%xmm1, %xmm1, %k1
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0 {%k1}
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

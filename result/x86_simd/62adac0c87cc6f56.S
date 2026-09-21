@@ -29,9 +29,8 @@ func0000000000000004:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	vpmovsxbd	%xmm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI4_0:

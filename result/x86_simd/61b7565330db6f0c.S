@@ -19,14 +19,12 @@ func0000000000000007:
 	vpord	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
-.LCPI2_0:
-	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000002b:
 	vpslld	$2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpord	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:

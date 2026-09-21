@@ -32,25 +32,21 @@ func0000000000000181:
 	vpsraq	$30, %ymm0, %ymm0
 	retq
 
-.LCPI3_0:
-	.quad	4294967296
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a9:
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
-	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpsraq	$30, %ymm0, %ymm0
 	retq
 
-.LCPI4_0:
-	.quad	4294967296
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a1:
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
-	vpaddq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
 	vpsraq	$29, %ymm0, %ymm0
 	retq
 

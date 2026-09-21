@@ -50,9 +50,8 @@ func0000000000000005:
 	vpsrlq	$32, %ymm1, %ymm1
 	vpmuldq	%ymm5, %ymm2, %ymm2
 	vpaddq	%ymm4, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

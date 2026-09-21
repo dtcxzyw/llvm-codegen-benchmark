@@ -137,8 +137,7 @@ func000000000000000e:
 
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000034:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper

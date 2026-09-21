@@ -26,8 +26,8 @@ func000000000000000d:
 func0000000000000005:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 

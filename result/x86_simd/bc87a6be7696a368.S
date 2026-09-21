@@ -10,10 +10,9 @@ func000000000000018f:
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3 {%k1}
-	vpcmpeqd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm3, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpcmpeqd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -98,9 +97,9 @@ func0000000000000180:
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm3
 	vpbroadcastd	.LCPI5_1(%rip), %ymm3 {%k1}
-	vpcmpeqd	%ymm1, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm3, %ymm0
+	vpcmpeqd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

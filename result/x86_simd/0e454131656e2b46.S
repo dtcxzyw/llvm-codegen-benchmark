@@ -22,15 +22,15 @@ func0000000000000008:
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 
+.LCPI2_0:
+	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
+	vpandd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
+	vpmovzxdq	%xmm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpslld	$31, %xmm2, %xmm1
-	vpsrad	$31, %xmm1, %xmm1
-	vpmovsxdq	%xmm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI3_0:

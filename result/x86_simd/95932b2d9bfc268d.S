@@ -18,9 +18,8 @@ func0000000000000005:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpmovqd	%ymm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm1, %xmm0 {%k1}
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0 {%k1}
 	vzeroupper
 	retq
 

@@ -49,9 +49,8 @@ func0000000000000008:
 func0000000000000063:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	%xmm3, %xmm2, %xmm2
-	vpaddb	%xmm0, %xmm1, %xmm0
-	vpaddb	%xmm2, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubb	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
+	vpsubb	%xmm2, %xmm1, %xmm1
+	vpor	%xmm0, %xmm1, %xmm0
 	retq
 

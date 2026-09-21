@@ -13,37 +13,31 @@ func0000000000000015:
 
 .LCPI1_0:
 	.long	1
-.LCPI1_1:
-	.long	8
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpslld	$3, %ymm0, %ymm0
-	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:
 	.long	1
-.LCPI2_1:
-	.long	8
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpslld	$3, %ymm0, %ymm0
-	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:
 	.long	511
-.LCPI3_1:
-	.long	8
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000003:
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpslld	$3, %ymm0, %ymm0
-	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 

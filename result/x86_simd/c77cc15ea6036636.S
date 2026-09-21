@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpled	%ymm1, %ymm0, %k0
@@ -75,8 +74,7 @@ func0000000000000081:
 	.long	4095
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000008a:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	.LCPI6_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -278,8 +276,7 @@ func0000000000000101:
 	.long	63
 	.prefalign	4, .Lfunc_end23, nop
 func0000000000000188:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI23_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -449,8 +446,7 @@ func00000000000001f8:
 	.long	65535
 	.prefalign	4, .Lfunc_end37, nop
 func0000000000000078:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpnleud	.LCPI37_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -482,10 +478,13 @@ func0000000000000026:
 	vzeroupper
 	retq
 
+.LCPI40_0:
+	.long	1
 	.prefalign	4, .Lfunc_end40, nop
 func00000000000000ac:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vptestmd	%ymm0, %ymm0, %k0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpcmpneqd	.LCPI40_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -551,8 +550,7 @@ func0000000000000068:
 
 	.prefalign	4, .Lfunc_end46, nop
 func0000000000000186:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpled	%ymm1, %ymm0, %k0
@@ -577,8 +575,7 @@ func000000000000018c:
 	.long	16384
 	.prefalign	4, .Lfunc_end48, nop
 func00000000000001aa:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	.LCPI48_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

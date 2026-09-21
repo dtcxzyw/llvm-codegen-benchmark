@@ -1,38 +1,68 @@
 	.att_syntax
+.LCPI0_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI0_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000086:
+	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpslld	$31, %ymm2, %ymm2
-	vpsrad	$31, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI1_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI1_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000a6:
+	vpandd	.LCPI1_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpslld	$31, %ymm2, %ymm2
-	vpsrad	$31, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
+.LCPI2_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI2_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
+	vpandd	.LCPI2_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpslld	$31, %ymm2, %ymm2
-	vpsrad	$31, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -106,14 +136,24 @@ func00000000000001ec:
 	vzeroupper
 	retq
 
+.LCPI8_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI8_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end8, nop
 func00000000000000aa:
+	vpandd	.LCPI8_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpslld	$31, %ymm2, %ymm2
-	vpsrad	$31, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -62,13 +62,14 @@ func0000000000000430:
 	retq
 
 .LCPI5_0:
-	.long	3
+	.long	2
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000063f:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
@@ -84,14 +85,13 @@ func000000000000043d:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 
-.LCPI7_0:
-	.long	2
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000600:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

@@ -2,11 +2,10 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000000b0:
 	vpsllq	$5, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm2, %ymm1
 	vpsraq	$4, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

@@ -27,8 +27,7 @@ func0000000000000001:
 	.quad	56
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000021:
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	vpmuldq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0

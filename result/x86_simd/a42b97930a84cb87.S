@@ -5,9 +5,8 @@ func0000000000000000:
 	vcvtudq2pd	%ymm1, %zmm1
 	vdivpd	%zmm2, %zmm1, %zmm1
 	vcvttpd2udq	%zmm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

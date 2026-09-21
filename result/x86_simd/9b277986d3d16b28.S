@@ -47,8 +47,7 @@ func0000000000000030:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000020:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -71,24 +70,21 @@ func000000000000003d:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000014:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000003f:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000035:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -104,8 +100,7 @@ func0000000000000017:
 	.prefalign	4, .Lfunc_end12, nop
 func0000000000000021:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -128,24 +123,21 @@ func000000000000001c:
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000036:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000028:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end17, nop
 func0000000000000011:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -159,8 +151,7 @@ func0000000000000004:
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000024:
 	vpsubq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 

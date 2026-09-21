@@ -3,8 +3,7 @@
 func00000000000018d8:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpsrld	$12, %ymm0, %ymm0
 	vpcmpnleud	%ymm1, %ymm0, %k0
@@ -18,8 +17,7 @@ func00000000000018d8:
 func0000000000001804:
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpsrld	$1, %ymm0, %ymm0
 	vpcmpltud	%ymm1, %ymm0, %k0
@@ -57,8 +55,7 @@ func00000000000002d8:
 func00000000000018d4:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpsrld	$5, %ymm0, %ymm0
 	vpcmpltud	%ymm1, %ymm0, %k0

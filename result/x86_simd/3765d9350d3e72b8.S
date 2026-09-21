@@ -25,9 +25,8 @@ func0000000000000000:
 func0000000000000005:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
-	vpaddd	%ymm1, %ymm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0 {%k1} {z}
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm0 {%k1} {z}
 	retq
 
 .LCPI3_0:

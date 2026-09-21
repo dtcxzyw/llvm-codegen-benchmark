@@ -20,9 +20,8 @@
 func0000000000000010:
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:

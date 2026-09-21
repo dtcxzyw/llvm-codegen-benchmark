@@ -7,9 +7,8 @@ func0000000000000004:
 	vcvttpd2dq	%zmm3, %ymm3
 	vpmulld	%ymm2, %ymm3, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -34,8 +33,7 @@ func0000000000000000:
 	vcvttpd2dq	%zmm3, %ymm3
 	vpmulld	%ymm2, %ymm3, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

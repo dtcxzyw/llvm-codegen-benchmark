@@ -54,16 +54,14 @@ func000000000000000c:
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000001d:
 	vpmullq	%ymm1, %ymm0, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000036:
 	vpmullq	%ymm0, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

@@ -49,8 +49,7 @@ func000000000000003d:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000021:
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpsrld	$1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0

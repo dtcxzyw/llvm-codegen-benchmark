@@ -1,11 +1,12 @@
 	.att_syntax
 .LCPI0_0:
-	.long	3
+	.long	2
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000018f:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
@@ -47,12 +48,13 @@ func000000000000002d:
 	retq
 
 .LCPI5_0:
-	.long	3
+	.long	2
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000185:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
@@ -85,14 +87,13 @@ func000000000000014f:
 
 .LCPI9_0:
 	.long	1
-.LCPI9_1:
-	.long	2
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000184:
 	vpbroadcastd	.LCPI9_0(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI9_1(%rip){1to8}, %ymm0, %ymm0
+	vpandn	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end10, nop
@@ -129,9 +130,9 @@ func000000000000014d:
 func0000000000000080:
 	vpcmpltud	.LCPI13_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsrld	$31, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI14_0:
@@ -182,17 +183,19 @@ func000000000000008e:
 func0000000000000100:
 	vpcmpnleud	.LCPI18_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpsrld	$31, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
+.LCPI19_0:
+	.long	4294967294
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000181:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI19_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

@@ -65,8 +65,7 @@ func000000000000000c:
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
 	vpandd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

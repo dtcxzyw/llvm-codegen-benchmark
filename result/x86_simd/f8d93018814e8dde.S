@@ -20,8 +20,7 @@ func000000000000019d:
 func0000000000000303:
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2
 	vpcmpeqd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	vpmuludq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
@@ -33,8 +32,7 @@ func0000000000000303:
 func0000000000000307:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	vpmuludq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0

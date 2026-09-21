@@ -41,8 +41,7 @@ func00000000000000b4:
 	.long	31
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vptestmd	.LCPI3_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -63,8 +62,7 @@ func0000000000000001:
 	.long	3
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000181:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vptestnmd	.LCPI5_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -119,8 +117,7 @@ func00000000000000b8:
 	.long	1
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000101:
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqd	.LCPI9_1(%rip){1to8}, %ymm0, %k0

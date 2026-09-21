@@ -24,14 +24,24 @@ func00000000000000aa:
 	vzeroupper
 	retq
 
+.LCPI2_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI2_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000086:
+	vpandd	.LCPI2_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpslld	$31, %ymm2, %ymm2
-	vpsrad	$31, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

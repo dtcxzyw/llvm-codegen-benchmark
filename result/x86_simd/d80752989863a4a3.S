@@ -47,9 +47,8 @@ func0000000000000035:
 func0000000000000030:
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:
@@ -138,9 +137,8 @@ func0000000000000000:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
@@ -148,9 +146,8 @@ func0000000000000070:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubb	%xmm2, %xmm1, %xmm1
 	vpmovzxbd	%xmm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI7_0:

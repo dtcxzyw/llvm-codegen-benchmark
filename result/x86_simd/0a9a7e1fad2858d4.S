@@ -12,11 +12,10 @@ func0000000000000080:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -33,11 +32,10 @@ func0000000000000054:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000002:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -53,11 +51,10 @@ func00000000000000f8:
 
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c0:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

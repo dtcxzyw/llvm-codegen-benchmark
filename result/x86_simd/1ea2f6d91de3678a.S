@@ -4,9 +4,8 @@ func0000000000000030:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -24,9 +23,8 @@ func0000000000000070:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -34,9 +32,8 @@ func0000000000000038:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI4_0:
@@ -55,9 +52,8 @@ func0000000000000025:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
@@ -65,9 +61,8 @@ func0000000000000035:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop
@@ -75,9 +70,8 @@ func0000000000000000:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI8_0:
@@ -119,8 +113,7 @@ func0000000000000020:
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

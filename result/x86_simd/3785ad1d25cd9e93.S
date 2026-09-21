@@ -2,9 +2,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vptestmb	%xmm2, %xmm2, %k1
-	vpaddd	%ymm1, %ymm0, %ymm0 {%k1}
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpxord	%ymm2, %ymm1, %ymm2 {%k1}
+	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

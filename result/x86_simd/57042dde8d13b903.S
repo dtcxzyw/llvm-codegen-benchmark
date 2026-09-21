@@ -4,8 +4,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000008a:
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
@@ -31,8 +30,7 @@ func0000000000000004:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000788:
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpcmpnleud	.LCPI2_0(%rip){1to4}, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -44,8 +42,7 @@ func0000000000000788:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000002a:
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI3_0(%rip), %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0
@@ -96,8 +93,7 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000008:
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpcmpnleud	.LCPI7_0(%rip){1to4}, %xmm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -145,8 +141,7 @@ func000000000000000a:
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000401:
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI11_0(%rip), %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
@@ -211,11 +206,10 @@ func0000000000000026:
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000186:
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpbroadcastd	.LCPI16_0(%rip), %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
-	vpcmpgtd	%xmm0, %xmm1, %xmm0
+	vpbroadcastd	.LCPI16_0(%rip), %xmm2
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
+	vpcmpgtd	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
 
@@ -224,8 +218,7 @@ func0000000000000186:
 	.prefalign	4, .Lfunc_end17, nop
 func00000000000000aa:
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpbroadcastd	.LCPI17_0(%rip), %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %xmm0

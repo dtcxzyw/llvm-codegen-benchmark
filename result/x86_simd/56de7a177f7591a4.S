@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpaddd	%xmm1, %xmm2, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -20,8 +19,7 @@ func000000000000007f:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000040:
-	vpaddd	%xmm1, %xmm2, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
@@ -29,8 +27,7 @@ func0000000000000040:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000022:
-	vpaddd	%xmm1, %xmm2, %xmm1
-	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpmulld	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0

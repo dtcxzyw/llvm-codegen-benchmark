@@ -71,9 +71,8 @@ func000000000000003c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$170, %ymm2, %ymm1, %ymm1
 	vpslld	$5, %ymm1, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

@@ -55,8 +55,8 @@ func0000000000000050:
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm1, %ymm1
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsubd	%ymm3, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI5_0:
@@ -81,7 +81,7 @@ func000000000000015d:
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsubd	%ymm3, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

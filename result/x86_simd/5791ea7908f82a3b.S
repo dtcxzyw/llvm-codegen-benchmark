@@ -33,8 +33,7 @@ func0000000000001878:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsrld	$2, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

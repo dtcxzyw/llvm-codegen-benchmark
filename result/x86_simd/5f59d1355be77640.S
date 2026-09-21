@@ -17,8 +17,7 @@ func000000000000000c:
 func000000000000001d:
 	vpmovzxwd	%xmm1, %ymm1
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

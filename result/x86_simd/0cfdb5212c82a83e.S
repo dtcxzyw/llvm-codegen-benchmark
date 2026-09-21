@@ -11,10 +11,11 @@ func0000000000000001:
 	retq
 
 .LCPI1_0:
-	.long	5
+	.long	4
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000086:
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -78,8 +79,7 @@ func0000000000000206:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000006:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -87,10 +87,11 @@ func0000000000000006:
 	retq
 
 .LCPI8_0:
-	.long	3
+	.long	2
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000004:
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -98,22 +99,23 @@ func0000000000000004:
 	retq
 
 .LCPI9_0:
-	.long	3
+	.long	2
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000008:
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpaddd	.LCPI9_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnleud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 
-.LCPI10_0:
-	.long	2
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000009:
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpaddd	.LCPI10_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpnltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -38,8 +38,8 @@ func0000000000000388:
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubd	%xmm3, %xmm2, %xmm2
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpsubd	%xmm3, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

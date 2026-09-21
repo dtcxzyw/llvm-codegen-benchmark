@@ -58,8 +58,7 @@ func0000000000000000:
 	vpmovq2m	%ymm1, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubq	%ymm3, %ymm1, %ymm3 {%k1}
-	vpaddq	%ymm3, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm3, %ymm0
 	retq
 

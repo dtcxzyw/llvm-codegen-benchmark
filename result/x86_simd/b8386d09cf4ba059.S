@@ -33,8 +33,7 @@ func0000000000000064:
 func000000000000000c:
 	vpsllq	$8, %ymm2, %ymm2
 	vpor	%ymm0, %ymm2, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 

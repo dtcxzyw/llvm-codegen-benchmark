@@ -16,9 +16,8 @@ func000000000000000b:
 func0000000000000063:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%xmm2, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpblendw	$170, %xmm2, %xmm0, %xmm0
-	vpaddd	%xmm1, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq

@@ -26,9 +26,8 @@ func00000000000004a4:
 func00000000000007a4:
 	vpsraq	$4, %ymm2, %ymm2
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm2, %ymm1
 	vpsraq	$4, %ymm0, %ymm0
 	vpmullq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	vpcmpltuq	%ymm1, %ymm0, %k0

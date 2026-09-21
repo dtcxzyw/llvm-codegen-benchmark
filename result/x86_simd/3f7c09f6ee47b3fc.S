@@ -54,12 +54,13 @@ func0000000000000000:
 	retq
 
 .LCPI5_0:
-	.long	9
+	.long	8
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000040:
 	vpaddd	%ymm1, %ymm1, %ymm2
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
@@ -73,14 +74,14 @@ func0000000000000001:
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
-.LCPI7_0:
-	.long	2
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000057:
 	vpslld	$2, %ymm1, %ymm2
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm2, %ymm0, %ymm0
-	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI8_0:

@@ -213,8 +213,7 @@ func0000000000000401:
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000c2a:
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtq	%ymm1, %ymm0, %k0
@@ -222,11 +221,14 @@ func0000000000000c2a:
 	vzeroupper
 	retq
 
+.LCPI20_0:
+	.quad	1
 	.prefalign	4, .Lfunc_end20, nop
 func0000000000000c21:
 	vpcmpeqq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vptestnmq	%ymm0, %ymm0, %k0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpcmpeqq	.LCPI20_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

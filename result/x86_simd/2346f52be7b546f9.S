@@ -1,22 +1,42 @@
 	.att_syntax
+.LCPI0_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI0_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
+	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
-	vpslld	$31, %ymm1, %ymm1
-	vpsrad	$31, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
+.LCPI1_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI1_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
+	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
-	vpslld	$31, %ymm1, %ymm1
-	vpsrad	$31, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:
@@ -89,23 +109,43 @@ func0000000000000002:
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 
+.LCPI9_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI9_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000009:
+	vpandd	.LCPI9_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
-	vpslld	$31, %ymm1, %ymm1
-	vpsrad	$31, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
+.LCPI10_0:
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+	.short	1
+.LCPI10_1:
+	.short	1
+	.short	1
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000008:
+	vpandd	.LCPI10_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %ymm1
-	vpslld	$31, %ymm1, %ymm1
-	vpsrad	$31, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

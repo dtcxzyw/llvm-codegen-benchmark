@@ -29,10 +29,9 @@ func00000000000001e1:
 	.long	1
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000184:
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$120, .LCPI2_0(%rip){1to8}, %ymm2, %ymm3
+	vpsubd	%ymm3, %ymm1, %ymm1
 	vpcmpltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

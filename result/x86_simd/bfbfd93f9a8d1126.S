@@ -17,13 +17,13 @@ func0000000000000051:
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 
-.LCPI2_0:
-	.long	2
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000055:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI3_0:

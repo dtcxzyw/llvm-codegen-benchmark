@@ -6,8 +6,8 @@ func0000000000000000:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpblendmd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm2 {%k1}
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1 {%k1}
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq

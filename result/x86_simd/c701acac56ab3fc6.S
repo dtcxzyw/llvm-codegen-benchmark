@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001a8:
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1
@@ -13,8 +12,7 @@ func00000000000001a8:
 
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000001b4:
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm2, %ymm1, %ymm1

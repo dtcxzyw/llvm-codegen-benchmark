@@ -50,9 +50,13 @@ func0000000000000005:
 	vpslld	$23, %ymm0, %ymm0
 	retq
 
+.LCPI6_0:
+	.long	4294967288
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	vpslld	$3, %ymm0, %ymm0
+	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

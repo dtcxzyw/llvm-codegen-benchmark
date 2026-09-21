@@ -31,13 +31,13 @@ func0000000000000044:
 	.long	4
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000614:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpeqd	%xmm4, %xmm4, %xmm4
-	vpcmpneqb	%xmm4, %xmm1, %k1
+	vpcmpeqd	%xmm3, %xmm3, %xmm3
+	vpcmpneqb	%xmm3, %xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm1 {%k1}
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsubd	%ymm3, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI2_0:

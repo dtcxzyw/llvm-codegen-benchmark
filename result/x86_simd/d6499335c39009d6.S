@@ -15,8 +15,7 @@ func0000000000000020:
 func000000000000003b:
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpgtd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -26,8 +25,7 @@ func000000000000003b:
 func0000000000000061:
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
@@ -37,8 +35,7 @@ func0000000000000061:
 func0000000000000063:
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

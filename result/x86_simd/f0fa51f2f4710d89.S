@@ -1,7 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000601:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -30,9 +33,9 @@ func00000000000002e8:
 
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000006e6:
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -41,9 +44,9 @@ func00000000000006e6:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -77,7 +80,10 @@ func00000000000007f4:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000061:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -171,9 +177,9 @@ func0000000000000009:
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000366:
-	vpaddq	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -182,7 +188,10 @@ func0000000000000366:
 
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000001:
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

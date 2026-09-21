@@ -3,9 +3,8 @@
 func0000000000000045:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -23,9 +22,8 @@ func0000000000000040:
 func00000000000000f0:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 
@@ -44,9 +42,8 @@ func000000000000005f:
 func00000000000000fa:
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 
