@@ -1,4 +1,5 @@
 func0000000000000005:
+	fmv.w.x	fa0, zero
 	slli	a0, a0, 32
 	slli	a1, a1, 32
 	srli	a0, a0, 32

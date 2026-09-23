@@ -1,4 +1,5 @@
 func0000000000000001:
+	fmv.w.x	fa0, zero
 	or	a0, a0, a1
 	ret
 

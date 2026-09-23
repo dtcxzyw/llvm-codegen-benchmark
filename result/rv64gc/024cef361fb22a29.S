@@ -5,6 +5,7 @@ func0000000000000002:
 	ret
 
 func0000000000000010:
+	fmv.w.x	fa0, zero
 	zext.b	a0, a0
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
