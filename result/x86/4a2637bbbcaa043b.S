@@ -25,18 +25,14 @@ func0000000000000019:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000015:
-	movzbl	%dl, %eax
-	movzbl	%sil, %ecx
-	cmpl	%eax, %ecx
+	cmpb	%dl, %sil
 	setbe	%al
 	andb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
-	movzbl	%dl, %eax
-	movzbl	%sil, %ecx
-	cmpl	%eax, %ecx
+	cmpb	%dl, %sil
 	setb	%al
 	andb	%dil, %al
 	retq

@@ -2,16 +2,14 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
@@ -34,8 +32,7 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000022:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
 

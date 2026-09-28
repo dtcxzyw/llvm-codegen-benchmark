@@ -3,15 +3,14 @@
 func0000000000000018:
 	andl	$31, %esi
 	shrl	$27, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	movzbl	%sil, %eax
 	shrl	$24, %edi
-	cmpl	%eax, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 

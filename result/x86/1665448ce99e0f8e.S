@@ -13,7 +13,7 @@ func0000000000000018:
 	shrl	$16, %edx
 	andl	$63, %edx
 	andl	$63, %esi
-	cmpl	%esi, %edx
+	cmpb	%sil, %dl
 	seta	%al
 	orb	%dil, %al
 	retq

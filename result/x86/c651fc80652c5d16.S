@@ -2,9 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	addl	%edx, %esi
-	movzwl	%si, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %si
 	setb	%al
 	retq
 

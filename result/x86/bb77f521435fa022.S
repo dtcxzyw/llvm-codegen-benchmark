@@ -1,9 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	movzwl	%si, %eax
 	shrl	$16, %edi
-	cmpl	%eax, %edi
+	cmpw	%si, %di
 	sete	%al
 	retq
 
@@ -65,9 +64,8 @@ func0000000000000019:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000041:
-	movzwl	%si, %eax
 	shrl	$16, %edi
-	cmpl	%eax, %edi
+	cmpw	%si, %di
 	sete	%al
 	retq
 

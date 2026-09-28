@@ -10,8 +10,7 @@ func0000000000000047:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000044:
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notl	%eax
+	bzhil	%esi, %eax, %eax
 	leaq	(%rax,%rax,2), %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq

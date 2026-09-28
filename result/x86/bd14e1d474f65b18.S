@@ -18,9 +18,9 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	shrl	$3, %edi
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -44,8 +44,8 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	shrq	$32, %rdi
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 

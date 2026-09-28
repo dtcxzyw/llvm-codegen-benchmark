@@ -19,7 +19,7 @@ func0000000000000018:
 func0000000000000001:
 	andl	$1, %esi
 	shrl	$26, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 

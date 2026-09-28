@@ -9,8 +9,7 @@ func0000000000000038:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000002a:
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notl	%eax
+	bzhil	%esi, %eax, %eax
 	cmpl	%eax, %edi
 	setg	%al
 	retq
@@ -27,8 +26,7 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notl	%eax
+	bzhil	%esi, %eax, %eax
 	cmpl	%eax, %edi
 	setb	%al
 	retq
@@ -43,8 +41,7 @@ func0000000000000028:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000026:
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notl	%eax
+	bzhil	%esi, %eax, %eax
 	cmpl	%eax, %edi
 	setl	%al
 	retq

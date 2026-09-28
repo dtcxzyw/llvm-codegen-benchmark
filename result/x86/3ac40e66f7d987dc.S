@@ -13,8 +13,7 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
 	movl	$-1, %ecx
-	shlxl	%esi, %ecx, %eax
-	notl	%eax
+	bzhil	%esi, %ecx, %eax
 	cmpl	$32, %esi
 	cmovael	%ecx, %eax
 	andl	%edi, %eax

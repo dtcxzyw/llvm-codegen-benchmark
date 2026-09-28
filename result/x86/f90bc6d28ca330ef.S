@@ -30,8 +30,7 @@ func0000000000000034:
 func0000000000000074:
 	andl	$32767, %esi
 	addl	$32312, %esi
-	movzwl	%di, %eax
-	cmpl	%esi, %eax
+	cmpw	%si, %di
 	setb	%al
 	retq
 

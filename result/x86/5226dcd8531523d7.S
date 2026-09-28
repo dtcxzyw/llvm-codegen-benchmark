@@ -3,8 +3,7 @@
 func0000000000000061:
 	movzbl	%sil, %eax
 	incl	%eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	sete	%al
 	retq
 
@@ -21,8 +20,7 @@ func0000000000000034:
 func0000000000000078:
 	movzbl	%sil, %eax
 	addl	$2, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	seta	%al
 	retq
 
@@ -30,8 +28,7 @@ func0000000000000078:
 func0000000000000074:
 	movzbl	%sil, %eax
 	incl	%eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	setb	%al
 	retq
 

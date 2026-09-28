@@ -29,9 +29,7 @@ func0000000000000181:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000194:
-	movzbl	%dl, %eax
-	movzbl	%sil, %ecx
-	cmpl	%eax, %ecx
+	cmpb	%dl, %sil
 	setb	%cl
 	cmpl	$3, %edi
 	setne	%al

@@ -10,7 +10,7 @@ func0000000000000001:
 func0000000000000018:
 	shrl	$24, %esi
 	shrl	$24, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	seta	%al
 	retq
 

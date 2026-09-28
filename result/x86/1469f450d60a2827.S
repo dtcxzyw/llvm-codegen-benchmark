@@ -23,15 +23,13 @@ func000000000000000e:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

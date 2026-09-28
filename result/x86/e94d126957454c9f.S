@@ -1,10 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
-	movl	%esi, %eax
-	movzbl	%ah, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	shrl	$8, %esi
+	cmpb	%dil, %sil
 	setb	%al
 	retq
 
@@ -19,8 +17,7 @@ func0000000000000001:
 func0000000000000061:
 	shrl	$5, %esi
 	andl	$1, %esi
-	movzbl	%dil, %eax
-	cmpl	%eax, %esi
+	cmpb	%dil, %sil
 	sete	%al
 	retq
 

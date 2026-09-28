@@ -11,8 +11,7 @@ func0000000000000001:
 func0000000000000018:
 	shrxl	%edx, %esi, %eax
 	andl	$15, %eax
-	movzbl	%dil, %ecx
-	cmpl	%eax, %ecx
+	cmpb	%al, %dil
 	seta	%al
 	retq
 
@@ -20,8 +19,7 @@ func0000000000000018:
 func0000000000000014:
 	shrxl	%edx, %esi, %eax
 	andl	$15, %eax
-	movzbl	%dil, %ecx
-	cmpl	%eax, %ecx
+	cmpb	%al, %dil
 	setb	%al
 	retq
 

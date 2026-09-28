@@ -3,8 +3,7 @@
 func0000000000000005:
 	andb	$1, %dil
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rcx
-	notq	%rcx
+	bzhiq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	cmpb	$1, %dil
 	sbbq	%rax, %rax
@@ -39,8 +38,7 @@ func0000000000000007:
 func0000000000000001:
 	andb	$1, %dil
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rcx
-	notq	%rcx
+	bzhiq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	cmpb	$1, %dil
 	sbbq	%rax, %rax

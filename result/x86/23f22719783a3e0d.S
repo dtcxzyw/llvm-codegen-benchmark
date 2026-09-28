@@ -11,8 +11,7 @@ func0000000000000025:
 func0000000000000021:
 	andb	$1, %sil
 	movl	$-1, %eax
-	shlxl	%edx, %eax, %eax
-	notl	%eax
+	bzhil	%edx, %eax, %eax
 	xorl	%ecx, %ecx
 	negb	%sil
 	sbbl	%ecx, %ecx

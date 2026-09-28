@@ -17,24 +17,21 @@ func0000000000000002:
 func000000000000001d:
 	addl	%esi, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	addl	%esi, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	addl	%esi, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

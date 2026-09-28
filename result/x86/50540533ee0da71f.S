@@ -9,9 +9,7 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000028:
-	movzwl	%dx, %eax
-	movzwl	%si, %ecx
-	cmpl	%eax, %ecx
+	cmpw	%dx, %si
 	setb	%al
 	orb	%dil, %al
 	retq
@@ -26,9 +24,7 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000032:
-	movzwl	%dx, %eax
-	movzwl	%si, %ecx
-	cmpl	%eax, %ecx
+	cmpw	%dx, %si
 	setae	%al
 	orb	%dil, %al
 	retq
@@ -37,7 +33,7 @@ func0000000000000032:
 func0000000000000030:
 	andl	$3, %edx
 	andl	$3, %esi
-	cmpl	%edx, %esi
+	cmpb	%dl, %sil
 	seta	%al
 	orb	%dil, %al
 	retq

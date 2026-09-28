@@ -3,8 +3,7 @@
 func00000000000000e1:
 	andl	$1, %esi
 	incl	%esi
-	movzbl	%dil, %eax
-	cmpl	%eax, %esi
+	cmpb	%dil, %sil
 	sete	%al
 	retq
 

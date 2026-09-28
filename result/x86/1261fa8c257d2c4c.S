@@ -11,24 +11,21 @@ func000000000000000d:
 func0000000000000005:
 	subl	%esi, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	subl	%esi, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000009:
 	subl	%esi, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

@@ -3,7 +3,7 @@
 func0000000000000061:
 	shrq	$63, %rsi
 	andl	$1, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 
@@ -35,7 +35,7 @@ func0000000000000081:
 func000000000000006c:
 	shrq	$63, %rsi
 	andl	$1, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	setne	%al
 	retq
 

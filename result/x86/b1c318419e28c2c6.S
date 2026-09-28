@@ -3,7 +3,7 @@
 func0000000000000014:
 	andl	$15, %esi
 	andl	$15, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	movl	$-86400, %ecx
 	movl	$86400, %eax
 	cmovbl	%ecx, %eax

@@ -2,10 +2,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	shrl	$15, %edi
-	andb	$31, %dil
+	andl	$31, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

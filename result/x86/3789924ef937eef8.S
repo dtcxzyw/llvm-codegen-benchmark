@@ -7,18 +7,19 @@ func0000000000000038:
 	movl	$59, %ecx
 	cmovel	%eax, %ecx
 	andl	$63, %edi
-	cmpl	%ecx, %edi
+	cmpb	%cl, %dil
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
-	andl	$536870912, %esi
-	cmpl	$1, %esi
-	movl	$2, %eax
-	sbbl	$0, %eax
+	xorl	%eax, %eax
+	testl	$536870912, %esi
+	sete	%al
+	movl	$2, %ecx
+	subl	%eax, %ecx
 	andl	$3, %edi
-	cmpl	%eax, %edi
+	cmpb	%cl, %dil
 	sete	%al
 	retq
 
@@ -30,7 +31,7 @@ func0000000000000034:
 	setne	%al
 	leal	13(%rax,%rax), %eax
 	andl	$15, %edi
-	cmpl	%eax, %edi
+	cmpb	%al, %dil
 	setb	%al
 	retq
 

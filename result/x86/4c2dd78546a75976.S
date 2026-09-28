@@ -5,8 +5,7 @@ func0000000000000058:
 	cmpl	$1, %esi
 	movl	$2, %eax
 	sbbl	$0, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	seta	%al
 	retq
 

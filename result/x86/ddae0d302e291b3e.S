@@ -1,10 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	notb	%dil
+	xorb	$63, %dil
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

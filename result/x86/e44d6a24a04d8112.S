@@ -9,8 +9,7 @@ func000000000000000e:
 func000000000000000d:
 	tzcntl	%edi, %eax
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -29,8 +28,7 @@ func0000000000000002:
 func0000000000000009:
 	tzcntl	%edi, %eax
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
@@ -43,7 +41,6 @@ func0000000000000007:
 func0000000000000005:
 	tzcntl	%edi, %eax
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 

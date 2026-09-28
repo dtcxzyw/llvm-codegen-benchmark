@@ -9,9 +9,7 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000015:
-	movzbl	%sil, %eax
-	movzbl	%dil, %ecx
-	cmpl	%eax, %ecx
+	cmpb	%sil, %dil
 	setae	%al
 	retq
 
@@ -25,9 +23,7 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000014:
-	movzbl	%sil, %eax
-	movzbl	%dil, %ecx
-	cmpl	%eax, %ecx
+	cmpb	%sil, %dil
 	seta	%al
 	retq
 

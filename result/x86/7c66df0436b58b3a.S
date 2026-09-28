@@ -3,40 +3,38 @@
 func0000000000000038:
 	incb	%dil
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	decb	%dil
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
 	decb	%dil
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000028:
 	decb	%dil
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000039:
 	decb	%dil
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

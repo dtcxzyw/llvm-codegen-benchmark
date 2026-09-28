@@ -3,8 +3,7 @@
 func0000000000000047:
 	incb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	shlq	$2, %rax
 	retq
 
@@ -12,8 +11,7 @@ func0000000000000047:
 func00000000000000cf:
 	incb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	shlq	$2, %rax
 	retq
 
@@ -21,8 +19,7 @@ func00000000000000cf:
 func00000000000000ef:
 	incb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	shlq	$2, %rax
 	retq
 
@@ -30,8 +27,7 @@ func00000000000000ef:
 func000000000000006f:
 	incb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	shlq	$2, %rax
 	retq
 

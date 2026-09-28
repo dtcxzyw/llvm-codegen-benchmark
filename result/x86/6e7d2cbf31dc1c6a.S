@@ -12,7 +12,7 @@ func0000000000000014:
 	shrl	$9, %esi
 	andl	$15, %esi
 	andl	$15, %edi
-	cmpl	%edi, %esi
+	cmpb	%dil, %sil
 	setb	%al
 	retq
 
@@ -21,16 +21,14 @@ func0000000000000018:
 	shrl	$4, %esi
 	andl	$7, %esi
 	andl	$7, %edi
-	cmpl	%edi, %esi
+	cmpb	%dil, %sil
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000019:
 	shrl	$16, %esi
-	movzbl	%sil, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%dil, %sil
 	setae	%al
 	retq
 
@@ -47,7 +45,7 @@ func0000000000000015:
 	shrl	$16, %esi
 	andl	$63, %esi
 	andl	$63, %edi
-	cmpl	%edi, %esi
+	cmpb	%dil, %sil
 	setbe	%al
 	retq
 

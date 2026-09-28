@@ -3,24 +3,21 @@
 func000000000000000d:
 	addl	%esi, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	addl	%esi, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000001:
 	addl	%esi, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

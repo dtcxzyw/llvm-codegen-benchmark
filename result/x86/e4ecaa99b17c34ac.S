@@ -4,8 +4,7 @@ func000000000000000d:
 	movb	$8, %al
 	subb	%dil, %al
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -13,8 +12,7 @@ func0000000000000005:
 	movb	$7, %al
 	subb	%dil, %al
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

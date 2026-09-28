@@ -2,8 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000d:
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %ecx
-	notl	%ecx
+	bzhil	%esi, %eax, %ecx
 	testb	$1, %dil
 	movl	$31, %eax
 	cmovel	%ecx, %eax
@@ -12,8 +11,7 @@ func000000000000000d:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %ecx
-	notl	%ecx
+	bzhil	%esi, %eax, %ecx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax

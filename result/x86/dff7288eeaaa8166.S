@@ -11,8 +11,7 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000026:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
@@ -20,8 +19,7 @@ func0000000000000026:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000002a:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
@@ -29,8 +27,7 @@ func000000000000002a:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000027:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	cmpq	%rax, %rdi
 	setle	%al
 	retq
@@ -45,8 +42,7 @@ func0000000000000028:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000029:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	cmpq	%rax, %rdi
 	setae	%al
 	retq

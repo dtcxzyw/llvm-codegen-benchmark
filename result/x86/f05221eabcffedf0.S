@@ -17,17 +17,16 @@ func000000000000001f:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000001d:
-	andb	$31, %dil
+	andl	$31, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

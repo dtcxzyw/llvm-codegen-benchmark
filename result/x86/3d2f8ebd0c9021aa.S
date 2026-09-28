@@ -4,7 +4,7 @@ func0000000000000001:
 	andl	$1, %esi
 	xorl	$23, %esi
 	andl	$127, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 
@@ -15,7 +15,7 @@ func0000000000000018:
 	movl	$59, %ecx
 	cmovnel	%eax, %ecx
 	andl	$63, %edi
-	cmpl	%ecx, %edi
+	cmpb	%cl, %dil
 	seta	%al
 	retq
 
@@ -26,7 +26,7 @@ func0000000000000014:
 	andl	$1, %eax
 	leal	13(%rax,%rax), %eax
 	andl	$15, %edi
-	cmpl	%eax, %edi
+	cmpb	%al, %dil
 	setb	%al
 	retq
 

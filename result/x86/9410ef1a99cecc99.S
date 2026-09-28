@@ -4,7 +4,7 @@ func0000000000000030:
 	shrl	$24, %esi
 	shrl	$24, %edi
 	xorl	%eax, %eax
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	seta	%al
 	retq
 

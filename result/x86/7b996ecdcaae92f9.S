@@ -15,7 +15,7 @@ func00000000000001f4:
 	andl	$31, %esi
 	addl	$5, %edi
 	andl	$31, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	setb	%al
 	retq
 

@@ -16,7 +16,7 @@ func0000000000000018:
 	andl	$7, %eax
 	shrl	$4, %edi
 	andl	$7, %edi
-	cmpl	%eax, %edi
+	cmpb	%al, %dil
 	seta	%al
 	retq
 

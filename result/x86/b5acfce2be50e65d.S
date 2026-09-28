@@ -3,24 +3,21 @@
 func0000000000000008:
 	incb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000001d:
 	addb	$-2, %dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000019:
 	incb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -35,8 +32,7 @@ func0000000000000015:
 func0000000000000009:
 	decb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
@@ -99,8 +95,7 @@ func000000000000001f:
 func0000000000000018:
 	decb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end13, nop
@@ -131,7 +126,6 @@ func0000000000000013:
 func000000000000000d:
 	incb	%dil
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 

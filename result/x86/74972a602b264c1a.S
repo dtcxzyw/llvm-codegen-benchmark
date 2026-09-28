@@ -2,17 +2,15 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
 	addb	$-32, %dil
-	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notl	%eax
+	movl	$-1, %eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
 	decb	%dil
-	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notl	%eax
+	movl	$-1, %eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

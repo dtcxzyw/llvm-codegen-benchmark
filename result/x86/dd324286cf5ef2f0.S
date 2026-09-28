@@ -19,8 +19,7 @@ func0000000000000010:
 func0000000000000038:
 	decb	%dil
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -43,7 +42,6 @@ func0000000000000013:
 func0000000000000018:
 	addb	$63, %dil
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 

@@ -1,81 +1,72 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000034:
-	movzwl	%si, %eax
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$60, %edx
-	cmovnel	%ecx, %edx
-	cmpl	%eax, %edx
+	movl	$60, %ecx
+	cmovnel	%eax, %ecx
+	cmpw	%si, %cx
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	movzwl	%si, %eax
 	andl	$1, %edi
-	leal	4(,%rdi,4), %ecx
-	cmpl	%eax, %ecx
+	leal	4(,%rdi,4), %eax
+	cmpw	%si, %ax
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
-	movzwl	%si, %eax
 	andl	$1, %edi
-	movl	$2, %ecx
-	subl	%edi, %ecx
-	cmpl	%eax, %ecx
+	movl	$2, %eax
+	subl	%edi, %eax
+	cmpw	%si, %ax
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000021:
-	movzwl	%si, %eax
 	andl	$1, %edi
-	leal	1(%rdi,%rdi), %ecx
-	cmpl	%eax, %ecx
+	leal	1(%rdi,%rdi), %eax
+	cmpw	%si, %ax
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000002c:
-	movzwl	%si, %eax
 	andl	$1, %edi
 	xorl	$33, %edi
-	cmpl	%eax, %edi
+	cmpw	%si, %di
 	setne	%al
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
-	movzwl	%si, %eax
 	notb	%dil
-	movzbl	%dil, %ecx
-	andl	$1, %ecx
-	shll	$15, %ecx
-	cmpl	%eax, %ecx
+	movzbl	%dil, %eax
+	shll	$15, %eax
+	cmpw	%si, %ax
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
-	movzwl	%si, %eax
 	andl	$1, %edi
-	movl	$2, %ecx
-	subl	%edi, %ecx
-	cmpl	%eax, %ecx
+	movl	$2, %eax
+	subl	%edi, %eax
+	cmpw	%si, %ax
 	setne	%al
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000038:
-	movzwl	%si, %eax
 	testb	$1, %dil
-	movl	$10, %ecx
-	movl	$20, %edx
-	cmovnel	%ecx, %edx
-	cmpl	%eax, %edx
+	movl	$10, %eax
+	movl	$20, %ecx
+	cmovnel	%eax, %ecx
+	cmpw	%si, %cx
 	seta	%al
 	retq
 

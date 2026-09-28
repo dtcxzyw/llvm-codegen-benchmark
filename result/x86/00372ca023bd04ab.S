@@ -5,7 +5,7 @@ func0000000000000001:
 	andl	$127, %esi
 	andl	$1, %edi
 	xorl	$23, %edi
-	cmpl	%edi, %esi
+	cmpb	%dil, %sil
 	sete	%al
 	retq
 

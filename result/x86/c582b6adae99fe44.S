@@ -4,8 +4,7 @@ func0000000000000038:
 	addl	%esi, %edi
 	negb	%dil
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -14,8 +13,7 @@ func0000000000000008:
 	movb	$-54, %al
 	subb	%dil, %al
 	movq	$-1, %rcx
-	shlxq	%rax, %rcx, %rax
-	notq	%rax
+	bzhiq	%rax, %rcx, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -24,7 +22,6 @@ func0000000000000018:
 	movb	$-53, %al
 	subb	%dil, %al
 	movq	$-1, %rcx
-	shlxq	%rax, %rcx, %rax
-	notq	%rax
+	bzhiq	%rax, %rcx, %rax
 	retq
 

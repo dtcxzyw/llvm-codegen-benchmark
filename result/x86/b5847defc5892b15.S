@@ -1,27 +1,24 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000021:
-	movzbl	%dl, %eax
 	andl	$1, %esi
-	cmpl	%eax, %esi
+	cmpb	%dl, %sil
 	sete	%al
 	andb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	movzbl	%dl, %eax
 	andl	$1, %esi
-	cmpl	%eax, %esi
+	cmpb	%dl, %sil
 	sete	%al
 	andb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000002c:
-	movzbl	%dl, %eax
 	andl	$1, %esi
-	cmpl	%eax, %esi
+	cmpb	%dl, %sil
 	setne	%al
 	andb	%dil, %al
 	retq

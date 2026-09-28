@@ -11,7 +11,6 @@ func000000000000000e:
 func0000000000000011:
 	shrl	$4, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 

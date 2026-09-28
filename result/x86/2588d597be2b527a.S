@@ -14,8 +14,7 @@ func0000000000000005:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	movq	$-1, %rax
-	shlxq	%rdx, %rax, %rcx
-	notq	%rcx
+	bzhiq	%rdx, %rax, %rcx
 	testb	$1, %sil
 	movl	$4294967295, %eax
 	cmoveq	%rcx, %rax

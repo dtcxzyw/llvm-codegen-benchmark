@@ -12,10 +12,10 @@ func0000000000000017:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000035:
 	shll	$3, %edi
-	negb	%dil
-	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	movb	$32, %al
+	subb	%dil, %al
+	movl	$-1, %ecx
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

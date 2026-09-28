@@ -24,7 +24,7 @@ func00000000000001e1:
 	andl	$11, %esi
 	decl	%edi
 	andl	$3, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 

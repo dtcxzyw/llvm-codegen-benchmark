@@ -5,8 +5,7 @@ func0000000000000041:
 	movl	$26, %eax
 	movl	$161, %ecx
 	cmovel	%eax, %ecx
-	movzbl	%dil, %eax
-	cmpl	%eax, %ecx
+	cmpb	%dil, %cl
 	sete	%al
 	retq
 
@@ -16,8 +15,7 @@ func0000000000000281:
 	testq	%rsi, %rsi
 	setns	%al
 	orl	$2, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%dil, %al
 	sete	%al
 	retq
 

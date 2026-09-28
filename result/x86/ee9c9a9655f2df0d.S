@@ -6,7 +6,7 @@ func0000000000000001:
 	cmovael	%eax, %esi
 	cmpl	$2, %edi
 	cmovbl	%edi, %eax
-	cmpl	%esi, %eax
+	cmpb	%sil, %al
 	sete	%al
 	retq
 

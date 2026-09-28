@@ -6,7 +6,6 @@ func0000000000000008:
 	cmpl	%edi, %edx
 	cmovbel	%edi, %edx
 	movl	$-1, %eax
-	shlxl	%edx, %eax, %eax
-	notl	%eax
+	bzhil	%edx, %eax, %eax
 	retq
 

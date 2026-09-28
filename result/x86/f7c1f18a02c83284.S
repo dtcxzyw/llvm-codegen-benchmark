@@ -2,9 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000018:
 	lzcntl	%edi, %eax
-	notb	%al
+	xorb	$31, %al
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 

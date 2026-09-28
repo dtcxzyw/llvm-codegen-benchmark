@@ -23,17 +23,17 @@ func000000000000001e:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000d:
 	addb	$48, %dil
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000005:
 	incb	%dil
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
@@ -47,8 +47,8 @@ func000000000000001f:
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000001d:
 	incb	%dil
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 

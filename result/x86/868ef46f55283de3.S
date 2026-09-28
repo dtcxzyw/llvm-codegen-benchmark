@@ -6,7 +6,7 @@ func0000000000000001:
 	movl	$1, %eax
 	cmovnel	%edx, %eax
 	andl	$1, %edi
-	cmpl	%eax, %edi
+	cmpb	%al, %dil
 	sete	%al
 	retq
 

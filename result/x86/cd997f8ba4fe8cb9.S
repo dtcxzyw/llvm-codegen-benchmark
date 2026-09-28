@@ -19,7 +19,7 @@ func0000000000000038:
 func0000000000000001:
 	andl	$1, %esi
 	shrl	$31, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 
@@ -27,7 +27,7 @@ func0000000000000001:
 func0000000000000014:
 	andl	$15, %esi
 	shrl	$28, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	setb	%al
 	retq
 
@@ -35,7 +35,7 @@ func0000000000000014:
 func0000000000000021:
 	andl	$1, %esi
 	shrl	$26, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 

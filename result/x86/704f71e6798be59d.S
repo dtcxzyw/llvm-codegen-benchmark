@@ -6,8 +6,7 @@ func0000000000000508:
 	setg	%al
 	addl	%edi, %eax
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -17,8 +16,7 @@ func0000000000000519:
 	setg	%al
 	addl	%edi, %eax
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -28,8 +26,7 @@ func000000000000051d:
 	setg	%al
 	addl	%edi, %eax
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -39,7 +36,6 @@ func000000000000050d:
 	setg	%al
 	addl	%edi, %eax
 	movl	$-1, %ecx
-	shlxl	%eax, %ecx, %eax
-	notl	%eax
+	bzhil	%eax, %ecx, %eax
 	retq
 

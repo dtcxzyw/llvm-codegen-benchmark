@@ -4,8 +4,7 @@ func0000000000000009:
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notl	%eax
+	bzhil	%esi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -40,7 +39,6 @@ func0000000000000008:
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notl	%eax
+	bzhil	%esi, %eax, %eax
 	retq
 

@@ -3,7 +3,7 @@
 func0000000000000041:
 	andl	$1, %esi
 	shrl	$31, %edi
-	cmpl	%esi, %edi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
 

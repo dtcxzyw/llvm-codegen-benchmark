@@ -5,8 +5,7 @@ func0000000000000074:
 	cmpl	$24, %esi
 	movl	$60, %ecx
 	cmovel	%eax, %ecx
-	movzwl	%di, %eax
-	cmpl	%eax, %ecx
+	cmpw	%di, %cx
 	setb	%al
 	retq
 
@@ -15,8 +14,7 @@ func0000000000000058:
 	cmpl	$1, %esi
 	movl	$2, %eax
 	sbbl	$0, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	seta	%al
 	retq
 
@@ -26,8 +24,7 @@ func0000000000000061:
 	cmpl	$28, %esi
 	setne	%al
 	addl	$7, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	sete	%al
 	retq
 
@@ -37,8 +34,7 @@ func0000000000000041:
 	cmpl	$38, %esi
 	sete	%al
 	orl	$3644, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	sete	%al
 	retq
 
@@ -49,8 +45,7 @@ func0000000000000054:
 	setne	%al
 	shll	$12, %eax
 	addl	$4096, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	setb	%al
 	retq
 
@@ -59,8 +54,7 @@ func000000000000004c:
 	cmpl	$1, %esi
 	movl	$2, %eax
 	sbbl	$0, %eax
-	movzwl	%di, %ecx
-	cmpl	%ecx, %eax
+	cmpw	%di, %ax
 	setne	%al
 	retq
 

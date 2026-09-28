@@ -8,8 +8,7 @@ func0000000000000001:
 	testb	$1, %dil
 	movl	$62, %eax
 	cmovel	%ecx, %eax
-	movzbl	%sil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%sil, %al
 	sete	%al
 	retq
 
@@ -22,8 +21,7 @@ func0000000000000021:
 	testb	$1, %dil
 	movl	$2, %ecx
 	cmovel	%eax, %ecx
-	movzbl	%sil, %eax
-	cmpl	%eax, %ecx
+	cmpb	%sil, %cl
 	sete	%al
 	retq
 
@@ -34,8 +32,7 @@ func0000000000000038:
 	testb	$1, %dil
 	movl	$2, %eax
 	cmovel	%edx, %eax
-	movzbl	%sil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%sil, %al
 	seta	%al
 	retq
 
@@ -46,8 +43,7 @@ func0000000000000018:
 	testb	$1, %dil
 	movl	$1, %eax
 	cmovel	%edx, %eax
-	movzbl	%sil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%sil, %al
 	seta	%al
 	retq
 

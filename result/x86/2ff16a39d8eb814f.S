@@ -2,8 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
 
@@ -18,8 +17,7 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rax
-	notq	%rax
+	bzhiq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
 

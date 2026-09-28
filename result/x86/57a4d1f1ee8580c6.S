@@ -14,9 +14,9 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	andb	$1, %dil
+	andl	$63, %esi
 	movq	$-1, %rax
-	shlxq	%rsi, %rax, %rcx
-	notq	%rcx
+	bzhiq	%rsi, %rax, %rcx
 	xorl	%eax, %eax
 	negb	%dil
 	sbbq	%rax, %rax

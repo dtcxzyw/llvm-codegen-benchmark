@@ -9,10 +9,9 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	addl	%esi, %edi
-	andb	$7, %dil
+	andl	$7, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -34,9 +33,9 @@ func000000000000000e:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000d:
 	addl	%esi, %edi
+	andl	$63, %edi
 	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	notq	%rax
+	bzhiq	%rdi, %rax, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop

@@ -1,9 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000014:
-	movzwl	%dx, %eax
-	movzwl	%si, %ecx
-	cmpl	%eax, %ecx
+	cmpw	%dx, %si
 	setb	%al
 	orb	%dil, %al
 	retq
@@ -12,7 +10,7 @@ func0000000000000014:
 func0000000000000018:
 	andl	$64, %edx
 	andl	$64, %esi
-	cmpl	%edx, %esi
+	cmpb	%dl, %sil
 	seta	%al
 	orb	%dil, %al
 	retq

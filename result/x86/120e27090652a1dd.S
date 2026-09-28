@@ -3,8 +3,7 @@
 func00000000000000b4:
 	decb	%sil
 	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	notl	%eax
+	bzhil	%esi, %eax, %eax
 	cmpl	%eax, %edi
 	setb	%al
 	retq

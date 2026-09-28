@@ -27,8 +27,7 @@ func000000000000000f:
 func000000000000000d:
 	shll	$3, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
@@ -51,8 +50,7 @@ func0000000000000000:
 func0000000000000001:
 	shll	$3, %edi
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop

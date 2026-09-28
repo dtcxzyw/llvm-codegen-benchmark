@@ -39,7 +39,7 @@ func0000000000000061:
 	decl	%esi
 	andl	$3, %esi
 	andl	$11, %edi
-	cmpl	%edi, %esi
+	cmpb	%dil, %sil
 	sete	%al
 	retq
 
@@ -48,7 +48,7 @@ func0000000000000078:
 	incl	%esi
 	andl	$127, %esi
 	andl	$63, %edi
-	cmpl	%edi, %esi
+	cmpb	%dil, %sil
 	seta	%al
 	retq
 

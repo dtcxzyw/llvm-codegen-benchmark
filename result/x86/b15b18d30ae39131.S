@@ -3,7 +3,7 @@
 func000000000000030c:
 	andl	$64, %edx
 	andl	$64, %esi
-	cmpl	%edx, %esi
+	cmpb	%dl, %sil
 	seta	%cl
 	testl	%edi, %edi
 	setne	%al

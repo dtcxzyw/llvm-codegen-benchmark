@@ -1,11 +1,12 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000041:
-	cmpl	$1, %esi
-	movl	$2, %eax
-	sbbl	$0, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	xorl	%eax, %eax
+	testl	%esi, %esi
+	sete	%al
+	movl	$2, %ecx
+	subl	%eax, %ecx
+	cmpb	%dil, %cl
 	sete	%al
 	retq
 
@@ -15,8 +16,7 @@ func0000000000000281:
 	testl	%esi, %esi
 	setg	%al
 	leal	5(,%rax,4), %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%dil, %al
 	sete	%al
 	retq
 
@@ -26,8 +26,7 @@ func0000000000000501:
 	cmpl	$2, %esi
 	movl	$255, %ecx
 	cmovbl	%eax, %ecx
-	movzbl	%dil, %eax
-	cmpl	%eax, %ecx
+	cmpb	%dil, %cl
 	sete	%al
 	retq
 

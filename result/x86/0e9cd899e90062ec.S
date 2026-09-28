@@ -11,7 +11,7 @@ func0000000000000021:
 func00000000000002ac:
 	andl	$15, %edx
 	andl	$15, %esi
-	cmpl	%edx, %esi
+	cmpb	%dl, %sil
 	setbe	%cl
 	testl	%edi, %edi
 	setne	%al
@@ -22,7 +22,7 @@ func00000000000002ac:
 func000000000000028c:
 	andl	$15, %edx
 	andl	$15, %esi
-	cmpl	%edx, %esi
+	cmpb	%dl, %sil
 	setb	%cl
 	testl	%edi, %edi
 	setne	%al

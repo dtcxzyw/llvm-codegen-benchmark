@@ -3,8 +3,7 @@
 func0000000000000081:
 	incl	%esi
 	andl	$3, %esi
-	movzbl	%dil, %eax
-	cmpl	%eax, %esi
+	cmpb	%dil, %sil
 	sete	%al
 	retq
 
@@ -12,17 +11,14 @@ func0000000000000081:
 func00000000000000c1:
 	incl	%esi
 	andl	$3, %esi
-	movzbl	%dil, %eax
-	cmpl	%eax, %esi
+	cmpb	%dil, %sil
 	sete	%al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000d4:
 	addl	$4, %esi
-	movzbl	%sil, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%dil, %sil
 	setb	%al
 	retq
 
@@ -36,27 +32,21 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000014:
 	incl	%esi
-	movzbl	%sil, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%dil, %sil
 	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000d8:
 	incl	%esi
-	movzbl	%sil, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%dil, %sil
 	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000054:
 	decl	%esi
-	movzbl	%sil, %eax
-	movzbl	%dil, %ecx
-	cmpl	%ecx, %eax
+	cmpb	%dil, %sil
 	setb	%al
 	retq
 

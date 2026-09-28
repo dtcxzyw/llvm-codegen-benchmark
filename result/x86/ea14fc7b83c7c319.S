@@ -10,16 +10,14 @@ func000000000000001a:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	shrl	$5, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000012:
 	movl	$-1, %eax
-	shlxl	%edi, %eax, %eax
-	notl	%eax
+	bzhil	%edi, %eax, %eax
 	shrl	%eax
 	retq
 
