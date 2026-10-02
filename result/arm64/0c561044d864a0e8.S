@@ -2,8 +2,8 @@ func0000000000000041:
 	add	w8, w2, #7
 	cmp	w2, #0
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #3
-	add	x8, x1, w8, sxtw #3
+	sbfx	x8, x8, #3, #29
+	add	x8, x1, x8, lsl #3
 	cmp	x0, x8
 	cset	w0, eq
 	ret
@@ -23,8 +23,8 @@ func0000000000000004:
 	add	w8, w2, #7
 	cmp	w2, #0
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #3
-	add	x8, x1, w8, sxtw
+	sbfx	x8, x8, #3, #29
+	add	x8, x1, x8
 	cmp	x0, x8
 	cset	w0, lo
 	ret
@@ -33,8 +33,8 @@ func0000000000000044:
 	add	w8, w2, #7
 	cmp	w2, #0
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #3
-	add	x8, x1, w8, sxtw
+	sbfx	x8, x8, #3, #29
+	add	x8, x1, x8
 	cmp	x0, x8
 	cset	w0, lo
 	ret

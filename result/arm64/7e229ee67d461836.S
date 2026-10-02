@@ -3,8 +3,8 @@ func0000000000000066:
 	cmp	w2, #0
 	add	x9, x0, x1
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #5
-	cmp	x9, w8, sxtw
+	sbfx	x8, x8, #5, #27
+	cmp	x9, x8
 	cset	w0, lt
 	ret
 
@@ -13,8 +13,8 @@ func0000000000000004:
 	cmp	w2, #0
 	add	x9, x0, x1
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #5
-	cmp	x9, w8, sxtw
+	sbfx	x8, x8, #5, #27
+	cmp	x9, x8
 	cset	w0, lo
 	ret
 

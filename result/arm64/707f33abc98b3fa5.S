@@ -2,16 +2,16 @@ func0000000000000005:
 	add	w8, w2, #7
 	cmp	w2, #0
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #3
-	add	x8, x1, w8, sxtw
+	sbfx	x8, x8, #3, #29
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, ls
 	ret
 
 func0000000000000026:
 	add	w8, w2, w2, lsr #31
-	asr	w8, w8, #1
-	add	x8, x1, w8, sxtw
+	sbfx	x8, x8, #1, #31
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, lt
 	ret
@@ -66,8 +66,8 @@ func0000000000000008:
 	add	w8, w2, #511
 	cmp	w2, #0
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #9
-	add	x8, x1, w8, sxtw
+	sbfx	x8, x8, #9, #23
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, hi
 	ret
@@ -96,16 +96,16 @@ func0000000000000006:
 
 func000000000000002b:
 	add	w8, w2, w2, lsr #31
-	asr	w8, w8, #1
-	add	x8, x1, w8, sxtw
+	sbfx	x8, x8, #1, #31
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, ge
 	ret
 
 func0000000000000025:
 	add	w8, w2, w2, lsr #31
-	asr	w8, w8, #1
-	add	x8, x1, w8, sxtw
+	sbfx	x8, x8, #1, #31
+	add	x8, x1, x8
 	cmp	x8, x0
 	cset	w0, ls
 	ret

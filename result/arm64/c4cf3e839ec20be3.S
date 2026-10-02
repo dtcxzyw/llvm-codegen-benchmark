@@ -3,13 +3,15 @@ func0000000000000006:
 	ret
 
 func0000000000000012:
-	sbfx	w8, w1, #4, #27
-	add	x0, x0, w8, sxtw #2
+	lsl	w8, w1, #1
+	sbfx	x8, x8, #5, #27
+	add	x0, x0, x8, lsl #2
 	ret
 
 func0000000000000002:
-	sbfx	w8, w1, #4, #27
-	add	x0, x0, w8, sxtw #2
+	lsl	w8, w1, #1
+	sbfx	x8, x8, #5, #27
+	add	x0, x0, x8, lsl #2
 	ret
 
 func0000000000000004:
@@ -17,7 +19,8 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	sbfx	w8, w1, #6, #1
-	add	x0, x0, w8, sxtw #4
+	lsl	w8, w1, #25
+	sbfx	x8, x8, #31, #1
+	add	x0, x0, x8, lsl #4
 	ret
 

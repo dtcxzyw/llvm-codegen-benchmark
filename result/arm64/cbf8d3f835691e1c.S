@@ -3,15 +3,15 @@ func0000000000000002:
 	add	w9, w8, #7
 	cmp	w8, #0
 	csel	w8, w9, w8, mi
-	asr	w8, w8, #3
-	add	x0, x0, w8, sxtw
+	sbfx	x8, x8, #3, #29
+	add	x0, x0, x8
 	ret
 
 func000000000000000a:
 	mul	w8, w1, w2
 	add	w8, w8, w8, lsr #31
-	asr	w8, w8, #1
-	add	x0, x0, w8, sxtw #2
+	sbfx	x8, x8, #1, #31
+	add	x0, x0, x8, lsl #2
 	ret
 
 func0000000000000000:
@@ -28,7 +28,7 @@ func0000000000000000:
 func0000000000000008:
 	mul	w8, w1, w2
 	add	w8, w8, w8, lsr #31
-	asr	w8, w8, #1
-	add	x0, x0, w8, sxtw #3
+	sbfx	x8, x8, #1, #31
+	add	x0, x0, x8, lsl #3
 	ret
 

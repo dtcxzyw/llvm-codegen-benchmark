@@ -12,8 +12,8 @@ func0000000000000022:
 func0000000000000000:
 	lsr	x8, x1, #2
 	add	w8, w8, w8, lsr #31
-	asr	w8, w8, #1
-	add	x0, x0, w8, sxtw #2
+	sbfx	x8, x8, #1, #31
+	add	x0, x0, x8, lsl #2
 	ret
 
 func0000000000000020:

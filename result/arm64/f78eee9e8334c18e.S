@@ -12,7 +12,7 @@ func0000000000000000:
 	cmp	w2, #0
 	add	x9, x0, x1
 	csel	w8, w8, w2, mi
-	asr	w8, w8, #3
-	add	x0, x9, w8, sxtw
+	sbfx	x8, x8, #3, #29
+	add	x0, x9, x8
 	ret
 

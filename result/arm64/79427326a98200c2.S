@@ -22,8 +22,8 @@ func0000000000000086:
 
 func00000000000000a6:
 	add	w8, w2, w2, lsr #31
-	asr	w8, w8, #1
-	add	x8, x0, w8, sxtw
+	sbfx	x8, x8, #1, #31
+	add	x8, x0, x8
 	cmp	x8, w1, uxtw
 	cset	w0, lt
 	ret

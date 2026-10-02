@@ -4,8 +4,9 @@ func000000000000001b:
 	ret
 
 func0000000000000000:
-	sbfx	w8, w1, #6, #1
-	add	x8, x0, w8, sxtw #4
+	lsl	w8, w1, #25
+	sbfx	x8, x8, #31, #1
+	add	x8, x0, x8, lsl #4
 	add	x0, x8, #48
 	ret
 

@@ -6,32 +6,32 @@ func000000000000000b:
 	ret
 
 func0000000000000000:
-	asr	w8, w1, #16
-	add	x8, x0, w8, sxtw #2
+	sbfx	x8, x1, #16, #16
+	add	x8, x0, x8, lsl #2
 	sub	x0, x8, #4
 	ret
 
 func0000000000000008:
-	asr	w8, w1, #16
-	add	x8, x0, w8, sxtw #1
+	sbfx	x8, x1, #16, #16
+	add	x8, x0, x8, lsl #1
 	add	x0, x8, #2
 	ret
 
 func0000000000000018:
-	asr	w8, w1, #1
-	add	x8, x0, w8, sxtw #4
+	sbfx	x8, x1, #1, #31
+	add	x8, x0, x8, lsl #4
 	add	x0, x8, #8
 	ret
 
 func0000000000000002:
-	asr	w8, w1, #1
-	add	x8, x0, w8, sxtw #2
+	sbfx	x8, x1, #1, #31
+	add	x8, x0, x8, lsl #2
 	sub	x0, x8, #16
 	ret
 
 func000000000000001b:
-	asr	w8, w1, #16
-	add	x8, x0, w8, sxtw #4
+	sbfx	x8, x1, #16, #16
+	add	x8, x0, x8, lsl #4
 	add	x0, x8, #2
 	ret
 
@@ -42,14 +42,14 @@ func0000000000000003:
 	ret
 
 func000000000000001a:
-	asr	w8, w1, #24
-	add	x8, x0, w8, sxtw
+	sbfx	x8, x1, #24, #8
+	add	x8, x0, x8
 	sub	x0, x8, #1
 	ret
 
 func0000000000000010:
-	asr	w8, w1, #24
-	add	x8, x0, w8, sxtw
+	sbfx	x8, x1, #24, #8
+	add	x8, x0, x8
 	sub	x0, x8, #5
 	ret
 

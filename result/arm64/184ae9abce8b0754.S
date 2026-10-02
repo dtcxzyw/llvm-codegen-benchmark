@@ -1,26 +1,26 @@
 func000000000000001c:
-	asr	w8, w1, #1
-	add	x0, x0, w8, sxtw #1
+	sbfx	x8, x1, #1, #31
+	add	x0, x0, x8, lsl #1
 	ret
 
 func0000000000000010:
-	asr	w8, w1, #5
-	add	x0, x0, w8, sxtw #2
+	sbfx	x8, x1, #5, #27
+	add	x0, x0, x8, lsl #2
 	ret
 
 func0000000000000012:
-	asr	w8, w1, #8
-	add	x0, x0, w8, sxtw #3
+	sbfx	x8, x1, #8, #24
+	add	x0, x0, x8, lsl #3
 	ret
 
 func0000000000000002:
-	asr	w8, w1, #1
-	add	x0, x0, w8, sxtw
+	sbfx	x8, x1, #1, #31
+	add	x0, x0, x8
 	ret
 
 func000000000000000a:
-	asr	w8, w1, #4
-	add	x0, x0, w8, sxtw #2
+	sbfx	x8, x1, #4, #28
+	add	x0, x0, x8, lsl #2
 	ret
 
 func0000000000000000:
@@ -29,12 +29,12 @@ func0000000000000000:
 	ret
 
 func0000000000000008:
-	asr	w8, w1, #3
-	add	x0, x0, w8, sxtw
+	sbfx	x8, x1, #3, #29
+	add	x0, x0, x8
 	ret
 
 func0000000000000018:
-	asr	w8, w1, #3
-	add	x0, x0, w8, sxtw
+	sbfx	x8, x1, #3, #29
+	add	x0, x0, x8
 	ret
 
