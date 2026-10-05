@@ -2,8 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
 	vpmovdw	%ymm1, %xmm1
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubw	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubw	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -36,8 +36,8 @@ func0000000000000014:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000003c:
 	vpmovdw	%ymm1, %xmm1
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubw	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubw	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

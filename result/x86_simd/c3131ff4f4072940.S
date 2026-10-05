@@ -7,8 +7,8 @@ func0000000000000185:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:
@@ -21,8 +21,8 @@ func0000000000000025:
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:

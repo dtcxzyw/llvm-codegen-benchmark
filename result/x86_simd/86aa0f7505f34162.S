@@ -26,8 +26,8 @@ func0000000000000010:
 func000000000000001d:
 	vpsraq	$2, %ymm0, %ymm0
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:
@@ -68,8 +68,8 @@ func0000000000000000:
 	vpsrlq	$63, %ymm1, %ymm2
 	vpsraq	$2, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:
@@ -121,8 +121,8 @@ func0000000000000015:
 func000000000000001c:
 	vpsraq	$3, %ymm0, %ymm0
 	vpmullq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI8_0:

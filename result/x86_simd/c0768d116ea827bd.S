@@ -88,9 +88,9 @@ func000000000000000a:
 	.quad	7
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000008:
-	vpandq	.LCPI8_0(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogq	$120, .LCPI8_0(%rip){1to4}, %ymm1, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI9_0:

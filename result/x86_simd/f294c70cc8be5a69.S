@@ -3,8 +3,8 @@
 	.long	14
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -25,8 +25,8 @@ func0000000000000014:
 	.long	14
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000034:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -35,8 +35,8 @@ func0000000000000034:
 	.long	14
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000004:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	retq

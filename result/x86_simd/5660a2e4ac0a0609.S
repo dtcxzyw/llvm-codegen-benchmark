@@ -36,9 +36,9 @@ func0000000000000007:
 	.quad	6148914691236517205
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpternlogq	$120, .LCPI3_0(%rip){1to4}, %ymm2, %ymm3
-	vpsubq	%ymm3, %ymm1, %ymm1
+	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm2, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
 

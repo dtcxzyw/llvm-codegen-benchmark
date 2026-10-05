@@ -73,8 +73,8 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000020:
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI9_0:
@@ -89,8 +89,8 @@ func000000000000001f:
 	.prefalign	4, .Lfunc_end10, nop
 func0000000000000010:
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI11_0:

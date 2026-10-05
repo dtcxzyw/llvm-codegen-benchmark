@@ -31,16 +31,16 @@ func000000000000007f:
 func0000000000000040:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmullq	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000000:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmullq	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

@@ -13,8 +13,8 @@ func0000000000000000:
 func00000000000000c0:
 	vpmovqd	%ymm2, %xmm2
 	vpmulld	%xmm2, %xmm0, %xmm0
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -87,8 +87,8 @@ func00000000000000d1:
 func0000000000000080:
 	vpmovqd	%ymm2, %xmm2
 	vpmulld	%xmm2, %xmm0, %xmm0
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -118,8 +118,8 @@ func00000000000000d8:
 func0000000000000005:
 	vpmovqd	%ymm2, %xmm2
 	vpmulld	%xmm2, %xmm0, %xmm0
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
@@ -148,8 +148,8 @@ func00000000000000cc:
 func0000000000000088:
 	vpmovqd	%ymm2, %xmm2
 	vpmulld	%xmm2, %xmm1, %xmm1
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0
-	vpsubd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 

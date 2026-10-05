@@ -16,8 +16,8 @@ func000000000000000d:
 func0000000000000000:
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovzxdq	%xmm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

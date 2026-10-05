@@ -42,8 +42,8 @@ func00000000000000d5:
 func00000000000000c0:
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

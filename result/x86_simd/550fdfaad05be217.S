@@ -91,9 +91,9 @@ func000000000000014f:
 func0000000000000184:
 	vpbroadcastd	.LCPI9_0(%rip), %ymm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpandn	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$210, %ymm2, %ymm1, %ymm3
+	vpsubd	%ymm3, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end10, nop
@@ -131,8 +131,8 @@ func0000000000000080:
 	vpcmpltud	.LCPI13_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI14_0:
@@ -184,8 +184,8 @@ func0000000000000100:
 	vpcmpnleud	.LCPI18_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI19_0:

@@ -34,8 +34,8 @@
 	.byte	12
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpshufb	.LCPI0_0(%rip), %ymm0, %ymm0
 	retq
 

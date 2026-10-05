@@ -2,8 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000002a6:
 	vpmulld	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	vpmovd2m	%ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

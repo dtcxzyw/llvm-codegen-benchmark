@@ -26,9 +26,9 @@ func0000000000000000:
 	vpaddd	%ymm1, %ymm1, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubd	%ymm1, %ymm2, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI3_0:
@@ -55,8 +55,8 @@ func0000000000000001:
 func0000000000000030:
 	vpaddd	%ymm1, %ymm1, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI6_0:

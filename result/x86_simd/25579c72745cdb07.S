@@ -30,8 +30,9 @@ func00000000000000e1:
 func00000000000001a9:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltq	%ymm3, %ymm1, %k1
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0 {%k1}
+	vmovdqa	%xmm0, %xmm1
+	vpternlogq	$15, %xmm0, %xmm0, %xmm1
+	vpsubd	%xmm1, %xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq
 
@@ -39,8 +40,9 @@ func00000000000001a9:
 func00000000000001a8:
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltq	%ymm3, %ymm1, %k1
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0 {%k1}
+	vmovdqa	%xmm0, %xmm1
+	vpternlogq	$15, %xmm0, %xmm0, %xmm1
+	vpsubd	%xmm1, %xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq
 
@@ -84,8 +86,9 @@ func0000000000000085:
 	.prefalign	4, .Lfunc_end7, nop
 func00000000000001b1:
 	vptestmq	%ymm1, %ymm1, %k1
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0 {%k1}
+	vmovdqa	%xmm0, %xmm1
+	vpternlogq	$15, %xmm0, %xmm0, %xmm1
+	vpsubd	%xmm1, %xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq
 

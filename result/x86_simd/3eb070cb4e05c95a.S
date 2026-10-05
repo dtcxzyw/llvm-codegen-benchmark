@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000010:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -42,15 +42,15 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000018:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000001a:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -64,8 +64,8 @@ func000000000000001f:
 
 	.prefalign	4, .Lfunc_end8, nop
 func000000000000000a:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -131,8 +131,8 @@ func0000000000000015:
 
 	.prefalign	4, .Lfunc_end16, nop
 func000000000000001b:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -164,8 +164,8 @@ func0000000000000014:
 
 	.prefalign	4, .Lfunc_end20, nop
 func0000000000000005:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

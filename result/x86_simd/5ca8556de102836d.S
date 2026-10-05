@@ -46,8 +46,8 @@ func0000000000000005:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000008:
 	vpmovzxbd	%xmm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI6_0:
@@ -123,8 +123,8 @@ func000000000000001f:
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000004:
 	vpmovzxbd	%xmm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI15_0:
@@ -156,7 +156,7 @@ func0000000000000006:
 	.prefalign	4, .Lfunc_end18, nop
 func0000000000000002:
 	vpmovzxbd	%xmm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

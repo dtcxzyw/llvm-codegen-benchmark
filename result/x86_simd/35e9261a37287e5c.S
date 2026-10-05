@@ -53,8 +53,8 @@ func0000000000000004:
 	vptestnmb	%xmm0, %xmm0, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1}
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

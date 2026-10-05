@@ -23,8 +23,8 @@ func0000000000000015:
 func0000000000000020:
 	vpsrlq	$32, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
@@ -69,8 +69,8 @@ func000000000000003a:
 func0000000000000010:
 	vpsrlq	$1, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubq	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop

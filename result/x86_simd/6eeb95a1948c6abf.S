@@ -16,8 +16,8 @@ func0000000000000000:
 	vpmovzxwd	%xmm0, %ymm0
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm2
 	vpmovzxwd	%xmm2, %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm1
 	vpslld	$31, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0

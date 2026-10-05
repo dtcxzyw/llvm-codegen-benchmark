@@ -3,8 +3,8 @@
 func0000000000000000:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm0, %ymm0
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI1_0:
@@ -31,24 +31,24 @@ func000000000000000a:
 func0000000000000005:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000001:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI6_0:

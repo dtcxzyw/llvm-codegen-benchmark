@@ -17,9 +17,9 @@ func00000000000001e4:
 	.long	8191
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000184:
-	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$120, .LCPI1_0(%rip){1to8}, %ymm2, %ymm3
+	vpsubd	%ymm3, %ymm1, %ymm1
 	vpcmpltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -26,8 +26,8 @@ func00000000000000d0:
 func00000000000000e1:
 	vpaddd	%ymm1, %ymm1, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	retq
 
@@ -35,8 +35,8 @@ func00000000000000e1:
 func0000000000000055:
 	vpslld	$2, %ymm1, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	retq
 

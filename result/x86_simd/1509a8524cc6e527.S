@@ -37,8 +37,8 @@ func00000000000000aa:
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a4:
 	vpmovsxbd	%xmm2, %ymm2
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

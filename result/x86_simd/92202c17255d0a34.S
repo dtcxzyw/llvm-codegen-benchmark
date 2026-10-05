@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000040:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -64,8 +64,8 @@ func0000000000000075:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000050:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -116,8 +116,8 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end11, nop
 func0000000000000045:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -125,8 +125,8 @@ func0000000000000045:
 
 	.prefalign	4, .Lfunc_end12, nop
 func00000000000000e4:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -145,8 +145,8 @@ func00000000000000cc:
 
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000020:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -154,8 +154,8 @@ func0000000000000020:
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000001:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -163,8 +163,8 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000080:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper

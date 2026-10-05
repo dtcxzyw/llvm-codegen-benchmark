@@ -14,8 +14,8 @@ func0000000000000100:
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpsrld	$31, %xmm1, %xmm1
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0
-	vpsubd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -36,8 +36,8 @@ func0000000000000040:
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2
 	vpcmpeqd	%xmm2, %xmm1, %xmm1
 	vpsrld	$31, %xmm1, %xmm1
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0
-	vpsubd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 
@@ -48,8 +48,8 @@ func0000000000000200:
 	vpcmpnleud	.LCPI4_0(%rip){1to4}, %xmm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpsrld	$31, %xmm1, %xmm1
-	vpternlogq	$15, %xmm0, %xmm0, %xmm0
-	vpsubd	%xmm0, %xmm1, %xmm0
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

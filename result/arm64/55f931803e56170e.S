@@ -1,10 +1,8 @@
 func0000000000000000:
-	lsl	w8, w0, #4
-	sxtw	x0, w8
+	sbfiz	x0, x0, #4, #28
 	ret
 
 func0000000000000001:
-	lsl	w8, w0, #6
-	sxtw	x0, w8
+	sbfiz	x0, x0, #6, #26
 	ret
 

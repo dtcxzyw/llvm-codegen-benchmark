@@ -30,8 +30,8 @@ func0000000000000010:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000020:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -39,8 +39,8 @@ func0000000000000020:
 
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000d0:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
@@ -59,8 +59,8 @@ func0000000000000044:
 
 	.prefalign	4, .Lfunc_end6, nop
 func00000000000000c0:
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper

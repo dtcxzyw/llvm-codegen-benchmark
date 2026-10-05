@@ -6,8 +6,8 @@ func0000000000000002:
 	vpsrld	$29, %xmm3, %xmm3
 	vpaddd	%xmm3, %xmm1, %xmm1
 	vpsrad	$3, %xmm1, %xmm1
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm1, %xmm1
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm2, %xmm1
 	vpminsd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

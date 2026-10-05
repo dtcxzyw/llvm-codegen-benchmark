@@ -86,8 +86,8 @@ func0000000000000006:
 func0000000000000784:
 	vpslld	$2, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpltud	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -97,8 +97,8 @@ func0000000000000784:
 func000000000000078c:
 	vpslld	$2, %ymm2, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpcmpneqd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

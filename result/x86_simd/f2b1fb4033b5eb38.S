@@ -17,8 +17,9 @@ func0000000000000000:
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0 {%k1}
+	vmovdqa	%ymm0, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm0 {%k1}
 	retq
 
 .LCPI2_0:

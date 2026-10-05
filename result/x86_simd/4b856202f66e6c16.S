@@ -5,8 +5,8 @@
 	.long	10000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
 	vpmuludq	%ymm2, %ymm1, %ymm1
@@ -24,8 +24,8 @@ func0000000000000000:
 	.long	10000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpmuludq	%ymm2, %ymm1, %ymm1

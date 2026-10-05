@@ -13,9 +13,9 @@ func00000000000001ff:
 func00000000000001f3:
 	vpslld	$9, %ymm2, %ymm2
 	vpaddd	%ymm1, %ymm1, %ymm1
-	vpor	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$30, %ymm2, %ymm1, %ymm3
+	vpsubd	%ymm3, %ymm0, %ymm0
 	retq
 
 .LCPI2_0:

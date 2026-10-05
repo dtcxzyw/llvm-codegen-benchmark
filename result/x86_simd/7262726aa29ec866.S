@@ -54,10 +54,10 @@ func00000000000000cd:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000055:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI7_0:
@@ -74,17 +74,17 @@ func000000000000005c:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000040:
 	vpaddd	%ymm1, %ymm2, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI8_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000000c:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI10_0:
@@ -135,6 +135,6 @@ func00000000000000ba:
 	.prefalign	4, .Lfunc_end15, nop
 func000000000000009d:
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 

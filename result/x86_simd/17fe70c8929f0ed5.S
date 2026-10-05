@@ -77,8 +77,8 @@ func000000000000000f:
 func000000000000000c:
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpmaxsd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI8_0:

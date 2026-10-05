@@ -14,8 +14,8 @@ func000000000000008d:
 	vpsraq	$4, %ymm2, %ymm2
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$4, %ymm0, %ymm0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	retq
 
 .LCPI2_0:

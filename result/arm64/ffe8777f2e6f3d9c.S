@@ -3,8 +3,7 @@ func0000000000000009:
 	add	w9, w0, #14
 	csel	w8, w9, w8, mi
 	asr	w8, w8, #3
-	lsl	w8, w8, #1
-	sxtw	x0, w8
+	sbfiz	x0, x8, #1, #31
 	ret
 
 func0000000000000001:

@@ -3,8 +3,8 @@
 func0000000000000040:
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
@@ -20,8 +20,8 @@ func0000000000000042:
 func0000000000000000:
 	vpsubq	%ymm0, %ymm1, %ymm1
 	vpsrlq	$1, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

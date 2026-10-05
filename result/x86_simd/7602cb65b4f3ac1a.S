@@ -3,8 +3,8 @@
 func0000000000000000:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm2, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:
@@ -26,8 +26,8 @@ func0000000000000044:
 func0000000000000008:
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm2, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI4_0:
@@ -60,7 +60,7 @@ func0000000000000055:
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000004:
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI8_0:
@@ -68,8 +68,8 @@ func0000000000000004:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000010:
 	vpsubd	%ymm0, %ymm2, %ymm0
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 

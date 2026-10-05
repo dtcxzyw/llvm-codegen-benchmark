@@ -71,16 +71,16 @@ func000000000000000e:
 	.prefalign	4, .Lfunc_end7, nop
 func000000000000004e:
 	vpmovqd	%ymm0, %xmm0
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000028:
 	vpmovqd	%ymm0, %xmm0
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

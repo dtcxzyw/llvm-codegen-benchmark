@@ -12,9 +12,10 @@ func0000000000000041:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	vpsrlq	$1, %ymm2, %ymm2
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpcmpeqd	%xmm3, %xmm3, %xmm3
-	vpcmpeqb	%xmm3, %xmm1, %k1
-	vpsubq	%ymm2, %ymm0, %ymm0 {%k1}
+	vmovdqa	%ymm0, %ymm3
+	vpternlogq	$15, %ymm0, %ymm0, %ymm3
+	vpcmpeqd	%xmm4, %xmm4, %xmm4
+	vpcmpeqb	%xmm4, %xmm1, %k1
+	vpsubq	%ymm3, %ymm2, %ymm0 {%k1}
 	retq
 

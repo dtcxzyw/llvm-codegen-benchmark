@@ -78,9 +78,9 @@ func000000000000004d:
 func0000000000000073:
 	vpmovzxbd	%xmm2, %ymm2
 	vpaddd	%ymm2, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$30, %ymm1, %ymm2, %ymm3
+	vpsubd	%ymm3, %ymm0, %ymm0
 	retq
 
 .LCPI8_0:

@@ -19,7 +19,7 @@ func0000000000000025:
 	vpsrad	$20, %ymm1, %ymm1
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrad	$20, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 

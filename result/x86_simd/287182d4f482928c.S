@@ -21,9 +21,9 @@
 	.short	512
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vpandd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubw	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogd	$120, .LCPI0_1(%rip){1to8}, %ymm1, %ymm2
+	vpsubw	%ymm2, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

@@ -86,8 +86,8 @@ func0000000000000010:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000020:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq

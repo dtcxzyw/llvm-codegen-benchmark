@@ -7,8 +7,7 @@ func0000000000000005:
 
 func0000000000000007:
 	add	w8, w1, w1, lsl #3
-	lsl	w8, w8, #2
-	sxtw	x8, w8
+	sbfiz	x8, x8, #2, #30
 	mul	x0, x0, x8
 	ret
 
@@ -20,8 +19,7 @@ func0000000000000001:
 
 func0000000000000004:
 	add	w8, w1, w1, lsl #1
-	lsl	w8, w8, #1
-	sxtw	x8, w8
+	sbfiz	x8, x8, #1, #31
 	mul	x0, x0, x8
 	ret
 

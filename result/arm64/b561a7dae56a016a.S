@@ -1,6 +1,5 @@
 func0000000000000021:
-	lsl	w8, w2, #1
-	sxtw	x8, w8
+	sbfiz	x8, x2, #1, #31
 	mul	x8, x1, x8
 	cmp	x8, #0
 	cset	w8, eq

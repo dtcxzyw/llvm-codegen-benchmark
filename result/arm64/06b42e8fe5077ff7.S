@@ -1,18 +1,15 @@
 func0000000000000014:
-	lsl	w8, w2, #1
-	sxtw	x8, w8
+	sbfiz	x8, x2, #1, #31
 	madd	x0, x1, x8, x0
 	ret
 
 func0000000000000015:
-	lsl	w8, w2, #1
-	sxtw	x8, w8
+	sbfiz	x8, x2, #1, #31
 	madd	x0, x1, x8, x0
 	ret
 
 func0000000000000005:
-	lsl	w8, w2, #4
-	sxtw	x8, w8
+	sbfiz	x8, x2, #4, #28
 	madd	x0, x1, x8, x0
 	ret
 

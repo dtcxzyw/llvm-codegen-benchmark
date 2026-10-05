@@ -4,7 +4,6 @@ func0000000000000001:
 	smull	x8, w0, w8
 	lsr	x9, x8, #33
 	add	x8, x9, x8, lsr #63
-	lsl	w8, w8, #2
-	sxtw	x0, w8
+	sbfiz	x0, x8, #2, #30
 	ret
 

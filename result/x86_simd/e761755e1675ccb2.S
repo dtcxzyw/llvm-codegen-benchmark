@@ -40,8 +40,8 @@ func0000000000000000:
 	.long	268435456
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000000e:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

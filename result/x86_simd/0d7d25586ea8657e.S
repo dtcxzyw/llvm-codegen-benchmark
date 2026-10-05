@@ -64,9 +64,9 @@ func000000000000000c:
 	.long	4294967232
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
-	vpandd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogd	$120, .LCPI6_0(%rip){1to8}, %ymm0, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm0
 	retq
 
 .LCPI7_0:

@@ -45,9 +45,9 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
-	vpor	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogq	$30, %ymm1, %ymm0, %ymm3
+	vpsubq	%ymm3, %ymm2, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop

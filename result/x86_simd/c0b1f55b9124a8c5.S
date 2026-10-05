@@ -68,14 +68,14 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000c:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubw	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubw	%ymm0, %ymm1, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000d:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubw	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubw	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI7_0:

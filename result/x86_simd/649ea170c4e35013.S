@@ -65,8 +65,8 @@ func00000000000000c0:
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm1, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:

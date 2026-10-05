@@ -5,8 +5,8 @@ func0000000000000000:
 	vpaddd	%xmm3, %xmm2, %xmm2
 	vpmulld	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 

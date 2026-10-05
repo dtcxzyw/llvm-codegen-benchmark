@@ -1,21 +1,18 @@
 func0000000000000001:
 	cmp	w0, w1
 	csel	w8, w0, w1, gt
-	lsl	w8, w8, #8
-	sxtw	x0, w8
+	sbfiz	x0, x8, #8, #24
 	ret
 
 func0000000000000004:
 	cmp	w0, w1
 	csel	w8, w0, w1, gt
-	lsl	w8, w8, #5
-	sxtw	x0, w8
+	sbfiz	x0, x8, #5, #27
 	ret
 
 func0000000000000005:
 	cmp	w0, w1
 	csel	w8, w0, w1, gt
-	lsl	w8, w8, #1
-	sxtw	x0, w8
+	sbfiz	x0, x8, #1, #31
 	ret
 

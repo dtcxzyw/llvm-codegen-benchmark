@@ -4,9 +4,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000006:
 	vpbroadcastd	.LCPI0_0(%rip), %xmm3
-	vmovdqa	%xmm0, %xmm4
-	vpternlogq	$15, %xmm0, %xmm0, %xmm4
-	vpsubd	%xmm4, %xmm2, %xmm2
+	vpternlogq	$15, %xmm2, %xmm2, %xmm2
+	vpsubd	%xmm2, %xmm0, %xmm2
 	vpcmpgtd	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm3 {%k1}
 	vpmovsxdq	%xmm3, %ymm0

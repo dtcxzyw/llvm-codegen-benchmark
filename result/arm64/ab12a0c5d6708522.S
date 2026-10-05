@@ -2,8 +2,7 @@ func0000000000000005:
 	mov	w8, #3
 	sub	w8, w8, w0
 	add	w8, w8, w8, lsl #2
-	lsl	w8, w8, #3
-	sxtw	x0, w8
+	sbfiz	x0, x8, #3, #29
 	ret
 
 func0000000000000000:
@@ -19,8 +18,7 @@ func0000000000000001:
 	mov	w8, #3
 	sub	w8, w8, w0
 	add	w8, w8, w8, lsl #1
-	lsl	w8, w8, #3
-	sxtw	x0, w8
+	sbfiz	x0, x8, #3, #29
 	ret
 
 func0000000000000004:

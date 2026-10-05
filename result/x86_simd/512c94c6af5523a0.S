@@ -3,8 +3,8 @@
 	.zero	16,63
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000188:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubb	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubb	%xmm0, %xmm1, %xmm0
 	vpcmpnleub	.LCPI0_0(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
@@ -43,8 +43,8 @@ func00000000000001a4:
 	.zero	16,64
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000008:
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubb	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubb	%xmm0, %xmm1, %xmm0
 	vpcmpnleub	.LCPI4_0(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

@@ -3,8 +3,8 @@
 func0000000000000000:
 	vpmovsxdq	%xmm2, %ymm2
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsllq	$4, %ymm0, %ymm0
 	retq
 
@@ -45,8 +45,8 @@ func0000000000000054:
 func0000000000000050:
 	vpmovzxdq	%xmm2, %ymm2
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	retq
 

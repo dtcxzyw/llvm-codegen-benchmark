@@ -102,8 +102,8 @@ func000000000000000d:
 	.prefalign	4, .Lfunc_end6, nop
 func000000000000000c:
 	vpsrlq	$1, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpternlogq	$120, .LCPI6_0(%rip){1to4}, %ymm1, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	retq
 

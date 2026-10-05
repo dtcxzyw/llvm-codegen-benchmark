@@ -15,8 +15,8 @@ func0000000000000015:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000000:
 	vpmovzxwd	%xmm0, %ymm0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpslld	$31, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0
@@ -38,8 +38,8 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000030:
 	vpmovzxwd	%xmm0, %ymm0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vpslld	$31, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm0
 	vpsubd	%ymm0, %ymm1, %ymm0

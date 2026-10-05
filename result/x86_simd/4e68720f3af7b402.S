@@ -4,8 +4,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000032:
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpsllvd	%ymm0, %ymm2, %ymm0
 	retq
 
@@ -26,8 +26,8 @@ func0000000000000036:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000017:
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpsllvd	%ymm0, %ymm2, %ymm0
 	retq
 

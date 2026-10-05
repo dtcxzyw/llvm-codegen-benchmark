@@ -21,8 +21,8 @@ func000000000000030e:
 	vpcmpnleub	.LCPI0_0(%rip), %xmm2, %k0
 	vpmovm2d	%k0, %ymm2
 	vpsrld	$31, %ymm2, %ymm2
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm2, %ymm1
 	vcvtudq2pd	%ymm1, %zmm1
 	vcvtudq2pd	%ymm0, %zmm0
 	vdivpd	%zmm1, %zmm0, %zmm0

@@ -28,9 +28,9 @@ func0000000000000007:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	vpslld	$3, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpternlogd	$120, .LCPI2_0(%rip){1to8}, %ymm1, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI3_0:

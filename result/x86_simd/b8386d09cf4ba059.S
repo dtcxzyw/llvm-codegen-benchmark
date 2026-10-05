@@ -32,9 +32,9 @@ func0000000000000064:
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000c:
 	vpsllq	$8, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm0
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogq	$30, %ymm0, %ymm2, %ymm3
+	vpsubq	%ymm3, %ymm1, %ymm0
 	retq
 
 .LCPI4_0:

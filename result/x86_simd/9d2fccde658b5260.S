@@ -18,8 +18,8 @@ func0000000000000000:
 	.long	1431655766
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000c:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpshufd	$245, %ymm0, %ymm1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2
 	vpmuldq	%ymm2, %ymm1, %ymm1

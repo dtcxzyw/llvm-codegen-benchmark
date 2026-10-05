@@ -5,8 +5,8 @@
 func000000000000001f:
 	vpmovzxbd	%xmm1, %ymm1
 	vpslld	$3, %ymm1, %ymm1
-	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpternlogd	$120, .LCPI0_0(%rip){1to8}, %ymm1, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 

@@ -16,8 +16,9 @@ func0000000000000000:
 func0000000000000010:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpternlogq	$15, %xmm2, %xmm2, %xmm2
-	vpsubd	%xmm2, %xmm0, %xmm0 {%k1}
+	vmovdqa	%xmm0, %xmm1
+	vpternlogq	$15, %xmm0, %xmm0, %xmm1
+	vpsubd	%xmm1, %xmm2, %xmm0 {%k1}
 	vpmovzxdq	%xmm0, %ymm0
 	retq
 

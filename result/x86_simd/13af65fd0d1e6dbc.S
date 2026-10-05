@@ -3,8 +3,8 @@
 func0000000000000020:
 	vpmovzxwd	%xmm1, %ymm1
 	vpsrad	$21, %ymm2, %ymm2
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

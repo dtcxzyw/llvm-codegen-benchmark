@@ -4,9 +4,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
 	vpmovzxbd	%xmm2, %ymm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpternlogd	$30, %ymm2, %ymm1, %ymm3
-	vpsubd	%ymm3, %ymm0, %ymm0
+	vpor	%ymm2, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

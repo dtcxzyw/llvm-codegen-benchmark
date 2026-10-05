@@ -3,15 +3,15 @@
 func0000000000000015:
 	vcvttps2dq	%ymm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
 	vcvttps2dq	%ymm2, %ymm2
 	vpmulld	%ymm1, %ymm0, %ymm0
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm2, %ymm0
 	retq
 

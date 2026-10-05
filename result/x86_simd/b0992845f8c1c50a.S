@@ -35,8 +35,8 @@ func0000000000000181:
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000a9:
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	vpsraq	$30, %ymm0, %ymm0
 	retq
@@ -44,8 +44,8 @@ func00000000000000a9:
 	.prefalign	4, .Lfunc_end4, nop
 func00000000000000a1:
 	vpmullq	%ymm2, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsllq	$32, %ymm0, %ymm0
 	vpsraq	$29, %ymm0, %ymm0
 	retq

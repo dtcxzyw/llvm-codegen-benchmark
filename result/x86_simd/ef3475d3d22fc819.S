@@ -179,8 +179,8 @@ func0000000000000030:
 	.long	20
 	.prefalign	4, .Lfunc_end16, nop
 func0000000000000034:
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	vpmulld	.LCPI16_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 

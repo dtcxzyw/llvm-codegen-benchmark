@@ -73,9 +73,9 @@ func0000000000000035:
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000000c0:
 	vpslld	$8, %ymm2, %ymm2
-	vpandd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$120, .LCPI3_0(%rip){1to8}, %ymm2, %ymm3
+	vpsubd	%ymm3, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 

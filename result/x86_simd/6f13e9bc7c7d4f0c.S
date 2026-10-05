@@ -35,8 +35,8 @@ func00000000000000a4:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000008:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -67,8 +67,8 @@ func000000000000000a:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000086:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -77,8 +77,8 @@ func0000000000000086:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000084:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -133,8 +133,8 @@ func00000000000001c6:
 
 	.prefalign	4, .Lfunc_end12, nop
 func00000000000001a6:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -143,8 +143,8 @@ func00000000000001a6:
 
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000106:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpgtq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
@@ -165,8 +165,8 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000184:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpltuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -211,8 +211,8 @@ func00000000000000a7:
 
 	.prefalign	4, .Lfunc_end19, nop
 func00000000000001a1:
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubq	%ymm0, %ymm2, %ymm0
 	vpmovsxdq	%xmm1, %ymm1
 	vpcmpeqq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

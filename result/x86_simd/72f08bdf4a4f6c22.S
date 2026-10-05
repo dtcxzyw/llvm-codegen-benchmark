@@ -45,7 +45,8 @@ func000000000000000f:
 func000000000000000d:
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpternlogq	$15, %ymm2, %ymm2, %ymm2
-	vpsubq	%ymm2, %ymm0, %ymm0 {%k1}
+	vmovdqa	%ymm0, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm1
+	vpsubq	%ymm1, %ymm2, %ymm0 {%k1}
 	retq
 

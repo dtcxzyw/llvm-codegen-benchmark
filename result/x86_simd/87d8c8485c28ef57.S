@@ -21,9 +21,9 @@ func0000000000000000:
 	.long	2
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000057:
-	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
+	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq

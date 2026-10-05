@@ -67,8 +67,8 @@ func0000000000000010:
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %ymm1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm1 {%k1}
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 
 .LCPI5_0:
@@ -82,8 +82,8 @@ func0000000000000040:
 	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm1
 	vpbroadcastd	.LCPI5_2(%rip), %ymm1 {%k1}
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
 .LCPI6_0:

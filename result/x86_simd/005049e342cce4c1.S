@@ -5,9 +5,9 @@
 	.quad	0x41d0000000000000
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001c:
-	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpternlogq	$15, %ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpternlogd	$120, .LCPI0_0(%rip){1to8}, %ymm2, %ymm3
+	vpsubd	%ymm3, %ymm1, %ymm1
 	vcvtudq2pd	%ymm0, %zmm0
 	vbroadcastsd	.LCPI0_1(%rip), %zmm2
 	vdivpd	%zmm0, %zmm2, %zmm0

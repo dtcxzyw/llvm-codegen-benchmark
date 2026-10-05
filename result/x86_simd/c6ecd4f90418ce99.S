@@ -19,7 +19,7 @@ func0000000000000000:
 	vcvtudq2pd	%ymm0, %zmm0
 	vdivpd	%zmm1, %zmm0, %zmm0
 	vcvttpd2udq	%zmm0, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0
-	vpsubd	%ymm0, %ymm2, %ymm0
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm0, %ymm0
 	retq
 

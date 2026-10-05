@@ -34,8 +34,8 @@ func0000000000001e0a:
 	vpmovqd	%ymm2, %xmm2
 	vpbroadcastd	.LCPI2_0(%rip), %xmm3
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpcmpgtd	%xmm3, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -47,8 +47,8 @@ func000000000000060a:
 	vpmovqd	%ymm2, %xmm2
 	vpbroadcastd	.LCPI3_0(%rip), %xmm3
 	vpsubd	%xmm2, %xmm1, %xmm1
-	vpternlogq	$15, %xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0
+	vpsubd	%xmm0, %xmm1, %xmm0
 	vpcmpgtd	%xmm3, %xmm0, %xmm0
 	vzeroupper
 	retq
