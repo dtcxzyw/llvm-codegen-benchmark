@@ -1,5 +1,4 @@
 func000000000000000e:
-	addi	a0, a0, -8
 	andi	a0, a0, 7
 	ret
 

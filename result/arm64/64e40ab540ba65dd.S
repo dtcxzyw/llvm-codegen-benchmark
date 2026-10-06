@@ -6,7 +6,6 @@ func000000000000000f:
 
 func000000000000000e:
 	add	w8, w1, w0
-	add	w8, w8, #4
 	and	x0, x8, #0x1
 	ret
 

@@ -41,9 +41,7 @@ func00000000000003ec:
 
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000001c1:
-	addb	$-64, %sil
-	movzbl	%sil, %eax
-	btq	%rax, %rdi
+	btq	%rsi, %rdi
 	setae	%al
 	retq
 

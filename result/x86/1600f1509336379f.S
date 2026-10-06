@@ -9,7 +9,7 @@ func0000000000000001:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
-	leal	-64(%rdi), %ecx
+	movq	%rdi, %rcx
 	movq	$-2, %rax
 	rolq	%cl, %rax
 	retq

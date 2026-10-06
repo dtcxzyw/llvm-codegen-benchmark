@@ -6,13 +6,11 @@ func0000000000000030:
 	ret
 
 func0000000000000020:
-	add	w8, w1, #8
-	and	x0, x8, #0x7
+	and	x0, x1, #0x7
 	ret
 
 func0000000000000000:
-	add	w8, w1, #8
-	and	x0, x8, #0x7
+	and	x0, x1, #0x7
 	ret
 
 func000000000000002a:

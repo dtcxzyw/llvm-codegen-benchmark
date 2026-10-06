@@ -9,7 +9,6 @@ func000000000000006c:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000061:
-	addl	$24, %esi
 	testb	$7, %sil
 	sete	%al
 	andb	%dil, %al

@@ -9,13 +9,13 @@ func0000000000000030:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000020:
-	leal	8(%rsi), %eax
+	movq	%rsi, %rax
 	andl	$7, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000000:
-	leal	8(%rsi), %eax
+	movq	%rsi, %rax
 	andl	$7, %eax
 	retq
 

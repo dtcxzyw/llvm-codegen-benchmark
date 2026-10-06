@@ -6,7 +6,6 @@ func000000000000000f:
 
 func000000000000000e:
 	add	a0, a0, a1
-	addi	a0, a0, 4
 	andi	a0, a0, 1
 	ret
 

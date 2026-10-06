@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001c1:
-	leal	4(%rsi,%rdi), %eax
-	testb	$1, %al
+	addl	%edi, %esi
+	testb	$1, %sil
 	sete	%al
 	retq
 

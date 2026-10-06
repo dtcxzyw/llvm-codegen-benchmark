@@ -11,7 +11,6 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	add	w8, w0, #8
-	and	x0, x8, #0x7
+	and	x0, x0, #0x7
 	ret
 

@@ -1,6 +1,5 @@
 func000000000000000f:
 	sub	w8, w0, w1
-	add	w8, w8, #64
 	and	x0, x8, #0x3f
 	ret
 

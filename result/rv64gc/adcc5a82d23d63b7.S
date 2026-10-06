@@ -11,7 +11,6 @@ func0000000000000002:
 	ret
 
 func0000000000000006:
-	addi	a0, a0, 8
 	andi	a0, a0, 7
 	ret
 

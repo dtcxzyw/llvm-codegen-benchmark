@@ -1,6 +1,5 @@
 func00000000000001c1:
 	add	a0, a0, a1
-	addi	a0, a0, 4
 	andi	a0, a0, 1
 	seqz	a0, a0
 	ret

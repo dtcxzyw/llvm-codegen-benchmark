@@ -27,9 +27,8 @@ func0000000000000181:
 
 	.prefalign	4, .Lfunc_end3, nop
 func00000000000001cc:
-	movb	$64, %al
-	subb	%sil, %al
-	movzbl	%al, %eax
+	negb	%sil
+	movzbl	%sil, %eax
 	btq	%rax, %rdi
 	setb	%al
 	retq

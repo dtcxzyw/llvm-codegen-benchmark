@@ -2,7 +2,6 @@
 	.prefalign	4, .Lfunc_end0, nop
 func00000000000001e1:
 	subl	%esi, %edi
-	addl	$64, %edi
 	testb	$63, %dil
 	sete	%al
 	retq

@@ -24,18 +24,17 @@ func00000000000003c1:
 	srli	a2, a1, 4
 	lui	a3, 61681
 	add	a1, a1, a2
-	lui	a2, 4112
-	addi	a3, a3, -241
-	addi	a2, a2, 257
-	and	a1, a1, a3
+	addi	a2, a3, -241
+	lui	a3, 4112
+	and	a1, a1, a2
+	addi	a2, a3, 257
 	mul	a1, a1, a2
 	sext.w	a0, a0
-	srli	a1, a1, 24
-	li	a2, 32
 	seqz	a0, a0
-	sub	a2, a2, a1
+	srli	a1, a1, 24
 	addi	a0, a0, -1
-	and	a0, a0, a2
+	and	a0, a0, a1
+	neg	a0, a0
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret

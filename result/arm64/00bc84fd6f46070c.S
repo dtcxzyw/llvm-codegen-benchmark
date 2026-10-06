@@ -1,6 +1,5 @@
 func00000000000001c1:
 	add	w8, w1, w0
-	add	w8, w8, #4
 	tst	x8, #0x1
 	cset	w0, eq
 	ret

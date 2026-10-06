@@ -1,6 +1,5 @@
 func000000000000000c:
-	mov	w8, #-24
-	sub	w8, w8, w0
+	neg	w8, w0
 	and	x0, x8, #0x7
 	ret
 

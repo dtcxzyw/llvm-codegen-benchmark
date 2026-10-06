@@ -25,8 +25,8 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
-	movb	$32, %cl
-	subb	%dil, %cl
+	movl	%edi, %ecx
+	negb	%cl
 	movl	$-2, %eax
 	roll	%cl, %eax
 	retq

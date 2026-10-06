@@ -1,6 +1,5 @@
 func000000000000000e:
-	sub	w8, w0, #8
-	and	x0, x8, #0x7
+	and	x0, x0, #0x7
 	ret
 
 func000000000000000b:

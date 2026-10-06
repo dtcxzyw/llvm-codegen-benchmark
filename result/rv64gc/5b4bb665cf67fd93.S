@@ -6,7 +6,6 @@ func000000000000006c:
 	ret
 
 func0000000000000061:
-	addi	a1, a1, 24
 	andi	a1, a1, 7
 	seqz	a1, a1
 	and	a0, a0, a1

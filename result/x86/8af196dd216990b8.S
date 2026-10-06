@@ -9,7 +9,6 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000a:
 	movq	%rdi, %rax
-	addb	$-64, %sil
 	btrq	%rsi, %rax
 	retq
 
