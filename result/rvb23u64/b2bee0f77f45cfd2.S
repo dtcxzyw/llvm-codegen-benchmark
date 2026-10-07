@@ -17,8 +17,8 @@ func000000000000001a:
 	ret
 
 func000000000000001b:
-	bexti	a2, a2, 13
-	neg	a2, a2
+	slli	a2, a2, 50
+	srai	a2, a2, 63
 	slli	a0, a0, 5
 	andi	a2, a2, -32
 	add	a0, a0, a1

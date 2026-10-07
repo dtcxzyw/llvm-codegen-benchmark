@@ -1,6 +1,6 @@
 func0000000000000001:
-	bexti	a1, a1, 11
-	neg	a1, a1
+	slli	a1, a1, 52
+	srai	a1, a1, 63
 	andi	a1, a1, 10
 	or	a0, a0, a1
 	ret
