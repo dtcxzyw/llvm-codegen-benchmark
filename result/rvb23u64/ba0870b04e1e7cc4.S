@@ -1,6 +1,5 @@
 func00000000000000e1:
 	lui	a1, 790527
-	sext.w	a0, a0
 	slli.uw	a1, a1, 15
 	bext	a0, a1, a0
 	seqz	a0, a0
@@ -9,7 +8,6 @@ func00000000000000e1:
 func00000000000000c1:
 	li	a1, 7
 	slli	a1, a1, 60
-	sext.w	a0, a0
 	addi	a1, a1, 1
 	bext	a0, a1, a0
 	seqz	a0, a0
@@ -17,14 +15,12 @@ func00000000000000c1:
 
 func00000000000000ec:
 	lui	a1, 25056
-	sext.w	a0, a0
 	addi	a1, a1, 1823
 	bext	a0, a1, a0
 	ret
 
 func0000000000000041:
 	lui	a1, 15
-	sext.w	a0, a0
 	addi	a1, a1, -1813
 	bext	a0, a1, a0
 	seqz	a0, a0
@@ -32,7 +28,6 @@ func0000000000000041:
 
 func000000000000004c:
 	lui	a1, 15
-	sext.w	a0, a0
 	addi	a1, a1, -1301
 	bext	a0, a1, a0
 	ret
@@ -41,7 +36,6 @@ func00000000000000cc:
 	lui	a1, 1047936
 	addi	a1, a1, -961
 	slli	a1, a1, 20
-	sext.w	a0, a0
 	addi	a1, a1, 1212
 	bext	a0, a1, a0
 	ret

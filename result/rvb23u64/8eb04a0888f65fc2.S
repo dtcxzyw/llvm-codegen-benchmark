@@ -1,6 +1,6 @@
 func0000000000000006:
 	li	a2, 1
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	bext	a0, a0, a2
 	ret
 
@@ -27,7 +27,7 @@ func000000000000000e:
 
 func0000000000000004:
 	li	a2, 30
-	subw	a2, a2, a1
+	sub	a2, a2, a1
 	bext	a0, a0, a2
 	ret
 

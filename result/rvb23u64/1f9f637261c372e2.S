@@ -1,5 +1,4 @@
 func000000000000004c:
-	sext.w	a1, a1
 	bext	a0, a0, a1
 	ret
 

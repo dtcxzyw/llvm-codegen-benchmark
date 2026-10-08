@@ -4,7 +4,6 @@ func0000000000000198:
 	ret
 
 func00000000000001c2:
-	sext.w	a2, a2
 	bext	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -16,7 +15,6 @@ func00000000000001d8:
 	ret
 
 func0000000000000182:
-	sext.w	a2, a2
 	bext	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1

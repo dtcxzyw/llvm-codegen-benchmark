@@ -11,7 +11,6 @@ func0000000000000114:
 	ret
 
 func000000000000010c:
-	sext.w	a1, a1
 	bext	a0, a0, a1
 	ret
 

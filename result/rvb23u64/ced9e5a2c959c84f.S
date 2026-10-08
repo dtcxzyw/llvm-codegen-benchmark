@@ -5,7 +5,6 @@ func0000000000000081:
 	ret
 
 func00000000000000c1:
-	sext.w	a2, a2
 	bext	a1, a1, a2
 	addi	a0, a0, -48
 	czero.nez	a0, a0, a1

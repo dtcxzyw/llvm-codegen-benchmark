@@ -4,7 +4,6 @@ func00000000000000cc:
 	ret
 
 func00000000000000c1:
-	sext.w	a2, a2
 	bext	a1, a1, a2
 	seqz	a1, a1
 	xor	a0, a0, a1

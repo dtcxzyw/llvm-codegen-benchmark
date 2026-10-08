@@ -26,8 +26,7 @@ func000000000000004c:
 	ret
 
 func00000000000001cc:
-	li	a2, -65
-	add.uw	a1, a2, a1
+	addi	a1, a1, -65
 	bext	a0, a0, a1
 	ret
 
