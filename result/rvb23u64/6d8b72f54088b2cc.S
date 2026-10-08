@@ -7,13 +7,13 @@ func0000000000000009:
 	ret
 
 func0000000000000012:
-	fabs.d	fa4, fa0
-	fli.d	fa5, 1.0
-	flt.d	a0, fa4, fa5
-	bnez	a0, .LBB1_2
 	fmv.d	fa5, fa0
-.LBB1_2:
+	fabs.d	fa4, fa0
+	fli.d	fa0, 1.0
+	flt.d	a0, fa4, fa0
+	bnez	a0, .LBB1_2
 	fmv.d	fa0, fa5
+.LBB1_2:
 	ret
 
 .LCPI2_0:

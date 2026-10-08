@@ -1,9 +1,9 @@
 func0000000000000013:
-	addi	a1, a0, -1
+	addi	a2, a0, -1
 	li	a0, 64
-	li	a2, 64
-	beqz	a1, .LBB0_2
-	srli	a2, a1, 1
+	li	a1, 64
+	beqz	a2, .LBB0_2
+	srli	a1, a2, 1
 	or	a1, a1, a2
 	srli	a2, a1, 2
 	or	a1, a1, a2
@@ -42,10 +42,10 @@ func0000000000000013:
 	slli	a4, a2, 32
 	and	a1, a1, a3
 	add	a2, a2, a4
-	mul	a2, a1, a2
-	srli	a2, a2, 56
+	mul	a1, a1, a2
+	srli	a1, a1, 56
 .LBB0_2:
-	sub	a0, a0, a2
+	sub	a0, a0, a1
 	ret
 
 func0000000000000007:

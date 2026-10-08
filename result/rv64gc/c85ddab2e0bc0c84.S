@@ -1,9 +1,9 @@
 func0000000000000013:
-	addiw	a1, a0, -1
+	addiw	a2, a0, -1
 	li	a0, 32
-	li	a2, 32
-	beqz	a1, .LBB0_2
-	srliw	a2, a1, 1
+	li	a1, 32
+	beqz	a2, .LBB0_2
+	srliw	a1, a2, 1
 	or	a1, a1, a2
 	srliw	a2, a1, 2
 	or	a1, a1, a2
@@ -33,17 +33,17 @@ func0000000000000013:
 	and	a1, a1, a2
 	addi	a2, a3, 257
 	mul	a1, a1, a2
-	srliw	a2, a1, 24
+	srliw	a1, a1, 24
 .LBB0_2:
-	sub	a0, a0, a2
+	sub	a0, a0, a1
 	ret
 
 func0000000000000003:
-	addiw	a1, a0, -1
+	addiw	a2, a0, -1
 	li	a0, 32
-	li	a2, 32
-	beqz	a1, .LBB1_2
-	srliw	a2, a1, 1
+	li	a1, 32
+	beqz	a2, .LBB1_2
+	srliw	a1, a2, 1
 	or	a1, a1, a2
 	srliw	a2, a1, 2
 	or	a1, a1, a2
@@ -73,9 +73,9 @@ func0000000000000003:
 	and	a1, a1, a2
 	addi	a2, a3, 257
 	mul	a1, a1, a2
-	srliw	a2, a1, 24
+	srliw	a1, a1, 24
 .LBB1_2:
-	sub	a0, a0, a2
+	sub	a0, a0, a1
 	ret
 
 func0000000000000007:

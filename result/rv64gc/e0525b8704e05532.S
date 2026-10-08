@@ -7,11 +7,11 @@ func0000000000000000:
 	ret
 
 func0000000000000002:
-	slli	a1, a1, 60
-	srli	a1, a1, 63
-	blt	a1, a0, .LBB1_2
-	mv	a1, a0
+	mv	a2, a0
+	slli	a0, a1, 60
+	srli	a0, a0, 63
+	blt	a0, a2, .LBB1_2
+	mv	a0, a2
 .LBB1_2:
-	mv	a0, a1
 	ret
 

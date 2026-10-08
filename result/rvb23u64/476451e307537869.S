@@ -42,11 +42,11 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	feq.s	a0, fa1, fa1
-	fli.d	fa5, nan
-	beqz	a0, .LBB4_2
 	fmv.d	fa5, fa0
-.LBB4_2:
+	feq.s	a0, fa1, fa1
+	fli.d	fa0, nan
+	beqz	a0, .LBB4_2
 	fmv.d	fa0, fa5
+.LBB4_2:
 	ret
 

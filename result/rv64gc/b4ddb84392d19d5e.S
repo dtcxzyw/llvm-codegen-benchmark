@@ -7,30 +7,30 @@ func0000000000000008:
 	ret
 
 func0000000000000000:
-	slli	a2, a2, 2
-	add	a1, a1, a2
-	bltu	a0, a1, .LBB1_2
-	mv	a1, a0
+	mv	a3, a0
+	slli	a0, a2, 2
+	add	a0, a0, a1
+	bltu	a3, a0, .LBB1_2
+	mv	a0, a3
 .LBB1_2:
-	mv	a0, a1
 	ret
 
 func000000000000000a:
-	slli	a2, a2, 3
-	add	a1, a1, a2
-	bltu	a0, a1, .LBB2_2
-	mv	a1, a0
+	mv	a3, a0
+	slli	a0, a2, 3
+	add	a0, a0, a1
+	bltu	a3, a0, .LBB2_2
+	mv	a0, a3
 .LBB2_2:
-	mv	a0, a1
 	ret
 
 func0000000000000018:
-	slli	a2, a2, 3
-	add	a1, a1, a2
-	bltu	a0, a1, .LBB3_2
-	mv	a1, a0
+	mv	a3, a0
+	slli	a0, a2, 3
+	add	a0, a0, a1
+	bltu	a3, a0, .LBB3_2
+	mv	a0, a3
 .LBB3_2:
-	mv	a0, a1
 	ret
 
 func000000000000001e:
@@ -50,11 +50,11 @@ func0000000000000001:
 	ret
 
 func000000000000001c:
-	slli	a2, a2, 3
-	add	a1, a1, a2
-	bltu	a0, a1, .LBB6_2
-	mv	a1, a0
+	mv	a3, a0
+	slli	a0, a2, 3
+	add	a0, a0, a1
+	bltu	a3, a0, .LBB6_2
+	mv	a0, a3
 .LBB6_2:
-	mv	a0, a1
 	ret
 

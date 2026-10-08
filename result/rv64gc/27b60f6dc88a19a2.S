@@ -38,11 +38,11 @@ func00000000000001e1:
 	ret
 
 func00000000000002e4:
-	addiw	a2, a1, -1
+	addiw	a3, a1, -1
 	li	a1, 32
-	li	a3, 32
-	beqz	a2, .LBB1_2
-	srliw	a3, a2, 1
+	li	a2, 32
+	beqz	a3, .LBB1_2
+	srliw	a2, a3, 1
 	or	a2, a2, a3
 	srliw	a3, a2, 2
 	or	a2, a2, a3
@@ -72,9 +72,9 @@ func00000000000002e4:
 	and	a2, a2, a3
 	addi	a3, a4, 257
 	mul	a2, a2, a3
-	srliw	a3, a2, 24
+	srliw	a2, a2, 24
 .LBB1_2:
-	sub	a1, a1, a3
+	sub	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 

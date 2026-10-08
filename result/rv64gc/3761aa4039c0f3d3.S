@@ -1,18 +1,18 @@
 func0000000000000087:
-	sext.w	a1, a1
-	beqz	a1, .LBB0_2
-	li	a2, 408
+	sext.w	a2, a1
+	beqz	a2, .LBB0_2
+	li	a1, 408
 	li	a3, 1
-	beq	a1, a3, .LBB0_3
+	beq	a2, a3, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a2, 344
+	li	a1, 344
 	li	a3, 1
-	bne	a1, a3, .LBB0_4
+	bne	a2, a3, .LBB0_4
 .LBB0_3:
-	li	a2, 280
+	li	a1, 280
 .LBB0_4:
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret
 
 func0000000000000086:

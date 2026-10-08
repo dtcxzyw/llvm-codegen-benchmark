@@ -56,23 +56,22 @@ func000000000000000a:
 	ret
 
 func000000000000000c:
+	fmv.d	fa5, fa0
 	li	a1, 1023
 	slli	a1, a1, 52
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa4, fa0
 	andi	a0, a0, 1
-	fmv.d	fa5, fa4
+	fmv.d	fa0, fa4
 	beqz	a1, .LBB3_3
 	beqz	a0, .LBB3_4
 .LBB3_2:
-	fmv.d	fa0, fa5
 	ret
 .LBB3_3:
-	fmv.d	fa5, fa0
+	fmv.d	fa0, fa5
 	bnez	a0, .LBB3_2
 .LBB3_4:
-	fmv.d	fa5, fa4
-	fmv.d	fa0, fa5
+	fmv.d	fa0, fa4
 	ret
 
 .promoted_doubles.func0000000000000004:

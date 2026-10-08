@@ -19,13 +19,13 @@ func0000000000000004:
 	ret
 
 func0000000000000008:
-	fmv.d.x	fa5, zero
-	feq.d	a0, fa0, fa5
-	fli.d	fa5, min
-	bnez	a0, .LBB2_2
+	fmv.d.x	fa4, zero
 	fmv.d	fa5, fa0
-.LBB2_2:
+	feq.d	a0, fa0, fa4
+	fli.d	fa0, min
+	bnez	a0, .LBB2_2
 	fmv.d	fa0, fa5
+.LBB2_2:
 	ret
 
 .LCPI3_0:
@@ -52,12 +52,12 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	feq.d	a0, fa0, fa0
-	fli.d	fa5, nan
-	beqz	a0, .LBB5_2
 	fmv.d	fa5, fa0
-.LBB5_2:
+	feq.d	a0, fa0, fa0
+	fli.d	fa0, nan
+	beqz	a0, .LBB5_2
 	fmv.d	fa0, fa5
+.LBB5_2:
 	ret
 
 func0000000000000003:

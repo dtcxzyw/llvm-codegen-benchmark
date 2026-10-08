@@ -9,20 +9,20 @@ func0000000000000003:
 	ret
 
 func0000000000000002:
-	andi	a3, a2, 1
-	andi	a2, a1, 1
+	andi	a2, a2, 1
+	andi	a3, a1, 1
 	lui	a1, 1048575
-	bnez	a3, .LBB1_2
-	addi	a3, a1, 670
-	beqz	a2, .LBB1_3
+	bnez	a2, .LBB1_2
+	addi	a2, a1, 670
+	beqz	a3, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	addi	a3, a1, 650
-	bnez	a2, .LBB1_4
+	addi	a2, a1, 650
+	bnez	a3, .LBB1_4
 .LBB1_3:
-	addi	a3, a1, 675
+	addi	a2, a1, 675
 .LBB1_4:
-	slli	a3, a3, 5
-	add	a0, a0, a3
+	slli	a2, a2, 5
+	add	a0, a0, a2
 	ret
 

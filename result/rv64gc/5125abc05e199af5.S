@@ -17,21 +17,21 @@ func0000000000000021:
 	ret
 
 func0000000000000084:
-	srliw	a2, a0, 21
-	bnez	a2, .LBB1_2
-	li	a1, 12
-	srliw	a0, a0, 14
-	beqz	a0, .LBB1_3
+	mv	a2, a0
+	srliw	a0, a0, 21
+	bnez	a0, .LBB1_2
+	li	a0, 12
+	srliw	a1, a2, 14
+	beqz	a1, .LBB1_3
 	j	.LBB1_4
 .LBB1_2:
-	andi	a1, a1, 1
-	addiw	a1, a1, 10
-	srliw	a0, a0, 14
-	bnez	a0, .LBB1_4
+	andi	a0, a1, 1
+	addiw	a0, a0, 10
+	srliw	a1, a2, 14
+	bnez	a1, .LBB1_4
 .LBB1_3:
-	li	a1, 13
+	li	a0, 13
 .LBB1_4:
-	mv	a0, a1
 	ret
 
 func0000000000000286:

@@ -20,11 +20,12 @@ func000000000000000a:
 	ret
 
 func000000000000000b:
-	sext.w	a3, a0
-	blt	a2, a3, .LBB3_2
-	mv	a1, a0
-.LBB3_2:
+	mv	a3, a0
+	sext.w	a4, a0
 	mv	a0, a1
+	blt	a2, a4, .LBB3_2
+	mv	a0, a3
+.LBB3_2:
 	ret
 
 func0000000000000008:

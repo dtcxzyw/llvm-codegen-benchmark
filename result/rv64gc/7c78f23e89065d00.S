@@ -1,18 +1,18 @@
 func000000000000000a:
-	andi	a2, a2, 1
-	andi	a0, a0, 1
-	bnez	a2, .LBB0_2
-	li	a2, 9
-	beqz	a0, .LBB0_3
+	andi	a3, a2, 1
+	andi	a2, a0, 1
+	bnez	a3, .LBB0_2
+	li	a0, 9
+	beqz	a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a2, 3
-	bnez	a0, .LBB0_4
+	li	a0, 3
+	bnez	a2, .LBB0_4
 .LBB0_3:
-	mv	a2, a1
+	mv	a0, a1
 .LBB0_4:
-	sext.w	a2, a2
-	slti	a0, a2, 9
+	sext.w	a0, a0
+	slti	a0, a0, 9
 	xori	a0, a0, 1
 	ret
 
@@ -40,20 +40,20 @@ func0000000000000006:
 	ret
 
 func0000000000000008:
-	andi	a2, a2, 1
-	andi	a0, a0, 1
-	bnez	a2, .LBB3_2
-	li	a2, 12
-	beqz	a0, .LBB3_3
+	andi	a3, a2, 1
+	andi	a2, a0, 1
+	bnez	a3, .LBB3_2
+	li	a0, 12
+	beqz	a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a2, 4
-	bnez	a0, .LBB3_4
+	li	a0, 4
+	bnez	a2, .LBB3_4
 .LBB3_3:
-	mv	a2, a1
+	mv	a0, a1
 .LBB3_4:
-	sext.w	a2, a2
-	sltiu	a0, a2, 12
+	sext.w	a0, a0
+	sltiu	a0, a0, 12
 	xori	a0, a0, 1
 	ret
 
@@ -67,20 +67,20 @@ func0000000000000004:
 	ret
 
 func0000000000000018:
-	andi	a2, a2, 1
-	andi	a0, a0, 1
-	bnez	a2, .LBB5_2
-	li	a2, 3
-	beqz	a0, .LBB5_3
+	andi	a3, a2, 1
+	andi	a2, a0, 1
+	bnez	a3, .LBB5_2
+	li	a0, 3
+	beqz	a2, .LBB5_3
 	j	.LBB5_4
 .LBB5_2:
-	li	a2, 1
-	bnez	a0, .LBB5_4
+	li	a0, 1
+	bnez	a2, .LBB5_4
 .LBB5_3:
-	mv	a2, a1
+	mv	a0, a1
 .LBB5_4:
-	sext.w	a2, a2
-	sltiu	a0, a2, 3
+	sext.w	a0, a0
+	sltiu	a0, a0, 3
 	xori	a0, a0, 1
 	ret
 

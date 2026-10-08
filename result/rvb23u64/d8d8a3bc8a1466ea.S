@@ -67,12 +67,12 @@ func000000000000000a:
 	ret
 
 func0000000000000001:
-	feq.d	a0, fa1, fa1
-	fli.d	fa5, nan
-	beqz	a0, .LBB7_2
 	fmv.d	fa5, fa0
-.LBB7_2:
+	feq.d	a0, fa1, fa1
+	fli.d	fa0, nan
+	beqz	a0, .LBB7_2
 	fmv.d	fa0, fa5
+.LBB7_2:
 	ret
 
 func0000000000000007:

@@ -6,17 +6,17 @@ func000000000000005b:
 	slli	a2, a1, 32
 	srai	a0, a0, 2
 	add	a1, a1, a2
-	mul	a1, a0, a1
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
-	seqz	a2, a1
-	add	a1, a1, a1
-	or	a1, a1, a2
-	bltu	a1, a0, .LBB0_2
-	mv	a1, a0
+	mul	a0, a0, a1
+	lui	a1, %hi(.LCPI0_0)
+	ld	a1, %lo(.LCPI0_0)(a1)
+	seqz	a2, a0
+	add	a0, a0, a0
+	or	a0, a0, a2
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:
-	slli	a0, a1, 2
-	slli	a1, a1, 3
+	slli	a1, a0, 2
+	slli	a0, a0, 3
 	add	a0, a0, a1
 	ret
 

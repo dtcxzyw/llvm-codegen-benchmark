@@ -22,12 +22,12 @@ func0000000000000004:
 	ret
 
 func000000000000000c:
-	sext.w	a0, a0
-	fli.s	fa5, 1.0
-	beqz	a0, .LBB3_2
 	fmv.s	fa5, fa0
-.LBB3_2:
+	sext.w	a0, a0
+	fli.s	fa0, 1.0
+	beqz	a0, .LBB3_2
 	fmv.s	fa0, fa5
+.LBB3_2:
 	ret
 
 func0000000000000006:

@@ -17,22 +17,22 @@ func0000000000000004:
 	ret
 
 func0000000000000001:
-	feq.s	a0, fa0, fa0
-	fli.s	fa5, nan
-	beqz	a0, .LBB2_2
 	fmv.s	fa5, fa0
-.LBB2_2:
+	feq.s	a0, fa0, fa0
+	fli.s	fa0, nan
+	beqz	a0, .LBB2_2
 	fmv.s	fa0, fa5
+.LBB2_2:
 	ret
 
 func0000000000000008:
-	fmv.w.x	fa5, zero
-	feq.s	a0, fa0, fa5
-	fli.s	fa5, 1.0
-	bnez	a0, .LBB3_2
+	fmv.w.x	fa4, zero
 	fmv.s	fa5, fa0
-.LBB3_2:
+	feq.s	a0, fa0, fa4
+	fli.s	fa0, 1.0
+	bnez	a0, .LBB3_2
 	fmv.s	fa0, fa5
+.LBB3_2:
 	ret
 
 func000000000000000a:

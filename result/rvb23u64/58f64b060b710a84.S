@@ -72,22 +72,23 @@ func0000000000000044:
 	ret
 
 func0000000000000052:
-	fmv.d.x	fa5, zero
-	fle.d	a1, fa0, fa5
+	fmv.d.x	fa4, zero
+	fmv.d	fa5, fa0
+	fle.d	a1, fa0, fa4
 	lui	a0, %hi(.promoted_doubles.func0000000000000052)
 	addi	a0, a0, %lo(.promoted_doubles.func0000000000000052)
-	fld	fa5, 8(a0)
+	fld	fa0, 8(a0)
 	bnez	a1, .LBB4_3
-	flt.d	a0, fa0, fa5
+	flt.d	a0, fa5, fa0
 	beqz	a0, .LBB4_4
 .LBB4_2:
-	fmv.d	fa0, fa5
 	ret
 .LBB4_3:
-	fld	fa0, 0(a0)
-	flt.d	a0, fa0, fa5
+	fld	fa5, 0(a0)
+	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB4_2
 .LBB4_4:
+	fmv.d	fa0, fa5
 	ret
 
 func00000000000000ea:

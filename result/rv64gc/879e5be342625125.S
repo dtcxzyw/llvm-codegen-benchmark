@@ -1,18 +1,18 @@
 func0000000000000003:
-	slli	a1, a1, 30
-	srli	a1, a1, 34
-	bltu	a1, a0, .LBB0_2
-	mv	a1, a0
+	mv	a2, a0
+	slli	a0, a1, 30
+	srli	a0, a0, 34
+	bltu	a0, a2, .LBB0_2
+	mv	a0, a2
 .LBB0_2:
-	mv	a0, a1
 	ret
 
 func0000000000000002:
-	srli	a1, a1, 3
-	andi	a1, a1, -8
-	bltu	a1, a0, .LBB1_2
-	mv	a1, a0
+	mv	a2, a0
+	srli	a0, a1, 3
+	andi	a0, a0, -8
+	bltu	a0, a2, .LBB1_2
+	mv	a0, a2
 .LBB1_2:
-	mv	a0, a1
 	ret
 

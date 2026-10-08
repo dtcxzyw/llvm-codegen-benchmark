@@ -1,9 +1,9 @@
 func000000000000003f:
-	srli	a2, a1, 6
+	srli	a3, a1, 6
 	li	a1, 64
-	li	a3, 64
-	beqz	a2, .LBB0_2
-	srli	a3, a2, 1
+	li	a2, 64
+	beqz	a3, .LBB0_2
+	srli	a2, a3, 1
 	or	a2, a2, a3
 	srli	a3, a2, 2
 	or	a2, a2, a3
@@ -42,10 +42,10 @@ func000000000000003f:
 	slli	a5, a3, 32
 	and	a2, a2, a4
 	add	a3, a3, a5
-	mul	a3, a2, a3
-	srli	a3, a3, 56
+	mul	a2, a2, a3
+	srli	a2, a2, 56
 .LBB0_2:
-	sub	a1, a1, a3
+	sub	a1, a1, a2
 	slli	a2, a1, 3
 	slli	a1, a1, 5
 	add	a1, a1, a2
@@ -54,11 +54,11 @@ func000000000000003f:
 	ret
 
 func000000000000003c:
-	srli	a2, a1, 6
+	srli	a3, a1, 6
 	li	a1, 64
-	li	a3, 64
-	beqz	a2, .LBB1_2
-	srli	a3, a2, 1
+	li	a2, 64
+	beqz	a3, .LBB1_2
+	srli	a2, a3, 1
 	or	a2, a2, a3
 	srli	a3, a2, 2
 	or	a2, a2, a3
@@ -97,10 +97,10 @@ func000000000000003c:
 	slli	a5, a3, 32
 	and	a2, a2, a4
 	add	a3, a3, a5
-	mul	a3, a2, a3
-	srli	a3, a3, 56
+	mul	a2, a2, a3
+	srli	a2, a2, 56
 .LBB1_2:
-	sub	a1, a1, a3
+	sub	a1, a1, a2
 	slli	a2, a1, 3
 	slli	a1, a1, 5
 	add	a1, a1, a2

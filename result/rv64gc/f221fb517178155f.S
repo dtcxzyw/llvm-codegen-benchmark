@@ -44,40 +44,40 @@ func0000000000000053:
 	ret
 
 func0000000000000029:
-	andi	a2, a2, 1
-	sext.w	a1, a1
-	bnez	a2, .LBB3_2
-	li	a2, 107
+	andi	a3, a2, 1
+	sext.w	a2, a1
+	bnez	a3, .LBB3_2
+	li	a1, 107
 	lui	a3, 8
 	addi	a3, a3, 1131
-	blt	a3, a1, .LBB3_3
+	blt	a3, a2, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a2, 1131
+	li	a1, 1131
 	lui	a3, 8
 	addi	a3, a3, 1131
-	bge	a3, a1, .LBB3_4
+	bge	a3, a2, .LBB3_4
 .LBB3_3:
-	lui	a2, 8
+	lui	a1, 8
 .LBB3_4:
-	addw	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000051:
-	andi	a2, a2, 1
-	sext.w	a1, a1
+	andi	a4, a2, 1
+	sext.w	a2, a1
 	li	a3, 2
-	bnez	a2, .LBB4_2
-	li	a2, 2
-	bltu	a1, a3, .LBB4_3
+	bnez	a4, .LBB4_2
+	li	a1, 2
+	bltu	a2, a3, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	li	a2, 4
-	bgeu	a1, a3, .LBB4_4
+	li	a1, 4
+	bgeu	a2, a3, .LBB4_4
 .LBB4_3:
-	li	a2, 3
+	li	a1, 3
 .LBB4_4:
-	addw	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 
 func0000000000000004:
@@ -111,21 +111,21 @@ func0000000000000028:
 	ret
 
 func0000000000000020:
-	andi	a2, a2, 1
-	sext.w	a1, a1
-	bnez	a2, .LBB7_2
-	li	a2, 6
+	andi	a3, a2, 1
+	sext.w	a2, a1
+	bnez	a3, .LBB7_2
+	li	a1, 6
 	li	a3, 1
-	bltu	a3, a1, .LBB7_3
+	bltu	a3, a2, .LBB7_3
 	j	.LBB7_4
 .LBB7_2:
-	li	a2, 3
+	li	a1, 3
 	li	a3, 1
-	bgeu	a3, a1, .LBB7_4
+	bgeu	a3, a2, .LBB7_4
 .LBB7_3:
-	li	a2, 1
+	li	a1, 1
 .LBB7_4:
-	addw	a0, a0, a2
+	addw	a0, a0, a1
 	ret
 
 func000000000000001b:

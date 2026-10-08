@@ -11,21 +11,21 @@ func0000000000000006:
 	ret
 
 func0000000000000000:
-	andi	a1, a1, -8
-	addi	a1, a1, 24
-	bltu	a0, a1, .LBB1_2
-	mv	a1, a0
+	mv	a2, a0
+	andi	a0, a1, -8
+	addi	a0, a0, 24
+	bltu	a2, a0, .LBB1_2
+	mv	a0, a2
 .LBB1_2:
-	mv	a0, a1
 	ret
 
 func0000000000000002:
-	andi	a1, a1, -8
-	addi	a1, a1, 24
-	bltu	a0, a1, .LBB2_2
-	mv	a1, a0
+	mv	a2, a0
+	andi	a0, a1, -8
+	addi	a0, a0, 24
+	bltu	a2, a0, .LBB2_2
+	mv	a0, a2
 .LBB2_2:
-	mv	a0, a1
 	ret
 
 func0000000000000007:
@@ -39,11 +39,11 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	andi	a1, a1, -64
-	addi	a1, a1, 64
-	bltu	a0, a1, .LBB4_2
-	mv	a1, a0
+	mv	a2, a0
+	andi	a0, a1, -64
+	addi	a0, a0, 64
+	bltu	a2, a0, .LBB4_2
+	mv	a0, a2
 .LBB4_2:
-	mv	a0, a1
 	ret
 

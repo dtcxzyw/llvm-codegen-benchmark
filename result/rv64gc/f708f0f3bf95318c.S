@@ -58,12 +58,12 @@ func000000000000001b:
 	ret
 
 func000000000000003b:
-	sext.w	a2, a2
-	add	a1, a1, a2
-	bltu	a1, a0, .LBB6_2
-	mv	a1, a0
+	mv	a3, a0
+	sext.w	a0, a2
+	add	a0, a0, a1
+	bltu	a0, a3, .LBB6_2
+	mv	a0, a3
 .LBB6_2:
-	mv	a0, a1
 	ret
 
 func000000000000001a:
@@ -77,11 +77,11 @@ func000000000000001a:
 	ret
 
 func0000000000000023:
-	sext.w	a2, a2
-	add	a1, a1, a2
-	bltu	a1, a0, .LBB8_2
-	mv	a1, a0
+	mv	a3, a0
+	sext.w	a0, a2
+	add	a0, a0, a1
+	bltu	a0, a3, .LBB8_2
+	mv	a0, a3
 .LBB8_2:
-	mv	a0, a1
 	ret
 

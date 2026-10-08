@@ -1,21 +1,21 @@
 func000000000000052a:
-	andi	a2, a2, 1
-	sext.w	a1, a1
-	bnez	a2, .LBB0_2
-	li	a2, 107
+	andi	a3, a2, 1
+	sext.w	a2, a1
+	bnez	a3, .LBB0_2
+	li	a1, 107
 	lui	a3, 8
 	addi	a3, a3, 1131
-	blt	a3, a1, .LBB0_3
+	blt	a3, a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a2, 1131
+	li	a1, 1131
 	lui	a3, 8
 	addi	a3, a3, 1131
-	bge	a3, a1, .LBB0_4
+	bge	a3, a2, .LBB0_4
 .LBB0_3:
-	lui	a2, 8
+	lui	a1, 8
 .LBB0_4:
-	add	a0, a0, a2
+	add	a0, a0, a1
 	srliw	a0, a0, 31
 	xori	a0, a0, 1
 	ret

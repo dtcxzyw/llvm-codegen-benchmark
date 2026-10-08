@@ -1,10 +1,10 @@
 func0000000000000001:
-	not	a1, a1
-	andi	a1, a1, 15
-	bltu	a1, a0, .LBB0_2
-	mv	a1, a0
+	mv	a2, a0
+	not	a0, a1
+	andi	a0, a0, 15
+	bltu	a0, a2, .LBB0_2
+	mv	a0, a2
 .LBB0_2:
-	mv	a0, a1
 	ret
 
 func0000000000000000:

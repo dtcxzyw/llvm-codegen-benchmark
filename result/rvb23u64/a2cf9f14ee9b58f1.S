@@ -39,16 +39,16 @@ func000000000000004d:
 	ret
 
 func0000000000000044:
-	fdiv.s	fa5, fa0, fa1
+	fdiv.s	fa4, fa0, fa1
 	lui	a1, 292864
 	addi	a1, a1, -256
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa5
-	bnez	a1, .LBB3_2
-	fmv.s	fa4, fa5
-.LBB3_2:
-	fli.s	fa5, -1.0
+	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa4
+	bnez	a1, .LBB3_2
+	fmv.s	fa5, fa4
+.LBB3_2:
+	fli.s	fa4, -1.0
+	flt.s	a1, fa4, fa5
 	or	a0, a0, a1
 	ret
 

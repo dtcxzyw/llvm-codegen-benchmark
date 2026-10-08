@@ -45,28 +45,28 @@ func0000000000000021:
 	ret
 
 func000000000000014a:
-	sext.w	a2, a2
-	li	a3, 6
+	sext.w	a3, a2
+	li	a2, 6
 	lui	a4, 3
-	blt	a3, a2, .LBB2_2
-	lui	a3, 1
-	addi	a3, a3, -1450
+	blt	a2, a3, .LBB2_2
+	lui	a2, 1
+	addi	a2, a2, -1450
 	li	a5, 8
 	andi	a0, a0, 1
-	blt	a5, a2, .LBB2_3
+	blt	a5, a3, .LBB2_3
 	j	.LBB2_4
 .LBB2_2:
-	addi	a3, a4, 1542
+	addi	a2, a4, 1542
 	li	a5, 8
 	andi	a0, a0, 1
-	bge	a5, a2, .LBB2_4
+	bge	a5, a3, .LBB2_4
 .LBB2_3:
-	addi	a3, a4, 1530
+	addi	a2, a4, 1530
 .LBB2_4:
 	beqz	a0, .LBB2_6
 	mv	a0, a1
 	ret
 .LBB2_6:
-	mv	a0, a3
+	mv	a0, a2
 	ret
 

@@ -15,11 +15,11 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	slli	a1, a1, 34
-	srli	a1, a1, 34
-	bltu	a1, a0, .LBB2_2
-	mv	a1, a0
+	mv	a2, a0
+	slli	a0, a1, 34
+	srli	a0, a0, 34
+	bltu	a0, a2, .LBB2_2
+	mv	a0, a2
 .LBB2_2:
-	mv	a0, a1
 	ret
 

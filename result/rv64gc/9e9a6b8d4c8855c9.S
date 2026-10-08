@@ -1,17 +1,17 @@
 func0000000000000003:
-	andi	a2, a2, 1
-	sext.w	a1, a1
-	bnez	a2, .LBB0_2
-	li	a2, 3
-	bnez	a1, .LBB0_3
+	andi	a3, a2, 1
+	sext.w	a2, a1
+	bnez	a3, .LBB0_2
+	li	a1, 3
+	bnez	a2, .LBB0_3
 	j	.LBB0_4
 .LBB0_2:
-	li	a2, 1
-	beqz	a1, .LBB0_4
+	li	a1, 1
+	beqz	a2, .LBB0_4
 .LBB0_3:
-	mv	a2, a0
+	mv	a1, a0
 .LBB0_4:
-	ori	a0, a2, 8
+	ori	a0, a1, 8
 	ret
 
 func0000000000000002:

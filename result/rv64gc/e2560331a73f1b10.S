@@ -11,17 +11,16 @@ func0000000000000046:
 	ret
 
 func0000000000000061:
+	mv	a1, a0
 	li	a2, 1
 	slli	a2, a2, 11
-	mv	a1, a0
 	bgeu	a0, a2, .LBB1_3
-	beqz	a0, .LBB1_4
+	beqz	a1, .LBB1_4
 .LBB1_2:
-	mv	a0, a1
 	ret
 .LBB1_3:
-	mv	a1, a2
-	bnez	a0, .LBB1_2
+	mv	a0, a2
+	bnez	a1, .LBB1_2
 .LBB1_4:
 	li	a0, 1
 	ret

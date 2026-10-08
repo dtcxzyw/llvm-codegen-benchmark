@@ -34,11 +34,11 @@ func0000000000000003:
 	ret
 
 func000000000000000d:
-	flt.d	a0, fa1, fa2
-	fli.d	fa5, 1.0
-	beqz	a0, .LBB5_2
 	fmv.d	fa5, fa0
-.LBB5_2:
+	flt.d	a0, fa1, fa2
+	fli.d	fa0, 1.0
+	beqz	a0, .LBB5_2
 	fmv.d	fa0, fa5
+.LBB5_2:
 	ret
 

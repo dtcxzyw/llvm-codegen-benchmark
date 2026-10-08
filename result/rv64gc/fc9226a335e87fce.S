@@ -37,40 +37,40 @@ func0000000000000084:
 	ret
 
 func0000000000000294:
-	srli	a1, a0, 32
-	beqz	a1, .LBB3_2
-	li	a1, 203
-	slli	a1, a1, 49
-	srli	a0, a0, 31
-	beqz	a0, .LBB3_3
+	mv	a1, a0
+	srli	a0, a0, 32
+	beqz	a0, .LBB3_2
+	li	a0, 203
+	slli	a0, a0, 49
+	srli	a1, a1, 31
+	beqz	a1, .LBB3_3
 	j	.LBB3_4
 .LBB3_2:
-	li	a1, 235
-	slli	a1, a1, 49
-	srli	a0, a0, 31
-	bnez	a0, .LBB3_4
+	li	a0, 235
+	slli	a0, a0, 49
+	srli	a1, a1, 31
+	bnez	a1, .LBB3_4
 .LBB3_3:
-	li	a1, 251
-	slli	a1, a1, 49
+	li	a0, 251
+	slli	a0, a0, 49
 .LBB3_4:
-	mv	a0, a1
 	ret
 
 func0000000000000318:
-	li	a1, 23
-	bltu	a1, a0, .LBB4_2
-	li	a1, 1
+	mv	a1, a0
+	li	a0, 23
+	bltu	a0, a1, .LBB4_2
+	li	a0, 1
 	li	a2, 79
-	bltu	a2, a0, .LBB4_3
+	bltu	a2, a1, .LBB4_3
 	j	.LBB4_4
 .LBB4_2:
-	li	a1, 3
+	li	a0, 3
 	li	a2, 79
-	bgeu	a2, a0, .LBB4_4
+	bgeu	a2, a1, .LBB4_4
 .LBB4_3:
-	li	a1, 4
+	li	a0, 4
 .LBB4_4:
-	mv	a0, a1
 	ret
 
 func0000000000000086:
