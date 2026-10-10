@@ -1,8 +1,8 @@
 func000000000000001e:
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vwaddu.wv	v8, v8, v11
-	vwaddu.wv	v8, v8, v10
+	vwaddu.vv	v12, v11, v10
 	vsetvli	zero, zero, e16, m2, ta, ma
+	vadd.vv	v8, v12, v8
 	vsrl.vi	v8, v8, 8
 	ret
 
