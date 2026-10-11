@@ -22,7 +22,7 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000007:
 	movl	$4, %eax
-	subq	%rdi, %rax
-	vcvtsi2sd	%rax, %xmm15, %xmm0
+	subl	%edi, %eax
+	vcvtsi2sd	%eax, %xmm15, %xmm0
 	retq
 

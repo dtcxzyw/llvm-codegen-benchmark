@@ -9,7 +9,7 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	andl	$3, %edi
-	vcvtsi2sd	%rdi, %xmm15, %xmm1
+	vcvtsi2sd	%edi, %xmm15, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 

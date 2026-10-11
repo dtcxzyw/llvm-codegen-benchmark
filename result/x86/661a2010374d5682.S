@@ -3,14 +3,14 @@
 func0000000000000003:
 	incl	%edi
 	andl	$-2, %edi
-	vcvtsi2sd	%rdi, %xmm15, %xmm0
+	vcvtusi2sd	%edi, %xmm15, %xmm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
 	incl	%edi
 	andl	$3, %edi
-	vcvtsi2sd	%rdi, %xmm15, %xmm0
+	vcvtsi2sd	%edi, %xmm15, %xmm0
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop

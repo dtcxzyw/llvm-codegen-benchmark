@@ -1,13 +1,13 @@
 func0000000000000003:
 	add	w8, w0, #1
-	and	x8, x8, #0xfffffffe
-	ucvtf	d0, x8
+	and	w8, w8, #0xfffffffe
+	ucvtf	d0, w8
 	ret
 
 func0000000000000001:
 	add	w8, w0, #1
-	and	x8, x8, #0x3
-	ucvtf	d0, x8
+	and	w8, w8, #0x3
+	ucvtf	d0, w8
 	ret
 
 func0000000000000000:
