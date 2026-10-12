@@ -1,12 +1,12 @@
 func0000000000000000:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v8, v8, 16
-	vfcvt.f.x.v	v8, v8
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vnsrl.wi	v10, v8, 16
+	vfwcvt.f.x.v	v8, v10
 	ret
 
 func0000000000000001:
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vsra.vi	v8, v8, 16
-	vfcvt.f.x.v	v8, v8
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vnsrl.wi	v10, v8, 16
+	vfwcvt.f.x.v	v8, v10
 	ret
 

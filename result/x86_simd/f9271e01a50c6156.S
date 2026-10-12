@@ -112,30 +112,29 @@ func0000000000001194:
 	retq
 
 .LCPI4_0:
-	.byte	6
-	.byte	6
-	.byte	6
-	.byte	6
-	.byte	6
-	.byte	6
-	.byte	6
-	.byte	6
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI4_1:
 	.long	26
+.LCPI4_1:
+	.byte	6
+	.byte	6
+	.byte	6
+	.byte	6
+	.byte	6
+	.byte	6
+	.byte	6
+	.byte	6
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000001021:
-	vpcmpltub	.LCPI4_0(%rip), %xmm2, %k0
-	vpcmpeqd	.LCPI4_1(%rip){1to8}, %ymm0, %k1
+	vpcmpeqd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	vptestnmd	%ymm1, %ymm1, %k1 {%k1}
-	kandb	%k0, %k1, %k0
+	vpcmpltub	.LCPI4_1(%rip), %xmm2, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -154,9 +153,8 @@ func000000000000058c:
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000581:
 	vpcmpeqd	.LCPI6_0(%rip){1to8}, %ymm2, %k1
-	vptestmb	%xmm1, %xmm1, %k0
 	vptestnmd	%ymm0, %ymm0, %k1 {%k1}
-	kandb	%k0, %k1, %k0
+	vptestmb	%xmm1, %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

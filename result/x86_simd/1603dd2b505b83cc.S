@@ -23,9 +23,8 @@ func000000000000004c:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k0
-	vpcmpneqb	.LCPI0_1(%rip), %xmm0, %k1
-	kandb	%k0, %k1, %k0
+	korb	%k0, %k1, %k1
+	vpcmpneqb	.LCPI0_1(%rip), %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -54,9 +53,8 @@ func0000000000000044:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k0
-	vpcmpltub	.LCPI1_1(%rip), %xmm0, %k1
-	kandb	%k0, %k1, %k0
+	korb	%k0, %k1, %k1
+	vpcmpltub	.LCPI1_1(%rip), %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -68,10 +66,9 @@ func000000000000004a:
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestnmd	.LCPI2_0(%rip){1to8}, %ymm2, %k1
-	korb	%k1, %k0, %k0
+	korb	%k1, %k0, %k1
 	vpxor	%xmm1, %xmm1, %xmm1
-	vpcmpnltb	%xmm1, %xmm0, %k1
-	kandb	%k0, %k1, %k0
+	vpcmpnltb	%xmm1, %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -100,9 +97,8 @@ func0000000000000042:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestnmd	.LCPI3_0(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k0
-	vpcmpeqb	.LCPI3_1(%rip), %xmm1, %k1
-	kandb	%k1, %k0, %k0
+	korb	%k0, %k1, %k1
+	vpcmpeqb	.LCPI3_1(%rip), %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

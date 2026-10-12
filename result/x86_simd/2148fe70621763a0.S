@@ -50,8 +50,8 @@ func0000000000000081:
 func0000000000000021:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpneqb	.LCPI1_0(%rip), %xmm2, %k1
-	kandnb	%k1, %k0, %k1
+	knotb	%k0, %k1
+	vpcmpneqb	.LCPI1_0(%rip), %xmm2, %k1 {%k1}
 	vptestnmd	%ymm1, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -80,8 +80,8 @@ func0000000000000021:
 func0000000000000034:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpneqb	.LCPI2_0(%rip), %xmm2, %k1
-	kandnb	%k1, %k0, %k1
+	knotb	%k0, %k1
+	vpcmpneqb	.LCPI2_0(%rip), %xmm2, %k1 {%k1}
 	vpcmpltud	.LCPI2_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -139,8 +139,8 @@ func0000000000000098:
 func0000000000000026:
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpcmpneqb	.LCPI4_0(%rip), %xmm2, %k1
-	kandnb	%k1, %k0, %k1
+	knotb	%k0, %k1
+	vpcmpneqb	.LCPI4_0(%rip), %xmm2, %k1 {%k1}
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtd	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0

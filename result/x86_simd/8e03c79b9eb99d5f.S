@@ -78,9 +78,8 @@ func0000000000006084:
 func0000000000000421:
 	vpbroadcastd	.LCPI2_0(%rip), %ymm3
 	vpcmpeqd	%ymm3, %ymm1, %k1
-	vpcmpeqd	%ymm3, %ymm2, %k0 {%k1}
-	vpcmpeqb	.LCPI2_1(%rip), %xmm0, %k1
-	kandb	%k1, %k0, %k0
+	vpcmpeqd	%ymm3, %ymm2, %k1 {%k1}
+	vpcmpeqb	.LCPI2_1(%rip), %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -127,9 +126,8 @@ func0000000000000581:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000003181:
 	vptestmd	%ymm2, %ymm2, %k1
-	vptestmd	%ymm1, %ymm1, %k0 {%k1}
-	vptestnmb	%xmm0, %xmm0, %k1
-	kandb	%k1, %k0, %k0
+	vptestmd	%ymm1, %ymm1, %k1 {%k1}
+	vptestnmb	%xmm0, %xmm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

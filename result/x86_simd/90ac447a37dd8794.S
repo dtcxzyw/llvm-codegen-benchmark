@@ -240,9 +240,8 @@ func0000000000000428:
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000001024:
 	vpcmpltud	.LCPI9_0(%rip){1to8}, %ymm2, %k1
-	vptestnmb	%xmm1, %xmm1, %k0
 	vpcmpltud	.LCPI9_1(%rip){1to8}, %ymm0, %k1 {%k1}
-	kandb	%k0, %k1, %k0
+	vptestnmb	%xmm1, %xmm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

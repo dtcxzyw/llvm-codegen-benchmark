@@ -32,9 +32,8 @@ func0000000000000021:
 	.long	65536
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000181:
-	vptestmb	%xmm1, %xmm1, %k0
 	vpcmpeqb	.LCPI1_0(%rip), %xmm0, %k1
-	kandb	%k0, %k1, %k1
+	vptestmb	%xmm1, %xmm1, %k1 {%k1}
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k1} {z}
 	retq
 
@@ -42,21 +41,20 @@ func0000000000000181:
 	.long	3
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
-	vptestmb	%xmm1, %xmm1, %k0
-	vptestmb	%xmm0, %xmm0, %k1
-	kandb	%k0, %k1, %k1
+	vptestmb	%xmm1, %xmm1, %k1
+	vptestmb	%xmm0, %xmm0, %k1 {%k1}
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0 {%k1} {z}
 	retq
 
 .LCPI3_0:
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
-	.byte	14
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
+	.byte	2
 	.zero	1
 	.zero	1
 	.zero	1
@@ -66,14 +64,14 @@ func000000000000018c:
 	.zero	1
 	.zero	1
 .LCPI3_1:
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
-	.byte	2
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
+	.byte	14
 	.zero	1
 	.zero	1
 	.zero	1
@@ -86,9 +84,8 @@ func000000000000018c:
 	.long	10000
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000101:
-	vpcmpnleub	.LCPI3_0(%rip), %xmm1, %k0
-	vpcmpeqb	.LCPI3_1(%rip), %xmm0, %k1
-	kandb	%k0, %k1, %k0
+	vpcmpeqb	.LCPI3_0(%rip), %xmm0, %k1
+	vpcmpnleub	.LCPI3_1(%rip), %xmm1, %k0 {%k1}
 	knotb	%k0, %k1
 	vpbroadcastd	.LCPI3_2(%rip), %ymm0 {%k1} {z}
 	retq

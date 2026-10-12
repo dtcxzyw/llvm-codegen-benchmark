@@ -37,9 +37,8 @@
 func0000000000000184:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
-	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k0
-	vptestmw	%xmm0, %xmm0, %k1
-	kandw	%k1, %k0, %k0
+	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
+	vptestmw	%xmm0, %xmm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -82,9 +81,8 @@ func0000000000000184:
 func000000000000008c:
 	vpmovqb	%ymm1, %xmm1
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
-	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k0
 	vptestmw	%xmm0, %xmm0, %k1
-	kandw	%k0, %k1, %k0
+	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
