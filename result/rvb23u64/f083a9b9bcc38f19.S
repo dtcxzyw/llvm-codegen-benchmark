@@ -8,9 +8,9 @@ func0000000000000108:
 
 func000000000000010c:
 	sub	a1, a1, a2
-	sltiu	a1, a1, 401
-	xori	a1, a1, 1
 	addi	a0, a0, -400
-	czero.eqz	a0, a1, a0
+	sltiu	a1, a1, 401
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

@@ -27,13 +27,12 @@ func0000000000000028:
 	ret
 
 func0000000000000144:
-	sext.w	a0, a0
 	zext.h	a1, a1
+	sext.w	a0, a0
 	addi	a1, a1, -17
-	slti	a0, a0, 7
 	sltiu	a1, a1, 120
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	slti	a0, a0, 7
+	andn	a0, a1, a0
 	ret
 
 func0000000000000084:

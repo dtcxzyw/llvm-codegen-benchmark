@@ -1,10 +1,9 @@
 func0000000000000021:
 	cmn	w0, #1
-	eor	w10, w1, #0x1
 	cset	w8, eq
 	cmn	w2, #1
 	cset	w9, eq
-	orr	w9, w10, w9
+	orn	w9, w9, w1
 	and	w0, w8, w9
 	ret
 

@@ -32,8 +32,8 @@ func000000000000002c:
 func000000000000010c:
 	zext.b	a2, a2
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
-	czero.eqz	a1, a2, a1
+	snez	a1, a1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

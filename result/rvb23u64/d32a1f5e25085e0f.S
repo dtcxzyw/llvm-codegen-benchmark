@@ -96,9 +96,8 @@ func00000000000000a5:
 
 func00000000000000ea:
 	slt	a2, a2, a0
-	xori	a2, a2, 1
 	slt	a0, a1, a0
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func000000000000002c:
@@ -157,9 +156,8 @@ func00000000000000ca:
 
 func00000000000000a8:
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
 	sltu	a0, a1, a0
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func00000000000000d9:
@@ -201,9 +199,8 @@ func0000000000000028:
 
 func0000000000000124:
 	sltu	a2, a0, a2
-	xori	a2, a2, 1
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000109:
@@ -228,9 +225,8 @@ func00000000000002b9:
 
 func00000000000000a4:
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000105:

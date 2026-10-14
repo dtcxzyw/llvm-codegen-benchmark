@@ -65,9 +65,10 @@ func0000000000000c2c:
 func000000000000098c:
 	li	a2, 5
 	slli	a2, a2, 41
-	bexti	a1, a1, 6
 	xor	a0, a0, a2
-	czero.eqz	a0, a1, a0
+	srli	a1, a1, 6
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000024:

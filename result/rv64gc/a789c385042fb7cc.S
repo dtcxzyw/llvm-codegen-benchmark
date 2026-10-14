@@ -81,7 +81,7 @@ func0000000000000141:
 	srli	a0, a0, 48
 	slti	a1, a1, 5
 	addi	a0, a0, -1
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -91,7 +91,7 @@ func0000000000000301:
 	srli	a0, a0, 48
 	sltiu	a1, a1, 5
 	addi	a0, a0, -1
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -198,7 +198,7 @@ func0000000000000114:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 9
 	and	a0, a0, a1
 	ret
@@ -215,7 +215,7 @@ func000000000000010c:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 13
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

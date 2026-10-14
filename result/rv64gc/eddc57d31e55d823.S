@@ -80,7 +80,7 @@ func000000000000007a:
 	fld	fa4, %lo(.LCPI5_0)(a2)
 	feq.d	a1, fa0, fa5
 	fle.d	a2, fa0, fa4
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

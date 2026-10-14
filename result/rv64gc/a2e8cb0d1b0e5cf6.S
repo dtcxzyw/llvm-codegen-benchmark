@@ -278,7 +278,7 @@ func000000000000318a:
 	snez	a1, a1
 	slti	a0, a0, 24
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -310,7 +310,7 @@ func0000000000000501:
 	or	a0, a0, a2
 	sltiu	a1, a1, 2016
 	sext.w	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -344,7 +344,7 @@ func00000000000028c6:
 	slti	a2, a2, 6
 	srliw	a1, a1, 31
 	slti	a0, a0, 6
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

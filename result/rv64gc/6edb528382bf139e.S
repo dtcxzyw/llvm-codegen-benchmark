@@ -85,7 +85,7 @@ func000000000000058a:
 	snez	a1, a1
 	slti	a0, a0, 16
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

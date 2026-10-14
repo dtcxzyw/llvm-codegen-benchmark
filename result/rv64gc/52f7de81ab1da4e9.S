@@ -11,7 +11,7 @@ func0000000000000141:
 	sub	a1, a1, a2
 	slti	a1, a1, 3
 	addiw	a0, a0, -40
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

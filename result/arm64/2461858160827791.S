@@ -35,9 +35,10 @@ func0000000000000081:
 
 func0000000000000184:
 	and	w8, w0, #0xff
-	ubfx	x9, x1, #36, #1
+	lsr	x9, x1, #36
 	cmp	w8, #5
-	csel	w0, wzr, w9, hs
+	cset	w8, lo
+	and	w0, w8, w9
 	ret
 
 func000000000000018c:

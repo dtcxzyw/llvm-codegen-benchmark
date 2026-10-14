@@ -100,10 +100,9 @@ func0000000000000028:
 func0000000000000306:
 	sext.w	a1, a1
 	zext.w	a2, a2
-	sltiu	a1, a1, 2
 	slt	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 2
+	andn	a0, a0, a1
 	ret
 
 func0000000000000288:
@@ -196,10 +195,9 @@ func0000000000000199:
 func0000000000000114:
 	sext.w	a1, a1
 	zext.w	a2, a2
-	sltiu	a1, a1, 16
 	sltu	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 16
+	andn	a0, a0, a1
 	ret
 
 func0000000000000089:

@@ -15,18 +15,18 @@ func0000000000000002:
 	ret
 
 func0000000000000001:
-	andi	a2, a0, 1
-	slliw	a0, a1, 20
-	bnez	a2, .LBB2_2
-	lui	a1, 1040384
-	addi	a1, a1, 575
+	andi	a0, a0, 1
+	slli	a1, a1, 20
+	bnez	a0, .LBB2_2
+	lui	a0, 1040384
+	addi	a0, a0, 575
 	or	a0, a0, a1
 	lui	a1, 128
 	or	a0, a0, a1
 	ret
 .LBB2_2:
-	lui	a1, 1040385
-	addi	a1, a1, -1473
+	lui	a0, 1040385
+	addi	a0, a0, -1473
 	or	a0, a0, a1
 	lui	a1, 128
 	or	a0, a0, a1

@@ -62,20 +62,20 @@ func0000000000002188:
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a2, a0, 31
-	xori	a2, a2, 1
+	snez	a1, a1
 	sltiu	a0, a0, 37
-	czero.eqz	a1, a2, a1
+	andn	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 
 func0000000000002028:
 	sext.w	a0, a0
-	sltiu	a2, a0, 21
-	xori	a2, a2, 1
 	addiw	a1, a1, -2
+	sltiu	a2, a0, 21
+	seqz	a1, a1
 	sltiu	a0, a0, 31
-	czero.nez	a1, a2, a1
+	andn	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

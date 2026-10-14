@@ -1,6 +1,5 @@
 func0000000000000184:
-	slli	a2, a2, 58
-	srli	a2, a2, 63
+	srli	a2, a2, 5
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -63,8 +62,7 @@ func0000000000000146:
 	ret
 
 func0000000000000188:
-	slli	a2, a2, 52
-	srli	a2, a2, 63
+	srli	a2, a2, 11
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret

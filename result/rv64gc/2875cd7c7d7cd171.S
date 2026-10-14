@@ -8,9 +8,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	slli	a2, a2, 61
 	addiw	a1, a1, -2
-	srli	a2, a2, 63
+	srli	a2, a2, 2
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -18,8 +17,7 @@ func0000000000000181:
 
 func000000000000018a:
 	sext.w	a1, a1
-	slli	a2, a2, 42
-	srli	a2, a2, 63
+	srli	a2, a2, 21
 	sgtz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

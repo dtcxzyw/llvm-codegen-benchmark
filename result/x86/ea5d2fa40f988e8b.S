@@ -19,10 +19,10 @@ func0000000000000181:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000018c:
 	movl	%edi, %eax
-	andl	$2, %esi
-	shrl	%esi
+	shrb	%sil
 	shrl	$8, %eax
-	andl	%esi, %eax
+	andl	$1, %eax
+	andb	%sil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

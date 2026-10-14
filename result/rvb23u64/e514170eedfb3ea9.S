@@ -43,10 +43,10 @@ func000000000000028c:
 
 func00000000000002a1:
 	sext.w	a1, a1
+	sext.w	a0, a0
 	andi	a2, a2, 511
 	sltu	a1, a2, a1
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 

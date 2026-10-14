@@ -38,9 +38,9 @@ func0000000000000024:
 
 func0000000000000028:
 	zext.b	a0, a0
-	sltiu	a0, a0, 32
 	sext.w	a1, a1
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 32
+	andn	a0, a1, a0
 	ret
 

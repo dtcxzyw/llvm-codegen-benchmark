@@ -1,7 +1,7 @@
 func0000000000000014:
-	andi	a0, a0, 15
 	addi	a1, a0, -1
 	and	a0, a0, a1
+	andi	a0, a0, 15
 	seqz	a0, a0
 	ret
 
@@ -37,10 +37,9 @@ func0000000000000034:
 	ret
 
 func0000000000000038:
-	slli	a0, a0, 48
-	srli	a0, a0, 48
 	addi	a1, a0, -1
 	and	a0, a0, a1
+	slli	a0, a0, 48
 	snez	a0, a0
 	ret
 

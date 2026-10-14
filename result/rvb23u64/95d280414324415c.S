@@ -17,13 +17,12 @@ func0000000000000026:
 
 func000000000000002a:
 	zext.h	a2, a2
-	sext.w	a1, a1
 	addi	a2, a2, -21
+	sext.w	a1, a1
 	seqz	a2, a2
-	slti	a1, a1, 9
 	and	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	slti	a1, a1, 9
+	andn	a0, a0, a1
 	ret
 
 func000000000000008c:

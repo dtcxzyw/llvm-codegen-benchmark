@@ -80,7 +80,7 @@ func000000000000008c:
 func0000000000000141:
 	sext.w	a2, a2
 	slti	a2, a2, 28
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, -2
 	or	a1, a1, a2
 	seqz	a0, a0
@@ -143,7 +143,7 @@ func000000000000014c:
 	not	a1, a1
 	slti	a0, a0, 3
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

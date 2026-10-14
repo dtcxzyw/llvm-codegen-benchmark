@@ -37,8 +37,7 @@ func0000000000000181:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000198:
-	andl	$16, %esi
-	shrl	$4, %esi
+	shrb	$4, %sil
 	andl	$15, %edi
 	cmpl	$7, %edi
 	setae	%al

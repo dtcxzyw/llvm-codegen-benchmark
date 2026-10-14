@@ -1,10 +1,10 @@
 func0000000000000028:
-	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a0, a0, 192
+	zext.b	a0, a0
 	addi	a1, a1, -11
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 192
+	andn	a0, a1, a0
 	ret
 
 func000000000000002c:

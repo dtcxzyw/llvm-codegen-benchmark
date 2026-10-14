@@ -39,7 +39,7 @@ func000000000000082a:
 	sext.w	a2, a2
 	slti	a2, a2, 3
 	seqz	a1, a1
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

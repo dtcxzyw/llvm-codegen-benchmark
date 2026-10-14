@@ -55,7 +55,7 @@ func000000000000318b:
 	snez	a2, a2
 	slt	a0, a0, a1
 	and	a2, a2, a3
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a2
 	ret
 
@@ -70,7 +70,7 @@ func0000000000003187:
 	snez	a2, a2
 	slt	a0, a1, a0
 	and	a2, a2, a3
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a2
 	ret
 

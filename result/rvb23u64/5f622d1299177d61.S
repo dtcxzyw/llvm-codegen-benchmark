@@ -60,10 +60,10 @@ func0000000000000081:
 func0000000000000301:
 	li	a2, -1665
 	srli	a2, a2, 3
-	sltiu	a0, a0, 2
 	andn	a1, a1, a2
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func000000000000030c:
@@ -74,18 +74,17 @@ func000000000000030c:
 	ret
 
 func000000000000010c:
-	sltiu	a0, a0, 2
 	sext.w	a1, a1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func0000000000000101:
-	bseti	a2, zero, 11
+	not	a1, a1
+	bexti	a1, a1, 11
 	sltiu	a0, a0, 2
-	and	a1, a1, a2
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000034:

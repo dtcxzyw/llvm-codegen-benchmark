@@ -3,7 +3,7 @@ func000000000000010c:
 	srli	a2, a2, 48
 	sltiu	a2, a2, 51
 	xor	a0, a0, a1
-	xori	a1, a2, 1
+	not	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -17,7 +17,7 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	$2, %esi
 	sete	%al
 	andb	%dil, %al
@@ -33,7 +33,7 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000028:
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	$8, %esi
 	setae	%al
 	andb	%dil, %al
@@ -41,7 +41,7 @@ func0000000000000028:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000014:
-	xorb	$1, %dil
+	notb	%dil
 	testl	%esi, %esi
 	sets	%al
 	andb	%dil, %al

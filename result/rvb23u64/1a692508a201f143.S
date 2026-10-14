@@ -69,12 +69,12 @@ func0000000000000026:
 	ret
 
 func0000000000000141:
-	sext.w	a1, a1
 	andi	a2, a2, -2
-	slti	a1, a1, 2022
+	sext.w	a1, a1
 	addiw	a2, a2, -2
-	xori	a1, a1, 1
-	czero.nez	a1, a1, a2
+	seqz	a2, a2
+	slti	a1, a1, 2022
+	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

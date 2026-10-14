@@ -40,27 +40,25 @@ func0000000000000042:
 	ret
 
 func000000000000007c:
-	fsub.d	fa5, fa0, fa1
 	lui	a0, 16489
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 36
 	fmv.d.x	fa4, a0
-	fli.d	fa3, inf
-	feq.d	a0, fa5, fa3
-	fle.d	a1, fa4, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	fle.d	a0, fa4, fa5
+	fli.d	fa4, inf
+	feq.d	a1, fa5, fa4
+	andn	a0, a0, a1
 	ret
 
 func000000000000007a:
-	fsub.d	fa5, fa0, fa1
 	lui	a0, 1032297
+	fsub.d	fa5, fa0, fa1
 	slli	a0, a0, 36
 	fmv.d.x	fa4, a0
 	fli.d	fa3, inf
 	feq.d	a0, fa5, fa3
 	fle.d	a1, fa5, fa4
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000002c:

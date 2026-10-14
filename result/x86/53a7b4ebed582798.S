@@ -11,7 +11,7 @@ func000000000000002c:
 func000000000000018c:
 	movl	%edi, %eax
 	shrl	$10, %esi
-	andl	$1, %esi
+	andb	$8, %al
 	shrb	$3, %al
 	andb	%sil, %al
 	retq

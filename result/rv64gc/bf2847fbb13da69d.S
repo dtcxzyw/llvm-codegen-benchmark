@@ -6,9 +6,8 @@ func000000000000014c:
 
 func000000000000002c:
 	addiw	a1, a1, -8
-	slli	a0, a0, 50
 	snez	a1, a1
-	srli	a0, a0, 63
+	srli	a0, a0, 13
 	and	a0, a0, a1
 	ret
 

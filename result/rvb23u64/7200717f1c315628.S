@@ -16,10 +16,10 @@ func0000000000000d81:
 
 func0000000000000ca1:
 	addi	a2, a2, 9
-	sltu	a0, a0, a2
-	xori	a0, a0, 1
 	andi	a1, a1, 1024
-	czero.nez	a0, a0, a1
+	sltu	a0, a0, a2
+	seqz	a1, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000c81:

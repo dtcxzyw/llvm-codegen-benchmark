@@ -7,7 +7,7 @@ func0000000000000002:
 	ret
 
 func0000000000000008:
-	xori	a1, a1, 1
+	not	a1, a1
 	lui	a3, 48
 	sext.w	a2, a2
 	addi	a3, a3, -497
@@ -17,7 +17,7 @@ func0000000000000008:
 	ret
 
 func0000000000000018:
-	xori	a1, a1, 1
+	not	a1, a1
 	sext.w	a2, a2
 	seqz	a2, a2
 	and	a0, a0, a1

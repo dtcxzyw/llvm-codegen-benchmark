@@ -8,10 +8,9 @@ func0000000000000021:
 
 func0000000000000181:
 	cmp	w0, #1
-	and	w9, w1, #0x20
 	mov	w8, #8
-	cset	w10, eq
-	tst	w10, w9, lsr #5
+	cset	w9, eq
+	tst	w9, w1, lsr #5
 	csel	w0, w8, w0, ne
 	ret
 

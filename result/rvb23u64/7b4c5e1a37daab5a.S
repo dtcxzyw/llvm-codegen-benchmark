@@ -88,10 +88,10 @@ func000000000000028c:
 
 func000000000000030c:
 	sext.w	a0, a0
-	sltiu	a0, a0, 8
 	andi	a1, a1, 15
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 8
+	andn	a0, a1, a0
 	ret
 
 func00000000000000cc:
@@ -103,11 +103,11 @@ func00000000000000cc:
 	ret
 
 func0000000000000301:
-	sext.w	a0, a0
 	andi	a1, a1, 31
-	sltiu	a0, a0, 4
+	sext.w	a0, a0
 	addi	a1, a1, -16
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 4
+	andn	a0, a1, a0
 	ret
 

@@ -20,10 +20,10 @@ func000000000000002c:
 func00000000000000ec:
 	sext.w	a3, a1
 	sext.w	a2, a2
-	slt	a2, a2, a3
-	xori	a2, a2, 1
 	addiw	a1, a1, -4
-	czero.eqz	a1, a2, a1
+	slt	a2, a2, a3
+	snez	a1, a1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

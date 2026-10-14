@@ -16,7 +16,7 @@ func0000000000000028:
 	addiw	a1, a1, -258
 	sltiu	a0, a0, 31
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

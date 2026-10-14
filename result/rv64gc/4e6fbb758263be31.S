@@ -34,7 +34,7 @@ func00000000000001d4:
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a2, a2, a1
-	xori	a2, a2, 1
+	not	a2, a2
 	sgtz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

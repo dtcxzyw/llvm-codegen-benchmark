@@ -14,13 +14,13 @@ func0000000000000021:
 	ret
 
 func000000000000010c:
-	sext.w	a0, a0
 	slli	a1, a1, 33
 	srli	a1, a1, 33
-	sltiu	a0, a0, 2
+	sext.w	a0, a0
 	binvi	a1, a1, 15
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func000000000000018c:

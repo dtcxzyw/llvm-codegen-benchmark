@@ -13,18 +13,24 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	lui	a3, 921600
-	sext.w	a4, a2
-	addi	a2, a3, -1026
+	sext.w	a2, a2
 	andi	a0, a0, 1
-	mv	a3, a2
-	beqz	a4, .LBB1_2
-	lui	a3, 135168
-	addi	a3, a3, -2
-.LBB1_2:
+	beqz	a2, .LBB1_2
+	lui	a2, 135168
+	addi	a2, a2, -2
 	addi	a0, a0, -1
-	or	a1, a1, a3
-	and	a0, a0, a2
+	lui	a3, 786432
+	or	a1, a1, a2
+	and	a0, a0, a3
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	lui	a2, 921600
+	addi	a2, a2, -1026
+	addi	a0, a0, -1
+	lui	a3, 786432
+	or	a1, a1, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

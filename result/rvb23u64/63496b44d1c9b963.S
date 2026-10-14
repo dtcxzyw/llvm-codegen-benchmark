@@ -1,9 +1,9 @@
 func000000000000010c:
 	sub	a2, a1, a2
-	sltiu	a2, a2, 9
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	sltiu	a1, a2, 9
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000014c:
@@ -31,9 +31,8 @@ func0000000000000184:
 func0000000000000144:
 	sub	a2, a1, a2
 	slti	a2, a2, 8
-	xori	a2, a2, 1
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func000000000000008c:
@@ -45,10 +44,9 @@ func000000000000008c:
 
 func0000000000000134:
 	sub	a2, a1, a2
+	sltiu	a2, a2, -16
 	sltu	a0, a0, a1
-	sltiu	a1, a2, -16
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a2, a0
 	ret
 
 func0000000000000188:

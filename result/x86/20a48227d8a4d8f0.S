@@ -23,7 +23,6 @@ func000000000000002c:
 func0000000000000181:
 	movl	%esi, %ecx
 	shrl	$14, %ecx
-	andl	$1, %ecx
 	andl	$4095, %esi
 	cmpl	%edi, %esi
 	sete	%al

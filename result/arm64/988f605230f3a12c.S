@@ -19,20 +19,20 @@ func0000000000000181:
 
 func0000000000000184:
 	mov	w8, #33333
-	ubfx	w9, w1, #28, #1
 	cmp	w0, w8
-	csel	w0, wzr, w9, hs
+	cset	w8, lo
+	and	w0, w8, w1, lsr #28
 	ret
 
 func000000000000018a:
-	ubfx	w8, w1, #8, #1
 	cmp	w0, #2
-	csel	w0, wzr, w8, le
+	cset	w8, gt
+	and	w0, w8, w1, lsr #8
 	ret
 
 func000000000000018c:
-	ubfx	w8, w1, #21, #1
 	cmp	w0, #0
-	csel	w0, wzr, w8, eq
+	cset	w8, ne
+	and	w0, w8, w1, lsr #21
 	ret
 

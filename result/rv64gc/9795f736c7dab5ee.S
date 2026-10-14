@@ -11,7 +11,7 @@ func00000000000012ac:
 	sext.w	a2, a2
 	sltu	a0, a2, a0
 	addiw	a1, a1, -1
-	xori	a0, a0, 1
+	not	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

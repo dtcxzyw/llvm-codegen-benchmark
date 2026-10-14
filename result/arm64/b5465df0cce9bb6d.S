@@ -1,8 +1,8 @@
 func000000000000018c:
-	and	w8, w2, #0x1000
+	and	w8, w1, w2, lsr #12
 	cmp	x0, #0
-	and	w8, w1, w8, lsr #12
-	csel	w0, wzr, w8, eq
+	cset	w9, ne
+	and	w0, w9, w8
 	ret
 
 func000000000000002c:

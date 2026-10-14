@@ -6,8 +6,7 @@ func00000000000000a2:
 	flt.d	a1, fa0, fa5
 	sext.w	a0, a0
 	slti	a0, a0, 16
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000a7:
@@ -59,9 +58,8 @@ func0000000000000066:
 	fld	fa5, %lo(.LCPI6_0)(a1)
 	fle.d	a1, fa5, fa0
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	slti	a0, a0, 101
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -86,8 +84,7 @@ func0000000000000082:
 	flt.d	a1, fa0, fa5
 	sext.w	a0, a0
 	sltiu	a0, a0, 2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000ad:
@@ -102,8 +99,8 @@ func00000000000000ec:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000010c:
@@ -163,9 +160,8 @@ func00000000000000ea:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func000000000000004a:
@@ -205,9 +201,8 @@ func000000000000006a:
 	fmv.d.x	fa5, a1
 	fle.d	a1, fa5, fa0
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000101:
@@ -238,8 +233,7 @@ func00000000000000aa:
 	fle.d	a1, fa0, fa5
 	sext.w	a0, a0
 	slti	a0, a0, 2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 .LCPI29_0:
@@ -267,8 +261,8 @@ func00000000000001ac:
 	fld	fa5, %lo(.LCPI31_0)(a1)
 	flt.d	a1, fa0, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000098:

@@ -10,7 +10,7 @@ func000000000000014a:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slti	a1, a1, 32
-	xori	a1, a1, 1
+	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

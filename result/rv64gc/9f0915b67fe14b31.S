@@ -12,7 +12,7 @@ func0000000000000541:
 	zext.b	a0, a0
 	slti	a1, a1, 2
 	addi	a0, a0, -10
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -36,7 +36,7 @@ func0000000000000141:
 	xor	a1, a1, a2
 	slti	a0, a0, 56
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -66,7 +66,7 @@ func000000000000010c:
 	xor	a1, a1, a2
 	sltiu	a0, a0, 5
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

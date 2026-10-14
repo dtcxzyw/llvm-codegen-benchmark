@@ -23,26 +23,23 @@ func0000000000000181:
 func0000000000000184:
 	lui	a2, 8
 	sext.w	a0, a0
-	slli	a1, a1, 35
 	addi	a2, a2, 565
-	srli	a1, a1, 63
+	srli	a1, a1, 28
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
 func000000000000018a:
 	sext.w	a0, a0
-	slli	a1, a1, 55
 	slti	a0, a0, 3
-	srli	a1, a1, 63
-	not	a0, a0
+	srli	a1, a1, 8
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
 	sext.w	a0, a0
-	slli	a1, a1, 42
-	srli	a1, a1, 63
+	srli	a1, a1, 21
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

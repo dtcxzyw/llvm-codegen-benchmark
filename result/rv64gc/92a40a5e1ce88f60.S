@@ -8,7 +8,7 @@ func0000000000000081:
 func0000000000000146:
 	add	a1, a1, a2
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
@@ -47,7 +47,7 @@ func000000000000042c:
 func0000000000000104:
 	add	a1, a1, a2
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 10
 	and	a0, a0, a1
 	ret
@@ -176,7 +176,7 @@ func0000000000000881:
 func000000000000014a:
 	add	a1, a1, a2
 	slti	a1, a1, 29
-	xori	a1, a1, 1
+	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -184,7 +184,7 @@ func000000000000014a:
 func000000000000054a:
 	add	a1, a1, a2
 	slti	a1, a1, 29
-	xori	a1, a1, 1
+	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

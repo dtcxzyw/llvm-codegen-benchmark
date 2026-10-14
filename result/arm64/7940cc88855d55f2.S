@@ -8,18 +8,16 @@ func0000000000000021:
 
 func000000000000002c:
 	cmp	w1, #4
-	and	w9, w2, #0x2
 	cset	w8, eq
 	and	w8, w8, w0
-	and	w0, w8, w9, lsr #1
+	and	w0, w8, w2, lsr #1
 	ret
 
 func000000000000018c:
 	cmp	w1, #9
-	and	w9, w2, #0x400
 	cset	w8, ne
 	and	w8, w8, w0
-	and	w0, w8, w9, lsr #10
+	and	w0, w8, w2, lsr #10
 	ret
 
 func0000000000000181:

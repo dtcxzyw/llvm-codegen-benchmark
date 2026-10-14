@@ -85,10 +85,9 @@ func0000000000002284:
 func0000000000003704:
 	sext.w	a0, a0
 	addiw	a1, a1, -1
-	sltiu	a0, a0, 53
 	sltiu	a1, a1, 63
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 53
+	andn	a0, a1, a0
 	ret
 
 func000000000000008c:

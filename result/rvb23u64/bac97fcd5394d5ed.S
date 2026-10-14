@@ -74,11 +74,11 @@ func000000000000008c:
 	ret
 
 func0000000000000101:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 181
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000002a:
@@ -120,18 +120,16 @@ func0000000000000094:
 func0000000000000146:
 	sext.w	a0, a0
 	srliw	a1, a1, 31
-	xori	a1, a1, 1
 	slti	a0, a0, 15
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func000000000000014a:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	slti	a1, a1, 2
-	xori	a1, a1, 1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000186:
@@ -164,11 +162,11 @@ func0000000000000188:
 	ret
 
 func0000000000000301:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 9
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000284:
@@ -208,12 +206,11 @@ func000000000000014c:
 	ret
 
 func0000000000000306:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	sltiu	a1, a1, 5
-	xori	a1, a1, 1
 	slti	a0, a0, 513
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000144:
@@ -242,9 +239,8 @@ func0000000000000288:
 func0000000000000106:
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
-	xori	a1, a1, 1
 	srliw	a0, a0, 31
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000088:
@@ -265,11 +261,11 @@ func0000000000000198:
 	ret
 
 func000000000000010c:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000108:
@@ -296,12 +292,11 @@ func0000000000000281:
 	ret
 
 func0000000000000114:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	sltiu	a1, a1, -4
-	xori	a1, a1, 1
 	sltiu	a0, a0, 5
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func00000000000000ca:
@@ -311,20 +306,19 @@ func00000000000000ca:
 	ret
 
 func000000000000030c:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 128
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000304:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	sltiu	a1, a1, 3
-	xori	a1, a1, 1
 	sltiu	a0, a0, 8
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000098:
@@ -367,12 +361,11 @@ func0000000000000148:
 	ret
 
 func0000000000000314:
-	sext.w	a1, a1
 	sext.w	a0, a0
+	sext.w	a1, a1
 	sltiu	a1, a1, 97
-	xori	a1, a1, 1
 	sltiu	a0, a0, 98
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000194:
@@ -437,11 +430,10 @@ func000000000000028a:
 
 func0000000000000104:
 	srliw	a1, a1, 11
-	sltiu	a1, a1, 27
 	srliw	a0, a0, 13
-	xori	a1, a1, 1
+	sltiu	a1, a1, 27
 	sltiu	a0, a0, 7
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func00000000000000c8:

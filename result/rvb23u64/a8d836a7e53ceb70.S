@@ -44,10 +44,9 @@ func0000000000000101:
 	addiw	a2, a2, -1
 	sext.w	a0, a0
 	seqz	a2, a2
-	sltiu	a0, a0, 160
 	andn	a1, a2, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 160
+	andn	a0, a1, a0
 	ret
 
 func0000000000000028:

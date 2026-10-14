@@ -4,7 +4,7 @@ func0000000000000104:
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 10
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 11
 	and	a0, a0, a1
 	ret
@@ -104,7 +104,7 @@ func0000000000000101:
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -126,7 +126,7 @@ func0000000000000141:
 	srai	a1, a1, 48
 	slti	a1, a1, -14
 	slli	a0, a0, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

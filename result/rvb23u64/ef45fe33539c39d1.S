@@ -10,12 +10,12 @@ func000000000000204c:
 
 func000000000000628c:
 	sext.w	a1, a1
-	srliw	a2, a0, 31
 	snez	a1, a1
-	xori	a2, a2, 1
-	or	a1, a1, a2
+	srliw	a2, a0, 31
 	addiw	a0, a0, 4
-	czero.eqz	a0, a1, a0
+	orn	a1, a1, a2
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000005194:
@@ -28,14 +28,14 @@ func0000000000005194:
 	ret
 
 func000000000000620c:
-	sext.w	a1, a1
 	addiw	a2, a0, -5
-	sltiu	a1, a1, 128
+	sext.w	a1, a1
 	snez	a2, a2
-	xori	a1, a1, 1
-	or	a1, a1, a2
+	sltiu	a1, a1, 128
 	addiw	a0, a0, -4
-	czero.eqz	a0, a1, a0
+	orn	a1, a2, a1
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000004104:

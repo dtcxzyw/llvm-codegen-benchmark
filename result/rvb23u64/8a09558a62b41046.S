@@ -98,8 +98,7 @@ func0000000000000087:
 	feq.s	a1, fa1, fa5
 	feq.s	a2, fa0, fa5
 	and	a0, a0, a1
-	xori	a1, a2, 1
-	and	a0, a0, a1
+	andn	a0, a0, a2
 	ret
 
 func00000000000000a4:

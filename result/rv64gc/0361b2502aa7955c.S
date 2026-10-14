@@ -13,7 +13,7 @@ func0000000000000141:
 	slti	a2, a2, 772
 	slli	a3, a3, 11
 	and	a1, a1, a3
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1

@@ -32,10 +32,9 @@ func0000000000000304:
 	lui	a2, 15
 	addiw	a1, a1, -1
 	addi	a2, a2, 2047
-	sltiu	a0, a0, 4
 	sltu	a1, a1, a2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 4
+	andn	a0, a1, a0
 	ret
 
 func000000000000068c:

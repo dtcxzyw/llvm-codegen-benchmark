@@ -41,7 +41,7 @@ func0000000000000504:
 	addiw	a1, a1, -15
 	slti	a2, a2, 1983
 	sltiu	a1, a1, 7
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

@@ -44,9 +44,9 @@ func000000000000008c:
 	ret
 
 func0000000000000184:
-	ubfx	x8, x1, #18, #1
 	tst	w0, #0xfffc
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #18
 	ret
 
 func0000000000000101:

@@ -2,8 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
 	orl	%edx, %esi
-	andl	$4, %esi
-	shrl	$2, %esi
+	shrb	$2, %sil
 	testq	%rdi, %rdi
 	sete	%al
 	andb	%sil, %al

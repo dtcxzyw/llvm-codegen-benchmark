@@ -66,7 +66,7 @@ func00000000000000a8:
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret

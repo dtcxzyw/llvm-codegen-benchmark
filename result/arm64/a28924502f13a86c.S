@@ -21,15 +21,14 @@ func000000000000030c:
 	ret
 
 func0000000000000181:
-	ubfx	w8, w1, #26, #1
 	tst	w0, #0x100
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #26
 	ret
 
 func000000000000018c:
-	lsr	w8, w0, #7
-	and	w9, w1, #0x100
-	and	w0, w8, w9, lsr #8
+	ubfx	w8, w0, #7, #1
+	and	w0, w8, w1, lsr #8
 	ret
 
 func0000000000000281:

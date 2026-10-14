@@ -108,11 +108,10 @@ func0000000000000141:
 	ret
 
 func00000000000000e1:
-	lui	a3, 8192
+	not	a2, a2
+	bexti	a2, a2, 25
 	slt	a0, a1, a0
-	and	a2, a2, a3
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a2
+	andn	a0, a2, a0
 	ret
 
 func00000000000000ec:

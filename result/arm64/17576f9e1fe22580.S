@@ -13,8 +13,8 @@ func0000000000000006:
 	ret
 
 func0000000000000002:
-	orr	w8, w0, #0x20
-	neg	w9, w1
-	lsr	w0, w8, w9
+	neg	w8, w1
+	orr	w9, w0, #0x20
+	lsr	w0, w9, w8
 	ret
 

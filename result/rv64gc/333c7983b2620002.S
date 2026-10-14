@@ -5,7 +5,7 @@ func000000000000006a:
 	fmv.d.x	fa4, a1
 	fle.d	a1, fa4, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

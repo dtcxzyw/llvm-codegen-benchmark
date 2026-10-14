@@ -63,10 +63,10 @@ func0000000000000c21:
 
 func00000000000008ac:
 	addi	a2, a2, -8
-	sltu	a1, a2, a1
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sltu	a1, a2, a1
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000024:
@@ -84,11 +84,11 @@ func0000000000000081:
 	ret
 
 func0000000000000d4c:
-	sext.w	a1, a1
 	addi	a2, a2, 256
-	slti	a1, a1, 6
+	sext.w	a1, a1
 	xor	a0, a0, a2
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	slti	a1, a1, 6
+	andn	a0, a0, a1
 	ret
 

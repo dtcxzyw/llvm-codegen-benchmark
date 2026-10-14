@@ -1,7 +1,6 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
-	andl	$8, %edx
 	shrl	$3, %edx
 	andl	%esi, %edx
 	cmpl	$8, %edi
@@ -13,7 +12,6 @@ func0000000000000184:
 func0000000000000181:
 	shrl	$19, %edx
 	andl	%esi, %edx
-	andl	$1, %edx
 	testl	%edi, %edi
 	sete	%al
 	andb	%dl, %al
@@ -41,7 +39,6 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
-	andl	$2, %edx
 	shrl	%edx
 	andl	%esi, %edx
 	testl	%edi, %edi

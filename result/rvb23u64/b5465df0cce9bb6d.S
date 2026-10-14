@@ -1,7 +1,8 @@
 func000000000000018c:
-	bexti	a2, a2, 12
+	srli	a2, a2, 12
 	and	a1, a1, a2
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000002c:

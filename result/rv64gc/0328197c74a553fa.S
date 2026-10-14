@@ -115,7 +115,7 @@ func000000000000002a:
 	seqz	a2, a2
 	srli	a1, a1, 63
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

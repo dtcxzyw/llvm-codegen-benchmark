@@ -57,9 +57,10 @@ func0000000000000181:
 
 func000000000000018a:
 	sext.w	a0, a0
-	bexti	a1, a1, 2
 	slti	a0, a0, 769
-	andn	a0, a1, a0
+	srli	a1, a1, 2
+	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 
 func0000000000000188:
@@ -108,9 +109,10 @@ func0000000000000298:
 
 func0000000000000198:
 	sext.w	a0, a0
-	bexti	a1, a1, 17
 	sltiu	a0, a0, 128
-	andn	a0, a1, a0
+	srli	a1, a1, 17
+	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 
 func0000000000000034:
@@ -163,10 +165,10 @@ func0000000000000294:
 
 func0000000000000301:
 	zext.h	a1, a1
-	sltiu	a1, a1, 5
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 5
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000028:

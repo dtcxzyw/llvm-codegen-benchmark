@@ -44,7 +44,7 @@ func0000000000000f0c:
 	addw	a1, a1, a2
 	sext.w	a0, a0
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -111,7 +111,7 @@ func000000000000010c:
 	lui	a2, 16
 	sltiu	a1, a1, 2
 	xor	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -353,7 +353,7 @@ func0000000000000541:
 	addw	a1, a1, a2
 	sext.w	a0, a0
 	slti	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -362,7 +362,7 @@ func0000000000000f01:
 	addw	a1, a1, a2
 	sext.w	a0, a0
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -1,8 +1,7 @@
 func0000000000000084:
 	flt.s	a1, fa1, fa0
 	sltiu	a0, a0, 2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000c3:

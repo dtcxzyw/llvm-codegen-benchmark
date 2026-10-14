@@ -9,12 +9,12 @@ func0000000000000421:
 
 func000000000000050c:
 	zext.b	a2, a2
-	zext.b	a0, a0
 	or	a1, a1, a2
-	sltiu	a0, a0, 16
+	zext.b	a0, a0
 	sext.w	a1, a1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 16
+	andn	a0, a1, a0
 	ret
 
 func0000000000000438:

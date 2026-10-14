@@ -34,7 +34,7 @@ func0000000000000948:
 	sub	a0, a0, a1
 	sext.w	a1, a1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
+	not	a0, a0
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

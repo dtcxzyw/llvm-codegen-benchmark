@@ -5,7 +5,7 @@ func0000000000000208:
 	addi	a3, a3, -588
 	sltu	a2, a3, a2
 	lui	a3, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	addi	a3, a3, -497
 	and	a1, a1, a2
 	sltu	a0, a3, a0

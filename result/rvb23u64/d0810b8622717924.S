@@ -62,8 +62,7 @@ func00000000000000d2:
 	flt.s	a0, fa1, fa2
 	fli.s	fa5, min
 	flt.s	a1, fa0, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000044:

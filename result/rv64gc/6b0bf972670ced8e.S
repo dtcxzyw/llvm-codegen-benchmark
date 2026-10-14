@@ -1,5 +1,5 @@
 func000000000000002c:
-	xori	a2, a2, 1
+	not	a2, a2
 	snez	a1, a1
 	snez	a0, a0
 	and	a1, a1, a2

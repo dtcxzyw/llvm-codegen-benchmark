@@ -51,7 +51,7 @@ func0000000000000088:
 	sext.w	a0, a0
 	sltiu	a2, a2, 3
 	sltiu	a0, a0, 2
-	xori	a2, a2, 1
+	not	a2, a2
 	xori	a0, a0, 1
 	or	a1, a1, a2
 	and	a0, a0, a1
@@ -89,7 +89,7 @@ func000000000000014a:
 	sext.w	a2, a2
 	slti	a2, a2, 61
 	sext.w	a0, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	slti	a0, a0, -1085
 	or	a1, a1, a2
 	and	a0, a0, a1

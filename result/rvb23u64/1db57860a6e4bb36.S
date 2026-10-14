@@ -9,10 +9,10 @@ func0000000000001c24:
 
 func00000000000010ac:
 	bset	a2, zero, a2
+	sext.w	a0, a0
 	zext.w	a2, a2
 	sltu	a1, a2, a1
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

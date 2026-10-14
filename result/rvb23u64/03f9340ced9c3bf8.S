@@ -73,13 +73,12 @@ func0000000000000184:
 	ret
 
 func0000000000000108:
-	zext.h	a0, a0
 	zext.h	a1, a1
+	zext.h	a0, a0
 	addi	a1, a1, -29
-	sltiu	a0, a0, 2
 	sltiu	a1, a1, -25
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func000000000000008c:

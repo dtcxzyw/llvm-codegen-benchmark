@@ -16,14 +16,14 @@ func00000000000000cb:
 func000000000000008a:
 	fle.d	a1, fa0, fa1
 	sltiu	a0, a0, 6
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000084:
 	flt.d	a1, fa1, fa0
 	sltiu	a0, a0, 2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

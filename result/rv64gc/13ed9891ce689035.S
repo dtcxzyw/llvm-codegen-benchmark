@@ -53,7 +53,7 @@ func0000000000000101:
 
 func0000000000000146:
 	srliw	a2, a2, 31
-	xori	a2, a2, 1
+	not	a2, a2
 	srliw	a1, a1, 31
 	and	a1, a1, a2
 	beqz	a1, .LBB5_2

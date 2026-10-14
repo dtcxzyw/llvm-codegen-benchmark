@@ -5,13 +5,15 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	bexti	a1, a1, 9
-	czero.eqz	a0, a1, a0
+	srli	a1, a1, 9
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	bexti	a1, a1, 4
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 4
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -22,15 +24,16 @@ func0000000000000021:
 	ret
 
 func000000000000018a:
-	bexti	a1, a1, 13
+	srli	a1, a1, 13
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000198:
-	bexti	a1, a1, 13
 	sltiu	a0, a0, 2
-	andn	a0, a1, a0
+	srli	a1, a1, 13
+	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 
 func0000000000000028:

@@ -22,8 +22,7 @@ func0000000000000181:
 	ret
 
 func0000000000000188:
-	slli	a2, a2, 48
-	srli	a2, a2, 63
+	srli	a2, a2, 15
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
@@ -45,8 +44,7 @@ func000000000000018c:
 	ret
 
 func0000000000000184:
-	slli	a2, a2, 62
-	srli	a2, a2, 63
+	srli	a2, a2, 1
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

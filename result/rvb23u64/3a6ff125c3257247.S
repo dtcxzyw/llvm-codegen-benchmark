@@ -7,9 +7,10 @@ func000000000000018c:
 
 func0000000000000181:
 	and	a1, a1, a2
-	bexti	a1, a1, 9
 	addiw	a0, a0, -2
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 9
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000002c:

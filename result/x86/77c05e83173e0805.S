@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000030:
-	xorb	$1, %dil
+	notb	%dil
 	testl	%esi, %esi
 	sete	%al
 	andb	%dil, %al
@@ -10,7 +10,7 @@ func0000000000000030:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000010:
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	$-3, %esi
 	setae	%al
 	andb	%dil, %al
@@ -19,7 +19,7 @@ func0000000000000010:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000004:
-	xorb	$1, %dil
+	notb	%dil
 	testl	%esi, %esi
 	setne	%al
 	andb	%dil, %al
@@ -28,7 +28,7 @@ func0000000000000004:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000020:
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	$1114111, %esi
 	setb	%al
 	andb	%dil, %al

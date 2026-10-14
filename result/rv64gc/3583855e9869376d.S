@@ -66,7 +66,7 @@ func0000000000000076:
 	fmv.d.x	fa4, a2
 	feq.d	a1, fa1, fa5
 	flt.d	a2, fa0, fa4
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret

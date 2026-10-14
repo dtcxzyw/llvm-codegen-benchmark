@@ -8,7 +8,7 @@ func0000000000000007:
 	ret
 
 func0000000000000001:
-	and	w8, w2, #0xff
+	and	w8, w2, #0x3f
 	tst	w1, #0x1
 	mov	w9, #208
 	mov	w10, #192

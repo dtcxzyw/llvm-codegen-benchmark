@@ -37,13 +37,12 @@ func0000000000000101:
 	ret
 
 func000000000000010a:
-	sext.w	a1, a1
 	lui	a3, 4096
+	sext.w	a1, a1
 	sltu	a2, a3, a2
-	slti	a1, a1, 9
 	and	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	slti	a1, a1, 9
+	andn	a0, a0, a1
 	ret
 
 func0000000000000026:

@@ -33,7 +33,7 @@ func00000000000000ac:
 	addi	a2, a2, -1
 	sltu	a0, a1, a0
 	snez	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

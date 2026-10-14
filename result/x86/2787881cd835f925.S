@@ -27,7 +27,6 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000181:
-	andb	$2, %sil
 	shrb	%sil
 	testl	%edi, %edi
 	setns	%al

@@ -10,7 +10,7 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
-	xorb	$1, %sil
+	notb	%sil
 	cmpl	$196112, %edx
 	setae	%al
 	andb	%dil, %sil
@@ -19,7 +19,7 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000018:
-	xorb	$1, %sil
+	notb	%sil
 	testl	%edx, %edx
 	sete	%al
 	andb	%dil, %sil

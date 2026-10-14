@@ -1,9 +1,8 @@
 func000000000000002c:
 	cmp	x1, #0
-	eor	w8, w2, #0x1
-	cset	w9, ne
+	cset	w8, ne
 	cmp	x0, #0
-	and	w8, w9, w8
+	bic	w8, w8, w2
 	csinc	w0, w8, wzr, eq
 	ret
 

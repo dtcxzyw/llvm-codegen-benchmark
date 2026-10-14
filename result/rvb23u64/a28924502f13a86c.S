@@ -22,14 +22,15 @@ func000000000000030c:
 	ret
 
 func0000000000000181:
-	bexti	a1, a1, 26
 	andi	a0, a0, 256
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 26
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	bexti	a1, a1, 8
-	srli	a0, a0, 7
+	srli	a1, a1, 8
+	bexti	a0, a0, 7
 	and	a0, a0, a1
 	ret
 

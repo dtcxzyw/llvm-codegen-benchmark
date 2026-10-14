@@ -39,9 +39,8 @@ func000000000000018c:
 
 func0000000000000181:
 	cmp	w1, #0
-	and	w8, w2, #0x2000
-	cset	w9, eq
-	tst	w9, w8, lsr #13
+	cset	w8, eq
+	tst	w8, w2, lsr #13
 	csel	w0, wzr, w0, ne
 	ret
 

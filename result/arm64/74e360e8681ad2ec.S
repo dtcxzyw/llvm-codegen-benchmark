@@ -24,24 +24,24 @@ func0000000000000021:
 	ret
 
 func0000000000000184:
-	and	w8, w2, #0x4
+	and	w8, w1, w2, lsr #2
 	cmp	w0, #2
-	and	w8, w1, w8, lsr #2
-	csel	w0, wzr, w8, hs
+	cset	w9, lo
+	and	w0, w9, w8
 	ret
 
 func0000000000000181:
-	and	w8, w2, #0x4
-	mov	w9, #67108864
-	and	w8, w1, w8, lsr #2
-	cmp	w0, w9
-	csel	w0, wzr, w8, ne
+	mov	w8, #67108864
+	and	w9, w1, w2, lsr #2
+	cmp	w0, w8
+	cset	w8, eq
+	and	w0, w8, w9
 	ret
 
 func0000000000000188:
-	and	w8, w2, #0x80000
+	and	w8, w1, w2, lsr #19
 	cmp	w0, #35
-	and	w8, w1, w8, lsr #19
-	csel	w0, wzr, w8, ls
+	cset	w9, hi
+	and	w0, w9, w8
 	ret
 

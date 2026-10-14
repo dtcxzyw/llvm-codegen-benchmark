@@ -9,12 +9,11 @@ func0000000000000118:
 
 func000000000000058b:
 	zext.h	a3, a2
-	sext.w	a1, a1
 	slli	a2, a2, 48
-	slt	a1, a1, a3
+	sext.w	a1, a1
 	snez	a2, a2
-	xori	a1, a1, 1
+	slt	a1, a1, a3
 	and	a0, a0, a2
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 

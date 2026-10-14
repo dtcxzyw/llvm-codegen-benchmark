@@ -20,7 +20,7 @@ func0000000000000104:
 	mv	a1, a2
 .LBB1_2:
 	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 3
 	and	a0, a0, a1
 	ret

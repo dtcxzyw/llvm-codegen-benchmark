@@ -8,10 +8,10 @@ func0000000000000694:
 func000000000000050c:
 	sext.w	a1, a1
 	negw	a2, a2
-	sltiu	a0, a0, 2
 	xor	a1, a1, a2
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func000000000000014c:

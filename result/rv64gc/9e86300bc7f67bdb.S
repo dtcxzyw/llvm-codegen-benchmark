@@ -75,7 +75,7 @@ func000000000000014a:
 
 func0000000000000141:
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -121,7 +121,7 @@ func0000000000000084:
 func0000000000000101:
 	sltiu	a1, a1, 21
 	addi	a0, a0, -5
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -148,14 +148,14 @@ func0000000000000024:
 
 func000000000000010c:
 	sltiu	a1, a1, 17
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000301:
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -197,7 +197,7 @@ func0000000000000314:
 	srli	a1, a1, 3
 	sltiu	a1, a1, 375
 	srli	a0, a0, 3
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 375
 	and	a0, a0, a1
 	ret
@@ -219,7 +219,7 @@ func0000000000000094:
 
 func0000000000000146:
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
@@ -264,7 +264,7 @@ func0000000000000144:
 	lui	a2, 8
 	slti	a1, a1, 8
 	addi	a2, a2, -767
-	xori	a1, a1, 1
+	not	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -291,14 +291,14 @@ func00000000000000c4:
 
 func0000000000000114:
 	sltiu	a1, a1, 10
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 31
 	and	a0, a0, a1
 	ret
 
 func0000000000000104:
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 10
 	and	a0, a0, a1
 	ret
@@ -340,7 +340,7 @@ func000000000000008a:
 
 func000000000000030a:
 	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

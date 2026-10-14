@@ -31,14 +31,15 @@ func0000000000000038:
 
 func0000000000000181:
 	andi	a0, a0, 230
-	bexti	a1, a1, 16
 	addi	a0, a0, -230
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 16
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000198:
-	bexti	a1, a1, 17
-	srli	a0, a0, 7
+	srli	a1, a1, 17
+	bexti	a0, a0, 7
 	and	a0, a0, a1
 	ret
 
@@ -50,12 +51,12 @@ func0000000000000281:
 	ret
 
 func0000000000000301:
-	zext.h	a1, a1
-	sltiu	a1, a1, 5
 	zext.h	a0, a0
-	xori	a1, a1, 1
+	zext.h	a1, a1
 	addi	a0, a0, -1
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 5
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000298:

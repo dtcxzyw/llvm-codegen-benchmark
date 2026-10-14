@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	xorb	$1, %sil
+	notb	%sil
 	cmpb	$7, %dil
 	sete	%al
 	andb	%sil, %al

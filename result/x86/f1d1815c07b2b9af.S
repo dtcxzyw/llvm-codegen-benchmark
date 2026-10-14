@@ -66,7 +66,6 @@ func000000000000004c:
 	.prefalign	4, .Lfunc_end6, nop
 func00000000000000c4:
 	shrl	$24, %edi
-	andl	$1, %edi
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	seta	%al

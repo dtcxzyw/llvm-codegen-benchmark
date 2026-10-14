@@ -9,7 +9,7 @@ func0000000000000012:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000014:
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	%edx, %esi
 	setle	%al
 	andb	%dil, %al
@@ -17,7 +17,7 @@ func0000000000000014:
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
-	xorb	$1, %dil
+	notb	%dil
 	cmpl	%edx, %esi
 	setge	%al
 	andb	%dil, %al

@@ -23,17 +23,16 @@ func000000000000030c:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 37
 	andi	a0, a0, 256
-	srli	a1, a1, 63
+	srli	a1, a1, 26
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	slli	a1, a1, 55
-	srli	a1, a1, 63
-	srli	a0, a0, 7
+	slli	a0, a0, 56
+	srli	a1, a1, 8
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 

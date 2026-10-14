@@ -29,11 +29,11 @@ func0000000000000024:
 	ret
 
 func0000000000000101:
-	zext.b	a0, a0
 	zext.b	a1, a1
-	sltiu	a0, a0, 11
+	zext.b	a0, a0
 	addi	a1, a1, -1
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 11
+	andn	a0, a1, a0
 	ret
 

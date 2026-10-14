@@ -116,7 +116,7 @@ func0000000000000504:
 	addiw	a1, a1, -17
 	sltiu	a0, a0, 4
 	sltiu	a1, a1, 2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -126,7 +126,7 @@ func0000000000000104:
 	addi	a2, a2, -1
 	sltiu	a0, a0, 3
 	sltu	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -198,7 +198,7 @@ func0000000000000304:
 	addiw	a1, a1, -10
 	sltiu	a0, a0, 2
 	sltiu	a1, a1, -19
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

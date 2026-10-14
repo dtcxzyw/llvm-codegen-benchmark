@@ -6,10 +6,10 @@ func0000000000000181:
 
 func0000000000000184:
 	sext.b	a1, a1
-	slti	a1, a1, -96
-	xori	a1, a1, 1
 	srli	a0, a0, 32
-	czero.nez	a0, a1, a0
+	slti	a1, a1, -96
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000101:

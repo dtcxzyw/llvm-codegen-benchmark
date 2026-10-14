@@ -31,15 +31,16 @@ func000000000000008c:
 
 func000000000000018c:
 	sext.w	a0, a0
-	bexti	a1, a1, 3
-	czero.eqz	a0, a1, a0
+	srli	a1, a1, 3
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000101:
 	sext.w	a0, a0
-	sltiu	a0, a0, 3
 	andi	a1, a1, 4
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 3
+	andn	a0, a1, a0
 	ret
 

@@ -15,7 +15,7 @@ func0000000000000021:
 func000000000000002a:
 	srliw	a0, a0, 31
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -42,7 +42,7 @@ func0000000000000038:
 	sext.w	a0, a0
 	sltiu	a0, a0, 129
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

@@ -58,12 +58,11 @@ func0000000000000304:
 	lui	a2, 1048571
 	zext.h	a1, a1
 	addi	a2, a2, 1536
-	zext.h	a0, a0
 	add	a1, a1, a2
+	zext.h	a0, a0
 	srli	a1, a1, 10
-	sltiu	a0, a0, 33
 	sltiu	a1, a1, 13
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 33
+	andn	a0, a1, a0
 	ret
 

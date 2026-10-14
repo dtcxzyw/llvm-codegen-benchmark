@@ -8,7 +8,7 @@ func0000000000000141:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000184:
-	xorb	$1, %dl
+	notb	%dl
 	testl	%esi, %esi
 	sete	%al
 	cmpl	$8, %esi

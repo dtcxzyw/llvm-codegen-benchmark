@@ -1,9 +1,9 @@
 func00000000000000ec:
 	sext.w	a0, a0
 	andi	a1, a1, 31
+	snez	a2, a1
 	slt	a0, a0, a1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	andn	a0, a2, a0
 	ret
 
 func000000000000030c:

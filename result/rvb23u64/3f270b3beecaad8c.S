@@ -48,7 +48,7 @@ func000000000000002c:
 
 func0000000000000194:
 	zext.w	a1, a1
-	bexti	a2, a2, 30
+	srli	a2, a2, 30
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

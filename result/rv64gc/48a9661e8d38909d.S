@@ -89,7 +89,7 @@ func0000000000000101:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 771
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

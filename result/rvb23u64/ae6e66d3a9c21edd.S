@@ -113,21 +113,19 @@ func0000000000000024:
 	ret
 
 func0000000000000028:
-	srli	a1, a1, 59
 	seqz	a2, a2
-	sltiu	a1, a1, 31
+	srli	a1, a1, 59
 	and	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 31
+	andn	a0, a0, a1
 	ret
 
 func0000000000000188:
-	srli	a1, a1, 59
 	snez	a2, a2
-	sltiu	a1, a1, 31
+	srli	a1, a1, 59
 	and	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 31
+	andn	a0, a0, a1
 	ret
 
 func0000000000000158:

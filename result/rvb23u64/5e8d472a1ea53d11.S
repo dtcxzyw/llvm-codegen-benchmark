@@ -40,11 +40,10 @@ func000000000000310c:
 	sext.w	a0, a0
 	sext.w	a2, a1
 	addiw	a1, a1, -19
-	sltiu	a2, a2, 13
 	snez	a0, a0
-	xori	a2, a2, 1
+	sltiu	a2, a2, 13
 	czero.eqz	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func000000000000198a:

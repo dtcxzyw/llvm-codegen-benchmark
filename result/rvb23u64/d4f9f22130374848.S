@@ -32,9 +32,9 @@ func00000000000000a5:
 
 func0000000000000121:
 	sltu	a2, a1, a2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	seqz	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func0000000000000129:
@@ -57,9 +57,8 @@ func0000000000000084:
 
 func00000000000000a4:
 	sltu	a2, a0, a2
-	xori	a2, a2, 1
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000109:
@@ -70,9 +69,8 @@ func0000000000000109:
 
 func00000000000000e6:
 	slt	a2, a0, a2
-	xori	a2, a2, 1
 	slt	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func00000000000000e7:
@@ -163,9 +161,8 @@ func0000000000000185:
 
 func0000000000000334:
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000089:

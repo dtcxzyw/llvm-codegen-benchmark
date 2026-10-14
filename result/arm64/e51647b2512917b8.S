@@ -8,9 +8,8 @@ func0000000000000041:
 	ret
 
 func000000000000030c:
-	and	w8, w2, #0x10000
+	orr	w8, w1, w2, lsr #16
 	cmp	w0, #0
-	orr	w8, w1, w8, lsr #16
 	cset	w9, ne
 	and	w0, w9, w8
 	ret

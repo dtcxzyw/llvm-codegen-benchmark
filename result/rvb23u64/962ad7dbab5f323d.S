@@ -8,8 +8,8 @@ func000000000000082c:
 func00000000000008ac:
 	add	a1, a1, a2
 	sltu	a1, a1, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000c8c:

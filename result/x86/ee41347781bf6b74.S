@@ -3,7 +3,7 @@
 func0000000000000021:
 	andl	$1, %edi
 	incl	%edi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	sete	%al
 	retq
 
@@ -13,7 +13,7 @@ func0000000000000001:
 	movl	$15, %eax
 	movl	$63, %ecx
 	cmovnel	%eax, %ecx
-	testl	%ecx, %esi
+	testl	%esi, %ecx
 	sete	%al
 	retq
 

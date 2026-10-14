@@ -40,7 +40,7 @@ func00000000000000cc:
 func0000000000000124:
 	sltu	a1, a1, a0
 	srli	a0, a0, 61
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

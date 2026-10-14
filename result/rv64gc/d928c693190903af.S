@@ -127,7 +127,7 @@ func0000000000006281:
 	sext.w	a0, a0
 	srliw	a1, a1, 31
 	snez	a2, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -227,13 +227,14 @@ func0000000000002108:
 	ret
 
 func0000000000005281:
-	sext.w	a1, a1
 	sext.w	a2, a2
+	sext.w	a1, a1
 	slti	a2, a2, 7
 	slti	a1, a1, 7
-	and	a1, a1, a2
+	not	a2, a2
+	not	a1, a1
 	addiw	a0, a0, -6
-	xori	a1, a1, 1
+	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

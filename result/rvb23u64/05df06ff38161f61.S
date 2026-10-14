@@ -30,10 +30,9 @@ func0000000000000026:
 
 func000000000000008a:
 	zext.h	a1, a1
-	srliw	a0, a0, 31
 	sltiu	a1, a1, 10
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	srliw	a0, a0, 31
+	andn	a0, a1, a0
 	ret
 
 func0000000000000081:

@@ -146,7 +146,7 @@ func00000000000008b8:
 	feq.s	a0, fa2, fa5
 	flt.s	a1, fa4, fa1
 	feq.s	a2, fa0, fa5
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

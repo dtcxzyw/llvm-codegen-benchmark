@@ -80,7 +80,7 @@ func0000000000000188:
 	sltiu	a2, a2, -1
 	sltiu	a1, a1, 5
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -126,7 +126,7 @@ func0000000000000088:
 	sltiu	a2, a2, -2
 	sltiu	a1, a1, -2
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -258,7 +258,7 @@ func0000000000000038:
 	seqz	a2, a2
 	sltiu	a1, a1, 2
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -324,7 +324,7 @@ func000000000000008a:
 	lui	a3, 244
 	srliw	a1, a1, 31
 	addi	a3, a3, 576
-	xori	a1, a1, 1
+	not	a1, a1
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -336,7 +336,7 @@ func0000000000000028:
 	seqz	a2, a2
 	sltiu	a1, a1, 6
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -366,7 +366,7 @@ func0000000000000198:
 	snez	a2, a2
 	sltiu	a1, a1, 6
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -376,7 +376,7 @@ func0000000000000298:
 	sltiu	a2, a2, 29
 	sltiu	a1, a1, 3
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

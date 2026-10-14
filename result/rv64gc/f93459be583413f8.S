@@ -9,7 +9,7 @@ func0000000000000141:
 	fcvt.w.s	a1, fa0, rtz
 	sext.w	a0, a0
 	srliw	a1, a1, 31
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -30,7 +30,7 @@ func0000000000000101:
 	andi	a1, a1, 7
 	sltiu	a0, a0, 10
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -44,8 +44,7 @@ func0000000000000081:
 
 func0000000000000184:
 	zext.b	a0, a0
-	slli	a1, a1, 27
-	srli	a1, a1, 63
+	srli	a1, a1, 36
 	sltiu	a0, a0, 5
 	and	a0, a0, a1
 	ret

@@ -51,7 +51,7 @@ func00000000000000c8:
 	sext.w	a0, a0
 	sltiu	a0, a0, 5
 	srli	a1, a1, 63
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

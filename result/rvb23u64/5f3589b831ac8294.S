@@ -20,21 +20,20 @@ func0000000000000021:
 
 func000000000000056c:
 	sext.w	a1, a1
+	zext.h	a0, a0
 	zext.h	a2, a2
 	slt	a1, a1, a2
-	zext.h	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000108:
 	zext.h	a1, a1
 	sext.w	a0, a0
 	zext.h	a2, a2
-	sltiu	a1, a1, 14
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 14
+	andn	a0, a0, a1
 	ret
 
 func0000000000000028:

@@ -139,22 +139,22 @@ func0000000000000101:
 func000000000000012c:
 	sltu	a1, a1, a2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000032c:
 	sltu	a1, a1, a2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000a1:
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000ea:
@@ -181,8 +181,8 @@ func0000000000000086:
 func00000000000000ac:
 	sltu	a1, a2, a1
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000ca:
@@ -229,8 +229,8 @@ func00000000000000c6:
 func0000000000000161:
 	slt	a1, a1, a2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000286:
@@ -242,8 +242,8 @@ func0000000000000286:
 func00000000000002ac:
 	sltu	a1, a2, a1
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000018a:
@@ -261,13 +261,12 @@ func0000000000000186:
 	ret
 
 func00000000000000a4:
-	sltu	a1, a2, a1
-	lui	a2, 256
+	lui	a3, 256
 	sext.w	a0, a0
-	addi	a2, a2, -1
-	xori	a1, a1, 1
-	sltu	a0, a0, a2
-	and	a0, a0, a1
+	addi	a3, a3, -1
+	sltu	a1, a2, a1
+	sltu	a0, a0, a3
+	andn	a0, a0, a1
 	ret
 
 func0000000000000028:
@@ -280,9 +279,9 @@ func0000000000000028:
 
 func000000000000016c:
 	slt	a1, a1, a2
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000d4:
@@ -301,8 +300,8 @@ func000000000000030a:
 func0000000000000121:
 	sltu	a1, a1, a2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000301:
@@ -314,15 +313,15 @@ func0000000000000301:
 func00000000000000e1:
 	slt	a1, a2, a1
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000ec:
 	slt	a1, a2, a1
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000104:

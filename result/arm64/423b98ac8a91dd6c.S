@@ -29,10 +29,9 @@ func0000000000000018:
 func0000000000000012:
 	fabs	s0, s0
 	fmov	s1, #1.00000000
-	eor	w9, w0, #0x1
 	fcmp	s0, s1
 	cset	w8, mi
-	and	w0, w8, w9
+	bic	w0, w8, w0
 	ret
 
 func0000000000000002:

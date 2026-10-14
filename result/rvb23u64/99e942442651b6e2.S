@@ -116,9 +116,9 @@ func0000000000000d86:
 
 func0000000000000cac:
 	addi	a2, a2, 1
-	sltu	a1, a1, a2
 	zext.b	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sltu	a1, a1, a2
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

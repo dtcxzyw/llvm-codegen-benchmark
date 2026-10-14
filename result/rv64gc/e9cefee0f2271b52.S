@@ -4,7 +4,7 @@ func000000000000014c:
 	addiw	a1, a1, -1
 	slti	a0, a0, 57
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -46,7 +46,7 @@ func0000000000000544:
 	addiw	a1, a1, -4
 	srli	a0, a0, 63
 	sltiu	a1, a1, 3
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -55,7 +55,7 @@ func000000000000054c:
 	addiw	a1, a1, -1
 	srli	a0, a0, 63
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

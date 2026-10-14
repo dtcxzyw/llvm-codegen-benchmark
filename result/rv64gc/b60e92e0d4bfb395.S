@@ -117,7 +117,7 @@ func0000000000000146:
 	or	a1, a1, a2
 	srliw	a0, a0, 31
 	srliw	a1, a1, 31
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -164,7 +164,7 @@ func0000000000000504:
 	srliw	a1, a1, 16
 	sltiu	a0, a0, 7
 	sltiu	a1, a1, 17
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

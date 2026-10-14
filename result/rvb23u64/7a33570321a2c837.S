@@ -6,9 +6,10 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	bexti	a2, a2, 26
+	srli	a2, a2, 26
 	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	snez	a0, a0
+	and	a0, a0, a2
 	ret
 
 func0000000000000189:

@@ -25,7 +25,7 @@ func0000000000000021:
 	ret
 
 func0000000000000184:
-	bexti	a2, a2, 2
+	srli	a2, a2, 2
 	sext.w	a0, a0
 	and	a1, a1, a2
 	sltiu	a0, a0, 2
@@ -33,11 +33,12 @@ func0000000000000184:
 	ret
 
 func0000000000000181:
-	bexti	a2, a2, 2
+	srli	a2, a2, 2
 	sext.w	a0, a0
-	and	a1, a1, a2
 	binvi	a0, a0, 26
-	czero.nez	a0, a1, a0
+	and	a1, a1, a2
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000188:

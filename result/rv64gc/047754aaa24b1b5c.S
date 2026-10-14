@@ -57,8 +57,7 @@ func000000000000008c:
 func0000000000000184:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	slli	a1, a1, 45
-	srli	a1, a1, 63
+	srli	a1, a1, 18
 	sltiu	a0, a0, 4
 	and	a0, a0, a1
 	ret
@@ -70,7 +69,7 @@ func0000000000000101:
 	and	a1, a1, a2
 	sltiu	a0, a0, 2
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

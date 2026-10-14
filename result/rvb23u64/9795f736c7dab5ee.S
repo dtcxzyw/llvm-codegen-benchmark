@@ -8,10 +8,10 @@ func0000000000001424:
 
 func00000000000012ac:
 	sext.w	a2, a2
-	sltu	a0, a2, a0
-	xori	a0, a0, 1
 	addiw	a1, a1, -1
-	czero.eqz	a0, a0, a1
+	sltu	a0, a2, a0
+	snez	a1, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000168c:

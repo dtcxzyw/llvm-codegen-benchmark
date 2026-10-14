@@ -40,8 +40,7 @@ func0000000000000058:
 
 func0000000000000208:
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 

@@ -2,9 +2,10 @@ func0000000000000181:
 	lui	a2, 8
 	zext.h	a0, a0
 	addi	a2, a2, -1
-	bexti	a1, a1, 62
 	xor	a0, a0, a2
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 62
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -16,15 +17,16 @@ func0000000000000021:
 
 func0000000000000184:
 	zext.h	a0, a0
-	bexti	a1, a1, 27
+	srli	a1, a1, 27
 	sltiu	a0, a0, 4
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	zext.h	a0, a0
-	bexti	a1, a1, 11
-	czero.eqz	a0, a1, a0
+	slli	a0, a0, 48
+	srli	a1, a1, 11
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000002c:

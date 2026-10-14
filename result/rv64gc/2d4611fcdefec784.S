@@ -4,7 +4,7 @@ func00000000000008a4:
 	zext.b	a2, a2
 	zext.b	a0, a0
 	sltu	a2, a1, a2
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

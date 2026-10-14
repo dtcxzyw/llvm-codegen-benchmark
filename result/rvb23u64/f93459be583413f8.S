@@ -7,9 +7,9 @@ func000000000000014a:
 
 func0000000000000141:
 	fcvt.w.s	a1, fa0, rtz
-	srliw	a1, a1, 31
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	srliw	a1, a1, 31
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 

@@ -87,9 +87,9 @@ func0000000000000318:
 	ret
 
 func0000000000000028:
+	seqz	a1, a1
 	sltiu	a0, a0, 64
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000014a:

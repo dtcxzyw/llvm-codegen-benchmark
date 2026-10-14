@@ -11,9 +11,9 @@ func000000000000002c:
 func000000000000018c:
 	movl	%edi, %eax
 	shrl	$12, %esi
+	andl	$32, %eax
 	shrl	$5, %eax
 	andl	%esi, %eax
-	andl	$1, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -28,7 +28,6 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000181:
 	shrl	$9, %esi
-	andl	$1, %esi
 	testw	%di, %di
 	sete	%al
 	andb	%sil, %al

@@ -25,7 +25,7 @@ func0000000000000021:
 
 func0000000000000101:
 	sltiu	a2, a2, 256
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, -16
 	and	a1, a1, a2
 	seqz	a0, a0

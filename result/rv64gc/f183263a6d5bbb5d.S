@@ -33,17 +33,16 @@ func0000000000000038:
 
 func0000000000000181:
 	andi	a0, a0, 230
-	slli	a1, a1, 47
 	addi	a0, a0, -230
-	srli	a1, a1, 63
+	srli	a1, a1, 16
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000198:
-	slli	a1, a1, 46
-	srli	a1, a1, 63
-	srli	a0, a0, 7
+	slli	a0, a0, 56
+	srli	a1, a1, 17
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -62,7 +61,7 @@ func0000000000000301:
 	and	a0, a0, a2
 	sltiu	a1, a1, 5
 	addi	a0, a0, -1
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

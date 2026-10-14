@@ -115,7 +115,7 @@ func0000000000000306:
 	addiw	a1, a1, 7
 	sltiu	a0, a0, 64
 	slti	a1, a1, 64
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

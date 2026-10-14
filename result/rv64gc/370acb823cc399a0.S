@@ -4,7 +4,7 @@ func0000000000000144:
 	lui	a1, 349525
 	srliw	a0, a0, 31
 	addi	a1, a1, 1366
-	xori	a0, a0, 1
+	not	a0, a0
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

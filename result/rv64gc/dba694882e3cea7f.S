@@ -12,7 +12,7 @@ func000000000000010c:
 	xor	a0, a0, a2
 	sltiu	a1, a1, 4
 	snez	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -40,7 +40,7 @@ func00000000000004ca:
 func000000000000012c:
 	slli	a2, a2, 2
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

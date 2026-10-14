@@ -2,7 +2,7 @@ func0000000000002081:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltiu	a2, a2, 8
-	xori	a2, a2, 1
+	not	a2, a2
 	sltiu	a1, a1, 9
 	and	a1, a1, a2
 	seqz	a0, a0

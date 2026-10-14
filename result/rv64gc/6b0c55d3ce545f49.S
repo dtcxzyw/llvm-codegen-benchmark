@@ -30,7 +30,7 @@ func000000000000054a:
 func000000000000010c:
 	sub	a1, a1, a0
 	sltiu	a1, a1, 10
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -38,7 +38,7 @@ func000000000000010c:
 func000000000000070a:
 	sub	a1, a1, a0
 	sltiu	a1, a1, 4
-	xori	a1, a1, 1
+	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -62,7 +62,7 @@ func000000000000014c:
 	xor	a1, a1, a0
 	srli	a0, a0, 63
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

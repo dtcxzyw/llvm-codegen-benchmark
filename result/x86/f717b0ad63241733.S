@@ -5,7 +5,7 @@ func0000000000000021:
 	sete	%cl
 	cmpl	$-1, %edx
 	sete	%al
-	xorb	$1, %sil
+	notb	%sil
 	orb	%sil, %al
 	andb	%cl, %al
 	retq

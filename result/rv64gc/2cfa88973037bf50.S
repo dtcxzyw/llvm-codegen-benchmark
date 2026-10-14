@@ -1,8 +1,7 @@
 func000000000000000f:
 	andi	a1, a1, 1
-	slli	a1, a1, 3
+	addi	a1, a1, -1
 	slli	a2, a2, 4
-	addi	a1, a1, -8
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

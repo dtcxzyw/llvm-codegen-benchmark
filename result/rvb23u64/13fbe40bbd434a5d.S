@@ -9,10 +9,9 @@ func00000000000004c6:
 func00000000000000e6:
 	addw	a1, a1, a2
 	sext.w	a0, a0
+	slti	a2, a1, 1
 	slt	a0, a1, a0
-	slti	a1, a1, 1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a2, a0
 	ret
 
 func000000000000054b:

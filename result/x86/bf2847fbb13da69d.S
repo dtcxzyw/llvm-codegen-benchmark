@@ -11,7 +11,6 @@ func000000000000002c:
 	cmpl	$8, %esi
 	setne	%al
 	shrl	$13, %edi
-	andl	$1, %edi
 	andb	%dil, %al
 	retq
 

@@ -23,10 +23,10 @@ func0000000000000121:
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	or	a1, a1, a2
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000048:
@@ -47,17 +47,17 @@ func0000000000000181:
 func0000000000000061:
 	fli.d	fa5, 1.0
 	fle.d	a1, fa5, fa0
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000a1:
 	fli.d	fa5, 1.0
 	fle.d	a1, fa0, fa5
-	xori	a1, a1, 1
 	addiw	a0, a0, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000041:
@@ -101,8 +101,8 @@ func000000000000004a:
 func0000000000000021:
 	feq.d	a1, fa0, fa0
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000088:
@@ -123,16 +123,16 @@ func0000000000000046:
 func000000000000002c:
 	feq.d	a1, fa0, fa0
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000e1:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000094:
@@ -160,17 +160,16 @@ func00000000000000ec:
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000aa:
 	fmv.d.x	fa5, zero
 	fle.d	a1, fa0, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func00000000000001cc:

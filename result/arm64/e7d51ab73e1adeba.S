@@ -6,10 +6,10 @@ func0000000000000581:
 	ret
 
 func0000000000000181:
-	ubfx	w8, w2, #16, #1
-	orr	x9, x0, x1
-	cmp	x9, #0
-	csel	w0, wzr, w8, ne
+	orr	x8, x0, x1
+	cmp	x8, #0
+	cset	w8, eq
+	and	w0, w8, w2, lsr #16
 	ret
 
 func000000000000058c:

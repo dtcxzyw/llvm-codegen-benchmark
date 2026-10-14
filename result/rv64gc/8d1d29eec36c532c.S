@@ -46,8 +46,7 @@ func0000000000000281:
 
 func0000000000000181:
 	sext.w	a0, a0
-	slli	a1, a1, 49
-	srli	a1, a1, 63
+	srli	a1, a1, 14
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -96,7 +95,7 @@ func0000000000000141:
 	xor	a1, a1, a2
 	slti	a0, a0, 2
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

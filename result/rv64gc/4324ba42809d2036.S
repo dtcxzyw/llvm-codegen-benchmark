@@ -29,7 +29,7 @@ func000000000000018c:
 func0000000000000101:
 	zext.b	a1, a1
 	sltiu	a1, a1, 253
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -44,7 +44,7 @@ func0000000000000081:
 func000000000000010c:
 	zext.b	a1, a1
 	sltiu	a1, a1, 253
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

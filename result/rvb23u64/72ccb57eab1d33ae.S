@@ -68,10 +68,10 @@ func000000000000002c:
 	ret
 
 func000000000000016c:
-	zext.w	a2, a0
-	slt	a1, a1, a2
-	xori	a1, a1, 1
-	addiw	a0, a0, 1
-	czero.eqz	a0, a1, a0
+	sext.w	a2, a0
+	zext.w	a0, a0
+	slt	a0, a1, a0
+	sltiu	a1, a2, -1
+	andn	a0, a1, a0
 	ret
 

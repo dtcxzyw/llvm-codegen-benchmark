@@ -6,7 +6,7 @@ func0000000000000066:
 	fld	fa4, %lo(.LCPI0_0)(a1)
 	fle.d	a1, fa4, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	slti	a0, a0, 101
 	and	a0, a0, a1
 	ret

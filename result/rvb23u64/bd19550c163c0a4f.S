@@ -15,9 +15,9 @@ func0000000000000021:
 
 func0000000000000028:
 	zext.b	a0, a0
+	snez	a1, a1
 	sltiu	a0, a0, 7
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000cc:

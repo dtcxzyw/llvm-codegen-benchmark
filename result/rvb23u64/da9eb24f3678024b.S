@@ -1,8 +1,8 @@
 func00000000000000ec:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000cc:
@@ -26,8 +26,8 @@ func000000000000008c:
 func00000000000000ac:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000c4:

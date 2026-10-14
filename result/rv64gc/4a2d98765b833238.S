@@ -2,7 +2,7 @@ func000000000000010c:
 	sub	a2, a2, a0
 	sltiu	a2, a2, 9
 	xor	a0, a0, a1
-	xori	a1, a2, 1
+	not	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -41,7 +41,7 @@ func0000000000000184:
 func0000000000000144:
 	sub	a2, a2, a0
 	slti	a2, a2, 8
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

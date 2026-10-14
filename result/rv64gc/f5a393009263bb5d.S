@@ -20,8 +20,7 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 60
-	srli	a1, a1, 63
+	srli	a1, a1, 3
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

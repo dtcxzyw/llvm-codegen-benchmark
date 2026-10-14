@@ -18,7 +18,7 @@ func0000000000003188:
 	snez	a1, a1
 	sltiu	a0, a0, 5
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -52,7 +52,7 @@ func000000000000042a:
 	or	a1, a1, a2
 	slti	a0, a0, 33
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

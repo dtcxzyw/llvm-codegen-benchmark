@@ -76,8 +76,7 @@ func0000000000000028:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000188:
-	andl	$4, %esi
-	shrl	$2, %esi
+	shrb	$2, %sil
 	cmpb	$32, %dil
 	setae	%al
 	andb	%sil, %al

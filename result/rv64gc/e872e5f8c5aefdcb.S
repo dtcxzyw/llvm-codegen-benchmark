@@ -42,7 +42,7 @@ func0000000000000888:
 func0000000000000928:
 	add	a2, a2, a0
 	sltu	a2, a1, a2
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret

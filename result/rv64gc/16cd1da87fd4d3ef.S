@@ -12,7 +12,7 @@ func0000000000000141:
 	sext.w	a2, a2
 	slti	a2, a2, 3
 	seqz	a1, a1
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -195,7 +195,7 @@ func0000000000000304:
 	sext.w	a2, a2
 	sltiu	a2, a2, 10
 	sltiu	a1, a1, 100
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

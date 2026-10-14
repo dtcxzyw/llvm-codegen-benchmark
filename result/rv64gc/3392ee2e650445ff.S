@@ -65,7 +65,7 @@ func0000000000000546:
 	sext.w	a0, a0
 	srliw	a2, a1, 31
 	slt	a0, a1, a0
-	xori	a1, a2, 1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

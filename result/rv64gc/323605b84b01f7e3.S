@@ -10,7 +10,7 @@ func0000000000000124:
 	add	a2, a2, a1
 	sltu	a1, a0, a1
 	sltu	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -25,7 +25,7 @@ func00000000000000a5:
 func0000000000000566:
 	add	a2, a2, a1
 	slt	a2, a0, a2
-	xori	a2, a2, 1
+	not	a2, a2
 	slt	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -41,7 +41,7 @@ func0000000000000105:
 func00000000000000a8:
 	add	a2, a2, a1
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret

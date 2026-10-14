@@ -54,7 +54,7 @@ func0000000000000584:
 	lui	a3, 8
 	addw	a0, a0, a2
 	addi	a2, a3, 565
-	bexti	a1, a1, 28
+	srli	a1, a1, 28
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

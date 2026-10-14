@@ -1,14 +1,13 @@
 .LCPI0_0:
 	.quad	0x4c63e9e4e4c2f344
 func0000000000000066:
-	fabs.d	fa5, fa0
 	lui	a1, %hi(.LCPI0_0)
+	fabs.d	fa5, fa0
 	fld	fa4, %lo(.LCPI0_0)(a1)
 	fle.d	a1, fa4, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
 	slti	a0, a0, 101
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func00000000000000c6:

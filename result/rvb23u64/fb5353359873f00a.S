@@ -1,9 +1,9 @@
 func0000000000004042:
 	sltiu	a1, a1, 256
-	xori	a1, a1, 1
 	addiw	a2, a0, -64
+	seqz	a2, a2
 	addiw	a0, a0, -32
-	czero.nez	a1, a1, a2
+	andn	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

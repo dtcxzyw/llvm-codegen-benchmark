@@ -20,7 +20,7 @@ func0000000000000028:
 	addi	a1, a0, -11
 	sltiu	a0, a0, 6
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

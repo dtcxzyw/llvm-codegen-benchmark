@@ -11,7 +11,7 @@ func0000000000000141:
 	sext.w	a3, a2
 	sext.w	a1, a1
 	srliw	a2, a2, 31
-	xori	a2, a2, 1
+	not	a2, a2
 	xor	a1, a1, a3
 	seqz	a1, a1
 	and	a0, a0, a2

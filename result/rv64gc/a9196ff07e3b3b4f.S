@@ -100,7 +100,7 @@ func0000000000000144:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slti	a2, a2, 2
-	xori	a2, a2, 1
+	not	a2, a2
 	sltiu	a1, a1, 2
 	and	a1, a1, a2
 	beqz	a1, .LBB9_2

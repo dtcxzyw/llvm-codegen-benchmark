@@ -12,7 +12,7 @@ func0000000000000104:
 	slli	a2, a2, 48
 	srli	a2, a2, 58
 	sltiu	a2, a2, 55
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -20,7 +20,7 @@ func0000000000000104:
 func000000000000012c:
 	sltu	a1, a1, a2
 	slli	a0, a0, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -52,7 +52,7 @@ func0000000000000304:
 	slli	a2, a2, 48
 	srli	a2, a2, 48
 	sltiu	a2, a2, 256
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

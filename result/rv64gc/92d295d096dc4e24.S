@@ -49,9 +49,8 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
-	slli	a2, a2, 62
+	srli	a2, a2, 1
 	xor	a0, a0, a1
-	srli	a2, a2, 63
 	snez	a0, a0
 	and	a0, a0, a2
 	ret

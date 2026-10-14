@@ -10,7 +10,7 @@ func0000000000000121:
 	addi	a2, a2, -1
 	sltu	a0, a2, a0
 	andi	a1, a1, 63
-	xori	a0, a0, 1
+	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

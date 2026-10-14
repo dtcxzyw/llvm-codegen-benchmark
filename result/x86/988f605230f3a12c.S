@@ -26,7 +26,6 @@ func0000000000000181:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000184:
 	shrl	$28, %esi
-	andl	$1, %esi
 	cmpl	$33333, %edi
 	setb	%al
 	andb	%sil, %al
@@ -35,7 +34,6 @@ func0000000000000184:
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000018a:
 	shrl	$8, %esi
-	andl	$1, %esi
 	cmpl	$3, %edi
 	setge	%al
 	andb	%sil, %al
@@ -44,7 +42,6 @@ func000000000000018a:
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000018c:
 	shrl	$21, %esi
-	andl	$1, %esi
 	testl	%edi, %edi
 	setne	%al
 	andb	%sil, %al

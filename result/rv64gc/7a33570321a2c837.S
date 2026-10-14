@@ -6,9 +6,8 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	slli	a2, a2, 37
+	srli	a2, a2, 26
 	xor	a0, a0, a1
-	srli	a2, a2, 63
 	snez	a0, a0
 	and	a0, a0, a2
 	ret

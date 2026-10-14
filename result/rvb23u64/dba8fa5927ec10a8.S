@@ -10,9 +10,9 @@ func0000000000000021:
 	ret
 
 func0000000000000028:
+	snez	a1, a1
 	sltiu	a0, a0, 256
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000002a:

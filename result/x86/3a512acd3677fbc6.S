@@ -42,10 +42,9 @@ func0000000000000021:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	shrl	$12, %edx
-	andl	$1, %edx
 	cmpl	$5, %esi
 	sete	%al
+	andb	%dil, %dl
 	andb	%dl, %al
-	andb	%dil, %al
 	retq
 

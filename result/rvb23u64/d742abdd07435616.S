@@ -57,10 +57,10 @@ func0000000000000081:
 
 func0000000000000141:
 	sext.w	a1, a1
-	slti	a1, a1, 3
-	xori	a1, a1, 1
 	addiw	a0, a0, -592
-	czero.nez	a0, a1, a0
+	slti	a1, a1, 3
+	seqz	a0, a0
+	andn	a0, a0, a1
 	xori	a0, a0, 3
 	ret
 

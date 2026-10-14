@@ -31,9 +31,8 @@ func0000000000000004:
 	mov	w8, #6721
 	cmp	w1, #0
 	mov	w9, #6657
-	mov	w10, #-7042
 	csel	w8, w9, w8, eq
-	and	w9, w0, w10
+	and	w9, w0, #0xfffffcff
 	orr	w8, w8, w9
 	orr	w0, w8, #0x80
 	ret

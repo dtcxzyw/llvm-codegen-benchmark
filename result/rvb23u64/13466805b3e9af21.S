@@ -24,11 +24,12 @@ func0000000000000004:
 
 func0000000000000002:
 	andi	a1, a1, 1
+	zext.w	a2, a2
 	lui	a3, 60162
 	slli	a1, a1, 44
 	bseti	a3, a3, 44
 	xor	a1, a1, a3
-	add.uw	a1, a2, a1
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

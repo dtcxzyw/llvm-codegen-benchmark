@@ -1,9 +1,9 @@
 func000000000000092c:
 	sub	a3, a1, a2
-	sltu	a0, a3, a0
-	xori	a0, a0, 1
 	xor	a1, a1, a2
-	czero.eqz	a0, a0, a1
+	sltu	a0, a3, a0
+	snez	a1, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000128:
@@ -29,12 +29,11 @@ func0000000000000088:
 	ret
 
 func00000000000000a4:
+	lui	a3, 384
 	sub	a1, a1, a2
-	lui	a2, 384
+	addi	a3, a3, -23
 	sltu	a0, a0, a1
-	addi	a2, a2, -23
-	xori	a0, a0, 1
-	sltu	a1, a1, a2
-	and	a0, a0, a1
+	sltu	a1, a1, a3
+	andn	a0, a1, a0
 	ret
 

@@ -34,12 +34,11 @@ func0000000000000181:
 func000000000000018b:
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
+	xor	a3, a3, a2
+	snez	a3, a3
+	and	a0, a0, a3
 	slt	a1, a1, a2
-	xor	a2, a2, a3
-	xori	a1, a1, 1
-	snez	a2, a2
-	and	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a1
 	ret
 
 .LCPI4_0:
@@ -47,12 +46,11 @@ func000000000000018b:
 func0000000000000187:
 	lui	a3, %hi(.LCPI4_0)
 	ld	a3, %lo(.LCPI4_0)(a3)
+	xor	a3, a3, a2
+	snez	a3, a3
+	and	a0, a0, a3
 	slt	a1, a2, a1
-	xor	a2, a2, a3
-	xori	a1, a1, 1
-	snez	a2, a2
-	and	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a1
 	ret
 
 .LCPI5_0:

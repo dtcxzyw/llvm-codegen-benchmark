@@ -1,15 +1,13 @@
 func0000000000000304:
-	and	w8, w2, #0x400
+	orr	w8, w1, w2, lsr #10
 	cmp	xzr, x0, lsr #32
-	orr	w8, w1, w8, lsr #10
 	cset	w9, eq
 	and	w0, w9, w8
 	ret
 
 func0000000000000301:
-	and	w8, w2, #0x4
+	orr	w8, w1, w2, lsr #2
 	cmp	x0, #0
-	orr	w8, w1, w8, lsr #2
 	cset	w9, eq
 	and	w0, w9, w8
 	ret

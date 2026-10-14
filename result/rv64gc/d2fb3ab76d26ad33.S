@@ -16,7 +16,7 @@ func000000000000018c:
 func0000000000000124:
 	sltu	a2, a0, a2
 	sltiu	a0, a0, 1025
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

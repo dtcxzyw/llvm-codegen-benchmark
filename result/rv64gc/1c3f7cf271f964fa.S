@@ -3,7 +3,7 @@ func0000000000000038:
 	addiw	a1, a1, 8
 	sltiu	a0, a0, 32
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -73,7 +73,7 @@ func0000000000000088:
 	addiw	a1, a1, -43
 	sltiu	a0, a0, 3
 	sltiu	a1, a1, -2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

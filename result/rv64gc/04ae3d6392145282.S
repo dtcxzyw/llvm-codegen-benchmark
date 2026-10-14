@@ -85,7 +85,7 @@ func0000000000000025:
 	fmv.w.x	fa4, zero
 	fle.s	a1, fa0, fa5
 	flt.s	a2, fa0, fa4
-	xori	a1, a1, 1
+	not	a1, a1
 	xori	a2, a2, 1
 	or	a0, a0, a1
 	and	a0, a0, a2

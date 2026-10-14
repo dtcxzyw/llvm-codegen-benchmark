@@ -113,10 +113,9 @@ func0000000000000028:
 
 func0000000000000015:
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa0, fa5
-	feq.d	a1, fa1, fa1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	feq.d	a0, fa1, fa1
+	fle.d	a1, fa0, fa5
+	andn	a0, a0, a1
 	ret
 
 func0000000000000014:
@@ -136,10 +135,9 @@ func0000000000000012:
 	ret
 
 func0000000000000011:
-	feq.d	a0, fa0, fa0
-	feq.d	a1, fa1, fa1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	feq.d	a0, fa1, fa1
+	feq.d	a1, fa0, fa0
+	andn	a0, a0, a1
 	ret
 
 func000000000000002a:

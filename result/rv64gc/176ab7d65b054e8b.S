@@ -260,7 +260,7 @@ func000000000000010c:
 	sext.w	a1, a1
 	sltiu	a1, a1, 60
 	addiw	a0, a0, -6
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func0000000000000004:
 	srli	a0, a0, 63
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

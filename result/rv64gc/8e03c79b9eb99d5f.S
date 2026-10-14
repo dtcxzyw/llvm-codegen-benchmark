@@ -14,7 +14,7 @@ func0000000000006084:
 	sltiu	a2, a2, 10
 	sltiu	a1, a1, 100
 	sltiu	a0, a0, 10
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

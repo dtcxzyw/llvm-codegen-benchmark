@@ -20,8 +20,8 @@ func0000000000000000:
 	ret
 
 func000000000000000e:
-	and	w8, w0, #0xffff
-	neg	w9, w1
-	lsr	w0, w8, w9
+	neg	w8, w1
+	and	w9, w0, #0xffff
+	lsr	w0, w9, w8
 	ret
 

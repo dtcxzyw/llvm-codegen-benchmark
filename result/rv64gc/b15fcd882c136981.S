@@ -107,7 +107,7 @@ func0000000000000101:
 	and	a1, a1, a2
 	sltiu	a1, a1, 9
 	addi	a0, a0, -3
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -181,7 +181,7 @@ func000000000000010c:
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 8
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -192,7 +192,7 @@ func0000000000000301:
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 11
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -202,7 +202,7 @@ func000000000000014c:
 	srai	a1, a1, 48
 	slti	a1, a1, 10
 	slli	a0, a0, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -224,7 +224,7 @@ func0000000000000104:
 	and	a1, a1, a2
 	and	a0, a0, a2
 	sltiu	a1, a1, 32
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 32
 	and	a0, a0, a1
 	ret
@@ -255,7 +255,7 @@ func0000000000000304:
 	slli	a0, a0, 48
 	sltiu	a1, a1, 33
 	srli	a0, a0, 58
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 13
 	and	a0, a0, a1
 	ret

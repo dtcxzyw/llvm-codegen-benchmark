@@ -14,9 +14,9 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	ubfx	w8, w1, #14, #1
-	and	w9, w1, #0xfff
-	cmp	w9, w0
-	csel	w0, wzr, w8, ne
+	and	w8, w1, #0xfff
+	cmp	w8, w0
+	cset	w8, eq
+	and	w0, w8, w1, lsr #14
 	ret
 

@@ -26,11 +26,10 @@ func0000000000000021:
 
 func0000000000000141:
 	sext.w	a0, a0
-	lui	a2, 4
+	not	a1, a1
+	bexti	a1, a1, 14
 	slti	a0, a0, 4
-	and	a1, a1, a2
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000018c:
@@ -48,9 +47,9 @@ func000000000000014c:
 
 func0000000000000101:
 	sext.w	a0, a0
-	sltiu	a0, a0, 2
 	andi	a1, a1, 1024
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 

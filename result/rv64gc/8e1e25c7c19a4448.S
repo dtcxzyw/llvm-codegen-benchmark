@@ -80,7 +80,7 @@ func00000000000004c6:
 	sext.w	a2, a2
 	sext.w	a0, a0
 	slt	a1, a2, a1
-	xori	a1, a1, 1
+	not	a1, a1
 	slti	a0, a0, 2
 	and	a0, a0, a1
 	ret
@@ -106,7 +106,7 @@ func0000000000000541:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a1, a1, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -115,7 +115,7 @@ func000000000000014c:
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	slti	a1, a1, 4
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -144,7 +144,7 @@ func000000000000010c:
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	sltiu	a1, a1, 9
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

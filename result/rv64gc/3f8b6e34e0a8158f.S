@@ -37,7 +37,7 @@ func0000000000000024:
 func0000000000000078:
 	feq.s	a0, fa2, fa1
 	feq.s	a1, fa0, fa1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

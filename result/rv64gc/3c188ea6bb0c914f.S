@@ -14,7 +14,7 @@ func0000000000000181:
 
 func0000000000000184:
 	sext.w	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a2, a0
 	sltiu	a0, a0, 8
 	and	a1, a1, a2

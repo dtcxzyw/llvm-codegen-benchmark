@@ -25,13 +25,12 @@ func000000000000018c:
 	ret
 
 func00000000000000a4:
+	lui	a2, 16
 	zext.h	a1, a1
 	zext.h	a0, a0
-	lui	a2, 16
-	sltu	a1, a0, a1
 	addi	a2, a2, -1023
-	xori	a1, a1, 1
+	sltu	a1, a0, a1
 	sltu	a0, a0, a2
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 

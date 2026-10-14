@@ -5,9 +5,8 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 59
 	andi	a0, a0, 1
-	srli	a1, a1, 63
+	srli	a1, a1, 4
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -60,9 +60,9 @@ func0000000000000194:
 
 func0000000000000184:
 	mov	w8, #65534
-	ubfx	w9, w1, #9, #1
 	cmp	w8, w0, uxth
-	csel	w0, wzr, w9, ls
+	cset	w8, hi
+	and	w0, w8, w1, lsr #9
 	ret
 
 func0000000000000034:

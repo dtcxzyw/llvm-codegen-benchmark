@@ -73,7 +73,7 @@ func000000000000030c:
 	addiw	a2, a2, -4
 	and	a1, a1, a2
 	sltiu	a1, a1, 100
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

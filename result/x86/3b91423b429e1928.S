@@ -18,9 +18,9 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
 	andl	$2147418112, %esi
-	leal	2147450880(%rsi), %eax
-	andl	$2147450880, %eax
-	andl	$32767, %edi
-	orl	%edi, %eax
+	leal	2147450880(%rsi), %ecx
+	andl	$2147450880, %ecx
+	movzwl	%di, %eax
+	orl	%ecx, %eax
 	retq
 

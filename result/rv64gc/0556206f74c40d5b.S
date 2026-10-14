@@ -3,7 +3,7 @@ func0000000000000047:
 	flt.s	a1, fa5, fa1
 	feq.s	a2, fa0, fa5
 	and	a0, a0, a1
-	xori	a1, a2, 1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

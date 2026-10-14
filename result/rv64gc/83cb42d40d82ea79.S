@@ -3,7 +3,7 @@ func000000000000010a:
 	sext.w	a0, a0
 	sltiu	a2, a2, 23
 	sgtz	a0, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -130,7 +130,7 @@ func0000000000000024:
 func000000000000014c:
 	srliw	a2, a2, 31
 	sext.w	a0, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -187,7 +187,7 @@ func000000000000002a:
 	seqz	a2, a2
 	slti	a1, a1, 4
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

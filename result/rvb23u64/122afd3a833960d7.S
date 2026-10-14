@@ -54,9 +54,8 @@ func0000000000000318:
 func00000000000000a8:
 	zext.w	a2, a2
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
 	sltu	a0, a1, a0
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000294:

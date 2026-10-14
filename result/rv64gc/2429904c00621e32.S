@@ -74,7 +74,7 @@ func00000000000000c6:
 
 func0000000000000146:
 	srliw	a2, a2, 31
-	xori	a2, a2, 1
+	not	a2, a2
 	or	a1, a1, a2
 	srliw	a0, a0, 31
 	and	a0, a0, a1

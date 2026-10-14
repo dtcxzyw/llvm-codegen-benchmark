@@ -35,7 +35,7 @@ func0000000000000306:
 	sext.w	a2, a0
 	sext.w	a1, a1
 	sltiu	a2, a2, 5
-	xori	a2, a2, 1
+	not	a2, a2
 	slti	a1, a1, 513
 	and	a1, a1, a2
 	beqz	a1, .LBB3_2

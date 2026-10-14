@@ -73,9 +73,8 @@ func0000000000000289:
 
 func0000000000000104:
 	sltiu	a2, a2, 17
-	xori	a2, a2, 1
 	sltu	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000081:
@@ -106,9 +105,8 @@ func0000000000000085:
 
 func0000000000000108:
 	sltiu	a2, a2, 5
-	xori	a2, a2, 1
 	sltu	a0, a1, a0
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000186:
@@ -173,9 +171,8 @@ func0000000000000146:
 
 func0000000000000306:
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
 	slt	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000304:
@@ -199,9 +196,9 @@ func0000000000000026:
 
 func000000000000010c:
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	snez	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func0000000000000194:
@@ -225,9 +222,9 @@ func0000000000000187:
 
 func0000000000000101:
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	seqz	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func00000000000000c9:

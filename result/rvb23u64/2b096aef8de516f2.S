@@ -1,9 +1,9 @@
 func0000000000000141:
 	slli	a0, a0, 56
-	srli	a0, a0, 63
 	andi	a1, a1, 512
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	srli	a0, a0, 63
+	andn	a0, a1, a0
 	ret
 
 func000000000000002c:
@@ -69,13 +69,13 @@ func00000000000000c1:
 
 func0000000000000101:
 	lui	a2, 8128
-	zext.b	a0, a0
 	and	a1, a1, a2
 	lui	a2, 2432
-	sltiu	a0, a0, 2
+	zext.b	a0, a0
 	xor	a1, a1, a2
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func0000000000000094:

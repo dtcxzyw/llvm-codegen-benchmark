@@ -53,10 +53,9 @@ func0000000000000854:
 	addiw	a1, a1, -225
 	seqz	a2, a2
 	seqz	a1, a1
-	slti	a0, a0, 7
 	or	a1, a1, a2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	slti	a0, a0, 7
+	andn	a0, a1, a0
 	ret
 
 func0000000000000848:

@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000104:
-	xorb	$1, %sil
+	notb	%sil
 	cmpl	$196112, %edx
 	setae	%cl
 	andb	%sil, %cl
@@ -34,7 +34,7 @@ func000000000000030c:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000301:
-	xorb	$1, %sil
+	notb	%sil
 	testl	%edx, %edx
 	sete	%cl
 	andb	%sil, %cl

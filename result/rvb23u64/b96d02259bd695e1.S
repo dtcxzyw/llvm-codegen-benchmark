@@ -24,10 +24,10 @@ func0000000000000181:
 
 func0000000000000144:
 	add	a1, a1, a2
-	srliw	a0, a0, 31
 	srli	a1, a1, 32
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	srliw	a0, a0, 31
+	andn	a0, a1, a0
 	ret
 
 func000000000000058c:
@@ -48,10 +48,10 @@ func0000000000000021:
 
 func0000000000000101:
 	add	a1, a1, a2
-	sltiu	a1, a1, 8
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 8
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000581:
@@ -131,13 +131,12 @@ func0000000000000084:
 
 func0000000000000544:
 	add	a1, a1, a2
-	sext.w	a0, a0
 	lui	a2, 244141
-	srli	a1, a1, 63
+	sext.w	a0, a0
 	addi	a2, a2, -1536
-	xori	a1, a1, 1
+	srli	a1, a1, 63
 	sltu	a0, a0, a2
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func000000000000010c:

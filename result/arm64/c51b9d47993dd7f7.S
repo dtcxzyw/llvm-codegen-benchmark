@@ -8,8 +8,8 @@ func0000000000000021:
 
 func0000000000000981:
 	and	w8, w0, #0xff
-	ubfx	x9, x1, #20, #1
 	cmp	w8, #3
-	csel	w0, wzr, w9, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #20
 	ret
 

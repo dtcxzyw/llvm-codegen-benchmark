@@ -1,8 +1,8 @@
 func000000000000014c:
-	srliw	a2, a2, 31
 	zext.b	a1, a1
-	xori	a2, a2, 1
-	czero.eqz	a1, a2, a1
+	srliw	a2, a2, 31
+	snez	a1, a1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -83,11 +83,11 @@ func000000000000018a:
 	ret
 
 func0000000000000141:
+	zext.b	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 6
-	zext.b	a1, a1
-	xori	a2, a2, 1
-	czero.nez	a1, a2, a1
+	seqz	a1, a1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

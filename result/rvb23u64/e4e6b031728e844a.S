@@ -12,7 +12,7 @@ func000000000000030c:
 	sext.w	a0, a0
 	addi	a3, a3, -2032
 	xor	a0, a0, a3
-	bexti	a2, a2, 11
+	srli	a2, a2, 11
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -31,7 +31,7 @@ func000000000000004c:
 	ret
 
 func0000000000000301:
-	bexti	a2, a2, 1
+	srli	a2, a2, 1
 	sext.w	a0, a0
 	or	a1, a1, a2
 	seqz	a0, a0

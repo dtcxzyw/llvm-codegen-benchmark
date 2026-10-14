@@ -2,9 +2,8 @@ func0000000000000d24:
 	addw	a1, a1, a2
 	sext.w	a0, a0
 	sltu	a1, a0, a1
-	xori	a1, a1, 1
 	sltiu	a0, a0, 65
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func000000000000002a:

@@ -92,7 +92,7 @@ func0000000000000298:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slti	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -109,7 +109,7 @@ func000000000000028c:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slti	a1, a1, 513
-	xori	a1, a1, 1
+	not	a1, a1
 	slti	a0, a0, 5
 	and	a0, a0, a1
 	ret

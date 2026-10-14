@@ -42,13 +42,12 @@ func0000000000000cea:
 	ret
 
 func0000000000000566:
+	sext.w	a2, a0
 	sext.w	a1, a1
-	negw	a2, a0
-	sext.w	a0, a0
-	slt	a1, a1, a2
-	xori	a1, a1, 1
-	slti	a0, a0, 1
-	and	a0, a0, a1
+	negw	a0, a0
+	slt	a0, a1, a0
+	slti	a1, a2, 1
+	andn	a0, a1, a0
 	ret
 
 func00000000000004c6:

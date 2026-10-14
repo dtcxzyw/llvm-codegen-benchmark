@@ -6,10 +6,10 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	and	w8, w2, w1
 	cmp	w0, #2
-	ubfx	w8, w8, #9, #1
-	csel	w0, wzr, w8, ne
+	and	w8, w2, w1
+	cset	w9, eq
+	and	w0, w9, w8, lsr #9
 	ret
 
 func000000000000002c:

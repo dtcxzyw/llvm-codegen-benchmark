@@ -7,9 +7,9 @@ func0000000000000184:
 
 func000000000000018c:
 	and	w8, w0, #0xff
-	ubfx	w9, w1, #11, #1
 	cmp	w8, #48
-	csel	w0, wzr, w9, eq
+	cset	w8, ne
+	and	w0, w8, w1, lsr #11
 	ret
 
 func0000000000000021:
@@ -35,9 +35,9 @@ func000000000000002c:
 	ret
 
 func0000000000000181:
-	ubfx	w8, w1, #12, #1
 	tst	w0, #0xff
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #12
 	ret
 
 func000000000000002a:
@@ -59,8 +59,8 @@ func0000000000000024:
 
 func000000000000018a:
 	sxtb	w8, w0
-	ubfx	w9, w1, #11, #1
 	cmp	w8, #52
-	csel	w0, wzr, w9, le
+	cset	w8, gt
+	and	w0, w8, w1, lsr #11
 	ret
 

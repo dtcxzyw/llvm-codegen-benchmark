@@ -60,7 +60,7 @@ func0000000000000101:
 	andi	a1, a1, 3
 	sltiu	a0, a0, 4
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -101,7 +101,7 @@ func0000000000000141:
 	andi	a1, a1, 3
 	slti	a0, a0, 4
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -156,17 +156,15 @@ func0000000000000186:
 
 func0000000000000188:
 	sext.w	a0, a0
-	slli	a1, a1, 31
 	sltiu	a0, a0, 2
-	srli	a1, a1, 63
-	not	a0, a0
+	srli	a1, a1, 32
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
 func0000000000000194:
 	sext.w	a0, a0
-	slli	a1, a1, 17
-	srli	a1, a1, 63
+	srli	a1, a1, 46
 	sltiu	a0, a0, 7
 	and	a0, a0, a1
 	ret
@@ -200,7 +198,7 @@ func0000000000000301:
 	andi	a1, a1, 1
 	sltiu	a0, a0, 1561
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

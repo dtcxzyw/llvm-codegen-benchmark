@@ -14,9 +14,10 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	bexti	a1, a1, 3
 	addiw	a0, a0, -1
-	czero.eqz	a0, a1, a0
+	srli	a1, a1, 3
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000181:

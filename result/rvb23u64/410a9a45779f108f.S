@@ -1,13 +1,12 @@
 func0000000000000104:
-	xori	a1, a1, 1
-	sext.w	a2, a2
 	lui	a3, 48
-	srliw	a0, a0, 16
+	sext.w	a2, a2
 	addi	a3, a3, -497
-	sltiu	a0, a0, 17
 	sltu	a2, a3, a2
+	srliw	a0, a0, 16
+	andn	a1, a2, a1
+	sltiu	a0, a0, 17
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func0000000000000041:
@@ -28,10 +27,9 @@ func000000000000030c:
 
 func0000000000000301:
 	sext.w	a2, a2
-	xori	a1, a1, 1
 	seqz	a2, a2
 	sext.w	a0, a0
-	and	a1, a1, a2
+	andn	a1, a2, a1
 	czero.nez	a0, a1, a0
 	ret
 

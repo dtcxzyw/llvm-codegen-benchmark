@@ -31,7 +31,7 @@ func0000000000000101:
 	and	a1, a1, a2
 	sltiu	a0, a0, 771
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

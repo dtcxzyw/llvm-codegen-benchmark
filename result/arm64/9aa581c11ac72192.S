@@ -63,9 +63,9 @@ func0000000000000c2c:
 
 func000000000000098c:
 	mov	x8, #10995116277760
-	ubfx	x9, x1, #6, #1
 	cmp	x0, x8
-	csel	w0, wzr, w9, eq
+	cset	w8, ne
+	and	w0, w8, w1, lsr #6
 	ret
 
 func0000000000000024:

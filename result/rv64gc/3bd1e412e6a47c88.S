@@ -2,7 +2,7 @@ func0000000000000924:
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	sltu	a0, a1, a0
-	xori	a0, a0, 1
+	not	a0, a0
 	sltiu	a1, a1, 65
 	and	a0, a0, a1
 	ret
@@ -74,7 +74,7 @@ func000000000000016a:
 	sext.w	a0, a0
 	slt	a0, a1, a0
 	sgtz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

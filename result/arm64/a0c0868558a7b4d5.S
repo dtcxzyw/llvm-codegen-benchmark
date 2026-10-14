@@ -12,7 +12,7 @@ func0000000000000004:
 	cmp	w9, #11
 	mov	w9, #192
 	csel	w8, w9, w8, eq
-	and	w9, w0, #0xff
+	and	w9, w0, #0x3f
 	orr	w0, w8, w9
 	ret
 

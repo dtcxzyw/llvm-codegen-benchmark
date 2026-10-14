@@ -92,10 +92,10 @@ func000000000000054c:
 func0000000000000701:
 	or	a1, a1, a2
 	sext.w	a1, a1
-	sltiu	a1, a1, 7
-	xori	a1, a1, 1
 	addiw	a0, a0, -224
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 7
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000681:
@@ -111,10 +111,10 @@ func0000000000000681:
 
 func0000000000000141:
 	or	a1, a1, a2
-	srliw	a1, a1, 31
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	srliw	a1, a1, 31
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000024:

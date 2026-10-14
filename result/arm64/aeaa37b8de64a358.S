@@ -1,8 +1,8 @@
 func000000000000018c:
 	mov	w8, #255
-	ubfx	w9, w0, #5, #1
 	bics	wzr, w8, w0
-	csel	w0, wzr, w9, eq
+	cset	w8, ne
+	and	w0, w8, w0, lsr #5
 	ret
 
 func0000000000000024:

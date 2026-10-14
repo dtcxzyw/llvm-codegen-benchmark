@@ -44,7 +44,7 @@ func000000000000018a:
 	sext.w	a2, a2
 	sext.w	a0, a0
 	snez	a2, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	or	a1, a1, a2
 	sgtz	a0, a0
 	and	a0, a0, a1
@@ -54,7 +54,7 @@ func000000000000018c:
 	sext.w	a2, a2
 	sext.w	a0, a0
 	snez	a2, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

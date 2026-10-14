@@ -111,7 +111,7 @@ func0000000000000021:
 	sext.w	a0, a0
 	sltiu	a1, a1, 31
 	snez	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

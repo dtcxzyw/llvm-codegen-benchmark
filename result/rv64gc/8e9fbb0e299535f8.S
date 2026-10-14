@@ -29,7 +29,7 @@ func000000000000050a:
 	not	a1, a1
 	slti	a0, a0, 7
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

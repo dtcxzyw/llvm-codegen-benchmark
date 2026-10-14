@@ -14,18 +14,17 @@ func000000000000014c:
 func000000000000010c:
 	sub	a1, a1, a2
 	sltiu	a1, a1, 17
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000714:
 	sub	a1, a1, a2
 	srli	a1, a1, 3
-	sltiu	a1, a1, 375
 	srli	a0, a0, 3
-	xori	a1, a1, 1
+	sltiu	a1, a1, 375
 	sltiu	a0, a0, 375
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000081:
@@ -91,9 +90,8 @@ func0000000000000181:
 func0000000000000104:
 	sub	a1, a1, a2
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
 	sltiu	a0, a0, 10
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func00000000000000c1:
@@ -113,9 +111,8 @@ func000000000000018a:
 func000000000000070a:
 	sub	a1, a1, a2
 	sltiu	a1, a1, 4
-	xori	a1, a1, 1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func000000000000058a:
@@ -167,10 +164,9 @@ func00000000000000ca:
 
 func0000000000000146:
 	sub	a1, a1, a2
-	slti	a0, a0, 25
 	slti	a1, a1, 1025
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	slti	a0, a0, 25
+	andn	a0, a1, a0
 	ret
 
 func000000000000018c:

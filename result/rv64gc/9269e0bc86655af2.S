@@ -72,7 +72,7 @@ func0000000000000072:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa1, fa5
 	flt.d	a1, fa0, fa5
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -183,7 +183,7 @@ func0000000000000078:
 	fld	fa5, %lo(.LCPI19_0)(a0)
 	feq.d	a0, fa1, fa5
 	feq.d	a1, fa0, fa5
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -299,7 +299,7 @@ func0000000000000098:
 	flt.d	a1, fa5, fa1
 	feq.d	a2, fa0, fa4
 	or	a0, a0, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a2
 	ret
 
@@ -407,7 +407,7 @@ func00000000000000dd:
 func000000000000001e:
 	feq.d	a0, fa1, fa1
 	feq.d	a1, fa0, fa0
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -441,7 +441,7 @@ func00000000000000b4:
 	fld	fa4, 8(a0)
 	flt.d	a0, fa5, fa1
 	flt.d	a1, fa4, fa0
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

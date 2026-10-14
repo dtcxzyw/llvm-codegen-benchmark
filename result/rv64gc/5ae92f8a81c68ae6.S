@@ -22,7 +22,7 @@ func000000000000012c:
 	srli	a2, a2, 32
 	sext.w	a0, a0
 	sltu	a1, a1, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, -1
 	and	a0, a0, a1
 	ret

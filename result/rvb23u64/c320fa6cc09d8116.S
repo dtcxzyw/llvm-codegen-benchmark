@@ -18,10 +18,9 @@ func000000000000002c:
 
 func0000000000000188:
 	snez	a2, a2
-	sltiu	a1, a1, 3
 	and	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 3
+	andn	a0, a0, a1
 	ret
 
 func000000000000018a:

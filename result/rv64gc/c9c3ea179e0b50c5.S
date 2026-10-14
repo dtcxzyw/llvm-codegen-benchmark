@@ -8,8 +8,7 @@ func0000000000000042:
 
 func0000000000000308:
 	zext.b	a0, a0
-	slli	a1, a1, 58
-	srli	a1, a1, 63
+	srli	a1, a1, 5
 	sltiu	a0, a0, 64
 	and	a0, a0, a1
 	ret

@@ -1,12 +1,11 @@
 func0000000000000144:
-	sext.w	a2, a0
-	or	a0, a0, a1
-	lui	a1, 349525
-	srliw	a0, a0, 31
-	addi	a1, a1, 1366
-	xori	a0, a0, 1
-	sltu	a1, a2, a1
-	and	a0, a0, a1
+	lui	a2, 349525
+	or	a1, a1, a0
+	sext.w	a0, a0
+	addi	a2, a2, 1366
+	srliw	a1, a1, 31
+	sltu	a0, a0, a2
+	andn	a0, a0, a1
 	ret
 
 func000000000000008c:

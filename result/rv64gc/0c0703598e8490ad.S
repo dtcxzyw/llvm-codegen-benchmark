@@ -8,7 +8,7 @@ func000000000000016c:
 	srli	a3, a3, 3
 	slt	a1, a2, a1
 	xor	a0, a0, a3
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -18,12 +18,12 @@ func00000000000000cc:
 
 func0000000000000141:
 	zext.h	a1, a1
-	sext.w	a2, a2
 	zext.h	a0, a0
-	slti	a2, a2, 9
-	xori	a2, a2, 1
+	sext.w	a2, a2
 	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	slti	a1, a2, 9
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000c1:

@@ -13,7 +13,7 @@ func000000000000628c:
 	sext.w	a1, a1
 	srliw	a2, a0, 31
 	snez	a1, a1
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, 4
 	or	a1, a1, a2
 	snez	a0, a0
@@ -35,7 +35,7 @@ func000000000000620c:
 	addiw	a2, a0, -5
 	snez	a2, a2
 	sltiu	a1, a1, 128
-	xori	a1, a1, 1
+	not	a1, a1
 	addiw	a0, a0, -4
 	or	a1, a1, a2
 	snez	a0, a0

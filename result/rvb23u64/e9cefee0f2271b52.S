@@ -1,9 +1,9 @@
 func000000000000014c:
 	sext.b	a0, a0
-	slti	a0, a0, 57
 	addiw	a1, a1, -1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	slti	a0, a0, 57
+	andn	a0, a1, a0
 	ret
 
 func0000000000000584:
@@ -38,18 +38,17 @@ func000000000000058c:
 func0000000000000544:
 	slli	a0, a0, 56
 	addiw	a1, a1, -4
-	srli	a0, a0, 63
 	sltiu	a1, a1, 3
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	srli	a0, a0, 63
+	andn	a0, a1, a0
 	ret
 
 func000000000000054c:
 	slli	a0, a0, 56
-	srli	a0, a0, 63
 	addiw	a1, a1, -1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	srli	a0, a0, 63
+	andn	a0, a1, a0
 	ret
 
 func0000000000000024:

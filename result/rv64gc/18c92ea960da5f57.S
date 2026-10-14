@@ -6,7 +6,7 @@ func0000000000000008:
 	addi	a3, a3, -497
 	or	a0, a0, a1
 	sltu	a1, a3, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

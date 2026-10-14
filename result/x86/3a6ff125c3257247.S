@@ -11,7 +11,6 @@ func000000000000018c:
 func0000000000000181:
 	andl	%edx, %esi
 	shrl	$9, %esi
-	andl	$1, %esi
 	cmpl	$2, %edi
 	sete	%al
 	andb	%sil, %al

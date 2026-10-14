@@ -12,10 +12,9 @@ func0000000000000181:
 
 func0000000000000184:
 	cmp	w0, #0
-	eor	w8, w1, #0x1
-	cset	w9, eq
+	cset	w8, eq
 	cmp	w0, #8
-	and	w8, w9, w8
+	bic	w8, w8, w1
 	csinc	w0, w8, wzr, hs
 	ret
 

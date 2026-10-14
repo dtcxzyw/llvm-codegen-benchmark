@@ -1,11 +1,11 @@
 func0000000000000000:
-	addiw	a1, a1, -2
+	addi	a1, a1, -2
 	srliw	a0, a0, 17
 	and	a0, a0, a1
 	ret
 
 func0000000000000006:
-	addiw	a1, a1, 65
+	addi	a1, a1, 65
 	srliw	a0, a0, 8
 	and	a0, a0, a1
 	ret
@@ -19,7 +19,7 @@ func0000000000000004:
 	ret
 
 func0000000000000002:
-	addiw	a1, a1, -1
+	addi	a1, a1, -1
 	srliw	a0, a0, 5
 	and	a0, a0, a1
 	ret

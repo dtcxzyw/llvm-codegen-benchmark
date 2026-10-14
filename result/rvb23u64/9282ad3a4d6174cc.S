@@ -106,10 +106,9 @@ func0000000000000038:
 	ret
 
 func00000000000000ca:
-	srli	a0, a0, 63
 	sgtz	a1, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	srli	a0, a0, 63
+	andn	a0, a1, a0
 	ret
 
 func00000000000000c6:

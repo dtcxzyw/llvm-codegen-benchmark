@@ -33,7 +33,7 @@ func000000000000016a:
 	sraiw	a2, a2, 31
 	slt	a0, a0, a1
 	seqz	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -60,7 +60,7 @@ func000000000000016c:
 	sext.w	a2, a2
 	slt	a0, a0, a1
 	snez	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

@@ -5,7 +5,7 @@ func0000000000000008:
 	cmpl	$196112, %edx
 	setae	%al
 	orl	%esi, %edi
-	xorb	$1, %dil
+	notb	%dil
 	andb	%dil, %al
 	retq
 

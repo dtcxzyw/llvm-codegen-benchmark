@@ -1,12 +1,12 @@
 func000000000000001c:
-	and	x8, x0, x1
-	neg	w9, w2
-	lsl	x0, x8, x9
+	neg	w8, w2
+	and	x9, x0, x1
+	lsl	x0, x9, x8
 	ret
 
 func000000000000000c:
-	and	x8, x0, x1
-	neg	w9, w2
-	lsl	x0, x8, x9
+	neg	w8, w2
+	and	x9, x0, x1
+	lsl	x0, x9, x8
 	ret
 

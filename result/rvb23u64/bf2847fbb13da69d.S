@@ -6,8 +6,9 @@ func000000000000014c:
 
 func000000000000002c:
 	addiw	a1, a1, -8
-	bexti	a0, a0, 13
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	srli	a0, a0, 13
+	and	a0, a0, a1
 	ret
 
 func0000000000000021:

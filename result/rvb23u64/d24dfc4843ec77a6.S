@@ -33,15 +33,13 @@ func0000000000000144:
 func00000000000000a2:
 	flt.s	a1, fa0, fa1
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000a4:
 	flt.s	a1, fa1, fa0
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000014d:
@@ -76,8 +74,7 @@ func00000000000000ad:
 func00000000000000ac:
 	fle.s	a1, fa1, fa0
 	srliw	a0, a0, 31
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000006c:

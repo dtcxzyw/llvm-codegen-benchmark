@@ -35,7 +35,7 @@ func0000000000001504:
 	srliw	a1, a1, 16
 	sltiu	a0, a0, 7
 	sltiu	a1, a1, 17
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -46,7 +46,7 @@ func0000000000001d04:
 	srliw	a1, a1, 16
 	sltiu	a0, a0, 7
 	sltiu	a1, a1, 17
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

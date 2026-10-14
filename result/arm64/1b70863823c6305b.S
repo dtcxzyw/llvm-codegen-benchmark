@@ -12,9 +12,9 @@ func000000000000000f:
 	ret
 
 func0000000000000000:
-	mvn	w8, w0
-	neg	w9, w1
-	lsl	w0, w8, w9
+	neg	w8, w1
+	mvn	w9, w0
+	lsl	w0, w9, w8
 	ret
 
 func0000000000000004:

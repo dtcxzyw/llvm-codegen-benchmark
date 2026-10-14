@@ -74,7 +74,7 @@ func000000000000002a:
 	srli	a2, a2, 52
 	slti	a1, a1, 3
 	addi	a2, a2, -6
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2

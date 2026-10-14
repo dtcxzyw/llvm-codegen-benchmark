@@ -5,7 +5,7 @@ func0000000000001114:
 	sltiu	a2, a2, 8
 	sltiu	a1, a1, 2
 	sltiu	a0, a0, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

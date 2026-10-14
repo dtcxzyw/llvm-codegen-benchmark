@@ -1,11 +1,10 @@
 func0000000000000166:
 	sext.h	a2, a2
-	sext.h	a1, a1
 	sext.h	a0, a0
+	sext.h	a1, a1
 	slt	a1, a1, a2
-	xori	a1, a1, 1
 	slti	a0, a0, 8
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000021:
@@ -63,24 +62,24 @@ func0000000000000028:
 
 func000000000000014c:
 	zext.h	a1, a1
-	slli	a2, a2, 48
 	zext.h	a0, a0
-	srli	a2, a2, 63
-	xori	a2, a2, 1
+	slli	a2, a2, 48
 	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	srli	a2, a2, 63
+	snez	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func000000000000012c:
+	lui	a3, 16
+	zext.h	a0, a0
+	addi	a3, a3, -1024
+	xor	a0, a0, a3
 	zext.h	a2, a2
 	zext.h	a1, a1
 	sltu	a1, a1, a2
-	lui	a2, 16
-	zext.h	a0, a0
-	addi	a2, a2, -1024
-	xori	a1, a1, 1
-	xor	a0, a0, a2
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000002c:

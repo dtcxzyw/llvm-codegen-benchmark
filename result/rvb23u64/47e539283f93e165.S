@@ -72,13 +72,12 @@ func0000000000000308:
 
 func0000000000000104:
 	sext.w	a1, a1
-	sext.w	a0, a0
 	andi	a2, a2, -4
+	sext.w	a0, a0
 	sext.w	a2, a2
-	sltiu	a1, a1, 16
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 16
+	andn	a0, a0, a1
 	ret
 
 func0000000000000181:

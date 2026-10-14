@@ -10,7 +10,7 @@ func0000000000000048:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000008:
-	xorb	$1, %dil
+	notb	%dil
 	addl	$-918000, %esi
 	cmpl	$196112, %esi
 	setae	%al

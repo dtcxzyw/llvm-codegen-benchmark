@@ -1,8 +1,8 @@
 func0000000000000184:
-	ubfx	w8, w1, #1, #1
-	sub	w9, w0, #47
-	cmp	w9, #2
-	csel	w0, wzr, w8, hs
+	sub	w8, w0, #47
+	cmp	w8, #2
+	cset	w8, lo
+	and	w0, w8, w1, lsr #1
 	ret
 
 func0000000000000024:

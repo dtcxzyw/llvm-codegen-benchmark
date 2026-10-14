@@ -69,10 +69,10 @@ func000000000000008c:
 
 func00000000000000a1:
 	zext.w	a2, a2
-	sltu	a1, a2, a1
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.nez	a0, a1, a0
+	sltu	a1, a2, a1
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000281:
@@ -84,10 +84,10 @@ func0000000000000281:
 
 func00000000000000ac:
 	zext.w	a2, a2
-	sltu	a1, a2, a1
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sltu	a1, a2, a1
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000004ca:
@@ -116,10 +116,10 @@ func0000000000000581:
 
 func000000000000072c:
 	sext.w	a2, a2
-	sltu	a1, a1, a2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sltu	a1, a1, a2
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000544:
@@ -154,10 +154,10 @@ func0000000000000686:
 
 func00000000000006ac:
 	sext.w	a2, a2
-	sltu	a1, a2, a1
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sltu	a1, a2, a1
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000050a:
@@ -183,14 +183,13 @@ func0000000000000081:
 	ret
 
 func00000000000004a4:
-	sext.w	a2, a2
-	sltu	a1, a2, a1
-	lui	a2, 256
+	lui	a3, 256
 	sext.w	a0, a0
-	addi	a2, a2, -1
-	xori	a1, a1, 1
-	sltu	a0, a0, a2
-	and	a0, a0, a1
+	sext.w	a2, a2
+	addi	a3, a3, -1
+	sltu	a1, a2, a1
+	sltu	a0, a0, a3
+	andn	a0, a0, a1
 	ret
 
 func000000000000054c:

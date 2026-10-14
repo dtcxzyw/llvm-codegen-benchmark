@@ -23,8 +23,8 @@ func0000000000000181:
 func0000000000000021:
 	feq.s	a1, fa0, fa0
 	zext.b	a0, a0
-	xori	a1, a1, 1
 	addi	a0, a0, -7
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 

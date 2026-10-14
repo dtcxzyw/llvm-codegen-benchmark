@@ -19,11 +19,10 @@ func000000000000018c:
 
 func0000000000000146:
 	sext.w	a1, a1
-	or	a2, a2, a0
-	sext.w	a0, a0
-	srliw	a2, a2, 31
-	xori	a2, a2, 1
-	slt	a0, a0, a1
-	and	a0, a0, a2
+	sext.w	a3, a0
+	or	a0, a0, a2
+	srliw	a0, a0, 31
+	slt	a1, a3, a1
+	andn	a0, a1, a0
 	ret
 

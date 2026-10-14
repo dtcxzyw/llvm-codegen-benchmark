@@ -1,7 +1,7 @@
 func0000000000004042:
 	sltiu	a1, a1, 256
 	addiw	a2, a0, -64
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a2, a2
 	addiw	a0, a0, -32
 	and	a1, a1, a2

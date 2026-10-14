@@ -84,12 +84,12 @@ func0000000000000c2c:
 
 func0000000000000f0c:
 	andi	a2, a2, 1
-	sext.w	a0, a0
 	or	a1, a1, a2
-	sltiu	a0, a0, 2
+	sext.w	a0, a0
 	sext.w	a1, a1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func0000000000000421:

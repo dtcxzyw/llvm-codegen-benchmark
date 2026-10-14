@@ -81,7 +81,7 @@ func0000000000000304:
 	srli	a1, a1, 10
 	sltiu	a0, a0, 33
 	sltiu	a1, a1, 13
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

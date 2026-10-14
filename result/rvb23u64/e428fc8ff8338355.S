@@ -65,9 +65,10 @@ func0000000000000028:
 
 func0000000000000188:
 	zext.b	a0, a0
-	bexti	a1, a1, 2
 	sltiu	a0, a0, 32
-	andn	a0, a1, a0
+	srli	a1, a1, 2
+	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 
 func0000000000000308:
@@ -82,11 +83,11 @@ func0000000000000308:
 
 func000000000000030c:
 	slli	a1, a1, 34
+	zext.b	a0, a0
 	srli	a1, a1, 34
 	sltiu	a1, a1, 5
-	zext.b	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000028c:

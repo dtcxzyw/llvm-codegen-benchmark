@@ -120,15 +120,17 @@ func0000000000000186:
 	ret
 
 func0000000000000188:
-	ubfx	x8, x1, #32, #1
+	lsr	x8, x1, #32
 	cmp	w0, #1
-	csel	w0, wzr, w8, ls
+	cset	w9, hi
+	and	w0, w9, w8
 	ret
 
 func0000000000000194:
-	ubfx	x8, x1, #46, #1
+	lsr	x8, x1, #46
 	cmp	w0, #7
-	csel	w0, wzr, w8, hs
+	cset	w9, lo
+	and	w0, w9, w8
 	ret
 
 func000000000000010c:

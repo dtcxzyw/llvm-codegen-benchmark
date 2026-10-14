@@ -3,7 +3,7 @@
 func000000000000000c:
 	testl	%edx, %edx
 	setne	%al
-	xorb	$1, %sil
+	notb	%sil
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq

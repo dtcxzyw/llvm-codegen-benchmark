@@ -30,7 +30,7 @@ func00000000000000ac:
 	fle.d	a1, fa0, fa1
 	zext.b	a0, a0
 	snez	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

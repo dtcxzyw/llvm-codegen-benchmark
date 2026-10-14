@@ -1,7 +1,7 @@
 func0000000000000184:
-	ubfx	x8, x2, #5, #1
 	cmp	x0, x1
-	csel	w0, wzr, w8, hs
+	cset	w8, lo
+	and	w0, w8, w2, lsr #5
 	ret
 
 func0000000000000021:
@@ -50,9 +50,9 @@ func0000000000000146:
 	ret
 
 func0000000000000188:
-	ubfx	x8, x2, #11, #1
 	cmp	x0, x1
-	csel	w0, wzr, w8, ls
+	cset	w8, hi
+	and	w0, w8, w2, lsr #11
 	ret
 
 func0000000000000101:

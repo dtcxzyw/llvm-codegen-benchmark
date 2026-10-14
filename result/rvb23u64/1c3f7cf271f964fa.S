@@ -1,9 +1,9 @@
 func0000000000000038:
 	sext.w	a0, a0
-	sltiu	a0, a0, 32
 	addiw	a1, a1, 8
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 32
+	andn	a0, a1, a0
 	ret
 
 func0000000000000021:
@@ -68,10 +68,9 @@ func000000000000048a:
 func0000000000000088:
 	sext.w	a0, a0
 	addiw	a1, a1, -43
-	sltiu	a0, a0, 3
 	sltiu	a1, a1, -2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 3
+	andn	a0, a1, a0
 	ret
 
 func0000000000000084:

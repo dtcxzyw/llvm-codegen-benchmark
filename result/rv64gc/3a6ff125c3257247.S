@@ -7,9 +7,8 @@ func000000000000018c:
 
 func0000000000000181:
 	and	a1, a1, a2
-	slli	a1, a1, 54
 	addiw	a0, a0, -2
-	srli	a1, a1, 63
+	srli	a1, a1, 9
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

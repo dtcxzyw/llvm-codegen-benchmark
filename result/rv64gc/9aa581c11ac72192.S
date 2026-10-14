@@ -68,9 +68,8 @@ func0000000000000c2c:
 func000000000000098c:
 	li	a2, 5
 	slli	a2, a2, 41
-	slli	a1, a1, 57
 	xor	a0, a0, a2
-	srli	a1, a1, 63
+	srli	a1, a1, 6
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

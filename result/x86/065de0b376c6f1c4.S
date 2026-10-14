@@ -11,11 +11,10 @@ func0000000000000081:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000008c:
-	andl	$16, %edx
-	shrl	$4, %edx
+	shrb	$4, %dl
 	cmpl	$57, %esi
 	setb	%al
-	andb	%dil, %al
+	andb	%dil, %dl
 	andb	%dl, %al
 	retq
 

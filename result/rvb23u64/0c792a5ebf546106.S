@@ -46,8 +46,8 @@ func0000000000000081:
 func000000000000014c:
 	slli	a1, a1, 48
 	srli	a1, a1, 63
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000000cc:
@@ -59,7 +59,7 @@ func00000000000000cc:
 func000000000000010c:
 	zext.h	a1, a1
 	sltiu	a1, a1, 32
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

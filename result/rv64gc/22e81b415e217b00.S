@@ -2,7 +2,7 @@ func0000000000000141:
 	slli	a1, a1, 56
 	sext.w	a0, a0
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -129,7 +129,7 @@ func000000000000014c:
 	srai	a1, a1, 56
 	sext.w	a0, a0
 	slti	a1, a1, 57
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -146,7 +146,7 @@ func000000000000010c:
 	zext.b	a1, a1
 	sext.w	a0, a0
 	sltiu	a1, a1, 192
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -241,7 +241,7 @@ func0000000000000101:
 	lui	a2, 2432
 	sltiu	a1, a1, 2
 	xor	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -258,7 +258,7 @@ func0000000000000144:
 	slli	a1, a1, 56
 	sext.w	a0, a0
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 3
 	and	a0, a0, a1
 	ret
@@ -275,7 +275,7 @@ func0000000000000114:
 	zext.b	a1, a1
 	sext.w	a0, a0
 	sltiu	a1, a1, 64
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 47
 	and	a0, a0, a1
 	ret

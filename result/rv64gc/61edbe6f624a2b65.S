@@ -38,11 +38,10 @@ func0000000000000101:
 
 func0000000000000184:
 	li	a2, -1
-	slli	a1, a1, 61
 	srli	a3, a2, 11
 	add	a0, a0, a3
 	srli	a2, a2, 10
-	srli	a1, a1, 63
+	srli	a1, a1, 2
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

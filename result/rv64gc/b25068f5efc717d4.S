@@ -101,7 +101,7 @@ func000000000000014a:
 	addiw	a1, a1, -1
 	srliw	a0, a0, 31
 	sgtz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -118,7 +118,7 @@ func0000000000000104:
 	addiw	a1, a1, -20
 	sltiu	a0, a0, 2
 	sltiu	a1, a1, 3
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -154,7 +154,7 @@ func000000000000050c:
 	addiw	a1, a1, -1
 	sltiu	a0, a0, 14
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -255,7 +255,7 @@ func0000000000000304:
 	addi	a2, a2, 546
 	sltiu	a0, a0, 2
 	sltu	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -264,7 +264,7 @@ func0000000000000d41:
 	addiw	a1, a1, -2
 	slti	a0, a0, 3
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

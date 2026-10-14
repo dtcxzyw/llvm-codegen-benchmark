@@ -10,7 +10,7 @@ func000000000000018c:
 func0000000000000101:
 	sltiu	a2, a2, 8
 	sext.w	a0, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -51,7 +51,7 @@ func0000000000000184:
 func000000000000010c:
 	sltiu	a2, a2, 10
 	sext.w	a0, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

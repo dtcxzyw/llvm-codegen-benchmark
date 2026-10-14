@@ -6,15 +6,17 @@ func0000000000000021:
 	ret
 
 func0000000000000188:
-	bexti	a1, a0, 32
-	sraiw	a0, a0, 1
-	czero.eqz	a0, a1, a0
+	sraiw	a1, a0, 1
+	srli	a0, a0, 32
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	bexti	a1, a0, 32
-	sext.w	a0, a0
-	czero.eqz	a0, a1, a0
+	sext.w	a1, a0
+	srli	a0, a0, 32
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 
 func000000000000010c:

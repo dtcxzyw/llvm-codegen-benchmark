@@ -21,8 +21,8 @@ func0000000000000141:
 func000000000000030c:
 	sext.w	a1, a1
 	sltiu	a1, a1, 4
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -33,10 +33,10 @@ func000000000000002c:
 	ret
 
 func000000000000014c:
-	slti	a1, a1, 2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	slti	a1, a1, 2
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000081:
@@ -104,10 +104,10 @@ func000000000000018a:
 	ret
 
 func000000000000010c:
-	sltiu	a1, a1, 10
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sltiu	a1, a1, 10
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000148:
@@ -173,20 +173,19 @@ func0000000000000184:
 	ret
 
 func0000000000000104:
-	sext.w	a1, a1
 	lui	a2, 1
-	sltiu	a1, a1, 64
+	sext.w	a1, a1
 	addi	a2, a2, 1
-	xori	a1, a1, 1
+	sltiu	a1, a1, 64
 	sltu	a0, a0, a2
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000101:
-	sltiu	a1, a1, 64
-	xori	a1, a1, 1
 	addiw	a0, a0, -64
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 64
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000098:
@@ -199,16 +198,15 @@ func0000000000000098:
 func000000000000010a:
 	sext.w	a0, a0
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000301:
-	sltiu	a1, a1, 2
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 2
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000038:
@@ -226,18 +224,17 @@ func0000000000000086:
 	ret
 
 func0000000000000144:
-	srliw	a1, a1, 31
-	xori	a1, a1, 1
 	srli	a0, a0, 32
-	czero.nez	a0, a1, a0
+	srliw	a1, a1, 31
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000114:
 	sext.w	a0, a0
 	sltiu	a1, a1, 21
-	xori	a1, a1, 1
 	sltiu	a0, a0, 64
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000186:
@@ -293,9 +290,8 @@ func0000000000000198:
 func0000000000000306:
 	sext.w	a1, a1
 	sltiu	a1, a1, 32
-	xori	a1, a1, 1
 	slti	a0, a0, 28
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func00000000000000d8:
@@ -326,10 +322,10 @@ func0000000000000194:
 	ret
 
 func0000000000000158:
-	srliw	a1, a1, 31
-	xori	a1, a1, 1
 	srli	a0, a0, 32
-	czero.eqz	a0, a1, a0
+	srliw	a1, a1, 31
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000154:
@@ -371,9 +367,8 @@ func0000000000000318:
 func0000000000000304:
 	sext.w	a0, a0
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
 	sltiu	a0, a0, -19
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000146:
@@ -406,9 +401,9 @@ func0000000000000118:
 
 func0000000000000308:
 	sext.w	a1, a1
-	sltiu	a1, a1, 19
-	xori	a1, a1, 1
 	srli	a0, a0, 20
-	czero.eqz	a0, a1, a0
+	sltiu	a1, a1, 19
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

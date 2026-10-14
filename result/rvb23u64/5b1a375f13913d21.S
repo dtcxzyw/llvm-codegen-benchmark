@@ -9,11 +9,10 @@ func0000000000000034:
 
 func0000000000000097:
 	fmv.w.x	fa5, zero
-	feq.s	a0, fa0, fa5
-	fli.s	fa5, inf
-	flt.s	a1, fa1, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	fli.s	fa4, inf
+	flt.s	a0, fa1, fa4
+	feq.s	a1, fa0, fa5
+	andn	a0, a0, a1
 	ret
 
 func0000000000000084:

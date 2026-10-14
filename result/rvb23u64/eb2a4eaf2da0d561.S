@@ -9,9 +9,10 @@ func0000000000000021:
 func0000000000000181:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	bexti	a2, a2, 8
 	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	srli	a2, a2, 8
+	seqz	a0, a0
+	and	a0, a0, a2
 	ret
 
 func000000000000010c:

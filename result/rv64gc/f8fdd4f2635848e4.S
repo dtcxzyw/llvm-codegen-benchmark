@@ -3,7 +3,7 @@ func0000000000000008:
 	addi	a3, a3, -496
 	addw	a2, a2, a3
 	lui	a3, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	addi	a3, a3, -497
 	sltu	a2, a3, a2
 	and	a0, a0, a1

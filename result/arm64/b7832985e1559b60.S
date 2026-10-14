@@ -5,15 +5,17 @@ func0000000000000021:
 	ret
 
 func0000000000000188:
-	ubfx	x8, x0, #32, #1
+	lsr	x8, x0, #32
 	tst	x0, #0xfffffffe
-	csel	w0, wzr, w8, eq
+	cset	w9, ne
+	and	w0, w9, w8
 	ret
 
 func000000000000018c:
-	ubfx	x8, x0, #32, #1
+	lsr	x8, x0, #32
 	cmp	w0, #0
-	csel	w0, wzr, w8, eq
+	cset	w9, ne
+	and	w0, w9, w8
 	ret
 
 func000000000000010c:

@@ -5,7 +5,7 @@ func00000000000006f4:
 	feq.s	a2, fa0, fa5
 	addi	a1, a1, 1
 	sltu	a0, a1, a0
-	xori	a1, a2, 1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

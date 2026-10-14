@@ -28,7 +28,7 @@ func0000000000000301:
 	andi	a0, a0, 224
 	sltiu	a1, a1, 3
 	addi	a0, a0, -96
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

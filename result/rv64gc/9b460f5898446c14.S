@@ -1,7 +1,7 @@
 func000000000000003c:
 	fle.s	a0, fa2, fa0
 	fle.s	a1, fa1, fa0
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -39,7 +39,7 @@ func000000000000002c:
 func00000000000000da:
 	flt.s	a0, fa0, fa2
 	fle.s	a1, fa0, fa1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

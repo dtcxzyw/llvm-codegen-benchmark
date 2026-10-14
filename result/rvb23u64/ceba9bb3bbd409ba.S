@@ -50,8 +50,9 @@ func000000000000018c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	bexti	a2, a2, 13
-	czero.nez	a1, a2, a1
+	srli	a2, a2, 13
+	seqz	a1, a1
+	and	a1, a1, a2
 	czero.nez	a0, a0, a1
 	ret
 

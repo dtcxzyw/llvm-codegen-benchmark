@@ -9,11 +9,10 @@ func0000000000000181:
 func0000000000000141:
 	sext.w	a2, a2
 	slti	a2, a2, 772
-	xori	a2, a2, 1
-	bseti	a3, zero, 11
-	and	a0, a0, a2
-	and	a1, a1, a3
-	czero.nez	a0, a0, a1
+	not	a1, a1
+	andn	a0, a0, a2
+	bexti	a1, a1, 11
+	and	a0, a0, a1
 	ret
 
 func000000000000014c:

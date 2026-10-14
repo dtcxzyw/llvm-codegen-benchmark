@@ -26,10 +26,9 @@ func0000000000000d86:
 
 func0000000000000504:
 	addi	a2, a2, 4
-	sltiu	a1, a1, 2
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 2
+	andn	a0, a0, a1
 	ret
 
 .LCPI5_0:
@@ -64,10 +63,9 @@ func0000000000000824:
 
 func0000000000000706:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 2
 	slt	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 2
+	andn	a0, a0, a1
 	ret
 
 func0000000000000084:
@@ -135,10 +133,9 @@ func000000000000018c:
 
 func0000000000000904:
 	addi	a2, a2, 1
-	sltiu	a1, a1, 17
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 17
+	andn	a0, a0, a1
 	ret
 
 func0000000000000e8c:
@@ -157,10 +154,9 @@ func0000000000000025:
 
 func0000000000000104:
 	addi	a2, a2, 4
-	sltiu	a1, a1, 4
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 4
+	andn	a0, a0, a1
 	ret
 
 func0000000000000586:

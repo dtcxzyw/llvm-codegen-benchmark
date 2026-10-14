@@ -6,7 +6,7 @@ func0000000000000104:
 	flt.d	a2, fa0, fa5
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

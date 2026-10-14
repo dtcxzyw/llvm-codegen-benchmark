@@ -33,7 +33,7 @@ func0000000000000036:
 	fle.d	a1, fa4, fa5
 	andi	a0, a0, 126
 	snez	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -60,7 +60,7 @@ func00000000000000d6:
 	fclass.d	a0, fa0
 	flt.d	a1, fa5, fa4
 	andi	a0, a0, 126
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

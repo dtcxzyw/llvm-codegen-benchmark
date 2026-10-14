@@ -38,7 +38,6 @@ func0000000000000188:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000184:
 	shrl	$28, %esi
-	andl	$1, %esi
 	cmpb	$4, %dil
 	setb	%al
 	andb	%sil, %al

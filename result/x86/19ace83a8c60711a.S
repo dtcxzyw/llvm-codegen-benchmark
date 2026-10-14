@@ -53,8 +53,7 @@ func000000000000018c:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000184:
-	andl	$2, %edx
-	shrl	%edx
+	shrb	%dl
 	cmpq	%rsi, %rdi
 	setb	%al
 	andb	%dl, %al

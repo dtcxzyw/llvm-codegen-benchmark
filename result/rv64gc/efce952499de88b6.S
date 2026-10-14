@@ -52,7 +52,7 @@ func00000000000000a8:
 	slli	a1, a1, 32
 	sltu	a2, a2, a0
 	srli	a1, a1, 32
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret

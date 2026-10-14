@@ -15,13 +15,13 @@ func000000000000054c:
 	ret
 
 func0000000000000101:
-	subw	a1, a1, a2
-	lui	a2, 14
-	sltiu	a1, a1, 2
+	lui	a3, 14
 	zext.h	a0, a0
-	addi	a2, a2, 333
-	xori	a1, a1, 1
-	xor	a0, a0, a2
-	czero.nez	a0, a1, a0
+	addi	a3, a3, 333
+	subw	a1, a1, a2
+	xor	a0, a0, a3
+	sltiu	a1, a1, 2
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 

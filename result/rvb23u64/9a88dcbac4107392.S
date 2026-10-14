@@ -16,10 +16,10 @@ func00000000000000ca:
 
 func000000000000010c:
 	addw	a1, a1, a0
-	sltiu	a1, a1, 12
-	xori	a1, a1, 1
 	addiw	a0, a0, -16
-	czero.eqz	a0, a1, a0
+	sltiu	a1, a1, 12
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000084:
@@ -47,12 +47,11 @@ func000000000000042c:
 	ret
 
 func0000000000000146:
-	addw	a1, a1, a0
-	sext.w	a0, a0
-	slti	a1, a1, 3
-	xori	a1, a1, 1
-	slti	a0, a0, 2
-	and	a0, a0, a1
+	sext.w	a2, a0
+	addw	a0, a0, a1
+	slti	a0, a0, 3
+	slti	a1, a2, 2
+	andn	a0, a1, a0
 	ret
 
 func000000000000002c:

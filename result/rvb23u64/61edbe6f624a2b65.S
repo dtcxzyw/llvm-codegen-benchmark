@@ -39,7 +39,7 @@ func0000000000000184:
 	srli	a3, a2, 11
 	add	a0, a0, a3
 	srli	a2, a2, 10
-	bexti	a1, a1, 2
+	srli	a1, a1, 2
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

@@ -25,13 +25,13 @@ func000000000000018c:
 	ret
 
 func0000000000000101:
+	zext.b	a0, a0
 	zext.b	a1, a1
 	sltiu	a1, a1, 15
-	zext.b	a0, a0
-	xori	a1, a1, 1
 	addi	a0, a0, -2
+	seqz	a0, a0
 	lui	a2, 2
-	czero.nez	a0, a1, a0
+	andn	a0, a0, a1
 	addi	a1, a2, 1808
 	czero.nez	a0, a1, a0
 	ret

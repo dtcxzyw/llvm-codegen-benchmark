@@ -1,7 +1,7 @@
 func0000000000000104:
 	sext.w	a1, a1
 	sltiu	a2, a2, 8
-	xori	a2, a2, 1
+	not	a2, a2
 	sltiu	a1, a1, 9
 	and	a1, a1, a2
 	and	a0, a0, a1
@@ -52,7 +52,7 @@ func0000000000000084:
 func0000000000000101:
 	sext.w	a1, a1
 	sltiu	a2, a2, 10
-	xori	a2, a2, 1
+	not	a2, a2
 	seqz	a1, a1
 	and	a1, a1, a2
 	and	a0, a0, a1

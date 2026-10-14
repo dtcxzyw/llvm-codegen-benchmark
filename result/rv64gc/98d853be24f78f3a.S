@@ -13,7 +13,7 @@ func000000000000050c:
 	sext.w	a1, a1
 	sltiu	a0, a0, 16
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -81,7 +81,7 @@ func0000000000000701:
 	srliw	a1, a1, 1
 	sltiu	a1, a1, 1571
 	addi	a0, a0, -2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

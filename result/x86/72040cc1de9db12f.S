@@ -76,7 +76,6 @@ func0000000000000194:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000184:
 	shrl	$9, %esi
-	andl	$1, %esi
 	cmpw	$-2, %di
 	setb	%al
 	andb	%sil, %al

@@ -37,11 +37,11 @@ func0000000000000188:
 
 func000000000000030c:
 	sext.w	a1, a1
-	sltiu	a2, a1, 48
-	lui	a3, 272
-	xori	a2, a2, 1
-	xor	a1, a1, a3
-	czero.eqz	a1, a2, a1
+	lui	a2, 272
+	xor	a2, a2, a1
+	sltiu	a1, a1, 48
+	snez	a2, a2
+	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

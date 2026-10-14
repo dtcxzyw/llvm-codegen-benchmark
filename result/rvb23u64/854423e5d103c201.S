@@ -71,10 +71,10 @@ func0000000000000141:
 	ret
 
 func0000000000000101:
-	sltiu	a0, a0, 256
 	andi	a1, a1, 3
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 256
+	andn	a0, a1, a0
 	ret
 
 func000000000000008c:

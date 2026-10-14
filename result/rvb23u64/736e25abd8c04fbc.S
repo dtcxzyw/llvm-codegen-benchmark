@@ -66,10 +66,10 @@ func000000000000002c:
 func0000000000000028:
 	lui	a1, 272
 	sext.w	a0, a0
-	sltiu	a2, a0, 128
-	xor	a0, a0, a1
-	xori	a1, a2, 1
-	czero.eqz	a0, a1, a0
+	xor	a1, a1, a0
+	snez	a1, a1
+	sltiu	a0, a0, 128
+	andn	a0, a1, a0
 	ret
 
 func000000000000014a:

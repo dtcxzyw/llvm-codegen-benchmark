@@ -19,9 +19,9 @@ func000000000000010c:
 
 func00000000000000a1:
 	andi	a2, a2, 8
+	seqz	a2, a2
 	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a2
+	andn	a0, a2, a0
 	ret
 
 func0000000000000021:

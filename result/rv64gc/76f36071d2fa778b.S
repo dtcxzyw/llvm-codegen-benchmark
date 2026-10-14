@@ -119,7 +119,7 @@ func0000000000000028:
 	seqz	a2, a2
 	sltiu	a1, a1, 4
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -147,7 +147,7 @@ func000000000000028a:
 	sltiu	a2, a2, 64
 	slti	a1, a1, 16
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -229,7 +229,7 @@ func0000000000000038:
 	addi	a3, a3, 1280
 	sltiu	a1, a1, 17
 	xor	a2, a2, a3
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
@@ -373,7 +373,7 @@ func0000000000000098:
 	sltu	a2, a2, a3
 	sltiu	a1, a1, 64
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -385,7 +385,7 @@ func0000000000000298:
 	sltu	a2, a2, a3
 	sltiu	a1, a1, 64
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

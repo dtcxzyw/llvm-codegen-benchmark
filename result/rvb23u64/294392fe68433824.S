@@ -11,8 +11,7 @@ func000000000000008c:
 func000000000000003e:
 	fle.d	a1, fa1, fa0
 	feq.d	a2, fa0, fa0
-	xori	a1, a1, 1
-	and	a0, a0, a2
+	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

@@ -2,7 +2,6 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000018c:
 	movl	%edi, %ecx
-	andb	$32, %cl
 	shrb	$5, %cl
 	cmpb	$-1, %dil
 	setne	%al

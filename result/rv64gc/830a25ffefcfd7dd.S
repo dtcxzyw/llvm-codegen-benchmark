@@ -27,7 +27,7 @@ func000000000000008a:
 	zext.b	a1, a1
 	srliw	a0, a0, 31
 	sltiu	a1, a1, 10
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -44,7 +44,7 @@ func000000000000002a:
 	zext.b	a1, a1
 	slti	a0, a0, 3
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

@@ -30,7 +30,7 @@ func000000000000012c:
 	sext.w	a2, a2
 	sltu	a0, a0, a1
 	sltiu	a1, a2, -1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

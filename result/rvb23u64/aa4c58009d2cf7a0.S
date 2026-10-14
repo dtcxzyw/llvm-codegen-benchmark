@@ -26,9 +26,8 @@ func0000000000000544:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	xori	a1, a1, 1
 	sltiu	a0, a0, 2
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000581:
@@ -56,7 +55,7 @@ func00000000000000ca:
 func000000000000054c:
 	subw	a1, a1, a2
 	slti	a1, a1, 9
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

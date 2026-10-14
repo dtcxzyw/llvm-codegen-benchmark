@@ -23,21 +23,23 @@ func0000000000000184:
 	lui	a2, 8
 	sext.w	a0, a0
 	addi	a2, a2, 565
-	bexti	a1, a1, 28
+	srli	a1, a1, 28
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
 func000000000000018a:
 	sext.w	a0, a0
-	bexti	a1, a1, 8
 	slti	a0, a0, 3
-	andn	a0, a1, a0
+	srli	a1, a1, 8
+	xori	a0, a0, 1
+	and	a0, a0, a1
 	ret
 
 func000000000000018c:
 	sext.w	a0, a0
-	bexti	a1, a1, 21
-	czero.eqz	a0, a1, a0
+	srli	a1, a1, 21
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 

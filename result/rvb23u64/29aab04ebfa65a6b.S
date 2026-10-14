@@ -23,8 +23,8 @@ func0000000000000181:
 
 func000000000000014c:
 	srli	a1, a1, 63
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000014a:
@@ -122,9 +122,8 @@ func0000000000000141:
 
 func0000000000000314:
 	sltiu	a1, a1, 107
-	xori	a1, a1, 1
 	sltiu	a0, a0, 107
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000034:
@@ -148,9 +147,8 @@ func0000000000000104:
 
 func000000000000030c:
 	sltiu	a1, a1, 63
-	xori	a1, a1, 1
-	addi	a0, a0, 1
-	czero.eqz	a0, a1, a0
+	sltiu	a0, a0, -1
+	andn	a0, a0, a1
 	ret
 
 func000000000000008c:
@@ -165,16 +163,14 @@ func0000000000000144:
 	lui	a2, %hi(.LCPI26_0)
 	ld	a2, %lo(.LCPI26_0)(a2)
 	srli	a1, a1, 63
-	xori	a1, a1, 1
 	sltu	a0, a0, a2
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000146:
 	srli	a1, a1, 63
-	xori	a1, a1, 1
 	slti	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000294:
@@ -213,8 +209,8 @@ func0000000000000101:
 
 func0000000000000301:
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000028:

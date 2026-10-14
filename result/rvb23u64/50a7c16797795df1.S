@@ -29,8 +29,8 @@ func0000000000000036:
 	fclass.s	a0, fa0
 	fle.s	a1, fa4, fa5
 	andi	a0, a0, 126
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000124:

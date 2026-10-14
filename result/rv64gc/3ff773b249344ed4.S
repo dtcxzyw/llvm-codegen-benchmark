@@ -8,9 +8,9 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	slli	a1, a1, 51
-	srli	a1, a1, 63
-	srli	a0, a0, 5
+	slli	a0, a0, 58
+	srli	a1, a1, 12
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 
@@ -21,9 +21,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 54
 	slli	a0, a0, 48
-	srli	a1, a1, 63
+	srli	a1, a1, 9
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

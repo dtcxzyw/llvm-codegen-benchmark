@@ -3,7 +3,7 @@
 func0000000000000021:
 	cmpb	$60, %dil
 	setne	%al
-	xorb	$1, %sil
+	notb	%sil
 	andb	%sil, %al
 	retq
 

@@ -1,9 +1,8 @@
 func0000000000000104:
 	sext.w	a1, a1
 	sltiu	a2, a2, 8
-	xori	a2, a2, 1
 	sltiu	a1, a1, 9
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
@@ -47,10 +46,10 @@ func0000000000000084:
 	ret
 
 func0000000000000101:
-	sltiu	a2, a2, 10
 	sext.w	a1, a1
-	xori	a2, a2, 1
-	czero.nez	a1, a2, a1
+	sltiu	a2, a2, 10
+	seqz	a1, a1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

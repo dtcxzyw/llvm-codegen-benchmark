@@ -1,7 +1,8 @@
 func0000000000000181:
 	or	a1, a1, a2
-	bexti	a1, a1, 2
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 2
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000021:

@@ -32,7 +32,7 @@ func0000000000000141:
 	and	a1, a1, a2
 	slti	a0, a0, 4
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -54,7 +54,7 @@ func0000000000000101:
 	andi	a1, a1, 1024
 	sltiu	a0, a0, 2
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

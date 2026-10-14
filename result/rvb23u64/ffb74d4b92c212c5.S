@@ -1,11 +1,10 @@
 func0000000000000304:
 	slli	a1, a1, 46
-	srli	a1, a1, 46
 	sext.w	a0, a0
-	sltiu	a2, a1, 2
+	srli	a1, a1, 46
 	sltu	a0, a1, a0
-	xori	a1, a2, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 2
+	andn	a0, a0, a1
 	ret
 
 func000000000000002c:

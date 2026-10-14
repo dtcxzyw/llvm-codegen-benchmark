@@ -3,13 +3,13 @@ func0000000000000009:
 	li	a3, 11
 	beq	a2, a3, .LBB0_2
 	li	a2, 208
-	zext.b	a1, a1
+	andi	a1, a1, 63
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 .LBB0_2:
 	li	a2, 192
-	zext.b	a1, a1
+	andi	a1, a1, 63
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

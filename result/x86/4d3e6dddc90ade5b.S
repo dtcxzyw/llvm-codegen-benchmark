@@ -46,7 +46,7 @@ func000000000000014a:
 func000000000000018a:
 	testl	%edx, %edx
 	setne	%cl
-	xorb	$1, %sil
+	notb	%sil
 	orb	%sil, %cl
 	testl	%edi, %edi
 	setg	%al
@@ -57,7 +57,7 @@ func000000000000018a:
 func000000000000018c:
 	testl	%edx, %edx
 	setne	%cl
-	xorb	$1, %sil
+	notb	%sil
 	orb	%sil, %cl
 	testl	%edi, %edi
 	setne	%al

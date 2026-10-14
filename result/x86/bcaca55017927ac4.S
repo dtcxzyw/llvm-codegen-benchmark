@@ -12,8 +12,7 @@ func000000000000018a:
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
 	shrq	$32, %rdx
-	andl	%esi, %edx
-	andl	$1, %edx
+	andb	%sil, %dl
 	testl	%edi, %edi
 	setne	%al
 	andb	%dl, %al

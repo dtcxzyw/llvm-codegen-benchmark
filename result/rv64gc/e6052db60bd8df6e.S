@@ -12,7 +12,7 @@ func0000000000000d01:
 	xor	a0, a0, a2
 	sltiu	a1, a1, 4
 	seqz	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -61,7 +61,7 @@ func000000000000008c:
 func00000000000008b4:
 	addi	a2, a2, -32
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, -16
 	and	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func000000000000018c:
-	ubfx	w8, w1, #5, #1
 	cmp	x0, #0
-	csel	w0, wzr, w8, eq
+	cset	w8, ne
+	and	w0, w8, w1, lsr #5
 	ret
 
 func000000000000002c:

@@ -61,9 +61,9 @@ func0000000000000028:
 
 func0000000000000188:
 	and	w8, w0, #0xff
-	ubfx	w9, w1, #2, #1
 	cmp	w8, #31
-	csel	w0, wzr, w9, ls
+	cset	w8, hi
+	and	w0, w8, w1, lsr #2
 	ret
 
 func0000000000000308:

@@ -1,12 +1,11 @@
 func0000000000000008:
 	lui	a3, 1048352
 	addi	a3, a3, -496
+	lui	a4, 48
 	addw	a2, a2, a3
-	lui	a3, 48
-	xori	a1, a1, 1
-	addi	a3, a3, -497
+	addi	a3, a4, -497
 	sltu	a2, a3, a2
+	andn	a1, a2, a1
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 

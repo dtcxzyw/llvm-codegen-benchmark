@@ -1,10 +1,10 @@
 func000000000000010c:
 	addw	a1, a1, a2
 	slli	a0, a0, 33
-	sltiu	a1, a1, 2
 	srli	a0, a0, 33
-	xori	a1, a1, 1
 	binvi	a0, a0, 15
-	czero.eqz	a0, a1, a0
+	sltiu	a1, a1, 2
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

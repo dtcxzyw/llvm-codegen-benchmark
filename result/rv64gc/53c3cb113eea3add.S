@@ -67,7 +67,7 @@ func000000000000016c:
 	addiw	a1, a1, -5
 	slt	a2, a2, a3
 	snez	a1, a1
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

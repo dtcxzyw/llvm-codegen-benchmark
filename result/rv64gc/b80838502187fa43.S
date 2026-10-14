@@ -4,7 +4,7 @@ func0000000000000104:
 	sext.w	a1, a1
 	sltiu	a2, a0, 65
 	sltu	a0, a1, a0
-	xori	a1, a2, 1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 

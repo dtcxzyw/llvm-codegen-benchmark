@@ -28,7 +28,6 @@ func000000000000018c:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000186:
 	shrl	$13, %esi
-	andl	$1, %esi
 	testq	%rdi, %rdi
 	sets	%al
 	andb	%sil, %al
@@ -54,8 +53,7 @@ func0000000000000188:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000184:
-	andl	$2, %esi
-	shrl	%esi
+	shrb	%sil
 	shrq	$31, %rdi
 	sete	%al
 	andb	%sil, %al
@@ -135,8 +133,7 @@ func0000000000000294:
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000198:
-	andl	$16, %esi
-	shrl	$4, %esi
+	shrb	$4, %sil
 	cmpq	$7, %rdi
 	setae	%al
 	andb	%sil, %al
@@ -219,7 +216,6 @@ func0000000000000084:
 	.prefalign	4, .Lfunc_end24, nop
 func0000000000000194:
 	shrl	$8, %esi
-	andl	$1, %esi
 	cmpq	$64, %rdi
 	setb	%al
 	andb	%sil, %al

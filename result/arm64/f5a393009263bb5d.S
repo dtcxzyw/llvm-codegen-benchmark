@@ -18,8 +18,8 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	ubfx	w8, w1, #3, #1
 	cmp	x0, #0
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #3
 	ret
 

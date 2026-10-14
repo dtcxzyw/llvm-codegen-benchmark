@@ -61,7 +61,6 @@ func000000000000002c:
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000194:
 	shrl	$30, %edx
-	andl	$1, %edx
 	movl	%esi, %eax
 	cmpq	%rax, %rdi
 	setb	%al

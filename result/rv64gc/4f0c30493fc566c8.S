@@ -9,7 +9,7 @@ func000000000000016c:
 	and	a1, a1, a3
 	slt	a0, a2, a0
 	xor	a1, a1, a3
-	xori	a0, a0, 1
+	not	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

@@ -67,18 +67,18 @@ func0000000000000028:
 
 func0000000000000141:
 	zext.h	a0, a0
-	slti	a1, a1, 5
-	xori	a1, a1, 1
 	addi	a0, a0, -1
-	czero.nez	a0, a1, a0
+	slti	a1, a1, 5
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000301:
 	zext.h	a0, a0
-	sltiu	a1, a1, 5
-	xori	a1, a1, 1
 	addi	a0, a0, -1
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 5
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000184:
@@ -164,9 +164,8 @@ func0000000000000101:
 func0000000000000114:
 	zext.h	a1, a1
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
 	sltiu	a0, a0, 9
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000188:
@@ -179,7 +178,7 @@ func0000000000000188:
 func000000000000010c:
 	zext.h	a1, a1
 	sltiu	a1, a1, 13
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

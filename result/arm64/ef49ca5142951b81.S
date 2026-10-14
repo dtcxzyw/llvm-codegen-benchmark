@@ -48,9 +48,9 @@ func000000000000048c:
 func0000000000000584:
 	sub	w9, w0, #109, lsl #12
 	mov	w8, #33333
-	ubfx	x10, x1, #28, #1
 	sub	w9, w9, #203
 	cmp	w9, w8
-	csel	w0, wzr, w10, hs
+	cset	w8, lo
+	and	w0, w8, w1, lsr #28
 	ret
 

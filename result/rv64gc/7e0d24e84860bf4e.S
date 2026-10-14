@@ -12,16 +12,12 @@ func0000000000000002:
 	lui	a1, 4
 	beqz	a2, .LBB1_2
 	addi	a1, a1, 22
-	lui	a2, 1048572
-	addi	a2, a2, -256
-	and	a0, a0, a2
+	andi	a0, a0, -256
 	or	a0, a0, a1
 	ret
 .LBB1_2:
 	addi	a1, a1, 534
-	lui	a2, 1048572
-	addi	a2, a2, -256
-	and	a0, a0, a2
+	andi	a0, a0, -256
 	or	a0, a0, a1
 	ret
 

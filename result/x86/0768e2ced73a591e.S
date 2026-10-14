@@ -139,7 +139,6 @@ func0000000000000294:
 
 	.prefalign	4, .Lfunc_end15, nop
 func0000000000000188:
-	andb	$4, %sil
 	shrb	$2, %sil
 	cmpb	$-3, %dil
 	setae	%al

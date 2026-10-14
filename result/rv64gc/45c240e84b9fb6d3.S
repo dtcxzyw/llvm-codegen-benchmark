@@ -8,9 +8,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 56
 	andi	a0, a0, 256
-	srli	a1, a1, 63
+	srli	a1, a1, 7
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -27,7 +26,7 @@ func0000000000000301:
 	lui	a2, 3
 	sltiu	a1, a1, 9
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -77,9 +76,8 @@ func0000000000000081:
 	ret
 
 func0000000000000194:
-	slli	a1, a1, 37
 	zext.b	a0, a0
-	srli	a1, a1, 63
+	srli	a1, a1, 26
 	sltiu	a0, a0, 51
 	and	a0, a0, a1
 	ret

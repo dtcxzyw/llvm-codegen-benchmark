@@ -1,7 +1,7 @@
 func0000000000000014:
-	and	w8, w0, #0xf
-	sub	w9, w8, #1
-	tst	w8, w9
+	sub	w8, w0, #1
+	and	w8, w0, w8
+	tst	w8, #0xf
 	cset	w0, eq
 	ret
 
@@ -37,9 +37,9 @@ func0000000000000034:
 	ret
 
 func0000000000000038:
-	and	w8, w0, #0xffff
-	sub	w9, w8, #1
-	tst	w8, w9
+	sub	w8, w0, #1
+	and	w8, w0, w8
+	tst	w8, #0xffff
 	cset	w0, ne
 	ret
 

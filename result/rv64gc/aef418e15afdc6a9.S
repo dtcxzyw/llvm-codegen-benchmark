@@ -45,7 +45,7 @@ func0000000000003028:
 	seqz	a1, a1
 	sltiu	a0, a0, 2
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

@@ -41,8 +41,9 @@ func0000000000000281:
 
 func0000000000000181:
 	sext.w	a0, a0
-	bexti	a1, a1, 14
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 14
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000008c:
@@ -78,13 +79,13 @@ func00000000000000cc:
 	ret
 
 func0000000000000141:
-	sext.w	a0, a0
 	lui	a2, 126976
 	and	a1, a1, a2
-	slti	a0, a0, 2
+	sext.w	a0, a0
 	binvi	a1, a1, 24
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	slti	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func000000000000028c:

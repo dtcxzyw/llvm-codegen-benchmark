@@ -125,7 +125,7 @@ func0000000000000504:
 	addi	a1, a1, -176
 	sltiu	a0, a0, 161
 	sltiu	a1, a1, 72
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

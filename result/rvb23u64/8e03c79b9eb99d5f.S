@@ -7,15 +7,14 @@ func0000000000000424:
 	ret
 
 func0000000000006084:
-	sext.w	a2, a2
-	zext.b	a0, a0
 	sext.w	a1, a1
-	sltiu	a2, a2, 10
+	zext.b	a0, a0
+	sext.w	a2, a2
 	sltiu	a1, a1, 100
 	sltiu	a0, a0, 10
-	xori	a2, a2, 1
+	sltiu	a2, a2, 10
 	and	a0, a0, a1
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	ret
 
 func0000000000000421:

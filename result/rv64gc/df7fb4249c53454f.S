@@ -1,7 +1,7 @@
 func000000000000018c:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	snez	a0, a0
@@ -10,7 +10,7 @@ func000000000000018c:
 
 func0000000000000181:
 	sext.w	a1, a1
-	xori	a2, a2, 1
+	not	a2, a2
 	snez	a1, a1
 	addiw	a0, a0, -1
 	and	a1, a1, a2

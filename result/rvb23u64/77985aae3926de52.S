@@ -1,9 +1,8 @@
 func0000000000000104:
 	subw	a1, a1, a2
-	sltiu	a0, a0, 8
 	sltiu	a1, a1, 9
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 8
+	andn	a0, a1, a0
 	ret
 
 func000000000000030a:

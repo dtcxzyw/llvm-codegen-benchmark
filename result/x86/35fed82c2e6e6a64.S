@@ -22,7 +22,7 @@ func0000000000000010:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000008:
-	xorb	$1, %dil
+	notb	%dil
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setbe	%al
@@ -42,7 +42,7 @@ func000000000000000e:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000004:
-	xorb	$1, %dil
+	notb	%dil
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	setbe	%al

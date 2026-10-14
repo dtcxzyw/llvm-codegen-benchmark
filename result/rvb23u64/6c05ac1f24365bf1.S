@@ -48,12 +48,12 @@ func0000000000000024:
 	ret
 
 func0000000000000101:
-	zext.b	a2, a2
 	zext.b	a1, a1
-	sltiu	a2, a2, 7
-	xori	a2, a2, 1
+	zext.b	a2, a2
 	addi	a1, a1, -18
-	czero.nez	a1, a2, a1
+	sltiu	a2, a2, 7
+	seqz	a1, a1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

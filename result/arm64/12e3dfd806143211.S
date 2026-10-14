@@ -13,9 +13,8 @@ func0000000000000002:
 
 func0000000000000018:
 	cmp	w1, #2
-	eor	w8, w0, #0x1
-	cset	w9, eq
-	and	w0, w9, w8
+	cset	w8, eq
+	bic	w0, w8, w0
 	ret
 
 func0000000000000008:
@@ -26,16 +25,14 @@ func0000000000000008:
 
 func0000000000000028:
 	cmp	w1, #7
-	eor	w8, w0, #0x1
-	cset	w9, hi
-	and	w0, w9, w8
+	cset	w8, hi
+	bic	w0, w8, w0
 	ret
 
 func0000000000000014:
 	cmp	w1, #0
-	eor	w8, w0, #0x1
-	cset	w9, mi
-	and	w0, w9, w8
+	cset	w8, mi
+	bic	w0, w8, w0
 	ret
 
 func0000000000000010:

@@ -34,8 +34,7 @@ func0000000000000188:
 
 func0000000000000184:
 	zext.b	a0, a0
-	slli	a1, a1, 35
-	srli	a1, a1, 63
+	srli	a1, a1, 28
 	sltiu	a0, a0, 4
 	and	a0, a0, a1
 	ret
@@ -103,7 +102,7 @@ func0000000000000101:
 	addi	a1, a1, -1
 	sltiu	a0, a0, 2
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

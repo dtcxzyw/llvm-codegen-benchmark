@@ -17,22 +17,24 @@ func000000000000002c:
 
 func0000000000000181:
 	zext.b	a0, a0
-	bexti	a1, a1, 8
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 8
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000018c:
 	zext.b	a0, a0
-	bexti	a1, a1, 10
-	czero.eqz	a0, a1, a0
+	srli	a1, a1, 10
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000030c:
+	zext.b	a0, a0
 	andi	a1, a1, 2046
 	sltiu	a1, a1, 10
-	zext.b	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000024:

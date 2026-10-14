@@ -34,7 +34,7 @@ func0000000000000141:
 	sub	a1, a1, a2
 	slti	a1, a1, 3
 	addiw	a0, a0, -40
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -51,7 +51,7 @@ func0000000000000101:
 	sub	a1, a1, a2
 	sext.w	a0, a0
 	sltiu	a1, a1, 3
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -153,7 +153,7 @@ func000000000000014c:
 	sub	a1, a1, a2
 	sext.w	a0, a0
 	slti	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -39,11 +39,11 @@ func000000000000014a:
 	ret
 
 func000000000000010c:
+	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 128
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000144:
@@ -122,9 +122,9 @@ func0000000000000028:
 
 func0000000000000141:
 	sext.w	a1, a1
-	slti	a1, a1, 3
-	xori	a1, a1, 1
 	addiw	a0, a0, -255
-	czero.nez	a0, a1, a0
+	slti	a1, a1, 3
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 

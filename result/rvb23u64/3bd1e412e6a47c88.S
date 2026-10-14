@@ -2,9 +2,8 @@ func0000000000000924:
 	subw	a1, a1, a2
 	sext.w	a0, a0
 	sltu	a0, a1, a0
-	xori	a0, a0, 1
 	sltiu	a1, a1, 65
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000004cb:
@@ -67,10 +66,9 @@ func00000000000000ca:
 func000000000000016a:
 	subw	a1, a1, a2
 	sext.w	a0, a0
+	sgtz	a2, a1
 	slt	a0, a1, a0
-	sgtz	a1, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a2, a0
 	ret
 
 func00000000000004ea:

@@ -28,8 +28,8 @@ func0000000000000024:
 
 func0000000000000038:
 	xor	a1, a1, a2
+	snez	a1, a1
 	sltiu	a0, a0, 11
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 

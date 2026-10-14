@@ -4,7 +4,7 @@ func0000000000006201:
 	sext.w	a2, a2
 	sltiu	a1, a1, 2
 	snez	a2, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

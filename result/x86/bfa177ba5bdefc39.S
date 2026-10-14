@@ -72,7 +72,6 @@ func00000000000000ac:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000188:
 	shrq	$61, %rdx
-	andl	$1, %edx
 	cmpl	%esi, %edi
 	seta	%al
 	andb	%dl, %al
@@ -116,7 +115,6 @@ func0000000000000024:
 	.prefalign	4, .Lfunc_end13, nop
 func0000000000000189:
 	shrq	$32, %rdx
-	andl	$1, %edx
 	cmpl	%esi, %edi
 	setae	%al
 	andb	%dl, %al

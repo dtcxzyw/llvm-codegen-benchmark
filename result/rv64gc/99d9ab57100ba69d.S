@@ -45,13 +45,14 @@ func0000000000000581:
 
 func0000000000001d44:
 	sext.w	a3, a1
+	sext.w	a0, a0
 	sext.w	a2, a2
 	slt	a2, a2, a3
 	srliw	a1, a1, 31
-	sext.w	a0, a0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 64
+	not	a2, a2
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 

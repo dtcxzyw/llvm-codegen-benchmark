@@ -8,7 +8,7 @@ func0000000000000088:
 func0000000000000108:
 	zext.b	a2, a2
 	sltiu	a2, a2, 158
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
@@ -49,7 +49,7 @@ func000000000000010c:
 	zext.b	a2, a2
 	sltiu	a2, a2, 2
 	xor	a0, a0, a1
-	xori	a1, a2, 1
+	not	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -128,7 +128,7 @@ func000000000000008c:
 func000000000000012c:
 	sltu	a1, a1, a2
 	zext.b	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -155,7 +155,7 @@ func0000000000000141:
 	srai	a2, a2, 56
 	slti	a2, a2, 2
 	xor	a0, a0, a1
-	xori	a1, a2, 1
+	not	a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -164,7 +164,7 @@ func000000000000014c:
 	slli	a2, a2, 56
 	srli	a2, a2, 63
 	xor	a0, a0, a1
-	xori	a1, a2, 1
+	not	a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

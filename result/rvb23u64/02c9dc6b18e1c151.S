@@ -11,10 +11,10 @@ func0000000000000021:
 
 func000000000000002a:
 	lui	a2, 522240
-	srliw	a0, a0, 31
 	and	a1, a1, a2
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	srliw	a0, a0, 31
+	andn	a0, a1, a0
 	ret
 
 func0000000000000034:

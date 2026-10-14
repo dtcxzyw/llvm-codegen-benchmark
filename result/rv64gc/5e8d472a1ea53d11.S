@@ -48,7 +48,7 @@ func000000000000310c:
 	snez	a2, a2
 	sltiu	a1, a1, 13
 	snez	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

@@ -17,11 +17,10 @@ func000000000000008c:
 	ret
 
 func0000000000000181:
-	slli	a2, a2, 51
+	srli	a2, a2, 12
 	addi	a1, a1, -1
-	srli	a2, a2, 63
 	seqz	a1, a1
-	and	a1, a1, a2
+	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
 

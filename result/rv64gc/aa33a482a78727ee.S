@@ -100,7 +100,7 @@ func0000000000000908:
 	sext.w	a2, a2
 	sltiu	a1, a1, 6
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -157,7 +157,7 @@ func000000000000014a:
 	sext.w	a0, a0
 	srliw	a1, a1, 31
 	slt	a0, a2, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 
@@ -185,7 +185,7 @@ func0000000000000146:
 	sext.w	a0, a0
 	srliw	a1, a1, 31
 	slt	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

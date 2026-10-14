@@ -21,11 +21,10 @@ func0000000000000004:
 	cmp	w2, #0
 	mov	w9, #-1073741824
 	movk	w8, #57599, lsl #16
-	mov	w10, #805306367
+	and	w10, w1, #0xefffffff
 	csel	w8, w9, w8, eq
-	and	w9, w1, w10
-	orr	w8, w8, w9
-	orr	w0, w0, w8
+	orr	w9, w0, w10
+	orr	w0, w9, w8
 	ret
 
 func0000000000000006:

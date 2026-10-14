@@ -14,12 +14,11 @@ func0000000000000088:
 	ret
 
 func00000000000000a4:
+	lui	a3, 384
 	sub	a2, a2, a1
-	lui	a1, 384
+	addi	a3, a3, -23
 	sltu	a0, a0, a2
-	addi	a1, a1, -23
-	xori	a0, a0, 1
-	sltu	a1, a2, a1
-	and	a0, a0, a1
+	sltu	a1, a2, a3
+	andn	a0, a1, a0
 	ret
 

@@ -9,7 +9,7 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	mov	x9, #65075
+	mov	x9, #65074
 	tst	w2, #0xff
 	mov	w8, #257
 	movk	x9, #36731, lsl #16

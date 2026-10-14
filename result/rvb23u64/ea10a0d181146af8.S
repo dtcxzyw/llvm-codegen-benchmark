@@ -113,15 +113,14 @@ func00000000000000a4:
 
 func0000000000000052:
 	lui	a0, 246333
-	addi	a0, a0, 1802
 	lui	a1, 253133
+	addi	a0, a0, 1802
+	addi	a1, a1, -819
 	fmv.w.x	fa5, a0
-	addi	a0, a1, -819
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fle.s	a0, fa0, fa5
 	flt.s	a1, fa0, fa4
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000c2:
@@ -176,8 +175,7 @@ func0000000000000072:
 	fli.s	fa4, -1.0
 	feq.s	a0, fa0, fa4
 	flt.s	a1, fa0, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000047:
@@ -196,8 +194,7 @@ func0000000000000036:
 	fle.s	a0, fa5, fa0
 	fli.s	fa5, inf
 	flt.s	a1, fa0, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000074:
@@ -206,15 +203,13 @@ func0000000000000074:
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa0, fa5
 	flt.s	a1, fa4, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000007e:
 	fli.s	fa5, 1.0
 	feq.s	a0, fa0, fa5
 	feq.s	a1, fa0, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 

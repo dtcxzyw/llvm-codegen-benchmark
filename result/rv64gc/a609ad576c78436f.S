@@ -75,7 +75,7 @@ func0000000000000141:
 	zext.b	a0, a0
 	slti	a1, a1, 2
 	addi	a0, a0, -58
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -104,7 +104,7 @@ func0000000000000541:
 	zext.b	a0, a0
 	slti	a1, a1, 2
 	addi	a0, a0, -27
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -131,7 +131,7 @@ func000000000000010c:
 	sub	a1, a1, a2
 	zext.b	a0, a0
 	sltiu	a1, a1, 33
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

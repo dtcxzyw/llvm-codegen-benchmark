@@ -6,9 +6,9 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	ubfx	w8, w2, #8, #1
 	cmp	w0, w1
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w2, lsr #8
 	ret
 
 func000000000000010c:

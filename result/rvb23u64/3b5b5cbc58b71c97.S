@@ -11,17 +11,16 @@ func0000000000000144:
 	lui	a2, 1
 	srli	a1, a1, 3
 	addi	a2, a2, -95
-	slti	a0, a0, 8
 	sltu	a1, a1, a2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	slti	a0, a0, 8
+	andn	a0, a1, a0
 	ret
 
 func000000000000014c:
-	srli	a0, a0, 63
 	sext.w	a1, a1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	srli	a0, a0, 63
+	andn	a0, a1, a0
 	ret
 
 func000000000000002c:

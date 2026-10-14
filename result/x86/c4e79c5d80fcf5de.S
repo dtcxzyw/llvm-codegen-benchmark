@@ -9,12 +9,11 @@ func0000000000000021:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000018c:
-	andl	$2, %edx
-	shrl	%edx
+	shrb	%dl
 	testl	%esi, %esi
 	setne	%al
+	andb	%dil, %dl
 	andb	%dl, %al
-	andb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
@@ -30,20 +29,18 @@ func000000000000002c:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000188:
 	shrl	$21, %edx
-	andl	$1, %edx
 	cmpl	$7, %esi
 	setae	%al
+	andb	%dil, %dl
 	andb	%dl, %al
-	andb	%dil, %al
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
-	andl	$4, %edx
-	shrl	$2, %edx
+	shrb	$2, %dl
 	cmpl	$1, %esi
 	sete	%al
+	andb	%dil, %dl
 	andb	%dl, %al
-	andb	%dil, %al
 	retq
 

@@ -45,9 +45,9 @@ func000000000000002c:
 	ret
 
 func000000000000018a:
-	ubfx	w8, w1, #4, #1
 	cmp	w0, #0
-	csel	w0, wzr, w8, le
+	cset	w8, gt
+	and	w0, w8, w1, lsr #4
 	ret
 
 func0000000000000141:
@@ -58,9 +58,9 @@ func0000000000000141:
 	ret
 
 func0000000000000188:
-	ubfx	w8, w1, #2, #1
 	cmp	w0, #2
-	csel	w0, wzr, w8, ls
+	cset	w8, hi
+	and	w0, w8, w1, lsr #2
 	ret
 
 func0000000000000024:

@@ -14,7 +14,7 @@ func0000000000000144:
 	addi	a2, a2, -95
 	slti	a0, a0, 8
 	sltu	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -22,7 +22,7 @@ func000000000000014c:
 	sext.w	a1, a1
 	srli	a0, a0, 63
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

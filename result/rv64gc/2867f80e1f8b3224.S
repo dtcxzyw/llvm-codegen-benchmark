@@ -1,7 +1,7 @@
 func0000000000000546:
 	add	a1, a1, a0
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
@@ -42,7 +42,7 @@ func000000000000002c:
 func0000000000000146:
 	add	a1, a1, a0
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret

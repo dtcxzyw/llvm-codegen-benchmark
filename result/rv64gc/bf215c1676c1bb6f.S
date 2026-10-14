@@ -37,7 +37,7 @@ func00000000000000b4:
 	sub	a2, a0, a2
 	sltu	a0, a1, a0
 	sltiu	a1, a2, -16
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

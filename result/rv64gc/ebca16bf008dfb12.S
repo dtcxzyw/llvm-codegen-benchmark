@@ -10,7 +10,7 @@ func00000000000000f4:
 	addi	a2, a2, -416
 	fmv.w.x	fa5, a2
 	feq.s	a2, fa0, fa5
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

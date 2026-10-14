@@ -171,7 +171,6 @@ func0000000000000186:
 	.prefalign	4, .Lfunc_end19, nop
 func0000000000000188:
 	shrq	$32, %rsi
-	andl	$1, %esi
 	cmpl	$2, %edi
 	setae	%al
 	andb	%sil, %al
@@ -180,7 +179,6 @@ func0000000000000188:
 	.prefalign	4, .Lfunc_end20, nop
 func0000000000000194:
 	shrq	$46, %rsi
-	andl	$1, %esi
 	cmpl	$7, %edi
 	setb	%al
 	andb	%sil, %al

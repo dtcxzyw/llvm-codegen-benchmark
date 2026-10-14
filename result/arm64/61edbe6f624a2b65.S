@@ -32,10 +32,10 @@ func0000000000000101:
 
 func0000000000000184:
 	mov	x8, #9007199254740991
-	ubfx	w9, w1, #2, #1
-	mov	x10, #18014398509481983
+	mov	x9, #18014398509481983
 	add	x8, x0, x8
-	cmp	x8, x10
-	csel	w0, wzr, w9, hs
+	cmp	x8, x9
+	cset	w8, lo
+	and	w0, w8, w1, lsr #2
 	ret
 

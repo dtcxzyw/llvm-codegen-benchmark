@@ -130,7 +130,7 @@ func0000000000000052:
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa0, fa5
 	flt.s	a1, fa0, fa4
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -190,7 +190,7 @@ func0000000000000072:
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa0, fa5
 	flt.s	a1, fa0, fa4
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -212,7 +212,7 @@ func0000000000000036:
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa0
 	flt.s	a1, fa0, fa4
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -222,7 +222,7 @@ func0000000000000074:
 	fmv.w.x	fa4, zero
 	feq.s	a0, fa0, fa5
 	flt.s	a1, fa4, fa0
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -231,7 +231,7 @@ func000000000000007e:
 	fmv.w.x	fa5, a0
 	feq.s	a0, fa0, fa5
 	feq.s	a1, fa0, fa0
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

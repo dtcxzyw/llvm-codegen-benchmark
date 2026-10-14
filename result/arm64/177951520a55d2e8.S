@@ -1,9 +1,8 @@
 func000000000000018c:
 	cmn	w1, #1
-	and	w9, w2, #0x4
 	cset	w8, ne
 	and	w8, w0, w8
-	and	w0, w8, w9, lsr #2
+	and	w0, w8, w2, lsr #2
 	ret
 
 func0000000000000021:
@@ -24,10 +23,9 @@ func0000000000000181:
 
 func000000000000002c:
 	cmp	w1, #0
-	and	w9, w2, #0x400
 	cset	w8, eq
 	and	w8, w0, w8
-	and	w0, w8, w9, lsr #10
+	and	w0, w8, w2, lsr #10
 	ret
 
 func0000000000000038:

@@ -6,8 +6,8 @@ func000000000000002c:
 	ret
 
 func000000000000018c:
-	bexti	a1, a1, 12
-	srli	a0, a0, 5
+	srli	a1, a1, 12
+	bexti	a0, a0, 5
 	and	a0, a0, a1
 	ret
 
@@ -18,8 +18,9 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	bexti	a1, a1, 9
-	zext.h	a0, a0
-	czero.nez	a0, a1, a0
+	slli	a0, a0, 48
+	srli	a1, a1, 9
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 

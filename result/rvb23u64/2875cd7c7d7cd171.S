@@ -8,15 +8,16 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	bexti	a2, a2, 2
 	addiw	a1, a1, -2
-	czero.nez	a1, a2, a1
+	srli	a2, a2, 2
+	seqz	a1, a1
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000018a:
 	sext.w	a1, a1
-	bexti	a2, a2, 21
+	srli	a2, a2, 21
 	sgtz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

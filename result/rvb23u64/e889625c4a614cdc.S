@@ -8,9 +8,10 @@ func0000000000000029:
 	ret
 
 func0000000000000181:
-	bexti	a2, a2, 4
+	srli	a2, a2, 4
 	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	seqz	a0, a0
+	and	a0, a0, a2
 	ret
 
 func000000000000018c:

@@ -6,9 +6,8 @@ func0000000000000072:
 	fld	fa4, %lo(.LCPI0_0)(a1)
 	fmadd.d	fa5, fa5, fa4, fa1
 	fmv.d.x	fa4, zero
-	feq.d	a0, fa5, fa0
-	flt.d	a1, fa5, fa4
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	flt.d	a0, fa5, fa4
+	feq.d	a1, fa5, fa0
+	andn	a0, a0, a1
 	ret
 

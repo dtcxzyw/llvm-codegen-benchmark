@@ -14,9 +14,9 @@ func0000000000000026:
 
 func0000000000000121:
 	andi	a2, a2, 2
+	seqz	a2, a2
 	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a2
+	andn	a0, a2, a0
 	ret
 
 func0000000000000184:

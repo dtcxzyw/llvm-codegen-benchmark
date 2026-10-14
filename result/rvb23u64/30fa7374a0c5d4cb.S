@@ -56,10 +56,9 @@ func00000000000004c6:
 
 func0000000000000504:
 	sub	a1, a1, a2
-	sltiu	a0, a0, 2
 	sltiu	a1, a1, 2
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func0000000000000024:
@@ -107,10 +106,10 @@ func0000000000000421:
 
 func000000000000010c:
 	sub	a1, a1, a2
-	sltiu	a0, a0, 401
 	addi	a1, a1, -400
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 401
+	andn	a0, a1, a0
 	ret
 
 func00000000000000c6:

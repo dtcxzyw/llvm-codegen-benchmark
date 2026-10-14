@@ -37,7 +37,7 @@ func0000000000000072:
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa1, fa5
 	flt.s	a1, fa0, fa5
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -179,7 +179,7 @@ func000000000000007a:
 	fmv.w.x	fa5, zero
 	feq.s	a0, fa1, fa5
 	fle.s	a1, fa0, fa5
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

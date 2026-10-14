@@ -21,11 +21,11 @@ func000000000000042c:
 	ret
 
 func000000000000054c:
-	addw	a1, a1, a0
-	slti	a1, a1, 9
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sext.w	a2, a0
+	addw	a0, a0, a1
+	slti	a0, a0, 9
+	snez	a1, a2
+	andn	a0, a1, a0
 	ret
 
 func0000000000000546:
@@ -36,12 +36,11 @@ func0000000000000546:
 	ret
 
 func000000000000014a:
-	addw	a1, a1, a0
-	sext.w	a0, a0
-	slti	a1, a1, 76
-	xori	a1, a1, 1
-	sgtz	a0, a0
-	and	a0, a0, a1
+	sext.w	a2, a0
+	addw	a0, a0, a1
+	slti	a0, a0, 76
+	sgtz	a1, a2
+	andn	a0, a1, a0
 	ret
 
 func00000000000004c6:

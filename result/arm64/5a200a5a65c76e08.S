@@ -14,7 +14,7 @@ func0000000000000041:
 	ret
 
 func000000000000006c:
-	ubfx	x8, x1, #62, #1
+	lsr	x8, x1, #62
 	and	w0, w0, w8
 	ret
 

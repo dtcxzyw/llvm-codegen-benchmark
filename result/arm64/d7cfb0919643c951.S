@@ -1,15 +1,15 @@
 func0000000000000184:
-	and	w8, w2, #0x8
+	and	w8, w1, w2, lsr #3
 	cmp	w0, #8
-	and	w8, w1, w8, lsr #3
-	csel	w0, wzr, w8, hs
+	cset	w9, lo
+	and	w0, w9, w8
 	ret
 
 func0000000000000181:
-	and	w8, w2, #0x80000
+	and	w8, w1, w2, lsr #19
 	cmp	w0, #0
-	and	w8, w1, w8, lsr #19
-	csel	w0, wzr, w8, ne
+	cset	w9, eq
+	and	w0, w9, w8
 	ret
 
 func000000000000002c:
@@ -30,9 +30,9 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	and	w8, w2, #0x2
+	and	w8, w1, w2, lsr #1
 	cmp	w0, #0
-	and	w8, w1, w8, lsr #1
-	csel	w0, wzr, w8, eq
+	cset	w9, ne
+	and	w0, w9, w8
 	ret
 

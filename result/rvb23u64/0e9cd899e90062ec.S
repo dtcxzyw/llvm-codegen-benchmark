@@ -9,11 +9,11 @@ func0000000000000021:
 
 func00000000000002ac:
 	andi	a2, a2, 15
+	sext.w	a0, a0
 	andi	a1, a1, 15
 	sltu	a1, a2, a1
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000028c:
@@ -34,13 +34,12 @@ func0000000000000181:
 
 func00000000000002a4:
 	lui	a3, 524288
+	sext.w	a0, a0
 	slli	a1, a1, 33
 	andn	a2, a2, a3
 	srli	a1, a1, 33
-	sext.w	a0, a0
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
 	sltiu	a0, a0, 31
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 

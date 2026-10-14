@@ -9,12 +9,12 @@ func000000000000101e:
 	ret
 
 func000000000000581e:
+	fclass.d	a0, fa0
 	fli.d	fa5, 1.0
-	flt.d	a0, fa5, fa0
-	fclass.d	a1, fa0
-	xori	a0, a0, 1
-	andi	a1, a1, 120
-	czero.eqz	a0, a0, a1
+	flt.d	a1, fa5, fa0
+	andi	a0, a0, 120
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 .LCPI2_0:
@@ -22,10 +22,10 @@ func000000000000581e:
 func000000000000181e:
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	fle.d	a0, fa5, fa0
-	fclass.d	a1, fa0
-	xori	a0, a0, 1
-	andi	a1, a1, 120
-	czero.eqz	a0, a0, a1
+	fclass.d	a0, fa0
+	fle.d	a1, fa5, fa0
+	andi	a0, a0, 120
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

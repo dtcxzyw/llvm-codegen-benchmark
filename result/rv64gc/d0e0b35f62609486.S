@@ -27,15 +27,14 @@ func000000000000030c:
 	zext.b	a1, a1
 	sltiu	a1, a1, 3
 	slli	a0, a0, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 37
 	slli	a0, a0, 48
-	srli	a1, a1, 63
+	srli	a1, a1, 26
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -102,9 +102,9 @@ func0000000000000081:
 
 func0000000000000101:
 	andi	a1, a0, 7
-	sltiu	a0, a0, 256
 	addi	a1, a1, -6
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 256
+	andn	a0, a1, a0
 	ret
 

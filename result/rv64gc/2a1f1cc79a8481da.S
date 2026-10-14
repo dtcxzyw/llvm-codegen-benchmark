@@ -9,9 +9,8 @@ func0000000000000058:
 
 func0000000000000302:
 	zext.b	a1, a1
-	slli	a2, a2, 38
 	addi	a1, a1, -95
-	srli	a2, a2, 63
+	srli	a2, a2, 25
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

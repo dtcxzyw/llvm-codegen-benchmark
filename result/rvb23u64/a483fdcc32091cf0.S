@@ -20,11 +20,11 @@ func0000000000000842:
 	ret
 
 func0000000000000850:
-	zext.b	a0, a0
 	addi	a1, a1, -15
-	sltiu	a0, a0, 2
+	zext.b	a0, a0
 	andi	a1, a1, 247
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 

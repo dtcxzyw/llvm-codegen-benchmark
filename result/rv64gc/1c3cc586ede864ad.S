@@ -16,7 +16,7 @@ func000000000000014a:
 	ret
 
 func00000000000000ca:
-	srliw	a2, a2, 31
+	srli	a2, a2, 31
 	sext.w	a0, a0
 	and	a1, a1, a2
 	sgtz	a0, a0
@@ -46,7 +46,7 @@ func0000000000000101:
 	addiw	a0, a0, -22
 	sltiu	a2, a2, 52
 	seqz	a0, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

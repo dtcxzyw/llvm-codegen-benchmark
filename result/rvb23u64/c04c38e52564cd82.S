@@ -15,9 +15,9 @@ func000000000000002c:
 func0000000000000301:
 	and	a1, a1, a2
 	sext.w	a0, a0
+	seqz	a1, a1
 	sltiu	a0, a0, 2
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000cc:

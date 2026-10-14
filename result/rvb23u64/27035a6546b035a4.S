@@ -21,9 +21,9 @@ func0000000000000426:
 
 func000000000000042a:
 	sext.w	a1, a1
+	snez	a0, a0
 	slti	a1, a1, 1087
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000438:

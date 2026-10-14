@@ -116,12 +116,12 @@ func0000000000006041:
 
 func0000000000006281:
 	addiw	a2, a2, -2
-	srliw	a1, a1, 31
-	snez	a2, a2
-	xori	a1, a1, 1
 	sext.w	a0, a0
-	or	a1, a1, a2
-	czero.nez	a0, a1, a0
+	snez	a2, a2
+	srliw	a1, a1, 31
+	orn	a1, a2, a1
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000006042:
@@ -213,10 +213,10 @@ func0000000000005281:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	max	a1, a1, a2
-	slti	a1, a1, 7
-	xori	a1, a1, 1
 	addiw	a0, a0, -6
-	czero.nez	a0, a1, a0
+	slti	a1, a1, 7
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000848:

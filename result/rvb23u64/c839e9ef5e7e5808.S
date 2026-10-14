@@ -46,10 +46,9 @@ func0000000000000101:
 
 func00000000000000c8:
 	sext.w	a0, a0
-	sltiu	a0, a0, 5
 	srli	a1, a1, 63
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 5
+	andn	a0, a1, a0
 	ret
 
 func000000000000010c:

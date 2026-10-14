@@ -64,8 +64,8 @@ func0000000000000581:
 
 func0000000000000141:
 	or	a1, a1, a2
+	seqz	a1, a1
 	srli	a0, a0, 63
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 

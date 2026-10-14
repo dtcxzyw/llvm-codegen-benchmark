@@ -49,8 +49,7 @@ func0000000000000301:
 
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000018a:
-	andl	$2, %esi
-	shrl	%esi
+	shrb	%sil
 	testq	%rdi, %rdi
 	setns	%al
 	andb	%sil, %al

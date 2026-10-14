@@ -157,7 +157,7 @@ func000000000000070c:
 	addi	a1, a1, -1
 	sltiu	a0, a0, 10
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -166,7 +166,7 @@ func000000000000050c:
 	addi	a1, a1, -1
 	sltiu	a0, a0, 10
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

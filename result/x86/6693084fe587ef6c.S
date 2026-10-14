@@ -39,7 +39,6 @@ func000000000000008c:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
-	andb	$8, %sil
 	shrb	$3, %sil
 	testl	%edi, %edi
 	setne	%al

@@ -22,7 +22,6 @@ func0000000000000188:
 func0000000000000181:
 	shrl	$25, %edx
 	andl	%esi, %edx
-	andl	$1, %edx
 	cmpq	$56, %rdi
 	sete	%al
 	andb	%dl, %al

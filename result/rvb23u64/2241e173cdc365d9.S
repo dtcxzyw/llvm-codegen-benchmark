@@ -139,10 +139,9 @@ func00000000000008b8:
 	lui	a0, 273536
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa2, fa5
-	flt.s	a1, fa4, fa1
-	feq.s	a2, fa0, fa5
-	xori	a1, a1, 1
-	and	a0, a0, a2
+	feq.s	a1, fa0, fa5
+	flt.s	a2, fa4, fa1
 	and	a0, a0, a1
+	andn	a0, a0, a2
 	ret
 

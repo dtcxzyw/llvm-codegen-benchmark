@@ -1,8 +1,7 @@
 func000000000000018c:
 	zext.b	a1, a0
-	slli	a0, a0, 58
 	addi	a1, a1, -255
-	srli	a0, a0, 63
+	srli	a0, a0, 5
 	snez	a1, a1
 	and	a0, a0, a1
 	ret

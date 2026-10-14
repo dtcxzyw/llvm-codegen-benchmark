@@ -2,7 +2,6 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
 	shrl	$11, %esi
-	andl	$1, %esi
 	addb	$-58, %dil
 	cmpb	$-2, %dil
 	setb	%al

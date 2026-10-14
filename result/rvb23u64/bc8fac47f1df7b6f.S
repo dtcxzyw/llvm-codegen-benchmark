@@ -32,14 +32,13 @@ func0000000000002181:
 	ret
 
 func000000000000202a:
-	sext.w	a1, a1
-	sext.w	a0, a0
 	lui	a3, 4096
+	sext.w	a0, a0
+	sext.w	a1, a1
 	sltu	a2, a3, a2
-	slti	a0, a0, 9
 	czero.nez	a1, a2, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	slti	a0, a0, 9
+	andn	a0, a1, a0
 	ret
 
 func000000000000318c:

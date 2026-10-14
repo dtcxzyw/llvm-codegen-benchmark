@@ -27,7 +27,7 @@ func000000000000030c:
 	slli	a3, a3, 29
 	addi	a3, a3, -1
 	xor	a0, a0, a3
-	srliw	a2, a2, 31
+	srli	a2, a2, 31
 	or	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1

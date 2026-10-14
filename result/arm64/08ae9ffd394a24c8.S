@@ -12,9 +12,8 @@ func0000000000000002:
 	mov	w8, #1026
 	tst	w0, #0x1
 	mov	w9, #1024
-	and	w10, w0, #0x3ffffffe
 	csel	w8, w9, w8, eq
-	and	w9, w10, #0xfffffbff
+	and	w9, w0, #0x3ffffffe
 	orr	w0, w8, w9
 	ret
 

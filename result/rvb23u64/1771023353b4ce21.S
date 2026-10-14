@@ -25,8 +25,8 @@ func000000000000004c:
 func00000000000000ac:
 	fle.d	a1, fa0, fa1
 	zext.b	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000010c:

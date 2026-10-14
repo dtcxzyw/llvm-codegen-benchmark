@@ -55,9 +55,8 @@ func000000000000002c:
 
 func0000000000000194:
 	slli	a1, a1, 32
-	slli	a2, a2, 33
 	srli	a1, a1, 32
-	srli	a2, a2, 63
+	srli	a2, a2, 30
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

@@ -52,8 +52,7 @@ func0000000000000078:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa1, fa5
 	feq.s	a2, fa0, fa5
-	xori	a1, a1, 1
-	and	a0, a0, a2
+	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
 
@@ -61,8 +60,7 @@ func0000000000000074:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa1, fa5
 	flt.s	a2, fa5, fa0
-	xori	a1, a1, 1
-	and	a0, a0, a2
+	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

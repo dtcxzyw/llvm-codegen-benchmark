@@ -13,25 +13,23 @@ func000000000000018c:
 
 func000000000000012c:
 	sltu	a2, a1, a2
-	xori	a2, a2, 1
-	addi	a1, a1, 1
-	czero.eqz	a1, a2, a1
+	sltiu	a1, a1, -1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func00000000000000ac:
 	sltu	a2, a2, a1
-	xori	a2, a2, 1
-	addi	a1, a1, 1
-	czero.eqz	a1, a2, a1
+	sltiu	a1, a1, -1
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000128:
-	sltu	a2, a1, a2
-	xori	a2, a2, 1
-	srli	a1, a1, 14
-	czero.eqz	a1, a2, a1
+	srli	a3, a1, 14
+	sltu	a1, a1, a2
+	snez	a2, a3
+	andn	a1, a2, a1
 	and	a0, a0, a1
 	ret
 

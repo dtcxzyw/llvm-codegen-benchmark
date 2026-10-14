@@ -33,7 +33,7 @@ func0000000000000084:
 
 func0000000000000124:
 	sltu	a2, a0, a2
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -61,7 +61,7 @@ func00000000000000eb:
 
 func0000000000000166:
 	slt	a2, a0, a2
-	xori	a2, a2, 1
+	not	a2, a2
 	slt	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -116,14 +116,14 @@ func0000000000000088:
 
 func00000000000000ea:
 	slt	a2, a2, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	ret
 
 func00000000000000a8:
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
@@ -145,7 +145,7 @@ func00000000000000cb:
 
 func00000000000000a4:
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
+	not	a2, a2
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

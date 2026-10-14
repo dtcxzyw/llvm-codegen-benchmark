@@ -33,8 +33,7 @@ func000000000000030c:
 func000000000000020c:
 	sext.w	a2, a2
 	sltiu	a2, a2, 137
-	xori	a2, a2, 1
-	or	a1, a1, a2
+	orn	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

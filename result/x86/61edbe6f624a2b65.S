@@ -43,8 +43,7 @@ func0000000000000101:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000184:
-	andl	$4, %esi
-	shrl	$2, %esi
+	shrb	$2, %sil
 	movabsq	$9007199254740991, %rax
 	addq	%rdi, %rax
 	movabsq	$18014398509481983, %rcx

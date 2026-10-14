@@ -3,7 +3,7 @@ func000000000000194a:
 	sext.w	a0, a0
 	slti	a1, a1, 61
 	slti	a2, a0, -1137
-	xori	a1, a1, 1
+	not	a1, a1
 	slti	a0, a0, -1085
 	or	a1, a1, a2
 	and	a0, a0, a1

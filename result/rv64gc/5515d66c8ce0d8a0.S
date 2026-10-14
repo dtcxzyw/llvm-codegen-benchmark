@@ -8,7 +8,7 @@ func0000000000000072:
 	fmv.d.x	fa3, zero
 	feq.d	a0, fa5, fa4
 	flt.d	a1, fa5, fa3
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

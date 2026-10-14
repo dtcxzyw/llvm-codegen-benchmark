@@ -25,9 +25,9 @@ func0000000000000181:
 
 func000000000000010c:
 	sltiu	a2, a2, 8
-	xori	a2, a2, 1
-	and	a1, a1, a2
-	czero.eqz	a0, a1, a0
+	andn	a1, a1, a2
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000008c:

@@ -1,7 +1,7 @@
 func0000000000000070:
-	add	x8, x0, x2
-	neg	w9, w4
-	lsr	x0, x8, x9
+	neg	w8, w4
+	add	x9, x0, x2
+	lsr	x0, x9, x8
 	ret
 
 func000000000000002c:
@@ -12,14 +12,14 @@ func000000000000002c:
 	ret
 
 func0000000000000060:
-	add	x8, x0, x2
-	neg	w9, w4
-	lsr	x0, x8, x9
+	neg	w8, w4
+	add	x9, x0, x2
+	lsr	x0, x9, x8
 	ret
 
 func0000000000000078:
-	add	x8, x0, x2
-	neg	w9, w4
-	lsr	x0, x8, x9
+	neg	w8, w4
+	add	x9, x0, x2
+	lsr	x0, x9, x8
 	ret
 

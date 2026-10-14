@@ -86,7 +86,7 @@ func000000000000010c:
 	srli	a1, a1, 48
 	sltiu	a1, a1, 5
 	addi	a0, a0, -1
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -115,7 +115,7 @@ func0000000000000104:
 	srli	a1, a1, 48
 	zext.b	a0, a0
 	sltiu	a1, a1, 8
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
 	ret
@@ -126,7 +126,7 @@ func0000000000000101:
 	zext.b	a1, a1
 	sltiu	a1, a1, 33
 	addi	a0, a0, -336
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -135,7 +135,7 @@ func000000000000030c:
 	zext.b	a1, a1
 	sltiu	a1, a1, 2
 	slli	a0, a0, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

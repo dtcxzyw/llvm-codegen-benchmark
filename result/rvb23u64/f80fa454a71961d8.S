@@ -54,8 +54,8 @@ func00000000000000e1:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000004a:
@@ -94,8 +94,8 @@ func00000000000000ec:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000010c:
@@ -108,9 +108,9 @@ func000000000000010c:
 func00000000000000a1:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000044:

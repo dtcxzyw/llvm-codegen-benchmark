@@ -84,7 +84,6 @@ func0000000000000081:
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000194:
 	shrl	$26, %esi
-	andl	$1, %esi
 	movzbl	%dil, %eax
 	cmpl	$51, %eax
 	setb	%al

@@ -62,8 +62,8 @@ func000000000000058c:
 
 func00000000000000ac:
 	addiw	a2, a2, -1
+	snez	a2, a2
 	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a2
+	andn	a0, a2, a0
 	ret
 

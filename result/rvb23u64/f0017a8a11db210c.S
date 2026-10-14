@@ -9,9 +9,8 @@ func000000000000054a:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a1, a0, a1
-	xori	a1, a1, 1
 	sgtz	a0, a0
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000084:

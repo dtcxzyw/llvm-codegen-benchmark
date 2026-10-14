@@ -51,8 +51,7 @@ func000000000000004c:
 func00000000000000c4:
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
-	slli	a0, a0, 39
-	srli	a0, a0, 63
+	srli	a0, a0, 24
 	and	a0, a0, a1
 	ret
 

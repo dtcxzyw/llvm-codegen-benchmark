@@ -9,7 +9,7 @@ func0000000000000001:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000021:
 	shrl	$24, %edi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	sete	%al
 	retq
 

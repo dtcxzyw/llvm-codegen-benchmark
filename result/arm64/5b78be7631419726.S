@@ -1,7 +1,7 @@
 func0000000000000d94:
-	ubfx	w8, w2, #30, #1
-	add	x9, x1, #1
-	cmp	x9, x0
-	csel	w0, wzr, w8, hs
+	add	x8, x1, #1
+	cmp	x8, x0
+	cset	w8, lo
+	and	w0, w8, w2, lsr #30
 	ret
 

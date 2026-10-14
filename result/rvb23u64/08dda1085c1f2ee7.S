@@ -212,10 +212,10 @@ func000000000000070c:
 
 func0000000000000141:
 	addiw	a1, a1, 1
-	slti	a1, a1, 2
-	xori	a1, a1, 1
 	addiw	a0, a0, -1
-	czero.nez	a0, a1, a0
+	slti	a1, a1, 2
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000181:

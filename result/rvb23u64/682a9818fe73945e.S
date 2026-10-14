@@ -3,8 +3,7 @@ func0000000000000072:
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa0, fa5
 	flt.d	a1, fa0, fa4
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000084:

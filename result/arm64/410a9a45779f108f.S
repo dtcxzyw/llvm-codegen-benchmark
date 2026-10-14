@@ -2,10 +2,9 @@ func0000000000000104:
 	mov	w8, #65039
 	movk	w8, #2, lsl #16
 	cmp	w2, w8
-	eor	w8, w1, #0x1
-	cset	w9, hi
+	cset	w8, hi
 	cmp	w0, #272, lsl #12
-	and	w8, w9, w8
+	bic	w8, w8, w1
 	csel	w0, wzr, w8, hs
 	ret
 
@@ -27,10 +26,9 @@ func000000000000030c:
 
 func0000000000000301:
 	cmp	w2, #0
-	eor	w8, w1, #0x1
-	cset	w9, eq
+	cset	w8, eq
 	cmp	w0, #0
-	and	w8, w9, w8
+	bic	w8, w8, w1
 	csel	w0, wzr, w8, ne
 	ret
 

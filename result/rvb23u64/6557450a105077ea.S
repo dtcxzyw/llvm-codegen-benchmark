@@ -102,11 +102,11 @@ func0000000000000c2c:
 
 func0000000000000f0c:
 	andi	a2, a2, 1
+	sext.w	a0, a0
 	addw	a1, a1, a2
 	sltiu	a1, a1, 2
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000024:
@@ -139,11 +139,11 @@ func0000000000000184:
 
 func0000000000000f01:
 	andi	a2, a2, 1
+	sext.w	a0, a0
 	addw	a1, a1, a2
 	sltiu	a1, a1, 2
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000c38:

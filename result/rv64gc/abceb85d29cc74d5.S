@@ -38,7 +38,7 @@ func000000000000018b:
 	ld	a3, %lo(.LCPI3_0)(a3)
 	slt	a2, a1, a2
 	xor	a1, a1, a3
-	xori	a2, a2, 1
+	not	a2, a2
 	snez	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
@@ -51,7 +51,7 @@ func0000000000000187:
 	ld	a3, %lo(.LCPI4_0)(a3)
 	slt	a2, a2, a1
 	xor	a1, a1, a3
-	xori	a2, a2, 1
+	not	a2, a2
 	snez	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1

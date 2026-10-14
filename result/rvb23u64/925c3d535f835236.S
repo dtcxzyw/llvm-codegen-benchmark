@@ -14,10 +14,10 @@ func000000000000002c:
 
 func000000000000030c:
 	sext.w	a0, a0
-	sltiu	a0, a0, 8
 	andi	a1, a1, 60
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 8
+	andn	a0, a1, a0
 	ret
 
 func000000000000028c:

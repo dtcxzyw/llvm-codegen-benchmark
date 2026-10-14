@@ -29,7 +29,6 @@ func0000000000000302:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000318:
 	shrq	$32, %rdx
-	andl	$1, %edx
 	testl	%esi, %esi
 	setne	%al
 	andb	%dl, %al
@@ -39,7 +38,6 @@ func0000000000000318:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000310:
 	shrq	$46, %rdx
-	andl	$1, %edx
 	cmpl	$16, %esi
 	setae	%al
 	andb	%dl, %al

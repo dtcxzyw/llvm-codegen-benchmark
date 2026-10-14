@@ -14,7 +14,7 @@ func0000000000000164:
 	addiw	a2, a2, -54
 	slt	a0, a0, a1
 	sltiu	a1, a2, 25
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -112,7 +112,7 @@ func000000000000012c:
 	addiw	a2, a2, -1
 	sltu	a0, a0, a1
 	snez	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

@@ -43,7 +43,7 @@ func000000000000202a:
 	seqz	a1, a1
 	slti	a0, a0, 9
 	and	a1, a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

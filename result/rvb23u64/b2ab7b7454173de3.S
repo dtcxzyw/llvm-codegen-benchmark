@@ -18,14 +18,14 @@ func0000000000000008:
 	ret
 
 func000000000000001e:
-	zext.b	a2, a2
 	andi	a1, a1, 1
+	andi	a2, a2, 223
 	slli	a2, a2, 16
 	slli	a1, a1, 31
-	lui	a3, 516
-	sub	a3, a3, a1
+	sub	a2, a2, a1
 	or	a0, a0, a2
-	or	a0, a0, a3
+	bseti	a0, a0, 14
+	bseti	a0, a0, 21
 	ret
 
 func000000000000000e:

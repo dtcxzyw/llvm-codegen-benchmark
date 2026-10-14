@@ -48,8 +48,8 @@ func000000000000008c:
 func0000000000000121:
 	sltu	a1, a1, a2
 	zext.b	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000028c:
@@ -138,9 +138,9 @@ func000000000000030c:
 func00000000000000e1:
 	slt	a1, a2, a1
 	zext.b	a0, a0
-	xori	a1, a1, 1
 	addi	a0, a0, -16
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000086:

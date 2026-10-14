@@ -7,10 +7,11 @@ func000000000000018a:
 	ret
 
 func000000000000018c:
-	ubfx	x8, x2, #32, #1
+	lsr	x8, x2, #32
 	cmp	w0, #0
+	cset	w9, ne
 	and	w8, w8, w1
-	csel	w0, wzr, w8, eq
+	and	w0, w9, w8
 	ret
 
 func0000000000000181:

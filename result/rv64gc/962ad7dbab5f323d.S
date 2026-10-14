@@ -9,7 +9,7 @@ func000000000000082c:
 func00000000000008ac:
 	add	a1, a1, a2
 	sltu	a1, a1, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

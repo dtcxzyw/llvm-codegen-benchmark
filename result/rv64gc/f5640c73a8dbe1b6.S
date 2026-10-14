@@ -36,7 +36,7 @@ func0000000000001c26:
 	sext.w	a2, a2
 	sext.w	a3, a0
 	slt	a1, a2, a1
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a2, a3
 	and	a1, a1, a2
 	srliw	a0, a0, 31
@@ -59,7 +59,7 @@ func0000000000002c2a:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a1, a1, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a2, a0
 	and	a1, a1, a2
 	sgtz	a0, a0

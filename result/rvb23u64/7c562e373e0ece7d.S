@@ -11,20 +11,18 @@ func0000000000000041:
 
 func0000000000000201:
 	zext.b	a2, a2
-	sltiu	a2, a2, 4
 	zext.b	a0, a0
-	xori	a2, a2, 1
-	or	a1, a1, a2
+	sltiu	a2, a2, 4
+	orn	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 
 func0000000000000281:
 	slli	a2, a2, 56
-	srli	a2, a2, 63
 	zext.b	a0, a0
-	xori	a2, a2, 1
-	or	a1, a1, a2
+	srli	a2, a2, 63
+	orn	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

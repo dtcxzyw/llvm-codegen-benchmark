@@ -102,10 +102,9 @@ func0000000000000481:
 func0000000000000306:
 	zext.b	a0, a0
 	addiw	a1, a1, 7
-	sltiu	a0, a0, 64
 	slti	a1, a1, 64
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 64
+	andn	a0, a1, a0
 	ret
 
 func000000000000008c:

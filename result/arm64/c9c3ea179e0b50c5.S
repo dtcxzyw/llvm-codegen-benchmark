@@ -7,8 +7,8 @@ func0000000000000042:
 	ret
 
 func0000000000000308:
-	ubfx	w8, w1, #5, #1
 	tst	w0, #0xc0
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #5
 	ret
 

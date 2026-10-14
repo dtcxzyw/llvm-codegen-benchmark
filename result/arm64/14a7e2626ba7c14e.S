@@ -1,6 +1,6 @@
 func0000000000000004:
-	orr	x8, x0, x1
-	neg	x9, x2
-	lsr	x0, x8, x9
+	neg	x8, x2
+	orr	x9, x0, x1
+	lsr	x0, x9, x8
 	ret
 

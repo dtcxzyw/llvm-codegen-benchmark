@@ -19,7 +19,7 @@ func00000000000000a4:
 	lui	a1, 384
 	sltu	a0, a0, a2
 	addi	a1, a1, -23
-	xori	a0, a0, 1
+	not	a0, a0
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

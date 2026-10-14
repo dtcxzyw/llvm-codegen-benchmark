@@ -1,5 +1,5 @@
 func0000000000000018:
-	ubfx	x8, x1, #62, #1
+	lsr	x8, x1, #62
 	and	w0, w0, w8
 	ret
 

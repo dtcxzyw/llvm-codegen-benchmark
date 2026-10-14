@@ -38,12 +38,11 @@ func0000000000000024:
 
 func0000000000000504:
 	sext.w	a2, a2
-	addiw	a1, a1, -15
 	slti	a2, a2, 1983
+	addiw	a1, a1, -15
+	andn	a0, a0, a2
 	sltiu	a1, a1, 7
-	xori	a2, a2, 1
 	and	a0, a0, a1
-	and	a0, a0, a2
 	ret
 
 func0000000000000624:

@@ -56,10 +56,10 @@ func000000000000002c:
 
 func0000000000000038:
 	zext.b	a0, a0
-	sltiu	a0, a0, 3
 	zext.b	a1, a1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 3
+	andn	a0, a1, a0
 	ret
 
 func000000000000008c:

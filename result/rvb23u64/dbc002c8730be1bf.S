@@ -9,10 +9,10 @@ func000000000000002c:
 	ret
 
 func0000000000000101:
-	sltiu	a1, a1, 2
-	xori	a1, a1, 1
 	addiw	a2, a0, -4
-	czero.nez	a1, a1, a2
+	sltiu	a1, a1, 2
+	seqz	a2, a2
+	andn	a1, a2, a1
 	addi	a0, a0, -2
 	czero.nez	a0, a0, a1
 	addi	a0, a0, 2

@@ -68,11 +68,11 @@ func00000000000000c1:
 func000000000000014c:
 	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a0, a0
 	min	a1, a1, a2
 	slti	a1, a1, 2
-	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000141:

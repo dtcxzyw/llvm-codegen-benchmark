@@ -6,14 +6,14 @@ func000000000000014c:
 	ret
 
 func0000000000000101:
-	subw	a1, a1, a2
+	lui	a3, 427606
 	sext.w	a0, a0
-	lui	a2, 427606
+	addi	a3, a3, 356
+	subw	a1, a1, a2
+	xor	a0, a0, a3
 	sltiu	a1, a1, 54
-	addi	a2, a2, 356
-	xori	a1, a1, 1
-	xor	a0, a0, a2
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000141:

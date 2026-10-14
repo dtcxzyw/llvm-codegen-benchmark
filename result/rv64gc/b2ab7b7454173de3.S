@@ -24,7 +24,7 @@ func0000000000000008:
 
 func000000000000001e:
 	andi	a3, a1, 1
-	zext.b	a1, a2
+	andi	a1, a2, 223
 	slli	a1, a1, 16
 	lui	a2, 524804
 	bnez	a3, .LBB2_2

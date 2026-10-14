@@ -1,7 +1,6 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
-	andb	$2, %sil
 	shrb	%sil
 	addl	$-47, %edi
 	cmpl	$2, %edi

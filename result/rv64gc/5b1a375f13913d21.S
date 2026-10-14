@@ -13,7 +13,7 @@ func0000000000000097:
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa0, fa5
 	flt.s	a1, fa1, fa4
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000121:
 	andi	a2, a2, 1
 	sltu	a0, a0, a1
 	seqz	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -36,7 +36,7 @@ func00000000000000a1:
 	addi	a2, a2, -1
 	sltu	a0, a1, a0
 	seqz	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -70,8 +70,7 @@ func0000000000000181:
 	ret
 
 func0000000000000194:
-	slli	a2, a2, 33
-	srli	a2, a2, 63
+	srli	a2, a2, 30
 	sltu	a0, a0, a1
 	and	a0, a0, a2
 	ret

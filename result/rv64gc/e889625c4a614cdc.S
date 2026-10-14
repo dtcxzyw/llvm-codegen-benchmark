@@ -9,9 +9,8 @@ func0000000000000029:
 	ret
 
 func0000000000000181:
-	slli	a2, a2, 59
+	srli	a2, a2, 4
 	xor	a0, a0, a1
-	srli	a2, a2, 63
 	seqz	a0, a0
 	and	a0, a0, a2
 	ret

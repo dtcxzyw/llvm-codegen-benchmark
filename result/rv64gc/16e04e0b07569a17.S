@@ -64,7 +64,7 @@ func0000000000000306:
 	and	a1, a1, a2
 	slli	a0, a0, 56
 	sltiu	a1, a1, 126
-	xori	a1, a1, 1
+	not	a1, a1
 	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret

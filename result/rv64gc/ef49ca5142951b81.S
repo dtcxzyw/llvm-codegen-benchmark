@@ -55,11 +55,10 @@ func000000000000048c:
 func0000000000000584:
 	lui	a2, 1048467
 	addi	a2, a2, -203
+	lui	a3, 8
 	addw	a0, a0, a2
-	lui	a2, 8
-	slli	a1, a1, 35
-	addi	a2, a2, 565
-	srli	a1, a1, 63
+	addi	a2, a3, 565
+	srli	a1, a1, 28
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

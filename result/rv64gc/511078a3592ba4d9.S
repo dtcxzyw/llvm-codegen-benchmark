@@ -16,7 +16,7 @@ func000000000000581e:
 	fclass.d	a0, fa0
 	flt.d	a1, fa5, fa0
 	andi	a0, a0, 120
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -29,7 +29,7 @@ func000000000000181e:
 	fclass.d	a0, fa0
 	fle.d	a1, fa5, fa0
 	andi	a0, a0, 120
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -19,7 +19,6 @@ func000000000000000e:
 func000000000000001a:
 	xorb	$7, %sil
 	bzhil	%esi, %edi, %eax
-	movzbl	%al, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

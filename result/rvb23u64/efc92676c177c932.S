@@ -6,8 +6,8 @@ func000000000000002c:
 
 func0000000000000141:
 	srliw	a1, a1, 31
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -68,15 +68,15 @@ func00000000000000c1:
 func0000000000000101:
 	sext.w	a1, a1
 	sltiu	a1, a1, 65
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000010c:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000281:
@@ -90,7 +90,7 @@ func0000000000000281:
 func000000000000030c:
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 

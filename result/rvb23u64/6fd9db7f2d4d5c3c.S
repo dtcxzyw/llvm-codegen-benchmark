@@ -9,9 +9,10 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	lui	a3, 851968
+	lui	a3, 195056
+	addi	a3, a3, -129
 	zext.b	a1, a1
-	andn	a2, a2, a3
+	and	a2, a2, a3
 	addi	a1, a1, -2
 	lui	a3, 914960
 	addi	a3, a3, 129

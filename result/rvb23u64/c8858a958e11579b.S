@@ -30,9 +30,9 @@ func000000000000014c:
 func0000000000000541:
 	mulw	a1, a1, a2
 	sext.w	a0, a0
+	seqz	a0, a0
 	slti	a1, a1, 2
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	andn	a0, a0, a1
 	ret
 
 func00000000000004c1:

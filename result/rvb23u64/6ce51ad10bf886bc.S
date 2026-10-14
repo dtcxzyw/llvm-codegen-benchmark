@@ -2,8 +2,7 @@ func0000000000000072:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa1
 	flt.d	a1, fa0, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000003d:
@@ -80,8 +79,7 @@ func0000000000000077:
 func000000000000005e:
 	fle.d	a0, fa0, fa1
 	feq.d	a1, fa0, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000042:
@@ -101,8 +99,7 @@ func0000000000000022:
 func000000000000003e:
 	fle.d	a0, fa1, fa0
 	feq.d	a1, fa0, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000055:
@@ -151,8 +148,7 @@ func000000000000007a:
 	fli.d	fa5, inf
 	feq.d	a0, fa0, fa5
 	fle.d	a1, fa0, fa1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000008a:

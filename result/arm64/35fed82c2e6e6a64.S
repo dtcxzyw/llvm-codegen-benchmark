@@ -13,9 +13,8 @@ func0000000000000010:
 
 func0000000000000008:
 	fcmp	s0, #0.0
-	eor	w8, w0, #0x1
-	cset	w9, le
-	and	w0, w9, w8
+	cset	w8, le
+	bic	w0, w8, w0
 	ret
 
 func000000000000000e:
@@ -26,8 +25,7 @@ func000000000000000e:
 
 func0000000000000004:
 	fcmp	s0, #0.0
-	eor	w8, w0, #0x1
-	cset	w9, pl
-	and	w0, w9, w8
+	cset	w8, pl
+	bic	w0, w8, w0
 	ret
 

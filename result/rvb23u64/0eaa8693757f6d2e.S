@@ -26,16 +26,16 @@ func0000000000000026:
 
 func000000000000002a:
 	sext.w	a0, a0
+	snez	a1, a1
 	slti	a0, a0, 12
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000038:
 	sext.w	a0, a0
+	snez	a1, a1
 	sltiu	a0, a0, -52
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000034:
@@ -127,10 +127,9 @@ func0000000000000081:
 
 func0000000000000158:
 	sext.w	a0, a0
-	sltiu	a0, a0, 100
 	srli	a1, a1, 63
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 100
+	andn	a0, a1, a0
 	ret
 
 func0000000000000304:

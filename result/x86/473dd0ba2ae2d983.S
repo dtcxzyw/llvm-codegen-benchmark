@@ -19,7 +19,6 @@ func0000000000000101:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000184:
-	andb	$8, %dl
 	shrb	$3, %dl
 	cmpq	%rsi, %rdi
 	setb	%al

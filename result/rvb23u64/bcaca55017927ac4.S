@@ -1,17 +1,17 @@
 func000000000000018a:
 	andi	a2, a2, 127
 	snez	a2, a2
-	srliw	a1, a1, 31
 	and	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	srliw	a1, a1, 31
+	andn	a0, a0, a1
 	ret
 
 func000000000000018c:
-	bexti	a2, a2, 32
+	srli	a2, a2, 32
 	sext.w	a0, a0
 	and	a1, a1, a2
-	czero.eqz	a0, a1, a0
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func0000000000000181:

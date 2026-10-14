@@ -1,17 +1,19 @@
 func0000000000000021:
-	lui	a3, 921600
-	andi	a4, a2, 1
-	addi	a2, a3, -1026
+	andi	a2, a2, 1
 	sext.w	a0, a0
-	mv	a3, a2
-	bnez	a4, .LBB0_2
-	lui	a3, 135168
-	addi	a3, a3, -2
+	bnez	a2, .LBB0_2
+	lui	a2, 135168
+	addi	a2, a2, -2
+	j	.LBB0_3
 .LBB0_2:
+	lui	a2, 921600
+	addi	a2, a2, -1026
+.LBB0_3:
 	seqz	a0, a0
 	addi	a0, a0, -1
-	or	a1, a1, a3
-	and	a0, a0, a2
+	lui	a3, 786432
+	or	a1, a1, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

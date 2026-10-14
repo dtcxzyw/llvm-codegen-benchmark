@@ -16,8 +16,8 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
-	bexti	a1, a1, 1
-	srli	a0, a0, 8
+	srli	a1, a1, 1
+	bexti	a0, a0, 8
 	and	a0, a0, a1
 	ret
 

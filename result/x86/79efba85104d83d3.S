@@ -19,14 +19,13 @@ func0000000000000021:
 func000000000000018c:
 	movl	%edi, %eax
 	andl	%esi, %eax
-	andl	$16, %eax
-	shrl	$4, %eax
+	andb	$16, %al
+	shrb	$4, %al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000181:
-	andl	$32, %esi
-	shrl	$5, %esi
+	shrb	$5, %sil
 	testb	$32, %dil
 	sete	%al
 	andb	%sil, %al

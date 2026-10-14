@@ -2,7 +2,7 @@ func00000000000001cc:
 	sext.w	a2, a2
 	sext.w	a3, a0
 	slt	a2, a3, a2
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, 2
 	or	a1, a1, a2
 	snez	a0, a0

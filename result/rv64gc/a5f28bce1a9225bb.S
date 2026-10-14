@@ -17,7 +17,7 @@ func000000000000002a:
 	and	a1, a1, a2
 	slti	a0, a0, 12
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -29,7 +29,7 @@ func0000000000000038:
 	and	a1, a1, a2
 	sltiu	a0, a0, -52
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

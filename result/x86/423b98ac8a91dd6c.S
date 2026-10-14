@@ -45,7 +45,7 @@ func0000000000000012:
 	vmovss	.LCPI3_1(%rip), %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
-	xorb	$1, %dil
+	notb	%dil
 	andb	%dil, %al
 	retq
 

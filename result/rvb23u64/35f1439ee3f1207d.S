@@ -1,8 +1,8 @@
 func0000000000000141:
-	srli	a1, a1, 63
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 63
+	seqz	a0, a0
+	andn	a0, a0, a1
 	slli	a0, a0, 13
 	ret
 
@@ -49,10 +49,10 @@ func00000000000000c6:
 
 func000000000000010c:
 	sext.w	a1, a1
+	snez	a0, a0
 	sltiu	a1, a1, 73
-	xori	a1, a1, 1
 	li	a2, -32
-	czero.eqz	a0, a1, a0
+	andn	a0, a0, a1
 	bclri	a1, a2, 37
 	li	a2, 64
 	czero.nez	a0, a1, a0

@@ -13,13 +13,13 @@ func0000000000000021:
 	ret
 
 func000000000000018c:
-	and	w8, w1, w0
+	and	w8, w0, w1
 	ubfx	w0, w8, #4, #1
 	ret
 
 func0000000000000181:
-	ubfx	w8, w1, #5, #1
 	tst	w0, #0x20
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #5
 	ret
 

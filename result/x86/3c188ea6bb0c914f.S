@@ -14,7 +14,7 @@ func0000000000000181:
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000184:
-	xorb	$1, %sil
+	notb	%sil
 	testl	%edi, %edi
 	sete	%al
 	cmpl	$8, %edi

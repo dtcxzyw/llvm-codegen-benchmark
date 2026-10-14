@@ -7,10 +7,9 @@ func0000000000000072:
 	fmadd.d	fa5, fa2, fa5, fa4
 	fmadd.d	fa5, fa1, fa3, fa5
 	fmv.d.x	fa4, zero
-	feq.d	a0, fa5, fa0
-	flt.d	a1, fa5, fa4
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	flt.d	a0, fa5, fa4
+	feq.d	a1, fa5, fa0
+	andn	a0, a0, a1
 	ret
 
 .promoted_doubles.func0000000000000072:

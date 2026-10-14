@@ -13,9 +13,9 @@ func0000000000000030:
 	ret
 
 func0000000000000014:
-	add	w8, w0, w1
-	neg	w9, w2
-	lsl	w0, w8, w9
+	neg	w8, w2
+	add	w9, w0, w1
+	lsl	w0, w9, w8
 	ret
 
 func0000000000000034:

@@ -37,10 +37,9 @@ func0000000000003028:
 	sext.w	a2, a2
 	sext.w	a0, a0
 	snez	a2, a2
-	sltiu	a0, a0, 2
 	czero.nez	a1, a2, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func000000000000318c:

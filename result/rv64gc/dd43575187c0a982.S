@@ -17,7 +17,7 @@ func0000000000000121:
 	andi	a2, a2, 63
 	sltu	a0, a0, a1
 	seqz	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -50,7 +50,7 @@ func00000000000000e1:
 	addi	a2, a2, -16
 	slt	a0, a1, a0
 	seqz	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

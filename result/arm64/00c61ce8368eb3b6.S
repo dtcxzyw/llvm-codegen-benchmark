@@ -13,15 +13,15 @@ func000000000000001e:
 	ret
 
 func0000000000000000:
-	sub	w8, w0, w1
-	neg	w9, w2
-	lsr	w0, w8, w9
+	neg	w8, w2
+	sub	w9, w0, w1
+	lsr	w0, w9, w8
 	ret
 
 func0000000000000018:
-	sub	w8, w0, w1
-	neg	w9, w2
-	lsr	w0, w8, w9
+	neg	w8, w2
+	sub	w9, w0, w1
+	lsr	w0, w9, w8
 	ret
 
 func0000000000000008:
@@ -32,8 +32,8 @@ func0000000000000008:
 	ret
 
 func0000000000000004:
-	sub	w8, w0, w1
-	neg	w9, w2
-	lsr	w0, w8, w9
+	neg	w8, w2
+	sub	w9, w0, w1
+	lsr	w0, w9, w8
 	ret
 

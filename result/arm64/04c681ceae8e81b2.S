@@ -1,7 +1,6 @@
 func0000000000000018:
 	cmp	x0, #0
-	eor	w8, w1, #0x1
-	cset	w9, ne
-	and	w0, w9, w8
+	cset	w8, ne
+	bic	w0, w8, w1
 	ret
 

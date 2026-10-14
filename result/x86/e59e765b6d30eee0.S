@@ -19,7 +19,6 @@ func000000000000002c:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000198:
 	shrl	$8, %esi
-	andl	$1, %esi
 	movzwl	%di, %eax
 	cmpl	$256, %eax
 	setae	%al
@@ -38,8 +37,7 @@ func0000000000000024:
 
 	.prefalign	4, .Lfunc_end4, nop
 func000000000000018c:
-	andl	$16, %esi
-	shrl	$4, %esi
+	shrb	$4, %sil
 	testw	%di, %di
 	setne	%al
 	andb	%sil, %al

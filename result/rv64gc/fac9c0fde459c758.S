@@ -22,7 +22,7 @@ func0000000000000108:
 	subw	a0, a0, a1
 	sext.w	a1, a1
 	sltiu	a0, a0, 11
-	xori	a0, a0, 1
+	not	a0, a0
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret

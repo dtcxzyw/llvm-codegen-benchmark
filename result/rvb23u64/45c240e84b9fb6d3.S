@@ -8,9 +8,10 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	bexti	a1, a1, 7
 	andi	a0, a0, 256
-	czero.nez	a0, a1, a0
+	srli	a1, a1, 7
+	seqz	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000002c:
@@ -21,12 +22,12 @@ func000000000000002c:
 	ret
 
 func0000000000000301:
-	andi	a1, a1, 248
-	sltiu	a1, a1, 9
 	lui	a2, 3
-	xori	a1, a1, 1
+	andi	a1, a1, 248
 	and	a0, a0, a2
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 9
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -73,7 +74,7 @@ func0000000000000081:
 
 func0000000000000194:
 	zext.b	a0, a0
-	bexti	a1, a1, 26
+	srli	a1, a1, 26
 	sltiu	a0, a0, 51
 	and	a0, a0, a1
 	ret

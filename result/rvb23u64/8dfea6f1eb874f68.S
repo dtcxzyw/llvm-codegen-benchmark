@@ -16,13 +16,12 @@ func000000000000002c:
 
 func0000000000000104:
 	zext.h	a1, a1
-	zext.h	a2, a2
 	lui	a3, 16
-	sltiu	a2, a2, 71
+	zext.h	a2, a2
 	addi	a3, a3, -8
-	xori	a2, a2, 1
+	sltiu	a2, a2, 71
 	sltu	a1, a1, a3
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	and	a0, a0, a1
 	ret
 

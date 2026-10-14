@@ -20,13 +20,12 @@ func0000000000000021:
 
 func0000000000000028:
 	andi	a2, a2, 15
-	sext.w	a1, a1
 	addi	a2, a2, -12
+	sext.w	a1, a1
 	seqz	a2, a2
-	sltiu	a1, a1, 4
 	and	a0, a0, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 4
+	andn	a0, a0, a1
 	ret
 
 func0000000000000184:
@@ -51,17 +50,16 @@ func000000000000002c:
 
 func0000000000000038:
 	lui	a3, 1016
-	sext.w	a1, a1
 	andn	a2, a2, a3
-	sext.w	a2, a2
 	lui	a3, 20480
+	sext.w	a2, a2
 	addi	a3, a3, 1280
-	sltiu	a1, a1, 17
 	xor	a2, a2, a3
-	xori	a1, a1, 1
+	sext.w	a1, a1
 	seqz	a2, a2
-	and	a0, a0, a1
 	and	a0, a0, a2
+	sltiu	a1, a1, 17
+	andn	a0, a0, a1
 	ret
 
 func000000000000018c:

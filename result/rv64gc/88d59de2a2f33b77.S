@@ -57,7 +57,7 @@ func00000000000004ea:
 	addiw	a0, a0, -1
 	sext.w	a1, a1
 	slt	a0, a2, a0
-	xori	a0, a0, 1
+	not	a0, a0
 	slt	a1, a1, a3
 	and	a0, a0, a1
 	ret

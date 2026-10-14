@@ -8,7 +8,7 @@ func0000000000000081:
 
 func000000000000008c:
 	sext.w	a1, a1
-	bexti	a2, a2, 4
+	srli	a2, a2, 4
 	sltiu	a1, a1, 57
 	and	a0, a0, a2
 	and	a0, a0, a1

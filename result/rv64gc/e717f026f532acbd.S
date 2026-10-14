@@ -3,7 +3,7 @@ func000000000000014c:
 	slli	a0, a0, 56
 	srli	a0, a0, 63
 	addi	a1, a1, -95
-	xori	a0, a0, 1
+	not	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -90,7 +90,7 @@ func000000000000030c:
 	zext.b	a0, a0
 	sltiu	a1, a0, 2
 	addi	a0, a0, -3
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -99,7 +99,7 @@ func000000000000010c:
 	zext.b	a0, a0
 	sltiu	a1, a0, 29
 	addi	a0, a0, -63
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

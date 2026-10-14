@@ -1,8 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000184:
-	andl	$32, %edx
-	shrl	$5, %edx
+	shrb	$5, %dl
 	cmpq	%rsi, %rdi
 	setb	%al
 	andb	%dl, %al
@@ -75,7 +74,6 @@ func0000000000000146:
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000188:
 	shrl	$11, %edx
-	andl	$1, %edx
 	cmpq	%rsi, %rdi
 	seta	%al
 	andb	%dl, %al

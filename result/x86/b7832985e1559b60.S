@@ -10,7 +10,6 @@ func0000000000000021:
 func0000000000000188:
 	movq	%rdi, %rcx
 	shrq	$32, %rcx
-	andl	$1, %ecx
 	testl	$-2, %edi
 	setne	%al
 	andb	%cl, %al
@@ -20,7 +19,6 @@ func0000000000000188:
 func000000000000018c:
 	movq	%rdi, %rcx
 	shrq	$32, %rcx
-	andl	$1, %ecx
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al

@@ -97,7 +97,7 @@ func000000000000030c:
 	andi	a1, a1, 15
 	sltiu	a0, a0, 8
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -116,7 +116,7 @@ func0000000000000301:
 	addi	a1, a1, -16
 	sltiu	a0, a0, 4
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

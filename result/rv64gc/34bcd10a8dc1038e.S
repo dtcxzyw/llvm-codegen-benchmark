@@ -84,7 +84,7 @@ func0000000000000141:
 	addiw	a1, a1, -16
 	slti	a0, a0, 5
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -93,7 +93,7 @@ func0000000000000148:
 	sraiw	a1, a1, 4
 	slti	a0, a0, 8
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -167,7 +167,7 @@ func0000000000000144:
 	sraiw	a1, a1, 1
 	slti	a0, a0, 2
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

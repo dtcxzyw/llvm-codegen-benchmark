@@ -16,13 +16,13 @@ func0000000000000d98:
 	ret
 
 func0000000000000101:
+	lui	a3, 52429
 	addw	a1, a1, a2
+	addi	a2, a3, -820
 	zext.b	a0, a0
-	lui	a2, 52429
-	addi	a2, a2, -820
-	sltiu	a0, a0, 8
 	xor	a1, a1, a2
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 8
+	andn	a0, a1, a0
 	ret
 

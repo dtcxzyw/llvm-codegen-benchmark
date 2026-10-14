@@ -30,7 +30,7 @@ func000000000000010c:
 	addi	a1, a1, -1
 	sltiu	a0, a0, 3
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -84,7 +84,7 @@ func0000000000000108:
 	addi	a1, a1, -49
 	sltiu	a0, a0, 96
 	sltiu	a1, a1, -64
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

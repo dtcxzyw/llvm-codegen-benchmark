@@ -26,7 +26,7 @@ func0000000000000181:
 
 func000000000000014c:
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -138,7 +138,7 @@ func0000000000000141:
 
 func0000000000000314:
 	sltiu	a1, a1, 107
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, 107
 	and	a0, a0, a1
 	ret
@@ -167,7 +167,7 @@ func0000000000000104:
 
 func000000000000030c:
 	sltiu	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	sltiu	a0, a0, -1
 	and	a0, a0, a1
 	ret
@@ -185,14 +185,14 @@ func0000000000000144:
 	lui	a2, %hi(.LCPI26_0)
 	ld	a2, %lo(.LCPI26_0)(a2)
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
 
 func0000000000000146:
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	slti	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -239,7 +239,7 @@ func0000000000000101:
 
 func0000000000000301:
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

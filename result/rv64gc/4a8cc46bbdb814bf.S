@@ -46,7 +46,7 @@ func0000000000000141:
 	srli	a0, a0, 48
 	slti	a1, a1, 4
 	addi	a0, a0, -7
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -61,7 +61,7 @@ func0000000000000021:
 func000000000000010c:
 	sltiu	a1, a1, 19
 	slli	a0, a0, 48
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

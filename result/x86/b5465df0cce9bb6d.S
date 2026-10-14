@@ -3,7 +3,6 @@
 func000000000000018c:
 	shrl	$12, %edx
 	andl	%esi, %edx
-	andl	$1, %edx
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%dl, %al

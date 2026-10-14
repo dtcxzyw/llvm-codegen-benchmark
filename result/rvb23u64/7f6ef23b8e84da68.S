@@ -24,10 +24,10 @@ func0000000000000584:
 	ret
 
 func000000000000010c:
-	sltiu	a0, a0, 3
 	addi	a1, a1, -1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 3
+	andn	a0, a1, a0
 	ret
 
 func0000000000000d8c:
@@ -73,10 +73,9 @@ func0000000000000084:
 
 func0000000000000108:
 	addi	a1, a1, -49
-	sltiu	a0, a0, 96
 	sltiu	a1, a1, -64
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 96
+	andn	a0, a1, a0
 	ret
 
 func000000000000002c:

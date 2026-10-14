@@ -2,7 +2,7 @@ func0000000000000541:
 	mulw	a1, a0, a1
 	slti	a1, a1, 8
 	addiw	a0, a0, -8
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -11,7 +11,7 @@ func0000000000000101:
 	mulw	a1, a0, a1
 	sltiu	a1, a1, 65
 	addiw	a0, a0, -1
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

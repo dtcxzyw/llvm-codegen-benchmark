@@ -1,8 +1,7 @@
 func00000000000000c1:
 	cmn	w0, #1
-	eor	w9, w1, #0x1
 	cset	w8, gt
-	and	w0, w8, w9
+	bic	w0, w8, w1
 	ret
 
 func0000000000000141:
@@ -17,8 +16,7 @@ func0000000000000141:
 
 func0000000000000181:
 	cmp	w0, #0
-	eor	w9, w1, #0x1
 	cset	w8, eq
-	and	w0, w8, w9
+	bic	w0, w8, w1
 	ret
 

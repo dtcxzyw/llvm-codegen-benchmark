@@ -36,7 +36,7 @@ func0000000000000098:
 	sltu	a2, a2, a3
 	sltiu	a1, a1, 64
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

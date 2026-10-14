@@ -32,10 +32,9 @@ func0000000000000181:
 
 func0000000000000198:
 	andi	a0, a0, 15
-	slli	a1, a1, 59
 	sltiu	a0, a0, 7
-	srli	a1, a1, 63
-	not	a0, a0
+	srli	a1, a1, 4
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

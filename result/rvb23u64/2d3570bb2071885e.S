@@ -13,8 +13,7 @@ func0000000000000098:
 	flt.d	a1, fa5, fa2
 	feq.d	a2, fa0, fa1
 	or	a0, a0, a1
-	xori	a0, a0, 1
-	and	a0, a0, a2
+	andn	a0, a2, a0
 	ret
 
 func0000000000000048:
@@ -113,8 +112,7 @@ func00000000000000d2:
 	flt.d	a0, fa1, fa2
 	fli.d	fa5, min
 	flt.d	a1, fa0, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000084:
@@ -154,8 +152,7 @@ func0000000000000078:
 	fli.d	fa5, inf
 	feq.d	a0, fa2, fa5
 	feq.d	a1, fa0, fa1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000086:
@@ -172,8 +169,7 @@ func0000000000000074:
 	fld	fa5, %lo(.LCPI21_0)(a0)
 	feq.d	a0, fa1, fa2
 	flt.d	a1, fa5, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000006a:
@@ -194,8 +190,7 @@ func0000000000000072:
 	fli.d	fa5, inf
 	feq.d	a0, fa2, fa5
 	flt.d	a1, fa0, fa1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 .LCPI25_0:

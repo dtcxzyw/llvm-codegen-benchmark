@@ -8,7 +8,7 @@ func0000000000000007:
 
 func0000000000000001:
 	andi	a3, a1, 1
-	zext.b	a1, a2
+	andi	a1, a2, 63
 	bnez	a3, .LBB1_2
 	li	a2, 208
 	or	a1, a1, a2

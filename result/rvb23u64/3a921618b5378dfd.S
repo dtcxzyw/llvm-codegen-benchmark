@@ -1,8 +1,8 @@
 func000000000000014c:
 	srliw	a2, a2, 31
-	xori	a2, a2, 1
-	and	a1, a1, a2
-	czero.eqz	a0, a1, a0
+	andn	a1, a1, a2
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 
 func000000000000018c:
@@ -50,8 +50,8 @@ func00000000000000cc:
 func000000000000010c:
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
-	and	a1, a1, a2
-	czero.eqz	a0, a1, a0
+	andn	a1, a1, a2
+	snez	a0, a0
+	and	a0, a0, a1
 	ret
 

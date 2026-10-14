@@ -104,10 +104,9 @@ func0000000000000581:
 
 func0000000000000146:
 	or	a1, a1, a2
-	srliw	a0, a0, 31
 	srliw	a1, a1, 31
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	srliw	a0, a0, 31
+	andn	a0, a1, a0
 	ret
 
 func000000000000002a:
@@ -145,12 +144,11 @@ func0000000000000186:
 
 func0000000000000504:
 	or	a1, a1, a2
-	srliw	a0, a0, 13
 	srliw	a1, a1, 16
-	sltiu	a0, a0, 7
+	srliw	a0, a0, 13
 	sltiu	a1, a1, 17
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 7
+	andn	a0, a1, a0
 	ret
 
 func0000000000000438:

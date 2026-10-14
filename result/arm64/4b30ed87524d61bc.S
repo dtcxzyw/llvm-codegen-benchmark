@@ -9,7 +9,7 @@ func0000000000000001:
 func0000000000000034:
 	mov	w8, #3264
 	and	x8, x0, x8
-	sub	x9, x8, #1
+	sub	w9, w8, #1
 	tst	x8, x9
 	cset	w0, eq
 	ret

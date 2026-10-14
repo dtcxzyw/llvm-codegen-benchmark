@@ -1,5 +1,5 @@
 func0000000000000006:
-	xori	a2, a2, 1
+	not	a2, a2
 	sext.w	a0, a0
 	or	a1, a1, a2
 	slti	a0, a0, 1
@@ -7,7 +7,7 @@ func0000000000000006:
 	ret
 
 func000000000000000a:
-	xori	a2, a2, 1
+	not	a2, a2
 	sext.w	a0, a0
 	or	a1, a1, a2
 	sgtz	a0, a0
@@ -23,7 +23,7 @@ func0000000000000002:
 	ret
 
 func000000000000000c:
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, -96
 	or	a1, a1, a2
 	snez	a0, a0

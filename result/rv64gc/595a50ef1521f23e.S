@@ -32,7 +32,7 @@ func0000000000000101:
 	zext.b	a2, a2
 	sltiu	a2, a2, 4
 	xor	a0, a0, a1
-	xori	a1, a2, 1
+	not	a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

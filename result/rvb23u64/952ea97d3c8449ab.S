@@ -94,30 +94,30 @@ func0000000000000085:
 
 func000000000000010c:
 	sltiu	a2, a2, 8
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	snez	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func0000000000000101:
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	seqz	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func0000000000000141:
 	srli	a2, a2, 63
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.nez	a0, a2, a0
+	seqz	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func000000000000014c:
 	slti	a2, a2, 25
-	xori	a2, a2, 1
 	xor	a0, a0, a1
-	czero.eqz	a0, a2, a0
+	snez	a0, a0
+	andn	a0, a0, a2
 	ret
 
 func00000000000000cc:

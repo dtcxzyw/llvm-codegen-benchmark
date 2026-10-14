@@ -26,7 +26,7 @@ func000000000000010a:
 	and	a1, a1, a2
 	sext.w	a0, a0
 	sltiu	a1, a1, 2
-	xori	a1, a1, 1
+	not	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret

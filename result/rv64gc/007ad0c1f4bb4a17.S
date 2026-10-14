@@ -58,7 +58,7 @@ func0000000000000282:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slti	a2, a2, 8
-	xori	a2, a2, 1
+	not	a2, a2
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

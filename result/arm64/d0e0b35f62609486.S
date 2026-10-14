@@ -28,9 +28,9 @@ func000000000000030c:
 	ret
 
 func0000000000000181:
-	ubfx	w8, w1, #26, #1
 	tst	w0, #0xffff
-	csel	w0, wzr, w8, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #26
 	ret
 
 func0000000000000284:

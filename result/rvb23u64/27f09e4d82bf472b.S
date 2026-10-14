@@ -29,10 +29,9 @@ func000000000000054a:
 	slli	a1, a1, 56
 	sext.w	a0, a0
 	zext.b	a2, a2
-	srli	a1, a1, 63
 	slt	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	srli	a1, a1, 63
+	andn	a0, a0, a1
 	ret
 
 func0000000000000427:

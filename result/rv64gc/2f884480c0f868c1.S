@@ -1,6 +1,5 @@
 func0000000000000188:
-	slli	a2, a2, 50
-	srli	a2, a2, 63
+	srli	a2, a2, 13
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
@@ -22,9 +21,8 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	slli	a2, a2, 54
+	srli	a2, a2, 9
 	xor	a0, a0, a1
-	srli	a2, a2, 63
 	seqz	a0, a0
 	and	a0, a0, a2
 	ret

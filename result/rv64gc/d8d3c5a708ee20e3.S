@@ -65,7 +65,7 @@ func0000000000000314:
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sltiu	a2, a2, 97
-	xori	a2, a2, 1
+	not	a2, a2
 	sltiu	a1, a1, 98
 	and	a1, a1, a2
 	or	a0, a0, a1

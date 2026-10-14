@@ -2,15 +2,13 @@ func0000000000000074:
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa1
 	flt.d	a1, fa5, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000005e:
 	fle.d	a0, fa0, fa1
 	feq.d	a1, fa0, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000a6:

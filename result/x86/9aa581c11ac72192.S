@@ -75,8 +75,7 @@ func0000000000000c2c:
 
 	.prefalign	4, .Lfunc_end9, nop
 func000000000000098c:
-	andl	$64, %esi
-	shrl	$6, %esi
+	shrb	$6, %sil
 	movabsq	$10995116277760, %rax
 	cmpq	%rax, %rdi
 	setne	%al

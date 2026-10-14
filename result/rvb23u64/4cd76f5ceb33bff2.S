@@ -23,9 +23,9 @@ func0000000000000184:
 	ret
 
 func000000000000012c:
-	addiw	a2, a2, 1
+	sext.w	a2, a2
+	sltiu	a2, a2, -1
 	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a2
+	andn	a0, a2, a0
 	ret
 

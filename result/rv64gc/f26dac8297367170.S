@@ -26,9 +26,8 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
-	slli	a1, a1, 51
 	addiw	a0, a0, -115
-	srli	a1, a1, 63
+	srli	a1, a1, 12
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -45,7 +44,7 @@ func0000000000000101:
 	and	a1, a1, a2
 	sltiu	a0, a0, 181
 	seqz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -113,7 +112,7 @@ func0000000000000301:
 	andi	a1, a1, 248
 	sext.w	a0, a0
 	sltiu	a1, a1, 9
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -153,10 +152,9 @@ func00000000000000c1:
 
 func0000000000000188:
 	sext.w	a0, a0
-	slli	a1, a1, 59
 	sltiu	a0, a0, 7
-	srli	a1, a1, 63
-	not	a0, a0
+	srli	a1, a1, 4
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 
@@ -192,7 +190,7 @@ func0000000000000114:
 	andi	a1, a1, 31
 	sltiu	a0, a0, -4
 	sltiu	a1, a1, 5
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -218,7 +216,7 @@ func000000000000030c:
 	and	a1, a1, a2
 	sltiu	a0, a0, 128
 	snez	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -264,10 +262,9 @@ func0000000000000294:
 
 func0000000000000198:
 	sext.w	a0, a0
-	slli	a1, a1, 48
 	sltiu	a0, a0, 2
-	srli	a1, a1, 63
-	not	a0, a0
+	srli	a1, a1, 15
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

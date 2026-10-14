@@ -118,7 +118,7 @@ func0000000000000038:
 func00000000000000ca:
 	srli	a0, a0, 63
 	sgtz	a1, a1
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

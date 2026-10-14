@@ -29,23 +29,21 @@ func0000000000001d8c:
 func0000000000001504:
 	slli	a2, a2, 24
 	or	a1, a1, a2
-	srliw	a0, a0, 13
 	srliw	a1, a1, 16
-	sltiu	a0, a0, 7
+	srliw	a0, a0, 13
 	sltiu	a1, a1, 17
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 7
+	andn	a0, a1, a0
 	ret
 
 func0000000000001d04:
 	slli	a2, a2, 16
 	or	a1, a1, a2
-	srliw	a0, a0, 13
 	srliw	a1, a1, 16
-	sltiu	a0, a0, 7
+	srliw	a0, a0, 13
 	sltiu	a1, a1, 17
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 7
+	andn	a0, a1, a0
 	ret
 
 func0000000000001d01:

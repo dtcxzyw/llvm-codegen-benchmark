@@ -87,7 +87,7 @@ func000000000000006a:
 	fle.d	a1, fa1, fa0
 	sext.w	a0, a0
 	sgtz	a0, a0
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

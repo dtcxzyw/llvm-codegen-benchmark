@@ -25,8 +25,7 @@ func0000000000000012:
 	fabs.s	fa5, fa0
 	fli.s	fa4, 1.0
 	flt.s	a1, fa5, fa4
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000002:

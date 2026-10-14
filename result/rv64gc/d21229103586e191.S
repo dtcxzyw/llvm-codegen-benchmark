@@ -28,7 +28,7 @@ func000000000000008c:
 func0000000000000101:
 	sext.w	a2, a2
 	sltiu	a2, a2, 34
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, -3
 	or	a1, a1, a2
 	seqz	a0, a0
@@ -47,7 +47,7 @@ func0000000000000021:
 func000000000000010c:
 	sext.w	a2, a2
 	sltiu	a2, a2, 16
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, -4
 	or	a1, a1, a2
 	snez	a0, a0

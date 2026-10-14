@@ -1,8 +1,8 @@
 func000000000000014c:
-	srliw	a1, a1, 31
 	zext.b	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	srliw	a1, a1, 31
+	snez	a0, a0
+	andn	a0, a0, a1
 	slli	a0, a0, 3
 	ret
 

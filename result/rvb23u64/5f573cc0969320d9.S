@@ -45,9 +45,9 @@ func0000000000000021:
 
 func000000000000010c:
 	sub	a1, a1, a2
-	sltiu	a0, a0, 401
 	addi	a1, a1, -400
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a1
+	snez	a1, a1
+	sltiu	a0, a0, 401
+	andn	a0, a1, a0
 	ret
 

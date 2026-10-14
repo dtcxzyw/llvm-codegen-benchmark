@@ -191,8 +191,7 @@ func0000000000000076:
 	feq.d	a0, fa1, fa5
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func00000000000000e1:
@@ -206,8 +205,7 @@ func0000000000000034:
 	fli.d	fa4, 1.0
 	fle.d	a0, fa4, fa1
 	flt.d	a1, fa5, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func0000000000000084:
@@ -237,8 +235,7 @@ func000000000000007c:
 	feq.d	a0, fa1, fa5
 	fli.d	fa5, 1.5
 	fle.d	a1, fa5, fa0
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 
 func000000000000002a:
@@ -287,14 +284,13 @@ func00000000000000bb:
 	.quad	0x3d719799812dea11
 func0000000000000092:
 	lui	a0, %hi(.LCPI34_0)
-	fli.d	fa5, inf
-	fld	fa4, %lo(.LCPI34_0)(a0)
-	flt.d	a0, fa1, fa5
-	flt.d	a1, fa5, fa1
-	flt.d	a2, fa0, fa4
+	fld	fa5, %lo(.LCPI34_0)(a0)
+	fli.d	fa4, inf
+	flt.d	a0, fa1, fa4
+	flt.d	a1, fa4, fa1
+	flt.d	a2, fa0, fa5
 	or	a0, a0, a1
-	xori	a0, a0, 1
-	and	a0, a0, a2
+	andn	a0, a2, a0
 	ret
 
 .promoted_doubles.func00000000000000ac:

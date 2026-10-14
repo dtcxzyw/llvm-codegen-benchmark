@@ -7,10 +7,10 @@ func000000000000014a:
 
 func000000000000010c:
 	sub	a1, a1, a2
-	sltiu	a1, a1, 4
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.eqz	a0, a1, a0
+	sltiu	a1, a1, 4
+	snez	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func000000000000018a:
@@ -39,9 +39,8 @@ func0000000000000114:
 	sub	a1, a1, a2
 	sext.w	a0, a0
 	sltiu	a1, a1, 21
-	xori	a1, a1, 1
 	sltiu	a0, a0, 64
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	ret
 
 func0000000000000181:
@@ -87,10 +86,10 @@ func000000000000002c:
 
 func0000000000000101:
 	sub	a1, a1, a2
-	sltiu	a1, a1, 4
 	sext.w	a0, a0
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	sltiu	a1, a1, 4
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000581:

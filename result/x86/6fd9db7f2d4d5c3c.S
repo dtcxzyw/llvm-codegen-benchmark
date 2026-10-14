@@ -12,7 +12,7 @@ func0000000000000007:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	andl	$805306367, %edx
+	andl	$798949247, %edx
 	orl	%edi, %edx
 	cmpb	$2, %sil
 	movl	$6357120, %ecx

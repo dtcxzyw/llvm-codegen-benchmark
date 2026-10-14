@@ -9,7 +9,7 @@ func000000000000004c:
 
 func000000000000028c:
 	srliw	a2, a0, 31
-	xori	a2, a2, 1
+	not	a2, a2
 	addiw	a0, a0, 4
 	or	a1, a1, a2
 	snez	a0, a0
@@ -56,7 +56,7 @@ func0000000000000306:
 func000000000000028a:
 	sext.w	a0, a0
 	slti	a2, a0, 9
-	xori	a2, a2, 1
+	not	a2, a2
 	slti	a0, a0, 7
 	or	a1, a1, a2
 	xori	a0, a0, 1

@@ -46,7 +46,7 @@ func000000000000010a:
 	sltu	a2, a3, a2
 	slti	a1, a1, 9
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

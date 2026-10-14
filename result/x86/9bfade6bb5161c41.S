@@ -1,12 +1,11 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000181:
-	andl	$4, %edx
-	shrl	$2, %edx
+	shrb	$2, %dl
 	cmpl	$1, %esi
 	sete	%al
 	notb	%dil
+	andb	%dl, %dil
 	andb	%dil, %al
-	andb	%dl, %al
 	retq
 

@@ -3,7 +3,7 @@ func0000000000000021:
 	slli	a2, a2, 62
 	sltiu	a1, a1, -2
 	xor	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -16,7 +16,7 @@ func0000000000000186:
 
 func000000000000050c:
 	sltiu	a1, a1, 17
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

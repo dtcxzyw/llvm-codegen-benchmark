@@ -53,10 +53,9 @@ func000000000000010c:
 	ret
 
 func0000000000000188:
-	slli	a1, a1, 62
 	sltiu	a0, a0, 5
-	srli	a1, a1, 63
-	not	a0, a0
+	srli	a1, a1, 1
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 

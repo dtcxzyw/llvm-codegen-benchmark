@@ -1,9 +1,8 @@
 func000000000000014a:
 	addiw	a1, a1, -1
-	srliw	a0, a0, 31
 	sgtz	a1, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	srliw	a0, a0, 31
+	andn	a0, a1, a0
 	ret
 
 func0000000000000084:

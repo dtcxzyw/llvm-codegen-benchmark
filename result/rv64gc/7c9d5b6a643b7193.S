@@ -120,7 +120,7 @@ func00000000000000e1:
 	and	a2, a2, a3
 	slt	a0, a1, a0
 	seqz	a1, a2
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

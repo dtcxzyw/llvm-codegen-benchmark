@@ -91,7 +91,7 @@ func0000000000000108:
 	addi	a1, a1, -29
 	sltiu	a0, a0, 2
 	sltiu	a1, a1, -25
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

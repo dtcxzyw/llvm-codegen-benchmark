@@ -9,9 +9,8 @@ func0000000000000021:
 
 func0000000000000181:
 	addi	a1, a1, 1
-	slli	a1, a1, 62
 	addiw	a0, a0, 35
-	srli	a1, a1, 63
+	srli	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

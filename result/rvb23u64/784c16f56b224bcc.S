@@ -27,9 +27,9 @@ func000000000000050c:
 func00000000000000ac:
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sltu	a0, a1, a0
 	addi	a2, a2, -1
-	xori	a0, a0, 1
-	czero.eqz	a0, a0, a2
+	snez	a2, a2
+	sltu	a0, a1, a0
+	andn	a0, a2, a0
 	ret
 

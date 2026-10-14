@@ -3,9 +3,8 @@ func0000000000000181:
 	lui	a2, 8
 	srli	a0, a0, 48
 	addi	a2, a2, -1
-	slli	a1, a1, 1
 	xor	a0, a0, a2
-	srli	a1, a1, 63
+	srli	a1, a1, 62
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -21,16 +20,14 @@ func0000000000000021:
 func0000000000000184:
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	slli	a1, a1, 36
-	srli	a1, a1, 63
+	srli	a1, a1, 27
 	sltiu	a0, a0, 4
 	and	a0, a0, a1
 	ret
 
 func000000000000018c:
-	slli	a1, a1, 52
 	slli	a0, a0, 48
-	srli	a1, a1, 63
+	srli	a1, a1, 11
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

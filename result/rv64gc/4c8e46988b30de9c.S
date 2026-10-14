@@ -1,5 +1,5 @@
 func0000000000000002:
-	andi	a2, a2, -1025
+	andi	a2, a2, -1281
 	andi	a3, a0, 1
 	or	a0, a2, a1
 	bnez	a3, .LBB0_2

@@ -1,10 +1,9 @@
 func0000000000000008:
-	or	a1, a1, a2
-	lui	a2, 48
+	lui	a3, 48
 	sext.w	a0, a0
-	addi	a2, a2, -497
-	xori	a1, a1, 1
-	sltu	a0, a2, a0
-	and	a0, a0, a1
+	addi	a3, a3, -497
+	or	a1, a1, a2
+	sltu	a0, a3, a0
+	andn	a0, a0, a1
 	ret
 

@@ -28,15 +28,14 @@ func0000000000000038:
 
 func0000000000000181:
 	mov	w8, #230
-	ubfx	w9, w1, #16, #1
 	bics	wzr, w8, w0
-	csel	w0, wzr, w9, ne
+	cset	w8, eq
+	and	w0, w8, w1, lsr #16
 	ret
 
 func0000000000000198:
-	lsr	w8, w0, #7
-	and	w9, w1, #0x20000
-	and	w0, w8, w9, lsr #17
+	ubfx	w8, w0, #7, #1
+	and	w0, w8, w1, lsr #17
 	ret
 
 func0000000000000281:

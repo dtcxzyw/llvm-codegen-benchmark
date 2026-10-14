@@ -14,18 +14,16 @@ func0000000000000689:
 
 func0000000000000108:
 	zext.w	a2, a2
-	sltiu	a1, a1, 17
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 17
+	andn	a0, a0, a1
 	ret
 
 func0000000000000508:
 	sext.w	a2, a2
-	sltiu	a1, a1, 2
 	sltu	a0, a2, a0
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	sltiu	a1, a1, 2
+	andn	a0, a0, a1
 	ret
 
 .LCPI4_0:
@@ -53,10 +51,10 @@ func0000000000000588:
 
 func0000000000000101:
 	zext.w	a2, a2
-	sltiu	a1, a1, 2
 	xor	a0, a0, a2
-	xori	a1, a1, 1
-	czero.nez	a0, a1, a0
+	seqz	a0, a0
+	sltiu	a1, a1, 2
+	andn	a0, a0, a1
 	ret
 
 func0000000000000039:

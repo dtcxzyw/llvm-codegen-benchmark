@@ -70,8 +70,7 @@ func000000000000007a:
 	fli.d	fa4, inf
 	feq.d	a1, fa0, fa4
 	fle.d	a2, fa0, fa5
-	xori	a1, a1, 1
-	and	a0, a0, a1
+	andn	a0, a0, a1
 	and	a0, a0, a2
 	ret
 

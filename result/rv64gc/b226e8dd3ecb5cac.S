@@ -53,7 +53,7 @@ func000000000000007c:
 	fmv.d.x	fa3, a1
 	feq.d	a0, fa5, fa4
 	fle.d	a1, fa3, fa5
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 
@@ -67,7 +67,7 @@ func000000000000007a:
 	fmv.d.x	fa3, a1
 	feq.d	a0, fa5, fa4
 	fle.d	a1, fa5, fa3
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

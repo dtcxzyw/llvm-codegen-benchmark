@@ -24,10 +24,9 @@ func000000000000318c:
 func0000000000003188:
 	snez	a2, a2
 	sext.w	a0, a0
-	sltiu	a0, a0, 2
 	czero.eqz	a1, a2, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func0000000000003184:

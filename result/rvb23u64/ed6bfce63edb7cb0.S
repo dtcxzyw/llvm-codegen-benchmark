@@ -1,11 +1,11 @@
 func0000000000000101:
-	sext.w	a0, a0
 	lui	a2, 768
 	and	a1, a1, a2
-	sltiu	a0, a0, 128
+	sext.w	a0, a0
 	binvi	a1, a1, 20
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 128
+	andn	a0, a1, a0
 	ret
 
 func0000000000000834:
@@ -68,12 +68,12 @@ func000000000000018c:
 	ret
 
 func0000000000000301:
-	sext.w	a0, a0
 	lui	a2, 12
-	sltiu	a0, a0, 2
+	sext.w	a0, a0
 	and	a1, a1, a2
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 2
+	andn	a0, a1, a0
 	ret
 
 func00000000000000cc:

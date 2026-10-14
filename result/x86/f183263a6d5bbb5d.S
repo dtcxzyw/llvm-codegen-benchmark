@@ -37,7 +37,6 @@ func0000000000000038:
 func0000000000000181:
 	notl	%edi
 	shrl	$16, %esi
-	andl	$1, %esi
 	testb	$-26, %dil
 	sete	%al
 	andb	%sil, %al
@@ -46,7 +45,6 @@ func0000000000000181:
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000198:
 	shrl	$17, %esi
-	andl	$1, %esi
 	testb	%dil, %dil
 	sets	%al
 	andb	%sil, %al

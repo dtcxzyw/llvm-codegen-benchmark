@@ -33,7 +33,7 @@ func000000000000056a:
 	addiw	a3, a1, 1
 	sext.w	a1, a1
 	slt	a2, a3, a2
-	xori	a2, a2, 1
+	not	a2, a2
 	slt	a0, a1, a0
 	and	a0, a0, a2
 	ret

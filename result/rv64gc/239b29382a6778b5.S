@@ -12,7 +12,7 @@ func0000000000000008:
 	lui	a3, 48
 	addw	a1, a1, a2
 	addi	a2, a3, -497
-	xori	a0, a0, 1
+	not	a0, a0
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret

@@ -23,10 +23,9 @@ func0000000000001946:
 	sext.w	a1, a1
 	sext.w	a3, a0
 	srliw	a2, a2, 31
-	srliw	a0, a0, 31
 	slt	a1, a3, a1
-	xori	a0, a0, 1
+	srliw	a0, a0, 31
 	and	a1, a1, a2
-	and	a0, a0, a1
+	andn	a0, a1, a0
 	ret
 

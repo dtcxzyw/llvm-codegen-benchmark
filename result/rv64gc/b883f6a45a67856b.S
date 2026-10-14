@@ -44,7 +44,7 @@ func000000000000030c:
 	lui	a2, 272
 	sltiu	a3, a1, 48
 	xor	a1, a1, a2
-	xori	a2, a3, 1
+	not	a2, a3
 	snez	a1, a1
 	and	a1, a1, a2
 	and	a0, a0, a1

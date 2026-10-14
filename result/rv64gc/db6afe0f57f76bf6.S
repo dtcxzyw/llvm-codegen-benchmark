@@ -80,7 +80,7 @@ func0000000000000088:
 	sltiu	a2, a2, 2
 	sltiu	a1, a1, 2
 	and	a0, a0, a2
-	xori	a1, a1, 1
+	not	a1, a1
 	and	a0, a0, a1
 	ret
 

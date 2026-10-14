@@ -1,7 +1,7 @@
 func00000000000000ec:
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -33,7 +33,7 @@ func000000000000008c:
 func00000000000000ac:
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

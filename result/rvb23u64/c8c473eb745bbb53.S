@@ -8,10 +8,10 @@ func000000000000002c:
 
 func0000000000000141:
 	sub	a2, a2, a1
-	slti	a1, a2, 3
-	xori	a1, a1, 1
 	addiw	a0, a0, -40
-	czero.nez	a0, a1, a0
+	slti	a1, a2, 3
+	seqz	a0, a0
+	andn	a0, a0, a1
 	ret
 
 func0000000000000024:

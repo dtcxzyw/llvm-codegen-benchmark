@@ -20,12 +20,12 @@ func000000000000010c:
 	ret
 
 func0000000000000101:
-	sext.w	a0, a0
 	andi	a1, a1, 6
-	sltiu	a0, a0, 4
+	sext.w	a0, a0
 	addi	a1, a1, -6
-	xori	a0, a0, 1
-	czero.nez	a0, a0, a1
+	seqz	a1, a1
+	sltiu	a0, a0, 4
+	andn	a0, a1, a0
 	slli	a0, a0, 3
 	addi	a0, a0, 216
 	ret

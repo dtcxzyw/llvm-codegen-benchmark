@@ -40,7 +40,6 @@ func0000000000000281:
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000181:
 	shrl	$14, %esi
-	andl	$1, %esi
 	testl	%edi, %edi
 	sete	%al
 	andb	%sil, %al

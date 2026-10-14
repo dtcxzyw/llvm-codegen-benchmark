@@ -56,7 +56,7 @@ func0000000000000081:
 func000000000000014c:
 	slli	a1, a1, 48
 	srli	a1, a1, 63
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -72,7 +72,7 @@ func000000000000010c:
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 32
-	xori	a1, a1, 1
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

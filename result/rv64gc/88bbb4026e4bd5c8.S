@@ -38,7 +38,7 @@ func0000000000000144:
 	addi	a1, a1, -17
 	slti	a0, a0, 7
 	sltiu	a1, a1, 120
-	xori	a0, a0, 1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 

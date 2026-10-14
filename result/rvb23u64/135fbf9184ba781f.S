@@ -7,10 +7,9 @@ func000000000000058c:
 
 func0000000000003188:
 	snez	a2, a2
-	sltiu	a0, a0, 3
 	czero.eqz	a1, a2, a1
-	xori	a0, a0, 1
-	and	a0, a0, a1
+	sltiu	a0, a0, 3
+	andn	a0, a1, a0
 	ret
 
 func000000000000318c:
