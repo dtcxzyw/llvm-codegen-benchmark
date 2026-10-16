@@ -1,6 +1,6 @@
 func0000000000000113:
 	mov	x8, #1152921504606846975
-	adds	x9, x1, x0
+	add	x9, x1, x0
 	cmp	x9, x8
 	csel	x8, x9, x8, lo
 	cmn	x1, x0
@@ -11,7 +11,7 @@ func0000000000000113:
 
 func0000000000000013:
 	mov	x8, #4611686018427387903
-	adds	x9, x1, x0
+	add	x9, x1, x0
 	cmp	x9, x8
 	csel	x8, x9, x8, lo
 	cmn	x1, x0
@@ -22,7 +22,7 @@ func0000000000000013:
 
 func0000000000000012:
 	mov	x8, #9223372036854775807
-	adds	x9, x1, x0
+	add	x9, x1, x0
 	cmp	x9, x8
 	csel	x8, x9, x8, lo
 	cmn	x1, x0

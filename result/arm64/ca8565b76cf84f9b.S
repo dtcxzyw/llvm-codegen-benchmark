@@ -1,5 +1,5 @@
 func000000000000058c:
-	subs	w8, w1, #1
+	sub	w8, w1, #1
 	cmp	w0, w8
 	cset	w8, ne
 	cmp	w1, #1

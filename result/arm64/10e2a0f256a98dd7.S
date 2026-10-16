@@ -34,7 +34,7 @@ func0000000000000842:
 	ret
 
 func0000000000000052:
-	adds	x8, x1, #1
+	add	x8, x1, #1
 	cmp	x8, x0
 	cset	w8, hs
 	cmn	x1, #1

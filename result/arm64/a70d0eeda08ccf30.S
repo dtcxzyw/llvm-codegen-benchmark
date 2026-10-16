@@ -1,6 +1,6 @@
 func0000000000000110:
 	mov	x8, #2305843009213693952
-	adds	x9, x1, x0
+	add	x9, x1, x0
 	cmp	x9, x8
 	cset	w8, hi
 	cmn	x1, x0
@@ -30,7 +30,7 @@ func0000000000000208:
 	ret
 
 func0000000000000102:
-	adds	x8, x1, x0
+	add	x8, x1, x0
 	cmn	x8, #1
 	cset	w8, eq
 	cmn	x1, x0

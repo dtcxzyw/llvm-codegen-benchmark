@@ -1,5 +1,5 @@
 func0000000000000421:
-	adds	w8, w0, #1
+	add	w8, w0, #1
 	cmp	w8, #3
 	cset	w8, eq
 	cmn	w0, #1
@@ -7,7 +7,7 @@ func0000000000000421:
 	ret
 
 func0000000000000021:
-	adds	w8, w0, #1
+	add	w8, w0, #1
 	cmp	w8, #18
 	cset	w8, eq
 	cmn	w0, #1

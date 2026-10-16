@@ -6,7 +6,7 @@ func0000000000000208:
 	ret
 
 func0000000000000110:
-	adds	w8, w1, w2
+	add	w8, w1, w2
 	cmp	w8, w0
 	cset	w8, hi
 	cmn	w1, w2
@@ -14,7 +14,7 @@ func0000000000000110:
 	ret
 
 func0000000000000118:
-	adds	w8, w2, w1
+	add	w8, w2, w1
 	cmp	w8, w0
 	cset	w8, ne
 	cmn	w2, w1

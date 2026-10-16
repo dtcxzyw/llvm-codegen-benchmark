@@ -1,6 +1,6 @@
 func0000000000000113:
 	mov	x8, #6148914691236517205
-	adds	x9, x1, x0
+	add	x9, x1, x0
 	movk	x8, #1365, lsl #48
 	cmp	x9, x8
 	csel	x8, x9, x8, lo
@@ -13,7 +13,7 @@ func0000000000000113:
 
 func0000000000000013:
 	mov	x8, #-6148914691236517206
-	adds	x9, x1, x0
+	add	x9, x1, x0
 	movk	x8, #2730, lsl #48
 	cmp	x9, x8
 	csel	x8, x9, x8, lo
