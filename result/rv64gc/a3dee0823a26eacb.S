@@ -18,26 +18,28 @@ func00000000000014c6:
 	ret
 
 func0000000000001884:
-	li	a1, -383
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	slli	a1, a1, 23
-	add	a0, a0, a1
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
+	lui	a1, 784384
+	sext.w	a0, a0
+	bltu	a1, a0, .LBB2_2
+	subw	a0, a1, a0
+	sltiu	a0, a0, 3
+	ret
+.LBB2_2:
+	lui	a1, 264192
+	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
 
 func0000000000000884:
-	li	a1, -383
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	slli	a1, a1, 23
-	add	a0, a0, a1
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
+	lui	a1, 784384
+	sext.w	a0, a0
+	bltu	a1, a0, .LBB3_2
+	subw	a0, a1, a0
+	sltiu	a0, a0, 3
+	ret
+.LBB3_2:
+	lui	a1, 264192
+	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
 

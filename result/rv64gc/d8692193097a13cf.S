@@ -7,12 +7,13 @@ func00000000000000a6:
 	ret
 
 func00000000000000f4:
-	slli	a0, a0, 32
-	srli	a0, a0, 32
+	li	a1, 127
+	sext.w	a0, a0
+	bltu	a1, a0, .LBB1_2
+	sub	a0, a1, a0
+	ret
+.LBB1_2:
 	addi	a0, a0, -127
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
 	ret
 
 func00000000000000b4:
@@ -37,24 +38,24 @@ func000000000000008a:
 	ret
 
 func00000000000000c4:
-	li	a1, -383
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	slli	a1, a1, 23
+	lui	a1, 784384
+	sext.w	a0, a0
+	bltu	a1, a0, .LBB4_2
+	sub	a0, a1, a0
+	ret
+.LBB4_2:
+	lui	a1, 264192
 	add	a0, a0, a1
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
 	ret
 
 func0000000000000044:
-	li	a1, -383
-	slli	a0, a0, 32
-	srli	a0, a0, 32
-	slli	a1, a1, 23
+	lui	a1, 784384
+	sext.w	a0, a0
+	bltu	a1, a0, .LBB5_2
+	sub	a0, a1, a0
+	ret
+.LBB5_2:
+	lui	a1, 264192
 	add	a0, a0, a1
-	srai	a1, a0, 63
-	xor	a0, a0, a1
-	sub	a0, a0, a1
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000520:
-	zext.w	a2, a2
-	zext.w	a1, a1
+	sext.w	a2, a2
+	sext.w	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3
@@ -17,8 +17,8 @@ func0000000000000028:
 	ret
 
 func00000000000005a0:
-	zext.w	a2, a2
-	zext.w	a1, a1
+	sext.w	a2, a2
+	sext.w	a1, a1
 	minu	a3, a1, a2
 	maxu	a1, a1, a2
 	sub	a1, a1, a3

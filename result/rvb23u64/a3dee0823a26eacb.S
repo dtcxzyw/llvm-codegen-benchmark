@@ -18,22 +18,20 @@ func00000000000014c6:
 	ret
 
 func0000000000001884:
-	li	a1, 383
-	zext.w	a0, a0
-	slli	a1, a1, 23
+	lui	a1, 784384
+	sext.w	a0, a0
 	minu	a2, a0, a1
 	maxu	a0, a0, a1
-	sub	a0, a0, a2
+	subw	a0, a0, a2
 	sltiu	a0, a0, 3
 	ret
 
 func0000000000000884:
-	li	a1, 383
-	zext.w	a0, a0
-	slli	a1, a1, 23
+	lui	a1, 784384
+	sext.w	a0, a0
 	minu	a2, a0, a1
 	maxu	a0, a0, a1
-	sub	a0, a0, a2
+	subw	a0, a0, a2
 	sltiu	a0, a0, 3
 	ret
 

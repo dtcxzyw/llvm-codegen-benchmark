@@ -8,7 +8,7 @@ func00000000000000a6:
 
 func00000000000000f4:
 	li	a1, 127
-	zext.w	a0, a0
+	sext.w	a0, a0
 	minu	a2, a0, a1
 	maxu	a0, a0, a1
 	sub	a0, a0, a2
@@ -37,18 +37,16 @@ func000000000000008a:
 	ret
 
 func00000000000000c4:
-	li	a1, 383
-	zext.w	a0, a0
-	slli	a1, a1, 23
+	lui	a1, 784384
+	sext.w	a0, a0
 	minu	a2, a0, a1
 	maxu	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 
 func0000000000000044:
-	li	a1, 383
-	zext.w	a0, a0
-	slli	a1, a1, 23
+	lui	a1, 784384
+	sext.w	a0, a0
 	minu	a2, a0, a1
 	maxu	a0, a0, a1
 	sub	a0, a0, a2
