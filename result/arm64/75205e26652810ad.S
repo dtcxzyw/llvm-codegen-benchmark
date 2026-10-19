@@ -90,8 +90,9 @@ func0000000000000044:
 	ret
 
 func0000000000000033:
-	fminnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, hi
+	fcmp	d0, d1
+	cset	w8, lt
+	fcmp	d0, d2
+	csel	w0, wzr, w8, ge
 	ret
 

@@ -5,10 +5,11 @@ func0000000000000022:
 	ldr	d2, [x8, :lo12:.LCPI0_0]
 	mov	x8, #4503599627370496000
 	fmul	d1, d1, d2
-	fminnm	d0, d1, d0
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w0, mi
+	fmov	d2, x8
+	fcmp	d1, d2
+	cset	w8, mi
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000011:

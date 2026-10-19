@@ -37,10 +37,11 @@ func00000000000001c4:
 func0000000000000144:
 	fabs	d1, d1
 	mov	x8, #4503599627370496
-	fmaxnm	d0, d1, d0
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w0, gt
+	fmov	d2, x8
+	fcmp	d1, d2
+	cset	w8, gt
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000155:
@@ -107,10 +108,11 @@ func0000000000000055:
 func0000000000000022:
 	fabs	d1, d1
 	adrp	x8, .LCPI9_0
-	fminnm	d0, d1, d0
-	ldr	d1, [x8, :lo12:.LCPI9_0]
-	fcmp	d0, d1
-	cset	w0, mi
+	ldr	d2, [x8, :lo12:.LCPI9_0]
+	fcmp	d1, d2
+	cset	w8, mi
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, pl
 	ret
 
 .LCPI10_0:

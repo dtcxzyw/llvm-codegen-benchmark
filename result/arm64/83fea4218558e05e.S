@@ -15,9 +15,10 @@ func0000000000000041:
 func0000000000000042:
 	mov	w8, #8388608
 	fmov	s2, w8
-	fmaxnm	s1, s1, s2
+	fcmp	s0, s2
+	cset	w8, mi
 	fcmp	s1, s0
-	cset	w0, gt
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000022:

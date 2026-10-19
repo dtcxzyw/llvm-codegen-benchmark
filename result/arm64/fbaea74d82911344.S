@@ -60,11 +60,12 @@ func00000000000000ee:
 	ret
 
 func0000000000000033:
-	fmaxnm	d0, d0, d1
 	mov	x8, #4742290407621132288
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w0, lt
+	fmov	d2, x8
+	fcmp	d0, d2
+	cset	w8, lt
+	fcmp	d1, d2
+	csel	w0, wzr, w8, ge
 	ret
 
 func00000000000000cc:
@@ -292,9 +293,10 @@ func000000000000004b:
 	ret
 
 func00000000000000bb:
-	fmaxnm	d0, d0, d1
 	fcmp	d0, #0.0
-	cset	w0, le
+	cset	w8, le
+	fcmp	d1, #0.0
+	csel	w0, wzr, w8, gt
 	ret
 
 .LCPI34_0:

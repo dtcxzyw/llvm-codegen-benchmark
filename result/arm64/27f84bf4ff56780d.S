@@ -22,19 +22,21 @@ func00000000000001ba:
 
 func0000000000000154:
 	fsub	s1, s1, s2
-	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
-	cset	w0, ls
+	cset	w8, ls
+	fcmp	s1, #0.0
+	csinc	w0, w8, wzr, hi
 	ret
 
 func0000000000000044:
-	fsub	s1, s1, s2
 	mov	w8, #14269
+	fsub	s1, s1, s2
 	movk	w8, #13702, lsl #16
-	fminnm	s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, mi
+	fmov	s2, w8
+	fcmp	s0, s2
+	cset	w8, mi
+	fcmp	s1, s2
+	csinc	w0, w8, wzr, pl
 	ret
 
 func000000000000008e:

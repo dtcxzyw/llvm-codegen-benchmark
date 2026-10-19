@@ -6,9 +6,9 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000244:
 	vfmadd213ps	%zmm1, %zmm0, %zmm0
-	vcmpltps	.LCPI0_0(%rip){1to16}, %zmm0, %k0
-	vcmpltps	.LCPI0_1(%rip){1to16}, %zmm0, %k1
-	korw	%k1, %k0, %k0
+	vbroadcastss	.LCPI0_0(%rip), %zmm1
+	vmaxps	.LCPI0_1(%rip){1to16}, %zmm1, %zmm1
+	vcmpltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

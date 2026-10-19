@@ -385,16 +385,18 @@ func00000000000000a2:
 	ret
 
 func0000000000000055:
-	fminnm	d0, d0, d1
 	fcmp	d0, #0.0
-	cset	w0, hi
+	cset	w8, hi
+	fcmp	d1, #0.0
+	csel	w0, wzr, w8, ls
 	ret
 
 func00000000000000dd:
-	fminnm	d0, d0, d1
-	fmov	d1, #20.00000000
-	fcmp	d0, d1
-	cset	w0, pl
+	fmov	d2, #20.00000000
+	fcmp	d0, d2
+	cset	w8, pl
+	fcmp	d1, d2
+	csel	w0, wzr, w8, mi
 	ret
 
 func000000000000001e:

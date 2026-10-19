@@ -1,11 +1,10 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000044:
-	vcmpltsd	%xmm1, %xmm0, %k0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpltsd	%xmm1, %xmm0, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
+	vxorpd	%xmm2, %xmm2, %xmm2
+	vmaxsd	%xmm2, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
 	retq
 
 .LCPI1_0:
@@ -42,10 +41,9 @@ func00000000000000b6:
 	.quad	0x3d05000000000000
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000154:
-	vcmplesd	%xmm1, %xmm0, %k0
-	vcmplesd	.LCPI4_0(%rip), %xmm0, %k1
-	korw	%k1, %k0, %k0
-	kmovd	%k0, %eax
+	vmaxsd	.LCPI4_0(%rip), %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	setae	%al
 	retq
 
 .LCPI5_0:

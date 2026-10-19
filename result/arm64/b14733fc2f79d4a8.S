@@ -54,9 +54,10 @@ func0000000000000142:
 func0000000000000048:
 	adrp	x8, .LCPI7_0
 	ldr	d2, [x8, :lo12:.LCPI7_0]
-	fminnm	d1, d1, d2
+	fcmp	d0, d2
+	cset	w8, gt
 	fcmp	d1, d0
-	cset	w0, mi
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000042:

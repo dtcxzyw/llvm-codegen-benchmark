@@ -55,9 +55,10 @@ func000000000000005b:
 	ret
 
 func0000000000000044:
-	fminnm	s1, s1, s2
-	fcmp	s1, s0
-	cset	w0, mi
+	fcmp	s0, s1
+	cset	w8, gt
+	fcmp	s0, s2
+	csinc	w0, w8, wzr, le
 	ret
 
 func00000000000000c2:

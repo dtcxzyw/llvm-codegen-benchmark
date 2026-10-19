@@ -23,8 +23,8 @@ func0000000000000024:
 	.long	0x34000000
 	.prefalign	4, .Lfunc_end2, nop
 func00000000000000dd:
-	vcmpnltps	%zmm1, %zmm0, %k1
-	vcmpnltps	.LCPI2_0(%rip){1to16}, %zmm0, %k0 {%k1}
+	vmaxps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm1
+	vcmpnltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

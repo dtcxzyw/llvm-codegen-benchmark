@@ -21,10 +21,9 @@ func0000000000000041:
 	.long	0x00800000
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
-	vcmpltss	%xmm1, %xmm0, %k0
-	vcmpltss	.LCPI2_0(%rip), %xmm0, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
+	vmaxss	.LCPI2_0(%rip), %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

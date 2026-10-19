@@ -18,9 +18,9 @@ func0000000000000024:
 
 func00000000000000dd:
 	movi	v2.2s, #52, lsl #24
-	fmaxnm	s1, s1, s2
-	fcmp	s1, s0
-	cset	w0, le
+	fcmp	s0, s1
+	fccmp	s0, s2, #8, pl
+	cset	w0, pl
 	ret
 
 func0000000000000027:

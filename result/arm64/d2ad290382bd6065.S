@@ -159,16 +159,17 @@ func0000000000000042:
 
 func00000000000000bb:
 	mov	w8, #11571
-	fmaxnm	s0, s0, s1
 	movk	w8, #16656, lsl #16
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s1, s2
+	fccmp	s0, s2, #0, le
 	cset	w0, le
 	ret
 
 func0000000000000055:
-	fminnm	s0, s0, s1
-	fcmp	s0, #0.0
+	movi	d2, #0000000000000000
+	fcmp	s1, #0.0
+	fccmp	s0, s2, #0, hi
 	cset	w0, hi
 	ret
 
@@ -285,10 +286,10 @@ func0000000000000087:
 
 func00000000000000dd:
 	mov	w8, #14269
-	fminnm	s0, s0, s1
 	movk	w8, #13702, lsl #16
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s1, s2
+	fccmp	s0, s2, #8, pl
 	cset	w0, pl
 	ret
 

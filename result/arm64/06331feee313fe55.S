@@ -35,14 +35,14 @@ func0000000000000042:
 	ret
 
 func00000000000000bb:
-	fmaxnm	s0, s0, s2
-	fcmp	s0, s1
+	fcmp	s2, s1
+	fccmp	s0, s1, #0, le
 	cset	w0, le
 	ret
 
 func0000000000000033:
-	fmaxnm	s0, s0, s2
-	fcmp	s0, s1
+	fcmp	s2, s1
+	fccmp	s0, s1, #0, lt
 	cset	w0, lt
 	ret
 

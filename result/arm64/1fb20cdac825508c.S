@@ -41,9 +41,10 @@ func0000000000000110:
 	ret
 
 func0000000000000154:
-	fmaxnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, ge
+	fcmp	d0, d1
+	cset	w8, ls
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, hi
 	ret
 
 func0000000000000094:
@@ -54,9 +55,10 @@ func0000000000000094:
 	ret
 
 func0000000000000088:
-	fminnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, mi
+	fcmp	d0, d1
+	cset	w8, gt
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 func000000000000004a:
@@ -102,9 +104,10 @@ func0000000000000194:
 	ret
 
 func0000000000000198:
-	fminnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, ls
+	fcmp	d0, d1
+	cset	w8, ge
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, lt
 	ret
 
 func00000000000001aa:

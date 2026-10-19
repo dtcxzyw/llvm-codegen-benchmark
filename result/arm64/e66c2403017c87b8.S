@@ -1,7 +1,8 @@
 func0000000000000044:
-	fminnm	d0, d0, d2
 	fcmp	d0, d1
-	cset	w0, mi
+	cset	w8, mi
+	fcmp	d2, d1
+	csinc	w0, w8, wzr, pl
 	ret
 
 func00000000000000aa:
@@ -40,9 +41,10 @@ func0000000000000048:
 	ret
 
 func0000000000000088:
-	fmaxnm	d0, d0, d2
 	fcmp	d0, d1
-	cset	w0, gt
+	cset	w8, gt
+	fcmp	d2, d1
+	csinc	w0, w8, wzr, le
 	ret
 
 func00000000000001a6:

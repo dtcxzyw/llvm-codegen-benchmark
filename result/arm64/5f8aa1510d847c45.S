@@ -1,11 +1,12 @@
 .LCPI0_0:
 	.xword	0x3f1a36e2eb1c432d
 func0000000000000088:
-	fmaxnm	d0, d0, d1
 	adrp	x8, .LCPI0_0
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fcmp	d0, d1
+	ldr	d2, [x8, :lo12:.LCPI0_0]
+	fcmp	d0, d2
 	cset	w8, gt
+	fcmp	d1, d2
+	csinc	w8, w8, wzr, le
 	and	w0, w0, w8
 	ret
 

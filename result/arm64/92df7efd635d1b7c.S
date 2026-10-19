@@ -61,16 +61,17 @@ func0000000000002698:
 
 func0000000000000888:
 	mov	x8, #3689348814741910323
-	fminnm	d1, d0, d1
-	movk	x8, #16379, lsl #48
-	fmov	d2, x8
-	mov	x8, #3689348814741910323
+	mov	x9, #3689348814741910323
 	movk	x8, #16339, lsl #48
+	movk	x9, #16379, lsl #48
+	fmov	d2, x8
 	fcmp	d0, d2
-	fmov	d0, x8
-	cset	w8, gt
-	fcmp	d1, d0
-	csinc	w0, w8, wzr, pl
+	cset	w8, mi
+	fcmp	d1, d2
+	fmov	d1, x9
+	csinc	w8, w8, wzr, pl
+	fcmp	d0, d1
+	csinc	w0, w8, wzr, le
 	ret
 
 .LCPI5_0:

@@ -111,9 +111,10 @@ func00000000000000ec:
 	ret
 
 func0000000000000055:
-	fmaxnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, lt
+	fcmp	d0, d1
+	cset	w8, hi
+	fcmp	d0, d2
+	csel	w0, wzr, w8, ls
 	ret
 
 func00000000000000ca:

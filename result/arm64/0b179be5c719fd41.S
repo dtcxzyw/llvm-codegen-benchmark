@@ -29,11 +29,12 @@ func000000000000003d:
 .LCPI3_0:
 	.xword	0x3f50624dd2f1a9fc
 func0000000000000044:
-	fmaxnm	d0, d0, d1
 	adrp	x8, .LCPI3_0
-	ldr	d1, [x8, :lo12:.LCPI3_0]
-	fcmp	d0, d1
-	cset	w0, gt
+	ldr	d2, [x8, :lo12:.LCPI3_0]
+	fcmp	d0, d2
+	cset	w8, gt
+	fcmp	d1, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 .LCPI4_0:
@@ -66,9 +67,10 @@ func00000000000000bb:
 	ret
 
 func0000000000000022:
-	fminnm	d0, d0, d1
 	fcmp	d0, #0.0
-	cset	w0, mi
+	cset	w8, mi
+	fcmp	d1, #0.0
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000011:
@@ -118,9 +120,10 @@ func0000000000000038:
 	ret
 
 func00000000000000aa:
-	fminnm	d0, d0, d1
 	fcmp	d0, #0.0
-	cset	w0, ls
+	cset	w8, ls
+	fcmp	d1, #0.0
+	csinc	w0, w8, wzr, hi
 	ret
 
 .LCPI15_0:

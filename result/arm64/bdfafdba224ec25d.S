@@ -1,10 +1,11 @@
 func0000000000000088:
 	mov	x8, #70368744177664
-	fminnm	d0, d0, d1
 	movk	x8, #16527, lsl #48
-	fmov	d1, x8
-	fcmp	d0, d1
+	fmov	d2, x8
+	fcmp	d0, d2
 	cset	w8, mi
+	fcmp	d1, d2
+	csinc	w8, w8, wzr, pl
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -152,9 +153,10 @@ func0000000000000374:
 	ret
 
 func00000000000002a8:
-	fminnm	d0, d0, d1
 	fcmp	d0, #0.0
 	cset	w8, ls
+	fcmp	d1, #0.0
+	csinc	w8, w8, wzr, hi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -174,11 +176,12 @@ func0000000000000208:
 .LCPI15_0:
 	.xword	0x3ffe666772d5e071
 func0000000000000110:
-	fmaxnm	d0, d0, d1
 	adrp	x8, .LCPI15_0
-	ldr	d1, [x8, :lo12:.LCPI15_0]
-	fcmp	d0, d1
+	ldr	d2, [x8, :lo12:.LCPI15_0]
+	fcmp	d0, d2
 	cset	w8, gt
+	fcmp	d1, d2
+	csinc	w8, w8, wzr, le
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

@@ -3,18 +3,20 @@
 func0000000000000044:
 	fdiv	d1, d1, d2
 	adrp	x8, .LCPI0_0
-	fmaxnm	d0, d1, d0
-	ldr	d1, [x8, :lo12:.LCPI0_0]
-	fcmp	d0, d1
-	cset	w0, gt
+	ldr	d2, [x8, :lo12:.LCPI0_0]
+	fcmp	d1, d2
+	cset	w8, gt
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000022:
 	fdiv	d1, d1, d2
-	fminnm	d0, d1, d0
-	fmov	d1, #1.00000000
-	fcmp	d0, d1
-	cset	w0, mi
+	fmov	d2, #1.00000000
+	fcmp	d1, d2
+	cset	w8, mi
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, pl
 	ret
 
 .LCPI2_0:

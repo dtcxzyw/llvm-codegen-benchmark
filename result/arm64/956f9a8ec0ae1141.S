@@ -20,10 +20,11 @@ func0000000000000110:
 func0000000000000044:
 	fsub	d1, d1, d2
 	mov	x8, #4066750463515557888
-	fminnm	d0, d1, d0
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w0, mi
+	fmov	d2, x8
+	fcmp	d1, d2
+	cset	w8, mi
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, pl
 	ret
 
 .LCPI3_0:

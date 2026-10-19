@@ -59,9 +59,9 @@ func0000000000000024:
 
 func00000000000000bd:
 	movi	d2, #0000000000000000
-	fmaxnm	s1, s1, s2
 	fcmp	s1, s0
-	cset	w0, le
+	fccmp	s0, s2, #8, le
+	cset	w0, pl
 	ret
 
 func0000000000000088:

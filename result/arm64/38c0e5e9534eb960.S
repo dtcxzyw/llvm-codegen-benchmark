@@ -1,10 +1,11 @@
 func0000000000000022:
 	mov	w8, #14269
-	fminnm	s0, s0, s1
 	movk	w8, #13702, lsl #16
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s0, s2
 	cset	w8, mi
+	fcmp	s1, s2
+	csinc	w8, w8, wzr, pl
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -21,11 +22,12 @@ func0000000000000077:
 
 func0000000000000044:
 	mov	w8, #26464
-	fmaxnm	s0, s0, s1
 	movk	w8, #18583, lsl #16
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s0, s2
 	cset	w8, gt
+	fcmp	s1, s2
+	csinc	w8, w8, wzr, le
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret
@@ -70,9 +72,10 @@ func0000000000000088:
 	ret
 
 func00000000000000aa:
-	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
 	cset	w8, ls
+	fcmp	s1, #0.0
+	csinc	w8, w8, wzr, hi
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

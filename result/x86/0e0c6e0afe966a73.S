@@ -23,10 +23,9 @@ func000000000000004a:
 	.quad	0x0010000000000000
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000042:
-	vcmpltsd	%xmm1, %xmm0, %k0
-	vcmpltsd	.LCPI2_0(%rip), %xmm0, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
+	vmaxsd	.LCPI2_0(%rip), %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop

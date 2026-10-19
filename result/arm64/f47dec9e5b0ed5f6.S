@@ -1,23 +1,26 @@
 func0000000000000884:
-	mov	w8, #864026624
-	fminnm	s1, s1, s2
-	fmov	s2, w8
 	mov	w8, #14269
+	mov	w9, #864026624
 	movk	w8, #13702, lsl #16
-	fcmp	s0, s2
-	fmov	s0, w8
+	fmov	s3, w8
+	fcmp	s1, s3
+	fmov	s1, w9
 	cset	w8, mi
-	fcmp	s1, s0
+	fcmp	s2, s3
+	csinc	w8, w8, wzr, pl
+	fcmp	s0, s1
 	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000888:
-	fminnm	s1, s1, s2
 	mov	w8, #1148846080
-	fminnm	s0, s1, s0
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, mi
+	fmov	s3, w8
+	fcmp	s1, s3
+	cset	w8, mi
+	fcmp	s2, s3
+	csinc	w8, w8, wzr, pl
+	fcmp	s0, s3
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000cc6:
@@ -42,11 +45,13 @@ func0000000000001210:
 	ret
 
 func0000000000001108:
-	fmaxnm	s1, s1, s2
-	fmaxnm	s0, s0, s1
-	movi	v1.2s, #52, lsl #24
-	fcmp	s0, s1
-	cset	w0, gt
+	movi	v3.2s, #52, lsl #24
+	fcmp	s1, s3
+	cset	w8, gt
+	fcmp	s2, s3
+	csinc	w8, w8, wzr, le
+	fcmp	s0, s3
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000001dce:

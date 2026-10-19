@@ -44,12 +44,13 @@ func0000000000000099:
 	ret
 
 func0000000000000044:
-	fabs	d1, d1
 	mov	x8, #4503599627370496
-	fmaxnm	d0, d0, d1
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w0, gt
+	fabs	d1, d1
+	fmov	d2, x8
+	fcmp	d0, d2
+	cset	w8, gt
+	fcmp	d1, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000055:
@@ -87,11 +88,12 @@ func0000000000000088:
 .LCPI8_0:
 	.xword	0x3ddb7cdfd9d7bdbb
 func0000000000000022:
-	fabs	d1, d1
 	adrp	x8, .LCPI8_0
-	fminnm	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI8_0]
-	fcmp	d0, d1
-	cset	w0, mi
+	fabs	d1, d1
+	ldr	d2, [x8, :lo12:.LCPI8_0]
+	fcmp	d0, d2
+	cset	w8, mi
+	fcmp	d1, d2
+	csinc	w0, w8, wzr, pl
 	ret
 

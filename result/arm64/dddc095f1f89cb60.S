@@ -15,8 +15,9 @@ func0000000000000011:
 
 func0000000000000055:
 	fsub	s1, s1, s2
-	fminnm	s0, s0, s1
-	fcmp	s0, #0.0
+	movi	d2, #0000000000000000
+	fcmp	s1, #0.0
+	fccmp	s0, s2, #0, hi
 	cset	w0, hi
 	ret
 

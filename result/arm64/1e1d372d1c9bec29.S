@@ -31,10 +31,12 @@ func0000000000000888:
 	ret
 
 func0000000000000222:
-	fminnm	d1, d1, d2
-	fminnm	d0, d1, d0
+	fcmp	d1, #0.0
+	cset	w8, mi
+	fcmp	d2, #0.0
+	csinc	w8, w8, wzr, pl
 	fcmp	d0, #0.0
-	cset	w0, mi
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000111:
@@ -73,10 +75,12 @@ func0000000000000555:
 	ret
 
 func0000000000000aaa:
-	fminnm	d1, d1, d2
-	fminnm	d0, d1, d0
+	fcmp	d1, #0.0
+	cset	w8, ls
+	fcmp	d2, #0.0
+	csinc	w8, w8, wzr, hi
 	fcmp	d0, #0.0
-	cset	w0, ls
+	csinc	w0, w8, wzr, hi
 	ret
 
 func0000000000000bbd:
@@ -92,19 +96,22 @@ func0000000000000bbd:
 .LCPI9_0:
 	.xword	0x3eb0c6f7a0b5ed8d
 func0000000000000a2a:
-	fminnm	d0, d2, d0
+	fcmp	d2, #0.0
 	adrp	x8, .LCPI9_0
+	cset	w9, ls
 	fcmp	d0, #0.0
 	ldr	d0, [x8, :lo12:.LCPI9_0]
-	cset	w8, ls
+	csinc	w8, w9, wzr, hi
 	fcmp	d1, d0
 	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000444:
-	fmaxnm	d1, d1, d2
-	fmaxnm	d0, d1, d0
+	fcmp	d1, #0.0
+	cset	w8, gt
+	fcmp	d2, #0.0
+	csinc	w8, w8, wzr, le
 	fcmp	d0, #0.0
-	cset	w0, gt
+	csinc	w0, w8, wzr, le
 	ret
 

@@ -14,10 +14,11 @@ func0000000000000088:
 	movk	w8, #15395, lsl #16
 	fmov	s2, w8
 	fmul	s1, s1, s2
-	fmaxnm	s0, s1, s0
-	fmov	s1, #1.00000000
-	fcmp	s0, s1
-	cset	w0, gt
+	fmov	s2, #1.00000000
+	fcmp	s1, s2
+	cset	w8, gt
+	fcmp	s0, s2
+	csinc	w0, w8, wzr, le
 	ret
 
 func00000000000000ee:

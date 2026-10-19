@@ -6,9 +6,10 @@ func0000000000000042:
 	ret
 
 func0000000000000022:
-	fmaxnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, gt
+	fcmp	d0, d1
+	cset	w8, mi
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000053:
@@ -89,9 +90,10 @@ func0000000000000028:
 	ret
 
 func0000000000000044:
-	fminnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, mi
+	fcmp	d0, d1
+	cset	w8, gt
+	fcmp	d0, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000035:

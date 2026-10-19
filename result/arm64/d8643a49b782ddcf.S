@@ -1,8 +1,8 @@
 func0000000000000044:
-	movi	d2, #0000000000000000
-	fmaxnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, gt
+	fcmp	d0, #0.0
+	cset	w8, mi
+	fcmp	d0, d1
+	csinc	w0, w8, wzr, pl
 	ret
 
 func00000000000001b0:
@@ -36,10 +36,11 @@ func00000000000000b6:
 
 func0000000000000154:
 	mov	x8, #4396920611197157376
-	fmov	d2, x8
-	fmaxnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, ge
+	fcmp	d0, d1
+	fmov	d1, x8
+	cset	w8, ls
+	fcmp	d0, d1
+	csinc	w0, w8, wzr, hi
 	ret
 
 func0000000000000066:

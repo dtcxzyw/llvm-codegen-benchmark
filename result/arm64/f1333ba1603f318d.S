@@ -52,13 +52,13 @@ func0000000000000022:
 	ret
 
 func00000000000002dd:
+	mov	w8, #14269
 	fabs	s1, s1
 	fabs	s0, s0
-	mov	w8, #14269
 	movk	w8, #13702, lsl #16
-	fminnm	s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s1, s2
+	fccmp	s0, s2, #8, pl
 	cset	w0, pl
 	ret
 

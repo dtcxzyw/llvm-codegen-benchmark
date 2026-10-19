@@ -60,12 +60,13 @@ func000000000000002e:
 .LCPI6_0:
 	.xword	0x3ddb7cdfd9d7bdbb
 func0000000000000044:
-	fadd	d1, d1, d2
 	adrp	x8, .LCPI6_0
-	fminnm	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI6_0]
-	fcmp	d0, d1
-	cset	w0, mi
+	fadd	d1, d1, d2
+	ldr	d3, [x8, :lo12:.LCPI6_0]
+	fcmp	d0, d3
+	cset	w8, mi
+	fcmp	d1, d3
+	csinc	w0, w8, wzr, pl
 	ret
 
 func00000000000000c2:

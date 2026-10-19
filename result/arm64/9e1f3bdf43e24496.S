@@ -1,12 +1,13 @@
 func0000000000000444:
-	fcmp	d1, d2
 	mov	x8, #70368744177664
+	fcmp	d1, d2
 	movk	x8, #16527, lsl #48
+	fmov	d3, x8
 	fcsel	d1, d1, d2, mi
-	fminnm	d0, d0, d1
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w0, mi
+	fcmp	d0, d3
+	cset	w8, mi
+	fcmp	d1, d3
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000510:

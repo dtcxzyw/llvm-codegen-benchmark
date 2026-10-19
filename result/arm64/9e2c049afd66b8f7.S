@@ -1,10 +1,11 @@
 func0000000000000088:
 	mov	w8, #26464
-	fmaxnm	s0, s0, s1
 	movk	w8, #18583, lsl #16
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s0, s2
 	cset	w8, gt
+	fcmp	s1, s2
+	csinc	w8, w8, wzr, le
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

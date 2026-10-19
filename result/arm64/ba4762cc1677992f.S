@@ -62,13 +62,14 @@ func0000000000000110:
 .LCPI6_0:
 	.xword	0x471a36e2d0e56042
 func0000000000000288:
-	fabs	d1, d1
 	fabs	d0, d0
 	adrp	x8, .LCPI6_0
-	fmaxnm	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI6_0]
-	fcmp	d0, d1
-	cset	w0, gt
+	fabs	d1, d1
+	ldr	d2, [x8, :lo12:.LCPI6_0]
+	fcmp	d0, d2
+	cset	w8, gt
+	fcmp	d1, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 func00000000000006aa:
@@ -85,25 +86,27 @@ func00000000000006aa:
 .LCPI8_0:
 	.xword	0x3f1a36e2eb1c432d
 func0000000000000088:
-	fabs	d1, d1
 	fabs	d0, d0
 	adrp	x8, .LCPI8_0
-	fmaxnm	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI8_0]
-	fcmp	d0, d1
-	cset	w0, gt
+	fabs	d1, d1
+	ldr	d2, [x8, :lo12:.LCPI8_0]
+	fcmp	d0, d2
+	cset	w8, gt
+	fcmp	d1, d2
+	csinc	w0, w8, wzr, le
 	ret
 
 .LCPI9_0:
 	.xword	0x3eb0c6f7a0b5ed8d
 func0000000000000044:
-	fabs	d1, d1
 	fabs	d0, d0
 	adrp	x8, .LCPI9_0
-	fminnm	d0, d0, d1
-	ldr	d1, [x8, :lo12:.LCPI9_0]
-	fcmp	d0, d1
-	cset	w0, mi
+	fabs	d1, d1
+	ldr	d2, [x8, :lo12:.LCPI9_0]
+	fcmp	d0, d2
+	cset	w8, mi
+	fcmp	d1, d2
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000710:
@@ -117,13 +120,14 @@ func0000000000000710:
 	ret
 
 func0000000000000644:
-	fabs	d1, d1
-	fabs	d0, d0
 	mov	x8, #4372995238176751616
-	fminnm	d0, d0, d1
-	fmov	d1, x8
-	fcmp	d0, d1
-	cset	w0, mi
+	fabs	d0, d0
+	fabs	d1, d1
+	fmov	d2, x8
+	fcmp	d0, d2
+	cset	w8, mi
+	fcmp	d1, d2
+	csinc	w0, w8, wzr, pl
 	ret
 
 func00000000000000aa:

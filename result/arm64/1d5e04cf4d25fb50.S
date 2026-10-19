@@ -27,9 +27,10 @@ func0000000000000087:
 
 func0000000000000055:
 	fsub	d1, d1, d2
-	fminnm	d0, d0, d1
 	fcmp	d0, #0.0
-	cset	w0, hi
+	cset	w8, hi
+	fcmp	d1, #0.0
+	csel	w0, wzr, w8, ls
 	ret
 
 func0000000000000088:

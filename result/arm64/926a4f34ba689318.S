@@ -1,7 +1,8 @@
 func0000000000000088:
-	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
 	cset	w8, mi
+	fcmp	s1, #0.0
+	csinc	w8, w8, wzr, pl
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret
@@ -38,10 +39,11 @@ func0000000000000120:
 	ret
 
 func0000000000000110:
-	fmaxnm	s0, s0, s1
-	movi	v1.2s, #52, lsl #24
-	fcmp	s0, s1
+	movi	v2.2s, #52, lsl #24
+	fcmp	s0, s2
 	cset	w8, gt
+	fcmp	s1, s2
+	csinc	w8, w8, wzr, le
 	orr	w8, w0, w8
 	and	w0, w8, #0x1
 	ret

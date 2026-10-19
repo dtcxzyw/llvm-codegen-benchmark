@@ -36,10 +36,12 @@ func0000000000000ccc:
 	ret
 
 func0000000000000555:
-	fminnm	s1, s1, s2
-	fminnm	s0, s1, s0
+	movi	d3, #0000000000000000
+	fcmp	s2, #0.0
+	fccmp	s1, s3, #0, hi
+	cset	w8, hi
 	fcmp	s0, #0.0
-	cset	w0, hi
+	csel	w0, wzr, w8, ls
 	ret
 
 func0000000000000aaa:
@@ -77,12 +79,13 @@ func0000000000000666:
 	ret
 
 func0000000000000bbb:
-	fmaxnm	s1, s1, s2
 	mov	w8, #1135869952
-	fmaxnm	s0, s1, s0
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, le
+	fmov	s3, w8
+	fcmp	s2, s3
+	fccmp	s1, s3, #0, le
+	cset	w8, le
+	fcmp	s0, s3
+	csel	w0, wzr, w8, gt
 	ret
 
 func000000000000044c:

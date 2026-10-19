@@ -81,8 +81,8 @@ func0000000000000024:
 	.prefalign	4, .Lfunc_end9, nop
 func00000000000000bd:
 	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpnltps	%zmm2, %zmm0, %k1
-	vcmpnltps	%zmm1, %zmm0, %k0 {%k1}
+	vmaxps	%zmm2, %zmm1, %zmm1
+	vcmpnltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -41,9 +41,10 @@ func0000000000000077:
 	ret
 
 func0000000000000055:
-	fminnm	d0, d0, d2
 	fcmp	d0, d1
-	cset	w0, hi
+	cset	w8, hi
+	fcmp	d2, d1
+	csel	w0, wzr, w8, ls
 	ret
 
 func00000000000000aa:

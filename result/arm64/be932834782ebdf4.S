@@ -84,22 +84,22 @@ func000000000000006d:
 	ret
 
 func00000000000001dd:
-	fabs	s1, s1
 	mov	w8, #14269
+	fabs	s1, s1
 	movk	w8, #13702, lsl #16
-	fminnm	s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s1, s2
+	fccmp	s0, s2, #8, pl
 	cset	w0, pl
 	ret
 
 func00000000000000dd:
-	fabs	s1, s1
 	mov	w8, #14269
+	fabs	s1, s1
 	movk	w8, #13702, lsl #16
-	fminnm	s0, s1, s0
-	fmov	s1, w8
-	fcmp	s0, s1
+	fmov	s2, w8
+	fcmp	s0, s2
+	fccmp	s1, s2, #8, pl
 	cset	w0, pl
 	ret
 

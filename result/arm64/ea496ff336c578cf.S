@@ -62,9 +62,10 @@ func000000000000006a:
 	ret
 
 func0000000000000044:
-	fmaxnm	s1, s1, s2
-	fcmp	s1, s0
-	cset	w0, gt
+	fcmp	s0, s1
+	cset	w8, mi
+	fcmp	s0, s2
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000110:

@@ -27,10 +27,11 @@ func0000000000000088:
 func0000000000000022:
 	fabs	d1, d1
 	mov	x8, #4372995238176751616
-	fminnm	d0, d1, d0
-	fmov	d1, x8
-	fcmp	d0, d1
+	fmov	d2, x8
+	fcmp	d1, d2
 	cset	w8, mi
+	fcmp	d0, d2
+	csinc	w8, w8, wzr, pl
 	orr	w8, w8, w0
 	and	w0, w8, #0x1
 	ret

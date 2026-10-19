@@ -8,8 +8,9 @@ func000000000000004a:
 
 func0000000000000022:
 	fadd	s1, s1, s2
-	fminnm	s0, s0, s1
 	fcmp	s0, #0.0
-	cset	w0, mi
+	cset	w8, mi
+	fcmp	s1, #0.0
+	csinc	w0, w8, wzr, pl
 	ret
 

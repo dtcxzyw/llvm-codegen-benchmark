@@ -133,10 +133,9 @@ func000000000000003e:
 	.quad	0x3ff0000000000000
 	.prefalign	4, .Lfunc_end14, nop
 func0000000000000055:
-	vcmpnlesd	%xmm1, %xmm0, %k0
-	vcmpnlesd	.LCPI14_0(%rip), %xmm0, %k1
-	kandw	%k0, %k1, %k0
-	kmovd	%k0, %eax
+	vmaxsd	.LCPI14_0(%rip), %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	setb	%al
 	retq
 
 	.prefalign	4, .Lfunc_end15, nop

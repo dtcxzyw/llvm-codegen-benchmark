@@ -20,9 +20,10 @@ func000000000000004a:
 func0000000000000042:
 	mov	x8, #4503599627370496
 	fmov	d2, x8
-	fmaxnm	d1, d1, d2
+	fcmp	d0, d2
+	cset	w8, mi
 	fcmp	d1, d0
-	cset	w0, gt
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000048:

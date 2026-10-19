@@ -17,10 +17,10 @@ func00000000000000a6:
 func0000000000000088:
 	vdivss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpltss	%xmm0, %xmm1, %k0
-	vcmpgtss	.LCPI1_0(%rip), %xmm0, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
+	vmovss	.LCPI1_0(%rip), %xmm2
+	vminss	%xmm1, %xmm2, %xmm1
+	vucomiss	%xmm1, %xmm0
+	seta	%al
 	retq
 
 .LCPI2_0:

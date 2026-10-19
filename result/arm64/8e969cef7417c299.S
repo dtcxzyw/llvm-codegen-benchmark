@@ -1,11 +1,12 @@
 func0000000000000022:
-	fabs	s1, s1
 	mov	w8, #14269
+	fabs	s1, s1
 	movk	w8, #13702, lsl #16
-	fminnm	s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, mi
+	fmov	s2, w8
+	fcmp	s0, s2
+	cset	w8, mi
+	fcmp	s1, s2
+	csinc	w0, w8, wzr, pl
 	ret
 
 func0000000000000066:
@@ -21,13 +22,14 @@ func0000000000000066:
 	ret
 
 func0000000000000044:
-	fabs	s1, s1
 	mov	w8, #26464
+	fabs	s1, s1
 	movk	w8, #18583, lsl #16
-	fmaxnm	s0, s0, s1
-	fmov	s1, w8
-	fcmp	s0, s1
-	cset	w0, gt
+	fmov	s2, w8
+	fcmp	s0, s2
+	cset	w8, gt
+	fcmp	s1, s2
+	csinc	w0, w8, wzr, le
 	ret
 
 func0000000000000055:

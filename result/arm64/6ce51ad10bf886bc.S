@@ -106,9 +106,10 @@ func000000000000003e:
 
 func0000000000000055:
 	fmov	d2, #1.00000000
-	fmaxnm	d1, d1, d2
-	fcmp	d1, d0
-	cset	w0, lt
+	fcmp	d0, d2
+	cset	w8, hi
+	fcmp	d0, d1
+	csel	w0, wzr, w8, ls
 	ret
 
 func000000000000002c:

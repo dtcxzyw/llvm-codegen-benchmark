@@ -68,10 +68,9 @@ func0000000000000142:
 	.quad	0x3fe204189374bc6a
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000048:
-	vcmpltsd	%xmm0, %xmm1, %k0
-	vcmpgtsd	.LCPI7_0(%rip), %xmm0, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
+	vminsd	.LCPI7_0(%rip), %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	seta	%al
 	retq
 
 	.prefalign	4, .Lfunc_end8, nop
