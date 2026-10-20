@@ -43,11 +43,10 @@ func0000000000000081:
 	ret
 
 func0000000000000141:
-	mov	w8, #592
-	cmp	w1, #2
-	ccmp	w0, w8, #0, gt
+	cmp	w0, #592
 	mov	w8, #2
-	cinc	w0, w8, ne
+	ccmp	w1, #2, #4, eq
+	cinc	w0, w8, le
 	ret
 
 func0000000000000084:
@@ -80,11 +79,10 @@ func00000000000000c1:
 	ret
 
 func0000000000000181:
-	mov	w8, #136
-	cmp	w1, #0
-	ccmp	w0, w8, #0, ne
+	cmp	w0, #136
 	mov	w8, #3
-	csel	w0, wzr, w8, eq
+	ccmp	w1, #0, #4, eq
+	csel	w0, wzr, w8, ne
 	ret
 
 func0000000000000148:
@@ -120,10 +118,9 @@ func0000000000000024:
 	ret
 
 func0000000000000146:
-	mov	w8, #-1999
-	cmp	w1, #0
-	ccmp	w0, w8, #0, gt
+	cmn	w0, #1999
 	mov	w8, #19
-	cinc	w0, w8, lt
+	ccmp	w1, #0, #4, lt
+	cinc	w0, w8, gt
 	ret
 

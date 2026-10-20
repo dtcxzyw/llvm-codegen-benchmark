@@ -30,11 +30,10 @@ func000000000000028c:
 	ret
 
 func00000000000000c1:
-	mov	w8, #85
-	cmp	w1, #5
-	ccmp	w0, w8, #0, lt
+	cmp	w0, #85
 	mov	w8, #2
-	cinc	w0, w8, ne
+	ccmp	w1, #5, #0, eq
+	cinc	w0, w8, ge
 	ret
 
 func0000000000000021:
@@ -61,11 +60,10 @@ func0000000000000088:
 	ret
 
 func0000000000000141:
-	mov	w8, #172
-	cmp	w1, #4
-	ccmp	w0, w8, #0, gt
+	cmp	w0, #172
 	mov	w8, #717
-	cinc	w0, w8, eq
+	ccmp	w1, #4, #4, eq
+	cinc	w0, w8, gt
 	ret
 
 func0000000000000028:

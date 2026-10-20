@@ -1,11 +1,10 @@
 func0000000000000024:
-	and	w8, w2, #0xff
-	and	w9, w1, #0xff
-	cmp	w8, #5
-	mov	w8, #64
-	ccmp	w9, w8, #2, eq
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #64
 	mov	w8, #2
-	csel	w0, w8, w0, lo
+	ccmp	w9, #5, #0, lo
+	csel	w0, w8, w0, eq
 	ret
 
 func00000000000000c6:

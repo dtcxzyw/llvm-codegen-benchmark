@@ -17,11 +17,10 @@ func0000000000000604:
 	ret
 
 func0000000000000605:
-	cmp	w2, #0
-	mov	w8, #131072
-	ccmp	w1, w8, #4, eq
+	cmp	w1, #32, lsl #12
 	mov	w8, #1048576
-	csel	w8, w8, wzr, eq
+	ccmp	w2, #0, #0, ne
+	csel	w8, w8, wzr, ne
 	orr	w0, w8, w0
 	ret
 

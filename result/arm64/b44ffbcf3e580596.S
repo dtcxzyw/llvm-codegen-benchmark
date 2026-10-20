@@ -7,11 +7,10 @@ func0000000000000042:
 	ret
 
 func0000000000000318:
-	mov	w8, #121
 	and	w9, w0, #0xff
-	cmp	w1, #0
-	ccmp	w9, w8, #0, eq
 	mov	w8, #1
+	cmp	w9, #121
+	ccmp	w1, #0, #0, eq
 	cinc	w0, w8, ne
 	ret
 
@@ -41,10 +40,10 @@ func0000000000000058:
 	ret
 
 func0000000000000048:
-	mov	w8, #65536
-	tst	w1, #0xff
-	ccmp	w0, w8, #0, ne
+	and	w9, w1, #0xff
+	cmp	w0, #16, lsl #12
 	mov	w8, #1
-	cinc	w0, w8, hs
+	ccmp	w9, #0, #4, hs
+	cinc	w0, w8, ne
 	ret
 

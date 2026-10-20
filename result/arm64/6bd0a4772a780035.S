@@ -44,10 +44,9 @@ func0000000000000184:
 	ret
 
 func0000000000000084:
-	mov	w8, #1025
-	cmp	w1, #4
-	ccmp	x0, x8, #2, lo
+	cmp	x0, #1025
 	mov	w8, #4
+	ccmp	w1, #4, #2, lo
 	csel	w0, w8, wzr, lo
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000026:
-	tst	w2, w1
-	mov	w8, #4096
-	ccmp	w2, w8, #0, eq
-	csel	w0, w0, w1, lt
+	and	w8, w2, w1
+	cmp	w2, #1, lsl #12
+	ccmp	w8, #0, #0, lt
+	csel	w0, w0, w1, eq
 	ret
 

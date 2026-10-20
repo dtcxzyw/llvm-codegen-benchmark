@@ -8,11 +8,10 @@ func0000000000000604:
 	ret
 
 func0000000000000506:
-	cmp	w2, #0
-	mov	w8, #455
-	ccmp	w1, w8, #0, gt
+	cmp	w1, #455
 	mov	x8, #-12
-	csel	x8, x8, xzr, eq
+	ccmp	w2, #0, #4, eq
+	csel	x8, x8, xzr, gt
 	add	x0, x0, x8
 	ret
 

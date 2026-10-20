@@ -1,9 +1,8 @@
 func0000000000000038:
-	cmp	w2, #1
-	mov	w8, #50
-	ccmp	w1, w8, #0, eq
+	cmp	w1, #50
 	mov	w8, #5
-	csel	w0, w8, w0, hi
+	ccmp	w2, #1, #0, hi
+	csel	w0, w8, w0, eq
 	ret
 
 func000000000000002c:
@@ -56,11 +55,10 @@ func000000000000018c:
 	ret
 
 func0000000000000028:
-	cmp	w2, #0
-	mov	w8, #4095
-	ccmp	w1, w8, #0, eq
+	cmp	w1, #4095
 	mov	w8, #255
-	csel	w0, w8, w0, hi
+	ccmp	w2, #0, #0, hi
+	csel	w0, w8, w0, eq
 	ret
 
 func00000000000000c4:

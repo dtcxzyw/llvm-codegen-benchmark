@@ -1,10 +1,9 @@
 func0000000000000028:
-	mov	w8, #169
-	cmp	x1, #0
-	mov	w9, #307
-	ccmp	x0, x8, #0, eq
+	cmp	x0, #169
 	mov	w8, #311
-	csel	w0, w9, w8, hi
+	mov	w9, #307
+	ccmp	x1, #0, #0, hi
+	csel	w0, w9, w8, eq
 	ret
 
 func0000000000000181:

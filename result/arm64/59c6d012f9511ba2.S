@@ -7,11 +7,10 @@ func0000000000000058:
 	ret
 
 func0000000000000302:
-	mov	w8, #1026
-	cmp	w1, #0
-	ccmp	w0, w8, #4, eq
+	cmp	w0, #1026
 	mov	w8, #123
-	cinc	w0, w8, eq
+	ccmp	w1, #0, #0, ne
+	cinc	w0, w8, ne
 	ret
 
 func0000000000000042:

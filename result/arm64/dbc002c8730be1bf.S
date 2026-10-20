@@ -21,10 +21,9 @@ func0000000000000021:
 	ret
 
 func0000000000000181:
-	mov	w8, #320
-	cmp	x1, #0
-	ccmp	w0, w8, #0, ne
+	cmp	w0, #320
 	mov	w8, #321
-	csel	w0, w8, w0, eq
+	ccmp	x1, #0, #4, eq
+	csel	w0, w8, w0, ne
 	ret
 

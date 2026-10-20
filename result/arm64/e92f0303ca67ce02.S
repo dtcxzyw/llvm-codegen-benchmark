@@ -1,9 +1,9 @@
 func0000000000000302:
-	mov	w8, #1026
-	tst	w0, #0x30
-	ccmp	w0, w8, #4, eq
+	and	w9, w0, #0x30
+	cmp	w0, #1026
 	mov	w8, #123
-	cinc	w0, w8, eq
+	ccmp	w9, #0, #0, ne
+	cinc	w0, w8, ne
 	ret
 
 func0000000000000042:

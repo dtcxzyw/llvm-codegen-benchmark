@@ -13,11 +13,10 @@ func000000000000018c:
 	ret
 
 func0000000000000034:
-	cmp	w2, #0
-	mov	w8, #3600
-	ccmp	w1, w8, #2, eq
+	cmp	w1, #3600
 	mov	w8, #43
-	csel	w0, w8, w0, lo
+	ccmp	w2, #0, #0, lo
+	csel	w0, w8, w0, eq
 	ret
 
 func0000000000000024:

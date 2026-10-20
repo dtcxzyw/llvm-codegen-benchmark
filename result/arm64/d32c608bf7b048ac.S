@@ -1,15 +1,13 @@
 func000000000000018c:
-	mov	w8, #123
-	cmp	w0, #0
-	ccmp	w1, w8, #4, ne
+	cmp	w1, #123
+	ccmp	w0, #0, #4, ne
 	csinc	w0, w0, wzr, eq
 	ret
 
 func0000000000000021:
-	mov	w8, #273
-	cmn	w0, #1
-	ccmp	w1, w8, #0, eq
+	cmp	w1, #273
 	mov	w8, #10
+	ccmn	w0, #1, #0, eq
 	csel	w0, w8, w0, eq
 	ret
 

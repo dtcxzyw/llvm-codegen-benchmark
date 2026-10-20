@@ -1,10 +1,9 @@
 func0000000000000184:
 	mov	w8, #55296
-	cmp	w1, w8
-	mov	w8, #1114112
-	ccmp	w0, w8, #2, ne
+	cmp	w0, #272, lsl #12
+	ccmp	w1, w8, #4, lo
 	mov	w8, #65533
-	csel	w0, w0, w8, lo
+	csel	w0, w0, w8, ne
 	ret
 
 func000000000000008c:

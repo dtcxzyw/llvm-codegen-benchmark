@@ -41,11 +41,11 @@ func000000000000002c:
 	ret
 
 func0000000000000186:
-	mov	w8, #8192
-	tst	w1, #0xff
-	mov	w9, #60
-	ccmp	w0, w8, #0, ne
+	and	w9, w1, #0xff
+	cmp	w0, #2, lsl #12
 	mov	w8, #63
-	csel	w0, w9, w8, lt
+	ccmp	w9, #0, #4, lt
+	mov	w9, #60
+	csel	w0, w9, w8, ne
 	ret
 

@@ -44,10 +44,9 @@ func0000000000000141:
 	ret
 
 func0000000000000146:
-	cmp	w1, #0
-	mov	w8, #-1999
-	ccmp	w2, w8, #0, gt
-	csel	w0, w0, w1, lt
+	cmn	w2, #1999
+	ccmp	w1, #0, #4, lt
+	csel	w0, w0, w1, gt
 	ret
 
 func0000000000000101:

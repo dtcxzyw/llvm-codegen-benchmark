@@ -19,11 +19,10 @@ func0000000000000181:
 	ret
 
 func0000000000000306:
-	mov	w8, #513
-	cmp	w0, #4
-	ccmp	w1, w8, #0, hi
+	cmp	w1, #513
 	mov	w8, #5
-	csel	w0, w8, w0, lt
+	ccmp	w0, #4, #0, lt
+	csel	w0, w8, w0, hi
 	ret
 
 func00000000000000ca:

@@ -6,10 +6,9 @@ func0000000000000094:
 	ret
 
 func0000000000000306:
-	cmp	w2, #4
-	mov	w8, #513
-	ccmp	w1, w8, #0, hi
-	csel	w0, w0, wzr, lt
+	cmp	w1, #513
+	ccmp	w2, #4, #0, lt
+	csel	w0, w0, wzr, hi
 	ret
 
 func0000000000000181:
@@ -25,10 +24,9 @@ func0000000000000021:
 	ret
 
 func0000000000000034:
-	cmp	w2, #0
-	mov	w8, #229
-	ccmp	w1, w8, #2, eq
-	csel	w0, w0, wzr, lo
+	cmp	w1, #229
+	ccmp	w2, #0, #0, lo
+	csel	w0, w0, wzr, eq
 	ret
 
 func00000000000000ca:

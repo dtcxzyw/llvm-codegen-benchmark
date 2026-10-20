@@ -7,9 +7,8 @@ func0000000000000021:
 	ret
 
 func000000000000002a:
-	cmp	w2, #0
-	mov	w8, #255
-	ccmp	w1, w8, #4, eq
-	csinv	w0, w0, wzr, le
+	cmp	w1, #255
+	ccmp	w2, #0, #0, gt
+	csinv	w0, w0, wzr, ne
 	ret
 

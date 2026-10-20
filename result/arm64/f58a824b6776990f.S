@@ -51,12 +51,11 @@ func000000000000014a:
 	ret
 
 func0000000000000141:
-	mov	w8, #659
-	cmp	w1, #4
-	mov	w9, #32
-	ccmp	w0, w8, #4, le
+	cmp	w0, #659
 	mov	w8, #16
-	csel	w0, w9, w8, eq
+	mov	w9, #32
+	ccmp	w1, #4, #0, ne
+	csel	w0, w9, w8, gt
 	ret
 
 func0000000000000081:

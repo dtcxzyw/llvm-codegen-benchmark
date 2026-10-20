@@ -39,10 +39,10 @@ func000000000000014a:
 	ret
 
 func000000000000002a:
+	cmp	w0, #255
 	mov	w8, #255
-	cmp	w1, #0
-	ccmp	w0, w8, #4, eq
-	csel	w0, w8, w0, gt
+	ccmp	w1, #0, #0, gt
+	csel	w0, w8, w0, eq
 	ret
 
 func00000000000000c1:

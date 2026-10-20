@@ -23,11 +23,11 @@ func0000000000000081:
 	ret
 
 func0000000000000028:
-	tst	w2, #0xff
-	mov	w8, #4095
-	ccmp	w1, w8, #0, eq
+	and	w8, w2, #0xff
+	cmp	w1, #4095
+	ccmp	w8, #0, #0, hi
 	mov	w8, #255
-	csel	w0, w8, w0, hi
+	csel	w0, w8, w0, eq
 	ret
 
 func000000000000018c:
