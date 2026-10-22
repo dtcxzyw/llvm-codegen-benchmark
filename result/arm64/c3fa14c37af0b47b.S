@@ -1,9 +1,9 @@
 func000000000000000f:
-	ubfx	w8, w1, #8, #8
-	mov	w9, #6
-	mul	w8, w8, w9
-	and	w9, w0, #0xff00
-	add	w0, w8, w9, lsr #8
+	ubfx	w9, w1, #8, #8
+	mov	w8, #6
+	and	w10, w0, #0xff00
+	lsr	w10, w10, #8
+	madd	w0, w9, w8, w10
 	ret
 
 func000000000000001b:

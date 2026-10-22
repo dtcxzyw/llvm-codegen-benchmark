@@ -2,8 +2,8 @@ func0000000000000005:
 	add	w8, w2, w2, lsr #31
 	add	w9, w1, w1, lsr #31
 	asr	w8, w8, #1
-	mul	w8, w8, w0
-	add	w0, w8, w9, asr #1
+	asr	w9, w9, #1
+	madd	w0, w8, w0, w9
 	ret
 
 func0000000000000000:
@@ -14,7 +14,7 @@ func0000000000000000:
 	cmp	w1, #0
 	asr	w8, w8, #8
 	csel	w9, w9, w1, mi
-	mul	w8, w0, w8
-	add	w0, w8, w9, asr #8
+	asr	w9, w9, #8
+	madd	w0, w0, w8, w9
 	ret
 

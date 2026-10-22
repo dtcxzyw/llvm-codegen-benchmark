@@ -1,8 +1,8 @@
 func000000000000001d:
 	mov	w8, #90
 	and	w9, w1, #0xff
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #6
+	lsl	w9, w9, #6
+	madd	w0, w0, w8, w9
 	ret
 
 func000000000000003f:
@@ -21,8 +21,8 @@ func000000000000007f:
 func0000000000000035:
 	mov	w8, #-100
 	and	w9, w1, #0xff
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #6
+	lsl	w9, w9, #6
+	madd	w0, w0, w8, w9
 	ret
 
 func000000000000006c:

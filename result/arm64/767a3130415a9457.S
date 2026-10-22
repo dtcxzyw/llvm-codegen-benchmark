@@ -1,14 +1,14 @@
 func00000000000000f0:
-	mov	w8, w2
-	mul	w9, w1, w0
-	mul	x8, x8, x0
-	add	x0, x8, x9, lsl #32
+	mul	w8, w1, w0
+	mov	w9, w2
+	lsl	x8, x8, #32
+	madd	x0, x9, x0, x8
 	ret
 
 func00000000000000a0:
-	mov	w8, w2
-	mul	w9, w0, w1
-	mul	x8, x0, x8
-	add	x0, x8, x9, lsl #32
+	mul	w8, w0, w1
+	mov	w9, w2
+	lsl	x8, x8, #32
+	madd	x0, x0, x9, x8
 	ret
 

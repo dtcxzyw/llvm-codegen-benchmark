@@ -1,15 +1,15 @@
 func00000000000000f5:
-	mov	w8, #90
-	add	w9, w1, w2
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #4
+	add	w8, w1, w2
+	mov	w9, #90
+	lsl	w8, w8, #4
+	madd	w0, w0, w9, w8
 	ret
 
 func0000000000000000:
-	mov	w8, #384
-	add	w9, w1, w2
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #2
+	add	w8, w1, w2
+	mov	w9, #384
+	lsl	w8, w8, #2
+	madd	w0, w0, w9, w8
 	ret
 
 func0000000000000044:
@@ -25,10 +25,10 @@ func0000000000000055:
 	ret
 
 func0000000000000010:
-	mov	w8, #6
-	add	w9, w1, w2
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #2
+	add	w8, w1, w2
+	mov	w9, #6
+	lsl	w8, w8, #2
+	madd	w0, w0, w9, w8
 	ret
 
 func0000000000000045:
@@ -38,16 +38,16 @@ func0000000000000045:
 	ret
 
 func00000000000000ff:
-	mov	w8, #6
-	add	w9, w1, w2
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #2
+	add	w8, w1, w2
+	mov	w9, #6
+	lsl	w8, w8, #2
+	madd	w0, w0, w9, w8
 	ret
 
 func00000000000000fe:
-	mov	w8, #24576
-	add	w9, w1, w2
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #14
+	add	w8, w1, w2
+	mov	w9, #24576
+	lsl	w8, w8, #14
+	madd	w0, w0, w9, w8
 	ret
 

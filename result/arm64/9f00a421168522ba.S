@@ -36,11 +36,11 @@ func00000000000000b4:
 
 func00000000000001a8:
 	asr	x8, x0, #3
-	mov	x9, #-6148914691236517206
-	movk	x9, #43691
-	mul	x8, x8, x9
+	mov	x10, #-6148914691236517206
 	sub	x9, x1, x2
-	add	x8, x8, x9, asr #2
+	movk	x10, #43691
+	asr	x9, x9, #2
+	madd	x8, x8, x10, x9
 	mov	x9, #6148914691236517205
 	movk	x9, #1365, lsl #48
 	cmp	x8, x9

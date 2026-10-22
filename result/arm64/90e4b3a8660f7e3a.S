@@ -1,6 +1,6 @@
 func0000000000000035:
-	mul	w8, w0, w1
-	and	w9, w2, #0xff
-	add	w0, w8, w9, lsl #8
+	and	w8, w2, #0xff
+	lsl	w8, w8, #8
+	madd	w0, w0, w1, w8
 	ret
 

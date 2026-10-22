@@ -11,8 +11,8 @@ func0000000000000601:
 	ret
 
 func0000000000000008:
-	mul	x8, x0, x1
-	add	x8, x8, x2, lsl #6
+	lsl	x8, x2, #6
+	madd	x8, x0, x1, x8
 	cmn	x8, #65
 	cset	w0, hi
 	ret

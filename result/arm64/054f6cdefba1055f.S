@@ -6,8 +6,8 @@ func00000000000000fe:
 
 func0000000000000030:
 	mov	w8, #40
-	mul	w8, w0, w8
-	add	w8, w8, w1, lsl #3
+	lsl	w9, w1, #3
+	madd	w8, w0, w8, w9
 	sub	w0, w8, #5
 	ret
 
@@ -19,8 +19,8 @@ func00000000000000cc:
 
 func0000000000000000:
 	mov	w8, #24
-	mul	w8, w0, w8
-	add	w8, w8, w1, lsl #2
+	lsl	w9, w1, #2
+	madd	w8, w0, w8, w9
 	add	w0, w8, #832
 	ret
 

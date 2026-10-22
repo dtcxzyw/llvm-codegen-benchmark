@@ -1,17 +1,17 @@
 func0000000000000005:
 	mov	x9, #28545
 	lsr	x8, x0, #4
+	mov	x10, #-60
 	movk	x9, #19806, lsl #16
 	movk	x9, #11068, lsl #32
 	movk	x9, #2330, lsl #48
 	umulh	x8, x8, x9
-	mov	x9, #-60
-	lsr	x8, x8, #3
-	mul	x8, x8, x9
 	mov	x9, #-8608480567731124088
 	movk	x9, #34953
 	umulh	x9, x0, x9
-	add	x0, x8, x9, lsr #5
+	lsr	x8, x8, #3
+	lsr	x9, x9, #5
+	madd	x0, x8, x10, x9
 	ret
 
 func000000000000000f:
@@ -35,37 +35,37 @@ func000000000000000f:
 
 func0000000000000000:
 	mov	x8, #13531
-	mov	w9, #-1000
-	lsr	x10, x0, #3
+	mov	x10, #63439
+	lsr	x9, x0, #3
 	movk	x8, #55222, lsl #16
+	movk	x10, #58195, lsl #16
 	movk	x8, #56962, lsl #32
+	movk	x10, #39845, lsl #32
 	movk	x8, #17179, lsl #48
+	movk	x10, #8388, lsl #48
 	umulh	x8, x0, x8
+	umulh	x9, x9, x10
+	mov	w10, #-1000
 	lsr	x8, x8, #18
-	mul	x8, x8, x9
-	mov	x9, #63439
-	movk	x9, #58195, lsl #16
-	movk	x9, #39845, lsl #32
-	movk	x9, #8388, lsl #48
-	umulh	x9, x10, x9
-	add	x0, x8, x9, lsr #4
+	lsr	x9, x9, #4
+	madd	x0, x8, x10, x9
 	ret
 
 func000000000000000a:
 	mov	x8, #10693
-	mov	w9, #-60
-	lsr	x10, x0, #8
+	mov	x10, #19887
+	lsr	x9, x0, #8
 	movk	x8, #997, lsl #16
+	movk	x10, #29319, lsl #16
 	movk	x8, #48940, lsl #32
+	movk	x10, #21702, lsl #32
 	movk	x8, #39093, lsl #48
+	movk	x10, #286, lsl #48
 	umulh	x8, x0, x8
+	umulh	x9, x9, x10
+	mov	w10, #-60
 	lsr	x8, x8, #31
-	mul	x8, x8, x9
-	mov	x9, #19887
-	movk	x9, #29319, lsl #16
-	movk	x9, #21702, lsl #32
-	movk	x9, #286, lsl #48
-	umulh	x9, x10, x9
-	add	x0, x8, x9, lsr #10
+	lsr	x9, x9, #10
+	madd	x0, x8, x10, x9
 	ret
 

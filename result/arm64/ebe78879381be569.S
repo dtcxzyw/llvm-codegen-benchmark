@@ -1,8 +1,8 @@
 func0000000000000052:
 	lsr	x8, x1, #5
 	mov	w9, w2
-	mul	x8, x8, x9
-	add	x0, x8, x0, lsr #5
+	lsr	x10, x0, #5
+	madd	x0, x8, x9, x10
 	ret
 
 func000000000000001b:
@@ -26,8 +26,8 @@ func000000000000000a:
 func0000000000000000:
 	lsr	x8, x1, #3
 	mov	w9, w2
-	mul	x8, x8, x9
-	add	x0, x8, x0, lsr #3
+	lsr	x10, x0, #3
+	madd	x0, x8, x9, x10
 	ret
 
 func000000000000005b:

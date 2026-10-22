@@ -1,18 +1,18 @@
 func0000000000000005:
-	mul	w8, w0, w1
-	add	w8, w8, w2, asr #6
+	asr	w8, w2, #6
+	madd	w8, w0, w1, w8
 	sxtw	x0, w8
 	ret
 
 func0000000000000015:
-	mul	w8, w0, w1
-	add	w8, w8, w2, asr #24
+	asr	w8, w2, #24
+	madd	w8, w0, w1, w8
 	sxtw	x0, w8
 	ret
 
 func0000000000000011:
-	mul	w8, w0, w1
-	add	w8, w8, w2, asr #24
+	asr	w8, w2, #24
+	madd	w8, w0, w1, w8
 	sxtw	x0, w8
 	ret
 

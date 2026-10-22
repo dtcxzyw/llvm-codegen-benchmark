@@ -6,8 +6,8 @@ func0000000000000000:
 	movk	x9, #68, lsl #48
 	lsr	x8, x8, #9
 	umulh	x8, x8, x9
-	mul	x9, x0, x1
-	add	x0, x9, x8, lsr #11
+	lsr	x8, x8, #11
+	madd	x0, x0, x1, x8
 	ret
 
 func0000000000000020:
@@ -17,7 +17,7 @@ func0000000000000020:
 	movk	x9, #50646, lsl #32
 	movk	x9, #13421, lsl #48
 	umulh	x8, x8, x9
-	mul	x9, x0, x1
-	add	x0, x9, x8, lsr #11
+	lsr	x8, x8, #11
+	madd	x0, x0, x1, x8
 	ret
 

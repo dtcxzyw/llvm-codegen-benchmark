@@ -17,7 +17,7 @@ func000000000000013f:
 	madd	x8, x3, x8, x9
 	mov	w9, #7936
 	movk	w9, #64010, lsl #16
-	mul	x9, x0, x9
-	add	x0, x9, x8, lsr #9
+	lsr	x8, x8, #9
+	madd	x0, x0, x9, x8
 	ret
 

@@ -1,7 +1,7 @@
 func0000000000000030:
 	mov	w8, #2560
-	mul	w8, w0, w8
-	add	w0, w8, w1, lsl #7
+	lsl	w9, w1, #7
+	madd	w0, w0, w8, w9
 	ret
 
 func0000000000000010:
@@ -11,7 +11,7 @@ func0000000000000010:
 
 func0000000000000000:
 	mov	w8, #6
-	mul	w8, w0, w8
-	add	w0, w8, w1, lsl #2
+	lsl	w9, w1, #2
+	madd	w0, w0, w8, w9
 	ret
 

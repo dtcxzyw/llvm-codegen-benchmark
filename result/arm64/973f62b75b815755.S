@@ -42,11 +42,11 @@ func0000000000000009:
 
 func0000000000000005:
 	sub	x8, x1, x2
-	mov	x9, #-1085102592571150096
-	asr	x8, x8, #3
-	movk	x9, #61681
-	mul	x8, x8, x9
 	add	x9, x0, x0, lsr #63
-	add	x0, x8, x9, asr #1
+	mov	x10, #-1085102592571150096
+	asr	x8, x8, #3
+	movk	x10, #61681
+	asr	x9, x9, #1
+	madd	x0, x8, x10, x9
 	ret
 

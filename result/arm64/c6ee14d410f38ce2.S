@@ -1,9 +1,9 @@
 func000000000000000d:
 	asr	x8, x1, #3
 	mov	x9, #-3689348814741910324
+	lsr	x10, x0, #5
 	movk	x9, #52429
-	mul	x8, x8, x9
-	add	x0, x8, x0, lsr #5
+	madd	x0, x8, x9, x10
 	ret
 
 func0000000000000002:
@@ -26,16 +26,16 @@ func0000000000000001:
 func0000000000000005:
 	asr	x8, x0, #4
 	mov	x9, #-6148914691236517206
+	lsr	x10, x1, #1
 	movk	x9, #43691
-	mul	x8, x8, x9
-	add	x0, x8, x1, lsr #1
+	madd	x0, x8, x9, x10
 	ret
 
 func0000000000000009:
 	asr	x8, x1, #4
 	mov	x9, #-6148914691236517206
+	lsr	x10, x0, #1
 	movk	x9, #43691
-	mul	x8, x8, x9
-	add	x0, x8, x0, lsr #1
+	madd	x0, x8, x9, x10
 	ret
 

@@ -24,8 +24,8 @@ func0000000000000005:
 func000000000000000d:
 	asr	x8, x1, #4
 	mov	x9, #-6148914691236517206
+	asr	x10, x0, #2
 	movk	x9, #43691
-	mul	x8, x8, x9
-	add	x0, x8, x0, asr #2
+	madd	x0, x8, x9, x10
 	ret
 

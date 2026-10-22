@@ -1,30 +1,30 @@
 func000000000000000d:
-	mul	w8, w0, w1
-	add	w0, w8, w2, lsl #1
+	lsl	w8, w2, #1
+	madd	w0, w0, w1, w8
 	ret
 
 func0000000000000000:
-	mul	w8, w0, w1
-	add	w0, w8, w2, lsl #2
+	lsl	w8, w2, #2
+	madd	w0, w0, w1, w8
 	ret
 
 func0000000000000080:
-	mul	w8, w0, w1
-	add	w0, w8, w2, lsl #3
+	lsl	w8, w2, #3
+	madd	w0, w0, w1, w8
 	ret
 
 func00000000000000c0:
-	mul	w8, w0, w1
-	add	w0, w8, w2, lsl #6
+	lsl	w8, w2, #6
+	madd	w0, w0, w1, w8
 	ret
 
 func00000000000000cc:
-	mul	w8, w0, w1
-	add	w0, w8, w2, lsl #3
+	lsl	w8, w2, #3
+	madd	w0, w0, w1, w8
 	ret
 
 func0000000000000004:
-	mul	w8, w0, w1
-	add	w0, w8, w2, lsl #2
+	lsl	w8, w2, #2
+	madd	w0, w0, w1, w8
 	ret
 

@@ -1,14 +1,14 @@
 func0000000000000090:
 	lsr	x8, x2, #1
-	mul	x8, x8, x1
-	add	x8, x8, x0, lsr #1
+	lsr	x9, x0, #1
+	madd	x8, x8, x1, x9
 	lsl	x0, x8, #2
 	ret
 
 func0000000000000000:
 	lsr	x8, x2, #1
-	mul	x8, x8, x0
-	add	x8, x8, x1, lsr #1
+	lsr	x9, x1, #1
+	madd	x8, x8, x0, x9
 	lsl	x0, x8, #5
 	ret
 

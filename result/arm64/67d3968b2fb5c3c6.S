@@ -1,8 +1,8 @@
 func000000000000000f:
 	mov	w8, #6
 	and	w9, w1, #0xff00
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsr #8
+	lsr	w9, w9, #8
+	madd	w0, w0, w8, w9
 	ret
 
 func000000000000001b:

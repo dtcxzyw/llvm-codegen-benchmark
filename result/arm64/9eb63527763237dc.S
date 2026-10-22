@@ -1,12 +1,12 @@
 func00000000000003e4:
-	asr	x9, x2, #3
-	mov	x8, #6148914691236517205
-	mov	x10, #-6148914691236517206
-	movk	x10, #43691
-	mul	x8, x9, x8
-	asr	x9, x0, #3
-	mul	x9, x9, x10
-	add	x8, x8, x1, asr #3
+	asr	x8, x2, #3
+	mov	x9, #6148914691236517205
+	asr	x10, x1, #3
+	asr	x11, x0, #3
+	madd	x8, x8, x9, x10
+	mov	x9, #-6148914691236517206
+	movk	x9, #43691
+	mul	x9, x11, x9
 	cmp	x9, x8
 	cset	w0, lo
 	ret

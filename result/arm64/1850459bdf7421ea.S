@@ -8,7 +8,7 @@ func000000000000003f:
 func000000000000003e:
 	mov	w8, #24576
 	and	w9, w1, #0xffff
-	mul	w8, w0, w8
-	add	w0, w8, w9, lsl #14
+	lsl	w9, w9, #14
+	madd	w0, w0, w8, w9
 	ret
 

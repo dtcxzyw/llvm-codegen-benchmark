@@ -1,9 +1,9 @@
 func00000000000001a8:
 	asr	x8, x2, #4
 	mov	x9, #-6148914691236517206
+	asr	x10, x1, #2
 	movk	x9, #43691
-	mul	x8, x8, x9
-	add	x8, x8, x1, asr #2
+	madd	x8, x8, x9, x10
 	cmp	x8, x0
 	cset	w0, hi
 	ret
@@ -11,9 +11,9 @@ func00000000000001a8:
 func00000000000001a1:
 	asr	x8, x1, #3
 	mov	x9, #-6148914691236517206
+	asr	x10, x2, #3
 	movk	x9, #43691
-	mul	x8, x8, x9
-	add	x8, x8, x2, asr #3
+	madd	x8, x8, x9, x10
 	cmp	x8, x0
 	cset	w0, eq
 	ret

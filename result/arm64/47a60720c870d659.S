@@ -7,11 +7,11 @@ func0000000000000025:
 	ret
 
 func0000000000000039:
-	mov	w8, #254
-	sub	w9, w1, #1
-	mul	w8, w0, w8
-	add	w9, w9, w9, lsr #31
-	add	w0, w8, w9, asr #1
+	sub	w8, w1, #1
+	mov	w9, #254
+	add	w8, w8, w8, lsr #31
+	asr	w8, w8, #1
+	madd	w0, w0, w9, w8
 	ret
 
 func000000000000002d:
