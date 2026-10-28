@@ -1,8 +1,7 @@
 func0000000000000001:
 	orr	w8, w1, w2
-	lsl	w8, w8, #2
-	and	w8, w8, #0x800
-	orr	w0, w8, w0
+	ubfx	w8, w8, #9, #1
+	orr	w0, w0, w8, lsl #11
 	ret
 
 func000000000000000f:
@@ -20,9 +19,8 @@ func0000000000000009:
 
 func0000000000000000:
 	orr	w8, w1, w2
-	lsl	w8, w8, #10
-	and	w8, w8, #0x40000
-	orr	w0, w0, w8
+	ubfx	w8, w8, #8, #1
+	orr	w0, w0, w8, lsl #18
 	ret
 
 func000000000000000d:
@@ -33,9 +31,8 @@ func000000000000000d:
 
 func0000000000000007:
 	orr	w8, w1, w2
-	lsl	w8, w8, #5
-	and	w8, w8, #0xc0
-	orr	w0, w0, w8
+	ubfx	w8, w8, #1, #2
+	orr	w0, w0, w8, lsl #6
 	ret
 
 func000000000000000e:

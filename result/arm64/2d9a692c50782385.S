@@ -13,11 +13,10 @@ func000000000000001b:
 	ret
 
 func000000000000001f:
-	lsl	x8, x2, #2
+	ubfx	x8, x2, #2, #1
 	mov	w9, w1
 	orr	x9, x0, x9
-	and	x8, x8, #0x10
-	orr	x0, x9, x8
+	orr	x0, x9, x8, lsl #4
 	ret
 
 func000000000000001c:

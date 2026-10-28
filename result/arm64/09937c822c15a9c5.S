@@ -1,21 +1,19 @@
 func0000000000000007:
-	lsr	x8, x2, #4
+	mov	w8, #4
+	ubfx	x9, x2, #10, #1
 	tst	w1, #0x1
-	mov	w9, #4
-	csel	x9, x9, xzr, ne
-	and	x8, x8, #0x40
-	orr	x9, x9, x0
-	orr	x0, x8, x9
+	csel	x8, x8, xzr, ne
+	orr	x8, x8, x9, lsl #6
+	orr	x0, x8, x0
 	ret
 
 func0000000000000003:
-	lsr	x8, x2, #4
+	mov	w8, #128
+	ubfx	x9, x2, #7, #1
 	tst	w1, #0x1
-	mov	w9, #128
 	mov	w10, #6272
-	csel	x9, x10, x9, ne
-	and	x8, x8, #0x8
-	orr	x9, x9, x0
-	orr	x0, x9, x8
+	csel	x8, x10, x8, ne
+	orr	x8, x8, x9, lsl #3
+	orr	x0, x8, x0
 	ret
 

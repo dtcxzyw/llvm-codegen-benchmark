@@ -14,15 +14,13 @@ func0000000000000004:
 	ret
 
 func000000000000000f:
-	lsl	x8, x1, #2
-	and	x8, x8, #0xfffffff8
-	add	x0, x0, x8
+	ubfx	x8, x1, #1, #29
+	add	x0, x0, x8, lsl #3
 	ret
 
 func000000000000000b:
-	lsl	x8, x1, #1
-	and	x8, x8, #0xfffffff0
-	add	x0, x0, x8
+	ubfx	x8, x1, #3, #28
+	add	x0, x0, x8, lsl #4
 	ret
 
 func0000000000000000:

@@ -16,9 +16,8 @@ func000000000000002b:
 func000000000000001b:
 	lsr	x8, x1, #10
 	add	x8, x8, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0xffffffffffff8
-	add	x0, x0, x8
+	ubfx	x8, x8, #6, #49
+	add	x0, x0, x8, lsl #3
 	ret
 
 func0000000000000028:

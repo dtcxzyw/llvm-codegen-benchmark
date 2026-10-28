@@ -32,10 +32,9 @@ func000000000000000f:
 	ret
 
 func000000000000000e:
-	lsl	x8, x1, #9
+	ubfx	x8, x1, #1, #2
 	mov	w9, w0
-	and	x8, x8, #0xc00
-	orr	x0, x8, x9
+	orr	x0, x9, x8, lsl #10
 	ret
 
 func000000000000000b:

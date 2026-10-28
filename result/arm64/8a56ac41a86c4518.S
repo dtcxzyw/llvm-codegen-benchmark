@@ -26,10 +26,9 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	lsl	x9, x0, #52
 	mov	x8, #-67
+	ubfx	x9, x0, #6, #1
 	and	x8, x0, x8
-	and	x9, x9, #0x400000000000000
-	orr	x0, x9, x8
+	orr	x0, x8, x9, lsl #58
 	ret
 

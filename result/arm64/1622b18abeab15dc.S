@@ -7,16 +7,14 @@ func0000000000000002:
 
 func0000000000000018:
 	add	w8, w1, #63
-	lsr	w8, w8, #3
-	and	w8, w8, #0x3f8
-	add	w0, w0, w8
+	ubfx	w8, w8, #6, #7
+	add	w0, w0, w8, lsl #3
 	ret
 
 func000000000000001b:
 	add	w8, w1, #63
-	lsr	w8, w8, #3
-	and	w8, w8, #0x3ff8
-	add	w0, w8, w0
+	ubfx	w8, w8, #6, #11
+	add	w0, w0, w8, lsl #3
 	ret
 
 func0000000000000000:

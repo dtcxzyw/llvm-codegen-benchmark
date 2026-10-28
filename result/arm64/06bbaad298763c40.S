@@ -21,9 +21,8 @@ func0000000000000007:
 	ret
 
 func000000000000000d:
-	lsr	w9, w0, #5
-	mov	w8, #-16
-	and	w9, w9, #0x7f8
-	sub	w0, w8, w9
+	ubfx	w8, w0, #8, #8
+	mov	w9, #-16
+	sub	w0, w9, w8, lsl #3
 	ret
 

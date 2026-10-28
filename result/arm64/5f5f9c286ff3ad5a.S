@@ -1,8 +1,7 @@
 func0000000000000003:
 	fcvtzs	w8, d0
-	orr	w9, w1, w0
-	lsl	w8, w8, #3
-	and	w8, w8, #0x7c00
-	orr	w0, w9, w8
+	ubfx	w8, w8, #7, #5
+	orr	w8, w1, w8, lsl #10
+	orr	w0, w8, w0
 	ret
 

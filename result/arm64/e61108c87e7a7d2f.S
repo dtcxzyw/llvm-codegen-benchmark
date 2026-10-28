@@ -29,16 +29,14 @@ func0000000000000000:
 	ret
 
 func0000000000000030:
-	lsl	x8, x1, #3
-	and	x8, x8, #0x7ffffffffffffff0
-	add	x8, x0, x8
+	ubfx	x8, x1, #1, #59
+	add	x8, x0, x8, lsl #4
 	add	x0, x8, #16
 	ret
 
 func000000000000002c:
-	lsl	x8, x1, #4
-	and	x8, x8, #0x7ffffffe0
-	add	x8, x0, x8
+	ubfx	x8, x1, #1, #30
+	add	x8, x0, x8, lsl #5
 	sub	x0, x8, #8
 	ret
 

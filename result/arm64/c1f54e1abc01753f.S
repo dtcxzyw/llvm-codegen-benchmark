@@ -14,9 +14,8 @@ func000000000000000c:
 	ret
 
 func000000000000000d:
-	lsl	x8, x1, #1
-	and	x8, x8, #0x1fffffff0
-	add	x0, x8, x0
+	lsr	w8, w1, #3
+	add	x0, x0, x8, lsl #4
 	ret
 
 func0000000000000005:

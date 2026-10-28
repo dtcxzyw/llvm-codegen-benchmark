@@ -1,8 +1,7 @@
 func0000000000000006:
-	lsr	w9, w1, #3
+	ubfx	w9, w1, #6, #11
 	mov	w8, #4096
-	and	w9, w9, #0x3ff8
-	add	w9, w9, w0
+	add	w9, w0, w9, lsl #3
 	cmp	w9, #1, lsl #12
 	csel	w0, w9, w8, hi
 	ret

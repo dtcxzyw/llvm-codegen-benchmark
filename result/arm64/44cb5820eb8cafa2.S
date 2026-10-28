@@ -41,10 +41,9 @@ func00000000000000f4:
 	ret
 
 func00000000000000c1:
-	lsr	x8, x1, #3
+	ubfx	x8, x1, #5, #30
 	add	x9, x0, #4
-	and	x8, x8, #0xfffffffc
-	cmp	x9, x8
+	cmp	x9, x8, lsl #2
 	cset	w0, eq
 	ret
 
@@ -56,10 +55,9 @@ func00000000000000f9:
 	ret
 
 func00000000000000f8:
-	lsr	x8, x1, #3
+	ubfx	x8, x1, #9, #25
 	add	x9, x0, #64
-	and	x8, x8, #0x7fffffc0
-	cmp	x9, x8
+	cmp	x9, x8, lsl #6
 	cset	w0, hi
 	ret
 

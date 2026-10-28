@@ -3,9 +3,8 @@ func0000000000000007:
 	movk	w8, #32896, lsl #16
 	umull	x8, w1, w8
 	lsr	x8, x8, #32
-	lsl	w8, w8, #1
-	and	w8, w8, #0xff00
-	orr	w0, w8, w0
+	ubfx	w8, w8, #7, #8
+	orr	w0, w0, w8, lsl #8
 	ret
 
 func0000000000000006:

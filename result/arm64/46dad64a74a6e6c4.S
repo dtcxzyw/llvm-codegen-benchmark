@@ -25,18 +25,16 @@ func00000000000000f4:
 func0000000000000041:
 	sub	x8, x1, x2
 	add	x9, x0, #2
-	lsr	x8, x8, #3
-	and	x8, x8, #0xfffffffe
-	cmp	x9, x8
+	ubfx	x8, x8, #4, #31
+	cmp	x9, x8, lsl #1
 	cset	w0, eq
 	ret
 
 func00000000000000c1:
 	sub	x8, x1, x2
 	add	x9, x0, #4
-	lsr	x8, x8, #3
-	and	x8, x8, #0xfffffffc
-	cmp	x9, x8
+	ubfx	x8, x8, #5, #30
+	cmp	x9, x8, lsl #2
 	cset	w0, eq
 	ret
 
@@ -59,9 +57,8 @@ func0000000000000074:
 func00000000000000f8:
 	sub	x8, x1, x2
 	add	x9, x0, #64
-	lsr	x8, x8, #3
-	and	x8, x8, #0x7fffffc0
-	cmp	x9, x8
+	ubfx	x8, x8, #9, #25
+	cmp	x9, x8, lsl #6
 	cset	w0, hi
 	ret
 

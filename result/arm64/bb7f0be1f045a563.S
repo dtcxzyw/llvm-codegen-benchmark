@@ -13,10 +13,9 @@ func000000000000000f:
 	ret
 
 func000000000000000c:
-	lsl	x8, x2, #19
+	lsr	w8, w2, #31
 	and	x9, x1, #0x800000000000000
-	orr	x9, x0, x9
-	and	x8, x8, #0x4000000000000
-	orr	x0, x9, x8
+	orr	x8, x0, x8, lsl #50
+	orr	x0, x8, x9
 	ret
 

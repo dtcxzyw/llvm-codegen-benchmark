@@ -50,9 +50,8 @@ func0000000000000004:
 	ret
 
 func000000000000000d:
-	lsl	x9, x0, #28
-	mov	x8, #-1099511627776
-	and	x9, x9, #0x7ffffff00000000
-	add	x0, x9, x8
+	ubfx	x8, x0, #4, #27
+	mov	x9, #-1099511627776
+	add	x0, x9, x8, lsl #32
 	ret
 

@@ -1,10 +1,9 @@
 func00000000000000e1:
-	lsl	w9, w0, #6
-	and	w10, w1, #0xf000
-	mov	w8, #55296
-	and	w9, w9, #0xf800
-	orr	w9, w9, w10
-	cmp	w9, w8
+	ubfx	w8, w0, #5, #5
+	and	w9, w1, #0xf000
+	orr	w8, w9, w8, lsl #11
+	mov	w9, #55296
+	cmp	w8, w9
 	cset	w0, eq
 	ret
 

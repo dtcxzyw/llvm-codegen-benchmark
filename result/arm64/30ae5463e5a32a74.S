@@ -28,9 +28,8 @@ func0000000000000014:
 
 func00000000000000c4:
 	add	x8, x1, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	cmp	x0, x8
+	ubfx	x8, x8, #6, #27
+	cmp	x0, x8, lsl #3
 	cset	w0, lo
 	ret
 

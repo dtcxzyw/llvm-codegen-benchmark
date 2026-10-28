@@ -4,8 +4,7 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	lsl	x8, x0, #3
-	and	x8, x8, #0x800
-	orr	x0, x8, x0
+	ubfx	x8, x0, #8, #1
+	orr	x0, x0, x8, lsl #11
 	ret
 

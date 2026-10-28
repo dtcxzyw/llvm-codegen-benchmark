@@ -1,8 +1,7 @@
 func0000000000000021:
 	sub	x8, x2, x1
-	lsr	x8, x8, #2
-	and	x8, x8, #0xffffffffffffffc
-	cmp	x0, x8
+	ubfx	x8, x8, #4, #58
+	cmp	x0, x8, lsl #2
 	cset	w0, eq
 	ret
 

@@ -6,10 +6,9 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	sub	x9, x0, x1
-	mov	w8, #5
-	lsr	x9, x9, #1
-	and	x9, x9, #0xfffffff8
-	orr	x0, x9, x8
+	sub	x8, x0, x1
+	mov	w9, #5
+	ubfx	x8, x8, #4, #29
+	orr	x0, x9, x8, lsl #3
 	ret
 

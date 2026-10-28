@@ -19,11 +19,10 @@ func0000000000000000:
 	ret
 
 func000000000000000c:
-	lsl	w8, w2, #3
+	ubfx	w8, w2, #3, #6
 	and	w9, w1, #0xfffff800
-	orr	w9, w9, w0
-	and	w8, w8, #0xfc0
-	orr	w0, w8, w9
+	orr	w8, w9, w8, lsl #6
+	orr	w0, w8, w0
 	ret
 
 func0000000000000008:

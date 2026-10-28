@@ -12,8 +12,7 @@ func0000000000000003:
 	movk	x9, #46472, lsl #32
 	movk	x9, #5368, lsl #48
 	umulh	x8, x8, x9
-	lsr	x8, x8, #6
-	and	x8, x8, #0x7fffffffffffc
-	add	x0, x0, x8
+	ubfx	x8, x8, #8, #49
+	add	x0, x0, x8, lsl #2
 	ret
 

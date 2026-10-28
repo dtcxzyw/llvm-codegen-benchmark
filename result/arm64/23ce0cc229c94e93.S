@@ -1,8 +1,7 @@
 func0000000000000007:
-	lsr	w8, w1, #13
+	ubfx	w8, w1, #21, #2
 	and	w9, w0, #0xc00
-	and	w8, w8, #0x300
-	orr	w8, w9, w8
+	orr	w8, w9, w8, lsl #8
 	lsl	w0, w8, #8
 	ret
 

@@ -1,8 +1,7 @@
 func000000000000001b:
 	add	x8, x1, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	add	x0, x0, x8
+	ubfx	x8, x8, #6, #27
+	add	x0, x0, x8, lsl #3
 	ret
 
 func0000000000000003:
@@ -19,9 +18,8 @@ func0000000000000000:
 
 func0000000000000019:
 	add	x8, x1, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	add	x0, x0, x8
+	ubfx	x8, x8, #6, #27
+	add	x0, x0, x8, lsl #3
 	ret
 
 func0000000000000013:
@@ -33,8 +31,7 @@ func0000000000000013:
 
 func0000000000000018:
 	add	x8, x1, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	add	x0, x0, x8
+	ubfx	x8, x8, #6, #27
+	add	x0, x0, x8, lsl #3
 	ret
 

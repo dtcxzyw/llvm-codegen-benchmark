@@ -30,9 +30,8 @@ func000000000000000a:
 	ret
 
 func0000000000000005:
-	lsr	w8, w1, #2
-	and	w8, w8, #0x4
-	add	w8, w0, w8
+	ubfx	w8, w1, #4, #1
+	add	w8, w0, w8, lsl #2
 	sub	w0, w8, #2
 	ret
 

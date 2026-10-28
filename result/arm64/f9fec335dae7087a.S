@@ -11,9 +11,8 @@ func000000000000001a:
 	ret
 
 func0000000000000018:
-	lsr	w8, w1, #7
-	and	w8, w8, #0xfffe00
-	add	w8, w8, w0
+	ubfx	w8, w1, #16, #15
+	add	w8, w0, w8, lsl #9
 	lsr	w0, w8, #16
 	ret
 

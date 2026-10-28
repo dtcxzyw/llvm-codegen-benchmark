@@ -1,7 +1,6 @@
 func0000000000000021:
-	lsr	w8, w2, #1
-	and	w8, w8, #0x3800
-	orr	w8, w1, w8
+	ubfx	w8, w2, #12, #3
+	orr	w8, w1, w8, lsl #11
 	cmp	w0, w8
 	cset	w0, eq
 	ret

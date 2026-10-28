@@ -1,7 +1,6 @@
 func0000000000000001:
-	lsl	w8, w2, #9
-	and	w8, w8, #0x4000
-	orr	w8, w1, w8
+	ubfx	w8, w2, #5, #1
+	orr	w8, w1, w8, lsl #14
 	cmp	w8, w0
 	cset	w0, eq
 	ret
@@ -70,9 +69,8 @@ func00000000000000a1:
 	ret
 
 func00000000000000f4:
-	lsl	w8, w2, #8
-	and	w8, w8, #0xf0000
-	orr	w8, w8, w1
+	ubfx	w8, w2, #8, #4
+	orr	w8, w1, w8, lsl #16
 	cmp	w8, w0
 	cset	w0, lo
 	ret

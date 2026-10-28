@@ -20,8 +20,7 @@ func0000000000000004:
 	ret
 
 func0000000000000003:
-	lsr	w8, w1, #8
-	and	w8, w8, #0x1000
-	orr	w0, w8, w0
+	ubfx	w8, w1, #20, #1
+	orr	w0, w0, w8, lsl #12
 	ret
 

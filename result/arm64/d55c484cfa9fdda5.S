@@ -23,9 +23,8 @@ func0000000000000001:
 func000000000000000d:
 	and	w8, w2, #0xfffffe0
 	orr	w8, w1, w8
-	lsl	w8, w8, #2
-	and	w8, w8, #0x3fffffe0
-	orr	w0, w0, w8
+	ubfx	w8, w8, #3, #25
+	orr	w0, w0, w8, lsl #5
 	ret
 
 func0000000000000000:

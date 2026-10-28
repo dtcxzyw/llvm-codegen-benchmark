@@ -7,9 +7,8 @@ func00000000000000ec:
 	ret
 
 func00000000000000f4:
-	lsl	w8, w2, #12
-	and	w8, w8, #0x3e000
-	orr	w8, w8, w1
+	ubfx	w8, w2, #1, #5
+	orr	w8, w1, w8, lsl #13
 	cmp	w8, #14, lsl #12
 	cset	w8, lo
 	and	w0, w0, w8

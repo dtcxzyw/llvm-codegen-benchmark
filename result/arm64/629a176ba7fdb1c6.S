@@ -65,9 +65,8 @@ func0000000000000038:
 	ret
 
 func0000000000000004:
-	lsr	x8, x1, #3
-	and	x8, x8, #0x3ffffff8
-	cmp	x0, x8
+	ubfx	x8, x1, #6, #27
+	cmp	x0, x8, lsl #3
 	cset	w0, lo
 	ret
 

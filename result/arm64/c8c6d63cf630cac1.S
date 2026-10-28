@@ -5,10 +5,9 @@ func000000000000003f:
 	ret
 
 func0000000000000000:
-	lsl	x8, x2, #2
+	ubfx	x8, x2, #8, #1
 	and	x9, x1, #0xfffff800
-	add	x9, x0, x9
-	and	x8, x8, #0x400
+	add	x8, x0, x8, lsl #10
 	add	x0, x8, x9
 	ret
 

@@ -1,13 +1,11 @@
 func0000000000000007:
-	lsr	w8, w1, #5
-	and	w8, w8, #0x4
-	add	w0, w0, w8
+	ubfx	w8, w1, #7, #1
+	add	w0, w0, w8, lsl #2
 	ret
 
 func0000000000000005:
-	lsr	w8, w1, #5
-	and	w8, w8, #0x78
-	add	w0, w0, w8
+	ubfx	w8, w1, #8, #4
+	add	w0, w0, w8, lsl #3
 	ret
 
 func0000000000000004:

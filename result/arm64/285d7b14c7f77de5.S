@@ -5,9 +5,8 @@ func0000000000000001:
 	ret
 
 func0000000000000021:
-	lsr	x8, x1, #2
-	and	x8, x8, #0xffffffffffffffc
-	cmp	x0, x8
+	ubfx	x8, x1, #4, #58
+	cmp	x0, x8, lsl #2
 	cset	w0, eq
 	ret
 

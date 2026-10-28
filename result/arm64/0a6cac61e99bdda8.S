@@ -11,10 +11,9 @@ func000000000000001e:
 	ret
 
 func0000000000000001:
-	lsl	x9, x1, #6
-	mov	x8, #-268435456
-	add	x8, x0, x8
-	and	x9, x9, #0x4000000
+	ubfx	x8, x1, #20, #1
+	mov	x9, #-268435456
+	add	x8, x0, x8, lsl #26
 	add	x0, x8, x9
 	ret
 

@@ -6,10 +6,9 @@ func0000000000000061:
 	ret
 
 func00000000000000c1:
-	lsr	x8, x1, #2
+	ubfx	x8, x1, #4, #58
 	add	x9, x0, #4
-	and	x8, x8, #0xffffffffffffffc
-	cmp	x9, x8
+	cmp	x9, x8, lsl #2
 	cset	w0, eq
 	ret
 

@@ -1,15 +1,13 @@
 func0000000000000026:
-	lsl	w8, w2, #2
-	and	w8, w8, #0xf80
-	add	w8, w1, w8
+	ubfx	w8, w2, #5, #5
+	add	w8, w1, w8, lsl #7
 	cmp	w8, w0
 	cset	w0, lt
 	ret
 
 func000000000000002b:
-	lsl	w8, w2, #2
-	and	w8, w8, #0xf80
-	add	w8, w1, w8
+	ubfx	w8, w2, #5, #5
+	add	w8, w1, w8, lsl #7
 	cmp	w8, w0
 	cset	w0, ge
 	ret

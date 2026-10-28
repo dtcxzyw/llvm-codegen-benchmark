@@ -70,10 +70,9 @@ func00000000000000e1:
 	ret
 
 func000000000000006c:
-	lsl	w8, w2, #1
-	orr	w9, w1, w0
-	and	w8, w8, #0xc
-	orr	w8, w8, w9
+	ubfx	w8, w2, #1, #2
+	orr	w8, w1, w8, lsl #2
+	orr	w8, w8, w0
 	cmp	w8, #10
 	cset	w0, ne
 	ret
@@ -88,19 +87,17 @@ func00000000000000f4:
 	ret
 
 func0000000000000041:
-	lsl	w8, w2, #6
-	orr	w9, w1, w0
-	and	w8, w8, #0x800
-	orr	w8, w8, w9
+	ubfx	w8, w2, #5, #1
+	orr	w8, w1, w8, lsl #11
+	orr	w8, w8, w0
 	cmn	w8, #1
 	cset	w0, eq
 	ret
 
 func0000000000000054:
-	lsl	w8, w2, #5
-	orr	w9, w1, w0
-	and	w8, w8, #0x7800
-	orr	w8, w8, w9
+	ubfx	w8, w2, #6, #4
+	orr	w8, w1, w8, lsl #11
+	orr	w8, w8, w0
 	cmp	w8, #4
 	cset	w0, lo
 	ret

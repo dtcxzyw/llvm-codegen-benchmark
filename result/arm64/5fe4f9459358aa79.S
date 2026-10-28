@@ -40,8 +40,7 @@ func000000000000002e:
 	mov	w9, #3329
 	ubfx	w8, w8, #2, #14
 	mul	w8, w8, w9
-	lsr	w8, w8, #4
-	and	w8, w8, #0x3f0000
-	orr	w0, w8, w0
+	ubfx	w8, w8, #20, #6
+	orr	w0, w0, w8, lsl #16
 	ret
 

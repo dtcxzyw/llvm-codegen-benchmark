@@ -1,7 +1,6 @@
 func000000000000000f:
-	lsl	x8, x1, #3
-	and	x8, x8, #0x7ffffffffffffff0
-	add	x0, x0, x8
+	ubfx	x8, x1, #1, #59
+	add	x0, x0, x8, lsl #4
 	ret
 
 func000000000000000c:
@@ -25,9 +24,8 @@ func0000000000000002:
 	ret
 
 func0000000000000004:
-	lsl	x8, x1, #1
-	and	x8, x8, #0x7ffffffffffffffc
-	add	x0, x0, x8
+	ubfx	x8, x1, #1, #61
+	add	x0, x0, x8, lsl #2
 	ret
 
 func000000000000000b:

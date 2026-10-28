@@ -1,9 +1,8 @@
 func00000000000000c4:
 	mov	w8, w1
 	add	x8, x8, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	cmp	x0, x8
+	ubfx	x8, x8, #6, #27
+	cmp	x0, x8, lsl #3
 	cset	w0, lo
 	ret
 
@@ -27,9 +26,8 @@ func00000000000001c1:
 func00000000000000d4:
 	mov	w8, w1
 	add	x8, x8, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	cmp	x0, x8
+	ubfx	x8, x8, #6, #27
+	cmp	x0, x8, lsl #3
 	cset	w0, lo
 	ret
 

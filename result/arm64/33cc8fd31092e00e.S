@@ -8,9 +8,8 @@ func000000000000000b:
 func000000000000001b:
 	mov	w8, w1
 	add	x8, x8, #1
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	add	x0, x0, x8
+	ubfx	x8, x8, #6, #27
+	add	x0, x0, x8, lsl #3
 	ret
 
 func000000000000003b:
@@ -30,9 +29,8 @@ func0000000000000008:
 func0000000000000018:
 	mov	w8, w1
 	add	x8, x8, #63
-	lsr	x8, x8, #3
-	and	x8, x8, #0x3ffffff8
-	add	x0, x0, x8
+	ubfx	x8, x8, #6, #27
+	add	x0, x0, x8, lsl #3
 	ret
 
 func0000000000000028:

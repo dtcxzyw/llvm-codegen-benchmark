@@ -11,16 +11,14 @@ func000000000000001d:
 	ret
 
 func0000000000000004:
-	lsl	x8, x2, #4
-	and	x8, x8, #0xc0
-	orr	x8, x1, x8
+	ubfx	x8, x2, #2, #2
+	orr	x8, x1, x8, lsl #6
 	add	x0, x0, x8
 	ret
 
 func0000000000000007:
-	lsl	x8, x2, #2
-	and	x8, x8, #0x400
-	orr	x8, x1, x8
+	ubfx	x8, x2, #8, #1
+	orr	x8, x1, x8, lsl #10
 	add	x0, x8, x0
 	ret
 

@@ -5,9 +5,8 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	lsl	w8, w1, #8
+	ubfx	w8, w1, #4, #4
 	and	w9, w0, #0xffe0ffff
-	and	w8, w8, #0xf000
-	orr	w0, w9, w8
+	orr	w0, w9, w8, lsl #12
 	ret
 

@@ -7,9 +7,8 @@ func0000000000000001:
 func0000000000000003:
 	sub	x8, x1, x2
 	and	x9, x0, #0x60000000
-	lsr	x8, x8, #9
-	and	x8, x8, #0xffffe0
-	orr	x0, x9, x8
+	ubfx	x8, x8, #14, #19
+	orr	x0, x9, x8, lsl #5
 	ret
 
 func0000000000000005:

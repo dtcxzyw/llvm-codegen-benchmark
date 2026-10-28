@@ -7,16 +7,14 @@ func00000000000000e0:
 	ret
 
 func0000000000000005:
-	lsl	w8, w1, #1
-	and	w8, w8, #0xc
-	add	w8, w0, w8
+	ubfx	w8, w1, #1, #2
+	add	w8, w0, w8, lsl #2
 	sub	w0, w8, #3
 	ret
 
 func000000000000000d:
-	lsl	w8, w1, #1
-	and	w8, w8, #0xc
-	add	w8, w0, w8
+	ubfx	w8, w1, #1, #2
+	add	w8, w0, w8, lsl #2
 	sub	w0, w8, #6
 	ret
 

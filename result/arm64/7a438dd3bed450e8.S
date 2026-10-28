@@ -30,9 +30,8 @@ func00000000000000ac:
 	ret
 
 func00000000000001f8:
-	lsl	w8, w2, #6
-	and	w8, w8, #0x3800
-	orr	w8, w8, w1
+	ubfx	w8, w2, #5, #3
+	orr	w8, w1, w8, lsl #11
 	lsr	w8, w8, #11
 	cmp	w8, #26
 	cset	w8, hi

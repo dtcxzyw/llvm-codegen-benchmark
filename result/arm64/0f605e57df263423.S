@@ -34,17 +34,15 @@ func000000000000002c:
 	ret
 
 func0000000000000008:
-	lsr	w8, w2, #1
-	and	w8, w8, #0x7f80
-	orr	w8, w1, w8
+	ubfx	w8, w2, #8, #8
+	orr	w8, w1, w8, lsl #7
 	cmp	w8, w0
 	cset	w0, hi
 	ret
 
 func0000000000000004:
-	lsr	w8, w2, #1
-	and	w8, w8, #0x7f80
-	orr	w8, w1, w8
+	ubfx	w8, w2, #8, #8
+	orr	w8, w1, w8, lsl #7
 	cmp	w8, w0
 	cset	w0, lo
 	ret

@@ -12,8 +12,7 @@ func0000000000000005:
 
 func000000000000000d:
 	add	w8, w1, w2
-	lsr	w8, w8, #4
-	and	w8, w8, #0x10
-	orr	w0, w8, w0
+	ubfx	w8, w8, #8, #1
+	orr	w0, w0, w8, lsl #4
 	ret
 

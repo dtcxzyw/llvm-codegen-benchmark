@@ -24,9 +24,8 @@ func000000000000003a:
 	ret
 
 func0000000000000030:
-	lsl	x8, x1, #1
-	and	x8, x8, #0x1fffffff8
-	add	x8, x0, x8
+	lsr	w8, w1, #2
+	add	x8, x0, x8, lsl #3
 	sub	x0, x8, #448
 	ret
 
@@ -51,16 +50,14 @@ func000000000000001c:
 	ret
 
 func000000000000003c:
-	lsl	x8, x1, #2
-	and	x8, x8, #0x3fffffff0
-	add	x8, x0, x8
+	lsr	w8, w1, #2
+	add	x8, x0, x8, lsl #4
 	add	x0, x8, #8
 	ret
 
 func000000000000002b:
-	lsl	x8, x1, #4
-	and	x8, x8, #0x7ffffffe0
-	add	x8, x0, x8
+	ubfx	x8, x1, #1, #30
+	add	x8, x0, x8, lsl #5
 	sub	x0, x8, #8
 	ret
 

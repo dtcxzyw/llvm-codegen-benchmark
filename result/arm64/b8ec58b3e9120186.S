@@ -24,8 +24,7 @@ func0000000000000005:
 	mov	x8, #18014398509473792
 	movk	x8, #63999, lsl #16
 	add	x8, x1, x8
-	lsr	x8, x8, #42
-	and	x8, x8, #0x1fc0
-	orr	x0, x0, x8
+	ubfx	x8, x8, #48, #7
+	orr	x0, x0, x8, lsl #6
 	ret
 

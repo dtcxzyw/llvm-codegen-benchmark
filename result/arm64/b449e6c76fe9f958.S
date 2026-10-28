@@ -1,7 +1,6 @@
 func0000000000000326:
-	lsr	w8, w2, #3
-	and	w8, w8, #0xf80
-	add	w8, w1, w8
+	ubfx	w8, w2, #10, #5
+	add	w8, w1, w8, lsl #7
 	cmp	w0, w8
 	cset	w0, lt
 	ret

@@ -48,9 +48,8 @@ func00000000000000e4:
 	ret
 
 func00000000000000f4:
-	lsl	w8, w2, #4
-	and	w8, w8, #0xf0000
-	orr	w8, w8, w1
+	ubfx	w8, w2, #12, #4
+	orr	w8, w1, w8, lsl #16
 	cmp	w0, w8
 	cset	w0, lo
 	ret

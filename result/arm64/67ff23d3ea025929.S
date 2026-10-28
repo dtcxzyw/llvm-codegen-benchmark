@@ -32,9 +32,8 @@ func00000000000000c6:
 	ret
 
 func0000000000000088:
-	lsr	w8, w1, #2
-	and	w8, w8, #0x3c
-	add	w8, w0, w8
+	ubfx	w8, w1, #4, #4
+	add	w8, w0, w8, lsl #2
 	cmp	w8, #80
 	cset	w0, hi
 	ret

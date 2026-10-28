@@ -25,9 +25,8 @@ func0000000000000033:
 	ret
 
 func0000000000000010:
-	lsl	x8, x1, #1
-	and	x8, x8, #0x7ffffffffffffffc
-	add	x8, x0, x8
+	ubfx	x8, x1, #1, #61
+	add	x8, x0, x8, lsl #2
 	add	x0, x8, #8
 	ret
 

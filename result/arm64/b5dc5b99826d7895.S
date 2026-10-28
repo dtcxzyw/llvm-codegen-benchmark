@@ -5,10 +5,9 @@ func0000000000000003:
 	ret
 
 func000000000000000e:
-	lsl	x8, x2, #7
-	orr	x9, x1, x0
-	and	x8, x8, #0x100
-	orr	x0, x8, x9
+	ubfx	x8, x2, #1, #1
+	orr	x8, x1, x8, lsl #8
+	orr	x0, x8, x0
 	ret
 
 func000000000000000f:
@@ -18,10 +17,9 @@ func000000000000000f:
 	ret
 
 func0000000000000002:
-	lsl	x8, x2, #1
-	orr	x9, x1, x0
-	and	x8, x8, #0x4
-	orr	x0, x9, x8
+	ubfx	x8, x2, #1, #1
+	orr	x8, x1, x8, lsl #2
+	orr	x0, x8, x0
 	ret
 
 func0000000000000007:
@@ -43,10 +41,9 @@ func0000000000000004:
 	ret
 
 func0000000000000000:
-	lsl	x8, x2, #3
-	orr	x9, x1, x0
-	and	x8, x8, #0x20
-	orr	x0, x9, x8
+	ubfx	x8, x2, #2, #1
+	orr	x8, x1, x8, lsl #5
+	orr	x0, x8, x0
 	ret
 
 func000000000000000b:

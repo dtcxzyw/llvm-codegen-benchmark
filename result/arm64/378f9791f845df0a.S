@@ -6,9 +6,8 @@ func0000000000000009:
 
 func000000000000000f:
 	mul	w8, w1, w2
-	lsr	w8, w8, #10
-	and	w8, w8, #0x3e0
-	orr	w0, w0, w8
+	ubfx	w8, w8, #15, #5
+	orr	w0, w0, w8, lsl #5
 	ret
 
 func0000000000000001:

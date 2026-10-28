@@ -1,7 +1,6 @@
 func000000000000000f:
-	lsr	x8, x1, #3
-	and	x8, x8, #0x3ffffff8
-	add	x8, x0, x8
+	ubfx	x8, x1, #6, #27
+	add	x8, x0, x8, lsl #3
 	add	x0, x8, #352
 	ret
 

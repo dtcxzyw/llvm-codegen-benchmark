@@ -24,10 +24,9 @@ func00000000000001f4:
 	ret
 
 func00000000000001f8:
-	lsl	w8, w1, #6
+	ubfx	w8, w1, #5, #3
 	and	w9, w0, #0xf000
-	and	w8, w8, #0x3800
-	orr	w8, w8, w9
+	orr	w8, w9, w8, lsl #11
 	lsr	w8, w8, #11
 	cmp	w8, #26
 	cset	w0, hi
