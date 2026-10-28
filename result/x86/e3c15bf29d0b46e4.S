@@ -2,16 +2,15 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
 	movzbl	%dil, %eax
-	movl	%eax, %ecx
-	shll	$8, %ecx
-	subl	%eax, %ecx
-	movzwl	%cx, %eax
-	imull	$1041, %eax, %edx
-	shrl	$16, %edx
-	subl	%edx, %ecx
-	movzwl	%cx, %eax
+	shll	$8, %edi
+	subl	%eax, %edi
+	movzwl	%di, %eax
+	imull	$1041, %eax, %ecx
+	shrl	$16, %ecx
+	subl	%ecx, %edi
+	movzwl	%di, %eax
 	shrl	%eax
-	addl	%edx, %eax
+	addl	%ecx, %eax
 	shrl	$5, %eax
 	retq
 
