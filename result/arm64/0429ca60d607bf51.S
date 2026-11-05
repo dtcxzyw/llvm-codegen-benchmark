@@ -78,8 +78,7 @@ func0000000000003141:
 	cmp	x1, x2
 	cset	w8, gt
 	cmp	w0, #0
-	cset	w9, ne
-	csel	w0, w8, w9, eq
+	csinc	w0, w8, wzr, eq
 	ret
 
 func0000000000001961:
