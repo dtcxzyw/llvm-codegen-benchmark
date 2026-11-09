@@ -8,11 +8,10 @@ func000000000000000f:
 	ret
 
 func0000000000000001:
-	lui	a2, 262144
-	addi	a2, a2, -1
-	slli	a2, a2, 17
+	lui	a2, 786432
+	rori	a2, a2, 47
 	slli	a1, a1, 17
-	andn	a0, a0, a2
+	and	a0, a0, a2
 	add.uw	a0, a1, a0
 	ret
 

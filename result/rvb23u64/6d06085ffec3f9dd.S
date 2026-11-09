@@ -1,11 +1,10 @@
 func0000000000000007:
 	lui	a1, 512
-	lui	a2, 524288
-	addi	a3, a1, -1
-	addiw	a2, a2, -1
-	add	a0, a0, a3
-	slli	a2, a2, 21
-	and	a0, a0, a2
+	addi	a2, a1, -1
+	lui	a3, 524288
+	add	a0, a0, a2
+	rori	a2, a3, 43
+	andn	a0, a0, a2
 	maxu	a0, a0, a1
 	ret
 

@@ -1,22 +1,22 @@
 func000000000000003e:
 	sext.w	a1, a1
-	lui	a2, 1048575
+	lui	a2, 1048320
 	slli	a1, a1, 12
 	lui	a3, 1
-	zext.w	a2, a2
+	rori	a2, a2, 52
 	add	a1, a1, a3
-	andn	a0, a0, a2
+	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 
 func000000000000001e:
 	sext.w	a1, a1
 	slli	a1, a1, 12
-	lui	a2, 1048575
+	lui	a2, 1048320
 	addi	a1, a1, -2048
-	zext.w	a2, a2
+	rori	a2, a2, 52
 	addi	a1, a1, -2048
-	andn	a0, a0, a2
+	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

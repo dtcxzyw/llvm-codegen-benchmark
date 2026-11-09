@@ -34,9 +34,8 @@ func0000000000000005:
 	ret
 
 func0000000000000000:
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 1
+	lui	a0, 524288
+	rori	a0, a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	li	a0, 32

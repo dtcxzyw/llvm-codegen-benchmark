@@ -5,10 +5,9 @@ func000000000000000c:
 	ret
 
 func0000000000000003:
-	li	a2, 3
-	slli	a2, a2, 30
-	addi	a2, a2, -2
-	and	a1, a1, a2
+	lui	a2, 655360
+	rori	a2, a2, 63
+	andn	a1, a1, a2
 	lui	a2, 131072
 	srli	a1, a1, 1
 	add	a0, a0, a2

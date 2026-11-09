@@ -7,12 +7,11 @@ func000000000000001f:
 	ret
 
 func000000000000001b:
-	lui	a2, 32768
+	lui	a2, 1015808
 	slli	a1, a1, 28
-	addi	a2, a2, -1
-	slli	a2, a2, 32
+	rori	a2, a2, 32
 	bseti	a3, zero, 40
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	sub	a0, a0, a3
 	add	a0, a0, a1
 	ret

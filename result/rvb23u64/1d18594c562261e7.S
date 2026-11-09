@@ -71,10 +71,9 @@ func000000000000006c:
 	ret
 
 func00000000000000c1:
-	lui	a1, 4096
-	addi	a1, a1, -1
-	slli	a1, a1, 32
-	and	a0, a0, a1
+	lui	a1, 1044480
+	rori	a1, a1, 32
+	andn	a0, a0, a1
 	seqz	a0, a0
 	ret
 
@@ -86,10 +85,9 @@ func0000000000000081:
 	ret
 
 func0000000000000001:
-	lui	a1, 512
-	addi	a1, a1, -1
-	slli	a1, a1, 21
-	and	a0, a0, a1
+	lui	a1, 1048064
+	rori	a1, a1, 43
+	andn	a0, a0, a1
 	seqz	a0, a0
 	ret
 

@@ -30,9 +30,8 @@ func0000000000000000:
 
 func0000000000000003:
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	slli	a3, a3, 30
-	and	a2, a2, a3
+	rori	a3, a3, 34
+	andn	a2, a2, a3
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret

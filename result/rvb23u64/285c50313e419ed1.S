@@ -1,9 +1,8 @@
 func0000000000000006:
-	li	a0, -1
+	lui	a0, 1535
 	fmv.x.d	a1, fa0
-	slli	a0, a0, 55
 	srli	a1, a1, 63
-	addi	a0, a0, 2
+	rori	a0, a0, 21
 	sh2add	a0, a1, a0
 	ret
 

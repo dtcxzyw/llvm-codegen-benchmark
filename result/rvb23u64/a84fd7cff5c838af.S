@@ -37,8 +37,9 @@ func00000000000000a8:
 	li	a1, -1
 	sext.w	a0, a0
 	slli	a1, a1, 61
+	lui	a2, 135
 	or	a0, a0, a1
-	addi	a1, a1, 16
+	rori	a1, a2, 15
 	sltu	a0, a0, a1
 	ret
 

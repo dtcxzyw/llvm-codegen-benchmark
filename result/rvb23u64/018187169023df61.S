@@ -9,13 +9,12 @@ func0000000000000005:
 	xori	a0, a0, 1
 	ret
 
-.LCPI1_0:
-	.quad	0x3cb8000000000004
 func0000000000000013:
 	fabs.d	fa5, fa2
+	lui	a0, 34711
 	fadd.d	fa5, fa1, fa5
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa4, %lo(.LCPI1_0)(a0)
+	rori	a0, a0, 25
+	fmv.d.x	fa4, a0
 	fmul.d	fa5, fa5, fa4
 	fle.d	a0, fa5, fa0
 	xori	a0, a0, 1

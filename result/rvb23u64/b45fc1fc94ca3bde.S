@@ -7,9 +7,8 @@ func0000000000000000:
 
 func0000000000000001:
 	lui	a1, 524288
-	addiw	a1, a1, -1
-	slli	a1, a1, 21
-	and	a0, a0, a1
+	rori	a1, a1, 43
+	andn	a0, a0, a1
 	lui	a1, 512
 	maxu	a0, a0, a1
 	ret

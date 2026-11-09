@@ -23,20 +23,18 @@ func000000000000006c:
 	ret
 
 func0000000000000054:
-	lui	a2, 65536
-	addi	a2, a2, -1
-	slli	a2, a2, 35
-	and	a1, a1, a2
+	lui	a2, 983040
+	rori	a2, a2, 29
+	andn	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 
 func000000000000004c:
 	lui	a2, 524288
-	addi	a2, a2, -1
-	slli	a2, a2, 32
+	rori	a2, a2, 32
 	li	a3, 7
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	slli	a3, a3, 33
 	xor	a1, a1, a3
 	snez	a1, a1

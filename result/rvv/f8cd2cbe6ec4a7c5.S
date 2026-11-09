@@ -11,15 +11,13 @@ func000000000000000f:
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	lui	a0, 512
-	addi	a0, a0, -1
-	slli	a0, a0, 12
-	vand.vx	v10, v10, a0
+	lui	a0, 1048064
+	rori	a0, a0, 52
+	vandn.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
-	lui	a0, 1024
-	addi	a0, a0, -1
-	slli	a0, a0, 12
-	vand.vx	v8, v8, a0
+	lui	a0, 1047552
+	rori	a0, a0, 52
+	vandn.vx	v8, v8, a0
 	ret
 
 func000000000000000b:

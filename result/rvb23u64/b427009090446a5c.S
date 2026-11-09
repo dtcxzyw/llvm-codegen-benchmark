@@ -18,12 +18,11 @@ func0000000000000001:
 	ret
 
 func0000000000000007:
-	lui	a3, 4096
-	addi	a3, a3, -1
+	lui	a3, 1044480
 	slli	a2, a2, 13
-	slli	a3, a3, 32
+	rori	a3, a3, 32
 	andi	a1, a1, 1
-	and	a2, a2, a3
+	andn	a2, a2, a3
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

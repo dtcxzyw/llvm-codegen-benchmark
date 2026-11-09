@@ -36,10 +36,9 @@ func000000000000001f:
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, 1024
-	addi	a0, a0, -1
-	slli	a0, a0, 12
-	vand.vx	v8, v8, a0
+	lui	a0, 1047552
+	rori	a0, a0, 52
+	vandn.vx	v8, v8, a0
 	ret
 
 func0000000000000005:

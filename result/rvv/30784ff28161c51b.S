@@ -11,10 +11,10 @@ func0000000000000168:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v8, v8, 3
 	li	a0, -1
-	bclri	a1, a0, 61
-	vadd.vx	v8, v8, a1
-	slli	a0, a0, 61
-	addi	a0, a0, 7
+	bclri	a0, a0, 61
+	vadd.vx	v8, v8, a0
+	lui	a0, 63
+	rori	a0, a0, 15
 	vmsltu.vx	v0, v8, a0
 	ret
 

@@ -23,12 +23,11 @@ func000000000000000b:
 	ret
 
 func0000000000000011:
-	lui	a3, 524288
 	slli	a1, a1, 32
-	addi	a3, a3, -1
+	lui	a3, 524288
 	add	a1, a1, a2
-	slli	a3, a3, 32
-	and	a1, a1, a3
+	rori	a2, a3, 32
+	andn	a1, a1, a2
 	or	a0, a0, a1
 	ret
 

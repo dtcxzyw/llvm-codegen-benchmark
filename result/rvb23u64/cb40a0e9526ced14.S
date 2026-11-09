@@ -21,9 +21,8 @@ func00000000000001a4:
 	ret
 
 func00000000000000a8:
-	li	a1, -1
-	slli	a1, a1, 61
-	addi	a1, a1, 8
+	lui	a1, 71
+	rori	a1, a1, 15
 	sh1add	a0, a0, a1
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7

@@ -256,9 +256,8 @@ func0000000000000330:
 	ret
 
 func0000000000000298:
-	lui	a2, 1015809
-	slli	a2, a2, 36
-	addi	a2, a2, -1
+	lui	a2, 1048568
+	rori	a2, a2, 16
 	binvi	a0, a0, 63
 	slt	a1, a2, a1
 	snez	a0, a0

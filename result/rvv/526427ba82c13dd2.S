@@ -2,9 +2,8 @@ func0000000000000108:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vx	v12, v12, a0
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 1
+	lui	a0, 524288
+	rori	a0, a0, 63
 	vmsltu.vx	v14, v12, a0
 	vmsltu.vv	v12, v8, v10
 	vmor.mm	v0, v14, v12

@@ -7,11 +7,10 @@ func0000000000000001:
 	ret
 
 func0000000000000004:
-	lui	a0, 16384
-	addi	a0, a0, -1
-	slli	a0, a0, 22
+	lui	a0, 1032192
+	rori	a0, a0, 42
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vxor.vv	v8, v10, v8
 	lui	a0, 1024
 	vmsltu.vx	v0, v8, a0

@@ -34,12 +34,11 @@ func000000000000000d:
 	ret
 
 func000000000000000f:
-	lui	a1, 524288
-	lui	a2, 4096
-	addi	a1, a1, -1
-	add	a0, a0, a2
-	slli	a1, a1, 32
-	and	a0, a0, a1
+	lui	a1, 4096
+	lui	a2, 524288
+	add	a0, a0, a1
+	rori	a1, a2, 32
+	andn	a0, a0, a1
 	bseti	a1, zero, 32
 	sub	a0, a1, a0
 	ret

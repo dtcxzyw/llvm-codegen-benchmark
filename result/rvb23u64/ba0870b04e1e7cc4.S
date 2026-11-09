@@ -6,9 +6,8 @@ func00000000000000e1:
 	ret
 
 func00000000000000c1:
-	li	a1, 7
-	slli	a1, a1, 60
-	addi	a1, a1, 1
+	lui	a1, 23
+	rori	a1, a1, 16
 	bext	a0, a1, a0
 	seqz	a0, a0
 	ret

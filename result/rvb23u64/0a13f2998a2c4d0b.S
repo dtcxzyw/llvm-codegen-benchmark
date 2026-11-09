@@ -86,8 +86,8 @@ func000000000000000f:
 
 func000000000000000e:
 	lui	a3, 1048560
-	addi	a3, a3, 1
-	add.uw	a2, a3, a2
+	rori	a3, a3, 48
+	sub	a2, a2, a3
 	slli.uw	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2

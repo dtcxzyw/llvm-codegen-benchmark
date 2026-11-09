@@ -9,11 +9,10 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	lui	a2, 262144
-	addi	a2, a2, -1
-	slli	a2, a2, 17
+	lui	a2, 786432
+	rori	a2, a2, 47
 	zext.w	a1, a1
-	andn	a0, a0, a2
+	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

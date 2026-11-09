@@ -1,9 +1,8 @@
 func0000000000000108:
-	li	a3, -1
-	bseti	a4, zero, 32
-	slli	a3, a3, 32
-	sub	a2, a2, a4
-	addi	a3, a3, 1
+	bseti	a3, zero, 32
+	lui	a4, 524288
+	sub	a2, a2, a3
+	rori	a3, a4, 63
 	sltu	a2, a2, a3
 	sltu	a0, a0, a1
 	or	a0, a0, a2

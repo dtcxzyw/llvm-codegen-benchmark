@@ -53,7 +53,8 @@ func00000000000000a8:
 	vmv.v.x	v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
-	addi	a0, a0, 16
+	lui	a0, 135
+	rori	a0, a0, 15
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	ret

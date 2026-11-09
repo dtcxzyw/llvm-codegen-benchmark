@@ -6,13 +6,14 @@ func0000000000000201:
 	ret
 
 func0000000000000208:
+	lui	a0, 15
+	rori	a0, a0, 15
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vsra.vi	v10, v10, 3
+	vmacc.vv	v12, v8, v10
 	li	a0, -1
 	slli	a0, a0, 61
-	addi	a1, a0, 1
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
-	vmv.v.x	v12, a1
-	vmacc.vv	v12, v8, v10
 	vmsltu.vx	v0, v12, a0
 	ret
 

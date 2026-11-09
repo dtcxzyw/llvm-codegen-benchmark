@@ -8,10 +8,10 @@ func0000000000000024:
 
 func0000000000000168:
 	li	a1, -1
-	bclri	a2, a1, 61
-	sh3add	a0, a0, a2
-	slli	a1, a1, 61
-	addi	a1, a1, 7
+	bclri	a1, a1, 61
+	sh3add	a0, a0, a1
+	lui	a1, 63
+	rori	a1, a1, 15
 	sltu	a0, a0, a1
 	ret
 

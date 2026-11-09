@@ -291,9 +291,8 @@ func0000000000000101:
 	ret
 
 func000000000000028c:
-	li	a2, 2047
-	slli	a2, a2, 52
-	addi	a2, a2, 1
+	lui	a2, 6143
+	rori	a2, a2, 24
 	addi	a0, a0, -7
 	sltu	a1, a1, a2
 	snez	a0, a0

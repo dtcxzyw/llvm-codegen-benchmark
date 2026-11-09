@@ -14,9 +14,8 @@ func0000000000000012:
 	ret
 
 func000000000000001b:
-	li	a2, -1
-	slli	a2, a2, 59
-	addi	a2, a2, 1
+	lui	a2, 63
+	rori	a2, a2, 17
 	slt	a1, a1, a2
 	neg	a1, a1
 	andi	a1, a1, 48

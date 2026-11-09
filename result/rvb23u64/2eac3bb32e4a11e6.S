@@ -16,12 +16,11 @@ func00000000000000e1:
 	ret
 
 func00000000000000a1:
-	lui	a2, 4096
-	addi	a2, a2, -1
+	lui	a2, 1044480
 	slli	a1, a1, 48
-	slli	a2, a2, 19
+	rori	a2, a2, 45
 	srli	a1, a1, 45
-	and	a0, a0, a2
+	andn	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -15,10 +15,9 @@ func000000000000001f:
 	lui	a0, 2
 	addi	a0, a0, -1
 	vadd.vx	v8, v10, a0
-	lui	a0, 512
-	addi	a0, a0, -1
-	slli	a0, a0, 12
-	vand.vx	v8, v8, a0
+	lui	a0, 1048064
+	rori	a0, a0, 52
+	vandn.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
 	ret

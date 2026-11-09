@@ -286,9 +286,8 @@ func0000000000000330:
 	ret
 
 func0000000000000298:
-	lui	a0, 1015809
-	slli	a0, a0, 36
-	addi	a0, a0, -1
+	lui	a0, 1048568
+	rori	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v12, v10, a0
 	bseti	a0, zero, 63

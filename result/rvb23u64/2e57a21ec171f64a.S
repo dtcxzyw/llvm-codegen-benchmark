@@ -6,11 +6,10 @@ func0000000000000024:
 	ret
 
 func0000000000000004:
-	li	a3, 7
-	lui	a4, 2
-	slli	a3, a3, 60
-	add	a2, a2, a4
-	addi	a3, a3, 1
+	lui	a3, 2
+	lui	a4, 23
+	add	a2, a2, a3
+	rori	a3, a4, 16
 	sltu	a2, a2, a3
 	and	a0, a0, a1
 	and	a0, a0, a2

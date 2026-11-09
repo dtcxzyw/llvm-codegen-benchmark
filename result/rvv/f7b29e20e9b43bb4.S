@@ -22,8 +22,7 @@ func0000000000000028:
 	li	a0, 32
 	vsll.vx	v8, v8, a0
 	lui	a0, 524288
-	addi	a0, a0, -1
-	slli	a0, a0, 32
-	vand.vx	v8, v8, a0
+	rori	a0, a0, 32
+	vandn.vx	v8, v8, a0
 	ret
 

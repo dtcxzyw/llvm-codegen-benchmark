@@ -30,10 +30,9 @@ func0000000000000010:
 
 func000000000000000d:
 	lui	a0, 524288
-	addiw	a0, a0, -1
-	slli	a0, a0, 30
+	rori	a0, a0, 34
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vor.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
 	li	a0, -1

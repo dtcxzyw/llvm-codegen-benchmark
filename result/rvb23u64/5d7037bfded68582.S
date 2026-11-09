@@ -187,11 +187,9 @@ func0000000000000204:
 	ret
 
 func0000000000000402:
-	lui	a3, 983041
-	lui	a4, 1048560
-	slli	a3, a3, 4
-	addi	a4, a4, -1
-	addi	a3, a3, -1
+	lui	a3, 1048560
+	addi	a4, a3, -1
+	rori	a3, a3, 48
 	sltu	a2, a4, a2
 	xor	a0, a0, a3
 	or	a1, a1, a2

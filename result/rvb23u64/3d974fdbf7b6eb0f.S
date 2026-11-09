@@ -26,11 +26,11 @@ func0000000000000029:
 	czero.nez	a1, a1, a2
 	lui	a3, 524288
 	addi	a3, a3, -256
-	li	a4, -256
+	lui	a4, 1044480
 	czero.eqz	a2, a3, a2
-	zext.w	a4, a4
+	rori	a3, a4, 56
 	or	a1, a1, a2
-	andn	a0, a0, a4
+	and	a0, a0, a3
 	add.uw	a0, a1, a0
 	ret
 

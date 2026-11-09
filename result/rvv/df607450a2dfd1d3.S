@@ -53,9 +53,8 @@ func0000000000000011:
 	li	a0, 32
 	vsll.vx	v10, v10, a0
 	lui	a0, 524288
-	addi	a0, a0, -1
-	slli	a0, a0, 32
-	vand.vx	v10, v10, a0
+	rori	a0, a0, 32
+	vandn.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	ret
 

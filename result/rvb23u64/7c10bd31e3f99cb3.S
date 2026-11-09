@@ -1,7 +1,7 @@
 func0000000000000038:
-	li	a2, -24
-	rori	a2, a2, 4
-	andn	a1, a1, a2
+	lui	a2, 23
+	rori	a2, a2, 16
+	and	a1, a1, a2
 	andi	a0, a0, 192
 	seqz	a1, a1
 	snez	a0, a0

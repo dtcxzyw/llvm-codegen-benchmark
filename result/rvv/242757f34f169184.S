@@ -1,9 +1,8 @@
 func0000000000000001:
-	lui	a0, 512
-	addi	a0, a0, -1
-	slli	a0, a0, 12
+	lui	a0, 1048064
+	rori	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vsub.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 9
 	lui	a0, 4096

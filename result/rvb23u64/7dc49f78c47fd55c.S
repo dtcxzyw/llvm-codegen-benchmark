@@ -1,10 +1,9 @@
 func000000000000000d:
-	lui	a1, 1024
-	lui	a2, 256
-	addi	a1, a1, -1
-	add	a2, a2, a0
-	slli	a1, a1, 21
-	and	a1, a1, a2
+	lui	a1, 256
+	lui	a2, 1047552
+	add	a1, a1, a0
+	rori	a2, a2, 43
+	andn	a1, a1, a2
 	sub	a0, a0, a1
 	ret
 

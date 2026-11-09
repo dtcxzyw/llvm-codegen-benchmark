@@ -59,11 +59,10 @@ func0000000000000002:
 	ret
 
 func000000000000000d:
-	lui	a3, 1024
-	addi	a3, a3, -1
+	lui	a3, 1047552
 	add	a1, a1, a2
-	slli	a3, a3, 12
-	and	a1, a1, a3
+	rori	a2, a3, 52
+	andn	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

@@ -67,11 +67,10 @@ func000000000000008c:
 	ret
 
 func000000000000048c:
-	li	a2, -1
-	bseti	a3, zero, 53
-	slli	a2, a2, 54
-	sub	a1, a1, a3
-	addi	a2, a2, 1
+	bseti	a2, zero, 53
+	lui	a3, 2047
+	sub	a1, a1, a2
+	rori	a2, a3, 22
 	sext.w	a0, a0
 	sltu	a1, a1, a2
 	czero.eqz	a0, a1, a0

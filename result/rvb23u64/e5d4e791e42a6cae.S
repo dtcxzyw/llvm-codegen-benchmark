@@ -25,13 +25,12 @@ func000000000000001f:
 	slli	a1, a1, 32
 	slli	a2, a2, 33
 	add	a1, a1, a2
-	lui	a2, 65536
-	li	a3, 127
-	addi	a2, a2, -1
-	slli	a3, a3, 32
+	li	a2, 127
+	lui	a3, 983040
 	slli	a2, a2, 32
-	and	a1, a1, a3
-	andn	a0, a0, a2
+	rori	a3, a3, 32
+	and	a1, a1, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 

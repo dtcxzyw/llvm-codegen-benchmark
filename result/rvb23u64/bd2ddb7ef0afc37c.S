@@ -1,11 +1,10 @@
 func0000000000000007:
-	lui	a1, 65536
+	lui	a1, 5
 	slli	a0, a0, 8
-	lui	a2, 5
-	addi	a1, a1, -1
-	add	a0, a0, a2
-	slli	a1, a1, 12
-	and	a0, a0, a1
+	lui	a2, 983040
+	add	a0, a0, a1
+	rori	a1, a2, 52
+	andn	a0, a0, a1
 	addi	a0, a0, 57
 	ret
 

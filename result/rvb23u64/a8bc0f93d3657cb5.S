@@ -1,10 +1,9 @@
 func000000000000001f:
-	lui	a3, 131072
-	addi	a3, a3, -1
+	lui	a3, 917504
 	or	a0, a0, a1
-	slli	a3, a3, 32
+	rori	a1, a3, 32
 	slli	a2, a2, 32
-	andn	a0, a0, a3
+	and	a0, a0, a1
 	or	a0, a0, a2
 	ret
 

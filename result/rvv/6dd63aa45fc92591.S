@@ -59,8 +59,7 @@ func000000000000000a:
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v8, v10, v0
 	lui	a0, 524288
-	addi	a0, a0, -1
-	slli	a0, a0, 32
-	vand.vx	v8, v8, a0
+	rori	a0, a0, 32
+	vandn.vx	v8, v8, a0
 	ret
 

@@ -27,9 +27,8 @@ func000000000000001f:
 	zext.w	a0, a0
 	vadd.vx	v10, v10, a0
 	vand.vx	v10, v10, a0
-	li	a0, -3
-	slli	a0, a0, 32
-	addi	a0, a0, 255
+	lui	a0, 1036288
+	rori	a0, a0, 56
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret

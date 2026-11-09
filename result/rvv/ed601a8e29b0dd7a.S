@@ -1,10 +1,10 @@
 func000000000000003e:
-	lui	a0, 1048575
+	lui	a0, 1048320
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v12, v10, 1
-	zext.w	a0, a0
+	rori	a0, a0, 52
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vandn.vx	v8, v8, a0
+	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vi	v10, v12, 12
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -12,12 +12,12 @@ func000000000000003e:
 	ret
 
 func000000000000001e:
-	lui	a0, 1048575
+	lui	a0, 1048320
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v12, v10, -1
-	zext.w	a0, a0
+	rori	a0, a0, 52
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vandn.vx	v8, v8, a0
+	vand.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vi	v10, v12, 12
 	vsetvli	zero, zero, e64, m2, ta, ma

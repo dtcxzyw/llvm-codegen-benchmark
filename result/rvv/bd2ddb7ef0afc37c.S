@@ -3,10 +3,9 @@ func0000000000000007:
 	vsll.vi	v8, v8, 8
 	lui	a0, 5
 	vadd.vx	v8, v8, a0
-	lui	a0, 65536
-	addi	a0, a0, -1
-	slli	a0, a0, 12
-	vand.vx	v8, v8, a0
+	lui	a0, 983040
+	rori	a0, a0, 52
+	vandn.vx	v8, v8, a0
 	li	a0, 57
 	vor.vx	v8, v8, a0
 	ret

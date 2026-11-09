@@ -13,10 +13,9 @@ func000000000000000f:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmacc.vv	v12, v10, v8
-	lui	a0, 262144
-	addi	a0, a0, -1
-	slli	a0, a0, 21
-	vand.vx	v8, v12, a0
+	lui	a0, 786432
+	rori	a0, a0, 43
+	vandn.vx	v8, v12, a0
 	ret
 
 func000000000000000a:

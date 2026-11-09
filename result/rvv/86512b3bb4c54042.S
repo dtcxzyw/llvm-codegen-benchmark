@@ -3,10 +3,9 @@ func000000000000000f:
 	vadd.vv	v8, v8, v10
 	lui	a0, 256
 	vadd.vx	v8, v8, a0
-	lui	a0, 1024
-	addi	a0, a0, -1
-	slli	a0, a0, 21
-	vand.vx	v8, v8, a0
+	lui	a0, 1047552
+	rori	a0, a0, 43
+	vandn.vx	v8, v8, a0
 	ret
 
 func0000000000000005:

@@ -6,15 +6,13 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	lui	a3, 512
-	addi	a3, a3, -1
-	slli	a3, a3, 12
-	lui	a4, 1024
-	and	a2, a2, a3
-	addi	a4, a4, -1
+	lui	a3, 1048064
+	rori	a3, a3, 52
+	andn	a2, a2, a3
+	lui	a3, 1047552
 	add	a1, a1, a2
-	slli	a4, a4, 12
-	and	a1, a1, a4
+	rori	a2, a3, 52
+	andn	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

@@ -19,10 +19,9 @@ func0000000000003021:
 func0000000000000c81:
 	bseti	a3, zero, 32
 	sub	a2, a2, a3
-	li	a3, -1
-	slli	a3, a3, 32
+	lui	a3, 524288
 	addi	a1, a1, 19
-	addi	a3, a3, 1
+	rori	a3, a3, 63
 	xor	a0, a0, a1
 	sltu	a1, a2, a3
 	seqz	a0, a0
@@ -32,10 +31,9 @@ func0000000000000c81:
 func0000000000000081:
 	bseti	a3, zero, 32
 	sub	a2, a2, a3
-	li	a3, -1
-	slli	a3, a3, 32
+	lui	a3, 524288
 	addi	a1, a1, 1
-	addi	a3, a3, 1
+	rori	a3, a3, 63
 	xor	a0, a0, a1
 	sltu	a1, a2, a3
 	seqz	a0, a0

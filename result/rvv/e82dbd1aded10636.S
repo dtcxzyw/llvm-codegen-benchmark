@@ -335,9 +335,8 @@ func0000000000000101:
 	ret
 
 func000000000000028c:
-	li	a0, 2047
-	slli	a0, a0, 52
-	addi	a0, a0, 1
+	lui	a0, 6143
+	rori	a0, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 7

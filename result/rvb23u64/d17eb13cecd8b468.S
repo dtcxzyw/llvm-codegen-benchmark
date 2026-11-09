@@ -7,9 +7,9 @@ func0000000000000d8c:
 	ret
 
 func0000000000000024:
-	li	a1, -256
-	zext.w	a1, a1
-	andn	a0, a0, a1
+	lui	a1, 1044480
+	rori	a1, a1, 56
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 

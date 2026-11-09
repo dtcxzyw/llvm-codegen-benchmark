@@ -1,7 +1,6 @@
 func00000000000000c1:
-	li	a0, -1
-	slli	a0, a0, 56
-	addi	a0, a0, 255
+	lui	a0, 65535
+	rori	a0, a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vzext.vf4	v12, v8

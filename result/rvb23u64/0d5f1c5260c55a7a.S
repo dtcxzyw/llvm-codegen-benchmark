@@ -24,10 +24,10 @@ func0000000000000181:
 	ret
 
 func0000000000000038:
-	li	a2, -24
+	lui	a2, 23
 	sext.w	a0, a0
-	rori	a2, a2, 4
-	andn	a1, a1, a2
+	rori	a2, a2, 16
+	and	a1, a1, a2
 	sltiu	a0, a0, 64
 	seqz	a1, a1
 	xori	a0, a0, 1
@@ -104,10 +104,9 @@ func0000000000000306:
 	ret
 
 func000000000000030c:
-	lui	a2, 262144
-	addi	a2, a2, -1
-	slli	a2, a2, 33
-	and	a1, a1, a2
+	lui	a2, 786432
+	rori	a2, a2, 31
+	andn	a1, a1, a2
 	li	a2, 5
 	slli	a2, a2, 32
 	addiw	a0, a0, -1

@@ -27,10 +27,9 @@ func0000000000000010:
 
 func000000000000000d:
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	slli	a3, a3, 30
+	rori	a3, a3, 34
 	li	a4, -1
-	and	a2, a2, a3
+	andn	a2, a2, a3
 	srli	a4, a4, 3
 	or	a1, a1, a2
 	sub	a0, a0, a4

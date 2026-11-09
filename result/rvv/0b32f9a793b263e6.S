@@ -4,9 +4,8 @@ func00000000000000c1:
 	vand.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
-	li	a0, 7
-	slli	a0, a0, 60
-	addi	a0, a0, 1
+	lui	a0, 23
+	rori	a0, a0, 16
 	vmv.v.x	v10, a0
 	vsrl.vv	v8, v10, v8
 	vand.vi	v8, v8, 1

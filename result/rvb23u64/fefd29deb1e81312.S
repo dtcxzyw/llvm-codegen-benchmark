@@ -6,12 +6,11 @@ func0000000000000000:
 
 func000000000000001f:
 	lui	a2, 2
-	lui	a3, 512
 	addi	a2, a2, -1
-	addi	a3, a3, -1
+	lui	a3, 1048064
 	add	a1, a1, a2
-	slli	a3, a3, 12
-	and	a1, a1, a3
+	rori	a2, a3, 52
+	andn	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1
 	ret

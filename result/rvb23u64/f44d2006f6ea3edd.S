@@ -27,9 +27,8 @@ func0000000000000241:
 	ret
 
 func0000000000000361:
-	li	a3, -1
-	slli	a3, a3, 59
-	addi	a3, a3, 1
+	lui	a3, 63
+	rori	a3, a3, 17
 	slt	a2, a2, a3
 	neg	a2, a2
 	andi	a2, a2, 48

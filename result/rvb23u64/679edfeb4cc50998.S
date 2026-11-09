@@ -16,10 +16,9 @@ func0000000000000019:
 	ret
 
 func000000000000001f:
-	li	a2, -3
-	slli	a2, a2, 32
+	lui	a2, 1036288
 	slli	a1, a1, 8
-	addi	a2, a2, 255
+	rori	a2, a2, 56
 	addi	a1, a1, -256
 	and	a0, a0, a2
 	add.uw	a0, a1, a0

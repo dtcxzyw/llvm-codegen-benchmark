@@ -14,11 +14,10 @@ func000000000000000c:
 	ret
 
 func000000000000001f:
-	lui	a2, 65536
-	addi	a2, a2, -1
-	slli	a2, a2, 32
+	lui	a2, 983040
+	rori	a2, a2, 32
 	slli	a1, a1, 32
-	andn	a0, a0, a2
+	and	a0, a0, a2
 	add	a0, a0, a1
 	ret
 

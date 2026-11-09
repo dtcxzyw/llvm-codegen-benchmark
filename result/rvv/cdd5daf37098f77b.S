@@ -51,11 +51,10 @@ func0000000000000008:
 	ret
 
 func000000000000000b:
-	lui	a0, 262144
-	addi	a0, a0, -1
-	slli	a0, a0, 17
+	lui	a0, 786432
+	rori	a0, a0, 47
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
+	vandn.vx	v12, v12, a0
 	vor.vv	v8, v12, v8
 	li	a0, 62
 	vsll.vx	v10, v10, a0

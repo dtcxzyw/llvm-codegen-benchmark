@@ -31,10 +31,10 @@ func0000000000000008:
 
 func0000000000000018:
 	lui	a2, 524288
-	addi	a2, a2, 1
-	slli	a2, a2, 20
-	add	a1, a1, a2
-	addi	a2, a2, -1
+	addi	a3, a2, 1
+	slli	a3, a3, 20
+	add	a1, a1, a3
+	rori	a2, a2, 44
 	sltu	a1, a1, a2
 	lui	a2, 256
 	czero.nez	a2, a2, a1

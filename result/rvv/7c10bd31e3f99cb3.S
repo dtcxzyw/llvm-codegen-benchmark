@@ -1,8 +1,8 @@
 func0000000000000038:
-	li	a0, -24
-	rori	a0, a0, 4
+	lui	a0, 23
+	rori	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vandn.vx	v10, v10, a0
+	vand.vx	v10, v10, a0
 	vmseq.vi	v9, v10, 0
 	li	a0, 192
 	vsetvli	zero, zero, e32, m1, ta, ma

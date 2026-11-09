@@ -4,9 +4,8 @@ func0000000000000007:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
 	lui	a1, 524288
-	addiw	a1, a1, -1
-	slli	a1, a1, 21
-	vand.vx	v8, v8, a1
+	rori	a1, a1, 43
+	vandn.vx	v8, v8, a1
 	vmaxu.vx	v8, v8, a0
 	ret
 

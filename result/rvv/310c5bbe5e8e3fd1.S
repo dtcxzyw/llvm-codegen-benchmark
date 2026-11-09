@@ -22,9 +22,8 @@ func0000000000000003:
 func0000000000000001:
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
-	li	a0, -1
-	slli	a0, a0, 62
-	addi	a0, a0, 1
+	lui	a0, 7
+	rori	a0, a0, 14
 	vmax.vx	v8, v8, a0
 	ret
 

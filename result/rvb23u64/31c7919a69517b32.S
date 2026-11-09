@@ -1,12 +1,10 @@
 func000000000000000f:
-	lui	a3, 131072
-	lui	a4, 262144
-	addi	a3, a3, -1
-	addi	a4, a4, -1
-	slli	a3, a3, 32
-	slli	a4, a4, 32
-	and	a2, a2, a3
-	andn	a1, a1, a4
+	lui	a3, 917504
+	lui	a4, 786432
+	rori	a3, a3, 32
+	rori	a4, a4, 32
+	andn	a2, a2, a3
+	and	a1, a1, a4
 	or	a1, a1, a2
 	slli	a0, a0, 61
 	or	a0, a0, a1

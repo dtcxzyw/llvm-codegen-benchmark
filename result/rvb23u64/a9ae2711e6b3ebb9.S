@@ -4,11 +4,11 @@ func0000000000000005:
 	ret
 
 func000000000000000e:
-	lui	a2, 1048575
+	lui	a2, 1048320
 	sext.w	a1, a1
-	zext.w	a2, a2
+	rori	a2, a2, 52
 	slli	a1, a1, 12
-	andn	a0, a0, a2
+	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 

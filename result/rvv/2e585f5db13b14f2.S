@@ -10,12 +10,10 @@ func0000000000000082:
 
 func0000000000000402:
 	lui	a0, 1048560
-	addi	a0, a0, -1
+	addi	a1, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v10, v8, a0
-	lui	a0, 983041
-	slli	a0, a0, 4
-	addi	a0, a0, -1
+	vmsgtu.vx	v10, v8, a1
+	rori	a0, a0, 48
 	vand.vx	v8, v8, a0
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v8, v10, v0

@@ -50,12 +50,11 @@ func000000000000000e:
 
 func000000000000000f:
 	lui	a2, 256
-	lui	a3, 262144
 	addi	a2, a2, -1
-	addi	a3, a3, -1
+	lui	a3, 786432
 	add	a1, a1, a2
-	slli	a3, a3, 20
-	and	a1, a1, a3
+	rori	a2, a3, 44
+	andn	a1, a1, a2
 	add	a0, a0, a1
 	ret
 

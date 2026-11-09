@@ -14,9 +14,7 @@ func0000000000000084:
 	vsub.vv	v8, v12, v8
 	lui	a0, 524288
 	vadd.vx	v8, v8, a0
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 1
+	rori	a0, a0, 63
 	vmsltu.vx	v0, v8, a0
 	ret
 

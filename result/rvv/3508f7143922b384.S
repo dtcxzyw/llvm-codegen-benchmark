@@ -130,10 +130,9 @@ func000000000000006c:
 
 func0000000000000006:
 	lui	a0, 524288
-	addi	a0, a0, -1
-	slli	a0, a0, 32
+	rori	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
+	vandn.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	vmsle.vi	v0, v8, -1
 	ret

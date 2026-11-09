@@ -7,11 +7,10 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	li	a1, -1
+	lui	a1, 7
 	slli	a0, a0, 1
-	slli	a1, a1, 62
 	neg	a0, a0
-	addi	a1, a1, 1
+	rori	a1, a1, 14
 	max	a0, a0, a1
 	ret
 

@@ -18,10 +18,9 @@ func000000000000004c:
 
 func0000000000000041:
 	lui	a0, 524288
-	addi	a0, a0, -1
-	slli	a0, a0, 32
+	rori	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
+	vandn.vx	v8, v8, a0
 	li	a0, 2047
 	slli	a0, a0, 52
 	vmseq.vx	v10, v8, a0

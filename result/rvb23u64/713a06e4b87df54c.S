@@ -56,11 +56,10 @@ func0000000000000081:
 	ret
 
 func0000000000000024:
-	li	a3, -1
 	sext.w	a2, a2
-	slli	a3, a3, 32
+	lui	a3, 524288
 	seqz	a2, a2
-	addi	a3, a3, 1
+	rori	a3, a3, 63
 	or	a0, a0, a2
 	sltu	a1, a1, a3
 	or	a0, a0, a1

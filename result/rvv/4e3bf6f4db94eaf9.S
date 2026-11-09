@@ -21,11 +21,10 @@ func000000000000000c:
 	ret
 
 func000000000000001f:
-	lui	a0, 65536
-	addi	a0, a0, -1
-	slli	a0, a0, 32
+	lui	a0, 983040
+	rori	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vandn.vx	v8, v8, a0
+	vand.vx	v8, v8, a0
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vx	v12, v10, a0

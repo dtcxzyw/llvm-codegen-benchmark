@@ -1,12 +1,11 @@
 func0000000000000021:
-	lui	a2, 524032
+	lui	a2, 524544
 	srli	a1, a1, 32
-	addi	a2, a2, -1
-	slli	a1, a1, 32
 	li	a3, -1
-	slli	a2, a2, 32
+	slli	a1, a1, 32
+	rori	a2, a2, 32
 	srli	a3, a3, 32
-	xor	a1, a1, a2
+	xnor	a1, a1, a2
 	xor	a0, a0, a3
 	or	a0, a0, a1
 	seqz	a0, a0

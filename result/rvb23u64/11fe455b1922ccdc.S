@@ -23,11 +23,10 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	lui	a3, 65536
-	addi	a3, a3, -1
+	lui	a3, 983040
 	or	a1, a1, a2
-	slli	a3, a3, 32
-	and	a1, a1, a3
+	rori	a2, a3, 32
+	andn	a1, a1, a2
 	add.uw	a0, a0, a1
 	ret
 

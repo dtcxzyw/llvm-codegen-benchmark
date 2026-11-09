@@ -54,11 +54,10 @@ func0000000000000004:
 	ret
 
 func000000000000000d:
-	lui	a1, 32768
-	addi	a1, a1, -1
+	lui	a1, 1015808
 	slli	a0, a0, 28
-	slli	a1, a1, 32
-	and	a0, a0, a1
+	rori	a1, a1, 32
+	andn	a0, a0, a1
 	bseti	a1, zero, 40
 	sub	a0, a0, a1
 	ret

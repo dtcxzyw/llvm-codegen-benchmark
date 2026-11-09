@@ -24,15 +24,14 @@ func0000000000000000:
 	ret
 
 func000000000000001f:
-	lui	a2, 1
 	sext.w	a1, a1
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1024
 	addi	a2, a2, -1
-	addi	a1, a1, -1
+	lui	a1, 1047552
 	add	a0, a0, a2
-	slli	a1, a1, 12
-	and	a0, a0, a1
+	rori	a1, a1, 52
+	andn	a0, a0, a1
 	ret
 
 func0000000000000005:

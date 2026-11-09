@@ -10,9 +10,8 @@ func00000000000000e1:
 	ret
 
 func00000000000000c1:
-	li	a0, 7
-	slli	a0, a0, 60
-	addi	a0, a0, 1
+	lui	a0, 23
+	rori	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vzext.vf2	v12, v8

@@ -104,12 +104,13 @@ func0000000000000021:
 	ret
 
 func0000000000000088:
+	lui	a0, 23
+	rori	a0, a0, 15
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vmacc.vv	v12, v10, v8
 	li	a0, -1
 	slli	a0, a0, 61
-	addi	a1, a0, 2
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v12, a1
-	vmacc.vv	v12, v10, v8
 	vmsltu.vx	v0, v12, a0
 	ret
 
@@ -147,12 +148,13 @@ func00000000000000a1:
 	ret
 
 func0000000000000028:
+	lui	a0, 31
+	rori	a0, a0, 16
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v12, a0
+	vmacc.vv	v12, v10, v8
 	li	a0, -1
 	slli	a0, a0, 60
-	addi	a1, a0, 1
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v12, a1
-	vmacc.vv	v12, v10, v8
 	vmsltu.vx	v0, v12, a0
 	ret
 

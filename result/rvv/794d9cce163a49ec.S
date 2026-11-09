@@ -40,10 +40,9 @@ func000000000000003b:
 	li	a0, 47
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
-	lui	a0, 262144
-	addi	a0, a0, -1
-	slli	a0, a0, 17
-	vand.vx	v10, v10, a0
+	lui	a0, 786432
+	rori	a0, a0, 47
+	vandn.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	li	a0, 62
 	vsll.vx	v8, v8, a0

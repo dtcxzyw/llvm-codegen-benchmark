@@ -6,11 +6,11 @@ func0000000000000000:
 	ret
 
 func0000000000000003:
-	li	a1, -1
-	slli	a2, a1, 62
-	addi	a2, a2, 1
-	max	a0, a0, a2
-	srli	a1, a1, 2
-	min	a0, a0, a1
+	lui	a1, 7
+	rori	a1, a1, 14
+	li	a2, -1
+	max	a0, a0, a1
+	srli	a2, a2, 2
+	min	a0, a0, a2
 	ret
 

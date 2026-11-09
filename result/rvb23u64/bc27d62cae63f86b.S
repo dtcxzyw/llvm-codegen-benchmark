@@ -28,9 +28,8 @@ func000000000000002a:
 
 func0000000000000028:
 	lui	a1, 524288
-	addi	a1, a1, -1
-	slli	a1, a1, 32
-	and	a0, a0, a1
+	rori	a1, a1, 32
+	andn	a0, a0, a1
 	seqz	a0, a0
 	ret
 

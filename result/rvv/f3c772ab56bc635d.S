@@ -1,7 +1,6 @@
 func000000000000000e:
-	li	a0, 3
-	slli	a0, a0, 56
-	addi	a0, a0, 258
+	lui	a0, 66051
+	rori	a0, a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma

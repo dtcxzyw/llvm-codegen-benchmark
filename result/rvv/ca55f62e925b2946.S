@@ -22,9 +22,8 @@ func00000000000001f4:
 	addi	a0, a0, -403
 	vmacc.vx	v10, a0, v8
 	lui	a0, 524288
-	addiw	a0, a0, -1
-	slli	a0, a0, 17
-	vand.vx	v8, v10, a0
+	rori	a0, a0, 47
+	vandn.vx	v8, v10, a0
 	lui	a0, 174763
 	addi	a0, a0, -1365
 	slli	a0, a0, 17

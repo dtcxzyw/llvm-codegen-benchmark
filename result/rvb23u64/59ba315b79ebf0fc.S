@@ -1,9 +1,9 @@
 func0000000000000838:
-	li	a2, -24
+	lui	a2, 23
 	sext.w	a0, a0
 	bset	a1, zero, a1
-	rori	a2, a2, 4
-	andn	a1, a1, a2
+	rori	a2, a2, 16
+	and	a1, a1, a2
 	sltiu	a0, a0, 64
 	seqz	a1, a1
 	xori	a0, a0, 1

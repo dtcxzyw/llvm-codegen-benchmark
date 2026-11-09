@@ -2,12 +2,11 @@ func000000000000003f:
 	sext.w	a1, a1
 	sext.w	a0, a0
 	mul	a0, a0, a1
-	lui	a1, 262144
-	lui	a2, 256
-	addi	a1, a1, -1
-	add	a0, a0, a2
-	slli	a1, a1, 21
-	and	a0, a0, a1
+	lui	a1, 256
+	lui	a2, 786432
+	add	a0, a0, a1
+	rori	a1, a2, 43
+	andn	a0, a0, a1
 	ret
 
 func000000000000000a:

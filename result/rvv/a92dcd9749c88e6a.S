@@ -3,8 +3,7 @@ func0000000000000000:
 	vmacc.vv	v8, v12, v10
 	vsrl.vi	v8, v8, 12
 	lui	a0, 524288
-	addiw	a0, a0, -1
-	slli	a0, a0, 21
-	vand.vx	v8, v8, a0
+	rori	a0, a0, 43
+	vandn.vx	v8, v8, a0
 	ret
 

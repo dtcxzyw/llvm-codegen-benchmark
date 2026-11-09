@@ -1,12 +1,11 @@
 func000000000000003f:
 	mul	a1, a1, a2
 	lui	a2, 256
-	lui	a3, 2048
 	add	a0, a0, a2
-	addi	a3, a3, -1
+	lui	a2, 1046528
 	add	a0, a0, a1
-	slli	a3, a3, 21
-	and	a0, a0, a3
+	rori	a1, a2, 43
+	andn	a0, a0, a1
 	ret
 
 func0000000000000011:

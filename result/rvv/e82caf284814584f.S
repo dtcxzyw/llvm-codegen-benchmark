@@ -1,11 +1,12 @@
 func0000000000000008:
+	lui	a0, 786432
+	rori	a0, a0, 62
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
+	li	a0, 3
+	vmacc.vx	v10, a0, v8
 	li	a0, -1
 	slli	a0, a0, 32
-	addi	a1, a0, 3
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a1
-	li	a1, 3
-	vmacc.vx	v10, a1, v8
 	vmsltu.vx	v0, v10, a0
 	ret
 

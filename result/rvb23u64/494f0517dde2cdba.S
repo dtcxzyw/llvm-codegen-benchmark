@@ -17,10 +17,9 @@ func000000000000004c:
 
 func0000000000000041:
 	lui	a2, 524288
-	addi	a2, a2, -1
-	slli	a2, a2, 32
+	rori	a2, a2, 32
 	li	a3, 2047
-	and	a1, a1, a2
+	andn	a1, a1, a2
 	slli	a3, a3, 52
 	xor	a1, a1, a3
 	seqz	a1, a1

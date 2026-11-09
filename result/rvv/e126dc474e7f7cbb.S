@@ -6,10 +6,9 @@ func000000000000000f:
 	vandn.vx	v12, v12, a0
 	li	a0, 32
 	vsll.vx	v10, v10, a0
-	lui	a0, 393216
-	addi	a0, a0, -1
-	slli	a0, a0, 32
-	vand.vx	v10, v10, a0
+	lui	a0, 655360
+	rori	a0, a0, 32
+	vandn.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	ret

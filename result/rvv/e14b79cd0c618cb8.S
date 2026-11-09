@@ -30,9 +30,8 @@ func0000000000000101:
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vx	v10, v10, a0
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 1
+	lui	a0, 524288
+	rori	a0, a0, 63
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmseq.vi	v0, v8, 0, v0.t
@@ -130,9 +129,8 @@ func0000000000000584:
 	bseti	a0, zero, 53
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vx	v10, v10, a0
-	li	a0, -1
-	slli	a0, a0, 54
-	addi	a0, a0, 1
+	lui	a0, 2047
+	rori	a0, a0, 22
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmsne.vi	v0, v8, 0, v0.t

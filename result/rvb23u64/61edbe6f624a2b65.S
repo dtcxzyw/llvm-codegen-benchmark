@@ -24,11 +24,10 @@ func000000000000008c:
 	ret
 
 func0000000000000101:
-	li	a2, -1
-	bseti	a3, zero, 32
-	slli	a2, a2, 32
-	sub	a1, a1, a3
-	addi	a2, a2, 1
+	bseti	a2, zero, 32
+	lui	a3, 524288
+	sub	a1, a1, a2
+	rori	a2, a3, 63
 	sltu	a1, a1, a2
 	andi	a0, a0, 4
 	czero.nez	a0, a1, a0

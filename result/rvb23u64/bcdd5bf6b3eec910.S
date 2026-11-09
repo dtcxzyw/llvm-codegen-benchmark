@@ -5,11 +5,10 @@ func0000000000000007:
 	ret
 
 func0000000000000003:
-	lui	a2, 65536
 	sh3add.uw	a0, a1, a0
-	addi	a2, a2, -1
-	slli	a2, a2, 22
-	and	a0, a0, a2
+	lui	a1, 983040
+	rori	a1, a1, 42
+	andn	a0, a0, a1
 	ret
 
 func0000000000000000:

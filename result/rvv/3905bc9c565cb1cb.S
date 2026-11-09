@@ -49,9 +49,8 @@ func0000000000000006:
 	ret
 
 func0000000000000004:
-	li	a0, -1
-	slli	a0, a0, 32
-	addi	a0, a0, 1
+	lui	a0, 524288
+	rori	a0, a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v9, v10, a0
 	vmor.mm	v8, v0, v8

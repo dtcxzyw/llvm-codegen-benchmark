@@ -6,9 +6,8 @@ func0000000000000004:
 	ret
 
 func00000000000000a8:
-	li	a1, -1
-	slli	a1, a1, 61
-	addi	a1, a1, 2
+	lui	a1, 23
+	rori	a1, a1, 15
 	sh1add	a0, a0, a1
 	srli	a0, a0, 61
 	sltiu	a0, a0, 7

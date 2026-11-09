@@ -8,10 +8,10 @@ func0000000000000d8c:
 	ret
 
 func0000000000000024:
-	li	a0, -256
-	zext.w	a0, a0
+	lui	a0, 1044480
+	rori	a0, a0, 56
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vandn.vx	v8, v8, a0
+	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
 	ret
 

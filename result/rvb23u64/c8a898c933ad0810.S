@@ -25,10 +25,9 @@ func000000000000001f:
 	ret
 
 func000000000000000d:
-	li	a3, -1
-	slli	a3, a3, 61
+	lui	a3, 15
 	andi	a0, a0, 1
-	addi	a3, a3, 1
+	rori	a3, a3, 15
 	add.uw	a1, a2, a1
 	czero.eqz	a0, a3, a0
 	add	a0, a0, a1

@@ -12,16 +12,15 @@ func0000000000000005:
 	vmnot.m	v0, v24
 	ret
 
-.LCPI1_0:
-	.quad	0x3cb8000000000004
 func0000000000000033:
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfabs.v	v24, v24
 	vfabs.v	v8, v8
 	vfadd.vv	v16, v16, v24
-	lui	a0, %hi(.LCPI1_0)
-	fld	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, 34711
+	rori	a0, a0, 25
+	fmv.d.x	fa5, a0
 	vfmul.vf	v16, v16, fa5
 	vmfle.vv	v24, v16, v8
 	vmnot.m	v0, v24

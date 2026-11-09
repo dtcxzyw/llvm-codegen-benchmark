@@ -8,13 +8,12 @@ func0000000000000424:
 	ret
 
 func0000000000000084:
+	addi	a2, a2, -1
 	lui	a3, 2
 	add	a1, a1, a3
-	li	a3, 7
-	addi	a2, a2, -1
-	slli	a3, a3, 60
+	lui	a3, 23
 	seqz	a2, a2
-	addi	a3, a3, 1
+	rori	a3, a3, 16
 	and	a0, a0, a2
 	sltu	a1, a1, a3
 	and	a0, a0, a1
@@ -24,11 +23,10 @@ func0000000000000204:
 	lui	a3, 1
 	addi	a3, a3, 1
 	sltu	a2, a2, a3
-	li	a3, 7
-	lui	a4, 2
-	slli	a3, a3, 60
-	add	a1, a1, a4
-	addi	a3, a3, 1
+	lui	a3, 2
+	lui	a4, 23
+	add	a1, a1, a3
+	rori	a3, a4, 16
 	and	a0, a0, a2
 	sltu	a1, a1, a3
 	and	a0, a0, a1

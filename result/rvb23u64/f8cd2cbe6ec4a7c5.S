@@ -8,16 +8,14 @@ func0000000000000000:
 func000000000000000f:
 	lui	a2, 2
 	addi	a2, a2, -1
-	lui	a3, 512
+	lui	a3, 1048064
 	add	a1, a1, a2
-	addi	a3, a3, -1
-	slli	a3, a3, 12
-	lui	a2, 1024
-	and	a1, a1, a3
-	addi	a2, a2, -1
+	rori	a2, a3, 52
+	andn	a1, a1, a2
+	lui	a2, 1047552
 	add	a0, a0, a1
-	slli	a2, a2, 12
-	and	a0, a0, a2
+	rori	a1, a2, 52
+	andn	a0, a0, a1
 	ret
 
 func000000000000000b:

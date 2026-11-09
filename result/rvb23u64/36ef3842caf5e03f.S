@@ -67,24 +67,22 @@ func0000000000000c29:
 	ret
 
 func0000000000000c81:
-	li	a3, -1
 	addi	a2, a2, 19
-	slli	a3, a3, 32
+	lui	a3, 524288
 	xor	a0, a0, a2
-	addi	a3, a3, 1
+	rori	a2, a3, 63
 	seqz	a0, a0
-	sltu	a1, a1, a3
+	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
 func0000000000000081:
-	li	a3, -1
 	addi	a2, a2, 1
-	slli	a3, a3, 32
+	lui	a3, 524288
 	xor	a0, a0, a2
-	addi	a3, a3, 1
+	rori	a2, a3, 63
 	seqz	a0, a0
-	sltu	a1, a1, a3
+	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
 
