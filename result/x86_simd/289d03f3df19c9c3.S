@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vsubpd	%ymm0, %ymm1, %ymm0
 	retq
 

@@ -3,7 +3,7 @@
 	.long	0x3f800000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vcvtusi2ss	%rdi, %xmm15, %xmm1
+	vcvtsi2ss	%rdi, %xmm15, %xmm1
 	vmovss	.LCPI0_0(%rip), %xmm2
 	vdivss	%xmm0, %xmm2, %xmm0
 	vmulss	%xmm1, %xmm0, %xmm0

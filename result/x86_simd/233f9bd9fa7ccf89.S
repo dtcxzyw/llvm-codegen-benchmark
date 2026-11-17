@@ -3,7 +3,7 @@
 	.quad	0x3ff0000000000000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vcvtuqq2pd	%ymm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	vbroadcastsd	.LCPI0_0(%rip), %ymm1
 	vdivpd	%ymm0, %ymm1, %ymm0
 	retq
@@ -12,7 +12,7 @@ func0000000000000007:
 	.quad	0x3ff0000000000000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
-	vcvtuqq2pd	%ymm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	vbroadcastsd	.LCPI1_0(%rip), %ymm1
 	vdivpd	%ymm0, %ymm1, %ymm0
 	retq

@@ -12,7 +12,7 @@ func0000000000000000:
 	.long	0x44800000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	vcvtusi2ss	%rdi, %xmm15, %xmm1
+	vcvtsi2ss	%rdi, %xmm15, %xmm1
 	vmulss	.LCPI1_0(%rip), %xmm0, %xmm0
 	vmulss	%xmm1, %xmm0, %xmm0
 	retq

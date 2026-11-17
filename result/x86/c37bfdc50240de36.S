@@ -1,7 +1,7 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000000e:
-	vcvtusi2sd	%rdi, %xmm15, %xmm2
+	vcvtsi2sd	%rdi, %xmm15, %xmm2
 	vfmadd213sd	%xmm1, %xmm2, %xmm0
 	retq
 
@@ -19,7 +19,7 @@ func0000000000000002:
 
 	.prefalign	4, .Lfunc_end3, nop
 func000000000000000a:
-	vcvtusi2sd	%rdi, %xmm15, %xmm2
+	vcvtsi2sd	%rdi, %xmm15, %xmm2
 	vfmadd213sd	%xmm1, %xmm2, %xmm0
 	retq
 

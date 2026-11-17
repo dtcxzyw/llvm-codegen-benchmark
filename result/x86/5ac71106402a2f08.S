@@ -8,7 +8,7 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	vcvtusi2sd	%rdi, %xmm15, %xmm2
+	vcvtsi2sd	%rdi, %xmm15, %xmm2
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq

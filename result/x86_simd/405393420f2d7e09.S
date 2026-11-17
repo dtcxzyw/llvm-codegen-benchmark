@@ -29,7 +29,7 @@ func0000000000000008:
 func0000000000000002:
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm2
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcvtudq2pd	%xmm0, %ymm3
 	vdivpd	%ymm3, %ymm1, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1

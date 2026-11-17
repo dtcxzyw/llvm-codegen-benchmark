@@ -5,7 +5,7 @@ func000000000000001c:
 	vpsubw	%xmm0, %xmm2, %xmm0
 	vpmovzxwd	%xmm0, %ymm0
 	vcvtdq2ps	%ymm0, %ymm0
-	vcvtudq2ps	%ymm1, %ymm1
+	vcvtdq2ps	%ymm1, %ymm1
 	vdivps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

@@ -5,7 +5,7 @@
 	.long	0x40490fdb
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vcvtusi2ss	%rdi, %xmm15, %xmm0
+	vcvtsi2ss	%rdi, %xmm15, %xmm0
 	vmulss	.LCPI0_0(%rip), %xmm0, %xmm0
 	vmulss	.LCPI0_1(%rip), %xmm0, %xmm0
 	retq

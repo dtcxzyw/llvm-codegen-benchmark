@@ -9,7 +9,7 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	vcvtusi2ss	%rdi, %xmm15, %xmm0
+	vcvtsi2ss	%rdi, %xmm15, %xmm0
 	vaddss	%xmm0, %xmm0, %xmm0
 	retq
 
@@ -17,7 +17,7 @@ func0000000000000007:
 	.long	0x40800000
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
-	vcvtusi2ss	%rdi, %xmm15, %xmm0
+	vcvtsi2ss	%rdi, %xmm15, %xmm0
 	vmulss	.LCPI2_0(%rip), %xmm0, %xmm0
 	retq
 

@@ -3,7 +3,7 @@
 	.quad	0x4059000000000000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vcvtusi2sd	%rdi, %xmm15, %xmm1
+	vcvtsi2sd	%rdi, %xmm15, %xmm1
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	vmulsd	%xmm1, %xmm0, %xmm0
 	retq

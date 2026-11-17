@@ -39,7 +39,7 @@ func0000000000000000:
 	.long	0x41200000
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	vcvtuqq2ps	%ymm0, %xmm0
+	vcvtqq2ps	%ymm0, %xmm0
 	vbroadcastss	.LCPI1_0(%rip), %xmm1
 	vdivps	%xmm0, %xmm1, %xmm0
 	vcvttps2dq	%xmm0, %xmm0

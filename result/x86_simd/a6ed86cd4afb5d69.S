@@ -18,7 +18,7 @@ func0000000000000024:
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmovqd	%ymm0, %xmm2
-	vcvtuqq2pd	%ymm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	vcvtudq2pd	%xmm1, %ymm3
 	vdivpd	%ymm3, %ymm0, %ymm0
 	vcvttpd2udq	%ymm0, %xmm0

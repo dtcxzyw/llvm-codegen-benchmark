@@ -45,6 +45,6 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
-	vcvtudq2ps	%ymm0, %ymm0
+	vcvtdq2ps	%ymm0, %ymm0
 	retq
 

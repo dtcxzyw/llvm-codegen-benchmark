@@ -11,7 +11,7 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
-	vcvtuqq2ps	%ymm0, %xmm0
+	vcvtqq2ps	%ymm0, %xmm0
 	vaddps	%xmm0, %xmm0, %xmm0
 	vzeroupper
 	retq
@@ -20,7 +20,7 @@ func0000000000000007:
 	.long	0x40800000
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000005:
-	vcvtuqq2ps	%ymm0, %xmm0
+	vcvtqq2ps	%ymm0, %xmm0
 	vmulps	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

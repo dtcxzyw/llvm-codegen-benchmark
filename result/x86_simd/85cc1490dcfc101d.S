@@ -24,7 +24,7 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000a:
 	vcvtudq2pd	%xmm1, %ymm2
-	vcvtuqq2pd	%ymm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	vdivpd	%ymm2, %ymm0, %ymm0
 	vcvttpd2udq	%ymm0, %xmm0
 	vpmulld	%xmm1, %xmm0, %xmm0

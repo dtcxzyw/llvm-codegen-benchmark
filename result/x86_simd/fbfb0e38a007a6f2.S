@@ -19,7 +19,7 @@ func0000000000000001:
 func0000000000000007:
 	vpmovqd	%ymm1, %xmm2
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcvtdq2pd	%xmm0, %ymm3
 	vdivpd	%ymm1, %ymm3, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1

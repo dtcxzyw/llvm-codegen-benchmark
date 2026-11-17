@@ -3,7 +3,7 @@
 	.long	0x3f800000
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000007:
-	vcvtuqq2ps	%ymm1, %xmm1
+	vcvtqq2ps	%ymm1, %xmm1
 	vbroadcastss	.LCPI0_0(%rip), %xmm2
 	vdivps	%xmm0, %xmm2, %xmm0
 	vmulps	%xmm1, %xmm0, %xmm0

@@ -17,7 +17,7 @@ func0000000000000001:
 func0000000000000041:
 	vpmovqd	%ymm1, %xmm2
 	vcvtudq2pd	%xmm0, %ymm3
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm3, %ymm1, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0
@@ -31,7 +31,7 @@ func0000000000000041:
 func0000000000000061:
 	vpmovqd	%ymm1, %xmm2
 	vcvtudq2pd	%xmm0, %ymm3
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm3, %ymm1, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0

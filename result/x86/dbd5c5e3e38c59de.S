@@ -2,7 +2,7 @@
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000001f:
 	addq	%rsi, %rdi
-	vcvtusi2ss	%rdi, %xmm15, %xmm0
+	vcvtsi2ss	%rdi, %xmm15, %xmm0
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

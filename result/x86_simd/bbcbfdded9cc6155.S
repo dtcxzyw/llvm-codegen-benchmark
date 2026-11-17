@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func000000000000003f:
-	vcvtuqq2ps	%ymm1, %xmm1
-	vcvtuqq2ps	%ymm0, %xmm0
+	vcvtqq2ps	%ymm1, %xmm1
+	vcvtqq2ps	%ymm0, %xmm0
 	vsubps	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

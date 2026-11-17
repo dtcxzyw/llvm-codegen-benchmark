@@ -23,7 +23,7 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpmovqd	%ymm0, %xmm1
-	vcvtuqq2pd	%ymm0, %ymm0
+	vcvtqq2pd	%ymm0, %ymm0
 	vbroadcastsd	.LCPI1_0(%rip), %ymm2
 	vdivpd	%ymm0, %ymm2, %ymm0
 	vcvttpd2udq	%ymm0, %xmm0

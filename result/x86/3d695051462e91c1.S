@@ -33,7 +33,7 @@ func000000000000000b:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000072:
-	vcvtusi2sd	%rdi, %xmm15, %xmm2
+	vcvtsi2sd	%rdi, %xmm15, %xmm2
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	seta	%al
@@ -41,7 +41,7 @@ func0000000000000072:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000073:
-	vcvtusi2sd	%rdi, %xmm15, %xmm2
+	vcvtsi2sd	%rdi, %xmm15, %xmm2
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	setb	%al
@@ -49,7 +49,7 @@ func0000000000000073:
 
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000075:
-	vcvtusi2sd	%rdi, %xmm15, %xmm2
+	vcvtsi2sd	%rdi, %xmm15, %xmm2
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setb	%al
@@ -57,7 +57,7 @@ func0000000000000075:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000078:
-	vcvtusi2sd	%rdi, %xmm15, %xmm2
+	vcvtsi2sd	%rdi, %xmm15, %xmm2
 	vmulsd	%xmm2, %xmm1, %xmm1
 	vcmpeqsd	%xmm0, %xmm1, %k0
 	kmovd	%k0, %eax

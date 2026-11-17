@@ -6,7 +6,7 @@ func000000000000000c:
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendw	$170, %ymm4, %ymm0, %ymm0
 	vcvtdq2ps	%ymm0, %ymm0
-	vcvtudq2ps	%ymm1, %ymm1
+	vcvtdq2ps	%ymm1, %ymm1
 	vdivps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -19,8 +19,8 @@ func000000000000000c:
 func000000000000000f:
 	vpmovdw	%ymm1, %xmm2
 	vpmovdw	%ymm0, %xmm3
-	vcvtudq2ps	%ymm1, %ymm1
-	vcvtudq2ps	%ymm0, %ymm0
+	vcvtdq2ps	%ymm1, %ymm1
+	vcvtdq2ps	%ymm0, %ymm0
 	vdivps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -33,8 +33,8 @@ func000000000000000f:
 func000000000000000a:
 	vpmovdw	%ymm1, %xmm2
 	vpmovdw	%ymm0, %xmm3
-	vcvtudq2ps	%ymm1, %ymm1
-	vcvtudq2ps	%ymm0, %ymm0
+	vcvtdq2ps	%ymm1, %ymm1
+	vcvtdq2ps	%ymm0, %ymm0
 	vdivps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
@@ -50,7 +50,7 @@ func0000000000000002:
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendw	$170, %ymm4, %ymm1, %ymm1
 	vcvtdq2ps	%ymm1, %ymm1
-	vcvtudq2ps	%ymm0, %ymm0
+	vcvtdq2ps	%ymm0, %ymm0
 	vdivps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

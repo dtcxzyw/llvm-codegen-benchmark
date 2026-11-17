@@ -57,7 +57,7 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	vpmovdb	%ymm1, %xmm2
-	vcvtudq2ps	%ymm1, %ymm1
+	vcvtdq2ps	%ymm1, %ymm1
 	vpmovzxbd	%xmm0, %ymm3
 	vcvtdq2ps	%ymm3, %ymm3
 	vdivps	%ymm3, %ymm1, %ymm1

@@ -59,7 +59,7 @@ func000000000000000c:
 	.prefalign	4, .Lfunc_end5, nop
 func00000000000000c1:
 	vcvtudq2pd	%xmm1, %ymm1
-	vcvtuqq2pd	%ymm2, %ymm2
+	vcvtqq2pd	%ymm2, %ymm2
 	vdivpd	%ymm1, %ymm2, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
@@ -69,7 +69,7 @@ func00000000000000c1:
 	.prefalign	4, .Lfunc_end6, nop
 func0000000000000081:
 	vcvtudq2pd	%xmm1, %ymm1
-	vcvtuqq2pd	%ymm2, %ymm2
+	vcvtqq2pd	%ymm2, %ymm2
 	vdivpd	%ymm1, %ymm2, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0

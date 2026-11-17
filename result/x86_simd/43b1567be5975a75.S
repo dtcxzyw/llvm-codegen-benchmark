@@ -13,7 +13,7 @@ func0000000000000000:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000023:
-	vcvtudq2ps	%ymm2, %ymm2
+	vcvtdq2ps	%ymm2, %ymm2
 	vpmovzxwd	%xmm1, %ymm1
 	vcvtdq2ps	%ymm1, %ymm1
 	vdivps	%ymm2, %ymm1, %ymm1
@@ -35,7 +35,7 @@ func0000000000000003:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000034:
-	vcvtudq2ps	%ymm2, %ymm2
+	vcvtdq2ps	%ymm2, %ymm2
 	vpmovzxwd	%xmm1, %ymm1
 	vcvtdq2ps	%ymm1, %ymm1
 	vdivps	%ymm2, %ymm1, %ymm1
@@ -45,7 +45,7 @@ func0000000000000034:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000037:
-	vcvtudq2ps	%ymm2, %ymm2
+	vcvtdq2ps	%ymm2, %ymm2
 	vpmovzxwd	%xmm1, %ymm1
 	vcvtdq2ps	%ymm1, %ymm1
 	vdivps	%ymm2, %ymm1, %ymm1

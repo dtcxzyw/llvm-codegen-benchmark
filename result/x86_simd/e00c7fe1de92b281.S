@@ -12,7 +12,7 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	vcvtudq2pd	%xmm0, %ymm0
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm0, %ymm1, %ymm0
 	vcvttpd2udq	%ymm0, %xmm0
 	vzeroupper
@@ -31,7 +31,7 @@ func0000000000000002:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000006:
 	vcvtudq2pd	%xmm0, %ymm0
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm0, %ymm1, %ymm0
 	vcvttpd2udq	%ymm0, %xmm0
 	vzeroupper

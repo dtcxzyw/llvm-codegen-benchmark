@@ -15,7 +15,7 @@ func0000000000000001:
 func0000000000000004:
 	vpmovqd	%ymm1, %xmm2
 	vcvtudq2pd	%xmm0, %ymm3
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm3, %ymm1, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0
@@ -27,7 +27,7 @@ func0000000000000004:
 func0000000000000007:
 	vpmovqd	%ymm1, %xmm2
 	vcvtudq2pd	%xmm0, %ymm3
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm3, %ymm1, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0
@@ -51,7 +51,7 @@ func0000000000000000:
 func0000000000000005:
 	vpmovqd	%ymm1, %xmm2
 	vcvtudq2pd	%xmm0, %ymm3
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm3, %ymm1, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0
@@ -63,7 +63,7 @@ func0000000000000005:
 func0000000000000006:
 	vpmovqd	%ymm1, %xmm2
 	vcvtudq2pd	%xmm0, %ymm3
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vdivpd	%ymm3, %ymm1, %ymm1
 	vcvttpd2udq	%ymm1, %xmm1
 	vpmulld	%xmm0, %xmm1, %xmm0

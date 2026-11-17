@@ -28,7 +28,7 @@ func0000000000000008:
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000078:
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcmpeqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -36,7 +36,7 @@ func0000000000000078:
 
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000054:
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcmpltpd	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -44,7 +44,7 @@ func0000000000000054:
 
 	.prefalign	4, .Lfunc_end5, nop
 func0000000000000074:
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcmpltpd	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -61,7 +61,7 @@ func0000000000000018:
 
 	.prefalign	4, .Lfunc_end7, nop
 func0000000000000058:
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcmpeqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -69,7 +69,7 @@ func0000000000000058:
 
 	.prefalign	4, .Lfunc_end8, nop
 func0000000000000072:
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcmpltpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -77,7 +77,7 @@ func0000000000000072:
 
 	.prefalign	4, .Lfunc_end9, nop
 func0000000000000077:
-	vcvtuqq2pd	%ymm1, %ymm1
+	vcvtqq2pd	%ymm1, %ymm1
 	vcmpneqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
