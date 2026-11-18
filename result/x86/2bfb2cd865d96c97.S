@@ -1,8 +1,8 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000001:
-	shrb	$4, %dil
-	andb	$4, %dil
-	movzbl	%dil, %eax
+	movq	%rdi, %rax
+	shrb	$4, %al
+	andl	$4, %eax
 	retq
 

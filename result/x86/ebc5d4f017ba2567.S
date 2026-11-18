@@ -7,9 +7,9 @@ func000000000000000f:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000000e:
-	shrb	%sil
-	andb	$1, %sil
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	shrb	%al
+	andl	$1, %eax
 	shll	$14, %eax
 	orl	%edi, %eax
 	retq

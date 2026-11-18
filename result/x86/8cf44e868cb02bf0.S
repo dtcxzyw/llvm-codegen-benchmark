@@ -1,33 +1,31 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
-	shlb	$5, %sil
-	andb	$32, %sil
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	shlb	$5, %al
+	andl	$32, %eax
 	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	shlb	$3, %sil
-	andb	$-32, %sil
-	movzbl	%sil, %eax
+	leal	(,%rsi,8), %eax
+	andl	$224, %eax
 	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
-	addb	%sil, %sil
-	andb	$2, %sil
-	movzbl	%sil, %eax
+	leal	(%rsi,%rsi), %eax
+	andl	$2, %eax
 	orl	%edi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000000:
-	shlb	$5, %sil
-	andb	$-128, %sil
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	shlb	$5, %al
+	andl	$128, %eax
 	orl	%edi, %eax
 	retq
 

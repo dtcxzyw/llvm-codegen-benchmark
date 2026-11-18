@@ -11,9 +11,8 @@ func0000000000000081:
 	.prefalign	4, .Lfunc_end1, nop
 func00000000000000e1:
 	shrb	%sil
-	andb	$1, %sil
-	movzbl	%sil, %eax
-	orl	%edi, %eax
+	andl	$1, %esi
+	orl	%edi, %esi
 	sete	%al
 	retq
 

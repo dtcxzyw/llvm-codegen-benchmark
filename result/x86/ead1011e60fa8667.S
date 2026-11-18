@@ -26,9 +26,8 @@ func0000000000000027:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000039:
 	addb	%sil, %sil
-	andb	$2, %sil
-	movzbl	%sil, %eax
-	leal	(%rax,%rdi,4), %eax
+	andl	$2, %esi
+	leal	(%rsi,%rdi,4), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end4, nop

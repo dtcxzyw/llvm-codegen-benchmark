@@ -2,9 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	shrb	$4, %dl
-	andb	$7, %dl
-	movzbl	%dl, %ecx
+	andl	$7, %edx
 	leal	(%rdi,%rsi), %eax
-	orl	%ecx, %eax
+	orl	%edx, %eax
 	retq
 

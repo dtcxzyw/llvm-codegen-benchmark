@@ -1,9 +1,9 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
-	negb	%dil
-	andb	$31, %dil
-	movzbl	%dil, %eax
+	movl	%edi, %eax
+	negb	%al
+	andl	$31, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

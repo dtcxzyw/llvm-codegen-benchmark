@@ -3,17 +3,15 @@
 func0000000000000005:
 	movl	%edi, %eax
 	notb	%sil
-	andb	$1, %sil
-	movzbl	%sil, %ecx
-	subl	%ecx, %eax
+	andl	$1, %esi
+	subl	%esi, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000004:
 	movl	%edi, %eax
 	notb	%sil
-	andb	$1, %sil
-	movzbl	%sil, %ecx
-	subl	%ecx, %eax
+	andl	$1, %esi
+	subl	%esi, %eax
 	retq
 

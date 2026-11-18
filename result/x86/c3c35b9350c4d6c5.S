@@ -2,13 +2,12 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000003:
 	shrb	%dil
-	andb	$30, %dil
-	movzbl	%dil, %eax
-	leal	(%rax,%rax,4), %ecx
-	leal	(%rcx,%rcx,4), %ecx
-	addl	%eax, %ecx
-	shrl	$8, %ecx
-	orb	$48, %cl
-	movzbl	%cl, %eax
+	andl	$30, %edi
+	leal	(%rdi,%rdi,4), %eax
+	leal	(%rax,%rax,4), %eax
+	addl	%edi, %eax
+	shrl	$8, %eax
+	orb	$48, %al
+	movzbl	%al, %eax
 	retq
 

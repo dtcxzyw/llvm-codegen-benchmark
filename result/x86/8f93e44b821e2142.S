@@ -9,8 +9,7 @@ func000000000000001f:
 
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000013:
-	andb	$127, %dil
-	movzbl	%dil, %eax
-	leal	2(%rax,%rax), %eax
+	andl	$127, %edi
+	leal	2(%rdi,%rdi), %eax
 	retq
 

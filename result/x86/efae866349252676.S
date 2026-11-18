@@ -2,9 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
 	shrb	$5, %sil
-	andb	$3, %sil
-	movzbl	%sil, %eax
-	addl	%edi, %eax
+	andl	$3, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

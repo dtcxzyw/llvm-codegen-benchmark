@@ -9,18 +9,16 @@ func000000000000000f:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000005:
 	shrb	$2, %dl
-	andb	$4, %dl
-	movzbl	%dl, %eax
-	addl	%edi, %eax
-	addl	%esi, %eax
+	andl	$4, %edx
+	leal	(%rdi,%rsi), %eax
+	addl	%edx, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func000000000000000c:
 	shrb	$3, %dl
-	andb	$3, %dl
-	movzbl	%dl, %eax
-	addl	%edi, %eax
-	addl	%esi, %eax
+	andl	$3, %edx
+	leal	(%rdi,%rsi), %eax
+	addl	%edx, %eax
 	retq
 
