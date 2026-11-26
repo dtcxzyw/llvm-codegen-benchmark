@@ -14,10 +14,10 @@ func0000000000000007:
 	ret
 
 func0000000000000004:
-	lsl	w8, w1, #17
+	sbfx	w8, w1, #14, #1
 	mov	w9, #32768
 	movk	w9, #37, lsl #16
-	and	w8, w9, w8, asr #31
+	and	w8, w8, w9
 	add	w0, w0, w8
 	ret
 

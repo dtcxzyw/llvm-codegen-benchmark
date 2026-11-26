@@ -1,7 +1,7 @@
 func0000000000000021:
-	lsl	x8, x1, #41
+	sbfx	x8, x1, #22, #1
 	mov	w9, w0
-	and	x0, x9, x8, asr #63
+	and	x0, x8, x9
 	ret
 
 func0000000000000001:

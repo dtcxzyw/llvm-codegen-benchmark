@@ -1,7 +1,7 @@
 func0000000000000021:
-	lsl	w8, w1, #28
+	sbfx	w8, w1, #3, #1
 	neg	w9, w0
-	and	w0, w9, w8, asr #31
+	and	w0, w8, w9
 	ret
 
 func0000000000000061:

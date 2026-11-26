@@ -25,14 +25,8 @@ func0000000000000003:
 func0000000000000001:
 	leal	(%rdi,%rsi), %ecx
 	movzwl	%cx, %eax
-	imull	$9363, %eax, %edx
-	shrl	$16, %edx
-	movl	%ecx, %eax
-	subl	%edx, %eax
-	movzwl	%ax, %eax
-	shrl	%eax
-	addl	%edx, %eax
-	shrl	$2, %eax
+	imulq	$613572608, %rax, %rax
+	shrq	$32, %rax
 	leal	(,%rax,8), %edx
 	subl	%edx, %eax
 	addl	%ecx, %eax

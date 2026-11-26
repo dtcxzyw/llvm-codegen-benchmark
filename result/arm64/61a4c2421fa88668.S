@@ -7,8 +7,8 @@ func0000000000000001:
 
 func0000000000000014:
 	fmov	x8, d0
-	and	x8, x8, #0x7ff0000000000000
-	cmp	xzr, x8, lsr #52
+	ubfx	x8, x8, #52, #11
+	cmp	xzr, x8
 	cset	w0, eq
 	ret
 

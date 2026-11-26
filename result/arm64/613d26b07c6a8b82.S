@@ -1,6 +1,6 @@
 func00000000000000c1:
-	lsl	x8, x2, #29
-	add	x8, x1, x8, asr #28
+	sbfiz	x8, x2, #1, #35
+	add	x8, x1, x8
 	cmp	x0, x8
 	cset	w0, eq
 	ret
@@ -39,8 +39,8 @@ func0000000000000061:
 	ret
 
 func00000000000000e1:
-	lsl	x8, x2, #30
-	add	x8, x1, x8, asr #30
+	sbfx	x8, x2, #0, #34
+	add	x8, x1, x8
 	cmp	x0, x8
 	cset	w0, eq
 	ret

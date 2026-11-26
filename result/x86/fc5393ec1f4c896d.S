@@ -6,12 +6,7 @@ func000000000000004a:
 	movl	$294, %ecx
 	subl	%eax, %ecx
 	movzwl	%cx, %eax
-	imull	$12137, %eax, %edx
-	shrl	$16, %edx
-	subl	%edx, %ecx
-	movzwl	%cx, %eax
-	shrl	%eax
-	addl	%edx, %eax
-	shrl	$4, %eax
+	imulq	$159074304, %rax, %rax
+	shrq	$32, %rax
 	retq
 

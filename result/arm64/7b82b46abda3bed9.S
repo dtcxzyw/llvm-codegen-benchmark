@@ -19,7 +19,7 @@ func0000000000000002:
 	ret
 
 func0000000000000003:
-	lsl	x8, x1, #61
-	add	x0, x0, x8, asr #63
+	sbfx	x8, x1, #2, #1
+	add	x0, x8, x0
 	ret
 

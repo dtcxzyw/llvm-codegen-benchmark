@@ -9,8 +9,8 @@ func0000000000000009:
 	ret
 
 func0000000000000001:
-	lsl	w8, w1, #3
+	sbfx	w8, w1, #16, #13
 	asr	w9, w0, #19
-	sub	w0, w9, w8, asr #19
+	sub	w0, w9, w8
 	ret
 

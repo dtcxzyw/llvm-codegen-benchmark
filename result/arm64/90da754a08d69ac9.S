@@ -45,7 +45,7 @@ func000000000000018c:
 	lsr	w8, w1, w2
 	cmp	w0, #0
 	cset	w9, ne
-	and	w8, w8, #0x40000
-	eor	w0, w9, w8, lsr #18
+	ubfx	w8, w8, #18, #1
+	eor	w0, w9, w8
 	ret
 

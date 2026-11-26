@@ -65,12 +65,10 @@ func00000000000001a4:
 	.long	1
 	.prefalign	4, .Lfunc_end4, nop
 func0000000000000001:
-	vpbroadcastd	.LCPI4_0(%rip), %ymm3
-	vpand	%ymm3, %ymm2, %ymm2
+	vpandd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpand	%ymm3, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubd	%ymm1, %ymm2, %ymm1
+	vpslld	$31, %ymm1, %ymm1
+	vpsrad	$31, %ymm1, %ymm1
 	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

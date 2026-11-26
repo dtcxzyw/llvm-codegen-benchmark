@@ -1,8 +1,8 @@
 func00000000000001e1:
 	mov	w8, #1
-	lsl	w9, w0, #5
+	sbfx	w9, w0, #26, #1
 	lsl	w8, w8, w1
-	and	w0, w8, w9, asr #31
+	and	w0, w9, w8
 	ret
 
 func00000000000001c1:

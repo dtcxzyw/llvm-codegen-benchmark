@@ -1,6 +1,6 @@
 func0000000000000002:
-	lsl	x8, x2, #34
-	cmp	x1, x8, asr #62
+	sbfx	x8, x2, #28, #2
+	cmp	x1, x8
 	cset	w8, eq
 	orr	w8, w0, w8
 	and	w0, w8, #0x1

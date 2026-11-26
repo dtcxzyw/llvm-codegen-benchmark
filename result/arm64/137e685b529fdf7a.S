@@ -11,9 +11,8 @@ func0000000000000001:
 	mul	w9, w8, w9
 	add	w9, w8, w9, lsr #16
 	sxth	w10, w9
-	and	w9, w9, #0x8000
-	lsr	w10, w10, #5
-	add	w9, w10, w9, lsr #15
+	ubfx	w9, w9, #15, #1
+	add	w9, w9, w10, lsr #5
 	mov	w10, #60
 	msub	w8, w9, w10, w8
 	sxth	w0, w8

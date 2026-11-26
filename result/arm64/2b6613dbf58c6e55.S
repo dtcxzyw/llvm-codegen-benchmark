@@ -3,8 +3,7 @@ func0000000000000007:
 	ret
 
 func0000000000000005:
-	and	x8, x0, #0xffffffff
-	and	x0, x8, #0xfffffffff3ffffff
+	and	w0, w0, #0xf3ffffff
 	bfi	x0, x1, #32, #31
 	ret
 

@@ -7,7 +7,7 @@ func0000000000000001:
 
 func0000000000000014:
 	fmov	w8, s0
-	lsl	w8, w8, #9
-	and	w0, w0, w8, asr #31
+	sbfx	w8, w8, #22, #1
+	and	w0, w8, w0
 	ret
 

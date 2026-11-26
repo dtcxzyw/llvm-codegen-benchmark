@@ -22,12 +22,12 @@ func0000000000000005:
 
 func0000000000000001:
 	mov	x8, #8608480567731124087
-	lsl	x10, x1, #32
+	sbfx	x10, x1, #24, #8
 	smulh	x8, x0, x8
 	sub	x8, x8, x0
 	asr	x9, x8, #5
 	add	x8, x9, x8, lsr #63
-	add	x0, x8, x10, asr #56
+	add	x0, x10, x8
 	ret
 
 func000000000000000d:

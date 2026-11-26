@@ -1,10 +1,10 @@
 func0000000000000001:
-	and	w8, w1, #0x80
-	orr	w0, w0, w8, lsr #7
+	ubfx	w8, w1, #7, #1
+	orr	w0, w0, w8
 	ret
 
 func0000000000000000:
-	and	w8, w1, #0xfc
-	orr	w0, w0, w8, lsr #2
+	ubfx	w8, w1, #2, #6
+	orr	w0, w0, w8
 	ret
 

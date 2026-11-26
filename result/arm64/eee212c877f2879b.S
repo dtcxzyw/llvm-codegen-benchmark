@@ -14,24 +14,24 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
+	ubfx	w8, w1, #4, #1
 	cmp	w0, #0
-	and	w8, w1, #0x10
 	cset	w9, eq
-	eor	w0, w9, w8, lsr #4
+	eor	w0, w9, w8
 	ret
 
 func000000000000002c:
+	ubfx	w8, w1, #29, #1
 	cmp	w0, #0
-	and	w8, w1, #0x20000000
 	cset	w9, eq
-	eor	w0, w9, w8, lsr #29
+	eor	w0, w8, w9
 	ret
 
 func0000000000000184:
+	ubfx	w8, w1, #3, #1
 	cmp	w0, #5
-	and	w8, w1, #0x8
 	cset	w9, lo
-	eor	w0, w9, w8, lsr #3
+	eor	w0, w9, w8
 	ret
 
 func00000000000000cc:

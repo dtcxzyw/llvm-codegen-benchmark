@@ -1,10 +1,9 @@
 func0000000000000004:
 	mov	x8, #11
-	and	x9, x1, #0xffffff
+	and	w9, w1, #0xff00ff
 	movk	x8, #5, lsl #16
-	and	x9, x9, #0xffffffffffff00ff
-	movk	x8, #1792, lsl #32
 	orr	x9, x0, x9
+	movk	x8, #1792, lsl #32
 	movk	x8, #768, lsl #48
 	mul	x0, x9, x8
 	ret

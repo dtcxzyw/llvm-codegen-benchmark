@@ -8,15 +8,15 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	add	w8, w0, #42
-	mov	w10, #-109
-	sxtb	w9, w8
-	mul	w9, w9, w10
-	add	w9, w8, w9, lsr #8
-	sbfx	w10, w9, #4, #4
-	and	w9, w9, #0x80
-	add	w9, w10, w9, lsr #7
+	add	w9, w0, #42
+	mov	w8, #-109
+	sxtb	w10, w9
+	mul	w8, w10, w8
+	add	w8, w9, w8, lsr #8
+	sxtb	w10, w8
+	ubfx	w8, w8, #7, #1
+	add	w8, w8, w10, asr #4
 	mov	w10, #28
-	msub	w0, w9, w10, w8
+	msub	w0, w8, w10, w9
 	ret
 

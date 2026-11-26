@@ -5,14 +5,14 @@ func000000000000008a:
 	ret
 
 func000000000000002a:
-	lsl	w8, w1, #3
-	cmn	w0, w8, asr #8
+	sbfx	w8, w1, #5, #24
+	cmn	w8, w0
 	cset	w0, gt
 	ret
 
 func0000000000000008:
-	lsl	w8, w1, #17
-	add	w8, w0, w8, asr #31
+	sbfx	w8, w1, #14, #1
+	add	w8, w0, w8
 	cmp	w8, #1
 	cset	w0, hi
 	ret
@@ -62,15 +62,15 @@ func00000000000000a6:
 	ret
 
 func0000000000000026:
-	lsl	w8, w1, #3
-	add	w8, w0, w8, asr #19
+	sbfx	w8, w1, #16, #13
+	add	w8, w8, w0
 	cmp	w8, #1
 	cset	w0, lt
 	ret
 
 func0000000000000021:
-	lsl	w8, w1, #23
-	cmn	w0, w8, asr #31
+	sbfx	w8, w1, #8, #1
+	cmn	w8, w0
 	cset	w0, eq
 	ret
 

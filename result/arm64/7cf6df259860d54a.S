@@ -5,9 +5,9 @@ func0000000000000066:
 	ret
 
 func0000000000000024:
-	lsl	x8, x1, #32
+	sbfiz	x8, x1, #4, #32
 	sub	x9, x0, #32
-	cmp	x9, x8, asr #28
+	cmp	x9, x8
 	cset	w0, hi
 	ret
 

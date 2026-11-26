@@ -1,7 +1,7 @@
 func000000000000000a:
 	sub	w8, w0, w1
-	and	w9, w8, #0x8000
-	add	w8, w8, w9, lsr #15
+	ubfx	w9, w8, #15, #1
+	add	w8, w8, w9
 	sbfx	w0, w8, #1, #15
 	ret
 

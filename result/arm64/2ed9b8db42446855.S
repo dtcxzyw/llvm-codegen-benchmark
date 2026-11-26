@@ -16,8 +16,8 @@ func0000000000000002:
 
 func0000000000000007:
 	sub	x8, x1, x2
-	lsl	x8, x8, #28
-	add	x0, x0, x8, asr #30
+	sbfx	x8, x8, #2, #34
+	add	x0, x0, x8
 	ret
 
 func0000000000000003:

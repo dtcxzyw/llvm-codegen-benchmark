@@ -25,38 +25,38 @@ func000000000000018c:
 	ret
 
 func0000000000000181:
+	ubfx	w8, w2, #8, #1
 	cmp	w0, w1
-	and	w8, w2, #0x100
 	cset	w9, eq
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func000000000000018a:
+	ubfx	w8, w2, #8, #1
 	cmp	w0, w1
-	and	w8, w2, #0x100
 	cset	w9, gt
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func0000000000000186:
+	ubfx	w8, w2, #8, #1
 	cmp	w0, w1
-	and	w8, w2, #0x100
 	cset	w9, lt
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func0000000000000188:
+	ubfx	w8, w2, #8, #1
 	cmp	w0, w1
-	and	w8, w2, #0x100
 	cset	w9, hi
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func0000000000000184:
+	ubfx	w8, w2, #8, #1
 	cmp	w0, w1
-	and	w8, w2, #0x100
 	cset	w9, lo
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func000000000000002c:
@@ -68,10 +68,10 @@ func000000000000002c:
 	ret
 
 func000000000000018b:
+	ubfx	w8, w2, #8, #1
 	cmp	w0, w1
-	and	w8, w2, #0x100
 	cset	w9, ge
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func0000000000000021:

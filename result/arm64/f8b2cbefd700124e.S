@@ -6,7 +6,7 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	and	w8, w1, #0x800
-	and	w0, w0, w8, lsr #11
+	ubfx	w8, w1, #11, #1
+	and	w0, w0, w8
 	ret
 

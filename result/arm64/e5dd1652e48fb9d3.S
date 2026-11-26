@@ -7,8 +7,8 @@ func0000000000000361:
 	ret
 
 func0000000000000204:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #30
+	sbfiz	x8, x2, #2, #32
+	add	x8, x1, x8
 	add	x8, x8, #676
 	cmp	x8, x0
 	cset	w0, lo
@@ -29,8 +29,8 @@ func0000000000000364:
 	ret
 
 func0000000000000341:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #30
+	sbfiz	x8, x2, #2, #32
+	add	x8, x1, x8
 	sub	x8, x8, #4
 	cmp	x8, x0
 	cset	w0, eq

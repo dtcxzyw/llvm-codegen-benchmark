@@ -35,14 +35,11 @@ func000000000000000f:
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 
-.LCPI3_0:
-	.long	1
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000005:
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpandd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubd	%ymm0, %ymm1, %ymm0
+	vpslld	$31, %ymm0, %ymm0
+	vpsrad	$31, %ymm0, %ymm0
 	retq
 
 .LCPI4_0:

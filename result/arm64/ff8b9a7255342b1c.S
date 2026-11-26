@@ -1,7 +1,7 @@
 func0000000000000014:
-	ubfx	w8, w0, #15, #1
-	and	w9, w1, #0x8000
-	cmp	w8, w9, lsr #15
+	ubfx	w8, w1, #15, #1
+	ubfx	w9, w0, #15, #1
+	cmp	w9, w8
 	cset	w0, lo
 	ret
 
@@ -12,9 +12,9 @@ func0000000000000001:
 	ret
 
 func0000000000000018:
-	ubfx	w8, w0, #8, #8
-	and	w9, w1, #0xff00
-	cmp	w8, w9, lsr #8
+	ubfx	w8, w1, #8, #8
+	ubfx	w9, w0, #8, #8
+	cmp	w9, w8
 	cset	w0, hi
 	ret
 

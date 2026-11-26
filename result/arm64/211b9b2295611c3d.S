@@ -1,7 +1,7 @@
 func0000000000000302:
-	and	w8, w2, #0x800
+	ubfx	w8, w2, #11, #1
 	cmp	w0, #0
-	and	w8, w1, w8, lsr #11
+	and	w8, w8, w1
 	csinc	w0, w8, wzr, ne
 	ret
 

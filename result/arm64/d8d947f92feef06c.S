@@ -24,8 +24,8 @@ func000000000000001a:
 
 func0000000000000018:
 	add	x8, x0, x1, lsl #1
-	lsl	x9, x2, #32
-	add	x8, x8, x9, asr #31
+	sbfiz	x9, x2, #1, #32
+	add	x8, x8, x9
 	add	x0, x8, #16
 	ret
 

@@ -4,9 +4,9 @@ func0000000000000010:
 	ret
 
 func0000000000000050:
-	lsl	x8, x2, #48
-	add	x9, x0, x1, lsl #2
-	add	x0, x9, x8, asr #42
+	add	x8, x0, x1, lsl #2
+	sbfiz	x9, x2, #6, #16
+	add	x0, x8, x9
 	ret
 
 func000000000000000a:
@@ -26,21 +26,21 @@ func000000000000001e:
 	ret
 
 func000000000000001c:
-	lsl	x8, x2, #32
-	add	x9, x0, x1, lsl #3
-	add	x0, x9, x8, asr #29
+	add	x8, x0, x1, lsl #3
+	sbfiz	x9, x2, #3, #32
+	add	x0, x8, x9
 	ret
 
 func0000000000000018:
-	lsl	x8, x2, #32
-	add	x9, x0, x1, lsl #2
-	add	x0, x9, x8, asr #30
+	add	x8, x0, x1, lsl #2
+	sbfiz	x9, x2, #2, #32
+	add	x0, x8, x9
 	ret
 
 func000000000000001b:
-	lsl	x8, x2, #32
-	add	x9, x0, x1, lsl #2
-	add	x0, x9, x8, asr #30
+	add	x8, x0, x1, lsl #2
+	sbfiz	x9, x2, #2, #32
+	add	x0, x8, x9
 	ret
 
 func0000000000000012:
@@ -55,8 +55,8 @@ func0000000000000000:
 	ret
 
 func000000000000005a:
-	lsl	x8, x2, #32
+	sbfiz	x8, x2, #1, #32
 	add	x9, x0, x1
-	add	x0, x9, x8, asr #31
+	add	x0, x9, x8
 	ret
 

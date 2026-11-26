@@ -12,35 +12,23 @@ func0000000000000017:
 
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000001f:
-	imull	$9363, %edi, %eax
-	shrl	$16, %eax
-	movl	%edi, %ecx
-	subl	%eax, %edi
-	movzwl	%di, %edx
-	shrl	%edx
-	addl	%eax, %edx
-	movzwl	%dx, %eax
-	shrl	$2, %eax
-	leal	(,%rax,8), %edx
-	subl	%edx, %eax
-	leal	49(%rcx,%rax), %eax
+	movl	%edi, %eax
+	imulq	$613572608, %rax, %rax
+	shrq	$32, %rax
+	leal	(,%rax,8), %ecx
+	subl	%ecx, %eax
+	leal	49(%rdi,%rax), %eax
 	movzwl	%ax, %eax
 	retq
 
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000007:
 	movzwl	%di, %eax
-	imull	$3507, %eax, %eax
-	shrl	$16, %eax
-	movl	%edi, %ecx
-	subl	%eax, %edi
-	movzwl	%di, %edx
-	shrl	%edx
-	addl	%eax, %edx
-	shrl	$7, %edx
-	imull	$243, %edx, %eax
+	imulq	$17675008, %rax, %rax
+	shrq	$32, %rax
+	imull	$243, %eax, %eax
 	negl	%eax
-	leal	13(%rcx,%rax), %eax
+	leal	13(%rdi,%rax), %eax
 	movzwl	%ax, %eax
 	retq
 

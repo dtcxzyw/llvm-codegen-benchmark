@@ -55,13 +55,8 @@ func0000000000000012:
 func0000000000000002:
 	addl	$6, %edi
 	movzwl	%di, %eax
-	imull	$9363, %eax, %ecx
-	shrl	$16, %ecx
-	subl	%ecx, %edi
-	movzwl	%di, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
+	imulq	$613572608, %rax, %rax
+	shrq	$32, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end7, nop

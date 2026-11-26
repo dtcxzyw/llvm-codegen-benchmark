@@ -29,8 +29,8 @@ func0000000000000027:
 	ret
 
 func000000000000000a:
-	lsl	w8, w1, #20
-	cmp	w0, w8, asr #24
+	sbfx	w8, w1, #4, #8
+	cmp	w0, w8
 	cset	w0, lt
 	ret
 

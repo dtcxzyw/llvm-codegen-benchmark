@@ -61,8 +61,9 @@ func0000000000000000:
 	vpsubq	%ymm2, %ymm0, %ymm0
 	vpcmpnltuq	%ymm1, %ymm0, %k0
 	vpmovm2q	%k0, %ymm0
-	vpsubq	%ymm3, %ymm0, %ymm0
-	vpandnq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0
+	vpaddq	%ymm3, %ymm0, %ymm0
+	vpandq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0
 	retq
 
 .LCPI1_0:

@@ -1,11 +1,11 @@
 func0000000000000003:
-	mov	w8, #16
-	and	w9, w0, #0xfc
-	sub	w0, w8, w9, lsr #2
+	ubfx	w8, w0, #2, #6
+	mov	w9, #16
+	sub	w0, w9, w8
 	ret
 
 func0000000000000001:
-	and	w8, w0, #0xf0
-	neg	w0, w8, lsr #4
+	ubfx	w8, w0, #4, #4
+	neg	w0, w8
 	ret
 

@@ -1,6 +1,6 @@
 func0000000000000010:
-	lsl	x8, x1, #33
-	add	x8, x0, x8, asr #30
+	sbfiz	x8, x1, #3, #31
+	add	x8, x0, x8
 	add	x0, x8, #4
 	ret
 
@@ -26,8 +26,8 @@ func000000000000001a:
 	ret
 
 func0000000000000018:
-	lsl	x8, x1, #32
-	add	x8, x0, x8, asr #30
+	sbfiz	x8, x1, #2, #32
+	add	x8, x0, x8
 	sub	x0, x8, #4
 	ret
 

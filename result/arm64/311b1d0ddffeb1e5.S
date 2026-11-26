@@ -56,20 +56,20 @@ func0000000000000003:
 	ret
 
 func0000000000000013:
-	lsl	x8, x2, #30
-	add	x8, x1, x8, asr #29
+	sbfiz	x8, x2, #1, #34
+	add	x8, x1, x8
 	add	x0, x8, x0, lsl #3
 	ret
 
 func0000000000000012:
-	lsl	x8, x2, #30
-	add	x8, x1, x8, asr #30
+	sbfx	x8, x2, #0, #34
+	add	x8, x1, x8
 	add	x0, x8, x0, lsl #2
 	ret
 
 func0000000000000050:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #30
+	sbfiz	x8, x2, #2, #32
+	add	x8, x1, x8
 	add	x0, x8, x0, lsl #2
 	ret
 

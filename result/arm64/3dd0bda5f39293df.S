@@ -19,8 +19,8 @@ func0000000000000010:
 	ret
 
 func0000000000000050:
-	lsl	x8, x1, #56
-	add	x8, x0, x8, asr #24
+	sbfiz	x8, x1, #32, #8
+	add	x8, x0, x8
 	add	x0, x8, #1
 	ret
 

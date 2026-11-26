@@ -1,7 +1,7 @@
 func0000000000000050:
-	lsl	w8, w2, #24
+	sbfiz	w8, w2, #16, #8
 	add	w9, w0, w1
-	add	w0, w9, w8, asr #8
+	add	w0, w9, w8
 	ret
 
 func0000000000000010:

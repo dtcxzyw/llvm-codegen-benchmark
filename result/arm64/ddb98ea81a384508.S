@@ -1,7 +1,7 @@
 func0000000000000324:
 	add	w8, w1, w2
-	lsl	x8, x8, #32
-	cmp	x0, x8, asr #28
+	sbfiz	x8, x8, #4, #32
+	cmp	x0, x8
 	cset	w0, hi
 	ret
 
@@ -77,8 +77,8 @@ func0000000000000024:
 
 func0000000000000021:
 	add	x8, x1, x2
-	lsl	x8, x8, #16
-	cmp	x0, x8, asr #16
+	sbfx	x8, x8, #0, #48
+	cmp	x0, x8
 	cset	w0, eq
 	ret
 

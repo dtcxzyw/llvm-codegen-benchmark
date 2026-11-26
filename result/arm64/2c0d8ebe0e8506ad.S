@@ -23,22 +23,22 @@ func000000000000000b:
 	ret
 
 func000000000000001a:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #30
+	sbfiz	x8, x2, #2, #32
+	add	x8, x1, x8
 	add	x8, x8, x0, lsl #2
 	sub	x0, x8, #4
 	ret
 
 func000000000000001b:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #30
+	sbfiz	x8, x2, #2, #32
+	add	x8, x1, x8
 	add	x8, x8, x0, lsl #2
 	sub	x0, x8, #4
 	ret
 
 func0000000000000010:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #31
+	sbfiz	x8, x2, #1, #32
+	add	x8, x1, x8
 	add	x8, x8, x0, lsl #1
 	add	x0, x8, #16
 	ret

@@ -6,9 +6,9 @@ func0000000000000021:
 	ret
 
 func0000000000000041:
-	lsl	x8, x1, #61
+	sbfx	x8, x1, #2, #1
 	add	x9, x0, #16
-	and	x0, x9, x8, asr #63
+	and	x0, x8, x9
 	ret
 
 func0000000000000061:

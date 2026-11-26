@@ -2,14 +2,8 @@
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000000:
 	movzbl	%dil, %ecx
-	imull	$109, %ecx, %eax
-	shrl	$8, %eax
-	movl	%ecx, %edx
-	subb	%al, %dl
-	shrb	%dl
-	addb	%al, %dl
-	shrb	$5, %dl
-	movzbl	%dl, %eax
+	imull	$1460, %ecx, %eax
+	shrl	$16, %eax
 	leal	(%rax,%rax,8), %eax
 	leal	(%rax,%rax,4), %edx
 	movl	%ecx, %eax
@@ -20,14 +14,8 @@ func0000000000000000:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movzbl	%dil, %eax
-	leal	(%rax,%rax,8), %ecx
-	leal	(%rax,%rcx,4), %ecx
-	shrl	$8, %ecx
-	subb	%cl, %al
-	shrb	%al
-	addb	%cl, %al
-	shrb	$2, %al
-	movzbl	%al, %eax
+	imull	$9376, %eax, %eax
+	shrl	$16, %eax
 	leal	(%rax,%rax,2), %eax
 	retq
 

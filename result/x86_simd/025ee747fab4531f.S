@@ -18,38 +18,38 @@ func000000000000000b:
 	retq
 
 .LCPI2_0:
-	.byte	128
-	.byte	128
 	.byte	0
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	4
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	8
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	12
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	16
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	20
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	24
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	28
-	.byte	128
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
 .LCPI2_1:
 	.byte	0
 	.byte	255
@@ -85,13 +85,19 @@ func000000000000000b:
 	.byte	255
 .LCPI2_2:
 	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+.LCPI2_3:
+	.byte	0
 	.byte	255
 	.byte	0
 	.byte	255
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000009:
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpshufb	.LCPI2_0(%rip), %ymm1, %ymm1
-	vpternlogd	$236, .LCPI2_2(%rip){1to8}, %ymm1, %ymm0
+	vpslld	$16, %ymm1, %ymm1
+	vpandd	.LCPI2_2(%rip){1to8}, %ymm1, %ymm1
+	vpternlogd	$236, .LCPI2_3(%rip){1to8}, %ymm1, %ymm0
 	retq
 

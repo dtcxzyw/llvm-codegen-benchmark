@@ -1,6 +1,6 @@
 func00000000000000c6:
-	lsl	w8, w2, #16
-	and	w8, w1, w8, asr #31
+	sbfx	w8, w2, #15, #1
+	and	w8, w8, w1
 	cmp	w8, w0
 	cset	w0, lt
 	ret

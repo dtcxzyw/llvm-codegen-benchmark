@@ -5,14 +5,13 @@ func0000000000000001:
 	ret
 
 func0000000000000000:
-	lsl	x8, x1, #31
-	add	x8, x0, x8, asr #63
-	mov	w0, w8
+	sbfx	x8, x1, #32, #1
+	add	w0, w8, w0
 	ret
 
 func0000000000000007:
-	lsl	x8, x1, #60
-	add	x8, x0, x8, asr #63
+	sbfx	x8, x1, #3, #1
+	add	x8, x8, x0
 	and	x0, x8, #0x7ffffffffffffffe
 	ret
 

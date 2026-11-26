@@ -28,13 +28,8 @@ func0000000000000076:
 	.prefalign	4, .Lfunc_end3, nop
 func0000000000000022:
 	leal	6(%rdi,%rsi), %eax
-	movzwl	%ax, %ecx
-	imull	$9363, %ecx, %ecx
-	shrl	$16, %ecx
-	subl	%ecx, %eax
 	movzwl	%ax, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
+	imulq	$613572608, %rax, %rax
+	shrq	$32, %rax
 	retq
 

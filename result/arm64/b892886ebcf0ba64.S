@@ -5,14 +5,14 @@ func0000000000000006:
 
 func0000000000000026:
 	add	w8, w1, w2
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #30
+	sbfiz	x8, x8, #2, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000066:
 	add	w8, w1, w2
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #28
+	sbfiz	x8, x8, #4, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000064:
@@ -32,7 +32,7 @@ func0000000000000046:
 
 func0000000000000004:
 	add	w8, w1, w2
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #30
+	sbfiz	x8, x8, #2, #32
+	add	x0, x0, x8
 	ret
 

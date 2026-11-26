@@ -1,11 +1,11 @@
 func0000000000000006:
-	lsl	w8, w1, #16
-	and	w0, w0, w8, asr #31
+	sbfx	w8, w1, #15, #1
+	and	w0, w8, w0
 	ret
 
 func000000000000000a:
-	lsl	w8, w1, #16
-	bic	w0, w0, w8, asr #31
+	sbfx	w8, w1, #15, #1
+	bic	w0, w0, w8
 	ret
 
 func0000000000000001:

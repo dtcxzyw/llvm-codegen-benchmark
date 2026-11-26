@@ -4,13 +4,13 @@ func000000000000000a:
 	ret
 
 func0000000000000008:
-	and	w8, w0, #0xf800
-	orr	w0, w1, w8, lsr #11
+	ubfx	w8, w0, #11, #5
+	orr	w0, w8, w1
 	ret
 
 func000000000000000c:
-	and	w8, w0, #0xffe0
-	orr	w0, w1, w8, lsr #5
+	ubfx	w8, w0, #5, #11
+	orr	w0, w8, w1
 	ret
 
 func000000000000000e:

@@ -64,9 +64,9 @@ func0000000000000141:
 	ret
 
 func0000000000000101:
-	mov	w8, #6931
-	and	w9, w1, #0xfffe
-	cmp	w8, w9, lsr #1
+	ubfx	w8, w1, #1, #15
+	mov	w9, #6931
+	cmp	w9, w8
 	ccmp	w0, #16, #0, eq
 	cset	w0, hi
 	ret

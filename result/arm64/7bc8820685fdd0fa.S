@@ -1,7 +1,7 @@
 func000000000000003c:
-	and	w8, w2, #0xfe
+	ubfx	w8, w2, #1, #7
 	and	w9, w0, #0xffff
-	add	w8, w1, w8, lsr #1
+	add	w8, w1, w8
 	and	w8, w8, #0xffff
 	udiv	w0, w8, w9
 	ret

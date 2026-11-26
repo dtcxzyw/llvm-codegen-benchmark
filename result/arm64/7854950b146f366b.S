@@ -7,14 +7,14 @@ func0000000000000073:
 	ret
 
 func000000000000007b:
-	lsl	x8, x1, #32
-	add	x8, x0, x8, asr #28
+	sbfiz	x8, x1, #4, #32
+	add	x8, x0, x8
 	add	x0, x8, #48
 	ret
 
 func0000000000000043:
-	lsl	x8, x1, #32
-	add	x8, x0, x8, asr #26
+	sbfiz	x8, x1, #6, #32
+	add	x8, x0, x8
 	add	x0, x8, #760
 	ret
 

@@ -29,20 +29,20 @@ func0000000000000027:
 	ret
 
 func0000000000000001:
-	lsl	w8, w1, #16
-	cmp	w0, w8, asr #24
+	sbfx	w8, w1, #8, #8
+	cmp	w0, w8
 	cset	w0, eq
 	ret
 
 func000000000000002b:
-	lsl	w8, w1, #20
-	cmp	w0, w8, asr #20
+	sbfx	w8, w1, #0, #12
+	cmp	w0, w8
 	cset	w0, ge
 	ret
 
 func000000000000002c:
-	lsl	w8, w1, #20
-	cmp	w0, w8, asr #20
+	sbfx	w8, w1, #0, #12
+	cmp	w0, w8
 	cset	w0, ne
 	ret
 

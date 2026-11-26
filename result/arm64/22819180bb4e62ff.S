@@ -1,7 +1,7 @@
 func000000000000001c:
-	lsl	x8, x2, #33
+	sbfiz	x8, x2, #1, #31
 	add	x9, x0, x1
-	add	x8, x9, x8, asr #32
+	add	x8, x9, x8
 	add	x0, x8, #10
 	ret
 

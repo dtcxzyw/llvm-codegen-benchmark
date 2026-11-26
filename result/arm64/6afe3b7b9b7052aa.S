@@ -6,23 +6,23 @@ func0000000000000041:
 	ret
 
 func0000000000000044:
-	and	w8, w1, #0xff00
+	ubfx	w8, w1, #8, #8
 	and	w9, w0, #0xff
-	cmp	w9, w8, lsr #8
+	cmp	w9, w8
 	cset	w0, lo
 	ret
 
 func000000000000004c:
-	and	w8, w1, #0xff00
+	ubfx	w8, w1, #8, #8
 	and	w9, w0, #0xff
-	cmp	w9, w8, lsr #8
+	cmp	w9, w8
 	cset	w0, ne
 	ret
 
 func0000000000000048:
-	and	w8, w1, #0xff00
+	ubfx	w8, w1, #8, #8
 	and	w9, w0, #0xff
-	cmp	w9, w8, lsr #8
+	cmp	w9, w8
 	cset	w0, hi
 	ret
 

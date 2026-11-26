@@ -8,8 +8,8 @@ func0000000000000021:
 
 func000000000000002c:
 	tst	w1, w2
-	and	w9, w0, #0x20000000
-	cset	w8, eq
-	eor	w0, w8, w9, lsr #29
+	ubfx	w8, w0, #29, #1
+	cset	w9, eq
+	eor	w0, w8, w9
 	ret
 

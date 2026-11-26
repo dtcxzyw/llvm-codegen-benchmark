@@ -26,54 +26,54 @@ func0000000000000001:
 	retq
 
 .LCPI1_0:
-	.byte	16
 	.byte	0
-	.byte	18
+	.byte	16
 	.byte	2
-	.byte	20
+	.byte	18
 	.byte	4
-	.byte	22
+	.byte	20
 	.byte	6
-	.byte	24
+	.byte	22
 	.byte	8
-	.byte	26
+	.byte	24
 	.byte	10
-	.byte	28
+	.byte	26
 	.byte	12
-	.byte	30
+	.byte	28
 	.byte	14
+	.byte	30
 	.prefalign	4, .Lfunc_end1, nop
 func000000000000005d:
-	vmovdqa	.LCPI1_0(%rip), %xmm2
-	vinserti64x4	$1, %ymm1, %zmm0, %zmm0
-	vpmovdw	%zmm0, %ymm0
-	vpermb	%ymm0, %ymm2, %ymm0
+	vpmovdw	%ymm1, %xmm1
+	vpmovdw	%ymm0, %xmm2
+	vmovdqa	.LCPI1_0(%rip), %xmm0
+	vpermi2b	%xmm2, %xmm1, %xmm0
 	vzeroupper
 	retq
 
 .LCPI2_0:
-	.byte	16
 	.byte	0
-	.byte	18
+	.byte	16
 	.byte	2
-	.byte	20
+	.byte	18
 	.byte	4
-	.byte	22
+	.byte	20
 	.byte	6
-	.byte	24
+	.byte	22
 	.byte	8
-	.byte	26
+	.byte	24
 	.byte	10
-	.byte	28
+	.byte	26
 	.byte	12
-	.byte	30
+	.byte	28
 	.byte	14
+	.byte	30
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000019:
-	vmovdqa	.LCPI2_0(%rip), %xmm2
-	vinserti64x4	$1, %ymm0, %zmm1, %zmm0
-	vpmovdw	%zmm0, %ymm0
-	vpermb	%ymm0, %ymm2, %ymm0
+	vpmovdw	%ymm1, %xmm1
+	vpmovdw	%ymm0, %xmm2
+	vmovdqa	.LCPI2_0(%rip), %xmm0
+	vpermi2b	%xmm1, %xmm2, %xmm0
 	vzeroupper
 	retq
 

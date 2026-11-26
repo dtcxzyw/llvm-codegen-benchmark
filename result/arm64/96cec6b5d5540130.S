@@ -1,15 +1,15 @@
 func000000000000018c:
+	ubfx	w8, w1, #8, #1
 	cmp	x0, #0
-	and	w8, w1, #0x100
 	cset	w9, ne
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func0000000000000181:
+	ubfx	w8, w1, #8, #1
 	cmp	x0, #0
-	and	w8, w1, #0x100
 	cset	w9, eq
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w9, w8
 	ret
 
 func0000000000000021:

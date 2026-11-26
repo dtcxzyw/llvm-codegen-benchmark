@@ -30,8 +30,8 @@ func0000000000000003:
 	ret
 
 func0000000000000019:
-	and	w8, w2, #0x20
-	tst	w1, w8, lsr #5
+	ubfx	w8, w2, #5, #1
+	tst	w1, w8
 	mov	w8, #4
 	csel	w8, w8, wzr, ne
 	orr	w0, w8, w0

@@ -25,9 +25,9 @@ func0000000000000318:
 
 func0000000000000058:
 	cmp	w2, #0
-	and	w9, w1, #0x1000
+	ubfx	w9, w1, #12, #1
 	cset	w8, eq
 	and	w8, w0, w8
-	orr	w0, w8, w9, lsr #12
+	orr	w0, w9, w8
 	ret
 

@@ -15,8 +15,8 @@ func0000000000000001:
 	ret
 
 func000000000000002a:
-	lsl	w8, w0, #24
+	sbfx	w8, w0, #7, #1
 	orr	w9, w1, #0x20000000
-	bic	w0, w9, w8, asr #31
+	bic	w0, w9, w8
 	ret
 

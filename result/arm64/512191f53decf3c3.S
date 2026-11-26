@@ -26,9 +26,9 @@ func0000000000000310:
 	ret
 
 func0000000000000318:
-	and	w8, w2, #0x20
+	ubfx	w8, w2, #5, #1
 	cmp	w1, #0
-	and	w8, w0, w8, lsr #5
+	and	w8, w0, w8
 	csinc	w0, w8, wzr, eq
 	ret
 

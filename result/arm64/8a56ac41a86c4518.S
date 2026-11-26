@@ -18,9 +18,8 @@ func0000000000000003:
 
 func0000000000000005:
 	mov	x8, #280375465082880
-	and	x9, x0, #0xffffff
+	and	w9, w0, #0xff00ff
 	movk	x8, #16128, lsl #48
-	and	x9, x9, #0xffffffffffff00ff
 	and	x8, x8, x0, lsl #32
 	orr	x0, x8, x9
 	ret

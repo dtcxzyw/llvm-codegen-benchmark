@@ -4,8 +4,8 @@ func0000000000000003:
 	ret
 
 func0000000000000001:
-	and	w8, w1, #0xe0
+	ubfx	w8, w1, #5, #3
 	and	w9, w0, #0x7f
-	orr	w0, w9, w8, lsr #5
+	orr	w0, w9, w8
 	ret
 

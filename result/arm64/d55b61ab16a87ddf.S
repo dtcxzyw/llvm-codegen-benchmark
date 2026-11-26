@@ -17,13 +17,13 @@ func0000000000000001:
 	ret
 
 func0000000000000017:
-	lsl	x8, x1, #48
-	add	x0, x0, x8, asr #44
+	sbfiz	x8, x1, #4, #16
+	add	x0, x8, x0
 	ret
 
 func0000000000000015:
-	lsl	x8, x1, #48
-	add	x0, x0, x8, asr #44
+	sbfiz	x8, x1, #4, #16
+	add	x0, x8, x0
 	ret
 
 func0000000000000007:
@@ -31,7 +31,7 @@ func0000000000000007:
 	ret
 
 func0000000000000014:
-	lsl	x8, x1, #48
-	add	x0, x0, x8, asr #16
+	sbfiz	x8, x1, #32, #16
+	add	x0, x0, x8
 	ret
 

@@ -1,7 +1,7 @@
 func00000000000000e6:
 	add	x8, x1, x2, lsr #4
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #28
+	sbfiz	x8, x8, #4, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000064:
@@ -11,14 +11,14 @@ func0000000000000064:
 
 func00000000000000c6:
 	add	x8, x1, x2, lsr #2
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #30
+	sbfiz	x8, x8, #2, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000006:
 	add	x8, x1, x2, lsr #1
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #30
+	sbfiz	x8, x8, #2, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000046:

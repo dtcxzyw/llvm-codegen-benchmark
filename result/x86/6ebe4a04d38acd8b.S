@@ -4,14 +4,9 @@ func000000000000001a:
 	movl	%edi, %eax
 	shll	$8, %eax
 	subl	%edi, %eax
-	movzwl	%ax, %ecx
-	imull	$2115, %ecx, %ecx
-	shrl	$16, %ecx
-	subl	%ecx, %eax
 	movzwl	%ax, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$4, %eax
+	imulq	$138549248, %rax, %rax
+	shrq	$32, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

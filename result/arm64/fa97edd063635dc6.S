@@ -12,8 +12,8 @@ func0000000000000004:
 
 func0000000000000015:
 	add	x8, x1, x1, lsl #1
-	lsl	x8, x8, #2
-	cmp	x0, x8, lsr #6
+	ubfx	x8, x8, #4, #58
+	cmp	x0, x8
 	cset	w0, ls
 	ret
 

@@ -19,7 +19,7 @@ func0000000000000014:
 	ret
 
 func0000000000000018:
-	and	w8, w1, #0x4
-	and	w0, w0, w8, lsr #2
+	ubfx	w8, w1, #2, #1
+	and	w0, w0, w8
 	ret
 

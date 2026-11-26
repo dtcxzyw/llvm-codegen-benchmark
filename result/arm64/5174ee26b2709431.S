@@ -11,8 +11,7 @@ func0000000000000024:
 	ret
 
 func00000000000000a4:
-	and	x8, x2, #0xffffffff
-	and	x8, x8, #0xfffffffffffffff7
+	and	w8, w2, #0xfffffff7
 	orr	x8, x8, x1, lsl #32
 	cmp	x8, x0
 	cset	w0, lo

@@ -65,26 +65,23 @@ func0000000000000007:
 	retq
 
 .LCPI5_0:
-	.byte	128
+	.byte	255
 	.byte	0
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	4
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	8
-	.byte	128
-	.byte	128
-	.byte	128
-	.byte	12
-	.byte	128
-	.byte	128
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
+	.byte	0
 .LCPI5_1:
-	.byte	255
-	.byte	0
-	.byte	0
 	.byte	0
 	.byte	255
 	.byte	0
@@ -96,6 +93,9 @@ func0000000000000007:
 	.byte	0
 	.byte	255
 	.byte	0
+	.byte	0
+	.byte	0
+	.byte	255
 	.byte	0
 	.byte	0
 .LCPI5_2:
@@ -103,11 +103,17 @@ func0000000000000007:
 	.byte	0
 	.byte	0
 	.byte	0
+.LCPI5_3:
+	.byte	0
+	.byte	255
+	.byte	0
+	.byte	0
 	.prefalign	4, .Lfunc_end5, nop
 func000000000000000b:
 	vpmovqd	%ymm1, %xmm1
-	vpshufb	.LCPI5_0(%rip), %xmm1, %xmm1
-	vpternlogd	$236, .LCPI5_2(%rip){1to4}, %xmm1, %xmm0
+	vpslld	$8, %xmm1, %xmm1
+	vpandd	.LCPI5_2(%rip){1to4}, %xmm0, %xmm0
+	vpternlogd	$248, .LCPI5_3(%rip){1to4}, %xmm1, %xmm0
 	vzeroupper
 	retq
 

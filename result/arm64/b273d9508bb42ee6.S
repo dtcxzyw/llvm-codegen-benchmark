@@ -42,8 +42,8 @@ func0000000000000028:
 	ret
 
 func0000000000000026:
-	lsl	w8, w2, #23
-	and	w8, w1, w8, asr #31
+	sbfx	w8, w2, #8, #1
+	and	w8, w8, w1
 	cmp	w0, w8
 	cset	w0, lt
 	ret

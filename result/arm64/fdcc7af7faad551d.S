@@ -33,8 +33,7 @@ func0000000000000000:
 func000000000000004a:
 	add	x8, x1, x1, lsl #2
 	mov	w9, #10
-	lsl	x8, x8, #1
-	lsr	x8, x8, #60
+	ubfx	x8, x8, #59, #4
 	madd	x0, x0, x9, x8
 	ret
 

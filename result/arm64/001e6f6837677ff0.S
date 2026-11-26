@@ -1,6 +1,6 @@
 func000000000000000c:
-	and	w8, w1, #0x200
-	tst	w2, w8, lsr #9
+	ubfx	w8, w1, #9, #1
+	tst	w8, w2
 	csel	w8, w0, w1, ne
 	and	w0, w8, #0x7fff
 	ret

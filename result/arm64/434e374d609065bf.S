@@ -4,8 +4,8 @@ func0000000000000015:
 	ret
 
 func0000000000000001:
-	lsl	w8, w0, #18
-	neg	w0, w8, asr #29
+	sbfx	w8, w0, #11, #3
+	neg	w0, w8
 	ret
 
 func0000000000000005:

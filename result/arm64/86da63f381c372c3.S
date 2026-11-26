@@ -15,8 +15,8 @@ func0000000000000061:
 func000000000000000c:
 	mov	w8, #32770
 	add	w8, w1, w8
-	and	w8, w8, #0x10000
-	and	w0, w0, w8, lsr #16
+	ubfx	w8, w8, #16, #1
+	and	w0, w0, w8
 	ret
 
 func0000000000000001:

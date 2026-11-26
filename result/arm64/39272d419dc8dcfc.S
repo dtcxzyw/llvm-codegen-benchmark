@@ -11,8 +11,8 @@ func000000000000002c:
 	ret
 
 func0000000000000001:
-	lsl	w8, w1, #16
-	tst	w0, w8, asr #24
+	sbfx	w8, w1, #8, #8
+	tst	w8, w0
 	cset	w0, eq
 	ret
 

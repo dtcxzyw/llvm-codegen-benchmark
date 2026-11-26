@@ -3,8 +3,8 @@ func000000000000000a:
 	and	w9, w0, #0x3
 	and	w8, w8, #0x3
 	csneg	w8, w9, w8, mi
-	and	w9, w8, #0x80
-	add	w8, w8, w9, lsr #7
+	ubfx	w9, w8, #7, #1
+	add	w8, w8, w9
 	sbfx	w0, w8, #1, #7
 	ret
 

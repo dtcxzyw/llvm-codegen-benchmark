@@ -19,11 +19,11 @@ func0000000000000004:
 	ret
 
 func0000000000000005:
-	mov	w8, #-1
-	lsl	w9, w2, #28
+	sbfx	w8, w2, #3, #1
 	tst	w1, #0x1
-	cneg	w8, w8, eq
-	and	w8, w8, w9, asr #31
+	mov	w9, #-1
+	cneg	w9, w9, eq
+	and	w8, w8, w9
 	add	w0, w8, w0
 	ret
 

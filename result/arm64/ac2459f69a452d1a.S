@@ -6,8 +6,8 @@ func0000000000000002:
 	mul	w9, w9, w10
 	lsr	w9, w9, #16
 	sub	w8, w8, w9
-	and	w8, w8, #0xfffe
-	add	w8, w9, w8, lsr #1
+	ubfx	w8, w8, #1, #15
+	add	w8, w8, w9
 	lsr	w0, w8, #4
 	ret
 
@@ -28,8 +28,8 @@ func0000000000000006:
 	mul	w9, w9, w10
 	lsr	w9, w9, #16
 	sub	w8, w8, w9
-	and	w8, w8, #0xfffe
-	add	w8, w9, w8, lsr #1
+	ubfx	w8, w8, #1, #15
+	add	w8, w8, w9
 	lsr	w0, w8, #7
 	ret
 

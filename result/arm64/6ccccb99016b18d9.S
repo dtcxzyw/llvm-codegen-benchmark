@@ -1,7 +1,7 @@
 func000000000000007a:
-	lsl	x8, x2, #27
+	sbfx	x8, x2, #2, #35
 	add	x9, x1, x0
-	add	x8, x9, x8, asr #29
+	add	x8, x9, x8
 	add	x0, x8, #40
 	ret
 

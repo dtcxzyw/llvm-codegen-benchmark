@@ -1,6 +1,6 @@
 func0000000000000003:
-	and	w8, w0, #0xfe
+	ubfx	w8, w0, #1, #7
 	and	w9, w0, #0x1
-	add	w0, w9, w8, lsr #1
+	add	w0, w8, w9
 	ret
 

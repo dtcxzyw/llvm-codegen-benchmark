@@ -25,8 +25,8 @@ func0000000000000001:
 	mul	w8, w10, w8
 	lsr	w8, w8, #16
 	sub	w10, w9, w8
-	and	w10, w10, #0xfffe
-	add	w8, w8, w10, lsr #1
+	ubfx	w10, w10, #1, #15
+	add	w8, w10, w8
 	lsr	w8, w8, #2
 	sub	w8, w8, w8, lsl #3
 	add	w0, w9, w8

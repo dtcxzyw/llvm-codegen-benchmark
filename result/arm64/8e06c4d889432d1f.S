@@ -1,7 +1,7 @@
 func000000000000018c:
-	and	w8, w2, #0x4
+	ubfx	w8, w2, #2, #1
 	cmp	w1, #0
-	and	w8, w0, w8, lsr #2
+	and	w8, w0, w8
 	csinc	w0, w8, wzr, eq
 	ret
 
@@ -14,9 +14,9 @@ func0000000000000024:
 	ret
 
 func0000000000000181:
-	and	w8, w2, #0x4
+	ubfx	w8, w2, #2, #1
 	cmp	w1, #0
-	and	w8, w0, w8, lsr #2
+	and	w8, w0, w8
 	csinc	w0, w8, wzr, ne
 	ret
 

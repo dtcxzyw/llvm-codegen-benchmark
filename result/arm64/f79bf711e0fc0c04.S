@@ -1,7 +1,7 @@
 func00000000000000b0:
-	lsl	x8, x2, #48
+	sbfiz	x8, x2, #32, #16
 	add	x9, x0, w1, uxtw
-	add	x0, x9, x8, asr #16
+	add	x0, x9, x8
 	ret
 
 func0000000000000010:

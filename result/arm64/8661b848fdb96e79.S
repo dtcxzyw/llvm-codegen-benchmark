@@ -1,15 +1,15 @@
 func0000000000000041:
 	mov	w8, #1
-	lsl	w9, w1, #24
+	sbfx	w9, w1, #7, #1
 	lsl	w8, w8, w0
-	and	w0, w8, w9, asr #31
+	and	w0, w9, w8
 	ret
 
 func0000000000000061:
 	mov	w8, #1
-	lsl	w9, w1, #5
+	sbfx	w9, w1, #26, #1
 	lsl	w8, w8, w0
-	and	w0, w8, w9, asr #31
+	and	w0, w9, w8
 	ret
 
 func0000000000000074:

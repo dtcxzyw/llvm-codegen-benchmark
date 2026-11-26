@@ -4,8 +4,7 @@ func0000000000000000:
 	ret
 
 func0000000000000001:
-	and	x8, x0, #0xffffffff
-	and	x8, x8, #0xffffffffffffffcf
+	and	w8, w0, #0xffffffcf
 	rev	x0, x8
 	ret
 

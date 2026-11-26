@@ -1,18 +1,14 @@
 	.att_syntax
 	.prefalign	4, .Lfunc_end0, nop
 func0000000000000005:
-	leal	700(%rdi), %eax
-	movzwl	%ax, %ecx
-	imull	$9363, %ecx, %ecx
-	shrl	$16, %ecx
-	subl	%ecx, %eax
-	movzwl	%ax, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$2, %eax
-	leal	(,%rax,8), %ecx
-	subl	%ecx, %eax
-	leal	700(%rdi,%rax), %eax
+	movl	%edi, %eax
+	addl	$700, %edi
+	movzwl	%di, %ecx
+	imulq	$613572608, %rcx, %rcx
+	shrq	$32, %rcx
+	leal	(,%rcx,8), %edx
+	subl	%edx, %ecx
+	leal	700(%rax,%rcx), %eax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

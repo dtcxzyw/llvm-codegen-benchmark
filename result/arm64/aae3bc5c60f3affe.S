@@ -5,20 +5,20 @@ func0000000000000064:
 
 func0000000000000004:
 	mul	w8, w2, w1
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #28
+	sbfiz	x8, x8, #4, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000006:
 	mul	w8, w2, w1
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #29
+	sbfiz	x8, x8, #3, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000007:
 	mul	x8, x2, x1
-	lsl	x8, x8, #29
-	add	x0, x0, x8, asr #29
+	sbfx	x8, x8, #0, #35
+	add	x0, x0, x8
 	ret
 
 func0000000000000046:

@@ -10,10 +10,10 @@ func0000000000000181:
 	ret
 
 func000000000000018c:
+	ubfx	w8, w1, #2, #1
 	tst	w0, #0xff
-	and	w8, w1, #0x4
 	cset	w9, ne
-	eor	w0, w9, w8, lsr #2
+	eor	w0, w9, w8
 	ret
 
 func0000000000000021:

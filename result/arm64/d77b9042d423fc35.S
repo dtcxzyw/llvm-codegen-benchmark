@@ -1,7 +1,7 @@
 func0000000000000018:
-	lsl	w8, w0, #6
+	ubfx	w8, w0, #4, #22
 	mov	w9, #65472
-	add	w0, w9, w8, lsr #10
+	add	w0, w8, w9
 	ret
 
 func0000000000000028:

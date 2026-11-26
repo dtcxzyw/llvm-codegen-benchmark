@@ -19,7 +19,7 @@ func000000000000006c:
 
 func000000000000000c:
 	lsr	w8, w1, w2
-	and	w8, w8, #0x8000
-	and	w0, w0, w8, lsr #15
+	ubfx	w8, w8, #15, #1
+	and	w0, w8, w0
 	ret
 

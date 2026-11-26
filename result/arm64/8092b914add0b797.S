@@ -7,9 +7,9 @@ func0000000000000001:
 	mov	w9, #-31981
 	mul	w9, w8, w9
 	add	w9, w8, w9, lsr #16
-	sbfx	w10, w9, #9, #7
-	and	w9, w9, #0x8000
-	add	w9, w10, w9, lsr #15
+	sxth	w10, w9
+	ubfx	w9, w9, #15, #1
+	add	w9, w9, w10, asr #9
 	mov	w10, #1000
 	msub	w0, w9, w10, w8
 	ret

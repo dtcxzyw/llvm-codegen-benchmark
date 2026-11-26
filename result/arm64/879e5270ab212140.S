@@ -1,7 +1,7 @@
 func0000000000000021:
-	lsl	w8, w1, #16
+	sbfx	w8, w1, #15, #1
 	sub	w9, w0, #1
-	and	w0, w9, w8, asr #31
+	and	w0, w8, w9
 	ret
 
 func0000000000000041:
@@ -24,8 +24,8 @@ func0000000000000061:
 	ret
 
 func0000000000000034:
-	lsl	w8, w1, #9
+	sbfx	w8, w1, #22, #1
 	sub	w9, w0, #1024, lsl #12
-	and	w0, w9, w8, asr #31
+	and	w0, w8, w9
 	ret
 

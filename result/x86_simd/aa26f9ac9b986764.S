@@ -45,30 +45,9 @@ func0000000000000003:
 	vpsubw	%ymm0, %ymm1, %ymm0
 	retq
 
-.LCPI1_0:
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-	.short	1
-.LCPI1_1:
-	.short	1
-	.short	1
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000001:
-	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubw	%ymm0, %ymm1, %ymm0
+	vpsllw	$15, %ymm0, %ymm0
+	vpsraw	$15, %ymm0, %ymm0
 	retq
 

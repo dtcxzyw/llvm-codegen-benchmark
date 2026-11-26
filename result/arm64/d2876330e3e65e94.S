@@ -27,8 +27,8 @@ func0000000000000044:
 	ret
 
 func00000000000000e4:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #28
+	sbfiz	x8, x2, #4, #32
+	add	x8, x1, x8
 	add	x8, x8, #304
 	cmp	x0, x8
 	cset	w0, lo

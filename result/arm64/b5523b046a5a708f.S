@@ -1,10 +1,10 @@
 func0000000000000004:
-	lsl	x8, x1, #2
-	add	x0, x0, x8, asr #63
+	sbfx	x8, x1, #61, #1
+	add	w0, w0, w8
 	ret
 
 func0000000000000005:
-	lsl	x8, x1, #44
-	add	x0, x0, x8, asr #59
+	sbfx	x8, x1, #15, #5
+	add	w0, w0, w8
 	ret
 

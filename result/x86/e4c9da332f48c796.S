@@ -11,14 +11,9 @@ func0000000000000005:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000007:
 	movzwl	%di, %eax
-	imull	$12137, %eax, %eax
-	shrl	$16, %eax
-	subl	%eax, %edi
-	movzwl	%di, %ecx
-	shrl	%ecx
-	addl	%eax, %ecx
-	shrl	$4, %ecx
-	leal	(%rcx,%rcx,8), %eax
+	imulq	$159074304, %rax, %rax
+	shrq	$32, %rax
+	leal	(%rax,%rax,8), %eax
 	leal	(%rax,%rax,2), %eax
 	retq
 

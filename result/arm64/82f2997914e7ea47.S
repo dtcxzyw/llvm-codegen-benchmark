@@ -29,8 +29,8 @@ func000000000000008b:
 	ret
 
 func0000000000000024:
-	lsl	x8, x2, #60
-	add	x8, x1, x8, asr #63
+	sbfx	x8, x2, #3, #1
+	add	x8, x8, x1
 	cmp	x0, x8
 	cset	w0, lo
 	ret

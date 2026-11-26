@@ -55,8 +55,8 @@ func000000000000001a:
 	ret
 
 func0000000000000006:
-	lsl	w8, w0, #6
+	ubfx	w8, w0, #4, #22
 	mov	w9, #16320
-	add	w0, w9, w8, lsr #10
+	add	w0, w8, w9
 	ret
 

@@ -4,12 +4,12 @@ func0000000000000002:
 	ret
 
 func000000000000000b:
-	lsl	w8, w1, #24
-	orr	w0, w0, w8, asr #8
+	sbfiz	w8, w1, #16, #8
+	orr	w0, w8, w0
 	ret
 
 func0000000000000000:
-	lsl	w8, w1, #1
-	orr	w0, w0, w8, asr #16
+	sbfx	w8, w1, #15, #16
+	orr	w0, w0, w8
 	ret
 

@@ -24,15 +24,8 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end2, nop
 func0000000000000002:
 	movq	%rdi, %rax
-	leal	(%rdi,%rdi,8), %ecx
-	leal	(%rdi,%rcx,4), %ecx
-	shrl	$8, %ecx
-	movl	%eax, %edx
-	subb	%cl, %dl
-	shrb	%dl
-	addb	%cl, %dl
-	shrb	$2, %dl
-	movzbl	%dl, %ecx
+	imull	$9376, %eax, %ecx
+	shrl	$16, %ecx
 	leal	(,%rcx,8), %edx
 	subl	%ecx, %edx
 	subb	%dl, %al

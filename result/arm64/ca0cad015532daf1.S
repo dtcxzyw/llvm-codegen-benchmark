@@ -13,16 +13,16 @@ func0000000000000021:
 
 func0000000000000181:
 	and	w8, w0, #0xfffffffe
+	ubfx	w9, w1, #3, #1
 	cmp	w8, #178
-	and	w8, w1, #0x8
-	cset	w9, eq
-	eor	w0, w9, w8, lsr #3
+	cset	w8, eq
+	eor	w0, w8, w9
 	ret
 
 func000000000000002c:
 	tst	w1, #0x3
-	and	w9, w0, #0x4
-	cset	w8, eq
-	eor	w0, w8, w9, lsr #2
+	ubfx	w8, w0, #2, #1
+	cset	w9, eq
+	eor	w0, w8, w9
 	ret
 

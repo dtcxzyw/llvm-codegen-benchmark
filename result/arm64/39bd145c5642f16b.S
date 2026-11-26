@@ -1,7 +1,6 @@
 func0000000000000001:
-	and	x8, x2, #0xffffffff
 	tst	w0, #0x1
-	and	x8, x8, #0xfffffffffffff0ff
+	and	w8, w2, #0xfffff0ff
 	csel	x9, x1, xzr, ne
 	orr	x0, x9, x8
 	ret

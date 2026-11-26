@@ -16,17 +16,16 @@ func0000000000000021:
 	ret
 
 func0000000000000026:
-	add	w8, w0, #1
-	mov	w10, #-30583
-	sxth	w9, w8
-	mul	w9, w9, w10
-	add	w9, w8, w9, lsr #16
+	add	w9, w0, #1
+	mov	w8, #-30583
 	sxth	w10, w9
-	and	w9, w9, #0x8000
-	lsr	w10, w10, #5
-	add	w9, w10, w9, lsr #15
+	mul	w8, w10, w8
+	add	w8, w9, w8, lsr #16
+	sxth	w10, w8
+	ubfx	w8, w8, #15, #1
+	add	w8, w8, w10, lsr #5
 	mov	w10, #60
-	msub	w8, w9, w10, w8
+	msub	w8, w8, w10, w9
 	ubfx	w0, w8, #15, #1
 	ret
 

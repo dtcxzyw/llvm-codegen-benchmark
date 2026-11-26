@@ -1,7 +1,7 @@
 func000000000000000c:
-	and	w8, w2, #0x1000
+	ubfx	w8, w2, #12, #1
 	and	w9, w0, w1
-	and	w0, w9, w8, lsr #12
+	and	w0, w8, w9
 	ret
 
 func0000000000000001:

@@ -8,8 +8,8 @@ func0000000000000002:
 	ret
 
 func0000000000000018:
-	and	w8, w2, #0x2000
-	orr	w8, w1, w8, lsr #13
+	ubfx	w8, w2, #13, #1
+	orr	w8, w1, w8
 	tst	w8, #0x1
 	mov	w8, #214
 	csel	w0, w0, w8, ne

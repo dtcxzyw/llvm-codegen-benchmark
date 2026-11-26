@@ -1,25 +1,25 @@
 func0000000000000000:
-	and	w8, w1, #0xfffc
-	orr	w0, w0, w8, lsr #2
+	ubfx	w8, w1, #2, #14
+	orr	w0, w0, w8
 	ret
 
 func0000000000000004:
-	and	w8, w1, #0xff00
-	orr	w0, w0, w8, lsr #8
+	ubfx	w8, w1, #8, #8
+	orr	w0, w0, w8
 	ret
 
 func0000000000000007:
-	and	w8, w1, #0xf000
-	orr	w0, w0, w8, lsr #12
+	ubfx	w8, w1, #12, #4
+	orr	w0, w0, w8
 	ret
 
 func0000000000000006:
-	and	w8, w1, #0xff00
-	orr	w0, w0, w8, lsr #8
+	ubfx	w8, w1, #8, #8
+	orr	w0, w0, w8
 	ret
 
 func000000000000000f:
-	and	w8, w1, #0xffc0
-	orr	w0, w0, w8, lsr #6
+	ubfx	w8, w1, #6, #10
+	orr	w0, w0, w8
 	ret
 

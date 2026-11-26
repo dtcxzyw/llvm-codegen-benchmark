@@ -44,10 +44,10 @@ func0000000000000298:
 
 func0000000000000058:
 	cmp	w2, #0
-	and	w9, w1, #0x2
+	ubfx	w9, w1, #1, #1
 	cset	w8, eq
 	and	w8, w0, w8
-	orr	w0, w8, w9, lsr #1
+	orr	w0, w9, w8
 	ret
 
 func0000000000000118:

@@ -7,9 +7,8 @@ func000000000000010c:
 	ret
 
 func000000000000018c:
-	and	x8, x1, #0xffffffff
 	cmp	x1, #36
-	and	x8, x8, #0xffffffffffffffdf
+	and	w8, w1, #0xffffffdf
 	cset	w9, ne
 	cmp	x8, #64
 	and	w8, w0, w9

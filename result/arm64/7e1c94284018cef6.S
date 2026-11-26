@@ -8,15 +8,15 @@ func0000000000000010:
 
 func000000000000001b:
 	add	w8, w2, w2, lsl #1
-	lsl	x8, x8, #34
-	add	x8, x1, x8, asr #31
+	sbfiz	x8, x8, #3, #30
+	add	x8, x1, x8
 	add	x0, x8, x0, lsl #1
 	ret
 
 func000000000000001a:
 	add	w8, w2, w2, lsl #1
-	lsl	x8, x8, #34
-	add	x8, x1, x8, asr #31
+	sbfiz	x8, x8, #3, #30
+	add	x8, x1, x8
 	add	x0, x8, x0, lsl #1
 	ret
 

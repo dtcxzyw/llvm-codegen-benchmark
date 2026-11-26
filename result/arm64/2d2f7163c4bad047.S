@@ -5,7 +5,7 @@ func0000000000000001:
 	ret
 
 func000000000000000c:
-	lsl	x8, x1, #61
-	and	x0, x0, x8, asr #63
+	sbfx	x8, x1, #2, #1
+	and	x0, x8, x0
 	ret
 

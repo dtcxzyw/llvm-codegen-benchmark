@@ -64,14 +64,14 @@ func000000000000002c:
 	ret
 
 func0000000000000007:
-	lsl	x8, x1, #44
-	cmp	x0, x8, asr #59
+	sbfx	x8, x1, #15, #5
+	cmp	x0, x8
 	cset	w0, le
 	ret
 
 func000000000000000c:
-	lsl	x8, x1, #44
-	cmp	x0, x8, asr #59
+	sbfx	x8, x1, #15, #5
+	cmp	x0, x8
 	cset	w0, ne
 	ret
 
@@ -87,8 +87,8 @@ func00000000000000aa:
 	ret
 
 func00000000000000a1:
-	lsl	x8, x1, #32
-	cmp	x0, x8, asr #29
+	sbfiz	x8, x1, #3, #32
+	cmp	x0, x8
 	cset	w0, eq
 	ret
 

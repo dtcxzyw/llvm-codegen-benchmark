@@ -1,8 +1,8 @@
 func0000000000000181:
+	ubfx	w8, w1, #26, #1
 	tst	w0, #0xff
-	and	w8, w1, #0x4000000
 	cset	w9, eq
-	eor	w0, w9, w8, lsr #26
+	eor	w0, w9, w8
 	ret
 
 func000000000000018c:
@@ -54,10 +54,10 @@ func000000000000002a:
 	ret
 
 func000000000000008c:
+	ubfx	w8, w1, #8, #1
 	tst	w0, #0xfe
-	and	w8, w1, #0x100
 	cset	w9, eq
-	eor	w0, w9, w8, lsr #8
+	eor	w0, w8, w9
 	ret
 
 func0000000000000024:
@@ -70,18 +70,18 @@ func0000000000000024:
 
 func000000000000002c:
 	and	w8, w0, #0xff
+	ubfx	w9, w1, #8, #1
 	cmp	w8, #1
-	and	w8, w1, #0x100
-	cset	w9, eq
-	eor	w0, w9, w8, lsr #8
+	cset	w8, eq
+	eor	w0, w9, w8
 	ret
 
 func00000000000000cc:
 	sxtb	w8, w0
+	ubfx	w9, w1, #8, #1
 	cmp	w8, #1
-	and	w8, w1, #0x100
-	cset	w9, lt
-	eor	w0, w9, w8, lsr #8
+	cset	w8, lt
+	eor	w0, w9, w8
 	ret
 
 func0000000000000026:

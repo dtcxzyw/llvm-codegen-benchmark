@@ -7,15 +7,15 @@ func0000000000000004:
 
 func0000000000000036:
 	add	x8, x1, x1, lsl #2
-	lsl	x8, x8, #1
-	add	x8, x0, x8, lsr #32
+	ubfx	x8, x8, #31, #32
+	add	x8, x8, x0
 	lsr	x0, x8, #32
 	ret
 
 func0000000000000024:
 	add	x8, x1, x1, lsl #2
-	lsl	x8, x8, #1
-	add	x8, x0, x8, lsr #60
+	ubfx	x8, x8, #59, #4
+	add	x8, x0, x8
 	lsr	x0, x8, #60
 	ret
 

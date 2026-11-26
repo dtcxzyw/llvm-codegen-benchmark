@@ -1,6 +1,6 @@
 func0000000000000018:
-	and	w8, w1, #0x40
-	and	w0, w0, w8, lsr #6
+	ubfx	w8, w1, #6, #1
+	and	w0, w0, w8
 	ret
 
 func0000000000000002:

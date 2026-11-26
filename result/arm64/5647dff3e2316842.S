@@ -21,16 +21,16 @@ func0000000000000e61:
 	ret
 
 func00000000000001e4:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #28
+	sbfiz	x8, x2, #4, #32
+	add	x8, x1, x8
 	add	x8, x8, #16
 	cmp	x0, x8
 	cset	w0, lo
 	ret
 
 func0000000000000fe1:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #30
+	sbfiz	x8, x2, #2, #32
+	add	x8, x1, x8
 	add	x8, x8, #8
 	cmp	x0, x8
 	cset	w0, eq

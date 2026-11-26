@@ -1,9 +1,8 @@
 func0000000000000003:
-	mov	w8, #64
-	lsl	w9, w1, #25
+	sbfx	w8, w1, #6, #1
 	tst	w0, #0x1
-	movk	w8, #49152, lsl #16
-	and	w8, w8, w9, asr #31
+	and	w8, w8, #0xffffffc0
+	and	w8, w8, #0xc000007f
 	orr	w9, w8, #0x10
 	csel	w0, w8, w9, ne
 	ret

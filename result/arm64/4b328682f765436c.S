@@ -2,8 +2,8 @@ func0000000000000004:
 	sub	x8, x2, #2
 	cmp	x8, x1
 	csel	x8, x8, x1, lo
-	lsl	x8, x8, #32
-	add	x0, x0, x8, asr #28
+	sbfiz	x8, x8, #4, #32
+	add	x0, x0, x8
 	ret
 
 func0000000000000006:

@@ -3,13 +3,8 @@
 func0000000000000006:
 	subl	%esi, %edi
 	movzwl	%di, %eax
-	imull	$2115, %eax, %ecx
-	shrl	$16, %ecx
-	subl	%ecx, %edi
-	movzwl	%di, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shrl	$4, %eax
+	imulq	$138549248, %rax, %rax
+	shrq	$32, %rax
 	retq
 
 	.prefalign	4, .Lfunc_end1, nop

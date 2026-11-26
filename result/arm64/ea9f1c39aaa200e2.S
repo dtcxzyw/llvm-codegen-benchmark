@@ -1,13 +1,13 @@
 func0000000000000015:
-	lsl	x8, x2, #48
+	sbfiz	x8, x2, #8, #16
 	add	x9, x0, x1
-	add	x0, x9, x8, asr #40
+	add	x0, x9, x8
 	ret
 
 func0000000000000055:
-	lsl	x8, x2, #48
+	sbfiz	x8, x2, #8, #16
 	add	x9, x0, x1
-	add	x0, x9, x8, asr #40
+	add	x0, x9, x8
 	ret
 
 func0000000000000010:
@@ -21,9 +21,9 @@ func000000000000001d:
 	ret
 
 func0000000000000050:
-	lsl	x8, x2, #48
+	sbfiz	x8, x2, #32, #16
 	add	x9, x0, x1
-	add	x0, x9, x8, asr #16
+	add	x0, x9, x8
 	ret
 
 func000000000000000d:

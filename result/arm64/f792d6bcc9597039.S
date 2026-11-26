@@ -5,15 +5,15 @@ func00000000000000aa:
 	ret
 
 func0000000000000021:
-	lsl	w8, w2, #1
-	add	w8, w1, w8, asr #31
+	sbfx	w8, w2, #30, #1
+	add	w8, w1, w8
 	cmp	w8, w0
 	cset	w0, eq
 	ret
 
 func0000000000000024:
-	lsl	w8, w2, #1
-	add	w8, w1, w8, asr #31
+	sbfx	w8, w2, #30, #1
+	add	w8, w1, w8
 	cmp	w8, w0
 	cset	w0, lo
 	ret

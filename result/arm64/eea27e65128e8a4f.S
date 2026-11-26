@@ -22,8 +22,8 @@ func00000000000000a6:
 	ret
 
 func0000000000000021:
-	lsl	x8, x1, #60
-	cmn	x0, x8, asr #63
+	sbfx	x8, x1, #3, #1
+	cmn	x8, x0
 	cset	w0, eq
 	ret
 
@@ -38,8 +38,8 @@ func0000000000000081:
 	ret
 
 func00000000000000a8:
-	lsl	x8, x1, #30
-	add	x8, x0, x8, asr #29
+	sbfiz	x8, x1, #1, #34
+	add	x8, x0, x8
 	cmp	x8, #1032
 	cset	w0, hi
 	ret

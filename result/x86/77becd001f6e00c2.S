@@ -10,13 +10,8 @@ func0000000000000003:
 	.prefalign	4, .Lfunc_end1, nop
 func0000000000000002:
 	movzwl	%di, %eax
-	imull	$1041, %eax, %ecx
-	shrl	$16, %ecx
-	subl	%ecx, %edi
-	movzwl	%di, %eax
-	shrl	%eax
-	addl	%ecx, %eax
-	shll	$3, %eax
-	andl	$65280, %eax
+	imulq	$68174848, %rax, %rax
+	shrq	$32, %rax
+	shll	$8, %eax
 	retq
 

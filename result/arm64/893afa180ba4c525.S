@@ -4,8 +4,8 @@ func0000000000000015:
 	ret
 
 func0000000000000014:
-	lsl	w8, w1, #16
-	add	w8, w0, w8, asr #14
+	sbfiz	w8, w1, #2, #16
+	add	w8, w8, w0
 	add	w0, w8, #4
 	ret
 

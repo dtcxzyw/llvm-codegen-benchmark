@@ -1,6 +1,6 @@
 func000000000000001b:
-	lsl	x8, x2, #32
-	add	x8, x1, x8, asr #26
+	sbfiz	x8, x2, #6, #32
+	add	x8, x1, x8
 	add	x0, x8, x0, lsl #5
 	ret
 

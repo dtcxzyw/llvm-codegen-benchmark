@@ -72,8 +72,8 @@ func0000000000000060:
 
 func000000000000006c:
 	add	x8, x2, x2, lsl #2
-	lsl	x8, x8, #1
-	add	x8, x1, x8, lsr #32
-	add	x0, x8, x0
+	add	x9, x1, x0
+	ubfx	x8, x8, #31, #32
+	add	x0, x8, x9
 	ret
 

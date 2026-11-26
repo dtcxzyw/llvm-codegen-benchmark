@@ -4,9 +4,9 @@ func0000000000000005:
 	ret
 
 func0000000000000001:
-	lsl	w8, w1, #15
+	sbfx	w8, w1, #16, #1
 	and	w9, w0, #0x1fff
-	add	w0, w9, w8, asr #31
+	add	w0, w8, w9
 	ret
 
 func0000000000000015:

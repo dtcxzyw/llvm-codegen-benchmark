@@ -1,5 +1,5 @@
 func0000000000000000:
-	and	w8, w1, #0xfffc
-	eor	w0, w0, w8, lsr #2
+	ubfx	w8, w1, #2, #14
+	eor	w0, w0, w8
 	ret
 

@@ -1,8 +1,8 @@
 func0000000000000036:
 	mov	w8, w1
 	add	x8, x8, w1, uxtw #2
-	lsl	x8, x8, #1
-	add	x8, x0, x8, lsr #32
+	ubfx	x8, x8, #31, #32
+	add	x8, x8, x0
 	lsr	x0, x8, #32
 	ret
 

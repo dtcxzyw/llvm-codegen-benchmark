@@ -1,5 +1,5 @@
 func0000000000000001:
-	lsl	w8, w1, #19
-	and	w0, w0, w8, lsr #31
+	ubfx	w8, w1, #12, #1
+	and	w0, w0, w8
 	ret
 

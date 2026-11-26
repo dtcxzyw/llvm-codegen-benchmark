@@ -14,8 +14,7 @@ func000000000000000f:
 	ret
 
 func000000000000000d:
-	and	x8, x1, #0xffffffff
-	and	x8, x8, #0xfffffffff3ffffff
+	and	w8, w1, #0xf3ffffff
 	orr	x8, x8, x0, lsl #32
 	orr	x0, x8, #0x8000000
 	ret

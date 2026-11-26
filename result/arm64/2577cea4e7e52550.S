@@ -7,8 +7,8 @@ func0000000000000010:
 
 func00000000000000d8:
 	add	x8, x2, x2, lsl #2
-	lsl	x8, x8, #1
-	add	x8, x1, x8, lsr #32
+	ubfx	x8, x8, #31, #32
+	add	x8, x8, x1
 	add	x0, x0, x8, lsr #32
 	ret
 

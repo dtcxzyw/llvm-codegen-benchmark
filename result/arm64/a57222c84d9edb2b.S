@@ -7,10 +7,10 @@ func0000000000000042:
 	ret
 
 func0000000000000058:
+	ubfx	w8, w1, #29, #1
 	cmp	w0, #0
-	and	w8, w1, #0x20000000
 	cset	w9, eq
-	eor	w0, w9, w8, lsr #29
+	eor	w0, w8, w9
 	ret
 
 func0000000000000302:

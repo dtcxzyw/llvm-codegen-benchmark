@@ -1,7 +1,7 @@
 func0000000000000001:
-	lsl	w8, w2, #17
+	sbfx	w8, w2, #14, #1
 	add	w9, w0, w1
-	cmp	w9, w8, asr #31
+	cmp	w9, w8
 	cset	w0, eq
 	ret
 
